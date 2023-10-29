@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      // TODO use generator here which renders based on protocol content dynamically
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
