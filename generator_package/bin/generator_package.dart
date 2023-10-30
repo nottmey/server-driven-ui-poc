@@ -40,6 +40,8 @@ environment:
   sdk: '>=3.1.5 <4.0.0'
 
 dependencies:
+  flutter_project:
+    path: ../flutter_project
   protobuf: ^3.1.0
 ''');
   writeFile(".gitignore", '''
