@@ -25,6 +25,7 @@ Future<void> main(List<String> arguments) async {
   print("Starting ${Platform.script.path} in ${dir.path} with $arguments");
   print("Using ${Platform.executable} with ${Platform.executableArguments}");
 
+  // TODO generate files in separate project, not into flutter_project (where it should just be imported)
   Future<File> writeFile(String path, String contents) {
     print('creating file $path');
     return File("${dir.path}/$path")
@@ -108,8 +109,7 @@ Future<void> main(List<String> arguments) async {
           if (classElement is ClassElement &&
               classElement.allSupertypes.any((t) => t.isWidget)) {
             // TODO do more than widgets
-            // TODO deal with multiple constructors & factories
-            for (final constructor in classElement.constructors.sublist(0, 1)) {
+            for (final constructor in classElement.constructors) {
               if (constructor.isPublic) {
                 final parameters = constructor.parameters;
                 var fieldNumber = kProtoFieldStartNumber;
@@ -120,8 +120,11 @@ Future<void> main(List<String> arguments) async {
                     return field;
                   },
                 ).whereType<String>();
+                final namedPostfix = constructor.name.isEmpty
+                    ? ""
+                    : "Named${ReCase(constructor.name).pascalCase}";
                 final widgetConstructorName =
-                    "$libraryNamePrefix${classElement.name}";
+                    "$libraryNamePrefix${classElement.name}$namedPostfix";
                 usedWidgets.add(widgetConstructorName);
                 widgetsFile.add('''
 message $widgetConstructorName {
