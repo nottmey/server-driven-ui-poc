@@ -9,7 +9,7 @@ import 'package:analyzer/file_system/file_system.dart' as file_system;
 import 'package:analyzer/file_system/physical_file_system.dart';
 import 'package:analyzer/src/util/file_paths.dart' as file_paths;
 import 'package:analyzer/src/workspace/package_build.dart';
-import 'package:generator_library/dart_type_extension.dart';
+import 'package:generator_library/analyzer_proto_extensions.dart';
 import 'package:recase/recase.dart';
 import 'package:yaml/yaml.dart';
 
@@ -115,25 +115,9 @@ Future<void> main(List<String> arguments) async {
                 var fieldNumber = kProtoFieldStartNumber;
                 final protoFields = parameters.map(
                   (parameter) {
-                    final reCaseName = ReCase(parameter.name);
-                    // TODO use `repeated` when appropriate
-                    final nameAndNumber =
-                        "${reCaseName.snakeCase} = $fieldNumber;";
+                    final field = parameter.toProtoField(fieldNumber);
                     fieldNumber++; // for every field, so number stays stable for now
-                    // TODO also allow AST values, e.g. "string or string expression"
-                    if (parameter.type.isWidget) {
-                      return "Widget $nameAndNumber";
-                    } else if (parameter.type.isDartCoreString) {
-                      return "string $nameAndNumber";
-                    } else if (parameter.type.isDartCoreBool) {
-                      return "bool $nameAndNumber";
-                    } else if (parameter.type.isDartCoreInt) {
-                      return "int64 $nameAndNumber";
-                    } else if (parameter.type.isDartCoreDouble) {
-                      return "double $nameAndNumber";
-                    } else {
-                      return null;
-                    }
+                    return field;
                   },
                 ).whereType<String>();
                 final widgetConstructorName =

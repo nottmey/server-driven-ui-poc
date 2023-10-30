@@ -51,12 +51,15 @@ final $typed_data.Uint8List flutterCupertinoCupertinoActivityIndicatorDescriptor
 @$core.Deprecated('Use flutterCupertinoCupertinoAdaptiveTextSelectionToolbarDescriptor instead')
 const FlutterCupertinoCupertinoAdaptiveTextSelectionToolbar$json = {
   '1': 'FlutterCupertinoCupertinoAdaptiveTextSelectionToolbar',
+  '2': [
+    {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterCupertinoCupertinoAdaptiveTextSelectionToolbar`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoCupertinoAdaptiveTextSelectionToolbarDescriptor = $convert.base64Decode(
-    'CjVGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQWRhcHRpdmVUZXh0U2VsZWN0aW9uVG9vbGJhcg'
-    '==');
+    'CjVGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQWRhcHRpdmVUZXh0U2VsZWN0aW9uVG9vbGJhch'
+    'IjCghjaGlsZHJlbhgDIAMoCzIHLldpZGdldFIIY2hpbGRyZW4=');
 
 @$core.Deprecated('Use flutterCupertinoCupertinoAppDescriptor instead')
 const FlutterCupertinoCupertinoApp$json = {
@@ -140,6 +143,7 @@ final $typed_data.Uint8List flutterCupertinoCupertinoCheckboxDescriptor = $conve
 const FlutterCupertinoCupertinoContextMenu$json = {
   '1': 'FlutterCupertinoCupertinoContextMenu',
   '2': [
+    {'1': 'actions', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'actions'},
     {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
     {'1': 'enable_haptic_feedback', '3': 5, '4': 1, '5': 8, '10': 'enableHapticFeedback'},
   ],
@@ -147,9 +151,9 @@ const FlutterCupertinoCupertinoContextMenu$json = {
 
 /// Descriptor for `FlutterCupertinoCupertinoContextMenu`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoCupertinoContextMenuDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQ29udGV4dE1lbnUSHQoFY2hpbGQYBCABKAsyBy'
-    '5XaWRnZXRSBWNoaWxkEjQKFmVuYWJsZV9oYXB0aWNfZmVlZGJhY2sYBSABKAhSFGVuYWJsZUhh'
-    'cHRpY0ZlZWRiYWNr');
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQ29udGV4dE1lbnUSIQoHYWN0aW9ucxgDIAMoCz'
+    'IHLldpZGdldFIHYWN0aW9ucxIdCgVjaGlsZBgEIAEoCzIHLldpZGdldFIFY2hpbGQSNAoWZW5h'
+    'YmxlX2hhcHRpY19mZWVkYmFjaxgFIAEoCFIUZW5hYmxlSGFwdGljRmVlZGJhY2s=');
 
 @$core.Deprecated('Use flutterCupertinoCupertinoContextMenuActionDescriptor instead')
 const FlutterCupertinoCupertinoContextMenuAction$json = {
@@ -208,11 +212,15 @@ final $typed_data.Uint8List flutterCupertinoCupertinoTimerPickerDescriptor = $co
 @$core.Deprecated('Use flutterCupertinoCupertinoDesktopTextSelectionToolbarDescriptor instead')
 const FlutterCupertinoCupertinoDesktopTextSelectionToolbar$json = {
   '1': 'FlutterCupertinoCupertinoDesktopTextSelectionToolbar',
+  '2': [
+    {'1': 'children', '3': 4, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterCupertinoCupertinoDesktopTextSelectionToolbar`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoCupertinoDesktopTextSelectionToolbarDescriptor = $convert.base64Decode(
-    'CjRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRGVza3RvcFRleHRTZWxlY3Rpb25Ub29sYmFy');
+    'CjRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRGVza3RvcFRleHRTZWxlY3Rpb25Ub29sYmFyEi'
+    'MKCGNoaWxkcmVuGAQgAygLMgcuV2lkZ2V0UghjaGlsZHJlbg==');
 
 @$core.Deprecated('Use flutterCupertinoCupertinoDesktopTextSelectionToolbarButtonDescriptor instead')
 const FlutterCupertinoCupertinoDesktopTextSelectionToolbarButton$json = {
@@ -233,13 +241,15 @@ const FlutterCupertinoCupertinoAlertDialog$json = {
   '2': [
     {'1': 'title', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'title'},
     {'1': 'content', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'content'},
+    {'1': 'actions', '3': 5, '4': 3, '5': 11, '6': '.Widget', '10': 'actions'},
   ],
 };
 
 /// Descriptor for `FlutterCupertinoCupertinoAlertDialog`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoCupertinoAlertDialogDescriptor = $convert.base64Decode(
     'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQWxlcnREaWFsb2cSHQoFdGl0bGUYAyABKAsyBy'
-    '5XaWRnZXRSBXRpdGxlEiEKB2NvbnRlbnQYBCABKAsyBy5XaWRnZXRSB2NvbnRlbnQ=');
+    '5XaWRnZXRSBXRpdGxlEiEKB2NvbnRlbnQYBCABKAsyBy5XaWRnZXRSB2NvbnRlbnQSIQoHYWN0'
+    'aW9ucxgFIAMoCzIHLldpZGdldFIHYWN0aW9ucw==');
 
 @$core.Deprecated('Use flutterCupertinoCupertinoPopupSurfaceDescriptor instead')
 const FlutterCupertinoCupertinoPopupSurface$json = {
@@ -262,6 +272,7 @@ const FlutterCupertinoCupertinoActionSheet$json = {
   '2': [
     {'1': 'title', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'title'},
     {'1': 'message', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'message'},
+    {'1': 'actions', '3': 5, '4': 3, '5': 11, '6': '.Widget', '10': 'actions'},
     {'1': 'cancel_button', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'cancelButton'},
   ],
 };
@@ -269,8 +280,9 @@ const FlutterCupertinoCupertinoActionSheet$json = {
 /// Descriptor for `FlutterCupertinoCupertinoActionSheet`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoCupertinoActionSheetDescriptor = $convert.base64Decode(
     'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQWN0aW9uU2hlZXQSHQoFdGl0bGUYAyABKAsyBy'
-    '5XaWRnZXRSBXRpdGxlEiEKB21lc3NhZ2UYBCABKAsyBy5XaWRnZXRSB21lc3NhZ2USLAoNY2Fu'
-    'Y2VsX2J1dHRvbhgIIAEoCzIHLldpZGdldFIMY2FuY2VsQnV0dG9u');
+    '5XaWRnZXRSBXRpdGxlEiEKB21lc3NhZ2UYBCABKAsyBy5XaWRnZXRSB21lc3NhZ2USIQoHYWN0'
+    'aW9ucxgFIAMoCzIHLldpZGdldFIHYWN0aW9ucxIsCg1jYW5jZWxfYnV0dG9uGAggASgLMgcuV2'
+    'lkZ2V0UgxjYW5jZWxCdXR0b24=');
 
 @$core.Deprecated('Use flutterCupertinoCupertinoActionSheetActionDescriptor instead')
 const FlutterCupertinoCupertinoActionSheetAction$json = {
@@ -327,6 +339,7 @@ final $typed_data.Uint8List flutterCupertinoCupertinoFormRowDescriptor = $conver
 const FlutterCupertinoCupertinoFormSection$json = {
   '1': 'FlutterCupertinoCupertinoFormSection',
   '2': [
+    {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
     {'1': 'header', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'header'},
     {'1': 'footer', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'footer'},
   ],
@@ -334,8 +347,9 @@ const FlutterCupertinoCupertinoFormSection$json = {
 
 /// Descriptor for `FlutterCupertinoCupertinoFormSection`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoCupertinoFormSectionDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRm9ybVNlY3Rpb24SHwoGaGVhZGVyGAQgASgLMg'
-    'cuV2lkZ2V0UgZoZWFkZXISHwoGZm9vdGVyGAUgASgLMgcuV2lkZ2V0UgZmb290ZXI=');
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRm9ybVNlY3Rpb24SIwoIY2hpbGRyZW4YAyADKA'
+    'syBy5XaWRnZXRSCGNoaWxkcmVuEh8KBmhlYWRlchgEIAEoCzIHLldpZGdldFIGaGVhZGVyEh8K'
+    'BmZvb3RlchgFIAEoCzIHLldpZGdldFIGZm9vdGVy');
 
 @$core.Deprecated('Use flutterCupertinoCupertinoUserInterfaceLevelDescriptor instead')
 const FlutterCupertinoCupertinoUserInterfaceLevel$json = {
@@ -354,6 +368,7 @@ final $typed_data.Uint8List flutterCupertinoCupertinoUserInterfaceLevelDescripto
 const FlutterCupertinoCupertinoListSection$json = {
   '1': 'FlutterCupertinoCupertinoListSection',
   '2': [
+    {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
     {'1': 'header', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'header'},
     {'1': 'footer', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'footer'},
     {'1': 'divider_margin', '3': 10, '4': 1, '5': 1, '10': 'dividerMargin'},
@@ -365,11 +380,12 @@ const FlutterCupertinoCupertinoListSection$json = {
 
 /// Descriptor for `FlutterCupertinoCupertinoListSection`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoCupertinoListSectionDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vTGlzdFNlY3Rpb24SHwoGaGVhZGVyGAQgASgLMg'
-    'cuV2lkZ2V0UgZoZWFkZXISHwoGZm9vdGVyGAUgASgLMgcuV2lkZ2V0UgZmb290ZXISJQoOZGl2'
-    'aWRlcl9tYXJnaW4YCiABKAFSDWRpdmlkZXJNYXJnaW4SOgoZYWRkaXRpb25hbF9kaXZpZGVyX2'
-    '1hcmdpbhgLIAEoAVIXYWRkaXRpb25hbERpdmlkZXJNYXJnaW4SHQoKdG9wX21hcmdpbhgMIAEo'
-    'AVIJdG9wTWFyZ2luEh8KC2hhc19sZWFkaW5nGA0gASgIUgpoYXNMZWFkaW5n');
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vTGlzdFNlY3Rpb24SIwoIY2hpbGRyZW4YAyADKA'
+    'syBy5XaWRnZXRSCGNoaWxkcmVuEh8KBmhlYWRlchgEIAEoCzIHLldpZGdldFIGaGVhZGVyEh8K'
+    'BmZvb3RlchgFIAEoCzIHLldpZGdldFIGZm9vdGVyEiUKDmRpdmlkZXJfbWFyZ2luGAogASgBUg'
+    '1kaXZpZGVyTWFyZ2luEjoKGWFkZGl0aW9uYWxfZGl2aWRlcl9tYXJnaW4YCyABKAFSF2FkZGl0'
+    'aW9uYWxEaXZpZGVyTWFyZ2luEh0KCnRvcF9tYXJnaW4YDCABKAFSCXRvcE1hcmdpbhIfCgtoYX'
+    'NfbGVhZGluZxgNIAEoCFIKaGFzTGVhZGluZw==');
 
 @$core.Deprecated('Use flutterCupertinoCupertinoListTileDescriptor instead')
 const FlutterCupertinoCupertinoListTile$json = {
@@ -529,6 +545,7 @@ const FlutterCupertinoCupertinoPicker$json = {
     {'1': 'magnification', '3': 7, '4': 1, '5': 1, '10': 'magnification'},
     {'1': 'squeeze', '3': 9, '4': 1, '5': 1, '10': 'squeeze'},
     {'1': 'item_extent', '3': 10, '4': 1, '5': 1, '10': 'itemExtent'},
+    {'1': 'children', '3': 12, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
     {'1': 'selection_overlay', '3': 13, '4': 1, '5': 11, '6': '.Widget', '10': 'selectionOverlay'},
     {'1': 'looping', '3': 14, '4': 1, '5': 8, '10': 'looping'},
   ],
@@ -540,8 +557,9 @@ final $typed_data.Uint8List flutterCupertinoCupertinoPickerDescriptor = $convert
     'gBUg1kaWFtZXRlclJhdGlvEioKEW9mZl9heGlzX2ZyYWN0aW9uGAUgASgBUg9vZmZBeGlzRnJh'
     'Y3Rpb24SIwoNdXNlX21hZ25pZmllchgGIAEoCFIMdXNlTWFnbmlmaWVyEiQKDW1hZ25pZmljYX'
     'Rpb24YByABKAFSDW1hZ25pZmljYXRpb24SGAoHc3F1ZWV6ZRgJIAEoAVIHc3F1ZWV6ZRIfCgtp'
-    'dGVtX2V4dGVudBgKIAEoAVIKaXRlbUV4dGVudBI0ChFzZWxlY3Rpb25fb3ZlcmxheRgNIAEoCz'
-    'IHLldpZGdldFIQc2VsZWN0aW9uT3ZlcmxheRIYCgdsb29waW5nGA4gASgIUgdsb29waW5n');
+    'dGVtX2V4dGVudBgKIAEoAVIKaXRlbUV4dGVudBIjCghjaGlsZHJlbhgMIAMoCzIHLldpZGdldF'
+    'IIY2hpbGRyZW4SNAoRc2VsZWN0aW9uX292ZXJsYXkYDSABKAsyBy5XaWRnZXRSEHNlbGVjdGlv'
+    'bk92ZXJsYXkSGAoHbG9vcGluZxgOIAEoCFIHbG9vcGluZw==');
 
 @$core.Deprecated('Use flutterCupertinoCupertinoPickerDefaultSelectionOverlayDescriptor instead')
 const FlutterCupertinoCupertinoPickerDefaultSelectionOverlay$json = {
@@ -777,6 +795,7 @@ const FlutterCupertinoCupertinoTextField$json = {
     {'1': 'cursor_height', '3': 45, '4': 1, '5': 1, '10': 'cursorHeight'},
     {'1': 'cursor_opacity_animates', '3': 47, '4': 1, '5': 8, '10': 'cursorOpacityAnimates'},
     {'1': 'enable_interactive_selection', '3': 54, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
+    {'1': 'autofill_hints', '3': 59, '4': 3, '5': 9, '10': 'autofillHints'},
     {'1': 'restoration_id', '3': 62, '4': 1, '5': 9, '10': 'restorationId'},
     {'1': 'scribble_enabled', '3': 63, '4': 1, '5': 8, '10': 'scribbleEnabled'},
     {'1': 'enable_i_m_e_personalized_learning', '3': 64, '4': 1, '5': 8, '10': 'enableIMEPersonalizedLearning'},
@@ -798,9 +817,10 @@ final $typed_data.Uint8List flutterCupertinoCupertinoTextFieldDescriptor = $conv
     'AVILY3Vyc29yV2lkdGgSIwoNY3Vyc29yX2hlaWdodBgtIAEoAVIMY3Vyc29ySGVpZ2h0EjYKF2'
     'N1cnNvcl9vcGFjaXR5X2FuaW1hdGVzGC8gASgIUhVjdXJzb3JPcGFjaXR5QW5pbWF0ZXMSQAoc'
     'ZW5hYmxlX2ludGVyYWN0aXZlX3NlbGVjdGlvbhg2IAEoCFIaZW5hYmxlSW50ZXJhY3RpdmVTZW'
-    'xlY3Rpb24SJQoOcmVzdG9yYXRpb25faWQYPiABKAlSDXJlc3RvcmF0aW9uSWQSKQoQc2NyaWJi'
-    'bGVfZW5hYmxlZBg/IAEoCFIPc2NyaWJibGVFbmFibGVkEkkKImVuYWJsZV9pX21fZV9wZXJzb2'
-    '5hbGl6ZWRfbGVhcm5pbmcYQCABKAhSHWVuYWJsZUlNRVBlcnNvbmFsaXplZExlYXJuaW5n');
+    'xlY3Rpb24SJQoOYXV0b2ZpbGxfaGludHMYOyADKAlSDWF1dG9maWxsSGludHMSJQoOcmVzdG9y'
+    'YXRpb25faWQYPiABKAlSDXJlc3RvcmF0aW9uSWQSKQoQc2NyaWJibGVfZW5hYmxlZBg/IAEoCF'
+    'IPc2NyaWJibGVFbmFibGVkEkkKImVuYWJsZV9pX21fZV9wZXJzb25hbGl6ZWRfbGVhcm5pbmcY'
+    'QCABKAhSHWVuYWJsZUlNRVBlcnNvbmFsaXplZExlYXJuaW5n');
 
 @$core.Deprecated('Use flutterCupertinoCupertinoTextFormFieldRowDescriptor instead')
 const FlutterCupertinoCupertinoTextFormFieldRow$json = {
@@ -823,6 +843,7 @@ const FlutterCupertinoCupertinoTextFormFieldRow$json = {
     {'1': 'cursor_width', '3': 39, '4': 1, '5': 1, '10': 'cursorWidth'},
     {'1': 'cursor_height', '3': 40, '4': 1, '5': 1, '10': 'cursorHeight'},
     {'1': 'enable_interactive_selection', '3': 44, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
+    {'1': 'autofill_hints', '3': 47, '4': 3, '5': 9, '10': 'autofillHints'},
     {'1': 'placeholder', '3': 49, '4': 1, '5': 9, '10': 'placeholder'},
   ],
 };
@@ -840,17 +861,22 @@ final $typed_data.Uint8List flutterCupertinoCupertinoTextFormFieldRowDescriptor 
     'CFIHZXhwYW5kcxIdCgptYXhfbGVuZ3RoGB4gASgDUgltYXhMZW5ndGgSGAoHZW5hYmxlZBgmIA'
     'EoCFIHZW5hYmxlZBIhCgxjdXJzb3Jfd2lkdGgYJyABKAFSC2N1cnNvcldpZHRoEiMKDWN1cnNv'
     'cl9oZWlnaHQYKCABKAFSDGN1cnNvckhlaWdodBJAChxlbmFibGVfaW50ZXJhY3RpdmVfc2VsZW'
-    'N0aW9uGCwgASgIUhplbmFibGVJbnRlcmFjdGl2ZVNlbGVjdGlvbhIgCgtwbGFjZWhvbGRlchgx'
-    'IAEoCVILcGxhY2Vob2xkZXI=');
+    'N0aW9uGCwgASgIUhplbmFibGVJbnRlcmFjdGl2ZVNlbGVjdGlvbhIlCg5hdXRvZmlsbF9oaW50'
+    'cxgvIAMoCVINYXV0b2ZpbGxIaW50cxIgCgtwbGFjZWhvbGRlchgxIAEoCVILcGxhY2Vob2xkZX'
+    'I=');
 
 @$core.Deprecated('Use flutterCupertinoCupertinoTextSelectionToolbarDescriptor instead')
 const FlutterCupertinoCupertinoTextSelectionToolbar$json = {
   '1': 'FlutterCupertinoCupertinoTextSelectionToolbar',
+  '2': [
+    {'1': 'children', '3': 5, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterCupertinoCupertinoTextSelectionToolbar`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoCupertinoTextSelectionToolbarDescriptor = $convert.base64Decode(
-    'Ci1GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGV4dFNlbGVjdGlvblRvb2xiYXI=');
+    'Ci1GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGV4dFNlbGVjdGlvblRvb2xiYXISIwoIY2hpbG'
+    'RyZW4YBSADKAsyBy5XaWRnZXRSCGNoaWxkcmVu');
 
 @$core.Deprecated('Use flutterCupertinoCupertinoTextSelectionToolbarButtonDescriptor instead')
 const FlutterCupertinoCupertinoTextSelectionToolbarButton$json = {
@@ -1486,11 +1512,15 @@ final $typed_data.Uint8List flutterCupertinoLayoutIdDescriptor = $convert.base64
 @$core.Deprecated('Use flutterCupertinoCustomMultiChildLayoutDescriptor instead')
 const FlutterCupertinoCustomMultiChildLayout$json = {
   '1': 'FlutterCupertinoCustomMultiChildLayout',
+  '2': [
+    {'1': 'children', '3': 4, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterCupertinoCustomMultiChildLayout`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoCustomMultiChildLayoutDescriptor = $convert.base64Decode(
-    'CiZGbHV0dGVyQ3VwZXJ0aW5vQ3VzdG9tTXVsdGlDaGlsZExheW91dA==');
+    'CiZGbHV0dGVyQ3VwZXJ0aW5vQ3VzdG9tTXVsdGlDaGlsZExheW91dBIjCghjaGlsZHJlbhgEIA'
+    'MoCzIHLldpZGdldFIIY2hpbGRyZW4=');
 
 @$core.Deprecated('Use flutterCupertinoSizedBoxDescriptor instead')
 const FlutterCupertinoSizedBox$json = {
@@ -1714,33 +1744,41 @@ const FlutterCupertinoListBody$json = {
   '1': 'FlutterCupertinoListBody',
   '2': [
     {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
+    {'1': 'children', '3': 5, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
   ],
 };
 
 /// Descriptor for `FlutterCupertinoListBody`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoListBodyDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vTGlzdEJvZHkSGAoHcmV2ZXJzZRgEIAEoCFIHcmV2ZXJzZQ==');
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vTGlzdEJvZHkSGAoHcmV2ZXJzZRgEIAEoCFIHcmV2ZXJzZRIjCg'
+    'hjaGlsZHJlbhgFIAMoCzIHLldpZGdldFIIY2hpbGRyZW4=');
 
 @$core.Deprecated('Use flutterCupertinoStackDescriptor instead')
 const FlutterCupertinoStack$json = {
   '1': 'FlutterCupertinoStack',
+  '2': [
+    {'1': 'children', '3': 7, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterCupertinoStack`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoStackDescriptor = $convert.base64Decode(
-    'ChVGbHV0dGVyQ3VwZXJ0aW5vU3RhY2s=');
+    'ChVGbHV0dGVyQ3VwZXJ0aW5vU3RhY2sSIwoIY2hpbGRyZW4YByADKAsyBy5XaWRnZXRSCGNoaW'
+    'xkcmVu');
 
 @$core.Deprecated('Use flutterCupertinoIndexedStackDescriptor instead')
 const FlutterCupertinoIndexedStack$json = {
   '1': 'FlutterCupertinoIndexedStack',
   '2': [
     {'1': 'index', '3': 7, '4': 1, '5': 3, '10': 'index'},
+    {'1': 'children', '3': 8, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
   ],
 };
 
 /// Descriptor for `FlutterCupertinoIndexedStack`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoIndexedStackDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQ3VwZXJ0aW5vSW5kZXhlZFN0YWNrEhQKBWluZGV4GAcgASgDUgVpbmRleA==');
+    'ChxGbHV0dGVyQ3VwZXJ0aW5vSW5kZXhlZFN0YWNrEhQKBWluZGV4GAcgASgDUgVpbmRleBIjCg'
+    'hjaGlsZHJlbhgIIAMoCzIHLldpZGdldFIIY2hpbGRyZW4=');
 
 @$core.Deprecated('Use flutterCupertinoPositionedDescriptor instead')
 const FlutterCupertinoPositioned$json = {
@@ -1787,29 +1825,41 @@ final $typed_data.Uint8List flutterCupertinoPositionedDirectionalDescriptor = $c
 @$core.Deprecated('Use flutterCupertinoFlexDescriptor instead')
 const FlutterCupertinoFlex$json = {
   '1': 'FlutterCupertinoFlex',
+  '2': [
+    {'1': 'children', '3': 11, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterCupertinoFlex`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoFlexDescriptor = $convert.base64Decode(
-    'ChRGbHV0dGVyQ3VwZXJ0aW5vRmxleA==');
+    'ChRGbHV0dGVyQ3VwZXJ0aW5vRmxleBIjCghjaGlsZHJlbhgLIAMoCzIHLldpZGdldFIIY2hpbG'
+    'RyZW4=');
 
 @$core.Deprecated('Use flutterCupertinoRowDescriptor instead')
 const FlutterCupertinoRow$json = {
   '1': 'FlutterCupertinoRow',
+  '2': [
+    {'1': 'children', '3': 9, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterCupertinoRow`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoRowDescriptor = $convert.base64Decode(
-    'ChNGbHV0dGVyQ3VwZXJ0aW5vUm93');
+    'ChNGbHV0dGVyQ3VwZXJ0aW5vUm93EiMKCGNoaWxkcmVuGAkgAygLMgcuV2lkZ2V0UghjaGlsZH'
+    'Jlbg==');
 
 @$core.Deprecated('Use flutterCupertinoColumnDescriptor instead')
 const FlutterCupertinoColumn$json = {
   '1': 'FlutterCupertinoColumn',
+  '2': [
+    {'1': 'children', '3': 9, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterCupertinoColumn`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoColumnDescriptor = $convert.base64Decode(
-    'ChZGbHV0dGVyQ3VwZXJ0aW5vQ29sdW1u');
+    'ChZGbHV0dGVyQ3VwZXJ0aW5vQ29sdW1uEiMKCGNoaWxkcmVuGAkgAygLMgcuV2lkZ2V0UghjaG'
+    'lsZHJlbg==');
 
 @$core.Deprecated('Use flutterCupertinoFlexibleDescriptor instead')
 const FlutterCupertinoFlexible$json = {
@@ -1845,22 +1895,28 @@ const FlutterCupertinoWrap$json = {
   '2': [
     {'1': 'spacing', '3': 5, '4': 1, '5': 1, '10': 'spacing'},
     {'1': 'run_spacing', '3': 7, '4': 1, '5': 1, '10': 'runSpacing'},
+    {'1': 'children', '3': 12, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
   ],
 };
 
 /// Descriptor for `FlutterCupertinoWrap`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoWrapDescriptor = $convert.base64Decode(
     'ChRGbHV0dGVyQ3VwZXJ0aW5vV3JhcBIYCgdzcGFjaW5nGAUgASgBUgdzcGFjaW5nEh8KC3J1bl'
-    '9zcGFjaW5nGAcgASgBUgpydW5TcGFjaW5n');
+    '9zcGFjaW5nGAcgASgBUgpydW5TcGFjaW5nEiMKCGNoaWxkcmVuGAwgAygLMgcuV2lkZ2V0Ughj'
+    'aGlsZHJlbg==');
 
 @$core.Deprecated('Use flutterCupertinoFlowDescriptor instead')
 const FlutterCupertinoFlow$json = {
   '1': 'FlutterCupertinoFlow',
+  '2': [
+    {'1': 'children', '3': 4, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterCupertinoFlow`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoFlowDescriptor = $convert.base64Decode(
-    'ChRGbHV0dGVyQ3VwZXJ0aW5vRmxvdw==');
+    'ChRGbHV0dGVyQ3VwZXJ0aW5vRmxvdxIjCghjaGlsZHJlbhgEIAMoCzIHLldpZGdldFIIY2hpbG'
+    'RyZW4=');
 
 @$core.Deprecated('Use flutterCupertinoRichTextDescriptor instead')
 const FlutterCupertinoRichText$json = {
@@ -2368,6 +2424,7 @@ const FlutterCupertinoDraggableScrollableSheet$json = {
     {'1': 'max_child_size', '3': 5, '4': 1, '5': 1, '10': 'maxChildSize'},
     {'1': 'expand', '3': 6, '4': 1, '5': 8, '10': 'expand'},
     {'1': 'snap', '3': 7, '4': 1, '5': 8, '10': 'snap'},
+    {'1': 'snap_sizes', '3': 8, '4': 3, '5': 1, '10': 'snapSizes'},
     {'1': 'should_close_on_min_extent', '3': 11, '4': 1, '5': 8, '10': 'shouldCloseOnMinExtent'},
   ],
 };
@@ -2377,8 +2434,9 @@ final $typed_data.Uint8List flutterCupertinoDraggableScrollableSheetDescriptor =
     'CihGbHV0dGVyQ3VwZXJ0aW5vRHJhZ2dhYmxlU2Nyb2xsYWJsZVNoZWV0EiwKEmluaXRpYWxfY2'
     'hpbGRfc2l6ZRgDIAEoAVIQaW5pdGlhbENoaWxkU2l6ZRIkCg5taW5fY2hpbGRfc2l6ZRgEIAEo'
     'AVIMbWluQ2hpbGRTaXplEiQKDm1heF9jaGlsZF9zaXplGAUgASgBUgxtYXhDaGlsZFNpemUSFg'
-    'oGZXhwYW5kGAYgASgIUgZleHBhbmQSEgoEc25hcBgHIAEoCFIEc25hcBI6ChpzaG91bGRfY2xv'
-    'c2Vfb25fbWluX2V4dGVudBgLIAEoCFIWc2hvdWxkQ2xvc2VPbk1pbkV4dGVudA==');
+    'oGZXhwYW5kGAYgASgIUgZleHBhbmQSEgoEc25hcBgHIAEoCFIEc25hcBIdCgpzbmFwX3NpemVz'
+    'GAggAygBUglzbmFwU2l6ZXMSOgoac2hvdWxkX2Nsb3NlX29uX21pbl9leHRlbnQYCyABKAhSFn'
+    'Nob3VsZENsb3NlT25NaW5FeHRlbnQ=');
 
 @$core.Deprecated('Use flutterCupertinoDraggableScrollableActuatorDescriptor instead')
 const FlutterCupertinoDraggableScrollableActuator$json = {
@@ -2429,6 +2487,7 @@ const FlutterCupertinoEditableText$json = {
     {'1': 'cursor_opacity_animates', '3': 47, '4': 1, '5': 8, '10': 'cursorOpacityAnimates'},
     {'1': 'paint_cursor_above_text', '3': 49, '4': 1, '5': 8, '10': 'paintCursorAboveText'},
     {'1': 'enable_interactive_selection', '3': 55, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
+    {'1': 'autofill_hints', '3': 60, '4': 3, '5': 9, '10': 'autofillHints'},
     {'1': 'restoration_id', '3': 63, '4': 1, '5': 9, '10': 'restorationId'},
     {'1': 'scribble_enabled', '3': 65, '4': 1, '5': 8, '10': 'scribbleEnabled'},
     {'1': 'enable_i_m_e_personalized_learning', '3': 66, '4': 1, '5': 8, '10': 'enableIMEPersonalizedLearning'},
@@ -2451,10 +2510,11 @@ final $typed_data.Uint8List flutterCupertinoEditableTextDescriptor = $convert.ba
     'gtIAEoAVIMY3Vyc29ySGVpZ2h0EjYKF2N1cnNvcl9vcGFjaXR5X2FuaW1hdGVzGC8gASgIUhVj'
     'dXJzb3JPcGFjaXR5QW5pbWF0ZXMSNQoXcGFpbnRfY3Vyc29yX2Fib3ZlX3RleHQYMSABKAhSFH'
     'BhaW50Q3Vyc29yQWJvdmVUZXh0EkAKHGVuYWJsZV9pbnRlcmFjdGl2ZV9zZWxlY3Rpb24YNyAB'
-    'KAhSGmVuYWJsZUludGVyYWN0aXZlU2VsZWN0aW9uEiUKDnJlc3RvcmF0aW9uX2lkGD8gASgJUg'
-    '1yZXN0b3JhdGlvbklkEikKEHNjcmliYmxlX2VuYWJsZWQYQSABKAhSD3NjcmliYmxlRW5hYmxl'
-    'ZBJJCiJlbmFibGVfaV9tX2VfcGVyc29uYWxpemVkX2xlYXJuaW5nGEIgASgIUh1lbmFibGVJTU'
-    'VQZXJzb25hbGl6ZWRMZWFybmluZw==');
+    'KAhSGmVuYWJsZUludGVyYWN0aXZlU2VsZWN0aW9uEiUKDmF1dG9maWxsX2hpbnRzGDwgAygJUg'
+    '1hdXRvZmlsbEhpbnRzEiUKDnJlc3RvcmF0aW9uX2lkGD8gASgJUg1yZXN0b3JhdGlvbklkEikK'
+    'EHNjcmliYmxlX2VuYWJsZWQYQSABKAhSD3NjcmliYmxlRW5hYmxlZBJJCiJlbmFibGVfaV9tX2'
+    'VfcGVyc29uYWxpemVkX2xlYXJuaW5nGEIgASgIUh1lbmFibGVJTUVQZXJzb25hbGl6ZWRMZWFy'
+    'bmluZw==');
 
 @$core.Deprecated('Use flutterCupertinoFadeInImageDescriptor instead')
 const FlutterCupertinoFadeInImage$json = {
@@ -2695,11 +2755,15 @@ final $typed_data.Uint8List flutterCupertinoSingleChildRenderObjectWidgetDescrip
 @$core.Deprecated('Use flutterCupertinoMultiChildRenderObjectWidgetDescriptor instead')
 const FlutterCupertinoMultiChildRenderObjectWidget$json = {
   '1': 'FlutterCupertinoMultiChildRenderObjectWidget',
+  '2': [
+    {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterCupertinoMultiChildRenderObjectWidget`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoMultiChildRenderObjectWidgetDescriptor = $convert.base64Decode(
-    'CixGbHV0dGVyQ3VwZXJ0aW5vTXVsdGlDaGlsZFJlbmRlck9iamVjdFdpZGdldA==');
+    'CixGbHV0dGVyQ3VwZXJ0aW5vTXVsdGlDaGlsZFJlbmRlck9iamVjdFdpZGdldBIjCghjaGlsZH'
+    'JlbhgDIAMoCzIHLldpZGdldFIIY2hpbGRyZW4=');
 
 @$core.Deprecated('Use flutterCupertinoErrorWidgetDescriptor instead')
 const FlutterCupertinoErrorWidget$json = {
@@ -3207,6 +3271,7 @@ const FlutterCupertinoListWheelScrollView$json = {
     {'1': 'squeeze', '3': 12, '4': 1, '5': 1, '10': 'squeeze'},
     {'1': 'render_children_outside_viewport', '3': 14, '4': 1, '5': 8, '10': 'renderChildrenOutsideViewport'},
     {'1': 'restoration_id', '3': 16, '4': 1, '5': 9, '10': 'restorationId'},
+    {'1': 'children', '3': 18, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
   ],
 };
 
@@ -3220,7 +3285,8 @@ final $typed_data.Uint8List flutterCupertinoListWheelScrollViewDescriptor = $con
     'VuZGVyQ2VudGVyT3BhY2l0eRIfCgtpdGVtX2V4dGVudBgLIAEoAVIKaXRlbUV4dGVudBIYCgdz'
     'cXVlZXplGAwgASgBUgdzcXVlZXplEkcKIHJlbmRlcl9jaGlsZHJlbl9vdXRzaWRlX3ZpZXdwb3'
     'J0GA4gASgIUh1yZW5kZXJDaGlsZHJlbk91dHNpZGVWaWV3cG9ydBIlCg5yZXN0b3JhdGlvbl9p'
-    'ZBgQIAEoCVINcmVzdG9yYXRpb25JZA==');
+    'ZBgQIAEoCVINcmVzdG9yYXRpb25JZBIjCghjaGlsZHJlbhgSIAMoCzIHLldpZGdldFIIY2hpbG'
+    'RyZW4=');
 
 @$core.Deprecated('Use flutterCupertinoListWheelViewportDescriptor instead')
 const FlutterCupertinoListWheelViewport$json = {
@@ -3439,13 +3505,14 @@ const FlutterCupertinoNestedScrollViewViewport$json = {
   '1': 'FlutterCupertinoNestedScrollViewViewport',
   '2': [
     {'1': 'anchor', '3': 5, '4': 1, '5': 1, '10': 'anchor'},
+    {'1': 'slivers', '3': 8, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
   ],
 };
 
 /// Descriptor for `FlutterCupertinoNestedScrollViewViewport`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoNestedScrollViewViewportDescriptor = $convert.base64Decode(
     'CihGbHV0dGVyQ3VwZXJ0aW5vTmVzdGVkU2Nyb2xsVmlld1ZpZXdwb3J0EhYKBmFuY2hvchgFIA'
-    'EoAVIGYW5jaG9y');
+    'EoAVIGYW5jaG9yEiEKB3NsaXZlcnMYCCADKAsyBy5XaWRnZXRSB3NsaXZlcnM=');
 
 @$core.Deprecated('Use flutterCupertinoNotificationListenerDescriptor instead')
 const FlutterCupertinoNotificationListener$json = {
@@ -3475,13 +3542,15 @@ const FlutterCupertinoOverflowBar$json = {
   '2': [
     {'1': 'spacing', '3': 3, '4': 1, '5': 1, '10': 'spacing'},
     {'1': 'overflow_spacing', '3': 5, '4': 1, '5': 1, '10': 'overflowSpacing'},
+    {'1': 'children', '3': 10, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
   ],
 };
 
 /// Descriptor for `FlutterCupertinoOverflowBar`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoOverflowBarDescriptor = $convert.base64Decode(
     'ChtGbHV0dGVyQ3VwZXJ0aW5vT3ZlcmZsb3dCYXISGAoHc3BhY2luZxgDIAEoAVIHc3BhY2luZx'
-    'IpChBvdmVyZmxvd19zcGFjaW5nGAUgASgBUg9vdmVyZmxvd1NwYWNpbmc=');
+    'IpChBvdmVyZmxvd19zcGFjaW5nGAUgASgBUg9vdmVyZmxvd1NwYWNpbmcSIwoIY2hpbGRyZW4Y'
+    'CiADKAsyBy5XaWRnZXRSCGNoaWxkcmVu');
 
 @$core.Deprecated('Use flutterCupertinoOverlayDescriptor instead')
 const FlutterCupertinoOverlay$json = {
@@ -3553,6 +3622,7 @@ const FlutterCupertinoPageView$json = {
   '2': [
     {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
     {'1': 'page_snapping', '3': 7, '4': 1, '5': 8, '10': 'pageSnapping'},
+    {'1': 'children', '3': 9, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
     {'1': 'allow_implicit_scrolling', '3': 11, '4': 1, '5': 8, '10': 'allowImplicitScrolling'},
     {'1': 'restoration_id', '3': 12, '4': 1, '5': 9, '10': 'restorationId'},
     {'1': 'pad_ends', '3': 15, '4': 1, '5': 8, '10': 'padEnds'},
@@ -3562,9 +3632,10 @@ const FlutterCupertinoPageView$json = {
 /// Descriptor for `FlutterCupertinoPageView`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoPageViewDescriptor = $convert.base64Decode(
     'ChhGbHV0dGVyQ3VwZXJ0aW5vUGFnZVZpZXcSGAoHcmV2ZXJzZRgEIAEoCFIHcmV2ZXJzZRIjCg'
-    '1wYWdlX3NuYXBwaW5nGAcgASgIUgxwYWdlU25hcHBpbmcSOAoYYWxsb3dfaW1wbGljaXRfc2Ny'
-    'b2xsaW5nGAsgASgIUhZhbGxvd0ltcGxpY2l0U2Nyb2xsaW5nEiUKDnJlc3RvcmF0aW9uX2lkGA'
-    'wgASgJUg1yZXN0b3JhdGlvbklkEhkKCHBhZF9lbmRzGA8gASgIUgdwYWRFbmRz');
+    '1wYWdlX3NuYXBwaW5nGAcgASgIUgxwYWdlU25hcHBpbmcSIwoIY2hpbGRyZW4YCSADKAsyBy5X'
+    'aWRnZXRSCGNoaWxkcmVuEjgKGGFsbG93X2ltcGxpY2l0X3Njcm9sbGluZxgLIAEoCFIWYWxsb3'
+    'dJbXBsaWNpdFNjcm9sbGluZxIlCg5yZXN0b3JhdGlvbl9pZBgMIAEoCVINcmVzdG9yYXRpb25J'
+    'ZBIZCghwYWRfZW5kcxgPIAEoCFIHcGFkRW5kcw==');
 
 @$core.Deprecated('Use flutterCupertinoPerformanceOverlayDescriptor instead')
 const FlutterCupertinoPerformanceOverlay$json = {
@@ -3991,6 +4062,7 @@ const FlutterCupertinoCustomScrollView$json = {
     {'1': 'shrink_wrap', '3': 9, '4': 1, '5': 8, '10': 'shrinkWrap'},
     {'1': 'anchor', '3': 11, '4': 1, '5': 1, '10': 'anchor'},
     {'1': 'cache_extent', '3': 12, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'slivers', '3': 13, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
     {'1': 'semantic_child_count', '3': 14, '4': 1, '5': 3, '10': 'semanticChildCount'},
     {'1': 'restoration_id', '3': 17, '4': 1, '5': 9, '10': 'restorationId'},
   ],
@@ -4001,8 +4073,9 @@ final $typed_data.Uint8List flutterCupertinoCustomScrollViewDescriptor = $conver
     'CiBGbHV0dGVyQ3VwZXJ0aW5vQ3VzdG9tU2Nyb2xsVmlldxIYCgdyZXZlcnNlGAQgASgIUgdyZX'
     'ZlcnNlEhgKB3ByaW1hcnkYBiABKAhSB3ByaW1hcnkSHwoLc2hyaW5rX3dyYXAYCSABKAhSCnNo'
     'cmlua1dyYXASFgoGYW5jaG9yGAsgASgBUgZhbmNob3ISIQoMY2FjaGVfZXh0ZW50GAwgASgBUg'
-    'tjYWNoZUV4dGVudBIwChRzZW1hbnRpY19jaGlsZF9jb3VudBgOIAEoA1ISc2VtYW50aWNDaGls'
-    'ZENvdW50EiUKDnJlc3RvcmF0aW9uX2lkGBEgASgJUg1yZXN0b3JhdGlvbklk');
+    'tjYWNoZUV4dGVudBIhCgdzbGl2ZXJzGA0gAygLMgcuV2lkZ2V0UgdzbGl2ZXJzEjAKFHNlbWFu'
+    'dGljX2NoaWxkX2NvdW50GA4gASgDUhJzZW1hbnRpY0NoaWxkQ291bnQSJQoOcmVzdG9yYXRpb2'
+    '5faWQYESABKAlSDXJlc3RvcmF0aW9uSWQ=');
 
 @$core.Deprecated('Use flutterCupertinoBoxScrollViewDescriptor instead')
 const FlutterCupertinoBoxScrollView$json = {
@@ -4038,6 +4111,7 @@ const FlutterCupertinoListView$json = {
     {'1': 'add_repaint_boundaries', '3': 13, '4': 1, '5': 8, '10': 'addRepaintBoundaries'},
     {'1': 'add_semantic_indexes', '3': 14, '4': 1, '5': 8, '10': 'addSemanticIndexes'},
     {'1': 'cache_extent', '3': 15, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'children', '3': 16, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
     {'1': 'semantic_child_count', '3': 17, '4': 1, '5': 3, '10': 'semanticChildCount'},
     {'1': 'restoration_id', '3': 20, '4': 1, '5': 9, '10': 'restorationId'},
   ],
@@ -4052,8 +4126,9 @@ final $typed_data.Uint8List flutterCupertinoListViewDescriptor = $convert.base64
     'DCABKAhSFmFkZEF1dG9tYXRpY0tlZXBBbGl2ZXMSNAoWYWRkX3JlcGFpbnRfYm91bmRhcmllcx'
     'gNIAEoCFIUYWRkUmVwYWludEJvdW5kYXJpZXMSMAoUYWRkX3NlbWFudGljX2luZGV4ZXMYDiAB'
     'KAhSEmFkZFNlbWFudGljSW5kZXhlcxIhCgxjYWNoZV9leHRlbnQYDyABKAFSC2NhY2hlRXh0ZW'
-    '50EjAKFHNlbWFudGljX2NoaWxkX2NvdW50GBEgASgDUhJzZW1hbnRpY0NoaWxkQ291bnQSJQoO'
-    'cmVzdG9yYXRpb25faWQYFCABKAlSDXJlc3RvcmF0aW9uSWQ=');
+    '50EiMKCGNoaWxkcmVuGBAgAygLMgcuV2lkZ2V0UghjaGlsZHJlbhIwChRzZW1hbnRpY19jaGls'
+    'ZF9jb3VudBgRIAEoA1ISc2VtYW50aWNDaGlsZENvdW50EiUKDnJlc3RvcmF0aW9uX2lkGBQgAS'
+    'gJUg1yZXN0b3JhdGlvbklk');
 
 @$core.Deprecated('Use flutterCupertinoGridViewDescriptor instead')
 const FlutterCupertinoGridView$json = {
@@ -4066,6 +4141,7 @@ const FlutterCupertinoGridView$json = {
     {'1': 'add_repaint_boundaries', '3': 12, '4': 1, '5': 8, '10': 'addRepaintBoundaries'},
     {'1': 'add_semantic_indexes', '3': 13, '4': 1, '5': 8, '10': 'addSemanticIndexes'},
     {'1': 'cache_extent', '3': 14, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'children', '3': 15, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
     {'1': 'semantic_child_count', '3': 16, '4': 1, '5': 3, '10': 'semanticChildCount'},
     {'1': 'restoration_id', '3': 20, '4': 1, '5': 9, '10': 'restorationId'},
   ],
@@ -4078,9 +4154,9 @@ final $typed_data.Uint8List flutterCupertinoGridViewDescriptor = $convert.base64
     'EjkKGWFkZF9hdXRvbWF0aWNfa2VlcF9hbGl2ZXMYCyABKAhSFmFkZEF1dG9tYXRpY0tlZXBBbG'
     'l2ZXMSNAoWYWRkX3JlcGFpbnRfYm91bmRhcmllcxgMIAEoCFIUYWRkUmVwYWludEJvdW5kYXJp'
     'ZXMSMAoUYWRkX3NlbWFudGljX2luZGV4ZXMYDSABKAhSEmFkZFNlbWFudGljSW5kZXhlcxIhCg'
-    'xjYWNoZV9leHRlbnQYDiABKAFSC2NhY2hlRXh0ZW50EjAKFHNlbWFudGljX2NoaWxkX2NvdW50'
-    'GBAgASgDUhJzZW1hbnRpY0NoaWxkQ291bnQSJQoOcmVzdG9yYXRpb25faWQYFCABKAlSDXJlc3'
-    'RvcmF0aW9uSWQ=');
+    'xjYWNoZV9leHRlbnQYDiABKAFSC2NhY2hlRXh0ZW50EiMKCGNoaWxkcmVuGA8gAygLMgcuV2lk'
+    'Z2V0UghjaGlsZHJlbhIwChRzZW1hbnRpY19jaGlsZF9jb3VudBgQIAEoA1ISc2VtYW50aWNDaG'
+    'lsZENvdW50EiUKDnJlc3RvcmF0aW9uX2lkGBQgASgJUg1yZXN0b3JhdGlvbklk');
 
 @$core.Deprecated('Use flutterCupertinoScrollableDescriptor instead')
 const FlutterCupertinoScrollable$json = {
@@ -4416,20 +4492,28 @@ final $typed_data.Uint8List flutterCupertinoSliverCrossAxisExpandedDescriptor = 
 @$core.Deprecated('Use flutterCupertinoSliverCrossAxisGroupDescriptor instead')
 const FlutterCupertinoSliverCrossAxisGroup$json = {
   '1': 'FlutterCupertinoSliverCrossAxisGroup',
+  '2': [
+    {'1': 'slivers', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
+  ],
 };
 
 /// Descriptor for `FlutterCupertinoSliverCrossAxisGroup`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoSliverCrossAxisGroupDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyQ3Jvc3NBeGlzR3JvdXA=');
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyQ3Jvc3NBeGlzR3JvdXASIQoHc2xpdmVycxgDIAMoCz'
+    'IHLldpZGdldFIHc2xpdmVycw==');
 
 @$core.Deprecated('Use flutterCupertinoSliverMainAxisGroupDescriptor instead')
 const FlutterCupertinoSliverMainAxisGroup$json = {
   '1': 'FlutterCupertinoSliverMainAxisGroup',
+  '2': [
+    {'1': 'slivers', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
+  ],
 };
 
 /// Descriptor for `FlutterCupertinoSliverMainAxisGroup`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoSliverMainAxisGroupDescriptor = $convert.base64Decode(
-    'CiNGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyTWFpbkF4aXNHcm91cA==');
+    'CiNGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyTWFpbkF4aXNHcm91cBIhCgdzbGl2ZXJzGAMgAygLMg'
+    'cuV2lkZ2V0UgdzbGl2ZXJz');
 
 @$core.Deprecated('Use flutterCupertinoSliverFillViewportDescriptor instead')
 const FlutterCupertinoSliverFillViewport$json = {
@@ -4995,22 +5079,28 @@ const FlutterCupertinoViewport$json = {
   '2': [
     {'1': 'anchor', '3': 5, '4': 1, '5': 1, '10': 'anchor'},
     {'1': 'cache_extent', '3': 8, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'slivers', '3': 11, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
   ],
 };
 
 /// Descriptor for `FlutterCupertinoViewport`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoViewportDescriptor = $convert.base64Decode(
     'ChhGbHV0dGVyQ3VwZXJ0aW5vVmlld3BvcnQSFgoGYW5jaG9yGAUgASgBUgZhbmNob3ISIQoMY2'
-    'FjaGVfZXh0ZW50GAggASgBUgtjYWNoZUV4dGVudA==');
+    'FjaGVfZXh0ZW50GAggASgBUgtjYWNoZUV4dGVudBIhCgdzbGl2ZXJzGAsgAygLMgcuV2lkZ2V0'
+    'UgdzbGl2ZXJz');
 
 @$core.Deprecated('Use flutterCupertinoShrinkWrappingViewportDescriptor instead')
 const FlutterCupertinoShrinkWrappingViewport$json = {
   '1': 'FlutterCupertinoShrinkWrappingViewport',
+  '2': [
+    {'1': 'slivers', '3': 7, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
+  ],
 };
 
 /// Descriptor for `FlutterCupertinoShrinkWrappingViewport`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterCupertinoShrinkWrappingViewportDescriptor = $convert.base64Decode(
-    'CiZGbHV0dGVyQ3VwZXJ0aW5vU2hyaW5rV3JhcHBpbmdWaWV3cG9ydA==');
+    'CiZGbHV0dGVyQ3VwZXJ0aW5vU2hyaW5rV3JhcHBpbmdWaWV3cG9ydBIhCgdzbGl2ZXJzGAcgAy'
+    'gLMgcuV2lkZ2V0UgdzbGl2ZXJz');
 
 @$core.Deprecated('Use flutterCupertinoVisibilityDescriptor instead')
 const FlutterCupertinoVisibility$json = {
@@ -5098,6 +5188,7 @@ const FlutterMaterialAboutListTile$json = {
     {'1': 'application_version', '3': 6, '4': 1, '5': 9, '10': 'applicationVersion'},
     {'1': 'application_icon', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'applicationIcon'},
     {'1': 'application_legalese', '3': 8, '4': 1, '5': 9, '10': 'applicationLegalese'},
+    {'1': 'about_box_children', '3': 9, '4': 3, '5': 11, '6': '.Widget', '10': 'aboutBoxChildren'},
     {'1': 'dense', '3': 10, '4': 1, '5': 8, '10': 'dense'},
   ],
 };
@@ -5109,7 +5200,8 @@ final $typed_data.Uint8List flutterMaterialAboutListTileDescriptor = $convert.ba
     'BSABKAlSD2FwcGxpY2F0aW9uTmFtZRIvChNhcHBsaWNhdGlvbl92ZXJzaW9uGAYgASgJUhJhcH'
     'BsaWNhdGlvblZlcnNpb24SMgoQYXBwbGljYXRpb25faWNvbhgHIAEoCzIHLldpZGdldFIPYXBw'
     'bGljYXRpb25JY29uEjEKFGFwcGxpY2F0aW9uX2xlZ2FsZXNlGAggASgJUhNhcHBsaWNhdGlvbk'
-    'xlZ2FsZXNlEhQKBWRlbnNlGAogASgIUgVkZW5zZQ==');
+    'xlZ2FsZXNlEjUKEmFib3V0X2JveF9jaGlsZHJlbhgJIAMoCzIHLldpZGdldFIQYWJvdXRCb3hD'
+    'aGlsZHJlbhIUCgVkZW5zZRgKIAEoCFIFZGVuc2U=');
 
 @$core.Deprecated('Use flutterMaterialAboutDialogDescriptor instead')
 const FlutterMaterialAboutDialog$json = {
@@ -5119,6 +5211,7 @@ const FlutterMaterialAboutDialog$json = {
     {'1': 'application_version', '3': 4, '4': 1, '5': 9, '10': 'applicationVersion'},
     {'1': 'application_icon', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'applicationIcon'},
     {'1': 'application_legalese', '3': 6, '4': 1, '5': 9, '10': 'applicationLegalese'},
+    {'1': 'children', '3': 7, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
   ],
 };
 
@@ -5128,7 +5221,7 @@ final $typed_data.Uint8List flutterMaterialAboutDialogDescriptor = $convert.base
     '9hcHBsaWNhdGlvbk5hbWUSLwoTYXBwbGljYXRpb25fdmVyc2lvbhgEIAEoCVISYXBwbGljYXRp'
     'b25WZXJzaW9uEjIKEGFwcGxpY2F0aW9uX2ljb24YBSABKAsyBy5XaWRnZXRSD2FwcGxpY2F0aW'
     '9uSWNvbhIxChRhcHBsaWNhdGlvbl9sZWdhbGVzZRgGIAEoCVITYXBwbGljYXRpb25MZWdhbGVz'
-    'ZQ==');
+    'ZRIjCghjaGlsZHJlbhgHIAMoCzIHLldpZGdldFIIY2hpbGRyZW4=');
 
 @$core.Deprecated('Use flutterMaterialLicensePageDescriptor instead')
 const FlutterMaterialLicensePage$json = {
@@ -5257,11 +5350,15 @@ final $typed_data.Uint8List flutterMaterialActionIconThemeDescriptor = $convert.
 @$core.Deprecated('Use flutterMaterialAdaptiveTextSelectionToolbarDescriptor instead')
 const FlutterMaterialAdaptiveTextSelectionToolbar$json = {
   '1': 'FlutterMaterialAdaptiveTextSelectionToolbar',
+  '2': [
+    {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterMaterialAdaptiveTextSelectionToolbar`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialAdaptiveTextSelectionToolbarDescriptor = $convert.base64Decode(
-    'CitGbHV0dGVyTWF0ZXJpYWxBZGFwdGl2ZVRleHRTZWxlY3Rpb25Ub29sYmFy');
+    'CitGbHV0dGVyTWF0ZXJpYWxBZGFwdGl2ZVRleHRTZWxlY3Rpb25Ub29sYmFyEiMKCGNoaWxkcm'
+    'VuGAMgAygLMgcuV2lkZ2V0UghjaGlsZHJlbg==');
 
 @$core.Deprecated('Use flutterMaterialAnimatedIconDescriptor instead')
 const FlutterMaterialAnimatedIcon$json = {
@@ -5316,6 +5413,7 @@ const FlutterMaterialAppBar$json = {
     {'1': 'leading', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'leading'},
     {'1': 'automatically_imply_leading', '3': 4, '4': 1, '5': 8, '10': 'automaticallyImplyLeading'},
     {'1': 'title', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'title'},
+    {'1': 'actions', '3': 6, '4': 3, '5': 11, '6': '.Widget', '10': 'actions'},
     {'1': 'flexible_space', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'flexibleSpace'},
     {'1': 'elevation', '3': 9, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'scrolled_under_elevation', '3': 10, '4': 1, '5': 1, '10': 'scrolledUnderElevation'},
@@ -5335,16 +5433,17 @@ const FlutterMaterialAppBar$json = {
 final $typed_data.Uint8List flutterMaterialAppBarDescriptor = $convert.base64Decode(
     'ChVGbHV0dGVyTWF0ZXJpYWxBcHBCYXISIQoHbGVhZGluZxgDIAEoCzIHLldpZGdldFIHbGVhZG'
     'luZxI+ChthdXRvbWF0aWNhbGx5X2ltcGx5X2xlYWRpbmcYBCABKAhSGWF1dG9tYXRpY2FsbHlJ'
-    'bXBseUxlYWRpbmcSHQoFdGl0bGUYBSABKAsyBy5XaWRnZXRSBXRpdGxlEi4KDmZsZXhpYmxlX3'
-    'NwYWNlGAcgASgLMgcuV2lkZ2V0Ug1mbGV4aWJsZVNwYWNlEhwKCWVsZXZhdGlvbhgJIAEoAVIJ'
-    'ZWxldmF0aW9uEjgKGHNjcm9sbGVkX3VuZGVyX2VsZXZhdGlvbhgKIAEoAVIWc2Nyb2xsZWRVbm'
-    'RlckVsZXZhdGlvbhIYCgdwcmltYXJ5GBMgASgIUgdwcmltYXJ5EiEKDGNlbnRlcl90aXRsZRgU'
-    'IAEoCFILY2VudGVyVGl0bGUSOAoYZXhjbHVkZV9oZWFkZXJfc2VtYW50aWNzGBUgASgIUhZleG'
-    'NsdWRlSGVhZGVyU2VtYW50aWNzEiMKDXRpdGxlX3NwYWNpbmcYFiABKAFSDHRpdGxlU3BhY2lu'
-    'ZxInCg90b29sYmFyX29wYWNpdHkYFyABKAFSDnRvb2xiYXJPcGFjaXR5EiUKDmJvdHRvbV9vcG'
-    'FjaXR5GBggASgBUg1ib3R0b21PcGFjaXR5EiUKDnRvb2xiYXJfaGVpZ2h0GBkgASgBUg10b29s'
-    'YmFySGVpZ2h0EiMKDWxlYWRpbmdfd2lkdGgYGiABKAFSDGxlYWRpbmdXaWR0aBI+Chtmb3JjZV'
-    '9tYXRlcmlhbF90cmFuc3BhcmVuY3kYHiABKAhSGWZvcmNlTWF0ZXJpYWxUcmFuc3BhcmVuY3k=');
+    'bXBseUxlYWRpbmcSHQoFdGl0bGUYBSABKAsyBy5XaWRnZXRSBXRpdGxlEiEKB2FjdGlvbnMYBi'
+    'ADKAsyBy5XaWRnZXRSB2FjdGlvbnMSLgoOZmxleGlibGVfc3BhY2UYByABKAsyBy5XaWRnZXRS'
+    'DWZsZXhpYmxlU3BhY2USHAoJZWxldmF0aW9uGAkgASgBUgllbGV2YXRpb24SOAoYc2Nyb2xsZW'
+    'RfdW5kZXJfZWxldmF0aW9uGAogASgBUhZzY3JvbGxlZFVuZGVyRWxldmF0aW9uEhgKB3ByaW1h'
+    'cnkYEyABKAhSB3ByaW1hcnkSIQoMY2VudGVyX3RpdGxlGBQgASgIUgtjZW50ZXJUaXRsZRI4Ch'
+    'hleGNsdWRlX2hlYWRlcl9zZW1hbnRpY3MYFSABKAhSFmV4Y2x1ZGVIZWFkZXJTZW1hbnRpY3MS'
+    'IwoNdGl0bGVfc3BhY2luZxgWIAEoAVIMdGl0bGVTcGFjaW5nEicKD3Rvb2xiYXJfb3BhY2l0eR'
+    'gXIAEoAVIOdG9vbGJhck9wYWNpdHkSJQoOYm90dG9tX29wYWNpdHkYGCABKAFSDWJvdHRvbU9w'
+    'YWNpdHkSJQoOdG9vbGJhcl9oZWlnaHQYGSABKAFSDXRvb2xiYXJIZWlnaHQSIwoNbGVhZGluZ1'
+    '93aWR0aBgaIAEoAVIMbGVhZGluZ1dpZHRoEj4KG2ZvcmNlX21hdGVyaWFsX3RyYW5zcGFyZW5j'
+    'eRgeIAEoCFIZZm9yY2VNYXRlcmlhbFRyYW5zcGFyZW5jeQ==');
 
 @$core.Deprecated('Use flutterMaterialSliverAppBarDescriptor instead')
 const FlutterMaterialSliverAppBar$json = {
@@ -5353,6 +5452,7 @@ const FlutterMaterialSliverAppBar$json = {
     {'1': 'leading', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'leading'},
     {'1': 'automatically_imply_leading', '3': 4, '4': 1, '5': 8, '10': 'automaticallyImplyLeading'},
     {'1': 'title', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'title'},
+    {'1': 'actions', '3': 6, '4': 3, '5': 11, '6': '.Widget', '10': 'actions'},
     {'1': 'flexible_space', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'flexibleSpace'},
     {'1': 'elevation', '3': 9, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'scrolled_under_elevation', '3': 10, '4': 1, '5': 1, '10': 'scrolledUnderElevation'},
@@ -5378,20 +5478,21 @@ const FlutterMaterialSliverAppBar$json = {
 final $typed_data.Uint8List flutterMaterialSliverAppBarDescriptor = $convert.base64Decode(
     'ChtGbHV0dGVyTWF0ZXJpYWxTbGl2ZXJBcHBCYXISIQoHbGVhZGluZxgDIAEoCzIHLldpZGdldF'
     'IHbGVhZGluZxI+ChthdXRvbWF0aWNhbGx5X2ltcGx5X2xlYWRpbmcYBCABKAhSGWF1dG9tYXRp'
-    'Y2FsbHlJbXBseUxlYWRpbmcSHQoFdGl0bGUYBSABKAsyBy5XaWRnZXRSBXRpdGxlEi4KDmZsZX'
-    'hpYmxlX3NwYWNlGAcgASgLMgcuV2lkZ2V0Ug1mbGV4aWJsZVNwYWNlEhwKCWVsZXZhdGlvbhgJ'
-    'IAEoAVIJZWxldmF0aW9uEjgKGHNjcm9sbGVkX3VuZGVyX2VsZXZhdGlvbhgKIAEoAVIWc2Nyb2'
-    'xsZWRVbmRlckVsZXZhdGlvbhIlCg5mb3JjZV9lbGV2YXRlZBgNIAEoCFINZm9yY2VFbGV2YXRl'
-    'ZBIYCgdwcmltYXJ5GBIgASgIUgdwcmltYXJ5EiEKDGNlbnRlcl90aXRsZRgTIAEoCFILY2VudG'
-    'VyVGl0bGUSOAoYZXhjbHVkZV9oZWFkZXJfc2VtYW50aWNzGBQgASgIUhZleGNsdWRlSGVhZGVy'
-    'U2VtYW50aWNzEiMKDXRpdGxlX3NwYWNpbmcYFSABKAFSDHRpdGxlU3BhY2luZxIpChBjb2xsYX'
-    'BzZWRfaGVpZ2h0GBYgASgBUg9jb2xsYXBzZWRIZWlnaHQSJwoPZXhwYW5kZWRfaGVpZ2h0GBcg'
-    'ASgBUg5leHBhbmRlZEhlaWdodBIaCghmbG9hdGluZxgYIAEoCFIIZmxvYXRpbmcSFgoGcGlubm'
-    'VkGBkgASgIUgZwaW5uZWQSEgoEc25hcBgaIAEoCFIEc25hcBIYCgdzdHJldGNoGBsgASgIUgdz'
-    'dHJldGNoEjQKFnN0cmV0Y2hfdHJpZ2dlcl9vZmZzZXQYHCABKAFSFHN0cmV0Y2hUcmlnZ2VyT2'
-    'Zmc2V0EiUKDnRvb2xiYXJfaGVpZ2h0GB8gASgBUg10b29sYmFySGVpZ2h0EiMKDWxlYWRpbmdf'
-    'd2lkdGgYICABKAFSDGxlYWRpbmdXaWR0aBI+Chtmb3JjZV9tYXRlcmlhbF90cmFuc3BhcmVuY3'
-    'kYJCABKAhSGWZvcmNlTWF0ZXJpYWxUcmFuc3BhcmVuY3k=');
+    'Y2FsbHlJbXBseUxlYWRpbmcSHQoFdGl0bGUYBSABKAsyBy5XaWRnZXRSBXRpdGxlEiEKB2FjdG'
+    'lvbnMYBiADKAsyBy5XaWRnZXRSB2FjdGlvbnMSLgoOZmxleGlibGVfc3BhY2UYByABKAsyBy5X'
+    'aWRnZXRSDWZsZXhpYmxlU3BhY2USHAoJZWxldmF0aW9uGAkgASgBUgllbGV2YXRpb24SOAoYc2'
+    'Nyb2xsZWRfdW5kZXJfZWxldmF0aW9uGAogASgBUhZzY3JvbGxlZFVuZGVyRWxldmF0aW9uEiUK'
+    'DmZvcmNlX2VsZXZhdGVkGA0gASgIUg1mb3JjZUVsZXZhdGVkEhgKB3ByaW1hcnkYEiABKAhSB3'
+    'ByaW1hcnkSIQoMY2VudGVyX3RpdGxlGBMgASgIUgtjZW50ZXJUaXRsZRI4ChhleGNsdWRlX2hl'
+    'YWRlcl9zZW1hbnRpY3MYFCABKAhSFmV4Y2x1ZGVIZWFkZXJTZW1hbnRpY3MSIwoNdGl0bGVfc3'
+    'BhY2luZxgVIAEoAVIMdGl0bGVTcGFjaW5nEikKEGNvbGxhcHNlZF9oZWlnaHQYFiABKAFSD2Nv'
+    'bGxhcHNlZEhlaWdodBInCg9leHBhbmRlZF9oZWlnaHQYFyABKAFSDmV4cGFuZGVkSGVpZ2h0Eh'
+    'oKCGZsb2F0aW5nGBggASgIUghmbG9hdGluZxIWCgZwaW5uZWQYGSABKAhSBnBpbm5lZBISCgRz'
+    'bmFwGBogASgIUgRzbmFwEhgKB3N0cmV0Y2gYGyABKAhSB3N0cmV0Y2gSNAoWc3RyZXRjaF90cm'
+    'lnZ2VyX29mZnNldBgcIAEoAVIUc3RyZXRjaFRyaWdnZXJPZmZzZXQSJQoOdG9vbGJhcl9oZWln'
+    'aHQYHyABKAFSDXRvb2xiYXJIZWlnaHQSIwoNbGVhZGluZ193aWR0aBggIAEoAVIMbGVhZGluZ1'
+    'dpZHRoEj4KG2ZvcmNlX21hdGVyaWFsX3RyYW5zcGFyZW5jeRgkIAEoCFIZZm9yY2VNYXRlcmlh'
+    'bFRyYW5zcGFyZW5jeQ==');
 
 @$core.Deprecated('Use flutterMaterialAutocompleteDescriptor instead')
 const FlutterMaterialAutocomplete$json = {
@@ -5443,6 +5544,7 @@ const FlutterMaterialMaterialBanner$json = {
   '1': 'FlutterMaterialMaterialBanner',
   '2': [
     {'1': 'content', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'content'},
+    {'1': 'actions', '3': 5, '4': 3, '5': 11, '6': '.Widget', '10': 'actions'},
     {'1': 'elevation', '3': 6, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'leading', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'leading'},
     {'1': 'force_actions_below', '3': 15, '4': 1, '5': 8, '10': 'forceActionsBelow'},
@@ -5452,9 +5554,9 @@ const FlutterMaterialMaterialBanner$json = {
 /// Descriptor for `FlutterMaterialMaterialBanner`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialMaterialBannerDescriptor = $convert.base64Decode(
     'Ch1GbHV0dGVyTWF0ZXJpYWxNYXRlcmlhbEJhbm5lchIhCgdjb250ZW50GAMgASgLMgcuV2lkZ2'
-    'V0Ugdjb250ZW50EhwKCWVsZXZhdGlvbhgGIAEoAVIJZWxldmF0aW9uEiEKB2xlYWRpbmcYByAB'
-    'KAsyBy5XaWRnZXRSB2xlYWRpbmcSLgoTZm9yY2VfYWN0aW9uc19iZWxvdxgPIAEoCFIRZm9yY2'
-    'VBY3Rpb25zQmVsb3c=');
+    'V0Ugdjb250ZW50EiEKB2FjdGlvbnMYBSADKAsyBy5XaWRnZXRSB2FjdGlvbnMSHAoJZWxldmF0'
+    'aW9uGAYgASgBUgllbGV2YXRpb24SIQoHbGVhZGluZxgHIAEoCzIHLldpZGdldFIHbGVhZGluZx'
+    'IuChNmb3JjZV9hY3Rpb25zX2JlbG93GA8gASgIUhFmb3JjZUFjdGlvbnNCZWxvdw==');
 
 @$core.Deprecated('Use flutterMaterialMaterialBannerThemeDescriptor instead')
 const FlutterMaterialMaterialBannerTheme$json = {
@@ -5575,6 +5677,7 @@ const FlutterMaterialButtonBar$json = {
     {'1': 'button_height', '3': 7, '4': 1, '5': 1, '10': 'buttonHeight'},
     {'1': 'button_aligned_dropdown', '3': 9, '4': 1, '5': 8, '10': 'buttonAlignedDropdown'},
     {'1': 'overflow_button_spacing', '3': 12, '4': 1, '5': 1, '10': 'overflowButtonSpacing'},
+    {'1': 'children', '3': 13, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
   ],
 };
 
@@ -5583,7 +5686,8 @@ final $typed_data.Uint8List flutterMaterialButtonBarDescriptor = $convert.base64
     'ChhGbHV0dGVyTWF0ZXJpYWxCdXR0b25CYXISKAoQYnV0dG9uX21pbl93aWR0aBgGIAEoAVIOYn'
     'V0dG9uTWluV2lkdGgSIwoNYnV0dG9uX2hlaWdodBgHIAEoAVIMYnV0dG9uSGVpZ2h0EjYKF2J1'
     'dHRvbl9hbGlnbmVkX2Ryb3Bkb3duGAkgASgIUhVidXR0b25BbGlnbmVkRHJvcGRvd24SNgoXb3'
-    'ZlcmZsb3dfYnV0dG9uX3NwYWNpbmcYDCABKAFSFW92ZXJmbG93QnV0dG9uU3BhY2luZw==');
+    'ZlcmZsb3dfYnV0dG9uX3NwYWNpbmcYDCABKAFSFW92ZXJmbG93QnV0dG9uU3BhY2luZxIjCghj'
+    'aGlsZHJlbhgNIAMoCzIHLldpZGdldFIIY2hpbGRyZW4=');
 
 @$core.Deprecated('Use flutterMaterialButtonBarThemeDescriptor instead')
 const FlutterMaterialButtonBarTheme$json = {
@@ -5975,11 +6079,15 @@ final $typed_data.Uint8List flutterMaterialDatePickerThemeDescriptor = $convert.
 @$core.Deprecated('Use flutterMaterialDesktopTextSelectionToolbarDescriptor instead')
 const FlutterMaterialDesktopTextSelectionToolbar$json = {
   '1': 'FlutterMaterialDesktopTextSelectionToolbar',
+  '2': [
+    {'1': 'children', '3': 4, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterMaterialDesktopTextSelectionToolbar`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialDesktopTextSelectionToolbarDescriptor = $convert.base64Decode(
-    'CipGbHV0dGVyTWF0ZXJpYWxEZXNrdG9wVGV4dFNlbGVjdGlvblRvb2xiYXI=');
+    'CipGbHV0dGVyTWF0ZXJpYWxEZXNrdG9wVGV4dFNlbGVjdGlvblRvb2xiYXISIwoIY2hpbGRyZW'
+    '4YBCADKAsyBy5XaWRnZXRSCGNoaWxkcmVu');
 
 @$core.Deprecated('Use flutterMaterialDesktopTextSelectionToolbarButtonDescriptor instead')
 const FlutterMaterialDesktopTextSelectionToolbarButton$json = {
@@ -6015,6 +6123,7 @@ const FlutterMaterialAlertDialog$json = {
     {'1': 'icon', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'icon'},
     {'1': 'title', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'title'},
     {'1': 'content', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'content'},
+    {'1': 'actions', '3': 12, '4': 3, '5': 11, '6': '.Widget', '10': 'actions'},
     {'1': 'actions_overflow_button_spacing', '3': 17, '4': 1, '5': 1, '10': 'actionsOverflowButtonSpacing'},
     {'1': 'elevation', '3': 20, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'semantic_label', '3': 23, '4': 1, '5': 9, '10': 'semanticLabel'},
@@ -6026,10 +6135,10 @@ const FlutterMaterialAlertDialog$json = {
 final $typed_data.Uint8List flutterMaterialAlertDialogDescriptor = $convert.base64Decode(
     'ChpGbHV0dGVyTWF0ZXJpYWxBbGVydERpYWxvZxIbCgRpY29uGAMgASgLMgcuV2lkZ2V0UgRpY2'
     '9uEh0KBXRpdGxlGAYgASgLMgcuV2lkZ2V0UgV0aXRsZRIhCgdjb250ZW50GAkgASgLMgcuV2lk'
-    'Z2V0Ugdjb250ZW50EkUKH2FjdGlvbnNfb3ZlcmZsb3dfYnV0dG9uX3NwYWNpbmcYESABKAFSHG'
-    'FjdGlvbnNPdmVyZmxvd0J1dHRvblNwYWNpbmcSHAoJZWxldmF0aW9uGBQgASgBUgllbGV2YXRp'
-    'b24SJQoOc2VtYW50aWNfbGFiZWwYFyABKAlSDXNlbWFudGljTGFiZWwSHgoKc2Nyb2xsYWJsZR'
-    'gcIAEoCFIKc2Nyb2xsYWJsZQ==');
+    'Z2V0Ugdjb250ZW50EiEKB2FjdGlvbnMYDCADKAsyBy5XaWRnZXRSB2FjdGlvbnMSRQofYWN0aW'
+    '9uc19vdmVyZmxvd19idXR0b25fc3BhY2luZxgRIAEoAVIcYWN0aW9uc092ZXJmbG93QnV0dG9u'
+    'U3BhY2luZxIcCgllbGV2YXRpb24YFCABKAFSCWVsZXZhdGlvbhIlCg5zZW1hbnRpY19sYWJlbB'
+    'gXIAEoCVINc2VtYW50aWNMYWJlbBIeCgpzY3JvbGxhYmxlGBwgASgIUgpzY3JvbGxhYmxl');
 
 @$core.Deprecated('Use flutterMaterialSimpleDialogOptionDescriptor instead')
 const FlutterMaterialSimpleDialogOption$json = {
@@ -6049,6 +6158,7 @@ const FlutterMaterialSimpleDialog$json = {
   '1': 'FlutterMaterialSimpleDialog',
   '2': [
     {'1': 'title', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'title'},
+    {'1': 'children', '3': 6, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
     {'1': 'elevation', '3': 9, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'semantic_label', '3': 12, '4': 1, '5': 9, '10': 'semanticLabel'},
   ],
@@ -6057,8 +6167,9 @@ const FlutterMaterialSimpleDialog$json = {
 /// Descriptor for `FlutterMaterialSimpleDialog`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialSimpleDialogDescriptor = $convert.base64Decode(
     'ChtGbHV0dGVyTWF0ZXJpYWxTaW1wbGVEaWFsb2cSHQoFdGl0bGUYAyABKAsyBy5XaWRnZXRSBX'
-    'RpdGxlEhwKCWVsZXZhdGlvbhgJIAEoAVIJZWxldmF0aW9uEiUKDnNlbWFudGljX2xhYmVsGAwg'
-    'ASgJUg1zZW1hbnRpY0xhYmVs');
+    'RpdGxlEiMKCGNoaWxkcmVuGAYgAygLMgcuV2lkZ2V0UghjaGlsZHJlbhIcCgllbGV2YXRpb24Y'
+    'CSABKAFSCWVsZXZhdGlvbhIlCg5zZW1hbnRpY19sYWJlbBgMIAEoCVINc2VtYW50aWNMYWJlbA'
+    '==');
 
 @$core.Deprecated('Use flutterMaterialDividerDescriptor instead')
 const FlutterMaterialDivider$json = {
@@ -6362,6 +6473,7 @@ const FlutterMaterialExpansionTile$json = {
     {'1': 'leading', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'leading'},
     {'1': 'title', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'title'},
     {'1': 'subtitle', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'subtitle'},
+    {'1': 'children', '3': 7, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
     {'1': 'trailing', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'trailing'},
     {'1': 'initially_expanded', '3': 9, '4': 1, '5': 8, '10': 'initiallyExpanded'},
     {'1': 'maintain_state', '3': 10, '4': 1, '5': 8, '10': 'maintainState'},
@@ -6372,9 +6484,10 @@ const FlutterMaterialExpansionTile$json = {
 final $typed_data.Uint8List flutterMaterialExpansionTileDescriptor = $convert.base64Decode(
     'ChxGbHV0dGVyTWF0ZXJpYWxFeHBhbnNpb25UaWxlEiEKB2xlYWRpbmcYAyABKAsyBy5XaWRnZX'
     'RSB2xlYWRpbmcSHQoFdGl0bGUYBCABKAsyBy5XaWRnZXRSBXRpdGxlEiMKCHN1YnRpdGxlGAUg'
-    'ASgLMgcuV2lkZ2V0UghzdWJ0aXRsZRIjCgh0cmFpbGluZxgIIAEoCzIHLldpZGdldFIIdHJhaW'
-    'xpbmcSLQoSaW5pdGlhbGx5X2V4cGFuZGVkGAkgASgIUhFpbml0aWFsbHlFeHBhbmRlZBIlCg5t'
-    'YWludGFpbl9zdGF0ZRgKIAEoCFINbWFpbnRhaW5TdGF0ZQ==');
+    'ASgLMgcuV2lkZ2V0UghzdWJ0aXRsZRIjCghjaGlsZHJlbhgHIAMoCzIHLldpZGdldFIIY2hpbG'
+    'RyZW4SIwoIdHJhaWxpbmcYCCABKAsyBy5XaWRnZXRSCHRyYWlsaW5nEi0KEmluaXRpYWxseV9l'
+    'eHBhbmRlZBgJIAEoCFIRaW5pdGlhbGx5RXhwYW5kZWQSJQoObWFpbnRhaW5fc3RhdGUYCiABKA'
+    'hSDW1haW50YWluU3RhdGU=');
 
 @$core.Deprecated('Use flutterMaterialExpansionTileThemeDescriptor instead')
 const FlutterMaterialExpansionTileTheme$json = {
@@ -6843,6 +6956,7 @@ const FlutterMaterialMenuAnchor$json = {
   '2': [
     {'1': 'anchor_tap_closes_menu', '3': 8, '4': 1, '5': 8, '10': 'anchorTapClosesMenu'},
     {'1': 'cross_axis_unconstrained', '3': 11, '4': 1, '5': 8, '10': 'crossAxisUnconstrained'},
+    {'1': 'menu_children', '3': 12, '4': 3, '5': 11, '6': '.Widget', '10': 'menuChildren'},
     {'1': 'child', '3': 14, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
   ],
 };
@@ -6851,17 +6965,21 @@ const FlutterMaterialMenuAnchor$json = {
 final $typed_data.Uint8List flutterMaterialMenuAnchorDescriptor = $convert.base64Decode(
     'ChlGbHV0dGVyTWF0ZXJpYWxNZW51QW5jaG9yEjMKFmFuY2hvcl90YXBfY2xvc2VzX21lbnUYCC'
     'ABKAhSE2FuY2hvclRhcENsb3Nlc01lbnUSOAoYY3Jvc3NfYXhpc191bmNvbnN0cmFpbmVkGAsg'
-    'ASgIUhZjcm9zc0F4aXNVbmNvbnN0cmFpbmVkEh0KBWNoaWxkGA4gASgLMgcuV2lkZ2V0UgVjaG'
-    'lsZA==');
+    'ASgIUhZjcm9zc0F4aXNVbmNvbnN0cmFpbmVkEiwKDW1lbnVfY2hpbGRyZW4YDCADKAsyBy5XaW'
+    'RnZXRSDG1lbnVDaGlsZHJlbhIdCgVjaGlsZBgOIAEoCzIHLldpZGdldFIFY2hpbGQ=');
 
 @$core.Deprecated('Use flutterMaterialMenuBarDescriptor instead')
 const FlutterMaterialMenuBar$json = {
   '1': 'FlutterMaterialMenuBar',
+  '2': [
+    {'1': 'children', '3': 6, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterMaterialMenuBar`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialMenuBarDescriptor = $convert.base64Decode(
-    'ChZGbHV0dGVyTWF0ZXJpYWxNZW51QmFy');
+    'ChZGbHV0dGVyTWF0ZXJpYWxNZW51QmFyEiMKCGNoaWxkcmVuGAYgAygLMgcuV2lkZ2V0UghjaG'
+    'lsZHJlbg==');
 
 @$core.Deprecated('Use flutterMaterialMenuItemButtonDescriptor instead')
 const FlutterMaterialMenuItemButton$json = {
@@ -6928,6 +7046,7 @@ const FlutterMaterialSubmenuButton$json = {
   '2': [
     {'1': 'leading_icon', '3': 14, '4': 1, '5': 11, '6': '.Widget', '10': 'leadingIcon'},
     {'1': 'trailing_icon', '3': 15, '4': 1, '5': 11, '6': '.Widget', '10': 'trailingIcon'},
+    {'1': 'menu_children', '3': 16, '4': 3, '5': 11, '6': '.Widget', '10': 'menuChildren'},
     {'1': 'child', '3': 17, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
   ],
 };
@@ -6936,7 +7055,8 @@ const FlutterMaterialSubmenuButton$json = {
 final $typed_data.Uint8List flutterMaterialSubmenuButtonDescriptor = $convert.base64Decode(
     'ChxGbHV0dGVyTWF0ZXJpYWxTdWJtZW51QnV0dG9uEioKDGxlYWRpbmdfaWNvbhgOIAEoCzIHLl'
     'dpZGdldFILbGVhZGluZ0ljb24SLAoNdHJhaWxpbmdfaWNvbhgPIAEoCzIHLldpZGdldFIMdHJh'
-    'aWxpbmdJY29uEh0KBWNoaWxkGBEgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
+    'aWxpbmdJY29uEiwKDW1lbnVfY2hpbGRyZW4YECADKAsyBy5XaWRnZXRSDG1lbnVDaGlsZHJlbh'
+    'IdCgVjaGlsZBgRIAEoCzIHLldpZGdldFIFY2hpbGQ=');
 
 @$core.Deprecated('Use flutterMaterialMenuAcceleratorCallbackBindingDescriptor instead')
 const FlutterMaterialMenuAcceleratorCallbackBinding$json = {
@@ -7023,6 +7143,7 @@ const FlutterMaterialNavigationBar$json = {
   '1': 'FlutterMaterialNavigationBar',
   '2': [
     {'1': 'selected_index', '3': 4, '4': 1, '5': 3, '10': 'selectedIndex'},
+    {'1': 'destinations', '3': 5, '4': 3, '5': 11, '6': '.Widget', '10': 'destinations'},
     {'1': 'elevation', '3': 8, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'height', '3': 13, '4': 1, '5': 1, '10': 'height'},
   ],
@@ -7031,8 +7152,9 @@ const FlutterMaterialNavigationBar$json = {
 /// Descriptor for `FlutterMaterialNavigationBar`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialNavigationBarDescriptor = $convert.base64Decode(
     'ChxGbHV0dGVyTWF0ZXJpYWxOYXZpZ2F0aW9uQmFyEiUKDnNlbGVjdGVkX2luZGV4GAQgASgDUg'
-    '1zZWxlY3RlZEluZGV4EhwKCWVsZXZhdGlvbhgIIAEoAVIJZWxldmF0aW9uEhYKBmhlaWdodBgN'
-    'IAEoAVIGaGVpZ2h0');
+    '1zZWxlY3RlZEluZGV4EisKDGRlc3RpbmF0aW9ucxgFIAMoCzIHLldpZGdldFIMZGVzdGluYXRp'
+    'b25zEhwKCWVsZXZhdGlvbhgIIAEoAVIJZWxldmF0aW9uEhYKBmhlaWdodBgNIAEoAVIGaGVpZ2'
+    'h0');
 
 @$core.Deprecated('Use flutterMaterialNavigationDestinationDescriptor instead')
 const FlutterMaterialNavigationDestination$json = {
@@ -7082,6 +7204,7 @@ final $typed_data.Uint8List flutterMaterialNavigationBarThemeDescriptor = $conve
 const FlutterMaterialNavigationDrawer$json = {
   '1': 'FlutterMaterialNavigationDrawer',
   '2': [
+    {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
     {'1': 'elevation', '3': 7, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'selected_index', '3': 11, '4': 1, '5': 3, '10': 'selectedIndex'},
   ],
@@ -7089,8 +7212,9 @@ const FlutterMaterialNavigationDrawer$json = {
 
 /// Descriptor for `FlutterMaterialNavigationDrawer`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialNavigationDrawerDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyTWF0ZXJpYWxOYXZpZ2F0aW9uRHJhd2VyEhwKCWVsZXZhdGlvbhgHIAEoAVIJZW'
-    'xldmF0aW9uEiUKDnNlbGVjdGVkX2luZGV4GAsgASgDUg1zZWxlY3RlZEluZGV4');
+    'Ch9GbHV0dGVyTWF0ZXJpYWxOYXZpZ2F0aW9uRHJhd2VyEiMKCGNoaWxkcmVuGAMgAygLMgcuV2'
+    'lkZ2V0UghjaGlsZHJlbhIcCgllbGV2YXRpb24YByABKAFSCWVsZXZhdGlvbhIlCg5zZWxlY3Rl'
+    'ZF9pbmRleBgLIAEoA1INc2VsZWN0ZWRJbmRleA==');
 
 @$core.Deprecated('Use flutterMaterialNavigationDrawerDestinationDescriptor instead')
 const FlutterMaterialNavigationDrawerDestination$json = {
@@ -7192,6 +7316,7 @@ const FlutterMaterialPaginatedDataTable$json = {
   '1': 'FlutterMaterialPaginatedDataTable',
   '2': [
     {'1': 'header', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'header'},
+    {'1': 'actions', '3': 4, '4': 3, '5': 11, '6': '.Widget', '10': 'actions'},
     {'1': 'sort_column_index', '3': 6, '4': 1, '5': 3, '10': 'sortColumnIndex'},
     {'1': 'sort_ascending', '3': 7, '4': 1, '5': 8, '10': 'sortAscending'},
     {'1': 'data_row_height', '3': 9, '4': 1, '5': 1, '10': 'dataRowHeight'},
@@ -7204,6 +7329,7 @@ const FlutterMaterialPaginatedDataTable$json = {
     {'1': 'show_first_last_buttons', '3': 16, '4': 1, '5': 8, '10': 'showFirstLastButtons'},
     {'1': 'initial_first_row_index', '3': 17, '4': 1, '5': 3, '10': 'initialFirstRowIndex'},
     {'1': 'rows_per_page', '3': 19, '4': 1, '5': 3, '10': 'rowsPerPage'},
+    {'1': 'available_rows_per_page', '3': 20, '4': 3, '5': 3, '10': 'availableRowsPerPage'},
     {'1': 'checkbox_horizontal_margin', '3': 25, '4': 1, '5': 1, '10': 'checkboxHorizontalMargin'},
     {'1': 'primary', '3': 27, '4': 1, '5': 8, '10': 'primary'},
   ],
@@ -7212,18 +7338,20 @@ const FlutterMaterialPaginatedDataTable$json = {
 /// Descriptor for `FlutterMaterialPaginatedDataTable`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialPaginatedDataTableDescriptor = $convert.base64Decode(
     'CiFGbHV0dGVyTWF0ZXJpYWxQYWdpbmF0ZWREYXRhVGFibGUSHwoGaGVhZGVyGAMgASgLMgcuV2'
-    'lkZ2V0UgZoZWFkZXISKgoRc29ydF9jb2x1bW5faW5kZXgYBiABKANSD3NvcnRDb2x1bW5JbmRl'
-    'eBIlCg5zb3J0X2FzY2VuZGluZxgHIAEoCFINc29ydEFzY2VuZGluZxImCg9kYXRhX3Jvd19oZW'
-    'lnaHQYCSABKAFSDWRhdGFSb3dIZWlnaHQSLQoTZGF0YV9yb3dfbWluX2hlaWdodBgKIAEoAVIQ'
-    'ZGF0YVJvd01pbkhlaWdodBItChNkYXRhX3Jvd19tYXhfaGVpZ2h0GAsgASgBUhBkYXRhUm93TW'
-    'F4SGVpZ2h0EiwKEmhlYWRpbmdfcm93X2hlaWdodBgMIAEoAVIQaGVhZGluZ1Jvd0hlaWdodBIr'
-    'ChFob3Jpem9udGFsX21hcmdpbhgNIAEoAVIQaG9yaXpvbnRhbE1hcmdpbhIlCg5jb2x1bW5fc3'
-    'BhY2luZxgOIAEoAVINY29sdW1uU3BhY2luZxIwChRzaG93X2NoZWNrYm94X2NvbHVtbhgPIAEo'
-    'CFISc2hvd0NoZWNrYm94Q29sdW1uEjUKF3Nob3dfZmlyc3RfbGFzdF9idXR0b25zGBAgASgIUh'
-    'RzaG93Rmlyc3RMYXN0QnV0dG9ucxI1Chdpbml0aWFsX2ZpcnN0X3Jvd19pbmRleBgRIAEoA1IU'
-    'aW5pdGlhbEZpcnN0Um93SW5kZXgSIgoNcm93c19wZXJfcGFnZRgTIAEoA1ILcm93c1BlclBhZ2'
-    'USPAoaY2hlY2tib3hfaG9yaXpvbnRhbF9tYXJnaW4YGSABKAFSGGNoZWNrYm94SG9yaXpvbnRh'
-    'bE1hcmdpbhIYCgdwcmltYXJ5GBsgASgIUgdwcmltYXJ5');
+    'lkZ2V0UgZoZWFkZXISIQoHYWN0aW9ucxgEIAMoCzIHLldpZGdldFIHYWN0aW9ucxIqChFzb3J0'
+    'X2NvbHVtbl9pbmRleBgGIAEoA1IPc29ydENvbHVtbkluZGV4EiUKDnNvcnRfYXNjZW5kaW5nGA'
+    'cgASgIUg1zb3J0QXNjZW5kaW5nEiYKD2RhdGFfcm93X2hlaWdodBgJIAEoAVINZGF0YVJvd0hl'
+    'aWdodBItChNkYXRhX3Jvd19taW5faGVpZ2h0GAogASgBUhBkYXRhUm93TWluSGVpZ2h0Ei0KE2'
+    'RhdGFfcm93X21heF9oZWlnaHQYCyABKAFSEGRhdGFSb3dNYXhIZWlnaHQSLAoSaGVhZGluZ19y'
+    'b3dfaGVpZ2h0GAwgASgBUhBoZWFkaW5nUm93SGVpZ2h0EisKEWhvcml6b250YWxfbWFyZ2luGA'
+    '0gASgBUhBob3Jpem9udGFsTWFyZ2luEiUKDmNvbHVtbl9zcGFjaW5nGA4gASgBUg1jb2x1bW5T'
+    'cGFjaW5nEjAKFHNob3dfY2hlY2tib3hfY29sdW1uGA8gASgIUhJzaG93Q2hlY2tib3hDb2x1bW'
+    '4SNQoXc2hvd19maXJzdF9sYXN0X2J1dHRvbnMYECABKAhSFHNob3dGaXJzdExhc3RCdXR0b25z'
+    'EjUKF2luaXRpYWxfZmlyc3Rfcm93X2luZGV4GBEgASgDUhRpbml0aWFsRmlyc3RSb3dJbmRleB'
+    'IiCg1yb3dzX3Blcl9wYWdlGBMgASgDUgtyb3dzUGVyUGFnZRI1ChdhdmFpbGFibGVfcm93c19w'
+    'ZXJfcGFnZRgUIAMoA1IUYXZhaWxhYmxlUm93c1BlclBhZ2USPAoaY2hlY2tib3hfaG9yaXpvbn'
+    'RhbF9tYXJnaW4YGSABKAFSGGNoZWNrYm94SG9yaXpvbnRhbE1hcmdpbhIYCgdwcmltYXJ5GBsg'
+    'ASgIUgdwcmltYXJ5');
 
 @$core.Deprecated('Use flutterMaterialPopupMenuEntryDescriptor instead')
 const FlutterMaterialPopupMenuEntry$json = {
@@ -7497,6 +7625,7 @@ final $typed_data.Uint8List flutterMaterialRefreshIndicatorDescriptor = $convert
 const FlutterMaterialReorderableListView$json = {
   '1': 'FlutterMaterialReorderableListView',
   '2': [
+    {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
     {'1': 'item_extent', '3': 7, '4': 1, '5': 1, '10': 'itemExtent'},
     {'1': 'prototype_item', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'prototypeItem'},
     {'1': 'build_default_drag_handles', '3': 10, '4': 1, '5': 8, '10': 'buildDefaultDragHandles'},
@@ -7514,15 +7643,16 @@ const FlutterMaterialReorderableListView$json = {
 
 /// Descriptor for `FlutterMaterialReorderableListView`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialReorderableListViewDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyTWF0ZXJpYWxSZW9yZGVyYWJsZUxpc3RWaWV3Eh8KC2l0ZW1fZXh0ZW50GAcgAS'
-    'gBUgppdGVtRXh0ZW50Ei4KDnByb3RvdHlwZV9pdGVtGAggASgLMgcuV2lkZ2V0Ug1wcm90b3R5'
-    'cGVJdGVtEjsKGmJ1aWxkX2RlZmF1bHRfZHJhZ19oYW5kbGVzGAogASgIUhdidWlsZERlZmF1bH'
-    'REcmFnSGFuZGxlcxIfCgZoZWFkZXIYDCABKAsyBy5XaWRnZXRSBmhlYWRlchIfCgZmb290ZXIY'
-    'DSABKAsyBy5XaWRnZXRSBmZvb3RlchIYCgdyZXZlcnNlGA8gASgIUgdyZXZlcnNlEhgKB3ByaW'
-    '1hcnkYESABKAhSB3ByaW1hcnkSHwoLc2hyaW5rX3dyYXAYEyABKAhSCnNocmlua1dyYXASFgoG'
-    'YW5jaG9yGBQgASgBUgZhbmNob3ISIQoMY2FjaGVfZXh0ZW50GBUgASgBUgtjYWNoZUV4dGVudB'
-    'IlCg5yZXN0b3JhdGlvbl9pZBgYIAEoCVINcmVzdG9yYXRpb25JZBJBCh1hdXRvX3Njcm9sbGVy'
-    'X3ZlbG9jaXR5X3NjYWxhchgaIAEoAVIaYXV0b1Njcm9sbGVyVmVsb2NpdHlTY2FsYXI=');
+    'CiJGbHV0dGVyTWF0ZXJpYWxSZW9yZGVyYWJsZUxpc3RWaWV3EiMKCGNoaWxkcmVuGAMgAygLMg'
+    'cuV2lkZ2V0UghjaGlsZHJlbhIfCgtpdGVtX2V4dGVudBgHIAEoAVIKaXRlbUV4dGVudBIuCg5w'
+    'cm90b3R5cGVfaXRlbRgIIAEoCzIHLldpZGdldFINcHJvdG90eXBlSXRlbRI7ChpidWlsZF9kZW'
+    'ZhdWx0X2RyYWdfaGFuZGxlcxgKIAEoCFIXYnVpbGREZWZhdWx0RHJhZ0hhbmRsZXMSHwoGaGVh'
+    'ZGVyGAwgASgLMgcuV2lkZ2V0UgZoZWFkZXISHwoGZm9vdGVyGA0gASgLMgcuV2lkZ2V0UgZmb2'
+    '90ZXISGAoHcmV2ZXJzZRgPIAEoCFIHcmV2ZXJzZRIYCgdwcmltYXJ5GBEgASgIUgdwcmltYXJ5'
+    'Eh8KC3Nocmlua193cmFwGBMgASgIUgpzaHJpbmtXcmFwEhYKBmFuY2hvchgUIAEoAVIGYW5jaG'
+    '9yEiEKDGNhY2hlX2V4dGVudBgVIAEoAVILY2FjaGVFeHRlbnQSJQoOcmVzdG9yYXRpb25faWQY'
+    'GCABKAlSDXJlc3RvcmF0aW9uSWQSQQodYXV0b19zY3JvbGxlcl92ZWxvY2l0eV9zY2FsYXIYGi'
+    'ABKAFSGmF1dG9TY3JvbGxlclZlbG9jaXR5U2NhbGFy');
 
 @$core.Deprecated('Use flutterMaterialScaffoldMessengerDescriptor instead')
 const FlutterMaterialScaffoldMessenger$json = {
@@ -7543,6 +7673,7 @@ const FlutterMaterialScaffold$json = {
   '2': [
     {'1': 'body', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'body'},
     {'1': 'floating_action_button', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'floatingActionButton'},
+    {'1': 'persistent_footer_buttons', '3': 8, '4': 3, '5': 11, '6': '.Widget', '10': 'persistentFooterButtons'},
     {'1': 'drawer', '3': 10, '4': 1, '5': 11, '6': '.Widget', '10': 'drawer'},
     {'1': 'end_drawer', '3': 12, '4': 1, '5': 11, '6': '.Widget', '10': 'endDrawer'},
     {'1': 'bottom_navigation_bar', '3': 14, '4': 1, '5': 11, '6': '.Widget', '10': 'bottomNavigationBar'},
@@ -7562,17 +7693,19 @@ const FlutterMaterialScaffold$json = {
 final $typed_data.Uint8List flutterMaterialScaffoldDescriptor = $convert.base64Decode(
     'ChdGbHV0dGVyTWF0ZXJpYWxTY2FmZm9sZBIbCgRib2R5GAQgASgLMgcuV2lkZ2V0UgRib2R5Ej'
     '0KFmZsb2F0aW5nX2FjdGlvbl9idXR0b24YBSABKAsyBy5XaWRnZXRSFGZsb2F0aW5nQWN0aW9u'
-    'QnV0dG9uEh8KBmRyYXdlchgKIAEoCzIHLldpZGdldFIGZHJhd2VyEiYKCmVuZF9kcmF3ZXIYDC'
-    'ABKAsyBy5XaWRnZXRSCWVuZERyYXdlchI7ChVib3R0b21fbmF2aWdhdGlvbl9iYXIYDiABKAsy'
-    'By5XaWRnZXRSE2JvdHRvbU5hdmlnYXRpb25CYXISKgoMYm90dG9tX3NoZWV0GA8gASgLMgcuV2'
-    'lkZ2V0Ugtib3R0b21TaGVldBI+ChxyZXNpemVfdG9fYXZvaWRfYm90dG9tX2luc2V0GBEgASgI'
-    'UhhyZXNpemVUb0F2b2lkQm90dG9tSW5zZXQSGAoHcHJpbWFyeRgSIAEoCFIHcHJpbWFyeRIfCg'
-    'tleHRlbmRfYm9keRgUIAEoCFIKZXh0ZW5kQm9keRI6ChpleHRlbmRfYm9keV9iZWhpbmRfYXBw'
-    'X2JhchgVIAEoCFIWZXh0ZW5kQm9keUJlaGluZEFwcEJhchIzChZkcmF3ZXJfZWRnZV9kcmFnX3'
-    'dpZHRoGBcgASgBUhNkcmF3ZXJFZGdlRHJhZ1dpZHRoEkQKH2RyYXdlcl9lbmFibGVfb3Blbl9k'
-    'cmFnX2dlc3R1cmUYGCABKAhSG2RyYXdlckVuYWJsZU9wZW5EcmFnR2VzdHVyZRJLCiNlbmRfZH'
-    'Jhd2VyX2VuYWJsZV9vcGVuX2RyYWdfZ2VzdHVyZRgZIAEoCFIeZW5kRHJhd2VyRW5hYmxlT3Bl'
-    'bkRyYWdHZXN0dXJlEiUKDnJlc3RvcmF0aW9uX2lkGBogASgJUg1yZXN0b3JhdGlvbklk');
+    'QnV0dG9uEkMKGXBlcnNpc3RlbnRfZm9vdGVyX2J1dHRvbnMYCCADKAsyBy5XaWRnZXRSF3Blcn'
+    'Npc3RlbnRGb290ZXJCdXR0b25zEh8KBmRyYXdlchgKIAEoCzIHLldpZGdldFIGZHJhd2VyEiYK'
+    'CmVuZF9kcmF3ZXIYDCABKAsyBy5XaWRnZXRSCWVuZERyYXdlchI7ChVib3R0b21fbmF2aWdhdG'
+    'lvbl9iYXIYDiABKAsyBy5XaWRnZXRSE2JvdHRvbU5hdmlnYXRpb25CYXISKgoMYm90dG9tX3No'
+    'ZWV0GA8gASgLMgcuV2lkZ2V0Ugtib3R0b21TaGVldBI+ChxyZXNpemVfdG9fYXZvaWRfYm90dG'
+    '9tX2luc2V0GBEgASgIUhhyZXNpemVUb0F2b2lkQm90dG9tSW5zZXQSGAoHcHJpbWFyeRgSIAEo'
+    'CFIHcHJpbWFyeRIfCgtleHRlbmRfYm9keRgUIAEoCFIKZXh0ZW5kQm9keRI6ChpleHRlbmRfYm'
+    '9keV9iZWhpbmRfYXBwX2JhchgVIAEoCFIWZXh0ZW5kQm9keUJlaGluZEFwcEJhchIzChZkcmF3'
+    'ZXJfZWRnZV9kcmFnX3dpZHRoGBcgASgBUhNkcmF3ZXJFZGdlRHJhZ1dpZHRoEkQKH2RyYXdlcl'
+    '9lbmFibGVfb3Blbl9kcmFnX2dlc3R1cmUYGCABKAhSG2RyYXdlckVuYWJsZU9wZW5EcmFnR2Vz'
+    'dHVyZRJLCiNlbmRfZHJhd2VyX2VuYWJsZV9vcGVuX2RyYWdfZ2VzdHVyZRgZIAEoCFIeZW5kRH'
+    'Jhd2VyRW5hYmxlT3BlbkRyYWdHZXN0dXJlEiUKDnJlc3RvcmF0aW9uX2lkGBogASgJUg1yZXN0'
+    'b3JhdGlvbklk');
 
 @$core.Deprecated('Use flutterMaterialScrollbarDescriptor instead')
 const FlutterMaterialScrollbar$json = {
@@ -7614,6 +7747,7 @@ const FlutterMaterialSearchAnchor$json = {
   '2': [
     {'1': 'is_full_screen', '3': 3, '4': 1, '5': 8, '10': 'isFullScreen'},
     {'1': 'view_leading', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'viewLeading'},
+    {'1': 'view_trailing', '3': 7, '4': 3, '5': 11, '6': '.Widget', '10': 'viewTrailing'},
     {'1': 'view_hint_text', '3': 8, '4': 1, '5': 9, '10': 'viewHintText'},
     {'1': 'view_elevation', '3': 10, '4': 1, '5': 1, '10': 'viewElevation'},
   ],
@@ -7623,8 +7757,9 @@ const FlutterMaterialSearchAnchor$json = {
 final $typed_data.Uint8List flutterMaterialSearchAnchorDescriptor = $convert.base64Decode(
     'ChtGbHV0dGVyTWF0ZXJpYWxTZWFyY2hBbmNob3ISJAoOaXNfZnVsbF9zY3JlZW4YAyABKAhSDG'
     'lzRnVsbFNjcmVlbhIqCgx2aWV3X2xlYWRpbmcYBiABKAsyBy5XaWRnZXRSC3ZpZXdMZWFkaW5n'
-    'EiQKDnZpZXdfaGludF90ZXh0GAggASgJUgx2aWV3SGludFRleHQSJQoOdmlld19lbGV2YXRpb2'
-    '4YCiABKAFSDXZpZXdFbGV2YXRpb24=');
+    'EiwKDXZpZXdfdHJhaWxpbmcYByADKAsyBy5XaWRnZXRSDHZpZXdUcmFpbGluZxIkCg52aWV3X2'
+    'hpbnRfdGV4dBgIIAEoCVIMdmlld0hpbnRUZXh0EiUKDnZpZXdfZWxldmF0aW9uGAogASgBUg12'
+    'aWV3RWxldmF0aW9u');
 
 @$core.Deprecated('Use flutterMaterialSearchBarDescriptor instead')
 const FlutterMaterialSearchBar$json = {
@@ -7632,13 +7767,15 @@ const FlutterMaterialSearchBar$json = {
   '2': [
     {'1': 'hint_text', '3': 5, '4': 1, '5': 9, '10': 'hintText'},
     {'1': 'leading', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'leading'},
+    {'1': 'trailing', '3': 7, '4': 3, '5': 11, '6': '.Widget', '10': 'trailing'},
   ],
 };
 
 /// Descriptor for `FlutterMaterialSearchBar`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialSearchBarDescriptor = $convert.base64Decode(
     'ChhGbHV0dGVyTWF0ZXJpYWxTZWFyY2hCYXISGwoJaGludF90ZXh0GAUgASgJUghoaW50VGV4dB'
-    'IhCgdsZWFkaW5nGAYgASgLMgcuV2lkZ2V0UgdsZWFkaW5n');
+    'IhCgdsZWFkaW5nGAYgASgLMgcuV2lkZ2V0UgdsZWFkaW5nEiMKCHRyYWlsaW5nGAcgAygLMgcu'
+    'V2lkZ2V0Ugh0cmFpbGluZw==');
 
 @$core.Deprecated('Use flutterMaterialSearchBarThemeDescriptor instead')
 const FlutterMaterialSearchBarTheme$json = {
@@ -7922,6 +8059,7 @@ final $typed_data.Uint8List flutterMaterialTabDescriptor = $convert.base64Decode
 const FlutterMaterialTabBar$json = {
   '1': 'FlutterMaterialTabBar',
   '2': [
+    {'1': 'tabs', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'tabs'},
     {'1': 'is_scrollable', '3': 5, '4': 1, '5': 8, '10': 'isScrollable'},
     {'1': 'automatic_indicator_color_adjustment', '3': 8, '4': 1, '5': 8, '10': 'automaticIndicatorColorAdjustment'},
     {'1': 'indicator_weight', '3': 9, '4': 1, '5': 1, '10': 'indicatorWeight'},
@@ -7931,24 +8069,25 @@ const FlutterMaterialTabBar$json = {
 
 /// Descriptor for `FlutterMaterialTabBar`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialTabBarDescriptor = $convert.base64Decode(
-    'ChVGbHV0dGVyTWF0ZXJpYWxUYWJCYXISIwoNaXNfc2Nyb2xsYWJsZRgFIAEoCFIMaXNTY3JvbG'
-    'xhYmxlEk8KJGF1dG9tYXRpY19pbmRpY2F0b3JfY29sb3JfYWRqdXN0bWVudBgIIAEoCFIhYXV0'
-    'b21hdGljSW5kaWNhdG9yQ29sb3JBZGp1c3RtZW50EikKEGluZGljYXRvcl93ZWlnaHQYCSABKA'
-    'FSD2luZGljYXRvcldlaWdodBInCg9lbmFibGVfZmVlZGJhY2sYFiABKAhSDmVuYWJsZUZlZWRi'
-    'YWNr');
+    'ChVGbHV0dGVyTWF0ZXJpYWxUYWJCYXISGwoEdGFicxgDIAMoCzIHLldpZGdldFIEdGFicxIjCg'
+    '1pc19zY3JvbGxhYmxlGAUgASgIUgxpc1Njcm9sbGFibGUSTwokYXV0b21hdGljX2luZGljYXRv'
+    'cl9jb2xvcl9hZGp1c3RtZW50GAggASgIUiFhdXRvbWF0aWNJbmRpY2F0b3JDb2xvckFkanVzdG'
+    '1lbnQSKQoQaW5kaWNhdG9yX3dlaWdodBgJIAEoAVIPaW5kaWNhdG9yV2VpZ2h0EicKD2VuYWJs'
+    'ZV9mZWVkYmFjaxgWIAEoCFIOZW5hYmxlRmVlZGJhY2s=');
 
 @$core.Deprecated('Use flutterMaterialTabBarViewDescriptor instead')
 const FlutterMaterialTabBarView$json = {
   '1': 'FlutterMaterialTabBarView',
   '2': [
+    {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
     {'1': 'viewport_fraction', '3': 7, '4': 1, '5': 1, '10': 'viewportFraction'},
   ],
 };
 
 /// Descriptor for `FlutterMaterialTabBarView`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialTabBarViewDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyTWF0ZXJpYWxUYWJCYXJWaWV3EisKEXZpZXdwb3J0X2ZyYWN0aW9uGAcgASgBUh'
-    'B2aWV3cG9ydEZyYWN0aW9u');
+    'ChlGbHV0dGVyTWF0ZXJpYWxUYWJCYXJWaWV3EiMKCGNoaWxkcmVuGAMgAygLMgcuV2lkZ2V0Ug'
+    'hjaGlsZHJlbhIrChF2aWV3cG9ydF9mcmFjdGlvbhgHIAEoAVIQdmlld3BvcnRGcmFjdGlvbg==');
 
 @$core.Deprecated('Use flutterMaterialTabPageSelectorIndicatorDescriptor instead')
 const FlutterMaterialTabPageSelectorIndicator$json = {
@@ -8025,6 +8164,7 @@ const FlutterMaterialTextField$json = {
     {'1': 'cursor_height', '3': 37, '4': 1, '5': 1, '10': 'cursorHeight'},
     {'1': 'cursor_opacity_animates', '3': 39, '4': 1, '5': 8, '10': 'cursorOpacityAnimates'},
     {'1': 'enable_interactive_selection', '3': 46, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
+    {'1': 'autofill_hints', '3': 54, '4': 3, '5': 9, '10': 'autofillHints'},
     {'1': 'restoration_id', '3': 57, '4': 1, '5': 9, '10': 'restorationId'},
     {'1': 'scribble_enabled', '3': 58, '4': 1, '5': 8, '10': 'scribbleEnabled'},
     {'1': 'enable_i_m_e_personalized_learning', '3': 59, '4': 1, '5': 8, '10': 'enableIMEPersonalizedLearning'},
@@ -8045,10 +8185,11 @@ final $typed_data.Uint8List flutterMaterialTextFieldDescriptor = $convert.base64
     'KAFSC2N1cnNvcldpZHRoEiMKDWN1cnNvcl9oZWlnaHQYJSABKAFSDGN1cnNvckhlaWdodBI2Ch'
     'djdXJzb3Jfb3BhY2l0eV9hbmltYXRlcxgnIAEoCFIVY3Vyc29yT3BhY2l0eUFuaW1hdGVzEkAK'
     'HGVuYWJsZV9pbnRlcmFjdGl2ZV9zZWxlY3Rpb24YLiABKAhSGmVuYWJsZUludGVyYWN0aXZlU2'
-    'VsZWN0aW9uEiUKDnJlc3RvcmF0aW9uX2lkGDkgASgJUg1yZXN0b3JhdGlvbklkEikKEHNjcmli'
-    'YmxlX2VuYWJsZWQYOiABKAhSD3NjcmliYmxlRW5hYmxlZBJJCiJlbmFibGVfaV9tX2VfcGVyc2'
-    '9uYWxpemVkX2xlYXJuaW5nGDsgASgIUh1lbmFibGVJTUVQZXJzb25hbGl6ZWRMZWFybmluZxIq'
-    'ChFjYW5fcmVxdWVzdF9mb2N1cxg9IAEoCFIPY2FuUmVxdWVzdEZvY3Vz');
+    'VsZWN0aW9uEiUKDmF1dG9maWxsX2hpbnRzGDYgAygJUg1hdXRvZmlsbEhpbnRzEiUKDnJlc3Rv'
+    'cmF0aW9uX2lkGDkgASgJUg1yZXN0b3JhdGlvbklkEikKEHNjcmliYmxlX2VuYWJsZWQYOiABKA'
+    'hSD3NjcmliYmxlRW5hYmxlZBJJCiJlbmFibGVfaV9tX2VfcGVyc29uYWxpemVkX2xlYXJuaW5n'
+    'GDsgASgIUh1lbmFibGVJTUVQZXJzb25hbGl6ZWRMZWFybmluZxIqChFjYW5fcmVxdWVzdF9mb2'
+    'N1cxg9IAEoCFIPY2FuUmVxdWVzdEZvY3Vz');
 
 @$core.Deprecated('Use flutterMaterialTextFormFieldDescriptor instead')
 const FlutterMaterialTextFormField$json = {
@@ -8070,6 +8211,7 @@ const FlutterMaterialTextFormField$json = {
     {'1': 'cursor_width', '3': 39, '4': 1, '5': 1, '10': 'cursorWidth'},
     {'1': 'cursor_height', '3': 40, '4': 1, '5': 1, '10': 'cursorHeight'},
     {'1': 'enable_interactive_selection', '3': 45, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
+    {'1': 'autofill_hints', '3': 49, '4': 3, '5': 9, '10': 'autofillHints'},
     {'1': 'restoration_id', '3': 52, '4': 1, '5': 9, '10': 'restorationId'},
     {'1': 'enable_i_m_e_personalized_learning', '3': 53, '4': 1, '5': 8, '10': 'enableIMEPersonalizedLearning'},
     {'1': 'cursor_opacity_animates', '3': 60, '4': 1, '5': 8, '10': 'cursorOpacityAnimates'},
@@ -8090,12 +8232,13 @@ final $typed_data.Uint8List flutterMaterialTextFormFieldDescriptor = $convert.ba
     'BhbmRzGBwgASgIUgdleHBhbmRzEh0KCm1heF9sZW5ndGgYHSABKANSCW1heExlbmd0aBIYCgdl'
     'bmFibGVkGCYgASgIUgdlbmFibGVkEiEKDGN1cnNvcl93aWR0aBgnIAEoAVILY3Vyc29yV2lkdG'
     'gSIwoNY3Vyc29yX2hlaWdodBgoIAEoAVIMY3Vyc29ySGVpZ2h0EkAKHGVuYWJsZV9pbnRlcmFj'
-    'dGl2ZV9zZWxlY3Rpb24YLSABKAhSGmVuYWJsZUludGVyYWN0aXZlU2VsZWN0aW9uEiUKDnJlc3'
-    'RvcmF0aW9uX2lkGDQgASgJUg1yZXN0b3JhdGlvbklkEkkKImVuYWJsZV9pX21fZV9wZXJzb25h'
-    'bGl6ZWRfbGVhcm5pbmcYNSABKAhSHWVuYWJsZUlNRVBlcnNvbmFsaXplZExlYXJuaW5nEjYKF2'
-    'N1cnNvcl9vcGFjaXR5X2FuaW1hdGVzGDwgASgIUhVjdXJzb3JPcGFjaXR5QW5pbWF0ZXMSKQoQ'
-    'c2NyaWJibGVfZW5hYmxlZBhCIAEoCFIPc2NyaWJibGVFbmFibGVkEioKEWNhbl9yZXF1ZXN0X2'
-    'ZvY3VzGEMgASgIUg9jYW5SZXF1ZXN0Rm9jdXM=');
+    'dGl2ZV9zZWxlY3Rpb24YLSABKAhSGmVuYWJsZUludGVyYWN0aXZlU2VsZWN0aW9uEiUKDmF1dG'
+    '9maWxsX2hpbnRzGDEgAygJUg1hdXRvZmlsbEhpbnRzEiUKDnJlc3RvcmF0aW9uX2lkGDQgASgJ'
+    'Ug1yZXN0b3JhdGlvbklkEkkKImVuYWJsZV9pX21fZV9wZXJzb25hbGl6ZWRfbGVhcm5pbmcYNS'
+    'ABKAhSHWVuYWJsZUlNRVBlcnNvbmFsaXplZExlYXJuaW5nEjYKF2N1cnNvcl9vcGFjaXR5X2Fu'
+    'aW1hdGVzGDwgASgIUhVjdXJzb3JPcGFjaXR5QW5pbWF0ZXMSKQoQc2NyaWJibGVfZW5hYmxlZB'
+    'hCIAEoCFIPc2NyaWJibGVFbmFibGVkEioKEWNhbl9yZXF1ZXN0X2ZvY3VzGEMgASgIUg9jYW5S'
+    'ZXF1ZXN0Rm9jdXM=');
 
 @$core.Deprecated('Use flutterMaterialTextSelectionThemeDescriptor instead')
 const FlutterMaterialTextSelectionTheme$json = {
@@ -8113,11 +8256,15 @@ final $typed_data.Uint8List flutterMaterialTextSelectionThemeDescriptor = $conve
 @$core.Deprecated('Use flutterMaterialTextSelectionToolbarDescriptor instead')
 const FlutterMaterialTextSelectionToolbar$json = {
   '1': 'FlutterMaterialTextSelectionToolbar',
+  '2': [
+    {'1': 'children', '3': 6, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterMaterialTextSelectionToolbar`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialTextSelectionToolbarDescriptor = $convert.base64Decode(
-    'CiNGbHV0dGVyTWF0ZXJpYWxUZXh0U2VsZWN0aW9uVG9vbGJhcg==');
+    'CiNGbHV0dGVyTWF0ZXJpYWxUZXh0U2VsZWN0aW9uVG9vbGJhchIjCghjaGlsZHJlbhgGIAMoCz'
+    'IHLldpZGdldFIIY2hpbGRyZW4=');
 
 @$core.Deprecated('Use flutterMaterialTextSelectionToolbarTextButtonDescriptor instead')
 const FlutterMaterialTextSelectionToolbarTextButton$json = {
@@ -8197,6 +8344,8 @@ final $typed_data.Uint8List flutterMaterialTimePickerThemeDescriptor = $convert.
 const FlutterMaterialToggleButtons$json = {
   '1': 'FlutterMaterialToggleButtons',
   '2': [
+    {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+    {'1': 'is_selected', '3': 4, '4': 3, '5': 8, '10': 'isSelected'},
     {'1': 'render_border', '3': 19, '4': 1, '5': 8, '10': 'renderBorder'},
     {'1': 'border_width', '3': 24, '4': 1, '5': 1, '10': 'borderWidth'},
   ],
@@ -8204,8 +8353,10 @@ const FlutterMaterialToggleButtons$json = {
 
 /// Descriptor for `FlutterMaterialToggleButtons`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialToggleButtonsDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyTWF0ZXJpYWxUb2dnbGVCdXR0b25zEiMKDXJlbmRlcl9ib3JkZXIYEyABKAhSDH'
-    'JlbmRlckJvcmRlchIhCgxib3JkZXJfd2lkdGgYGCABKAFSC2JvcmRlcldpZHRo');
+    'ChxGbHV0dGVyTWF0ZXJpYWxUb2dnbGVCdXR0b25zEiMKCGNoaWxkcmVuGAMgAygLMgcuV2lkZ2'
+    'V0UghjaGlsZHJlbhIfCgtpc19zZWxlY3RlZBgEIAMoCFIKaXNTZWxlY3RlZBIjCg1yZW5kZXJf'
+    'Ym9yZGVyGBMgASgIUgxyZW5kZXJCb3JkZXISIQoMYm9yZGVyX3dpZHRoGBggASgBUgtib3JkZX'
+    'JXaWR0aA==');
 
 @$core.Deprecated('Use flutterMaterialToggleButtonsThemeDescriptor instead')
 const FlutterMaterialToggleButtonsTheme$json = {
@@ -8274,6 +8425,7 @@ const FlutterMaterialUserAccountsDrawerHeader$json = {
   '1': 'FlutterMaterialUserAccountsDrawerHeader',
   '2': [
     {'1': 'current_account_picture', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'currentAccountPicture'},
+    {'1': 'other_accounts_pictures', '3': 6, '4': 3, '5': 11, '6': '.Widget', '10': 'otherAccountsPictures'},
     {'1': 'account_name', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'accountName'},
     {'1': 'account_email', '3': 10, '4': 1, '5': 11, '6': '.Widget', '10': 'accountEmail'},
   ],
@@ -8282,9 +8434,10 @@ const FlutterMaterialUserAccountsDrawerHeader$json = {
 /// Descriptor for `FlutterMaterialUserAccountsDrawerHeader`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialUserAccountsDrawerHeaderDescriptor = $convert.base64Decode(
     'CidGbHV0dGVyTWF0ZXJpYWxVc2VyQWNjb3VudHNEcmF3ZXJIZWFkZXISPwoXY3VycmVudF9hY2'
-    'NvdW50X3BpY3R1cmUYBSABKAsyBy5XaWRnZXRSFWN1cnJlbnRBY2NvdW50UGljdHVyZRIqCgxh'
-    'Y2NvdW50X25hbWUYCSABKAsyBy5XaWRnZXRSC2FjY291bnROYW1lEiwKDWFjY291bnRfZW1haW'
-    'wYCiABKAsyBy5XaWRnZXRSDGFjY291bnRFbWFpbA==');
+    'NvdW50X3BpY3R1cmUYBSABKAsyBy5XaWRnZXRSFWN1cnJlbnRBY2NvdW50UGljdHVyZRI/Chdv'
+    'dGhlcl9hY2NvdW50c19waWN0dXJlcxgGIAMoCzIHLldpZGdldFIVb3RoZXJBY2NvdW50c1BpY3'
+    'R1cmVzEioKDGFjY291bnRfbmFtZRgJIAEoCzIHLldpZGdldFILYWNjb3VudE5hbWUSLAoNYWNj'
+    'b3VudF9lbWFpbBgKIAEoCzIHLldpZGdldFIMYWNjb3VudEVtYWls');
 
 @$core.Deprecated('Use flutterMaterialActionListenerDescriptor instead')
 const FlutterMaterialActionListener$json = {
@@ -8894,11 +9047,15 @@ final $typed_data.Uint8List flutterMaterialLayoutIdDescriptor = $convert.base64D
 @$core.Deprecated('Use flutterMaterialCustomMultiChildLayoutDescriptor instead')
 const FlutterMaterialCustomMultiChildLayout$json = {
   '1': 'FlutterMaterialCustomMultiChildLayout',
+  '2': [
+    {'1': 'children', '3': 4, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterMaterialCustomMultiChildLayout`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialCustomMultiChildLayoutDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyTWF0ZXJpYWxDdXN0b21NdWx0aUNoaWxkTGF5b3V0');
+    'CiVGbHV0dGVyTWF0ZXJpYWxDdXN0b21NdWx0aUNoaWxkTGF5b3V0EiMKCGNoaWxkcmVuGAQgAy'
+    'gLMgcuV2lkZ2V0UghjaGlsZHJlbg==');
 
 @$core.Deprecated('Use flutterMaterialSizedBoxDescriptor instead')
 const FlutterMaterialSizedBox$json = {
@@ -9122,33 +9279,41 @@ const FlutterMaterialListBody$json = {
   '1': 'FlutterMaterialListBody',
   '2': [
     {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
+    {'1': 'children', '3': 5, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
   ],
 };
 
 /// Descriptor for `FlutterMaterialListBody`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialListBodyDescriptor = $convert.base64Decode(
-    'ChdGbHV0dGVyTWF0ZXJpYWxMaXN0Qm9keRIYCgdyZXZlcnNlGAQgASgIUgdyZXZlcnNl');
+    'ChdGbHV0dGVyTWF0ZXJpYWxMaXN0Qm9keRIYCgdyZXZlcnNlGAQgASgIUgdyZXZlcnNlEiMKCG'
+    'NoaWxkcmVuGAUgAygLMgcuV2lkZ2V0UghjaGlsZHJlbg==');
 
 @$core.Deprecated('Use flutterMaterialStackDescriptor instead')
 const FlutterMaterialStack$json = {
   '1': 'FlutterMaterialStack',
+  '2': [
+    {'1': 'children', '3': 7, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterMaterialStack`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialStackDescriptor = $convert.base64Decode(
-    'ChRGbHV0dGVyTWF0ZXJpYWxTdGFjaw==');
+    'ChRGbHV0dGVyTWF0ZXJpYWxTdGFjaxIjCghjaGlsZHJlbhgHIAMoCzIHLldpZGdldFIIY2hpbG'
+    'RyZW4=');
 
 @$core.Deprecated('Use flutterMaterialIndexedStackDescriptor instead')
 const FlutterMaterialIndexedStack$json = {
   '1': 'FlutterMaterialIndexedStack',
   '2': [
     {'1': 'index', '3': 7, '4': 1, '5': 3, '10': 'index'},
+    {'1': 'children', '3': 8, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
   ],
 };
 
 /// Descriptor for `FlutterMaterialIndexedStack`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialIndexedStackDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyTWF0ZXJpYWxJbmRleGVkU3RhY2sSFAoFaW5kZXgYByABKANSBWluZGV4');
+    'ChtGbHV0dGVyTWF0ZXJpYWxJbmRleGVkU3RhY2sSFAoFaW5kZXgYByABKANSBWluZGV4EiMKCG'
+    'NoaWxkcmVuGAggAygLMgcuV2lkZ2V0UghjaGlsZHJlbg==');
 
 @$core.Deprecated('Use flutterMaterialPositionedDescriptor instead')
 const FlutterMaterialPositioned$json = {
@@ -9195,29 +9360,41 @@ final $typed_data.Uint8List flutterMaterialPositionedDirectionalDescriptor = $co
 @$core.Deprecated('Use flutterMaterialFlexDescriptor instead')
 const FlutterMaterialFlex$json = {
   '1': 'FlutterMaterialFlex',
+  '2': [
+    {'1': 'children', '3': 11, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterMaterialFlex`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialFlexDescriptor = $convert.base64Decode(
-    'ChNGbHV0dGVyTWF0ZXJpYWxGbGV4');
+    'ChNGbHV0dGVyTWF0ZXJpYWxGbGV4EiMKCGNoaWxkcmVuGAsgAygLMgcuV2lkZ2V0UghjaGlsZH'
+    'Jlbg==');
 
 @$core.Deprecated('Use flutterMaterialRowDescriptor instead')
 const FlutterMaterialRow$json = {
   '1': 'FlutterMaterialRow',
+  '2': [
+    {'1': 'children', '3': 9, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterMaterialRow`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialRowDescriptor = $convert.base64Decode(
-    'ChJGbHV0dGVyTWF0ZXJpYWxSb3c=');
+    'ChJGbHV0dGVyTWF0ZXJpYWxSb3cSIwoIY2hpbGRyZW4YCSADKAsyBy5XaWRnZXRSCGNoaWxkcm'
+    'Vu');
 
 @$core.Deprecated('Use flutterMaterialColumnDescriptor instead')
 const FlutterMaterialColumn$json = {
   '1': 'FlutterMaterialColumn',
+  '2': [
+    {'1': 'children', '3': 9, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterMaterialColumn`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialColumnDescriptor = $convert.base64Decode(
-    'ChVGbHV0dGVyTWF0ZXJpYWxDb2x1bW4=');
+    'ChVGbHV0dGVyTWF0ZXJpYWxDb2x1bW4SIwoIY2hpbGRyZW4YCSADKAsyBy5XaWRnZXRSCGNoaW'
+    'xkcmVu');
 
 @$core.Deprecated('Use flutterMaterialFlexibleDescriptor instead')
 const FlutterMaterialFlexible$json = {
@@ -9253,22 +9430,28 @@ const FlutterMaterialWrap$json = {
   '2': [
     {'1': 'spacing', '3': 5, '4': 1, '5': 1, '10': 'spacing'},
     {'1': 'run_spacing', '3': 7, '4': 1, '5': 1, '10': 'runSpacing'},
+    {'1': 'children', '3': 12, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
   ],
 };
 
 /// Descriptor for `FlutterMaterialWrap`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialWrapDescriptor = $convert.base64Decode(
     'ChNGbHV0dGVyTWF0ZXJpYWxXcmFwEhgKB3NwYWNpbmcYBSABKAFSB3NwYWNpbmcSHwoLcnVuX3'
-    'NwYWNpbmcYByABKAFSCnJ1blNwYWNpbmc=');
+    'NwYWNpbmcYByABKAFSCnJ1blNwYWNpbmcSIwoIY2hpbGRyZW4YDCADKAsyBy5XaWRnZXRSCGNo'
+    'aWxkcmVu');
 
 @$core.Deprecated('Use flutterMaterialFlowDescriptor instead')
 const FlutterMaterialFlow$json = {
   '1': 'FlutterMaterialFlow',
+  '2': [
+    {'1': 'children', '3': 4, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterMaterialFlow`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialFlowDescriptor = $convert.base64Decode(
-    'ChNGbHV0dGVyTWF0ZXJpYWxGbG93');
+    'ChNGbHV0dGVyTWF0ZXJpYWxGbG93EiMKCGNoaWxkcmVuGAQgAygLMgcuV2lkZ2V0UghjaGlsZH'
+    'Jlbg==');
 
 @$core.Deprecated('Use flutterMaterialRichTextDescriptor instead')
 const FlutterMaterialRichText$json = {
@@ -9776,6 +9959,7 @@ const FlutterMaterialDraggableScrollableSheet$json = {
     {'1': 'max_child_size', '3': 5, '4': 1, '5': 1, '10': 'maxChildSize'},
     {'1': 'expand', '3': 6, '4': 1, '5': 8, '10': 'expand'},
     {'1': 'snap', '3': 7, '4': 1, '5': 8, '10': 'snap'},
+    {'1': 'snap_sizes', '3': 8, '4': 3, '5': 1, '10': 'snapSizes'},
     {'1': 'should_close_on_min_extent', '3': 11, '4': 1, '5': 8, '10': 'shouldCloseOnMinExtent'},
   ],
 };
@@ -9785,8 +9969,9 @@ final $typed_data.Uint8List flutterMaterialDraggableScrollableSheetDescriptor = 
     'CidGbHV0dGVyTWF0ZXJpYWxEcmFnZ2FibGVTY3JvbGxhYmxlU2hlZXQSLAoSaW5pdGlhbF9jaG'
     'lsZF9zaXplGAMgASgBUhBpbml0aWFsQ2hpbGRTaXplEiQKDm1pbl9jaGlsZF9zaXplGAQgASgB'
     'UgxtaW5DaGlsZFNpemUSJAoObWF4X2NoaWxkX3NpemUYBSABKAFSDG1heENoaWxkU2l6ZRIWCg'
-    'ZleHBhbmQYBiABKAhSBmV4cGFuZBISCgRzbmFwGAcgASgIUgRzbmFwEjoKGnNob3VsZF9jbG9z'
-    'ZV9vbl9taW5fZXh0ZW50GAsgASgIUhZzaG91bGRDbG9zZU9uTWluRXh0ZW50');
+    'ZleHBhbmQYBiABKAhSBmV4cGFuZBISCgRzbmFwGAcgASgIUgRzbmFwEh0KCnNuYXBfc2l6ZXMY'
+    'CCADKAFSCXNuYXBTaXplcxI6ChpzaG91bGRfY2xvc2Vfb25fbWluX2V4dGVudBgLIAEoCFIWc2'
+    'hvdWxkQ2xvc2VPbk1pbkV4dGVudA==');
 
 @$core.Deprecated('Use flutterMaterialDraggableScrollableActuatorDescriptor instead')
 const FlutterMaterialDraggableScrollableActuator$json = {
@@ -9837,6 +10022,7 @@ const FlutterMaterialEditableText$json = {
     {'1': 'cursor_opacity_animates', '3': 47, '4': 1, '5': 8, '10': 'cursorOpacityAnimates'},
     {'1': 'paint_cursor_above_text', '3': 49, '4': 1, '5': 8, '10': 'paintCursorAboveText'},
     {'1': 'enable_interactive_selection', '3': 55, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
+    {'1': 'autofill_hints', '3': 60, '4': 3, '5': 9, '10': 'autofillHints'},
     {'1': 'restoration_id', '3': 63, '4': 1, '5': 9, '10': 'restorationId'},
     {'1': 'scribble_enabled', '3': 65, '4': 1, '5': 8, '10': 'scribbleEnabled'},
     {'1': 'enable_i_m_e_personalized_learning', '3': 66, '4': 1, '5': 8, '10': 'enableIMEPersonalizedLearning'},
@@ -9859,10 +10045,11 @@ final $typed_data.Uint8List flutterMaterialEditableTextDescriptor = $convert.bas
     '0gASgBUgxjdXJzb3JIZWlnaHQSNgoXY3Vyc29yX29wYWNpdHlfYW5pbWF0ZXMYLyABKAhSFWN1'
     'cnNvck9wYWNpdHlBbmltYXRlcxI1ChdwYWludF9jdXJzb3JfYWJvdmVfdGV4dBgxIAEoCFIUcG'
     'FpbnRDdXJzb3JBYm92ZVRleHQSQAocZW5hYmxlX2ludGVyYWN0aXZlX3NlbGVjdGlvbhg3IAEo'
-    'CFIaZW5hYmxlSW50ZXJhY3RpdmVTZWxlY3Rpb24SJQoOcmVzdG9yYXRpb25faWQYPyABKAlSDX'
-    'Jlc3RvcmF0aW9uSWQSKQoQc2NyaWJibGVfZW5hYmxlZBhBIAEoCFIPc2NyaWJibGVFbmFibGVk'
-    'EkkKImVuYWJsZV9pX21fZV9wZXJzb25hbGl6ZWRfbGVhcm5pbmcYQiABKAhSHWVuYWJsZUlNRV'
-    'BlcnNvbmFsaXplZExlYXJuaW5n');
+    'CFIaZW5hYmxlSW50ZXJhY3RpdmVTZWxlY3Rpb24SJQoOYXV0b2ZpbGxfaGludHMYPCADKAlSDW'
+    'F1dG9maWxsSGludHMSJQoOcmVzdG9yYXRpb25faWQYPyABKAlSDXJlc3RvcmF0aW9uSWQSKQoQ'
+    'c2NyaWJibGVfZW5hYmxlZBhBIAEoCFIPc2NyaWJibGVFbmFibGVkEkkKImVuYWJsZV9pX21fZV'
+    '9wZXJzb25hbGl6ZWRfbGVhcm5pbmcYQiABKAhSHWVuYWJsZUlNRVBlcnNvbmFsaXplZExlYXJu'
+    'aW5n');
 
 @$core.Deprecated('Use flutterMaterialFadeInImageDescriptor instead')
 const FlutterMaterialFadeInImage$json = {
@@ -10103,11 +10290,15 @@ final $typed_data.Uint8List flutterMaterialSingleChildRenderObjectWidgetDescript
 @$core.Deprecated('Use flutterMaterialMultiChildRenderObjectWidgetDescriptor instead')
 const FlutterMaterialMultiChildRenderObjectWidget$json = {
   '1': 'FlutterMaterialMultiChildRenderObjectWidget',
+  '2': [
+    {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterMaterialMultiChildRenderObjectWidget`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialMultiChildRenderObjectWidgetDescriptor = $convert.base64Decode(
-    'CitGbHV0dGVyTWF0ZXJpYWxNdWx0aUNoaWxkUmVuZGVyT2JqZWN0V2lkZ2V0');
+    'CitGbHV0dGVyTWF0ZXJpYWxNdWx0aUNoaWxkUmVuZGVyT2JqZWN0V2lkZ2V0EiMKCGNoaWxkcm'
+    'VuGAMgAygLMgcuV2lkZ2V0UghjaGlsZHJlbg==');
 
 @$core.Deprecated('Use flutterMaterialErrorWidgetDescriptor instead')
 const FlutterMaterialErrorWidget$json = {
@@ -10614,6 +10805,7 @@ const FlutterMaterialListWheelScrollView$json = {
     {'1': 'squeeze', '3': 12, '4': 1, '5': 1, '10': 'squeeze'},
     {'1': 'render_children_outside_viewport', '3': 14, '4': 1, '5': 8, '10': 'renderChildrenOutsideViewport'},
     {'1': 'restoration_id', '3': 16, '4': 1, '5': 9, '10': 'restorationId'},
+    {'1': 'children', '3': 18, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
   ],
 };
 
@@ -10627,7 +10819,8 @@ final $typed_data.Uint8List flutterMaterialListWheelScrollViewDescriptor = $conv
     '5kZXJDZW50ZXJPcGFjaXR5Eh8KC2l0ZW1fZXh0ZW50GAsgASgBUgppdGVtRXh0ZW50EhgKB3Nx'
     'dWVlemUYDCABKAFSB3NxdWVlemUSRwogcmVuZGVyX2NoaWxkcmVuX291dHNpZGVfdmlld3Bvcn'
     'QYDiABKAhSHXJlbmRlckNoaWxkcmVuT3V0c2lkZVZpZXdwb3J0EiUKDnJlc3RvcmF0aW9uX2lk'
-    'GBAgASgJUg1yZXN0b3JhdGlvbklk');
+    'GBAgASgJUg1yZXN0b3JhdGlvbklkEiMKCGNoaWxkcmVuGBIgAygLMgcuV2lkZ2V0UghjaGlsZH'
+    'Jlbg==');
 
 @$core.Deprecated('Use flutterMaterialListWheelViewportDescriptor instead')
 const FlutterMaterialListWheelViewport$json = {
@@ -10846,13 +11039,14 @@ const FlutterMaterialNestedScrollViewViewport$json = {
   '1': 'FlutterMaterialNestedScrollViewViewport',
   '2': [
     {'1': 'anchor', '3': 5, '4': 1, '5': 1, '10': 'anchor'},
+    {'1': 'slivers', '3': 8, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
   ],
 };
 
 /// Descriptor for `FlutterMaterialNestedScrollViewViewport`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialNestedScrollViewViewportDescriptor = $convert.base64Decode(
     'CidGbHV0dGVyTWF0ZXJpYWxOZXN0ZWRTY3JvbGxWaWV3Vmlld3BvcnQSFgoGYW5jaG9yGAUgAS'
-    'gBUgZhbmNob3I=');
+    'gBUgZhbmNob3ISIQoHc2xpdmVycxgIIAMoCzIHLldpZGdldFIHc2xpdmVycw==');
 
 @$core.Deprecated('Use flutterMaterialNotificationListenerDescriptor instead')
 const FlutterMaterialNotificationListener$json = {
@@ -10882,13 +11076,15 @@ const FlutterMaterialOverflowBar$json = {
   '2': [
     {'1': 'spacing', '3': 3, '4': 1, '5': 1, '10': 'spacing'},
     {'1': 'overflow_spacing', '3': 5, '4': 1, '5': 1, '10': 'overflowSpacing'},
+    {'1': 'children', '3': 10, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
   ],
 };
 
 /// Descriptor for `FlutterMaterialOverflowBar`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialOverflowBarDescriptor = $convert.base64Decode(
     'ChpGbHV0dGVyTWF0ZXJpYWxPdmVyZmxvd0JhchIYCgdzcGFjaW5nGAMgASgBUgdzcGFjaW5nEi'
-    'kKEG92ZXJmbG93X3NwYWNpbmcYBSABKAFSD292ZXJmbG93U3BhY2luZw==');
+    'kKEG92ZXJmbG93X3NwYWNpbmcYBSABKAFSD292ZXJmbG93U3BhY2luZxIjCghjaGlsZHJlbhgK'
+    'IAMoCzIHLldpZGdldFIIY2hpbGRyZW4=');
 
 @$core.Deprecated('Use flutterMaterialOverlayDescriptor instead')
 const FlutterMaterialOverlay$json = {
@@ -10960,6 +11156,7 @@ const FlutterMaterialPageView$json = {
   '2': [
     {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
     {'1': 'page_snapping', '3': 7, '4': 1, '5': 8, '10': 'pageSnapping'},
+    {'1': 'children', '3': 9, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
     {'1': 'allow_implicit_scrolling', '3': 11, '4': 1, '5': 8, '10': 'allowImplicitScrolling'},
     {'1': 'restoration_id', '3': 12, '4': 1, '5': 9, '10': 'restorationId'},
     {'1': 'pad_ends', '3': 15, '4': 1, '5': 8, '10': 'padEnds'},
@@ -10969,9 +11166,10 @@ const FlutterMaterialPageView$json = {
 /// Descriptor for `FlutterMaterialPageView`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialPageViewDescriptor = $convert.base64Decode(
     'ChdGbHV0dGVyTWF0ZXJpYWxQYWdlVmlldxIYCgdyZXZlcnNlGAQgASgIUgdyZXZlcnNlEiMKDX'
-    'BhZ2Vfc25hcHBpbmcYByABKAhSDHBhZ2VTbmFwcGluZxI4ChhhbGxvd19pbXBsaWNpdF9zY3Jv'
-    'bGxpbmcYCyABKAhSFmFsbG93SW1wbGljaXRTY3JvbGxpbmcSJQoOcmVzdG9yYXRpb25faWQYDC'
-    'ABKAlSDXJlc3RvcmF0aW9uSWQSGQoIcGFkX2VuZHMYDyABKAhSB3BhZEVuZHM=');
+    'BhZ2Vfc25hcHBpbmcYByABKAhSDHBhZ2VTbmFwcGluZxIjCghjaGlsZHJlbhgJIAMoCzIHLldp'
+    'ZGdldFIIY2hpbGRyZW4SOAoYYWxsb3dfaW1wbGljaXRfc2Nyb2xsaW5nGAsgASgIUhZhbGxvd0'
+    'ltcGxpY2l0U2Nyb2xsaW5nEiUKDnJlc3RvcmF0aW9uX2lkGAwgASgJUg1yZXN0b3JhdGlvbklk'
+    'EhkKCHBhZF9lbmRzGA8gASgIUgdwYWRFbmRz');
 
 @$core.Deprecated('Use flutterMaterialPerformanceOverlayDescriptor instead')
 const FlutterMaterialPerformanceOverlay$json = {
@@ -11398,6 +11596,7 @@ const FlutterMaterialCustomScrollView$json = {
     {'1': 'shrink_wrap', '3': 9, '4': 1, '5': 8, '10': 'shrinkWrap'},
     {'1': 'anchor', '3': 11, '4': 1, '5': 1, '10': 'anchor'},
     {'1': 'cache_extent', '3': 12, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'slivers', '3': 13, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
     {'1': 'semantic_child_count', '3': 14, '4': 1, '5': 3, '10': 'semanticChildCount'},
     {'1': 'restoration_id', '3': 17, '4': 1, '5': 9, '10': 'restorationId'},
   ],
@@ -11408,8 +11607,9 @@ final $typed_data.Uint8List flutterMaterialCustomScrollViewDescriptor = $convert
     'Ch9GbHV0dGVyTWF0ZXJpYWxDdXN0b21TY3JvbGxWaWV3EhgKB3JldmVyc2UYBCABKAhSB3Jldm'
     'Vyc2USGAoHcHJpbWFyeRgGIAEoCFIHcHJpbWFyeRIfCgtzaHJpbmtfd3JhcBgJIAEoCFIKc2hy'
     'aW5rV3JhcBIWCgZhbmNob3IYCyABKAFSBmFuY2hvchIhCgxjYWNoZV9leHRlbnQYDCABKAFSC2'
-    'NhY2hlRXh0ZW50EjAKFHNlbWFudGljX2NoaWxkX2NvdW50GA4gASgDUhJzZW1hbnRpY0NoaWxk'
-    'Q291bnQSJQoOcmVzdG9yYXRpb25faWQYESABKAlSDXJlc3RvcmF0aW9uSWQ=');
+    'NhY2hlRXh0ZW50EiEKB3NsaXZlcnMYDSADKAsyBy5XaWRnZXRSB3NsaXZlcnMSMAoUc2VtYW50'
+    'aWNfY2hpbGRfY291bnQYDiABKANSEnNlbWFudGljQ2hpbGRDb3VudBIlCg5yZXN0b3JhdGlvbl'
+    '9pZBgRIAEoCVINcmVzdG9yYXRpb25JZA==');
 
 @$core.Deprecated('Use flutterMaterialBoxScrollViewDescriptor instead')
 const FlutterMaterialBoxScrollView$json = {
@@ -11445,6 +11645,7 @@ const FlutterMaterialListView$json = {
     {'1': 'add_repaint_boundaries', '3': 13, '4': 1, '5': 8, '10': 'addRepaintBoundaries'},
     {'1': 'add_semantic_indexes', '3': 14, '4': 1, '5': 8, '10': 'addSemanticIndexes'},
     {'1': 'cache_extent', '3': 15, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'children', '3': 16, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
     {'1': 'semantic_child_count', '3': 17, '4': 1, '5': 3, '10': 'semanticChildCount'},
     {'1': 'restoration_id', '3': 20, '4': 1, '5': 9, '10': 'restorationId'},
   ],
@@ -11459,8 +11660,9 @@ final $typed_data.Uint8List flutterMaterialListViewDescriptor = $convert.base64D
     'IAEoCFIWYWRkQXV0b21hdGljS2VlcEFsaXZlcxI0ChZhZGRfcmVwYWludF9ib3VuZGFyaWVzGA'
     '0gASgIUhRhZGRSZXBhaW50Qm91bmRhcmllcxIwChRhZGRfc2VtYW50aWNfaW5kZXhlcxgOIAEo'
     'CFISYWRkU2VtYW50aWNJbmRleGVzEiEKDGNhY2hlX2V4dGVudBgPIAEoAVILY2FjaGVFeHRlbn'
-    'QSMAoUc2VtYW50aWNfY2hpbGRfY291bnQYESABKANSEnNlbWFudGljQ2hpbGRDb3VudBIlCg5y'
-    'ZXN0b3JhdGlvbl9pZBgUIAEoCVINcmVzdG9yYXRpb25JZA==');
+    'QSIwoIY2hpbGRyZW4YECADKAsyBy5XaWRnZXRSCGNoaWxkcmVuEjAKFHNlbWFudGljX2NoaWxk'
+    'X2NvdW50GBEgASgDUhJzZW1hbnRpY0NoaWxkQ291bnQSJQoOcmVzdG9yYXRpb25faWQYFCABKA'
+    'lSDXJlc3RvcmF0aW9uSWQ=');
 
 @$core.Deprecated('Use flutterMaterialGridViewDescriptor instead')
 const FlutterMaterialGridView$json = {
@@ -11473,6 +11675,7 @@ const FlutterMaterialGridView$json = {
     {'1': 'add_repaint_boundaries', '3': 12, '4': 1, '5': 8, '10': 'addRepaintBoundaries'},
     {'1': 'add_semantic_indexes', '3': 13, '4': 1, '5': 8, '10': 'addSemanticIndexes'},
     {'1': 'cache_extent', '3': 14, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'children', '3': 15, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
     {'1': 'semantic_child_count', '3': 16, '4': 1, '5': 3, '10': 'semanticChildCount'},
     {'1': 'restoration_id', '3': 20, '4': 1, '5': 9, '10': 'restorationId'},
   ],
@@ -11485,9 +11688,9 @@ final $typed_data.Uint8List flutterMaterialGridViewDescriptor = $convert.base64D
     'OQoZYWRkX2F1dG9tYXRpY19rZWVwX2FsaXZlcxgLIAEoCFIWYWRkQXV0b21hdGljS2VlcEFsaX'
     'ZlcxI0ChZhZGRfcmVwYWludF9ib3VuZGFyaWVzGAwgASgIUhRhZGRSZXBhaW50Qm91bmRhcmll'
     'cxIwChRhZGRfc2VtYW50aWNfaW5kZXhlcxgNIAEoCFISYWRkU2VtYW50aWNJbmRleGVzEiEKDG'
-    'NhY2hlX2V4dGVudBgOIAEoAVILY2FjaGVFeHRlbnQSMAoUc2VtYW50aWNfY2hpbGRfY291bnQY'
-    'ECABKANSEnNlbWFudGljQ2hpbGRDb3VudBIlCg5yZXN0b3JhdGlvbl9pZBgUIAEoCVINcmVzdG'
-    '9yYXRpb25JZA==');
+    'NhY2hlX2V4dGVudBgOIAEoAVILY2FjaGVFeHRlbnQSIwoIY2hpbGRyZW4YDyADKAsyBy5XaWRn'
+    'ZXRSCGNoaWxkcmVuEjAKFHNlbWFudGljX2NoaWxkX2NvdW50GBAgASgDUhJzZW1hbnRpY0NoaW'
+    'xkQ291bnQSJQoOcmVzdG9yYXRpb25faWQYFCABKAlSDXJlc3RvcmF0aW9uSWQ=');
 
 @$core.Deprecated('Use flutterMaterialScrollableDescriptor instead')
 const FlutterMaterialScrollable$json = {
@@ -11823,20 +12026,28 @@ final $typed_data.Uint8List flutterMaterialSliverCrossAxisExpandedDescriptor = $
 @$core.Deprecated('Use flutterMaterialSliverCrossAxisGroupDescriptor instead')
 const FlutterMaterialSliverCrossAxisGroup$json = {
   '1': 'FlutterMaterialSliverCrossAxisGroup',
+  '2': [
+    {'1': 'slivers', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
+  ],
 };
 
 /// Descriptor for `FlutterMaterialSliverCrossAxisGroup`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialSliverCrossAxisGroupDescriptor = $convert.base64Decode(
-    'CiNGbHV0dGVyTWF0ZXJpYWxTbGl2ZXJDcm9zc0F4aXNHcm91cA==');
+    'CiNGbHV0dGVyTWF0ZXJpYWxTbGl2ZXJDcm9zc0F4aXNHcm91cBIhCgdzbGl2ZXJzGAMgAygLMg'
+    'cuV2lkZ2V0UgdzbGl2ZXJz');
 
 @$core.Deprecated('Use flutterMaterialSliverMainAxisGroupDescriptor instead')
 const FlutterMaterialSliverMainAxisGroup$json = {
   '1': 'FlutterMaterialSliverMainAxisGroup',
+  '2': [
+    {'1': 'slivers', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
+  ],
 };
 
 /// Descriptor for `FlutterMaterialSliverMainAxisGroup`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialSliverMainAxisGroupDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyTWF0ZXJpYWxTbGl2ZXJNYWluQXhpc0dyb3Vw');
+    'CiJGbHV0dGVyTWF0ZXJpYWxTbGl2ZXJNYWluQXhpc0dyb3VwEiEKB3NsaXZlcnMYAyADKAsyBy'
+    '5XaWRnZXRSB3NsaXZlcnM=');
 
 @$core.Deprecated('Use flutterMaterialSliverFillViewportDescriptor instead')
 const FlutterMaterialSliverFillViewport$json = {
@@ -12401,22 +12612,28 @@ const FlutterMaterialViewport$json = {
   '2': [
     {'1': 'anchor', '3': 5, '4': 1, '5': 1, '10': 'anchor'},
     {'1': 'cache_extent', '3': 8, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'slivers', '3': 11, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
   ],
 };
 
 /// Descriptor for `FlutterMaterialViewport`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialViewportDescriptor = $convert.base64Decode(
     'ChdGbHV0dGVyTWF0ZXJpYWxWaWV3cG9ydBIWCgZhbmNob3IYBSABKAFSBmFuY2hvchIhCgxjYW'
-    'NoZV9leHRlbnQYCCABKAFSC2NhY2hlRXh0ZW50');
+    'NoZV9leHRlbnQYCCABKAFSC2NhY2hlRXh0ZW50EiEKB3NsaXZlcnMYCyADKAsyBy5XaWRnZXRS'
+    'B3NsaXZlcnM=');
 
 @$core.Deprecated('Use flutterMaterialShrinkWrappingViewportDescriptor instead')
 const FlutterMaterialShrinkWrappingViewport$json = {
   '1': 'FlutterMaterialShrinkWrappingViewport',
+  '2': [
+    {'1': 'slivers', '3': 7, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
+  ],
 };
 
 /// Descriptor for `FlutterMaterialShrinkWrappingViewport`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterMaterialShrinkWrappingViewportDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyTWF0ZXJpYWxTaHJpbmtXcmFwcGluZ1ZpZXdwb3J0');
+    'CiVGbHV0dGVyTWF0ZXJpYWxTaHJpbmtXcmFwcGluZ1ZpZXdwb3J0EiEKB3NsaXZlcnMYByADKA'
+    'syBy5XaWRnZXRSB3NsaXZlcnM=');
 
 @$core.Deprecated('Use flutterMaterialVisibilityDescriptor instead')
 const FlutterMaterialVisibility$json = {
@@ -13099,11 +13316,15 @@ final $typed_data.Uint8List flutterWidgetsLayoutIdDescriptor = $convert.base64De
 @$core.Deprecated('Use flutterWidgetsCustomMultiChildLayoutDescriptor instead')
 const FlutterWidgetsCustomMultiChildLayout$json = {
   '1': 'FlutterWidgetsCustomMultiChildLayout',
+  '2': [
+    {'1': 'children', '3': 4, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterWidgetsCustomMultiChildLayout`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterWidgetsCustomMultiChildLayoutDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyV2lkZ2V0c0N1c3RvbU11bHRpQ2hpbGRMYXlvdXQ=');
+    'CiRGbHV0dGVyV2lkZ2V0c0N1c3RvbU11bHRpQ2hpbGRMYXlvdXQSIwoIY2hpbGRyZW4YBCADKA'
+    'syBy5XaWRnZXRSCGNoaWxkcmVu');
 
 @$core.Deprecated('Use flutterWidgetsSizedBoxDescriptor instead')
 const FlutterWidgetsSizedBox$json = {
@@ -13327,33 +13548,41 @@ const FlutterWidgetsListBody$json = {
   '1': 'FlutterWidgetsListBody',
   '2': [
     {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
+    {'1': 'children', '3': 5, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
   ],
 };
 
 /// Descriptor for `FlutterWidgetsListBody`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterWidgetsListBodyDescriptor = $convert.base64Decode(
-    'ChZGbHV0dGVyV2lkZ2V0c0xpc3RCb2R5EhgKB3JldmVyc2UYBCABKAhSB3JldmVyc2U=');
+    'ChZGbHV0dGVyV2lkZ2V0c0xpc3RCb2R5EhgKB3JldmVyc2UYBCABKAhSB3JldmVyc2USIwoIY2'
+    'hpbGRyZW4YBSADKAsyBy5XaWRnZXRSCGNoaWxkcmVu');
 
 @$core.Deprecated('Use flutterWidgetsStackDescriptor instead')
 const FlutterWidgetsStack$json = {
   '1': 'FlutterWidgetsStack',
+  '2': [
+    {'1': 'children', '3': 7, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterWidgetsStack`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterWidgetsStackDescriptor = $convert.base64Decode(
-    'ChNGbHV0dGVyV2lkZ2V0c1N0YWNr');
+    'ChNGbHV0dGVyV2lkZ2V0c1N0YWNrEiMKCGNoaWxkcmVuGAcgAygLMgcuV2lkZ2V0UghjaGlsZH'
+    'Jlbg==');
 
 @$core.Deprecated('Use flutterWidgetsIndexedStackDescriptor instead')
 const FlutterWidgetsIndexedStack$json = {
   '1': 'FlutterWidgetsIndexedStack',
   '2': [
     {'1': 'index', '3': 7, '4': 1, '5': 3, '10': 'index'},
+    {'1': 'children', '3': 8, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
   ],
 };
 
 /// Descriptor for `FlutterWidgetsIndexedStack`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterWidgetsIndexedStackDescriptor = $convert.base64Decode(
-    'ChpGbHV0dGVyV2lkZ2V0c0luZGV4ZWRTdGFjaxIUCgVpbmRleBgHIAEoA1IFaW5kZXg=');
+    'ChpGbHV0dGVyV2lkZ2V0c0luZGV4ZWRTdGFjaxIUCgVpbmRleBgHIAEoA1IFaW5kZXgSIwoIY2'
+    'hpbGRyZW4YCCADKAsyBy5XaWRnZXRSCGNoaWxkcmVu');
 
 @$core.Deprecated('Use flutterWidgetsPositionedDescriptor instead')
 const FlutterWidgetsPositioned$json = {
@@ -13400,29 +13629,41 @@ final $typed_data.Uint8List flutterWidgetsPositionedDirectionalDescriptor = $con
 @$core.Deprecated('Use flutterWidgetsFlexDescriptor instead')
 const FlutterWidgetsFlex$json = {
   '1': 'FlutterWidgetsFlex',
+  '2': [
+    {'1': 'children', '3': 11, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterWidgetsFlex`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterWidgetsFlexDescriptor = $convert.base64Decode(
-    'ChJGbHV0dGVyV2lkZ2V0c0ZsZXg=');
+    'ChJGbHV0dGVyV2lkZ2V0c0ZsZXgSIwoIY2hpbGRyZW4YCyADKAsyBy5XaWRnZXRSCGNoaWxkcm'
+    'Vu');
 
 @$core.Deprecated('Use flutterWidgetsRowDescriptor instead')
 const FlutterWidgetsRow$json = {
   '1': 'FlutterWidgetsRow',
+  '2': [
+    {'1': 'children', '3': 9, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterWidgetsRow`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterWidgetsRowDescriptor = $convert.base64Decode(
-    'ChFGbHV0dGVyV2lkZ2V0c1Jvdw==');
+    'ChFGbHV0dGVyV2lkZ2V0c1JvdxIjCghjaGlsZHJlbhgJIAMoCzIHLldpZGdldFIIY2hpbGRyZW'
+    '4=');
 
 @$core.Deprecated('Use flutterWidgetsColumnDescriptor instead')
 const FlutterWidgetsColumn$json = {
   '1': 'FlutterWidgetsColumn',
+  '2': [
+    {'1': 'children', '3': 9, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterWidgetsColumn`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterWidgetsColumnDescriptor = $convert.base64Decode(
-    'ChRGbHV0dGVyV2lkZ2V0c0NvbHVtbg==');
+    'ChRGbHV0dGVyV2lkZ2V0c0NvbHVtbhIjCghjaGlsZHJlbhgJIAMoCzIHLldpZGdldFIIY2hpbG'
+    'RyZW4=');
 
 @$core.Deprecated('Use flutterWidgetsFlexibleDescriptor instead')
 const FlutterWidgetsFlexible$json = {
@@ -13458,22 +13699,28 @@ const FlutterWidgetsWrap$json = {
   '2': [
     {'1': 'spacing', '3': 5, '4': 1, '5': 1, '10': 'spacing'},
     {'1': 'run_spacing', '3': 7, '4': 1, '5': 1, '10': 'runSpacing'},
+    {'1': 'children', '3': 12, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
   ],
 };
 
 /// Descriptor for `FlutterWidgetsWrap`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterWidgetsWrapDescriptor = $convert.base64Decode(
     'ChJGbHV0dGVyV2lkZ2V0c1dyYXASGAoHc3BhY2luZxgFIAEoAVIHc3BhY2luZxIfCgtydW5fc3'
-    'BhY2luZxgHIAEoAVIKcnVuU3BhY2luZw==');
+    'BhY2luZxgHIAEoAVIKcnVuU3BhY2luZxIjCghjaGlsZHJlbhgMIAMoCzIHLldpZGdldFIIY2hp'
+    'bGRyZW4=');
 
 @$core.Deprecated('Use flutterWidgetsFlowDescriptor instead')
 const FlutterWidgetsFlow$json = {
   '1': 'FlutterWidgetsFlow',
+  '2': [
+    {'1': 'children', '3': 4, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterWidgetsFlow`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterWidgetsFlowDescriptor = $convert.base64Decode(
-    'ChJGbHV0dGVyV2lkZ2V0c0Zsb3c=');
+    'ChJGbHV0dGVyV2lkZ2V0c0Zsb3cSIwoIY2hpbGRyZW4YBCADKAsyBy5XaWRnZXRSCGNoaWxkcm'
+    'Vu');
 
 @$core.Deprecated('Use flutterWidgetsRichTextDescriptor instead')
 const FlutterWidgetsRichText$json = {
@@ -13981,6 +14228,7 @@ const FlutterWidgetsDraggableScrollableSheet$json = {
     {'1': 'max_child_size', '3': 5, '4': 1, '5': 1, '10': 'maxChildSize'},
     {'1': 'expand', '3': 6, '4': 1, '5': 8, '10': 'expand'},
     {'1': 'snap', '3': 7, '4': 1, '5': 8, '10': 'snap'},
+    {'1': 'snap_sizes', '3': 8, '4': 3, '5': 1, '10': 'snapSizes'},
     {'1': 'should_close_on_min_extent', '3': 11, '4': 1, '5': 8, '10': 'shouldCloseOnMinExtent'},
   ],
 };
@@ -13990,8 +14238,9 @@ final $typed_data.Uint8List flutterWidgetsDraggableScrollableSheetDescriptor = $
     'CiZGbHV0dGVyV2lkZ2V0c0RyYWdnYWJsZVNjcm9sbGFibGVTaGVldBIsChJpbml0aWFsX2NoaW'
     'xkX3NpemUYAyABKAFSEGluaXRpYWxDaGlsZFNpemUSJAoObWluX2NoaWxkX3NpemUYBCABKAFS'
     'DG1pbkNoaWxkU2l6ZRIkCg5tYXhfY2hpbGRfc2l6ZRgFIAEoAVIMbWF4Q2hpbGRTaXplEhYKBm'
-    'V4cGFuZBgGIAEoCFIGZXhwYW5kEhIKBHNuYXAYByABKAhSBHNuYXASOgoac2hvdWxkX2Nsb3Nl'
-    'X29uX21pbl9leHRlbnQYCyABKAhSFnNob3VsZENsb3NlT25NaW5FeHRlbnQ=');
+    'V4cGFuZBgGIAEoCFIGZXhwYW5kEhIKBHNuYXAYByABKAhSBHNuYXASHQoKc25hcF9zaXplcxgI'
+    'IAMoAVIJc25hcFNpemVzEjoKGnNob3VsZF9jbG9zZV9vbl9taW5fZXh0ZW50GAsgASgIUhZzaG'
+    '91bGRDbG9zZU9uTWluRXh0ZW50');
 
 @$core.Deprecated('Use flutterWidgetsDraggableScrollableActuatorDescriptor instead')
 const FlutterWidgetsDraggableScrollableActuator$json = {
@@ -14042,6 +14291,7 @@ const FlutterWidgetsEditableText$json = {
     {'1': 'cursor_opacity_animates', '3': 47, '4': 1, '5': 8, '10': 'cursorOpacityAnimates'},
     {'1': 'paint_cursor_above_text', '3': 49, '4': 1, '5': 8, '10': 'paintCursorAboveText'},
     {'1': 'enable_interactive_selection', '3': 55, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
+    {'1': 'autofill_hints', '3': 60, '4': 3, '5': 9, '10': 'autofillHints'},
     {'1': 'restoration_id', '3': 63, '4': 1, '5': 9, '10': 'restorationId'},
     {'1': 'scribble_enabled', '3': 65, '4': 1, '5': 8, '10': 'scribbleEnabled'},
     {'1': 'enable_i_m_e_personalized_learning', '3': 66, '4': 1, '5': 8, '10': 'enableIMEPersonalizedLearning'},
@@ -14064,10 +14314,11 @@ final $typed_data.Uint8List flutterWidgetsEditableTextDescriptor = $convert.base
     'ABKAFSDGN1cnNvckhlaWdodBI2ChdjdXJzb3Jfb3BhY2l0eV9hbmltYXRlcxgvIAEoCFIVY3Vy'
     'c29yT3BhY2l0eUFuaW1hdGVzEjUKF3BhaW50X2N1cnNvcl9hYm92ZV90ZXh0GDEgASgIUhRwYW'
     'ludEN1cnNvckFib3ZlVGV4dBJAChxlbmFibGVfaW50ZXJhY3RpdmVfc2VsZWN0aW9uGDcgASgI'
-    'UhplbmFibGVJbnRlcmFjdGl2ZVNlbGVjdGlvbhIlCg5yZXN0b3JhdGlvbl9pZBg/IAEoCVINcm'
-    'VzdG9yYXRpb25JZBIpChBzY3JpYmJsZV9lbmFibGVkGEEgASgIUg9zY3JpYmJsZUVuYWJsZWQS'
-    'SQoiZW5hYmxlX2lfbV9lX3BlcnNvbmFsaXplZF9sZWFybmluZxhCIAEoCFIdZW5hYmxlSU1FUG'
-    'Vyc29uYWxpemVkTGVhcm5pbmc=');
+    'UhplbmFibGVJbnRlcmFjdGl2ZVNlbGVjdGlvbhIlCg5hdXRvZmlsbF9oaW50cxg8IAMoCVINYX'
+    'V0b2ZpbGxIaW50cxIlCg5yZXN0b3JhdGlvbl9pZBg/IAEoCVINcmVzdG9yYXRpb25JZBIpChBz'
+    'Y3JpYmJsZV9lbmFibGVkGEEgASgIUg9zY3JpYmJsZUVuYWJsZWQSSQoiZW5hYmxlX2lfbV9lX3'
+    'BlcnNvbmFsaXplZF9sZWFybmluZxhCIAEoCFIdZW5hYmxlSU1FUGVyc29uYWxpemVkTGVhcm5p'
+    'bmc=');
 
 @$core.Deprecated('Use flutterWidgetsFadeInImageDescriptor instead')
 const FlutterWidgetsFadeInImage$json = {
@@ -14308,11 +14559,15 @@ final $typed_data.Uint8List flutterWidgetsSingleChildRenderObjectWidgetDescripto
 @$core.Deprecated('Use flutterWidgetsMultiChildRenderObjectWidgetDescriptor instead')
 const FlutterWidgetsMultiChildRenderObjectWidget$json = {
   '1': 'FlutterWidgetsMultiChildRenderObjectWidget',
+  '2': [
+    {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
+  ],
 };
 
 /// Descriptor for `FlutterWidgetsMultiChildRenderObjectWidget`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterWidgetsMultiChildRenderObjectWidgetDescriptor = $convert.base64Decode(
-    'CipGbHV0dGVyV2lkZ2V0c011bHRpQ2hpbGRSZW5kZXJPYmplY3RXaWRnZXQ=');
+    'CipGbHV0dGVyV2lkZ2V0c011bHRpQ2hpbGRSZW5kZXJPYmplY3RXaWRnZXQSIwoIY2hpbGRyZW'
+    '4YAyADKAsyBy5XaWRnZXRSCGNoaWxkcmVu');
 
 @$core.Deprecated('Use flutterWidgetsErrorWidgetDescriptor instead')
 const FlutterWidgetsErrorWidget$json = {
@@ -14819,6 +15074,7 @@ const FlutterWidgetsListWheelScrollView$json = {
     {'1': 'squeeze', '3': 12, '4': 1, '5': 1, '10': 'squeeze'},
     {'1': 'render_children_outside_viewport', '3': 14, '4': 1, '5': 8, '10': 'renderChildrenOutsideViewport'},
     {'1': 'restoration_id', '3': 16, '4': 1, '5': 9, '10': 'restorationId'},
+    {'1': 'children', '3': 18, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
   ],
 };
 
@@ -14832,7 +15088,8 @@ final $typed_data.Uint8List flutterWidgetsListWheelScrollViewDescriptor = $conve
     'RlckNlbnRlck9wYWNpdHkSHwoLaXRlbV9leHRlbnQYCyABKAFSCml0ZW1FeHRlbnQSGAoHc3F1'
     'ZWV6ZRgMIAEoAVIHc3F1ZWV6ZRJHCiByZW5kZXJfY2hpbGRyZW5fb3V0c2lkZV92aWV3cG9ydB'
     'gOIAEoCFIdcmVuZGVyQ2hpbGRyZW5PdXRzaWRlVmlld3BvcnQSJQoOcmVzdG9yYXRpb25faWQY'
-    'ECABKAlSDXJlc3RvcmF0aW9uSWQ=');
+    'ECABKAlSDXJlc3RvcmF0aW9uSWQSIwoIY2hpbGRyZW4YEiADKAsyBy5XaWRnZXRSCGNoaWxkcm'
+    'Vu');
 
 @$core.Deprecated('Use flutterWidgetsListWheelViewportDescriptor instead')
 const FlutterWidgetsListWheelViewport$json = {
@@ -15050,13 +15307,14 @@ const FlutterWidgetsNestedScrollViewViewport$json = {
   '1': 'FlutterWidgetsNestedScrollViewViewport',
   '2': [
     {'1': 'anchor', '3': 5, '4': 1, '5': 1, '10': 'anchor'},
+    {'1': 'slivers', '3': 8, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
   ],
 };
 
 /// Descriptor for `FlutterWidgetsNestedScrollViewViewport`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterWidgetsNestedScrollViewViewportDescriptor = $convert.base64Decode(
     'CiZGbHV0dGVyV2lkZ2V0c05lc3RlZFNjcm9sbFZpZXdWaWV3cG9ydBIWCgZhbmNob3IYBSABKA'
-    'FSBmFuY2hvcg==');
+    'FSBmFuY2hvchIhCgdzbGl2ZXJzGAggAygLMgcuV2lkZ2V0UgdzbGl2ZXJz');
 
 @$core.Deprecated('Use flutterWidgetsNotificationListenerDescriptor instead')
 const FlutterWidgetsNotificationListener$json = {
@@ -15086,13 +15344,15 @@ const FlutterWidgetsOverflowBar$json = {
   '2': [
     {'1': 'spacing', '3': 3, '4': 1, '5': 1, '10': 'spacing'},
     {'1': 'overflow_spacing', '3': 5, '4': 1, '5': 1, '10': 'overflowSpacing'},
+    {'1': 'children', '3': 10, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
   ],
 };
 
 /// Descriptor for `FlutterWidgetsOverflowBar`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterWidgetsOverflowBarDescriptor = $convert.base64Decode(
     'ChlGbHV0dGVyV2lkZ2V0c092ZXJmbG93QmFyEhgKB3NwYWNpbmcYAyABKAFSB3NwYWNpbmcSKQ'
-    'oQb3ZlcmZsb3dfc3BhY2luZxgFIAEoAVIPb3ZlcmZsb3dTcGFjaW5n');
+    'oQb3ZlcmZsb3dfc3BhY2luZxgFIAEoAVIPb3ZlcmZsb3dTcGFjaW5nEiMKCGNoaWxkcmVuGAog'
+    'AygLMgcuV2lkZ2V0UghjaGlsZHJlbg==');
 
 @$core.Deprecated('Use flutterWidgetsOverlayDescriptor instead')
 const FlutterWidgetsOverlay$json = {
@@ -15164,6 +15424,7 @@ const FlutterWidgetsPageView$json = {
   '2': [
     {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
     {'1': 'page_snapping', '3': 7, '4': 1, '5': 8, '10': 'pageSnapping'},
+    {'1': 'children', '3': 9, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
     {'1': 'allow_implicit_scrolling', '3': 11, '4': 1, '5': 8, '10': 'allowImplicitScrolling'},
     {'1': 'restoration_id', '3': 12, '4': 1, '5': 9, '10': 'restorationId'},
     {'1': 'pad_ends', '3': 15, '4': 1, '5': 8, '10': 'padEnds'},
@@ -15173,9 +15434,10 @@ const FlutterWidgetsPageView$json = {
 /// Descriptor for `FlutterWidgetsPageView`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterWidgetsPageViewDescriptor = $convert.base64Decode(
     'ChZGbHV0dGVyV2lkZ2V0c1BhZ2VWaWV3EhgKB3JldmVyc2UYBCABKAhSB3JldmVyc2USIwoNcG'
-    'FnZV9zbmFwcGluZxgHIAEoCFIMcGFnZVNuYXBwaW5nEjgKGGFsbG93X2ltcGxpY2l0X3Njcm9s'
-    'bGluZxgLIAEoCFIWYWxsb3dJbXBsaWNpdFNjcm9sbGluZxIlCg5yZXN0b3JhdGlvbl9pZBgMIA'
-    'EoCVINcmVzdG9yYXRpb25JZBIZCghwYWRfZW5kcxgPIAEoCFIHcGFkRW5kcw==');
+    'FnZV9zbmFwcGluZxgHIAEoCFIMcGFnZVNuYXBwaW5nEiMKCGNoaWxkcmVuGAkgAygLMgcuV2lk'
+    'Z2V0UghjaGlsZHJlbhI4ChhhbGxvd19pbXBsaWNpdF9zY3JvbGxpbmcYCyABKAhSFmFsbG93SW'
+    '1wbGljaXRTY3JvbGxpbmcSJQoOcmVzdG9yYXRpb25faWQYDCABKAlSDXJlc3RvcmF0aW9uSWQS'
+    'GQoIcGFkX2VuZHMYDyABKAhSB3BhZEVuZHM=');
 
 @$core.Deprecated('Use flutterWidgetsPerformanceOverlayDescriptor instead')
 const FlutterWidgetsPerformanceOverlay$json = {
@@ -15601,6 +15863,7 @@ const FlutterWidgetsCustomScrollView$json = {
     {'1': 'shrink_wrap', '3': 9, '4': 1, '5': 8, '10': 'shrinkWrap'},
     {'1': 'anchor', '3': 11, '4': 1, '5': 1, '10': 'anchor'},
     {'1': 'cache_extent', '3': 12, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'slivers', '3': 13, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
     {'1': 'semantic_child_count', '3': 14, '4': 1, '5': 3, '10': 'semanticChildCount'},
     {'1': 'restoration_id', '3': 17, '4': 1, '5': 9, '10': 'restorationId'},
   ],
@@ -15611,8 +15874,9 @@ final $typed_data.Uint8List flutterWidgetsCustomScrollViewDescriptor = $convert.
     'Ch5GbHV0dGVyV2lkZ2V0c0N1c3RvbVNjcm9sbFZpZXcSGAoHcmV2ZXJzZRgEIAEoCFIHcmV2ZX'
     'JzZRIYCgdwcmltYXJ5GAYgASgIUgdwcmltYXJ5Eh8KC3Nocmlua193cmFwGAkgASgIUgpzaHJp'
     'bmtXcmFwEhYKBmFuY2hvchgLIAEoAVIGYW5jaG9yEiEKDGNhY2hlX2V4dGVudBgMIAEoAVILY2'
-    'FjaGVFeHRlbnQSMAoUc2VtYW50aWNfY2hpbGRfY291bnQYDiABKANSEnNlbWFudGljQ2hpbGRD'
-    'b3VudBIlCg5yZXN0b3JhdGlvbl9pZBgRIAEoCVINcmVzdG9yYXRpb25JZA==');
+    'FjaGVFeHRlbnQSIQoHc2xpdmVycxgNIAMoCzIHLldpZGdldFIHc2xpdmVycxIwChRzZW1hbnRp'
+    'Y19jaGlsZF9jb3VudBgOIAEoA1ISc2VtYW50aWNDaGlsZENvdW50EiUKDnJlc3RvcmF0aW9uX2'
+    'lkGBEgASgJUg1yZXN0b3JhdGlvbklk');
 
 @$core.Deprecated('Use flutterWidgetsBoxScrollViewDescriptor instead')
 const FlutterWidgetsBoxScrollView$json = {
@@ -15648,6 +15912,7 @@ const FlutterWidgetsListView$json = {
     {'1': 'add_repaint_boundaries', '3': 13, '4': 1, '5': 8, '10': 'addRepaintBoundaries'},
     {'1': 'add_semantic_indexes', '3': 14, '4': 1, '5': 8, '10': 'addSemanticIndexes'},
     {'1': 'cache_extent', '3': 15, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'children', '3': 16, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
     {'1': 'semantic_child_count', '3': 17, '4': 1, '5': 3, '10': 'semanticChildCount'},
     {'1': 'restoration_id', '3': 20, '4': 1, '5': 9, '10': 'restorationId'},
   ],
@@ -15662,8 +15927,9 @@ final $typed_data.Uint8List flutterWidgetsListViewDescriptor = $convert.base64De
     'ASgIUhZhZGRBdXRvbWF0aWNLZWVwQWxpdmVzEjQKFmFkZF9yZXBhaW50X2JvdW5kYXJpZXMYDS'
     'ABKAhSFGFkZFJlcGFpbnRCb3VuZGFyaWVzEjAKFGFkZF9zZW1hbnRpY19pbmRleGVzGA4gASgI'
     'UhJhZGRTZW1hbnRpY0luZGV4ZXMSIQoMY2FjaGVfZXh0ZW50GA8gASgBUgtjYWNoZUV4dGVudB'
-    'IwChRzZW1hbnRpY19jaGlsZF9jb3VudBgRIAEoA1ISc2VtYW50aWNDaGlsZENvdW50EiUKDnJl'
-    'c3RvcmF0aW9uX2lkGBQgASgJUg1yZXN0b3JhdGlvbklk');
+    'IjCghjaGlsZHJlbhgQIAMoCzIHLldpZGdldFIIY2hpbGRyZW4SMAoUc2VtYW50aWNfY2hpbGRf'
+    'Y291bnQYESABKANSEnNlbWFudGljQ2hpbGRDb3VudBIlCg5yZXN0b3JhdGlvbl9pZBgUIAEoCV'
+    'INcmVzdG9yYXRpb25JZA==');
 
 @$core.Deprecated('Use flutterWidgetsGridViewDescriptor instead')
 const FlutterWidgetsGridView$json = {
@@ -15676,6 +15942,7 @@ const FlutterWidgetsGridView$json = {
     {'1': 'add_repaint_boundaries', '3': 12, '4': 1, '5': 8, '10': 'addRepaintBoundaries'},
     {'1': 'add_semantic_indexes', '3': 13, '4': 1, '5': 8, '10': 'addSemanticIndexes'},
     {'1': 'cache_extent', '3': 14, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'children', '3': 15, '4': 3, '5': 11, '6': '.Widget', '10': 'children'},
     {'1': 'semantic_child_count', '3': 16, '4': 1, '5': 3, '10': 'semanticChildCount'},
     {'1': 'restoration_id', '3': 20, '4': 1, '5': 9, '10': 'restorationId'},
   ],
@@ -15688,9 +15955,9 @@ final $typed_data.Uint8List flutterWidgetsGridViewDescriptor = $convert.base64De
     'ChlhZGRfYXV0b21hdGljX2tlZXBfYWxpdmVzGAsgASgIUhZhZGRBdXRvbWF0aWNLZWVwQWxpdm'
     'VzEjQKFmFkZF9yZXBhaW50X2JvdW5kYXJpZXMYDCABKAhSFGFkZFJlcGFpbnRCb3VuZGFyaWVz'
     'EjAKFGFkZF9zZW1hbnRpY19pbmRleGVzGA0gASgIUhJhZGRTZW1hbnRpY0luZGV4ZXMSIQoMY2'
-    'FjaGVfZXh0ZW50GA4gASgBUgtjYWNoZUV4dGVudBIwChRzZW1hbnRpY19jaGlsZF9jb3VudBgQ'
-    'IAEoA1ISc2VtYW50aWNDaGlsZENvdW50EiUKDnJlc3RvcmF0aW9uX2lkGBQgASgJUg1yZXN0b3'
-    'JhdGlvbklk');
+    'FjaGVfZXh0ZW50GA4gASgBUgtjYWNoZUV4dGVudBIjCghjaGlsZHJlbhgPIAMoCzIHLldpZGdl'
+    'dFIIY2hpbGRyZW4SMAoUc2VtYW50aWNfY2hpbGRfY291bnQYECABKANSEnNlbWFudGljQ2hpbG'
+    'RDb3VudBIlCg5yZXN0b3JhdGlvbl9pZBgUIAEoCVINcmVzdG9yYXRpb25JZA==');
 
 @$core.Deprecated('Use flutterWidgetsScrollableDescriptor instead')
 const FlutterWidgetsScrollable$json = {
@@ -16026,20 +16293,28 @@ final $typed_data.Uint8List flutterWidgetsSliverCrossAxisExpandedDescriptor = $c
 @$core.Deprecated('Use flutterWidgetsSliverCrossAxisGroupDescriptor instead')
 const FlutterWidgetsSliverCrossAxisGroup$json = {
   '1': 'FlutterWidgetsSliverCrossAxisGroup',
+  '2': [
+    {'1': 'slivers', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
+  ],
 };
 
 /// Descriptor for `FlutterWidgetsSliverCrossAxisGroup`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterWidgetsSliverCrossAxisGroupDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyV2lkZ2V0c1NsaXZlckNyb3NzQXhpc0dyb3Vw');
+    'CiJGbHV0dGVyV2lkZ2V0c1NsaXZlckNyb3NzQXhpc0dyb3VwEiEKB3NsaXZlcnMYAyADKAsyBy'
+    '5XaWRnZXRSB3NsaXZlcnM=');
 
 @$core.Deprecated('Use flutterWidgetsSliverMainAxisGroupDescriptor instead')
 const FlutterWidgetsSliverMainAxisGroup$json = {
   '1': 'FlutterWidgetsSliverMainAxisGroup',
+  '2': [
+    {'1': 'slivers', '3': 3, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
+  ],
 };
 
 /// Descriptor for `FlutterWidgetsSliverMainAxisGroup`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterWidgetsSliverMainAxisGroupDescriptor = $convert.base64Decode(
-    'CiFGbHV0dGVyV2lkZ2V0c1NsaXZlck1haW5BeGlzR3JvdXA=');
+    'CiFGbHV0dGVyV2lkZ2V0c1NsaXZlck1haW5BeGlzR3JvdXASIQoHc2xpdmVycxgDIAMoCzIHLl'
+    'dpZGdldFIHc2xpdmVycw==');
 
 @$core.Deprecated('Use flutterWidgetsSliverFillViewportDescriptor instead')
 const FlutterWidgetsSliverFillViewport$json = {
@@ -16604,22 +16879,28 @@ const FlutterWidgetsViewport$json = {
   '2': [
     {'1': 'anchor', '3': 5, '4': 1, '5': 1, '10': 'anchor'},
     {'1': 'cache_extent', '3': 8, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'slivers', '3': 11, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
   ],
 };
 
 /// Descriptor for `FlutterWidgetsViewport`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterWidgetsViewportDescriptor = $convert.base64Decode(
     'ChZGbHV0dGVyV2lkZ2V0c1ZpZXdwb3J0EhYKBmFuY2hvchgFIAEoAVIGYW5jaG9yEiEKDGNhY2'
-    'hlX2V4dGVudBgIIAEoAVILY2FjaGVFeHRlbnQ=');
+    'hlX2V4dGVudBgIIAEoAVILY2FjaGVFeHRlbnQSIQoHc2xpdmVycxgLIAMoCzIHLldpZGdldFIH'
+    'c2xpdmVycw==');
 
 @$core.Deprecated('Use flutterWidgetsShrinkWrappingViewportDescriptor instead')
 const FlutterWidgetsShrinkWrappingViewport$json = {
   '1': 'FlutterWidgetsShrinkWrappingViewport',
+  '2': [
+    {'1': 'slivers', '3': 7, '4': 3, '5': 11, '6': '.Widget', '10': 'slivers'},
+  ],
 };
 
 /// Descriptor for `FlutterWidgetsShrinkWrappingViewport`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterWidgetsShrinkWrappingViewportDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyV2lkZ2V0c1Nocmlua1dyYXBwaW5nVmlld3BvcnQ=');
+    'CiRGbHV0dGVyV2lkZ2V0c1Nocmlua1dyYXBwaW5nVmlld3BvcnQSIQoHc2xpdmVycxgHIAMoCz'
+    'IHLldpZGdldFIHc2xpdmVycw==');
 
 @$core.Deprecated('Use flutterWidgetsVisibilityDescriptor instead')
 const FlutterWidgetsVisibility$json = {

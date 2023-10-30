@@ -14,7 +14,7 @@ message FlutterCupertinoCupertinoActivityIndicator {
 }
 
 message FlutterCupertinoCupertinoAdaptiveTextSelectionToolbar {
-  
+  repeated Widget children = 3;
 }
 
 message FlutterCupertinoCupertinoApp {
@@ -49,6 +49,7 @@ message FlutterCupertinoCupertinoCheckbox {
 }
 
 message FlutterCupertinoCupertinoContextMenu {
+  repeated Widget actions = 3;
   Widget child = 4;
   bool enable_haptic_feedback = 5;
 }
@@ -75,7 +76,7 @@ message FlutterCupertinoCupertinoTimerPicker {
 }
 
 message FlutterCupertinoCupertinoDesktopTextSelectionToolbar {
-  
+  repeated Widget children = 4;
 }
 
 message FlutterCupertinoCupertinoDesktopTextSelectionToolbarButton {
@@ -85,6 +86,7 @@ message FlutterCupertinoCupertinoDesktopTextSelectionToolbarButton {
 message FlutterCupertinoCupertinoAlertDialog {
   Widget title = 3;
   Widget content = 4;
+  repeated Widget actions = 5;
 }
 
 message FlutterCupertinoCupertinoPopupSurface {
@@ -95,6 +97,7 @@ message FlutterCupertinoCupertinoPopupSurface {
 message FlutterCupertinoCupertinoActionSheet {
   Widget title = 3;
   Widget message = 4;
+  repeated Widget actions = 5;
   Widget cancel_button = 8;
 }
 
@@ -118,6 +121,7 @@ message FlutterCupertinoCupertinoFormRow {
 }
 
 message FlutterCupertinoCupertinoFormSection {
+  repeated Widget children = 3;
   Widget header = 4;
   Widget footer = 5;
 }
@@ -127,6 +131,7 @@ message FlutterCupertinoCupertinoUserInterfaceLevel {
 }
 
 message FlutterCupertinoCupertinoListSection {
+  repeated Widget children = 3;
   Widget header = 4;
   Widget footer = 5;
   double divider_margin = 10;
@@ -202,6 +207,7 @@ message FlutterCupertinoCupertinoPicker {
   double magnification = 7;
   double squeeze = 9;
   double item_extent = 10;
+  repeated Widget children = 12;
   Widget selection_overlay = 13;
   bool looping = 14;
 }
@@ -305,6 +311,7 @@ message FlutterCupertinoCupertinoTextField {
   double cursor_height = 45;
   bool cursor_opacity_animates = 47;
   bool enable_interactive_selection = 54;
+  repeated string autofill_hints = 59;
   string restoration_id = 62;
   bool scribble_enabled = 63;
   bool enable_i_m_e_personalized_learning = 64;
@@ -328,11 +335,12 @@ message FlutterCupertinoCupertinoTextFormFieldRow {
   double cursor_width = 39;
   double cursor_height = 40;
   bool enable_interactive_selection = 44;
+  repeated string autofill_hints = 47;
   string placeholder = 49;
 }
 
 message FlutterCupertinoCupertinoTextSelectionToolbar {
-  
+  repeated Widget children = 5;
 }
 
 message FlutterCupertinoCupertinoTextSelectionToolbarButton {
@@ -554,7 +562,7 @@ message FlutterCupertinoLayoutId {
 }
 
 message FlutterCupertinoCustomMultiChildLayout {
-  
+  repeated Widget children = 4;
 }
 
 message FlutterCupertinoSizedBox {
@@ -635,14 +643,16 @@ message FlutterCupertinoSliverPadding {
 
 message FlutterCupertinoListBody {
   bool reverse = 4;
+  repeated Widget children = 5;
 }
 
 message FlutterCupertinoStack {
-  
+  repeated Widget children = 7;
 }
 
 message FlutterCupertinoIndexedStack {
   int64 index = 7;
+  repeated Widget children = 8;
 }
 
 message FlutterCupertinoPositioned {
@@ -666,15 +676,15 @@ message FlutterCupertinoPositionedDirectional {
 }
 
 message FlutterCupertinoFlex {
-  
+  repeated Widget children = 11;
 }
 
 message FlutterCupertinoRow {
-  
+  repeated Widget children = 9;
 }
 
 message FlutterCupertinoColumn {
-  
+  repeated Widget children = 9;
 }
 
 message FlutterCupertinoFlexible {
@@ -690,10 +700,11 @@ message FlutterCupertinoExpanded {
 message FlutterCupertinoWrap {
   double spacing = 5;
   double run_spacing = 7;
+  repeated Widget children = 12;
 }
 
 message FlutterCupertinoFlow {
-  
+  repeated Widget children = 4;
 }
 
 message FlutterCupertinoRichText {
@@ -896,6 +907,7 @@ message FlutterCupertinoDraggableScrollableSheet {
   double max_child_size = 5;
   bool expand = 6;
   bool snap = 7;
+  repeated double snap_sizes = 8;
   bool should_close_on_min_extent = 11;
 }
 
@@ -927,6 +939,7 @@ message FlutterCupertinoEditableText {
   bool cursor_opacity_animates = 47;
   bool paint_cursor_above_text = 49;
   bool enable_interactive_selection = 55;
+  repeated string autofill_hints = 60;
   string restoration_id = 63;
   bool scribble_enabled = 65;
   bool enable_i_m_e_personalized_learning = 66;
@@ -1021,7 +1034,7 @@ message FlutterCupertinoSingleChildRenderObjectWidget {
 }
 
 message FlutterCupertinoMultiChildRenderObjectWidget {
-  
+  repeated Widget children = 3;
 }
 
 message FlutterCupertinoErrorWidget {
@@ -1224,6 +1237,7 @@ message FlutterCupertinoListWheelScrollView {
   double squeeze = 12;
   bool render_children_outside_viewport = 14;
   string restoration_id = 16;
+  repeated Widget children = 18;
 }
 
 message FlutterCupertinoListWheelViewport {
@@ -1305,6 +1319,7 @@ message FlutterCupertinoSliverOverlapInjector {
 
 message FlutterCupertinoNestedScrollViewViewport {
   double anchor = 5;
+  repeated Widget slivers = 8;
 }
 
 message FlutterCupertinoNotificationListener {
@@ -1318,6 +1333,7 @@ message FlutterCupertinoOrientationBuilder {
 message FlutterCupertinoOverflowBar {
   double spacing = 3;
   double overflow_spacing = 5;
+  repeated Widget children = 10;
 }
 
 message FlutterCupertinoOverlay {
@@ -1345,6 +1361,7 @@ message FlutterCupertinoPageStorage {
 message FlutterCupertinoPageView {
   bool reverse = 4;
   bool page_snapping = 7;
+  repeated Widget children = 9;
   bool allow_implicit_scrolling = 11;
   string restoration_id = 12;
   bool pad_ends = 15;
@@ -1510,6 +1527,7 @@ message FlutterCupertinoCustomScrollView {
   bool shrink_wrap = 9;
   double anchor = 11;
   double cache_extent = 12;
+  repeated Widget slivers = 13;
   int64 semantic_child_count = 14;
   string restoration_id = 17;
 }
@@ -1533,6 +1551,7 @@ message FlutterCupertinoListView {
   bool add_repaint_boundaries = 13;
   bool add_semantic_indexes = 14;
   double cache_extent = 15;
+  repeated Widget children = 16;
   int64 semantic_child_count = 17;
   string restoration_id = 20;
 }
@@ -1545,6 +1564,7 @@ message FlutterCupertinoGridView {
   bool add_repaint_boundaries = 12;
   bool add_semantic_indexes = 13;
   double cache_extent = 14;
+  repeated Widget children = 15;
   int64 semantic_child_count = 16;
   string restoration_id = 20;
 }
@@ -1669,11 +1689,11 @@ message FlutterCupertinoSliverCrossAxisExpanded {
 }
 
 message FlutterCupertinoSliverCrossAxisGroup {
-  
+  repeated Widget slivers = 3;
 }
 
 message FlutterCupertinoSliverMainAxisGroup {
-  
+  repeated Widget slivers = 3;
 }
 
 message FlutterCupertinoSliverFillViewport {
@@ -1874,10 +1894,11 @@ message FlutterCupertinoView {
 message FlutterCupertinoViewport {
   double anchor = 5;
   double cache_extent = 8;
+  repeated Widget slivers = 11;
 }
 
 message FlutterCupertinoShrinkWrappingViewport {
-  
+  repeated Widget slivers = 7;
 }
 
 message FlutterCupertinoVisibility {
@@ -1917,6 +1938,7 @@ message FlutterMaterialAboutListTile {
   string application_version = 6;
   Widget application_icon = 7;
   string application_legalese = 8;
+  repeated Widget about_box_children = 9;
   bool dense = 10;
 }
 
@@ -1925,6 +1947,7 @@ message FlutterMaterialAboutDialog {
   string application_version = 4;
   Widget application_icon = 5;
   string application_legalese = 6;
+  repeated Widget children = 7;
 }
 
 message FlutterMaterialLicensePage {
@@ -1980,7 +2003,7 @@ message FlutterMaterialActionIconTheme {
 }
 
 message FlutterMaterialAdaptiveTextSelectionToolbar {
-  
+  repeated Widget children = 3;
 }
 
 message FlutterMaterialAnimatedIcon {
@@ -2006,6 +2029,7 @@ message FlutterMaterialAppBar {
   Widget leading = 3;
   bool automatically_imply_leading = 4;
   Widget title = 5;
+  repeated Widget actions = 6;
   Widget flexible_space = 7;
   double elevation = 9;
   double scrolled_under_elevation = 10;
@@ -2024,6 +2048,7 @@ message FlutterMaterialSliverAppBar {
   Widget leading = 3;
   bool automatically_imply_leading = 4;
   Widget title = 5;
+  repeated Widget actions = 6;
   Widget flexible_space = 7;
   double elevation = 9;
   double scrolled_under_elevation = 10;
@@ -2062,6 +2087,7 @@ message FlutterMaterialBadgeTheme {
 
 message FlutterMaterialMaterialBanner {
   Widget content = 3;
+  repeated Widget actions = 5;
   double elevation = 6;
   Widget leading = 7;
   bool force_actions_below = 15;
@@ -2116,6 +2142,7 @@ message FlutterMaterialButtonBar {
   double button_height = 7;
   bool button_aligned_dropdown = 9;
   double overflow_button_spacing = 12;
+  repeated Widget children = 13;
 }
 
 message FlutterMaterialButtonBarTheme {
@@ -2282,7 +2309,7 @@ message FlutterMaterialDatePickerTheme {
 }
 
 message FlutterMaterialDesktopTextSelectionToolbar {
-  
+  repeated Widget children = 4;
 }
 
 message FlutterMaterialDesktopTextSelectionToolbarButton {
@@ -2298,6 +2325,7 @@ message FlutterMaterialAlertDialog {
   Widget icon = 3;
   Widget title = 6;
   Widget content = 9;
+  repeated Widget actions = 12;
   double actions_overflow_button_spacing = 17;
   double elevation = 20;
   string semantic_label = 23;
@@ -2310,6 +2338,7 @@ message FlutterMaterialSimpleDialogOption {
 
 message FlutterMaterialSimpleDialog {
   Widget title = 3;
+  repeated Widget children = 6;
   double elevation = 9;
   string semantic_label = 12;
 }
@@ -2435,6 +2464,7 @@ message FlutterMaterialExpansionTile {
   Widget leading = 3;
   Widget title = 4;
   Widget subtitle = 5;
+  repeated Widget children = 7;
   Widget trailing = 8;
   bool initially_expanded = 9;
   bool maintain_state = 10;
@@ -2638,11 +2668,12 @@ message FlutterMaterialMaterialButton {
 message FlutterMaterialMenuAnchor {
   bool anchor_tap_closes_menu = 8;
   bool cross_axis_unconstrained = 11;
+  repeated Widget menu_children = 12;
   Widget child = 14;
 }
 
 message FlutterMaterialMenuBar {
-  
+  repeated Widget children = 6;
 }
 
 message FlutterMaterialMenuItemButton {
@@ -2672,6 +2703,7 @@ message FlutterMaterialRadioMenuButton {
 message FlutterMaterialSubmenuButton {
   Widget leading_icon = 14;
   Widget trailing_icon = 15;
+  repeated Widget menu_children = 16;
   Widget child = 17;
 }
 
@@ -2703,6 +2735,7 @@ message FlutterMaterialMergeableMaterial {
 
 message FlutterMaterialNavigationBar {
   int64 selected_index = 4;
+  repeated Widget destinations = 5;
   double elevation = 8;
   double height = 13;
 }
@@ -2724,6 +2757,7 @@ message FlutterMaterialNavigationBarTheme {
 }
 
 message FlutterMaterialNavigationDrawer {
+  repeated Widget children = 3;
   double elevation = 7;
   int64 selected_index = 11;
 }
@@ -2765,6 +2799,7 @@ message FlutterMaterialOutlinedButtonTheme {
 
 message FlutterMaterialPaginatedDataTable {
   Widget header = 3;
+  repeated Widget actions = 4;
   int64 sort_column_index = 6;
   bool sort_ascending = 7;
   double data_row_height = 9;
@@ -2777,6 +2812,7 @@ message FlutterMaterialPaginatedDataTable {
   bool show_first_last_buttons = 16;
   int64 initial_first_row_index = 17;
   int64 rows_per_page = 19;
+  repeated int64 available_rows_per_page = 20;
   double checkbox_horizontal_margin = 25;
   bool primary = 27;
 }
@@ -2889,6 +2925,7 @@ message FlutterMaterialRefreshIndicator {
 }
 
 message FlutterMaterialReorderableListView {
+  repeated Widget children = 3;
   double item_extent = 7;
   Widget prototype_item = 8;
   bool build_default_drag_handles = 10;
@@ -2910,6 +2947,7 @@ message FlutterMaterialScaffoldMessenger {
 message FlutterMaterialScaffold {
   Widget body = 4;
   Widget floating_action_button = 5;
+  repeated Widget persistent_footer_buttons = 8;
   Widget drawer = 10;
   Widget end_drawer = 12;
   Widget bottom_navigation_bar = 14;
@@ -2940,6 +2978,7 @@ message FlutterMaterialScrollbarTheme {
 message FlutterMaterialSearchAnchor {
   bool is_full_screen = 3;
   Widget view_leading = 6;
+  repeated Widget view_trailing = 7;
   string view_hint_text = 8;
   double view_elevation = 10;
 }
@@ -2947,6 +2986,7 @@ message FlutterMaterialSearchAnchor {
 message FlutterMaterialSearchBar {
   string hint_text = 5;
   Widget leading = 6;
+  repeated Widget trailing = 7;
 }
 
 message FlutterMaterialSearchBarTheme {
@@ -3058,6 +3098,7 @@ message FlutterMaterialTab {
 }
 
 message FlutterMaterialTabBar {
+  repeated Widget tabs = 3;
   bool is_scrollable = 5;
   bool automatic_indicator_color_adjustment = 8;
   double indicator_weight = 9;
@@ -3065,6 +3106,7 @@ message FlutterMaterialTabBar {
 }
 
 message FlutterMaterialTabBarView {
+  repeated Widget children = 3;
   double viewport_fraction = 7;
 }
 
@@ -3103,6 +3145,7 @@ message FlutterMaterialTextField {
   double cursor_height = 37;
   bool cursor_opacity_animates = 39;
   bool enable_interactive_selection = 46;
+  repeated string autofill_hints = 54;
   string restoration_id = 57;
   bool scribble_enabled = 58;
   bool enable_i_m_e_personalized_learning = 59;
@@ -3126,6 +3169,7 @@ message FlutterMaterialTextFormField {
   double cursor_width = 39;
   double cursor_height = 40;
   bool enable_interactive_selection = 45;
+  repeated string autofill_hints = 49;
   string restoration_id = 52;
   bool enable_i_m_e_personalized_learning = 53;
   bool cursor_opacity_animates = 60;
@@ -3138,7 +3182,7 @@ message FlutterMaterialTextSelectionTheme {
 }
 
 message FlutterMaterialTextSelectionToolbar {
-  
+  repeated Widget children = 6;
 }
 
 message FlutterMaterialTextSelectionToolbarTextButton {
@@ -3168,6 +3212,8 @@ message FlutterMaterialTimePickerTheme {
 }
 
 message FlutterMaterialToggleButtons {
+  repeated Widget children = 3;
+  repeated bool is_selected = 4;
   bool render_border = 19;
   double border_width = 24;
 }
@@ -3197,6 +3243,7 @@ message FlutterMaterialTooltipVisibility {
 
 message FlutterMaterialUserAccountsDrawerHeader {
   Widget current_account_picture = 5;
+  repeated Widget other_accounts_pictures = 6;
   Widget account_name = 9;
   Widget account_email = 10;
 }
@@ -3412,7 +3459,7 @@ message FlutterMaterialLayoutId {
 }
 
 message FlutterMaterialCustomMultiChildLayout {
-  
+  repeated Widget children = 4;
 }
 
 message FlutterMaterialSizedBox {
@@ -3493,14 +3540,16 @@ message FlutterMaterialSliverPadding {
 
 message FlutterMaterialListBody {
   bool reverse = 4;
+  repeated Widget children = 5;
 }
 
 message FlutterMaterialStack {
-  
+  repeated Widget children = 7;
 }
 
 message FlutterMaterialIndexedStack {
   int64 index = 7;
+  repeated Widget children = 8;
 }
 
 message FlutterMaterialPositioned {
@@ -3524,15 +3573,15 @@ message FlutterMaterialPositionedDirectional {
 }
 
 message FlutterMaterialFlex {
-  
+  repeated Widget children = 11;
 }
 
 message FlutterMaterialRow {
-  
+  repeated Widget children = 9;
 }
 
 message FlutterMaterialColumn {
-  
+  repeated Widget children = 9;
 }
 
 message FlutterMaterialFlexible {
@@ -3548,10 +3597,11 @@ message FlutterMaterialExpanded {
 message FlutterMaterialWrap {
   double spacing = 5;
   double run_spacing = 7;
+  repeated Widget children = 12;
 }
 
 message FlutterMaterialFlow {
-  
+  repeated Widget children = 4;
 }
 
 message FlutterMaterialRichText {
@@ -3754,6 +3804,7 @@ message FlutterMaterialDraggableScrollableSheet {
   double max_child_size = 5;
   bool expand = 6;
   bool snap = 7;
+  repeated double snap_sizes = 8;
   bool should_close_on_min_extent = 11;
 }
 
@@ -3785,6 +3836,7 @@ message FlutterMaterialEditableText {
   bool cursor_opacity_animates = 47;
   bool paint_cursor_above_text = 49;
   bool enable_interactive_selection = 55;
+  repeated string autofill_hints = 60;
   string restoration_id = 63;
   bool scribble_enabled = 65;
   bool enable_i_m_e_personalized_learning = 66;
@@ -3879,7 +3931,7 @@ message FlutterMaterialSingleChildRenderObjectWidget {
 }
 
 message FlutterMaterialMultiChildRenderObjectWidget {
-  
+  repeated Widget children = 3;
 }
 
 message FlutterMaterialErrorWidget {
@@ -4082,6 +4134,7 @@ message FlutterMaterialListWheelScrollView {
   double squeeze = 12;
   bool render_children_outside_viewport = 14;
   string restoration_id = 16;
+  repeated Widget children = 18;
 }
 
 message FlutterMaterialListWheelViewport {
@@ -4163,6 +4216,7 @@ message FlutterMaterialSliverOverlapInjector {
 
 message FlutterMaterialNestedScrollViewViewport {
   double anchor = 5;
+  repeated Widget slivers = 8;
 }
 
 message FlutterMaterialNotificationListener {
@@ -4176,6 +4230,7 @@ message FlutterMaterialOrientationBuilder {
 message FlutterMaterialOverflowBar {
   double spacing = 3;
   double overflow_spacing = 5;
+  repeated Widget children = 10;
 }
 
 message FlutterMaterialOverlay {
@@ -4203,6 +4258,7 @@ message FlutterMaterialPageStorage {
 message FlutterMaterialPageView {
   bool reverse = 4;
   bool page_snapping = 7;
+  repeated Widget children = 9;
   bool allow_implicit_scrolling = 11;
   string restoration_id = 12;
   bool pad_ends = 15;
@@ -4368,6 +4424,7 @@ message FlutterMaterialCustomScrollView {
   bool shrink_wrap = 9;
   double anchor = 11;
   double cache_extent = 12;
+  repeated Widget slivers = 13;
   int64 semantic_child_count = 14;
   string restoration_id = 17;
 }
@@ -4391,6 +4448,7 @@ message FlutterMaterialListView {
   bool add_repaint_boundaries = 13;
   bool add_semantic_indexes = 14;
   double cache_extent = 15;
+  repeated Widget children = 16;
   int64 semantic_child_count = 17;
   string restoration_id = 20;
 }
@@ -4403,6 +4461,7 @@ message FlutterMaterialGridView {
   bool add_repaint_boundaries = 12;
   bool add_semantic_indexes = 13;
   double cache_extent = 14;
+  repeated Widget children = 15;
   int64 semantic_child_count = 16;
   string restoration_id = 20;
 }
@@ -4527,11 +4586,11 @@ message FlutterMaterialSliverCrossAxisExpanded {
 }
 
 message FlutterMaterialSliverCrossAxisGroup {
-  
+  repeated Widget slivers = 3;
 }
 
 message FlutterMaterialSliverMainAxisGroup {
-  
+  repeated Widget slivers = 3;
 }
 
 message FlutterMaterialSliverFillViewport {
@@ -4732,10 +4791,11 @@ message FlutterMaterialView {
 message FlutterMaterialViewport {
   double anchor = 5;
   double cache_extent = 8;
+  repeated Widget slivers = 11;
 }
 
 message FlutterMaterialShrinkWrappingViewport {
-  
+  repeated Widget slivers = 7;
 }
 
 message FlutterMaterialVisibility {
@@ -4979,7 +5039,7 @@ message FlutterWidgetsLayoutId {
 }
 
 message FlutterWidgetsCustomMultiChildLayout {
-  
+  repeated Widget children = 4;
 }
 
 message FlutterWidgetsSizedBox {
@@ -5060,14 +5120,16 @@ message FlutterWidgetsSliverPadding {
 
 message FlutterWidgetsListBody {
   bool reverse = 4;
+  repeated Widget children = 5;
 }
 
 message FlutterWidgetsStack {
-  
+  repeated Widget children = 7;
 }
 
 message FlutterWidgetsIndexedStack {
   int64 index = 7;
+  repeated Widget children = 8;
 }
 
 message FlutterWidgetsPositioned {
@@ -5091,15 +5153,15 @@ message FlutterWidgetsPositionedDirectional {
 }
 
 message FlutterWidgetsFlex {
-  
+  repeated Widget children = 11;
 }
 
 message FlutterWidgetsRow {
-  
+  repeated Widget children = 9;
 }
 
 message FlutterWidgetsColumn {
-  
+  repeated Widget children = 9;
 }
 
 message FlutterWidgetsFlexible {
@@ -5115,10 +5177,11 @@ message FlutterWidgetsExpanded {
 message FlutterWidgetsWrap {
   double spacing = 5;
   double run_spacing = 7;
+  repeated Widget children = 12;
 }
 
 message FlutterWidgetsFlow {
-  
+  repeated Widget children = 4;
 }
 
 message FlutterWidgetsRichText {
@@ -5321,6 +5384,7 @@ message FlutterWidgetsDraggableScrollableSheet {
   double max_child_size = 5;
   bool expand = 6;
   bool snap = 7;
+  repeated double snap_sizes = 8;
   bool should_close_on_min_extent = 11;
 }
 
@@ -5352,6 +5416,7 @@ message FlutterWidgetsEditableText {
   bool cursor_opacity_animates = 47;
   bool paint_cursor_above_text = 49;
   bool enable_interactive_selection = 55;
+  repeated string autofill_hints = 60;
   string restoration_id = 63;
   bool scribble_enabled = 65;
   bool enable_i_m_e_personalized_learning = 66;
@@ -5446,7 +5511,7 @@ message FlutterWidgetsSingleChildRenderObjectWidget {
 }
 
 message FlutterWidgetsMultiChildRenderObjectWidget {
-  
+  repeated Widget children = 3;
 }
 
 message FlutterWidgetsErrorWidget {
@@ -5649,6 +5714,7 @@ message FlutterWidgetsListWheelScrollView {
   double squeeze = 12;
   bool render_children_outside_viewport = 14;
   string restoration_id = 16;
+  repeated Widget children = 18;
 }
 
 message FlutterWidgetsListWheelViewport {
@@ -5730,6 +5796,7 @@ message FlutterWidgetsSliverOverlapInjector {
 
 message FlutterWidgetsNestedScrollViewViewport {
   double anchor = 5;
+  repeated Widget slivers = 8;
 }
 
 message FlutterWidgetsNotificationListener {
@@ -5743,6 +5810,7 @@ message FlutterWidgetsOrientationBuilder {
 message FlutterWidgetsOverflowBar {
   double spacing = 3;
   double overflow_spacing = 5;
+  repeated Widget children = 10;
 }
 
 message FlutterWidgetsOverlay {
@@ -5770,6 +5838,7 @@ message FlutterWidgetsPageStorage {
 message FlutterWidgetsPageView {
   bool reverse = 4;
   bool page_snapping = 7;
+  repeated Widget children = 9;
   bool allow_implicit_scrolling = 11;
   string restoration_id = 12;
   bool pad_ends = 15;
@@ -5935,6 +6004,7 @@ message FlutterWidgetsCustomScrollView {
   bool shrink_wrap = 9;
   double anchor = 11;
   double cache_extent = 12;
+  repeated Widget slivers = 13;
   int64 semantic_child_count = 14;
   string restoration_id = 17;
 }
@@ -5958,6 +6028,7 @@ message FlutterWidgetsListView {
   bool add_repaint_boundaries = 13;
   bool add_semantic_indexes = 14;
   double cache_extent = 15;
+  repeated Widget children = 16;
   int64 semantic_child_count = 17;
   string restoration_id = 20;
 }
@@ -5970,6 +6041,7 @@ message FlutterWidgetsGridView {
   bool add_repaint_boundaries = 12;
   bool add_semantic_indexes = 13;
   double cache_extent = 14;
+  repeated Widget children = 15;
   int64 semantic_child_count = 16;
   string restoration_id = 20;
 }
@@ -6094,11 +6166,11 @@ message FlutterWidgetsSliverCrossAxisExpanded {
 }
 
 message FlutterWidgetsSliverCrossAxisGroup {
-  
+  repeated Widget slivers = 3;
 }
 
 message FlutterWidgetsSliverMainAxisGroup {
-  
+  repeated Widget slivers = 3;
 }
 
 message FlutterWidgetsSliverFillViewport {
@@ -6299,10 +6371,11 @@ message FlutterWidgetsView {
 message FlutterWidgetsViewport {
   double anchor = 5;
   double cache_extent = 8;
+  repeated Widget slivers = 11;
 }
 
 message FlutterWidgetsShrinkWrappingViewport {
-  
+  repeated Widget slivers = 7;
 }
 
 message FlutterWidgetsVisibility {
