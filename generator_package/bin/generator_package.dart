@@ -54,10 +54,7 @@ build/
 
   final analysis = AnalysisContextCollection(
     includedPaths: [dir.absolute.path],
-    excludedPaths: [
-      "${dir.absolute.path}/test", // not used in widget tree
-      "${dir.absolute.path}/lib/proto" // don't analyze the generated
-    ],
+    excludedPaths: ["${dir.absolute.path}/test"],
     resourceProvider: PhysicalResourceProvider.INSTANCE,
   );
 
