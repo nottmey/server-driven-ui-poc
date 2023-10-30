@@ -9,10 +9,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  protobuf: ^3.1.0
+  proto_package:
+    path: ../proto_package
 
 dev_dependencies:
-  build_runner:
   generator_package:
     path: ../generator_package
   flutter_test:

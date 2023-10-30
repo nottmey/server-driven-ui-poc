@@ -25,13 +25,32 @@ Future<void> main(List<String> arguments) async {
   print("Starting ${Platform.script.path} in ${dir.path} with $arguments");
   print("Using ${Platform.executable} with ${Platform.executableArguments}");
 
-  // TODO generate files in separate project, not into flutter_project (where it should just be imported)
   Future<File> writeFile(String path, String contents) {
     print('creating file $path');
-    return File("${dir.path}/$path")
+    return File("${dir.path}/../proto_package/$path")
         .create(recursive: true)
         .then((file) => file.writeAsString(contents, flush: true));
   }
+
+  writeFile("pubspec.yaml", '''
+name: proto_package
+version: 0.0.1
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+
+dependencies:
+  protobuf: ^3.1.0
+''');
+  writeFile(".gitignore", '''
+# Libraries should not include pubspec.lock, per https://dart.dev/guides/libraries/private-files#pubspeclock.
+/pubspec.lock
+.dart_tool/
+.packages
+build/
+''');
+  // so folders are already created for protoc
+  writeFile("lib/proto/.gitkeep", "");
 
   final analysis = AnalysisContextCollection(
     includedPaths: [dir.absolute.path],

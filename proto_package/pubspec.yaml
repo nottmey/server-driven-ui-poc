@@ -1,0 +1,8 @@
+name: proto_package
+version: 0.0.1
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+
+dependencies:
+  protobuf: ^3.1.0

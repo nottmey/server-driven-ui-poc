@@ -1,21 +1,24 @@
 ## Prerequisites
 
-```
+```shell
 # globally
 flutter version 3.13.9
 brew install protobuf
 dart pub global activate protoc_plugin
 
-# in project
-flutter pub add protobuf
+# in project add generator
 flutter pub add --dev generator_package --path ../generator_package
+
+# later in project when protocol is generated, add it
+flutter pub add proto_package --path ../proto_package
 ```
 
 ## Usage
 
-```
-# in project
-dart run generator_package
+```shell
+# in `flutter_project`
+dart run generator_package # creates `proto_package`
+# in `proto_package`
 protoc --dart_out=grpc:lib/proto --proto_path=proto $(find proto -iname "*.proto")
 # if the result becomes to large, maybe the output is splitable
 ```

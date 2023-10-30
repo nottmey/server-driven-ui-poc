@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:proto_package/proto/widgets.pb.dart' as proto;
 
 void main() {
+  final testCreation = proto.FlutterProjectMainMyHomePage(title: 'title');
+  print(testCreation);
+
   runApp(const MyApp());
 }
 
