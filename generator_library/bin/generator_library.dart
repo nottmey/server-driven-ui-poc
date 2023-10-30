@@ -101,6 +101,7 @@ Future<void> main(List<String> arguments) async {
               final protoFields = parameters.map(
                 (parameter) {
                   final reCaseName = ReCase(parameter.name);
+                  // TODO use `repeated` when appropriate
                   final nameAndNumber =
                       "${reCaseName.snakeCase} = $fieldNumber;";
                   fieldNumber++; // for every field, so number stays stable for now
@@ -108,8 +109,13 @@ Future<void> main(List<String> arguments) async {
                     return "Widget $nameAndNumber";
                   } else if (parameter.type.isDartCoreString) {
                     return "string $nameAndNumber";
+                  } else if (parameter.type.isDartCoreBool) {
+                    return "bool $nameAndNumber";
+                  } else if (parameter.type.isDartCoreInt) {
+                    return "int64 $nameAndNumber";
+                  } else if (parameter.type.isDartCoreDouble) {
+                    return "double $nameAndNumber";
                   } else {
-                    // TODO element.type.isDartCoreString
                     return null;
                   }
                 },
@@ -130,6 +136,7 @@ message $widgetConstructorName {
       }
     }
 
+    usedWidgets.sort(); // side effect
     final widgetParameters = usedWidgets.indexed.map((t) =>
         "${t.$2} ${ReCase(t.$2).snakeCase} = ${t.$1 + kProtoFieldStartNumber};");
     widgetsFile.add('''
