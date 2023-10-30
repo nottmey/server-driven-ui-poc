@@ -1,13 +1,5 @@
 syntax = "proto3";
 
-message FlutterProjectMainMyApp {
-  
-}
-
-message FlutterProjectMainMyHomePage {
-  string title = 3;
-}
-
 message FlutterCupertinoCupertinoActivityIndicator {
   bool animating = 4;
   double radius = 5;
@@ -8453,6 +8445,14 @@ message FlutterWidgetsWidgetInspector {
 
 message FlutterWidgetsWillPopScope {
   Widget child = 3;
+}
+
+message FlutterProjectMainMyApp {
+  
+}
+
+message FlutterProjectMainMyHomePage {
+  string title = 3;
 }
 
 message Widget {

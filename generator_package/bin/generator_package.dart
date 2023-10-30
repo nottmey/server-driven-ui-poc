@@ -1,4 +1,4 @@
-library generator_library.bin;
+library generator_package.bin;
 
 import 'dart:io';
 
@@ -9,7 +9,7 @@ import 'package:analyzer/file_system/file_system.dart' as file_system;
 import 'package:analyzer/file_system/physical_file_system.dart';
 import 'package:analyzer/src/util/file_paths.dart' as file_paths;
 import 'package:analyzer/src/workspace/package_build.dart';
-import 'package:generator_library/analyzer_proto_extensions.dart';
+import 'package:generator_package/analyzer_proto_extensions.dart';
 import 'package:recase/recase.dart';
 import 'package:yaml/yaml.dart';
 

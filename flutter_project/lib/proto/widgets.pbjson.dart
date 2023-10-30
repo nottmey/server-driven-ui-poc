@@ -13,27 +13,6 @@ import 'dart:convert' as $convert;
 import 'dart:core' as $core;
 import 'dart:typed_data' as $typed_data;
 
-@$core.Deprecated('Use flutterProjectMainMyAppDescriptor instead')
-const FlutterProjectMainMyApp$json = {
-  '1': 'FlutterProjectMainMyApp',
-};
-
-/// Descriptor for `FlutterProjectMainMyApp`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterProjectMainMyAppDescriptor = $convert.base64Decode(
-    'ChdGbHV0dGVyUHJvamVjdE1haW5NeUFwcA==');
-
-@$core.Deprecated('Use flutterProjectMainMyHomePageDescriptor instead')
-const FlutterProjectMainMyHomePage$json = {
-  '1': 'FlutterProjectMainMyHomePage',
-  '2': [
-    {'1': 'title', '3': 3, '4': 1, '5': 9, '10': 'title'},
-  ],
-};
-
-/// Descriptor for `FlutterProjectMainMyHomePage`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterProjectMainMyHomePageDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyUHJvamVjdE1haW5NeUhvbWVQYWdlEhQKBXRpdGxlGAMgASgJUgV0aXRsZQ==');
-
 @$core.Deprecated('Use flutterCupertinoCupertinoActivityIndicatorDescriptor instead')
 const FlutterCupertinoCupertinoActivityIndicator$json = {
   '1': 'FlutterCupertinoCupertinoActivityIndicator',
@@ -21956,6 +21935,27 @@ const FlutterWidgetsWillPopScope$json = {
 final $typed_data.Uint8List flutterWidgetsWillPopScopeDescriptor = $convert.base64Decode(
     'ChpGbHV0dGVyV2lkZ2V0c1dpbGxQb3BTY29wZRIdCgVjaGlsZBgDIAEoCzIHLldpZGdldFIFY2'
     'hpbGQ=');
+
+@$core.Deprecated('Use flutterProjectMainMyAppDescriptor instead')
+const FlutterProjectMainMyApp$json = {
+  '1': 'FlutterProjectMainMyApp',
+};
+
+/// Descriptor for `FlutterProjectMainMyApp`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterProjectMainMyAppDescriptor = $convert.base64Decode(
+    'ChdGbHV0dGVyUHJvamVjdE1haW5NeUFwcA==');
+
+@$core.Deprecated('Use flutterProjectMainMyHomePageDescriptor instead')
+const FlutterProjectMainMyHomePage$json = {
+  '1': 'FlutterProjectMainMyHomePage',
+  '2': [
+    {'1': 'title', '3': 3, '4': 1, '5': 9, '10': 'title'},
+  ],
+};
+
+/// Descriptor for `FlutterProjectMainMyHomePage`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterProjectMainMyHomePageDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyUHJvamVjdE1haW5NeUhvbWVQYWdlEhQKBXRpdGxlGAMgASgJUgV0aXRsZQ==');
 
 @$core.Deprecated('Use widgetDescriptor instead')
 const Widget$json = {

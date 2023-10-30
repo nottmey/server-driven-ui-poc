@@ -2,20 +2,20 @@
 
 ```
 # globally
-flutter upgrade
+flutter version 3.13.9
 brew install protobuf
 dart pub global activate protoc_plugin
 
 # in project
 flutter pub add protobuf
-flutter pub add --dev generator_library --path ../generator_library
+flutter pub add --dev generator_package --path ../generator_package
 ```
 
 ## Usage
 
 ```
 # in project
-dart run generator_library
+dart run generator_package
 protoc --dart_out=grpc:lib/proto --proto_path=proto $(find proto -iname "*.proto")
 # if the result becomes to large, maybe the output is splitable
 ```

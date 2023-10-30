@@ -1,5 +1,4 @@
 name: flutter_project
-description: A new Flutter project.
 publish_to: 'none'
 
 version: 1.0.0+1
@@ -10,12 +9,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  protobuf:
+  protobuf: ^3.1.0
 
 dev_dependencies:
   build_runner:
-  generator_library:
-    path: ../generator_library
+  generator_package:
+    path: ../generator_package
   flutter_test:
     sdk: flutter
   flutter_lints:
