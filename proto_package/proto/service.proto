@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "widgets.proto";
+
+service ExperienceProvider {
+  rpc RequestExperience (ExperienceRequest) returns (ExperienceResponse) {}
+}
+
+message ExperienceRequest {
+  string name = 2;
+}
+
+message ExperienceResponse {
+  Experience start = 2;
+}
+
+message Experience {
+  Widget widget = 2;
+}

@@ -1,0 +1,9 @@
+name: server_project
+
+environment:
+  sdk: '^3.1.0'
+
+dependencies:
+  grpc: ^3.2.4
+  proto_package:
+    path: ../proto_package

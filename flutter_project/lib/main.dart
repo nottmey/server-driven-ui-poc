@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:proto_package/proto/widgets.pb.dart' as proto;
+import 'package:proto_package/server_driven_ui.dart';
 
 void main() {
-  final testCreation = proto.FlutterProjectMainMyHomePage(title: 'title');
-  print(testCreation);
-
   runApp(const MyApp());
 }
 
@@ -61,6 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            const ServerDrivenUi(experienceName: 'home'),
           ],
         ),
       ),

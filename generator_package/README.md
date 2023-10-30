@@ -21,6 +21,12 @@ dart run generator_package # creates `proto_package`
 # in `proto_package`
 protoc --dart_out=grpc:lib/proto --proto_path=proto $(find proto -iname "*.proto")
 # if the result becomes to large, maybe the output is splitable
+
+# in `server_project` start server
+dart run
+
+# in `flutter_project` start and see server generated ui
+flutter run
 ```
 
 ## Limitations

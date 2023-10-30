@@ -34,7 +34,7 @@ Future<void> main(List<String> arguments) async {
 
   writeFile("pubspec.yaml", '''
 name: proto_package
-version: 0.0.1
+publish_to: 'none'
 
 environment:
   sdk: '>=3.1.5 <4.0.0'
@@ -43,6 +43,7 @@ dependencies:
   flutter_project:
     path: ../flutter_project
   protobuf: ^3.1.0
+  grpc: ^3.2.4
 ''');
   writeFile(".gitignore", '''
 # Libraries should not include pubspec.lock, per https://dart.dev/guides/libraries/private-files#pubspeclock.
