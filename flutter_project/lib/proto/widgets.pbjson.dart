@@ -13,6 +13,5081 @@ import 'dart:convert' as $convert;
 import 'dart:core' as $core;
 import 'dart:typed_data' as $typed_data;
 
+@$core.Deprecated('Use flutterProjectMainMyAppDescriptor instead')
+const FlutterProjectMainMyApp$json = {
+  '1': 'FlutterProjectMainMyApp',
+};
+
+/// Descriptor for `FlutterProjectMainMyApp`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterProjectMainMyAppDescriptor = $convert.base64Decode(
+    'ChdGbHV0dGVyUHJvamVjdE1haW5NeUFwcA==');
+
+@$core.Deprecated('Use flutterProjectMainMyHomePageDescriptor instead')
+const FlutterProjectMainMyHomePage$json = {
+  '1': 'FlutterProjectMainMyHomePage',
+  '2': [
+    {'1': 'title', '3': 3, '4': 1, '5': 9, '10': 'title'},
+  ],
+};
+
+/// Descriptor for `FlutterProjectMainMyHomePage`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterProjectMainMyHomePageDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyUHJvamVjdE1haW5NeUhvbWVQYWdlEhQKBXRpdGxlGAMgASgJUgV0aXRsZQ==');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoActivityIndicatorDescriptor instead')
+const FlutterCupertinoCupertinoActivityIndicator$json = {
+  '1': 'FlutterCupertinoCupertinoActivityIndicator',
+  '2': [
+    {'1': 'animating', '3': 4, '4': 1, '5': 8, '10': 'animating'},
+    {'1': 'radius', '3': 5, '4': 1, '5': 1, '10': 'radius'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoActivityIndicator`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoActivityIndicatorDescriptor = $convert.base64Decode(
+    'CipGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQWN0aXZpdHlJbmRpY2F0b3ISHAoJYW5pbWF0aW'
+    '5nGAQgASgIUglhbmltYXRpbmcSFgoGcmFkaXVzGAUgASgBUgZyYWRpdXM=');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoAdaptiveTextSelectionToolbarDescriptor instead')
+const FlutterCupertinoCupertinoAdaptiveTextSelectionToolbar$json = {
+  '1': 'FlutterCupertinoCupertinoAdaptiveTextSelectionToolbar',
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoAdaptiveTextSelectionToolbar`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoAdaptiveTextSelectionToolbarDescriptor = $convert.base64Decode(
+    'CjVGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQWRhcHRpdmVUZXh0U2VsZWN0aW9uVG9vbGJhcg'
+    '==');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoAppDescriptor instead')
+const FlutterCupertinoCupertinoApp$json = {
+  '1': 'FlutterCupertinoCupertinoApp',
+  '2': [
+    {'1': 'home', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'home'},
+    {'1': 'initial_route', '3': 7, '4': 1, '5': 9, '10': 'initialRoute'},
+    {'1': 'title', '3': 13, '4': 1, '5': 9, '10': 'title'},
+    {'1': 'show_performance_overlay', '3': 21, '4': 1, '5': 8, '10': 'showPerformanceOverlay'},
+    {'1': 'checkerboard_raster_cache_images', '3': 22, '4': 1, '5': 8, '10': 'checkerboardRasterCacheImages'},
+    {'1': 'checkerboard_offscreen_layers', '3': 23, '4': 1, '5': 8, '10': 'checkerboardOffscreenLayers'},
+    {'1': 'show_semantics_debugger', '3': 24, '4': 1, '5': 8, '10': 'showSemanticsDebugger'},
+    {'1': 'debug_show_checked_mode_banner', '3': 25, '4': 1, '5': 8, '10': 'debugShowCheckedModeBanner'},
+    {'1': 'restoration_scope_id', '3': 28, '4': 1, '5': 9, '10': 'restorationScopeId'},
+    {'1': 'use_inherited_media_query', '3': 30, '4': 1, '5': 8, '10': 'useInheritedMediaQuery'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoApp`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoAppDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQXBwEhsKBGhvbWUYBCABKAsyBy5XaWRnZXRSBG'
+    'hvbWUSIwoNaW5pdGlhbF9yb3V0ZRgHIAEoCVIMaW5pdGlhbFJvdXRlEhQKBXRpdGxlGA0gASgJ'
+    'UgV0aXRsZRI4ChhzaG93X3BlcmZvcm1hbmNlX292ZXJsYXkYFSABKAhSFnNob3dQZXJmb3JtYW'
+    '5jZU92ZXJsYXkSRwogY2hlY2tlcmJvYXJkX3Jhc3Rlcl9jYWNoZV9pbWFnZXMYFiABKAhSHWNo'
+    'ZWNrZXJib2FyZFJhc3RlckNhY2hlSW1hZ2VzEkIKHWNoZWNrZXJib2FyZF9vZmZzY3JlZW5fbG'
+    'F5ZXJzGBcgASgIUhtjaGVja2VyYm9hcmRPZmZzY3JlZW5MYXllcnMSNgoXc2hvd19zZW1hbnRp'
+    'Y3NfZGVidWdnZXIYGCABKAhSFXNob3dTZW1hbnRpY3NEZWJ1Z2dlchJCCh5kZWJ1Z19zaG93X2'
+    'NoZWNrZWRfbW9kZV9iYW5uZXIYGSABKAhSGmRlYnVnU2hvd0NoZWNrZWRNb2RlQmFubmVyEjAK'
+    'FHJlc3RvcmF0aW9uX3Njb3BlX2lkGBwgASgJUhJyZXN0b3JhdGlvblNjb3BlSWQSOQoZdXNlX2'
+    'luaGVyaXRlZF9tZWRpYV9xdWVyeRgeIAEoCFIWdXNlSW5oZXJpdGVkTWVkaWFRdWVyeQ==');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoTabBarDescriptor instead')
+const FlutterCupertinoCupertinoTabBar$json = {
+  '1': 'FlutterCupertinoCupertinoTabBar',
+  '2': [
+    {'1': 'current_index', '3': 5, '4': 1, '5': 3, '10': 'currentIndex'},
+    {'1': 'icon_size', '3': 9, '4': 1, '5': 1, '10': 'iconSize'},
+    {'1': 'height', '3': 10, '4': 1, '5': 1, '10': 'height'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoTabBar`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoTabBarDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGFiQmFyEiMKDWN1cnJlbnRfaW5kZXgYBSABKA'
+    'NSDGN1cnJlbnRJbmRleBIbCglpY29uX3NpemUYCSABKAFSCGljb25TaXplEhYKBmhlaWdodBgK'
+    'IAEoAVIGaGVpZ2h0');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoButtonDescriptor instead')
+const FlutterCupertinoCupertinoButton$json = {
+  '1': 'FlutterCupertinoCupertinoButton',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'min_size', '3': 7, '4': 1, '5': 1, '10': 'minSize'},
+    {'1': 'pressed_opacity', '3': 8, '4': 1, '5': 1, '10': 'pressedOpacity'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoButton`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoButtonDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQnV0dG9uEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2'
+    'V0UgVjaGlsZBIZCghtaW5fc2l6ZRgHIAEoAVIHbWluU2l6ZRInCg9wcmVzc2VkX29wYWNpdHkY'
+    'CCABKAFSDnByZXNzZWRPcGFjaXR5');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoCheckboxDescriptor instead')
+const FlutterCupertinoCupertinoCheckbox$json = {
+  '1': 'FlutterCupertinoCupertinoCheckbox',
+  '2': [
+    {'1': 'value', '3': 3, '4': 1, '5': 8, '10': 'value'},
+    {'1': 'tristate', '3': 4, '4': 1, '5': 8, '10': 'tristate'},
+    {'1': 'autofocus', '3': 11, '4': 1, '5': 8, '10': 'autofocus'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoCheckbox`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoCheckboxDescriptor = $convert.base64Decode(
+    'CiFGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQ2hlY2tib3gSFAoFdmFsdWUYAyABKAhSBXZhbH'
+    'VlEhoKCHRyaXN0YXRlGAQgASgIUgh0cmlzdGF0ZRIcCglhdXRvZm9jdXMYCyABKAhSCWF1dG9m'
+    'b2N1cw==');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoContextMenuDescriptor instead')
+const FlutterCupertinoCupertinoContextMenu$json = {
+  '1': 'FlutterCupertinoCupertinoContextMenu',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'enable_haptic_feedback', '3': 5, '4': 1, '5': 8, '10': 'enableHapticFeedback'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoContextMenu`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoContextMenuDescriptor = $convert.base64Decode(
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQ29udGV4dE1lbnUSHQoFY2hpbGQYBCABKAsyBy'
+    '5XaWRnZXRSBWNoaWxkEjQKFmVuYWJsZV9oYXB0aWNfZmVlZGJhY2sYBSABKAhSFGVuYWJsZUhh'
+    'cHRpY0ZlZWRiYWNr');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoContextMenuActionDescriptor instead')
+const FlutterCupertinoCupertinoContextMenuAction$json = {
+  '1': 'FlutterCupertinoCupertinoContextMenuAction',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'is_default_action', '3': 4, '4': 1, '5': 8, '10': 'isDefaultAction'},
+    {'1': 'is_destructive_action', '3': 5, '4': 1, '5': 8, '10': 'isDestructiveAction'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoContextMenuAction`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoContextMenuActionDescriptor = $convert.base64Decode(
+    'CipGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQ29udGV4dE1lbnVBY3Rpb24SHQoFY2hpbGQYAy'
+    'ABKAsyBy5XaWRnZXRSBWNoaWxkEioKEWlzX2RlZmF1bHRfYWN0aW9uGAQgASgIUg9pc0RlZmF1'
+    'bHRBY3Rpb24SMgoVaXNfZGVzdHJ1Y3RpdmVfYWN0aW9uGAUgASgIUhNpc0Rlc3RydWN0aXZlQW'
+    'N0aW9u');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoDatePickerDescriptor instead')
+const FlutterCupertinoCupertinoDatePicker$json = {
+  '1': 'FlutterCupertinoCupertinoDatePicker',
+  '2': [
+    {'1': 'minimum_year', '3': 8, '4': 1, '5': 3, '10': 'minimumYear'},
+    {'1': 'maximum_year', '3': 9, '4': 1, '5': 3, '10': 'maximumYear'},
+    {'1': 'minute_interval', '3': 10, '4': 1, '5': 3, '10': 'minuteInterval'},
+    {'1': 'use24h_format', '3': 11, '4': 1, '5': 8, '10': 'use24hFormat'},
+    {'1': 'show_day_of_week', '3': 14, '4': 1, '5': 8, '10': 'showDayOfWeek'},
+    {'1': 'item_extent', '3': 15, '4': 1, '5': 1, '10': 'itemExtent'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoDatePicker`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoDatePickerDescriptor = $convert.base64Decode(
+    'CiNGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRGF0ZVBpY2tlchIhCgxtaW5pbXVtX3llYXIYCC'
+    'ABKANSC21pbmltdW1ZZWFyEiEKDG1heGltdW1feWVhchgJIAEoA1ILbWF4aW11bVllYXISJwoP'
+    'bWludXRlX2ludGVydmFsGAogASgDUg5taW51dGVJbnRlcnZhbBIjCg11c2UyNGhfZm9ybWF0GA'
+    'sgASgIUgx1c2UyNGhGb3JtYXQSJwoQc2hvd19kYXlfb2Zfd2VlaxgOIAEoCFINc2hvd0RheU9m'
+    'V2VlaxIfCgtpdGVtX2V4dGVudBgPIAEoAVIKaXRlbUV4dGVudA==');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoTimerPickerDescriptor instead')
+const FlutterCupertinoCupertinoTimerPicker$json = {
+  '1': 'FlutterCupertinoCupertinoTimerPicker',
+  '2': [
+    {'1': 'minute_interval', '3': 5, '4': 1, '5': 3, '10': 'minuteInterval'},
+    {'1': 'second_interval', '3': 6, '4': 1, '5': 3, '10': 'secondInterval'},
+    {'1': 'item_extent', '3': 9, '4': 1, '5': 1, '10': 'itemExtent'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoTimerPicker`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoTimerPickerDescriptor = $convert.base64Decode(
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGltZXJQaWNrZXISJwoPbWludXRlX2ludGVydm'
+    'FsGAUgASgDUg5taW51dGVJbnRlcnZhbBInCg9zZWNvbmRfaW50ZXJ2YWwYBiABKANSDnNlY29u'
+    'ZEludGVydmFsEh8KC2l0ZW1fZXh0ZW50GAkgASgBUgppdGVtRXh0ZW50');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoDesktopTextSelectionToolbarDescriptor instead')
+const FlutterCupertinoCupertinoDesktopTextSelectionToolbar$json = {
+  '1': 'FlutterCupertinoCupertinoDesktopTextSelectionToolbar',
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoDesktopTextSelectionToolbar`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoDesktopTextSelectionToolbarDescriptor = $convert.base64Decode(
+    'CjRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRGVza3RvcFRleHRTZWxlY3Rpb25Ub29sYmFy');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoDesktopTextSelectionToolbarButtonDescriptor instead')
+const FlutterCupertinoCupertinoDesktopTextSelectionToolbarButton$json = {
+  '1': 'FlutterCupertinoCupertinoDesktopTextSelectionToolbarButton',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoDesktopTextSelectionToolbarButton`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoDesktopTextSelectionToolbarButtonDescriptor = $convert.base64Decode(
+    'CjpGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRGVza3RvcFRleHRTZWxlY3Rpb25Ub29sYmFyQn'
+    'V0dG9uEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoAlertDialogDescriptor instead')
+const FlutterCupertinoCupertinoAlertDialog$json = {
+  '1': 'FlutterCupertinoCupertinoAlertDialog',
+  '2': [
+    {'1': 'title', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'title'},
+    {'1': 'content', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'content'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoAlertDialog`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoAlertDialogDescriptor = $convert.base64Decode(
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQWxlcnREaWFsb2cSHQoFdGl0bGUYAyABKAsyBy'
+    '5XaWRnZXRSBXRpdGxlEiEKB2NvbnRlbnQYBCABKAsyBy5XaWRnZXRSB2NvbnRlbnQ=');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoPopupSurfaceDescriptor instead')
+const FlutterCupertinoCupertinoPopupSurface$json = {
+  '1': 'FlutterCupertinoCupertinoPopupSurface',
+  '2': [
+    {'1': 'is_surface_painted', '3': 3, '4': 1, '5': 8, '10': 'isSurfacePainted'},
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoPopupSurface`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoPopupSurfaceDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vUG9wdXBTdXJmYWNlEiwKEmlzX3N1cmZhY2VfcG'
+    'FpbnRlZBgDIAEoCFIQaXNTdXJmYWNlUGFpbnRlZBIdCgVjaGlsZBgEIAEoCzIHLldpZGdldFIF'
+    'Y2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoActionSheetDescriptor instead')
+const FlutterCupertinoCupertinoActionSheet$json = {
+  '1': 'FlutterCupertinoCupertinoActionSheet',
+  '2': [
+    {'1': 'title', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'title'},
+    {'1': 'message', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'message'},
+    {'1': 'cancel_button', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'cancelButton'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoActionSheet`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoActionSheetDescriptor = $convert.base64Decode(
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQWN0aW9uU2hlZXQSHQoFdGl0bGUYAyABKAsyBy'
+    '5XaWRnZXRSBXRpdGxlEiEKB21lc3NhZ2UYBCABKAsyBy5XaWRnZXRSB21lc3NhZ2USLAoNY2Fu'
+    'Y2VsX2J1dHRvbhgIIAEoCzIHLldpZGdldFIMY2FuY2VsQnV0dG9u');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoActionSheetActionDescriptor instead')
+const FlutterCupertinoCupertinoActionSheetAction$json = {
+  '1': 'FlutterCupertinoCupertinoActionSheetAction',
+  '2': [
+    {'1': 'is_default_action', '3': 4, '4': 1, '5': 8, '10': 'isDefaultAction'},
+    {'1': 'is_destructive_action', '3': 5, '4': 1, '5': 8, '10': 'isDestructiveAction'},
+    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoActionSheetAction`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoActionSheetActionDescriptor = $convert.base64Decode(
+    'CipGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQWN0aW9uU2hlZXRBY3Rpb24SKgoRaXNfZGVmYX'
+    'VsdF9hY3Rpb24YBCABKAhSD2lzRGVmYXVsdEFjdGlvbhIyChVpc19kZXN0cnVjdGl2ZV9hY3Rp'
+    'b24YBSABKAhSE2lzRGVzdHJ1Y3RpdmVBY3Rpb24SHQoFY2hpbGQYBiABKAsyBy5XaWRnZXRSBW'
+    'NoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoDialogActionDescriptor instead')
+const FlutterCupertinoCupertinoDialogAction$json = {
+  '1': 'FlutterCupertinoCupertinoDialogAction',
+  '2': [
+    {'1': 'is_default_action', '3': 4, '4': 1, '5': 8, '10': 'isDefaultAction'},
+    {'1': 'is_destructive_action', '3': 5, '4': 1, '5': 8, '10': 'isDestructiveAction'},
+    {'1': 'child', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoDialogAction`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoDialogActionDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRGlhbG9nQWN0aW9uEioKEWlzX2RlZmF1bHRfYW'
+    'N0aW9uGAQgASgIUg9pc0RlZmF1bHRBY3Rpb24SMgoVaXNfZGVzdHJ1Y3RpdmVfYWN0aW9uGAUg'
+    'ASgIUhNpc0Rlc3RydWN0aXZlQWN0aW9uEh0KBWNoaWxkGAcgASgLMgcuV2lkZ2V0UgVjaGlsZA'
+    '==');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoFormRowDescriptor instead')
+const FlutterCupertinoCupertinoFormRow$json = {
+  '1': 'FlutterCupertinoCupertinoFormRow',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'prefix', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'prefix'},
+    {'1': 'helper', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'helper'},
+    {'1': 'error', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'error'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoFormRow`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoFormRowDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRm9ybVJvdxIdCgVjaGlsZBgDIAEoCzIHLldpZG'
+    'dldFIFY2hpbGQSHwoGcHJlZml4GAQgASgLMgcuV2lkZ2V0UgZwcmVmaXgSHwoGaGVscGVyGAYg'
+    'ASgLMgcuV2lkZ2V0UgZoZWxwZXISHQoFZXJyb3IYByABKAsyBy5XaWRnZXRSBWVycm9y');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoFormSectionDescriptor instead')
+const FlutterCupertinoCupertinoFormSection$json = {
+  '1': 'FlutterCupertinoCupertinoFormSection',
+  '2': [
+    {'1': 'header', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'header'},
+    {'1': 'footer', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'footer'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoFormSection`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoFormSectionDescriptor = $convert.base64Decode(
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRm9ybVNlY3Rpb24SHwoGaGVhZGVyGAQgASgLMg'
+    'cuV2lkZ2V0UgZoZWFkZXISHwoGZm9vdGVyGAUgASgLMgcuV2lkZ2V0UgZmb290ZXI=');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoUserInterfaceLevelDescriptor instead')
+const FlutterCupertinoCupertinoUserInterfaceLevel$json = {
+  '1': 'FlutterCupertinoCupertinoUserInterfaceLevel',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoUserInterfaceLevel`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoUserInterfaceLevelDescriptor = $convert.base64Decode(
+    'CitGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVXNlckludGVyZmFjZUxldmVsEh0KBWNoaWxkGA'
+    'QgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoListSectionDescriptor instead')
+const FlutterCupertinoCupertinoListSection$json = {
+  '1': 'FlutterCupertinoCupertinoListSection',
+  '2': [
+    {'1': 'header', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'header'},
+    {'1': 'footer', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'footer'},
+    {'1': 'divider_margin', '3': 10, '4': 1, '5': 1, '10': 'dividerMargin'},
+    {'1': 'additional_divider_margin', '3': 11, '4': 1, '5': 1, '10': 'additionalDividerMargin'},
+    {'1': 'top_margin', '3': 12, '4': 1, '5': 1, '10': 'topMargin'},
+    {'1': 'has_leading', '3': 13, '4': 1, '5': 8, '10': 'hasLeading'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoListSection`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoListSectionDescriptor = $convert.base64Decode(
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vTGlzdFNlY3Rpb24SHwoGaGVhZGVyGAQgASgLMg'
+    'cuV2lkZ2V0UgZoZWFkZXISHwoGZm9vdGVyGAUgASgLMgcuV2lkZ2V0UgZmb290ZXISJQoOZGl2'
+    'aWRlcl9tYXJnaW4YCiABKAFSDWRpdmlkZXJNYXJnaW4SOgoZYWRkaXRpb25hbF9kaXZpZGVyX2'
+    '1hcmdpbhgLIAEoAVIXYWRkaXRpb25hbERpdmlkZXJNYXJnaW4SHQoKdG9wX21hcmdpbhgMIAEo'
+    'AVIJdG9wTWFyZ2luEh8KC2hhc19sZWFkaW5nGA0gASgIUgpoYXNMZWFkaW5n');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoListTileDescriptor instead')
+const FlutterCupertinoCupertinoListTile$json = {
+  '1': 'FlutterCupertinoCupertinoListTile',
+  '2': [
+    {'1': 'title', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'title'},
+    {'1': 'subtitle', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'subtitle'},
+    {'1': 'additional_info', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'additionalInfo'},
+    {'1': 'leading', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'leading'},
+    {'1': 'trailing', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'trailing'},
+    {'1': 'leading_size', '3': 12, '4': 1, '5': 1, '10': 'leadingSize'},
+    {'1': 'leading_to_title', '3': 13, '4': 1, '5': 1, '10': 'leadingToTitle'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoListTile`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoListTileDescriptor = $convert.base64Decode(
+    'CiFGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vTGlzdFRpbGUSHQoFdGl0bGUYAyABKAsyBy5XaW'
+    'RnZXRSBXRpdGxlEiMKCHN1YnRpdGxlGAQgASgLMgcuV2lkZ2V0UghzdWJ0aXRsZRIwCg9hZGRp'
+    'dGlvbmFsX2luZm8YBSABKAsyBy5XaWRnZXRSDmFkZGl0aW9uYWxJbmZvEiEKB2xlYWRpbmcYBi'
+    'ABKAsyBy5XaWRnZXRSB2xlYWRpbmcSIwoIdHJhaWxpbmcYByABKAsyBy5XaWRnZXRSCHRyYWls'
+    'aW5nEiEKDGxlYWRpbmdfc2l6ZRgMIAEoAVILbGVhZGluZ1NpemUSKAoQbGVhZGluZ190b190aX'
+    'RsZRgNIAEoAVIObGVhZGluZ1RvVGl0bGU=');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoListTileChevronDescriptor instead')
+const FlutterCupertinoCupertinoListTileChevron$json = {
+  '1': 'FlutterCupertinoCupertinoListTileChevron',
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoListTileChevron`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoListTileChevronDescriptor = $convert.base64Decode(
+    'CihGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vTGlzdFRpbGVDaGV2cm9u');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoTextMagnifierDescriptor instead')
+const FlutterCupertinoCupertinoTextMagnifier$json = {
+  '1': 'FlutterCupertinoCupertinoTextMagnifier',
+  '2': [
+    {'1': 'drag_resistance', '3': 5, '4': 1, '5': 1, '10': 'dragResistance'},
+    {'1': 'hide_below_threshold', '3': 6, '4': 1, '5': 1, '10': 'hideBelowThreshold'},
+    {'1': 'horizontal_screen_edge_padding', '3': 7, '4': 1, '5': 1, '10': 'horizontalScreenEdgePadding'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoTextMagnifier`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoTextMagnifierDescriptor = $convert.base64Decode(
+    'CiZGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGV4dE1hZ25pZmllchInCg9kcmFnX3Jlc2lzdG'
+    'FuY2UYBSABKAFSDmRyYWdSZXNpc3RhbmNlEjAKFGhpZGVfYmVsb3dfdGhyZXNob2xkGAYgASgB'
+    'UhJoaWRlQmVsb3dUaHJlc2hvbGQSQwoeaG9yaXpvbnRhbF9zY3JlZW5fZWRnZV9wYWRkaW5nGA'
+    'cgASgBUhtob3Jpem9udGFsU2NyZWVuRWRnZVBhZGRpbmc=');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoMagnifierDescriptor instead')
+const FlutterCupertinoCupertinoMagnifier$json = {
+  '1': 'FlutterCupertinoCupertinoMagnifier',
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoMagnifier`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoMagnifierDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vTWFnbmlmaWVy');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoNavigationBarDescriptor instead')
+const FlutterCupertinoCupertinoNavigationBar$json = {
+  '1': 'FlutterCupertinoCupertinoNavigationBar',
+  '2': [
+    {'1': 'leading', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'leading'},
+    {'1': 'automatically_imply_leading', '3': 4, '4': 1, '5': 8, '10': 'automaticallyImplyLeading'},
+    {'1': 'automatically_imply_middle', '3': 5, '4': 1, '5': 8, '10': 'automaticallyImplyMiddle'},
+    {'1': 'previous_page_title', '3': 6, '4': 1, '5': 9, '10': 'previousPageTitle'},
+    {'1': 'middle', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'middle'},
+    {'1': 'trailing', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'trailing'},
+    {'1': 'transition_between_routes', '3': 13, '4': 1, '5': 8, '10': 'transitionBetweenRoutes'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoNavigationBar`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoNavigationBarDescriptor = $convert.base64Decode(
+    'CiZGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vTmF2aWdhdGlvbkJhchIhCgdsZWFkaW5nGAMgAS'
+    'gLMgcuV2lkZ2V0UgdsZWFkaW5nEj4KG2F1dG9tYXRpY2FsbHlfaW1wbHlfbGVhZGluZxgEIAEo'
+    'CFIZYXV0b21hdGljYWxseUltcGx5TGVhZGluZxI8ChphdXRvbWF0aWNhbGx5X2ltcGx5X21pZG'
+    'RsZRgFIAEoCFIYYXV0b21hdGljYWxseUltcGx5TWlkZGxlEi4KE3ByZXZpb3VzX3BhZ2VfdGl0'
+    'bGUYBiABKAlSEXByZXZpb3VzUGFnZVRpdGxlEh8KBm1pZGRsZRgHIAEoCzIHLldpZGdldFIGbW'
+    'lkZGxlEiMKCHRyYWlsaW5nGAggASgLMgcuV2lkZ2V0Ugh0cmFpbGluZxI6Chl0cmFuc2l0aW9u'
+    'X2JldHdlZW5fcm91dGVzGA0gASgIUhd0cmFuc2l0aW9uQmV0d2VlblJvdXRlcw==');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoSliverNavigationBarDescriptor instead')
+const FlutterCupertinoCupertinoSliverNavigationBar$json = {
+  '1': 'FlutterCupertinoCupertinoSliverNavigationBar',
+  '2': [
+    {'1': 'large_title', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'largeTitle'},
+    {'1': 'leading', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'leading'},
+    {'1': 'automatically_imply_leading', '3': 5, '4': 1, '5': 8, '10': 'automaticallyImplyLeading'},
+    {'1': 'automatically_imply_title', '3': 6, '4': 1, '5': 8, '10': 'automaticallyImplyTitle'},
+    {'1': 'always_show_middle', '3': 7, '4': 1, '5': 8, '10': 'alwaysShowMiddle'},
+    {'1': 'previous_page_title', '3': 8, '4': 1, '5': 9, '10': 'previousPageTitle'},
+    {'1': 'middle', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'middle'},
+    {'1': 'trailing', '3': 10, '4': 1, '5': 11, '6': '.Widget', '10': 'trailing'},
+    {'1': 'transition_between_routes', '3': 15, '4': 1, '5': 8, '10': 'transitionBetweenRoutes'},
+    {'1': 'stretch', '3': 17, '4': 1, '5': 8, '10': 'stretch'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoSliverNavigationBar`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoSliverNavigationBarDescriptor = $convert.base64Decode(
+    'CixGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU2xpdmVyTmF2aWdhdGlvbkJhchIoCgtsYXJnZV'
+    '90aXRsZRgDIAEoCzIHLldpZGdldFIKbGFyZ2VUaXRsZRIhCgdsZWFkaW5nGAQgASgLMgcuV2lk'
+    'Z2V0UgdsZWFkaW5nEj4KG2F1dG9tYXRpY2FsbHlfaW1wbHlfbGVhZGluZxgFIAEoCFIZYXV0b2'
+    '1hdGljYWxseUltcGx5TGVhZGluZxI6ChlhdXRvbWF0aWNhbGx5X2ltcGx5X3RpdGxlGAYgASgI'
+    'UhdhdXRvbWF0aWNhbGx5SW1wbHlUaXRsZRIsChJhbHdheXNfc2hvd19taWRkbGUYByABKAhSEG'
+    'Fsd2F5c1Nob3dNaWRkbGUSLgoTcHJldmlvdXNfcGFnZV90aXRsZRgIIAEoCVIRcHJldmlvdXNQ'
+    'YWdlVGl0bGUSHwoGbWlkZGxlGAkgASgLMgcuV2lkZ2V0UgZtaWRkbGUSIwoIdHJhaWxpbmcYCi'
+    'ABKAsyBy5XaWRnZXRSCHRyYWlsaW5nEjoKGXRyYW5zaXRpb25fYmV0d2Vlbl9yb3V0ZXMYDyAB'
+    'KAhSF3RyYW5zaXRpb25CZXR3ZWVuUm91dGVzEhgKB3N0cmV0Y2gYESABKAhSB3N0cmV0Y2g=');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoNavigationBarBackButtonDescriptor instead')
+const FlutterCupertinoCupertinoNavigationBarBackButton$json = {
+  '1': 'FlutterCupertinoCupertinoNavigationBarBackButton',
+  '2': [
+    {'1': 'previous_page_title', '3': 4, '4': 1, '5': 9, '10': 'previousPageTitle'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoNavigationBarBackButton`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoNavigationBarBackButtonDescriptor = $convert.base64Decode(
+    'CjBGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vTmF2aWdhdGlvbkJhckJhY2tCdXR0b24SLgoTcH'
+    'JldmlvdXNfcGFnZV90aXRsZRgEIAEoCVIRcHJldmlvdXNQYWdlVGl0bGU=');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoPageScaffoldDescriptor instead')
+const FlutterCupertinoCupertinoPageScaffold$json = {
+  '1': 'FlutterCupertinoCupertinoPageScaffold',
+  '2': [
+    {'1': 'resize_to_avoid_bottom_inset', '3': 5, '4': 1, '5': 8, '10': 'resizeToAvoidBottomInset'},
+    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoPageScaffold`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoPageScaffoldDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vUGFnZVNjYWZmb2xkEj4KHHJlc2l6ZV90b19hdm'
+    '9pZF9ib3R0b21faW5zZXQYBSABKAhSGHJlc2l6ZVRvQXZvaWRCb3R0b21JbnNldBIdCgVjaGls'
+    'ZBgGIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoObstructingPreferredSizeWidgetDescriptor instead')
+const FlutterCupertinoObstructingPreferredSizeWidget$json = {
+  '1': 'FlutterCupertinoObstructingPreferredSizeWidget',
+};
+
+/// Descriptor for `FlutterCupertinoObstructingPreferredSizeWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoObstructingPreferredSizeWidgetDescriptor = $convert.base64Decode(
+    'Ci5GbHV0dGVyQ3VwZXJ0aW5vT2JzdHJ1Y3RpbmdQcmVmZXJyZWRTaXplV2lkZ2V0');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoPickerDescriptor instead')
+const FlutterCupertinoCupertinoPicker$json = {
+  '1': 'FlutterCupertinoCupertinoPicker',
+  '2': [
+    {'1': 'diameter_ratio', '3': 3, '4': 1, '5': 1, '10': 'diameterRatio'},
+    {'1': 'off_axis_fraction', '3': 5, '4': 1, '5': 1, '10': 'offAxisFraction'},
+    {'1': 'use_magnifier', '3': 6, '4': 1, '5': 8, '10': 'useMagnifier'},
+    {'1': 'magnification', '3': 7, '4': 1, '5': 1, '10': 'magnification'},
+    {'1': 'squeeze', '3': 9, '4': 1, '5': 1, '10': 'squeeze'},
+    {'1': 'item_extent', '3': 10, '4': 1, '5': 1, '10': 'itemExtent'},
+    {'1': 'selection_overlay', '3': 13, '4': 1, '5': 11, '6': '.Widget', '10': 'selectionOverlay'},
+    {'1': 'looping', '3': 14, '4': 1, '5': 8, '10': 'looping'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoPicker`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoPickerDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vUGlja2VyEiUKDmRpYW1ldGVyX3JhdGlvGAMgAS'
+    'gBUg1kaWFtZXRlclJhdGlvEioKEW9mZl9heGlzX2ZyYWN0aW9uGAUgASgBUg9vZmZBeGlzRnJh'
+    'Y3Rpb24SIwoNdXNlX21hZ25pZmllchgGIAEoCFIMdXNlTWFnbmlmaWVyEiQKDW1hZ25pZmljYX'
+    'Rpb24YByABKAFSDW1hZ25pZmljYXRpb24SGAoHc3F1ZWV6ZRgJIAEoAVIHc3F1ZWV6ZRIfCgtp'
+    'dGVtX2V4dGVudBgKIAEoAVIKaXRlbUV4dGVudBI0ChFzZWxlY3Rpb25fb3ZlcmxheRgNIAEoCz'
+    'IHLldpZGdldFIQc2VsZWN0aW9uT3ZlcmxheRIYCgdsb29waW5nGA4gASgIUgdsb29waW5n');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoPickerDefaultSelectionOverlayDescriptor instead')
+const FlutterCupertinoCupertinoPickerDefaultSelectionOverlay$json = {
+  '1': 'FlutterCupertinoCupertinoPickerDefaultSelectionOverlay',
+  '2': [
+    {'1': 'cap_start_edge', '3': 4, '4': 1, '5': 8, '10': 'capStartEdge'},
+    {'1': 'cap_end_edge', '3': 5, '4': 1, '5': 8, '10': 'capEndEdge'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoPickerDefaultSelectionOverlay`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoPickerDefaultSelectionOverlayDescriptor = $convert.base64Decode(
+    'CjZGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vUGlja2VyRGVmYXVsdFNlbGVjdGlvbk92ZXJsYX'
+    'kSJAoOY2FwX3N0YXJ0X2VkZ2UYBCABKAhSDGNhcFN0YXJ0RWRnZRIgCgxjYXBfZW5kX2VkZ2UY'
+    'BSABKAhSCmNhcEVuZEVkZ2U=');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoRadioDescriptor instead')
+const FlutterCupertinoCupertinoRadio$json = {
+  '1': 'FlutterCupertinoCupertinoRadio',
+  '2': [
+    {'1': 'toggleable', '3': 6, '4': 1, '5': 8, '10': 'toggleable'},
+    {'1': 'autofocus', '3': 12, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'use_checkmark_style', '3': 13, '4': 1, '5': 8, '10': 'useCheckmarkStyle'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoRadio`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoRadioDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vUmFkaW8SHgoKdG9nZ2xlYWJsZRgGIAEoCFIKdG'
+    '9nZ2xlYWJsZRIcCglhdXRvZm9jdXMYDCABKAhSCWF1dG9mb2N1cxIuChN1c2VfY2hlY2ttYXJr'
+    'X3N0eWxlGA0gASgIUhF1c2VDaGVja21hcmtTdHlsZQ==');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoSliverRefreshControlDescriptor instead')
+const FlutterCupertinoCupertinoSliverRefreshControl$json = {
+  '1': 'FlutterCupertinoCupertinoSliverRefreshControl',
+  '2': [
+    {'1': 'refresh_trigger_pull_distance', '3': 3, '4': 1, '5': 1, '10': 'refreshTriggerPullDistance'},
+    {'1': 'refresh_indicator_extent', '3': 4, '4': 1, '5': 1, '10': 'refreshIndicatorExtent'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoSliverRefreshControl`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoSliverRefreshControlDescriptor = $convert.base64Decode(
+    'Ci1GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU2xpdmVyUmVmcmVzaENvbnRyb2wSQQodcmVmcm'
+    'VzaF90cmlnZ2VyX3B1bGxfZGlzdGFuY2UYAyABKAFSGnJlZnJlc2hUcmlnZ2VyUHVsbERpc3Rh'
+    'bmNlEjgKGHJlZnJlc2hfaW5kaWNhdG9yX2V4dGVudBgEIAEoAVIWcmVmcmVzaEluZGljYXRvck'
+    'V4dGVudA==');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoPageTransitionDescriptor instead')
+const FlutterCupertinoCupertinoPageTransition$json = {
+  '1': 'FlutterCupertinoCupertinoPageTransition',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'linear_transition', '3': 6, '4': 1, '5': 8, '10': 'linearTransition'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoPageTransition`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoPageTransitionDescriptor = $convert.base64Decode(
+    'CidGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vUGFnZVRyYW5zaXRpb24SHQoFY2hpbGQYBSABKA'
+    'syBy5XaWRnZXRSBWNoaWxkEisKEWxpbmVhcl90cmFuc2l0aW9uGAYgASgIUhBsaW5lYXJUcmFu'
+    'c2l0aW9u');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoFullscreenDialogTransitionDescriptor instead')
+const FlutterCupertinoCupertinoFullscreenDialogTransition$json = {
+  '1': 'FlutterCupertinoCupertinoFullscreenDialogTransition',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'linear_transition', '3': 6, '4': 1, '5': 8, '10': 'linearTransition'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoFullscreenDialogTransition`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoFullscreenDialogTransitionDescriptor = $convert.base64Decode(
+    'CjNGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRnVsbHNjcmVlbkRpYWxvZ1RyYW5zaXRpb24SHQ'
+    'oFY2hpbGQYBSABKAsyBy5XaWRnZXRSBWNoaWxkEisKEWxpbmVhcl90cmFuc2l0aW9uGAYgASgI'
+    'UhBsaW5lYXJUcmFuc2l0aW9u');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoScrollbarDescriptor instead')
+const FlutterCupertinoCupertinoScrollbar$json = {
+  '1': 'FlutterCupertinoCupertinoScrollbar',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'thumb_visibility', '3': 5, '4': 1, '5': 8, '10': 'thumbVisibility'},
+    {'1': 'thickness', '3': 6, '4': 1, '5': 1, '10': 'thickness'},
+    {'1': 'thickness_while_dragging', '3': 7, '4': 1, '5': 1, '10': 'thicknessWhileDragging'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoScrollbar`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoScrollbarDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU2Nyb2xsYmFyEh0KBWNoaWxkGAMgASgLMgcuV2'
+    'lkZ2V0UgVjaGlsZBIpChB0aHVtYl92aXNpYmlsaXR5GAUgASgIUg90aHVtYlZpc2liaWxpdHkS'
+    'HAoJdGhpY2tuZXNzGAYgASgBUgl0aGlja25lc3MSOAoYdGhpY2tuZXNzX3doaWxlX2RyYWdnaW'
+    '5nGAcgASgBUhZ0aGlja25lc3NXaGlsZURyYWdnaW5n');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoSearchTextFieldDescriptor instead')
+const FlutterCupertinoCupertinoSearchTextField$json = {
+  '1': 'FlutterCupertinoCupertinoSearchTextField',
+  '2': [
+    {'1': 'placeholder', '3': 7, '4': 1, '5': 9, '10': 'placeholder'},
+    {'1': 'item_size', '3': 15, '4': 1, '5': 1, '10': 'itemSize'},
+    {'1': 'prefix_icon', '3': 17, '4': 1, '5': 11, '6': '.Widget', '10': 'prefixIcon'},
+    {'1': 'restoration_id', '3': 22, '4': 1, '5': 9, '10': 'restorationId'},
+    {'1': 'enable_i_m_e_personalized_learning', '3': 26, '4': 1, '5': 8, '10': 'enableIMEPersonalizedLearning'},
+    {'1': 'autofocus', '3': 27, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'autocorrect', '3': 29, '4': 1, '5': 8, '10': 'autocorrect'},
+    {'1': 'enabled', '3': 30, '4': 1, '5': 8, '10': 'enabled'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoSearchTextField`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoSearchTextFieldDescriptor = $convert.base64Decode(
+    'CihGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU2VhcmNoVGV4dEZpZWxkEiAKC3BsYWNlaG9sZG'
+    'VyGAcgASgJUgtwbGFjZWhvbGRlchIbCglpdGVtX3NpemUYDyABKAFSCGl0ZW1TaXplEigKC3By'
+    'ZWZpeF9pY29uGBEgASgLMgcuV2lkZ2V0UgpwcmVmaXhJY29uEiUKDnJlc3RvcmF0aW9uX2lkGB'
+    'YgASgJUg1yZXN0b3JhdGlvbklkEkkKImVuYWJsZV9pX21fZV9wZXJzb25hbGl6ZWRfbGVhcm5p'
+    'bmcYGiABKAhSHWVuYWJsZUlNRVBlcnNvbmFsaXplZExlYXJuaW5nEhwKCWF1dG9mb2N1cxgbIA'
+    'EoCFIJYXV0b2ZvY3VzEiAKC2F1dG9jb3JyZWN0GB0gASgIUgthdXRvY29ycmVjdBIYCgdlbmFi'
+    'bGVkGB4gASgIUgdlbmFibGVk');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoSegmentedControlDescriptor instead')
+const FlutterCupertinoCupertinoSegmentedControl$json = {
+  '1': 'FlutterCupertinoCupertinoSegmentedControl',
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoSegmentedControl`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoSegmentedControlDescriptor = $convert.base64Decode(
+    'CilGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU2VnbWVudGVkQ29udHJvbA==');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoSliderDescriptor instead')
+const FlutterCupertinoCupertinoSlider$json = {
+  '1': 'FlutterCupertinoCupertinoSlider',
+  '2': [
+    {'1': 'value', '3': 3, '4': 1, '5': 1, '10': 'value'},
+    {'1': 'min', '3': 7, '4': 1, '5': 1, '10': 'min'},
+    {'1': 'max', '3': 8, '4': 1, '5': 1, '10': 'max'},
+    {'1': 'divisions', '3': 9, '4': 1, '5': 3, '10': 'divisions'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoSlider`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoSliderDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU2xpZGVyEhQKBXZhbHVlGAMgASgBUgV2YWx1ZR'
+    'IQCgNtaW4YByABKAFSA21pbhIQCgNtYXgYCCABKAFSA21heBIcCglkaXZpc2lvbnMYCSABKANS'
+    'CWRpdmlzaW9ucw==');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoSlidingSegmentedControlDescriptor instead')
+const FlutterCupertinoCupertinoSlidingSegmentedControl$json = {
+  '1': 'FlutterCupertinoCupertinoSlidingSegmentedControl',
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoSlidingSegmentedControl`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoSlidingSegmentedControlDescriptor = $convert.base64Decode(
+    'CjBGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU2xpZGluZ1NlZ21lbnRlZENvbnRyb2w=');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoSpellCheckSuggestionsToolbarDescriptor instead')
+const FlutterCupertinoCupertinoSpellCheckSuggestionsToolbar$json = {
+  '1': 'FlutterCupertinoCupertinoSpellCheckSuggestionsToolbar',
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoSpellCheckSuggestionsToolbar`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoSpellCheckSuggestionsToolbarDescriptor = $convert.base64Decode(
+    'CjVGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU3BlbGxDaGVja1N1Z2dlc3Rpb25zVG9vbGJhcg'
+    '==');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoSwitchDescriptor instead')
+const FlutterCupertinoCupertinoSwitch$json = {
+  '1': 'FlutterCupertinoCupertinoSwitch',
+  '2': [
+    {'1': 'value', '3': 3, '4': 1, '5': 8, '10': 'value'},
+    {'1': 'apply_theme', '3': 8, '4': 1, '5': 8, '10': 'applyTheme'},
+    {'1': 'autofocus', '3': 12, '4': 1, '5': 8, '10': 'autofocus'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoSwitch`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoSwitchDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU3dpdGNoEhQKBXZhbHVlGAMgASgIUgV2YWx1ZR'
+    'IfCgthcHBseV90aGVtZRgIIAEoCFIKYXBwbHlUaGVtZRIcCglhdXRvZm9jdXMYDCABKAhSCWF1'
+    'dG9mb2N1cw==');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoTabScaffoldDescriptor instead')
+const FlutterCupertinoCupertinoTabScaffold$json = {
+  '1': 'FlutterCupertinoCupertinoTabScaffold',
+  '2': [
+    {'1': 'resize_to_avoid_bottom_inset', '3': 7, '4': 1, '5': 8, '10': 'resizeToAvoidBottomInset'},
+    {'1': 'restoration_id', '3': 8, '4': 1, '5': 9, '10': 'restorationId'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoTabScaffold`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoTabScaffoldDescriptor = $convert.base64Decode(
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGFiU2NhZmZvbGQSPgoccmVzaXplX3RvX2F2b2'
+    'lkX2JvdHRvbV9pbnNldBgHIAEoCFIYcmVzaXplVG9Bdm9pZEJvdHRvbUluc2V0EiUKDnJlc3Rv'
+    'cmF0aW9uX2lkGAggASgJUg1yZXN0b3JhdGlvbklk');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoTabViewDescriptor instead')
+const FlutterCupertinoCupertinoTabView$json = {
+  '1': 'FlutterCupertinoCupertinoTabView',
+  '2': [
+    {'1': 'default_title', '3': 5, '4': 1, '5': 9, '10': 'defaultTitle'},
+    {'1': 'restoration_scope_id', '3': 10, '4': 1, '5': 9, '10': 'restorationScopeId'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoTabView`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoTabViewDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGFiVmlldxIjCg1kZWZhdWx0X3RpdGxlGAUgAS'
+    'gJUgxkZWZhdWx0VGl0bGUSMAoUcmVzdG9yYXRpb25fc2NvcGVfaWQYCiABKAlSEnJlc3RvcmF0'
+    'aW9uU2NvcGVJZA==');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoTextFieldDescriptor instead')
+const FlutterCupertinoCupertinoTextField$json = {
+  '1': 'FlutterCupertinoCupertinoTextField',
+  '2': [
+    {'1': 'placeholder', '3': 8, '4': 1, '5': 9, '10': 'placeholder'},
+    {'1': 'prefix', '3': 10, '4': 1, '5': 11, '6': '.Widget', '10': 'prefix'},
+    {'1': 'suffix', '3': 12, '4': 1, '5': 11, '6': '.Widget', '10': 'suffix'},
+    {'1': 'read_only', '3': 23, '4': 1, '5': 8, '10': 'readOnly'},
+    {'1': 'show_cursor', '3': 25, '4': 1, '5': 8, '10': 'showCursor'},
+    {'1': 'autofocus', '3': 26, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'obscuring_character', '3': 27, '4': 1, '5': 9, '10': 'obscuringCharacter'},
+    {'1': 'obscure_text', '3': 28, '4': 1, '5': 8, '10': 'obscureText'},
+    {'1': 'autocorrect', '3': 29, '4': 1, '5': 8, '10': 'autocorrect'},
+    {'1': 'enable_suggestions', '3': 32, '4': 1, '5': 8, '10': 'enableSuggestions'},
+    {'1': 'max_lines', '3': 33, '4': 1, '5': 3, '10': 'maxLines'},
+    {'1': 'min_lines', '3': 34, '4': 1, '5': 3, '10': 'minLines'},
+    {'1': 'expands', '3': 35, '4': 1, '5': 8, '10': 'expands'},
+    {'1': 'max_length', '3': 36, '4': 1, '5': 3, '10': 'maxLength'},
+    {'1': 'enabled', '3': 43, '4': 1, '5': 8, '10': 'enabled'},
+    {'1': 'cursor_width', '3': 44, '4': 1, '5': 1, '10': 'cursorWidth'},
+    {'1': 'cursor_height', '3': 45, '4': 1, '5': 1, '10': 'cursorHeight'},
+    {'1': 'cursor_opacity_animates', '3': 47, '4': 1, '5': 8, '10': 'cursorOpacityAnimates'},
+    {'1': 'enable_interactive_selection', '3': 54, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
+    {'1': 'restoration_id', '3': 62, '4': 1, '5': 9, '10': 'restorationId'},
+    {'1': 'scribble_enabled', '3': 63, '4': 1, '5': 8, '10': 'scribbleEnabled'},
+    {'1': 'enable_i_m_e_personalized_learning', '3': 64, '4': 1, '5': 8, '10': 'enableIMEPersonalizedLearning'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoTextField`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoTextFieldDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGV4dEZpZWxkEiAKC3BsYWNlaG9sZGVyGAggAS'
+    'gJUgtwbGFjZWhvbGRlchIfCgZwcmVmaXgYCiABKAsyBy5XaWRnZXRSBnByZWZpeBIfCgZzdWZm'
+    'aXgYDCABKAsyBy5XaWRnZXRSBnN1ZmZpeBIbCglyZWFkX29ubHkYFyABKAhSCHJlYWRPbmx5Eh'
+    '8KC3Nob3dfY3Vyc29yGBkgASgIUgpzaG93Q3Vyc29yEhwKCWF1dG9mb2N1cxgaIAEoCFIJYXV0'
+    'b2ZvY3VzEi8KE29ic2N1cmluZ19jaGFyYWN0ZXIYGyABKAlSEm9ic2N1cmluZ0NoYXJhY3Rlch'
+    'IhCgxvYnNjdXJlX3RleHQYHCABKAhSC29ic2N1cmVUZXh0EiAKC2F1dG9jb3JyZWN0GB0gASgI'
+    'UgthdXRvY29ycmVjdBItChJlbmFibGVfc3VnZ2VzdGlvbnMYICABKAhSEWVuYWJsZVN1Z2dlc3'
+    'Rpb25zEhsKCW1heF9saW5lcxghIAEoA1IIbWF4TGluZXMSGwoJbWluX2xpbmVzGCIgASgDUght'
+    'aW5MaW5lcxIYCgdleHBhbmRzGCMgASgIUgdleHBhbmRzEh0KCm1heF9sZW5ndGgYJCABKANSCW'
+    '1heExlbmd0aBIYCgdlbmFibGVkGCsgASgIUgdlbmFibGVkEiEKDGN1cnNvcl93aWR0aBgsIAEo'
+    'AVILY3Vyc29yV2lkdGgSIwoNY3Vyc29yX2hlaWdodBgtIAEoAVIMY3Vyc29ySGVpZ2h0EjYKF2'
+    'N1cnNvcl9vcGFjaXR5X2FuaW1hdGVzGC8gASgIUhVjdXJzb3JPcGFjaXR5QW5pbWF0ZXMSQAoc'
+    'ZW5hYmxlX2ludGVyYWN0aXZlX3NlbGVjdGlvbhg2IAEoCFIaZW5hYmxlSW50ZXJhY3RpdmVTZW'
+    'xlY3Rpb24SJQoOcmVzdG9yYXRpb25faWQYPiABKAlSDXJlc3RvcmF0aW9uSWQSKQoQc2NyaWJi'
+    'bGVfZW5hYmxlZBg/IAEoCFIPc2NyaWJibGVFbmFibGVkEkkKImVuYWJsZV9pX21fZV9wZXJzb2'
+    '5hbGl6ZWRfbGVhcm5pbmcYQCABKAhSHWVuYWJsZUlNRVBlcnNvbmFsaXplZExlYXJuaW5n');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoTextFormFieldRowDescriptor instead')
+const FlutterCupertinoCupertinoTextFormFieldRow$json = {
+  '1': 'FlutterCupertinoCupertinoTextFormFieldRow',
+  '2': [
+    {'1': 'prefix', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'prefix'},
+    {'1': 'initial_value', '3': 6, '4': 1, '5': 9, '10': 'initialValue'},
+    {'1': 'autofocus', '3': 17, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'read_only', '3': 18, '4': 1, '5': 8, '10': 'readOnly'},
+    {'1': 'show_cursor', '3': 20, '4': 1, '5': 8, '10': 'showCursor'},
+    {'1': 'obscuring_character', '3': 21, '4': 1, '5': 9, '10': 'obscuringCharacter'},
+    {'1': 'obscure_text', '3': 22, '4': 1, '5': 8, '10': 'obscureText'},
+    {'1': 'autocorrect', '3': 23, '4': 1, '5': 8, '10': 'autocorrect'},
+    {'1': 'enable_suggestions', '3': 26, '4': 1, '5': 8, '10': 'enableSuggestions'},
+    {'1': 'max_lines', '3': 27, '4': 1, '5': 3, '10': 'maxLines'},
+    {'1': 'min_lines', '3': 28, '4': 1, '5': 3, '10': 'minLines'},
+    {'1': 'expands', '3': 29, '4': 1, '5': 8, '10': 'expands'},
+    {'1': 'max_length', '3': 30, '4': 1, '5': 3, '10': 'maxLength'},
+    {'1': 'enabled', '3': 38, '4': 1, '5': 8, '10': 'enabled'},
+    {'1': 'cursor_width', '3': 39, '4': 1, '5': 1, '10': 'cursorWidth'},
+    {'1': 'cursor_height', '3': 40, '4': 1, '5': 1, '10': 'cursorHeight'},
+    {'1': 'enable_interactive_selection', '3': 44, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
+    {'1': 'placeholder', '3': 49, '4': 1, '5': 9, '10': 'placeholder'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoTextFormFieldRow`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoTextFormFieldRowDescriptor = $convert.base64Decode(
+    'CilGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGV4dEZvcm1GaWVsZFJvdxIfCgZwcmVmaXgYAy'
+    'ABKAsyBy5XaWRnZXRSBnByZWZpeBIjCg1pbml0aWFsX3ZhbHVlGAYgASgJUgxpbml0aWFsVmFs'
+    'dWUSHAoJYXV0b2ZvY3VzGBEgASgIUglhdXRvZm9jdXMSGwoJcmVhZF9vbmx5GBIgASgIUghyZW'
+    'FkT25seRIfCgtzaG93X2N1cnNvchgUIAEoCFIKc2hvd0N1cnNvchIvChNvYnNjdXJpbmdfY2hh'
+    'cmFjdGVyGBUgASgJUhJvYnNjdXJpbmdDaGFyYWN0ZXISIQoMb2JzY3VyZV90ZXh0GBYgASgIUg'
+    'tvYnNjdXJlVGV4dBIgCgthdXRvY29ycmVjdBgXIAEoCFILYXV0b2NvcnJlY3QSLQoSZW5hYmxl'
+    'X3N1Z2dlc3Rpb25zGBogASgIUhFlbmFibGVTdWdnZXN0aW9ucxIbCgltYXhfbGluZXMYGyABKA'
+    'NSCG1heExpbmVzEhsKCW1pbl9saW5lcxgcIAEoA1IIbWluTGluZXMSGAoHZXhwYW5kcxgdIAEo'
+    'CFIHZXhwYW5kcxIdCgptYXhfbGVuZ3RoGB4gASgDUgltYXhMZW5ndGgSGAoHZW5hYmxlZBgmIA'
+    'EoCFIHZW5hYmxlZBIhCgxjdXJzb3Jfd2lkdGgYJyABKAFSC2N1cnNvcldpZHRoEiMKDWN1cnNv'
+    'cl9oZWlnaHQYKCABKAFSDGN1cnNvckhlaWdodBJAChxlbmFibGVfaW50ZXJhY3RpdmVfc2VsZW'
+    'N0aW9uGCwgASgIUhplbmFibGVJbnRlcmFjdGl2ZVNlbGVjdGlvbhIgCgtwbGFjZWhvbGRlchgx'
+    'IAEoCVILcGxhY2Vob2xkZXI=');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoTextSelectionToolbarDescriptor instead')
+const FlutterCupertinoCupertinoTextSelectionToolbar$json = {
+  '1': 'FlutterCupertinoCupertinoTextSelectionToolbar',
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoTextSelectionToolbar`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoTextSelectionToolbarDescriptor = $convert.base64Decode(
+    'Ci1GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGV4dFNlbGVjdGlvblRvb2xiYXI=');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoTextSelectionToolbarButtonDescriptor instead')
+const FlutterCupertinoCupertinoTextSelectionToolbarButton$json = {
+  '1': 'FlutterCupertinoCupertinoTextSelectionToolbarButton',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoTextSelectionToolbarButton`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoTextSelectionToolbarButtonDescriptor = $convert.base64Decode(
+    'CjNGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGV4dFNlbGVjdGlvblRvb2xiYXJCdXR0b24SHQ'
+    'oFY2hpbGQYBCABKAsyBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoCupertinoThemeDescriptor instead')
+const FlutterCupertinoCupertinoTheme$json = {
+  '1': 'FlutterCupertinoCupertinoTheme',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCupertinoTheme`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCupertinoThemeDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGhlbWUSHQoFY2hpbGQYBCABKAsyBy5XaWRnZX'
+    'RSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoActionListenerDescriptor instead')
+const FlutterCupertinoActionListener$json = {
+  '1': 'FlutterCupertinoActionListener',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoActionListener`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoActionListenerDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vQWN0aW9uTGlzdGVuZXISHQoFY2hpbGQYBSABKAsyBy5XaWRnZX'
+    'RSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoActionsDescriptor instead')
+const FlutterCupertinoActions$json = {
+  '1': 'FlutterCupertinoActions',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoActions`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoActionsDescriptor = $convert.base64Decode(
+    'ChdGbHV0dGVyQ3VwZXJ0aW5vQWN0aW9ucxIdCgVjaGlsZBgFIAEoCzIHLldpZGdldFIFY2hpbG'
+    'Q=');
+
+@$core.Deprecated('Use flutterCupertinoFocusableActionDetectorDescriptor instead')
+const FlutterCupertinoFocusableActionDetector$json = {
+  '1': 'FlutterCupertinoFocusableActionDetector',
+  '2': [
+    {'1': 'enabled', '3': 3, '4': 1, '5': 8, '10': 'enabled'},
+    {'1': 'autofocus', '3': 5, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'descendants_are_focusable', '3': 6, '4': 1, '5': 8, '10': 'descendantsAreFocusable'},
+    {'1': 'descendants_are_traversable', '3': 7, '4': 1, '5': 8, '10': 'descendantsAreTraversable'},
+    {'1': 'include_focus_semantics', '3': 14, '4': 1, '5': 8, '10': 'includeFocusSemantics'},
+    {'1': 'child', '3': 15, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoFocusableActionDetector`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoFocusableActionDetectorDescriptor = $convert.base64Decode(
+    'CidGbHV0dGVyQ3VwZXJ0aW5vRm9jdXNhYmxlQWN0aW9uRGV0ZWN0b3ISGAoHZW5hYmxlZBgDIA'
+    'EoCFIHZW5hYmxlZBIcCglhdXRvZm9jdXMYBSABKAhSCWF1dG9mb2N1cxI6ChlkZXNjZW5kYW50'
+    'c19hcmVfZm9jdXNhYmxlGAYgASgIUhdkZXNjZW5kYW50c0FyZUZvY3VzYWJsZRI+ChtkZXNjZW'
+    '5kYW50c19hcmVfdHJhdmVyc2FibGUYByABKAhSGWRlc2NlbmRhbnRzQXJlVHJhdmVyc2FibGUS'
+    'NgoXaW5jbHVkZV9mb2N1c19zZW1hbnRpY3MYDiABKAhSFWluY2x1ZGVGb2N1c1NlbWFudGljcx'
+    'IdCgVjaGlsZBgPIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedCrossFadeDescriptor instead')
+const FlutterCupertinoAnimatedCrossFade$json = {
+  '1': 'FlutterCupertinoAnimatedCrossFade',
+  '2': [
+    {'1': 'first_child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'firstChild'},
+    {'1': 'second_child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'secondChild'},
+    {'1': 'exclude_bottom_focus', '3': 13, '4': 1, '5': 8, '10': 'excludeBottomFocus'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedCrossFade`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedCrossFadeDescriptor = $convert.base64Decode(
+    'CiFGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRDcm9zc0ZhZGUSKAoLZmlyc3RfY2hpbGQYAyABKA'
+    'syBy5XaWRnZXRSCmZpcnN0Q2hpbGQSKgoMc2Vjb25kX2NoaWxkGAQgASgLMgcuV2lkZ2V0Ugtz'
+    'ZWNvbmRDaGlsZBIwChRleGNsdWRlX2JvdHRvbV9mb2N1cxgNIAEoCFISZXhjbHVkZUJvdHRvbU'
+    'ZvY3Vz');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedListDescriptor instead')
+const FlutterCupertinoAnimatedList$json = {
+  '1': 'FlutterCupertinoAnimatedList',
+  '2': [
+    {'1': 'initial_item_count', '3': 4, '4': 1, '5': 3, '10': 'initialItemCount'},
+    {'1': 'reverse', '3': 6, '4': 1, '5': 8, '10': 'reverse'},
+    {'1': 'primary', '3': 8, '4': 1, '5': 8, '10': 'primary'},
+    {'1': 'shrink_wrap', '3': 10, '4': 1, '5': 8, '10': 'shrinkWrap'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedList`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedListDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRMaXN0EiwKEmluaXRpYWxfaXRlbV9jb3VudBgEIA'
+    'EoA1IQaW5pdGlhbEl0ZW1Db3VudBIYCgdyZXZlcnNlGAYgASgIUgdyZXZlcnNlEhgKB3ByaW1h'
+    'cnkYCCABKAhSB3ByaW1hcnkSHwoLc2hyaW5rX3dyYXAYCiABKAhSCnNocmlua1dyYXA=');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedGridDescriptor instead')
+const FlutterCupertinoAnimatedGrid$json = {
+  '1': 'FlutterCupertinoAnimatedGrid',
+  '2': [
+    {'1': 'initial_item_count', '3': 5, '4': 1, '5': 3, '10': 'initialItemCount'},
+    {'1': 'reverse', '3': 7, '4': 1, '5': 8, '10': 'reverse'},
+    {'1': 'primary', '3': 9, '4': 1, '5': 8, '10': 'primary'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedGrid`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedGridDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRHcmlkEiwKEmluaXRpYWxfaXRlbV9jb3VudBgFIA'
+    'EoA1IQaW5pdGlhbEl0ZW1Db3VudBIYCgdyZXZlcnNlGAcgASgIUgdyZXZlcnNlEhgKB3ByaW1h'
+    'cnkYCSABKAhSB3ByaW1hcnk=');
+
+@$core.Deprecated('Use flutterCupertinoSliverAnimatedListDescriptor instead')
+const FlutterCupertinoSliverAnimatedList$json = {
+  '1': 'FlutterCupertinoSliverAnimatedList',
+  '2': [
+    {'1': 'initial_item_count', '3': 5, '4': 1, '5': 3, '10': 'initialItemCount'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverAnimatedList`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverAnimatedListDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyQW5pbWF0ZWRMaXN0EiwKEmluaXRpYWxfaXRlbV9jb3'
+    'VudBgFIAEoA1IQaW5pdGlhbEl0ZW1Db3VudA==');
+
+@$core.Deprecated('Use flutterCupertinoSliverAnimatedGridDescriptor instead')
+const FlutterCupertinoSliverAnimatedGrid$json = {
+  '1': 'FlutterCupertinoSliverAnimatedGrid',
+  '2': [
+    {'1': 'initial_item_count', '3': 6, '4': 1, '5': 3, '10': 'initialItemCount'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverAnimatedGrid`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverAnimatedGridDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyQW5pbWF0ZWRHcmlkEiwKEmluaXRpYWxfaXRlbV9jb3'
+    'VudBgGIAEoA1IQaW5pdGlhbEl0ZW1Db3VudA==');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedSizeDescriptor instead')
+const FlutterCupertinoAnimatedSize$json = {
+  '1': 'FlutterCupertinoAnimatedSize',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedSize`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedSizeDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRTaXplEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0Ug'
+    'VjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedSwitcherDescriptor instead')
+const FlutterCupertinoAnimatedSwitcher$json = {
+  '1': 'FlutterCupertinoAnimatedSwitcher',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedSwitcher`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedSwitcherDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRTd2l0Y2hlchIdCgVjaGlsZBgDIAEoCzIHLldpZG'
+    'dldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoAnnotatedRegionDescriptor instead')
+const FlutterCupertinoAnnotatedRegion$json = {
+  '1': 'FlutterCupertinoAnnotatedRegion',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'sized', '3': 5, '4': 1, '5': 8, '10': 'sized'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnnotatedRegion`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnnotatedRegionDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQW5ub3RhdGVkUmVnaW9uEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2'
+    'V0UgVjaGlsZBIUCgVzaXplZBgFIAEoCFIFc2l6ZWQ=');
+
+@$core.Deprecated('Use flutterCupertinoWidgetsAppDescriptor instead')
+const FlutterCupertinoWidgetsApp$json = {
+  '1': 'FlutterCupertinoWidgetsApp',
+  '2': [
+    {'1': 'initial_route', '3': 8, '4': 1, '5': 9, '10': 'initialRoute'},
+    {'1': 'home', '3': 10, '4': 1, '5': 11, '6': '.Widget', '10': 'home'},
+    {'1': 'title', '3': 13, '4': 1, '5': 9, '10': 'title'},
+    {'1': 'show_performance_overlay', '3': 22, '4': 1, '5': 8, '10': 'showPerformanceOverlay'},
+    {'1': 'checkerboard_raster_cache_images', '3': 23, '4': 1, '5': 8, '10': 'checkerboardRasterCacheImages'},
+    {'1': 'checkerboard_offscreen_layers', '3': 24, '4': 1, '5': 8, '10': 'checkerboardOffscreenLayers'},
+    {'1': 'show_semantics_debugger', '3': 25, '4': 1, '5': 8, '10': 'showSemanticsDebugger'},
+    {'1': 'debug_show_widget_inspector', '3': 26, '4': 1, '5': 8, '10': 'debugShowWidgetInspector'},
+    {'1': 'debug_show_checked_mode_banner', '3': 27, '4': 1, '5': 8, '10': 'debugShowCheckedModeBanner'},
+    {'1': 'restoration_scope_id', '3': 31, '4': 1, '5': 9, '10': 'restorationScopeId'},
+    {'1': 'use_inherited_media_query', '3': 32, '4': 1, '5': 8, '10': 'useInheritedMediaQuery'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoWidgetsApp`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoWidgetsAppDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyQ3VwZXJ0aW5vV2lkZ2V0c0FwcBIjCg1pbml0aWFsX3JvdXRlGAggASgJUgxpbm'
+    'l0aWFsUm91dGUSGwoEaG9tZRgKIAEoCzIHLldpZGdldFIEaG9tZRIUCgV0aXRsZRgNIAEoCVIF'
+    'dGl0bGUSOAoYc2hvd19wZXJmb3JtYW5jZV9vdmVybGF5GBYgASgIUhZzaG93UGVyZm9ybWFuY2'
+    'VPdmVybGF5EkcKIGNoZWNrZXJib2FyZF9yYXN0ZXJfY2FjaGVfaW1hZ2VzGBcgASgIUh1jaGVj'
+    'a2VyYm9hcmRSYXN0ZXJDYWNoZUltYWdlcxJCCh1jaGVja2VyYm9hcmRfb2Zmc2NyZWVuX2xheW'
+    'VycxgYIAEoCFIbY2hlY2tlcmJvYXJkT2Zmc2NyZWVuTGF5ZXJzEjYKF3Nob3dfc2VtYW50aWNz'
+    'X2RlYnVnZ2VyGBkgASgIUhVzaG93U2VtYW50aWNzRGVidWdnZXISPQobZGVidWdfc2hvd193aW'
+    'RnZXRfaW5zcGVjdG9yGBogASgIUhhkZWJ1Z1Nob3dXaWRnZXRJbnNwZWN0b3ISQgoeZGVidWdf'
+    'c2hvd19jaGVja2VkX21vZGVfYmFubmVyGBsgASgIUhpkZWJ1Z1Nob3dDaGVja2VkTW9kZUJhbm'
+    '5lchIwChRyZXN0b3JhdGlvbl9zY29wZV9pZBgfIAEoCVIScmVzdG9yYXRpb25TY29wZUlkEjkK'
+    'GXVzZV9pbmhlcml0ZWRfbWVkaWFfcXVlcnkYICABKAhSFnVzZUluaGVyaXRlZE1lZGlhUXVlcn'
+    'k=');
+
+@$core.Deprecated('Use flutterCupertinoStreamBuilderBaseDescriptor instead')
+const FlutterCupertinoStreamBuilderBase$json = {
+  '1': 'FlutterCupertinoStreamBuilderBase',
+};
+
+/// Descriptor for `FlutterCupertinoStreamBuilderBase`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoStreamBuilderBaseDescriptor = $convert.base64Decode(
+    'CiFGbHV0dGVyQ3VwZXJ0aW5vU3RyZWFtQnVpbGRlckJhc2U=');
+
+@$core.Deprecated('Use flutterCupertinoStreamBuilderDescriptor instead')
+const FlutterCupertinoStreamBuilder$json = {
+  '1': 'FlutterCupertinoStreamBuilder',
+};
+
+/// Descriptor for `FlutterCupertinoStreamBuilder`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoStreamBuilderDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vU3RyZWFtQnVpbGRlcg==');
+
+@$core.Deprecated('Use flutterCupertinoFutureBuilderDescriptor instead')
+const FlutterCupertinoFutureBuilder$json = {
+  '1': 'FlutterCupertinoFutureBuilder',
+};
+
+/// Descriptor for `FlutterCupertinoFutureBuilder`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoFutureBuilderDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vRnV0dXJlQnVpbGRlcg==');
+
+@$core.Deprecated('Use flutterCupertinoRawAutocompleteDescriptor instead')
+const FlutterCupertinoRawAutocomplete$json = {
+  '1': 'FlutterCupertinoRawAutocomplete',
+};
+
+/// Descriptor for `FlutterCupertinoRawAutocomplete`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoRawAutocompleteDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vUmF3QXV0b2NvbXBsZXRl');
+
+@$core.Deprecated('Use flutterCupertinoAutocompleteHighlightedOptionDescriptor instead')
+const FlutterCupertinoAutocompleteHighlightedOption$json = {
+  '1': 'FlutterCupertinoAutocompleteHighlightedOption',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAutocompleteHighlightedOption`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAutocompleteHighlightedOptionDescriptor = $convert.base64Decode(
+    'Ci1GbHV0dGVyQ3VwZXJ0aW5vQXV0b2NvbXBsZXRlSGlnaGxpZ2h0ZWRPcHRpb24SHQoFY2hpbG'
+    'QYBCABKAsyBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoAutofillGroupDescriptor instead')
+const FlutterCupertinoAutofillGroup$json = {
+  '1': 'FlutterCupertinoAutofillGroup',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAutofillGroup`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAutofillGroupDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vQXV0b2ZpbGxHcm91cBIdCgVjaGlsZBgDIAEoCzIHLldpZGdldF'
+    'IFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoAutomaticKeepAliveDescriptor instead')
+const FlutterCupertinoAutomaticKeepAlive$json = {
+  '1': 'FlutterCupertinoAutomaticKeepAlive',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAutomaticKeepAlive`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAutomaticKeepAliveDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vQXV0b21hdGljS2VlcEFsaXZlEh0KBWNoaWxkGAMgASgLMgcuV2'
+    'lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoBannerDescriptor instead')
+const FlutterCupertinoBanner$json = {
+  '1': 'FlutterCupertinoBanner',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'message', '3': 4, '4': 1, '5': 9, '10': 'message'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoBanner`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoBannerDescriptor = $convert.base64Decode(
+    'ChZGbHV0dGVyQ3VwZXJ0aW5vQmFubmVyEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0UgVjaGlsZB'
+    'IYCgdtZXNzYWdlGAQgASgJUgdtZXNzYWdl');
+
+@$core.Deprecated('Use flutterCupertinoCheckedModeBannerDescriptor instead')
+const FlutterCupertinoCheckedModeBanner$json = {
+  '1': 'FlutterCupertinoCheckedModeBanner',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCheckedModeBanner`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCheckedModeBannerDescriptor = $convert.base64Decode(
+    'CiFGbHV0dGVyQ3VwZXJ0aW5vQ2hlY2tlZE1vZGVCYW5uZXISHQoFY2hpbGQYAyABKAsyBy5XaW'
+    'RnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoDirectionalityDescriptor instead')
+const FlutterCupertinoDirectionality$json = {
+  '1': 'FlutterCupertinoDirectionality',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoDirectionality`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoDirectionalityDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vRGlyZWN0aW9uYWxpdHkSHQoFY2hpbGQYBCABKAsyBy5XaWRnZX'
+    'RSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoOpacityDescriptor instead')
+const FlutterCupertinoOpacity$json = {
+  '1': 'FlutterCupertinoOpacity',
+  '2': [
+    {'1': 'opacity', '3': 3, '4': 1, '5': 1, '10': 'opacity'},
+    {'1': 'always_include_semantics', '3': 4, '4': 1, '5': 8, '10': 'alwaysIncludeSemantics'},
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoOpacity`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoOpacityDescriptor = $convert.base64Decode(
+    'ChdGbHV0dGVyQ3VwZXJ0aW5vT3BhY2l0eRIYCgdvcGFjaXR5GAMgASgBUgdvcGFjaXR5EjgKGG'
+    'Fsd2F5c19pbmNsdWRlX3NlbWFudGljcxgEIAEoCFIWYWx3YXlzSW5jbHVkZVNlbWFudGljcxId'
+    'CgVjaGlsZBgFIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoShaderMaskDescriptor instead')
+const FlutterCupertinoShaderMask$json = {
+  '1': 'FlutterCupertinoShaderMask',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoShaderMask`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoShaderMaskDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyQ3VwZXJ0aW5vU2hhZGVyTWFzaxIdCgVjaGlsZBgFIAEoCzIHLldpZGdldFIFY2'
+    'hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoBackdropFilterDescriptor instead')
+const FlutterCupertinoBackdropFilter$json = {
+  '1': 'FlutterCupertinoBackdropFilter',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoBackdropFilter`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoBackdropFilterDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vQmFja2Ryb3BGaWx0ZXISHQoFY2hpbGQYBCABKAsyBy5XaWRnZX'
+    'RSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoCustomPaintDescriptor instead')
+const FlutterCupertinoCustomPaint$json = {
+  '1': 'FlutterCupertinoCustomPaint',
+  '2': [
+    {'1': 'is_complex', '3': 6, '4': 1, '5': 8, '10': 'isComplex'},
+    {'1': 'will_change', '3': 7, '4': 1, '5': 8, '10': 'willChange'},
+    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCustomPaint`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCustomPaintDescriptor = $convert.base64Decode(
+    'ChtGbHV0dGVyQ3VwZXJ0aW5vQ3VzdG9tUGFpbnQSHQoKaXNfY29tcGxleBgGIAEoCFIJaXNDb2'
+    '1wbGV4Eh8KC3dpbGxfY2hhbmdlGAcgASgIUgp3aWxsQ2hhbmdlEh0KBWNoaWxkGAggASgLMgcu'
+    'V2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoClipRectDescriptor instead')
+const FlutterCupertinoClipRect$json = {
+  '1': 'FlutterCupertinoClipRect',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoClipRect`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoClipRectDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vQ2xpcFJlY3QSHQoFY2hpbGQYBSABKAsyBy5XaWRnZXRSBWNoaW'
+    'xk');
+
+@$core.Deprecated('Use flutterCupertinoClipRRectDescriptor instead')
+const FlutterCupertinoClipRRect$json = {
+  '1': 'FlutterCupertinoClipRRect',
+  '2': [
+    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoClipRRect`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoClipRRectDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQ3VwZXJ0aW5vQ2xpcFJSZWN0Eh0KBWNoaWxkGAYgASgLMgcuV2lkZ2V0UgVjaG'
+    'lsZA==');
+
+@$core.Deprecated('Use flutterCupertinoClipOvalDescriptor instead')
+const FlutterCupertinoClipOval$json = {
+  '1': 'FlutterCupertinoClipOval',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoClipOval`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoClipOvalDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vQ2xpcE92YWwSHQoFY2hpbGQYBSABKAsyBy5XaWRnZXRSBWNoaW'
+    'xk');
+
+@$core.Deprecated('Use flutterCupertinoClipPathDescriptor instead')
+const FlutterCupertinoClipPath$json = {
+  '1': 'FlutterCupertinoClipPath',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoClipPath`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoClipPathDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vQ2xpcFBhdGgSHQoFY2hpbGQYBSABKAsyBy5XaWRnZXRSBWNoaW'
+    'xk');
+
+@$core.Deprecated('Use flutterCupertinoPhysicalModelDescriptor instead')
+const FlutterCupertinoPhysicalModel$json = {
+  '1': 'FlutterCupertinoPhysicalModel',
+  '2': [
+    {'1': 'elevation', '3': 6, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'child', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoPhysicalModel`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoPhysicalModelDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vUGh5c2ljYWxNb2RlbBIcCgllbGV2YXRpb24YBiABKAFSCWVsZX'
+    'ZhdGlvbhIdCgVjaGlsZBgJIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoPhysicalShapeDescriptor instead')
+const FlutterCupertinoPhysicalShape$json = {
+  '1': 'FlutterCupertinoPhysicalShape',
+  '2': [
+    {'1': 'elevation', '3': 5, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoPhysicalShape`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoPhysicalShapeDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vUGh5c2ljYWxTaGFwZRIcCgllbGV2YXRpb24YBSABKAFSCWVsZX'
+    'ZhdGlvbhIdCgVjaGlsZBgIIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoTransformDescriptor instead')
+const FlutterCupertinoTransform$json = {
+  '1': 'FlutterCupertinoTransform',
+  '2': [
+    {'1': 'transform_hit_tests', '3': 6, '4': 1, '5': 8, '10': 'transformHitTests'},
+    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoTransform`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoTransformDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQ3VwZXJ0aW5vVHJhbnNmb3JtEi4KE3RyYW5zZm9ybV9oaXRfdGVzdHMYBiABKA'
+    'hSEXRyYW5zZm9ybUhpdFRlc3RzEh0KBWNoaWxkGAggASgLMgcuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoCompositedTransformTargetDescriptor instead')
+const FlutterCupertinoCompositedTransformTarget$json = {
+  '1': 'FlutterCupertinoCompositedTransformTarget',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCompositedTransformTarget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCompositedTransformTargetDescriptor = $convert.base64Decode(
+    'CilGbHV0dGVyQ3VwZXJ0aW5vQ29tcG9zaXRlZFRyYW5zZm9ybVRhcmdldBIdCgVjaGlsZBgEIA'
+    'EoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoCompositedTransformFollowerDescriptor instead')
+const FlutterCupertinoCompositedTransformFollower$json = {
+  '1': 'FlutterCupertinoCompositedTransformFollower',
+  '2': [
+    {'1': 'show_when_unlinked', '3': 4, '4': 1, '5': 8, '10': 'showWhenUnlinked'},
+    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCompositedTransformFollower`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCompositedTransformFollowerDescriptor = $convert.base64Decode(
+    'CitGbHV0dGVyQ3VwZXJ0aW5vQ29tcG9zaXRlZFRyYW5zZm9ybUZvbGxvd2VyEiwKEnNob3dfd2'
+    'hlbl91bmxpbmtlZBgEIAEoCFIQc2hvd1doZW5VbmxpbmtlZBIdCgVjaGlsZBgIIAEoCzIHLldp'
+    'ZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoFittedBoxDescriptor instead')
+const FlutterCupertinoFittedBox$json = {
+  '1': 'FlutterCupertinoFittedBox',
+  '2': [
+    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoFittedBox`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoFittedBoxDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQ3VwZXJ0aW5vRml0dGVkQm94Eh0KBWNoaWxkGAYgASgLMgcuV2lkZ2V0UgVjaG'
+    'lsZA==');
+
+@$core.Deprecated('Use flutterCupertinoFractionalTranslationDescriptor instead')
+const FlutterCupertinoFractionalTranslation$json = {
+  '1': 'FlutterCupertinoFractionalTranslation',
+  '2': [
+    {'1': 'transform_hit_tests', '3': 4, '4': 1, '5': 8, '10': 'transformHitTests'},
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoFractionalTranslation`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoFractionalTranslationDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyQ3VwZXJ0aW5vRnJhY3Rpb25hbFRyYW5zbGF0aW9uEi4KE3RyYW5zZm9ybV9oaX'
+    'RfdGVzdHMYBCABKAhSEXRyYW5zZm9ybUhpdFRlc3RzEh0KBWNoaWxkGAUgASgLMgcuV2lkZ2V0'
+    'UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoRotatedBoxDescriptor instead')
+const FlutterCupertinoRotatedBox$json = {
+  '1': 'FlutterCupertinoRotatedBox',
+  '2': [
+    {'1': 'quarter_turns', '3': 3, '4': 1, '5': 3, '10': 'quarterTurns'},
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoRotatedBox`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoRotatedBoxDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyQ3VwZXJ0aW5vUm90YXRlZEJveBIjCg1xdWFydGVyX3R1cm5zGAMgASgDUgxxdW'
+    'FydGVyVHVybnMSHQoFY2hpbGQYBCABKAsyBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoPaddingDescriptor instead')
+const FlutterCupertinoPadding$json = {
+  '1': 'FlutterCupertinoPadding',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoPadding`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoPaddingDescriptor = $convert.base64Decode(
+    'ChdGbHV0dGVyQ3VwZXJ0aW5vUGFkZGluZxIdCgVjaGlsZBgEIAEoCzIHLldpZGdldFIFY2hpbG'
+    'Q=');
+
+@$core.Deprecated('Use flutterCupertinoAlignDescriptor instead')
+const FlutterCupertinoAlign$json = {
+  '1': 'FlutterCupertinoAlign',
+  '2': [
+    {'1': 'width_factor', '3': 4, '4': 1, '5': 1, '10': 'widthFactor'},
+    {'1': 'height_factor', '3': 5, '4': 1, '5': 1, '10': 'heightFactor'},
+    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAlign`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAlignDescriptor = $convert.base64Decode(
+    'ChVGbHV0dGVyQ3VwZXJ0aW5vQWxpZ24SIQoMd2lkdGhfZmFjdG9yGAQgASgBUgt3aWR0aEZhY3'
+    'RvchIjCg1oZWlnaHRfZmFjdG9yGAUgASgBUgxoZWlnaHRGYWN0b3ISHQoFY2hpbGQYBiABKAsy'
+    'By5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoCenterDescriptor instead')
+const FlutterCupertinoCenter$json = {
+  '1': 'FlutterCupertinoCenter',
+  '2': [
+    {'1': 'width_factor', '3': 3, '4': 1, '5': 1, '10': 'widthFactor'},
+    {'1': 'height_factor', '3': 4, '4': 1, '5': 1, '10': 'heightFactor'},
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCenter`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCenterDescriptor = $convert.base64Decode(
+    'ChZGbHV0dGVyQ3VwZXJ0aW5vQ2VudGVyEiEKDHdpZHRoX2ZhY3RvchgDIAEoAVILd2lkdGhGYW'
+    'N0b3ISIwoNaGVpZ2h0X2ZhY3RvchgEIAEoAVIMaGVpZ2h0RmFjdG9yEh0KBWNoaWxkGAUgASgL'
+    'MgcuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoCustomSingleChildLayoutDescriptor instead')
+const FlutterCupertinoCustomSingleChildLayout$json = {
+  '1': 'FlutterCupertinoCustomSingleChildLayout',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCustomSingleChildLayout`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCustomSingleChildLayoutDescriptor = $convert.base64Decode(
+    'CidGbHV0dGVyQ3VwZXJ0aW5vQ3VzdG9tU2luZ2xlQ2hpbGRMYXlvdXQSHQoFY2hpbGQYBCABKA'
+    'syBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoLayoutIdDescriptor instead')
+const FlutterCupertinoLayoutId$json = {
+  '1': 'FlutterCupertinoLayoutId',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoLayoutId`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoLayoutIdDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vTGF5b3V0SWQSHQoFY2hpbGQYBCABKAsyBy5XaWRnZXRSBWNoaW'
+    'xk');
+
+@$core.Deprecated('Use flutterCupertinoCustomMultiChildLayoutDescriptor instead')
+const FlutterCupertinoCustomMultiChildLayout$json = {
+  '1': 'FlutterCupertinoCustomMultiChildLayout',
+};
+
+/// Descriptor for `FlutterCupertinoCustomMultiChildLayout`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCustomMultiChildLayoutDescriptor = $convert.base64Decode(
+    'CiZGbHV0dGVyQ3VwZXJ0aW5vQ3VzdG9tTXVsdGlDaGlsZExheW91dA==');
+
+@$core.Deprecated('Use flutterCupertinoSizedBoxDescriptor instead')
+const FlutterCupertinoSizedBox$json = {
+  '1': 'FlutterCupertinoSizedBox',
+  '2': [
+    {'1': 'width', '3': 3, '4': 1, '5': 1, '10': 'width'},
+    {'1': 'height', '3': 4, '4': 1, '5': 1, '10': 'height'},
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSizedBox`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSizedBoxDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vU2l6ZWRCb3gSFAoFd2lkdGgYAyABKAFSBXdpZHRoEhYKBmhlaW'
+    'dodBgEIAEoAVIGaGVpZ2h0Eh0KBWNoaWxkGAUgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoConstrainedBoxDescriptor instead')
+const FlutterCupertinoConstrainedBox$json = {
+  '1': 'FlutterCupertinoConstrainedBox',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoConstrainedBox`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoConstrainedBoxDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vQ29uc3RyYWluZWRCb3gSHQoFY2hpbGQYBCABKAsyBy5XaWRnZX'
+    'RSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoConstraintsTransformBoxDescriptor instead')
+const FlutterCupertinoConstraintsTransformBox$json = {
+  '1': 'FlutterCupertinoConstraintsTransformBox',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'debug_transform_type', '3': 8, '4': 1, '5': 9, '10': 'debugTransformType'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoConstraintsTransformBox`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoConstraintsTransformBoxDescriptor = $convert.base64Decode(
+    'CidGbHV0dGVyQ3VwZXJ0aW5vQ29uc3RyYWludHNUcmFuc2Zvcm1Cb3gSHQoFY2hpbGQYAyABKA'
+    'syBy5XaWRnZXRSBWNoaWxkEjAKFGRlYnVnX3RyYW5zZm9ybV90eXBlGAggASgJUhJkZWJ1Z1Ry'
+    'YW5zZm9ybVR5cGU=');
+
+@$core.Deprecated('Use flutterCupertinoUnconstrainedBoxDescriptor instead')
+const FlutterCupertinoUnconstrainedBox$json = {
+  '1': 'FlutterCupertinoUnconstrainedBox',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoUnconstrainedBox`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoUnconstrainedBoxDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vVW5jb25zdHJhaW5lZEJveBIdCgVjaGlsZBgDIAEoCzIHLldpZG'
+    'dldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoFractionallySizedBoxDescriptor instead')
+const FlutterCupertinoFractionallySizedBox$json = {
+  '1': 'FlutterCupertinoFractionallySizedBox',
+  '2': [
+    {'1': 'width_factor', '3': 4, '4': 1, '5': 1, '10': 'widthFactor'},
+    {'1': 'height_factor', '3': 5, '4': 1, '5': 1, '10': 'heightFactor'},
+    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoFractionallySizedBox`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoFractionallySizedBoxDescriptor = $convert.base64Decode(
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vRnJhY3Rpb25hbGx5U2l6ZWRCb3gSIQoMd2lkdGhfZmFjdG9yGA'
+    'QgASgBUgt3aWR0aEZhY3RvchIjCg1oZWlnaHRfZmFjdG9yGAUgASgBUgxoZWlnaHRGYWN0b3IS'
+    'HQoFY2hpbGQYBiABKAsyBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoLimitedBoxDescriptor instead')
+const FlutterCupertinoLimitedBox$json = {
+  '1': 'FlutterCupertinoLimitedBox',
+  '2': [
+    {'1': 'max_width', '3': 3, '4': 1, '5': 1, '10': 'maxWidth'},
+    {'1': 'max_height', '3': 4, '4': 1, '5': 1, '10': 'maxHeight'},
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoLimitedBox`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoLimitedBoxDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyQ3VwZXJ0aW5vTGltaXRlZEJveBIbCgltYXhfd2lkdGgYAyABKAFSCG1heFdpZH'
+    'RoEh0KCm1heF9oZWlnaHQYBCABKAFSCW1heEhlaWdodBIdCgVjaGlsZBgFIAEoCzIHLldpZGdl'
+    'dFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoOverflowBoxDescriptor instead')
+const FlutterCupertinoOverflowBox$json = {
+  '1': 'FlutterCupertinoOverflowBox',
+  '2': [
+    {'1': 'min_width', '3': 4, '4': 1, '5': 1, '10': 'minWidth'},
+    {'1': 'max_width', '3': 5, '4': 1, '5': 1, '10': 'maxWidth'},
+    {'1': 'min_height', '3': 6, '4': 1, '5': 1, '10': 'minHeight'},
+    {'1': 'max_height', '3': 7, '4': 1, '5': 1, '10': 'maxHeight'},
+    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoOverflowBox`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoOverflowBoxDescriptor = $convert.base64Decode(
+    'ChtGbHV0dGVyQ3VwZXJ0aW5vT3ZlcmZsb3dCb3gSGwoJbWluX3dpZHRoGAQgASgBUghtaW5XaW'
+    'R0aBIbCgltYXhfd2lkdGgYBSABKAFSCG1heFdpZHRoEh0KCm1pbl9oZWlnaHQYBiABKAFSCW1p'
+    'bkhlaWdodBIdCgptYXhfaGVpZ2h0GAcgASgBUgltYXhIZWlnaHQSHQoFY2hpbGQYCCABKAsyBy'
+    '5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoSizedOverflowBoxDescriptor instead')
+const FlutterCupertinoSizedOverflowBox$json = {
+  '1': 'FlutterCupertinoSizedOverflowBox',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSizedOverflowBox`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSizedOverflowBoxDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vU2l6ZWRPdmVyZmxvd0JveBIdCgVjaGlsZBgFIAEoCzIHLldpZG'
+    'dldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoOffstageDescriptor instead')
+const FlutterCupertinoOffstage$json = {
+  '1': 'FlutterCupertinoOffstage',
+  '2': [
+    {'1': 'offstage', '3': 3, '4': 1, '5': 8, '10': 'offstage'},
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoOffstage`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoOffstageDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vT2Zmc3RhZ2USGgoIb2Zmc3RhZ2UYAyABKAhSCG9mZnN0YWdlEh'
+    '0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoAspectRatioDescriptor instead')
+const FlutterCupertinoAspectRatio$json = {
+  '1': 'FlutterCupertinoAspectRatio',
+  '2': [
+    {'1': 'aspect_ratio', '3': 3, '4': 1, '5': 1, '10': 'aspectRatio'},
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAspectRatio`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAspectRatioDescriptor = $convert.base64Decode(
+    'ChtGbHV0dGVyQ3VwZXJ0aW5vQXNwZWN0UmF0aW8SIQoMYXNwZWN0X3JhdGlvGAMgASgBUgthc3'
+    'BlY3RSYXRpbxIdCgVjaGlsZBgEIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoIntrinsicWidthDescriptor instead')
+const FlutterCupertinoIntrinsicWidth$json = {
+  '1': 'FlutterCupertinoIntrinsicWidth',
+  '2': [
+    {'1': 'step_width', '3': 3, '4': 1, '5': 1, '10': 'stepWidth'},
+    {'1': 'step_height', '3': 4, '4': 1, '5': 1, '10': 'stepHeight'},
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoIntrinsicWidth`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoIntrinsicWidthDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vSW50cmluc2ljV2lkdGgSHQoKc3RlcF93aWR0aBgDIAEoAVIJc3'
+    'RlcFdpZHRoEh8KC3N0ZXBfaGVpZ2h0GAQgASgBUgpzdGVwSGVpZ2h0Eh0KBWNoaWxkGAUgASgL'
+    'MgcuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoIntrinsicHeightDescriptor instead')
+const FlutterCupertinoIntrinsicHeight$json = {
+  '1': 'FlutterCupertinoIntrinsicHeight',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoIntrinsicHeight`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoIntrinsicHeightDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vSW50cmluc2ljSGVpZ2h0Eh0KBWNoaWxkGAMgASgLMgcuV2lkZ2'
+    'V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoBaselineDescriptor instead')
+const FlutterCupertinoBaseline$json = {
+  '1': 'FlutterCupertinoBaseline',
+  '2': [
+    {'1': 'baseline', '3': 3, '4': 1, '5': 1, '10': 'baseline'},
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoBaseline`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoBaselineDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vQmFzZWxpbmUSGgoIYmFzZWxpbmUYAyABKAFSCGJhc2VsaW5lEh'
+    '0KBWNoaWxkGAUgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoSliverToBoxAdapterDescriptor instead')
+const FlutterCupertinoSliverToBoxAdapter$json = {
+  '1': 'FlutterCupertinoSliverToBoxAdapter',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverToBoxAdapter`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverToBoxAdapterDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyVG9Cb3hBZGFwdGVyEh0KBWNoaWxkGAMgASgLMgcuV2'
+    'lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoSliverPaddingDescriptor instead')
+const FlutterCupertinoSliverPadding$json = {
+  '1': 'FlutterCupertinoSliverPadding',
+  '2': [
+    {'1': 'sliver', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverPadding`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverPaddingDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyUGFkZGluZxIfCgZzbGl2ZXIYBCABKAsyBy5XaWRnZX'
+    'RSBnNsaXZlcg==');
+
+@$core.Deprecated('Use flutterCupertinoListBodyDescriptor instead')
+const FlutterCupertinoListBody$json = {
+  '1': 'FlutterCupertinoListBody',
+  '2': [
+    {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoListBody`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoListBodyDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vTGlzdEJvZHkSGAoHcmV2ZXJzZRgEIAEoCFIHcmV2ZXJzZQ==');
+
+@$core.Deprecated('Use flutterCupertinoStackDescriptor instead')
+const FlutterCupertinoStack$json = {
+  '1': 'FlutterCupertinoStack',
+};
+
+/// Descriptor for `FlutterCupertinoStack`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoStackDescriptor = $convert.base64Decode(
+    'ChVGbHV0dGVyQ3VwZXJ0aW5vU3RhY2s=');
+
+@$core.Deprecated('Use flutterCupertinoIndexedStackDescriptor instead')
+const FlutterCupertinoIndexedStack$json = {
+  '1': 'FlutterCupertinoIndexedStack',
+  '2': [
+    {'1': 'index', '3': 7, '4': 1, '5': 3, '10': 'index'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoIndexedStack`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoIndexedStackDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyQ3VwZXJ0aW5vSW5kZXhlZFN0YWNrEhQKBWluZGV4GAcgASgDUgVpbmRleA==');
+
+@$core.Deprecated('Use flutterCupertinoPositionedDescriptor instead')
+const FlutterCupertinoPositioned$json = {
+  '1': 'FlutterCupertinoPositioned',
+  '2': [
+    {'1': 'left', '3': 3, '4': 1, '5': 1, '10': 'left'},
+    {'1': 'top', '3': 4, '4': 1, '5': 1, '10': 'top'},
+    {'1': 'right', '3': 5, '4': 1, '5': 1, '10': 'right'},
+    {'1': 'bottom', '3': 6, '4': 1, '5': 1, '10': 'bottom'},
+    {'1': 'width', '3': 7, '4': 1, '5': 1, '10': 'width'},
+    {'1': 'height', '3': 8, '4': 1, '5': 1, '10': 'height'},
+    {'1': 'child', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoPositioned`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoPositionedDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyQ3VwZXJ0aW5vUG9zaXRpb25lZBISCgRsZWZ0GAMgASgBUgRsZWZ0EhAKA3RvcB'
+    'gEIAEoAVIDdG9wEhQKBXJpZ2h0GAUgASgBUgVyaWdodBIWCgZib3R0b20YBiABKAFSBmJvdHRv'
+    'bRIUCgV3aWR0aBgHIAEoAVIFd2lkdGgSFgoGaGVpZ2h0GAggASgBUgZoZWlnaHQSHQoFY2hpbG'
+    'QYCSABKAsyBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoPositionedDirectionalDescriptor instead')
+const FlutterCupertinoPositionedDirectional$json = {
+  '1': 'FlutterCupertinoPositionedDirectional',
+  '2': [
+    {'1': 'start', '3': 3, '4': 1, '5': 1, '10': 'start'},
+    {'1': 'top', '3': 4, '4': 1, '5': 1, '10': 'top'},
+    {'1': 'end', '3': 5, '4': 1, '5': 1, '10': 'end'},
+    {'1': 'bottom', '3': 6, '4': 1, '5': 1, '10': 'bottom'},
+    {'1': 'width', '3': 7, '4': 1, '5': 1, '10': 'width'},
+    {'1': 'height', '3': 8, '4': 1, '5': 1, '10': 'height'},
+    {'1': 'child', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoPositionedDirectional`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoPositionedDirectionalDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyQ3VwZXJ0aW5vUG9zaXRpb25lZERpcmVjdGlvbmFsEhQKBXN0YXJ0GAMgASgBUg'
+    'VzdGFydBIQCgN0b3AYBCABKAFSA3RvcBIQCgNlbmQYBSABKAFSA2VuZBIWCgZib3R0b20YBiAB'
+    'KAFSBmJvdHRvbRIUCgV3aWR0aBgHIAEoAVIFd2lkdGgSFgoGaGVpZ2h0GAggASgBUgZoZWlnaH'
+    'QSHQoFY2hpbGQYCSABKAsyBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoFlexDescriptor instead')
+const FlutterCupertinoFlex$json = {
+  '1': 'FlutterCupertinoFlex',
+};
+
+/// Descriptor for `FlutterCupertinoFlex`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoFlexDescriptor = $convert.base64Decode(
+    'ChRGbHV0dGVyQ3VwZXJ0aW5vRmxleA==');
+
+@$core.Deprecated('Use flutterCupertinoRowDescriptor instead')
+const FlutterCupertinoRow$json = {
+  '1': 'FlutterCupertinoRow',
+};
+
+/// Descriptor for `FlutterCupertinoRow`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoRowDescriptor = $convert.base64Decode(
+    'ChNGbHV0dGVyQ3VwZXJ0aW5vUm93');
+
+@$core.Deprecated('Use flutterCupertinoColumnDescriptor instead')
+const FlutterCupertinoColumn$json = {
+  '1': 'FlutterCupertinoColumn',
+};
+
+/// Descriptor for `FlutterCupertinoColumn`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoColumnDescriptor = $convert.base64Decode(
+    'ChZGbHV0dGVyQ3VwZXJ0aW5vQ29sdW1u');
+
+@$core.Deprecated('Use flutterCupertinoFlexibleDescriptor instead')
+const FlutterCupertinoFlexible$json = {
+  '1': 'FlutterCupertinoFlexible',
+  '2': [
+    {'1': 'flex', '3': 3, '4': 1, '5': 3, '10': 'flex'},
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoFlexible`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoFlexibleDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vRmxleGlibGUSEgoEZmxleBgDIAEoA1IEZmxleBIdCgVjaGlsZB'
+    'gFIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoExpandedDescriptor instead')
+const FlutterCupertinoExpanded$json = {
+  '1': 'FlutterCupertinoExpanded',
+  '2': [
+    {'1': 'flex', '3': 3, '4': 1, '5': 3, '10': 'flex'},
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoExpanded`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoExpandedDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vRXhwYW5kZWQSEgoEZmxleBgDIAEoA1IEZmxleBIdCgVjaGlsZB'
+    'gEIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoWrapDescriptor instead')
+const FlutterCupertinoWrap$json = {
+  '1': 'FlutterCupertinoWrap',
+  '2': [
+    {'1': 'spacing', '3': 5, '4': 1, '5': 1, '10': 'spacing'},
+    {'1': 'run_spacing', '3': 7, '4': 1, '5': 1, '10': 'runSpacing'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoWrap`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoWrapDescriptor = $convert.base64Decode(
+    'ChRGbHV0dGVyQ3VwZXJ0aW5vV3JhcBIYCgdzcGFjaW5nGAUgASgBUgdzcGFjaW5nEh8KC3J1bl'
+    '9zcGFjaW5nGAcgASgBUgpydW5TcGFjaW5n');
+
+@$core.Deprecated('Use flutterCupertinoFlowDescriptor instead')
+const FlutterCupertinoFlow$json = {
+  '1': 'FlutterCupertinoFlow',
+};
+
+/// Descriptor for `FlutterCupertinoFlow`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoFlowDescriptor = $convert.base64Decode(
+    'ChRGbHV0dGVyQ3VwZXJ0aW5vRmxvdw==');
+
+@$core.Deprecated('Use flutterCupertinoRichTextDescriptor instead')
+const FlutterCupertinoRichText$json = {
+  '1': 'FlutterCupertinoRichText',
+  '2': [
+    {'1': 'soft_wrap', '3': 6, '4': 1, '5': 8, '10': 'softWrap'},
+    {'1': 'text_scale_factor', '3': 8, '4': 1, '5': 1, '10': 'textScaleFactor'},
+    {'1': 'max_lines', '3': 9, '4': 1, '5': 3, '10': 'maxLines'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoRichText`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoRichTextDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vUmljaFRleHQSGwoJc29mdF93cmFwGAYgASgIUghzb2Z0V3JhcB'
+    'IqChF0ZXh0X3NjYWxlX2ZhY3RvchgIIAEoAVIPdGV4dFNjYWxlRmFjdG9yEhsKCW1heF9saW5l'
+    'cxgJIAEoA1IIbWF4TGluZXM=');
+
+@$core.Deprecated('Use flutterCupertinoRawImageDescriptor instead')
+const FlutterCupertinoRawImage$json = {
+  '1': 'FlutterCupertinoRawImage',
+  '2': [
+    {'1': 'debug_image_label', '3': 4, '4': 1, '5': 9, '10': 'debugImageLabel'},
+    {'1': 'width', '3': 5, '4': 1, '5': 1, '10': 'width'},
+    {'1': 'height', '3': 6, '4': 1, '5': 1, '10': 'height'},
+    {'1': 'scale', '3': 7, '4': 1, '5': 1, '10': 'scale'},
+    {'1': 'match_text_direction', '3': 15, '4': 1, '5': 8, '10': 'matchTextDirection'},
+    {'1': 'invert_colors', '3': 16, '4': 1, '5': 8, '10': 'invertColors'},
+    {'1': 'is_anti_alias', '3': 18, '4': 1, '5': 8, '10': 'isAntiAlias'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoRawImage`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoRawImageDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vUmF3SW1hZ2USKgoRZGVidWdfaW1hZ2VfbGFiZWwYBCABKAlSD2'
+    'RlYnVnSW1hZ2VMYWJlbBIUCgV3aWR0aBgFIAEoAVIFd2lkdGgSFgoGaGVpZ2h0GAYgASgBUgZo'
+    'ZWlnaHQSFAoFc2NhbGUYByABKAFSBXNjYWxlEjAKFG1hdGNoX3RleHRfZGlyZWN0aW9uGA8gAS'
+    'gIUhJtYXRjaFRleHREaXJlY3Rpb24SIwoNaW52ZXJ0X2NvbG9ycxgQIAEoCFIMaW52ZXJ0Q29s'
+    'b3JzEiIKDWlzX2FudGlfYWxpYXMYEiABKAhSC2lzQW50aUFsaWFz');
+
+@$core.Deprecated('Use flutterCupertinoDefaultAssetBundleDescriptor instead')
+const FlutterCupertinoDefaultAssetBundle$json = {
+  '1': 'FlutterCupertinoDefaultAssetBundle',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoDefaultAssetBundle`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoDefaultAssetBundleDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vRGVmYXVsdEFzc2V0QnVuZGxlEh0KBWNoaWxkGAQgASgLMgcuV2'
+    'lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoWidgetToRenderBoxAdapterDescriptor instead')
+const FlutterCupertinoWidgetToRenderBoxAdapter$json = {
+  '1': 'FlutterCupertinoWidgetToRenderBoxAdapter',
+};
+
+/// Descriptor for `FlutterCupertinoWidgetToRenderBoxAdapter`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoWidgetToRenderBoxAdapterDescriptor = $convert.base64Decode(
+    'CihGbHV0dGVyQ3VwZXJ0aW5vV2lkZ2V0VG9SZW5kZXJCb3hBZGFwdGVy');
+
+@$core.Deprecated('Use flutterCupertinoListenerDescriptor instead')
+const FlutterCupertinoListener$json = {
+  '1': 'FlutterCupertinoListener',
+  '2': [
+    {'1': 'child', '3': 13, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoListener`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoListenerDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vTGlzdGVuZXISHQoFY2hpbGQYDSABKAsyBy5XaWRnZXRSBWNoaW'
+    'xk');
+
+@$core.Deprecated('Use flutterCupertinoMouseRegionDescriptor instead')
+const FlutterCupertinoMouseRegion$json = {
+  '1': 'FlutterCupertinoMouseRegion',
+  '2': [
+    {'1': 'opaque', '3': 7, '4': 1, '5': 8, '10': 'opaque'},
+    {'1': 'child', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoMouseRegion`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoMouseRegionDescriptor = $convert.base64Decode(
+    'ChtGbHV0dGVyQ3VwZXJ0aW5vTW91c2VSZWdpb24SFgoGb3BhcXVlGAcgASgIUgZvcGFxdWUSHQ'
+    'oFY2hpbGQYCSABKAsyBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoRepaintBoundaryDescriptor instead')
+const FlutterCupertinoRepaintBoundary$json = {
+  '1': 'FlutterCupertinoRepaintBoundary',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoRepaintBoundary`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoRepaintBoundaryDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vUmVwYWludEJvdW5kYXJ5Eh0KBWNoaWxkGAMgASgLMgcuV2lkZ2'
+    'V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoIgnorePointerDescriptor instead')
+const FlutterCupertinoIgnorePointer$json = {
+  '1': 'FlutterCupertinoIgnorePointer',
+  '2': [
+    {'1': 'ignoring', '3': 3, '4': 1, '5': 8, '10': 'ignoring'},
+    {'1': 'ignoring_semantics', '3': 4, '4': 1, '5': 8, '10': 'ignoringSemantics'},
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoIgnorePointer`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoIgnorePointerDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vSWdub3JlUG9pbnRlchIaCghpZ25vcmluZxgDIAEoCFIIaWdub3'
+    'JpbmcSLQoSaWdub3Jpbmdfc2VtYW50aWNzGAQgASgIUhFpZ25vcmluZ1NlbWFudGljcxIdCgVj'
+    'aGlsZBgFIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoAbsorbPointerDescriptor instead')
+const FlutterCupertinoAbsorbPointer$json = {
+  '1': 'FlutterCupertinoAbsorbPointer',
+  '2': [
+    {'1': 'absorbing', '3': 3, '4': 1, '5': 8, '10': 'absorbing'},
+    {'1': 'ignoring_semantics', '3': 4, '4': 1, '5': 8, '10': 'ignoringSemantics'},
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAbsorbPointer`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAbsorbPointerDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vQWJzb3JiUG9pbnRlchIcCglhYnNvcmJpbmcYAyABKAhSCWFic2'
+    '9yYmluZxItChJpZ25vcmluZ19zZW1hbnRpY3MYBCABKAhSEWlnbm9yaW5nU2VtYW50aWNzEh0K'
+    'BWNoaWxkGAUgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoMetaDataDescriptor instead')
+const FlutterCupertinoMetaData$json = {
+  '1': 'FlutterCupertinoMetaData',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoMetaData`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoMetaDataDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vTWV0YURhdGESHQoFY2hpbGQYBSABKAsyBy5XaWRnZXRSBWNoaW'
+    'xk');
+
+@$core.Deprecated('Use flutterCupertinoSemanticsDescriptor instead')
+const FlutterCupertinoSemantics$json = {
+  '1': 'FlutterCupertinoSemantics',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'container', '3': 4, '4': 1, '5': 8, '10': 'container'},
+    {'1': 'explicit_child_nodes', '3': 5, '4': 1, '5': 8, '10': 'explicitChildNodes'},
+    {'1': 'exclude_semantics', '3': 6, '4': 1, '5': 8, '10': 'excludeSemantics'},
+    {'1': 'block_user_actions', '3': 7, '4': 1, '5': 8, '10': 'blockUserActions'},
+    {'1': 'enabled', '3': 8, '4': 1, '5': 8, '10': 'enabled'},
+    {'1': 'checked', '3': 9, '4': 1, '5': 8, '10': 'checked'},
+    {'1': 'mixed', '3': 10, '4': 1, '5': 8, '10': 'mixed'},
+    {'1': 'selected', '3': 11, '4': 1, '5': 8, '10': 'selected'},
+    {'1': 'toggled', '3': 12, '4': 1, '5': 8, '10': 'toggled'},
+    {'1': 'button', '3': 13, '4': 1, '5': 8, '10': 'button'},
+    {'1': 'slider', '3': 14, '4': 1, '5': 8, '10': 'slider'},
+    {'1': 'keyboard_key', '3': 15, '4': 1, '5': 8, '10': 'keyboardKey'},
+    {'1': 'link', '3': 16, '4': 1, '5': 8, '10': 'link'},
+    {'1': 'header', '3': 17, '4': 1, '5': 8, '10': 'header'},
+    {'1': 'text_field', '3': 18, '4': 1, '5': 8, '10': 'textField'},
+    {'1': 'read_only', '3': 19, '4': 1, '5': 8, '10': 'readOnly'},
+    {'1': 'focusable', '3': 20, '4': 1, '5': 8, '10': 'focusable'},
+    {'1': 'focused', '3': 21, '4': 1, '5': 8, '10': 'focused'},
+    {'1': 'in_mutually_exclusive_group', '3': 22, '4': 1, '5': 8, '10': 'inMutuallyExclusiveGroup'},
+    {'1': 'obscured', '3': 23, '4': 1, '5': 8, '10': 'obscured'},
+    {'1': 'multiline', '3': 24, '4': 1, '5': 8, '10': 'multiline'},
+    {'1': 'scopes_route', '3': 25, '4': 1, '5': 8, '10': 'scopesRoute'},
+    {'1': 'names_route', '3': 26, '4': 1, '5': 8, '10': 'namesRoute'},
+    {'1': 'hidden', '3': 27, '4': 1, '5': 8, '10': 'hidden'},
+    {'1': 'image', '3': 28, '4': 1, '5': 8, '10': 'image'},
+    {'1': 'live_region', '3': 29, '4': 1, '5': 8, '10': 'liveRegion'},
+    {'1': 'max_value_length', '3': 30, '4': 1, '5': 3, '10': 'maxValueLength'},
+    {'1': 'current_value_length', '3': 31, '4': 1, '5': 3, '10': 'currentValueLength'},
+    {'1': 'label', '3': 32, '4': 1, '5': 9, '10': 'label'},
+    {'1': 'value', '3': 34, '4': 1, '5': 9, '10': 'value'},
+    {'1': 'increased_value', '3': 36, '4': 1, '5': 9, '10': 'increasedValue'},
+    {'1': 'decreased_value', '3': 38, '4': 1, '5': 9, '10': 'decreasedValue'},
+    {'1': 'hint', '3': 40, '4': 1, '5': 9, '10': 'hint'},
+    {'1': 'tooltip', '3': 42, '4': 1, '5': 9, '10': 'tooltip'},
+    {'1': 'on_tap_hint', '3': 43, '4': 1, '5': 9, '10': 'onTapHint'},
+    {'1': 'on_long_press_hint', '3': 44, '4': 1, '5': 9, '10': 'onLongPressHint'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSemantics`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSemanticsDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQ3VwZXJ0aW5vU2VtYW50aWNzEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0UgVjaG'
+    'lsZBIcCgljb250YWluZXIYBCABKAhSCWNvbnRhaW5lchIwChRleHBsaWNpdF9jaGlsZF9ub2Rl'
+    'cxgFIAEoCFISZXhwbGljaXRDaGlsZE5vZGVzEisKEWV4Y2x1ZGVfc2VtYW50aWNzGAYgASgIUh'
+    'BleGNsdWRlU2VtYW50aWNzEiwKEmJsb2NrX3VzZXJfYWN0aW9ucxgHIAEoCFIQYmxvY2tVc2Vy'
+    'QWN0aW9ucxIYCgdlbmFibGVkGAggASgIUgdlbmFibGVkEhgKB2NoZWNrZWQYCSABKAhSB2NoZW'
+    'NrZWQSFAoFbWl4ZWQYCiABKAhSBW1peGVkEhoKCHNlbGVjdGVkGAsgASgIUghzZWxlY3RlZBIY'
+    'Cgd0b2dnbGVkGAwgASgIUgd0b2dnbGVkEhYKBmJ1dHRvbhgNIAEoCFIGYnV0dG9uEhYKBnNsaW'
+    'RlchgOIAEoCFIGc2xpZGVyEiEKDGtleWJvYXJkX2tleRgPIAEoCFILa2V5Ym9hcmRLZXkSEgoE'
+    'bGluaxgQIAEoCFIEbGluaxIWCgZoZWFkZXIYESABKAhSBmhlYWRlchIdCgp0ZXh0X2ZpZWxkGB'
+    'IgASgIUgl0ZXh0RmllbGQSGwoJcmVhZF9vbmx5GBMgASgIUghyZWFkT25seRIcCglmb2N1c2Fi'
+    'bGUYFCABKAhSCWZvY3VzYWJsZRIYCgdmb2N1c2VkGBUgASgIUgdmb2N1c2VkEj0KG2luX211dH'
+    'VhbGx5X2V4Y2x1c2l2ZV9ncm91cBgWIAEoCFIYaW5NdXR1YWxseUV4Y2x1c2l2ZUdyb3VwEhoK'
+    'CG9ic2N1cmVkGBcgASgIUghvYnNjdXJlZBIcCgltdWx0aWxpbmUYGCABKAhSCW11bHRpbGluZR'
+    'IhCgxzY29wZXNfcm91dGUYGSABKAhSC3Njb3Blc1JvdXRlEh8KC25hbWVzX3JvdXRlGBogASgI'
+    'UgpuYW1lc1JvdXRlEhYKBmhpZGRlbhgbIAEoCFIGaGlkZGVuEhQKBWltYWdlGBwgASgIUgVpbW'
+    'FnZRIfCgtsaXZlX3JlZ2lvbhgdIAEoCFIKbGl2ZVJlZ2lvbhIoChBtYXhfdmFsdWVfbGVuZ3Ro'
+    'GB4gASgDUg5tYXhWYWx1ZUxlbmd0aBIwChRjdXJyZW50X3ZhbHVlX2xlbmd0aBgfIAEoA1ISY3'
+    'VycmVudFZhbHVlTGVuZ3RoEhQKBWxhYmVsGCAgASgJUgVsYWJlbBIUCgV2YWx1ZRgiIAEoCVIF'
+    'dmFsdWUSJwoPaW5jcmVhc2VkX3ZhbHVlGCQgASgJUg5pbmNyZWFzZWRWYWx1ZRInCg9kZWNyZW'
+    'FzZWRfdmFsdWUYJiABKAlSDmRlY3JlYXNlZFZhbHVlEhIKBGhpbnQYKCABKAlSBGhpbnQSGAoH'
+    'dG9vbHRpcBgqIAEoCVIHdG9vbHRpcBIeCgtvbl90YXBfaGludBgrIAEoCVIJb25UYXBIaW50Ei'
+    'sKEm9uX2xvbmdfcHJlc3NfaGludBgsIAEoCVIPb25Mb25nUHJlc3NIaW50');
+
+@$core.Deprecated('Use flutterCupertinoMergeSemanticsDescriptor instead')
+const FlutterCupertinoMergeSemantics$json = {
+  '1': 'FlutterCupertinoMergeSemantics',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoMergeSemantics`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoMergeSemanticsDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vTWVyZ2VTZW1hbnRpY3MSHQoFY2hpbGQYAyABKAsyBy5XaWRnZX'
+    'RSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoBlockSemanticsDescriptor instead')
+const FlutterCupertinoBlockSemantics$json = {
+  '1': 'FlutterCupertinoBlockSemantics',
+  '2': [
+    {'1': 'blocking', '3': 3, '4': 1, '5': 8, '10': 'blocking'},
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoBlockSemantics`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoBlockSemanticsDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vQmxvY2tTZW1hbnRpY3MSGgoIYmxvY2tpbmcYAyABKAhSCGJsb2'
+    'NraW5nEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoExcludeSemanticsDescriptor instead')
+const FlutterCupertinoExcludeSemantics$json = {
+  '1': 'FlutterCupertinoExcludeSemantics',
+  '2': [
+    {'1': 'excluding', '3': 3, '4': 1, '5': 8, '10': 'excluding'},
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoExcludeSemantics`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoExcludeSemanticsDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vRXhjbHVkZVNlbWFudGljcxIcCglleGNsdWRpbmcYAyABKAhSCW'
+    'V4Y2x1ZGluZxIdCgVjaGlsZBgEIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoIndexedSemanticsDescriptor instead')
+const FlutterCupertinoIndexedSemantics$json = {
+  '1': 'FlutterCupertinoIndexedSemantics',
+  '2': [
+    {'1': 'index', '3': 3, '4': 1, '5': 3, '10': 'index'},
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoIndexedSemantics`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoIndexedSemanticsDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vSW5kZXhlZFNlbWFudGljcxIUCgVpbmRleBgDIAEoA1IFaW5kZX'
+    'gSHQoFY2hpbGQYBCABKAsyBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoKeyedSubtreeDescriptor instead')
+const FlutterCupertinoKeyedSubtree$json = {
+  '1': 'FlutterCupertinoKeyedSubtree',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoKeyedSubtree`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoKeyedSubtreeDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyQ3VwZXJ0aW5vS2V5ZWRTdWJ0cmVlEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0Ug'
+    'VjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoBuilderDescriptor instead')
+const FlutterCupertinoBuilder$json = {
+  '1': 'FlutterCupertinoBuilder',
+};
+
+/// Descriptor for `FlutterCupertinoBuilder`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoBuilderDescriptor = $convert.base64Decode(
+    'ChdGbHV0dGVyQ3VwZXJ0aW5vQnVpbGRlcg==');
+
+@$core.Deprecated('Use flutterCupertinoStatefulBuilderDescriptor instead')
+const FlutterCupertinoStatefulBuilder$json = {
+  '1': 'FlutterCupertinoStatefulBuilder',
+};
+
+/// Descriptor for `FlutterCupertinoStatefulBuilder`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoStatefulBuilderDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vU3RhdGVmdWxCdWlsZGVy');
+
+@$core.Deprecated('Use flutterCupertinoColoredBoxDescriptor instead')
+const FlutterCupertinoColoredBox$json = {
+  '1': 'FlutterCupertinoColoredBox',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoColoredBox`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoColoredBoxDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyQ3VwZXJ0aW5vQ29sb3JlZEJveBIdCgVjaGlsZBgDIAEoCzIHLldpZGdldFIFY2'
+    'hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoRenderObjectToWidgetAdapterDescriptor instead')
+const FlutterCupertinoRenderObjectToWidgetAdapter$json = {
+  '1': 'FlutterCupertinoRenderObjectToWidgetAdapter',
+  '2': [
+    {'1': 'child', '3': 2, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'debug_short_description', '3': 4, '4': 1, '5': 9, '10': 'debugShortDescription'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoRenderObjectToWidgetAdapter`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoRenderObjectToWidgetAdapterDescriptor = $convert.base64Decode(
+    'CitGbHV0dGVyQ3VwZXJ0aW5vUmVuZGVyT2JqZWN0VG9XaWRnZXRBZGFwdGVyEh0KBWNoaWxkGA'
+    'IgASgLMgcuV2lkZ2V0UgVjaGlsZBI2ChdkZWJ1Z19zaG9ydF9kZXNjcmlwdGlvbhgEIAEoCVIV'
+    'ZGVidWdTaG9ydERlc2NyaXB0aW9u');
+
+@$core.Deprecated('Use flutterCupertinoColorFilteredDescriptor instead')
+const FlutterCupertinoColorFiltered$json = {
+  '1': 'FlutterCupertinoColorFiltered',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoColorFiltered`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoColorFilteredDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vQ29sb3JGaWx0ZXJlZBIdCgVjaGlsZBgDIAEoCzIHLldpZGdldF'
+    'IFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoDecoratedBoxDescriptor instead')
+const FlutterCupertinoDecoratedBox$json = {
+  '1': 'FlutterCupertinoDecoratedBox',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoDecoratedBox`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoDecoratedBoxDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyQ3VwZXJ0aW5vRGVjb3JhdGVkQm94Eh0KBWNoaWxkGAUgASgLMgcuV2lkZ2V0Ug'
+    'VjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoContainerDescriptor instead')
+const FlutterCupertinoContainer$json = {
+  '1': 'FlutterCupertinoContainer',
+  '2': [
+    {'1': 'width', '3': 8, '4': 1, '5': 1, '10': 'width'},
+    {'1': 'height', '3': 9, '4': 1, '5': 1, '10': 'height'},
+    {'1': 'child', '3': 14, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoContainer`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoContainerDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQ3VwZXJ0aW5vQ29udGFpbmVyEhQKBXdpZHRoGAggASgBUgV3aWR0aBIWCgZoZW'
+    'lnaHQYCSABKAFSBmhlaWdodBIdCgVjaGlsZBgOIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoDecoratedSliverDescriptor instead')
+const FlutterCupertinoDecoratedSliver$json = {
+  '1': 'FlutterCupertinoDecoratedSliver',
+  '2': [
+    {'1': 'sliver', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoDecoratedSliver`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoDecoratedSliverDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vRGVjb3JhdGVkU2xpdmVyEh8KBnNsaXZlchgFIAEoCzIHLldpZG'
+    'dldFIGc2xpdmVy');
+
+@$core.Deprecated('Use flutterCupertinoDefaultSelectionStyleDescriptor instead')
+const FlutterCupertinoDefaultSelectionStyle$json = {
+  '1': 'FlutterCupertinoDefaultSelectionStyle',
+  '2': [
+    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoDefaultSelectionStyle`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoDefaultSelectionStyleDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyQ3VwZXJ0aW5vRGVmYXVsdFNlbGVjdGlvblN0eWxlEh0KBWNoaWxkGAYgASgLMg'
+    'cuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoDefaultTextEditingShortcutsDescriptor instead')
+const FlutterCupertinoDefaultTextEditingShortcuts$json = {
+  '1': 'FlutterCupertinoDefaultTextEditingShortcuts',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoDefaultTextEditingShortcuts`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoDefaultTextEditingShortcutsDescriptor = $convert.base64Decode(
+    'CitGbHV0dGVyQ3VwZXJ0aW5vRGVmYXVsdFRleHRFZGl0aW5nU2hvcnRjdXRzEh0KBWNoaWxkGA'
+    'MgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoDismissibleDescriptor instead')
+const FlutterCupertinoDismissible$json = {
+  '1': 'FlutterCupertinoDismissible',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'background', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'background'},
+    {'1': 'secondary_background', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'secondaryBackground'},
+    {'1': 'cross_axis_end_offset', '3': 14, '4': 1, '5': 1, '10': 'crossAxisEndOffset'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoDismissible`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoDismissibleDescriptor = $convert.base64Decode(
+    'ChtGbHV0dGVyQ3VwZXJ0aW5vRGlzbWlzc2libGUSHQoFY2hpbGQYAyABKAsyBy5XaWRnZXRSBW'
+    'NoaWxkEicKCmJhY2tncm91bmQYBCABKAsyBy5XaWRnZXRSCmJhY2tncm91bmQSOgoUc2Vjb25k'
+    'YXJ5X2JhY2tncm91bmQYBSABKAsyBy5XaWRnZXRSE3NlY29uZGFyeUJhY2tncm91bmQSMQoVY3'
+    'Jvc3NfYXhpc19lbmRfb2Zmc2V0GA4gASgBUhJjcm9zc0F4aXNFbmRPZmZzZXQ=');
+
+@$core.Deprecated('Use flutterCupertinoDisplayFeatureSubScreenDescriptor instead')
+const FlutterCupertinoDisplayFeatureSubScreen$json = {
+  '1': 'FlutterCupertinoDisplayFeatureSubScreen',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoDisplayFeatureSubScreen`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoDisplayFeatureSubScreenDescriptor = $convert.base64Decode(
+    'CidGbHV0dGVyQ3VwZXJ0aW5vRGlzcGxheUZlYXR1cmVTdWJTY3JlZW4SHQoFY2hpbGQYBCABKA'
+    'syBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoDraggableDescriptor instead')
+const FlutterCupertinoDraggable$json = {
+  '1': 'FlutterCupertinoDraggable',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'feedback', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'feedback'},
+    {'1': 'child_when_dragging', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'childWhenDragging'},
+    {'1': 'max_simultaneous_drags', '3': 11, '4': 1, '5': 3, '10': 'maxSimultaneousDrags'},
+    {'1': 'ignoring_feedback_semantics', '3': 17, '4': 1, '5': 8, '10': 'ignoringFeedbackSemantics'},
+    {'1': 'ignoring_feedback_pointer', '3': 18, '4': 1, '5': 8, '10': 'ignoringFeedbackPointer'},
+    {'1': 'root_overlay', '3': 19, '4': 1, '5': 8, '10': 'rootOverlay'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoDraggable`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoDraggableDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQ3VwZXJ0aW5vRHJhZ2dhYmxlEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0UgVjaG'
+    'lsZBIjCghmZWVkYmFjaxgEIAEoCzIHLldpZGdldFIIZmVlZGJhY2sSNwoTY2hpbGRfd2hlbl9k'
+    'cmFnZ2luZxgHIAEoCzIHLldpZGdldFIRY2hpbGRXaGVuRHJhZ2dpbmcSNAoWbWF4X3NpbXVsdG'
+    'FuZW91c19kcmFncxgLIAEoA1IUbWF4U2ltdWx0YW5lb3VzRHJhZ3MSPgobaWdub3JpbmdfZmVl'
+    'ZGJhY2tfc2VtYW50aWNzGBEgASgIUhlpZ25vcmluZ0ZlZWRiYWNrU2VtYW50aWNzEjoKGWlnbm'
+    '9yaW5nX2ZlZWRiYWNrX3BvaW50ZXIYEiABKAhSF2lnbm9yaW5nRmVlZGJhY2tQb2ludGVyEiEK'
+    'DHJvb3Rfb3ZlcmxheRgTIAEoCFILcm9vdE92ZXJsYXk=');
+
+@$core.Deprecated('Use flutterCupertinoLongPressDraggableDescriptor instead')
+const FlutterCupertinoLongPressDraggable$json = {
+  '1': 'FlutterCupertinoLongPressDraggable',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'feedback', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'feedback'},
+    {'1': 'child_when_dragging', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'childWhenDragging'},
+    {'1': 'max_simultaneous_drags', '3': 10, '4': 1, '5': 3, '10': 'maxSimultaneousDrags'},
+    {'1': 'haptic_feedback_on_start', '3': 16, '4': 1, '5': 8, '10': 'hapticFeedbackOnStart'},
+    {'1': 'ignoring_feedback_semantics', '3': 17, '4': 1, '5': 8, '10': 'ignoringFeedbackSemantics'},
+    {'1': 'ignoring_feedback_pointer', '3': 18, '4': 1, '5': 8, '10': 'ignoringFeedbackPointer'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoLongPressDraggable`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoLongPressDraggableDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vTG9uZ1ByZXNzRHJhZ2dhYmxlEh0KBWNoaWxkGAMgASgLMgcuV2'
+    'lkZ2V0UgVjaGlsZBIjCghmZWVkYmFjaxgEIAEoCzIHLldpZGdldFIIZmVlZGJhY2sSNwoTY2hp'
+    'bGRfd2hlbl9kcmFnZ2luZxgHIAEoCzIHLldpZGdldFIRY2hpbGRXaGVuRHJhZ2dpbmcSNAoWbW'
+    'F4X3NpbXVsdGFuZW91c19kcmFncxgKIAEoA1IUbWF4U2ltdWx0YW5lb3VzRHJhZ3MSNwoYaGFw'
+    'dGljX2ZlZWRiYWNrX29uX3N0YXJ0GBAgASgIUhVoYXB0aWNGZWVkYmFja09uU3RhcnQSPgobaW'
+    'dub3JpbmdfZmVlZGJhY2tfc2VtYW50aWNzGBEgASgIUhlpZ25vcmluZ0ZlZWRiYWNrU2VtYW50'
+    'aWNzEjoKGWlnbm9yaW5nX2ZlZWRiYWNrX3BvaW50ZXIYEiABKAhSF2lnbm9yaW5nRmVlZGJhY2'
+    'tQb2ludGVy');
+
+@$core.Deprecated('Use flutterCupertinoDragTargetDescriptor instead')
+const FlutterCupertinoDragTarget$json = {
+  '1': 'FlutterCupertinoDragTarget',
+};
+
+/// Descriptor for `FlutterCupertinoDragTarget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoDragTargetDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyQ3VwZXJ0aW5vRHJhZ1RhcmdldA==');
+
+@$core.Deprecated('Use flutterCupertinoDraggableScrollableSheetDescriptor instead')
+const FlutterCupertinoDraggableScrollableSheet$json = {
+  '1': 'FlutterCupertinoDraggableScrollableSheet',
+  '2': [
+    {'1': 'initial_child_size', '3': 3, '4': 1, '5': 1, '10': 'initialChildSize'},
+    {'1': 'min_child_size', '3': 4, '4': 1, '5': 1, '10': 'minChildSize'},
+    {'1': 'max_child_size', '3': 5, '4': 1, '5': 1, '10': 'maxChildSize'},
+    {'1': 'expand', '3': 6, '4': 1, '5': 8, '10': 'expand'},
+    {'1': 'snap', '3': 7, '4': 1, '5': 8, '10': 'snap'},
+    {'1': 'should_close_on_min_extent', '3': 11, '4': 1, '5': 8, '10': 'shouldCloseOnMinExtent'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoDraggableScrollableSheet`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoDraggableScrollableSheetDescriptor = $convert.base64Decode(
+    'CihGbHV0dGVyQ3VwZXJ0aW5vRHJhZ2dhYmxlU2Nyb2xsYWJsZVNoZWV0EiwKEmluaXRpYWxfY2'
+    'hpbGRfc2l6ZRgDIAEoAVIQaW5pdGlhbENoaWxkU2l6ZRIkCg5taW5fY2hpbGRfc2l6ZRgEIAEo'
+    'AVIMbWluQ2hpbGRTaXplEiQKDm1heF9jaGlsZF9zaXplGAUgASgBUgxtYXhDaGlsZFNpemUSFg'
+    'oGZXhwYW5kGAYgASgIUgZleHBhbmQSEgoEc25hcBgHIAEoCFIEc25hcBI6ChpzaG91bGRfY2xv'
+    'c2Vfb25fbWluX2V4dGVudBgLIAEoCFIWc2hvdWxkQ2xvc2VPbk1pbkV4dGVudA==');
+
+@$core.Deprecated('Use flutterCupertinoDraggableScrollableActuatorDescriptor instead')
+const FlutterCupertinoDraggableScrollableActuator$json = {
+  '1': 'FlutterCupertinoDraggableScrollableActuator',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoDraggableScrollableActuator`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoDraggableScrollableActuatorDescriptor = $convert.base64Decode(
+    'CitGbHV0dGVyQ3VwZXJ0aW5vRHJhZ2dhYmxlU2Nyb2xsYWJsZUFjdHVhdG9yEh0KBWNoaWxkGA'
+    'MgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoDualTransitionBuilderDescriptor instead')
+const FlutterCupertinoDualTransitionBuilder$json = {
+  '1': 'FlutterCupertinoDualTransitionBuilder',
+  '2': [
+    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoDualTransitionBuilder`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoDualTransitionBuilderDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyQ3VwZXJ0aW5vRHVhbFRyYW5zaXRpb25CdWlsZGVyEh0KBWNoaWxkGAYgASgLMg'
+    'cuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoEditableTextDescriptor instead')
+const FlutterCupertinoEditableText$json = {
+  '1': 'FlutterCupertinoEditableText',
+  '2': [
+    {'1': 'read_only', '3': 5, '4': 1, '5': 8, '10': 'readOnly'},
+    {'1': 'obscuring_character', '3': 6, '4': 1, '5': 9, '10': 'obscuringCharacter'},
+    {'1': 'obscure_text', '3': 7, '4': 1, '5': 8, '10': 'obscureText'},
+    {'1': 'autocorrect', '3': 8, '4': 1, '5': 8, '10': 'autocorrect'},
+    {'1': 'enable_suggestions', '3': 11, '4': 1, '5': 8, '10': 'enableSuggestions'},
+    {'1': 'text_scale_factor', '3': 19, '4': 1, '5': 1, '10': 'textScaleFactor'},
+    {'1': 'max_lines', '3': 20, '4': 1, '5': 3, '10': 'maxLines'},
+    {'1': 'min_lines', '3': 21, '4': 1, '5': 3, '10': 'minLines'},
+    {'1': 'expands', '3': 22, '4': 1, '5': 8, '10': 'expands'},
+    {'1': 'force_line', '3': 23, '4': 1, '5': 8, '10': 'forceLine'},
+    {'1': 'autofocus', '3': 26, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'show_cursor', '3': 27, '4': 1, '5': 8, '10': 'showCursor'},
+    {'1': 'show_selection_handles', '3': 28, '4': 1, '5': 8, '10': 'showSelectionHandles'},
+    {'1': 'renderer_ignores_pointer', '3': 43, '4': 1, '5': 8, '10': 'rendererIgnoresPointer'},
+    {'1': 'cursor_width', '3': 44, '4': 1, '5': 1, '10': 'cursorWidth'},
+    {'1': 'cursor_height', '3': 45, '4': 1, '5': 1, '10': 'cursorHeight'},
+    {'1': 'cursor_opacity_animates', '3': 47, '4': 1, '5': 8, '10': 'cursorOpacityAnimates'},
+    {'1': 'paint_cursor_above_text', '3': 49, '4': 1, '5': 8, '10': 'paintCursorAboveText'},
+    {'1': 'enable_interactive_selection', '3': 55, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
+    {'1': 'restoration_id', '3': 63, '4': 1, '5': 9, '10': 'restorationId'},
+    {'1': 'scribble_enabled', '3': 65, '4': 1, '5': 8, '10': 'scribbleEnabled'},
+    {'1': 'enable_i_m_e_personalized_learning', '3': 66, '4': 1, '5': 8, '10': 'enableIMEPersonalizedLearning'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoEditableText`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoEditableTextDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyQ3VwZXJ0aW5vRWRpdGFibGVUZXh0EhsKCXJlYWRfb25seRgFIAEoCFIIcmVhZE'
+    '9ubHkSLwoTb2JzY3VyaW5nX2NoYXJhY3RlchgGIAEoCVISb2JzY3VyaW5nQ2hhcmFjdGVyEiEK'
+    'DG9ic2N1cmVfdGV4dBgHIAEoCFILb2JzY3VyZVRleHQSIAoLYXV0b2NvcnJlY3QYCCABKAhSC2'
+    'F1dG9jb3JyZWN0Ei0KEmVuYWJsZV9zdWdnZXN0aW9ucxgLIAEoCFIRZW5hYmxlU3VnZ2VzdGlv'
+    'bnMSKgoRdGV4dF9zY2FsZV9mYWN0b3IYEyABKAFSD3RleHRTY2FsZUZhY3RvchIbCgltYXhfbG'
+    'luZXMYFCABKANSCG1heExpbmVzEhsKCW1pbl9saW5lcxgVIAEoA1IIbWluTGluZXMSGAoHZXhw'
+    'YW5kcxgWIAEoCFIHZXhwYW5kcxIdCgpmb3JjZV9saW5lGBcgASgIUglmb3JjZUxpbmUSHAoJYX'
+    'V0b2ZvY3VzGBogASgIUglhdXRvZm9jdXMSHwoLc2hvd19jdXJzb3IYGyABKAhSCnNob3dDdXJz'
+    'b3ISNAoWc2hvd19zZWxlY3Rpb25faGFuZGxlcxgcIAEoCFIUc2hvd1NlbGVjdGlvbkhhbmRsZX'
+    'MSOAoYcmVuZGVyZXJfaWdub3Jlc19wb2ludGVyGCsgASgIUhZyZW5kZXJlcklnbm9yZXNQb2lu'
+    'dGVyEiEKDGN1cnNvcl93aWR0aBgsIAEoAVILY3Vyc29yV2lkdGgSIwoNY3Vyc29yX2hlaWdodB'
+    'gtIAEoAVIMY3Vyc29ySGVpZ2h0EjYKF2N1cnNvcl9vcGFjaXR5X2FuaW1hdGVzGC8gASgIUhVj'
+    'dXJzb3JPcGFjaXR5QW5pbWF0ZXMSNQoXcGFpbnRfY3Vyc29yX2Fib3ZlX3RleHQYMSABKAhSFH'
+    'BhaW50Q3Vyc29yQWJvdmVUZXh0EkAKHGVuYWJsZV9pbnRlcmFjdGl2ZV9zZWxlY3Rpb24YNyAB'
+    'KAhSGmVuYWJsZUludGVyYWN0aXZlU2VsZWN0aW9uEiUKDnJlc3RvcmF0aW9uX2lkGD8gASgJUg'
+    '1yZXN0b3JhdGlvbklkEikKEHNjcmliYmxlX2VuYWJsZWQYQSABKAhSD3NjcmliYmxlRW5hYmxl'
+    'ZBJJCiJlbmFibGVfaV9tX2VfcGVyc29uYWxpemVkX2xlYXJuaW5nGEIgASgIUh1lbmFibGVJTU'
+    'VQZXJzb25hbGl6ZWRMZWFybmluZw==');
+
+@$core.Deprecated('Use flutterCupertinoFadeInImageDescriptor instead')
+const FlutterCupertinoFadeInImage$json = {
+  '1': 'FlutterCupertinoFadeInImage',
+  '2': [
+    {'1': 'exclude_from_semantics', '3': 7, '4': 1, '5': 8, '10': 'excludeFromSemantics'},
+    {'1': 'image_semantic_label', '3': 8, '4': 1, '5': 9, '10': 'imageSemanticLabel'},
+    {'1': 'width', '3': 13, '4': 1, '5': 1, '10': 'width'},
+    {'1': 'height', '3': 14, '4': 1, '5': 1, '10': 'height'},
+    {'1': 'match_text_direction', '3': 21, '4': 1, '5': 8, '10': 'matchTextDirection'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoFadeInImage`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoFadeInImageDescriptor = $convert.base64Decode(
+    'ChtGbHV0dGVyQ3VwZXJ0aW5vRmFkZUluSW1hZ2USNAoWZXhjbHVkZV9mcm9tX3NlbWFudGljcx'
+    'gHIAEoCFIUZXhjbHVkZUZyb21TZW1hbnRpY3MSMAoUaW1hZ2Vfc2VtYW50aWNfbGFiZWwYCCAB'
+    'KAlSEmltYWdlU2VtYW50aWNMYWJlbBIUCgV3aWR0aBgNIAEoAVIFd2lkdGgSFgoGaGVpZ2h0GA'
+    '4gASgBUgZoZWlnaHQSMAoUbWF0Y2hfdGV4dF9kaXJlY3Rpb24YFSABKAhSEm1hdGNoVGV4dERp'
+    'cmVjdGlvbg==');
+
+@$core.Deprecated('Use flutterCupertinoFocusDescriptor instead')
+const FlutterCupertinoFocus$json = {
+  '1': 'FlutterCupertinoFocus',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'autofocus', '3': 6, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'can_request_focus', '3': 10, '4': 1, '5': 8, '10': 'canRequestFocus'},
+    {'1': 'skip_traversal', '3': 11, '4': 1, '5': 8, '10': 'skipTraversal'},
+    {'1': 'descendants_are_focusable', '3': 12, '4': 1, '5': 8, '10': 'descendantsAreFocusable'},
+    {'1': 'descendants_are_traversable', '3': 13, '4': 1, '5': 8, '10': 'descendantsAreTraversable'},
+    {'1': 'include_semantics', '3': 14, '4': 1, '5': 8, '10': 'includeSemantics'},
+    {'1': 'debug_label', '3': 15, '4': 1, '5': 9, '10': 'debugLabel'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoFocus`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoFocusDescriptor = $convert.base64Decode(
+    'ChVGbHV0dGVyQ3VwZXJ0aW5vRm9jdXMSHQoFY2hpbGQYAyABKAsyBy5XaWRnZXRSBWNoaWxkEh'
+    'wKCWF1dG9mb2N1cxgGIAEoCFIJYXV0b2ZvY3VzEioKEWNhbl9yZXF1ZXN0X2ZvY3VzGAogASgI'
+    'Ug9jYW5SZXF1ZXN0Rm9jdXMSJQoOc2tpcF90cmF2ZXJzYWwYCyABKAhSDXNraXBUcmF2ZXJzYW'
+    'wSOgoZZGVzY2VuZGFudHNfYXJlX2ZvY3VzYWJsZRgMIAEoCFIXZGVzY2VuZGFudHNBcmVGb2N1'
+    'c2FibGUSPgobZGVzY2VuZGFudHNfYXJlX3RyYXZlcnNhYmxlGA0gASgIUhlkZXNjZW5kYW50c0'
+    'FyZVRyYXZlcnNhYmxlEisKEWluY2x1ZGVfc2VtYW50aWNzGA4gASgIUhBpbmNsdWRlU2VtYW50'
+    'aWNzEh8KC2RlYnVnX2xhYmVsGA8gASgJUgpkZWJ1Z0xhYmVs');
+
+@$core.Deprecated('Use flutterCupertinoFocusScopeDescriptor instead')
+const FlutterCupertinoFocusScope$json = {
+  '1': 'FlutterCupertinoFocusScope',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'autofocus', '3': 6, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'can_request_focus', '3': 8, '4': 1, '5': 8, '10': 'canRequestFocus'},
+    {'1': 'skip_traversal', '3': 9, '4': 1, '5': 8, '10': 'skipTraversal'},
+    {'1': 'debug_label', '3': 12, '4': 1, '5': 9, '10': 'debugLabel'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoFocusScope`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoFocusScopeDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyQ3VwZXJ0aW5vRm9jdXNTY29wZRIdCgVjaGlsZBgFIAEoCzIHLldpZGdldFIFY2'
+    'hpbGQSHAoJYXV0b2ZvY3VzGAYgASgIUglhdXRvZm9jdXMSKgoRY2FuX3JlcXVlc3RfZm9jdXMY'
+    'CCABKAhSD2NhblJlcXVlc3RGb2N1cxIlCg5za2lwX3RyYXZlcnNhbBgJIAEoCFINc2tpcFRyYX'
+    'ZlcnNhbBIfCgtkZWJ1Z19sYWJlbBgMIAEoCVIKZGVidWdMYWJlbA==');
+
+@$core.Deprecated('Use flutterCupertinoExcludeFocusDescriptor instead')
+const FlutterCupertinoExcludeFocus$json = {
+  '1': 'FlutterCupertinoExcludeFocus',
+  '2': [
+    {'1': 'excluding', '3': 3, '4': 1, '5': 8, '10': 'excluding'},
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoExcludeFocus`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoExcludeFocusDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyQ3VwZXJ0aW5vRXhjbHVkZUZvY3VzEhwKCWV4Y2x1ZGluZxgDIAEoCFIJZXhjbH'
+    'VkaW5nEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoFocusTraversalOrderDescriptor instead')
+const FlutterCupertinoFocusTraversalOrder$json = {
+  '1': 'FlutterCupertinoFocusTraversalOrder',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoFocusTraversalOrder`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoFocusTraversalOrderDescriptor = $convert.base64Decode(
+    'CiNGbHV0dGVyQ3VwZXJ0aW5vRm9jdXNUcmF2ZXJzYWxPcmRlchIdCgVjaGlsZBgEIAEoCzIHLl'
+    'dpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoFocusTraversalGroupDescriptor instead')
+const FlutterCupertinoFocusTraversalGroup$json = {
+  '1': 'FlutterCupertinoFocusTraversalGroup',
+  '2': [
+    {'1': 'descendants_are_focusable', '3': 4, '4': 1, '5': 8, '10': 'descendantsAreFocusable'},
+    {'1': 'descendants_are_traversable', '3': 5, '4': 1, '5': 8, '10': 'descendantsAreTraversable'},
+    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoFocusTraversalGroup`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoFocusTraversalGroupDescriptor = $convert.base64Decode(
+    'CiNGbHV0dGVyQ3VwZXJ0aW5vRm9jdXNUcmF2ZXJzYWxHcm91cBI6ChlkZXNjZW5kYW50c19hcm'
+    'VfZm9jdXNhYmxlGAQgASgIUhdkZXNjZW5kYW50c0FyZUZvY3VzYWJsZRI+ChtkZXNjZW5kYW50'
+    'c19hcmVfdHJhdmVyc2FibGUYBSABKAhSGWRlc2NlbmRhbnRzQXJlVHJhdmVyc2FibGUSHQoFY2'
+    'hpbGQYBiABKAsyBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoExcludeFocusTraversalDescriptor instead')
+const FlutterCupertinoExcludeFocusTraversal$json = {
+  '1': 'FlutterCupertinoExcludeFocusTraversal',
+  '2': [
+    {'1': 'excluding', '3': 3, '4': 1, '5': 8, '10': 'excluding'},
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoExcludeFocusTraversal`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoExcludeFocusTraversalDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyQ3VwZXJ0aW5vRXhjbHVkZUZvY3VzVHJhdmVyc2FsEhwKCWV4Y2x1ZGluZxgDIA'
+    'EoCFIJZXhjbHVkaW5nEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoFormDescriptor instead')
+const FlutterCupertinoForm$json = {
+  '1': 'FlutterCupertinoForm',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoForm`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoFormDescriptor = $convert.base64Decode(
+    'ChRGbHV0dGVyQ3VwZXJ0aW5vRm9ybRIdCgVjaGlsZBgDIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoFormFieldDescriptor instead')
+const FlutterCupertinoFormField$json = {
+  '1': 'FlutterCupertinoFormField',
+  '2': [
+    {'1': 'enabled', '3': 7, '4': 1, '5': 8, '10': 'enabled'},
+    {'1': 'restoration_id', '3': 9, '4': 1, '5': 9, '10': 'restorationId'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoFormField`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoFormFieldDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQ3VwZXJ0aW5vRm9ybUZpZWxkEhgKB2VuYWJsZWQYByABKAhSB2VuYWJsZWQSJQ'
+    'oOcmVzdG9yYXRpb25faWQYCSABKAlSDXJlc3RvcmF0aW9uSWQ=');
+
+@$core.Deprecated('Use flutterCupertinoStatelessWidgetDescriptor instead')
+const FlutterCupertinoStatelessWidget$json = {
+  '1': 'FlutterCupertinoStatelessWidget',
+};
+
+/// Descriptor for `FlutterCupertinoStatelessWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoStatelessWidgetDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vU3RhdGVsZXNzV2lkZ2V0');
+
+@$core.Deprecated('Use flutterCupertinoStatefulWidgetDescriptor instead')
+const FlutterCupertinoStatefulWidget$json = {
+  '1': 'FlutterCupertinoStatefulWidget',
+};
+
+/// Descriptor for `FlutterCupertinoStatefulWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoStatefulWidgetDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vU3RhdGVmdWxXaWRnZXQ=');
+
+@$core.Deprecated('Use flutterCupertinoProxyWidgetDescriptor instead')
+const FlutterCupertinoProxyWidget$json = {
+  '1': 'FlutterCupertinoProxyWidget',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoProxyWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoProxyWidgetDescriptor = $convert.base64Decode(
+    'ChtGbHV0dGVyQ3VwZXJ0aW5vUHJveHlXaWRnZXQSHQoFY2hpbGQYAyABKAsyBy5XaWRnZXRSBW'
+    'NoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoParentDataWidgetDescriptor instead')
+const FlutterCupertinoParentDataWidget$json = {
+  '1': 'FlutterCupertinoParentDataWidget',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoParentDataWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoParentDataWidgetDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vUGFyZW50RGF0YVdpZGdldBIdCgVjaGlsZBgDIAEoCzIHLldpZG'
+    'dldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoInheritedWidgetDescriptor instead')
+const FlutterCupertinoInheritedWidget$json = {
+  '1': 'FlutterCupertinoInheritedWidget',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoInheritedWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoInheritedWidgetDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vSW5oZXJpdGVkV2lkZ2V0Eh0KBWNoaWxkGAMgASgLMgcuV2lkZ2'
+    'V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoRenderObjectWidgetDescriptor instead')
+const FlutterCupertinoRenderObjectWidget$json = {
+  '1': 'FlutterCupertinoRenderObjectWidget',
+};
+
+/// Descriptor for `FlutterCupertinoRenderObjectWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoRenderObjectWidgetDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vUmVuZGVyT2JqZWN0V2lkZ2V0');
+
+@$core.Deprecated('Use flutterCupertinoLeafRenderObjectWidgetDescriptor instead')
+const FlutterCupertinoLeafRenderObjectWidget$json = {
+  '1': 'FlutterCupertinoLeafRenderObjectWidget',
+};
+
+/// Descriptor for `FlutterCupertinoLeafRenderObjectWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoLeafRenderObjectWidgetDescriptor = $convert.base64Decode(
+    'CiZGbHV0dGVyQ3VwZXJ0aW5vTGVhZlJlbmRlck9iamVjdFdpZGdldA==');
+
+@$core.Deprecated('Use flutterCupertinoSingleChildRenderObjectWidgetDescriptor instead')
+const FlutterCupertinoSingleChildRenderObjectWidget$json = {
+  '1': 'FlutterCupertinoSingleChildRenderObjectWidget',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSingleChildRenderObjectWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSingleChildRenderObjectWidgetDescriptor = $convert.base64Decode(
+    'Ci1GbHV0dGVyQ3VwZXJ0aW5vU2luZ2xlQ2hpbGRSZW5kZXJPYmplY3RXaWRnZXQSHQoFY2hpbG'
+    'QYAyABKAsyBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoMultiChildRenderObjectWidgetDescriptor instead')
+const FlutterCupertinoMultiChildRenderObjectWidget$json = {
+  '1': 'FlutterCupertinoMultiChildRenderObjectWidget',
+};
+
+/// Descriptor for `FlutterCupertinoMultiChildRenderObjectWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoMultiChildRenderObjectWidgetDescriptor = $convert.base64Decode(
+    'CixGbHV0dGVyQ3VwZXJ0aW5vTXVsdGlDaGlsZFJlbmRlck9iamVjdFdpZGdldA==');
+
+@$core.Deprecated('Use flutterCupertinoErrorWidgetDescriptor instead')
+const FlutterCupertinoErrorWidget$json = {
+  '1': 'FlutterCupertinoErrorWidget',
+};
+
+/// Descriptor for `FlutterCupertinoErrorWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoErrorWidgetDescriptor = $convert.base64Decode(
+    'ChtGbHV0dGVyQ3VwZXJ0aW5vRXJyb3JXaWRnZXQ=');
+
+@$core.Deprecated('Use flutterCupertinoGestureDetectorDescriptor instead')
+const FlutterCupertinoGestureDetector$json = {
+  '1': 'FlutterCupertinoGestureDetector',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'exclude_from_semantics', '3': 62, '4': 1, '5': 8, '10': 'excludeFromSemantics'},
+    {'1': 'trackpad_scroll_causes_scale', '3': 64, '4': 1, '5': 8, '10': 'trackpadScrollCausesScale'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoGestureDetector`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoGestureDetectorDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vR2VzdHVyZURldGVjdG9yEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2'
+    'V0UgVjaGlsZBI0ChZleGNsdWRlX2Zyb21fc2VtYW50aWNzGD4gASgIUhRleGNsdWRlRnJvbVNl'
+    'bWFudGljcxI/Chx0cmFja3BhZF9zY3JvbGxfY2F1c2VzX3NjYWxlGEAgASgIUhl0cmFja3BhZF'
+    'Njcm9sbENhdXNlc1NjYWxl');
+
+@$core.Deprecated('Use flutterCupertinoRawGestureDetectorDescriptor instead')
+const FlutterCupertinoRawGestureDetector$json = {
+  '1': 'FlutterCupertinoRawGestureDetector',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'exclude_from_semantics', '3': 6, '4': 1, '5': 8, '10': 'excludeFromSemantics'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoRawGestureDetector`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoRawGestureDetectorDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vUmF3R2VzdHVyZURldGVjdG9yEh0KBWNoaWxkGAMgASgLMgcuV2'
+    'lkZ2V0UgVjaGlsZBI0ChZleGNsdWRlX2Zyb21fc2VtYW50aWNzGAYgASgIUhRleGNsdWRlRnJv'
+    'bVNlbWFudGljcw==');
+
+@$core.Deprecated('Use flutterCupertinoGridPaperDescriptor instead')
+const FlutterCupertinoGridPaper$json = {
+  '1': 'FlutterCupertinoGridPaper',
+  '2': [
+    {'1': 'interval', '3': 4, '4': 1, '5': 1, '10': 'interval'},
+    {'1': 'divisions', '3': 5, '4': 1, '5': 3, '10': 'divisions'},
+    {'1': 'subdivisions', '3': 6, '4': 1, '5': 3, '10': 'subdivisions'},
+    {'1': 'child', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoGridPaper`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoGridPaperDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQ3VwZXJ0aW5vR3JpZFBhcGVyEhoKCGludGVydmFsGAQgASgBUghpbnRlcnZhbB'
+    'IcCglkaXZpc2lvbnMYBSABKANSCWRpdmlzaW9ucxIiCgxzdWJkaXZpc2lvbnMYBiABKANSDHN1'
+    'YmRpdmlzaW9ucxIdCgVjaGlsZBgHIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoHeroDescriptor instead')
+const FlutterCupertinoHero$json = {
+  '1': 'FlutterCupertinoHero',
+  '2': [
+    {'1': 'transition_on_user_gestures', '3': 7, '4': 1, '5': 8, '10': 'transitionOnUserGestures'},
+    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoHero`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoHeroDescriptor = $convert.base64Decode(
+    'ChRGbHV0dGVyQ3VwZXJ0aW5vSGVybxI9Cht0cmFuc2l0aW9uX29uX3VzZXJfZ2VzdHVyZXMYBy'
+    'ABKAhSGHRyYW5zaXRpb25PblVzZXJHZXN0dXJlcxIdCgVjaGlsZBgIIAEoCzIHLldpZGdldFIF'
+    'Y2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoHeroModeDescriptor instead')
+const FlutterCupertinoHeroMode$json = {
+  '1': 'FlutterCupertinoHeroMode',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'enabled', '3': 4, '4': 1, '5': 8, '10': 'enabled'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoHeroMode`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoHeroModeDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vSGVyb01vZGUSHQoFY2hpbGQYAyABKAsyBy5XaWRnZXRSBWNoaW'
+    'xkEhgKB2VuYWJsZWQYBCABKAhSB2VuYWJsZWQ=');
+
+@$core.Deprecated('Use flutterCupertinoIconDescriptor instead')
+const FlutterCupertinoIcon$json = {
+  '1': 'FlutterCupertinoIcon',
+  '2': [
+    {'1': 'size', '3': 4, '4': 1, '5': 1, '10': 'size'},
+    {'1': 'fill', '3': 5, '4': 1, '5': 1, '10': 'fill'},
+    {'1': 'weight', '3': 6, '4': 1, '5': 1, '10': 'weight'},
+    {'1': 'grade', '3': 7, '4': 1, '5': 1, '10': 'grade'},
+    {'1': 'optical_size', '3': 8, '4': 1, '5': 1, '10': 'opticalSize'},
+    {'1': 'semantic_label', '3': 11, '4': 1, '5': 9, '10': 'semanticLabel'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoIcon`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoIconDescriptor = $convert.base64Decode(
+    'ChRGbHV0dGVyQ3VwZXJ0aW5vSWNvbhISCgRzaXplGAQgASgBUgRzaXplEhIKBGZpbGwYBSABKA'
+    'FSBGZpbGwSFgoGd2VpZ2h0GAYgASgBUgZ3ZWlnaHQSFAoFZ3JhZGUYByABKAFSBWdyYWRlEiEK'
+    'DG9wdGljYWxfc2l6ZRgIIAEoAVILb3B0aWNhbFNpemUSJQoOc2VtYW50aWNfbGFiZWwYCyABKA'
+    'lSDXNlbWFudGljTGFiZWw=');
+
+@$core.Deprecated('Use flutterCupertinoIconThemeDescriptor instead')
+const FlutterCupertinoIconTheme$json = {
+  '1': 'FlutterCupertinoIconTheme',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoIconTheme`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoIconThemeDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQ3VwZXJ0aW5vSWNvblRoZW1lEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaG'
+    'lsZA==');
+
+@$core.Deprecated('Use flutterCupertinoImageDescriptor instead')
+const FlutterCupertinoImage$json = {
+  '1': 'FlutterCupertinoImage',
+  '2': [
+    {'1': 'semantic_label', '3': 7, '4': 1, '5': 9, '10': 'semanticLabel'},
+    {'1': 'exclude_from_semantics', '3': 8, '4': 1, '5': 8, '10': 'excludeFromSemantics'},
+    {'1': 'width', '3': 9, '4': 1, '5': 1, '10': 'width'},
+    {'1': 'height', '3': 10, '4': 1, '5': 1, '10': 'height'},
+    {'1': 'match_text_direction', '3': 18, '4': 1, '5': 8, '10': 'matchTextDirection'},
+    {'1': 'gapless_playback', '3': 19, '4': 1, '5': 8, '10': 'gaplessPlayback'},
+    {'1': 'is_anti_alias', '3': 20, '4': 1, '5': 8, '10': 'isAntiAlias'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoImage`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoImageDescriptor = $convert.base64Decode(
+    'ChVGbHV0dGVyQ3VwZXJ0aW5vSW1hZ2USJQoOc2VtYW50aWNfbGFiZWwYByABKAlSDXNlbWFudG'
+    'ljTGFiZWwSNAoWZXhjbHVkZV9mcm9tX3NlbWFudGljcxgIIAEoCFIUZXhjbHVkZUZyb21TZW1h'
+    'bnRpY3MSFAoFd2lkdGgYCSABKAFSBXdpZHRoEhYKBmhlaWdodBgKIAEoAVIGaGVpZ2h0EjAKFG'
+    '1hdGNoX3RleHRfZGlyZWN0aW9uGBIgASgIUhJtYXRjaFRleHREaXJlY3Rpb24SKQoQZ2FwbGVz'
+    'c19wbGF5YmFjaxgTIAEoCFIPZ2FwbGVzc1BsYXliYWNrEiIKDWlzX2FudGlfYWxpYXMYFCABKA'
+    'hSC2lzQW50aUFsaWFz');
+
+@$core.Deprecated('Use flutterCupertinoImageFilteredDescriptor instead')
+const FlutterCupertinoImageFiltered$json = {
+  '1': 'FlutterCupertinoImageFiltered',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'enabled', '3': 5, '4': 1, '5': 8, '10': 'enabled'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoImageFiltered`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoImageFilteredDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vSW1hZ2VGaWx0ZXJlZBIdCgVjaGlsZBgEIAEoCzIHLldpZGdldF'
+    'IFY2hpbGQSGAoHZW5hYmxlZBgFIAEoCFIHZW5hYmxlZA==');
+
+@$core.Deprecated('Use flutterCupertinoImageIconDescriptor instead')
+const FlutterCupertinoImageIcon$json = {
+  '1': 'FlutterCupertinoImageIcon',
+  '2': [
+    {'1': 'size', '3': 4, '4': 1, '5': 1, '10': 'size'},
+    {'1': 'semantic_label', '3': 6, '4': 1, '5': 9, '10': 'semanticLabel'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoImageIcon`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoImageIconDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQ3VwZXJ0aW5vSW1hZ2VJY29uEhIKBHNpemUYBCABKAFSBHNpemUSJQoOc2VtYW'
+    '50aWNfbGFiZWwYBiABKAlSDXNlbWFudGljTGFiZWw=');
+
+@$core.Deprecated('Use flutterCupertinoImplicitlyAnimatedWidgetDescriptor instead')
+const FlutterCupertinoImplicitlyAnimatedWidget$json = {
+  '1': 'FlutterCupertinoImplicitlyAnimatedWidget',
+};
+
+/// Descriptor for `FlutterCupertinoImplicitlyAnimatedWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoImplicitlyAnimatedWidgetDescriptor = $convert.base64Decode(
+    'CihGbHV0dGVyQ3VwZXJ0aW5vSW1wbGljaXRseUFuaW1hdGVkV2lkZ2V0');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedContainerDescriptor instead')
+const FlutterCupertinoAnimatedContainer$json = {
+  '1': 'FlutterCupertinoAnimatedContainer',
+  '2': [
+    {'1': 'width', '3': 8, '4': 1, '5': 1, '10': 'width'},
+    {'1': 'height', '3': 9, '4': 1, '5': 1, '10': 'height'},
+    {'1': 'child', '3': 14, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedContainer`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedContainerDescriptor = $convert.base64Decode(
+    'CiFGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRDb250YWluZXISFAoFd2lkdGgYCCABKAFSBXdpZH'
+    'RoEhYKBmhlaWdodBgJIAEoAVIGaGVpZ2h0Eh0KBWNoaWxkGA4gASgLMgcuV2lkZ2V0UgVjaGls'
+    'ZA==');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedPaddingDescriptor instead')
+const FlutterCupertinoAnimatedPadding$json = {
+  '1': 'FlutterCupertinoAnimatedPadding',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedPadding`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedPaddingDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRQYWRkaW5nEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2'
+    'V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedAlignDescriptor instead')
+const FlutterCupertinoAnimatedAlign$json = {
+  '1': 'FlutterCupertinoAnimatedAlign',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'height_factor', '3': 5, '4': 1, '5': 1, '10': 'heightFactor'},
+    {'1': 'width_factor', '3': 6, '4': 1, '5': 1, '10': 'widthFactor'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedAlign`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedAlignDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRBbGlnbhIdCgVjaGlsZBgEIAEoCzIHLldpZGdldF'
+    'IFY2hpbGQSIwoNaGVpZ2h0X2ZhY3RvchgFIAEoAVIMaGVpZ2h0RmFjdG9yEiEKDHdpZHRoX2Zh'
+    'Y3RvchgGIAEoAVILd2lkdGhGYWN0b3I=');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedPositionedDescriptor instead')
+const FlutterCupertinoAnimatedPositioned$json = {
+  '1': 'FlutterCupertinoAnimatedPositioned',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'left', '3': 4, '4': 1, '5': 1, '10': 'left'},
+    {'1': 'top', '3': 5, '4': 1, '5': 1, '10': 'top'},
+    {'1': 'right', '3': 6, '4': 1, '5': 1, '10': 'right'},
+    {'1': 'bottom', '3': 7, '4': 1, '5': 1, '10': 'bottom'},
+    {'1': 'width', '3': 8, '4': 1, '5': 1, '10': 'width'},
+    {'1': 'height', '3': 9, '4': 1, '5': 1, '10': 'height'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedPositioned`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedPositionedDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRQb3NpdGlvbmVkEh0KBWNoaWxkGAMgASgLMgcuV2'
+    'lkZ2V0UgVjaGlsZBISCgRsZWZ0GAQgASgBUgRsZWZ0EhAKA3RvcBgFIAEoAVIDdG9wEhQKBXJp'
+    'Z2h0GAYgASgBUgVyaWdodBIWCgZib3R0b20YByABKAFSBmJvdHRvbRIUCgV3aWR0aBgIIAEoAV'
+    'IFd2lkdGgSFgoGaGVpZ2h0GAkgASgBUgZoZWlnaHQ=');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedPositionedDirectionalDescriptor instead')
+const FlutterCupertinoAnimatedPositionedDirectional$json = {
+  '1': 'FlutterCupertinoAnimatedPositionedDirectional',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'start', '3': 4, '4': 1, '5': 1, '10': 'start'},
+    {'1': 'top', '3': 5, '4': 1, '5': 1, '10': 'top'},
+    {'1': 'end', '3': 6, '4': 1, '5': 1, '10': 'end'},
+    {'1': 'bottom', '3': 7, '4': 1, '5': 1, '10': 'bottom'},
+    {'1': 'width', '3': 8, '4': 1, '5': 1, '10': 'width'},
+    {'1': 'height', '3': 9, '4': 1, '5': 1, '10': 'height'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedPositionedDirectional`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedPositionedDirectionalDescriptor = $convert.base64Decode(
+    'Ci1GbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRQb3NpdGlvbmVkRGlyZWN0aW9uYWwSHQoFY2hpbG'
+    'QYAyABKAsyBy5XaWRnZXRSBWNoaWxkEhQKBXN0YXJ0GAQgASgBUgVzdGFydBIQCgN0b3AYBSAB'
+    'KAFSA3RvcBIQCgNlbmQYBiABKAFSA2VuZBIWCgZib3R0b20YByABKAFSBmJvdHRvbRIUCgV3aW'
+    'R0aBgIIAEoAVIFd2lkdGgSFgoGaGVpZ2h0GAkgASgBUgZoZWlnaHQ=');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedScaleDescriptor instead')
+const FlutterCupertinoAnimatedScale$json = {
+  '1': 'FlutterCupertinoAnimatedScale',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'scale', '3': 4, '4': 1, '5': 1, '10': 'scale'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedScale`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedScaleDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRTY2FsZRIdCgVjaGlsZBgDIAEoCzIHLldpZGdldF'
+    'IFY2hpbGQSFAoFc2NhbGUYBCABKAFSBXNjYWxl');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedRotationDescriptor instead')
+const FlutterCupertinoAnimatedRotation$json = {
+  '1': 'FlutterCupertinoAnimatedRotation',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'turns', '3': 4, '4': 1, '5': 1, '10': 'turns'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedRotation`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedRotationDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRSb3RhdGlvbhIdCgVjaGlsZBgDIAEoCzIHLldpZG'
+    'dldFIFY2hpbGQSFAoFdHVybnMYBCABKAFSBXR1cm5z');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedSlideDescriptor instead')
+const FlutterCupertinoAnimatedSlide$json = {
+  '1': 'FlutterCupertinoAnimatedSlide',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedSlide`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedSlideDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRTbGlkZRIdCgVjaGlsZBgDIAEoCzIHLldpZGdldF'
+    'IFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedOpacityDescriptor instead')
+const FlutterCupertinoAnimatedOpacity$json = {
+  '1': 'FlutterCupertinoAnimatedOpacity',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'opacity', '3': 4, '4': 1, '5': 1, '10': 'opacity'},
+    {'1': 'always_include_semantics', '3': 8, '4': 1, '5': 8, '10': 'alwaysIncludeSemantics'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedOpacity`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedOpacityDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRPcGFjaXR5Eh0KBWNoaWxkGAMgASgLMgcuV2lkZ2'
+    'V0UgVjaGlsZBIYCgdvcGFjaXR5GAQgASgBUgdvcGFjaXR5EjgKGGFsd2F5c19pbmNsdWRlX3Nl'
+    'bWFudGljcxgIIAEoCFIWYWx3YXlzSW5jbHVkZVNlbWFudGljcw==');
+
+@$core.Deprecated('Use flutterCupertinoSliverAnimatedOpacityDescriptor instead')
+const FlutterCupertinoSliverAnimatedOpacity$json = {
+  '1': 'FlutterCupertinoSliverAnimatedOpacity',
+  '2': [
+    {'1': 'sliver', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
+    {'1': 'opacity', '3': 4, '4': 1, '5': 1, '10': 'opacity'},
+    {'1': 'always_include_semantics', '3': 8, '4': 1, '5': 8, '10': 'alwaysIncludeSemantics'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverAnimatedOpacity`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverAnimatedOpacityDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyQW5pbWF0ZWRPcGFjaXR5Eh8KBnNsaXZlchgDIAEoCz'
+    'IHLldpZGdldFIGc2xpdmVyEhgKB29wYWNpdHkYBCABKAFSB29wYWNpdHkSOAoYYWx3YXlzX2lu'
+    'Y2x1ZGVfc2VtYW50aWNzGAggASgIUhZhbHdheXNJbmNsdWRlU2VtYW50aWNz');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedDefaultTextStyleDescriptor instead')
+const FlutterCupertinoAnimatedDefaultTextStyle$json = {
+  '1': 'FlutterCupertinoAnimatedDefaultTextStyle',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'soft_wrap', '3': 6, '4': 1, '5': 8, '10': 'softWrap'},
+    {'1': 'max_lines', '3': 8, '4': 1, '5': 3, '10': 'maxLines'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedDefaultTextStyle`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedDefaultTextStyleDescriptor = $convert.base64Decode(
+    'CihGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWREZWZhdWx0VGV4dFN0eWxlEh0KBWNoaWxkGAMgAS'
+    'gLMgcuV2lkZ2V0UgVjaGlsZBIbCglzb2Z0X3dyYXAYBiABKAhSCHNvZnRXcmFwEhsKCW1heF9s'
+    'aW5lcxgIIAEoA1IIbWF4TGluZXM=');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedPhysicalModelDescriptor instead')
+const FlutterCupertinoAnimatedPhysicalModel$json = {
+  '1': 'FlutterCupertinoAnimatedPhysicalModel',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'elevation', '3': 7, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'animate_color', '3': 9, '4': 1, '5': 8, '10': 'animateColor'},
+    {'1': 'animate_shadow_color', '3': 11, '4': 1, '5': 8, '10': 'animateShadowColor'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedPhysicalModel`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedPhysicalModelDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRQaHlzaWNhbE1vZGVsEh0KBWNoaWxkGAMgASgLMg'
+    'cuV2lkZ2V0UgVjaGlsZBIcCgllbGV2YXRpb24YByABKAFSCWVsZXZhdGlvbhIjCg1hbmltYXRl'
+    'X2NvbG9yGAkgASgIUgxhbmltYXRlQ29sb3ISMAoUYW5pbWF0ZV9zaGFkb3dfY29sb3IYCyABKA'
+    'hSEmFuaW1hdGVTaGFkb3dDb2xvcg==');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedFractionallySizedBoxDescriptor instead')
+const FlutterCupertinoAnimatedFractionallySizedBox$json = {
+  '1': 'FlutterCupertinoAnimatedFractionallySizedBox',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'height_factor', '3': 5, '4': 1, '5': 1, '10': 'heightFactor'},
+    {'1': 'width_factor', '3': 6, '4': 1, '5': 1, '10': 'widthFactor'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedFractionallySizedBox`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedFractionallySizedBoxDescriptor = $convert.base64Decode(
+    'CixGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRGcmFjdGlvbmFsbHlTaXplZEJveBIdCgVjaGlsZB'
+    'gEIAEoCzIHLldpZGdldFIFY2hpbGQSIwoNaGVpZ2h0X2ZhY3RvchgFIAEoAVIMaGVpZ2h0RmFj'
+    'dG9yEiEKDHdpZHRoX2ZhY3RvchgGIAEoAVILd2lkdGhGYWN0b3I=');
+
+@$core.Deprecated('Use flutterCupertinoInheritedModelDescriptor instead')
+const FlutterCupertinoInheritedModel$json = {
+  '1': 'FlutterCupertinoInheritedModel',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoInheritedModel`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoInheritedModelDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vSW5oZXJpdGVkTW9kZWwSHQoFY2hpbGQYAyABKAsyBy5XaWRnZX'
+    'RSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoInheritedNotifierDescriptor instead')
+const FlutterCupertinoInheritedNotifier$json = {
+  '1': 'FlutterCupertinoInheritedNotifier',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoInheritedNotifier`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoInheritedNotifierDescriptor = $convert.base64Decode(
+    'CiFGbHV0dGVyQ3VwZXJ0aW5vSW5oZXJpdGVkTm90aWZpZXISHQoFY2hpbGQYBCABKAsyBy5XaW'
+    'RnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoInheritedThemeDescriptor instead')
+const FlutterCupertinoInheritedTheme$json = {
+  '1': 'FlutterCupertinoInheritedTheme',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoInheritedTheme`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoInheritedThemeDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vSW5oZXJpdGVkVGhlbWUSHQoFY2hpbGQYAyABKAsyBy5XaWRnZX'
+    'RSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoInteractiveViewerDescriptor instead')
+const FlutterCupertinoInteractiveViewer$json = {
+  '1': 'FlutterCupertinoInteractiveViewer',
+  '2': [
+    {'1': 'align_pan_axis', '3': 4, '4': 1, '5': 8, '10': 'alignPanAxis'},
+    {'1': 'constrained', '3': 7, '4': 1, '5': 8, '10': 'constrained'},
+    {'1': 'max_scale', '3': 8, '4': 1, '5': 1, '10': 'maxScale'},
+    {'1': 'min_scale', '3': 9, '4': 1, '5': 1, '10': 'minScale'},
+    {'1': 'interaction_end_friction_coefficient', '3': 10, '4': 1, '5': 1, '10': 'interactionEndFrictionCoefficient'},
+    {'1': 'pan_enabled', '3': 14, '4': 1, '5': 8, '10': 'panEnabled'},
+    {'1': 'scale_enabled', '3': 15, '4': 1, '5': 8, '10': 'scaleEnabled'},
+    {'1': 'scale_factor', '3': 16, '4': 1, '5': 1, '10': 'scaleFactor'},
+    {'1': 'trackpad_scroll_causes_scale', '3': 19, '4': 1, '5': 8, '10': 'trackpadScrollCausesScale'},
+    {'1': 'child', '3': 20, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoInteractiveViewer`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoInteractiveViewerDescriptor = $convert.base64Decode(
+    'CiFGbHV0dGVyQ3VwZXJ0aW5vSW50ZXJhY3RpdmVWaWV3ZXISJAoOYWxpZ25fcGFuX2F4aXMYBC'
+    'ABKAhSDGFsaWduUGFuQXhpcxIgCgtjb25zdHJhaW5lZBgHIAEoCFILY29uc3RyYWluZWQSGwoJ'
+    'bWF4X3NjYWxlGAggASgBUghtYXhTY2FsZRIbCgltaW5fc2NhbGUYCSABKAFSCG1pblNjYWxlEk'
+    '8KJGludGVyYWN0aW9uX2VuZF9mcmljdGlvbl9jb2VmZmljaWVudBgKIAEoAVIhaW50ZXJhY3Rp'
+    'b25FbmRGcmljdGlvbkNvZWZmaWNpZW50Eh8KC3Bhbl9lbmFibGVkGA4gASgIUgpwYW5FbmFibG'
+    'VkEiMKDXNjYWxlX2VuYWJsZWQYDyABKAhSDHNjYWxlRW5hYmxlZBIhCgxzY2FsZV9mYWN0b3IY'
+    'ECABKAFSC3NjYWxlRmFjdG9yEj8KHHRyYWNrcGFkX3Njcm9sbF9jYXVzZXNfc2NhbGUYEyABKA'
+    'hSGXRyYWNrcGFkU2Nyb2xsQ2F1c2VzU2NhbGUSHQoFY2hpbGQYFCABKAsyBy5XaWRnZXRSBWNo'
+    'aWxk');
+
+@$core.Deprecated('Use flutterCupertinoKeyboardListenerDescriptor instead')
+const FlutterCupertinoKeyboardListener$json = {
+  '1': 'FlutterCupertinoKeyboardListener',
+  '2': [
+    {'1': 'autofocus', '3': 4, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'include_semantics', '3': 5, '4': 1, '5': 8, '10': 'includeSemantics'},
+    {'1': 'child', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoKeyboardListener`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoKeyboardListenerDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vS2V5Ym9hcmRMaXN0ZW5lchIcCglhdXRvZm9jdXMYBCABKAhSCW'
+    'F1dG9mb2N1cxIrChFpbmNsdWRlX3NlbWFudGljcxgFIAEoCFIQaW5jbHVkZVNlbWFudGljcxId'
+    'CgVjaGlsZBgHIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoConstrainedLayoutBuilderDescriptor instead')
+const FlutterCupertinoConstrainedLayoutBuilder$json = {
+  '1': 'FlutterCupertinoConstrainedLayoutBuilder',
+};
+
+/// Descriptor for `FlutterCupertinoConstrainedLayoutBuilder`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoConstrainedLayoutBuilderDescriptor = $convert.base64Decode(
+    'CihGbHV0dGVyQ3VwZXJ0aW5vQ29uc3RyYWluZWRMYXlvdXRCdWlsZGVy');
+
+@$core.Deprecated('Use flutterCupertinoLayoutBuilderDescriptor instead')
+const FlutterCupertinoLayoutBuilder$json = {
+  '1': 'FlutterCupertinoLayoutBuilder',
+};
+
+/// Descriptor for `FlutterCupertinoLayoutBuilder`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoLayoutBuilderDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vTGF5b3V0QnVpbGRlcg==');
+
+@$core.Deprecated('Use flutterCupertinoListWheelScrollViewDescriptor instead')
+const FlutterCupertinoListWheelScrollView$json = {
+  '1': 'FlutterCupertinoListWheelScrollView',
+  '2': [
+    {'1': 'diameter_ratio', '3': 5, '4': 1, '5': 1, '10': 'diameterRatio'},
+    {'1': 'perspective', '3': 6, '4': 1, '5': 1, '10': 'perspective'},
+    {'1': 'off_axis_fraction', '3': 7, '4': 1, '5': 1, '10': 'offAxisFraction'},
+    {'1': 'use_magnifier', '3': 8, '4': 1, '5': 8, '10': 'useMagnifier'},
+    {'1': 'magnification', '3': 9, '4': 1, '5': 1, '10': 'magnification'},
+    {'1': 'over_and_under_center_opacity', '3': 10, '4': 1, '5': 1, '10': 'overAndUnderCenterOpacity'},
+    {'1': 'item_extent', '3': 11, '4': 1, '5': 1, '10': 'itemExtent'},
+    {'1': 'squeeze', '3': 12, '4': 1, '5': 1, '10': 'squeeze'},
+    {'1': 'render_children_outside_viewport', '3': 14, '4': 1, '5': 8, '10': 'renderChildrenOutsideViewport'},
+    {'1': 'restoration_id', '3': 16, '4': 1, '5': 9, '10': 'restorationId'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoListWheelScrollView`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoListWheelScrollViewDescriptor = $convert.base64Decode(
+    'CiNGbHV0dGVyQ3VwZXJ0aW5vTGlzdFdoZWVsU2Nyb2xsVmlldxIlCg5kaWFtZXRlcl9yYXRpbx'
+    'gFIAEoAVINZGlhbWV0ZXJSYXRpbxIgCgtwZXJzcGVjdGl2ZRgGIAEoAVILcGVyc3BlY3RpdmUS'
+    'KgoRb2ZmX2F4aXNfZnJhY3Rpb24YByABKAFSD29mZkF4aXNGcmFjdGlvbhIjCg11c2VfbWFnbm'
+    'lmaWVyGAggASgIUgx1c2VNYWduaWZpZXISJAoNbWFnbmlmaWNhdGlvbhgJIAEoAVINbWFnbmlm'
+    'aWNhdGlvbhJACh1vdmVyX2FuZF91bmRlcl9jZW50ZXJfb3BhY2l0eRgKIAEoAVIZb3ZlckFuZF'
+    'VuZGVyQ2VudGVyT3BhY2l0eRIfCgtpdGVtX2V4dGVudBgLIAEoAVIKaXRlbUV4dGVudBIYCgdz'
+    'cXVlZXplGAwgASgBUgdzcXVlZXplEkcKIHJlbmRlcl9jaGlsZHJlbl9vdXRzaWRlX3ZpZXdwb3'
+    'J0GA4gASgIUh1yZW5kZXJDaGlsZHJlbk91dHNpZGVWaWV3cG9ydBIlCg5yZXN0b3JhdGlvbl9p'
+    'ZBgQIAEoCVINcmVzdG9yYXRpb25JZA==');
+
+@$core.Deprecated('Use flutterCupertinoListWheelViewportDescriptor instead')
+const FlutterCupertinoListWheelViewport$json = {
+  '1': 'FlutterCupertinoListWheelViewport',
+  '2': [
+    {'1': 'diameter_ratio', '3': 3, '4': 1, '5': 1, '10': 'diameterRatio'},
+    {'1': 'perspective', '3': 4, '4': 1, '5': 1, '10': 'perspective'},
+    {'1': 'off_axis_fraction', '3': 5, '4': 1, '5': 1, '10': 'offAxisFraction'},
+    {'1': 'use_magnifier', '3': 6, '4': 1, '5': 8, '10': 'useMagnifier'},
+    {'1': 'magnification', '3': 7, '4': 1, '5': 1, '10': 'magnification'},
+    {'1': 'over_and_under_center_opacity', '3': 8, '4': 1, '5': 1, '10': 'overAndUnderCenterOpacity'},
+    {'1': 'item_extent', '3': 9, '4': 1, '5': 1, '10': 'itemExtent'},
+    {'1': 'squeeze', '3': 10, '4': 1, '5': 1, '10': 'squeeze'},
+    {'1': 'render_children_outside_viewport', '3': 11, '4': 1, '5': 8, '10': 'renderChildrenOutsideViewport'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoListWheelViewport`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoListWheelViewportDescriptor = $convert.base64Decode(
+    'CiFGbHV0dGVyQ3VwZXJ0aW5vTGlzdFdoZWVsVmlld3BvcnQSJQoOZGlhbWV0ZXJfcmF0aW8YAy'
+    'ABKAFSDWRpYW1ldGVyUmF0aW8SIAoLcGVyc3BlY3RpdmUYBCABKAFSC3BlcnNwZWN0aXZlEioK'
+    'EW9mZl9heGlzX2ZyYWN0aW9uGAUgASgBUg9vZmZBeGlzRnJhY3Rpb24SIwoNdXNlX21hZ25pZm'
+    'llchgGIAEoCFIMdXNlTWFnbmlmaWVyEiQKDW1hZ25pZmljYXRpb24YByABKAFSDW1hZ25pZmlj'
+    'YXRpb24SQAodb3Zlcl9hbmRfdW5kZXJfY2VudGVyX29wYWNpdHkYCCABKAFSGW92ZXJBbmRVbm'
+    'RlckNlbnRlck9wYWNpdHkSHwoLaXRlbV9leHRlbnQYCSABKAFSCml0ZW1FeHRlbnQSGAoHc3F1'
+    'ZWV6ZRgKIAEoAVIHc3F1ZWV6ZRJHCiByZW5kZXJfY2hpbGRyZW5fb3V0c2lkZV92aWV3cG9ydB'
+    'gLIAEoCFIdcmVuZGVyQ2hpbGRyZW5PdXRzaWRlVmlld3BvcnQ=');
+
+@$core.Deprecated('Use flutterCupertinoLocalizationsDescriptor instead')
+const FlutterCupertinoLocalizations$json = {
+  '1': 'FlutterCupertinoLocalizations',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoLocalizations`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoLocalizationsDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vTG9jYWxpemF0aW9ucxIdCgVjaGlsZBgFIAEoCzIHLldpZGdldF'
+    'IFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoLookupBoundaryDescriptor instead')
+const FlutterCupertinoLookupBoundary$json = {
+  '1': 'FlutterCupertinoLookupBoundary',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoLookupBoundary`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoLookupBoundaryDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vTG9va3VwQm91bmRhcnkSHQoFY2hpbGQYAyABKAsyBy5XaWRnZX'
+    'RSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoRawMagnifierDescriptor instead')
+const FlutterCupertinoRawMagnifier$json = {
+  '1': 'FlutterCupertinoRawMagnifier',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'magnification_scale', '3': 6, '4': 1, '5': 1, '10': 'magnificationScale'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoRawMagnifier`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoRawMagnifierDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyQ3VwZXJ0aW5vUmF3TWFnbmlmaWVyEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0Ug'
+    'VjaGlsZBIvChNtYWduaWZpY2F0aW9uX3NjYWxlGAYgASgBUhJtYWduaWZpY2F0aW9uU2NhbGU=');
+
+@$core.Deprecated('Use flutterCupertinoMediaQueryDescriptor instead')
+const FlutterCupertinoMediaQuery$json = {
+  '1': 'FlutterCupertinoMediaQuery',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoMediaQuery`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoMediaQueryDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyQ3VwZXJ0aW5vTWVkaWFRdWVyeRIdCgVjaGlsZBgEIAEoCzIHLldpZGdldFIFY2'
+    'hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoModalBarrierDescriptor instead')
+const FlutterCupertinoModalBarrier$json = {
+  '1': 'FlutterCupertinoModalBarrier',
+  '2': [
+    {'1': 'dismissible', '3': 4, '4': 1, '5': 8, '10': 'dismissible'},
+    {'1': 'semantics_label', '3': 6, '4': 1, '5': 9, '10': 'semanticsLabel'},
+    {'1': 'barrier_semantics_dismissible', '3': 7, '4': 1, '5': 8, '10': 'barrierSemanticsDismissible'},
+    {'1': 'semantics_on_tap_hint', '3': 9, '4': 1, '5': 9, '10': 'semanticsOnTapHint'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoModalBarrier`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoModalBarrierDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyQ3VwZXJ0aW5vTW9kYWxCYXJyaWVyEiAKC2Rpc21pc3NpYmxlGAQgASgIUgtkaX'
+    'NtaXNzaWJsZRInCg9zZW1hbnRpY3NfbGFiZWwYBiABKAlSDnNlbWFudGljc0xhYmVsEkIKHWJh'
+    'cnJpZXJfc2VtYW50aWNzX2Rpc21pc3NpYmxlGAcgASgIUhtiYXJyaWVyU2VtYW50aWNzRGlzbW'
+    'lzc2libGUSMQoVc2VtYW50aWNzX29uX3RhcF9oaW50GAkgASgJUhJzZW1hbnRpY3NPblRhcEhp'
+    'bnQ=');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedModalBarrierDescriptor instead')
+const FlutterCupertinoAnimatedModalBarrier$json = {
+  '1': 'FlutterCupertinoAnimatedModalBarrier',
+  '2': [
+    {'1': 'dismissible', '3': 4, '4': 1, '5': 8, '10': 'dismissible'},
+    {'1': 'semantics_label', '3': 5, '4': 1, '5': 9, '10': 'semanticsLabel'},
+    {'1': 'barrier_semantics_dismissible', '3': 6, '4': 1, '5': 8, '10': 'barrierSemanticsDismissible'},
+    {'1': 'semantics_on_tap_hint', '3': 9, '4': 1, '5': 9, '10': 'semanticsOnTapHint'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedModalBarrier`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedModalBarrierDescriptor = $convert.base64Decode(
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRNb2RhbEJhcnJpZXISIAoLZGlzbWlzc2libGUYBC'
+    'ABKAhSC2Rpc21pc3NpYmxlEicKD3NlbWFudGljc19sYWJlbBgFIAEoCVIOc2VtYW50aWNzTGFi'
+    'ZWwSQgodYmFycmllcl9zZW1hbnRpY3NfZGlzbWlzc2libGUYBiABKAhSG2JhcnJpZXJTZW1hbn'
+    'RpY3NEaXNtaXNzaWJsZRIxChVzZW1hbnRpY3Nfb25fdGFwX2hpbnQYCSABKAlSEnNlbWFudGlj'
+    'c09uVGFwSGludA==');
+
+@$core.Deprecated('Use flutterCupertinoNavigationToolbarDescriptor instead')
+const FlutterCupertinoNavigationToolbar$json = {
+  '1': 'FlutterCupertinoNavigationToolbar',
+  '2': [
+    {'1': 'leading', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'leading'},
+    {'1': 'middle', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'middle'},
+    {'1': 'trailing', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'trailing'},
+    {'1': 'center_middle', '3': 6, '4': 1, '5': 8, '10': 'centerMiddle'},
+    {'1': 'middle_spacing', '3': 7, '4': 1, '5': 1, '10': 'middleSpacing'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoNavigationToolbar`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoNavigationToolbarDescriptor = $convert.base64Decode(
+    'CiFGbHV0dGVyQ3VwZXJ0aW5vTmF2aWdhdGlvblRvb2xiYXISIQoHbGVhZGluZxgDIAEoCzIHLl'
+    'dpZGdldFIHbGVhZGluZxIfCgZtaWRkbGUYBCABKAsyBy5XaWRnZXRSBm1pZGRsZRIjCgh0cmFp'
+    'bGluZxgFIAEoCzIHLldpZGdldFIIdHJhaWxpbmcSIwoNY2VudGVyX21pZGRsZRgGIAEoCFIMY2'
+    'VudGVyTWlkZGxlEiUKDm1pZGRsZV9zcGFjaW5nGAcgASgBUg1taWRkbGVTcGFjaW5n');
+
+@$core.Deprecated('Use flutterCupertinoHeroControllerScopeDescriptor instead')
+const FlutterCupertinoHeroControllerScope$json = {
+  '1': 'FlutterCupertinoHeroControllerScope',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoHeroControllerScope`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoHeroControllerScopeDescriptor = $convert.base64Decode(
+    'CiNGbHV0dGVyQ3VwZXJ0aW5vSGVyb0NvbnRyb2xsZXJTY29wZRIdCgVjaGlsZBgEIAEoCzIHLl'
+    'dpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoNavigatorDescriptor instead')
+const FlutterCupertinoNavigator$json = {
+  '1': 'FlutterCupertinoNavigator',
+  '2': [
+    {'1': 'initial_route', '3': 5, '4': 1, '5': 9, '10': 'initialRoute'},
+    {'1': 'reports_route_update_to_engine', '3': 10, '4': 1, '5': 8, '10': 'reportsRouteUpdateToEngine'},
+    {'1': 'request_focus', '3': 13, '4': 1, '5': 8, '10': 'requestFocus'},
+    {'1': 'restoration_scope_id', '3': 14, '4': 1, '5': 9, '10': 'restorationScopeId'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoNavigator`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoNavigatorDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQ3VwZXJ0aW5vTmF2aWdhdG9yEiMKDWluaXRpYWxfcm91dGUYBSABKAlSDGluaX'
+    'RpYWxSb3V0ZRJCCh5yZXBvcnRzX3JvdXRlX3VwZGF0ZV90b19lbmdpbmUYCiABKAhSGnJlcG9y'
+    'dHNSb3V0ZVVwZGF0ZVRvRW5naW5lEiMKDXJlcXVlc3RfZm9jdXMYDSABKAhSDHJlcXVlc3RGb2'
+    'N1cxIwChRyZXN0b3JhdGlvbl9zY29wZV9pZBgOIAEoCVIScmVzdG9yYXRpb25TY29wZUlk');
+
+@$core.Deprecated('Use flutterCupertinoNestedScrollViewDescriptor instead')
+const FlutterCupertinoNestedScrollView$json = {
+  '1': 'FlutterCupertinoNestedScrollView',
+  '2': [
+    {'1': 'reverse', '3': 5, '4': 1, '5': 8, '10': 'reverse'},
+    {'1': 'body', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'body'},
+    {'1': 'float_header_slivers', '3': 10, '4': 1, '5': 8, '10': 'floatHeaderSlivers'},
+    {'1': 'restoration_id', '3': 12, '4': 1, '5': 9, '10': 'restorationId'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoNestedScrollView`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoNestedScrollViewDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vTmVzdGVkU2Nyb2xsVmlldxIYCgdyZXZlcnNlGAUgASgIUgdyZX'
+    'ZlcnNlEhsKBGJvZHkYCCABKAsyBy5XaWRnZXRSBGJvZHkSMAoUZmxvYXRfaGVhZGVyX3NsaXZl'
+    'cnMYCiABKAhSEmZsb2F0SGVhZGVyU2xpdmVycxIlCg5yZXN0b3JhdGlvbl9pZBgMIAEoCVINcm'
+    'VzdG9yYXRpb25JZA==');
+
+@$core.Deprecated('Use flutterCupertinoSliverOverlapAbsorberDescriptor instead')
+const FlutterCupertinoSliverOverlapAbsorber$json = {
+  '1': 'FlutterCupertinoSliverOverlapAbsorber',
+  '2': [
+    {'1': 'sliver', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverOverlapAbsorber`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverOverlapAbsorberDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyT3ZlcmxhcEFic29yYmVyEh8KBnNsaXZlchgEIAEoCz'
+    'IHLldpZGdldFIGc2xpdmVy');
+
+@$core.Deprecated('Use flutterCupertinoSliverOverlapInjectorDescriptor instead')
+const FlutterCupertinoSliverOverlapInjector$json = {
+  '1': 'FlutterCupertinoSliverOverlapInjector',
+  '2': [
+    {'1': 'sliver', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverOverlapInjector`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverOverlapInjectorDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyT3ZlcmxhcEluamVjdG9yEh8KBnNsaXZlchgEIAEoCz'
+    'IHLldpZGdldFIGc2xpdmVy');
+
+@$core.Deprecated('Use flutterCupertinoNestedScrollViewViewportDescriptor instead')
+const FlutterCupertinoNestedScrollViewViewport$json = {
+  '1': 'FlutterCupertinoNestedScrollViewViewport',
+  '2': [
+    {'1': 'anchor', '3': 5, '4': 1, '5': 1, '10': 'anchor'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoNestedScrollViewViewport`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoNestedScrollViewViewportDescriptor = $convert.base64Decode(
+    'CihGbHV0dGVyQ3VwZXJ0aW5vTmVzdGVkU2Nyb2xsVmlld1ZpZXdwb3J0EhYKBmFuY2hvchgFIA'
+    'EoAVIGYW5jaG9y');
+
+@$core.Deprecated('Use flutterCupertinoNotificationListenerDescriptor instead')
+const FlutterCupertinoNotificationListener$json = {
+  '1': 'FlutterCupertinoNotificationListener',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoNotificationListener`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoNotificationListenerDescriptor = $convert.base64Decode(
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vTm90aWZpY2F0aW9uTGlzdGVuZXISHQoFY2hpbGQYAyABKAsyBy'
+    '5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoOrientationBuilderDescriptor instead')
+const FlutterCupertinoOrientationBuilder$json = {
+  '1': 'FlutterCupertinoOrientationBuilder',
+};
+
+/// Descriptor for `FlutterCupertinoOrientationBuilder`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoOrientationBuilderDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vT3JpZW50YXRpb25CdWlsZGVy');
+
+@$core.Deprecated('Use flutterCupertinoOverflowBarDescriptor instead')
+const FlutterCupertinoOverflowBar$json = {
+  '1': 'FlutterCupertinoOverflowBar',
+  '2': [
+    {'1': 'spacing', '3': 3, '4': 1, '5': 1, '10': 'spacing'},
+    {'1': 'overflow_spacing', '3': 5, '4': 1, '5': 1, '10': 'overflowSpacing'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoOverflowBar`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoOverflowBarDescriptor = $convert.base64Decode(
+    'ChtGbHV0dGVyQ3VwZXJ0aW5vT3ZlcmZsb3dCYXISGAoHc3BhY2luZxgDIAEoAVIHc3BhY2luZx'
+    'IpChBvdmVyZmxvd19zcGFjaW5nGAUgASgBUg9vdmVyZmxvd1NwYWNpbmc=');
+
+@$core.Deprecated('Use flutterCupertinoOverlayDescriptor instead')
+const FlutterCupertinoOverlay$json = {
+  '1': 'FlutterCupertinoOverlay',
+};
+
+/// Descriptor for `FlutterCupertinoOverlay`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoOverlayDescriptor = $convert.base64Decode(
+    'ChdGbHV0dGVyQ3VwZXJ0aW5vT3ZlcmxheQ==');
+
+@$core.Deprecated('Use flutterCupertinoOverlayPortalDescriptor instead')
+const FlutterCupertinoOverlayPortal$json = {
+  '1': 'FlutterCupertinoOverlayPortal',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoOverlayPortal`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoOverlayPortalDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vT3ZlcmxheVBvcnRhbBIdCgVjaGlsZBgFIAEoCzIHLldpZGdldF'
+    'IFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoGlowingOverscrollIndicatorDescriptor instead')
+const FlutterCupertinoGlowingOverscrollIndicator$json = {
+  '1': 'FlutterCupertinoGlowingOverscrollIndicator',
+  '2': [
+    {'1': 'show_leading', '3': 3, '4': 1, '5': 8, '10': 'showLeading'},
+    {'1': 'show_trailing', '3': 4, '4': 1, '5': 8, '10': 'showTrailing'},
+    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoGlowingOverscrollIndicator`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoGlowingOverscrollIndicatorDescriptor = $convert.base64Decode(
+    'CipGbHV0dGVyQ3VwZXJ0aW5vR2xvd2luZ092ZXJzY3JvbGxJbmRpY2F0b3ISIQoMc2hvd19sZW'
+    'FkaW5nGAMgASgIUgtzaG93TGVhZGluZxIjCg1zaG93X3RyYWlsaW5nGAQgASgIUgxzaG93VHJh'
+    'aWxpbmcSHQoFY2hpbGQYCCABKAsyBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoStretchingOverscrollIndicatorDescriptor instead')
+const FlutterCupertinoStretchingOverscrollIndicator$json = {
+  '1': 'FlutterCupertinoStretchingOverscrollIndicator',
+  '2': [
+    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoStretchingOverscrollIndicator`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoStretchingOverscrollIndicatorDescriptor = $convert.base64Decode(
+    'Ci1GbHV0dGVyQ3VwZXJ0aW5vU3RyZXRjaGluZ092ZXJzY3JvbGxJbmRpY2F0b3ISHQoFY2hpbG'
+    'QYBiABKAsyBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoPageStorageDescriptor instead')
+const FlutterCupertinoPageStorage$json = {
+  '1': 'FlutterCupertinoPageStorage',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoPageStorage`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoPageStorageDescriptor = $convert.base64Decode(
+    'ChtGbHV0dGVyQ3VwZXJ0aW5vUGFnZVN0b3JhZ2USHQoFY2hpbGQYBCABKAsyBy5XaWRnZXRSBW'
+    'NoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoPageViewDescriptor instead')
+const FlutterCupertinoPageView$json = {
+  '1': 'FlutterCupertinoPageView',
+  '2': [
+    {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
+    {'1': 'page_snapping', '3': 7, '4': 1, '5': 8, '10': 'pageSnapping'},
+    {'1': 'allow_implicit_scrolling', '3': 11, '4': 1, '5': 8, '10': 'allowImplicitScrolling'},
+    {'1': 'restoration_id', '3': 12, '4': 1, '5': 9, '10': 'restorationId'},
+    {'1': 'pad_ends', '3': 15, '4': 1, '5': 8, '10': 'padEnds'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoPageView`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoPageViewDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vUGFnZVZpZXcSGAoHcmV2ZXJzZRgEIAEoCFIHcmV2ZXJzZRIjCg'
+    '1wYWdlX3NuYXBwaW5nGAcgASgIUgxwYWdlU25hcHBpbmcSOAoYYWxsb3dfaW1wbGljaXRfc2Ny'
+    'b2xsaW5nGAsgASgIUhZhbGxvd0ltcGxpY2l0U2Nyb2xsaW5nEiUKDnJlc3RvcmF0aW9uX2lkGA'
+    'wgASgJUg1yZXN0b3JhdGlvbklkEhkKCHBhZF9lbmRzGA8gASgIUgdwYWRFbmRz');
+
+@$core.Deprecated('Use flutterCupertinoPerformanceOverlayDescriptor instead')
+const FlutterCupertinoPerformanceOverlay$json = {
+  '1': 'FlutterCupertinoPerformanceOverlay',
+  '2': [
+    {'1': 'options_mask', '3': 3, '4': 1, '5': 3, '10': 'optionsMask'},
+    {'1': 'rasterizer_threshold', '3': 4, '4': 1, '5': 3, '10': 'rasterizerThreshold'},
+    {'1': 'checkerboard_raster_cache_images', '3': 5, '4': 1, '5': 8, '10': 'checkerboardRasterCacheImages'},
+    {'1': 'checkerboard_offscreen_layers', '3': 6, '4': 1, '5': 8, '10': 'checkerboardOffscreenLayers'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoPerformanceOverlay`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoPerformanceOverlayDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vUGVyZm9ybWFuY2VPdmVybGF5EiEKDG9wdGlvbnNfbWFzaxgDIA'
+    'EoA1ILb3B0aW9uc01hc2sSMQoUcmFzdGVyaXplcl90aHJlc2hvbGQYBCABKANSE3Jhc3Rlcml6'
+    'ZXJUaHJlc2hvbGQSRwogY2hlY2tlcmJvYXJkX3Jhc3Rlcl9jYWNoZV9pbWFnZXMYBSABKAhSHW'
+    'NoZWNrZXJib2FyZFJhc3RlckNhY2hlSW1hZ2VzEkIKHWNoZWNrZXJib2FyZF9vZmZzY3JlZW5f'
+    'bGF5ZXJzGAYgASgIUhtjaGVja2VyYm9hcmRPZmZzY3JlZW5MYXllcnM=');
+
+@$core.Deprecated('Use flutterCupertinoPlaceholderDescriptor instead')
+const FlutterCupertinoPlaceholder$json = {
+  '1': 'FlutterCupertinoPlaceholder',
+  '2': [
+    {'1': 'stroke_width', '3': 4, '4': 1, '5': 1, '10': 'strokeWidth'},
+    {'1': 'fallback_width', '3': 5, '4': 1, '5': 1, '10': 'fallbackWidth'},
+    {'1': 'fallback_height', '3': 6, '4': 1, '5': 1, '10': 'fallbackHeight'},
+    {'1': 'child', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoPlaceholder`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoPlaceholderDescriptor = $convert.base64Decode(
+    'ChtGbHV0dGVyQ3VwZXJ0aW5vUGxhY2Vob2xkZXISIQoMc3Ryb2tlX3dpZHRoGAQgASgBUgtzdH'
+    'Jva2VXaWR0aBIlCg5mYWxsYmFja193aWR0aBgFIAEoAVINZmFsbGJhY2tXaWR0aBInCg9mYWxs'
+    'YmFja19oZWlnaHQYBiABKAFSDmZhbGxiYWNrSGVpZ2h0Eh0KBWNoaWxkGAcgASgLMgcuV2lkZ2'
+    'V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoPlatformMenuBarDescriptor instead')
+const FlutterCupertinoPlatformMenuBar$json = {
+  '1': 'FlutterCupertinoPlatformMenuBar',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'body', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'body'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoPlatformMenuBar`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoPlatformMenuBarDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vUGxhdGZvcm1NZW51QmFyEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2'
+    'V0UgVjaGlsZBIbCgRib2R5GAUgASgLMgcuV2lkZ2V0UgRib2R5');
+
+@$core.Deprecated('Use flutterCupertinoPlatformSelectableRegionContextMenuDescriptor instead')
+const FlutterCupertinoPlatformSelectableRegionContextMenu$json = {
+  '1': 'FlutterCupertinoPlatformSelectableRegionContextMenu',
+  '2': [
+    {'1': 'child', '3': 2, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoPlatformSelectableRegionContextMenu`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoPlatformSelectableRegionContextMenuDescriptor = $convert.base64Decode(
+    'CjNGbHV0dGVyQ3VwZXJ0aW5vUGxhdGZvcm1TZWxlY3RhYmxlUmVnaW9uQ29udGV4dE1lbnUSHQ'
+    'oFY2hpbGQYAiABKAsyBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoAndroidViewDescriptor instead')
+const FlutterCupertinoAndroidView$json = {
+  '1': 'FlutterCupertinoAndroidView',
+  '2': [
+    {'1': 'view_type', '3': 3, '4': 1, '5': 9, '10': 'viewType'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAndroidView`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAndroidViewDescriptor = $convert.base64Decode(
+    'ChtGbHV0dGVyQ3VwZXJ0aW5vQW5kcm9pZFZpZXcSGwoJdmlld190eXBlGAMgASgJUgh2aWV3VH'
+    'lwZQ==');
+
+@$core.Deprecated('Use flutterCupertinoUiKitViewDescriptor instead')
+const FlutterCupertinoUiKitView$json = {
+  '1': 'FlutterCupertinoUiKitView',
+  '2': [
+    {'1': 'view_type', '3': 3, '4': 1, '5': 9, '10': 'viewType'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoUiKitView`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoUiKitViewDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQ3VwZXJ0aW5vVWlLaXRWaWV3EhsKCXZpZXdfdHlwZRgDIAEoCVIIdmlld1R5cG'
+    'U=');
+
+@$core.Deprecated('Use flutterCupertinoHtmlElementViewDescriptor instead')
+const FlutterCupertinoHtmlElementView$json = {
+  '1': 'FlutterCupertinoHtmlElementView',
+  '2': [
+    {'1': 'view_type', '3': 3, '4': 1, '5': 9, '10': 'viewType'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoHtmlElementView`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoHtmlElementViewDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vSHRtbEVsZW1lbnRWaWV3EhsKCXZpZXdfdHlwZRgDIAEoCVIIdm'
+    'lld1R5cGU=');
+
+@$core.Deprecated('Use flutterCupertinoPlatformViewLinkDescriptor instead')
+const FlutterCupertinoPlatformViewLink$json = {
+  '1': 'FlutterCupertinoPlatformViewLink',
+  '2': [
+    {'1': 'view_type', '3': 5, '4': 1, '5': 9, '10': 'viewType'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoPlatformViewLink`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoPlatformViewLinkDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vUGxhdGZvcm1WaWV3TGluaxIbCgl2aWV3X3R5cGUYBSABKAlSCH'
+    'ZpZXdUeXBl');
+
+@$core.Deprecated('Use flutterCupertinoPlatformViewSurfaceDescriptor instead')
+const FlutterCupertinoPlatformViewSurface$json = {
+  '1': 'FlutterCupertinoPlatformViewSurface',
+};
+
+/// Descriptor for `FlutterCupertinoPlatformViewSurface`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoPlatformViewSurfaceDescriptor = $convert.base64Decode(
+    'CiNGbHV0dGVyQ3VwZXJ0aW5vUGxhdGZvcm1WaWV3U3VyZmFjZQ==');
+
+@$core.Deprecated('Use flutterCupertinoAndroidViewSurfaceDescriptor instead')
+const FlutterCupertinoAndroidViewSurface$json = {
+  '1': 'FlutterCupertinoAndroidViewSurface',
+};
+
+/// Descriptor for `FlutterCupertinoAndroidViewSurface`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAndroidViewSurfaceDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vQW5kcm9pZFZpZXdTdXJmYWNl');
+
+@$core.Deprecated('Use flutterCupertinoPreferredSizeWidgetDescriptor instead')
+const FlutterCupertinoPreferredSizeWidget$json = {
+  '1': 'FlutterCupertinoPreferredSizeWidget',
+};
+
+/// Descriptor for `FlutterCupertinoPreferredSizeWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoPreferredSizeWidgetDescriptor = $convert.base64Decode(
+    'CiNGbHV0dGVyQ3VwZXJ0aW5vUHJlZmVycmVkU2l6ZVdpZGdldA==');
+
+@$core.Deprecated('Use flutterCupertinoPreferredSizeDescriptor instead')
+const FlutterCupertinoPreferredSize$json = {
+  '1': 'FlutterCupertinoPreferredSize',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoPreferredSize`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoPreferredSizeDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vUHJlZmVycmVkU2l6ZRIdCgVjaGlsZBgEIAEoCzIHLldpZGdldF'
+    'IFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoPrimaryScrollControllerDescriptor instead')
+const FlutterCupertinoPrimaryScrollController$json = {
+  '1': 'FlutterCupertinoPrimaryScrollController',
+  '2': [
+    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoPrimaryScrollController`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoPrimaryScrollControllerDescriptor = $convert.base64Decode(
+    'CidGbHV0dGVyQ3VwZXJ0aW5vUHJpbWFyeVNjcm9sbENvbnRyb2xsZXISHQoFY2hpbGQYBiABKA'
+    'syBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoRawKeyboardListenerDescriptor instead')
+const FlutterCupertinoRawKeyboardListener$json = {
+  '1': 'FlutterCupertinoRawKeyboardListener',
+  '2': [
+    {'1': 'autofocus', '3': 4, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'include_semantics', '3': 5, '4': 1, '5': 8, '10': 'includeSemantics'},
+    {'1': 'child', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoRawKeyboardListener`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoRawKeyboardListenerDescriptor = $convert.base64Decode(
+    'CiNGbHV0dGVyQ3VwZXJ0aW5vUmF3S2V5Ym9hcmRMaXN0ZW5lchIcCglhdXRvZm9jdXMYBCABKA'
+    'hSCWF1dG9mb2N1cxIrChFpbmNsdWRlX3NlbWFudGljcxgFIAEoCFIQaW5jbHVkZVNlbWFudGlj'
+    'cxIdCgVjaGlsZBgHIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoReorderableListDescriptor instead')
+const FlutterCupertinoReorderableList$json = {
+  '1': 'FlutterCupertinoReorderableList',
+  '2': [
+    {'1': 'item_count', '3': 4, '4': 1, '5': 3, '10': 'itemCount'},
+    {'1': 'item_extent', '3': 8, '4': 1, '5': 1, '10': 'itemExtent'},
+    {'1': 'prototype_item', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'prototypeItem'},
+    {'1': 'reverse', '3': 13, '4': 1, '5': 8, '10': 'reverse'},
+    {'1': 'primary', '3': 15, '4': 1, '5': 8, '10': 'primary'},
+    {'1': 'shrink_wrap', '3': 17, '4': 1, '5': 8, '10': 'shrinkWrap'},
+    {'1': 'anchor', '3': 18, '4': 1, '5': 1, '10': 'anchor'},
+    {'1': 'cache_extent', '3': 19, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'restoration_id', '3': 22, '4': 1, '5': 9, '10': 'restorationId'},
+    {'1': 'auto_scroller_velocity_scalar', '3': 24, '4': 1, '5': 1, '10': 'autoScrollerVelocityScalar'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoReorderableList`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoReorderableListDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vUmVvcmRlcmFibGVMaXN0Eh0KCml0ZW1fY291bnQYBCABKANSCW'
+    'l0ZW1Db3VudBIfCgtpdGVtX2V4dGVudBgIIAEoAVIKaXRlbUV4dGVudBIuCg5wcm90b3R5cGVf'
+    'aXRlbRgJIAEoCzIHLldpZGdldFINcHJvdG90eXBlSXRlbRIYCgdyZXZlcnNlGA0gASgIUgdyZX'
+    'ZlcnNlEhgKB3ByaW1hcnkYDyABKAhSB3ByaW1hcnkSHwoLc2hyaW5rX3dyYXAYESABKAhSCnNo'
+    'cmlua1dyYXASFgoGYW5jaG9yGBIgASgBUgZhbmNob3ISIQoMY2FjaGVfZXh0ZW50GBMgASgBUg'
+    'tjYWNoZUV4dGVudBIlCg5yZXN0b3JhdGlvbl9pZBgWIAEoCVINcmVzdG9yYXRpb25JZBJBCh1h'
+    'dXRvX3Njcm9sbGVyX3ZlbG9jaXR5X3NjYWxhchgYIAEoAVIaYXV0b1Njcm9sbGVyVmVsb2NpdH'
+    'lTY2FsYXI=');
+
+@$core.Deprecated('Use flutterCupertinoSliverReorderableListDescriptor instead')
+const FlutterCupertinoSliverReorderableList$json = {
+  '1': 'FlutterCupertinoSliverReorderableList',
+  '2': [
+    {'1': 'item_count', '3': 5, '4': 1, '5': 3, '10': 'itemCount'},
+    {'1': 'item_extent', '3': 9, '4': 1, '5': 1, '10': 'itemExtent'},
+    {'1': 'prototype_item', '3': 10, '4': 1, '5': 11, '6': '.Widget', '10': 'prototypeItem'},
+    {'1': 'auto_scroller_velocity_scalar', '3': 12, '4': 1, '5': 1, '10': 'autoScrollerVelocityScalar'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverReorderableList`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverReorderableListDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyUmVvcmRlcmFibGVMaXN0Eh0KCml0ZW1fY291bnQYBS'
+    'ABKANSCWl0ZW1Db3VudBIfCgtpdGVtX2V4dGVudBgJIAEoAVIKaXRlbUV4dGVudBIuCg5wcm90'
+    'b3R5cGVfaXRlbRgKIAEoCzIHLldpZGdldFINcHJvdG90eXBlSXRlbRJBCh1hdXRvX3Njcm9sbG'
+    'VyX3ZlbG9jaXR5X3NjYWxhchgMIAEoAVIaYXV0b1Njcm9sbGVyVmVsb2NpdHlTY2FsYXI=');
+
+@$core.Deprecated('Use flutterCupertinoReorderableDragStartListenerDescriptor instead')
+const FlutterCupertinoReorderableDragStartListener$json = {
+  '1': 'FlutterCupertinoReorderableDragStartListener',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'index', '3': 4, '4': 1, '5': 3, '10': 'index'},
+    {'1': 'enabled', '3': 5, '4': 1, '5': 8, '10': 'enabled'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoReorderableDragStartListener`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoReorderableDragStartListenerDescriptor = $convert.base64Decode(
+    'CixGbHV0dGVyQ3VwZXJ0aW5vUmVvcmRlcmFibGVEcmFnU3RhcnRMaXN0ZW5lchIdCgVjaGlsZB'
+    'gDIAEoCzIHLldpZGdldFIFY2hpbGQSFAoFaW5kZXgYBCABKANSBWluZGV4EhgKB2VuYWJsZWQY'
+    'BSABKAhSB2VuYWJsZWQ=');
+
+@$core.Deprecated('Use flutterCupertinoReorderableDelayedDragStartListenerDescriptor instead')
+const FlutterCupertinoReorderableDelayedDragStartListener$json = {
+  '1': 'FlutterCupertinoReorderableDelayedDragStartListener',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'index', '3': 4, '4': 1, '5': 3, '10': 'index'},
+    {'1': 'enabled', '3': 5, '4': 1, '5': 8, '10': 'enabled'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoReorderableDelayedDragStartListener`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoReorderableDelayedDragStartListenerDescriptor = $convert.base64Decode(
+    'CjNGbHV0dGVyQ3VwZXJ0aW5vUmVvcmRlcmFibGVEZWxheWVkRHJhZ1N0YXJ0TGlzdGVuZXISHQ'
+    'oFY2hpbGQYAyABKAsyBy5XaWRnZXRSBWNoaWxkEhQKBWluZGV4GAQgASgDUgVpbmRleBIYCgdl'
+    'bmFibGVkGAUgASgIUgdlbmFibGVk');
+
+@$core.Deprecated('Use flutterCupertinoRestorationScopeDescriptor instead')
+const FlutterCupertinoRestorationScope$json = {
+  '1': 'FlutterCupertinoRestorationScope',
+  '2': [
+    {'1': 'restoration_id', '3': 3, '4': 1, '5': 9, '10': 'restorationId'},
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoRestorationScope`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoRestorationScopeDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vUmVzdG9yYXRpb25TY29wZRIlCg5yZXN0b3JhdGlvbl9pZBgDIA'
+    'EoCVINcmVzdG9yYXRpb25JZBIdCgVjaGlsZBgEIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoUnmanagedRestorationScopeDescriptor instead')
+const FlutterCupertinoUnmanagedRestorationScope$json = {
+  '1': 'FlutterCupertinoUnmanagedRestorationScope',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoUnmanagedRestorationScope`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoUnmanagedRestorationScopeDescriptor = $convert.base64Decode(
+    'CilGbHV0dGVyQ3VwZXJ0aW5vVW5tYW5hZ2VkUmVzdG9yYXRpb25TY29wZRIdCgVjaGlsZBgEIA'
+    'EoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoRootRestorationScopeDescriptor instead')
+const FlutterCupertinoRootRestorationScope$json = {
+  '1': 'FlutterCupertinoRootRestorationScope',
+  '2': [
+    {'1': 'restoration_id', '3': 3, '4': 1, '5': 9, '10': 'restorationId'},
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoRootRestorationScope`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoRootRestorationScopeDescriptor = $convert.base64Decode(
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vUm9vdFJlc3RvcmF0aW9uU2NvcGUSJQoOcmVzdG9yYXRpb25faW'
+    'QYAyABKAlSDXJlc3RvcmF0aW9uSWQSHQoFY2hpbGQYBCABKAsyBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoRouterDescriptor instead')
+const FlutterCupertinoRouter$json = {
+  '1': 'FlutterCupertinoRouter',
+  '2': [
+    {'1': 'restoration_scope_id', '3': 7, '4': 1, '5': 9, '10': 'restorationScopeId'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoRouter`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoRouterDescriptor = $convert.base64Decode(
+    'ChZGbHV0dGVyQ3VwZXJ0aW5vUm91dGVyEjAKFHJlc3RvcmF0aW9uX3Njb3BlX2lkGAcgASgJUh'
+    'JyZXN0b3JhdGlvblNjb3BlSWQ=');
+
+@$core.Deprecated('Use flutterCupertinoBackButtonListenerDescriptor instead')
+const FlutterCupertinoBackButtonListener$json = {
+  '1': 'FlutterCupertinoBackButtonListener',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoBackButtonListener`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoBackButtonListenerDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vQmFja0J1dHRvbkxpc3RlbmVyEh0KBWNoaWxkGAMgASgLMgcuV2'
+    'lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoSafeAreaDescriptor instead')
+const FlutterCupertinoSafeArea$json = {
+  '1': 'FlutterCupertinoSafeArea',
+  '2': [
+    {'1': 'left', '3': 3, '4': 1, '5': 8, '10': 'left'},
+    {'1': 'top', '3': 4, '4': 1, '5': 8, '10': 'top'},
+    {'1': 'right', '3': 5, '4': 1, '5': 8, '10': 'right'},
+    {'1': 'bottom', '3': 6, '4': 1, '5': 8, '10': 'bottom'},
+    {'1': 'maintain_bottom_view_padding', '3': 8, '4': 1, '5': 8, '10': 'maintainBottomViewPadding'},
+    {'1': 'child', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSafeArea`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSafeAreaDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vU2FmZUFyZWESEgoEbGVmdBgDIAEoCFIEbGVmdBIQCgN0b3AYBC'
+    'ABKAhSA3RvcBIUCgVyaWdodBgFIAEoCFIFcmlnaHQSFgoGYm90dG9tGAYgASgIUgZib3R0b20S'
+    'PwocbWFpbnRhaW5fYm90dG9tX3ZpZXdfcGFkZGluZxgIIAEoCFIZbWFpbnRhaW5Cb3R0b21WaW'
+    'V3UGFkZGluZxIdCgVjaGlsZBgJIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoSliverSafeAreaDescriptor instead')
+const FlutterCupertinoSliverSafeArea$json = {
+  '1': 'FlutterCupertinoSliverSafeArea',
+  '2': [
+    {'1': 'left', '3': 3, '4': 1, '5': 8, '10': 'left'},
+    {'1': 'top', '3': 4, '4': 1, '5': 8, '10': 'top'},
+    {'1': 'right', '3': 5, '4': 1, '5': 8, '10': 'right'},
+    {'1': 'bottom', '3': 6, '4': 1, '5': 8, '10': 'bottom'},
+    {'1': 'sliver', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverSafeArea`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverSafeAreaDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyU2FmZUFyZWESEgoEbGVmdBgDIAEoCFIEbGVmdBIQCg'
+    'N0b3AYBCABKAhSA3RvcBIUCgVyaWdodBgFIAEoCFIFcmlnaHQSFgoGYm90dG9tGAYgASgIUgZi'
+    'b3R0b20SHwoGc2xpdmVyGAggASgLMgcuV2lkZ2V0UgZzbGl2ZXI=');
+
+@$core.Deprecated('Use flutterCupertinoScrollConfigurationDescriptor instead')
+const FlutterCupertinoScrollConfiguration$json = {
+  '1': 'FlutterCupertinoScrollConfiguration',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoScrollConfiguration`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoScrollConfigurationDescriptor = $convert.base64Decode(
+    'CiNGbHV0dGVyQ3VwZXJ0aW5vU2Nyb2xsQ29uZmlndXJhdGlvbhIdCgVjaGlsZBgEIAEoCzIHLl'
+    'dpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoScrollNotificationObserverDescriptor instead')
+const FlutterCupertinoScrollNotificationObserver$json = {
+  '1': 'FlutterCupertinoScrollNotificationObserver',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoScrollNotificationObserver`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoScrollNotificationObserverDescriptor = $convert.base64Decode(
+    'CipGbHV0dGVyQ3VwZXJ0aW5vU2Nyb2xsTm90aWZpY2F0aW9uT2JzZXJ2ZXISHQoFY2hpbGQYAy'
+    'ABKAsyBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoScrollViewDescriptor instead')
+const FlutterCupertinoScrollView$json = {
+  '1': 'FlutterCupertinoScrollView',
+  '2': [
+    {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
+    {'1': 'primary', '3': 6, '4': 1, '5': 8, '10': 'primary'},
+    {'1': 'shrink_wrap', '3': 9, '4': 1, '5': 8, '10': 'shrinkWrap'},
+    {'1': 'anchor', '3': 11, '4': 1, '5': 1, '10': 'anchor'},
+    {'1': 'cache_extent', '3': 12, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'semantic_child_count', '3': 13, '4': 1, '5': 3, '10': 'semanticChildCount'},
+    {'1': 'restoration_id', '3': 16, '4': 1, '5': 9, '10': 'restorationId'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoScrollView`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoScrollViewDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyQ3VwZXJ0aW5vU2Nyb2xsVmlldxIYCgdyZXZlcnNlGAQgASgIUgdyZXZlcnNlEh'
+    'gKB3ByaW1hcnkYBiABKAhSB3ByaW1hcnkSHwoLc2hyaW5rX3dyYXAYCSABKAhSCnNocmlua1dy'
+    'YXASFgoGYW5jaG9yGAsgASgBUgZhbmNob3ISIQoMY2FjaGVfZXh0ZW50GAwgASgBUgtjYWNoZU'
+    'V4dGVudBIwChRzZW1hbnRpY19jaGlsZF9jb3VudBgNIAEoA1ISc2VtYW50aWNDaGlsZENvdW50'
+    'EiUKDnJlc3RvcmF0aW9uX2lkGBAgASgJUg1yZXN0b3JhdGlvbklk');
+
+@$core.Deprecated('Use flutterCupertinoCustomScrollViewDescriptor instead')
+const FlutterCupertinoCustomScrollView$json = {
+  '1': 'FlutterCupertinoCustomScrollView',
+  '2': [
+    {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
+    {'1': 'primary', '3': 6, '4': 1, '5': 8, '10': 'primary'},
+    {'1': 'shrink_wrap', '3': 9, '4': 1, '5': 8, '10': 'shrinkWrap'},
+    {'1': 'anchor', '3': 11, '4': 1, '5': 1, '10': 'anchor'},
+    {'1': 'cache_extent', '3': 12, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'semantic_child_count', '3': 14, '4': 1, '5': 3, '10': 'semanticChildCount'},
+    {'1': 'restoration_id', '3': 17, '4': 1, '5': 9, '10': 'restorationId'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCustomScrollView`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCustomScrollViewDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vQ3VzdG9tU2Nyb2xsVmlldxIYCgdyZXZlcnNlGAQgASgIUgdyZX'
+    'ZlcnNlEhgKB3ByaW1hcnkYBiABKAhSB3ByaW1hcnkSHwoLc2hyaW5rX3dyYXAYCSABKAhSCnNo'
+    'cmlua1dyYXASFgoGYW5jaG9yGAsgASgBUgZhbmNob3ISIQoMY2FjaGVfZXh0ZW50GAwgASgBUg'
+    'tjYWNoZUV4dGVudBIwChRzZW1hbnRpY19jaGlsZF9jb3VudBgOIAEoA1ISc2VtYW50aWNDaGls'
+    'ZENvdW50EiUKDnJlc3RvcmF0aW9uX2lkGBEgASgJUg1yZXN0b3JhdGlvbklk');
+
+@$core.Deprecated('Use flutterCupertinoBoxScrollViewDescriptor instead')
+const FlutterCupertinoBoxScrollView$json = {
+  '1': 'FlutterCupertinoBoxScrollView',
+  '2': [
+    {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
+    {'1': 'primary', '3': 6, '4': 1, '5': 8, '10': 'primary'},
+    {'1': 'shrink_wrap', '3': 8, '4': 1, '5': 8, '10': 'shrinkWrap'},
+    {'1': 'cache_extent', '3': 10, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'semantic_child_count', '3': 11, '4': 1, '5': 3, '10': 'semanticChildCount'},
+    {'1': 'restoration_id', '3': 14, '4': 1, '5': 9, '10': 'restorationId'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoBoxScrollView`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoBoxScrollViewDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vQm94U2Nyb2xsVmlldxIYCgdyZXZlcnNlGAQgASgIUgdyZXZlcn'
+    'NlEhgKB3ByaW1hcnkYBiABKAhSB3ByaW1hcnkSHwoLc2hyaW5rX3dyYXAYCCABKAhSCnNocmlu'
+    'a1dyYXASIQoMY2FjaGVfZXh0ZW50GAogASgBUgtjYWNoZUV4dGVudBIwChRzZW1hbnRpY19jaG'
+    'lsZF9jb3VudBgLIAEoA1ISc2VtYW50aWNDaGlsZENvdW50EiUKDnJlc3RvcmF0aW9uX2lkGA4g'
+    'ASgJUg1yZXN0b3JhdGlvbklk');
+
+@$core.Deprecated('Use flutterCupertinoListViewDescriptor instead')
+const FlutterCupertinoListView$json = {
+  '1': 'FlutterCupertinoListView',
+  '2': [
+    {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
+    {'1': 'primary', '3': 6, '4': 1, '5': 8, '10': 'primary'},
+    {'1': 'shrink_wrap', '3': 8, '4': 1, '5': 8, '10': 'shrinkWrap'},
+    {'1': 'item_extent', '3': 10, '4': 1, '5': 1, '10': 'itemExtent'},
+    {'1': 'prototype_item', '3': 11, '4': 1, '5': 11, '6': '.Widget', '10': 'prototypeItem'},
+    {'1': 'add_automatic_keep_alives', '3': 12, '4': 1, '5': 8, '10': 'addAutomaticKeepAlives'},
+    {'1': 'add_repaint_boundaries', '3': 13, '4': 1, '5': 8, '10': 'addRepaintBoundaries'},
+    {'1': 'add_semantic_indexes', '3': 14, '4': 1, '5': 8, '10': 'addSemanticIndexes'},
+    {'1': 'cache_extent', '3': 15, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'semantic_child_count', '3': 17, '4': 1, '5': 3, '10': 'semanticChildCount'},
+    {'1': 'restoration_id', '3': 20, '4': 1, '5': 9, '10': 'restorationId'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoListView`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoListViewDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vTGlzdFZpZXcSGAoHcmV2ZXJzZRgEIAEoCFIHcmV2ZXJzZRIYCg'
+    'dwcmltYXJ5GAYgASgIUgdwcmltYXJ5Eh8KC3Nocmlua193cmFwGAggASgIUgpzaHJpbmtXcmFw'
+    'Eh8KC2l0ZW1fZXh0ZW50GAogASgBUgppdGVtRXh0ZW50Ei4KDnByb3RvdHlwZV9pdGVtGAsgAS'
+    'gLMgcuV2lkZ2V0Ug1wcm90b3R5cGVJdGVtEjkKGWFkZF9hdXRvbWF0aWNfa2VlcF9hbGl2ZXMY'
+    'DCABKAhSFmFkZEF1dG9tYXRpY0tlZXBBbGl2ZXMSNAoWYWRkX3JlcGFpbnRfYm91bmRhcmllcx'
+    'gNIAEoCFIUYWRkUmVwYWludEJvdW5kYXJpZXMSMAoUYWRkX3NlbWFudGljX2luZGV4ZXMYDiAB'
+    'KAhSEmFkZFNlbWFudGljSW5kZXhlcxIhCgxjYWNoZV9leHRlbnQYDyABKAFSC2NhY2hlRXh0ZW'
+    '50EjAKFHNlbWFudGljX2NoaWxkX2NvdW50GBEgASgDUhJzZW1hbnRpY0NoaWxkQ291bnQSJQoO'
+    'cmVzdG9yYXRpb25faWQYFCABKAlSDXJlc3RvcmF0aW9uSWQ=');
+
+@$core.Deprecated('Use flutterCupertinoGridViewDescriptor instead')
+const FlutterCupertinoGridView$json = {
+  '1': 'FlutterCupertinoGridView',
+  '2': [
+    {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
+    {'1': 'primary', '3': 6, '4': 1, '5': 8, '10': 'primary'},
+    {'1': 'shrink_wrap', '3': 8, '4': 1, '5': 8, '10': 'shrinkWrap'},
+    {'1': 'add_automatic_keep_alives', '3': 11, '4': 1, '5': 8, '10': 'addAutomaticKeepAlives'},
+    {'1': 'add_repaint_boundaries', '3': 12, '4': 1, '5': 8, '10': 'addRepaintBoundaries'},
+    {'1': 'add_semantic_indexes', '3': 13, '4': 1, '5': 8, '10': 'addSemanticIndexes'},
+    {'1': 'cache_extent', '3': 14, '4': 1, '5': 1, '10': 'cacheExtent'},
+    {'1': 'semantic_child_count', '3': 16, '4': 1, '5': 3, '10': 'semanticChildCount'},
+    {'1': 'restoration_id', '3': 20, '4': 1, '5': 9, '10': 'restorationId'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoGridView`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoGridViewDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vR3JpZFZpZXcSGAoHcmV2ZXJzZRgEIAEoCFIHcmV2ZXJzZRIYCg'
+    'dwcmltYXJ5GAYgASgIUgdwcmltYXJ5Eh8KC3Nocmlua193cmFwGAggASgIUgpzaHJpbmtXcmFw'
+    'EjkKGWFkZF9hdXRvbWF0aWNfa2VlcF9hbGl2ZXMYCyABKAhSFmFkZEF1dG9tYXRpY0tlZXBBbG'
+    'l2ZXMSNAoWYWRkX3JlcGFpbnRfYm91bmRhcmllcxgMIAEoCFIUYWRkUmVwYWludEJvdW5kYXJp'
+    'ZXMSMAoUYWRkX3NlbWFudGljX2luZGV4ZXMYDSABKAhSEmFkZFNlbWFudGljSW5kZXhlcxIhCg'
+    'xjYWNoZV9leHRlbnQYDiABKAFSC2NhY2hlRXh0ZW50EjAKFHNlbWFudGljX2NoaWxkX2NvdW50'
+    'GBAgASgDUhJzZW1hbnRpY0NoaWxkQ291bnQSJQoOcmVzdG9yYXRpb25faWQYFCABKAlSDXJlc3'
+    'RvcmF0aW9uSWQ=');
+
+@$core.Deprecated('Use flutterCupertinoScrollableDescriptor instead')
+const FlutterCupertinoScrollable$json = {
+  '1': 'FlutterCupertinoScrollable',
+  '2': [
+    {'1': 'exclude_from_semantics', '3': 8, '4': 1, '5': 8, '10': 'excludeFromSemantics'},
+    {'1': 'semantic_child_count', '3': 9, '4': 1, '5': 3, '10': 'semanticChildCount'},
+    {'1': 'restoration_id', '3': 11, '4': 1, '5': 9, '10': 'restorationId'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoScrollable`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoScrollableDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyQ3VwZXJ0aW5vU2Nyb2xsYWJsZRI0ChZleGNsdWRlX2Zyb21fc2VtYW50aWNzGA'
+    'ggASgIUhRleGNsdWRlRnJvbVNlbWFudGljcxIwChRzZW1hbnRpY19jaGlsZF9jb3VudBgJIAEo'
+    'A1ISc2VtYW50aWNDaGlsZENvdW50EiUKDnJlc3RvcmF0aW9uX2lkGAsgASgJUg1yZXN0b3JhdG'
+    'lvbklk');
+
+@$core.Deprecated('Use flutterCupertinoTwoDimensionalScrollableDescriptor instead')
+const FlutterCupertinoTwoDimensionalScrollable$json = {
+  '1': 'FlutterCupertinoTwoDimensionalScrollable',
+  '2': [
+    {'1': 'restoration_id', '3': 7, '4': 1, '5': 9, '10': 'restorationId'},
+    {'1': 'exclude_from_semantics', '3': 8, '4': 1, '5': 8, '10': 'excludeFromSemantics'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoTwoDimensionalScrollable`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoTwoDimensionalScrollableDescriptor = $convert.base64Decode(
+    'CihGbHV0dGVyQ3VwZXJ0aW5vVHdvRGltZW5zaW9uYWxTY3JvbGxhYmxlEiUKDnJlc3RvcmF0aW'
+    '9uX2lkGAcgASgJUg1yZXN0b3JhdGlvbklkEjQKFmV4Y2x1ZGVfZnJvbV9zZW1hbnRpY3MYCCAB'
+    'KAhSFGV4Y2x1ZGVGcm9tU2VtYW50aWNz');
+
+@$core.Deprecated('Use flutterCupertinoRawScrollbarDescriptor instead')
+const FlutterCupertinoRawScrollbar$json = {
+  '1': 'FlutterCupertinoRawScrollbar',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'thumb_visibility', '3': 5, '4': 1, '5': 8, '10': 'thumbVisibility'},
+    {'1': 'thickness', '3': 8, '4': 1, '5': 1, '10': 'thickness'},
+    {'1': 'min_thumb_length', '3': 10, '4': 1, '5': 1, '10': 'minThumbLength'},
+    {'1': 'min_overscroll_length', '3': 11, '4': 1, '5': 1, '10': 'minOverscrollLength'},
+    {'1': 'track_visibility', '3': 12, '4': 1, '5': 8, '10': 'trackVisibility'},
+    {'1': 'interactive', '3': 20, '4': 1, '5': 8, '10': 'interactive'},
+    {'1': 'main_axis_margin', '3': 22, '4': 1, '5': 1, '10': 'mainAxisMargin'},
+    {'1': 'cross_axis_margin', '3': 23, '4': 1, '5': 1, '10': 'crossAxisMargin'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoRawScrollbar`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoRawScrollbarDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyQ3VwZXJ0aW5vUmF3U2Nyb2xsYmFyEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0Ug'
+    'VjaGlsZBIpChB0aHVtYl92aXNpYmlsaXR5GAUgASgIUg90aHVtYlZpc2liaWxpdHkSHAoJdGhp'
+    'Y2tuZXNzGAggASgBUgl0aGlja25lc3MSKAoQbWluX3RodW1iX2xlbmd0aBgKIAEoAVIObWluVG'
+    'h1bWJMZW5ndGgSMgoVbWluX292ZXJzY3JvbGxfbGVuZ3RoGAsgASgBUhNtaW5PdmVyc2Nyb2xs'
+    'TGVuZ3RoEikKEHRyYWNrX3Zpc2liaWxpdHkYDCABKAhSD3RyYWNrVmlzaWJpbGl0eRIgCgtpbn'
+    'RlcmFjdGl2ZRgUIAEoCFILaW50ZXJhY3RpdmUSKAoQbWFpbl9heGlzX21hcmdpbhgWIAEoAVIO'
+    'bWFpbkF4aXNNYXJnaW4SKgoRY3Jvc3NfYXhpc19tYXJnaW4YFyABKAFSD2Nyb3NzQXhpc01hcm'
+    'dpbg==');
+
+@$core.Deprecated('Use flutterCupertinoSelectableRegionDescriptor instead')
+const FlutterCupertinoSelectableRegion$json = {
+  '1': 'FlutterCupertinoSelectableRegion',
+  '2': [
+    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSelectableRegion`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSelectableRegionDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vU2VsZWN0YWJsZVJlZ2lvbhIdCgVjaGlsZBgGIAEoCzIHLldpZG'
+    'dldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoSelectionContainerDescriptor instead')
+const FlutterCupertinoSelectionContainer$json = {
+  '1': 'FlutterCupertinoSelectionContainer',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSelectionContainer`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSelectionContainerDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vU2VsZWN0aW9uQ29udGFpbmVyEh0KBWNoaWxkGAUgASgLMgcuV2'
+    'lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoSelectionRegistrarScopeDescriptor instead')
+const FlutterCupertinoSelectionRegistrarScope$json = {
+  '1': 'FlutterCupertinoSelectionRegistrarScope',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSelectionRegistrarScope`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSelectionRegistrarScopeDescriptor = $convert.base64Decode(
+    'CidGbHV0dGVyQ3VwZXJ0aW5vU2VsZWN0aW9uUmVnaXN0cmFyU2NvcGUSHQoFY2hpbGQYBCABKA'
+    'syBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoSemanticsDebuggerDescriptor instead')
+const FlutterCupertinoSemanticsDebugger$json = {
+  '1': 'FlutterCupertinoSemanticsDebugger',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSemanticsDebugger`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSemanticsDebuggerDescriptor = $convert.base64Decode(
+    'CiFGbHV0dGVyQ3VwZXJ0aW5vU2VtYW50aWNzRGVidWdnZXISHQoFY2hpbGQYAyABKAsyBy5XaW'
+    'RnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoSharedAppDataDescriptor instead')
+const FlutterCupertinoSharedAppData$json = {
+  '1': 'FlutterCupertinoSharedAppData',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSharedAppData`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSharedAppDataDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vU2hhcmVkQXBwRGF0YRIdCgVjaGlsZBgDIAEoCzIHLldpZGdldF'
+    'IFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoShortcutsDescriptor instead')
+const FlutterCupertinoShortcuts$json = {
+  '1': 'FlutterCupertinoShortcuts',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'debug_label', '3': 5, '4': 1, '5': 9, '10': 'debugLabel'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoShortcuts`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoShortcutsDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQ3VwZXJ0aW5vU2hvcnRjdXRzEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaG'
+    'lsZBIfCgtkZWJ1Z19sYWJlbBgFIAEoCVIKZGVidWdMYWJlbA==');
+
+@$core.Deprecated('Use flutterCupertinoCallbackShortcutsDescriptor instead')
+const FlutterCupertinoCallbackShortcuts$json = {
+  '1': 'FlutterCupertinoCallbackShortcuts',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoCallbackShortcuts`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoCallbackShortcutsDescriptor = $convert.base64Decode(
+    'CiFGbHV0dGVyQ3VwZXJ0aW5vQ2FsbGJhY2tTaG9ydGN1dHMSHQoFY2hpbGQYBCABKAsyBy5XaW'
+    'RnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoShortcutRegistrarDescriptor instead')
+const FlutterCupertinoShortcutRegistrar$json = {
+  '1': 'FlutterCupertinoShortcutRegistrar',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoShortcutRegistrar`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoShortcutRegistrarDescriptor = $convert.base64Decode(
+    'CiFGbHV0dGVyQ3VwZXJ0aW5vU2hvcnRjdXRSZWdpc3RyYXISHQoFY2hpbGQYAyABKAsyBy5XaW'
+    'RnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoSingleChildScrollViewDescriptor instead')
+const FlutterCupertinoSingleChildScrollView$json = {
+  '1': 'FlutterCupertinoSingleChildScrollView',
+  '2': [
+    {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
+    {'1': 'primary', '3': 6, '4': 1, '5': 8, '10': 'primary'},
+    {'1': 'child', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'restoration_id', '3': 12, '4': 1, '5': 9, '10': 'restorationId'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSingleChildScrollView`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSingleChildScrollViewDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyQ3VwZXJ0aW5vU2luZ2xlQ2hpbGRTY3JvbGxWaWV3EhgKB3JldmVyc2UYBCABKA'
+    'hSB3JldmVyc2USGAoHcHJpbWFyeRgGIAEoCFIHcHJpbWFyeRIdCgVjaGlsZBgJIAEoCzIHLldp'
+    'ZGdldFIFY2hpbGQSJQoOcmVzdG9yYXRpb25faWQYDCABKAlSDXJlc3RvcmF0aW9uSWQ=');
+
+@$core.Deprecated('Use flutterCupertinoSizeChangedLayoutNotifierDescriptor instead')
+const FlutterCupertinoSizeChangedLayoutNotifier$json = {
+  '1': 'FlutterCupertinoSizeChangedLayoutNotifier',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSizeChangedLayoutNotifier`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSizeChangedLayoutNotifierDescriptor = $convert.base64Decode(
+    'CilGbHV0dGVyQ3VwZXJ0aW5vU2l6ZUNoYW5nZWRMYXlvdXROb3RpZmllchIdCgVjaGlsZBgDIA'
+    'EoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoSliverWithKeepAliveWidgetDescriptor instead')
+const FlutterCupertinoSliverWithKeepAliveWidget$json = {
+  '1': 'FlutterCupertinoSliverWithKeepAliveWidget',
+};
+
+/// Descriptor for `FlutterCupertinoSliverWithKeepAliveWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverWithKeepAliveWidgetDescriptor = $convert.base64Decode(
+    'CilGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyV2l0aEtlZXBBbGl2ZVdpZGdldA==');
+
+@$core.Deprecated('Use flutterCupertinoSliverMultiBoxAdaptorWidgetDescriptor instead')
+const FlutterCupertinoSliverMultiBoxAdaptorWidget$json = {
+  '1': 'FlutterCupertinoSliverMultiBoxAdaptorWidget',
+};
+
+/// Descriptor for `FlutterCupertinoSliverMultiBoxAdaptorWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverMultiBoxAdaptorWidgetDescriptor = $convert.base64Decode(
+    'CitGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyTXVsdGlCb3hBZGFwdG9yV2lkZ2V0');
+
+@$core.Deprecated('Use flutterCupertinoSliverListDescriptor instead')
+const FlutterCupertinoSliverList$json = {
+  '1': 'FlutterCupertinoSliverList',
+};
+
+/// Descriptor for `FlutterCupertinoSliverList`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverListDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyTGlzdA==');
+
+@$core.Deprecated('Use flutterCupertinoSliverFixedExtentListDescriptor instead')
+const FlutterCupertinoSliverFixedExtentList$json = {
+  '1': 'FlutterCupertinoSliverFixedExtentList',
+  '2': [
+    {'1': 'item_extent', '3': 4, '4': 1, '5': 1, '10': 'itemExtent'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverFixedExtentList`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverFixedExtentListDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyRml4ZWRFeHRlbnRMaXN0Eh8KC2l0ZW1fZXh0ZW50GA'
+    'QgASgBUgppdGVtRXh0ZW50');
+
+@$core.Deprecated('Use flutterCupertinoSliverGridDescriptor instead')
+const FlutterCupertinoSliverGrid$json = {
+  '1': 'FlutterCupertinoSliverGrid',
+};
+
+/// Descriptor for `FlutterCupertinoSliverGrid`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverGridDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyR3JpZA==');
+
+@$core.Deprecated('Use flutterCupertinoSliverOpacityDescriptor instead')
+const FlutterCupertinoSliverOpacity$json = {
+  '1': 'FlutterCupertinoSliverOpacity',
+  '2': [
+    {'1': 'opacity', '3': 3, '4': 1, '5': 1, '10': 'opacity'},
+    {'1': 'always_include_semantics', '3': 4, '4': 1, '5': 8, '10': 'alwaysIncludeSemantics'},
+    {'1': 'sliver', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverOpacity`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverOpacityDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyT3BhY2l0eRIYCgdvcGFjaXR5GAMgASgBUgdvcGFjaX'
+    'R5EjgKGGFsd2F5c19pbmNsdWRlX3NlbWFudGljcxgEIAEoCFIWYWx3YXlzSW5jbHVkZVNlbWFu'
+    'dGljcxIfCgZzbGl2ZXIYBSABKAsyBy5XaWRnZXRSBnNsaXZlcg==');
+
+@$core.Deprecated('Use flutterCupertinoSliverIgnorePointerDescriptor instead')
+const FlutterCupertinoSliverIgnorePointer$json = {
+  '1': 'FlutterCupertinoSliverIgnorePointer',
+  '2': [
+    {'1': 'ignoring', '3': 3, '4': 1, '5': 8, '10': 'ignoring'},
+    {'1': 'ignoring_semantics', '3': 4, '4': 1, '5': 8, '10': 'ignoringSemantics'},
+    {'1': 'sliver', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverIgnorePointer`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverIgnorePointerDescriptor = $convert.base64Decode(
+    'CiNGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVySWdub3JlUG9pbnRlchIaCghpZ25vcmluZxgDIAEoCF'
+    'IIaWdub3JpbmcSLQoSaWdub3Jpbmdfc2VtYW50aWNzGAQgASgIUhFpZ25vcmluZ1NlbWFudGlj'
+    'cxIfCgZzbGl2ZXIYBSABKAsyBy5XaWRnZXRSBnNsaXZlcg==');
+
+@$core.Deprecated('Use flutterCupertinoSliverOffstageDescriptor instead')
+const FlutterCupertinoSliverOffstage$json = {
+  '1': 'FlutterCupertinoSliverOffstage',
+  '2': [
+    {'1': 'offstage', '3': 3, '4': 1, '5': 8, '10': 'offstage'},
+    {'1': 'sliver', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverOffstage`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverOffstageDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyT2Zmc3RhZ2USGgoIb2Zmc3RhZ2UYAyABKAhSCG9mZn'
+    'N0YWdlEh8KBnNsaXZlchgEIAEoCzIHLldpZGdldFIGc2xpdmVy');
+
+@$core.Deprecated('Use flutterCupertinoKeepAliveDescriptor instead')
+const FlutterCupertinoKeepAlive$json = {
+  '1': 'FlutterCupertinoKeepAlive',
+  '2': [
+    {'1': 'keep_alive', '3': 3, '4': 1, '5': 8, '10': 'keepAlive'},
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoKeepAlive`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoKeepAliveDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQ3VwZXJ0aW5vS2VlcEFsaXZlEh0KCmtlZXBfYWxpdmUYAyABKAhSCWtlZXBBbG'
+    'l2ZRIdCgVjaGlsZBgEIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoSliverConstrainedCrossAxisDescriptor instead')
+const FlutterCupertinoSliverConstrainedCrossAxis$json = {
+  '1': 'FlutterCupertinoSliverConstrainedCrossAxis',
+  '2': [
+    {'1': 'max_extent', '3': 3, '4': 1, '5': 1, '10': 'maxExtent'},
+    {'1': 'sliver', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverConstrainedCrossAxis`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverConstrainedCrossAxisDescriptor = $convert.base64Decode(
+    'CipGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyQ29uc3RyYWluZWRDcm9zc0F4aXMSHQoKbWF4X2V4dG'
+    'VudBgDIAEoAVIJbWF4RXh0ZW50Eh8KBnNsaXZlchgEIAEoCzIHLldpZGdldFIGc2xpdmVy');
+
+@$core.Deprecated('Use flutterCupertinoSliverCrossAxisExpandedDescriptor instead')
+const FlutterCupertinoSliverCrossAxisExpanded$json = {
+  '1': 'FlutterCupertinoSliverCrossAxisExpanded',
+  '2': [
+    {'1': 'flex', '3': 3, '4': 1, '5': 3, '10': 'flex'},
+    {'1': 'sliver', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverCrossAxisExpanded`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverCrossAxisExpandedDescriptor = $convert.base64Decode(
+    'CidGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyQ3Jvc3NBeGlzRXhwYW5kZWQSEgoEZmxleBgDIAEoA1'
+    'IEZmxleBIfCgZzbGl2ZXIYBCABKAsyBy5XaWRnZXRSBnNsaXZlcg==');
+
+@$core.Deprecated('Use flutterCupertinoSliverCrossAxisGroupDescriptor instead')
+const FlutterCupertinoSliverCrossAxisGroup$json = {
+  '1': 'FlutterCupertinoSliverCrossAxisGroup',
+};
+
+/// Descriptor for `FlutterCupertinoSliverCrossAxisGroup`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverCrossAxisGroupDescriptor = $convert.base64Decode(
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyQ3Jvc3NBeGlzR3JvdXA=');
+
+@$core.Deprecated('Use flutterCupertinoSliverMainAxisGroupDescriptor instead')
+const FlutterCupertinoSliverMainAxisGroup$json = {
+  '1': 'FlutterCupertinoSliverMainAxisGroup',
+};
+
+/// Descriptor for `FlutterCupertinoSliverMainAxisGroup`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverMainAxisGroupDescriptor = $convert.base64Decode(
+    'CiNGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyTWFpbkF4aXNHcm91cA==');
+
+@$core.Deprecated('Use flutterCupertinoSliverFillViewportDescriptor instead')
+const FlutterCupertinoSliverFillViewport$json = {
+  '1': 'FlutterCupertinoSliverFillViewport',
+  '2': [
+    {'1': 'viewport_fraction', '3': 4, '4': 1, '5': 1, '10': 'viewportFraction'},
+    {'1': 'pad_ends', '3': 5, '4': 1, '5': 8, '10': 'padEnds'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverFillViewport`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverFillViewportDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyRmlsbFZpZXdwb3J0EisKEXZpZXdwb3J0X2ZyYWN0aW'
+    '9uGAQgASgBUhB2aWV3cG9ydEZyYWN0aW9uEhkKCHBhZF9lbmRzGAUgASgIUgdwYWRFbmRz');
+
+@$core.Deprecated('Use flutterCupertinoSliverFillRemainingDescriptor instead')
+const FlutterCupertinoSliverFillRemaining$json = {
+  '1': 'FlutterCupertinoSliverFillRemaining',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'has_scroll_body', '3': 4, '4': 1, '5': 8, '10': 'hasScrollBody'},
+    {'1': 'fill_overscroll', '3': 5, '4': 1, '5': 8, '10': 'fillOverscroll'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverFillRemaining`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverFillRemainingDescriptor = $convert.base64Decode(
+    'CiNGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyRmlsbFJlbWFpbmluZxIdCgVjaGlsZBgDIAEoCzIHLl'
+    'dpZGdldFIFY2hpbGQSJgoPaGFzX3Njcm9sbF9ib2R5GAQgASgIUg1oYXNTY3JvbGxCb2R5EicK'
+    'D2ZpbGxfb3ZlcnNjcm9sbBgFIAEoCFIOZmlsbE92ZXJzY3JvbGw=');
+
+@$core.Deprecated('Use flutterCupertinoSliverLayoutBuilderDescriptor instead')
+const FlutterCupertinoSliverLayoutBuilder$json = {
+  '1': 'FlutterCupertinoSliverLayoutBuilder',
+};
+
+/// Descriptor for `FlutterCupertinoSliverLayoutBuilder`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverLayoutBuilderDescriptor = $convert.base64Decode(
+    'CiNGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyTGF5b3V0QnVpbGRlcg==');
+
+@$core.Deprecated('Use flutterCupertinoSliverPersistentHeaderDescriptor instead')
+const FlutterCupertinoSliverPersistentHeader$json = {
+  '1': 'FlutterCupertinoSliverPersistentHeader',
+  '2': [
+    {'1': 'pinned', '3': 4, '4': 1, '5': 8, '10': 'pinned'},
+    {'1': 'floating', '3': 5, '4': 1, '5': 8, '10': 'floating'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverPersistentHeader`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverPersistentHeaderDescriptor = $convert.base64Decode(
+    'CiZGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyUGVyc2lzdGVudEhlYWRlchIWCgZwaW5uZWQYBCABKA'
+    'hSBnBpbm5lZBIaCghmbG9hdGluZxgFIAEoCFIIZmxvYXRpbmc=');
+
+@$core.Deprecated('Use flutterCupertinoSliverPrototypeExtentListDescriptor instead')
+const FlutterCupertinoSliverPrototypeExtentList$json = {
+  '1': 'FlutterCupertinoSliverPrototypeExtentList',
+  '2': [
+    {'1': 'prototype_item', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'prototypeItem'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverPrototypeExtentList`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverPrototypeExtentListDescriptor = $convert.base64Decode(
+    'CilGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyUHJvdG90eXBlRXh0ZW50TGlzdBIuCg5wcm90b3R5cG'
+    'VfaXRlbRgEIAEoCzIHLldpZGdldFINcHJvdG90eXBlSXRlbQ==');
+
+@$core.Deprecated('Use flutterCupertinoSlottedMultiChildRenderObjectWidgetDescriptor instead')
+const FlutterCupertinoSlottedMultiChildRenderObjectWidget$json = {
+  '1': 'FlutterCupertinoSlottedMultiChildRenderObjectWidget',
+};
+
+/// Descriptor for `FlutterCupertinoSlottedMultiChildRenderObjectWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSlottedMultiChildRenderObjectWidgetDescriptor = $convert.base64Decode(
+    'CjNGbHV0dGVyQ3VwZXJ0aW5vU2xvdHRlZE11bHRpQ2hpbGRSZW5kZXJPYmplY3RXaWRnZXQ=');
+
+@$core.Deprecated('Use flutterCupertinoSnapshotWidgetDescriptor instead')
+const FlutterCupertinoSnapshotWidget$json = {
+  '1': 'FlutterCupertinoSnapshotWidget',
+  '2': [
+    {'1': 'autoresize', '3': 5, '4': 1, '5': 8, '10': 'autoresize'},
+    {'1': 'child', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSnapshotWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSnapshotWidgetDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vU25hcHNob3RXaWRnZXQSHgoKYXV0b3Jlc2l6ZRgFIAEoCFIKYX'
+    'V0b3Jlc2l6ZRIdCgVjaGlsZBgHIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoSpacerDescriptor instead')
+const FlutterCupertinoSpacer$json = {
+  '1': 'FlutterCupertinoSpacer',
+  '2': [
+    {'1': 'flex', '3': 3, '4': 1, '5': 3, '10': 'flex'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSpacer`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSpacerDescriptor = $convert.base64Decode(
+    'ChZGbHV0dGVyQ3VwZXJ0aW5vU3BhY2VyEhIKBGZsZXgYAyABKANSBGZsZXg=');
+
+@$core.Deprecated('Use flutterCupertinoStatusTransitionWidgetDescriptor instead')
+const FlutterCupertinoStatusTransitionWidget$json = {
+  '1': 'FlutterCupertinoStatusTransitionWidget',
+};
+
+/// Descriptor for `FlutterCupertinoStatusTransitionWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoStatusTransitionWidgetDescriptor = $convert.base64Decode(
+    'CiZGbHV0dGVyQ3VwZXJ0aW5vU3RhdHVzVHJhbnNpdGlvbldpZGdldA==');
+
+@$core.Deprecated('Use flutterCupertinoTableDescriptor instead')
+const FlutterCupertinoTable$json = {
+  '1': 'FlutterCupertinoTable',
+};
+
+/// Descriptor for `FlutterCupertinoTable`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoTableDescriptor = $convert.base64Decode(
+    'ChVGbHV0dGVyQ3VwZXJ0aW5vVGFibGU=');
+
+@$core.Deprecated('Use flutterCupertinoTableCellDescriptor instead')
+const FlutterCupertinoTableCell$json = {
+  '1': 'FlutterCupertinoTableCell',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoTableCell`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoTableCellDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQ3VwZXJ0aW5vVGFibGVDZWxsEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaG'
+    'lsZA==');
+
+@$core.Deprecated('Use flutterCupertinoTapRegionSurfaceDescriptor instead')
+const FlutterCupertinoTapRegionSurface$json = {
+  '1': 'FlutterCupertinoTapRegionSurface',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoTapRegionSurface`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoTapRegionSurfaceDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vVGFwUmVnaW9uU3VyZmFjZRIdCgVjaGlsZBgDIAEoCzIHLldpZG'
+    'dldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoTapRegionDescriptor instead')
+const FlutterCupertinoTapRegion$json = {
+  '1': 'FlutterCupertinoTapRegion',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'enabled', '3': 4, '4': 1, '5': 8, '10': 'enabled'},
+    {'1': 'debug_label', '3': 9, '4': 1, '5': 9, '10': 'debugLabel'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoTapRegion`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoTapRegionDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQ3VwZXJ0aW5vVGFwUmVnaW9uEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0UgVjaG'
+    'lsZBIYCgdlbmFibGVkGAQgASgIUgdlbmFibGVkEh8KC2RlYnVnX2xhYmVsGAkgASgJUgpkZWJ1'
+    'Z0xhYmVs');
+
+@$core.Deprecated('Use flutterCupertinoTextFieldTapRegionDescriptor instead')
+const FlutterCupertinoTextFieldTapRegion$json = {
+  '1': 'FlutterCupertinoTextFieldTapRegion',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'enabled', '3': 4, '4': 1, '5': 8, '10': 'enabled'},
+    {'1': 'debug_label', '3': 7, '4': 1, '5': 9, '10': 'debugLabel'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoTextFieldTapRegion`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoTextFieldTapRegionDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vVGV4dEZpZWxkVGFwUmVnaW9uEh0KBWNoaWxkGAMgASgLMgcuV2'
+    'lkZ2V0UgVjaGlsZBIYCgdlbmFibGVkGAQgASgIUgdlbmFibGVkEh8KC2RlYnVnX2xhYmVsGAcg'
+    'ASgJUgpkZWJ1Z0xhYmVs');
+
+@$core.Deprecated('Use flutterCupertinoDefaultTextStyleDescriptor instead')
+const FlutterCupertinoDefaultTextStyle$json = {
+  '1': 'FlutterCupertinoDefaultTextStyle',
+  '2': [
+    {'1': 'soft_wrap', '3': 5, '4': 1, '5': 8, '10': 'softWrap'},
+    {'1': 'max_lines', '3': 7, '4': 1, '5': 3, '10': 'maxLines'},
+    {'1': 'child', '3': 10, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoDefaultTextStyle`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoDefaultTextStyleDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vRGVmYXVsdFRleHRTdHlsZRIbCglzb2Z0X3dyYXAYBSABKAhSCH'
+    'NvZnRXcmFwEhsKCW1heF9saW5lcxgHIAEoA1IIbWF4TGluZXMSHQoFY2hpbGQYCiABKAsyBy5X'
+    'aWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoDefaultTextHeightBehaviorDescriptor instead')
+const FlutterCupertinoDefaultTextHeightBehavior$json = {
+  '1': 'FlutterCupertinoDefaultTextHeightBehavior',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoDefaultTextHeightBehavior`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoDefaultTextHeightBehaviorDescriptor = $convert.base64Decode(
+    'CilGbHV0dGVyQ3VwZXJ0aW5vRGVmYXVsdFRleHRIZWlnaHRCZWhhdmlvchIdCgVjaGlsZBgEIA'
+    'EoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoTextDescriptor instead')
+const FlutterCupertinoText$json = {
+  '1': 'FlutterCupertinoText',
+  '2': [
+    {'1': 'data', '3': 2, '4': 1, '5': 9, '10': 'data'},
+    {'1': 'soft_wrap', '3': 9, '4': 1, '5': 8, '10': 'softWrap'},
+    {'1': 'text_scale_factor', '3': 11, '4': 1, '5': 1, '10': 'textScaleFactor'},
+    {'1': 'max_lines', '3': 12, '4': 1, '5': 3, '10': 'maxLines'},
+    {'1': 'semantics_label', '3': 13, '4': 1, '5': 9, '10': 'semanticsLabel'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoText`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoTextDescriptor = $convert.base64Decode(
+    'ChRGbHV0dGVyQ3VwZXJ0aW5vVGV4dBISCgRkYXRhGAIgASgJUgRkYXRhEhsKCXNvZnRfd3JhcB'
+    'gJIAEoCFIIc29mdFdyYXASKgoRdGV4dF9zY2FsZV9mYWN0b3IYCyABKAFSD3RleHRTY2FsZUZh'
+    'Y3RvchIbCgltYXhfbGluZXMYDCABKANSCG1heExpbmVzEicKD3NlbWFudGljc19sYWJlbBgNIA'
+    'EoCVIOc2VtYW50aWNzTGFiZWw=');
+
+@$core.Deprecated('Use flutterCupertinoTextSelectionGestureDetectorDescriptor instead')
+const FlutterCupertinoTextSelectionGestureDetector$json = {
+  '1': 'FlutterCupertinoTextSelectionGestureDetector',
+  '2': [
+    {'1': 'child', '3': 19, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoTextSelectionGestureDetector`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoTextSelectionGestureDetectorDescriptor = $convert.base64Decode(
+    'CixGbHV0dGVyQ3VwZXJ0aW5vVGV4dFNlbGVjdGlvbkdlc3R1cmVEZXRlY3RvchIdCgVjaGlsZB'
+    'gTIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoTextureDescriptor instead')
+const FlutterCupertinoTexture$json = {
+  '1': 'FlutterCupertinoTexture',
+  '2': [
+    {'1': 'texture_id', '3': 3, '4': 1, '5': 3, '10': 'textureId'},
+    {'1': 'freeze', '3': 4, '4': 1, '5': 8, '10': 'freeze'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoTexture`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoTextureDescriptor = $convert.base64Decode(
+    'ChdGbHV0dGVyQ3VwZXJ0aW5vVGV4dHVyZRIdCgp0ZXh0dXJlX2lkGAMgASgDUgl0ZXh0dXJlSW'
+    'QSFgoGZnJlZXplGAQgASgIUgZmcmVlemU=');
+
+@$core.Deprecated('Use flutterCupertinoTickerModeDescriptor instead')
+const FlutterCupertinoTickerMode$json = {
+  '1': 'FlutterCupertinoTickerMode',
+  '2': [
+    {'1': 'enabled', '3': 3, '4': 1, '5': 8, '10': 'enabled'},
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoTickerMode`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoTickerModeDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyQ3VwZXJ0aW5vVGlja2VyTW9kZRIYCgdlbmFibGVkGAMgASgIUgdlbmFibGVkEh'
+    '0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoTitleDescriptor instead')
+const FlutterCupertinoTitle$json = {
+  '1': 'FlutterCupertinoTitle',
+  '2': [
+    {'1': 'title', '3': 3, '4': 1, '5': 9, '10': 'title'},
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoTitle`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoTitleDescriptor = $convert.base64Decode(
+    'ChVGbHV0dGVyQ3VwZXJ0aW5vVGl0bGUSFAoFdGl0bGUYAyABKAlSBXRpdGxlEh0KBWNoaWxkGA'
+    'UgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedWidgetDescriptor instead')
+const FlutterCupertinoAnimatedWidget$json = {
+  '1': 'FlutterCupertinoAnimatedWidget',
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedWidgetDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRXaWRnZXQ=');
+
+@$core.Deprecated('Use flutterCupertinoSlideTransitionDescriptor instead')
+const FlutterCupertinoSlideTransition$json = {
+  '1': 'FlutterCupertinoSlideTransition',
+  '2': [
+    {'1': 'transform_hit_tests', '3': 4, '4': 1, '5': 8, '10': 'transformHitTests'},
+    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSlideTransition`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSlideTransitionDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vU2xpZGVUcmFuc2l0aW9uEi4KE3RyYW5zZm9ybV9oaXRfdGVzdH'
+    'MYBCABKAhSEXRyYW5zZm9ybUhpdFRlc3RzEh0KBWNoaWxkGAYgASgLMgcuV2lkZ2V0UgVjaGls'
+    'ZA==');
+
+@$core.Deprecated('Use flutterCupertinoScaleTransitionDescriptor instead')
+const FlutterCupertinoScaleTransition$json = {
+  '1': 'FlutterCupertinoScaleTransition',
+  '2': [
+    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoScaleTransition`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoScaleTransitionDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vU2NhbGVUcmFuc2l0aW9uEh0KBWNoaWxkGAYgASgLMgcuV2lkZ2'
+    'V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoRotationTransitionDescriptor instead')
+const FlutterCupertinoRotationTransition$json = {
+  '1': 'FlutterCupertinoRotationTransition',
+  '2': [
+    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoRotationTransition`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoRotationTransitionDescriptor = $convert.base64Decode(
+    'CiJGbHV0dGVyQ3VwZXJ0aW5vUm90YXRpb25UcmFuc2l0aW9uEh0KBWNoaWxkGAYgASgLMgcuV2'
+    'lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoSizeTransitionDescriptor instead')
+const FlutterCupertinoSizeTransition$json = {
+  '1': 'FlutterCupertinoSizeTransition',
+  '2': [
+    {'1': 'axis_alignment', '3': 5, '4': 1, '5': 1, '10': 'axisAlignment'},
+    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSizeTransition`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSizeTransitionDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vU2l6ZVRyYW5zaXRpb24SJQoOYXhpc19hbGlnbm1lbnQYBSABKA'
+    'FSDWF4aXNBbGlnbm1lbnQSHQoFY2hpbGQYBiABKAsyBy5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoFadeTransitionDescriptor instead')
+const FlutterCupertinoFadeTransition$json = {
+  '1': 'FlutterCupertinoFadeTransition',
+  '2': [
+    {'1': 'always_include_semantics', '3': 4, '4': 1, '5': 8, '10': 'alwaysIncludeSemantics'},
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoFadeTransition`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoFadeTransitionDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyQ3VwZXJ0aW5vRmFkZVRyYW5zaXRpb24SOAoYYWx3YXlzX2luY2x1ZGVfc2VtYW'
+    '50aWNzGAQgASgIUhZhbHdheXNJbmNsdWRlU2VtYW50aWNzEh0KBWNoaWxkGAUgASgLMgcuV2lk'
+    'Z2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoSliverFadeTransitionDescriptor instead')
+const FlutterCupertinoSliverFadeTransition$json = {
+  '1': 'FlutterCupertinoSliverFadeTransition',
+  '2': [
+    {'1': 'always_include_semantics', '3': 4, '4': 1, '5': 8, '10': 'alwaysIncludeSemantics'},
+    {'1': 'sliver', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverFadeTransition`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverFadeTransitionDescriptor = $convert.base64Decode(
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyRmFkZVRyYW5zaXRpb24SOAoYYWx3YXlzX2luY2x1ZG'
+    'Vfc2VtYW50aWNzGAQgASgIUhZhbHdheXNJbmNsdWRlU2VtYW50aWNzEh8KBnNsaXZlchgFIAEo'
+    'CzIHLldpZGdldFIGc2xpdmVy');
+
+@$core.Deprecated('Use flutterCupertinoPositionedTransitionDescriptor instead')
+const FlutterCupertinoPositionedTransition$json = {
+  '1': 'FlutterCupertinoPositionedTransition',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoPositionedTransition`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoPositionedTransitionDescriptor = $convert.base64Decode(
+    'CiRGbHV0dGVyQ3VwZXJ0aW5vUG9zaXRpb25lZFRyYW5zaXRpb24SHQoFY2hpbGQYBCABKAsyBy'
+    '5XaWRnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoRelativePositionedTransitionDescriptor instead')
+const FlutterCupertinoRelativePositionedTransition$json = {
+  '1': 'FlutterCupertinoRelativePositionedTransition',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoRelativePositionedTransition`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoRelativePositionedTransitionDescriptor = $convert.base64Decode(
+    'CixGbHV0dGVyQ3VwZXJ0aW5vUmVsYXRpdmVQb3NpdGlvbmVkVHJhbnNpdGlvbhIdCgVjaGlsZB'
+    'gFIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoDecoratedBoxTransitionDescriptor instead')
+const FlutterCupertinoDecoratedBoxTransition$json = {
+  '1': 'FlutterCupertinoDecoratedBoxTransition',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoDecoratedBoxTransition`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoDecoratedBoxTransitionDescriptor = $convert.base64Decode(
+    'CiZGbHV0dGVyQ3VwZXJ0aW5vRGVjb3JhdGVkQm94VHJhbnNpdGlvbhIdCgVjaGlsZBgFIAEoCz'
+    'IHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoAlignTransitionDescriptor instead')
+const FlutterCupertinoAlignTransition$json = {
+  '1': 'FlutterCupertinoAlignTransition',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'width_factor', '3': 5, '4': 1, '5': 1, '10': 'widthFactor'},
+    {'1': 'height_factor', '3': 6, '4': 1, '5': 1, '10': 'heightFactor'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAlignTransition`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAlignTransitionDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQWxpZ25UcmFuc2l0aW9uEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2'
+    'V0UgVjaGlsZBIhCgx3aWR0aF9mYWN0b3IYBSABKAFSC3dpZHRoRmFjdG9yEiMKDWhlaWdodF9m'
+    'YWN0b3IYBiABKAFSDGhlaWdodEZhY3Rvcg==');
+
+@$core.Deprecated('Use flutterCupertinoDefaultTextStyleTransitionDescriptor instead')
+const FlutterCupertinoDefaultTextStyleTransition$json = {
+  '1': 'FlutterCupertinoDefaultTextStyleTransition',
+  '2': [
+    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'soft_wrap', '3': 6, '4': 1, '5': 8, '10': 'softWrap'},
+    {'1': 'max_lines', '3': 8, '4': 1, '5': 3, '10': 'maxLines'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoDefaultTextStyleTransition`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoDefaultTextStyleTransitionDescriptor = $convert.base64Decode(
+    'CipGbHV0dGVyQ3VwZXJ0aW5vRGVmYXVsdFRleHRTdHlsZVRyYW5zaXRpb24SHQoFY2hpbGQYBC'
+    'ABKAsyBy5XaWRnZXRSBWNoaWxkEhsKCXNvZnRfd3JhcBgGIAEoCFIIc29mdFdyYXASGwoJbWF4'
+    'X2xpbmVzGAggASgDUghtYXhMaW5lcw==');
+
+@$core.Deprecated('Use flutterCupertinoListenableBuilderDescriptor instead')
+const FlutterCupertinoListenableBuilder$json = {
+  '1': 'FlutterCupertinoListenableBuilder',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoListenableBuilder`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoListenableBuilderDescriptor = $convert.base64Decode(
+    'CiFGbHV0dGVyQ3VwZXJ0aW5vTGlzdGVuYWJsZUJ1aWxkZXISHQoFY2hpbGQYBSABKAsyBy5XaW'
+    'RnZXRSBWNoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoAnimatedBuilderDescriptor instead')
+const FlutterCupertinoAnimatedBuilder$json = {
+  '1': 'FlutterCupertinoAnimatedBuilder',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoAnimatedBuilder`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoAnimatedBuilderDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRCdWlsZGVyEh0KBWNoaWxkGAUgASgLMgcuV2lkZ2'
+    'V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoTweenAnimationBuilderDescriptor instead')
+const FlutterCupertinoTweenAnimationBuilder$json = {
+  '1': 'FlutterCupertinoTweenAnimationBuilder',
+  '2': [
+    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoTweenAnimationBuilder`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoTweenAnimationBuilderDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyQ3VwZXJ0aW5vVHdlZW5BbmltYXRpb25CdWlsZGVyEh0KBWNoaWxkGAggASgLMg'
+    'cuV2lkZ2V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoTwoDimensionalScrollViewDescriptor instead')
+const FlutterCupertinoTwoDimensionalScrollView$json = {
+  '1': 'FlutterCupertinoTwoDimensionalScrollView',
+  '2': [
+    {'1': 'primary', '3': 3, '4': 1, '5': 8, '10': 'primary'},
+    {'1': 'cache_extent', '3': 8, '4': 1, '5': 1, '10': 'cacheExtent'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoTwoDimensionalScrollView`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoTwoDimensionalScrollViewDescriptor = $convert.base64Decode(
+    'CihGbHV0dGVyQ3VwZXJ0aW5vVHdvRGltZW5zaW9uYWxTY3JvbGxWaWV3EhgKB3ByaW1hcnkYAy'
+    'ABKAhSB3ByaW1hcnkSIQoMY2FjaGVfZXh0ZW50GAggASgBUgtjYWNoZUV4dGVudA==');
+
+@$core.Deprecated('Use flutterCupertinoTwoDimensionalViewportDescriptor instead')
+const FlutterCupertinoTwoDimensionalViewport$json = {
+  '1': 'FlutterCupertinoTwoDimensionalViewport',
+  '2': [
+    {'1': 'cache_extent', '3': 9, '4': 1, '5': 1, '10': 'cacheExtent'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoTwoDimensionalViewport`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoTwoDimensionalViewportDescriptor = $convert.base64Decode(
+    'CiZGbHV0dGVyQ3VwZXJ0aW5vVHdvRGltZW5zaW9uYWxWaWV3cG9ydBIhCgxjYWNoZV9leHRlbn'
+    'QYCSABKAFSC2NhY2hlRXh0ZW50');
+
+@$core.Deprecated('Use flutterCupertinoUndoHistoryDescriptor instead')
+const FlutterCupertinoUndoHistory$json = {
+  '1': 'FlutterCupertinoUndoHistory',
+  '2': [
+    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoUndoHistory`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoUndoHistoryDescriptor = $convert.base64Decode(
+    'ChtGbHV0dGVyQ3VwZXJ0aW5vVW5kb0hpc3RvcnkSHQoFY2hpbGQYCCABKAsyBy5XaWRnZXRSBW'
+    'NoaWxk');
+
+@$core.Deprecated('Use flutterCupertinoUniqueWidgetDescriptor instead')
+const FlutterCupertinoUniqueWidget$json = {
+  '1': 'FlutterCupertinoUniqueWidget',
+};
+
+/// Descriptor for `FlutterCupertinoUniqueWidget`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoUniqueWidgetDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyQ3VwZXJ0aW5vVW5pcXVlV2lkZ2V0');
+
+@$core.Deprecated('Use flutterCupertinoValueListenableBuilderDescriptor instead')
+const FlutterCupertinoValueListenableBuilder$json = {
+  '1': 'FlutterCupertinoValueListenableBuilder',
+  '2': [
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoValueListenableBuilder`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoValueListenableBuilderDescriptor = $convert.base64Decode(
+    'CiZGbHV0dGVyQ3VwZXJ0aW5vVmFsdWVMaXN0ZW5hYmxlQnVpbGRlchIdCgVjaGlsZBgFIAEoCz'
+    'IHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoViewDescriptor instead')
+const FlutterCupertinoView$json = {
+  '1': 'FlutterCupertinoView',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoView`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoViewDescriptor = $convert.base64Decode(
+    'ChRGbHV0dGVyQ3VwZXJ0aW5vVmlldxIdCgVjaGlsZBgDIAEoCzIHLldpZGdldFIFY2hpbGQ=');
+
+@$core.Deprecated('Use flutterCupertinoViewportDescriptor instead')
+const FlutterCupertinoViewport$json = {
+  '1': 'FlutterCupertinoViewport',
+  '2': [
+    {'1': 'anchor', '3': 5, '4': 1, '5': 1, '10': 'anchor'},
+    {'1': 'cache_extent', '3': 8, '4': 1, '5': 1, '10': 'cacheExtent'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoViewport`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoViewportDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQ3VwZXJ0aW5vVmlld3BvcnQSFgoGYW5jaG9yGAUgASgBUgZhbmNob3ISIQoMY2'
+    'FjaGVfZXh0ZW50GAggASgBUgtjYWNoZUV4dGVudA==');
+
+@$core.Deprecated('Use flutterCupertinoShrinkWrappingViewportDescriptor instead')
+const FlutterCupertinoShrinkWrappingViewport$json = {
+  '1': 'FlutterCupertinoShrinkWrappingViewport',
+};
+
+/// Descriptor for `FlutterCupertinoShrinkWrappingViewport`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoShrinkWrappingViewportDescriptor = $convert.base64Decode(
+    'CiZGbHV0dGVyQ3VwZXJ0aW5vU2hyaW5rV3JhcHBpbmdWaWV3cG9ydA==');
+
+@$core.Deprecated('Use flutterCupertinoVisibilityDescriptor instead')
+const FlutterCupertinoVisibility$json = {
+  '1': 'FlutterCupertinoVisibility',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+    {'1': 'replacement', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'replacement'},
+    {'1': 'visible', '3': 5, '4': 1, '5': 8, '10': 'visible'},
+    {'1': 'maintain_state', '3': 6, '4': 1, '5': 8, '10': 'maintainState'},
+    {'1': 'maintain_animation', '3': 7, '4': 1, '5': 8, '10': 'maintainAnimation'},
+    {'1': 'maintain_size', '3': 8, '4': 1, '5': 8, '10': 'maintainSize'},
+    {'1': 'maintain_semantics', '3': 9, '4': 1, '5': 8, '10': 'maintainSemantics'},
+    {'1': 'maintain_interactivity', '3': 10, '4': 1, '5': 8, '10': 'maintainInteractivity'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoVisibility`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoVisibilityDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyQ3VwZXJ0aW5vVmlzaWJpbGl0eRIdCgVjaGlsZBgDIAEoCzIHLldpZGdldFIFY2'
+    'hpbGQSKQoLcmVwbGFjZW1lbnQYBCABKAsyBy5XaWRnZXRSC3JlcGxhY2VtZW50EhgKB3Zpc2li'
+    'bGUYBSABKAhSB3Zpc2libGUSJQoObWFpbnRhaW5fc3RhdGUYBiABKAhSDW1haW50YWluU3RhdG'
+    'USLQoSbWFpbnRhaW5fYW5pbWF0aW9uGAcgASgIUhFtYWludGFpbkFuaW1hdGlvbhIjCg1tYWlu'
+    'dGFpbl9zaXplGAggASgIUgxtYWludGFpblNpemUSLQoSbWFpbnRhaW5fc2VtYW50aWNzGAkgAS'
+    'gIUhFtYWludGFpblNlbWFudGljcxI1ChZtYWludGFpbl9pbnRlcmFjdGl2aXR5GAogASgIUhVt'
+    'YWludGFpbkludGVyYWN0aXZpdHk=');
+
+@$core.Deprecated('Use flutterCupertinoSliverVisibilityDescriptor instead')
+const FlutterCupertinoSliverVisibility$json = {
+  '1': 'FlutterCupertinoSliverVisibility',
+  '2': [
+    {'1': 'sliver', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
+    {'1': 'replacement_sliver', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'replacementSliver'},
+    {'1': 'visible', '3': 5, '4': 1, '5': 8, '10': 'visible'},
+    {'1': 'maintain_state', '3': 6, '4': 1, '5': 8, '10': 'maintainState'},
+    {'1': 'maintain_animation', '3': 7, '4': 1, '5': 8, '10': 'maintainAnimation'},
+    {'1': 'maintain_size', '3': 8, '4': 1, '5': 8, '10': 'maintainSize'},
+    {'1': 'maintain_semantics', '3': 9, '4': 1, '5': 8, '10': 'maintainSemantics'},
+    {'1': 'maintain_interactivity', '3': 10, '4': 1, '5': 8, '10': 'maintainInteractivity'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoSliverVisibility`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoSliverVisibilityDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyVmlzaWJpbGl0eRIfCgZzbGl2ZXIYAyABKAsyBy5XaW'
+    'RnZXRSBnNsaXZlchI2ChJyZXBsYWNlbWVudF9zbGl2ZXIYBCABKAsyBy5XaWRnZXRSEXJlcGxh'
+    'Y2VtZW50U2xpdmVyEhgKB3Zpc2libGUYBSABKAhSB3Zpc2libGUSJQoObWFpbnRhaW5fc3RhdG'
+    'UYBiABKAhSDW1haW50YWluU3RhdGUSLQoSbWFpbnRhaW5fYW5pbWF0aW9uGAcgASgIUhFtYWlu'
+    'dGFpbkFuaW1hdGlvbhIjCg1tYWludGFpbl9zaXplGAggASgIUgxtYWludGFpblNpemUSLQoSbW'
+    'FpbnRhaW5fc2VtYW50aWNzGAkgASgIUhFtYWludGFpblNlbWFudGljcxI1ChZtYWludGFpbl9p'
+    'bnRlcmFjdGl2aXR5GAogASgIUhVtYWludGFpbkludGVyYWN0aXZpdHk=');
+
+@$core.Deprecated('Use flutterCupertinoWidgetInspectorDescriptor instead')
+const FlutterCupertinoWidgetInspector$json = {
+  '1': 'FlutterCupertinoWidgetInspector',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoWidgetInspector`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoWidgetInspectorDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyQ3VwZXJ0aW5vV2lkZ2V0SW5zcGVjdG9yEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2'
+    'V0UgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterCupertinoWillPopScopeDescriptor instead')
+const FlutterCupertinoWillPopScope$json = {
+  '1': 'FlutterCupertinoWillPopScope',
+  '2': [
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterCupertinoWillPopScope`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCupertinoWillPopScopeDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyQ3VwZXJ0aW5vV2lsbFBvcFNjb3BlEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0Ug'
+    'VjaGlsZA==');
+
 @$core.Deprecated('Use flutterMaterialAboutListTileDescriptor instead')
 const FlutterMaterialAboutListTile$json = {
   '1': 'FlutterMaterialAboutListTile',
@@ -11621,5081 +16696,6 @@ const FlutterWidgetsWillPopScope$json = {
 final $typed_data.Uint8List flutterWidgetsWillPopScopeDescriptor = $convert.base64Decode(
     'ChpGbHV0dGVyV2lkZ2V0c1dpbGxQb3BTY29wZRIdCgVjaGlsZBgDIAEoCzIHLldpZGdldFIFY2'
     'hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoActivityIndicatorDescriptor instead')
-const FlutterCupertinoCupertinoActivityIndicator$json = {
-  '1': 'FlutterCupertinoCupertinoActivityIndicator',
-  '2': [
-    {'1': 'animating', '3': 4, '4': 1, '5': 8, '10': 'animating'},
-    {'1': 'radius', '3': 5, '4': 1, '5': 1, '10': 'radius'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoActivityIndicator`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoActivityIndicatorDescriptor = $convert.base64Decode(
-    'CipGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQWN0aXZpdHlJbmRpY2F0b3ISHAoJYW5pbWF0aW'
-    '5nGAQgASgIUglhbmltYXRpbmcSFgoGcmFkaXVzGAUgASgBUgZyYWRpdXM=');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoAdaptiveTextSelectionToolbarDescriptor instead')
-const FlutterCupertinoCupertinoAdaptiveTextSelectionToolbar$json = {
-  '1': 'FlutterCupertinoCupertinoAdaptiveTextSelectionToolbar',
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoAdaptiveTextSelectionToolbar`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoAdaptiveTextSelectionToolbarDescriptor = $convert.base64Decode(
-    'CjVGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQWRhcHRpdmVUZXh0U2VsZWN0aW9uVG9vbGJhcg'
-    '==');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoAppDescriptor instead')
-const FlutterCupertinoCupertinoApp$json = {
-  '1': 'FlutterCupertinoCupertinoApp',
-  '2': [
-    {'1': 'home', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'home'},
-    {'1': 'initial_route', '3': 7, '4': 1, '5': 9, '10': 'initialRoute'},
-    {'1': 'title', '3': 13, '4': 1, '5': 9, '10': 'title'},
-    {'1': 'show_performance_overlay', '3': 21, '4': 1, '5': 8, '10': 'showPerformanceOverlay'},
-    {'1': 'checkerboard_raster_cache_images', '3': 22, '4': 1, '5': 8, '10': 'checkerboardRasterCacheImages'},
-    {'1': 'checkerboard_offscreen_layers', '3': 23, '4': 1, '5': 8, '10': 'checkerboardOffscreenLayers'},
-    {'1': 'show_semantics_debugger', '3': 24, '4': 1, '5': 8, '10': 'showSemanticsDebugger'},
-    {'1': 'debug_show_checked_mode_banner', '3': 25, '4': 1, '5': 8, '10': 'debugShowCheckedModeBanner'},
-    {'1': 'restoration_scope_id', '3': 28, '4': 1, '5': 9, '10': 'restorationScopeId'},
-    {'1': 'use_inherited_media_query', '3': 30, '4': 1, '5': 8, '10': 'useInheritedMediaQuery'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoApp`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoAppDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQXBwEhsKBGhvbWUYBCABKAsyBy5XaWRnZXRSBG'
-    'hvbWUSIwoNaW5pdGlhbF9yb3V0ZRgHIAEoCVIMaW5pdGlhbFJvdXRlEhQKBXRpdGxlGA0gASgJ'
-    'UgV0aXRsZRI4ChhzaG93X3BlcmZvcm1hbmNlX292ZXJsYXkYFSABKAhSFnNob3dQZXJmb3JtYW'
-    '5jZU92ZXJsYXkSRwogY2hlY2tlcmJvYXJkX3Jhc3Rlcl9jYWNoZV9pbWFnZXMYFiABKAhSHWNo'
-    'ZWNrZXJib2FyZFJhc3RlckNhY2hlSW1hZ2VzEkIKHWNoZWNrZXJib2FyZF9vZmZzY3JlZW5fbG'
-    'F5ZXJzGBcgASgIUhtjaGVja2VyYm9hcmRPZmZzY3JlZW5MYXllcnMSNgoXc2hvd19zZW1hbnRp'
-    'Y3NfZGVidWdnZXIYGCABKAhSFXNob3dTZW1hbnRpY3NEZWJ1Z2dlchJCCh5kZWJ1Z19zaG93X2'
-    'NoZWNrZWRfbW9kZV9iYW5uZXIYGSABKAhSGmRlYnVnU2hvd0NoZWNrZWRNb2RlQmFubmVyEjAK'
-    'FHJlc3RvcmF0aW9uX3Njb3BlX2lkGBwgASgJUhJyZXN0b3JhdGlvblNjb3BlSWQSOQoZdXNlX2'
-    'luaGVyaXRlZF9tZWRpYV9xdWVyeRgeIAEoCFIWdXNlSW5oZXJpdGVkTWVkaWFRdWVyeQ==');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoTabBarDescriptor instead')
-const FlutterCupertinoCupertinoTabBar$json = {
-  '1': 'FlutterCupertinoCupertinoTabBar',
-  '2': [
-    {'1': 'current_index', '3': 5, '4': 1, '5': 3, '10': 'currentIndex'},
-    {'1': 'icon_size', '3': 9, '4': 1, '5': 1, '10': 'iconSize'},
-    {'1': 'height', '3': 10, '4': 1, '5': 1, '10': 'height'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoTabBar`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoTabBarDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGFiQmFyEiMKDWN1cnJlbnRfaW5kZXgYBSABKA'
-    'NSDGN1cnJlbnRJbmRleBIbCglpY29uX3NpemUYCSABKAFSCGljb25TaXplEhYKBmhlaWdodBgK'
-    'IAEoAVIGaGVpZ2h0');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoButtonDescriptor instead')
-const FlutterCupertinoCupertinoButton$json = {
-  '1': 'FlutterCupertinoCupertinoButton',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'min_size', '3': 7, '4': 1, '5': 1, '10': 'minSize'},
-    {'1': 'pressed_opacity', '3': 8, '4': 1, '5': 1, '10': 'pressedOpacity'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoButton`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoButtonDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQnV0dG9uEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2'
-    'V0UgVjaGlsZBIZCghtaW5fc2l6ZRgHIAEoAVIHbWluU2l6ZRInCg9wcmVzc2VkX29wYWNpdHkY'
-    'CCABKAFSDnByZXNzZWRPcGFjaXR5');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoCheckboxDescriptor instead')
-const FlutterCupertinoCupertinoCheckbox$json = {
-  '1': 'FlutterCupertinoCupertinoCheckbox',
-  '2': [
-    {'1': 'value', '3': 3, '4': 1, '5': 8, '10': 'value'},
-    {'1': 'tristate', '3': 4, '4': 1, '5': 8, '10': 'tristate'},
-    {'1': 'autofocus', '3': 11, '4': 1, '5': 8, '10': 'autofocus'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoCheckbox`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoCheckboxDescriptor = $convert.base64Decode(
-    'CiFGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQ2hlY2tib3gSFAoFdmFsdWUYAyABKAhSBXZhbH'
-    'VlEhoKCHRyaXN0YXRlGAQgASgIUgh0cmlzdGF0ZRIcCglhdXRvZm9jdXMYCyABKAhSCWF1dG9m'
-    'b2N1cw==');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoContextMenuDescriptor instead')
-const FlutterCupertinoCupertinoContextMenu$json = {
-  '1': 'FlutterCupertinoCupertinoContextMenu',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'enable_haptic_feedback', '3': 5, '4': 1, '5': 8, '10': 'enableHapticFeedback'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoContextMenu`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoContextMenuDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQ29udGV4dE1lbnUSHQoFY2hpbGQYBCABKAsyBy'
-    '5XaWRnZXRSBWNoaWxkEjQKFmVuYWJsZV9oYXB0aWNfZmVlZGJhY2sYBSABKAhSFGVuYWJsZUhh'
-    'cHRpY0ZlZWRiYWNr');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoContextMenuActionDescriptor instead')
-const FlutterCupertinoCupertinoContextMenuAction$json = {
-  '1': 'FlutterCupertinoCupertinoContextMenuAction',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'is_default_action', '3': 4, '4': 1, '5': 8, '10': 'isDefaultAction'},
-    {'1': 'is_destructive_action', '3': 5, '4': 1, '5': 8, '10': 'isDestructiveAction'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoContextMenuAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoContextMenuActionDescriptor = $convert.base64Decode(
-    'CipGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQ29udGV4dE1lbnVBY3Rpb24SHQoFY2hpbGQYAy'
-    'ABKAsyBy5XaWRnZXRSBWNoaWxkEioKEWlzX2RlZmF1bHRfYWN0aW9uGAQgASgIUg9pc0RlZmF1'
-    'bHRBY3Rpb24SMgoVaXNfZGVzdHJ1Y3RpdmVfYWN0aW9uGAUgASgIUhNpc0Rlc3RydWN0aXZlQW'
-    'N0aW9u');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoDatePickerDescriptor instead')
-const FlutterCupertinoCupertinoDatePicker$json = {
-  '1': 'FlutterCupertinoCupertinoDatePicker',
-  '2': [
-    {'1': 'minimum_year', '3': 8, '4': 1, '5': 3, '10': 'minimumYear'},
-    {'1': 'maximum_year', '3': 9, '4': 1, '5': 3, '10': 'maximumYear'},
-    {'1': 'minute_interval', '3': 10, '4': 1, '5': 3, '10': 'minuteInterval'},
-    {'1': 'use24h_format', '3': 11, '4': 1, '5': 8, '10': 'use24hFormat'},
-    {'1': 'show_day_of_week', '3': 14, '4': 1, '5': 8, '10': 'showDayOfWeek'},
-    {'1': 'item_extent', '3': 15, '4': 1, '5': 1, '10': 'itemExtent'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoDatePicker`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoDatePickerDescriptor = $convert.base64Decode(
-    'CiNGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRGF0ZVBpY2tlchIhCgxtaW5pbXVtX3llYXIYCC'
-    'ABKANSC21pbmltdW1ZZWFyEiEKDG1heGltdW1feWVhchgJIAEoA1ILbWF4aW11bVllYXISJwoP'
-    'bWludXRlX2ludGVydmFsGAogASgDUg5taW51dGVJbnRlcnZhbBIjCg11c2UyNGhfZm9ybWF0GA'
-    'sgASgIUgx1c2UyNGhGb3JtYXQSJwoQc2hvd19kYXlfb2Zfd2VlaxgOIAEoCFINc2hvd0RheU9m'
-    'V2VlaxIfCgtpdGVtX2V4dGVudBgPIAEoAVIKaXRlbUV4dGVudA==');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoTimerPickerDescriptor instead')
-const FlutterCupertinoCupertinoTimerPicker$json = {
-  '1': 'FlutterCupertinoCupertinoTimerPicker',
-  '2': [
-    {'1': 'minute_interval', '3': 5, '4': 1, '5': 3, '10': 'minuteInterval'},
-    {'1': 'second_interval', '3': 6, '4': 1, '5': 3, '10': 'secondInterval'},
-    {'1': 'item_extent', '3': 9, '4': 1, '5': 1, '10': 'itemExtent'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoTimerPicker`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoTimerPickerDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGltZXJQaWNrZXISJwoPbWludXRlX2ludGVydm'
-    'FsGAUgASgDUg5taW51dGVJbnRlcnZhbBInCg9zZWNvbmRfaW50ZXJ2YWwYBiABKANSDnNlY29u'
-    'ZEludGVydmFsEh8KC2l0ZW1fZXh0ZW50GAkgASgBUgppdGVtRXh0ZW50');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoDesktopTextSelectionToolbarDescriptor instead')
-const FlutterCupertinoCupertinoDesktopTextSelectionToolbar$json = {
-  '1': 'FlutterCupertinoCupertinoDesktopTextSelectionToolbar',
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoDesktopTextSelectionToolbar`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoDesktopTextSelectionToolbarDescriptor = $convert.base64Decode(
-    'CjRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRGVza3RvcFRleHRTZWxlY3Rpb25Ub29sYmFy');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoDesktopTextSelectionToolbarButtonDescriptor instead')
-const FlutterCupertinoCupertinoDesktopTextSelectionToolbarButton$json = {
-  '1': 'FlutterCupertinoCupertinoDesktopTextSelectionToolbarButton',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoDesktopTextSelectionToolbarButton`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoDesktopTextSelectionToolbarButtonDescriptor = $convert.base64Decode(
-    'CjpGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRGVza3RvcFRleHRTZWxlY3Rpb25Ub29sYmFyQn'
-    'V0dG9uEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoAlertDialogDescriptor instead')
-const FlutterCupertinoCupertinoAlertDialog$json = {
-  '1': 'FlutterCupertinoCupertinoAlertDialog',
-  '2': [
-    {'1': 'title', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'title'},
-    {'1': 'content', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'content'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoAlertDialog`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoAlertDialogDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQWxlcnREaWFsb2cSHQoFdGl0bGUYAyABKAsyBy'
-    '5XaWRnZXRSBXRpdGxlEiEKB2NvbnRlbnQYBCABKAsyBy5XaWRnZXRSB2NvbnRlbnQ=');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoPopupSurfaceDescriptor instead')
-const FlutterCupertinoCupertinoPopupSurface$json = {
-  '1': 'FlutterCupertinoCupertinoPopupSurface',
-  '2': [
-    {'1': 'is_surface_painted', '3': 3, '4': 1, '5': 8, '10': 'isSurfacePainted'},
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoPopupSurface`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoPopupSurfaceDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vUG9wdXBTdXJmYWNlEiwKEmlzX3N1cmZhY2VfcG'
-    'FpbnRlZBgDIAEoCFIQaXNTdXJmYWNlUGFpbnRlZBIdCgVjaGlsZBgEIAEoCzIHLldpZGdldFIF'
-    'Y2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoActionSheetDescriptor instead')
-const FlutterCupertinoCupertinoActionSheet$json = {
-  '1': 'FlutterCupertinoCupertinoActionSheet',
-  '2': [
-    {'1': 'title', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'title'},
-    {'1': 'message', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'message'},
-    {'1': 'cancel_button', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'cancelButton'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoActionSheet`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoActionSheetDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQWN0aW9uU2hlZXQSHQoFdGl0bGUYAyABKAsyBy'
-    '5XaWRnZXRSBXRpdGxlEiEKB21lc3NhZ2UYBCABKAsyBy5XaWRnZXRSB21lc3NhZ2USLAoNY2Fu'
-    'Y2VsX2J1dHRvbhgIIAEoCzIHLldpZGdldFIMY2FuY2VsQnV0dG9u');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoActionSheetActionDescriptor instead')
-const FlutterCupertinoCupertinoActionSheetAction$json = {
-  '1': 'FlutterCupertinoCupertinoActionSheetAction',
-  '2': [
-    {'1': 'is_default_action', '3': 4, '4': 1, '5': 8, '10': 'isDefaultAction'},
-    {'1': 'is_destructive_action', '3': 5, '4': 1, '5': 8, '10': 'isDestructiveAction'},
-    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoActionSheetAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoActionSheetActionDescriptor = $convert.base64Decode(
-    'CipGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vQWN0aW9uU2hlZXRBY3Rpb24SKgoRaXNfZGVmYX'
-    'VsdF9hY3Rpb24YBCABKAhSD2lzRGVmYXVsdEFjdGlvbhIyChVpc19kZXN0cnVjdGl2ZV9hY3Rp'
-    'b24YBSABKAhSE2lzRGVzdHJ1Y3RpdmVBY3Rpb24SHQoFY2hpbGQYBiABKAsyBy5XaWRnZXRSBW'
-    'NoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoDialogActionDescriptor instead')
-const FlutterCupertinoCupertinoDialogAction$json = {
-  '1': 'FlutterCupertinoCupertinoDialogAction',
-  '2': [
-    {'1': 'is_default_action', '3': 4, '4': 1, '5': 8, '10': 'isDefaultAction'},
-    {'1': 'is_destructive_action', '3': 5, '4': 1, '5': 8, '10': 'isDestructiveAction'},
-    {'1': 'child', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoDialogAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoDialogActionDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRGlhbG9nQWN0aW9uEioKEWlzX2RlZmF1bHRfYW'
-    'N0aW9uGAQgASgIUg9pc0RlZmF1bHRBY3Rpb24SMgoVaXNfZGVzdHJ1Y3RpdmVfYWN0aW9uGAUg'
-    'ASgIUhNpc0Rlc3RydWN0aXZlQWN0aW9uEh0KBWNoaWxkGAcgASgLMgcuV2lkZ2V0UgVjaGlsZA'
-    '==');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoFormRowDescriptor instead')
-const FlutterCupertinoCupertinoFormRow$json = {
-  '1': 'FlutterCupertinoCupertinoFormRow',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'prefix', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'prefix'},
-    {'1': 'helper', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'helper'},
-    {'1': 'error', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'error'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoFormRow`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoFormRowDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRm9ybVJvdxIdCgVjaGlsZBgDIAEoCzIHLldpZG'
-    'dldFIFY2hpbGQSHwoGcHJlZml4GAQgASgLMgcuV2lkZ2V0UgZwcmVmaXgSHwoGaGVscGVyGAYg'
-    'ASgLMgcuV2lkZ2V0UgZoZWxwZXISHQoFZXJyb3IYByABKAsyBy5XaWRnZXRSBWVycm9y');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoFormSectionDescriptor instead')
-const FlutterCupertinoCupertinoFormSection$json = {
-  '1': 'FlutterCupertinoCupertinoFormSection',
-  '2': [
-    {'1': 'header', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'header'},
-    {'1': 'footer', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'footer'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoFormSection`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoFormSectionDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRm9ybVNlY3Rpb24SHwoGaGVhZGVyGAQgASgLMg'
-    'cuV2lkZ2V0UgZoZWFkZXISHwoGZm9vdGVyGAUgASgLMgcuV2lkZ2V0UgZmb290ZXI=');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoUserInterfaceLevelDescriptor instead')
-const FlutterCupertinoCupertinoUserInterfaceLevel$json = {
-  '1': 'FlutterCupertinoCupertinoUserInterfaceLevel',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoUserInterfaceLevel`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoUserInterfaceLevelDescriptor = $convert.base64Decode(
-    'CitGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVXNlckludGVyZmFjZUxldmVsEh0KBWNoaWxkGA'
-    'QgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoListSectionDescriptor instead')
-const FlutterCupertinoCupertinoListSection$json = {
-  '1': 'FlutterCupertinoCupertinoListSection',
-  '2': [
-    {'1': 'header', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'header'},
-    {'1': 'footer', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'footer'},
-    {'1': 'divider_margin', '3': 10, '4': 1, '5': 1, '10': 'dividerMargin'},
-    {'1': 'additional_divider_margin', '3': 11, '4': 1, '5': 1, '10': 'additionalDividerMargin'},
-    {'1': 'top_margin', '3': 12, '4': 1, '5': 1, '10': 'topMargin'},
-    {'1': 'has_leading', '3': 13, '4': 1, '5': 8, '10': 'hasLeading'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoListSection`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoListSectionDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vTGlzdFNlY3Rpb24SHwoGaGVhZGVyGAQgASgLMg'
-    'cuV2lkZ2V0UgZoZWFkZXISHwoGZm9vdGVyGAUgASgLMgcuV2lkZ2V0UgZmb290ZXISJQoOZGl2'
-    'aWRlcl9tYXJnaW4YCiABKAFSDWRpdmlkZXJNYXJnaW4SOgoZYWRkaXRpb25hbF9kaXZpZGVyX2'
-    '1hcmdpbhgLIAEoAVIXYWRkaXRpb25hbERpdmlkZXJNYXJnaW4SHQoKdG9wX21hcmdpbhgMIAEo'
-    'AVIJdG9wTWFyZ2luEh8KC2hhc19sZWFkaW5nGA0gASgIUgpoYXNMZWFkaW5n');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoListTileDescriptor instead')
-const FlutterCupertinoCupertinoListTile$json = {
-  '1': 'FlutterCupertinoCupertinoListTile',
-  '2': [
-    {'1': 'title', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'title'},
-    {'1': 'subtitle', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'subtitle'},
-    {'1': 'additional_info', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'additionalInfo'},
-    {'1': 'leading', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'leading'},
-    {'1': 'trailing', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'trailing'},
-    {'1': 'leading_size', '3': 12, '4': 1, '5': 1, '10': 'leadingSize'},
-    {'1': 'leading_to_title', '3': 13, '4': 1, '5': 1, '10': 'leadingToTitle'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoListTile`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoListTileDescriptor = $convert.base64Decode(
-    'CiFGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vTGlzdFRpbGUSHQoFdGl0bGUYAyABKAsyBy5XaW'
-    'RnZXRSBXRpdGxlEiMKCHN1YnRpdGxlGAQgASgLMgcuV2lkZ2V0UghzdWJ0aXRsZRIwCg9hZGRp'
-    'dGlvbmFsX2luZm8YBSABKAsyBy5XaWRnZXRSDmFkZGl0aW9uYWxJbmZvEiEKB2xlYWRpbmcYBi'
-    'ABKAsyBy5XaWRnZXRSB2xlYWRpbmcSIwoIdHJhaWxpbmcYByABKAsyBy5XaWRnZXRSCHRyYWls'
-    'aW5nEiEKDGxlYWRpbmdfc2l6ZRgMIAEoAVILbGVhZGluZ1NpemUSKAoQbGVhZGluZ190b190aX'
-    'RsZRgNIAEoAVIObGVhZGluZ1RvVGl0bGU=');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoListTileChevronDescriptor instead')
-const FlutterCupertinoCupertinoListTileChevron$json = {
-  '1': 'FlutterCupertinoCupertinoListTileChevron',
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoListTileChevron`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoListTileChevronDescriptor = $convert.base64Decode(
-    'CihGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vTGlzdFRpbGVDaGV2cm9u');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoTextMagnifierDescriptor instead')
-const FlutterCupertinoCupertinoTextMagnifier$json = {
-  '1': 'FlutterCupertinoCupertinoTextMagnifier',
-  '2': [
-    {'1': 'drag_resistance', '3': 5, '4': 1, '5': 1, '10': 'dragResistance'},
-    {'1': 'hide_below_threshold', '3': 6, '4': 1, '5': 1, '10': 'hideBelowThreshold'},
-    {'1': 'horizontal_screen_edge_padding', '3': 7, '4': 1, '5': 1, '10': 'horizontalScreenEdgePadding'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoTextMagnifier`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoTextMagnifierDescriptor = $convert.base64Decode(
-    'CiZGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGV4dE1hZ25pZmllchInCg9kcmFnX3Jlc2lzdG'
-    'FuY2UYBSABKAFSDmRyYWdSZXNpc3RhbmNlEjAKFGhpZGVfYmVsb3dfdGhyZXNob2xkGAYgASgB'
-    'UhJoaWRlQmVsb3dUaHJlc2hvbGQSQwoeaG9yaXpvbnRhbF9zY3JlZW5fZWRnZV9wYWRkaW5nGA'
-    'cgASgBUhtob3Jpem9udGFsU2NyZWVuRWRnZVBhZGRpbmc=');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoMagnifierDescriptor instead')
-const FlutterCupertinoCupertinoMagnifier$json = {
-  '1': 'FlutterCupertinoCupertinoMagnifier',
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoMagnifier`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoMagnifierDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vTWFnbmlmaWVy');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoNavigationBarDescriptor instead')
-const FlutterCupertinoCupertinoNavigationBar$json = {
-  '1': 'FlutterCupertinoCupertinoNavigationBar',
-  '2': [
-    {'1': 'leading', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'leading'},
-    {'1': 'automatically_imply_leading', '3': 4, '4': 1, '5': 8, '10': 'automaticallyImplyLeading'},
-    {'1': 'automatically_imply_middle', '3': 5, '4': 1, '5': 8, '10': 'automaticallyImplyMiddle'},
-    {'1': 'previous_page_title', '3': 6, '4': 1, '5': 9, '10': 'previousPageTitle'},
-    {'1': 'middle', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'middle'},
-    {'1': 'trailing', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'trailing'},
-    {'1': 'transition_between_routes', '3': 13, '4': 1, '5': 8, '10': 'transitionBetweenRoutes'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoNavigationBar`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoNavigationBarDescriptor = $convert.base64Decode(
-    'CiZGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vTmF2aWdhdGlvbkJhchIhCgdsZWFkaW5nGAMgAS'
-    'gLMgcuV2lkZ2V0UgdsZWFkaW5nEj4KG2F1dG9tYXRpY2FsbHlfaW1wbHlfbGVhZGluZxgEIAEo'
-    'CFIZYXV0b21hdGljYWxseUltcGx5TGVhZGluZxI8ChphdXRvbWF0aWNhbGx5X2ltcGx5X21pZG'
-    'RsZRgFIAEoCFIYYXV0b21hdGljYWxseUltcGx5TWlkZGxlEi4KE3ByZXZpb3VzX3BhZ2VfdGl0'
-    'bGUYBiABKAlSEXByZXZpb3VzUGFnZVRpdGxlEh8KBm1pZGRsZRgHIAEoCzIHLldpZGdldFIGbW'
-    'lkZGxlEiMKCHRyYWlsaW5nGAggASgLMgcuV2lkZ2V0Ugh0cmFpbGluZxI6Chl0cmFuc2l0aW9u'
-    'X2JldHdlZW5fcm91dGVzGA0gASgIUhd0cmFuc2l0aW9uQmV0d2VlblJvdXRlcw==');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoSliverNavigationBarDescriptor instead')
-const FlutterCupertinoCupertinoSliverNavigationBar$json = {
-  '1': 'FlutterCupertinoCupertinoSliverNavigationBar',
-  '2': [
-    {'1': 'large_title', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'largeTitle'},
-    {'1': 'leading', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'leading'},
-    {'1': 'automatically_imply_leading', '3': 5, '4': 1, '5': 8, '10': 'automaticallyImplyLeading'},
-    {'1': 'automatically_imply_title', '3': 6, '4': 1, '5': 8, '10': 'automaticallyImplyTitle'},
-    {'1': 'always_show_middle', '3': 7, '4': 1, '5': 8, '10': 'alwaysShowMiddle'},
-    {'1': 'previous_page_title', '3': 8, '4': 1, '5': 9, '10': 'previousPageTitle'},
-    {'1': 'middle', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'middle'},
-    {'1': 'trailing', '3': 10, '4': 1, '5': 11, '6': '.Widget', '10': 'trailing'},
-    {'1': 'transition_between_routes', '3': 15, '4': 1, '5': 8, '10': 'transitionBetweenRoutes'},
-    {'1': 'stretch', '3': 17, '4': 1, '5': 8, '10': 'stretch'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoSliverNavigationBar`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoSliverNavigationBarDescriptor = $convert.base64Decode(
-    'CixGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU2xpdmVyTmF2aWdhdGlvbkJhchIoCgtsYXJnZV'
-    '90aXRsZRgDIAEoCzIHLldpZGdldFIKbGFyZ2VUaXRsZRIhCgdsZWFkaW5nGAQgASgLMgcuV2lk'
-    'Z2V0UgdsZWFkaW5nEj4KG2F1dG9tYXRpY2FsbHlfaW1wbHlfbGVhZGluZxgFIAEoCFIZYXV0b2'
-    '1hdGljYWxseUltcGx5TGVhZGluZxI6ChlhdXRvbWF0aWNhbGx5X2ltcGx5X3RpdGxlGAYgASgI'
-    'UhdhdXRvbWF0aWNhbGx5SW1wbHlUaXRsZRIsChJhbHdheXNfc2hvd19taWRkbGUYByABKAhSEG'
-    'Fsd2F5c1Nob3dNaWRkbGUSLgoTcHJldmlvdXNfcGFnZV90aXRsZRgIIAEoCVIRcHJldmlvdXNQ'
-    'YWdlVGl0bGUSHwoGbWlkZGxlGAkgASgLMgcuV2lkZ2V0UgZtaWRkbGUSIwoIdHJhaWxpbmcYCi'
-    'ABKAsyBy5XaWRnZXRSCHRyYWlsaW5nEjoKGXRyYW5zaXRpb25fYmV0d2Vlbl9yb3V0ZXMYDyAB'
-    'KAhSF3RyYW5zaXRpb25CZXR3ZWVuUm91dGVzEhgKB3N0cmV0Y2gYESABKAhSB3N0cmV0Y2g=');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoNavigationBarBackButtonDescriptor instead')
-const FlutterCupertinoCupertinoNavigationBarBackButton$json = {
-  '1': 'FlutterCupertinoCupertinoNavigationBarBackButton',
-  '2': [
-    {'1': 'previous_page_title', '3': 4, '4': 1, '5': 9, '10': 'previousPageTitle'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoNavigationBarBackButton`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoNavigationBarBackButtonDescriptor = $convert.base64Decode(
-    'CjBGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vTmF2aWdhdGlvbkJhckJhY2tCdXR0b24SLgoTcH'
-    'JldmlvdXNfcGFnZV90aXRsZRgEIAEoCVIRcHJldmlvdXNQYWdlVGl0bGU=');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoPageScaffoldDescriptor instead')
-const FlutterCupertinoCupertinoPageScaffold$json = {
-  '1': 'FlutterCupertinoCupertinoPageScaffold',
-  '2': [
-    {'1': 'resize_to_avoid_bottom_inset', '3': 5, '4': 1, '5': 8, '10': 'resizeToAvoidBottomInset'},
-    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoPageScaffold`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoPageScaffoldDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vUGFnZVNjYWZmb2xkEj4KHHJlc2l6ZV90b19hdm'
-    '9pZF9ib3R0b21faW5zZXQYBSABKAhSGHJlc2l6ZVRvQXZvaWRCb3R0b21JbnNldBIdCgVjaGls'
-    'ZBgGIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoObstructingPreferredSizeWidgetDescriptor instead')
-const FlutterCupertinoObstructingPreferredSizeWidget$json = {
-  '1': 'FlutterCupertinoObstructingPreferredSizeWidget',
-};
-
-/// Descriptor for `FlutterCupertinoObstructingPreferredSizeWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoObstructingPreferredSizeWidgetDescriptor = $convert.base64Decode(
-    'Ci5GbHV0dGVyQ3VwZXJ0aW5vT2JzdHJ1Y3RpbmdQcmVmZXJyZWRTaXplV2lkZ2V0');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoPickerDescriptor instead')
-const FlutterCupertinoCupertinoPicker$json = {
-  '1': 'FlutterCupertinoCupertinoPicker',
-  '2': [
-    {'1': 'diameter_ratio', '3': 3, '4': 1, '5': 1, '10': 'diameterRatio'},
-    {'1': 'off_axis_fraction', '3': 5, '4': 1, '5': 1, '10': 'offAxisFraction'},
-    {'1': 'use_magnifier', '3': 6, '4': 1, '5': 8, '10': 'useMagnifier'},
-    {'1': 'magnification', '3': 7, '4': 1, '5': 1, '10': 'magnification'},
-    {'1': 'squeeze', '3': 9, '4': 1, '5': 1, '10': 'squeeze'},
-    {'1': 'item_extent', '3': 10, '4': 1, '5': 1, '10': 'itemExtent'},
-    {'1': 'selection_overlay', '3': 13, '4': 1, '5': 11, '6': '.Widget', '10': 'selectionOverlay'},
-    {'1': 'looping', '3': 14, '4': 1, '5': 8, '10': 'looping'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoPicker`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoPickerDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vUGlja2VyEiUKDmRpYW1ldGVyX3JhdGlvGAMgAS'
-    'gBUg1kaWFtZXRlclJhdGlvEioKEW9mZl9heGlzX2ZyYWN0aW9uGAUgASgBUg9vZmZBeGlzRnJh'
-    'Y3Rpb24SIwoNdXNlX21hZ25pZmllchgGIAEoCFIMdXNlTWFnbmlmaWVyEiQKDW1hZ25pZmljYX'
-    'Rpb24YByABKAFSDW1hZ25pZmljYXRpb24SGAoHc3F1ZWV6ZRgJIAEoAVIHc3F1ZWV6ZRIfCgtp'
-    'dGVtX2V4dGVudBgKIAEoAVIKaXRlbUV4dGVudBI0ChFzZWxlY3Rpb25fb3ZlcmxheRgNIAEoCz'
-    'IHLldpZGdldFIQc2VsZWN0aW9uT3ZlcmxheRIYCgdsb29waW5nGA4gASgIUgdsb29waW5n');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoPickerDefaultSelectionOverlayDescriptor instead')
-const FlutterCupertinoCupertinoPickerDefaultSelectionOverlay$json = {
-  '1': 'FlutterCupertinoCupertinoPickerDefaultSelectionOverlay',
-  '2': [
-    {'1': 'cap_start_edge', '3': 4, '4': 1, '5': 8, '10': 'capStartEdge'},
-    {'1': 'cap_end_edge', '3': 5, '4': 1, '5': 8, '10': 'capEndEdge'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoPickerDefaultSelectionOverlay`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoPickerDefaultSelectionOverlayDescriptor = $convert.base64Decode(
-    'CjZGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vUGlja2VyRGVmYXVsdFNlbGVjdGlvbk92ZXJsYX'
-    'kSJAoOY2FwX3N0YXJ0X2VkZ2UYBCABKAhSDGNhcFN0YXJ0RWRnZRIgCgxjYXBfZW5kX2VkZ2UY'
-    'BSABKAhSCmNhcEVuZEVkZ2U=');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoRadioDescriptor instead')
-const FlutterCupertinoCupertinoRadio$json = {
-  '1': 'FlutterCupertinoCupertinoRadio',
-  '2': [
-    {'1': 'toggleable', '3': 6, '4': 1, '5': 8, '10': 'toggleable'},
-    {'1': 'autofocus', '3': 12, '4': 1, '5': 8, '10': 'autofocus'},
-    {'1': 'use_checkmark_style', '3': 13, '4': 1, '5': 8, '10': 'useCheckmarkStyle'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoRadio`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoRadioDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vUmFkaW8SHgoKdG9nZ2xlYWJsZRgGIAEoCFIKdG'
-    '9nZ2xlYWJsZRIcCglhdXRvZm9jdXMYDCABKAhSCWF1dG9mb2N1cxIuChN1c2VfY2hlY2ttYXJr'
-    'X3N0eWxlGA0gASgIUhF1c2VDaGVja21hcmtTdHlsZQ==');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoSliverRefreshControlDescriptor instead')
-const FlutterCupertinoCupertinoSliverRefreshControl$json = {
-  '1': 'FlutterCupertinoCupertinoSliverRefreshControl',
-  '2': [
-    {'1': 'refresh_trigger_pull_distance', '3': 3, '4': 1, '5': 1, '10': 'refreshTriggerPullDistance'},
-    {'1': 'refresh_indicator_extent', '3': 4, '4': 1, '5': 1, '10': 'refreshIndicatorExtent'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoSliverRefreshControl`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoSliverRefreshControlDescriptor = $convert.base64Decode(
-    'Ci1GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU2xpdmVyUmVmcmVzaENvbnRyb2wSQQodcmVmcm'
-    'VzaF90cmlnZ2VyX3B1bGxfZGlzdGFuY2UYAyABKAFSGnJlZnJlc2hUcmlnZ2VyUHVsbERpc3Rh'
-    'bmNlEjgKGHJlZnJlc2hfaW5kaWNhdG9yX2V4dGVudBgEIAEoAVIWcmVmcmVzaEluZGljYXRvck'
-    'V4dGVudA==');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoPageTransitionDescriptor instead')
-const FlutterCupertinoCupertinoPageTransition$json = {
-  '1': 'FlutterCupertinoCupertinoPageTransition',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'linear_transition', '3': 6, '4': 1, '5': 8, '10': 'linearTransition'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoPageTransition`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoPageTransitionDescriptor = $convert.base64Decode(
-    'CidGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vUGFnZVRyYW5zaXRpb24SHQoFY2hpbGQYBSABKA'
-    'syBy5XaWRnZXRSBWNoaWxkEisKEWxpbmVhcl90cmFuc2l0aW9uGAYgASgIUhBsaW5lYXJUcmFu'
-    'c2l0aW9u');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoFullscreenDialogTransitionDescriptor instead')
-const FlutterCupertinoCupertinoFullscreenDialogTransition$json = {
-  '1': 'FlutterCupertinoCupertinoFullscreenDialogTransition',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'linear_transition', '3': 6, '4': 1, '5': 8, '10': 'linearTransition'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoFullscreenDialogTransition`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoFullscreenDialogTransitionDescriptor = $convert.base64Decode(
-    'CjNGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vRnVsbHNjcmVlbkRpYWxvZ1RyYW5zaXRpb24SHQ'
-    'oFY2hpbGQYBSABKAsyBy5XaWRnZXRSBWNoaWxkEisKEWxpbmVhcl90cmFuc2l0aW9uGAYgASgI'
-    'UhBsaW5lYXJUcmFuc2l0aW9u');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoScrollbarDescriptor instead')
-const FlutterCupertinoCupertinoScrollbar$json = {
-  '1': 'FlutterCupertinoCupertinoScrollbar',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'thumb_visibility', '3': 5, '4': 1, '5': 8, '10': 'thumbVisibility'},
-    {'1': 'thickness', '3': 6, '4': 1, '5': 1, '10': 'thickness'},
-    {'1': 'thickness_while_dragging', '3': 7, '4': 1, '5': 1, '10': 'thicknessWhileDragging'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoScrollbar`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoScrollbarDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU2Nyb2xsYmFyEh0KBWNoaWxkGAMgASgLMgcuV2'
-    'lkZ2V0UgVjaGlsZBIpChB0aHVtYl92aXNpYmlsaXR5GAUgASgIUg90aHVtYlZpc2liaWxpdHkS'
-    'HAoJdGhpY2tuZXNzGAYgASgBUgl0aGlja25lc3MSOAoYdGhpY2tuZXNzX3doaWxlX2RyYWdnaW'
-    '5nGAcgASgBUhZ0aGlja25lc3NXaGlsZURyYWdnaW5n');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoSearchTextFieldDescriptor instead')
-const FlutterCupertinoCupertinoSearchTextField$json = {
-  '1': 'FlutterCupertinoCupertinoSearchTextField',
-  '2': [
-    {'1': 'placeholder', '3': 7, '4': 1, '5': 9, '10': 'placeholder'},
-    {'1': 'item_size', '3': 15, '4': 1, '5': 1, '10': 'itemSize'},
-    {'1': 'prefix_icon', '3': 17, '4': 1, '5': 11, '6': '.Widget', '10': 'prefixIcon'},
-    {'1': 'restoration_id', '3': 22, '4': 1, '5': 9, '10': 'restorationId'},
-    {'1': 'enable_i_m_e_personalized_learning', '3': 26, '4': 1, '5': 8, '10': 'enableIMEPersonalizedLearning'},
-    {'1': 'autofocus', '3': 27, '4': 1, '5': 8, '10': 'autofocus'},
-    {'1': 'autocorrect', '3': 29, '4': 1, '5': 8, '10': 'autocorrect'},
-    {'1': 'enabled', '3': 30, '4': 1, '5': 8, '10': 'enabled'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoSearchTextField`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoSearchTextFieldDescriptor = $convert.base64Decode(
-    'CihGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU2VhcmNoVGV4dEZpZWxkEiAKC3BsYWNlaG9sZG'
-    'VyGAcgASgJUgtwbGFjZWhvbGRlchIbCglpdGVtX3NpemUYDyABKAFSCGl0ZW1TaXplEigKC3By'
-    'ZWZpeF9pY29uGBEgASgLMgcuV2lkZ2V0UgpwcmVmaXhJY29uEiUKDnJlc3RvcmF0aW9uX2lkGB'
-    'YgASgJUg1yZXN0b3JhdGlvbklkEkkKImVuYWJsZV9pX21fZV9wZXJzb25hbGl6ZWRfbGVhcm5p'
-    'bmcYGiABKAhSHWVuYWJsZUlNRVBlcnNvbmFsaXplZExlYXJuaW5nEhwKCWF1dG9mb2N1cxgbIA'
-    'EoCFIJYXV0b2ZvY3VzEiAKC2F1dG9jb3JyZWN0GB0gASgIUgthdXRvY29ycmVjdBIYCgdlbmFi'
-    'bGVkGB4gASgIUgdlbmFibGVk');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoSegmentedControlDescriptor instead')
-const FlutterCupertinoCupertinoSegmentedControl$json = {
-  '1': 'FlutterCupertinoCupertinoSegmentedControl',
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoSegmentedControl`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoSegmentedControlDescriptor = $convert.base64Decode(
-    'CilGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU2VnbWVudGVkQ29udHJvbA==');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoSliderDescriptor instead')
-const FlutterCupertinoCupertinoSlider$json = {
-  '1': 'FlutterCupertinoCupertinoSlider',
-  '2': [
-    {'1': 'value', '3': 3, '4': 1, '5': 1, '10': 'value'},
-    {'1': 'min', '3': 7, '4': 1, '5': 1, '10': 'min'},
-    {'1': 'max', '3': 8, '4': 1, '5': 1, '10': 'max'},
-    {'1': 'divisions', '3': 9, '4': 1, '5': 3, '10': 'divisions'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoSlider`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoSliderDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU2xpZGVyEhQKBXZhbHVlGAMgASgBUgV2YWx1ZR'
-    'IQCgNtaW4YByABKAFSA21pbhIQCgNtYXgYCCABKAFSA21heBIcCglkaXZpc2lvbnMYCSABKANS'
-    'CWRpdmlzaW9ucw==');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoSlidingSegmentedControlDescriptor instead')
-const FlutterCupertinoCupertinoSlidingSegmentedControl$json = {
-  '1': 'FlutterCupertinoCupertinoSlidingSegmentedControl',
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoSlidingSegmentedControl`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoSlidingSegmentedControlDescriptor = $convert.base64Decode(
-    'CjBGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU2xpZGluZ1NlZ21lbnRlZENvbnRyb2w=');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoSpellCheckSuggestionsToolbarDescriptor instead')
-const FlutterCupertinoCupertinoSpellCheckSuggestionsToolbar$json = {
-  '1': 'FlutterCupertinoCupertinoSpellCheckSuggestionsToolbar',
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoSpellCheckSuggestionsToolbar`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoSpellCheckSuggestionsToolbarDescriptor = $convert.base64Decode(
-    'CjVGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU3BlbGxDaGVja1N1Z2dlc3Rpb25zVG9vbGJhcg'
-    '==');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoSwitchDescriptor instead')
-const FlutterCupertinoCupertinoSwitch$json = {
-  '1': 'FlutterCupertinoCupertinoSwitch',
-  '2': [
-    {'1': 'value', '3': 3, '4': 1, '5': 8, '10': 'value'},
-    {'1': 'apply_theme', '3': 8, '4': 1, '5': 8, '10': 'applyTheme'},
-    {'1': 'autofocus', '3': 12, '4': 1, '5': 8, '10': 'autofocus'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoSwitch`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoSwitchDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vU3dpdGNoEhQKBXZhbHVlGAMgASgIUgV2YWx1ZR'
-    'IfCgthcHBseV90aGVtZRgIIAEoCFIKYXBwbHlUaGVtZRIcCglhdXRvZm9jdXMYDCABKAhSCWF1'
-    'dG9mb2N1cw==');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoTabScaffoldDescriptor instead')
-const FlutterCupertinoCupertinoTabScaffold$json = {
-  '1': 'FlutterCupertinoCupertinoTabScaffold',
-  '2': [
-    {'1': 'resize_to_avoid_bottom_inset', '3': 7, '4': 1, '5': 8, '10': 'resizeToAvoidBottomInset'},
-    {'1': 'restoration_id', '3': 8, '4': 1, '5': 9, '10': 'restorationId'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoTabScaffold`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoTabScaffoldDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGFiU2NhZmZvbGQSPgoccmVzaXplX3RvX2F2b2'
-    'lkX2JvdHRvbV9pbnNldBgHIAEoCFIYcmVzaXplVG9Bdm9pZEJvdHRvbUluc2V0EiUKDnJlc3Rv'
-    'cmF0aW9uX2lkGAggASgJUg1yZXN0b3JhdGlvbklk');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoTabViewDescriptor instead')
-const FlutterCupertinoCupertinoTabView$json = {
-  '1': 'FlutterCupertinoCupertinoTabView',
-  '2': [
-    {'1': 'default_title', '3': 5, '4': 1, '5': 9, '10': 'defaultTitle'},
-    {'1': 'restoration_scope_id', '3': 10, '4': 1, '5': 9, '10': 'restorationScopeId'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoTabView`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoTabViewDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGFiVmlldxIjCg1kZWZhdWx0X3RpdGxlGAUgAS'
-    'gJUgxkZWZhdWx0VGl0bGUSMAoUcmVzdG9yYXRpb25fc2NvcGVfaWQYCiABKAlSEnJlc3RvcmF0'
-    'aW9uU2NvcGVJZA==');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoTextFieldDescriptor instead')
-const FlutterCupertinoCupertinoTextField$json = {
-  '1': 'FlutterCupertinoCupertinoTextField',
-  '2': [
-    {'1': 'placeholder', '3': 8, '4': 1, '5': 9, '10': 'placeholder'},
-    {'1': 'prefix', '3': 10, '4': 1, '5': 11, '6': '.Widget', '10': 'prefix'},
-    {'1': 'suffix', '3': 12, '4': 1, '5': 11, '6': '.Widget', '10': 'suffix'},
-    {'1': 'read_only', '3': 23, '4': 1, '5': 8, '10': 'readOnly'},
-    {'1': 'show_cursor', '3': 25, '4': 1, '5': 8, '10': 'showCursor'},
-    {'1': 'autofocus', '3': 26, '4': 1, '5': 8, '10': 'autofocus'},
-    {'1': 'obscuring_character', '3': 27, '4': 1, '5': 9, '10': 'obscuringCharacter'},
-    {'1': 'obscure_text', '3': 28, '4': 1, '5': 8, '10': 'obscureText'},
-    {'1': 'autocorrect', '3': 29, '4': 1, '5': 8, '10': 'autocorrect'},
-    {'1': 'enable_suggestions', '3': 32, '4': 1, '5': 8, '10': 'enableSuggestions'},
-    {'1': 'max_lines', '3': 33, '4': 1, '5': 3, '10': 'maxLines'},
-    {'1': 'min_lines', '3': 34, '4': 1, '5': 3, '10': 'minLines'},
-    {'1': 'expands', '3': 35, '4': 1, '5': 8, '10': 'expands'},
-    {'1': 'max_length', '3': 36, '4': 1, '5': 3, '10': 'maxLength'},
-    {'1': 'enabled', '3': 43, '4': 1, '5': 8, '10': 'enabled'},
-    {'1': 'cursor_width', '3': 44, '4': 1, '5': 1, '10': 'cursorWidth'},
-    {'1': 'cursor_height', '3': 45, '4': 1, '5': 1, '10': 'cursorHeight'},
-    {'1': 'cursor_opacity_animates', '3': 47, '4': 1, '5': 8, '10': 'cursorOpacityAnimates'},
-    {'1': 'enable_interactive_selection', '3': 54, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
-    {'1': 'restoration_id', '3': 62, '4': 1, '5': 9, '10': 'restorationId'},
-    {'1': 'scribble_enabled', '3': 63, '4': 1, '5': 8, '10': 'scribbleEnabled'},
-    {'1': 'enable_i_m_e_personalized_learning', '3': 64, '4': 1, '5': 8, '10': 'enableIMEPersonalizedLearning'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoTextField`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoTextFieldDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGV4dEZpZWxkEiAKC3BsYWNlaG9sZGVyGAggAS'
-    'gJUgtwbGFjZWhvbGRlchIfCgZwcmVmaXgYCiABKAsyBy5XaWRnZXRSBnByZWZpeBIfCgZzdWZm'
-    'aXgYDCABKAsyBy5XaWRnZXRSBnN1ZmZpeBIbCglyZWFkX29ubHkYFyABKAhSCHJlYWRPbmx5Eh'
-    '8KC3Nob3dfY3Vyc29yGBkgASgIUgpzaG93Q3Vyc29yEhwKCWF1dG9mb2N1cxgaIAEoCFIJYXV0'
-    'b2ZvY3VzEi8KE29ic2N1cmluZ19jaGFyYWN0ZXIYGyABKAlSEm9ic2N1cmluZ0NoYXJhY3Rlch'
-    'IhCgxvYnNjdXJlX3RleHQYHCABKAhSC29ic2N1cmVUZXh0EiAKC2F1dG9jb3JyZWN0GB0gASgI'
-    'UgthdXRvY29ycmVjdBItChJlbmFibGVfc3VnZ2VzdGlvbnMYICABKAhSEWVuYWJsZVN1Z2dlc3'
-    'Rpb25zEhsKCW1heF9saW5lcxghIAEoA1IIbWF4TGluZXMSGwoJbWluX2xpbmVzGCIgASgDUght'
-    'aW5MaW5lcxIYCgdleHBhbmRzGCMgASgIUgdleHBhbmRzEh0KCm1heF9sZW5ndGgYJCABKANSCW'
-    '1heExlbmd0aBIYCgdlbmFibGVkGCsgASgIUgdlbmFibGVkEiEKDGN1cnNvcl93aWR0aBgsIAEo'
-    'AVILY3Vyc29yV2lkdGgSIwoNY3Vyc29yX2hlaWdodBgtIAEoAVIMY3Vyc29ySGVpZ2h0EjYKF2'
-    'N1cnNvcl9vcGFjaXR5X2FuaW1hdGVzGC8gASgIUhVjdXJzb3JPcGFjaXR5QW5pbWF0ZXMSQAoc'
-    'ZW5hYmxlX2ludGVyYWN0aXZlX3NlbGVjdGlvbhg2IAEoCFIaZW5hYmxlSW50ZXJhY3RpdmVTZW'
-    'xlY3Rpb24SJQoOcmVzdG9yYXRpb25faWQYPiABKAlSDXJlc3RvcmF0aW9uSWQSKQoQc2NyaWJi'
-    'bGVfZW5hYmxlZBg/IAEoCFIPc2NyaWJibGVFbmFibGVkEkkKImVuYWJsZV9pX21fZV9wZXJzb2'
-    '5hbGl6ZWRfbGVhcm5pbmcYQCABKAhSHWVuYWJsZUlNRVBlcnNvbmFsaXplZExlYXJuaW5n');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoTextFormFieldRowDescriptor instead')
-const FlutterCupertinoCupertinoTextFormFieldRow$json = {
-  '1': 'FlutterCupertinoCupertinoTextFormFieldRow',
-  '2': [
-    {'1': 'prefix', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'prefix'},
-    {'1': 'initial_value', '3': 6, '4': 1, '5': 9, '10': 'initialValue'},
-    {'1': 'autofocus', '3': 17, '4': 1, '5': 8, '10': 'autofocus'},
-    {'1': 'read_only', '3': 18, '4': 1, '5': 8, '10': 'readOnly'},
-    {'1': 'show_cursor', '3': 20, '4': 1, '5': 8, '10': 'showCursor'},
-    {'1': 'obscuring_character', '3': 21, '4': 1, '5': 9, '10': 'obscuringCharacter'},
-    {'1': 'obscure_text', '3': 22, '4': 1, '5': 8, '10': 'obscureText'},
-    {'1': 'autocorrect', '3': 23, '4': 1, '5': 8, '10': 'autocorrect'},
-    {'1': 'enable_suggestions', '3': 26, '4': 1, '5': 8, '10': 'enableSuggestions'},
-    {'1': 'max_lines', '3': 27, '4': 1, '5': 3, '10': 'maxLines'},
-    {'1': 'min_lines', '3': 28, '4': 1, '5': 3, '10': 'minLines'},
-    {'1': 'expands', '3': 29, '4': 1, '5': 8, '10': 'expands'},
-    {'1': 'max_length', '3': 30, '4': 1, '5': 3, '10': 'maxLength'},
-    {'1': 'enabled', '3': 38, '4': 1, '5': 8, '10': 'enabled'},
-    {'1': 'cursor_width', '3': 39, '4': 1, '5': 1, '10': 'cursorWidth'},
-    {'1': 'cursor_height', '3': 40, '4': 1, '5': 1, '10': 'cursorHeight'},
-    {'1': 'enable_interactive_selection', '3': 44, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
-    {'1': 'placeholder', '3': 49, '4': 1, '5': 9, '10': 'placeholder'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoTextFormFieldRow`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoTextFormFieldRowDescriptor = $convert.base64Decode(
-    'CilGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGV4dEZvcm1GaWVsZFJvdxIfCgZwcmVmaXgYAy'
-    'ABKAsyBy5XaWRnZXRSBnByZWZpeBIjCg1pbml0aWFsX3ZhbHVlGAYgASgJUgxpbml0aWFsVmFs'
-    'dWUSHAoJYXV0b2ZvY3VzGBEgASgIUglhdXRvZm9jdXMSGwoJcmVhZF9vbmx5GBIgASgIUghyZW'
-    'FkT25seRIfCgtzaG93X2N1cnNvchgUIAEoCFIKc2hvd0N1cnNvchIvChNvYnNjdXJpbmdfY2hh'
-    'cmFjdGVyGBUgASgJUhJvYnNjdXJpbmdDaGFyYWN0ZXISIQoMb2JzY3VyZV90ZXh0GBYgASgIUg'
-    'tvYnNjdXJlVGV4dBIgCgthdXRvY29ycmVjdBgXIAEoCFILYXV0b2NvcnJlY3QSLQoSZW5hYmxl'
-    'X3N1Z2dlc3Rpb25zGBogASgIUhFlbmFibGVTdWdnZXN0aW9ucxIbCgltYXhfbGluZXMYGyABKA'
-    'NSCG1heExpbmVzEhsKCW1pbl9saW5lcxgcIAEoA1IIbWluTGluZXMSGAoHZXhwYW5kcxgdIAEo'
-    'CFIHZXhwYW5kcxIdCgptYXhfbGVuZ3RoGB4gASgDUgltYXhMZW5ndGgSGAoHZW5hYmxlZBgmIA'
-    'EoCFIHZW5hYmxlZBIhCgxjdXJzb3Jfd2lkdGgYJyABKAFSC2N1cnNvcldpZHRoEiMKDWN1cnNv'
-    'cl9oZWlnaHQYKCABKAFSDGN1cnNvckhlaWdodBJAChxlbmFibGVfaW50ZXJhY3RpdmVfc2VsZW'
-    'N0aW9uGCwgASgIUhplbmFibGVJbnRlcmFjdGl2ZVNlbGVjdGlvbhIgCgtwbGFjZWhvbGRlchgx'
-    'IAEoCVILcGxhY2Vob2xkZXI=');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoTextSelectionToolbarDescriptor instead')
-const FlutterCupertinoCupertinoTextSelectionToolbar$json = {
-  '1': 'FlutterCupertinoCupertinoTextSelectionToolbar',
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoTextSelectionToolbar`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoTextSelectionToolbarDescriptor = $convert.base64Decode(
-    'Ci1GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGV4dFNlbGVjdGlvblRvb2xiYXI=');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoTextSelectionToolbarButtonDescriptor instead')
-const FlutterCupertinoCupertinoTextSelectionToolbarButton$json = {
-  '1': 'FlutterCupertinoCupertinoTextSelectionToolbarButton',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoTextSelectionToolbarButton`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoTextSelectionToolbarButtonDescriptor = $convert.base64Decode(
-    'CjNGbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGV4dFNlbGVjdGlvblRvb2xiYXJCdXR0b24SHQ'
-    'oFY2hpbGQYBCABKAsyBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoCupertinoThemeDescriptor instead')
-const FlutterCupertinoCupertinoTheme$json = {
-  '1': 'FlutterCupertinoCupertinoTheme',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCupertinoTheme`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCupertinoThemeDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vQ3VwZXJ0aW5vVGhlbWUSHQoFY2hpbGQYBCABKAsyBy5XaWRnZX'
-    'RSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoActionListenerDescriptor instead')
-const FlutterCupertinoActionListener$json = {
-  '1': 'FlutterCupertinoActionListener',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoActionListener`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoActionListenerDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vQWN0aW9uTGlzdGVuZXISHQoFY2hpbGQYBSABKAsyBy5XaWRnZX'
-    'RSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoActionsDescriptor instead')
-const FlutterCupertinoActions$json = {
-  '1': 'FlutterCupertinoActions',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoActions`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoActionsDescriptor = $convert.base64Decode(
-    'ChdGbHV0dGVyQ3VwZXJ0aW5vQWN0aW9ucxIdCgVjaGlsZBgFIAEoCzIHLldpZGdldFIFY2hpbG'
-    'Q=');
-
-@$core.Deprecated('Use flutterCupertinoFocusableActionDetectorDescriptor instead')
-const FlutterCupertinoFocusableActionDetector$json = {
-  '1': 'FlutterCupertinoFocusableActionDetector',
-  '2': [
-    {'1': 'enabled', '3': 3, '4': 1, '5': 8, '10': 'enabled'},
-    {'1': 'autofocus', '3': 5, '4': 1, '5': 8, '10': 'autofocus'},
-    {'1': 'descendants_are_focusable', '3': 6, '4': 1, '5': 8, '10': 'descendantsAreFocusable'},
-    {'1': 'descendants_are_traversable', '3': 7, '4': 1, '5': 8, '10': 'descendantsAreTraversable'},
-    {'1': 'include_focus_semantics', '3': 14, '4': 1, '5': 8, '10': 'includeFocusSemantics'},
-    {'1': 'child', '3': 15, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoFocusableActionDetector`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoFocusableActionDetectorDescriptor = $convert.base64Decode(
-    'CidGbHV0dGVyQ3VwZXJ0aW5vRm9jdXNhYmxlQWN0aW9uRGV0ZWN0b3ISGAoHZW5hYmxlZBgDIA'
-    'EoCFIHZW5hYmxlZBIcCglhdXRvZm9jdXMYBSABKAhSCWF1dG9mb2N1cxI6ChlkZXNjZW5kYW50'
-    'c19hcmVfZm9jdXNhYmxlGAYgASgIUhdkZXNjZW5kYW50c0FyZUZvY3VzYWJsZRI+ChtkZXNjZW'
-    '5kYW50c19hcmVfdHJhdmVyc2FibGUYByABKAhSGWRlc2NlbmRhbnRzQXJlVHJhdmVyc2FibGUS'
-    'NgoXaW5jbHVkZV9mb2N1c19zZW1hbnRpY3MYDiABKAhSFWluY2x1ZGVGb2N1c1NlbWFudGljcx'
-    'IdCgVjaGlsZBgPIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedCrossFadeDescriptor instead')
-const FlutterCupertinoAnimatedCrossFade$json = {
-  '1': 'FlutterCupertinoAnimatedCrossFade',
-  '2': [
-    {'1': 'first_child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'firstChild'},
-    {'1': 'second_child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'secondChild'},
-    {'1': 'exclude_bottom_focus', '3': 13, '4': 1, '5': 8, '10': 'excludeBottomFocus'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedCrossFade`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedCrossFadeDescriptor = $convert.base64Decode(
-    'CiFGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRDcm9zc0ZhZGUSKAoLZmlyc3RfY2hpbGQYAyABKA'
-    'syBy5XaWRnZXRSCmZpcnN0Q2hpbGQSKgoMc2Vjb25kX2NoaWxkGAQgASgLMgcuV2lkZ2V0Ugtz'
-    'ZWNvbmRDaGlsZBIwChRleGNsdWRlX2JvdHRvbV9mb2N1cxgNIAEoCFISZXhjbHVkZUJvdHRvbU'
-    'ZvY3Vz');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedListDescriptor instead')
-const FlutterCupertinoAnimatedList$json = {
-  '1': 'FlutterCupertinoAnimatedList',
-  '2': [
-    {'1': 'initial_item_count', '3': 4, '4': 1, '5': 3, '10': 'initialItemCount'},
-    {'1': 'reverse', '3': 6, '4': 1, '5': 8, '10': 'reverse'},
-    {'1': 'primary', '3': 8, '4': 1, '5': 8, '10': 'primary'},
-    {'1': 'shrink_wrap', '3': 10, '4': 1, '5': 8, '10': 'shrinkWrap'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedList`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedListDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRMaXN0EiwKEmluaXRpYWxfaXRlbV9jb3VudBgEIA'
-    'EoA1IQaW5pdGlhbEl0ZW1Db3VudBIYCgdyZXZlcnNlGAYgASgIUgdyZXZlcnNlEhgKB3ByaW1h'
-    'cnkYCCABKAhSB3ByaW1hcnkSHwoLc2hyaW5rX3dyYXAYCiABKAhSCnNocmlua1dyYXA=');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedGridDescriptor instead')
-const FlutterCupertinoAnimatedGrid$json = {
-  '1': 'FlutterCupertinoAnimatedGrid',
-  '2': [
-    {'1': 'initial_item_count', '3': 5, '4': 1, '5': 3, '10': 'initialItemCount'},
-    {'1': 'reverse', '3': 7, '4': 1, '5': 8, '10': 'reverse'},
-    {'1': 'primary', '3': 9, '4': 1, '5': 8, '10': 'primary'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedGrid`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedGridDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRHcmlkEiwKEmluaXRpYWxfaXRlbV9jb3VudBgFIA'
-    'EoA1IQaW5pdGlhbEl0ZW1Db3VudBIYCgdyZXZlcnNlGAcgASgIUgdyZXZlcnNlEhgKB3ByaW1h'
-    'cnkYCSABKAhSB3ByaW1hcnk=');
-
-@$core.Deprecated('Use flutterCupertinoSliverAnimatedListDescriptor instead')
-const FlutterCupertinoSliverAnimatedList$json = {
-  '1': 'FlutterCupertinoSliverAnimatedList',
-  '2': [
-    {'1': 'initial_item_count', '3': 5, '4': 1, '5': 3, '10': 'initialItemCount'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverAnimatedList`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverAnimatedListDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyQW5pbWF0ZWRMaXN0EiwKEmluaXRpYWxfaXRlbV9jb3'
-    'VudBgFIAEoA1IQaW5pdGlhbEl0ZW1Db3VudA==');
-
-@$core.Deprecated('Use flutterCupertinoSliverAnimatedGridDescriptor instead')
-const FlutterCupertinoSliverAnimatedGrid$json = {
-  '1': 'FlutterCupertinoSliverAnimatedGrid',
-  '2': [
-    {'1': 'initial_item_count', '3': 6, '4': 1, '5': 3, '10': 'initialItemCount'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverAnimatedGrid`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverAnimatedGridDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyQW5pbWF0ZWRHcmlkEiwKEmluaXRpYWxfaXRlbV9jb3'
-    'VudBgGIAEoA1IQaW5pdGlhbEl0ZW1Db3VudA==');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedSizeDescriptor instead')
-const FlutterCupertinoAnimatedSize$json = {
-  '1': 'FlutterCupertinoAnimatedSize',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedSize`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedSizeDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRTaXplEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0Ug'
-    'VjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedSwitcherDescriptor instead')
-const FlutterCupertinoAnimatedSwitcher$json = {
-  '1': 'FlutterCupertinoAnimatedSwitcher',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedSwitcher`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedSwitcherDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRTd2l0Y2hlchIdCgVjaGlsZBgDIAEoCzIHLldpZG'
-    'dldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoAnnotatedRegionDescriptor instead')
-const FlutterCupertinoAnnotatedRegion$json = {
-  '1': 'FlutterCupertinoAnnotatedRegion',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'sized', '3': 5, '4': 1, '5': 8, '10': 'sized'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnnotatedRegion`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnnotatedRegionDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQW5ub3RhdGVkUmVnaW9uEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2'
-    'V0UgVjaGlsZBIUCgVzaXplZBgFIAEoCFIFc2l6ZWQ=');
-
-@$core.Deprecated('Use flutterCupertinoWidgetsAppDescriptor instead')
-const FlutterCupertinoWidgetsApp$json = {
-  '1': 'FlutterCupertinoWidgetsApp',
-  '2': [
-    {'1': 'initial_route', '3': 8, '4': 1, '5': 9, '10': 'initialRoute'},
-    {'1': 'home', '3': 10, '4': 1, '5': 11, '6': '.Widget', '10': 'home'},
-    {'1': 'title', '3': 13, '4': 1, '5': 9, '10': 'title'},
-    {'1': 'show_performance_overlay', '3': 22, '4': 1, '5': 8, '10': 'showPerformanceOverlay'},
-    {'1': 'checkerboard_raster_cache_images', '3': 23, '4': 1, '5': 8, '10': 'checkerboardRasterCacheImages'},
-    {'1': 'checkerboard_offscreen_layers', '3': 24, '4': 1, '5': 8, '10': 'checkerboardOffscreenLayers'},
-    {'1': 'show_semantics_debugger', '3': 25, '4': 1, '5': 8, '10': 'showSemanticsDebugger'},
-    {'1': 'debug_show_widget_inspector', '3': 26, '4': 1, '5': 8, '10': 'debugShowWidgetInspector'},
-    {'1': 'debug_show_checked_mode_banner', '3': 27, '4': 1, '5': 8, '10': 'debugShowCheckedModeBanner'},
-    {'1': 'restoration_scope_id', '3': 31, '4': 1, '5': 9, '10': 'restorationScopeId'},
-    {'1': 'use_inherited_media_query', '3': 32, '4': 1, '5': 8, '10': 'useInheritedMediaQuery'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoWidgetsApp`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoWidgetsAppDescriptor = $convert.base64Decode(
-    'ChpGbHV0dGVyQ3VwZXJ0aW5vV2lkZ2V0c0FwcBIjCg1pbml0aWFsX3JvdXRlGAggASgJUgxpbm'
-    'l0aWFsUm91dGUSGwoEaG9tZRgKIAEoCzIHLldpZGdldFIEaG9tZRIUCgV0aXRsZRgNIAEoCVIF'
-    'dGl0bGUSOAoYc2hvd19wZXJmb3JtYW5jZV9vdmVybGF5GBYgASgIUhZzaG93UGVyZm9ybWFuY2'
-    'VPdmVybGF5EkcKIGNoZWNrZXJib2FyZF9yYXN0ZXJfY2FjaGVfaW1hZ2VzGBcgASgIUh1jaGVj'
-    'a2VyYm9hcmRSYXN0ZXJDYWNoZUltYWdlcxJCCh1jaGVja2VyYm9hcmRfb2Zmc2NyZWVuX2xheW'
-    'VycxgYIAEoCFIbY2hlY2tlcmJvYXJkT2Zmc2NyZWVuTGF5ZXJzEjYKF3Nob3dfc2VtYW50aWNz'
-    'X2RlYnVnZ2VyGBkgASgIUhVzaG93U2VtYW50aWNzRGVidWdnZXISPQobZGVidWdfc2hvd193aW'
-    'RnZXRfaW5zcGVjdG9yGBogASgIUhhkZWJ1Z1Nob3dXaWRnZXRJbnNwZWN0b3ISQgoeZGVidWdf'
-    'c2hvd19jaGVja2VkX21vZGVfYmFubmVyGBsgASgIUhpkZWJ1Z1Nob3dDaGVja2VkTW9kZUJhbm'
-    '5lchIwChRyZXN0b3JhdGlvbl9zY29wZV9pZBgfIAEoCVIScmVzdG9yYXRpb25TY29wZUlkEjkK'
-    'GXVzZV9pbmhlcml0ZWRfbWVkaWFfcXVlcnkYICABKAhSFnVzZUluaGVyaXRlZE1lZGlhUXVlcn'
-    'k=');
-
-@$core.Deprecated('Use flutterCupertinoStreamBuilderBaseDescriptor instead')
-const FlutterCupertinoStreamBuilderBase$json = {
-  '1': 'FlutterCupertinoStreamBuilderBase',
-};
-
-/// Descriptor for `FlutterCupertinoStreamBuilderBase`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoStreamBuilderBaseDescriptor = $convert.base64Decode(
-    'CiFGbHV0dGVyQ3VwZXJ0aW5vU3RyZWFtQnVpbGRlckJhc2U=');
-
-@$core.Deprecated('Use flutterCupertinoStreamBuilderDescriptor instead')
-const FlutterCupertinoStreamBuilder$json = {
-  '1': 'FlutterCupertinoStreamBuilder',
-};
-
-/// Descriptor for `FlutterCupertinoStreamBuilder`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoStreamBuilderDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vU3RyZWFtQnVpbGRlcg==');
-
-@$core.Deprecated('Use flutterCupertinoFutureBuilderDescriptor instead')
-const FlutterCupertinoFutureBuilder$json = {
-  '1': 'FlutterCupertinoFutureBuilder',
-};
-
-/// Descriptor for `FlutterCupertinoFutureBuilder`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoFutureBuilderDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vRnV0dXJlQnVpbGRlcg==');
-
-@$core.Deprecated('Use flutterCupertinoRawAutocompleteDescriptor instead')
-const FlutterCupertinoRawAutocomplete$json = {
-  '1': 'FlutterCupertinoRawAutocomplete',
-};
-
-/// Descriptor for `FlutterCupertinoRawAutocomplete`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoRawAutocompleteDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vUmF3QXV0b2NvbXBsZXRl');
-
-@$core.Deprecated('Use flutterCupertinoAutocompleteHighlightedOptionDescriptor instead')
-const FlutterCupertinoAutocompleteHighlightedOption$json = {
-  '1': 'FlutterCupertinoAutocompleteHighlightedOption',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAutocompleteHighlightedOption`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAutocompleteHighlightedOptionDescriptor = $convert.base64Decode(
-    'Ci1GbHV0dGVyQ3VwZXJ0aW5vQXV0b2NvbXBsZXRlSGlnaGxpZ2h0ZWRPcHRpb24SHQoFY2hpbG'
-    'QYBCABKAsyBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoAutofillGroupDescriptor instead')
-const FlutterCupertinoAutofillGroup$json = {
-  '1': 'FlutterCupertinoAutofillGroup',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAutofillGroup`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAutofillGroupDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vQXV0b2ZpbGxHcm91cBIdCgVjaGlsZBgDIAEoCzIHLldpZGdldF'
-    'IFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoAutomaticKeepAliveDescriptor instead')
-const FlutterCupertinoAutomaticKeepAlive$json = {
-  '1': 'FlutterCupertinoAutomaticKeepAlive',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAutomaticKeepAlive`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAutomaticKeepAliveDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vQXV0b21hdGljS2VlcEFsaXZlEh0KBWNoaWxkGAMgASgLMgcuV2'
-    'lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoBannerDescriptor instead')
-const FlutterCupertinoBanner$json = {
-  '1': 'FlutterCupertinoBanner',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'message', '3': 4, '4': 1, '5': 9, '10': 'message'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoBanner`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoBannerDescriptor = $convert.base64Decode(
-    'ChZGbHV0dGVyQ3VwZXJ0aW5vQmFubmVyEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0UgVjaGlsZB'
-    'IYCgdtZXNzYWdlGAQgASgJUgdtZXNzYWdl');
-
-@$core.Deprecated('Use flutterCupertinoCheckedModeBannerDescriptor instead')
-const FlutterCupertinoCheckedModeBanner$json = {
-  '1': 'FlutterCupertinoCheckedModeBanner',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCheckedModeBanner`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCheckedModeBannerDescriptor = $convert.base64Decode(
-    'CiFGbHV0dGVyQ3VwZXJ0aW5vQ2hlY2tlZE1vZGVCYW5uZXISHQoFY2hpbGQYAyABKAsyBy5XaW'
-    'RnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoDirectionalityDescriptor instead')
-const FlutterCupertinoDirectionality$json = {
-  '1': 'FlutterCupertinoDirectionality',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoDirectionality`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoDirectionalityDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vRGlyZWN0aW9uYWxpdHkSHQoFY2hpbGQYBCABKAsyBy5XaWRnZX'
-    'RSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoOpacityDescriptor instead')
-const FlutterCupertinoOpacity$json = {
-  '1': 'FlutterCupertinoOpacity',
-  '2': [
-    {'1': 'opacity', '3': 3, '4': 1, '5': 1, '10': 'opacity'},
-    {'1': 'always_include_semantics', '3': 4, '4': 1, '5': 8, '10': 'alwaysIncludeSemantics'},
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoOpacity`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoOpacityDescriptor = $convert.base64Decode(
-    'ChdGbHV0dGVyQ3VwZXJ0aW5vT3BhY2l0eRIYCgdvcGFjaXR5GAMgASgBUgdvcGFjaXR5EjgKGG'
-    'Fsd2F5c19pbmNsdWRlX3NlbWFudGljcxgEIAEoCFIWYWx3YXlzSW5jbHVkZVNlbWFudGljcxId'
-    'CgVjaGlsZBgFIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoShaderMaskDescriptor instead')
-const FlutterCupertinoShaderMask$json = {
-  '1': 'FlutterCupertinoShaderMask',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoShaderMask`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoShaderMaskDescriptor = $convert.base64Decode(
-    'ChpGbHV0dGVyQ3VwZXJ0aW5vU2hhZGVyTWFzaxIdCgVjaGlsZBgFIAEoCzIHLldpZGdldFIFY2'
-    'hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoBackdropFilterDescriptor instead')
-const FlutterCupertinoBackdropFilter$json = {
-  '1': 'FlutterCupertinoBackdropFilter',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoBackdropFilter`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoBackdropFilterDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vQmFja2Ryb3BGaWx0ZXISHQoFY2hpbGQYBCABKAsyBy5XaWRnZX'
-    'RSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoCustomPaintDescriptor instead')
-const FlutterCupertinoCustomPaint$json = {
-  '1': 'FlutterCupertinoCustomPaint',
-  '2': [
-    {'1': 'is_complex', '3': 6, '4': 1, '5': 8, '10': 'isComplex'},
-    {'1': 'will_change', '3': 7, '4': 1, '5': 8, '10': 'willChange'},
-    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCustomPaint`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCustomPaintDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyQ3VwZXJ0aW5vQ3VzdG9tUGFpbnQSHQoKaXNfY29tcGxleBgGIAEoCFIJaXNDb2'
-    '1wbGV4Eh8KC3dpbGxfY2hhbmdlGAcgASgIUgp3aWxsQ2hhbmdlEh0KBWNoaWxkGAggASgLMgcu'
-    'V2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoClipRectDescriptor instead')
-const FlutterCupertinoClipRect$json = {
-  '1': 'FlutterCupertinoClipRect',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoClipRect`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoClipRectDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vQ2xpcFJlY3QSHQoFY2hpbGQYBSABKAsyBy5XaWRnZXRSBWNoaW'
-    'xk');
-
-@$core.Deprecated('Use flutterCupertinoClipRRectDescriptor instead')
-const FlutterCupertinoClipRRect$json = {
-  '1': 'FlutterCupertinoClipRRect',
-  '2': [
-    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoClipRRect`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoClipRRectDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyQ3VwZXJ0aW5vQ2xpcFJSZWN0Eh0KBWNoaWxkGAYgASgLMgcuV2lkZ2V0UgVjaG'
-    'lsZA==');
-
-@$core.Deprecated('Use flutterCupertinoClipOvalDescriptor instead')
-const FlutterCupertinoClipOval$json = {
-  '1': 'FlutterCupertinoClipOval',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoClipOval`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoClipOvalDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vQ2xpcE92YWwSHQoFY2hpbGQYBSABKAsyBy5XaWRnZXRSBWNoaW'
-    'xk');
-
-@$core.Deprecated('Use flutterCupertinoClipPathDescriptor instead')
-const FlutterCupertinoClipPath$json = {
-  '1': 'FlutterCupertinoClipPath',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoClipPath`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoClipPathDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vQ2xpcFBhdGgSHQoFY2hpbGQYBSABKAsyBy5XaWRnZXRSBWNoaW'
-    'xk');
-
-@$core.Deprecated('Use flutterCupertinoPhysicalModelDescriptor instead')
-const FlutterCupertinoPhysicalModel$json = {
-  '1': 'FlutterCupertinoPhysicalModel',
-  '2': [
-    {'1': 'elevation', '3': 6, '4': 1, '5': 1, '10': 'elevation'},
-    {'1': 'child', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoPhysicalModel`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoPhysicalModelDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vUGh5c2ljYWxNb2RlbBIcCgllbGV2YXRpb24YBiABKAFSCWVsZX'
-    'ZhdGlvbhIdCgVjaGlsZBgJIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoPhysicalShapeDescriptor instead')
-const FlutterCupertinoPhysicalShape$json = {
-  '1': 'FlutterCupertinoPhysicalShape',
-  '2': [
-    {'1': 'elevation', '3': 5, '4': 1, '5': 1, '10': 'elevation'},
-    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoPhysicalShape`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoPhysicalShapeDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vUGh5c2ljYWxTaGFwZRIcCgllbGV2YXRpb24YBSABKAFSCWVsZX'
-    'ZhdGlvbhIdCgVjaGlsZBgIIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoTransformDescriptor instead')
-const FlutterCupertinoTransform$json = {
-  '1': 'FlutterCupertinoTransform',
-  '2': [
-    {'1': 'transform_hit_tests', '3': 6, '4': 1, '5': 8, '10': 'transformHitTests'},
-    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoTransform`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoTransformDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyQ3VwZXJ0aW5vVHJhbnNmb3JtEi4KE3RyYW5zZm9ybV9oaXRfdGVzdHMYBiABKA'
-    'hSEXRyYW5zZm9ybUhpdFRlc3RzEh0KBWNoaWxkGAggASgLMgcuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoCompositedTransformTargetDescriptor instead')
-const FlutterCupertinoCompositedTransformTarget$json = {
-  '1': 'FlutterCupertinoCompositedTransformTarget',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCompositedTransformTarget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCompositedTransformTargetDescriptor = $convert.base64Decode(
-    'CilGbHV0dGVyQ3VwZXJ0aW5vQ29tcG9zaXRlZFRyYW5zZm9ybVRhcmdldBIdCgVjaGlsZBgEIA'
-    'EoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoCompositedTransformFollowerDescriptor instead')
-const FlutterCupertinoCompositedTransformFollower$json = {
-  '1': 'FlutterCupertinoCompositedTransformFollower',
-  '2': [
-    {'1': 'show_when_unlinked', '3': 4, '4': 1, '5': 8, '10': 'showWhenUnlinked'},
-    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCompositedTransformFollower`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCompositedTransformFollowerDescriptor = $convert.base64Decode(
-    'CitGbHV0dGVyQ3VwZXJ0aW5vQ29tcG9zaXRlZFRyYW5zZm9ybUZvbGxvd2VyEiwKEnNob3dfd2'
-    'hlbl91bmxpbmtlZBgEIAEoCFIQc2hvd1doZW5VbmxpbmtlZBIdCgVjaGlsZBgIIAEoCzIHLldp'
-    'ZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoFittedBoxDescriptor instead')
-const FlutterCupertinoFittedBox$json = {
-  '1': 'FlutterCupertinoFittedBox',
-  '2': [
-    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoFittedBox`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoFittedBoxDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyQ3VwZXJ0aW5vRml0dGVkQm94Eh0KBWNoaWxkGAYgASgLMgcuV2lkZ2V0UgVjaG'
-    'lsZA==');
-
-@$core.Deprecated('Use flutterCupertinoFractionalTranslationDescriptor instead')
-const FlutterCupertinoFractionalTranslation$json = {
-  '1': 'FlutterCupertinoFractionalTranslation',
-  '2': [
-    {'1': 'transform_hit_tests', '3': 4, '4': 1, '5': 8, '10': 'transformHitTests'},
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoFractionalTranslation`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoFractionalTranslationDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyQ3VwZXJ0aW5vRnJhY3Rpb25hbFRyYW5zbGF0aW9uEi4KE3RyYW5zZm9ybV9oaX'
-    'RfdGVzdHMYBCABKAhSEXRyYW5zZm9ybUhpdFRlc3RzEh0KBWNoaWxkGAUgASgLMgcuV2lkZ2V0'
-    'UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoRotatedBoxDescriptor instead')
-const FlutterCupertinoRotatedBox$json = {
-  '1': 'FlutterCupertinoRotatedBox',
-  '2': [
-    {'1': 'quarter_turns', '3': 3, '4': 1, '5': 3, '10': 'quarterTurns'},
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoRotatedBox`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoRotatedBoxDescriptor = $convert.base64Decode(
-    'ChpGbHV0dGVyQ3VwZXJ0aW5vUm90YXRlZEJveBIjCg1xdWFydGVyX3R1cm5zGAMgASgDUgxxdW'
-    'FydGVyVHVybnMSHQoFY2hpbGQYBCABKAsyBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoPaddingDescriptor instead')
-const FlutterCupertinoPadding$json = {
-  '1': 'FlutterCupertinoPadding',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoPadding`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoPaddingDescriptor = $convert.base64Decode(
-    'ChdGbHV0dGVyQ3VwZXJ0aW5vUGFkZGluZxIdCgVjaGlsZBgEIAEoCzIHLldpZGdldFIFY2hpbG'
-    'Q=');
-
-@$core.Deprecated('Use flutterCupertinoAlignDescriptor instead')
-const FlutterCupertinoAlign$json = {
-  '1': 'FlutterCupertinoAlign',
-  '2': [
-    {'1': 'width_factor', '3': 4, '4': 1, '5': 1, '10': 'widthFactor'},
-    {'1': 'height_factor', '3': 5, '4': 1, '5': 1, '10': 'heightFactor'},
-    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAlign`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAlignDescriptor = $convert.base64Decode(
-    'ChVGbHV0dGVyQ3VwZXJ0aW5vQWxpZ24SIQoMd2lkdGhfZmFjdG9yGAQgASgBUgt3aWR0aEZhY3'
-    'RvchIjCg1oZWlnaHRfZmFjdG9yGAUgASgBUgxoZWlnaHRGYWN0b3ISHQoFY2hpbGQYBiABKAsy'
-    'By5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoCenterDescriptor instead')
-const FlutterCupertinoCenter$json = {
-  '1': 'FlutterCupertinoCenter',
-  '2': [
-    {'1': 'width_factor', '3': 3, '4': 1, '5': 1, '10': 'widthFactor'},
-    {'1': 'height_factor', '3': 4, '4': 1, '5': 1, '10': 'heightFactor'},
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCenter`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCenterDescriptor = $convert.base64Decode(
-    'ChZGbHV0dGVyQ3VwZXJ0aW5vQ2VudGVyEiEKDHdpZHRoX2ZhY3RvchgDIAEoAVILd2lkdGhGYW'
-    'N0b3ISIwoNaGVpZ2h0X2ZhY3RvchgEIAEoAVIMaGVpZ2h0RmFjdG9yEh0KBWNoaWxkGAUgASgL'
-    'MgcuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoCustomSingleChildLayoutDescriptor instead')
-const FlutterCupertinoCustomSingleChildLayout$json = {
-  '1': 'FlutterCupertinoCustomSingleChildLayout',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCustomSingleChildLayout`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCustomSingleChildLayoutDescriptor = $convert.base64Decode(
-    'CidGbHV0dGVyQ3VwZXJ0aW5vQ3VzdG9tU2luZ2xlQ2hpbGRMYXlvdXQSHQoFY2hpbGQYBCABKA'
-    'syBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoLayoutIdDescriptor instead')
-const FlutterCupertinoLayoutId$json = {
-  '1': 'FlutterCupertinoLayoutId',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoLayoutId`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoLayoutIdDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vTGF5b3V0SWQSHQoFY2hpbGQYBCABKAsyBy5XaWRnZXRSBWNoaW'
-    'xk');
-
-@$core.Deprecated('Use flutterCupertinoCustomMultiChildLayoutDescriptor instead')
-const FlutterCupertinoCustomMultiChildLayout$json = {
-  '1': 'FlutterCupertinoCustomMultiChildLayout',
-};
-
-/// Descriptor for `FlutterCupertinoCustomMultiChildLayout`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCustomMultiChildLayoutDescriptor = $convert.base64Decode(
-    'CiZGbHV0dGVyQ3VwZXJ0aW5vQ3VzdG9tTXVsdGlDaGlsZExheW91dA==');
-
-@$core.Deprecated('Use flutterCupertinoSizedBoxDescriptor instead')
-const FlutterCupertinoSizedBox$json = {
-  '1': 'FlutterCupertinoSizedBox',
-  '2': [
-    {'1': 'width', '3': 3, '4': 1, '5': 1, '10': 'width'},
-    {'1': 'height', '3': 4, '4': 1, '5': 1, '10': 'height'},
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSizedBox`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSizedBoxDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vU2l6ZWRCb3gSFAoFd2lkdGgYAyABKAFSBXdpZHRoEhYKBmhlaW'
-    'dodBgEIAEoAVIGaGVpZ2h0Eh0KBWNoaWxkGAUgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoConstrainedBoxDescriptor instead')
-const FlutterCupertinoConstrainedBox$json = {
-  '1': 'FlutterCupertinoConstrainedBox',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoConstrainedBox`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoConstrainedBoxDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vQ29uc3RyYWluZWRCb3gSHQoFY2hpbGQYBCABKAsyBy5XaWRnZX'
-    'RSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoConstraintsTransformBoxDescriptor instead')
-const FlutterCupertinoConstraintsTransformBox$json = {
-  '1': 'FlutterCupertinoConstraintsTransformBox',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'debug_transform_type', '3': 8, '4': 1, '5': 9, '10': 'debugTransformType'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoConstraintsTransformBox`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoConstraintsTransformBoxDescriptor = $convert.base64Decode(
-    'CidGbHV0dGVyQ3VwZXJ0aW5vQ29uc3RyYWludHNUcmFuc2Zvcm1Cb3gSHQoFY2hpbGQYAyABKA'
-    'syBy5XaWRnZXRSBWNoaWxkEjAKFGRlYnVnX3RyYW5zZm9ybV90eXBlGAggASgJUhJkZWJ1Z1Ry'
-    'YW5zZm9ybVR5cGU=');
-
-@$core.Deprecated('Use flutterCupertinoUnconstrainedBoxDescriptor instead')
-const FlutterCupertinoUnconstrainedBox$json = {
-  '1': 'FlutterCupertinoUnconstrainedBox',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoUnconstrainedBox`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoUnconstrainedBoxDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vVW5jb25zdHJhaW5lZEJveBIdCgVjaGlsZBgDIAEoCzIHLldpZG'
-    'dldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoFractionallySizedBoxDescriptor instead')
-const FlutterCupertinoFractionallySizedBox$json = {
-  '1': 'FlutterCupertinoFractionallySizedBox',
-  '2': [
-    {'1': 'width_factor', '3': 4, '4': 1, '5': 1, '10': 'widthFactor'},
-    {'1': 'height_factor', '3': 5, '4': 1, '5': 1, '10': 'heightFactor'},
-    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoFractionallySizedBox`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoFractionallySizedBoxDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vRnJhY3Rpb25hbGx5U2l6ZWRCb3gSIQoMd2lkdGhfZmFjdG9yGA'
-    'QgASgBUgt3aWR0aEZhY3RvchIjCg1oZWlnaHRfZmFjdG9yGAUgASgBUgxoZWlnaHRGYWN0b3IS'
-    'HQoFY2hpbGQYBiABKAsyBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoLimitedBoxDescriptor instead')
-const FlutterCupertinoLimitedBox$json = {
-  '1': 'FlutterCupertinoLimitedBox',
-  '2': [
-    {'1': 'max_width', '3': 3, '4': 1, '5': 1, '10': 'maxWidth'},
-    {'1': 'max_height', '3': 4, '4': 1, '5': 1, '10': 'maxHeight'},
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoLimitedBox`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoLimitedBoxDescriptor = $convert.base64Decode(
-    'ChpGbHV0dGVyQ3VwZXJ0aW5vTGltaXRlZEJveBIbCgltYXhfd2lkdGgYAyABKAFSCG1heFdpZH'
-    'RoEh0KCm1heF9oZWlnaHQYBCABKAFSCW1heEhlaWdodBIdCgVjaGlsZBgFIAEoCzIHLldpZGdl'
-    'dFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoOverflowBoxDescriptor instead')
-const FlutterCupertinoOverflowBox$json = {
-  '1': 'FlutterCupertinoOverflowBox',
-  '2': [
-    {'1': 'min_width', '3': 4, '4': 1, '5': 1, '10': 'minWidth'},
-    {'1': 'max_width', '3': 5, '4': 1, '5': 1, '10': 'maxWidth'},
-    {'1': 'min_height', '3': 6, '4': 1, '5': 1, '10': 'minHeight'},
-    {'1': 'max_height', '3': 7, '4': 1, '5': 1, '10': 'maxHeight'},
-    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoOverflowBox`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoOverflowBoxDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyQ3VwZXJ0aW5vT3ZlcmZsb3dCb3gSGwoJbWluX3dpZHRoGAQgASgBUghtaW5XaW'
-    'R0aBIbCgltYXhfd2lkdGgYBSABKAFSCG1heFdpZHRoEh0KCm1pbl9oZWlnaHQYBiABKAFSCW1p'
-    'bkhlaWdodBIdCgptYXhfaGVpZ2h0GAcgASgBUgltYXhIZWlnaHQSHQoFY2hpbGQYCCABKAsyBy'
-    '5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoSizedOverflowBoxDescriptor instead')
-const FlutterCupertinoSizedOverflowBox$json = {
-  '1': 'FlutterCupertinoSizedOverflowBox',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSizedOverflowBox`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSizedOverflowBoxDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vU2l6ZWRPdmVyZmxvd0JveBIdCgVjaGlsZBgFIAEoCzIHLldpZG'
-    'dldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoOffstageDescriptor instead')
-const FlutterCupertinoOffstage$json = {
-  '1': 'FlutterCupertinoOffstage',
-  '2': [
-    {'1': 'offstage', '3': 3, '4': 1, '5': 8, '10': 'offstage'},
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoOffstage`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoOffstageDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vT2Zmc3RhZ2USGgoIb2Zmc3RhZ2UYAyABKAhSCG9mZnN0YWdlEh'
-    '0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoAspectRatioDescriptor instead')
-const FlutterCupertinoAspectRatio$json = {
-  '1': 'FlutterCupertinoAspectRatio',
-  '2': [
-    {'1': 'aspect_ratio', '3': 3, '4': 1, '5': 1, '10': 'aspectRatio'},
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAspectRatio`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAspectRatioDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyQ3VwZXJ0aW5vQXNwZWN0UmF0aW8SIQoMYXNwZWN0X3JhdGlvGAMgASgBUgthc3'
-    'BlY3RSYXRpbxIdCgVjaGlsZBgEIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoIntrinsicWidthDescriptor instead')
-const FlutterCupertinoIntrinsicWidth$json = {
-  '1': 'FlutterCupertinoIntrinsicWidth',
-  '2': [
-    {'1': 'step_width', '3': 3, '4': 1, '5': 1, '10': 'stepWidth'},
-    {'1': 'step_height', '3': 4, '4': 1, '5': 1, '10': 'stepHeight'},
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoIntrinsicWidth`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoIntrinsicWidthDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vSW50cmluc2ljV2lkdGgSHQoKc3RlcF93aWR0aBgDIAEoAVIJc3'
-    'RlcFdpZHRoEh8KC3N0ZXBfaGVpZ2h0GAQgASgBUgpzdGVwSGVpZ2h0Eh0KBWNoaWxkGAUgASgL'
-    'MgcuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoIntrinsicHeightDescriptor instead')
-const FlutterCupertinoIntrinsicHeight$json = {
-  '1': 'FlutterCupertinoIntrinsicHeight',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoIntrinsicHeight`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoIntrinsicHeightDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vSW50cmluc2ljSGVpZ2h0Eh0KBWNoaWxkGAMgASgLMgcuV2lkZ2'
-    'V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoBaselineDescriptor instead')
-const FlutterCupertinoBaseline$json = {
-  '1': 'FlutterCupertinoBaseline',
-  '2': [
-    {'1': 'baseline', '3': 3, '4': 1, '5': 1, '10': 'baseline'},
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoBaseline`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoBaselineDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vQmFzZWxpbmUSGgoIYmFzZWxpbmUYAyABKAFSCGJhc2VsaW5lEh'
-    '0KBWNoaWxkGAUgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoSliverToBoxAdapterDescriptor instead')
-const FlutterCupertinoSliverToBoxAdapter$json = {
-  '1': 'FlutterCupertinoSliverToBoxAdapter',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverToBoxAdapter`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverToBoxAdapterDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyVG9Cb3hBZGFwdGVyEh0KBWNoaWxkGAMgASgLMgcuV2'
-    'lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoSliverPaddingDescriptor instead')
-const FlutterCupertinoSliverPadding$json = {
-  '1': 'FlutterCupertinoSliverPadding',
-  '2': [
-    {'1': 'sliver', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverPadding`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverPaddingDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyUGFkZGluZxIfCgZzbGl2ZXIYBCABKAsyBy5XaWRnZX'
-    'RSBnNsaXZlcg==');
-
-@$core.Deprecated('Use flutterCupertinoListBodyDescriptor instead')
-const FlutterCupertinoListBody$json = {
-  '1': 'FlutterCupertinoListBody',
-  '2': [
-    {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoListBody`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoListBodyDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vTGlzdEJvZHkSGAoHcmV2ZXJzZRgEIAEoCFIHcmV2ZXJzZQ==');
-
-@$core.Deprecated('Use flutterCupertinoStackDescriptor instead')
-const FlutterCupertinoStack$json = {
-  '1': 'FlutterCupertinoStack',
-};
-
-/// Descriptor for `FlutterCupertinoStack`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoStackDescriptor = $convert.base64Decode(
-    'ChVGbHV0dGVyQ3VwZXJ0aW5vU3RhY2s=');
-
-@$core.Deprecated('Use flutterCupertinoIndexedStackDescriptor instead')
-const FlutterCupertinoIndexedStack$json = {
-  '1': 'FlutterCupertinoIndexedStack',
-  '2': [
-    {'1': 'index', '3': 7, '4': 1, '5': 3, '10': 'index'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoIndexedStack`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoIndexedStackDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQ3VwZXJ0aW5vSW5kZXhlZFN0YWNrEhQKBWluZGV4GAcgASgDUgVpbmRleA==');
-
-@$core.Deprecated('Use flutterCupertinoPositionedDescriptor instead')
-const FlutterCupertinoPositioned$json = {
-  '1': 'FlutterCupertinoPositioned',
-  '2': [
-    {'1': 'left', '3': 3, '4': 1, '5': 1, '10': 'left'},
-    {'1': 'top', '3': 4, '4': 1, '5': 1, '10': 'top'},
-    {'1': 'right', '3': 5, '4': 1, '5': 1, '10': 'right'},
-    {'1': 'bottom', '3': 6, '4': 1, '5': 1, '10': 'bottom'},
-    {'1': 'width', '3': 7, '4': 1, '5': 1, '10': 'width'},
-    {'1': 'height', '3': 8, '4': 1, '5': 1, '10': 'height'},
-    {'1': 'child', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoPositioned`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoPositionedDescriptor = $convert.base64Decode(
-    'ChpGbHV0dGVyQ3VwZXJ0aW5vUG9zaXRpb25lZBISCgRsZWZ0GAMgASgBUgRsZWZ0EhAKA3RvcB'
-    'gEIAEoAVIDdG9wEhQKBXJpZ2h0GAUgASgBUgVyaWdodBIWCgZib3R0b20YBiABKAFSBmJvdHRv'
-    'bRIUCgV3aWR0aBgHIAEoAVIFd2lkdGgSFgoGaGVpZ2h0GAggASgBUgZoZWlnaHQSHQoFY2hpbG'
-    'QYCSABKAsyBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoPositionedDirectionalDescriptor instead')
-const FlutterCupertinoPositionedDirectional$json = {
-  '1': 'FlutterCupertinoPositionedDirectional',
-  '2': [
-    {'1': 'start', '3': 3, '4': 1, '5': 1, '10': 'start'},
-    {'1': 'top', '3': 4, '4': 1, '5': 1, '10': 'top'},
-    {'1': 'end', '3': 5, '4': 1, '5': 1, '10': 'end'},
-    {'1': 'bottom', '3': 6, '4': 1, '5': 1, '10': 'bottom'},
-    {'1': 'width', '3': 7, '4': 1, '5': 1, '10': 'width'},
-    {'1': 'height', '3': 8, '4': 1, '5': 1, '10': 'height'},
-    {'1': 'child', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoPositionedDirectional`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoPositionedDirectionalDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyQ3VwZXJ0aW5vUG9zaXRpb25lZERpcmVjdGlvbmFsEhQKBXN0YXJ0GAMgASgBUg'
-    'VzdGFydBIQCgN0b3AYBCABKAFSA3RvcBIQCgNlbmQYBSABKAFSA2VuZBIWCgZib3R0b20YBiAB'
-    'KAFSBmJvdHRvbRIUCgV3aWR0aBgHIAEoAVIFd2lkdGgSFgoGaGVpZ2h0GAggASgBUgZoZWlnaH'
-    'QSHQoFY2hpbGQYCSABKAsyBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoFlexDescriptor instead')
-const FlutterCupertinoFlex$json = {
-  '1': 'FlutterCupertinoFlex',
-};
-
-/// Descriptor for `FlutterCupertinoFlex`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoFlexDescriptor = $convert.base64Decode(
-    'ChRGbHV0dGVyQ3VwZXJ0aW5vRmxleA==');
-
-@$core.Deprecated('Use flutterCupertinoRowDescriptor instead')
-const FlutterCupertinoRow$json = {
-  '1': 'FlutterCupertinoRow',
-};
-
-/// Descriptor for `FlutterCupertinoRow`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoRowDescriptor = $convert.base64Decode(
-    'ChNGbHV0dGVyQ3VwZXJ0aW5vUm93');
-
-@$core.Deprecated('Use flutterCupertinoColumnDescriptor instead')
-const FlutterCupertinoColumn$json = {
-  '1': 'FlutterCupertinoColumn',
-};
-
-/// Descriptor for `FlutterCupertinoColumn`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoColumnDescriptor = $convert.base64Decode(
-    'ChZGbHV0dGVyQ3VwZXJ0aW5vQ29sdW1u');
-
-@$core.Deprecated('Use flutterCupertinoFlexibleDescriptor instead')
-const FlutterCupertinoFlexible$json = {
-  '1': 'FlutterCupertinoFlexible',
-  '2': [
-    {'1': 'flex', '3': 3, '4': 1, '5': 3, '10': 'flex'},
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoFlexible`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoFlexibleDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vRmxleGlibGUSEgoEZmxleBgDIAEoA1IEZmxleBIdCgVjaGlsZB'
-    'gFIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoExpandedDescriptor instead')
-const FlutterCupertinoExpanded$json = {
-  '1': 'FlutterCupertinoExpanded',
-  '2': [
-    {'1': 'flex', '3': 3, '4': 1, '5': 3, '10': 'flex'},
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoExpanded`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoExpandedDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vRXhwYW5kZWQSEgoEZmxleBgDIAEoA1IEZmxleBIdCgVjaGlsZB'
-    'gEIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoWrapDescriptor instead')
-const FlutterCupertinoWrap$json = {
-  '1': 'FlutterCupertinoWrap',
-  '2': [
-    {'1': 'spacing', '3': 5, '4': 1, '5': 1, '10': 'spacing'},
-    {'1': 'run_spacing', '3': 7, '4': 1, '5': 1, '10': 'runSpacing'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoWrap`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoWrapDescriptor = $convert.base64Decode(
-    'ChRGbHV0dGVyQ3VwZXJ0aW5vV3JhcBIYCgdzcGFjaW5nGAUgASgBUgdzcGFjaW5nEh8KC3J1bl'
-    '9zcGFjaW5nGAcgASgBUgpydW5TcGFjaW5n');
-
-@$core.Deprecated('Use flutterCupertinoFlowDescriptor instead')
-const FlutterCupertinoFlow$json = {
-  '1': 'FlutterCupertinoFlow',
-};
-
-/// Descriptor for `FlutterCupertinoFlow`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoFlowDescriptor = $convert.base64Decode(
-    'ChRGbHV0dGVyQ3VwZXJ0aW5vRmxvdw==');
-
-@$core.Deprecated('Use flutterCupertinoRichTextDescriptor instead')
-const FlutterCupertinoRichText$json = {
-  '1': 'FlutterCupertinoRichText',
-  '2': [
-    {'1': 'soft_wrap', '3': 6, '4': 1, '5': 8, '10': 'softWrap'},
-    {'1': 'text_scale_factor', '3': 8, '4': 1, '5': 1, '10': 'textScaleFactor'},
-    {'1': 'max_lines', '3': 9, '4': 1, '5': 3, '10': 'maxLines'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoRichText`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoRichTextDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vUmljaFRleHQSGwoJc29mdF93cmFwGAYgASgIUghzb2Z0V3JhcB'
-    'IqChF0ZXh0X3NjYWxlX2ZhY3RvchgIIAEoAVIPdGV4dFNjYWxlRmFjdG9yEhsKCW1heF9saW5l'
-    'cxgJIAEoA1IIbWF4TGluZXM=');
-
-@$core.Deprecated('Use flutterCupertinoRawImageDescriptor instead')
-const FlutterCupertinoRawImage$json = {
-  '1': 'FlutterCupertinoRawImage',
-  '2': [
-    {'1': 'debug_image_label', '3': 4, '4': 1, '5': 9, '10': 'debugImageLabel'},
-    {'1': 'width', '3': 5, '4': 1, '5': 1, '10': 'width'},
-    {'1': 'height', '3': 6, '4': 1, '5': 1, '10': 'height'},
-    {'1': 'scale', '3': 7, '4': 1, '5': 1, '10': 'scale'},
-    {'1': 'match_text_direction', '3': 15, '4': 1, '5': 8, '10': 'matchTextDirection'},
-    {'1': 'invert_colors', '3': 16, '4': 1, '5': 8, '10': 'invertColors'},
-    {'1': 'is_anti_alias', '3': 18, '4': 1, '5': 8, '10': 'isAntiAlias'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoRawImage`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoRawImageDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vUmF3SW1hZ2USKgoRZGVidWdfaW1hZ2VfbGFiZWwYBCABKAlSD2'
-    'RlYnVnSW1hZ2VMYWJlbBIUCgV3aWR0aBgFIAEoAVIFd2lkdGgSFgoGaGVpZ2h0GAYgASgBUgZo'
-    'ZWlnaHQSFAoFc2NhbGUYByABKAFSBXNjYWxlEjAKFG1hdGNoX3RleHRfZGlyZWN0aW9uGA8gAS'
-    'gIUhJtYXRjaFRleHREaXJlY3Rpb24SIwoNaW52ZXJ0X2NvbG9ycxgQIAEoCFIMaW52ZXJ0Q29s'
-    'b3JzEiIKDWlzX2FudGlfYWxpYXMYEiABKAhSC2lzQW50aUFsaWFz');
-
-@$core.Deprecated('Use flutterCupertinoDefaultAssetBundleDescriptor instead')
-const FlutterCupertinoDefaultAssetBundle$json = {
-  '1': 'FlutterCupertinoDefaultAssetBundle',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoDefaultAssetBundle`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoDefaultAssetBundleDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vRGVmYXVsdEFzc2V0QnVuZGxlEh0KBWNoaWxkGAQgASgLMgcuV2'
-    'lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoWidgetToRenderBoxAdapterDescriptor instead')
-const FlutterCupertinoWidgetToRenderBoxAdapter$json = {
-  '1': 'FlutterCupertinoWidgetToRenderBoxAdapter',
-};
-
-/// Descriptor for `FlutterCupertinoWidgetToRenderBoxAdapter`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoWidgetToRenderBoxAdapterDescriptor = $convert.base64Decode(
-    'CihGbHV0dGVyQ3VwZXJ0aW5vV2lkZ2V0VG9SZW5kZXJCb3hBZGFwdGVy');
-
-@$core.Deprecated('Use flutterCupertinoListenerDescriptor instead')
-const FlutterCupertinoListener$json = {
-  '1': 'FlutterCupertinoListener',
-  '2': [
-    {'1': 'child', '3': 13, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoListener`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoListenerDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vTGlzdGVuZXISHQoFY2hpbGQYDSABKAsyBy5XaWRnZXRSBWNoaW'
-    'xk');
-
-@$core.Deprecated('Use flutterCupertinoMouseRegionDescriptor instead')
-const FlutterCupertinoMouseRegion$json = {
-  '1': 'FlutterCupertinoMouseRegion',
-  '2': [
-    {'1': 'opaque', '3': 7, '4': 1, '5': 8, '10': 'opaque'},
-    {'1': 'child', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoMouseRegion`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoMouseRegionDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyQ3VwZXJ0aW5vTW91c2VSZWdpb24SFgoGb3BhcXVlGAcgASgIUgZvcGFxdWUSHQ'
-    'oFY2hpbGQYCSABKAsyBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoRepaintBoundaryDescriptor instead')
-const FlutterCupertinoRepaintBoundary$json = {
-  '1': 'FlutterCupertinoRepaintBoundary',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoRepaintBoundary`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoRepaintBoundaryDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vUmVwYWludEJvdW5kYXJ5Eh0KBWNoaWxkGAMgASgLMgcuV2lkZ2'
-    'V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoIgnorePointerDescriptor instead')
-const FlutterCupertinoIgnorePointer$json = {
-  '1': 'FlutterCupertinoIgnorePointer',
-  '2': [
-    {'1': 'ignoring', '3': 3, '4': 1, '5': 8, '10': 'ignoring'},
-    {'1': 'ignoring_semantics', '3': 4, '4': 1, '5': 8, '10': 'ignoringSemantics'},
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoIgnorePointer`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoIgnorePointerDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vSWdub3JlUG9pbnRlchIaCghpZ25vcmluZxgDIAEoCFIIaWdub3'
-    'JpbmcSLQoSaWdub3Jpbmdfc2VtYW50aWNzGAQgASgIUhFpZ25vcmluZ1NlbWFudGljcxIdCgVj'
-    'aGlsZBgFIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoAbsorbPointerDescriptor instead')
-const FlutterCupertinoAbsorbPointer$json = {
-  '1': 'FlutterCupertinoAbsorbPointer',
-  '2': [
-    {'1': 'absorbing', '3': 3, '4': 1, '5': 8, '10': 'absorbing'},
-    {'1': 'ignoring_semantics', '3': 4, '4': 1, '5': 8, '10': 'ignoringSemantics'},
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAbsorbPointer`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAbsorbPointerDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vQWJzb3JiUG9pbnRlchIcCglhYnNvcmJpbmcYAyABKAhSCWFic2'
-    '9yYmluZxItChJpZ25vcmluZ19zZW1hbnRpY3MYBCABKAhSEWlnbm9yaW5nU2VtYW50aWNzEh0K'
-    'BWNoaWxkGAUgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoMetaDataDescriptor instead')
-const FlutterCupertinoMetaData$json = {
-  '1': 'FlutterCupertinoMetaData',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoMetaData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoMetaDataDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vTWV0YURhdGESHQoFY2hpbGQYBSABKAsyBy5XaWRnZXRSBWNoaW'
-    'xk');
-
-@$core.Deprecated('Use flutterCupertinoSemanticsDescriptor instead')
-const FlutterCupertinoSemantics$json = {
-  '1': 'FlutterCupertinoSemantics',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'container', '3': 4, '4': 1, '5': 8, '10': 'container'},
-    {'1': 'explicit_child_nodes', '3': 5, '4': 1, '5': 8, '10': 'explicitChildNodes'},
-    {'1': 'exclude_semantics', '3': 6, '4': 1, '5': 8, '10': 'excludeSemantics'},
-    {'1': 'block_user_actions', '3': 7, '4': 1, '5': 8, '10': 'blockUserActions'},
-    {'1': 'enabled', '3': 8, '4': 1, '5': 8, '10': 'enabled'},
-    {'1': 'checked', '3': 9, '4': 1, '5': 8, '10': 'checked'},
-    {'1': 'mixed', '3': 10, '4': 1, '5': 8, '10': 'mixed'},
-    {'1': 'selected', '3': 11, '4': 1, '5': 8, '10': 'selected'},
-    {'1': 'toggled', '3': 12, '4': 1, '5': 8, '10': 'toggled'},
-    {'1': 'button', '3': 13, '4': 1, '5': 8, '10': 'button'},
-    {'1': 'slider', '3': 14, '4': 1, '5': 8, '10': 'slider'},
-    {'1': 'keyboard_key', '3': 15, '4': 1, '5': 8, '10': 'keyboardKey'},
-    {'1': 'link', '3': 16, '4': 1, '5': 8, '10': 'link'},
-    {'1': 'header', '3': 17, '4': 1, '5': 8, '10': 'header'},
-    {'1': 'text_field', '3': 18, '4': 1, '5': 8, '10': 'textField'},
-    {'1': 'read_only', '3': 19, '4': 1, '5': 8, '10': 'readOnly'},
-    {'1': 'focusable', '3': 20, '4': 1, '5': 8, '10': 'focusable'},
-    {'1': 'focused', '3': 21, '4': 1, '5': 8, '10': 'focused'},
-    {'1': 'in_mutually_exclusive_group', '3': 22, '4': 1, '5': 8, '10': 'inMutuallyExclusiveGroup'},
-    {'1': 'obscured', '3': 23, '4': 1, '5': 8, '10': 'obscured'},
-    {'1': 'multiline', '3': 24, '4': 1, '5': 8, '10': 'multiline'},
-    {'1': 'scopes_route', '3': 25, '4': 1, '5': 8, '10': 'scopesRoute'},
-    {'1': 'names_route', '3': 26, '4': 1, '5': 8, '10': 'namesRoute'},
-    {'1': 'hidden', '3': 27, '4': 1, '5': 8, '10': 'hidden'},
-    {'1': 'image', '3': 28, '4': 1, '5': 8, '10': 'image'},
-    {'1': 'live_region', '3': 29, '4': 1, '5': 8, '10': 'liveRegion'},
-    {'1': 'max_value_length', '3': 30, '4': 1, '5': 3, '10': 'maxValueLength'},
-    {'1': 'current_value_length', '3': 31, '4': 1, '5': 3, '10': 'currentValueLength'},
-    {'1': 'label', '3': 32, '4': 1, '5': 9, '10': 'label'},
-    {'1': 'value', '3': 34, '4': 1, '5': 9, '10': 'value'},
-    {'1': 'increased_value', '3': 36, '4': 1, '5': 9, '10': 'increasedValue'},
-    {'1': 'decreased_value', '3': 38, '4': 1, '5': 9, '10': 'decreasedValue'},
-    {'1': 'hint', '3': 40, '4': 1, '5': 9, '10': 'hint'},
-    {'1': 'tooltip', '3': 42, '4': 1, '5': 9, '10': 'tooltip'},
-    {'1': 'on_tap_hint', '3': 43, '4': 1, '5': 9, '10': 'onTapHint'},
-    {'1': 'on_long_press_hint', '3': 44, '4': 1, '5': 9, '10': 'onLongPressHint'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSemantics`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSemanticsDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyQ3VwZXJ0aW5vU2VtYW50aWNzEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0UgVjaG'
-    'lsZBIcCgljb250YWluZXIYBCABKAhSCWNvbnRhaW5lchIwChRleHBsaWNpdF9jaGlsZF9ub2Rl'
-    'cxgFIAEoCFISZXhwbGljaXRDaGlsZE5vZGVzEisKEWV4Y2x1ZGVfc2VtYW50aWNzGAYgASgIUh'
-    'BleGNsdWRlU2VtYW50aWNzEiwKEmJsb2NrX3VzZXJfYWN0aW9ucxgHIAEoCFIQYmxvY2tVc2Vy'
-    'QWN0aW9ucxIYCgdlbmFibGVkGAggASgIUgdlbmFibGVkEhgKB2NoZWNrZWQYCSABKAhSB2NoZW'
-    'NrZWQSFAoFbWl4ZWQYCiABKAhSBW1peGVkEhoKCHNlbGVjdGVkGAsgASgIUghzZWxlY3RlZBIY'
-    'Cgd0b2dnbGVkGAwgASgIUgd0b2dnbGVkEhYKBmJ1dHRvbhgNIAEoCFIGYnV0dG9uEhYKBnNsaW'
-    'RlchgOIAEoCFIGc2xpZGVyEiEKDGtleWJvYXJkX2tleRgPIAEoCFILa2V5Ym9hcmRLZXkSEgoE'
-    'bGluaxgQIAEoCFIEbGluaxIWCgZoZWFkZXIYESABKAhSBmhlYWRlchIdCgp0ZXh0X2ZpZWxkGB'
-    'IgASgIUgl0ZXh0RmllbGQSGwoJcmVhZF9vbmx5GBMgASgIUghyZWFkT25seRIcCglmb2N1c2Fi'
-    'bGUYFCABKAhSCWZvY3VzYWJsZRIYCgdmb2N1c2VkGBUgASgIUgdmb2N1c2VkEj0KG2luX211dH'
-    'VhbGx5X2V4Y2x1c2l2ZV9ncm91cBgWIAEoCFIYaW5NdXR1YWxseUV4Y2x1c2l2ZUdyb3VwEhoK'
-    'CG9ic2N1cmVkGBcgASgIUghvYnNjdXJlZBIcCgltdWx0aWxpbmUYGCABKAhSCW11bHRpbGluZR'
-    'IhCgxzY29wZXNfcm91dGUYGSABKAhSC3Njb3Blc1JvdXRlEh8KC25hbWVzX3JvdXRlGBogASgI'
-    'UgpuYW1lc1JvdXRlEhYKBmhpZGRlbhgbIAEoCFIGaGlkZGVuEhQKBWltYWdlGBwgASgIUgVpbW'
-    'FnZRIfCgtsaXZlX3JlZ2lvbhgdIAEoCFIKbGl2ZVJlZ2lvbhIoChBtYXhfdmFsdWVfbGVuZ3Ro'
-    'GB4gASgDUg5tYXhWYWx1ZUxlbmd0aBIwChRjdXJyZW50X3ZhbHVlX2xlbmd0aBgfIAEoA1ISY3'
-    'VycmVudFZhbHVlTGVuZ3RoEhQKBWxhYmVsGCAgASgJUgVsYWJlbBIUCgV2YWx1ZRgiIAEoCVIF'
-    'dmFsdWUSJwoPaW5jcmVhc2VkX3ZhbHVlGCQgASgJUg5pbmNyZWFzZWRWYWx1ZRInCg9kZWNyZW'
-    'FzZWRfdmFsdWUYJiABKAlSDmRlY3JlYXNlZFZhbHVlEhIKBGhpbnQYKCABKAlSBGhpbnQSGAoH'
-    'dG9vbHRpcBgqIAEoCVIHdG9vbHRpcBIeCgtvbl90YXBfaGludBgrIAEoCVIJb25UYXBIaW50Ei'
-    'sKEm9uX2xvbmdfcHJlc3NfaGludBgsIAEoCVIPb25Mb25nUHJlc3NIaW50');
-
-@$core.Deprecated('Use flutterCupertinoMergeSemanticsDescriptor instead')
-const FlutterCupertinoMergeSemantics$json = {
-  '1': 'FlutterCupertinoMergeSemantics',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoMergeSemantics`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoMergeSemanticsDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vTWVyZ2VTZW1hbnRpY3MSHQoFY2hpbGQYAyABKAsyBy5XaWRnZX'
-    'RSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoBlockSemanticsDescriptor instead')
-const FlutterCupertinoBlockSemantics$json = {
-  '1': 'FlutterCupertinoBlockSemantics',
-  '2': [
-    {'1': 'blocking', '3': 3, '4': 1, '5': 8, '10': 'blocking'},
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoBlockSemantics`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoBlockSemanticsDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vQmxvY2tTZW1hbnRpY3MSGgoIYmxvY2tpbmcYAyABKAhSCGJsb2'
-    'NraW5nEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoExcludeSemanticsDescriptor instead')
-const FlutterCupertinoExcludeSemantics$json = {
-  '1': 'FlutterCupertinoExcludeSemantics',
-  '2': [
-    {'1': 'excluding', '3': 3, '4': 1, '5': 8, '10': 'excluding'},
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoExcludeSemantics`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoExcludeSemanticsDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vRXhjbHVkZVNlbWFudGljcxIcCglleGNsdWRpbmcYAyABKAhSCW'
-    'V4Y2x1ZGluZxIdCgVjaGlsZBgEIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoIndexedSemanticsDescriptor instead')
-const FlutterCupertinoIndexedSemantics$json = {
-  '1': 'FlutterCupertinoIndexedSemantics',
-  '2': [
-    {'1': 'index', '3': 3, '4': 1, '5': 3, '10': 'index'},
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoIndexedSemantics`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoIndexedSemanticsDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vSW5kZXhlZFNlbWFudGljcxIUCgVpbmRleBgDIAEoA1IFaW5kZX'
-    'gSHQoFY2hpbGQYBCABKAsyBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoKeyedSubtreeDescriptor instead')
-const FlutterCupertinoKeyedSubtree$json = {
-  '1': 'FlutterCupertinoKeyedSubtree',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoKeyedSubtree`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoKeyedSubtreeDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQ3VwZXJ0aW5vS2V5ZWRTdWJ0cmVlEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0Ug'
-    'VjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoBuilderDescriptor instead')
-const FlutterCupertinoBuilder$json = {
-  '1': 'FlutterCupertinoBuilder',
-};
-
-/// Descriptor for `FlutterCupertinoBuilder`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoBuilderDescriptor = $convert.base64Decode(
-    'ChdGbHV0dGVyQ3VwZXJ0aW5vQnVpbGRlcg==');
-
-@$core.Deprecated('Use flutterCupertinoStatefulBuilderDescriptor instead')
-const FlutterCupertinoStatefulBuilder$json = {
-  '1': 'FlutterCupertinoStatefulBuilder',
-};
-
-/// Descriptor for `FlutterCupertinoStatefulBuilder`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoStatefulBuilderDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vU3RhdGVmdWxCdWlsZGVy');
-
-@$core.Deprecated('Use flutterCupertinoColoredBoxDescriptor instead')
-const FlutterCupertinoColoredBox$json = {
-  '1': 'FlutterCupertinoColoredBox',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoColoredBox`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoColoredBoxDescriptor = $convert.base64Decode(
-    'ChpGbHV0dGVyQ3VwZXJ0aW5vQ29sb3JlZEJveBIdCgVjaGlsZBgDIAEoCzIHLldpZGdldFIFY2'
-    'hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoRenderObjectToWidgetAdapterDescriptor instead')
-const FlutterCupertinoRenderObjectToWidgetAdapter$json = {
-  '1': 'FlutterCupertinoRenderObjectToWidgetAdapter',
-  '2': [
-    {'1': 'child', '3': 2, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'debug_short_description', '3': 4, '4': 1, '5': 9, '10': 'debugShortDescription'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoRenderObjectToWidgetAdapter`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoRenderObjectToWidgetAdapterDescriptor = $convert.base64Decode(
-    'CitGbHV0dGVyQ3VwZXJ0aW5vUmVuZGVyT2JqZWN0VG9XaWRnZXRBZGFwdGVyEh0KBWNoaWxkGA'
-    'IgASgLMgcuV2lkZ2V0UgVjaGlsZBI2ChdkZWJ1Z19zaG9ydF9kZXNjcmlwdGlvbhgEIAEoCVIV'
-    'ZGVidWdTaG9ydERlc2NyaXB0aW9u');
-
-@$core.Deprecated('Use flutterCupertinoColorFilteredDescriptor instead')
-const FlutterCupertinoColorFiltered$json = {
-  '1': 'FlutterCupertinoColorFiltered',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoColorFiltered`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoColorFilteredDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vQ29sb3JGaWx0ZXJlZBIdCgVjaGlsZBgDIAEoCzIHLldpZGdldF'
-    'IFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoDecoratedBoxDescriptor instead')
-const FlutterCupertinoDecoratedBox$json = {
-  '1': 'FlutterCupertinoDecoratedBox',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoDecoratedBox`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoDecoratedBoxDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQ3VwZXJ0aW5vRGVjb3JhdGVkQm94Eh0KBWNoaWxkGAUgASgLMgcuV2lkZ2V0Ug'
-    'VjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoContainerDescriptor instead')
-const FlutterCupertinoContainer$json = {
-  '1': 'FlutterCupertinoContainer',
-  '2': [
-    {'1': 'width', '3': 8, '4': 1, '5': 1, '10': 'width'},
-    {'1': 'height', '3': 9, '4': 1, '5': 1, '10': 'height'},
-    {'1': 'child', '3': 14, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoContainer`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoContainerDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyQ3VwZXJ0aW5vQ29udGFpbmVyEhQKBXdpZHRoGAggASgBUgV3aWR0aBIWCgZoZW'
-    'lnaHQYCSABKAFSBmhlaWdodBIdCgVjaGlsZBgOIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoDecoratedSliverDescriptor instead')
-const FlutterCupertinoDecoratedSliver$json = {
-  '1': 'FlutterCupertinoDecoratedSliver',
-  '2': [
-    {'1': 'sliver', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoDecoratedSliver`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoDecoratedSliverDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vRGVjb3JhdGVkU2xpdmVyEh8KBnNsaXZlchgFIAEoCzIHLldpZG'
-    'dldFIGc2xpdmVy');
-
-@$core.Deprecated('Use flutterCupertinoDefaultSelectionStyleDescriptor instead')
-const FlutterCupertinoDefaultSelectionStyle$json = {
-  '1': 'FlutterCupertinoDefaultSelectionStyle',
-  '2': [
-    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoDefaultSelectionStyle`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoDefaultSelectionStyleDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyQ3VwZXJ0aW5vRGVmYXVsdFNlbGVjdGlvblN0eWxlEh0KBWNoaWxkGAYgASgLMg'
-    'cuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoDefaultTextEditingShortcutsDescriptor instead')
-const FlutterCupertinoDefaultTextEditingShortcuts$json = {
-  '1': 'FlutterCupertinoDefaultTextEditingShortcuts',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoDefaultTextEditingShortcuts`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoDefaultTextEditingShortcutsDescriptor = $convert.base64Decode(
-    'CitGbHV0dGVyQ3VwZXJ0aW5vRGVmYXVsdFRleHRFZGl0aW5nU2hvcnRjdXRzEh0KBWNoaWxkGA'
-    'MgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoDismissibleDescriptor instead')
-const FlutterCupertinoDismissible$json = {
-  '1': 'FlutterCupertinoDismissible',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'background', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'background'},
-    {'1': 'secondary_background', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'secondaryBackground'},
-    {'1': 'cross_axis_end_offset', '3': 14, '4': 1, '5': 1, '10': 'crossAxisEndOffset'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoDismissible`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoDismissibleDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyQ3VwZXJ0aW5vRGlzbWlzc2libGUSHQoFY2hpbGQYAyABKAsyBy5XaWRnZXRSBW'
-    'NoaWxkEicKCmJhY2tncm91bmQYBCABKAsyBy5XaWRnZXRSCmJhY2tncm91bmQSOgoUc2Vjb25k'
-    'YXJ5X2JhY2tncm91bmQYBSABKAsyBy5XaWRnZXRSE3NlY29uZGFyeUJhY2tncm91bmQSMQoVY3'
-    'Jvc3NfYXhpc19lbmRfb2Zmc2V0GA4gASgBUhJjcm9zc0F4aXNFbmRPZmZzZXQ=');
-
-@$core.Deprecated('Use flutterCupertinoDisplayFeatureSubScreenDescriptor instead')
-const FlutterCupertinoDisplayFeatureSubScreen$json = {
-  '1': 'FlutterCupertinoDisplayFeatureSubScreen',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoDisplayFeatureSubScreen`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoDisplayFeatureSubScreenDescriptor = $convert.base64Decode(
-    'CidGbHV0dGVyQ3VwZXJ0aW5vRGlzcGxheUZlYXR1cmVTdWJTY3JlZW4SHQoFY2hpbGQYBCABKA'
-    'syBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoDraggableDescriptor instead')
-const FlutterCupertinoDraggable$json = {
-  '1': 'FlutterCupertinoDraggable',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'feedback', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'feedback'},
-    {'1': 'child_when_dragging', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'childWhenDragging'},
-    {'1': 'max_simultaneous_drags', '3': 11, '4': 1, '5': 3, '10': 'maxSimultaneousDrags'},
-    {'1': 'ignoring_feedback_semantics', '3': 17, '4': 1, '5': 8, '10': 'ignoringFeedbackSemantics'},
-    {'1': 'ignoring_feedback_pointer', '3': 18, '4': 1, '5': 8, '10': 'ignoringFeedbackPointer'},
-    {'1': 'root_overlay', '3': 19, '4': 1, '5': 8, '10': 'rootOverlay'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoDraggable`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoDraggableDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyQ3VwZXJ0aW5vRHJhZ2dhYmxlEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0UgVjaG'
-    'lsZBIjCghmZWVkYmFjaxgEIAEoCzIHLldpZGdldFIIZmVlZGJhY2sSNwoTY2hpbGRfd2hlbl9k'
-    'cmFnZ2luZxgHIAEoCzIHLldpZGdldFIRY2hpbGRXaGVuRHJhZ2dpbmcSNAoWbWF4X3NpbXVsdG'
-    'FuZW91c19kcmFncxgLIAEoA1IUbWF4U2ltdWx0YW5lb3VzRHJhZ3MSPgobaWdub3JpbmdfZmVl'
-    'ZGJhY2tfc2VtYW50aWNzGBEgASgIUhlpZ25vcmluZ0ZlZWRiYWNrU2VtYW50aWNzEjoKGWlnbm'
-    '9yaW5nX2ZlZWRiYWNrX3BvaW50ZXIYEiABKAhSF2lnbm9yaW5nRmVlZGJhY2tQb2ludGVyEiEK'
-    'DHJvb3Rfb3ZlcmxheRgTIAEoCFILcm9vdE92ZXJsYXk=');
-
-@$core.Deprecated('Use flutterCupertinoLongPressDraggableDescriptor instead')
-const FlutterCupertinoLongPressDraggable$json = {
-  '1': 'FlutterCupertinoLongPressDraggable',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'feedback', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'feedback'},
-    {'1': 'child_when_dragging', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'childWhenDragging'},
-    {'1': 'max_simultaneous_drags', '3': 10, '4': 1, '5': 3, '10': 'maxSimultaneousDrags'},
-    {'1': 'haptic_feedback_on_start', '3': 16, '4': 1, '5': 8, '10': 'hapticFeedbackOnStart'},
-    {'1': 'ignoring_feedback_semantics', '3': 17, '4': 1, '5': 8, '10': 'ignoringFeedbackSemantics'},
-    {'1': 'ignoring_feedback_pointer', '3': 18, '4': 1, '5': 8, '10': 'ignoringFeedbackPointer'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoLongPressDraggable`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoLongPressDraggableDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vTG9uZ1ByZXNzRHJhZ2dhYmxlEh0KBWNoaWxkGAMgASgLMgcuV2'
-    'lkZ2V0UgVjaGlsZBIjCghmZWVkYmFjaxgEIAEoCzIHLldpZGdldFIIZmVlZGJhY2sSNwoTY2hp'
-    'bGRfd2hlbl9kcmFnZ2luZxgHIAEoCzIHLldpZGdldFIRY2hpbGRXaGVuRHJhZ2dpbmcSNAoWbW'
-    'F4X3NpbXVsdGFuZW91c19kcmFncxgKIAEoA1IUbWF4U2ltdWx0YW5lb3VzRHJhZ3MSNwoYaGFw'
-    'dGljX2ZlZWRiYWNrX29uX3N0YXJ0GBAgASgIUhVoYXB0aWNGZWVkYmFja09uU3RhcnQSPgobaW'
-    'dub3JpbmdfZmVlZGJhY2tfc2VtYW50aWNzGBEgASgIUhlpZ25vcmluZ0ZlZWRiYWNrU2VtYW50'
-    'aWNzEjoKGWlnbm9yaW5nX2ZlZWRiYWNrX3BvaW50ZXIYEiABKAhSF2lnbm9yaW5nRmVlZGJhY2'
-    'tQb2ludGVy');
-
-@$core.Deprecated('Use flutterCupertinoDragTargetDescriptor instead')
-const FlutterCupertinoDragTarget$json = {
-  '1': 'FlutterCupertinoDragTarget',
-};
-
-/// Descriptor for `FlutterCupertinoDragTarget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoDragTargetDescriptor = $convert.base64Decode(
-    'ChpGbHV0dGVyQ3VwZXJ0aW5vRHJhZ1RhcmdldA==');
-
-@$core.Deprecated('Use flutterCupertinoDraggableScrollableSheetDescriptor instead')
-const FlutterCupertinoDraggableScrollableSheet$json = {
-  '1': 'FlutterCupertinoDraggableScrollableSheet',
-  '2': [
-    {'1': 'initial_child_size', '3': 3, '4': 1, '5': 1, '10': 'initialChildSize'},
-    {'1': 'min_child_size', '3': 4, '4': 1, '5': 1, '10': 'minChildSize'},
-    {'1': 'max_child_size', '3': 5, '4': 1, '5': 1, '10': 'maxChildSize'},
-    {'1': 'expand', '3': 6, '4': 1, '5': 8, '10': 'expand'},
-    {'1': 'snap', '3': 7, '4': 1, '5': 8, '10': 'snap'},
-    {'1': 'should_close_on_min_extent', '3': 11, '4': 1, '5': 8, '10': 'shouldCloseOnMinExtent'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoDraggableScrollableSheet`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoDraggableScrollableSheetDescriptor = $convert.base64Decode(
-    'CihGbHV0dGVyQ3VwZXJ0aW5vRHJhZ2dhYmxlU2Nyb2xsYWJsZVNoZWV0EiwKEmluaXRpYWxfY2'
-    'hpbGRfc2l6ZRgDIAEoAVIQaW5pdGlhbENoaWxkU2l6ZRIkCg5taW5fY2hpbGRfc2l6ZRgEIAEo'
-    'AVIMbWluQ2hpbGRTaXplEiQKDm1heF9jaGlsZF9zaXplGAUgASgBUgxtYXhDaGlsZFNpemUSFg'
-    'oGZXhwYW5kGAYgASgIUgZleHBhbmQSEgoEc25hcBgHIAEoCFIEc25hcBI6ChpzaG91bGRfY2xv'
-    'c2Vfb25fbWluX2V4dGVudBgLIAEoCFIWc2hvdWxkQ2xvc2VPbk1pbkV4dGVudA==');
-
-@$core.Deprecated('Use flutterCupertinoDraggableScrollableActuatorDescriptor instead')
-const FlutterCupertinoDraggableScrollableActuator$json = {
-  '1': 'FlutterCupertinoDraggableScrollableActuator',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoDraggableScrollableActuator`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoDraggableScrollableActuatorDescriptor = $convert.base64Decode(
-    'CitGbHV0dGVyQ3VwZXJ0aW5vRHJhZ2dhYmxlU2Nyb2xsYWJsZUFjdHVhdG9yEh0KBWNoaWxkGA'
-    'MgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoDualTransitionBuilderDescriptor instead')
-const FlutterCupertinoDualTransitionBuilder$json = {
-  '1': 'FlutterCupertinoDualTransitionBuilder',
-  '2': [
-    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoDualTransitionBuilder`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoDualTransitionBuilderDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyQ3VwZXJ0aW5vRHVhbFRyYW5zaXRpb25CdWlsZGVyEh0KBWNoaWxkGAYgASgLMg'
-    'cuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoEditableTextDescriptor instead')
-const FlutterCupertinoEditableText$json = {
-  '1': 'FlutterCupertinoEditableText',
-  '2': [
-    {'1': 'read_only', '3': 5, '4': 1, '5': 8, '10': 'readOnly'},
-    {'1': 'obscuring_character', '3': 6, '4': 1, '5': 9, '10': 'obscuringCharacter'},
-    {'1': 'obscure_text', '3': 7, '4': 1, '5': 8, '10': 'obscureText'},
-    {'1': 'autocorrect', '3': 8, '4': 1, '5': 8, '10': 'autocorrect'},
-    {'1': 'enable_suggestions', '3': 11, '4': 1, '5': 8, '10': 'enableSuggestions'},
-    {'1': 'text_scale_factor', '3': 19, '4': 1, '5': 1, '10': 'textScaleFactor'},
-    {'1': 'max_lines', '3': 20, '4': 1, '5': 3, '10': 'maxLines'},
-    {'1': 'min_lines', '3': 21, '4': 1, '5': 3, '10': 'minLines'},
-    {'1': 'expands', '3': 22, '4': 1, '5': 8, '10': 'expands'},
-    {'1': 'force_line', '3': 23, '4': 1, '5': 8, '10': 'forceLine'},
-    {'1': 'autofocus', '3': 26, '4': 1, '5': 8, '10': 'autofocus'},
-    {'1': 'show_cursor', '3': 27, '4': 1, '5': 8, '10': 'showCursor'},
-    {'1': 'show_selection_handles', '3': 28, '4': 1, '5': 8, '10': 'showSelectionHandles'},
-    {'1': 'renderer_ignores_pointer', '3': 43, '4': 1, '5': 8, '10': 'rendererIgnoresPointer'},
-    {'1': 'cursor_width', '3': 44, '4': 1, '5': 1, '10': 'cursorWidth'},
-    {'1': 'cursor_height', '3': 45, '4': 1, '5': 1, '10': 'cursorHeight'},
-    {'1': 'cursor_opacity_animates', '3': 47, '4': 1, '5': 8, '10': 'cursorOpacityAnimates'},
-    {'1': 'paint_cursor_above_text', '3': 49, '4': 1, '5': 8, '10': 'paintCursorAboveText'},
-    {'1': 'enable_interactive_selection', '3': 55, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
-    {'1': 'restoration_id', '3': 63, '4': 1, '5': 9, '10': 'restorationId'},
-    {'1': 'scribble_enabled', '3': 65, '4': 1, '5': 8, '10': 'scribbleEnabled'},
-    {'1': 'enable_i_m_e_personalized_learning', '3': 66, '4': 1, '5': 8, '10': 'enableIMEPersonalizedLearning'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoEditableText`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoEditableTextDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQ3VwZXJ0aW5vRWRpdGFibGVUZXh0EhsKCXJlYWRfb25seRgFIAEoCFIIcmVhZE'
-    '9ubHkSLwoTb2JzY3VyaW5nX2NoYXJhY3RlchgGIAEoCVISb2JzY3VyaW5nQ2hhcmFjdGVyEiEK'
-    'DG9ic2N1cmVfdGV4dBgHIAEoCFILb2JzY3VyZVRleHQSIAoLYXV0b2NvcnJlY3QYCCABKAhSC2'
-    'F1dG9jb3JyZWN0Ei0KEmVuYWJsZV9zdWdnZXN0aW9ucxgLIAEoCFIRZW5hYmxlU3VnZ2VzdGlv'
-    'bnMSKgoRdGV4dF9zY2FsZV9mYWN0b3IYEyABKAFSD3RleHRTY2FsZUZhY3RvchIbCgltYXhfbG'
-    'luZXMYFCABKANSCG1heExpbmVzEhsKCW1pbl9saW5lcxgVIAEoA1IIbWluTGluZXMSGAoHZXhw'
-    'YW5kcxgWIAEoCFIHZXhwYW5kcxIdCgpmb3JjZV9saW5lGBcgASgIUglmb3JjZUxpbmUSHAoJYX'
-    'V0b2ZvY3VzGBogASgIUglhdXRvZm9jdXMSHwoLc2hvd19jdXJzb3IYGyABKAhSCnNob3dDdXJz'
-    'b3ISNAoWc2hvd19zZWxlY3Rpb25faGFuZGxlcxgcIAEoCFIUc2hvd1NlbGVjdGlvbkhhbmRsZX'
-    'MSOAoYcmVuZGVyZXJfaWdub3Jlc19wb2ludGVyGCsgASgIUhZyZW5kZXJlcklnbm9yZXNQb2lu'
-    'dGVyEiEKDGN1cnNvcl93aWR0aBgsIAEoAVILY3Vyc29yV2lkdGgSIwoNY3Vyc29yX2hlaWdodB'
-    'gtIAEoAVIMY3Vyc29ySGVpZ2h0EjYKF2N1cnNvcl9vcGFjaXR5X2FuaW1hdGVzGC8gASgIUhVj'
-    'dXJzb3JPcGFjaXR5QW5pbWF0ZXMSNQoXcGFpbnRfY3Vyc29yX2Fib3ZlX3RleHQYMSABKAhSFH'
-    'BhaW50Q3Vyc29yQWJvdmVUZXh0EkAKHGVuYWJsZV9pbnRlcmFjdGl2ZV9zZWxlY3Rpb24YNyAB'
-    'KAhSGmVuYWJsZUludGVyYWN0aXZlU2VsZWN0aW9uEiUKDnJlc3RvcmF0aW9uX2lkGD8gASgJUg'
-    '1yZXN0b3JhdGlvbklkEikKEHNjcmliYmxlX2VuYWJsZWQYQSABKAhSD3NjcmliYmxlRW5hYmxl'
-    'ZBJJCiJlbmFibGVfaV9tX2VfcGVyc29uYWxpemVkX2xlYXJuaW5nGEIgASgIUh1lbmFibGVJTU'
-    'VQZXJzb25hbGl6ZWRMZWFybmluZw==');
-
-@$core.Deprecated('Use flutterCupertinoFadeInImageDescriptor instead')
-const FlutterCupertinoFadeInImage$json = {
-  '1': 'FlutterCupertinoFadeInImage',
-  '2': [
-    {'1': 'exclude_from_semantics', '3': 7, '4': 1, '5': 8, '10': 'excludeFromSemantics'},
-    {'1': 'image_semantic_label', '3': 8, '4': 1, '5': 9, '10': 'imageSemanticLabel'},
-    {'1': 'width', '3': 13, '4': 1, '5': 1, '10': 'width'},
-    {'1': 'height', '3': 14, '4': 1, '5': 1, '10': 'height'},
-    {'1': 'match_text_direction', '3': 21, '4': 1, '5': 8, '10': 'matchTextDirection'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoFadeInImage`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoFadeInImageDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyQ3VwZXJ0aW5vRmFkZUluSW1hZ2USNAoWZXhjbHVkZV9mcm9tX3NlbWFudGljcx'
-    'gHIAEoCFIUZXhjbHVkZUZyb21TZW1hbnRpY3MSMAoUaW1hZ2Vfc2VtYW50aWNfbGFiZWwYCCAB'
-    'KAlSEmltYWdlU2VtYW50aWNMYWJlbBIUCgV3aWR0aBgNIAEoAVIFd2lkdGgSFgoGaGVpZ2h0GA'
-    '4gASgBUgZoZWlnaHQSMAoUbWF0Y2hfdGV4dF9kaXJlY3Rpb24YFSABKAhSEm1hdGNoVGV4dERp'
-    'cmVjdGlvbg==');
-
-@$core.Deprecated('Use flutterCupertinoFocusDescriptor instead')
-const FlutterCupertinoFocus$json = {
-  '1': 'FlutterCupertinoFocus',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'autofocus', '3': 6, '4': 1, '5': 8, '10': 'autofocus'},
-    {'1': 'can_request_focus', '3': 10, '4': 1, '5': 8, '10': 'canRequestFocus'},
-    {'1': 'skip_traversal', '3': 11, '4': 1, '5': 8, '10': 'skipTraversal'},
-    {'1': 'descendants_are_focusable', '3': 12, '4': 1, '5': 8, '10': 'descendantsAreFocusable'},
-    {'1': 'descendants_are_traversable', '3': 13, '4': 1, '5': 8, '10': 'descendantsAreTraversable'},
-    {'1': 'include_semantics', '3': 14, '4': 1, '5': 8, '10': 'includeSemantics'},
-    {'1': 'debug_label', '3': 15, '4': 1, '5': 9, '10': 'debugLabel'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoFocus`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoFocusDescriptor = $convert.base64Decode(
-    'ChVGbHV0dGVyQ3VwZXJ0aW5vRm9jdXMSHQoFY2hpbGQYAyABKAsyBy5XaWRnZXRSBWNoaWxkEh'
-    'wKCWF1dG9mb2N1cxgGIAEoCFIJYXV0b2ZvY3VzEioKEWNhbl9yZXF1ZXN0X2ZvY3VzGAogASgI'
-    'Ug9jYW5SZXF1ZXN0Rm9jdXMSJQoOc2tpcF90cmF2ZXJzYWwYCyABKAhSDXNraXBUcmF2ZXJzYW'
-    'wSOgoZZGVzY2VuZGFudHNfYXJlX2ZvY3VzYWJsZRgMIAEoCFIXZGVzY2VuZGFudHNBcmVGb2N1'
-    'c2FibGUSPgobZGVzY2VuZGFudHNfYXJlX3RyYXZlcnNhYmxlGA0gASgIUhlkZXNjZW5kYW50c0'
-    'FyZVRyYXZlcnNhYmxlEisKEWluY2x1ZGVfc2VtYW50aWNzGA4gASgIUhBpbmNsdWRlU2VtYW50'
-    'aWNzEh8KC2RlYnVnX2xhYmVsGA8gASgJUgpkZWJ1Z0xhYmVs');
-
-@$core.Deprecated('Use flutterCupertinoFocusScopeDescriptor instead')
-const FlutterCupertinoFocusScope$json = {
-  '1': 'FlutterCupertinoFocusScope',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'autofocus', '3': 6, '4': 1, '5': 8, '10': 'autofocus'},
-    {'1': 'can_request_focus', '3': 8, '4': 1, '5': 8, '10': 'canRequestFocus'},
-    {'1': 'skip_traversal', '3': 9, '4': 1, '5': 8, '10': 'skipTraversal'},
-    {'1': 'debug_label', '3': 12, '4': 1, '5': 9, '10': 'debugLabel'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoFocusScope`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoFocusScopeDescriptor = $convert.base64Decode(
-    'ChpGbHV0dGVyQ3VwZXJ0aW5vRm9jdXNTY29wZRIdCgVjaGlsZBgFIAEoCzIHLldpZGdldFIFY2'
-    'hpbGQSHAoJYXV0b2ZvY3VzGAYgASgIUglhdXRvZm9jdXMSKgoRY2FuX3JlcXVlc3RfZm9jdXMY'
-    'CCABKAhSD2NhblJlcXVlc3RGb2N1cxIlCg5za2lwX3RyYXZlcnNhbBgJIAEoCFINc2tpcFRyYX'
-    'ZlcnNhbBIfCgtkZWJ1Z19sYWJlbBgMIAEoCVIKZGVidWdMYWJlbA==');
-
-@$core.Deprecated('Use flutterCupertinoExcludeFocusDescriptor instead')
-const FlutterCupertinoExcludeFocus$json = {
-  '1': 'FlutterCupertinoExcludeFocus',
-  '2': [
-    {'1': 'excluding', '3': 3, '4': 1, '5': 8, '10': 'excluding'},
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoExcludeFocus`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoExcludeFocusDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQ3VwZXJ0aW5vRXhjbHVkZUZvY3VzEhwKCWV4Y2x1ZGluZxgDIAEoCFIJZXhjbH'
-    'VkaW5nEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoFocusTraversalOrderDescriptor instead')
-const FlutterCupertinoFocusTraversalOrder$json = {
-  '1': 'FlutterCupertinoFocusTraversalOrder',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoFocusTraversalOrder`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoFocusTraversalOrderDescriptor = $convert.base64Decode(
-    'CiNGbHV0dGVyQ3VwZXJ0aW5vRm9jdXNUcmF2ZXJzYWxPcmRlchIdCgVjaGlsZBgEIAEoCzIHLl'
-    'dpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoFocusTraversalGroupDescriptor instead')
-const FlutterCupertinoFocusTraversalGroup$json = {
-  '1': 'FlutterCupertinoFocusTraversalGroup',
-  '2': [
-    {'1': 'descendants_are_focusable', '3': 4, '4': 1, '5': 8, '10': 'descendantsAreFocusable'},
-    {'1': 'descendants_are_traversable', '3': 5, '4': 1, '5': 8, '10': 'descendantsAreTraversable'},
-    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoFocusTraversalGroup`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoFocusTraversalGroupDescriptor = $convert.base64Decode(
-    'CiNGbHV0dGVyQ3VwZXJ0aW5vRm9jdXNUcmF2ZXJzYWxHcm91cBI6ChlkZXNjZW5kYW50c19hcm'
-    'VfZm9jdXNhYmxlGAQgASgIUhdkZXNjZW5kYW50c0FyZUZvY3VzYWJsZRI+ChtkZXNjZW5kYW50'
-    'c19hcmVfdHJhdmVyc2FibGUYBSABKAhSGWRlc2NlbmRhbnRzQXJlVHJhdmVyc2FibGUSHQoFY2'
-    'hpbGQYBiABKAsyBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoExcludeFocusTraversalDescriptor instead')
-const FlutterCupertinoExcludeFocusTraversal$json = {
-  '1': 'FlutterCupertinoExcludeFocusTraversal',
-  '2': [
-    {'1': 'excluding', '3': 3, '4': 1, '5': 8, '10': 'excluding'},
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoExcludeFocusTraversal`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoExcludeFocusTraversalDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyQ3VwZXJ0aW5vRXhjbHVkZUZvY3VzVHJhdmVyc2FsEhwKCWV4Y2x1ZGluZxgDIA'
-    'EoCFIJZXhjbHVkaW5nEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoFormDescriptor instead')
-const FlutterCupertinoForm$json = {
-  '1': 'FlutterCupertinoForm',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoForm`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoFormDescriptor = $convert.base64Decode(
-    'ChRGbHV0dGVyQ3VwZXJ0aW5vRm9ybRIdCgVjaGlsZBgDIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoFormFieldDescriptor instead')
-const FlutterCupertinoFormField$json = {
-  '1': 'FlutterCupertinoFormField',
-  '2': [
-    {'1': 'enabled', '3': 7, '4': 1, '5': 8, '10': 'enabled'},
-    {'1': 'restoration_id', '3': 9, '4': 1, '5': 9, '10': 'restorationId'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoFormField`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoFormFieldDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyQ3VwZXJ0aW5vRm9ybUZpZWxkEhgKB2VuYWJsZWQYByABKAhSB2VuYWJsZWQSJQ'
-    'oOcmVzdG9yYXRpb25faWQYCSABKAlSDXJlc3RvcmF0aW9uSWQ=');
-
-@$core.Deprecated('Use flutterCupertinoStatelessWidgetDescriptor instead')
-const FlutterCupertinoStatelessWidget$json = {
-  '1': 'FlutterCupertinoStatelessWidget',
-};
-
-/// Descriptor for `FlutterCupertinoStatelessWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoStatelessWidgetDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vU3RhdGVsZXNzV2lkZ2V0');
-
-@$core.Deprecated('Use flutterCupertinoStatefulWidgetDescriptor instead')
-const FlutterCupertinoStatefulWidget$json = {
-  '1': 'FlutterCupertinoStatefulWidget',
-};
-
-/// Descriptor for `FlutterCupertinoStatefulWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoStatefulWidgetDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vU3RhdGVmdWxXaWRnZXQ=');
-
-@$core.Deprecated('Use flutterCupertinoProxyWidgetDescriptor instead')
-const FlutterCupertinoProxyWidget$json = {
-  '1': 'FlutterCupertinoProxyWidget',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoProxyWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoProxyWidgetDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyQ3VwZXJ0aW5vUHJveHlXaWRnZXQSHQoFY2hpbGQYAyABKAsyBy5XaWRnZXRSBW'
-    'NoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoParentDataWidgetDescriptor instead')
-const FlutterCupertinoParentDataWidget$json = {
-  '1': 'FlutterCupertinoParentDataWidget',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoParentDataWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoParentDataWidgetDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vUGFyZW50RGF0YVdpZGdldBIdCgVjaGlsZBgDIAEoCzIHLldpZG'
-    'dldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoInheritedWidgetDescriptor instead')
-const FlutterCupertinoInheritedWidget$json = {
-  '1': 'FlutterCupertinoInheritedWidget',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoInheritedWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoInheritedWidgetDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vSW5oZXJpdGVkV2lkZ2V0Eh0KBWNoaWxkGAMgASgLMgcuV2lkZ2'
-    'V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoRenderObjectWidgetDescriptor instead')
-const FlutterCupertinoRenderObjectWidget$json = {
-  '1': 'FlutterCupertinoRenderObjectWidget',
-};
-
-/// Descriptor for `FlutterCupertinoRenderObjectWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoRenderObjectWidgetDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vUmVuZGVyT2JqZWN0V2lkZ2V0');
-
-@$core.Deprecated('Use flutterCupertinoLeafRenderObjectWidgetDescriptor instead')
-const FlutterCupertinoLeafRenderObjectWidget$json = {
-  '1': 'FlutterCupertinoLeafRenderObjectWidget',
-};
-
-/// Descriptor for `FlutterCupertinoLeafRenderObjectWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoLeafRenderObjectWidgetDescriptor = $convert.base64Decode(
-    'CiZGbHV0dGVyQ3VwZXJ0aW5vTGVhZlJlbmRlck9iamVjdFdpZGdldA==');
-
-@$core.Deprecated('Use flutterCupertinoSingleChildRenderObjectWidgetDescriptor instead')
-const FlutterCupertinoSingleChildRenderObjectWidget$json = {
-  '1': 'FlutterCupertinoSingleChildRenderObjectWidget',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSingleChildRenderObjectWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSingleChildRenderObjectWidgetDescriptor = $convert.base64Decode(
-    'Ci1GbHV0dGVyQ3VwZXJ0aW5vU2luZ2xlQ2hpbGRSZW5kZXJPYmplY3RXaWRnZXQSHQoFY2hpbG'
-    'QYAyABKAsyBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoMultiChildRenderObjectWidgetDescriptor instead')
-const FlutterCupertinoMultiChildRenderObjectWidget$json = {
-  '1': 'FlutterCupertinoMultiChildRenderObjectWidget',
-};
-
-/// Descriptor for `FlutterCupertinoMultiChildRenderObjectWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoMultiChildRenderObjectWidgetDescriptor = $convert.base64Decode(
-    'CixGbHV0dGVyQ3VwZXJ0aW5vTXVsdGlDaGlsZFJlbmRlck9iamVjdFdpZGdldA==');
-
-@$core.Deprecated('Use flutterCupertinoErrorWidgetDescriptor instead')
-const FlutterCupertinoErrorWidget$json = {
-  '1': 'FlutterCupertinoErrorWidget',
-};
-
-/// Descriptor for `FlutterCupertinoErrorWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoErrorWidgetDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyQ3VwZXJ0aW5vRXJyb3JXaWRnZXQ=');
-
-@$core.Deprecated('Use flutterCupertinoGestureDetectorDescriptor instead')
-const FlutterCupertinoGestureDetector$json = {
-  '1': 'FlutterCupertinoGestureDetector',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'exclude_from_semantics', '3': 62, '4': 1, '5': 8, '10': 'excludeFromSemantics'},
-    {'1': 'trackpad_scroll_causes_scale', '3': 64, '4': 1, '5': 8, '10': 'trackpadScrollCausesScale'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoGestureDetector`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoGestureDetectorDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vR2VzdHVyZURldGVjdG9yEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2'
-    'V0UgVjaGlsZBI0ChZleGNsdWRlX2Zyb21fc2VtYW50aWNzGD4gASgIUhRleGNsdWRlRnJvbVNl'
-    'bWFudGljcxI/Chx0cmFja3BhZF9zY3JvbGxfY2F1c2VzX3NjYWxlGEAgASgIUhl0cmFja3BhZF'
-    'Njcm9sbENhdXNlc1NjYWxl');
-
-@$core.Deprecated('Use flutterCupertinoRawGestureDetectorDescriptor instead')
-const FlutterCupertinoRawGestureDetector$json = {
-  '1': 'FlutterCupertinoRawGestureDetector',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'exclude_from_semantics', '3': 6, '4': 1, '5': 8, '10': 'excludeFromSemantics'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoRawGestureDetector`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoRawGestureDetectorDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vUmF3R2VzdHVyZURldGVjdG9yEh0KBWNoaWxkGAMgASgLMgcuV2'
-    'lkZ2V0UgVjaGlsZBI0ChZleGNsdWRlX2Zyb21fc2VtYW50aWNzGAYgASgIUhRleGNsdWRlRnJv'
-    'bVNlbWFudGljcw==');
-
-@$core.Deprecated('Use flutterCupertinoGridPaperDescriptor instead')
-const FlutterCupertinoGridPaper$json = {
-  '1': 'FlutterCupertinoGridPaper',
-  '2': [
-    {'1': 'interval', '3': 4, '4': 1, '5': 1, '10': 'interval'},
-    {'1': 'divisions', '3': 5, '4': 1, '5': 3, '10': 'divisions'},
-    {'1': 'subdivisions', '3': 6, '4': 1, '5': 3, '10': 'subdivisions'},
-    {'1': 'child', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoGridPaper`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoGridPaperDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyQ3VwZXJ0aW5vR3JpZFBhcGVyEhoKCGludGVydmFsGAQgASgBUghpbnRlcnZhbB'
-    'IcCglkaXZpc2lvbnMYBSABKANSCWRpdmlzaW9ucxIiCgxzdWJkaXZpc2lvbnMYBiABKANSDHN1'
-    'YmRpdmlzaW9ucxIdCgVjaGlsZBgHIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoHeroDescriptor instead')
-const FlutterCupertinoHero$json = {
-  '1': 'FlutterCupertinoHero',
-  '2': [
-    {'1': 'transition_on_user_gestures', '3': 7, '4': 1, '5': 8, '10': 'transitionOnUserGestures'},
-    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoHero`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoHeroDescriptor = $convert.base64Decode(
-    'ChRGbHV0dGVyQ3VwZXJ0aW5vSGVybxI9Cht0cmFuc2l0aW9uX29uX3VzZXJfZ2VzdHVyZXMYBy'
-    'ABKAhSGHRyYW5zaXRpb25PblVzZXJHZXN0dXJlcxIdCgVjaGlsZBgIIAEoCzIHLldpZGdldFIF'
-    'Y2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoHeroModeDescriptor instead')
-const FlutterCupertinoHeroMode$json = {
-  '1': 'FlutterCupertinoHeroMode',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'enabled', '3': 4, '4': 1, '5': 8, '10': 'enabled'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoHeroMode`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoHeroModeDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vSGVyb01vZGUSHQoFY2hpbGQYAyABKAsyBy5XaWRnZXRSBWNoaW'
-    'xkEhgKB2VuYWJsZWQYBCABKAhSB2VuYWJsZWQ=');
-
-@$core.Deprecated('Use flutterCupertinoIconDescriptor instead')
-const FlutterCupertinoIcon$json = {
-  '1': 'FlutterCupertinoIcon',
-  '2': [
-    {'1': 'size', '3': 4, '4': 1, '5': 1, '10': 'size'},
-    {'1': 'fill', '3': 5, '4': 1, '5': 1, '10': 'fill'},
-    {'1': 'weight', '3': 6, '4': 1, '5': 1, '10': 'weight'},
-    {'1': 'grade', '3': 7, '4': 1, '5': 1, '10': 'grade'},
-    {'1': 'optical_size', '3': 8, '4': 1, '5': 1, '10': 'opticalSize'},
-    {'1': 'semantic_label', '3': 11, '4': 1, '5': 9, '10': 'semanticLabel'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoIcon`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoIconDescriptor = $convert.base64Decode(
-    'ChRGbHV0dGVyQ3VwZXJ0aW5vSWNvbhISCgRzaXplGAQgASgBUgRzaXplEhIKBGZpbGwYBSABKA'
-    'FSBGZpbGwSFgoGd2VpZ2h0GAYgASgBUgZ3ZWlnaHQSFAoFZ3JhZGUYByABKAFSBWdyYWRlEiEK'
-    'DG9wdGljYWxfc2l6ZRgIIAEoAVILb3B0aWNhbFNpemUSJQoOc2VtYW50aWNfbGFiZWwYCyABKA'
-    'lSDXNlbWFudGljTGFiZWw=');
-
-@$core.Deprecated('Use flutterCupertinoIconThemeDescriptor instead')
-const FlutterCupertinoIconTheme$json = {
-  '1': 'FlutterCupertinoIconTheme',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoIconTheme`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoIconThemeDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyQ3VwZXJ0aW5vSWNvblRoZW1lEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaG'
-    'lsZA==');
-
-@$core.Deprecated('Use flutterCupertinoImageDescriptor instead')
-const FlutterCupertinoImage$json = {
-  '1': 'FlutterCupertinoImage',
-  '2': [
-    {'1': 'semantic_label', '3': 7, '4': 1, '5': 9, '10': 'semanticLabel'},
-    {'1': 'exclude_from_semantics', '3': 8, '4': 1, '5': 8, '10': 'excludeFromSemantics'},
-    {'1': 'width', '3': 9, '4': 1, '5': 1, '10': 'width'},
-    {'1': 'height', '3': 10, '4': 1, '5': 1, '10': 'height'},
-    {'1': 'match_text_direction', '3': 18, '4': 1, '5': 8, '10': 'matchTextDirection'},
-    {'1': 'gapless_playback', '3': 19, '4': 1, '5': 8, '10': 'gaplessPlayback'},
-    {'1': 'is_anti_alias', '3': 20, '4': 1, '5': 8, '10': 'isAntiAlias'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoImage`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoImageDescriptor = $convert.base64Decode(
-    'ChVGbHV0dGVyQ3VwZXJ0aW5vSW1hZ2USJQoOc2VtYW50aWNfbGFiZWwYByABKAlSDXNlbWFudG'
-    'ljTGFiZWwSNAoWZXhjbHVkZV9mcm9tX3NlbWFudGljcxgIIAEoCFIUZXhjbHVkZUZyb21TZW1h'
-    'bnRpY3MSFAoFd2lkdGgYCSABKAFSBXdpZHRoEhYKBmhlaWdodBgKIAEoAVIGaGVpZ2h0EjAKFG'
-    '1hdGNoX3RleHRfZGlyZWN0aW9uGBIgASgIUhJtYXRjaFRleHREaXJlY3Rpb24SKQoQZ2FwbGVz'
-    'c19wbGF5YmFjaxgTIAEoCFIPZ2FwbGVzc1BsYXliYWNrEiIKDWlzX2FudGlfYWxpYXMYFCABKA'
-    'hSC2lzQW50aUFsaWFz');
-
-@$core.Deprecated('Use flutterCupertinoImageFilteredDescriptor instead')
-const FlutterCupertinoImageFiltered$json = {
-  '1': 'FlutterCupertinoImageFiltered',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'enabled', '3': 5, '4': 1, '5': 8, '10': 'enabled'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoImageFiltered`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoImageFilteredDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vSW1hZ2VGaWx0ZXJlZBIdCgVjaGlsZBgEIAEoCzIHLldpZGdldF'
-    'IFY2hpbGQSGAoHZW5hYmxlZBgFIAEoCFIHZW5hYmxlZA==');
-
-@$core.Deprecated('Use flutterCupertinoImageIconDescriptor instead')
-const FlutterCupertinoImageIcon$json = {
-  '1': 'FlutterCupertinoImageIcon',
-  '2': [
-    {'1': 'size', '3': 4, '4': 1, '5': 1, '10': 'size'},
-    {'1': 'semantic_label', '3': 6, '4': 1, '5': 9, '10': 'semanticLabel'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoImageIcon`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoImageIconDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyQ3VwZXJ0aW5vSW1hZ2VJY29uEhIKBHNpemUYBCABKAFSBHNpemUSJQoOc2VtYW'
-    '50aWNfbGFiZWwYBiABKAlSDXNlbWFudGljTGFiZWw=');
-
-@$core.Deprecated('Use flutterCupertinoImplicitlyAnimatedWidgetDescriptor instead')
-const FlutterCupertinoImplicitlyAnimatedWidget$json = {
-  '1': 'FlutterCupertinoImplicitlyAnimatedWidget',
-};
-
-/// Descriptor for `FlutterCupertinoImplicitlyAnimatedWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoImplicitlyAnimatedWidgetDescriptor = $convert.base64Decode(
-    'CihGbHV0dGVyQ3VwZXJ0aW5vSW1wbGljaXRseUFuaW1hdGVkV2lkZ2V0');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedContainerDescriptor instead')
-const FlutterCupertinoAnimatedContainer$json = {
-  '1': 'FlutterCupertinoAnimatedContainer',
-  '2': [
-    {'1': 'width', '3': 8, '4': 1, '5': 1, '10': 'width'},
-    {'1': 'height', '3': 9, '4': 1, '5': 1, '10': 'height'},
-    {'1': 'child', '3': 14, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedContainer`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedContainerDescriptor = $convert.base64Decode(
-    'CiFGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRDb250YWluZXISFAoFd2lkdGgYCCABKAFSBXdpZH'
-    'RoEhYKBmhlaWdodBgJIAEoAVIGaGVpZ2h0Eh0KBWNoaWxkGA4gASgLMgcuV2lkZ2V0UgVjaGls'
-    'ZA==');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedPaddingDescriptor instead')
-const FlutterCupertinoAnimatedPadding$json = {
-  '1': 'FlutterCupertinoAnimatedPadding',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedPadding`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedPaddingDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRQYWRkaW5nEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2'
-    'V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedAlignDescriptor instead')
-const FlutterCupertinoAnimatedAlign$json = {
-  '1': 'FlutterCupertinoAnimatedAlign',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'height_factor', '3': 5, '4': 1, '5': 1, '10': 'heightFactor'},
-    {'1': 'width_factor', '3': 6, '4': 1, '5': 1, '10': 'widthFactor'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedAlign`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedAlignDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRBbGlnbhIdCgVjaGlsZBgEIAEoCzIHLldpZGdldF'
-    'IFY2hpbGQSIwoNaGVpZ2h0X2ZhY3RvchgFIAEoAVIMaGVpZ2h0RmFjdG9yEiEKDHdpZHRoX2Zh'
-    'Y3RvchgGIAEoAVILd2lkdGhGYWN0b3I=');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedPositionedDescriptor instead')
-const FlutterCupertinoAnimatedPositioned$json = {
-  '1': 'FlutterCupertinoAnimatedPositioned',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'left', '3': 4, '4': 1, '5': 1, '10': 'left'},
-    {'1': 'top', '3': 5, '4': 1, '5': 1, '10': 'top'},
-    {'1': 'right', '3': 6, '4': 1, '5': 1, '10': 'right'},
-    {'1': 'bottom', '3': 7, '4': 1, '5': 1, '10': 'bottom'},
-    {'1': 'width', '3': 8, '4': 1, '5': 1, '10': 'width'},
-    {'1': 'height', '3': 9, '4': 1, '5': 1, '10': 'height'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedPositioned`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedPositionedDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRQb3NpdGlvbmVkEh0KBWNoaWxkGAMgASgLMgcuV2'
-    'lkZ2V0UgVjaGlsZBISCgRsZWZ0GAQgASgBUgRsZWZ0EhAKA3RvcBgFIAEoAVIDdG9wEhQKBXJp'
-    'Z2h0GAYgASgBUgVyaWdodBIWCgZib3R0b20YByABKAFSBmJvdHRvbRIUCgV3aWR0aBgIIAEoAV'
-    'IFd2lkdGgSFgoGaGVpZ2h0GAkgASgBUgZoZWlnaHQ=');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedPositionedDirectionalDescriptor instead')
-const FlutterCupertinoAnimatedPositionedDirectional$json = {
-  '1': 'FlutterCupertinoAnimatedPositionedDirectional',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'start', '3': 4, '4': 1, '5': 1, '10': 'start'},
-    {'1': 'top', '3': 5, '4': 1, '5': 1, '10': 'top'},
-    {'1': 'end', '3': 6, '4': 1, '5': 1, '10': 'end'},
-    {'1': 'bottom', '3': 7, '4': 1, '5': 1, '10': 'bottom'},
-    {'1': 'width', '3': 8, '4': 1, '5': 1, '10': 'width'},
-    {'1': 'height', '3': 9, '4': 1, '5': 1, '10': 'height'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedPositionedDirectional`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedPositionedDirectionalDescriptor = $convert.base64Decode(
-    'Ci1GbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRQb3NpdGlvbmVkRGlyZWN0aW9uYWwSHQoFY2hpbG'
-    'QYAyABKAsyBy5XaWRnZXRSBWNoaWxkEhQKBXN0YXJ0GAQgASgBUgVzdGFydBIQCgN0b3AYBSAB'
-    'KAFSA3RvcBIQCgNlbmQYBiABKAFSA2VuZBIWCgZib3R0b20YByABKAFSBmJvdHRvbRIUCgV3aW'
-    'R0aBgIIAEoAVIFd2lkdGgSFgoGaGVpZ2h0GAkgASgBUgZoZWlnaHQ=');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedScaleDescriptor instead')
-const FlutterCupertinoAnimatedScale$json = {
-  '1': 'FlutterCupertinoAnimatedScale',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'scale', '3': 4, '4': 1, '5': 1, '10': 'scale'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedScale`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedScaleDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRTY2FsZRIdCgVjaGlsZBgDIAEoCzIHLldpZGdldF'
-    'IFY2hpbGQSFAoFc2NhbGUYBCABKAFSBXNjYWxl');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedRotationDescriptor instead')
-const FlutterCupertinoAnimatedRotation$json = {
-  '1': 'FlutterCupertinoAnimatedRotation',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'turns', '3': 4, '4': 1, '5': 1, '10': 'turns'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedRotation`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedRotationDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRSb3RhdGlvbhIdCgVjaGlsZBgDIAEoCzIHLldpZG'
-    'dldFIFY2hpbGQSFAoFdHVybnMYBCABKAFSBXR1cm5z');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedSlideDescriptor instead')
-const FlutterCupertinoAnimatedSlide$json = {
-  '1': 'FlutterCupertinoAnimatedSlide',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedSlide`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedSlideDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRTbGlkZRIdCgVjaGlsZBgDIAEoCzIHLldpZGdldF'
-    'IFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedOpacityDescriptor instead')
-const FlutterCupertinoAnimatedOpacity$json = {
-  '1': 'FlutterCupertinoAnimatedOpacity',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'opacity', '3': 4, '4': 1, '5': 1, '10': 'opacity'},
-    {'1': 'always_include_semantics', '3': 8, '4': 1, '5': 8, '10': 'alwaysIncludeSemantics'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedOpacity`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedOpacityDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRPcGFjaXR5Eh0KBWNoaWxkGAMgASgLMgcuV2lkZ2'
-    'V0UgVjaGlsZBIYCgdvcGFjaXR5GAQgASgBUgdvcGFjaXR5EjgKGGFsd2F5c19pbmNsdWRlX3Nl'
-    'bWFudGljcxgIIAEoCFIWYWx3YXlzSW5jbHVkZVNlbWFudGljcw==');
-
-@$core.Deprecated('Use flutterCupertinoSliverAnimatedOpacityDescriptor instead')
-const FlutterCupertinoSliverAnimatedOpacity$json = {
-  '1': 'FlutterCupertinoSliverAnimatedOpacity',
-  '2': [
-    {'1': 'sliver', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
-    {'1': 'opacity', '3': 4, '4': 1, '5': 1, '10': 'opacity'},
-    {'1': 'always_include_semantics', '3': 8, '4': 1, '5': 8, '10': 'alwaysIncludeSemantics'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverAnimatedOpacity`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverAnimatedOpacityDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyQW5pbWF0ZWRPcGFjaXR5Eh8KBnNsaXZlchgDIAEoCz'
-    'IHLldpZGdldFIGc2xpdmVyEhgKB29wYWNpdHkYBCABKAFSB29wYWNpdHkSOAoYYWx3YXlzX2lu'
-    'Y2x1ZGVfc2VtYW50aWNzGAggASgIUhZhbHdheXNJbmNsdWRlU2VtYW50aWNz');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedDefaultTextStyleDescriptor instead')
-const FlutterCupertinoAnimatedDefaultTextStyle$json = {
-  '1': 'FlutterCupertinoAnimatedDefaultTextStyle',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'soft_wrap', '3': 6, '4': 1, '5': 8, '10': 'softWrap'},
-    {'1': 'max_lines', '3': 8, '4': 1, '5': 3, '10': 'maxLines'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedDefaultTextStyle`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedDefaultTextStyleDescriptor = $convert.base64Decode(
-    'CihGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWREZWZhdWx0VGV4dFN0eWxlEh0KBWNoaWxkGAMgAS'
-    'gLMgcuV2lkZ2V0UgVjaGlsZBIbCglzb2Z0X3dyYXAYBiABKAhSCHNvZnRXcmFwEhsKCW1heF9s'
-    'aW5lcxgIIAEoA1IIbWF4TGluZXM=');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedPhysicalModelDescriptor instead')
-const FlutterCupertinoAnimatedPhysicalModel$json = {
-  '1': 'FlutterCupertinoAnimatedPhysicalModel',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'elevation', '3': 7, '4': 1, '5': 1, '10': 'elevation'},
-    {'1': 'animate_color', '3': 9, '4': 1, '5': 8, '10': 'animateColor'},
-    {'1': 'animate_shadow_color', '3': 11, '4': 1, '5': 8, '10': 'animateShadowColor'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedPhysicalModel`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedPhysicalModelDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRQaHlzaWNhbE1vZGVsEh0KBWNoaWxkGAMgASgLMg'
-    'cuV2lkZ2V0UgVjaGlsZBIcCgllbGV2YXRpb24YByABKAFSCWVsZXZhdGlvbhIjCg1hbmltYXRl'
-    'X2NvbG9yGAkgASgIUgxhbmltYXRlQ29sb3ISMAoUYW5pbWF0ZV9zaGFkb3dfY29sb3IYCyABKA'
-    'hSEmFuaW1hdGVTaGFkb3dDb2xvcg==');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedFractionallySizedBoxDescriptor instead')
-const FlutterCupertinoAnimatedFractionallySizedBox$json = {
-  '1': 'FlutterCupertinoAnimatedFractionallySizedBox',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'height_factor', '3': 5, '4': 1, '5': 1, '10': 'heightFactor'},
-    {'1': 'width_factor', '3': 6, '4': 1, '5': 1, '10': 'widthFactor'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedFractionallySizedBox`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedFractionallySizedBoxDescriptor = $convert.base64Decode(
-    'CixGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRGcmFjdGlvbmFsbHlTaXplZEJveBIdCgVjaGlsZB'
-    'gEIAEoCzIHLldpZGdldFIFY2hpbGQSIwoNaGVpZ2h0X2ZhY3RvchgFIAEoAVIMaGVpZ2h0RmFj'
-    'dG9yEiEKDHdpZHRoX2ZhY3RvchgGIAEoAVILd2lkdGhGYWN0b3I=');
-
-@$core.Deprecated('Use flutterCupertinoInheritedModelDescriptor instead')
-const FlutterCupertinoInheritedModel$json = {
-  '1': 'FlutterCupertinoInheritedModel',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoInheritedModel`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoInheritedModelDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vSW5oZXJpdGVkTW9kZWwSHQoFY2hpbGQYAyABKAsyBy5XaWRnZX'
-    'RSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoInheritedNotifierDescriptor instead')
-const FlutterCupertinoInheritedNotifier$json = {
-  '1': 'FlutterCupertinoInheritedNotifier',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoInheritedNotifier`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoInheritedNotifierDescriptor = $convert.base64Decode(
-    'CiFGbHV0dGVyQ3VwZXJ0aW5vSW5oZXJpdGVkTm90aWZpZXISHQoFY2hpbGQYBCABKAsyBy5XaW'
-    'RnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoInheritedThemeDescriptor instead')
-const FlutterCupertinoInheritedTheme$json = {
-  '1': 'FlutterCupertinoInheritedTheme',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoInheritedTheme`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoInheritedThemeDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vSW5oZXJpdGVkVGhlbWUSHQoFY2hpbGQYAyABKAsyBy5XaWRnZX'
-    'RSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoInteractiveViewerDescriptor instead')
-const FlutterCupertinoInteractiveViewer$json = {
-  '1': 'FlutterCupertinoInteractiveViewer',
-  '2': [
-    {'1': 'align_pan_axis', '3': 4, '4': 1, '5': 8, '10': 'alignPanAxis'},
-    {'1': 'constrained', '3': 7, '4': 1, '5': 8, '10': 'constrained'},
-    {'1': 'max_scale', '3': 8, '4': 1, '5': 1, '10': 'maxScale'},
-    {'1': 'min_scale', '3': 9, '4': 1, '5': 1, '10': 'minScale'},
-    {'1': 'interaction_end_friction_coefficient', '3': 10, '4': 1, '5': 1, '10': 'interactionEndFrictionCoefficient'},
-    {'1': 'pan_enabled', '3': 14, '4': 1, '5': 8, '10': 'panEnabled'},
-    {'1': 'scale_enabled', '3': 15, '4': 1, '5': 8, '10': 'scaleEnabled'},
-    {'1': 'scale_factor', '3': 16, '4': 1, '5': 1, '10': 'scaleFactor'},
-    {'1': 'trackpad_scroll_causes_scale', '3': 19, '4': 1, '5': 8, '10': 'trackpadScrollCausesScale'},
-    {'1': 'child', '3': 20, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoInteractiveViewer`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoInteractiveViewerDescriptor = $convert.base64Decode(
-    'CiFGbHV0dGVyQ3VwZXJ0aW5vSW50ZXJhY3RpdmVWaWV3ZXISJAoOYWxpZ25fcGFuX2F4aXMYBC'
-    'ABKAhSDGFsaWduUGFuQXhpcxIgCgtjb25zdHJhaW5lZBgHIAEoCFILY29uc3RyYWluZWQSGwoJ'
-    'bWF4X3NjYWxlGAggASgBUghtYXhTY2FsZRIbCgltaW5fc2NhbGUYCSABKAFSCG1pblNjYWxlEk'
-    '8KJGludGVyYWN0aW9uX2VuZF9mcmljdGlvbl9jb2VmZmljaWVudBgKIAEoAVIhaW50ZXJhY3Rp'
-    'b25FbmRGcmljdGlvbkNvZWZmaWNpZW50Eh8KC3Bhbl9lbmFibGVkGA4gASgIUgpwYW5FbmFibG'
-    'VkEiMKDXNjYWxlX2VuYWJsZWQYDyABKAhSDHNjYWxlRW5hYmxlZBIhCgxzY2FsZV9mYWN0b3IY'
-    'ECABKAFSC3NjYWxlRmFjdG9yEj8KHHRyYWNrcGFkX3Njcm9sbF9jYXVzZXNfc2NhbGUYEyABKA'
-    'hSGXRyYWNrcGFkU2Nyb2xsQ2F1c2VzU2NhbGUSHQoFY2hpbGQYFCABKAsyBy5XaWRnZXRSBWNo'
-    'aWxk');
-
-@$core.Deprecated('Use flutterCupertinoKeyboardListenerDescriptor instead')
-const FlutterCupertinoKeyboardListener$json = {
-  '1': 'FlutterCupertinoKeyboardListener',
-  '2': [
-    {'1': 'autofocus', '3': 4, '4': 1, '5': 8, '10': 'autofocus'},
-    {'1': 'include_semantics', '3': 5, '4': 1, '5': 8, '10': 'includeSemantics'},
-    {'1': 'child', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoKeyboardListener`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoKeyboardListenerDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vS2V5Ym9hcmRMaXN0ZW5lchIcCglhdXRvZm9jdXMYBCABKAhSCW'
-    'F1dG9mb2N1cxIrChFpbmNsdWRlX3NlbWFudGljcxgFIAEoCFIQaW5jbHVkZVNlbWFudGljcxId'
-    'CgVjaGlsZBgHIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoConstrainedLayoutBuilderDescriptor instead')
-const FlutterCupertinoConstrainedLayoutBuilder$json = {
-  '1': 'FlutterCupertinoConstrainedLayoutBuilder',
-};
-
-/// Descriptor for `FlutterCupertinoConstrainedLayoutBuilder`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoConstrainedLayoutBuilderDescriptor = $convert.base64Decode(
-    'CihGbHV0dGVyQ3VwZXJ0aW5vQ29uc3RyYWluZWRMYXlvdXRCdWlsZGVy');
-
-@$core.Deprecated('Use flutterCupertinoLayoutBuilderDescriptor instead')
-const FlutterCupertinoLayoutBuilder$json = {
-  '1': 'FlutterCupertinoLayoutBuilder',
-};
-
-/// Descriptor for `FlutterCupertinoLayoutBuilder`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoLayoutBuilderDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vTGF5b3V0QnVpbGRlcg==');
-
-@$core.Deprecated('Use flutterCupertinoListWheelScrollViewDescriptor instead')
-const FlutterCupertinoListWheelScrollView$json = {
-  '1': 'FlutterCupertinoListWheelScrollView',
-  '2': [
-    {'1': 'diameter_ratio', '3': 5, '4': 1, '5': 1, '10': 'diameterRatio'},
-    {'1': 'perspective', '3': 6, '4': 1, '5': 1, '10': 'perspective'},
-    {'1': 'off_axis_fraction', '3': 7, '4': 1, '5': 1, '10': 'offAxisFraction'},
-    {'1': 'use_magnifier', '3': 8, '4': 1, '5': 8, '10': 'useMagnifier'},
-    {'1': 'magnification', '3': 9, '4': 1, '5': 1, '10': 'magnification'},
-    {'1': 'over_and_under_center_opacity', '3': 10, '4': 1, '5': 1, '10': 'overAndUnderCenterOpacity'},
-    {'1': 'item_extent', '3': 11, '4': 1, '5': 1, '10': 'itemExtent'},
-    {'1': 'squeeze', '3': 12, '4': 1, '5': 1, '10': 'squeeze'},
-    {'1': 'render_children_outside_viewport', '3': 14, '4': 1, '5': 8, '10': 'renderChildrenOutsideViewport'},
-    {'1': 'restoration_id', '3': 16, '4': 1, '5': 9, '10': 'restorationId'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoListWheelScrollView`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoListWheelScrollViewDescriptor = $convert.base64Decode(
-    'CiNGbHV0dGVyQ3VwZXJ0aW5vTGlzdFdoZWVsU2Nyb2xsVmlldxIlCg5kaWFtZXRlcl9yYXRpbx'
-    'gFIAEoAVINZGlhbWV0ZXJSYXRpbxIgCgtwZXJzcGVjdGl2ZRgGIAEoAVILcGVyc3BlY3RpdmUS'
-    'KgoRb2ZmX2F4aXNfZnJhY3Rpb24YByABKAFSD29mZkF4aXNGcmFjdGlvbhIjCg11c2VfbWFnbm'
-    'lmaWVyGAggASgIUgx1c2VNYWduaWZpZXISJAoNbWFnbmlmaWNhdGlvbhgJIAEoAVINbWFnbmlm'
-    'aWNhdGlvbhJACh1vdmVyX2FuZF91bmRlcl9jZW50ZXJfb3BhY2l0eRgKIAEoAVIZb3ZlckFuZF'
-    'VuZGVyQ2VudGVyT3BhY2l0eRIfCgtpdGVtX2V4dGVudBgLIAEoAVIKaXRlbUV4dGVudBIYCgdz'
-    'cXVlZXplGAwgASgBUgdzcXVlZXplEkcKIHJlbmRlcl9jaGlsZHJlbl9vdXRzaWRlX3ZpZXdwb3'
-    'J0GA4gASgIUh1yZW5kZXJDaGlsZHJlbk91dHNpZGVWaWV3cG9ydBIlCg5yZXN0b3JhdGlvbl9p'
-    'ZBgQIAEoCVINcmVzdG9yYXRpb25JZA==');
-
-@$core.Deprecated('Use flutterCupertinoListWheelViewportDescriptor instead')
-const FlutterCupertinoListWheelViewport$json = {
-  '1': 'FlutterCupertinoListWheelViewport',
-  '2': [
-    {'1': 'diameter_ratio', '3': 3, '4': 1, '5': 1, '10': 'diameterRatio'},
-    {'1': 'perspective', '3': 4, '4': 1, '5': 1, '10': 'perspective'},
-    {'1': 'off_axis_fraction', '3': 5, '4': 1, '5': 1, '10': 'offAxisFraction'},
-    {'1': 'use_magnifier', '3': 6, '4': 1, '5': 8, '10': 'useMagnifier'},
-    {'1': 'magnification', '3': 7, '4': 1, '5': 1, '10': 'magnification'},
-    {'1': 'over_and_under_center_opacity', '3': 8, '4': 1, '5': 1, '10': 'overAndUnderCenterOpacity'},
-    {'1': 'item_extent', '3': 9, '4': 1, '5': 1, '10': 'itemExtent'},
-    {'1': 'squeeze', '3': 10, '4': 1, '5': 1, '10': 'squeeze'},
-    {'1': 'render_children_outside_viewport', '3': 11, '4': 1, '5': 8, '10': 'renderChildrenOutsideViewport'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoListWheelViewport`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoListWheelViewportDescriptor = $convert.base64Decode(
-    'CiFGbHV0dGVyQ3VwZXJ0aW5vTGlzdFdoZWVsVmlld3BvcnQSJQoOZGlhbWV0ZXJfcmF0aW8YAy'
-    'ABKAFSDWRpYW1ldGVyUmF0aW8SIAoLcGVyc3BlY3RpdmUYBCABKAFSC3BlcnNwZWN0aXZlEioK'
-    'EW9mZl9heGlzX2ZyYWN0aW9uGAUgASgBUg9vZmZBeGlzRnJhY3Rpb24SIwoNdXNlX21hZ25pZm'
-    'llchgGIAEoCFIMdXNlTWFnbmlmaWVyEiQKDW1hZ25pZmljYXRpb24YByABKAFSDW1hZ25pZmlj'
-    'YXRpb24SQAodb3Zlcl9hbmRfdW5kZXJfY2VudGVyX29wYWNpdHkYCCABKAFSGW92ZXJBbmRVbm'
-    'RlckNlbnRlck9wYWNpdHkSHwoLaXRlbV9leHRlbnQYCSABKAFSCml0ZW1FeHRlbnQSGAoHc3F1'
-    'ZWV6ZRgKIAEoAVIHc3F1ZWV6ZRJHCiByZW5kZXJfY2hpbGRyZW5fb3V0c2lkZV92aWV3cG9ydB'
-    'gLIAEoCFIdcmVuZGVyQ2hpbGRyZW5PdXRzaWRlVmlld3BvcnQ=');
-
-@$core.Deprecated('Use flutterCupertinoLocalizationsDescriptor instead')
-const FlutterCupertinoLocalizations$json = {
-  '1': 'FlutterCupertinoLocalizations',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoLocalizations`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoLocalizationsDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vTG9jYWxpemF0aW9ucxIdCgVjaGlsZBgFIAEoCzIHLldpZGdldF'
-    'IFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoLookupBoundaryDescriptor instead')
-const FlutterCupertinoLookupBoundary$json = {
-  '1': 'FlutterCupertinoLookupBoundary',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoLookupBoundary`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoLookupBoundaryDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vTG9va3VwQm91bmRhcnkSHQoFY2hpbGQYAyABKAsyBy5XaWRnZX'
-    'RSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoRawMagnifierDescriptor instead')
-const FlutterCupertinoRawMagnifier$json = {
-  '1': 'FlutterCupertinoRawMagnifier',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'magnification_scale', '3': 6, '4': 1, '5': 1, '10': 'magnificationScale'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoRawMagnifier`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoRawMagnifierDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQ3VwZXJ0aW5vUmF3TWFnbmlmaWVyEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0Ug'
-    'VjaGlsZBIvChNtYWduaWZpY2F0aW9uX3NjYWxlGAYgASgBUhJtYWduaWZpY2F0aW9uU2NhbGU=');
-
-@$core.Deprecated('Use flutterCupertinoMediaQueryDescriptor instead')
-const FlutterCupertinoMediaQuery$json = {
-  '1': 'FlutterCupertinoMediaQuery',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoMediaQuery`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoMediaQueryDescriptor = $convert.base64Decode(
-    'ChpGbHV0dGVyQ3VwZXJ0aW5vTWVkaWFRdWVyeRIdCgVjaGlsZBgEIAEoCzIHLldpZGdldFIFY2'
-    'hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoModalBarrierDescriptor instead')
-const FlutterCupertinoModalBarrier$json = {
-  '1': 'FlutterCupertinoModalBarrier',
-  '2': [
-    {'1': 'dismissible', '3': 4, '4': 1, '5': 8, '10': 'dismissible'},
-    {'1': 'semantics_label', '3': 6, '4': 1, '5': 9, '10': 'semanticsLabel'},
-    {'1': 'barrier_semantics_dismissible', '3': 7, '4': 1, '5': 8, '10': 'barrierSemanticsDismissible'},
-    {'1': 'semantics_on_tap_hint', '3': 9, '4': 1, '5': 9, '10': 'semanticsOnTapHint'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoModalBarrier`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoModalBarrierDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQ3VwZXJ0aW5vTW9kYWxCYXJyaWVyEiAKC2Rpc21pc3NpYmxlGAQgASgIUgtkaX'
-    'NtaXNzaWJsZRInCg9zZW1hbnRpY3NfbGFiZWwYBiABKAlSDnNlbWFudGljc0xhYmVsEkIKHWJh'
-    'cnJpZXJfc2VtYW50aWNzX2Rpc21pc3NpYmxlGAcgASgIUhtiYXJyaWVyU2VtYW50aWNzRGlzbW'
-    'lzc2libGUSMQoVc2VtYW50aWNzX29uX3RhcF9oaW50GAkgASgJUhJzZW1hbnRpY3NPblRhcEhp'
-    'bnQ=');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedModalBarrierDescriptor instead')
-const FlutterCupertinoAnimatedModalBarrier$json = {
-  '1': 'FlutterCupertinoAnimatedModalBarrier',
-  '2': [
-    {'1': 'dismissible', '3': 4, '4': 1, '5': 8, '10': 'dismissible'},
-    {'1': 'semantics_label', '3': 5, '4': 1, '5': 9, '10': 'semanticsLabel'},
-    {'1': 'barrier_semantics_dismissible', '3': 6, '4': 1, '5': 8, '10': 'barrierSemanticsDismissible'},
-    {'1': 'semantics_on_tap_hint', '3': 9, '4': 1, '5': 9, '10': 'semanticsOnTapHint'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedModalBarrier`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedModalBarrierDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRNb2RhbEJhcnJpZXISIAoLZGlzbWlzc2libGUYBC'
-    'ABKAhSC2Rpc21pc3NpYmxlEicKD3NlbWFudGljc19sYWJlbBgFIAEoCVIOc2VtYW50aWNzTGFi'
-    'ZWwSQgodYmFycmllcl9zZW1hbnRpY3NfZGlzbWlzc2libGUYBiABKAhSG2JhcnJpZXJTZW1hbn'
-    'RpY3NEaXNtaXNzaWJsZRIxChVzZW1hbnRpY3Nfb25fdGFwX2hpbnQYCSABKAlSEnNlbWFudGlj'
-    'c09uVGFwSGludA==');
-
-@$core.Deprecated('Use flutterCupertinoNavigationToolbarDescriptor instead')
-const FlutterCupertinoNavigationToolbar$json = {
-  '1': 'FlutterCupertinoNavigationToolbar',
-  '2': [
-    {'1': 'leading', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'leading'},
-    {'1': 'middle', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'middle'},
-    {'1': 'trailing', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'trailing'},
-    {'1': 'center_middle', '3': 6, '4': 1, '5': 8, '10': 'centerMiddle'},
-    {'1': 'middle_spacing', '3': 7, '4': 1, '5': 1, '10': 'middleSpacing'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoNavigationToolbar`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoNavigationToolbarDescriptor = $convert.base64Decode(
-    'CiFGbHV0dGVyQ3VwZXJ0aW5vTmF2aWdhdGlvblRvb2xiYXISIQoHbGVhZGluZxgDIAEoCzIHLl'
-    'dpZGdldFIHbGVhZGluZxIfCgZtaWRkbGUYBCABKAsyBy5XaWRnZXRSBm1pZGRsZRIjCgh0cmFp'
-    'bGluZxgFIAEoCzIHLldpZGdldFIIdHJhaWxpbmcSIwoNY2VudGVyX21pZGRsZRgGIAEoCFIMY2'
-    'VudGVyTWlkZGxlEiUKDm1pZGRsZV9zcGFjaW5nGAcgASgBUg1taWRkbGVTcGFjaW5n');
-
-@$core.Deprecated('Use flutterCupertinoHeroControllerScopeDescriptor instead')
-const FlutterCupertinoHeroControllerScope$json = {
-  '1': 'FlutterCupertinoHeroControllerScope',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoHeroControllerScope`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoHeroControllerScopeDescriptor = $convert.base64Decode(
-    'CiNGbHV0dGVyQ3VwZXJ0aW5vSGVyb0NvbnRyb2xsZXJTY29wZRIdCgVjaGlsZBgEIAEoCzIHLl'
-    'dpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoNavigatorDescriptor instead')
-const FlutterCupertinoNavigator$json = {
-  '1': 'FlutterCupertinoNavigator',
-  '2': [
-    {'1': 'initial_route', '3': 5, '4': 1, '5': 9, '10': 'initialRoute'},
-    {'1': 'reports_route_update_to_engine', '3': 10, '4': 1, '5': 8, '10': 'reportsRouteUpdateToEngine'},
-    {'1': 'request_focus', '3': 13, '4': 1, '5': 8, '10': 'requestFocus'},
-    {'1': 'restoration_scope_id', '3': 14, '4': 1, '5': 9, '10': 'restorationScopeId'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoNavigator`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoNavigatorDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyQ3VwZXJ0aW5vTmF2aWdhdG9yEiMKDWluaXRpYWxfcm91dGUYBSABKAlSDGluaX'
-    'RpYWxSb3V0ZRJCCh5yZXBvcnRzX3JvdXRlX3VwZGF0ZV90b19lbmdpbmUYCiABKAhSGnJlcG9y'
-    'dHNSb3V0ZVVwZGF0ZVRvRW5naW5lEiMKDXJlcXVlc3RfZm9jdXMYDSABKAhSDHJlcXVlc3RGb2'
-    'N1cxIwChRyZXN0b3JhdGlvbl9zY29wZV9pZBgOIAEoCVIScmVzdG9yYXRpb25TY29wZUlk');
-
-@$core.Deprecated('Use flutterCupertinoNestedScrollViewDescriptor instead')
-const FlutterCupertinoNestedScrollView$json = {
-  '1': 'FlutterCupertinoNestedScrollView',
-  '2': [
-    {'1': 'reverse', '3': 5, '4': 1, '5': 8, '10': 'reverse'},
-    {'1': 'body', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'body'},
-    {'1': 'float_header_slivers', '3': 10, '4': 1, '5': 8, '10': 'floatHeaderSlivers'},
-    {'1': 'restoration_id', '3': 12, '4': 1, '5': 9, '10': 'restorationId'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoNestedScrollView`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoNestedScrollViewDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vTmVzdGVkU2Nyb2xsVmlldxIYCgdyZXZlcnNlGAUgASgIUgdyZX'
-    'ZlcnNlEhsKBGJvZHkYCCABKAsyBy5XaWRnZXRSBGJvZHkSMAoUZmxvYXRfaGVhZGVyX3NsaXZl'
-    'cnMYCiABKAhSEmZsb2F0SGVhZGVyU2xpdmVycxIlCg5yZXN0b3JhdGlvbl9pZBgMIAEoCVINcm'
-    'VzdG9yYXRpb25JZA==');
-
-@$core.Deprecated('Use flutterCupertinoSliverOverlapAbsorberDescriptor instead')
-const FlutterCupertinoSliverOverlapAbsorber$json = {
-  '1': 'FlutterCupertinoSliverOverlapAbsorber',
-  '2': [
-    {'1': 'sliver', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverOverlapAbsorber`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverOverlapAbsorberDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyT3ZlcmxhcEFic29yYmVyEh8KBnNsaXZlchgEIAEoCz'
-    'IHLldpZGdldFIGc2xpdmVy');
-
-@$core.Deprecated('Use flutterCupertinoSliverOverlapInjectorDescriptor instead')
-const FlutterCupertinoSliverOverlapInjector$json = {
-  '1': 'FlutterCupertinoSliverOverlapInjector',
-  '2': [
-    {'1': 'sliver', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverOverlapInjector`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverOverlapInjectorDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyT3ZlcmxhcEluamVjdG9yEh8KBnNsaXZlchgEIAEoCz'
-    'IHLldpZGdldFIGc2xpdmVy');
-
-@$core.Deprecated('Use flutterCupertinoNestedScrollViewViewportDescriptor instead')
-const FlutterCupertinoNestedScrollViewViewport$json = {
-  '1': 'FlutterCupertinoNestedScrollViewViewport',
-  '2': [
-    {'1': 'anchor', '3': 5, '4': 1, '5': 1, '10': 'anchor'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoNestedScrollViewViewport`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoNestedScrollViewViewportDescriptor = $convert.base64Decode(
-    'CihGbHV0dGVyQ3VwZXJ0aW5vTmVzdGVkU2Nyb2xsVmlld1ZpZXdwb3J0EhYKBmFuY2hvchgFIA'
-    'EoAVIGYW5jaG9y');
-
-@$core.Deprecated('Use flutterCupertinoNotificationListenerDescriptor instead')
-const FlutterCupertinoNotificationListener$json = {
-  '1': 'FlutterCupertinoNotificationListener',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoNotificationListener`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoNotificationListenerDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vTm90aWZpY2F0aW9uTGlzdGVuZXISHQoFY2hpbGQYAyABKAsyBy'
-    '5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoOrientationBuilderDescriptor instead')
-const FlutterCupertinoOrientationBuilder$json = {
-  '1': 'FlutterCupertinoOrientationBuilder',
-};
-
-/// Descriptor for `FlutterCupertinoOrientationBuilder`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoOrientationBuilderDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vT3JpZW50YXRpb25CdWlsZGVy');
-
-@$core.Deprecated('Use flutterCupertinoOverflowBarDescriptor instead')
-const FlutterCupertinoOverflowBar$json = {
-  '1': 'FlutterCupertinoOverflowBar',
-  '2': [
-    {'1': 'spacing', '3': 3, '4': 1, '5': 1, '10': 'spacing'},
-    {'1': 'overflow_spacing', '3': 5, '4': 1, '5': 1, '10': 'overflowSpacing'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoOverflowBar`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoOverflowBarDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyQ3VwZXJ0aW5vT3ZlcmZsb3dCYXISGAoHc3BhY2luZxgDIAEoAVIHc3BhY2luZx'
-    'IpChBvdmVyZmxvd19zcGFjaW5nGAUgASgBUg9vdmVyZmxvd1NwYWNpbmc=');
-
-@$core.Deprecated('Use flutterCupertinoOverlayDescriptor instead')
-const FlutterCupertinoOverlay$json = {
-  '1': 'FlutterCupertinoOverlay',
-};
-
-/// Descriptor for `FlutterCupertinoOverlay`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoOverlayDescriptor = $convert.base64Decode(
-    'ChdGbHV0dGVyQ3VwZXJ0aW5vT3ZlcmxheQ==');
-
-@$core.Deprecated('Use flutterCupertinoOverlayPortalDescriptor instead')
-const FlutterCupertinoOverlayPortal$json = {
-  '1': 'FlutterCupertinoOverlayPortal',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoOverlayPortal`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoOverlayPortalDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vT3ZlcmxheVBvcnRhbBIdCgVjaGlsZBgFIAEoCzIHLldpZGdldF'
-    'IFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoGlowingOverscrollIndicatorDescriptor instead')
-const FlutterCupertinoGlowingOverscrollIndicator$json = {
-  '1': 'FlutterCupertinoGlowingOverscrollIndicator',
-  '2': [
-    {'1': 'show_leading', '3': 3, '4': 1, '5': 8, '10': 'showLeading'},
-    {'1': 'show_trailing', '3': 4, '4': 1, '5': 8, '10': 'showTrailing'},
-    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoGlowingOverscrollIndicator`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoGlowingOverscrollIndicatorDescriptor = $convert.base64Decode(
-    'CipGbHV0dGVyQ3VwZXJ0aW5vR2xvd2luZ092ZXJzY3JvbGxJbmRpY2F0b3ISIQoMc2hvd19sZW'
-    'FkaW5nGAMgASgIUgtzaG93TGVhZGluZxIjCg1zaG93X3RyYWlsaW5nGAQgASgIUgxzaG93VHJh'
-    'aWxpbmcSHQoFY2hpbGQYCCABKAsyBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoStretchingOverscrollIndicatorDescriptor instead')
-const FlutterCupertinoStretchingOverscrollIndicator$json = {
-  '1': 'FlutterCupertinoStretchingOverscrollIndicator',
-  '2': [
-    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoStretchingOverscrollIndicator`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoStretchingOverscrollIndicatorDescriptor = $convert.base64Decode(
-    'Ci1GbHV0dGVyQ3VwZXJ0aW5vU3RyZXRjaGluZ092ZXJzY3JvbGxJbmRpY2F0b3ISHQoFY2hpbG'
-    'QYBiABKAsyBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoPageStorageDescriptor instead')
-const FlutterCupertinoPageStorage$json = {
-  '1': 'FlutterCupertinoPageStorage',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoPageStorage`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoPageStorageDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyQ3VwZXJ0aW5vUGFnZVN0b3JhZ2USHQoFY2hpbGQYBCABKAsyBy5XaWRnZXRSBW'
-    'NoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoPageViewDescriptor instead')
-const FlutterCupertinoPageView$json = {
-  '1': 'FlutterCupertinoPageView',
-  '2': [
-    {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
-    {'1': 'page_snapping', '3': 7, '4': 1, '5': 8, '10': 'pageSnapping'},
-    {'1': 'allow_implicit_scrolling', '3': 11, '4': 1, '5': 8, '10': 'allowImplicitScrolling'},
-    {'1': 'restoration_id', '3': 12, '4': 1, '5': 9, '10': 'restorationId'},
-    {'1': 'pad_ends', '3': 15, '4': 1, '5': 8, '10': 'padEnds'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoPageView`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoPageViewDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vUGFnZVZpZXcSGAoHcmV2ZXJzZRgEIAEoCFIHcmV2ZXJzZRIjCg'
-    '1wYWdlX3NuYXBwaW5nGAcgASgIUgxwYWdlU25hcHBpbmcSOAoYYWxsb3dfaW1wbGljaXRfc2Ny'
-    'b2xsaW5nGAsgASgIUhZhbGxvd0ltcGxpY2l0U2Nyb2xsaW5nEiUKDnJlc3RvcmF0aW9uX2lkGA'
-    'wgASgJUg1yZXN0b3JhdGlvbklkEhkKCHBhZF9lbmRzGA8gASgIUgdwYWRFbmRz');
-
-@$core.Deprecated('Use flutterCupertinoPerformanceOverlayDescriptor instead')
-const FlutterCupertinoPerformanceOverlay$json = {
-  '1': 'FlutterCupertinoPerformanceOverlay',
-  '2': [
-    {'1': 'options_mask', '3': 3, '4': 1, '5': 3, '10': 'optionsMask'},
-    {'1': 'rasterizer_threshold', '3': 4, '4': 1, '5': 3, '10': 'rasterizerThreshold'},
-    {'1': 'checkerboard_raster_cache_images', '3': 5, '4': 1, '5': 8, '10': 'checkerboardRasterCacheImages'},
-    {'1': 'checkerboard_offscreen_layers', '3': 6, '4': 1, '5': 8, '10': 'checkerboardOffscreenLayers'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoPerformanceOverlay`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoPerformanceOverlayDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vUGVyZm9ybWFuY2VPdmVybGF5EiEKDG9wdGlvbnNfbWFzaxgDIA'
-    'EoA1ILb3B0aW9uc01hc2sSMQoUcmFzdGVyaXplcl90aHJlc2hvbGQYBCABKANSE3Jhc3Rlcml6'
-    'ZXJUaHJlc2hvbGQSRwogY2hlY2tlcmJvYXJkX3Jhc3Rlcl9jYWNoZV9pbWFnZXMYBSABKAhSHW'
-    'NoZWNrZXJib2FyZFJhc3RlckNhY2hlSW1hZ2VzEkIKHWNoZWNrZXJib2FyZF9vZmZzY3JlZW5f'
-    'bGF5ZXJzGAYgASgIUhtjaGVja2VyYm9hcmRPZmZzY3JlZW5MYXllcnM=');
-
-@$core.Deprecated('Use flutterCupertinoPlaceholderDescriptor instead')
-const FlutterCupertinoPlaceholder$json = {
-  '1': 'FlutterCupertinoPlaceholder',
-  '2': [
-    {'1': 'stroke_width', '3': 4, '4': 1, '5': 1, '10': 'strokeWidth'},
-    {'1': 'fallback_width', '3': 5, '4': 1, '5': 1, '10': 'fallbackWidth'},
-    {'1': 'fallback_height', '3': 6, '4': 1, '5': 1, '10': 'fallbackHeight'},
-    {'1': 'child', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoPlaceholder`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoPlaceholderDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyQ3VwZXJ0aW5vUGxhY2Vob2xkZXISIQoMc3Ryb2tlX3dpZHRoGAQgASgBUgtzdH'
-    'Jva2VXaWR0aBIlCg5mYWxsYmFja193aWR0aBgFIAEoAVINZmFsbGJhY2tXaWR0aBInCg9mYWxs'
-    'YmFja19oZWlnaHQYBiABKAFSDmZhbGxiYWNrSGVpZ2h0Eh0KBWNoaWxkGAcgASgLMgcuV2lkZ2'
-    'V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoPlatformMenuBarDescriptor instead')
-const FlutterCupertinoPlatformMenuBar$json = {
-  '1': 'FlutterCupertinoPlatformMenuBar',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'body', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'body'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoPlatformMenuBar`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoPlatformMenuBarDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vUGxhdGZvcm1NZW51QmFyEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2'
-    'V0UgVjaGlsZBIbCgRib2R5GAUgASgLMgcuV2lkZ2V0UgRib2R5');
-
-@$core.Deprecated('Use flutterCupertinoPlatformSelectableRegionContextMenuDescriptor instead')
-const FlutterCupertinoPlatformSelectableRegionContextMenu$json = {
-  '1': 'FlutterCupertinoPlatformSelectableRegionContextMenu',
-  '2': [
-    {'1': 'child', '3': 2, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoPlatformSelectableRegionContextMenu`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoPlatformSelectableRegionContextMenuDescriptor = $convert.base64Decode(
-    'CjNGbHV0dGVyQ3VwZXJ0aW5vUGxhdGZvcm1TZWxlY3RhYmxlUmVnaW9uQ29udGV4dE1lbnUSHQ'
-    'oFY2hpbGQYAiABKAsyBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoAndroidViewDescriptor instead')
-const FlutterCupertinoAndroidView$json = {
-  '1': 'FlutterCupertinoAndroidView',
-  '2': [
-    {'1': 'view_type', '3': 3, '4': 1, '5': 9, '10': 'viewType'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAndroidView`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAndroidViewDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyQ3VwZXJ0aW5vQW5kcm9pZFZpZXcSGwoJdmlld190eXBlGAMgASgJUgh2aWV3VH'
-    'lwZQ==');
-
-@$core.Deprecated('Use flutterCupertinoUiKitViewDescriptor instead')
-const FlutterCupertinoUiKitView$json = {
-  '1': 'FlutterCupertinoUiKitView',
-  '2': [
-    {'1': 'view_type', '3': 3, '4': 1, '5': 9, '10': 'viewType'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoUiKitView`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoUiKitViewDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyQ3VwZXJ0aW5vVWlLaXRWaWV3EhsKCXZpZXdfdHlwZRgDIAEoCVIIdmlld1R5cG'
-    'U=');
-
-@$core.Deprecated('Use flutterCupertinoHtmlElementViewDescriptor instead')
-const FlutterCupertinoHtmlElementView$json = {
-  '1': 'FlutterCupertinoHtmlElementView',
-  '2': [
-    {'1': 'view_type', '3': 3, '4': 1, '5': 9, '10': 'viewType'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoHtmlElementView`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoHtmlElementViewDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vSHRtbEVsZW1lbnRWaWV3EhsKCXZpZXdfdHlwZRgDIAEoCVIIdm'
-    'lld1R5cGU=');
-
-@$core.Deprecated('Use flutterCupertinoPlatformViewLinkDescriptor instead')
-const FlutterCupertinoPlatformViewLink$json = {
-  '1': 'FlutterCupertinoPlatformViewLink',
-  '2': [
-    {'1': 'view_type', '3': 5, '4': 1, '5': 9, '10': 'viewType'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoPlatformViewLink`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoPlatformViewLinkDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vUGxhdGZvcm1WaWV3TGluaxIbCgl2aWV3X3R5cGUYBSABKAlSCH'
-    'ZpZXdUeXBl');
-
-@$core.Deprecated('Use flutterCupertinoPlatformViewSurfaceDescriptor instead')
-const FlutterCupertinoPlatformViewSurface$json = {
-  '1': 'FlutterCupertinoPlatformViewSurface',
-};
-
-/// Descriptor for `FlutterCupertinoPlatformViewSurface`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoPlatformViewSurfaceDescriptor = $convert.base64Decode(
-    'CiNGbHV0dGVyQ3VwZXJ0aW5vUGxhdGZvcm1WaWV3U3VyZmFjZQ==');
-
-@$core.Deprecated('Use flutterCupertinoAndroidViewSurfaceDescriptor instead')
-const FlutterCupertinoAndroidViewSurface$json = {
-  '1': 'FlutterCupertinoAndroidViewSurface',
-};
-
-/// Descriptor for `FlutterCupertinoAndroidViewSurface`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAndroidViewSurfaceDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vQW5kcm9pZFZpZXdTdXJmYWNl');
-
-@$core.Deprecated('Use flutterCupertinoPreferredSizeWidgetDescriptor instead')
-const FlutterCupertinoPreferredSizeWidget$json = {
-  '1': 'FlutterCupertinoPreferredSizeWidget',
-};
-
-/// Descriptor for `FlutterCupertinoPreferredSizeWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoPreferredSizeWidgetDescriptor = $convert.base64Decode(
-    'CiNGbHV0dGVyQ3VwZXJ0aW5vUHJlZmVycmVkU2l6ZVdpZGdldA==');
-
-@$core.Deprecated('Use flutterCupertinoPreferredSizeDescriptor instead')
-const FlutterCupertinoPreferredSize$json = {
-  '1': 'FlutterCupertinoPreferredSize',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoPreferredSize`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoPreferredSizeDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vUHJlZmVycmVkU2l6ZRIdCgVjaGlsZBgEIAEoCzIHLldpZGdldF'
-    'IFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoPrimaryScrollControllerDescriptor instead')
-const FlutterCupertinoPrimaryScrollController$json = {
-  '1': 'FlutterCupertinoPrimaryScrollController',
-  '2': [
-    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoPrimaryScrollController`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoPrimaryScrollControllerDescriptor = $convert.base64Decode(
-    'CidGbHV0dGVyQ3VwZXJ0aW5vUHJpbWFyeVNjcm9sbENvbnRyb2xsZXISHQoFY2hpbGQYBiABKA'
-    'syBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoRawKeyboardListenerDescriptor instead')
-const FlutterCupertinoRawKeyboardListener$json = {
-  '1': 'FlutterCupertinoRawKeyboardListener',
-  '2': [
-    {'1': 'autofocus', '3': 4, '4': 1, '5': 8, '10': 'autofocus'},
-    {'1': 'include_semantics', '3': 5, '4': 1, '5': 8, '10': 'includeSemantics'},
-    {'1': 'child', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoRawKeyboardListener`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoRawKeyboardListenerDescriptor = $convert.base64Decode(
-    'CiNGbHV0dGVyQ3VwZXJ0aW5vUmF3S2V5Ym9hcmRMaXN0ZW5lchIcCglhdXRvZm9jdXMYBCABKA'
-    'hSCWF1dG9mb2N1cxIrChFpbmNsdWRlX3NlbWFudGljcxgFIAEoCFIQaW5jbHVkZVNlbWFudGlj'
-    'cxIdCgVjaGlsZBgHIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoReorderableListDescriptor instead')
-const FlutterCupertinoReorderableList$json = {
-  '1': 'FlutterCupertinoReorderableList',
-  '2': [
-    {'1': 'item_count', '3': 4, '4': 1, '5': 3, '10': 'itemCount'},
-    {'1': 'item_extent', '3': 8, '4': 1, '5': 1, '10': 'itemExtent'},
-    {'1': 'prototype_item', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'prototypeItem'},
-    {'1': 'reverse', '3': 13, '4': 1, '5': 8, '10': 'reverse'},
-    {'1': 'primary', '3': 15, '4': 1, '5': 8, '10': 'primary'},
-    {'1': 'shrink_wrap', '3': 17, '4': 1, '5': 8, '10': 'shrinkWrap'},
-    {'1': 'anchor', '3': 18, '4': 1, '5': 1, '10': 'anchor'},
-    {'1': 'cache_extent', '3': 19, '4': 1, '5': 1, '10': 'cacheExtent'},
-    {'1': 'restoration_id', '3': 22, '4': 1, '5': 9, '10': 'restorationId'},
-    {'1': 'auto_scroller_velocity_scalar', '3': 24, '4': 1, '5': 1, '10': 'autoScrollerVelocityScalar'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoReorderableList`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoReorderableListDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vUmVvcmRlcmFibGVMaXN0Eh0KCml0ZW1fY291bnQYBCABKANSCW'
-    'l0ZW1Db3VudBIfCgtpdGVtX2V4dGVudBgIIAEoAVIKaXRlbUV4dGVudBIuCg5wcm90b3R5cGVf'
-    'aXRlbRgJIAEoCzIHLldpZGdldFINcHJvdG90eXBlSXRlbRIYCgdyZXZlcnNlGA0gASgIUgdyZX'
-    'ZlcnNlEhgKB3ByaW1hcnkYDyABKAhSB3ByaW1hcnkSHwoLc2hyaW5rX3dyYXAYESABKAhSCnNo'
-    'cmlua1dyYXASFgoGYW5jaG9yGBIgASgBUgZhbmNob3ISIQoMY2FjaGVfZXh0ZW50GBMgASgBUg'
-    'tjYWNoZUV4dGVudBIlCg5yZXN0b3JhdGlvbl9pZBgWIAEoCVINcmVzdG9yYXRpb25JZBJBCh1h'
-    'dXRvX3Njcm9sbGVyX3ZlbG9jaXR5X3NjYWxhchgYIAEoAVIaYXV0b1Njcm9sbGVyVmVsb2NpdH'
-    'lTY2FsYXI=');
-
-@$core.Deprecated('Use flutterCupertinoSliverReorderableListDescriptor instead')
-const FlutterCupertinoSliverReorderableList$json = {
-  '1': 'FlutterCupertinoSliverReorderableList',
-  '2': [
-    {'1': 'item_count', '3': 5, '4': 1, '5': 3, '10': 'itemCount'},
-    {'1': 'item_extent', '3': 9, '4': 1, '5': 1, '10': 'itemExtent'},
-    {'1': 'prototype_item', '3': 10, '4': 1, '5': 11, '6': '.Widget', '10': 'prototypeItem'},
-    {'1': 'auto_scroller_velocity_scalar', '3': 12, '4': 1, '5': 1, '10': 'autoScrollerVelocityScalar'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverReorderableList`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverReorderableListDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyUmVvcmRlcmFibGVMaXN0Eh0KCml0ZW1fY291bnQYBS'
-    'ABKANSCWl0ZW1Db3VudBIfCgtpdGVtX2V4dGVudBgJIAEoAVIKaXRlbUV4dGVudBIuCg5wcm90'
-    'b3R5cGVfaXRlbRgKIAEoCzIHLldpZGdldFINcHJvdG90eXBlSXRlbRJBCh1hdXRvX3Njcm9sbG'
-    'VyX3ZlbG9jaXR5X3NjYWxhchgMIAEoAVIaYXV0b1Njcm9sbGVyVmVsb2NpdHlTY2FsYXI=');
-
-@$core.Deprecated('Use flutterCupertinoReorderableDragStartListenerDescriptor instead')
-const FlutterCupertinoReorderableDragStartListener$json = {
-  '1': 'FlutterCupertinoReorderableDragStartListener',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'index', '3': 4, '4': 1, '5': 3, '10': 'index'},
-    {'1': 'enabled', '3': 5, '4': 1, '5': 8, '10': 'enabled'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoReorderableDragStartListener`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoReorderableDragStartListenerDescriptor = $convert.base64Decode(
-    'CixGbHV0dGVyQ3VwZXJ0aW5vUmVvcmRlcmFibGVEcmFnU3RhcnRMaXN0ZW5lchIdCgVjaGlsZB'
-    'gDIAEoCzIHLldpZGdldFIFY2hpbGQSFAoFaW5kZXgYBCABKANSBWluZGV4EhgKB2VuYWJsZWQY'
-    'BSABKAhSB2VuYWJsZWQ=');
-
-@$core.Deprecated('Use flutterCupertinoReorderableDelayedDragStartListenerDescriptor instead')
-const FlutterCupertinoReorderableDelayedDragStartListener$json = {
-  '1': 'FlutterCupertinoReorderableDelayedDragStartListener',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'index', '3': 4, '4': 1, '5': 3, '10': 'index'},
-    {'1': 'enabled', '3': 5, '4': 1, '5': 8, '10': 'enabled'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoReorderableDelayedDragStartListener`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoReorderableDelayedDragStartListenerDescriptor = $convert.base64Decode(
-    'CjNGbHV0dGVyQ3VwZXJ0aW5vUmVvcmRlcmFibGVEZWxheWVkRHJhZ1N0YXJ0TGlzdGVuZXISHQ'
-    'oFY2hpbGQYAyABKAsyBy5XaWRnZXRSBWNoaWxkEhQKBWluZGV4GAQgASgDUgVpbmRleBIYCgdl'
-    'bmFibGVkGAUgASgIUgdlbmFibGVk');
-
-@$core.Deprecated('Use flutterCupertinoRestorationScopeDescriptor instead')
-const FlutterCupertinoRestorationScope$json = {
-  '1': 'FlutterCupertinoRestorationScope',
-  '2': [
-    {'1': 'restoration_id', '3': 3, '4': 1, '5': 9, '10': 'restorationId'},
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoRestorationScope`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoRestorationScopeDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vUmVzdG9yYXRpb25TY29wZRIlCg5yZXN0b3JhdGlvbl9pZBgDIA'
-    'EoCVINcmVzdG9yYXRpb25JZBIdCgVjaGlsZBgEIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoUnmanagedRestorationScopeDescriptor instead')
-const FlutterCupertinoUnmanagedRestorationScope$json = {
-  '1': 'FlutterCupertinoUnmanagedRestorationScope',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoUnmanagedRestorationScope`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoUnmanagedRestorationScopeDescriptor = $convert.base64Decode(
-    'CilGbHV0dGVyQ3VwZXJ0aW5vVW5tYW5hZ2VkUmVzdG9yYXRpb25TY29wZRIdCgVjaGlsZBgEIA'
-    'EoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoRootRestorationScopeDescriptor instead')
-const FlutterCupertinoRootRestorationScope$json = {
-  '1': 'FlutterCupertinoRootRestorationScope',
-  '2': [
-    {'1': 'restoration_id', '3': 3, '4': 1, '5': 9, '10': 'restorationId'},
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoRootRestorationScope`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoRootRestorationScopeDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vUm9vdFJlc3RvcmF0aW9uU2NvcGUSJQoOcmVzdG9yYXRpb25faW'
-    'QYAyABKAlSDXJlc3RvcmF0aW9uSWQSHQoFY2hpbGQYBCABKAsyBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoRouterDescriptor instead')
-const FlutterCupertinoRouter$json = {
-  '1': 'FlutterCupertinoRouter',
-  '2': [
-    {'1': 'restoration_scope_id', '3': 7, '4': 1, '5': 9, '10': 'restorationScopeId'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoRouter`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoRouterDescriptor = $convert.base64Decode(
-    'ChZGbHV0dGVyQ3VwZXJ0aW5vUm91dGVyEjAKFHJlc3RvcmF0aW9uX3Njb3BlX2lkGAcgASgJUh'
-    'JyZXN0b3JhdGlvblNjb3BlSWQ=');
-
-@$core.Deprecated('Use flutterCupertinoBackButtonListenerDescriptor instead')
-const FlutterCupertinoBackButtonListener$json = {
-  '1': 'FlutterCupertinoBackButtonListener',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoBackButtonListener`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoBackButtonListenerDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vQmFja0J1dHRvbkxpc3RlbmVyEh0KBWNoaWxkGAMgASgLMgcuV2'
-    'lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoSafeAreaDescriptor instead')
-const FlutterCupertinoSafeArea$json = {
-  '1': 'FlutterCupertinoSafeArea',
-  '2': [
-    {'1': 'left', '3': 3, '4': 1, '5': 8, '10': 'left'},
-    {'1': 'top', '3': 4, '4': 1, '5': 8, '10': 'top'},
-    {'1': 'right', '3': 5, '4': 1, '5': 8, '10': 'right'},
-    {'1': 'bottom', '3': 6, '4': 1, '5': 8, '10': 'bottom'},
-    {'1': 'maintain_bottom_view_padding', '3': 8, '4': 1, '5': 8, '10': 'maintainBottomViewPadding'},
-    {'1': 'child', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSafeArea`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSafeAreaDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vU2FmZUFyZWESEgoEbGVmdBgDIAEoCFIEbGVmdBIQCgN0b3AYBC'
-    'ABKAhSA3RvcBIUCgVyaWdodBgFIAEoCFIFcmlnaHQSFgoGYm90dG9tGAYgASgIUgZib3R0b20S'
-    'PwocbWFpbnRhaW5fYm90dG9tX3ZpZXdfcGFkZGluZxgIIAEoCFIZbWFpbnRhaW5Cb3R0b21WaW'
-    'V3UGFkZGluZxIdCgVjaGlsZBgJIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoSliverSafeAreaDescriptor instead')
-const FlutterCupertinoSliverSafeArea$json = {
-  '1': 'FlutterCupertinoSliverSafeArea',
-  '2': [
-    {'1': 'left', '3': 3, '4': 1, '5': 8, '10': 'left'},
-    {'1': 'top', '3': 4, '4': 1, '5': 8, '10': 'top'},
-    {'1': 'right', '3': 5, '4': 1, '5': 8, '10': 'right'},
-    {'1': 'bottom', '3': 6, '4': 1, '5': 8, '10': 'bottom'},
-    {'1': 'sliver', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverSafeArea`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverSafeAreaDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyU2FmZUFyZWESEgoEbGVmdBgDIAEoCFIEbGVmdBIQCg'
-    'N0b3AYBCABKAhSA3RvcBIUCgVyaWdodBgFIAEoCFIFcmlnaHQSFgoGYm90dG9tGAYgASgIUgZi'
-    'b3R0b20SHwoGc2xpdmVyGAggASgLMgcuV2lkZ2V0UgZzbGl2ZXI=');
-
-@$core.Deprecated('Use flutterCupertinoScrollConfigurationDescriptor instead')
-const FlutterCupertinoScrollConfiguration$json = {
-  '1': 'FlutterCupertinoScrollConfiguration',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoScrollConfiguration`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoScrollConfigurationDescriptor = $convert.base64Decode(
-    'CiNGbHV0dGVyQ3VwZXJ0aW5vU2Nyb2xsQ29uZmlndXJhdGlvbhIdCgVjaGlsZBgEIAEoCzIHLl'
-    'dpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoScrollNotificationObserverDescriptor instead')
-const FlutterCupertinoScrollNotificationObserver$json = {
-  '1': 'FlutterCupertinoScrollNotificationObserver',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoScrollNotificationObserver`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoScrollNotificationObserverDescriptor = $convert.base64Decode(
-    'CipGbHV0dGVyQ3VwZXJ0aW5vU2Nyb2xsTm90aWZpY2F0aW9uT2JzZXJ2ZXISHQoFY2hpbGQYAy'
-    'ABKAsyBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoScrollViewDescriptor instead')
-const FlutterCupertinoScrollView$json = {
-  '1': 'FlutterCupertinoScrollView',
-  '2': [
-    {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
-    {'1': 'primary', '3': 6, '4': 1, '5': 8, '10': 'primary'},
-    {'1': 'shrink_wrap', '3': 9, '4': 1, '5': 8, '10': 'shrinkWrap'},
-    {'1': 'anchor', '3': 11, '4': 1, '5': 1, '10': 'anchor'},
-    {'1': 'cache_extent', '3': 12, '4': 1, '5': 1, '10': 'cacheExtent'},
-    {'1': 'semantic_child_count', '3': 13, '4': 1, '5': 3, '10': 'semanticChildCount'},
-    {'1': 'restoration_id', '3': 16, '4': 1, '5': 9, '10': 'restorationId'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoScrollView`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoScrollViewDescriptor = $convert.base64Decode(
-    'ChpGbHV0dGVyQ3VwZXJ0aW5vU2Nyb2xsVmlldxIYCgdyZXZlcnNlGAQgASgIUgdyZXZlcnNlEh'
-    'gKB3ByaW1hcnkYBiABKAhSB3ByaW1hcnkSHwoLc2hyaW5rX3dyYXAYCSABKAhSCnNocmlua1dy'
-    'YXASFgoGYW5jaG9yGAsgASgBUgZhbmNob3ISIQoMY2FjaGVfZXh0ZW50GAwgASgBUgtjYWNoZU'
-    'V4dGVudBIwChRzZW1hbnRpY19jaGlsZF9jb3VudBgNIAEoA1ISc2VtYW50aWNDaGlsZENvdW50'
-    'EiUKDnJlc3RvcmF0aW9uX2lkGBAgASgJUg1yZXN0b3JhdGlvbklk');
-
-@$core.Deprecated('Use flutterCupertinoCustomScrollViewDescriptor instead')
-const FlutterCupertinoCustomScrollView$json = {
-  '1': 'FlutterCupertinoCustomScrollView',
-  '2': [
-    {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
-    {'1': 'primary', '3': 6, '4': 1, '5': 8, '10': 'primary'},
-    {'1': 'shrink_wrap', '3': 9, '4': 1, '5': 8, '10': 'shrinkWrap'},
-    {'1': 'anchor', '3': 11, '4': 1, '5': 1, '10': 'anchor'},
-    {'1': 'cache_extent', '3': 12, '4': 1, '5': 1, '10': 'cacheExtent'},
-    {'1': 'semantic_child_count', '3': 14, '4': 1, '5': 3, '10': 'semanticChildCount'},
-    {'1': 'restoration_id', '3': 17, '4': 1, '5': 9, '10': 'restorationId'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCustomScrollView`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCustomScrollViewDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vQ3VzdG9tU2Nyb2xsVmlldxIYCgdyZXZlcnNlGAQgASgIUgdyZX'
-    'ZlcnNlEhgKB3ByaW1hcnkYBiABKAhSB3ByaW1hcnkSHwoLc2hyaW5rX3dyYXAYCSABKAhSCnNo'
-    'cmlua1dyYXASFgoGYW5jaG9yGAsgASgBUgZhbmNob3ISIQoMY2FjaGVfZXh0ZW50GAwgASgBUg'
-    'tjYWNoZUV4dGVudBIwChRzZW1hbnRpY19jaGlsZF9jb3VudBgOIAEoA1ISc2VtYW50aWNDaGls'
-    'ZENvdW50EiUKDnJlc3RvcmF0aW9uX2lkGBEgASgJUg1yZXN0b3JhdGlvbklk');
-
-@$core.Deprecated('Use flutterCupertinoBoxScrollViewDescriptor instead')
-const FlutterCupertinoBoxScrollView$json = {
-  '1': 'FlutterCupertinoBoxScrollView',
-  '2': [
-    {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
-    {'1': 'primary', '3': 6, '4': 1, '5': 8, '10': 'primary'},
-    {'1': 'shrink_wrap', '3': 8, '4': 1, '5': 8, '10': 'shrinkWrap'},
-    {'1': 'cache_extent', '3': 10, '4': 1, '5': 1, '10': 'cacheExtent'},
-    {'1': 'semantic_child_count', '3': 11, '4': 1, '5': 3, '10': 'semanticChildCount'},
-    {'1': 'restoration_id', '3': 14, '4': 1, '5': 9, '10': 'restorationId'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoBoxScrollView`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoBoxScrollViewDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vQm94U2Nyb2xsVmlldxIYCgdyZXZlcnNlGAQgASgIUgdyZXZlcn'
-    'NlEhgKB3ByaW1hcnkYBiABKAhSB3ByaW1hcnkSHwoLc2hyaW5rX3dyYXAYCCABKAhSCnNocmlu'
-    'a1dyYXASIQoMY2FjaGVfZXh0ZW50GAogASgBUgtjYWNoZUV4dGVudBIwChRzZW1hbnRpY19jaG'
-    'lsZF9jb3VudBgLIAEoA1ISc2VtYW50aWNDaGlsZENvdW50EiUKDnJlc3RvcmF0aW9uX2lkGA4g'
-    'ASgJUg1yZXN0b3JhdGlvbklk');
-
-@$core.Deprecated('Use flutterCupertinoListViewDescriptor instead')
-const FlutterCupertinoListView$json = {
-  '1': 'FlutterCupertinoListView',
-  '2': [
-    {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
-    {'1': 'primary', '3': 6, '4': 1, '5': 8, '10': 'primary'},
-    {'1': 'shrink_wrap', '3': 8, '4': 1, '5': 8, '10': 'shrinkWrap'},
-    {'1': 'item_extent', '3': 10, '4': 1, '5': 1, '10': 'itemExtent'},
-    {'1': 'prototype_item', '3': 11, '4': 1, '5': 11, '6': '.Widget', '10': 'prototypeItem'},
-    {'1': 'add_automatic_keep_alives', '3': 12, '4': 1, '5': 8, '10': 'addAutomaticKeepAlives'},
-    {'1': 'add_repaint_boundaries', '3': 13, '4': 1, '5': 8, '10': 'addRepaintBoundaries'},
-    {'1': 'add_semantic_indexes', '3': 14, '4': 1, '5': 8, '10': 'addSemanticIndexes'},
-    {'1': 'cache_extent', '3': 15, '4': 1, '5': 1, '10': 'cacheExtent'},
-    {'1': 'semantic_child_count', '3': 17, '4': 1, '5': 3, '10': 'semanticChildCount'},
-    {'1': 'restoration_id', '3': 20, '4': 1, '5': 9, '10': 'restorationId'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoListView`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoListViewDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vTGlzdFZpZXcSGAoHcmV2ZXJzZRgEIAEoCFIHcmV2ZXJzZRIYCg'
-    'dwcmltYXJ5GAYgASgIUgdwcmltYXJ5Eh8KC3Nocmlua193cmFwGAggASgIUgpzaHJpbmtXcmFw'
-    'Eh8KC2l0ZW1fZXh0ZW50GAogASgBUgppdGVtRXh0ZW50Ei4KDnByb3RvdHlwZV9pdGVtGAsgAS'
-    'gLMgcuV2lkZ2V0Ug1wcm90b3R5cGVJdGVtEjkKGWFkZF9hdXRvbWF0aWNfa2VlcF9hbGl2ZXMY'
-    'DCABKAhSFmFkZEF1dG9tYXRpY0tlZXBBbGl2ZXMSNAoWYWRkX3JlcGFpbnRfYm91bmRhcmllcx'
-    'gNIAEoCFIUYWRkUmVwYWludEJvdW5kYXJpZXMSMAoUYWRkX3NlbWFudGljX2luZGV4ZXMYDiAB'
-    'KAhSEmFkZFNlbWFudGljSW5kZXhlcxIhCgxjYWNoZV9leHRlbnQYDyABKAFSC2NhY2hlRXh0ZW'
-    '50EjAKFHNlbWFudGljX2NoaWxkX2NvdW50GBEgASgDUhJzZW1hbnRpY0NoaWxkQ291bnQSJQoO'
-    'cmVzdG9yYXRpb25faWQYFCABKAlSDXJlc3RvcmF0aW9uSWQ=');
-
-@$core.Deprecated('Use flutterCupertinoGridViewDescriptor instead')
-const FlutterCupertinoGridView$json = {
-  '1': 'FlutterCupertinoGridView',
-  '2': [
-    {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
-    {'1': 'primary', '3': 6, '4': 1, '5': 8, '10': 'primary'},
-    {'1': 'shrink_wrap', '3': 8, '4': 1, '5': 8, '10': 'shrinkWrap'},
-    {'1': 'add_automatic_keep_alives', '3': 11, '4': 1, '5': 8, '10': 'addAutomaticKeepAlives'},
-    {'1': 'add_repaint_boundaries', '3': 12, '4': 1, '5': 8, '10': 'addRepaintBoundaries'},
-    {'1': 'add_semantic_indexes', '3': 13, '4': 1, '5': 8, '10': 'addSemanticIndexes'},
-    {'1': 'cache_extent', '3': 14, '4': 1, '5': 1, '10': 'cacheExtent'},
-    {'1': 'semantic_child_count', '3': 16, '4': 1, '5': 3, '10': 'semanticChildCount'},
-    {'1': 'restoration_id', '3': 20, '4': 1, '5': 9, '10': 'restorationId'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoGridView`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoGridViewDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vR3JpZFZpZXcSGAoHcmV2ZXJzZRgEIAEoCFIHcmV2ZXJzZRIYCg'
-    'dwcmltYXJ5GAYgASgIUgdwcmltYXJ5Eh8KC3Nocmlua193cmFwGAggASgIUgpzaHJpbmtXcmFw'
-    'EjkKGWFkZF9hdXRvbWF0aWNfa2VlcF9hbGl2ZXMYCyABKAhSFmFkZEF1dG9tYXRpY0tlZXBBbG'
-    'l2ZXMSNAoWYWRkX3JlcGFpbnRfYm91bmRhcmllcxgMIAEoCFIUYWRkUmVwYWludEJvdW5kYXJp'
-    'ZXMSMAoUYWRkX3NlbWFudGljX2luZGV4ZXMYDSABKAhSEmFkZFNlbWFudGljSW5kZXhlcxIhCg'
-    'xjYWNoZV9leHRlbnQYDiABKAFSC2NhY2hlRXh0ZW50EjAKFHNlbWFudGljX2NoaWxkX2NvdW50'
-    'GBAgASgDUhJzZW1hbnRpY0NoaWxkQ291bnQSJQoOcmVzdG9yYXRpb25faWQYFCABKAlSDXJlc3'
-    'RvcmF0aW9uSWQ=');
-
-@$core.Deprecated('Use flutterCupertinoScrollableDescriptor instead')
-const FlutterCupertinoScrollable$json = {
-  '1': 'FlutterCupertinoScrollable',
-  '2': [
-    {'1': 'exclude_from_semantics', '3': 8, '4': 1, '5': 8, '10': 'excludeFromSemantics'},
-    {'1': 'semantic_child_count', '3': 9, '4': 1, '5': 3, '10': 'semanticChildCount'},
-    {'1': 'restoration_id', '3': 11, '4': 1, '5': 9, '10': 'restorationId'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoScrollable`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoScrollableDescriptor = $convert.base64Decode(
-    'ChpGbHV0dGVyQ3VwZXJ0aW5vU2Nyb2xsYWJsZRI0ChZleGNsdWRlX2Zyb21fc2VtYW50aWNzGA'
-    'ggASgIUhRleGNsdWRlRnJvbVNlbWFudGljcxIwChRzZW1hbnRpY19jaGlsZF9jb3VudBgJIAEo'
-    'A1ISc2VtYW50aWNDaGlsZENvdW50EiUKDnJlc3RvcmF0aW9uX2lkGAsgASgJUg1yZXN0b3JhdG'
-    'lvbklk');
-
-@$core.Deprecated('Use flutterCupertinoTwoDimensionalScrollableDescriptor instead')
-const FlutterCupertinoTwoDimensionalScrollable$json = {
-  '1': 'FlutterCupertinoTwoDimensionalScrollable',
-  '2': [
-    {'1': 'restoration_id', '3': 7, '4': 1, '5': 9, '10': 'restorationId'},
-    {'1': 'exclude_from_semantics', '3': 8, '4': 1, '5': 8, '10': 'excludeFromSemantics'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoTwoDimensionalScrollable`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoTwoDimensionalScrollableDescriptor = $convert.base64Decode(
-    'CihGbHV0dGVyQ3VwZXJ0aW5vVHdvRGltZW5zaW9uYWxTY3JvbGxhYmxlEiUKDnJlc3RvcmF0aW'
-    '9uX2lkGAcgASgJUg1yZXN0b3JhdGlvbklkEjQKFmV4Y2x1ZGVfZnJvbV9zZW1hbnRpY3MYCCAB'
-    'KAhSFGV4Y2x1ZGVGcm9tU2VtYW50aWNz');
-
-@$core.Deprecated('Use flutterCupertinoRawScrollbarDescriptor instead')
-const FlutterCupertinoRawScrollbar$json = {
-  '1': 'FlutterCupertinoRawScrollbar',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'thumb_visibility', '3': 5, '4': 1, '5': 8, '10': 'thumbVisibility'},
-    {'1': 'thickness', '3': 8, '4': 1, '5': 1, '10': 'thickness'},
-    {'1': 'min_thumb_length', '3': 10, '4': 1, '5': 1, '10': 'minThumbLength'},
-    {'1': 'min_overscroll_length', '3': 11, '4': 1, '5': 1, '10': 'minOverscrollLength'},
-    {'1': 'track_visibility', '3': 12, '4': 1, '5': 8, '10': 'trackVisibility'},
-    {'1': 'interactive', '3': 20, '4': 1, '5': 8, '10': 'interactive'},
-    {'1': 'main_axis_margin', '3': 22, '4': 1, '5': 1, '10': 'mainAxisMargin'},
-    {'1': 'cross_axis_margin', '3': 23, '4': 1, '5': 1, '10': 'crossAxisMargin'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoRawScrollbar`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoRawScrollbarDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQ3VwZXJ0aW5vUmF3U2Nyb2xsYmFyEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0Ug'
-    'VjaGlsZBIpChB0aHVtYl92aXNpYmlsaXR5GAUgASgIUg90aHVtYlZpc2liaWxpdHkSHAoJdGhp'
-    'Y2tuZXNzGAggASgBUgl0aGlja25lc3MSKAoQbWluX3RodW1iX2xlbmd0aBgKIAEoAVIObWluVG'
-    'h1bWJMZW5ndGgSMgoVbWluX292ZXJzY3JvbGxfbGVuZ3RoGAsgASgBUhNtaW5PdmVyc2Nyb2xs'
-    'TGVuZ3RoEikKEHRyYWNrX3Zpc2liaWxpdHkYDCABKAhSD3RyYWNrVmlzaWJpbGl0eRIgCgtpbn'
-    'RlcmFjdGl2ZRgUIAEoCFILaW50ZXJhY3RpdmUSKAoQbWFpbl9heGlzX21hcmdpbhgWIAEoAVIO'
-    'bWFpbkF4aXNNYXJnaW4SKgoRY3Jvc3NfYXhpc19tYXJnaW4YFyABKAFSD2Nyb3NzQXhpc01hcm'
-    'dpbg==');
-
-@$core.Deprecated('Use flutterCupertinoSelectableRegionDescriptor instead')
-const FlutterCupertinoSelectableRegion$json = {
-  '1': 'FlutterCupertinoSelectableRegion',
-  '2': [
-    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSelectableRegion`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSelectableRegionDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vU2VsZWN0YWJsZVJlZ2lvbhIdCgVjaGlsZBgGIAEoCzIHLldpZG'
-    'dldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoSelectionContainerDescriptor instead')
-const FlutterCupertinoSelectionContainer$json = {
-  '1': 'FlutterCupertinoSelectionContainer',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSelectionContainer`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSelectionContainerDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vU2VsZWN0aW9uQ29udGFpbmVyEh0KBWNoaWxkGAUgASgLMgcuV2'
-    'lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoSelectionRegistrarScopeDescriptor instead')
-const FlutterCupertinoSelectionRegistrarScope$json = {
-  '1': 'FlutterCupertinoSelectionRegistrarScope',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSelectionRegistrarScope`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSelectionRegistrarScopeDescriptor = $convert.base64Decode(
-    'CidGbHV0dGVyQ3VwZXJ0aW5vU2VsZWN0aW9uUmVnaXN0cmFyU2NvcGUSHQoFY2hpbGQYBCABKA'
-    'syBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoSemanticsDebuggerDescriptor instead')
-const FlutterCupertinoSemanticsDebugger$json = {
-  '1': 'FlutterCupertinoSemanticsDebugger',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSemanticsDebugger`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSemanticsDebuggerDescriptor = $convert.base64Decode(
-    'CiFGbHV0dGVyQ3VwZXJ0aW5vU2VtYW50aWNzRGVidWdnZXISHQoFY2hpbGQYAyABKAsyBy5XaW'
-    'RnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoSharedAppDataDescriptor instead')
-const FlutterCupertinoSharedAppData$json = {
-  '1': 'FlutterCupertinoSharedAppData',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSharedAppData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSharedAppDataDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vU2hhcmVkQXBwRGF0YRIdCgVjaGlsZBgDIAEoCzIHLldpZGdldF'
-    'IFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoShortcutsDescriptor instead')
-const FlutterCupertinoShortcuts$json = {
-  '1': 'FlutterCupertinoShortcuts',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'debug_label', '3': 5, '4': 1, '5': 9, '10': 'debugLabel'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoShortcuts`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoShortcutsDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyQ3VwZXJ0aW5vU2hvcnRjdXRzEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaG'
-    'lsZBIfCgtkZWJ1Z19sYWJlbBgFIAEoCVIKZGVidWdMYWJlbA==');
-
-@$core.Deprecated('Use flutterCupertinoCallbackShortcutsDescriptor instead')
-const FlutterCupertinoCallbackShortcuts$json = {
-  '1': 'FlutterCupertinoCallbackShortcuts',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoCallbackShortcuts`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoCallbackShortcutsDescriptor = $convert.base64Decode(
-    'CiFGbHV0dGVyQ3VwZXJ0aW5vQ2FsbGJhY2tTaG9ydGN1dHMSHQoFY2hpbGQYBCABKAsyBy5XaW'
-    'RnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoShortcutRegistrarDescriptor instead')
-const FlutterCupertinoShortcutRegistrar$json = {
-  '1': 'FlutterCupertinoShortcutRegistrar',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoShortcutRegistrar`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoShortcutRegistrarDescriptor = $convert.base64Decode(
-    'CiFGbHV0dGVyQ3VwZXJ0aW5vU2hvcnRjdXRSZWdpc3RyYXISHQoFY2hpbGQYAyABKAsyBy5XaW'
-    'RnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoSingleChildScrollViewDescriptor instead')
-const FlutterCupertinoSingleChildScrollView$json = {
-  '1': 'FlutterCupertinoSingleChildScrollView',
-  '2': [
-    {'1': 'reverse', '3': 4, '4': 1, '5': 8, '10': 'reverse'},
-    {'1': 'primary', '3': 6, '4': 1, '5': 8, '10': 'primary'},
-    {'1': 'child', '3': 9, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'restoration_id', '3': 12, '4': 1, '5': 9, '10': 'restorationId'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSingleChildScrollView`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSingleChildScrollViewDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyQ3VwZXJ0aW5vU2luZ2xlQ2hpbGRTY3JvbGxWaWV3EhgKB3JldmVyc2UYBCABKA'
-    'hSB3JldmVyc2USGAoHcHJpbWFyeRgGIAEoCFIHcHJpbWFyeRIdCgVjaGlsZBgJIAEoCzIHLldp'
-    'ZGdldFIFY2hpbGQSJQoOcmVzdG9yYXRpb25faWQYDCABKAlSDXJlc3RvcmF0aW9uSWQ=');
-
-@$core.Deprecated('Use flutterCupertinoSizeChangedLayoutNotifierDescriptor instead')
-const FlutterCupertinoSizeChangedLayoutNotifier$json = {
-  '1': 'FlutterCupertinoSizeChangedLayoutNotifier',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSizeChangedLayoutNotifier`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSizeChangedLayoutNotifierDescriptor = $convert.base64Decode(
-    'CilGbHV0dGVyQ3VwZXJ0aW5vU2l6ZUNoYW5nZWRMYXlvdXROb3RpZmllchIdCgVjaGlsZBgDIA'
-    'EoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoSliverWithKeepAliveWidgetDescriptor instead')
-const FlutterCupertinoSliverWithKeepAliveWidget$json = {
-  '1': 'FlutterCupertinoSliverWithKeepAliveWidget',
-};
-
-/// Descriptor for `FlutterCupertinoSliverWithKeepAliveWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverWithKeepAliveWidgetDescriptor = $convert.base64Decode(
-    'CilGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyV2l0aEtlZXBBbGl2ZVdpZGdldA==');
-
-@$core.Deprecated('Use flutterCupertinoSliverMultiBoxAdaptorWidgetDescriptor instead')
-const FlutterCupertinoSliverMultiBoxAdaptorWidget$json = {
-  '1': 'FlutterCupertinoSliverMultiBoxAdaptorWidget',
-};
-
-/// Descriptor for `FlutterCupertinoSliverMultiBoxAdaptorWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverMultiBoxAdaptorWidgetDescriptor = $convert.base64Decode(
-    'CitGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyTXVsdGlCb3hBZGFwdG9yV2lkZ2V0');
-
-@$core.Deprecated('Use flutterCupertinoSliverListDescriptor instead')
-const FlutterCupertinoSliverList$json = {
-  '1': 'FlutterCupertinoSliverList',
-};
-
-/// Descriptor for `FlutterCupertinoSliverList`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverListDescriptor = $convert.base64Decode(
-    'ChpGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyTGlzdA==');
-
-@$core.Deprecated('Use flutterCupertinoSliverFixedExtentListDescriptor instead')
-const FlutterCupertinoSliverFixedExtentList$json = {
-  '1': 'FlutterCupertinoSliverFixedExtentList',
-  '2': [
-    {'1': 'item_extent', '3': 4, '4': 1, '5': 1, '10': 'itemExtent'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverFixedExtentList`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverFixedExtentListDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyRml4ZWRFeHRlbnRMaXN0Eh8KC2l0ZW1fZXh0ZW50GA'
-    'QgASgBUgppdGVtRXh0ZW50');
-
-@$core.Deprecated('Use flutterCupertinoSliverGridDescriptor instead')
-const FlutterCupertinoSliverGrid$json = {
-  '1': 'FlutterCupertinoSliverGrid',
-};
-
-/// Descriptor for `FlutterCupertinoSliverGrid`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverGridDescriptor = $convert.base64Decode(
-    'ChpGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyR3JpZA==');
-
-@$core.Deprecated('Use flutterCupertinoSliverOpacityDescriptor instead')
-const FlutterCupertinoSliverOpacity$json = {
-  '1': 'FlutterCupertinoSliverOpacity',
-  '2': [
-    {'1': 'opacity', '3': 3, '4': 1, '5': 1, '10': 'opacity'},
-    {'1': 'always_include_semantics', '3': 4, '4': 1, '5': 8, '10': 'alwaysIncludeSemantics'},
-    {'1': 'sliver', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverOpacity`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverOpacityDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyT3BhY2l0eRIYCgdvcGFjaXR5GAMgASgBUgdvcGFjaX'
-    'R5EjgKGGFsd2F5c19pbmNsdWRlX3NlbWFudGljcxgEIAEoCFIWYWx3YXlzSW5jbHVkZVNlbWFu'
-    'dGljcxIfCgZzbGl2ZXIYBSABKAsyBy5XaWRnZXRSBnNsaXZlcg==');
-
-@$core.Deprecated('Use flutterCupertinoSliverIgnorePointerDescriptor instead')
-const FlutterCupertinoSliverIgnorePointer$json = {
-  '1': 'FlutterCupertinoSliverIgnorePointer',
-  '2': [
-    {'1': 'ignoring', '3': 3, '4': 1, '5': 8, '10': 'ignoring'},
-    {'1': 'ignoring_semantics', '3': 4, '4': 1, '5': 8, '10': 'ignoringSemantics'},
-    {'1': 'sliver', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverIgnorePointer`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverIgnorePointerDescriptor = $convert.base64Decode(
-    'CiNGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVySWdub3JlUG9pbnRlchIaCghpZ25vcmluZxgDIAEoCF'
-    'IIaWdub3JpbmcSLQoSaWdub3Jpbmdfc2VtYW50aWNzGAQgASgIUhFpZ25vcmluZ1NlbWFudGlj'
-    'cxIfCgZzbGl2ZXIYBSABKAsyBy5XaWRnZXRSBnNsaXZlcg==');
-
-@$core.Deprecated('Use flutterCupertinoSliverOffstageDescriptor instead')
-const FlutterCupertinoSliverOffstage$json = {
-  '1': 'FlutterCupertinoSliverOffstage',
-  '2': [
-    {'1': 'offstage', '3': 3, '4': 1, '5': 8, '10': 'offstage'},
-    {'1': 'sliver', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverOffstage`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverOffstageDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyT2Zmc3RhZ2USGgoIb2Zmc3RhZ2UYAyABKAhSCG9mZn'
-    'N0YWdlEh8KBnNsaXZlchgEIAEoCzIHLldpZGdldFIGc2xpdmVy');
-
-@$core.Deprecated('Use flutterCupertinoKeepAliveDescriptor instead')
-const FlutterCupertinoKeepAlive$json = {
-  '1': 'FlutterCupertinoKeepAlive',
-  '2': [
-    {'1': 'keep_alive', '3': 3, '4': 1, '5': 8, '10': 'keepAlive'},
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoKeepAlive`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoKeepAliveDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyQ3VwZXJ0aW5vS2VlcEFsaXZlEh0KCmtlZXBfYWxpdmUYAyABKAhSCWtlZXBBbG'
-    'l2ZRIdCgVjaGlsZBgEIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoSliverConstrainedCrossAxisDescriptor instead')
-const FlutterCupertinoSliverConstrainedCrossAxis$json = {
-  '1': 'FlutterCupertinoSliverConstrainedCrossAxis',
-  '2': [
-    {'1': 'max_extent', '3': 3, '4': 1, '5': 1, '10': 'maxExtent'},
-    {'1': 'sliver', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverConstrainedCrossAxis`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverConstrainedCrossAxisDescriptor = $convert.base64Decode(
-    'CipGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyQ29uc3RyYWluZWRDcm9zc0F4aXMSHQoKbWF4X2V4dG'
-    'VudBgDIAEoAVIJbWF4RXh0ZW50Eh8KBnNsaXZlchgEIAEoCzIHLldpZGdldFIGc2xpdmVy');
-
-@$core.Deprecated('Use flutterCupertinoSliverCrossAxisExpandedDescriptor instead')
-const FlutterCupertinoSliverCrossAxisExpanded$json = {
-  '1': 'FlutterCupertinoSliverCrossAxisExpanded',
-  '2': [
-    {'1': 'flex', '3': 3, '4': 1, '5': 3, '10': 'flex'},
-    {'1': 'sliver', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverCrossAxisExpanded`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverCrossAxisExpandedDescriptor = $convert.base64Decode(
-    'CidGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyQ3Jvc3NBeGlzRXhwYW5kZWQSEgoEZmxleBgDIAEoA1'
-    'IEZmxleBIfCgZzbGl2ZXIYBCABKAsyBy5XaWRnZXRSBnNsaXZlcg==');
-
-@$core.Deprecated('Use flutterCupertinoSliverCrossAxisGroupDescriptor instead')
-const FlutterCupertinoSliverCrossAxisGroup$json = {
-  '1': 'FlutterCupertinoSliverCrossAxisGroup',
-};
-
-/// Descriptor for `FlutterCupertinoSliverCrossAxisGroup`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverCrossAxisGroupDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyQ3Jvc3NBeGlzR3JvdXA=');
-
-@$core.Deprecated('Use flutterCupertinoSliverMainAxisGroupDescriptor instead')
-const FlutterCupertinoSliverMainAxisGroup$json = {
-  '1': 'FlutterCupertinoSliverMainAxisGroup',
-};
-
-/// Descriptor for `FlutterCupertinoSliverMainAxisGroup`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverMainAxisGroupDescriptor = $convert.base64Decode(
-    'CiNGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyTWFpbkF4aXNHcm91cA==');
-
-@$core.Deprecated('Use flutterCupertinoSliverFillViewportDescriptor instead')
-const FlutterCupertinoSliverFillViewport$json = {
-  '1': 'FlutterCupertinoSliverFillViewport',
-  '2': [
-    {'1': 'viewport_fraction', '3': 4, '4': 1, '5': 1, '10': 'viewportFraction'},
-    {'1': 'pad_ends', '3': 5, '4': 1, '5': 8, '10': 'padEnds'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverFillViewport`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverFillViewportDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyRmlsbFZpZXdwb3J0EisKEXZpZXdwb3J0X2ZyYWN0aW'
-    '9uGAQgASgBUhB2aWV3cG9ydEZyYWN0aW9uEhkKCHBhZF9lbmRzGAUgASgIUgdwYWRFbmRz');
-
-@$core.Deprecated('Use flutterCupertinoSliverFillRemainingDescriptor instead')
-const FlutterCupertinoSliverFillRemaining$json = {
-  '1': 'FlutterCupertinoSliverFillRemaining',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'has_scroll_body', '3': 4, '4': 1, '5': 8, '10': 'hasScrollBody'},
-    {'1': 'fill_overscroll', '3': 5, '4': 1, '5': 8, '10': 'fillOverscroll'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverFillRemaining`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverFillRemainingDescriptor = $convert.base64Decode(
-    'CiNGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyRmlsbFJlbWFpbmluZxIdCgVjaGlsZBgDIAEoCzIHLl'
-    'dpZGdldFIFY2hpbGQSJgoPaGFzX3Njcm9sbF9ib2R5GAQgASgIUg1oYXNTY3JvbGxCb2R5EicK'
-    'D2ZpbGxfb3ZlcnNjcm9sbBgFIAEoCFIOZmlsbE92ZXJzY3JvbGw=');
-
-@$core.Deprecated('Use flutterCupertinoSliverLayoutBuilderDescriptor instead')
-const FlutterCupertinoSliverLayoutBuilder$json = {
-  '1': 'FlutterCupertinoSliverLayoutBuilder',
-};
-
-/// Descriptor for `FlutterCupertinoSliverLayoutBuilder`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverLayoutBuilderDescriptor = $convert.base64Decode(
-    'CiNGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyTGF5b3V0QnVpbGRlcg==');
-
-@$core.Deprecated('Use flutterCupertinoSliverPersistentHeaderDescriptor instead')
-const FlutterCupertinoSliverPersistentHeader$json = {
-  '1': 'FlutterCupertinoSliverPersistentHeader',
-  '2': [
-    {'1': 'pinned', '3': 4, '4': 1, '5': 8, '10': 'pinned'},
-    {'1': 'floating', '3': 5, '4': 1, '5': 8, '10': 'floating'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverPersistentHeader`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverPersistentHeaderDescriptor = $convert.base64Decode(
-    'CiZGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyUGVyc2lzdGVudEhlYWRlchIWCgZwaW5uZWQYBCABKA'
-    'hSBnBpbm5lZBIaCghmbG9hdGluZxgFIAEoCFIIZmxvYXRpbmc=');
-
-@$core.Deprecated('Use flutterCupertinoSliverPrototypeExtentListDescriptor instead')
-const FlutterCupertinoSliverPrototypeExtentList$json = {
-  '1': 'FlutterCupertinoSliverPrototypeExtentList',
-  '2': [
-    {'1': 'prototype_item', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'prototypeItem'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverPrototypeExtentList`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverPrototypeExtentListDescriptor = $convert.base64Decode(
-    'CilGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyUHJvdG90eXBlRXh0ZW50TGlzdBIuCg5wcm90b3R5cG'
-    'VfaXRlbRgEIAEoCzIHLldpZGdldFINcHJvdG90eXBlSXRlbQ==');
-
-@$core.Deprecated('Use flutterCupertinoSlottedMultiChildRenderObjectWidgetDescriptor instead')
-const FlutterCupertinoSlottedMultiChildRenderObjectWidget$json = {
-  '1': 'FlutterCupertinoSlottedMultiChildRenderObjectWidget',
-};
-
-/// Descriptor for `FlutterCupertinoSlottedMultiChildRenderObjectWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSlottedMultiChildRenderObjectWidgetDescriptor = $convert.base64Decode(
-    'CjNGbHV0dGVyQ3VwZXJ0aW5vU2xvdHRlZE11bHRpQ2hpbGRSZW5kZXJPYmplY3RXaWRnZXQ=');
-
-@$core.Deprecated('Use flutterCupertinoSnapshotWidgetDescriptor instead')
-const FlutterCupertinoSnapshotWidget$json = {
-  '1': 'FlutterCupertinoSnapshotWidget',
-  '2': [
-    {'1': 'autoresize', '3': 5, '4': 1, '5': 8, '10': 'autoresize'},
-    {'1': 'child', '3': 7, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSnapshotWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSnapshotWidgetDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vU25hcHNob3RXaWRnZXQSHgoKYXV0b3Jlc2l6ZRgFIAEoCFIKYX'
-    'V0b3Jlc2l6ZRIdCgVjaGlsZBgHIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoSpacerDescriptor instead')
-const FlutterCupertinoSpacer$json = {
-  '1': 'FlutterCupertinoSpacer',
-  '2': [
-    {'1': 'flex', '3': 3, '4': 1, '5': 3, '10': 'flex'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSpacer`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSpacerDescriptor = $convert.base64Decode(
-    'ChZGbHV0dGVyQ3VwZXJ0aW5vU3BhY2VyEhIKBGZsZXgYAyABKANSBGZsZXg=');
-
-@$core.Deprecated('Use flutterCupertinoStatusTransitionWidgetDescriptor instead')
-const FlutterCupertinoStatusTransitionWidget$json = {
-  '1': 'FlutterCupertinoStatusTransitionWidget',
-};
-
-/// Descriptor for `FlutterCupertinoStatusTransitionWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoStatusTransitionWidgetDescriptor = $convert.base64Decode(
-    'CiZGbHV0dGVyQ3VwZXJ0aW5vU3RhdHVzVHJhbnNpdGlvbldpZGdldA==');
-
-@$core.Deprecated('Use flutterCupertinoTableDescriptor instead')
-const FlutterCupertinoTable$json = {
-  '1': 'FlutterCupertinoTable',
-};
-
-/// Descriptor for `FlutterCupertinoTable`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoTableDescriptor = $convert.base64Decode(
-    'ChVGbHV0dGVyQ3VwZXJ0aW5vVGFibGU=');
-
-@$core.Deprecated('Use flutterCupertinoTableCellDescriptor instead')
-const FlutterCupertinoTableCell$json = {
-  '1': 'FlutterCupertinoTableCell',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoTableCell`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoTableCellDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyQ3VwZXJ0aW5vVGFibGVDZWxsEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaG'
-    'lsZA==');
-
-@$core.Deprecated('Use flutterCupertinoTapRegionSurfaceDescriptor instead')
-const FlutterCupertinoTapRegionSurface$json = {
-  '1': 'FlutterCupertinoTapRegionSurface',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoTapRegionSurface`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoTapRegionSurfaceDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vVGFwUmVnaW9uU3VyZmFjZRIdCgVjaGlsZBgDIAEoCzIHLldpZG'
-    'dldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoTapRegionDescriptor instead')
-const FlutterCupertinoTapRegion$json = {
-  '1': 'FlutterCupertinoTapRegion',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'enabled', '3': 4, '4': 1, '5': 8, '10': 'enabled'},
-    {'1': 'debug_label', '3': 9, '4': 1, '5': 9, '10': 'debugLabel'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoTapRegion`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoTapRegionDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyQ3VwZXJ0aW5vVGFwUmVnaW9uEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0UgVjaG'
-    'lsZBIYCgdlbmFibGVkGAQgASgIUgdlbmFibGVkEh8KC2RlYnVnX2xhYmVsGAkgASgJUgpkZWJ1'
-    'Z0xhYmVs');
-
-@$core.Deprecated('Use flutterCupertinoTextFieldTapRegionDescriptor instead')
-const FlutterCupertinoTextFieldTapRegion$json = {
-  '1': 'FlutterCupertinoTextFieldTapRegion',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'enabled', '3': 4, '4': 1, '5': 8, '10': 'enabled'},
-    {'1': 'debug_label', '3': 7, '4': 1, '5': 9, '10': 'debugLabel'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoTextFieldTapRegion`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoTextFieldTapRegionDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vVGV4dEZpZWxkVGFwUmVnaW9uEh0KBWNoaWxkGAMgASgLMgcuV2'
-    'lkZ2V0UgVjaGlsZBIYCgdlbmFibGVkGAQgASgIUgdlbmFibGVkEh8KC2RlYnVnX2xhYmVsGAcg'
-    'ASgJUgpkZWJ1Z0xhYmVs');
-
-@$core.Deprecated('Use flutterCupertinoDefaultTextStyleDescriptor instead')
-const FlutterCupertinoDefaultTextStyle$json = {
-  '1': 'FlutterCupertinoDefaultTextStyle',
-  '2': [
-    {'1': 'soft_wrap', '3': 5, '4': 1, '5': 8, '10': 'softWrap'},
-    {'1': 'max_lines', '3': 7, '4': 1, '5': 3, '10': 'maxLines'},
-    {'1': 'child', '3': 10, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoDefaultTextStyle`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoDefaultTextStyleDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vRGVmYXVsdFRleHRTdHlsZRIbCglzb2Z0X3dyYXAYBSABKAhSCH'
-    'NvZnRXcmFwEhsKCW1heF9saW5lcxgHIAEoA1IIbWF4TGluZXMSHQoFY2hpbGQYCiABKAsyBy5X'
-    'aWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoDefaultTextHeightBehaviorDescriptor instead')
-const FlutterCupertinoDefaultTextHeightBehavior$json = {
-  '1': 'FlutterCupertinoDefaultTextHeightBehavior',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoDefaultTextHeightBehavior`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoDefaultTextHeightBehaviorDescriptor = $convert.base64Decode(
-    'CilGbHV0dGVyQ3VwZXJ0aW5vRGVmYXVsdFRleHRIZWlnaHRCZWhhdmlvchIdCgVjaGlsZBgEIA'
-    'EoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoTextDescriptor instead')
-const FlutterCupertinoText$json = {
-  '1': 'FlutterCupertinoText',
-  '2': [
-    {'1': 'data', '3': 2, '4': 1, '5': 9, '10': 'data'},
-    {'1': 'soft_wrap', '3': 9, '4': 1, '5': 8, '10': 'softWrap'},
-    {'1': 'text_scale_factor', '3': 11, '4': 1, '5': 1, '10': 'textScaleFactor'},
-    {'1': 'max_lines', '3': 12, '4': 1, '5': 3, '10': 'maxLines'},
-    {'1': 'semantics_label', '3': 13, '4': 1, '5': 9, '10': 'semanticsLabel'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoText`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoTextDescriptor = $convert.base64Decode(
-    'ChRGbHV0dGVyQ3VwZXJ0aW5vVGV4dBISCgRkYXRhGAIgASgJUgRkYXRhEhsKCXNvZnRfd3JhcB'
-    'gJIAEoCFIIc29mdFdyYXASKgoRdGV4dF9zY2FsZV9mYWN0b3IYCyABKAFSD3RleHRTY2FsZUZh'
-    'Y3RvchIbCgltYXhfbGluZXMYDCABKANSCG1heExpbmVzEicKD3NlbWFudGljc19sYWJlbBgNIA'
-    'EoCVIOc2VtYW50aWNzTGFiZWw=');
-
-@$core.Deprecated('Use flutterCupertinoTextSelectionGestureDetectorDescriptor instead')
-const FlutterCupertinoTextSelectionGestureDetector$json = {
-  '1': 'FlutterCupertinoTextSelectionGestureDetector',
-  '2': [
-    {'1': 'child', '3': 19, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoTextSelectionGestureDetector`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoTextSelectionGestureDetectorDescriptor = $convert.base64Decode(
-    'CixGbHV0dGVyQ3VwZXJ0aW5vVGV4dFNlbGVjdGlvbkdlc3R1cmVEZXRlY3RvchIdCgVjaGlsZB'
-    'gTIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoTextureDescriptor instead')
-const FlutterCupertinoTexture$json = {
-  '1': 'FlutterCupertinoTexture',
-  '2': [
-    {'1': 'texture_id', '3': 3, '4': 1, '5': 3, '10': 'textureId'},
-    {'1': 'freeze', '3': 4, '4': 1, '5': 8, '10': 'freeze'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoTexture`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoTextureDescriptor = $convert.base64Decode(
-    'ChdGbHV0dGVyQ3VwZXJ0aW5vVGV4dHVyZRIdCgp0ZXh0dXJlX2lkGAMgASgDUgl0ZXh0dXJlSW'
-    'QSFgoGZnJlZXplGAQgASgIUgZmcmVlemU=');
-
-@$core.Deprecated('Use flutterCupertinoTickerModeDescriptor instead')
-const FlutterCupertinoTickerMode$json = {
-  '1': 'FlutterCupertinoTickerMode',
-  '2': [
-    {'1': 'enabled', '3': 3, '4': 1, '5': 8, '10': 'enabled'},
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoTickerMode`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoTickerModeDescriptor = $convert.base64Decode(
-    'ChpGbHV0dGVyQ3VwZXJ0aW5vVGlja2VyTW9kZRIYCgdlbmFibGVkGAMgASgIUgdlbmFibGVkEh'
-    '0KBWNoaWxkGAQgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoTitleDescriptor instead')
-const FlutterCupertinoTitle$json = {
-  '1': 'FlutterCupertinoTitle',
-  '2': [
-    {'1': 'title', '3': 3, '4': 1, '5': 9, '10': 'title'},
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoTitle`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoTitleDescriptor = $convert.base64Decode(
-    'ChVGbHV0dGVyQ3VwZXJ0aW5vVGl0bGUSFAoFdGl0bGUYAyABKAlSBXRpdGxlEh0KBWNoaWxkGA'
-    'UgASgLMgcuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedWidgetDescriptor instead')
-const FlutterCupertinoAnimatedWidget$json = {
-  '1': 'FlutterCupertinoAnimatedWidget',
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedWidgetDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRXaWRnZXQ=');
-
-@$core.Deprecated('Use flutterCupertinoSlideTransitionDescriptor instead')
-const FlutterCupertinoSlideTransition$json = {
-  '1': 'FlutterCupertinoSlideTransition',
-  '2': [
-    {'1': 'transform_hit_tests', '3': 4, '4': 1, '5': 8, '10': 'transformHitTests'},
-    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSlideTransition`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSlideTransitionDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vU2xpZGVUcmFuc2l0aW9uEi4KE3RyYW5zZm9ybV9oaXRfdGVzdH'
-    'MYBCABKAhSEXRyYW5zZm9ybUhpdFRlc3RzEh0KBWNoaWxkGAYgASgLMgcuV2lkZ2V0UgVjaGls'
-    'ZA==');
-
-@$core.Deprecated('Use flutterCupertinoScaleTransitionDescriptor instead')
-const FlutterCupertinoScaleTransition$json = {
-  '1': 'FlutterCupertinoScaleTransition',
-  '2': [
-    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoScaleTransition`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoScaleTransitionDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vU2NhbGVUcmFuc2l0aW9uEh0KBWNoaWxkGAYgASgLMgcuV2lkZ2'
-    'V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoRotationTransitionDescriptor instead')
-const FlutterCupertinoRotationTransition$json = {
-  '1': 'FlutterCupertinoRotationTransition',
-  '2': [
-    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoRotationTransition`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoRotationTransitionDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyQ3VwZXJ0aW5vUm90YXRpb25UcmFuc2l0aW9uEh0KBWNoaWxkGAYgASgLMgcuV2'
-    'lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoSizeTransitionDescriptor instead')
-const FlutterCupertinoSizeTransition$json = {
-  '1': 'FlutterCupertinoSizeTransition',
-  '2': [
-    {'1': 'axis_alignment', '3': 5, '4': 1, '5': 1, '10': 'axisAlignment'},
-    {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSizeTransition`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSizeTransitionDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vU2l6ZVRyYW5zaXRpb24SJQoOYXhpc19hbGlnbm1lbnQYBSABKA'
-    'FSDWF4aXNBbGlnbm1lbnQSHQoFY2hpbGQYBiABKAsyBy5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoFadeTransitionDescriptor instead')
-const FlutterCupertinoFadeTransition$json = {
-  '1': 'FlutterCupertinoFadeTransition',
-  '2': [
-    {'1': 'always_include_semantics', '3': 4, '4': 1, '5': 8, '10': 'alwaysIncludeSemantics'},
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoFadeTransition`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoFadeTransitionDescriptor = $convert.base64Decode(
-    'Ch5GbHV0dGVyQ3VwZXJ0aW5vRmFkZVRyYW5zaXRpb24SOAoYYWx3YXlzX2luY2x1ZGVfc2VtYW'
-    '50aWNzGAQgASgIUhZhbHdheXNJbmNsdWRlU2VtYW50aWNzEh0KBWNoaWxkGAUgASgLMgcuV2lk'
-    'Z2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoSliverFadeTransitionDescriptor instead')
-const FlutterCupertinoSliverFadeTransition$json = {
-  '1': 'FlutterCupertinoSliverFadeTransition',
-  '2': [
-    {'1': 'always_include_semantics', '3': 4, '4': 1, '5': 8, '10': 'alwaysIncludeSemantics'},
-    {'1': 'sliver', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverFadeTransition`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverFadeTransitionDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyRmFkZVRyYW5zaXRpb24SOAoYYWx3YXlzX2luY2x1ZG'
-    'Vfc2VtYW50aWNzGAQgASgIUhZhbHdheXNJbmNsdWRlU2VtYW50aWNzEh8KBnNsaXZlchgFIAEo'
-    'CzIHLldpZGdldFIGc2xpdmVy');
-
-@$core.Deprecated('Use flutterCupertinoPositionedTransitionDescriptor instead')
-const FlutterCupertinoPositionedTransition$json = {
-  '1': 'FlutterCupertinoPositionedTransition',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoPositionedTransition`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoPositionedTransitionDescriptor = $convert.base64Decode(
-    'CiRGbHV0dGVyQ3VwZXJ0aW5vUG9zaXRpb25lZFRyYW5zaXRpb24SHQoFY2hpbGQYBCABKAsyBy'
-    '5XaWRnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoRelativePositionedTransitionDescriptor instead')
-const FlutterCupertinoRelativePositionedTransition$json = {
-  '1': 'FlutterCupertinoRelativePositionedTransition',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoRelativePositionedTransition`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoRelativePositionedTransitionDescriptor = $convert.base64Decode(
-    'CixGbHV0dGVyQ3VwZXJ0aW5vUmVsYXRpdmVQb3NpdGlvbmVkVHJhbnNpdGlvbhIdCgVjaGlsZB'
-    'gFIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoDecoratedBoxTransitionDescriptor instead')
-const FlutterCupertinoDecoratedBoxTransition$json = {
-  '1': 'FlutterCupertinoDecoratedBoxTransition',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoDecoratedBoxTransition`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoDecoratedBoxTransitionDescriptor = $convert.base64Decode(
-    'CiZGbHV0dGVyQ3VwZXJ0aW5vRGVjb3JhdGVkQm94VHJhbnNpdGlvbhIdCgVjaGlsZBgFIAEoCz'
-    'IHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoAlignTransitionDescriptor instead')
-const FlutterCupertinoAlignTransition$json = {
-  '1': 'FlutterCupertinoAlignTransition',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'width_factor', '3': 5, '4': 1, '5': 1, '10': 'widthFactor'},
-    {'1': 'height_factor', '3': 6, '4': 1, '5': 1, '10': 'heightFactor'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAlignTransition`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAlignTransitionDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQWxpZ25UcmFuc2l0aW9uEh0KBWNoaWxkGAQgASgLMgcuV2lkZ2'
-    'V0UgVjaGlsZBIhCgx3aWR0aF9mYWN0b3IYBSABKAFSC3dpZHRoRmFjdG9yEiMKDWhlaWdodF9m'
-    'YWN0b3IYBiABKAFSDGhlaWdodEZhY3Rvcg==');
-
-@$core.Deprecated('Use flutterCupertinoDefaultTextStyleTransitionDescriptor instead')
-const FlutterCupertinoDefaultTextStyleTransition$json = {
-  '1': 'FlutterCupertinoDefaultTextStyleTransition',
-  '2': [
-    {'1': 'child', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'soft_wrap', '3': 6, '4': 1, '5': 8, '10': 'softWrap'},
-    {'1': 'max_lines', '3': 8, '4': 1, '5': 3, '10': 'maxLines'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoDefaultTextStyleTransition`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoDefaultTextStyleTransitionDescriptor = $convert.base64Decode(
-    'CipGbHV0dGVyQ3VwZXJ0aW5vRGVmYXVsdFRleHRTdHlsZVRyYW5zaXRpb24SHQoFY2hpbGQYBC'
-    'ABKAsyBy5XaWRnZXRSBWNoaWxkEhsKCXNvZnRfd3JhcBgGIAEoCFIIc29mdFdyYXASGwoJbWF4'
-    'X2xpbmVzGAggASgDUghtYXhMaW5lcw==');
-
-@$core.Deprecated('Use flutterCupertinoListenableBuilderDescriptor instead')
-const FlutterCupertinoListenableBuilder$json = {
-  '1': 'FlutterCupertinoListenableBuilder',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoListenableBuilder`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoListenableBuilderDescriptor = $convert.base64Decode(
-    'CiFGbHV0dGVyQ3VwZXJ0aW5vTGlzdGVuYWJsZUJ1aWxkZXISHQoFY2hpbGQYBSABKAsyBy5XaW'
-    'RnZXRSBWNoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoAnimatedBuilderDescriptor instead')
-const FlutterCupertinoAnimatedBuilder$json = {
-  '1': 'FlutterCupertinoAnimatedBuilder',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoAnimatedBuilder`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoAnimatedBuilderDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vQW5pbWF0ZWRCdWlsZGVyEh0KBWNoaWxkGAUgASgLMgcuV2lkZ2'
-    'V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoTweenAnimationBuilderDescriptor instead')
-const FlutterCupertinoTweenAnimationBuilder$json = {
-  '1': 'FlutterCupertinoTweenAnimationBuilder',
-  '2': [
-    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoTweenAnimationBuilder`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoTweenAnimationBuilderDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyQ3VwZXJ0aW5vVHdlZW5BbmltYXRpb25CdWlsZGVyEh0KBWNoaWxkGAggASgLMg'
-    'cuV2lkZ2V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoTwoDimensionalScrollViewDescriptor instead')
-const FlutterCupertinoTwoDimensionalScrollView$json = {
-  '1': 'FlutterCupertinoTwoDimensionalScrollView',
-  '2': [
-    {'1': 'primary', '3': 3, '4': 1, '5': 8, '10': 'primary'},
-    {'1': 'cache_extent', '3': 8, '4': 1, '5': 1, '10': 'cacheExtent'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoTwoDimensionalScrollView`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoTwoDimensionalScrollViewDescriptor = $convert.base64Decode(
-    'CihGbHV0dGVyQ3VwZXJ0aW5vVHdvRGltZW5zaW9uYWxTY3JvbGxWaWV3EhgKB3ByaW1hcnkYAy'
-    'ABKAhSB3ByaW1hcnkSIQoMY2FjaGVfZXh0ZW50GAggASgBUgtjYWNoZUV4dGVudA==');
-
-@$core.Deprecated('Use flutterCupertinoTwoDimensionalViewportDescriptor instead')
-const FlutterCupertinoTwoDimensionalViewport$json = {
-  '1': 'FlutterCupertinoTwoDimensionalViewport',
-  '2': [
-    {'1': 'cache_extent', '3': 9, '4': 1, '5': 1, '10': 'cacheExtent'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoTwoDimensionalViewport`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoTwoDimensionalViewportDescriptor = $convert.base64Decode(
-    'CiZGbHV0dGVyQ3VwZXJ0aW5vVHdvRGltZW5zaW9uYWxWaWV3cG9ydBIhCgxjYWNoZV9leHRlbn'
-    'QYCSABKAFSC2NhY2hlRXh0ZW50');
-
-@$core.Deprecated('Use flutterCupertinoUndoHistoryDescriptor instead')
-const FlutterCupertinoUndoHistory$json = {
-  '1': 'FlutterCupertinoUndoHistory',
-  '2': [
-    {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoUndoHistory`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoUndoHistoryDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyQ3VwZXJ0aW5vVW5kb0hpc3RvcnkSHQoFY2hpbGQYCCABKAsyBy5XaWRnZXRSBW'
-    'NoaWxk');
-
-@$core.Deprecated('Use flutterCupertinoUniqueWidgetDescriptor instead')
-const FlutterCupertinoUniqueWidget$json = {
-  '1': 'FlutterCupertinoUniqueWidget',
-};
-
-/// Descriptor for `FlutterCupertinoUniqueWidget`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoUniqueWidgetDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQ3VwZXJ0aW5vVW5pcXVlV2lkZ2V0');
-
-@$core.Deprecated('Use flutterCupertinoValueListenableBuilderDescriptor instead')
-const FlutterCupertinoValueListenableBuilder$json = {
-  '1': 'FlutterCupertinoValueListenableBuilder',
-  '2': [
-    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoValueListenableBuilder`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoValueListenableBuilderDescriptor = $convert.base64Decode(
-    'CiZGbHV0dGVyQ3VwZXJ0aW5vVmFsdWVMaXN0ZW5hYmxlQnVpbGRlchIdCgVjaGlsZBgFIAEoCz'
-    'IHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoViewDescriptor instead')
-const FlutterCupertinoView$json = {
-  '1': 'FlutterCupertinoView',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoView`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoViewDescriptor = $convert.base64Decode(
-    'ChRGbHV0dGVyQ3VwZXJ0aW5vVmlldxIdCgVjaGlsZBgDIAEoCzIHLldpZGdldFIFY2hpbGQ=');
-
-@$core.Deprecated('Use flutterCupertinoViewportDescriptor instead')
-const FlutterCupertinoViewport$json = {
-  '1': 'FlutterCupertinoViewport',
-  '2': [
-    {'1': 'anchor', '3': 5, '4': 1, '5': 1, '10': 'anchor'},
-    {'1': 'cache_extent', '3': 8, '4': 1, '5': 1, '10': 'cacheExtent'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoViewport`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoViewportDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyQ3VwZXJ0aW5vVmlld3BvcnQSFgoGYW5jaG9yGAUgASgBUgZhbmNob3ISIQoMY2'
-    'FjaGVfZXh0ZW50GAggASgBUgtjYWNoZUV4dGVudA==');
-
-@$core.Deprecated('Use flutterCupertinoShrinkWrappingViewportDescriptor instead')
-const FlutterCupertinoShrinkWrappingViewport$json = {
-  '1': 'FlutterCupertinoShrinkWrappingViewport',
-};
-
-/// Descriptor for `FlutterCupertinoShrinkWrappingViewport`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoShrinkWrappingViewportDescriptor = $convert.base64Decode(
-    'CiZGbHV0dGVyQ3VwZXJ0aW5vU2hyaW5rV3JhcHBpbmdWaWV3cG9ydA==');
-
-@$core.Deprecated('Use flutterCupertinoVisibilityDescriptor instead')
-const FlutterCupertinoVisibility$json = {
-  '1': 'FlutterCupertinoVisibility',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-    {'1': 'replacement', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'replacement'},
-    {'1': 'visible', '3': 5, '4': 1, '5': 8, '10': 'visible'},
-    {'1': 'maintain_state', '3': 6, '4': 1, '5': 8, '10': 'maintainState'},
-    {'1': 'maintain_animation', '3': 7, '4': 1, '5': 8, '10': 'maintainAnimation'},
-    {'1': 'maintain_size', '3': 8, '4': 1, '5': 8, '10': 'maintainSize'},
-    {'1': 'maintain_semantics', '3': 9, '4': 1, '5': 8, '10': 'maintainSemantics'},
-    {'1': 'maintain_interactivity', '3': 10, '4': 1, '5': 8, '10': 'maintainInteractivity'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoVisibility`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoVisibilityDescriptor = $convert.base64Decode(
-    'ChpGbHV0dGVyQ3VwZXJ0aW5vVmlzaWJpbGl0eRIdCgVjaGlsZBgDIAEoCzIHLldpZGdldFIFY2'
-    'hpbGQSKQoLcmVwbGFjZW1lbnQYBCABKAsyBy5XaWRnZXRSC3JlcGxhY2VtZW50EhgKB3Zpc2li'
-    'bGUYBSABKAhSB3Zpc2libGUSJQoObWFpbnRhaW5fc3RhdGUYBiABKAhSDW1haW50YWluU3RhdG'
-    'USLQoSbWFpbnRhaW5fYW5pbWF0aW9uGAcgASgIUhFtYWludGFpbkFuaW1hdGlvbhIjCg1tYWlu'
-    'dGFpbl9zaXplGAggASgIUgxtYWludGFpblNpemUSLQoSbWFpbnRhaW5fc2VtYW50aWNzGAkgAS'
-    'gIUhFtYWludGFpblNlbWFudGljcxI1ChZtYWludGFpbl9pbnRlcmFjdGl2aXR5GAogASgIUhVt'
-    'YWludGFpbkludGVyYWN0aXZpdHk=');
-
-@$core.Deprecated('Use flutterCupertinoSliverVisibilityDescriptor instead')
-const FlutterCupertinoSliverVisibility$json = {
-  '1': 'FlutterCupertinoSliverVisibility',
-  '2': [
-    {'1': 'sliver', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'sliver'},
-    {'1': 'replacement_sliver', '3': 4, '4': 1, '5': 11, '6': '.Widget', '10': 'replacementSliver'},
-    {'1': 'visible', '3': 5, '4': 1, '5': 8, '10': 'visible'},
-    {'1': 'maintain_state', '3': 6, '4': 1, '5': 8, '10': 'maintainState'},
-    {'1': 'maintain_animation', '3': 7, '4': 1, '5': 8, '10': 'maintainAnimation'},
-    {'1': 'maintain_size', '3': 8, '4': 1, '5': 8, '10': 'maintainSize'},
-    {'1': 'maintain_semantics', '3': 9, '4': 1, '5': 8, '10': 'maintainSemantics'},
-    {'1': 'maintain_interactivity', '3': 10, '4': 1, '5': 8, '10': 'maintainInteractivity'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoSliverVisibility`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoSliverVisibilityDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyQ3VwZXJ0aW5vU2xpdmVyVmlzaWJpbGl0eRIfCgZzbGl2ZXIYAyABKAsyBy5XaW'
-    'RnZXRSBnNsaXZlchI2ChJyZXBsYWNlbWVudF9zbGl2ZXIYBCABKAsyBy5XaWRnZXRSEXJlcGxh'
-    'Y2VtZW50U2xpdmVyEhgKB3Zpc2libGUYBSABKAhSB3Zpc2libGUSJQoObWFpbnRhaW5fc3RhdG'
-    'UYBiABKAhSDW1haW50YWluU3RhdGUSLQoSbWFpbnRhaW5fYW5pbWF0aW9uGAcgASgIUhFtYWlu'
-    'dGFpbkFuaW1hdGlvbhIjCg1tYWludGFpbl9zaXplGAggASgIUgxtYWludGFpblNpemUSLQoSbW'
-    'FpbnRhaW5fc2VtYW50aWNzGAkgASgIUhFtYWludGFpblNlbWFudGljcxI1ChZtYWludGFpbl9p'
-    'bnRlcmFjdGl2aXR5GAogASgIUhVtYWludGFpbkludGVyYWN0aXZpdHk=');
-
-@$core.Deprecated('Use flutterCupertinoWidgetInspectorDescriptor instead')
-const FlutterCupertinoWidgetInspector$json = {
-  '1': 'FlutterCupertinoWidgetInspector',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoWidgetInspector`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoWidgetInspectorDescriptor = $convert.base64Decode(
-    'Ch9GbHV0dGVyQ3VwZXJ0aW5vV2lkZ2V0SW5zcGVjdG9yEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2'
-    'V0UgVjaGlsZA==');
-
-@$core.Deprecated('Use flutterCupertinoWillPopScopeDescriptor instead')
-const FlutterCupertinoWillPopScope$json = {
-  '1': 'FlutterCupertinoWillPopScope',
-  '2': [
-    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.Widget', '10': 'child'},
-  ],
-};
-
-/// Descriptor for `FlutterCupertinoWillPopScope`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCupertinoWillPopScopeDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQ3VwZXJ0aW5vV2lsbFBvcFNjb3BlEh0KBWNoaWxkGAMgASgLMgcuV2lkZ2V0Ug'
-    'VjaGlsZA==');
-
-@$core.Deprecated('Use flutterProjectMainMyAppDescriptor instead')
-const FlutterProjectMainMyApp$json = {
-  '1': 'FlutterProjectMainMyApp',
-};
-
-/// Descriptor for `FlutterProjectMainMyApp`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterProjectMainMyAppDescriptor = $convert.base64Decode(
-    'ChdGbHV0dGVyUHJvamVjdE1haW5NeUFwcA==');
-
-@$core.Deprecated('Use flutterProjectMainMyHomePageDescriptor instead')
-const FlutterProjectMainMyHomePage$json = {
-  '1': 'FlutterProjectMainMyHomePage',
-  '2': [
-    {'1': 'title', '3': 3, '4': 1, '5': 9, '10': 'title'},
-  ],
-};
-
-/// Descriptor for `FlutterProjectMainMyHomePage`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterProjectMainMyHomePageDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyUHJvamVjdE1haW5NeUhvbWVQYWdlEhQKBXRpdGxlGAMgASgJUgV0aXRsZQ==');
 
 @$core.Deprecated('Use widgetDescriptor instead')
 const Widget$json = {

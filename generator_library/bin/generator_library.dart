@@ -34,7 +34,10 @@ Future<void> main(List<String> arguments) async {
 
   final analysis = AnalysisContextCollection(
     includedPaths: [dir.absolute.path],
-    excludedPaths: ["${dir.absolute.path}/test"],
+    excludedPaths: [
+      "${dir.absolute.path}/test", // not used in widget tree
+      "${dir.absolute.path}/lib/proto" // don't analyze the generated
+    ],
     resourceProvider: PhysicalResourceProvider.INSTANCE,
   );
 
@@ -73,9 +76,16 @@ Future<void> main(List<String> arguments) async {
 
     final session = context.currentSession;
 
+    final relevantLibraries = [...externalLibraries, ...internalLibraries];
+    relevantLibraries.sort(); // side effect, for file stability
+
     final resolvedLibraries = await Future.wait(
-      [...externalLibraries, ...internalLibraries]
-          .map((libraryPath) => session.getResolvedLibrary(libraryPath)),
+      relevantLibraries.map((libraryPath) {
+        return session.getResolvedLibrary(libraryPath).then((resolvedLibrary) {
+          print('Resolved $libraryPath');
+          return resolvedLibrary;
+        });
+      }),
     );
 
     final widgetsFile = <String>[];
@@ -141,7 +151,7 @@ message $widgetConstructorName {
       }
     }
 
-    usedWidgets.sort(); // side effect
+    usedWidgets.sort(); // side effect, for file stability
     final widgetParameters = usedWidgets.indexed.map((t) =>
         "${t.$2} ${ReCase(t.$2).snakeCase} = ${t.$1 + kProtoFieldStartNumber};");
     widgetsFile.add('''

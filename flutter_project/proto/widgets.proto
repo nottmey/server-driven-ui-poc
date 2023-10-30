@@ -1,5 +1,1915 @@
 syntax = "proto3";
 
+message FlutterProjectMainMyApp {
+  
+}
+
+message FlutterProjectMainMyHomePage {
+  string title = 3;
+}
+
+message FlutterCupertinoCupertinoActivityIndicator {
+  bool animating = 4;
+  double radius = 5;
+}
+
+message FlutterCupertinoCupertinoAdaptiveTextSelectionToolbar {
+  
+}
+
+message FlutterCupertinoCupertinoApp {
+  Widget home = 4;
+  string initial_route = 7;
+  string title = 13;
+  bool show_performance_overlay = 21;
+  bool checkerboard_raster_cache_images = 22;
+  bool checkerboard_offscreen_layers = 23;
+  bool show_semantics_debugger = 24;
+  bool debug_show_checked_mode_banner = 25;
+  string restoration_scope_id = 28;
+  bool use_inherited_media_query = 30;
+}
+
+message FlutterCupertinoCupertinoTabBar {
+  int64 current_index = 5;
+  double icon_size = 9;
+  double height = 10;
+}
+
+message FlutterCupertinoCupertinoButton {
+  Widget child = 3;
+  double min_size = 7;
+  double pressed_opacity = 8;
+}
+
+message FlutterCupertinoCupertinoCheckbox {
+  bool value = 3;
+  bool tristate = 4;
+  bool autofocus = 11;
+}
+
+message FlutterCupertinoCupertinoContextMenu {
+  Widget child = 4;
+  bool enable_haptic_feedback = 5;
+}
+
+message FlutterCupertinoCupertinoContextMenuAction {
+  Widget child = 3;
+  bool is_default_action = 4;
+  bool is_destructive_action = 5;
+}
+
+message FlutterCupertinoCupertinoDatePicker {
+  int64 minimum_year = 8;
+  int64 maximum_year = 9;
+  int64 minute_interval = 10;
+  bool use24h_format = 11;
+  bool show_day_of_week = 14;
+  double item_extent = 15;
+}
+
+message FlutterCupertinoCupertinoTimerPicker {
+  int64 minute_interval = 5;
+  int64 second_interval = 6;
+  double item_extent = 9;
+}
+
+message FlutterCupertinoCupertinoDesktopTextSelectionToolbar {
+  
+}
+
+message FlutterCupertinoCupertinoDesktopTextSelectionToolbarButton {
+  Widget child = 4;
+}
+
+message FlutterCupertinoCupertinoAlertDialog {
+  Widget title = 3;
+  Widget content = 4;
+}
+
+message FlutterCupertinoCupertinoPopupSurface {
+  bool is_surface_painted = 3;
+  Widget child = 4;
+}
+
+message FlutterCupertinoCupertinoActionSheet {
+  Widget title = 3;
+  Widget message = 4;
+  Widget cancel_button = 8;
+}
+
+message FlutterCupertinoCupertinoActionSheetAction {
+  bool is_default_action = 4;
+  bool is_destructive_action = 5;
+  Widget child = 6;
+}
+
+message FlutterCupertinoCupertinoDialogAction {
+  bool is_default_action = 4;
+  bool is_destructive_action = 5;
+  Widget child = 7;
+}
+
+message FlutterCupertinoCupertinoFormRow {
+  Widget child = 3;
+  Widget prefix = 4;
+  Widget helper = 6;
+  Widget error = 7;
+}
+
+message FlutterCupertinoCupertinoFormSection {
+  Widget header = 4;
+  Widget footer = 5;
+}
+
+message FlutterCupertinoCupertinoUserInterfaceLevel {
+  Widget child = 4;
+}
+
+message FlutterCupertinoCupertinoListSection {
+  Widget header = 4;
+  Widget footer = 5;
+  double divider_margin = 10;
+  double additional_divider_margin = 11;
+  double top_margin = 12;
+  bool has_leading = 13;
+}
+
+message FlutterCupertinoCupertinoListTile {
+  Widget title = 3;
+  Widget subtitle = 4;
+  Widget additional_info = 5;
+  Widget leading = 6;
+  Widget trailing = 7;
+  double leading_size = 12;
+  double leading_to_title = 13;
+}
+
+message FlutterCupertinoCupertinoListTileChevron {
+  
+}
+
+message FlutterCupertinoCupertinoTextMagnifier {
+  double drag_resistance = 5;
+  double hide_below_threshold = 6;
+  double horizontal_screen_edge_padding = 7;
+}
+
+message FlutterCupertinoCupertinoMagnifier {
+  
+}
+
+message FlutterCupertinoCupertinoNavigationBar {
+  Widget leading = 3;
+  bool automatically_imply_leading = 4;
+  bool automatically_imply_middle = 5;
+  string previous_page_title = 6;
+  Widget middle = 7;
+  Widget trailing = 8;
+  bool transition_between_routes = 13;
+}
+
+message FlutterCupertinoCupertinoSliverNavigationBar {
+  Widget large_title = 3;
+  Widget leading = 4;
+  bool automatically_imply_leading = 5;
+  bool automatically_imply_title = 6;
+  bool always_show_middle = 7;
+  string previous_page_title = 8;
+  Widget middle = 9;
+  Widget trailing = 10;
+  bool transition_between_routes = 15;
+  bool stretch = 17;
+}
+
+message FlutterCupertinoCupertinoNavigationBarBackButton {
+  string previous_page_title = 4;
+}
+
+message FlutterCupertinoCupertinoPageScaffold {
+  bool resize_to_avoid_bottom_inset = 5;
+  Widget child = 6;
+}
+
+message FlutterCupertinoObstructingPreferredSizeWidget {
+  
+}
+
+message FlutterCupertinoCupertinoPicker {
+  double diameter_ratio = 3;
+  double off_axis_fraction = 5;
+  bool use_magnifier = 6;
+  double magnification = 7;
+  double squeeze = 9;
+  double item_extent = 10;
+  Widget selection_overlay = 13;
+  bool looping = 14;
+}
+
+message FlutterCupertinoCupertinoPickerDefaultSelectionOverlay {
+  bool cap_start_edge = 4;
+  bool cap_end_edge = 5;
+}
+
+message FlutterCupertinoCupertinoRadio {
+  bool toggleable = 6;
+  bool autofocus = 12;
+  bool use_checkmark_style = 13;
+}
+
+message FlutterCupertinoCupertinoSliverRefreshControl {
+  double refresh_trigger_pull_distance = 3;
+  double refresh_indicator_extent = 4;
+}
+
+message FlutterCupertinoCupertinoPageTransition {
+  Widget child = 5;
+  bool linear_transition = 6;
+}
+
+message FlutterCupertinoCupertinoFullscreenDialogTransition {
+  Widget child = 5;
+  bool linear_transition = 6;
+}
+
+message FlutterCupertinoCupertinoScrollbar {
+  Widget child = 3;
+  bool thumb_visibility = 5;
+  double thickness = 6;
+  double thickness_while_dragging = 7;
+}
+
+message FlutterCupertinoCupertinoSearchTextField {
+  string placeholder = 7;
+  double item_size = 15;
+  Widget prefix_icon = 17;
+  string restoration_id = 22;
+  bool enable_i_m_e_personalized_learning = 26;
+  bool autofocus = 27;
+  bool autocorrect = 29;
+  bool enabled = 30;
+}
+
+message FlutterCupertinoCupertinoSegmentedControl {
+  
+}
+
+message FlutterCupertinoCupertinoSlider {
+  double value = 3;
+  double min = 7;
+  double max = 8;
+  int64 divisions = 9;
+}
+
+message FlutterCupertinoCupertinoSlidingSegmentedControl {
+  
+}
+
+message FlutterCupertinoCupertinoSpellCheckSuggestionsToolbar {
+  
+}
+
+message FlutterCupertinoCupertinoSwitch {
+  bool value = 3;
+  bool apply_theme = 8;
+  bool autofocus = 12;
+}
+
+message FlutterCupertinoCupertinoTabScaffold {
+  bool resize_to_avoid_bottom_inset = 7;
+  string restoration_id = 8;
+}
+
+message FlutterCupertinoCupertinoTabView {
+  string default_title = 5;
+  string restoration_scope_id = 10;
+}
+
+message FlutterCupertinoCupertinoTextField {
+  string placeholder = 8;
+  Widget prefix = 10;
+  Widget suffix = 12;
+  bool read_only = 23;
+  bool show_cursor = 25;
+  bool autofocus = 26;
+  string obscuring_character = 27;
+  bool obscure_text = 28;
+  bool autocorrect = 29;
+  bool enable_suggestions = 32;
+  int64 max_lines = 33;
+  int64 min_lines = 34;
+  bool expands = 35;
+  int64 max_length = 36;
+  bool enabled = 43;
+  double cursor_width = 44;
+  double cursor_height = 45;
+  bool cursor_opacity_animates = 47;
+  bool enable_interactive_selection = 54;
+  string restoration_id = 62;
+  bool scribble_enabled = 63;
+  bool enable_i_m_e_personalized_learning = 64;
+}
+
+message FlutterCupertinoCupertinoTextFormFieldRow {
+  Widget prefix = 3;
+  string initial_value = 6;
+  bool autofocus = 17;
+  bool read_only = 18;
+  bool show_cursor = 20;
+  string obscuring_character = 21;
+  bool obscure_text = 22;
+  bool autocorrect = 23;
+  bool enable_suggestions = 26;
+  int64 max_lines = 27;
+  int64 min_lines = 28;
+  bool expands = 29;
+  int64 max_length = 30;
+  bool enabled = 38;
+  double cursor_width = 39;
+  double cursor_height = 40;
+  bool enable_interactive_selection = 44;
+  string placeholder = 49;
+}
+
+message FlutterCupertinoCupertinoTextSelectionToolbar {
+  
+}
+
+message FlutterCupertinoCupertinoTextSelectionToolbarButton {
+  Widget child = 4;
+}
+
+message FlutterCupertinoCupertinoTheme {
+  Widget child = 4;
+}
+
+message FlutterCupertinoActionListener {
+  Widget child = 5;
+}
+
+message FlutterCupertinoActions {
+  Widget child = 5;
+}
+
+message FlutterCupertinoFocusableActionDetector {
+  bool enabled = 3;
+  bool autofocus = 5;
+  bool descendants_are_focusable = 6;
+  bool descendants_are_traversable = 7;
+  bool include_focus_semantics = 14;
+  Widget child = 15;
+}
+
+message FlutterCupertinoAnimatedCrossFade {
+  Widget first_child = 3;
+  Widget second_child = 4;
+  bool exclude_bottom_focus = 13;
+}
+
+message FlutterCupertinoAnimatedList {
+  int64 initial_item_count = 4;
+  bool reverse = 6;
+  bool primary = 8;
+  bool shrink_wrap = 10;
+}
+
+message FlutterCupertinoAnimatedGrid {
+  int64 initial_item_count = 5;
+  bool reverse = 7;
+  bool primary = 9;
+}
+
+message FlutterCupertinoSliverAnimatedList {
+  int64 initial_item_count = 5;
+}
+
+message FlutterCupertinoSliverAnimatedGrid {
+  int64 initial_item_count = 6;
+}
+
+message FlutterCupertinoAnimatedSize {
+  Widget child = 3;
+}
+
+message FlutterCupertinoAnimatedSwitcher {
+  Widget child = 3;
+}
+
+message FlutterCupertinoAnnotatedRegion {
+  Widget child = 3;
+  bool sized = 5;
+}
+
+message FlutterCupertinoWidgetsApp {
+  string initial_route = 8;
+  Widget home = 10;
+  string title = 13;
+  bool show_performance_overlay = 22;
+  bool checkerboard_raster_cache_images = 23;
+  bool checkerboard_offscreen_layers = 24;
+  bool show_semantics_debugger = 25;
+  bool debug_show_widget_inspector = 26;
+  bool debug_show_checked_mode_banner = 27;
+  string restoration_scope_id = 31;
+  bool use_inherited_media_query = 32;
+}
+
+message FlutterCupertinoStreamBuilderBase {
+  
+}
+
+message FlutterCupertinoStreamBuilder {
+  
+}
+
+message FlutterCupertinoFutureBuilder {
+  
+}
+
+message FlutterCupertinoRawAutocomplete {
+  
+}
+
+message FlutterCupertinoAutocompleteHighlightedOption {
+  Widget child = 4;
+}
+
+message FlutterCupertinoAutofillGroup {
+  Widget child = 3;
+}
+
+message FlutterCupertinoAutomaticKeepAlive {
+  Widget child = 3;
+}
+
+message FlutterCupertinoBanner {
+  Widget child = 3;
+  string message = 4;
+}
+
+message FlutterCupertinoCheckedModeBanner {
+  Widget child = 3;
+}
+
+message FlutterCupertinoDirectionality {
+  Widget child = 4;
+}
+
+message FlutterCupertinoOpacity {
+  double opacity = 3;
+  bool always_include_semantics = 4;
+  Widget child = 5;
+}
+
+message FlutterCupertinoShaderMask {
+  Widget child = 5;
+}
+
+message FlutterCupertinoBackdropFilter {
+  Widget child = 4;
+}
+
+message FlutterCupertinoCustomPaint {
+  bool is_complex = 6;
+  bool will_change = 7;
+  Widget child = 8;
+}
+
+message FlutterCupertinoClipRect {
+  Widget child = 5;
+}
+
+message FlutterCupertinoClipRRect {
+  Widget child = 6;
+}
+
+message FlutterCupertinoClipOval {
+  Widget child = 5;
+}
+
+message FlutterCupertinoClipPath {
+  Widget child = 5;
+}
+
+message FlutterCupertinoPhysicalModel {
+  double elevation = 6;
+  Widget child = 9;
+}
+
+message FlutterCupertinoPhysicalShape {
+  double elevation = 5;
+  Widget child = 8;
+}
+
+message FlutterCupertinoTransform {
+  bool transform_hit_tests = 6;
+  Widget child = 8;
+}
+
+message FlutterCupertinoCompositedTransformTarget {
+  Widget child = 4;
+}
+
+message FlutterCupertinoCompositedTransformFollower {
+  bool show_when_unlinked = 4;
+  Widget child = 8;
+}
+
+message FlutterCupertinoFittedBox {
+  Widget child = 6;
+}
+
+message FlutterCupertinoFractionalTranslation {
+  bool transform_hit_tests = 4;
+  Widget child = 5;
+}
+
+message FlutterCupertinoRotatedBox {
+  int64 quarter_turns = 3;
+  Widget child = 4;
+}
+
+message FlutterCupertinoPadding {
+  Widget child = 4;
+}
+
+message FlutterCupertinoAlign {
+  double width_factor = 4;
+  double height_factor = 5;
+  Widget child = 6;
+}
+
+message FlutterCupertinoCenter {
+  double width_factor = 3;
+  double height_factor = 4;
+  Widget child = 5;
+}
+
+message FlutterCupertinoCustomSingleChildLayout {
+  Widget child = 4;
+}
+
+message FlutterCupertinoLayoutId {
+  Widget child = 4;
+}
+
+message FlutterCupertinoCustomMultiChildLayout {
+  
+}
+
+message FlutterCupertinoSizedBox {
+  double width = 3;
+  double height = 4;
+  Widget child = 5;
+}
+
+message FlutterCupertinoConstrainedBox {
+  Widget child = 4;
+}
+
+message FlutterCupertinoConstraintsTransformBox {
+  Widget child = 3;
+  string debug_transform_type = 8;
+}
+
+message FlutterCupertinoUnconstrainedBox {
+  Widget child = 3;
+}
+
+message FlutterCupertinoFractionallySizedBox {
+  double width_factor = 4;
+  double height_factor = 5;
+  Widget child = 6;
+}
+
+message FlutterCupertinoLimitedBox {
+  double max_width = 3;
+  double max_height = 4;
+  Widget child = 5;
+}
+
+message FlutterCupertinoOverflowBox {
+  double min_width = 4;
+  double max_width = 5;
+  double min_height = 6;
+  double max_height = 7;
+  Widget child = 8;
+}
+
+message FlutterCupertinoSizedOverflowBox {
+  Widget child = 5;
+}
+
+message FlutterCupertinoOffstage {
+  bool offstage = 3;
+  Widget child = 4;
+}
+
+message FlutterCupertinoAspectRatio {
+  double aspect_ratio = 3;
+  Widget child = 4;
+}
+
+message FlutterCupertinoIntrinsicWidth {
+  double step_width = 3;
+  double step_height = 4;
+  Widget child = 5;
+}
+
+message FlutterCupertinoIntrinsicHeight {
+  Widget child = 3;
+}
+
+message FlutterCupertinoBaseline {
+  double baseline = 3;
+  Widget child = 5;
+}
+
+message FlutterCupertinoSliverToBoxAdapter {
+  Widget child = 3;
+}
+
+message FlutterCupertinoSliverPadding {
+  Widget sliver = 4;
+}
+
+message FlutterCupertinoListBody {
+  bool reverse = 4;
+}
+
+message FlutterCupertinoStack {
+  
+}
+
+message FlutterCupertinoIndexedStack {
+  int64 index = 7;
+}
+
+message FlutterCupertinoPositioned {
+  double left = 3;
+  double top = 4;
+  double right = 5;
+  double bottom = 6;
+  double width = 7;
+  double height = 8;
+  Widget child = 9;
+}
+
+message FlutterCupertinoPositionedDirectional {
+  double start = 3;
+  double top = 4;
+  double end = 5;
+  double bottom = 6;
+  double width = 7;
+  double height = 8;
+  Widget child = 9;
+}
+
+message FlutterCupertinoFlex {
+  
+}
+
+message FlutterCupertinoRow {
+  
+}
+
+message FlutterCupertinoColumn {
+  
+}
+
+message FlutterCupertinoFlexible {
+  int64 flex = 3;
+  Widget child = 5;
+}
+
+message FlutterCupertinoExpanded {
+  int64 flex = 3;
+  Widget child = 4;
+}
+
+message FlutterCupertinoWrap {
+  double spacing = 5;
+  double run_spacing = 7;
+}
+
+message FlutterCupertinoFlow {
+  
+}
+
+message FlutterCupertinoRichText {
+  bool soft_wrap = 6;
+  double text_scale_factor = 8;
+  int64 max_lines = 9;
+}
+
+message FlutterCupertinoRawImage {
+  string debug_image_label = 4;
+  double width = 5;
+  double height = 6;
+  double scale = 7;
+  bool match_text_direction = 15;
+  bool invert_colors = 16;
+  bool is_anti_alias = 18;
+}
+
+message FlutterCupertinoDefaultAssetBundle {
+  Widget child = 4;
+}
+
+message FlutterCupertinoWidgetToRenderBoxAdapter {
+  
+}
+
+message FlutterCupertinoListener {
+  Widget child = 13;
+}
+
+message FlutterCupertinoMouseRegion {
+  bool opaque = 7;
+  Widget child = 9;
+}
+
+message FlutterCupertinoRepaintBoundary {
+  Widget child = 3;
+}
+
+message FlutterCupertinoIgnorePointer {
+  bool ignoring = 3;
+  bool ignoring_semantics = 4;
+  Widget child = 5;
+}
+
+message FlutterCupertinoAbsorbPointer {
+  bool absorbing = 3;
+  bool ignoring_semantics = 4;
+  Widget child = 5;
+}
+
+message FlutterCupertinoMetaData {
+  Widget child = 5;
+}
+
+message FlutterCupertinoSemantics {
+  Widget child = 3;
+  bool container = 4;
+  bool explicit_child_nodes = 5;
+  bool exclude_semantics = 6;
+  bool block_user_actions = 7;
+  bool enabled = 8;
+  bool checked = 9;
+  bool mixed = 10;
+  bool selected = 11;
+  bool toggled = 12;
+  bool button = 13;
+  bool slider = 14;
+  bool keyboard_key = 15;
+  bool link = 16;
+  bool header = 17;
+  bool text_field = 18;
+  bool read_only = 19;
+  bool focusable = 20;
+  bool focused = 21;
+  bool in_mutually_exclusive_group = 22;
+  bool obscured = 23;
+  bool multiline = 24;
+  bool scopes_route = 25;
+  bool names_route = 26;
+  bool hidden = 27;
+  bool image = 28;
+  bool live_region = 29;
+  int64 max_value_length = 30;
+  int64 current_value_length = 31;
+  string label = 32;
+  string value = 34;
+  string increased_value = 36;
+  string decreased_value = 38;
+  string hint = 40;
+  string tooltip = 42;
+  string on_tap_hint = 43;
+  string on_long_press_hint = 44;
+}
+
+message FlutterCupertinoMergeSemantics {
+  Widget child = 3;
+}
+
+message FlutterCupertinoBlockSemantics {
+  bool blocking = 3;
+  Widget child = 4;
+}
+
+message FlutterCupertinoExcludeSemantics {
+  bool excluding = 3;
+  Widget child = 4;
+}
+
+message FlutterCupertinoIndexedSemantics {
+  int64 index = 3;
+  Widget child = 4;
+}
+
+message FlutterCupertinoKeyedSubtree {
+  Widget child = 3;
+}
+
+message FlutterCupertinoBuilder {
+  
+}
+
+message FlutterCupertinoStatefulBuilder {
+  
+}
+
+message FlutterCupertinoColoredBox {
+  Widget child = 3;
+}
+
+message FlutterCupertinoRenderObjectToWidgetAdapter {
+  Widget child = 2;
+  string debug_short_description = 4;
+}
+
+message FlutterCupertinoColorFiltered {
+  Widget child = 3;
+}
+
+message FlutterCupertinoDecoratedBox {
+  Widget child = 5;
+}
+
+message FlutterCupertinoContainer {
+  double width = 8;
+  double height = 9;
+  Widget child = 14;
+}
+
+message FlutterCupertinoDecoratedSliver {
+  Widget sliver = 5;
+}
+
+message FlutterCupertinoDefaultSelectionStyle {
+  Widget child = 6;
+}
+
+message FlutterCupertinoDefaultTextEditingShortcuts {
+  Widget child = 3;
+}
+
+message FlutterCupertinoDismissible {
+  Widget child = 3;
+  Widget background = 4;
+  Widget secondary_background = 5;
+  double cross_axis_end_offset = 14;
+}
+
+message FlutterCupertinoDisplayFeatureSubScreen {
+  Widget child = 4;
+}
+
+message FlutterCupertinoDraggable {
+  Widget child = 3;
+  Widget feedback = 4;
+  Widget child_when_dragging = 7;
+  int64 max_simultaneous_drags = 11;
+  bool ignoring_feedback_semantics = 17;
+  bool ignoring_feedback_pointer = 18;
+  bool root_overlay = 19;
+}
+
+message FlutterCupertinoLongPressDraggable {
+  Widget child = 3;
+  Widget feedback = 4;
+  Widget child_when_dragging = 7;
+  int64 max_simultaneous_drags = 10;
+  bool haptic_feedback_on_start = 16;
+  bool ignoring_feedback_semantics = 17;
+  bool ignoring_feedback_pointer = 18;
+}
+
+message FlutterCupertinoDragTarget {
+  
+}
+
+message FlutterCupertinoDraggableScrollableSheet {
+  double initial_child_size = 3;
+  double min_child_size = 4;
+  double max_child_size = 5;
+  bool expand = 6;
+  bool snap = 7;
+  bool should_close_on_min_extent = 11;
+}
+
+message FlutterCupertinoDraggableScrollableActuator {
+  Widget child = 3;
+}
+
+message FlutterCupertinoDualTransitionBuilder {
+  Widget child = 6;
+}
+
+message FlutterCupertinoEditableText {
+  bool read_only = 5;
+  string obscuring_character = 6;
+  bool obscure_text = 7;
+  bool autocorrect = 8;
+  bool enable_suggestions = 11;
+  double text_scale_factor = 19;
+  int64 max_lines = 20;
+  int64 min_lines = 21;
+  bool expands = 22;
+  bool force_line = 23;
+  bool autofocus = 26;
+  bool show_cursor = 27;
+  bool show_selection_handles = 28;
+  bool renderer_ignores_pointer = 43;
+  double cursor_width = 44;
+  double cursor_height = 45;
+  bool cursor_opacity_animates = 47;
+  bool paint_cursor_above_text = 49;
+  bool enable_interactive_selection = 55;
+  string restoration_id = 63;
+  bool scribble_enabled = 65;
+  bool enable_i_m_e_personalized_learning = 66;
+}
+
+message FlutterCupertinoFadeInImage {
+  bool exclude_from_semantics = 7;
+  string image_semantic_label = 8;
+  double width = 13;
+  double height = 14;
+  bool match_text_direction = 21;
+}
+
+message FlutterCupertinoFocus {
+  Widget child = 3;
+  bool autofocus = 6;
+  bool can_request_focus = 10;
+  bool skip_traversal = 11;
+  bool descendants_are_focusable = 12;
+  bool descendants_are_traversable = 13;
+  bool include_semantics = 14;
+  string debug_label = 15;
+}
+
+message FlutterCupertinoFocusScope {
+  Widget child = 5;
+  bool autofocus = 6;
+  bool can_request_focus = 8;
+  bool skip_traversal = 9;
+  string debug_label = 12;
+}
+
+message FlutterCupertinoExcludeFocus {
+  bool excluding = 3;
+  Widget child = 4;
+}
+
+message FlutterCupertinoFocusTraversalOrder {
+  Widget child = 4;
+}
+
+message FlutterCupertinoFocusTraversalGroup {
+  bool descendants_are_focusable = 4;
+  bool descendants_are_traversable = 5;
+  Widget child = 6;
+}
+
+message FlutterCupertinoExcludeFocusTraversal {
+  bool excluding = 3;
+  Widget child = 4;
+}
+
+message FlutterCupertinoForm {
+  Widget child = 3;
+}
+
+message FlutterCupertinoFormField {
+  bool enabled = 7;
+  string restoration_id = 9;
+}
+
+message FlutterCupertinoStatelessWidget {
+  
+}
+
+message FlutterCupertinoStatefulWidget {
+  
+}
+
+message FlutterCupertinoProxyWidget {
+  Widget child = 3;
+}
+
+message FlutterCupertinoParentDataWidget {
+  Widget child = 3;
+}
+
+message FlutterCupertinoInheritedWidget {
+  Widget child = 3;
+}
+
+message FlutterCupertinoRenderObjectWidget {
+  
+}
+
+message FlutterCupertinoLeafRenderObjectWidget {
+  
+}
+
+message FlutterCupertinoSingleChildRenderObjectWidget {
+  Widget child = 3;
+}
+
+message FlutterCupertinoMultiChildRenderObjectWidget {
+  
+}
+
+message FlutterCupertinoErrorWidget {
+  
+}
+
+message FlutterCupertinoGestureDetector {
+  Widget child = 3;
+  bool exclude_from_semantics = 62;
+  bool trackpad_scroll_causes_scale = 64;
+}
+
+message FlutterCupertinoRawGestureDetector {
+  Widget child = 3;
+  bool exclude_from_semantics = 6;
+}
+
+message FlutterCupertinoGridPaper {
+  double interval = 4;
+  int64 divisions = 5;
+  int64 subdivisions = 6;
+  Widget child = 7;
+}
+
+message FlutterCupertinoHero {
+  bool transition_on_user_gestures = 7;
+  Widget child = 8;
+}
+
+message FlutterCupertinoHeroMode {
+  Widget child = 3;
+  bool enabled = 4;
+}
+
+message FlutterCupertinoIcon {
+  double size = 4;
+  double fill = 5;
+  double weight = 6;
+  double grade = 7;
+  double optical_size = 8;
+  string semantic_label = 11;
+}
+
+message FlutterCupertinoIconTheme {
+  Widget child = 4;
+}
+
+message FlutterCupertinoImage {
+  string semantic_label = 7;
+  bool exclude_from_semantics = 8;
+  double width = 9;
+  double height = 10;
+  bool match_text_direction = 18;
+  bool gapless_playback = 19;
+  bool is_anti_alias = 20;
+}
+
+message FlutterCupertinoImageFiltered {
+  Widget child = 4;
+  bool enabled = 5;
+}
+
+message FlutterCupertinoImageIcon {
+  double size = 4;
+  string semantic_label = 6;
+}
+
+message FlutterCupertinoImplicitlyAnimatedWidget {
+  
+}
+
+message FlutterCupertinoAnimatedContainer {
+  double width = 8;
+  double height = 9;
+  Widget child = 14;
+}
+
+message FlutterCupertinoAnimatedPadding {
+  Widget child = 4;
+}
+
+message FlutterCupertinoAnimatedAlign {
+  Widget child = 4;
+  double height_factor = 5;
+  double width_factor = 6;
+}
+
+message FlutterCupertinoAnimatedPositioned {
+  Widget child = 3;
+  double left = 4;
+  double top = 5;
+  double right = 6;
+  double bottom = 7;
+  double width = 8;
+  double height = 9;
+}
+
+message FlutterCupertinoAnimatedPositionedDirectional {
+  Widget child = 3;
+  double start = 4;
+  double top = 5;
+  double end = 6;
+  double bottom = 7;
+  double width = 8;
+  double height = 9;
+}
+
+message FlutterCupertinoAnimatedScale {
+  Widget child = 3;
+  double scale = 4;
+}
+
+message FlutterCupertinoAnimatedRotation {
+  Widget child = 3;
+  double turns = 4;
+}
+
+message FlutterCupertinoAnimatedSlide {
+  Widget child = 3;
+}
+
+message FlutterCupertinoAnimatedOpacity {
+  Widget child = 3;
+  double opacity = 4;
+  bool always_include_semantics = 8;
+}
+
+message FlutterCupertinoSliverAnimatedOpacity {
+  Widget sliver = 3;
+  double opacity = 4;
+  bool always_include_semantics = 8;
+}
+
+message FlutterCupertinoAnimatedDefaultTextStyle {
+  Widget child = 3;
+  bool soft_wrap = 6;
+  int64 max_lines = 8;
+}
+
+message FlutterCupertinoAnimatedPhysicalModel {
+  Widget child = 3;
+  double elevation = 7;
+  bool animate_color = 9;
+  bool animate_shadow_color = 11;
+}
+
+message FlutterCupertinoAnimatedFractionallySizedBox {
+  Widget child = 4;
+  double height_factor = 5;
+  double width_factor = 6;
+}
+
+message FlutterCupertinoInheritedModel {
+  Widget child = 3;
+}
+
+message FlutterCupertinoInheritedNotifier {
+  Widget child = 4;
+}
+
+message FlutterCupertinoInheritedTheme {
+  Widget child = 3;
+}
+
+message FlutterCupertinoInteractiveViewer {
+  bool align_pan_axis = 4;
+  bool constrained = 7;
+  double max_scale = 8;
+  double min_scale = 9;
+  double interaction_end_friction_coefficient = 10;
+  bool pan_enabled = 14;
+  bool scale_enabled = 15;
+  double scale_factor = 16;
+  bool trackpad_scroll_causes_scale = 19;
+  Widget child = 20;
+}
+
+message FlutterCupertinoKeyboardListener {
+  bool autofocus = 4;
+  bool include_semantics = 5;
+  Widget child = 7;
+}
+
+message FlutterCupertinoConstrainedLayoutBuilder {
+  
+}
+
+message FlutterCupertinoLayoutBuilder {
+  
+}
+
+message FlutterCupertinoListWheelScrollView {
+  double diameter_ratio = 5;
+  double perspective = 6;
+  double off_axis_fraction = 7;
+  bool use_magnifier = 8;
+  double magnification = 9;
+  double over_and_under_center_opacity = 10;
+  double item_extent = 11;
+  double squeeze = 12;
+  bool render_children_outside_viewport = 14;
+  string restoration_id = 16;
+}
+
+message FlutterCupertinoListWheelViewport {
+  double diameter_ratio = 3;
+  double perspective = 4;
+  double off_axis_fraction = 5;
+  bool use_magnifier = 6;
+  double magnification = 7;
+  double over_and_under_center_opacity = 8;
+  double item_extent = 9;
+  double squeeze = 10;
+  bool render_children_outside_viewport = 11;
+}
+
+message FlutterCupertinoLocalizations {
+  Widget child = 5;
+}
+
+message FlutterCupertinoLookupBoundary {
+  Widget child = 3;
+}
+
+message FlutterCupertinoRawMagnifier {
+  Widget child = 3;
+  double magnification_scale = 6;
+}
+
+message FlutterCupertinoMediaQuery {
+  Widget child = 4;
+}
+
+message FlutterCupertinoModalBarrier {
+  bool dismissible = 4;
+  string semantics_label = 6;
+  bool barrier_semantics_dismissible = 7;
+  string semantics_on_tap_hint = 9;
+}
+
+message FlutterCupertinoAnimatedModalBarrier {
+  bool dismissible = 4;
+  string semantics_label = 5;
+  bool barrier_semantics_dismissible = 6;
+  string semantics_on_tap_hint = 9;
+}
+
+message FlutterCupertinoNavigationToolbar {
+  Widget leading = 3;
+  Widget middle = 4;
+  Widget trailing = 5;
+  bool center_middle = 6;
+  double middle_spacing = 7;
+}
+
+message FlutterCupertinoHeroControllerScope {
+  Widget child = 4;
+}
+
+message FlutterCupertinoNavigator {
+  string initial_route = 5;
+  bool reports_route_update_to_engine = 10;
+  bool request_focus = 13;
+  string restoration_scope_id = 14;
+}
+
+message FlutterCupertinoNestedScrollView {
+  bool reverse = 5;
+  Widget body = 8;
+  bool float_header_slivers = 10;
+  string restoration_id = 12;
+}
+
+message FlutterCupertinoSliverOverlapAbsorber {
+  Widget sliver = 4;
+}
+
+message FlutterCupertinoSliverOverlapInjector {
+  Widget sliver = 4;
+}
+
+message FlutterCupertinoNestedScrollViewViewport {
+  double anchor = 5;
+}
+
+message FlutterCupertinoNotificationListener {
+  Widget child = 3;
+}
+
+message FlutterCupertinoOrientationBuilder {
+  
+}
+
+message FlutterCupertinoOverflowBar {
+  double spacing = 3;
+  double overflow_spacing = 5;
+}
+
+message FlutterCupertinoOverlay {
+  
+}
+
+message FlutterCupertinoOverlayPortal {
+  Widget child = 5;
+}
+
+message FlutterCupertinoGlowingOverscrollIndicator {
+  bool show_leading = 3;
+  bool show_trailing = 4;
+  Widget child = 8;
+}
+
+message FlutterCupertinoStretchingOverscrollIndicator {
+  Widget child = 6;
+}
+
+message FlutterCupertinoPageStorage {
+  Widget child = 4;
+}
+
+message FlutterCupertinoPageView {
+  bool reverse = 4;
+  bool page_snapping = 7;
+  bool allow_implicit_scrolling = 11;
+  string restoration_id = 12;
+  bool pad_ends = 15;
+}
+
+message FlutterCupertinoPerformanceOverlay {
+  int64 options_mask = 3;
+  int64 rasterizer_threshold = 4;
+  bool checkerboard_raster_cache_images = 5;
+  bool checkerboard_offscreen_layers = 6;
+}
+
+message FlutterCupertinoPlaceholder {
+  double stroke_width = 4;
+  double fallback_width = 5;
+  double fallback_height = 6;
+  Widget child = 7;
+}
+
+message FlutterCupertinoPlatformMenuBar {
+  Widget child = 4;
+  Widget body = 5;
+}
+
+message FlutterCupertinoPlatformSelectableRegionContextMenu {
+  Widget child = 2;
+}
+
+message FlutterCupertinoAndroidView {
+  string view_type = 3;
+}
+
+message FlutterCupertinoUiKitView {
+  string view_type = 3;
+}
+
+message FlutterCupertinoHtmlElementView {
+  string view_type = 3;
+}
+
+message FlutterCupertinoPlatformViewLink {
+  string view_type = 5;
+}
+
+message FlutterCupertinoPlatformViewSurface {
+  
+}
+
+message FlutterCupertinoAndroidViewSurface {
+  
+}
+
+message FlutterCupertinoPreferredSizeWidget {
+  
+}
+
+message FlutterCupertinoPreferredSize {
+  Widget child = 4;
+}
+
+message FlutterCupertinoPrimaryScrollController {
+  Widget child = 6;
+}
+
+message FlutterCupertinoRawKeyboardListener {
+  bool autofocus = 4;
+  bool include_semantics = 5;
+  Widget child = 7;
+}
+
+message FlutterCupertinoReorderableList {
+  int64 item_count = 4;
+  double item_extent = 8;
+  Widget prototype_item = 9;
+  bool reverse = 13;
+  bool primary = 15;
+  bool shrink_wrap = 17;
+  double anchor = 18;
+  double cache_extent = 19;
+  string restoration_id = 22;
+  double auto_scroller_velocity_scalar = 24;
+}
+
+message FlutterCupertinoSliverReorderableList {
+  int64 item_count = 5;
+  double item_extent = 9;
+  Widget prototype_item = 10;
+  double auto_scroller_velocity_scalar = 12;
+}
+
+message FlutterCupertinoReorderableDragStartListener {
+  Widget child = 3;
+  int64 index = 4;
+  bool enabled = 5;
+}
+
+message FlutterCupertinoReorderableDelayedDragStartListener {
+  Widget child = 3;
+  int64 index = 4;
+  bool enabled = 5;
+}
+
+message FlutterCupertinoRestorationScope {
+  string restoration_id = 3;
+  Widget child = 4;
+}
+
+message FlutterCupertinoUnmanagedRestorationScope {
+  Widget child = 4;
+}
+
+message FlutterCupertinoRootRestorationScope {
+  string restoration_id = 3;
+  Widget child = 4;
+}
+
+message FlutterCupertinoRouter {
+  string restoration_scope_id = 7;
+}
+
+message FlutterCupertinoBackButtonListener {
+  Widget child = 3;
+}
+
+message FlutterCupertinoSafeArea {
+  bool left = 3;
+  bool top = 4;
+  bool right = 5;
+  bool bottom = 6;
+  bool maintain_bottom_view_padding = 8;
+  Widget child = 9;
+}
+
+message FlutterCupertinoSliverSafeArea {
+  bool left = 3;
+  bool top = 4;
+  bool right = 5;
+  bool bottom = 6;
+  Widget sliver = 8;
+}
+
+message FlutterCupertinoScrollConfiguration {
+  Widget child = 4;
+}
+
+message FlutterCupertinoScrollNotificationObserver {
+  Widget child = 3;
+}
+
+message FlutterCupertinoScrollView {
+  bool reverse = 4;
+  bool primary = 6;
+  bool shrink_wrap = 9;
+  double anchor = 11;
+  double cache_extent = 12;
+  int64 semantic_child_count = 13;
+  string restoration_id = 16;
+}
+
+message FlutterCupertinoCustomScrollView {
+  bool reverse = 4;
+  bool primary = 6;
+  bool shrink_wrap = 9;
+  double anchor = 11;
+  double cache_extent = 12;
+  int64 semantic_child_count = 14;
+  string restoration_id = 17;
+}
+
+message FlutterCupertinoBoxScrollView {
+  bool reverse = 4;
+  bool primary = 6;
+  bool shrink_wrap = 8;
+  double cache_extent = 10;
+  int64 semantic_child_count = 11;
+  string restoration_id = 14;
+}
+
+message FlutterCupertinoListView {
+  bool reverse = 4;
+  bool primary = 6;
+  bool shrink_wrap = 8;
+  double item_extent = 10;
+  Widget prototype_item = 11;
+  bool add_automatic_keep_alives = 12;
+  bool add_repaint_boundaries = 13;
+  bool add_semantic_indexes = 14;
+  double cache_extent = 15;
+  int64 semantic_child_count = 17;
+  string restoration_id = 20;
+}
+
+message FlutterCupertinoGridView {
+  bool reverse = 4;
+  bool primary = 6;
+  bool shrink_wrap = 8;
+  bool add_automatic_keep_alives = 11;
+  bool add_repaint_boundaries = 12;
+  bool add_semantic_indexes = 13;
+  double cache_extent = 14;
+  int64 semantic_child_count = 16;
+  string restoration_id = 20;
+}
+
+message FlutterCupertinoScrollable {
+  bool exclude_from_semantics = 8;
+  int64 semantic_child_count = 9;
+  string restoration_id = 11;
+}
+
+message FlutterCupertinoTwoDimensionalScrollable {
+  string restoration_id = 7;
+  bool exclude_from_semantics = 8;
+}
+
+message FlutterCupertinoRawScrollbar {
+  Widget child = 3;
+  bool thumb_visibility = 5;
+  double thickness = 8;
+  double min_thumb_length = 10;
+  double min_overscroll_length = 11;
+  bool track_visibility = 12;
+  bool interactive = 20;
+  double main_axis_margin = 22;
+  double cross_axis_margin = 23;
+}
+
+message FlutterCupertinoSelectableRegion {
+  Widget child = 6;
+}
+
+message FlutterCupertinoSelectionContainer {
+  Widget child = 5;
+}
+
+message FlutterCupertinoSelectionRegistrarScope {
+  Widget child = 4;
+}
+
+message FlutterCupertinoSemanticsDebugger {
+  Widget child = 3;
+}
+
+message FlutterCupertinoSharedAppData {
+  Widget child = 3;
+}
+
+message FlutterCupertinoShortcuts {
+  Widget child = 4;
+  string debug_label = 5;
+}
+
+message FlutterCupertinoCallbackShortcuts {
+  Widget child = 4;
+}
+
+message FlutterCupertinoShortcutRegistrar {
+  Widget child = 3;
+}
+
+message FlutterCupertinoSingleChildScrollView {
+  bool reverse = 4;
+  bool primary = 6;
+  Widget child = 9;
+  string restoration_id = 12;
+}
+
+message FlutterCupertinoSizeChangedLayoutNotifier {
+  Widget child = 3;
+}
+
+message FlutterCupertinoSliverWithKeepAliveWidget {
+  
+}
+
+message FlutterCupertinoSliverMultiBoxAdaptorWidget {
+  
+}
+
+message FlutterCupertinoSliverList {
+  
+}
+
+message FlutterCupertinoSliverFixedExtentList {
+  double item_extent = 4;
+}
+
+message FlutterCupertinoSliverGrid {
+  
+}
+
+message FlutterCupertinoSliverOpacity {
+  double opacity = 3;
+  bool always_include_semantics = 4;
+  Widget sliver = 5;
+}
+
+message FlutterCupertinoSliverIgnorePointer {
+  bool ignoring = 3;
+  bool ignoring_semantics = 4;
+  Widget sliver = 5;
+}
+
+message FlutterCupertinoSliverOffstage {
+  bool offstage = 3;
+  Widget sliver = 4;
+}
+
+message FlutterCupertinoKeepAlive {
+  bool keep_alive = 3;
+  Widget child = 4;
+}
+
+message FlutterCupertinoSliverConstrainedCrossAxis {
+  double max_extent = 3;
+  Widget sliver = 4;
+}
+
+message FlutterCupertinoSliverCrossAxisExpanded {
+  int64 flex = 3;
+  Widget sliver = 4;
+}
+
+message FlutterCupertinoSliverCrossAxisGroup {
+  
+}
+
+message FlutterCupertinoSliverMainAxisGroup {
+  
+}
+
+message FlutterCupertinoSliverFillViewport {
+  double viewport_fraction = 4;
+  bool pad_ends = 5;
+}
+
+message FlutterCupertinoSliverFillRemaining {
+  Widget child = 3;
+  bool has_scroll_body = 4;
+  bool fill_overscroll = 5;
+}
+
+message FlutterCupertinoSliverLayoutBuilder {
+  
+}
+
+message FlutterCupertinoSliverPersistentHeader {
+  bool pinned = 4;
+  bool floating = 5;
+}
+
+message FlutterCupertinoSliverPrototypeExtentList {
+  Widget prototype_item = 4;
+}
+
+message FlutterCupertinoSlottedMultiChildRenderObjectWidget {
+  
+}
+
+message FlutterCupertinoSnapshotWidget {
+  bool autoresize = 5;
+  Widget child = 7;
+}
+
+message FlutterCupertinoSpacer {
+  int64 flex = 3;
+}
+
+message FlutterCupertinoStatusTransitionWidget {
+  
+}
+
+message FlutterCupertinoTable {
+  
+}
+
+message FlutterCupertinoTableCell {
+  Widget child = 4;
+}
+
+message FlutterCupertinoTapRegionSurface {
+  Widget child = 3;
+}
+
+message FlutterCupertinoTapRegion {
+  Widget child = 3;
+  bool enabled = 4;
+  string debug_label = 9;
+}
+
+message FlutterCupertinoTextFieldTapRegion {
+  Widget child = 3;
+  bool enabled = 4;
+  string debug_label = 7;
+}
+
+message FlutterCupertinoDefaultTextStyle {
+  bool soft_wrap = 5;
+  int64 max_lines = 7;
+  Widget child = 10;
+}
+
+message FlutterCupertinoDefaultTextHeightBehavior {
+  Widget child = 4;
+}
+
+message FlutterCupertinoText {
+  string data = 2;
+  bool soft_wrap = 9;
+  double text_scale_factor = 11;
+  int64 max_lines = 12;
+  string semantics_label = 13;
+}
+
+message FlutterCupertinoTextSelectionGestureDetector {
+  Widget child = 19;
+}
+
+message FlutterCupertinoTexture {
+  int64 texture_id = 3;
+  bool freeze = 4;
+}
+
+message FlutterCupertinoTickerMode {
+  bool enabled = 3;
+  Widget child = 4;
+}
+
+message FlutterCupertinoTitle {
+  string title = 3;
+  Widget child = 5;
+}
+
+message FlutterCupertinoAnimatedWidget {
+  
+}
+
+message FlutterCupertinoSlideTransition {
+  bool transform_hit_tests = 4;
+  Widget child = 6;
+}
+
+message FlutterCupertinoScaleTransition {
+  Widget child = 6;
+}
+
+message FlutterCupertinoRotationTransition {
+  Widget child = 6;
+}
+
+message FlutterCupertinoSizeTransition {
+  double axis_alignment = 5;
+  Widget child = 6;
+}
+
+message FlutterCupertinoFadeTransition {
+  bool always_include_semantics = 4;
+  Widget child = 5;
+}
+
+message FlutterCupertinoSliverFadeTransition {
+  bool always_include_semantics = 4;
+  Widget sliver = 5;
+}
+
+message FlutterCupertinoPositionedTransition {
+  Widget child = 4;
+}
+
+message FlutterCupertinoRelativePositionedTransition {
+  Widget child = 5;
+}
+
+message FlutterCupertinoDecoratedBoxTransition {
+  Widget child = 5;
+}
+
+message FlutterCupertinoAlignTransition {
+  Widget child = 4;
+  double width_factor = 5;
+  double height_factor = 6;
+}
+
+message FlutterCupertinoDefaultTextStyleTransition {
+  Widget child = 4;
+  bool soft_wrap = 6;
+  int64 max_lines = 8;
+}
+
+message FlutterCupertinoListenableBuilder {
+  Widget child = 5;
+}
+
+message FlutterCupertinoAnimatedBuilder {
+  Widget child = 5;
+}
+
+message FlutterCupertinoTweenAnimationBuilder {
+  Widget child = 8;
+}
+
+message FlutterCupertinoTwoDimensionalScrollView {
+  bool primary = 3;
+  double cache_extent = 8;
+}
+
+message FlutterCupertinoTwoDimensionalViewport {
+  double cache_extent = 9;
+}
+
+message FlutterCupertinoUndoHistory {
+  Widget child = 8;
+}
+
+message FlutterCupertinoUniqueWidget {
+  
+}
+
+message FlutterCupertinoValueListenableBuilder {
+  Widget child = 5;
+}
+
+message FlutterCupertinoView {
+  Widget child = 3;
+}
+
+message FlutterCupertinoViewport {
+  double anchor = 5;
+  double cache_extent = 8;
+}
+
+message FlutterCupertinoShrinkWrappingViewport {
+  
+}
+
+message FlutterCupertinoVisibility {
+  Widget child = 3;
+  Widget replacement = 4;
+  bool visible = 5;
+  bool maintain_state = 6;
+  bool maintain_animation = 7;
+  bool maintain_size = 8;
+  bool maintain_semantics = 9;
+  bool maintain_interactivity = 10;
+}
+
+message FlutterCupertinoSliverVisibility {
+  Widget sliver = 3;
+  Widget replacement_sliver = 4;
+  bool visible = 5;
+  bool maintain_state = 6;
+  bool maintain_animation = 7;
+  bool maintain_size = 8;
+  bool maintain_semantics = 9;
+  bool maintain_interactivity = 10;
+}
+
+message FlutterCupertinoWidgetInspector {
+  Widget child = 3;
+}
+
+message FlutterCupertinoWillPopScope {
+  Widget child = 3;
+}
+
 message FlutterMaterialAboutListTile {
   Widget icon = 3;
   Widget child = 4;
@@ -4423,1916 +6333,6 @@ message FlutterWidgetsWidgetInspector {
 
 message FlutterWidgetsWillPopScope {
   Widget child = 3;
-}
-
-message FlutterCupertinoCupertinoActivityIndicator {
-  bool animating = 4;
-  double radius = 5;
-}
-
-message FlutterCupertinoCupertinoAdaptiveTextSelectionToolbar {
-  
-}
-
-message FlutterCupertinoCupertinoApp {
-  Widget home = 4;
-  string initial_route = 7;
-  string title = 13;
-  bool show_performance_overlay = 21;
-  bool checkerboard_raster_cache_images = 22;
-  bool checkerboard_offscreen_layers = 23;
-  bool show_semantics_debugger = 24;
-  bool debug_show_checked_mode_banner = 25;
-  string restoration_scope_id = 28;
-  bool use_inherited_media_query = 30;
-}
-
-message FlutterCupertinoCupertinoTabBar {
-  int64 current_index = 5;
-  double icon_size = 9;
-  double height = 10;
-}
-
-message FlutterCupertinoCupertinoButton {
-  Widget child = 3;
-  double min_size = 7;
-  double pressed_opacity = 8;
-}
-
-message FlutterCupertinoCupertinoCheckbox {
-  bool value = 3;
-  bool tristate = 4;
-  bool autofocus = 11;
-}
-
-message FlutterCupertinoCupertinoContextMenu {
-  Widget child = 4;
-  bool enable_haptic_feedback = 5;
-}
-
-message FlutterCupertinoCupertinoContextMenuAction {
-  Widget child = 3;
-  bool is_default_action = 4;
-  bool is_destructive_action = 5;
-}
-
-message FlutterCupertinoCupertinoDatePicker {
-  int64 minimum_year = 8;
-  int64 maximum_year = 9;
-  int64 minute_interval = 10;
-  bool use24h_format = 11;
-  bool show_day_of_week = 14;
-  double item_extent = 15;
-}
-
-message FlutterCupertinoCupertinoTimerPicker {
-  int64 minute_interval = 5;
-  int64 second_interval = 6;
-  double item_extent = 9;
-}
-
-message FlutterCupertinoCupertinoDesktopTextSelectionToolbar {
-  
-}
-
-message FlutterCupertinoCupertinoDesktopTextSelectionToolbarButton {
-  Widget child = 4;
-}
-
-message FlutterCupertinoCupertinoAlertDialog {
-  Widget title = 3;
-  Widget content = 4;
-}
-
-message FlutterCupertinoCupertinoPopupSurface {
-  bool is_surface_painted = 3;
-  Widget child = 4;
-}
-
-message FlutterCupertinoCupertinoActionSheet {
-  Widget title = 3;
-  Widget message = 4;
-  Widget cancel_button = 8;
-}
-
-message FlutterCupertinoCupertinoActionSheetAction {
-  bool is_default_action = 4;
-  bool is_destructive_action = 5;
-  Widget child = 6;
-}
-
-message FlutterCupertinoCupertinoDialogAction {
-  bool is_default_action = 4;
-  bool is_destructive_action = 5;
-  Widget child = 7;
-}
-
-message FlutterCupertinoCupertinoFormRow {
-  Widget child = 3;
-  Widget prefix = 4;
-  Widget helper = 6;
-  Widget error = 7;
-}
-
-message FlutterCupertinoCupertinoFormSection {
-  Widget header = 4;
-  Widget footer = 5;
-}
-
-message FlutterCupertinoCupertinoUserInterfaceLevel {
-  Widget child = 4;
-}
-
-message FlutterCupertinoCupertinoListSection {
-  Widget header = 4;
-  Widget footer = 5;
-  double divider_margin = 10;
-  double additional_divider_margin = 11;
-  double top_margin = 12;
-  bool has_leading = 13;
-}
-
-message FlutterCupertinoCupertinoListTile {
-  Widget title = 3;
-  Widget subtitle = 4;
-  Widget additional_info = 5;
-  Widget leading = 6;
-  Widget trailing = 7;
-  double leading_size = 12;
-  double leading_to_title = 13;
-}
-
-message FlutterCupertinoCupertinoListTileChevron {
-  
-}
-
-message FlutterCupertinoCupertinoTextMagnifier {
-  double drag_resistance = 5;
-  double hide_below_threshold = 6;
-  double horizontal_screen_edge_padding = 7;
-}
-
-message FlutterCupertinoCupertinoMagnifier {
-  
-}
-
-message FlutterCupertinoCupertinoNavigationBar {
-  Widget leading = 3;
-  bool automatically_imply_leading = 4;
-  bool automatically_imply_middle = 5;
-  string previous_page_title = 6;
-  Widget middle = 7;
-  Widget trailing = 8;
-  bool transition_between_routes = 13;
-}
-
-message FlutterCupertinoCupertinoSliverNavigationBar {
-  Widget large_title = 3;
-  Widget leading = 4;
-  bool automatically_imply_leading = 5;
-  bool automatically_imply_title = 6;
-  bool always_show_middle = 7;
-  string previous_page_title = 8;
-  Widget middle = 9;
-  Widget trailing = 10;
-  bool transition_between_routes = 15;
-  bool stretch = 17;
-}
-
-message FlutterCupertinoCupertinoNavigationBarBackButton {
-  string previous_page_title = 4;
-}
-
-message FlutterCupertinoCupertinoPageScaffold {
-  bool resize_to_avoid_bottom_inset = 5;
-  Widget child = 6;
-}
-
-message FlutterCupertinoObstructingPreferredSizeWidget {
-  
-}
-
-message FlutterCupertinoCupertinoPicker {
-  double diameter_ratio = 3;
-  double off_axis_fraction = 5;
-  bool use_magnifier = 6;
-  double magnification = 7;
-  double squeeze = 9;
-  double item_extent = 10;
-  Widget selection_overlay = 13;
-  bool looping = 14;
-}
-
-message FlutterCupertinoCupertinoPickerDefaultSelectionOverlay {
-  bool cap_start_edge = 4;
-  bool cap_end_edge = 5;
-}
-
-message FlutterCupertinoCupertinoRadio {
-  bool toggleable = 6;
-  bool autofocus = 12;
-  bool use_checkmark_style = 13;
-}
-
-message FlutterCupertinoCupertinoSliverRefreshControl {
-  double refresh_trigger_pull_distance = 3;
-  double refresh_indicator_extent = 4;
-}
-
-message FlutterCupertinoCupertinoPageTransition {
-  Widget child = 5;
-  bool linear_transition = 6;
-}
-
-message FlutterCupertinoCupertinoFullscreenDialogTransition {
-  Widget child = 5;
-  bool linear_transition = 6;
-}
-
-message FlutterCupertinoCupertinoScrollbar {
-  Widget child = 3;
-  bool thumb_visibility = 5;
-  double thickness = 6;
-  double thickness_while_dragging = 7;
-}
-
-message FlutterCupertinoCupertinoSearchTextField {
-  string placeholder = 7;
-  double item_size = 15;
-  Widget prefix_icon = 17;
-  string restoration_id = 22;
-  bool enable_i_m_e_personalized_learning = 26;
-  bool autofocus = 27;
-  bool autocorrect = 29;
-  bool enabled = 30;
-}
-
-message FlutterCupertinoCupertinoSegmentedControl {
-  
-}
-
-message FlutterCupertinoCupertinoSlider {
-  double value = 3;
-  double min = 7;
-  double max = 8;
-  int64 divisions = 9;
-}
-
-message FlutterCupertinoCupertinoSlidingSegmentedControl {
-  
-}
-
-message FlutterCupertinoCupertinoSpellCheckSuggestionsToolbar {
-  
-}
-
-message FlutterCupertinoCupertinoSwitch {
-  bool value = 3;
-  bool apply_theme = 8;
-  bool autofocus = 12;
-}
-
-message FlutterCupertinoCupertinoTabScaffold {
-  bool resize_to_avoid_bottom_inset = 7;
-  string restoration_id = 8;
-}
-
-message FlutterCupertinoCupertinoTabView {
-  string default_title = 5;
-  string restoration_scope_id = 10;
-}
-
-message FlutterCupertinoCupertinoTextField {
-  string placeholder = 8;
-  Widget prefix = 10;
-  Widget suffix = 12;
-  bool read_only = 23;
-  bool show_cursor = 25;
-  bool autofocus = 26;
-  string obscuring_character = 27;
-  bool obscure_text = 28;
-  bool autocorrect = 29;
-  bool enable_suggestions = 32;
-  int64 max_lines = 33;
-  int64 min_lines = 34;
-  bool expands = 35;
-  int64 max_length = 36;
-  bool enabled = 43;
-  double cursor_width = 44;
-  double cursor_height = 45;
-  bool cursor_opacity_animates = 47;
-  bool enable_interactive_selection = 54;
-  string restoration_id = 62;
-  bool scribble_enabled = 63;
-  bool enable_i_m_e_personalized_learning = 64;
-}
-
-message FlutterCupertinoCupertinoTextFormFieldRow {
-  Widget prefix = 3;
-  string initial_value = 6;
-  bool autofocus = 17;
-  bool read_only = 18;
-  bool show_cursor = 20;
-  string obscuring_character = 21;
-  bool obscure_text = 22;
-  bool autocorrect = 23;
-  bool enable_suggestions = 26;
-  int64 max_lines = 27;
-  int64 min_lines = 28;
-  bool expands = 29;
-  int64 max_length = 30;
-  bool enabled = 38;
-  double cursor_width = 39;
-  double cursor_height = 40;
-  bool enable_interactive_selection = 44;
-  string placeholder = 49;
-}
-
-message FlutterCupertinoCupertinoTextSelectionToolbar {
-  
-}
-
-message FlutterCupertinoCupertinoTextSelectionToolbarButton {
-  Widget child = 4;
-}
-
-message FlutterCupertinoCupertinoTheme {
-  Widget child = 4;
-}
-
-message FlutterCupertinoActionListener {
-  Widget child = 5;
-}
-
-message FlutterCupertinoActions {
-  Widget child = 5;
-}
-
-message FlutterCupertinoFocusableActionDetector {
-  bool enabled = 3;
-  bool autofocus = 5;
-  bool descendants_are_focusable = 6;
-  bool descendants_are_traversable = 7;
-  bool include_focus_semantics = 14;
-  Widget child = 15;
-}
-
-message FlutterCupertinoAnimatedCrossFade {
-  Widget first_child = 3;
-  Widget second_child = 4;
-  bool exclude_bottom_focus = 13;
-}
-
-message FlutterCupertinoAnimatedList {
-  int64 initial_item_count = 4;
-  bool reverse = 6;
-  bool primary = 8;
-  bool shrink_wrap = 10;
-}
-
-message FlutterCupertinoAnimatedGrid {
-  int64 initial_item_count = 5;
-  bool reverse = 7;
-  bool primary = 9;
-}
-
-message FlutterCupertinoSliverAnimatedList {
-  int64 initial_item_count = 5;
-}
-
-message FlutterCupertinoSliverAnimatedGrid {
-  int64 initial_item_count = 6;
-}
-
-message FlutterCupertinoAnimatedSize {
-  Widget child = 3;
-}
-
-message FlutterCupertinoAnimatedSwitcher {
-  Widget child = 3;
-}
-
-message FlutterCupertinoAnnotatedRegion {
-  Widget child = 3;
-  bool sized = 5;
-}
-
-message FlutterCupertinoWidgetsApp {
-  string initial_route = 8;
-  Widget home = 10;
-  string title = 13;
-  bool show_performance_overlay = 22;
-  bool checkerboard_raster_cache_images = 23;
-  bool checkerboard_offscreen_layers = 24;
-  bool show_semantics_debugger = 25;
-  bool debug_show_widget_inspector = 26;
-  bool debug_show_checked_mode_banner = 27;
-  string restoration_scope_id = 31;
-  bool use_inherited_media_query = 32;
-}
-
-message FlutterCupertinoStreamBuilderBase {
-  
-}
-
-message FlutterCupertinoStreamBuilder {
-  
-}
-
-message FlutterCupertinoFutureBuilder {
-  
-}
-
-message FlutterCupertinoRawAutocomplete {
-  
-}
-
-message FlutterCupertinoAutocompleteHighlightedOption {
-  Widget child = 4;
-}
-
-message FlutterCupertinoAutofillGroup {
-  Widget child = 3;
-}
-
-message FlutterCupertinoAutomaticKeepAlive {
-  Widget child = 3;
-}
-
-message FlutterCupertinoBanner {
-  Widget child = 3;
-  string message = 4;
-}
-
-message FlutterCupertinoCheckedModeBanner {
-  Widget child = 3;
-}
-
-message FlutterCupertinoDirectionality {
-  Widget child = 4;
-}
-
-message FlutterCupertinoOpacity {
-  double opacity = 3;
-  bool always_include_semantics = 4;
-  Widget child = 5;
-}
-
-message FlutterCupertinoShaderMask {
-  Widget child = 5;
-}
-
-message FlutterCupertinoBackdropFilter {
-  Widget child = 4;
-}
-
-message FlutterCupertinoCustomPaint {
-  bool is_complex = 6;
-  bool will_change = 7;
-  Widget child = 8;
-}
-
-message FlutterCupertinoClipRect {
-  Widget child = 5;
-}
-
-message FlutterCupertinoClipRRect {
-  Widget child = 6;
-}
-
-message FlutterCupertinoClipOval {
-  Widget child = 5;
-}
-
-message FlutterCupertinoClipPath {
-  Widget child = 5;
-}
-
-message FlutterCupertinoPhysicalModel {
-  double elevation = 6;
-  Widget child = 9;
-}
-
-message FlutterCupertinoPhysicalShape {
-  double elevation = 5;
-  Widget child = 8;
-}
-
-message FlutterCupertinoTransform {
-  bool transform_hit_tests = 6;
-  Widget child = 8;
-}
-
-message FlutterCupertinoCompositedTransformTarget {
-  Widget child = 4;
-}
-
-message FlutterCupertinoCompositedTransformFollower {
-  bool show_when_unlinked = 4;
-  Widget child = 8;
-}
-
-message FlutterCupertinoFittedBox {
-  Widget child = 6;
-}
-
-message FlutterCupertinoFractionalTranslation {
-  bool transform_hit_tests = 4;
-  Widget child = 5;
-}
-
-message FlutterCupertinoRotatedBox {
-  int64 quarter_turns = 3;
-  Widget child = 4;
-}
-
-message FlutterCupertinoPadding {
-  Widget child = 4;
-}
-
-message FlutterCupertinoAlign {
-  double width_factor = 4;
-  double height_factor = 5;
-  Widget child = 6;
-}
-
-message FlutterCupertinoCenter {
-  double width_factor = 3;
-  double height_factor = 4;
-  Widget child = 5;
-}
-
-message FlutterCupertinoCustomSingleChildLayout {
-  Widget child = 4;
-}
-
-message FlutterCupertinoLayoutId {
-  Widget child = 4;
-}
-
-message FlutterCupertinoCustomMultiChildLayout {
-  
-}
-
-message FlutterCupertinoSizedBox {
-  double width = 3;
-  double height = 4;
-  Widget child = 5;
-}
-
-message FlutterCupertinoConstrainedBox {
-  Widget child = 4;
-}
-
-message FlutterCupertinoConstraintsTransformBox {
-  Widget child = 3;
-  string debug_transform_type = 8;
-}
-
-message FlutterCupertinoUnconstrainedBox {
-  Widget child = 3;
-}
-
-message FlutterCupertinoFractionallySizedBox {
-  double width_factor = 4;
-  double height_factor = 5;
-  Widget child = 6;
-}
-
-message FlutterCupertinoLimitedBox {
-  double max_width = 3;
-  double max_height = 4;
-  Widget child = 5;
-}
-
-message FlutterCupertinoOverflowBox {
-  double min_width = 4;
-  double max_width = 5;
-  double min_height = 6;
-  double max_height = 7;
-  Widget child = 8;
-}
-
-message FlutterCupertinoSizedOverflowBox {
-  Widget child = 5;
-}
-
-message FlutterCupertinoOffstage {
-  bool offstage = 3;
-  Widget child = 4;
-}
-
-message FlutterCupertinoAspectRatio {
-  double aspect_ratio = 3;
-  Widget child = 4;
-}
-
-message FlutterCupertinoIntrinsicWidth {
-  double step_width = 3;
-  double step_height = 4;
-  Widget child = 5;
-}
-
-message FlutterCupertinoIntrinsicHeight {
-  Widget child = 3;
-}
-
-message FlutterCupertinoBaseline {
-  double baseline = 3;
-  Widget child = 5;
-}
-
-message FlutterCupertinoSliverToBoxAdapter {
-  Widget child = 3;
-}
-
-message FlutterCupertinoSliverPadding {
-  Widget sliver = 4;
-}
-
-message FlutterCupertinoListBody {
-  bool reverse = 4;
-}
-
-message FlutterCupertinoStack {
-  
-}
-
-message FlutterCupertinoIndexedStack {
-  int64 index = 7;
-}
-
-message FlutterCupertinoPositioned {
-  double left = 3;
-  double top = 4;
-  double right = 5;
-  double bottom = 6;
-  double width = 7;
-  double height = 8;
-  Widget child = 9;
-}
-
-message FlutterCupertinoPositionedDirectional {
-  double start = 3;
-  double top = 4;
-  double end = 5;
-  double bottom = 6;
-  double width = 7;
-  double height = 8;
-  Widget child = 9;
-}
-
-message FlutterCupertinoFlex {
-  
-}
-
-message FlutterCupertinoRow {
-  
-}
-
-message FlutterCupertinoColumn {
-  
-}
-
-message FlutterCupertinoFlexible {
-  int64 flex = 3;
-  Widget child = 5;
-}
-
-message FlutterCupertinoExpanded {
-  int64 flex = 3;
-  Widget child = 4;
-}
-
-message FlutterCupertinoWrap {
-  double spacing = 5;
-  double run_spacing = 7;
-}
-
-message FlutterCupertinoFlow {
-  
-}
-
-message FlutterCupertinoRichText {
-  bool soft_wrap = 6;
-  double text_scale_factor = 8;
-  int64 max_lines = 9;
-}
-
-message FlutterCupertinoRawImage {
-  string debug_image_label = 4;
-  double width = 5;
-  double height = 6;
-  double scale = 7;
-  bool match_text_direction = 15;
-  bool invert_colors = 16;
-  bool is_anti_alias = 18;
-}
-
-message FlutterCupertinoDefaultAssetBundle {
-  Widget child = 4;
-}
-
-message FlutterCupertinoWidgetToRenderBoxAdapter {
-  
-}
-
-message FlutterCupertinoListener {
-  Widget child = 13;
-}
-
-message FlutterCupertinoMouseRegion {
-  bool opaque = 7;
-  Widget child = 9;
-}
-
-message FlutterCupertinoRepaintBoundary {
-  Widget child = 3;
-}
-
-message FlutterCupertinoIgnorePointer {
-  bool ignoring = 3;
-  bool ignoring_semantics = 4;
-  Widget child = 5;
-}
-
-message FlutterCupertinoAbsorbPointer {
-  bool absorbing = 3;
-  bool ignoring_semantics = 4;
-  Widget child = 5;
-}
-
-message FlutterCupertinoMetaData {
-  Widget child = 5;
-}
-
-message FlutterCupertinoSemantics {
-  Widget child = 3;
-  bool container = 4;
-  bool explicit_child_nodes = 5;
-  bool exclude_semantics = 6;
-  bool block_user_actions = 7;
-  bool enabled = 8;
-  bool checked = 9;
-  bool mixed = 10;
-  bool selected = 11;
-  bool toggled = 12;
-  bool button = 13;
-  bool slider = 14;
-  bool keyboard_key = 15;
-  bool link = 16;
-  bool header = 17;
-  bool text_field = 18;
-  bool read_only = 19;
-  bool focusable = 20;
-  bool focused = 21;
-  bool in_mutually_exclusive_group = 22;
-  bool obscured = 23;
-  bool multiline = 24;
-  bool scopes_route = 25;
-  bool names_route = 26;
-  bool hidden = 27;
-  bool image = 28;
-  bool live_region = 29;
-  int64 max_value_length = 30;
-  int64 current_value_length = 31;
-  string label = 32;
-  string value = 34;
-  string increased_value = 36;
-  string decreased_value = 38;
-  string hint = 40;
-  string tooltip = 42;
-  string on_tap_hint = 43;
-  string on_long_press_hint = 44;
-}
-
-message FlutterCupertinoMergeSemantics {
-  Widget child = 3;
-}
-
-message FlutterCupertinoBlockSemantics {
-  bool blocking = 3;
-  Widget child = 4;
-}
-
-message FlutterCupertinoExcludeSemantics {
-  bool excluding = 3;
-  Widget child = 4;
-}
-
-message FlutterCupertinoIndexedSemantics {
-  int64 index = 3;
-  Widget child = 4;
-}
-
-message FlutterCupertinoKeyedSubtree {
-  Widget child = 3;
-}
-
-message FlutterCupertinoBuilder {
-  
-}
-
-message FlutterCupertinoStatefulBuilder {
-  
-}
-
-message FlutterCupertinoColoredBox {
-  Widget child = 3;
-}
-
-message FlutterCupertinoRenderObjectToWidgetAdapter {
-  Widget child = 2;
-  string debug_short_description = 4;
-}
-
-message FlutterCupertinoColorFiltered {
-  Widget child = 3;
-}
-
-message FlutterCupertinoDecoratedBox {
-  Widget child = 5;
-}
-
-message FlutterCupertinoContainer {
-  double width = 8;
-  double height = 9;
-  Widget child = 14;
-}
-
-message FlutterCupertinoDecoratedSliver {
-  Widget sliver = 5;
-}
-
-message FlutterCupertinoDefaultSelectionStyle {
-  Widget child = 6;
-}
-
-message FlutterCupertinoDefaultTextEditingShortcuts {
-  Widget child = 3;
-}
-
-message FlutterCupertinoDismissible {
-  Widget child = 3;
-  Widget background = 4;
-  Widget secondary_background = 5;
-  double cross_axis_end_offset = 14;
-}
-
-message FlutterCupertinoDisplayFeatureSubScreen {
-  Widget child = 4;
-}
-
-message FlutterCupertinoDraggable {
-  Widget child = 3;
-  Widget feedback = 4;
-  Widget child_when_dragging = 7;
-  int64 max_simultaneous_drags = 11;
-  bool ignoring_feedback_semantics = 17;
-  bool ignoring_feedback_pointer = 18;
-  bool root_overlay = 19;
-}
-
-message FlutterCupertinoLongPressDraggable {
-  Widget child = 3;
-  Widget feedback = 4;
-  Widget child_when_dragging = 7;
-  int64 max_simultaneous_drags = 10;
-  bool haptic_feedback_on_start = 16;
-  bool ignoring_feedback_semantics = 17;
-  bool ignoring_feedback_pointer = 18;
-}
-
-message FlutterCupertinoDragTarget {
-  
-}
-
-message FlutterCupertinoDraggableScrollableSheet {
-  double initial_child_size = 3;
-  double min_child_size = 4;
-  double max_child_size = 5;
-  bool expand = 6;
-  bool snap = 7;
-  bool should_close_on_min_extent = 11;
-}
-
-message FlutterCupertinoDraggableScrollableActuator {
-  Widget child = 3;
-}
-
-message FlutterCupertinoDualTransitionBuilder {
-  Widget child = 6;
-}
-
-message FlutterCupertinoEditableText {
-  bool read_only = 5;
-  string obscuring_character = 6;
-  bool obscure_text = 7;
-  bool autocorrect = 8;
-  bool enable_suggestions = 11;
-  double text_scale_factor = 19;
-  int64 max_lines = 20;
-  int64 min_lines = 21;
-  bool expands = 22;
-  bool force_line = 23;
-  bool autofocus = 26;
-  bool show_cursor = 27;
-  bool show_selection_handles = 28;
-  bool renderer_ignores_pointer = 43;
-  double cursor_width = 44;
-  double cursor_height = 45;
-  bool cursor_opacity_animates = 47;
-  bool paint_cursor_above_text = 49;
-  bool enable_interactive_selection = 55;
-  string restoration_id = 63;
-  bool scribble_enabled = 65;
-  bool enable_i_m_e_personalized_learning = 66;
-}
-
-message FlutterCupertinoFadeInImage {
-  bool exclude_from_semantics = 7;
-  string image_semantic_label = 8;
-  double width = 13;
-  double height = 14;
-  bool match_text_direction = 21;
-}
-
-message FlutterCupertinoFocus {
-  Widget child = 3;
-  bool autofocus = 6;
-  bool can_request_focus = 10;
-  bool skip_traversal = 11;
-  bool descendants_are_focusable = 12;
-  bool descendants_are_traversable = 13;
-  bool include_semantics = 14;
-  string debug_label = 15;
-}
-
-message FlutterCupertinoFocusScope {
-  Widget child = 5;
-  bool autofocus = 6;
-  bool can_request_focus = 8;
-  bool skip_traversal = 9;
-  string debug_label = 12;
-}
-
-message FlutterCupertinoExcludeFocus {
-  bool excluding = 3;
-  Widget child = 4;
-}
-
-message FlutterCupertinoFocusTraversalOrder {
-  Widget child = 4;
-}
-
-message FlutterCupertinoFocusTraversalGroup {
-  bool descendants_are_focusable = 4;
-  bool descendants_are_traversable = 5;
-  Widget child = 6;
-}
-
-message FlutterCupertinoExcludeFocusTraversal {
-  bool excluding = 3;
-  Widget child = 4;
-}
-
-message FlutterCupertinoForm {
-  Widget child = 3;
-}
-
-message FlutterCupertinoFormField {
-  bool enabled = 7;
-  string restoration_id = 9;
-}
-
-message FlutterCupertinoStatelessWidget {
-  
-}
-
-message FlutterCupertinoStatefulWidget {
-  
-}
-
-message FlutterCupertinoProxyWidget {
-  Widget child = 3;
-}
-
-message FlutterCupertinoParentDataWidget {
-  Widget child = 3;
-}
-
-message FlutterCupertinoInheritedWidget {
-  Widget child = 3;
-}
-
-message FlutterCupertinoRenderObjectWidget {
-  
-}
-
-message FlutterCupertinoLeafRenderObjectWidget {
-  
-}
-
-message FlutterCupertinoSingleChildRenderObjectWidget {
-  Widget child = 3;
-}
-
-message FlutterCupertinoMultiChildRenderObjectWidget {
-  
-}
-
-message FlutterCupertinoErrorWidget {
-  
-}
-
-message FlutterCupertinoGestureDetector {
-  Widget child = 3;
-  bool exclude_from_semantics = 62;
-  bool trackpad_scroll_causes_scale = 64;
-}
-
-message FlutterCupertinoRawGestureDetector {
-  Widget child = 3;
-  bool exclude_from_semantics = 6;
-}
-
-message FlutterCupertinoGridPaper {
-  double interval = 4;
-  int64 divisions = 5;
-  int64 subdivisions = 6;
-  Widget child = 7;
-}
-
-message FlutterCupertinoHero {
-  bool transition_on_user_gestures = 7;
-  Widget child = 8;
-}
-
-message FlutterCupertinoHeroMode {
-  Widget child = 3;
-  bool enabled = 4;
-}
-
-message FlutterCupertinoIcon {
-  double size = 4;
-  double fill = 5;
-  double weight = 6;
-  double grade = 7;
-  double optical_size = 8;
-  string semantic_label = 11;
-}
-
-message FlutterCupertinoIconTheme {
-  Widget child = 4;
-}
-
-message FlutterCupertinoImage {
-  string semantic_label = 7;
-  bool exclude_from_semantics = 8;
-  double width = 9;
-  double height = 10;
-  bool match_text_direction = 18;
-  bool gapless_playback = 19;
-  bool is_anti_alias = 20;
-}
-
-message FlutterCupertinoImageFiltered {
-  Widget child = 4;
-  bool enabled = 5;
-}
-
-message FlutterCupertinoImageIcon {
-  double size = 4;
-  string semantic_label = 6;
-}
-
-message FlutterCupertinoImplicitlyAnimatedWidget {
-  
-}
-
-message FlutterCupertinoAnimatedContainer {
-  double width = 8;
-  double height = 9;
-  Widget child = 14;
-}
-
-message FlutterCupertinoAnimatedPadding {
-  Widget child = 4;
-}
-
-message FlutterCupertinoAnimatedAlign {
-  Widget child = 4;
-  double height_factor = 5;
-  double width_factor = 6;
-}
-
-message FlutterCupertinoAnimatedPositioned {
-  Widget child = 3;
-  double left = 4;
-  double top = 5;
-  double right = 6;
-  double bottom = 7;
-  double width = 8;
-  double height = 9;
-}
-
-message FlutterCupertinoAnimatedPositionedDirectional {
-  Widget child = 3;
-  double start = 4;
-  double top = 5;
-  double end = 6;
-  double bottom = 7;
-  double width = 8;
-  double height = 9;
-}
-
-message FlutterCupertinoAnimatedScale {
-  Widget child = 3;
-  double scale = 4;
-}
-
-message FlutterCupertinoAnimatedRotation {
-  Widget child = 3;
-  double turns = 4;
-}
-
-message FlutterCupertinoAnimatedSlide {
-  Widget child = 3;
-}
-
-message FlutterCupertinoAnimatedOpacity {
-  Widget child = 3;
-  double opacity = 4;
-  bool always_include_semantics = 8;
-}
-
-message FlutterCupertinoSliverAnimatedOpacity {
-  Widget sliver = 3;
-  double opacity = 4;
-  bool always_include_semantics = 8;
-}
-
-message FlutterCupertinoAnimatedDefaultTextStyle {
-  Widget child = 3;
-  bool soft_wrap = 6;
-  int64 max_lines = 8;
-}
-
-message FlutterCupertinoAnimatedPhysicalModel {
-  Widget child = 3;
-  double elevation = 7;
-  bool animate_color = 9;
-  bool animate_shadow_color = 11;
-}
-
-message FlutterCupertinoAnimatedFractionallySizedBox {
-  Widget child = 4;
-  double height_factor = 5;
-  double width_factor = 6;
-}
-
-message FlutterCupertinoInheritedModel {
-  Widget child = 3;
-}
-
-message FlutterCupertinoInheritedNotifier {
-  Widget child = 4;
-}
-
-message FlutterCupertinoInheritedTheme {
-  Widget child = 3;
-}
-
-message FlutterCupertinoInteractiveViewer {
-  bool align_pan_axis = 4;
-  bool constrained = 7;
-  double max_scale = 8;
-  double min_scale = 9;
-  double interaction_end_friction_coefficient = 10;
-  bool pan_enabled = 14;
-  bool scale_enabled = 15;
-  double scale_factor = 16;
-  bool trackpad_scroll_causes_scale = 19;
-  Widget child = 20;
-}
-
-message FlutterCupertinoKeyboardListener {
-  bool autofocus = 4;
-  bool include_semantics = 5;
-  Widget child = 7;
-}
-
-message FlutterCupertinoConstrainedLayoutBuilder {
-  
-}
-
-message FlutterCupertinoLayoutBuilder {
-  
-}
-
-message FlutterCupertinoListWheelScrollView {
-  double diameter_ratio = 5;
-  double perspective = 6;
-  double off_axis_fraction = 7;
-  bool use_magnifier = 8;
-  double magnification = 9;
-  double over_and_under_center_opacity = 10;
-  double item_extent = 11;
-  double squeeze = 12;
-  bool render_children_outside_viewport = 14;
-  string restoration_id = 16;
-}
-
-message FlutterCupertinoListWheelViewport {
-  double diameter_ratio = 3;
-  double perspective = 4;
-  double off_axis_fraction = 5;
-  bool use_magnifier = 6;
-  double magnification = 7;
-  double over_and_under_center_opacity = 8;
-  double item_extent = 9;
-  double squeeze = 10;
-  bool render_children_outside_viewport = 11;
-}
-
-message FlutterCupertinoLocalizations {
-  Widget child = 5;
-}
-
-message FlutterCupertinoLookupBoundary {
-  Widget child = 3;
-}
-
-message FlutterCupertinoRawMagnifier {
-  Widget child = 3;
-  double magnification_scale = 6;
-}
-
-message FlutterCupertinoMediaQuery {
-  Widget child = 4;
-}
-
-message FlutterCupertinoModalBarrier {
-  bool dismissible = 4;
-  string semantics_label = 6;
-  bool barrier_semantics_dismissible = 7;
-  string semantics_on_tap_hint = 9;
-}
-
-message FlutterCupertinoAnimatedModalBarrier {
-  bool dismissible = 4;
-  string semantics_label = 5;
-  bool barrier_semantics_dismissible = 6;
-  string semantics_on_tap_hint = 9;
-}
-
-message FlutterCupertinoNavigationToolbar {
-  Widget leading = 3;
-  Widget middle = 4;
-  Widget trailing = 5;
-  bool center_middle = 6;
-  double middle_spacing = 7;
-}
-
-message FlutterCupertinoHeroControllerScope {
-  Widget child = 4;
-}
-
-message FlutterCupertinoNavigator {
-  string initial_route = 5;
-  bool reports_route_update_to_engine = 10;
-  bool request_focus = 13;
-  string restoration_scope_id = 14;
-}
-
-message FlutterCupertinoNestedScrollView {
-  bool reverse = 5;
-  Widget body = 8;
-  bool float_header_slivers = 10;
-  string restoration_id = 12;
-}
-
-message FlutterCupertinoSliverOverlapAbsorber {
-  Widget sliver = 4;
-}
-
-message FlutterCupertinoSliverOverlapInjector {
-  Widget sliver = 4;
-}
-
-message FlutterCupertinoNestedScrollViewViewport {
-  double anchor = 5;
-}
-
-message FlutterCupertinoNotificationListener {
-  Widget child = 3;
-}
-
-message FlutterCupertinoOrientationBuilder {
-  
-}
-
-message FlutterCupertinoOverflowBar {
-  double spacing = 3;
-  double overflow_spacing = 5;
-}
-
-message FlutterCupertinoOverlay {
-  
-}
-
-message FlutterCupertinoOverlayPortal {
-  Widget child = 5;
-}
-
-message FlutterCupertinoGlowingOverscrollIndicator {
-  bool show_leading = 3;
-  bool show_trailing = 4;
-  Widget child = 8;
-}
-
-message FlutterCupertinoStretchingOverscrollIndicator {
-  Widget child = 6;
-}
-
-message FlutterCupertinoPageStorage {
-  Widget child = 4;
-}
-
-message FlutterCupertinoPageView {
-  bool reverse = 4;
-  bool page_snapping = 7;
-  bool allow_implicit_scrolling = 11;
-  string restoration_id = 12;
-  bool pad_ends = 15;
-}
-
-message FlutterCupertinoPerformanceOverlay {
-  int64 options_mask = 3;
-  int64 rasterizer_threshold = 4;
-  bool checkerboard_raster_cache_images = 5;
-  bool checkerboard_offscreen_layers = 6;
-}
-
-message FlutterCupertinoPlaceholder {
-  double stroke_width = 4;
-  double fallback_width = 5;
-  double fallback_height = 6;
-  Widget child = 7;
-}
-
-message FlutterCupertinoPlatformMenuBar {
-  Widget child = 4;
-  Widget body = 5;
-}
-
-message FlutterCupertinoPlatformSelectableRegionContextMenu {
-  Widget child = 2;
-}
-
-message FlutterCupertinoAndroidView {
-  string view_type = 3;
-}
-
-message FlutterCupertinoUiKitView {
-  string view_type = 3;
-}
-
-message FlutterCupertinoHtmlElementView {
-  string view_type = 3;
-}
-
-message FlutterCupertinoPlatformViewLink {
-  string view_type = 5;
-}
-
-message FlutterCupertinoPlatformViewSurface {
-  
-}
-
-message FlutterCupertinoAndroidViewSurface {
-  
-}
-
-message FlutterCupertinoPreferredSizeWidget {
-  
-}
-
-message FlutterCupertinoPreferredSize {
-  Widget child = 4;
-}
-
-message FlutterCupertinoPrimaryScrollController {
-  Widget child = 6;
-}
-
-message FlutterCupertinoRawKeyboardListener {
-  bool autofocus = 4;
-  bool include_semantics = 5;
-  Widget child = 7;
-}
-
-message FlutterCupertinoReorderableList {
-  int64 item_count = 4;
-  double item_extent = 8;
-  Widget prototype_item = 9;
-  bool reverse = 13;
-  bool primary = 15;
-  bool shrink_wrap = 17;
-  double anchor = 18;
-  double cache_extent = 19;
-  string restoration_id = 22;
-  double auto_scroller_velocity_scalar = 24;
-}
-
-message FlutterCupertinoSliverReorderableList {
-  int64 item_count = 5;
-  double item_extent = 9;
-  Widget prototype_item = 10;
-  double auto_scroller_velocity_scalar = 12;
-}
-
-message FlutterCupertinoReorderableDragStartListener {
-  Widget child = 3;
-  int64 index = 4;
-  bool enabled = 5;
-}
-
-message FlutterCupertinoReorderableDelayedDragStartListener {
-  Widget child = 3;
-  int64 index = 4;
-  bool enabled = 5;
-}
-
-message FlutterCupertinoRestorationScope {
-  string restoration_id = 3;
-  Widget child = 4;
-}
-
-message FlutterCupertinoUnmanagedRestorationScope {
-  Widget child = 4;
-}
-
-message FlutterCupertinoRootRestorationScope {
-  string restoration_id = 3;
-  Widget child = 4;
-}
-
-message FlutterCupertinoRouter {
-  string restoration_scope_id = 7;
-}
-
-message FlutterCupertinoBackButtonListener {
-  Widget child = 3;
-}
-
-message FlutterCupertinoSafeArea {
-  bool left = 3;
-  bool top = 4;
-  bool right = 5;
-  bool bottom = 6;
-  bool maintain_bottom_view_padding = 8;
-  Widget child = 9;
-}
-
-message FlutterCupertinoSliverSafeArea {
-  bool left = 3;
-  bool top = 4;
-  bool right = 5;
-  bool bottom = 6;
-  Widget sliver = 8;
-}
-
-message FlutterCupertinoScrollConfiguration {
-  Widget child = 4;
-}
-
-message FlutterCupertinoScrollNotificationObserver {
-  Widget child = 3;
-}
-
-message FlutterCupertinoScrollView {
-  bool reverse = 4;
-  bool primary = 6;
-  bool shrink_wrap = 9;
-  double anchor = 11;
-  double cache_extent = 12;
-  int64 semantic_child_count = 13;
-  string restoration_id = 16;
-}
-
-message FlutterCupertinoCustomScrollView {
-  bool reverse = 4;
-  bool primary = 6;
-  bool shrink_wrap = 9;
-  double anchor = 11;
-  double cache_extent = 12;
-  int64 semantic_child_count = 14;
-  string restoration_id = 17;
-}
-
-message FlutterCupertinoBoxScrollView {
-  bool reverse = 4;
-  bool primary = 6;
-  bool shrink_wrap = 8;
-  double cache_extent = 10;
-  int64 semantic_child_count = 11;
-  string restoration_id = 14;
-}
-
-message FlutterCupertinoListView {
-  bool reverse = 4;
-  bool primary = 6;
-  bool shrink_wrap = 8;
-  double item_extent = 10;
-  Widget prototype_item = 11;
-  bool add_automatic_keep_alives = 12;
-  bool add_repaint_boundaries = 13;
-  bool add_semantic_indexes = 14;
-  double cache_extent = 15;
-  int64 semantic_child_count = 17;
-  string restoration_id = 20;
-}
-
-message FlutterCupertinoGridView {
-  bool reverse = 4;
-  bool primary = 6;
-  bool shrink_wrap = 8;
-  bool add_automatic_keep_alives = 11;
-  bool add_repaint_boundaries = 12;
-  bool add_semantic_indexes = 13;
-  double cache_extent = 14;
-  int64 semantic_child_count = 16;
-  string restoration_id = 20;
-}
-
-message FlutterCupertinoScrollable {
-  bool exclude_from_semantics = 8;
-  int64 semantic_child_count = 9;
-  string restoration_id = 11;
-}
-
-message FlutterCupertinoTwoDimensionalScrollable {
-  string restoration_id = 7;
-  bool exclude_from_semantics = 8;
-}
-
-message FlutterCupertinoRawScrollbar {
-  Widget child = 3;
-  bool thumb_visibility = 5;
-  double thickness = 8;
-  double min_thumb_length = 10;
-  double min_overscroll_length = 11;
-  bool track_visibility = 12;
-  bool interactive = 20;
-  double main_axis_margin = 22;
-  double cross_axis_margin = 23;
-}
-
-message FlutterCupertinoSelectableRegion {
-  Widget child = 6;
-}
-
-message FlutterCupertinoSelectionContainer {
-  Widget child = 5;
-}
-
-message FlutterCupertinoSelectionRegistrarScope {
-  Widget child = 4;
-}
-
-message FlutterCupertinoSemanticsDebugger {
-  Widget child = 3;
-}
-
-message FlutterCupertinoSharedAppData {
-  Widget child = 3;
-}
-
-message FlutterCupertinoShortcuts {
-  Widget child = 4;
-  string debug_label = 5;
-}
-
-message FlutterCupertinoCallbackShortcuts {
-  Widget child = 4;
-}
-
-message FlutterCupertinoShortcutRegistrar {
-  Widget child = 3;
-}
-
-message FlutterCupertinoSingleChildScrollView {
-  bool reverse = 4;
-  bool primary = 6;
-  Widget child = 9;
-  string restoration_id = 12;
-}
-
-message FlutterCupertinoSizeChangedLayoutNotifier {
-  Widget child = 3;
-}
-
-message FlutterCupertinoSliverWithKeepAliveWidget {
-  
-}
-
-message FlutterCupertinoSliverMultiBoxAdaptorWidget {
-  
-}
-
-message FlutterCupertinoSliverList {
-  
-}
-
-message FlutterCupertinoSliverFixedExtentList {
-  double item_extent = 4;
-}
-
-message FlutterCupertinoSliverGrid {
-  
-}
-
-message FlutterCupertinoSliverOpacity {
-  double opacity = 3;
-  bool always_include_semantics = 4;
-  Widget sliver = 5;
-}
-
-message FlutterCupertinoSliverIgnorePointer {
-  bool ignoring = 3;
-  bool ignoring_semantics = 4;
-  Widget sliver = 5;
-}
-
-message FlutterCupertinoSliverOffstage {
-  bool offstage = 3;
-  Widget sliver = 4;
-}
-
-message FlutterCupertinoKeepAlive {
-  bool keep_alive = 3;
-  Widget child = 4;
-}
-
-message FlutterCupertinoSliverConstrainedCrossAxis {
-  double max_extent = 3;
-  Widget sliver = 4;
-}
-
-message FlutterCupertinoSliverCrossAxisExpanded {
-  int64 flex = 3;
-  Widget sliver = 4;
-}
-
-message FlutterCupertinoSliverCrossAxisGroup {
-  
-}
-
-message FlutterCupertinoSliverMainAxisGroup {
-  
-}
-
-message FlutterCupertinoSliverFillViewport {
-  double viewport_fraction = 4;
-  bool pad_ends = 5;
-}
-
-message FlutterCupertinoSliverFillRemaining {
-  Widget child = 3;
-  bool has_scroll_body = 4;
-  bool fill_overscroll = 5;
-}
-
-message FlutterCupertinoSliverLayoutBuilder {
-  
-}
-
-message FlutterCupertinoSliverPersistentHeader {
-  bool pinned = 4;
-  bool floating = 5;
-}
-
-message FlutterCupertinoSliverPrototypeExtentList {
-  Widget prototype_item = 4;
-}
-
-message FlutterCupertinoSlottedMultiChildRenderObjectWidget {
-  
-}
-
-message FlutterCupertinoSnapshotWidget {
-  bool autoresize = 5;
-  Widget child = 7;
-}
-
-message FlutterCupertinoSpacer {
-  int64 flex = 3;
-}
-
-message FlutterCupertinoStatusTransitionWidget {
-  
-}
-
-message FlutterCupertinoTable {
-  
-}
-
-message FlutterCupertinoTableCell {
-  Widget child = 4;
-}
-
-message FlutterCupertinoTapRegionSurface {
-  Widget child = 3;
-}
-
-message FlutterCupertinoTapRegion {
-  Widget child = 3;
-  bool enabled = 4;
-  string debug_label = 9;
-}
-
-message FlutterCupertinoTextFieldTapRegion {
-  Widget child = 3;
-  bool enabled = 4;
-  string debug_label = 7;
-}
-
-message FlutterCupertinoDefaultTextStyle {
-  bool soft_wrap = 5;
-  int64 max_lines = 7;
-  Widget child = 10;
-}
-
-message FlutterCupertinoDefaultTextHeightBehavior {
-  Widget child = 4;
-}
-
-message FlutterCupertinoText {
-  string data = 2;
-  bool soft_wrap = 9;
-  double text_scale_factor = 11;
-  int64 max_lines = 12;
-  string semantics_label = 13;
-}
-
-message FlutterCupertinoTextSelectionGestureDetector {
-  Widget child = 19;
-}
-
-message FlutterCupertinoTexture {
-  int64 texture_id = 3;
-  bool freeze = 4;
-}
-
-message FlutterCupertinoTickerMode {
-  bool enabled = 3;
-  Widget child = 4;
-}
-
-message FlutterCupertinoTitle {
-  string title = 3;
-  Widget child = 5;
-}
-
-message FlutterCupertinoAnimatedWidget {
-  
-}
-
-message FlutterCupertinoSlideTransition {
-  bool transform_hit_tests = 4;
-  Widget child = 6;
-}
-
-message FlutterCupertinoScaleTransition {
-  Widget child = 6;
-}
-
-message FlutterCupertinoRotationTransition {
-  Widget child = 6;
-}
-
-message FlutterCupertinoSizeTransition {
-  double axis_alignment = 5;
-  Widget child = 6;
-}
-
-message FlutterCupertinoFadeTransition {
-  bool always_include_semantics = 4;
-  Widget child = 5;
-}
-
-message FlutterCupertinoSliverFadeTransition {
-  bool always_include_semantics = 4;
-  Widget sliver = 5;
-}
-
-message FlutterCupertinoPositionedTransition {
-  Widget child = 4;
-}
-
-message FlutterCupertinoRelativePositionedTransition {
-  Widget child = 5;
-}
-
-message FlutterCupertinoDecoratedBoxTransition {
-  Widget child = 5;
-}
-
-message FlutterCupertinoAlignTransition {
-  Widget child = 4;
-  double width_factor = 5;
-  double height_factor = 6;
-}
-
-message FlutterCupertinoDefaultTextStyleTransition {
-  Widget child = 4;
-  bool soft_wrap = 6;
-  int64 max_lines = 8;
-}
-
-message FlutterCupertinoListenableBuilder {
-  Widget child = 5;
-}
-
-message FlutterCupertinoAnimatedBuilder {
-  Widget child = 5;
-}
-
-message FlutterCupertinoTweenAnimationBuilder {
-  Widget child = 8;
-}
-
-message FlutterCupertinoTwoDimensionalScrollView {
-  bool primary = 3;
-  double cache_extent = 8;
-}
-
-message FlutterCupertinoTwoDimensionalViewport {
-  double cache_extent = 9;
-}
-
-message FlutterCupertinoUndoHistory {
-  Widget child = 8;
-}
-
-message FlutterCupertinoUniqueWidget {
-  
-}
-
-message FlutterCupertinoValueListenableBuilder {
-  Widget child = 5;
-}
-
-message FlutterCupertinoView {
-  Widget child = 3;
-}
-
-message FlutterCupertinoViewport {
-  double anchor = 5;
-  double cache_extent = 8;
-}
-
-message FlutterCupertinoShrinkWrappingViewport {
-  
-}
-
-message FlutterCupertinoVisibility {
-  Widget child = 3;
-  Widget replacement = 4;
-  bool visible = 5;
-  bool maintain_state = 6;
-  bool maintain_animation = 7;
-  bool maintain_size = 8;
-  bool maintain_semantics = 9;
-  bool maintain_interactivity = 10;
-}
-
-message FlutterCupertinoSliverVisibility {
-  Widget sliver = 3;
-  Widget replacement_sliver = 4;
-  bool visible = 5;
-  bool maintain_state = 6;
-  bool maintain_animation = 7;
-  bool maintain_size = 8;
-  bool maintain_semantics = 9;
-  bool maintain_interactivity = 10;
-}
-
-message FlutterCupertinoWidgetInspector {
-  Widget child = 3;
-}
-
-message FlutterCupertinoWillPopScope {
-  Widget child = 3;
-}
-
-message FlutterProjectMainMyApp {
-  
-}
-
-message FlutterProjectMainMyHomePage {
-  string title = 3;
 }
 
 message Widget {
