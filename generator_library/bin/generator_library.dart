@@ -10,6 +10,7 @@ import 'package:analyzer/file_system/physical_file_system.dart';
 import 'package:analyzer/src/util/file_paths.dart' as file_paths;
 import 'package:analyzer/src/workspace/package_build.dart';
 import 'package:generator_library/dart_type_extension.dart';
+import 'package:recase/recase.dart';
 import 'package:yaml/yaml.dart';
 
 // Similar to https://github.com/google/protobuf.dart/tree/master/protoc_plugin,
@@ -37,7 +38,10 @@ Future<void> main(List<String> arguments) async {
     resourceProvider: PhysicalResourceProvider.INSTANCE,
   );
 
+  // TODO annotate fields and types with docs
+  // TODO add warning about file being generated
   // TODO restructure -> generate file from which to generate code
+  // TODO find a better way to generate time stable field numbers (maybe via committed dictionary)
   for (final context in analysis.contexts) {
     final rootFolder = context.contextRoot.root;
     final pubspecFile = rootFolder.getChildAssumingFile(file_paths.pubspecYaml);
@@ -87,31 +91,38 @@ Future<void> main(List<String> arguments) async {
 
         final namespace = libraryElement.exportNamespace;
         for (final classElement in namespace.definedNames.values) {
-          if (classElement is ClassElement) {
+          if (classElement is ClassElement &&
+              classElement.allSupertypes.any((t) => t.isWidget)) {
             // TODO do more than widgets
-            if (classElement.allSupertypes.any((t) => t.isWidget)) {
-              // TODO deal with multiple constructors & factories
-              for (final constructor
-                  in classElement.constructors.sublist(0, 1)) {
-                final parameters = constructor.parameters;
-                var fieldNumber = kProtoFieldStartNumber;
-                final protoFields = [
-                  // TODO element.type.isDartCoreString
-                  ...parameters.where((e) => e.type.isWidget).map(
-                        (e) =>
-                            "${e.type.element!.name} ${e.name} = ${fieldNumber++};",
-                      )
-                ];
-                if (constructor.isPublic && protoFields.isNotEmpty) {
-                  final widgetConstructorName =
-                      "$libraryNamePrefix${classElement.name}";
-                  usedWidgets.add(widgetConstructorName);
-                  widgetsFile.add('''
+            // TODO deal with multiple constructors & factories
+            for (final constructor in classElement.constructors.sublist(0, 1)) {
+              final parameters = constructor.parameters;
+              var fieldNumber = kProtoFieldStartNumber;
+              final protoFields = parameters.map(
+                (parameter) {
+                  final reCaseName = ReCase(parameter.name);
+                  final nameAndNumber =
+                      "${reCaseName.snakeCase} = $fieldNumber;";
+                  fieldNumber++; // for every field, so number stays stable for now
+                  if (parameter.type.isWidget) {
+                    return "Widget $nameAndNumber";
+                  } else if (parameter.type.isDartCoreString) {
+                    return "string $nameAndNumber";
+                  } else {
+                    // TODO element.type.isDartCoreString
+                    return null;
+                  }
+                },
+              ).whereType<String>();
+              if (constructor.isPublic && protoFields.isNotEmpty) {
+                final widgetConstructorName =
+                    "$libraryNamePrefix${classElement.name}";
+                usedWidgets.add(widgetConstructorName);
+                widgetsFile.add('''
 message $widgetConstructorName {
   ${protoFields.join("\n  ")}
 }
 ''');
-                }
               }
             }
           }
@@ -119,8 +130,8 @@ message $widgetConstructorName {
       }
     }
 
-    final widgetParameters = usedWidgets.indexed
-        .map((t) => "${t.$2} w${t.$1} = ${t.$1 + kProtoFieldStartNumber};");
+    final widgetParameters = usedWidgets.indexed.map((t) =>
+        "${t.$2} ${ReCase(t.$2).snakeCase} = ${t.$1 + kProtoFieldStartNumber};");
     widgetsFile.add('''
 message Widget {
   oneof widget {

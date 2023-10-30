@@ -11,6 +11,7 @@ dependencies:
   analyzer:
   flutter:
     sdk: flutter
+  recase:
   yaml:
 
 dev_dependencies:
