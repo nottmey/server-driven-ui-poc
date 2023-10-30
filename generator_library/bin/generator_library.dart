@@ -42,6 +42,8 @@ Future<void> main(List<String> arguments) async {
   // TODO add warning about file being generated
   // TODO restructure -> generate file from which to generate code
   // TODO find a better way to generate time stable field numbers (maybe via committed dictionary)
+  // TODO observe and optimize performance
+  // TODO create watch mode, maybe optimize more with incremental updates
   for (final context in analysis.contexts) {
     final rootFolder = context.contextRoot.root;
     final pubspecFile = rootFolder.getChildAssumingFile(file_paths.pubspecYaml);
@@ -86,8 +88,10 @@ Future<void> main(List<String> arguments) async {
         final libraryPath = libraryElement.librarySource.uri.pathSegments;
         final libraryNamePrefix = [
           ...libraryPath.sublist(0, libraryPath.length - 1),
+          // TODO don't prefix package of internal libraries
+          // TODO don't prefix file name if widget name matches file name
           libraryPath.last.replaceAll(".dart", "")
-        ].map((e) => e.substring(0, 1).toUpperCase() + e.substring(1)).join();
+        ].map((e) => ReCase(e).pascalCase).join();
 
         final namespace = libraryElement.exportNamespace;
         for (final classElement in namespace.definedNames.values) {
@@ -96,31 +100,32 @@ Future<void> main(List<String> arguments) async {
             // TODO do more than widgets
             // TODO deal with multiple constructors & factories
             for (final constructor in classElement.constructors.sublist(0, 1)) {
-              final parameters = constructor.parameters;
-              var fieldNumber = kProtoFieldStartNumber;
-              final protoFields = parameters.map(
-                (parameter) {
-                  final reCaseName = ReCase(parameter.name);
-                  // TODO use `repeated` when appropriate
-                  final nameAndNumber =
-                      "${reCaseName.snakeCase} = $fieldNumber;";
-                  fieldNumber++; // for every field, so number stays stable for now
-                  if (parameter.type.isWidget) {
-                    return "Widget $nameAndNumber";
-                  } else if (parameter.type.isDartCoreString) {
-                    return "string $nameAndNumber";
-                  } else if (parameter.type.isDartCoreBool) {
-                    return "bool $nameAndNumber";
-                  } else if (parameter.type.isDartCoreInt) {
-                    return "int64 $nameAndNumber";
-                  } else if (parameter.type.isDartCoreDouble) {
-                    return "double $nameAndNumber";
-                  } else {
-                    return null;
-                  }
-                },
-              ).whereType<String>();
-              if (constructor.isPublic && protoFields.isNotEmpty) {
+              if (constructor.isPublic) {
+                final parameters = constructor.parameters;
+                var fieldNumber = kProtoFieldStartNumber;
+                final protoFields = parameters.map(
+                  (parameter) {
+                    final reCaseName = ReCase(parameter.name);
+                    // TODO use `repeated` when appropriate
+                    final nameAndNumber =
+                        "${reCaseName.snakeCase} = $fieldNumber;";
+                    fieldNumber++; // for every field, so number stays stable for now
+                    // TODO also allow AST values, e.g. "string or string expression"
+                    if (parameter.type.isWidget) {
+                      return "Widget $nameAndNumber";
+                    } else if (parameter.type.isDartCoreString) {
+                      return "string $nameAndNumber";
+                    } else if (parameter.type.isDartCoreBool) {
+                      return "bool $nameAndNumber";
+                    } else if (parameter.type.isDartCoreInt) {
+                      return "int64 $nameAndNumber";
+                    } else if (parameter.type.isDartCoreDouble) {
+                      return "double $nameAndNumber";
+                    } else {
+                      return null;
+                    }
+                  },
+                ).whereType<String>();
                 final widgetConstructorName =
                     "$libraryNamePrefix${classElement.name}";
                 usedWidgets.add(widgetConstructorName);
