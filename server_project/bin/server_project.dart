@@ -1,26 +1,9 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:grpc/grpc.dart';
 import 'package:proto_package/proto/service.pbgrpc.dart';
 import 'package:proto_package/proto/widgets.pb.dart';
-
-class ExperienceProviderService extends ExperienceProviderServiceBase {
-  @override
-  Future<ExperienceResponse> requestExperience(
-    ServiceCall call,
-    ExperienceRequest request,
-  ) async {
-    print('Responding with example data for experience: ${request.name}');
-    return ExperienceResponse(
-      start: Experience(
-        widget: WidgetExpression(
-          flutterMaterialText:
-              FlutterMaterialText(data: "Hello ${request.name}!"),
-        ),
-      ),
-    );
-  }
-}
 
 Future<void> main(List<String> args) async {
   final server = Server.create(
@@ -32,4 +15,59 @@ Future<void> main(List<String> args) async {
     port: 8888,
   );
   print('Server listening on port ${server.port}...');
+}
+
+class ExperienceProviderService extends ExperienceProviderServiceBase {
+  ExperienceResponse exampleData(ExperienceRequest request, [int? tick]) {
+    return ExperienceResponse(
+      start: Experience(
+        widget: WidgetExpression(
+          flutterMaterialText: FlutterMaterialText(
+            data:
+                "Hello ${request.name + (tick != null ? " at tick $tick" : "")}!",
+          ),
+        ),
+      ),
+    );
+  }
+
+  @override
+  Future<ExperienceResponse> requestExperience(
+    ServiceCall call,
+    ExperienceRequest request,
+  ) async {
+    print('Responding with example data for experience: ${request.name}');
+    return exampleData(request);
+  }
+
+  @override
+  Stream<ExperienceResponse> subscribeExperience(
+    ServiceCall call,
+    ExperienceRequest request,
+  ) {
+    // just an example how to send updates to clients (useful in dev as hot reloading feature)
+    Timer? timer;
+    StreamController<ExperienceResponse>? controller;
+
+    final start = () {
+      timer = Timer.periodic(
+        Duration(seconds: 1),
+        (timer) {
+          print(
+            'Sending example data for experience: ${request.name} at tick ${timer.tick}',
+          );
+          controller?.add(exampleData(request, timer.tick));
+        },
+      );
+    };
+    final cancel = () => timer?.cancel();
+
+    controller = StreamController(
+      onListen: start,
+      onPause: cancel,
+      onResume: start,
+      onCancel: cancel,
+    );
+    return controller.stream;
+  }
 }

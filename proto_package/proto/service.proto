@@ -4,6 +4,7 @@ import "widgets.proto";
 
 service ExperienceProvider {
   rpc RequestExperience (ExperienceRequest) returns (ExperienceResponse) {}
+  rpc SubscribeExperience (ExperienceRequest) returns (stream ExperienceResponse) {}
 }
 
 message ExperienceRequest {

@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:grpc/grpc.dart' as grpc;
 import 'package:proto_package/builder/proto_ui_builder.dart';
@@ -17,6 +19,9 @@ class ServerDrivenUi extends StatefulWidget {
 class _ServerDrivenUiState extends State<ServerDrivenUi> {
   late final grpc.ClientChannel channel;
   late final service.ExperienceProviderClient client;
+  late StreamSubscription<service.ExperienceResponse> subscription;
+
+  Timer? reconnectTimer;
 
   AsyncSnapshot<proto.WidgetExpression> snapshot = AsyncSnapshot.waiting();
 
@@ -32,13 +37,17 @@ class _ServerDrivenUiState extends State<ServerDrivenUi> {
       ),
     );
     client = service.ExperienceProviderClient(channel);
-    triggerInitialRequest();
+    startSubscription();
   }
 
-  Future<void> triggerInitialRequest() async {
-    final response = await client.requestExperience(
-      service.ExperienceRequest(name: widget.experienceName),
-    );
+  void startSubscription() {
+    final request = service.ExperienceRequest(name: widget.experienceName);
+    subscription = client
+        .subscribeExperience(request)
+        .listen(onData, onError: onError, cancelOnError: true);
+  }
+
+  void onData(service.ExperienceResponse response) {
     if (mounted) {
       setState(() {
         snapshot = AsyncSnapshot.withData(
@@ -49,8 +58,16 @@ class _ServerDrivenUiState extends State<ServerDrivenUi> {
     }
   }
 
+  void onError(Object error) {
+    // subscription cancelled because of error, retrying connection,
+    // which may error and call this method again (which completes the loop)
+    reconnectTimer = Timer(Duration(seconds: 1), startSubscription);
+  }
+
   @override
   void dispose() {
+    reconnectTimer?.cancel();
+    subscription.cancel();
     channel.shutdown();
     super.dispose();
   }

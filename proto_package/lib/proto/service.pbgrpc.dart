@@ -25,6 +25,10 @@ class ExperienceProviderClient extends $grpc.Client {
       '/ExperienceProvider/RequestExperience',
       ($0.ExperienceRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) => $0.ExperienceResponse.fromBuffer(value));
+  static final _$subscribeExperience = $grpc.ClientMethod<$0.ExperienceRequest, $0.ExperienceResponse>(
+      '/ExperienceProvider/SubscribeExperience',
+      ($0.ExperienceRequest value) => value.writeToBuffer(),
+      ($core.List<$core.int> value) => $0.ExperienceResponse.fromBuffer(value));
 
   ExperienceProviderClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -34,6 +38,10 @@ class ExperienceProviderClient extends $grpc.Client {
 
   $grpc.ResponseFuture<$0.ExperienceResponse> requestExperience($0.ExperienceRequest request, {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$requestExperience, request, options: options);
+  }
+
+  $grpc.ResponseStream<$0.ExperienceResponse> subscribeExperience($0.ExperienceRequest request, {$grpc.CallOptions? options}) {
+    return $createStreamingCall(_$subscribeExperience, $async.Stream.fromIterable([request]), options: options);
   }
 }
 
@@ -49,11 +57,23 @@ abstract class ExperienceProviderServiceBase extends $grpc.Service {
         false,
         ($core.List<$core.int> value) => $0.ExperienceRequest.fromBuffer(value),
         ($0.ExperienceResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$0.ExperienceRequest, $0.ExperienceResponse>(
+        'SubscribeExperience',
+        subscribeExperience_Pre,
+        false,
+        true,
+        ($core.List<$core.int> value) => $0.ExperienceRequest.fromBuffer(value),
+        ($0.ExperienceResponse value) => value.writeToBuffer()));
   }
 
   $async.Future<$0.ExperienceResponse> requestExperience_Pre($grpc.ServiceCall call, $async.Future<$0.ExperienceRequest> request) async {
     return requestExperience(call, await request);
   }
 
+  $async.Stream<$0.ExperienceResponse> subscribeExperience_Pre($grpc.ServiceCall call, $async.Future<$0.ExperienceRequest> request) async* {
+    yield* subscribeExperience(call, await request);
+  }
+
   $async.Future<$0.ExperienceResponse> requestExperience($grpc.ServiceCall call, $0.ExperienceRequest request);
+  $async.Stream<$0.ExperienceResponse> subscribeExperience($grpc.ServiceCall call, $0.ExperienceRequest request);
 }
