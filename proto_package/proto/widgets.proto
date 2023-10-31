@@ -19,7 +19,7 @@ message FlutterCupertinoCupertinoActivityIndicatorNamedPartiallyRevealed {
 }
 
 message FlutterCupertinoCupertinoAdaptiveTextSelectionToolbar {
-  repeated Widget children = 3;
+  repeated WidgetExpression children = 3;
 }
 
 message FlutterCupertinoCupertinoAdaptiveTextSelectionToolbarNamedButtonItems {
@@ -39,7 +39,7 @@ message FlutterCupertinoCupertinoAdaptiveTextSelectionToolbarNamedSelectable {
 }
 
 message FlutterCupertinoCupertinoApp {
-  Widget home = 4;
+  WidgetExpression home = 4;
   string initial_route = 7;
   string title = 13;
   bool show_performance_overlay = 21;
@@ -69,13 +69,13 @@ message FlutterCupertinoCupertinoTabBar {
 }
 
 message FlutterCupertinoCupertinoButton {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double min_size = 7;
   double pressed_opacity = 8;
 }
 
 message FlutterCupertinoCupertinoButtonNamedFilled {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double min_size = 6;
   double pressed_opacity = 7;
 }
@@ -87,18 +87,18 @@ message FlutterCupertinoCupertinoCheckbox {
 }
 
 message FlutterCupertinoCupertinoContextMenu {
-  repeated Widget actions = 3;
-  Widget child = 4;
+  repeated WidgetExpression actions = 3;
+  WidgetExpression child = 4;
   bool enable_haptic_feedback = 5;
 }
 
 message FlutterCupertinoCupertinoContextMenuNamedBuilder {
-  repeated Widget actions = 3;
+  repeated WidgetExpression actions = 3;
   bool enable_haptic_feedback = 5;
 }
 
 message FlutterCupertinoCupertinoContextMenuAction {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool is_default_action = 4;
   bool is_destructive_action = 5;
 }
@@ -119,11 +119,11 @@ message FlutterCupertinoCupertinoTimerPicker {
 }
 
 message FlutterCupertinoCupertinoDesktopTextSelectionToolbar {
-  repeated Widget children = 4;
+  repeated WidgetExpression children = 4;
 }
 
 message FlutterCupertinoCupertinoDesktopTextSelectionToolbarButton {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoCupertinoDesktopTextSelectionToolbarButtonNamedText {
@@ -135,62 +135,62 @@ message FlutterCupertinoCupertinoDesktopTextSelectionToolbarButtonNamedButtonIte
 }
 
 message FlutterCupertinoCupertinoAlertDialog {
-  Widget title = 3;
-  Widget content = 4;
-  repeated Widget actions = 5;
+  WidgetExpression title = 3;
+  WidgetExpression content = 4;
+  repeated WidgetExpression actions = 5;
 }
 
 message FlutterCupertinoCupertinoPopupSurface {
   bool is_surface_painted = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoCupertinoActionSheet {
-  Widget title = 3;
-  Widget message = 4;
-  repeated Widget actions = 5;
-  Widget cancel_button = 8;
+  WidgetExpression title = 3;
+  WidgetExpression message = 4;
+  repeated WidgetExpression actions = 5;
+  WidgetExpression cancel_button = 8;
 }
 
 message FlutterCupertinoCupertinoActionSheetAction {
   bool is_default_action = 4;
   bool is_destructive_action = 5;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoCupertinoDialogAction {
   bool is_default_action = 4;
   bool is_destructive_action = 5;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterCupertinoCupertinoFormRow {
-  Widget child = 3;
-  Widget prefix = 4;
-  Widget helper = 6;
-  Widget error = 7;
+  WidgetExpression child = 3;
+  WidgetExpression prefix = 4;
+  WidgetExpression helper = 6;
+  WidgetExpression error = 7;
 }
 
 message FlutterCupertinoCupertinoFormSection {
-  repeated Widget children = 3;
-  Widget header = 4;
-  Widget footer = 5;
+  repeated WidgetExpression children = 3;
+  WidgetExpression header = 4;
+  WidgetExpression footer = 5;
 }
 
 message FlutterCupertinoCupertinoFormSectionNamedInsetGrouped {
-  repeated Widget children = 3;
-  Widget header = 4;
-  Widget footer = 5;
+  repeated WidgetExpression children = 3;
+  WidgetExpression header = 4;
+  WidgetExpression footer = 5;
 }
 
 message FlutterCupertinoCupertinoUserInterfaceLevel {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoCupertinoListSection {
-  repeated Widget children = 3;
-  Widget header = 4;
-  Widget footer = 5;
+  repeated WidgetExpression children = 3;
+  WidgetExpression header = 4;
+  WidgetExpression footer = 5;
   double divider_margin = 10;
   double additional_divider_margin = 11;
   double top_margin = 12;
@@ -198,9 +198,9 @@ message FlutterCupertinoCupertinoListSection {
 }
 
 message FlutterCupertinoCupertinoListSectionNamedInsetGrouped {
-  repeated Widget children = 3;
-  Widget header = 4;
-  Widget footer = 5;
+  repeated WidgetExpression children = 3;
+  WidgetExpression header = 4;
+  WidgetExpression footer = 5;
   double divider_margin = 10;
   double additional_divider_margin = 11;
   double top_margin = 12;
@@ -208,21 +208,21 @@ message FlutterCupertinoCupertinoListSectionNamedInsetGrouped {
 }
 
 message FlutterCupertinoCupertinoListTile {
-  Widget title = 3;
-  Widget subtitle = 4;
-  Widget additional_info = 5;
-  Widget leading = 6;
-  Widget trailing = 7;
+  WidgetExpression title = 3;
+  WidgetExpression subtitle = 4;
+  WidgetExpression additional_info = 5;
+  WidgetExpression leading = 6;
+  WidgetExpression trailing = 7;
   double leading_size = 12;
   double leading_to_title = 13;
 }
 
 message FlutterCupertinoCupertinoListTileNamedNotched {
-  Widget title = 3;
-  Widget subtitle = 4;
-  Widget additional_info = 5;
-  Widget leading = 6;
-  Widget trailing = 7;
+  WidgetExpression title = 3;
+  WidgetExpression subtitle = 4;
+  WidgetExpression additional_info = 5;
+  WidgetExpression leading = 6;
+  WidgetExpression trailing = 7;
   double leading_size = 12;
   double leading_to_title = 13;
 }
@@ -242,24 +242,24 @@ message FlutterCupertinoCupertinoMagnifier {
 }
 
 message FlutterCupertinoCupertinoNavigationBar {
-  Widget leading = 3;
+  WidgetExpression leading = 3;
   bool automatically_imply_leading = 4;
   bool automatically_imply_middle = 5;
   string previous_page_title = 6;
-  Widget middle = 7;
-  Widget trailing = 8;
+  WidgetExpression middle = 7;
+  WidgetExpression trailing = 8;
   bool transition_between_routes = 13;
 }
 
 message FlutterCupertinoCupertinoSliverNavigationBar {
-  Widget large_title = 3;
-  Widget leading = 4;
+  WidgetExpression large_title = 3;
+  WidgetExpression leading = 4;
   bool automatically_imply_leading = 5;
   bool automatically_imply_title = 6;
   bool always_show_middle = 7;
   string previous_page_title = 8;
-  Widget middle = 9;
-  Widget trailing = 10;
+  WidgetExpression middle = 9;
+  WidgetExpression trailing = 10;
   bool transition_between_routes = 15;
   bool stretch = 17;
 }
@@ -270,7 +270,7 @@ message FlutterCupertinoCupertinoNavigationBarBackButton {
 
 message FlutterCupertinoCupertinoPageScaffold {
   bool resize_to_avoid_bottom_inset = 5;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoObstructingPreferredSizeWidget {
@@ -284,8 +284,8 @@ message FlutterCupertinoCupertinoPicker {
   double magnification = 7;
   double squeeze = 9;
   double item_extent = 10;
-  repeated Widget children = 12;
-  Widget selection_overlay = 13;
+  repeated WidgetExpression children = 12;
+  WidgetExpression selection_overlay = 13;
   bool looping = 14;
 }
 
@@ -297,7 +297,7 @@ message FlutterCupertinoCupertinoPickerNamedBuilder {
   double squeeze = 9;
   double item_extent = 10;
   int64 child_count = 13;
-  Widget selection_overlay = 14;
+  WidgetExpression selection_overlay = 14;
 }
 
 message FlutterCupertinoCupertinoPickerDefaultSelectionOverlay {
@@ -317,17 +317,17 @@ message FlutterCupertinoCupertinoSliverRefreshControl {
 }
 
 message FlutterCupertinoCupertinoPageTransition {
-  Widget child = 5;
+  WidgetExpression child = 5;
   bool linear_transition = 6;
 }
 
 message FlutterCupertinoCupertinoFullscreenDialogTransition {
-  Widget child = 5;
+  WidgetExpression child = 5;
   bool linear_transition = 6;
 }
 
 message FlutterCupertinoCupertinoScrollbar {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool thumb_visibility = 5;
   double thickness = 6;
   double thickness_while_dragging = 7;
@@ -336,7 +336,7 @@ message FlutterCupertinoCupertinoScrollbar {
 message FlutterCupertinoCupertinoSearchTextField {
   string placeholder = 7;
   double item_size = 15;
-  Widget prefix_icon = 17;
+  WidgetExpression prefix_icon = 17;
   string restoration_id = 22;
   bool enable_i_m_e_personalized_learning = 26;
   bool autofocus = 27;
@@ -385,8 +385,8 @@ message FlutterCupertinoCupertinoTabView {
 
 message FlutterCupertinoCupertinoTextField {
   string placeholder = 8;
-  Widget prefix = 10;
-  Widget suffix = 12;
+  WidgetExpression prefix = 10;
+  WidgetExpression suffix = 12;
   bool read_only = 23;
   bool show_cursor = 25;
   bool autofocus = 26;
@@ -411,8 +411,8 @@ message FlutterCupertinoCupertinoTextField {
 
 message FlutterCupertinoCupertinoTextFieldNamedBorderless {
   string placeholder = 8;
-  Widget prefix = 10;
-  Widget suffix = 12;
+  WidgetExpression prefix = 10;
+  WidgetExpression suffix = 12;
   bool read_only = 23;
   bool show_cursor = 25;
   bool autofocus = 26;
@@ -436,7 +436,7 @@ message FlutterCupertinoCupertinoTextFieldNamedBorderless {
 }
 
 message FlutterCupertinoCupertinoTextFormFieldRow {
-  Widget prefix = 3;
+  WidgetExpression prefix = 3;
   string initial_value = 6;
   bool autofocus = 17;
   bool read_only = 18;
@@ -458,11 +458,11 @@ message FlutterCupertinoCupertinoTextFormFieldRow {
 }
 
 message FlutterCupertinoCupertinoTextSelectionToolbar {
-  repeated Widget children = 5;
+  repeated WidgetExpression children = 5;
 }
 
 message FlutterCupertinoCupertinoTextSelectionToolbarButton {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoCupertinoTextSelectionToolbarButtonNamedText {
@@ -474,15 +474,15 @@ message FlutterCupertinoCupertinoTextSelectionToolbarButtonNamedButtonItem {
 }
 
 message FlutterCupertinoCupertinoTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoActionListener {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoActions {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoFocusableActionDetector {
@@ -491,12 +491,12 @@ message FlutterCupertinoFocusableActionDetector {
   bool descendants_are_focusable = 6;
   bool descendants_are_traversable = 7;
   bool include_focus_semantics = 14;
-  Widget child = 15;
+  WidgetExpression child = 15;
 }
 
 message FlutterCupertinoAnimatedCrossFade {
-  Widget first_child = 3;
-  Widget second_child = 4;
+  WidgetExpression first_child = 3;
+  WidgetExpression second_child = 4;
   bool exclude_bottom_focus = 13;
 }
 
@@ -522,21 +522,21 @@ message FlutterCupertinoSliverAnimatedGrid {
 }
 
 message FlutterCupertinoAnimatedSize {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoAnimatedSwitcher {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoAnnotatedRegion {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool sized = 5;
 }
 
 message FlutterCupertinoWidgetsApp {
   string initial_route = 8;
-  Widget home = 10;
+  WidgetExpression home = 10;
   string title = 13;
   bool show_performance_overlay = 22;
   bool checkerboard_raster_cache_images = 23;
@@ -577,90 +577,90 @@ message FlutterCupertinoRawAutocomplete {
 }
 
 message FlutterCupertinoAutocompleteHighlightedOption {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoAutofillGroup {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoAutomaticKeepAlive {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoBanner {
-  Widget child = 3;
+  WidgetExpression child = 3;
   string message = 4;
 }
 
 message FlutterCupertinoCheckedModeBanner {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoDirectionality {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoOpacity {
   double opacity = 3;
   bool always_include_semantics = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoShaderMask {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoBackdropFilter {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoCustomPaint {
   bool is_complex = 6;
   bool will_change = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterCupertinoClipRect {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoClipRRect {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoClipOval {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoClipPath {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoPhysicalModel {
   double elevation = 6;
-  Widget child = 9;
+  WidgetExpression child = 9;
 }
 
 message FlutterCupertinoPhysicalShape {
   double elevation = 5;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterCupertinoTransform {
   bool transform_hit_tests = 6;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterCupertinoTransformNamedRotate {
   double angle = 3;
   bool transform_hit_tests = 6;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterCupertinoTransformNamedTranslate {
   bool transform_hit_tests = 4;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoTransformNamedScale {
@@ -668,113 +668,113 @@ message FlutterCupertinoTransformNamedScale {
   double scale_x = 4;
   double scale_y = 5;
   bool transform_hit_tests = 8;
-  Widget child = 10;
+  WidgetExpression child = 10;
 }
 
 message FlutterCupertinoTransformNamedFlip {
   bool flip_x = 3;
   bool flip_y = 4;
   bool transform_hit_tests = 6;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterCupertinoCompositedTransformTarget {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoCompositedTransformFollower {
   bool show_when_unlinked = 4;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterCupertinoFittedBox {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoFractionalTranslation {
   bool transform_hit_tests = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoRotatedBox {
   int64 quarter_turns = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoPadding {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoAlign {
   double width_factor = 4;
   double height_factor = 5;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoCenter {
   double width_factor = 3;
   double height_factor = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoCustomSingleChildLayout {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoLayoutId {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoCustomMultiChildLayout {
-  repeated Widget children = 4;
+  repeated WidgetExpression children = 4;
 }
 
 message FlutterCupertinoSizedBox {
   double width = 3;
   double height = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoSizedBoxNamedExpand {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoSizedBoxNamedShrink {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoSizedBoxNamedFromSize {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoSizedBoxNamedSquare {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double dimension = 4;
 }
 
 message FlutterCupertinoConstrainedBox {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoConstraintsTransformBox {
-  Widget child = 3;
+  WidgetExpression child = 3;
   string debug_transform_type = 8;
 }
 
 message FlutterCupertinoUnconstrainedBox {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoFractionallySizedBox {
   double width_factor = 4;
   double height_factor = 5;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoLimitedBox {
   double max_width = 3;
   double max_height = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoOverflowBox {
@@ -782,58 +782,58 @@ message FlutterCupertinoOverflowBox {
   double max_width = 5;
   double min_height = 6;
   double max_height = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterCupertinoSizedOverflowBox {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoOffstage {
   bool offstage = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoAspectRatio {
   double aspect_ratio = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoIntrinsicWidth {
   double step_width = 3;
   double step_height = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoIntrinsicHeight {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoBaseline {
   double baseline = 3;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoSliverToBoxAdapter {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoSliverPadding {
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterCupertinoListBody {
   bool reverse = 4;
-  repeated Widget children = 5;
+  repeated WidgetExpression children = 5;
 }
 
 message FlutterCupertinoStack {
-  repeated Widget children = 7;
+  repeated WidgetExpression children = 7;
 }
 
 message FlutterCupertinoIndexedStack {
   int64 index = 7;
-  repeated Widget children = 8;
+  repeated WidgetExpression children = 8;
 }
 
 message FlutterCupertinoPositioned {
@@ -843,15 +843,15 @@ message FlutterCupertinoPositioned {
   double bottom = 6;
   double width = 7;
   double height = 8;
-  Widget child = 9;
+  WidgetExpression child = 9;
 }
 
 message FlutterCupertinoPositionedNamedFromRect {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoPositionedNamedFromRelativeRect {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoPositionedNamedFill {
@@ -859,7 +859,7 @@ message FlutterCupertinoPositionedNamedFill {
   double top = 4;
   double right = 5;
   double bottom = 6;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterCupertinoPositionedNamedDirectional {
@@ -869,7 +869,7 @@ message FlutterCupertinoPositionedNamedDirectional {
   double bottom = 7;
   double width = 8;
   double height = 9;
-  Widget child = 10;
+  WidgetExpression child = 10;
 }
 
 message FlutterCupertinoPositionedDirectional {
@@ -879,43 +879,43 @@ message FlutterCupertinoPositionedDirectional {
   double bottom = 6;
   double width = 7;
   double height = 8;
-  Widget child = 9;
+  WidgetExpression child = 9;
 }
 
 message FlutterCupertinoFlex {
-  repeated Widget children = 11;
+  repeated WidgetExpression children = 11;
 }
 
 message FlutterCupertinoRow {
-  repeated Widget children = 9;
+  repeated WidgetExpression children = 9;
 }
 
 message FlutterCupertinoColumn {
-  repeated Widget children = 9;
+  repeated WidgetExpression children = 9;
 }
 
 message FlutterCupertinoFlexible {
   int64 flex = 3;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoExpanded {
   int64 flex = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoWrap {
   double spacing = 5;
   double run_spacing = 7;
-  repeated Widget children = 12;
+  repeated WidgetExpression children = 12;
 }
 
 message FlutterCupertinoFlow {
-  repeated Widget children = 4;
+  repeated WidgetExpression children = 4;
 }
 
 message FlutterCupertinoFlowNamedUnwrapped {
-  repeated Widget children = 4;
+  repeated WidgetExpression children = 4;
 }
 
 message FlutterCupertinoRichText {
@@ -935,7 +935,7 @@ message FlutterCupertinoRawImage {
 }
 
 message FlutterCupertinoDefaultAssetBundle {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoWidgetToRenderBoxAdapter {
@@ -943,41 +943,41 @@ message FlutterCupertinoWidgetToRenderBoxAdapter {
 }
 
 message FlutterCupertinoListener {
-  Widget child = 13;
+  WidgetExpression child = 13;
 }
 
 message FlutterCupertinoMouseRegion {
   bool opaque = 7;
-  Widget child = 9;
+  WidgetExpression child = 9;
 }
 
 message FlutterCupertinoRepaintBoundary {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoRepaintBoundaryNamedWrap {
-  Widget child = 2;
+  WidgetExpression child = 2;
   int64 child_index = 3;
 }
 
 message FlutterCupertinoIgnorePointer {
   bool ignoring = 3;
   bool ignoring_semantics = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoAbsorbPointer {
   bool absorbing = 3;
   bool ignoring_semantics = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoMetaData {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoSemantics {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool container = 4;
   bool explicit_child_nodes = 5;
   bool exclude_semantics = 6;
@@ -1017,7 +1017,7 @@ message FlutterCupertinoSemantics {
 }
 
 message FlutterCupertinoSemanticsNamedFromProperties {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool container = 4;
   bool explicit_child_nodes = 5;
   bool exclude_semantics = 6;
@@ -1025,30 +1025,30 @@ message FlutterCupertinoSemanticsNamedFromProperties {
 }
 
 message FlutterCupertinoMergeSemantics {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoBlockSemantics {
   bool blocking = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoExcludeSemantics {
   bool excluding = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoIndexedSemantics {
   int64 index = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoKeyedSubtree {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoKeyedSubtreeNamedWrap {
-  Widget child = 2;
+  WidgetExpression child = 2;
   int64 child_index = 3;
 }
 
@@ -1061,34 +1061,34 @@ message FlutterCupertinoStatefulBuilder {
 }
 
 message FlutterCupertinoColoredBox {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoRenderObjectToWidgetAdapter {
-  Widget child = 2;
+  WidgetExpression child = 2;
   string debug_short_description = 4;
 }
 
 message FlutterCupertinoColorFiltered {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoDecoratedBox {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoContainer {
   double width = 8;
   double height = 9;
-  Widget child = 14;
+  WidgetExpression child = 14;
 }
 
 message FlutterCupertinoDecoratedSliver {
-  Widget sliver = 5;
+  WidgetExpression sliver = 5;
 }
 
 message FlutterCupertinoDefaultSelectionStyle {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoDefaultSelectionStyleNamedFallback {
@@ -1096,24 +1096,24 @@ message FlutterCupertinoDefaultSelectionStyleNamedFallback {
 }
 
 message FlutterCupertinoDefaultTextEditingShortcuts {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoDismissible {
-  Widget child = 3;
-  Widget background = 4;
-  Widget secondary_background = 5;
+  WidgetExpression child = 3;
+  WidgetExpression background = 4;
+  WidgetExpression secondary_background = 5;
   double cross_axis_end_offset = 14;
 }
 
 message FlutterCupertinoDisplayFeatureSubScreen {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoDraggable {
-  Widget child = 3;
-  Widget feedback = 4;
-  Widget child_when_dragging = 7;
+  WidgetExpression child = 3;
+  WidgetExpression feedback = 4;
+  WidgetExpression child_when_dragging = 7;
   int64 max_simultaneous_drags = 11;
   bool ignoring_feedback_semantics = 17;
   bool ignoring_feedback_pointer = 18;
@@ -1121,9 +1121,9 @@ message FlutterCupertinoDraggable {
 }
 
 message FlutterCupertinoLongPressDraggable {
-  Widget child = 3;
-  Widget feedback = 4;
-  Widget child_when_dragging = 7;
+  WidgetExpression child = 3;
+  WidgetExpression feedback = 4;
+  WidgetExpression child_when_dragging = 7;
   int64 max_simultaneous_drags = 10;
   bool haptic_feedback_on_start = 16;
   bool ignoring_feedback_semantics = 17;
@@ -1145,11 +1145,11 @@ message FlutterCupertinoDraggableScrollableSheet {
 }
 
 message FlutterCupertinoDraggableScrollableActuator {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoDualTransitionBuilder {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoEditableText {
@@ -1218,7 +1218,7 @@ message FlutterCupertinoFadeInImageNamedAssetNetwork {
 }
 
 message FlutterCupertinoFocus {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool autofocus = 6;
   bool can_request_focus = 10;
   bool skip_traversal = 11;
@@ -1229,13 +1229,13 @@ message FlutterCupertinoFocus {
 }
 
 message FlutterCupertinoFocusNamedWithExternalFocusNode {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool autofocus = 6;
   bool include_semantics = 8;
 }
 
 message FlutterCupertinoFocusScope {
-  Widget child = 5;
+  WidgetExpression child = 5;
   bool autofocus = 6;
   bool can_request_focus = 8;
   bool skip_traversal = 9;
@@ -1243,32 +1243,32 @@ message FlutterCupertinoFocusScope {
 }
 
 message FlutterCupertinoFocusScopeNamedWithExternalFocusNode {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool autofocus = 6;
 }
 
 message FlutterCupertinoExcludeFocus {
   bool excluding = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoFocusTraversalOrder {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoFocusTraversalGroup {
   bool descendants_are_focusable = 4;
   bool descendants_are_traversable = 5;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoExcludeFocusTraversal {
   bool excluding = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoForm {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoFormField {
@@ -1285,15 +1285,15 @@ message FlutterCupertinoStatefulWidget {
 }
 
 message FlutterCupertinoProxyWidget {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoParentDataWidget {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoInheritedWidget {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoRenderObjectWidget {
@@ -1305,11 +1305,11 @@ message FlutterCupertinoLeafRenderObjectWidget {
 }
 
 message FlutterCupertinoSingleChildRenderObjectWidget {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoMultiChildRenderObjectWidget {
-  repeated Widget children = 3;
+  repeated WidgetExpression children = 3;
 }
 
 message FlutterCupertinoErrorWidget {
@@ -1321,13 +1321,13 @@ message FlutterCupertinoErrorWidgetNamedWithDetails {
 }
 
 message FlutterCupertinoGestureDetector {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool exclude_from_semantics = 62;
   bool trackpad_scroll_causes_scale = 64;
 }
 
 message FlutterCupertinoRawGestureDetector {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool exclude_from_semantics = 6;
 }
 
@@ -1335,16 +1335,16 @@ message FlutterCupertinoGridPaper {
   double interval = 4;
   int64 divisions = 5;
   int64 subdivisions = 6;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterCupertinoHero {
   bool transition_on_user_gestures = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterCupertinoHeroMode {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool enabled = 4;
 }
 
@@ -1358,7 +1358,7 @@ message FlutterCupertinoIcon {
 }
 
 message FlutterCupertinoIconTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoImage {
@@ -1427,7 +1427,7 @@ message FlutterCupertinoImageNamedMemory {
 }
 
 message FlutterCupertinoImageFiltered {
-  Widget child = 4;
+  WidgetExpression child = 4;
   bool enabled = 5;
 }
 
@@ -1443,21 +1443,21 @@ message FlutterCupertinoImplicitlyAnimatedWidget {
 message FlutterCupertinoAnimatedContainer {
   double width = 8;
   double height = 9;
-  Widget child = 14;
+  WidgetExpression child = 14;
 }
 
 message FlutterCupertinoAnimatedPadding {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoAnimatedAlign {
-  Widget child = 4;
+  WidgetExpression child = 4;
   double height_factor = 5;
   double width_factor = 6;
 }
 
 message FlutterCupertinoAnimatedPositioned {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double left = 4;
   double top = 5;
   double right = 6;
@@ -1467,11 +1467,11 @@ message FlutterCupertinoAnimatedPositioned {
 }
 
 message FlutterCupertinoAnimatedPositionedNamedFromRect {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoAnimatedPositionedDirectional {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double start = 4;
   double top = 5;
   double end = 6;
@@ -1481,60 +1481,60 @@ message FlutterCupertinoAnimatedPositionedDirectional {
 }
 
 message FlutterCupertinoAnimatedScale {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double scale = 4;
 }
 
 message FlutterCupertinoAnimatedRotation {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double turns = 4;
 }
 
 message FlutterCupertinoAnimatedSlide {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoAnimatedOpacity {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double opacity = 4;
   bool always_include_semantics = 8;
 }
 
 message FlutterCupertinoSliverAnimatedOpacity {
-  Widget sliver = 3;
+  WidgetExpression sliver = 3;
   double opacity = 4;
   bool always_include_semantics = 8;
 }
 
 message FlutterCupertinoAnimatedDefaultTextStyle {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool soft_wrap = 6;
   int64 max_lines = 8;
 }
 
 message FlutterCupertinoAnimatedPhysicalModel {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double elevation = 7;
   bool animate_color = 9;
   bool animate_shadow_color = 11;
 }
 
 message FlutterCupertinoAnimatedFractionallySizedBox {
-  Widget child = 4;
+  WidgetExpression child = 4;
   double height_factor = 5;
   double width_factor = 6;
 }
 
 message FlutterCupertinoInheritedModel {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoInheritedNotifier {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoInheritedTheme {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoInteractiveViewer {
@@ -1547,7 +1547,7 @@ message FlutterCupertinoInteractiveViewer {
   bool scale_enabled = 15;
   double scale_factor = 16;
   bool trackpad_scroll_causes_scale = 19;
-  Widget child = 20;
+  WidgetExpression child = 20;
 }
 
 message FlutterCupertinoInteractiveViewerNamedBuilder {
@@ -1564,7 +1564,7 @@ message FlutterCupertinoInteractiveViewerNamedBuilder {
 message FlutterCupertinoKeyboardListener {
   bool autofocus = 4;
   bool include_semantics = 5;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterCupertinoConstrainedLayoutBuilder {
@@ -1586,7 +1586,7 @@ message FlutterCupertinoListWheelScrollView {
   double squeeze = 12;
   bool render_children_outside_viewport = 14;
   string restoration_id = 16;
-  repeated Widget children = 18;
+  repeated WidgetExpression children = 18;
 }
 
 message FlutterCupertinoListWheelScrollViewNamedUseDelegate {
@@ -1615,24 +1615,24 @@ message FlutterCupertinoListWheelViewport {
 }
 
 message FlutterCupertinoLocalizations {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoLocalizationsNamedOverride {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoLookupBoundary {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoRawMagnifier {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double magnification_scale = 6;
 }
 
 message FlutterCupertinoMediaQuery {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoMediaQueryNamedRemovePadding {
@@ -1640,7 +1640,7 @@ message FlutterCupertinoMediaQueryNamedRemovePadding {
   bool remove_top = 5;
   bool remove_right = 6;
   bool remove_bottom = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterCupertinoMediaQueryNamedRemoveViewInsets {
@@ -1648,7 +1648,7 @@ message FlutterCupertinoMediaQueryNamedRemoveViewInsets {
   bool remove_top = 5;
   bool remove_right = 6;
   bool remove_bottom = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterCupertinoMediaQueryNamedRemoveViewPadding {
@@ -1656,7 +1656,7 @@ message FlutterCupertinoMediaQueryNamedRemoveViewPadding {
   bool remove_top = 5;
   bool remove_right = 6;
   bool remove_bottom = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterCupertinoModalBarrier {
@@ -1674,19 +1674,19 @@ message FlutterCupertinoAnimatedModalBarrier {
 }
 
 message FlutterCupertinoNavigationToolbar {
-  Widget leading = 3;
-  Widget middle = 4;
-  Widget trailing = 5;
+  WidgetExpression leading = 3;
+  WidgetExpression middle = 4;
+  WidgetExpression trailing = 5;
   bool center_middle = 6;
   double middle_spacing = 7;
 }
 
 message FlutterCupertinoHeroControllerScope {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoHeroControllerScopeNamedNone {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoNavigator {
@@ -1698,26 +1698,26 @@ message FlutterCupertinoNavigator {
 
 message FlutterCupertinoNestedScrollView {
   bool reverse = 5;
-  Widget body = 8;
+  WidgetExpression body = 8;
   bool float_header_slivers = 10;
   string restoration_id = 12;
 }
 
 message FlutterCupertinoSliverOverlapAbsorber {
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterCupertinoSliverOverlapInjector {
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterCupertinoNestedScrollViewViewport {
   double anchor = 5;
-  repeated Widget slivers = 8;
+  repeated WidgetExpression slivers = 8;
 }
 
 message FlutterCupertinoNotificationListener {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoOrientationBuilder {
@@ -1727,7 +1727,7 @@ message FlutterCupertinoOrientationBuilder {
 message FlutterCupertinoOverflowBar {
   double spacing = 3;
   double overflow_spacing = 5;
-  repeated Widget children = 10;
+  repeated WidgetExpression children = 10;
 }
 
 message FlutterCupertinoOverlay {
@@ -1735,31 +1735,31 @@ message FlutterCupertinoOverlay {
 }
 
 message FlutterCupertinoOverlayPortal {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoOverlayPortalNamedTargetsRootOverlay {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoGlowingOverscrollIndicator {
   bool show_leading = 3;
   bool show_trailing = 4;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterCupertinoStretchingOverscrollIndicator {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoPageStorage {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoPageView {
   bool reverse = 4;
   bool page_snapping = 7;
-  repeated Widget children = 9;
+  repeated WidgetExpression children = 9;
   bool allow_implicit_scrolling = 11;
   string restoration_id = 12;
   bool pad_ends = 15;
@@ -1799,16 +1799,16 @@ message FlutterCupertinoPlaceholder {
   double stroke_width = 4;
   double fallback_width = 5;
   double fallback_height = 6;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterCupertinoPlatformMenuBar {
-  Widget child = 4;
-  Widget body = 5;
+  WidgetExpression child = 4;
+  WidgetExpression body = 5;
 }
 
 message FlutterCupertinoPlatformSelectableRegionContextMenu {
-  Widget child = 2;
+  WidgetExpression child = 2;
 }
 
 message FlutterCupertinoAndroidView {
@@ -1840,27 +1840,27 @@ message FlutterCupertinoPreferredSizeWidget {
 }
 
 message FlutterCupertinoPreferredSize {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoPrimaryScrollController {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoPrimaryScrollControllerNamedNone {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoRawKeyboardListener {
   bool autofocus = 4;
   bool include_semantics = 5;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterCupertinoReorderableList {
   int64 item_count = 4;
   double item_extent = 8;
-  Widget prototype_item = 9;
+  WidgetExpression prototype_item = 9;
   bool reverse = 13;
   bool primary = 15;
   bool shrink_wrap = 17;
@@ -1873,34 +1873,34 @@ message FlutterCupertinoReorderableList {
 message FlutterCupertinoSliverReorderableList {
   int64 item_count = 5;
   double item_extent = 9;
-  Widget prototype_item = 10;
+  WidgetExpression prototype_item = 10;
   double auto_scroller_velocity_scalar = 12;
 }
 
 message FlutterCupertinoReorderableDragStartListener {
-  Widget child = 3;
+  WidgetExpression child = 3;
   int64 index = 4;
   bool enabled = 5;
 }
 
 message FlutterCupertinoReorderableDelayedDragStartListener {
-  Widget child = 3;
+  WidgetExpression child = 3;
   int64 index = 4;
   bool enabled = 5;
 }
 
 message FlutterCupertinoRestorationScope {
   string restoration_id = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoUnmanagedRestorationScope {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoRootRestorationScope {
   string restoration_id = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoRouter {
@@ -1912,7 +1912,7 @@ message FlutterCupertinoRouterNamedWithConfig {
 }
 
 message FlutterCupertinoBackButtonListener {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoSafeArea {
@@ -1921,7 +1921,7 @@ message FlutterCupertinoSafeArea {
   bool right = 5;
   bool bottom = 6;
   bool maintain_bottom_view_padding = 8;
-  Widget child = 9;
+  WidgetExpression child = 9;
 }
 
 message FlutterCupertinoSliverSafeArea {
@@ -1929,15 +1929,15 @@ message FlutterCupertinoSliverSafeArea {
   bool top = 4;
   bool right = 5;
   bool bottom = 6;
-  Widget sliver = 8;
+  WidgetExpression sliver = 8;
 }
 
 message FlutterCupertinoScrollConfiguration {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoScrollNotificationObserver {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoScrollView {
@@ -1956,7 +1956,7 @@ message FlutterCupertinoCustomScrollView {
   bool shrink_wrap = 9;
   double anchor = 11;
   double cache_extent = 12;
-  repeated Widget slivers = 13;
+  repeated WidgetExpression slivers = 13;
   int64 semantic_child_count = 14;
   string restoration_id = 17;
 }
@@ -1975,12 +1975,12 @@ message FlutterCupertinoListView {
   bool primary = 6;
   bool shrink_wrap = 8;
   double item_extent = 10;
-  Widget prototype_item = 11;
+  WidgetExpression prototype_item = 11;
   bool add_automatic_keep_alives = 12;
   bool add_repaint_boundaries = 13;
   bool add_semantic_indexes = 14;
   double cache_extent = 15;
-  repeated Widget children = 16;
+  repeated WidgetExpression children = 16;
   int64 semantic_child_count = 17;
   string restoration_id = 20;
 }
@@ -1990,7 +1990,7 @@ message FlutterCupertinoListViewNamedBuilder {
   bool primary = 6;
   bool shrink_wrap = 8;
   double item_extent = 10;
-  Widget prototype_item = 11;
+  WidgetExpression prototype_item = 11;
   int64 item_count = 14;
   bool add_automatic_keep_alives = 15;
   bool add_repaint_boundaries = 16;
@@ -2017,7 +2017,7 @@ message FlutterCupertinoListViewNamedCustom {
   bool primary = 6;
   bool shrink_wrap = 8;
   double item_extent = 10;
-  Widget prototype_item = 11;
+  WidgetExpression prototype_item = 11;
   double cache_extent = 13;
   int64 semantic_child_count = 14;
   string restoration_id = 17;
@@ -2031,7 +2031,7 @@ message FlutterCupertinoGridView {
   bool add_repaint_boundaries = 12;
   bool add_semantic_indexes = 13;
   double cache_extent = 14;
-  repeated Widget children = 15;
+  repeated WidgetExpression children = 15;
   int64 semantic_child_count = 16;
   string restoration_id = 20;
 }
@@ -2070,7 +2070,7 @@ message FlutterCupertinoGridViewNamedCount {
   bool add_repaint_boundaries = 15;
   bool add_semantic_indexes = 16;
   double cache_extent = 17;
-  repeated Widget children = 18;
+  repeated WidgetExpression children = 18;
   int64 semantic_child_count = 19;
   string restoration_id = 22;
 }
@@ -2087,7 +2087,7 @@ message FlutterCupertinoGridViewNamedExtent {
   bool add_repaint_boundaries = 15;
   bool add_semantic_indexes = 16;
   double cache_extent = 17;
-  repeated Widget children = 18;
+  repeated WidgetExpression children = 18;
   int64 semantic_child_count = 19;
   string restoration_id = 22;
 }
@@ -2104,7 +2104,7 @@ message FlutterCupertinoTwoDimensionalScrollable {
 }
 
 message FlutterCupertinoRawScrollbar {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool thumb_visibility = 5;
   double thickness = 8;
   double min_thumb_length = 10;
@@ -2116,56 +2116,56 @@ message FlutterCupertinoRawScrollbar {
 }
 
 message FlutterCupertinoSelectableRegion {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoSelectionContainer {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoSelectionContainerNamedDisabled {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoSelectionRegistrarScope {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoSemanticsDebugger {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoSharedAppData {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoShortcuts {
-  Widget child = 4;
+  WidgetExpression child = 4;
   string debug_label = 5;
 }
 
 message FlutterCupertinoShortcutsNamedManager {
-  Widget child = 4;
+  WidgetExpression child = 4;
   string debug_label = 5;
 }
 
 message FlutterCupertinoCallbackShortcuts {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoShortcutRegistrar {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoSingleChildScrollView {
   bool reverse = 4;
   bool primary = 6;
-  Widget child = 9;
+  WidgetExpression child = 9;
   string restoration_id = 12;
 }
 
 message FlutterCupertinoSizeChangedLayoutNotifier {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoSliverWithKeepAliveWidget {
@@ -2195,7 +2195,7 @@ message FlutterCupertinoSliverListNamedSeparated {
 }
 
 message FlutterCupertinoSliverListNamedList {
-  repeated Widget children = 3;
+  repeated WidgetExpression children = 3;
   bool add_automatic_keep_alives = 4;
   bool add_repaint_boundaries = 5;
   bool add_semantic_indexes = 6;
@@ -2214,7 +2214,7 @@ message FlutterCupertinoSliverFixedExtentListNamedBuilder {
 }
 
 message FlutterCupertinoSliverFixedExtentListNamedList {
-  repeated Widget children = 3;
+  repeated WidgetExpression children = 3;
   double item_extent = 4;
   bool add_automatic_keep_alives = 5;
   bool add_repaint_boundaries = 6;
@@ -2237,7 +2237,7 @@ message FlutterCupertinoSliverGridNamedCount {
   double main_axis_spacing = 4;
   double cross_axis_spacing = 5;
   double child_aspect_ratio = 6;
-  repeated Widget children = 7;
+  repeated WidgetExpression children = 7;
 }
 
 message FlutterCupertinoSliverGridNamedExtent {
@@ -2245,47 +2245,47 @@ message FlutterCupertinoSliverGridNamedExtent {
   double main_axis_spacing = 4;
   double cross_axis_spacing = 5;
   double child_aspect_ratio = 6;
-  repeated Widget children = 7;
+  repeated WidgetExpression children = 7;
 }
 
 message FlutterCupertinoSliverOpacity {
   double opacity = 3;
   bool always_include_semantics = 4;
-  Widget sliver = 5;
+  WidgetExpression sliver = 5;
 }
 
 message FlutterCupertinoSliverIgnorePointer {
   bool ignoring = 3;
   bool ignoring_semantics = 4;
-  Widget sliver = 5;
+  WidgetExpression sliver = 5;
 }
 
 message FlutterCupertinoSliverOffstage {
   bool offstage = 3;
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterCupertinoKeepAlive {
   bool keep_alive = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoSliverConstrainedCrossAxis {
   double max_extent = 3;
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterCupertinoSliverCrossAxisExpanded {
   int64 flex = 3;
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterCupertinoSliverCrossAxisGroup {
-  repeated Widget slivers = 3;
+  repeated WidgetExpression slivers = 3;
 }
 
 message FlutterCupertinoSliverMainAxisGroup {
-  repeated Widget slivers = 3;
+  repeated WidgetExpression slivers = 3;
 }
 
 message FlutterCupertinoSliverFillViewport {
@@ -2294,7 +2294,7 @@ message FlutterCupertinoSliverFillViewport {
 }
 
 message FlutterCupertinoSliverFillRemaining {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool has_scroll_body = 4;
   bool fill_overscroll = 5;
 }
@@ -2309,11 +2309,11 @@ message FlutterCupertinoSliverPersistentHeader {
 }
 
 message FlutterCupertinoSliverPrototypeExtentList {
-  Widget prototype_item = 4;
+  WidgetExpression prototype_item = 4;
 }
 
 message FlutterCupertinoSliverPrototypeExtentListNamedBuilder {
-  Widget prototype_item = 4;
+  WidgetExpression prototype_item = 4;
   int64 item_count = 6;
   bool add_automatic_keep_alives = 7;
   bool add_repaint_boundaries = 8;
@@ -2321,8 +2321,8 @@ message FlutterCupertinoSliverPrototypeExtentListNamedBuilder {
 }
 
 message FlutterCupertinoSliverPrototypeExtentListNamedList {
-  repeated Widget children = 3;
-  Widget prototype_item = 4;
+  repeated WidgetExpression children = 3;
+  WidgetExpression prototype_item = 4;
   bool add_automatic_keep_alives = 5;
   bool add_repaint_boundaries = 6;
   bool add_semantic_indexes = 7;
@@ -2334,7 +2334,7 @@ message FlutterCupertinoSlottedMultiChildRenderObjectWidget {
 
 message FlutterCupertinoSnapshotWidget {
   bool autoresize = 5;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterCupertinoSpacer {
@@ -2350,21 +2350,21 @@ message FlutterCupertinoTable {
 }
 
 message FlutterCupertinoTableCell {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoTapRegionSurface {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoTapRegion {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool enabled = 4;
   string debug_label = 9;
 }
 
 message FlutterCupertinoTextFieldTapRegion {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool enabled = 4;
   string debug_label = 7;
 }
@@ -2372,7 +2372,7 @@ message FlutterCupertinoTextFieldTapRegion {
 message FlutterCupertinoDefaultTextStyle {
   bool soft_wrap = 5;
   int64 max_lines = 7;
-  Widget child = 10;
+  WidgetExpression child = 10;
 }
 
 message FlutterCupertinoDefaultTextStyleNamedFallback {
@@ -2380,7 +2380,7 @@ message FlutterCupertinoDefaultTextStyleNamedFallback {
 }
 
 message FlutterCupertinoDefaultTextHeightBehavior {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoText {
@@ -2399,7 +2399,7 @@ message FlutterCupertinoTextNamedRich {
 }
 
 message FlutterCupertinoTextSelectionGestureDetector {
-  Widget child = 19;
+  WidgetExpression child = 19;
 }
 
 message FlutterCupertinoTexture {
@@ -2409,12 +2409,12 @@ message FlutterCupertinoTexture {
 
 message FlutterCupertinoTickerMode {
   bool enabled = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoTitle {
   string title = 3;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoAnimatedWidget {
@@ -2423,66 +2423,66 @@ message FlutterCupertinoAnimatedWidget {
 
 message FlutterCupertinoSlideTransition {
   bool transform_hit_tests = 4;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoScaleTransition {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoRotationTransition {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoSizeTransition {
   double axis_alignment = 5;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterCupertinoFadeTransition {
   bool always_include_semantics = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoSliverFadeTransition {
   bool always_include_semantics = 4;
-  Widget sliver = 5;
+  WidgetExpression sliver = 5;
 }
 
 message FlutterCupertinoPositionedTransition {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterCupertinoRelativePositionedTransition {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoDecoratedBoxTransition {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoAlignTransition {
-  Widget child = 4;
+  WidgetExpression child = 4;
   double width_factor = 5;
   double height_factor = 6;
 }
 
 message FlutterCupertinoDefaultTextStyleTransition {
-  Widget child = 4;
+  WidgetExpression child = 4;
   bool soft_wrap = 6;
   int64 max_lines = 8;
 }
 
 message FlutterCupertinoListenableBuilder {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoAnimatedBuilder {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoTweenAnimationBuilder {
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterCupertinoTwoDimensionalScrollView {
@@ -2495,7 +2495,7 @@ message FlutterCupertinoTwoDimensionalViewport {
 }
 
 message FlutterCupertinoUndoHistory {
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterCupertinoUniqueWidget {
@@ -2503,26 +2503,26 @@ message FlutterCupertinoUniqueWidget {
 }
 
 message FlutterCupertinoValueListenableBuilder {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterCupertinoView {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoViewport {
   double anchor = 5;
   double cache_extent = 8;
-  repeated Widget slivers = 11;
+  repeated WidgetExpression slivers = 11;
 }
 
 message FlutterCupertinoShrinkWrappingViewport {
-  repeated Widget slivers = 7;
+  repeated WidgetExpression slivers = 7;
 }
 
 message FlutterCupertinoVisibility {
-  Widget child = 3;
-  Widget replacement = 4;
+  WidgetExpression child = 3;
+  WidgetExpression replacement = 4;
   bool visible = 5;
   bool maintain_state = 6;
   bool maintain_animation = 7;
@@ -2532,13 +2532,13 @@ message FlutterCupertinoVisibility {
 }
 
 message FlutterCupertinoVisibilityNamedMaintain {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool visible = 4;
 }
 
 message FlutterCupertinoSliverVisibility {
-  Widget sliver = 3;
-  Widget replacement_sliver = 4;
+  WidgetExpression sliver = 3;
+  WidgetExpression replacement_sliver = 4;
   bool visible = 5;
   bool maintain_state = 6;
   bool maintain_animation = 7;
@@ -2548,42 +2548,42 @@ message FlutterCupertinoSliverVisibility {
 }
 
 message FlutterCupertinoSliverVisibilityNamedMaintain {
-  Widget sliver = 3;
-  Widget replacement_sliver = 4;
+  WidgetExpression sliver = 3;
+  WidgetExpression replacement_sliver = 4;
   bool visible = 5;
 }
 
 message FlutterCupertinoWidgetInspector {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterCupertinoWillPopScope {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialAboutListTile {
-  Widget icon = 3;
-  Widget child = 4;
+  WidgetExpression icon = 3;
+  WidgetExpression child = 4;
   string application_name = 5;
   string application_version = 6;
-  Widget application_icon = 7;
+  WidgetExpression application_icon = 7;
   string application_legalese = 8;
-  repeated Widget about_box_children = 9;
+  repeated WidgetExpression about_box_children = 9;
   bool dense = 10;
 }
 
 message FlutterMaterialAboutDialog {
   string application_name = 3;
   string application_version = 4;
-  Widget application_icon = 5;
+  WidgetExpression application_icon = 5;
   string application_legalese = 6;
-  repeated Widget children = 7;
+  repeated WidgetExpression children = 7;
 }
 
 message FlutterMaterialLicensePage {
   string application_name = 3;
   string application_version = 4;
-  Widget application_icon = 5;
+  WidgetExpression application_icon = 5;
   string application_legalese = 6;
 }
 
@@ -2620,8 +2620,8 @@ message FlutterMaterialEndDrawerButton {
 }
 
 message FlutterMaterialActionChip {
-  Widget avatar = 3;
-  Widget label = 4;
+  WidgetExpression avatar = 3;
+  WidgetExpression label = 4;
   double press_elevation = 8;
   string tooltip = 9;
   bool autofocus = 14;
@@ -2629,8 +2629,8 @@ message FlutterMaterialActionChip {
 }
 
 message FlutterMaterialActionChipNamedElevated {
-  Widget avatar = 3;
-  Widget label = 4;
+  WidgetExpression avatar = 3;
+  WidgetExpression label = 4;
   double press_elevation = 8;
   string tooltip = 9;
   bool autofocus = 14;
@@ -2638,11 +2638,11 @@ message FlutterMaterialActionChipNamedElevated {
 }
 
 message FlutterMaterialActionIconTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialAdaptiveTextSelectionToolbar {
-  repeated Widget children = 3;
+  repeated WidgetExpression children = 3;
 }
 
 message FlutterMaterialAdaptiveTextSelectionToolbarNamedButtonItems {
@@ -2671,7 +2671,7 @@ message FlutterMaterialAnimatedIcon {
 }
 
 message FlutterMaterialMaterialApp {
-  Widget home = 5;
+  WidgetExpression home = 5;
   string initial_route = 7;
   string title = 13;
   bool debug_show_material_grid = 28;
@@ -2697,11 +2697,11 @@ message FlutterMaterialMaterialAppNamedRouter {
 }
 
 message FlutterMaterialAppBar {
-  Widget leading = 3;
+  WidgetExpression leading = 3;
   bool automatically_imply_leading = 4;
-  Widget title = 5;
-  repeated Widget actions = 6;
-  Widget flexible_space = 7;
+  WidgetExpression title = 5;
+  repeated WidgetExpression actions = 6;
+  WidgetExpression flexible_space = 7;
   double elevation = 9;
   double scrolled_under_elevation = 10;
   bool primary = 19;
@@ -2716,11 +2716,11 @@ message FlutterMaterialAppBar {
 }
 
 message FlutterMaterialSliverAppBar {
-  Widget leading = 3;
+  WidgetExpression leading = 3;
   bool automatically_imply_leading = 4;
-  Widget title = 5;
-  repeated Widget actions = 6;
-  Widget flexible_space = 7;
+  WidgetExpression title = 5;
+  repeated WidgetExpression actions = 6;
+  WidgetExpression flexible_space = 7;
   double elevation = 9;
   double scrolled_under_elevation = 10;
   bool force_elevated = 13;
@@ -2741,11 +2741,11 @@ message FlutterMaterialSliverAppBar {
 }
 
 message FlutterMaterialSliverAppBarNamedMedium {
-  Widget leading = 3;
+  WidgetExpression leading = 3;
   bool automatically_imply_leading = 4;
-  Widget title = 5;
-  repeated Widget actions = 6;
-  Widget flexible_space = 7;
+  WidgetExpression title = 5;
+  repeated WidgetExpression actions = 6;
+  WidgetExpression flexible_space = 7;
   double elevation = 9;
   double scrolled_under_elevation = 10;
   bool force_elevated = 13;
@@ -2766,11 +2766,11 @@ message FlutterMaterialSliverAppBarNamedMedium {
 }
 
 message FlutterMaterialSliverAppBarNamedLarge {
-  Widget leading = 3;
+  WidgetExpression leading = 3;
   bool automatically_imply_leading = 4;
-  Widget title = 5;
-  repeated Widget actions = 6;
-  Widget flexible_space = 7;
+  WidgetExpression title = 5;
+  repeated WidgetExpression actions = 6;
+  WidgetExpression flexible_space = 7;
   double elevation = 9;
   double scrolled_under_elevation = 10;
   bool force_elevated = 13;
@@ -2797,9 +2797,9 @@ message FlutterMaterialAutocomplete {
 message FlutterMaterialBadge {
   double small_size = 5;
   double large_size = 6;
-  Widget label = 11;
+  WidgetExpression label = 11;
   bool is_label_visible = 12;
-  Widget child = 13;
+  WidgetExpression child = 13;
 }
 
 message FlutterMaterialBadgeNamedCount {
@@ -2807,29 +2807,29 @@ message FlutterMaterialBadgeNamedCount {
   double large_size = 6;
   int64 count = 11;
   bool is_label_visible = 12;
-  Widget child = 13;
+  WidgetExpression child = 13;
 }
 
 message FlutterMaterialBadgeTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialMaterialBanner {
-  Widget content = 3;
-  repeated Widget actions = 5;
+  WidgetExpression content = 3;
+  repeated WidgetExpression actions = 5;
   double elevation = 6;
-  Widget leading = 7;
+  WidgetExpression leading = 7;
   bool force_actions_below = 15;
 }
 
 message FlutterMaterialMaterialBannerTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialBottomAppBar {
   double elevation = 4;
   double notch_margin = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
   double height = 12;
 }
 
@@ -2846,7 +2846,7 @@ message FlutterMaterialBottomNavigationBar {
 }
 
 message FlutterMaterialBottomNavigationBarTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialBottomSheet {
@@ -2862,7 +2862,7 @@ message FlutterMaterialRawMaterialButton {
   double highlight_elevation = 16;
   double disabled_elevation = 17;
   bool autofocus = 25;
-  Widget child = 27;
+  WidgetExpression child = 27;
   bool enable_feedback = 28;
 }
 
@@ -2871,28 +2871,28 @@ message FlutterMaterialButtonBar {
   double button_height = 7;
   bool button_aligned_dropdown = 9;
   double overflow_button_spacing = 12;
-  repeated Widget children = 13;
+  repeated WidgetExpression children = 13;
 }
 
 message FlutterMaterialButtonBarTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialButtonStyleButton {
   bool autofocus = 9;
   bool is_semantic_button = 12;
-  Widget child = 13;
+  WidgetExpression child = 13;
 }
 
 message FlutterMaterialButtonTheme {
   double min_width = 5;
   double height = 6;
   bool aligned_dropdown = 9;
-  Widget child = 18;
+  WidgetExpression child = 18;
 }
 
 message FlutterMaterialButtonThemeNamedFromButtonThemeData {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialCalendarDatePicker {
@@ -2906,7 +2906,7 @@ message FlutterMaterialYearPicker {
 message FlutterMaterialCard {
   double elevation = 6;
   bool border_on_foreground = 8;
-  Widget child = 11;
+  WidgetExpression child = 11;
   bool semantic_container = 12;
 }
 
@@ -2934,11 +2934,11 @@ message FlutterMaterialCheckboxListTile {
   bool autofocus = 15;
   bool is_error = 18;
   bool enabled = 19;
-  Widget title = 21;
-  Widget subtitle = 22;
+  WidgetExpression title = 21;
+  WidgetExpression subtitle = 22;
   bool is_three_line = 23;
   bool dense = 24;
-  Widget secondary = 25;
+  WidgetExpression secondary = 25;
   bool selected = 26;
   bool tristate = 29;
   bool enable_feedback = 33;
@@ -2951,11 +2951,11 @@ message FlutterMaterialCheckboxListTileNamedAdaptive {
   bool autofocus = 15;
   bool is_error = 18;
   bool enabled = 19;
-  Widget title = 21;
-  Widget subtitle = 22;
+  WidgetExpression title = 21;
+  WidgetExpression subtitle = 22;
   bool is_three_line = 23;
   bool dense = 24;
-  Widget secondary = 25;
+  WidgetExpression secondary = 25;
   bool selected = 26;
   bool tristate = 29;
   bool enable_feedback = 33;
@@ -2963,13 +2963,13 @@ message FlutterMaterialCheckboxListTileNamedAdaptive {
 }
 
 message FlutterMaterialCheckboxTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialChip {
-  Widget avatar = 3;
-  Widget label = 4;
-  Widget delete_icon = 7;
+  WidgetExpression avatar = 3;
+  WidgetExpression label = 4;
+  WidgetExpression delete_icon = 7;
   string delete_button_tooltip_message = 10;
   bool autofocus = 15;
   double elevation = 21;
@@ -2977,9 +2977,9 @@ message FlutterMaterialChip {
 }
 
 message FlutterMaterialRawChip {
-  Widget avatar = 4;
-  Widget label = 5;
-  Widget delete_icon = 10;
+  WidgetExpression avatar = 4;
+  WidgetExpression label = 5;
+  WidgetExpression delete_icon = 10;
   string delete_button_tooltip_message = 13;
   double press_elevation = 16;
   bool tap_enabled = 17;
@@ -2993,12 +2993,12 @@ message FlutterMaterialRawChip {
 }
 
 message FlutterMaterialChipTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialChoiceChip {
-  Widget avatar = 3;
-  Widget label = 4;
+  WidgetExpression avatar = 3;
+  WidgetExpression label = 4;
   double press_elevation = 8;
   bool selected = 9;
   string tooltip = 12;
@@ -3008,8 +3008,8 @@ message FlutterMaterialChoiceChip {
 }
 
 message FlutterMaterialChoiceChipNamedElevated {
-  Widget avatar = 3;
-  Widget label = 4;
+  WidgetExpression avatar = 3;
+  WidgetExpression label = 4;
   double press_elevation = 8;
   bool selected = 9;
   string tooltip = 12;
@@ -3019,7 +3019,7 @@ message FlutterMaterialChoiceChipNamedElevated {
 }
 
 message FlutterMaterialCircleAvatar {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double radius = 10;
   double min_radius = 11;
   double max_radius = 12;
@@ -3041,11 +3041,11 @@ message FlutterMaterialDataTable {
 }
 
 message FlutterMaterialTableRowInkWell {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialDataTableTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialDatePickerDialog {
@@ -3075,15 +3075,15 @@ message FlutterMaterialDateRangePickerDialog {
 }
 
 message FlutterMaterialDatePickerTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialDesktopTextSelectionToolbar {
-  repeated Widget children = 4;
+  repeated WidgetExpression children = 4;
 }
 
 message FlutterMaterialDesktopTextSelectionToolbarButton {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialDesktopTextSelectionToolbarButtonNamedText {
@@ -3092,18 +3092,18 @@ message FlutterMaterialDesktopTextSelectionToolbarButtonNamedText {
 
 message FlutterMaterialDialog {
   double elevation = 4;
-  Widget child = 13;
+  WidgetExpression child = 13;
 }
 
 message FlutterMaterialDialogNamedFullscreen {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterMaterialAlertDialog {
-  Widget icon = 3;
-  Widget title = 6;
-  Widget content = 9;
-  repeated Widget actions = 12;
+  WidgetExpression icon = 3;
+  WidgetExpression title = 6;
+  WidgetExpression content = 9;
+  repeated WidgetExpression actions = 12;
   double actions_overflow_button_spacing = 17;
   double elevation = 20;
   string semantic_label = 23;
@@ -3111,10 +3111,10 @@ message FlutterMaterialAlertDialog {
 }
 
 message FlutterMaterialAlertDialogNamedAdaptive {
-  Widget icon = 3;
-  Widget title = 6;
-  Widget content = 9;
-  repeated Widget actions = 12;
+  WidgetExpression icon = 3;
+  WidgetExpression title = 6;
+  WidgetExpression content = 9;
+  repeated WidgetExpression actions = 12;
   double actions_overflow_button_spacing = 17;
   double elevation = 20;
   string semantic_label = 23;
@@ -3122,12 +3122,12 @@ message FlutterMaterialAlertDialogNamedAdaptive {
 }
 
 message FlutterMaterialSimpleDialogOption {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialSimpleDialog {
-  Widget title = 3;
-  repeated Widget children = 6;
+  WidgetExpression title = 3;
+  repeated WidgetExpression children = 6;
   double elevation = 9;
   string semantic_label = 12;
 }
@@ -3147,46 +3147,46 @@ message FlutterMaterialVerticalDivider {
 }
 
 message FlutterMaterialDividerTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialDrawer {
   double elevation = 4;
   double width = 8;
-  Widget child = 9;
+  WidgetExpression child = 9;
   string semantic_label = 10;
 }
 
 message FlutterMaterialDrawerController {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool is_drawer_open = 5;
   double edge_drag_width = 9;
   bool enable_open_drag_gesture = 10;
 }
 
 message FlutterMaterialDrawerHeader {
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterMaterialDrawerTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialDropdownMenuItem {
   bool enabled = 5;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterMaterialDropdownButtonHideUnderline {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialDropdownButton {
-  Widget hint = 6;
-  Widget disabled_hint = 7;
+  WidgetExpression hint = 6;
+  WidgetExpression disabled_hint = 7;
   int64 elevation = 10;
-  Widget underline = 12;
-  Widget icon = 13;
+  WidgetExpression underline = 12;
+  WidgetExpression icon = 13;
   double icon_size = 16;
   bool is_dense = 17;
   bool is_expanded = 18;
@@ -3197,10 +3197,10 @@ message FlutterMaterialDropdownButton {
 }
 
 message FlutterMaterialDropdownButtonFormField {
-  Widget hint = 6;
-  Widget disabled_hint = 7;
+  WidgetExpression hint = 6;
+  WidgetExpression disabled_hint = 7;
   int64 elevation = 10;
-  Widget icon = 12;
+  WidgetExpression icon = 12;
   double icon_size = 15;
   bool is_dense = 16;
   bool is_expanded = 17;
@@ -3214,35 +3214,35 @@ message FlutterMaterialDropdownMenu {
   bool enabled = 3;
   double width = 4;
   double menu_height = 5;
-  Widget leading_icon = 6;
-  Widget trailing_icon = 7;
-  Widget label = 8;
+  WidgetExpression leading_icon = 6;
+  WidgetExpression trailing_icon = 7;
+  WidgetExpression label = 8;
   string hint_text = 9;
   string helper_text = 10;
   string error_text = 11;
-  Widget selected_trailing_icon = 12;
+  WidgetExpression selected_trailing_icon = 12;
   bool enable_filter = 13;
   bool enable_search = 14;
   bool request_focus_on_tap = 21;
 }
 
 message FlutterMaterialDropdownMenuTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialElevatedButton {
   bool autofocus = 9;
-  Widget child = 12;
+  WidgetExpression child = 12;
 }
 
 message FlutterMaterialElevatedButtonNamedIcon {
   bool autofocus = 9;
-  Widget icon = 12;
-  Widget label = 13;
+  WidgetExpression icon = 12;
+  WidgetExpression label = 13;
 }
 
 message FlutterMaterialElevatedButtonTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialExpandIcon {
@@ -3261,48 +3261,48 @@ message FlutterMaterialExpansionPanelListNamedRadio {
 }
 
 message FlutterMaterialExpansionTile {
-  Widget leading = 3;
-  Widget title = 4;
-  Widget subtitle = 5;
-  repeated Widget children = 7;
-  Widget trailing = 8;
+  WidgetExpression leading = 3;
+  WidgetExpression title = 4;
+  WidgetExpression subtitle = 5;
+  repeated WidgetExpression children = 7;
+  WidgetExpression trailing = 8;
   bool initially_expanded = 9;
   bool maintain_state = 10;
 }
 
 message FlutterMaterialExpansionTileTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialFilledButton {
   bool autofocus = 9;
-  Widget child = 12;
+  WidgetExpression child = 12;
 }
 
 message FlutterMaterialFilledButtonNamedIcon {
   bool autofocus = 9;
-  Widget icon = 12;
-  Widget label = 13;
+  WidgetExpression icon = 12;
+  WidgetExpression label = 13;
 }
 
 message FlutterMaterialFilledButtonNamedTonal {
   bool autofocus = 9;
-  Widget child = 12;
+  WidgetExpression child = 12;
 }
 
 message FlutterMaterialFilledButtonNamedTonalIcon {
   bool autofocus = 9;
-  Widget icon = 12;
-  Widget label = 13;
+  WidgetExpression icon = 12;
+  WidgetExpression label = 13;
 }
 
 message FlutterMaterialFilledButtonTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialFilterChip {
-  Widget avatar = 3;
-  Widget label = 4;
+  WidgetExpression avatar = 3;
+  WidgetExpression label = 4;
   bool selected = 7;
   double press_elevation = 9;
   string tooltip = 12;
@@ -3312,8 +3312,8 @@ message FlutterMaterialFilterChip {
 }
 
 message FlutterMaterialFilterChipNamedElevated {
-  Widget avatar = 3;
-  Widget label = 4;
+  WidgetExpression avatar = 3;
+  WidgetExpression label = 4;
   bool selected = 7;
   double press_elevation = 9;
   string tooltip = 12;
@@ -3323,8 +3323,8 @@ message FlutterMaterialFilterChipNamedElevated {
 }
 
 message FlutterMaterialFlexibleSpaceBar {
-  Widget title = 3;
-  Widget background = 4;
+  WidgetExpression title = 3;
+  WidgetExpression background = 4;
   bool center_title = 5;
   double expanded_title_scale = 9;
 }
@@ -3334,12 +3334,12 @@ message FlutterMaterialFlexibleSpaceBarSettings {
   double min_extent = 4;
   double max_extent = 5;
   double current_extent = 6;
-  Widget child = 7;
+  WidgetExpression child = 7;
   bool is_scrolled_under = 8;
 }
 
 message FlutterMaterialFloatingActionButton {
-  Widget child = 3;
+  WidgetExpression child = 3;
   string tooltip = 4;
   double elevation = 11;
   double focus_elevation = 12;
@@ -3353,7 +3353,7 @@ message FlutterMaterialFloatingActionButton {
 }
 
 message FlutterMaterialFloatingActionButtonNamedSmall {
-  Widget child = 3;
+  WidgetExpression child = 3;
   string tooltip = 4;
   double elevation = 11;
   double focus_elevation = 12;
@@ -3365,7 +3365,7 @@ message FlutterMaterialFloatingActionButtonNamedSmall {
 }
 
 message FlutterMaterialFloatingActionButtonNamedLarge {
-  Widget child = 3;
+  WidgetExpression child = 3;
   string tooltip = 4;
   double elevation = 11;
   double focus_elevation = 12;
@@ -3386,8 +3386,8 @@ message FlutterMaterialFloatingActionButtonNamedExtended {
   bool is_extended = 18;
   bool autofocus = 22;
   double extended_icon_label_spacing = 23;
-  Widget icon = 26;
-  Widget label = 27;
+  WidgetExpression icon = 26;
+  WidgetExpression label = 27;
   bool enable_feedback = 28;
 }
 
@@ -3396,16 +3396,16 @@ message FlutterMaterialFlutterLogo {
 }
 
 message FlutterMaterialGridTile {
-  Widget header = 3;
-  Widget footer = 4;
-  Widget child = 5;
+  WidgetExpression header = 3;
+  WidgetExpression footer = 4;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialGridTileBar {
-  Widget leading = 4;
-  Widget title = 5;
-  Widget subtitle = 6;
-  Widget trailing = 7;
+  WidgetExpression leading = 4;
+  WidgetExpression title = 5;
+  WidgetExpression subtitle = 6;
+  WidgetExpression trailing = 7;
 }
 
 message FlutterMaterialIconButton {
@@ -3415,8 +3415,8 @@ message FlutterMaterialIconButton {
   string tooltip = 18;
   bool enable_feedback = 19;
   bool is_selected = 22;
-  Widget selected_icon = 23;
-  Widget icon = 24;
+  WidgetExpression selected_icon = 23;
+  WidgetExpression icon = 24;
 }
 
 message FlutterMaterialIconButtonNamedFilled {
@@ -3426,8 +3426,8 @@ message FlutterMaterialIconButtonNamedFilled {
   string tooltip = 18;
   bool enable_feedback = 19;
   bool is_selected = 22;
-  Widget selected_icon = 23;
-  Widget icon = 24;
+  WidgetExpression selected_icon = 23;
+  WidgetExpression icon = 24;
 }
 
 message FlutterMaterialIconButtonNamedFilledTonal {
@@ -3437,8 +3437,8 @@ message FlutterMaterialIconButtonNamedFilledTonal {
   string tooltip = 18;
   bool enable_feedback = 19;
   bool is_selected = 22;
-  Widget selected_icon = 23;
-  Widget icon = 24;
+  WidgetExpression selected_icon = 23;
+  WidgetExpression icon = 24;
 }
 
 message FlutterMaterialIconButtonNamedOutlined {
@@ -3448,29 +3448,29 @@ message FlutterMaterialIconButtonNamedOutlined {
   string tooltip = 18;
   bool enable_feedback = 19;
   bool is_selected = 22;
-  Widget selected_icon = 23;
-  Widget icon = 24;
+  WidgetExpression selected_icon = 23;
+  WidgetExpression icon = 24;
 }
 
 message FlutterMaterialIconButtonTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialInk {
   double width = 6;
   double height = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterMaterialInkNamedImage {
   bool match_text_direction = 11;
   double width = 12;
   double height = 13;
-  Widget child = 14;
+  WidgetExpression child = 14;
 }
 
 message FlutterMaterialInkResponse {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool contained_ink_well = 17;
   double radius = 19;
   bool enable_feedback = 28;
@@ -3480,7 +3480,7 @@ message FlutterMaterialInkResponse {
 }
 
 message FlutterMaterialInkWell {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double radius = 23;
   bool enable_feedback = 26;
   bool exclude_from_semantics = 27;
@@ -3489,11 +3489,11 @@ message FlutterMaterialInkWell {
 }
 
 message FlutterMaterialInputChip {
-  Widget avatar = 3;
-  Widget label = 4;
+  WidgetExpression avatar = 3;
+  WidgetExpression label = 4;
   bool selected = 7;
   bool is_enabled = 8;
-  Widget delete_icon = 10;
+  WidgetExpression delete_icon = 10;
   string delete_button_tooltip_message = 13;
   double press_elevation = 15;
   string tooltip = 18;
@@ -3517,14 +3517,14 @@ message FlutterMaterialInputDecorator {
   bool is_hovering = 8;
   bool expands = 9;
   bool is_empty = 10;
-  Widget child = 11;
+  WidgetExpression child = 11;
 }
 
 message FlutterMaterialListTile {
-  Widget leading = 3;
-  Widget title = 4;
-  Widget subtitle = 5;
-  Widget trailing = 6;
+  WidgetExpression leading = 3;
+  WidgetExpression title = 4;
+  WidgetExpression subtitle = 5;
+  WidgetExpression trailing = 6;
   bool is_three_line = 7;
   bool dense = 8;
   bool enabled = 19;
@@ -3542,7 +3542,7 @@ message FlutterMaterialListTileTheme {
   double horizontal_title_gap = 15;
   double min_vertical_padding = 16;
   double min_leading_width = 17;
-  Widget child = 18;
+  WidgetExpression child = 18;
 }
 
 message FlutterMaterialTextMagnifier {
@@ -3556,7 +3556,7 @@ message FlutterMaterialMagnifier {
 message FlutterMaterialMaterial {
   double elevation = 4;
   bool border_on_foreground = 11;
-  Widget child = 14;
+  WidgetExpression child = 14;
 }
 
 message FlutterMaterialMaterialButton {
@@ -3569,54 +3569,54 @@ message FlutterMaterialMaterialButton {
   double min_width = 30;
   double height = 31;
   bool enable_feedback = 32;
-  Widget child = 33;
+  WidgetExpression child = 33;
 }
 
 message FlutterMaterialMenuAnchor {
   bool anchor_tap_closes_menu = 8;
   bool cross_axis_unconstrained = 11;
-  repeated Widget menu_children = 12;
-  Widget child = 14;
+  repeated WidgetExpression menu_children = 12;
+  WidgetExpression child = 14;
 }
 
 message FlutterMaterialMenuBar {
-  repeated Widget children = 6;
+  repeated WidgetExpression children = 6;
 }
 
 message FlutterMaterialMenuItemButton {
   bool request_focus_on_hover = 5;
-  Widget leading_icon = 12;
-  Widget trailing_icon = 13;
+  WidgetExpression leading_icon = 12;
+  WidgetExpression trailing_icon = 13;
   bool close_on_activate = 14;
-  Widget child = 15;
+  WidgetExpression child = 15;
 }
 
 message FlutterMaterialCheckboxMenuButton {
   bool value = 3;
   bool tristate = 4;
   bool is_error = 5;
-  Widget trailing_icon = 14;
+  WidgetExpression trailing_icon = 14;
   bool close_on_activate = 15;
-  Widget child = 16;
+  WidgetExpression child = 16;
 }
 
 message FlutterMaterialRadioMenuButton {
   bool toggleable = 6;
-  Widget trailing_icon = 14;
+  WidgetExpression trailing_icon = 14;
   bool close_on_activate = 15;
-  Widget child = 16;
+  WidgetExpression child = 16;
 }
 
 message FlutterMaterialSubmenuButton {
-  Widget leading_icon = 14;
-  Widget trailing_icon = 15;
-  repeated Widget menu_children = 16;
-  Widget child = 17;
+  WidgetExpression leading_icon = 14;
+  WidgetExpression trailing_icon = 15;
+  repeated WidgetExpression menu_children = 16;
+  WidgetExpression child = 17;
 }
 
 message FlutterMaterialMenuAcceleratorCallbackBinding {
   bool has_submenu = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialMenuAcceleratorLabel {
@@ -3624,15 +3624,15 @@ message FlutterMaterialMenuAcceleratorLabel {
 }
 
 message FlutterMaterialMenuBarTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialMenuButtonTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialMenuTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialMergeableMaterial {
@@ -3642,14 +3642,14 @@ message FlutterMaterialMergeableMaterial {
 
 message FlutterMaterialNavigationBar {
   int64 selected_index = 4;
-  repeated Widget destinations = 5;
+  repeated WidgetExpression destinations = 5;
   double elevation = 8;
   double height = 13;
 }
 
 message FlutterMaterialNavigationDestination {
-  Widget icon = 3;
-  Widget selected_icon = 4;
+  WidgetExpression icon = 3;
+  WidgetExpression selected_icon = 4;
   string label = 5;
   string tooltip = 6;
 }
@@ -3660,29 +3660,29 @@ message FlutterMaterialNavigationIndicator {
 }
 
 message FlutterMaterialNavigationBarTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialNavigationDrawer {
-  repeated Widget children = 3;
+  repeated WidgetExpression children = 3;
   double elevation = 7;
   int64 selected_index = 11;
 }
 
 message FlutterMaterialNavigationDrawerDestination {
-  Widget icon = 4;
-  Widget selected_icon = 5;
-  Widget label = 6;
+  WidgetExpression icon = 4;
+  WidgetExpression selected_icon = 5;
+  WidgetExpression label = 6;
 }
 
 message FlutterMaterialNavigationDrawerTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialNavigationRail {
   bool extended = 4;
-  Widget leading = 5;
-  Widget trailing = 6;
+  WidgetExpression leading = 5;
+  WidgetExpression trailing = 6;
   int64 selected_index = 8;
   double elevation = 10;
   double group_alignment = 11;
@@ -3692,27 +3692,27 @@ message FlutterMaterialNavigationRail {
 }
 
 message FlutterMaterialNavigationRailTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialOutlinedButton {
   bool autofocus = 9;
-  Widget child = 12;
+  WidgetExpression child = 12;
 }
 
 message FlutterMaterialOutlinedButtonNamedIcon {
   bool autofocus = 7;
-  Widget icon = 10;
-  Widget label = 11;
+  WidgetExpression icon = 10;
+  WidgetExpression label = 11;
 }
 
 message FlutterMaterialOutlinedButtonTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialPaginatedDataTable {
-  Widget header = 3;
-  repeated Widget actions = 4;
+  WidgetExpression header = 3;
+  repeated WidgetExpression actions = 4;
   int64 sort_column_index = 6;
   bool sort_ascending = 7;
   double data_row_height = 9;
@@ -3741,29 +3741,29 @@ message FlutterMaterialPopupMenuDivider {
 message FlutterMaterialPopupMenuItem {
   bool enabled = 5;
   double height = 6;
-  Widget child = 11;
+  WidgetExpression child = 11;
 }
 
 message FlutterMaterialCheckedPopupMenuItem {
   bool checked = 4;
   bool enabled = 5;
   double height = 7;
-  Widget child = 9;
+  WidgetExpression child = 9;
 }
 
 message FlutterMaterialPopupMenuButton {
   string tooltip = 8;
   double elevation = 9;
-  Widget child = 13;
+  WidgetExpression child = 13;
   double splash_radius = 14;
-  Widget icon = 15;
+  WidgetExpression icon = 15;
   double icon_size = 16;
   bool enabled = 18;
   bool enable_feedback = 21;
 }
 
 message FlutterMaterialPopupMenuTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialProgressIndicator {
@@ -3804,7 +3804,7 @@ message FlutterMaterialRefreshProgressIndicator {
 }
 
 message FlutterMaterialProgressIndicatorTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialRadio {
@@ -3823,11 +3823,11 @@ message FlutterMaterialRadioNamedAdaptive {
 message FlutterMaterialRadioListTile {
   bool toggleable = 7;
   double splash_radius = 12;
-  Widget title = 14;
-  Widget subtitle = 15;
+  WidgetExpression title = 14;
+  WidgetExpression subtitle = 15;
   bool is_three_line = 16;
   bool dense = 17;
-  Widget secondary = 18;
+  WidgetExpression secondary = 18;
   bool selected = 19;
   bool autofocus = 21;
   bool enable_feedback = 29;
@@ -3836,11 +3836,11 @@ message FlutterMaterialRadioListTile {
 message FlutterMaterialRadioListTileNamedAdaptive {
   bool toggleable = 7;
   double splash_radius = 12;
-  Widget title = 14;
-  Widget subtitle = 15;
+  WidgetExpression title = 14;
+  WidgetExpression subtitle = 15;
   bool is_three_line = 16;
   bool dense = 17;
-  Widget secondary = 18;
+  WidgetExpression secondary = 18;
   bool selected = 19;
   bool autofocus = 21;
   bool enable_feedback = 29;
@@ -3848,7 +3848,7 @@ message FlutterMaterialRadioListTileNamedAdaptive {
 }
 
 message FlutterMaterialRadioTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialRangeSlider {
@@ -3858,7 +3858,7 @@ message FlutterMaterialRangeSlider {
 }
 
 message FlutterMaterialRefreshIndicator {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double displacement = 4;
   double edge_offset = 5;
   string semantics_label = 10;
@@ -3867,7 +3867,7 @@ message FlutterMaterialRefreshIndicator {
 }
 
 message FlutterMaterialRefreshIndicatorNamedAdaptive {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double displacement = 4;
   double edge_offset = 5;
   string semantics_label = 10;
@@ -3876,12 +3876,12 @@ message FlutterMaterialRefreshIndicatorNamedAdaptive {
 }
 
 message FlutterMaterialReorderableListView {
-  repeated Widget children = 3;
+  repeated WidgetExpression children = 3;
   double item_extent = 7;
-  Widget prototype_item = 8;
+  WidgetExpression prototype_item = 8;
   bool build_default_drag_handles = 10;
-  Widget header = 12;
-  Widget footer = 13;
+  WidgetExpression header = 12;
+  WidgetExpression footer = 13;
   bool reverse = 15;
   bool primary = 17;
   bool shrink_wrap = 19;
@@ -3894,10 +3894,10 @@ message FlutterMaterialReorderableListView {
 message FlutterMaterialReorderableListViewNamedBuilder {
   int64 item_count = 4;
   double item_extent = 8;
-  Widget prototype_item = 9;
+  WidgetExpression prototype_item = 9;
   bool build_default_drag_handles = 11;
-  Widget header = 13;
-  Widget footer = 14;
+  WidgetExpression header = 13;
+  WidgetExpression footer = 14;
   bool reverse = 16;
   bool primary = 18;
   bool shrink_wrap = 20;
@@ -3908,17 +3908,17 @@ message FlutterMaterialReorderableListViewNamedBuilder {
 }
 
 message FlutterMaterialScaffoldMessenger {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialScaffold {
-  Widget body = 4;
-  Widget floating_action_button = 5;
-  repeated Widget persistent_footer_buttons = 8;
-  Widget drawer = 10;
-  Widget end_drawer = 12;
-  Widget bottom_navigation_bar = 14;
-  Widget bottom_sheet = 15;
+  WidgetExpression body = 4;
+  WidgetExpression floating_action_button = 5;
+  repeated WidgetExpression persistent_footer_buttons = 8;
+  WidgetExpression drawer = 10;
+  WidgetExpression end_drawer = 12;
+  WidgetExpression bottom_navigation_bar = 14;
+  WidgetExpression bottom_sheet = 15;
   bool resize_to_avoid_bottom_inset = 17;
   bool primary = 18;
   bool extend_body = 20;
@@ -3930,7 +3930,7 @@ message FlutterMaterialScaffold {
 }
 
 message FlutterMaterialScrollbar {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool thumb_visibility = 5;
   bool track_visibility = 6;
   double thickness = 7;
@@ -3939,23 +3939,23 @@ message FlutterMaterialScrollbar {
 }
 
 message FlutterMaterialScrollbarTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialSearchAnchor {
   bool is_full_screen = 3;
-  Widget view_leading = 6;
-  repeated Widget view_trailing = 7;
+  WidgetExpression view_leading = 6;
+  repeated WidgetExpression view_trailing = 7;
   string view_hint_text = 8;
   double view_elevation = 10;
 }
 
 message FlutterMaterialSearchAnchorNamedBar {
-  Widget bar_leading = 2;
-  repeated Widget bar_trailing = 3;
+  WidgetExpression bar_leading = 2;
+  repeated WidgetExpression bar_trailing = 3;
   string bar_hint_text = 4;
-  Widget view_leading = 14;
-  repeated Widget view_trailing = 15;
+  WidgetExpression view_leading = 14;
+  repeated WidgetExpression view_trailing = 15;
   string view_hint_text = 16;
   double view_elevation = 18;
   bool is_full_screen = 26;
@@ -3963,27 +3963,27 @@ message FlutterMaterialSearchAnchorNamedBar {
 
 message FlutterMaterialSearchBar {
   string hint_text = 5;
-  Widget leading = 6;
-  repeated Widget trailing = 7;
+  WidgetExpression leading = 6;
+  repeated WidgetExpression trailing = 7;
 }
 
 message FlutterMaterialSearchBarTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialSearchViewTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialSegmentedButton {
   bool multi_selection_enabled = 6;
   bool empty_selection_allowed = 7;
   bool show_selected_icon = 9;
-  Widget selected_icon = 10;
+  WidgetExpression selected_icon = 10;
 }
 
 message FlutterMaterialSegmentedButtonTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialSelectableText {
@@ -4012,7 +4012,7 @@ message FlutterMaterialSelectableTextNamedRich {
 }
 
 message FlutterMaterialSelectionArea {
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterMaterialSlider {
@@ -4036,7 +4036,7 @@ message FlutterMaterialSliderNamedAdaptive {
 }
 
 message FlutterMaterialSliderTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialSnackBarAction {
@@ -4044,7 +4044,7 @@ message FlutterMaterialSnackBarAction {
 }
 
 message FlutterMaterialSnackBar {
-  Widget content = 3;
+  WidgetExpression content = 3;
   double elevation = 5;
   double width = 8;
   double action_overflow_threshold = 12;
@@ -4082,11 +4082,11 @@ message FlutterMaterialSwitchListTile {
   bool value = 3;
   double splash_radius = 21;
   bool autofocus = 24;
-  Widget title = 26;
-  Widget subtitle = 27;
+  WidgetExpression title = 26;
+  WidgetExpression subtitle = 27;
   bool is_three_line = 28;
   bool dense = 29;
-  Widget secondary = 31;
+  WidgetExpression secondary = 31;
   bool selected = 32;
   bool enable_feedback = 37;
 }
@@ -4096,34 +4096,34 @@ message FlutterMaterialSwitchListTileNamedAdaptive {
   double splash_radius = 21;
   bool autofocus = 24;
   bool apply_cupertino_theme = 25;
-  Widget title = 27;
-  Widget subtitle = 28;
+  WidgetExpression title = 27;
+  WidgetExpression subtitle = 28;
   bool is_three_line = 29;
   bool dense = 30;
-  Widget secondary = 32;
+  WidgetExpression secondary = 32;
   bool selected = 33;
   bool enable_feedback = 38;
 }
 
 message FlutterMaterialSwitchTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialDefaultTabController {
   int64 length = 3;
   int64 initial_index = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialTab {
   string text = 3;
-  Widget icon = 4;
+  WidgetExpression icon = 4;
   double height = 6;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterMaterialTabBar {
-  repeated Widget tabs = 3;
+  repeated WidgetExpression tabs = 3;
   bool is_scrollable = 5;
   bool automatic_indicator_color_adjustment = 8;
   double indicator_weight = 9;
@@ -4131,7 +4131,7 @@ message FlutterMaterialTabBar {
 }
 
 message FlutterMaterialTabBarNamedSecondary {
-  repeated Widget tabs = 3;
+  repeated WidgetExpression tabs = 3;
   bool is_scrollable = 5;
   bool automatic_indicator_color_adjustment = 8;
   double indicator_weight = 9;
@@ -4139,7 +4139,7 @@ message FlutterMaterialTabBarNamedSecondary {
 }
 
 message FlutterMaterialTabBarView {
-  repeated Widget children = 3;
+  repeated WidgetExpression children = 3;
   double viewport_fraction = 7;
 }
 
@@ -4154,17 +4154,17 @@ message FlutterMaterialTabPageSelector {
 message FlutterMaterialTextButton {
   bool autofocus = 9;
   bool is_semantic_button = 12;
-  Widget child = 13;
+  WidgetExpression child = 13;
 }
 
 message FlutterMaterialTextButtonNamedIcon {
   bool autofocus = 9;
-  Widget icon = 12;
-  Widget label = 13;
+  WidgetExpression icon = 12;
+  WidgetExpression label = 13;
 }
 
 message FlutterMaterialTextButtonTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialTextField {
@@ -4217,23 +4217,23 @@ message FlutterMaterialTextFormField {
 }
 
 message FlutterMaterialTextSelectionTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialTextSelectionToolbar {
-  repeated Widget children = 6;
+  repeated WidgetExpression children = 6;
 }
 
 message FlutterMaterialTextSelectionToolbarTextButton {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialAnimatedTheme {
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterMaterialTimePickerDialog {
@@ -4247,18 +4247,18 @@ message FlutterMaterialTimePickerDialog {
 }
 
 message FlutterMaterialTimePickerTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialToggleButtons {
-  repeated Widget children = 3;
+  repeated WidgetExpression children = 3;
   repeated bool is_selected = 4;
   bool render_border = 19;
   double border_width = 24;
 }
 
 message FlutterMaterialToggleButtonsTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialTooltip {
@@ -4268,31 +4268,31 @@ message FlutterMaterialTooltip {
   bool prefer_below = 9;
   bool exclude_from_semantics = 10;
   bool enable_feedback = 17;
-  Widget child = 19;
+  WidgetExpression child = 19;
 }
 
 message FlutterMaterialTooltipTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialTooltipVisibility {
   bool visible = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialUserAccountsDrawerHeader {
-  Widget current_account_picture = 5;
-  repeated Widget other_accounts_pictures = 6;
-  Widget account_name = 9;
-  Widget account_email = 10;
+  WidgetExpression current_account_picture = 5;
+  repeated WidgetExpression other_accounts_pictures = 6;
+  WidgetExpression account_name = 9;
+  WidgetExpression account_email = 10;
 }
 
 message FlutterMaterialActionListener {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialActions {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialFocusableActionDetector {
@@ -4301,12 +4301,12 @@ message FlutterMaterialFocusableActionDetector {
   bool descendants_are_focusable = 6;
   bool descendants_are_traversable = 7;
   bool include_focus_semantics = 14;
-  Widget child = 15;
+  WidgetExpression child = 15;
 }
 
 message FlutterMaterialAnimatedCrossFade {
-  Widget first_child = 3;
-  Widget second_child = 4;
+  WidgetExpression first_child = 3;
+  WidgetExpression second_child = 4;
   bool exclude_bottom_focus = 13;
 }
 
@@ -4332,21 +4332,21 @@ message FlutterMaterialSliverAnimatedGrid {
 }
 
 message FlutterMaterialAnimatedSize {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialAnimatedSwitcher {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialAnnotatedRegion {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool sized = 5;
 }
 
 message FlutterMaterialWidgetsApp {
   string initial_route = 8;
-  Widget home = 10;
+  WidgetExpression home = 10;
   string title = 13;
   bool show_performance_overlay = 22;
   bool checkerboard_raster_cache_images = 23;
@@ -4387,90 +4387,90 @@ message FlutterMaterialRawAutocomplete {
 }
 
 message FlutterMaterialAutocompleteHighlightedOption {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialAutofillGroup {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialAutomaticKeepAlive {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialBanner {
-  Widget child = 3;
+  WidgetExpression child = 3;
   string message = 4;
 }
 
 message FlutterMaterialCheckedModeBanner {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialDirectionality {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialOpacity {
   double opacity = 3;
   bool always_include_semantics = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialShaderMask {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialBackdropFilter {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialCustomPaint {
   bool is_complex = 6;
   bool will_change = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterMaterialClipRect {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialClipRRect {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterMaterialClipOval {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialClipPath {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialPhysicalModel {
   double elevation = 6;
-  Widget child = 9;
+  WidgetExpression child = 9;
 }
 
 message FlutterMaterialPhysicalShape {
   double elevation = 5;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterMaterialTransform {
   bool transform_hit_tests = 6;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterMaterialTransformNamedRotate {
   double angle = 3;
   bool transform_hit_tests = 6;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterMaterialTransformNamedTranslate {
   bool transform_hit_tests = 4;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterMaterialTransformNamedScale {
@@ -4478,113 +4478,113 @@ message FlutterMaterialTransformNamedScale {
   double scale_x = 4;
   double scale_y = 5;
   bool transform_hit_tests = 8;
-  Widget child = 10;
+  WidgetExpression child = 10;
 }
 
 message FlutterMaterialTransformNamedFlip {
   bool flip_x = 3;
   bool flip_y = 4;
   bool transform_hit_tests = 6;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterMaterialCompositedTransformTarget {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialCompositedTransformFollower {
   bool show_when_unlinked = 4;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterMaterialFittedBox {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterMaterialFractionalTranslation {
   bool transform_hit_tests = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialRotatedBox {
   int64 quarter_turns = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialPadding {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialAlign {
   double width_factor = 4;
   double height_factor = 5;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterMaterialCenter {
   double width_factor = 3;
   double height_factor = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialCustomSingleChildLayout {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialLayoutId {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialCustomMultiChildLayout {
-  repeated Widget children = 4;
+  repeated WidgetExpression children = 4;
 }
 
 message FlutterMaterialSizedBox {
   double width = 3;
   double height = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialSizedBoxNamedExpand {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialSizedBoxNamedShrink {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialSizedBoxNamedFromSize {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialSizedBoxNamedSquare {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double dimension = 4;
 }
 
 message FlutterMaterialConstrainedBox {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialConstraintsTransformBox {
-  Widget child = 3;
+  WidgetExpression child = 3;
   string debug_transform_type = 8;
 }
 
 message FlutterMaterialUnconstrainedBox {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialFractionallySizedBox {
   double width_factor = 4;
   double height_factor = 5;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterMaterialLimitedBox {
   double max_width = 3;
   double max_height = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialOverflowBox {
@@ -4592,58 +4592,58 @@ message FlutterMaterialOverflowBox {
   double max_width = 5;
   double min_height = 6;
   double max_height = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterMaterialSizedOverflowBox {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialOffstage {
   bool offstage = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialAspectRatio {
   double aspect_ratio = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialIntrinsicWidth {
   double step_width = 3;
   double step_height = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialIntrinsicHeight {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialBaseline {
   double baseline = 3;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialSliverToBoxAdapter {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialSliverPadding {
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterMaterialListBody {
   bool reverse = 4;
-  repeated Widget children = 5;
+  repeated WidgetExpression children = 5;
 }
 
 message FlutterMaterialStack {
-  repeated Widget children = 7;
+  repeated WidgetExpression children = 7;
 }
 
 message FlutterMaterialIndexedStack {
   int64 index = 7;
-  repeated Widget children = 8;
+  repeated WidgetExpression children = 8;
 }
 
 message FlutterMaterialPositioned {
@@ -4653,15 +4653,15 @@ message FlutterMaterialPositioned {
   double bottom = 6;
   double width = 7;
   double height = 8;
-  Widget child = 9;
+  WidgetExpression child = 9;
 }
 
 message FlutterMaterialPositionedNamedFromRect {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialPositionedNamedFromRelativeRect {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialPositionedNamedFill {
@@ -4669,7 +4669,7 @@ message FlutterMaterialPositionedNamedFill {
   double top = 4;
   double right = 5;
   double bottom = 6;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterMaterialPositionedNamedDirectional {
@@ -4679,7 +4679,7 @@ message FlutterMaterialPositionedNamedDirectional {
   double bottom = 7;
   double width = 8;
   double height = 9;
-  Widget child = 10;
+  WidgetExpression child = 10;
 }
 
 message FlutterMaterialPositionedDirectional {
@@ -4689,43 +4689,43 @@ message FlutterMaterialPositionedDirectional {
   double bottom = 6;
   double width = 7;
   double height = 8;
-  Widget child = 9;
+  WidgetExpression child = 9;
 }
 
 message FlutterMaterialFlex {
-  repeated Widget children = 11;
+  repeated WidgetExpression children = 11;
 }
 
 message FlutterMaterialRow {
-  repeated Widget children = 9;
+  repeated WidgetExpression children = 9;
 }
 
 message FlutterMaterialColumn {
-  repeated Widget children = 9;
+  repeated WidgetExpression children = 9;
 }
 
 message FlutterMaterialFlexible {
   int64 flex = 3;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialExpanded {
   int64 flex = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialWrap {
   double spacing = 5;
   double run_spacing = 7;
-  repeated Widget children = 12;
+  repeated WidgetExpression children = 12;
 }
 
 message FlutterMaterialFlow {
-  repeated Widget children = 4;
+  repeated WidgetExpression children = 4;
 }
 
 message FlutterMaterialFlowNamedUnwrapped {
-  repeated Widget children = 4;
+  repeated WidgetExpression children = 4;
 }
 
 message FlutterMaterialRichText {
@@ -4745,7 +4745,7 @@ message FlutterMaterialRawImage {
 }
 
 message FlutterMaterialDefaultAssetBundle {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialWidgetToRenderBoxAdapter {
@@ -4753,41 +4753,41 @@ message FlutterMaterialWidgetToRenderBoxAdapter {
 }
 
 message FlutterMaterialListener {
-  Widget child = 13;
+  WidgetExpression child = 13;
 }
 
 message FlutterMaterialMouseRegion {
   bool opaque = 7;
-  Widget child = 9;
+  WidgetExpression child = 9;
 }
 
 message FlutterMaterialRepaintBoundary {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialRepaintBoundaryNamedWrap {
-  Widget child = 2;
+  WidgetExpression child = 2;
   int64 child_index = 3;
 }
 
 message FlutterMaterialIgnorePointer {
   bool ignoring = 3;
   bool ignoring_semantics = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialAbsorbPointer {
   bool absorbing = 3;
   bool ignoring_semantics = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialMetaData {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialSemantics {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool container = 4;
   bool explicit_child_nodes = 5;
   bool exclude_semantics = 6;
@@ -4827,7 +4827,7 @@ message FlutterMaterialSemantics {
 }
 
 message FlutterMaterialSemanticsNamedFromProperties {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool container = 4;
   bool explicit_child_nodes = 5;
   bool exclude_semantics = 6;
@@ -4835,30 +4835,30 @@ message FlutterMaterialSemanticsNamedFromProperties {
 }
 
 message FlutterMaterialMergeSemantics {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialBlockSemantics {
   bool blocking = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialExcludeSemantics {
   bool excluding = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialIndexedSemantics {
   int64 index = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialKeyedSubtree {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialKeyedSubtreeNamedWrap {
-  Widget child = 2;
+  WidgetExpression child = 2;
   int64 child_index = 3;
 }
 
@@ -4871,34 +4871,34 @@ message FlutterMaterialStatefulBuilder {
 }
 
 message FlutterMaterialColoredBox {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialRenderObjectToWidgetAdapter {
-  Widget child = 2;
+  WidgetExpression child = 2;
   string debug_short_description = 4;
 }
 
 message FlutterMaterialColorFiltered {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialDecoratedBox {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialContainer {
   double width = 8;
   double height = 9;
-  Widget child = 14;
+  WidgetExpression child = 14;
 }
 
 message FlutterMaterialDecoratedSliver {
-  Widget sliver = 5;
+  WidgetExpression sliver = 5;
 }
 
 message FlutterMaterialDefaultSelectionStyle {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterMaterialDefaultSelectionStyleNamedFallback {
@@ -4906,24 +4906,24 @@ message FlutterMaterialDefaultSelectionStyleNamedFallback {
 }
 
 message FlutterMaterialDefaultTextEditingShortcuts {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialDismissible {
-  Widget child = 3;
-  Widget background = 4;
-  Widget secondary_background = 5;
+  WidgetExpression child = 3;
+  WidgetExpression background = 4;
+  WidgetExpression secondary_background = 5;
   double cross_axis_end_offset = 14;
 }
 
 message FlutterMaterialDisplayFeatureSubScreen {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialDraggable {
-  Widget child = 3;
-  Widget feedback = 4;
-  Widget child_when_dragging = 7;
+  WidgetExpression child = 3;
+  WidgetExpression feedback = 4;
+  WidgetExpression child_when_dragging = 7;
   int64 max_simultaneous_drags = 11;
   bool ignoring_feedback_semantics = 17;
   bool ignoring_feedback_pointer = 18;
@@ -4931,9 +4931,9 @@ message FlutterMaterialDraggable {
 }
 
 message FlutterMaterialLongPressDraggable {
-  Widget child = 3;
-  Widget feedback = 4;
-  Widget child_when_dragging = 7;
+  WidgetExpression child = 3;
+  WidgetExpression feedback = 4;
+  WidgetExpression child_when_dragging = 7;
   int64 max_simultaneous_drags = 10;
   bool haptic_feedback_on_start = 16;
   bool ignoring_feedback_semantics = 17;
@@ -4955,11 +4955,11 @@ message FlutterMaterialDraggableScrollableSheet {
 }
 
 message FlutterMaterialDraggableScrollableActuator {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialDualTransitionBuilder {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterMaterialEditableText {
@@ -5028,7 +5028,7 @@ message FlutterMaterialFadeInImageNamedAssetNetwork {
 }
 
 message FlutterMaterialFocus {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool autofocus = 6;
   bool can_request_focus = 10;
   bool skip_traversal = 11;
@@ -5039,13 +5039,13 @@ message FlutterMaterialFocus {
 }
 
 message FlutterMaterialFocusNamedWithExternalFocusNode {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool autofocus = 6;
   bool include_semantics = 8;
 }
 
 message FlutterMaterialFocusScope {
-  Widget child = 5;
+  WidgetExpression child = 5;
   bool autofocus = 6;
   bool can_request_focus = 8;
   bool skip_traversal = 9;
@@ -5053,32 +5053,32 @@ message FlutterMaterialFocusScope {
 }
 
 message FlutterMaterialFocusScopeNamedWithExternalFocusNode {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool autofocus = 6;
 }
 
 message FlutterMaterialExcludeFocus {
   bool excluding = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialFocusTraversalOrder {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialFocusTraversalGroup {
   bool descendants_are_focusable = 4;
   bool descendants_are_traversable = 5;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterMaterialExcludeFocusTraversal {
   bool excluding = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialForm {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialFormField {
@@ -5095,15 +5095,15 @@ message FlutterMaterialStatefulWidget {
 }
 
 message FlutterMaterialProxyWidget {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialParentDataWidget {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialInheritedWidget {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialRenderObjectWidget {
@@ -5115,11 +5115,11 @@ message FlutterMaterialLeafRenderObjectWidget {
 }
 
 message FlutterMaterialSingleChildRenderObjectWidget {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialMultiChildRenderObjectWidget {
-  repeated Widget children = 3;
+  repeated WidgetExpression children = 3;
 }
 
 message FlutterMaterialErrorWidget {
@@ -5131,13 +5131,13 @@ message FlutterMaterialErrorWidgetNamedWithDetails {
 }
 
 message FlutterMaterialGestureDetector {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool exclude_from_semantics = 62;
   bool trackpad_scroll_causes_scale = 64;
 }
 
 message FlutterMaterialRawGestureDetector {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool exclude_from_semantics = 6;
 }
 
@@ -5145,16 +5145,16 @@ message FlutterMaterialGridPaper {
   double interval = 4;
   int64 divisions = 5;
   int64 subdivisions = 6;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterMaterialHero {
   bool transition_on_user_gestures = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterMaterialHeroMode {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool enabled = 4;
 }
 
@@ -5168,7 +5168,7 @@ message FlutterMaterialIcon {
 }
 
 message FlutterMaterialIconTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialImage {
@@ -5237,7 +5237,7 @@ message FlutterMaterialImageNamedMemory {
 }
 
 message FlutterMaterialImageFiltered {
-  Widget child = 4;
+  WidgetExpression child = 4;
   bool enabled = 5;
 }
 
@@ -5253,21 +5253,21 @@ message FlutterMaterialImplicitlyAnimatedWidget {
 message FlutterMaterialAnimatedContainer {
   double width = 8;
   double height = 9;
-  Widget child = 14;
+  WidgetExpression child = 14;
 }
 
 message FlutterMaterialAnimatedPadding {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialAnimatedAlign {
-  Widget child = 4;
+  WidgetExpression child = 4;
   double height_factor = 5;
   double width_factor = 6;
 }
 
 message FlutterMaterialAnimatedPositioned {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double left = 4;
   double top = 5;
   double right = 6;
@@ -5277,11 +5277,11 @@ message FlutterMaterialAnimatedPositioned {
 }
 
 message FlutterMaterialAnimatedPositionedNamedFromRect {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialAnimatedPositionedDirectional {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double start = 4;
   double top = 5;
   double end = 6;
@@ -5291,60 +5291,60 @@ message FlutterMaterialAnimatedPositionedDirectional {
 }
 
 message FlutterMaterialAnimatedScale {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double scale = 4;
 }
 
 message FlutterMaterialAnimatedRotation {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double turns = 4;
 }
 
 message FlutterMaterialAnimatedSlide {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialAnimatedOpacity {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double opacity = 4;
   bool always_include_semantics = 8;
 }
 
 message FlutterMaterialSliverAnimatedOpacity {
-  Widget sliver = 3;
+  WidgetExpression sliver = 3;
   double opacity = 4;
   bool always_include_semantics = 8;
 }
 
 message FlutterMaterialAnimatedDefaultTextStyle {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool soft_wrap = 6;
   int64 max_lines = 8;
 }
 
 message FlutterMaterialAnimatedPhysicalModel {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double elevation = 7;
   bool animate_color = 9;
   bool animate_shadow_color = 11;
 }
 
 message FlutterMaterialAnimatedFractionallySizedBox {
-  Widget child = 4;
+  WidgetExpression child = 4;
   double height_factor = 5;
   double width_factor = 6;
 }
 
 message FlutterMaterialInheritedModel {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialInheritedNotifier {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialInheritedTheme {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialInteractiveViewer {
@@ -5357,7 +5357,7 @@ message FlutterMaterialInteractiveViewer {
   bool scale_enabled = 15;
   double scale_factor = 16;
   bool trackpad_scroll_causes_scale = 19;
-  Widget child = 20;
+  WidgetExpression child = 20;
 }
 
 message FlutterMaterialInteractiveViewerNamedBuilder {
@@ -5374,7 +5374,7 @@ message FlutterMaterialInteractiveViewerNamedBuilder {
 message FlutterMaterialKeyboardListener {
   bool autofocus = 4;
   bool include_semantics = 5;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterMaterialConstrainedLayoutBuilder {
@@ -5396,7 +5396,7 @@ message FlutterMaterialListWheelScrollView {
   double squeeze = 12;
   bool render_children_outside_viewport = 14;
   string restoration_id = 16;
-  repeated Widget children = 18;
+  repeated WidgetExpression children = 18;
 }
 
 message FlutterMaterialListWheelScrollViewNamedUseDelegate {
@@ -5425,24 +5425,24 @@ message FlutterMaterialListWheelViewport {
 }
 
 message FlutterMaterialLocalizations {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialLocalizationsNamedOverride {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterMaterialLookupBoundary {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialRawMagnifier {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double magnification_scale = 6;
 }
 
 message FlutterMaterialMediaQuery {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialMediaQueryNamedRemovePadding {
@@ -5450,7 +5450,7 @@ message FlutterMaterialMediaQueryNamedRemovePadding {
   bool remove_top = 5;
   bool remove_right = 6;
   bool remove_bottom = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterMaterialMediaQueryNamedRemoveViewInsets {
@@ -5458,7 +5458,7 @@ message FlutterMaterialMediaQueryNamedRemoveViewInsets {
   bool remove_top = 5;
   bool remove_right = 6;
   bool remove_bottom = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterMaterialMediaQueryNamedRemoveViewPadding {
@@ -5466,7 +5466,7 @@ message FlutterMaterialMediaQueryNamedRemoveViewPadding {
   bool remove_top = 5;
   bool remove_right = 6;
   bool remove_bottom = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterMaterialModalBarrier {
@@ -5484,19 +5484,19 @@ message FlutterMaterialAnimatedModalBarrier {
 }
 
 message FlutterMaterialNavigationToolbar {
-  Widget leading = 3;
-  Widget middle = 4;
-  Widget trailing = 5;
+  WidgetExpression leading = 3;
+  WidgetExpression middle = 4;
+  WidgetExpression trailing = 5;
   bool center_middle = 6;
   double middle_spacing = 7;
 }
 
 message FlutterMaterialHeroControllerScope {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialHeroControllerScopeNamedNone {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialNavigator {
@@ -5508,26 +5508,26 @@ message FlutterMaterialNavigator {
 
 message FlutterMaterialNestedScrollView {
   bool reverse = 5;
-  Widget body = 8;
+  WidgetExpression body = 8;
   bool float_header_slivers = 10;
   string restoration_id = 12;
 }
 
 message FlutterMaterialSliverOverlapAbsorber {
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterMaterialSliverOverlapInjector {
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterMaterialNestedScrollViewViewport {
   double anchor = 5;
-  repeated Widget slivers = 8;
+  repeated WidgetExpression slivers = 8;
 }
 
 message FlutterMaterialNotificationListener {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialOrientationBuilder {
@@ -5537,7 +5537,7 @@ message FlutterMaterialOrientationBuilder {
 message FlutterMaterialOverflowBar {
   double spacing = 3;
   double overflow_spacing = 5;
-  repeated Widget children = 10;
+  repeated WidgetExpression children = 10;
 }
 
 message FlutterMaterialOverlay {
@@ -5545,31 +5545,31 @@ message FlutterMaterialOverlay {
 }
 
 message FlutterMaterialOverlayPortal {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialOverlayPortalNamedTargetsRootOverlay {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialGlowingOverscrollIndicator {
   bool show_leading = 3;
   bool show_trailing = 4;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterMaterialStretchingOverscrollIndicator {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterMaterialPageStorage {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialPageView {
   bool reverse = 4;
   bool page_snapping = 7;
-  repeated Widget children = 9;
+  repeated WidgetExpression children = 9;
   bool allow_implicit_scrolling = 11;
   string restoration_id = 12;
   bool pad_ends = 15;
@@ -5609,16 +5609,16 @@ message FlutterMaterialPlaceholder {
   double stroke_width = 4;
   double fallback_width = 5;
   double fallback_height = 6;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterMaterialPlatformMenuBar {
-  Widget child = 4;
-  Widget body = 5;
+  WidgetExpression child = 4;
+  WidgetExpression body = 5;
 }
 
 message FlutterMaterialPlatformSelectableRegionContextMenu {
-  Widget child = 2;
+  WidgetExpression child = 2;
 }
 
 message FlutterMaterialAndroidView {
@@ -5650,27 +5650,27 @@ message FlutterMaterialPreferredSizeWidget {
 }
 
 message FlutterMaterialPreferredSize {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialPrimaryScrollController {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterMaterialPrimaryScrollControllerNamedNone {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialRawKeyboardListener {
   bool autofocus = 4;
   bool include_semantics = 5;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterMaterialReorderableList {
   int64 item_count = 4;
   double item_extent = 8;
-  Widget prototype_item = 9;
+  WidgetExpression prototype_item = 9;
   bool reverse = 13;
   bool primary = 15;
   bool shrink_wrap = 17;
@@ -5683,34 +5683,34 @@ message FlutterMaterialReorderableList {
 message FlutterMaterialSliverReorderableList {
   int64 item_count = 5;
   double item_extent = 9;
-  Widget prototype_item = 10;
+  WidgetExpression prototype_item = 10;
   double auto_scroller_velocity_scalar = 12;
 }
 
 message FlutterMaterialReorderableDragStartListener {
-  Widget child = 3;
+  WidgetExpression child = 3;
   int64 index = 4;
   bool enabled = 5;
 }
 
 message FlutterMaterialReorderableDelayedDragStartListener {
-  Widget child = 3;
+  WidgetExpression child = 3;
   int64 index = 4;
   bool enabled = 5;
 }
 
 message FlutterMaterialRestorationScope {
   string restoration_id = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialUnmanagedRestorationScope {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialRootRestorationScope {
   string restoration_id = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialRouter {
@@ -5722,7 +5722,7 @@ message FlutterMaterialRouterNamedWithConfig {
 }
 
 message FlutterMaterialBackButtonListener {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialSafeArea {
@@ -5731,7 +5731,7 @@ message FlutterMaterialSafeArea {
   bool right = 5;
   bool bottom = 6;
   bool maintain_bottom_view_padding = 8;
-  Widget child = 9;
+  WidgetExpression child = 9;
 }
 
 message FlutterMaterialSliverSafeArea {
@@ -5739,15 +5739,15 @@ message FlutterMaterialSliverSafeArea {
   bool top = 4;
   bool right = 5;
   bool bottom = 6;
-  Widget sliver = 8;
+  WidgetExpression sliver = 8;
 }
 
 message FlutterMaterialScrollConfiguration {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialScrollNotificationObserver {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialScrollView {
@@ -5766,7 +5766,7 @@ message FlutterMaterialCustomScrollView {
   bool shrink_wrap = 9;
   double anchor = 11;
   double cache_extent = 12;
-  repeated Widget slivers = 13;
+  repeated WidgetExpression slivers = 13;
   int64 semantic_child_count = 14;
   string restoration_id = 17;
 }
@@ -5785,12 +5785,12 @@ message FlutterMaterialListView {
   bool primary = 6;
   bool shrink_wrap = 8;
   double item_extent = 10;
-  Widget prototype_item = 11;
+  WidgetExpression prototype_item = 11;
   bool add_automatic_keep_alives = 12;
   bool add_repaint_boundaries = 13;
   bool add_semantic_indexes = 14;
   double cache_extent = 15;
-  repeated Widget children = 16;
+  repeated WidgetExpression children = 16;
   int64 semantic_child_count = 17;
   string restoration_id = 20;
 }
@@ -5800,7 +5800,7 @@ message FlutterMaterialListViewNamedBuilder {
   bool primary = 6;
   bool shrink_wrap = 8;
   double item_extent = 10;
-  Widget prototype_item = 11;
+  WidgetExpression prototype_item = 11;
   int64 item_count = 14;
   bool add_automatic_keep_alives = 15;
   bool add_repaint_boundaries = 16;
@@ -5827,7 +5827,7 @@ message FlutterMaterialListViewNamedCustom {
   bool primary = 6;
   bool shrink_wrap = 8;
   double item_extent = 10;
-  Widget prototype_item = 11;
+  WidgetExpression prototype_item = 11;
   double cache_extent = 13;
   int64 semantic_child_count = 14;
   string restoration_id = 17;
@@ -5841,7 +5841,7 @@ message FlutterMaterialGridView {
   bool add_repaint_boundaries = 12;
   bool add_semantic_indexes = 13;
   double cache_extent = 14;
-  repeated Widget children = 15;
+  repeated WidgetExpression children = 15;
   int64 semantic_child_count = 16;
   string restoration_id = 20;
 }
@@ -5880,7 +5880,7 @@ message FlutterMaterialGridViewNamedCount {
   bool add_repaint_boundaries = 15;
   bool add_semantic_indexes = 16;
   double cache_extent = 17;
-  repeated Widget children = 18;
+  repeated WidgetExpression children = 18;
   int64 semantic_child_count = 19;
   string restoration_id = 22;
 }
@@ -5897,7 +5897,7 @@ message FlutterMaterialGridViewNamedExtent {
   bool add_repaint_boundaries = 15;
   bool add_semantic_indexes = 16;
   double cache_extent = 17;
-  repeated Widget children = 18;
+  repeated WidgetExpression children = 18;
   int64 semantic_child_count = 19;
   string restoration_id = 22;
 }
@@ -5914,7 +5914,7 @@ message FlutterMaterialTwoDimensionalScrollable {
 }
 
 message FlutterMaterialRawScrollbar {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool thumb_visibility = 5;
   double thickness = 8;
   double min_thumb_length = 10;
@@ -5926,56 +5926,56 @@ message FlutterMaterialRawScrollbar {
 }
 
 message FlutterMaterialSelectableRegion {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterMaterialSelectionContainer {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialSelectionContainerNamedDisabled {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialSelectionRegistrarScope {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialSemanticsDebugger {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialSharedAppData {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialShortcuts {
-  Widget child = 4;
+  WidgetExpression child = 4;
   string debug_label = 5;
 }
 
 message FlutterMaterialShortcutsNamedManager {
-  Widget child = 4;
+  WidgetExpression child = 4;
   string debug_label = 5;
 }
 
 message FlutterMaterialCallbackShortcuts {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialShortcutRegistrar {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialSingleChildScrollView {
   bool reverse = 4;
   bool primary = 6;
-  Widget child = 9;
+  WidgetExpression child = 9;
   string restoration_id = 12;
 }
 
 message FlutterMaterialSizeChangedLayoutNotifier {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialSliverWithKeepAliveWidget {
@@ -6005,7 +6005,7 @@ message FlutterMaterialSliverListNamedSeparated {
 }
 
 message FlutterMaterialSliverListNamedList {
-  repeated Widget children = 3;
+  repeated WidgetExpression children = 3;
   bool add_automatic_keep_alives = 4;
   bool add_repaint_boundaries = 5;
   bool add_semantic_indexes = 6;
@@ -6024,7 +6024,7 @@ message FlutterMaterialSliverFixedExtentListNamedBuilder {
 }
 
 message FlutterMaterialSliverFixedExtentListNamedList {
-  repeated Widget children = 3;
+  repeated WidgetExpression children = 3;
   double item_extent = 4;
   bool add_automatic_keep_alives = 5;
   bool add_repaint_boundaries = 6;
@@ -6047,7 +6047,7 @@ message FlutterMaterialSliverGridNamedCount {
   double main_axis_spacing = 4;
   double cross_axis_spacing = 5;
   double child_aspect_ratio = 6;
-  repeated Widget children = 7;
+  repeated WidgetExpression children = 7;
 }
 
 message FlutterMaterialSliverGridNamedExtent {
@@ -6055,47 +6055,47 @@ message FlutterMaterialSliverGridNamedExtent {
   double main_axis_spacing = 4;
   double cross_axis_spacing = 5;
   double child_aspect_ratio = 6;
-  repeated Widget children = 7;
+  repeated WidgetExpression children = 7;
 }
 
 message FlutterMaterialSliverOpacity {
   double opacity = 3;
   bool always_include_semantics = 4;
-  Widget sliver = 5;
+  WidgetExpression sliver = 5;
 }
 
 message FlutterMaterialSliverIgnorePointer {
   bool ignoring = 3;
   bool ignoring_semantics = 4;
-  Widget sliver = 5;
+  WidgetExpression sliver = 5;
 }
 
 message FlutterMaterialSliverOffstage {
   bool offstage = 3;
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterMaterialKeepAlive {
   bool keep_alive = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialSliverConstrainedCrossAxis {
   double max_extent = 3;
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterMaterialSliverCrossAxisExpanded {
   int64 flex = 3;
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterMaterialSliverCrossAxisGroup {
-  repeated Widget slivers = 3;
+  repeated WidgetExpression slivers = 3;
 }
 
 message FlutterMaterialSliverMainAxisGroup {
-  repeated Widget slivers = 3;
+  repeated WidgetExpression slivers = 3;
 }
 
 message FlutterMaterialSliverFillViewport {
@@ -6104,7 +6104,7 @@ message FlutterMaterialSliverFillViewport {
 }
 
 message FlutterMaterialSliverFillRemaining {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool has_scroll_body = 4;
   bool fill_overscroll = 5;
 }
@@ -6119,11 +6119,11 @@ message FlutterMaterialSliverPersistentHeader {
 }
 
 message FlutterMaterialSliverPrototypeExtentList {
-  Widget prototype_item = 4;
+  WidgetExpression prototype_item = 4;
 }
 
 message FlutterMaterialSliverPrototypeExtentListNamedBuilder {
-  Widget prototype_item = 4;
+  WidgetExpression prototype_item = 4;
   int64 item_count = 6;
   bool add_automatic_keep_alives = 7;
   bool add_repaint_boundaries = 8;
@@ -6131,8 +6131,8 @@ message FlutterMaterialSliverPrototypeExtentListNamedBuilder {
 }
 
 message FlutterMaterialSliverPrototypeExtentListNamedList {
-  repeated Widget children = 3;
-  Widget prototype_item = 4;
+  repeated WidgetExpression children = 3;
+  WidgetExpression prototype_item = 4;
   bool add_automatic_keep_alives = 5;
   bool add_repaint_boundaries = 6;
   bool add_semantic_indexes = 7;
@@ -6144,7 +6144,7 @@ message FlutterMaterialSlottedMultiChildRenderObjectWidget {
 
 message FlutterMaterialSnapshotWidget {
   bool autoresize = 5;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterMaterialSpacer {
@@ -6160,21 +6160,21 @@ message FlutterMaterialTable {
 }
 
 message FlutterMaterialTableCell {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialTapRegionSurface {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialTapRegion {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool enabled = 4;
   string debug_label = 9;
 }
 
 message FlutterMaterialTextFieldTapRegion {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool enabled = 4;
   string debug_label = 7;
 }
@@ -6182,7 +6182,7 @@ message FlutterMaterialTextFieldTapRegion {
 message FlutterMaterialDefaultTextStyle {
   bool soft_wrap = 5;
   int64 max_lines = 7;
-  Widget child = 10;
+  WidgetExpression child = 10;
 }
 
 message FlutterMaterialDefaultTextStyleNamedFallback {
@@ -6190,7 +6190,7 @@ message FlutterMaterialDefaultTextStyleNamedFallback {
 }
 
 message FlutterMaterialDefaultTextHeightBehavior {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialText {
@@ -6209,7 +6209,7 @@ message FlutterMaterialTextNamedRich {
 }
 
 message FlutterMaterialTextSelectionGestureDetector {
-  Widget child = 19;
+  WidgetExpression child = 19;
 }
 
 message FlutterMaterialTexture {
@@ -6219,12 +6219,12 @@ message FlutterMaterialTexture {
 
 message FlutterMaterialTickerMode {
   bool enabled = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialTitle {
   string title = 3;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialAnimatedWidget {
@@ -6233,66 +6233,66 @@ message FlutterMaterialAnimatedWidget {
 
 message FlutterMaterialSlideTransition {
   bool transform_hit_tests = 4;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterMaterialScaleTransition {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterMaterialRotationTransition {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterMaterialSizeTransition {
   double axis_alignment = 5;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterMaterialFadeTransition {
   bool always_include_semantics = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialSliverFadeTransition {
   bool always_include_semantics = 4;
-  Widget sliver = 5;
+  WidgetExpression sliver = 5;
 }
 
 message FlutterMaterialPositionedTransition {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterMaterialRelativePositionedTransition {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialDecoratedBoxTransition {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialAlignTransition {
-  Widget child = 4;
+  WidgetExpression child = 4;
   double width_factor = 5;
   double height_factor = 6;
 }
 
 message FlutterMaterialDefaultTextStyleTransition {
-  Widget child = 4;
+  WidgetExpression child = 4;
   bool soft_wrap = 6;
   int64 max_lines = 8;
 }
 
 message FlutterMaterialListenableBuilder {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialAnimatedBuilder {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialTweenAnimationBuilder {
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterMaterialTwoDimensionalScrollView {
@@ -6305,7 +6305,7 @@ message FlutterMaterialTwoDimensionalViewport {
 }
 
 message FlutterMaterialUndoHistory {
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterMaterialUniqueWidget {
@@ -6313,26 +6313,26 @@ message FlutterMaterialUniqueWidget {
 }
 
 message FlutterMaterialValueListenableBuilder {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterMaterialView {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialViewport {
   double anchor = 5;
   double cache_extent = 8;
-  repeated Widget slivers = 11;
+  repeated WidgetExpression slivers = 11;
 }
 
 message FlutterMaterialShrinkWrappingViewport {
-  repeated Widget slivers = 7;
+  repeated WidgetExpression slivers = 7;
 }
 
 message FlutterMaterialVisibility {
-  Widget child = 3;
-  Widget replacement = 4;
+  WidgetExpression child = 3;
+  WidgetExpression replacement = 4;
   bool visible = 5;
   bool maintain_state = 6;
   bool maintain_animation = 7;
@@ -6342,13 +6342,13 @@ message FlutterMaterialVisibility {
 }
 
 message FlutterMaterialVisibilityNamedMaintain {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool visible = 4;
 }
 
 message FlutterMaterialSliverVisibility {
-  Widget sliver = 3;
-  Widget replacement_sliver = 4;
+  WidgetExpression sliver = 3;
+  WidgetExpression replacement_sliver = 4;
   bool visible = 5;
   bool maintain_state = 6;
   bool maintain_animation = 7;
@@ -6358,25 +6358,25 @@ message FlutterMaterialSliverVisibility {
 }
 
 message FlutterMaterialSliverVisibilityNamedMaintain {
-  Widget sliver = 3;
-  Widget replacement_sliver = 4;
+  WidgetExpression sliver = 3;
+  WidgetExpression replacement_sliver = 4;
   bool visible = 5;
 }
 
 message FlutterMaterialWidgetInspector {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterMaterialWillPopScope {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsActionListener {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsActions {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsFocusableActionDetector {
@@ -6385,12 +6385,12 @@ message FlutterWidgetsFocusableActionDetector {
   bool descendants_are_focusable = 6;
   bool descendants_are_traversable = 7;
   bool include_focus_semantics = 14;
-  Widget child = 15;
+  WidgetExpression child = 15;
 }
 
 message FlutterWidgetsAnimatedCrossFade {
-  Widget first_child = 3;
-  Widget second_child = 4;
+  WidgetExpression first_child = 3;
+  WidgetExpression second_child = 4;
   bool exclude_bottom_focus = 13;
 }
 
@@ -6416,21 +6416,21 @@ message FlutterWidgetsSliverAnimatedGrid {
 }
 
 message FlutterWidgetsAnimatedSize {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsAnimatedSwitcher {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsAnnotatedRegion {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool sized = 5;
 }
 
 message FlutterWidgetsWidgetsApp {
   string initial_route = 8;
-  Widget home = 10;
+  WidgetExpression home = 10;
   string title = 13;
   bool show_performance_overlay = 22;
   bool checkerboard_raster_cache_images = 23;
@@ -6471,90 +6471,90 @@ message FlutterWidgetsRawAutocomplete {
 }
 
 message FlutterWidgetsAutocompleteHighlightedOption {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsAutofillGroup {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsAutomaticKeepAlive {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsBanner {
-  Widget child = 3;
+  WidgetExpression child = 3;
   string message = 4;
 }
 
 message FlutterWidgetsCheckedModeBanner {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsDirectionality {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsOpacity {
   double opacity = 3;
   bool always_include_semantics = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsShaderMask {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsBackdropFilter {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsCustomPaint {
   bool is_complex = 6;
   bool will_change = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterWidgetsClipRect {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsClipRRect {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterWidgetsClipOval {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsClipPath {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsPhysicalModel {
   double elevation = 6;
-  Widget child = 9;
+  WidgetExpression child = 9;
 }
 
 message FlutterWidgetsPhysicalShape {
   double elevation = 5;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterWidgetsTransform {
   bool transform_hit_tests = 6;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterWidgetsTransformNamedRotate {
   double angle = 3;
   bool transform_hit_tests = 6;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterWidgetsTransformNamedTranslate {
   bool transform_hit_tests = 4;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterWidgetsTransformNamedScale {
@@ -6562,113 +6562,113 @@ message FlutterWidgetsTransformNamedScale {
   double scale_x = 4;
   double scale_y = 5;
   bool transform_hit_tests = 8;
-  Widget child = 10;
+  WidgetExpression child = 10;
 }
 
 message FlutterWidgetsTransformNamedFlip {
   bool flip_x = 3;
   bool flip_y = 4;
   bool transform_hit_tests = 6;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterWidgetsCompositedTransformTarget {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsCompositedTransformFollower {
   bool show_when_unlinked = 4;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterWidgetsFittedBox {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterWidgetsFractionalTranslation {
   bool transform_hit_tests = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsRotatedBox {
   int64 quarter_turns = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsPadding {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsAlign {
   double width_factor = 4;
   double height_factor = 5;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterWidgetsCenter {
   double width_factor = 3;
   double height_factor = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsCustomSingleChildLayout {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsLayoutId {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsCustomMultiChildLayout {
-  repeated Widget children = 4;
+  repeated WidgetExpression children = 4;
 }
 
 message FlutterWidgetsSizedBox {
   double width = 3;
   double height = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsSizedBoxNamedExpand {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsSizedBoxNamedShrink {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsSizedBoxNamedFromSize {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsSizedBoxNamedSquare {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double dimension = 4;
 }
 
 message FlutterWidgetsConstrainedBox {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsConstraintsTransformBox {
-  Widget child = 3;
+  WidgetExpression child = 3;
   string debug_transform_type = 8;
 }
 
 message FlutterWidgetsUnconstrainedBox {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsFractionallySizedBox {
   double width_factor = 4;
   double height_factor = 5;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterWidgetsLimitedBox {
   double max_width = 3;
   double max_height = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsOverflowBox {
@@ -6676,58 +6676,58 @@ message FlutterWidgetsOverflowBox {
   double max_width = 5;
   double min_height = 6;
   double max_height = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterWidgetsSizedOverflowBox {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsOffstage {
   bool offstage = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsAspectRatio {
   double aspect_ratio = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsIntrinsicWidth {
   double step_width = 3;
   double step_height = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsIntrinsicHeight {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsBaseline {
   double baseline = 3;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsSliverToBoxAdapter {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsSliverPadding {
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterWidgetsListBody {
   bool reverse = 4;
-  repeated Widget children = 5;
+  repeated WidgetExpression children = 5;
 }
 
 message FlutterWidgetsStack {
-  repeated Widget children = 7;
+  repeated WidgetExpression children = 7;
 }
 
 message FlutterWidgetsIndexedStack {
   int64 index = 7;
-  repeated Widget children = 8;
+  repeated WidgetExpression children = 8;
 }
 
 message FlutterWidgetsPositioned {
@@ -6737,15 +6737,15 @@ message FlutterWidgetsPositioned {
   double bottom = 6;
   double width = 7;
   double height = 8;
-  Widget child = 9;
+  WidgetExpression child = 9;
 }
 
 message FlutterWidgetsPositionedNamedFromRect {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsPositionedNamedFromRelativeRect {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsPositionedNamedFill {
@@ -6753,7 +6753,7 @@ message FlutterWidgetsPositionedNamedFill {
   double top = 4;
   double right = 5;
   double bottom = 6;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterWidgetsPositionedNamedDirectional {
@@ -6763,7 +6763,7 @@ message FlutterWidgetsPositionedNamedDirectional {
   double bottom = 7;
   double width = 8;
   double height = 9;
-  Widget child = 10;
+  WidgetExpression child = 10;
 }
 
 message FlutterWidgetsPositionedDirectional {
@@ -6773,43 +6773,43 @@ message FlutterWidgetsPositionedDirectional {
   double bottom = 6;
   double width = 7;
   double height = 8;
-  Widget child = 9;
+  WidgetExpression child = 9;
 }
 
 message FlutterWidgetsFlex {
-  repeated Widget children = 11;
+  repeated WidgetExpression children = 11;
 }
 
 message FlutterWidgetsRow {
-  repeated Widget children = 9;
+  repeated WidgetExpression children = 9;
 }
 
 message FlutterWidgetsColumn {
-  repeated Widget children = 9;
+  repeated WidgetExpression children = 9;
 }
 
 message FlutterWidgetsFlexible {
   int64 flex = 3;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsExpanded {
   int64 flex = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsWrap {
   double spacing = 5;
   double run_spacing = 7;
-  repeated Widget children = 12;
+  repeated WidgetExpression children = 12;
 }
 
 message FlutterWidgetsFlow {
-  repeated Widget children = 4;
+  repeated WidgetExpression children = 4;
 }
 
 message FlutterWidgetsFlowNamedUnwrapped {
-  repeated Widget children = 4;
+  repeated WidgetExpression children = 4;
 }
 
 message FlutterWidgetsRichText {
@@ -6829,7 +6829,7 @@ message FlutterWidgetsRawImage {
 }
 
 message FlutterWidgetsDefaultAssetBundle {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsWidgetToRenderBoxAdapter {
@@ -6837,41 +6837,41 @@ message FlutterWidgetsWidgetToRenderBoxAdapter {
 }
 
 message FlutterWidgetsListener {
-  Widget child = 13;
+  WidgetExpression child = 13;
 }
 
 message FlutterWidgetsMouseRegion {
   bool opaque = 7;
-  Widget child = 9;
+  WidgetExpression child = 9;
 }
 
 message FlutterWidgetsRepaintBoundary {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsRepaintBoundaryNamedWrap {
-  Widget child = 2;
+  WidgetExpression child = 2;
   int64 child_index = 3;
 }
 
 message FlutterWidgetsIgnorePointer {
   bool ignoring = 3;
   bool ignoring_semantics = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsAbsorbPointer {
   bool absorbing = 3;
   bool ignoring_semantics = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsMetaData {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsSemantics {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool container = 4;
   bool explicit_child_nodes = 5;
   bool exclude_semantics = 6;
@@ -6911,7 +6911,7 @@ message FlutterWidgetsSemantics {
 }
 
 message FlutterWidgetsSemanticsNamedFromProperties {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool container = 4;
   bool explicit_child_nodes = 5;
   bool exclude_semantics = 6;
@@ -6919,30 +6919,30 @@ message FlutterWidgetsSemanticsNamedFromProperties {
 }
 
 message FlutterWidgetsMergeSemantics {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsBlockSemantics {
   bool blocking = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsExcludeSemantics {
   bool excluding = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsIndexedSemantics {
   int64 index = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsKeyedSubtree {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsKeyedSubtreeNamedWrap {
-  Widget child = 2;
+  WidgetExpression child = 2;
   int64 child_index = 3;
 }
 
@@ -6955,34 +6955,34 @@ message FlutterWidgetsStatefulBuilder {
 }
 
 message FlutterWidgetsColoredBox {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsRenderObjectToWidgetAdapter {
-  Widget child = 2;
+  WidgetExpression child = 2;
   string debug_short_description = 4;
 }
 
 message FlutterWidgetsColorFiltered {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsDecoratedBox {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsContainer {
   double width = 8;
   double height = 9;
-  Widget child = 14;
+  WidgetExpression child = 14;
 }
 
 message FlutterWidgetsDecoratedSliver {
-  Widget sliver = 5;
+  WidgetExpression sliver = 5;
 }
 
 message FlutterWidgetsDefaultSelectionStyle {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterWidgetsDefaultSelectionStyleNamedFallback {
@@ -6990,24 +6990,24 @@ message FlutterWidgetsDefaultSelectionStyleNamedFallback {
 }
 
 message FlutterWidgetsDefaultTextEditingShortcuts {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsDismissible {
-  Widget child = 3;
-  Widget background = 4;
-  Widget secondary_background = 5;
+  WidgetExpression child = 3;
+  WidgetExpression background = 4;
+  WidgetExpression secondary_background = 5;
   double cross_axis_end_offset = 14;
 }
 
 message FlutterWidgetsDisplayFeatureSubScreen {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsDraggable {
-  Widget child = 3;
-  Widget feedback = 4;
-  Widget child_when_dragging = 7;
+  WidgetExpression child = 3;
+  WidgetExpression feedback = 4;
+  WidgetExpression child_when_dragging = 7;
   int64 max_simultaneous_drags = 11;
   bool ignoring_feedback_semantics = 17;
   bool ignoring_feedback_pointer = 18;
@@ -7015,9 +7015,9 @@ message FlutterWidgetsDraggable {
 }
 
 message FlutterWidgetsLongPressDraggable {
-  Widget child = 3;
-  Widget feedback = 4;
-  Widget child_when_dragging = 7;
+  WidgetExpression child = 3;
+  WidgetExpression feedback = 4;
+  WidgetExpression child_when_dragging = 7;
   int64 max_simultaneous_drags = 10;
   bool haptic_feedback_on_start = 16;
   bool ignoring_feedback_semantics = 17;
@@ -7039,11 +7039,11 @@ message FlutterWidgetsDraggableScrollableSheet {
 }
 
 message FlutterWidgetsDraggableScrollableActuator {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsDualTransitionBuilder {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterWidgetsEditableText {
@@ -7112,7 +7112,7 @@ message FlutterWidgetsFadeInImageNamedAssetNetwork {
 }
 
 message FlutterWidgetsFocus {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool autofocus = 6;
   bool can_request_focus = 10;
   bool skip_traversal = 11;
@@ -7123,13 +7123,13 @@ message FlutterWidgetsFocus {
 }
 
 message FlutterWidgetsFocusNamedWithExternalFocusNode {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool autofocus = 6;
   bool include_semantics = 8;
 }
 
 message FlutterWidgetsFocusScope {
-  Widget child = 5;
+  WidgetExpression child = 5;
   bool autofocus = 6;
   bool can_request_focus = 8;
   bool skip_traversal = 9;
@@ -7137,32 +7137,32 @@ message FlutterWidgetsFocusScope {
 }
 
 message FlutterWidgetsFocusScopeNamedWithExternalFocusNode {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool autofocus = 6;
 }
 
 message FlutterWidgetsExcludeFocus {
   bool excluding = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsFocusTraversalOrder {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsFocusTraversalGroup {
   bool descendants_are_focusable = 4;
   bool descendants_are_traversable = 5;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterWidgetsExcludeFocusTraversal {
   bool excluding = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsForm {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsFormField {
@@ -7179,15 +7179,15 @@ message FlutterWidgetsStatefulWidget {
 }
 
 message FlutterWidgetsProxyWidget {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsParentDataWidget {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsInheritedWidget {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsRenderObjectWidget {
@@ -7199,11 +7199,11 @@ message FlutterWidgetsLeafRenderObjectWidget {
 }
 
 message FlutterWidgetsSingleChildRenderObjectWidget {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsMultiChildRenderObjectWidget {
-  repeated Widget children = 3;
+  repeated WidgetExpression children = 3;
 }
 
 message FlutterWidgetsErrorWidget {
@@ -7215,13 +7215,13 @@ message FlutterWidgetsErrorWidgetNamedWithDetails {
 }
 
 message FlutterWidgetsGestureDetector {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool exclude_from_semantics = 62;
   bool trackpad_scroll_causes_scale = 64;
 }
 
 message FlutterWidgetsRawGestureDetector {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool exclude_from_semantics = 6;
 }
 
@@ -7229,16 +7229,16 @@ message FlutterWidgetsGridPaper {
   double interval = 4;
   int64 divisions = 5;
   int64 subdivisions = 6;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterWidgetsHero {
   bool transition_on_user_gestures = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterWidgetsHeroMode {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool enabled = 4;
 }
 
@@ -7252,7 +7252,7 @@ message FlutterWidgetsIcon {
 }
 
 message FlutterWidgetsIconTheme {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsImage {
@@ -7321,7 +7321,7 @@ message FlutterWidgetsImageNamedMemory {
 }
 
 message FlutterWidgetsImageFiltered {
-  Widget child = 4;
+  WidgetExpression child = 4;
   bool enabled = 5;
 }
 
@@ -7337,21 +7337,21 @@ message FlutterWidgetsImplicitlyAnimatedWidget {
 message FlutterWidgetsAnimatedContainer {
   double width = 8;
   double height = 9;
-  Widget child = 14;
+  WidgetExpression child = 14;
 }
 
 message FlutterWidgetsAnimatedPadding {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsAnimatedAlign {
-  Widget child = 4;
+  WidgetExpression child = 4;
   double height_factor = 5;
   double width_factor = 6;
 }
 
 message FlutterWidgetsAnimatedPositioned {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double left = 4;
   double top = 5;
   double right = 6;
@@ -7361,11 +7361,11 @@ message FlutterWidgetsAnimatedPositioned {
 }
 
 message FlutterWidgetsAnimatedPositionedNamedFromRect {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsAnimatedPositionedDirectional {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double start = 4;
   double top = 5;
   double end = 6;
@@ -7375,60 +7375,60 @@ message FlutterWidgetsAnimatedPositionedDirectional {
 }
 
 message FlutterWidgetsAnimatedScale {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double scale = 4;
 }
 
 message FlutterWidgetsAnimatedRotation {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double turns = 4;
 }
 
 message FlutterWidgetsAnimatedSlide {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsAnimatedOpacity {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double opacity = 4;
   bool always_include_semantics = 8;
 }
 
 message FlutterWidgetsSliverAnimatedOpacity {
-  Widget sliver = 3;
+  WidgetExpression sliver = 3;
   double opacity = 4;
   bool always_include_semantics = 8;
 }
 
 message FlutterWidgetsAnimatedDefaultTextStyle {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool soft_wrap = 6;
   int64 max_lines = 8;
 }
 
 message FlutterWidgetsAnimatedPhysicalModel {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double elevation = 7;
   bool animate_color = 9;
   bool animate_shadow_color = 11;
 }
 
 message FlutterWidgetsAnimatedFractionallySizedBox {
-  Widget child = 4;
+  WidgetExpression child = 4;
   double height_factor = 5;
   double width_factor = 6;
 }
 
 message FlutterWidgetsInheritedModel {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsInheritedNotifier {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsInheritedTheme {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsInteractiveViewer {
@@ -7441,7 +7441,7 @@ message FlutterWidgetsInteractiveViewer {
   bool scale_enabled = 15;
   double scale_factor = 16;
   bool trackpad_scroll_causes_scale = 19;
-  Widget child = 20;
+  WidgetExpression child = 20;
 }
 
 message FlutterWidgetsInteractiveViewerNamedBuilder {
@@ -7458,7 +7458,7 @@ message FlutterWidgetsInteractiveViewerNamedBuilder {
 message FlutterWidgetsKeyboardListener {
   bool autofocus = 4;
   bool include_semantics = 5;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterWidgetsConstrainedLayoutBuilder {
@@ -7480,7 +7480,7 @@ message FlutterWidgetsListWheelScrollView {
   double squeeze = 12;
   bool render_children_outside_viewport = 14;
   string restoration_id = 16;
-  repeated Widget children = 18;
+  repeated WidgetExpression children = 18;
 }
 
 message FlutterWidgetsListWheelScrollViewNamedUseDelegate {
@@ -7509,24 +7509,24 @@ message FlutterWidgetsListWheelViewport {
 }
 
 message FlutterWidgetsLocalizations {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsLocalizationsNamedOverride {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterWidgetsLookupBoundary {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsRawMagnifier {
-  Widget child = 3;
+  WidgetExpression child = 3;
   double magnification_scale = 6;
 }
 
 message FlutterWidgetsMediaQuery {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsMediaQueryNamedRemovePadding {
@@ -7534,7 +7534,7 @@ message FlutterWidgetsMediaQueryNamedRemovePadding {
   bool remove_top = 5;
   bool remove_right = 6;
   bool remove_bottom = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterWidgetsMediaQueryNamedRemoveViewInsets {
@@ -7542,7 +7542,7 @@ message FlutterWidgetsMediaQueryNamedRemoveViewInsets {
   bool remove_top = 5;
   bool remove_right = 6;
   bool remove_bottom = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterWidgetsMediaQueryNamedRemoveViewPadding {
@@ -7550,7 +7550,7 @@ message FlutterWidgetsMediaQueryNamedRemoveViewPadding {
   bool remove_top = 5;
   bool remove_right = 6;
   bool remove_bottom = 7;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterWidgetsModalBarrier {
@@ -7568,19 +7568,19 @@ message FlutterWidgetsAnimatedModalBarrier {
 }
 
 message FlutterWidgetsNavigationToolbar {
-  Widget leading = 3;
-  Widget middle = 4;
-  Widget trailing = 5;
+  WidgetExpression leading = 3;
+  WidgetExpression middle = 4;
+  WidgetExpression trailing = 5;
   bool center_middle = 6;
   double middle_spacing = 7;
 }
 
 message FlutterWidgetsHeroControllerScope {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsHeroControllerScopeNamedNone {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsNavigator {
@@ -7592,26 +7592,26 @@ message FlutterWidgetsNavigator {
 
 message FlutterWidgetsNestedScrollView {
   bool reverse = 5;
-  Widget body = 8;
+  WidgetExpression body = 8;
   bool float_header_slivers = 10;
   string restoration_id = 12;
 }
 
 message FlutterWidgetsSliverOverlapAbsorber {
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterWidgetsSliverOverlapInjector {
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterWidgetsNestedScrollViewViewport {
   double anchor = 5;
-  repeated Widget slivers = 8;
+  repeated WidgetExpression slivers = 8;
 }
 
 message FlutterWidgetsNotificationListener {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsOrientationBuilder {
@@ -7621,7 +7621,7 @@ message FlutterWidgetsOrientationBuilder {
 message FlutterWidgetsOverflowBar {
   double spacing = 3;
   double overflow_spacing = 5;
-  repeated Widget children = 10;
+  repeated WidgetExpression children = 10;
 }
 
 message FlutterWidgetsOverlay {
@@ -7629,31 +7629,31 @@ message FlutterWidgetsOverlay {
 }
 
 message FlutterWidgetsOverlayPortal {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsOverlayPortalNamedTargetsRootOverlay {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsGlowingOverscrollIndicator {
   bool show_leading = 3;
   bool show_trailing = 4;
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterWidgetsStretchingOverscrollIndicator {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterWidgetsPageStorage {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsPageView {
   bool reverse = 4;
   bool page_snapping = 7;
-  repeated Widget children = 9;
+  repeated WidgetExpression children = 9;
   bool allow_implicit_scrolling = 11;
   string restoration_id = 12;
   bool pad_ends = 15;
@@ -7693,16 +7693,16 @@ message FlutterWidgetsPlaceholder {
   double stroke_width = 4;
   double fallback_width = 5;
   double fallback_height = 6;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterWidgetsPlatformMenuBar {
-  Widget child = 4;
-  Widget body = 5;
+  WidgetExpression child = 4;
+  WidgetExpression body = 5;
 }
 
 message FlutterWidgetsPlatformSelectableRegionContextMenu {
-  Widget child = 2;
+  WidgetExpression child = 2;
 }
 
 message FlutterWidgetsAndroidView {
@@ -7734,27 +7734,27 @@ message FlutterWidgetsPreferredSizeWidget {
 }
 
 message FlutterWidgetsPreferredSize {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsPrimaryScrollController {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterWidgetsPrimaryScrollControllerNamedNone {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsRawKeyboardListener {
   bool autofocus = 4;
   bool include_semantics = 5;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterWidgetsReorderableList {
   int64 item_count = 4;
   double item_extent = 8;
-  Widget prototype_item = 9;
+  WidgetExpression prototype_item = 9;
   bool reverse = 13;
   bool primary = 15;
   bool shrink_wrap = 17;
@@ -7767,34 +7767,34 @@ message FlutterWidgetsReorderableList {
 message FlutterWidgetsSliverReorderableList {
   int64 item_count = 5;
   double item_extent = 9;
-  Widget prototype_item = 10;
+  WidgetExpression prototype_item = 10;
   double auto_scroller_velocity_scalar = 12;
 }
 
 message FlutterWidgetsReorderableDragStartListener {
-  Widget child = 3;
+  WidgetExpression child = 3;
   int64 index = 4;
   bool enabled = 5;
 }
 
 message FlutterWidgetsReorderableDelayedDragStartListener {
-  Widget child = 3;
+  WidgetExpression child = 3;
   int64 index = 4;
   bool enabled = 5;
 }
 
 message FlutterWidgetsRestorationScope {
   string restoration_id = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsUnmanagedRestorationScope {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsRootRestorationScope {
   string restoration_id = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsRouter {
@@ -7806,7 +7806,7 @@ message FlutterWidgetsRouterNamedWithConfig {
 }
 
 message FlutterWidgetsBackButtonListener {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsSafeArea {
@@ -7815,7 +7815,7 @@ message FlutterWidgetsSafeArea {
   bool right = 5;
   bool bottom = 6;
   bool maintain_bottom_view_padding = 8;
-  Widget child = 9;
+  WidgetExpression child = 9;
 }
 
 message FlutterWidgetsSliverSafeArea {
@@ -7823,15 +7823,15 @@ message FlutterWidgetsSliverSafeArea {
   bool top = 4;
   bool right = 5;
   bool bottom = 6;
-  Widget sliver = 8;
+  WidgetExpression sliver = 8;
 }
 
 message FlutterWidgetsScrollConfiguration {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsScrollNotificationObserver {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsScrollView {
@@ -7850,7 +7850,7 @@ message FlutterWidgetsCustomScrollView {
   bool shrink_wrap = 9;
   double anchor = 11;
   double cache_extent = 12;
-  repeated Widget slivers = 13;
+  repeated WidgetExpression slivers = 13;
   int64 semantic_child_count = 14;
   string restoration_id = 17;
 }
@@ -7869,12 +7869,12 @@ message FlutterWidgetsListView {
   bool primary = 6;
   bool shrink_wrap = 8;
   double item_extent = 10;
-  Widget prototype_item = 11;
+  WidgetExpression prototype_item = 11;
   bool add_automatic_keep_alives = 12;
   bool add_repaint_boundaries = 13;
   bool add_semantic_indexes = 14;
   double cache_extent = 15;
-  repeated Widget children = 16;
+  repeated WidgetExpression children = 16;
   int64 semantic_child_count = 17;
   string restoration_id = 20;
 }
@@ -7884,7 +7884,7 @@ message FlutterWidgetsListViewNamedBuilder {
   bool primary = 6;
   bool shrink_wrap = 8;
   double item_extent = 10;
-  Widget prototype_item = 11;
+  WidgetExpression prototype_item = 11;
   int64 item_count = 14;
   bool add_automatic_keep_alives = 15;
   bool add_repaint_boundaries = 16;
@@ -7911,7 +7911,7 @@ message FlutterWidgetsListViewNamedCustom {
   bool primary = 6;
   bool shrink_wrap = 8;
   double item_extent = 10;
-  Widget prototype_item = 11;
+  WidgetExpression prototype_item = 11;
   double cache_extent = 13;
   int64 semantic_child_count = 14;
   string restoration_id = 17;
@@ -7925,7 +7925,7 @@ message FlutterWidgetsGridView {
   bool add_repaint_boundaries = 12;
   bool add_semantic_indexes = 13;
   double cache_extent = 14;
-  repeated Widget children = 15;
+  repeated WidgetExpression children = 15;
   int64 semantic_child_count = 16;
   string restoration_id = 20;
 }
@@ -7964,7 +7964,7 @@ message FlutterWidgetsGridViewNamedCount {
   bool add_repaint_boundaries = 15;
   bool add_semantic_indexes = 16;
   double cache_extent = 17;
-  repeated Widget children = 18;
+  repeated WidgetExpression children = 18;
   int64 semantic_child_count = 19;
   string restoration_id = 22;
 }
@@ -7981,7 +7981,7 @@ message FlutterWidgetsGridViewNamedExtent {
   bool add_repaint_boundaries = 15;
   bool add_semantic_indexes = 16;
   double cache_extent = 17;
-  repeated Widget children = 18;
+  repeated WidgetExpression children = 18;
   int64 semantic_child_count = 19;
   string restoration_id = 22;
 }
@@ -7998,7 +7998,7 @@ message FlutterWidgetsTwoDimensionalScrollable {
 }
 
 message FlutterWidgetsRawScrollbar {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool thumb_visibility = 5;
   double thickness = 8;
   double min_thumb_length = 10;
@@ -8010,56 +8010,56 @@ message FlutterWidgetsRawScrollbar {
 }
 
 message FlutterWidgetsSelectableRegion {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterWidgetsSelectionContainer {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsSelectionContainerNamedDisabled {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsSelectionRegistrarScope {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsSemanticsDebugger {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsSharedAppData {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsShortcuts {
-  Widget child = 4;
+  WidgetExpression child = 4;
   string debug_label = 5;
 }
 
 message FlutterWidgetsShortcutsNamedManager {
-  Widget child = 4;
+  WidgetExpression child = 4;
   string debug_label = 5;
 }
 
 message FlutterWidgetsCallbackShortcuts {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsShortcutRegistrar {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsSingleChildScrollView {
   bool reverse = 4;
   bool primary = 6;
-  Widget child = 9;
+  WidgetExpression child = 9;
   string restoration_id = 12;
 }
 
 message FlutterWidgetsSizeChangedLayoutNotifier {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsSliverWithKeepAliveWidget {
@@ -8089,7 +8089,7 @@ message FlutterWidgetsSliverListNamedSeparated {
 }
 
 message FlutterWidgetsSliverListNamedList {
-  repeated Widget children = 3;
+  repeated WidgetExpression children = 3;
   bool add_automatic_keep_alives = 4;
   bool add_repaint_boundaries = 5;
   bool add_semantic_indexes = 6;
@@ -8108,7 +8108,7 @@ message FlutterWidgetsSliverFixedExtentListNamedBuilder {
 }
 
 message FlutterWidgetsSliverFixedExtentListNamedList {
-  repeated Widget children = 3;
+  repeated WidgetExpression children = 3;
   double item_extent = 4;
   bool add_automatic_keep_alives = 5;
   bool add_repaint_boundaries = 6;
@@ -8131,7 +8131,7 @@ message FlutterWidgetsSliverGridNamedCount {
   double main_axis_spacing = 4;
   double cross_axis_spacing = 5;
   double child_aspect_ratio = 6;
-  repeated Widget children = 7;
+  repeated WidgetExpression children = 7;
 }
 
 message FlutterWidgetsSliverGridNamedExtent {
@@ -8139,47 +8139,47 @@ message FlutterWidgetsSliverGridNamedExtent {
   double main_axis_spacing = 4;
   double cross_axis_spacing = 5;
   double child_aspect_ratio = 6;
-  repeated Widget children = 7;
+  repeated WidgetExpression children = 7;
 }
 
 message FlutterWidgetsSliverOpacity {
   double opacity = 3;
   bool always_include_semantics = 4;
-  Widget sliver = 5;
+  WidgetExpression sliver = 5;
 }
 
 message FlutterWidgetsSliverIgnorePointer {
   bool ignoring = 3;
   bool ignoring_semantics = 4;
-  Widget sliver = 5;
+  WidgetExpression sliver = 5;
 }
 
 message FlutterWidgetsSliverOffstage {
   bool offstage = 3;
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterWidgetsKeepAlive {
   bool keep_alive = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsSliverConstrainedCrossAxis {
   double max_extent = 3;
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterWidgetsSliverCrossAxisExpanded {
   int64 flex = 3;
-  Widget sliver = 4;
+  WidgetExpression sliver = 4;
 }
 
 message FlutterWidgetsSliverCrossAxisGroup {
-  repeated Widget slivers = 3;
+  repeated WidgetExpression slivers = 3;
 }
 
 message FlutterWidgetsSliverMainAxisGroup {
-  repeated Widget slivers = 3;
+  repeated WidgetExpression slivers = 3;
 }
 
 message FlutterWidgetsSliverFillViewport {
@@ -8188,7 +8188,7 @@ message FlutterWidgetsSliverFillViewport {
 }
 
 message FlutterWidgetsSliverFillRemaining {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool has_scroll_body = 4;
   bool fill_overscroll = 5;
 }
@@ -8203,11 +8203,11 @@ message FlutterWidgetsSliverPersistentHeader {
 }
 
 message FlutterWidgetsSliverPrototypeExtentList {
-  Widget prototype_item = 4;
+  WidgetExpression prototype_item = 4;
 }
 
 message FlutterWidgetsSliverPrototypeExtentListNamedBuilder {
-  Widget prototype_item = 4;
+  WidgetExpression prototype_item = 4;
   int64 item_count = 6;
   bool add_automatic_keep_alives = 7;
   bool add_repaint_boundaries = 8;
@@ -8215,8 +8215,8 @@ message FlutterWidgetsSliverPrototypeExtentListNamedBuilder {
 }
 
 message FlutterWidgetsSliverPrototypeExtentListNamedList {
-  repeated Widget children = 3;
-  Widget prototype_item = 4;
+  repeated WidgetExpression children = 3;
+  WidgetExpression prototype_item = 4;
   bool add_automatic_keep_alives = 5;
   bool add_repaint_boundaries = 6;
   bool add_semantic_indexes = 7;
@@ -8228,7 +8228,7 @@ message FlutterWidgetsSlottedMultiChildRenderObjectWidget {
 
 message FlutterWidgetsSnapshotWidget {
   bool autoresize = 5;
-  Widget child = 7;
+  WidgetExpression child = 7;
 }
 
 message FlutterWidgetsSpacer {
@@ -8244,21 +8244,21 @@ message FlutterWidgetsTable {
 }
 
 message FlutterWidgetsTableCell {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsTapRegionSurface {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsTapRegion {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool enabled = 4;
   string debug_label = 9;
 }
 
 message FlutterWidgetsTextFieldTapRegion {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool enabled = 4;
   string debug_label = 7;
 }
@@ -8266,7 +8266,7 @@ message FlutterWidgetsTextFieldTapRegion {
 message FlutterWidgetsDefaultTextStyle {
   bool soft_wrap = 5;
   int64 max_lines = 7;
-  Widget child = 10;
+  WidgetExpression child = 10;
 }
 
 message FlutterWidgetsDefaultTextStyleNamedFallback {
@@ -8274,7 +8274,7 @@ message FlutterWidgetsDefaultTextStyleNamedFallback {
 }
 
 message FlutterWidgetsDefaultTextHeightBehavior {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsText {
@@ -8293,7 +8293,7 @@ message FlutterWidgetsTextNamedRich {
 }
 
 message FlutterWidgetsTextSelectionGestureDetector {
-  Widget child = 19;
+  WidgetExpression child = 19;
 }
 
 message FlutterWidgetsTexture {
@@ -8303,12 +8303,12 @@ message FlutterWidgetsTexture {
 
 message FlutterWidgetsTickerMode {
   bool enabled = 3;
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsTitle {
   string title = 3;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsAnimatedWidget {
@@ -8317,66 +8317,66 @@ message FlutterWidgetsAnimatedWidget {
 
 message FlutterWidgetsSlideTransition {
   bool transform_hit_tests = 4;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterWidgetsScaleTransition {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterWidgetsRotationTransition {
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterWidgetsSizeTransition {
   double axis_alignment = 5;
-  Widget child = 6;
+  WidgetExpression child = 6;
 }
 
 message FlutterWidgetsFadeTransition {
   bool always_include_semantics = 4;
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsSliverFadeTransition {
   bool always_include_semantics = 4;
-  Widget sliver = 5;
+  WidgetExpression sliver = 5;
 }
 
 message FlutterWidgetsPositionedTransition {
-  Widget child = 4;
+  WidgetExpression child = 4;
 }
 
 message FlutterWidgetsRelativePositionedTransition {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsDecoratedBoxTransition {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsAlignTransition {
-  Widget child = 4;
+  WidgetExpression child = 4;
   double width_factor = 5;
   double height_factor = 6;
 }
 
 message FlutterWidgetsDefaultTextStyleTransition {
-  Widget child = 4;
+  WidgetExpression child = 4;
   bool soft_wrap = 6;
   int64 max_lines = 8;
 }
 
 message FlutterWidgetsListenableBuilder {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsAnimatedBuilder {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsTweenAnimationBuilder {
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterWidgetsTwoDimensionalScrollView {
@@ -8389,7 +8389,7 @@ message FlutterWidgetsTwoDimensionalViewport {
 }
 
 message FlutterWidgetsUndoHistory {
-  Widget child = 8;
+  WidgetExpression child = 8;
 }
 
 message FlutterWidgetsUniqueWidget {
@@ -8397,26 +8397,26 @@ message FlutterWidgetsUniqueWidget {
 }
 
 message FlutterWidgetsValueListenableBuilder {
-  Widget child = 5;
+  WidgetExpression child = 5;
 }
 
 message FlutterWidgetsView {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsViewport {
   double anchor = 5;
   double cache_extent = 8;
-  repeated Widget slivers = 11;
+  repeated WidgetExpression slivers = 11;
 }
 
 message FlutterWidgetsShrinkWrappingViewport {
-  repeated Widget slivers = 7;
+  repeated WidgetExpression slivers = 7;
 }
 
 message FlutterWidgetsVisibility {
-  Widget child = 3;
-  Widget replacement = 4;
+  WidgetExpression child = 3;
+  WidgetExpression replacement = 4;
   bool visible = 5;
   bool maintain_state = 6;
   bool maintain_animation = 7;
@@ -8426,13 +8426,13 @@ message FlutterWidgetsVisibility {
 }
 
 message FlutterWidgetsVisibilityNamedMaintain {
-  Widget child = 3;
+  WidgetExpression child = 3;
   bool visible = 4;
 }
 
 message FlutterWidgetsSliverVisibility {
-  Widget sliver = 3;
-  Widget replacement_sliver = 4;
+  WidgetExpression sliver = 3;
+  WidgetExpression replacement_sliver = 4;
   bool visible = 5;
   bool maintain_state = 6;
   bool maintain_animation = 7;
@@ -8442,21 +8442,21 @@ message FlutterWidgetsSliverVisibility {
 }
 
 message FlutterWidgetsSliverVisibilityNamedMaintain {
-  Widget sliver = 3;
-  Widget replacement_sliver = 4;
+  WidgetExpression sliver = 3;
+  WidgetExpression replacement_sliver = 4;
   bool visible = 5;
 }
 
 message FlutterWidgetsWidgetInspector {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
 message FlutterWidgetsWillPopScope {
-  Widget child = 3;
+  WidgetExpression child = 3;
 }
 
-message Widget {
-  oneof widget {
+message WidgetExpression {
+  oneof result {
     FlutterCupertinoAbsorbPointer flutter_cupertino_absorb_pointer = 2;
     FlutterCupertinoActionListener flutter_cupertino_action_listener = 3;
     FlutterCupertinoActions flutter_cupertino_actions = 4;

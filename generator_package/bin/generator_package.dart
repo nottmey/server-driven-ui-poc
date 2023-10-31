@@ -74,8 +74,9 @@ build/
 
     final pubspecContent = loadYaml(pubspecFile.readAsStringSync()) as YamlMap;
     final dependenciesContent = pubspecContent['dependencies'] as YamlMap;
-    final dependencyPackages =
-        dependenciesContent.nodes.entries.map<String>((e) => e.key.value);
+    final dependencyPackages = dependenciesContent.nodes.entries
+        .map<String>((e) => e.key.value)
+        .where((dependency) => dependency != "proto_package");
 
     final workspace = context.contextRoot.workspace as PackageBuildWorkspace;
     var packageMap = <String, file_system.Folder>{};
@@ -161,8 +162,8 @@ message $widgetConstructorName {
     final widgetParameters = usedWidgets.indexed.map((t) =>
         "${t.$2} ${ReCase(t.$2).snakeCase} = ${t.$1 + kProtoFieldStartNumber};");
     widgetsFile.add('''
-message Widget {
-  oneof widget {
+message WidgetExpression {
+  oneof result {
     ${widgetParameters.join("\n    ")}
   }
 }

@@ -44,7 +44,7 @@ extension DartTypeToProtoExtension on DartType {
         }
       }
     } else if (isWidget) {
-      return "Widget";
+      return "WidgetExpression";
     } else if (isDartCoreString) {
       return "string";
     } else if (isDartCoreBool) {

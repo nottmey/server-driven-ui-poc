@@ -15,5 +15,5 @@ message ExperienceResponse {
 }
 
 message Experience {
-  Widget widget = 2;
+  WidgetExpression widget = 2;
 }

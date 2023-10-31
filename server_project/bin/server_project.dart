@@ -13,7 +13,7 @@ class ExperienceProviderService extends ExperienceProviderServiceBase {
     print('Responding with example data for experience: ${request.name}');
     return ExperienceResponse(
       start: Experience(
-        widget: Widget(
+        widget: WidgetExpression(
           flutterMaterialText:
               FlutterMaterialText(data: "Hello ${request.name}!"),
         ),

@@ -18,7 +18,7 @@ class _ServerDrivenUiState extends State<ServerDrivenUi> {
   late final grpc.ClientChannel channel;
   late final service.ExperienceProviderClient client;
 
-  AsyncSnapshot<proto.Widget> snapshot = AsyncSnapshot.waiting();
+  AsyncSnapshot<proto.WidgetExpression> snapshot = AsyncSnapshot.waiting();
 
   @override
   void initState() {
