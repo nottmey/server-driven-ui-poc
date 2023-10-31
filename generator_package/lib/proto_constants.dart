@@ -1,1 +1,0 @@
-const kProtoFieldStartNumber = 2;

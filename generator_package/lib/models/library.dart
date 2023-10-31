@@ -1,4 +1,5 @@
 import 'package:analyzer/dart/element/element.dart';
+import 'package:collection/collection.dart';
 import 'package:generator_package/models/constructor.dart';
 import 'package:generator_package/proto_generation_extensions.dart';
 import 'package:recase/recase.dart';
@@ -26,13 +27,26 @@ class Library {
       uri: element.librarySource.uri,
       constructors: element.exportNamespace.definedNames.values
           .whereType<ClassElement>()
-          .where((classElement) =>
-              classElement.allSupertypes.any((t) => t.isWidget))
-          .expand((classElement) {
-        return classElement.constructors
-            .where((element) => element.isPublic)
-            .map((element) => Constructor.ofElement(libraryPrefix, element));
-      }),
+          .where((c) => !c.isAbstract)
+          .where((c) => !c.hasDeprecated)
+          .where((c) => c.allSupertypes.any((t) => t.isWidget))
+          .expand((c) => c.constructors)
+          .where((c) => c.isPublic)
+          .where((c) => !c.hasDeprecated)
+          .where((c) => c.isSupportedByGenerator)
+          .map((c) => Constructor.ofElement(libraryPrefix, c)),
     );
+  }
+
+  String toDartImport(int index) {
+    return 'import \'$uri\' as \$l$index;';
+  }
+
+  String toDartSwitchCases(int index, ReCase widgetEvalFunctionName) {
+    final importAlias = '\$l$index';
+    return constructors
+        .sortedBy((c) => c.messageName.originalText)
+        .map((c) => c.toDartSwitchCase(importAlias, widgetEvalFunctionName))
+        .join("\n");
   }
 }

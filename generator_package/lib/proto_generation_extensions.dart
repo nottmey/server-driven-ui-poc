@@ -1,6 +1,5 @@
 import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/dart/element/type.dart';
-import 'package:recase/recase.dart';
 
 extension DartTypeIsWidgetExtension on DartType {
   bool get isWidget {
@@ -8,17 +7,28 @@ extension DartTypeIsWidgetExtension on DartType {
             "flutter/src/widgets/framework.dart" &&
         element?.name == "Widget";
   }
+
+  bool get isWidgetList {
+    if (isDartCoreIterable || isDartCoreList) {
+      assert(this is ParameterizedType);
+      final typeArguments = (this as ParameterizedType).typeArguments;
+
+      assert(typeArguments.length == 1);
+      final subType = typeArguments.first;
+
+      return subType.isWidget;
+    } else {
+      return false;
+    }
+  }
 }
 
-extension ParameterToProtoExtension on ParameterElement {
-  String? toProtoField(int fieldNumber) {
-    final reCaseName = ReCase(name);
-    final protoType = type.protoType;
-    if (protoType != null) {
-      return "$protoType ${reCaseName.snakeCase} = $fieldNumber;";
-    } else {
-      return null;
-    }
+extension TypeSupportedExtension on ConstructorElement {
+  bool get isSupportedByGenerator {
+    // generator currently only supports constructors where every positional and required type is supported
+    return parameters.every(
+      (element) => element.type.protoType != null || element.isOptionalNamed,
+    );
   }
 }
 
@@ -50,7 +60,7 @@ extension DartTypeToProtoExtension on DartType {
     } else if (isDartCoreBool) {
       return "bool";
     } else if (isDartCoreInt) {
-      return "int64";
+      return "int32";
     } else if (isDartCoreDouble) {
       return "double";
     } else {

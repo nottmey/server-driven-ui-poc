@@ -1,7 +1,7 @@
 import 'package:analyzer/dart/element/element.dart';
 import 'package:collection/collection.dart';
+import 'package:generator_package/constants.dart';
 import 'package:generator_package/models/parameter.dart';
-import 'package:generator_package/proto_constants.dart';
 import 'package:recase/recase.dart';
 
 class Constructor {
@@ -28,7 +28,9 @@ class Constructor {
       messageName: ReCase(widgetConstructorName),
       typeName: typeName,
       constructorName: constructorName.isEmpty ? null : constructorName,
-      parameters: element.parameters.mapIndexed(Parameter.ofElement),
+      parameters: element.parameters
+          .where((p) => !p.hasDeprecated)
+          .mapIndexed(Parameter.ofElement),
     );
   }
 
@@ -39,8 +41,21 @@ class Constructor {
   String toProtoMessage() {
     return '''
 message ${messageName.pascalCase} {
-  ${parameters.map((e) => e.protoField).whereType<String>().join("\n  ")}
+  ${parameters.map((e) => e.toProtoField()).whereType<String>().join("\n  ")}
 }
 ''';
+  }
+
+  String toDartSwitchCase(String importAlias, ReCase widgetEvalFunctionName) {
+    final fieldName = messageName.camelCase;
+    final constructorCall =
+        '$importAlias.$typeName${constructorName != null ? ".$constructorName" : ""}';
+    final constructorParameters = parameters
+        .map((p) => p.toDartParameter(fieldName, widgetEvalFunctionName))
+        .whereType<String>()
+        .join(", ");
+    return '''
+    case proto.WidgetExpression_Result.$fieldName:
+      return $constructorCall($constructorParameters);''';
   }
 }
