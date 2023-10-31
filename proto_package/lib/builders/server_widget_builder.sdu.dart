@@ -1,20 +1,28 @@
+//
+//  Generated code. Do not modify.
+//
+
 import 'package:flutter/material.dart' as material;
-import 'package:flutter/widgets.dart' as widgets;
+import 'package:flutter/widgets.dart';
 import 'package:proto_package/proto/widgets.pb.dart' as proto;
 
-// TODO generate this file in generator_package with all switch case clauses
-class ProtoUiBuilder extends widgets.StatelessWidget {
+class ServerWidgetBuilder extends StatelessWidget {
   final proto.WidgetExpression widget;
+  final Widget fallback;
 
-  const ProtoUiBuilder({super.key, required this.widget});
+  const ServerWidgetBuilder({
+    super.key,
+    required this.widget,
+    required this.fallback,
+  });
 
   @override
-  widgets.Widget build(widgets.BuildContext context) {
+  Widget build(BuildContext context) {
     switch (widget.whichResult()) {
       case proto.WidgetExpression_Result.flutterMaterialText:
         return material.Text(widget.flutterMaterialText.data);
       default:
-        return material.Icon(material.Icons.error);
+        return fallback;
     }
   }
 }
