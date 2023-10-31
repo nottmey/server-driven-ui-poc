@@ -4,20 +4,17 @@ import 'dart:io';
 
 import 'package:analyzer/dart/analysis/analysis_context_collection.dart';
 import 'package:analyzer/dart/analysis/results.dart';
-import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/file_system/file_system.dart' as file_system;
 import 'package:analyzer/file_system/physical_file_system.dart';
 import 'package:analyzer/src/util/file_paths.dart' as file_paths;
 import 'package:analyzer/src/workspace/package_build.dart';
-import 'package:generator_package/proto_generation_extensions.dart';
-import 'package:recase/recase.dart';
+import 'package:generator_package/models/library.dart';
+import 'package:generator_package/models/protocol.dart';
 import 'package:yaml/yaml.dart';
 
 // Similar to https://github.com/google/protobuf.dart/tree/master/protoc_plugin,
 // we can't use build_runner, because we don't know which files we are going to
 // create in advance. Also, we can't directly analyze external libraries there.
-
-const kProtoFieldStartNumber = 2;
 
 // docs regarding running: https://dart.dev/tools/dart-run
 Future<void> main(List<String> arguments) async {
@@ -62,8 +59,6 @@ build/
   );
 
   // TODO annotate fields and types with docs
-  // TODO add warning about file being generated
-  // TODO restructure -> generate file from which to generate code
   // TODO find a better way to generate time stable field numbers (maybe via committed dictionary)
   // TODO observe and optimize performance
   // TODO create watch mode, maybe optimize more with incremental updates
@@ -109,67 +104,14 @@ build/
       }),
     );
 
-    final widgetsFile = <String>[];
-    widgetsFile.add('syntax = "proto3";\n');
-    final usedWidgets = <String>[];
+    final protocol = Protocol(
+      libraries: resolvedLibraries
+          .whereType<ResolvedLibraryResult>()
+          .map((result) => result.element)
+          .map(Library.ofElement),
+    );
 
-    for (final library in resolvedLibraries) {
-      if (library is ResolvedLibraryResult) {
-        final libraryElement = library.element;
-        final libraryPath = libraryElement.librarySource.uri.pathSegments;
-        final libraryNamePrefix = [
-          ...libraryPath.sublist(0, libraryPath.length - 1),
-          // TODO don't prefix package of internal libraries
-          // TODO don't prefix file name if widget name matches file name
-          libraryPath.last.replaceAll(".dart", "")
-        ].map((e) => ReCase(e).pascalCase).join();
-
-        final namespace = libraryElement.exportNamespace;
-        for (final classElement in namespace.definedNames.values) {
-          if (classElement is ClassElement &&
-              classElement.allSupertypes.any((t) => t.isWidget)) {
-            // TODO do more than widgets
-            for (final constructor in classElement.constructors) {
-              if (constructor.isPublic) {
-                final parameters = constructor.parameters;
-                var fieldNumber = kProtoFieldStartNumber;
-                final protoFields = parameters.map(
-                  (parameter) {
-                    final field = parameter.toProtoField(fieldNumber);
-                    fieldNumber++; // for every field, so number stays stable for now
-                    return field;
-                  },
-                ).whereType<String>();
-                final namedPostfix = constructor.name.isEmpty
-                    ? ""
-                    : "Named${ReCase(constructor.name).pascalCase}";
-                final widgetConstructorName =
-                    "$libraryNamePrefix${classElement.name}$namedPostfix";
-                usedWidgets.add(widgetConstructorName);
-                widgetsFile.add('''
-message $widgetConstructorName {
-  ${protoFields.join("\n  ")}
-}
-''');
-              }
-            }
-          }
-        }
-      }
-    }
-
-    usedWidgets.sort(); // side effect, for file stability
-    final widgetParameters = usedWidgets.indexed.map((t) =>
-        "${t.$2} ${ReCase(t.$2).snakeCase} = ${t.$1 + kProtoFieldStartNumber};");
-    widgetsFile.add('''
-message WidgetExpression {
-  oneof result {
-    ${widgetParameters.join("\n    ")}
-  }
-}
-''');
-
-    writeFile('proto/widgets.proto', widgetsFile.join("\n"));
+    writeFile('proto/widgets.proto', protocol.toWidgetsProto());
 
     // it's common to generate dart files by hand and not via ast
     writeFile('lib/builders/server_widget_builder.sdu.dart', '''
