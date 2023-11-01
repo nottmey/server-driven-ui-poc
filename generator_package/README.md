@@ -33,3 +33,5 @@ flutter run
 
 - we can't use build_runner since we may not know the output in advance, and we seem to not be able to analyze external dependencies directly
 - we can only define recursive structures like the widget tree inside the same proto file, which forces us to define all widgets in the same file
+- currently we can't differentiate easily whether a parameter is explicitly set to null or just unset, because protocol buffers only know the set/unset semantic (this would be solvable by another level of indirection for every parameter type: using a `oneof` with either the value or a bool which tracks the `explicitly_null` state)
+- currently we only use literal default values by copying them from their source (when value is optional and unset at runtime); other default values are hard to re-use because of needed imports or using inaccessible constants

@@ -46,12 +46,12 @@ message ${messageName.pascalCase} {
 ''';
   }
 
-  String toDartSwitchCase(String importAlias, ReCase widgetEvalFunctionName) {
+  String toDartSwitchCase(String importAlias) {
     final fieldName = messageName.camelCase;
     final constructorCall =
         '$importAlias.$typeName${constructorName != null ? ".$constructorName" : ""}';
     final constructorParameters = parameters
-        .map((p) => p.toDartParameter(fieldName, widgetEvalFunctionName))
+        .map((p) => p.toDartParameter(fieldName))
         .whereType<String>()
         .join(", ");
     return '''

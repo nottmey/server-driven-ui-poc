@@ -1,5 +1,12 @@
+import 'package:analyzer/dart/ast/ast.dart';
 import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/dart/element/type.dart';
+// ignore: implementation_imports
+import 'package:analyzer/src/dart/element/element.dart'
+    show ConstVariableElement;
+// ignore: implementation_imports
+import 'package:analyzer/src/dart/element/member.dart'
+    show FieldFormalParameterMember;
 
 extension DartTypeIsWidgetExtension on DartType {
   bool get isWidget {
@@ -29,6 +36,36 @@ extension TypeSupportedExtension on ConstructorElement {
     return parameters.every(
       (element) => element.type.protoType != null || element.isOptionalNamed,
     );
+  }
+}
+
+extension DefaultValueExtension on ParameterElement {
+  Expression extractDefaultValue() {
+    if (this is FieldFormalParameterMember) {
+      return declaration.extractDefaultValue();
+    }
+
+    assert(this is ConstVariableElement);
+    final constantInitializer =
+        (this as ConstVariableElement).constantInitializer;
+
+    if (constantInitializer != null) {
+      return constantInitializer;
+    } else {
+      assert(this is SuperFormalParameterElement);
+      final superReferencedParameter =
+          (this as SuperFormalParameterElement).superConstructorParameter;
+      assert(superReferencedParameter != null);
+      return superReferencedParameter!.extractDefaultValue();
+    }
+  }
+}
+
+extension IsSupportedExtension on Expression {
+  bool get isSupportedAsDefaultValueByGenerator {
+    // TODO support public constant values by importing the relevant packages
+    // TODO support referenced private values by generating additional constructors where value is not set
+    return this is Literal;
   }
 }
 

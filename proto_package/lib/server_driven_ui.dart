@@ -77,7 +77,7 @@ class _ServerDrivenUiState extends State<ServerDrivenUi> {
     if (snapshot.connectionState == ConnectionState.waiting) {
       return CircularProgressIndicator();
     } else {
-      return evaluateWidgetExpression(snapshot.data!, Icon(Icons.error));
+      return evaluateWidgetExpression(snapshot.data!) ?? Icon(Icons.error);
     }
   }
 }

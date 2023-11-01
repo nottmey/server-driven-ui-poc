@@ -42,11 +42,11 @@ class Library {
     return 'import \'$uri\' as \$l$index;';
   }
 
-  String toDartSwitchCases(int index, ReCase widgetEvalFunctionName) {
+  String toDartSwitchCases(int index) {
     final importAlias = '\$l$index';
     return constructors
         .sortedBy((c) => c.messageName.originalText)
-        .map((c) => c.toDartSwitchCase(importAlias, widgetEvalFunctionName))
+        .map((c) => c.toDartSwitchCase(importAlias))
         .join("\n");
   }
 }

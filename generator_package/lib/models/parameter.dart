@@ -1,4 +1,6 @@
+import 'package:analyzer/dart/ast/ast.dart';
 import 'package:analyzer/dart/element/element.dart';
+import 'package:analyzer/dart/element/nullability_suffix.dart';
 import 'package:analyzer/dart/element/type.dart';
 import 'package:generator_package/constants.dart';
 import 'package:generator_package/proto_generation_extensions.dart';
@@ -12,7 +14,7 @@ class Parameter {
   final ReCase name;
   final bool usesDisallowedName;
   final ParameterKind kind;
-  final String? defaultValueCode;
+  final Expression? defaultValue;
 
   Parameter({
     required this.fieldNumber,
@@ -20,7 +22,7 @@ class Parameter {
     required this.name,
     required this.usesDisallowedName,
     required this.kind,
-    required this.defaultValueCode,
+    required this.defaultValue,
   });
 
   factory Parameter.ofElement(int index, ParameterElement element) {
@@ -31,7 +33,8 @@ class Parameter {
       usesDisallowedName: kDisallowedFieldNames.contains(element.name),
       kind:
           element.isPositional ? ParameterKind.positional : ParameterKind.named,
-      defaultValueCode: null, // TODO
+      defaultValue:
+          element.hasDefaultValue ? element.extractDefaultValue() : null,
     );
   }
 
@@ -44,20 +47,37 @@ class Parameter {
     }
   }
 
-  String? toDartParameter(String fieldName, ReCase widgetEvalFunctionName) {
+  String? toDartParameter(String fieldName) {
     if (type.protoType == null) {
       return null;
     }
+    final nullable = type.nullabilitySuffix == NullabilitySuffix.question;
 
-    final naming = kind == ParameterKind.named ? '${name.originalText}: ' : '';
+    final namedParamPrefix =
+        kind == ParameterKind.named ? '${name.originalText}: ' : '';
     final postfix = usesDisallowedName ? '_$fieldNumber' : ''; // anti collision
-    final extraction = 'tree.$fieldName.${name.originalText}$postfix';
+    final getter = 'tree.$fieldName.${name.originalText}$postfix';
+    final nullChecker = 'tree.$fieldName.has${name.pascalCase}$postfix()';
+    final generateDefaultValue = defaultValue != null &&
+            defaultValue!.isSupportedAsDefaultValueByGenerator
+        ? defaultValue!.toSource()
+        : nullable
+            ? 'null'
+            : 'missing(\'${name.originalText}\')';
+    final extractor = '($nullChecker ? $getter : $generateDefaultValue)';
     if (type.isWidget) {
-      return '$naming${widgetEvalFunctionName.camelCase}($extraction, fallback)';
+      final evalFn = nullable
+          ? 'evaluateWidgetExpression'
+          : 'evaluateRequiredWidgetExpression';
+      return '$namedParamPrefix$evalFn($extractor)';
     } else if (type.isWidgetList) {
-      return '$naming$extraction.map((e) => ${widgetEvalFunctionName.camelCase}(e, fallback)).toList()';
+      // no null check needed on repeated fields
+      return '$namedParamPrefix$getter.map((e) => evaluateRequiredWidgetExpression(e)).toList()';
+    } else if (type.isDartCoreIterable || type.isDartCoreList) {
+      // no null check needed on repeated fields
+      return '$namedParamPrefix$getter';
     } else {
-      return '$naming$extraction';
+      return '$namedParamPrefix$extractor';
     }
   }
 }

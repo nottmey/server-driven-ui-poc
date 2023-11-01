@@ -1,7 +1,6 @@
 import 'package:collection/collection.dart';
 import 'package:generator_package/constants.dart';
 import 'package:generator_package/models/library.dart';
-import 'package:recase/recase.dart';
 
 class Protocol {
   final Iterable<Library> libraries;
@@ -28,7 +27,7 @@ message WidgetExpression {
 ''';
   }
 
-  String toWidgetBuilderCode(ReCase functionName) {
+  String toWidgetBuilderCode() {
     final sortedLibraries = libraries
         .where((l) => l.constructors.isNotEmpty)
         .sortedBy((l) => l.uri.toString());
@@ -40,11 +39,28 @@ import 'package:proto_package/proto/widgets.pb.dart' as proto;
 
 ${sortedLibraries.mapIndexed((i, c) => c.toDartImport(i)).join("\n")}
 
-Widget ${functionName.camelCase}(proto.WidgetExpression tree, Widget fallback) {
+T missing<T>(String field) {
+  throw AssertionError('required field \$field is missing');
+}
+
+Widget evaluateRequiredWidgetExpression(proto.WidgetExpression tree) {
+  final result = evaluateWidgetExpression(tree);
+  if(result != null) {
+    return result;
+  } else {
+    throw AssertionError('unable to parse required sub-tree');
+  }
+}
+
+Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
+  if(tree == null) {
+    return null;
+  }
+
   switch (tree.whichResult()) {
-${sortedLibraries.mapIndexed((i, c) => c.toDartSwitchCases(i, functionName)).join("\n")}
+${sortedLibraries.mapIndexed((i, c) => c.toDartSwitchCases(i)).join("\n")}
     default:
-      return fallback;
+      return null;
   }
 }
 ''';

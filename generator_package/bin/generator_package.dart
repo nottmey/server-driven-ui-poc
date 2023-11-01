@@ -10,7 +10,6 @@ import 'package:analyzer/src/util/file_paths.dart' as file_paths;
 import 'package:analyzer/src/workspace/package_build.dart';
 import 'package:generator_package/models/library.dart';
 import 'package:generator_package/models/protocol.dart';
-import 'package:recase/recase.dart';
 import 'package:yaml/yaml.dart';
 
 // Similar to https://github.com/google/protobuf.dart/tree/master/protoc_plugin,
@@ -114,11 +113,10 @@ build/
 
     writeFile('proto/widgets.proto', protocol.toWidgetsProto());
 
-    final evaluateWidgetExpressionName = ReCase('evaluate_widget_expression');
     // it's common to generate dart files by hand and not via ast
     writeFile(
-      'lib/builders/${evaluateWidgetExpressionName.snakeCase}.sdu.dart',
-      protocol.toWidgetBuilderCode(evaluateWidgetExpressionName),
+      'lib/builders/evaluate_widget_expression.sdu.dart',
+      protocol.toWidgetBuilderCode(),
     );
   }
 }
