@@ -30,15 +30,6 @@ extension DartTypeIsWidgetExtension on DartType {
   }
 }
 
-extension TypeSupportedExtension on ConstructorElement {
-  bool get isSupportedByGenerator {
-    // generator currently only supports constructors where every positional and required type is supported
-    return parameters.every(
-      (element) => element.type.protoType != null || element.isOptionalNamed,
-    );
-  }
-}
-
 extension DefaultValueExtension on ParameterElement {
   Expression extractDefaultValue() {
     if (this is FieldFormalParameterMember) {
@@ -58,14 +49,6 @@ extension DefaultValueExtension on ParameterElement {
       assert(superReferencedParameter != null);
       return superReferencedParameter!.extractDefaultValue();
     }
-  }
-}
-
-extension IsSupportedExtension on Expression {
-  bool get isSupportedAsDefaultValueByGenerator {
-    // TODO support public constant values by importing the relevant packages
-    // TODO support referenced private values by generating additional constructors where value is not set
-    return this is Literal;
   }
 }
 

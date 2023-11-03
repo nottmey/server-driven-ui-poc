@@ -3,6 +3,7 @@ import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/dart/element/nullability_suffix.dart';
 import 'package:analyzer/dart/element/type.dart';
 import 'package:generator_package/constants.dart';
+import 'package:generator_package/is_supported_extensions.dart';
 import 'package:generator_package/proto_generation_extensions.dart';
 import 'package:recase/recase.dart';
 
