@@ -5,7 +5,7 @@ import 'package:analyzer/dart/element/type.dart';
 import 'package:generator_package/constants.dart';
 import 'package:generator_package/is_supported_extensions.dart';
 import 'package:generator_package/is_widget_extension.dart';
-import 'package:generator_package/proto_generation_extensions.dart';
+import 'package:generator_package/to_default_value_extension.dart';
 import 'package:generator_package/to_protocol_type_extension.dart';
 import 'package:recase/recase.dart';
 
@@ -36,8 +36,7 @@ class Parameter {
       usesDisallowedName: kDisallowedFieldNames.contains(element.name),
       kind:
           element.isPositional ? ParameterKind.positional : ParameterKind.named,
-      defaultValue:
-          element.hasDefaultValue ? element.extractDefaultValue() : null,
+      defaultValue: element.hasDefaultValue ? element.toDefaultValue() : null,
     );
   }
 

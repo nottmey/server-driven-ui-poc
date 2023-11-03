@@ -7,10 +7,10 @@ import 'package:analyzer/src/dart/element/element.dart'
 import 'package:analyzer/src/dart/element/member.dart'
     show FieldFormalParameterMember;
 
-extension DefaultValueExtension on ParameterElement {
-  Expression extractDefaultValue() {
+extension ToDefaultValueExtension on ParameterElement {
+  Expression toDefaultValue() {
     if (this is FieldFormalParameterMember) {
-      return declaration.extractDefaultValue();
+      return declaration.toDefaultValue();
     }
 
     assert(this is ConstVariableElement);
@@ -24,7 +24,7 @@ extension DefaultValueExtension on ParameterElement {
       final superReferencedParameter =
           (this as SuperFormalParameterElement).superConstructorParameter;
       assert(superReferencedParameter != null);
-      return superReferencedParameter!.extractDefaultValue();
+      return superReferencedParameter!.toDefaultValue();
     }
   }
 }
