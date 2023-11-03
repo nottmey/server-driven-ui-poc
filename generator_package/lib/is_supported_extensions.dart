@@ -1,12 +1,16 @@
 import 'package:analyzer/dart/ast/ast.dart';
 import 'package:analyzer/dart/element/element.dart';
+import 'package:analyzer/dart/element/nullability_suffix.dart';
 import 'package:generator_package/proto_generation_extensions.dart';
 
 extension TypeSupportedExtension on ConstructorElement {
   bool get isSupportedByGenerator {
-    // generator currently only supports constructors where every positional and required type is supported
+    // generator currently only supports constructors where every positional and required non-nullable type is supported
     return parameters.every(
-      (element) => element.type.protoType != null || element.isOptionalNamed,
+      (element) =>
+          element.type.protoType != null ||
+          element.isOptionalNamed ||
+          element.type.nullabilitySuffix == NullabilitySuffix.question,
     );
   }
 }

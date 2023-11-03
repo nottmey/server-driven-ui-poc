@@ -49,13 +49,15 @@ class Parameter {
   }
 
   String? toDartParameter(String fieldName) {
-    if (type.protoType == null) {
-      return null;
-    }
-    final nullable = type.nullabilitySuffix == NullabilitySuffix.question;
-
     final namedParamPrefix =
         kind == ParameterKind.named ? '${name.originalText}: ' : '';
+    final nullable = type.nullabilitySuffix == NullabilitySuffix.question;
+    if (type.protoType == null) {
+      // setting unbound type params to null leads to errors (which we can't handle right now)
+      final typeParam = type is TypeParameterType;
+      return nullable && !typeParam ? '${namedParamPrefix}null' : null;
+    }
+
     final postfix = usesDisallowedName ? '_$fieldNumber' : ''; // anti collision
     final getter = 'tree.$fieldName.${name.originalText}$postfix';
     final nullChecker = 'tree.$fieldName.has${name.pascalCase}$postfix()';
