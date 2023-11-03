@@ -6,6 +6,7 @@ import 'package:generator_package/constants.dart';
 import 'package:generator_package/is_supported_extensions.dart';
 import 'package:generator_package/is_widget_extension.dart';
 import 'package:generator_package/proto_generation_extensions.dart';
+import 'package:generator_package/to_protocol_type_extension.dart';
 import 'package:recase/recase.dart';
 
 enum ParameterKind { positional, named }
@@ -41,7 +42,7 @@ class Parameter {
   }
 
   String? toProtoField() {
-    final protoType = type.protoType;
+    final protoType = type.toProtocolType;
     if (protoType != null) {
       return '$protoType ${name.snakeCase} = $fieldNumber;';
     } else {
@@ -53,7 +54,7 @@ class Parameter {
     final namedParamPrefix =
         kind == ParameterKind.named ? '${name.originalText}: ' : '';
     final nullable = type.nullabilitySuffix == NullabilitySuffix.question;
-    if (type.protoType == null) {
+    if (type.toProtocolType == null) {
       // setting unbound type params to null leads to errors (which we can't handle right now)
       final typeParam = type is TypeParameterType;
       return nullable && !typeParam ? '${namedParamPrefix}null' : null;
