@@ -1,5 +1,3 @@
-library generator_package.bin;
-
 import 'dart:io';
 
 import 'package:analyzer/dart/analysis/analysis_context_collection.dart';
@@ -19,17 +17,17 @@ import 'package:yaml/yaml.dart';
 // docs regarding running: https://dart.dev/tools/dart-run
 Future<void> main(List<String> arguments) async {
   final dir = Directory.current;
-  print("Starting ${Platform.script.path} in ${dir.path} with $arguments");
-  print("Using ${Platform.executable} with ${Platform.executableArguments}");
+  print('Starting ${Platform.script.path} in ${dir.path} with $arguments');
+  print('Using ${Platform.executable} with ${Platform.executableArguments}');
 
   Future<File> writeFile(String path, String contents) {
     print('creating file $path');
-    return File("${dir.path}/../proto_package/$path")
+    return File('${dir.path}/../proto_package/$path')
         .create(recursive: true)
         .then((file) => file.writeAsString(contents, flush: true));
   }
 
-  writeFile("pubspec.yaml", '''
+  writeFile('pubspec.yaml', '''
 name: proto_package
 publish_to: 'none'
 
@@ -42,7 +40,7 @@ dependencies:
   protobuf: ^3.1.0
   grpc: ^3.2.4
 ''');
-  writeFile(".gitignore", '''
+  writeFile('.gitignore', '''
 # Libraries should not include pubspec.lock, per https://dart.dev/guides/libraries/private-files#pubspeclock.
 /pubspec.lock
 .dart_tool/
@@ -50,11 +48,11 @@ dependencies:
 build/
 ''');
   // so folders are already created for protoc
-  writeFile("lib/proto/.gitkeep", "");
+  writeFile('lib/proto/.gitkeep', '');
 
   final analysis = AnalysisContextCollection(
     includedPaths: [dir.absolute.path],
-    excludedPaths: ["${dir.absolute.path}/test"],
+    excludedPaths: ['${dir.absolute.path}/test'],
     resourceProvider: PhysicalResourceProvider.INSTANCE,
   );
 
@@ -70,8 +68,8 @@ build/
     final pubspecContent = loadYaml(pubspecFile.readAsStringSync()) as YamlMap;
     final dependenciesContent = pubspecContent['dependencies'] as YamlMap;
     final dependencyPackages = dependenciesContent.nodes.entries
-        .map<String>((e) => e.key.value)
-        .where((dependency) => dependency != "proto_package");
+        .map<String>((e) => e.key.value as String)
+        .where((dependency) => dependency != 'proto_package');
 
     final workspace = context.contextRoot.workspace as PackageBuildWorkspace;
     var packageMap = <String, file_system.Folder>{};
@@ -84,11 +82,11 @@ build/
     final externalLibraries = dependencyPackages
         .expand((package) => packageMap[package]!.getChildren())
         .map((rootLevelResource) => rootLevelResource.path)
-        .where((libraryPath) => libraryPath.endsWith(".dart"));
+        .where((libraryPath) => libraryPath.endsWith('.dart'));
 
     final internalLibraries = context.contextRoot
         .analyzedFiles()
-        .where((libraryPath) => libraryPath.endsWith(".dart"));
+        .where((libraryPath) => libraryPath.endsWith('.dart'));
 
     final session = context.currentSession;
 

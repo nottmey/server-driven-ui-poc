@@ -21,8 +21,8 @@ class Constructor {
     final typeName = element.enclosingElement.name;
     final constructorName = element.name;
     final postfix = constructorName.isEmpty
-        ? ""
-        : "Named${ReCase(constructorName).pascalCase}";
+        ? ''
+        : 'Named${ReCase(constructorName).pascalCase}';
     final widgetConstructorName = "$prefix$typeName$postfix";
     return Constructor(
       messageName: ReCase(widgetConstructorName),
@@ -35,7 +35,7 @@ class Constructor {
   }
 
   String toProtoField(int index) {
-    return "${messageName.pascalCase} ${messageName.snakeCase} = ${index + kProtoFieldStartNumber};";
+    return '${messageName.pascalCase} ${messageName.snakeCase} = ${index + kProtoFieldStartNumber};';
   }
 
   String toProtoMessage() {
@@ -53,7 +53,7 @@ message ${messageName.pascalCase} {
     final constructorParameters = parameters
         .map((p) => p.toDartParameter(fieldName))
         .whereType<String>()
-        .join(", ");
+        .join(', ');
     return '''
     case proto.WidgetExpression_Result.$fieldName:
       return $constructorCall($constructorParameters);''';

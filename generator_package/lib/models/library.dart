@@ -21,7 +21,7 @@ class Library {
       ...libraryPathSegments.sublist(0, libraryPathSegments.length - 1),
       // TODO don't prefix package of internal libraries
       // TODO don't prefix file name if widget name matches file name
-      libraryPathSegments.last.replaceAll(".dart", "")
+      libraryPathSegments.last.replaceAll('.dart', '')
     ].map((e) => ReCase(e).pascalCase).join();
 
     return Library(
@@ -40,7 +40,7 @@ class Library {
   }
 
   String toDartImport(int index) {
-    return 'import \'$uri\' as \$l$index;';
+    return "import '$uri' as \$l$index;";
   }
 
   String toDartSwitchCases(int index) {
@@ -48,6 +48,6 @@ class Library {
     return constructors
         .sortedBy((c) => c.messageName.originalText)
         .map((c) => c.toDartSwitchCase(importAlias))
-        .join("\n");
+        .join('\n');
   }
 }

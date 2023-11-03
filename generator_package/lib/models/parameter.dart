@@ -42,7 +42,7 @@ class Parameter {
   String? toProtoField() {
     final protoType = type.protoType;
     if (protoType != null) {
-      return "$protoType ${name.snakeCase} = $fieldNumber;";
+      return '$protoType ${name.snakeCase} = $fieldNumber;';
     } else {
       return null;
     }
@@ -64,7 +64,7 @@ class Parameter {
         ? defaultValue!.toSource()
         : nullable
             ? 'null'
-            : 'missing(\'${name.originalText}\')';
+            : "missing('${name.originalText}')";
     final extractor = '($nullChecker ? $getter : $generateDefaultValue)';
     if (type.isWidget) {
       final evalFn = nullable
