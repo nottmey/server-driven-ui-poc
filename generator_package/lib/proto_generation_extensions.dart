@@ -11,8 +11,8 @@ import 'package:analyzer/src/dart/element/member.dart'
 extension DartTypeIsWidgetExtension on DartType {
   bool get isWidget {
     return element?.librarySource?.uri.path ==
-            "flutter/src/widgets/framework.dart" &&
-        element?.name == "Widget";
+            'flutter/src/widgets/framework.dart' &&
+        element?.name == 'Widget';
   }
 
   bool get isWidgetList {
@@ -68,21 +68,21 @@ extension DartTypeToProtoExtension on DartType {
       } else {
         final subProtoType = subType.protoType;
         if (subProtoType != null) {
-          return "repeated $subProtoType";
+          return 'repeated $subProtoType';
         } else {
           return null; // unsupported subtype
         }
       }
     } else if (isWidget) {
-      return "WidgetExpression";
+      return 'WidgetExpression';
     } else if (isDartCoreString) {
-      return "string";
+      return 'string';
     } else if (isDartCoreBool) {
-      return "bool";
+      return 'bool';
     } else if (isDartCoreInt) {
-      return "int32";
+      return 'int32';
     } else if (isDartCoreDouble) {
-      return "double";
+      return 'double';
     } else {
       return null;
     }
