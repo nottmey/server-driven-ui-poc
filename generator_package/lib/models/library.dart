@@ -1,8 +1,8 @@
 import 'package:analyzer/dart/element/element.dart';
 import 'package:collection/collection.dart';
 import 'package:generator_package/is_supported_extensions.dart';
+import 'package:generator_package/is_widget_extension.dart';
 import 'package:generator_package/models/constructor.dart';
-import 'package:generator_package/proto_generation_extensions.dart';
 import 'package:recase/recase.dart';
 
 class Library {
