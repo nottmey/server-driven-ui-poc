@@ -33,7 +33,20 @@ extension ToProtocolTypeExtension on DartType {
       return 'int32';
     } else if (isDartCoreDouble) {
       return 'double';
+    } else if (this is InterfaceType) {
+      // TODO class and abstract class types
+      return null;
+    } else if (this is FunctionType) {
+      // TODO function types
+      return null;
+    } else if (this is DynamicType) {
+      // TODO dynamic types
+      return null;
+    } else if (this is TypeParameterType) {
+      // TODO type parameter usages
+      return null;
     } else {
+      assert(false, '$runtimeType has missing implementation');
       return null;
     }
   }
