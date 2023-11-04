@@ -43,7 +43,7 @@ T missing<T>(String field) {
   throw AssertionError('required field \$field is missing');
 }
 
-Widget $kEvaluateRequiredWidgetExpression(proto.WidgetExpression tree) {
+Widget $kEvaluateRequiredWidgetExpression(proto.$kWidgetExpression tree) {
   final result = $kEvaluateWidgetExpression(tree);
   if(result != null) {
     return result;
@@ -52,7 +52,7 @@ Widget $kEvaluateRequiredWidgetExpression(proto.WidgetExpression tree) {
   }
 }
 
-Widget? $kEvaluateWidgetExpression(proto.WidgetExpression? tree) {
+Widget? $kEvaluateWidgetExpression(proto.$kWidgetExpression? tree) {
   if(tree == null) {
     return null;
   }
