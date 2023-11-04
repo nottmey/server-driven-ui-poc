@@ -41,9 +41,9 @@ class Parameter {
   }
 
   String? toProtoField() {
-    final protoType = type.toProtocolType;
-    if (protoType != null) {
-      return '$protoType ${name.snakeCase} = $fieldNumber;';
+    final protocolType = type.toProtocolType;
+    if (protocolType != null) {
+      return '$protocolType ${name.snakeCase} = $fieldNumber;';
     } else {
       return null;
     }
@@ -71,12 +71,12 @@ class Parameter {
     final extractor = '($nullChecker ? $getter : $generateDefaultValue)';
     if (type.isWidget) {
       final evalFn = nullable
-          ? 'evaluateWidgetExpression'
-          : 'evaluateRequiredWidgetExpression';
+          ? kEvaluateWidgetExpression
+          : kEvaluateRequiredWidgetExpression;
       return '$namedParamPrefix$evalFn($extractor)';
     } else if (type.isWidgetList) {
       // no null check needed on repeated fields
-      return '$namedParamPrefix$getter.map((e) => evaluateRequiredWidgetExpression(e)).toList()';
+      return '$namedParamPrefix$getter.map((e) => $kEvaluateRequiredWidgetExpression(e)).toList()';
     } else if (type.isDartCoreIterable || type.isDartCoreList) {
       // no null check needed on repeated fields
       return '$namedParamPrefix$getter';

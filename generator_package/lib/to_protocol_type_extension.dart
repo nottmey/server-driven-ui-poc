@@ -1,4 +1,5 @@
 import 'package:analyzer/dart/element/type.dart';
+import 'package:generator_package/constants.dart';
 import 'package:generator_package/is_widget_extension.dart';
 
 extension ToProtocolTypeExtension on DartType {
@@ -23,7 +24,7 @@ extension ToProtocolTypeExtension on DartType {
         }
       }
     } else if (isWidget) {
-      return 'WidgetExpression';
+      return kWidgetExpression;
     } else if (isDartCoreString) {
       return 'string';
     } else if (isDartCoreBool) {

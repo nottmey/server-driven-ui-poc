@@ -19,7 +19,7 @@ syntax = "proto3";
 
 ${constructors.map((c) => c.toProtoMessage()).join("\n")}
     
-message WidgetExpression {
+message $kWidgetExpression {
   oneof result {
     ${constructors.mapIndexed((i, c) => c.toProtoField(i)).join("\n    ")}
   }
@@ -43,8 +43,8 @@ T missing<T>(String field) {
   throw AssertionError('required field \$field is missing');
 }
 
-Widget evaluateRequiredWidgetExpression(proto.WidgetExpression tree) {
-  final result = evaluateWidgetExpression(tree);
+Widget $kEvaluateRequiredWidgetExpression(proto.WidgetExpression tree) {
+  final result = $kEvaluateWidgetExpression(tree);
   if(result != null) {
     return result;
   } else {
@@ -52,7 +52,7 @@ Widget evaluateRequiredWidgetExpression(proto.WidgetExpression tree) {
   }
 }
 
-Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
+Widget? $kEvaluateWidgetExpression(proto.WidgetExpression? tree) {
   if(tree == null) {
     return null;
   }

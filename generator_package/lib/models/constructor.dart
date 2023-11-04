@@ -55,7 +55,7 @@ message ${messageName.pascalCase} {
         .whereType<String>()
         .join(', ');
     return '''
-    case proto.WidgetExpression_Result.$fieldName:
+    case proto.${kWidgetExpression}_Result.$fieldName:
       return $constructorCall($constructorParameters);''';
   }
 }

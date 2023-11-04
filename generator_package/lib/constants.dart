@@ -1,5 +1,11 @@
 const kProtoFieldStartNumber = 2;
 
+const kWidgetExpression = 'WidgetExpression';
+
+const kEvaluateWidgetExpression = 'evaluateWidgetExpression';
+
+const kEvaluateRequiredWidgetExpression = 'evaluateRequiredWidgetExpression';
+
 const kGeneratedFileHeader = '''
 //
 //  Generated. Do not modify.
