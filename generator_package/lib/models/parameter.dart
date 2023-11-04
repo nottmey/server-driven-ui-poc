@@ -67,7 +67,7 @@ class Parameter {
         ? defaultValue!.toSource()
         : nullable
             ? 'null'
-            : "missing('${name.originalText}')";
+            : "$kThrowMissing('${name.originalText}')";
     final extractor = '($nullChecker ? $getter : $generateDefaultValue)';
     if (type.isWidget) {
       final evalFn = nullable

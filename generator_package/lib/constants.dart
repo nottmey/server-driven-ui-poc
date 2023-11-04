@@ -6,6 +6,8 @@ const kEvaluateWidgetExpression = 'evaluateWidgetExpression';
 
 const kEvaluateRequiredWidgetExpression = 'evaluateRequiredWidgetExpression';
 
+const kThrowMissing = 'missing';
+
 const kGeneratedFileHeader = '''
 //
 //  Generated. Do not modify.

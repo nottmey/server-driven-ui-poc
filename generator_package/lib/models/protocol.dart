@@ -39,7 +39,7 @@ import 'package:proto_package/proto/widgets.pb.dart' as proto;
 
 ${sortedLibraries.mapIndexed((i, c) => c.toDartImport(i)).join("\n")}
 
-T missing<T>(String field) {
+T $kThrowMissing<T>(String field) {
   throw AssertionError('required field \$field is missing');
 }
 
