@@ -1,3 +1,4 @@
+import 'package:analyzer/dart/element/nullability_suffix.dart';
 import 'package:analyzer/dart/element/type.dart';
 import 'package:collection/collection.dart';
 import 'package:generator_package/constants.dart';
@@ -6,10 +7,12 @@ import 'package:generator_package/models/constructor.dart';
 import 'package:generator_package/to_library_prefix_extension.dart';
 
 extension _ProtoNameExtension on DartType {
+  bool get isRepeated => isDartCoreList || isDartCoreIterable;
+
   String? generateProtoName() {
     // TODO also allow AST values, e.g. "string or string expression", as e.g. oneof in a wrapper?
     // TODO also do maps, because it's possible
-    if (isDartCoreIterable || isDartCoreList) {
+    if (isRepeated) {
       assert(this is ParameterizedType);
       final typeArguments = (this as ParameterizedType).typeArguments;
 
@@ -71,6 +74,13 @@ class Type {
   final Uri? uri;
 
   bool get isMappable => protoName != null;
+
+  bool get isNullable =>
+      dartType.nullabilitySuffix == NullabilitySuffix.question;
+
+  bool get isRepeated => dartType.isRepeated;
+
+  bool get isOptionalInEvaluation => isNullable && !isRepeated;
 
   // TODO support more types
   bool get needsPayloadMessage =>
@@ -138,5 +148,21 @@ ${constructors.mapIndexed((j, c) => c.toDartSwitchCase('types', protoName!, '\$t
   }
 }
 ''';
+  }
+
+  String? toDartEvalFn() {
+    if (!isMappable) {
+      return null;
+    } else if (dartType.isWidget || dartType.isWidgetList) {
+      return isOptionalInEvaluation
+          ? kEvaluateWidgetExpression
+          : kEvaluateRequiredWidgetExpression;
+    } else if (needsPayloadMessage) {
+      return isOptionalInEvaluation
+          ? 'types.evaluate$protoName'
+          : 'types.evaluateRequired$protoName';
+    } else {
+      return null; // no eval needed
+    }
   }
 }

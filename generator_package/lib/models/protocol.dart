@@ -30,7 +30,7 @@ class Protocol {
         .sortedBy((element) => element.messageName.originalText);
     final uniquePayloadTypes = uniqueConstructors
         .expand((c) => c.parameters)
-        .map((p) => Type.of(p.type))
+        .map((p) => p.type)
         .where((t) => t.needsPayloadMessage)
         .where((t) => t.isMappable)
         .uniqueByKey((t) => t.dartType.element)
