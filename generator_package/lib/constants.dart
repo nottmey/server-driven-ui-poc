@@ -8,6 +8,12 @@ const kEvaluateRequiredWidgetExpression = 'evaluateRequiredWidgetExpression';
 
 const kThrowMissing = 'missing';
 
+const kTypesProto = 'types.proto';
+
+const kWidgetsProto = 'widgets.proto';
+
+const kServiceProto = 'service.proto';
+
 const kGeneratedFileHeader = '''
 //
 //  Generated. Do not modify.

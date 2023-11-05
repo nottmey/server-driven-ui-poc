@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'widgets.pb.dart' as $1;
+import 'widgets.pb.dart' as $2;
 
 class ExperienceRequest extends $pb.GeneratedMessage {
   factory ExperienceRequest({
@@ -119,7 +119,7 @@ class ExperienceResponse extends $pb.GeneratedMessage {
 
 class Experience extends $pb.GeneratedMessage {
   factory Experience({
-    $1.WidgetExpression? widget,
+    $2.WidgetExpression? widget,
   }) {
     final $result = create();
     if (widget != null) {
@@ -132,7 +132,7 @@ class Experience extends $pb.GeneratedMessage {
   factory Experience.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Experience', createEmptyInstance: create)
-    ..aOM<$1.WidgetExpression>(2, _omitFieldNames ? '' : 'widget', subBuilder: $1.WidgetExpression.create)
+    ..aOM<$2.WidgetExpression>(2, _omitFieldNames ? '' : 'widget', subBuilder: $2.WidgetExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -158,15 +158,15 @@ class Experience extends $pb.GeneratedMessage {
   static Experience? _defaultInstance;
 
   @$pb.TagNumber(2)
-  $1.WidgetExpression get widget => $_getN(0);
+  $2.WidgetExpression get widget => $_getN(0);
   @$pb.TagNumber(2)
-  set widget($1.WidgetExpression v) { setField(2, v); }
+  set widget($2.WidgetExpression v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasWidget() => $_has(0);
   @$pb.TagNumber(2)
   void clearWidget() => clearField(2);
   @$pb.TagNumber(2)
-  $1.WidgetExpression ensureWidget() => $_ensure(0);
+  $2.WidgetExpression ensureWidget() => $_ensure(0);
 }
 
 

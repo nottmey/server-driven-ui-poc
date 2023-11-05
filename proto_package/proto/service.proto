@@ -1,8 +1,11 @@
+//
+//  Generated. Do not modify.
+//
+
 syntax = "proto3";
 
 import "widgets.proto";
 
-// TODO generate
 service ExperienceProvider {
   rpc RequestExperience (ExperienceRequest) returns (ExperienceResponse) {}
   rpc SubscribeExperience (ExperienceRequest) returns (stream ExperienceResponse) {}

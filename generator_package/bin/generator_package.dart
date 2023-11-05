@@ -6,7 +6,7 @@ import 'package:analyzer/file_system/file_system.dart' as file_system;
 import 'package:analyzer/file_system/physical_file_system.dart';
 import 'package:analyzer/src/util/file_paths.dart' as file_paths;
 import 'package:analyzer/src/workspace/package_build.dart';
-import 'package:generator_package/models/library.dart';
+import 'package:generator_package/constants.dart';
 import 'package:generator_package/models/protocol.dart';
 import 'package:yaml/yaml.dart';
 
@@ -68,7 +68,7 @@ build/
     final pubspecContent = loadYaml(pubspecFile.readAsStringSync()) as YamlMap;
     final dependenciesContent = pubspecContent['dependencies'] as YamlMap;
     final dependencyPackages = dependenciesContent.nodes.entries
-        .map<String>((e) => e.key.value as String)
+        .map<String>((e) => (e.key as YamlNode).value as String)
         .where((dependency) => dependency != 'proto_package');
 
     final workspace = context.contextRoot.workspace as PackageBuildWorkspace;
@@ -102,16 +102,25 @@ build/
       }),
     );
 
-    final protocol = Protocol(
-      libraries: resolvedLibraries
+    final protocol = Protocol.ofElements(
+      resolvedLibraries
           .whereType<ResolvedLibraryResult>()
-          .map((result) => result.element)
-          .map(Library.ofElement),
+          .map((result) => result.element),
     );
 
-    writeFile('proto/widgets.proto', protocol.toWidgetsProto());
+    writeFile('proto/$kTypesProto', protocol.toTypesProto());
+
+    writeFile('proto/$kWidgetsProto', protocol.toWidgetsProto());
+
+    writeFile('proto/$kServiceProto', protocol.toServiceProto());
 
     // it's common to generate dart files by hand and not via ast
+
+    writeFile(
+      'lib/builders/evaluate_type_expressions.sdu.dart',
+      protocol.toTypesBuilderCode(),
+    );
+
     writeFile(
       'lib/builders/evaluate_widget_expression.sdu.dart',
       protocol.toWidgetBuilderCode(),

@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:grpc/grpc.dart';
 import 'package:proto_package/proto/service.pbgrpc.dart';
+import 'package:proto_package/proto/types.pb.dart';
 import 'package:proto_package/proto/widgets.pb.dart';
 
 Future<void> main(List<String> args) async {
@@ -22,7 +23,12 @@ class ExperienceProviderService extends ExperienceProviderServiceBase {
     return ExperienceResponse(
       start: Experience(
         widget: WidgetExpression(
-          flutterMaterialText: FlutterMaterialText(
+          flutterText: FlutterText(
+            // example of an object payload
+            key: FlutterKeyExpression(
+              flutterUniqueKey: FlutterUniqueKey(),
+            ),
+            // example of a dynamic answer
             data:
                 "Hello ${request.name + (tick != null ? " at tick $tick" : "")}!",
           ),

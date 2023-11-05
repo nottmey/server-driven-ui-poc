@@ -1,10 +1,9 @@
+import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/dart/element/type.dart';
 
 extension DartTypeIsWidgetExtension on DartType {
   bool get isWidget {
-    return element?.librarySource?.uri.path ==
-            'flutter/src/widgets/framework.dart' &&
-        element?.name == 'Widget';
+    return element != null && element!.isWidget;
   }
 
   bool get isWidgetList {
@@ -19,5 +18,12 @@ extension DartTypeIsWidgetExtension on DartType {
     } else {
       return false;
     }
+  }
+}
+
+extension ElemnentIsWidgetExtension on Element {
+  bool get isWidget {
+    return librarySource?.uri.path == 'flutter/src/widgets/framework.dart' &&
+        name == 'Widget';
   }
 }

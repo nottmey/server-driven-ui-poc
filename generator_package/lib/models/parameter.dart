@@ -4,25 +4,27 @@ import 'package:analyzer/dart/element/nullability_suffix.dart';
 import 'package:analyzer/dart/element/type.dart';
 import 'package:generator_package/constants.dart';
 import 'package:generator_package/is_supported_extensions.dart';
-import 'package:generator_package/is_widget_extension.dart';
-import 'package:generator_package/to_default_value_extension.dart';
-import 'package:generator_package/to_protocol_type_extension.dart';
+import 'package:generator_package/is_widget_extensions.dart';
+import 'package:generator_package/models/type.dart';
+import 'package:generator_package/to_default_value_expression_extension.dart';
 import 'package:recase/recase.dart';
 
 enum ParameterKind { positional, named }
 
 class Parameter {
+  // beware .originalText may be different from .camelCase if
+  // field starts with underscore, e.g. `_debugLabel`
+  final ReCase name;
   final int fieldNumber;
   final DartType type;
-  final ReCase name;
   final bool usesDisallowedName;
   final ParameterKind kind;
   final Expression? defaultValue;
 
   Parameter({
+    required this.name,
     required this.fieldNumber,
     required this.type,
-    required this.name,
     required this.usesDisallowedName,
     required this.kind,
     required this.defaultValue,
@@ -30,20 +32,20 @@ class Parameter {
 
   factory Parameter.ofElement(int index, ParameterElement element) {
     return Parameter(
+      name: ReCase(element.name),
       fieldNumber: index + kProtoFieldStartNumber,
       type: element.type,
-      name: ReCase(element.name),
       usesDisallowedName: kDisallowedFieldNames.contains(element.name),
       kind:
           element.isPositional ? ParameterKind.positional : ParameterKind.named,
-      defaultValue: element.hasDefaultValue ? element.toDefaultValue() : null,
+      defaultValue: element.toDefaultValueExpression(),
     );
   }
 
   String? toProtoField() {
-    final protocolType = type.toProtocolType;
-    if (protocolType != null) {
-      return '$protocolType ${name.snakeCase} = $fieldNumber;';
+    final protocolType = Type(type);
+    if (protocolType.isMappable) {
+      return '${protocolType.name} ${name.snakeCase} = $fieldNumber;';
     } else {
       return null;
     }
@@ -53,22 +55,33 @@ class Parameter {
     final namedParamPrefix =
         kind == ParameterKind.named ? '${name.originalText}: ' : '';
     final nullable = type.nullabilitySuffix == NullabilitySuffix.question;
-    if (type.toProtocolType == null) {
+    if (!type.isSupportedAsParameter) {
       // setting unbound type params to null leads to errors (which we can't handle right now)
       final typeParam = type is TypeParameterType;
       return nullable && !typeParam ? '${namedParamPrefix}null' : null;
     }
+    // TODO refactor so that Type is used as type
+    final typeWrapper = Type(type);
+    final typeEvaluationFunction = typeWrapper.needsPayloadMessage
+        ? nullable
+            ? 'types.evaluate${typeWrapper.name}'
+            : 'types.evaluateRequired${typeWrapper.name}'
+        : null;
 
     final postfix = usesDisallowedName ? '_$fieldNumber' : ''; // anti collision
-    final getter = 'tree.$fieldName.${name.originalText}$postfix';
+    final getter = 'tree.$fieldName.${name.camelCase}$postfix';
+    final evalWithGetter = typeEvaluationFunction != null
+        ? '$typeEvaluationFunction($getter)'
+        : getter;
     final nullChecker = 'tree.$fieldName.has${name.pascalCase}$postfix()';
     final generateDefaultValue = defaultValue != null &&
             defaultValue!.isSupportedAsDefaultValueByGenerator
         ? defaultValue!.toSource()
         : nullable
             ? 'null'
-            : "$kThrowMissing('${name.originalText}')";
-    final extractor = '($nullChecker ? $getter : $generateDefaultValue)';
+            : "$kThrowMissing('${name.camelCase}')";
+    final extractor =
+        '($nullChecker ? $evalWithGetter : $generateDefaultValue)';
     if (type.isWidget) {
       final evalFn = nullable
           ? kEvaluateWidgetExpression

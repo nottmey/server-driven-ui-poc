@@ -1,33 +1,64 @@
 import 'package:analyzer/dart/element/element.dart';
+import 'package:analyzer/dart/element/type.dart';
 import 'package:collection/collection.dart';
 import 'package:generator_package/constants.dart';
+import 'package:generator_package/is_widget_extensions.dart';
 import 'package:generator_package/models/parameter.dart';
+import 'package:generator_package/to_library_prefix_extension.dart';
 import 'package:recase/recase.dart';
 
+enum ConstructorKind { widget, type }
+
 class Constructor {
+  final ConstructorElement element;
+  final ConstructorKind kind;
   final ReCase messageName;
   final String typeName;
   final String? constructorName;
+  final Set<Element> constructingTypes;
   final Iterable<Parameter> parameters;
 
+  bool get isWidgetConstructor => kind == ConstructorKind.widget;
+
+  bool canConstructType(DartType type) {
+    return constructingTypes.contains(type.element);
+  }
+
   Constructor({
+    required this.element,
+    required this.kind,
     required this.messageName,
     required this.typeName,
     required this.constructorName,
+    required this.constructingTypes,
     required this.parameters,
   });
 
-  factory Constructor.ofElement(String prefix, ConstructorElement element) {
+  factory Constructor.ofElement(
+    ConstructorElement element,
+  ) {
+    final constructingTypes = {
+      element.enclosingElement,
+      ...element.enclosingElement.allSupertypes.map((t) => t.element),
+    };
+    final kind = constructingTypes.any((e) => e.isWidget)
+        ? ConstructorKind.widget
+        : ConstructorKind.type;
+    final libraryPrefix = element.toLibraryPrefix();
+
     final typeName = element.enclosingElement.name;
     final constructorName = element.name;
     final postfix = constructorName.isEmpty
         ? ''
         : 'Named${ReCase(constructorName).pascalCase}';
-    final widgetConstructorName = "$prefix$typeName$postfix";
+    final exportingConstructorName = '$libraryPrefix$typeName$postfix';
     return Constructor(
-      messageName: ReCase(widgetConstructorName),
+      element: element,
+      kind: kind,
+      messageName: ReCase(exportingConstructorName),
       typeName: typeName,
       constructorName: constructorName.isEmpty ? null : constructorName,
+      constructingTypes: constructingTypes,
       parameters: element.parameters
           .where((p) => !p.hasDeprecated)
           .mapIndexed(Parameter.ofElement),
@@ -40,22 +71,31 @@ class Constructor {
 
   String toProtoMessage() {
     return '''
+// ${element.librarySource.uri}
 message ${messageName.pascalCase} {
   ${parameters.map((e) => e.toProtoField()).whereType<String>().join("\n  ")}
 }
 ''';
   }
 
-  String toDartSwitchCase(String importAlias) {
+  String toDartSwitchCase(
+    String protoImportAlias,
+    String expressionName,
+    String constructorImportAlias,
+  ) {
     final fieldName = messageName.camelCase;
     final constructorCall =
-        '$importAlias.$typeName${constructorName != null ? ".$constructorName" : ""}';
+        '$constructorImportAlias.$typeName${constructorName != null ? ".$constructorName" : ""}';
     final constructorParameters = parameters
         .map((p) => p.toDartParameter(fieldName))
         .whereType<String>()
         .join(', ');
     return '''
-    case proto.${kWidgetExpression}_Result.$fieldName:
+    case $protoImportAlias.${expressionName}_Result.$fieldName:
       return $constructorCall($constructorParameters);''';
+  }
+
+  String toDartImport(int i, int j) {
+    return "import '${element.librarySource.uri}' as \$t${i}c$j;";
   }
 }
