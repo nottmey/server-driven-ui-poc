@@ -5,17 +5,13 @@ import 'package:generator_package/is_widget_extensions.dart';
 import 'package:generator_package/models/constructor.dart';
 import 'package:generator_package/to_library_prefix_extension.dart';
 
-class Type {
-  final DartType dartType;
-
-  bool get isMappable => name != null;
-
-  String? get name {
+extension _ProtoNameExtension on DartType {
+  String? generateProtoName() {
     // TODO also allow AST values, e.g. "string or string expression", as e.g. oneof in a wrapper?
     // TODO also do maps, because it's possible
-    if (dartType.isDartCoreIterable || dartType.isDartCoreList) {
-      assert(dartType is ParameterizedType);
-      final typeArguments = (dartType as ParameterizedType).typeArguments;
+    if (isDartCoreIterable || isDartCoreList) {
+      assert(this is ParameterizedType);
+      final typeArguments = (this as ParameterizedType).typeArguments;
 
       assert(typeArguments.length == 1);
       final subType = typeArguments.first;
@@ -24,27 +20,27 @@ class Type {
         // TODO solve multi dimensional arrays
         return null; // can't do matrices
       } else {
-        final subProtoType = Type(subType);
-        if (subProtoType.isMappable) {
-          return 'repeated ${subProtoType.name}';
+        final subTypeProtoName = subType.generateProtoName();
+        if (subTypeProtoName != null) {
+          return 'repeated $subTypeProtoName';
         } else {
           return null; // unsupported subtype
         }
       }
-    } else if (dartType.isWidget) {
+    } else if (isWidget) {
       return kWidgetExpression;
-    } else if (dartType.isDartCoreString) {
+    } else if (isDartCoreString) {
       return 'string';
-    } else if (dartType.isDartCoreBool) {
+    } else if (isDartCoreBool) {
       return 'bool';
-    } else if (dartType.isDartCoreInt) {
+    } else if (isDartCoreInt) {
       return 'int32';
-    } else if (dartType.isDartCoreDouble) {
+    } else if (isDartCoreDouble) {
       return 'double';
-    } else if (dartType is InterfaceType) {
+    } else if (this is InterfaceType) {
       // classes and abstract classes
-      final name = dartType.element?.name;
-      final libraryPrefix = dartType.element?.toLibraryPrefix();
+      final name = element?.name;
+      final libraryPrefix = element?.toLibraryPrefix();
       if (name == 'Key') {
         return '$libraryPrefix${name}Expression';
       } else {
@@ -52,34 +48,57 @@ class Type {
         // TODO use correct name with type with type params
         return null;
       }
-    } else if (dartType is FunctionType) {
+    } else if (this is FunctionType) {
       // TODO function types
       return null;
-    } else if (dartType is DynamicType) {
+    } else if (this is DynamicType) {
       // TODO dynamic types
       return null;
-    } else if (dartType is TypeParameterType) {
+    } else if (this is TypeParameterType) {
       // TODO type parameter usages
       return null;
     } else {
-      assert(false, '${dartType.runtimeType} has missing implementation');
+      assert(false, '$runtimeType has missing implementation');
       return null;
     }
   }
+}
 
-  bool get needsPayloadMessage {
-    return dartType is InterfaceType && dartType.element?.name == 'Key';
+class Type {
+  final DartType dartType;
+  final String? protoName;
+  final String? typeName;
+  final Uri? uri;
+
+  bool get isMappable => protoName != null;
+
+  // TODO support more types
+  bool get needsPayloadMessage =>
+      dartType is InterfaceType && dartType.element?.name == 'Key';
+
+  Type({
+    required this.dartType,
+    required this.protoName,
+    required this.typeName,
+    required this.uri,
+  });
+
+  factory Type.of(DartType dartType) {
+    return Type(
+      dartType: dartType,
+      protoName: dartType.generateProtoName(),
+      typeName: dartType.element?.name,
+      uri: dartType.element?.librarySource?.uri,
+    );
   }
 
-  Type(this.dartType);
-
   String? toProtoMessage(Iterable<Constructor> typeConstructors) {
-    if (!isMappable) {
+    if (protoName == null) {
       return null;
     }
 
     return '''
-message $name {
+message $protoName {
   oneof result {
     ${typeConstructors.mapIndexed((i, c) => c.toProtoField(i)).join("\n    ")}
   }
@@ -88,20 +107,18 @@ message $name {
   }
 
   String toDartImport(int i) {
-    return "import '${dartType.element?.librarySource?.uri}' as \$t$i;";
+    return "import '$uri' as \$t$i;";
   }
 
   String? toDartSwitchCase(int i, Iterable<Constructor> constructors) {
-    final expressionName = name;
-    if (expressionName == null) {
+    if (protoName == null) {
       return null;
     }
     final typeAlias = '\$t$i';
-    final typeName = dartType.element?.name;
 
     return '''
-$typeAlias.$typeName evaluateRequired$expressionName(types.$expressionName tree) {
-  final result = evaluate$expressionName(tree);
+$typeAlias.$typeName evaluateRequired$protoName(types.$protoName tree) {
+  final result = evaluate$protoName(tree);
   if(result != null) {
     return result;
   } else {
@@ -109,13 +126,13 @@ $typeAlias.$typeName evaluateRequired$expressionName(types.$expressionName tree)
   }
 }
 
-$typeAlias.$typeName? evaluate$expressionName(types.$expressionName? tree) {
+$typeAlias.$typeName? evaluate$protoName(types.$protoName? tree) {
   if(tree == null) {
     return null;
   }
 
   switch (tree.whichResult()) {
-${constructors.mapIndexed((j, c) => c.toDartSwitchCase('types', expressionName, '\$t${i}c$j')).join("\n")}
+${constructors.mapIndexed((j, c) => c.toDartSwitchCase('types', protoName!, '\$t${i}c$j')).join("\n")}
     default:
       return null;
   }

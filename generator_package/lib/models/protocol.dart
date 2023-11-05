@@ -30,11 +30,11 @@ class Protocol {
         .sortedBy((element) => element.messageName.originalText);
     final uniquePayloadTypes = uniqueConstructors
         .expand((c) => c.parameters)
-        .map((p) => Type(p.type))
+        .map((p) => Type.of(p.type))
         .where((t) => t.needsPayloadMessage)
         .where((t) => t.isMappable)
         .uniqueByKey((t) => t.dartType.element)
-        .sortedBy((t) => t.name ?? '');
+        .sortedBy((t) => t.protoName ?? '');
     return Protocol(
       libraries: libraries,
       constructors: uniqueConstructors,
@@ -112,7 +112,8 @@ message Experience {
   }
 
   String toTypesBuilderCode() {
-    final entries = payloadConstructors.entries.sortedBy((e) => e.key.name!);
+    final entries =
+        payloadConstructors.entries.sortedBy((e) => e.key.protoName!);
 
     return '''
 $kGeneratedFileHeader

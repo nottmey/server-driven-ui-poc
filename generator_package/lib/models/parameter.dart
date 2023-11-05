@@ -43,9 +43,9 @@ class Parameter {
   }
 
   String? toProtoField() {
-    final protocolType = Type(type);
+    final protocolType = Type.of(type);
     if (protocolType.isMappable) {
-      return '${protocolType.name} ${name.snakeCase} = $fieldNumber;';
+      return '${protocolType.protoName} ${name.snakeCase} = $fieldNumber;';
     } else {
       return null;
     }
@@ -61,11 +61,11 @@ class Parameter {
       return nullable && !typeParam ? '${namedParamPrefix}null' : null;
     }
     // TODO refactor so that Type is used as type
-    final typeWrapper = Type(type);
+    final typeWrapper = Type.of(type);
     final typeEvaluationFunction = typeWrapper.needsPayloadMessage
         ? nullable
-            ? 'types.evaluate${typeWrapper.name}'
-            : 'types.evaluateRequired${typeWrapper.name}'
+            ? 'types.evaluate${typeWrapper.protoName}'
+            : 'types.evaluateRequired${typeWrapper.protoName}'
         : null;
 
     final postfix = usesDisallowedName ? '_$fieldNumber' : ''; // anti collision

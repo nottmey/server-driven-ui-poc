@@ -18,7 +18,7 @@ extension TypeSupportedExtension on ConstructorElement {
 
 extension IsSupportedTypeExtension on DartType {
   bool get isSupportedAsParameter {
-    return Type(this).isMappable;
+    return Type.of(this).isMappable;
   }
 }
 
