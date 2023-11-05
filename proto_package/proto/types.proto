@@ -5,6 +5,16 @@
 syntax = "proto3";
 
 // package:flutter/src/widgets/framework.dart
+message FlutterGlobalKey {
+  string debug_label = 2;
+}
+
+// package:flutter/src/foundation/key.dart
+message FlutterKey {
+  string value = 2;
+}
+
+// package:flutter/src/widgets/framework.dart
 message FlutterLabeledGlobalKey {
   string debug_label = 2;
 }
@@ -22,9 +32,11 @@ message FlutterUniqueKey {
 
 message FlutterKeyExpression {
   oneof result {
-    FlutterLabeledGlobalKey flutter_labeled_global_key = 2;
-    FlutterObjectKey flutter_object_key = 3;
-    FlutterUniqueKey flutter_unique_key = 4;
+    FlutterGlobalKey flutter_global_key = 2;
+    FlutterKey flutter_key = 3;
+    FlutterLabeledGlobalKey flutter_labeled_global_key = 4;
+    FlutterObjectKey flutter_object_key = 5;
+    FlutterUniqueKey flutter_unique_key = 6;
   }
 }
 

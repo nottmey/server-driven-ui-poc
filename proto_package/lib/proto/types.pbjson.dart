@@ -13,6 +13,30 @@ import 'dart:convert' as $convert;
 import 'dart:core' as $core;
 import 'dart:typed_data' as $typed_data;
 
+@$core.Deprecated('Use flutterGlobalKeyDescriptor instead')
+const FlutterGlobalKey$json = {
+  '1': 'FlutterGlobalKey',
+  '2': [
+    {'1': 'debug_label', '3': 2, '4': 1, '5': 9, '10': 'debugLabel'},
+  ],
+};
+
+/// Descriptor for `FlutterGlobalKey`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterGlobalKeyDescriptor = $convert.base64Decode(
+    'ChBGbHV0dGVyR2xvYmFsS2V5Eh8KC2RlYnVnX2xhYmVsGAIgASgJUgpkZWJ1Z0xhYmVs');
+
+@$core.Deprecated('Use flutterKeyDescriptor instead')
+const FlutterKey$json = {
+  '1': 'FlutterKey',
+  '2': [
+    {'1': 'value', '3': 2, '4': 1, '5': 9, '10': 'value'},
+  ],
+};
+
+/// Descriptor for `FlutterKey`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterKeyDescriptor = $convert.base64Decode(
+    'CgpGbHV0dGVyS2V5EhQKBXZhbHVlGAIgASgJUgV2YWx1ZQ==');
+
 @$core.Deprecated('Use flutterLabeledGlobalKeyDescriptor instead')
 const FlutterLabeledGlobalKey$json = {
   '1': 'FlutterLabeledGlobalKey',
@@ -48,9 +72,11 @@ final $typed_data.Uint8List flutterUniqueKeyDescriptor = $convert.base64Decode(
 const FlutterKeyExpression$json = {
   '1': 'FlutterKeyExpression',
   '2': [
-    {'1': 'flutter_labeled_global_key', '3': 2, '4': 1, '5': 11, '6': '.FlutterLabeledGlobalKey', '9': 0, '10': 'flutterLabeledGlobalKey'},
-    {'1': 'flutter_object_key', '3': 3, '4': 1, '5': 11, '6': '.FlutterObjectKey', '9': 0, '10': 'flutterObjectKey'},
-    {'1': 'flutter_unique_key', '3': 4, '4': 1, '5': 11, '6': '.FlutterUniqueKey', '9': 0, '10': 'flutterUniqueKey'},
+    {'1': 'flutter_global_key', '3': 2, '4': 1, '5': 11, '6': '.FlutterGlobalKey', '9': 0, '10': 'flutterGlobalKey'},
+    {'1': 'flutter_key', '3': 3, '4': 1, '5': 11, '6': '.FlutterKey', '9': 0, '10': 'flutterKey'},
+    {'1': 'flutter_labeled_global_key', '3': 4, '4': 1, '5': 11, '6': '.FlutterLabeledGlobalKey', '9': 0, '10': 'flutterLabeledGlobalKey'},
+    {'1': 'flutter_object_key', '3': 5, '4': 1, '5': 11, '6': '.FlutterObjectKey', '9': 0, '10': 'flutterObjectKey'},
+    {'1': 'flutter_unique_key', '3': 6, '4': 1, '5': 11, '6': '.FlutterUniqueKey', '9': 0, '10': 'flutterUniqueKey'},
   ],
   '8': [
     {'1': 'result'},
@@ -59,9 +85,11 @@ const FlutterKeyExpression$json = {
 
 /// Descriptor for `FlutterKeyExpression`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterKeyExpressionDescriptor = $convert.base64Decode(
-    'ChRGbHV0dGVyS2V5RXhwcmVzc2lvbhJXChpmbHV0dGVyX2xhYmVsZWRfZ2xvYmFsX2tleRgCIA'
-    'EoCzIYLkZsdXR0ZXJMYWJlbGVkR2xvYmFsS2V5SABSF2ZsdXR0ZXJMYWJlbGVkR2xvYmFsS2V5'
-    'EkEKEmZsdXR0ZXJfb2JqZWN0X2tleRgDIAEoCzIRLkZsdXR0ZXJPYmplY3RLZXlIAFIQZmx1dH'
-    'Rlck9iamVjdEtleRJBChJmbHV0dGVyX3VuaXF1ZV9rZXkYBCABKAsyES5GbHV0dGVyVW5pcXVl'
-    'S2V5SABSEGZsdXR0ZXJVbmlxdWVLZXlCCAoGcmVzdWx0');
+    'ChRGbHV0dGVyS2V5RXhwcmVzc2lvbhJBChJmbHV0dGVyX2dsb2JhbF9rZXkYAiABKAsyES5GbH'
+    'V0dGVyR2xvYmFsS2V5SABSEGZsdXR0ZXJHbG9iYWxLZXkSLgoLZmx1dHRlcl9rZXkYAyABKAsy'
+    'Cy5GbHV0dGVyS2V5SABSCmZsdXR0ZXJLZXkSVwoaZmx1dHRlcl9sYWJlbGVkX2dsb2JhbF9rZX'
+    'kYBCABKAsyGC5GbHV0dGVyTGFiZWxlZEdsb2JhbEtleUgAUhdmbHV0dGVyTGFiZWxlZEdsb2Jh'
+    'bEtleRJBChJmbHV0dGVyX29iamVjdF9rZXkYBSABKAsyES5GbHV0dGVyT2JqZWN0S2V5SABSEG'
+    'ZsdXR0ZXJPYmplY3RLZXkSQQoSZmx1dHRlcl91bmlxdWVfa2V5GAYgASgLMhEuRmx1dHRlclVu'
+    'aXF1ZUtleUgAUhBmbHV0dGVyVW5pcXVlS2V5QggKBnJlc3VsdA==');
 

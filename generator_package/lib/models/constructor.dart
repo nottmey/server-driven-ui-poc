@@ -7,7 +7,7 @@ import 'package:generator_package/models/parameter.dart';
 import 'package:generator_package/to_library_prefix_extension.dart';
 import 'package:recase/recase.dart';
 
-enum ConstructorKind { widget, type }
+enum ConstructorKind { widget, payload }
 
 class Constructor {
   final ConstructorElement element;
@@ -34,16 +34,14 @@ class Constructor {
     required this.parameters,
   });
 
-  factory Constructor.ofElement(
-    ConstructorElement element,
-  ) {
+  factory Constructor.ofElement(ConstructorElement element) {
     final constructingTypes = {
       element.enclosingElement,
       ...element.enclosingElement.allSupertypes.map((t) => t.element),
     };
     final kind = constructingTypes.any((e) => e.isWidget)
         ? ConstructorKind.widget
-        : ConstructorKind.type;
+        : ConstructorKind.payload;
     final libraryPrefix = element.toLibraryPrefix();
 
     final typeName = element.enclosingElement.name;

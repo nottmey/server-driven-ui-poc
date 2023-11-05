@@ -18,9 +18,12 @@ class Library {
       uri: element.librarySource.uri,
       constructors: element.exportNamespace.definedNames.values
           .whereType<ClassElement>()
-          .where((c) => !c.isAbstract)
           .where((c) => !c.hasDeprecated)
-          .expand((c) => c.constructors)
+          .expand(
+            (c) => c.isAbstract
+                ? c.constructors.where((c) => c.isFactory)
+                : c.constructors,
+          )
           .where((c) => c.isPublic)
           .where((c) => !c.hasDeprecated)
           .where((c) => c.isSupportedByGenerator)

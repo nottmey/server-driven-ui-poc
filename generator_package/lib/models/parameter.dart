@@ -83,6 +83,7 @@ class Parameter {
     final extractor =
         '($nullChecker ? $evalWithGetter : $generateDefaultValue)';
     if (type.isWidget) {
+      // TODO merge logic with payload eval by using Type as source of truth
       final evalFn = nullable
           ? kEvaluateWidgetExpression
           : kEvaluateRequiredWidgetExpression;

@@ -112,7 +112,6 @@ message Experience {
   }
 
   String toTypesBuilderCode() {
-    // TODO generate all evaluation functions for key expressions
     final entries = payloadConstructors.entries.sortedBy((e) => e.key.name!);
 
     return '''
@@ -123,6 +122,10 @@ import 'package:proto_package/proto/types.pb.dart' as types;
 ${entries.mapIndexed((i, e) => e.key.toDartImport(i)).join("\n")}
 
 ${entries.mapIndexed((i, e) => e.value.mapIndexed((j, c) => c.toDartImport(i, j))).flattened.join("\n")}
+
+T $kThrowMissing<T>(String field) {
+  throw AssertionError('required field \$field is missing');
+}
 
 ${entries.mapIndexed((i, e) => e.key.toDartSwitchCase(i, e.value)).whereType<String>().join("\n")}
 ''';
