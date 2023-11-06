@@ -11,9 +11,6 @@ class Type {
   final String? typeName;
   final Uri? uri;
 
-  bool get isNullable =>
-      dartType.nullabilitySuffix == NullabilitySuffix.question;
-
   Type({
     required this.dartType,
     required this.strategy,
@@ -46,7 +43,12 @@ message $protoType {
 ''';
   }
 
-  String toDartImport(int i) {
+  String? toDartImport(int i) {
+    final strategy = this.strategy;
+    if (strategy == null) {
+      return null;
+    }
+
     return "import '$uri' as \$t$i;";
   }
 
@@ -88,8 +90,9 @@ ${constructors.mapIndexed((j, c) => c.toDartSwitchCase('types', protoType, '\$t$
       return null;
     }
     final protoType = strategy.protoType;
-    final isOptionalInEvaluation = isNullable &&
-        strategy.structureStrategy == StructureStrategy.treatAsSingular;
+    final isOptionalInEvaluation =
+        dartType.nullabilitySuffix == NullabilitySuffix.question &&
+            strategy.structureStrategy == StructureStrategy.treatAsSingular;
 
     switch (strategy.mappingStrategy) {
       case MappingStrategy.useProtoEquivalent:

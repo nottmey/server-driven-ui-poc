@@ -125,7 +125,7 @@ $kGeneratedFileHeader
 
 import 'package:proto_package/proto/types.pb.dart' as types;
 
-${entries.mapIndexed((i, e) => e.key.toDartImport(i)).join("\n")}
+${entries.mapIndexed((i, e) => e.key.toDartImport(i)).whereType<String>().join("\n")}
 
 ${entries.mapIndexed((i, e) => e.value.mapIndexed((j, c) => c.toDartImport(i, j))).flattened.join("\n")}
 
