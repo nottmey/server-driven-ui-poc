@@ -72,7 +72,7 @@ build/
         .where((dependency) => dependency != 'proto_package');
 
     final workspace = context.contextRoot.workspace as PackageBuildWorkspace;
-    var packageMap = <String, file_system.Folder>{};
+    final packageMap = <String, file_system.Folder>{};
     for (final package in workspace.packages.packages) {
       assert(packageMap[package.name] == null);
       packageMap[package.name] = package.libFolder;

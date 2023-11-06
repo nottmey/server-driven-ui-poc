@@ -9,7 +9,7 @@ extension ToLibraryPrefixExtension on Element {
       ...libraryPathSegments.sublist(0, libraryPathSegments.length - 1),
       // TODO don't prefix package of internal libraries
       // TODO don't prefix file name if widget name matches file name
-      if (includeFileName) libraryPathSegments.last.replaceAll('.dart', '')
+      if (includeFileName) libraryPathSegments.last.replaceAll('.dart', ''),
     ].map((e) => ReCase(e).pascalCase).join();
 
     // improves readability on standard libraries

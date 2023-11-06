@@ -33,12 +33,11 @@ class Protocol {
         .expand((c) => c.parameters)
         .map((p) => p.typeMapping)
         .whereType<TypeMapping>()
-        .where((t) => t.mappingStrategy != null)
         .where(
           (t) => t.mappingStrategy == MappingStrategy.generatePayloadMessage,
         )
         .uniqueByKey((t) => t.dartType.element)
-        .sortedBy((t) => t.protoType ?? '');
+        .sortedBy((t) => t.protoType);
     return Protocol(
       libraries: libraries,
       constructors: uniqueConstructors,
@@ -117,7 +116,7 @@ message Experience {
 
   String toTypesBuilderCode() {
     final entries =
-        payloadConstructors.entries.sortedBy((e) => e.key.protoType!);
+        payloadConstructors.entries.sortedBy((e) => e.key.protoType);
 
     return '''
 $kGeneratedFileHeader

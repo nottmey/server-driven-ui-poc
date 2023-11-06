@@ -7,9 +7,9 @@ import 'package:generator_package/models/determine_strategy_extension.dart';
 
 class TypeMapping {
   final DartType dartType;
-  final String? protoType;
-  final MappingStrategy? mappingStrategy;
-  final StructureStrategy? structureStrategy;
+  final String protoType;
+  final MappingStrategy mappingStrategy;
+  final StructureStrategy structureStrategy;
   final String? typeName;
   final Uri? uri;
 
@@ -38,12 +38,7 @@ class TypeMapping {
     );
   }
 
-  String? toProtoMessage(Iterable<Constructor> typeConstructors) {
-    final protoType = this.protoType;
-    if (protoType == null) {
-      return null;
-    }
-
+  String toProtoMessage(Iterable<Constructor> typeConstructors) {
     return '''
 message $protoType {
   oneof result {
@@ -53,22 +48,12 @@ message $protoType {
 ''';
   }
 
-  String? toDartImport(int i) {
-    final protoType = this.protoType;
-    if (protoType == null) {
-      return null;
-    }
-
+  String toDartImport(int i) {
     return "import '$uri' as \$t$i;";
   }
 
-  String? toDartSwitchCase(int i, Iterable<Constructor> constructors) {
-    final protoType = this.protoType;
-    if (protoType == null) {
-      return null;
-    }
+  String toDartSwitchCase(int i, Iterable<Constructor> constructors) {
     final typeAlias = '\$t$i';
-
     return '''
 $typeAlias.$typeName evaluateRequired$protoType(types.$protoType tree) {
   final result = evaluate$protoType(tree);
@@ -94,11 +79,6 @@ ${constructors.mapIndexed((j, c) => c.toDartSwitchCase('types', protoType, '\$t$
   }
 
   String? toDartEvalFn() {
-    final protoType = this.protoType;
-    final mappingStrategy = this.mappingStrategy;
-    if (protoType == null || mappingStrategy == null) {
-      return null;
-    }
     final isOptionalInEvaluation =
         dartType.nullabilitySuffix == NullabilitySuffix.question &&
             structureStrategy == StructureStrategy.treatAsSingular;
