@@ -2,6 +2,7 @@ import 'package:analyzer/dart/element/element.dart';
 import 'package:collection/collection.dart';
 import 'package:generator_package/constants.dart';
 import 'package:generator_package/models/constructor.dart';
+import 'package:generator_package/models/determine_strategy_extension.dart';
 import 'package:generator_package/models/library.dart';
 import 'package:generator_package/models/type.dart';
 import 'package:generator_package/unique_by_key_extension.dart';
@@ -31,10 +32,14 @@ class Protocol {
     final uniquePayloadTypes = uniqueConstructors
         .expand((c) => c.parameters)
         .map((p) => p.type)
-        .where((t) => t.needsPayloadMessage)
-        .where((t) => t.isMappable)
+        .where((t) => t.strategy != null)
+        .where(
+          (t) =>
+              t.strategy?.mappingStrategy ==
+              MappingStrategy.generatePayloadMessage,
+        )
         .uniqueByKey((t) => t.dartType.element)
-        .sortedBy((t) => t.protoName ?? '');
+        .sortedBy((t) => t.strategy?.protoType ?? '');
     return Protocol(
       libraries: libraries,
       constructors: uniqueConstructors,
@@ -113,7 +118,7 @@ message Experience {
 
   String toTypesBuilderCode() {
     final entries =
-        payloadConstructors.entries.sortedBy((e) => e.key.protoName!);
+        payloadConstructors.entries.sortedBy((e) => e.key.strategy!.protoType);
 
     return '''
 $kGeneratedFileHeader

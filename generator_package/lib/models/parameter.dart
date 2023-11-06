@@ -3,6 +3,7 @@ import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/dart/element/type.dart';
 import 'package:generator_package/constants.dart';
 import 'package:generator_package/is_supported_extensions.dart';
+import 'package:generator_package/models/determine_strategy_extension.dart';
 import 'package:generator_package/models/type.dart';
 import 'package:generator_package/to_default_value_expression_extension.dart';
 import 'package:recase/recase.dart';
@@ -41,8 +42,9 @@ class Parameter {
   }
 
   String? toProtoField() {
-    if (type.isMappable) {
-      return '${type.protoName} ${name.snakeCase} = $fieldNumber;';
+    final protoType = type.strategy?.protoType;
+    if (protoType != null) {
+      return '$protoType ${name.snakeCase} = $fieldNumber;';
     } else {
       return null;
     }
@@ -70,15 +72,17 @@ class Parameter {
             : "$kThrowMissing('${name.camelCase}')";
 
     final evalFn = type.toDartEvalFn();
+    final isRepeated =
+        type.strategy?.structureStrategy == StructureStrategy.treatAsRepeated;
     if (evalFn != null) {
-      if (type.isRepeated) {
+      if (isRepeated) {
         // no null check needed on repeated fields
         return '$namedParamPrefix$getter.map((e) => $evalFn(e)).toList()';
       } else {
         return '$namedParamPrefix($nullChecker ? $evalFn($getter) : $generateDefaultValue)';
       }
     } else {
-      if (type.isRepeated) {
+      if (isRepeated) {
         // no null check needed on repeated fields
         return '$namedParamPrefix$getter';
       } else {
