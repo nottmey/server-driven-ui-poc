@@ -22,13 +22,17 @@ class TypeMapping {
     required this.uri,
   });
 
-  factory TypeMapping.of(DartType dartType) {
+  static TypeMapping? of(DartType dartType) {
     final strategy = dartType.determineStrategy();
+    if (strategy == null) {
+      return null;
+    }
+
     return TypeMapping(
       dartType: dartType,
-      protoType: strategy?.protoType,
-      mappingStrategy: strategy?.mappingStrategy,
-      structureStrategy: strategy?.structureStrategy,
+      protoType: strategy.protoType,
+      mappingStrategy: strategy.mappingStrategy,
+      structureStrategy: strategy.structureStrategy,
       typeName: dartType.element?.name,
       uri: dartType.element?.librarySource?.uri,
     );

@@ -32,6 +32,7 @@ class Protocol {
     final uniquePayloadTypes = uniqueConstructors
         .expand((c) => c.parameters)
         .map((p) => p.typeMapping)
+        .whereType<TypeMapping>()
         .where((t) => t.mappingStrategy != null)
         .where(
           (t) => t.mappingStrategy == MappingStrategy.generatePayloadMessage,

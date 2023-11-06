@@ -13,11 +13,10 @@ class Parameter {
   // beware .originalText may be different from .camelCase if
   // field starts with underscore, e.g. `_debugLabel`
   final ReCase name;
-  final TypeMapping typeMapping;
+  final TypeMapping? typeMapping;
   final int fieldNumber;
   final bool isNamed;
   final bool isNullable;
-  final bool isSupported;
   final bool isGeneric;
   final bool hasNameCollision;
   final Expression? defaultValue;
@@ -28,7 +27,6 @@ class Parameter {
     required this.fieldNumber,
     required this.isNamed,
     required this.isNullable,
-    required this.isSupported,
     required this.isGeneric,
     required this.hasNameCollision,
     required this.defaultValue,
@@ -41,7 +39,6 @@ class Parameter {
       fieldNumber: index + kProtoFieldStartNumber,
       isNamed: element.isNamed,
       isNullable: element.type.nullabilitySuffix == NullabilitySuffix.question,
-      isSupported: element.type.isSupportedAsParameter,
       isGeneric: element.type is TypeParameterType,
       hasNameCollision: kDisallowedFieldNames.contains(element.name),
       defaultValue: element.toDefaultValueExpression(),
@@ -49,7 +46,7 @@ class Parameter {
   }
 
   String? toProtoField() {
-    final protoType = typeMapping.protoType;
+    final protoType = typeMapping?.protoType;
     if (protoType != null) {
       return '$protoType ${name.snakeCase} = $fieldNumber;';
     } else {
@@ -59,7 +56,7 @@ class Parameter {
 
   String? toDartParameter(String fieldName) {
     final namedParamPrefix = isNamed ? '${name.originalText}: ' : '';
-    if (!isSupported) {
+    if (typeMapping == null) {
       // setting unbound generic params to null leads to errors (which we can't handle right now)
       return isNullable && !isGeneric ? '${namedParamPrefix}null' : null;
     }
@@ -75,9 +72,9 @@ class Parameter {
             ? 'null'
             : "$kThrowMissing('${name.camelCase}')";
 
-    final evalFn = typeMapping.toDartEvalFn();
+    final evalFn = typeMapping?.toDartEvalFn();
     final isRepeated =
-        typeMapping.structureStrategy == StructureStrategy.treatAsRepeated;
+        typeMapping?.structureStrategy == StructureStrategy.treatAsRepeated;
     if (evalFn != null) {
       if (isRepeated) {
         // no null check needed on repeated fields
