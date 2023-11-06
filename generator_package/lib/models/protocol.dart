@@ -4,15 +4,15 @@ import 'package:generator_package/constants.dart';
 import 'package:generator_package/models/constructor.dart';
 import 'package:generator_package/models/determine_strategy_extension.dart';
 import 'package:generator_package/models/library.dart';
-import 'package:generator_package/models/type.dart';
+import 'package:generator_package/models/type_mapping.dart';
 import 'package:generator_package/unique_by_key_extension.dart';
 
 class Protocol {
   final Iterable<Library> libraries;
   final Iterable<Constructor> constructors;
   final Iterable<Constructor> widgetConstructors;
-  final Iterable<Type> payloadTypes;
-  final Map<Type, Iterable<Constructor>> payloadConstructors;
+  final Iterable<TypeMapping> payloadTypes;
+  final Map<TypeMapping, Iterable<Constructor>> payloadConstructors;
 
   Protocol({
     required this.libraries,
@@ -31,15 +31,13 @@ class Protocol {
         .sortedBy((element) => element.messageName.originalText);
     final uniquePayloadTypes = uniqueConstructors
         .expand((c) => c.parameters)
-        .map((p) => p.type)
-        .where((t) => t.strategy != null)
+        .map((p) => p.typeMapping)
+        .where((t) => t.mappingStrategy != null)
         .where(
-          (t) =>
-              t.strategy?.mappingStrategy ==
-              MappingStrategy.generatePayloadMessage,
+          (t) => t.mappingStrategy == MappingStrategy.generatePayloadMessage,
         )
         .uniqueByKey((t) => t.dartType.element)
-        .sortedBy((t) => t.strategy?.protoType ?? '');
+        .sortedBy((t) => t.protoType ?? '');
     return Protocol(
       libraries: libraries,
       constructors: uniqueConstructors,
@@ -118,7 +116,7 @@ message Experience {
 
   String toTypesBuilderCode() {
     final entries =
-        payloadConstructors.entries.sortedBy((e) => e.key.strategy!.protoType);
+        payloadConstructors.entries.sortedBy((e) => e.key.protoType!);
 
     return '''
 $kGeneratedFileHeader

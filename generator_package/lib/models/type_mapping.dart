@@ -5,34 +5,40 @@ import 'package:generator_package/constants.dart';
 import 'package:generator_package/models/constructor.dart';
 import 'package:generator_package/models/determine_strategy_extension.dart';
 
-class Type {
+class TypeMapping {
   final DartType dartType;
-  final GeneratorStrategy? strategy;
+  final String? protoType;
+  final MappingStrategy? mappingStrategy;
+  final StructureStrategy? structureStrategy;
   final String? typeName;
   final Uri? uri;
 
-  Type({
+  TypeMapping({
     required this.dartType,
-    required this.strategy,
+    required this.protoType,
+    required this.mappingStrategy,
+    required this.structureStrategy,
     required this.typeName,
     required this.uri,
   });
 
-  factory Type.of(DartType dartType) {
-    return Type(
+  factory TypeMapping.of(DartType dartType) {
+    final strategy = dartType.determineStrategy();
+    return TypeMapping(
       dartType: dartType,
-      strategy: dartType.determineStrategy(),
+      protoType: strategy?.protoType,
+      mappingStrategy: strategy?.mappingStrategy,
+      structureStrategy: strategy?.structureStrategy,
       typeName: dartType.element?.name,
       uri: dartType.element?.librarySource?.uri,
     );
   }
 
   String? toProtoMessage(Iterable<Constructor> typeConstructors) {
-    final strategy = this.strategy;
-    if (strategy == null) {
+    final protoType = this.protoType;
+    if (protoType == null) {
       return null;
     }
-    final protoType = strategy.protoType;
 
     return '''
 message $protoType {
@@ -44,8 +50,8 @@ message $protoType {
   }
 
   String? toDartImport(int i) {
-    final strategy = this.strategy;
-    if (strategy == null) {
+    final protoType = this.protoType;
+    if (protoType == null) {
       return null;
     }
 
@@ -53,11 +59,10 @@ message $protoType {
   }
 
   String? toDartSwitchCase(int i, Iterable<Constructor> constructors) {
-    final strategy = this.strategy;
-    if (strategy == null) {
+    final protoType = this.protoType;
+    if (protoType == null) {
       return null;
     }
-    final protoType = strategy.protoType;
     final typeAlias = '\$t$i';
 
     return '''
@@ -85,16 +90,16 @@ ${constructors.mapIndexed((j, c) => c.toDartSwitchCase('types', protoType, '\$t$
   }
 
   String? toDartEvalFn() {
-    final strategy = this.strategy;
-    if (strategy == null) {
+    final protoType = this.protoType;
+    final mappingStrategy = this.mappingStrategy;
+    if (protoType == null || mappingStrategy == null) {
       return null;
     }
-    final protoType = strategy.protoType;
     final isOptionalInEvaluation =
         dartType.nullabilitySuffix == NullabilitySuffix.question &&
-            strategy.structureStrategy == StructureStrategy.treatAsSingular;
+            structureStrategy == StructureStrategy.treatAsSingular;
 
-    switch (strategy.mappingStrategy) {
+    switch (mappingStrategy) {
       case MappingStrategy.useProtoEquivalent:
         return null;
       case MappingStrategy.generatePayloadMessage:

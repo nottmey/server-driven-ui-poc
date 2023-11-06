@@ -5,7 +5,7 @@ import 'package:analyzer/dart/element/type.dart';
 import 'package:generator_package/constants.dart';
 import 'package:generator_package/is_supported_extensions.dart';
 import 'package:generator_package/models/determine_strategy_extension.dart';
-import 'package:generator_package/models/type.dart';
+import 'package:generator_package/models/type_mapping.dart';
 import 'package:generator_package/to_default_value_expression_extension.dart';
 import 'package:recase/recase.dart';
 
@@ -13,7 +13,7 @@ class Parameter {
   // beware .originalText may be different from .camelCase if
   // field starts with underscore, e.g. `_debugLabel`
   final ReCase name;
-  final Type type;
+  final TypeMapping typeMapping;
   final int fieldNumber;
   final bool isNamed;
   final bool isNullable;
@@ -24,7 +24,7 @@ class Parameter {
 
   Parameter({
     required this.name,
-    required this.type,
+    required this.typeMapping,
     required this.fieldNumber,
     required this.isNamed,
     required this.isNullable,
@@ -37,7 +37,7 @@ class Parameter {
   factory Parameter.ofElement(int index, ParameterElement element) {
     return Parameter(
       name: ReCase(element.name),
-      type: Type.of(element.type),
+      typeMapping: TypeMapping.of(element.type),
       fieldNumber: index + kProtoFieldStartNumber,
       isNamed: element.isNamed,
       isNullable: element.type.nullabilitySuffix == NullabilitySuffix.question,
@@ -49,7 +49,7 @@ class Parameter {
   }
 
   String? toProtoField() {
-    final protoType = type.strategy?.protoType;
+    final protoType = typeMapping.protoType;
     if (protoType != null) {
       return '$protoType ${name.snakeCase} = $fieldNumber;';
     } else {
@@ -75,9 +75,9 @@ class Parameter {
             ? 'null'
             : "$kThrowMissing('${name.camelCase}')";
 
-    final evalFn = type.toDartEvalFn();
+    final evalFn = typeMapping.toDartEvalFn();
     final isRepeated =
-        type.strategy?.structureStrategy == StructureStrategy.treatAsRepeated;
+        typeMapping.structureStrategy == StructureStrategy.treatAsRepeated;
     if (evalFn != null) {
       if (isRepeated) {
         // no null check needed on repeated fields
