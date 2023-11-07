@@ -19,7 +19,7 @@ import 'types.pb.dart' as $1;
 class CupertinoActivityIndicator extends $pb.GeneratedMessage {
   factory CupertinoActivityIndicator({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.bool? animating,
     $core.double? radius,
   }) {
@@ -44,7 +44,7 @@ class CupertinoActivityIndicator extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CupertinoActivityIndicator', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOB(4, _omitFieldNames ? '' : 'animating')
     ..a<$core.double>(5, _omitFieldNames ? '' : 'radius', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
@@ -83,15 +83,15 @@ class CupertinoActivityIndicator extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get color => $_getN(1);
+  $1.DartColorExpression get color => $_getN(1);
   @$pb.TagNumber(3)
-  set color($1.ColorExpression v) { setField(3, v); }
+  set color($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureColor() => $_ensure(1);
+  $1.DartColorExpression ensureColor() => $_ensure(1);
 
   @$pb.TagNumber(4)
   $core.bool get animating => $_getBF(2);
@@ -116,7 +116,7 @@ class CupertinoActivityIndicator extends $pb.GeneratedMessage {
 class CupertinoActivityIndicatorNamedPartiallyRevealed extends $pb.GeneratedMessage {
   factory CupertinoActivityIndicatorNamedPartiallyRevealed({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.double? radius,
     $core.double? progress,
   }) {
@@ -141,7 +141,7 @@ class CupertinoActivityIndicatorNamedPartiallyRevealed extends $pb.GeneratedMess
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CupertinoActivityIndicatorNamedPartiallyRevealed', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'radius', $pb.PbFieldType.OD)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'progress', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
@@ -180,15 +180,15 @@ class CupertinoActivityIndicatorNamedPartiallyRevealed extends $pb.GeneratedMess
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get color => $_getN(1);
+  $1.DartColorExpression get color => $_getN(1);
   @$pb.TagNumber(3)
-  set color($1.ColorExpression v) { setField(3, v); }
+  set color($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureColor() => $_ensure(1);
+  $1.DartColorExpression ensureColor() => $_ensure(1);
 
   @$pb.TagNumber(4)
   $core.double get radius => $_getN(2);
@@ -216,7 +216,7 @@ class CupertinoApp extends $pb.GeneratedMessage {
     WidgetExpression? home,
     $core.String? initialRoute,
     $core.String? title,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.bool? showPerformanceOverlay,
     $core.bool? checkerboardRasterCacheImages,
     $core.bool? checkerboardOffscreenLayers,
@@ -269,7 +269,7 @@ class CupertinoApp extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'home', subBuilder: WidgetExpression.create)
     ..aOS(7, _omitFieldNames ? '' : 'initialRoute')
     ..aOS(13, _omitFieldNames ? '' : 'title')
-    ..aOM<$1.ColorExpression>(15, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(15, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOB(21, _omitFieldNames ? '' : 'showPerformanceOverlay')
     ..aOB(22, _omitFieldNames ? '' : 'checkerboardRasterCacheImages')
     ..aOB(23, _omitFieldNames ? '' : 'checkerboardOffscreenLayers')
@@ -341,15 +341,15 @@ class CupertinoApp extends $pb.GeneratedMessage {
   void clearTitle() => clearField(13);
 
   @$pb.TagNumber(15)
-  $1.ColorExpression get color => $_getN(4);
+  $1.DartColorExpression get color => $_getN(4);
   @$pb.TagNumber(15)
-  set color($1.ColorExpression v) { setField(15, v); }
+  set color($1.DartColorExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasColor() => $_has(4);
   @$pb.TagNumber(15)
   void clearColor() => clearField(15);
   @$pb.TagNumber(15)
-  $1.ColorExpression ensureColor() => $_ensure(4);
+  $1.DartColorExpression ensureColor() => $_ensure(4);
 
   @$pb.TagNumber(21)
   $core.bool get showPerformanceOverlay => $_getBF(5);
@@ -411,7 +411,7 @@ class CupertinoAppNamedRouter extends $pb.GeneratedMessage {
   factory CupertinoAppNamedRouter({
     $1.FlutterKeyExpression? key,
     $core.String? title,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.bool? showPerformanceOverlay,
     $core.bool? checkerboardRasterCacheImages,
     $core.bool? checkerboardOffscreenLayers,
@@ -456,7 +456,7 @@ class CupertinoAppNamedRouter extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CupertinoAppNamedRouter', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOS(10, _omitFieldNames ? '' : 'title')
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOB(18, _omitFieldNames ? '' : 'showPerformanceOverlay')
     ..aOB(19, _omitFieldNames ? '' : 'checkerboardRasterCacheImages')
     ..aOB(20, _omitFieldNames ? '' : 'checkerboardOffscreenLayers')
@@ -508,15 +508,15 @@ class CupertinoAppNamedRouter extends $pb.GeneratedMessage {
   void clearTitle() => clearField(10);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get color => $_getN(2);
+  $1.DartColorExpression get color => $_getN(2);
   @$pb.TagNumber(12)
-  set color($1.ColorExpression v) { setField(12, v); }
+  set color($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasColor() => $_has(2);
   @$pb.TagNumber(12)
   void clearColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureColor() => $_ensure(2);
+  $1.DartColorExpression ensureColor() => $_ensure(2);
 
   @$pb.TagNumber(18)
   $core.bool get showPerformanceOverlay => $_getBF(3);
@@ -578,8 +578,8 @@ class CupertinoButton extends $pb.GeneratedMessage {
   factory CupertinoButton({
     $1.FlutterKeyExpression? key,
     WidgetExpression? child,
-    $1.ColorExpression? color,
-    $1.ColorExpression? disabledColor,
+    $1.DartColorExpression? color,
+    $1.DartColorExpression? disabledColor,
     $core.double? minSize,
     $core.double? pressedOpacity,
   }) {
@@ -611,8 +611,8 @@ class CupertinoButton extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CupertinoButton', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'minSize', $pb.PbFieldType.OD)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'pressedOpacity', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
@@ -662,26 +662,26 @@ class CupertinoButton extends $pb.GeneratedMessage {
   WidgetExpression ensureChild() => $_ensure(1);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get color => $_getN(2);
+  $1.DartColorExpression get color => $_getN(2);
   @$pb.TagNumber(5)
-  set color($1.ColorExpression v) { setField(5, v); }
+  set color($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasColor() => $_has(2);
   @$pb.TagNumber(5)
   void clearColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureColor() => $_ensure(2);
+  $1.DartColorExpression ensureColor() => $_ensure(2);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get disabledColor => $_getN(3);
+  $1.DartColorExpression get disabledColor => $_getN(3);
   @$pb.TagNumber(6)
-  set disabledColor($1.ColorExpression v) { setField(6, v); }
+  set disabledColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDisabledColor() => $_has(3);
   @$pb.TagNumber(6)
   void clearDisabledColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(3);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(3);
 
   @$pb.TagNumber(7)
   $core.double get minSize => $_getN(4);
@@ -707,7 +707,7 @@ class CupertinoButtonNamedFilled extends $pb.GeneratedMessage {
   factory CupertinoButtonNamedFilled({
     $1.FlutterKeyExpression? key,
     WidgetExpression? child,
-    $1.ColorExpression? disabledColor,
+    $1.DartColorExpression? disabledColor,
     $core.double? minSize,
     $core.double? pressedOpacity,
   }) {
@@ -736,7 +736,7 @@ class CupertinoButtonNamedFilled extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CupertinoButtonNamedFilled', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'minSize', $pb.PbFieldType.OD)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'pressedOpacity', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
@@ -786,15 +786,15 @@ class CupertinoButtonNamedFilled extends $pb.GeneratedMessage {
   WidgetExpression ensureChild() => $_ensure(1);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get disabledColor => $_getN(2);
+  $1.DartColorExpression get disabledColor => $_getN(2);
   @$pb.TagNumber(5)
-  set disabledColor($1.ColorExpression v) { setField(5, v); }
+  set disabledColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasDisabledColor() => $_has(2);
   @$pb.TagNumber(5)
   void clearDisabledColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(2);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(2);
 
   @$pb.TagNumber(6)
   $core.double get minSize => $_getN(3);
@@ -821,10 +821,10 @@ class CupertinoCheckbox extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.bool? value,
     $core.bool? tristate,
-    $1.ColorExpression? activeColor,
-    $1.ColorExpression? inactiveColor,
-    $1.ColorExpression? checkColor,
-    $1.ColorExpression? focusColor,
+    $1.DartColorExpression? activeColor,
+    $1.DartColorExpression? inactiveColor,
+    $1.DartColorExpression? checkColor,
+    $1.DartColorExpression? focusColor,
     $core.bool? autofocus,
   }) {
     final $result = create();
@@ -862,10 +862,10 @@ class CupertinoCheckbox extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOB(3, _omitFieldNames ? '' : 'value')
     ..aOB(4, _omitFieldNames ? '' : 'tristate')
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'inactiveColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'checkColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'inactiveColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'checkColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(11, _omitFieldNames ? '' : 'autofocus')
     ..hasRequiredFields = false
   ;
@@ -921,48 +921,48 @@ class CupertinoCheckbox extends $pb.GeneratedMessage {
   void clearTristate() => clearField(4);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get activeColor => $_getN(3);
+  $1.DartColorExpression get activeColor => $_getN(3);
   @$pb.TagNumber(6)
-  set activeColor($1.ColorExpression v) { setField(6, v); }
+  set activeColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasActiveColor() => $_has(3);
   @$pb.TagNumber(6)
   void clearActiveColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureActiveColor() => $_ensure(3);
+  $1.DartColorExpression ensureActiveColor() => $_ensure(3);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get inactiveColor => $_getN(4);
+  $1.DartColorExpression get inactiveColor => $_getN(4);
   @$pb.TagNumber(7)
-  set inactiveColor($1.ColorExpression v) { setField(7, v); }
+  set inactiveColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasInactiveColor() => $_has(4);
   @$pb.TagNumber(7)
   void clearInactiveColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureInactiveColor() => $_ensure(4);
+  $1.DartColorExpression ensureInactiveColor() => $_ensure(4);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get checkColor => $_getN(5);
+  $1.DartColorExpression get checkColor => $_getN(5);
   @$pb.TagNumber(8)
-  set checkColor($1.ColorExpression v) { setField(8, v); }
+  set checkColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCheckColor() => $_has(5);
   @$pb.TagNumber(8)
   void clearCheckColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureCheckColor() => $_ensure(5);
+  $1.DartColorExpression ensureCheckColor() => $_ensure(5);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get focusColor => $_getN(6);
+  $1.DartColorExpression get focusColor => $_getN(6);
   @$pb.TagNumber(9)
-  set focusColor($1.ColorExpression v) { setField(9, v); }
+  set focusColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasFocusColor() => $_has(6);
   @$pb.TagNumber(9)
   void clearFocusColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureFocusColor() => $_ensure(6);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(6);
 
   @$pb.TagNumber(11)
   $core.bool get autofocus => $_getBF(7);
@@ -1414,7 +1414,7 @@ class CupertinoAlertDialog extends $pb.GeneratedMessage {
     WidgetExpression? title,
     WidgetExpression? content,
     $core.Iterable<WidgetExpression>? actions,
-    $1.DurationExpression? insetAnimationDuration,
+    $1.DartDurationExpression? insetAnimationDuration,
   }) {
     final $result = create();
     if (key != null) {
@@ -1443,7 +1443,7 @@ class CupertinoAlertDialog extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'title', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'content', subBuilder: WidgetExpression.create)
     ..pc<WidgetExpression>(5, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
-    ..aOM<$1.DurationExpression>(8, _omitFieldNames ? '' : 'insetAnimationDuration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(8, _omitFieldNames ? '' : 'insetAnimationDuration', subBuilder: $1.DartDurationExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -1505,15 +1505,15 @@ class CupertinoAlertDialog extends $pb.GeneratedMessage {
   $core.List<WidgetExpression> get actions => $_getList(3);
 
   @$pb.TagNumber(8)
-  $1.DurationExpression get insetAnimationDuration => $_getN(4);
+  $1.DartDurationExpression get insetAnimationDuration => $_getN(4);
   @$pb.TagNumber(8)
-  set insetAnimationDuration($1.DurationExpression v) { setField(8, v); }
+  set insetAnimationDuration($1.DartDurationExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasInsetAnimationDuration() => $_has(4);
   @$pb.TagNumber(8)
   void clearInsetAnimationDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $1.DurationExpression ensureInsetAnimationDuration() => $_ensure(4);
+  $1.DartDurationExpression ensureInsetAnimationDuration() => $_ensure(4);
 }
 
 /// package:flutter/src/cupertino/dialog.dart
@@ -1820,7 +1820,7 @@ class CupertinoFormSection extends $pb.GeneratedMessage {
     $core.Iterable<WidgetExpression>? children,
     WidgetExpression? header,
     WidgetExpression? footer,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -1849,7 +1849,7 @@ class CupertinoFormSection extends $pb.GeneratedMessage {
     ..pc<WidgetExpression>(3, _omitFieldNames ? '' : 'children', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'header', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'footer', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -1911,15 +1911,15 @@ class CupertinoFormSection extends $pb.GeneratedMessage {
   WidgetExpression ensureFooter() => $_ensure(3);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get backgroundColor => $_getN(4);
+  $1.DartColorExpression get backgroundColor => $_getN(4);
   @$pb.TagNumber(7)
-  set backgroundColor($1.ColorExpression v) { setField(7, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasBackgroundColor() => $_has(4);
   @$pb.TagNumber(7)
   void clearBackgroundColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(4);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(4);
 }
 
 /// package:flutter/src/cupertino/form_section.dart
@@ -1929,7 +1929,7 @@ class CupertinoFormSectionNamedInsetGrouped extends $pb.GeneratedMessage {
     $core.Iterable<WidgetExpression>? children,
     WidgetExpression? header,
     WidgetExpression? footer,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -1958,7 +1958,7 @@ class CupertinoFormSectionNamedInsetGrouped extends $pb.GeneratedMessage {
     ..pc<WidgetExpression>(3, _omitFieldNames ? '' : 'children', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'header', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'footer', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -2020,15 +2020,15 @@ class CupertinoFormSectionNamedInsetGrouped extends $pb.GeneratedMessage {
   WidgetExpression ensureFooter() => $_ensure(3);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get backgroundColor => $_getN(4);
+  $1.DartColorExpression get backgroundColor => $_getN(4);
   @$pb.TagNumber(7)
-  set backgroundColor($1.ColorExpression v) { setField(7, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasBackgroundColor() => $_has(4);
   @$pb.TagNumber(7)
   void clearBackgroundColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(4);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(4);
 }
 
 /// package:flutter/src/cupertino/list_section.dart
@@ -2038,12 +2038,12 @@ class CupertinoListSection extends $pb.GeneratedMessage {
     $core.Iterable<WidgetExpression>? children,
     WidgetExpression? header,
     WidgetExpression? footer,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? dividerMargin,
     $core.double? additionalDividerMargin,
     $core.double? topMargin,
     $core.bool? hasLeading,
-    $1.ColorExpression? separatorColor,
+    $1.DartColorExpression? separatorColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -2087,12 +2087,12 @@ class CupertinoListSection extends $pb.GeneratedMessage {
     ..pc<WidgetExpression>(3, _omitFieldNames ? '' : 'children', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'header', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'footer', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(10, _omitFieldNames ? '' : 'dividerMargin', $pb.PbFieldType.OD)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'additionalDividerMargin', $pb.PbFieldType.OD)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'topMargin', $pb.PbFieldType.OD)
     ..aOB(13, _omitFieldNames ? '' : 'hasLeading')
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'separatorColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'separatorColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -2154,15 +2154,15 @@ class CupertinoListSection extends $pb.GeneratedMessage {
   WidgetExpression ensureFooter() => $_ensure(3);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get backgroundColor => $_getN(4);
+  $1.DartColorExpression get backgroundColor => $_getN(4);
   @$pb.TagNumber(7)
-  set backgroundColor($1.ColorExpression v) { setField(7, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasBackgroundColor() => $_has(4);
   @$pb.TagNumber(7)
   void clearBackgroundColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(4);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(4);
 
   @$pb.TagNumber(10)
   $core.double get dividerMargin => $_getN(5);
@@ -2201,15 +2201,15 @@ class CupertinoListSection extends $pb.GeneratedMessage {
   void clearHasLeading() => clearField(13);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get separatorColor => $_getN(9);
+  $1.DartColorExpression get separatorColor => $_getN(9);
   @$pb.TagNumber(14)
-  set separatorColor($1.ColorExpression v) { setField(14, v); }
+  set separatorColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasSeparatorColor() => $_has(9);
   @$pb.TagNumber(14)
   void clearSeparatorColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureSeparatorColor() => $_ensure(9);
+  $1.DartColorExpression ensureSeparatorColor() => $_ensure(9);
 }
 
 /// package:flutter/src/cupertino/list_section.dart
@@ -2219,12 +2219,12 @@ class CupertinoListSectionNamedInsetGrouped extends $pb.GeneratedMessage {
     $core.Iterable<WidgetExpression>? children,
     WidgetExpression? header,
     WidgetExpression? footer,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? dividerMargin,
     $core.double? additionalDividerMargin,
     $core.double? topMargin,
     $core.bool? hasLeading,
-    $1.ColorExpression? separatorColor,
+    $1.DartColorExpression? separatorColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -2268,12 +2268,12 @@ class CupertinoListSectionNamedInsetGrouped extends $pb.GeneratedMessage {
     ..pc<WidgetExpression>(3, _omitFieldNames ? '' : 'children', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'header', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'footer', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(10, _omitFieldNames ? '' : 'dividerMargin', $pb.PbFieldType.OD)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'additionalDividerMargin', $pb.PbFieldType.OD)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'topMargin', $pb.PbFieldType.OD)
     ..aOB(13, _omitFieldNames ? '' : 'hasLeading')
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'separatorColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'separatorColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -2335,15 +2335,15 @@ class CupertinoListSectionNamedInsetGrouped extends $pb.GeneratedMessage {
   WidgetExpression ensureFooter() => $_ensure(3);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get backgroundColor => $_getN(4);
+  $1.DartColorExpression get backgroundColor => $_getN(4);
   @$pb.TagNumber(7)
-  set backgroundColor($1.ColorExpression v) { setField(7, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasBackgroundColor() => $_has(4);
   @$pb.TagNumber(7)
   void clearBackgroundColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(4);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(4);
 
   @$pb.TagNumber(10)
   $core.double get dividerMargin => $_getN(5);
@@ -2382,15 +2382,15 @@ class CupertinoListSectionNamedInsetGrouped extends $pb.GeneratedMessage {
   void clearHasLeading() => clearField(13);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get separatorColor => $_getN(9);
+  $1.DartColorExpression get separatorColor => $_getN(9);
   @$pb.TagNumber(14)
-  set separatorColor($1.ColorExpression v) { setField(14, v); }
+  set separatorColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasSeparatorColor() => $_has(9);
   @$pb.TagNumber(14)
   void clearSeparatorColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureSeparatorColor() => $_ensure(9);
+  $1.DartColorExpression ensureSeparatorColor() => $_ensure(9);
 }
 
 /// package:flutter/src/cupertino/list_tile.dart
@@ -2402,8 +2402,8 @@ class CupertinoListTile extends $pb.GeneratedMessage {
     WidgetExpression? additionalInfo,
     WidgetExpression? leading,
     WidgetExpression? trailing,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? backgroundColorActivated,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColorActivated,
     $core.double? leadingSize,
     $core.double? leadingToTitle,
   }) {
@@ -2451,8 +2451,8 @@ class CupertinoListTile extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'additionalInfo', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(6, _omitFieldNames ? '' : 'leading', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(7, _omitFieldNames ? '' : 'trailing', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'backgroundColorActivated', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'backgroundColorActivated', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'leadingSize', $pb.PbFieldType.OD)
     ..a<$core.double>(13, _omitFieldNames ? '' : 'leadingToTitle', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
@@ -2546,26 +2546,26 @@ class CupertinoListTile extends $pb.GeneratedMessage {
   WidgetExpression ensureTrailing() => $_ensure(5);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get backgroundColor => $_getN(6);
+  $1.DartColorExpression get backgroundColor => $_getN(6);
   @$pb.TagNumber(9)
-  set backgroundColor($1.ColorExpression v) { setField(9, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasBackgroundColor() => $_has(6);
   @$pb.TagNumber(9)
   void clearBackgroundColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(6);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(6);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get backgroundColorActivated => $_getN(7);
+  $1.DartColorExpression get backgroundColorActivated => $_getN(7);
   @$pb.TagNumber(10)
-  set backgroundColorActivated($1.ColorExpression v) { setField(10, v); }
+  set backgroundColorActivated($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasBackgroundColorActivated() => $_has(7);
   @$pb.TagNumber(10)
   void clearBackgroundColorActivated() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureBackgroundColorActivated() => $_ensure(7);
+  $1.DartColorExpression ensureBackgroundColorActivated() => $_ensure(7);
 
   @$pb.TagNumber(12)
   $core.double get leadingSize => $_getN(8);
@@ -2595,8 +2595,8 @@ class CupertinoListTileNamedNotched extends $pb.GeneratedMessage {
     WidgetExpression? additionalInfo,
     WidgetExpression? leading,
     WidgetExpression? trailing,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? backgroundColorActivated,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColorActivated,
     $core.double? leadingSize,
     $core.double? leadingToTitle,
   }) {
@@ -2644,8 +2644,8 @@ class CupertinoListTileNamedNotched extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'additionalInfo', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(6, _omitFieldNames ? '' : 'leading', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(7, _omitFieldNames ? '' : 'trailing', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'backgroundColorActivated', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'backgroundColorActivated', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'leadingSize', $pb.PbFieldType.OD)
     ..a<$core.double>(13, _omitFieldNames ? '' : 'leadingToTitle', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
@@ -2739,26 +2739,26 @@ class CupertinoListTileNamedNotched extends $pb.GeneratedMessage {
   WidgetExpression ensureTrailing() => $_ensure(5);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get backgroundColor => $_getN(6);
+  $1.DartColorExpression get backgroundColor => $_getN(6);
   @$pb.TagNumber(9)
-  set backgroundColor($1.ColorExpression v) { setField(9, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasBackgroundColor() => $_has(6);
   @$pb.TagNumber(9)
   void clearBackgroundColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(6);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(6);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get backgroundColorActivated => $_getN(7);
+  $1.DartColorExpression get backgroundColorActivated => $_getN(7);
   @$pb.TagNumber(10)
-  set backgroundColorActivated($1.ColorExpression v) { setField(10, v); }
+  set backgroundColorActivated($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasBackgroundColorActivated() => $_has(7);
   @$pb.TagNumber(10)
   void clearBackgroundColorActivated() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureBackgroundColorActivated() => $_ensure(7);
+  $1.DartColorExpression ensureBackgroundColorActivated() => $_ensure(7);
 
   @$pb.TagNumber(12)
   $core.double get leadingSize => $_getN(8);
@@ -2895,7 +2895,7 @@ class CupertinoNavigationBar extends $pb.GeneratedMessage {
     $core.String? previousPageTitle,
     WidgetExpression? middle,
     WidgetExpression? trailing,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.bool? transitionBetweenRoutes,
   }) {
     final $result = create();
@@ -2940,7 +2940,7 @@ class CupertinoNavigationBar extends $pb.GeneratedMessage {
     ..aOS(6, _omitFieldNames ? '' : 'previousPageTitle')
     ..aOM<WidgetExpression>(7, _omitFieldNames ? '' : 'middle', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(8, _omitFieldNames ? '' : 'trailing', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(13, _omitFieldNames ? '' : 'transitionBetweenRoutes')
     ..hasRequiredFields = false
   ;
@@ -3038,15 +3038,15 @@ class CupertinoNavigationBar extends $pb.GeneratedMessage {
   WidgetExpression ensureTrailing() => $_ensure(6);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get backgroundColor => $_getN(7);
+  $1.DartColorExpression get backgroundColor => $_getN(7);
   @$pb.TagNumber(10)
-  set backgroundColor($1.ColorExpression v) { setField(10, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasBackgroundColor() => $_has(7);
   @$pb.TagNumber(10)
   void clearBackgroundColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(7);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(7);
 
   @$pb.TagNumber(13)
   $core.bool get transitionBetweenRoutes => $_getBF(8);
@@ -3062,7 +3062,7 @@ class CupertinoNavigationBar extends $pb.GeneratedMessage {
 class CupertinoNavigationBarBackButton extends $pb.GeneratedMessage {
   factory CupertinoNavigationBarBackButton({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.String? previousPageTitle,
   }) {
     final $result = create();
@@ -3083,7 +3083,7 @@ class CupertinoNavigationBarBackButton extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CupertinoNavigationBarBackButton', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOS(4, _omitFieldNames ? '' : 'previousPageTitle')
     ..hasRequiredFields = false
   ;
@@ -3121,15 +3121,15 @@ class CupertinoNavigationBarBackButton extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get color => $_getN(1);
+  $1.DartColorExpression get color => $_getN(1);
   @$pb.TagNumber(3)
-  set color($1.ColorExpression v) { setField(3, v); }
+  set color($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureColor() => $_ensure(1);
+  $1.DartColorExpression ensureColor() => $_ensure(1);
 
   @$pb.TagNumber(4)
   $core.String get previousPageTitle => $_getSZ(2);
@@ -3153,7 +3153,7 @@ class CupertinoSliverNavigationBar extends $pb.GeneratedMessage {
     $core.String? previousPageTitle,
     WidgetExpression? middle,
     WidgetExpression? trailing,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.bool? transitionBetweenRoutes,
     $core.bool? stretch,
   }) {
@@ -3210,7 +3210,7 @@ class CupertinoSliverNavigationBar extends $pb.GeneratedMessage {
     ..aOS(8, _omitFieldNames ? '' : 'previousPageTitle')
     ..aOM<WidgetExpression>(9, _omitFieldNames ? '' : 'middle', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(10, _omitFieldNames ? '' : 'trailing', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(15, _omitFieldNames ? '' : 'transitionBetweenRoutes')
     ..aOB(17, _omitFieldNames ? '' : 'stretch')
     ..hasRequiredFields = false
@@ -3329,15 +3329,15 @@ class CupertinoSliverNavigationBar extends $pb.GeneratedMessage {
   WidgetExpression ensureTrailing() => $_ensure(8);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get backgroundColor => $_getN(9);
+  $1.DartColorExpression get backgroundColor => $_getN(9);
   @$pb.TagNumber(12)
-  set backgroundColor($1.ColorExpression v) { setField(12, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasBackgroundColor() => $_has(9);
   @$pb.TagNumber(12)
   void clearBackgroundColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(9);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(9);
 
   @$pb.TagNumber(15)
   $core.bool get transitionBetweenRoutes => $_getBF(10);
@@ -3362,7 +3362,7 @@ class CupertinoSliverNavigationBar extends $pb.GeneratedMessage {
 class CupertinoPageScaffold extends $pb.GeneratedMessage {
   factory CupertinoPageScaffold({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.bool? resizeToAvoidBottomInset,
     WidgetExpression? child,
   }) {
@@ -3387,7 +3387,7 @@ class CupertinoPageScaffold extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CupertinoPageScaffold', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(5, _omitFieldNames ? '' : 'resizeToAvoidBottomInset')
     ..aOM<WidgetExpression>(6, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..hasRequiredFields = false
@@ -3426,15 +3426,15 @@ class CupertinoPageScaffold extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get backgroundColor => $_getN(1);
+  $1.DartColorExpression get backgroundColor => $_getN(1);
   @$pb.TagNumber(4)
-  set backgroundColor($1.ColorExpression v) { setField(4, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBackgroundColor() => $_has(1);
   @$pb.TagNumber(4)
   void clearBackgroundColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(1);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(1);
 
   @$pb.TagNumber(5)
   $core.bool get resizeToAvoidBottomInset => $_getBF(2);
@@ -3462,7 +3462,7 @@ class CupertinoPicker extends $pb.GeneratedMessage {
   factory CupertinoPicker({
     $1.FlutterKeyExpression? key,
     $core.double? diameterRatio,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? offAxisFraction,
     $core.bool? useMagnifier,
     $core.double? magnification,
@@ -3515,7 +3515,7 @@ class CupertinoPicker extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CupertinoPicker', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'diameterRatio', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'offAxisFraction', $pb.PbFieldType.OD)
     ..aOB(6, _omitFieldNames ? '' : 'useMagnifier')
     ..a<$core.double>(7, _omitFieldNames ? '' : 'magnification', $pb.PbFieldType.OD)
@@ -3569,15 +3569,15 @@ class CupertinoPicker extends $pb.GeneratedMessage {
   void clearDiameterRatio() => clearField(3);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get backgroundColor => $_getN(2);
+  $1.DartColorExpression get backgroundColor => $_getN(2);
   @$pb.TagNumber(4)
-  set backgroundColor($1.ColorExpression v) { setField(4, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBackgroundColor() => $_has(2);
   @$pb.TagNumber(4)
   void clearBackgroundColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(2);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(2);
 
   @$pb.TagNumber(5)
   $core.double get offAxisFraction => $_getN(3);
@@ -3652,7 +3652,7 @@ class CupertinoPicker extends $pb.GeneratedMessage {
 class CupertinoPickerDefaultSelectionOverlay extends $pb.GeneratedMessage {
   factory CupertinoPickerDefaultSelectionOverlay({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? background,
+    $1.DartColorExpression? background,
     $core.bool? capStartEdge,
     $core.bool? capEndEdge,
   }) {
@@ -3677,7 +3677,7 @@ class CupertinoPickerDefaultSelectionOverlay extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CupertinoPickerDefaultSelectionOverlay', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'background', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'background', subBuilder: $1.DartColorExpression.create)
     ..aOB(4, _omitFieldNames ? '' : 'capStartEdge')
     ..aOB(5, _omitFieldNames ? '' : 'capEndEdge')
     ..hasRequiredFields = false
@@ -3716,15 +3716,15 @@ class CupertinoPickerDefaultSelectionOverlay extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get background => $_getN(1);
+  $1.DartColorExpression get background => $_getN(1);
   @$pb.TagNumber(3)
-  set background($1.ColorExpression v) { setField(3, v); }
+  set background($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBackground() => $_has(1);
   @$pb.TagNumber(3)
   void clearBackground() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureBackground() => $_ensure(1);
+  $1.DartColorExpression ensureBackground() => $_ensure(1);
 
   @$pb.TagNumber(4)
   $core.bool get capStartEdge => $_getBF(2);
@@ -3942,8 +3942,8 @@ class CupertinoSearchTextField extends $pb.GeneratedMessage {
   factory CupertinoSearchTextField({
     $1.FlutterKeyExpression? key,
     $core.String? placeholder,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? itemColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? itemColor,
     $core.double? itemSize,
     WidgetExpression? prefixIcon,
     $core.String? restorationId,
@@ -3995,8 +3995,8 @@ class CupertinoSearchTextField extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CupertinoSearchTextField', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOS(7, _omitFieldNames ? '' : 'placeholder')
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'itemColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'itemColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(15, _omitFieldNames ? '' : 'itemSize', $pb.PbFieldType.OD)
     ..aOM<WidgetExpression>(17, _omitFieldNames ? '' : 'prefixIcon', subBuilder: WidgetExpression.create)
     ..aOS(22, _omitFieldNames ? '' : 'restorationId')
@@ -4049,26 +4049,26 @@ class CupertinoSearchTextField extends $pb.GeneratedMessage {
   void clearPlaceholder() => clearField(7);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get backgroundColor => $_getN(2);
+  $1.DartColorExpression get backgroundColor => $_getN(2);
   @$pb.TagNumber(10)
-  set backgroundColor($1.ColorExpression v) { setField(10, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasBackgroundColor() => $_has(2);
   @$pb.TagNumber(10)
   void clearBackgroundColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(2);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(2);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get itemColor => $_getN(3);
+  $1.DartColorExpression get itemColor => $_getN(3);
   @$pb.TagNumber(14)
-  set itemColor($1.ColorExpression v) { setField(14, v); }
+  set itemColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasItemColor() => $_has(3);
   @$pb.TagNumber(14)
   void clearItemColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureItemColor() => $_ensure(3);
+  $1.DartColorExpression ensureItemColor() => $_ensure(3);
 
   @$pb.TagNumber(15)
   $core.double get itemSize => $_getN(4);
@@ -4144,8 +4144,8 @@ class CupertinoSlider extends $pb.GeneratedMessage {
     $core.double? min,
     $core.double? max,
     $core.int? divisions,
-    $1.ColorExpression? activeColor,
-    $1.ColorExpression? thumbColor,
+    $1.DartColorExpression? activeColor,
+    $1.DartColorExpression? thumbColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -4181,8 +4181,8 @@ class CupertinoSlider extends $pb.GeneratedMessage {
     ..a<$core.double>(7, _omitFieldNames ? '' : 'min', $pb.PbFieldType.OD)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'max', $pb.PbFieldType.OD)
     ..a<$core.int>(9, _omitFieldNames ? '' : 'divisions', $pb.PbFieldType.O3)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'thumbColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'thumbColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -4255,26 +4255,26 @@ class CupertinoSlider extends $pb.GeneratedMessage {
   void clearDivisions() => clearField(9);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get activeColor => $_getN(5);
+  $1.DartColorExpression get activeColor => $_getN(5);
   @$pb.TagNumber(10)
-  set activeColor($1.ColorExpression v) { setField(10, v); }
+  set activeColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasActiveColor() => $_has(5);
   @$pb.TagNumber(10)
   void clearActiveColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureActiveColor() => $_ensure(5);
+  $1.DartColorExpression ensureActiveColor() => $_ensure(5);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get thumbColor => $_getN(6);
+  $1.DartColorExpression get thumbColor => $_getN(6);
   @$pb.TagNumber(11)
-  set thumbColor($1.ColorExpression v) { setField(11, v); }
+  set thumbColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasThumbColor() => $_has(6);
   @$pb.TagNumber(11)
   void clearThumbColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureThumbColor() => $_ensure(6);
+  $1.DartColorExpression ensureThumbColor() => $_ensure(6);
 }
 
 /// package:flutter/src/cupertino/switch.dart
@@ -4282,11 +4282,11 @@ class CupertinoSwitch extends $pb.GeneratedMessage {
   factory CupertinoSwitch({
     $1.FlutterKeyExpression? key,
     $core.bool? value,
-    $1.ColorExpression? activeColor,
-    $1.ColorExpression? trackColor,
-    $1.ColorExpression? thumbColor,
+    $1.DartColorExpression? activeColor,
+    $1.DartColorExpression? trackColor,
+    $1.DartColorExpression? thumbColor,
     $core.bool? applyTheme,
-    $1.ColorExpression? focusColor,
+    $1.DartColorExpression? focusColor,
     $core.bool? autofocus,
   }) {
     final $result = create();
@@ -4323,11 +4323,11 @@ class CupertinoSwitch extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CupertinoSwitch', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOB(3, _omitFieldNames ? '' : 'value')
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'trackColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'thumbColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'trackColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'thumbColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(8, _omitFieldNames ? '' : 'applyTheme')
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(12, _omitFieldNames ? '' : 'autofocus')
     ..hasRequiredFields = false
   ;
@@ -4374,37 +4374,37 @@ class CupertinoSwitch extends $pb.GeneratedMessage {
   void clearValue() => clearField(3);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get activeColor => $_getN(2);
+  $1.DartColorExpression get activeColor => $_getN(2);
   @$pb.TagNumber(5)
-  set activeColor($1.ColorExpression v) { setField(5, v); }
+  set activeColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasActiveColor() => $_has(2);
   @$pb.TagNumber(5)
   void clearActiveColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureActiveColor() => $_ensure(2);
+  $1.DartColorExpression ensureActiveColor() => $_ensure(2);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get trackColor => $_getN(3);
+  $1.DartColorExpression get trackColor => $_getN(3);
   @$pb.TagNumber(6)
-  set trackColor($1.ColorExpression v) { setField(6, v); }
+  set trackColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasTrackColor() => $_has(3);
   @$pb.TagNumber(6)
   void clearTrackColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureTrackColor() => $_ensure(3);
+  $1.DartColorExpression ensureTrackColor() => $_ensure(3);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get thumbColor => $_getN(4);
+  $1.DartColorExpression get thumbColor => $_getN(4);
   @$pb.TagNumber(7)
-  set thumbColor($1.ColorExpression v) { setField(7, v); }
+  set thumbColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasThumbColor() => $_has(4);
   @$pb.TagNumber(7)
   void clearThumbColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureThumbColor() => $_ensure(4);
+  $1.DartColorExpression ensureThumbColor() => $_ensure(4);
 
   @$pb.TagNumber(8)
   $core.bool get applyTheme => $_getBF(5);
@@ -4416,15 +4416,15 @@ class CupertinoSwitch extends $pb.GeneratedMessage {
   void clearApplyTheme() => clearField(8);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get focusColor => $_getN(6);
+  $1.DartColorExpression get focusColor => $_getN(6);
   @$pb.TagNumber(9)
-  set focusColor($1.ColorExpression v) { setField(9, v); }
+  set focusColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasFocusColor() => $_has(6);
   @$pb.TagNumber(9)
   void clearFocusColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureFocusColor() => $_ensure(6);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(6);
 
   @$pb.TagNumber(12)
   $core.bool get autofocus => $_getBF(7);
@@ -4539,7 +4539,7 @@ class CupertinoTextField extends $pb.GeneratedMessage {
     $core.double? cursorWidth,
     $core.double? cursorHeight,
     $core.bool? cursorOpacityAnimates,
-    $1.ColorExpression? cursorColor,
+    $1.DartColorExpression? cursorColor,
     $core.bool? enableInteractiveSelection,
     $core.Iterable<$core.String>? autofillHints,
     $core.String? restorationId,
@@ -4648,7 +4648,7 @@ class CupertinoTextField extends $pb.GeneratedMessage {
     ..a<$core.double>(43, _omitFieldNames ? '' : 'cursorWidth', $pb.PbFieldType.OD)
     ..a<$core.double>(44, _omitFieldNames ? '' : 'cursorHeight', $pb.PbFieldType.OD)
     ..aOB(46, _omitFieldNames ? '' : 'cursorOpacityAnimates')
-    ..aOM<$1.ColorExpression>(47, _omitFieldNames ? '' : 'cursorColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(47, _omitFieldNames ? '' : 'cursorColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(53, _omitFieldNames ? '' : 'enableInteractiveSelection')
     ..pPS(58, _omitFieldNames ? '' : 'autofillHints')
     ..aOS(61, _omitFieldNames ? '' : 'restorationId')
@@ -4856,15 +4856,15 @@ class CupertinoTextField extends $pb.GeneratedMessage {
   void clearCursorOpacityAnimates() => clearField(46);
 
   @$pb.TagNumber(47)
-  $1.ColorExpression get cursorColor => $_getN(19);
+  $1.DartColorExpression get cursorColor => $_getN(19);
   @$pb.TagNumber(47)
-  set cursorColor($1.ColorExpression v) { setField(47, v); }
+  set cursorColor($1.DartColorExpression v) { setField(47, v); }
   @$pb.TagNumber(47)
   $core.bool hasCursorColor() => $_has(19);
   @$pb.TagNumber(47)
   void clearCursorColor() => clearField(47);
   @$pb.TagNumber(47)
-  $1.ColorExpression ensureCursorColor() => $_ensure(19);
+  $1.DartColorExpression ensureCursorColor() => $_ensure(19);
 
   @$pb.TagNumber(53)
   $core.bool get enableInteractiveSelection => $_getBF(20);
@@ -4928,7 +4928,7 @@ class CupertinoTextFieldNamedBorderless extends $pb.GeneratedMessage {
     $core.double? cursorWidth,
     $core.double? cursorHeight,
     $core.bool? cursorOpacityAnimates,
-    $1.ColorExpression? cursorColor,
+    $1.DartColorExpression? cursorColor,
     $core.bool? enableInteractiveSelection,
     $core.Iterable<$core.String>? autofillHints,
     $core.String? restorationId,
@@ -5037,7 +5037,7 @@ class CupertinoTextFieldNamedBorderless extends $pb.GeneratedMessage {
     ..a<$core.double>(43, _omitFieldNames ? '' : 'cursorWidth', $pb.PbFieldType.OD)
     ..a<$core.double>(44, _omitFieldNames ? '' : 'cursorHeight', $pb.PbFieldType.OD)
     ..aOB(46, _omitFieldNames ? '' : 'cursorOpacityAnimates')
-    ..aOM<$1.ColorExpression>(47, _omitFieldNames ? '' : 'cursorColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(47, _omitFieldNames ? '' : 'cursorColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(53, _omitFieldNames ? '' : 'enableInteractiveSelection')
     ..pPS(58, _omitFieldNames ? '' : 'autofillHints')
     ..aOS(61, _omitFieldNames ? '' : 'restorationId')
@@ -5245,15 +5245,15 @@ class CupertinoTextFieldNamedBorderless extends $pb.GeneratedMessage {
   void clearCursorOpacityAnimates() => clearField(46);
 
   @$pb.TagNumber(47)
-  $1.ColorExpression get cursorColor => $_getN(19);
+  $1.DartColorExpression get cursorColor => $_getN(19);
   @$pb.TagNumber(47)
-  set cursorColor($1.ColorExpression v) { setField(47, v); }
+  set cursorColor($1.DartColorExpression v) { setField(47, v); }
   @$pb.TagNumber(47)
   $core.bool hasCursorColor() => $_has(19);
   @$pb.TagNumber(47)
   void clearCursorColor() => clearField(47);
   @$pb.TagNumber(47)
-  $1.ColorExpression ensureCursorColor() => $_ensure(19);
+  $1.DartColorExpression ensureCursorColor() => $_ensure(19);
 
   @$pb.TagNumber(53)
   $core.bool get enableInteractiveSelection => $_getBF(20);
@@ -5315,7 +5315,7 @@ class CupertinoTextFormFieldRow extends $pb.GeneratedMessage {
     $core.bool? enabled,
     $core.double? cursorWidth,
     $core.double? cursorHeight,
-    $1.ColorExpression? cursorColor,
+    $1.DartColorExpression? cursorColor,
     $core.bool? enableInteractiveSelection,
     $core.Iterable<$core.String>? autofillHints,
     $core.String? placeholder,
@@ -5408,7 +5408,7 @@ class CupertinoTextFormFieldRow extends $pb.GeneratedMessage {
     ..aOB(37, _omitFieldNames ? '' : 'enabled')
     ..a<$core.double>(38, _omitFieldNames ? '' : 'cursorWidth', $pb.PbFieldType.OD)
     ..a<$core.double>(39, _omitFieldNames ? '' : 'cursorHeight', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(40, _omitFieldNames ? '' : 'cursorColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(40, _omitFieldNames ? '' : 'cursorColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(43, _omitFieldNames ? '' : 'enableInteractiveSelection')
     ..pPS(46, _omitFieldNames ? '' : 'autofillHints')
     ..aOS(48, _omitFieldNames ? '' : 'placeholder')
@@ -5594,15 +5594,15 @@ class CupertinoTextFormFieldRow extends $pb.GeneratedMessage {
   void clearCursorHeight() => clearField(39);
 
   @$pb.TagNumber(40)
-  $1.ColorExpression get cursorColor => $_getN(17);
+  $1.DartColorExpression get cursorColor => $_getN(17);
   @$pb.TagNumber(40)
-  set cursorColor($1.ColorExpression v) { setField(40, v); }
+  set cursorColor($1.DartColorExpression v) { setField(40, v); }
   @$pb.TagNumber(40)
   $core.bool hasCursorColor() => $_has(17);
   @$pb.TagNumber(40)
   void clearCursorColor() => clearField(40);
   @$pb.TagNumber(40)
-  $1.ColorExpression ensureCursorColor() => $_ensure(17);
+  $1.DartColorExpression ensureCursorColor() => $_ensure(17);
 
   @$pb.TagNumber(43)
   $core.bool get enableInteractiveSelection => $_getBF(18);
@@ -6161,7 +6161,7 @@ class MaterialLicensePage extends $pb.GeneratedMessage {
 class MaterialBackButton extends $pb.GeneratedMessage {
   factory MaterialBackButton({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
   }) {
     final $result = create();
     if (key != null) {
@@ -6178,7 +6178,7 @@ class MaterialBackButton extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialBackButton', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -6215,15 +6215,15 @@ class MaterialBackButton extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get color => $_getN(1);
+  $1.DartColorExpression get color => $_getN(1);
   @$pb.TagNumber(3)
-  set color($1.ColorExpression v) { setField(3, v); }
+  set color($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureColor() => $_ensure(1);
+  $1.DartColorExpression ensureColor() => $_ensure(1);
 }
 
 /// package:flutter/src/material/action_buttons.dart
@@ -6283,7 +6283,7 @@ class MaterialBackButtonIcon extends $pb.GeneratedMessage {
 class MaterialCloseButton extends $pb.GeneratedMessage {
   factory MaterialCloseButton({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
   }) {
     final $result = create();
     if (key != null) {
@@ -6300,7 +6300,7 @@ class MaterialCloseButton extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialCloseButton', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -6337,15 +6337,15 @@ class MaterialCloseButton extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get color => $_getN(1);
+  $1.DartColorExpression get color => $_getN(1);
   @$pb.TagNumber(3)
-  set color($1.ColorExpression v) { setField(3, v); }
+  set color($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureColor() => $_ensure(1);
+  $1.DartColorExpression ensureColor() => $_ensure(1);
 }
 
 /// package:flutter/src/material/action_buttons.dart
@@ -6622,11 +6622,11 @@ class MaterialActionChip extends $pb.GeneratedMessage {
     $core.double? pressElevation,
     $core.String? tooltip,
     $core.bool? autofocus,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? disabledColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? disabledColor,
     $core.double? elevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -6675,11 +6675,11 @@ class MaterialActionChip extends $pb.GeneratedMessage {
     ..a<$core.double>(8, _omitFieldNames ? '' : 'pressElevation', $pb.PbFieldType.OD)
     ..aOS(9, _omitFieldNames ? '' : 'tooltip')
     ..aOB(14, _omitFieldNames ? '' : 'autofocus')
-    ..aOM<$1.ColorExpression>(16, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(17, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(16, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(17, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(21, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(22, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(23, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(22, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(23, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -6765,26 +6765,26 @@ class MaterialActionChip extends $pb.GeneratedMessage {
   void clearAutofocus() => clearField(14);
 
   @$pb.TagNumber(16)
-  $1.ColorExpression get backgroundColor => $_getN(6);
+  $1.DartColorExpression get backgroundColor => $_getN(6);
   @$pb.TagNumber(16)
-  set backgroundColor($1.ColorExpression v) { setField(16, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasBackgroundColor() => $_has(6);
   @$pb.TagNumber(16)
   void clearBackgroundColor() => clearField(16);
   @$pb.TagNumber(16)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(6);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(6);
 
   @$pb.TagNumber(17)
-  $1.ColorExpression get disabledColor => $_getN(7);
+  $1.DartColorExpression get disabledColor => $_getN(7);
   @$pb.TagNumber(17)
-  set disabledColor($1.ColorExpression v) { setField(17, v); }
+  set disabledColor($1.DartColorExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasDisabledColor() => $_has(7);
   @$pb.TagNumber(17)
   void clearDisabledColor() => clearField(17);
   @$pb.TagNumber(17)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(7);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(7);
 
   @$pb.TagNumber(21)
   $core.double get elevation => $_getN(8);
@@ -6796,26 +6796,26 @@ class MaterialActionChip extends $pb.GeneratedMessage {
   void clearElevation() => clearField(21);
 
   @$pb.TagNumber(22)
-  $1.ColorExpression get shadowColor => $_getN(9);
+  $1.DartColorExpression get shadowColor => $_getN(9);
   @$pb.TagNumber(22)
-  set shadowColor($1.ColorExpression v) { setField(22, v); }
+  set shadowColor($1.DartColorExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasShadowColor() => $_has(9);
   @$pb.TagNumber(22)
   void clearShadowColor() => clearField(22);
   @$pb.TagNumber(22)
-  $1.ColorExpression ensureShadowColor() => $_ensure(9);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(9);
 
   @$pb.TagNumber(23)
-  $1.ColorExpression get surfaceTintColor => $_getN(10);
+  $1.DartColorExpression get surfaceTintColor => $_getN(10);
   @$pb.TagNumber(23)
-  set surfaceTintColor($1.ColorExpression v) { setField(23, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasSurfaceTintColor() => $_has(10);
   @$pb.TagNumber(23)
   void clearSurfaceTintColor() => clearField(23);
   @$pb.TagNumber(23)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(10);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(10);
 }
 
 /// package:flutter/src/material/action_chip.dart
@@ -6827,11 +6827,11 @@ class MaterialActionChipNamedElevated extends $pb.GeneratedMessage {
     $core.double? pressElevation,
     $core.String? tooltip,
     $core.bool? autofocus,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? disabledColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? disabledColor,
     $core.double? elevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -6880,11 +6880,11 @@ class MaterialActionChipNamedElevated extends $pb.GeneratedMessage {
     ..a<$core.double>(8, _omitFieldNames ? '' : 'pressElevation', $pb.PbFieldType.OD)
     ..aOS(9, _omitFieldNames ? '' : 'tooltip')
     ..aOB(14, _omitFieldNames ? '' : 'autofocus')
-    ..aOM<$1.ColorExpression>(16, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(17, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(16, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(17, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(21, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(22, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(23, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(22, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(23, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -6970,26 +6970,26 @@ class MaterialActionChipNamedElevated extends $pb.GeneratedMessage {
   void clearAutofocus() => clearField(14);
 
   @$pb.TagNumber(16)
-  $1.ColorExpression get backgroundColor => $_getN(6);
+  $1.DartColorExpression get backgroundColor => $_getN(6);
   @$pb.TagNumber(16)
-  set backgroundColor($1.ColorExpression v) { setField(16, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasBackgroundColor() => $_has(6);
   @$pb.TagNumber(16)
   void clearBackgroundColor() => clearField(16);
   @$pb.TagNumber(16)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(6);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(6);
 
   @$pb.TagNumber(17)
-  $1.ColorExpression get disabledColor => $_getN(7);
+  $1.DartColorExpression get disabledColor => $_getN(7);
   @$pb.TagNumber(17)
-  set disabledColor($1.ColorExpression v) { setField(17, v); }
+  set disabledColor($1.DartColorExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasDisabledColor() => $_has(7);
   @$pb.TagNumber(17)
   void clearDisabledColor() => clearField(17);
   @$pb.TagNumber(17)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(7);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(7);
 
   @$pb.TagNumber(21)
   $core.double get elevation => $_getN(8);
@@ -7001,26 +7001,26 @@ class MaterialActionChipNamedElevated extends $pb.GeneratedMessage {
   void clearElevation() => clearField(21);
 
   @$pb.TagNumber(22)
-  $1.ColorExpression get shadowColor => $_getN(9);
+  $1.DartColorExpression get shadowColor => $_getN(9);
   @$pb.TagNumber(22)
-  set shadowColor($1.ColorExpression v) { setField(22, v); }
+  set shadowColor($1.DartColorExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasShadowColor() => $_has(9);
   @$pb.TagNumber(22)
   void clearShadowColor() => clearField(22);
   @$pb.TagNumber(22)
-  $1.ColorExpression ensureShadowColor() => $_ensure(9);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(9);
 
   @$pb.TagNumber(23)
-  $1.ColorExpression get surfaceTintColor => $_getN(10);
+  $1.DartColorExpression get surfaceTintColor => $_getN(10);
   @$pb.TagNumber(23)
-  set surfaceTintColor($1.ColorExpression v) { setField(23, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasSurfaceTintColor() => $_has(10);
   @$pb.TagNumber(23)
   void clearSurfaceTintColor() => clearField(23);
   @$pb.TagNumber(23)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(10);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(10);
 }
 
 /// package:flutter/src/material/app.dart
@@ -7030,8 +7030,8 @@ class MaterialMaterialApp extends $pb.GeneratedMessage {
     WidgetExpression? home,
     $core.String? initialRoute,
     $core.String? title,
-    $1.ColorExpression? color,
-    $1.DurationExpression? themeAnimationDuration,
+    $1.DartColorExpression? color,
+    $1.DartDurationExpression? themeAnimationDuration,
     $core.bool? debugShowMaterialGrid,
     $core.bool? showPerformanceOverlay,
     $core.bool? checkerboardRasterCacheImages,
@@ -7091,8 +7091,8 @@ class MaterialMaterialApp extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'home', subBuilder: WidgetExpression.create)
     ..aOS(7, _omitFieldNames ? '' : 'initialRoute')
     ..aOS(13, _omitFieldNames ? '' : 'title')
-    ..aOM<$1.ColorExpression>(15, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.DurationExpression>(21, _omitFieldNames ? '' : 'themeAnimationDuration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartColorExpression>(15, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartDurationExpression>(21, _omitFieldNames ? '' : 'themeAnimationDuration', subBuilder: $1.DartDurationExpression.create)
     ..aOB(28, _omitFieldNames ? '' : 'debugShowMaterialGrid')
     ..aOB(29, _omitFieldNames ? '' : 'showPerformanceOverlay')
     ..aOB(30, _omitFieldNames ? '' : 'checkerboardRasterCacheImages')
@@ -7165,26 +7165,26 @@ class MaterialMaterialApp extends $pb.GeneratedMessage {
   void clearTitle() => clearField(13);
 
   @$pb.TagNumber(15)
-  $1.ColorExpression get color => $_getN(4);
+  $1.DartColorExpression get color => $_getN(4);
   @$pb.TagNumber(15)
-  set color($1.ColorExpression v) { setField(15, v); }
+  set color($1.DartColorExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasColor() => $_has(4);
   @$pb.TagNumber(15)
   void clearColor() => clearField(15);
   @$pb.TagNumber(15)
-  $1.ColorExpression ensureColor() => $_ensure(4);
+  $1.DartColorExpression ensureColor() => $_ensure(4);
 
   @$pb.TagNumber(21)
-  $1.DurationExpression get themeAnimationDuration => $_getN(5);
+  $1.DartDurationExpression get themeAnimationDuration => $_getN(5);
   @$pb.TagNumber(21)
-  set themeAnimationDuration($1.DurationExpression v) { setField(21, v); }
+  set themeAnimationDuration($1.DartDurationExpression v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasThemeAnimationDuration() => $_has(5);
   @$pb.TagNumber(21)
   void clearThemeAnimationDuration() => clearField(21);
   @$pb.TagNumber(21)
-  $1.DurationExpression ensureThemeAnimationDuration() => $_ensure(5);
+  $1.DartDurationExpression ensureThemeAnimationDuration() => $_ensure(5);
 
   @$pb.TagNumber(28)
   $core.bool get debugShowMaterialGrid => $_getBF(6);
@@ -7255,8 +7255,8 @@ class MaterialMaterialAppNamedRouter extends $pb.GeneratedMessage {
   factory MaterialMaterialAppNamedRouter({
     $1.FlutterKeyExpression? key,
     $core.String? title,
-    $1.ColorExpression? color,
-    $1.DurationExpression? themeAnimationDuration,
+    $1.DartColorExpression? color,
+    $1.DartDurationExpression? themeAnimationDuration,
     $core.bool? debugShowMaterialGrid,
     $core.bool? showPerformanceOverlay,
     $core.bool? checkerboardRasterCacheImages,
@@ -7308,8 +7308,8 @@ class MaterialMaterialAppNamedRouter extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialMaterialAppNamedRouter', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOS(10, _omitFieldNames ? '' : 'title')
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.DurationExpression>(18, _omitFieldNames ? '' : 'themeAnimationDuration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartDurationExpression>(18, _omitFieldNames ? '' : 'themeAnimationDuration', subBuilder: $1.DartDurationExpression.create)
     ..aOB(25, _omitFieldNames ? '' : 'debugShowMaterialGrid')
     ..aOB(26, _omitFieldNames ? '' : 'showPerformanceOverlay')
     ..aOB(27, _omitFieldNames ? '' : 'checkerboardRasterCacheImages')
@@ -7362,26 +7362,26 @@ class MaterialMaterialAppNamedRouter extends $pb.GeneratedMessage {
   void clearTitle() => clearField(10);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get color => $_getN(2);
+  $1.DartColorExpression get color => $_getN(2);
   @$pb.TagNumber(12)
-  set color($1.ColorExpression v) { setField(12, v); }
+  set color($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasColor() => $_has(2);
   @$pb.TagNumber(12)
   void clearColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureColor() => $_ensure(2);
+  $1.DartColorExpression ensureColor() => $_ensure(2);
 
   @$pb.TagNumber(18)
-  $1.DurationExpression get themeAnimationDuration => $_getN(3);
+  $1.DartDurationExpression get themeAnimationDuration => $_getN(3);
   @$pb.TagNumber(18)
-  set themeAnimationDuration($1.DurationExpression v) { setField(18, v); }
+  set themeAnimationDuration($1.DartDurationExpression v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasThemeAnimationDuration() => $_has(3);
   @$pb.TagNumber(18)
   void clearThemeAnimationDuration() => clearField(18);
   @$pb.TagNumber(18)
-  $1.DurationExpression ensureThemeAnimationDuration() => $_ensure(3);
+  $1.DartDurationExpression ensureThemeAnimationDuration() => $_ensure(3);
 
   @$pb.TagNumber(25)
   $core.bool get debugShowMaterialGrid => $_getBF(4);
@@ -7458,10 +7458,10 @@ class MaterialAppBar extends $pb.GeneratedMessage {
     WidgetExpression? flexibleSpace,
     $core.double? elevation,
     $core.double? scrolledUnderElevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? foregroundColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? foregroundColor,
     $core.bool? primary,
     $core.bool? centerTitle,
     $core.bool? excludeHeaderSemantics,
@@ -7551,10 +7551,10 @@ class MaterialAppBar extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(7, _omitFieldNames ? '' : 'flexibleSpace', subBuilder: WidgetExpression.create)
     ..a<$core.double>(9, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..a<$core.double>(10, _omitFieldNames ? '' : 'scrolledUnderElevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(13, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(15, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(16, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(13, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(15, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(16, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(19, _omitFieldNames ? '' : 'primary')
     ..aOB(20, _omitFieldNames ? '' : 'centerTitle')
     ..aOB(21, _omitFieldNames ? '' : 'excludeHeaderSemantics')
@@ -7663,48 +7663,48 @@ class MaterialAppBar extends $pb.GeneratedMessage {
   void clearScrolledUnderElevation() => clearField(10);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get shadowColor => $_getN(8);
+  $1.DartColorExpression get shadowColor => $_getN(8);
   @$pb.TagNumber(12)
-  set shadowColor($1.ColorExpression v) { setField(12, v); }
+  set shadowColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasShadowColor() => $_has(8);
   @$pb.TagNumber(12)
   void clearShadowColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureShadowColor() => $_ensure(8);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(8);
 
   @$pb.TagNumber(13)
-  $1.ColorExpression get surfaceTintColor => $_getN(9);
+  $1.DartColorExpression get surfaceTintColor => $_getN(9);
   @$pb.TagNumber(13)
-  set surfaceTintColor($1.ColorExpression v) { setField(13, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasSurfaceTintColor() => $_has(9);
   @$pb.TagNumber(13)
   void clearSurfaceTintColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(9);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(9);
 
   @$pb.TagNumber(15)
-  $1.ColorExpression get backgroundColor => $_getN(10);
+  $1.DartColorExpression get backgroundColor => $_getN(10);
   @$pb.TagNumber(15)
-  set backgroundColor($1.ColorExpression v) { setField(15, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasBackgroundColor() => $_has(10);
   @$pb.TagNumber(15)
   void clearBackgroundColor() => clearField(15);
   @$pb.TagNumber(15)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(10);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(10);
 
   @$pb.TagNumber(16)
-  $1.ColorExpression get foregroundColor => $_getN(11);
+  $1.DartColorExpression get foregroundColor => $_getN(11);
   @$pb.TagNumber(16)
-  set foregroundColor($1.ColorExpression v) { setField(16, v); }
+  set foregroundColor($1.DartColorExpression v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasForegroundColor() => $_has(11);
   @$pb.TagNumber(16)
   void clearForegroundColor() => clearField(16);
   @$pb.TagNumber(16)
-  $1.ColorExpression ensureForegroundColor() => $_ensure(11);
+  $1.DartColorExpression ensureForegroundColor() => $_ensure(11);
 
   @$pb.TagNumber(19)
   $core.bool get primary => $_getBF(12);
@@ -7799,11 +7799,11 @@ class MaterialSliverAppBar extends $pb.GeneratedMessage {
     WidgetExpression? flexibleSpace,
     $core.double? elevation,
     $core.double? scrolledUnderElevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
     $core.bool? forceElevated,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? foregroundColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? foregroundColor,
     $core.bool? primary,
     $core.bool? centerTitle,
     $core.bool? excludeHeaderSemantics,
@@ -7916,11 +7916,11 @@ class MaterialSliverAppBar extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(7, _omitFieldNames ? '' : 'flexibleSpace', subBuilder: WidgetExpression.create)
     ..a<$core.double>(9, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..a<$core.double>(10, _omitFieldNames ? '' : 'scrolledUnderElevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(13, _omitFieldNames ? '' : 'forceElevated')
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(15, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(15, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(18, _omitFieldNames ? '' : 'primary')
     ..aOB(19, _omitFieldNames ? '' : 'centerTitle')
     ..aOB(20, _omitFieldNames ? '' : 'excludeHeaderSemantics')
@@ -8034,26 +8034,26 @@ class MaterialSliverAppBar extends $pb.GeneratedMessage {
   void clearScrolledUnderElevation() => clearField(10);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get shadowColor => $_getN(8);
+  $1.DartColorExpression get shadowColor => $_getN(8);
   @$pb.TagNumber(11)
-  set shadowColor($1.ColorExpression v) { setField(11, v); }
+  set shadowColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasShadowColor() => $_has(8);
   @$pb.TagNumber(11)
   void clearShadowColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureShadowColor() => $_ensure(8);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(8);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get surfaceTintColor => $_getN(9);
+  $1.DartColorExpression get surfaceTintColor => $_getN(9);
   @$pb.TagNumber(12)
-  set surfaceTintColor($1.ColorExpression v) { setField(12, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasSurfaceTintColor() => $_has(9);
   @$pb.TagNumber(12)
   void clearSurfaceTintColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(9);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(9);
 
   @$pb.TagNumber(13)
   $core.bool get forceElevated => $_getBF(10);
@@ -8065,26 +8065,26 @@ class MaterialSliverAppBar extends $pb.GeneratedMessage {
   void clearForceElevated() => clearField(13);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get backgroundColor => $_getN(11);
+  $1.DartColorExpression get backgroundColor => $_getN(11);
   @$pb.TagNumber(14)
-  set backgroundColor($1.ColorExpression v) { setField(14, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasBackgroundColor() => $_has(11);
   @$pb.TagNumber(14)
   void clearBackgroundColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(11);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(11);
 
   @$pb.TagNumber(15)
-  $1.ColorExpression get foregroundColor => $_getN(12);
+  $1.DartColorExpression get foregroundColor => $_getN(12);
   @$pb.TagNumber(15)
-  set foregroundColor($1.ColorExpression v) { setField(15, v); }
+  set foregroundColor($1.DartColorExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasForegroundColor() => $_has(12);
   @$pb.TagNumber(15)
   void clearForegroundColor() => clearField(15);
   @$pb.TagNumber(15)
-  $1.ColorExpression ensureForegroundColor() => $_ensure(12);
+  $1.DartColorExpression ensureForegroundColor() => $_ensure(12);
 
   @$pb.TagNumber(18)
   $core.bool get primary => $_getBF(13);
@@ -8224,11 +8224,11 @@ class MaterialSliverAppBarNamedMedium extends $pb.GeneratedMessage {
     WidgetExpression? flexibleSpace,
     $core.double? elevation,
     $core.double? scrolledUnderElevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
     $core.bool? forceElevated,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? foregroundColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? foregroundColor,
     $core.bool? primary,
     $core.bool? centerTitle,
     $core.bool? excludeHeaderSemantics,
@@ -8341,11 +8341,11 @@ class MaterialSliverAppBarNamedMedium extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(7, _omitFieldNames ? '' : 'flexibleSpace', subBuilder: WidgetExpression.create)
     ..a<$core.double>(9, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..a<$core.double>(10, _omitFieldNames ? '' : 'scrolledUnderElevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(13, _omitFieldNames ? '' : 'forceElevated')
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(15, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(15, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(18, _omitFieldNames ? '' : 'primary')
     ..aOB(19, _omitFieldNames ? '' : 'centerTitle')
     ..aOB(20, _omitFieldNames ? '' : 'excludeHeaderSemantics')
@@ -8459,26 +8459,26 @@ class MaterialSliverAppBarNamedMedium extends $pb.GeneratedMessage {
   void clearScrolledUnderElevation() => clearField(10);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get shadowColor => $_getN(8);
+  $1.DartColorExpression get shadowColor => $_getN(8);
   @$pb.TagNumber(11)
-  set shadowColor($1.ColorExpression v) { setField(11, v); }
+  set shadowColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasShadowColor() => $_has(8);
   @$pb.TagNumber(11)
   void clearShadowColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureShadowColor() => $_ensure(8);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(8);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get surfaceTintColor => $_getN(9);
+  $1.DartColorExpression get surfaceTintColor => $_getN(9);
   @$pb.TagNumber(12)
-  set surfaceTintColor($1.ColorExpression v) { setField(12, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasSurfaceTintColor() => $_has(9);
   @$pb.TagNumber(12)
   void clearSurfaceTintColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(9);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(9);
 
   @$pb.TagNumber(13)
   $core.bool get forceElevated => $_getBF(10);
@@ -8490,26 +8490,26 @@ class MaterialSliverAppBarNamedMedium extends $pb.GeneratedMessage {
   void clearForceElevated() => clearField(13);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get backgroundColor => $_getN(11);
+  $1.DartColorExpression get backgroundColor => $_getN(11);
   @$pb.TagNumber(14)
-  set backgroundColor($1.ColorExpression v) { setField(14, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasBackgroundColor() => $_has(11);
   @$pb.TagNumber(14)
   void clearBackgroundColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(11);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(11);
 
   @$pb.TagNumber(15)
-  $1.ColorExpression get foregroundColor => $_getN(12);
+  $1.DartColorExpression get foregroundColor => $_getN(12);
   @$pb.TagNumber(15)
-  set foregroundColor($1.ColorExpression v) { setField(15, v); }
+  set foregroundColor($1.DartColorExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasForegroundColor() => $_has(12);
   @$pb.TagNumber(15)
   void clearForegroundColor() => clearField(15);
   @$pb.TagNumber(15)
-  $1.ColorExpression ensureForegroundColor() => $_ensure(12);
+  $1.DartColorExpression ensureForegroundColor() => $_ensure(12);
 
   @$pb.TagNumber(18)
   $core.bool get primary => $_getBF(13);
@@ -8649,11 +8649,11 @@ class MaterialSliverAppBarNamedLarge extends $pb.GeneratedMessage {
     WidgetExpression? flexibleSpace,
     $core.double? elevation,
     $core.double? scrolledUnderElevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
     $core.bool? forceElevated,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? foregroundColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? foregroundColor,
     $core.bool? primary,
     $core.bool? centerTitle,
     $core.bool? excludeHeaderSemantics,
@@ -8766,11 +8766,11 @@ class MaterialSliverAppBarNamedLarge extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(7, _omitFieldNames ? '' : 'flexibleSpace', subBuilder: WidgetExpression.create)
     ..a<$core.double>(9, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..a<$core.double>(10, _omitFieldNames ? '' : 'scrolledUnderElevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(13, _omitFieldNames ? '' : 'forceElevated')
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(15, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(15, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(18, _omitFieldNames ? '' : 'primary')
     ..aOB(19, _omitFieldNames ? '' : 'centerTitle')
     ..aOB(20, _omitFieldNames ? '' : 'excludeHeaderSemantics')
@@ -8884,26 +8884,26 @@ class MaterialSliverAppBarNamedLarge extends $pb.GeneratedMessage {
   void clearScrolledUnderElevation() => clearField(10);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get shadowColor => $_getN(8);
+  $1.DartColorExpression get shadowColor => $_getN(8);
   @$pb.TagNumber(11)
-  set shadowColor($1.ColorExpression v) { setField(11, v); }
+  set shadowColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasShadowColor() => $_has(8);
   @$pb.TagNumber(11)
   void clearShadowColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureShadowColor() => $_ensure(8);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(8);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get surfaceTintColor => $_getN(9);
+  $1.DartColorExpression get surfaceTintColor => $_getN(9);
   @$pb.TagNumber(12)
-  set surfaceTintColor($1.ColorExpression v) { setField(12, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasSurfaceTintColor() => $_has(9);
   @$pb.TagNumber(12)
   void clearSurfaceTintColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(9);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(9);
 
   @$pb.TagNumber(13)
   $core.bool get forceElevated => $_getBF(10);
@@ -8915,26 +8915,26 @@ class MaterialSliverAppBarNamedLarge extends $pb.GeneratedMessage {
   void clearForceElevated() => clearField(13);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get backgroundColor => $_getN(11);
+  $1.DartColorExpression get backgroundColor => $_getN(11);
   @$pb.TagNumber(14)
-  set backgroundColor($1.ColorExpression v) { setField(14, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasBackgroundColor() => $_has(11);
   @$pb.TagNumber(14)
   void clearBackgroundColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(11);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(11);
 
   @$pb.TagNumber(15)
-  $1.ColorExpression get foregroundColor => $_getN(12);
+  $1.DartColorExpression get foregroundColor => $_getN(12);
   @$pb.TagNumber(15)
-  set foregroundColor($1.ColorExpression v) { setField(15, v); }
+  set foregroundColor($1.DartColorExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasForegroundColor() => $_has(12);
   @$pb.TagNumber(15)
   void clearForegroundColor() => clearField(15);
   @$pb.TagNumber(15)
-  $1.ColorExpression ensureForegroundColor() => $_ensure(12);
+  $1.DartColorExpression ensureForegroundColor() => $_ensure(12);
 
   @$pb.TagNumber(18)
   $core.bool get primary => $_getBF(13);
@@ -9067,8 +9067,8 @@ class MaterialSliverAppBarNamedLarge extends $pb.GeneratedMessage {
 class MaterialBadge extends $pb.GeneratedMessage {
   factory MaterialBadge({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? textColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? textColor,
     $core.double? smallSize,
     $core.double? largeSize,
     WidgetExpression? label,
@@ -9108,8 +9108,8 @@ class MaterialBadge extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialBadge', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'textColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'textColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'smallSize', $pb.PbFieldType.OD)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'largeSize', $pb.PbFieldType.OD)
     ..aOM<WidgetExpression>(11, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
@@ -9151,26 +9151,26 @@ class MaterialBadge extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get backgroundColor => $_getN(1);
+  $1.DartColorExpression get backgroundColor => $_getN(1);
   @$pb.TagNumber(3)
-  set backgroundColor($1.ColorExpression v) { setField(3, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBackgroundColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearBackgroundColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(1);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(1);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get textColor => $_getN(2);
+  $1.DartColorExpression get textColor => $_getN(2);
   @$pb.TagNumber(4)
-  set textColor($1.ColorExpression v) { setField(4, v); }
+  set textColor($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTextColor() => $_has(2);
   @$pb.TagNumber(4)
   void clearTextColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureTextColor() => $_ensure(2);
+  $1.DartColorExpression ensureTextColor() => $_ensure(2);
 
   @$pb.TagNumber(5)
   $core.double get smallSize => $_getN(3);
@@ -9226,8 +9226,8 @@ class MaterialBadge extends $pb.GeneratedMessage {
 class MaterialBadgeNamedCount extends $pb.GeneratedMessage {
   factory MaterialBadgeNamedCount({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? textColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? textColor,
     $core.double? smallSize,
     $core.double? largeSize,
     $core.int? count,
@@ -9267,8 +9267,8 @@ class MaterialBadgeNamedCount extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialBadgeNamedCount', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'textColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'textColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'smallSize', $pb.PbFieldType.OD)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'largeSize', $pb.PbFieldType.OD)
     ..a<$core.int>(11, _omitFieldNames ? '' : 'count', $pb.PbFieldType.O3)
@@ -9310,26 +9310,26 @@ class MaterialBadgeNamedCount extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get backgroundColor => $_getN(1);
+  $1.DartColorExpression get backgroundColor => $_getN(1);
   @$pb.TagNumber(3)
-  set backgroundColor($1.ColorExpression v) { setField(3, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBackgroundColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearBackgroundColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(1);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(1);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get textColor => $_getN(2);
+  $1.DartColorExpression get textColor => $_getN(2);
   @$pb.TagNumber(4)
-  set textColor($1.ColorExpression v) { setField(4, v); }
+  set textColor($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTextColor() => $_has(2);
   @$pb.TagNumber(4)
   void clearTextColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureTextColor() => $_ensure(2);
+  $1.DartColorExpression ensureTextColor() => $_ensure(2);
 
   @$pb.TagNumber(5)
   $core.double get smallSize => $_getN(3);
@@ -9387,10 +9387,10 @@ class MaterialMaterialBanner extends $pb.GeneratedMessage {
     $core.Iterable<WidgetExpression>? actions,
     $core.double? elevation,
     WidgetExpression? leading,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? surfaceTintColor,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? dividerColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? surfaceTintColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? dividerColor,
     $core.bool? forceActionsBelow,
   }) {
     final $result = create();
@@ -9436,10 +9436,10 @@ class MaterialMaterialBanner extends $pb.GeneratedMessage {
     ..pc<WidgetExpression>(5, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..aOM<WidgetExpression>(7, _omitFieldNames ? '' : 'leading', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'dividerColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'dividerColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(15, _omitFieldNames ? '' : 'forceActionsBelow')
     ..hasRequiredFields = false
   ;
@@ -9511,48 +9511,48 @@ class MaterialMaterialBanner extends $pb.GeneratedMessage {
   WidgetExpression ensureLeading() => $_ensure(4);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get backgroundColor => $_getN(5);
+  $1.DartColorExpression get backgroundColor => $_getN(5);
   @$pb.TagNumber(8)
-  set backgroundColor($1.ColorExpression v) { setField(8, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasBackgroundColor() => $_has(5);
   @$pb.TagNumber(8)
   void clearBackgroundColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(5);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(5);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get surfaceTintColor => $_getN(6);
+  $1.DartColorExpression get surfaceTintColor => $_getN(6);
   @$pb.TagNumber(9)
-  set surfaceTintColor($1.ColorExpression v) { setField(9, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasSurfaceTintColor() => $_has(6);
   @$pb.TagNumber(9)
   void clearSurfaceTintColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(6);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(6);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get shadowColor => $_getN(7);
+  $1.DartColorExpression get shadowColor => $_getN(7);
   @$pb.TagNumber(10)
-  set shadowColor($1.ColorExpression v) { setField(10, v); }
+  set shadowColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasShadowColor() => $_has(7);
   @$pb.TagNumber(10)
   void clearShadowColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureShadowColor() => $_ensure(7);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(7);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get dividerColor => $_getN(8);
+  $1.DartColorExpression get dividerColor => $_getN(8);
   @$pb.TagNumber(11)
-  set dividerColor($1.ColorExpression v) { setField(11, v); }
+  set dividerColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasDividerColor() => $_has(8);
   @$pb.TagNumber(11)
   void clearDividerColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureDividerColor() => $_ensure(8);
+  $1.DartColorExpression ensureDividerColor() => $_ensure(8);
 
   @$pb.TagNumber(15)
   $core.bool get forceActionsBelow => $_getBF(9);
@@ -9637,12 +9637,12 @@ class MaterialMaterialBannerTheme extends $pb.GeneratedMessage {
 class MaterialBottomAppBar extends $pb.GeneratedMessage {
   factory MaterialBottomAppBar({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.double? elevation,
     $core.double? notchMargin,
     WidgetExpression? child,
-    $1.ColorExpression? surfaceTintColor,
-    $1.ColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
+    $1.DartColorExpression? shadowColor,
     $core.double? height,
   }) {
     final $result = create();
@@ -9678,12 +9678,12 @@ class MaterialBottomAppBar extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialBottomAppBar', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'notchMargin', $pb.PbFieldType.OD)
     ..aOM<WidgetExpression>(8, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -9721,15 +9721,15 @@ class MaterialBottomAppBar extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get color => $_getN(1);
+  $1.DartColorExpression get color => $_getN(1);
   @$pb.TagNumber(3)
-  set color($1.ColorExpression v) { setField(3, v); }
+  set color($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureColor() => $_ensure(1);
+  $1.DartColorExpression ensureColor() => $_ensure(1);
 
   @$pb.TagNumber(4)
   $core.double get elevation => $_getN(2);
@@ -9761,26 +9761,26 @@ class MaterialBottomAppBar extends $pb.GeneratedMessage {
   WidgetExpression ensureChild() => $_ensure(4);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get surfaceTintColor => $_getN(5);
+  $1.DartColorExpression get surfaceTintColor => $_getN(5);
   @$pb.TagNumber(10)
-  set surfaceTintColor($1.ColorExpression v) { setField(10, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasSurfaceTintColor() => $_has(5);
   @$pb.TagNumber(10)
   void clearSurfaceTintColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(5);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(5);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get shadowColor => $_getN(6);
+  $1.DartColorExpression get shadowColor => $_getN(6);
   @$pb.TagNumber(11)
-  set shadowColor($1.ColorExpression v) { setField(11, v); }
+  set shadowColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasShadowColor() => $_has(6);
   @$pb.TagNumber(11)
   void clearShadowColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureShadowColor() => $_ensure(6);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(6);
 
   @$pb.TagNumber(12)
   $core.double get height => $_getN(7);
@@ -9796,17 +9796,17 @@ class MaterialBottomAppBar extends $pb.GeneratedMessage {
 class MaterialRawMaterialButton extends $pb.GeneratedMessage {
   factory MaterialRawMaterialButton({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? fillColor,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
-    $1.ColorExpression? highlightColor,
-    $1.ColorExpression? splashColor,
+    $1.DartColorExpression? fillColor,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
+    $1.DartColorExpression? highlightColor,
+    $1.DartColorExpression? splashColor,
     $core.double? elevation,
     $core.double? focusElevation,
     $core.double? hoverElevation,
     $core.double? highlightElevation,
     $core.double? disabledElevation,
-    $1.DurationExpression? animationDuration,
+    $1.DartDurationExpression? animationDuration,
     $core.bool? autofocus,
     WidgetExpression? child,
     $core.bool? enableFeedback,
@@ -9865,17 +9865,17 @@ class MaterialRawMaterialButton extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialRawMaterialButton', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'fillColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'fillColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(13, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..a<$core.double>(14, _omitFieldNames ? '' : 'focusElevation', $pb.PbFieldType.OD)
     ..a<$core.double>(15, _omitFieldNames ? '' : 'hoverElevation', $pb.PbFieldType.OD)
     ..a<$core.double>(16, _omitFieldNames ? '' : 'highlightElevation', $pb.PbFieldType.OD)
     ..a<$core.double>(17, _omitFieldNames ? '' : 'disabledElevation', $pb.PbFieldType.OD)
-    ..aOM<$1.DurationExpression>(22, _omitFieldNames ? '' : 'animationDuration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(22, _omitFieldNames ? '' : 'animationDuration', subBuilder: $1.DartDurationExpression.create)
     ..aOB(25, _omitFieldNames ? '' : 'autofocus')
     ..aOM<WidgetExpression>(27, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..aOB(28, _omitFieldNames ? '' : 'enableFeedback')
@@ -9915,59 +9915,59 @@ class MaterialRawMaterialButton extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get fillColor => $_getN(1);
+  $1.DartColorExpression get fillColor => $_getN(1);
   @$pb.TagNumber(8)
-  set fillColor($1.ColorExpression v) { setField(8, v); }
+  set fillColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasFillColor() => $_has(1);
   @$pb.TagNumber(8)
   void clearFillColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureFillColor() => $_ensure(1);
+  $1.DartColorExpression ensureFillColor() => $_ensure(1);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get focusColor => $_getN(2);
+  $1.DartColorExpression get focusColor => $_getN(2);
   @$pb.TagNumber(9)
-  set focusColor($1.ColorExpression v) { setField(9, v); }
+  set focusColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasFocusColor() => $_has(2);
   @$pb.TagNumber(9)
   void clearFocusColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureFocusColor() => $_ensure(2);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(2);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get hoverColor => $_getN(3);
+  $1.DartColorExpression get hoverColor => $_getN(3);
   @$pb.TagNumber(10)
-  set hoverColor($1.ColorExpression v) { setField(10, v); }
+  set hoverColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasHoverColor() => $_has(3);
   @$pb.TagNumber(10)
   void clearHoverColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureHoverColor() => $_ensure(3);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(3);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get highlightColor => $_getN(4);
+  $1.DartColorExpression get highlightColor => $_getN(4);
   @$pb.TagNumber(11)
-  set highlightColor($1.ColorExpression v) { setField(11, v); }
+  set highlightColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasHighlightColor() => $_has(4);
   @$pb.TagNumber(11)
   void clearHighlightColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureHighlightColor() => $_ensure(4);
+  $1.DartColorExpression ensureHighlightColor() => $_ensure(4);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get splashColor => $_getN(5);
+  $1.DartColorExpression get splashColor => $_getN(5);
   @$pb.TagNumber(12)
-  set splashColor($1.ColorExpression v) { setField(12, v); }
+  set splashColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasSplashColor() => $_has(5);
   @$pb.TagNumber(12)
   void clearSplashColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureSplashColor() => $_ensure(5);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(5);
 
   @$pb.TagNumber(13)
   $core.double get elevation => $_getN(6);
@@ -10015,15 +10015,15 @@ class MaterialRawMaterialButton extends $pb.GeneratedMessage {
   void clearDisabledElevation() => clearField(17);
 
   @$pb.TagNumber(22)
-  $1.DurationExpression get animationDuration => $_getN(11);
+  $1.DartDurationExpression get animationDuration => $_getN(11);
   @$pb.TagNumber(22)
-  set animationDuration($1.DurationExpression v) { setField(22, v); }
+  set animationDuration($1.DartDurationExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasAnimationDuration() => $_has(11);
   @$pb.TagNumber(22)
   void clearAnimationDuration() => clearField(22);
   @$pb.TagNumber(22)
-  $1.DurationExpression ensureAnimationDuration() => $_ensure(11);
+  $1.DartDurationExpression ensureAnimationDuration() => $_ensure(11);
 
   @$pb.TagNumber(25)
   $core.bool get autofocus => $_getBF(12);
@@ -10179,12 +10179,12 @@ class MaterialButtonTheme extends $pb.GeneratedMessage {
     $core.double? minWidth,
     $core.double? height,
     $core.bool? alignedDropdown,
-    $1.ColorExpression? buttonColor,
-    $1.ColorExpression? disabledColor,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
-    $1.ColorExpression? highlightColor,
-    $1.ColorExpression? splashColor,
+    $1.DartColorExpression? buttonColor,
+    $1.DartColorExpression? disabledColor,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
+    $1.DartColorExpression? highlightColor,
+    $1.DartColorExpression? splashColor,
     WidgetExpression? child,
   }) {
     final $result = create();
@@ -10232,12 +10232,12 @@ class MaterialButtonTheme extends $pb.GeneratedMessage {
     ..a<$core.double>(5, _omitFieldNames ? '' : 'minWidth', $pb.PbFieldType.OD)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
     ..aOB(9, _omitFieldNames ? '' : 'alignedDropdown')
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'buttonColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(13, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(15, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'buttonColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(13, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(15, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<WidgetExpression>(18, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..hasRequiredFields = false
   ;
@@ -10302,70 +10302,70 @@ class MaterialButtonTheme extends $pb.GeneratedMessage {
   void clearAlignedDropdown() => clearField(9);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get buttonColor => $_getN(4);
+  $1.DartColorExpression get buttonColor => $_getN(4);
   @$pb.TagNumber(10)
-  set buttonColor($1.ColorExpression v) { setField(10, v); }
+  set buttonColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasButtonColor() => $_has(4);
   @$pb.TagNumber(10)
   void clearButtonColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureButtonColor() => $_ensure(4);
+  $1.DartColorExpression ensureButtonColor() => $_ensure(4);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get disabledColor => $_getN(5);
+  $1.DartColorExpression get disabledColor => $_getN(5);
   @$pb.TagNumber(11)
-  set disabledColor($1.ColorExpression v) { setField(11, v); }
+  set disabledColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasDisabledColor() => $_has(5);
   @$pb.TagNumber(11)
   void clearDisabledColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(5);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(5);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get focusColor => $_getN(6);
+  $1.DartColorExpression get focusColor => $_getN(6);
   @$pb.TagNumber(12)
-  set focusColor($1.ColorExpression v) { setField(12, v); }
+  set focusColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasFocusColor() => $_has(6);
   @$pb.TagNumber(12)
   void clearFocusColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureFocusColor() => $_ensure(6);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(6);
 
   @$pb.TagNumber(13)
-  $1.ColorExpression get hoverColor => $_getN(7);
+  $1.DartColorExpression get hoverColor => $_getN(7);
   @$pb.TagNumber(13)
-  set hoverColor($1.ColorExpression v) { setField(13, v); }
+  set hoverColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasHoverColor() => $_has(7);
   @$pb.TagNumber(13)
   void clearHoverColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.ColorExpression ensureHoverColor() => $_ensure(7);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(7);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get highlightColor => $_getN(8);
+  $1.DartColorExpression get highlightColor => $_getN(8);
   @$pb.TagNumber(14)
-  set highlightColor($1.ColorExpression v) { setField(14, v); }
+  set highlightColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasHighlightColor() => $_has(8);
   @$pb.TagNumber(14)
   void clearHighlightColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureHighlightColor() => $_ensure(8);
+  $1.DartColorExpression ensureHighlightColor() => $_ensure(8);
 
   @$pb.TagNumber(15)
-  $1.ColorExpression get splashColor => $_getN(9);
+  $1.DartColorExpression get splashColor => $_getN(9);
   @$pb.TagNumber(15)
-  set splashColor($1.ColorExpression v) { setField(15, v); }
+  set splashColor($1.DartColorExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasSplashColor() => $_has(9);
   @$pb.TagNumber(15)
   void clearSplashColor() => clearField(15);
   @$pb.TagNumber(15)
-  $1.ColorExpression ensureSplashColor() => $_ensure(9);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(9);
 
   @$pb.TagNumber(18)
   WidgetExpression get child => $_getN(10);
@@ -10383,9 +10383,9 @@ class MaterialButtonTheme extends $pb.GeneratedMessage {
 class MaterialCard extends $pb.GeneratedMessage {
   factory MaterialCard({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? color,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
+    $1.DartColorExpression? color,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
     $core.double? elevation,
     $core.bool? borderOnForeground,
     WidgetExpression? child,
@@ -10424,9 +10424,9 @@ class MaterialCard extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialCard', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..aOB(8, _omitFieldNames ? '' : 'borderOnForeground')
     ..aOM<WidgetExpression>(11, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
@@ -10467,37 +10467,37 @@ class MaterialCard extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get color => $_getN(1);
+  $1.DartColorExpression get color => $_getN(1);
   @$pb.TagNumber(3)
-  set color($1.ColorExpression v) { setField(3, v); }
+  set color($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureColor() => $_ensure(1);
+  $1.DartColorExpression ensureColor() => $_ensure(1);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get shadowColor => $_getN(2);
+  $1.DartColorExpression get shadowColor => $_getN(2);
   @$pb.TagNumber(4)
-  set shadowColor($1.ColorExpression v) { setField(4, v); }
+  set shadowColor($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasShadowColor() => $_has(2);
   @$pb.TagNumber(4)
   void clearShadowColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureShadowColor() => $_ensure(2);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(2);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get surfaceTintColor => $_getN(3);
+  $1.DartColorExpression get surfaceTintColor => $_getN(3);
   @$pb.TagNumber(5)
-  set surfaceTintColor($1.ColorExpression v) { setField(5, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasSurfaceTintColor() => $_has(3);
   @$pb.TagNumber(5)
   void clearSurfaceTintColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(3);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(3);
 
   @$pb.TagNumber(6)
   $core.double get elevation => $_getN(4);
@@ -10544,10 +10544,10 @@ class MaterialCheckbox extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.bool? value,
     $core.bool? tristate,
-    $1.ColorExpression? activeColor,
-    $1.ColorExpression? checkColor,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
+    $1.DartColorExpression? activeColor,
+    $1.DartColorExpression? checkColor,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
     $core.double? splashRadius,
     $core.bool? autofocus,
     $core.bool? isError,
@@ -10597,10 +10597,10 @@ class MaterialCheckbox extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOB(3, _omitFieldNames ? '' : 'value')
     ..aOB(4, _omitFieldNames ? '' : 'tristate')
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'checkColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'checkColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(13, _omitFieldNames ? '' : 'splashRadius', $pb.PbFieldType.OD)
     ..aOB(17, _omitFieldNames ? '' : 'autofocus')
     ..aOB(20, _omitFieldNames ? '' : 'isError')
@@ -10659,48 +10659,48 @@ class MaterialCheckbox extends $pb.GeneratedMessage {
   void clearTristate() => clearField(4);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get activeColor => $_getN(3);
+  $1.DartColorExpression get activeColor => $_getN(3);
   @$pb.TagNumber(7)
-  set activeColor($1.ColorExpression v) { setField(7, v); }
+  set activeColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasActiveColor() => $_has(3);
   @$pb.TagNumber(7)
   void clearActiveColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureActiveColor() => $_ensure(3);
+  $1.DartColorExpression ensureActiveColor() => $_ensure(3);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get checkColor => $_getN(4);
+  $1.DartColorExpression get checkColor => $_getN(4);
   @$pb.TagNumber(9)
-  set checkColor($1.ColorExpression v) { setField(9, v); }
+  set checkColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCheckColor() => $_has(4);
   @$pb.TagNumber(9)
   void clearCheckColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureCheckColor() => $_ensure(4);
+  $1.DartColorExpression ensureCheckColor() => $_ensure(4);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get focusColor => $_getN(5);
+  $1.DartColorExpression get focusColor => $_getN(5);
   @$pb.TagNumber(10)
-  set focusColor($1.ColorExpression v) { setField(10, v); }
+  set focusColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasFocusColor() => $_has(5);
   @$pb.TagNumber(10)
   void clearFocusColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureFocusColor() => $_ensure(5);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(5);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get hoverColor => $_getN(6);
+  $1.DartColorExpression get hoverColor => $_getN(6);
   @$pb.TagNumber(11)
-  set hoverColor($1.ColorExpression v) { setField(11, v); }
+  set hoverColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasHoverColor() => $_has(6);
   @$pb.TagNumber(11)
   void clearHoverColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureHoverColor() => $_ensure(6);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(6);
 
   @$pb.TagNumber(13)
   $core.double get splashRadius => $_getN(7);
@@ -10745,10 +10745,10 @@ class MaterialCheckboxNamedAdaptive extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.bool? value,
     $core.bool? tristate,
-    $1.ColorExpression? activeColor,
-    $1.ColorExpression? checkColor,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
+    $1.DartColorExpression? activeColor,
+    $1.DartColorExpression? checkColor,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
     $core.double? splashRadius,
     $core.bool? autofocus,
     $core.bool? isError,
@@ -10798,10 +10798,10 @@ class MaterialCheckboxNamedAdaptive extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOB(3, _omitFieldNames ? '' : 'value')
     ..aOB(4, _omitFieldNames ? '' : 'tristate')
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'checkColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'checkColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(13, _omitFieldNames ? '' : 'splashRadius', $pb.PbFieldType.OD)
     ..aOB(17, _omitFieldNames ? '' : 'autofocus')
     ..aOB(20, _omitFieldNames ? '' : 'isError')
@@ -10860,48 +10860,48 @@ class MaterialCheckboxNamedAdaptive extends $pb.GeneratedMessage {
   void clearTristate() => clearField(4);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get activeColor => $_getN(3);
+  $1.DartColorExpression get activeColor => $_getN(3);
   @$pb.TagNumber(7)
-  set activeColor($1.ColorExpression v) { setField(7, v); }
+  set activeColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasActiveColor() => $_has(3);
   @$pb.TagNumber(7)
   void clearActiveColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureActiveColor() => $_ensure(3);
+  $1.DartColorExpression ensureActiveColor() => $_ensure(3);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get checkColor => $_getN(4);
+  $1.DartColorExpression get checkColor => $_getN(4);
   @$pb.TagNumber(9)
-  set checkColor($1.ColorExpression v) { setField(9, v); }
+  set checkColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasCheckColor() => $_has(4);
   @$pb.TagNumber(9)
   void clearCheckColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureCheckColor() => $_ensure(4);
+  $1.DartColorExpression ensureCheckColor() => $_ensure(4);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get focusColor => $_getN(5);
+  $1.DartColorExpression get focusColor => $_getN(5);
   @$pb.TagNumber(10)
-  set focusColor($1.ColorExpression v) { setField(10, v); }
+  set focusColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasFocusColor() => $_has(5);
   @$pb.TagNumber(10)
   void clearFocusColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureFocusColor() => $_ensure(5);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(5);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get hoverColor => $_getN(6);
+  $1.DartColorExpression get hoverColor => $_getN(6);
   @$pb.TagNumber(11)
-  set hoverColor($1.ColorExpression v) { setField(11, v); }
+  set hoverColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasHoverColor() => $_has(6);
   @$pb.TagNumber(11)
   void clearHoverColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureHoverColor() => $_ensure(6);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(6);
 
   @$pb.TagNumber(13)
   $core.double get splashRadius => $_getN(7);
@@ -10945,14 +10945,14 @@ class MaterialCheckboxListTile extends $pb.GeneratedMessage {
   factory MaterialCheckboxListTile({
     $1.FlutterKeyExpression? key,
     $core.bool? value,
-    $1.ColorExpression? activeColor,
-    $1.ColorExpression? checkColor,
-    $1.ColorExpression? hoverColor,
+    $1.DartColorExpression? activeColor,
+    $1.DartColorExpression? checkColor,
+    $1.DartColorExpression? hoverColor,
     $core.double? splashRadius,
     $core.bool? autofocus,
     $core.bool? isError,
     $core.bool? enabled,
-    $1.ColorExpression? tileColor,
+    $1.DartColorExpression? tileColor,
     WidgetExpression? title,
     WidgetExpression? subtitle,
     $core.bool? isThreeLine,
@@ -10960,7 +10960,7 @@ class MaterialCheckboxListTile extends $pb.GeneratedMessage {
     WidgetExpression? secondary,
     $core.bool? selected,
     $core.bool? tristate,
-    $1.ColorExpression? selectedTileColor,
+    $1.DartColorExpression? selectedTileColor,
     $core.bool? enableFeedback,
     $core.String? checkboxSemanticLabel,
   }) {
@@ -11034,14 +11034,14 @@ class MaterialCheckboxListTile extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialCheckboxListTile', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOB(3, _omitFieldNames ? '' : 'value')
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'checkColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'checkColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'splashRadius', $pb.PbFieldType.OD)
     ..aOB(15, _omitFieldNames ? '' : 'autofocus')
     ..aOB(18, _omitFieldNames ? '' : 'isError')
     ..aOB(19, _omitFieldNames ? '' : 'enabled')
-    ..aOM<$1.ColorExpression>(20, _omitFieldNames ? '' : 'tileColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(20, _omitFieldNames ? '' : 'tileColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<WidgetExpression>(21, _omitFieldNames ? '' : 'title', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(22, _omitFieldNames ? '' : 'subtitle', subBuilder: WidgetExpression.create)
     ..aOB(23, _omitFieldNames ? '' : 'isThreeLine')
@@ -11049,7 +11049,7 @@ class MaterialCheckboxListTile extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(25, _omitFieldNames ? '' : 'secondary', subBuilder: WidgetExpression.create)
     ..aOB(26, _omitFieldNames ? '' : 'selected')
     ..aOB(29, _omitFieldNames ? '' : 'tristate')
-    ..aOM<$1.ColorExpression>(31, _omitFieldNames ? '' : 'selectedTileColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(31, _omitFieldNames ? '' : 'selectedTileColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(33, _omitFieldNames ? '' : 'enableFeedback')
     ..aOS(34, _omitFieldNames ? '' : 'checkboxSemanticLabel')
     ..hasRequiredFields = false
@@ -11097,37 +11097,37 @@ class MaterialCheckboxListTile extends $pb.GeneratedMessage {
   void clearValue() => clearField(3);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get activeColor => $_getN(2);
+  $1.DartColorExpression get activeColor => $_getN(2);
   @$pb.TagNumber(6)
-  set activeColor($1.ColorExpression v) { setField(6, v); }
+  set activeColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasActiveColor() => $_has(2);
   @$pb.TagNumber(6)
   void clearActiveColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureActiveColor() => $_ensure(2);
+  $1.DartColorExpression ensureActiveColor() => $_ensure(2);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get checkColor => $_getN(3);
+  $1.DartColorExpression get checkColor => $_getN(3);
   @$pb.TagNumber(8)
-  set checkColor($1.ColorExpression v) { setField(8, v); }
+  set checkColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCheckColor() => $_has(3);
   @$pb.TagNumber(8)
   void clearCheckColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureCheckColor() => $_ensure(3);
+  $1.DartColorExpression ensureCheckColor() => $_ensure(3);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get hoverColor => $_getN(4);
+  $1.DartColorExpression get hoverColor => $_getN(4);
   @$pb.TagNumber(9)
-  set hoverColor($1.ColorExpression v) { setField(9, v); }
+  set hoverColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasHoverColor() => $_has(4);
   @$pb.TagNumber(9)
   void clearHoverColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureHoverColor() => $_ensure(4);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(4);
 
   @$pb.TagNumber(11)
   $core.double get splashRadius => $_getN(5);
@@ -11166,15 +11166,15 @@ class MaterialCheckboxListTile extends $pb.GeneratedMessage {
   void clearEnabled() => clearField(19);
 
   @$pb.TagNumber(20)
-  $1.ColorExpression get tileColor => $_getN(9);
+  $1.DartColorExpression get tileColor => $_getN(9);
   @$pb.TagNumber(20)
-  set tileColor($1.ColorExpression v) { setField(20, v); }
+  set tileColor($1.DartColorExpression v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasTileColor() => $_has(9);
   @$pb.TagNumber(20)
   void clearTileColor() => clearField(20);
   @$pb.TagNumber(20)
-  $1.ColorExpression ensureTileColor() => $_ensure(9);
+  $1.DartColorExpression ensureTileColor() => $_ensure(9);
 
   @$pb.TagNumber(21)
   WidgetExpression get title => $_getN(10);
@@ -11246,15 +11246,15 @@ class MaterialCheckboxListTile extends $pb.GeneratedMessage {
   void clearTristate() => clearField(29);
 
   @$pb.TagNumber(31)
-  $1.ColorExpression get selectedTileColor => $_getN(17);
+  $1.DartColorExpression get selectedTileColor => $_getN(17);
   @$pb.TagNumber(31)
-  set selectedTileColor($1.ColorExpression v) { setField(31, v); }
+  set selectedTileColor($1.DartColorExpression v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasSelectedTileColor() => $_has(17);
   @$pb.TagNumber(31)
   void clearSelectedTileColor() => clearField(31);
   @$pb.TagNumber(31)
-  $1.ColorExpression ensureSelectedTileColor() => $_ensure(17);
+  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(17);
 
   @$pb.TagNumber(33)
   $core.bool get enableFeedback => $_getBF(18);
@@ -11280,14 +11280,14 @@ class MaterialCheckboxListTileNamedAdaptive extends $pb.GeneratedMessage {
   factory MaterialCheckboxListTileNamedAdaptive({
     $1.FlutterKeyExpression? key,
     $core.bool? value,
-    $1.ColorExpression? activeColor,
-    $1.ColorExpression? checkColor,
-    $1.ColorExpression? hoverColor,
+    $1.DartColorExpression? activeColor,
+    $1.DartColorExpression? checkColor,
+    $1.DartColorExpression? hoverColor,
     $core.double? splashRadius,
     $core.bool? autofocus,
     $core.bool? isError,
     $core.bool? enabled,
-    $1.ColorExpression? tileColor,
+    $1.DartColorExpression? tileColor,
     WidgetExpression? title,
     WidgetExpression? subtitle,
     $core.bool? isThreeLine,
@@ -11295,7 +11295,7 @@ class MaterialCheckboxListTileNamedAdaptive extends $pb.GeneratedMessage {
     WidgetExpression? secondary,
     $core.bool? selected,
     $core.bool? tristate,
-    $1.ColorExpression? selectedTileColor,
+    $1.DartColorExpression? selectedTileColor,
     $core.bool? enableFeedback,
     $core.String? checkboxSemanticLabel,
   }) {
@@ -11369,14 +11369,14 @@ class MaterialCheckboxListTileNamedAdaptive extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialCheckboxListTileNamedAdaptive', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOB(3, _omitFieldNames ? '' : 'value')
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'checkColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'checkColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'splashRadius', $pb.PbFieldType.OD)
     ..aOB(15, _omitFieldNames ? '' : 'autofocus')
     ..aOB(18, _omitFieldNames ? '' : 'isError')
     ..aOB(19, _omitFieldNames ? '' : 'enabled')
-    ..aOM<$1.ColorExpression>(20, _omitFieldNames ? '' : 'tileColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(20, _omitFieldNames ? '' : 'tileColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<WidgetExpression>(21, _omitFieldNames ? '' : 'title', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(22, _omitFieldNames ? '' : 'subtitle', subBuilder: WidgetExpression.create)
     ..aOB(23, _omitFieldNames ? '' : 'isThreeLine')
@@ -11384,7 +11384,7 @@ class MaterialCheckboxListTileNamedAdaptive extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(25, _omitFieldNames ? '' : 'secondary', subBuilder: WidgetExpression.create)
     ..aOB(26, _omitFieldNames ? '' : 'selected')
     ..aOB(29, _omitFieldNames ? '' : 'tristate')
-    ..aOM<$1.ColorExpression>(31, _omitFieldNames ? '' : 'selectedTileColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(31, _omitFieldNames ? '' : 'selectedTileColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(33, _omitFieldNames ? '' : 'enableFeedback')
     ..aOS(34, _omitFieldNames ? '' : 'checkboxSemanticLabel')
     ..hasRequiredFields = false
@@ -11432,37 +11432,37 @@ class MaterialCheckboxListTileNamedAdaptive extends $pb.GeneratedMessage {
   void clearValue() => clearField(3);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get activeColor => $_getN(2);
+  $1.DartColorExpression get activeColor => $_getN(2);
   @$pb.TagNumber(6)
-  set activeColor($1.ColorExpression v) { setField(6, v); }
+  set activeColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasActiveColor() => $_has(2);
   @$pb.TagNumber(6)
   void clearActiveColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureActiveColor() => $_ensure(2);
+  $1.DartColorExpression ensureActiveColor() => $_ensure(2);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get checkColor => $_getN(3);
+  $1.DartColorExpression get checkColor => $_getN(3);
   @$pb.TagNumber(8)
-  set checkColor($1.ColorExpression v) { setField(8, v); }
+  set checkColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasCheckColor() => $_has(3);
   @$pb.TagNumber(8)
   void clearCheckColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureCheckColor() => $_ensure(3);
+  $1.DartColorExpression ensureCheckColor() => $_ensure(3);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get hoverColor => $_getN(4);
+  $1.DartColorExpression get hoverColor => $_getN(4);
   @$pb.TagNumber(9)
-  set hoverColor($1.ColorExpression v) { setField(9, v); }
+  set hoverColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasHoverColor() => $_has(4);
   @$pb.TagNumber(9)
   void clearHoverColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureHoverColor() => $_ensure(4);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(4);
 
   @$pb.TagNumber(11)
   $core.double get splashRadius => $_getN(5);
@@ -11501,15 +11501,15 @@ class MaterialCheckboxListTileNamedAdaptive extends $pb.GeneratedMessage {
   void clearEnabled() => clearField(19);
 
   @$pb.TagNumber(20)
-  $1.ColorExpression get tileColor => $_getN(9);
+  $1.DartColorExpression get tileColor => $_getN(9);
   @$pb.TagNumber(20)
-  set tileColor($1.ColorExpression v) { setField(20, v); }
+  set tileColor($1.DartColorExpression v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasTileColor() => $_has(9);
   @$pb.TagNumber(20)
   void clearTileColor() => clearField(20);
   @$pb.TagNumber(20)
-  $1.ColorExpression ensureTileColor() => $_ensure(9);
+  $1.DartColorExpression ensureTileColor() => $_ensure(9);
 
   @$pb.TagNumber(21)
   WidgetExpression get title => $_getN(10);
@@ -11581,15 +11581,15 @@ class MaterialCheckboxListTileNamedAdaptive extends $pb.GeneratedMessage {
   void clearTristate() => clearField(29);
 
   @$pb.TagNumber(31)
-  $1.ColorExpression get selectedTileColor => $_getN(17);
+  $1.DartColorExpression get selectedTileColor => $_getN(17);
   @$pb.TagNumber(31)
-  set selectedTileColor($1.ColorExpression v) { setField(31, v); }
+  set selectedTileColor($1.DartColorExpression v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasSelectedTileColor() => $_has(17);
   @$pb.TagNumber(31)
   void clearSelectedTileColor() => clearField(31);
   @$pb.TagNumber(31)
-  $1.ColorExpression ensureSelectedTileColor() => $_ensure(17);
+  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(17);
 
   @$pb.TagNumber(33)
   $core.bool get enableFeedback => $_getBF(18);
@@ -11617,13 +11617,13 @@ class MaterialChip extends $pb.GeneratedMessage {
     WidgetExpression? avatar,
     WidgetExpression? label,
     WidgetExpression? deleteIcon,
-    $1.ColorExpression? deleteIconColor,
+    $1.DartColorExpression? deleteIconColor,
     $core.String? deleteButtonTooltipMessage,
     $core.bool? autofocus,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -11670,13 +11670,13 @@ class MaterialChip extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'avatar', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(7, _omitFieldNames ? '' : 'deleteIcon', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'deleteIconColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'deleteIconColor', subBuilder: $1.DartColorExpression.create)
     ..aOS(10, _omitFieldNames ? '' : 'deleteButtonTooltipMessage')
     ..aOB(15, _omitFieldNames ? '' : 'autofocus')
-    ..aOM<$1.ColorExpression>(17, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(17, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(21, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(22, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(23, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(22, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(23, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -11746,15 +11746,15 @@ class MaterialChip extends $pb.GeneratedMessage {
   WidgetExpression ensureDeleteIcon() => $_ensure(3);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get deleteIconColor => $_getN(4);
+  $1.DartColorExpression get deleteIconColor => $_getN(4);
   @$pb.TagNumber(9)
-  set deleteIconColor($1.ColorExpression v) { setField(9, v); }
+  set deleteIconColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasDeleteIconColor() => $_has(4);
   @$pb.TagNumber(9)
   void clearDeleteIconColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureDeleteIconColor() => $_ensure(4);
+  $1.DartColorExpression ensureDeleteIconColor() => $_ensure(4);
 
   @$pb.TagNumber(10)
   $core.String get deleteButtonTooltipMessage => $_getSZ(5);
@@ -11775,15 +11775,15 @@ class MaterialChip extends $pb.GeneratedMessage {
   void clearAutofocus() => clearField(15);
 
   @$pb.TagNumber(17)
-  $1.ColorExpression get backgroundColor => $_getN(7);
+  $1.DartColorExpression get backgroundColor => $_getN(7);
   @$pb.TagNumber(17)
-  set backgroundColor($1.ColorExpression v) { setField(17, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasBackgroundColor() => $_has(7);
   @$pb.TagNumber(17)
   void clearBackgroundColor() => clearField(17);
   @$pb.TagNumber(17)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(7);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(7);
 
   @$pb.TagNumber(21)
   $core.double get elevation => $_getN(8);
@@ -11795,26 +11795,26 @@ class MaterialChip extends $pb.GeneratedMessage {
   void clearElevation() => clearField(21);
 
   @$pb.TagNumber(22)
-  $1.ColorExpression get shadowColor => $_getN(9);
+  $1.DartColorExpression get shadowColor => $_getN(9);
   @$pb.TagNumber(22)
-  set shadowColor($1.ColorExpression v) { setField(22, v); }
+  set shadowColor($1.DartColorExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasShadowColor() => $_has(9);
   @$pb.TagNumber(22)
   void clearShadowColor() => clearField(22);
   @$pb.TagNumber(22)
-  $1.ColorExpression ensureShadowColor() => $_ensure(9);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(9);
 
   @$pb.TagNumber(23)
-  $1.ColorExpression get surfaceTintColor => $_getN(10);
+  $1.DartColorExpression get surfaceTintColor => $_getN(10);
   @$pb.TagNumber(23)
-  set surfaceTintColor($1.ColorExpression v) { setField(23, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasSurfaceTintColor() => $_has(10);
   @$pb.TagNumber(23)
   void clearSurfaceTintColor() => clearField(23);
   @$pb.TagNumber(23)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(10);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(10);
 }
 
 /// package:flutter/src/material/chip.dart
@@ -11824,23 +11824,23 @@ class MaterialRawChip extends $pb.GeneratedMessage {
     WidgetExpression? avatar,
     WidgetExpression? label,
     WidgetExpression? deleteIcon,
-    $1.ColorExpression? deleteIconColor,
+    $1.DartColorExpression? deleteIconColor,
     $core.String? deleteButtonTooltipMessage,
     $core.double? pressElevation,
     $core.bool? tapEnabled,
     $core.bool? selected,
     $core.bool? isEnabled,
-    $1.ColorExpression? disabledColor,
-    $1.ColorExpression? selectedColor,
+    $1.DartColorExpression? disabledColor,
+    $1.DartColorExpression? selectedColor,
     $core.String? tooltip,
     $core.bool? autofocus,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
-    $1.ColorExpression? selectedShadowColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
+    $1.DartColorExpression? selectedShadowColor,
     $core.bool? showCheckmark,
-    $1.ColorExpression? checkmarkColor,
+    $1.DartColorExpression? checkmarkColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -11917,23 +11917,23 @@ class MaterialRawChip extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'avatar', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(10, _omitFieldNames ? '' : 'deleteIcon', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'deleteIconColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'deleteIconColor', subBuilder: $1.DartColorExpression.create)
     ..aOS(13, _omitFieldNames ? '' : 'deleteButtonTooltipMessage')
     ..a<$core.double>(16, _omitFieldNames ? '' : 'pressElevation', $pb.PbFieldType.OD)
     ..aOB(17, _omitFieldNames ? '' : 'tapEnabled')
     ..aOB(18, _omitFieldNames ? '' : 'selected')
     ..aOB(19, _omitFieldNames ? '' : 'isEnabled')
-    ..aOM<$1.ColorExpression>(20, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(21, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(20, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(21, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.DartColorExpression.create)
     ..aOS(22, _omitFieldNames ? '' : 'tooltip')
     ..aOB(27, _omitFieldNames ? '' : 'autofocus')
-    ..aOM<$1.ColorExpression>(29, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(29, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(31, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(32, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(33, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(35, _omitFieldNames ? '' : 'selectedShadowColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(32, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(33, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(35, _omitFieldNames ? '' : 'selectedShadowColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(36, _omitFieldNames ? '' : 'showCheckmark')
-    ..aOM<$1.ColorExpression>(37, _omitFieldNames ? '' : 'checkmarkColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(37, _omitFieldNames ? '' : 'checkmarkColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -12003,15 +12003,15 @@ class MaterialRawChip extends $pb.GeneratedMessage {
   WidgetExpression ensureDeleteIcon() => $_ensure(3);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get deleteIconColor => $_getN(4);
+  $1.DartColorExpression get deleteIconColor => $_getN(4);
   @$pb.TagNumber(12)
-  set deleteIconColor($1.ColorExpression v) { setField(12, v); }
+  set deleteIconColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasDeleteIconColor() => $_has(4);
   @$pb.TagNumber(12)
   void clearDeleteIconColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureDeleteIconColor() => $_ensure(4);
+  $1.DartColorExpression ensureDeleteIconColor() => $_ensure(4);
 
   @$pb.TagNumber(13)
   $core.String get deleteButtonTooltipMessage => $_getSZ(5);
@@ -12059,26 +12059,26 @@ class MaterialRawChip extends $pb.GeneratedMessage {
   void clearIsEnabled() => clearField(19);
 
   @$pb.TagNumber(20)
-  $1.ColorExpression get disabledColor => $_getN(10);
+  $1.DartColorExpression get disabledColor => $_getN(10);
   @$pb.TagNumber(20)
-  set disabledColor($1.ColorExpression v) { setField(20, v); }
+  set disabledColor($1.DartColorExpression v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasDisabledColor() => $_has(10);
   @$pb.TagNumber(20)
   void clearDisabledColor() => clearField(20);
   @$pb.TagNumber(20)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(10);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(10);
 
   @$pb.TagNumber(21)
-  $1.ColorExpression get selectedColor => $_getN(11);
+  $1.DartColorExpression get selectedColor => $_getN(11);
   @$pb.TagNumber(21)
-  set selectedColor($1.ColorExpression v) { setField(21, v); }
+  set selectedColor($1.DartColorExpression v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasSelectedColor() => $_has(11);
   @$pb.TagNumber(21)
   void clearSelectedColor() => clearField(21);
   @$pb.TagNumber(21)
-  $1.ColorExpression ensureSelectedColor() => $_ensure(11);
+  $1.DartColorExpression ensureSelectedColor() => $_ensure(11);
 
   @$pb.TagNumber(22)
   $core.String get tooltip => $_getSZ(12);
@@ -12099,15 +12099,15 @@ class MaterialRawChip extends $pb.GeneratedMessage {
   void clearAutofocus() => clearField(27);
 
   @$pb.TagNumber(29)
-  $1.ColorExpression get backgroundColor => $_getN(14);
+  $1.DartColorExpression get backgroundColor => $_getN(14);
   @$pb.TagNumber(29)
-  set backgroundColor($1.ColorExpression v) { setField(29, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(29, v); }
   @$pb.TagNumber(29)
   $core.bool hasBackgroundColor() => $_has(14);
   @$pb.TagNumber(29)
   void clearBackgroundColor() => clearField(29);
   @$pb.TagNumber(29)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(14);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(14);
 
   @$pb.TagNumber(31)
   $core.double get elevation => $_getN(15);
@@ -12119,37 +12119,37 @@ class MaterialRawChip extends $pb.GeneratedMessage {
   void clearElevation() => clearField(31);
 
   @$pb.TagNumber(32)
-  $1.ColorExpression get shadowColor => $_getN(16);
+  $1.DartColorExpression get shadowColor => $_getN(16);
   @$pb.TagNumber(32)
-  set shadowColor($1.ColorExpression v) { setField(32, v); }
+  set shadowColor($1.DartColorExpression v) { setField(32, v); }
   @$pb.TagNumber(32)
   $core.bool hasShadowColor() => $_has(16);
   @$pb.TagNumber(32)
   void clearShadowColor() => clearField(32);
   @$pb.TagNumber(32)
-  $1.ColorExpression ensureShadowColor() => $_ensure(16);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(16);
 
   @$pb.TagNumber(33)
-  $1.ColorExpression get surfaceTintColor => $_getN(17);
+  $1.DartColorExpression get surfaceTintColor => $_getN(17);
   @$pb.TagNumber(33)
-  set surfaceTintColor($1.ColorExpression v) { setField(33, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(33, v); }
   @$pb.TagNumber(33)
   $core.bool hasSurfaceTintColor() => $_has(17);
   @$pb.TagNumber(33)
   void clearSurfaceTintColor() => clearField(33);
   @$pb.TagNumber(33)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(17);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(17);
 
   @$pb.TagNumber(35)
-  $1.ColorExpression get selectedShadowColor => $_getN(18);
+  $1.DartColorExpression get selectedShadowColor => $_getN(18);
   @$pb.TagNumber(35)
-  set selectedShadowColor($1.ColorExpression v) { setField(35, v); }
+  set selectedShadowColor($1.DartColorExpression v) { setField(35, v); }
   @$pb.TagNumber(35)
   $core.bool hasSelectedShadowColor() => $_has(18);
   @$pb.TagNumber(35)
   void clearSelectedShadowColor() => clearField(35);
   @$pb.TagNumber(35)
-  $1.ColorExpression ensureSelectedShadowColor() => $_ensure(18);
+  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(18);
 
   @$pb.TagNumber(36)
   $core.bool get showCheckmark => $_getBF(19);
@@ -12161,15 +12161,15 @@ class MaterialRawChip extends $pb.GeneratedMessage {
   void clearShowCheckmark() => clearField(36);
 
   @$pb.TagNumber(37)
-  $1.ColorExpression get checkmarkColor => $_getN(20);
+  $1.DartColorExpression get checkmarkColor => $_getN(20);
   @$pb.TagNumber(37)
-  set checkmarkColor($1.ColorExpression v) { setField(37, v); }
+  set checkmarkColor($1.DartColorExpression v) { setField(37, v); }
   @$pb.TagNumber(37)
   $core.bool hasCheckmarkColor() => $_has(20);
   @$pb.TagNumber(37)
   void clearCheckmarkColor() => clearField(37);
   @$pb.TagNumber(37)
-  $1.ColorExpression ensureCheckmarkColor() => $_ensure(20);
+  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(20);
 }
 
 /// package:flutter/src/material/choice_chip.dart
@@ -12180,17 +12180,17 @@ class MaterialChoiceChip extends $pb.GeneratedMessage {
     WidgetExpression? label,
     $core.double? pressElevation,
     $core.bool? selected,
-    $1.ColorExpression? selectedColor,
-    $1.ColorExpression? disabledColor,
+    $1.DartColorExpression? selectedColor,
+    $1.DartColorExpression? disabledColor,
     $core.String? tooltip,
     $core.bool? autofocus,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
-    $1.ColorExpression? selectedShadowColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
+    $1.DartColorExpression? selectedShadowColor,
     $core.bool? showCheckmark,
-    $1.ColorExpression? checkmarkColor,
+    $1.DartColorExpression? checkmarkColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -12253,17 +12253,17 @@ class MaterialChoiceChip extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'pressElevation', $pb.PbFieldType.OD)
     ..aOB(9, _omitFieldNames ? '' : 'selected')
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
     ..aOS(12, _omitFieldNames ? '' : 'tooltip')
     ..aOB(17, _omitFieldNames ? '' : 'autofocus')
-    ..aOM<$1.ColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(23, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(24, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(25, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(27, _omitFieldNames ? '' : 'selectedShadowColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(24, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(25, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(27, _omitFieldNames ? '' : 'selectedShadowColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(28, _omitFieldNames ? '' : 'showCheckmark')
-    ..aOM<$1.ColorExpression>(29, _omitFieldNames ? '' : 'checkmarkColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(29, _omitFieldNames ? '' : 'checkmarkColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -12340,26 +12340,26 @@ class MaterialChoiceChip extends $pb.GeneratedMessage {
   void clearSelected() => clearField(9);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get selectedColor => $_getN(5);
+  $1.DartColorExpression get selectedColor => $_getN(5);
   @$pb.TagNumber(10)
-  set selectedColor($1.ColorExpression v) { setField(10, v); }
+  set selectedColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasSelectedColor() => $_has(5);
   @$pb.TagNumber(10)
   void clearSelectedColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureSelectedColor() => $_ensure(5);
+  $1.DartColorExpression ensureSelectedColor() => $_ensure(5);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get disabledColor => $_getN(6);
+  $1.DartColorExpression get disabledColor => $_getN(6);
   @$pb.TagNumber(11)
-  set disabledColor($1.ColorExpression v) { setField(11, v); }
+  set disabledColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasDisabledColor() => $_has(6);
   @$pb.TagNumber(11)
   void clearDisabledColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(6);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(6);
 
   @$pb.TagNumber(12)
   $core.String get tooltip => $_getSZ(7);
@@ -12380,15 +12380,15 @@ class MaterialChoiceChip extends $pb.GeneratedMessage {
   void clearAutofocus() => clearField(17);
 
   @$pb.TagNumber(19)
-  $1.ColorExpression get backgroundColor => $_getN(9);
+  $1.DartColorExpression get backgroundColor => $_getN(9);
   @$pb.TagNumber(19)
-  set backgroundColor($1.ColorExpression v) { setField(19, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasBackgroundColor() => $_has(9);
   @$pb.TagNumber(19)
   void clearBackgroundColor() => clearField(19);
   @$pb.TagNumber(19)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(9);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(9);
 
   @$pb.TagNumber(23)
   $core.double get elevation => $_getN(10);
@@ -12400,37 +12400,37 @@ class MaterialChoiceChip extends $pb.GeneratedMessage {
   void clearElevation() => clearField(23);
 
   @$pb.TagNumber(24)
-  $1.ColorExpression get shadowColor => $_getN(11);
+  $1.DartColorExpression get shadowColor => $_getN(11);
   @$pb.TagNumber(24)
-  set shadowColor($1.ColorExpression v) { setField(24, v); }
+  set shadowColor($1.DartColorExpression v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasShadowColor() => $_has(11);
   @$pb.TagNumber(24)
   void clearShadowColor() => clearField(24);
   @$pb.TagNumber(24)
-  $1.ColorExpression ensureShadowColor() => $_ensure(11);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(11);
 
   @$pb.TagNumber(25)
-  $1.ColorExpression get surfaceTintColor => $_getN(12);
+  $1.DartColorExpression get surfaceTintColor => $_getN(12);
   @$pb.TagNumber(25)
-  set surfaceTintColor($1.ColorExpression v) { setField(25, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasSurfaceTintColor() => $_has(12);
   @$pb.TagNumber(25)
   void clearSurfaceTintColor() => clearField(25);
   @$pb.TagNumber(25)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(12);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(12);
 
   @$pb.TagNumber(27)
-  $1.ColorExpression get selectedShadowColor => $_getN(13);
+  $1.DartColorExpression get selectedShadowColor => $_getN(13);
   @$pb.TagNumber(27)
-  set selectedShadowColor($1.ColorExpression v) { setField(27, v); }
+  set selectedShadowColor($1.DartColorExpression v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasSelectedShadowColor() => $_has(13);
   @$pb.TagNumber(27)
   void clearSelectedShadowColor() => clearField(27);
   @$pb.TagNumber(27)
-  $1.ColorExpression ensureSelectedShadowColor() => $_ensure(13);
+  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(13);
 
   @$pb.TagNumber(28)
   $core.bool get showCheckmark => $_getBF(14);
@@ -12442,15 +12442,15 @@ class MaterialChoiceChip extends $pb.GeneratedMessage {
   void clearShowCheckmark() => clearField(28);
 
   @$pb.TagNumber(29)
-  $1.ColorExpression get checkmarkColor => $_getN(15);
+  $1.DartColorExpression get checkmarkColor => $_getN(15);
   @$pb.TagNumber(29)
-  set checkmarkColor($1.ColorExpression v) { setField(29, v); }
+  set checkmarkColor($1.DartColorExpression v) { setField(29, v); }
   @$pb.TagNumber(29)
   $core.bool hasCheckmarkColor() => $_has(15);
   @$pb.TagNumber(29)
   void clearCheckmarkColor() => clearField(29);
   @$pb.TagNumber(29)
-  $1.ColorExpression ensureCheckmarkColor() => $_ensure(15);
+  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(15);
 }
 
 /// package:flutter/src/material/choice_chip.dart
@@ -12461,17 +12461,17 @@ class MaterialChoiceChipNamedElevated extends $pb.GeneratedMessage {
     WidgetExpression? label,
     $core.double? pressElevation,
     $core.bool? selected,
-    $1.ColorExpression? selectedColor,
-    $1.ColorExpression? disabledColor,
+    $1.DartColorExpression? selectedColor,
+    $1.DartColorExpression? disabledColor,
     $core.String? tooltip,
     $core.bool? autofocus,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
-    $1.ColorExpression? selectedShadowColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
+    $1.DartColorExpression? selectedShadowColor,
     $core.bool? showCheckmark,
-    $1.ColorExpression? checkmarkColor,
+    $1.DartColorExpression? checkmarkColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -12534,17 +12534,17 @@ class MaterialChoiceChipNamedElevated extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'pressElevation', $pb.PbFieldType.OD)
     ..aOB(9, _omitFieldNames ? '' : 'selected')
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
     ..aOS(12, _omitFieldNames ? '' : 'tooltip')
     ..aOB(17, _omitFieldNames ? '' : 'autofocus')
-    ..aOM<$1.ColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(23, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(24, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(25, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(27, _omitFieldNames ? '' : 'selectedShadowColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(24, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(25, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(27, _omitFieldNames ? '' : 'selectedShadowColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(28, _omitFieldNames ? '' : 'showCheckmark')
-    ..aOM<$1.ColorExpression>(29, _omitFieldNames ? '' : 'checkmarkColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(29, _omitFieldNames ? '' : 'checkmarkColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -12621,26 +12621,26 @@ class MaterialChoiceChipNamedElevated extends $pb.GeneratedMessage {
   void clearSelected() => clearField(9);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get selectedColor => $_getN(5);
+  $1.DartColorExpression get selectedColor => $_getN(5);
   @$pb.TagNumber(10)
-  set selectedColor($1.ColorExpression v) { setField(10, v); }
+  set selectedColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasSelectedColor() => $_has(5);
   @$pb.TagNumber(10)
   void clearSelectedColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureSelectedColor() => $_ensure(5);
+  $1.DartColorExpression ensureSelectedColor() => $_ensure(5);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get disabledColor => $_getN(6);
+  $1.DartColorExpression get disabledColor => $_getN(6);
   @$pb.TagNumber(11)
-  set disabledColor($1.ColorExpression v) { setField(11, v); }
+  set disabledColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasDisabledColor() => $_has(6);
   @$pb.TagNumber(11)
   void clearDisabledColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(6);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(6);
 
   @$pb.TagNumber(12)
   $core.String get tooltip => $_getSZ(7);
@@ -12661,15 +12661,15 @@ class MaterialChoiceChipNamedElevated extends $pb.GeneratedMessage {
   void clearAutofocus() => clearField(17);
 
   @$pb.TagNumber(19)
-  $1.ColorExpression get backgroundColor => $_getN(9);
+  $1.DartColorExpression get backgroundColor => $_getN(9);
   @$pb.TagNumber(19)
-  set backgroundColor($1.ColorExpression v) { setField(19, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasBackgroundColor() => $_has(9);
   @$pb.TagNumber(19)
   void clearBackgroundColor() => clearField(19);
   @$pb.TagNumber(19)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(9);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(9);
 
   @$pb.TagNumber(23)
   $core.double get elevation => $_getN(10);
@@ -12681,37 +12681,37 @@ class MaterialChoiceChipNamedElevated extends $pb.GeneratedMessage {
   void clearElevation() => clearField(23);
 
   @$pb.TagNumber(24)
-  $1.ColorExpression get shadowColor => $_getN(11);
+  $1.DartColorExpression get shadowColor => $_getN(11);
   @$pb.TagNumber(24)
-  set shadowColor($1.ColorExpression v) { setField(24, v); }
+  set shadowColor($1.DartColorExpression v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasShadowColor() => $_has(11);
   @$pb.TagNumber(24)
   void clearShadowColor() => clearField(24);
   @$pb.TagNumber(24)
-  $1.ColorExpression ensureShadowColor() => $_ensure(11);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(11);
 
   @$pb.TagNumber(25)
-  $1.ColorExpression get surfaceTintColor => $_getN(12);
+  $1.DartColorExpression get surfaceTintColor => $_getN(12);
   @$pb.TagNumber(25)
-  set surfaceTintColor($1.ColorExpression v) { setField(25, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasSurfaceTintColor() => $_has(12);
   @$pb.TagNumber(25)
   void clearSurfaceTintColor() => clearField(25);
   @$pb.TagNumber(25)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(12);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(12);
 
   @$pb.TagNumber(27)
-  $1.ColorExpression get selectedShadowColor => $_getN(13);
+  $1.DartColorExpression get selectedShadowColor => $_getN(13);
   @$pb.TagNumber(27)
-  set selectedShadowColor($1.ColorExpression v) { setField(27, v); }
+  set selectedShadowColor($1.DartColorExpression v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasSelectedShadowColor() => $_has(13);
   @$pb.TagNumber(27)
   void clearSelectedShadowColor() => clearField(27);
   @$pb.TagNumber(27)
-  $1.ColorExpression ensureSelectedShadowColor() => $_ensure(13);
+  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(13);
 
   @$pb.TagNumber(28)
   $core.bool get showCheckmark => $_getBF(14);
@@ -12723,15 +12723,15 @@ class MaterialChoiceChipNamedElevated extends $pb.GeneratedMessage {
   void clearShowCheckmark() => clearField(28);
 
   @$pb.TagNumber(29)
-  $1.ColorExpression get checkmarkColor => $_getN(15);
+  $1.DartColorExpression get checkmarkColor => $_getN(15);
   @$pb.TagNumber(29)
-  set checkmarkColor($1.ColorExpression v) { setField(29, v); }
+  set checkmarkColor($1.DartColorExpression v) { setField(29, v); }
   @$pb.TagNumber(29)
   $core.bool hasCheckmarkColor() => $_has(15);
   @$pb.TagNumber(29)
   void clearCheckmarkColor() => clearField(29);
   @$pb.TagNumber(29)
-  $1.ColorExpression ensureCheckmarkColor() => $_ensure(15);
+  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(15);
 }
 
 /// package:flutter/src/material/circle_avatar.dart
@@ -12739,8 +12739,8 @@ class MaterialCircleAvatar extends $pb.GeneratedMessage {
   factory MaterialCircleAvatar({
     $1.FlutterKeyExpression? key,
     WidgetExpression? child,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? foregroundColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? foregroundColor,
     $core.double? radius,
     $core.double? minRadius,
     $core.double? maxRadius,
@@ -12776,8 +12776,8 @@ class MaterialCircleAvatar extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialCircleAvatar', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(10, _omitFieldNames ? '' : 'radius', $pb.PbFieldType.OD)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'minRadius', $pb.PbFieldType.OD)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'maxRadius', $pb.PbFieldType.OD)
@@ -12828,26 +12828,26 @@ class MaterialCircleAvatar extends $pb.GeneratedMessage {
   WidgetExpression ensureChild() => $_ensure(1);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get backgroundColor => $_getN(2);
+  $1.DartColorExpression get backgroundColor => $_getN(2);
   @$pb.TagNumber(4)
-  set backgroundColor($1.ColorExpression v) { setField(4, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBackgroundColor() => $_has(2);
   @$pb.TagNumber(4)
   void clearBackgroundColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(2);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(2);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get foregroundColor => $_getN(3);
+  $1.DartColorExpression get foregroundColor => $_getN(3);
   @$pb.TagNumber(9)
-  set foregroundColor($1.ColorExpression v) { setField(9, v); }
+  set foregroundColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasForegroundColor() => $_has(3);
   @$pb.TagNumber(9)
   void clearForegroundColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureForegroundColor() => $_ensure(3);
+  $1.DartColorExpression ensureForegroundColor() => $_ensure(3);
 
   @$pb.TagNumber(10)
   $core.double get radius => $_getN(4);
@@ -13020,15 +13020,15 @@ class MaterialAlertDialog extends $pb.GeneratedMessage {
   factory MaterialAlertDialog({
     $1.FlutterKeyExpression? key,
     WidgetExpression? icon,
-    $1.ColorExpression? iconColor,
+    $1.DartColorExpression? iconColor,
     WidgetExpression? title,
     WidgetExpression? content,
     $core.Iterable<WidgetExpression>? actions,
     $core.double? actionsOverflowButtonSpacing,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
     $core.String? semanticLabel,
     $core.bool? scrollable,
   }) {
@@ -13081,15 +13081,15 @@ class MaterialAlertDialog extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialAlertDialog', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'icon', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'iconColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'iconColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<WidgetExpression>(6, _omitFieldNames ? '' : 'title', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(9, _omitFieldNames ? '' : 'content', subBuilder: WidgetExpression.create)
     ..pc<WidgetExpression>(12, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..a<$core.double>(17, _omitFieldNames ? '' : 'actionsOverflowButtonSpacing', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(20, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(21, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(22, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(21, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(22, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
     ..aOS(23, _omitFieldNames ? '' : 'semanticLabel')
     ..aOB(28, _omitFieldNames ? '' : 'scrollable')
     ..hasRequiredFields = false
@@ -13139,15 +13139,15 @@ class MaterialAlertDialog extends $pb.GeneratedMessage {
   WidgetExpression ensureIcon() => $_ensure(1);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get iconColor => $_getN(2);
+  $1.DartColorExpression get iconColor => $_getN(2);
   @$pb.TagNumber(5)
-  set iconColor($1.ColorExpression v) { setField(5, v); }
+  set iconColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasIconColor() => $_has(2);
   @$pb.TagNumber(5)
   void clearIconColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureIconColor() => $_ensure(2);
+  $1.DartColorExpression ensureIconColor() => $_ensure(2);
 
   @$pb.TagNumber(6)
   WidgetExpression get title => $_getN(3);
@@ -13184,15 +13184,15 @@ class MaterialAlertDialog extends $pb.GeneratedMessage {
   void clearActionsOverflowButtonSpacing() => clearField(17);
 
   @$pb.TagNumber(19)
-  $1.ColorExpression get backgroundColor => $_getN(7);
+  $1.DartColorExpression get backgroundColor => $_getN(7);
   @$pb.TagNumber(19)
-  set backgroundColor($1.ColorExpression v) { setField(19, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasBackgroundColor() => $_has(7);
   @$pb.TagNumber(19)
   void clearBackgroundColor() => clearField(19);
   @$pb.TagNumber(19)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(7);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(7);
 
   @$pb.TagNumber(20)
   $core.double get elevation => $_getN(8);
@@ -13204,26 +13204,26 @@ class MaterialAlertDialog extends $pb.GeneratedMessage {
   void clearElevation() => clearField(20);
 
   @$pb.TagNumber(21)
-  $1.ColorExpression get shadowColor => $_getN(9);
+  $1.DartColorExpression get shadowColor => $_getN(9);
   @$pb.TagNumber(21)
-  set shadowColor($1.ColorExpression v) { setField(21, v); }
+  set shadowColor($1.DartColorExpression v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasShadowColor() => $_has(9);
   @$pb.TagNumber(21)
   void clearShadowColor() => clearField(21);
   @$pb.TagNumber(21)
-  $1.ColorExpression ensureShadowColor() => $_ensure(9);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(9);
 
   @$pb.TagNumber(22)
-  $1.ColorExpression get surfaceTintColor => $_getN(10);
+  $1.DartColorExpression get surfaceTintColor => $_getN(10);
   @$pb.TagNumber(22)
-  set surfaceTintColor($1.ColorExpression v) { setField(22, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasSurfaceTintColor() => $_has(10);
   @$pb.TagNumber(22)
   void clearSurfaceTintColor() => clearField(22);
   @$pb.TagNumber(22)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(10);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(10);
 
   @$pb.TagNumber(23)
   $core.String get semanticLabel => $_getSZ(11);
@@ -13249,18 +13249,18 @@ class MaterialAlertDialogNamedAdaptive extends $pb.GeneratedMessage {
   factory MaterialAlertDialogNamedAdaptive({
     $1.FlutterKeyExpression? key,
     WidgetExpression? icon,
-    $1.ColorExpression? iconColor,
+    $1.DartColorExpression? iconColor,
     WidgetExpression? title,
     WidgetExpression? content,
     $core.Iterable<WidgetExpression>? actions,
     $core.double? actionsOverflowButtonSpacing,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
     $core.String? semanticLabel,
     $core.bool? scrollable,
-    $1.DurationExpression? insetAnimationDuration,
+    $1.DartDurationExpression? insetAnimationDuration,
   }) {
     final $result = create();
     if (key != null) {
@@ -13314,18 +13314,18 @@ class MaterialAlertDialogNamedAdaptive extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialAlertDialogNamedAdaptive', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'icon', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'iconColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'iconColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<WidgetExpression>(6, _omitFieldNames ? '' : 'title', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(9, _omitFieldNames ? '' : 'content', subBuilder: WidgetExpression.create)
     ..pc<WidgetExpression>(12, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..a<$core.double>(17, _omitFieldNames ? '' : 'actionsOverflowButtonSpacing', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(20, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(21, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(22, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(21, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(22, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
     ..aOS(23, _omitFieldNames ? '' : 'semanticLabel')
     ..aOB(28, _omitFieldNames ? '' : 'scrollable')
-    ..aOM<$1.DurationExpression>(31, _omitFieldNames ? '' : 'insetAnimationDuration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(31, _omitFieldNames ? '' : 'insetAnimationDuration', subBuilder: $1.DartDurationExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -13373,15 +13373,15 @@ class MaterialAlertDialogNamedAdaptive extends $pb.GeneratedMessage {
   WidgetExpression ensureIcon() => $_ensure(1);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get iconColor => $_getN(2);
+  $1.DartColorExpression get iconColor => $_getN(2);
   @$pb.TagNumber(5)
-  set iconColor($1.ColorExpression v) { setField(5, v); }
+  set iconColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasIconColor() => $_has(2);
   @$pb.TagNumber(5)
   void clearIconColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureIconColor() => $_ensure(2);
+  $1.DartColorExpression ensureIconColor() => $_ensure(2);
 
   @$pb.TagNumber(6)
   WidgetExpression get title => $_getN(3);
@@ -13418,15 +13418,15 @@ class MaterialAlertDialogNamedAdaptive extends $pb.GeneratedMessage {
   void clearActionsOverflowButtonSpacing() => clearField(17);
 
   @$pb.TagNumber(19)
-  $1.ColorExpression get backgroundColor => $_getN(7);
+  $1.DartColorExpression get backgroundColor => $_getN(7);
   @$pb.TagNumber(19)
-  set backgroundColor($1.ColorExpression v) { setField(19, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasBackgroundColor() => $_has(7);
   @$pb.TagNumber(19)
   void clearBackgroundColor() => clearField(19);
   @$pb.TagNumber(19)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(7);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(7);
 
   @$pb.TagNumber(20)
   $core.double get elevation => $_getN(8);
@@ -13438,26 +13438,26 @@ class MaterialAlertDialogNamedAdaptive extends $pb.GeneratedMessage {
   void clearElevation() => clearField(20);
 
   @$pb.TagNumber(21)
-  $1.ColorExpression get shadowColor => $_getN(9);
+  $1.DartColorExpression get shadowColor => $_getN(9);
   @$pb.TagNumber(21)
-  set shadowColor($1.ColorExpression v) { setField(21, v); }
+  set shadowColor($1.DartColorExpression v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasShadowColor() => $_has(9);
   @$pb.TagNumber(21)
   void clearShadowColor() => clearField(21);
   @$pb.TagNumber(21)
-  $1.ColorExpression ensureShadowColor() => $_ensure(9);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(9);
 
   @$pb.TagNumber(22)
-  $1.ColorExpression get surfaceTintColor => $_getN(10);
+  $1.DartColorExpression get surfaceTintColor => $_getN(10);
   @$pb.TagNumber(22)
-  set surfaceTintColor($1.ColorExpression v) { setField(22, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasSurfaceTintColor() => $_has(10);
   @$pb.TagNumber(22)
   void clearSurfaceTintColor() => clearField(22);
   @$pb.TagNumber(22)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(10);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(10);
 
   @$pb.TagNumber(23)
   $core.String get semanticLabel => $_getSZ(11);
@@ -13478,26 +13478,26 @@ class MaterialAlertDialogNamedAdaptive extends $pb.GeneratedMessage {
   void clearScrollable() => clearField(28);
 
   @$pb.TagNumber(31)
-  $1.DurationExpression get insetAnimationDuration => $_getN(13);
+  $1.DartDurationExpression get insetAnimationDuration => $_getN(13);
   @$pb.TagNumber(31)
-  set insetAnimationDuration($1.DurationExpression v) { setField(31, v); }
+  set insetAnimationDuration($1.DartDurationExpression v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasInsetAnimationDuration() => $_has(13);
   @$pb.TagNumber(31)
   void clearInsetAnimationDuration() => clearField(31);
   @$pb.TagNumber(31)
-  $1.DurationExpression ensureInsetAnimationDuration() => $_ensure(13);
+  $1.DartDurationExpression ensureInsetAnimationDuration() => $_ensure(13);
 }
 
 /// package:flutter/src/material/dialog.dart
 class MaterialDialog extends $pb.GeneratedMessage {
   factory MaterialDialog({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
-    $1.DurationExpression? insetAnimationDuration,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
+    $1.DartDurationExpression? insetAnimationDuration,
     WidgetExpression? child,
   }) {
     final $result = create();
@@ -13530,11 +13530,11 @@ class MaterialDialog extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialDialog', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.DurationExpression>(7, _omitFieldNames ? '' : 'insetAnimationDuration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartDurationExpression>(7, _omitFieldNames ? '' : 'insetAnimationDuration', subBuilder: $1.DartDurationExpression.create)
     ..aOM<WidgetExpression>(13, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..hasRequiredFields = false
   ;
@@ -13572,15 +13572,15 @@ class MaterialDialog extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get backgroundColor => $_getN(1);
+  $1.DartColorExpression get backgroundColor => $_getN(1);
   @$pb.TagNumber(3)
-  set backgroundColor($1.ColorExpression v) { setField(3, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBackgroundColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearBackgroundColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(1);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(1);
 
   @$pb.TagNumber(4)
   $core.double get elevation => $_getN(2);
@@ -13592,37 +13592,37 @@ class MaterialDialog extends $pb.GeneratedMessage {
   void clearElevation() => clearField(4);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get shadowColor => $_getN(3);
+  $1.DartColorExpression get shadowColor => $_getN(3);
   @$pb.TagNumber(5)
-  set shadowColor($1.ColorExpression v) { setField(5, v); }
+  set shadowColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasShadowColor() => $_has(3);
   @$pb.TagNumber(5)
   void clearShadowColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureShadowColor() => $_ensure(3);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(3);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get surfaceTintColor => $_getN(4);
+  $1.DartColorExpression get surfaceTintColor => $_getN(4);
   @$pb.TagNumber(6)
-  set surfaceTintColor($1.ColorExpression v) { setField(6, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasSurfaceTintColor() => $_has(4);
   @$pb.TagNumber(6)
   void clearSurfaceTintColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(4);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(4);
 
   @$pb.TagNumber(7)
-  $1.DurationExpression get insetAnimationDuration => $_getN(5);
+  $1.DartDurationExpression get insetAnimationDuration => $_getN(5);
   @$pb.TagNumber(7)
-  set insetAnimationDuration($1.DurationExpression v) { setField(7, v); }
+  set insetAnimationDuration($1.DartDurationExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasInsetAnimationDuration() => $_has(5);
   @$pb.TagNumber(7)
   void clearInsetAnimationDuration() => clearField(7);
   @$pb.TagNumber(7)
-  $1.DurationExpression ensureInsetAnimationDuration() => $_ensure(5);
+  $1.DartDurationExpression ensureInsetAnimationDuration() => $_ensure(5);
 
   @$pb.TagNumber(13)
   WidgetExpression get child => $_getN(6);
@@ -13640,8 +13640,8 @@ class MaterialDialog extends $pb.GeneratedMessage {
 class MaterialDialogNamedFullscreen extends $pb.GeneratedMessage {
   factory MaterialDialogNamedFullscreen({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? backgroundColor,
-    $1.DurationExpression? insetAnimationDuration,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartDurationExpression? insetAnimationDuration,
     WidgetExpression? child,
   }) {
     final $result = create();
@@ -13665,8 +13665,8 @@ class MaterialDialogNamedFullscreen extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialDialogNamedFullscreen', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.DurationExpression>(4, _omitFieldNames ? '' : 'insetAnimationDuration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartDurationExpression>(4, _omitFieldNames ? '' : 'insetAnimationDuration', subBuilder: $1.DartDurationExpression.create)
     ..aOM<WidgetExpression>(6, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..hasRequiredFields = false
   ;
@@ -13704,26 +13704,26 @@ class MaterialDialogNamedFullscreen extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get backgroundColor => $_getN(1);
+  $1.DartColorExpression get backgroundColor => $_getN(1);
   @$pb.TagNumber(3)
-  set backgroundColor($1.ColorExpression v) { setField(3, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBackgroundColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearBackgroundColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(1);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(1);
 
   @$pb.TagNumber(4)
-  $1.DurationExpression get insetAnimationDuration => $_getN(2);
+  $1.DartDurationExpression get insetAnimationDuration => $_getN(2);
   @$pb.TagNumber(4)
-  set insetAnimationDuration($1.DurationExpression v) { setField(4, v); }
+  set insetAnimationDuration($1.DartDurationExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasInsetAnimationDuration() => $_has(2);
   @$pb.TagNumber(4)
   void clearInsetAnimationDuration() => clearField(4);
   @$pb.TagNumber(4)
-  $1.DurationExpression ensureInsetAnimationDuration() => $_ensure(2);
+  $1.DartDurationExpression ensureInsetAnimationDuration() => $_ensure(2);
 
   @$pb.TagNumber(6)
   WidgetExpression get child => $_getN(3);
@@ -13743,10 +13743,10 @@ class MaterialSimpleDialog extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? title,
     $core.Iterable<WidgetExpression>? children,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
     $core.String? semanticLabel,
   }) {
     final $result = create();
@@ -13784,10 +13784,10 @@ class MaterialSimpleDialog extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'title', subBuilder: WidgetExpression.create)
     ..pc<WidgetExpression>(6, _omitFieldNames ? '' : 'children', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(9, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
     ..aOS(12, _omitFieldNames ? '' : 'semanticLabel')
     ..hasRequiredFields = false
   ;
@@ -13839,15 +13839,15 @@ class MaterialSimpleDialog extends $pb.GeneratedMessage {
   $core.List<WidgetExpression> get children => $_getList(2);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get backgroundColor => $_getN(3);
+  $1.DartColorExpression get backgroundColor => $_getN(3);
   @$pb.TagNumber(8)
-  set backgroundColor($1.ColorExpression v) { setField(8, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasBackgroundColor() => $_has(3);
   @$pb.TagNumber(8)
   void clearBackgroundColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(3);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(3);
 
   @$pb.TagNumber(9)
   $core.double get elevation => $_getN(4);
@@ -13859,26 +13859,26 @@ class MaterialSimpleDialog extends $pb.GeneratedMessage {
   void clearElevation() => clearField(9);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get shadowColor => $_getN(5);
+  $1.DartColorExpression get shadowColor => $_getN(5);
   @$pb.TagNumber(10)
-  set shadowColor($1.ColorExpression v) { setField(10, v); }
+  set shadowColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasShadowColor() => $_has(5);
   @$pb.TagNumber(10)
   void clearShadowColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureShadowColor() => $_ensure(5);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(5);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get surfaceTintColor => $_getN(6);
+  $1.DartColorExpression get surfaceTintColor => $_getN(6);
   @$pb.TagNumber(11)
-  set surfaceTintColor($1.ColorExpression v) { setField(11, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasSurfaceTintColor() => $_has(6);
   @$pb.TagNumber(11)
   void clearSurfaceTintColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(6);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(6);
 
   @$pb.TagNumber(12)
   $core.String get semanticLabel => $_getSZ(7);
@@ -13967,7 +13967,7 @@ class MaterialDivider extends $pb.GeneratedMessage {
     $core.double? thickness,
     $core.double? indent,
     $core.double? endIndent,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
   }) {
     final $result = create();
     if (key != null) {
@@ -14000,7 +14000,7 @@ class MaterialDivider extends $pb.GeneratedMessage {
     ..a<$core.double>(4, _omitFieldNames ? '' : 'thickness', $pb.PbFieldType.OD)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'indent', $pb.PbFieldType.OD)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'endIndent', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -14073,15 +14073,15 @@ class MaterialDivider extends $pb.GeneratedMessage {
   void clearEndIndent() => clearField(6);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get color => $_getN(5);
+  $1.DartColorExpression get color => $_getN(5);
   @$pb.TagNumber(7)
-  set color($1.ColorExpression v) { setField(7, v); }
+  set color($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasColor() => $_has(5);
   @$pb.TagNumber(7)
   void clearColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureColor() => $_ensure(5);
+  $1.DartColorExpression ensureColor() => $_ensure(5);
 }
 
 /// package:flutter/src/material/divider.dart
@@ -14092,7 +14092,7 @@ class MaterialVerticalDivider extends $pb.GeneratedMessage {
     $core.double? thickness,
     $core.double? indent,
     $core.double? endIndent,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
   }) {
     final $result = create();
     if (key != null) {
@@ -14125,7 +14125,7 @@ class MaterialVerticalDivider extends $pb.GeneratedMessage {
     ..a<$core.double>(4, _omitFieldNames ? '' : 'thickness', $pb.PbFieldType.OD)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'indent', $pb.PbFieldType.OD)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'endIndent', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -14198,25 +14198,25 @@ class MaterialVerticalDivider extends $pb.GeneratedMessage {
   void clearEndIndent() => clearField(6);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get color => $_getN(5);
+  $1.DartColorExpression get color => $_getN(5);
   @$pb.TagNumber(7)
-  set color($1.ColorExpression v) { setField(7, v); }
+  set color($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasColor() => $_has(5);
   @$pb.TagNumber(7)
   void clearColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureColor() => $_ensure(5);
+  $1.DartColorExpression ensureColor() => $_ensure(5);
 }
 
 /// package:flutter/src/material/drawer.dart
 class MaterialDrawer extends $pb.GeneratedMessage {
   factory MaterialDrawer({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
     $core.double? width,
     WidgetExpression? child,
     $core.String? semanticLabel,
@@ -14254,10 +14254,10 @@ class MaterialDrawer extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialDrawer', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OD)
     ..aOM<WidgetExpression>(9, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..aOS(10, _omitFieldNames ? '' : 'semanticLabel')
@@ -14297,15 +14297,15 @@ class MaterialDrawer extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get backgroundColor => $_getN(1);
+  $1.DartColorExpression get backgroundColor => $_getN(1);
   @$pb.TagNumber(3)
-  set backgroundColor($1.ColorExpression v) { setField(3, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBackgroundColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearBackgroundColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(1);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(1);
 
   @$pb.TagNumber(4)
   $core.double get elevation => $_getN(2);
@@ -14317,26 +14317,26 @@ class MaterialDrawer extends $pb.GeneratedMessage {
   void clearElevation() => clearField(4);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get shadowColor => $_getN(3);
+  $1.DartColorExpression get shadowColor => $_getN(3);
   @$pb.TagNumber(5)
-  set shadowColor($1.ColorExpression v) { setField(5, v); }
+  set shadowColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasShadowColor() => $_has(3);
   @$pb.TagNumber(5)
   void clearShadowColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureShadowColor() => $_ensure(3);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(3);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get surfaceTintColor => $_getN(4);
+  $1.DartColorExpression get surfaceTintColor => $_getN(4);
   @$pb.TagNumber(6)
-  set surfaceTintColor($1.ColorExpression v) { setField(6, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasSurfaceTintColor() => $_has(4);
   @$pb.TagNumber(6)
   void clearSurfaceTintColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(4);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(4);
 
   @$pb.TagNumber(8)
   $core.double get width => $_getN(5);
@@ -14372,7 +14372,7 @@ class MaterialDrawer extends $pb.GeneratedMessage {
 class MaterialDrawerHeader extends $pb.GeneratedMessage {
   factory MaterialDrawerHeader({
     $1.FlutterKeyExpression? key,
-    $1.DurationExpression? duration,
+    $1.DartDurationExpression? duration,
     WidgetExpression? child,
   }) {
     final $result = create();
@@ -14393,7 +14393,7 @@ class MaterialDrawerHeader extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialDrawerHeader', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.DurationExpression>(6, _omitFieldNames ? '' : 'duration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(6, _omitFieldNames ? '' : 'duration', subBuilder: $1.DartDurationExpression.create)
     ..aOM<WidgetExpression>(8, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..hasRequiredFields = false
   ;
@@ -14431,15 +14431,15 @@ class MaterialDrawerHeader extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(6)
-  $1.DurationExpression get duration => $_getN(1);
+  $1.DartDurationExpression get duration => $_getN(1);
   @$pb.TagNumber(6)
-  set duration($1.DurationExpression v) { setField(6, v); }
+  set duration($1.DartDurationExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDuration() => $_has(1);
   @$pb.TagNumber(6)
   void clearDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $1.DurationExpression ensureDuration() => $_ensure(1);
+  $1.DartDurationExpression ensureDuration() => $_ensure(1);
 
   @$pb.TagNumber(8)
   WidgetExpression get child => $_getN(2);
@@ -14462,15 +14462,15 @@ class MaterialDropdownButton extends $pb.GeneratedMessage {
     $core.int? elevation,
     WidgetExpression? underline,
     WidgetExpression? icon,
-    $1.ColorExpression? iconDisabledColor,
-    $1.ColorExpression? iconEnabledColor,
+    $1.DartColorExpression? iconDisabledColor,
+    $1.DartColorExpression? iconEnabledColor,
     $core.double? iconSize,
     $core.bool? isDense,
     $core.bool? isExpanded,
     $core.double? itemHeight,
-    $1.ColorExpression? focusColor,
+    $1.DartColorExpression? focusColor,
     $core.bool? autofocus,
-    $1.ColorExpression? dropdownColor,
+    $1.DartColorExpression? dropdownColor,
     $core.double? menuMaxHeight,
     $core.bool? enableFeedback,
   }) {
@@ -14539,15 +14539,15 @@ class MaterialDropdownButton extends $pb.GeneratedMessage {
     ..a<$core.int>(10, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.O3)
     ..aOM<WidgetExpression>(12, _omitFieldNames ? '' : 'underline', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(13, _omitFieldNames ? '' : 'icon', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'iconDisabledColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(15, _omitFieldNames ? '' : 'iconEnabledColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'iconDisabledColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(15, _omitFieldNames ? '' : 'iconEnabledColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(16, _omitFieldNames ? '' : 'iconSize', $pb.PbFieldType.OD)
     ..aOB(17, _omitFieldNames ? '' : 'isDense')
     ..aOB(18, _omitFieldNames ? '' : 'isExpanded')
     ..a<$core.double>(19, _omitFieldNames ? '' : 'itemHeight', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(20, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(20, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(22, _omitFieldNames ? '' : 'autofocus')
-    ..aOM<$1.ColorExpression>(23, _omitFieldNames ? '' : 'dropdownColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(23, _omitFieldNames ? '' : 'dropdownColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(24, _omitFieldNames ? '' : 'menuMaxHeight', $pb.PbFieldType.OD)
     ..aOB(25, _omitFieldNames ? '' : 'enableFeedback')
     ..hasRequiredFields = false
@@ -14639,26 +14639,26 @@ class MaterialDropdownButton extends $pb.GeneratedMessage {
   WidgetExpression ensureIcon() => $_ensure(5);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get iconDisabledColor => $_getN(6);
+  $1.DartColorExpression get iconDisabledColor => $_getN(6);
   @$pb.TagNumber(14)
-  set iconDisabledColor($1.ColorExpression v) { setField(14, v); }
+  set iconDisabledColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasIconDisabledColor() => $_has(6);
   @$pb.TagNumber(14)
   void clearIconDisabledColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureIconDisabledColor() => $_ensure(6);
+  $1.DartColorExpression ensureIconDisabledColor() => $_ensure(6);
 
   @$pb.TagNumber(15)
-  $1.ColorExpression get iconEnabledColor => $_getN(7);
+  $1.DartColorExpression get iconEnabledColor => $_getN(7);
   @$pb.TagNumber(15)
-  set iconEnabledColor($1.ColorExpression v) { setField(15, v); }
+  set iconEnabledColor($1.DartColorExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasIconEnabledColor() => $_has(7);
   @$pb.TagNumber(15)
   void clearIconEnabledColor() => clearField(15);
   @$pb.TagNumber(15)
-  $1.ColorExpression ensureIconEnabledColor() => $_ensure(7);
+  $1.DartColorExpression ensureIconEnabledColor() => $_ensure(7);
 
   @$pb.TagNumber(16)
   $core.double get iconSize => $_getN(8);
@@ -14697,15 +14697,15 @@ class MaterialDropdownButton extends $pb.GeneratedMessage {
   void clearItemHeight() => clearField(19);
 
   @$pb.TagNumber(20)
-  $1.ColorExpression get focusColor => $_getN(12);
+  $1.DartColorExpression get focusColor => $_getN(12);
   @$pb.TagNumber(20)
-  set focusColor($1.ColorExpression v) { setField(20, v); }
+  set focusColor($1.DartColorExpression v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasFocusColor() => $_has(12);
   @$pb.TagNumber(20)
   void clearFocusColor() => clearField(20);
   @$pb.TagNumber(20)
-  $1.ColorExpression ensureFocusColor() => $_ensure(12);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(12);
 
   @$pb.TagNumber(22)
   $core.bool get autofocus => $_getBF(13);
@@ -14717,15 +14717,15 @@ class MaterialDropdownButton extends $pb.GeneratedMessage {
   void clearAutofocus() => clearField(22);
 
   @$pb.TagNumber(23)
-  $1.ColorExpression get dropdownColor => $_getN(14);
+  $1.DartColorExpression get dropdownColor => $_getN(14);
   @$pb.TagNumber(23)
-  set dropdownColor($1.ColorExpression v) { setField(23, v); }
+  set dropdownColor($1.DartColorExpression v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasDropdownColor() => $_has(14);
   @$pb.TagNumber(23)
   void clearDropdownColor() => clearField(23);
   @$pb.TagNumber(23)
-  $1.ColorExpression ensureDropdownColor() => $_ensure(14);
+  $1.DartColorExpression ensureDropdownColor() => $_ensure(14);
 
   @$pb.TagNumber(24)
   $core.double get menuMaxHeight => $_getN(15);
@@ -14754,15 +14754,15 @@ class MaterialDropdownButtonFormField extends $pb.GeneratedMessage {
     WidgetExpression? disabledHint,
     $core.int? elevation,
     WidgetExpression? icon,
-    $1.ColorExpression? iconDisabledColor,
-    $1.ColorExpression? iconEnabledColor,
+    $1.DartColorExpression? iconDisabledColor,
+    $1.DartColorExpression? iconEnabledColor,
     $core.double? iconSize,
     $core.bool? isDense,
     $core.bool? isExpanded,
     $core.double? itemHeight,
-    $1.ColorExpression? focusColor,
+    $1.DartColorExpression? focusColor,
     $core.bool? autofocus,
-    $1.ColorExpression? dropdownColor,
+    $1.DartColorExpression? dropdownColor,
     $core.double? menuMaxHeight,
     $core.bool? enableFeedback,
   }) {
@@ -14827,15 +14827,15 @@ class MaterialDropdownButtonFormField extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(7, _omitFieldNames ? '' : 'disabledHint', subBuilder: WidgetExpression.create)
     ..a<$core.int>(10, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.O3)
     ..aOM<WidgetExpression>(12, _omitFieldNames ? '' : 'icon', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(13, _omitFieldNames ? '' : 'iconDisabledColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'iconEnabledColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(13, _omitFieldNames ? '' : 'iconDisabledColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'iconEnabledColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(15, _omitFieldNames ? '' : 'iconSize', $pb.PbFieldType.OD)
     ..aOB(16, _omitFieldNames ? '' : 'isDense')
     ..aOB(17, _omitFieldNames ? '' : 'isExpanded')
     ..a<$core.double>(18, _omitFieldNames ? '' : 'itemHeight', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(19, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(19, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(21, _omitFieldNames ? '' : 'autofocus')
-    ..aOM<$1.ColorExpression>(22, _omitFieldNames ? '' : 'dropdownColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(22, _omitFieldNames ? '' : 'dropdownColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(27, _omitFieldNames ? '' : 'menuMaxHeight', $pb.PbFieldType.OD)
     ..aOB(28, _omitFieldNames ? '' : 'enableFeedback')
     ..hasRequiredFields = false
@@ -14916,26 +14916,26 @@ class MaterialDropdownButtonFormField extends $pb.GeneratedMessage {
   WidgetExpression ensureIcon() => $_ensure(4);
 
   @$pb.TagNumber(13)
-  $1.ColorExpression get iconDisabledColor => $_getN(5);
+  $1.DartColorExpression get iconDisabledColor => $_getN(5);
   @$pb.TagNumber(13)
-  set iconDisabledColor($1.ColorExpression v) { setField(13, v); }
+  set iconDisabledColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasIconDisabledColor() => $_has(5);
   @$pb.TagNumber(13)
   void clearIconDisabledColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.ColorExpression ensureIconDisabledColor() => $_ensure(5);
+  $1.DartColorExpression ensureIconDisabledColor() => $_ensure(5);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get iconEnabledColor => $_getN(6);
+  $1.DartColorExpression get iconEnabledColor => $_getN(6);
   @$pb.TagNumber(14)
-  set iconEnabledColor($1.ColorExpression v) { setField(14, v); }
+  set iconEnabledColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasIconEnabledColor() => $_has(6);
   @$pb.TagNumber(14)
   void clearIconEnabledColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureIconEnabledColor() => $_ensure(6);
+  $1.DartColorExpression ensureIconEnabledColor() => $_ensure(6);
 
   @$pb.TagNumber(15)
   $core.double get iconSize => $_getN(7);
@@ -14974,15 +14974,15 @@ class MaterialDropdownButtonFormField extends $pb.GeneratedMessage {
   void clearItemHeight() => clearField(18);
 
   @$pb.TagNumber(19)
-  $1.ColorExpression get focusColor => $_getN(11);
+  $1.DartColorExpression get focusColor => $_getN(11);
   @$pb.TagNumber(19)
-  set focusColor($1.ColorExpression v) { setField(19, v); }
+  set focusColor($1.DartColorExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasFocusColor() => $_has(11);
   @$pb.TagNumber(19)
   void clearFocusColor() => clearField(19);
   @$pb.TagNumber(19)
-  $1.ColorExpression ensureFocusColor() => $_ensure(11);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(11);
 
   @$pb.TagNumber(21)
   $core.bool get autofocus => $_getBF(12);
@@ -14994,15 +14994,15 @@ class MaterialDropdownButtonFormField extends $pb.GeneratedMessage {
   void clearAutofocus() => clearField(21);
 
   @$pb.TagNumber(22)
-  $1.ColorExpression get dropdownColor => $_getN(13);
+  $1.DartColorExpression get dropdownColor => $_getN(13);
   @$pb.TagNumber(22)
-  set dropdownColor($1.ColorExpression v) { setField(22, v); }
+  set dropdownColor($1.DartColorExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasDropdownColor() => $_has(13);
   @$pb.TagNumber(22)
   void clearDropdownColor() => clearField(22);
   @$pb.TagNumber(22)
-  $1.ColorExpression ensureDropdownColor() => $_ensure(13);
+  $1.DartColorExpression ensureDropdownColor() => $_ensure(13);
 
   @$pb.TagNumber(27)
   $core.double get menuMaxHeight => $_getN(14);
@@ -15363,9 +15363,9 @@ class MaterialExpandIcon extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.bool? isExpanded,
     $core.double? size,
-    $1.ColorExpression? color,
-    $1.ColorExpression? disabledColor,
-    $1.ColorExpression? expandedColor,
+    $1.DartColorExpression? color,
+    $1.DartColorExpression? disabledColor,
+    $1.DartColorExpression? expandedColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -15396,9 +15396,9 @@ class MaterialExpandIcon extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOB(3, _omitFieldNames ? '' : 'isExpanded')
     ..a<$core.double>(4, _omitFieldNames ? '' : 'size', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'expandedColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'expandedColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -15453,47 +15453,47 @@ class MaterialExpandIcon extends $pb.GeneratedMessage {
   void clearSize() => clearField(4);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get color => $_getN(3);
+  $1.DartColorExpression get color => $_getN(3);
   @$pb.TagNumber(7)
-  set color($1.ColorExpression v) { setField(7, v); }
+  set color($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasColor() => $_has(3);
   @$pb.TagNumber(7)
   void clearColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureColor() => $_ensure(3);
+  $1.DartColorExpression ensureColor() => $_ensure(3);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get disabledColor => $_getN(4);
+  $1.DartColorExpression get disabledColor => $_getN(4);
   @$pb.TagNumber(8)
-  set disabledColor($1.ColorExpression v) { setField(8, v); }
+  set disabledColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDisabledColor() => $_has(4);
   @$pb.TagNumber(8)
   void clearDisabledColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(4);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(4);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get expandedColor => $_getN(5);
+  $1.DartColorExpression get expandedColor => $_getN(5);
   @$pb.TagNumber(9)
-  set expandedColor($1.ColorExpression v) { setField(9, v); }
+  set expandedColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasExpandedColor() => $_has(5);
   @$pb.TagNumber(9)
   void clearExpandedColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureExpandedColor() => $_ensure(5);
+  $1.DartColorExpression ensureExpandedColor() => $_ensure(5);
 }
 
 /// package:flutter/src/material/expansion_panel.dart
 class MaterialExpansionPanelList extends $pb.GeneratedMessage {
   factory MaterialExpansionPanelList({
     $1.FlutterKeyExpression? key,
-    $1.DurationExpression? animationDuration,
-    $1.ColorExpression? dividerColor,
+    $1.DartDurationExpression? animationDuration,
+    $1.DartColorExpression? dividerColor,
     $core.double? elevation,
-    $1.ColorExpression? expandIconColor,
+    $1.DartColorExpression? expandIconColor,
     $core.double? materialGapSize,
   }) {
     final $result = create();
@@ -15523,10 +15523,10 @@ class MaterialExpansionPanelList extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialExpansionPanelList', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.DurationExpression>(5, _omitFieldNames ? '' : 'animationDuration', subBuilder: $1.DurationExpression.create)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'dividerColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartDurationExpression>(5, _omitFieldNames ? '' : 'animationDuration', subBuilder: $1.DartDurationExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'dividerColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'expandIconColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'expandIconColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(10, _omitFieldNames ? '' : 'materialGapSize', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -15564,26 +15564,26 @@ class MaterialExpansionPanelList extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(5)
-  $1.DurationExpression get animationDuration => $_getN(1);
+  $1.DartDurationExpression get animationDuration => $_getN(1);
   @$pb.TagNumber(5)
-  set animationDuration($1.DurationExpression v) { setField(5, v); }
+  set animationDuration($1.DartDurationExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAnimationDuration() => $_has(1);
   @$pb.TagNumber(5)
   void clearAnimationDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1.DurationExpression ensureAnimationDuration() => $_ensure(1);
+  $1.DartDurationExpression ensureAnimationDuration() => $_ensure(1);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get dividerColor => $_getN(2);
+  $1.DartColorExpression get dividerColor => $_getN(2);
   @$pb.TagNumber(7)
-  set dividerColor($1.ColorExpression v) { setField(7, v); }
+  set dividerColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDividerColor() => $_has(2);
   @$pb.TagNumber(7)
   void clearDividerColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureDividerColor() => $_ensure(2);
+  $1.DartColorExpression ensureDividerColor() => $_ensure(2);
 
   @$pb.TagNumber(8)
   $core.double get elevation => $_getN(3);
@@ -15595,15 +15595,15 @@ class MaterialExpansionPanelList extends $pb.GeneratedMessage {
   void clearElevation() => clearField(8);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get expandIconColor => $_getN(4);
+  $1.DartColorExpression get expandIconColor => $_getN(4);
   @$pb.TagNumber(9)
-  set expandIconColor($1.ColorExpression v) { setField(9, v); }
+  set expandIconColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasExpandIconColor() => $_has(4);
   @$pb.TagNumber(9)
   void clearExpandIconColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureExpandIconColor() => $_ensure(4);
+  $1.DartColorExpression ensureExpandIconColor() => $_ensure(4);
 
   @$pb.TagNumber(10)
   $core.double get materialGapSize => $_getN(5);
@@ -15619,10 +15619,10 @@ class MaterialExpansionPanelList extends $pb.GeneratedMessage {
 class MaterialExpansionPanelListNamedRadio extends $pb.GeneratedMessage {
   factory MaterialExpansionPanelListNamedRadio({
     $1.FlutterKeyExpression? key,
-    $1.DurationExpression? animationDuration,
-    $1.ColorExpression? dividerColor,
+    $1.DartDurationExpression? animationDuration,
+    $1.DartColorExpression? dividerColor,
     $core.double? elevation,
-    $1.ColorExpression? expandIconColor,
+    $1.DartColorExpression? expandIconColor,
     $core.double? materialGapSize,
   }) {
     final $result = create();
@@ -15652,10 +15652,10 @@ class MaterialExpansionPanelListNamedRadio extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialExpansionPanelListNamedRadio', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.DurationExpression>(5, _omitFieldNames ? '' : 'animationDuration', subBuilder: $1.DurationExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'dividerColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartDurationExpression>(5, _omitFieldNames ? '' : 'animationDuration', subBuilder: $1.DartDurationExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'dividerColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(9, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'expandIconColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'expandIconColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'materialGapSize', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -15693,26 +15693,26 @@ class MaterialExpansionPanelListNamedRadio extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(5)
-  $1.DurationExpression get animationDuration => $_getN(1);
+  $1.DartDurationExpression get animationDuration => $_getN(1);
   @$pb.TagNumber(5)
-  set animationDuration($1.DurationExpression v) { setField(5, v); }
+  set animationDuration($1.DartDurationExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasAnimationDuration() => $_has(1);
   @$pb.TagNumber(5)
   void clearAnimationDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1.DurationExpression ensureAnimationDuration() => $_ensure(1);
+  $1.DartDurationExpression ensureAnimationDuration() => $_ensure(1);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get dividerColor => $_getN(2);
+  $1.DartColorExpression get dividerColor => $_getN(2);
   @$pb.TagNumber(8)
-  set dividerColor($1.ColorExpression v) { setField(8, v); }
+  set dividerColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDividerColor() => $_has(2);
   @$pb.TagNumber(8)
   void clearDividerColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureDividerColor() => $_ensure(2);
+  $1.DartColorExpression ensureDividerColor() => $_ensure(2);
 
   @$pb.TagNumber(9)
   $core.double get elevation => $_getN(3);
@@ -15724,15 +15724,15 @@ class MaterialExpansionPanelListNamedRadio extends $pb.GeneratedMessage {
   void clearElevation() => clearField(9);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get expandIconColor => $_getN(4);
+  $1.DartColorExpression get expandIconColor => $_getN(4);
   @$pb.TagNumber(10)
-  set expandIconColor($1.ColorExpression v) { setField(10, v); }
+  set expandIconColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasExpandIconColor() => $_has(4);
   @$pb.TagNumber(10)
   void clearExpandIconColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureExpandIconColor() => $_ensure(4);
+  $1.DartColorExpression ensureExpandIconColor() => $_ensure(4);
 
   @$pb.TagNumber(11)
   $core.double get materialGapSize => $_getN(5);
@@ -15755,12 +15755,12 @@ class MaterialExpansionTile extends $pb.GeneratedMessage {
     WidgetExpression? trailing,
     $core.bool? initiallyExpanded,
     $core.bool? maintainState,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? collapsedBackgroundColor,
-    $1.ColorExpression? textColor,
-    $1.ColorExpression? collapsedTextColor,
-    $1.ColorExpression? iconColor,
-    $1.ColorExpression? collapsedIconColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? collapsedBackgroundColor,
+    $1.DartColorExpression? textColor,
+    $1.DartColorExpression? collapsedTextColor,
+    $1.DartColorExpression? iconColor,
+    $1.DartColorExpression? collapsedIconColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -15820,12 +15820,12 @@ class MaterialExpansionTile extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(8, _omitFieldNames ? '' : 'trailing', subBuilder: WidgetExpression.create)
     ..aOB(9, _omitFieldNames ? '' : 'initiallyExpanded')
     ..aOB(10, _omitFieldNames ? '' : 'maintainState')
-    ..aOM<$1.ColorExpression>(15, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(16, _omitFieldNames ? '' : 'collapsedBackgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(17, _omitFieldNames ? '' : 'textColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(18, _omitFieldNames ? '' : 'collapsedTextColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(19, _omitFieldNames ? '' : 'iconColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(20, _omitFieldNames ? '' : 'collapsedIconColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(15, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(16, _omitFieldNames ? '' : 'collapsedBackgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(17, _omitFieldNames ? '' : 'textColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(18, _omitFieldNames ? '' : 'collapsedTextColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(19, _omitFieldNames ? '' : 'iconColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(20, _omitFieldNames ? '' : 'collapsedIconColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -15927,70 +15927,70 @@ class MaterialExpansionTile extends $pb.GeneratedMessage {
   void clearMaintainState() => clearField(10);
 
   @$pb.TagNumber(15)
-  $1.ColorExpression get backgroundColor => $_getN(8);
+  $1.DartColorExpression get backgroundColor => $_getN(8);
   @$pb.TagNumber(15)
-  set backgroundColor($1.ColorExpression v) { setField(15, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasBackgroundColor() => $_has(8);
   @$pb.TagNumber(15)
   void clearBackgroundColor() => clearField(15);
   @$pb.TagNumber(15)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(8);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(8);
 
   @$pb.TagNumber(16)
-  $1.ColorExpression get collapsedBackgroundColor => $_getN(9);
+  $1.DartColorExpression get collapsedBackgroundColor => $_getN(9);
   @$pb.TagNumber(16)
-  set collapsedBackgroundColor($1.ColorExpression v) { setField(16, v); }
+  set collapsedBackgroundColor($1.DartColorExpression v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasCollapsedBackgroundColor() => $_has(9);
   @$pb.TagNumber(16)
   void clearCollapsedBackgroundColor() => clearField(16);
   @$pb.TagNumber(16)
-  $1.ColorExpression ensureCollapsedBackgroundColor() => $_ensure(9);
+  $1.DartColorExpression ensureCollapsedBackgroundColor() => $_ensure(9);
 
   @$pb.TagNumber(17)
-  $1.ColorExpression get textColor => $_getN(10);
+  $1.DartColorExpression get textColor => $_getN(10);
   @$pb.TagNumber(17)
-  set textColor($1.ColorExpression v) { setField(17, v); }
+  set textColor($1.DartColorExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasTextColor() => $_has(10);
   @$pb.TagNumber(17)
   void clearTextColor() => clearField(17);
   @$pb.TagNumber(17)
-  $1.ColorExpression ensureTextColor() => $_ensure(10);
+  $1.DartColorExpression ensureTextColor() => $_ensure(10);
 
   @$pb.TagNumber(18)
-  $1.ColorExpression get collapsedTextColor => $_getN(11);
+  $1.DartColorExpression get collapsedTextColor => $_getN(11);
   @$pb.TagNumber(18)
-  set collapsedTextColor($1.ColorExpression v) { setField(18, v); }
+  set collapsedTextColor($1.DartColorExpression v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasCollapsedTextColor() => $_has(11);
   @$pb.TagNumber(18)
   void clearCollapsedTextColor() => clearField(18);
   @$pb.TagNumber(18)
-  $1.ColorExpression ensureCollapsedTextColor() => $_ensure(11);
+  $1.DartColorExpression ensureCollapsedTextColor() => $_ensure(11);
 
   @$pb.TagNumber(19)
-  $1.ColorExpression get iconColor => $_getN(12);
+  $1.DartColorExpression get iconColor => $_getN(12);
   @$pb.TagNumber(19)
-  set iconColor($1.ColorExpression v) { setField(19, v); }
+  set iconColor($1.DartColorExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasIconColor() => $_has(12);
   @$pb.TagNumber(19)
   void clearIconColor() => clearField(19);
   @$pb.TagNumber(19)
-  $1.ColorExpression ensureIconColor() => $_ensure(12);
+  $1.DartColorExpression ensureIconColor() => $_ensure(12);
 
   @$pb.TagNumber(20)
-  $1.ColorExpression get collapsedIconColor => $_getN(13);
+  $1.DartColorExpression get collapsedIconColor => $_getN(13);
   @$pb.TagNumber(20)
-  set collapsedIconColor($1.ColorExpression v) { setField(20, v); }
+  set collapsedIconColor($1.DartColorExpression v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasCollapsedIconColor() => $_has(13);
   @$pb.TagNumber(20)
   void clearCollapsedIconColor() => clearField(20);
   @$pb.TagNumber(20)
-  $1.ColorExpression ensureCollapsedIconColor() => $_ensure(13);
+  $1.DartColorExpression ensureCollapsedIconColor() => $_ensure(13);
 }
 
 /// package:flutter/src/material/filled_button.dart
@@ -16365,17 +16365,17 @@ class MaterialFilterChip extends $pb.GeneratedMessage {
     WidgetExpression? label,
     $core.bool? selected,
     $core.double? pressElevation,
-    $1.ColorExpression? disabledColor,
-    $1.ColorExpression? selectedColor,
+    $1.DartColorExpression? disabledColor,
+    $1.DartColorExpression? selectedColor,
     $core.String? tooltip,
     $core.bool? autofocus,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
-    $1.ColorExpression? selectedShadowColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
+    $1.DartColorExpression? selectedShadowColor,
     $core.bool? showCheckmark,
-    $1.ColorExpression? checkmarkColor,
+    $1.DartColorExpression? checkmarkColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -16438,17 +16438,17 @@ class MaterialFilterChip extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
     ..aOB(7, _omitFieldNames ? '' : 'selected')
     ..a<$core.double>(9, _omitFieldNames ? '' : 'pressElevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.DartColorExpression.create)
     ..aOS(12, _omitFieldNames ? '' : 'tooltip')
     ..aOB(17, _omitFieldNames ? '' : 'autofocus')
-    ..aOM<$1.ColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(23, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(24, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(25, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(27, _omitFieldNames ? '' : 'selectedShadowColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(24, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(25, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(27, _omitFieldNames ? '' : 'selectedShadowColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(28, _omitFieldNames ? '' : 'showCheckmark')
-    ..aOM<$1.ColorExpression>(29, _omitFieldNames ? '' : 'checkmarkColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(29, _omitFieldNames ? '' : 'checkmarkColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -16525,26 +16525,26 @@ class MaterialFilterChip extends $pb.GeneratedMessage {
   void clearPressElevation() => clearField(9);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get disabledColor => $_getN(5);
+  $1.DartColorExpression get disabledColor => $_getN(5);
   @$pb.TagNumber(10)
-  set disabledColor($1.ColorExpression v) { setField(10, v); }
+  set disabledColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasDisabledColor() => $_has(5);
   @$pb.TagNumber(10)
   void clearDisabledColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(5);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(5);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get selectedColor => $_getN(6);
+  $1.DartColorExpression get selectedColor => $_getN(6);
   @$pb.TagNumber(11)
-  set selectedColor($1.ColorExpression v) { setField(11, v); }
+  set selectedColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasSelectedColor() => $_has(6);
   @$pb.TagNumber(11)
   void clearSelectedColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureSelectedColor() => $_ensure(6);
+  $1.DartColorExpression ensureSelectedColor() => $_ensure(6);
 
   @$pb.TagNumber(12)
   $core.String get tooltip => $_getSZ(7);
@@ -16565,15 +16565,15 @@ class MaterialFilterChip extends $pb.GeneratedMessage {
   void clearAutofocus() => clearField(17);
 
   @$pb.TagNumber(19)
-  $1.ColorExpression get backgroundColor => $_getN(9);
+  $1.DartColorExpression get backgroundColor => $_getN(9);
   @$pb.TagNumber(19)
-  set backgroundColor($1.ColorExpression v) { setField(19, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasBackgroundColor() => $_has(9);
   @$pb.TagNumber(19)
   void clearBackgroundColor() => clearField(19);
   @$pb.TagNumber(19)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(9);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(9);
 
   @$pb.TagNumber(23)
   $core.double get elevation => $_getN(10);
@@ -16585,37 +16585,37 @@ class MaterialFilterChip extends $pb.GeneratedMessage {
   void clearElevation() => clearField(23);
 
   @$pb.TagNumber(24)
-  $1.ColorExpression get shadowColor => $_getN(11);
+  $1.DartColorExpression get shadowColor => $_getN(11);
   @$pb.TagNumber(24)
-  set shadowColor($1.ColorExpression v) { setField(24, v); }
+  set shadowColor($1.DartColorExpression v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasShadowColor() => $_has(11);
   @$pb.TagNumber(24)
   void clearShadowColor() => clearField(24);
   @$pb.TagNumber(24)
-  $1.ColorExpression ensureShadowColor() => $_ensure(11);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(11);
 
   @$pb.TagNumber(25)
-  $1.ColorExpression get surfaceTintColor => $_getN(12);
+  $1.DartColorExpression get surfaceTintColor => $_getN(12);
   @$pb.TagNumber(25)
-  set surfaceTintColor($1.ColorExpression v) { setField(25, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasSurfaceTintColor() => $_has(12);
   @$pb.TagNumber(25)
   void clearSurfaceTintColor() => clearField(25);
   @$pb.TagNumber(25)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(12);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(12);
 
   @$pb.TagNumber(27)
-  $1.ColorExpression get selectedShadowColor => $_getN(13);
+  $1.DartColorExpression get selectedShadowColor => $_getN(13);
   @$pb.TagNumber(27)
-  set selectedShadowColor($1.ColorExpression v) { setField(27, v); }
+  set selectedShadowColor($1.DartColorExpression v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasSelectedShadowColor() => $_has(13);
   @$pb.TagNumber(27)
   void clearSelectedShadowColor() => clearField(27);
   @$pb.TagNumber(27)
-  $1.ColorExpression ensureSelectedShadowColor() => $_ensure(13);
+  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(13);
 
   @$pb.TagNumber(28)
   $core.bool get showCheckmark => $_getBF(14);
@@ -16627,15 +16627,15 @@ class MaterialFilterChip extends $pb.GeneratedMessage {
   void clearShowCheckmark() => clearField(28);
 
   @$pb.TagNumber(29)
-  $1.ColorExpression get checkmarkColor => $_getN(15);
+  $1.DartColorExpression get checkmarkColor => $_getN(15);
   @$pb.TagNumber(29)
-  set checkmarkColor($1.ColorExpression v) { setField(29, v); }
+  set checkmarkColor($1.DartColorExpression v) { setField(29, v); }
   @$pb.TagNumber(29)
   $core.bool hasCheckmarkColor() => $_has(15);
   @$pb.TagNumber(29)
   void clearCheckmarkColor() => clearField(29);
   @$pb.TagNumber(29)
-  $1.ColorExpression ensureCheckmarkColor() => $_ensure(15);
+  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(15);
 }
 
 /// package:flutter/src/material/filter_chip.dart
@@ -16646,17 +16646,17 @@ class MaterialFilterChipNamedElevated extends $pb.GeneratedMessage {
     WidgetExpression? label,
     $core.bool? selected,
     $core.double? pressElevation,
-    $1.ColorExpression? disabledColor,
-    $1.ColorExpression? selectedColor,
+    $1.DartColorExpression? disabledColor,
+    $1.DartColorExpression? selectedColor,
     $core.String? tooltip,
     $core.bool? autofocus,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
-    $1.ColorExpression? selectedShadowColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
+    $1.DartColorExpression? selectedShadowColor,
     $core.bool? showCheckmark,
-    $1.ColorExpression? checkmarkColor,
+    $1.DartColorExpression? checkmarkColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -16719,17 +16719,17 @@ class MaterialFilterChipNamedElevated extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
     ..aOB(7, _omitFieldNames ? '' : 'selected')
     ..a<$core.double>(9, _omitFieldNames ? '' : 'pressElevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.DartColorExpression.create)
     ..aOS(12, _omitFieldNames ? '' : 'tooltip')
     ..aOB(17, _omitFieldNames ? '' : 'autofocus')
-    ..aOM<$1.ColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(23, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(24, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(25, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(27, _omitFieldNames ? '' : 'selectedShadowColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(24, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(25, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(27, _omitFieldNames ? '' : 'selectedShadowColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(28, _omitFieldNames ? '' : 'showCheckmark')
-    ..aOM<$1.ColorExpression>(29, _omitFieldNames ? '' : 'checkmarkColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(29, _omitFieldNames ? '' : 'checkmarkColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -16806,26 +16806,26 @@ class MaterialFilterChipNamedElevated extends $pb.GeneratedMessage {
   void clearPressElevation() => clearField(9);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get disabledColor => $_getN(5);
+  $1.DartColorExpression get disabledColor => $_getN(5);
   @$pb.TagNumber(10)
-  set disabledColor($1.ColorExpression v) { setField(10, v); }
+  set disabledColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasDisabledColor() => $_has(5);
   @$pb.TagNumber(10)
   void clearDisabledColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(5);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(5);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get selectedColor => $_getN(6);
+  $1.DartColorExpression get selectedColor => $_getN(6);
   @$pb.TagNumber(11)
-  set selectedColor($1.ColorExpression v) { setField(11, v); }
+  set selectedColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasSelectedColor() => $_has(6);
   @$pb.TagNumber(11)
   void clearSelectedColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureSelectedColor() => $_ensure(6);
+  $1.DartColorExpression ensureSelectedColor() => $_ensure(6);
 
   @$pb.TagNumber(12)
   $core.String get tooltip => $_getSZ(7);
@@ -16846,15 +16846,15 @@ class MaterialFilterChipNamedElevated extends $pb.GeneratedMessage {
   void clearAutofocus() => clearField(17);
 
   @$pb.TagNumber(19)
-  $1.ColorExpression get backgroundColor => $_getN(9);
+  $1.DartColorExpression get backgroundColor => $_getN(9);
   @$pb.TagNumber(19)
-  set backgroundColor($1.ColorExpression v) { setField(19, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasBackgroundColor() => $_has(9);
   @$pb.TagNumber(19)
   void clearBackgroundColor() => clearField(19);
   @$pb.TagNumber(19)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(9);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(9);
 
   @$pb.TagNumber(23)
   $core.double get elevation => $_getN(10);
@@ -16866,37 +16866,37 @@ class MaterialFilterChipNamedElevated extends $pb.GeneratedMessage {
   void clearElevation() => clearField(23);
 
   @$pb.TagNumber(24)
-  $1.ColorExpression get shadowColor => $_getN(11);
+  $1.DartColorExpression get shadowColor => $_getN(11);
   @$pb.TagNumber(24)
-  set shadowColor($1.ColorExpression v) { setField(24, v); }
+  set shadowColor($1.DartColorExpression v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasShadowColor() => $_has(11);
   @$pb.TagNumber(24)
   void clearShadowColor() => clearField(24);
   @$pb.TagNumber(24)
-  $1.ColorExpression ensureShadowColor() => $_ensure(11);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(11);
 
   @$pb.TagNumber(25)
-  $1.ColorExpression get surfaceTintColor => $_getN(12);
+  $1.DartColorExpression get surfaceTintColor => $_getN(12);
   @$pb.TagNumber(25)
-  set surfaceTintColor($1.ColorExpression v) { setField(25, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasSurfaceTintColor() => $_has(12);
   @$pb.TagNumber(25)
   void clearSurfaceTintColor() => clearField(25);
   @$pb.TagNumber(25)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(12);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(12);
 
   @$pb.TagNumber(27)
-  $1.ColorExpression get selectedShadowColor => $_getN(13);
+  $1.DartColorExpression get selectedShadowColor => $_getN(13);
   @$pb.TagNumber(27)
-  set selectedShadowColor($1.ColorExpression v) { setField(27, v); }
+  set selectedShadowColor($1.DartColorExpression v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasSelectedShadowColor() => $_has(13);
   @$pb.TagNumber(27)
   void clearSelectedShadowColor() => clearField(27);
   @$pb.TagNumber(27)
-  $1.ColorExpression ensureSelectedShadowColor() => $_ensure(13);
+  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(13);
 
   @$pb.TagNumber(28)
   $core.bool get showCheckmark => $_getBF(14);
@@ -16908,15 +16908,15 @@ class MaterialFilterChipNamedElevated extends $pb.GeneratedMessage {
   void clearShowCheckmark() => clearField(28);
 
   @$pb.TagNumber(29)
-  $1.ColorExpression get checkmarkColor => $_getN(15);
+  $1.DartColorExpression get checkmarkColor => $_getN(15);
   @$pb.TagNumber(29)
-  set checkmarkColor($1.ColorExpression v) { setField(29, v); }
+  set checkmarkColor($1.DartColorExpression v) { setField(29, v); }
   @$pb.TagNumber(29)
   $core.bool hasCheckmarkColor() => $_has(15);
   @$pb.TagNumber(29)
   void clearCheckmarkColor() => clearField(29);
   @$pb.TagNumber(29)
-  $1.ColorExpression ensureCheckmarkColor() => $_ensure(15);
+  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(15);
 }
 
 /// package:flutter/src/material/flexible_space_bar.dart
@@ -17177,11 +17177,11 @@ class MaterialFloatingActionButton extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? child,
     $core.String? tooltip,
-    $1.ColorExpression? foregroundColor,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
-    $1.ColorExpression? splashColor,
+    $1.DartColorExpression? foregroundColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
+    $1.DartColorExpression? splashColor,
     $core.double? elevation,
     $core.double? focusElevation,
     $core.double? hoverElevation,
@@ -17254,11 +17254,11 @@ class MaterialFloatingActionButton extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..aOS(4, _omitFieldNames ? '' : 'tooltip')
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'focusElevation', $pb.PbFieldType.OD)
     ..a<$core.double>(13, _omitFieldNames ? '' : 'hoverElevation', $pb.PbFieldType.OD)
@@ -17324,59 +17324,59 @@ class MaterialFloatingActionButton extends $pb.GeneratedMessage {
   void clearTooltip() => clearField(4);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get foregroundColor => $_getN(3);
+  $1.DartColorExpression get foregroundColor => $_getN(3);
   @$pb.TagNumber(5)
-  set foregroundColor($1.ColorExpression v) { setField(5, v); }
+  set foregroundColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasForegroundColor() => $_has(3);
   @$pb.TagNumber(5)
   void clearForegroundColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureForegroundColor() => $_ensure(3);
+  $1.DartColorExpression ensureForegroundColor() => $_ensure(3);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get backgroundColor => $_getN(4);
+  $1.DartColorExpression get backgroundColor => $_getN(4);
   @$pb.TagNumber(6)
-  set backgroundColor($1.ColorExpression v) { setField(6, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasBackgroundColor() => $_has(4);
   @$pb.TagNumber(6)
   void clearBackgroundColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(4);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(4);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get focusColor => $_getN(5);
+  $1.DartColorExpression get focusColor => $_getN(5);
   @$pb.TagNumber(7)
-  set focusColor($1.ColorExpression v) { setField(7, v); }
+  set focusColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasFocusColor() => $_has(5);
   @$pb.TagNumber(7)
   void clearFocusColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureFocusColor() => $_ensure(5);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(5);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get hoverColor => $_getN(6);
+  $1.DartColorExpression get hoverColor => $_getN(6);
   @$pb.TagNumber(8)
-  set hoverColor($1.ColorExpression v) { setField(8, v); }
+  set hoverColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasHoverColor() => $_has(6);
   @$pb.TagNumber(8)
   void clearHoverColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureHoverColor() => $_ensure(6);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(6);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get splashColor => $_getN(7);
+  $1.DartColorExpression get splashColor => $_getN(7);
   @$pb.TagNumber(9)
-  set splashColor($1.ColorExpression v) { setField(9, v); }
+  set splashColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasSplashColor() => $_has(7);
   @$pb.TagNumber(9)
   void clearSplashColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureSplashColor() => $_ensure(7);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(7);
 
   @$pb.TagNumber(11)
   $core.double get elevation => $_getN(8);
@@ -17466,11 +17466,11 @@ class MaterialFloatingActionButtonNamedSmall extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? child,
     $core.String? tooltip,
-    $1.ColorExpression? foregroundColor,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
-    $1.ColorExpression? splashColor,
+    $1.DartColorExpression? foregroundColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
+    $1.DartColorExpression? splashColor,
     $core.double? elevation,
     $core.double? focusElevation,
     $core.double? hoverElevation,
@@ -17535,11 +17535,11 @@ class MaterialFloatingActionButtonNamedSmall extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..aOS(4, _omitFieldNames ? '' : 'tooltip')
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'focusElevation', $pb.PbFieldType.OD)
     ..a<$core.double>(13, _omitFieldNames ? '' : 'hoverElevation', $pb.PbFieldType.OD)
@@ -17603,59 +17603,59 @@ class MaterialFloatingActionButtonNamedSmall extends $pb.GeneratedMessage {
   void clearTooltip() => clearField(4);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get foregroundColor => $_getN(3);
+  $1.DartColorExpression get foregroundColor => $_getN(3);
   @$pb.TagNumber(5)
-  set foregroundColor($1.ColorExpression v) { setField(5, v); }
+  set foregroundColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasForegroundColor() => $_has(3);
   @$pb.TagNumber(5)
   void clearForegroundColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureForegroundColor() => $_ensure(3);
+  $1.DartColorExpression ensureForegroundColor() => $_ensure(3);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get backgroundColor => $_getN(4);
+  $1.DartColorExpression get backgroundColor => $_getN(4);
   @$pb.TagNumber(6)
-  set backgroundColor($1.ColorExpression v) { setField(6, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasBackgroundColor() => $_has(4);
   @$pb.TagNumber(6)
   void clearBackgroundColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(4);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(4);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get focusColor => $_getN(5);
+  $1.DartColorExpression get focusColor => $_getN(5);
   @$pb.TagNumber(7)
-  set focusColor($1.ColorExpression v) { setField(7, v); }
+  set focusColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasFocusColor() => $_has(5);
   @$pb.TagNumber(7)
   void clearFocusColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureFocusColor() => $_ensure(5);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(5);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get hoverColor => $_getN(6);
+  $1.DartColorExpression get hoverColor => $_getN(6);
   @$pb.TagNumber(8)
-  set hoverColor($1.ColorExpression v) { setField(8, v); }
+  set hoverColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasHoverColor() => $_has(6);
   @$pb.TagNumber(8)
   void clearHoverColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureHoverColor() => $_ensure(6);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(6);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get splashColor => $_getN(7);
+  $1.DartColorExpression get splashColor => $_getN(7);
   @$pb.TagNumber(9)
-  set splashColor($1.ColorExpression v) { setField(9, v); }
+  set splashColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasSplashColor() => $_has(7);
   @$pb.TagNumber(9)
   void clearSplashColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureSplashColor() => $_ensure(7);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(7);
 
   @$pb.TagNumber(11)
   $core.double get elevation => $_getN(8);
@@ -17727,11 +17727,11 @@ class MaterialFloatingActionButtonNamedLarge extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? child,
     $core.String? tooltip,
-    $1.ColorExpression? foregroundColor,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
-    $1.ColorExpression? splashColor,
+    $1.DartColorExpression? foregroundColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
+    $1.DartColorExpression? splashColor,
     $core.double? elevation,
     $core.double? focusElevation,
     $core.double? hoverElevation,
@@ -17796,11 +17796,11 @@ class MaterialFloatingActionButtonNamedLarge extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..aOS(4, _omitFieldNames ? '' : 'tooltip')
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'focusElevation', $pb.PbFieldType.OD)
     ..a<$core.double>(13, _omitFieldNames ? '' : 'hoverElevation', $pb.PbFieldType.OD)
@@ -17864,59 +17864,59 @@ class MaterialFloatingActionButtonNamedLarge extends $pb.GeneratedMessage {
   void clearTooltip() => clearField(4);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get foregroundColor => $_getN(3);
+  $1.DartColorExpression get foregroundColor => $_getN(3);
   @$pb.TagNumber(5)
-  set foregroundColor($1.ColorExpression v) { setField(5, v); }
+  set foregroundColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasForegroundColor() => $_has(3);
   @$pb.TagNumber(5)
   void clearForegroundColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureForegroundColor() => $_ensure(3);
+  $1.DartColorExpression ensureForegroundColor() => $_ensure(3);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get backgroundColor => $_getN(4);
+  $1.DartColorExpression get backgroundColor => $_getN(4);
   @$pb.TagNumber(6)
-  set backgroundColor($1.ColorExpression v) { setField(6, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasBackgroundColor() => $_has(4);
   @$pb.TagNumber(6)
   void clearBackgroundColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(4);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(4);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get focusColor => $_getN(5);
+  $1.DartColorExpression get focusColor => $_getN(5);
   @$pb.TagNumber(7)
-  set focusColor($1.ColorExpression v) { setField(7, v); }
+  set focusColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasFocusColor() => $_has(5);
   @$pb.TagNumber(7)
   void clearFocusColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureFocusColor() => $_ensure(5);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(5);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get hoverColor => $_getN(6);
+  $1.DartColorExpression get hoverColor => $_getN(6);
   @$pb.TagNumber(8)
-  set hoverColor($1.ColorExpression v) { setField(8, v); }
+  set hoverColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasHoverColor() => $_has(6);
   @$pb.TagNumber(8)
   void clearHoverColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureHoverColor() => $_ensure(6);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(6);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get splashColor => $_getN(7);
+  $1.DartColorExpression get splashColor => $_getN(7);
   @$pb.TagNumber(9)
-  set splashColor($1.ColorExpression v) { setField(9, v); }
+  set splashColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasSplashColor() => $_has(7);
   @$pb.TagNumber(9)
   void clearSplashColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureSplashColor() => $_ensure(7);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(7);
 
   @$pb.TagNumber(11)
   $core.double get elevation => $_getN(8);
@@ -17987,14 +17987,14 @@ class MaterialFloatingActionButtonNamedExtended extends $pb.GeneratedMessage {
   factory MaterialFloatingActionButtonNamedExtended({
     $1.FlutterKeyExpression? key,
     $core.String? tooltip,
-    $1.ColorExpression? foregroundColor,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
+    $1.DartColorExpression? foregroundColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
     $core.double? elevation,
     $core.double? focusElevation,
     $core.double? hoverElevation,
-    $1.ColorExpression? splashColor,
+    $1.DartColorExpression? splashColor,
     $core.double? highlightElevation,
     $core.double? disabledElevation,
     $core.bool? isExtended,
@@ -18068,14 +18068,14 @@ class MaterialFloatingActionButtonNamedExtended extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialFloatingActionButtonNamedExtended', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOS(3, _omitFieldNames ? '' : 'tooltip')
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'foregroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(9, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..a<$core.double>(10, _omitFieldNames ? '' : 'focusElevation', $pb.PbFieldType.OD)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'hoverElevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(13, _omitFieldNames ? '' : 'highlightElevation', $pb.PbFieldType.OD)
     ..a<$core.double>(14, _omitFieldNames ? '' : 'disabledElevation', $pb.PbFieldType.OD)
     ..aOB(18, _omitFieldNames ? '' : 'isExtended')
@@ -18129,48 +18129,48 @@ class MaterialFloatingActionButtonNamedExtended extends $pb.GeneratedMessage {
   void clearTooltip() => clearField(3);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get foregroundColor => $_getN(2);
+  $1.DartColorExpression get foregroundColor => $_getN(2);
   @$pb.TagNumber(4)
-  set foregroundColor($1.ColorExpression v) { setField(4, v); }
+  set foregroundColor($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasForegroundColor() => $_has(2);
   @$pb.TagNumber(4)
   void clearForegroundColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureForegroundColor() => $_ensure(2);
+  $1.DartColorExpression ensureForegroundColor() => $_ensure(2);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get backgroundColor => $_getN(3);
+  $1.DartColorExpression get backgroundColor => $_getN(3);
   @$pb.TagNumber(5)
-  set backgroundColor($1.ColorExpression v) { setField(5, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasBackgroundColor() => $_has(3);
   @$pb.TagNumber(5)
   void clearBackgroundColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(3);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(3);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get focusColor => $_getN(4);
+  $1.DartColorExpression get focusColor => $_getN(4);
   @$pb.TagNumber(6)
-  set focusColor($1.ColorExpression v) { setField(6, v); }
+  set focusColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasFocusColor() => $_has(4);
   @$pb.TagNumber(6)
   void clearFocusColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureFocusColor() => $_ensure(4);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(4);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get hoverColor => $_getN(5);
+  $1.DartColorExpression get hoverColor => $_getN(5);
   @$pb.TagNumber(7)
-  set hoverColor($1.ColorExpression v) { setField(7, v); }
+  set hoverColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasHoverColor() => $_has(5);
   @$pb.TagNumber(7)
   void clearHoverColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureHoverColor() => $_ensure(5);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(5);
 
   @$pb.TagNumber(9)
   $core.double get elevation => $_getN(6);
@@ -18200,15 +18200,15 @@ class MaterialFloatingActionButtonNamedExtended extends $pb.GeneratedMessage {
   void clearHoverElevation() => clearField(11);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get splashColor => $_getN(9);
+  $1.DartColorExpression get splashColor => $_getN(9);
   @$pb.TagNumber(12)
-  set splashColor($1.ColorExpression v) { setField(12, v); }
+  set splashColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasSplashColor() => $_has(9);
   @$pb.TagNumber(12)
   void clearSplashColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureSplashColor() => $_ensure(9);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(9);
 
   @$pb.TagNumber(13)
   $core.double get highlightElevation => $_getN(10);
@@ -18292,8 +18292,8 @@ class MaterialFlutterLogo extends $pb.GeneratedMessage {
   factory MaterialFlutterLogo({
     $1.FlutterKeyExpression? key,
     $core.double? size,
-    $1.ColorExpression? textColor,
-    $1.DurationExpression? duration,
+    $1.DartColorExpression? textColor,
+    $1.DartDurationExpression? duration,
   }) {
     final $result = create();
     if (key != null) {
@@ -18317,8 +18317,8 @@ class MaterialFlutterLogo extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialFlutterLogo', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'size', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'textColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.DurationExpression>(6, _omitFieldNames ? '' : 'duration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'textColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartDurationExpression>(6, _omitFieldNames ? '' : 'duration', subBuilder: $1.DartDurationExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -18364,26 +18364,26 @@ class MaterialFlutterLogo extends $pb.GeneratedMessage {
   void clearSize() => clearField(3);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get textColor => $_getN(2);
+  $1.DartColorExpression get textColor => $_getN(2);
   @$pb.TagNumber(4)
-  set textColor($1.ColorExpression v) { setField(4, v); }
+  set textColor($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasTextColor() => $_has(2);
   @$pb.TagNumber(4)
   void clearTextColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureTextColor() => $_ensure(2);
+  $1.DartColorExpression ensureTextColor() => $_ensure(2);
 
   @$pb.TagNumber(6)
-  $1.DurationExpression get duration => $_getN(3);
+  $1.DartDurationExpression get duration => $_getN(3);
   @$pb.TagNumber(6)
-  set duration($1.DurationExpression v) { setField(6, v); }
+  set duration($1.DartDurationExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDuration() => $_has(3);
   @$pb.TagNumber(6)
   void clearDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $1.DurationExpression ensureDuration() => $_ensure(3);
+  $1.DartDurationExpression ensureDuration() => $_ensure(3);
 }
 
 /// package:flutter/src/material/grid_tile.dart
@@ -18491,7 +18491,7 @@ class MaterialGridTile extends $pb.GeneratedMessage {
 class MaterialGridTileBar extends $pb.GeneratedMessage {
   factory MaterialGridTileBar({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     WidgetExpression? leading,
     WidgetExpression? title,
     WidgetExpression? subtitle,
@@ -18524,7 +18524,7 @@ class MaterialGridTileBar extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialGridTileBar', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'leading', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'title', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(6, _omitFieldNames ? '' : 'subtitle', subBuilder: WidgetExpression.create)
@@ -18565,15 +18565,15 @@ class MaterialGridTileBar extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get backgroundColor => $_getN(1);
+  $1.DartColorExpression get backgroundColor => $_getN(1);
   @$pb.TagNumber(3)
-  set backgroundColor($1.ColorExpression v) { setField(3, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBackgroundColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearBackgroundColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(1);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(1);
 
   @$pb.TagNumber(4)
   WidgetExpression get leading => $_getN(2);
@@ -18626,12 +18626,12 @@ class MaterialIconButton extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.double? iconSize,
     $core.double? splashRadius,
-    $1.ColorExpression? color,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
-    $1.ColorExpression? highlightColor,
-    $1.ColorExpression? splashColor,
-    $1.ColorExpression? disabledColor,
+    $1.DartColorExpression? color,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
+    $1.DartColorExpression? highlightColor,
+    $1.DartColorExpression? splashColor,
+    $1.DartColorExpression? disabledColor,
     $core.bool? autofocus,
     $core.String? tooltip,
     $core.bool? enableFeedback,
@@ -18695,12 +18695,12 @@ class MaterialIconButton extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'iconSize', $pb.PbFieldType.OD)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'splashRadius', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(13, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(13, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(17, _omitFieldNames ? '' : 'autofocus')
     ..aOS(18, _omitFieldNames ? '' : 'tooltip')
     ..aOB(19, _omitFieldNames ? '' : 'enableFeedback')
@@ -18761,70 +18761,70 @@ class MaterialIconButton extends $pb.GeneratedMessage {
   void clearSplashRadius() => clearField(7);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get color => $_getN(3);
+  $1.DartColorExpression get color => $_getN(3);
   @$pb.TagNumber(8)
-  set color($1.ColorExpression v) { setField(8, v); }
+  set color($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasColor() => $_has(3);
   @$pb.TagNumber(8)
   void clearColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureColor() => $_ensure(3);
+  $1.DartColorExpression ensureColor() => $_ensure(3);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get focusColor => $_getN(4);
+  $1.DartColorExpression get focusColor => $_getN(4);
   @$pb.TagNumber(9)
-  set focusColor($1.ColorExpression v) { setField(9, v); }
+  set focusColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasFocusColor() => $_has(4);
   @$pb.TagNumber(9)
   void clearFocusColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureFocusColor() => $_ensure(4);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(4);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get hoverColor => $_getN(5);
+  $1.DartColorExpression get hoverColor => $_getN(5);
   @$pb.TagNumber(10)
-  set hoverColor($1.ColorExpression v) { setField(10, v); }
+  set hoverColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasHoverColor() => $_has(5);
   @$pb.TagNumber(10)
   void clearHoverColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureHoverColor() => $_ensure(5);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(5);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get highlightColor => $_getN(6);
+  $1.DartColorExpression get highlightColor => $_getN(6);
   @$pb.TagNumber(11)
-  set highlightColor($1.ColorExpression v) { setField(11, v); }
+  set highlightColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasHighlightColor() => $_has(6);
   @$pb.TagNumber(11)
   void clearHighlightColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureHighlightColor() => $_ensure(6);
+  $1.DartColorExpression ensureHighlightColor() => $_ensure(6);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get splashColor => $_getN(7);
+  $1.DartColorExpression get splashColor => $_getN(7);
   @$pb.TagNumber(12)
-  set splashColor($1.ColorExpression v) { setField(12, v); }
+  set splashColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasSplashColor() => $_has(7);
   @$pb.TagNumber(12)
   void clearSplashColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureSplashColor() => $_ensure(7);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(7);
 
   @$pb.TagNumber(13)
-  $1.ColorExpression get disabledColor => $_getN(8);
+  $1.DartColorExpression get disabledColor => $_getN(8);
   @$pb.TagNumber(13)
-  set disabledColor($1.ColorExpression v) { setField(13, v); }
+  set disabledColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasDisabledColor() => $_has(8);
   @$pb.TagNumber(13)
   void clearDisabledColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(8);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(8);
 
   @$pb.TagNumber(17)
   $core.bool get autofocus => $_getBF(9);
@@ -18891,12 +18891,12 @@ class MaterialIconButtonNamedFilled extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.double? iconSize,
     $core.double? splashRadius,
-    $1.ColorExpression? color,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
-    $1.ColorExpression? highlightColor,
-    $1.ColorExpression? splashColor,
-    $1.ColorExpression? disabledColor,
+    $1.DartColorExpression? color,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
+    $1.DartColorExpression? highlightColor,
+    $1.DartColorExpression? splashColor,
+    $1.DartColorExpression? disabledColor,
     $core.bool? autofocus,
     $core.String? tooltip,
     $core.bool? enableFeedback,
@@ -18960,12 +18960,12 @@ class MaterialIconButtonNamedFilled extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'iconSize', $pb.PbFieldType.OD)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'splashRadius', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(13, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(13, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(17, _omitFieldNames ? '' : 'autofocus')
     ..aOS(18, _omitFieldNames ? '' : 'tooltip')
     ..aOB(19, _omitFieldNames ? '' : 'enableFeedback')
@@ -19026,70 +19026,70 @@ class MaterialIconButtonNamedFilled extends $pb.GeneratedMessage {
   void clearSplashRadius() => clearField(7);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get color => $_getN(3);
+  $1.DartColorExpression get color => $_getN(3);
   @$pb.TagNumber(8)
-  set color($1.ColorExpression v) { setField(8, v); }
+  set color($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasColor() => $_has(3);
   @$pb.TagNumber(8)
   void clearColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureColor() => $_ensure(3);
+  $1.DartColorExpression ensureColor() => $_ensure(3);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get focusColor => $_getN(4);
+  $1.DartColorExpression get focusColor => $_getN(4);
   @$pb.TagNumber(9)
-  set focusColor($1.ColorExpression v) { setField(9, v); }
+  set focusColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasFocusColor() => $_has(4);
   @$pb.TagNumber(9)
   void clearFocusColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureFocusColor() => $_ensure(4);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(4);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get hoverColor => $_getN(5);
+  $1.DartColorExpression get hoverColor => $_getN(5);
   @$pb.TagNumber(10)
-  set hoverColor($1.ColorExpression v) { setField(10, v); }
+  set hoverColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasHoverColor() => $_has(5);
   @$pb.TagNumber(10)
   void clearHoverColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureHoverColor() => $_ensure(5);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(5);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get highlightColor => $_getN(6);
+  $1.DartColorExpression get highlightColor => $_getN(6);
   @$pb.TagNumber(11)
-  set highlightColor($1.ColorExpression v) { setField(11, v); }
+  set highlightColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasHighlightColor() => $_has(6);
   @$pb.TagNumber(11)
   void clearHighlightColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureHighlightColor() => $_ensure(6);
+  $1.DartColorExpression ensureHighlightColor() => $_ensure(6);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get splashColor => $_getN(7);
+  $1.DartColorExpression get splashColor => $_getN(7);
   @$pb.TagNumber(12)
-  set splashColor($1.ColorExpression v) { setField(12, v); }
+  set splashColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasSplashColor() => $_has(7);
   @$pb.TagNumber(12)
   void clearSplashColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureSplashColor() => $_ensure(7);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(7);
 
   @$pb.TagNumber(13)
-  $1.ColorExpression get disabledColor => $_getN(8);
+  $1.DartColorExpression get disabledColor => $_getN(8);
   @$pb.TagNumber(13)
-  set disabledColor($1.ColorExpression v) { setField(13, v); }
+  set disabledColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasDisabledColor() => $_has(8);
   @$pb.TagNumber(13)
   void clearDisabledColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(8);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(8);
 
   @$pb.TagNumber(17)
   $core.bool get autofocus => $_getBF(9);
@@ -19156,12 +19156,12 @@ class MaterialIconButtonNamedFilledTonal extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.double? iconSize,
     $core.double? splashRadius,
-    $1.ColorExpression? color,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
-    $1.ColorExpression? highlightColor,
-    $1.ColorExpression? splashColor,
-    $1.ColorExpression? disabledColor,
+    $1.DartColorExpression? color,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
+    $1.DartColorExpression? highlightColor,
+    $1.DartColorExpression? splashColor,
+    $1.DartColorExpression? disabledColor,
     $core.bool? autofocus,
     $core.String? tooltip,
     $core.bool? enableFeedback,
@@ -19225,12 +19225,12 @@ class MaterialIconButtonNamedFilledTonal extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'iconSize', $pb.PbFieldType.OD)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'splashRadius', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(13, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(13, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(17, _omitFieldNames ? '' : 'autofocus')
     ..aOS(18, _omitFieldNames ? '' : 'tooltip')
     ..aOB(19, _omitFieldNames ? '' : 'enableFeedback')
@@ -19291,70 +19291,70 @@ class MaterialIconButtonNamedFilledTonal extends $pb.GeneratedMessage {
   void clearSplashRadius() => clearField(7);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get color => $_getN(3);
+  $1.DartColorExpression get color => $_getN(3);
   @$pb.TagNumber(8)
-  set color($1.ColorExpression v) { setField(8, v); }
+  set color($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasColor() => $_has(3);
   @$pb.TagNumber(8)
   void clearColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureColor() => $_ensure(3);
+  $1.DartColorExpression ensureColor() => $_ensure(3);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get focusColor => $_getN(4);
+  $1.DartColorExpression get focusColor => $_getN(4);
   @$pb.TagNumber(9)
-  set focusColor($1.ColorExpression v) { setField(9, v); }
+  set focusColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasFocusColor() => $_has(4);
   @$pb.TagNumber(9)
   void clearFocusColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureFocusColor() => $_ensure(4);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(4);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get hoverColor => $_getN(5);
+  $1.DartColorExpression get hoverColor => $_getN(5);
   @$pb.TagNumber(10)
-  set hoverColor($1.ColorExpression v) { setField(10, v); }
+  set hoverColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasHoverColor() => $_has(5);
   @$pb.TagNumber(10)
   void clearHoverColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureHoverColor() => $_ensure(5);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(5);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get highlightColor => $_getN(6);
+  $1.DartColorExpression get highlightColor => $_getN(6);
   @$pb.TagNumber(11)
-  set highlightColor($1.ColorExpression v) { setField(11, v); }
+  set highlightColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasHighlightColor() => $_has(6);
   @$pb.TagNumber(11)
   void clearHighlightColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureHighlightColor() => $_ensure(6);
+  $1.DartColorExpression ensureHighlightColor() => $_ensure(6);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get splashColor => $_getN(7);
+  $1.DartColorExpression get splashColor => $_getN(7);
   @$pb.TagNumber(12)
-  set splashColor($1.ColorExpression v) { setField(12, v); }
+  set splashColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasSplashColor() => $_has(7);
   @$pb.TagNumber(12)
   void clearSplashColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureSplashColor() => $_ensure(7);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(7);
 
   @$pb.TagNumber(13)
-  $1.ColorExpression get disabledColor => $_getN(8);
+  $1.DartColorExpression get disabledColor => $_getN(8);
   @$pb.TagNumber(13)
-  set disabledColor($1.ColorExpression v) { setField(13, v); }
+  set disabledColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasDisabledColor() => $_has(8);
   @$pb.TagNumber(13)
   void clearDisabledColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(8);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(8);
 
   @$pb.TagNumber(17)
   $core.bool get autofocus => $_getBF(9);
@@ -19421,12 +19421,12 @@ class MaterialIconButtonNamedOutlined extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.double? iconSize,
     $core.double? splashRadius,
-    $1.ColorExpression? color,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
-    $1.ColorExpression? highlightColor,
-    $1.ColorExpression? splashColor,
-    $1.ColorExpression? disabledColor,
+    $1.DartColorExpression? color,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
+    $1.DartColorExpression? highlightColor,
+    $1.DartColorExpression? splashColor,
+    $1.DartColorExpression? disabledColor,
     $core.bool? autofocus,
     $core.String? tooltip,
     $core.bool? enableFeedback,
@@ -19490,12 +19490,12 @@ class MaterialIconButtonNamedOutlined extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'iconSize', $pb.PbFieldType.OD)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'splashRadius', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(13, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(13, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(17, _omitFieldNames ? '' : 'autofocus')
     ..aOS(18, _omitFieldNames ? '' : 'tooltip')
     ..aOB(19, _omitFieldNames ? '' : 'enableFeedback')
@@ -19556,70 +19556,70 @@ class MaterialIconButtonNamedOutlined extends $pb.GeneratedMessage {
   void clearSplashRadius() => clearField(7);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get color => $_getN(3);
+  $1.DartColorExpression get color => $_getN(3);
   @$pb.TagNumber(8)
-  set color($1.ColorExpression v) { setField(8, v); }
+  set color($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasColor() => $_has(3);
   @$pb.TagNumber(8)
   void clearColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureColor() => $_ensure(3);
+  $1.DartColorExpression ensureColor() => $_ensure(3);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get focusColor => $_getN(4);
+  $1.DartColorExpression get focusColor => $_getN(4);
   @$pb.TagNumber(9)
-  set focusColor($1.ColorExpression v) { setField(9, v); }
+  set focusColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasFocusColor() => $_has(4);
   @$pb.TagNumber(9)
   void clearFocusColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureFocusColor() => $_ensure(4);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(4);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get hoverColor => $_getN(5);
+  $1.DartColorExpression get hoverColor => $_getN(5);
   @$pb.TagNumber(10)
-  set hoverColor($1.ColorExpression v) { setField(10, v); }
+  set hoverColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasHoverColor() => $_has(5);
   @$pb.TagNumber(10)
   void clearHoverColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureHoverColor() => $_ensure(5);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(5);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get highlightColor => $_getN(6);
+  $1.DartColorExpression get highlightColor => $_getN(6);
   @$pb.TagNumber(11)
-  set highlightColor($1.ColorExpression v) { setField(11, v); }
+  set highlightColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasHighlightColor() => $_has(6);
   @$pb.TagNumber(11)
   void clearHighlightColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureHighlightColor() => $_ensure(6);
+  $1.DartColorExpression ensureHighlightColor() => $_ensure(6);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get splashColor => $_getN(7);
+  $1.DartColorExpression get splashColor => $_getN(7);
   @$pb.TagNumber(12)
-  set splashColor($1.ColorExpression v) { setField(12, v); }
+  set splashColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasSplashColor() => $_has(7);
   @$pb.TagNumber(12)
   void clearSplashColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureSplashColor() => $_ensure(7);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(7);
 
   @$pb.TagNumber(13)
-  $1.ColorExpression get disabledColor => $_getN(8);
+  $1.DartColorExpression get disabledColor => $_getN(8);
   @$pb.TagNumber(13)
-  set disabledColor($1.ColorExpression v) { setField(13, v); }
+  set disabledColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasDisabledColor() => $_has(8);
   @$pb.TagNumber(13)
   void clearDisabledColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(8);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(8);
 
   @$pb.TagNumber(17)
   $core.bool get autofocus => $_getBF(9);
@@ -19684,7 +19684,7 @@ class MaterialIconButtonNamedOutlined extends $pb.GeneratedMessage {
 class MaterialInk extends $pb.GeneratedMessage {
   factory MaterialInk({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.double? width,
     $core.double? height,
     WidgetExpression? child,
@@ -19713,7 +19713,7 @@ class MaterialInk extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialInk', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OD)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
     ..aOM<WidgetExpression>(8, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
@@ -19753,15 +19753,15 @@ class MaterialInk extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get color => $_getN(1);
+  $1.DartColorExpression get color => $_getN(1);
   @$pb.TagNumber(4)
-  set color($1.ColorExpression v) { setField(4, v); }
+  set color($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasColor() => $_has(1);
   @$pb.TagNumber(4)
   void clearColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureColor() => $_ensure(1);
+  $1.DartColorExpression ensureColor() => $_ensure(1);
 
   @$pb.TagNumber(6)
   $core.double get width => $_getN(2);
@@ -19800,10 +19800,10 @@ class MaterialInkResponse extends $pb.GeneratedMessage {
     WidgetExpression? child,
     $core.bool? containedInkWell,
     $core.double? radius,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
-    $1.ColorExpression? highlightColor,
-    $1.ColorExpression? splashColor,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
+    $1.DartColorExpression? highlightColor,
+    $1.DartColorExpression? splashColor,
     $core.bool? enableFeedback,
     $core.bool? excludeFromSemantics,
     $core.bool? canRequestFocus,
@@ -19857,10 +19857,10 @@ class MaterialInkResponse extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..aOB(17, _omitFieldNames ? '' : 'containedInkWell')
     ..a<$core.double>(19, _omitFieldNames ? '' : 'radius', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(22, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(23, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(24, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(26, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(22, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(23, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(24, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(26, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(28, _omitFieldNames ? '' : 'enableFeedback')
     ..aOB(29, _omitFieldNames ? '' : 'excludeFromSemantics')
     ..aOB(31, _omitFieldNames ? '' : 'canRequestFocus')
@@ -19930,48 +19930,48 @@ class MaterialInkResponse extends $pb.GeneratedMessage {
   void clearRadius() => clearField(19);
 
   @$pb.TagNumber(22)
-  $1.ColorExpression get focusColor => $_getN(4);
+  $1.DartColorExpression get focusColor => $_getN(4);
   @$pb.TagNumber(22)
-  set focusColor($1.ColorExpression v) { setField(22, v); }
+  set focusColor($1.DartColorExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasFocusColor() => $_has(4);
   @$pb.TagNumber(22)
   void clearFocusColor() => clearField(22);
   @$pb.TagNumber(22)
-  $1.ColorExpression ensureFocusColor() => $_ensure(4);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(4);
 
   @$pb.TagNumber(23)
-  $1.ColorExpression get hoverColor => $_getN(5);
+  $1.DartColorExpression get hoverColor => $_getN(5);
   @$pb.TagNumber(23)
-  set hoverColor($1.ColorExpression v) { setField(23, v); }
+  set hoverColor($1.DartColorExpression v) { setField(23, v); }
   @$pb.TagNumber(23)
   $core.bool hasHoverColor() => $_has(5);
   @$pb.TagNumber(23)
   void clearHoverColor() => clearField(23);
   @$pb.TagNumber(23)
-  $1.ColorExpression ensureHoverColor() => $_ensure(5);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(5);
 
   @$pb.TagNumber(24)
-  $1.ColorExpression get highlightColor => $_getN(6);
+  $1.DartColorExpression get highlightColor => $_getN(6);
   @$pb.TagNumber(24)
-  set highlightColor($1.ColorExpression v) { setField(24, v); }
+  set highlightColor($1.DartColorExpression v) { setField(24, v); }
   @$pb.TagNumber(24)
   $core.bool hasHighlightColor() => $_has(6);
   @$pb.TagNumber(24)
   void clearHighlightColor() => clearField(24);
   @$pb.TagNumber(24)
-  $1.ColorExpression ensureHighlightColor() => $_ensure(6);
+  $1.DartColorExpression ensureHighlightColor() => $_ensure(6);
 
   @$pb.TagNumber(26)
-  $1.ColorExpression get splashColor => $_getN(7);
+  $1.DartColorExpression get splashColor => $_getN(7);
   @$pb.TagNumber(26)
-  set splashColor($1.ColorExpression v) { setField(26, v); }
+  set splashColor($1.DartColorExpression v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasSplashColor() => $_has(7);
   @$pb.TagNumber(26)
   void clearSplashColor() => clearField(26);
   @$pb.TagNumber(26)
-  $1.ColorExpression ensureSplashColor() => $_ensure(7);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(7);
 
   @$pb.TagNumber(28)
   $core.bool get enableFeedback => $_getBF(8);
@@ -20015,10 +20015,10 @@ class MaterialInkWell extends $pb.GeneratedMessage {
   factory MaterialInkWell({
     $1.FlutterKeyExpression? key,
     WidgetExpression? child,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
-    $1.ColorExpression? highlightColor,
-    $1.ColorExpression? splashColor,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
+    $1.DartColorExpression? highlightColor,
+    $1.DartColorExpression? splashColor,
     $core.double? radius,
     $core.bool? enableFeedback,
     $core.bool? excludeFromSemantics,
@@ -20068,10 +20068,10 @@ class MaterialInkWell extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialInkWell', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(17, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(18, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(19, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(21, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(17, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(18, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(19, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(21, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(23, _omitFieldNames ? '' : 'radius', $pb.PbFieldType.OD)
     ..aOB(26, _omitFieldNames ? '' : 'enableFeedback')
     ..aOB(27, _omitFieldNames ? '' : 'excludeFromSemantics')
@@ -20124,48 +20124,48 @@ class MaterialInkWell extends $pb.GeneratedMessage {
   WidgetExpression ensureChild() => $_ensure(1);
 
   @$pb.TagNumber(17)
-  $1.ColorExpression get focusColor => $_getN(2);
+  $1.DartColorExpression get focusColor => $_getN(2);
   @$pb.TagNumber(17)
-  set focusColor($1.ColorExpression v) { setField(17, v); }
+  set focusColor($1.DartColorExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasFocusColor() => $_has(2);
   @$pb.TagNumber(17)
   void clearFocusColor() => clearField(17);
   @$pb.TagNumber(17)
-  $1.ColorExpression ensureFocusColor() => $_ensure(2);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(2);
 
   @$pb.TagNumber(18)
-  $1.ColorExpression get hoverColor => $_getN(3);
+  $1.DartColorExpression get hoverColor => $_getN(3);
   @$pb.TagNumber(18)
-  set hoverColor($1.ColorExpression v) { setField(18, v); }
+  set hoverColor($1.DartColorExpression v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasHoverColor() => $_has(3);
   @$pb.TagNumber(18)
   void clearHoverColor() => clearField(18);
   @$pb.TagNumber(18)
-  $1.ColorExpression ensureHoverColor() => $_ensure(3);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(3);
 
   @$pb.TagNumber(19)
-  $1.ColorExpression get highlightColor => $_getN(4);
+  $1.DartColorExpression get highlightColor => $_getN(4);
   @$pb.TagNumber(19)
-  set highlightColor($1.ColorExpression v) { setField(19, v); }
+  set highlightColor($1.DartColorExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasHighlightColor() => $_has(4);
   @$pb.TagNumber(19)
   void clearHighlightColor() => clearField(19);
   @$pb.TagNumber(19)
-  $1.ColorExpression ensureHighlightColor() => $_ensure(4);
+  $1.DartColorExpression ensureHighlightColor() => $_ensure(4);
 
   @$pb.TagNumber(21)
-  $1.ColorExpression get splashColor => $_getN(5);
+  $1.DartColorExpression get splashColor => $_getN(5);
   @$pb.TagNumber(21)
-  set splashColor($1.ColorExpression v) { setField(21, v); }
+  set splashColor($1.DartColorExpression v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasSplashColor() => $_has(5);
   @$pb.TagNumber(21)
   void clearSplashColor() => clearField(21);
   @$pb.TagNumber(21)
-  $1.ColorExpression ensureSplashColor() => $_ensure(5);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(5);
 
   @$pb.TagNumber(23)
   $core.double get radius => $_getN(6);
@@ -20222,20 +20222,20 @@ class MaterialInputChip extends $pb.GeneratedMessage {
     $core.bool? selected,
     $core.bool? isEnabled,
     WidgetExpression? deleteIcon,
-    $1.ColorExpression? deleteIconColor,
+    $1.DartColorExpression? deleteIconColor,
     $core.String? deleteButtonTooltipMessage,
     $core.double? pressElevation,
-    $1.ColorExpression? disabledColor,
-    $1.ColorExpression? selectedColor,
+    $1.DartColorExpression? disabledColor,
+    $1.DartColorExpression? selectedColor,
     $core.String? tooltip,
     $core.bool? autofocus,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
-    $1.ColorExpression? selectedShadowColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
+    $1.DartColorExpression? selectedShadowColor,
     $core.bool? showCheckmark,
-    $1.ColorExpression? checkmarkColor,
+    $1.DartColorExpression? checkmarkColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -20311,20 +20311,20 @@ class MaterialInputChip extends $pb.GeneratedMessage {
     ..aOB(7, _omitFieldNames ? '' : 'selected')
     ..aOB(8, _omitFieldNames ? '' : 'isEnabled')
     ..aOM<WidgetExpression>(10, _omitFieldNames ? '' : 'deleteIcon', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'deleteIconColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'deleteIconColor', subBuilder: $1.DartColorExpression.create)
     ..aOS(13, _omitFieldNames ? '' : 'deleteButtonTooltipMessage')
     ..a<$core.double>(15, _omitFieldNames ? '' : 'pressElevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(16, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(17, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(16, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(17, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.DartColorExpression.create)
     ..aOS(18, _omitFieldNames ? '' : 'tooltip')
     ..aOB(23, _omitFieldNames ? '' : 'autofocus')
-    ..aOM<$1.ColorExpression>(25, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(25, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(29, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(30, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(31, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(33, _omitFieldNames ? '' : 'selectedShadowColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(30, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(31, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(33, _omitFieldNames ? '' : 'selectedShadowColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(34, _omitFieldNames ? '' : 'showCheckmark')
-    ..aOM<$1.ColorExpression>(35, _omitFieldNames ? '' : 'checkmarkColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(35, _omitFieldNames ? '' : 'checkmarkColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -20412,15 +20412,15 @@ class MaterialInputChip extends $pb.GeneratedMessage {
   WidgetExpression ensureDeleteIcon() => $_ensure(5);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get deleteIconColor => $_getN(6);
+  $1.DartColorExpression get deleteIconColor => $_getN(6);
   @$pb.TagNumber(12)
-  set deleteIconColor($1.ColorExpression v) { setField(12, v); }
+  set deleteIconColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasDeleteIconColor() => $_has(6);
   @$pb.TagNumber(12)
   void clearDeleteIconColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureDeleteIconColor() => $_ensure(6);
+  $1.DartColorExpression ensureDeleteIconColor() => $_ensure(6);
 
   @$pb.TagNumber(13)
   $core.String get deleteButtonTooltipMessage => $_getSZ(7);
@@ -20441,26 +20441,26 @@ class MaterialInputChip extends $pb.GeneratedMessage {
   void clearPressElevation() => clearField(15);
 
   @$pb.TagNumber(16)
-  $1.ColorExpression get disabledColor => $_getN(9);
+  $1.DartColorExpression get disabledColor => $_getN(9);
   @$pb.TagNumber(16)
-  set disabledColor($1.ColorExpression v) { setField(16, v); }
+  set disabledColor($1.DartColorExpression v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasDisabledColor() => $_has(9);
   @$pb.TagNumber(16)
   void clearDisabledColor() => clearField(16);
   @$pb.TagNumber(16)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(9);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(9);
 
   @$pb.TagNumber(17)
-  $1.ColorExpression get selectedColor => $_getN(10);
+  $1.DartColorExpression get selectedColor => $_getN(10);
   @$pb.TagNumber(17)
-  set selectedColor($1.ColorExpression v) { setField(17, v); }
+  set selectedColor($1.DartColorExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasSelectedColor() => $_has(10);
   @$pb.TagNumber(17)
   void clearSelectedColor() => clearField(17);
   @$pb.TagNumber(17)
-  $1.ColorExpression ensureSelectedColor() => $_ensure(10);
+  $1.DartColorExpression ensureSelectedColor() => $_ensure(10);
 
   @$pb.TagNumber(18)
   $core.String get tooltip => $_getSZ(11);
@@ -20481,15 +20481,15 @@ class MaterialInputChip extends $pb.GeneratedMessage {
   void clearAutofocus() => clearField(23);
 
   @$pb.TagNumber(25)
-  $1.ColorExpression get backgroundColor => $_getN(13);
+  $1.DartColorExpression get backgroundColor => $_getN(13);
   @$pb.TagNumber(25)
-  set backgroundColor($1.ColorExpression v) { setField(25, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasBackgroundColor() => $_has(13);
   @$pb.TagNumber(25)
   void clearBackgroundColor() => clearField(25);
   @$pb.TagNumber(25)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(13);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(13);
 
   @$pb.TagNumber(29)
   $core.double get elevation => $_getN(14);
@@ -20501,37 +20501,37 @@ class MaterialInputChip extends $pb.GeneratedMessage {
   void clearElevation() => clearField(29);
 
   @$pb.TagNumber(30)
-  $1.ColorExpression get shadowColor => $_getN(15);
+  $1.DartColorExpression get shadowColor => $_getN(15);
   @$pb.TagNumber(30)
-  set shadowColor($1.ColorExpression v) { setField(30, v); }
+  set shadowColor($1.DartColorExpression v) { setField(30, v); }
   @$pb.TagNumber(30)
   $core.bool hasShadowColor() => $_has(15);
   @$pb.TagNumber(30)
   void clearShadowColor() => clearField(30);
   @$pb.TagNumber(30)
-  $1.ColorExpression ensureShadowColor() => $_ensure(15);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(15);
 
   @$pb.TagNumber(31)
-  $1.ColorExpression get surfaceTintColor => $_getN(16);
+  $1.DartColorExpression get surfaceTintColor => $_getN(16);
   @$pb.TagNumber(31)
-  set surfaceTintColor($1.ColorExpression v) { setField(31, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasSurfaceTintColor() => $_has(16);
   @$pb.TagNumber(31)
   void clearSurfaceTintColor() => clearField(31);
   @$pb.TagNumber(31)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(16);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(16);
 
   @$pb.TagNumber(33)
-  $1.ColorExpression get selectedShadowColor => $_getN(17);
+  $1.DartColorExpression get selectedShadowColor => $_getN(17);
   @$pb.TagNumber(33)
-  set selectedShadowColor($1.ColorExpression v) { setField(33, v); }
+  set selectedShadowColor($1.DartColorExpression v) { setField(33, v); }
   @$pb.TagNumber(33)
   $core.bool hasSelectedShadowColor() => $_has(17);
   @$pb.TagNumber(33)
   void clearSelectedShadowColor() => clearField(33);
   @$pb.TagNumber(33)
-  $1.ColorExpression ensureSelectedShadowColor() => $_ensure(17);
+  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(17);
 
   @$pb.TagNumber(34)
   $core.bool get showCheckmark => $_getBF(18);
@@ -20543,15 +20543,15 @@ class MaterialInputChip extends $pb.GeneratedMessage {
   void clearShowCheckmark() => clearField(34);
 
   @$pb.TagNumber(35)
-  $1.ColorExpression get checkmarkColor => $_getN(19);
+  $1.DartColorExpression get checkmarkColor => $_getN(19);
   @$pb.TagNumber(35)
-  set checkmarkColor($1.ColorExpression v) { setField(35, v); }
+  set checkmarkColor($1.DartColorExpression v) { setField(35, v); }
   @$pb.TagNumber(35)
   $core.bool hasCheckmarkColor() => $_has(19);
   @$pb.TagNumber(35)
   void clearCheckmarkColor() => clearField(35);
   @$pb.TagNumber(35)
-  $1.ColorExpression ensureCheckmarkColor() => $_ensure(19);
+  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(19);
 }
 
 /// package:flutter/src/material/list_tile.dart
@@ -20564,17 +20564,17 @@ class MaterialListTile extends $pb.GeneratedMessage {
     WidgetExpression? trailing,
     $core.bool? isThreeLine,
     $core.bool? dense,
-    $1.ColorExpression? selectedColor,
-    $1.ColorExpression? iconColor,
-    $1.ColorExpression? textColor,
+    $1.DartColorExpression? selectedColor,
+    $1.DartColorExpression? iconColor,
+    $1.DartColorExpression? textColor,
     $core.bool? enabled,
     $core.bool? selected,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
-    $1.ColorExpression? splashColor,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
+    $1.DartColorExpression? splashColor,
     $core.bool? autofocus,
-    $1.ColorExpression? tileColor,
-    $1.ColorExpression? selectedTileColor,
+    $1.DartColorExpression? tileColor,
+    $1.DartColorExpression? selectedTileColor,
     $core.bool? enableFeedback,
     $core.double? horizontalTitleGap,
     $core.double? minVerticalPadding,
@@ -20661,17 +20661,17 @@ class MaterialListTile extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(6, _omitFieldNames ? '' : 'trailing', subBuilder: WidgetExpression.create)
     ..aOB(7, _omitFieldNames ? '' : 'isThreeLine')
     ..aOB(8, _omitFieldNames ? '' : 'dense')
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(13, _omitFieldNames ? '' : 'iconColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'textColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(13, _omitFieldNames ? '' : 'iconColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'textColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(19, _omitFieldNames ? '' : 'enabled')
     ..aOB(24, _omitFieldNames ? '' : 'selected')
-    ..aOM<$1.ColorExpression>(25, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(26, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(27, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(25, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(26, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(27, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(29, _omitFieldNames ? '' : 'autofocus')
-    ..aOM<$1.ColorExpression>(30, _omitFieldNames ? '' : 'tileColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(31, _omitFieldNames ? '' : 'selectedTileColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(30, _omitFieldNames ? '' : 'tileColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(31, _omitFieldNames ? '' : 'selectedTileColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(32, _omitFieldNames ? '' : 'enableFeedback')
     ..a<$core.double>(33, _omitFieldNames ? '' : 'horizontalTitleGap', $pb.PbFieldType.OD)
     ..a<$core.double>(34, _omitFieldNames ? '' : 'minVerticalPadding', $pb.PbFieldType.OD)
@@ -20774,37 +20774,37 @@ class MaterialListTile extends $pb.GeneratedMessage {
   void clearDense() => clearField(8);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get selectedColor => $_getN(7);
+  $1.DartColorExpression get selectedColor => $_getN(7);
   @$pb.TagNumber(12)
-  set selectedColor($1.ColorExpression v) { setField(12, v); }
+  set selectedColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasSelectedColor() => $_has(7);
   @$pb.TagNumber(12)
   void clearSelectedColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureSelectedColor() => $_ensure(7);
+  $1.DartColorExpression ensureSelectedColor() => $_ensure(7);
 
   @$pb.TagNumber(13)
-  $1.ColorExpression get iconColor => $_getN(8);
+  $1.DartColorExpression get iconColor => $_getN(8);
   @$pb.TagNumber(13)
-  set iconColor($1.ColorExpression v) { setField(13, v); }
+  set iconColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasIconColor() => $_has(8);
   @$pb.TagNumber(13)
   void clearIconColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.ColorExpression ensureIconColor() => $_ensure(8);
+  $1.DartColorExpression ensureIconColor() => $_ensure(8);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get textColor => $_getN(9);
+  $1.DartColorExpression get textColor => $_getN(9);
   @$pb.TagNumber(14)
-  set textColor($1.ColorExpression v) { setField(14, v); }
+  set textColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasTextColor() => $_has(9);
   @$pb.TagNumber(14)
   void clearTextColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureTextColor() => $_ensure(9);
+  $1.DartColorExpression ensureTextColor() => $_ensure(9);
 
   @$pb.TagNumber(19)
   $core.bool get enabled => $_getBF(10);
@@ -20825,37 +20825,37 @@ class MaterialListTile extends $pb.GeneratedMessage {
   void clearSelected() => clearField(24);
 
   @$pb.TagNumber(25)
-  $1.ColorExpression get focusColor => $_getN(12);
+  $1.DartColorExpression get focusColor => $_getN(12);
   @$pb.TagNumber(25)
-  set focusColor($1.ColorExpression v) { setField(25, v); }
+  set focusColor($1.DartColorExpression v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasFocusColor() => $_has(12);
   @$pb.TagNumber(25)
   void clearFocusColor() => clearField(25);
   @$pb.TagNumber(25)
-  $1.ColorExpression ensureFocusColor() => $_ensure(12);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(12);
 
   @$pb.TagNumber(26)
-  $1.ColorExpression get hoverColor => $_getN(13);
+  $1.DartColorExpression get hoverColor => $_getN(13);
   @$pb.TagNumber(26)
-  set hoverColor($1.ColorExpression v) { setField(26, v); }
+  set hoverColor($1.DartColorExpression v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasHoverColor() => $_has(13);
   @$pb.TagNumber(26)
   void clearHoverColor() => clearField(26);
   @$pb.TagNumber(26)
-  $1.ColorExpression ensureHoverColor() => $_ensure(13);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(13);
 
   @$pb.TagNumber(27)
-  $1.ColorExpression get splashColor => $_getN(14);
+  $1.DartColorExpression get splashColor => $_getN(14);
   @$pb.TagNumber(27)
-  set splashColor($1.ColorExpression v) { setField(27, v); }
+  set splashColor($1.DartColorExpression v) { setField(27, v); }
   @$pb.TagNumber(27)
   $core.bool hasSplashColor() => $_has(14);
   @$pb.TagNumber(27)
   void clearSplashColor() => clearField(27);
   @$pb.TagNumber(27)
-  $1.ColorExpression ensureSplashColor() => $_ensure(14);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(14);
 
   @$pb.TagNumber(29)
   $core.bool get autofocus => $_getBF(15);
@@ -20867,26 +20867,26 @@ class MaterialListTile extends $pb.GeneratedMessage {
   void clearAutofocus() => clearField(29);
 
   @$pb.TagNumber(30)
-  $1.ColorExpression get tileColor => $_getN(16);
+  $1.DartColorExpression get tileColor => $_getN(16);
   @$pb.TagNumber(30)
-  set tileColor($1.ColorExpression v) { setField(30, v); }
+  set tileColor($1.DartColorExpression v) { setField(30, v); }
   @$pb.TagNumber(30)
   $core.bool hasTileColor() => $_has(16);
   @$pb.TagNumber(30)
   void clearTileColor() => clearField(30);
   @$pb.TagNumber(30)
-  $1.ColorExpression ensureTileColor() => $_ensure(16);
+  $1.DartColorExpression ensureTileColor() => $_ensure(16);
 
   @$pb.TagNumber(31)
-  $1.ColorExpression get selectedTileColor => $_getN(17);
+  $1.DartColorExpression get selectedTileColor => $_getN(17);
   @$pb.TagNumber(31)
-  set selectedTileColor($1.ColorExpression v) { setField(31, v); }
+  set selectedTileColor($1.DartColorExpression v) { setField(31, v); }
   @$pb.TagNumber(31)
   $core.bool hasSelectedTileColor() => $_has(17);
   @$pb.TagNumber(31)
   void clearSelectedTileColor() => clearField(31);
   @$pb.TagNumber(31)
-  $1.ColorExpression ensureSelectedTileColor() => $_ensure(17);
+  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(17);
 
   @$pb.TagNumber(32)
   $core.bool get enableFeedback => $_getBF(18);
@@ -20930,11 +20930,11 @@ class MaterialListTileTheme extends $pb.GeneratedMessage {
   factory MaterialListTileTheme({
     $1.FlutterKeyExpression? key,
     $core.bool? dense,
-    $1.ColorExpression? selectedColor,
-    $1.ColorExpression? iconColor,
-    $1.ColorExpression? textColor,
-    $1.ColorExpression? tileColor,
-    $1.ColorExpression? selectedTileColor,
+    $1.DartColorExpression? selectedColor,
+    $1.DartColorExpression? iconColor,
+    $1.DartColorExpression? textColor,
+    $1.DartColorExpression? tileColor,
+    $1.DartColorExpression? selectedTileColor,
     $core.bool? enableFeedback,
     $core.double? horizontalTitleGap,
     $core.double? minVerticalPadding,
@@ -20987,11 +20987,11 @@ class MaterialListTileTheme extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialListTileTheme', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOB(4, _omitFieldNames ? '' : 'dense')
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'iconColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'textColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'tileColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'selectedTileColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'iconColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'textColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'tileColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'selectedTileColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(13, _omitFieldNames ? '' : 'enableFeedback')
     ..a<$core.double>(15, _omitFieldNames ? '' : 'horizontalTitleGap', $pb.PbFieldType.OD)
     ..a<$core.double>(16, _omitFieldNames ? '' : 'minVerticalPadding', $pb.PbFieldType.OD)
@@ -21042,59 +21042,59 @@ class MaterialListTileTheme extends $pb.GeneratedMessage {
   void clearDense() => clearField(4);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get selectedColor => $_getN(2);
+  $1.DartColorExpression get selectedColor => $_getN(2);
   @$pb.TagNumber(7)
-  set selectedColor($1.ColorExpression v) { setField(7, v); }
+  set selectedColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasSelectedColor() => $_has(2);
   @$pb.TagNumber(7)
   void clearSelectedColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureSelectedColor() => $_ensure(2);
+  $1.DartColorExpression ensureSelectedColor() => $_ensure(2);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get iconColor => $_getN(3);
+  $1.DartColorExpression get iconColor => $_getN(3);
   @$pb.TagNumber(8)
-  set iconColor($1.ColorExpression v) { setField(8, v); }
+  set iconColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasIconColor() => $_has(3);
   @$pb.TagNumber(8)
   void clearIconColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureIconColor() => $_ensure(3);
+  $1.DartColorExpression ensureIconColor() => $_ensure(3);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get textColor => $_getN(4);
+  $1.DartColorExpression get textColor => $_getN(4);
   @$pb.TagNumber(9)
-  set textColor($1.ColorExpression v) { setField(9, v); }
+  set textColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasTextColor() => $_has(4);
   @$pb.TagNumber(9)
   void clearTextColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureTextColor() => $_ensure(4);
+  $1.DartColorExpression ensureTextColor() => $_ensure(4);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get tileColor => $_getN(5);
+  $1.DartColorExpression get tileColor => $_getN(5);
   @$pb.TagNumber(11)
-  set tileColor($1.ColorExpression v) { setField(11, v); }
+  set tileColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasTileColor() => $_has(5);
   @$pb.TagNumber(11)
   void clearTileColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureTileColor() => $_ensure(5);
+  $1.DartColorExpression ensureTileColor() => $_ensure(5);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get selectedTileColor => $_getN(6);
+  $1.DartColorExpression get selectedTileColor => $_getN(6);
   @$pb.TagNumber(12)
-  set selectedTileColor($1.ColorExpression v) { setField(12, v); }
+  set selectedTileColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasSelectedTileColor() => $_has(6);
   @$pb.TagNumber(12)
   void clearSelectedTileColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureSelectedTileColor() => $_ensure(6);
+  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(6);
 
   @$pb.TagNumber(13)
   $core.bool get enableFeedback => $_getBF(7);
@@ -21148,7 +21148,7 @@ class MaterialListTileTheme extends $pb.GeneratedMessage {
 class MaterialMagnifier extends $pb.GeneratedMessage {
   factory MaterialMagnifier({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? filmColor,
+    $1.DartColorExpression? filmColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -21165,7 +21165,7 @@ class MaterialMagnifier extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialMagnifier', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'filmColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'filmColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -21202,15 +21202,15 @@ class MaterialMagnifier extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get filmColor => $_getN(1);
+  $1.DartColorExpression get filmColor => $_getN(1);
   @$pb.TagNumber(5)
-  set filmColor($1.ColorExpression v) { setField(5, v); }
+  set filmColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasFilmColor() => $_has(1);
   @$pb.TagNumber(5)
   void clearFilmColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureFilmColor() => $_ensure(1);
+  $1.DartColorExpression ensureFilmColor() => $_ensure(1);
 }
 
 /// package:flutter/src/material/material.dart
@@ -21218,11 +21218,11 @@ class MaterialMaterial extends $pb.GeneratedMessage {
   factory MaterialMaterial({
     $1.FlutterKeyExpression? key,
     $core.double? elevation,
-    $1.ColorExpression? color,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
+    $1.DartColorExpression? color,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
     $core.bool? borderOnForeground,
-    $1.DurationExpression? animationDuration,
+    $1.DartDurationExpression? animationDuration,
     WidgetExpression? child,
   }) {
     final $result = create();
@@ -21259,11 +21259,11 @@ class MaterialMaterial extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialMaterial', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(11, _omitFieldNames ? '' : 'borderOnForeground')
-    ..aOM<$1.DurationExpression>(13, _omitFieldNames ? '' : 'animationDuration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(13, _omitFieldNames ? '' : 'animationDuration', subBuilder: $1.DartDurationExpression.create)
     ..aOM<WidgetExpression>(14, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..hasRequiredFields = false
   ;
@@ -21310,37 +21310,37 @@ class MaterialMaterial extends $pb.GeneratedMessage {
   void clearElevation() => clearField(4);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get color => $_getN(2);
+  $1.DartColorExpression get color => $_getN(2);
   @$pb.TagNumber(5)
-  set color($1.ColorExpression v) { setField(5, v); }
+  set color($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasColor() => $_has(2);
   @$pb.TagNumber(5)
   void clearColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureColor() => $_ensure(2);
+  $1.DartColorExpression ensureColor() => $_ensure(2);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get shadowColor => $_getN(3);
+  $1.DartColorExpression get shadowColor => $_getN(3);
   @$pb.TagNumber(6)
-  set shadowColor($1.ColorExpression v) { setField(6, v); }
+  set shadowColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasShadowColor() => $_has(3);
   @$pb.TagNumber(6)
   void clearShadowColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureShadowColor() => $_ensure(3);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(3);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get surfaceTintColor => $_getN(4);
+  $1.DartColorExpression get surfaceTintColor => $_getN(4);
   @$pb.TagNumber(7)
-  set surfaceTintColor($1.ColorExpression v) { setField(7, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasSurfaceTintColor() => $_has(4);
   @$pb.TagNumber(7)
   void clearSurfaceTintColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(4);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(4);
 
   @$pb.TagNumber(11)
   $core.bool get borderOnForeground => $_getBF(5);
@@ -21352,15 +21352,15 @@ class MaterialMaterial extends $pb.GeneratedMessage {
   void clearBorderOnForeground() => clearField(11);
 
   @$pb.TagNumber(13)
-  $1.DurationExpression get animationDuration => $_getN(6);
+  $1.DartDurationExpression get animationDuration => $_getN(6);
   @$pb.TagNumber(13)
-  set animationDuration($1.DurationExpression v) { setField(13, v); }
+  set animationDuration($1.DartDurationExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasAnimationDuration() => $_has(6);
   @$pb.TagNumber(13)
   void clearAnimationDuration() => clearField(13);
   @$pb.TagNumber(13)
-  $1.DurationExpression ensureAnimationDuration() => $_ensure(6);
+  $1.DartDurationExpression ensureAnimationDuration() => $_ensure(6);
 
   @$pb.TagNumber(14)
   WidgetExpression get child => $_getN(7);
@@ -21378,21 +21378,21 @@ class MaterialMaterial extends $pb.GeneratedMessage {
 class MaterialMaterialButton extends $pb.GeneratedMessage {
   factory MaterialMaterialButton({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? textColor,
-    $1.ColorExpression? disabledTextColor,
-    $1.ColorExpression? color,
-    $1.ColorExpression? disabledColor,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
-    $1.ColorExpression? highlightColor,
-    $1.ColorExpression? splashColor,
+    $1.DartColorExpression? textColor,
+    $1.DartColorExpression? disabledTextColor,
+    $1.DartColorExpression? color,
+    $1.DartColorExpression? disabledColor,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
+    $1.DartColorExpression? highlightColor,
+    $1.DartColorExpression? splashColor,
     $core.double? elevation,
     $core.double? focusElevation,
     $core.double? hoverElevation,
     $core.double? highlightElevation,
     $core.double? disabledElevation,
     $core.bool? autofocus,
-    $1.DurationExpression? animationDuration,
+    $1.DartDurationExpression? animationDuration,
     $core.double? minWidth,
     $core.double? height,
     $core.bool? enableFeedback,
@@ -21467,21 +21467,21 @@ class MaterialMaterialButton extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialMaterialButton', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'textColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'disabledTextColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(13, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(15, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'textColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'disabledTextColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(13, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(15, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(17, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..a<$core.double>(18, _omitFieldNames ? '' : 'focusElevation', $pb.PbFieldType.OD)
     ..a<$core.double>(19, _omitFieldNames ? '' : 'hoverElevation', $pb.PbFieldType.OD)
     ..a<$core.double>(20, _omitFieldNames ? '' : 'highlightElevation', $pb.PbFieldType.OD)
     ..a<$core.double>(21, _omitFieldNames ? '' : 'disabledElevation', $pb.PbFieldType.OD)
     ..aOB(27, _omitFieldNames ? '' : 'autofocus')
-    ..aOM<$1.DurationExpression>(29, _omitFieldNames ? '' : 'animationDuration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(29, _omitFieldNames ? '' : 'animationDuration', subBuilder: $1.DartDurationExpression.create)
     ..a<$core.double>(30, _omitFieldNames ? '' : 'minWidth', $pb.PbFieldType.OD)
     ..a<$core.double>(31, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
     ..aOB(32, _omitFieldNames ? '' : 'enableFeedback')
@@ -21522,92 +21522,92 @@ class MaterialMaterialButton extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get textColor => $_getN(1);
+  $1.DartColorExpression get textColor => $_getN(1);
   @$pb.TagNumber(8)
-  set textColor($1.ColorExpression v) { setField(8, v); }
+  set textColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasTextColor() => $_has(1);
   @$pb.TagNumber(8)
   void clearTextColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureTextColor() => $_ensure(1);
+  $1.DartColorExpression ensureTextColor() => $_ensure(1);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get disabledTextColor => $_getN(2);
+  $1.DartColorExpression get disabledTextColor => $_getN(2);
   @$pb.TagNumber(9)
-  set disabledTextColor($1.ColorExpression v) { setField(9, v); }
+  set disabledTextColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasDisabledTextColor() => $_has(2);
   @$pb.TagNumber(9)
   void clearDisabledTextColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureDisabledTextColor() => $_ensure(2);
+  $1.DartColorExpression ensureDisabledTextColor() => $_ensure(2);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get color => $_getN(3);
+  $1.DartColorExpression get color => $_getN(3);
   @$pb.TagNumber(10)
-  set color($1.ColorExpression v) { setField(10, v); }
+  set color($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasColor() => $_has(3);
   @$pb.TagNumber(10)
   void clearColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureColor() => $_ensure(3);
+  $1.DartColorExpression ensureColor() => $_ensure(3);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get disabledColor => $_getN(4);
+  $1.DartColorExpression get disabledColor => $_getN(4);
   @$pb.TagNumber(11)
-  set disabledColor($1.ColorExpression v) { setField(11, v); }
+  set disabledColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasDisabledColor() => $_has(4);
   @$pb.TagNumber(11)
   void clearDisabledColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(4);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(4);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get focusColor => $_getN(5);
+  $1.DartColorExpression get focusColor => $_getN(5);
   @$pb.TagNumber(12)
-  set focusColor($1.ColorExpression v) { setField(12, v); }
+  set focusColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasFocusColor() => $_has(5);
   @$pb.TagNumber(12)
   void clearFocusColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureFocusColor() => $_ensure(5);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(5);
 
   @$pb.TagNumber(13)
-  $1.ColorExpression get hoverColor => $_getN(6);
+  $1.DartColorExpression get hoverColor => $_getN(6);
   @$pb.TagNumber(13)
-  set hoverColor($1.ColorExpression v) { setField(13, v); }
+  set hoverColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasHoverColor() => $_has(6);
   @$pb.TagNumber(13)
   void clearHoverColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.ColorExpression ensureHoverColor() => $_ensure(6);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(6);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get highlightColor => $_getN(7);
+  $1.DartColorExpression get highlightColor => $_getN(7);
   @$pb.TagNumber(14)
-  set highlightColor($1.ColorExpression v) { setField(14, v); }
+  set highlightColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasHighlightColor() => $_has(7);
   @$pb.TagNumber(14)
   void clearHighlightColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureHighlightColor() => $_ensure(7);
+  $1.DartColorExpression ensureHighlightColor() => $_ensure(7);
 
   @$pb.TagNumber(15)
-  $1.ColorExpression get splashColor => $_getN(8);
+  $1.DartColorExpression get splashColor => $_getN(8);
   @$pb.TagNumber(15)
-  set splashColor($1.ColorExpression v) { setField(15, v); }
+  set splashColor($1.DartColorExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasSplashColor() => $_has(8);
   @$pb.TagNumber(15)
   void clearSplashColor() => clearField(15);
   @$pb.TagNumber(15)
-  $1.ColorExpression ensureSplashColor() => $_ensure(8);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(8);
 
   @$pb.TagNumber(17)
   $core.double get elevation => $_getN(9);
@@ -21664,15 +21664,15 @@ class MaterialMaterialButton extends $pb.GeneratedMessage {
   void clearAutofocus() => clearField(27);
 
   @$pb.TagNumber(29)
-  $1.DurationExpression get animationDuration => $_getN(15);
+  $1.DartDurationExpression get animationDuration => $_getN(15);
   @$pb.TagNumber(29)
-  set animationDuration($1.DurationExpression v) { setField(29, v); }
+  set animationDuration($1.DartDurationExpression v) { setField(29, v); }
   @$pb.TagNumber(29)
   $core.bool hasAnimationDuration() => $_has(15);
   @$pb.TagNumber(29)
   void clearAnimationDuration() => clearField(29);
   @$pb.TagNumber(29)
-  $1.DurationExpression ensureAnimationDuration() => $_ensure(15);
+  $1.DartDurationExpression ensureAnimationDuration() => $_ensure(15);
 
   @$pb.TagNumber(30)
   $core.double get minWidth => $_getN(16);
@@ -22414,7 +22414,7 @@ class MaterialMergeableMaterial extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.double? elevation,
     $core.bool? hasDividers,
-    $1.ColorExpression? dividerColor,
+    $1.DartColorExpression? dividerColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -22439,7 +22439,7 @@ class MaterialMergeableMaterial extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..aOB(5, _omitFieldNames ? '' : 'hasDividers')
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'dividerColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'dividerColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -22494,29 +22494,29 @@ class MaterialMergeableMaterial extends $pb.GeneratedMessage {
   void clearHasDividers() => clearField(5);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get dividerColor => $_getN(3);
+  $1.DartColorExpression get dividerColor => $_getN(3);
   @$pb.TagNumber(7)
-  set dividerColor($1.ColorExpression v) { setField(7, v); }
+  set dividerColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasDividerColor() => $_has(3);
   @$pb.TagNumber(7)
   void clearDividerColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureDividerColor() => $_ensure(3);
+  $1.DartColorExpression ensureDividerColor() => $_ensure(3);
 }
 
 /// package:flutter/src/material/navigation_bar.dart
 class MaterialNavigationBar extends $pb.GeneratedMessage {
   factory MaterialNavigationBar({
     $1.FlutterKeyExpression? key,
-    $1.DurationExpression? animationDuration,
+    $1.DartDurationExpression? animationDuration,
     $core.int? selectedIndex,
     $core.Iterable<WidgetExpression>? destinations,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
-    $1.ColorExpression? indicatorColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
+    $1.DartColorExpression? indicatorColor,
     $core.double? height,
   }) {
     final $result = create();
@@ -22558,14 +22558,14 @@ class MaterialNavigationBar extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialNavigationBar', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.DurationExpression>(3, _omitFieldNames ? '' : 'animationDuration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(3, _omitFieldNames ? '' : 'animationDuration', subBuilder: $1.DartDurationExpression.create)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'selectedIndex', $pb.PbFieldType.O3)
     ..pc<WidgetExpression>(5, _omitFieldNames ? '' : 'destinations', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'indicatorColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'indicatorColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(13, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -22603,15 +22603,15 @@ class MaterialNavigationBar extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.DurationExpression get animationDuration => $_getN(1);
+  $1.DartDurationExpression get animationDuration => $_getN(1);
   @$pb.TagNumber(3)
-  set animationDuration($1.DurationExpression v) { setField(3, v); }
+  set animationDuration($1.DartDurationExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasAnimationDuration() => $_has(1);
   @$pb.TagNumber(3)
   void clearAnimationDuration() => clearField(3);
   @$pb.TagNumber(3)
-  $1.DurationExpression ensureAnimationDuration() => $_ensure(1);
+  $1.DartDurationExpression ensureAnimationDuration() => $_ensure(1);
 
   @$pb.TagNumber(4)
   $core.int get selectedIndex => $_getIZ(2);
@@ -22626,15 +22626,15 @@ class MaterialNavigationBar extends $pb.GeneratedMessage {
   $core.List<WidgetExpression> get destinations => $_getList(3);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get backgroundColor => $_getN(4);
+  $1.DartColorExpression get backgroundColor => $_getN(4);
   @$pb.TagNumber(7)
-  set backgroundColor($1.ColorExpression v) { setField(7, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasBackgroundColor() => $_has(4);
   @$pb.TagNumber(7)
   void clearBackgroundColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(4);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(4);
 
   @$pb.TagNumber(8)
   $core.double get elevation => $_getN(5);
@@ -22646,37 +22646,37 @@ class MaterialNavigationBar extends $pb.GeneratedMessage {
   void clearElevation() => clearField(8);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get shadowColor => $_getN(6);
+  $1.DartColorExpression get shadowColor => $_getN(6);
   @$pb.TagNumber(9)
-  set shadowColor($1.ColorExpression v) { setField(9, v); }
+  set shadowColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasShadowColor() => $_has(6);
   @$pb.TagNumber(9)
   void clearShadowColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureShadowColor() => $_ensure(6);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(6);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get surfaceTintColor => $_getN(7);
+  $1.DartColorExpression get surfaceTintColor => $_getN(7);
   @$pb.TagNumber(10)
-  set surfaceTintColor($1.ColorExpression v) { setField(10, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasSurfaceTintColor() => $_has(7);
   @$pb.TagNumber(10)
   void clearSurfaceTintColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(7);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(7);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get indicatorColor => $_getN(8);
+  $1.DartColorExpression get indicatorColor => $_getN(8);
   @$pb.TagNumber(11)
-  set indicatorColor($1.ColorExpression v) { setField(11, v); }
+  set indicatorColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasIndicatorColor() => $_has(8);
   @$pb.TagNumber(11)
   void clearIndicatorColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureIndicatorColor() => $_ensure(8);
+  $1.DartColorExpression ensureIndicatorColor() => $_ensure(8);
 
   @$pb.TagNumber(13)
   $core.double get height => $_getN(9);
@@ -22806,11 +22806,11 @@ class MaterialNavigationDrawer extends $pb.GeneratedMessage {
   factory MaterialNavigationDrawer({
     $1.FlutterKeyExpression? key,
     $core.Iterable<WidgetExpression>? children,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? shadowColor,
-    $1.ColorExpression? surfaceTintColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? shadowColor,
+    $1.DartColorExpression? surfaceTintColor,
     $core.double? elevation,
-    $1.ColorExpression? indicatorColor,
+    $1.DartColorExpression? indicatorColor,
     $core.int? selectedIndex,
   }) {
     final $result = create();
@@ -22847,11 +22847,11 @@ class MaterialNavigationDrawer extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialNavigationDrawer', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..pc<WidgetExpression>(3, _omitFieldNames ? '' : 'children', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'indicatorColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'indicatorColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.int>(11, _omitFieldNames ? '' : 'selectedIndex', $pb.PbFieldType.O3)
     ..hasRequiredFields = false
   ;
@@ -22892,37 +22892,37 @@ class MaterialNavigationDrawer extends $pb.GeneratedMessage {
   $core.List<WidgetExpression> get children => $_getList(1);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get backgroundColor => $_getN(2);
+  $1.DartColorExpression get backgroundColor => $_getN(2);
   @$pb.TagNumber(4)
-  set backgroundColor($1.ColorExpression v) { setField(4, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBackgroundColor() => $_has(2);
   @$pb.TagNumber(4)
   void clearBackgroundColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(2);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(2);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get shadowColor => $_getN(3);
+  $1.DartColorExpression get shadowColor => $_getN(3);
   @$pb.TagNumber(5)
-  set shadowColor($1.ColorExpression v) { setField(5, v); }
+  set shadowColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasShadowColor() => $_has(3);
   @$pb.TagNumber(5)
   void clearShadowColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureShadowColor() => $_ensure(3);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(3);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get surfaceTintColor => $_getN(4);
+  $1.DartColorExpression get surfaceTintColor => $_getN(4);
   @$pb.TagNumber(6)
-  set surfaceTintColor($1.ColorExpression v) { setField(6, v); }
+  set surfaceTintColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasSurfaceTintColor() => $_has(4);
   @$pb.TagNumber(6)
   void clearSurfaceTintColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureSurfaceTintColor() => $_ensure(4);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(4);
 
   @$pb.TagNumber(7)
   $core.double get elevation => $_getN(5);
@@ -22934,15 +22934,15 @@ class MaterialNavigationDrawer extends $pb.GeneratedMessage {
   void clearElevation() => clearField(7);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get indicatorColor => $_getN(6);
+  $1.DartColorExpression get indicatorColor => $_getN(6);
   @$pb.TagNumber(8)
-  set indicatorColor($1.ColorExpression v) { setField(8, v); }
+  set indicatorColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasIndicatorColor() => $_has(6);
   @$pb.TagNumber(8)
   void clearIndicatorColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureIndicatorColor() => $_ensure(6);
+  $1.DartColorExpression ensureIndicatorColor() => $_ensure(6);
 
   @$pb.TagNumber(11)
   $core.int get selectedIndex => $_getIZ(7);
@@ -22958,7 +22958,7 @@ class MaterialNavigationDrawer extends $pb.GeneratedMessage {
 class MaterialNavigationDrawerDestination extends $pb.GeneratedMessage {
   factory MaterialNavigationDrawerDestination({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     WidgetExpression? icon,
     WidgetExpression? selectedIcon,
     WidgetExpression? label,
@@ -22987,7 +22987,7 @@ class MaterialNavigationDrawerDestination extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialNavigationDrawerDestination', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'icon', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'selectedIcon', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(6, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
@@ -23027,15 +23027,15 @@ class MaterialNavigationDrawerDestination extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get backgroundColor => $_getN(1);
+  $1.DartColorExpression get backgroundColor => $_getN(1);
   @$pb.TagNumber(3)
-  set backgroundColor($1.ColorExpression v) { setField(3, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBackgroundColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearBackgroundColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(1);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(1);
 
   @$pb.TagNumber(4)
   WidgetExpression get icon => $_getN(2);
@@ -23533,8 +23533,8 @@ class MaterialCircularProgressIndicator extends $pb.GeneratedMessage {
   factory MaterialCircularProgressIndicator({
     $1.FlutterKeyExpression? key,
     $core.double? value,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? color,
     $core.double? strokeWidth,
     $core.double? strokeAlign,
     $core.String? semanticsLabel,
@@ -23574,8 +23574,8 @@ class MaterialCircularProgressIndicator extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialCircularProgressIndicator', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'strokeWidth', $pb.PbFieldType.OD)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'strokeAlign', $pb.PbFieldType.OD)
     ..aOS(9, _omitFieldNames ? '' : 'semanticsLabel')
@@ -23625,26 +23625,26 @@ class MaterialCircularProgressIndicator extends $pb.GeneratedMessage {
   void clearValue() => clearField(3);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get backgroundColor => $_getN(2);
+  $1.DartColorExpression get backgroundColor => $_getN(2);
   @$pb.TagNumber(4)
-  set backgroundColor($1.ColorExpression v) { setField(4, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBackgroundColor() => $_has(2);
   @$pb.TagNumber(4)
   void clearBackgroundColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(2);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(2);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get color => $_getN(3);
+  $1.DartColorExpression get color => $_getN(3);
   @$pb.TagNumber(5)
-  set color($1.ColorExpression v) { setField(5, v); }
+  set color($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasColor() => $_has(3);
   @$pb.TagNumber(5)
   void clearColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureColor() => $_ensure(3);
+  $1.DartColorExpression ensureColor() => $_ensure(3);
 
   @$pb.TagNumber(7)
   $core.double get strokeWidth => $_getN(4);
@@ -23688,7 +23688,7 @@ class MaterialCircularProgressIndicatorNamedAdaptive extends $pb.GeneratedMessag
   factory MaterialCircularProgressIndicatorNamedAdaptive({
     $1.FlutterKeyExpression? key,
     $core.double? value,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? strokeWidth,
     $core.String? semanticsLabel,
     $core.String? semanticsValue,
@@ -23725,7 +23725,7 @@ class MaterialCircularProgressIndicatorNamedAdaptive extends $pb.GeneratedMessag
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialCircularProgressIndicatorNamedAdaptive', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'strokeWidth', $pb.PbFieldType.OD)
     ..aOS(7, _omitFieldNames ? '' : 'semanticsLabel')
     ..aOS(8, _omitFieldNames ? '' : 'semanticsValue')
@@ -23775,15 +23775,15 @@ class MaterialCircularProgressIndicatorNamedAdaptive extends $pb.GeneratedMessag
   void clearValue() => clearField(3);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get backgroundColor => $_getN(2);
+  $1.DartColorExpression get backgroundColor => $_getN(2);
   @$pb.TagNumber(4)
-  set backgroundColor($1.ColorExpression v) { setField(4, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBackgroundColor() => $_has(2);
   @$pb.TagNumber(4)
   void clearBackgroundColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(2);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(2);
 
   @$pb.TagNumber(6)
   $core.double get strokeWidth => $_getN(3);
@@ -23827,8 +23827,8 @@ class MaterialLinearProgressIndicator extends $pb.GeneratedMessage {
   factory MaterialLinearProgressIndicator({
     $1.FlutterKeyExpression? key,
     $core.double? value,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? color,
     $core.double? minHeight,
     $core.String? semanticsLabel,
     $core.String? semanticsValue,
@@ -23864,8 +23864,8 @@ class MaterialLinearProgressIndicator extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialLinearProgressIndicator', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'minHeight', $pb.PbFieldType.OD)
     ..aOS(8, _omitFieldNames ? '' : 'semanticsLabel')
     ..aOS(9, _omitFieldNames ? '' : 'semanticsValue')
@@ -23914,26 +23914,26 @@ class MaterialLinearProgressIndicator extends $pb.GeneratedMessage {
   void clearValue() => clearField(3);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get backgroundColor => $_getN(2);
+  $1.DartColorExpression get backgroundColor => $_getN(2);
   @$pb.TagNumber(4)
-  set backgroundColor($1.ColorExpression v) { setField(4, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBackgroundColor() => $_has(2);
   @$pb.TagNumber(4)
   void clearBackgroundColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(2);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(2);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get color => $_getN(3);
+  $1.DartColorExpression get color => $_getN(3);
   @$pb.TagNumber(5)
-  set color($1.ColorExpression v) { setField(5, v); }
+  set color($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasColor() => $_has(3);
   @$pb.TagNumber(5)
   void clearColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureColor() => $_ensure(3);
+  $1.DartColorExpression ensureColor() => $_ensure(3);
 
   @$pb.TagNumber(7)
   $core.double get minHeight => $_getN(4);
@@ -23968,8 +23968,8 @@ class MaterialRefreshProgressIndicator extends $pb.GeneratedMessage {
   factory MaterialRefreshProgressIndicator({
     $1.FlutterKeyExpression? key,
     $core.double? value,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? color,
     $core.double? strokeWidth,
     $core.double? strokeAlign,
     $core.String? semanticsLabel,
@@ -24009,8 +24009,8 @@ class MaterialRefreshProgressIndicator extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialRefreshProgressIndicator', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'strokeWidth', $pb.PbFieldType.OD)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'strokeAlign', $pb.PbFieldType.OD)
     ..aOS(9, _omitFieldNames ? '' : 'semanticsLabel')
@@ -24060,26 +24060,26 @@ class MaterialRefreshProgressIndicator extends $pb.GeneratedMessage {
   void clearValue() => clearField(3);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get backgroundColor => $_getN(2);
+  $1.DartColorExpression get backgroundColor => $_getN(2);
   @$pb.TagNumber(4)
-  set backgroundColor($1.ColorExpression v) { setField(4, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBackgroundColor() => $_has(2);
   @$pb.TagNumber(4)
   void clearBackgroundColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(2);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(2);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get color => $_getN(3);
+  $1.DartColorExpression get color => $_getN(3);
   @$pb.TagNumber(5)
-  set color($1.ColorExpression v) { setField(5, v); }
+  set color($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasColor() => $_has(3);
   @$pb.TagNumber(5)
   void clearColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureColor() => $_ensure(3);
+  $1.DartColorExpression ensureColor() => $_ensure(3);
 
   @$pb.TagNumber(7)
   $core.double get strokeWidth => $_getN(4);
@@ -24129,12 +24129,12 @@ class MaterialScaffold extends $pb.GeneratedMessage {
     WidgetExpression? endDrawer,
     WidgetExpression? bottomNavigationBar,
     WidgetExpression? bottomSheet,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.bool? resizeToAvoidBottomInset,
     $core.bool? primary,
     $core.bool? extendBody,
     $core.bool? extendBodyBehindAppBar,
-    $1.ColorExpression? drawerScrimColor,
+    $1.DartColorExpression? drawerScrimColor,
     $core.double? drawerEdgeDragWidth,
     $core.bool? drawerEnableOpenDragGesture,
     $core.bool? endDrawerEnableOpenDragGesture,
@@ -24210,12 +24210,12 @@ class MaterialScaffold extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(12, _omitFieldNames ? '' : 'endDrawer', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(14, _omitFieldNames ? '' : 'bottomNavigationBar', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(15, _omitFieldNames ? '' : 'bottomSheet', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(16, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(16, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(17, _omitFieldNames ? '' : 'resizeToAvoidBottomInset')
     ..aOB(18, _omitFieldNames ? '' : 'primary')
     ..aOB(20, _omitFieldNames ? '' : 'extendBody')
     ..aOB(21, _omitFieldNames ? '' : 'extendBodyBehindAppBar')
-    ..aOM<$1.ColorExpression>(22, _omitFieldNames ? '' : 'drawerScrimColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(22, _omitFieldNames ? '' : 'drawerScrimColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(23, _omitFieldNames ? '' : 'drawerEdgeDragWidth', $pb.PbFieldType.OD)
     ..aOB(24, _omitFieldNames ? '' : 'drawerEnableOpenDragGesture')
     ..aOB(25, _omitFieldNames ? '' : 'endDrawerEnableOpenDragGesture')
@@ -24325,15 +24325,15 @@ class MaterialScaffold extends $pb.GeneratedMessage {
   WidgetExpression ensureBottomSheet() => $_ensure(7);
 
   @$pb.TagNumber(16)
-  $1.ColorExpression get backgroundColor => $_getN(8);
+  $1.DartColorExpression get backgroundColor => $_getN(8);
   @$pb.TagNumber(16)
-  set backgroundColor($1.ColorExpression v) { setField(16, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasBackgroundColor() => $_has(8);
   @$pb.TagNumber(16)
   void clearBackgroundColor() => clearField(16);
   @$pb.TagNumber(16)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(8);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(8);
 
   @$pb.TagNumber(17)
   $core.bool get resizeToAvoidBottomInset => $_getBF(9);
@@ -24372,15 +24372,15 @@ class MaterialScaffold extends $pb.GeneratedMessage {
   void clearExtendBodyBehindAppBar() => clearField(21);
 
   @$pb.TagNumber(22)
-  $1.ColorExpression get drawerScrimColor => $_getN(13);
+  $1.DartColorExpression get drawerScrimColor => $_getN(13);
   @$pb.TagNumber(22)
-  set drawerScrimColor($1.ColorExpression v) { setField(22, v); }
+  set drawerScrimColor($1.DartColorExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasDrawerScrimColor() => $_has(13);
   @$pb.TagNumber(22)
   void clearDrawerScrimColor() => clearField(22);
   @$pb.TagNumber(22)
-  $1.ColorExpression ensureDrawerScrimColor() => $_ensure(13);
+  $1.DartColorExpression ensureDrawerScrimColor() => $_ensure(13);
 
   @$pb.TagNumber(23)
   $core.double get drawerEdgeDragWidth => $_getN(14);
@@ -24716,7 +24716,7 @@ class MaterialSelectableText extends $pb.GeneratedMessage {
     $core.int? maxLines,
     $core.double? cursorWidth,
     $core.double? cursorHeight,
-    $1.ColorExpression? cursorColor,
+    $1.DartColorExpression? cursorColor,
     $core.bool? enableInteractiveSelection,
     $core.String? semanticsLabel,
   }) {
@@ -24773,7 +24773,7 @@ class MaterialSelectableText extends $pb.GeneratedMessage {
     ..a<$core.int>(13, _omitFieldNames ? '' : 'maxLines', $pb.PbFieldType.O3)
     ..a<$core.double>(14, _omitFieldNames ? '' : 'cursorWidth', $pb.PbFieldType.OD)
     ..a<$core.double>(15, _omitFieldNames ? '' : 'cursorHeight', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(17, _omitFieldNames ? '' : 'cursorColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(17, _omitFieldNames ? '' : 'cursorColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(21, _omitFieldNames ? '' : 'enableInteractiveSelection')
     ..aOS(25, _omitFieldNames ? '' : 'semanticsLabel')
     ..hasRequiredFields = false
@@ -24884,15 +24884,15 @@ class MaterialSelectableText extends $pb.GeneratedMessage {
   void clearCursorHeight() => clearField(15);
 
   @$pb.TagNumber(17)
-  $1.ColorExpression get cursorColor => $_getN(9);
+  $1.DartColorExpression get cursorColor => $_getN(9);
   @$pb.TagNumber(17)
-  set cursorColor($1.ColorExpression v) { setField(17, v); }
+  set cursorColor($1.DartColorExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasCursorColor() => $_has(9);
   @$pb.TagNumber(17)
   void clearCursorColor() => clearField(17);
   @$pb.TagNumber(17)
-  $1.ColorExpression ensureCursorColor() => $_ensure(9);
+  $1.DartColorExpression ensureCursorColor() => $_ensure(9);
 
   @$pb.TagNumber(21)
   $core.bool get enableInteractiveSelection => $_getBF(10);
@@ -24992,10 +24992,10 @@ class MaterialSlider extends $pb.GeneratedMessage {
     $core.double? max,
     $core.int? divisions,
     $core.String? label,
-    $1.ColorExpression? activeColor,
-    $1.ColorExpression? inactiveColor,
-    $1.ColorExpression? secondaryActiveColor,
-    $1.ColorExpression? thumbColor,
+    $1.DartColorExpression? activeColor,
+    $1.DartColorExpression? inactiveColor,
+    $1.DartColorExpression? secondaryActiveColor,
+    $1.DartColorExpression? thumbColor,
     $core.bool? autofocus,
   }) {
     final $result = create();
@@ -25049,10 +25049,10 @@ class MaterialSlider extends $pb.GeneratedMessage {
     ..a<$core.double>(9, _omitFieldNames ? '' : 'max', $pb.PbFieldType.OD)
     ..a<$core.int>(10, _omitFieldNames ? '' : 'divisions', $pb.PbFieldType.O3)
     ..aOS(11, _omitFieldNames ? '' : 'label')
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(13, _omitFieldNames ? '' : 'inactiveColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'secondaryActiveColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(15, _omitFieldNames ? '' : 'thumbColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(13, _omitFieldNames ? '' : 'inactiveColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'secondaryActiveColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(15, _omitFieldNames ? '' : 'thumbColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(20, _omitFieldNames ? '' : 'autofocus')
     ..hasRequiredFields = false
   ;
@@ -25144,48 +25144,48 @@ class MaterialSlider extends $pb.GeneratedMessage {
   void clearLabel() => clearField(11);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get activeColor => $_getN(7);
+  $1.DartColorExpression get activeColor => $_getN(7);
   @$pb.TagNumber(12)
-  set activeColor($1.ColorExpression v) { setField(12, v); }
+  set activeColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasActiveColor() => $_has(7);
   @$pb.TagNumber(12)
   void clearActiveColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureActiveColor() => $_ensure(7);
+  $1.DartColorExpression ensureActiveColor() => $_ensure(7);
 
   @$pb.TagNumber(13)
-  $1.ColorExpression get inactiveColor => $_getN(8);
+  $1.DartColorExpression get inactiveColor => $_getN(8);
   @$pb.TagNumber(13)
-  set inactiveColor($1.ColorExpression v) { setField(13, v); }
+  set inactiveColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasInactiveColor() => $_has(8);
   @$pb.TagNumber(13)
   void clearInactiveColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.ColorExpression ensureInactiveColor() => $_ensure(8);
+  $1.DartColorExpression ensureInactiveColor() => $_ensure(8);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get secondaryActiveColor => $_getN(9);
+  $1.DartColorExpression get secondaryActiveColor => $_getN(9);
   @$pb.TagNumber(14)
-  set secondaryActiveColor($1.ColorExpression v) { setField(14, v); }
+  set secondaryActiveColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasSecondaryActiveColor() => $_has(9);
   @$pb.TagNumber(14)
   void clearSecondaryActiveColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureSecondaryActiveColor() => $_ensure(9);
+  $1.DartColorExpression ensureSecondaryActiveColor() => $_ensure(9);
 
   @$pb.TagNumber(15)
-  $1.ColorExpression get thumbColor => $_getN(10);
+  $1.DartColorExpression get thumbColor => $_getN(10);
   @$pb.TagNumber(15)
-  set thumbColor($1.ColorExpression v) { setField(15, v); }
+  set thumbColor($1.DartColorExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasThumbColor() => $_has(10);
   @$pb.TagNumber(15)
   void clearThumbColor() => clearField(15);
   @$pb.TagNumber(15)
-  $1.ColorExpression ensureThumbColor() => $_ensure(10);
+  $1.DartColorExpression ensureThumbColor() => $_ensure(10);
 
   @$pb.TagNumber(20)
   $core.bool get autofocus => $_getBF(11);
@@ -25207,10 +25207,10 @@ class MaterialSliderNamedAdaptive extends $pb.GeneratedMessage {
     $core.double? max,
     $core.int? divisions,
     $core.String? label,
-    $1.ColorExpression? activeColor,
-    $1.ColorExpression? inactiveColor,
-    $1.ColorExpression? secondaryActiveColor,
-    $1.ColorExpression? thumbColor,
+    $1.DartColorExpression? activeColor,
+    $1.DartColorExpression? inactiveColor,
+    $1.DartColorExpression? secondaryActiveColor,
+    $1.DartColorExpression? thumbColor,
     $core.bool? autofocus,
   }) {
     final $result = create();
@@ -25264,10 +25264,10 @@ class MaterialSliderNamedAdaptive extends $pb.GeneratedMessage {
     ..a<$core.double>(9, _omitFieldNames ? '' : 'max', $pb.PbFieldType.OD)
     ..a<$core.int>(10, _omitFieldNames ? '' : 'divisions', $pb.PbFieldType.O3)
     ..aOS(11, _omitFieldNames ? '' : 'label')
-    ..aOM<$1.ColorExpression>(13, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'inactiveColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(15, _omitFieldNames ? '' : 'secondaryActiveColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(16, _omitFieldNames ? '' : 'thumbColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(13, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'inactiveColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(15, _omitFieldNames ? '' : 'secondaryActiveColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(16, _omitFieldNames ? '' : 'thumbColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(20, _omitFieldNames ? '' : 'autofocus')
     ..hasRequiredFields = false
   ;
@@ -25359,48 +25359,48 @@ class MaterialSliderNamedAdaptive extends $pb.GeneratedMessage {
   void clearLabel() => clearField(11);
 
   @$pb.TagNumber(13)
-  $1.ColorExpression get activeColor => $_getN(7);
+  $1.DartColorExpression get activeColor => $_getN(7);
   @$pb.TagNumber(13)
-  set activeColor($1.ColorExpression v) { setField(13, v); }
+  set activeColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasActiveColor() => $_has(7);
   @$pb.TagNumber(13)
   void clearActiveColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.ColorExpression ensureActiveColor() => $_ensure(7);
+  $1.DartColorExpression ensureActiveColor() => $_ensure(7);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get inactiveColor => $_getN(8);
+  $1.DartColorExpression get inactiveColor => $_getN(8);
   @$pb.TagNumber(14)
-  set inactiveColor($1.ColorExpression v) { setField(14, v); }
+  set inactiveColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasInactiveColor() => $_has(8);
   @$pb.TagNumber(14)
   void clearInactiveColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureInactiveColor() => $_ensure(8);
+  $1.DartColorExpression ensureInactiveColor() => $_ensure(8);
 
   @$pb.TagNumber(15)
-  $1.ColorExpression get secondaryActiveColor => $_getN(9);
+  $1.DartColorExpression get secondaryActiveColor => $_getN(9);
   @$pb.TagNumber(15)
-  set secondaryActiveColor($1.ColorExpression v) { setField(15, v); }
+  set secondaryActiveColor($1.DartColorExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasSecondaryActiveColor() => $_has(9);
   @$pb.TagNumber(15)
   void clearSecondaryActiveColor() => clearField(15);
   @$pb.TagNumber(15)
-  $1.ColorExpression ensureSecondaryActiveColor() => $_ensure(9);
+  $1.DartColorExpression ensureSecondaryActiveColor() => $_ensure(9);
 
   @$pb.TagNumber(16)
-  $1.ColorExpression get thumbColor => $_getN(10);
+  $1.DartColorExpression get thumbColor => $_getN(10);
   @$pb.TagNumber(16)
-  set thumbColor($1.ColorExpression v) { setField(16, v); }
+  set thumbColor($1.DartColorExpression v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasThumbColor() => $_has(10);
   @$pb.TagNumber(16)
   void clearThumbColor() => clearField(16);
   @$pb.TagNumber(16)
-  $1.ColorExpression ensureThumbColor() => $_ensure(10);
+  $1.DartColorExpression ensureThumbColor() => $_ensure(10);
 
   @$pb.TagNumber(20)
   $core.bool get autofocus => $_getBF(11);
@@ -25417,13 +25417,13 @@ class MaterialSnackBar extends $pb.GeneratedMessage {
   factory MaterialSnackBar({
     $1.FlutterKeyExpression? key,
     WidgetExpression? content,
-    $1.ColorExpression? backgroundColor,
+    $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
     $core.double? width,
     $core.double? actionOverflowThreshold,
     $core.bool? showCloseIcon,
-    $1.ColorExpression? closeIconColor,
-    $1.DurationExpression? duration,
+    $1.DartColorExpression? closeIconColor,
+    $1.DartDurationExpression? duration,
   }) {
     final $result = create();
     if (key != null) {
@@ -25462,13 +25462,13 @@ class MaterialSnackBar extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialSnackBar', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'content', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OD)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'actionOverflowThreshold', $pb.PbFieldType.OD)
     ..aOB(13, _omitFieldNames ? '' : 'showCloseIcon')
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'closeIconColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.DurationExpression>(15, _omitFieldNames ? '' : 'duration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'closeIconColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartDurationExpression>(15, _omitFieldNames ? '' : 'duration', subBuilder: $1.DartDurationExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -25516,15 +25516,15 @@ class MaterialSnackBar extends $pb.GeneratedMessage {
   WidgetExpression ensureContent() => $_ensure(1);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get backgroundColor => $_getN(2);
+  $1.DartColorExpression get backgroundColor => $_getN(2);
   @$pb.TagNumber(4)
-  set backgroundColor($1.ColorExpression v) { setField(4, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBackgroundColor() => $_has(2);
   @$pb.TagNumber(4)
   void clearBackgroundColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(2);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(2);
 
   @$pb.TagNumber(5)
   $core.double get elevation => $_getN(3);
@@ -25563,26 +25563,26 @@ class MaterialSnackBar extends $pb.GeneratedMessage {
   void clearShowCloseIcon() => clearField(13);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get closeIconColor => $_getN(7);
+  $1.DartColorExpression get closeIconColor => $_getN(7);
   @$pb.TagNumber(14)
-  set closeIconColor($1.ColorExpression v) { setField(14, v); }
+  set closeIconColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasCloseIconColor() => $_has(7);
   @$pb.TagNumber(14)
   void clearCloseIconColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureCloseIconColor() => $_ensure(7);
+  $1.DartColorExpression ensureCloseIconColor() => $_ensure(7);
 
   @$pb.TagNumber(15)
-  $1.DurationExpression get duration => $_getN(8);
+  $1.DartDurationExpression get duration => $_getN(8);
   @$pb.TagNumber(15)
-  set duration($1.DurationExpression v) { setField(15, v); }
+  set duration($1.DartDurationExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasDuration() => $_has(8);
   @$pb.TagNumber(15)
   void clearDuration() => clearField(15);
   @$pb.TagNumber(15)
-  $1.DurationExpression ensureDuration() => $_ensure(8);
+  $1.DartDurationExpression ensureDuration() => $_ensure(8);
 }
 
 /// package:flutter/src/material/switch.dart
@@ -25590,12 +25590,12 @@ class MaterialSwitch extends $pb.GeneratedMessage {
   factory MaterialSwitch({
     $1.FlutterKeyExpression? key,
     $core.bool? value,
-    $1.ColorExpression? activeColor,
-    $1.ColorExpression? activeTrackColor,
-    $1.ColorExpression? inactiveThumbColor,
-    $1.ColorExpression? inactiveTrackColor,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
+    $1.DartColorExpression? activeColor,
+    $1.DartColorExpression? activeTrackColor,
+    $1.DartColorExpression? inactiveThumbColor,
+    $1.DartColorExpression? inactiveTrackColor,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
     $core.double? splashRadius,
     $core.bool? autofocus,
   }) {
@@ -25639,12 +25639,12 @@ class MaterialSwitch extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialSwitch', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOB(3, _omitFieldNames ? '' : 'value')
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'activeTrackColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'inactiveThumbColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'inactiveTrackColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(21, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(22, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'activeTrackColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'inactiveThumbColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'inactiveTrackColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(21, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(22, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(24, _omitFieldNames ? '' : 'splashRadius', $pb.PbFieldType.OD)
     ..aOB(27, _omitFieldNames ? '' : 'autofocus')
     ..hasRequiredFields = false
@@ -25692,70 +25692,70 @@ class MaterialSwitch extends $pb.GeneratedMessage {
   void clearValue() => clearField(3);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get activeColor => $_getN(2);
+  $1.DartColorExpression get activeColor => $_getN(2);
   @$pb.TagNumber(5)
-  set activeColor($1.ColorExpression v) { setField(5, v); }
+  set activeColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasActiveColor() => $_has(2);
   @$pb.TagNumber(5)
   void clearActiveColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureActiveColor() => $_ensure(2);
+  $1.DartColorExpression ensureActiveColor() => $_ensure(2);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get activeTrackColor => $_getN(3);
+  $1.DartColorExpression get activeTrackColor => $_getN(3);
   @$pb.TagNumber(6)
-  set activeTrackColor($1.ColorExpression v) { setField(6, v); }
+  set activeTrackColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasActiveTrackColor() => $_has(3);
   @$pb.TagNumber(6)
   void clearActiveTrackColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureActiveTrackColor() => $_ensure(3);
+  $1.DartColorExpression ensureActiveTrackColor() => $_ensure(3);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get inactiveThumbColor => $_getN(4);
+  $1.DartColorExpression get inactiveThumbColor => $_getN(4);
   @$pb.TagNumber(7)
-  set inactiveThumbColor($1.ColorExpression v) { setField(7, v); }
+  set inactiveThumbColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasInactiveThumbColor() => $_has(4);
   @$pb.TagNumber(7)
   void clearInactiveThumbColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureInactiveThumbColor() => $_ensure(4);
+  $1.DartColorExpression ensureInactiveThumbColor() => $_ensure(4);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get inactiveTrackColor => $_getN(5);
+  $1.DartColorExpression get inactiveTrackColor => $_getN(5);
   @$pb.TagNumber(8)
-  set inactiveTrackColor($1.ColorExpression v) { setField(8, v); }
+  set inactiveTrackColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasInactiveTrackColor() => $_has(5);
   @$pb.TagNumber(8)
   void clearInactiveTrackColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureInactiveTrackColor() => $_ensure(5);
+  $1.DartColorExpression ensureInactiveTrackColor() => $_ensure(5);
 
   @$pb.TagNumber(21)
-  $1.ColorExpression get focusColor => $_getN(6);
+  $1.DartColorExpression get focusColor => $_getN(6);
   @$pb.TagNumber(21)
-  set focusColor($1.ColorExpression v) { setField(21, v); }
+  set focusColor($1.DartColorExpression v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasFocusColor() => $_has(6);
   @$pb.TagNumber(21)
   void clearFocusColor() => clearField(21);
   @$pb.TagNumber(21)
-  $1.ColorExpression ensureFocusColor() => $_ensure(6);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(6);
 
   @$pb.TagNumber(22)
-  $1.ColorExpression get hoverColor => $_getN(7);
+  $1.DartColorExpression get hoverColor => $_getN(7);
   @$pb.TagNumber(22)
-  set hoverColor($1.ColorExpression v) { setField(22, v); }
+  set hoverColor($1.DartColorExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasHoverColor() => $_has(7);
   @$pb.TagNumber(22)
   void clearHoverColor() => clearField(22);
   @$pb.TagNumber(22)
-  $1.ColorExpression ensureHoverColor() => $_ensure(7);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(7);
 
   @$pb.TagNumber(24)
   $core.double get splashRadius => $_getN(8);
@@ -25781,12 +25781,12 @@ class MaterialSwitchNamedAdaptive extends $pb.GeneratedMessage {
   factory MaterialSwitchNamedAdaptive({
     $1.FlutterKeyExpression? key,
     $core.bool? value,
-    $1.ColorExpression? activeColor,
-    $1.ColorExpression? activeTrackColor,
-    $1.ColorExpression? inactiveThumbColor,
-    $1.ColorExpression? inactiveTrackColor,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? hoverColor,
+    $1.DartColorExpression? activeColor,
+    $1.DartColorExpression? activeTrackColor,
+    $1.DartColorExpression? inactiveThumbColor,
+    $1.DartColorExpression? inactiveTrackColor,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? hoverColor,
     $core.double? splashRadius,
     $core.bool? autofocus,
     $core.bool? applyCupertinoTheme,
@@ -25834,12 +25834,12 @@ class MaterialSwitchNamedAdaptive extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialSwitchNamedAdaptive', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOB(3, _omitFieldNames ? '' : 'value')
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'activeTrackColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'inactiveThumbColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'inactiveTrackColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(21, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(22, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'activeTrackColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'inactiveThumbColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'inactiveTrackColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(21, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(22, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(24, _omitFieldNames ? '' : 'splashRadius', $pb.PbFieldType.OD)
     ..aOB(27, _omitFieldNames ? '' : 'autofocus')
     ..aOB(28, _omitFieldNames ? '' : 'applyCupertinoTheme')
@@ -25888,70 +25888,70 @@ class MaterialSwitchNamedAdaptive extends $pb.GeneratedMessage {
   void clearValue() => clearField(3);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get activeColor => $_getN(2);
+  $1.DartColorExpression get activeColor => $_getN(2);
   @$pb.TagNumber(5)
-  set activeColor($1.ColorExpression v) { setField(5, v); }
+  set activeColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasActiveColor() => $_has(2);
   @$pb.TagNumber(5)
   void clearActiveColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureActiveColor() => $_ensure(2);
+  $1.DartColorExpression ensureActiveColor() => $_ensure(2);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get activeTrackColor => $_getN(3);
+  $1.DartColorExpression get activeTrackColor => $_getN(3);
   @$pb.TagNumber(6)
-  set activeTrackColor($1.ColorExpression v) { setField(6, v); }
+  set activeTrackColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasActiveTrackColor() => $_has(3);
   @$pb.TagNumber(6)
   void clearActiveTrackColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureActiveTrackColor() => $_ensure(3);
+  $1.DartColorExpression ensureActiveTrackColor() => $_ensure(3);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get inactiveThumbColor => $_getN(4);
+  $1.DartColorExpression get inactiveThumbColor => $_getN(4);
   @$pb.TagNumber(7)
-  set inactiveThumbColor($1.ColorExpression v) { setField(7, v); }
+  set inactiveThumbColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasInactiveThumbColor() => $_has(4);
   @$pb.TagNumber(7)
   void clearInactiveThumbColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureInactiveThumbColor() => $_ensure(4);
+  $1.DartColorExpression ensureInactiveThumbColor() => $_ensure(4);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get inactiveTrackColor => $_getN(5);
+  $1.DartColorExpression get inactiveTrackColor => $_getN(5);
   @$pb.TagNumber(8)
-  set inactiveTrackColor($1.ColorExpression v) { setField(8, v); }
+  set inactiveTrackColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasInactiveTrackColor() => $_has(5);
   @$pb.TagNumber(8)
   void clearInactiveTrackColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureInactiveTrackColor() => $_ensure(5);
+  $1.DartColorExpression ensureInactiveTrackColor() => $_ensure(5);
 
   @$pb.TagNumber(21)
-  $1.ColorExpression get focusColor => $_getN(6);
+  $1.DartColorExpression get focusColor => $_getN(6);
   @$pb.TagNumber(21)
-  set focusColor($1.ColorExpression v) { setField(21, v); }
+  set focusColor($1.DartColorExpression v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasFocusColor() => $_has(6);
   @$pb.TagNumber(21)
   void clearFocusColor() => clearField(21);
   @$pb.TagNumber(21)
-  $1.ColorExpression ensureFocusColor() => $_ensure(6);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(6);
 
   @$pb.TagNumber(22)
-  $1.ColorExpression get hoverColor => $_getN(7);
+  $1.DartColorExpression get hoverColor => $_getN(7);
   @$pb.TagNumber(22)
-  set hoverColor($1.ColorExpression v) { setField(22, v); }
+  set hoverColor($1.DartColorExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasHoverColor() => $_has(7);
   @$pb.TagNumber(22)
   void clearHoverColor() => clearField(22);
   @$pb.TagNumber(22)
-  $1.ColorExpression ensureHoverColor() => $_ensure(7);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(7);
 
   @$pb.TagNumber(24)
   $core.double get splashRadius => $_getN(8);
@@ -25986,22 +25986,22 @@ class MaterialSwitchListTile extends $pb.GeneratedMessage {
   factory MaterialSwitchListTile({
     $1.FlutterKeyExpression? key,
     $core.bool? value,
-    $1.ColorExpression? activeColor,
-    $1.ColorExpression? activeTrackColor,
-    $1.ColorExpression? inactiveThumbColor,
-    $1.ColorExpression? inactiveTrackColor,
+    $1.DartColorExpression? activeColor,
+    $1.DartColorExpression? activeTrackColor,
+    $1.DartColorExpression? inactiveThumbColor,
+    $1.DartColorExpression? inactiveTrackColor,
     $core.double? splashRadius,
     $core.bool? autofocus,
-    $1.ColorExpression? tileColor,
+    $1.DartColorExpression? tileColor,
     WidgetExpression? title,
     WidgetExpression? subtitle,
     $core.bool? isThreeLine,
     $core.bool? dense,
     WidgetExpression? secondary,
     $core.bool? selected,
-    $1.ColorExpression? selectedTileColor,
+    $1.DartColorExpression? selectedTileColor,
     $core.bool? enableFeedback,
-    $1.ColorExpression? hoverColor,
+    $1.DartColorExpression? hoverColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -26067,22 +26067,22 @@ class MaterialSwitchListTile extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialSwitchListTile', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOB(3, _omitFieldNames ? '' : 'value')
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'activeTrackColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'inactiveThumbColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'inactiveTrackColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'activeTrackColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'inactiveThumbColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'inactiveTrackColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(21, _omitFieldNames ? '' : 'splashRadius', $pb.PbFieldType.OD)
     ..aOB(24, _omitFieldNames ? '' : 'autofocus')
-    ..aOM<$1.ColorExpression>(25, _omitFieldNames ? '' : 'tileColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(25, _omitFieldNames ? '' : 'tileColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<WidgetExpression>(26, _omitFieldNames ? '' : 'title', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(27, _omitFieldNames ? '' : 'subtitle', subBuilder: WidgetExpression.create)
     ..aOB(28, _omitFieldNames ? '' : 'isThreeLine')
     ..aOB(29, _omitFieldNames ? '' : 'dense')
     ..aOM<WidgetExpression>(31, _omitFieldNames ? '' : 'secondary', subBuilder: WidgetExpression.create)
     ..aOB(32, _omitFieldNames ? '' : 'selected')
-    ..aOM<$1.ColorExpression>(35, _omitFieldNames ? '' : 'selectedTileColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(35, _omitFieldNames ? '' : 'selectedTileColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(37, _omitFieldNames ? '' : 'enableFeedback')
-    ..aOM<$1.ColorExpression>(38, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(38, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -26128,48 +26128,48 @@ class MaterialSwitchListTile extends $pb.GeneratedMessage {
   void clearValue() => clearField(3);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get activeColor => $_getN(2);
+  $1.DartColorExpression get activeColor => $_getN(2);
   @$pb.TagNumber(5)
-  set activeColor($1.ColorExpression v) { setField(5, v); }
+  set activeColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasActiveColor() => $_has(2);
   @$pb.TagNumber(5)
   void clearActiveColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureActiveColor() => $_ensure(2);
+  $1.DartColorExpression ensureActiveColor() => $_ensure(2);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get activeTrackColor => $_getN(3);
+  $1.DartColorExpression get activeTrackColor => $_getN(3);
   @$pb.TagNumber(6)
-  set activeTrackColor($1.ColorExpression v) { setField(6, v); }
+  set activeTrackColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasActiveTrackColor() => $_has(3);
   @$pb.TagNumber(6)
   void clearActiveTrackColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureActiveTrackColor() => $_ensure(3);
+  $1.DartColorExpression ensureActiveTrackColor() => $_ensure(3);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get inactiveThumbColor => $_getN(4);
+  $1.DartColorExpression get inactiveThumbColor => $_getN(4);
   @$pb.TagNumber(7)
-  set inactiveThumbColor($1.ColorExpression v) { setField(7, v); }
+  set inactiveThumbColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasInactiveThumbColor() => $_has(4);
   @$pb.TagNumber(7)
   void clearInactiveThumbColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureInactiveThumbColor() => $_ensure(4);
+  $1.DartColorExpression ensureInactiveThumbColor() => $_ensure(4);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get inactiveTrackColor => $_getN(5);
+  $1.DartColorExpression get inactiveTrackColor => $_getN(5);
   @$pb.TagNumber(8)
-  set inactiveTrackColor($1.ColorExpression v) { setField(8, v); }
+  set inactiveTrackColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasInactiveTrackColor() => $_has(5);
   @$pb.TagNumber(8)
   void clearInactiveTrackColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureInactiveTrackColor() => $_ensure(5);
+  $1.DartColorExpression ensureInactiveTrackColor() => $_ensure(5);
 
   @$pb.TagNumber(21)
   $core.double get splashRadius => $_getN(6);
@@ -26190,15 +26190,15 @@ class MaterialSwitchListTile extends $pb.GeneratedMessage {
   void clearAutofocus() => clearField(24);
 
   @$pb.TagNumber(25)
-  $1.ColorExpression get tileColor => $_getN(8);
+  $1.DartColorExpression get tileColor => $_getN(8);
   @$pb.TagNumber(25)
-  set tileColor($1.ColorExpression v) { setField(25, v); }
+  set tileColor($1.DartColorExpression v) { setField(25, v); }
   @$pb.TagNumber(25)
   $core.bool hasTileColor() => $_has(8);
   @$pb.TagNumber(25)
   void clearTileColor() => clearField(25);
   @$pb.TagNumber(25)
-  $1.ColorExpression ensureTileColor() => $_ensure(8);
+  $1.DartColorExpression ensureTileColor() => $_ensure(8);
 
   @$pb.TagNumber(26)
   WidgetExpression get title => $_getN(9);
@@ -26261,15 +26261,15 @@ class MaterialSwitchListTile extends $pb.GeneratedMessage {
   void clearSelected() => clearField(32);
 
   @$pb.TagNumber(35)
-  $1.ColorExpression get selectedTileColor => $_getN(15);
+  $1.DartColorExpression get selectedTileColor => $_getN(15);
   @$pb.TagNumber(35)
-  set selectedTileColor($1.ColorExpression v) { setField(35, v); }
+  set selectedTileColor($1.DartColorExpression v) { setField(35, v); }
   @$pb.TagNumber(35)
   $core.bool hasSelectedTileColor() => $_has(15);
   @$pb.TagNumber(35)
   void clearSelectedTileColor() => clearField(35);
   @$pb.TagNumber(35)
-  $1.ColorExpression ensureSelectedTileColor() => $_ensure(15);
+  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(15);
 
   @$pb.TagNumber(37)
   $core.bool get enableFeedback => $_getBF(16);
@@ -26281,15 +26281,15 @@ class MaterialSwitchListTile extends $pb.GeneratedMessage {
   void clearEnableFeedback() => clearField(37);
 
   @$pb.TagNumber(38)
-  $1.ColorExpression get hoverColor => $_getN(17);
+  $1.DartColorExpression get hoverColor => $_getN(17);
   @$pb.TagNumber(38)
-  set hoverColor($1.ColorExpression v) { setField(38, v); }
+  set hoverColor($1.DartColorExpression v) { setField(38, v); }
   @$pb.TagNumber(38)
   $core.bool hasHoverColor() => $_has(17);
   @$pb.TagNumber(38)
   void clearHoverColor() => clearField(38);
   @$pb.TagNumber(38)
-  $1.ColorExpression ensureHoverColor() => $_ensure(17);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(17);
 }
 
 /// package:flutter/src/material/switch_list_tile.dart
@@ -26297,23 +26297,23 @@ class MaterialSwitchListTileNamedAdaptive extends $pb.GeneratedMessage {
   factory MaterialSwitchListTileNamedAdaptive({
     $1.FlutterKeyExpression? key,
     $core.bool? value,
-    $1.ColorExpression? activeColor,
-    $1.ColorExpression? activeTrackColor,
-    $1.ColorExpression? inactiveThumbColor,
-    $1.ColorExpression? inactiveTrackColor,
+    $1.DartColorExpression? activeColor,
+    $1.DartColorExpression? activeTrackColor,
+    $1.DartColorExpression? inactiveThumbColor,
+    $1.DartColorExpression? inactiveTrackColor,
     $core.double? splashRadius,
     $core.bool? autofocus,
     $core.bool? applyCupertinoTheme,
-    $1.ColorExpression? tileColor,
+    $1.DartColorExpression? tileColor,
     WidgetExpression? title,
     WidgetExpression? subtitle,
     $core.bool? isThreeLine,
     $core.bool? dense,
     WidgetExpression? secondary,
     $core.bool? selected,
-    $1.ColorExpression? selectedTileColor,
+    $1.DartColorExpression? selectedTileColor,
     $core.bool? enableFeedback,
-    $1.ColorExpression? hoverColor,
+    $1.DartColorExpression? hoverColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -26382,23 +26382,23 @@ class MaterialSwitchListTileNamedAdaptive extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialSwitchListTileNamedAdaptive', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOB(3, _omitFieldNames ? '' : 'value')
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'activeTrackColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'inactiveThumbColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'inactiveTrackColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'activeColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'activeTrackColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'inactiveThumbColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'inactiveTrackColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(21, _omitFieldNames ? '' : 'splashRadius', $pb.PbFieldType.OD)
     ..aOB(24, _omitFieldNames ? '' : 'autofocus')
     ..aOB(25, _omitFieldNames ? '' : 'applyCupertinoTheme')
-    ..aOM<$1.ColorExpression>(26, _omitFieldNames ? '' : 'tileColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(26, _omitFieldNames ? '' : 'tileColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<WidgetExpression>(27, _omitFieldNames ? '' : 'title', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(28, _omitFieldNames ? '' : 'subtitle', subBuilder: WidgetExpression.create)
     ..aOB(29, _omitFieldNames ? '' : 'isThreeLine')
     ..aOB(30, _omitFieldNames ? '' : 'dense')
     ..aOM<WidgetExpression>(32, _omitFieldNames ? '' : 'secondary', subBuilder: WidgetExpression.create)
     ..aOB(33, _omitFieldNames ? '' : 'selected')
-    ..aOM<$1.ColorExpression>(36, _omitFieldNames ? '' : 'selectedTileColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(36, _omitFieldNames ? '' : 'selectedTileColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(38, _omitFieldNames ? '' : 'enableFeedback')
-    ..aOM<$1.ColorExpression>(39, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(39, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -26444,48 +26444,48 @@ class MaterialSwitchListTileNamedAdaptive extends $pb.GeneratedMessage {
   void clearValue() => clearField(3);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get activeColor => $_getN(2);
+  $1.DartColorExpression get activeColor => $_getN(2);
   @$pb.TagNumber(5)
-  set activeColor($1.ColorExpression v) { setField(5, v); }
+  set activeColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasActiveColor() => $_has(2);
   @$pb.TagNumber(5)
   void clearActiveColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureActiveColor() => $_ensure(2);
+  $1.DartColorExpression ensureActiveColor() => $_ensure(2);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get activeTrackColor => $_getN(3);
+  $1.DartColorExpression get activeTrackColor => $_getN(3);
   @$pb.TagNumber(6)
-  set activeTrackColor($1.ColorExpression v) { setField(6, v); }
+  set activeTrackColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasActiveTrackColor() => $_has(3);
   @$pb.TagNumber(6)
   void clearActiveTrackColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureActiveTrackColor() => $_ensure(3);
+  $1.DartColorExpression ensureActiveTrackColor() => $_ensure(3);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get inactiveThumbColor => $_getN(4);
+  $1.DartColorExpression get inactiveThumbColor => $_getN(4);
   @$pb.TagNumber(7)
-  set inactiveThumbColor($1.ColorExpression v) { setField(7, v); }
+  set inactiveThumbColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasInactiveThumbColor() => $_has(4);
   @$pb.TagNumber(7)
   void clearInactiveThumbColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureInactiveThumbColor() => $_ensure(4);
+  $1.DartColorExpression ensureInactiveThumbColor() => $_ensure(4);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get inactiveTrackColor => $_getN(5);
+  $1.DartColorExpression get inactiveTrackColor => $_getN(5);
   @$pb.TagNumber(8)
-  set inactiveTrackColor($1.ColorExpression v) { setField(8, v); }
+  set inactiveTrackColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasInactiveTrackColor() => $_has(5);
   @$pb.TagNumber(8)
   void clearInactiveTrackColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureInactiveTrackColor() => $_ensure(5);
+  $1.DartColorExpression ensureInactiveTrackColor() => $_ensure(5);
 
   @$pb.TagNumber(21)
   $core.double get splashRadius => $_getN(6);
@@ -26515,15 +26515,15 @@ class MaterialSwitchListTileNamedAdaptive extends $pb.GeneratedMessage {
   void clearApplyCupertinoTheme() => clearField(25);
 
   @$pb.TagNumber(26)
-  $1.ColorExpression get tileColor => $_getN(9);
+  $1.DartColorExpression get tileColor => $_getN(9);
   @$pb.TagNumber(26)
-  set tileColor($1.ColorExpression v) { setField(26, v); }
+  set tileColor($1.DartColorExpression v) { setField(26, v); }
   @$pb.TagNumber(26)
   $core.bool hasTileColor() => $_has(9);
   @$pb.TagNumber(26)
   void clearTileColor() => clearField(26);
   @$pb.TagNumber(26)
-  $1.ColorExpression ensureTileColor() => $_ensure(9);
+  $1.DartColorExpression ensureTileColor() => $_ensure(9);
 
   @$pb.TagNumber(27)
   WidgetExpression get title => $_getN(10);
@@ -26586,15 +26586,15 @@ class MaterialSwitchListTileNamedAdaptive extends $pb.GeneratedMessage {
   void clearSelected() => clearField(33);
 
   @$pb.TagNumber(36)
-  $1.ColorExpression get selectedTileColor => $_getN(16);
+  $1.DartColorExpression get selectedTileColor => $_getN(16);
   @$pb.TagNumber(36)
-  set selectedTileColor($1.ColorExpression v) { setField(36, v); }
+  set selectedTileColor($1.DartColorExpression v) { setField(36, v); }
   @$pb.TagNumber(36)
   $core.bool hasSelectedTileColor() => $_has(16);
   @$pb.TagNumber(36)
   void clearSelectedTileColor() => clearField(36);
   @$pb.TagNumber(36)
-  $1.ColorExpression ensureSelectedTileColor() => $_ensure(16);
+  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(16);
 
   @$pb.TagNumber(38)
   $core.bool get enableFeedback => $_getBF(17);
@@ -26606,15 +26606,15 @@ class MaterialSwitchListTileNamedAdaptive extends $pb.GeneratedMessage {
   void clearEnableFeedback() => clearField(38);
 
   @$pb.TagNumber(39)
-  $1.ColorExpression get hoverColor => $_getN(18);
+  $1.DartColorExpression get hoverColor => $_getN(18);
   @$pb.TagNumber(39)
-  set hoverColor($1.ColorExpression v) { setField(39, v); }
+  set hoverColor($1.DartColorExpression v) { setField(39, v); }
   @$pb.TagNumber(39)
   $core.bool hasHoverColor() => $_has(18);
   @$pb.TagNumber(39)
   void clearHoverColor() => clearField(39);
   @$pb.TagNumber(39)
-  $1.ColorExpression ensureHoverColor() => $_ensure(18);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(18);
 }
 
 /// package:flutter/src/material/tab_controller.dart
@@ -26624,7 +26624,7 @@ class MaterialDefaultTabController extends $pb.GeneratedMessage {
     $core.int? length,
     $core.int? initialIndex,
     WidgetExpression? child,
-    $1.DurationExpression? animationDuration,
+    $1.DartDurationExpression? animationDuration,
   }) {
     final $result = create();
     if (key != null) {
@@ -26653,7 +26653,7 @@ class MaterialDefaultTabController extends $pb.GeneratedMessage {
     ..a<$core.int>(3, _omitFieldNames ? '' : 'length', $pb.PbFieldType.O3)
     ..a<$core.int>(4, _omitFieldNames ? '' : 'initialIndex', $pb.PbFieldType.O3)
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
-    ..aOM<$1.DurationExpression>(6, _omitFieldNames ? '' : 'animationDuration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(6, _omitFieldNames ? '' : 'animationDuration', subBuilder: $1.DartDurationExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -26719,15 +26719,15 @@ class MaterialDefaultTabController extends $pb.GeneratedMessage {
   WidgetExpression ensureChild() => $_ensure(3);
 
   @$pb.TagNumber(6)
-  $1.DurationExpression get animationDuration => $_getN(4);
+  $1.DartDurationExpression get animationDuration => $_getN(4);
   @$pb.TagNumber(6)
-  set animationDuration($1.DurationExpression v) { setField(6, v); }
+  set animationDuration($1.DartDurationExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasAnimationDuration() => $_has(4);
   @$pb.TagNumber(6)
   void clearAnimationDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $1.DurationExpression ensureAnimationDuration() => $_ensure(4);
+  $1.DartDurationExpression ensureAnimationDuration() => $_ensure(4);
 }
 
 /// package:flutter/src/material/tabs.dart
@@ -26849,12 +26849,12 @@ class MaterialTabBar extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.Iterable<WidgetExpression>? tabs,
     $core.bool? isScrollable,
-    $1.ColorExpression? indicatorColor,
+    $1.DartColorExpression? indicatorColor,
     $core.bool? automaticIndicatorColorAdjustment,
     $core.double? indicatorWeight,
-    $1.ColorExpression? dividerColor,
-    $1.ColorExpression? labelColor,
-    $1.ColorExpression? unselectedLabelColor,
+    $1.DartColorExpression? dividerColor,
+    $1.DartColorExpression? labelColor,
+    $1.DartColorExpression? unselectedLabelColor,
     $core.bool? enableFeedback,
   }) {
     final $result = create();
@@ -26898,12 +26898,12 @@ class MaterialTabBar extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..pc<WidgetExpression>(3, _omitFieldNames ? '' : 'tabs', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..aOB(5, _omitFieldNames ? '' : 'isScrollable')
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'indicatorColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'indicatorColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(8, _omitFieldNames ? '' : 'automaticIndicatorColorAdjustment')
     ..a<$core.double>(9, _omitFieldNames ? '' : 'indicatorWeight', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(13, _omitFieldNames ? '' : 'dividerColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'labelColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(17, _omitFieldNames ? '' : 'unselectedLabelColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(13, _omitFieldNames ? '' : 'dividerColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'labelColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(17, _omitFieldNames ? '' : 'unselectedLabelColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(22, _omitFieldNames ? '' : 'enableFeedback')
     ..hasRequiredFields = false
   ;
@@ -26953,15 +26953,15 @@ class MaterialTabBar extends $pb.GeneratedMessage {
   void clearIsScrollable() => clearField(5);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get indicatorColor => $_getN(3);
+  $1.DartColorExpression get indicatorColor => $_getN(3);
   @$pb.TagNumber(7)
-  set indicatorColor($1.ColorExpression v) { setField(7, v); }
+  set indicatorColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasIndicatorColor() => $_has(3);
   @$pb.TagNumber(7)
   void clearIndicatorColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureIndicatorColor() => $_ensure(3);
+  $1.DartColorExpression ensureIndicatorColor() => $_ensure(3);
 
   @$pb.TagNumber(8)
   $core.bool get automaticIndicatorColorAdjustment => $_getBF(4);
@@ -26982,37 +26982,37 @@ class MaterialTabBar extends $pb.GeneratedMessage {
   void clearIndicatorWeight() => clearField(9);
 
   @$pb.TagNumber(13)
-  $1.ColorExpression get dividerColor => $_getN(6);
+  $1.DartColorExpression get dividerColor => $_getN(6);
   @$pb.TagNumber(13)
-  set dividerColor($1.ColorExpression v) { setField(13, v); }
+  set dividerColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasDividerColor() => $_has(6);
   @$pb.TagNumber(13)
   void clearDividerColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.ColorExpression ensureDividerColor() => $_ensure(6);
+  $1.DartColorExpression ensureDividerColor() => $_ensure(6);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get labelColor => $_getN(7);
+  $1.DartColorExpression get labelColor => $_getN(7);
   @$pb.TagNumber(14)
-  set labelColor($1.ColorExpression v) { setField(14, v); }
+  set labelColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasLabelColor() => $_has(7);
   @$pb.TagNumber(14)
   void clearLabelColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureLabelColor() => $_ensure(7);
+  $1.DartColorExpression ensureLabelColor() => $_ensure(7);
 
   @$pb.TagNumber(17)
-  $1.ColorExpression get unselectedLabelColor => $_getN(8);
+  $1.DartColorExpression get unselectedLabelColor => $_getN(8);
   @$pb.TagNumber(17)
-  set unselectedLabelColor($1.ColorExpression v) { setField(17, v); }
+  set unselectedLabelColor($1.DartColorExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasUnselectedLabelColor() => $_has(8);
   @$pb.TagNumber(17)
   void clearUnselectedLabelColor() => clearField(17);
   @$pb.TagNumber(17)
-  $1.ColorExpression ensureUnselectedLabelColor() => $_ensure(8);
+  $1.DartColorExpression ensureUnselectedLabelColor() => $_ensure(8);
 
   @$pb.TagNumber(22)
   $core.bool get enableFeedback => $_getBF(9);
@@ -27030,12 +27030,12 @@ class MaterialTabBarNamedSecondary extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.Iterable<WidgetExpression>? tabs,
     $core.bool? isScrollable,
-    $1.ColorExpression? indicatorColor,
+    $1.DartColorExpression? indicatorColor,
     $core.bool? automaticIndicatorColorAdjustment,
     $core.double? indicatorWeight,
-    $1.ColorExpression? dividerColor,
-    $1.ColorExpression? labelColor,
-    $1.ColorExpression? unselectedLabelColor,
+    $1.DartColorExpression? dividerColor,
+    $1.DartColorExpression? labelColor,
+    $1.DartColorExpression? unselectedLabelColor,
     $core.bool? enableFeedback,
   }) {
     final $result = create();
@@ -27079,12 +27079,12 @@ class MaterialTabBarNamedSecondary extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..pc<WidgetExpression>(3, _omitFieldNames ? '' : 'tabs', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..aOB(5, _omitFieldNames ? '' : 'isScrollable')
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'indicatorColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'indicatorColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(8, _omitFieldNames ? '' : 'automaticIndicatorColorAdjustment')
     ..a<$core.double>(9, _omitFieldNames ? '' : 'indicatorWeight', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(13, _omitFieldNames ? '' : 'dividerColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'labelColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(17, _omitFieldNames ? '' : 'unselectedLabelColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(13, _omitFieldNames ? '' : 'dividerColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'labelColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(17, _omitFieldNames ? '' : 'unselectedLabelColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(22, _omitFieldNames ? '' : 'enableFeedback')
     ..hasRequiredFields = false
   ;
@@ -27134,15 +27134,15 @@ class MaterialTabBarNamedSecondary extends $pb.GeneratedMessage {
   void clearIsScrollable() => clearField(5);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get indicatorColor => $_getN(3);
+  $1.DartColorExpression get indicatorColor => $_getN(3);
   @$pb.TagNumber(7)
-  set indicatorColor($1.ColorExpression v) { setField(7, v); }
+  set indicatorColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasIndicatorColor() => $_has(3);
   @$pb.TagNumber(7)
   void clearIndicatorColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureIndicatorColor() => $_ensure(3);
+  $1.DartColorExpression ensureIndicatorColor() => $_ensure(3);
 
   @$pb.TagNumber(8)
   $core.bool get automaticIndicatorColorAdjustment => $_getBF(4);
@@ -27163,37 +27163,37 @@ class MaterialTabBarNamedSecondary extends $pb.GeneratedMessage {
   void clearIndicatorWeight() => clearField(9);
 
   @$pb.TagNumber(13)
-  $1.ColorExpression get dividerColor => $_getN(6);
+  $1.DartColorExpression get dividerColor => $_getN(6);
   @$pb.TagNumber(13)
-  set dividerColor($1.ColorExpression v) { setField(13, v); }
+  set dividerColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasDividerColor() => $_has(6);
   @$pb.TagNumber(13)
   void clearDividerColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.ColorExpression ensureDividerColor() => $_ensure(6);
+  $1.DartColorExpression ensureDividerColor() => $_ensure(6);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get labelColor => $_getN(7);
+  $1.DartColorExpression get labelColor => $_getN(7);
   @$pb.TagNumber(14)
-  set labelColor($1.ColorExpression v) { setField(14, v); }
+  set labelColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasLabelColor() => $_has(7);
   @$pb.TagNumber(14)
   void clearLabelColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureLabelColor() => $_ensure(7);
+  $1.DartColorExpression ensureLabelColor() => $_ensure(7);
 
   @$pb.TagNumber(17)
-  $1.ColorExpression get unselectedLabelColor => $_getN(8);
+  $1.DartColorExpression get unselectedLabelColor => $_getN(8);
   @$pb.TagNumber(17)
-  set unselectedLabelColor($1.ColorExpression v) { setField(17, v); }
+  set unselectedLabelColor($1.DartColorExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasUnselectedLabelColor() => $_has(8);
   @$pb.TagNumber(17)
   void clearUnselectedLabelColor() => clearField(17);
   @$pb.TagNumber(17)
-  $1.ColorExpression ensureUnselectedLabelColor() => $_ensure(8);
+  $1.DartColorExpression ensureUnselectedLabelColor() => $_ensure(8);
 
   @$pb.TagNumber(22)
   $core.bool get enableFeedback => $_getBF(9);
@@ -27285,8 +27285,8 @@ class MaterialTabPageSelector extends $pb.GeneratedMessage {
   factory MaterialTabPageSelector({
     $1.FlutterKeyExpression? key,
     $core.double? indicatorSize,
-    $1.ColorExpression? color,
-    $1.ColorExpression? selectedColor,
+    $1.DartColorExpression? color,
+    $1.DartColorExpression? selectedColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -27310,8 +27310,8 @@ class MaterialTabPageSelector extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialTabPageSelector', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'indicatorSize', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(6, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -27357,34 +27357,34 @@ class MaterialTabPageSelector extends $pb.GeneratedMessage {
   void clearIndicatorSize() => clearField(4);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get color => $_getN(2);
+  $1.DartColorExpression get color => $_getN(2);
   @$pb.TagNumber(5)
-  set color($1.ColorExpression v) { setField(5, v); }
+  set color($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasColor() => $_has(2);
   @$pb.TagNumber(5)
   void clearColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureColor() => $_ensure(2);
+  $1.DartColorExpression ensureColor() => $_ensure(2);
 
   @$pb.TagNumber(6)
-  $1.ColorExpression get selectedColor => $_getN(3);
+  $1.DartColorExpression get selectedColor => $_getN(3);
   @$pb.TagNumber(6)
-  set selectedColor($1.ColorExpression v) { setField(6, v); }
+  set selectedColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasSelectedColor() => $_has(3);
   @$pb.TagNumber(6)
   void clearSelectedColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.ColorExpression ensureSelectedColor() => $_ensure(3);
+  $1.DartColorExpression ensureSelectedColor() => $_ensure(3);
 }
 
 /// package:flutter/src/material/tabs.dart
 class MaterialTabPageSelectorIndicator extends $pb.GeneratedMessage {
   factory MaterialTabPageSelectorIndicator({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? backgroundColor,
-    $1.ColorExpression? borderColor,
+    $1.DartColorExpression? backgroundColor,
+    $1.DartColorExpression? borderColor,
     $core.double? size,
   }) {
     final $result = create();
@@ -27408,8 +27408,8 @@ class MaterialTabPageSelectorIndicator extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialTabPageSelectorIndicator', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'borderColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'borderColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'size', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -27447,26 +27447,26 @@ class MaterialTabPageSelectorIndicator extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get backgroundColor => $_getN(1);
+  $1.DartColorExpression get backgroundColor => $_getN(1);
   @$pb.TagNumber(3)
-  set backgroundColor($1.ColorExpression v) { setField(3, v); }
+  set backgroundColor($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBackgroundColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearBackgroundColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureBackgroundColor() => $_ensure(1);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(1);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get borderColor => $_getN(2);
+  $1.DartColorExpression get borderColor => $_getN(2);
   @$pb.TagNumber(4)
-  set borderColor($1.ColorExpression v) { setField(4, v); }
+  set borderColor($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasBorderColor() => $_has(2);
   @$pb.TagNumber(4)
   void clearBorderColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureBorderColor() => $_ensure(2);
+  $1.DartColorExpression ensureBorderColor() => $_ensure(2);
 
   @$pb.TagNumber(5)
   $core.double get size => $_getN(3);
@@ -27693,7 +27693,7 @@ class MaterialTextField extends $pb.GeneratedMessage {
     $core.double? cursorWidth,
     $core.double? cursorHeight,
     $core.bool? cursorOpacityAnimates,
-    $1.ColorExpression? cursorColor,
+    $1.DartColorExpression? cursorColor,
     $core.bool? enableInteractiveSelection,
     $core.Iterable<$core.String>? autofillHints,
     $core.String? restorationId,
@@ -27794,7 +27794,7 @@ class MaterialTextField extends $pb.GeneratedMessage {
     ..a<$core.double>(35, _omitFieldNames ? '' : 'cursorWidth', $pb.PbFieldType.OD)
     ..a<$core.double>(36, _omitFieldNames ? '' : 'cursorHeight', $pb.PbFieldType.OD)
     ..aOB(38, _omitFieldNames ? '' : 'cursorOpacityAnimates')
-    ..aOM<$1.ColorExpression>(39, _omitFieldNames ? '' : 'cursorColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(39, _omitFieldNames ? '' : 'cursorColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(45, _omitFieldNames ? '' : 'enableInteractiveSelection')
     ..pPS(53, _omitFieldNames ? '' : 'autofillHints')
     ..aOS(56, _omitFieldNames ? '' : 'restorationId')
@@ -27972,15 +27972,15 @@ class MaterialTextField extends $pb.GeneratedMessage {
   void clearCursorOpacityAnimates() => clearField(38);
 
   @$pb.TagNumber(39)
-  $1.ColorExpression get cursorColor => $_getN(16);
+  $1.DartColorExpression get cursorColor => $_getN(16);
   @$pb.TagNumber(39)
-  set cursorColor($1.ColorExpression v) { setField(39, v); }
+  set cursorColor($1.DartColorExpression v) { setField(39, v); }
   @$pb.TagNumber(39)
   $core.bool hasCursorColor() => $_has(16);
   @$pb.TagNumber(39)
   void clearCursorColor() => clearField(39);
   @$pb.TagNumber(39)
-  $1.ColorExpression ensureCursorColor() => $_ensure(16);
+  $1.DartColorExpression ensureCursorColor() => $_ensure(16);
 
   @$pb.TagNumber(45)
   $core.bool get enableInteractiveSelection => $_getBF(17);
@@ -28050,7 +28050,7 @@ class MaterialTextFormField extends $pb.GeneratedMessage {
     $core.bool? enabled,
     $core.double? cursorWidth,
     $core.double? cursorHeight,
-    $1.ColorExpression? cursorColor,
+    $1.DartColorExpression? cursorColor,
     $core.bool? enableInteractiveSelection,
     $core.Iterable<$core.String>? autofillHints,
     $core.String? restorationId,
@@ -28155,7 +28155,7 @@ class MaterialTextFormField extends $pb.GeneratedMessage {
     ..aOB(37, _omitFieldNames ? '' : 'enabled')
     ..a<$core.double>(38, _omitFieldNames ? '' : 'cursorWidth', $pb.PbFieldType.OD)
     ..a<$core.double>(39, _omitFieldNames ? '' : 'cursorHeight', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(41, _omitFieldNames ? '' : 'cursorColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(41, _omitFieldNames ? '' : 'cursorColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(44, _omitFieldNames ? '' : 'enableInteractiveSelection')
     ..pPS(48, _omitFieldNames ? '' : 'autofillHints')
     ..aOS(51, _omitFieldNames ? '' : 'restorationId')
@@ -28334,15 +28334,15 @@ class MaterialTextFormField extends $pb.GeneratedMessage {
   void clearCursorHeight() => clearField(39);
 
   @$pb.TagNumber(41)
-  $1.ColorExpression get cursorColor => $_getN(16);
+  $1.DartColorExpression get cursorColor => $_getN(16);
   @$pb.TagNumber(41)
-  set cursorColor($1.ColorExpression v) { setField(41, v); }
+  set cursorColor($1.DartColorExpression v) { setField(41, v); }
   @$pb.TagNumber(41)
   $core.bool hasCursorColor() => $_has(16);
   @$pb.TagNumber(41)
   void clearCursorColor() => clearField(41);
   @$pb.TagNumber(41)
-  $1.ColorExpression ensureCursorColor() => $_ensure(16);
+  $1.DartColorExpression ensureCursorColor() => $_ensure(16);
 
   @$pb.TagNumber(44)
   $core.bool get enableInteractiveSelection => $_getBF(17);
@@ -28408,18 +28408,18 @@ class MaterialToggleButtons extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.Iterable<WidgetExpression>? children,
     $core.Iterable<$core.bool>? isSelected,
-    $1.ColorExpression? color,
-    $1.ColorExpression? selectedColor,
-    $1.ColorExpression? disabledColor,
-    $1.ColorExpression? fillColor,
-    $1.ColorExpression? focusColor,
-    $1.ColorExpression? highlightColor,
-    $1.ColorExpression? hoverColor,
-    $1.ColorExpression? splashColor,
+    $1.DartColorExpression? color,
+    $1.DartColorExpression? selectedColor,
+    $1.DartColorExpression? disabledColor,
+    $1.DartColorExpression? fillColor,
+    $1.DartColorExpression? focusColor,
+    $1.DartColorExpression? highlightColor,
+    $1.DartColorExpression? hoverColor,
+    $1.DartColorExpression? splashColor,
     $core.bool? renderBorder,
-    $1.ColorExpression? borderColor,
-    $1.ColorExpression? selectedBorderColor,
-    $1.ColorExpression? disabledBorderColor,
+    $1.DartColorExpression? borderColor,
+    $1.DartColorExpression? selectedBorderColor,
+    $1.DartColorExpression? disabledBorderColor,
     $core.double? borderWidth,
   }) {
     final $result = create();
@@ -28481,18 +28481,18 @@ class MaterialToggleButtons extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..pc<WidgetExpression>(3, _omitFieldNames ? '' : 'children', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..p<$core.bool>(4, _omitFieldNames ? '' : 'isSelected', $pb.PbFieldType.KB)
-    ..aOM<$1.ColorExpression>(10, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(11, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(13, _omitFieldNames ? '' : 'fillColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(15, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(16, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(17, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(13, _omitFieldNames ? '' : 'fillColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(15, _omitFieldNames ? '' : 'highlightColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(16, _omitFieldNames ? '' : 'hoverColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(17, _omitFieldNames ? '' : 'splashColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(19, _omitFieldNames ? '' : 'renderBorder')
-    ..aOM<$1.ColorExpression>(20, _omitFieldNames ? '' : 'borderColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(21, _omitFieldNames ? '' : 'selectedBorderColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(22, _omitFieldNames ? '' : 'disabledBorderColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(20, _omitFieldNames ? '' : 'borderColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(21, _omitFieldNames ? '' : 'selectedBorderColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(22, _omitFieldNames ? '' : 'disabledBorderColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(24, _omitFieldNames ? '' : 'borderWidth', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -28536,92 +28536,92 @@ class MaterialToggleButtons extends $pb.GeneratedMessage {
   $core.List<$core.bool> get isSelected => $_getList(2);
 
   @$pb.TagNumber(10)
-  $1.ColorExpression get color => $_getN(3);
+  $1.DartColorExpression get color => $_getN(3);
   @$pb.TagNumber(10)
-  set color($1.ColorExpression v) { setField(10, v); }
+  set color($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
   $core.bool hasColor() => $_has(3);
   @$pb.TagNumber(10)
   void clearColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.ColorExpression ensureColor() => $_ensure(3);
+  $1.DartColorExpression ensureColor() => $_ensure(3);
 
   @$pb.TagNumber(11)
-  $1.ColorExpression get selectedColor => $_getN(4);
+  $1.DartColorExpression get selectedColor => $_getN(4);
   @$pb.TagNumber(11)
-  set selectedColor($1.ColorExpression v) { setField(11, v); }
+  set selectedColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasSelectedColor() => $_has(4);
   @$pb.TagNumber(11)
   void clearSelectedColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.ColorExpression ensureSelectedColor() => $_ensure(4);
+  $1.DartColorExpression ensureSelectedColor() => $_ensure(4);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get disabledColor => $_getN(5);
+  $1.DartColorExpression get disabledColor => $_getN(5);
   @$pb.TagNumber(12)
-  set disabledColor($1.ColorExpression v) { setField(12, v); }
+  set disabledColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasDisabledColor() => $_has(5);
   @$pb.TagNumber(12)
   void clearDisabledColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureDisabledColor() => $_ensure(5);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(5);
 
   @$pb.TagNumber(13)
-  $1.ColorExpression get fillColor => $_getN(6);
+  $1.DartColorExpression get fillColor => $_getN(6);
   @$pb.TagNumber(13)
-  set fillColor($1.ColorExpression v) { setField(13, v); }
+  set fillColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasFillColor() => $_has(6);
   @$pb.TagNumber(13)
   void clearFillColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.ColorExpression ensureFillColor() => $_ensure(6);
+  $1.DartColorExpression ensureFillColor() => $_ensure(6);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get focusColor => $_getN(7);
+  $1.DartColorExpression get focusColor => $_getN(7);
   @$pb.TagNumber(14)
-  set focusColor($1.ColorExpression v) { setField(14, v); }
+  set focusColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasFocusColor() => $_has(7);
   @$pb.TagNumber(14)
   void clearFocusColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureFocusColor() => $_ensure(7);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(7);
 
   @$pb.TagNumber(15)
-  $1.ColorExpression get highlightColor => $_getN(8);
+  $1.DartColorExpression get highlightColor => $_getN(8);
   @$pb.TagNumber(15)
-  set highlightColor($1.ColorExpression v) { setField(15, v); }
+  set highlightColor($1.DartColorExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasHighlightColor() => $_has(8);
   @$pb.TagNumber(15)
   void clearHighlightColor() => clearField(15);
   @$pb.TagNumber(15)
-  $1.ColorExpression ensureHighlightColor() => $_ensure(8);
+  $1.DartColorExpression ensureHighlightColor() => $_ensure(8);
 
   @$pb.TagNumber(16)
-  $1.ColorExpression get hoverColor => $_getN(9);
+  $1.DartColorExpression get hoverColor => $_getN(9);
   @$pb.TagNumber(16)
-  set hoverColor($1.ColorExpression v) { setField(16, v); }
+  set hoverColor($1.DartColorExpression v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasHoverColor() => $_has(9);
   @$pb.TagNumber(16)
   void clearHoverColor() => clearField(16);
   @$pb.TagNumber(16)
-  $1.ColorExpression ensureHoverColor() => $_ensure(9);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(9);
 
   @$pb.TagNumber(17)
-  $1.ColorExpression get splashColor => $_getN(10);
+  $1.DartColorExpression get splashColor => $_getN(10);
   @$pb.TagNumber(17)
-  set splashColor($1.ColorExpression v) { setField(17, v); }
+  set splashColor($1.DartColorExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasSplashColor() => $_has(10);
   @$pb.TagNumber(17)
   void clearSplashColor() => clearField(17);
   @$pb.TagNumber(17)
-  $1.ColorExpression ensureSplashColor() => $_ensure(10);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(10);
 
   @$pb.TagNumber(19)
   $core.bool get renderBorder => $_getBF(11);
@@ -28633,37 +28633,37 @@ class MaterialToggleButtons extends $pb.GeneratedMessage {
   void clearRenderBorder() => clearField(19);
 
   @$pb.TagNumber(20)
-  $1.ColorExpression get borderColor => $_getN(12);
+  $1.DartColorExpression get borderColor => $_getN(12);
   @$pb.TagNumber(20)
-  set borderColor($1.ColorExpression v) { setField(20, v); }
+  set borderColor($1.DartColorExpression v) { setField(20, v); }
   @$pb.TagNumber(20)
   $core.bool hasBorderColor() => $_has(12);
   @$pb.TagNumber(20)
   void clearBorderColor() => clearField(20);
   @$pb.TagNumber(20)
-  $1.ColorExpression ensureBorderColor() => $_ensure(12);
+  $1.DartColorExpression ensureBorderColor() => $_ensure(12);
 
   @$pb.TagNumber(21)
-  $1.ColorExpression get selectedBorderColor => $_getN(13);
+  $1.DartColorExpression get selectedBorderColor => $_getN(13);
   @$pb.TagNumber(21)
-  set selectedBorderColor($1.ColorExpression v) { setField(21, v); }
+  set selectedBorderColor($1.DartColorExpression v) { setField(21, v); }
   @$pb.TagNumber(21)
   $core.bool hasSelectedBorderColor() => $_has(13);
   @$pb.TagNumber(21)
   void clearSelectedBorderColor() => clearField(21);
   @$pb.TagNumber(21)
-  $1.ColorExpression ensureSelectedBorderColor() => $_ensure(13);
+  $1.DartColorExpression ensureSelectedBorderColor() => $_ensure(13);
 
   @$pb.TagNumber(22)
-  $1.ColorExpression get disabledBorderColor => $_getN(14);
+  $1.DartColorExpression get disabledBorderColor => $_getN(14);
   @$pb.TagNumber(22)
-  set disabledBorderColor($1.ColorExpression v) { setField(22, v); }
+  set disabledBorderColor($1.DartColorExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
   $core.bool hasDisabledBorderColor() => $_has(14);
   @$pb.TagNumber(22)
   void clearDisabledBorderColor() => clearField(22);
   @$pb.TagNumber(22)
-  $1.ColorExpression ensureDisabledBorderColor() => $_ensure(14);
+  $1.DartColorExpression ensureDisabledBorderColor() => $_ensure(14);
 
   @$pb.TagNumber(24)
   $core.double get borderWidth => $_getN(15);
@@ -28684,8 +28684,8 @@ class MaterialTooltip extends $pb.GeneratedMessage {
     $core.double? verticalOffset,
     $core.bool? preferBelow,
     $core.bool? excludeFromSemantics,
-    $1.DurationExpression? waitDuration,
-    $1.DurationExpression? showDuration,
+    $1.DartDurationExpression? waitDuration,
+    $1.DartDurationExpression? showDuration,
     $core.bool? enableFeedback,
     WidgetExpression? child,
   }) {
@@ -28733,8 +28733,8 @@ class MaterialTooltip extends $pb.GeneratedMessage {
     ..a<$core.double>(8, _omitFieldNames ? '' : 'verticalOffset', $pb.PbFieldType.OD)
     ..aOB(9, _omitFieldNames ? '' : 'preferBelow')
     ..aOB(10, _omitFieldNames ? '' : 'excludeFromSemantics')
-    ..aOM<$1.DurationExpression>(14, _omitFieldNames ? '' : 'waitDuration', subBuilder: $1.DurationExpression.create)
-    ..aOM<$1.DurationExpression>(15, _omitFieldNames ? '' : 'showDuration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(14, _omitFieldNames ? '' : 'waitDuration', subBuilder: $1.DartDurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(15, _omitFieldNames ? '' : 'showDuration', subBuilder: $1.DartDurationExpression.create)
     ..aOB(17, _omitFieldNames ? '' : 'enableFeedback')
     ..aOM<WidgetExpression>(19, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..hasRequiredFields = false
@@ -28818,26 +28818,26 @@ class MaterialTooltip extends $pb.GeneratedMessage {
   void clearExcludeFromSemantics() => clearField(10);
 
   @$pb.TagNumber(14)
-  $1.DurationExpression get waitDuration => $_getN(6);
+  $1.DartDurationExpression get waitDuration => $_getN(6);
   @$pb.TagNumber(14)
-  set waitDuration($1.DurationExpression v) { setField(14, v); }
+  set waitDuration($1.DartDurationExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasWaitDuration() => $_has(6);
   @$pb.TagNumber(14)
   void clearWaitDuration() => clearField(14);
   @$pb.TagNumber(14)
-  $1.DurationExpression ensureWaitDuration() => $_ensure(6);
+  $1.DartDurationExpression ensureWaitDuration() => $_ensure(6);
 
   @$pb.TagNumber(15)
-  $1.DurationExpression get showDuration => $_getN(7);
+  $1.DartDurationExpression get showDuration => $_getN(7);
   @$pb.TagNumber(15)
-  set showDuration($1.DurationExpression v) { setField(15, v); }
+  set showDuration($1.DartDurationExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasShowDuration() => $_has(7);
   @$pb.TagNumber(15)
   void clearShowDuration() => clearField(15);
   @$pb.TagNumber(15)
-  $1.DurationExpression ensureShowDuration() => $_ensure(7);
+  $1.DartDurationExpression ensureShowDuration() => $_ensure(7);
 
   @$pb.TagNumber(17)
   $core.bool get enableFeedback => $_getBF(8);
@@ -28951,7 +28951,7 @@ class MaterialUserAccountsDrawerHeader extends $pb.GeneratedMessage {
     $core.Iterable<WidgetExpression>? otherAccountsPictures,
     WidgetExpression? accountName,
     WidgetExpression? accountEmail,
-    $1.ColorExpression? arrowColor,
+    $1.DartColorExpression? arrowColor,
   }) {
     final $result = create();
     if (key != null) {
@@ -28984,7 +28984,7 @@ class MaterialUserAccountsDrawerHeader extends $pb.GeneratedMessage {
     ..pc<WidgetExpression>(6, _omitFieldNames ? '' : 'otherAccountsPictures', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(9, _omitFieldNames ? '' : 'accountName', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(10, _omitFieldNames ? '' : 'accountEmail', subBuilder: WidgetExpression.create)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'arrowColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'arrowColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -29057,15 +29057,15 @@ class MaterialUserAccountsDrawerHeader extends $pb.GeneratedMessage {
   WidgetExpression ensureAccountEmail() => $_ensure(4);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get arrowColor => $_getN(5);
+  $1.DartColorExpression get arrowColor => $_getN(5);
   @$pb.TagNumber(12)
-  set arrowColor($1.ColorExpression v) { setField(12, v); }
+  set arrowColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasArrowColor() => $_has(5);
   @$pb.TagNumber(12)
   void clearArrowColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureArrowColor() => $_ensure(5);
+  $1.DartColorExpression ensureArrowColor() => $_ensure(5);
 }
 
 /// package:flutter/src/widgets/_platform_selectable_region_context_menu_io.dart
@@ -29281,8 +29281,8 @@ class FlutterAnimatedSize extends $pb.GeneratedMessage {
   factory FlutterAnimatedSize({
     $1.FlutterKeyExpression? key,
     WidgetExpression? child,
-    $1.DurationExpression? duration,
-    $1.DurationExpression? reverseDuration,
+    $1.DartDurationExpression? duration,
+    $1.DartDurationExpression? reverseDuration,
   }) {
     final $result = create();
     if (key != null) {
@@ -29306,8 +29306,8 @@ class FlutterAnimatedSize extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterAnimatedSize', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
-    ..aOM<$1.DurationExpression>(6, _omitFieldNames ? '' : 'duration', subBuilder: $1.DurationExpression.create)
-    ..aOM<$1.DurationExpression>(7, _omitFieldNames ? '' : 'reverseDuration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(6, _omitFieldNames ? '' : 'duration', subBuilder: $1.DartDurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(7, _omitFieldNames ? '' : 'reverseDuration', subBuilder: $1.DartDurationExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -29355,26 +29355,26 @@ class FlutterAnimatedSize extends $pb.GeneratedMessage {
   WidgetExpression ensureChild() => $_ensure(1);
 
   @$pb.TagNumber(6)
-  $1.DurationExpression get duration => $_getN(2);
+  $1.DartDurationExpression get duration => $_getN(2);
   @$pb.TagNumber(6)
-  set duration($1.DurationExpression v) { setField(6, v); }
+  set duration($1.DartDurationExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDuration() => $_has(2);
   @$pb.TagNumber(6)
   void clearDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $1.DurationExpression ensureDuration() => $_ensure(2);
+  $1.DartDurationExpression ensureDuration() => $_ensure(2);
 
   @$pb.TagNumber(7)
-  $1.DurationExpression get reverseDuration => $_getN(3);
+  $1.DartDurationExpression get reverseDuration => $_getN(3);
   @$pb.TagNumber(7)
-  set reverseDuration($1.DurationExpression v) { setField(7, v); }
+  set reverseDuration($1.DartDurationExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasReverseDuration() => $_has(3);
   @$pb.TagNumber(7)
   void clearReverseDuration() => clearField(7);
   @$pb.TagNumber(7)
-  $1.DurationExpression ensureReverseDuration() => $_ensure(3);
+  $1.DartDurationExpression ensureReverseDuration() => $_ensure(3);
 }
 
 /// package:flutter/src/widgets/animated_switcher.dart
@@ -29382,8 +29382,8 @@ class FlutterAnimatedSwitcher extends $pb.GeneratedMessage {
   factory FlutterAnimatedSwitcher({
     $1.FlutterKeyExpression? key,
     WidgetExpression? child,
-    $1.DurationExpression? duration,
-    $1.DurationExpression? reverseDuration,
+    $1.DartDurationExpression? duration,
+    $1.DartDurationExpression? reverseDuration,
   }) {
     final $result = create();
     if (key != null) {
@@ -29407,8 +29407,8 @@ class FlutterAnimatedSwitcher extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterAnimatedSwitcher', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
-    ..aOM<$1.DurationExpression>(4, _omitFieldNames ? '' : 'duration', subBuilder: $1.DurationExpression.create)
-    ..aOM<$1.DurationExpression>(5, _omitFieldNames ? '' : 'reverseDuration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(4, _omitFieldNames ? '' : 'duration', subBuilder: $1.DartDurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(5, _omitFieldNames ? '' : 'reverseDuration', subBuilder: $1.DartDurationExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -29456,26 +29456,26 @@ class FlutterAnimatedSwitcher extends $pb.GeneratedMessage {
   WidgetExpression ensureChild() => $_ensure(1);
 
   @$pb.TagNumber(4)
-  $1.DurationExpression get duration => $_getN(2);
+  $1.DartDurationExpression get duration => $_getN(2);
   @$pb.TagNumber(4)
-  set duration($1.DurationExpression v) { setField(4, v); }
+  set duration($1.DartDurationExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasDuration() => $_has(2);
   @$pb.TagNumber(4)
   void clearDuration() => clearField(4);
   @$pb.TagNumber(4)
-  $1.DurationExpression ensureDuration() => $_ensure(2);
+  $1.DartDurationExpression ensureDuration() => $_ensure(2);
 
   @$pb.TagNumber(5)
-  $1.DurationExpression get reverseDuration => $_getN(3);
+  $1.DartDurationExpression get reverseDuration => $_getN(3);
   @$pb.TagNumber(5)
-  set reverseDuration($1.DurationExpression v) { setField(5, v); }
+  set reverseDuration($1.DartDurationExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasReverseDuration() => $_has(3);
   @$pb.TagNumber(5)
   void clearReverseDuration() => clearField(5);
   @$pb.TagNumber(5)
-  $1.DurationExpression ensureReverseDuration() => $_ensure(3);
+  $1.DartDurationExpression ensureReverseDuration() => $_ensure(3);
 }
 
 /// package:flutter/src/widgets/app.dart
@@ -29485,7 +29485,7 @@ class FlutterWidgetsApp extends $pb.GeneratedMessage {
     $core.String? initialRoute,
     WidgetExpression? home,
     $core.String? title,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.bool? showPerformanceOverlay,
     $core.bool? checkerboardRasterCacheImages,
     $core.bool? checkerboardOffscreenLayers,
@@ -29542,7 +29542,7 @@ class FlutterWidgetsApp extends $pb.GeneratedMessage {
     ..aOS(8, _omitFieldNames ? '' : 'initialRoute')
     ..aOM<WidgetExpression>(10, _omitFieldNames ? '' : 'home', subBuilder: WidgetExpression.create)
     ..aOS(13, _omitFieldNames ? '' : 'title')
-    ..aOM<$1.ColorExpression>(16, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(16, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOB(22, _omitFieldNames ? '' : 'showPerformanceOverlay')
     ..aOB(23, _omitFieldNames ? '' : 'checkerboardRasterCacheImages')
     ..aOB(24, _omitFieldNames ? '' : 'checkerboardOffscreenLayers')
@@ -29615,15 +29615,15 @@ class FlutterWidgetsApp extends $pb.GeneratedMessage {
   void clearTitle() => clearField(13);
 
   @$pb.TagNumber(16)
-  $1.ColorExpression get color => $_getN(4);
+  $1.DartColorExpression get color => $_getN(4);
   @$pb.TagNumber(16)
-  set color($1.ColorExpression v) { setField(16, v); }
+  set color($1.DartColorExpression v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasColor() => $_has(4);
   @$pb.TagNumber(16)
   void clearColor() => clearField(16);
   @$pb.TagNumber(16)
-  $1.ColorExpression ensureColor() => $_ensure(4);
+  $1.DartColorExpression ensureColor() => $_ensure(4);
 
   @$pb.TagNumber(22)
   $core.bool get showPerformanceOverlay => $_getBF(5);
@@ -29694,7 +29694,7 @@ class FlutterWidgetsAppNamedRouter extends $pb.GeneratedMessage {
   factory FlutterWidgetsAppNamedRouter({
     $1.FlutterKeyExpression? key,
     $core.String? title,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.bool? showPerformanceOverlay,
     $core.bool? checkerboardRasterCacheImages,
     $core.bool? checkerboardOffscreenLayers,
@@ -29743,7 +29743,7 @@ class FlutterWidgetsAppNamedRouter extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterWidgetsAppNamedRouter', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOS(9, _omitFieldNames ? '' : 'title')
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOB(18, _omitFieldNames ? '' : 'showPerformanceOverlay')
     ..aOB(19, _omitFieldNames ? '' : 'checkerboardRasterCacheImages')
     ..aOB(20, _omitFieldNames ? '' : 'checkerboardOffscreenLayers')
@@ -29796,15 +29796,15 @@ class FlutterWidgetsAppNamedRouter extends $pb.GeneratedMessage {
   void clearTitle() => clearField(9);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get color => $_getN(2);
+  $1.DartColorExpression get color => $_getN(2);
   @$pb.TagNumber(12)
-  set color($1.ColorExpression v) { setField(12, v); }
+  set color($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasColor() => $_has(2);
   @$pb.TagNumber(12)
   void clearColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureColor() => $_ensure(2);
+  $1.DartColorExpression ensureColor() => $_ensure(2);
 
   @$pb.TagNumber(18)
   $core.bool get showPerformanceOverlay => $_getBF(3);
@@ -30799,7 +30799,7 @@ class FlutterClipRect extends $pb.GeneratedMessage {
 /// package:flutter/src/widgets/basic.dart
 class FlutterColoredBox extends $pb.GeneratedMessage {
   factory FlutterColoredBox({
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     WidgetExpression? child,
     $1.FlutterKeyExpression? key,
   }) {
@@ -30820,7 +30820,7 @@ class FlutterColoredBox extends $pb.GeneratedMessage {
   factory FlutterColoredBox.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterColoredBox', createEmptyInstance: create)
-    ..aOM<$1.ColorExpression>(2, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(2, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..aOM<$1.FlutterKeyExpression>(4, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..hasRequiredFields = false
@@ -30848,15 +30848,15 @@ class FlutterColoredBox extends $pb.GeneratedMessage {
   static FlutterColoredBox? _defaultInstance;
 
   @$pb.TagNumber(2)
-  $1.ColorExpression get color => $_getN(0);
+  $1.DartColorExpression get color => $_getN(0);
   @$pb.TagNumber(2)
-  set color($1.ColorExpression v) { setField(2, v); }
+  set color($1.DartColorExpression v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasColor() => $_has(0);
   @$pb.TagNumber(2)
   void clearColor() => clearField(2);
   @$pb.TagNumber(2)
-  $1.ColorExpression ensureColor() => $_ensure(0);
+  $1.DartColorExpression ensureColor() => $_ensure(0);
 
   @$pb.TagNumber(3)
   WidgetExpression get child => $_getN(1);
@@ -32769,8 +32769,8 @@ class FlutterPhysicalModel extends $pb.GeneratedMessage {
   factory FlutterPhysicalModel({
     $1.FlutterKeyExpression? key,
     $core.double? elevation,
-    $1.ColorExpression? color,
-    $1.ColorExpression? shadowColor,
+    $1.DartColorExpression? color,
+    $1.DartColorExpression? shadowColor,
     WidgetExpression? child,
   }) {
     final $result = create();
@@ -32798,8 +32798,8 @@ class FlutterPhysicalModel extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterPhysicalModel', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(7, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<WidgetExpression>(9, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..hasRequiredFields = false
   ;
@@ -32846,26 +32846,26 @@ class FlutterPhysicalModel extends $pb.GeneratedMessage {
   void clearElevation() => clearField(6);
 
   @$pb.TagNumber(7)
-  $1.ColorExpression get color => $_getN(2);
+  $1.DartColorExpression get color => $_getN(2);
   @$pb.TagNumber(7)
-  set color($1.ColorExpression v) { setField(7, v); }
+  set color($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
   $core.bool hasColor() => $_has(2);
   @$pb.TagNumber(7)
   void clearColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.ColorExpression ensureColor() => $_ensure(2);
+  $1.DartColorExpression ensureColor() => $_ensure(2);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get shadowColor => $_getN(3);
+  $1.DartColorExpression get shadowColor => $_getN(3);
   @$pb.TagNumber(8)
-  set shadowColor($1.ColorExpression v) { setField(8, v); }
+  set shadowColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasShadowColor() => $_has(3);
   @$pb.TagNumber(8)
   void clearShadowColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureShadowColor() => $_ensure(3);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(3);
 
   @$pb.TagNumber(9)
   WidgetExpression get child => $_getN(4);
@@ -33318,7 +33318,7 @@ class FlutterRawImage extends $pb.GeneratedMessage {
     $core.double? width,
     $core.double? height,
     $core.double? scale,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.bool? matchTextDirection,
     $core.bool? invertColors,
     $core.bool? isAntiAlias,
@@ -33363,7 +33363,7 @@ class FlutterRawImage extends $pb.GeneratedMessage {
     ..a<$core.double>(5, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OD)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'scale', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(8, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOB(15, _omitFieldNames ? '' : 'matchTextDirection')
     ..aOB(16, _omitFieldNames ? '' : 'invertColors')
     ..aOB(18, _omitFieldNames ? '' : 'isAntiAlias')
@@ -33439,15 +33439,15 @@ class FlutterRawImage extends $pb.GeneratedMessage {
   void clearScale() => clearField(7);
 
   @$pb.TagNumber(8)
-  $1.ColorExpression get color => $_getN(5);
+  $1.DartColorExpression get color => $_getN(5);
   @$pb.TagNumber(8)
-  set color($1.ColorExpression v) { setField(8, v); }
+  set color($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasColor() => $_has(5);
   @$pb.TagNumber(8)
   void clearColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.ColorExpression ensureColor() => $_ensure(5);
+  $1.DartColorExpression ensureColor() => $_ensure(5);
 
   @$pb.TagNumber(15)
   $core.bool get matchTextDirection => $_getBF(6);
@@ -35342,7 +35342,7 @@ class FlutterWrap extends $pb.GeneratedMessage {
 class FlutterContainer extends $pb.GeneratedMessage {
   factory FlutterContainer({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.double? width,
     $core.double? height,
     WidgetExpression? child,
@@ -35371,7 +35371,7 @@ class FlutterContainer extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterContainer', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OD)
     ..a<$core.double>(9, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
     ..aOM<WidgetExpression>(14, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
@@ -35411,15 +35411,15 @@ class FlutterContainer extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get color => $_getN(1);
+  $1.DartColorExpression get color => $_getN(1);
   @$pb.TagNumber(5)
-  set color($1.ColorExpression v) { setField(5, v); }
+  set color($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasColor() => $_has(1);
   @$pb.TagNumber(5)
   void clearColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureColor() => $_ensure(1);
+  $1.DartColorExpression ensureColor() => $_ensure(1);
 
   @$pb.TagNumber(8)
   $core.double get width => $_getN(2);
@@ -35455,8 +35455,8 @@ class FlutterContainer extends $pb.GeneratedMessage {
 class FlutterDefaultSelectionStyle extends $pb.GeneratedMessage {
   factory FlutterDefaultSelectionStyle({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? cursorColor,
-    $1.ColorExpression? selectionColor,
+    $1.DartColorExpression? cursorColor,
+    $1.DartColorExpression? selectionColor,
     WidgetExpression? child,
   }) {
     final $result = create();
@@ -35480,8 +35480,8 @@ class FlutterDefaultSelectionStyle extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterDefaultSelectionStyle', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'cursorColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'selectionColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'cursorColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'selectionColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<WidgetExpression>(6, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..hasRequiredFields = false
   ;
@@ -35519,26 +35519,26 @@ class FlutterDefaultSelectionStyle extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get cursorColor => $_getN(1);
+  $1.DartColorExpression get cursorColor => $_getN(1);
   @$pb.TagNumber(3)
-  set cursorColor($1.ColorExpression v) { setField(3, v); }
+  set cursorColor($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasCursorColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearCursorColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureCursorColor() => $_ensure(1);
+  $1.DartColorExpression ensureCursorColor() => $_ensure(1);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get selectionColor => $_getN(2);
+  $1.DartColorExpression get selectionColor => $_getN(2);
   @$pb.TagNumber(4)
-  set selectionColor($1.ColorExpression v) { setField(4, v); }
+  set selectionColor($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasSelectionColor() => $_has(2);
   @$pb.TagNumber(4)
   void clearSelectionColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureSelectionColor() => $_ensure(2);
+  $1.DartColorExpression ensureSelectionColor() => $_ensure(2);
 
   @$pb.TagNumber(6)
   WidgetExpression get child => $_getN(3);
@@ -35681,8 +35681,8 @@ class FlutterDismissible extends $pb.GeneratedMessage {
     WidgetExpression? child,
     WidgetExpression? background,
     WidgetExpression? secondaryBackground,
-    $1.DurationExpression? resizeDuration,
-    $1.DurationExpression? movementDuration,
+    $1.DartDurationExpression? resizeDuration,
+    $1.DartDurationExpression? movementDuration,
     $core.double? crossAxisEndOffset,
   }) {
     final $result = create();
@@ -35718,8 +35718,8 @@ class FlutterDismissible extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'background', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'secondaryBackground', subBuilder: WidgetExpression.create)
-    ..aOM<$1.DurationExpression>(11, _omitFieldNames ? '' : 'resizeDuration', subBuilder: $1.DurationExpression.create)
-    ..aOM<$1.DurationExpression>(13, _omitFieldNames ? '' : 'movementDuration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(11, _omitFieldNames ? '' : 'resizeDuration', subBuilder: $1.DartDurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(13, _omitFieldNames ? '' : 'movementDuration', subBuilder: $1.DartDurationExpression.create)
     ..a<$core.double>(14, _omitFieldNames ? '' : 'crossAxisEndOffset', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
   ;
@@ -35790,26 +35790,26 @@ class FlutterDismissible extends $pb.GeneratedMessage {
   WidgetExpression ensureSecondaryBackground() => $_ensure(3);
 
   @$pb.TagNumber(11)
-  $1.DurationExpression get resizeDuration => $_getN(4);
+  $1.DartDurationExpression get resizeDuration => $_getN(4);
   @$pb.TagNumber(11)
-  set resizeDuration($1.DurationExpression v) { setField(11, v); }
+  set resizeDuration($1.DartDurationExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasResizeDuration() => $_has(4);
   @$pb.TagNumber(11)
   void clearResizeDuration() => clearField(11);
   @$pb.TagNumber(11)
-  $1.DurationExpression ensureResizeDuration() => $_ensure(4);
+  $1.DartDurationExpression ensureResizeDuration() => $_ensure(4);
 
   @$pb.TagNumber(13)
-  $1.DurationExpression get movementDuration => $_getN(5);
+  $1.DartDurationExpression get movementDuration => $_getN(5);
   @$pb.TagNumber(13)
-  set movementDuration($1.DurationExpression v) { setField(13, v); }
+  set movementDuration($1.DartDurationExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
   $core.bool hasMovementDuration() => $_has(5);
   @$pb.TagNumber(13)
   void clearMovementDuration() => clearField(13);
   @$pb.TagNumber(13)
-  $1.DurationExpression ensureMovementDuration() => $_ensure(5);
+  $1.DartDurationExpression ensureMovementDuration() => $_ensure(5);
 
   @$pb.TagNumber(14)
   $core.double get crossAxisEndOffset => $_getN(6);
@@ -36058,7 +36058,7 @@ class FlutterLongPressDraggable extends $pb.GeneratedMessage {
     $core.bool? hapticFeedbackOnStart,
     $core.bool? ignoringFeedbackSemantics,
     $core.bool? ignoringFeedbackPointer,
-    $1.DurationExpression? delay,
+    $1.DartDurationExpression? delay,
   }) {
     final $result = create();
     if (key != null) {
@@ -36103,7 +36103,7 @@ class FlutterLongPressDraggable extends $pb.GeneratedMessage {
     ..aOB(16, _omitFieldNames ? '' : 'hapticFeedbackOnStart')
     ..aOB(17, _omitFieldNames ? '' : 'ignoringFeedbackSemantics')
     ..aOB(18, _omitFieldNames ? '' : 'ignoringFeedbackPointer')
-    ..aOM<$1.DurationExpression>(19, _omitFieldNames ? '' : 'delay', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(19, _omitFieldNames ? '' : 'delay', subBuilder: $1.DartDurationExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -36209,15 +36209,15 @@ class FlutterLongPressDraggable extends $pb.GeneratedMessage {
   void clearIgnoringFeedbackPointer() => clearField(18);
 
   @$pb.TagNumber(19)
-  $1.DurationExpression get delay => $_getN(8);
+  $1.DartDurationExpression get delay => $_getN(8);
   @$pb.TagNumber(19)
-  set delay($1.DurationExpression v) { setField(19, v); }
+  set delay($1.DartDurationExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
   $core.bool hasDelay() => $_has(8);
   @$pb.TagNumber(19)
   void clearDelay() => clearField(19);
   @$pb.TagNumber(19)
-  $1.DurationExpression ensureDelay() => $_ensure(8);
+  $1.DartDurationExpression ensureDelay() => $_ensure(8);
 }
 
 /// package:flutter/src/widgets/draggable_scrollable_sheet.dart
@@ -36299,8 +36299,8 @@ class FlutterFadeInImageNamedAssetNetwork extends $pb.GeneratedMessage {
     $core.double? imageScale,
     $core.bool? excludeFromSemantics,
     $core.String? imageSemanticLabel,
-    $1.DurationExpression? fadeOutDuration,
-    $1.DurationExpression? fadeInDuration,
+    $1.DartDurationExpression? fadeOutDuration,
+    $1.DartDurationExpression? fadeInDuration,
     $core.double? width,
     $core.double? height,
     $core.bool? matchTextDirection,
@@ -36372,8 +36372,8 @@ class FlutterFadeInImageNamedAssetNetwork extends $pb.GeneratedMessage {
     ..a<$core.double>(9, _omitFieldNames ? '' : 'imageScale', $pb.PbFieldType.OD)
     ..aOB(10, _omitFieldNames ? '' : 'excludeFromSemantics')
     ..aOS(11, _omitFieldNames ? '' : 'imageSemanticLabel')
-    ..aOM<$1.DurationExpression>(12, _omitFieldNames ? '' : 'fadeOutDuration', subBuilder: $1.DurationExpression.create)
-    ..aOM<$1.DurationExpression>(14, _omitFieldNames ? '' : 'fadeInDuration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(12, _omitFieldNames ? '' : 'fadeOutDuration', subBuilder: $1.DartDurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(14, _omitFieldNames ? '' : 'fadeInDuration', subBuilder: $1.DartDurationExpression.create)
     ..a<$core.double>(16, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OD)
     ..a<$core.double>(17, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
     ..aOB(24, _omitFieldNames ? '' : 'matchTextDirection')
@@ -36471,26 +36471,26 @@ class FlutterFadeInImageNamedAssetNetwork extends $pb.GeneratedMessage {
   void clearImageSemanticLabel() => clearField(11);
 
   @$pb.TagNumber(12)
-  $1.DurationExpression get fadeOutDuration => $_getN(7);
+  $1.DartDurationExpression get fadeOutDuration => $_getN(7);
   @$pb.TagNumber(12)
-  set fadeOutDuration($1.DurationExpression v) { setField(12, v); }
+  set fadeOutDuration($1.DartDurationExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasFadeOutDuration() => $_has(7);
   @$pb.TagNumber(12)
   void clearFadeOutDuration() => clearField(12);
   @$pb.TagNumber(12)
-  $1.DurationExpression ensureFadeOutDuration() => $_ensure(7);
+  $1.DartDurationExpression ensureFadeOutDuration() => $_ensure(7);
 
   @$pb.TagNumber(14)
-  $1.DurationExpression get fadeInDuration => $_getN(8);
+  $1.DartDurationExpression get fadeInDuration => $_getN(8);
   @$pb.TagNumber(14)
-  set fadeInDuration($1.DurationExpression v) { setField(14, v); }
+  set fadeInDuration($1.DartDurationExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasFadeInDuration() => $_has(8);
   @$pb.TagNumber(14)
   void clearFadeInDuration() => clearField(14);
   @$pb.TagNumber(14)
-  $1.DurationExpression ensureFadeInDuration() => $_ensure(8);
+  $1.DartDurationExpression ensureFadeInDuration() => $_ensure(8);
 
   @$pb.TagNumber(16)
   $core.double get width => $_getN(9);
@@ -37415,7 +37415,7 @@ class FlutterRawGestureDetector extends $pb.GeneratedMessage {
 class FlutterGridPaper extends $pb.GeneratedMessage {
   factory FlutterGridPaper({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.double? interval,
     $core.int? divisions,
     $core.int? subdivisions,
@@ -37448,7 +37448,7 @@ class FlutterGridPaper extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterGridPaper', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'interval', $pb.PbFieldType.OD)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'divisions', $pb.PbFieldType.O3)
     ..a<$core.int>(6, _omitFieldNames ? '' : 'subdivisions', $pb.PbFieldType.O3)
@@ -37489,15 +37489,15 @@ class FlutterGridPaper extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get color => $_getN(1);
+  $1.DartColorExpression get color => $_getN(1);
   @$pb.TagNumber(3)
-  set color($1.ColorExpression v) { setField(3, v); }
+  set color($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureColor() => $_ensure(1);
+  $1.DartColorExpression ensureColor() => $_ensure(1);
 
   @$pb.TagNumber(4)
   $core.double get interval => $_getN(2);
@@ -37630,7 +37630,7 @@ class FlutterIcon extends $pb.GeneratedMessage {
     $core.double? weight,
     $core.double? grade,
     $core.double? opticalSize,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.String? semanticLabel,
   }) {
     final $result = create();
@@ -37671,7 +37671,7 @@ class FlutterIcon extends $pb.GeneratedMessage {
     ..a<$core.double>(6, _omitFieldNames ? '' : 'weight', $pb.PbFieldType.OD)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'grade', $pb.PbFieldType.OD)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'opticalSize', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOS(11, _omitFieldNames ? '' : 'semanticLabel')
     ..hasRequiredFields = false
   ;
@@ -37754,15 +37754,15 @@ class FlutterIcon extends $pb.GeneratedMessage {
   void clearOpticalSize() => clearField(8);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get color => $_getN(6);
+  $1.DartColorExpression get color => $_getN(6);
   @$pb.TagNumber(9)
-  set color($1.ColorExpression v) { setField(9, v); }
+  set color($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasColor() => $_has(6);
   @$pb.TagNumber(9)
   void clearColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureColor() => $_ensure(6);
+  $1.DartColorExpression ensureColor() => $_ensure(6);
 
   @$pb.TagNumber(11)
   $core.String get semanticLabel => $_getSZ(7);
@@ -37784,7 +37784,7 @@ class FlutterImageNamedNetwork extends $pb.GeneratedMessage {
     $core.bool? excludeFromSemantics,
     $core.double? width,
     $core.double? height,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.bool? matchTextDirection,
     $core.bool? gaplessPlayback,
     $core.bool? isAntiAlias,
@@ -37845,7 +37845,7 @@ class FlutterImageNamedNetwork extends $pb.GeneratedMessage {
     ..aOB(9, _omitFieldNames ? '' : 'excludeFromSemantics')
     ..a<$core.double>(10, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OD)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOB(19, _omitFieldNames ? '' : 'matchTextDirection')
     ..aOB(20, _omitFieldNames ? '' : 'gaplessPlayback')
     ..aOB(22, _omitFieldNames ? '' : 'isAntiAlias')
@@ -37941,15 +37941,15 @@ class FlutterImageNamedNetwork extends $pb.GeneratedMessage {
   void clearHeight() => clearField(11);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get color => $_getN(7);
+  $1.DartColorExpression get color => $_getN(7);
   @$pb.TagNumber(12)
-  set color($1.ColorExpression v) { setField(12, v); }
+  set color($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasColor() => $_has(7);
   @$pb.TagNumber(12)
   void clearColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureColor() => $_ensure(7);
+  $1.DartColorExpression ensureColor() => $_ensure(7);
 
   @$pb.TagNumber(19)
   $core.bool get matchTextDirection => $_getBF(8);
@@ -38007,7 +38007,7 @@ class FlutterImageNamedAsset extends $pb.GeneratedMessage {
     $core.double? scale,
     $core.double? width,
     $core.double? height,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.bool? matchTextDirection,
     $core.bool? gaplessPlayback,
     $core.bool? isAntiAlias,
@@ -38072,7 +38072,7 @@ class FlutterImageNamedAsset extends $pb.GeneratedMessage {
     ..a<$core.double>(9, _omitFieldNames ? '' : 'scale', $pb.PbFieldType.OD)
     ..a<$core.double>(10, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OD)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(12, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOB(19, _omitFieldNames ? '' : 'matchTextDirection')
     ..aOB(20, _omitFieldNames ? '' : 'gaplessPlayback')
     ..aOB(21, _omitFieldNames ? '' : 'isAntiAlias')
@@ -38169,15 +38169,15 @@ class FlutterImageNamedAsset extends $pb.GeneratedMessage {
   void clearHeight() => clearField(11);
 
   @$pb.TagNumber(12)
-  $1.ColorExpression get color => $_getN(7);
+  $1.DartColorExpression get color => $_getN(7);
   @$pb.TagNumber(12)
-  set color($1.ColorExpression v) { setField(12, v); }
+  set color($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
   $core.bool hasColor() => $_has(7);
   @$pb.TagNumber(12)
   void clearColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.ColorExpression ensureColor() => $_ensure(7);
+  $1.DartColorExpression ensureColor() => $_ensure(7);
 
   @$pb.TagNumber(19)
   $core.bool get matchTextDirection => $_getBF(8);
@@ -38239,7 +38239,7 @@ class FlutterImageIcon extends $pb.GeneratedMessage {
   factory FlutterImageIcon({
     $1.FlutterKeyExpression? key,
     $core.double? size,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.String? semanticLabel,
   }) {
     final $result = create();
@@ -38264,7 +38264,7 @@ class FlutterImageIcon extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterImageIcon', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(3, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'size', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOS(6, _omitFieldNames ? '' : 'semanticLabel')
     ..hasRequiredFields = false
   ;
@@ -38311,15 +38311,15 @@ class FlutterImageIcon extends $pb.GeneratedMessage {
   void clearSize() => clearField(4);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get color => $_getN(2);
+  $1.DartColorExpression get color => $_getN(2);
   @$pb.TagNumber(5)
-  set color($1.ColorExpression v) { setField(5, v); }
+  set color($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasColor() => $_has(2);
   @$pb.TagNumber(5)
   void clearColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureColor() => $_ensure(2);
+  $1.DartColorExpression ensureColor() => $_ensure(2);
 
   @$pb.TagNumber(6)
   $core.String get semanticLabel => $_getSZ(3);
@@ -38335,11 +38335,11 @@ class FlutterImageIcon extends $pb.GeneratedMessage {
 class FlutterAnimatedContainer extends $pb.GeneratedMessage {
   factory FlutterAnimatedContainer({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.double? width,
     $core.double? height,
     WidgetExpression? child,
-    $1.DurationExpression? duration,
+    $1.DartDurationExpression? duration,
   }) {
     final $result = create();
     if (key != null) {
@@ -38368,11 +38368,11 @@ class FlutterAnimatedContainer extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterAnimatedContainer', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OD)
     ..a<$core.double>(9, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
     ..aOM<WidgetExpression>(14, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
-    ..aOM<$1.DurationExpression>(17, _omitFieldNames ? '' : 'duration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(17, _omitFieldNames ? '' : 'duration', subBuilder: $1.DartDurationExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -38409,15 +38409,15 @@ class FlutterAnimatedContainer extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(5)
-  $1.ColorExpression get color => $_getN(1);
+  $1.DartColorExpression get color => $_getN(1);
   @$pb.TagNumber(5)
-  set color($1.ColorExpression v) { setField(5, v); }
+  set color($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasColor() => $_has(1);
   @$pb.TagNumber(5)
   void clearColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.ColorExpression ensureColor() => $_ensure(1);
+  $1.DartColorExpression ensureColor() => $_ensure(1);
 
   @$pb.TagNumber(8)
   $core.double get width => $_getN(2);
@@ -38449,15 +38449,15 @@ class FlutterAnimatedContainer extends $pb.GeneratedMessage {
   WidgetExpression ensureChild() => $_ensure(4);
 
   @$pb.TagNumber(17)
-  $1.DurationExpression get duration => $_getN(5);
+  $1.DartDurationExpression get duration => $_getN(5);
   @$pb.TagNumber(17)
-  set duration($1.DurationExpression v) { setField(17, v); }
+  set duration($1.DartDurationExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasDuration() => $_has(5);
   @$pb.TagNumber(17)
   void clearDuration() => clearField(17);
   @$pb.TagNumber(17)
-  $1.DurationExpression ensureDuration() => $_ensure(5);
+  $1.DartDurationExpression ensureDuration() => $_ensure(5);
 }
 
 /// package:flutter/src/widgets/implicit_animations.dart
@@ -38467,7 +38467,7 @@ class FlutterAnimatedFractionallySizedBox extends $pb.GeneratedMessage {
     WidgetExpression? child,
     $core.double? heightFactor,
     $core.double? widthFactor,
-    $1.DurationExpression? duration,
+    $1.DartDurationExpression? duration,
   }) {
     final $result = create();
     if (key != null) {
@@ -38496,7 +38496,7 @@ class FlutterAnimatedFractionallySizedBox extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'heightFactor', $pb.PbFieldType.OD)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'widthFactor', $pb.PbFieldType.OD)
-    ..aOM<$1.DurationExpression>(8, _omitFieldNames ? '' : 'duration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(8, _omitFieldNames ? '' : 'duration', subBuilder: $1.DartDurationExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -38562,15 +38562,15 @@ class FlutterAnimatedFractionallySizedBox extends $pb.GeneratedMessage {
   void clearWidthFactor() => clearField(6);
 
   @$pb.TagNumber(8)
-  $1.DurationExpression get duration => $_getN(4);
+  $1.DartDurationExpression get duration => $_getN(4);
   @$pb.TagNumber(8)
-  set duration($1.DurationExpression v) { setField(8, v); }
+  set duration($1.DartDurationExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDuration() => $_has(4);
   @$pb.TagNumber(8)
   void clearDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $1.DurationExpression ensureDuration() => $_ensure(4);
+  $1.DartDurationExpression ensureDuration() => $_ensure(4);
 }
 
 /// package:flutter/src/widgets/implicit_animations.dart
@@ -38579,7 +38579,7 @@ class FlutterAnimatedOpacity extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? child,
     $core.double? opacity,
-    $1.DurationExpression? duration,
+    $1.DartDurationExpression? duration,
     $core.bool? alwaysIncludeSemantics,
   }) {
     final $result = create();
@@ -38608,7 +38608,7 @@ class FlutterAnimatedOpacity extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'opacity', $pb.PbFieldType.OD)
-    ..aOM<$1.DurationExpression>(6, _omitFieldNames ? '' : 'duration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(6, _omitFieldNames ? '' : 'duration', subBuilder: $1.DartDurationExpression.create)
     ..aOB(8, _omitFieldNames ? '' : 'alwaysIncludeSemantics')
     ..hasRequiredFields = false
   ;
@@ -38666,15 +38666,15 @@ class FlutterAnimatedOpacity extends $pb.GeneratedMessage {
   void clearOpacity() => clearField(4);
 
   @$pb.TagNumber(6)
-  $1.DurationExpression get duration => $_getN(3);
+  $1.DartDurationExpression get duration => $_getN(3);
   @$pb.TagNumber(6)
-  set duration($1.DurationExpression v) { setField(6, v); }
+  set duration($1.DartDurationExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDuration() => $_has(3);
   @$pb.TagNumber(6)
   void clearDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $1.DurationExpression ensureDuration() => $_ensure(3);
+  $1.DartDurationExpression ensureDuration() => $_ensure(3);
 
   @$pb.TagNumber(8)
   $core.bool get alwaysIncludeSemantics => $_getBF(4);
@@ -38697,7 +38697,7 @@ class FlutterAnimatedPositioned extends $pb.GeneratedMessage {
     $core.double? bottom,
     $core.double? width,
     $core.double? height,
-    $1.DurationExpression? duration,
+    $1.DartDurationExpression? duration,
   }) {
     final $result = create();
     if (key != null) {
@@ -38742,7 +38742,7 @@ class FlutterAnimatedPositioned extends $pb.GeneratedMessage {
     ..a<$core.double>(7, _omitFieldNames ? '' : 'bottom', $pb.PbFieldType.OD)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OD)
     ..a<$core.double>(9, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
-    ..aOM<$1.DurationExpression>(11, _omitFieldNames ? '' : 'duration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(11, _omitFieldNames ? '' : 'duration', subBuilder: $1.DartDurationExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -38844,15 +38844,15 @@ class FlutterAnimatedPositioned extends $pb.GeneratedMessage {
   void clearHeight() => clearField(9);
 
   @$pb.TagNumber(11)
-  $1.DurationExpression get duration => $_getN(8);
+  $1.DartDurationExpression get duration => $_getN(8);
   @$pb.TagNumber(11)
-  set duration($1.DurationExpression v) { setField(11, v); }
+  set duration($1.DartDurationExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasDuration() => $_has(8);
   @$pb.TagNumber(11)
   void clearDuration() => clearField(11);
   @$pb.TagNumber(11)
-  $1.DurationExpression ensureDuration() => $_ensure(8);
+  $1.DartDurationExpression ensureDuration() => $_ensure(8);
 }
 
 /// package:flutter/src/widgets/implicit_animations.dart
@@ -38866,7 +38866,7 @@ class FlutterAnimatedPositionedDirectional extends $pb.GeneratedMessage {
     $core.double? bottom,
     $core.double? width,
     $core.double? height,
-    $1.DurationExpression? duration,
+    $1.DartDurationExpression? duration,
   }) {
     final $result = create();
     if (key != null) {
@@ -38911,7 +38911,7 @@ class FlutterAnimatedPositionedDirectional extends $pb.GeneratedMessage {
     ..a<$core.double>(7, _omitFieldNames ? '' : 'bottom', $pb.PbFieldType.OD)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OD)
     ..a<$core.double>(9, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
-    ..aOM<$1.DurationExpression>(11, _omitFieldNames ? '' : 'duration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(11, _omitFieldNames ? '' : 'duration', subBuilder: $1.DartDurationExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -39013,15 +39013,15 @@ class FlutterAnimatedPositionedDirectional extends $pb.GeneratedMessage {
   void clearHeight() => clearField(9);
 
   @$pb.TagNumber(11)
-  $1.DurationExpression get duration => $_getN(8);
+  $1.DartDurationExpression get duration => $_getN(8);
   @$pb.TagNumber(11)
-  set duration($1.DurationExpression v) { setField(11, v); }
+  set duration($1.DartDurationExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
   $core.bool hasDuration() => $_has(8);
   @$pb.TagNumber(11)
   void clearDuration() => clearField(11);
   @$pb.TagNumber(11)
-  $1.DurationExpression ensureDuration() => $_ensure(8);
+  $1.DartDurationExpression ensureDuration() => $_ensure(8);
 }
 
 /// package:flutter/src/widgets/implicit_animations.dart
@@ -39030,7 +39030,7 @@ class FlutterAnimatedRotation extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? child,
     $core.double? turns,
-    $1.DurationExpression? duration,
+    $1.DartDurationExpression? duration,
   }) {
     final $result = create();
     if (key != null) {
@@ -39055,7 +39055,7 @@ class FlutterAnimatedRotation extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'turns', $pb.PbFieldType.OD)
-    ..aOM<$1.DurationExpression>(8, _omitFieldNames ? '' : 'duration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(8, _omitFieldNames ? '' : 'duration', subBuilder: $1.DartDurationExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -39112,15 +39112,15 @@ class FlutterAnimatedRotation extends $pb.GeneratedMessage {
   void clearTurns() => clearField(4);
 
   @$pb.TagNumber(8)
-  $1.DurationExpression get duration => $_getN(3);
+  $1.DartDurationExpression get duration => $_getN(3);
   @$pb.TagNumber(8)
-  set duration($1.DurationExpression v) { setField(8, v); }
+  set duration($1.DartDurationExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDuration() => $_has(3);
   @$pb.TagNumber(8)
   void clearDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $1.DurationExpression ensureDuration() => $_ensure(3);
+  $1.DartDurationExpression ensureDuration() => $_ensure(3);
 }
 
 /// package:flutter/src/widgets/implicit_animations.dart
@@ -39129,7 +39129,7 @@ class FlutterAnimatedScale extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? child,
     $core.double? scale,
-    $1.DurationExpression? duration,
+    $1.DartDurationExpression? duration,
   }) {
     final $result = create();
     if (key != null) {
@@ -39154,7 +39154,7 @@ class FlutterAnimatedScale extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'scale', $pb.PbFieldType.OD)
-    ..aOM<$1.DurationExpression>(8, _omitFieldNames ? '' : 'duration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(8, _omitFieldNames ? '' : 'duration', subBuilder: $1.DartDurationExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -39211,15 +39211,15 @@ class FlutterAnimatedScale extends $pb.GeneratedMessage {
   void clearScale() => clearField(4);
 
   @$pb.TagNumber(8)
-  $1.DurationExpression get duration => $_getN(3);
+  $1.DartDurationExpression get duration => $_getN(3);
   @$pb.TagNumber(8)
-  set duration($1.DurationExpression v) { setField(8, v); }
+  set duration($1.DartDurationExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
   $core.bool hasDuration() => $_has(3);
   @$pb.TagNumber(8)
   void clearDuration() => clearField(8);
   @$pb.TagNumber(8)
-  $1.DurationExpression ensureDuration() => $_ensure(3);
+  $1.DartDurationExpression ensureDuration() => $_ensure(3);
 }
 
 /// package:flutter/src/widgets/implicit_animations.dart
@@ -39228,7 +39228,7 @@ class FlutterSliverAnimatedOpacity extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? sliver,
     $core.double? opacity,
-    $1.DurationExpression? duration,
+    $1.DartDurationExpression? duration,
     $core.bool? alwaysIncludeSemantics,
   }) {
     final $result = create();
@@ -39257,7 +39257,7 @@ class FlutterSliverAnimatedOpacity extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'sliver', subBuilder: WidgetExpression.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'opacity', $pb.PbFieldType.OD)
-    ..aOM<$1.DurationExpression>(6, _omitFieldNames ? '' : 'duration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(6, _omitFieldNames ? '' : 'duration', subBuilder: $1.DartDurationExpression.create)
     ..aOB(8, _omitFieldNames ? '' : 'alwaysIncludeSemantics')
     ..hasRequiredFields = false
   ;
@@ -39315,15 +39315,15 @@ class FlutterSliverAnimatedOpacity extends $pb.GeneratedMessage {
   void clearOpacity() => clearField(4);
 
   @$pb.TagNumber(6)
-  $1.DurationExpression get duration => $_getN(3);
+  $1.DartDurationExpression get duration => $_getN(3);
   @$pb.TagNumber(6)
-  set duration($1.DurationExpression v) { setField(6, v); }
+  set duration($1.DartDurationExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
   $core.bool hasDuration() => $_has(3);
   @$pb.TagNumber(6)
   void clearDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $1.DurationExpression ensureDuration() => $_ensure(3);
+  $1.DartDurationExpression ensureDuration() => $_ensure(3);
 
   @$pb.TagNumber(8)
   $core.bool get alwaysIncludeSemantics => $_getBF(4);
@@ -39790,7 +39790,7 @@ class FlutterLookupBoundary extends $pb.GeneratedMessage {
 class FlutterModalBarrier extends $pb.GeneratedMessage {
   factory FlutterModalBarrier({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.bool? dismissible,
     $core.String? semanticsLabel,
     $core.bool? barrierSemanticsDismissible,
@@ -39823,7 +39823,7 @@ class FlutterModalBarrier extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterModalBarrier', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOB(4, _omitFieldNames ? '' : 'dismissible')
     ..aOS(6, _omitFieldNames ? '' : 'semanticsLabel')
     ..aOB(7, _omitFieldNames ? '' : 'barrierSemanticsDismissible')
@@ -39864,15 +39864,15 @@ class FlutterModalBarrier extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get color => $_getN(1);
+  $1.DartColorExpression get color => $_getN(1);
   @$pb.TagNumber(3)
-  set color($1.ColorExpression v) { setField(3, v); }
+  set color($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureColor() => $_ensure(1);
+  $1.DartColorExpression ensureColor() => $_ensure(1);
 
   @$pb.TagNumber(4)
   $core.bool get dismissible => $_getBF(2);
@@ -40768,7 +40768,7 @@ class FlutterPerformanceOverlayNamedAllEnabled extends $pb.GeneratedMessage {
 class FlutterPlaceholder extends $pb.GeneratedMessage {
   factory FlutterPlaceholder({
     $1.FlutterKeyExpression? key,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     $core.double? strokeWidth,
     $core.double? fallbackWidth,
     $core.double? fallbackHeight,
@@ -40801,7 +40801,7 @@ class FlutterPlaceholder extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterPlaceholder', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
-    ..aOM<$1.ColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(4, _omitFieldNames ? '' : 'strokeWidth', $pb.PbFieldType.OD)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'fallbackWidth', $pb.PbFieldType.OD)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'fallbackHeight', $pb.PbFieldType.OD)
@@ -40842,15 +40842,15 @@ class FlutterPlaceholder extends $pb.GeneratedMessage {
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
   @$pb.TagNumber(3)
-  $1.ColorExpression get color => $_getN(1);
+  $1.DartColorExpression get color => $_getN(1);
   @$pb.TagNumber(3)
-  set color($1.ColorExpression v) { setField(3, v); }
+  set color($1.DartColorExpression v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasColor() => $_has(1);
   @$pb.TagNumber(3)
   void clearColor() => clearField(3);
   @$pb.TagNumber(3)
-  $1.ColorExpression ensureColor() => $_ensure(1);
+  $1.DartColorExpression ensureColor() => $_ensure(1);
 
   @$pb.TagNumber(4)
   $core.double get strokeWidth => $_getN(2);
@@ -42808,15 +42808,15 @@ class FlutterRawScrollbar extends $pb.GeneratedMessage {
     WidgetExpression? child,
     $core.bool? thumbVisibility,
     $core.double? thickness,
-    $1.ColorExpression? thumbColor,
+    $1.DartColorExpression? thumbColor,
     $core.double? minThumbLength,
     $core.double? minOverscrollLength,
     $core.bool? trackVisibility,
-    $1.ColorExpression? trackColor,
-    $1.ColorExpression? trackBorderColor,
-    $1.DurationExpression? fadeDuration,
-    $1.DurationExpression? timeToFade,
-    $1.DurationExpression? pressDuration,
+    $1.DartColorExpression? trackColor,
+    $1.DartColorExpression? trackBorderColor,
+    $1.DartDurationExpression? fadeDuration,
+    $1.DartDurationExpression? timeToFade,
+    $1.DartDurationExpression? pressDuration,
     $core.bool? interactive,
     $core.double? mainAxisMargin,
     $core.double? crossAxisMargin,
@@ -42881,15 +42881,15 @@ class FlutterRawScrollbar extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..aOB(5, _omitFieldNames ? '' : 'thumbVisibility')
     ..a<$core.double>(8, _omitFieldNames ? '' : 'thickness', $pb.PbFieldType.OD)
-    ..aOM<$1.ColorExpression>(9, _omitFieldNames ? '' : 'thumbColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'thumbColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(10, _omitFieldNames ? '' : 'minThumbLength', $pb.PbFieldType.OD)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'minOverscrollLength', $pb.PbFieldType.OD)
     ..aOB(12, _omitFieldNames ? '' : 'trackVisibility')
-    ..aOM<$1.ColorExpression>(14, _omitFieldNames ? '' : 'trackColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.ColorExpression>(15, _omitFieldNames ? '' : 'trackBorderColor', subBuilder: $1.ColorExpression.create)
-    ..aOM<$1.DurationExpression>(16, _omitFieldNames ? '' : 'fadeDuration', subBuilder: $1.DurationExpression.create)
-    ..aOM<$1.DurationExpression>(17, _omitFieldNames ? '' : 'timeToFade', subBuilder: $1.DurationExpression.create)
-    ..aOM<$1.DurationExpression>(18, _omitFieldNames ? '' : 'pressDuration', subBuilder: $1.DurationExpression.create)
+    ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'trackColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartColorExpression>(15, _omitFieldNames ? '' : 'trackBorderColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.DartDurationExpression>(16, _omitFieldNames ? '' : 'fadeDuration', subBuilder: $1.DartDurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(17, _omitFieldNames ? '' : 'timeToFade', subBuilder: $1.DartDurationExpression.create)
+    ..aOM<$1.DartDurationExpression>(18, _omitFieldNames ? '' : 'pressDuration', subBuilder: $1.DartDurationExpression.create)
     ..aOB(20, _omitFieldNames ? '' : 'interactive')
     ..a<$core.double>(22, _omitFieldNames ? '' : 'mainAxisMargin', $pb.PbFieldType.OD)
     ..a<$core.double>(23, _omitFieldNames ? '' : 'crossAxisMargin', $pb.PbFieldType.OD)
@@ -42958,15 +42958,15 @@ class FlutterRawScrollbar extends $pb.GeneratedMessage {
   void clearThickness() => clearField(8);
 
   @$pb.TagNumber(9)
-  $1.ColorExpression get thumbColor => $_getN(4);
+  $1.DartColorExpression get thumbColor => $_getN(4);
   @$pb.TagNumber(9)
-  set thumbColor($1.ColorExpression v) { setField(9, v); }
+  set thumbColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
   $core.bool hasThumbColor() => $_has(4);
   @$pb.TagNumber(9)
   void clearThumbColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.ColorExpression ensureThumbColor() => $_ensure(4);
+  $1.DartColorExpression ensureThumbColor() => $_ensure(4);
 
   @$pb.TagNumber(10)
   $core.double get minThumbLength => $_getN(5);
@@ -42996,59 +42996,59 @@ class FlutterRawScrollbar extends $pb.GeneratedMessage {
   void clearTrackVisibility() => clearField(12);
 
   @$pb.TagNumber(14)
-  $1.ColorExpression get trackColor => $_getN(8);
+  $1.DartColorExpression get trackColor => $_getN(8);
   @$pb.TagNumber(14)
-  set trackColor($1.ColorExpression v) { setField(14, v); }
+  set trackColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
   $core.bool hasTrackColor() => $_has(8);
   @$pb.TagNumber(14)
   void clearTrackColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.ColorExpression ensureTrackColor() => $_ensure(8);
+  $1.DartColorExpression ensureTrackColor() => $_ensure(8);
 
   @$pb.TagNumber(15)
-  $1.ColorExpression get trackBorderColor => $_getN(9);
+  $1.DartColorExpression get trackBorderColor => $_getN(9);
   @$pb.TagNumber(15)
-  set trackBorderColor($1.ColorExpression v) { setField(15, v); }
+  set trackBorderColor($1.DartColorExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
   $core.bool hasTrackBorderColor() => $_has(9);
   @$pb.TagNumber(15)
   void clearTrackBorderColor() => clearField(15);
   @$pb.TagNumber(15)
-  $1.ColorExpression ensureTrackBorderColor() => $_ensure(9);
+  $1.DartColorExpression ensureTrackBorderColor() => $_ensure(9);
 
   @$pb.TagNumber(16)
-  $1.DurationExpression get fadeDuration => $_getN(10);
+  $1.DartDurationExpression get fadeDuration => $_getN(10);
   @$pb.TagNumber(16)
-  set fadeDuration($1.DurationExpression v) { setField(16, v); }
+  set fadeDuration($1.DartDurationExpression v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasFadeDuration() => $_has(10);
   @$pb.TagNumber(16)
   void clearFadeDuration() => clearField(16);
   @$pb.TagNumber(16)
-  $1.DurationExpression ensureFadeDuration() => $_ensure(10);
+  $1.DartDurationExpression ensureFadeDuration() => $_ensure(10);
 
   @$pb.TagNumber(17)
-  $1.DurationExpression get timeToFade => $_getN(11);
+  $1.DartDurationExpression get timeToFade => $_getN(11);
   @$pb.TagNumber(17)
-  set timeToFade($1.DurationExpression v) { setField(17, v); }
+  set timeToFade($1.DartDurationExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
   $core.bool hasTimeToFade() => $_has(11);
   @$pb.TagNumber(17)
   void clearTimeToFade() => clearField(17);
   @$pb.TagNumber(17)
-  $1.DurationExpression ensureTimeToFade() => $_ensure(11);
+  $1.DartDurationExpression ensureTimeToFade() => $_ensure(11);
 
   @$pb.TagNumber(18)
-  $1.DurationExpression get pressDuration => $_getN(12);
+  $1.DartDurationExpression get pressDuration => $_getN(12);
   @$pb.TagNumber(18)
-  set pressDuration($1.DurationExpression v) { setField(18, v); }
+  set pressDuration($1.DartDurationExpression v) { setField(18, v); }
   @$pb.TagNumber(18)
   $core.bool hasPressDuration() => $_has(12);
   @$pb.TagNumber(18)
   void clearPressDuration() => clearField(18);
   @$pb.TagNumber(18)
-  $1.DurationExpression ensurePressDuration() => $_ensure(12);
+  $1.DartDurationExpression ensurePressDuration() => $_ensure(12);
 
   @$pb.TagNumber(20)
   $core.bool get interactive => $_getBF(13);
@@ -45352,7 +45352,7 @@ class FlutterText extends $pb.GeneratedMessage {
     $core.double? textScaleFactor,
     $core.int? maxLines,
     $core.String? semanticsLabel,
-    $1.ColorExpression? selectionColor,
+    $1.DartColorExpression? selectionColor,
   }) {
     final $result = create();
     if (data != null) {
@@ -45389,7 +45389,7 @@ class FlutterText extends $pb.GeneratedMessage {
     ..a<$core.double>(11, _omitFieldNames ? '' : 'textScaleFactor', $pb.PbFieldType.OD)
     ..a<$core.int>(12, _omitFieldNames ? '' : 'maxLines', $pb.PbFieldType.O3)
     ..aOS(13, _omitFieldNames ? '' : 'semanticsLabel')
-    ..aOM<$1.ColorExpression>(16, _omitFieldNames ? '' : 'selectionColor', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(16, _omitFieldNames ? '' : 'selectionColor', subBuilder: $1.DartColorExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -45471,15 +45471,15 @@ class FlutterText extends $pb.GeneratedMessage {
   void clearSemanticsLabel() => clearField(13);
 
   @$pb.TagNumber(16)
-  $1.ColorExpression get selectionColor => $_getN(6);
+  $1.DartColorExpression get selectionColor => $_getN(6);
   @$pb.TagNumber(16)
-  set selectionColor($1.ColorExpression v) { setField(16, v); }
+  set selectionColor($1.DartColorExpression v) { setField(16, v); }
   @$pb.TagNumber(16)
   $core.bool hasSelectionColor() => $_has(6);
   @$pb.TagNumber(16)
   void clearSelectionColor() => clearField(16);
   @$pb.TagNumber(16)
-  $1.ColorExpression ensureSelectionColor() => $_ensure(6);
+  $1.DartColorExpression ensureSelectionColor() => $_ensure(6);
 }
 
 /// package:flutter/src/widgets/text_selection.dart
@@ -45720,7 +45720,7 @@ class FlutterTitle extends $pb.GeneratedMessage {
   factory FlutterTitle({
     $1.FlutterKeyExpression? key,
     $core.String? title,
-    $1.ColorExpression? color,
+    $1.DartColorExpression? color,
     WidgetExpression? child,
   }) {
     final $result = create();
@@ -45745,7 +45745,7 @@ class FlutterTitle extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterTitle', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOS(3, _omitFieldNames ? '' : 'title')
-    ..aOM<$1.ColorExpression>(4, _omitFieldNames ? '' : 'color', subBuilder: $1.ColorExpression.create)
+    ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..hasRequiredFields = false
   ;
@@ -45792,15 +45792,15 @@ class FlutterTitle extends $pb.GeneratedMessage {
   void clearTitle() => clearField(3);
 
   @$pb.TagNumber(4)
-  $1.ColorExpression get color => $_getN(2);
+  $1.DartColorExpression get color => $_getN(2);
   @$pb.TagNumber(4)
-  set color($1.ColorExpression v) { setField(4, v); }
+  set color($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasColor() => $_has(2);
   @$pb.TagNumber(4)
   void clearColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.ColorExpression ensureColor() => $_ensure(2);
+  $1.DartColorExpression ensureColor() => $_ensure(2);
 
   @$pb.TagNumber(5)
   WidgetExpression get child => $_getN(3);

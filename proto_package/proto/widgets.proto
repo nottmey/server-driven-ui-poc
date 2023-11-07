@@ -9,7 +9,7 @@ import "types.proto";
 // package:flutter/src/cupertino/activity_indicator.dart
 message CupertinoActivityIndicator {
   FlutterKeyExpression key = 2;
-  ColorExpression color = 3;
+  DartColorExpression color = 3;
   bool animating = 4;
   double radius = 5;
 }
@@ -17,7 +17,7 @@ message CupertinoActivityIndicator {
 // package:flutter/src/cupertino/activity_indicator.dart
 message CupertinoActivityIndicatorNamedPartiallyRevealed {
   FlutterKeyExpression key = 2;
-  ColorExpression color = 3;
+  DartColorExpression color = 3;
   double radius = 4;
   double progress = 5;
 }
@@ -28,7 +28,7 @@ message CupertinoApp {
   WidgetExpression home = 4;
   string initial_route = 7;
   string title = 13;
-  ColorExpression color = 15;
+  DartColorExpression color = 15;
   bool show_performance_overlay = 21;
   bool checkerboard_raster_cache_images = 22;
   bool checkerboard_offscreen_layers = 23;
@@ -41,7 +41,7 @@ message CupertinoApp {
 message CupertinoAppNamedRouter {
   FlutterKeyExpression key = 2;
   string title = 10;
-  ColorExpression color = 12;
+  DartColorExpression color = 12;
   bool show_performance_overlay = 18;
   bool checkerboard_raster_cache_images = 19;
   bool checkerboard_offscreen_layers = 20;
@@ -54,8 +54,8 @@ message CupertinoAppNamedRouter {
 message CupertinoButton {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
-  ColorExpression color = 5;
-  ColorExpression disabled_color = 6;
+  DartColorExpression color = 5;
+  DartColorExpression disabled_color = 6;
   double min_size = 7;
   double pressed_opacity = 8;
 }
@@ -64,7 +64,7 @@ message CupertinoButton {
 message CupertinoButtonNamedFilled {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
-  ColorExpression disabled_color = 5;
+  DartColorExpression disabled_color = 5;
   double min_size = 6;
   double pressed_opacity = 7;
 }
@@ -74,10 +74,10 @@ message CupertinoCheckbox {
   FlutterKeyExpression key = 2;
   bool value = 3;
   bool tristate = 4;
-  ColorExpression active_color = 6;
-  ColorExpression inactive_color = 7;
-  ColorExpression check_color = 8;
-  ColorExpression focus_color = 9;
+  DartColorExpression active_color = 6;
+  DartColorExpression inactive_color = 7;
+  DartColorExpression check_color = 8;
+  DartColorExpression focus_color = 9;
   bool autofocus = 11;
 }
 
@@ -124,7 +124,7 @@ message CupertinoAlertDialog {
   WidgetExpression title = 3;
   WidgetExpression content = 4;
   repeated WidgetExpression actions = 5;
-  DurationExpression inset_animation_duration = 8;
+  DartDurationExpression inset_animation_duration = 8;
 }
 
 // package:flutter/src/cupertino/dialog.dart
@@ -157,7 +157,7 @@ message CupertinoFormSection {
   repeated WidgetExpression children = 3;
   WidgetExpression header = 4;
   WidgetExpression footer = 5;
-  ColorExpression background_color = 7;
+  DartColorExpression background_color = 7;
 }
 
 // package:flutter/src/cupertino/form_section.dart
@@ -166,7 +166,7 @@ message CupertinoFormSectionNamedInsetGrouped {
   repeated WidgetExpression children = 3;
   WidgetExpression header = 4;
   WidgetExpression footer = 5;
-  ColorExpression background_color = 7;
+  DartColorExpression background_color = 7;
 }
 
 // package:flutter/src/cupertino/list_section.dart
@@ -175,12 +175,12 @@ message CupertinoListSection {
   repeated WidgetExpression children = 3;
   WidgetExpression header = 4;
   WidgetExpression footer = 5;
-  ColorExpression background_color = 7;
+  DartColorExpression background_color = 7;
   double divider_margin = 10;
   double additional_divider_margin = 11;
   double top_margin = 12;
   bool has_leading = 13;
-  ColorExpression separator_color = 14;
+  DartColorExpression separator_color = 14;
 }
 
 // package:flutter/src/cupertino/list_section.dart
@@ -189,12 +189,12 @@ message CupertinoListSectionNamedInsetGrouped {
   repeated WidgetExpression children = 3;
   WidgetExpression header = 4;
   WidgetExpression footer = 5;
-  ColorExpression background_color = 7;
+  DartColorExpression background_color = 7;
   double divider_margin = 10;
   double additional_divider_margin = 11;
   double top_margin = 12;
   bool has_leading = 13;
-  ColorExpression separator_color = 14;
+  DartColorExpression separator_color = 14;
 }
 
 // package:flutter/src/cupertino/list_tile.dart
@@ -205,8 +205,8 @@ message CupertinoListTile {
   WidgetExpression additional_info = 5;
   WidgetExpression leading = 6;
   WidgetExpression trailing = 7;
-  ColorExpression background_color = 9;
-  ColorExpression background_color_activated = 10;
+  DartColorExpression background_color = 9;
+  DartColorExpression background_color_activated = 10;
   double leading_size = 12;
   double leading_to_title = 13;
 }
@@ -219,8 +219,8 @@ message CupertinoListTileNamedNotched {
   WidgetExpression additional_info = 5;
   WidgetExpression leading = 6;
   WidgetExpression trailing = 7;
-  ColorExpression background_color = 9;
-  ColorExpression background_color_activated = 10;
+  DartColorExpression background_color = 9;
+  DartColorExpression background_color_activated = 10;
   double leading_size = 12;
   double leading_to_title = 13;
 }
@@ -244,14 +244,14 @@ message CupertinoNavigationBar {
   string previous_page_title = 6;
   WidgetExpression middle = 7;
   WidgetExpression trailing = 8;
-  ColorExpression background_color = 10;
+  DartColorExpression background_color = 10;
   bool transition_between_routes = 13;
 }
 
 // package:flutter/src/cupertino/nav_bar.dart
 message CupertinoNavigationBarBackButton {
   FlutterKeyExpression key = 2;
-  ColorExpression color = 3;
+  DartColorExpression color = 3;
   string previous_page_title = 4;
 }
 
@@ -266,7 +266,7 @@ message CupertinoSliverNavigationBar {
   string previous_page_title = 8;
   WidgetExpression middle = 9;
   WidgetExpression trailing = 10;
-  ColorExpression background_color = 12;
+  DartColorExpression background_color = 12;
   bool transition_between_routes = 15;
   bool stretch = 17;
 }
@@ -274,7 +274,7 @@ message CupertinoSliverNavigationBar {
 // package:flutter/src/cupertino/page_scaffold.dart
 message CupertinoPageScaffold {
   FlutterKeyExpression key = 2;
-  ColorExpression background_color = 4;
+  DartColorExpression background_color = 4;
   bool resize_to_avoid_bottom_inset = 5;
   WidgetExpression child = 6;
 }
@@ -283,7 +283,7 @@ message CupertinoPageScaffold {
 message CupertinoPicker {
   FlutterKeyExpression key = 2;
   double diameter_ratio = 3;
-  ColorExpression background_color = 4;
+  DartColorExpression background_color = 4;
   double off_axis_fraction = 5;
   bool use_magnifier = 6;
   double magnification = 7;
@@ -297,7 +297,7 @@ message CupertinoPicker {
 // package:flutter/src/cupertino/picker.dart
 message CupertinoPickerDefaultSelectionOverlay {
   FlutterKeyExpression key = 2;
-  ColorExpression background = 3;
+  DartColorExpression background = 3;
   bool cap_start_edge = 4;
   bool cap_end_edge = 5;
 }
@@ -322,8 +322,8 @@ message CupertinoScrollbar {
 message CupertinoSearchTextField {
   FlutterKeyExpression key = 2;
   string placeholder = 7;
-  ColorExpression background_color = 10;
-  ColorExpression item_color = 14;
+  DartColorExpression background_color = 10;
+  DartColorExpression item_color = 14;
   double item_size = 15;
   WidgetExpression prefix_icon = 17;
   string restoration_id = 22;
@@ -340,19 +340,19 @@ message CupertinoSlider {
   double min = 7;
   double max = 8;
   int32 divisions = 9;
-  ColorExpression active_color = 10;
-  ColorExpression thumb_color = 11;
+  DartColorExpression active_color = 10;
+  DartColorExpression thumb_color = 11;
 }
 
 // package:flutter/src/cupertino/switch.dart
 message CupertinoSwitch {
   FlutterKeyExpression key = 2;
   bool value = 3;
-  ColorExpression active_color = 5;
-  ColorExpression track_color = 6;
-  ColorExpression thumb_color = 7;
+  DartColorExpression active_color = 5;
+  DartColorExpression track_color = 6;
+  DartColorExpression thumb_color = 7;
   bool apply_theme = 8;
-  ColorExpression focus_color = 9;
+  DartColorExpression focus_color = 9;
   bool autofocus = 12;
 }
 
@@ -384,7 +384,7 @@ message CupertinoTextField {
   double cursor_width = 43;
   double cursor_height = 44;
   bool cursor_opacity_animates = 46;
-  ColorExpression cursor_color = 47;
+  DartColorExpression cursor_color = 47;
   bool enable_interactive_selection = 53;
   repeated string autofill_hints = 58;
   string restoration_id = 61;
@@ -413,7 +413,7 @@ message CupertinoTextFieldNamedBorderless {
   double cursor_width = 43;
   double cursor_height = 44;
   bool cursor_opacity_animates = 46;
-  ColorExpression cursor_color = 47;
+  DartColorExpression cursor_color = 47;
   bool enable_interactive_selection = 53;
   repeated string autofill_hints = 58;
   string restoration_id = 61;
@@ -440,7 +440,7 @@ message CupertinoTextFormFieldRow {
   bool enabled = 37;
   double cursor_width = 38;
   double cursor_height = 39;
-  ColorExpression cursor_color = 40;
+  DartColorExpression cursor_color = 40;
   bool enable_interactive_selection = 43;
   repeated string autofill_hints = 46;
   string placeholder = 48;
@@ -493,7 +493,7 @@ message MaterialLicensePage {
 // package:flutter/src/material/action_buttons.dart
 message MaterialBackButton {
   FlutterKeyExpression key = 2;
-  ColorExpression color = 3;
+  DartColorExpression color = 3;
 }
 
 // package:flutter/src/material/action_buttons.dart
@@ -504,7 +504,7 @@ message MaterialBackButtonIcon {
 // package:flutter/src/material/action_buttons.dart
 message MaterialCloseButton {
   FlutterKeyExpression key = 2;
-  ColorExpression color = 3;
+  DartColorExpression color = 3;
 }
 
 // package:flutter/src/material/action_buttons.dart
@@ -540,11 +540,11 @@ message MaterialActionChip {
   double press_elevation = 8;
   string tooltip = 9;
   bool autofocus = 14;
-  ColorExpression background_color = 16;
-  ColorExpression disabled_color = 17;
+  DartColorExpression background_color = 16;
+  DartColorExpression disabled_color = 17;
   double elevation = 21;
-  ColorExpression shadow_color = 22;
-  ColorExpression surface_tint_color = 23;
+  DartColorExpression shadow_color = 22;
+  DartColorExpression surface_tint_color = 23;
 }
 
 // package:flutter/src/material/action_chip.dart
@@ -555,11 +555,11 @@ message MaterialActionChipNamedElevated {
   double press_elevation = 8;
   string tooltip = 9;
   bool autofocus = 14;
-  ColorExpression background_color = 16;
-  ColorExpression disabled_color = 17;
+  DartColorExpression background_color = 16;
+  DartColorExpression disabled_color = 17;
   double elevation = 21;
-  ColorExpression shadow_color = 22;
-  ColorExpression surface_tint_color = 23;
+  DartColorExpression shadow_color = 22;
+  DartColorExpression surface_tint_color = 23;
 }
 
 // package:flutter/src/material/app.dart
@@ -568,8 +568,8 @@ message MaterialMaterialApp {
   WidgetExpression home = 5;
   string initial_route = 7;
   string title = 13;
-  ColorExpression color = 15;
-  DurationExpression theme_animation_duration = 21;
+  DartColorExpression color = 15;
+  DartDurationExpression theme_animation_duration = 21;
   bool debug_show_material_grid = 28;
   bool show_performance_overlay = 29;
   bool checkerboard_raster_cache_images = 30;
@@ -583,8 +583,8 @@ message MaterialMaterialApp {
 message MaterialMaterialAppNamedRouter {
   FlutterKeyExpression key = 2;
   string title = 10;
-  ColorExpression color = 12;
-  DurationExpression theme_animation_duration = 18;
+  DartColorExpression color = 12;
+  DartDurationExpression theme_animation_duration = 18;
   bool debug_show_material_grid = 25;
   bool show_performance_overlay = 26;
   bool checkerboard_raster_cache_images = 27;
@@ -604,10 +604,10 @@ message MaterialAppBar {
   WidgetExpression flexible_space = 7;
   double elevation = 9;
   double scrolled_under_elevation = 10;
-  ColorExpression shadow_color = 12;
-  ColorExpression surface_tint_color = 13;
-  ColorExpression background_color = 15;
-  ColorExpression foreground_color = 16;
+  DartColorExpression shadow_color = 12;
+  DartColorExpression surface_tint_color = 13;
+  DartColorExpression background_color = 15;
+  DartColorExpression foreground_color = 16;
   bool primary = 19;
   bool center_title = 20;
   bool exclude_header_semantics = 21;
@@ -629,11 +629,11 @@ message MaterialSliverAppBar {
   WidgetExpression flexible_space = 7;
   double elevation = 9;
   double scrolled_under_elevation = 10;
-  ColorExpression shadow_color = 11;
-  ColorExpression surface_tint_color = 12;
+  DartColorExpression shadow_color = 11;
+  DartColorExpression surface_tint_color = 12;
   bool force_elevated = 13;
-  ColorExpression background_color = 14;
-  ColorExpression foreground_color = 15;
+  DartColorExpression background_color = 14;
+  DartColorExpression foreground_color = 15;
   bool primary = 18;
   bool center_title = 19;
   bool exclude_header_semantics = 20;
@@ -660,11 +660,11 @@ message MaterialSliverAppBarNamedMedium {
   WidgetExpression flexible_space = 7;
   double elevation = 9;
   double scrolled_under_elevation = 10;
-  ColorExpression shadow_color = 11;
-  ColorExpression surface_tint_color = 12;
+  DartColorExpression shadow_color = 11;
+  DartColorExpression surface_tint_color = 12;
   bool force_elevated = 13;
-  ColorExpression background_color = 14;
-  ColorExpression foreground_color = 15;
+  DartColorExpression background_color = 14;
+  DartColorExpression foreground_color = 15;
   bool primary = 18;
   bool center_title = 19;
   bool exclude_header_semantics = 20;
@@ -691,11 +691,11 @@ message MaterialSliverAppBarNamedLarge {
   WidgetExpression flexible_space = 7;
   double elevation = 9;
   double scrolled_under_elevation = 10;
-  ColorExpression shadow_color = 11;
-  ColorExpression surface_tint_color = 12;
+  DartColorExpression shadow_color = 11;
+  DartColorExpression surface_tint_color = 12;
   bool force_elevated = 13;
-  ColorExpression background_color = 14;
-  ColorExpression foreground_color = 15;
+  DartColorExpression background_color = 14;
+  DartColorExpression foreground_color = 15;
   bool primary = 18;
   bool center_title = 19;
   bool exclude_header_semantics = 20;
@@ -715,8 +715,8 @@ message MaterialSliverAppBarNamedLarge {
 // package:flutter/src/material/badge.dart
 message MaterialBadge {
   FlutterKeyExpression key = 2;
-  ColorExpression background_color = 3;
-  ColorExpression text_color = 4;
+  DartColorExpression background_color = 3;
+  DartColorExpression text_color = 4;
   double small_size = 5;
   double large_size = 6;
   WidgetExpression label = 11;
@@ -727,8 +727,8 @@ message MaterialBadge {
 // package:flutter/src/material/badge.dart
 message MaterialBadgeNamedCount {
   FlutterKeyExpression key = 2;
-  ColorExpression background_color = 3;
-  ColorExpression text_color = 4;
+  DartColorExpression background_color = 3;
+  DartColorExpression text_color = 4;
   double small_size = 5;
   double large_size = 6;
   int32 count = 11;
@@ -743,10 +743,10 @@ message MaterialMaterialBanner {
   repeated WidgetExpression actions = 5;
   double elevation = 6;
   WidgetExpression leading = 7;
-  ColorExpression background_color = 8;
-  ColorExpression surface_tint_color = 9;
-  ColorExpression shadow_color = 10;
-  ColorExpression divider_color = 11;
+  DartColorExpression background_color = 8;
+  DartColorExpression surface_tint_color = 9;
+  DartColorExpression shadow_color = 10;
+  DartColorExpression divider_color = 11;
   bool force_actions_below = 15;
 }
 
@@ -759,29 +759,29 @@ message MaterialMaterialBannerTheme {
 // package:flutter/src/material/bottom_app_bar.dart
 message MaterialBottomAppBar {
   FlutterKeyExpression key = 2;
-  ColorExpression color = 3;
+  DartColorExpression color = 3;
   double elevation = 4;
   double notch_margin = 7;
   WidgetExpression child = 8;
-  ColorExpression surface_tint_color = 10;
-  ColorExpression shadow_color = 11;
+  DartColorExpression surface_tint_color = 10;
+  DartColorExpression shadow_color = 11;
   double height = 12;
 }
 
 // package:flutter/src/material/button.dart
 message MaterialRawMaterialButton {
   FlutterKeyExpression key = 2;
-  ColorExpression fill_color = 8;
-  ColorExpression focus_color = 9;
-  ColorExpression hover_color = 10;
-  ColorExpression highlight_color = 11;
-  ColorExpression splash_color = 12;
+  DartColorExpression fill_color = 8;
+  DartColorExpression focus_color = 9;
+  DartColorExpression hover_color = 10;
+  DartColorExpression highlight_color = 11;
+  DartColorExpression splash_color = 12;
   double elevation = 13;
   double focus_elevation = 14;
   double hover_elevation = 15;
   double highlight_elevation = 16;
   double disabled_elevation = 17;
-  DurationExpression animation_duration = 22;
+  DartDurationExpression animation_duration = 22;
   bool autofocus = 25;
   WidgetExpression child = 27;
   bool enable_feedback = 28;
@@ -803,21 +803,21 @@ message MaterialButtonTheme {
   double min_width = 5;
   double height = 6;
   bool aligned_dropdown = 9;
-  ColorExpression button_color = 10;
-  ColorExpression disabled_color = 11;
-  ColorExpression focus_color = 12;
-  ColorExpression hover_color = 13;
-  ColorExpression highlight_color = 14;
-  ColorExpression splash_color = 15;
+  DartColorExpression button_color = 10;
+  DartColorExpression disabled_color = 11;
+  DartColorExpression focus_color = 12;
+  DartColorExpression hover_color = 13;
+  DartColorExpression highlight_color = 14;
+  DartColorExpression splash_color = 15;
   WidgetExpression child = 18;
 }
 
 // package:flutter/src/material/card.dart
 message MaterialCard {
   FlutterKeyExpression key = 2;
-  ColorExpression color = 3;
-  ColorExpression shadow_color = 4;
-  ColorExpression surface_tint_color = 5;
+  DartColorExpression color = 3;
+  DartColorExpression shadow_color = 4;
+  DartColorExpression surface_tint_color = 5;
   double elevation = 6;
   bool border_on_foreground = 8;
   WidgetExpression child = 11;
@@ -829,10 +829,10 @@ message MaterialCheckbox {
   FlutterKeyExpression key = 2;
   bool value = 3;
   bool tristate = 4;
-  ColorExpression active_color = 7;
-  ColorExpression check_color = 9;
-  ColorExpression focus_color = 10;
-  ColorExpression hover_color = 11;
+  DartColorExpression active_color = 7;
+  DartColorExpression check_color = 9;
+  DartColorExpression focus_color = 10;
+  DartColorExpression hover_color = 11;
   double splash_radius = 13;
   bool autofocus = 17;
   bool is_error = 20;
@@ -844,10 +844,10 @@ message MaterialCheckboxNamedAdaptive {
   FlutterKeyExpression key = 2;
   bool value = 3;
   bool tristate = 4;
-  ColorExpression active_color = 7;
-  ColorExpression check_color = 9;
-  ColorExpression focus_color = 10;
-  ColorExpression hover_color = 11;
+  DartColorExpression active_color = 7;
+  DartColorExpression check_color = 9;
+  DartColorExpression focus_color = 10;
+  DartColorExpression hover_color = 11;
   double splash_radius = 13;
   bool autofocus = 17;
   bool is_error = 20;
@@ -858,14 +858,14 @@ message MaterialCheckboxNamedAdaptive {
 message MaterialCheckboxListTile {
   FlutterKeyExpression key = 2;
   bool value = 3;
-  ColorExpression active_color = 6;
-  ColorExpression check_color = 8;
-  ColorExpression hover_color = 9;
+  DartColorExpression active_color = 6;
+  DartColorExpression check_color = 8;
+  DartColorExpression hover_color = 9;
   double splash_radius = 11;
   bool autofocus = 15;
   bool is_error = 18;
   bool enabled = 19;
-  ColorExpression tile_color = 20;
+  DartColorExpression tile_color = 20;
   WidgetExpression title = 21;
   WidgetExpression subtitle = 22;
   bool is_three_line = 23;
@@ -873,7 +873,7 @@ message MaterialCheckboxListTile {
   WidgetExpression secondary = 25;
   bool selected = 26;
   bool tristate = 29;
-  ColorExpression selected_tile_color = 31;
+  DartColorExpression selected_tile_color = 31;
   bool enable_feedback = 33;
   string checkbox_semantic_label = 34;
 }
@@ -882,14 +882,14 @@ message MaterialCheckboxListTile {
 message MaterialCheckboxListTileNamedAdaptive {
   FlutterKeyExpression key = 2;
   bool value = 3;
-  ColorExpression active_color = 6;
-  ColorExpression check_color = 8;
-  ColorExpression hover_color = 9;
+  DartColorExpression active_color = 6;
+  DartColorExpression check_color = 8;
+  DartColorExpression hover_color = 9;
   double splash_radius = 11;
   bool autofocus = 15;
   bool is_error = 18;
   bool enabled = 19;
-  ColorExpression tile_color = 20;
+  DartColorExpression tile_color = 20;
   WidgetExpression title = 21;
   WidgetExpression subtitle = 22;
   bool is_three_line = 23;
@@ -897,7 +897,7 @@ message MaterialCheckboxListTileNamedAdaptive {
   WidgetExpression secondary = 25;
   bool selected = 26;
   bool tristate = 29;
-  ColorExpression selected_tile_color = 31;
+  DartColorExpression selected_tile_color = 31;
   bool enable_feedback = 33;
   string checkbox_semantic_label = 34;
 }
@@ -908,13 +908,13 @@ message MaterialChip {
   WidgetExpression avatar = 3;
   WidgetExpression label = 4;
   WidgetExpression delete_icon = 7;
-  ColorExpression delete_icon_color = 9;
+  DartColorExpression delete_icon_color = 9;
   string delete_button_tooltip_message = 10;
   bool autofocus = 15;
-  ColorExpression background_color = 17;
+  DartColorExpression background_color = 17;
   double elevation = 21;
-  ColorExpression shadow_color = 22;
-  ColorExpression surface_tint_color = 23;
+  DartColorExpression shadow_color = 22;
+  DartColorExpression surface_tint_color = 23;
 }
 
 // package:flutter/src/material/chip.dart
@@ -923,23 +923,23 @@ message MaterialRawChip {
   WidgetExpression avatar = 4;
   WidgetExpression label = 5;
   WidgetExpression delete_icon = 10;
-  ColorExpression delete_icon_color = 12;
+  DartColorExpression delete_icon_color = 12;
   string delete_button_tooltip_message = 13;
   double press_elevation = 16;
   bool tap_enabled = 17;
   bool selected = 18;
   bool is_enabled = 19;
-  ColorExpression disabled_color = 20;
-  ColorExpression selected_color = 21;
+  DartColorExpression disabled_color = 20;
+  DartColorExpression selected_color = 21;
   string tooltip = 22;
   bool autofocus = 27;
-  ColorExpression background_color = 29;
+  DartColorExpression background_color = 29;
   double elevation = 31;
-  ColorExpression shadow_color = 32;
-  ColorExpression surface_tint_color = 33;
-  ColorExpression selected_shadow_color = 35;
+  DartColorExpression shadow_color = 32;
+  DartColorExpression surface_tint_color = 33;
+  DartColorExpression selected_shadow_color = 35;
   bool show_checkmark = 36;
-  ColorExpression checkmark_color = 37;
+  DartColorExpression checkmark_color = 37;
 }
 
 // package:flutter/src/material/choice_chip.dart
@@ -949,17 +949,17 @@ message MaterialChoiceChip {
   WidgetExpression label = 4;
   double press_elevation = 8;
   bool selected = 9;
-  ColorExpression selected_color = 10;
-  ColorExpression disabled_color = 11;
+  DartColorExpression selected_color = 10;
+  DartColorExpression disabled_color = 11;
   string tooltip = 12;
   bool autofocus = 17;
-  ColorExpression background_color = 19;
+  DartColorExpression background_color = 19;
   double elevation = 23;
-  ColorExpression shadow_color = 24;
-  ColorExpression surface_tint_color = 25;
-  ColorExpression selected_shadow_color = 27;
+  DartColorExpression shadow_color = 24;
+  DartColorExpression surface_tint_color = 25;
+  DartColorExpression selected_shadow_color = 27;
   bool show_checkmark = 28;
-  ColorExpression checkmark_color = 29;
+  DartColorExpression checkmark_color = 29;
 }
 
 // package:flutter/src/material/choice_chip.dart
@@ -969,25 +969,25 @@ message MaterialChoiceChipNamedElevated {
   WidgetExpression label = 4;
   double press_elevation = 8;
   bool selected = 9;
-  ColorExpression selected_color = 10;
-  ColorExpression disabled_color = 11;
+  DartColorExpression selected_color = 10;
+  DartColorExpression disabled_color = 11;
   string tooltip = 12;
   bool autofocus = 17;
-  ColorExpression background_color = 19;
+  DartColorExpression background_color = 19;
   double elevation = 23;
-  ColorExpression shadow_color = 24;
-  ColorExpression surface_tint_color = 25;
-  ColorExpression selected_shadow_color = 27;
+  DartColorExpression shadow_color = 24;
+  DartColorExpression surface_tint_color = 25;
+  DartColorExpression selected_shadow_color = 27;
   bool show_checkmark = 28;
-  ColorExpression checkmark_color = 29;
+  DartColorExpression checkmark_color = 29;
 }
 
 // package:flutter/src/material/circle_avatar.dart
 message MaterialCircleAvatar {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
-  ColorExpression background_color = 4;
-  ColorExpression foreground_color = 9;
+  DartColorExpression background_color = 4;
+  DartColorExpression foreground_color = 9;
   double radius = 10;
   double min_radius = 11;
   double max_radius = 12;
@@ -1009,15 +1009,15 @@ message MaterialDesktopTextSelectionToolbarButton {
 message MaterialAlertDialog {
   FlutterKeyExpression key = 2;
   WidgetExpression icon = 3;
-  ColorExpression icon_color = 5;
+  DartColorExpression icon_color = 5;
   WidgetExpression title = 6;
   WidgetExpression content = 9;
   repeated WidgetExpression actions = 12;
   double actions_overflow_button_spacing = 17;
-  ColorExpression background_color = 19;
+  DartColorExpression background_color = 19;
   double elevation = 20;
-  ColorExpression shadow_color = 21;
-  ColorExpression surface_tint_color = 22;
+  DartColorExpression shadow_color = 21;
+  DartColorExpression surface_tint_color = 22;
   string semantic_label = 23;
   bool scrollable = 28;
 }
@@ -1026,36 +1026,36 @@ message MaterialAlertDialog {
 message MaterialAlertDialogNamedAdaptive {
   FlutterKeyExpression key = 2;
   WidgetExpression icon = 3;
-  ColorExpression icon_color = 5;
+  DartColorExpression icon_color = 5;
   WidgetExpression title = 6;
   WidgetExpression content = 9;
   repeated WidgetExpression actions = 12;
   double actions_overflow_button_spacing = 17;
-  ColorExpression background_color = 19;
+  DartColorExpression background_color = 19;
   double elevation = 20;
-  ColorExpression shadow_color = 21;
-  ColorExpression surface_tint_color = 22;
+  DartColorExpression shadow_color = 21;
+  DartColorExpression surface_tint_color = 22;
   string semantic_label = 23;
   bool scrollable = 28;
-  DurationExpression inset_animation_duration = 31;
+  DartDurationExpression inset_animation_duration = 31;
 }
 
 // package:flutter/src/material/dialog.dart
 message MaterialDialog {
   FlutterKeyExpression key = 2;
-  ColorExpression background_color = 3;
+  DartColorExpression background_color = 3;
   double elevation = 4;
-  ColorExpression shadow_color = 5;
-  ColorExpression surface_tint_color = 6;
-  DurationExpression inset_animation_duration = 7;
+  DartColorExpression shadow_color = 5;
+  DartColorExpression surface_tint_color = 6;
+  DartDurationExpression inset_animation_duration = 7;
   WidgetExpression child = 13;
 }
 
 // package:flutter/src/material/dialog.dart
 message MaterialDialogNamedFullscreen {
   FlutterKeyExpression key = 2;
-  ColorExpression background_color = 3;
-  DurationExpression inset_animation_duration = 4;
+  DartColorExpression background_color = 3;
+  DartDurationExpression inset_animation_duration = 4;
   WidgetExpression child = 6;
 }
 
@@ -1064,10 +1064,10 @@ message MaterialSimpleDialog {
   FlutterKeyExpression key = 2;
   WidgetExpression title = 3;
   repeated WidgetExpression children = 6;
-  ColorExpression background_color = 8;
+  DartColorExpression background_color = 8;
   double elevation = 9;
-  ColorExpression shadow_color = 10;
-  ColorExpression surface_tint_color = 11;
+  DartColorExpression shadow_color = 10;
+  DartColorExpression surface_tint_color = 11;
   string semantic_label = 12;
 }
 
@@ -1084,7 +1084,7 @@ message MaterialDivider {
   double thickness = 4;
   double indent = 5;
   double end_indent = 6;
-  ColorExpression color = 7;
+  DartColorExpression color = 7;
 }
 
 // package:flutter/src/material/divider.dart
@@ -1094,16 +1094,16 @@ message MaterialVerticalDivider {
   double thickness = 4;
   double indent = 5;
   double end_indent = 6;
-  ColorExpression color = 7;
+  DartColorExpression color = 7;
 }
 
 // package:flutter/src/material/drawer.dart
 message MaterialDrawer {
   FlutterKeyExpression key = 2;
-  ColorExpression background_color = 3;
+  DartColorExpression background_color = 3;
   double elevation = 4;
-  ColorExpression shadow_color = 5;
-  ColorExpression surface_tint_color = 6;
+  DartColorExpression shadow_color = 5;
+  DartColorExpression surface_tint_color = 6;
   double width = 8;
   WidgetExpression child = 9;
   string semantic_label = 10;
@@ -1112,7 +1112,7 @@ message MaterialDrawer {
 // package:flutter/src/material/drawer_header.dart
 message MaterialDrawerHeader {
   FlutterKeyExpression key = 2;
-  DurationExpression duration = 6;
+  DartDurationExpression duration = 6;
   WidgetExpression child = 8;
 }
 
@@ -1124,15 +1124,15 @@ message MaterialDropdownButton {
   int32 elevation = 10;
   WidgetExpression underline = 12;
   WidgetExpression icon = 13;
-  ColorExpression icon_disabled_color = 14;
-  ColorExpression icon_enabled_color = 15;
+  DartColorExpression icon_disabled_color = 14;
+  DartColorExpression icon_enabled_color = 15;
   double icon_size = 16;
   bool is_dense = 17;
   bool is_expanded = 18;
   double item_height = 19;
-  ColorExpression focus_color = 20;
+  DartColorExpression focus_color = 20;
   bool autofocus = 22;
-  ColorExpression dropdown_color = 23;
+  DartColorExpression dropdown_color = 23;
   double menu_max_height = 24;
   bool enable_feedback = 25;
 }
@@ -1144,15 +1144,15 @@ message MaterialDropdownButtonFormField {
   WidgetExpression disabled_hint = 7;
   int32 elevation = 10;
   WidgetExpression icon = 12;
-  ColorExpression icon_disabled_color = 13;
-  ColorExpression icon_enabled_color = 14;
+  DartColorExpression icon_disabled_color = 13;
+  DartColorExpression icon_enabled_color = 14;
   double icon_size = 15;
   bool is_dense = 16;
   bool is_expanded = 17;
   double item_height = 18;
-  ColorExpression focus_color = 19;
+  DartColorExpression focus_color = 19;
   bool autofocus = 21;
-  ColorExpression dropdown_color = 22;
+  DartColorExpression dropdown_color = 22;
   double menu_max_height = 27;
   bool enable_feedback = 28;
 }
@@ -1190,28 +1190,28 @@ message MaterialExpandIcon {
   FlutterKeyExpression key = 2;
   bool is_expanded = 3;
   double size = 4;
-  ColorExpression color = 7;
-  ColorExpression disabled_color = 8;
-  ColorExpression expanded_color = 9;
+  DartColorExpression color = 7;
+  DartColorExpression disabled_color = 8;
+  DartColorExpression expanded_color = 9;
 }
 
 // package:flutter/src/material/expansion_panel.dart
 message MaterialExpansionPanelList {
   FlutterKeyExpression key = 2;
-  DurationExpression animation_duration = 5;
-  ColorExpression divider_color = 7;
+  DartDurationExpression animation_duration = 5;
+  DartColorExpression divider_color = 7;
   double elevation = 8;
-  ColorExpression expand_icon_color = 9;
+  DartColorExpression expand_icon_color = 9;
   double material_gap_size = 10;
 }
 
 // package:flutter/src/material/expansion_panel.dart
 message MaterialExpansionPanelListNamedRadio {
   FlutterKeyExpression key = 2;
-  DurationExpression animation_duration = 5;
-  ColorExpression divider_color = 8;
+  DartDurationExpression animation_duration = 5;
+  DartColorExpression divider_color = 8;
   double elevation = 9;
-  ColorExpression expand_icon_color = 10;
+  DartColorExpression expand_icon_color = 10;
   double material_gap_size = 11;
 }
 
@@ -1225,12 +1225,12 @@ message MaterialExpansionTile {
   WidgetExpression trailing = 8;
   bool initially_expanded = 9;
   bool maintain_state = 10;
-  ColorExpression background_color = 15;
-  ColorExpression collapsed_background_color = 16;
-  ColorExpression text_color = 17;
-  ColorExpression collapsed_text_color = 18;
-  ColorExpression icon_color = 19;
-  ColorExpression collapsed_icon_color = 20;
+  DartColorExpression background_color = 15;
+  DartColorExpression collapsed_background_color = 16;
+  DartColorExpression text_color = 17;
+  DartColorExpression collapsed_text_color = 18;
+  DartColorExpression icon_color = 19;
+  DartColorExpression collapsed_icon_color = 20;
 }
 
 // package:flutter/src/material/filled_button.dart
@@ -1270,17 +1270,17 @@ message MaterialFilterChip {
   WidgetExpression label = 4;
   bool selected = 7;
   double press_elevation = 9;
-  ColorExpression disabled_color = 10;
-  ColorExpression selected_color = 11;
+  DartColorExpression disabled_color = 10;
+  DartColorExpression selected_color = 11;
   string tooltip = 12;
   bool autofocus = 17;
-  ColorExpression background_color = 19;
+  DartColorExpression background_color = 19;
   double elevation = 23;
-  ColorExpression shadow_color = 24;
-  ColorExpression surface_tint_color = 25;
-  ColorExpression selected_shadow_color = 27;
+  DartColorExpression shadow_color = 24;
+  DartColorExpression surface_tint_color = 25;
+  DartColorExpression selected_shadow_color = 27;
   bool show_checkmark = 28;
-  ColorExpression checkmark_color = 29;
+  DartColorExpression checkmark_color = 29;
 }
 
 // package:flutter/src/material/filter_chip.dart
@@ -1290,17 +1290,17 @@ message MaterialFilterChipNamedElevated {
   WidgetExpression label = 4;
   bool selected = 7;
   double press_elevation = 9;
-  ColorExpression disabled_color = 10;
-  ColorExpression selected_color = 11;
+  DartColorExpression disabled_color = 10;
+  DartColorExpression selected_color = 11;
   string tooltip = 12;
   bool autofocus = 17;
-  ColorExpression background_color = 19;
+  DartColorExpression background_color = 19;
   double elevation = 23;
-  ColorExpression shadow_color = 24;
-  ColorExpression surface_tint_color = 25;
-  ColorExpression selected_shadow_color = 27;
+  DartColorExpression shadow_color = 24;
+  DartColorExpression surface_tint_color = 25;
+  DartColorExpression selected_shadow_color = 27;
   bool show_checkmark = 28;
-  ColorExpression checkmark_color = 29;
+  DartColorExpression checkmark_color = 29;
 }
 
 // package:flutter/src/material/flexible_space_bar.dart
@@ -1328,11 +1328,11 @@ message MaterialFloatingActionButton {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
   string tooltip = 4;
-  ColorExpression foreground_color = 5;
-  ColorExpression background_color = 6;
-  ColorExpression focus_color = 7;
-  ColorExpression hover_color = 8;
-  ColorExpression splash_color = 9;
+  DartColorExpression foreground_color = 5;
+  DartColorExpression background_color = 6;
+  DartColorExpression focus_color = 7;
+  DartColorExpression hover_color = 8;
+  DartColorExpression splash_color = 9;
   double elevation = 11;
   double focus_elevation = 12;
   double hover_elevation = 13;
@@ -1349,11 +1349,11 @@ message MaterialFloatingActionButtonNamedSmall {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
   string tooltip = 4;
-  ColorExpression foreground_color = 5;
-  ColorExpression background_color = 6;
-  ColorExpression focus_color = 7;
-  ColorExpression hover_color = 8;
-  ColorExpression splash_color = 9;
+  DartColorExpression foreground_color = 5;
+  DartColorExpression background_color = 6;
+  DartColorExpression focus_color = 7;
+  DartColorExpression hover_color = 8;
+  DartColorExpression splash_color = 9;
   double elevation = 11;
   double focus_elevation = 12;
   double hover_elevation = 13;
@@ -1368,11 +1368,11 @@ message MaterialFloatingActionButtonNamedLarge {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
   string tooltip = 4;
-  ColorExpression foreground_color = 5;
-  ColorExpression background_color = 6;
-  ColorExpression focus_color = 7;
-  ColorExpression hover_color = 8;
-  ColorExpression splash_color = 9;
+  DartColorExpression foreground_color = 5;
+  DartColorExpression background_color = 6;
+  DartColorExpression focus_color = 7;
+  DartColorExpression hover_color = 8;
+  DartColorExpression splash_color = 9;
   double elevation = 11;
   double focus_elevation = 12;
   double hover_elevation = 13;
@@ -1386,14 +1386,14 @@ message MaterialFloatingActionButtonNamedLarge {
 message MaterialFloatingActionButtonNamedExtended {
   FlutterKeyExpression key = 2;
   string tooltip = 3;
-  ColorExpression foreground_color = 4;
-  ColorExpression background_color = 5;
-  ColorExpression focus_color = 6;
-  ColorExpression hover_color = 7;
+  DartColorExpression foreground_color = 4;
+  DartColorExpression background_color = 5;
+  DartColorExpression focus_color = 6;
+  DartColorExpression hover_color = 7;
   double elevation = 9;
   double focus_elevation = 10;
   double hover_elevation = 11;
-  ColorExpression splash_color = 12;
+  DartColorExpression splash_color = 12;
   double highlight_elevation = 13;
   double disabled_elevation = 14;
   bool is_extended = 18;
@@ -1408,8 +1408,8 @@ message MaterialFloatingActionButtonNamedExtended {
 message MaterialFlutterLogo {
   FlutterKeyExpression key = 2;
   double size = 3;
-  ColorExpression text_color = 4;
-  DurationExpression duration = 6;
+  DartColorExpression text_color = 4;
+  DartDurationExpression duration = 6;
 }
 
 // package:flutter/src/material/grid_tile.dart
@@ -1423,7 +1423,7 @@ message MaterialGridTile {
 // package:flutter/src/material/grid_tile_bar.dart
 message MaterialGridTileBar {
   FlutterKeyExpression key = 2;
-  ColorExpression background_color = 3;
+  DartColorExpression background_color = 3;
   WidgetExpression leading = 4;
   WidgetExpression title = 5;
   WidgetExpression subtitle = 6;
@@ -1435,12 +1435,12 @@ message MaterialIconButton {
   FlutterKeyExpression key = 2;
   double icon_size = 3;
   double splash_radius = 7;
-  ColorExpression color = 8;
-  ColorExpression focus_color = 9;
-  ColorExpression hover_color = 10;
-  ColorExpression highlight_color = 11;
-  ColorExpression splash_color = 12;
-  ColorExpression disabled_color = 13;
+  DartColorExpression color = 8;
+  DartColorExpression focus_color = 9;
+  DartColorExpression hover_color = 10;
+  DartColorExpression highlight_color = 11;
+  DartColorExpression splash_color = 12;
+  DartColorExpression disabled_color = 13;
   bool autofocus = 17;
   string tooltip = 18;
   bool enable_feedback = 19;
@@ -1454,12 +1454,12 @@ message MaterialIconButtonNamedFilled {
   FlutterKeyExpression key = 2;
   double icon_size = 3;
   double splash_radius = 7;
-  ColorExpression color = 8;
-  ColorExpression focus_color = 9;
-  ColorExpression hover_color = 10;
-  ColorExpression highlight_color = 11;
-  ColorExpression splash_color = 12;
-  ColorExpression disabled_color = 13;
+  DartColorExpression color = 8;
+  DartColorExpression focus_color = 9;
+  DartColorExpression hover_color = 10;
+  DartColorExpression highlight_color = 11;
+  DartColorExpression splash_color = 12;
+  DartColorExpression disabled_color = 13;
   bool autofocus = 17;
   string tooltip = 18;
   bool enable_feedback = 19;
@@ -1473,12 +1473,12 @@ message MaterialIconButtonNamedFilledTonal {
   FlutterKeyExpression key = 2;
   double icon_size = 3;
   double splash_radius = 7;
-  ColorExpression color = 8;
-  ColorExpression focus_color = 9;
-  ColorExpression hover_color = 10;
-  ColorExpression highlight_color = 11;
-  ColorExpression splash_color = 12;
-  ColorExpression disabled_color = 13;
+  DartColorExpression color = 8;
+  DartColorExpression focus_color = 9;
+  DartColorExpression hover_color = 10;
+  DartColorExpression highlight_color = 11;
+  DartColorExpression splash_color = 12;
+  DartColorExpression disabled_color = 13;
   bool autofocus = 17;
   string tooltip = 18;
   bool enable_feedback = 19;
@@ -1492,12 +1492,12 @@ message MaterialIconButtonNamedOutlined {
   FlutterKeyExpression key = 2;
   double icon_size = 3;
   double splash_radius = 7;
-  ColorExpression color = 8;
-  ColorExpression focus_color = 9;
-  ColorExpression hover_color = 10;
-  ColorExpression highlight_color = 11;
-  ColorExpression splash_color = 12;
-  ColorExpression disabled_color = 13;
+  DartColorExpression color = 8;
+  DartColorExpression focus_color = 9;
+  DartColorExpression hover_color = 10;
+  DartColorExpression highlight_color = 11;
+  DartColorExpression splash_color = 12;
+  DartColorExpression disabled_color = 13;
   bool autofocus = 17;
   string tooltip = 18;
   bool enable_feedback = 19;
@@ -1509,7 +1509,7 @@ message MaterialIconButtonNamedOutlined {
 // package:flutter/src/material/ink_decoration.dart
 message MaterialInk {
   FlutterKeyExpression key = 2;
-  ColorExpression color = 4;
+  DartColorExpression color = 4;
   double width = 6;
   double height = 7;
   WidgetExpression child = 8;
@@ -1521,10 +1521,10 @@ message MaterialInkResponse {
   WidgetExpression child = 3;
   bool contained_ink_well = 17;
   double radius = 19;
-  ColorExpression focus_color = 22;
-  ColorExpression hover_color = 23;
-  ColorExpression highlight_color = 24;
-  ColorExpression splash_color = 26;
+  DartColorExpression focus_color = 22;
+  DartColorExpression hover_color = 23;
+  DartColorExpression highlight_color = 24;
+  DartColorExpression splash_color = 26;
   bool enable_feedback = 28;
   bool exclude_from_semantics = 29;
   bool can_request_focus = 31;
@@ -1535,10 +1535,10 @@ message MaterialInkResponse {
 message MaterialInkWell {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
-  ColorExpression focus_color = 17;
-  ColorExpression hover_color = 18;
-  ColorExpression highlight_color = 19;
-  ColorExpression splash_color = 21;
+  DartColorExpression focus_color = 17;
+  DartColorExpression hover_color = 18;
+  DartColorExpression highlight_color = 19;
+  DartColorExpression splash_color = 21;
   double radius = 23;
   bool enable_feedback = 26;
   bool exclude_from_semantics = 27;
@@ -1554,20 +1554,20 @@ message MaterialInputChip {
   bool selected = 7;
   bool is_enabled = 8;
   WidgetExpression delete_icon = 10;
-  ColorExpression delete_icon_color = 12;
+  DartColorExpression delete_icon_color = 12;
   string delete_button_tooltip_message = 13;
   double press_elevation = 15;
-  ColorExpression disabled_color = 16;
-  ColorExpression selected_color = 17;
+  DartColorExpression disabled_color = 16;
+  DartColorExpression selected_color = 17;
   string tooltip = 18;
   bool autofocus = 23;
-  ColorExpression background_color = 25;
+  DartColorExpression background_color = 25;
   double elevation = 29;
-  ColorExpression shadow_color = 30;
-  ColorExpression surface_tint_color = 31;
-  ColorExpression selected_shadow_color = 33;
+  DartColorExpression shadow_color = 30;
+  DartColorExpression surface_tint_color = 31;
+  DartColorExpression selected_shadow_color = 33;
   bool show_checkmark = 34;
-  ColorExpression checkmark_color = 35;
+  DartColorExpression checkmark_color = 35;
 }
 
 // package:flutter/src/material/list_tile.dart
@@ -1579,17 +1579,17 @@ message MaterialListTile {
   WidgetExpression trailing = 6;
   bool is_three_line = 7;
   bool dense = 8;
-  ColorExpression selected_color = 12;
-  ColorExpression icon_color = 13;
-  ColorExpression text_color = 14;
+  DartColorExpression selected_color = 12;
+  DartColorExpression icon_color = 13;
+  DartColorExpression text_color = 14;
   bool enabled = 19;
   bool selected = 24;
-  ColorExpression focus_color = 25;
-  ColorExpression hover_color = 26;
-  ColorExpression splash_color = 27;
+  DartColorExpression focus_color = 25;
+  DartColorExpression hover_color = 26;
+  DartColorExpression splash_color = 27;
   bool autofocus = 29;
-  ColorExpression tile_color = 30;
-  ColorExpression selected_tile_color = 31;
+  DartColorExpression tile_color = 30;
+  DartColorExpression selected_tile_color = 31;
   bool enable_feedback = 32;
   double horizontal_title_gap = 33;
   double min_vertical_padding = 34;
@@ -1600,11 +1600,11 @@ message MaterialListTile {
 message MaterialListTileTheme {
   FlutterKeyExpression key = 2;
   bool dense = 4;
-  ColorExpression selected_color = 7;
-  ColorExpression icon_color = 8;
-  ColorExpression text_color = 9;
-  ColorExpression tile_color = 11;
-  ColorExpression selected_tile_color = 12;
+  DartColorExpression selected_color = 7;
+  DartColorExpression icon_color = 8;
+  DartColorExpression text_color = 9;
+  DartColorExpression tile_color = 11;
+  DartColorExpression selected_tile_color = 12;
   bool enable_feedback = 13;
   double horizontal_title_gap = 15;
   double min_vertical_padding = 16;
@@ -1615,39 +1615,39 @@ message MaterialListTileTheme {
 // package:flutter/src/material/magnifier.dart
 message MaterialMagnifier {
   FlutterKeyExpression key = 2;
-  ColorExpression film_color = 5;
+  DartColorExpression film_color = 5;
 }
 
 // package:flutter/src/material/material.dart
 message MaterialMaterial {
   FlutterKeyExpression key = 2;
   double elevation = 4;
-  ColorExpression color = 5;
-  ColorExpression shadow_color = 6;
-  ColorExpression surface_tint_color = 7;
+  DartColorExpression color = 5;
+  DartColorExpression shadow_color = 6;
+  DartColorExpression surface_tint_color = 7;
   bool border_on_foreground = 11;
-  DurationExpression animation_duration = 13;
+  DartDurationExpression animation_duration = 13;
   WidgetExpression child = 14;
 }
 
 // package:flutter/src/material/material_button.dart
 message MaterialMaterialButton {
   FlutterKeyExpression key = 2;
-  ColorExpression text_color = 8;
-  ColorExpression disabled_text_color = 9;
-  ColorExpression color = 10;
-  ColorExpression disabled_color = 11;
-  ColorExpression focus_color = 12;
-  ColorExpression hover_color = 13;
-  ColorExpression highlight_color = 14;
-  ColorExpression splash_color = 15;
+  DartColorExpression text_color = 8;
+  DartColorExpression disabled_text_color = 9;
+  DartColorExpression color = 10;
+  DartColorExpression disabled_color = 11;
+  DartColorExpression focus_color = 12;
+  DartColorExpression hover_color = 13;
+  DartColorExpression highlight_color = 14;
+  DartColorExpression splash_color = 15;
   double elevation = 17;
   double focus_elevation = 18;
   double hover_elevation = 19;
   double highlight_elevation = 20;
   double disabled_elevation = 21;
   bool autofocus = 27;
-  DurationExpression animation_duration = 29;
+  DartDurationExpression animation_duration = 29;
   double min_width = 30;
   double height = 31;
   bool enable_feedback = 32;
@@ -1717,20 +1717,20 @@ message MaterialMergeableMaterial {
   FlutterKeyExpression key = 2;
   double elevation = 4;
   bool has_dividers = 5;
-  ColorExpression divider_color = 7;
+  DartColorExpression divider_color = 7;
 }
 
 // package:flutter/src/material/navigation_bar.dart
 message MaterialNavigationBar {
   FlutterKeyExpression key = 2;
-  DurationExpression animation_duration = 3;
+  DartDurationExpression animation_duration = 3;
   int32 selected_index = 4;
   repeated WidgetExpression destinations = 5;
-  ColorExpression background_color = 7;
+  DartColorExpression background_color = 7;
   double elevation = 8;
-  ColorExpression shadow_color = 9;
-  ColorExpression surface_tint_color = 10;
-  ColorExpression indicator_color = 11;
+  DartColorExpression shadow_color = 9;
+  DartColorExpression surface_tint_color = 10;
+  DartColorExpression indicator_color = 11;
   double height = 13;
 }
 
@@ -1747,18 +1747,18 @@ message MaterialNavigationDestination {
 message MaterialNavigationDrawer {
   FlutterKeyExpression key = 2;
   repeated WidgetExpression children = 3;
-  ColorExpression background_color = 4;
-  ColorExpression shadow_color = 5;
-  ColorExpression surface_tint_color = 6;
+  DartColorExpression background_color = 4;
+  DartColorExpression shadow_color = 5;
+  DartColorExpression surface_tint_color = 6;
   double elevation = 7;
-  ColorExpression indicator_color = 8;
+  DartColorExpression indicator_color = 8;
   int32 selected_index = 11;
 }
 
 // package:flutter/src/material/navigation_drawer.dart
 message MaterialNavigationDrawerDestination {
   FlutterKeyExpression key = 2;
-  ColorExpression background_color = 3;
+  DartColorExpression background_color = 3;
   WidgetExpression icon = 4;
   WidgetExpression selected_icon = 5;
   WidgetExpression label = 6;
@@ -1806,8 +1806,8 @@ message MaterialPopupMenuItem {
 message MaterialCircularProgressIndicator {
   FlutterKeyExpression key = 2;
   double value = 3;
-  ColorExpression background_color = 4;
-  ColorExpression color = 5;
+  DartColorExpression background_color = 4;
+  DartColorExpression color = 5;
   double stroke_width = 7;
   double stroke_align = 8;
   string semantics_label = 9;
@@ -1818,7 +1818,7 @@ message MaterialCircularProgressIndicator {
 message MaterialCircularProgressIndicatorNamedAdaptive {
   FlutterKeyExpression key = 2;
   double value = 3;
-  ColorExpression background_color = 4;
+  DartColorExpression background_color = 4;
   double stroke_width = 6;
   string semantics_label = 7;
   string semantics_value = 8;
@@ -1829,8 +1829,8 @@ message MaterialCircularProgressIndicatorNamedAdaptive {
 message MaterialLinearProgressIndicator {
   FlutterKeyExpression key = 2;
   double value = 3;
-  ColorExpression background_color = 4;
-  ColorExpression color = 5;
+  DartColorExpression background_color = 4;
+  DartColorExpression color = 5;
   double min_height = 7;
   string semantics_label = 8;
   string semantics_value = 9;
@@ -1840,8 +1840,8 @@ message MaterialLinearProgressIndicator {
 message MaterialRefreshProgressIndicator {
   FlutterKeyExpression key = 2;
   double value = 3;
-  ColorExpression background_color = 4;
-  ColorExpression color = 5;
+  DartColorExpression background_color = 4;
+  DartColorExpression color = 5;
   double stroke_width = 7;
   double stroke_align = 8;
   string semantics_label = 9;
@@ -1858,12 +1858,12 @@ message MaterialScaffold {
   WidgetExpression end_drawer = 12;
   WidgetExpression bottom_navigation_bar = 14;
   WidgetExpression bottom_sheet = 15;
-  ColorExpression background_color = 16;
+  DartColorExpression background_color = 16;
   bool resize_to_avoid_bottom_inset = 17;
   bool primary = 18;
   bool extend_body = 20;
   bool extend_body_behind_app_bar = 21;
-  ColorExpression drawer_scrim_color = 22;
+  DartColorExpression drawer_scrim_color = 22;
   double drawer_edge_drag_width = 23;
   bool drawer_enable_open_drag_gesture = 24;
   bool end_drawer_enable_open_drag_gesture = 25;
@@ -1905,7 +1905,7 @@ message MaterialSelectableText {
   int32 max_lines = 13;
   double cursor_width = 14;
   double cursor_height = 15;
-  ColorExpression cursor_color = 17;
+  DartColorExpression cursor_color = 17;
   bool enable_interactive_selection = 21;
   string semantics_label = 25;
 }
@@ -1925,10 +1925,10 @@ message MaterialSlider {
   double max = 9;
   int32 divisions = 10;
   string label = 11;
-  ColorExpression active_color = 12;
-  ColorExpression inactive_color = 13;
-  ColorExpression secondary_active_color = 14;
-  ColorExpression thumb_color = 15;
+  DartColorExpression active_color = 12;
+  DartColorExpression inactive_color = 13;
+  DartColorExpression secondary_active_color = 14;
+  DartColorExpression thumb_color = 15;
   bool autofocus = 20;
 }
 
@@ -1941,10 +1941,10 @@ message MaterialSliderNamedAdaptive {
   double max = 9;
   int32 divisions = 10;
   string label = 11;
-  ColorExpression active_color = 13;
-  ColorExpression inactive_color = 14;
-  ColorExpression secondary_active_color = 15;
-  ColorExpression thumb_color = 16;
+  DartColorExpression active_color = 13;
+  DartColorExpression inactive_color = 14;
+  DartColorExpression secondary_active_color = 15;
+  DartColorExpression thumb_color = 16;
   bool autofocus = 20;
 }
 
@@ -1952,25 +1952,25 @@ message MaterialSliderNamedAdaptive {
 message MaterialSnackBar {
   FlutterKeyExpression key = 2;
   WidgetExpression content = 3;
-  ColorExpression background_color = 4;
+  DartColorExpression background_color = 4;
   double elevation = 5;
   double width = 8;
   double action_overflow_threshold = 12;
   bool show_close_icon = 13;
-  ColorExpression close_icon_color = 14;
-  DurationExpression duration = 15;
+  DartColorExpression close_icon_color = 14;
+  DartDurationExpression duration = 15;
 }
 
 // package:flutter/src/material/switch.dart
 message MaterialSwitch {
   FlutterKeyExpression key = 2;
   bool value = 3;
-  ColorExpression active_color = 5;
-  ColorExpression active_track_color = 6;
-  ColorExpression inactive_thumb_color = 7;
-  ColorExpression inactive_track_color = 8;
-  ColorExpression focus_color = 21;
-  ColorExpression hover_color = 22;
+  DartColorExpression active_color = 5;
+  DartColorExpression active_track_color = 6;
+  DartColorExpression inactive_thumb_color = 7;
+  DartColorExpression inactive_track_color = 8;
+  DartColorExpression focus_color = 21;
+  DartColorExpression hover_color = 22;
   double splash_radius = 24;
   bool autofocus = 27;
 }
@@ -1979,12 +1979,12 @@ message MaterialSwitch {
 message MaterialSwitchNamedAdaptive {
   FlutterKeyExpression key = 2;
   bool value = 3;
-  ColorExpression active_color = 5;
-  ColorExpression active_track_color = 6;
-  ColorExpression inactive_thumb_color = 7;
-  ColorExpression inactive_track_color = 8;
-  ColorExpression focus_color = 21;
-  ColorExpression hover_color = 22;
+  DartColorExpression active_color = 5;
+  DartColorExpression active_track_color = 6;
+  DartColorExpression inactive_thumb_color = 7;
+  DartColorExpression inactive_track_color = 8;
+  DartColorExpression focus_color = 21;
+  DartColorExpression hover_color = 22;
   double splash_radius = 24;
   bool autofocus = 27;
   bool apply_cupertino_theme = 28;
@@ -1994,45 +1994,45 @@ message MaterialSwitchNamedAdaptive {
 message MaterialSwitchListTile {
   FlutterKeyExpression key = 2;
   bool value = 3;
-  ColorExpression active_color = 5;
-  ColorExpression active_track_color = 6;
-  ColorExpression inactive_thumb_color = 7;
-  ColorExpression inactive_track_color = 8;
+  DartColorExpression active_color = 5;
+  DartColorExpression active_track_color = 6;
+  DartColorExpression inactive_thumb_color = 7;
+  DartColorExpression inactive_track_color = 8;
   double splash_radius = 21;
   bool autofocus = 24;
-  ColorExpression tile_color = 25;
+  DartColorExpression tile_color = 25;
   WidgetExpression title = 26;
   WidgetExpression subtitle = 27;
   bool is_three_line = 28;
   bool dense = 29;
   WidgetExpression secondary = 31;
   bool selected = 32;
-  ColorExpression selected_tile_color = 35;
+  DartColorExpression selected_tile_color = 35;
   bool enable_feedback = 37;
-  ColorExpression hover_color = 38;
+  DartColorExpression hover_color = 38;
 }
 
 // package:flutter/src/material/switch_list_tile.dart
 message MaterialSwitchListTileNamedAdaptive {
   FlutterKeyExpression key = 2;
   bool value = 3;
-  ColorExpression active_color = 5;
-  ColorExpression active_track_color = 6;
-  ColorExpression inactive_thumb_color = 7;
-  ColorExpression inactive_track_color = 8;
+  DartColorExpression active_color = 5;
+  DartColorExpression active_track_color = 6;
+  DartColorExpression inactive_thumb_color = 7;
+  DartColorExpression inactive_track_color = 8;
   double splash_radius = 21;
   bool autofocus = 24;
   bool apply_cupertino_theme = 25;
-  ColorExpression tile_color = 26;
+  DartColorExpression tile_color = 26;
   WidgetExpression title = 27;
   WidgetExpression subtitle = 28;
   bool is_three_line = 29;
   bool dense = 30;
   WidgetExpression secondary = 32;
   bool selected = 33;
-  ColorExpression selected_tile_color = 36;
+  DartColorExpression selected_tile_color = 36;
   bool enable_feedback = 38;
-  ColorExpression hover_color = 39;
+  DartColorExpression hover_color = 39;
 }
 
 // package:flutter/src/material/tab_controller.dart
@@ -2041,7 +2041,7 @@ message MaterialDefaultTabController {
   int32 length = 3;
   int32 initial_index = 4;
   WidgetExpression child = 5;
-  DurationExpression animation_duration = 6;
+  DartDurationExpression animation_duration = 6;
 }
 
 // package:flutter/src/material/tabs.dart
@@ -2058,12 +2058,12 @@ message MaterialTabBar {
   FlutterKeyExpression key = 2;
   repeated WidgetExpression tabs = 3;
   bool is_scrollable = 5;
-  ColorExpression indicator_color = 7;
+  DartColorExpression indicator_color = 7;
   bool automatic_indicator_color_adjustment = 8;
   double indicator_weight = 9;
-  ColorExpression divider_color = 13;
-  ColorExpression label_color = 14;
-  ColorExpression unselected_label_color = 17;
+  DartColorExpression divider_color = 13;
+  DartColorExpression label_color = 14;
+  DartColorExpression unselected_label_color = 17;
   bool enable_feedback = 22;
 }
 
@@ -2072,12 +2072,12 @@ message MaterialTabBarNamedSecondary {
   FlutterKeyExpression key = 2;
   repeated WidgetExpression tabs = 3;
   bool is_scrollable = 5;
-  ColorExpression indicator_color = 7;
+  DartColorExpression indicator_color = 7;
   bool automatic_indicator_color_adjustment = 8;
   double indicator_weight = 9;
-  ColorExpression divider_color = 13;
-  ColorExpression label_color = 14;
-  ColorExpression unselected_label_color = 17;
+  DartColorExpression divider_color = 13;
+  DartColorExpression label_color = 14;
+  DartColorExpression unselected_label_color = 17;
   bool enable_feedback = 22;
 }
 
@@ -2092,15 +2092,15 @@ message MaterialTabBarView {
 message MaterialTabPageSelector {
   FlutterKeyExpression key = 2;
   double indicator_size = 4;
-  ColorExpression color = 5;
-  ColorExpression selected_color = 6;
+  DartColorExpression color = 5;
+  DartColorExpression selected_color = 6;
 }
 
 // package:flutter/src/material/tabs.dart
 message MaterialTabPageSelectorIndicator {
   FlutterKeyExpression key = 2;
-  ColorExpression background_color = 3;
-  ColorExpression border_color = 4;
+  DartColorExpression background_color = 3;
+  DartColorExpression border_color = 4;
   double size = 5;
 }
 
@@ -2138,7 +2138,7 @@ message MaterialTextField {
   double cursor_width = 35;
   double cursor_height = 36;
   bool cursor_opacity_animates = 38;
-  ColorExpression cursor_color = 39;
+  DartColorExpression cursor_color = 39;
   bool enable_interactive_selection = 45;
   repeated string autofill_hints = 53;
   string restoration_id = 56;
@@ -2165,7 +2165,7 @@ message MaterialTextFormField {
   bool enabled = 37;
   double cursor_width = 38;
   double cursor_height = 39;
-  ColorExpression cursor_color = 41;
+  DartColorExpression cursor_color = 41;
   bool enable_interactive_selection = 44;
   repeated string autofill_hints = 48;
   string restoration_id = 51;
@@ -2180,18 +2180,18 @@ message MaterialToggleButtons {
   FlutterKeyExpression key = 2;
   repeated WidgetExpression children = 3;
   repeated bool is_selected = 4;
-  ColorExpression color = 10;
-  ColorExpression selected_color = 11;
-  ColorExpression disabled_color = 12;
-  ColorExpression fill_color = 13;
-  ColorExpression focus_color = 14;
-  ColorExpression highlight_color = 15;
-  ColorExpression hover_color = 16;
-  ColorExpression splash_color = 17;
+  DartColorExpression color = 10;
+  DartColorExpression selected_color = 11;
+  DartColorExpression disabled_color = 12;
+  DartColorExpression fill_color = 13;
+  DartColorExpression focus_color = 14;
+  DartColorExpression highlight_color = 15;
+  DartColorExpression hover_color = 16;
+  DartColorExpression splash_color = 17;
   bool render_border = 19;
-  ColorExpression border_color = 20;
-  ColorExpression selected_border_color = 21;
-  ColorExpression disabled_border_color = 22;
+  DartColorExpression border_color = 20;
+  DartColorExpression selected_border_color = 21;
+  DartColorExpression disabled_border_color = 22;
   double border_width = 24;
 }
 
@@ -2203,8 +2203,8 @@ message MaterialTooltip {
   double vertical_offset = 8;
   bool prefer_below = 9;
   bool exclude_from_semantics = 10;
-  DurationExpression wait_duration = 14;
-  DurationExpression show_duration = 15;
+  DartDurationExpression wait_duration = 14;
+  DartDurationExpression show_duration = 15;
   bool enable_feedback = 17;
   WidgetExpression child = 19;
 }
@@ -2223,7 +2223,7 @@ message MaterialUserAccountsDrawerHeader {
   repeated WidgetExpression other_accounts_pictures = 6;
   WidgetExpression account_name = 9;
   WidgetExpression account_email = 10;
-  ColorExpression arrow_color = 12;
+  DartColorExpression arrow_color = 12;
 }
 
 // package:flutter/src/widgets/_platform_selectable_region_context_menu_io.dart
@@ -2247,16 +2247,16 @@ message FlutterFocusableActionDetector {
 message FlutterAnimatedSize {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
-  DurationExpression duration = 6;
-  DurationExpression reverse_duration = 7;
+  DartDurationExpression duration = 6;
+  DartDurationExpression reverse_duration = 7;
 }
 
 // package:flutter/src/widgets/animated_switcher.dart
 message FlutterAnimatedSwitcher {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
-  DurationExpression duration = 4;
-  DurationExpression reverse_duration = 5;
+  DartDurationExpression duration = 4;
+  DartDurationExpression reverse_duration = 5;
 }
 
 // package:flutter/src/widgets/app.dart
@@ -2265,7 +2265,7 @@ message FlutterWidgetsApp {
   string initial_route = 8;
   WidgetExpression home = 10;
   string title = 13;
-  ColorExpression color = 16;
+  DartColorExpression color = 16;
   bool show_performance_overlay = 22;
   bool checkerboard_raster_cache_images = 23;
   bool checkerboard_offscreen_layers = 24;
@@ -2279,7 +2279,7 @@ message FlutterWidgetsApp {
 message FlutterWidgetsAppNamedRouter {
   FlutterKeyExpression key = 2;
   string title = 9;
-  ColorExpression color = 12;
+  DartColorExpression color = 12;
   bool show_performance_overlay = 18;
   bool checkerboard_raster_cache_images = 19;
   bool checkerboard_offscreen_layers = 20;
@@ -2370,7 +2370,7 @@ message FlutterClipRect {
 
 // package:flutter/src/widgets/basic.dart
 message FlutterColoredBox {
-  ColorExpression color = 2;
+  DartColorExpression color = 2;
   WidgetExpression child = 3;
   FlutterKeyExpression key = 4;
 }
@@ -2540,8 +2540,8 @@ message FlutterOverflowBox {
 message FlutterPhysicalModel {
   FlutterKeyExpression key = 2;
   double elevation = 6;
-  ColorExpression color = 7;
-  ColorExpression shadow_color = 8;
+  DartColorExpression color = 7;
+  DartColorExpression shadow_color = 8;
   WidgetExpression child = 9;
 }
 
@@ -2586,7 +2586,7 @@ message FlutterRawImage {
   double width = 5;
   double height = 6;
   double scale = 7;
-  ColorExpression color = 8;
+  DartColorExpression color = 8;
   bool match_text_direction = 15;
   bool invert_colors = 16;
   bool is_anti_alias = 18;
@@ -2748,7 +2748,7 @@ message FlutterWrap {
 // package:flutter/src/widgets/container.dart
 message FlutterContainer {
   FlutterKeyExpression key = 2;
-  ColorExpression color = 5;
+  DartColorExpression color = 5;
   double width = 8;
   double height = 9;
   WidgetExpression child = 14;
@@ -2757,8 +2757,8 @@ message FlutterContainer {
 // package:flutter/src/widgets/default_selection_style.dart
 message FlutterDefaultSelectionStyle {
   FlutterKeyExpression key = 2;
-  ColorExpression cursor_color = 3;
-  ColorExpression selection_color = 4;
+  DartColorExpression cursor_color = 3;
+  DartColorExpression selection_color = 4;
   WidgetExpression child = 6;
 }
 
@@ -2779,8 +2779,8 @@ message FlutterDismissible {
   WidgetExpression child = 3;
   WidgetExpression background = 4;
   WidgetExpression secondary_background = 5;
-  DurationExpression resize_duration = 11;
-  DurationExpression movement_duration = 13;
+  DartDurationExpression resize_duration = 11;
+  DartDurationExpression movement_duration = 13;
   double cross_axis_end_offset = 14;
 }
 
@@ -2812,7 +2812,7 @@ message FlutterLongPressDraggable {
   bool haptic_feedback_on_start = 16;
   bool ignoring_feedback_semantics = 17;
   bool ignoring_feedback_pointer = 18;
-  DurationExpression delay = 19;
+  DartDurationExpression delay = 19;
 }
 
 // package:flutter/src/widgets/draggable_scrollable_sheet.dart
@@ -2830,8 +2830,8 @@ message FlutterFadeInImageNamedAssetNetwork {
   double image_scale = 9;
   bool exclude_from_semantics = 10;
   string image_semantic_label = 11;
-  DurationExpression fade_out_duration = 12;
-  DurationExpression fade_in_duration = 14;
+  DartDurationExpression fade_out_duration = 12;
+  DartDurationExpression fade_in_duration = 14;
   double width = 16;
   double height = 17;
   bool match_text_direction = 24;
@@ -2915,7 +2915,7 @@ message FlutterRawGestureDetector {
 // package:flutter/src/widgets/grid_paper.dart
 message FlutterGridPaper {
   FlutterKeyExpression key = 2;
-  ColorExpression color = 3;
+  DartColorExpression color = 3;
   double interval = 4;
   int32 divisions = 5;
   int32 subdivisions = 6;
@@ -2937,7 +2937,7 @@ message FlutterIcon {
   double weight = 6;
   double grade = 7;
   double optical_size = 8;
-  ColorExpression color = 9;
+  DartColorExpression color = 9;
   string semantic_label = 11;
 }
 
@@ -2950,7 +2950,7 @@ message FlutterImageNamedNetwork {
   bool exclude_from_semantics = 9;
   double width = 10;
   double height = 11;
-  ColorExpression color = 12;
+  DartColorExpression color = 12;
   bool match_text_direction = 19;
   bool gapless_playback = 20;
   bool is_anti_alias = 22;
@@ -2967,7 +2967,7 @@ message FlutterImageNamedAsset {
   double scale = 9;
   double width = 10;
   double height = 11;
-  ColorExpression color = 12;
+  DartColorExpression color = 12;
   bool match_text_direction = 19;
   bool gapless_playback = 20;
   bool is_anti_alias = 21;
@@ -2980,18 +2980,18 @@ message FlutterImageNamedAsset {
 message FlutterImageIcon {
   FlutterKeyExpression key = 3;
   double size = 4;
-  ColorExpression color = 5;
+  DartColorExpression color = 5;
   string semantic_label = 6;
 }
 
 // package:flutter/src/widgets/implicit_animations.dart
 message FlutterAnimatedContainer {
   FlutterKeyExpression key = 2;
-  ColorExpression color = 5;
+  DartColorExpression color = 5;
   double width = 8;
   double height = 9;
   WidgetExpression child = 14;
-  DurationExpression duration = 17;
+  DartDurationExpression duration = 17;
 }
 
 // package:flutter/src/widgets/implicit_animations.dart
@@ -3000,7 +3000,7 @@ message FlutterAnimatedFractionallySizedBox {
   WidgetExpression child = 4;
   double height_factor = 5;
   double width_factor = 6;
-  DurationExpression duration = 8;
+  DartDurationExpression duration = 8;
 }
 
 // package:flutter/src/widgets/implicit_animations.dart
@@ -3008,7 +3008,7 @@ message FlutterAnimatedOpacity {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
   double opacity = 4;
-  DurationExpression duration = 6;
+  DartDurationExpression duration = 6;
   bool always_include_semantics = 8;
 }
 
@@ -3022,7 +3022,7 @@ message FlutterAnimatedPositioned {
   double bottom = 7;
   double width = 8;
   double height = 9;
-  DurationExpression duration = 11;
+  DartDurationExpression duration = 11;
 }
 
 // package:flutter/src/widgets/implicit_animations.dart
@@ -3035,7 +3035,7 @@ message FlutterAnimatedPositionedDirectional {
   double bottom = 7;
   double width = 8;
   double height = 9;
-  DurationExpression duration = 11;
+  DartDurationExpression duration = 11;
 }
 
 // package:flutter/src/widgets/implicit_animations.dart
@@ -3043,7 +3043,7 @@ message FlutterAnimatedRotation {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
   double turns = 4;
-  DurationExpression duration = 8;
+  DartDurationExpression duration = 8;
 }
 
 // package:flutter/src/widgets/implicit_animations.dart
@@ -3051,7 +3051,7 @@ message FlutterAnimatedScale {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
   double scale = 4;
-  DurationExpression duration = 8;
+  DartDurationExpression duration = 8;
 }
 
 // package:flutter/src/widgets/implicit_animations.dart
@@ -3059,7 +3059,7 @@ message FlutterSliverAnimatedOpacity {
   FlutterKeyExpression key = 2;
   WidgetExpression sliver = 3;
   double opacity = 4;
-  DurationExpression duration = 6;
+  DartDurationExpression duration = 6;
   bool always_include_semantics = 8;
 }
 
@@ -3102,7 +3102,7 @@ message FlutterLookupBoundary {
 // package:flutter/src/widgets/modal_barrier.dart
 message FlutterModalBarrier {
   FlutterKeyExpression key = 2;
-  ColorExpression color = 3;
+  DartColorExpression color = 3;
   bool dismissible = 4;
   string semantics_label = 6;
   bool barrier_semantics_dismissible = 7;
@@ -3184,7 +3184,7 @@ message FlutterPerformanceOverlayNamedAllEnabled {
 // package:flutter/src/widgets/placeholder.dart
 message FlutterPlaceholder {
   FlutterKeyExpression key = 2;
-  ColorExpression color = 3;
+  DartColorExpression color = 3;
   double stroke_width = 4;
   double fallback_width = 5;
   double fallback_height = 6;
@@ -3353,15 +3353,15 @@ message FlutterRawScrollbar {
   WidgetExpression child = 3;
   bool thumb_visibility = 5;
   double thickness = 8;
-  ColorExpression thumb_color = 9;
+  DartColorExpression thumb_color = 9;
   double min_thumb_length = 10;
   double min_overscroll_length = 11;
   bool track_visibility = 12;
-  ColorExpression track_color = 14;
-  ColorExpression track_border_color = 15;
-  DurationExpression fade_duration = 16;
-  DurationExpression time_to_fade = 17;
-  DurationExpression press_duration = 18;
+  DartColorExpression track_color = 14;
+  DartColorExpression track_border_color = 15;
+  DartDurationExpression fade_duration = 16;
+  DartDurationExpression time_to_fade = 17;
+  DartDurationExpression press_duration = 18;
   bool interactive = 20;
   double main_axis_margin = 22;
   double cross_axis_margin = 23;
@@ -3570,7 +3570,7 @@ message FlutterText {
   double text_scale_factor = 11;
   int32 max_lines = 12;
   string semantics_label = 13;
-  ColorExpression selection_color = 16;
+  DartColorExpression selection_color = 16;
 }
 
 // package:flutter/src/widgets/text_selection.dart
@@ -3597,7 +3597,7 @@ message FlutterTickerMode {
 message FlutterTitle {
   FlutterKeyExpression key = 2;
   string title = 3;
-  ColorExpression color = 4;
+  DartColorExpression color = 4;
   WidgetExpression child = 5;
 }
 

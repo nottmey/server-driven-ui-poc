@@ -14,6 +14,9 @@ extension ToLibraryPrefixExtension on Element {
 
     // improves readability on standard libraries
     switch (libraryPrefix) {
+      case '':
+        final scheme = libraryUri?.scheme; // e.g. dart:ui
+        return scheme != null ? ReCase(scheme).pascalCase : '';
       case 'FlutterSrcMaterial':
         return 'Material';
       case 'FlutterSrcCupertino':

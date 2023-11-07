@@ -13,21 +13,90 @@ import 'dart:convert' as $convert;
 import 'dart:core' as $core;
 import 'dart:typed_data' as $typed_data;
 
-@$core.Deprecated('Use colorDescriptor instead')
-const Color$json = {
-  '1': 'Color',
+@$core.Deprecated('Use cupertinoDynamicColorDescriptor instead')
+const CupertinoDynamicColor$json = {
+  '1': 'CupertinoDynamicColor',
+  '2': [
+    {'1': 'debug_label', '3': 2, '4': 1, '5': 9, '10': 'debugLabel'},
+    {'1': 'color', '3': 3, '4': 1, '5': 11, '6': '.DartColorExpression', '10': 'color'},
+    {'1': 'dark_color', '3': 4, '4': 1, '5': 11, '6': '.DartColorExpression', '10': 'darkColor'},
+    {'1': 'high_contrast_color', '3': 5, '4': 1, '5': 11, '6': '.DartColorExpression', '10': 'highContrastColor'},
+    {'1': 'dark_high_contrast_color', '3': 6, '4': 1, '5': 11, '6': '.DartColorExpression', '10': 'darkHighContrastColor'},
+    {'1': 'elevated_color', '3': 7, '4': 1, '5': 11, '6': '.DartColorExpression', '10': 'elevatedColor'},
+    {'1': 'dark_elevated_color', '3': 8, '4': 1, '5': 11, '6': '.DartColorExpression', '10': 'darkElevatedColor'},
+    {'1': 'high_contrast_elevated_color', '3': 9, '4': 1, '5': 11, '6': '.DartColorExpression', '10': 'highContrastElevatedColor'},
+    {'1': 'dark_high_contrast_elevated_color', '3': 10, '4': 1, '5': 11, '6': '.DartColorExpression', '10': 'darkHighContrastElevatedColor'},
+  ],
+};
+
+/// Descriptor for `CupertinoDynamicColor`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List cupertinoDynamicColorDescriptor = $convert.base64Decode(
+    'ChVDdXBlcnRpbm9EeW5hbWljQ29sb3ISHwoLZGVidWdfbGFiZWwYAiABKAlSCmRlYnVnTGFiZW'
+    'wSKgoFY29sb3IYAyABKAsyFC5EYXJ0Q29sb3JFeHByZXNzaW9uUgVjb2xvchIzCgpkYXJrX2Nv'
+    'bG9yGAQgASgLMhQuRGFydENvbG9yRXhwcmVzc2lvblIJZGFya0NvbG9yEkQKE2hpZ2hfY29udH'
+    'Jhc3RfY29sb3IYBSABKAsyFC5EYXJ0Q29sb3JFeHByZXNzaW9uUhFoaWdoQ29udHJhc3RDb2xv'
+    'chJNChhkYXJrX2hpZ2hfY29udHJhc3RfY29sb3IYBiABKAsyFC5EYXJ0Q29sb3JFeHByZXNzaW'
+    '9uUhVkYXJrSGlnaENvbnRyYXN0Q29sb3ISOwoOZWxldmF0ZWRfY29sb3IYByABKAsyFC5EYXJ0'
+    'Q29sb3JFeHByZXNzaW9uUg1lbGV2YXRlZENvbG9yEkQKE2RhcmtfZWxldmF0ZWRfY29sb3IYCC'
+    'ABKAsyFC5EYXJ0Q29sb3JFeHByZXNzaW9uUhFkYXJrRWxldmF0ZWRDb2xvchJVChxoaWdoX2Nv'
+    'bnRyYXN0X2VsZXZhdGVkX2NvbG9yGAkgASgLMhQuRGFydENvbG9yRXhwcmVzc2lvblIZaGlnaE'
+    'NvbnRyYXN0RWxldmF0ZWRDb2xvchJeCiFkYXJrX2hpZ2hfY29udHJhc3RfZWxldmF0ZWRfY29s'
+    'b3IYCiABKAsyFC5EYXJ0Q29sb3JFeHByZXNzaW9uUh1kYXJrSGlnaENvbnRyYXN0RWxldmF0ZW'
+    'RDb2xvcg==');
+
+@$core.Deprecated('Use cupertinoDynamicColorNamedWithBrightnessDescriptor instead')
+const CupertinoDynamicColorNamedWithBrightness$json = {
+  '1': 'CupertinoDynamicColorNamedWithBrightness',
+  '2': [
+    {'1': 'debug_label', '3': 2, '4': 1, '5': 9, '10': 'debugLabel'},
+    {'1': 'color', '3': 3, '4': 1, '5': 11, '6': '.DartColorExpression', '10': 'color'},
+    {'1': 'dark_color', '3': 4, '4': 1, '5': 11, '6': '.DartColorExpression', '10': 'darkColor'},
+  ],
+};
+
+/// Descriptor for `CupertinoDynamicColorNamedWithBrightness`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List cupertinoDynamicColorNamedWithBrightnessDescriptor = $convert.base64Decode(
+    'CihDdXBlcnRpbm9EeW5hbWljQ29sb3JOYW1lZFdpdGhCcmlnaHRuZXNzEh8KC2RlYnVnX2xhYm'
+    'VsGAIgASgJUgpkZWJ1Z0xhYmVsEioKBWNvbG9yGAMgASgLMhQuRGFydENvbG9yRXhwcmVzc2lv'
+    'blIFY29sb3ISMwoKZGFya19jb2xvchgEIAEoCzIULkRhcnRDb2xvckV4cHJlc3Npb25SCWRhcm'
+    'tDb2xvcg==');
+
+@$core.Deprecated('Use cupertinoDynamicColorNamedWithBrightnessAndContrastDescriptor instead')
+const CupertinoDynamicColorNamedWithBrightnessAndContrast$json = {
+  '1': 'CupertinoDynamicColorNamedWithBrightnessAndContrast',
+  '2': [
+    {'1': 'debug_label', '3': 2, '4': 1, '5': 9, '10': 'debugLabel'},
+    {'1': 'color', '3': 3, '4': 1, '5': 11, '6': '.DartColorExpression', '10': 'color'},
+    {'1': 'dark_color', '3': 4, '4': 1, '5': 11, '6': '.DartColorExpression', '10': 'darkColor'},
+    {'1': 'high_contrast_color', '3': 5, '4': 1, '5': 11, '6': '.DartColorExpression', '10': 'highContrastColor'},
+    {'1': 'dark_high_contrast_color', '3': 6, '4': 1, '5': 11, '6': '.DartColorExpression', '10': 'darkHighContrastColor'},
+  ],
+};
+
+/// Descriptor for `CupertinoDynamicColorNamedWithBrightnessAndContrast`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List cupertinoDynamicColorNamedWithBrightnessAndContrastDescriptor = $convert.base64Decode(
+    'CjNDdXBlcnRpbm9EeW5hbWljQ29sb3JOYW1lZFdpdGhCcmlnaHRuZXNzQW5kQ29udHJhc3QSHw'
+    'oLZGVidWdfbGFiZWwYAiABKAlSCmRlYnVnTGFiZWwSKgoFY29sb3IYAyABKAsyFC5EYXJ0Q29s'
+    'b3JFeHByZXNzaW9uUgVjb2xvchIzCgpkYXJrX2NvbG9yGAQgASgLMhQuRGFydENvbG9yRXhwcm'
+    'Vzc2lvblIJZGFya0NvbG9yEkQKE2hpZ2hfY29udHJhc3RfY29sb3IYBSABKAsyFC5EYXJ0Q29s'
+    'b3JFeHByZXNzaW9uUhFoaWdoQ29udHJhc3RDb2xvchJNChhkYXJrX2hpZ2hfY29udHJhc3RfY2'
+    '9sb3IYBiABKAsyFC5EYXJ0Q29sb3JFeHByZXNzaW9uUhVkYXJrSGlnaENvbnRyYXN0Q29sb3I=');
+
+@$core.Deprecated('Use dartColorDescriptor instead')
+const DartColor$json = {
+  '1': 'DartColor',
   '2': [
     {'1': 'value', '3': 2, '4': 1, '5': 5, '10': 'value'},
   ],
 };
 
-/// Descriptor for `Color`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List colorDescriptor = $convert.base64Decode(
-    'CgVDb2xvchIUCgV2YWx1ZRgCIAEoBVIFdmFsdWU=');
+/// Descriptor for `DartColor`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartColorDescriptor = $convert.base64Decode(
+    'CglEYXJ0Q29sb3ISFAoFdmFsdWUYAiABKAVSBXZhbHVl');
 
-@$core.Deprecated('Use colorNamedFromARGBDescriptor instead')
-const ColorNamedFromARGB$json = {
-  '1': 'ColorNamedFromARGB',
+@$core.Deprecated('Use dartColorNamedFromARGBDescriptor instead')
+const DartColorNamedFromARGB$json = {
+  '1': 'DartColorNamedFromARGB',
   '2': [
     {'1': 'a', '3': 2, '4': 1, '5': 5, '10': 'a'},
     {'1': 'r', '3': 3, '4': 1, '5': 5, '10': 'r'},
@@ -36,14 +105,14 @@ const ColorNamedFromARGB$json = {
   ],
 };
 
-/// Descriptor for `ColorNamedFromARGB`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List colorNamedFromARGBDescriptor = $convert.base64Decode(
-    'ChJDb2xvck5hbWVkRnJvbUFSR0ISDAoBYRgCIAEoBVIBYRIMCgFyGAMgASgFUgFyEgwKAWcYBC'
-    'ABKAVSAWcSDAoBYhgFIAEoBVIBYg==');
+/// Descriptor for `DartColorNamedFromARGB`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartColorNamedFromARGBDescriptor = $convert.base64Decode(
+    'ChZEYXJ0Q29sb3JOYW1lZEZyb21BUkdCEgwKAWEYAiABKAVSAWESDAoBchgDIAEoBVIBchIMCg'
+    'FnGAQgASgFUgFnEgwKAWIYBSABKAVSAWI=');
 
-@$core.Deprecated('Use colorNamedFromRGBODescriptor instead')
-const ColorNamedFromRGBO$json = {
-  '1': 'ColorNamedFromRGBO',
+@$core.Deprecated('Use dartColorNamedFromRGBODescriptor instead')
+const DartColorNamedFromRGBO$json = {
+  '1': 'DartColorNamedFromRGBO',
   '2': [
     {'1': 'r', '3': 2, '4': 1, '5': 5, '10': 'r'},
     {'1': 'g', '3': 3, '4': 1, '5': 5, '10': 'g'},
@@ -52,81 +121,14 @@ const ColorNamedFromRGBO$json = {
   ],
 };
 
-/// Descriptor for `ColorNamedFromRGBO`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List colorNamedFromRGBODescriptor = $convert.base64Decode(
-    'ChJDb2xvck5hbWVkRnJvbVJHQk8SDAoBchgCIAEoBVIBchIMCgFnGAMgASgFUgFnEgwKAWIYBC'
-    'ABKAVSAWISGAoHb3BhY2l0eRgFIAEoAVIHb3BhY2l0eQ==');
+/// Descriptor for `DartColorNamedFromRGBO`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartColorNamedFromRGBODescriptor = $convert.base64Decode(
+    'ChZEYXJ0Q29sb3JOYW1lZEZyb21SR0JPEgwKAXIYAiABKAVSAXISDAoBZxgDIAEoBVIBZxIMCg'
+    'FiGAQgASgFUgFiEhgKB29wYWNpdHkYBSABKAFSB29wYWNpdHk=');
 
-@$core.Deprecated('Use cupertinoDynamicColorDescriptor instead')
-const CupertinoDynamicColor$json = {
-  '1': 'CupertinoDynamicColor',
-  '2': [
-    {'1': 'debug_label', '3': 2, '4': 1, '5': 9, '10': 'debugLabel'},
-    {'1': 'color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
-    {'1': 'dark_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'darkColor'},
-    {'1': 'high_contrast_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'highContrastColor'},
-    {'1': 'dark_high_contrast_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'darkHighContrastColor'},
-    {'1': 'elevated_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'elevatedColor'},
-    {'1': 'dark_elevated_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'darkElevatedColor'},
-    {'1': 'high_contrast_elevated_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'highContrastElevatedColor'},
-    {'1': 'dark_high_contrast_elevated_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'darkHighContrastElevatedColor'},
-  ],
-};
-
-/// Descriptor for `CupertinoDynamicColor`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List cupertinoDynamicColorDescriptor = $convert.base64Decode(
-    'ChVDdXBlcnRpbm9EeW5hbWljQ29sb3ISHwoLZGVidWdfbGFiZWwYAiABKAlSCmRlYnVnTGFiZW'
-    'wSJgoFY29sb3IYAyABKAsyEC5Db2xvckV4cHJlc3Npb25SBWNvbG9yEi8KCmRhcmtfY29sb3IY'
-    'BCABKAsyEC5Db2xvckV4cHJlc3Npb25SCWRhcmtDb2xvchJAChNoaWdoX2NvbnRyYXN0X2NvbG'
-    '9yGAUgASgLMhAuQ29sb3JFeHByZXNzaW9uUhFoaWdoQ29udHJhc3RDb2xvchJJChhkYXJrX2hp'
-    'Z2hfY29udHJhc3RfY29sb3IYBiABKAsyEC5Db2xvckV4cHJlc3Npb25SFWRhcmtIaWdoQ29udH'
-    'Jhc3RDb2xvchI3Cg5lbGV2YXRlZF9jb2xvchgHIAEoCzIQLkNvbG9yRXhwcmVzc2lvblINZWxl'
-    'dmF0ZWRDb2xvchJAChNkYXJrX2VsZXZhdGVkX2NvbG9yGAggASgLMhAuQ29sb3JFeHByZXNzaW'
-    '9uUhFkYXJrRWxldmF0ZWRDb2xvchJRChxoaWdoX2NvbnRyYXN0X2VsZXZhdGVkX2NvbG9yGAkg'
-    'ASgLMhAuQ29sb3JFeHByZXNzaW9uUhloaWdoQ29udHJhc3RFbGV2YXRlZENvbG9yEloKIWRhcm'
-    'tfaGlnaF9jb250cmFzdF9lbGV2YXRlZF9jb2xvchgKIAEoCzIQLkNvbG9yRXhwcmVzc2lvblId'
-    'ZGFya0hpZ2hDb250cmFzdEVsZXZhdGVkQ29sb3I=');
-
-@$core.Deprecated('Use cupertinoDynamicColorNamedWithBrightnessDescriptor instead')
-const CupertinoDynamicColorNamedWithBrightness$json = {
-  '1': 'CupertinoDynamicColorNamedWithBrightness',
-  '2': [
-    {'1': 'debug_label', '3': 2, '4': 1, '5': 9, '10': 'debugLabel'},
-    {'1': 'color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
-    {'1': 'dark_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'darkColor'},
-  ],
-};
-
-/// Descriptor for `CupertinoDynamicColorNamedWithBrightness`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List cupertinoDynamicColorNamedWithBrightnessDescriptor = $convert.base64Decode(
-    'CihDdXBlcnRpbm9EeW5hbWljQ29sb3JOYW1lZFdpdGhCcmlnaHRuZXNzEh8KC2RlYnVnX2xhYm'
-    'VsGAIgASgJUgpkZWJ1Z0xhYmVsEiYKBWNvbG9yGAMgASgLMhAuQ29sb3JFeHByZXNzaW9uUgVj'
-    'b2xvchIvCgpkYXJrX2NvbG9yGAQgASgLMhAuQ29sb3JFeHByZXNzaW9uUglkYXJrQ29sb3I=');
-
-@$core.Deprecated('Use cupertinoDynamicColorNamedWithBrightnessAndContrastDescriptor instead')
-const CupertinoDynamicColorNamedWithBrightnessAndContrast$json = {
-  '1': 'CupertinoDynamicColorNamedWithBrightnessAndContrast',
-  '2': [
-    {'1': 'debug_label', '3': 2, '4': 1, '5': 9, '10': 'debugLabel'},
-    {'1': 'color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
-    {'1': 'dark_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'darkColor'},
-    {'1': 'high_contrast_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'highContrastColor'},
-    {'1': 'dark_high_contrast_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'darkHighContrastColor'},
-  ],
-};
-
-/// Descriptor for `CupertinoDynamicColorNamedWithBrightnessAndContrast`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List cupertinoDynamicColorNamedWithBrightnessAndContrastDescriptor = $convert.base64Decode(
-    'CjNDdXBlcnRpbm9EeW5hbWljQ29sb3JOYW1lZFdpdGhCcmlnaHRuZXNzQW5kQ29udHJhc3QSHw'
-    'oLZGVidWdfbGFiZWwYAiABKAlSCmRlYnVnTGFiZWwSJgoFY29sb3IYAyABKAsyEC5Db2xvckV4'
-    'cHJlc3Npb25SBWNvbG9yEi8KCmRhcmtfY29sb3IYBCABKAsyEC5Db2xvckV4cHJlc3Npb25SCW'
-    'RhcmtDb2xvchJAChNoaWdoX2NvbnRyYXN0X2NvbG9yGAUgASgLMhAuQ29sb3JFeHByZXNzaW9u'
-    'UhFoaWdoQ29udHJhc3RDb2xvchJJChhkYXJrX2hpZ2hfY29udHJhc3RfY29sb3IYBiABKAsyEC'
-    '5Db2xvckV4cHJlc3Npb25SFWRhcmtIaWdoQ29udHJhc3RDb2xvcg==');
-
-@$core.Deprecated('Use durationDescriptor instead')
-const Duration$json = {
-  '1': 'Duration',
+@$core.Deprecated('Use dartDurationDescriptor instead')
+const DartDuration$json = {
+  '1': 'DartDuration',
   '2': [
     {'1': 'days', '3': 2, '4': 1, '5': 5, '10': 'days'},
     {'1': 'hours', '3': 3, '4': 1, '5': 5, '10': 'hours'},
@@ -137,12 +139,12 @@ const Duration$json = {
   ],
 };
 
-/// Descriptor for `Duration`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List durationDescriptor = $convert.base64Decode(
-    'CghEdXJhdGlvbhISCgRkYXlzGAIgASgFUgRkYXlzEhQKBWhvdXJzGAMgASgFUgVob3VycxIYCg'
-    'dtaW51dGVzGAQgASgFUgdtaW51dGVzEhgKB3NlY29uZHMYBSABKAVSB3NlY29uZHMSIgoMbWls'
-    'bGlzZWNvbmRzGAYgASgFUgxtaWxsaXNlY29uZHMSIgoMbWljcm9zZWNvbmRzGAcgASgFUgxtaW'
-    'Nyb3NlY29uZHM=');
+/// Descriptor for `DartDuration`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartDurationDescriptor = $convert.base64Decode(
+    'CgxEYXJ0RHVyYXRpb24SEgoEZGF5cxgCIAEoBVIEZGF5cxIUCgVob3VycxgDIAEoBVIFaG91cn'
+    'MSGAoHbWludXRlcxgEIAEoBVIHbWludXRlcxIYCgdzZWNvbmRzGAUgASgFUgdzZWNvbmRzEiIK'
+    'DG1pbGxpc2Vjb25kcxgGIAEoBVIMbWlsbGlzZWNvbmRzEiIKDG1pY3Jvc2Vjb25kcxgHIAEoBV'
+    'IMbWljcm9zZWNvbmRz');
 
 @$core.Deprecated('Use flutterGlobalKeyDescriptor instead')
 const FlutterGlobalKey$json = {
@@ -199,52 +201,52 @@ const FlutterUniqueKey$json = {
 final $typed_data.Uint8List flutterUniqueKeyDescriptor = $convert.base64Decode(
     'ChBGbHV0dGVyVW5pcXVlS2V5');
 
-@$core.Deprecated('Use colorExpressionDescriptor instead')
-const ColorExpression$json = {
-  '1': 'ColorExpression',
+@$core.Deprecated('Use dartColorExpressionDescriptor instead')
+const DartColorExpression$json = {
+  '1': 'DartColorExpression',
   '2': [
-    {'1': 'color', '3': 2, '4': 1, '5': 11, '6': '.Color', '9': 0, '10': 'color'},
-    {'1': 'color_named_from_a_r_g_b', '3': 3, '4': 1, '5': 11, '6': '.ColorNamedFromARGB', '9': 0, '10': 'colorNamedFromARGB'},
-    {'1': 'color_named_from_r_g_b_o', '3': 4, '4': 1, '5': 11, '6': '.ColorNamedFromRGBO', '9': 0, '10': 'colorNamedFromRGBO'},
-    {'1': 'cupertino_dynamic_color', '3': 5, '4': 1, '5': 11, '6': '.CupertinoDynamicColor', '9': 0, '10': 'cupertinoDynamicColor'},
-    {'1': 'cupertino_dynamic_color_named_with_brightness', '3': 6, '4': 1, '5': 11, '6': '.CupertinoDynamicColorNamedWithBrightness', '9': 0, '10': 'cupertinoDynamicColorNamedWithBrightness'},
-    {'1': 'cupertino_dynamic_color_named_with_brightness_and_contrast', '3': 7, '4': 1, '5': 11, '6': '.CupertinoDynamicColorNamedWithBrightnessAndContrast', '9': 0, '10': 'cupertinoDynamicColorNamedWithBrightnessAndContrast'},
+    {'1': 'cupertino_dynamic_color', '3': 2, '4': 1, '5': 11, '6': '.CupertinoDynamicColor', '9': 0, '10': 'cupertinoDynamicColor'},
+    {'1': 'cupertino_dynamic_color_named_with_brightness', '3': 3, '4': 1, '5': 11, '6': '.CupertinoDynamicColorNamedWithBrightness', '9': 0, '10': 'cupertinoDynamicColorNamedWithBrightness'},
+    {'1': 'cupertino_dynamic_color_named_with_brightness_and_contrast', '3': 4, '4': 1, '5': 11, '6': '.CupertinoDynamicColorNamedWithBrightnessAndContrast', '9': 0, '10': 'cupertinoDynamicColorNamedWithBrightnessAndContrast'},
+    {'1': 'dart_color', '3': 5, '4': 1, '5': 11, '6': '.DartColor', '9': 0, '10': 'dartColor'},
+    {'1': 'dart_color_named_from_a_r_g_b', '3': 6, '4': 1, '5': 11, '6': '.DartColorNamedFromARGB', '9': 0, '10': 'dartColorNamedFromARGB'},
+    {'1': 'dart_color_named_from_r_g_b_o', '3': 7, '4': 1, '5': 11, '6': '.DartColorNamedFromRGBO', '9': 0, '10': 'dartColorNamedFromRGBO'},
   ],
   '8': [
     {'1': 'result'},
   ],
 };
 
-/// Descriptor for `ColorExpression`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List colorExpressionDescriptor = $convert.base64Decode(
-    'Cg9Db2xvckV4cHJlc3Npb24SHgoFY29sb3IYAiABKAsyBi5Db2xvckgAUgVjb2xvchJLChhjb2'
-    'xvcl9uYW1lZF9mcm9tX2Ffcl9nX2IYAyABKAsyEy5Db2xvck5hbWVkRnJvbUFSR0JIAFISY29s'
-    'b3JOYW1lZEZyb21BUkdCEksKGGNvbG9yX25hbWVkX2Zyb21fcl9nX2JfbxgEIAEoCzITLkNvbG'
-    '9yTmFtZWRGcm9tUkdCT0gAUhJjb2xvck5hbWVkRnJvbVJHQk8SUAoXY3VwZXJ0aW5vX2R5bmFt'
-    'aWNfY29sb3IYBSABKAsyFi5DdXBlcnRpbm9EeW5hbWljQ29sb3JIAFIVY3VwZXJ0aW5vRHluYW'
-    '1pY0NvbG9yEowBCi1jdXBlcnRpbm9fZHluYW1pY19jb2xvcl9uYW1lZF93aXRoX2JyaWdodG5l'
-    'c3MYBiABKAsyKS5DdXBlcnRpbm9EeW5hbWljQ29sb3JOYW1lZFdpdGhCcmlnaHRuZXNzSABSKG'
-    'N1cGVydGlub0R5bmFtaWNDb2xvck5hbWVkV2l0aEJyaWdodG5lc3MSrwEKOmN1cGVydGlub19k'
-    'eW5hbWljX2NvbG9yX25hbWVkX3dpdGhfYnJpZ2h0bmVzc19hbmRfY29udHJhc3QYByABKAsyNC'
-    '5DdXBlcnRpbm9EeW5hbWljQ29sb3JOYW1lZFdpdGhCcmlnaHRuZXNzQW5kQ29udHJhc3RIAFIz'
-    'Y3VwZXJ0aW5vRHluYW1pY0NvbG9yTmFtZWRXaXRoQnJpZ2h0bmVzc0FuZENvbnRyYXN0QggKBn'
-    'Jlc3VsdA==');
+/// Descriptor for `DartColorExpression`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartColorExpressionDescriptor = $convert.base64Decode(
+    'ChNEYXJ0Q29sb3JFeHByZXNzaW9uElAKF2N1cGVydGlub19keW5hbWljX2NvbG9yGAIgASgLMh'
+    'YuQ3VwZXJ0aW5vRHluYW1pY0NvbG9ySABSFWN1cGVydGlub0R5bmFtaWNDb2xvchKMAQotY3Vw'
+    'ZXJ0aW5vX2R5bmFtaWNfY29sb3JfbmFtZWRfd2l0aF9icmlnaHRuZXNzGAMgASgLMikuQ3VwZX'
+    'J0aW5vRHluYW1pY0NvbG9yTmFtZWRXaXRoQnJpZ2h0bmVzc0gAUihjdXBlcnRpbm9EeW5hbWlj'
+    'Q29sb3JOYW1lZFdpdGhCcmlnaHRuZXNzEq8BCjpjdXBlcnRpbm9fZHluYW1pY19jb2xvcl9uYW'
+    '1lZF93aXRoX2JyaWdodG5lc3NfYW5kX2NvbnRyYXN0GAQgASgLMjQuQ3VwZXJ0aW5vRHluYW1p'
+    'Y0NvbG9yTmFtZWRXaXRoQnJpZ2h0bmVzc0FuZENvbnRyYXN0SABSM2N1cGVydGlub0R5bmFtaW'
+    'NDb2xvck5hbWVkV2l0aEJyaWdodG5lc3NBbmRDb250cmFzdBIrCgpkYXJ0X2NvbG9yGAUgASgL'
+    'MgouRGFydENvbG9ySABSCWRhcnRDb2xvchJYCh1kYXJ0X2NvbG9yX25hbWVkX2Zyb21fYV9yX2'
+    'dfYhgGIAEoCzIXLkRhcnRDb2xvck5hbWVkRnJvbUFSR0JIAFIWZGFydENvbG9yTmFtZWRGcm9t'
+    'QVJHQhJYCh1kYXJ0X2NvbG9yX25hbWVkX2Zyb21fcl9nX2JfbxgHIAEoCzIXLkRhcnRDb2xvck'
+    '5hbWVkRnJvbVJHQk9IAFIWZGFydENvbG9yTmFtZWRGcm9tUkdCT0IICgZyZXN1bHQ=');
 
-@$core.Deprecated('Use durationExpressionDescriptor instead')
-const DurationExpression$json = {
-  '1': 'DurationExpression',
+@$core.Deprecated('Use dartDurationExpressionDescriptor instead')
+const DartDurationExpression$json = {
+  '1': 'DartDurationExpression',
   '2': [
-    {'1': 'duration', '3': 2, '4': 1, '5': 11, '6': '.Duration', '9': 0, '10': 'duration'},
+    {'1': 'dart_duration', '3': 2, '4': 1, '5': 11, '6': '.DartDuration', '9': 0, '10': 'dartDuration'},
   ],
   '8': [
     {'1': 'result'},
   ],
 };
 
-/// Descriptor for `DurationExpression`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List durationExpressionDescriptor = $convert.base64Decode(
-    'ChJEdXJhdGlvbkV4cHJlc3Npb24SJwoIZHVyYXRpb24YAiABKAsyCS5EdXJhdGlvbkgAUghkdX'
-    'JhdGlvbkIICgZyZXN1bHQ=');
+/// Descriptor for `DartDurationExpression`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartDurationExpressionDescriptor = $convert.base64Decode(
+    'ChZEYXJ0RHVyYXRpb25FeHByZXNzaW9uEjQKDWRhcnRfZHVyYXRpb24YAiABKAsyDS5EYXJ0RH'
+    'VyYXRpb25IAFIMZGFydER1cmF0aW9uQggKBnJlc3VsdA==');
 
 @$core.Deprecated('Use flutterKeyExpressionDescriptor instead')
 const FlutterKeyExpression$json = {

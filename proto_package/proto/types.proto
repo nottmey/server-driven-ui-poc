@@ -4,13 +4,42 @@
 
 syntax = "proto3";
 
+// package:flutter/src/cupertino/colors.dart
+message CupertinoDynamicColor {
+  string debug_label = 2;
+  DartColorExpression color = 3;
+  DartColorExpression dark_color = 4;
+  DartColorExpression high_contrast_color = 5;
+  DartColorExpression dark_high_contrast_color = 6;
+  DartColorExpression elevated_color = 7;
+  DartColorExpression dark_elevated_color = 8;
+  DartColorExpression high_contrast_elevated_color = 9;
+  DartColorExpression dark_high_contrast_elevated_color = 10;
+}
+
+// package:flutter/src/cupertino/colors.dart
+message CupertinoDynamicColorNamedWithBrightness {
+  string debug_label = 2;
+  DartColorExpression color = 3;
+  DartColorExpression dark_color = 4;
+}
+
+// package:flutter/src/cupertino/colors.dart
+message CupertinoDynamicColorNamedWithBrightnessAndContrast {
+  string debug_label = 2;
+  DartColorExpression color = 3;
+  DartColorExpression dark_color = 4;
+  DartColorExpression high_contrast_color = 5;
+  DartColorExpression dark_high_contrast_color = 6;
+}
+
 // dart:ui
-message Color {
+message DartColor {
   int32 value = 2;
 }
 
 // dart:ui
-message ColorNamedFromARGB {
+message DartColorNamedFromARGB {
   int32 a = 2;
   int32 r = 3;
   int32 g = 4;
@@ -18,44 +47,15 @@ message ColorNamedFromARGB {
 }
 
 // dart:ui
-message ColorNamedFromRGBO {
+message DartColorNamedFromRGBO {
   int32 r = 2;
   int32 g = 3;
   int32 b = 4;
   double opacity = 5;
 }
 
-// package:flutter/src/cupertino/colors.dart
-message CupertinoDynamicColor {
-  string debug_label = 2;
-  ColorExpression color = 3;
-  ColorExpression dark_color = 4;
-  ColorExpression high_contrast_color = 5;
-  ColorExpression dark_high_contrast_color = 6;
-  ColorExpression elevated_color = 7;
-  ColorExpression dark_elevated_color = 8;
-  ColorExpression high_contrast_elevated_color = 9;
-  ColorExpression dark_high_contrast_elevated_color = 10;
-}
-
-// package:flutter/src/cupertino/colors.dart
-message CupertinoDynamicColorNamedWithBrightness {
-  string debug_label = 2;
-  ColorExpression color = 3;
-  ColorExpression dark_color = 4;
-}
-
-// package:flutter/src/cupertino/colors.dart
-message CupertinoDynamicColorNamedWithBrightnessAndContrast {
-  string debug_label = 2;
-  ColorExpression color = 3;
-  ColorExpression dark_color = 4;
-  ColorExpression high_contrast_color = 5;
-  ColorExpression dark_high_contrast_color = 6;
-}
-
 // dart:core
-message Duration {
+message DartDuration {
   int32 days = 2;
   int32 hours = 3;
   int32 minutes = 4;
@@ -90,20 +90,20 @@ message FlutterUniqueKey {
 }
 
 
-message ColorExpression {
+message DartColorExpression {
   oneof result {
-    Color color = 2;
-    ColorNamedFromARGB color_named_from_a_r_g_b = 3;
-    ColorNamedFromRGBO color_named_from_r_g_b_o = 4;
-    CupertinoDynamicColor cupertino_dynamic_color = 5;
-    CupertinoDynamicColorNamedWithBrightness cupertino_dynamic_color_named_with_brightness = 6;
-    CupertinoDynamicColorNamedWithBrightnessAndContrast cupertino_dynamic_color_named_with_brightness_and_contrast = 7;
+    CupertinoDynamicColor cupertino_dynamic_color = 2;
+    CupertinoDynamicColorNamedWithBrightness cupertino_dynamic_color_named_with_brightness = 3;
+    CupertinoDynamicColorNamedWithBrightnessAndContrast cupertino_dynamic_color_named_with_brightness_and_contrast = 4;
+    DartColor dart_color = 5;
+    DartColorNamedFromARGB dart_color_named_from_a_r_g_b = 6;
+    DartColorNamedFromRGBO dart_color_named_from_r_g_b_o = 7;
   }
 }
 
-message DurationExpression {
+message DartDurationExpression {
   oneof result {
-    Duration duration = 2;
+    DartDuration dart_duration = 2;
   }
 }
 
