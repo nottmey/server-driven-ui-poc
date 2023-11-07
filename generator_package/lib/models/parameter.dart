@@ -4,7 +4,6 @@ import 'package:analyzer/dart/element/nullability_suffix.dart';
 import 'package:analyzer/dart/element/type.dart';
 import 'package:generator_package/constants.dart';
 import 'package:generator_package/is_supported_extensions.dart';
-import 'package:generator_package/models/determine_strategy_extension.dart';
 import 'package:generator_package/models/type_mapping.dart';
 import 'package:generator_package/to_default_value_expression_extension.dart';
 import 'package:recase/recase.dart';
@@ -35,7 +34,7 @@ class Parameter {
   factory Parameter.ofElement(int index, ParameterElement element) {
     return Parameter(
       name: ReCase(element.name),
-      typeMapping: TypeMapping.of(element.type),
+      typeMapping: element.type.toTypeMapping(),
       fieldNumber: index + kProtoFieldStartNumber,
       isNamed: element.isNamed,
       isNullable: element.type.nullabilitySuffix == NullabilitySuffix.question,

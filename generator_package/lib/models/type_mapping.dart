@@ -2,8 +2,99 @@ import 'package:analyzer/dart/element/nullability_suffix.dart';
 import 'package:analyzer/dart/element/type.dart';
 import 'package:collection/collection.dart';
 import 'package:generator_package/constants.dart';
+import 'package:generator_package/is_widget_extensions.dart';
 import 'package:generator_package/models/constructor.dart';
-import 'package:generator_package/models/determine_strategy_extension.dart';
+import 'package:generator_package/to_library_prefix_extension.dart';
+
+enum MappingStrategy {
+  useProtoEquivalent,
+  generatePayloadMessage,
+  generateWidgetMessage,
+}
+
+enum StructureStrategy {
+  treatAsSingular,
+  treatAsRepeated,
+}
+
+extension TypeMappingCreationExtension on DartType {
+  // main way to construct type mapping
+  TypeMapping? toTypeMapping() {
+    // TODO also allow AST values, e.g. "string or string expression", as e.g. oneof in a wrapper?
+    // TODO also do maps, because it's possible
+
+    if (isDartCoreBool) {
+      return _directEquivalentTypeMapping('bool');
+    } else if (isDartCoreInt) {
+      return _directEquivalentTypeMapping('int32');
+    } else if (isDartCoreDouble) {
+      return _directEquivalentTypeMapping('double');
+    } else if (isDartCoreString) {
+      return _directEquivalentTypeMapping('string');
+    } else if (isDartCoreEnum) {
+      // TODO enums
+      return null;
+    } else if (this is FunctionType) {
+      // TODO function types
+      return null;
+    } else if (isDartCoreIterable || isDartCoreList) {
+      assert(this is ParameterizedType);
+      final typeArguments = (this as ParameterizedType).typeArguments;
+
+      assert(typeArguments.length == 1);
+      final subType = typeArguments.first;
+
+      if (subType.isDartCoreIterable || subType.isDartCoreList) {
+        // TODO solve multi dimensional arrays
+        return null; // can't do matrices
+      } else {
+        return subType.toTypeMapping()?.toRepeated();
+      }
+    } else if (isWidget) {
+      return TypeMapping._of(
+        dartType: this,
+        protoType: kWidgetExpression,
+        mappingStrategy: MappingStrategy.generateWidgetMessage,
+        structureStrategy: StructureStrategy.treatAsSingular,
+      );
+    } else if (this is InterfaceType) {
+      // classes and abstract classes
+
+      // TODO use correct name when type params are present
+      final name = element?.name;
+      final libraryPrefix = element?.toLibraryPrefix();
+      if (name == 'Key') {
+        // TODO enable more types
+        return TypeMapping._of(
+          dartType: this,
+          protoType: '$libraryPrefix${name}Expression',
+          mappingStrategy: MappingStrategy.generatePayloadMessage,
+          structureStrategy: StructureStrategy.treatAsSingular,
+        );
+      } else {
+        return null;
+      }
+    } else if (this is DynamicType) {
+      // TODO dynamic types
+      return null;
+    } else if (this is TypeParameterType) {
+      // TODO type parameter usages
+      return null;
+    } else {
+      // any other not implemented types
+      return null;
+    }
+  }
+
+  TypeMapping _directEquivalentTypeMapping(String protoType) {
+    return TypeMapping._of(
+      dartType: this,
+      protoType: protoType,
+      mappingStrategy: MappingStrategy.useProtoEquivalent,
+      structureStrategy: StructureStrategy.treatAsSingular,
+    );
+  }
+}
 
 class TypeMapping {
   final DartType dartType;
@@ -13,28 +104,20 @@ class TypeMapping {
   final String? typeName;
   final Uri? uri;
 
-  TypeMapping({
+  TypeMapping._of({
     required this.dartType,
     required this.protoType,
     required this.mappingStrategy,
     required this.structureStrategy,
-    required this.typeName,
-    required this.uri,
-  });
+  })  : typeName = dartType.element?.name,
+        uri = dartType.element?.librarySource?.uri;
 
-  static TypeMapping? of(DartType dartType) {
-    final strategy = dartType.determineStrategy();
-    if (strategy == null) {
-      return null;
-    }
-
-    return TypeMapping(
+  TypeMapping toRepeated() {
+    return TypeMapping._of(
       dartType: dartType,
-      protoType: strategy.protoType,
-      mappingStrategy: strategy.mappingStrategy,
-      structureStrategy: strategy.structureStrategy,
-      typeName: dartType.element?.name,
-      uri: dartType.element?.librarySource?.uri,
+      protoType: 'repeated $protoType',
+      mappingStrategy: mappingStrategy,
+      structureStrategy: StructureStrategy.treatAsRepeated,
     );
   }
 

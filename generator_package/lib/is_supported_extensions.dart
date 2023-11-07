@@ -2,7 +2,7 @@ import 'package:analyzer/dart/ast/ast.dart';
 import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/dart/element/nullability_suffix.dart';
 import 'package:analyzer/dart/element/type.dart';
-import 'package:generator_package/models/determine_strategy_extension.dart';
+import 'package:generator_package/models/type_mapping.dart';
 
 extension TypeSupportedExtension on ConstructorElement {
   bool get isSupportedByGenerator {
@@ -18,7 +18,7 @@ extension TypeSupportedExtension on ConstructorElement {
 
 extension IsSupportedTypeExtension on DartType {
   bool get isSupportedAsParameter {
-    return determineStrategy() != null;
+    return toTypeMapping() != null;
   }
 }
 

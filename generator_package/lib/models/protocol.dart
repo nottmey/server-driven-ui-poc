@@ -2,7 +2,6 @@ import 'package:analyzer/dart/element/element.dart';
 import 'package:collection/collection.dart';
 import 'package:generator_package/constants.dart';
 import 'package:generator_package/models/constructor.dart';
-import 'package:generator_package/models/determine_strategy_extension.dart';
 import 'package:generator_package/models/library.dart';
 import 'package:generator_package/models/type_mapping.dart';
 import 'package:generator_package/unique_by_key_extension.dart';
