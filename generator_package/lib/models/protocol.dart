@@ -120,14 +120,15 @@ message Experience {
     return '''
 $kGeneratedFileHeader
 
+import 'dart:core' as core;
 import 'package:proto_package/proto/types.pb.dart' as types;
 
 ${entries.mapIndexed((i, e) => e.key.toDartImport(i)).join("\n")}
 
 ${entries.mapIndexed((i, e) => e.value.mapIndexed((j, c) => c.toDartImport(i, j))).flattened.join("\n")}
 
-T $kThrowMissing<T>(String field) {
-  throw AssertionError('required field \$field is missing');
+T $kThrowMissing<T>(core.String field) {
+  throw core.AssertionError('required field \$field is missing');
 }
 
 ${entries.mapIndexed((i, e) => e.key.toDartSwitchCase(i, e.value)).join("\n")}
@@ -141,27 +142,28 @@ ${entries.mapIndexed((i, e) => e.key.toDartSwitchCase(i, e.value)).join("\n")}
     return '''
 $kGeneratedFileHeader
 
-import 'package:flutter/widgets.dart';
+import 'dart:core' as core;
+import 'package:flutter/widgets.dart' as widgets;
 import 'package:proto_package/proto/widgets.pb.dart' as proto;
 
 import 'package:proto_package/builders/evaluate_type_expressions.sdu.dart' as types;
 
 ${sortedLibraries.mapIndexed((i, c) => c.toDartImport(i)).join("\n")}
 
-T $kThrowMissing<T>(String field) {
-  throw AssertionError('required field \$field is missing');
+T $kThrowMissing<T>(core.String field) {
+  throw core.AssertionError('required field \$field is missing');
 }
 
-Widget $kEvaluateRequiredWidgetExpression(proto.$kWidgetExpression tree) {
+widgets.Widget $kEvaluateRequiredWidgetExpression(proto.$kWidgetExpression tree) {
   final result = $kEvaluateWidgetExpression(tree);
   if(result != null) {
     return result;
   } else {
-    throw AssertionError('unable to parse required sub-tree');
+    throw core.AssertionError('unable to parse required sub-tree');
   }
 }
 
-Widget? $kEvaluateWidgetExpression(proto.$kWidgetExpression? tree) {
+widgets.Widget? $kEvaluateWidgetExpression(proto.$kWidgetExpression? tree) {
   if(tree == null) {
     return null;
   }

@@ -23,6 +23,7 @@ extension TypeMappingCreationExtension on DartType {
     // TODO also allow AST values, e.g. "string or string expression", as e.g. oneof in a wrapper?
     // TODO also do maps, because it's possible
 
+    // from specific to broad classification
     if (isDartCoreBool) {
       return _directEquivalentTypeMapping('bool');
     } else if (isDartCoreInt) {
@@ -64,7 +65,7 @@ extension TypeMappingCreationExtension on DartType {
       final name = element?.name;
       final libraryPrefix = element?.toLibraryPrefix();
       if (name == 'Key') {
-        // TODO enable more types
+        // TODO enable more types, e.g. Duration (not explicitly exported by libs)
         return TypeMapping._of(
           dartType: this,
           protoType: '$libraryPrefix${name}Expression',
@@ -143,7 +144,7 @@ $typeAlias.$typeName evaluateRequired$protoType(types.$protoType tree) {
   if(result != null) {
     return result;
   } else {
-    throw AssertionError('unable to parse required sub-tree');
+    throw core.AssertionError('unable to parse required sub-tree');
   }
 }
 

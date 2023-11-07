@@ -2,6 +2,7 @@
 //  Generated. Do not modify.
 //
 
+import 'dart:core' as core;
 import 'package:proto_package/proto/types.pb.dart' as types;
 
 import 'package:flutter/src/foundation/key.dart' as $t0;
@@ -12,8 +13,8 @@ import 'package:flutter/src/widgets/framework.dart' as $t0c2;
 import 'package:flutter/src/widgets/framework.dart' as $t0c3;
 import 'package:flutter/src/foundation/key.dart' as $t0c4;
 
-T missing<T>(String field) {
-  throw AssertionError('required field $field is missing');
+T missing<T>(core.String field) {
+  throw core.AssertionError('required field $field is missing');
 }
 
 $t0.Key evaluateRequiredFlutterKeyExpression(types.FlutterKeyExpression tree) {
@@ -21,7 +22,7 @@ $t0.Key evaluateRequiredFlutterKeyExpression(types.FlutterKeyExpression tree) {
   if(result != null) {
     return result;
   } else {
-    throw AssertionError('unable to parse required sub-tree');
+    throw core.AssertionError('unable to parse required sub-tree');
   }
 }
 

@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:analyzer/dart/element/element.dart';
 import 'package:collection/collection.dart';
 import 'package:generator_package/constants.dart';
@@ -16,7 +18,12 @@ class Library {
   factory Library.ofElement(LibraryElement element) {
     return Library(
       uri: element.librarySource.uri,
-      constructors: element.exportNamespace.definedNames.values
+      constructors: element.exportNamespace.definedNames.entries
+          // TODO separate widget consturctors and widget payload construcotrs (recursive)
+          .map((e) {
+            debugger(when: e.key.startsWith('Duration'));
+            return e.value;
+          })
           .whereType<ClassElement>()
           .where((c) => !c.hasDeprecated)
           .expand(

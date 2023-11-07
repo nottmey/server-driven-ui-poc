@@ -2,7 +2,8 @@
 //  Generated. Do not modify.
 //
 
-import 'package:flutter/widgets.dart';
+import 'dart:core' as core;
+import 'package:flutter/widgets.dart' as widgets;
 import 'package:proto_package/proto/widgets.pb.dart' as proto;
 
 import 'package:proto_package/builders/evaluate_type_expressions.sdu.dart' as types;
@@ -12,20 +13,20 @@ import 'package:flutter/material.dart' as $l1;
 import 'package:flutter/widgets.dart' as $l2;
 import 'package:flutter_project/main.dart' as $l3;
 
-T missing<T>(String field) {
-  throw AssertionError('required field $field is missing');
+T missing<T>(core.String field) {
+  throw core.AssertionError('required field $field is missing');
 }
 
-Widget evaluateRequiredWidgetExpression(proto.WidgetExpression tree) {
+widgets.Widget evaluateRequiredWidgetExpression(proto.WidgetExpression tree) {
   final result = evaluateWidgetExpression(tree);
   if(result != null) {
     return result;
   } else {
-    throw AssertionError('unable to parse required sub-tree');
+    throw core.AssertionError('unable to parse required sub-tree');
   }
 }
 
-Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
+widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
   if(tree == null) {
     return null;
   }
