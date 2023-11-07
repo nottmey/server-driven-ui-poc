@@ -73,8 +73,8 @@ extension TypeMappingCreationExtension on DartType {
       // TODO use correct name when type params are present
       final name = element?.name;
       final libraryPrefix = element?.toLibraryPrefix();
-      if (name == 'Key' || name == 'Duration') {
-        // TODO enable more types, e.g. Duration (not explicitly exported by libs)
+      if (name == 'Key' || name == 'Duration' || name == 'Color') {
+        // TODO enable more types
         return TypeMapping._of(
           dartType: this,
           protoType: '$libraryPrefix${name}Expression',
@@ -157,7 +157,7 @@ $typeAlias.$typeName? evaluate$protoType(types.$protoType? tree) {
   }
 
   switch (tree.whichResult()) {
-${constructors.mapIndexed((j, c) => c.toDartSwitchCase('types', protoType, '\$t${i}c$j')).join("\n")}
+${constructors.mapIndexed((j, c) => c.toDartSwitchCase('types', protoType, '\$t${i}c$j', null)).join("\n")}
     default:
       return null;
   }
@@ -165,7 +165,7 @@ ${constructors.mapIndexed((j, c) => c.toDartSwitchCase('types', protoType, '\$t$
 ''';
   }
 
-  String? toDartEvalFn() {
+  String? toDartEvalFn(String? typeEvalAlias) {
     final isOptionalInEvaluation =
         dartType.nullabilitySuffix == NullabilitySuffix.question &&
             structureStrategy == StructureStrategy.treatAsSingular;
@@ -174,9 +174,10 @@ ${constructors.mapIndexed((j, c) => c.toDartSwitchCase('types', protoType, '\$t$
       case MappingStrategy.useProtoEquivalent:
         return null;
       case MappingStrategy.generatePayloadMessage:
+        final prefix = typeEvalAlias == null ? '' : '$typeEvalAlias.';
         return isOptionalInEvaluation
-            ? 'types.evaluate$protoType'
-            : 'types.evaluateRequired$protoType';
+            ? '${prefix}evaluate$protoType'
+            : '${prefix}evaluateRequired$protoType';
       case MappingStrategy.generateWidgetMessage:
         return isOptionalInEvaluation
             ? kEvaluateWidgetExpression

@@ -192,7 +192,7 @@ widgets.Widget? $kEvaluateWidgetExpression(proto.$kWidgetExpression? tree) {
   }
 
   switch (tree.whichResult()) {
-${widgetConstructors.mapIndexed((i, c) => c.toDartSwitchCase('proto', kWidgetExpression, c.toImportAlias(i))).join("\n")}
+${widgetConstructors.mapIndexed((i, c) => c.toDartSwitchCase('proto', kWidgetExpression, c.toImportAlias(i), 'types')).join("\n")}
     default:
       return null;
   }

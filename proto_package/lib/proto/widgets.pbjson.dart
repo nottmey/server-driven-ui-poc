@@ -18,6 +18,7 @@ const CupertinoActivityIndicator$json = {
   '1': 'CupertinoActivityIndicator',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'animating', '3': 4, '4': 1, '5': 8, '10': 'animating'},
     {'1': 'radius', '3': 5, '4': 1, '5': 1, '10': 'radius'},
   ],
@@ -26,14 +27,15 @@ const CupertinoActivityIndicator$json = {
 /// Descriptor for `CupertinoActivityIndicator`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List cupertinoActivityIndicatorDescriptor = $convert.base64Decode(
     'ChpDdXBlcnRpbm9BY3Rpdml0eUluZGljYXRvchInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RX'
-    'hwcmVzc2lvblIDa2V5EhwKCWFuaW1hdGluZxgEIAEoCFIJYW5pbWF0aW5nEhYKBnJhZGl1cxgF'
-    'IAEoAVIGcmFkaXVz');
+    'hwcmVzc2lvblIDa2V5EiYKBWNvbG9yGAMgASgLMhAuQ29sb3JFeHByZXNzaW9uUgVjb2xvchIc'
+    'CglhbmltYXRpbmcYBCABKAhSCWFuaW1hdGluZxIWCgZyYWRpdXMYBSABKAFSBnJhZGl1cw==');
 
 @$core.Deprecated('Use cupertinoActivityIndicatorNamedPartiallyRevealedDescriptor instead')
 const CupertinoActivityIndicatorNamedPartiallyRevealed$json = {
   '1': 'CupertinoActivityIndicatorNamedPartiallyRevealed',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'radius', '3': 4, '4': 1, '5': 1, '10': 'radius'},
     {'1': 'progress', '3': 5, '4': 1, '5': 1, '10': 'progress'},
   ],
@@ -42,8 +44,9 @@ const CupertinoActivityIndicatorNamedPartiallyRevealed$json = {
 /// Descriptor for `CupertinoActivityIndicatorNamedPartiallyRevealed`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List cupertinoActivityIndicatorNamedPartiallyRevealedDescriptor = $convert.base64Decode(
     'CjBDdXBlcnRpbm9BY3Rpdml0eUluZGljYXRvck5hbWVkUGFydGlhbGx5UmV2ZWFsZWQSJwoDa2'
-    'V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb25SA2tleRIWCgZyYWRpdXMYBCABKAFSBnJh'
-    'ZGl1cxIaCghwcm9ncmVzcxgFIAEoAVIIcHJvZ3Jlc3M=');
+    'V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb25SA2tleRImCgVjb2xvchgDIAEoCzIQLkNv'
+    'bG9yRXhwcmVzc2lvblIFY29sb3ISFgoGcmFkaXVzGAQgASgBUgZyYWRpdXMSGgoIcHJvZ3Jlc3'
+    'MYBSABKAFSCHByb2dyZXNz');
 
 @$core.Deprecated('Use cupertinoAppDescriptor instead')
 const CupertinoApp$json = {
@@ -53,6 +56,7 @@ const CupertinoApp$json = {
     {'1': 'home', '3': 4, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'home'},
     {'1': 'initial_route', '3': 7, '4': 1, '5': 9, '10': 'initialRoute'},
     {'1': 'title', '3': 13, '4': 1, '5': 9, '10': 'title'},
+    {'1': 'color', '3': 15, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'show_performance_overlay', '3': 21, '4': 1, '5': 8, '10': 'showPerformanceOverlay'},
     {'1': 'checkerboard_raster_cache_images', '3': 22, '4': 1, '5': 8, '10': 'checkerboardRasterCacheImages'},
     {'1': 'checkerboard_offscreen_layers', '3': 23, '4': 1, '5': 8, '10': 'checkerboardOffscreenLayers'},
@@ -66,14 +70,15 @@ const CupertinoApp$json = {
 final $typed_data.Uint8List cupertinoAppDescriptor = $convert.base64Decode(
     'CgxDdXBlcnRpbm9BcHASJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb25SA2tleR'
     'IlCgRob21lGAQgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIEaG9tZRIjCg1pbml0aWFsX3JvdXRl'
-    'GAcgASgJUgxpbml0aWFsUm91dGUSFAoFdGl0bGUYDSABKAlSBXRpdGxlEjgKGHNob3dfcGVyZm'
-    '9ybWFuY2Vfb3ZlcmxheRgVIAEoCFIWc2hvd1BlcmZvcm1hbmNlT3ZlcmxheRJHCiBjaGVja2Vy'
-    'Ym9hcmRfcmFzdGVyX2NhY2hlX2ltYWdlcxgWIAEoCFIdY2hlY2tlcmJvYXJkUmFzdGVyQ2FjaG'
-    'VJbWFnZXMSQgodY2hlY2tlcmJvYXJkX29mZnNjcmVlbl9sYXllcnMYFyABKAhSG2NoZWNrZXJi'
-    'b2FyZE9mZnNjcmVlbkxheWVycxI2ChdzaG93X3NlbWFudGljc19kZWJ1Z2dlchgYIAEoCFIVc2'
-    'hvd1NlbWFudGljc0RlYnVnZ2VyEkIKHmRlYnVnX3Nob3dfY2hlY2tlZF9tb2RlX2Jhbm5lchgZ'
-    'IAEoCFIaZGVidWdTaG93Q2hlY2tlZE1vZGVCYW5uZXISMAoUcmVzdG9yYXRpb25fc2NvcGVfaW'
-    'QYHCABKAlSEnJlc3RvcmF0aW9uU2NvcGVJZA==');
+    'GAcgASgJUgxpbml0aWFsUm91dGUSFAoFdGl0bGUYDSABKAlSBXRpdGxlEiYKBWNvbG9yGA8gAS'
+    'gLMhAuQ29sb3JFeHByZXNzaW9uUgVjb2xvchI4ChhzaG93X3BlcmZvcm1hbmNlX292ZXJsYXkY'
+    'FSABKAhSFnNob3dQZXJmb3JtYW5jZU92ZXJsYXkSRwogY2hlY2tlcmJvYXJkX3Jhc3Rlcl9jYW'
+    'NoZV9pbWFnZXMYFiABKAhSHWNoZWNrZXJib2FyZFJhc3RlckNhY2hlSW1hZ2VzEkIKHWNoZWNr'
+    'ZXJib2FyZF9vZmZzY3JlZW5fbGF5ZXJzGBcgASgIUhtjaGVja2VyYm9hcmRPZmZzY3JlZW5MYX'
+    'llcnMSNgoXc2hvd19zZW1hbnRpY3NfZGVidWdnZXIYGCABKAhSFXNob3dTZW1hbnRpY3NEZWJ1'
+    'Z2dlchJCCh5kZWJ1Z19zaG93X2NoZWNrZWRfbW9kZV9iYW5uZXIYGSABKAhSGmRlYnVnU2hvd0'
+    'NoZWNrZWRNb2RlQmFubmVyEjAKFHJlc3RvcmF0aW9uX3Njb3BlX2lkGBwgASgJUhJyZXN0b3Jh'
+    'dGlvblNjb3BlSWQ=');
 
 @$core.Deprecated('Use cupertinoAppNamedRouterDescriptor instead')
 const CupertinoAppNamedRouter$json = {
@@ -81,6 +86,7 @@ const CupertinoAppNamedRouter$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'title', '3': 10, '4': 1, '5': 9, '10': 'title'},
+    {'1': 'color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'show_performance_overlay', '3': 18, '4': 1, '5': 8, '10': 'showPerformanceOverlay'},
     {'1': 'checkerboard_raster_cache_images', '3': 19, '4': 1, '5': 8, '10': 'checkerboardRasterCacheImages'},
     {'1': 'checkerboard_offscreen_layers', '3': 20, '4': 1, '5': 8, '10': 'checkerboardOffscreenLayers'},
@@ -93,14 +99,15 @@ const CupertinoAppNamedRouter$json = {
 /// Descriptor for `CupertinoAppNamedRouter`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List cupertinoAppNamedRouterDescriptor = $convert.base64Decode(
     'ChdDdXBlcnRpbm9BcHBOYW1lZFJvdXRlchInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcm'
-    'Vzc2lvblIDa2V5EhQKBXRpdGxlGAogASgJUgV0aXRsZRI4ChhzaG93X3BlcmZvcm1hbmNlX292'
-    'ZXJsYXkYEiABKAhSFnNob3dQZXJmb3JtYW5jZU92ZXJsYXkSRwogY2hlY2tlcmJvYXJkX3Jhc3'
-    'Rlcl9jYWNoZV9pbWFnZXMYEyABKAhSHWNoZWNrZXJib2FyZFJhc3RlckNhY2hlSW1hZ2VzEkIK'
-    'HWNoZWNrZXJib2FyZF9vZmZzY3JlZW5fbGF5ZXJzGBQgASgIUhtjaGVja2VyYm9hcmRPZmZzY3'
-    'JlZW5MYXllcnMSNgoXc2hvd19zZW1hbnRpY3NfZGVidWdnZXIYFSABKAhSFXNob3dTZW1hbnRp'
-    'Y3NEZWJ1Z2dlchJCCh5kZWJ1Z19zaG93X2NoZWNrZWRfbW9kZV9iYW5uZXIYFiABKAhSGmRlYn'
-    'VnU2hvd0NoZWNrZWRNb2RlQmFubmVyEjAKFHJlc3RvcmF0aW9uX3Njb3BlX2lkGBkgASgJUhJy'
-    'ZXN0b3JhdGlvblNjb3BlSWQ=');
+    'Vzc2lvblIDa2V5EhQKBXRpdGxlGAogASgJUgV0aXRsZRImCgVjb2xvchgMIAEoCzIQLkNvbG9y'
+    'RXhwcmVzc2lvblIFY29sb3ISOAoYc2hvd19wZXJmb3JtYW5jZV9vdmVybGF5GBIgASgIUhZzaG'
+    '93UGVyZm9ybWFuY2VPdmVybGF5EkcKIGNoZWNrZXJib2FyZF9yYXN0ZXJfY2FjaGVfaW1hZ2Vz'
+    'GBMgASgIUh1jaGVja2VyYm9hcmRSYXN0ZXJDYWNoZUltYWdlcxJCCh1jaGVja2VyYm9hcmRfb2'
+    'Zmc2NyZWVuX2xheWVycxgUIAEoCFIbY2hlY2tlcmJvYXJkT2Zmc2NyZWVuTGF5ZXJzEjYKF3No'
+    'b3dfc2VtYW50aWNzX2RlYnVnZ2VyGBUgASgIUhVzaG93U2VtYW50aWNzRGVidWdnZXISQgoeZG'
+    'VidWdfc2hvd19jaGVja2VkX21vZGVfYmFubmVyGBYgASgIUhpkZWJ1Z1Nob3dDaGVja2VkTW9k'
+    'ZUJhbm5lchIwChRyZXN0b3JhdGlvbl9zY29wZV9pZBgZIAEoCVIScmVzdG9yYXRpb25TY29wZU'
+    'lk');
 
 @$core.Deprecated('Use cupertinoButtonDescriptor instead')
 const CupertinoButton$json = {
@@ -108,6 +115,8 @@ const CupertinoButton$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
+    {'1': 'color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
+    {'1': 'disabled_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
     {'1': 'min_size', '3': 7, '4': 1, '5': 1, '10': 'minSize'},
     {'1': 'pressed_opacity', '3': 8, '4': 1, '5': 1, '10': 'pressedOpacity'},
   ],
@@ -116,9 +125,10 @@ const CupertinoButton$json = {
 /// Descriptor for `CupertinoButton`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List cupertinoButtonDescriptor = $convert.base64Decode(
     'Cg9DdXBlcnRpbm9CdXR0b24SJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb25SA2'
-    'tleRInCgVjaGlsZBgDIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBWNoaWxkEhkKCG1pbl9zaXpl'
-    'GAcgASgBUgdtaW5TaXplEicKD3ByZXNzZWRfb3BhY2l0eRgIIAEoAVIOcHJlc3NlZE9wYWNpdH'
-    'k=');
+    'tleRInCgVjaGlsZBgDIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBWNoaWxkEiYKBWNvbG9yGAUg'
+    'ASgLMhAuQ29sb3JFeHByZXNzaW9uUgVjb2xvchI3Cg5kaXNhYmxlZF9jb2xvchgGIAEoCzIQLk'
+    'NvbG9yRXhwcmVzc2lvblINZGlzYWJsZWRDb2xvchIZCghtaW5fc2l6ZRgHIAEoAVIHbWluU2l6'
+    'ZRInCg9wcmVzc2VkX29wYWNpdHkYCCABKAFSDnByZXNzZWRPcGFjaXR5');
 
 @$core.Deprecated('Use cupertinoButtonNamedFilledDescriptor instead')
 const CupertinoButtonNamedFilled$json = {
@@ -126,6 +136,7 @@ const CupertinoButtonNamedFilled$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
+    {'1': 'disabled_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
     {'1': 'min_size', '3': 6, '4': 1, '5': 1, '10': 'minSize'},
     {'1': 'pressed_opacity', '3': 7, '4': 1, '5': 1, '10': 'pressedOpacity'},
   ],
@@ -135,8 +146,9 @@ const CupertinoButtonNamedFilled$json = {
 final $typed_data.Uint8List cupertinoButtonNamedFilledDescriptor = $convert.base64Decode(
     'ChpDdXBlcnRpbm9CdXR0b25OYW1lZEZpbGxlZBInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RX'
     'hwcmVzc2lvblIDa2V5EicKBWNoaWxkGAMgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFY2hpbGQS'
-    'GQoIbWluX3NpemUYBiABKAFSB21pblNpemUSJwoPcHJlc3NlZF9vcGFjaXR5GAcgASgBUg5wcm'
-    'Vzc2VkT3BhY2l0eQ==');
+    'NwoOZGlzYWJsZWRfY29sb3IYBSABKAsyEC5Db2xvckV4cHJlc3Npb25SDWRpc2FibGVkQ29sb3'
+    'ISGQoIbWluX3NpemUYBiABKAFSB21pblNpemUSJwoPcHJlc3NlZF9vcGFjaXR5GAcgASgBUg5w'
+    'cmVzc2VkT3BhY2l0eQ==');
 
 @$core.Deprecated('Use cupertinoCheckboxDescriptor instead')
 const CupertinoCheckbox$json = {
@@ -145,6 +157,10 @@ const CupertinoCheckbox$json = {
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'value', '3': 3, '4': 1, '5': 8, '10': 'value'},
     {'1': 'tristate', '3': 4, '4': 1, '5': 8, '10': 'tristate'},
+    {'1': 'active_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'activeColor'},
+    {'1': 'inactive_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'inactiveColor'},
+    {'1': 'check_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'checkColor'},
+    {'1': 'focus_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
     {'1': 'autofocus', '3': 11, '4': 1, '5': 8, '10': 'autofocus'},
   ],
 };
@@ -153,7 +169,11 @@ const CupertinoCheckbox$json = {
 final $typed_data.Uint8List cupertinoCheckboxDescriptor = $convert.base64Decode(
     'ChFDdXBlcnRpbm9DaGVja2JveBInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2lvbl'
     'IDa2V5EhQKBXZhbHVlGAMgASgIUgV2YWx1ZRIaCgh0cmlzdGF0ZRgEIAEoCFIIdHJpc3RhdGUS'
-    'HAoJYXV0b2ZvY3VzGAsgASgIUglhdXRvZm9jdXM=');
+    'MwoMYWN0aXZlX2NvbG9yGAYgASgLMhAuQ29sb3JFeHByZXNzaW9uUgthY3RpdmVDb2xvchI3Cg'
+    '5pbmFjdGl2ZV9jb2xvchgHIAEoCzIQLkNvbG9yRXhwcmVzc2lvblINaW5hY3RpdmVDb2xvchIx'
+    'CgtjaGVja19jb2xvchgIIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIKY2hlY2tDb2xvchIxCgtmb2'
+    'N1c19jb2xvchgJIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIKZm9jdXNDb2xvchIcCglhdXRvZm9j'
+    'dXMYCyABKAhSCWF1dG9mb2N1cw==');
 
 @$core.Deprecated('Use cupertinoContextMenuDescriptor instead')
 const CupertinoContextMenu$json = {
@@ -323,6 +343,7 @@ const CupertinoFormSection$json = {
     {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.WidgetExpression', '10': 'children'},
     {'1': 'header', '3': 4, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'header'},
     {'1': 'footer', '3': 5, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'footer'},
+    {'1': 'background_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
   ],
 };
 
@@ -331,7 +352,8 @@ final $typed_data.Uint8List cupertinoFormSectionDescriptor = $convert.base64Deco
     'ChRDdXBlcnRpbm9Gb3JtU2VjdGlvbhInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2'
     'lvblIDa2V5Ei0KCGNoaWxkcmVuGAMgAygLMhEuV2lkZ2V0RXhwcmVzc2lvblIIY2hpbGRyZW4S'
     'KQoGaGVhZGVyGAQgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIGaGVhZGVyEikKBmZvb3RlchgFIA'
-    'EoCzIRLldpZGdldEV4cHJlc3Npb25SBmZvb3Rlcg==');
+    'EoCzIRLldpZGdldEV4cHJlc3Npb25SBmZvb3RlchI7ChBiYWNrZ3JvdW5kX2NvbG9yGAcgASgL'
+    'MhAuQ29sb3JFeHByZXNzaW9uUg9iYWNrZ3JvdW5kQ29sb3I=');
 
 @$core.Deprecated('Use cupertinoFormSectionNamedInsetGroupedDescriptor instead')
 const CupertinoFormSectionNamedInsetGrouped$json = {
@@ -341,6 +363,7 @@ const CupertinoFormSectionNamedInsetGrouped$json = {
     {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.WidgetExpression', '10': 'children'},
     {'1': 'header', '3': 4, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'header'},
     {'1': 'footer', '3': 5, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'footer'},
+    {'1': 'background_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
   ],
 };
 
@@ -349,7 +372,8 @@ final $typed_data.Uint8List cupertinoFormSectionNamedInsetGroupedDescriptor = $c
     'CiVDdXBlcnRpbm9Gb3JtU2VjdGlvbk5hbWVkSW5zZXRHcm91cGVkEicKA2tleRgCIAEoCzIVLk'
     'ZsdXR0ZXJLZXlFeHByZXNzaW9uUgNrZXkSLQoIY2hpbGRyZW4YAyADKAsyES5XaWRnZXRFeHBy'
     'ZXNzaW9uUghjaGlsZHJlbhIpCgZoZWFkZXIYBCABKAsyES5XaWRnZXRFeHByZXNzaW9uUgZoZW'
-    'FkZXISKQoGZm9vdGVyGAUgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIGZm9vdGVy');
+    'FkZXISKQoGZm9vdGVyGAUgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIGZm9vdGVyEjsKEGJhY2tn'
+    'cm91bmRfY29sb3IYByABKAsyEC5Db2xvckV4cHJlc3Npb25SD2JhY2tncm91bmRDb2xvcg==');
 
 @$core.Deprecated('Use cupertinoListSectionDescriptor instead')
 const CupertinoListSection$json = {
@@ -359,10 +383,12 @@ const CupertinoListSection$json = {
     {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.WidgetExpression', '10': 'children'},
     {'1': 'header', '3': 4, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'header'},
     {'1': 'footer', '3': 5, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'footer'},
+    {'1': 'background_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'divider_margin', '3': 10, '4': 1, '5': 1, '10': 'dividerMargin'},
     {'1': 'additional_divider_margin', '3': 11, '4': 1, '5': 1, '10': 'additionalDividerMargin'},
     {'1': 'top_margin', '3': 12, '4': 1, '5': 1, '10': 'topMargin'},
     {'1': 'has_leading', '3': 13, '4': 1, '5': 8, '10': 'hasLeading'},
+    {'1': 'separator_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'separatorColor'},
   ],
 };
 
@@ -371,10 +397,12 @@ final $typed_data.Uint8List cupertinoListSectionDescriptor = $convert.base64Deco
     'ChRDdXBlcnRpbm9MaXN0U2VjdGlvbhInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2'
     'lvblIDa2V5Ei0KCGNoaWxkcmVuGAMgAygLMhEuV2lkZ2V0RXhwcmVzc2lvblIIY2hpbGRyZW4S'
     'KQoGaGVhZGVyGAQgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIGaGVhZGVyEikKBmZvb3RlchgFIA'
-    'EoCzIRLldpZGdldEV4cHJlc3Npb25SBmZvb3RlchIlCg5kaXZpZGVyX21hcmdpbhgKIAEoAVIN'
-    'ZGl2aWRlck1hcmdpbhI6ChlhZGRpdGlvbmFsX2RpdmlkZXJfbWFyZ2luGAsgASgBUhdhZGRpdG'
-    'lvbmFsRGl2aWRlck1hcmdpbhIdCgp0b3BfbWFyZ2luGAwgASgBUgl0b3BNYXJnaW4SHwoLaGFz'
-    'X2xlYWRpbmcYDSABKAhSCmhhc0xlYWRpbmc=');
+    'EoCzIRLldpZGdldEV4cHJlc3Npb25SBmZvb3RlchI7ChBiYWNrZ3JvdW5kX2NvbG9yGAcgASgL'
+    'MhAuQ29sb3JFeHByZXNzaW9uUg9iYWNrZ3JvdW5kQ29sb3ISJQoOZGl2aWRlcl9tYXJnaW4YCi'
+    'ABKAFSDWRpdmlkZXJNYXJnaW4SOgoZYWRkaXRpb25hbF9kaXZpZGVyX21hcmdpbhgLIAEoAVIX'
+    'YWRkaXRpb25hbERpdmlkZXJNYXJnaW4SHQoKdG9wX21hcmdpbhgMIAEoAVIJdG9wTWFyZ2luEh'
+    '8KC2hhc19sZWFkaW5nGA0gASgIUgpoYXNMZWFkaW5nEjkKD3NlcGFyYXRvcl9jb2xvchgOIAEo'
+    'CzIQLkNvbG9yRXhwcmVzc2lvblIOc2VwYXJhdG9yQ29sb3I=');
 
 @$core.Deprecated('Use cupertinoListSectionNamedInsetGroupedDescriptor instead')
 const CupertinoListSectionNamedInsetGrouped$json = {
@@ -384,10 +412,12 @@ const CupertinoListSectionNamedInsetGrouped$json = {
     {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.WidgetExpression', '10': 'children'},
     {'1': 'header', '3': 4, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'header'},
     {'1': 'footer', '3': 5, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'footer'},
+    {'1': 'background_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'divider_margin', '3': 10, '4': 1, '5': 1, '10': 'dividerMargin'},
     {'1': 'additional_divider_margin', '3': 11, '4': 1, '5': 1, '10': 'additionalDividerMargin'},
     {'1': 'top_margin', '3': 12, '4': 1, '5': 1, '10': 'topMargin'},
     {'1': 'has_leading', '3': 13, '4': 1, '5': 8, '10': 'hasLeading'},
+    {'1': 'separator_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'separatorColor'},
   ],
 };
 
@@ -396,10 +426,12 @@ final $typed_data.Uint8List cupertinoListSectionNamedInsetGroupedDescriptor = $c
     'CiVDdXBlcnRpbm9MaXN0U2VjdGlvbk5hbWVkSW5zZXRHcm91cGVkEicKA2tleRgCIAEoCzIVLk'
     'ZsdXR0ZXJLZXlFeHByZXNzaW9uUgNrZXkSLQoIY2hpbGRyZW4YAyADKAsyES5XaWRnZXRFeHBy'
     'ZXNzaW9uUghjaGlsZHJlbhIpCgZoZWFkZXIYBCABKAsyES5XaWRnZXRFeHByZXNzaW9uUgZoZW'
-    'FkZXISKQoGZm9vdGVyGAUgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIGZm9vdGVyEiUKDmRpdmlk'
-    'ZXJfbWFyZ2luGAogASgBUg1kaXZpZGVyTWFyZ2luEjoKGWFkZGl0aW9uYWxfZGl2aWRlcl9tYX'
-    'JnaW4YCyABKAFSF2FkZGl0aW9uYWxEaXZpZGVyTWFyZ2luEh0KCnRvcF9tYXJnaW4YDCABKAFS'
-    'CXRvcE1hcmdpbhIfCgtoYXNfbGVhZGluZxgNIAEoCFIKaGFzTGVhZGluZw==');
+    'FkZXISKQoGZm9vdGVyGAUgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIGZm9vdGVyEjsKEGJhY2tn'
+    'cm91bmRfY29sb3IYByABKAsyEC5Db2xvckV4cHJlc3Npb25SD2JhY2tncm91bmRDb2xvchIlCg'
+    '5kaXZpZGVyX21hcmdpbhgKIAEoAVINZGl2aWRlck1hcmdpbhI6ChlhZGRpdGlvbmFsX2Rpdmlk'
+    'ZXJfbWFyZ2luGAsgASgBUhdhZGRpdGlvbmFsRGl2aWRlck1hcmdpbhIdCgp0b3BfbWFyZ2luGA'
+    'wgASgBUgl0b3BNYXJnaW4SHwoLaGFzX2xlYWRpbmcYDSABKAhSCmhhc0xlYWRpbmcSOQoPc2Vw'
+    'YXJhdG9yX2NvbG9yGA4gASgLMhAuQ29sb3JFeHByZXNzaW9uUg5zZXBhcmF0b3JDb2xvcg==');
 
 @$core.Deprecated('Use cupertinoListTileDescriptor instead')
 const CupertinoListTile$json = {
@@ -411,6 +443,8 @@ const CupertinoListTile$json = {
     {'1': 'additional_info', '3': 5, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'additionalInfo'},
     {'1': 'leading', '3': 6, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'leading'},
     {'1': 'trailing', '3': 7, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'trailing'},
+    {'1': 'background_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'background_color_activated', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColorActivated'},
     {'1': 'leading_size', '3': 12, '4': 1, '5': 1, '10': 'leadingSize'},
     {'1': 'leading_to_title', '3': 13, '4': 1, '5': 1, '10': 'leadingToTitle'},
   ],
@@ -423,8 +457,11 @@ final $typed_data.Uint8List cupertinoListTileDescriptor = $convert.base64Decode(
     'bGUYBCABKAsyES5XaWRnZXRFeHByZXNzaW9uUghzdWJ0aXRsZRI6Cg9hZGRpdGlvbmFsX2luZm'
     '8YBSABKAsyES5XaWRnZXRFeHByZXNzaW9uUg5hZGRpdGlvbmFsSW5mbxIrCgdsZWFkaW5nGAYg'
     'ASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIHbGVhZGluZxItCgh0cmFpbGluZxgHIAEoCzIRLldpZG'
-    'dldEV4cHJlc3Npb25SCHRyYWlsaW5nEiEKDGxlYWRpbmdfc2l6ZRgMIAEoAVILbGVhZGluZ1Np'
-    'emUSKAoQbGVhZGluZ190b190aXRsZRgNIAEoAVIObGVhZGluZ1RvVGl0bGU=');
+    'dldEV4cHJlc3Npb25SCHRyYWlsaW5nEjsKEGJhY2tncm91bmRfY29sb3IYCSABKAsyEC5Db2xv'
+    'ckV4cHJlc3Npb25SD2JhY2tncm91bmRDb2xvchJOChpiYWNrZ3JvdW5kX2NvbG9yX2FjdGl2YX'
+    'RlZBgKIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIYYmFja2dyb3VuZENvbG9yQWN0aXZhdGVkEiEK'
+    'DGxlYWRpbmdfc2l6ZRgMIAEoAVILbGVhZGluZ1NpemUSKAoQbGVhZGluZ190b190aXRsZRgNIA'
+    'EoAVIObGVhZGluZ1RvVGl0bGU=');
 
 @$core.Deprecated('Use cupertinoListTileNamedNotchedDescriptor instead')
 const CupertinoListTileNamedNotched$json = {
@@ -436,6 +473,8 @@ const CupertinoListTileNamedNotched$json = {
     {'1': 'additional_info', '3': 5, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'additionalInfo'},
     {'1': 'leading', '3': 6, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'leading'},
     {'1': 'trailing', '3': 7, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'trailing'},
+    {'1': 'background_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'background_color_activated', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColorActivated'},
     {'1': 'leading_size', '3': 12, '4': 1, '5': 1, '10': 'leadingSize'},
     {'1': 'leading_to_title', '3': 13, '4': 1, '5': 1, '10': 'leadingToTitle'},
   ],
@@ -448,9 +487,11 @@ final $typed_data.Uint8List cupertinoListTileNamedNotchedDescriptor = $convert.b
     'bGUSLQoIc3VidGl0bGUYBCABKAsyES5XaWRnZXRFeHByZXNzaW9uUghzdWJ0aXRsZRI6Cg9hZG'
     'RpdGlvbmFsX2luZm8YBSABKAsyES5XaWRnZXRFeHByZXNzaW9uUg5hZGRpdGlvbmFsSW5mbxIr'
     'CgdsZWFkaW5nGAYgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIHbGVhZGluZxItCgh0cmFpbGluZx'
-    'gHIAEoCzIRLldpZGdldEV4cHJlc3Npb25SCHRyYWlsaW5nEiEKDGxlYWRpbmdfc2l6ZRgMIAEo'
-    'AVILbGVhZGluZ1NpemUSKAoQbGVhZGluZ190b190aXRsZRgNIAEoAVIObGVhZGluZ1RvVGl0bG'
-    'U=');
+    'gHIAEoCzIRLldpZGdldEV4cHJlc3Npb25SCHRyYWlsaW5nEjsKEGJhY2tncm91bmRfY29sb3IY'
+    'CSABKAsyEC5Db2xvckV4cHJlc3Npb25SD2JhY2tncm91bmRDb2xvchJOChpiYWNrZ3JvdW5kX2'
+    'NvbG9yX2FjdGl2YXRlZBgKIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIYYmFja2dyb3VuZENvbG9y'
+    'QWN0aXZhdGVkEiEKDGxlYWRpbmdfc2l6ZRgMIAEoAVILbGVhZGluZ1NpemUSKAoQbGVhZGluZ1'
+    '90b190aXRsZRgNIAEoAVIObGVhZGluZ1RvVGl0bGU=');
 
 @$core.Deprecated('Use cupertinoListTileChevronDescriptor instead')
 const CupertinoListTileChevron$json = {
@@ -489,6 +530,7 @@ const CupertinoNavigationBar$json = {
     {'1': 'previous_page_title', '3': 6, '4': 1, '5': 9, '10': 'previousPageTitle'},
     {'1': 'middle', '3': 7, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'middle'},
     {'1': 'trailing', '3': 8, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'trailing'},
+    {'1': 'background_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'transition_between_routes', '3': 13, '4': 1, '5': 8, '10': 'transitionBetweenRoutes'},
   ],
 };
@@ -501,14 +543,16 @@ final $typed_data.Uint8List cupertinoNavigationBarDescriptor = $convert.base64De
     'lMZWFkaW5nEjwKGmF1dG9tYXRpY2FsbHlfaW1wbHlfbWlkZGxlGAUgASgIUhhhdXRvbWF0aWNh'
     'bGx5SW1wbHlNaWRkbGUSLgoTcHJldmlvdXNfcGFnZV90aXRsZRgGIAEoCVIRcHJldmlvdXNQYW'
     'dlVGl0bGUSKQoGbWlkZGxlGAcgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIGbWlkZGxlEi0KCHRy'
-    'YWlsaW5nGAggASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIIdHJhaWxpbmcSOgoZdHJhbnNpdGlvbl'
-    '9iZXR3ZWVuX3JvdXRlcxgNIAEoCFIXdHJhbnNpdGlvbkJldHdlZW5Sb3V0ZXM=');
+    'YWlsaW5nGAggASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIIdHJhaWxpbmcSOwoQYmFja2dyb3VuZF'
+    '9jb2xvchgKIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIPYmFja2dyb3VuZENvbG9yEjoKGXRyYW5z'
+    'aXRpb25fYmV0d2Vlbl9yb3V0ZXMYDSABKAhSF3RyYW5zaXRpb25CZXR3ZWVuUm91dGVz');
 
 @$core.Deprecated('Use cupertinoNavigationBarBackButtonDescriptor instead')
 const CupertinoNavigationBarBackButton$json = {
   '1': 'CupertinoNavigationBarBackButton',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'previous_page_title', '3': 4, '4': 1, '5': 9, '10': 'previousPageTitle'},
   ],
 };
@@ -516,8 +560,8 @@ const CupertinoNavigationBarBackButton$json = {
 /// Descriptor for `CupertinoNavigationBarBackButton`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List cupertinoNavigationBarBackButtonDescriptor = $convert.base64Decode(
     'CiBDdXBlcnRpbm9OYXZpZ2F0aW9uQmFyQmFja0J1dHRvbhInCgNrZXkYAiABKAsyFS5GbHV0dG'
-    'VyS2V5RXhwcmVzc2lvblIDa2V5Ei4KE3ByZXZpb3VzX3BhZ2VfdGl0bGUYBCABKAlSEXByZXZp'
-    'b3VzUGFnZVRpdGxl');
+    'VyS2V5RXhwcmVzc2lvblIDa2V5EiYKBWNvbG9yGAMgASgLMhAuQ29sb3JFeHByZXNzaW9uUgVj'
+    'b2xvchIuChNwcmV2aW91c19wYWdlX3RpdGxlGAQgASgJUhFwcmV2aW91c1BhZ2VUaXRsZQ==');
 
 @$core.Deprecated('Use cupertinoSliverNavigationBarDescriptor instead')
 const CupertinoSliverNavigationBar$json = {
@@ -532,6 +576,7 @@ const CupertinoSliverNavigationBar$json = {
     {'1': 'previous_page_title', '3': 8, '4': 1, '5': 9, '10': 'previousPageTitle'},
     {'1': 'middle', '3': 9, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'middle'},
     {'1': 'trailing', '3': 10, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'trailing'},
+    {'1': 'background_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'transition_between_routes', '3': 15, '4': 1, '5': 8, '10': 'transitionBetweenRoutes'},
     {'1': 'stretch', '3': 17, '4': 1, '5': 8, '10': 'stretch'},
   ],
@@ -547,15 +592,17 @@ final $typed_data.Uint8List cupertinoSliverNavigationBarDescriptor = $convert.ba
     'NhbGx5SW1wbHlUaXRsZRIsChJhbHdheXNfc2hvd19taWRkbGUYByABKAhSEGFsd2F5c1Nob3dN'
     'aWRkbGUSLgoTcHJldmlvdXNfcGFnZV90aXRsZRgIIAEoCVIRcHJldmlvdXNQYWdlVGl0bGUSKQ'
     'oGbWlkZGxlGAkgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIGbWlkZGxlEi0KCHRyYWlsaW5nGAog'
-    'ASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIIdHJhaWxpbmcSOgoZdHJhbnNpdGlvbl9iZXR3ZWVuX3'
-    'JvdXRlcxgPIAEoCFIXdHJhbnNpdGlvbkJldHdlZW5Sb3V0ZXMSGAoHc3RyZXRjaBgRIAEoCFIH'
-    'c3RyZXRjaA==');
+    'ASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIIdHJhaWxpbmcSOwoQYmFja2dyb3VuZF9jb2xvchgMIA'
+    'EoCzIQLkNvbG9yRXhwcmVzc2lvblIPYmFja2dyb3VuZENvbG9yEjoKGXRyYW5zaXRpb25fYmV0'
+    'd2Vlbl9yb3V0ZXMYDyABKAhSF3RyYW5zaXRpb25CZXR3ZWVuUm91dGVzEhgKB3N0cmV0Y2gYES'
+    'ABKAhSB3N0cmV0Y2g=');
 
 @$core.Deprecated('Use cupertinoPageScaffoldDescriptor instead')
 const CupertinoPageScaffold$json = {
   '1': 'CupertinoPageScaffold',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'background_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'resize_to_avoid_bottom_inset', '3': 5, '4': 1, '5': 8, '10': 'resizeToAvoidBottomInset'},
     {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
   ],
@@ -564,9 +611,10 @@ const CupertinoPageScaffold$json = {
 /// Descriptor for `CupertinoPageScaffold`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List cupertinoPageScaffoldDescriptor = $convert.base64Decode(
     'ChVDdXBlcnRpbm9QYWdlU2NhZmZvbGQSJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3'
-    'Npb25SA2tleRI+ChxyZXNpemVfdG9fYXZvaWRfYm90dG9tX2luc2V0GAUgASgIUhhyZXNpemVU'
-    'b0F2b2lkQm90dG9tSW5zZXQSJwoFY2hpbGQYBiABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVjaG'
-    'lsZA==');
+    'Npb25SA2tleRI7ChBiYWNrZ3JvdW5kX2NvbG9yGAQgASgLMhAuQ29sb3JFeHByZXNzaW9uUg9i'
+    'YWNrZ3JvdW5kQ29sb3ISPgoccmVzaXplX3RvX2F2b2lkX2JvdHRvbV9pbnNldBgFIAEoCFIYcm'
+    'VzaXplVG9Bdm9pZEJvdHRvbUluc2V0EicKBWNoaWxkGAYgASgLMhEuV2lkZ2V0RXhwcmVzc2lv'
+    'blIFY2hpbGQ=');
 
 @$core.Deprecated('Use cupertinoPickerDescriptor instead')
 const CupertinoPicker$json = {
@@ -574,6 +622,7 @@ const CupertinoPicker$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'diameter_ratio', '3': 3, '4': 1, '5': 1, '10': 'diameterRatio'},
+    {'1': 'background_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'off_axis_fraction', '3': 5, '4': 1, '5': 1, '10': 'offAxisFraction'},
     {'1': 'use_magnifier', '3': 6, '4': 1, '5': 8, '10': 'useMagnifier'},
     {'1': 'magnification', '3': 7, '4': 1, '5': 1, '10': 'magnification'},
@@ -588,19 +637,21 @@ const CupertinoPicker$json = {
 /// Descriptor for `CupertinoPicker`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List cupertinoPickerDescriptor = $convert.base64Decode(
     'Cg9DdXBlcnRpbm9QaWNrZXISJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb25SA2'
-    'tleRIlCg5kaWFtZXRlcl9yYXRpbxgDIAEoAVINZGlhbWV0ZXJSYXRpbxIqChFvZmZfYXhpc19m'
-    'cmFjdGlvbhgFIAEoAVIPb2ZmQXhpc0ZyYWN0aW9uEiMKDXVzZV9tYWduaWZpZXIYBiABKAhSDH'
-    'VzZU1hZ25pZmllchIkCg1tYWduaWZpY2F0aW9uGAcgASgBUg1tYWduaWZpY2F0aW9uEhgKB3Nx'
-    'dWVlemUYCSABKAFSB3NxdWVlemUSHwoLaXRlbV9leHRlbnQYCiABKAFSCml0ZW1FeHRlbnQSLQ'
-    'oIY2hpbGRyZW4YDCADKAsyES5XaWRnZXRFeHByZXNzaW9uUghjaGlsZHJlbhI+ChFzZWxlY3Rp'
-    'b25fb3ZlcmxheRgNIAEoCzIRLldpZGdldEV4cHJlc3Npb25SEHNlbGVjdGlvbk92ZXJsYXkSGA'
-    'oHbG9vcGluZxgOIAEoCFIHbG9vcGluZw==');
+    'tleRIlCg5kaWFtZXRlcl9yYXRpbxgDIAEoAVINZGlhbWV0ZXJSYXRpbxI7ChBiYWNrZ3JvdW5k'
+    'X2NvbG9yGAQgASgLMhAuQ29sb3JFeHByZXNzaW9uUg9iYWNrZ3JvdW5kQ29sb3ISKgoRb2ZmX2'
+    'F4aXNfZnJhY3Rpb24YBSABKAFSD29mZkF4aXNGcmFjdGlvbhIjCg11c2VfbWFnbmlmaWVyGAYg'
+    'ASgIUgx1c2VNYWduaWZpZXISJAoNbWFnbmlmaWNhdGlvbhgHIAEoAVINbWFnbmlmaWNhdGlvbh'
+    'IYCgdzcXVlZXplGAkgASgBUgdzcXVlZXplEh8KC2l0ZW1fZXh0ZW50GAogASgBUgppdGVtRXh0'
+    'ZW50Ei0KCGNoaWxkcmVuGAwgAygLMhEuV2lkZ2V0RXhwcmVzc2lvblIIY2hpbGRyZW4SPgoRc2'
+    'VsZWN0aW9uX292ZXJsYXkYDSABKAsyES5XaWRnZXRFeHByZXNzaW9uUhBzZWxlY3Rpb25PdmVy'
+    'bGF5EhgKB2xvb3BpbmcYDiABKAhSB2xvb3Bpbmc=');
 
 @$core.Deprecated('Use cupertinoPickerDefaultSelectionOverlayDescriptor instead')
 const CupertinoPickerDefaultSelectionOverlay$json = {
   '1': 'CupertinoPickerDefaultSelectionOverlay',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'background', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'background'},
     {'1': 'cap_start_edge', '3': 4, '4': 1, '5': 8, '10': 'capStartEdge'},
     {'1': 'cap_end_edge', '3': 5, '4': 1, '5': 8, '10': 'capEndEdge'},
   ],
@@ -609,8 +660,9 @@ const CupertinoPickerDefaultSelectionOverlay$json = {
 /// Descriptor for `CupertinoPickerDefaultSelectionOverlay`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List cupertinoPickerDefaultSelectionOverlayDescriptor = $convert.base64Decode(
     'CiZDdXBlcnRpbm9QaWNrZXJEZWZhdWx0U2VsZWN0aW9uT3ZlcmxheRInCgNrZXkYAiABKAsyFS'
-    '5GbHV0dGVyS2V5RXhwcmVzc2lvblIDa2V5EiQKDmNhcF9zdGFydF9lZGdlGAQgASgIUgxjYXBT'
-    'dGFydEVkZ2USIAoMY2FwX2VuZF9lZGdlGAUgASgIUgpjYXBFbmRFZGdl');
+    '5GbHV0dGVyS2V5RXhwcmVzc2lvblIDa2V5EjAKCmJhY2tncm91bmQYAyABKAsyEC5Db2xvckV4'
+    'cHJlc3Npb25SCmJhY2tncm91bmQSJAoOY2FwX3N0YXJ0X2VkZ2UYBCABKAhSDGNhcFN0YXJ0RW'
+    'RnZRIgCgxjYXBfZW5kX2VkZ2UYBSABKAhSCmNhcEVuZEVkZ2U=');
 
 @$core.Deprecated('Use cupertinoSliverRefreshControlDescriptor instead')
 const CupertinoSliverRefreshControl$json = {
@@ -655,6 +707,8 @@ const CupertinoSearchTextField$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'placeholder', '3': 7, '4': 1, '5': 9, '10': 'placeholder'},
+    {'1': 'background_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'item_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'itemColor'},
     {'1': 'item_size', '3': 15, '4': 1, '5': 1, '10': 'itemSize'},
     {'1': 'prefix_icon', '3': 17, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'prefixIcon'},
     {'1': 'restoration_id', '3': 22, '4': 1, '5': 9, '10': 'restorationId'},
@@ -668,12 +722,14 @@ const CupertinoSearchTextField$json = {
 /// Descriptor for `CupertinoSearchTextField`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List cupertinoSearchTextFieldDescriptor = $convert.base64Decode(
     'ChhDdXBlcnRpbm9TZWFyY2hUZXh0RmllbGQSJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cH'
-    'Jlc3Npb25SA2tleRIgCgtwbGFjZWhvbGRlchgHIAEoCVILcGxhY2Vob2xkZXISGwoJaXRlbV9z'
-    'aXplGA8gASgBUghpdGVtU2l6ZRIyCgtwcmVmaXhfaWNvbhgRIAEoCzIRLldpZGdldEV4cHJlc3'
-    'Npb25SCnByZWZpeEljb24SJQoOcmVzdG9yYXRpb25faWQYFiABKAlSDXJlc3RvcmF0aW9uSWQS'
-    'SQoiZW5hYmxlX2lfbV9lX3BlcnNvbmFsaXplZF9sZWFybmluZxgaIAEoCFIdZW5hYmxlSU1FUG'
-    'Vyc29uYWxpemVkTGVhcm5pbmcSHAoJYXV0b2ZvY3VzGBsgASgIUglhdXRvZm9jdXMSIAoLYXV0'
-    'b2NvcnJlY3QYHSABKAhSC2F1dG9jb3JyZWN0EhgKB2VuYWJsZWQYHiABKAhSB2VuYWJsZWQ=');
+    'Jlc3Npb25SA2tleRIgCgtwbGFjZWhvbGRlchgHIAEoCVILcGxhY2Vob2xkZXISOwoQYmFja2dy'
+    'b3VuZF9jb2xvchgKIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIPYmFja2dyb3VuZENvbG9yEi8KCm'
+    'l0ZW1fY29sb3IYDiABKAsyEC5Db2xvckV4cHJlc3Npb25SCWl0ZW1Db2xvchIbCglpdGVtX3Np'
+    'emUYDyABKAFSCGl0ZW1TaXplEjIKC3ByZWZpeF9pY29uGBEgASgLMhEuV2lkZ2V0RXhwcmVzc2'
+    'lvblIKcHJlZml4SWNvbhIlCg5yZXN0b3JhdGlvbl9pZBgWIAEoCVINcmVzdG9yYXRpb25JZBJJ'
+    'CiJlbmFibGVfaV9tX2VfcGVyc29uYWxpemVkX2xlYXJuaW5nGBogASgIUh1lbmFibGVJTUVQZX'
+    'Jzb25hbGl6ZWRMZWFybmluZxIcCglhdXRvZm9jdXMYGyABKAhSCWF1dG9mb2N1cxIgCgthdXRv'
+    'Y29ycmVjdBgdIAEoCFILYXV0b2NvcnJlY3QSGAoHZW5hYmxlZBgeIAEoCFIHZW5hYmxlZA==');
 
 @$core.Deprecated('Use cupertinoSliderDescriptor instead')
 const CupertinoSlider$json = {
@@ -684,6 +740,8 @@ const CupertinoSlider$json = {
     {'1': 'min', '3': 7, '4': 1, '5': 1, '10': 'min'},
     {'1': 'max', '3': 8, '4': 1, '5': 1, '10': 'max'},
     {'1': 'divisions', '3': 9, '4': 1, '5': 5, '10': 'divisions'},
+    {'1': 'active_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'activeColor'},
+    {'1': 'thumb_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'thumbColor'},
   ],
 };
 
@@ -691,7 +749,9 @@ const CupertinoSlider$json = {
 final $typed_data.Uint8List cupertinoSliderDescriptor = $convert.base64Decode(
     'Cg9DdXBlcnRpbm9TbGlkZXISJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb25SA2'
     'tleRIUCgV2YWx1ZRgDIAEoAVIFdmFsdWUSEAoDbWluGAcgASgBUgNtaW4SEAoDbWF4GAggASgB'
-    'UgNtYXgSHAoJZGl2aXNpb25zGAkgASgFUglkaXZpc2lvbnM=');
+    'UgNtYXgSHAoJZGl2aXNpb25zGAkgASgFUglkaXZpc2lvbnMSMwoMYWN0aXZlX2NvbG9yGAogAS'
+    'gLMhAuQ29sb3JFeHByZXNzaW9uUgthY3RpdmVDb2xvchIxCgt0aHVtYl9jb2xvchgLIAEoCzIQ'
+    'LkNvbG9yRXhwcmVzc2lvblIKdGh1bWJDb2xvcg==');
 
 @$core.Deprecated('Use cupertinoSwitchDescriptor instead')
 const CupertinoSwitch$json = {
@@ -699,7 +759,11 @@ const CupertinoSwitch$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'value', '3': 3, '4': 1, '5': 8, '10': 'value'},
+    {'1': 'active_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'activeColor'},
+    {'1': 'track_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'trackColor'},
+    {'1': 'thumb_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'thumbColor'},
     {'1': 'apply_theme', '3': 8, '4': 1, '5': 8, '10': 'applyTheme'},
+    {'1': 'focus_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
     {'1': 'autofocus', '3': 12, '4': 1, '5': 8, '10': 'autofocus'},
   ],
 };
@@ -707,8 +771,12 @@ const CupertinoSwitch$json = {
 /// Descriptor for `CupertinoSwitch`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List cupertinoSwitchDescriptor = $convert.base64Decode(
     'Cg9DdXBlcnRpbm9Td2l0Y2gSJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb25SA2'
-    'tleRIUCgV2YWx1ZRgDIAEoCFIFdmFsdWUSHwoLYXBwbHlfdGhlbWUYCCABKAhSCmFwcGx5VGhl'
-    'bWUSHAoJYXV0b2ZvY3VzGAwgASgIUglhdXRvZm9jdXM=');
+    'tleRIUCgV2YWx1ZRgDIAEoCFIFdmFsdWUSMwoMYWN0aXZlX2NvbG9yGAUgASgLMhAuQ29sb3JF'
+    'eHByZXNzaW9uUgthY3RpdmVDb2xvchIxCgt0cmFja19jb2xvchgGIAEoCzIQLkNvbG9yRXhwcm'
+    'Vzc2lvblIKdHJhY2tDb2xvchIxCgt0aHVtYl9jb2xvchgHIAEoCzIQLkNvbG9yRXhwcmVzc2lv'
+    'blIKdGh1bWJDb2xvchIfCgthcHBseV90aGVtZRgIIAEoCFIKYXBwbHlUaGVtZRIxCgtmb2N1c1'
+    '9jb2xvchgJIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIKZm9jdXNDb2xvchIcCglhdXRvZm9jdXMY'
+    'DCABKAhSCWF1dG9mb2N1cw==');
 
 @$core.Deprecated('Use cupertinoTabViewDescriptor instead')
 const CupertinoTabView$json = {
@@ -749,6 +817,7 @@ const CupertinoTextField$json = {
     {'1': 'cursor_width', '3': 43, '4': 1, '5': 1, '10': 'cursorWidth'},
     {'1': 'cursor_height', '3': 44, '4': 1, '5': 1, '10': 'cursorHeight'},
     {'1': 'cursor_opacity_animates', '3': 46, '4': 1, '5': 8, '10': 'cursorOpacityAnimates'},
+    {'1': 'cursor_color', '3': 47, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'cursorColor'},
     {'1': 'enable_interactive_selection', '3': 53, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
     {'1': 'autofill_hints', '3': 58, '4': 3, '5': 9, '10': 'autofillHints'},
     {'1': 'restoration_id', '3': 61, '4': 1, '5': 9, '10': 'restorationId'},
@@ -771,12 +840,13 @@ final $typed_data.Uint8List cupertinoTextFieldDescriptor = $convert.base64Decode
     'dleHBhbmRzGCIgASgIUgdleHBhbmRzEh0KCm1heF9sZW5ndGgYIyABKAVSCW1heExlbmd0aBIY'
     'CgdlbmFibGVkGCogASgIUgdlbmFibGVkEiEKDGN1cnNvcl93aWR0aBgrIAEoAVILY3Vyc29yV2'
     'lkdGgSIwoNY3Vyc29yX2hlaWdodBgsIAEoAVIMY3Vyc29ySGVpZ2h0EjYKF2N1cnNvcl9vcGFj'
-    'aXR5X2FuaW1hdGVzGC4gASgIUhVjdXJzb3JPcGFjaXR5QW5pbWF0ZXMSQAocZW5hYmxlX2ludG'
-    'VyYWN0aXZlX3NlbGVjdGlvbhg1IAEoCFIaZW5hYmxlSW50ZXJhY3RpdmVTZWxlY3Rpb24SJQoO'
-    'YXV0b2ZpbGxfaGludHMYOiADKAlSDWF1dG9maWxsSGludHMSJQoOcmVzdG9yYXRpb25faWQYPS'
-    'ABKAlSDXJlc3RvcmF0aW9uSWQSKQoQc2NyaWJibGVfZW5hYmxlZBg+IAEoCFIPc2NyaWJibGVF'
-    'bmFibGVkEkkKImVuYWJsZV9pX21fZV9wZXJzb25hbGl6ZWRfbGVhcm5pbmcYPyABKAhSHWVuYW'
-    'JsZUlNRVBlcnNvbmFsaXplZExlYXJuaW5n');
+    'aXR5X2FuaW1hdGVzGC4gASgIUhVjdXJzb3JPcGFjaXR5QW5pbWF0ZXMSMwoMY3Vyc29yX2NvbG'
+    '9yGC8gASgLMhAuQ29sb3JFeHByZXNzaW9uUgtjdXJzb3JDb2xvchJAChxlbmFibGVfaW50ZXJh'
+    'Y3RpdmVfc2VsZWN0aW9uGDUgASgIUhplbmFibGVJbnRlcmFjdGl2ZVNlbGVjdGlvbhIlCg5hdX'
+    'RvZmlsbF9oaW50cxg6IAMoCVINYXV0b2ZpbGxIaW50cxIlCg5yZXN0b3JhdGlvbl9pZBg9IAEo'
+    'CVINcmVzdG9yYXRpb25JZBIpChBzY3JpYmJsZV9lbmFibGVkGD4gASgIUg9zY3JpYmJsZUVuYW'
+    'JsZWQSSQoiZW5hYmxlX2lfbV9lX3BlcnNvbmFsaXplZF9sZWFybmluZxg/IAEoCFIdZW5hYmxl'
+    'SU1FUGVyc29uYWxpemVkTGVhcm5pbmc=');
 
 @$core.Deprecated('Use cupertinoTextFieldNamedBorderlessDescriptor instead')
 const CupertinoTextFieldNamedBorderless$json = {
@@ -801,6 +871,7 @@ const CupertinoTextFieldNamedBorderless$json = {
     {'1': 'cursor_width', '3': 43, '4': 1, '5': 1, '10': 'cursorWidth'},
     {'1': 'cursor_height', '3': 44, '4': 1, '5': 1, '10': 'cursorHeight'},
     {'1': 'cursor_opacity_animates', '3': 46, '4': 1, '5': 8, '10': 'cursorOpacityAnimates'},
+    {'1': 'cursor_color', '3': 47, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'cursorColor'},
     {'1': 'enable_interactive_selection', '3': 53, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
     {'1': 'autofill_hints', '3': 58, '4': 3, '5': 9, '10': 'autofillHints'},
     {'1': 'restoration_id', '3': 61, '4': 1, '5': 9, '10': 'restorationId'},
@@ -824,11 +895,12 @@ final $typed_data.Uint8List cupertinoTextFieldNamedBorderlessDescriptor = $conve
     'KAVSCW1heExlbmd0aBIYCgdlbmFibGVkGCogASgIUgdlbmFibGVkEiEKDGN1cnNvcl93aWR0aB'
     'grIAEoAVILY3Vyc29yV2lkdGgSIwoNY3Vyc29yX2hlaWdodBgsIAEoAVIMY3Vyc29ySGVpZ2h0'
     'EjYKF2N1cnNvcl9vcGFjaXR5X2FuaW1hdGVzGC4gASgIUhVjdXJzb3JPcGFjaXR5QW5pbWF0ZX'
-    'MSQAocZW5hYmxlX2ludGVyYWN0aXZlX3NlbGVjdGlvbhg1IAEoCFIaZW5hYmxlSW50ZXJhY3Rp'
-    'dmVTZWxlY3Rpb24SJQoOYXV0b2ZpbGxfaGludHMYOiADKAlSDWF1dG9maWxsSGludHMSJQoOcm'
-    'VzdG9yYXRpb25faWQYPSABKAlSDXJlc3RvcmF0aW9uSWQSKQoQc2NyaWJibGVfZW5hYmxlZBg+'
-    'IAEoCFIPc2NyaWJibGVFbmFibGVkEkkKImVuYWJsZV9pX21fZV9wZXJzb25hbGl6ZWRfbGVhcm'
-    '5pbmcYPyABKAhSHWVuYWJsZUlNRVBlcnNvbmFsaXplZExlYXJuaW5n');
+    'MSMwoMY3Vyc29yX2NvbG9yGC8gASgLMhAuQ29sb3JFeHByZXNzaW9uUgtjdXJzb3JDb2xvchJA'
+    'ChxlbmFibGVfaW50ZXJhY3RpdmVfc2VsZWN0aW9uGDUgASgIUhplbmFibGVJbnRlcmFjdGl2ZV'
+    'NlbGVjdGlvbhIlCg5hdXRvZmlsbF9oaW50cxg6IAMoCVINYXV0b2ZpbGxIaW50cxIlCg5yZXN0'
+    'b3JhdGlvbl9pZBg9IAEoCVINcmVzdG9yYXRpb25JZBIpChBzY3JpYmJsZV9lbmFibGVkGD4gAS'
+    'gIUg9zY3JpYmJsZUVuYWJsZWQSSQoiZW5hYmxlX2lfbV9lX3BlcnNvbmFsaXplZF9sZWFybmlu'
+    'Zxg/IAEoCFIdZW5hYmxlSU1FUGVyc29uYWxpemVkTGVhcm5pbmc=');
 
 @$core.Deprecated('Use cupertinoTextFormFieldRowDescriptor instead')
 const CupertinoTextFormFieldRow$json = {
@@ -851,6 +923,7 @@ const CupertinoTextFormFieldRow$json = {
     {'1': 'enabled', '3': 37, '4': 1, '5': 8, '10': 'enabled'},
     {'1': 'cursor_width', '3': 38, '4': 1, '5': 1, '10': 'cursorWidth'},
     {'1': 'cursor_height', '3': 39, '4': 1, '5': 1, '10': 'cursorHeight'},
+    {'1': 'cursor_color', '3': 40, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'cursorColor'},
     {'1': 'enable_interactive_selection', '3': 43, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
     {'1': 'autofill_hints', '3': 46, '4': 3, '5': 9, '10': 'autofillHints'},
     {'1': 'placeholder', '3': 48, '4': 1, '5': 9, '10': 'placeholder'},
@@ -870,9 +943,10 @@ final $typed_data.Uint8List cupertinoTextFormFieldRowDescriptor = $convert.base6
     'bmVzGBsgASgFUghtaW5MaW5lcxIYCgdleHBhbmRzGBwgASgIUgdleHBhbmRzEh0KCm1heF9sZW'
     '5ndGgYHSABKAVSCW1heExlbmd0aBIYCgdlbmFibGVkGCUgASgIUgdlbmFibGVkEiEKDGN1cnNv'
     'cl93aWR0aBgmIAEoAVILY3Vyc29yV2lkdGgSIwoNY3Vyc29yX2hlaWdodBgnIAEoAVIMY3Vyc2'
-    '9ySGVpZ2h0EkAKHGVuYWJsZV9pbnRlcmFjdGl2ZV9zZWxlY3Rpb24YKyABKAhSGmVuYWJsZUlu'
-    'dGVyYWN0aXZlU2VsZWN0aW9uEiUKDmF1dG9maWxsX2hpbnRzGC4gAygJUg1hdXRvZmlsbEhpbn'
-    'RzEiAKC3BsYWNlaG9sZGVyGDAgASgJUgtwbGFjZWhvbGRlcg==');
+    '9ySGVpZ2h0EjMKDGN1cnNvcl9jb2xvchgoIAEoCzIQLkNvbG9yRXhwcmVzc2lvblILY3Vyc29y'
+    'Q29sb3ISQAocZW5hYmxlX2ludGVyYWN0aXZlX3NlbGVjdGlvbhgrIAEoCFIaZW5hYmxlSW50ZX'
+    'JhY3RpdmVTZWxlY3Rpb24SJQoOYXV0b2ZpbGxfaGludHMYLiADKAlSDWF1dG9maWxsSGludHMS'
+    'IAoLcGxhY2Vob2xkZXIYMCABKAlSC3BsYWNlaG9sZGVy');
 
 @$core.Deprecated('Use cupertinoTextSelectionToolbarButtonDescriptor instead')
 const CupertinoTextSelectionToolbarButton$json = {
@@ -977,13 +1051,14 @@ const MaterialBackButton$json = {
   '1': 'MaterialBackButton',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
   ],
 };
 
 /// Descriptor for `MaterialBackButton`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialBackButtonDescriptor = $convert.base64Decode(
     'ChJNYXRlcmlhbEJhY2tCdXR0b24SJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb2'
-    '5SA2tleQ==');
+    '5SA2tleRImCgVjb2xvchgDIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIFY29sb3I=');
 
 @$core.Deprecated('Use materialBackButtonIconDescriptor instead')
 const MaterialBackButtonIcon$json = {
@@ -1003,13 +1078,14 @@ const MaterialCloseButton$json = {
   '1': 'MaterialCloseButton',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
   ],
 };
 
 /// Descriptor for `MaterialCloseButton`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialCloseButtonDescriptor = $convert.base64Decode(
     'ChNNYXRlcmlhbENsb3NlQnV0dG9uEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZXNzaW'
-    '9uUgNrZXk=');
+    '9uUgNrZXkSJgoFY29sb3IYAyABKAsyEC5Db2xvckV4cHJlc3Npb25SBWNvbG9y');
 
 @$core.Deprecated('Use materialCloseButtonIconDescriptor instead')
 const MaterialCloseButtonIcon$json = {
@@ -1086,7 +1162,11 @@ const MaterialActionChip$json = {
     {'1': 'press_elevation', '3': 8, '4': 1, '5': 1, '10': 'pressElevation'},
     {'1': 'tooltip', '3': 9, '4': 1, '5': 9, '10': 'tooltip'},
     {'1': 'autofocus', '3': 14, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'background_color', '3': 16, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'disabled_color', '3': 17, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
     {'1': 'elevation', '3': 21, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'shadow_color', '3': 22, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 23, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
   ],
 };
 
@@ -1096,7 +1176,12 @@ final $typed_data.Uint8List materialActionChipDescriptor = $convert.base64Decode
     '5SA2tleRIpCgZhdmF0YXIYAyABKAsyES5XaWRnZXRFeHByZXNzaW9uUgZhdmF0YXISJwoFbGFi'
     'ZWwYBCABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVsYWJlbBInCg9wcmVzc19lbGV2YXRpb24YCC'
     'ABKAFSDnByZXNzRWxldmF0aW9uEhgKB3Rvb2x0aXAYCSABKAlSB3Rvb2x0aXASHAoJYXV0b2Zv'
-    'Y3VzGA4gASgIUglhdXRvZm9jdXMSHAoJZWxldmF0aW9uGBUgASgBUgllbGV2YXRpb24=');
+    'Y3VzGA4gASgIUglhdXRvZm9jdXMSOwoQYmFja2dyb3VuZF9jb2xvchgQIAEoCzIQLkNvbG9yRX'
+    'hwcmVzc2lvblIPYmFja2dyb3VuZENvbG9yEjcKDmRpc2FibGVkX2NvbG9yGBEgASgLMhAuQ29s'
+    'b3JFeHByZXNzaW9uUg1kaXNhYmxlZENvbG9yEhwKCWVsZXZhdGlvbhgVIAEoAVIJZWxldmF0aW'
+    '9uEjMKDHNoYWRvd19jb2xvchgWIAEoCzIQLkNvbG9yRXhwcmVzc2lvblILc2hhZG93Q29sb3IS'
+    'PgoSc3VyZmFjZV90aW50X2NvbG9yGBcgASgLMhAuQ29sb3JFeHByZXNzaW9uUhBzdXJmYWNlVG'
+    'ludENvbG9y');
 
 @$core.Deprecated('Use materialActionChipNamedElevatedDescriptor instead')
 const MaterialActionChipNamedElevated$json = {
@@ -1108,7 +1193,11 @@ const MaterialActionChipNamedElevated$json = {
     {'1': 'press_elevation', '3': 8, '4': 1, '5': 1, '10': 'pressElevation'},
     {'1': 'tooltip', '3': 9, '4': 1, '5': 9, '10': 'tooltip'},
     {'1': 'autofocus', '3': 14, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'background_color', '3': 16, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'disabled_color', '3': 17, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
     {'1': 'elevation', '3': 21, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'shadow_color', '3': 22, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 23, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
   ],
 };
 
@@ -1118,8 +1207,12 @@ final $typed_data.Uint8List materialActionChipNamedElevatedDescriptor = $convert
     'JLZXlFeHByZXNzaW9uUgNrZXkSKQoGYXZhdGFyGAMgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIG'
     'YXZhdGFyEicKBWxhYmVsGAQgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFbGFiZWwSJwoPcHJlc3'
     'NfZWxldmF0aW9uGAggASgBUg5wcmVzc0VsZXZhdGlvbhIYCgd0b29sdGlwGAkgASgJUgd0b29s'
-    'dGlwEhwKCWF1dG9mb2N1cxgOIAEoCFIJYXV0b2ZvY3VzEhwKCWVsZXZhdGlvbhgVIAEoAVIJZW'
-    'xldmF0aW9u');
+    'dGlwEhwKCWF1dG9mb2N1cxgOIAEoCFIJYXV0b2ZvY3VzEjsKEGJhY2tncm91bmRfY29sb3IYEC'
+    'ABKAsyEC5Db2xvckV4cHJlc3Npb25SD2JhY2tncm91bmRDb2xvchI3Cg5kaXNhYmxlZF9jb2xv'
+    'chgRIAEoCzIQLkNvbG9yRXhwcmVzc2lvblINZGlzYWJsZWRDb2xvchIcCgllbGV2YXRpb24YFS'
+    'ABKAFSCWVsZXZhdGlvbhIzCgxzaGFkb3dfY29sb3IYFiABKAsyEC5Db2xvckV4cHJlc3Npb25S'
+    'C3NoYWRvd0NvbG9yEj4KEnN1cmZhY2VfdGludF9jb2xvchgXIAEoCzIQLkNvbG9yRXhwcmVzc2'
+    'lvblIQc3VyZmFjZVRpbnRDb2xvcg==');
 
 @$core.Deprecated('Use materialMaterialAppDescriptor instead')
 const MaterialMaterialApp$json = {
@@ -1129,6 +1222,7 @@ const MaterialMaterialApp$json = {
     {'1': 'home', '3': 5, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'home'},
     {'1': 'initial_route', '3': 7, '4': 1, '5': 9, '10': 'initialRoute'},
     {'1': 'title', '3': 13, '4': 1, '5': 9, '10': 'title'},
+    {'1': 'color', '3': 15, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'theme_animation_duration', '3': 21, '4': 1, '5': 11, '6': '.DurationExpression', '10': 'themeAnimationDuration'},
     {'1': 'debug_show_material_grid', '3': 28, '4': 1, '5': 8, '10': 'debugShowMaterialGrid'},
     {'1': 'show_performance_overlay', '3': 29, '4': 1, '5': 8, '10': 'showPerformanceOverlay'},
@@ -1144,17 +1238,17 @@ const MaterialMaterialApp$json = {
 final $typed_data.Uint8List materialMaterialAppDescriptor = $convert.base64Decode(
     'ChNNYXRlcmlhbE1hdGVyaWFsQXBwEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZXNzaW'
     '9uUgNrZXkSJQoEaG9tZRgFIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBGhvbWUSIwoNaW5pdGlh'
-    'bF9yb3V0ZRgHIAEoCVIMaW5pdGlhbFJvdXRlEhQKBXRpdGxlGA0gASgJUgV0aXRsZRJNChh0aG'
-    'VtZV9hbmltYXRpb25fZHVyYXRpb24YFSABKAsyEy5EdXJhdGlvbkV4cHJlc3Npb25SFnRoZW1l'
-    'QW5pbWF0aW9uRHVyYXRpb24SNwoYZGVidWdfc2hvd19tYXRlcmlhbF9ncmlkGBwgASgIUhVkZW'
-    'J1Z1Nob3dNYXRlcmlhbEdyaWQSOAoYc2hvd19wZXJmb3JtYW5jZV9vdmVybGF5GB0gASgIUhZz'
-    'aG93UGVyZm9ybWFuY2VPdmVybGF5EkcKIGNoZWNrZXJib2FyZF9yYXN0ZXJfY2FjaGVfaW1hZ2'
-    'VzGB4gASgIUh1jaGVja2VyYm9hcmRSYXN0ZXJDYWNoZUltYWdlcxJCCh1jaGVja2VyYm9hcmRf'
-    'b2Zmc2NyZWVuX2xheWVycxgfIAEoCFIbY2hlY2tlcmJvYXJkT2Zmc2NyZWVuTGF5ZXJzEjYKF3'
-    'Nob3dfc2VtYW50aWNzX2RlYnVnZ2VyGCAgASgIUhVzaG93U2VtYW50aWNzRGVidWdnZXISQgoe'
-    'ZGVidWdfc2hvd19jaGVja2VkX21vZGVfYmFubmVyGCEgASgIUhpkZWJ1Z1Nob3dDaGVja2VkTW'
-    '9kZUJhbm5lchIwChRyZXN0b3JhdGlvbl9zY29wZV9pZBgkIAEoCVIScmVzdG9yYXRpb25TY29w'
-    'ZUlk');
+    'bF9yb3V0ZRgHIAEoCVIMaW5pdGlhbFJvdXRlEhQKBXRpdGxlGA0gASgJUgV0aXRsZRImCgVjb2'
+    'xvchgPIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIFY29sb3ISTQoYdGhlbWVfYW5pbWF0aW9uX2R1'
+    'cmF0aW9uGBUgASgLMhMuRHVyYXRpb25FeHByZXNzaW9uUhZ0aGVtZUFuaW1hdGlvbkR1cmF0aW'
+    '9uEjcKGGRlYnVnX3Nob3dfbWF0ZXJpYWxfZ3JpZBgcIAEoCFIVZGVidWdTaG93TWF0ZXJpYWxH'
+    'cmlkEjgKGHNob3dfcGVyZm9ybWFuY2Vfb3ZlcmxheRgdIAEoCFIWc2hvd1BlcmZvcm1hbmNlT3'
+    'ZlcmxheRJHCiBjaGVja2VyYm9hcmRfcmFzdGVyX2NhY2hlX2ltYWdlcxgeIAEoCFIdY2hlY2tl'
+    'cmJvYXJkUmFzdGVyQ2FjaGVJbWFnZXMSQgodY2hlY2tlcmJvYXJkX29mZnNjcmVlbl9sYXllcn'
+    'MYHyABKAhSG2NoZWNrZXJib2FyZE9mZnNjcmVlbkxheWVycxI2ChdzaG93X3NlbWFudGljc19k'
+    'ZWJ1Z2dlchggIAEoCFIVc2hvd1NlbWFudGljc0RlYnVnZ2VyEkIKHmRlYnVnX3Nob3dfY2hlY2'
+    'tlZF9tb2RlX2Jhbm5lchghIAEoCFIaZGVidWdTaG93Q2hlY2tlZE1vZGVCYW5uZXISMAoUcmVz'
+    'dG9yYXRpb25fc2NvcGVfaWQYJCABKAlSEnJlc3RvcmF0aW9uU2NvcGVJZA==');
 
 @$core.Deprecated('Use materialMaterialAppNamedRouterDescriptor instead')
 const MaterialMaterialAppNamedRouter$json = {
@@ -1162,6 +1256,7 @@ const MaterialMaterialAppNamedRouter$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'title', '3': 10, '4': 1, '5': 9, '10': 'title'},
+    {'1': 'color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'theme_animation_duration', '3': 18, '4': 1, '5': 11, '6': '.DurationExpression', '10': 'themeAnimationDuration'},
     {'1': 'debug_show_material_grid', '3': 25, '4': 1, '5': 8, '10': 'debugShowMaterialGrid'},
     {'1': 'show_performance_overlay', '3': 26, '4': 1, '5': 8, '10': 'showPerformanceOverlay'},
@@ -1176,16 +1271,17 @@ const MaterialMaterialAppNamedRouter$json = {
 /// Descriptor for `MaterialMaterialAppNamedRouter`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialMaterialAppNamedRouterDescriptor = $convert.base64Decode(
     'Ch5NYXRlcmlhbE1hdGVyaWFsQXBwTmFtZWRSb3V0ZXISJwoDa2V5GAIgASgLMhUuRmx1dHRlck'
-    'tleUV4cHJlc3Npb25SA2tleRIUCgV0aXRsZRgKIAEoCVIFdGl0bGUSTQoYdGhlbWVfYW5pbWF0'
-    'aW9uX2R1cmF0aW9uGBIgASgLMhMuRHVyYXRpb25FeHByZXNzaW9uUhZ0aGVtZUFuaW1hdGlvbk'
-    'R1cmF0aW9uEjcKGGRlYnVnX3Nob3dfbWF0ZXJpYWxfZ3JpZBgZIAEoCFIVZGVidWdTaG93TWF0'
-    'ZXJpYWxHcmlkEjgKGHNob3dfcGVyZm9ybWFuY2Vfb3ZlcmxheRgaIAEoCFIWc2hvd1BlcmZvcm'
-    '1hbmNlT3ZlcmxheRJHCiBjaGVja2VyYm9hcmRfcmFzdGVyX2NhY2hlX2ltYWdlcxgbIAEoCFId'
-    'Y2hlY2tlcmJvYXJkUmFzdGVyQ2FjaGVJbWFnZXMSQgodY2hlY2tlcmJvYXJkX29mZnNjcmVlbl'
-    '9sYXllcnMYHCABKAhSG2NoZWNrZXJib2FyZE9mZnNjcmVlbkxheWVycxI2ChdzaG93X3NlbWFu'
-    'dGljc19kZWJ1Z2dlchgdIAEoCFIVc2hvd1NlbWFudGljc0RlYnVnZ2VyEkIKHmRlYnVnX3Nob3'
-    'dfY2hlY2tlZF9tb2RlX2Jhbm5lchgeIAEoCFIaZGVidWdTaG93Q2hlY2tlZE1vZGVCYW5uZXIS'
-    'MAoUcmVzdG9yYXRpb25fc2NvcGVfaWQYISABKAlSEnJlc3RvcmF0aW9uU2NvcGVJZA==');
+    'tleUV4cHJlc3Npb25SA2tleRIUCgV0aXRsZRgKIAEoCVIFdGl0bGUSJgoFY29sb3IYDCABKAsy'
+    'EC5Db2xvckV4cHJlc3Npb25SBWNvbG9yEk0KGHRoZW1lX2FuaW1hdGlvbl9kdXJhdGlvbhgSIA'
+    'EoCzITLkR1cmF0aW9uRXhwcmVzc2lvblIWdGhlbWVBbmltYXRpb25EdXJhdGlvbhI3ChhkZWJ1'
+    'Z19zaG93X21hdGVyaWFsX2dyaWQYGSABKAhSFWRlYnVnU2hvd01hdGVyaWFsR3JpZBI4ChhzaG'
+    '93X3BlcmZvcm1hbmNlX292ZXJsYXkYGiABKAhSFnNob3dQZXJmb3JtYW5jZU92ZXJsYXkSRwog'
+    'Y2hlY2tlcmJvYXJkX3Jhc3Rlcl9jYWNoZV9pbWFnZXMYGyABKAhSHWNoZWNrZXJib2FyZFJhc3'
+    'RlckNhY2hlSW1hZ2VzEkIKHWNoZWNrZXJib2FyZF9vZmZzY3JlZW5fbGF5ZXJzGBwgASgIUhtj'
+    'aGVja2VyYm9hcmRPZmZzY3JlZW5MYXllcnMSNgoXc2hvd19zZW1hbnRpY3NfZGVidWdnZXIYHS'
+    'ABKAhSFXNob3dTZW1hbnRpY3NEZWJ1Z2dlchJCCh5kZWJ1Z19zaG93X2NoZWNrZWRfbW9kZV9i'
+    'YW5uZXIYHiABKAhSGmRlYnVnU2hvd0NoZWNrZWRNb2RlQmFubmVyEjAKFHJlc3RvcmF0aW9uX3'
+    'Njb3BlX2lkGCEgASgJUhJyZXN0b3JhdGlvblNjb3BlSWQ=');
 
 @$core.Deprecated('Use materialAppBarDescriptor instead')
 const MaterialAppBar$json = {
@@ -1199,6 +1295,10 @@ const MaterialAppBar$json = {
     {'1': 'flexible_space', '3': 7, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'flexibleSpace'},
     {'1': 'elevation', '3': 9, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'scrolled_under_elevation', '3': 10, '4': 1, '5': 1, '10': 'scrolledUnderElevation'},
+    {'1': 'shadow_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 13, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
+    {'1': 'background_color', '3': 15, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'foreground_color', '3': 16, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'foregroundColor'},
     {'1': 'primary', '3': 19, '4': 1, '5': 8, '10': 'primary'},
     {'1': 'center_title', '3': 20, '4': 1, '5': 8, '10': 'centerTitle'},
     {'1': 'exclude_header_semantics', '3': 21, '4': 1, '5': 8, '10': 'excludeHeaderSemantics'},
@@ -1220,13 +1320,18 @@ final $typed_data.Uint8List materialAppBarDescriptor = $convert.base64Decode(
     'KAsyES5XaWRnZXRFeHByZXNzaW9uUgdhY3Rpb25zEjgKDmZsZXhpYmxlX3NwYWNlGAcgASgLMh'
     'EuV2lkZ2V0RXhwcmVzc2lvblINZmxleGlibGVTcGFjZRIcCgllbGV2YXRpb24YCSABKAFSCWVs'
     'ZXZhdGlvbhI4ChhzY3JvbGxlZF91bmRlcl9lbGV2YXRpb24YCiABKAFSFnNjcm9sbGVkVW5kZX'
-    'JFbGV2YXRpb24SGAoHcHJpbWFyeRgTIAEoCFIHcHJpbWFyeRIhCgxjZW50ZXJfdGl0bGUYFCAB'
-    'KAhSC2NlbnRlclRpdGxlEjgKGGV4Y2x1ZGVfaGVhZGVyX3NlbWFudGljcxgVIAEoCFIWZXhjbH'
-    'VkZUhlYWRlclNlbWFudGljcxIjCg10aXRsZV9zcGFjaW5nGBYgASgBUgx0aXRsZVNwYWNpbmcS'
-    'JwoPdG9vbGJhcl9vcGFjaXR5GBcgASgBUg50b29sYmFyT3BhY2l0eRIlCg5ib3R0b21fb3BhY2'
-    'l0eRgYIAEoAVINYm90dG9tT3BhY2l0eRIlCg50b29sYmFyX2hlaWdodBgZIAEoAVINdG9vbGJh'
-    'ckhlaWdodBIjCg1sZWFkaW5nX3dpZHRoGBogASgBUgxsZWFkaW5nV2lkdGgSPgobZm9yY2VfbW'
-    'F0ZXJpYWxfdHJhbnNwYXJlbmN5GB4gASgIUhlmb3JjZU1hdGVyaWFsVHJhbnNwYXJlbmN5');
+    'JFbGV2YXRpb24SMwoMc2hhZG93X2NvbG9yGAwgASgLMhAuQ29sb3JFeHByZXNzaW9uUgtzaGFk'
+    'b3dDb2xvchI+ChJzdXJmYWNlX3RpbnRfY29sb3IYDSABKAsyEC5Db2xvckV4cHJlc3Npb25SEH'
+    'N1cmZhY2VUaW50Q29sb3ISOwoQYmFja2dyb3VuZF9jb2xvchgPIAEoCzIQLkNvbG9yRXhwcmVz'
+    'c2lvblIPYmFja2dyb3VuZENvbG9yEjsKEGZvcmVncm91bmRfY29sb3IYECABKAsyEC5Db2xvck'
+    'V4cHJlc3Npb25SD2ZvcmVncm91bmRDb2xvchIYCgdwcmltYXJ5GBMgASgIUgdwcmltYXJ5EiEK'
+    'DGNlbnRlcl90aXRsZRgUIAEoCFILY2VudGVyVGl0bGUSOAoYZXhjbHVkZV9oZWFkZXJfc2VtYW'
+    '50aWNzGBUgASgIUhZleGNsdWRlSGVhZGVyU2VtYW50aWNzEiMKDXRpdGxlX3NwYWNpbmcYFiAB'
+    'KAFSDHRpdGxlU3BhY2luZxInCg90b29sYmFyX29wYWNpdHkYFyABKAFSDnRvb2xiYXJPcGFjaX'
+    'R5EiUKDmJvdHRvbV9vcGFjaXR5GBggASgBUg1ib3R0b21PcGFjaXR5EiUKDnRvb2xiYXJfaGVp'
+    'Z2h0GBkgASgBUg10b29sYmFySGVpZ2h0EiMKDWxlYWRpbmdfd2lkdGgYGiABKAFSDGxlYWRpbm'
+    'dXaWR0aBI+Chtmb3JjZV9tYXRlcmlhbF90cmFuc3BhcmVuY3kYHiABKAhSGWZvcmNlTWF0ZXJp'
+    'YWxUcmFuc3BhcmVuY3k=');
 
 @$core.Deprecated('Use materialSliverAppBarDescriptor instead')
 const MaterialSliverAppBar$json = {
@@ -1240,7 +1345,11 @@ const MaterialSliverAppBar$json = {
     {'1': 'flexible_space', '3': 7, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'flexibleSpace'},
     {'1': 'elevation', '3': 9, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'scrolled_under_elevation', '3': 10, '4': 1, '5': 1, '10': 'scrolledUnderElevation'},
+    {'1': 'shadow_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
     {'1': 'force_elevated', '3': 13, '4': 1, '5': 8, '10': 'forceElevated'},
+    {'1': 'background_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'foreground_color', '3': 15, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'foregroundColor'},
     {'1': 'primary', '3': 18, '4': 1, '5': 8, '10': 'primary'},
     {'1': 'center_title', '3': 19, '4': 1, '5': 8, '10': 'centerTitle'},
     {'1': 'exclude_header_semantics', '3': 20, '4': 1, '5': 8, '10': 'excludeHeaderSemantics'},
@@ -1267,17 +1376,21 @@ final $typed_data.Uint8List materialSliverAppBarDescriptor = $convert.base64Deco
     'bnMYBiADKAsyES5XaWRnZXRFeHByZXNzaW9uUgdhY3Rpb25zEjgKDmZsZXhpYmxlX3NwYWNlGA'
     'cgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblINZmxleGlibGVTcGFjZRIcCgllbGV2YXRpb24YCSAB'
     'KAFSCWVsZXZhdGlvbhI4ChhzY3JvbGxlZF91bmRlcl9lbGV2YXRpb24YCiABKAFSFnNjcm9sbG'
-    'VkVW5kZXJFbGV2YXRpb24SJQoOZm9yY2VfZWxldmF0ZWQYDSABKAhSDWZvcmNlRWxldmF0ZWQS'
-    'GAoHcHJpbWFyeRgSIAEoCFIHcHJpbWFyeRIhCgxjZW50ZXJfdGl0bGUYEyABKAhSC2NlbnRlcl'
-    'RpdGxlEjgKGGV4Y2x1ZGVfaGVhZGVyX3NlbWFudGljcxgUIAEoCFIWZXhjbHVkZUhlYWRlclNl'
-    'bWFudGljcxIjCg10aXRsZV9zcGFjaW5nGBUgASgBUgx0aXRsZVNwYWNpbmcSKQoQY29sbGFwc2'
-    'VkX2hlaWdodBgWIAEoAVIPY29sbGFwc2VkSGVpZ2h0EicKD2V4cGFuZGVkX2hlaWdodBgXIAEo'
-    'AVIOZXhwYW5kZWRIZWlnaHQSGgoIZmxvYXRpbmcYGCABKAhSCGZsb2F0aW5nEhYKBnBpbm5lZB'
-    'gZIAEoCFIGcGlubmVkEhIKBHNuYXAYGiABKAhSBHNuYXASGAoHc3RyZXRjaBgbIAEoCFIHc3Ry'
-    'ZXRjaBI0ChZzdHJldGNoX3RyaWdnZXJfb2Zmc2V0GBwgASgBUhRzdHJldGNoVHJpZ2dlck9mZn'
-    'NldBIlCg50b29sYmFyX2hlaWdodBgfIAEoAVINdG9vbGJhckhlaWdodBIjCg1sZWFkaW5nX3dp'
-    'ZHRoGCAgASgBUgxsZWFkaW5nV2lkdGgSPgobZm9yY2VfbWF0ZXJpYWxfdHJhbnNwYXJlbmN5GC'
-    'QgASgIUhlmb3JjZU1hdGVyaWFsVHJhbnNwYXJlbmN5');
+    'VkVW5kZXJFbGV2YXRpb24SMwoMc2hhZG93X2NvbG9yGAsgASgLMhAuQ29sb3JFeHByZXNzaW9u'
+    'UgtzaGFkb3dDb2xvchI+ChJzdXJmYWNlX3RpbnRfY29sb3IYDCABKAsyEC5Db2xvckV4cHJlc3'
+    'Npb25SEHN1cmZhY2VUaW50Q29sb3ISJQoOZm9yY2VfZWxldmF0ZWQYDSABKAhSDWZvcmNlRWxl'
+    'dmF0ZWQSOwoQYmFja2dyb3VuZF9jb2xvchgOIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIPYmFja2'
+    'dyb3VuZENvbG9yEjsKEGZvcmVncm91bmRfY29sb3IYDyABKAsyEC5Db2xvckV4cHJlc3Npb25S'
+    'D2ZvcmVncm91bmRDb2xvchIYCgdwcmltYXJ5GBIgASgIUgdwcmltYXJ5EiEKDGNlbnRlcl90aX'
+    'RsZRgTIAEoCFILY2VudGVyVGl0bGUSOAoYZXhjbHVkZV9oZWFkZXJfc2VtYW50aWNzGBQgASgI'
+    'UhZleGNsdWRlSGVhZGVyU2VtYW50aWNzEiMKDXRpdGxlX3NwYWNpbmcYFSABKAFSDHRpdGxlU3'
+    'BhY2luZxIpChBjb2xsYXBzZWRfaGVpZ2h0GBYgASgBUg9jb2xsYXBzZWRIZWlnaHQSJwoPZXhw'
+    'YW5kZWRfaGVpZ2h0GBcgASgBUg5leHBhbmRlZEhlaWdodBIaCghmbG9hdGluZxgYIAEoCFIIZm'
+    'xvYXRpbmcSFgoGcGlubmVkGBkgASgIUgZwaW5uZWQSEgoEc25hcBgaIAEoCFIEc25hcBIYCgdz'
+    'dHJldGNoGBsgASgIUgdzdHJldGNoEjQKFnN0cmV0Y2hfdHJpZ2dlcl9vZmZzZXQYHCABKAFSFH'
+    'N0cmV0Y2hUcmlnZ2VyT2Zmc2V0EiUKDnRvb2xiYXJfaGVpZ2h0GB8gASgBUg10b29sYmFySGVp'
+    'Z2h0EiMKDWxlYWRpbmdfd2lkdGgYICABKAFSDGxlYWRpbmdXaWR0aBI+Chtmb3JjZV9tYXRlcm'
+    'lhbF90cmFuc3BhcmVuY3kYJCABKAhSGWZvcmNlTWF0ZXJpYWxUcmFuc3BhcmVuY3k=');
 
 @$core.Deprecated('Use materialSliverAppBarNamedMediumDescriptor instead')
 const MaterialSliverAppBarNamedMedium$json = {
@@ -1291,7 +1404,11 @@ const MaterialSliverAppBarNamedMedium$json = {
     {'1': 'flexible_space', '3': 7, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'flexibleSpace'},
     {'1': 'elevation', '3': 9, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'scrolled_under_elevation', '3': 10, '4': 1, '5': 1, '10': 'scrolledUnderElevation'},
+    {'1': 'shadow_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
     {'1': 'force_elevated', '3': 13, '4': 1, '5': 8, '10': 'forceElevated'},
+    {'1': 'background_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'foreground_color', '3': 15, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'foregroundColor'},
     {'1': 'primary', '3': 18, '4': 1, '5': 8, '10': 'primary'},
     {'1': 'center_title', '3': 19, '4': 1, '5': 8, '10': 'centerTitle'},
     {'1': 'exclude_header_semantics', '3': 20, '4': 1, '5': 8, '10': 'excludeHeaderSemantics'},
@@ -1318,17 +1435,22 @@ final $typed_data.Uint8List materialSliverAppBarNamedMediumDescriptor = $convert
     'bGUSKwoHYWN0aW9ucxgGIAMoCzIRLldpZGdldEV4cHJlc3Npb25SB2FjdGlvbnMSOAoOZmxleG'
     'libGVfc3BhY2UYByABKAsyES5XaWRnZXRFeHByZXNzaW9uUg1mbGV4aWJsZVNwYWNlEhwKCWVs'
     'ZXZhdGlvbhgJIAEoAVIJZWxldmF0aW9uEjgKGHNjcm9sbGVkX3VuZGVyX2VsZXZhdGlvbhgKIA'
-    'EoAVIWc2Nyb2xsZWRVbmRlckVsZXZhdGlvbhIlCg5mb3JjZV9lbGV2YXRlZBgNIAEoCFINZm9y'
-    'Y2VFbGV2YXRlZBIYCgdwcmltYXJ5GBIgASgIUgdwcmltYXJ5EiEKDGNlbnRlcl90aXRsZRgTIA'
-    'EoCFILY2VudGVyVGl0bGUSOAoYZXhjbHVkZV9oZWFkZXJfc2VtYW50aWNzGBQgASgIUhZleGNs'
-    'dWRlSGVhZGVyU2VtYW50aWNzEiMKDXRpdGxlX3NwYWNpbmcYFSABKAFSDHRpdGxlU3BhY2luZx'
-    'IpChBjb2xsYXBzZWRfaGVpZ2h0GBYgASgBUg9jb2xsYXBzZWRIZWlnaHQSJwoPZXhwYW5kZWRf'
-    'aGVpZ2h0GBcgASgBUg5leHBhbmRlZEhlaWdodBIaCghmbG9hdGluZxgYIAEoCFIIZmxvYXRpbm'
-    'cSFgoGcGlubmVkGBkgASgIUgZwaW5uZWQSEgoEc25hcBgaIAEoCFIEc25hcBIYCgdzdHJldGNo'
-    'GBsgASgIUgdzdHJldGNoEjQKFnN0cmV0Y2hfdHJpZ2dlcl9vZmZzZXQYHCABKAFSFHN0cmV0Y2'
-    'hUcmlnZ2VyT2Zmc2V0EiUKDnRvb2xiYXJfaGVpZ2h0GB8gASgBUg10b29sYmFySGVpZ2h0EiMK'
-    'DWxlYWRpbmdfd2lkdGgYICABKAFSDGxlYWRpbmdXaWR0aBI+Chtmb3JjZV9tYXRlcmlhbF90cm'
-    'Fuc3BhcmVuY3kYJCABKAhSGWZvcmNlTWF0ZXJpYWxUcmFuc3BhcmVuY3k=');
+    'EoAVIWc2Nyb2xsZWRVbmRlckVsZXZhdGlvbhIzCgxzaGFkb3dfY29sb3IYCyABKAsyEC5Db2xv'
+    'ckV4cHJlc3Npb25SC3NoYWRvd0NvbG9yEj4KEnN1cmZhY2VfdGludF9jb2xvchgMIAEoCzIQLk'
+    'NvbG9yRXhwcmVzc2lvblIQc3VyZmFjZVRpbnRDb2xvchIlCg5mb3JjZV9lbGV2YXRlZBgNIAEo'
+    'CFINZm9yY2VFbGV2YXRlZBI7ChBiYWNrZ3JvdW5kX2NvbG9yGA4gASgLMhAuQ29sb3JFeHByZX'
+    'NzaW9uUg9iYWNrZ3JvdW5kQ29sb3ISOwoQZm9yZWdyb3VuZF9jb2xvchgPIAEoCzIQLkNvbG9y'
+    'RXhwcmVzc2lvblIPZm9yZWdyb3VuZENvbG9yEhgKB3ByaW1hcnkYEiABKAhSB3ByaW1hcnkSIQ'
+    'oMY2VudGVyX3RpdGxlGBMgASgIUgtjZW50ZXJUaXRsZRI4ChhleGNsdWRlX2hlYWRlcl9zZW1h'
+    'bnRpY3MYFCABKAhSFmV4Y2x1ZGVIZWFkZXJTZW1hbnRpY3MSIwoNdGl0bGVfc3BhY2luZxgVIA'
+    'EoAVIMdGl0bGVTcGFjaW5nEikKEGNvbGxhcHNlZF9oZWlnaHQYFiABKAFSD2NvbGxhcHNlZEhl'
+    'aWdodBInCg9leHBhbmRlZF9oZWlnaHQYFyABKAFSDmV4cGFuZGVkSGVpZ2h0EhoKCGZsb2F0aW'
+    '5nGBggASgIUghmbG9hdGluZxIWCgZwaW5uZWQYGSABKAhSBnBpbm5lZBISCgRzbmFwGBogASgI'
+    'UgRzbmFwEhgKB3N0cmV0Y2gYGyABKAhSB3N0cmV0Y2gSNAoWc3RyZXRjaF90cmlnZ2VyX29mZn'
+    'NldBgcIAEoAVIUc3RyZXRjaFRyaWdnZXJPZmZzZXQSJQoOdG9vbGJhcl9oZWlnaHQYHyABKAFS'
+    'DXRvb2xiYXJIZWlnaHQSIwoNbGVhZGluZ193aWR0aBggIAEoAVIMbGVhZGluZ1dpZHRoEj4KG2'
+    'ZvcmNlX21hdGVyaWFsX3RyYW5zcGFyZW5jeRgkIAEoCFIZZm9yY2VNYXRlcmlhbFRyYW5zcGFy'
+    'ZW5jeQ==');
 
 @$core.Deprecated('Use materialSliverAppBarNamedLargeDescriptor instead')
 const MaterialSliverAppBarNamedLarge$json = {
@@ -1342,7 +1464,11 @@ const MaterialSliverAppBarNamedLarge$json = {
     {'1': 'flexible_space', '3': 7, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'flexibleSpace'},
     {'1': 'elevation', '3': 9, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'scrolled_under_elevation', '3': 10, '4': 1, '5': 1, '10': 'scrolledUnderElevation'},
+    {'1': 'shadow_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
     {'1': 'force_elevated', '3': 13, '4': 1, '5': 8, '10': 'forceElevated'},
+    {'1': 'background_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'foreground_color', '3': 15, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'foregroundColor'},
     {'1': 'primary', '3': 18, '4': 1, '5': 8, '10': 'primary'},
     {'1': 'center_title', '3': 19, '4': 1, '5': 8, '10': 'centerTitle'},
     {'1': 'exclude_header_semantics', '3': 20, '4': 1, '5': 8, '10': 'excludeHeaderSemantics'},
@@ -1369,23 +1495,30 @@ final $typed_data.Uint8List materialSliverAppBarNamedLargeDescriptor = $convert.
     'ZRIrCgdhY3Rpb25zGAYgAygLMhEuV2lkZ2V0RXhwcmVzc2lvblIHYWN0aW9ucxI4Cg5mbGV4aW'
     'JsZV9zcGFjZRgHIAEoCzIRLldpZGdldEV4cHJlc3Npb25SDWZsZXhpYmxlU3BhY2USHAoJZWxl'
     'dmF0aW9uGAkgASgBUgllbGV2YXRpb24SOAoYc2Nyb2xsZWRfdW5kZXJfZWxldmF0aW9uGAogAS'
-    'gBUhZzY3JvbGxlZFVuZGVyRWxldmF0aW9uEiUKDmZvcmNlX2VsZXZhdGVkGA0gASgIUg1mb3Jj'
-    'ZUVsZXZhdGVkEhgKB3ByaW1hcnkYEiABKAhSB3ByaW1hcnkSIQoMY2VudGVyX3RpdGxlGBMgAS'
-    'gIUgtjZW50ZXJUaXRsZRI4ChhleGNsdWRlX2hlYWRlcl9zZW1hbnRpY3MYFCABKAhSFmV4Y2x1'
-    'ZGVIZWFkZXJTZW1hbnRpY3MSIwoNdGl0bGVfc3BhY2luZxgVIAEoAVIMdGl0bGVTcGFjaW5nEi'
-    'kKEGNvbGxhcHNlZF9oZWlnaHQYFiABKAFSD2NvbGxhcHNlZEhlaWdodBInCg9leHBhbmRlZF9o'
-    'ZWlnaHQYFyABKAFSDmV4cGFuZGVkSGVpZ2h0EhoKCGZsb2F0aW5nGBggASgIUghmbG9hdGluZx'
-    'IWCgZwaW5uZWQYGSABKAhSBnBpbm5lZBISCgRzbmFwGBogASgIUgRzbmFwEhgKB3N0cmV0Y2gY'
-    'GyABKAhSB3N0cmV0Y2gSNAoWc3RyZXRjaF90cmlnZ2VyX29mZnNldBgcIAEoAVIUc3RyZXRjaF'
-    'RyaWdnZXJPZmZzZXQSJQoOdG9vbGJhcl9oZWlnaHQYHyABKAFSDXRvb2xiYXJIZWlnaHQSIwoN'
-    'bGVhZGluZ193aWR0aBggIAEoAVIMbGVhZGluZ1dpZHRoEj4KG2ZvcmNlX21hdGVyaWFsX3RyYW'
-    '5zcGFyZW5jeRgkIAEoCFIZZm9yY2VNYXRlcmlhbFRyYW5zcGFyZW5jeQ==');
+    'gBUhZzY3JvbGxlZFVuZGVyRWxldmF0aW9uEjMKDHNoYWRvd19jb2xvchgLIAEoCzIQLkNvbG9y'
+    'RXhwcmVzc2lvblILc2hhZG93Q29sb3ISPgoSc3VyZmFjZV90aW50X2NvbG9yGAwgASgLMhAuQ2'
+    '9sb3JFeHByZXNzaW9uUhBzdXJmYWNlVGludENvbG9yEiUKDmZvcmNlX2VsZXZhdGVkGA0gASgI'
+    'Ug1mb3JjZUVsZXZhdGVkEjsKEGJhY2tncm91bmRfY29sb3IYDiABKAsyEC5Db2xvckV4cHJlc3'
+    'Npb25SD2JhY2tncm91bmRDb2xvchI7ChBmb3JlZ3JvdW5kX2NvbG9yGA8gASgLMhAuQ29sb3JF'
+    'eHByZXNzaW9uUg9mb3JlZ3JvdW5kQ29sb3ISGAoHcHJpbWFyeRgSIAEoCFIHcHJpbWFyeRIhCg'
+    'xjZW50ZXJfdGl0bGUYEyABKAhSC2NlbnRlclRpdGxlEjgKGGV4Y2x1ZGVfaGVhZGVyX3NlbWFu'
+    'dGljcxgUIAEoCFIWZXhjbHVkZUhlYWRlclNlbWFudGljcxIjCg10aXRsZV9zcGFjaW5nGBUgAS'
+    'gBUgx0aXRsZVNwYWNpbmcSKQoQY29sbGFwc2VkX2hlaWdodBgWIAEoAVIPY29sbGFwc2VkSGVp'
+    'Z2h0EicKD2V4cGFuZGVkX2hlaWdodBgXIAEoAVIOZXhwYW5kZWRIZWlnaHQSGgoIZmxvYXRpbm'
+    'cYGCABKAhSCGZsb2F0aW5nEhYKBnBpbm5lZBgZIAEoCFIGcGlubmVkEhIKBHNuYXAYGiABKAhS'
+    'BHNuYXASGAoHc3RyZXRjaBgbIAEoCFIHc3RyZXRjaBI0ChZzdHJldGNoX3RyaWdnZXJfb2Zmc2'
+    'V0GBwgASgBUhRzdHJldGNoVHJpZ2dlck9mZnNldBIlCg50b29sYmFyX2hlaWdodBgfIAEoAVIN'
+    'dG9vbGJhckhlaWdodBIjCg1sZWFkaW5nX3dpZHRoGCAgASgBUgxsZWFkaW5nV2lkdGgSPgobZm'
+    '9yY2VfbWF0ZXJpYWxfdHJhbnNwYXJlbmN5GCQgASgIUhlmb3JjZU1hdGVyaWFsVHJhbnNwYXJl'
+    'bmN5');
 
 @$core.Deprecated('Use materialBadgeDescriptor instead')
 const MaterialBadge$json = {
   '1': 'MaterialBadge',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'background_color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'text_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'textColor'},
     {'1': 'small_size', '3': 5, '4': 1, '5': 1, '10': 'smallSize'},
     {'1': 'large_size', '3': 6, '4': 1, '5': 1, '10': 'largeSize'},
     {'1': 'label', '3': 11, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'label'},
@@ -1397,16 +1530,20 @@ const MaterialBadge$json = {
 /// Descriptor for `MaterialBadge`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialBadgeDescriptor = $convert.base64Decode(
     'Cg1NYXRlcmlhbEJhZGdlEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZXNzaW9uUgNrZX'
-    'kSHQoKc21hbGxfc2l6ZRgFIAEoAVIJc21hbGxTaXplEh0KCmxhcmdlX3NpemUYBiABKAFSCWxh'
-    'cmdlU2l6ZRInCgVsYWJlbBgLIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBWxhYmVsEigKEGlzX2'
-    'xhYmVsX3Zpc2libGUYDCABKAhSDmlzTGFiZWxWaXNpYmxlEicKBWNoaWxkGA0gASgLMhEuV2lk'
-    'Z2V0RXhwcmVzc2lvblIFY2hpbGQ=');
+    'kSOwoQYmFja2dyb3VuZF9jb2xvchgDIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIPYmFja2dyb3Vu'
+    'ZENvbG9yEi8KCnRleHRfY29sb3IYBCABKAsyEC5Db2xvckV4cHJlc3Npb25SCXRleHRDb2xvch'
+    'IdCgpzbWFsbF9zaXplGAUgASgBUglzbWFsbFNpemUSHQoKbGFyZ2Vfc2l6ZRgGIAEoAVIJbGFy'
+    'Z2VTaXplEicKBWxhYmVsGAsgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFbGFiZWwSKAoQaXNfbG'
+    'FiZWxfdmlzaWJsZRgMIAEoCFIOaXNMYWJlbFZpc2libGUSJwoFY2hpbGQYDSABKAsyES5XaWRn'
+    'ZXRFeHByZXNzaW9uUgVjaGlsZA==');
 
 @$core.Deprecated('Use materialBadgeNamedCountDescriptor instead')
 const MaterialBadgeNamedCount$json = {
   '1': 'MaterialBadgeNamedCount',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'background_color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'text_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'textColor'},
     {'1': 'small_size', '3': 5, '4': 1, '5': 1, '10': 'smallSize'},
     {'1': 'large_size', '3': 6, '4': 1, '5': 1, '10': 'largeSize'},
     {'1': 'count', '3': 11, '4': 1, '5': 5, '10': 'count'},
@@ -1418,10 +1555,12 @@ const MaterialBadgeNamedCount$json = {
 /// Descriptor for `MaterialBadgeNamedCount`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialBadgeNamedCountDescriptor = $convert.base64Decode(
     'ChdNYXRlcmlhbEJhZGdlTmFtZWRDb3VudBInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcm'
-    'Vzc2lvblIDa2V5Eh0KCnNtYWxsX3NpemUYBSABKAFSCXNtYWxsU2l6ZRIdCgpsYXJnZV9zaXpl'
-    'GAYgASgBUglsYXJnZVNpemUSFAoFY291bnQYCyABKAVSBWNvdW50EigKEGlzX2xhYmVsX3Zpc2'
-    'libGUYDCABKAhSDmlzTGFiZWxWaXNpYmxlEicKBWNoaWxkGA0gASgLMhEuV2lkZ2V0RXhwcmVz'
-    'c2lvblIFY2hpbGQ=');
+    'Vzc2lvblIDa2V5EjsKEGJhY2tncm91bmRfY29sb3IYAyABKAsyEC5Db2xvckV4cHJlc3Npb25S'
+    'D2JhY2tncm91bmRDb2xvchIvCgp0ZXh0X2NvbG9yGAQgASgLMhAuQ29sb3JFeHByZXNzaW9uUg'
+    'l0ZXh0Q29sb3ISHQoKc21hbGxfc2l6ZRgFIAEoAVIJc21hbGxTaXplEh0KCmxhcmdlX3NpemUY'
+    'BiABKAFSCWxhcmdlU2l6ZRIUCgVjb3VudBgLIAEoBVIFY291bnQSKAoQaXNfbGFiZWxfdmlzaW'
+    'JsZRgMIAEoCFIOaXNMYWJlbFZpc2libGUSJwoFY2hpbGQYDSABKAsyES5XaWRnZXRFeHByZXNz'
+    'aW9uUgVjaGlsZA==');
 
 @$core.Deprecated('Use materialMaterialBannerDescriptor instead')
 const MaterialMaterialBanner$json = {
@@ -1432,6 +1571,10 @@ const MaterialMaterialBanner$json = {
     {'1': 'actions', '3': 5, '4': 3, '5': 11, '6': '.WidgetExpression', '10': 'actions'},
     {'1': 'elevation', '3': 6, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'leading', '3': 7, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'leading'},
+    {'1': 'background_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'surface_tint_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
+    {'1': 'shadow_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'divider_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'dividerColor'},
     {'1': 'force_actions_below', '3': 15, '4': 1, '5': 8, '10': 'forceActionsBelow'},
   ],
 };
@@ -1442,8 +1585,12 @@ final $typed_data.Uint8List materialMaterialBannerDescriptor = $convert.base64De
     'NzaW9uUgNrZXkSKwoHY29udGVudBgDIAEoCzIRLldpZGdldEV4cHJlc3Npb25SB2NvbnRlbnQS'
     'KwoHYWN0aW9ucxgFIAMoCzIRLldpZGdldEV4cHJlc3Npb25SB2FjdGlvbnMSHAoJZWxldmF0aW'
     '9uGAYgASgBUgllbGV2YXRpb24SKwoHbGVhZGluZxgHIAEoCzIRLldpZGdldEV4cHJlc3Npb25S'
-    'B2xlYWRpbmcSLgoTZm9yY2VfYWN0aW9uc19iZWxvdxgPIAEoCFIRZm9yY2VBY3Rpb25zQmVsb3'
-    'c=');
+    'B2xlYWRpbmcSOwoQYmFja2dyb3VuZF9jb2xvchgIIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIPYm'
+    'Fja2dyb3VuZENvbG9yEj4KEnN1cmZhY2VfdGludF9jb2xvchgJIAEoCzIQLkNvbG9yRXhwcmVz'
+    'c2lvblIQc3VyZmFjZVRpbnRDb2xvchIzCgxzaGFkb3dfY29sb3IYCiABKAsyEC5Db2xvckV4cH'
+    'Jlc3Npb25SC3NoYWRvd0NvbG9yEjUKDWRpdmlkZXJfY29sb3IYCyABKAsyEC5Db2xvckV4cHJl'
+    'c3Npb25SDGRpdmlkZXJDb2xvchIuChNmb3JjZV9hY3Rpb25zX2JlbG93GA8gASgIUhFmb3JjZU'
+    'FjdGlvbnNCZWxvdw==');
 
 @$core.Deprecated('Use materialMaterialBannerThemeDescriptor instead')
 const MaterialMaterialBannerTheme$json = {
@@ -1464,9 +1611,12 @@ const MaterialBottomAppBar$json = {
   '1': 'MaterialBottomAppBar',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'elevation', '3': 4, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'notch_margin', '3': 7, '4': 1, '5': 1, '10': 'notchMargin'},
     {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
+    {'1': 'surface_tint_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
+    {'1': 'shadow_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
     {'1': 'height', '3': 12, '4': 1, '5': 1, '10': 'height'},
   ],
 };
@@ -1474,15 +1624,23 @@ const MaterialBottomAppBar$json = {
 /// Descriptor for `MaterialBottomAppBar`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialBottomAppBarDescriptor = $convert.base64Decode(
     'ChRNYXRlcmlhbEJvdHRvbUFwcEJhchInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2'
-    'lvblIDa2V5EhwKCWVsZXZhdGlvbhgEIAEoAVIJZWxldmF0aW9uEiEKDG5vdGNoX21hcmdpbhgH'
-    'IAEoAVILbm90Y2hNYXJnaW4SJwoFY2hpbGQYCCABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVjaG'
-    'lsZBIWCgZoZWlnaHQYDCABKAFSBmhlaWdodA==');
+    'lvblIDa2V5EiYKBWNvbG9yGAMgASgLMhAuQ29sb3JFeHByZXNzaW9uUgVjb2xvchIcCgllbGV2'
+    'YXRpb24YBCABKAFSCWVsZXZhdGlvbhIhCgxub3RjaF9tYXJnaW4YByABKAFSC25vdGNoTWFyZ2'
+    'luEicKBWNoaWxkGAggASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFY2hpbGQSPgoSc3VyZmFjZV90'
+    'aW50X2NvbG9yGAogASgLMhAuQ29sb3JFeHByZXNzaW9uUhBzdXJmYWNlVGludENvbG9yEjMKDH'
+    'NoYWRvd19jb2xvchgLIAEoCzIQLkNvbG9yRXhwcmVzc2lvblILc2hhZG93Q29sb3ISFgoGaGVp'
+    'Z2h0GAwgASgBUgZoZWlnaHQ=');
 
 @$core.Deprecated('Use materialRawMaterialButtonDescriptor instead')
 const MaterialRawMaterialButton$json = {
   '1': 'MaterialRawMaterialButton',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'fill_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'fillColor'},
+    {'1': 'focus_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
+    {'1': 'highlight_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'highlightColor'},
+    {'1': 'splash_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'splashColor'},
     {'1': 'elevation', '3': 13, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'focus_elevation', '3': 14, '4': 1, '5': 1, '10': 'focusElevation'},
     {'1': 'hover_elevation', '3': 15, '4': 1, '5': 1, '10': 'hoverElevation'},
@@ -1498,14 +1656,18 @@ const MaterialRawMaterialButton$json = {
 /// Descriptor for `MaterialRawMaterialButton`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialRawMaterialButtonDescriptor = $convert.base64Decode(
     'ChlNYXRlcmlhbFJhd01hdGVyaWFsQnV0dG9uEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeH'
-    'ByZXNzaW9uUgNrZXkSHAoJZWxldmF0aW9uGA0gASgBUgllbGV2YXRpb24SJwoPZm9jdXNfZWxl'
-    'dmF0aW9uGA4gASgBUg5mb2N1c0VsZXZhdGlvbhInCg9ob3Zlcl9lbGV2YXRpb24YDyABKAFSDm'
-    'hvdmVyRWxldmF0aW9uEi8KE2hpZ2hsaWdodF9lbGV2YXRpb24YECABKAFSEmhpZ2hsaWdodEVs'
-    'ZXZhdGlvbhItChJkaXNhYmxlZF9lbGV2YXRpb24YESABKAFSEWRpc2FibGVkRWxldmF0aW9uEk'
-    'IKEmFuaW1hdGlvbl9kdXJhdGlvbhgWIAEoCzITLkR1cmF0aW9uRXhwcmVzc2lvblIRYW5pbWF0'
-    'aW9uRHVyYXRpb24SHAoJYXV0b2ZvY3VzGBkgASgIUglhdXRvZm9jdXMSJwoFY2hpbGQYGyABKA'
-    'syES5XaWRnZXRFeHByZXNzaW9uUgVjaGlsZBInCg9lbmFibGVfZmVlZGJhY2sYHCABKAhSDmVu'
-    'YWJsZUZlZWRiYWNr');
+    'ByZXNzaW9uUgNrZXkSLwoKZmlsbF9jb2xvchgIIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIJZmls'
+    'bENvbG9yEjEKC2ZvY3VzX2NvbG9yGAkgASgLMhAuQ29sb3JFeHByZXNzaW9uUgpmb2N1c0NvbG'
+    '9yEjEKC2hvdmVyX2NvbG9yGAogASgLMhAuQ29sb3JFeHByZXNzaW9uUgpob3ZlckNvbG9yEjkK'
+    'D2hpZ2hsaWdodF9jb2xvchgLIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIOaGlnaGxpZ2h0Q29sb3'
+    'ISMwoMc3BsYXNoX2NvbG9yGAwgASgLMhAuQ29sb3JFeHByZXNzaW9uUgtzcGxhc2hDb2xvchIc'
+    'CgllbGV2YXRpb24YDSABKAFSCWVsZXZhdGlvbhInCg9mb2N1c19lbGV2YXRpb24YDiABKAFSDm'
+    'ZvY3VzRWxldmF0aW9uEicKD2hvdmVyX2VsZXZhdGlvbhgPIAEoAVIOaG92ZXJFbGV2YXRpb24S'
+    'LwoTaGlnaGxpZ2h0X2VsZXZhdGlvbhgQIAEoAVISaGlnaGxpZ2h0RWxldmF0aW9uEi0KEmRpc2'
+    'FibGVkX2VsZXZhdGlvbhgRIAEoAVIRZGlzYWJsZWRFbGV2YXRpb24SQgoSYW5pbWF0aW9uX2R1'
+    'cmF0aW9uGBYgASgLMhMuRHVyYXRpb25FeHByZXNzaW9uUhFhbmltYXRpb25EdXJhdGlvbhIcCg'
+    'lhdXRvZm9jdXMYGSABKAhSCWF1dG9mb2N1cxInCgVjaGlsZBgbIAEoCzIRLldpZGdldEV4cHJl'
+    'c3Npb25SBWNoaWxkEicKD2VuYWJsZV9mZWVkYmFjaxgcIAEoCFIOZW5hYmxlRmVlZGJhY2s=');
 
 @$core.Deprecated('Use materialButtonBarDescriptor instead')
 const MaterialButtonBar$json = {
@@ -1537,6 +1699,12 @@ const MaterialButtonTheme$json = {
     {'1': 'min_width', '3': 5, '4': 1, '5': 1, '10': 'minWidth'},
     {'1': 'height', '3': 6, '4': 1, '5': 1, '10': 'height'},
     {'1': 'aligned_dropdown', '3': 9, '4': 1, '5': 8, '10': 'alignedDropdown'},
+    {'1': 'button_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'buttonColor'},
+    {'1': 'disabled_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
+    {'1': 'focus_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 13, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
+    {'1': 'highlight_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'highlightColor'},
+    {'1': 'splash_color', '3': 15, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'splashColor'},
     {'1': 'child', '3': 18, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
   ],
 };
@@ -1545,14 +1713,23 @@ const MaterialButtonTheme$json = {
 final $typed_data.Uint8List materialButtonThemeDescriptor = $convert.base64Decode(
     'ChNNYXRlcmlhbEJ1dHRvblRoZW1lEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZXNzaW'
     '9uUgNrZXkSGwoJbWluX3dpZHRoGAUgASgBUghtaW5XaWR0aBIWCgZoZWlnaHQYBiABKAFSBmhl'
-    'aWdodBIpChBhbGlnbmVkX2Ryb3Bkb3duGAkgASgIUg9hbGlnbmVkRHJvcGRvd24SJwoFY2hpbG'
-    'QYEiABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVjaGlsZA==');
+    'aWdodBIpChBhbGlnbmVkX2Ryb3Bkb3duGAkgASgIUg9hbGlnbmVkRHJvcGRvd24SMwoMYnV0dG'
+    '9uX2NvbG9yGAogASgLMhAuQ29sb3JFeHByZXNzaW9uUgtidXR0b25Db2xvchI3Cg5kaXNhYmxl'
+    'ZF9jb2xvchgLIAEoCzIQLkNvbG9yRXhwcmVzc2lvblINZGlzYWJsZWRDb2xvchIxCgtmb2N1c1'
+    '9jb2xvchgMIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIKZm9jdXNDb2xvchIxCgtob3Zlcl9jb2xv'
+    'chgNIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIKaG92ZXJDb2xvchI5Cg9oaWdobGlnaHRfY29sb3'
+    'IYDiABKAsyEC5Db2xvckV4cHJlc3Npb25SDmhpZ2hsaWdodENvbG9yEjMKDHNwbGFzaF9jb2xv'
+    'chgPIAEoCzIQLkNvbG9yRXhwcmVzc2lvblILc3BsYXNoQ29sb3ISJwoFY2hpbGQYEiABKAsyES'
+    '5XaWRnZXRFeHByZXNzaW9uUgVjaGlsZA==');
 
 @$core.Deprecated('Use materialCardDescriptor instead')
 const MaterialCard$json = {
   '1': 'MaterialCard',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
+    {'1': 'shadow_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
     {'1': 'elevation', '3': 6, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'border_on_foreground', '3': 8, '4': 1, '5': 8, '10': 'borderOnForeground'},
     {'1': 'child', '3': 11, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
@@ -1563,10 +1740,12 @@ const MaterialCard$json = {
 /// Descriptor for `MaterialCard`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialCardDescriptor = $convert.base64Decode(
     'CgxNYXRlcmlhbENhcmQSJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb25SA2tleR'
-    'IcCgllbGV2YXRpb24YBiABKAFSCWVsZXZhdGlvbhIwChRib3JkZXJfb25fZm9yZWdyb3VuZBgI'
-    'IAEoCFISYm9yZGVyT25Gb3JlZ3JvdW5kEicKBWNoaWxkGAsgASgLMhEuV2lkZ2V0RXhwcmVzc2'
-    'lvblIFY2hpbGQSLQoSc2VtYW50aWNfY29udGFpbmVyGAwgASgIUhFzZW1hbnRpY0NvbnRhaW5l'
-    'cg==');
+    'ImCgVjb2xvchgDIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIFY29sb3ISMwoMc2hhZG93X2NvbG9y'
+    'GAQgASgLMhAuQ29sb3JFeHByZXNzaW9uUgtzaGFkb3dDb2xvchI+ChJzdXJmYWNlX3RpbnRfY2'
+    '9sb3IYBSABKAsyEC5Db2xvckV4cHJlc3Npb25SEHN1cmZhY2VUaW50Q29sb3ISHAoJZWxldmF0'
+    'aW9uGAYgASgBUgllbGV2YXRpb24SMAoUYm9yZGVyX29uX2ZvcmVncm91bmQYCCABKAhSEmJvcm'
+    'Rlck9uRm9yZWdyb3VuZBInCgVjaGlsZBgLIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBWNoaWxk'
+    'Ei0KEnNlbWFudGljX2NvbnRhaW5lchgMIAEoCFIRc2VtYW50aWNDb250YWluZXI=');
 
 @$core.Deprecated('Use materialCheckboxDescriptor instead')
 const MaterialCheckbox$json = {
@@ -1575,6 +1754,10 @@ const MaterialCheckbox$json = {
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'value', '3': 3, '4': 1, '5': 8, '10': 'value'},
     {'1': 'tristate', '3': 4, '4': 1, '5': 8, '10': 'tristate'},
+    {'1': 'active_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'activeColor'},
+    {'1': 'check_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'checkColor'},
+    {'1': 'focus_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
     {'1': 'splash_radius', '3': 13, '4': 1, '5': 1, '10': 'splashRadius'},
     {'1': 'autofocus', '3': 17, '4': 1, '5': 8, '10': 'autofocus'},
     {'1': 'is_error', '3': 20, '4': 1, '5': 8, '10': 'isError'},
@@ -1585,10 +1768,14 @@ const MaterialCheckbox$json = {
 /// Descriptor for `MaterialCheckbox`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialCheckboxDescriptor = $convert.base64Decode(
     'ChBNYXRlcmlhbENoZWNrYm94EicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZXNzaW9uUg'
-    'NrZXkSFAoFdmFsdWUYAyABKAhSBXZhbHVlEhoKCHRyaXN0YXRlGAQgASgIUgh0cmlzdGF0ZRIj'
-    'Cg1zcGxhc2hfcmFkaXVzGA0gASgBUgxzcGxhc2hSYWRpdXMSHAoJYXV0b2ZvY3VzGBEgASgIUg'
-    'lhdXRvZm9jdXMSGQoIaXNfZXJyb3IYFCABKAhSB2lzRXJyb3ISJQoOc2VtYW50aWNfbGFiZWwY'
-    'FSABKAlSDXNlbWFudGljTGFiZWw=');
+    'NrZXkSFAoFdmFsdWUYAyABKAhSBXZhbHVlEhoKCHRyaXN0YXRlGAQgASgIUgh0cmlzdGF0ZRIz'
+    'CgxhY3RpdmVfY29sb3IYByABKAsyEC5Db2xvckV4cHJlc3Npb25SC2FjdGl2ZUNvbG9yEjEKC2'
+    'NoZWNrX2NvbG9yGAkgASgLMhAuQ29sb3JFeHByZXNzaW9uUgpjaGVja0NvbG9yEjEKC2ZvY3Vz'
+    'X2NvbG9yGAogASgLMhAuQ29sb3JFeHByZXNzaW9uUgpmb2N1c0NvbG9yEjEKC2hvdmVyX2NvbG'
+    '9yGAsgASgLMhAuQ29sb3JFeHByZXNzaW9uUgpob3ZlckNvbG9yEiMKDXNwbGFzaF9yYWRpdXMY'
+    'DSABKAFSDHNwbGFzaFJhZGl1cxIcCglhdXRvZm9jdXMYESABKAhSCWF1dG9mb2N1cxIZCghpc1'
+    '9lcnJvchgUIAEoCFIHaXNFcnJvchIlCg5zZW1hbnRpY19sYWJlbBgVIAEoCVINc2VtYW50aWNM'
+    'YWJlbA==');
 
 @$core.Deprecated('Use materialCheckboxNamedAdaptiveDescriptor instead')
 const MaterialCheckboxNamedAdaptive$json = {
@@ -1597,6 +1784,10 @@ const MaterialCheckboxNamedAdaptive$json = {
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'value', '3': 3, '4': 1, '5': 8, '10': 'value'},
     {'1': 'tristate', '3': 4, '4': 1, '5': 8, '10': 'tristate'},
+    {'1': 'active_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'activeColor'},
+    {'1': 'check_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'checkColor'},
+    {'1': 'focus_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
     {'1': 'splash_radius', '3': 13, '4': 1, '5': 1, '10': 'splashRadius'},
     {'1': 'autofocus', '3': 17, '4': 1, '5': 8, '10': 'autofocus'},
     {'1': 'is_error', '3': 20, '4': 1, '5': 8, '10': 'isError'},
@@ -1608,9 +1799,13 @@ const MaterialCheckboxNamedAdaptive$json = {
 final $typed_data.Uint8List materialCheckboxNamedAdaptiveDescriptor = $convert.base64Decode(
     'Ch1NYXRlcmlhbENoZWNrYm94TmFtZWRBZGFwdGl2ZRInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2'
     'V5RXhwcmVzc2lvblIDa2V5EhQKBXZhbHVlGAMgASgIUgV2YWx1ZRIaCgh0cmlzdGF0ZRgEIAEo'
-    'CFIIdHJpc3RhdGUSIwoNc3BsYXNoX3JhZGl1cxgNIAEoAVIMc3BsYXNoUmFkaXVzEhwKCWF1dG'
-    '9mb2N1cxgRIAEoCFIJYXV0b2ZvY3VzEhkKCGlzX2Vycm9yGBQgASgIUgdpc0Vycm9yEiUKDnNl'
-    'bWFudGljX2xhYmVsGBUgASgJUg1zZW1hbnRpY0xhYmVs');
+    'CFIIdHJpc3RhdGUSMwoMYWN0aXZlX2NvbG9yGAcgASgLMhAuQ29sb3JFeHByZXNzaW9uUgthY3'
+    'RpdmVDb2xvchIxCgtjaGVja19jb2xvchgJIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIKY2hlY2tD'
+    'b2xvchIxCgtmb2N1c19jb2xvchgKIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIKZm9jdXNDb2xvch'
+    'IxCgtob3Zlcl9jb2xvchgLIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIKaG92ZXJDb2xvchIjCg1z'
+    'cGxhc2hfcmFkaXVzGA0gASgBUgxzcGxhc2hSYWRpdXMSHAoJYXV0b2ZvY3VzGBEgASgIUglhdX'
+    'RvZm9jdXMSGQoIaXNfZXJyb3IYFCABKAhSB2lzRXJyb3ISJQoOc2VtYW50aWNfbGFiZWwYFSAB'
+    'KAlSDXNlbWFudGljTGFiZWw=');
 
 @$core.Deprecated('Use materialCheckboxListTileDescriptor instead')
 const MaterialCheckboxListTile$json = {
@@ -1618,10 +1813,14 @@ const MaterialCheckboxListTile$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'value', '3': 3, '4': 1, '5': 8, '10': 'value'},
+    {'1': 'active_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'activeColor'},
+    {'1': 'check_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'checkColor'},
+    {'1': 'hover_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
     {'1': 'splash_radius', '3': 11, '4': 1, '5': 1, '10': 'splashRadius'},
     {'1': 'autofocus', '3': 15, '4': 1, '5': 8, '10': 'autofocus'},
     {'1': 'is_error', '3': 18, '4': 1, '5': 8, '10': 'isError'},
     {'1': 'enabled', '3': 19, '4': 1, '5': 8, '10': 'enabled'},
+    {'1': 'tile_color', '3': 20, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'tileColor'},
     {'1': 'title', '3': 21, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'title'},
     {'1': 'subtitle', '3': 22, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'subtitle'},
     {'1': 'is_three_line', '3': 23, '4': 1, '5': 8, '10': 'isThreeLine'},
@@ -1629,6 +1828,7 @@ const MaterialCheckboxListTile$json = {
     {'1': 'secondary', '3': 25, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'secondary'},
     {'1': 'selected', '3': 26, '4': 1, '5': 8, '10': 'selected'},
     {'1': 'tristate', '3': 29, '4': 1, '5': 8, '10': 'tristate'},
+    {'1': 'selected_tile_color', '3': 31, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedTileColor'},
     {'1': 'enable_feedback', '3': 33, '4': 1, '5': 8, '10': 'enableFeedback'},
     {'1': 'checkbox_semantic_label', '3': 34, '4': 1, '5': 9, '10': 'checkboxSemanticLabel'},
   ],
@@ -1637,16 +1837,20 @@ const MaterialCheckboxListTile$json = {
 /// Descriptor for `MaterialCheckboxListTile`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialCheckboxListTileDescriptor = $convert.base64Decode(
     'ChhNYXRlcmlhbENoZWNrYm94TGlzdFRpbGUSJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cH'
-    'Jlc3Npb25SA2tleRIUCgV2YWx1ZRgDIAEoCFIFdmFsdWUSIwoNc3BsYXNoX3JhZGl1cxgLIAEo'
-    'AVIMc3BsYXNoUmFkaXVzEhwKCWF1dG9mb2N1cxgPIAEoCFIJYXV0b2ZvY3VzEhkKCGlzX2Vycm'
-    '9yGBIgASgIUgdpc0Vycm9yEhgKB2VuYWJsZWQYEyABKAhSB2VuYWJsZWQSJwoFdGl0bGUYFSAB'
-    'KAsyES5XaWRnZXRFeHByZXNzaW9uUgV0aXRsZRItCghzdWJ0aXRsZRgWIAEoCzIRLldpZGdldE'
-    'V4cHJlc3Npb25SCHN1YnRpdGxlEiIKDWlzX3RocmVlX2xpbmUYFyABKAhSC2lzVGhyZWVMaW5l'
-    'EhQKBWRlbnNlGBggASgIUgVkZW5zZRIvCglzZWNvbmRhcnkYGSABKAsyES5XaWRnZXRFeHByZX'
-    'NzaW9uUglzZWNvbmRhcnkSGgoIc2VsZWN0ZWQYGiABKAhSCHNlbGVjdGVkEhoKCHRyaXN0YXRl'
-    'GB0gASgIUgh0cmlzdGF0ZRInCg9lbmFibGVfZmVlZGJhY2sYISABKAhSDmVuYWJsZUZlZWRiYW'
-    'NrEjYKF2NoZWNrYm94X3NlbWFudGljX2xhYmVsGCIgASgJUhVjaGVja2JveFNlbWFudGljTGFi'
-    'ZWw=');
+    'Jlc3Npb25SA2tleRIUCgV2YWx1ZRgDIAEoCFIFdmFsdWUSMwoMYWN0aXZlX2NvbG9yGAYgASgL'
+    'MhAuQ29sb3JFeHByZXNzaW9uUgthY3RpdmVDb2xvchIxCgtjaGVja19jb2xvchgIIAEoCzIQLk'
+    'NvbG9yRXhwcmVzc2lvblIKY2hlY2tDb2xvchIxCgtob3Zlcl9jb2xvchgJIAEoCzIQLkNvbG9y'
+    'RXhwcmVzc2lvblIKaG92ZXJDb2xvchIjCg1zcGxhc2hfcmFkaXVzGAsgASgBUgxzcGxhc2hSYW'
+    'RpdXMSHAoJYXV0b2ZvY3VzGA8gASgIUglhdXRvZm9jdXMSGQoIaXNfZXJyb3IYEiABKAhSB2lz'
+    'RXJyb3ISGAoHZW5hYmxlZBgTIAEoCFIHZW5hYmxlZBIvCgp0aWxlX2NvbG9yGBQgASgLMhAuQ2'
+    '9sb3JFeHByZXNzaW9uUgl0aWxlQ29sb3ISJwoFdGl0bGUYFSABKAsyES5XaWRnZXRFeHByZXNz'
+    'aW9uUgV0aXRsZRItCghzdWJ0aXRsZRgWIAEoCzIRLldpZGdldEV4cHJlc3Npb25SCHN1YnRpdG'
+    'xlEiIKDWlzX3RocmVlX2xpbmUYFyABKAhSC2lzVGhyZWVMaW5lEhQKBWRlbnNlGBggASgIUgVk'
+    'ZW5zZRIvCglzZWNvbmRhcnkYGSABKAsyES5XaWRnZXRFeHByZXNzaW9uUglzZWNvbmRhcnkSGg'
+    'oIc2VsZWN0ZWQYGiABKAhSCHNlbGVjdGVkEhoKCHRyaXN0YXRlGB0gASgIUgh0cmlzdGF0ZRJA'
+    'ChNzZWxlY3RlZF90aWxlX2NvbG9yGB8gASgLMhAuQ29sb3JFeHByZXNzaW9uUhFzZWxlY3RlZF'
+    'RpbGVDb2xvchInCg9lbmFibGVfZmVlZGJhY2sYISABKAhSDmVuYWJsZUZlZWRiYWNrEjYKF2No'
+    'ZWNrYm94X3NlbWFudGljX2xhYmVsGCIgASgJUhVjaGVja2JveFNlbWFudGljTGFiZWw=');
 
 @$core.Deprecated('Use materialCheckboxListTileNamedAdaptiveDescriptor instead')
 const MaterialCheckboxListTileNamedAdaptive$json = {
@@ -1654,10 +1858,14 @@ const MaterialCheckboxListTileNamedAdaptive$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'value', '3': 3, '4': 1, '5': 8, '10': 'value'},
+    {'1': 'active_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'activeColor'},
+    {'1': 'check_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'checkColor'},
+    {'1': 'hover_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
     {'1': 'splash_radius', '3': 11, '4': 1, '5': 1, '10': 'splashRadius'},
     {'1': 'autofocus', '3': 15, '4': 1, '5': 8, '10': 'autofocus'},
     {'1': 'is_error', '3': 18, '4': 1, '5': 8, '10': 'isError'},
     {'1': 'enabled', '3': 19, '4': 1, '5': 8, '10': 'enabled'},
+    {'1': 'tile_color', '3': 20, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'tileColor'},
     {'1': 'title', '3': 21, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'title'},
     {'1': 'subtitle', '3': 22, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'subtitle'},
     {'1': 'is_three_line', '3': 23, '4': 1, '5': 8, '10': 'isThreeLine'},
@@ -1665,6 +1873,7 @@ const MaterialCheckboxListTileNamedAdaptive$json = {
     {'1': 'secondary', '3': 25, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'secondary'},
     {'1': 'selected', '3': 26, '4': 1, '5': 8, '10': 'selected'},
     {'1': 'tristate', '3': 29, '4': 1, '5': 8, '10': 'tristate'},
+    {'1': 'selected_tile_color', '3': 31, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedTileColor'},
     {'1': 'enable_feedback', '3': 33, '4': 1, '5': 8, '10': 'enableFeedback'},
     {'1': 'checkbox_semantic_label', '3': 34, '4': 1, '5': 9, '10': 'checkboxSemanticLabel'},
   ],
@@ -1673,16 +1882,21 @@ const MaterialCheckboxListTileNamedAdaptive$json = {
 /// Descriptor for `MaterialCheckboxListTileNamedAdaptive`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialCheckboxListTileNamedAdaptiveDescriptor = $convert.base64Decode(
     'CiVNYXRlcmlhbENoZWNrYm94TGlzdFRpbGVOYW1lZEFkYXB0aXZlEicKA2tleRgCIAEoCzIVLk'
-    'ZsdXR0ZXJLZXlFeHByZXNzaW9uUgNrZXkSFAoFdmFsdWUYAyABKAhSBXZhbHVlEiMKDXNwbGFz'
-    'aF9yYWRpdXMYCyABKAFSDHNwbGFzaFJhZGl1cxIcCglhdXRvZm9jdXMYDyABKAhSCWF1dG9mb2'
-    'N1cxIZCghpc19lcnJvchgSIAEoCFIHaXNFcnJvchIYCgdlbmFibGVkGBMgASgIUgdlbmFibGVk'
-    'EicKBXRpdGxlGBUgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFdGl0bGUSLQoIc3VidGl0bGUYFi'
-    'ABKAsyES5XaWRnZXRFeHByZXNzaW9uUghzdWJ0aXRsZRIiCg1pc190aHJlZV9saW5lGBcgASgI'
-    'Ugtpc1RocmVlTGluZRIUCgVkZW5zZRgYIAEoCFIFZGVuc2USLwoJc2Vjb25kYXJ5GBkgASgLMh'
-    'EuV2lkZ2V0RXhwcmVzc2lvblIJc2Vjb25kYXJ5EhoKCHNlbGVjdGVkGBogASgIUghzZWxlY3Rl'
-    'ZBIaCgh0cmlzdGF0ZRgdIAEoCFIIdHJpc3RhdGUSJwoPZW5hYmxlX2ZlZWRiYWNrGCEgASgIUg'
-    '5lbmFibGVGZWVkYmFjaxI2ChdjaGVja2JveF9zZW1hbnRpY19sYWJlbBgiIAEoCVIVY2hlY2ti'
-    'b3hTZW1hbnRpY0xhYmVs');
+    'ZsdXR0ZXJLZXlFeHByZXNzaW9uUgNrZXkSFAoFdmFsdWUYAyABKAhSBXZhbHVlEjMKDGFjdGl2'
+    'ZV9jb2xvchgGIAEoCzIQLkNvbG9yRXhwcmVzc2lvblILYWN0aXZlQ29sb3ISMQoLY2hlY2tfY2'
+    '9sb3IYCCABKAsyEC5Db2xvckV4cHJlc3Npb25SCmNoZWNrQ29sb3ISMQoLaG92ZXJfY29sb3IY'
+    'CSABKAsyEC5Db2xvckV4cHJlc3Npb25SCmhvdmVyQ29sb3ISIwoNc3BsYXNoX3JhZGl1cxgLIA'
+    'EoAVIMc3BsYXNoUmFkaXVzEhwKCWF1dG9mb2N1cxgPIAEoCFIJYXV0b2ZvY3VzEhkKCGlzX2Vy'
+    'cm9yGBIgASgIUgdpc0Vycm9yEhgKB2VuYWJsZWQYEyABKAhSB2VuYWJsZWQSLwoKdGlsZV9jb2'
+    'xvchgUIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIJdGlsZUNvbG9yEicKBXRpdGxlGBUgASgLMhEu'
+    'V2lkZ2V0RXhwcmVzc2lvblIFdGl0bGUSLQoIc3VidGl0bGUYFiABKAsyES5XaWRnZXRFeHByZX'
+    'NzaW9uUghzdWJ0aXRsZRIiCg1pc190aHJlZV9saW5lGBcgASgIUgtpc1RocmVlTGluZRIUCgVk'
+    'ZW5zZRgYIAEoCFIFZGVuc2USLwoJc2Vjb25kYXJ5GBkgASgLMhEuV2lkZ2V0RXhwcmVzc2lvbl'
+    'IJc2Vjb25kYXJ5EhoKCHNlbGVjdGVkGBogASgIUghzZWxlY3RlZBIaCgh0cmlzdGF0ZRgdIAEo'
+    'CFIIdHJpc3RhdGUSQAoTc2VsZWN0ZWRfdGlsZV9jb2xvchgfIAEoCzIQLkNvbG9yRXhwcmVzc2'
+    'lvblIRc2VsZWN0ZWRUaWxlQ29sb3ISJwoPZW5hYmxlX2ZlZWRiYWNrGCEgASgIUg5lbmFibGVG'
+    'ZWVkYmFjaxI2ChdjaGVja2JveF9zZW1hbnRpY19sYWJlbBgiIAEoCVIVY2hlY2tib3hTZW1hbn'
+    'RpY0xhYmVs');
 
 @$core.Deprecated('Use materialChipDescriptor instead')
 const MaterialChip$json = {
@@ -1692,9 +1906,13 @@ const MaterialChip$json = {
     {'1': 'avatar', '3': 3, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'avatar'},
     {'1': 'label', '3': 4, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'label'},
     {'1': 'delete_icon', '3': 7, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'deleteIcon'},
+    {'1': 'delete_icon_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'deleteIconColor'},
     {'1': 'delete_button_tooltip_message', '3': 10, '4': 1, '5': 9, '10': 'deleteButtonTooltipMessage'},
     {'1': 'autofocus', '3': 15, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'background_color', '3': 17, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'elevation', '3': 21, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'shadow_color', '3': 22, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 23, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
   ],
 };
 
@@ -1703,9 +1921,14 @@ final $typed_data.Uint8List materialChipDescriptor = $convert.base64Decode(
     'CgxNYXRlcmlhbENoaXASJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb25SA2tleR'
     'IpCgZhdmF0YXIYAyABKAsyES5XaWRnZXRFeHByZXNzaW9uUgZhdmF0YXISJwoFbGFiZWwYBCAB'
     'KAsyES5XaWRnZXRFeHByZXNzaW9uUgVsYWJlbBIyCgtkZWxldGVfaWNvbhgHIAEoCzIRLldpZG'
-    'dldEV4cHJlc3Npb25SCmRlbGV0ZUljb24SQQodZGVsZXRlX2J1dHRvbl90b29sdGlwX21lc3Nh'
-    'Z2UYCiABKAlSGmRlbGV0ZUJ1dHRvblRvb2x0aXBNZXNzYWdlEhwKCWF1dG9mb2N1cxgPIAEoCF'
-    'IJYXV0b2ZvY3VzEhwKCWVsZXZhdGlvbhgVIAEoAVIJZWxldmF0aW9u');
+    'dldEV4cHJlc3Npb25SCmRlbGV0ZUljb24SPAoRZGVsZXRlX2ljb25fY29sb3IYCSABKAsyEC5D'
+    'b2xvckV4cHJlc3Npb25SD2RlbGV0ZUljb25Db2xvchJBCh1kZWxldGVfYnV0dG9uX3Rvb2x0aX'
+    'BfbWVzc2FnZRgKIAEoCVIaZGVsZXRlQnV0dG9uVG9vbHRpcE1lc3NhZ2USHAoJYXV0b2ZvY3Vz'
+    'GA8gASgIUglhdXRvZm9jdXMSOwoQYmFja2dyb3VuZF9jb2xvchgRIAEoCzIQLkNvbG9yRXhwcm'
+    'Vzc2lvblIPYmFja2dyb3VuZENvbG9yEhwKCWVsZXZhdGlvbhgVIAEoAVIJZWxldmF0aW9uEjMK'
+    'DHNoYWRvd19jb2xvchgWIAEoCzIQLkNvbG9yRXhwcmVzc2lvblILc2hhZG93Q29sb3ISPgoSc3'
+    'VyZmFjZV90aW50X2NvbG9yGBcgASgLMhAuQ29sb3JFeHByZXNzaW9uUhBzdXJmYWNlVGludENv'
+    'bG9y');
 
 @$core.Deprecated('Use materialRawChipDescriptor instead')
 const MaterialRawChip$json = {
@@ -1715,15 +1938,23 @@ const MaterialRawChip$json = {
     {'1': 'avatar', '3': 4, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'avatar'},
     {'1': 'label', '3': 5, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'label'},
     {'1': 'delete_icon', '3': 10, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'deleteIcon'},
+    {'1': 'delete_icon_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'deleteIconColor'},
     {'1': 'delete_button_tooltip_message', '3': 13, '4': 1, '5': 9, '10': 'deleteButtonTooltipMessage'},
     {'1': 'press_elevation', '3': 16, '4': 1, '5': 1, '10': 'pressElevation'},
     {'1': 'tap_enabled', '3': 17, '4': 1, '5': 8, '10': 'tapEnabled'},
     {'1': 'selected', '3': 18, '4': 1, '5': 8, '10': 'selected'},
     {'1': 'is_enabled', '3': 19, '4': 1, '5': 8, '10': 'isEnabled'},
+    {'1': 'disabled_color', '3': 20, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
+    {'1': 'selected_color', '3': 21, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedColor'},
     {'1': 'tooltip', '3': 22, '4': 1, '5': 9, '10': 'tooltip'},
     {'1': 'autofocus', '3': 27, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'background_color', '3': 29, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'elevation', '3': 31, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'shadow_color', '3': 32, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 33, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
+    {'1': 'selected_shadow_color', '3': 35, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedShadowColor'},
     {'1': 'show_checkmark', '3': 36, '4': 1, '5': 8, '10': 'showCheckmark'},
+    {'1': 'checkmark_color', '3': 37, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'checkmarkColor'},
   ],
 };
 
@@ -1732,13 +1963,22 @@ final $typed_data.Uint8List materialRawChipDescriptor = $convert.base64Decode(
     'Cg9NYXRlcmlhbFJhd0NoaXASJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb25SA2'
     'tleRIpCgZhdmF0YXIYBCABKAsyES5XaWRnZXRFeHByZXNzaW9uUgZhdmF0YXISJwoFbGFiZWwY'
     'BSABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVsYWJlbBIyCgtkZWxldGVfaWNvbhgKIAEoCzIRLl'
-    'dpZGdldEV4cHJlc3Npb25SCmRlbGV0ZUljb24SQQodZGVsZXRlX2J1dHRvbl90b29sdGlwX21l'
-    'c3NhZ2UYDSABKAlSGmRlbGV0ZUJ1dHRvblRvb2x0aXBNZXNzYWdlEicKD3ByZXNzX2VsZXZhdG'
-    'lvbhgQIAEoAVIOcHJlc3NFbGV2YXRpb24SHwoLdGFwX2VuYWJsZWQYESABKAhSCnRhcEVuYWJs'
-    'ZWQSGgoIc2VsZWN0ZWQYEiABKAhSCHNlbGVjdGVkEh0KCmlzX2VuYWJsZWQYEyABKAhSCWlzRW'
-    '5hYmxlZBIYCgd0b29sdGlwGBYgASgJUgd0b29sdGlwEhwKCWF1dG9mb2N1cxgbIAEoCFIJYXV0'
-    'b2ZvY3VzEhwKCWVsZXZhdGlvbhgfIAEoAVIJZWxldmF0aW9uEiUKDnNob3dfY2hlY2ttYXJrGC'
-    'QgASgIUg1zaG93Q2hlY2ttYXJr');
+    'dpZGdldEV4cHJlc3Npb25SCmRlbGV0ZUljb24SPAoRZGVsZXRlX2ljb25fY29sb3IYDCABKAsy'
+    'EC5Db2xvckV4cHJlc3Npb25SD2RlbGV0ZUljb25Db2xvchJBCh1kZWxldGVfYnV0dG9uX3Rvb2'
+    'x0aXBfbWVzc2FnZRgNIAEoCVIaZGVsZXRlQnV0dG9uVG9vbHRpcE1lc3NhZ2USJwoPcHJlc3Nf'
+    'ZWxldmF0aW9uGBAgASgBUg5wcmVzc0VsZXZhdGlvbhIfCgt0YXBfZW5hYmxlZBgRIAEoCFIKdG'
+    'FwRW5hYmxlZBIaCghzZWxlY3RlZBgSIAEoCFIIc2VsZWN0ZWQSHQoKaXNfZW5hYmxlZBgTIAEo'
+    'CFIJaXNFbmFibGVkEjcKDmRpc2FibGVkX2NvbG9yGBQgASgLMhAuQ29sb3JFeHByZXNzaW9uUg'
+    '1kaXNhYmxlZENvbG9yEjcKDnNlbGVjdGVkX2NvbG9yGBUgASgLMhAuQ29sb3JFeHByZXNzaW9u'
+    'Ug1zZWxlY3RlZENvbG9yEhgKB3Rvb2x0aXAYFiABKAlSB3Rvb2x0aXASHAoJYXV0b2ZvY3VzGB'
+    'sgASgIUglhdXRvZm9jdXMSOwoQYmFja2dyb3VuZF9jb2xvchgdIAEoCzIQLkNvbG9yRXhwcmVz'
+    'c2lvblIPYmFja2dyb3VuZENvbG9yEhwKCWVsZXZhdGlvbhgfIAEoAVIJZWxldmF0aW9uEjMKDH'
+    'NoYWRvd19jb2xvchggIAEoCzIQLkNvbG9yRXhwcmVzc2lvblILc2hhZG93Q29sb3ISPgoSc3Vy'
+    'ZmFjZV90aW50X2NvbG9yGCEgASgLMhAuQ29sb3JFeHByZXNzaW9uUhBzdXJmYWNlVGludENvbG'
+    '9yEkQKFXNlbGVjdGVkX3NoYWRvd19jb2xvchgjIAEoCzIQLkNvbG9yRXhwcmVzc2lvblITc2Vs'
+    'ZWN0ZWRTaGFkb3dDb2xvchIlCg5zaG93X2NoZWNrbWFyaxgkIAEoCFINc2hvd0NoZWNrbWFyax'
+    'I5Cg9jaGVja21hcmtfY29sb3IYJSABKAsyEC5Db2xvckV4cHJlc3Npb25SDmNoZWNrbWFya0Nv'
+    'bG9y');
 
 @$core.Deprecated('Use materialChoiceChipDescriptor instead')
 const MaterialChoiceChip$json = {
@@ -1749,10 +1989,17 @@ const MaterialChoiceChip$json = {
     {'1': 'label', '3': 4, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'label'},
     {'1': 'press_elevation', '3': 8, '4': 1, '5': 1, '10': 'pressElevation'},
     {'1': 'selected', '3': 9, '4': 1, '5': 8, '10': 'selected'},
+    {'1': 'selected_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedColor'},
+    {'1': 'disabled_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
     {'1': 'tooltip', '3': 12, '4': 1, '5': 9, '10': 'tooltip'},
     {'1': 'autofocus', '3': 17, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'background_color', '3': 19, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'elevation', '3': 23, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'shadow_color', '3': 24, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 25, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
+    {'1': 'selected_shadow_color', '3': 27, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedShadowColor'},
     {'1': 'show_checkmark', '3': 28, '4': 1, '5': 8, '10': 'showCheckmark'},
+    {'1': 'checkmark_color', '3': 29, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'checkmarkColor'},
   ],
 };
 
@@ -1761,10 +2008,17 @@ final $typed_data.Uint8List materialChoiceChipDescriptor = $convert.base64Decode
     'ChJNYXRlcmlhbENob2ljZUNoaXASJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb2'
     '5SA2tleRIpCgZhdmF0YXIYAyABKAsyES5XaWRnZXRFeHByZXNzaW9uUgZhdmF0YXISJwoFbGFi'
     'ZWwYBCABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVsYWJlbBInCg9wcmVzc19lbGV2YXRpb24YCC'
-    'ABKAFSDnByZXNzRWxldmF0aW9uEhoKCHNlbGVjdGVkGAkgASgIUghzZWxlY3RlZBIYCgd0b29s'
-    'dGlwGAwgASgJUgd0b29sdGlwEhwKCWF1dG9mb2N1cxgRIAEoCFIJYXV0b2ZvY3VzEhwKCWVsZX'
-    'ZhdGlvbhgXIAEoAVIJZWxldmF0aW9uEiUKDnNob3dfY2hlY2ttYXJrGBwgASgIUg1zaG93Q2hl'
-    'Y2ttYXJr');
+    'ABKAFSDnByZXNzRWxldmF0aW9uEhoKCHNlbGVjdGVkGAkgASgIUghzZWxlY3RlZBI3Cg5zZWxl'
+    'Y3RlZF9jb2xvchgKIAEoCzIQLkNvbG9yRXhwcmVzc2lvblINc2VsZWN0ZWRDb2xvchI3Cg5kaX'
+    'NhYmxlZF9jb2xvchgLIAEoCzIQLkNvbG9yRXhwcmVzc2lvblINZGlzYWJsZWRDb2xvchIYCgd0'
+    'b29sdGlwGAwgASgJUgd0b29sdGlwEhwKCWF1dG9mb2N1cxgRIAEoCFIJYXV0b2ZvY3VzEjsKEG'
+    'JhY2tncm91bmRfY29sb3IYEyABKAsyEC5Db2xvckV4cHJlc3Npb25SD2JhY2tncm91bmRDb2xv'
+    'chIcCgllbGV2YXRpb24YFyABKAFSCWVsZXZhdGlvbhIzCgxzaGFkb3dfY29sb3IYGCABKAsyEC'
+    '5Db2xvckV4cHJlc3Npb25SC3NoYWRvd0NvbG9yEj4KEnN1cmZhY2VfdGludF9jb2xvchgZIAEo'
+    'CzIQLkNvbG9yRXhwcmVzc2lvblIQc3VyZmFjZVRpbnRDb2xvchJEChVzZWxlY3RlZF9zaGFkb3'
+    'dfY29sb3IYGyABKAsyEC5Db2xvckV4cHJlc3Npb25SE3NlbGVjdGVkU2hhZG93Q29sb3ISJQoO'
+    'c2hvd19jaGVja21hcmsYHCABKAhSDXNob3dDaGVja21hcmsSOQoPY2hlY2ttYXJrX2NvbG9yGB'
+    '0gASgLMhAuQ29sb3JFeHByZXNzaW9uUg5jaGVja21hcmtDb2xvcg==');
 
 @$core.Deprecated('Use materialChoiceChipNamedElevatedDescriptor instead')
 const MaterialChoiceChipNamedElevated$json = {
@@ -1775,10 +2029,17 @@ const MaterialChoiceChipNamedElevated$json = {
     {'1': 'label', '3': 4, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'label'},
     {'1': 'press_elevation', '3': 8, '4': 1, '5': 1, '10': 'pressElevation'},
     {'1': 'selected', '3': 9, '4': 1, '5': 8, '10': 'selected'},
+    {'1': 'selected_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedColor'},
+    {'1': 'disabled_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
     {'1': 'tooltip', '3': 12, '4': 1, '5': 9, '10': 'tooltip'},
     {'1': 'autofocus', '3': 17, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'background_color', '3': 19, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'elevation', '3': 23, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'shadow_color', '3': 24, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 25, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
+    {'1': 'selected_shadow_color', '3': 27, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedShadowColor'},
     {'1': 'show_checkmark', '3': 28, '4': 1, '5': 8, '10': 'showCheckmark'},
+    {'1': 'checkmark_color', '3': 29, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'checkmarkColor'},
   ],
 };
 
@@ -1788,9 +2049,16 @@ final $typed_data.Uint8List materialChoiceChipNamedElevatedDescriptor = $convert
     'JLZXlFeHByZXNzaW9uUgNrZXkSKQoGYXZhdGFyGAMgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIG'
     'YXZhdGFyEicKBWxhYmVsGAQgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFbGFiZWwSJwoPcHJlc3'
     'NfZWxldmF0aW9uGAggASgBUg5wcmVzc0VsZXZhdGlvbhIaCghzZWxlY3RlZBgJIAEoCFIIc2Vs'
-    'ZWN0ZWQSGAoHdG9vbHRpcBgMIAEoCVIHdG9vbHRpcBIcCglhdXRvZm9jdXMYESABKAhSCWF1dG'
-    '9mb2N1cxIcCgllbGV2YXRpb24YFyABKAFSCWVsZXZhdGlvbhIlCg5zaG93X2NoZWNrbWFyaxgc'
-    'IAEoCFINc2hvd0NoZWNrbWFyaw==');
+    'ZWN0ZWQSNwoOc2VsZWN0ZWRfY29sb3IYCiABKAsyEC5Db2xvckV4cHJlc3Npb25SDXNlbGVjdG'
+    'VkQ29sb3ISNwoOZGlzYWJsZWRfY29sb3IYCyABKAsyEC5Db2xvckV4cHJlc3Npb25SDWRpc2Fi'
+    'bGVkQ29sb3ISGAoHdG9vbHRpcBgMIAEoCVIHdG9vbHRpcBIcCglhdXRvZm9jdXMYESABKAhSCW'
+    'F1dG9mb2N1cxI7ChBiYWNrZ3JvdW5kX2NvbG9yGBMgASgLMhAuQ29sb3JFeHByZXNzaW9uUg9i'
+    'YWNrZ3JvdW5kQ29sb3ISHAoJZWxldmF0aW9uGBcgASgBUgllbGV2YXRpb24SMwoMc2hhZG93X2'
+    'NvbG9yGBggASgLMhAuQ29sb3JFeHByZXNzaW9uUgtzaGFkb3dDb2xvchI+ChJzdXJmYWNlX3Rp'
+    'bnRfY29sb3IYGSABKAsyEC5Db2xvckV4cHJlc3Npb25SEHN1cmZhY2VUaW50Q29sb3ISRAoVc2'
+    'VsZWN0ZWRfc2hhZG93X2NvbG9yGBsgASgLMhAuQ29sb3JFeHByZXNzaW9uUhNzZWxlY3RlZFNo'
+    'YWRvd0NvbG9yEiUKDnNob3dfY2hlY2ttYXJrGBwgASgIUg1zaG93Q2hlY2ttYXJrEjkKD2NoZW'
+    'NrbWFya19jb2xvchgdIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIOY2hlY2ttYXJrQ29sb3I=');
 
 @$core.Deprecated('Use materialCircleAvatarDescriptor instead')
 const MaterialCircleAvatar$json = {
@@ -1798,6 +2066,8 @@ const MaterialCircleAvatar$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
+    {'1': 'background_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'foreground_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'foregroundColor'},
     {'1': 'radius', '3': 10, '4': 1, '5': 1, '10': 'radius'},
     {'1': 'min_radius', '3': 11, '4': 1, '5': 1, '10': 'minRadius'},
     {'1': 'max_radius', '3': 12, '4': 1, '5': 1, '10': 'maxRadius'},
@@ -1807,9 +2077,11 @@ const MaterialCircleAvatar$json = {
 /// Descriptor for `MaterialCircleAvatar`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialCircleAvatarDescriptor = $convert.base64Decode(
     'ChRNYXRlcmlhbENpcmNsZUF2YXRhchInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2'
-    'lvblIDa2V5EicKBWNoaWxkGAMgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFY2hpbGQSFgoGcmFk'
-    'aXVzGAogASgBUgZyYWRpdXMSHQoKbWluX3JhZGl1cxgLIAEoAVIJbWluUmFkaXVzEh0KCm1heF'
-    '9yYWRpdXMYDCABKAFSCW1heFJhZGl1cw==');
+    'lvblIDa2V5EicKBWNoaWxkGAMgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFY2hpbGQSOwoQYmFj'
+    'a2dyb3VuZF9jb2xvchgEIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIPYmFja2dyb3VuZENvbG9yEj'
+    'sKEGZvcmVncm91bmRfY29sb3IYCSABKAsyEC5Db2xvckV4cHJlc3Npb25SD2ZvcmVncm91bmRD'
+    'b2xvchIWCgZyYWRpdXMYCiABKAFSBnJhZGl1cxIdCgptaW5fcmFkaXVzGAsgASgBUgltaW5SYW'
+    'RpdXMSHQoKbWF4X3JhZGl1cxgMIAEoAVIJbWF4UmFkaXVz');
 
 @$core.Deprecated('Use materialTableRowInkWellDescriptor instead')
 const MaterialTableRowInkWell$json = {
@@ -1846,11 +2118,15 @@ const MaterialAlertDialog$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'icon', '3': 3, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'icon'},
+    {'1': 'icon_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'iconColor'},
     {'1': 'title', '3': 6, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'title'},
     {'1': 'content', '3': 9, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'content'},
     {'1': 'actions', '3': 12, '4': 3, '5': 11, '6': '.WidgetExpression', '10': 'actions'},
     {'1': 'actions_overflow_button_spacing', '3': 17, '4': 1, '5': 1, '10': 'actionsOverflowButtonSpacing'},
+    {'1': 'background_color', '3': 19, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'elevation', '3': 20, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'shadow_color', '3': 21, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 22, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
     {'1': 'semantic_label', '3': 23, '4': 1, '5': 9, '10': 'semanticLabel'},
     {'1': 'scrollable', '3': 28, '4': 1, '5': 8, '10': 'scrollable'},
   ],
@@ -1859,13 +2135,17 @@ const MaterialAlertDialog$json = {
 /// Descriptor for `MaterialAlertDialog`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialAlertDialogDescriptor = $convert.base64Decode(
     'ChNNYXRlcmlhbEFsZXJ0RGlhbG9nEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZXNzaW'
-    '9uUgNrZXkSJQoEaWNvbhgDIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBGljb24SJwoFdGl0bGUY'
-    'BiABKAsyES5XaWRnZXRFeHByZXNzaW9uUgV0aXRsZRIrCgdjb250ZW50GAkgASgLMhEuV2lkZ2'
-    'V0RXhwcmVzc2lvblIHY29udGVudBIrCgdhY3Rpb25zGAwgAygLMhEuV2lkZ2V0RXhwcmVzc2lv'
-    'blIHYWN0aW9ucxJFCh9hY3Rpb25zX292ZXJmbG93X2J1dHRvbl9zcGFjaW5nGBEgASgBUhxhY3'
-    'Rpb25zT3ZlcmZsb3dCdXR0b25TcGFjaW5nEhwKCWVsZXZhdGlvbhgUIAEoAVIJZWxldmF0aW9u'
-    'EiUKDnNlbWFudGljX2xhYmVsGBcgASgJUg1zZW1hbnRpY0xhYmVsEh4KCnNjcm9sbGFibGUYHC'
-    'ABKAhSCnNjcm9sbGFibGU=');
+    '9uUgNrZXkSJQoEaWNvbhgDIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBGljb24SLwoKaWNvbl9j'
+    'b2xvchgFIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIJaWNvbkNvbG9yEicKBXRpdGxlGAYgASgLMh'
+    'EuV2lkZ2V0RXhwcmVzc2lvblIFdGl0bGUSKwoHY29udGVudBgJIAEoCzIRLldpZGdldEV4cHJl'
+    'c3Npb25SB2NvbnRlbnQSKwoHYWN0aW9ucxgMIAMoCzIRLldpZGdldEV4cHJlc3Npb25SB2FjdG'
+    'lvbnMSRQofYWN0aW9uc19vdmVyZmxvd19idXR0b25fc3BhY2luZxgRIAEoAVIcYWN0aW9uc092'
+    'ZXJmbG93QnV0dG9uU3BhY2luZxI7ChBiYWNrZ3JvdW5kX2NvbG9yGBMgASgLMhAuQ29sb3JFeH'
+    'ByZXNzaW9uUg9iYWNrZ3JvdW5kQ29sb3ISHAoJZWxldmF0aW9uGBQgASgBUgllbGV2YXRpb24S'
+    'MwoMc2hhZG93X2NvbG9yGBUgASgLMhAuQ29sb3JFeHByZXNzaW9uUgtzaGFkb3dDb2xvchI+Ch'
+    'JzdXJmYWNlX3RpbnRfY29sb3IYFiABKAsyEC5Db2xvckV4cHJlc3Npb25SEHN1cmZhY2VUaW50'
+    'Q29sb3ISJQoOc2VtYW50aWNfbGFiZWwYFyABKAlSDXNlbWFudGljTGFiZWwSHgoKc2Nyb2xsYW'
+    'JsZRgcIAEoCFIKc2Nyb2xsYWJsZQ==');
 
 @$core.Deprecated('Use materialAlertDialogNamedAdaptiveDescriptor instead')
 const MaterialAlertDialogNamedAdaptive$json = {
@@ -1873,11 +2153,15 @@ const MaterialAlertDialogNamedAdaptive$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'icon', '3': 3, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'icon'},
+    {'1': 'icon_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'iconColor'},
     {'1': 'title', '3': 6, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'title'},
     {'1': 'content', '3': 9, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'content'},
     {'1': 'actions', '3': 12, '4': 3, '5': 11, '6': '.WidgetExpression', '10': 'actions'},
     {'1': 'actions_overflow_button_spacing', '3': 17, '4': 1, '5': 1, '10': 'actionsOverflowButtonSpacing'},
+    {'1': 'background_color', '3': 19, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'elevation', '3': 20, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'shadow_color', '3': 21, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 22, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
     {'1': 'semantic_label', '3': 23, '4': 1, '5': 9, '10': 'semanticLabel'},
     {'1': 'scrollable', '3': 28, '4': 1, '5': 8, '10': 'scrollable'},
     {'1': 'inset_animation_duration', '3': 31, '4': 1, '5': 11, '6': '.DurationExpression', '10': 'insetAnimationDuration'},
@@ -1888,20 +2172,28 @@ const MaterialAlertDialogNamedAdaptive$json = {
 final $typed_data.Uint8List materialAlertDialogNamedAdaptiveDescriptor = $convert.base64Decode(
     'CiBNYXRlcmlhbEFsZXJ0RGlhbG9nTmFtZWRBZGFwdGl2ZRInCgNrZXkYAiABKAsyFS5GbHV0dG'
     'VyS2V5RXhwcmVzc2lvblIDa2V5EiUKBGljb24YAyABKAsyES5XaWRnZXRFeHByZXNzaW9uUgRp'
-    'Y29uEicKBXRpdGxlGAYgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFdGl0bGUSKwoHY29udGVudB'
-    'gJIAEoCzIRLldpZGdldEV4cHJlc3Npb25SB2NvbnRlbnQSKwoHYWN0aW9ucxgMIAMoCzIRLldp'
-    'ZGdldEV4cHJlc3Npb25SB2FjdGlvbnMSRQofYWN0aW9uc19vdmVyZmxvd19idXR0b25fc3BhY2'
-    'luZxgRIAEoAVIcYWN0aW9uc092ZXJmbG93QnV0dG9uU3BhY2luZxIcCgllbGV2YXRpb24YFCAB'
-    'KAFSCWVsZXZhdGlvbhIlCg5zZW1hbnRpY19sYWJlbBgXIAEoCVINc2VtYW50aWNMYWJlbBIeCg'
-    'pzY3JvbGxhYmxlGBwgASgIUgpzY3JvbGxhYmxlEk0KGGluc2V0X2FuaW1hdGlvbl9kdXJhdGlv'
-    'bhgfIAEoCzITLkR1cmF0aW9uRXhwcmVzc2lvblIWaW5zZXRBbmltYXRpb25EdXJhdGlvbg==');
+    'Y29uEi8KCmljb25fY29sb3IYBSABKAsyEC5Db2xvckV4cHJlc3Npb25SCWljb25Db2xvchInCg'
+    'V0aXRsZRgGIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBXRpdGxlEisKB2NvbnRlbnQYCSABKAsy'
+    'ES5XaWRnZXRFeHByZXNzaW9uUgdjb250ZW50EisKB2FjdGlvbnMYDCADKAsyES5XaWRnZXRFeH'
+    'ByZXNzaW9uUgdhY3Rpb25zEkUKH2FjdGlvbnNfb3ZlcmZsb3dfYnV0dG9uX3NwYWNpbmcYESAB'
+    'KAFSHGFjdGlvbnNPdmVyZmxvd0J1dHRvblNwYWNpbmcSOwoQYmFja2dyb3VuZF9jb2xvchgTIA'
+    'EoCzIQLkNvbG9yRXhwcmVzc2lvblIPYmFja2dyb3VuZENvbG9yEhwKCWVsZXZhdGlvbhgUIAEo'
+    'AVIJZWxldmF0aW9uEjMKDHNoYWRvd19jb2xvchgVIAEoCzIQLkNvbG9yRXhwcmVzc2lvblILc2'
+    'hhZG93Q29sb3ISPgoSc3VyZmFjZV90aW50X2NvbG9yGBYgASgLMhAuQ29sb3JFeHByZXNzaW9u'
+    'UhBzdXJmYWNlVGludENvbG9yEiUKDnNlbWFudGljX2xhYmVsGBcgASgJUg1zZW1hbnRpY0xhYm'
+    'VsEh4KCnNjcm9sbGFibGUYHCABKAhSCnNjcm9sbGFibGUSTQoYaW5zZXRfYW5pbWF0aW9uX2R1'
+    'cmF0aW9uGB8gASgLMhMuRHVyYXRpb25FeHByZXNzaW9uUhZpbnNldEFuaW1hdGlvbkR1cmF0aW'
+    '9u');
 
 @$core.Deprecated('Use materialDialogDescriptor instead')
 const MaterialDialog$json = {
   '1': 'MaterialDialog',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'background_color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'elevation', '3': 4, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'shadow_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
     {'1': 'inset_animation_duration', '3': 7, '4': 1, '5': 11, '6': '.DurationExpression', '10': 'insetAnimationDuration'},
     {'1': 'child', '3': 13, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
   ],
@@ -1910,15 +2202,19 @@ const MaterialDialog$json = {
 /// Descriptor for `MaterialDialog`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialDialogDescriptor = $convert.base64Decode(
     'Cg5NYXRlcmlhbERpYWxvZxInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2lvblIDa2'
-    'V5EhwKCWVsZXZhdGlvbhgEIAEoAVIJZWxldmF0aW9uEk0KGGluc2V0X2FuaW1hdGlvbl9kdXJh'
-    'dGlvbhgHIAEoCzITLkR1cmF0aW9uRXhwcmVzc2lvblIWaW5zZXRBbmltYXRpb25EdXJhdGlvbh'
-    'InCgVjaGlsZBgNIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBWNoaWxk');
+    'V5EjsKEGJhY2tncm91bmRfY29sb3IYAyABKAsyEC5Db2xvckV4cHJlc3Npb25SD2JhY2tncm91'
+    'bmRDb2xvchIcCgllbGV2YXRpb24YBCABKAFSCWVsZXZhdGlvbhIzCgxzaGFkb3dfY29sb3IYBS'
+    'ABKAsyEC5Db2xvckV4cHJlc3Npb25SC3NoYWRvd0NvbG9yEj4KEnN1cmZhY2VfdGludF9jb2xv'
+    'chgGIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIQc3VyZmFjZVRpbnRDb2xvchJNChhpbnNldF9hbm'
+    'ltYXRpb25fZHVyYXRpb24YByABKAsyEy5EdXJhdGlvbkV4cHJlc3Npb25SFmluc2V0QW5pbWF0'
+    'aW9uRHVyYXRpb24SJwoFY2hpbGQYDSABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVjaGlsZA==');
 
 @$core.Deprecated('Use materialDialogNamedFullscreenDescriptor instead')
 const MaterialDialogNamedFullscreen$json = {
   '1': 'MaterialDialogNamedFullscreen',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'background_color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'inset_animation_duration', '3': 4, '4': 1, '5': 11, '6': '.DurationExpression', '10': 'insetAnimationDuration'},
     {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
   ],
@@ -1927,9 +2223,10 @@ const MaterialDialogNamedFullscreen$json = {
 /// Descriptor for `MaterialDialogNamedFullscreen`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialDialogNamedFullscreenDescriptor = $convert.base64Decode(
     'Ch1NYXRlcmlhbERpYWxvZ05hbWVkRnVsbHNjcmVlbhInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2'
-    'V5RXhwcmVzc2lvblIDa2V5Ek0KGGluc2V0X2FuaW1hdGlvbl9kdXJhdGlvbhgEIAEoCzITLkR1'
-    'cmF0aW9uRXhwcmVzc2lvblIWaW5zZXRBbmltYXRpb25EdXJhdGlvbhInCgVjaGlsZBgGIAEoCz'
-    'IRLldpZGdldEV4cHJlc3Npb25SBWNoaWxk');
+    'V5RXhwcmVzc2lvblIDa2V5EjsKEGJhY2tncm91bmRfY29sb3IYAyABKAsyEC5Db2xvckV4cHJl'
+    'c3Npb25SD2JhY2tncm91bmRDb2xvchJNChhpbnNldF9hbmltYXRpb25fZHVyYXRpb24YBCABKA'
+    'syEy5EdXJhdGlvbkV4cHJlc3Npb25SFmluc2V0QW5pbWF0aW9uRHVyYXRpb24SJwoFY2hpbGQY'
+    'BiABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVjaGlsZA==');
 
 @$core.Deprecated('Use materialSimpleDialogDescriptor instead')
 const MaterialSimpleDialog$json = {
@@ -1938,7 +2235,10 @@ const MaterialSimpleDialog$json = {
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'title', '3': 3, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'title'},
     {'1': 'children', '3': 6, '4': 3, '5': 11, '6': '.WidgetExpression', '10': 'children'},
+    {'1': 'background_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'elevation', '3': 9, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'shadow_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
     {'1': 'semantic_label', '3': 12, '4': 1, '5': 9, '10': 'semanticLabel'},
   ],
 };
@@ -1947,8 +2247,12 @@ const MaterialSimpleDialog$json = {
 final $typed_data.Uint8List materialSimpleDialogDescriptor = $convert.base64Decode(
     'ChRNYXRlcmlhbFNpbXBsZURpYWxvZxInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2'
     'lvblIDa2V5EicKBXRpdGxlGAMgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFdGl0bGUSLQoIY2hp'
-    'bGRyZW4YBiADKAsyES5XaWRnZXRFeHByZXNzaW9uUghjaGlsZHJlbhIcCgllbGV2YXRpb24YCS'
-    'ABKAFSCWVsZXZhdGlvbhIlCg5zZW1hbnRpY19sYWJlbBgMIAEoCVINc2VtYW50aWNMYWJlbA==');
+    'bGRyZW4YBiADKAsyES5XaWRnZXRFeHByZXNzaW9uUghjaGlsZHJlbhI7ChBiYWNrZ3JvdW5kX2'
+    'NvbG9yGAggASgLMhAuQ29sb3JFeHByZXNzaW9uUg9iYWNrZ3JvdW5kQ29sb3ISHAoJZWxldmF0'
+    'aW9uGAkgASgBUgllbGV2YXRpb24SMwoMc2hhZG93X2NvbG9yGAogASgLMhAuQ29sb3JFeHByZX'
+    'NzaW9uUgtzaGFkb3dDb2xvchI+ChJzdXJmYWNlX3RpbnRfY29sb3IYCyABKAsyEC5Db2xvckV4'
+    'cHJlc3Npb25SEHN1cmZhY2VUaW50Q29sb3ISJQoOc2VtYW50aWNfbGFiZWwYDCABKAlSDXNlbW'
+    'FudGljTGFiZWw=');
 
 @$core.Deprecated('Use materialSimpleDialogOptionDescriptor instead')
 const MaterialSimpleDialogOption$json = {
@@ -1973,6 +2277,7 @@ const MaterialDivider$json = {
     {'1': 'thickness', '3': 4, '4': 1, '5': 1, '10': 'thickness'},
     {'1': 'indent', '3': 5, '4': 1, '5': 1, '10': 'indent'},
     {'1': 'end_indent', '3': 6, '4': 1, '5': 1, '10': 'endIndent'},
+    {'1': 'color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
   ],
 };
 
@@ -1981,7 +2286,7 @@ final $typed_data.Uint8List materialDividerDescriptor = $convert.base64Decode(
     'Cg9NYXRlcmlhbERpdmlkZXISJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb25SA2'
     'tleRIWCgZoZWlnaHQYAyABKAFSBmhlaWdodBIcCgl0aGlja25lc3MYBCABKAFSCXRoaWNrbmVz'
     'cxIWCgZpbmRlbnQYBSABKAFSBmluZGVudBIdCgplbmRfaW5kZW50GAYgASgBUgllbmRJbmRlbn'
-    'Q=');
+    'QSJgoFY29sb3IYByABKAsyEC5Db2xvckV4cHJlc3Npb25SBWNvbG9y');
 
 @$core.Deprecated('Use materialVerticalDividerDescriptor instead')
 const MaterialVerticalDivider$json = {
@@ -1992,6 +2297,7 @@ const MaterialVerticalDivider$json = {
     {'1': 'thickness', '3': 4, '4': 1, '5': 1, '10': 'thickness'},
     {'1': 'indent', '3': 5, '4': 1, '5': 1, '10': 'indent'},
     {'1': 'end_indent', '3': 6, '4': 1, '5': 1, '10': 'endIndent'},
+    {'1': 'color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
   ],
 };
 
@@ -2000,14 +2306,17 @@ final $typed_data.Uint8List materialVerticalDividerDescriptor = $convert.base64D
     'ChdNYXRlcmlhbFZlcnRpY2FsRGl2aWRlchInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcm'
     'Vzc2lvblIDa2V5EhQKBXdpZHRoGAMgASgBUgV3aWR0aBIcCgl0aGlja25lc3MYBCABKAFSCXRo'
     'aWNrbmVzcxIWCgZpbmRlbnQYBSABKAFSBmluZGVudBIdCgplbmRfaW5kZW50GAYgASgBUgllbm'
-    'RJbmRlbnQ=');
+    'RJbmRlbnQSJgoFY29sb3IYByABKAsyEC5Db2xvckV4cHJlc3Npb25SBWNvbG9y');
 
 @$core.Deprecated('Use materialDrawerDescriptor instead')
 const MaterialDrawer$json = {
   '1': 'MaterialDrawer',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'background_color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'elevation', '3': 4, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'shadow_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
     {'1': 'width', '3': 8, '4': 1, '5': 1, '10': 'width'},
     {'1': 'child', '3': 9, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
     {'1': 'semantic_label', '3': 10, '4': 1, '5': 9, '10': 'semanticLabel'},
@@ -2017,9 +2326,12 @@ const MaterialDrawer$json = {
 /// Descriptor for `MaterialDrawer`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialDrawerDescriptor = $convert.base64Decode(
     'Cg5NYXRlcmlhbERyYXdlchInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2lvblIDa2'
-    'V5EhwKCWVsZXZhdGlvbhgEIAEoAVIJZWxldmF0aW9uEhQKBXdpZHRoGAggASgBUgV3aWR0aBIn'
-    'CgVjaGlsZBgJIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBWNoaWxkEiUKDnNlbWFudGljX2xhYm'
-    'VsGAogASgJUg1zZW1hbnRpY0xhYmVs');
+    'V5EjsKEGJhY2tncm91bmRfY29sb3IYAyABKAsyEC5Db2xvckV4cHJlc3Npb25SD2JhY2tncm91'
+    'bmRDb2xvchIcCgllbGV2YXRpb24YBCABKAFSCWVsZXZhdGlvbhIzCgxzaGFkb3dfY29sb3IYBS'
+    'ABKAsyEC5Db2xvckV4cHJlc3Npb25SC3NoYWRvd0NvbG9yEj4KEnN1cmZhY2VfdGludF9jb2xv'
+    'chgGIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIQc3VyZmFjZVRpbnRDb2xvchIUCgV3aWR0aBgIIA'
+    'EoAVIFd2lkdGgSJwoFY2hpbGQYCSABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVjaGlsZBIlCg5z'
+    'ZW1hbnRpY19sYWJlbBgKIAEoCVINc2VtYW50aWNMYWJlbA==');
 
 @$core.Deprecated('Use materialDrawerHeaderDescriptor instead')
 const MaterialDrawerHeader$json = {
@@ -2047,11 +2359,15 @@ const MaterialDropdownButton$json = {
     {'1': 'elevation', '3': 10, '4': 1, '5': 5, '10': 'elevation'},
     {'1': 'underline', '3': 12, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'underline'},
     {'1': 'icon', '3': 13, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'icon'},
+    {'1': 'icon_disabled_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'iconDisabledColor'},
+    {'1': 'icon_enabled_color', '3': 15, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'iconEnabledColor'},
     {'1': 'icon_size', '3': 16, '4': 1, '5': 1, '10': 'iconSize'},
     {'1': 'is_dense', '3': 17, '4': 1, '5': 8, '10': 'isDense'},
     {'1': 'is_expanded', '3': 18, '4': 1, '5': 8, '10': 'isExpanded'},
     {'1': 'item_height', '3': 19, '4': 1, '5': 1, '10': 'itemHeight'},
+    {'1': 'focus_color', '3': 20, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
     {'1': 'autofocus', '3': 22, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'dropdown_color', '3': 23, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'dropdownColor'},
     {'1': 'menu_max_height', '3': 24, '4': 1, '5': 1, '10': 'menuMaxHeight'},
     {'1': 'enable_feedback', '3': 25, '4': 1, '5': 8, '10': 'enableFeedback'},
   ],
@@ -2064,11 +2380,15 @@ final $typed_data.Uint8List materialDropdownButtonDescriptor = $convert.base64De
     'YWJsZWRfaGludBgHIAEoCzIRLldpZGdldEV4cHJlc3Npb25SDGRpc2FibGVkSGludBIcCgllbG'
     'V2YXRpb24YCiABKAVSCWVsZXZhdGlvbhIvCgl1bmRlcmxpbmUYDCABKAsyES5XaWRnZXRFeHBy'
     'ZXNzaW9uUgl1bmRlcmxpbmUSJQoEaWNvbhgNIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBGljb2'
-    '4SGwoJaWNvbl9zaXplGBAgASgBUghpY29uU2l6ZRIZCghpc19kZW5zZRgRIAEoCFIHaXNEZW5z'
-    'ZRIfCgtpc19leHBhbmRlZBgSIAEoCFIKaXNFeHBhbmRlZBIfCgtpdGVtX2hlaWdodBgTIAEoAV'
-    'IKaXRlbUhlaWdodBIcCglhdXRvZm9jdXMYFiABKAhSCWF1dG9mb2N1cxImCg9tZW51X21heF9o'
-    'ZWlnaHQYGCABKAFSDW1lbnVNYXhIZWlnaHQSJwoPZW5hYmxlX2ZlZWRiYWNrGBkgASgIUg5lbm'
-    'FibGVGZWVkYmFjaw==');
+    '4SQAoTaWNvbl9kaXNhYmxlZF9jb2xvchgOIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIRaWNvbkRp'
+    'c2FibGVkQ29sb3ISPgoSaWNvbl9lbmFibGVkX2NvbG9yGA8gASgLMhAuQ29sb3JFeHByZXNzaW'
+    '9uUhBpY29uRW5hYmxlZENvbG9yEhsKCWljb25fc2l6ZRgQIAEoAVIIaWNvblNpemUSGQoIaXNf'
+    'ZGVuc2UYESABKAhSB2lzRGVuc2USHwoLaXNfZXhwYW5kZWQYEiABKAhSCmlzRXhwYW5kZWQSHw'
+    'oLaXRlbV9oZWlnaHQYEyABKAFSCml0ZW1IZWlnaHQSMQoLZm9jdXNfY29sb3IYFCABKAsyEC5D'
+    'b2xvckV4cHJlc3Npb25SCmZvY3VzQ29sb3ISHAoJYXV0b2ZvY3VzGBYgASgIUglhdXRvZm9jdX'
+    'MSNwoOZHJvcGRvd25fY29sb3IYFyABKAsyEC5Db2xvckV4cHJlc3Npb25SDWRyb3Bkb3duQ29s'
+    'b3ISJgoPbWVudV9tYXhfaGVpZ2h0GBggASgBUg1tZW51TWF4SGVpZ2h0EicKD2VuYWJsZV9mZW'
+    'VkYmFjaxgZIAEoCFIOZW5hYmxlRmVlZGJhY2s=');
 
 @$core.Deprecated('Use materialDropdownButtonFormFieldDescriptor instead')
 const MaterialDropdownButtonFormField$json = {
@@ -2079,11 +2399,15 @@ const MaterialDropdownButtonFormField$json = {
     {'1': 'disabled_hint', '3': 7, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'disabledHint'},
     {'1': 'elevation', '3': 10, '4': 1, '5': 5, '10': 'elevation'},
     {'1': 'icon', '3': 12, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'icon'},
+    {'1': 'icon_disabled_color', '3': 13, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'iconDisabledColor'},
+    {'1': 'icon_enabled_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'iconEnabledColor'},
     {'1': 'icon_size', '3': 15, '4': 1, '5': 1, '10': 'iconSize'},
     {'1': 'is_dense', '3': 16, '4': 1, '5': 8, '10': 'isDense'},
     {'1': 'is_expanded', '3': 17, '4': 1, '5': 8, '10': 'isExpanded'},
     {'1': 'item_height', '3': 18, '4': 1, '5': 1, '10': 'itemHeight'},
+    {'1': 'focus_color', '3': 19, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
     {'1': 'autofocus', '3': 21, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'dropdown_color', '3': 22, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'dropdownColor'},
     {'1': 'menu_max_height', '3': 27, '4': 1, '5': 1, '10': 'menuMaxHeight'},
     {'1': 'enable_feedback', '3': 28, '4': 1, '5': 8, '10': 'enableFeedback'},
   ],
@@ -2095,11 +2419,15 @@ final $typed_data.Uint8List materialDropdownButtonFormFieldDescriptor = $convert
     'JLZXlFeHByZXNzaW9uUgNrZXkSJQoEaGludBgGIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBGhp'
     'bnQSNgoNZGlzYWJsZWRfaGludBgHIAEoCzIRLldpZGdldEV4cHJlc3Npb25SDGRpc2FibGVkSG'
     'ludBIcCgllbGV2YXRpb24YCiABKAVSCWVsZXZhdGlvbhIlCgRpY29uGAwgASgLMhEuV2lkZ2V0'
-    'RXhwcmVzc2lvblIEaWNvbhIbCglpY29uX3NpemUYDyABKAFSCGljb25TaXplEhkKCGlzX2Rlbn'
-    'NlGBAgASgIUgdpc0RlbnNlEh8KC2lzX2V4cGFuZGVkGBEgASgIUgppc0V4cGFuZGVkEh8KC2l0'
-    'ZW1faGVpZ2h0GBIgASgBUgppdGVtSGVpZ2h0EhwKCWF1dG9mb2N1cxgVIAEoCFIJYXV0b2ZvY3'
-    'VzEiYKD21lbnVfbWF4X2hlaWdodBgbIAEoAVINbWVudU1heEhlaWdodBInCg9lbmFibGVfZmVl'
-    'ZGJhY2sYHCABKAhSDmVuYWJsZUZlZWRiYWNr');
+    'RXhwcmVzc2lvblIEaWNvbhJAChNpY29uX2Rpc2FibGVkX2NvbG9yGA0gASgLMhAuQ29sb3JFeH'
+    'ByZXNzaW9uUhFpY29uRGlzYWJsZWRDb2xvchI+ChJpY29uX2VuYWJsZWRfY29sb3IYDiABKAsy'
+    'EC5Db2xvckV4cHJlc3Npb25SEGljb25FbmFibGVkQ29sb3ISGwoJaWNvbl9zaXplGA8gASgBUg'
+    'hpY29uU2l6ZRIZCghpc19kZW5zZRgQIAEoCFIHaXNEZW5zZRIfCgtpc19leHBhbmRlZBgRIAEo'
+    'CFIKaXNFeHBhbmRlZBIfCgtpdGVtX2hlaWdodBgSIAEoAVIKaXRlbUhlaWdodBIxCgtmb2N1c1'
+    '9jb2xvchgTIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIKZm9jdXNDb2xvchIcCglhdXRvZm9jdXMY'
+    'FSABKAhSCWF1dG9mb2N1cxI3Cg5kcm9wZG93bl9jb2xvchgWIAEoCzIQLkNvbG9yRXhwcmVzc2'
+    'lvblINZHJvcGRvd25Db2xvchImCg9tZW51X21heF9oZWlnaHQYGyABKAFSDW1lbnVNYXhIZWln'
+    'aHQSJwoPZW5hYmxlX2ZlZWRiYWNrGBwgASgIUg5lbmFibGVGZWVkYmFjaw==');
 
 @$core.Deprecated('Use materialDropdownButtonHideUnderlineDescriptor instead')
 const MaterialDropdownButtonHideUnderline$json = {
@@ -2173,6 +2501,9 @@ const MaterialExpandIcon$json = {
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'is_expanded', '3': 3, '4': 1, '5': 8, '10': 'isExpanded'},
     {'1': 'size', '3': 4, '4': 1, '5': 1, '10': 'size'},
+    {'1': 'color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
+    {'1': 'disabled_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
+    {'1': 'expanded_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'expandedColor'},
   ],
 };
 
@@ -2180,7 +2511,9 @@ const MaterialExpandIcon$json = {
 final $typed_data.Uint8List materialExpandIconDescriptor = $convert.base64Decode(
     'ChJNYXRlcmlhbEV4cGFuZEljb24SJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb2'
     '5SA2tleRIfCgtpc19leHBhbmRlZBgDIAEoCFIKaXNFeHBhbmRlZBISCgRzaXplGAQgASgBUgRz'
-    'aXpl');
+    'aXplEiYKBWNvbG9yGAcgASgLMhAuQ29sb3JFeHByZXNzaW9uUgVjb2xvchI3Cg5kaXNhYmxlZF'
+    '9jb2xvchgIIAEoCzIQLkNvbG9yRXhwcmVzc2lvblINZGlzYWJsZWRDb2xvchI3Cg5leHBhbmRl'
+    'ZF9jb2xvchgJIAEoCzIQLkNvbG9yRXhwcmVzc2lvblINZXhwYW5kZWRDb2xvcg==');
 
 @$core.Deprecated('Use materialExpansionPanelListDescriptor instead')
 const MaterialExpansionPanelList$json = {
@@ -2188,7 +2521,9 @@ const MaterialExpansionPanelList$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'animation_duration', '3': 5, '4': 1, '5': 11, '6': '.DurationExpression', '10': 'animationDuration'},
+    {'1': 'divider_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'dividerColor'},
     {'1': 'elevation', '3': 8, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'expand_icon_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'expandIconColor'},
     {'1': 'material_gap_size', '3': 10, '4': 1, '5': 1, '10': 'materialGapSize'},
   ],
 };
@@ -2197,8 +2532,10 @@ const MaterialExpansionPanelList$json = {
 final $typed_data.Uint8List materialExpansionPanelListDescriptor = $convert.base64Decode(
     'ChpNYXRlcmlhbEV4cGFuc2lvblBhbmVsTGlzdBInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RX'
     'hwcmVzc2lvblIDa2V5EkIKEmFuaW1hdGlvbl9kdXJhdGlvbhgFIAEoCzITLkR1cmF0aW9uRXhw'
-    'cmVzc2lvblIRYW5pbWF0aW9uRHVyYXRpb24SHAoJZWxldmF0aW9uGAggASgBUgllbGV2YXRpb2'
-    '4SKgoRbWF0ZXJpYWxfZ2FwX3NpemUYCiABKAFSD21hdGVyaWFsR2FwU2l6ZQ==');
+    'cmVzc2lvblIRYW5pbWF0aW9uRHVyYXRpb24SNQoNZGl2aWRlcl9jb2xvchgHIAEoCzIQLkNvbG'
+    '9yRXhwcmVzc2lvblIMZGl2aWRlckNvbG9yEhwKCWVsZXZhdGlvbhgIIAEoAVIJZWxldmF0aW9u'
+    'EjwKEWV4cGFuZF9pY29uX2NvbG9yGAkgASgLMhAuQ29sb3JFeHByZXNzaW9uUg9leHBhbmRJY2'
+    '9uQ29sb3ISKgoRbWF0ZXJpYWxfZ2FwX3NpemUYCiABKAFSD21hdGVyaWFsR2FwU2l6ZQ==');
 
 @$core.Deprecated('Use materialExpansionPanelListNamedRadioDescriptor instead')
 const MaterialExpansionPanelListNamedRadio$json = {
@@ -2206,7 +2543,9 @@ const MaterialExpansionPanelListNamedRadio$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'animation_duration', '3': 5, '4': 1, '5': 11, '6': '.DurationExpression', '10': 'animationDuration'},
+    {'1': 'divider_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'dividerColor'},
     {'1': 'elevation', '3': 9, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'expand_icon_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'expandIconColor'},
     {'1': 'material_gap_size', '3': 11, '4': 1, '5': 1, '10': 'materialGapSize'},
   ],
 };
@@ -2215,8 +2554,11 @@ const MaterialExpansionPanelListNamedRadio$json = {
 final $typed_data.Uint8List materialExpansionPanelListNamedRadioDescriptor = $convert.base64Decode(
     'CiRNYXRlcmlhbEV4cGFuc2lvblBhbmVsTGlzdE5hbWVkUmFkaW8SJwoDa2V5GAIgASgLMhUuRm'
     'x1dHRlcktleUV4cHJlc3Npb25SA2tleRJCChJhbmltYXRpb25fZHVyYXRpb24YBSABKAsyEy5E'
-    'dXJhdGlvbkV4cHJlc3Npb25SEWFuaW1hdGlvbkR1cmF0aW9uEhwKCWVsZXZhdGlvbhgJIAEoAV'
-    'IJZWxldmF0aW9uEioKEW1hdGVyaWFsX2dhcF9zaXplGAsgASgBUg9tYXRlcmlhbEdhcFNpemU=');
+    'dXJhdGlvbkV4cHJlc3Npb25SEWFuaW1hdGlvbkR1cmF0aW9uEjUKDWRpdmlkZXJfY29sb3IYCC'
+    'ABKAsyEC5Db2xvckV4cHJlc3Npb25SDGRpdmlkZXJDb2xvchIcCgllbGV2YXRpb24YCSABKAFS'
+    'CWVsZXZhdGlvbhI8ChFleHBhbmRfaWNvbl9jb2xvchgKIAEoCzIQLkNvbG9yRXhwcmVzc2lvbl'
+    'IPZXhwYW5kSWNvbkNvbG9yEioKEW1hdGVyaWFsX2dhcF9zaXplGAsgASgBUg9tYXRlcmlhbEdh'
+    'cFNpemU=');
 
 @$core.Deprecated('Use materialExpansionTileDescriptor instead')
 const MaterialExpansionTile$json = {
@@ -2230,6 +2572,12 @@ const MaterialExpansionTile$json = {
     {'1': 'trailing', '3': 8, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'trailing'},
     {'1': 'initially_expanded', '3': 9, '4': 1, '5': 8, '10': 'initiallyExpanded'},
     {'1': 'maintain_state', '3': 10, '4': 1, '5': 8, '10': 'maintainState'},
+    {'1': 'background_color', '3': 15, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'collapsed_background_color', '3': 16, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'collapsedBackgroundColor'},
+    {'1': 'text_color', '3': 17, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'textColor'},
+    {'1': 'collapsed_text_color', '3': 18, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'collapsedTextColor'},
+    {'1': 'icon_color', '3': 19, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'iconColor'},
+    {'1': 'collapsed_icon_color', '3': 20, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'collapsedIconColor'},
   ],
 };
 
@@ -2241,7 +2589,14 @@ final $typed_data.Uint8List materialExpansionTileDescriptor = $convert.base64Dec
     'gLMhEuV2lkZ2V0RXhwcmVzc2lvblIIc3VidGl0bGUSLQoIY2hpbGRyZW4YByADKAsyES5XaWRn'
     'ZXRFeHByZXNzaW9uUghjaGlsZHJlbhItCgh0cmFpbGluZxgIIAEoCzIRLldpZGdldEV4cHJlc3'
     'Npb25SCHRyYWlsaW5nEi0KEmluaXRpYWxseV9leHBhbmRlZBgJIAEoCFIRaW5pdGlhbGx5RXhw'
-    'YW5kZWQSJQoObWFpbnRhaW5fc3RhdGUYCiABKAhSDW1haW50YWluU3RhdGU=');
+    'YW5kZWQSJQoObWFpbnRhaW5fc3RhdGUYCiABKAhSDW1haW50YWluU3RhdGUSOwoQYmFja2dyb3'
+    'VuZF9jb2xvchgPIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIPYmFja2dyb3VuZENvbG9yEk4KGmNv'
+    'bGxhcHNlZF9iYWNrZ3JvdW5kX2NvbG9yGBAgASgLMhAuQ29sb3JFeHByZXNzaW9uUhhjb2xsYX'
+    'BzZWRCYWNrZ3JvdW5kQ29sb3ISLwoKdGV4dF9jb2xvchgRIAEoCzIQLkNvbG9yRXhwcmVzc2lv'
+    'blIJdGV4dENvbG9yEkIKFGNvbGxhcHNlZF90ZXh0X2NvbG9yGBIgASgLMhAuQ29sb3JFeHByZX'
+    'NzaW9uUhJjb2xsYXBzZWRUZXh0Q29sb3ISLwoKaWNvbl9jb2xvchgTIAEoCzIQLkNvbG9yRXhw'
+    'cmVzc2lvblIJaWNvbkNvbG9yEkIKFGNvbGxhcHNlZF9pY29uX2NvbG9yGBQgASgLMhAuQ29sb3'
+    'JFeHByZXNzaW9uUhJjb2xsYXBzZWRJY29uQ29sb3I=');
 
 @$core.Deprecated('Use materialFilledButtonDescriptor instead')
 const MaterialFilledButton$json = {
@@ -2320,10 +2675,17 @@ const MaterialFilterChip$json = {
     {'1': 'label', '3': 4, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'label'},
     {'1': 'selected', '3': 7, '4': 1, '5': 8, '10': 'selected'},
     {'1': 'press_elevation', '3': 9, '4': 1, '5': 1, '10': 'pressElevation'},
+    {'1': 'disabled_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
+    {'1': 'selected_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedColor'},
     {'1': 'tooltip', '3': 12, '4': 1, '5': 9, '10': 'tooltip'},
     {'1': 'autofocus', '3': 17, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'background_color', '3': 19, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'elevation', '3': 23, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'shadow_color', '3': 24, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 25, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
+    {'1': 'selected_shadow_color', '3': 27, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedShadowColor'},
     {'1': 'show_checkmark', '3': 28, '4': 1, '5': 8, '10': 'showCheckmark'},
+    {'1': 'checkmark_color', '3': 29, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'checkmarkColor'},
   ],
 };
 
@@ -2332,10 +2694,17 @@ final $typed_data.Uint8List materialFilterChipDescriptor = $convert.base64Decode
     'ChJNYXRlcmlhbEZpbHRlckNoaXASJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb2'
     '5SA2tleRIpCgZhdmF0YXIYAyABKAsyES5XaWRnZXRFeHByZXNzaW9uUgZhdmF0YXISJwoFbGFi'
     'ZWwYBCABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVsYWJlbBIaCghzZWxlY3RlZBgHIAEoCFIIc2'
-    'VsZWN0ZWQSJwoPcHJlc3NfZWxldmF0aW9uGAkgASgBUg5wcmVzc0VsZXZhdGlvbhIYCgd0b29s'
-    'dGlwGAwgASgJUgd0b29sdGlwEhwKCWF1dG9mb2N1cxgRIAEoCFIJYXV0b2ZvY3VzEhwKCWVsZX'
-    'ZhdGlvbhgXIAEoAVIJZWxldmF0aW9uEiUKDnNob3dfY2hlY2ttYXJrGBwgASgIUg1zaG93Q2hl'
-    'Y2ttYXJr');
+    'VsZWN0ZWQSJwoPcHJlc3NfZWxldmF0aW9uGAkgASgBUg5wcmVzc0VsZXZhdGlvbhI3Cg5kaXNh'
+    'YmxlZF9jb2xvchgKIAEoCzIQLkNvbG9yRXhwcmVzc2lvblINZGlzYWJsZWRDb2xvchI3Cg5zZW'
+    'xlY3RlZF9jb2xvchgLIAEoCzIQLkNvbG9yRXhwcmVzc2lvblINc2VsZWN0ZWRDb2xvchIYCgd0'
+    'b29sdGlwGAwgASgJUgd0b29sdGlwEhwKCWF1dG9mb2N1cxgRIAEoCFIJYXV0b2ZvY3VzEjsKEG'
+    'JhY2tncm91bmRfY29sb3IYEyABKAsyEC5Db2xvckV4cHJlc3Npb25SD2JhY2tncm91bmRDb2xv'
+    'chIcCgllbGV2YXRpb24YFyABKAFSCWVsZXZhdGlvbhIzCgxzaGFkb3dfY29sb3IYGCABKAsyEC'
+    '5Db2xvckV4cHJlc3Npb25SC3NoYWRvd0NvbG9yEj4KEnN1cmZhY2VfdGludF9jb2xvchgZIAEo'
+    'CzIQLkNvbG9yRXhwcmVzc2lvblIQc3VyZmFjZVRpbnRDb2xvchJEChVzZWxlY3RlZF9zaGFkb3'
+    'dfY29sb3IYGyABKAsyEC5Db2xvckV4cHJlc3Npb25SE3NlbGVjdGVkU2hhZG93Q29sb3ISJQoO'
+    'c2hvd19jaGVja21hcmsYHCABKAhSDXNob3dDaGVja21hcmsSOQoPY2hlY2ttYXJrX2NvbG9yGB'
+    '0gASgLMhAuQ29sb3JFeHByZXNzaW9uUg5jaGVja21hcmtDb2xvcg==');
 
 @$core.Deprecated('Use materialFilterChipNamedElevatedDescriptor instead')
 const MaterialFilterChipNamedElevated$json = {
@@ -2346,10 +2715,17 @@ const MaterialFilterChipNamedElevated$json = {
     {'1': 'label', '3': 4, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'label'},
     {'1': 'selected', '3': 7, '4': 1, '5': 8, '10': 'selected'},
     {'1': 'press_elevation', '3': 9, '4': 1, '5': 1, '10': 'pressElevation'},
+    {'1': 'disabled_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
+    {'1': 'selected_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedColor'},
     {'1': 'tooltip', '3': 12, '4': 1, '5': 9, '10': 'tooltip'},
     {'1': 'autofocus', '3': 17, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'background_color', '3': 19, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'elevation', '3': 23, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'shadow_color', '3': 24, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 25, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
+    {'1': 'selected_shadow_color', '3': 27, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedShadowColor'},
     {'1': 'show_checkmark', '3': 28, '4': 1, '5': 8, '10': 'showCheckmark'},
+    {'1': 'checkmark_color', '3': 29, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'checkmarkColor'},
   ],
 };
 
@@ -2359,9 +2735,16 @@ final $typed_data.Uint8List materialFilterChipNamedElevatedDescriptor = $convert
     'JLZXlFeHByZXNzaW9uUgNrZXkSKQoGYXZhdGFyGAMgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIG'
     'YXZhdGFyEicKBWxhYmVsGAQgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFbGFiZWwSGgoIc2VsZW'
     'N0ZWQYByABKAhSCHNlbGVjdGVkEicKD3ByZXNzX2VsZXZhdGlvbhgJIAEoAVIOcHJlc3NFbGV2'
-    'YXRpb24SGAoHdG9vbHRpcBgMIAEoCVIHdG9vbHRpcBIcCglhdXRvZm9jdXMYESABKAhSCWF1dG'
-    '9mb2N1cxIcCgllbGV2YXRpb24YFyABKAFSCWVsZXZhdGlvbhIlCg5zaG93X2NoZWNrbWFyaxgc'
-    'IAEoCFINc2hvd0NoZWNrbWFyaw==');
+    'YXRpb24SNwoOZGlzYWJsZWRfY29sb3IYCiABKAsyEC5Db2xvckV4cHJlc3Npb25SDWRpc2FibG'
+    'VkQ29sb3ISNwoOc2VsZWN0ZWRfY29sb3IYCyABKAsyEC5Db2xvckV4cHJlc3Npb25SDXNlbGVj'
+    'dGVkQ29sb3ISGAoHdG9vbHRpcBgMIAEoCVIHdG9vbHRpcBIcCglhdXRvZm9jdXMYESABKAhSCW'
+    'F1dG9mb2N1cxI7ChBiYWNrZ3JvdW5kX2NvbG9yGBMgASgLMhAuQ29sb3JFeHByZXNzaW9uUg9i'
+    'YWNrZ3JvdW5kQ29sb3ISHAoJZWxldmF0aW9uGBcgASgBUgllbGV2YXRpb24SMwoMc2hhZG93X2'
+    'NvbG9yGBggASgLMhAuQ29sb3JFeHByZXNzaW9uUgtzaGFkb3dDb2xvchI+ChJzdXJmYWNlX3Rp'
+    'bnRfY29sb3IYGSABKAsyEC5Db2xvckV4cHJlc3Npb25SEHN1cmZhY2VUaW50Q29sb3ISRAoVc2'
+    'VsZWN0ZWRfc2hhZG93X2NvbG9yGBsgASgLMhAuQ29sb3JFeHByZXNzaW9uUhNzZWxlY3RlZFNo'
+    'YWRvd0NvbG9yEiUKDnNob3dfY2hlY2ttYXJrGBwgASgIUg1zaG93Q2hlY2ttYXJrEjkKD2NoZW'
+    'NrbWFya19jb2xvchgdIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIOY2hlY2ttYXJrQ29sb3I=');
 
 @$core.Deprecated('Use materialFlexibleSpaceBarDescriptor instead')
 const MaterialFlexibleSpaceBar$json = {
@@ -2413,6 +2796,11 @@ const MaterialFloatingActionButton$json = {
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
     {'1': 'tooltip', '3': 4, '4': 1, '5': 9, '10': 'tooltip'},
+    {'1': 'foreground_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'foregroundColor'},
+    {'1': 'background_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'focus_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
+    {'1': 'splash_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'splashColor'},
     {'1': 'elevation', '3': 11, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'focus_elevation', '3': 12, '4': 1, '5': 1, '10': 'focusElevation'},
     {'1': 'hover_elevation', '3': 13, '4': 1, '5': 1, '10': 'hoverElevation'},
@@ -2429,13 +2817,18 @@ const MaterialFloatingActionButton$json = {
 final $typed_data.Uint8List materialFloatingActionButtonDescriptor = $convert.base64Decode(
     'ChxNYXRlcmlhbEZsb2F0aW5nQWN0aW9uQnV0dG9uEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZX'
     'lFeHByZXNzaW9uUgNrZXkSJwoFY2hpbGQYAyABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVjaGls'
-    'ZBIYCgd0b29sdGlwGAQgASgJUgd0b29sdGlwEhwKCWVsZXZhdGlvbhgLIAEoAVIJZWxldmF0aW'
-    '9uEicKD2ZvY3VzX2VsZXZhdGlvbhgMIAEoAVIOZm9jdXNFbGV2YXRpb24SJwoPaG92ZXJfZWxl'
-    'dmF0aW9uGA0gASgBUg5ob3ZlckVsZXZhdGlvbhIvChNoaWdobGlnaHRfZWxldmF0aW9uGA4gAS'
-    'gBUhJoaWdobGlnaHRFbGV2YXRpb24SLQoSZGlzYWJsZWRfZWxldmF0aW9uGA8gASgBUhFkaXNh'
-    'YmxlZEVsZXZhdGlvbhISCgRtaW5pGBIgASgIUgRtaW5pEhwKCWF1dG9mb2N1cxgWIAEoCFIJYX'
-    'V0b2ZvY3VzEh8KC2lzX2V4dGVuZGVkGBggASgIUgppc0V4dGVuZGVkEicKD2VuYWJsZV9mZWVk'
-    'YmFjaxgZIAEoCFIOZW5hYmxlRmVlZGJhY2s=');
+    'ZBIYCgd0b29sdGlwGAQgASgJUgd0b29sdGlwEjsKEGZvcmVncm91bmRfY29sb3IYBSABKAsyEC'
+    '5Db2xvckV4cHJlc3Npb25SD2ZvcmVncm91bmRDb2xvchI7ChBiYWNrZ3JvdW5kX2NvbG9yGAYg'
+    'ASgLMhAuQ29sb3JFeHByZXNzaW9uUg9iYWNrZ3JvdW5kQ29sb3ISMQoLZm9jdXNfY29sb3IYBy'
+    'ABKAsyEC5Db2xvckV4cHJlc3Npb25SCmZvY3VzQ29sb3ISMQoLaG92ZXJfY29sb3IYCCABKAsy'
+    'EC5Db2xvckV4cHJlc3Npb25SCmhvdmVyQ29sb3ISMwoMc3BsYXNoX2NvbG9yGAkgASgLMhAuQ2'
+    '9sb3JFeHByZXNzaW9uUgtzcGxhc2hDb2xvchIcCgllbGV2YXRpb24YCyABKAFSCWVsZXZhdGlv'
+    'bhInCg9mb2N1c19lbGV2YXRpb24YDCABKAFSDmZvY3VzRWxldmF0aW9uEicKD2hvdmVyX2VsZX'
+    'ZhdGlvbhgNIAEoAVIOaG92ZXJFbGV2YXRpb24SLwoTaGlnaGxpZ2h0X2VsZXZhdGlvbhgOIAEo'
+    'AVISaGlnaGxpZ2h0RWxldmF0aW9uEi0KEmRpc2FibGVkX2VsZXZhdGlvbhgPIAEoAVIRZGlzYW'
+    'JsZWRFbGV2YXRpb24SEgoEbWluaRgSIAEoCFIEbWluaRIcCglhdXRvZm9jdXMYFiABKAhSCWF1'
+    'dG9mb2N1cxIfCgtpc19leHRlbmRlZBgYIAEoCFIKaXNFeHRlbmRlZBInCg9lbmFibGVfZmVlZG'
+    'JhY2sYGSABKAhSDmVuYWJsZUZlZWRiYWNr');
 
 @$core.Deprecated('Use materialFloatingActionButtonNamedSmallDescriptor instead')
 const MaterialFloatingActionButtonNamedSmall$json = {
@@ -2444,6 +2837,11 @@ const MaterialFloatingActionButtonNamedSmall$json = {
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
     {'1': 'tooltip', '3': 4, '4': 1, '5': 9, '10': 'tooltip'},
+    {'1': 'foreground_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'foregroundColor'},
+    {'1': 'background_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'focus_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
+    {'1': 'splash_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'splashColor'},
     {'1': 'elevation', '3': 11, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'focus_elevation', '3': 12, '4': 1, '5': 1, '10': 'focusElevation'},
     {'1': 'hover_elevation', '3': 13, '4': 1, '5': 1, '10': 'hoverElevation'},
@@ -2458,12 +2856,17 @@ const MaterialFloatingActionButtonNamedSmall$json = {
 final $typed_data.Uint8List materialFloatingActionButtonNamedSmallDescriptor = $convert.base64Decode(
     'CiZNYXRlcmlhbEZsb2F0aW5nQWN0aW9uQnV0dG9uTmFtZWRTbWFsbBInCgNrZXkYAiABKAsyFS'
     '5GbHV0dGVyS2V5RXhwcmVzc2lvblIDa2V5EicKBWNoaWxkGAMgASgLMhEuV2lkZ2V0RXhwcmVz'
-    'c2lvblIFY2hpbGQSGAoHdG9vbHRpcBgEIAEoCVIHdG9vbHRpcBIcCgllbGV2YXRpb24YCyABKA'
-    'FSCWVsZXZhdGlvbhInCg9mb2N1c19lbGV2YXRpb24YDCABKAFSDmZvY3VzRWxldmF0aW9uEicK'
-    'D2hvdmVyX2VsZXZhdGlvbhgNIAEoAVIOaG92ZXJFbGV2YXRpb24SLwoTaGlnaGxpZ2h0X2VsZX'
-    'ZhdGlvbhgOIAEoAVISaGlnaGxpZ2h0RWxldmF0aW9uEi0KEmRpc2FibGVkX2VsZXZhdGlvbhgP'
-    'IAEoAVIRZGlzYWJsZWRFbGV2YXRpb24SHAoJYXV0b2ZvY3VzGBUgASgIUglhdXRvZm9jdXMSJw'
-    'oPZW5hYmxlX2ZlZWRiYWNrGBcgASgIUg5lbmFibGVGZWVkYmFjaw==');
+    'c2lvblIFY2hpbGQSGAoHdG9vbHRpcBgEIAEoCVIHdG9vbHRpcBI7ChBmb3JlZ3JvdW5kX2NvbG'
+    '9yGAUgASgLMhAuQ29sb3JFeHByZXNzaW9uUg9mb3JlZ3JvdW5kQ29sb3ISOwoQYmFja2dyb3Vu'
+    'ZF9jb2xvchgGIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIPYmFja2dyb3VuZENvbG9yEjEKC2ZvY3'
+    'VzX2NvbG9yGAcgASgLMhAuQ29sb3JFeHByZXNzaW9uUgpmb2N1c0NvbG9yEjEKC2hvdmVyX2Nv'
+    'bG9yGAggASgLMhAuQ29sb3JFeHByZXNzaW9uUgpob3ZlckNvbG9yEjMKDHNwbGFzaF9jb2xvch'
+    'gJIAEoCzIQLkNvbG9yRXhwcmVzc2lvblILc3BsYXNoQ29sb3ISHAoJZWxldmF0aW9uGAsgASgB'
+    'UgllbGV2YXRpb24SJwoPZm9jdXNfZWxldmF0aW9uGAwgASgBUg5mb2N1c0VsZXZhdGlvbhInCg'
+    '9ob3Zlcl9lbGV2YXRpb24YDSABKAFSDmhvdmVyRWxldmF0aW9uEi8KE2hpZ2hsaWdodF9lbGV2'
+    'YXRpb24YDiABKAFSEmhpZ2hsaWdodEVsZXZhdGlvbhItChJkaXNhYmxlZF9lbGV2YXRpb24YDy'
+    'ABKAFSEWRpc2FibGVkRWxldmF0aW9uEhwKCWF1dG9mb2N1cxgVIAEoCFIJYXV0b2ZvY3VzEicK'
+    'D2VuYWJsZV9mZWVkYmFjaxgXIAEoCFIOZW5hYmxlRmVlZGJhY2s=');
 
 @$core.Deprecated('Use materialFloatingActionButtonNamedLargeDescriptor instead')
 const MaterialFloatingActionButtonNamedLarge$json = {
@@ -2472,6 +2875,11 @@ const MaterialFloatingActionButtonNamedLarge$json = {
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
     {'1': 'tooltip', '3': 4, '4': 1, '5': 9, '10': 'tooltip'},
+    {'1': 'foreground_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'foregroundColor'},
+    {'1': 'background_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'focus_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
+    {'1': 'splash_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'splashColor'},
     {'1': 'elevation', '3': 11, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'focus_elevation', '3': 12, '4': 1, '5': 1, '10': 'focusElevation'},
     {'1': 'hover_elevation', '3': 13, '4': 1, '5': 1, '10': 'hoverElevation'},
@@ -2486,12 +2894,17 @@ const MaterialFloatingActionButtonNamedLarge$json = {
 final $typed_data.Uint8List materialFloatingActionButtonNamedLargeDescriptor = $convert.base64Decode(
     'CiZNYXRlcmlhbEZsb2F0aW5nQWN0aW9uQnV0dG9uTmFtZWRMYXJnZRInCgNrZXkYAiABKAsyFS'
     '5GbHV0dGVyS2V5RXhwcmVzc2lvblIDa2V5EicKBWNoaWxkGAMgASgLMhEuV2lkZ2V0RXhwcmVz'
-    'c2lvblIFY2hpbGQSGAoHdG9vbHRpcBgEIAEoCVIHdG9vbHRpcBIcCgllbGV2YXRpb24YCyABKA'
-    'FSCWVsZXZhdGlvbhInCg9mb2N1c19lbGV2YXRpb24YDCABKAFSDmZvY3VzRWxldmF0aW9uEicK'
-    'D2hvdmVyX2VsZXZhdGlvbhgNIAEoAVIOaG92ZXJFbGV2YXRpb24SLwoTaGlnaGxpZ2h0X2VsZX'
-    'ZhdGlvbhgOIAEoAVISaGlnaGxpZ2h0RWxldmF0aW9uEi0KEmRpc2FibGVkX2VsZXZhdGlvbhgP'
-    'IAEoAVIRZGlzYWJsZWRFbGV2YXRpb24SHAoJYXV0b2ZvY3VzGBUgASgIUglhdXRvZm9jdXMSJw'
-    'oPZW5hYmxlX2ZlZWRiYWNrGBcgASgIUg5lbmFibGVGZWVkYmFjaw==');
+    'c2lvblIFY2hpbGQSGAoHdG9vbHRpcBgEIAEoCVIHdG9vbHRpcBI7ChBmb3JlZ3JvdW5kX2NvbG'
+    '9yGAUgASgLMhAuQ29sb3JFeHByZXNzaW9uUg9mb3JlZ3JvdW5kQ29sb3ISOwoQYmFja2dyb3Vu'
+    'ZF9jb2xvchgGIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIPYmFja2dyb3VuZENvbG9yEjEKC2ZvY3'
+    'VzX2NvbG9yGAcgASgLMhAuQ29sb3JFeHByZXNzaW9uUgpmb2N1c0NvbG9yEjEKC2hvdmVyX2Nv'
+    'bG9yGAggASgLMhAuQ29sb3JFeHByZXNzaW9uUgpob3ZlckNvbG9yEjMKDHNwbGFzaF9jb2xvch'
+    'gJIAEoCzIQLkNvbG9yRXhwcmVzc2lvblILc3BsYXNoQ29sb3ISHAoJZWxldmF0aW9uGAsgASgB'
+    'UgllbGV2YXRpb24SJwoPZm9jdXNfZWxldmF0aW9uGAwgASgBUg5mb2N1c0VsZXZhdGlvbhInCg'
+    '9ob3Zlcl9lbGV2YXRpb24YDSABKAFSDmhvdmVyRWxldmF0aW9uEi8KE2hpZ2hsaWdodF9lbGV2'
+    'YXRpb24YDiABKAFSEmhpZ2hsaWdodEVsZXZhdGlvbhItChJkaXNhYmxlZF9lbGV2YXRpb24YDy'
+    'ABKAFSEWRpc2FibGVkRWxldmF0aW9uEhwKCWF1dG9mb2N1cxgVIAEoCFIJYXV0b2ZvY3VzEicK'
+    'D2VuYWJsZV9mZWVkYmFjaxgXIAEoCFIOZW5hYmxlRmVlZGJhY2s=');
 
 @$core.Deprecated('Use materialFloatingActionButtonNamedExtendedDescriptor instead')
 const MaterialFloatingActionButtonNamedExtended$json = {
@@ -2499,9 +2912,14 @@ const MaterialFloatingActionButtonNamedExtended$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'tooltip', '3': 3, '4': 1, '5': 9, '10': 'tooltip'},
+    {'1': 'foreground_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'foregroundColor'},
+    {'1': 'background_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'focus_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
     {'1': 'elevation', '3': 9, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'focus_elevation', '3': 10, '4': 1, '5': 1, '10': 'focusElevation'},
     {'1': 'hover_elevation', '3': 11, '4': 1, '5': 1, '10': 'hoverElevation'},
+    {'1': 'splash_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'splashColor'},
     {'1': 'highlight_elevation', '3': 13, '4': 1, '5': 1, '10': 'highlightElevation'},
     {'1': 'disabled_elevation', '3': 14, '4': 1, '5': 1, '10': 'disabledElevation'},
     {'1': 'is_extended', '3': 18, '4': 1, '5': 8, '10': 'isExtended'},
@@ -2517,15 +2935,20 @@ const MaterialFloatingActionButtonNamedExtended$json = {
 final $typed_data.Uint8List materialFloatingActionButtonNamedExtendedDescriptor = $convert.base64Decode(
     'CilNYXRlcmlhbEZsb2F0aW5nQWN0aW9uQnV0dG9uTmFtZWRFeHRlbmRlZBInCgNrZXkYAiABKA'
     'syFS5GbHV0dGVyS2V5RXhwcmVzc2lvblIDa2V5EhgKB3Rvb2x0aXAYAyABKAlSB3Rvb2x0aXAS'
-    'HAoJZWxldmF0aW9uGAkgASgBUgllbGV2YXRpb24SJwoPZm9jdXNfZWxldmF0aW9uGAogASgBUg'
-    '5mb2N1c0VsZXZhdGlvbhInCg9ob3Zlcl9lbGV2YXRpb24YCyABKAFSDmhvdmVyRWxldmF0aW9u'
-    'Ei8KE2hpZ2hsaWdodF9lbGV2YXRpb24YDSABKAFSEmhpZ2hsaWdodEVsZXZhdGlvbhItChJkaX'
-    'NhYmxlZF9lbGV2YXRpb24YDiABKAFSEWRpc2FibGVkRWxldmF0aW9uEh8KC2lzX2V4dGVuZGVk'
-    'GBIgASgIUgppc0V4dGVuZGVkEhwKCWF1dG9mb2N1cxgWIAEoCFIJYXV0b2ZvY3VzEj0KG2V4dG'
-    'VuZGVkX2ljb25fbGFiZWxfc3BhY2luZxgXIAEoAVIYZXh0ZW5kZWRJY29uTGFiZWxTcGFjaW5n'
-    'EiUKBGljb24YGiABKAsyES5XaWRnZXRFeHByZXNzaW9uUgRpY29uEicKBWxhYmVsGBsgASgLMh'
-    'EuV2lkZ2V0RXhwcmVzc2lvblIFbGFiZWwSJwoPZW5hYmxlX2ZlZWRiYWNrGBwgASgIUg5lbmFi'
-    'bGVGZWVkYmFjaw==');
+    'OwoQZm9yZWdyb3VuZF9jb2xvchgEIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIPZm9yZWdyb3VuZE'
+    'NvbG9yEjsKEGJhY2tncm91bmRfY29sb3IYBSABKAsyEC5Db2xvckV4cHJlc3Npb25SD2JhY2tn'
+    'cm91bmRDb2xvchIxCgtmb2N1c19jb2xvchgGIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIKZm9jdX'
+    'NDb2xvchIxCgtob3Zlcl9jb2xvchgHIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIKaG92ZXJDb2xv'
+    'chIcCgllbGV2YXRpb24YCSABKAFSCWVsZXZhdGlvbhInCg9mb2N1c19lbGV2YXRpb24YCiABKA'
+    'FSDmZvY3VzRWxldmF0aW9uEicKD2hvdmVyX2VsZXZhdGlvbhgLIAEoAVIOaG92ZXJFbGV2YXRp'
+    'b24SMwoMc3BsYXNoX2NvbG9yGAwgASgLMhAuQ29sb3JFeHByZXNzaW9uUgtzcGxhc2hDb2xvch'
+    'IvChNoaWdobGlnaHRfZWxldmF0aW9uGA0gASgBUhJoaWdobGlnaHRFbGV2YXRpb24SLQoSZGlz'
+    'YWJsZWRfZWxldmF0aW9uGA4gASgBUhFkaXNhYmxlZEVsZXZhdGlvbhIfCgtpc19leHRlbmRlZB'
+    'gSIAEoCFIKaXNFeHRlbmRlZBIcCglhdXRvZm9jdXMYFiABKAhSCWF1dG9mb2N1cxI9ChtleHRl'
+    'bmRlZF9pY29uX2xhYmVsX3NwYWNpbmcYFyABKAFSGGV4dGVuZGVkSWNvbkxhYmVsU3BhY2luZx'
+    'IlCgRpY29uGBogASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIEaWNvbhInCgVsYWJlbBgbIAEoCzIR'
+    'LldpZGdldEV4cHJlc3Npb25SBWxhYmVsEicKD2VuYWJsZV9mZWVkYmFjaxgcIAEoCFIOZW5hYm'
+    'xlRmVlZGJhY2s=');
 
 @$core.Deprecated('Use materialFlutterLogoDescriptor instead')
 const MaterialFlutterLogo$json = {
@@ -2533,6 +2956,7 @@ const MaterialFlutterLogo$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'size', '3': 3, '4': 1, '5': 1, '10': 'size'},
+    {'1': 'text_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'textColor'},
     {'1': 'duration', '3': 6, '4': 1, '5': 11, '6': '.DurationExpression', '10': 'duration'},
   ],
 };
@@ -2540,8 +2964,9 @@ const MaterialFlutterLogo$json = {
 /// Descriptor for `MaterialFlutterLogo`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialFlutterLogoDescriptor = $convert.base64Decode(
     'ChNNYXRlcmlhbEZsdXR0ZXJMb2dvEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZXNzaW'
-    '9uUgNrZXkSEgoEc2l6ZRgDIAEoAVIEc2l6ZRIvCghkdXJhdGlvbhgGIAEoCzITLkR1cmF0aW9u'
-    'RXhwcmVzc2lvblIIZHVyYXRpb24=');
+    '9uUgNrZXkSEgoEc2l6ZRgDIAEoAVIEc2l6ZRIvCgp0ZXh0X2NvbG9yGAQgASgLMhAuQ29sb3JF'
+    'eHByZXNzaW9uUgl0ZXh0Q29sb3ISLwoIZHVyYXRpb24YBiABKAsyEy5EdXJhdGlvbkV4cHJlc3'
+    'Npb25SCGR1cmF0aW9u');
 
 @$core.Deprecated('Use materialGridTileDescriptor instead')
 const MaterialGridTile$json = {
@@ -2566,6 +2991,7 @@ const MaterialGridTileBar$json = {
   '1': 'MaterialGridTileBar',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'background_color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'leading', '3': 4, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'leading'},
     {'1': 'title', '3': 5, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'title'},
     {'1': 'subtitle', '3': 6, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'subtitle'},
@@ -2576,10 +3002,11 @@ const MaterialGridTileBar$json = {
 /// Descriptor for `MaterialGridTileBar`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialGridTileBarDescriptor = $convert.base64Decode(
     'ChNNYXRlcmlhbEdyaWRUaWxlQmFyEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZXNzaW'
-    '9uUgNrZXkSKwoHbGVhZGluZxgEIAEoCzIRLldpZGdldEV4cHJlc3Npb25SB2xlYWRpbmcSJwoF'
-    'dGl0bGUYBSABKAsyES5XaWRnZXRFeHByZXNzaW9uUgV0aXRsZRItCghzdWJ0aXRsZRgGIAEoCz'
-    'IRLldpZGdldEV4cHJlc3Npb25SCHN1YnRpdGxlEi0KCHRyYWlsaW5nGAcgASgLMhEuV2lkZ2V0'
-    'RXhwcmVzc2lvblIIdHJhaWxpbmc=');
+    '9uUgNrZXkSOwoQYmFja2dyb3VuZF9jb2xvchgDIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIPYmFj'
+    'a2dyb3VuZENvbG9yEisKB2xlYWRpbmcYBCABKAsyES5XaWRnZXRFeHByZXNzaW9uUgdsZWFkaW'
+    '5nEicKBXRpdGxlGAUgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFdGl0bGUSLQoIc3VidGl0bGUY'
+    'BiABKAsyES5XaWRnZXRFeHByZXNzaW9uUghzdWJ0aXRsZRItCgh0cmFpbGluZxgHIAEoCzIRLl'
+    'dpZGdldEV4cHJlc3Npb25SCHRyYWlsaW5n');
 
 @$core.Deprecated('Use materialIconButtonDescriptor instead')
 const MaterialIconButton$json = {
@@ -2588,6 +3015,12 @@ const MaterialIconButton$json = {
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'icon_size', '3': 3, '4': 1, '5': 1, '10': 'iconSize'},
     {'1': 'splash_radius', '3': 7, '4': 1, '5': 1, '10': 'splashRadius'},
+    {'1': 'color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
+    {'1': 'focus_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
+    {'1': 'highlight_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'highlightColor'},
+    {'1': 'splash_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'splashColor'},
+    {'1': 'disabled_color', '3': 13, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
     {'1': 'autofocus', '3': 17, '4': 1, '5': 8, '10': 'autofocus'},
     {'1': 'tooltip', '3': 18, '4': 1, '5': 9, '10': 'tooltip'},
     {'1': 'enable_feedback', '3': 19, '4': 1, '5': 8, '10': 'enableFeedback'},
@@ -2601,11 +3034,16 @@ const MaterialIconButton$json = {
 final $typed_data.Uint8List materialIconButtonDescriptor = $convert.base64Decode(
     'ChJNYXRlcmlhbEljb25CdXR0b24SJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb2'
     '5SA2tleRIbCglpY29uX3NpemUYAyABKAFSCGljb25TaXplEiMKDXNwbGFzaF9yYWRpdXMYByAB'
-    'KAFSDHNwbGFzaFJhZGl1cxIcCglhdXRvZm9jdXMYESABKAhSCWF1dG9mb2N1cxIYCgd0b29sdG'
-    'lwGBIgASgJUgd0b29sdGlwEicKD2VuYWJsZV9mZWVkYmFjaxgTIAEoCFIOZW5hYmxlRmVlZGJh'
-    'Y2sSHwoLaXNfc2VsZWN0ZWQYFiABKAhSCmlzU2VsZWN0ZWQSNgoNc2VsZWN0ZWRfaWNvbhgXIA'
-    'EoCzIRLldpZGdldEV4cHJlc3Npb25SDHNlbGVjdGVkSWNvbhIlCgRpY29uGBggASgLMhEuV2lk'
-    'Z2V0RXhwcmVzc2lvblIEaWNvbg==');
+    'KAFSDHNwbGFzaFJhZGl1cxImCgVjb2xvchgIIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIFY29sb3'
+    'ISMQoLZm9jdXNfY29sb3IYCSABKAsyEC5Db2xvckV4cHJlc3Npb25SCmZvY3VzQ29sb3ISMQoL'
+    'aG92ZXJfY29sb3IYCiABKAsyEC5Db2xvckV4cHJlc3Npb25SCmhvdmVyQ29sb3ISOQoPaGlnaG'
+    'xpZ2h0X2NvbG9yGAsgASgLMhAuQ29sb3JFeHByZXNzaW9uUg5oaWdobGlnaHRDb2xvchIzCgxz'
+    'cGxhc2hfY29sb3IYDCABKAsyEC5Db2xvckV4cHJlc3Npb25SC3NwbGFzaENvbG9yEjcKDmRpc2'
+    'FibGVkX2NvbG9yGA0gASgLMhAuQ29sb3JFeHByZXNzaW9uUg1kaXNhYmxlZENvbG9yEhwKCWF1'
+    'dG9mb2N1cxgRIAEoCFIJYXV0b2ZvY3VzEhgKB3Rvb2x0aXAYEiABKAlSB3Rvb2x0aXASJwoPZW'
+    '5hYmxlX2ZlZWRiYWNrGBMgASgIUg5lbmFibGVGZWVkYmFjaxIfCgtpc19zZWxlY3RlZBgWIAEo'
+    'CFIKaXNTZWxlY3RlZBI2Cg1zZWxlY3RlZF9pY29uGBcgASgLMhEuV2lkZ2V0RXhwcmVzc2lvbl'
+    'IMc2VsZWN0ZWRJY29uEiUKBGljb24YGCABKAsyES5XaWRnZXRFeHByZXNzaW9uUgRpY29u');
 
 @$core.Deprecated('Use materialIconButtonNamedFilledDescriptor instead')
 const MaterialIconButtonNamedFilled$json = {
@@ -2614,6 +3052,12 @@ const MaterialIconButtonNamedFilled$json = {
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'icon_size', '3': 3, '4': 1, '5': 1, '10': 'iconSize'},
     {'1': 'splash_radius', '3': 7, '4': 1, '5': 1, '10': 'splashRadius'},
+    {'1': 'color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
+    {'1': 'focus_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
+    {'1': 'highlight_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'highlightColor'},
+    {'1': 'splash_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'splashColor'},
+    {'1': 'disabled_color', '3': 13, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
     {'1': 'autofocus', '3': 17, '4': 1, '5': 8, '10': 'autofocus'},
     {'1': 'tooltip', '3': 18, '4': 1, '5': 9, '10': 'tooltip'},
     {'1': 'enable_feedback', '3': 19, '4': 1, '5': 8, '10': 'enableFeedback'},
@@ -2627,11 +3071,17 @@ const MaterialIconButtonNamedFilled$json = {
 final $typed_data.Uint8List materialIconButtonNamedFilledDescriptor = $convert.base64Decode(
     'Ch1NYXRlcmlhbEljb25CdXR0b25OYW1lZEZpbGxlZBInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2'
     'V5RXhwcmVzc2lvblIDa2V5EhsKCWljb25fc2l6ZRgDIAEoAVIIaWNvblNpemUSIwoNc3BsYXNo'
-    'X3JhZGl1cxgHIAEoAVIMc3BsYXNoUmFkaXVzEhwKCWF1dG9mb2N1cxgRIAEoCFIJYXV0b2ZvY3'
-    'VzEhgKB3Rvb2x0aXAYEiABKAlSB3Rvb2x0aXASJwoPZW5hYmxlX2ZlZWRiYWNrGBMgASgIUg5l'
-    'bmFibGVGZWVkYmFjaxIfCgtpc19zZWxlY3RlZBgWIAEoCFIKaXNTZWxlY3RlZBI2Cg1zZWxlY3'
-    'RlZF9pY29uGBcgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIMc2VsZWN0ZWRJY29uEiUKBGljb24Y'
-    'GCABKAsyES5XaWRnZXRFeHByZXNzaW9uUgRpY29u');
+    'X3JhZGl1cxgHIAEoAVIMc3BsYXNoUmFkaXVzEiYKBWNvbG9yGAggASgLMhAuQ29sb3JFeHByZX'
+    'NzaW9uUgVjb2xvchIxCgtmb2N1c19jb2xvchgJIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIKZm9j'
+    'dXNDb2xvchIxCgtob3Zlcl9jb2xvchgKIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIKaG92ZXJDb2'
+    'xvchI5Cg9oaWdobGlnaHRfY29sb3IYCyABKAsyEC5Db2xvckV4cHJlc3Npb25SDmhpZ2hsaWdo'
+    'dENvbG9yEjMKDHNwbGFzaF9jb2xvchgMIAEoCzIQLkNvbG9yRXhwcmVzc2lvblILc3BsYXNoQ2'
+    '9sb3ISNwoOZGlzYWJsZWRfY29sb3IYDSABKAsyEC5Db2xvckV4cHJlc3Npb25SDWRpc2FibGVk'
+    'Q29sb3ISHAoJYXV0b2ZvY3VzGBEgASgIUglhdXRvZm9jdXMSGAoHdG9vbHRpcBgSIAEoCVIHdG'
+    '9vbHRpcBInCg9lbmFibGVfZmVlZGJhY2sYEyABKAhSDmVuYWJsZUZlZWRiYWNrEh8KC2lzX3Nl'
+    'bGVjdGVkGBYgASgIUgppc1NlbGVjdGVkEjYKDXNlbGVjdGVkX2ljb24YFyABKAsyES5XaWRnZX'
+    'RFeHByZXNzaW9uUgxzZWxlY3RlZEljb24SJQoEaWNvbhgYIAEoCzIRLldpZGdldEV4cHJlc3Np'
+    'b25SBGljb24=');
 
 @$core.Deprecated('Use materialIconButtonNamedFilledTonalDescriptor instead')
 const MaterialIconButtonNamedFilledTonal$json = {
@@ -2640,6 +3090,12 @@ const MaterialIconButtonNamedFilledTonal$json = {
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'icon_size', '3': 3, '4': 1, '5': 1, '10': 'iconSize'},
     {'1': 'splash_radius', '3': 7, '4': 1, '5': 1, '10': 'splashRadius'},
+    {'1': 'color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
+    {'1': 'focus_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
+    {'1': 'highlight_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'highlightColor'},
+    {'1': 'splash_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'splashColor'},
+    {'1': 'disabled_color', '3': 13, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
     {'1': 'autofocus', '3': 17, '4': 1, '5': 8, '10': 'autofocus'},
     {'1': 'tooltip', '3': 18, '4': 1, '5': 9, '10': 'tooltip'},
     {'1': 'enable_feedback', '3': 19, '4': 1, '5': 8, '10': 'enableFeedback'},
@@ -2653,11 +3109,17 @@ const MaterialIconButtonNamedFilledTonal$json = {
 final $typed_data.Uint8List materialIconButtonNamedFilledTonalDescriptor = $convert.base64Decode(
     'CiJNYXRlcmlhbEljb25CdXR0b25OYW1lZEZpbGxlZFRvbmFsEicKA2tleRgCIAEoCzIVLkZsdX'
     'R0ZXJLZXlFeHByZXNzaW9uUgNrZXkSGwoJaWNvbl9zaXplGAMgASgBUghpY29uU2l6ZRIjCg1z'
-    'cGxhc2hfcmFkaXVzGAcgASgBUgxzcGxhc2hSYWRpdXMSHAoJYXV0b2ZvY3VzGBEgASgIUglhdX'
-    'RvZm9jdXMSGAoHdG9vbHRpcBgSIAEoCVIHdG9vbHRpcBInCg9lbmFibGVfZmVlZGJhY2sYEyAB'
-    'KAhSDmVuYWJsZUZlZWRiYWNrEh8KC2lzX3NlbGVjdGVkGBYgASgIUgppc1NlbGVjdGVkEjYKDX'
-    'NlbGVjdGVkX2ljb24YFyABKAsyES5XaWRnZXRFeHByZXNzaW9uUgxzZWxlY3RlZEljb24SJQoE'
-    'aWNvbhgYIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBGljb24=');
+    'cGxhc2hfcmFkaXVzGAcgASgBUgxzcGxhc2hSYWRpdXMSJgoFY29sb3IYCCABKAsyEC5Db2xvck'
+    'V4cHJlc3Npb25SBWNvbG9yEjEKC2ZvY3VzX2NvbG9yGAkgASgLMhAuQ29sb3JFeHByZXNzaW9u'
+    'Ugpmb2N1c0NvbG9yEjEKC2hvdmVyX2NvbG9yGAogASgLMhAuQ29sb3JFeHByZXNzaW9uUgpob3'
+    'ZlckNvbG9yEjkKD2hpZ2hsaWdodF9jb2xvchgLIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIOaGln'
+    'aGxpZ2h0Q29sb3ISMwoMc3BsYXNoX2NvbG9yGAwgASgLMhAuQ29sb3JFeHByZXNzaW9uUgtzcG'
+    'xhc2hDb2xvchI3Cg5kaXNhYmxlZF9jb2xvchgNIAEoCzIQLkNvbG9yRXhwcmVzc2lvblINZGlz'
+    'YWJsZWRDb2xvchIcCglhdXRvZm9jdXMYESABKAhSCWF1dG9mb2N1cxIYCgd0b29sdGlwGBIgAS'
+    'gJUgd0b29sdGlwEicKD2VuYWJsZV9mZWVkYmFjaxgTIAEoCFIOZW5hYmxlRmVlZGJhY2sSHwoL'
+    'aXNfc2VsZWN0ZWQYFiABKAhSCmlzU2VsZWN0ZWQSNgoNc2VsZWN0ZWRfaWNvbhgXIAEoCzIRLl'
+    'dpZGdldEV4cHJlc3Npb25SDHNlbGVjdGVkSWNvbhIlCgRpY29uGBggASgLMhEuV2lkZ2V0RXhw'
+    'cmVzc2lvblIEaWNvbg==');
 
 @$core.Deprecated('Use materialIconButtonNamedOutlinedDescriptor instead')
 const MaterialIconButtonNamedOutlined$json = {
@@ -2666,6 +3128,12 @@ const MaterialIconButtonNamedOutlined$json = {
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'icon_size', '3': 3, '4': 1, '5': 1, '10': 'iconSize'},
     {'1': 'splash_radius', '3': 7, '4': 1, '5': 1, '10': 'splashRadius'},
+    {'1': 'color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
+    {'1': 'focus_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
+    {'1': 'highlight_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'highlightColor'},
+    {'1': 'splash_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'splashColor'},
+    {'1': 'disabled_color', '3': 13, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
     {'1': 'autofocus', '3': 17, '4': 1, '5': 8, '10': 'autofocus'},
     {'1': 'tooltip', '3': 18, '4': 1, '5': 9, '10': 'tooltip'},
     {'1': 'enable_feedback', '3': 19, '4': 1, '5': 8, '10': 'enableFeedback'},
@@ -2679,17 +3147,24 @@ const MaterialIconButtonNamedOutlined$json = {
 final $typed_data.Uint8List materialIconButtonNamedOutlinedDescriptor = $convert.base64Decode(
     'Ch9NYXRlcmlhbEljb25CdXR0b25OYW1lZE91dGxpbmVkEicKA2tleRgCIAEoCzIVLkZsdXR0ZX'
     'JLZXlFeHByZXNzaW9uUgNrZXkSGwoJaWNvbl9zaXplGAMgASgBUghpY29uU2l6ZRIjCg1zcGxh'
-    'c2hfcmFkaXVzGAcgASgBUgxzcGxhc2hSYWRpdXMSHAoJYXV0b2ZvY3VzGBEgASgIUglhdXRvZm'
-    '9jdXMSGAoHdG9vbHRpcBgSIAEoCVIHdG9vbHRpcBInCg9lbmFibGVfZmVlZGJhY2sYEyABKAhS'
-    'DmVuYWJsZUZlZWRiYWNrEh8KC2lzX3NlbGVjdGVkGBYgASgIUgppc1NlbGVjdGVkEjYKDXNlbG'
-    'VjdGVkX2ljb24YFyABKAsyES5XaWRnZXRFeHByZXNzaW9uUgxzZWxlY3RlZEljb24SJQoEaWNv'
-    'bhgYIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBGljb24=');
+    'c2hfcmFkaXVzGAcgASgBUgxzcGxhc2hSYWRpdXMSJgoFY29sb3IYCCABKAsyEC5Db2xvckV4cH'
+    'Jlc3Npb25SBWNvbG9yEjEKC2ZvY3VzX2NvbG9yGAkgASgLMhAuQ29sb3JFeHByZXNzaW9uUgpm'
+    'b2N1c0NvbG9yEjEKC2hvdmVyX2NvbG9yGAogASgLMhAuQ29sb3JFeHByZXNzaW9uUgpob3Zlck'
+    'NvbG9yEjkKD2hpZ2hsaWdodF9jb2xvchgLIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIOaGlnaGxp'
+    'Z2h0Q29sb3ISMwoMc3BsYXNoX2NvbG9yGAwgASgLMhAuQ29sb3JFeHByZXNzaW9uUgtzcGxhc2'
+    'hDb2xvchI3Cg5kaXNhYmxlZF9jb2xvchgNIAEoCzIQLkNvbG9yRXhwcmVzc2lvblINZGlzYWJs'
+    'ZWRDb2xvchIcCglhdXRvZm9jdXMYESABKAhSCWF1dG9mb2N1cxIYCgd0b29sdGlwGBIgASgJUg'
+    'd0b29sdGlwEicKD2VuYWJsZV9mZWVkYmFjaxgTIAEoCFIOZW5hYmxlRmVlZGJhY2sSHwoLaXNf'
+    'c2VsZWN0ZWQYFiABKAhSCmlzU2VsZWN0ZWQSNgoNc2VsZWN0ZWRfaWNvbhgXIAEoCzIRLldpZG'
+    'dldEV4cHJlc3Npb25SDHNlbGVjdGVkSWNvbhIlCgRpY29uGBggASgLMhEuV2lkZ2V0RXhwcmVz'
+    'c2lvblIEaWNvbg==');
 
 @$core.Deprecated('Use materialInkDescriptor instead')
 const MaterialInk$json = {
   '1': 'MaterialInk',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'width', '3': 6, '4': 1, '5': 1, '10': 'width'},
     {'1': 'height', '3': 7, '4': 1, '5': 1, '10': 'height'},
     {'1': 'child', '3': 8, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
@@ -2698,9 +3173,10 @@ const MaterialInk$json = {
 
 /// Descriptor for `MaterialInk`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialInkDescriptor = $convert.base64Decode(
-    'CgtNYXRlcmlhbEluaxInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2lvblIDa2V5Eh'
-    'QKBXdpZHRoGAYgASgBUgV3aWR0aBIWCgZoZWlnaHQYByABKAFSBmhlaWdodBInCgVjaGlsZBgI'
-    'IAEoCzIRLldpZGdldEV4cHJlc3Npb25SBWNoaWxk');
+    'CgtNYXRlcmlhbEluaxInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2lvblIDa2V5Ei'
+    'YKBWNvbG9yGAQgASgLMhAuQ29sb3JFeHByZXNzaW9uUgVjb2xvchIUCgV3aWR0aBgGIAEoAVIF'
+    'd2lkdGgSFgoGaGVpZ2h0GAcgASgBUgZoZWlnaHQSJwoFY2hpbGQYCCABKAsyES5XaWRnZXRFeH'
+    'ByZXNzaW9uUgVjaGlsZA==');
 
 @$core.Deprecated('Use materialInkResponseDescriptor instead')
 const MaterialInkResponse$json = {
@@ -2710,6 +3186,10 @@ const MaterialInkResponse$json = {
     {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
     {'1': 'contained_ink_well', '3': 17, '4': 1, '5': 8, '10': 'containedInkWell'},
     {'1': 'radius', '3': 19, '4': 1, '5': 1, '10': 'radius'},
+    {'1': 'focus_color', '3': 22, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 23, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
+    {'1': 'highlight_color', '3': 24, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'highlightColor'},
+    {'1': 'splash_color', '3': 26, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'splashColor'},
     {'1': 'enable_feedback', '3': 28, '4': 1, '5': 8, '10': 'enableFeedback'},
     {'1': 'exclude_from_semantics', '3': 29, '4': 1, '5': 8, '10': 'excludeFromSemantics'},
     {'1': 'can_request_focus', '3': 31, '4': 1, '5': 8, '10': 'canRequestFocus'},
@@ -2722,10 +3202,14 @@ final $typed_data.Uint8List materialInkResponseDescriptor = $convert.base64Decod
     'ChNNYXRlcmlhbElua1Jlc3BvbnNlEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZXNzaW'
     '9uUgNrZXkSJwoFY2hpbGQYAyABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVjaGlsZBIsChJjb250'
     'YWluZWRfaW5rX3dlbGwYESABKAhSEGNvbnRhaW5lZElua1dlbGwSFgoGcmFkaXVzGBMgASgBUg'
-    'ZyYWRpdXMSJwoPZW5hYmxlX2ZlZWRiYWNrGBwgASgIUg5lbmFibGVGZWVkYmFjaxI0ChZleGNs'
-    'dWRlX2Zyb21fc2VtYW50aWNzGB0gASgIUhRleGNsdWRlRnJvbVNlbWFudGljcxIqChFjYW5fcm'
-    'VxdWVzdF9mb2N1cxgfIAEoCFIPY2FuUmVxdWVzdEZvY3VzEhwKCWF1dG9mb2N1cxghIAEoCFIJ'
-    'YXV0b2ZvY3Vz');
+    'ZyYWRpdXMSMQoLZm9jdXNfY29sb3IYFiABKAsyEC5Db2xvckV4cHJlc3Npb25SCmZvY3VzQ29s'
+    'b3ISMQoLaG92ZXJfY29sb3IYFyABKAsyEC5Db2xvckV4cHJlc3Npb25SCmhvdmVyQ29sb3ISOQ'
+    'oPaGlnaGxpZ2h0X2NvbG9yGBggASgLMhAuQ29sb3JFeHByZXNzaW9uUg5oaWdobGlnaHRDb2xv'
+    'chIzCgxzcGxhc2hfY29sb3IYGiABKAsyEC5Db2xvckV4cHJlc3Npb25SC3NwbGFzaENvbG9yEi'
+    'cKD2VuYWJsZV9mZWVkYmFjaxgcIAEoCFIOZW5hYmxlRmVlZGJhY2sSNAoWZXhjbHVkZV9mcm9t'
+    'X3NlbWFudGljcxgdIAEoCFIUZXhjbHVkZUZyb21TZW1hbnRpY3MSKgoRY2FuX3JlcXVlc3RfZm'
+    '9jdXMYHyABKAhSD2NhblJlcXVlc3RGb2N1cxIcCglhdXRvZm9jdXMYISABKAhSCWF1dG9mb2N1'
+    'cw==');
 
 @$core.Deprecated('Use materialInkWellDescriptor instead')
 const MaterialInkWell$json = {
@@ -2733,6 +3217,10 @@ const MaterialInkWell$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
+    {'1': 'focus_color', '3': 17, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 18, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
+    {'1': 'highlight_color', '3': 19, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'highlightColor'},
+    {'1': 'splash_color', '3': 21, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'splashColor'},
     {'1': 'radius', '3': 23, '4': 1, '5': 1, '10': 'radius'},
     {'1': 'enable_feedback', '3': 26, '4': 1, '5': 8, '10': 'enableFeedback'},
     {'1': 'exclude_from_semantics', '3': 27, '4': 1, '5': 8, '10': 'excludeFromSemantics'},
@@ -2744,11 +3232,15 @@ const MaterialInkWell$json = {
 /// Descriptor for `MaterialInkWell`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialInkWellDescriptor = $convert.base64Decode(
     'Cg9NYXRlcmlhbElua1dlbGwSJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb25SA2'
-    'tleRInCgVjaGlsZBgDIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBWNoaWxkEhYKBnJhZGl1cxgX'
-    'IAEoAVIGcmFkaXVzEicKD2VuYWJsZV9mZWVkYmFjaxgaIAEoCFIOZW5hYmxlRmVlZGJhY2sSNA'
-    'oWZXhjbHVkZV9mcm9tX3NlbWFudGljcxgbIAEoCFIUZXhjbHVkZUZyb21TZW1hbnRpY3MSKgoR'
-    'Y2FuX3JlcXVlc3RfZm9jdXMYHSABKAhSD2NhblJlcXVlc3RGb2N1cxIcCglhdXRvZm9jdXMYHy'
-    'ABKAhSCWF1dG9mb2N1cw==');
+    'tleRInCgVjaGlsZBgDIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBWNoaWxkEjEKC2ZvY3VzX2Nv'
+    'bG9yGBEgASgLMhAuQ29sb3JFeHByZXNzaW9uUgpmb2N1c0NvbG9yEjEKC2hvdmVyX2NvbG9yGB'
+    'IgASgLMhAuQ29sb3JFeHByZXNzaW9uUgpob3ZlckNvbG9yEjkKD2hpZ2hsaWdodF9jb2xvchgT'
+    'IAEoCzIQLkNvbG9yRXhwcmVzc2lvblIOaGlnaGxpZ2h0Q29sb3ISMwoMc3BsYXNoX2NvbG9yGB'
+    'UgASgLMhAuQ29sb3JFeHByZXNzaW9uUgtzcGxhc2hDb2xvchIWCgZyYWRpdXMYFyABKAFSBnJh'
+    'ZGl1cxInCg9lbmFibGVfZmVlZGJhY2sYGiABKAhSDmVuYWJsZUZlZWRiYWNrEjQKFmV4Y2x1ZG'
+    'VfZnJvbV9zZW1hbnRpY3MYGyABKAhSFGV4Y2x1ZGVGcm9tU2VtYW50aWNzEioKEWNhbl9yZXF1'
+    'ZXN0X2ZvY3VzGB0gASgIUg9jYW5SZXF1ZXN0Rm9jdXMSHAoJYXV0b2ZvY3VzGB8gASgIUglhdX'
+    'RvZm9jdXM=');
 
 @$core.Deprecated('Use materialInputChipDescriptor instead')
 const MaterialInputChip$json = {
@@ -2760,12 +3252,20 @@ const MaterialInputChip$json = {
     {'1': 'selected', '3': 7, '4': 1, '5': 8, '10': 'selected'},
     {'1': 'is_enabled', '3': 8, '4': 1, '5': 8, '10': 'isEnabled'},
     {'1': 'delete_icon', '3': 10, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'deleteIcon'},
+    {'1': 'delete_icon_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'deleteIconColor'},
     {'1': 'delete_button_tooltip_message', '3': 13, '4': 1, '5': 9, '10': 'deleteButtonTooltipMessage'},
     {'1': 'press_elevation', '3': 15, '4': 1, '5': 1, '10': 'pressElevation'},
+    {'1': 'disabled_color', '3': 16, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
+    {'1': 'selected_color', '3': 17, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedColor'},
     {'1': 'tooltip', '3': 18, '4': 1, '5': 9, '10': 'tooltip'},
     {'1': 'autofocus', '3': 23, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'background_color', '3': 25, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'elevation', '3': 29, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'shadow_color', '3': 30, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 31, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
+    {'1': 'selected_shadow_color', '3': 33, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedShadowColor'},
     {'1': 'show_checkmark', '3': 34, '4': 1, '5': 8, '10': 'showCheckmark'},
+    {'1': 'checkmark_color', '3': 35, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'checkmarkColor'},
   ],
 };
 
@@ -2775,11 +3275,20 @@ final $typed_data.Uint8List materialInputChipDescriptor = $convert.base64Decode(
     'IDa2V5EikKBmF2YXRhchgDIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBmF2YXRhchInCgVsYWJl'
     'bBgEIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBWxhYmVsEhoKCHNlbGVjdGVkGAcgASgIUghzZW'
     'xlY3RlZBIdCgppc19lbmFibGVkGAggASgIUglpc0VuYWJsZWQSMgoLZGVsZXRlX2ljb24YCiAB'
-    'KAsyES5XaWRnZXRFeHByZXNzaW9uUgpkZWxldGVJY29uEkEKHWRlbGV0ZV9idXR0b25fdG9vbH'
-    'RpcF9tZXNzYWdlGA0gASgJUhpkZWxldGVCdXR0b25Ub29sdGlwTWVzc2FnZRInCg9wcmVzc19l'
-    'bGV2YXRpb24YDyABKAFSDnByZXNzRWxldmF0aW9uEhgKB3Rvb2x0aXAYEiABKAlSB3Rvb2x0aX'
-    'ASHAoJYXV0b2ZvY3VzGBcgASgIUglhdXRvZm9jdXMSHAoJZWxldmF0aW9uGB0gASgBUgllbGV2'
-    'YXRpb24SJQoOc2hvd19jaGVja21hcmsYIiABKAhSDXNob3dDaGVja21hcms=');
+    'KAsyES5XaWRnZXRFeHByZXNzaW9uUgpkZWxldGVJY29uEjwKEWRlbGV0ZV9pY29uX2NvbG9yGA'
+    'wgASgLMhAuQ29sb3JFeHByZXNzaW9uUg9kZWxldGVJY29uQ29sb3ISQQodZGVsZXRlX2J1dHRv'
+    'bl90b29sdGlwX21lc3NhZ2UYDSABKAlSGmRlbGV0ZUJ1dHRvblRvb2x0aXBNZXNzYWdlEicKD3'
+    'ByZXNzX2VsZXZhdGlvbhgPIAEoAVIOcHJlc3NFbGV2YXRpb24SNwoOZGlzYWJsZWRfY29sb3IY'
+    'ECABKAsyEC5Db2xvckV4cHJlc3Npb25SDWRpc2FibGVkQ29sb3ISNwoOc2VsZWN0ZWRfY29sb3'
+    'IYESABKAsyEC5Db2xvckV4cHJlc3Npb25SDXNlbGVjdGVkQ29sb3ISGAoHdG9vbHRpcBgSIAEo'
+    'CVIHdG9vbHRpcBIcCglhdXRvZm9jdXMYFyABKAhSCWF1dG9mb2N1cxI7ChBiYWNrZ3JvdW5kX2'
+    'NvbG9yGBkgASgLMhAuQ29sb3JFeHByZXNzaW9uUg9iYWNrZ3JvdW5kQ29sb3ISHAoJZWxldmF0'
+    'aW9uGB0gASgBUgllbGV2YXRpb24SMwoMc2hhZG93X2NvbG9yGB4gASgLMhAuQ29sb3JFeHByZX'
+    'NzaW9uUgtzaGFkb3dDb2xvchI+ChJzdXJmYWNlX3RpbnRfY29sb3IYHyABKAsyEC5Db2xvckV4'
+    'cHJlc3Npb25SEHN1cmZhY2VUaW50Q29sb3ISRAoVc2VsZWN0ZWRfc2hhZG93X2NvbG9yGCEgAS'
+    'gLMhAuQ29sb3JFeHByZXNzaW9uUhNzZWxlY3RlZFNoYWRvd0NvbG9yEiUKDnNob3dfY2hlY2tt'
+    'YXJrGCIgASgIUg1zaG93Q2hlY2ttYXJrEjkKD2NoZWNrbWFya19jb2xvchgjIAEoCzIQLkNvbG'
+    '9yRXhwcmVzc2lvblIOY2hlY2ttYXJrQ29sb3I=');
 
 @$core.Deprecated('Use materialListTileDescriptor instead')
 const MaterialListTile$json = {
@@ -2792,9 +3301,17 @@ const MaterialListTile$json = {
     {'1': 'trailing', '3': 6, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'trailing'},
     {'1': 'is_three_line', '3': 7, '4': 1, '5': 8, '10': 'isThreeLine'},
     {'1': 'dense', '3': 8, '4': 1, '5': 8, '10': 'dense'},
+    {'1': 'selected_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedColor'},
+    {'1': 'icon_color', '3': 13, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'iconColor'},
+    {'1': 'text_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'textColor'},
     {'1': 'enabled', '3': 19, '4': 1, '5': 8, '10': 'enabled'},
     {'1': 'selected', '3': 24, '4': 1, '5': 8, '10': 'selected'},
+    {'1': 'focus_color', '3': 25, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 26, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
+    {'1': 'splash_color', '3': 27, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'splashColor'},
     {'1': 'autofocus', '3': 29, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'tile_color', '3': 30, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'tileColor'},
+    {'1': 'selected_tile_color', '3': 31, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedTileColor'},
     {'1': 'enable_feedback', '3': 32, '4': 1, '5': 8, '10': 'enableFeedback'},
     {'1': 'horizontal_title_gap', '3': 33, '4': 1, '5': 1, '10': 'horizontalTitleGap'},
     {'1': 'min_vertical_padding', '3': 34, '4': 1, '5': 1, '10': 'minVerticalPadding'},
@@ -2809,12 +3326,19 @@ final $typed_data.Uint8List materialListTileDescriptor = $convert.base64Decode(
     'bGUYBCABKAsyES5XaWRnZXRFeHByZXNzaW9uUgV0aXRsZRItCghzdWJ0aXRsZRgFIAEoCzIRLl'
     'dpZGdldEV4cHJlc3Npb25SCHN1YnRpdGxlEi0KCHRyYWlsaW5nGAYgASgLMhEuV2lkZ2V0RXhw'
     'cmVzc2lvblIIdHJhaWxpbmcSIgoNaXNfdGhyZWVfbGluZRgHIAEoCFILaXNUaHJlZUxpbmUSFA'
-    'oFZGVuc2UYCCABKAhSBWRlbnNlEhgKB2VuYWJsZWQYEyABKAhSB2VuYWJsZWQSGgoIc2VsZWN0'
-    'ZWQYGCABKAhSCHNlbGVjdGVkEhwKCWF1dG9mb2N1cxgdIAEoCFIJYXV0b2ZvY3VzEicKD2VuYW'
-    'JsZV9mZWVkYmFjaxggIAEoCFIOZW5hYmxlRmVlZGJhY2sSMAoUaG9yaXpvbnRhbF90aXRsZV9n'
-    'YXAYISABKAFSEmhvcml6b250YWxUaXRsZUdhcBIwChRtaW5fdmVydGljYWxfcGFkZGluZxgiIA'
-    'EoAVISbWluVmVydGljYWxQYWRkaW5nEioKEW1pbl9sZWFkaW5nX3dpZHRoGCMgASgBUg9taW5M'
-    'ZWFkaW5nV2lkdGg=');
+    'oFZGVuc2UYCCABKAhSBWRlbnNlEjcKDnNlbGVjdGVkX2NvbG9yGAwgASgLMhAuQ29sb3JFeHBy'
+    'ZXNzaW9uUg1zZWxlY3RlZENvbG9yEi8KCmljb25fY29sb3IYDSABKAsyEC5Db2xvckV4cHJlc3'
+    'Npb25SCWljb25Db2xvchIvCgp0ZXh0X2NvbG9yGA4gASgLMhAuQ29sb3JFeHByZXNzaW9uUgl0'
+    'ZXh0Q29sb3ISGAoHZW5hYmxlZBgTIAEoCFIHZW5hYmxlZBIaCghzZWxlY3RlZBgYIAEoCFIIc2'
+    'VsZWN0ZWQSMQoLZm9jdXNfY29sb3IYGSABKAsyEC5Db2xvckV4cHJlc3Npb25SCmZvY3VzQ29s'
+    'b3ISMQoLaG92ZXJfY29sb3IYGiABKAsyEC5Db2xvckV4cHJlc3Npb25SCmhvdmVyQ29sb3ISMw'
+    'oMc3BsYXNoX2NvbG9yGBsgASgLMhAuQ29sb3JFeHByZXNzaW9uUgtzcGxhc2hDb2xvchIcCglh'
+    'dXRvZm9jdXMYHSABKAhSCWF1dG9mb2N1cxIvCgp0aWxlX2NvbG9yGB4gASgLMhAuQ29sb3JFeH'
+    'ByZXNzaW9uUgl0aWxlQ29sb3ISQAoTc2VsZWN0ZWRfdGlsZV9jb2xvchgfIAEoCzIQLkNvbG9y'
+    'RXhwcmVzc2lvblIRc2VsZWN0ZWRUaWxlQ29sb3ISJwoPZW5hYmxlX2ZlZWRiYWNrGCAgASgIUg'
+    '5lbmFibGVGZWVkYmFjaxIwChRob3Jpem9udGFsX3RpdGxlX2dhcBghIAEoAVISaG9yaXpvbnRh'
+    'bFRpdGxlR2FwEjAKFG1pbl92ZXJ0aWNhbF9wYWRkaW5nGCIgASgBUhJtaW5WZXJ0aWNhbFBhZG'
+    'RpbmcSKgoRbWluX2xlYWRpbmdfd2lkdGgYIyABKAFSD21pbkxlYWRpbmdXaWR0aA==');
 
 @$core.Deprecated('Use materialListTileThemeDescriptor instead')
 const MaterialListTileTheme$json = {
@@ -2822,6 +3346,11 @@ const MaterialListTileTheme$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'dense', '3': 4, '4': 1, '5': 8, '10': 'dense'},
+    {'1': 'selected_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedColor'},
+    {'1': 'icon_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'iconColor'},
+    {'1': 'text_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'textColor'},
+    {'1': 'tile_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'tileColor'},
+    {'1': 'selected_tile_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedTileColor'},
     {'1': 'enable_feedback', '3': 13, '4': 1, '5': 8, '10': 'enableFeedback'},
     {'1': 'horizontal_title_gap', '3': 15, '4': 1, '5': 1, '10': 'horizontalTitleGap'},
     {'1': 'min_vertical_padding', '3': 16, '4': 1, '5': 1, '10': 'minVerticalPadding'},
@@ -2833,24 +3362,30 @@ const MaterialListTileTheme$json = {
 /// Descriptor for `MaterialListTileTheme`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialListTileThemeDescriptor = $convert.base64Decode(
     'ChVNYXRlcmlhbExpc3RUaWxlVGhlbWUSJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3'
-    'Npb25SA2tleRIUCgVkZW5zZRgEIAEoCFIFZGVuc2USJwoPZW5hYmxlX2ZlZWRiYWNrGA0gASgI'
-    'Ug5lbmFibGVGZWVkYmFjaxIwChRob3Jpem9udGFsX3RpdGxlX2dhcBgPIAEoAVISaG9yaXpvbn'
-    'RhbFRpdGxlR2FwEjAKFG1pbl92ZXJ0aWNhbF9wYWRkaW5nGBAgASgBUhJtaW5WZXJ0aWNhbFBh'
-    'ZGRpbmcSKgoRbWluX2xlYWRpbmdfd2lkdGgYESABKAFSD21pbkxlYWRpbmdXaWR0aBInCgVjaG'
-    'lsZBgSIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBWNoaWxk');
+    'Npb25SA2tleRIUCgVkZW5zZRgEIAEoCFIFZGVuc2USNwoOc2VsZWN0ZWRfY29sb3IYByABKAsy'
+    'EC5Db2xvckV4cHJlc3Npb25SDXNlbGVjdGVkQ29sb3ISLwoKaWNvbl9jb2xvchgIIAEoCzIQLk'
+    'NvbG9yRXhwcmVzc2lvblIJaWNvbkNvbG9yEi8KCnRleHRfY29sb3IYCSABKAsyEC5Db2xvckV4'
+    'cHJlc3Npb25SCXRleHRDb2xvchIvCgp0aWxlX2NvbG9yGAsgASgLMhAuQ29sb3JFeHByZXNzaW'
+    '9uUgl0aWxlQ29sb3ISQAoTc2VsZWN0ZWRfdGlsZV9jb2xvchgMIAEoCzIQLkNvbG9yRXhwcmVz'
+    'c2lvblIRc2VsZWN0ZWRUaWxlQ29sb3ISJwoPZW5hYmxlX2ZlZWRiYWNrGA0gASgIUg5lbmFibG'
+    'VGZWVkYmFjaxIwChRob3Jpem9udGFsX3RpdGxlX2dhcBgPIAEoAVISaG9yaXpvbnRhbFRpdGxl'
+    'R2FwEjAKFG1pbl92ZXJ0aWNhbF9wYWRkaW5nGBAgASgBUhJtaW5WZXJ0aWNhbFBhZGRpbmcSKg'
+    'oRbWluX2xlYWRpbmdfd2lkdGgYESABKAFSD21pbkxlYWRpbmdXaWR0aBInCgVjaGlsZBgSIAEo'
+    'CzIRLldpZGdldEV4cHJlc3Npb25SBWNoaWxk');
 
 @$core.Deprecated('Use materialMagnifierDescriptor instead')
 const MaterialMagnifier$json = {
   '1': 'MaterialMagnifier',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'film_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'filmColor'},
   ],
 };
 
 /// Descriptor for `MaterialMagnifier`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialMagnifierDescriptor = $convert.base64Decode(
     'ChFNYXRlcmlhbE1hZ25pZmllchInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2lvbl'
-    'IDa2V5');
+    'IDa2V5Ei8KCmZpbG1fY29sb3IYBSABKAsyEC5Db2xvckV4cHJlc3Npb25SCWZpbG1Db2xvcg==');
 
 @$core.Deprecated('Use materialMaterialDescriptor instead')
 const MaterialMaterial$json = {
@@ -2858,6 +3393,9 @@ const MaterialMaterial$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'elevation', '3': 4, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
+    {'1': 'shadow_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
     {'1': 'border_on_foreground', '3': 11, '4': 1, '5': 8, '10': 'borderOnForeground'},
     {'1': 'animation_duration', '3': 13, '4': 1, '5': 11, '6': '.DurationExpression', '10': 'animationDuration'},
     {'1': 'child', '3': 14, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
@@ -2867,16 +3405,27 @@ const MaterialMaterial$json = {
 /// Descriptor for `MaterialMaterial`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialMaterialDescriptor = $convert.base64Decode(
     'ChBNYXRlcmlhbE1hdGVyaWFsEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZXNzaW9uUg'
-    'NrZXkSHAoJZWxldmF0aW9uGAQgASgBUgllbGV2YXRpb24SMAoUYm9yZGVyX29uX2ZvcmVncm91'
-    'bmQYCyABKAhSEmJvcmRlck9uRm9yZWdyb3VuZBJCChJhbmltYXRpb25fZHVyYXRpb24YDSABKA'
-    'syEy5EdXJhdGlvbkV4cHJlc3Npb25SEWFuaW1hdGlvbkR1cmF0aW9uEicKBWNoaWxkGA4gASgL'
-    'MhEuV2lkZ2V0RXhwcmVzc2lvblIFY2hpbGQ=');
+    'NrZXkSHAoJZWxldmF0aW9uGAQgASgBUgllbGV2YXRpb24SJgoFY29sb3IYBSABKAsyEC5Db2xv'
+    'ckV4cHJlc3Npb25SBWNvbG9yEjMKDHNoYWRvd19jb2xvchgGIAEoCzIQLkNvbG9yRXhwcmVzc2'
+    'lvblILc2hhZG93Q29sb3ISPgoSc3VyZmFjZV90aW50X2NvbG9yGAcgASgLMhAuQ29sb3JFeHBy'
+    'ZXNzaW9uUhBzdXJmYWNlVGludENvbG9yEjAKFGJvcmRlcl9vbl9mb3JlZ3JvdW5kGAsgASgIUh'
+    'Jib3JkZXJPbkZvcmVncm91bmQSQgoSYW5pbWF0aW9uX2R1cmF0aW9uGA0gASgLMhMuRHVyYXRp'
+    'b25FeHByZXNzaW9uUhFhbmltYXRpb25EdXJhdGlvbhInCgVjaGlsZBgOIAEoCzIRLldpZGdldE'
+    'V4cHJlc3Npb25SBWNoaWxk');
 
 @$core.Deprecated('Use materialMaterialButtonDescriptor instead')
 const MaterialMaterialButton$json = {
   '1': 'MaterialMaterialButton',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'text_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'textColor'},
+    {'1': 'disabled_text_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledTextColor'},
+    {'1': 'color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
+    {'1': 'disabled_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
+    {'1': 'focus_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 13, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
+    {'1': 'highlight_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'highlightColor'},
+    {'1': 'splash_color', '3': 15, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'splashColor'},
     {'1': 'elevation', '3': 17, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'focus_elevation', '3': 18, '4': 1, '5': 1, '10': 'focusElevation'},
     {'1': 'hover_elevation', '3': 19, '4': 1, '5': 1, '10': 'hoverElevation'},
@@ -2894,15 +3443,22 @@ const MaterialMaterialButton$json = {
 /// Descriptor for `MaterialMaterialButton`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialMaterialButtonDescriptor = $convert.base64Decode(
     'ChZNYXRlcmlhbE1hdGVyaWFsQnV0dG9uEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZX'
-    'NzaW9uUgNrZXkSHAoJZWxldmF0aW9uGBEgASgBUgllbGV2YXRpb24SJwoPZm9jdXNfZWxldmF0'
-    'aW9uGBIgASgBUg5mb2N1c0VsZXZhdGlvbhInCg9ob3Zlcl9lbGV2YXRpb24YEyABKAFSDmhvdm'
-    'VyRWxldmF0aW9uEi8KE2hpZ2hsaWdodF9lbGV2YXRpb24YFCABKAFSEmhpZ2hsaWdodEVsZXZh'
-    'dGlvbhItChJkaXNhYmxlZF9lbGV2YXRpb24YFSABKAFSEWRpc2FibGVkRWxldmF0aW9uEhwKCW'
-    'F1dG9mb2N1cxgbIAEoCFIJYXV0b2ZvY3VzEkIKEmFuaW1hdGlvbl9kdXJhdGlvbhgdIAEoCzIT'
-    'LkR1cmF0aW9uRXhwcmVzc2lvblIRYW5pbWF0aW9uRHVyYXRpb24SGwoJbWluX3dpZHRoGB4gAS'
-    'gBUghtaW5XaWR0aBIWCgZoZWlnaHQYHyABKAFSBmhlaWdodBInCg9lbmFibGVfZmVlZGJhY2sY'
-    'ICABKAhSDmVuYWJsZUZlZWRiYWNrEicKBWNoaWxkGCEgASgLMhEuV2lkZ2V0RXhwcmVzc2lvbl'
-    'IFY2hpbGQ=');
+    'NzaW9uUgNrZXkSLwoKdGV4dF9jb2xvchgIIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIJdGV4dENv'
+    'bG9yEkAKE2Rpc2FibGVkX3RleHRfY29sb3IYCSABKAsyEC5Db2xvckV4cHJlc3Npb25SEWRpc2'
+    'FibGVkVGV4dENvbG9yEiYKBWNvbG9yGAogASgLMhAuQ29sb3JFeHByZXNzaW9uUgVjb2xvchI3'
+    'Cg5kaXNhYmxlZF9jb2xvchgLIAEoCzIQLkNvbG9yRXhwcmVzc2lvblINZGlzYWJsZWRDb2xvch'
+    'IxCgtmb2N1c19jb2xvchgMIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIKZm9jdXNDb2xvchIxCgto'
+    'b3Zlcl9jb2xvchgNIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIKaG92ZXJDb2xvchI5Cg9oaWdobG'
+    'lnaHRfY29sb3IYDiABKAsyEC5Db2xvckV4cHJlc3Npb25SDmhpZ2hsaWdodENvbG9yEjMKDHNw'
+    'bGFzaF9jb2xvchgPIAEoCzIQLkNvbG9yRXhwcmVzc2lvblILc3BsYXNoQ29sb3ISHAoJZWxldm'
+    'F0aW9uGBEgASgBUgllbGV2YXRpb24SJwoPZm9jdXNfZWxldmF0aW9uGBIgASgBUg5mb2N1c0Vs'
+    'ZXZhdGlvbhInCg9ob3Zlcl9lbGV2YXRpb24YEyABKAFSDmhvdmVyRWxldmF0aW9uEi8KE2hpZ2'
+    'hsaWdodF9lbGV2YXRpb24YFCABKAFSEmhpZ2hsaWdodEVsZXZhdGlvbhItChJkaXNhYmxlZF9l'
+    'bGV2YXRpb24YFSABKAFSEWRpc2FibGVkRWxldmF0aW9uEhwKCWF1dG9mb2N1cxgbIAEoCFIJYX'
+    'V0b2ZvY3VzEkIKEmFuaW1hdGlvbl9kdXJhdGlvbhgdIAEoCzITLkR1cmF0aW9uRXhwcmVzc2lv'
+    'blIRYW5pbWF0aW9uRHVyYXRpb24SGwoJbWluX3dpZHRoGB4gASgBUghtaW5XaWR0aBIWCgZoZW'
+    'lnaHQYHyABKAFSBmhlaWdodBInCg9lbmFibGVfZmVlZGJhY2sYICABKAhSDmVuYWJsZUZlZWRi'
+    'YWNrEicKBWNoaWxkGCEgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFY2hpbGQ=');
 
 @$core.Deprecated('Use materialCheckboxMenuButtonDescriptor instead')
 const MaterialCheckboxMenuButton$json = {
@@ -3040,6 +3596,7 @@ const MaterialMergeableMaterial$json = {
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'elevation', '3': 4, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'has_dividers', '3': 5, '4': 1, '5': 8, '10': 'hasDividers'},
+    {'1': 'divider_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'dividerColor'},
   ],
 };
 
@@ -3047,7 +3604,8 @@ const MaterialMergeableMaterial$json = {
 final $typed_data.Uint8List materialMergeableMaterialDescriptor = $convert.base64Decode(
     'ChlNYXRlcmlhbE1lcmdlYWJsZU1hdGVyaWFsEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeH'
     'ByZXNzaW9uUgNrZXkSHAoJZWxldmF0aW9uGAQgASgBUgllbGV2YXRpb24SIQoMaGFzX2Rpdmlk'
-    'ZXJzGAUgASgIUgtoYXNEaXZpZGVycw==');
+    'ZXJzGAUgASgIUgtoYXNEaXZpZGVycxI1Cg1kaXZpZGVyX2NvbG9yGAcgASgLMhAuQ29sb3JFeH'
+    'ByZXNzaW9uUgxkaXZpZGVyQ29sb3I=');
 
 @$core.Deprecated('Use materialNavigationBarDescriptor instead')
 const MaterialNavigationBar$json = {
@@ -3057,7 +3615,11 @@ const MaterialNavigationBar$json = {
     {'1': 'animation_duration', '3': 3, '4': 1, '5': 11, '6': '.DurationExpression', '10': 'animationDuration'},
     {'1': 'selected_index', '3': 4, '4': 1, '5': 5, '10': 'selectedIndex'},
     {'1': 'destinations', '3': 5, '4': 3, '5': 11, '6': '.WidgetExpression', '10': 'destinations'},
+    {'1': 'background_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'elevation', '3': 8, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'shadow_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
+    {'1': 'indicator_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'indicatorColor'},
     {'1': 'height', '3': 13, '4': 1, '5': 1, '10': 'height'},
   ],
 };
@@ -3068,8 +3630,12 @@ final $typed_data.Uint8List materialNavigationBarDescriptor = $convert.base64Dec
     'Npb25SA2tleRJCChJhbmltYXRpb25fZHVyYXRpb24YAyABKAsyEy5EdXJhdGlvbkV4cHJlc3Np'
     'b25SEWFuaW1hdGlvbkR1cmF0aW9uEiUKDnNlbGVjdGVkX2luZGV4GAQgASgFUg1zZWxlY3RlZE'
     'luZGV4EjUKDGRlc3RpbmF0aW9ucxgFIAMoCzIRLldpZGdldEV4cHJlc3Npb25SDGRlc3RpbmF0'
-    'aW9ucxIcCgllbGV2YXRpb24YCCABKAFSCWVsZXZhdGlvbhIWCgZoZWlnaHQYDSABKAFSBmhlaW'
-    'dodA==');
+    'aW9ucxI7ChBiYWNrZ3JvdW5kX2NvbG9yGAcgASgLMhAuQ29sb3JFeHByZXNzaW9uUg9iYWNrZ3'
+    'JvdW5kQ29sb3ISHAoJZWxldmF0aW9uGAggASgBUgllbGV2YXRpb24SMwoMc2hhZG93X2NvbG9y'
+    'GAkgASgLMhAuQ29sb3JFeHByZXNzaW9uUgtzaGFkb3dDb2xvchI+ChJzdXJmYWNlX3RpbnRfY2'
+    '9sb3IYCiABKAsyEC5Db2xvckV4cHJlc3Npb25SEHN1cmZhY2VUaW50Q29sb3ISOQoPaW5kaWNh'
+    'dG9yX2NvbG9yGAsgASgLMhAuQ29sb3JFeHByZXNzaW9uUg5pbmRpY2F0b3JDb2xvchIWCgZoZW'
+    'lnaHQYDSABKAFSBmhlaWdodA==');
 
 @$core.Deprecated('Use materialNavigationDestinationDescriptor instead')
 const MaterialNavigationDestination$json = {
@@ -3096,7 +3662,11 @@ const MaterialNavigationDrawer$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.WidgetExpression', '10': 'children'},
+    {'1': 'background_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'shadow_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'surface_tint_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'surfaceTintColor'},
     {'1': 'elevation', '3': 7, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'indicator_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'indicatorColor'},
     {'1': 'selected_index', '3': 11, '4': 1, '5': 5, '10': 'selectedIndex'},
   ],
 };
@@ -3105,14 +3675,19 @@ const MaterialNavigationDrawer$json = {
 final $typed_data.Uint8List materialNavigationDrawerDescriptor = $convert.base64Decode(
     'ChhNYXRlcmlhbE5hdmlnYXRpb25EcmF3ZXISJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cH'
     'Jlc3Npb25SA2tleRItCghjaGlsZHJlbhgDIAMoCzIRLldpZGdldEV4cHJlc3Npb25SCGNoaWxk'
-    'cmVuEhwKCWVsZXZhdGlvbhgHIAEoAVIJZWxldmF0aW9uEiUKDnNlbGVjdGVkX2luZGV4GAsgAS'
-    'gFUg1zZWxlY3RlZEluZGV4');
+    'cmVuEjsKEGJhY2tncm91bmRfY29sb3IYBCABKAsyEC5Db2xvckV4cHJlc3Npb25SD2JhY2tncm'
+    '91bmRDb2xvchIzCgxzaGFkb3dfY29sb3IYBSABKAsyEC5Db2xvckV4cHJlc3Npb25SC3NoYWRv'
+    'd0NvbG9yEj4KEnN1cmZhY2VfdGludF9jb2xvchgGIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIQc3'
+    'VyZmFjZVRpbnRDb2xvchIcCgllbGV2YXRpb24YByABKAFSCWVsZXZhdGlvbhI5Cg9pbmRpY2F0'
+    'b3JfY29sb3IYCCABKAsyEC5Db2xvckV4cHJlc3Npb25SDmluZGljYXRvckNvbG9yEiUKDnNlbG'
+    'VjdGVkX2luZGV4GAsgASgFUg1zZWxlY3RlZEluZGV4');
 
 @$core.Deprecated('Use materialNavigationDrawerDestinationDescriptor instead')
 const MaterialNavigationDrawerDestination$json = {
   '1': 'MaterialNavigationDrawerDestination',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'background_color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'icon', '3': 4, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'icon'},
     {'1': 'selected_icon', '3': 5, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'selectedIcon'},
     {'1': 'label', '3': 6, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'label'},
@@ -3122,9 +3697,10 @@ const MaterialNavigationDrawerDestination$json = {
 /// Descriptor for `MaterialNavigationDrawerDestination`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialNavigationDrawerDestinationDescriptor = $convert.base64Decode(
     'CiNNYXRlcmlhbE5hdmlnYXRpb25EcmF3ZXJEZXN0aW5hdGlvbhInCgNrZXkYAiABKAsyFS5GbH'
-    'V0dGVyS2V5RXhwcmVzc2lvblIDa2V5EiUKBGljb24YBCABKAsyES5XaWRnZXRFeHByZXNzaW9u'
-    'UgRpY29uEjYKDXNlbGVjdGVkX2ljb24YBSABKAsyES5XaWRnZXRFeHByZXNzaW9uUgxzZWxlY3'
-    'RlZEljb24SJwoFbGFiZWwYBiABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVsYWJlbA==');
+    'V0dGVyS2V5RXhwcmVzc2lvblIDa2V5EjsKEGJhY2tncm91bmRfY29sb3IYAyABKAsyEC5Db2xv'
+    'ckV4cHJlc3Npb25SD2JhY2tncm91bmRDb2xvchIlCgRpY29uGAQgASgLMhEuV2lkZ2V0RXhwcm'
+    'Vzc2lvblIEaWNvbhI2Cg1zZWxlY3RlZF9pY29uGAUgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIM'
+    'c2VsZWN0ZWRJY29uEicKBWxhYmVsGAYgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFbGFiZWw=');
 
 @$core.Deprecated('Use materialOutlinedButtonDescriptor instead')
 const MaterialOutlinedButton$json = {
@@ -3216,6 +3792,8 @@ const MaterialCircularProgressIndicator$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'value', '3': 3, '4': 1, '5': 1, '10': 'value'},
+    {'1': 'background_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'stroke_width', '3': 7, '4': 1, '5': 1, '10': 'strokeWidth'},
     {'1': 'stroke_align', '3': 8, '4': 1, '5': 1, '10': 'strokeAlign'},
     {'1': 'semantics_label', '3': 9, '4': 1, '5': 9, '10': 'semanticsLabel'},
@@ -3226,10 +3804,12 @@ const MaterialCircularProgressIndicator$json = {
 /// Descriptor for `MaterialCircularProgressIndicator`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialCircularProgressIndicatorDescriptor = $convert.base64Decode(
     'CiFNYXRlcmlhbENpcmN1bGFyUHJvZ3Jlc3NJbmRpY2F0b3ISJwoDa2V5GAIgASgLMhUuRmx1dH'
-    'RlcktleUV4cHJlc3Npb25SA2tleRIUCgV2YWx1ZRgDIAEoAVIFdmFsdWUSIQoMc3Ryb2tlX3dp'
-    'ZHRoGAcgASgBUgtzdHJva2VXaWR0aBIhCgxzdHJva2VfYWxpZ24YCCABKAFSC3N0cm9rZUFsaW'
-    'duEicKD3NlbWFudGljc19sYWJlbBgJIAEoCVIOc2VtYW50aWNzTGFiZWwSJwoPc2VtYW50aWNz'
-    'X3ZhbHVlGAogASgJUg5zZW1hbnRpY3NWYWx1ZQ==');
+    'RlcktleUV4cHJlc3Npb25SA2tleRIUCgV2YWx1ZRgDIAEoAVIFdmFsdWUSOwoQYmFja2dyb3Vu'
+    'ZF9jb2xvchgEIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIPYmFja2dyb3VuZENvbG9yEiYKBWNvbG'
+    '9yGAUgASgLMhAuQ29sb3JFeHByZXNzaW9uUgVjb2xvchIhCgxzdHJva2Vfd2lkdGgYByABKAFS'
+    'C3N0cm9rZVdpZHRoEiEKDHN0cm9rZV9hbGlnbhgIIAEoAVILc3Ryb2tlQWxpZ24SJwoPc2VtYW'
+    '50aWNzX2xhYmVsGAkgASgJUg5zZW1hbnRpY3NMYWJlbBInCg9zZW1hbnRpY3NfdmFsdWUYCiAB'
+    'KAlSDnNlbWFudGljc1ZhbHVl');
 
 @$core.Deprecated('Use materialCircularProgressIndicatorNamedAdaptiveDescriptor instead')
 const MaterialCircularProgressIndicatorNamedAdaptive$json = {
@@ -3237,6 +3817,7 @@ const MaterialCircularProgressIndicatorNamedAdaptive$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'value', '3': 3, '4': 1, '5': 1, '10': 'value'},
+    {'1': 'background_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'stroke_width', '3': 6, '4': 1, '5': 1, '10': 'strokeWidth'},
     {'1': 'semantics_label', '3': 7, '4': 1, '5': 9, '10': 'semanticsLabel'},
     {'1': 'semantics_value', '3': 8, '4': 1, '5': 9, '10': 'semanticsValue'},
@@ -3248,9 +3829,10 @@ const MaterialCircularProgressIndicatorNamedAdaptive$json = {
 final $typed_data.Uint8List materialCircularProgressIndicatorNamedAdaptiveDescriptor = $convert.base64Decode(
     'Ci5NYXRlcmlhbENpcmN1bGFyUHJvZ3Jlc3NJbmRpY2F0b3JOYW1lZEFkYXB0aXZlEicKA2tleR'
     'gCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZXNzaW9uUgNrZXkSFAoFdmFsdWUYAyABKAFSBXZhbHVl'
-    'EiEKDHN0cm9rZV93aWR0aBgGIAEoAVILc3Ryb2tlV2lkdGgSJwoPc2VtYW50aWNzX2xhYmVsGA'
-    'cgASgJUg5zZW1hbnRpY3NMYWJlbBInCg9zZW1hbnRpY3NfdmFsdWUYCCABKAlSDnNlbWFudGlj'
-    'c1ZhbHVlEiEKDHN0cm9rZV9hbGlnbhgKIAEoAVILc3Ryb2tlQWxpZ24=');
+    'EjsKEGJhY2tncm91bmRfY29sb3IYBCABKAsyEC5Db2xvckV4cHJlc3Npb25SD2JhY2tncm91bm'
+    'RDb2xvchIhCgxzdHJva2Vfd2lkdGgYBiABKAFSC3N0cm9rZVdpZHRoEicKD3NlbWFudGljc19s'
+    'YWJlbBgHIAEoCVIOc2VtYW50aWNzTGFiZWwSJwoPc2VtYW50aWNzX3ZhbHVlGAggASgJUg5zZW'
+    '1hbnRpY3NWYWx1ZRIhCgxzdHJva2VfYWxpZ24YCiABKAFSC3N0cm9rZUFsaWdu');
 
 @$core.Deprecated('Use materialLinearProgressIndicatorDescriptor instead')
 const MaterialLinearProgressIndicator$json = {
@@ -3258,6 +3840,8 @@ const MaterialLinearProgressIndicator$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'value', '3': 3, '4': 1, '5': 1, '10': 'value'},
+    {'1': 'background_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'min_height', '3': 7, '4': 1, '5': 1, '10': 'minHeight'},
     {'1': 'semantics_label', '3': 8, '4': 1, '5': 9, '10': 'semanticsLabel'},
     {'1': 'semantics_value', '3': 9, '4': 1, '5': 9, '10': 'semanticsValue'},
@@ -3267,9 +3851,11 @@ const MaterialLinearProgressIndicator$json = {
 /// Descriptor for `MaterialLinearProgressIndicator`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialLinearProgressIndicatorDescriptor = $convert.base64Decode(
     'Ch9NYXRlcmlhbExpbmVhclByb2dyZXNzSW5kaWNhdG9yEicKA2tleRgCIAEoCzIVLkZsdXR0ZX'
-    'JLZXlFeHByZXNzaW9uUgNrZXkSFAoFdmFsdWUYAyABKAFSBXZhbHVlEh0KCm1pbl9oZWlnaHQY'
-    'ByABKAFSCW1pbkhlaWdodBInCg9zZW1hbnRpY3NfbGFiZWwYCCABKAlSDnNlbWFudGljc0xhYm'
-    'VsEicKD3NlbWFudGljc192YWx1ZRgJIAEoCVIOc2VtYW50aWNzVmFsdWU=');
+    'JLZXlFeHByZXNzaW9uUgNrZXkSFAoFdmFsdWUYAyABKAFSBXZhbHVlEjsKEGJhY2tncm91bmRf'
+    'Y29sb3IYBCABKAsyEC5Db2xvckV4cHJlc3Npb25SD2JhY2tncm91bmRDb2xvchImCgVjb2xvch'
+    'gFIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIFY29sb3ISHQoKbWluX2hlaWdodBgHIAEoAVIJbWlu'
+    'SGVpZ2h0EicKD3NlbWFudGljc19sYWJlbBgIIAEoCVIOc2VtYW50aWNzTGFiZWwSJwoPc2VtYW'
+    '50aWNzX3ZhbHVlGAkgASgJUg5zZW1hbnRpY3NWYWx1ZQ==');
 
 @$core.Deprecated('Use materialRefreshProgressIndicatorDescriptor instead')
 const MaterialRefreshProgressIndicator$json = {
@@ -3277,6 +3863,8 @@ const MaterialRefreshProgressIndicator$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'value', '3': 3, '4': 1, '5': 1, '10': 'value'},
+    {'1': 'background_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'stroke_width', '3': 7, '4': 1, '5': 1, '10': 'strokeWidth'},
     {'1': 'stroke_align', '3': 8, '4': 1, '5': 1, '10': 'strokeAlign'},
     {'1': 'semantics_label', '3': 9, '4': 1, '5': 9, '10': 'semanticsLabel'},
@@ -3287,10 +3875,12 @@ const MaterialRefreshProgressIndicator$json = {
 /// Descriptor for `MaterialRefreshProgressIndicator`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialRefreshProgressIndicatorDescriptor = $convert.base64Decode(
     'CiBNYXRlcmlhbFJlZnJlc2hQcm9ncmVzc0luZGljYXRvchInCgNrZXkYAiABKAsyFS5GbHV0dG'
-    'VyS2V5RXhwcmVzc2lvblIDa2V5EhQKBXZhbHVlGAMgASgBUgV2YWx1ZRIhCgxzdHJva2Vfd2lk'
-    'dGgYByABKAFSC3N0cm9rZVdpZHRoEiEKDHN0cm9rZV9hbGlnbhgIIAEoAVILc3Ryb2tlQWxpZ2'
-    '4SJwoPc2VtYW50aWNzX2xhYmVsGAkgASgJUg5zZW1hbnRpY3NMYWJlbBInCg9zZW1hbnRpY3Nf'
-    'dmFsdWUYCiABKAlSDnNlbWFudGljc1ZhbHVl');
+    'VyS2V5RXhwcmVzc2lvblIDa2V5EhQKBXZhbHVlGAMgASgBUgV2YWx1ZRI7ChBiYWNrZ3JvdW5k'
+    'X2NvbG9yGAQgASgLMhAuQ29sb3JFeHByZXNzaW9uUg9iYWNrZ3JvdW5kQ29sb3ISJgoFY29sb3'
+    'IYBSABKAsyEC5Db2xvckV4cHJlc3Npb25SBWNvbG9yEiEKDHN0cm9rZV93aWR0aBgHIAEoAVIL'
+    'c3Ryb2tlV2lkdGgSIQoMc3Ryb2tlX2FsaWduGAggASgBUgtzdHJva2VBbGlnbhInCg9zZW1hbn'
+    'RpY3NfbGFiZWwYCSABKAlSDnNlbWFudGljc0xhYmVsEicKD3NlbWFudGljc192YWx1ZRgKIAEo'
+    'CVIOc2VtYW50aWNzVmFsdWU=');
 
 @$core.Deprecated('Use materialScaffoldDescriptor instead')
 const MaterialScaffold$json = {
@@ -3304,10 +3894,12 @@ const MaterialScaffold$json = {
     {'1': 'end_drawer', '3': 12, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'endDrawer'},
     {'1': 'bottom_navigation_bar', '3': 14, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'bottomNavigationBar'},
     {'1': 'bottom_sheet', '3': 15, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'bottomSheet'},
+    {'1': 'background_color', '3': 16, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'resize_to_avoid_bottom_inset', '3': 17, '4': 1, '5': 8, '10': 'resizeToAvoidBottomInset'},
     {'1': 'primary', '3': 18, '4': 1, '5': 8, '10': 'primary'},
     {'1': 'extend_body', '3': 20, '4': 1, '5': 8, '10': 'extendBody'},
     {'1': 'extend_body_behind_app_bar', '3': 21, '4': 1, '5': 8, '10': 'extendBodyBehindAppBar'},
+    {'1': 'drawer_scrim_color', '3': 22, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'drawerScrimColor'},
     {'1': 'drawer_edge_drag_width', '3': 23, '4': 1, '5': 1, '10': 'drawerEdgeDragWidth'},
     {'1': 'drawer_enable_open_drag_gesture', '3': 24, '4': 1, '5': 8, '10': 'drawerEnableOpenDragGesture'},
     {'1': 'end_drawer_enable_open_drag_gesture', '3': 25, '4': 1, '5': 8, '10': 'endDrawerEnableOpenDragGesture'},
@@ -3325,15 +3917,17 @@ final $typed_data.Uint8List materialScaffoldDescriptor = $convert.base64Decode(
     'ByZXNzaW9uUgZkcmF3ZXISMAoKZW5kX2RyYXdlchgMIAEoCzIRLldpZGdldEV4cHJlc3Npb25S'
     'CWVuZERyYXdlchJFChVib3R0b21fbmF2aWdhdGlvbl9iYXIYDiABKAsyES5XaWRnZXRFeHByZX'
     'NzaW9uUhNib3R0b21OYXZpZ2F0aW9uQmFyEjQKDGJvdHRvbV9zaGVldBgPIAEoCzIRLldpZGdl'
-    'dEV4cHJlc3Npb25SC2JvdHRvbVNoZWV0Ej4KHHJlc2l6ZV90b19hdm9pZF9ib3R0b21faW5zZX'
-    'QYESABKAhSGHJlc2l6ZVRvQXZvaWRCb3R0b21JbnNldBIYCgdwcmltYXJ5GBIgASgIUgdwcmlt'
-    'YXJ5Eh8KC2V4dGVuZF9ib2R5GBQgASgIUgpleHRlbmRCb2R5EjoKGmV4dGVuZF9ib2R5X2JlaG'
-    'luZF9hcHBfYmFyGBUgASgIUhZleHRlbmRCb2R5QmVoaW5kQXBwQmFyEjMKFmRyYXdlcl9lZGdl'
-    'X2RyYWdfd2lkdGgYFyABKAFSE2RyYXdlckVkZ2VEcmFnV2lkdGgSRAofZHJhd2VyX2VuYWJsZV'
-    '9vcGVuX2RyYWdfZ2VzdHVyZRgYIAEoCFIbZHJhd2VyRW5hYmxlT3BlbkRyYWdHZXN0dXJlEksK'
-    'I2VuZF9kcmF3ZXJfZW5hYmxlX29wZW5fZHJhZ19nZXN0dXJlGBkgASgIUh5lbmREcmF3ZXJFbm'
-    'FibGVPcGVuRHJhZ0dlc3R1cmUSJQoOcmVzdG9yYXRpb25faWQYGiABKAlSDXJlc3RvcmF0aW9u'
-    'SWQ=');
+    'dEV4cHJlc3Npb25SC2JvdHRvbVNoZWV0EjsKEGJhY2tncm91bmRfY29sb3IYECABKAsyEC5Db2'
+    'xvckV4cHJlc3Npb25SD2JhY2tncm91bmRDb2xvchI+ChxyZXNpemVfdG9fYXZvaWRfYm90dG9t'
+    'X2luc2V0GBEgASgIUhhyZXNpemVUb0F2b2lkQm90dG9tSW5zZXQSGAoHcHJpbWFyeRgSIAEoCF'
+    'IHcHJpbWFyeRIfCgtleHRlbmRfYm9keRgUIAEoCFIKZXh0ZW5kQm9keRI6ChpleHRlbmRfYm9k'
+    'eV9iZWhpbmRfYXBwX2JhchgVIAEoCFIWZXh0ZW5kQm9keUJlaGluZEFwcEJhchI+ChJkcmF3ZX'
+    'Jfc2NyaW1fY29sb3IYFiABKAsyEC5Db2xvckV4cHJlc3Npb25SEGRyYXdlclNjcmltQ29sb3IS'
+    'MwoWZHJhd2VyX2VkZ2VfZHJhZ193aWR0aBgXIAEoAVITZHJhd2VyRWRnZURyYWdXaWR0aBJECh'
+    '9kcmF3ZXJfZW5hYmxlX29wZW5fZHJhZ19nZXN0dXJlGBggASgIUhtkcmF3ZXJFbmFibGVPcGVu'
+    'RHJhZ0dlc3R1cmUSSwojZW5kX2RyYXdlcl9lbmFibGVfb3Blbl9kcmFnX2dlc3R1cmUYGSABKA'
+    'hSHmVuZERyYXdlckVuYWJsZU9wZW5EcmFnR2VzdHVyZRIlCg5yZXN0b3JhdGlvbl9pZBgaIAEo'
+    'CVINcmVzdG9yYXRpb25JZA==');
 
 @$core.Deprecated('Use materialScaffoldMessengerDescriptor instead')
 const MaterialScaffoldMessenger$json = {
@@ -3401,6 +3995,7 @@ const MaterialSelectableText$json = {
     {'1': 'max_lines', '3': 13, '4': 1, '5': 5, '10': 'maxLines'},
     {'1': 'cursor_width', '3': 14, '4': 1, '5': 1, '10': 'cursorWidth'},
     {'1': 'cursor_height', '3': 15, '4': 1, '5': 1, '10': 'cursorHeight'},
+    {'1': 'cursor_color', '3': 17, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'cursorColor'},
     {'1': 'enable_interactive_selection', '3': 21, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
     {'1': 'semantics_label', '3': 25, '4': 1, '5': 9, '10': 'semanticsLabel'},
   ],
@@ -3413,9 +4008,10 @@ final $typed_data.Uint8List materialSelectableTextDescriptor = $convert.base64De
     'AVIPdGV4dFNjYWxlRmFjdG9yEh8KC3Nob3dfY3Vyc29yGAogASgIUgpzaG93Q3Vyc29yEhwKCW'
     'F1dG9mb2N1cxgLIAEoCFIJYXV0b2ZvY3VzEhsKCW1pbl9saW5lcxgMIAEoBVIIbWluTGluZXMS'
     'GwoJbWF4X2xpbmVzGA0gASgFUghtYXhMaW5lcxIhCgxjdXJzb3Jfd2lkdGgYDiABKAFSC2N1cn'
-    'NvcldpZHRoEiMKDWN1cnNvcl9oZWlnaHQYDyABKAFSDGN1cnNvckhlaWdodBJAChxlbmFibGVf'
-    'aW50ZXJhY3RpdmVfc2VsZWN0aW9uGBUgASgIUhplbmFibGVJbnRlcmFjdGl2ZVNlbGVjdGlvbh'
-    'InCg9zZW1hbnRpY3NfbGFiZWwYGSABKAlSDnNlbWFudGljc0xhYmVs');
+    'NvcldpZHRoEiMKDWN1cnNvcl9oZWlnaHQYDyABKAFSDGN1cnNvckhlaWdodBIzCgxjdXJzb3Jf'
+    'Y29sb3IYESABKAsyEC5Db2xvckV4cHJlc3Npb25SC2N1cnNvckNvbG9yEkAKHGVuYWJsZV9pbn'
+    'RlcmFjdGl2ZV9zZWxlY3Rpb24YFSABKAhSGmVuYWJsZUludGVyYWN0aXZlU2VsZWN0aW9uEicK'
+    'D3NlbWFudGljc19sYWJlbBgZIAEoCVIOc2VtYW50aWNzTGFiZWw=');
 
 @$core.Deprecated('Use materialSelectionAreaDescriptor instead')
 const MaterialSelectionArea$json = {
@@ -3442,6 +4038,10 @@ const MaterialSlider$json = {
     {'1': 'max', '3': 9, '4': 1, '5': 1, '10': 'max'},
     {'1': 'divisions', '3': 10, '4': 1, '5': 5, '10': 'divisions'},
     {'1': 'label', '3': 11, '4': 1, '5': 9, '10': 'label'},
+    {'1': 'active_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'activeColor'},
+    {'1': 'inactive_color', '3': 13, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'inactiveColor'},
+    {'1': 'secondary_active_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'secondaryActiveColor'},
+    {'1': 'thumb_color', '3': 15, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'thumbColor'},
     {'1': 'autofocus', '3': 20, '4': 1, '5': 8, '10': 'autofocus'},
   ],
 };
@@ -3451,8 +4051,12 @@ final $typed_data.Uint8List materialSliderDescriptor = $convert.base64Decode(
     'Cg5NYXRlcmlhbFNsaWRlchInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2lvblIDa2'
     'V5EhQKBXZhbHVlGAMgASgBUgV2YWx1ZRIyChVzZWNvbmRhcnlfdHJhY2tfdmFsdWUYBCABKAFS'
     'E3NlY29uZGFyeVRyYWNrVmFsdWUSEAoDbWluGAggASgBUgNtaW4SEAoDbWF4GAkgASgBUgNtYX'
-    'gSHAoJZGl2aXNpb25zGAogASgFUglkaXZpc2lvbnMSFAoFbGFiZWwYCyABKAlSBWxhYmVsEhwK'
-    'CWF1dG9mb2N1cxgUIAEoCFIJYXV0b2ZvY3Vz');
+    'gSHAoJZGl2aXNpb25zGAogASgFUglkaXZpc2lvbnMSFAoFbGFiZWwYCyABKAlSBWxhYmVsEjMK'
+    'DGFjdGl2ZV9jb2xvchgMIAEoCzIQLkNvbG9yRXhwcmVzc2lvblILYWN0aXZlQ29sb3ISNwoOaW'
+    '5hY3RpdmVfY29sb3IYDSABKAsyEC5Db2xvckV4cHJlc3Npb25SDWluYWN0aXZlQ29sb3ISRgoW'
+    'c2Vjb25kYXJ5X2FjdGl2ZV9jb2xvchgOIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIUc2Vjb25kYX'
+    'J5QWN0aXZlQ29sb3ISMQoLdGh1bWJfY29sb3IYDyABKAsyEC5Db2xvckV4cHJlc3Npb25SCnRo'
+    'dW1iQ29sb3ISHAoJYXV0b2ZvY3VzGBQgASgIUglhdXRvZm9jdXM=');
 
 @$core.Deprecated('Use materialSliderNamedAdaptiveDescriptor instead')
 const MaterialSliderNamedAdaptive$json = {
@@ -3465,6 +4069,10 @@ const MaterialSliderNamedAdaptive$json = {
     {'1': 'max', '3': 9, '4': 1, '5': 1, '10': 'max'},
     {'1': 'divisions', '3': 10, '4': 1, '5': 5, '10': 'divisions'},
     {'1': 'label', '3': 11, '4': 1, '5': 9, '10': 'label'},
+    {'1': 'active_color', '3': 13, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'activeColor'},
+    {'1': 'inactive_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'inactiveColor'},
+    {'1': 'secondary_active_color', '3': 15, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'secondaryActiveColor'},
+    {'1': 'thumb_color', '3': 16, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'thumbColor'},
     {'1': 'autofocus', '3': 20, '4': 1, '5': 8, '10': 'autofocus'},
   ],
 };
@@ -3475,7 +4083,11 @@ final $typed_data.Uint8List materialSliderNamedAdaptiveDescriptor = $convert.bas
     'V4cHJlc3Npb25SA2tleRIUCgV2YWx1ZRgDIAEoAVIFdmFsdWUSMgoVc2Vjb25kYXJ5X3RyYWNr'
     'X3ZhbHVlGAQgASgBUhNzZWNvbmRhcnlUcmFja1ZhbHVlEhAKA21pbhgIIAEoAVIDbWluEhAKA2'
     '1heBgJIAEoAVIDbWF4EhwKCWRpdmlzaW9ucxgKIAEoBVIJZGl2aXNpb25zEhQKBWxhYmVsGAsg'
-    'ASgJUgVsYWJlbBIcCglhdXRvZm9jdXMYFCABKAhSCWF1dG9mb2N1cw==');
+    'ASgJUgVsYWJlbBIzCgxhY3RpdmVfY29sb3IYDSABKAsyEC5Db2xvckV4cHJlc3Npb25SC2FjdG'
+    'l2ZUNvbG9yEjcKDmluYWN0aXZlX2NvbG9yGA4gASgLMhAuQ29sb3JFeHByZXNzaW9uUg1pbmFj'
+    'dGl2ZUNvbG9yEkYKFnNlY29uZGFyeV9hY3RpdmVfY29sb3IYDyABKAsyEC5Db2xvckV4cHJlc3'
+    'Npb25SFHNlY29uZGFyeUFjdGl2ZUNvbG9yEjEKC3RodW1iX2NvbG9yGBAgASgLMhAuQ29sb3JF'
+    'eHByZXNzaW9uUgp0aHVtYkNvbG9yEhwKCWF1dG9mb2N1cxgUIAEoCFIJYXV0b2ZvY3Vz');
 
 @$core.Deprecated('Use materialSnackBarDescriptor instead')
 const MaterialSnackBar$json = {
@@ -3483,10 +4095,12 @@ const MaterialSnackBar$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'content', '3': 3, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'content'},
+    {'1': 'background_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
     {'1': 'elevation', '3': 5, '4': 1, '5': 1, '10': 'elevation'},
     {'1': 'width', '3': 8, '4': 1, '5': 1, '10': 'width'},
     {'1': 'action_overflow_threshold', '3': 12, '4': 1, '5': 1, '10': 'actionOverflowThreshold'},
     {'1': 'show_close_icon', '3': 13, '4': 1, '5': 8, '10': 'showCloseIcon'},
+    {'1': 'close_icon_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'closeIconColor'},
     {'1': 'duration', '3': 15, '4': 1, '5': 11, '6': '.DurationExpression', '10': 'duration'},
   ],
 };
@@ -3494,11 +4108,13 @@ const MaterialSnackBar$json = {
 /// Descriptor for `MaterialSnackBar`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialSnackBarDescriptor = $convert.base64Decode(
     'ChBNYXRlcmlhbFNuYWNrQmFyEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZXNzaW9uUg'
-    'NrZXkSKwoHY29udGVudBgDIAEoCzIRLldpZGdldEV4cHJlc3Npb25SB2NvbnRlbnQSHAoJZWxl'
-    'dmF0aW9uGAUgASgBUgllbGV2YXRpb24SFAoFd2lkdGgYCCABKAFSBXdpZHRoEjoKGWFjdGlvbl'
-    '9vdmVyZmxvd190aHJlc2hvbGQYDCABKAFSF2FjdGlvbk92ZXJmbG93VGhyZXNob2xkEiYKD3No'
-    'b3dfY2xvc2VfaWNvbhgNIAEoCFINc2hvd0Nsb3NlSWNvbhIvCghkdXJhdGlvbhgPIAEoCzITLk'
-    'R1cmF0aW9uRXhwcmVzc2lvblIIZHVyYXRpb24=');
+    'NrZXkSKwoHY29udGVudBgDIAEoCzIRLldpZGdldEV4cHJlc3Npb25SB2NvbnRlbnQSOwoQYmFj'
+    'a2dyb3VuZF9jb2xvchgEIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIPYmFja2dyb3VuZENvbG9yEh'
+    'wKCWVsZXZhdGlvbhgFIAEoAVIJZWxldmF0aW9uEhQKBXdpZHRoGAggASgBUgV3aWR0aBI6Chlh'
+    'Y3Rpb25fb3ZlcmZsb3dfdGhyZXNob2xkGAwgASgBUhdhY3Rpb25PdmVyZmxvd1RocmVzaG9sZB'
+    'ImCg9zaG93X2Nsb3NlX2ljb24YDSABKAhSDXNob3dDbG9zZUljb24SOgoQY2xvc2VfaWNvbl9j'
+    'b2xvchgOIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIOY2xvc2VJY29uQ29sb3ISLwoIZHVyYXRpb2'
+    '4YDyABKAsyEy5EdXJhdGlvbkV4cHJlc3Npb25SCGR1cmF0aW9u');
 
 @$core.Deprecated('Use materialSwitchDescriptor instead')
 const MaterialSwitch$json = {
@@ -3506,6 +4122,12 @@ const MaterialSwitch$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'value', '3': 3, '4': 1, '5': 8, '10': 'value'},
+    {'1': 'active_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'activeColor'},
+    {'1': 'active_track_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'activeTrackColor'},
+    {'1': 'inactive_thumb_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'inactiveThumbColor'},
+    {'1': 'inactive_track_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'inactiveTrackColor'},
+    {'1': 'focus_color', '3': 21, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 22, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
     {'1': 'splash_radius', '3': 24, '4': 1, '5': 1, '10': 'splashRadius'},
     {'1': 'autofocus', '3': 27, '4': 1, '5': 8, '10': 'autofocus'},
   ],
@@ -3514,8 +4136,15 @@ const MaterialSwitch$json = {
 /// Descriptor for `MaterialSwitch`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialSwitchDescriptor = $convert.base64Decode(
     'Cg5NYXRlcmlhbFN3aXRjaBInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2lvblIDa2'
-    'V5EhQKBXZhbHVlGAMgASgIUgV2YWx1ZRIjCg1zcGxhc2hfcmFkaXVzGBggASgBUgxzcGxhc2hS'
-    'YWRpdXMSHAoJYXV0b2ZvY3VzGBsgASgIUglhdXRvZm9jdXM=');
+    'V5EhQKBXZhbHVlGAMgASgIUgV2YWx1ZRIzCgxhY3RpdmVfY29sb3IYBSABKAsyEC5Db2xvckV4'
+    'cHJlc3Npb25SC2FjdGl2ZUNvbG9yEj4KEmFjdGl2ZV90cmFja19jb2xvchgGIAEoCzIQLkNvbG'
+    '9yRXhwcmVzc2lvblIQYWN0aXZlVHJhY2tDb2xvchJCChRpbmFjdGl2ZV90aHVtYl9jb2xvchgH'
+    'IAEoCzIQLkNvbG9yRXhwcmVzc2lvblISaW5hY3RpdmVUaHVtYkNvbG9yEkIKFGluYWN0aXZlX3'
+    'RyYWNrX2NvbG9yGAggASgLMhAuQ29sb3JFeHByZXNzaW9uUhJpbmFjdGl2ZVRyYWNrQ29sb3IS'
+    'MQoLZm9jdXNfY29sb3IYFSABKAsyEC5Db2xvckV4cHJlc3Npb25SCmZvY3VzQ29sb3ISMQoLaG'
+    '92ZXJfY29sb3IYFiABKAsyEC5Db2xvckV4cHJlc3Npb25SCmhvdmVyQ29sb3ISIwoNc3BsYXNo'
+    'X3JhZGl1cxgYIAEoAVIMc3BsYXNoUmFkaXVzEhwKCWF1dG9mb2N1cxgbIAEoCFIJYXV0b2ZvY3'
+    'Vz');
 
 @$core.Deprecated('Use materialSwitchNamedAdaptiveDescriptor instead')
 const MaterialSwitchNamedAdaptive$json = {
@@ -3523,6 +4152,12 @@ const MaterialSwitchNamedAdaptive$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'value', '3': 3, '4': 1, '5': 8, '10': 'value'},
+    {'1': 'active_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'activeColor'},
+    {'1': 'active_track_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'activeTrackColor'},
+    {'1': 'inactive_thumb_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'inactiveThumbColor'},
+    {'1': 'inactive_track_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'inactiveTrackColor'},
+    {'1': 'focus_color', '3': 21, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'hover_color', '3': 22, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
     {'1': 'splash_radius', '3': 24, '4': 1, '5': 1, '10': 'splashRadius'},
     {'1': 'autofocus', '3': 27, '4': 1, '5': 8, '10': 'autofocus'},
     {'1': 'apply_cupertino_theme', '3': 28, '4': 1, '5': 8, '10': 'applyCupertinoTheme'},
@@ -3532,9 +4167,16 @@ const MaterialSwitchNamedAdaptive$json = {
 /// Descriptor for `MaterialSwitchNamedAdaptive`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialSwitchNamedAdaptiveDescriptor = $convert.base64Decode(
     'ChtNYXRlcmlhbFN3aXRjaE5hbWVkQWRhcHRpdmUSJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleU'
-    'V4cHJlc3Npb25SA2tleRIUCgV2YWx1ZRgDIAEoCFIFdmFsdWUSIwoNc3BsYXNoX3JhZGl1cxgY'
-    'IAEoAVIMc3BsYXNoUmFkaXVzEhwKCWF1dG9mb2N1cxgbIAEoCFIJYXV0b2ZvY3VzEjIKFWFwcG'
-    'x5X2N1cGVydGlub190aGVtZRgcIAEoCFITYXBwbHlDdXBlcnRpbm9UaGVtZQ==');
+    'V4cHJlc3Npb25SA2tleRIUCgV2YWx1ZRgDIAEoCFIFdmFsdWUSMwoMYWN0aXZlX2NvbG9yGAUg'
+    'ASgLMhAuQ29sb3JFeHByZXNzaW9uUgthY3RpdmVDb2xvchI+ChJhY3RpdmVfdHJhY2tfY29sb3'
+    'IYBiABKAsyEC5Db2xvckV4cHJlc3Npb25SEGFjdGl2ZVRyYWNrQ29sb3ISQgoUaW5hY3RpdmVf'
+    'dGh1bWJfY29sb3IYByABKAsyEC5Db2xvckV4cHJlc3Npb25SEmluYWN0aXZlVGh1bWJDb2xvch'
+    'JCChRpbmFjdGl2ZV90cmFja19jb2xvchgIIAEoCzIQLkNvbG9yRXhwcmVzc2lvblISaW5hY3Rp'
+    'dmVUcmFja0NvbG9yEjEKC2ZvY3VzX2NvbG9yGBUgASgLMhAuQ29sb3JFeHByZXNzaW9uUgpmb2'
+    'N1c0NvbG9yEjEKC2hvdmVyX2NvbG9yGBYgASgLMhAuQ29sb3JFeHByZXNzaW9uUgpob3ZlckNv'
+    'bG9yEiMKDXNwbGFzaF9yYWRpdXMYGCABKAFSDHNwbGFzaFJhZGl1cxIcCglhdXRvZm9jdXMYGy'
+    'ABKAhSCWF1dG9mb2N1cxIyChVhcHBseV9jdXBlcnRpbm9fdGhlbWUYHCABKAhSE2FwcGx5Q3Vw'
+    'ZXJ0aW5vVGhlbWU=');
 
 @$core.Deprecated('Use materialSwitchListTileDescriptor instead')
 const MaterialSwitchListTile$json = {
@@ -3542,28 +4184,43 @@ const MaterialSwitchListTile$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'value', '3': 3, '4': 1, '5': 8, '10': 'value'},
+    {'1': 'active_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'activeColor'},
+    {'1': 'active_track_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'activeTrackColor'},
+    {'1': 'inactive_thumb_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'inactiveThumbColor'},
+    {'1': 'inactive_track_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'inactiveTrackColor'},
     {'1': 'splash_radius', '3': 21, '4': 1, '5': 1, '10': 'splashRadius'},
     {'1': 'autofocus', '3': 24, '4': 1, '5': 8, '10': 'autofocus'},
+    {'1': 'tile_color', '3': 25, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'tileColor'},
     {'1': 'title', '3': 26, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'title'},
     {'1': 'subtitle', '3': 27, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'subtitle'},
     {'1': 'is_three_line', '3': 28, '4': 1, '5': 8, '10': 'isThreeLine'},
     {'1': 'dense', '3': 29, '4': 1, '5': 8, '10': 'dense'},
     {'1': 'secondary', '3': 31, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'secondary'},
     {'1': 'selected', '3': 32, '4': 1, '5': 8, '10': 'selected'},
+    {'1': 'selected_tile_color', '3': 35, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedTileColor'},
     {'1': 'enable_feedback', '3': 37, '4': 1, '5': 8, '10': 'enableFeedback'},
+    {'1': 'hover_color', '3': 38, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
   ],
 };
 
 /// Descriptor for `MaterialSwitchListTile`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialSwitchListTileDescriptor = $convert.base64Decode(
     'ChZNYXRlcmlhbFN3aXRjaExpc3RUaWxlEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZX'
-    'NzaW9uUgNrZXkSFAoFdmFsdWUYAyABKAhSBXZhbHVlEiMKDXNwbGFzaF9yYWRpdXMYFSABKAFS'
-    'DHNwbGFzaFJhZGl1cxIcCglhdXRvZm9jdXMYGCABKAhSCWF1dG9mb2N1cxInCgV0aXRsZRgaIA'
-    'EoCzIRLldpZGdldEV4cHJlc3Npb25SBXRpdGxlEi0KCHN1YnRpdGxlGBsgASgLMhEuV2lkZ2V0'
-    'RXhwcmVzc2lvblIIc3VidGl0bGUSIgoNaXNfdGhyZWVfbGluZRgcIAEoCFILaXNUaHJlZUxpbm'
-    'USFAoFZGVuc2UYHSABKAhSBWRlbnNlEi8KCXNlY29uZGFyeRgfIAEoCzIRLldpZGdldEV4cHJl'
-    'c3Npb25SCXNlY29uZGFyeRIaCghzZWxlY3RlZBggIAEoCFIIc2VsZWN0ZWQSJwoPZW5hYmxlX2'
-    'ZlZWRiYWNrGCUgASgIUg5lbmFibGVGZWVkYmFjaw==');
+    'NzaW9uUgNrZXkSFAoFdmFsdWUYAyABKAhSBXZhbHVlEjMKDGFjdGl2ZV9jb2xvchgFIAEoCzIQ'
+    'LkNvbG9yRXhwcmVzc2lvblILYWN0aXZlQ29sb3ISPgoSYWN0aXZlX3RyYWNrX2NvbG9yGAYgAS'
+    'gLMhAuQ29sb3JFeHByZXNzaW9uUhBhY3RpdmVUcmFja0NvbG9yEkIKFGluYWN0aXZlX3RodW1i'
+    'X2NvbG9yGAcgASgLMhAuQ29sb3JFeHByZXNzaW9uUhJpbmFjdGl2ZVRodW1iQ29sb3ISQgoUaW'
+    '5hY3RpdmVfdHJhY2tfY29sb3IYCCABKAsyEC5Db2xvckV4cHJlc3Npb25SEmluYWN0aXZlVHJh'
+    'Y2tDb2xvchIjCg1zcGxhc2hfcmFkaXVzGBUgASgBUgxzcGxhc2hSYWRpdXMSHAoJYXV0b2ZvY3'
+    'VzGBggASgIUglhdXRvZm9jdXMSLwoKdGlsZV9jb2xvchgZIAEoCzIQLkNvbG9yRXhwcmVzc2lv'
+    'blIJdGlsZUNvbG9yEicKBXRpdGxlGBogASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFdGl0bGUSLQ'
+    'oIc3VidGl0bGUYGyABKAsyES5XaWRnZXRFeHByZXNzaW9uUghzdWJ0aXRsZRIiCg1pc190aHJl'
+    'ZV9saW5lGBwgASgIUgtpc1RocmVlTGluZRIUCgVkZW5zZRgdIAEoCFIFZGVuc2USLwoJc2Vjb2'
+    '5kYXJ5GB8gASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIJc2Vjb25kYXJ5EhoKCHNlbGVjdGVkGCAg'
+    'ASgIUghzZWxlY3RlZBJAChNzZWxlY3RlZF90aWxlX2NvbG9yGCMgASgLMhAuQ29sb3JFeHByZX'
+    'NzaW9uUhFzZWxlY3RlZFRpbGVDb2xvchInCg9lbmFibGVfZmVlZGJhY2sYJSABKAhSDmVuYWJs'
+    'ZUZlZWRiYWNrEjEKC2hvdmVyX2NvbG9yGCYgASgLMhAuQ29sb3JFeHByZXNzaW9uUgpob3Zlck'
+    'NvbG9y');
 
 @$core.Deprecated('Use materialSwitchListTileNamedAdaptiveDescriptor instead')
 const MaterialSwitchListTileNamedAdaptive$json = {
@@ -3571,30 +4228,45 @@ const MaterialSwitchListTileNamedAdaptive$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'value', '3': 3, '4': 1, '5': 8, '10': 'value'},
+    {'1': 'active_color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'activeColor'},
+    {'1': 'active_track_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'activeTrackColor'},
+    {'1': 'inactive_thumb_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'inactiveThumbColor'},
+    {'1': 'inactive_track_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'inactiveTrackColor'},
     {'1': 'splash_radius', '3': 21, '4': 1, '5': 1, '10': 'splashRadius'},
     {'1': 'autofocus', '3': 24, '4': 1, '5': 8, '10': 'autofocus'},
     {'1': 'apply_cupertino_theme', '3': 25, '4': 1, '5': 8, '10': 'applyCupertinoTheme'},
+    {'1': 'tile_color', '3': 26, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'tileColor'},
     {'1': 'title', '3': 27, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'title'},
     {'1': 'subtitle', '3': 28, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'subtitle'},
     {'1': 'is_three_line', '3': 29, '4': 1, '5': 8, '10': 'isThreeLine'},
     {'1': 'dense', '3': 30, '4': 1, '5': 8, '10': 'dense'},
     {'1': 'secondary', '3': 32, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'secondary'},
     {'1': 'selected', '3': 33, '4': 1, '5': 8, '10': 'selected'},
+    {'1': 'selected_tile_color', '3': 36, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedTileColor'},
     {'1': 'enable_feedback', '3': 38, '4': 1, '5': 8, '10': 'enableFeedback'},
+    {'1': 'hover_color', '3': 39, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
   ],
 };
 
 /// Descriptor for `MaterialSwitchListTileNamedAdaptive`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialSwitchListTileNamedAdaptiveDescriptor = $convert.base64Decode(
     'CiNNYXRlcmlhbFN3aXRjaExpc3RUaWxlTmFtZWRBZGFwdGl2ZRInCgNrZXkYAiABKAsyFS5GbH'
-    'V0dGVyS2V5RXhwcmVzc2lvblIDa2V5EhQKBXZhbHVlGAMgASgIUgV2YWx1ZRIjCg1zcGxhc2hf'
-    'cmFkaXVzGBUgASgBUgxzcGxhc2hSYWRpdXMSHAoJYXV0b2ZvY3VzGBggASgIUglhdXRvZm9jdX'
-    'MSMgoVYXBwbHlfY3VwZXJ0aW5vX3RoZW1lGBkgASgIUhNhcHBseUN1cGVydGlub1RoZW1lEicK'
-    'BXRpdGxlGBsgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFdGl0bGUSLQoIc3VidGl0bGUYHCABKA'
-    'syES5XaWRnZXRFeHByZXNzaW9uUghzdWJ0aXRsZRIiCg1pc190aHJlZV9saW5lGB0gASgIUgtp'
-    'c1RocmVlTGluZRIUCgVkZW5zZRgeIAEoCFIFZGVuc2USLwoJc2Vjb25kYXJ5GCAgASgLMhEuV2'
-    'lkZ2V0RXhwcmVzc2lvblIJc2Vjb25kYXJ5EhoKCHNlbGVjdGVkGCEgASgIUghzZWxlY3RlZBIn'
-    'Cg9lbmFibGVfZmVlZGJhY2sYJiABKAhSDmVuYWJsZUZlZWRiYWNr');
+    'V0dGVyS2V5RXhwcmVzc2lvblIDa2V5EhQKBXZhbHVlGAMgASgIUgV2YWx1ZRIzCgxhY3RpdmVf'
+    'Y29sb3IYBSABKAsyEC5Db2xvckV4cHJlc3Npb25SC2FjdGl2ZUNvbG9yEj4KEmFjdGl2ZV90cm'
+    'Fja19jb2xvchgGIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIQYWN0aXZlVHJhY2tDb2xvchJCChRp'
+    'bmFjdGl2ZV90aHVtYl9jb2xvchgHIAEoCzIQLkNvbG9yRXhwcmVzc2lvblISaW5hY3RpdmVUaH'
+    'VtYkNvbG9yEkIKFGluYWN0aXZlX3RyYWNrX2NvbG9yGAggASgLMhAuQ29sb3JFeHByZXNzaW9u'
+    'UhJpbmFjdGl2ZVRyYWNrQ29sb3ISIwoNc3BsYXNoX3JhZGl1cxgVIAEoAVIMc3BsYXNoUmFkaX'
+    'VzEhwKCWF1dG9mb2N1cxgYIAEoCFIJYXV0b2ZvY3VzEjIKFWFwcGx5X2N1cGVydGlub190aGVt'
+    'ZRgZIAEoCFITYXBwbHlDdXBlcnRpbm9UaGVtZRIvCgp0aWxlX2NvbG9yGBogASgLMhAuQ29sb3'
+    'JFeHByZXNzaW9uUgl0aWxlQ29sb3ISJwoFdGl0bGUYGyABKAsyES5XaWRnZXRFeHByZXNzaW9u'
+    'UgV0aXRsZRItCghzdWJ0aXRsZRgcIAEoCzIRLldpZGdldEV4cHJlc3Npb25SCHN1YnRpdGxlEi'
+    'IKDWlzX3RocmVlX2xpbmUYHSABKAhSC2lzVGhyZWVMaW5lEhQKBWRlbnNlGB4gASgIUgVkZW5z'
+    'ZRIvCglzZWNvbmRhcnkYICABKAsyES5XaWRnZXRFeHByZXNzaW9uUglzZWNvbmRhcnkSGgoIc2'
+    'VsZWN0ZWQYISABKAhSCHNlbGVjdGVkEkAKE3NlbGVjdGVkX3RpbGVfY29sb3IYJCABKAsyEC5D'
+    'b2xvckV4cHJlc3Npb25SEXNlbGVjdGVkVGlsZUNvbG9yEicKD2VuYWJsZV9mZWVkYmFjaxgmIA'
+    'EoCFIOZW5hYmxlRmVlZGJhY2sSMQoLaG92ZXJfY29sb3IYJyABKAsyEC5Db2xvckV4cHJlc3Np'
+    'b25SCmhvdmVyQ29sb3I=');
 
 @$core.Deprecated('Use materialDefaultTabControllerDescriptor instead')
 const MaterialDefaultTabController$json = {
@@ -3642,8 +4314,12 @@ const MaterialTabBar$json = {
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'tabs', '3': 3, '4': 3, '5': 11, '6': '.WidgetExpression', '10': 'tabs'},
     {'1': 'is_scrollable', '3': 5, '4': 1, '5': 8, '10': 'isScrollable'},
+    {'1': 'indicator_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'indicatorColor'},
     {'1': 'automatic_indicator_color_adjustment', '3': 8, '4': 1, '5': 8, '10': 'automaticIndicatorColorAdjustment'},
     {'1': 'indicator_weight', '3': 9, '4': 1, '5': 1, '10': 'indicatorWeight'},
+    {'1': 'divider_color', '3': 13, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'dividerColor'},
+    {'1': 'label_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'labelColor'},
+    {'1': 'unselected_label_color', '3': 17, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'unselectedLabelColor'},
     {'1': 'enable_feedback', '3': 22, '4': 1, '5': 8, '10': 'enableFeedback'},
   ],
 };
@@ -3652,10 +4328,14 @@ const MaterialTabBar$json = {
 final $typed_data.Uint8List materialTabBarDescriptor = $convert.base64Decode(
     'Cg5NYXRlcmlhbFRhYkJhchInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2lvblIDa2'
     'V5EiUKBHRhYnMYAyADKAsyES5XaWRnZXRFeHByZXNzaW9uUgR0YWJzEiMKDWlzX3Njcm9sbGFi'
-    'bGUYBSABKAhSDGlzU2Nyb2xsYWJsZRJPCiRhdXRvbWF0aWNfaW5kaWNhdG9yX2NvbG9yX2Fkan'
-    'VzdG1lbnQYCCABKAhSIWF1dG9tYXRpY0luZGljYXRvckNvbG9yQWRqdXN0bWVudBIpChBpbmRp'
-    'Y2F0b3Jfd2VpZ2h0GAkgASgBUg9pbmRpY2F0b3JXZWlnaHQSJwoPZW5hYmxlX2ZlZWRiYWNrGB'
-    'YgASgIUg5lbmFibGVGZWVkYmFjaw==');
+    'bGUYBSABKAhSDGlzU2Nyb2xsYWJsZRI5Cg9pbmRpY2F0b3JfY29sb3IYByABKAsyEC5Db2xvck'
+    'V4cHJlc3Npb25SDmluZGljYXRvckNvbG9yEk8KJGF1dG9tYXRpY19pbmRpY2F0b3JfY29sb3Jf'
+    'YWRqdXN0bWVudBgIIAEoCFIhYXV0b21hdGljSW5kaWNhdG9yQ29sb3JBZGp1c3RtZW50EikKEG'
+    'luZGljYXRvcl93ZWlnaHQYCSABKAFSD2luZGljYXRvcldlaWdodBI1Cg1kaXZpZGVyX2NvbG9y'
+    'GA0gASgLMhAuQ29sb3JFeHByZXNzaW9uUgxkaXZpZGVyQ29sb3ISMQoLbGFiZWxfY29sb3IYDi'
+    'ABKAsyEC5Db2xvckV4cHJlc3Npb25SCmxhYmVsQ29sb3ISRgoWdW5zZWxlY3RlZF9sYWJlbF9j'
+    'b2xvchgRIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIUdW5zZWxlY3RlZExhYmVsQ29sb3ISJwoPZW'
+    '5hYmxlX2ZlZWRiYWNrGBYgASgIUg5lbmFibGVGZWVkYmFjaw==');
 
 @$core.Deprecated('Use materialTabBarNamedSecondaryDescriptor instead')
 const MaterialTabBarNamedSecondary$json = {
@@ -3664,8 +4344,12 @@ const MaterialTabBarNamedSecondary$json = {
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'tabs', '3': 3, '4': 3, '5': 11, '6': '.WidgetExpression', '10': 'tabs'},
     {'1': 'is_scrollable', '3': 5, '4': 1, '5': 8, '10': 'isScrollable'},
+    {'1': 'indicator_color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'indicatorColor'},
     {'1': 'automatic_indicator_color_adjustment', '3': 8, '4': 1, '5': 8, '10': 'automaticIndicatorColorAdjustment'},
     {'1': 'indicator_weight', '3': 9, '4': 1, '5': 1, '10': 'indicatorWeight'},
+    {'1': 'divider_color', '3': 13, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'dividerColor'},
+    {'1': 'label_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'labelColor'},
+    {'1': 'unselected_label_color', '3': 17, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'unselectedLabelColor'},
     {'1': 'enable_feedback', '3': 22, '4': 1, '5': 8, '10': 'enableFeedback'},
   ],
 };
@@ -3674,10 +4358,14 @@ const MaterialTabBarNamedSecondary$json = {
 final $typed_data.Uint8List materialTabBarNamedSecondaryDescriptor = $convert.base64Decode(
     'ChxNYXRlcmlhbFRhYkJhck5hbWVkU2Vjb25kYXJ5EicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZX'
     'lFeHByZXNzaW9uUgNrZXkSJQoEdGFicxgDIAMoCzIRLldpZGdldEV4cHJlc3Npb25SBHRhYnMS'
-    'IwoNaXNfc2Nyb2xsYWJsZRgFIAEoCFIMaXNTY3JvbGxhYmxlEk8KJGF1dG9tYXRpY19pbmRpY2'
-    'F0b3JfY29sb3JfYWRqdXN0bWVudBgIIAEoCFIhYXV0b21hdGljSW5kaWNhdG9yQ29sb3JBZGp1'
-    'c3RtZW50EikKEGluZGljYXRvcl93ZWlnaHQYCSABKAFSD2luZGljYXRvcldlaWdodBInCg9lbm'
-    'FibGVfZmVlZGJhY2sYFiABKAhSDmVuYWJsZUZlZWRiYWNr');
+    'IwoNaXNfc2Nyb2xsYWJsZRgFIAEoCFIMaXNTY3JvbGxhYmxlEjkKD2luZGljYXRvcl9jb2xvch'
+    'gHIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIOaW5kaWNhdG9yQ29sb3ISTwokYXV0b21hdGljX2lu'
+    'ZGljYXRvcl9jb2xvcl9hZGp1c3RtZW50GAggASgIUiFhdXRvbWF0aWNJbmRpY2F0b3JDb2xvck'
+    'FkanVzdG1lbnQSKQoQaW5kaWNhdG9yX3dlaWdodBgJIAEoAVIPaW5kaWNhdG9yV2VpZ2h0EjUK'
+    'DWRpdmlkZXJfY29sb3IYDSABKAsyEC5Db2xvckV4cHJlc3Npb25SDGRpdmlkZXJDb2xvchIxCg'
+    'tsYWJlbF9jb2xvchgOIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIKbGFiZWxDb2xvchJGChZ1bnNl'
+    'bGVjdGVkX2xhYmVsX2NvbG9yGBEgASgLMhAuQ29sb3JFeHByZXNzaW9uUhR1bnNlbGVjdGVkTG'
+    'FiZWxDb2xvchInCg9lbmFibGVfZmVlZGJhY2sYFiABKAhSDmVuYWJsZUZlZWRiYWNr');
 
 @$core.Deprecated('Use materialTabBarViewDescriptor instead')
 const MaterialTabBarView$json = {
@@ -3701,13 +4389,35 @@ const MaterialTabPageSelector$json = {
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'indicator_size', '3': 4, '4': 1, '5': 1, '10': 'indicatorSize'},
+    {'1': 'color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
+    {'1': 'selected_color', '3': 6, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedColor'},
   ],
 };
 
 /// Descriptor for `MaterialTabPageSelector`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List materialTabPageSelectorDescriptor = $convert.base64Decode(
     'ChdNYXRlcmlhbFRhYlBhZ2VTZWxlY3RvchInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcm'
-    'Vzc2lvblIDa2V5EiUKDmluZGljYXRvcl9zaXplGAQgASgBUg1pbmRpY2F0b3JTaXpl');
+    'Vzc2lvblIDa2V5EiUKDmluZGljYXRvcl9zaXplGAQgASgBUg1pbmRpY2F0b3JTaXplEiYKBWNv'
+    'bG9yGAUgASgLMhAuQ29sb3JFeHByZXNzaW9uUgVjb2xvchI3Cg5zZWxlY3RlZF9jb2xvchgGIA'
+    'EoCzIQLkNvbG9yRXhwcmVzc2lvblINc2VsZWN0ZWRDb2xvcg==');
+
+@$core.Deprecated('Use materialTabPageSelectorIndicatorDescriptor instead')
+const MaterialTabPageSelectorIndicator$json = {
+  '1': 'MaterialTabPageSelectorIndicator',
+  '2': [
+    {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'background_color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'backgroundColor'},
+    {'1': 'border_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'borderColor'},
+    {'1': 'size', '3': 5, '4': 1, '5': 1, '10': 'size'},
+  ],
+};
+
+/// Descriptor for `MaterialTabPageSelectorIndicator`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialTabPageSelectorIndicatorDescriptor = $convert.base64Decode(
+    'CiBNYXRlcmlhbFRhYlBhZ2VTZWxlY3RvckluZGljYXRvchInCgNrZXkYAiABKAsyFS5GbHV0dG'
+    'VyS2V5RXhwcmVzc2lvblIDa2V5EjsKEGJhY2tncm91bmRfY29sb3IYAyABKAsyEC5Db2xvckV4'
+    'cHJlc3Npb25SD2JhY2tncm91bmRDb2xvchIzCgxib3JkZXJfY29sb3IYBCABKAsyEC5Db2xvck'
+    'V4cHJlc3Npb25SC2JvcmRlckNvbG9yEhIKBHNpemUYBSABKAFSBHNpemU=');
 
 @$core.Deprecated('Use materialTextButtonDescriptor instead')
 const MaterialTextButton$json = {
@@ -3765,6 +4475,7 @@ const MaterialTextField$json = {
     {'1': 'cursor_width', '3': 35, '4': 1, '5': 1, '10': 'cursorWidth'},
     {'1': 'cursor_height', '3': 36, '4': 1, '5': 1, '10': 'cursorHeight'},
     {'1': 'cursor_opacity_animates', '3': 38, '4': 1, '5': 8, '10': 'cursorOpacityAnimates'},
+    {'1': 'cursor_color', '3': 39, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'cursorColor'},
     {'1': 'enable_interactive_selection', '3': 45, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
     {'1': 'autofill_hints', '3': 53, '4': 3, '5': 9, '10': 'autofillHints'},
     {'1': 'restoration_id', '3': 56, '4': 1, '5': 9, '10': 'restorationId'},
@@ -3786,13 +4497,14 @@ final $typed_data.Uint8List materialTextFieldDescriptor = $convert.base64Decode(
     'ABKAhSB2V4cGFuZHMSHQoKbWF4X2xlbmd0aBgbIAEoBVIJbWF4TGVuZ3RoEhgKB2VuYWJsZWQY'
     'IiABKAhSB2VuYWJsZWQSIQoMY3Vyc29yX3dpZHRoGCMgASgBUgtjdXJzb3JXaWR0aBIjCg1jdX'
     'Jzb3JfaGVpZ2h0GCQgASgBUgxjdXJzb3JIZWlnaHQSNgoXY3Vyc29yX29wYWNpdHlfYW5pbWF0'
-    'ZXMYJiABKAhSFWN1cnNvck9wYWNpdHlBbmltYXRlcxJAChxlbmFibGVfaW50ZXJhY3RpdmVfc2'
-    'VsZWN0aW9uGC0gASgIUhplbmFibGVJbnRlcmFjdGl2ZVNlbGVjdGlvbhIlCg5hdXRvZmlsbF9o'
-    'aW50cxg1IAMoCVINYXV0b2ZpbGxIaW50cxIlCg5yZXN0b3JhdGlvbl9pZBg4IAEoCVINcmVzdG'
-    '9yYXRpb25JZBIpChBzY3JpYmJsZV9lbmFibGVkGDkgASgIUg9zY3JpYmJsZUVuYWJsZWQSSQoi'
-    'ZW5hYmxlX2lfbV9lX3BlcnNvbmFsaXplZF9sZWFybmluZxg6IAEoCFIdZW5hYmxlSU1FUGVyc2'
-    '9uYWxpemVkTGVhcm5pbmcSKgoRY2FuX3JlcXVlc3RfZm9jdXMYPCABKAhSD2NhblJlcXVlc3RG'
-    'b2N1cw==');
+    'ZXMYJiABKAhSFWN1cnNvck9wYWNpdHlBbmltYXRlcxIzCgxjdXJzb3JfY29sb3IYJyABKAsyEC'
+    '5Db2xvckV4cHJlc3Npb25SC2N1cnNvckNvbG9yEkAKHGVuYWJsZV9pbnRlcmFjdGl2ZV9zZWxl'
+    'Y3Rpb24YLSABKAhSGmVuYWJsZUludGVyYWN0aXZlU2VsZWN0aW9uEiUKDmF1dG9maWxsX2hpbn'
+    'RzGDUgAygJUg1hdXRvZmlsbEhpbnRzEiUKDnJlc3RvcmF0aW9uX2lkGDggASgJUg1yZXN0b3Jh'
+    'dGlvbklkEikKEHNjcmliYmxlX2VuYWJsZWQYOSABKAhSD3NjcmliYmxlRW5hYmxlZBJJCiJlbm'
+    'FibGVfaV9tX2VfcGVyc29uYWxpemVkX2xlYXJuaW5nGDogASgIUh1lbmFibGVJTUVQZXJzb25h'
+    'bGl6ZWRMZWFybmluZxIqChFjYW5fcmVxdWVzdF9mb2N1cxg8IAEoCFIPY2FuUmVxdWVzdEZvY3'
+    'Vz');
 
 @$core.Deprecated('Use materialTextFormFieldDescriptor instead')
 const MaterialTextFormField$json = {
@@ -3814,6 +4526,7 @@ const MaterialTextFormField$json = {
     {'1': 'enabled', '3': 37, '4': 1, '5': 8, '10': 'enabled'},
     {'1': 'cursor_width', '3': 38, '4': 1, '5': 1, '10': 'cursorWidth'},
     {'1': 'cursor_height', '3': 39, '4': 1, '5': 1, '10': 'cursorHeight'},
+    {'1': 'cursor_color', '3': 41, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'cursorColor'},
     {'1': 'enable_interactive_selection', '3': 44, '4': 1, '5': 8, '10': 'enableInteractiveSelection'},
     {'1': 'autofill_hints', '3': 48, '4': 3, '5': 9, '10': 'autofillHints'},
     {'1': 'restoration_id', '3': 51, '4': 1, '5': 9, '10': 'restorationId'},
@@ -3836,13 +4549,14 @@ final $typed_data.Uint8List materialTextFormFieldDescriptor = $convert.base64Dec
     'sKCW1pbl9saW5lcxgaIAEoBVIIbWluTGluZXMSGAoHZXhwYW5kcxgbIAEoCFIHZXhwYW5kcxId'
     'CgptYXhfbGVuZ3RoGBwgASgFUgltYXhMZW5ndGgSGAoHZW5hYmxlZBglIAEoCFIHZW5hYmxlZB'
     'IhCgxjdXJzb3Jfd2lkdGgYJiABKAFSC2N1cnNvcldpZHRoEiMKDWN1cnNvcl9oZWlnaHQYJyAB'
-    'KAFSDGN1cnNvckhlaWdodBJAChxlbmFibGVfaW50ZXJhY3RpdmVfc2VsZWN0aW9uGCwgASgIUh'
-    'plbmFibGVJbnRlcmFjdGl2ZVNlbGVjdGlvbhIlCg5hdXRvZmlsbF9oaW50cxgwIAMoCVINYXV0'
-    'b2ZpbGxIaW50cxIlCg5yZXN0b3JhdGlvbl9pZBgzIAEoCVINcmVzdG9yYXRpb25JZBJJCiJlbm'
-    'FibGVfaV9tX2VfcGVyc29uYWxpemVkX2xlYXJuaW5nGDQgASgIUh1lbmFibGVJTUVQZXJzb25h'
-    'bGl6ZWRMZWFybmluZxI2ChdjdXJzb3Jfb3BhY2l0eV9hbmltYXRlcxg7IAEoCFIVY3Vyc29yT3'
-    'BhY2l0eUFuaW1hdGVzEikKEHNjcmliYmxlX2VuYWJsZWQYQSABKAhSD3NjcmliYmxlRW5hYmxl'
-    'ZBIqChFjYW5fcmVxdWVzdF9mb2N1cxhCIAEoCFIPY2FuUmVxdWVzdEZvY3Vz');
+    'KAFSDGN1cnNvckhlaWdodBIzCgxjdXJzb3JfY29sb3IYKSABKAsyEC5Db2xvckV4cHJlc3Npb2'
+    '5SC2N1cnNvckNvbG9yEkAKHGVuYWJsZV9pbnRlcmFjdGl2ZV9zZWxlY3Rpb24YLCABKAhSGmVu'
+    'YWJsZUludGVyYWN0aXZlU2VsZWN0aW9uEiUKDmF1dG9maWxsX2hpbnRzGDAgAygJUg1hdXRvZm'
+    'lsbEhpbnRzEiUKDnJlc3RvcmF0aW9uX2lkGDMgASgJUg1yZXN0b3JhdGlvbklkEkkKImVuYWJs'
+    'ZV9pX21fZV9wZXJzb25hbGl6ZWRfbGVhcm5pbmcYNCABKAhSHWVuYWJsZUlNRVBlcnNvbmFsaX'
+    'plZExlYXJuaW5nEjYKF2N1cnNvcl9vcGFjaXR5X2FuaW1hdGVzGDsgASgIUhVjdXJzb3JPcGFj'
+    'aXR5QW5pbWF0ZXMSKQoQc2NyaWJibGVfZW5hYmxlZBhBIAEoCFIPc2NyaWJibGVFbmFibGVkEi'
+    'oKEWNhbl9yZXF1ZXN0X2ZvY3VzGEIgASgIUg9jYW5SZXF1ZXN0Rm9jdXM=');
 
 @$core.Deprecated('Use materialToggleButtonsDescriptor instead')
 const MaterialToggleButtons$json = {
@@ -3851,7 +4565,18 @@ const MaterialToggleButtons$json = {
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'children', '3': 3, '4': 3, '5': 11, '6': '.WidgetExpression', '10': 'children'},
     {'1': 'is_selected', '3': 4, '4': 3, '5': 8, '10': 'isSelected'},
+    {'1': 'color', '3': 10, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
+    {'1': 'selected_color', '3': 11, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedColor'},
+    {'1': 'disabled_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledColor'},
+    {'1': 'fill_color', '3': 13, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'fillColor'},
+    {'1': 'focus_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'focusColor'},
+    {'1': 'highlight_color', '3': 15, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'highlightColor'},
+    {'1': 'hover_color', '3': 16, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'hoverColor'},
+    {'1': 'splash_color', '3': 17, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'splashColor'},
     {'1': 'render_border', '3': 19, '4': 1, '5': 8, '10': 'renderBorder'},
+    {'1': 'border_color', '3': 20, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'borderColor'},
+    {'1': 'selected_border_color', '3': 21, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectedBorderColor'},
+    {'1': 'disabled_border_color', '3': 22, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'disabledBorderColor'},
     {'1': 'border_width', '3': 24, '4': 1, '5': 1, '10': 'borderWidth'},
   ],
 };
@@ -3860,8 +4585,19 @@ const MaterialToggleButtons$json = {
 final $typed_data.Uint8List materialToggleButtonsDescriptor = $convert.base64Decode(
     'ChVNYXRlcmlhbFRvZ2dsZUJ1dHRvbnMSJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3'
     'Npb25SA2tleRItCghjaGlsZHJlbhgDIAMoCzIRLldpZGdldEV4cHJlc3Npb25SCGNoaWxkcmVu'
-    'Eh8KC2lzX3NlbGVjdGVkGAQgAygIUgppc1NlbGVjdGVkEiMKDXJlbmRlcl9ib3JkZXIYEyABKA'
-    'hSDHJlbmRlckJvcmRlchIhCgxib3JkZXJfd2lkdGgYGCABKAFSC2JvcmRlcldpZHRo');
+    'Eh8KC2lzX3NlbGVjdGVkGAQgAygIUgppc1NlbGVjdGVkEiYKBWNvbG9yGAogASgLMhAuQ29sb3'
+    'JFeHByZXNzaW9uUgVjb2xvchI3Cg5zZWxlY3RlZF9jb2xvchgLIAEoCzIQLkNvbG9yRXhwcmVz'
+    'c2lvblINc2VsZWN0ZWRDb2xvchI3Cg5kaXNhYmxlZF9jb2xvchgMIAEoCzIQLkNvbG9yRXhwcm'
+    'Vzc2lvblINZGlzYWJsZWRDb2xvchIvCgpmaWxsX2NvbG9yGA0gASgLMhAuQ29sb3JFeHByZXNz'
+    'aW9uUglmaWxsQ29sb3ISMQoLZm9jdXNfY29sb3IYDiABKAsyEC5Db2xvckV4cHJlc3Npb25SCm'
+    'ZvY3VzQ29sb3ISOQoPaGlnaGxpZ2h0X2NvbG9yGA8gASgLMhAuQ29sb3JFeHByZXNzaW9uUg5o'
+    'aWdobGlnaHRDb2xvchIxCgtob3Zlcl9jb2xvchgQIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIKaG'
+    '92ZXJDb2xvchIzCgxzcGxhc2hfY29sb3IYESABKAsyEC5Db2xvckV4cHJlc3Npb25SC3NwbGFz'
+    'aENvbG9yEiMKDXJlbmRlcl9ib3JkZXIYEyABKAhSDHJlbmRlckJvcmRlchIzCgxib3JkZXJfY2'
+    '9sb3IYFCABKAsyEC5Db2xvckV4cHJlc3Npb25SC2JvcmRlckNvbG9yEkQKFXNlbGVjdGVkX2Jv'
+    'cmRlcl9jb2xvchgVIAEoCzIQLkNvbG9yRXhwcmVzc2lvblITc2VsZWN0ZWRCb3JkZXJDb2xvch'
+    'JEChVkaXNhYmxlZF9ib3JkZXJfY29sb3IYFiABKAsyEC5Db2xvckV4cHJlc3Npb25SE2Rpc2Fi'
+    'bGVkQm9yZGVyQ29sb3ISIQoMYm9yZGVyX3dpZHRoGBggASgBUgtib3JkZXJXaWR0aA==');
 
 @$core.Deprecated('Use materialTooltipDescriptor instead')
 const MaterialTooltip$json = {
@@ -3916,6 +4652,7 @@ const MaterialUserAccountsDrawerHeader$json = {
     {'1': 'other_accounts_pictures', '3': 6, '4': 3, '5': 11, '6': '.WidgetExpression', '10': 'otherAccountsPictures'},
     {'1': 'account_name', '3': 9, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'accountName'},
     {'1': 'account_email', '3': 10, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'accountEmail'},
+    {'1': 'arrow_color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'arrowColor'},
   ],
 };
 
@@ -3927,7 +4664,7 @@ final $typed_data.Uint8List materialUserAccountsDrawerHeaderDescriptor = $conver
     'RzX3BpY3R1cmVzGAYgAygLMhEuV2lkZ2V0RXhwcmVzc2lvblIVb3RoZXJBY2NvdW50c1BpY3R1'
     'cmVzEjQKDGFjY291bnRfbmFtZRgJIAEoCzIRLldpZGdldEV4cHJlc3Npb25SC2FjY291bnROYW'
     '1lEjYKDWFjY291bnRfZW1haWwYCiABKAsyES5XaWRnZXRFeHByZXNzaW9uUgxhY2NvdW50RW1h'
-    'aWw=');
+    'aWwSMQoLYXJyb3dfY29sb3IYDCABKAsyEC5Db2xvckV4cHJlc3Npb25SCmFycm93Q29sb3I=');
 
 @$core.Deprecated('Use flutterPlatformSelectableRegionContextMenuDescriptor instead')
 const FlutterPlatformSelectableRegionContextMenu$json = {
@@ -4003,6 +4740,71 @@ final $typed_data.Uint8List flutterAnimatedSwitcherDescriptor = $convert.base64D
     'Vzc2lvblIDa2V5EicKBWNoaWxkGAMgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFY2hpbGQSLwoI'
     'ZHVyYXRpb24YBCABKAsyEy5EdXJhdGlvbkV4cHJlc3Npb25SCGR1cmF0aW9uEj4KEHJldmVyc2'
     'VfZHVyYXRpb24YBSABKAsyEy5EdXJhdGlvbkV4cHJlc3Npb25SD3JldmVyc2VEdXJhdGlvbg==');
+
+@$core.Deprecated('Use flutterWidgetsAppDescriptor instead')
+const FlutterWidgetsApp$json = {
+  '1': 'FlutterWidgetsApp',
+  '2': [
+    {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'initial_route', '3': 8, '4': 1, '5': 9, '10': 'initialRoute'},
+    {'1': 'home', '3': 10, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'home'},
+    {'1': 'title', '3': 13, '4': 1, '5': 9, '10': 'title'},
+    {'1': 'color', '3': 16, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
+    {'1': 'show_performance_overlay', '3': 22, '4': 1, '5': 8, '10': 'showPerformanceOverlay'},
+    {'1': 'checkerboard_raster_cache_images', '3': 23, '4': 1, '5': 8, '10': 'checkerboardRasterCacheImages'},
+    {'1': 'checkerboard_offscreen_layers', '3': 24, '4': 1, '5': 8, '10': 'checkerboardOffscreenLayers'},
+    {'1': 'show_semantics_debugger', '3': 25, '4': 1, '5': 8, '10': 'showSemanticsDebugger'},
+    {'1': 'debug_show_widget_inspector', '3': 26, '4': 1, '5': 8, '10': 'debugShowWidgetInspector'},
+    {'1': 'debug_show_checked_mode_banner', '3': 27, '4': 1, '5': 8, '10': 'debugShowCheckedModeBanner'},
+    {'1': 'restoration_scope_id', '3': 31, '4': 1, '5': 9, '10': 'restorationScopeId'},
+  ],
+};
+
+/// Descriptor for `FlutterWidgetsApp`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterWidgetsAppDescriptor = $convert.base64Decode(
+    'ChFGbHV0dGVyV2lkZ2V0c0FwcBInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2lvbl'
+    'IDa2V5EiMKDWluaXRpYWxfcm91dGUYCCABKAlSDGluaXRpYWxSb3V0ZRIlCgRob21lGAogASgL'
+    'MhEuV2lkZ2V0RXhwcmVzc2lvblIEaG9tZRIUCgV0aXRsZRgNIAEoCVIFdGl0bGUSJgoFY29sb3'
+    'IYECABKAsyEC5Db2xvckV4cHJlc3Npb25SBWNvbG9yEjgKGHNob3dfcGVyZm9ybWFuY2Vfb3Zl'
+    'cmxheRgWIAEoCFIWc2hvd1BlcmZvcm1hbmNlT3ZlcmxheRJHCiBjaGVja2VyYm9hcmRfcmFzdG'
+    'VyX2NhY2hlX2ltYWdlcxgXIAEoCFIdY2hlY2tlcmJvYXJkUmFzdGVyQ2FjaGVJbWFnZXMSQgod'
+    'Y2hlY2tlcmJvYXJkX29mZnNjcmVlbl9sYXllcnMYGCABKAhSG2NoZWNrZXJib2FyZE9mZnNjcm'
+    'VlbkxheWVycxI2ChdzaG93X3NlbWFudGljc19kZWJ1Z2dlchgZIAEoCFIVc2hvd1NlbWFudGlj'
+    'c0RlYnVnZ2VyEj0KG2RlYnVnX3Nob3dfd2lkZ2V0X2luc3BlY3RvchgaIAEoCFIYZGVidWdTaG'
+    '93V2lkZ2V0SW5zcGVjdG9yEkIKHmRlYnVnX3Nob3dfY2hlY2tlZF9tb2RlX2Jhbm5lchgbIAEo'
+    'CFIaZGVidWdTaG93Q2hlY2tlZE1vZGVCYW5uZXISMAoUcmVzdG9yYXRpb25fc2NvcGVfaWQYHy'
+    'ABKAlSEnJlc3RvcmF0aW9uU2NvcGVJZA==');
+
+@$core.Deprecated('Use flutterWidgetsAppNamedRouterDescriptor instead')
+const FlutterWidgetsAppNamedRouter$json = {
+  '1': 'FlutterWidgetsAppNamedRouter',
+  '2': [
+    {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'title', '3': 9, '4': 1, '5': 9, '10': 'title'},
+    {'1': 'color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
+    {'1': 'show_performance_overlay', '3': 18, '4': 1, '5': 8, '10': 'showPerformanceOverlay'},
+    {'1': 'checkerboard_raster_cache_images', '3': 19, '4': 1, '5': 8, '10': 'checkerboardRasterCacheImages'},
+    {'1': 'checkerboard_offscreen_layers', '3': 20, '4': 1, '5': 8, '10': 'checkerboardOffscreenLayers'},
+    {'1': 'show_semantics_debugger', '3': 21, '4': 1, '5': 8, '10': 'showSemanticsDebugger'},
+    {'1': 'debug_show_widget_inspector', '3': 22, '4': 1, '5': 8, '10': 'debugShowWidgetInspector'},
+    {'1': 'debug_show_checked_mode_banner', '3': 23, '4': 1, '5': 8, '10': 'debugShowCheckedModeBanner'},
+    {'1': 'restoration_scope_id', '3': 27, '4': 1, '5': 9, '10': 'restorationScopeId'},
+  ],
+};
+
+/// Descriptor for `FlutterWidgetsAppNamedRouter`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterWidgetsAppNamedRouterDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyV2lkZ2V0c0FwcE5hbWVkUm91dGVyEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZX'
+    'lFeHByZXNzaW9uUgNrZXkSFAoFdGl0bGUYCSABKAlSBXRpdGxlEiYKBWNvbG9yGAwgASgLMhAu'
+    'Q29sb3JFeHByZXNzaW9uUgVjb2xvchI4ChhzaG93X3BlcmZvcm1hbmNlX292ZXJsYXkYEiABKA'
+    'hSFnNob3dQZXJmb3JtYW5jZU92ZXJsYXkSRwogY2hlY2tlcmJvYXJkX3Jhc3Rlcl9jYWNoZV9p'
+    'bWFnZXMYEyABKAhSHWNoZWNrZXJib2FyZFJhc3RlckNhY2hlSW1hZ2VzEkIKHWNoZWNrZXJib2'
+    'FyZF9vZmZzY3JlZW5fbGF5ZXJzGBQgASgIUhtjaGVja2VyYm9hcmRPZmZzY3JlZW5MYXllcnMS'
+    'NgoXc2hvd19zZW1hbnRpY3NfZGVidWdnZXIYFSABKAhSFXNob3dTZW1hbnRpY3NEZWJ1Z2dlch'
+    'I9ChtkZWJ1Z19zaG93X3dpZGdldF9pbnNwZWN0b3IYFiABKAhSGGRlYnVnU2hvd1dpZGdldElu'
+    'c3BlY3RvchJCCh5kZWJ1Z19zaG93X2NoZWNrZWRfbW9kZV9iYW5uZXIYFyABKAhSGmRlYnVnU2'
+    'hvd0NoZWNrZWRNb2RlQmFubmVyEjAKFHJlc3RvcmF0aW9uX3Njb3BlX2lkGBsgASgJUhJyZXN0'
+    'b3JhdGlvblNjb3BlSWQ=');
 
 @$core.Deprecated('Use flutterAutofillGroupDescriptor instead')
 const FlutterAutofillGroup$json = {
@@ -4185,6 +4987,22 @@ const FlutterClipRect$json = {
 final $typed_data.Uint8List flutterClipRectDescriptor = $convert.base64Decode(
     'Cg9GbHV0dGVyQ2xpcFJlY3QSJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb25SA2'
     'tleRInCgVjaGlsZBgFIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBWNoaWxk');
+
+@$core.Deprecated('Use flutterColoredBoxDescriptor instead')
+const FlutterColoredBox$json = {
+  '1': 'FlutterColoredBox',
+  '2': [
+    {'1': 'color', '3': 2, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
+    {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
+    {'1': 'key', '3': 4, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+  ],
+};
+
+/// Descriptor for `FlutterColoredBox`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterColoredBoxDescriptor = $convert.base64Decode(
+    'ChFGbHV0dGVyQ29sb3JlZEJveBImCgVjb2xvchgCIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIFY2'
+    '9sb3ISJwoFY2hpbGQYAyABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVjaGlsZBInCgNrZXkYBCAB'
+    'KAsyFS5GbHV0dGVyS2V5RXhwcmVzc2lvblIDa2V5');
 
 @$core.Deprecated('Use flutterColumnDescriptor instead')
 const FlutterColumn$json = {
@@ -4551,6 +5369,26 @@ final $typed_data.Uint8List flutterOverflowBoxDescriptor = $convert.base64Decode
     'bWF4V2lkdGgSHQoKbWluX2hlaWdodBgGIAEoAVIJbWluSGVpZ2h0Eh0KCm1heF9oZWlnaHQYBy'
     'ABKAFSCW1heEhlaWdodBInCgVjaGlsZBgIIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBWNoaWxk');
 
+@$core.Deprecated('Use flutterPhysicalModelDescriptor instead')
+const FlutterPhysicalModel$json = {
+  '1': 'FlutterPhysicalModel',
+  '2': [
+    {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'elevation', '3': 6, '4': 1, '5': 1, '10': 'elevation'},
+    {'1': 'color', '3': 7, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
+    {'1': 'shadow_color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'shadowColor'},
+    {'1': 'child', '3': 9, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterPhysicalModel`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterPhysicalModelDescriptor = $convert.base64Decode(
+    'ChRGbHV0dGVyUGh5c2ljYWxNb2RlbBInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2'
+    'lvblIDa2V5EhwKCWVsZXZhdGlvbhgGIAEoAVIJZWxldmF0aW9uEiYKBWNvbG9yGAcgASgLMhAu'
+    'Q29sb3JFeHByZXNzaW9uUgVjb2xvchIzCgxzaGFkb3dfY29sb3IYCCABKAsyEC5Db2xvckV4cH'
+    'Jlc3Npb25SC3NoYWRvd0NvbG9yEicKBWNoaWxkGAkgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIF'
+    'Y2hpbGQ=');
+
 @$core.Deprecated('Use flutterPositionedDescriptor instead')
 const FlutterPositioned$json = {
   '1': 'FlutterPositioned',
@@ -4626,6 +5464,7 @@ const FlutterRawImage$json = {
     {'1': 'width', '3': 5, '4': 1, '5': 1, '10': 'width'},
     {'1': 'height', '3': 6, '4': 1, '5': 1, '10': 'height'},
     {'1': 'scale', '3': 7, '4': 1, '5': 1, '10': 'scale'},
+    {'1': 'color', '3': 8, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'match_text_direction', '3': 15, '4': 1, '5': 8, '10': 'matchTextDirection'},
     {'1': 'invert_colors', '3': 16, '4': 1, '5': 8, '10': 'invertColors'},
     {'1': 'is_anti_alias', '3': 18, '4': 1, '5': 8, '10': 'isAntiAlias'},
@@ -4637,9 +5476,9 @@ final $typed_data.Uint8List flutterRawImageDescriptor = $convert.base64Decode(
     'Cg9GbHV0dGVyUmF3SW1hZ2USJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb25SA2'
     'tleRIqChFkZWJ1Z19pbWFnZV9sYWJlbBgEIAEoCVIPZGVidWdJbWFnZUxhYmVsEhQKBXdpZHRo'
     'GAUgASgBUgV3aWR0aBIWCgZoZWlnaHQYBiABKAFSBmhlaWdodBIUCgVzY2FsZRgHIAEoAVIFc2'
-    'NhbGUSMAoUbWF0Y2hfdGV4dF9kaXJlY3Rpb24YDyABKAhSEm1hdGNoVGV4dERpcmVjdGlvbhIj'
-    'Cg1pbnZlcnRfY29sb3JzGBAgASgIUgxpbnZlcnRDb2xvcnMSIgoNaXNfYW50aV9hbGlhcxgSIA'
-    'EoCFILaXNBbnRpQWxpYXM=');
+    'NhbGUSJgoFY29sb3IYCCABKAsyEC5Db2xvckV4cHJlc3Npb25SBWNvbG9yEjAKFG1hdGNoX3Rl'
+    'eHRfZGlyZWN0aW9uGA8gASgIUhJtYXRjaFRleHREaXJlY3Rpb24SIwoNaW52ZXJ0X2NvbG9ycx'
+    'gQIAEoCFIMaW52ZXJ0Q29sb3JzEiIKDWlzX2FudGlfYWxpYXMYEiABKAhSC2lzQW50aUFsaWFz');
 
 @$core.Deprecated('Use flutterRepaintBoundaryDescriptor instead')
 const FlutterRepaintBoundary$json = {
@@ -4968,6 +5807,7 @@ const FlutterContainer$json = {
   '1': 'FlutterContainer',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'width', '3': 8, '4': 1, '5': 1, '10': 'width'},
     {'1': 'height', '3': 9, '4': 1, '5': 1, '10': 'height'},
     {'1': 'child', '3': 14, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
@@ -4977,14 +5817,17 @@ const FlutterContainer$json = {
 /// Descriptor for `FlutterContainer`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterContainerDescriptor = $convert.base64Decode(
     'ChBGbHV0dGVyQ29udGFpbmVyEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZXNzaW9uUg'
-    'NrZXkSFAoFd2lkdGgYCCABKAFSBXdpZHRoEhYKBmhlaWdodBgJIAEoAVIGaGVpZ2h0EicKBWNo'
-    'aWxkGA4gASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFY2hpbGQ=');
+    'NrZXkSJgoFY29sb3IYBSABKAsyEC5Db2xvckV4cHJlc3Npb25SBWNvbG9yEhQKBXdpZHRoGAgg'
+    'ASgBUgV3aWR0aBIWCgZoZWlnaHQYCSABKAFSBmhlaWdodBInCgVjaGlsZBgOIAEoCzIRLldpZG'
+    'dldEV4cHJlc3Npb25SBWNoaWxk');
 
 @$core.Deprecated('Use flutterDefaultSelectionStyleDescriptor instead')
 const FlutterDefaultSelectionStyle$json = {
   '1': 'FlutterDefaultSelectionStyle',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'cursor_color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'cursorColor'},
+    {'1': 'selection_color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectionColor'},
     {'1': 'child', '3': 6, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
   ],
 };
@@ -4992,8 +5835,10 @@ const FlutterDefaultSelectionStyle$json = {
 /// Descriptor for `FlutterDefaultSelectionStyle`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterDefaultSelectionStyleDescriptor = $convert.base64Decode(
     'ChxGbHV0dGVyRGVmYXVsdFNlbGVjdGlvblN0eWxlEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZX'
-    'lFeHByZXNzaW9uUgNrZXkSJwoFY2hpbGQYBiABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVjaGls'
-    'ZA==');
+    'lFeHByZXNzaW9uUgNrZXkSMwoMY3Vyc29yX2NvbG9yGAMgASgLMhAuQ29sb3JFeHByZXNzaW9u'
+    'UgtjdXJzb3JDb2xvchI5Cg9zZWxlY3Rpb25fY29sb3IYBCABKAsyEC5Db2xvckV4cHJlc3Npb2'
+    '5SDnNlbGVjdGlvbkNvbG9yEicKBWNoaWxkGAYgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFY2hp'
+    'bGQ=');
 
 @$core.Deprecated('Use flutterDefaultSelectionStyleNamedFallbackDescriptor instead')
 const FlutterDefaultSelectionStyleNamedFallback$json = {
@@ -5339,6 +6184,7 @@ const FlutterGridPaper$json = {
   '1': 'FlutterGridPaper',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'interval', '3': 4, '4': 1, '5': 1, '10': 'interval'},
     {'1': 'divisions', '3': 5, '4': 1, '5': 5, '10': 'divisions'},
     {'1': 'subdivisions', '3': 6, '4': 1, '5': 5, '10': 'subdivisions'},
@@ -5349,9 +6195,10 @@ const FlutterGridPaper$json = {
 /// Descriptor for `FlutterGridPaper`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterGridPaperDescriptor = $convert.base64Decode(
     'ChBGbHV0dGVyR3JpZFBhcGVyEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZXNzaW9uUg'
-    'NrZXkSGgoIaW50ZXJ2YWwYBCABKAFSCGludGVydmFsEhwKCWRpdmlzaW9ucxgFIAEoBVIJZGl2'
-    'aXNpb25zEiIKDHN1YmRpdmlzaW9ucxgGIAEoBVIMc3ViZGl2aXNpb25zEicKBWNoaWxkGAcgAS'
-    'gLMhEuV2lkZ2V0RXhwcmVzc2lvblIFY2hpbGQ=');
+    'NrZXkSJgoFY29sb3IYAyABKAsyEC5Db2xvckV4cHJlc3Npb25SBWNvbG9yEhoKCGludGVydmFs'
+    'GAQgASgBUghpbnRlcnZhbBIcCglkaXZpc2lvbnMYBSABKAVSCWRpdmlzaW9ucxIiCgxzdWJkaX'
+    'Zpc2lvbnMYBiABKAVSDHN1YmRpdmlzaW9ucxInCgVjaGlsZBgHIAEoCzIRLldpZGdldEV4cHJl'
+    'c3Npb25SBWNoaWxk');
 
 @$core.Deprecated('Use flutterHeroModeDescriptor instead')
 const FlutterHeroMode$json = {
@@ -5379,6 +6226,7 @@ const FlutterIcon$json = {
     {'1': 'weight', '3': 6, '4': 1, '5': 1, '10': 'weight'},
     {'1': 'grade', '3': 7, '4': 1, '5': 1, '10': 'grade'},
     {'1': 'optical_size', '3': 8, '4': 1, '5': 1, '10': 'opticalSize'},
+    {'1': 'color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'semantic_label', '3': 11, '4': 1, '5': 9, '10': 'semanticLabel'},
   ],
 };
@@ -5388,7 +6236,8 @@ final $typed_data.Uint8List flutterIconDescriptor = $convert.base64Decode(
     'CgtGbHV0dGVySWNvbhInCgNrZXkYAyABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2lvblIDa2V5Eh'
     'IKBHNpemUYBCABKAFSBHNpemUSEgoEZmlsbBgFIAEoAVIEZmlsbBIWCgZ3ZWlnaHQYBiABKAFS'
     'BndlaWdodBIUCgVncmFkZRgHIAEoAVIFZ3JhZGUSIQoMb3B0aWNhbF9zaXplGAggASgBUgtvcH'
-    'RpY2FsU2l6ZRIlCg5zZW1hbnRpY19sYWJlbBgLIAEoCVINc2VtYW50aWNMYWJlbA==');
+    'RpY2FsU2l6ZRImCgVjb2xvchgJIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIFY29sb3ISJQoOc2Vt'
+    'YW50aWNfbGFiZWwYCyABKAlSDXNlbWFudGljTGFiZWw=');
 
 @$core.Deprecated('Use flutterImageNamedNetworkDescriptor instead')
 const FlutterImageNamedNetwork$json = {
@@ -5401,6 +6250,7 @@ const FlutterImageNamedNetwork$json = {
     {'1': 'exclude_from_semantics', '3': 9, '4': 1, '5': 8, '10': 'excludeFromSemantics'},
     {'1': 'width', '3': 10, '4': 1, '5': 1, '10': 'width'},
     {'1': 'height', '3': 11, '4': 1, '5': 1, '10': 'height'},
+    {'1': 'color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'match_text_direction', '3': 19, '4': 1, '5': 8, '10': 'matchTextDirection'},
     {'1': 'gapless_playback', '3': 20, '4': 1, '5': 8, '10': 'gaplessPlayback'},
     {'1': 'is_anti_alias', '3': 22, '4': 1, '5': 8, '10': 'isAntiAlias'},
@@ -5415,10 +6265,11 @@ final $typed_data.Uint8List flutterImageNamedNetworkDescriptor = $convert.base64
     'gLMhUuRmx1dHRlcktleUV4cHJlc3Npb25SA2tleRIUCgVzY2FsZRgEIAEoAVIFc2NhbGUSJQoO'
     'c2VtYW50aWNfbGFiZWwYCCABKAlSDXNlbWFudGljTGFiZWwSNAoWZXhjbHVkZV9mcm9tX3NlbW'
     'FudGljcxgJIAEoCFIUZXhjbHVkZUZyb21TZW1hbnRpY3MSFAoFd2lkdGgYCiABKAFSBXdpZHRo'
-    'EhYKBmhlaWdodBgLIAEoAVIGaGVpZ2h0EjAKFG1hdGNoX3RleHRfZGlyZWN0aW9uGBMgASgIUh'
-    'JtYXRjaFRleHREaXJlY3Rpb24SKQoQZ2FwbGVzc19wbGF5YmFjaxgUIAEoCFIPZ2FwbGVzc1Bs'
-    'YXliYWNrEiIKDWlzX2FudGlfYWxpYXMYFiABKAhSC2lzQW50aUFsaWFzEh8KC2NhY2hlX3dpZH'
-    'RoGBggASgFUgpjYWNoZVdpZHRoEiEKDGNhY2hlX2hlaWdodBgZIAEoBVILY2FjaGVIZWlnaHQ=');
+    'EhYKBmhlaWdodBgLIAEoAVIGaGVpZ2h0EiYKBWNvbG9yGAwgASgLMhAuQ29sb3JFeHByZXNzaW'
+    '9uUgVjb2xvchIwChRtYXRjaF90ZXh0X2RpcmVjdGlvbhgTIAEoCFISbWF0Y2hUZXh0RGlyZWN0'
+    'aW9uEikKEGdhcGxlc3NfcGxheWJhY2sYFCABKAhSD2dhcGxlc3NQbGF5YmFjaxIiCg1pc19hbn'
+    'RpX2FsaWFzGBYgASgIUgtpc0FudGlBbGlhcxIfCgtjYWNoZV93aWR0aBgYIAEoBVIKY2FjaGVX'
+    'aWR0aBIhCgxjYWNoZV9oZWlnaHQYGSABKAVSC2NhY2hlSGVpZ2h0');
 
 @$core.Deprecated('Use flutterImageNamedAssetDescriptor instead')
 const FlutterImageNamedAsset$json = {
@@ -5431,6 +6282,7 @@ const FlutterImageNamedAsset$json = {
     {'1': 'scale', '3': 9, '4': 1, '5': 1, '10': 'scale'},
     {'1': 'width', '3': 10, '4': 1, '5': 1, '10': 'width'},
     {'1': 'height', '3': 11, '4': 1, '5': 1, '10': 'height'},
+    {'1': 'color', '3': 12, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'match_text_direction', '3': 19, '4': 1, '5': 8, '10': 'matchTextDirection'},
     {'1': 'gapless_playback', '3': 20, '4': 1, '5': 8, '10': 'gaplessPlayback'},
     {'1': 'is_anti_alias', '3': 21, '4': 1, '5': 8, '10': 'isAntiAlias'},
@@ -5446,11 +6298,12 @@ final $typed_data.Uint8List flutterImageNamedAssetDescriptor = $convert.base64De
     'gLMhUuRmx1dHRlcktleUV4cHJlc3Npb25SA2tleRIlCg5zZW1hbnRpY19sYWJlbBgHIAEoCVIN'
     'c2VtYW50aWNMYWJlbBI0ChZleGNsdWRlX2Zyb21fc2VtYW50aWNzGAggASgIUhRleGNsdWRlRn'
     'JvbVNlbWFudGljcxIUCgVzY2FsZRgJIAEoAVIFc2NhbGUSFAoFd2lkdGgYCiABKAFSBXdpZHRo'
-    'EhYKBmhlaWdodBgLIAEoAVIGaGVpZ2h0EjAKFG1hdGNoX3RleHRfZGlyZWN0aW9uGBMgASgIUh'
-    'JtYXRjaFRleHREaXJlY3Rpb24SKQoQZ2FwbGVzc19wbGF5YmFjaxgUIAEoCFIPZ2FwbGVzc1Bs'
-    'YXliYWNrEiIKDWlzX2FudGlfYWxpYXMYFSABKAhSC2lzQW50aUFsaWFzEhgKB3BhY2thZ2UYFi'
-    'ABKAlSB3BhY2thZ2USHwoLY2FjaGVfd2lkdGgYGCABKAVSCmNhY2hlV2lkdGgSIQoMY2FjaGVf'
-    'aGVpZ2h0GBkgASgFUgtjYWNoZUhlaWdodA==');
+    'EhYKBmhlaWdodBgLIAEoAVIGaGVpZ2h0EiYKBWNvbG9yGAwgASgLMhAuQ29sb3JFeHByZXNzaW'
+    '9uUgVjb2xvchIwChRtYXRjaF90ZXh0X2RpcmVjdGlvbhgTIAEoCFISbWF0Y2hUZXh0RGlyZWN0'
+    'aW9uEikKEGdhcGxlc3NfcGxheWJhY2sYFCABKAhSD2dhcGxlc3NQbGF5YmFjaxIiCg1pc19hbn'
+    'RpX2FsaWFzGBUgASgIUgtpc0FudGlBbGlhcxIYCgdwYWNrYWdlGBYgASgJUgdwYWNrYWdlEh8K'
+    'C2NhY2hlX3dpZHRoGBggASgFUgpjYWNoZVdpZHRoEiEKDGNhY2hlX2hlaWdodBgZIAEoBVILY2'
+    'FjaGVIZWlnaHQ=');
 
 @$core.Deprecated('Use flutterImageIconDescriptor instead')
 const FlutterImageIcon$json = {
@@ -5458,6 +6311,7 @@ const FlutterImageIcon$json = {
   '2': [
     {'1': 'key', '3': 3, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
     {'1': 'size', '3': 4, '4': 1, '5': 1, '10': 'size'},
+    {'1': 'color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'semantic_label', '3': 6, '4': 1, '5': 9, '10': 'semanticLabel'},
   ],
 };
@@ -5465,14 +6319,15 @@ const FlutterImageIcon$json = {
 /// Descriptor for `FlutterImageIcon`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterImageIconDescriptor = $convert.base64Decode(
     'ChBGbHV0dGVySW1hZ2VJY29uEicKA2tleRgDIAEoCzIVLkZsdXR0ZXJLZXlFeHByZXNzaW9uUg'
-    'NrZXkSEgoEc2l6ZRgEIAEoAVIEc2l6ZRIlCg5zZW1hbnRpY19sYWJlbBgGIAEoCVINc2VtYW50'
-    'aWNMYWJlbA==');
+    'NrZXkSEgoEc2l6ZRgEIAEoAVIEc2l6ZRImCgVjb2xvchgFIAEoCzIQLkNvbG9yRXhwcmVzc2lv'
+    'blIFY29sb3ISJQoOc2VtYW50aWNfbGFiZWwYBiABKAlSDXNlbWFudGljTGFiZWw=');
 
 @$core.Deprecated('Use flutterAnimatedContainerDescriptor instead')
 const FlutterAnimatedContainer$json = {
   '1': 'FlutterAnimatedContainer',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'color', '3': 5, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'width', '3': 8, '4': 1, '5': 1, '10': 'width'},
     {'1': 'height', '3': 9, '4': 1, '5': 1, '10': 'height'},
     {'1': 'child', '3': 14, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
@@ -5483,9 +6338,10 @@ const FlutterAnimatedContainer$json = {
 /// Descriptor for `FlutterAnimatedContainer`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterAnimatedContainerDescriptor = $convert.base64Decode(
     'ChhGbHV0dGVyQW5pbWF0ZWRDb250YWluZXISJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cH'
-    'Jlc3Npb25SA2tleRIUCgV3aWR0aBgIIAEoAVIFd2lkdGgSFgoGaGVpZ2h0GAkgASgBUgZoZWln'
-    'aHQSJwoFY2hpbGQYDiABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVjaGlsZBIvCghkdXJhdGlvbh'
-    'gRIAEoCzITLkR1cmF0aW9uRXhwcmVzc2lvblIIZHVyYXRpb24=');
+    'Jlc3Npb25SA2tleRImCgVjb2xvchgFIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIFY29sb3ISFAoF'
+    'd2lkdGgYCCABKAFSBXdpZHRoEhYKBmhlaWdodBgJIAEoAVIGaGVpZ2h0EicKBWNoaWxkGA4gAS'
+    'gLMhEuV2lkZ2V0RXhwcmVzc2lvblIFY2hpbGQSLwoIZHVyYXRpb24YESABKAsyEy5EdXJhdGlv'
+    'bkV4cHJlc3Npb25SCGR1cmF0aW9u');
 
 @$core.Deprecated('Use flutterAnimatedFractionallySizedBoxDescriptor instead')
 const FlutterAnimatedFractionallySizedBox$json = {
@@ -5713,6 +6569,7 @@ const FlutterModalBarrier$json = {
   '1': 'FlutterModalBarrier',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'dismissible', '3': 4, '4': 1, '5': 8, '10': 'dismissible'},
     {'1': 'semantics_label', '3': 6, '4': 1, '5': 9, '10': 'semanticsLabel'},
     {'1': 'barrier_semantics_dismissible', '3': 7, '4': 1, '5': 8, '10': 'barrierSemanticsDismissible'},
@@ -5723,10 +6580,11 @@ const FlutterModalBarrier$json = {
 /// Descriptor for `FlutterModalBarrier`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterModalBarrierDescriptor = $convert.base64Decode(
     'ChNGbHV0dGVyTW9kYWxCYXJyaWVyEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZXNzaW'
-    '9uUgNrZXkSIAoLZGlzbWlzc2libGUYBCABKAhSC2Rpc21pc3NpYmxlEicKD3NlbWFudGljc19s'
-    'YWJlbBgGIAEoCVIOc2VtYW50aWNzTGFiZWwSQgodYmFycmllcl9zZW1hbnRpY3NfZGlzbWlzc2'
-    'libGUYByABKAhSG2JhcnJpZXJTZW1hbnRpY3NEaXNtaXNzaWJsZRIxChVzZW1hbnRpY3Nfb25f'
-    'dGFwX2hpbnQYCSABKAlSEnNlbWFudGljc09uVGFwSGludA==');
+    '9uUgNrZXkSJgoFY29sb3IYAyABKAsyEC5Db2xvckV4cHJlc3Npb25SBWNvbG9yEiAKC2Rpc21p'
+    'c3NpYmxlGAQgASgIUgtkaXNtaXNzaWJsZRInCg9zZW1hbnRpY3NfbGFiZWwYBiABKAlSDnNlbW'
+    'FudGljc0xhYmVsEkIKHWJhcnJpZXJfc2VtYW50aWNzX2Rpc21pc3NpYmxlGAcgASgIUhtiYXJy'
+    'aWVyU2VtYW50aWNzRGlzbWlzc2libGUSMQoVc2VtYW50aWNzX29uX3RhcF9oaW50GAkgASgJUh'
+    'JzZW1hbnRpY3NPblRhcEhpbnQ=');
 
 @$core.Deprecated('Use flutterNavigationToolbarDescriptor instead')
 const FlutterNavigationToolbar$json = {
@@ -5898,6 +6756,7 @@ const FlutterPlaceholder$json = {
   '1': 'FlutterPlaceholder',
   '2': [
     {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'color', '3': 3, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
     {'1': 'stroke_width', '3': 4, '4': 1, '5': 1, '10': 'strokeWidth'},
     {'1': 'fallback_width', '3': 5, '4': 1, '5': 1, '10': 'fallbackWidth'},
     {'1': 'fallback_height', '3': 6, '4': 1, '5': 1, '10': 'fallbackHeight'},
@@ -5908,9 +6767,10 @@ const FlutterPlaceholder$json = {
 /// Descriptor for `FlutterPlaceholder`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterPlaceholderDescriptor = $convert.base64Decode(
     'ChJGbHV0dGVyUGxhY2Vob2xkZXISJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb2'
-    '5SA2tleRIhCgxzdHJva2Vfd2lkdGgYBCABKAFSC3N0cm9rZVdpZHRoEiUKDmZhbGxiYWNrX3dp'
-    'ZHRoGAUgASgBUg1mYWxsYmFja1dpZHRoEicKD2ZhbGxiYWNrX2hlaWdodBgGIAEoAVIOZmFsbG'
-    'JhY2tIZWlnaHQSJwoFY2hpbGQYByABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVjaGlsZA==');
+    '5SA2tleRImCgVjb2xvchgDIAEoCzIQLkNvbG9yRXhwcmVzc2lvblIFY29sb3ISIQoMc3Ryb2tl'
+    'X3dpZHRoGAQgASgBUgtzdHJva2VXaWR0aBIlCg5mYWxsYmFja193aWR0aBgFIAEoAVINZmFsbG'
+    'JhY2tXaWR0aBInCg9mYWxsYmFja19oZWlnaHQYBiABKAFSDmZhbGxiYWNrSGVpZ2h0EicKBWNo'
+    'aWxkGAcgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFY2hpbGQ=');
 
 @$core.Deprecated('Use flutterAndroidViewDescriptor instead')
 const FlutterAndroidView$json = {
@@ -6254,9 +7114,12 @@ const FlutterRawScrollbar$json = {
     {'1': 'child', '3': 3, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
     {'1': 'thumb_visibility', '3': 5, '4': 1, '5': 8, '10': 'thumbVisibility'},
     {'1': 'thickness', '3': 8, '4': 1, '5': 1, '10': 'thickness'},
+    {'1': 'thumb_color', '3': 9, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'thumbColor'},
     {'1': 'min_thumb_length', '3': 10, '4': 1, '5': 1, '10': 'minThumbLength'},
     {'1': 'min_overscroll_length', '3': 11, '4': 1, '5': 1, '10': 'minOverscrollLength'},
     {'1': 'track_visibility', '3': 12, '4': 1, '5': 8, '10': 'trackVisibility'},
+    {'1': 'track_color', '3': 14, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'trackColor'},
+    {'1': 'track_border_color', '3': 15, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'trackBorderColor'},
     {'1': 'fade_duration', '3': 16, '4': 1, '5': 11, '6': '.DurationExpression', '10': 'fadeDuration'},
     {'1': 'time_to_fade', '3': 17, '4': 1, '5': 11, '6': '.DurationExpression', '10': 'timeToFade'},
     {'1': 'press_duration', '3': 18, '4': 1, '5': 11, '6': '.DurationExpression', '10': 'pressDuration'},
@@ -6271,14 +7134,17 @@ final $typed_data.Uint8List flutterRawScrollbarDescriptor = $convert.base64Decod
     'ChNGbHV0dGVyUmF3U2Nyb2xsYmFyEicKA2tleRgCIAEoCzIVLkZsdXR0ZXJLZXlFeHByZXNzaW'
     '9uUgNrZXkSJwoFY2hpbGQYAyABKAsyES5XaWRnZXRFeHByZXNzaW9uUgVjaGlsZBIpChB0aHVt'
     'Yl92aXNpYmlsaXR5GAUgASgIUg90aHVtYlZpc2liaWxpdHkSHAoJdGhpY2tuZXNzGAggASgBUg'
-    'l0aGlja25lc3MSKAoQbWluX3RodW1iX2xlbmd0aBgKIAEoAVIObWluVGh1bWJMZW5ndGgSMgoV'
-    'bWluX292ZXJzY3JvbGxfbGVuZ3RoGAsgASgBUhNtaW5PdmVyc2Nyb2xsTGVuZ3RoEikKEHRyYW'
-    'NrX3Zpc2liaWxpdHkYDCABKAhSD3RyYWNrVmlzaWJpbGl0eRI4Cg1mYWRlX2R1cmF0aW9uGBAg'
-    'ASgLMhMuRHVyYXRpb25FeHByZXNzaW9uUgxmYWRlRHVyYXRpb24SNQoMdGltZV90b19mYWRlGB'
-    'EgASgLMhMuRHVyYXRpb25FeHByZXNzaW9uUgp0aW1lVG9GYWRlEjoKDnByZXNzX2R1cmF0aW9u'
-    'GBIgASgLMhMuRHVyYXRpb25FeHByZXNzaW9uUg1wcmVzc0R1cmF0aW9uEiAKC2ludGVyYWN0aX'
-    'ZlGBQgASgIUgtpbnRlcmFjdGl2ZRIoChBtYWluX2F4aXNfbWFyZ2luGBYgASgBUg5tYWluQXhp'
-    'c01hcmdpbhIqChFjcm9zc19heGlzX21hcmdpbhgXIAEoAVIPY3Jvc3NBeGlzTWFyZ2lu');
+    'l0aGlja25lc3MSMQoLdGh1bWJfY29sb3IYCSABKAsyEC5Db2xvckV4cHJlc3Npb25SCnRodW1i'
+    'Q29sb3ISKAoQbWluX3RodW1iX2xlbmd0aBgKIAEoAVIObWluVGh1bWJMZW5ndGgSMgoVbWluX2'
+    '92ZXJzY3JvbGxfbGVuZ3RoGAsgASgBUhNtaW5PdmVyc2Nyb2xsTGVuZ3RoEikKEHRyYWNrX3Zp'
+    'c2liaWxpdHkYDCABKAhSD3RyYWNrVmlzaWJpbGl0eRIxCgt0cmFja19jb2xvchgOIAEoCzIQLk'
+    'NvbG9yRXhwcmVzc2lvblIKdHJhY2tDb2xvchI+ChJ0cmFja19ib3JkZXJfY29sb3IYDyABKAsy'
+    'EC5Db2xvckV4cHJlc3Npb25SEHRyYWNrQm9yZGVyQ29sb3ISOAoNZmFkZV9kdXJhdGlvbhgQIA'
+    'EoCzITLkR1cmF0aW9uRXhwcmVzc2lvblIMZmFkZUR1cmF0aW9uEjUKDHRpbWVfdG9fZmFkZRgR'
+    'IAEoCzITLkR1cmF0aW9uRXhwcmVzc2lvblIKdGltZVRvRmFkZRI6Cg5wcmVzc19kdXJhdGlvbh'
+    'gSIAEoCzITLkR1cmF0aW9uRXhwcmVzc2lvblINcHJlc3NEdXJhdGlvbhIgCgtpbnRlcmFjdGl2'
+    'ZRgUIAEoCFILaW50ZXJhY3RpdmUSKAoQbWFpbl9heGlzX21hcmdpbhgWIAEoAVIObWFpbkF4aX'
+    'NNYXJnaW4SKgoRY3Jvc3NfYXhpc19tYXJnaW4YFyABKAFSD2Nyb3NzQXhpc01hcmdpbg==');
 
 @$core.Deprecated('Use flutterSelectionContainerNamedDisabledDescriptor instead')
 const FlutterSelectionContainerNamedDisabled$json = {
@@ -6740,6 +7606,7 @@ const FlutterText$json = {
     {'1': 'text_scale_factor', '3': 11, '4': 1, '5': 1, '10': 'textScaleFactor'},
     {'1': 'max_lines', '3': 12, '4': 1, '5': 5, '10': 'maxLines'},
     {'1': 'semantics_label', '3': 13, '4': 1, '5': 9, '10': 'semanticsLabel'},
+    {'1': 'selection_color', '3': 16, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'selectionColor'},
   ],
 };
 
@@ -6748,7 +7615,8 @@ final $typed_data.Uint8List flutterTextDescriptor = $convert.base64Decode(
     'CgtGbHV0dGVyVGV4dBISCgRkYXRhGAIgASgJUgRkYXRhEicKA2tleRgDIAEoCzIVLkZsdXR0ZX'
     'JLZXlFeHByZXNzaW9uUgNrZXkSGwoJc29mdF93cmFwGAkgASgIUghzb2Z0V3JhcBIqChF0ZXh0'
     'X3NjYWxlX2ZhY3RvchgLIAEoAVIPdGV4dFNjYWxlRmFjdG9yEhsKCW1heF9saW5lcxgMIAEoBV'
-    'IIbWF4TGluZXMSJwoPc2VtYW50aWNzX2xhYmVsGA0gASgJUg5zZW1hbnRpY3NMYWJlbA==');
+    'IIbWF4TGluZXMSJwoPc2VtYW50aWNzX2xhYmVsGA0gASgJUg5zZW1hbnRpY3NMYWJlbBI5Cg9z'
+    'ZWxlY3Rpb25fY29sb3IYECABKAsyEC5Db2xvckV4cHJlc3Npb25SDnNlbGVjdGlvbkNvbG9y');
 
 @$core.Deprecated('Use flutterTextSelectionGestureDetectorDescriptor instead')
 const FlutterTextSelectionGestureDetector$json = {
@@ -6796,6 +7664,23 @@ final $typed_data.Uint8List flutterTickerModeDescriptor = $convert.base64Decode(
     'ChFGbHV0dGVyVGlja2VyTW9kZRInCgNrZXkYAiABKAsyFS5GbHV0dGVyS2V5RXhwcmVzc2lvbl'
     'IDa2V5EhgKB2VuYWJsZWQYAyABKAhSB2VuYWJsZWQSJwoFY2hpbGQYBCABKAsyES5XaWRnZXRF'
     'eHByZXNzaW9uUgVjaGlsZA==');
+
+@$core.Deprecated('Use flutterTitleDescriptor instead')
+const FlutterTitle$json = {
+  '1': 'FlutterTitle',
+  '2': [
+    {'1': 'key', '3': 2, '4': 1, '5': 11, '6': '.FlutterKeyExpression', '10': 'key'},
+    {'1': 'title', '3': 3, '4': 1, '5': 9, '10': 'title'},
+    {'1': 'color', '3': 4, '4': 1, '5': 11, '6': '.ColorExpression', '10': 'color'},
+    {'1': 'child', '3': 5, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'child'},
+  ],
+};
+
+/// Descriptor for `FlutterTitle`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterTitleDescriptor = $convert.base64Decode(
+    'CgxGbHV0dGVyVGl0bGUSJwoDa2V5GAIgASgLMhUuRmx1dHRlcktleUV4cHJlc3Npb25SA2tleR'
+    'IUCgV0aXRsZRgDIAEoCVIFdGl0bGUSJgoFY29sb3IYBCABKAsyEC5Db2xvckV4cHJlc3Npb25S'
+    'BWNvbG9yEicKBWNoaWxkGAUgASgLMhEuV2lkZ2V0RXhwcmVzc2lvblIFY2hpbGQ=');
 
 @$core.Deprecated('Use flutterSliverVisibilityDescriptor instead')
 const FlutterSliverVisibility$json = {
@@ -7112,177 +7997,183 @@ const WidgetExpression$json = {
     {'1': 'material_tab_bar_named_secondary', '3': 167, '4': 1, '5': 11, '6': '.MaterialTabBarNamedSecondary', '9': 0, '10': 'materialTabBarNamedSecondary'},
     {'1': 'material_tab_bar_view', '3': 168, '4': 1, '5': 11, '6': '.MaterialTabBarView', '9': 0, '10': 'materialTabBarView'},
     {'1': 'material_tab_page_selector', '3': 169, '4': 1, '5': 11, '6': '.MaterialTabPageSelector', '9': 0, '10': 'materialTabPageSelector'},
-    {'1': 'material_text_button', '3': 170, '4': 1, '5': 11, '6': '.MaterialTextButton', '9': 0, '10': 'materialTextButton'},
-    {'1': 'material_text_button_named_icon', '3': 171, '4': 1, '5': 11, '6': '.MaterialTextButtonNamedIcon', '9': 0, '10': 'materialTextButtonNamedIcon'},
-    {'1': 'material_text_field', '3': 172, '4': 1, '5': 11, '6': '.MaterialTextField', '9': 0, '10': 'materialTextField'},
-    {'1': 'material_text_form_field', '3': 173, '4': 1, '5': 11, '6': '.MaterialTextFormField', '9': 0, '10': 'materialTextFormField'},
-    {'1': 'material_toggle_buttons', '3': 174, '4': 1, '5': 11, '6': '.MaterialToggleButtons', '9': 0, '10': 'materialToggleButtons'},
-    {'1': 'material_tooltip', '3': 175, '4': 1, '5': 11, '6': '.MaterialTooltip', '9': 0, '10': 'materialTooltip'},
-    {'1': 'material_tooltip_visibility', '3': 176, '4': 1, '5': 11, '6': '.MaterialTooltipVisibility', '9': 0, '10': 'materialTooltipVisibility'},
-    {'1': 'material_user_accounts_drawer_header', '3': 177, '4': 1, '5': 11, '6': '.MaterialUserAccountsDrawerHeader', '9': 0, '10': 'materialUserAccountsDrawerHeader'},
-    {'1': 'flutter_platform_selectable_region_context_menu', '3': 178, '4': 1, '5': 11, '6': '.FlutterPlatformSelectableRegionContextMenu', '9': 0, '10': 'flutterPlatformSelectableRegionContextMenu'},
-    {'1': 'flutter_focusable_action_detector', '3': 179, '4': 1, '5': 11, '6': '.FlutterFocusableActionDetector', '9': 0, '10': 'flutterFocusableActionDetector'},
-    {'1': 'flutter_animated_size', '3': 180, '4': 1, '5': 11, '6': '.FlutterAnimatedSize', '9': 0, '10': 'flutterAnimatedSize'},
-    {'1': 'flutter_animated_switcher', '3': 181, '4': 1, '5': 11, '6': '.FlutterAnimatedSwitcher', '9': 0, '10': 'flutterAnimatedSwitcher'},
-    {'1': 'flutter_autofill_group', '3': 182, '4': 1, '5': 11, '6': '.FlutterAutofillGroup', '9': 0, '10': 'flutterAutofillGroup'},
-    {'1': 'flutter_automatic_keep_alive', '3': 183, '4': 1, '5': 11, '6': '.FlutterAutomaticKeepAlive', '9': 0, '10': 'flutterAutomaticKeepAlive'},
-    {'1': 'flutter_checked_mode_banner', '3': 184, '4': 1, '5': 11, '6': '.FlutterCheckedModeBanner', '9': 0, '10': 'flutterCheckedModeBanner'},
-    {'1': 'flutter_absorb_pointer', '3': 185, '4': 1, '5': 11, '6': '.FlutterAbsorbPointer', '9': 0, '10': 'flutterAbsorbPointer'},
-    {'1': 'flutter_align', '3': 186, '4': 1, '5': 11, '6': '.FlutterAlign', '9': 0, '10': 'flutterAlign'},
-    {'1': 'flutter_aspect_ratio', '3': 187, '4': 1, '5': 11, '6': '.FlutterAspectRatio', '9': 0, '10': 'flutterAspectRatio'},
-    {'1': 'flutter_block_semantics', '3': 188, '4': 1, '5': 11, '6': '.FlutterBlockSemantics', '9': 0, '10': 'flutterBlockSemantics'},
-    {'1': 'flutter_center', '3': 189, '4': 1, '5': 11, '6': '.FlutterCenter', '9': 0, '10': 'flutterCenter'},
-    {'1': 'flutter_clip_oval', '3': 190, '4': 1, '5': 11, '6': '.FlutterClipOval', '9': 0, '10': 'flutterClipOval'},
-    {'1': 'flutter_clip_path', '3': 191, '4': 1, '5': 11, '6': '.FlutterClipPath', '9': 0, '10': 'flutterClipPath'},
-    {'1': 'flutter_clip_r_rect', '3': 192, '4': 1, '5': 11, '6': '.FlutterClipRRect', '9': 0, '10': 'flutterClipRRect'},
-    {'1': 'flutter_clip_rect', '3': 193, '4': 1, '5': 11, '6': '.FlutterClipRect', '9': 0, '10': 'flutterClipRect'},
-    {'1': 'flutter_column', '3': 194, '4': 1, '5': 11, '6': '.FlutterColumn', '9': 0, '10': 'flutterColumn'},
-    {'1': 'flutter_custom_paint', '3': 195, '4': 1, '5': 11, '6': '.FlutterCustomPaint', '9': 0, '10': 'flutterCustomPaint'},
-    {'1': 'flutter_exclude_semantics', '3': 196, '4': 1, '5': 11, '6': '.FlutterExcludeSemantics', '9': 0, '10': 'flutterExcludeSemantics'},
-    {'1': 'flutter_expanded', '3': 197, '4': 1, '5': 11, '6': '.FlutterExpanded', '9': 0, '10': 'flutterExpanded'},
-    {'1': 'flutter_fitted_box', '3': 198, '4': 1, '5': 11, '6': '.FlutterFittedBox', '9': 0, '10': 'flutterFittedBox'},
-    {'1': 'flutter_flexible', '3': 199, '4': 1, '5': 11, '6': '.FlutterFlexible', '9': 0, '10': 'flutterFlexible'},
-    {'1': 'flutter_fractionally_sized_box', '3': 200, '4': 1, '5': 11, '6': '.FlutterFractionallySizedBox', '9': 0, '10': 'flutterFractionallySizedBox'},
-    {'1': 'flutter_ignore_pointer', '3': 201, '4': 1, '5': 11, '6': '.FlutterIgnorePointer', '9': 0, '10': 'flutterIgnorePointer'},
-    {'1': 'flutter_indexed_semantics', '3': 202, '4': 1, '5': 11, '6': '.FlutterIndexedSemantics', '9': 0, '10': 'flutterIndexedSemantics'},
-    {'1': 'flutter_indexed_stack', '3': 203, '4': 1, '5': 11, '6': '.FlutterIndexedStack', '9': 0, '10': 'flutterIndexedStack'},
-    {'1': 'flutter_intrinsic_height', '3': 204, '4': 1, '5': 11, '6': '.FlutterIntrinsicHeight', '9': 0, '10': 'flutterIntrinsicHeight'},
-    {'1': 'flutter_intrinsic_width', '3': 205, '4': 1, '5': 11, '6': '.FlutterIntrinsicWidth', '9': 0, '10': 'flutterIntrinsicWidth'},
-    {'1': 'flutter_keyed_subtree', '3': 206, '4': 1, '5': 11, '6': '.FlutterKeyedSubtree', '9': 0, '10': 'flutterKeyedSubtree'},
-    {'1': 'flutter_keyed_subtree_named_wrap', '3': 207, '4': 1, '5': 11, '6': '.FlutterKeyedSubtreeNamedWrap', '9': 0, '10': 'flutterKeyedSubtreeNamedWrap'},
-    {'1': 'flutter_limited_box', '3': 208, '4': 1, '5': 11, '6': '.FlutterLimitedBox', '9': 0, '10': 'flutterLimitedBox'},
-    {'1': 'flutter_list_body', '3': 209, '4': 1, '5': 11, '6': '.FlutterListBody', '9': 0, '10': 'flutterListBody'},
-    {'1': 'flutter_listener', '3': 210, '4': 1, '5': 11, '6': '.FlutterListener', '9': 0, '10': 'flutterListener'},
-    {'1': 'flutter_merge_semantics', '3': 211, '4': 1, '5': 11, '6': '.FlutterMergeSemantics', '9': 0, '10': 'flutterMergeSemantics'},
-    {'1': 'flutter_meta_data', '3': 212, '4': 1, '5': 11, '6': '.FlutterMetaData', '9': 0, '10': 'flutterMetaData'},
-    {'1': 'flutter_mouse_region', '3': 213, '4': 1, '5': 11, '6': '.FlutterMouseRegion', '9': 0, '10': 'flutterMouseRegion'},
-    {'1': 'flutter_offstage', '3': 214, '4': 1, '5': 11, '6': '.FlutterOffstage', '9': 0, '10': 'flutterOffstage'},
-    {'1': 'flutter_opacity', '3': 215, '4': 1, '5': 11, '6': '.FlutterOpacity', '9': 0, '10': 'flutterOpacity'},
-    {'1': 'flutter_overflow_box', '3': 216, '4': 1, '5': 11, '6': '.FlutterOverflowBox', '9': 0, '10': 'flutterOverflowBox'},
-    {'1': 'flutter_positioned', '3': 217, '4': 1, '5': 11, '6': '.FlutterPositioned', '9': 0, '10': 'flutterPositioned'},
-    {'1': 'flutter_positioned_named_fill', '3': 218, '4': 1, '5': 11, '6': '.FlutterPositionedNamedFill', '9': 0, '10': 'flutterPositionedNamedFill'},
-    {'1': 'flutter_positioned_directional', '3': 219, '4': 1, '5': 11, '6': '.FlutterPositionedDirectional', '9': 0, '10': 'flutterPositionedDirectional'},
-    {'1': 'flutter_raw_image', '3': 220, '4': 1, '5': 11, '6': '.FlutterRawImage', '9': 0, '10': 'flutterRawImage'},
-    {'1': 'flutter_repaint_boundary', '3': 221, '4': 1, '5': 11, '6': '.FlutterRepaintBoundary', '9': 0, '10': 'flutterRepaintBoundary'},
-    {'1': 'flutter_repaint_boundary_named_wrap', '3': 222, '4': 1, '5': 11, '6': '.FlutterRepaintBoundaryNamedWrap', '9': 0, '10': 'flutterRepaintBoundaryNamedWrap'},
-    {'1': 'flutter_rotated_box', '3': 223, '4': 1, '5': 11, '6': '.FlutterRotatedBox', '9': 0, '10': 'flutterRotatedBox'},
-    {'1': 'flutter_row', '3': 224, '4': 1, '5': 11, '6': '.FlutterRow', '9': 0, '10': 'flutterRow'},
-    {'1': 'flutter_semantics', '3': 225, '4': 1, '5': 11, '6': '.FlutterSemantics', '9': 0, '10': 'flutterSemantics'},
-    {'1': 'flutter_sized_box', '3': 226, '4': 1, '5': 11, '6': '.FlutterSizedBox', '9': 0, '10': 'flutterSizedBox'},
-    {'1': 'flutter_sized_box_named_expand', '3': 227, '4': 1, '5': 11, '6': '.FlutterSizedBoxNamedExpand', '9': 0, '10': 'flutterSizedBoxNamedExpand'},
-    {'1': 'flutter_sized_box_named_shrink', '3': 228, '4': 1, '5': 11, '6': '.FlutterSizedBoxNamedShrink', '9': 0, '10': 'flutterSizedBoxNamedShrink'},
-    {'1': 'flutter_sized_box_named_from_size', '3': 229, '4': 1, '5': 11, '6': '.FlutterSizedBoxNamedFromSize', '9': 0, '10': 'flutterSizedBoxNamedFromSize'},
-    {'1': 'flutter_sized_box_named_square', '3': 230, '4': 1, '5': 11, '6': '.FlutterSizedBoxNamedSquare', '9': 0, '10': 'flutterSizedBoxNamedSquare'},
-    {'1': 'flutter_sliver_to_box_adapter', '3': 231, '4': 1, '5': 11, '6': '.FlutterSliverToBoxAdapter', '9': 0, '10': 'flutterSliverToBoxAdapter'},
-    {'1': 'flutter_stack', '3': 232, '4': 1, '5': 11, '6': '.FlutterStack', '9': 0, '10': 'flutterStack'},
-    {'1': 'flutter_transform_named_rotate', '3': 233, '4': 1, '5': 11, '6': '.FlutterTransformNamedRotate', '9': 0, '10': 'flutterTransformNamedRotate'},
-    {'1': 'flutter_transform_named_scale', '3': 234, '4': 1, '5': 11, '6': '.FlutterTransformNamedScale', '9': 0, '10': 'flutterTransformNamedScale'},
-    {'1': 'flutter_transform_named_flip', '3': 235, '4': 1, '5': 11, '6': '.FlutterTransformNamedFlip', '9': 0, '10': 'flutterTransformNamedFlip'},
-    {'1': 'flutter_unconstrained_box', '3': 236, '4': 1, '5': 11, '6': '.FlutterUnconstrainedBox', '9': 0, '10': 'flutterUnconstrainedBox'},
-    {'1': 'flutter_wrap', '3': 237, '4': 1, '5': 11, '6': '.FlutterWrap', '9': 0, '10': 'flutterWrap'},
-    {'1': 'flutter_container', '3': 238, '4': 1, '5': 11, '6': '.FlutterContainer', '9': 0, '10': 'flutterContainer'},
-    {'1': 'flutter_default_selection_style', '3': 239, '4': 1, '5': 11, '6': '.FlutterDefaultSelectionStyle', '9': 0, '10': 'flutterDefaultSelectionStyle'},
-    {'1': 'flutter_default_selection_style_named_fallback', '3': 240, '4': 1, '5': 11, '6': '.FlutterDefaultSelectionStyleNamedFallback', '9': 0, '10': 'flutterDefaultSelectionStyleNamedFallback'},
-    {'1': 'flutter_default_text_editing_shortcuts', '3': 241, '4': 1, '5': 11, '6': '.FlutterDefaultTextEditingShortcuts', '9': 0, '10': 'flutterDefaultTextEditingShortcuts'},
-    {'1': 'flutter_dismissible', '3': 242, '4': 1, '5': 11, '6': '.FlutterDismissible', '9': 0, '10': 'flutterDismissible'},
-    {'1': 'flutter_display_feature_sub_screen', '3': 243, '4': 1, '5': 11, '6': '.FlutterDisplayFeatureSubScreen', '9': 0, '10': 'flutterDisplayFeatureSubScreen'},
-    {'1': 'flutter_draggable', '3': 244, '4': 1, '5': 11, '6': '.FlutterDraggable', '9': 0, '10': 'flutterDraggable'},
-    {'1': 'flutter_long_press_draggable', '3': 245, '4': 1, '5': 11, '6': '.FlutterLongPressDraggable', '9': 0, '10': 'flutterLongPressDraggable'},
-    {'1': 'flutter_draggable_scrollable_actuator', '3': 246, '4': 1, '5': 11, '6': '.FlutterDraggableScrollableActuator', '9': 0, '10': 'flutterDraggableScrollableActuator'},
-    {'1': 'flutter_fade_in_image_named_asset_network', '3': 247, '4': 1, '5': 11, '6': '.FlutterFadeInImageNamedAssetNetwork', '9': 0, '10': 'flutterFadeInImageNamedAssetNetwork'},
-    {'1': 'flutter_exclude_focus', '3': 248, '4': 1, '5': 11, '6': '.FlutterExcludeFocus', '9': 0, '10': 'flutterExcludeFocus'},
-    {'1': 'flutter_focus', '3': 249, '4': 1, '5': 11, '6': '.FlutterFocus', '9': 0, '10': 'flutterFocus'},
-    {'1': 'flutter_focus_scope', '3': 250, '4': 1, '5': 11, '6': '.FlutterFocusScope', '9': 0, '10': 'flutterFocusScope'},
-    {'1': 'flutter_exclude_focus_traversal', '3': 251, '4': 1, '5': 11, '6': '.FlutterExcludeFocusTraversal', '9': 0, '10': 'flutterExcludeFocusTraversal'},
-    {'1': 'flutter_focus_traversal_group', '3': 252, '4': 1, '5': 11, '6': '.FlutterFocusTraversalGroup', '9': 0, '10': 'flutterFocusTraversalGroup'},
-    {'1': 'flutter_form', '3': 253, '4': 1, '5': 11, '6': '.FlutterForm', '9': 0, '10': 'flutterForm'},
-    {'1': 'flutter_error_widget_named_with_details', '3': 254, '4': 1, '5': 11, '6': '.FlutterErrorWidgetNamedWithDetails', '9': 0, '10': 'flutterErrorWidgetNamedWithDetails'},
-    {'1': 'flutter_gesture_detector', '3': 255, '4': 1, '5': 11, '6': '.FlutterGestureDetector', '9': 0, '10': 'flutterGestureDetector'},
-    {'1': 'flutter_raw_gesture_detector', '3': 256, '4': 1, '5': 11, '6': '.FlutterRawGestureDetector', '9': 0, '10': 'flutterRawGestureDetector'},
-    {'1': 'flutter_grid_paper', '3': 257, '4': 1, '5': 11, '6': '.FlutterGridPaper', '9': 0, '10': 'flutterGridPaper'},
-    {'1': 'flutter_hero_mode', '3': 258, '4': 1, '5': 11, '6': '.FlutterHeroMode', '9': 0, '10': 'flutterHeroMode'},
-    {'1': 'flutter_icon', '3': 259, '4': 1, '5': 11, '6': '.FlutterIcon', '9': 0, '10': 'flutterIcon'},
-    {'1': 'flutter_image_named_network', '3': 260, '4': 1, '5': 11, '6': '.FlutterImageNamedNetwork', '9': 0, '10': 'flutterImageNamedNetwork'},
-    {'1': 'flutter_image_named_asset', '3': 261, '4': 1, '5': 11, '6': '.FlutterImageNamedAsset', '9': 0, '10': 'flutterImageNamedAsset'},
-    {'1': 'flutter_image_icon', '3': 262, '4': 1, '5': 11, '6': '.FlutterImageIcon', '9': 0, '10': 'flutterImageIcon'},
-    {'1': 'flutter_animated_container', '3': 263, '4': 1, '5': 11, '6': '.FlutterAnimatedContainer', '9': 0, '10': 'flutterAnimatedContainer'},
-    {'1': 'flutter_animated_fractionally_sized_box', '3': 264, '4': 1, '5': 11, '6': '.FlutterAnimatedFractionallySizedBox', '9': 0, '10': 'flutterAnimatedFractionallySizedBox'},
-    {'1': 'flutter_animated_opacity', '3': 265, '4': 1, '5': 11, '6': '.FlutterAnimatedOpacity', '9': 0, '10': 'flutterAnimatedOpacity'},
-    {'1': 'flutter_animated_positioned', '3': 266, '4': 1, '5': 11, '6': '.FlutterAnimatedPositioned', '9': 0, '10': 'flutterAnimatedPositioned'},
-    {'1': 'flutter_animated_positioned_directional', '3': 267, '4': 1, '5': 11, '6': '.FlutterAnimatedPositionedDirectional', '9': 0, '10': 'flutterAnimatedPositionedDirectional'},
-    {'1': 'flutter_animated_rotation', '3': 268, '4': 1, '5': 11, '6': '.FlutterAnimatedRotation', '9': 0, '10': 'flutterAnimatedRotation'},
-    {'1': 'flutter_animated_scale', '3': 269, '4': 1, '5': 11, '6': '.FlutterAnimatedScale', '9': 0, '10': 'flutterAnimatedScale'},
-    {'1': 'flutter_sliver_animated_opacity', '3': 270, '4': 1, '5': 11, '6': '.FlutterSliverAnimatedOpacity', '9': 0, '10': 'flutterSliverAnimatedOpacity'},
-    {'1': 'flutter_interactive_viewer', '3': 271, '4': 1, '5': 11, '6': '.FlutterInteractiveViewer', '9': 0, '10': 'flutterInteractiveViewer'},
-    {'1': 'flutter_list_wheel_scroll_view', '3': 272, '4': 1, '5': 11, '6': '.FlutterListWheelScrollView', '9': 0, '10': 'flutterListWheelScrollView'},
-    {'1': 'flutter_lookup_boundary', '3': 273, '4': 1, '5': 11, '6': '.FlutterLookupBoundary', '9': 0, '10': 'flutterLookupBoundary'},
-    {'1': 'flutter_modal_barrier', '3': 274, '4': 1, '5': 11, '6': '.FlutterModalBarrier', '9': 0, '10': 'flutterModalBarrier'},
-    {'1': 'flutter_navigation_toolbar', '3': 275, '4': 1, '5': 11, '6': '.FlutterNavigationToolbar', '9': 0, '10': 'flutterNavigationToolbar'},
-    {'1': 'flutter_hero_controller_scope_named_none', '3': 276, '4': 1, '5': 11, '6': '.FlutterHeroControllerScopeNamedNone', '9': 0, '10': 'flutterHeroControllerScopeNamedNone'},
-    {'1': 'flutter_navigator', '3': 277, '4': 1, '5': 11, '6': '.FlutterNavigator', '9': 0, '10': 'flutterNavigator'},
-    {'1': 'flutter_notification_listener', '3': 278, '4': 1, '5': 11, '6': '.FlutterNotificationListener', '9': 0, '10': 'flutterNotificationListener'},
-    {'1': 'flutter_overflow_bar', '3': 279, '4': 1, '5': 11, '6': '.FlutterOverflowBar', '9': 0, '10': 'flutterOverflowBar'},
-    {'1': 'flutter_overlay', '3': 280, '4': 1, '5': 11, '6': '.FlutterOverlay', '9': 0, '10': 'flutterOverlay'},
-    {'1': 'flutter_page_view', '3': 281, '4': 1, '5': 11, '6': '.FlutterPageView', '9': 0, '10': 'flutterPageView'},
-    {'1': 'flutter_performance_overlay', '3': 282, '4': 1, '5': 11, '6': '.FlutterPerformanceOverlay', '9': 0, '10': 'flutterPerformanceOverlay'},
-    {'1': 'flutter_performance_overlay_named_all_enabled', '3': 283, '4': 1, '5': 11, '6': '.FlutterPerformanceOverlayNamedAllEnabled', '9': 0, '10': 'flutterPerformanceOverlayNamedAllEnabled'},
-    {'1': 'flutter_placeholder', '3': 284, '4': 1, '5': 11, '6': '.FlutterPlaceholder', '9': 0, '10': 'flutterPlaceholder'},
-    {'1': 'flutter_android_view', '3': 285, '4': 1, '5': 11, '6': '.FlutterAndroidView', '9': 0, '10': 'flutterAndroidView'},
-    {'1': 'flutter_html_element_view', '3': 286, '4': 1, '5': 11, '6': '.FlutterHtmlElementView', '9': 0, '10': 'flutterHtmlElementView'},
-    {'1': 'flutter_ui_kit_view', '3': 287, '4': 1, '5': 11, '6': '.FlutterUiKitView', '9': 0, '10': 'flutterUiKitView'},
-    {'1': 'flutter_primary_scroll_controller_named_none', '3': 288, '4': 1, '5': 11, '6': '.FlutterPrimaryScrollControllerNamedNone', '9': 0, '10': 'flutterPrimaryScrollControllerNamedNone'},
-    {'1': 'flutter_reorderable_delayed_drag_start_listener', '3': 289, '4': 1, '5': 11, '6': '.FlutterReorderableDelayedDragStartListener', '9': 0, '10': 'flutterReorderableDelayedDragStartListener'},
-    {'1': 'flutter_reorderable_drag_start_listener', '3': 290, '4': 1, '5': 11, '6': '.FlutterReorderableDragStartListener', '9': 0, '10': 'flutterReorderableDragStartListener'},
-    {'1': 'flutter_restoration_scope', '3': 291, '4': 1, '5': 11, '6': '.FlutterRestorationScope', '9': 0, '10': 'flutterRestorationScope'},
-    {'1': 'flutter_root_restoration_scope', '3': 292, '4': 1, '5': 11, '6': '.FlutterRootRestorationScope', '9': 0, '10': 'flutterRootRestorationScope'},
-    {'1': 'flutter_unmanaged_restoration_scope', '3': 293, '4': 1, '5': 11, '6': '.FlutterUnmanagedRestorationScope', '9': 0, '10': 'flutterUnmanagedRestorationScope'},
-    {'1': 'flutter_safe_area', '3': 294, '4': 1, '5': 11, '6': '.FlutterSafeArea', '9': 0, '10': 'flutterSafeArea'},
-    {'1': 'flutter_sliver_safe_area', '3': 295, '4': 1, '5': 11, '6': '.FlutterSliverSafeArea', '9': 0, '10': 'flutterSliverSafeArea'},
-    {'1': 'flutter_scroll_notification_observer', '3': 296, '4': 1, '5': 11, '6': '.FlutterScrollNotificationObserver', '9': 0, '10': 'flutterScrollNotificationObserver'},
-    {'1': 'flutter_custom_scroll_view', '3': 297, '4': 1, '5': 11, '6': '.FlutterCustomScrollView', '9': 0, '10': 'flutterCustomScrollView'},
-    {'1': 'flutter_grid_view_named_count', '3': 298, '4': 1, '5': 11, '6': '.FlutterGridViewNamedCount', '9': 0, '10': 'flutterGridViewNamedCount'},
-    {'1': 'flutter_grid_view_named_extent', '3': 299, '4': 1, '5': 11, '6': '.FlutterGridViewNamedExtent', '9': 0, '10': 'flutterGridViewNamedExtent'},
-    {'1': 'flutter_list_view', '3': 300, '4': 1, '5': 11, '6': '.FlutterListView', '9': 0, '10': 'flutterListView'},
-    {'1': 'flutter_raw_scrollbar', '3': 301, '4': 1, '5': 11, '6': '.FlutterRawScrollbar', '9': 0, '10': 'flutterRawScrollbar'},
-    {'1': 'flutter_selection_container_named_disabled', '3': 302, '4': 1, '5': 11, '6': '.FlutterSelectionContainerNamedDisabled', '9': 0, '10': 'flutterSelectionContainerNamedDisabled'},
-    {'1': 'flutter_semantics_debugger', '3': 303, '4': 1, '5': 11, '6': '.FlutterSemanticsDebugger', '9': 0, '10': 'flutterSemanticsDebugger'},
-    {'1': 'flutter_shared_app_data', '3': 304, '4': 1, '5': 11, '6': '.FlutterSharedAppData', '9': 0, '10': 'flutterSharedAppData'},
-    {'1': 'flutter_shortcut_registrar', '3': 305, '4': 1, '5': 11, '6': '.FlutterShortcutRegistrar', '9': 0, '10': 'flutterShortcutRegistrar'},
-    {'1': 'flutter_single_child_scroll_view', '3': 306, '4': 1, '5': 11, '6': '.FlutterSingleChildScrollView', '9': 0, '10': 'flutterSingleChildScrollView'},
-    {'1': 'flutter_size_changed_layout_notifier', '3': 307, '4': 1, '5': 11, '6': '.FlutterSizeChangedLayoutNotifier', '9': 0, '10': 'flutterSizeChangedLayoutNotifier'},
-    {'1': 'flutter_keep_alive', '3': 308, '4': 1, '5': 11, '6': '.FlutterKeepAlive', '9': 0, '10': 'flutterKeepAlive'},
-    {'1': 'flutter_sliver_constrained_cross_axis', '3': 309, '4': 1, '5': 11, '6': '.FlutterSliverConstrainedCrossAxis', '9': 0, '10': 'flutterSliverConstrainedCrossAxis'},
-    {'1': 'flutter_sliver_cross_axis_expanded', '3': 310, '4': 1, '5': 11, '6': '.FlutterSliverCrossAxisExpanded', '9': 0, '10': 'flutterSliverCrossAxisExpanded'},
-    {'1': 'flutter_sliver_cross_axis_group', '3': 311, '4': 1, '5': 11, '6': '.FlutterSliverCrossAxisGroup', '9': 0, '10': 'flutterSliverCrossAxisGroup'},
-    {'1': 'flutter_sliver_fixed_extent_list_named_list', '3': 312, '4': 1, '5': 11, '6': '.FlutterSliverFixedExtentListNamedList', '9': 0, '10': 'flutterSliverFixedExtentListNamedList'},
-    {'1': 'flutter_sliver_grid_named_count', '3': 313, '4': 1, '5': 11, '6': '.FlutterSliverGridNamedCount', '9': 0, '10': 'flutterSliverGridNamedCount'},
-    {'1': 'flutter_sliver_grid_named_extent', '3': 314, '4': 1, '5': 11, '6': '.FlutterSliverGridNamedExtent', '9': 0, '10': 'flutterSliverGridNamedExtent'},
-    {'1': 'flutter_sliver_ignore_pointer', '3': 315, '4': 1, '5': 11, '6': '.FlutterSliverIgnorePointer', '9': 0, '10': 'flutterSliverIgnorePointer'},
-    {'1': 'flutter_sliver_list_named_list', '3': 316, '4': 1, '5': 11, '6': '.FlutterSliverListNamedList', '9': 0, '10': 'flutterSliverListNamedList'},
-    {'1': 'flutter_sliver_main_axis_group', '3': 317, '4': 1, '5': 11, '6': '.FlutterSliverMainAxisGroup', '9': 0, '10': 'flutterSliverMainAxisGroup'},
-    {'1': 'flutter_sliver_offstage', '3': 318, '4': 1, '5': 11, '6': '.FlutterSliverOffstage', '9': 0, '10': 'flutterSliverOffstage'},
-    {'1': 'flutter_sliver_opacity', '3': 319, '4': 1, '5': 11, '6': '.FlutterSliverOpacity', '9': 0, '10': 'flutterSliverOpacity'},
-    {'1': 'flutter_sliver_fill_remaining', '3': 320, '4': 1, '5': 11, '6': '.FlutterSliverFillRemaining', '9': 0, '10': 'flutterSliverFillRemaining'},
-    {'1': 'flutter_sliver_prototype_extent_list_named_list', '3': 321, '4': 1, '5': 11, '6': '.FlutterSliverPrototypeExtentListNamedList', '9': 0, '10': 'flutterSliverPrototypeExtentListNamedList'},
-    {'1': 'flutter_spacer', '3': 322, '4': 1, '5': 11, '6': '.FlutterSpacer', '9': 0, '10': 'flutterSpacer'},
-    {'1': 'flutter_table', '3': 323, '4': 1, '5': 11, '6': '.FlutterTable', '9': 0, '10': 'flutterTable'},
-    {'1': 'flutter_table_cell', '3': 324, '4': 1, '5': 11, '6': '.FlutterTableCell', '9': 0, '10': 'flutterTableCell'},
-    {'1': 'flutter_tap_region', '3': 325, '4': 1, '5': 11, '6': '.FlutterTapRegion', '9': 0, '10': 'flutterTapRegion'},
-    {'1': 'flutter_tap_region_surface', '3': 326, '4': 1, '5': 11, '6': '.FlutterTapRegionSurface', '9': 0, '10': 'flutterTapRegionSurface'},
-    {'1': 'flutter_text_field_tap_region', '3': 327, '4': 1, '5': 11, '6': '.FlutterTextFieldTapRegion', '9': 0, '10': 'flutterTextFieldTapRegion'},
-    {'1': 'flutter_default_text_style_named_fallback', '3': 328, '4': 1, '5': 11, '6': '.FlutterDefaultTextStyleNamedFallback', '9': 0, '10': 'flutterDefaultTextStyleNamedFallback'},
-    {'1': 'flutter_text', '3': 329, '4': 1, '5': 11, '6': '.FlutterText', '9': 0, '10': 'flutterText'},
-    {'1': 'flutter_text_selection_gesture_detector', '3': 330, '4': 1, '5': 11, '6': '.FlutterTextSelectionGestureDetector', '9': 0, '10': 'flutterTextSelectionGestureDetector'},
-    {'1': 'flutter_texture', '3': 331, '4': 1, '5': 11, '6': '.FlutterTexture', '9': 0, '10': 'flutterTexture'},
-    {'1': 'flutter_ticker_mode', '3': 332, '4': 1, '5': 11, '6': '.FlutterTickerMode', '9': 0, '10': 'flutterTickerMode'},
-    {'1': 'flutter_sliver_visibility', '3': 333, '4': 1, '5': 11, '6': '.FlutterSliverVisibility', '9': 0, '10': 'flutterSliverVisibility'},
-    {'1': 'flutter_sliver_visibility_named_maintain', '3': 334, '4': 1, '5': 11, '6': '.FlutterSliverVisibilityNamedMaintain', '9': 0, '10': 'flutterSliverVisibilityNamedMaintain'},
-    {'1': 'flutter_visibility', '3': 335, '4': 1, '5': 11, '6': '.FlutterVisibility', '9': 0, '10': 'flutterVisibility'},
-    {'1': 'flutter_visibility_named_maintain', '3': 336, '4': 1, '5': 11, '6': '.FlutterVisibilityNamedMaintain', '9': 0, '10': 'flutterVisibilityNamedMaintain'},
-    {'1': 'flutter_widget_inspector', '3': 337, '4': 1, '5': 11, '6': '.FlutterWidgetInspector', '9': 0, '10': 'flutterWidgetInspector'},
-    {'1': 'flutter_will_pop_scope', '3': 338, '4': 1, '5': 11, '6': '.FlutterWillPopScope', '9': 0, '10': 'flutterWillPopScope'},
-    {'1': 'flutter_project_my_app', '3': 339, '4': 1, '5': 11, '6': '.FlutterProjectMyApp', '9': 0, '10': 'flutterProjectMyApp'},
-    {'1': 'flutter_project_my_home_page', '3': 340, '4': 1, '5': 11, '6': '.FlutterProjectMyHomePage', '9': 0, '10': 'flutterProjectMyHomePage'},
+    {'1': 'material_tab_page_selector_indicator', '3': 170, '4': 1, '5': 11, '6': '.MaterialTabPageSelectorIndicator', '9': 0, '10': 'materialTabPageSelectorIndicator'},
+    {'1': 'material_text_button', '3': 171, '4': 1, '5': 11, '6': '.MaterialTextButton', '9': 0, '10': 'materialTextButton'},
+    {'1': 'material_text_button_named_icon', '3': 172, '4': 1, '5': 11, '6': '.MaterialTextButtonNamedIcon', '9': 0, '10': 'materialTextButtonNamedIcon'},
+    {'1': 'material_text_field', '3': 173, '4': 1, '5': 11, '6': '.MaterialTextField', '9': 0, '10': 'materialTextField'},
+    {'1': 'material_text_form_field', '3': 174, '4': 1, '5': 11, '6': '.MaterialTextFormField', '9': 0, '10': 'materialTextFormField'},
+    {'1': 'material_toggle_buttons', '3': 175, '4': 1, '5': 11, '6': '.MaterialToggleButtons', '9': 0, '10': 'materialToggleButtons'},
+    {'1': 'material_tooltip', '3': 176, '4': 1, '5': 11, '6': '.MaterialTooltip', '9': 0, '10': 'materialTooltip'},
+    {'1': 'material_tooltip_visibility', '3': 177, '4': 1, '5': 11, '6': '.MaterialTooltipVisibility', '9': 0, '10': 'materialTooltipVisibility'},
+    {'1': 'material_user_accounts_drawer_header', '3': 178, '4': 1, '5': 11, '6': '.MaterialUserAccountsDrawerHeader', '9': 0, '10': 'materialUserAccountsDrawerHeader'},
+    {'1': 'flutter_platform_selectable_region_context_menu', '3': 179, '4': 1, '5': 11, '6': '.FlutterPlatformSelectableRegionContextMenu', '9': 0, '10': 'flutterPlatformSelectableRegionContextMenu'},
+    {'1': 'flutter_focusable_action_detector', '3': 180, '4': 1, '5': 11, '6': '.FlutterFocusableActionDetector', '9': 0, '10': 'flutterFocusableActionDetector'},
+    {'1': 'flutter_animated_size', '3': 181, '4': 1, '5': 11, '6': '.FlutterAnimatedSize', '9': 0, '10': 'flutterAnimatedSize'},
+    {'1': 'flutter_animated_switcher', '3': 182, '4': 1, '5': 11, '6': '.FlutterAnimatedSwitcher', '9': 0, '10': 'flutterAnimatedSwitcher'},
+    {'1': 'flutter_widgets_app', '3': 183, '4': 1, '5': 11, '6': '.FlutterWidgetsApp', '9': 0, '10': 'flutterWidgetsApp'},
+    {'1': 'flutter_widgets_app_named_router', '3': 184, '4': 1, '5': 11, '6': '.FlutterWidgetsAppNamedRouter', '9': 0, '10': 'flutterWidgetsAppNamedRouter'},
+    {'1': 'flutter_autofill_group', '3': 185, '4': 1, '5': 11, '6': '.FlutterAutofillGroup', '9': 0, '10': 'flutterAutofillGroup'},
+    {'1': 'flutter_automatic_keep_alive', '3': 186, '4': 1, '5': 11, '6': '.FlutterAutomaticKeepAlive', '9': 0, '10': 'flutterAutomaticKeepAlive'},
+    {'1': 'flutter_checked_mode_banner', '3': 187, '4': 1, '5': 11, '6': '.FlutterCheckedModeBanner', '9': 0, '10': 'flutterCheckedModeBanner'},
+    {'1': 'flutter_absorb_pointer', '3': 188, '4': 1, '5': 11, '6': '.FlutterAbsorbPointer', '9': 0, '10': 'flutterAbsorbPointer'},
+    {'1': 'flutter_align', '3': 189, '4': 1, '5': 11, '6': '.FlutterAlign', '9': 0, '10': 'flutterAlign'},
+    {'1': 'flutter_aspect_ratio', '3': 190, '4': 1, '5': 11, '6': '.FlutterAspectRatio', '9': 0, '10': 'flutterAspectRatio'},
+    {'1': 'flutter_block_semantics', '3': 191, '4': 1, '5': 11, '6': '.FlutterBlockSemantics', '9': 0, '10': 'flutterBlockSemantics'},
+    {'1': 'flutter_center', '3': 192, '4': 1, '5': 11, '6': '.FlutterCenter', '9': 0, '10': 'flutterCenter'},
+    {'1': 'flutter_clip_oval', '3': 193, '4': 1, '5': 11, '6': '.FlutterClipOval', '9': 0, '10': 'flutterClipOval'},
+    {'1': 'flutter_clip_path', '3': 194, '4': 1, '5': 11, '6': '.FlutterClipPath', '9': 0, '10': 'flutterClipPath'},
+    {'1': 'flutter_clip_r_rect', '3': 195, '4': 1, '5': 11, '6': '.FlutterClipRRect', '9': 0, '10': 'flutterClipRRect'},
+    {'1': 'flutter_clip_rect', '3': 196, '4': 1, '5': 11, '6': '.FlutterClipRect', '9': 0, '10': 'flutterClipRect'},
+    {'1': 'flutter_colored_box', '3': 197, '4': 1, '5': 11, '6': '.FlutterColoredBox', '9': 0, '10': 'flutterColoredBox'},
+    {'1': 'flutter_column', '3': 198, '4': 1, '5': 11, '6': '.FlutterColumn', '9': 0, '10': 'flutterColumn'},
+    {'1': 'flutter_custom_paint', '3': 199, '4': 1, '5': 11, '6': '.FlutterCustomPaint', '9': 0, '10': 'flutterCustomPaint'},
+    {'1': 'flutter_exclude_semantics', '3': 200, '4': 1, '5': 11, '6': '.FlutterExcludeSemantics', '9': 0, '10': 'flutterExcludeSemantics'},
+    {'1': 'flutter_expanded', '3': 201, '4': 1, '5': 11, '6': '.FlutterExpanded', '9': 0, '10': 'flutterExpanded'},
+    {'1': 'flutter_fitted_box', '3': 202, '4': 1, '5': 11, '6': '.FlutterFittedBox', '9': 0, '10': 'flutterFittedBox'},
+    {'1': 'flutter_flexible', '3': 203, '4': 1, '5': 11, '6': '.FlutterFlexible', '9': 0, '10': 'flutterFlexible'},
+    {'1': 'flutter_fractionally_sized_box', '3': 204, '4': 1, '5': 11, '6': '.FlutterFractionallySizedBox', '9': 0, '10': 'flutterFractionallySizedBox'},
+    {'1': 'flutter_ignore_pointer', '3': 205, '4': 1, '5': 11, '6': '.FlutterIgnorePointer', '9': 0, '10': 'flutterIgnorePointer'},
+    {'1': 'flutter_indexed_semantics', '3': 206, '4': 1, '5': 11, '6': '.FlutterIndexedSemantics', '9': 0, '10': 'flutterIndexedSemantics'},
+    {'1': 'flutter_indexed_stack', '3': 207, '4': 1, '5': 11, '6': '.FlutterIndexedStack', '9': 0, '10': 'flutterIndexedStack'},
+    {'1': 'flutter_intrinsic_height', '3': 208, '4': 1, '5': 11, '6': '.FlutterIntrinsicHeight', '9': 0, '10': 'flutterIntrinsicHeight'},
+    {'1': 'flutter_intrinsic_width', '3': 209, '4': 1, '5': 11, '6': '.FlutterIntrinsicWidth', '9': 0, '10': 'flutterIntrinsicWidth'},
+    {'1': 'flutter_keyed_subtree', '3': 210, '4': 1, '5': 11, '6': '.FlutterKeyedSubtree', '9': 0, '10': 'flutterKeyedSubtree'},
+    {'1': 'flutter_keyed_subtree_named_wrap', '3': 211, '4': 1, '5': 11, '6': '.FlutterKeyedSubtreeNamedWrap', '9': 0, '10': 'flutterKeyedSubtreeNamedWrap'},
+    {'1': 'flutter_limited_box', '3': 212, '4': 1, '5': 11, '6': '.FlutterLimitedBox', '9': 0, '10': 'flutterLimitedBox'},
+    {'1': 'flutter_list_body', '3': 213, '4': 1, '5': 11, '6': '.FlutterListBody', '9': 0, '10': 'flutterListBody'},
+    {'1': 'flutter_listener', '3': 214, '4': 1, '5': 11, '6': '.FlutterListener', '9': 0, '10': 'flutterListener'},
+    {'1': 'flutter_merge_semantics', '3': 215, '4': 1, '5': 11, '6': '.FlutterMergeSemantics', '9': 0, '10': 'flutterMergeSemantics'},
+    {'1': 'flutter_meta_data', '3': 216, '4': 1, '5': 11, '6': '.FlutterMetaData', '9': 0, '10': 'flutterMetaData'},
+    {'1': 'flutter_mouse_region', '3': 217, '4': 1, '5': 11, '6': '.FlutterMouseRegion', '9': 0, '10': 'flutterMouseRegion'},
+    {'1': 'flutter_offstage', '3': 218, '4': 1, '5': 11, '6': '.FlutterOffstage', '9': 0, '10': 'flutterOffstage'},
+    {'1': 'flutter_opacity', '3': 219, '4': 1, '5': 11, '6': '.FlutterOpacity', '9': 0, '10': 'flutterOpacity'},
+    {'1': 'flutter_overflow_box', '3': 220, '4': 1, '5': 11, '6': '.FlutterOverflowBox', '9': 0, '10': 'flutterOverflowBox'},
+    {'1': 'flutter_physical_model', '3': 221, '4': 1, '5': 11, '6': '.FlutterPhysicalModel', '9': 0, '10': 'flutterPhysicalModel'},
+    {'1': 'flutter_positioned', '3': 222, '4': 1, '5': 11, '6': '.FlutterPositioned', '9': 0, '10': 'flutterPositioned'},
+    {'1': 'flutter_positioned_named_fill', '3': 223, '4': 1, '5': 11, '6': '.FlutterPositionedNamedFill', '9': 0, '10': 'flutterPositionedNamedFill'},
+    {'1': 'flutter_positioned_directional', '3': 224, '4': 1, '5': 11, '6': '.FlutterPositionedDirectional', '9': 0, '10': 'flutterPositionedDirectional'},
+    {'1': 'flutter_raw_image', '3': 225, '4': 1, '5': 11, '6': '.FlutterRawImage', '9': 0, '10': 'flutterRawImage'},
+    {'1': 'flutter_repaint_boundary', '3': 226, '4': 1, '5': 11, '6': '.FlutterRepaintBoundary', '9': 0, '10': 'flutterRepaintBoundary'},
+    {'1': 'flutter_repaint_boundary_named_wrap', '3': 227, '4': 1, '5': 11, '6': '.FlutterRepaintBoundaryNamedWrap', '9': 0, '10': 'flutterRepaintBoundaryNamedWrap'},
+    {'1': 'flutter_rotated_box', '3': 228, '4': 1, '5': 11, '6': '.FlutterRotatedBox', '9': 0, '10': 'flutterRotatedBox'},
+    {'1': 'flutter_row', '3': 229, '4': 1, '5': 11, '6': '.FlutterRow', '9': 0, '10': 'flutterRow'},
+    {'1': 'flutter_semantics', '3': 230, '4': 1, '5': 11, '6': '.FlutterSemantics', '9': 0, '10': 'flutterSemantics'},
+    {'1': 'flutter_sized_box', '3': 231, '4': 1, '5': 11, '6': '.FlutterSizedBox', '9': 0, '10': 'flutterSizedBox'},
+    {'1': 'flutter_sized_box_named_expand', '3': 232, '4': 1, '5': 11, '6': '.FlutterSizedBoxNamedExpand', '9': 0, '10': 'flutterSizedBoxNamedExpand'},
+    {'1': 'flutter_sized_box_named_shrink', '3': 233, '4': 1, '5': 11, '6': '.FlutterSizedBoxNamedShrink', '9': 0, '10': 'flutterSizedBoxNamedShrink'},
+    {'1': 'flutter_sized_box_named_from_size', '3': 234, '4': 1, '5': 11, '6': '.FlutterSizedBoxNamedFromSize', '9': 0, '10': 'flutterSizedBoxNamedFromSize'},
+    {'1': 'flutter_sized_box_named_square', '3': 235, '4': 1, '5': 11, '6': '.FlutterSizedBoxNamedSquare', '9': 0, '10': 'flutterSizedBoxNamedSquare'},
+    {'1': 'flutter_sliver_to_box_adapter', '3': 236, '4': 1, '5': 11, '6': '.FlutterSliverToBoxAdapter', '9': 0, '10': 'flutterSliverToBoxAdapter'},
+    {'1': 'flutter_stack', '3': 237, '4': 1, '5': 11, '6': '.FlutterStack', '9': 0, '10': 'flutterStack'},
+    {'1': 'flutter_transform_named_rotate', '3': 238, '4': 1, '5': 11, '6': '.FlutterTransformNamedRotate', '9': 0, '10': 'flutterTransformNamedRotate'},
+    {'1': 'flutter_transform_named_scale', '3': 239, '4': 1, '5': 11, '6': '.FlutterTransformNamedScale', '9': 0, '10': 'flutterTransformNamedScale'},
+    {'1': 'flutter_transform_named_flip', '3': 240, '4': 1, '5': 11, '6': '.FlutterTransformNamedFlip', '9': 0, '10': 'flutterTransformNamedFlip'},
+    {'1': 'flutter_unconstrained_box', '3': 241, '4': 1, '5': 11, '6': '.FlutterUnconstrainedBox', '9': 0, '10': 'flutterUnconstrainedBox'},
+    {'1': 'flutter_wrap', '3': 242, '4': 1, '5': 11, '6': '.FlutterWrap', '9': 0, '10': 'flutterWrap'},
+    {'1': 'flutter_container', '3': 243, '4': 1, '5': 11, '6': '.FlutterContainer', '9': 0, '10': 'flutterContainer'},
+    {'1': 'flutter_default_selection_style', '3': 244, '4': 1, '5': 11, '6': '.FlutterDefaultSelectionStyle', '9': 0, '10': 'flutterDefaultSelectionStyle'},
+    {'1': 'flutter_default_selection_style_named_fallback', '3': 245, '4': 1, '5': 11, '6': '.FlutterDefaultSelectionStyleNamedFallback', '9': 0, '10': 'flutterDefaultSelectionStyleNamedFallback'},
+    {'1': 'flutter_default_text_editing_shortcuts', '3': 246, '4': 1, '5': 11, '6': '.FlutterDefaultTextEditingShortcuts', '9': 0, '10': 'flutterDefaultTextEditingShortcuts'},
+    {'1': 'flutter_dismissible', '3': 247, '4': 1, '5': 11, '6': '.FlutterDismissible', '9': 0, '10': 'flutterDismissible'},
+    {'1': 'flutter_display_feature_sub_screen', '3': 248, '4': 1, '5': 11, '6': '.FlutterDisplayFeatureSubScreen', '9': 0, '10': 'flutterDisplayFeatureSubScreen'},
+    {'1': 'flutter_draggable', '3': 249, '4': 1, '5': 11, '6': '.FlutterDraggable', '9': 0, '10': 'flutterDraggable'},
+    {'1': 'flutter_long_press_draggable', '3': 250, '4': 1, '5': 11, '6': '.FlutterLongPressDraggable', '9': 0, '10': 'flutterLongPressDraggable'},
+    {'1': 'flutter_draggable_scrollable_actuator', '3': 251, '4': 1, '5': 11, '6': '.FlutterDraggableScrollableActuator', '9': 0, '10': 'flutterDraggableScrollableActuator'},
+    {'1': 'flutter_fade_in_image_named_asset_network', '3': 252, '4': 1, '5': 11, '6': '.FlutterFadeInImageNamedAssetNetwork', '9': 0, '10': 'flutterFadeInImageNamedAssetNetwork'},
+    {'1': 'flutter_exclude_focus', '3': 253, '4': 1, '5': 11, '6': '.FlutterExcludeFocus', '9': 0, '10': 'flutterExcludeFocus'},
+    {'1': 'flutter_focus', '3': 254, '4': 1, '5': 11, '6': '.FlutterFocus', '9': 0, '10': 'flutterFocus'},
+    {'1': 'flutter_focus_scope', '3': 255, '4': 1, '5': 11, '6': '.FlutterFocusScope', '9': 0, '10': 'flutterFocusScope'},
+    {'1': 'flutter_exclude_focus_traversal', '3': 256, '4': 1, '5': 11, '6': '.FlutterExcludeFocusTraversal', '9': 0, '10': 'flutterExcludeFocusTraversal'},
+    {'1': 'flutter_focus_traversal_group', '3': 257, '4': 1, '5': 11, '6': '.FlutterFocusTraversalGroup', '9': 0, '10': 'flutterFocusTraversalGroup'},
+    {'1': 'flutter_form', '3': 258, '4': 1, '5': 11, '6': '.FlutterForm', '9': 0, '10': 'flutterForm'},
+    {'1': 'flutter_error_widget_named_with_details', '3': 259, '4': 1, '5': 11, '6': '.FlutterErrorWidgetNamedWithDetails', '9': 0, '10': 'flutterErrorWidgetNamedWithDetails'},
+    {'1': 'flutter_gesture_detector', '3': 260, '4': 1, '5': 11, '6': '.FlutterGestureDetector', '9': 0, '10': 'flutterGestureDetector'},
+    {'1': 'flutter_raw_gesture_detector', '3': 261, '4': 1, '5': 11, '6': '.FlutterRawGestureDetector', '9': 0, '10': 'flutterRawGestureDetector'},
+    {'1': 'flutter_grid_paper', '3': 262, '4': 1, '5': 11, '6': '.FlutterGridPaper', '9': 0, '10': 'flutterGridPaper'},
+    {'1': 'flutter_hero_mode', '3': 263, '4': 1, '5': 11, '6': '.FlutterHeroMode', '9': 0, '10': 'flutterHeroMode'},
+    {'1': 'flutter_icon', '3': 264, '4': 1, '5': 11, '6': '.FlutterIcon', '9': 0, '10': 'flutterIcon'},
+    {'1': 'flutter_image_named_network', '3': 265, '4': 1, '5': 11, '6': '.FlutterImageNamedNetwork', '9': 0, '10': 'flutterImageNamedNetwork'},
+    {'1': 'flutter_image_named_asset', '3': 266, '4': 1, '5': 11, '6': '.FlutterImageNamedAsset', '9': 0, '10': 'flutterImageNamedAsset'},
+    {'1': 'flutter_image_icon', '3': 267, '4': 1, '5': 11, '6': '.FlutterImageIcon', '9': 0, '10': 'flutterImageIcon'},
+    {'1': 'flutter_animated_container', '3': 268, '4': 1, '5': 11, '6': '.FlutterAnimatedContainer', '9': 0, '10': 'flutterAnimatedContainer'},
+    {'1': 'flutter_animated_fractionally_sized_box', '3': 269, '4': 1, '5': 11, '6': '.FlutterAnimatedFractionallySizedBox', '9': 0, '10': 'flutterAnimatedFractionallySizedBox'},
+    {'1': 'flutter_animated_opacity', '3': 270, '4': 1, '5': 11, '6': '.FlutterAnimatedOpacity', '9': 0, '10': 'flutterAnimatedOpacity'},
+    {'1': 'flutter_animated_positioned', '3': 271, '4': 1, '5': 11, '6': '.FlutterAnimatedPositioned', '9': 0, '10': 'flutterAnimatedPositioned'},
+    {'1': 'flutter_animated_positioned_directional', '3': 272, '4': 1, '5': 11, '6': '.FlutterAnimatedPositionedDirectional', '9': 0, '10': 'flutterAnimatedPositionedDirectional'},
+    {'1': 'flutter_animated_rotation', '3': 273, '4': 1, '5': 11, '6': '.FlutterAnimatedRotation', '9': 0, '10': 'flutterAnimatedRotation'},
+    {'1': 'flutter_animated_scale', '3': 274, '4': 1, '5': 11, '6': '.FlutterAnimatedScale', '9': 0, '10': 'flutterAnimatedScale'},
+    {'1': 'flutter_sliver_animated_opacity', '3': 275, '4': 1, '5': 11, '6': '.FlutterSliverAnimatedOpacity', '9': 0, '10': 'flutterSliverAnimatedOpacity'},
+    {'1': 'flutter_interactive_viewer', '3': 276, '4': 1, '5': 11, '6': '.FlutterInteractiveViewer', '9': 0, '10': 'flutterInteractiveViewer'},
+    {'1': 'flutter_list_wheel_scroll_view', '3': 277, '4': 1, '5': 11, '6': '.FlutterListWheelScrollView', '9': 0, '10': 'flutterListWheelScrollView'},
+    {'1': 'flutter_lookup_boundary', '3': 278, '4': 1, '5': 11, '6': '.FlutterLookupBoundary', '9': 0, '10': 'flutterLookupBoundary'},
+    {'1': 'flutter_modal_barrier', '3': 279, '4': 1, '5': 11, '6': '.FlutterModalBarrier', '9': 0, '10': 'flutterModalBarrier'},
+    {'1': 'flutter_navigation_toolbar', '3': 280, '4': 1, '5': 11, '6': '.FlutterNavigationToolbar', '9': 0, '10': 'flutterNavigationToolbar'},
+    {'1': 'flutter_hero_controller_scope_named_none', '3': 281, '4': 1, '5': 11, '6': '.FlutterHeroControllerScopeNamedNone', '9': 0, '10': 'flutterHeroControllerScopeNamedNone'},
+    {'1': 'flutter_navigator', '3': 282, '4': 1, '5': 11, '6': '.FlutterNavigator', '9': 0, '10': 'flutterNavigator'},
+    {'1': 'flutter_notification_listener', '3': 283, '4': 1, '5': 11, '6': '.FlutterNotificationListener', '9': 0, '10': 'flutterNotificationListener'},
+    {'1': 'flutter_overflow_bar', '3': 284, '4': 1, '5': 11, '6': '.FlutterOverflowBar', '9': 0, '10': 'flutterOverflowBar'},
+    {'1': 'flutter_overlay', '3': 285, '4': 1, '5': 11, '6': '.FlutterOverlay', '9': 0, '10': 'flutterOverlay'},
+    {'1': 'flutter_page_view', '3': 286, '4': 1, '5': 11, '6': '.FlutterPageView', '9': 0, '10': 'flutterPageView'},
+    {'1': 'flutter_performance_overlay', '3': 287, '4': 1, '5': 11, '6': '.FlutterPerformanceOverlay', '9': 0, '10': 'flutterPerformanceOverlay'},
+    {'1': 'flutter_performance_overlay_named_all_enabled', '3': 288, '4': 1, '5': 11, '6': '.FlutterPerformanceOverlayNamedAllEnabled', '9': 0, '10': 'flutterPerformanceOverlayNamedAllEnabled'},
+    {'1': 'flutter_placeholder', '3': 289, '4': 1, '5': 11, '6': '.FlutterPlaceholder', '9': 0, '10': 'flutterPlaceholder'},
+    {'1': 'flutter_android_view', '3': 290, '4': 1, '5': 11, '6': '.FlutterAndroidView', '9': 0, '10': 'flutterAndroidView'},
+    {'1': 'flutter_html_element_view', '3': 291, '4': 1, '5': 11, '6': '.FlutterHtmlElementView', '9': 0, '10': 'flutterHtmlElementView'},
+    {'1': 'flutter_ui_kit_view', '3': 292, '4': 1, '5': 11, '6': '.FlutterUiKitView', '9': 0, '10': 'flutterUiKitView'},
+    {'1': 'flutter_primary_scroll_controller_named_none', '3': 293, '4': 1, '5': 11, '6': '.FlutterPrimaryScrollControllerNamedNone', '9': 0, '10': 'flutterPrimaryScrollControllerNamedNone'},
+    {'1': 'flutter_reorderable_delayed_drag_start_listener', '3': 294, '4': 1, '5': 11, '6': '.FlutterReorderableDelayedDragStartListener', '9': 0, '10': 'flutterReorderableDelayedDragStartListener'},
+    {'1': 'flutter_reorderable_drag_start_listener', '3': 295, '4': 1, '5': 11, '6': '.FlutterReorderableDragStartListener', '9': 0, '10': 'flutterReorderableDragStartListener'},
+    {'1': 'flutter_restoration_scope', '3': 296, '4': 1, '5': 11, '6': '.FlutterRestorationScope', '9': 0, '10': 'flutterRestorationScope'},
+    {'1': 'flutter_root_restoration_scope', '3': 297, '4': 1, '5': 11, '6': '.FlutterRootRestorationScope', '9': 0, '10': 'flutterRootRestorationScope'},
+    {'1': 'flutter_unmanaged_restoration_scope', '3': 298, '4': 1, '5': 11, '6': '.FlutterUnmanagedRestorationScope', '9': 0, '10': 'flutterUnmanagedRestorationScope'},
+    {'1': 'flutter_safe_area', '3': 299, '4': 1, '5': 11, '6': '.FlutterSafeArea', '9': 0, '10': 'flutterSafeArea'},
+    {'1': 'flutter_sliver_safe_area', '3': 300, '4': 1, '5': 11, '6': '.FlutterSliverSafeArea', '9': 0, '10': 'flutterSliverSafeArea'},
+    {'1': 'flutter_scroll_notification_observer', '3': 301, '4': 1, '5': 11, '6': '.FlutterScrollNotificationObserver', '9': 0, '10': 'flutterScrollNotificationObserver'},
+    {'1': 'flutter_custom_scroll_view', '3': 302, '4': 1, '5': 11, '6': '.FlutterCustomScrollView', '9': 0, '10': 'flutterCustomScrollView'},
+    {'1': 'flutter_grid_view_named_count', '3': 303, '4': 1, '5': 11, '6': '.FlutterGridViewNamedCount', '9': 0, '10': 'flutterGridViewNamedCount'},
+    {'1': 'flutter_grid_view_named_extent', '3': 304, '4': 1, '5': 11, '6': '.FlutterGridViewNamedExtent', '9': 0, '10': 'flutterGridViewNamedExtent'},
+    {'1': 'flutter_list_view', '3': 305, '4': 1, '5': 11, '6': '.FlutterListView', '9': 0, '10': 'flutterListView'},
+    {'1': 'flutter_raw_scrollbar', '3': 306, '4': 1, '5': 11, '6': '.FlutterRawScrollbar', '9': 0, '10': 'flutterRawScrollbar'},
+    {'1': 'flutter_selection_container_named_disabled', '3': 307, '4': 1, '5': 11, '6': '.FlutterSelectionContainerNamedDisabled', '9': 0, '10': 'flutterSelectionContainerNamedDisabled'},
+    {'1': 'flutter_semantics_debugger', '3': 308, '4': 1, '5': 11, '6': '.FlutterSemanticsDebugger', '9': 0, '10': 'flutterSemanticsDebugger'},
+    {'1': 'flutter_shared_app_data', '3': 309, '4': 1, '5': 11, '6': '.FlutterSharedAppData', '9': 0, '10': 'flutterSharedAppData'},
+    {'1': 'flutter_shortcut_registrar', '3': 310, '4': 1, '5': 11, '6': '.FlutterShortcutRegistrar', '9': 0, '10': 'flutterShortcutRegistrar'},
+    {'1': 'flutter_single_child_scroll_view', '3': 311, '4': 1, '5': 11, '6': '.FlutterSingleChildScrollView', '9': 0, '10': 'flutterSingleChildScrollView'},
+    {'1': 'flutter_size_changed_layout_notifier', '3': 312, '4': 1, '5': 11, '6': '.FlutterSizeChangedLayoutNotifier', '9': 0, '10': 'flutterSizeChangedLayoutNotifier'},
+    {'1': 'flutter_keep_alive', '3': 313, '4': 1, '5': 11, '6': '.FlutterKeepAlive', '9': 0, '10': 'flutterKeepAlive'},
+    {'1': 'flutter_sliver_constrained_cross_axis', '3': 314, '4': 1, '5': 11, '6': '.FlutterSliverConstrainedCrossAxis', '9': 0, '10': 'flutterSliverConstrainedCrossAxis'},
+    {'1': 'flutter_sliver_cross_axis_expanded', '3': 315, '4': 1, '5': 11, '6': '.FlutterSliverCrossAxisExpanded', '9': 0, '10': 'flutterSliverCrossAxisExpanded'},
+    {'1': 'flutter_sliver_cross_axis_group', '3': 316, '4': 1, '5': 11, '6': '.FlutterSliverCrossAxisGroup', '9': 0, '10': 'flutterSliverCrossAxisGroup'},
+    {'1': 'flutter_sliver_fixed_extent_list_named_list', '3': 317, '4': 1, '5': 11, '6': '.FlutterSliverFixedExtentListNamedList', '9': 0, '10': 'flutterSliverFixedExtentListNamedList'},
+    {'1': 'flutter_sliver_grid_named_count', '3': 318, '4': 1, '5': 11, '6': '.FlutterSliverGridNamedCount', '9': 0, '10': 'flutterSliverGridNamedCount'},
+    {'1': 'flutter_sliver_grid_named_extent', '3': 319, '4': 1, '5': 11, '6': '.FlutterSliverGridNamedExtent', '9': 0, '10': 'flutterSliverGridNamedExtent'},
+    {'1': 'flutter_sliver_ignore_pointer', '3': 320, '4': 1, '5': 11, '6': '.FlutterSliverIgnorePointer', '9': 0, '10': 'flutterSliverIgnorePointer'},
+    {'1': 'flutter_sliver_list_named_list', '3': 321, '4': 1, '5': 11, '6': '.FlutterSliverListNamedList', '9': 0, '10': 'flutterSliverListNamedList'},
+    {'1': 'flutter_sliver_main_axis_group', '3': 322, '4': 1, '5': 11, '6': '.FlutterSliverMainAxisGroup', '9': 0, '10': 'flutterSliverMainAxisGroup'},
+    {'1': 'flutter_sliver_offstage', '3': 323, '4': 1, '5': 11, '6': '.FlutterSliverOffstage', '9': 0, '10': 'flutterSliverOffstage'},
+    {'1': 'flutter_sliver_opacity', '3': 324, '4': 1, '5': 11, '6': '.FlutterSliverOpacity', '9': 0, '10': 'flutterSliverOpacity'},
+    {'1': 'flutter_sliver_fill_remaining', '3': 325, '4': 1, '5': 11, '6': '.FlutterSliverFillRemaining', '9': 0, '10': 'flutterSliverFillRemaining'},
+    {'1': 'flutter_sliver_prototype_extent_list_named_list', '3': 326, '4': 1, '5': 11, '6': '.FlutterSliverPrototypeExtentListNamedList', '9': 0, '10': 'flutterSliverPrototypeExtentListNamedList'},
+    {'1': 'flutter_spacer', '3': 327, '4': 1, '5': 11, '6': '.FlutterSpacer', '9': 0, '10': 'flutterSpacer'},
+    {'1': 'flutter_table', '3': 328, '4': 1, '5': 11, '6': '.FlutterTable', '9': 0, '10': 'flutterTable'},
+    {'1': 'flutter_table_cell', '3': 329, '4': 1, '5': 11, '6': '.FlutterTableCell', '9': 0, '10': 'flutterTableCell'},
+    {'1': 'flutter_tap_region', '3': 330, '4': 1, '5': 11, '6': '.FlutterTapRegion', '9': 0, '10': 'flutterTapRegion'},
+    {'1': 'flutter_tap_region_surface', '3': 331, '4': 1, '5': 11, '6': '.FlutterTapRegionSurface', '9': 0, '10': 'flutterTapRegionSurface'},
+    {'1': 'flutter_text_field_tap_region', '3': 332, '4': 1, '5': 11, '6': '.FlutterTextFieldTapRegion', '9': 0, '10': 'flutterTextFieldTapRegion'},
+    {'1': 'flutter_default_text_style_named_fallback', '3': 333, '4': 1, '5': 11, '6': '.FlutterDefaultTextStyleNamedFallback', '9': 0, '10': 'flutterDefaultTextStyleNamedFallback'},
+    {'1': 'flutter_text', '3': 334, '4': 1, '5': 11, '6': '.FlutterText', '9': 0, '10': 'flutterText'},
+    {'1': 'flutter_text_selection_gesture_detector', '3': 335, '4': 1, '5': 11, '6': '.FlutterTextSelectionGestureDetector', '9': 0, '10': 'flutterTextSelectionGestureDetector'},
+    {'1': 'flutter_texture', '3': 336, '4': 1, '5': 11, '6': '.FlutterTexture', '9': 0, '10': 'flutterTexture'},
+    {'1': 'flutter_ticker_mode', '3': 337, '4': 1, '5': 11, '6': '.FlutterTickerMode', '9': 0, '10': 'flutterTickerMode'},
+    {'1': 'flutter_title', '3': 338, '4': 1, '5': 11, '6': '.FlutterTitle', '9': 0, '10': 'flutterTitle'},
+    {'1': 'flutter_sliver_visibility', '3': 339, '4': 1, '5': 11, '6': '.FlutterSliverVisibility', '9': 0, '10': 'flutterSliverVisibility'},
+    {'1': 'flutter_sliver_visibility_named_maintain', '3': 340, '4': 1, '5': 11, '6': '.FlutterSliverVisibilityNamedMaintain', '9': 0, '10': 'flutterSliverVisibilityNamedMaintain'},
+    {'1': 'flutter_visibility', '3': 341, '4': 1, '5': 11, '6': '.FlutterVisibility', '9': 0, '10': 'flutterVisibility'},
+    {'1': 'flutter_visibility_named_maintain', '3': 342, '4': 1, '5': 11, '6': '.FlutterVisibilityNamedMaintain', '9': 0, '10': 'flutterVisibilityNamedMaintain'},
+    {'1': 'flutter_widget_inspector', '3': 343, '4': 1, '5': 11, '6': '.FlutterWidgetInspector', '9': 0, '10': 'flutterWidgetInspector'},
+    {'1': 'flutter_will_pop_scope', '3': 344, '4': 1, '5': 11, '6': '.FlutterWillPopScope', '9': 0, '10': 'flutterWillPopScope'},
+    {'1': 'flutter_project_my_app', '3': 345, '4': 1, '5': 11, '6': '.FlutterProjectMyApp', '9': 0, '10': 'flutterProjectMyApp'},
+    {'1': 'flutter_project_my_home_page', '3': 346, '4': 1, '5': 11, '6': '.FlutterProjectMyHomePage', '9': 0, '10': 'flutterProjectMyHomePage'},
   ],
   '8': [
     {'1': 'result'},
@@ -7570,278 +8461,287 @@ final $typed_data.Uint8List widgetExpressionDescriptor = $convert.base64Decode(
     'b25kYXJ5EkkKFW1hdGVyaWFsX3RhYl9iYXJfdmlldxioASABKAsyEy5NYXRlcmlhbFRhYkJhcl'
     'ZpZXdIAFISbWF0ZXJpYWxUYWJCYXJWaWV3ElgKGm1hdGVyaWFsX3RhYl9wYWdlX3NlbGVjdG9y'
     'GKkBIAEoCzIYLk1hdGVyaWFsVGFiUGFnZVNlbGVjdG9ySABSF21hdGVyaWFsVGFiUGFnZVNlbG'
-    'VjdG9yEkgKFG1hdGVyaWFsX3RleHRfYnV0dG9uGKoBIAEoCzITLk1hdGVyaWFsVGV4dEJ1dHRv'
-    'bkgAUhJtYXRlcmlhbFRleHRCdXR0b24SZQofbWF0ZXJpYWxfdGV4dF9idXR0b25fbmFtZWRfaW'
-    'NvbhirASABKAsyHC5NYXRlcmlhbFRleHRCdXR0b25OYW1lZEljb25IAFIbbWF0ZXJpYWxUZXh0'
-    'QnV0dG9uTmFtZWRJY29uEkUKE21hdGVyaWFsX3RleHRfZmllbGQYrAEgASgLMhIuTWF0ZXJpYW'
-    'xUZXh0RmllbGRIAFIRbWF0ZXJpYWxUZXh0RmllbGQSUgoYbWF0ZXJpYWxfdGV4dF9mb3JtX2Zp'
-    'ZWxkGK0BIAEoCzIWLk1hdGVyaWFsVGV4dEZvcm1GaWVsZEgAUhVtYXRlcmlhbFRleHRGb3JtRm'
-    'llbGQSUQoXbWF0ZXJpYWxfdG9nZ2xlX2J1dHRvbnMYrgEgASgLMhYuTWF0ZXJpYWxUb2dnbGVC'
-    'dXR0b25zSABSFW1hdGVyaWFsVG9nZ2xlQnV0dG9ucxI+ChBtYXRlcmlhbF90b29sdGlwGK8BIA'
-    'EoCzIQLk1hdGVyaWFsVG9vbHRpcEgAUg9tYXRlcmlhbFRvb2x0aXASXQobbWF0ZXJpYWxfdG9v'
-    'bHRpcF92aXNpYmlsaXR5GLABIAEoCzIaLk1hdGVyaWFsVG9vbHRpcFZpc2liaWxpdHlIAFIZbW'
-    'F0ZXJpYWxUb29sdGlwVmlzaWJpbGl0eRJ0CiRtYXRlcmlhbF91c2VyX2FjY291bnRzX2RyYXdl'
-    'cl9oZWFkZXIYsQEgASgLMiEuTWF0ZXJpYWxVc2VyQWNjb3VudHNEcmF3ZXJIZWFkZXJIAFIgbW'
-    'F0ZXJpYWxVc2VyQWNjb3VudHNEcmF3ZXJIZWFkZXISkwEKL2ZsdXR0ZXJfcGxhdGZvcm1fc2Vs'
-    'ZWN0YWJsZV9yZWdpb25fY29udGV4dF9tZW51GLIBIAEoCzIrLkZsdXR0ZXJQbGF0Zm9ybVNlbG'
-    'VjdGFibGVSZWdpb25Db250ZXh0TWVudUgAUipmbHV0dGVyUGxhdGZvcm1TZWxlY3RhYmxlUmVn'
-    'aW9uQ29udGV4dE1lbnUSbQohZmx1dHRlcl9mb2N1c2FibGVfYWN0aW9uX2RldGVjdG9yGLMBIA'
-    'EoCzIfLkZsdXR0ZXJGb2N1c2FibGVBY3Rpb25EZXRlY3RvckgAUh5mbHV0dGVyRm9jdXNhYmxl'
-    'QWN0aW9uRGV0ZWN0b3ISSwoVZmx1dHRlcl9hbmltYXRlZF9zaXplGLQBIAEoCzIULkZsdXR0ZX'
-    'JBbmltYXRlZFNpemVIAFITZmx1dHRlckFuaW1hdGVkU2l6ZRJXChlmbHV0dGVyX2FuaW1hdGVk'
-    'X3N3aXRjaGVyGLUBIAEoCzIYLkZsdXR0ZXJBbmltYXRlZFN3aXRjaGVySABSF2ZsdXR0ZXJBbm'
-    'ltYXRlZFN3aXRjaGVyEk4KFmZsdXR0ZXJfYXV0b2ZpbGxfZ3JvdXAYtgEgASgLMhUuRmx1dHRl'
-    'ckF1dG9maWxsR3JvdXBIAFIUZmx1dHRlckF1dG9maWxsR3JvdXASXgocZmx1dHRlcl9hdXRvbW'
-    'F0aWNfa2VlcF9hbGl2ZRi3ASABKAsyGi5GbHV0dGVyQXV0b21hdGljS2VlcEFsaXZlSABSGWZs'
-    'dXR0ZXJBdXRvbWF0aWNLZWVwQWxpdmUSWwobZmx1dHRlcl9jaGVja2VkX21vZGVfYmFubmVyGL'
-    'gBIAEoCzIZLkZsdXR0ZXJDaGVja2VkTW9kZUJhbm5lckgAUhhmbHV0dGVyQ2hlY2tlZE1vZGVC'
-    'YW5uZXISTgoWZmx1dHRlcl9hYnNvcmJfcG9pbnRlchi5ASABKAsyFS5GbHV0dGVyQWJzb3JiUG'
-    '9pbnRlckgAUhRmbHV0dGVyQWJzb3JiUG9pbnRlchI1Cg1mbHV0dGVyX2FsaWduGLoBIAEoCzIN'
-    'LkZsdXR0ZXJBbGlnbkgAUgxmbHV0dGVyQWxpZ24SSAoUZmx1dHRlcl9hc3BlY3RfcmF0aW8Yuw'
-    'EgASgLMhMuRmx1dHRlckFzcGVjdFJhdGlvSABSEmZsdXR0ZXJBc3BlY3RSYXRpbxJRChdmbHV0'
-    'dGVyX2Jsb2NrX3NlbWFudGljcxi8ASABKAsyFi5GbHV0dGVyQmxvY2tTZW1hbnRpY3NIAFIVZm'
-    'x1dHRlckJsb2NrU2VtYW50aWNzEjgKDmZsdXR0ZXJfY2VudGVyGL0BIAEoCzIOLkZsdXR0ZXJD'
-    'ZW50ZXJIAFINZmx1dHRlckNlbnRlchI/ChFmbHV0dGVyX2NsaXBfb3ZhbBi+ASABKAsyEC5GbH'
-    'V0dGVyQ2xpcE92YWxIAFIPZmx1dHRlckNsaXBPdmFsEj8KEWZsdXR0ZXJfY2xpcF9wYXRoGL8B'
-    'IAEoCzIQLkZsdXR0ZXJDbGlwUGF0aEgAUg9mbHV0dGVyQ2xpcFBhdGgSQwoTZmx1dHRlcl9jbG'
-    'lwX3JfcmVjdBjAASABKAsyES5GbHV0dGVyQ2xpcFJSZWN0SABSEGZsdXR0ZXJDbGlwUlJlY3QS'
-    'PwoRZmx1dHRlcl9jbGlwX3JlY3QYwQEgASgLMhAuRmx1dHRlckNsaXBSZWN0SABSD2ZsdXR0ZX'
-    'JDbGlwUmVjdBI4Cg5mbHV0dGVyX2NvbHVtbhjCASABKAsyDi5GbHV0dGVyQ29sdW1uSABSDWZs'
-    'dXR0ZXJDb2x1bW4SSAoUZmx1dHRlcl9jdXN0b21fcGFpbnQYwwEgASgLMhMuRmx1dHRlckN1c3'
-    'RvbVBhaW50SABSEmZsdXR0ZXJDdXN0b21QYWludBJXChlmbHV0dGVyX2V4Y2x1ZGVfc2VtYW50'
-    'aWNzGMQBIAEoCzIYLkZsdXR0ZXJFeGNsdWRlU2VtYW50aWNzSABSF2ZsdXR0ZXJFeGNsdWRlU2'
-    'VtYW50aWNzEj4KEGZsdXR0ZXJfZXhwYW5kZWQYxQEgASgLMhAuRmx1dHRlckV4cGFuZGVkSABS'
-    'D2ZsdXR0ZXJFeHBhbmRlZBJCChJmbHV0dGVyX2ZpdHRlZF9ib3gYxgEgASgLMhEuRmx1dHRlck'
-    'ZpdHRlZEJveEgAUhBmbHV0dGVyRml0dGVkQm94Ej4KEGZsdXR0ZXJfZmxleGlibGUYxwEgASgL'
-    'MhAuRmx1dHRlckZsZXhpYmxlSABSD2ZsdXR0ZXJGbGV4aWJsZRJkCh5mbHV0dGVyX2ZyYWN0aW'
-    '9uYWxseV9zaXplZF9ib3gYyAEgASgLMhwuRmx1dHRlckZyYWN0aW9uYWxseVNpemVkQm94SABS'
-    'G2ZsdXR0ZXJGcmFjdGlvbmFsbHlTaXplZEJveBJOChZmbHV0dGVyX2lnbm9yZV9wb2ludGVyGM'
-    'kBIAEoCzIVLkZsdXR0ZXJJZ25vcmVQb2ludGVySABSFGZsdXR0ZXJJZ25vcmVQb2ludGVyElcK'
-    'GWZsdXR0ZXJfaW5kZXhlZF9zZW1hbnRpY3MYygEgASgLMhguRmx1dHRlckluZGV4ZWRTZW1hbn'
-    'RpY3NIAFIXZmx1dHRlckluZGV4ZWRTZW1hbnRpY3MSSwoVZmx1dHRlcl9pbmRleGVkX3N0YWNr'
-    'GMsBIAEoCzIULkZsdXR0ZXJJbmRleGVkU3RhY2tIAFITZmx1dHRlckluZGV4ZWRTdGFjaxJUCh'
-    'hmbHV0dGVyX2ludHJpbnNpY19oZWlnaHQYzAEgASgLMhcuRmx1dHRlckludHJpbnNpY0hlaWdo'
-    'dEgAUhZmbHV0dGVySW50cmluc2ljSGVpZ2h0ElEKF2ZsdXR0ZXJfaW50cmluc2ljX3dpZHRoGM'
-    '0BIAEoCzIWLkZsdXR0ZXJJbnRyaW5zaWNXaWR0aEgAUhVmbHV0dGVySW50cmluc2ljV2lkdGgS'
-    'SwoVZmx1dHRlcl9rZXllZF9zdWJ0cmVlGM4BIAEoCzIULkZsdXR0ZXJLZXllZFN1YnRyZWVIAF'
-    'ITZmx1dHRlcktleWVkU3VidHJlZRJoCiBmbHV0dGVyX2tleWVkX3N1YnRyZWVfbmFtZWRfd3Jh'
-    'cBjPASABKAsyHS5GbHV0dGVyS2V5ZWRTdWJ0cmVlTmFtZWRXcmFwSABSHGZsdXR0ZXJLZXllZF'
-    'N1YnRyZWVOYW1lZFdyYXASRQoTZmx1dHRlcl9saW1pdGVkX2JveBjQASABKAsyEi5GbHV0dGVy'
-    'TGltaXRlZEJveEgAUhFmbHV0dGVyTGltaXRlZEJveBI/ChFmbHV0dGVyX2xpc3RfYm9keRjRAS'
-    'ABKAsyEC5GbHV0dGVyTGlzdEJvZHlIAFIPZmx1dHRlckxpc3RCb2R5Ej4KEGZsdXR0ZXJfbGlz'
-    'dGVuZXIY0gEgASgLMhAuRmx1dHRlckxpc3RlbmVySABSD2ZsdXR0ZXJMaXN0ZW5lchJRChdmbH'
-    'V0dGVyX21lcmdlX3NlbWFudGljcxjTASABKAsyFi5GbHV0dGVyTWVyZ2VTZW1hbnRpY3NIAFIV'
-    'Zmx1dHRlck1lcmdlU2VtYW50aWNzEj8KEWZsdXR0ZXJfbWV0YV9kYXRhGNQBIAEoCzIQLkZsdX'
-    'R0ZXJNZXRhRGF0YUgAUg9mbHV0dGVyTWV0YURhdGESSAoUZmx1dHRlcl9tb3VzZV9yZWdpb24Y'
-    '1QEgASgLMhMuRmx1dHRlck1vdXNlUmVnaW9uSABSEmZsdXR0ZXJNb3VzZVJlZ2lvbhI+ChBmbH'
-    'V0dGVyX29mZnN0YWdlGNYBIAEoCzIQLkZsdXR0ZXJPZmZzdGFnZUgAUg9mbHV0dGVyT2Zmc3Rh'
-    'Z2USOwoPZmx1dHRlcl9vcGFjaXR5GNcBIAEoCzIPLkZsdXR0ZXJPcGFjaXR5SABSDmZsdXR0ZX'
-    'JPcGFjaXR5EkgKFGZsdXR0ZXJfb3ZlcmZsb3dfYm94GNgBIAEoCzITLkZsdXR0ZXJPdmVyZmxv'
-    'd0JveEgAUhJmbHV0dGVyT3ZlcmZsb3dCb3gSRAoSZmx1dHRlcl9wb3NpdGlvbmVkGNkBIAEoCz'
-    'ISLkZsdXR0ZXJQb3NpdGlvbmVkSABSEWZsdXR0ZXJQb3NpdGlvbmVkEmEKHWZsdXR0ZXJfcG9z'
-    'aXRpb25lZF9uYW1lZF9maWxsGNoBIAEoCzIbLkZsdXR0ZXJQb3NpdGlvbmVkTmFtZWRGaWxsSA'
-    'BSGmZsdXR0ZXJQb3NpdGlvbmVkTmFtZWRGaWxsEmYKHmZsdXR0ZXJfcG9zaXRpb25lZF9kaXJl'
-    'Y3Rpb25hbBjbASABKAsyHS5GbHV0dGVyUG9zaXRpb25lZERpcmVjdGlvbmFsSABSHGZsdXR0ZX'
-    'JQb3NpdGlvbmVkRGlyZWN0aW9uYWwSPwoRZmx1dHRlcl9yYXdfaW1hZ2UY3AEgASgLMhAuRmx1'
-    'dHRlclJhd0ltYWdlSABSD2ZsdXR0ZXJSYXdJbWFnZRJUChhmbHV0dGVyX3JlcGFpbnRfYm91bm'
-    'RhcnkY3QEgASgLMhcuRmx1dHRlclJlcGFpbnRCb3VuZGFyeUgAUhZmbHV0dGVyUmVwYWludEJv'
-    'dW5kYXJ5EnEKI2ZsdXR0ZXJfcmVwYWludF9ib3VuZGFyeV9uYW1lZF93cmFwGN4BIAEoCzIgLk'
-    'ZsdXR0ZXJSZXBhaW50Qm91bmRhcnlOYW1lZFdyYXBIAFIfZmx1dHRlclJlcGFpbnRCb3VuZGFy'
-    'eU5hbWVkV3JhcBJFChNmbHV0dGVyX3JvdGF0ZWRfYm94GN8BIAEoCzISLkZsdXR0ZXJSb3RhdG'
-    'VkQm94SABSEWZsdXR0ZXJSb3RhdGVkQm94Ei8KC2ZsdXR0ZXJfcm93GOABIAEoCzILLkZsdXR0'
-    'ZXJSb3dIAFIKZmx1dHRlclJvdxJBChFmbHV0dGVyX3NlbWFudGljcxjhASABKAsyES5GbHV0dG'
-    'VyU2VtYW50aWNzSABSEGZsdXR0ZXJTZW1hbnRpY3MSPwoRZmx1dHRlcl9zaXplZF9ib3gY4gEg'
-    'ASgLMhAuRmx1dHRlclNpemVkQm94SABSD2ZsdXR0ZXJTaXplZEJveBJiCh5mbHV0dGVyX3Npem'
-    'VkX2JveF9uYW1lZF9leHBhbmQY4wEgASgLMhsuRmx1dHRlclNpemVkQm94TmFtZWRFeHBhbmRI'
-    'AFIaZmx1dHRlclNpemVkQm94TmFtZWRFeHBhbmQSYgoeZmx1dHRlcl9zaXplZF9ib3hfbmFtZW'
-    'Rfc2hyaW5rGOQBIAEoCzIbLkZsdXR0ZXJTaXplZEJveE5hbWVkU2hyaW5rSABSGmZsdXR0ZXJT'
-    'aXplZEJveE5hbWVkU2hyaW5rEmkKIWZsdXR0ZXJfc2l6ZWRfYm94X25hbWVkX2Zyb21fc2l6ZR'
-    'jlASABKAsyHS5GbHV0dGVyU2l6ZWRCb3hOYW1lZEZyb21TaXplSABSHGZsdXR0ZXJTaXplZEJv'
-    'eE5hbWVkRnJvbVNpemUSYgoeZmx1dHRlcl9zaXplZF9ib3hfbmFtZWRfc3F1YXJlGOYBIAEoCz'
-    'IbLkZsdXR0ZXJTaXplZEJveE5hbWVkU3F1YXJlSABSGmZsdXR0ZXJTaXplZEJveE5hbWVkU3F1'
-    'YXJlEl8KHWZsdXR0ZXJfc2xpdmVyX3RvX2JveF9hZGFwdGVyGOcBIAEoCzIaLkZsdXR0ZXJTbG'
-    'l2ZXJUb0JveEFkYXB0ZXJIAFIZZmx1dHRlclNsaXZlclRvQm94QWRhcHRlchI1Cg1mbHV0dGVy'
-    'X3N0YWNrGOgBIAEoCzINLkZsdXR0ZXJTdGFja0gAUgxmbHV0dGVyU3RhY2sSZAoeZmx1dHRlcl'
-    '90cmFuc2Zvcm1fbmFtZWRfcm90YXRlGOkBIAEoCzIcLkZsdXR0ZXJUcmFuc2Zvcm1OYW1lZFJv'
-    'dGF0ZUgAUhtmbHV0dGVyVHJhbnNmb3JtTmFtZWRSb3RhdGUSYQodZmx1dHRlcl90cmFuc2Zvcm'
-    '1fbmFtZWRfc2NhbGUY6gEgASgLMhsuRmx1dHRlclRyYW5zZm9ybU5hbWVkU2NhbGVIAFIaZmx1'
-    'dHRlclRyYW5zZm9ybU5hbWVkU2NhbGUSXgocZmx1dHRlcl90cmFuc2Zvcm1fbmFtZWRfZmxpcB'
-    'jrASABKAsyGi5GbHV0dGVyVHJhbnNmb3JtTmFtZWRGbGlwSABSGWZsdXR0ZXJUcmFuc2Zvcm1O'
-    'YW1lZEZsaXASVwoZZmx1dHRlcl91bmNvbnN0cmFpbmVkX2JveBjsASABKAsyGC5GbHV0dGVyVW'
-    '5jb25zdHJhaW5lZEJveEgAUhdmbHV0dGVyVW5jb25zdHJhaW5lZEJveBIyCgxmbHV0dGVyX3dy'
-    'YXAY7QEgASgLMgwuRmx1dHRlcldyYXBIAFILZmx1dHRlcldyYXASQQoRZmx1dHRlcl9jb250YW'
-    'luZXIY7gEgASgLMhEuRmx1dHRlckNvbnRhaW5lckgAUhBmbHV0dGVyQ29udGFpbmVyEmcKH2Zs'
-    'dXR0ZXJfZGVmYXVsdF9zZWxlY3Rpb25fc3R5bGUY7wEgASgLMh0uRmx1dHRlckRlZmF1bHRTZW'
-    'xlY3Rpb25TdHlsZUgAUhxmbHV0dGVyRGVmYXVsdFNlbGVjdGlvblN0eWxlEpABCi5mbHV0dGVy'
-    'X2RlZmF1bHRfc2VsZWN0aW9uX3N0eWxlX25hbWVkX2ZhbGxiYWNrGPABIAEoCzIqLkZsdXR0ZX'
-    'JEZWZhdWx0U2VsZWN0aW9uU3R5bGVOYW1lZEZhbGxiYWNrSABSKWZsdXR0ZXJEZWZhdWx0U2Vs'
-    'ZWN0aW9uU3R5bGVOYW1lZEZhbGxiYWNrEnoKJmZsdXR0ZXJfZGVmYXVsdF90ZXh0X2VkaXRpbm'
-    'dfc2hvcnRjdXRzGPEBIAEoCzIjLkZsdXR0ZXJEZWZhdWx0VGV4dEVkaXRpbmdTaG9ydGN1dHNI'
-    'AFIiZmx1dHRlckRlZmF1bHRUZXh0RWRpdGluZ1Nob3J0Y3V0cxJHChNmbHV0dGVyX2Rpc21pc3'
-    'NpYmxlGPIBIAEoCzITLkZsdXR0ZXJEaXNtaXNzaWJsZUgAUhJmbHV0dGVyRGlzbWlzc2libGUS'
-    'bgoiZmx1dHRlcl9kaXNwbGF5X2ZlYXR1cmVfc3ViX3NjcmVlbhjzASABKAsyHy5GbHV0dGVyRG'
-    'lzcGxheUZlYXR1cmVTdWJTY3JlZW5IAFIeZmx1dHRlckRpc3BsYXlGZWF0dXJlU3ViU2NyZWVu'
-    'EkEKEWZsdXR0ZXJfZHJhZ2dhYmxlGPQBIAEoCzIRLkZsdXR0ZXJEcmFnZ2FibGVIAFIQZmx1dH'
-    'RlckRyYWdnYWJsZRJeChxmbHV0dGVyX2xvbmdfcHJlc3NfZHJhZ2dhYmxlGPUBIAEoCzIaLkZs'
-    'dXR0ZXJMb25nUHJlc3NEcmFnZ2FibGVIAFIZZmx1dHRlckxvbmdQcmVzc0RyYWdnYWJsZRJ5Ci'
-    'VmbHV0dGVyX2RyYWdnYWJsZV9zY3JvbGxhYmxlX2FjdHVhdG9yGPYBIAEoCzIjLkZsdXR0ZXJE'
-    'cmFnZ2FibGVTY3JvbGxhYmxlQWN0dWF0b3JIAFIiZmx1dHRlckRyYWdnYWJsZVNjcm9sbGFibG'
-    'VBY3R1YXRvchJ/CilmbHV0dGVyX2ZhZGVfaW5faW1hZ2VfbmFtZWRfYXNzZXRfbmV0d29yaxj3'
-    'ASABKAsyJC5GbHV0dGVyRmFkZUluSW1hZ2VOYW1lZEFzc2V0TmV0d29ya0gAUiNmbHV0dGVyRm'
-    'FkZUluSW1hZ2VOYW1lZEFzc2V0TmV0d29yaxJLChVmbHV0dGVyX2V4Y2x1ZGVfZm9jdXMY+AEg'
-    'ASgLMhQuRmx1dHRlckV4Y2x1ZGVGb2N1c0gAUhNmbHV0dGVyRXhjbHVkZUZvY3VzEjUKDWZsdX'
-    'R0ZXJfZm9jdXMY+QEgASgLMg0uRmx1dHRlckZvY3VzSABSDGZsdXR0ZXJGb2N1cxJFChNmbHV0'
-    'dGVyX2ZvY3VzX3Njb3BlGPoBIAEoCzISLkZsdXR0ZXJGb2N1c1Njb3BlSABSEWZsdXR0ZXJGb2'
-    'N1c1Njb3BlEmcKH2ZsdXR0ZXJfZXhjbHVkZV9mb2N1c190cmF2ZXJzYWwY+wEgASgLMh0uRmx1'
-    'dHRlckV4Y2x1ZGVGb2N1c1RyYXZlcnNhbEgAUhxmbHV0dGVyRXhjbHVkZUZvY3VzVHJhdmVyc2'
-    'FsEmEKHWZsdXR0ZXJfZm9jdXNfdHJhdmVyc2FsX2dyb3VwGPwBIAEoCzIbLkZsdXR0ZXJGb2N1'
-    'c1RyYXZlcnNhbEdyb3VwSABSGmZsdXR0ZXJGb2N1c1RyYXZlcnNhbEdyb3VwEjIKDGZsdXR0ZX'
-    'JfZm9ybRj9ASABKAsyDC5GbHV0dGVyRm9ybUgAUgtmbHV0dGVyRm9ybRJ7CidmbHV0dGVyX2Vy'
-    'cm9yX3dpZGdldF9uYW1lZF93aXRoX2RldGFpbHMY/gEgASgLMiMuRmx1dHRlckVycm9yV2lkZ2'
-    'V0TmFtZWRXaXRoRGV0YWlsc0gAUiJmbHV0dGVyRXJyb3JXaWRnZXROYW1lZFdpdGhEZXRhaWxz'
-    'ElQKGGZsdXR0ZXJfZ2VzdHVyZV9kZXRlY3Rvchj/ASABKAsyFy5GbHV0dGVyR2VzdHVyZURldG'
-    'VjdG9ySABSFmZsdXR0ZXJHZXN0dXJlRGV0ZWN0b3ISXgocZmx1dHRlcl9yYXdfZ2VzdHVyZV9k'
-    'ZXRlY3RvchiAAiABKAsyGi5GbHV0dGVyUmF3R2VzdHVyZURldGVjdG9ySABSGWZsdXR0ZXJSYX'
-    'dHZXN0dXJlRGV0ZWN0b3ISQgoSZmx1dHRlcl9ncmlkX3BhcGVyGIECIAEoCzIRLkZsdXR0ZXJH'
-    'cmlkUGFwZXJIAFIQZmx1dHRlckdyaWRQYXBlchI/ChFmbHV0dGVyX2hlcm9fbW9kZRiCAiABKA'
-    'syEC5GbHV0dGVySGVyb01vZGVIAFIPZmx1dHRlckhlcm9Nb2RlEjIKDGZsdXR0ZXJfaWNvbhiD'
-    'AiABKAsyDC5GbHV0dGVySWNvbkgAUgtmbHV0dGVySWNvbhJbChtmbHV0dGVyX2ltYWdlX25hbW'
-    'VkX25ldHdvcmsYhAIgASgLMhkuRmx1dHRlckltYWdlTmFtZWROZXR3b3JrSABSGGZsdXR0ZXJJ'
-    'bWFnZU5hbWVkTmV0d29yaxJVChlmbHV0dGVyX2ltYWdlX25hbWVkX2Fzc2V0GIUCIAEoCzIXLk'
-    'ZsdXR0ZXJJbWFnZU5hbWVkQXNzZXRIAFIWZmx1dHRlckltYWdlTmFtZWRBc3NldBJCChJmbHV0'
-    'dGVyX2ltYWdlX2ljb24YhgIgASgLMhEuRmx1dHRlckltYWdlSWNvbkgAUhBmbHV0dGVySW1hZ2'
-    'VJY29uEloKGmZsdXR0ZXJfYW5pbWF0ZWRfY29udGFpbmVyGIcCIAEoCzIZLkZsdXR0ZXJBbmlt'
-    'YXRlZENvbnRhaW5lckgAUhhmbHV0dGVyQW5pbWF0ZWRDb250YWluZXISfQonZmx1dHRlcl9hbm'
-    'ltYXRlZF9mcmFjdGlvbmFsbHlfc2l6ZWRfYm94GIgCIAEoCzIkLkZsdXR0ZXJBbmltYXRlZEZy'
-    'YWN0aW9uYWxseVNpemVkQm94SABSI2ZsdXR0ZXJBbmltYXRlZEZyYWN0aW9uYWxseVNpemVkQm'
-    '94ElQKGGZsdXR0ZXJfYW5pbWF0ZWRfb3BhY2l0eRiJAiABKAsyFy5GbHV0dGVyQW5pbWF0ZWRP'
-    'cGFjaXR5SABSFmZsdXR0ZXJBbmltYXRlZE9wYWNpdHkSXQobZmx1dHRlcl9hbmltYXRlZF9wb3'
-    'NpdGlvbmVkGIoCIAEoCzIaLkZsdXR0ZXJBbmltYXRlZFBvc2l0aW9uZWRIAFIZZmx1dHRlckFu'
-    'aW1hdGVkUG9zaXRpb25lZBJ/CidmbHV0dGVyX2FuaW1hdGVkX3Bvc2l0aW9uZWRfZGlyZWN0aW'
-    '9uYWwYiwIgASgLMiUuRmx1dHRlckFuaW1hdGVkUG9zaXRpb25lZERpcmVjdGlvbmFsSABSJGZs'
-    'dXR0ZXJBbmltYXRlZFBvc2l0aW9uZWREaXJlY3Rpb25hbBJXChlmbHV0dGVyX2FuaW1hdGVkX3'
-    'JvdGF0aW9uGIwCIAEoCzIYLkZsdXR0ZXJBbmltYXRlZFJvdGF0aW9uSABSF2ZsdXR0ZXJBbmlt'
-    'YXRlZFJvdGF0aW9uEk4KFmZsdXR0ZXJfYW5pbWF0ZWRfc2NhbGUYjQIgASgLMhUuRmx1dHRlck'
-    'FuaW1hdGVkU2NhbGVIAFIUZmx1dHRlckFuaW1hdGVkU2NhbGUSZwofZmx1dHRlcl9zbGl2ZXJf'
-    'YW5pbWF0ZWRfb3BhY2l0eRiOAiABKAsyHS5GbHV0dGVyU2xpdmVyQW5pbWF0ZWRPcGFjaXR5SA'
-    'BSHGZsdXR0ZXJTbGl2ZXJBbmltYXRlZE9wYWNpdHkSWgoaZmx1dHRlcl9pbnRlcmFjdGl2ZV92'
-    'aWV3ZXIYjwIgASgLMhkuRmx1dHRlckludGVyYWN0aXZlVmlld2VySABSGGZsdXR0ZXJJbnRlcm'
-    'FjdGl2ZVZpZXdlchJiCh5mbHV0dGVyX2xpc3Rfd2hlZWxfc2Nyb2xsX3ZpZXcYkAIgASgLMhsu'
-    'Rmx1dHRlckxpc3RXaGVlbFNjcm9sbFZpZXdIAFIaZmx1dHRlckxpc3RXaGVlbFNjcm9sbFZpZX'
-    'cSUQoXZmx1dHRlcl9sb29rdXBfYm91bmRhcnkYkQIgASgLMhYuRmx1dHRlckxvb2t1cEJvdW5k'
-    'YXJ5SABSFWZsdXR0ZXJMb29rdXBCb3VuZGFyeRJLChVmbHV0dGVyX21vZGFsX2JhcnJpZXIYkg'
-    'IgASgLMhQuRmx1dHRlck1vZGFsQmFycmllckgAUhNmbHV0dGVyTW9kYWxCYXJyaWVyEloKGmZs'
-    'dXR0ZXJfbmF2aWdhdGlvbl90b29sYmFyGJMCIAEoCzIZLkZsdXR0ZXJOYXZpZ2F0aW9uVG9vbG'
-    'JhckgAUhhmbHV0dGVyTmF2aWdhdGlvblRvb2xiYXISfgooZmx1dHRlcl9oZXJvX2NvbnRyb2xs'
-    'ZXJfc2NvcGVfbmFtZWRfbm9uZRiUAiABKAsyJC5GbHV0dGVySGVyb0NvbnRyb2xsZXJTY29wZU'
-    '5hbWVkTm9uZUgAUiNmbHV0dGVySGVyb0NvbnRyb2xsZXJTY29wZU5hbWVkTm9uZRJBChFmbHV0'
-    'dGVyX25hdmlnYXRvchiVAiABKAsyES5GbHV0dGVyTmF2aWdhdG9ySABSEGZsdXR0ZXJOYXZpZ2'
-    'F0b3ISYwodZmx1dHRlcl9ub3RpZmljYXRpb25fbGlzdGVuZXIYlgIgASgLMhwuRmx1dHRlck5v'
-    'dGlmaWNhdGlvbkxpc3RlbmVySABSG2ZsdXR0ZXJOb3RpZmljYXRpb25MaXN0ZW5lchJIChRmbH'
-    'V0dGVyX292ZXJmbG93X2JhchiXAiABKAsyEy5GbHV0dGVyT3ZlcmZsb3dCYXJIAFISZmx1dHRl'
-    'ck92ZXJmbG93QmFyEjsKD2ZsdXR0ZXJfb3ZlcmxheRiYAiABKAsyDy5GbHV0dGVyT3ZlcmxheU'
-    'gAUg5mbHV0dGVyT3ZlcmxheRI/ChFmbHV0dGVyX3BhZ2VfdmlldxiZAiABKAsyEC5GbHV0dGVy'
-    'UGFnZVZpZXdIAFIPZmx1dHRlclBhZ2VWaWV3El0KG2ZsdXR0ZXJfcGVyZm9ybWFuY2Vfb3Zlcm'
-    'xheRiaAiABKAsyGi5GbHV0dGVyUGVyZm9ybWFuY2VPdmVybGF5SABSGWZsdXR0ZXJQZXJmb3Jt'
-    'YW5jZU92ZXJsYXkSjQEKLWZsdXR0ZXJfcGVyZm9ybWFuY2Vfb3ZlcmxheV9uYW1lZF9hbGxfZW'
-    '5hYmxlZBibAiABKAsyKS5GbHV0dGVyUGVyZm9ybWFuY2VPdmVybGF5TmFtZWRBbGxFbmFibGVk'
-    'SABSKGZsdXR0ZXJQZXJmb3JtYW5jZU92ZXJsYXlOYW1lZEFsbEVuYWJsZWQSRwoTZmx1dHRlcl'
-    '9wbGFjZWhvbGRlchicAiABKAsyEy5GbHV0dGVyUGxhY2Vob2xkZXJIAFISZmx1dHRlclBsYWNl'
-    'aG9sZGVyEkgKFGZsdXR0ZXJfYW5kcm9pZF92aWV3GJ0CIAEoCzITLkZsdXR0ZXJBbmRyb2lkVm'
-    'lld0gAUhJmbHV0dGVyQW5kcm9pZFZpZXcSVQoZZmx1dHRlcl9odG1sX2VsZW1lbnRfdmlldxie'
-    'AiABKAsyFy5GbHV0dGVySHRtbEVsZW1lbnRWaWV3SABSFmZsdXR0ZXJIdG1sRWxlbWVudFZpZX'
-    'cSQwoTZmx1dHRlcl91aV9raXRfdmlldxifAiABKAsyES5GbHV0dGVyVWlLaXRWaWV3SABSEGZs'
-    'dXR0ZXJVaUtpdFZpZXcSigEKLGZsdXR0ZXJfcHJpbWFyeV9zY3JvbGxfY29udHJvbGxlcl9uYW'
-    '1lZF9ub25lGKACIAEoCzIoLkZsdXR0ZXJQcmltYXJ5U2Nyb2xsQ29udHJvbGxlck5hbWVkTm9u'
-    'ZUgAUidmbHV0dGVyUHJpbWFyeVNjcm9sbENvbnRyb2xsZXJOYW1lZE5vbmUSkwEKL2ZsdXR0ZX'
-    'JfcmVvcmRlcmFibGVfZGVsYXllZF9kcmFnX3N0YXJ0X2xpc3RlbmVyGKECIAEoCzIrLkZsdXR0'
-    'ZXJSZW9yZGVyYWJsZURlbGF5ZWREcmFnU3RhcnRMaXN0ZW5lckgAUipmbHV0dGVyUmVvcmRlcm'
-    'FibGVEZWxheWVkRHJhZ1N0YXJ0TGlzdGVuZXISfQonZmx1dHRlcl9yZW9yZGVyYWJsZV9kcmFn'
-    'X3N0YXJ0X2xpc3RlbmVyGKICIAEoCzIkLkZsdXR0ZXJSZW9yZGVyYWJsZURyYWdTdGFydExpc3'
-    'RlbmVySABSI2ZsdXR0ZXJSZW9yZGVyYWJsZURyYWdTdGFydExpc3RlbmVyElcKGWZsdXR0ZXJf'
-    'cmVzdG9yYXRpb25fc2NvcGUYowIgASgLMhguRmx1dHRlclJlc3RvcmF0aW9uU2NvcGVIAFIXZm'
-    'x1dHRlclJlc3RvcmF0aW9uU2NvcGUSZAoeZmx1dHRlcl9yb290X3Jlc3RvcmF0aW9uX3Njb3Bl'
-    'GKQCIAEoCzIcLkZsdXR0ZXJSb290UmVzdG9yYXRpb25TY29wZUgAUhtmbHV0dGVyUm9vdFJlc3'
-    'RvcmF0aW9uU2NvcGUScwojZmx1dHRlcl91bm1hbmFnZWRfcmVzdG9yYXRpb25fc2NvcGUYpQIg'
-    'ASgLMiEuRmx1dHRlclVubWFuYWdlZFJlc3RvcmF0aW9uU2NvcGVIAFIgZmx1dHRlclVubWFuYW'
-    'dlZFJlc3RvcmF0aW9uU2NvcGUSPwoRZmx1dHRlcl9zYWZlX2FyZWEYpgIgASgLMhAuRmx1dHRl'
-    'clNhZmVBcmVhSABSD2ZsdXR0ZXJTYWZlQXJlYRJSChhmbHV0dGVyX3NsaXZlcl9zYWZlX2FyZW'
-    'EYpwIgASgLMhYuRmx1dHRlclNsaXZlclNhZmVBcmVhSABSFWZsdXR0ZXJTbGl2ZXJTYWZlQXJl'
-    'YRJ2CiRmbHV0dGVyX3Njcm9sbF9ub3RpZmljYXRpb25fb2JzZXJ2ZXIYqAIgASgLMiIuRmx1dH'
-    'RlclNjcm9sbE5vdGlmaWNhdGlvbk9ic2VydmVySABSIWZsdXR0ZXJTY3JvbGxOb3RpZmljYXRp'
-    'b25PYnNlcnZlchJYChpmbHV0dGVyX2N1c3RvbV9zY3JvbGxfdmlldxipAiABKAsyGC5GbHV0dG'
-    'VyQ3VzdG9tU2Nyb2xsVmlld0gAUhdmbHV0dGVyQ3VzdG9tU2Nyb2xsVmlldxJfCh1mbHV0dGVy'
-    'X2dyaWRfdmlld19uYW1lZF9jb3VudBiqAiABKAsyGi5GbHV0dGVyR3JpZFZpZXdOYW1lZENvdW'
-    '50SABSGWZsdXR0ZXJHcmlkVmlld05hbWVkQ291bnQSYgoeZmx1dHRlcl9ncmlkX3ZpZXdfbmFt'
-    'ZWRfZXh0ZW50GKsCIAEoCzIbLkZsdXR0ZXJHcmlkVmlld05hbWVkRXh0ZW50SABSGmZsdXR0ZX'
-    'JHcmlkVmlld05hbWVkRXh0ZW50Ej8KEWZsdXR0ZXJfbGlzdF92aWV3GKwCIAEoCzIQLkZsdXR0'
-    'ZXJMaXN0Vmlld0gAUg9mbHV0dGVyTGlzdFZpZXcSSwoVZmx1dHRlcl9yYXdfc2Nyb2xsYmFyGK'
-    '0CIAEoCzIULkZsdXR0ZXJSYXdTY3JvbGxiYXJIAFITZmx1dHRlclJhd1Njcm9sbGJhchKGAQoq'
-    'Zmx1dHRlcl9zZWxlY3Rpb25fY29udGFpbmVyX25hbWVkX2Rpc2FibGVkGK4CIAEoCzInLkZsdX'
-    'R0ZXJTZWxlY3Rpb25Db250YWluZXJOYW1lZERpc2FibGVkSABSJmZsdXR0ZXJTZWxlY3Rpb25D'
-    'b250YWluZXJOYW1lZERpc2FibGVkEloKGmZsdXR0ZXJfc2VtYW50aWNzX2RlYnVnZ2VyGK8CIA'
-    'EoCzIZLkZsdXR0ZXJTZW1hbnRpY3NEZWJ1Z2dlckgAUhhmbHV0dGVyU2VtYW50aWNzRGVidWdn'
-    'ZXISTwoXZmx1dHRlcl9zaGFyZWRfYXBwX2RhdGEYsAIgASgLMhUuRmx1dHRlclNoYXJlZEFwcE'
-    'RhdGFIAFIUZmx1dHRlclNoYXJlZEFwcERhdGESWgoaZmx1dHRlcl9zaG9ydGN1dF9yZWdpc3Ry'
-    'YXIYsQIgASgLMhkuRmx1dHRlclNob3J0Y3V0UmVnaXN0cmFySABSGGZsdXR0ZXJTaG9ydGN1dF'
-    'JlZ2lzdHJhchJoCiBmbHV0dGVyX3NpbmdsZV9jaGlsZF9zY3JvbGxfdmlldxiyAiABKAsyHS5G'
-    'bHV0dGVyU2luZ2xlQ2hpbGRTY3JvbGxWaWV3SABSHGZsdXR0ZXJTaW5nbGVDaGlsZFNjcm9sbF'
-    'ZpZXcSdAokZmx1dHRlcl9zaXplX2NoYW5nZWRfbGF5b3V0X25vdGlmaWVyGLMCIAEoCzIhLkZs'
-    'dXR0ZXJTaXplQ2hhbmdlZExheW91dE5vdGlmaWVySABSIGZsdXR0ZXJTaXplQ2hhbmdlZExheW'
-    '91dE5vdGlmaWVyEkIKEmZsdXR0ZXJfa2VlcF9hbGl2ZRi0AiABKAsyES5GbHV0dGVyS2VlcEFs'
-    'aXZlSABSEGZsdXR0ZXJLZWVwQWxpdmUSdwolZmx1dHRlcl9zbGl2ZXJfY29uc3RyYWluZWRfY3'
-    'Jvc3NfYXhpcxi1AiABKAsyIi5GbHV0dGVyU2xpdmVyQ29uc3RyYWluZWRDcm9zc0F4aXNIAFIh'
-    'Zmx1dHRlclNsaXZlckNvbnN0cmFpbmVkQ3Jvc3NBeGlzEm4KImZsdXR0ZXJfc2xpdmVyX2Nyb3'
-    'NzX2F4aXNfZXhwYW5kZWQYtgIgASgLMh8uRmx1dHRlclNsaXZlckNyb3NzQXhpc0V4cGFuZGVk'
-    'SABSHmZsdXR0ZXJTbGl2ZXJDcm9zc0F4aXNFeHBhbmRlZBJlCh9mbHV0dGVyX3NsaXZlcl9jcm'
-    '9zc19heGlzX2dyb3VwGLcCIAEoCzIcLkZsdXR0ZXJTbGl2ZXJDcm9zc0F4aXNHcm91cEgAUhtm'
-    'bHV0dGVyU2xpdmVyQ3Jvc3NBeGlzR3JvdXAShQEKK2ZsdXR0ZXJfc2xpdmVyX2ZpeGVkX2V4dG'
-    'VudF9saXN0X25hbWVkX2xpc3QYuAIgASgLMiYuRmx1dHRlclNsaXZlckZpeGVkRXh0ZW50TGlz'
-    'dE5hbWVkTGlzdEgAUiVmbHV0dGVyU2xpdmVyRml4ZWRFeHRlbnRMaXN0TmFtZWRMaXN0EmUKH2'
-    'ZsdXR0ZXJfc2xpdmVyX2dyaWRfbmFtZWRfY291bnQYuQIgASgLMhwuRmx1dHRlclNsaXZlckdy'
-    'aWROYW1lZENvdW50SABSG2ZsdXR0ZXJTbGl2ZXJHcmlkTmFtZWRDb3VudBJoCiBmbHV0dGVyX3'
-    'NsaXZlcl9ncmlkX25hbWVkX2V4dGVudBi6AiABKAsyHS5GbHV0dGVyU2xpdmVyR3JpZE5hbWVk'
-    'RXh0ZW50SABSHGZsdXR0ZXJTbGl2ZXJHcmlkTmFtZWRFeHRlbnQSYQodZmx1dHRlcl9zbGl2ZX'
-    'JfaWdub3JlX3BvaW50ZXIYuwIgASgLMhsuRmx1dHRlclNsaXZlcklnbm9yZVBvaW50ZXJIAFIa'
-    'Zmx1dHRlclNsaXZlcklnbm9yZVBvaW50ZXISYgoeZmx1dHRlcl9zbGl2ZXJfbGlzdF9uYW1lZF'
-    '9saXN0GLwCIAEoCzIbLkZsdXR0ZXJTbGl2ZXJMaXN0TmFtZWRMaXN0SABSGmZsdXR0ZXJTbGl2'
-    'ZXJMaXN0TmFtZWRMaXN0EmIKHmZsdXR0ZXJfc2xpdmVyX21haW5fYXhpc19ncm91cBi9AiABKA'
-    'syGy5GbHV0dGVyU2xpdmVyTWFpbkF4aXNHcm91cEgAUhpmbHV0dGVyU2xpdmVyTWFpbkF4aXNH'
-    'cm91cBJRChdmbHV0dGVyX3NsaXZlcl9vZmZzdGFnZRi+AiABKAsyFi5GbHV0dGVyU2xpdmVyT2'
-    'Zmc3RhZ2VIAFIVZmx1dHRlclNsaXZlck9mZnN0YWdlEk4KFmZsdXR0ZXJfc2xpdmVyX29wYWNp'
-    'dHkYvwIgASgLMhUuRmx1dHRlclNsaXZlck9wYWNpdHlIAFIUZmx1dHRlclNsaXZlck9wYWNpdH'
-    'kSYQodZmx1dHRlcl9zbGl2ZXJfZmlsbF9yZW1haW5pbmcYwAIgASgLMhsuRmx1dHRlclNsaXZl'
-    'ckZpbGxSZW1haW5pbmdIAFIaZmx1dHRlclNsaXZlckZpbGxSZW1haW5pbmcSkQEKL2ZsdXR0ZX'
-    'Jfc2xpdmVyX3Byb3RvdHlwZV9leHRlbnRfbGlzdF9uYW1lZF9saXN0GMECIAEoCzIqLkZsdXR0'
-    'ZXJTbGl2ZXJQcm90b3R5cGVFeHRlbnRMaXN0TmFtZWRMaXN0SABSKWZsdXR0ZXJTbGl2ZXJQcm'
-    '90b3R5cGVFeHRlbnRMaXN0TmFtZWRMaXN0EjgKDmZsdXR0ZXJfc3BhY2VyGMICIAEoCzIOLkZs'
-    'dXR0ZXJTcGFjZXJIAFINZmx1dHRlclNwYWNlchI1Cg1mbHV0dGVyX3RhYmxlGMMCIAEoCzINLk'
-    'ZsdXR0ZXJUYWJsZUgAUgxmbHV0dGVyVGFibGUSQgoSZmx1dHRlcl90YWJsZV9jZWxsGMQCIAEo'
-    'CzIRLkZsdXR0ZXJUYWJsZUNlbGxIAFIQZmx1dHRlclRhYmxlQ2VsbBJCChJmbHV0dGVyX3RhcF'
-    '9yZWdpb24YxQIgASgLMhEuRmx1dHRlclRhcFJlZ2lvbkgAUhBmbHV0dGVyVGFwUmVnaW9uElgK'
-    'GmZsdXR0ZXJfdGFwX3JlZ2lvbl9zdXJmYWNlGMYCIAEoCzIYLkZsdXR0ZXJUYXBSZWdpb25TdX'
-    'JmYWNlSABSF2ZsdXR0ZXJUYXBSZWdpb25TdXJmYWNlEl8KHWZsdXR0ZXJfdGV4dF9maWVsZF90'
-    'YXBfcmVnaW9uGMcCIAEoCzIaLkZsdXR0ZXJUZXh0RmllbGRUYXBSZWdpb25IAFIZZmx1dHRlcl'
-    'RleHRGaWVsZFRhcFJlZ2lvbhKBAQopZmx1dHRlcl9kZWZhdWx0X3RleHRfc3R5bGVfbmFtZWRf'
-    'ZmFsbGJhY2sYyAIgASgLMiUuRmx1dHRlckRlZmF1bHRUZXh0U3R5bGVOYW1lZEZhbGxiYWNrSA'
-    'BSJGZsdXR0ZXJEZWZhdWx0VGV4dFN0eWxlTmFtZWRGYWxsYmFjaxIyCgxmbHV0dGVyX3RleHQY'
-    'yQIgASgLMgwuRmx1dHRlclRleHRIAFILZmx1dHRlclRleHQSfQonZmx1dHRlcl90ZXh0X3NlbG'
-    'VjdGlvbl9nZXN0dXJlX2RldGVjdG9yGMoCIAEoCzIkLkZsdXR0ZXJUZXh0U2VsZWN0aW9uR2Vz'
-    'dHVyZURldGVjdG9ySABSI2ZsdXR0ZXJUZXh0U2VsZWN0aW9uR2VzdHVyZURldGVjdG9yEjsKD2'
-    'ZsdXR0ZXJfdGV4dHVyZRjLAiABKAsyDy5GbHV0dGVyVGV4dHVyZUgAUg5mbHV0dGVyVGV4dHVy'
-    'ZRJFChNmbHV0dGVyX3RpY2tlcl9tb2RlGMwCIAEoCzISLkZsdXR0ZXJUaWNrZXJNb2RlSABSEW'
-    'ZsdXR0ZXJUaWNrZXJNb2RlElcKGWZsdXR0ZXJfc2xpdmVyX3Zpc2liaWxpdHkYzQIgASgLMhgu'
-    'Rmx1dHRlclNsaXZlclZpc2liaWxpdHlIAFIXZmx1dHRlclNsaXZlclZpc2liaWxpdHkSgAEKKG'
-    'ZsdXR0ZXJfc2xpdmVyX3Zpc2liaWxpdHlfbmFtZWRfbWFpbnRhaW4YzgIgASgLMiUuRmx1dHRl'
-    'clNsaXZlclZpc2liaWxpdHlOYW1lZE1haW50YWluSABSJGZsdXR0ZXJTbGl2ZXJWaXNpYmlsaX'
-    'R5TmFtZWRNYWludGFpbhJEChJmbHV0dGVyX3Zpc2liaWxpdHkYzwIgASgLMhIuRmx1dHRlclZp'
-    'c2liaWxpdHlIAFIRZmx1dHRlclZpc2liaWxpdHkSbQohZmx1dHRlcl92aXNpYmlsaXR5X25hbW'
-    'VkX21haW50YWluGNACIAEoCzIfLkZsdXR0ZXJWaXNpYmlsaXR5TmFtZWRNYWludGFpbkgAUh5m'
-    'bHV0dGVyVmlzaWJpbGl0eU5hbWVkTWFpbnRhaW4SVAoYZmx1dHRlcl93aWRnZXRfaW5zcGVjdG'
-    '9yGNECIAEoCzIXLkZsdXR0ZXJXaWRnZXRJbnNwZWN0b3JIAFIWZmx1dHRlcldpZGdldEluc3Bl'
-    'Y3RvchJMChZmbHV0dGVyX3dpbGxfcG9wX3Njb3BlGNICIAEoCzIULkZsdXR0ZXJXaWxsUG9wU2'
-    'NvcGVIAFITZmx1dHRlcldpbGxQb3BTY29wZRJMChZmbHV0dGVyX3Byb2plY3RfbXlfYXBwGNMC'
-    'IAEoCzIULkZsdXR0ZXJQcm9qZWN0TXlBcHBIAFITZmx1dHRlclByb2plY3RNeUFwcBJcChxmbH'
-    'V0dGVyX3Byb2plY3RfbXlfaG9tZV9wYWdlGNQCIAEoCzIZLkZsdXR0ZXJQcm9qZWN0TXlIb21l'
-    'UGFnZUgAUhhmbHV0dGVyUHJvamVjdE15SG9tZVBhZ2VCCAoGcmVzdWx0');
+    'VjdG9yEnQKJG1hdGVyaWFsX3RhYl9wYWdlX3NlbGVjdG9yX2luZGljYXRvchiqASABKAsyIS5N'
+    'YXRlcmlhbFRhYlBhZ2VTZWxlY3RvckluZGljYXRvckgAUiBtYXRlcmlhbFRhYlBhZ2VTZWxlY3'
+    'RvckluZGljYXRvchJIChRtYXRlcmlhbF90ZXh0X2J1dHRvbhirASABKAsyEy5NYXRlcmlhbFRl'
+    'eHRCdXR0b25IAFISbWF0ZXJpYWxUZXh0QnV0dG9uEmUKH21hdGVyaWFsX3RleHRfYnV0dG9uX2'
+    '5hbWVkX2ljb24YrAEgASgLMhwuTWF0ZXJpYWxUZXh0QnV0dG9uTmFtZWRJY29uSABSG21hdGVy'
+    'aWFsVGV4dEJ1dHRvbk5hbWVkSWNvbhJFChNtYXRlcmlhbF90ZXh0X2ZpZWxkGK0BIAEoCzISLk'
+    '1hdGVyaWFsVGV4dEZpZWxkSABSEW1hdGVyaWFsVGV4dEZpZWxkElIKGG1hdGVyaWFsX3RleHRf'
+    'Zm9ybV9maWVsZBiuASABKAsyFi5NYXRlcmlhbFRleHRGb3JtRmllbGRIAFIVbWF0ZXJpYWxUZX'
+    'h0Rm9ybUZpZWxkElEKF21hdGVyaWFsX3RvZ2dsZV9idXR0b25zGK8BIAEoCzIWLk1hdGVyaWFs'
+    'VG9nZ2xlQnV0dG9uc0gAUhVtYXRlcmlhbFRvZ2dsZUJ1dHRvbnMSPgoQbWF0ZXJpYWxfdG9vbH'
+    'RpcBiwASABKAsyEC5NYXRlcmlhbFRvb2x0aXBIAFIPbWF0ZXJpYWxUb29sdGlwEl0KG21hdGVy'
+    'aWFsX3Rvb2x0aXBfdmlzaWJpbGl0eRixASABKAsyGi5NYXRlcmlhbFRvb2x0aXBWaXNpYmlsaX'
+    'R5SABSGW1hdGVyaWFsVG9vbHRpcFZpc2liaWxpdHkSdAokbWF0ZXJpYWxfdXNlcl9hY2NvdW50'
+    'c19kcmF3ZXJfaGVhZGVyGLIBIAEoCzIhLk1hdGVyaWFsVXNlckFjY291bnRzRHJhd2VySGVhZG'
+    'VySABSIG1hdGVyaWFsVXNlckFjY291bnRzRHJhd2VySGVhZGVyEpMBCi9mbHV0dGVyX3BsYXRm'
+    'b3JtX3NlbGVjdGFibGVfcmVnaW9uX2NvbnRleHRfbWVudRizASABKAsyKy5GbHV0dGVyUGxhdG'
+    'Zvcm1TZWxlY3RhYmxlUmVnaW9uQ29udGV4dE1lbnVIAFIqZmx1dHRlclBsYXRmb3JtU2VsZWN0'
+    'YWJsZVJlZ2lvbkNvbnRleHRNZW51Em0KIWZsdXR0ZXJfZm9jdXNhYmxlX2FjdGlvbl9kZXRlY3'
+    'Rvchi0ASABKAsyHy5GbHV0dGVyRm9jdXNhYmxlQWN0aW9uRGV0ZWN0b3JIAFIeZmx1dHRlckZv'
+    'Y3VzYWJsZUFjdGlvbkRldGVjdG9yEksKFWZsdXR0ZXJfYW5pbWF0ZWRfc2l6ZRi1ASABKAsyFC'
+    '5GbHV0dGVyQW5pbWF0ZWRTaXplSABSE2ZsdXR0ZXJBbmltYXRlZFNpemUSVwoZZmx1dHRlcl9h'
+    'bmltYXRlZF9zd2l0Y2hlchi2ASABKAsyGC5GbHV0dGVyQW5pbWF0ZWRTd2l0Y2hlckgAUhdmbH'
+    'V0dGVyQW5pbWF0ZWRTd2l0Y2hlchJFChNmbHV0dGVyX3dpZGdldHNfYXBwGLcBIAEoCzISLkZs'
+    'dXR0ZXJXaWRnZXRzQXBwSABSEWZsdXR0ZXJXaWRnZXRzQXBwEmgKIGZsdXR0ZXJfd2lkZ2V0c1'
+    '9hcHBfbmFtZWRfcm91dGVyGLgBIAEoCzIdLkZsdXR0ZXJXaWRnZXRzQXBwTmFtZWRSb3V0ZXJI'
+    'AFIcZmx1dHRlcldpZGdldHNBcHBOYW1lZFJvdXRlchJOChZmbHV0dGVyX2F1dG9maWxsX2dyb3'
+    'VwGLkBIAEoCzIVLkZsdXR0ZXJBdXRvZmlsbEdyb3VwSABSFGZsdXR0ZXJBdXRvZmlsbEdyb3Vw'
+    'El4KHGZsdXR0ZXJfYXV0b21hdGljX2tlZXBfYWxpdmUYugEgASgLMhouRmx1dHRlckF1dG9tYX'
+    'RpY0tlZXBBbGl2ZUgAUhlmbHV0dGVyQXV0b21hdGljS2VlcEFsaXZlElsKG2ZsdXR0ZXJfY2hl'
+    'Y2tlZF9tb2RlX2Jhbm5lchi7ASABKAsyGS5GbHV0dGVyQ2hlY2tlZE1vZGVCYW5uZXJIAFIYZm'
+    'x1dHRlckNoZWNrZWRNb2RlQmFubmVyEk4KFmZsdXR0ZXJfYWJzb3JiX3BvaW50ZXIYvAEgASgL'
+    'MhUuRmx1dHRlckFic29yYlBvaW50ZXJIAFIUZmx1dHRlckFic29yYlBvaW50ZXISNQoNZmx1dH'
+    'Rlcl9hbGlnbhi9ASABKAsyDS5GbHV0dGVyQWxpZ25IAFIMZmx1dHRlckFsaWduEkgKFGZsdXR0'
+    'ZXJfYXNwZWN0X3JhdGlvGL4BIAEoCzITLkZsdXR0ZXJBc3BlY3RSYXRpb0gAUhJmbHV0dGVyQX'
+    'NwZWN0UmF0aW8SUQoXZmx1dHRlcl9ibG9ja19zZW1hbnRpY3MYvwEgASgLMhYuRmx1dHRlckJs'
+    'b2NrU2VtYW50aWNzSABSFWZsdXR0ZXJCbG9ja1NlbWFudGljcxI4Cg5mbHV0dGVyX2NlbnRlch'
+    'jAASABKAsyDi5GbHV0dGVyQ2VudGVySABSDWZsdXR0ZXJDZW50ZXISPwoRZmx1dHRlcl9jbGlw'
+    'X292YWwYwQEgASgLMhAuRmx1dHRlckNsaXBPdmFsSABSD2ZsdXR0ZXJDbGlwT3ZhbBI/ChFmbH'
+    'V0dGVyX2NsaXBfcGF0aBjCASABKAsyEC5GbHV0dGVyQ2xpcFBhdGhIAFIPZmx1dHRlckNsaXBQ'
+    'YXRoEkMKE2ZsdXR0ZXJfY2xpcF9yX3JlY3QYwwEgASgLMhEuRmx1dHRlckNsaXBSUmVjdEgAUh'
+    'BmbHV0dGVyQ2xpcFJSZWN0Ej8KEWZsdXR0ZXJfY2xpcF9yZWN0GMQBIAEoCzIQLkZsdXR0ZXJD'
+    'bGlwUmVjdEgAUg9mbHV0dGVyQ2xpcFJlY3QSRQoTZmx1dHRlcl9jb2xvcmVkX2JveBjFASABKA'
+    'syEi5GbHV0dGVyQ29sb3JlZEJveEgAUhFmbHV0dGVyQ29sb3JlZEJveBI4Cg5mbHV0dGVyX2Nv'
+    'bHVtbhjGASABKAsyDi5GbHV0dGVyQ29sdW1uSABSDWZsdXR0ZXJDb2x1bW4SSAoUZmx1dHRlcl'
+    '9jdXN0b21fcGFpbnQYxwEgASgLMhMuRmx1dHRlckN1c3RvbVBhaW50SABSEmZsdXR0ZXJDdXN0'
+    'b21QYWludBJXChlmbHV0dGVyX2V4Y2x1ZGVfc2VtYW50aWNzGMgBIAEoCzIYLkZsdXR0ZXJFeG'
+    'NsdWRlU2VtYW50aWNzSABSF2ZsdXR0ZXJFeGNsdWRlU2VtYW50aWNzEj4KEGZsdXR0ZXJfZXhw'
+    'YW5kZWQYyQEgASgLMhAuRmx1dHRlckV4cGFuZGVkSABSD2ZsdXR0ZXJFeHBhbmRlZBJCChJmbH'
+    'V0dGVyX2ZpdHRlZF9ib3gYygEgASgLMhEuRmx1dHRlckZpdHRlZEJveEgAUhBmbHV0dGVyRml0'
+    'dGVkQm94Ej4KEGZsdXR0ZXJfZmxleGlibGUYywEgASgLMhAuRmx1dHRlckZsZXhpYmxlSABSD2'
+    'ZsdXR0ZXJGbGV4aWJsZRJkCh5mbHV0dGVyX2ZyYWN0aW9uYWxseV9zaXplZF9ib3gYzAEgASgL'
+    'MhwuRmx1dHRlckZyYWN0aW9uYWxseVNpemVkQm94SABSG2ZsdXR0ZXJGcmFjdGlvbmFsbHlTaX'
+    'plZEJveBJOChZmbHV0dGVyX2lnbm9yZV9wb2ludGVyGM0BIAEoCzIVLkZsdXR0ZXJJZ25vcmVQ'
+    'b2ludGVySABSFGZsdXR0ZXJJZ25vcmVQb2ludGVyElcKGWZsdXR0ZXJfaW5kZXhlZF9zZW1hbn'
+    'RpY3MYzgEgASgLMhguRmx1dHRlckluZGV4ZWRTZW1hbnRpY3NIAFIXZmx1dHRlckluZGV4ZWRT'
+    'ZW1hbnRpY3MSSwoVZmx1dHRlcl9pbmRleGVkX3N0YWNrGM8BIAEoCzIULkZsdXR0ZXJJbmRleG'
+    'VkU3RhY2tIAFITZmx1dHRlckluZGV4ZWRTdGFjaxJUChhmbHV0dGVyX2ludHJpbnNpY19oZWln'
+    'aHQY0AEgASgLMhcuRmx1dHRlckludHJpbnNpY0hlaWdodEgAUhZmbHV0dGVySW50cmluc2ljSG'
+    'VpZ2h0ElEKF2ZsdXR0ZXJfaW50cmluc2ljX3dpZHRoGNEBIAEoCzIWLkZsdXR0ZXJJbnRyaW5z'
+    'aWNXaWR0aEgAUhVmbHV0dGVySW50cmluc2ljV2lkdGgSSwoVZmx1dHRlcl9rZXllZF9zdWJ0cm'
+    'VlGNIBIAEoCzIULkZsdXR0ZXJLZXllZFN1YnRyZWVIAFITZmx1dHRlcktleWVkU3VidHJlZRJo'
+    'CiBmbHV0dGVyX2tleWVkX3N1YnRyZWVfbmFtZWRfd3JhcBjTASABKAsyHS5GbHV0dGVyS2V5ZW'
+    'RTdWJ0cmVlTmFtZWRXcmFwSABSHGZsdXR0ZXJLZXllZFN1YnRyZWVOYW1lZFdyYXASRQoTZmx1'
+    'dHRlcl9saW1pdGVkX2JveBjUASABKAsyEi5GbHV0dGVyTGltaXRlZEJveEgAUhFmbHV0dGVyTG'
+    'ltaXRlZEJveBI/ChFmbHV0dGVyX2xpc3RfYm9keRjVASABKAsyEC5GbHV0dGVyTGlzdEJvZHlI'
+    'AFIPZmx1dHRlckxpc3RCb2R5Ej4KEGZsdXR0ZXJfbGlzdGVuZXIY1gEgASgLMhAuRmx1dHRlck'
+    'xpc3RlbmVySABSD2ZsdXR0ZXJMaXN0ZW5lchJRChdmbHV0dGVyX21lcmdlX3NlbWFudGljcxjX'
+    'ASABKAsyFi5GbHV0dGVyTWVyZ2VTZW1hbnRpY3NIAFIVZmx1dHRlck1lcmdlU2VtYW50aWNzEj'
+    '8KEWZsdXR0ZXJfbWV0YV9kYXRhGNgBIAEoCzIQLkZsdXR0ZXJNZXRhRGF0YUgAUg9mbHV0dGVy'
+    'TWV0YURhdGESSAoUZmx1dHRlcl9tb3VzZV9yZWdpb24Y2QEgASgLMhMuRmx1dHRlck1vdXNlUm'
+    'VnaW9uSABSEmZsdXR0ZXJNb3VzZVJlZ2lvbhI+ChBmbHV0dGVyX29mZnN0YWdlGNoBIAEoCzIQ'
+    'LkZsdXR0ZXJPZmZzdGFnZUgAUg9mbHV0dGVyT2Zmc3RhZ2USOwoPZmx1dHRlcl9vcGFjaXR5GN'
+    'sBIAEoCzIPLkZsdXR0ZXJPcGFjaXR5SABSDmZsdXR0ZXJPcGFjaXR5EkgKFGZsdXR0ZXJfb3Zl'
+    'cmZsb3dfYm94GNwBIAEoCzITLkZsdXR0ZXJPdmVyZmxvd0JveEgAUhJmbHV0dGVyT3ZlcmZsb3'
+    'dCb3gSTgoWZmx1dHRlcl9waHlzaWNhbF9tb2RlbBjdASABKAsyFS5GbHV0dGVyUGh5c2ljYWxN'
+    'b2RlbEgAUhRmbHV0dGVyUGh5c2ljYWxNb2RlbBJEChJmbHV0dGVyX3Bvc2l0aW9uZWQY3gEgAS'
+    'gLMhIuRmx1dHRlclBvc2l0aW9uZWRIAFIRZmx1dHRlclBvc2l0aW9uZWQSYQodZmx1dHRlcl9w'
+    'b3NpdGlvbmVkX25hbWVkX2ZpbGwY3wEgASgLMhsuRmx1dHRlclBvc2l0aW9uZWROYW1lZEZpbG'
+    'xIAFIaZmx1dHRlclBvc2l0aW9uZWROYW1lZEZpbGwSZgoeZmx1dHRlcl9wb3NpdGlvbmVkX2Rp'
+    'cmVjdGlvbmFsGOABIAEoCzIdLkZsdXR0ZXJQb3NpdGlvbmVkRGlyZWN0aW9uYWxIAFIcZmx1dH'
+    'RlclBvc2l0aW9uZWREaXJlY3Rpb25hbBI/ChFmbHV0dGVyX3Jhd19pbWFnZRjhASABKAsyEC5G'
+    'bHV0dGVyUmF3SW1hZ2VIAFIPZmx1dHRlclJhd0ltYWdlElQKGGZsdXR0ZXJfcmVwYWludF9ib3'
+    'VuZGFyeRjiASABKAsyFy5GbHV0dGVyUmVwYWludEJvdW5kYXJ5SABSFmZsdXR0ZXJSZXBhaW50'
+    'Qm91bmRhcnkScQojZmx1dHRlcl9yZXBhaW50X2JvdW5kYXJ5X25hbWVkX3dyYXAY4wEgASgLMi'
+    'AuRmx1dHRlclJlcGFpbnRCb3VuZGFyeU5hbWVkV3JhcEgAUh9mbHV0dGVyUmVwYWludEJvdW5k'
+    'YXJ5TmFtZWRXcmFwEkUKE2ZsdXR0ZXJfcm90YXRlZF9ib3gY5AEgASgLMhIuRmx1dHRlclJvdG'
+    'F0ZWRCb3hIAFIRZmx1dHRlclJvdGF0ZWRCb3gSLwoLZmx1dHRlcl9yb3cY5QEgASgLMgsuRmx1'
+    'dHRlclJvd0gAUgpmbHV0dGVyUm93EkEKEWZsdXR0ZXJfc2VtYW50aWNzGOYBIAEoCzIRLkZsdX'
+    'R0ZXJTZW1hbnRpY3NIAFIQZmx1dHRlclNlbWFudGljcxI/ChFmbHV0dGVyX3NpemVkX2JveBjn'
+    'ASABKAsyEC5GbHV0dGVyU2l6ZWRCb3hIAFIPZmx1dHRlclNpemVkQm94EmIKHmZsdXR0ZXJfc2'
+    'l6ZWRfYm94X25hbWVkX2V4cGFuZBjoASABKAsyGy5GbHV0dGVyU2l6ZWRCb3hOYW1lZEV4cGFu'
+    'ZEgAUhpmbHV0dGVyU2l6ZWRCb3hOYW1lZEV4cGFuZBJiCh5mbHV0dGVyX3NpemVkX2JveF9uYW'
+    '1lZF9zaHJpbmsY6QEgASgLMhsuRmx1dHRlclNpemVkQm94TmFtZWRTaHJpbmtIAFIaZmx1dHRl'
+    'clNpemVkQm94TmFtZWRTaHJpbmsSaQohZmx1dHRlcl9zaXplZF9ib3hfbmFtZWRfZnJvbV9zaX'
+    'plGOoBIAEoCzIdLkZsdXR0ZXJTaXplZEJveE5hbWVkRnJvbVNpemVIAFIcZmx1dHRlclNpemVk'
+    'Qm94TmFtZWRGcm9tU2l6ZRJiCh5mbHV0dGVyX3NpemVkX2JveF9uYW1lZF9zcXVhcmUY6wEgAS'
+    'gLMhsuRmx1dHRlclNpemVkQm94TmFtZWRTcXVhcmVIAFIaZmx1dHRlclNpemVkQm94TmFtZWRT'
+    'cXVhcmUSXwodZmx1dHRlcl9zbGl2ZXJfdG9fYm94X2FkYXB0ZXIY7AEgASgLMhouRmx1dHRlcl'
+    'NsaXZlclRvQm94QWRhcHRlckgAUhlmbHV0dGVyU2xpdmVyVG9Cb3hBZGFwdGVyEjUKDWZsdXR0'
+    'ZXJfc3RhY2sY7QEgASgLMg0uRmx1dHRlclN0YWNrSABSDGZsdXR0ZXJTdGFjaxJkCh5mbHV0dG'
+    'VyX3RyYW5zZm9ybV9uYW1lZF9yb3RhdGUY7gEgASgLMhwuRmx1dHRlclRyYW5zZm9ybU5hbWVk'
+    'Um90YXRlSABSG2ZsdXR0ZXJUcmFuc2Zvcm1OYW1lZFJvdGF0ZRJhCh1mbHV0dGVyX3RyYW5zZm'
+    '9ybV9uYW1lZF9zY2FsZRjvASABKAsyGy5GbHV0dGVyVHJhbnNmb3JtTmFtZWRTY2FsZUgAUhpm'
+    'bHV0dGVyVHJhbnNmb3JtTmFtZWRTY2FsZRJeChxmbHV0dGVyX3RyYW5zZm9ybV9uYW1lZF9mbG'
+    'lwGPABIAEoCzIaLkZsdXR0ZXJUcmFuc2Zvcm1OYW1lZEZsaXBIAFIZZmx1dHRlclRyYW5zZm9y'
+    'bU5hbWVkRmxpcBJXChlmbHV0dGVyX3VuY29uc3RyYWluZWRfYm94GPEBIAEoCzIYLkZsdXR0ZX'
+    'JVbmNvbnN0cmFpbmVkQm94SABSF2ZsdXR0ZXJVbmNvbnN0cmFpbmVkQm94EjIKDGZsdXR0ZXJf'
+    'd3JhcBjyASABKAsyDC5GbHV0dGVyV3JhcEgAUgtmbHV0dGVyV3JhcBJBChFmbHV0dGVyX2Nvbn'
+    'RhaW5lchjzASABKAsyES5GbHV0dGVyQ29udGFpbmVySABSEGZsdXR0ZXJDb250YWluZXISZwof'
+    'Zmx1dHRlcl9kZWZhdWx0X3NlbGVjdGlvbl9zdHlsZRj0ASABKAsyHS5GbHV0dGVyRGVmYXVsdF'
+    'NlbGVjdGlvblN0eWxlSABSHGZsdXR0ZXJEZWZhdWx0U2VsZWN0aW9uU3R5bGUSkAEKLmZsdXR0'
+    'ZXJfZGVmYXVsdF9zZWxlY3Rpb25fc3R5bGVfbmFtZWRfZmFsbGJhY2sY9QEgASgLMiouRmx1dH'
+    'RlckRlZmF1bHRTZWxlY3Rpb25TdHlsZU5hbWVkRmFsbGJhY2tIAFIpZmx1dHRlckRlZmF1bHRT'
+    'ZWxlY3Rpb25TdHlsZU5hbWVkRmFsbGJhY2sSegomZmx1dHRlcl9kZWZhdWx0X3RleHRfZWRpdG'
+    'luZ19zaG9ydGN1dHMY9gEgASgLMiMuRmx1dHRlckRlZmF1bHRUZXh0RWRpdGluZ1Nob3J0Y3V0'
+    'c0gAUiJmbHV0dGVyRGVmYXVsdFRleHRFZGl0aW5nU2hvcnRjdXRzEkcKE2ZsdXR0ZXJfZGlzbW'
+    'lzc2libGUY9wEgASgLMhMuRmx1dHRlckRpc21pc3NpYmxlSABSEmZsdXR0ZXJEaXNtaXNzaWJs'
+    'ZRJuCiJmbHV0dGVyX2Rpc3BsYXlfZmVhdHVyZV9zdWJfc2NyZWVuGPgBIAEoCzIfLkZsdXR0ZX'
+    'JEaXNwbGF5RmVhdHVyZVN1YlNjcmVlbkgAUh5mbHV0dGVyRGlzcGxheUZlYXR1cmVTdWJTY3Jl'
+    'ZW4SQQoRZmx1dHRlcl9kcmFnZ2FibGUY+QEgASgLMhEuRmx1dHRlckRyYWdnYWJsZUgAUhBmbH'
+    'V0dGVyRHJhZ2dhYmxlEl4KHGZsdXR0ZXJfbG9uZ19wcmVzc19kcmFnZ2FibGUY+gEgASgLMhou'
+    'Rmx1dHRlckxvbmdQcmVzc0RyYWdnYWJsZUgAUhlmbHV0dGVyTG9uZ1ByZXNzRHJhZ2dhYmxlEn'
+    'kKJWZsdXR0ZXJfZHJhZ2dhYmxlX3Njcm9sbGFibGVfYWN0dWF0b3IY+wEgASgLMiMuRmx1dHRl'
+    'ckRyYWdnYWJsZVNjcm9sbGFibGVBY3R1YXRvckgAUiJmbHV0dGVyRHJhZ2dhYmxlU2Nyb2xsYW'
+    'JsZUFjdHVhdG9yEn8KKWZsdXR0ZXJfZmFkZV9pbl9pbWFnZV9uYW1lZF9hc3NldF9uZXR3b3Jr'
+    'GPwBIAEoCzIkLkZsdXR0ZXJGYWRlSW5JbWFnZU5hbWVkQXNzZXROZXR3b3JrSABSI2ZsdXR0ZX'
+    'JGYWRlSW5JbWFnZU5hbWVkQXNzZXROZXR3b3JrEksKFWZsdXR0ZXJfZXhjbHVkZV9mb2N1cxj9'
+    'ASABKAsyFC5GbHV0dGVyRXhjbHVkZUZvY3VzSABSE2ZsdXR0ZXJFeGNsdWRlRm9jdXMSNQoNZm'
+    'x1dHRlcl9mb2N1cxj+ASABKAsyDS5GbHV0dGVyRm9jdXNIAFIMZmx1dHRlckZvY3VzEkUKE2Zs'
+    'dXR0ZXJfZm9jdXNfc2NvcGUY/wEgASgLMhIuRmx1dHRlckZvY3VzU2NvcGVIAFIRZmx1dHRlck'
+    'ZvY3VzU2NvcGUSZwofZmx1dHRlcl9leGNsdWRlX2ZvY3VzX3RyYXZlcnNhbBiAAiABKAsyHS5G'
+    'bHV0dGVyRXhjbHVkZUZvY3VzVHJhdmVyc2FsSABSHGZsdXR0ZXJFeGNsdWRlRm9jdXNUcmF2ZX'
+    'JzYWwSYQodZmx1dHRlcl9mb2N1c190cmF2ZXJzYWxfZ3JvdXAYgQIgASgLMhsuRmx1dHRlckZv'
+    'Y3VzVHJhdmVyc2FsR3JvdXBIAFIaZmx1dHRlckZvY3VzVHJhdmVyc2FsR3JvdXASMgoMZmx1dH'
+    'Rlcl9mb3JtGIICIAEoCzIMLkZsdXR0ZXJGb3JtSABSC2ZsdXR0ZXJGb3JtEnsKJ2ZsdXR0ZXJf'
+    'ZXJyb3Jfd2lkZ2V0X25hbWVkX3dpdGhfZGV0YWlscxiDAiABKAsyIy5GbHV0dGVyRXJyb3JXaW'
+    'RnZXROYW1lZFdpdGhEZXRhaWxzSABSImZsdXR0ZXJFcnJvcldpZGdldE5hbWVkV2l0aERldGFp'
+    'bHMSVAoYZmx1dHRlcl9nZXN0dXJlX2RldGVjdG9yGIQCIAEoCzIXLkZsdXR0ZXJHZXN0dXJlRG'
+    'V0ZWN0b3JIAFIWZmx1dHRlckdlc3R1cmVEZXRlY3RvchJeChxmbHV0dGVyX3Jhd19nZXN0dXJl'
+    'X2RldGVjdG9yGIUCIAEoCzIaLkZsdXR0ZXJSYXdHZXN0dXJlRGV0ZWN0b3JIAFIZZmx1dHRlcl'
+    'Jhd0dlc3R1cmVEZXRlY3RvchJCChJmbHV0dGVyX2dyaWRfcGFwZXIYhgIgASgLMhEuRmx1dHRl'
+    'ckdyaWRQYXBlckgAUhBmbHV0dGVyR3JpZFBhcGVyEj8KEWZsdXR0ZXJfaGVyb19tb2RlGIcCIA'
+    'EoCzIQLkZsdXR0ZXJIZXJvTW9kZUgAUg9mbHV0dGVySGVyb01vZGUSMgoMZmx1dHRlcl9pY29u'
+    'GIgCIAEoCzIMLkZsdXR0ZXJJY29uSABSC2ZsdXR0ZXJJY29uElsKG2ZsdXR0ZXJfaW1hZ2Vfbm'
+    'FtZWRfbmV0d29yaxiJAiABKAsyGS5GbHV0dGVySW1hZ2VOYW1lZE5ldHdvcmtIAFIYZmx1dHRl'
+    'ckltYWdlTmFtZWROZXR3b3JrElUKGWZsdXR0ZXJfaW1hZ2VfbmFtZWRfYXNzZXQYigIgASgLMh'
+    'cuRmx1dHRlckltYWdlTmFtZWRBc3NldEgAUhZmbHV0dGVySW1hZ2VOYW1lZEFzc2V0EkIKEmZs'
+    'dXR0ZXJfaW1hZ2VfaWNvbhiLAiABKAsyES5GbHV0dGVySW1hZ2VJY29uSABSEGZsdXR0ZXJJbW'
+    'FnZUljb24SWgoaZmx1dHRlcl9hbmltYXRlZF9jb250YWluZXIYjAIgASgLMhkuRmx1dHRlckFu'
+    'aW1hdGVkQ29udGFpbmVySABSGGZsdXR0ZXJBbmltYXRlZENvbnRhaW5lchJ9CidmbHV0dGVyX2'
+    'FuaW1hdGVkX2ZyYWN0aW9uYWxseV9zaXplZF9ib3gYjQIgASgLMiQuRmx1dHRlckFuaW1hdGVk'
+    'RnJhY3Rpb25hbGx5U2l6ZWRCb3hIAFIjZmx1dHRlckFuaW1hdGVkRnJhY3Rpb25hbGx5U2l6ZW'
+    'RCb3gSVAoYZmx1dHRlcl9hbmltYXRlZF9vcGFjaXR5GI4CIAEoCzIXLkZsdXR0ZXJBbmltYXRl'
+    'ZE9wYWNpdHlIAFIWZmx1dHRlckFuaW1hdGVkT3BhY2l0eRJdChtmbHV0dGVyX2FuaW1hdGVkX3'
+    'Bvc2l0aW9uZWQYjwIgASgLMhouRmx1dHRlckFuaW1hdGVkUG9zaXRpb25lZEgAUhlmbHV0dGVy'
+    'QW5pbWF0ZWRQb3NpdGlvbmVkEn8KJ2ZsdXR0ZXJfYW5pbWF0ZWRfcG9zaXRpb25lZF9kaXJlY3'
+    'Rpb25hbBiQAiABKAsyJS5GbHV0dGVyQW5pbWF0ZWRQb3NpdGlvbmVkRGlyZWN0aW9uYWxIAFIk'
+    'Zmx1dHRlckFuaW1hdGVkUG9zaXRpb25lZERpcmVjdGlvbmFsElcKGWZsdXR0ZXJfYW5pbWF0ZW'
+    'Rfcm90YXRpb24YkQIgASgLMhguRmx1dHRlckFuaW1hdGVkUm90YXRpb25IAFIXZmx1dHRlckFu'
+    'aW1hdGVkUm90YXRpb24STgoWZmx1dHRlcl9hbmltYXRlZF9zY2FsZRiSAiABKAsyFS5GbHV0dG'
+    'VyQW5pbWF0ZWRTY2FsZUgAUhRmbHV0dGVyQW5pbWF0ZWRTY2FsZRJnCh9mbHV0dGVyX3NsaXZl'
+    'cl9hbmltYXRlZF9vcGFjaXR5GJMCIAEoCzIdLkZsdXR0ZXJTbGl2ZXJBbmltYXRlZE9wYWNpdH'
+    'lIAFIcZmx1dHRlclNsaXZlckFuaW1hdGVkT3BhY2l0eRJaChpmbHV0dGVyX2ludGVyYWN0aXZl'
+    'X3ZpZXdlchiUAiABKAsyGS5GbHV0dGVySW50ZXJhY3RpdmVWaWV3ZXJIAFIYZmx1dHRlckludG'
+    'VyYWN0aXZlVmlld2VyEmIKHmZsdXR0ZXJfbGlzdF93aGVlbF9zY3JvbGxfdmlldxiVAiABKAsy'
+    'Gy5GbHV0dGVyTGlzdFdoZWVsU2Nyb2xsVmlld0gAUhpmbHV0dGVyTGlzdFdoZWVsU2Nyb2xsVm'
+    'lldxJRChdmbHV0dGVyX2xvb2t1cF9ib3VuZGFyeRiWAiABKAsyFi5GbHV0dGVyTG9va3VwQm91'
+    'bmRhcnlIAFIVZmx1dHRlckxvb2t1cEJvdW5kYXJ5EksKFWZsdXR0ZXJfbW9kYWxfYmFycmllch'
+    'iXAiABKAsyFC5GbHV0dGVyTW9kYWxCYXJyaWVySABSE2ZsdXR0ZXJNb2RhbEJhcnJpZXISWgoa'
+    'Zmx1dHRlcl9uYXZpZ2F0aW9uX3Rvb2xiYXIYmAIgASgLMhkuRmx1dHRlck5hdmlnYXRpb25Ub2'
+    '9sYmFySABSGGZsdXR0ZXJOYXZpZ2F0aW9uVG9vbGJhchJ+CihmbHV0dGVyX2hlcm9fY29udHJv'
+    'bGxlcl9zY29wZV9uYW1lZF9ub25lGJkCIAEoCzIkLkZsdXR0ZXJIZXJvQ29udHJvbGxlclNjb3'
+    'BlTmFtZWROb25lSABSI2ZsdXR0ZXJIZXJvQ29udHJvbGxlclNjb3BlTmFtZWROb25lEkEKEWZs'
+    'dXR0ZXJfbmF2aWdhdG9yGJoCIAEoCzIRLkZsdXR0ZXJOYXZpZ2F0b3JIAFIQZmx1dHRlck5hdm'
+    'lnYXRvchJjCh1mbHV0dGVyX25vdGlmaWNhdGlvbl9saXN0ZW5lchibAiABKAsyHC5GbHV0dGVy'
+    'Tm90aWZpY2F0aW9uTGlzdGVuZXJIAFIbZmx1dHRlck5vdGlmaWNhdGlvbkxpc3RlbmVyEkgKFG'
+    'ZsdXR0ZXJfb3ZlcmZsb3dfYmFyGJwCIAEoCzITLkZsdXR0ZXJPdmVyZmxvd0JhckgAUhJmbHV0'
+    'dGVyT3ZlcmZsb3dCYXISOwoPZmx1dHRlcl9vdmVybGF5GJ0CIAEoCzIPLkZsdXR0ZXJPdmVybG'
+    'F5SABSDmZsdXR0ZXJPdmVybGF5Ej8KEWZsdXR0ZXJfcGFnZV92aWV3GJ4CIAEoCzIQLkZsdXR0'
+    'ZXJQYWdlVmlld0gAUg9mbHV0dGVyUGFnZVZpZXcSXQobZmx1dHRlcl9wZXJmb3JtYW5jZV9vdm'
+    'VybGF5GJ8CIAEoCzIaLkZsdXR0ZXJQZXJmb3JtYW5jZU92ZXJsYXlIAFIZZmx1dHRlclBlcmZv'
+    'cm1hbmNlT3ZlcmxheRKNAQotZmx1dHRlcl9wZXJmb3JtYW5jZV9vdmVybGF5X25hbWVkX2FsbF'
+    '9lbmFibGVkGKACIAEoCzIpLkZsdXR0ZXJQZXJmb3JtYW5jZU92ZXJsYXlOYW1lZEFsbEVuYWJs'
+    'ZWRIAFIoZmx1dHRlclBlcmZvcm1hbmNlT3ZlcmxheU5hbWVkQWxsRW5hYmxlZBJHChNmbHV0dG'
+    'VyX3BsYWNlaG9sZGVyGKECIAEoCzITLkZsdXR0ZXJQbGFjZWhvbGRlckgAUhJmbHV0dGVyUGxh'
+    'Y2Vob2xkZXISSAoUZmx1dHRlcl9hbmRyb2lkX3ZpZXcYogIgASgLMhMuRmx1dHRlckFuZHJvaW'
+    'RWaWV3SABSEmZsdXR0ZXJBbmRyb2lkVmlldxJVChlmbHV0dGVyX2h0bWxfZWxlbWVudF92aWV3'
+    'GKMCIAEoCzIXLkZsdXR0ZXJIdG1sRWxlbWVudFZpZXdIAFIWZmx1dHRlckh0bWxFbGVtZW50Vm'
+    'lldxJDChNmbHV0dGVyX3VpX2tpdF92aWV3GKQCIAEoCzIRLkZsdXR0ZXJVaUtpdFZpZXdIAFIQ'
+    'Zmx1dHRlclVpS2l0VmlldxKKAQosZmx1dHRlcl9wcmltYXJ5X3Njcm9sbF9jb250cm9sbGVyX2'
+    '5hbWVkX25vbmUYpQIgASgLMiguRmx1dHRlclByaW1hcnlTY3JvbGxDb250cm9sbGVyTmFtZWRO'
+    'b25lSABSJ2ZsdXR0ZXJQcmltYXJ5U2Nyb2xsQ29udHJvbGxlck5hbWVkTm9uZRKTAQovZmx1dH'
+    'Rlcl9yZW9yZGVyYWJsZV9kZWxheWVkX2RyYWdfc3RhcnRfbGlzdGVuZXIYpgIgASgLMisuRmx1'
+    'dHRlclJlb3JkZXJhYmxlRGVsYXllZERyYWdTdGFydExpc3RlbmVySABSKmZsdXR0ZXJSZW9yZG'
+    'VyYWJsZURlbGF5ZWREcmFnU3RhcnRMaXN0ZW5lchJ9CidmbHV0dGVyX3Jlb3JkZXJhYmxlX2Ry'
+    'YWdfc3RhcnRfbGlzdGVuZXIYpwIgASgLMiQuRmx1dHRlclJlb3JkZXJhYmxlRHJhZ1N0YXJ0TG'
+    'lzdGVuZXJIAFIjZmx1dHRlclJlb3JkZXJhYmxlRHJhZ1N0YXJ0TGlzdGVuZXISVwoZZmx1dHRl'
+    'cl9yZXN0b3JhdGlvbl9zY29wZRioAiABKAsyGC5GbHV0dGVyUmVzdG9yYXRpb25TY29wZUgAUh'
+    'dmbHV0dGVyUmVzdG9yYXRpb25TY29wZRJkCh5mbHV0dGVyX3Jvb3RfcmVzdG9yYXRpb25fc2Nv'
+    'cGUYqQIgASgLMhwuRmx1dHRlclJvb3RSZXN0b3JhdGlvblNjb3BlSABSG2ZsdXR0ZXJSb290Um'
+    'VzdG9yYXRpb25TY29wZRJzCiNmbHV0dGVyX3VubWFuYWdlZF9yZXN0b3JhdGlvbl9zY29wZRiq'
+    'AiABKAsyIS5GbHV0dGVyVW5tYW5hZ2VkUmVzdG9yYXRpb25TY29wZUgAUiBmbHV0dGVyVW5tYW'
+    '5hZ2VkUmVzdG9yYXRpb25TY29wZRI/ChFmbHV0dGVyX3NhZmVfYXJlYRirAiABKAsyEC5GbHV0'
+    'dGVyU2FmZUFyZWFIAFIPZmx1dHRlclNhZmVBcmVhElIKGGZsdXR0ZXJfc2xpdmVyX3NhZmVfYX'
+    'JlYRisAiABKAsyFi5GbHV0dGVyU2xpdmVyU2FmZUFyZWFIAFIVZmx1dHRlclNsaXZlclNhZmVB'
+    'cmVhEnYKJGZsdXR0ZXJfc2Nyb2xsX25vdGlmaWNhdGlvbl9vYnNlcnZlchitAiABKAsyIi5GbH'
+    'V0dGVyU2Nyb2xsTm90aWZpY2F0aW9uT2JzZXJ2ZXJIAFIhZmx1dHRlclNjcm9sbE5vdGlmaWNh'
+    'dGlvbk9ic2VydmVyElgKGmZsdXR0ZXJfY3VzdG9tX3Njcm9sbF92aWV3GK4CIAEoCzIYLkZsdX'
+    'R0ZXJDdXN0b21TY3JvbGxWaWV3SABSF2ZsdXR0ZXJDdXN0b21TY3JvbGxWaWV3El8KHWZsdXR0'
+    'ZXJfZ3JpZF92aWV3X25hbWVkX2NvdW50GK8CIAEoCzIaLkZsdXR0ZXJHcmlkVmlld05hbWVkQ2'
+    '91bnRIAFIZZmx1dHRlckdyaWRWaWV3TmFtZWRDb3VudBJiCh5mbHV0dGVyX2dyaWRfdmlld19u'
+    'YW1lZF9leHRlbnQYsAIgASgLMhsuRmx1dHRlckdyaWRWaWV3TmFtZWRFeHRlbnRIAFIaZmx1dH'
+    'RlckdyaWRWaWV3TmFtZWRFeHRlbnQSPwoRZmx1dHRlcl9saXN0X3ZpZXcYsQIgASgLMhAuRmx1'
+    'dHRlckxpc3RWaWV3SABSD2ZsdXR0ZXJMaXN0VmlldxJLChVmbHV0dGVyX3Jhd19zY3JvbGxiYX'
+    'IYsgIgASgLMhQuRmx1dHRlclJhd1Njcm9sbGJhckgAUhNmbHV0dGVyUmF3U2Nyb2xsYmFyEoYB'
+    'CipmbHV0dGVyX3NlbGVjdGlvbl9jb250YWluZXJfbmFtZWRfZGlzYWJsZWQYswIgASgLMicuRm'
+    'x1dHRlclNlbGVjdGlvbkNvbnRhaW5lck5hbWVkRGlzYWJsZWRIAFImZmx1dHRlclNlbGVjdGlv'
+    'bkNvbnRhaW5lck5hbWVkRGlzYWJsZWQSWgoaZmx1dHRlcl9zZW1hbnRpY3NfZGVidWdnZXIYtA'
+    'IgASgLMhkuRmx1dHRlclNlbWFudGljc0RlYnVnZ2VySABSGGZsdXR0ZXJTZW1hbnRpY3NEZWJ1'
+    'Z2dlchJPChdmbHV0dGVyX3NoYXJlZF9hcHBfZGF0YRi1AiABKAsyFS5GbHV0dGVyU2hhcmVkQX'
+    'BwRGF0YUgAUhRmbHV0dGVyU2hhcmVkQXBwRGF0YRJaChpmbHV0dGVyX3Nob3J0Y3V0X3JlZ2lz'
+    'dHJhchi2AiABKAsyGS5GbHV0dGVyU2hvcnRjdXRSZWdpc3RyYXJIAFIYZmx1dHRlclNob3J0Y3'
+    'V0UmVnaXN0cmFyEmgKIGZsdXR0ZXJfc2luZ2xlX2NoaWxkX3Njcm9sbF92aWV3GLcCIAEoCzId'
+    'LkZsdXR0ZXJTaW5nbGVDaGlsZFNjcm9sbFZpZXdIAFIcZmx1dHRlclNpbmdsZUNoaWxkU2Nyb2'
+    'xsVmlldxJ0CiRmbHV0dGVyX3NpemVfY2hhbmdlZF9sYXlvdXRfbm90aWZpZXIYuAIgASgLMiEu'
+    'Rmx1dHRlclNpemVDaGFuZ2VkTGF5b3V0Tm90aWZpZXJIAFIgZmx1dHRlclNpemVDaGFuZ2VkTG'
+    'F5b3V0Tm90aWZpZXISQgoSZmx1dHRlcl9rZWVwX2FsaXZlGLkCIAEoCzIRLkZsdXR0ZXJLZWVw'
+    'QWxpdmVIAFIQZmx1dHRlcktlZXBBbGl2ZRJ3CiVmbHV0dGVyX3NsaXZlcl9jb25zdHJhaW5lZF'
+    '9jcm9zc19heGlzGLoCIAEoCzIiLkZsdXR0ZXJTbGl2ZXJDb25zdHJhaW5lZENyb3NzQXhpc0gA'
+    'UiFmbHV0dGVyU2xpdmVyQ29uc3RyYWluZWRDcm9zc0F4aXMSbgoiZmx1dHRlcl9zbGl2ZXJfY3'
+    'Jvc3NfYXhpc19leHBhbmRlZBi7AiABKAsyHy5GbHV0dGVyU2xpdmVyQ3Jvc3NBeGlzRXhwYW5k'
+    'ZWRIAFIeZmx1dHRlclNsaXZlckNyb3NzQXhpc0V4cGFuZGVkEmUKH2ZsdXR0ZXJfc2xpdmVyX2'
+    'Nyb3NzX2F4aXNfZ3JvdXAYvAIgASgLMhwuRmx1dHRlclNsaXZlckNyb3NzQXhpc0dyb3VwSABS'
+    'G2ZsdXR0ZXJTbGl2ZXJDcm9zc0F4aXNHcm91cBKFAQorZmx1dHRlcl9zbGl2ZXJfZml4ZWRfZX'
+    'h0ZW50X2xpc3RfbmFtZWRfbGlzdBi9AiABKAsyJi5GbHV0dGVyU2xpdmVyRml4ZWRFeHRlbnRM'
+    'aXN0TmFtZWRMaXN0SABSJWZsdXR0ZXJTbGl2ZXJGaXhlZEV4dGVudExpc3ROYW1lZExpc3QSZQ'
+    'ofZmx1dHRlcl9zbGl2ZXJfZ3JpZF9uYW1lZF9jb3VudBi+AiABKAsyHC5GbHV0dGVyU2xpdmVy'
+    'R3JpZE5hbWVkQ291bnRIAFIbZmx1dHRlclNsaXZlckdyaWROYW1lZENvdW50EmgKIGZsdXR0ZX'
+    'Jfc2xpdmVyX2dyaWRfbmFtZWRfZXh0ZW50GL8CIAEoCzIdLkZsdXR0ZXJTbGl2ZXJHcmlkTmFt'
+    'ZWRFeHRlbnRIAFIcZmx1dHRlclNsaXZlckdyaWROYW1lZEV4dGVudBJhCh1mbHV0dGVyX3NsaX'
+    'Zlcl9pZ25vcmVfcG9pbnRlchjAAiABKAsyGy5GbHV0dGVyU2xpdmVySWdub3JlUG9pbnRlckgA'
+    'UhpmbHV0dGVyU2xpdmVySWdub3JlUG9pbnRlchJiCh5mbHV0dGVyX3NsaXZlcl9saXN0X25hbW'
+    'VkX2xpc3QYwQIgASgLMhsuRmx1dHRlclNsaXZlckxpc3ROYW1lZExpc3RIAFIaZmx1dHRlclNs'
+    'aXZlckxpc3ROYW1lZExpc3QSYgoeZmx1dHRlcl9zbGl2ZXJfbWFpbl9heGlzX2dyb3VwGMICIA'
+    'EoCzIbLkZsdXR0ZXJTbGl2ZXJNYWluQXhpc0dyb3VwSABSGmZsdXR0ZXJTbGl2ZXJNYWluQXhp'
+    'c0dyb3VwElEKF2ZsdXR0ZXJfc2xpdmVyX29mZnN0YWdlGMMCIAEoCzIWLkZsdXR0ZXJTbGl2ZX'
+    'JPZmZzdGFnZUgAUhVmbHV0dGVyU2xpdmVyT2Zmc3RhZ2USTgoWZmx1dHRlcl9zbGl2ZXJfb3Bh'
+    'Y2l0eRjEAiABKAsyFS5GbHV0dGVyU2xpdmVyT3BhY2l0eUgAUhRmbHV0dGVyU2xpdmVyT3BhY2'
+    'l0eRJhCh1mbHV0dGVyX3NsaXZlcl9maWxsX3JlbWFpbmluZxjFAiABKAsyGy5GbHV0dGVyU2xp'
+    'dmVyRmlsbFJlbWFpbmluZ0gAUhpmbHV0dGVyU2xpdmVyRmlsbFJlbWFpbmluZxKRAQovZmx1dH'
+    'Rlcl9zbGl2ZXJfcHJvdG90eXBlX2V4dGVudF9saXN0X25hbWVkX2xpc3QYxgIgASgLMiouRmx1'
+    'dHRlclNsaXZlclByb3RvdHlwZUV4dGVudExpc3ROYW1lZExpc3RIAFIpZmx1dHRlclNsaXZlcl'
+    'Byb3RvdHlwZUV4dGVudExpc3ROYW1lZExpc3QSOAoOZmx1dHRlcl9zcGFjZXIYxwIgASgLMg4u'
+    'Rmx1dHRlclNwYWNlckgAUg1mbHV0dGVyU3BhY2VyEjUKDWZsdXR0ZXJfdGFibGUYyAIgASgLMg'
+    '0uRmx1dHRlclRhYmxlSABSDGZsdXR0ZXJUYWJsZRJCChJmbHV0dGVyX3RhYmxlX2NlbGwYyQIg'
+    'ASgLMhEuRmx1dHRlclRhYmxlQ2VsbEgAUhBmbHV0dGVyVGFibGVDZWxsEkIKEmZsdXR0ZXJfdG'
+    'FwX3JlZ2lvbhjKAiABKAsyES5GbHV0dGVyVGFwUmVnaW9uSABSEGZsdXR0ZXJUYXBSZWdpb24S'
+    'WAoaZmx1dHRlcl90YXBfcmVnaW9uX3N1cmZhY2UYywIgASgLMhguRmx1dHRlclRhcFJlZ2lvbl'
+    'N1cmZhY2VIAFIXZmx1dHRlclRhcFJlZ2lvblN1cmZhY2USXwodZmx1dHRlcl90ZXh0X2ZpZWxk'
+    'X3RhcF9yZWdpb24YzAIgASgLMhouRmx1dHRlclRleHRGaWVsZFRhcFJlZ2lvbkgAUhlmbHV0dG'
+    'VyVGV4dEZpZWxkVGFwUmVnaW9uEoEBCilmbHV0dGVyX2RlZmF1bHRfdGV4dF9zdHlsZV9uYW1l'
+    'ZF9mYWxsYmFjaxjNAiABKAsyJS5GbHV0dGVyRGVmYXVsdFRleHRTdHlsZU5hbWVkRmFsbGJhY2'
+    'tIAFIkZmx1dHRlckRlZmF1bHRUZXh0U3R5bGVOYW1lZEZhbGxiYWNrEjIKDGZsdXR0ZXJfdGV4'
+    'dBjOAiABKAsyDC5GbHV0dGVyVGV4dEgAUgtmbHV0dGVyVGV4dBJ9CidmbHV0dGVyX3RleHRfc2'
+    'VsZWN0aW9uX2dlc3R1cmVfZGV0ZWN0b3IYzwIgASgLMiQuRmx1dHRlclRleHRTZWxlY3Rpb25H'
+    'ZXN0dXJlRGV0ZWN0b3JIAFIjZmx1dHRlclRleHRTZWxlY3Rpb25HZXN0dXJlRGV0ZWN0b3ISOw'
+    'oPZmx1dHRlcl90ZXh0dXJlGNACIAEoCzIPLkZsdXR0ZXJUZXh0dXJlSABSDmZsdXR0ZXJUZXh0'
+    'dXJlEkUKE2ZsdXR0ZXJfdGlja2VyX21vZGUY0QIgASgLMhIuRmx1dHRlclRpY2tlck1vZGVIAF'
+    'IRZmx1dHRlclRpY2tlck1vZGUSNQoNZmx1dHRlcl90aXRsZRjSAiABKAsyDS5GbHV0dGVyVGl0'
+    'bGVIAFIMZmx1dHRlclRpdGxlElcKGWZsdXR0ZXJfc2xpdmVyX3Zpc2liaWxpdHkY0wIgASgLMh'
+    'guRmx1dHRlclNsaXZlclZpc2liaWxpdHlIAFIXZmx1dHRlclNsaXZlclZpc2liaWxpdHkSgAEK'
+    'KGZsdXR0ZXJfc2xpdmVyX3Zpc2liaWxpdHlfbmFtZWRfbWFpbnRhaW4Y1AIgASgLMiUuRmx1dH'
+    'RlclNsaXZlclZpc2liaWxpdHlOYW1lZE1haW50YWluSABSJGZsdXR0ZXJTbGl2ZXJWaXNpYmls'
+    'aXR5TmFtZWRNYWludGFpbhJEChJmbHV0dGVyX3Zpc2liaWxpdHkY1QIgASgLMhIuRmx1dHRlcl'
+    'Zpc2liaWxpdHlIAFIRZmx1dHRlclZpc2liaWxpdHkSbQohZmx1dHRlcl92aXNpYmlsaXR5X25h'
+    'bWVkX21haW50YWluGNYCIAEoCzIfLkZsdXR0ZXJWaXNpYmlsaXR5TmFtZWRNYWludGFpbkgAUh'
+    '5mbHV0dGVyVmlzaWJpbGl0eU5hbWVkTWFpbnRhaW4SVAoYZmx1dHRlcl93aWRnZXRfaW5zcGVj'
+    'dG9yGNcCIAEoCzIXLkZsdXR0ZXJXaWRnZXRJbnNwZWN0b3JIAFIWZmx1dHRlcldpZGdldEluc3'
+    'BlY3RvchJMChZmbHV0dGVyX3dpbGxfcG9wX3Njb3BlGNgCIAEoCzIULkZsdXR0ZXJXaWxsUG9w'
+    'U2NvcGVIAFITZmx1dHRlcldpbGxQb3BTY29wZRJMChZmbHV0dGVyX3Byb2plY3RfbXlfYXBwGN'
+    'kCIAEoCzIULkZsdXR0ZXJQcm9qZWN0TXlBcHBIAFITZmx1dHRlclByb2plY3RNeUFwcBJcChxm'
+    'bHV0dGVyX3Byb2plY3RfbXlfaG9tZV9wYWdlGNoCIAEoCzIZLkZsdXR0ZXJQcm9qZWN0TXlIb2'
+    '1lUGFnZUgAUhhmbHV0dGVyUHJvamVjdE15SG9tZVBhZ2VCCAoGcmVzdWx0');
 

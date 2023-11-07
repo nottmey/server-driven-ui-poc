@@ -9,6 +9,7 @@ import "types.proto";
 // package:flutter/src/cupertino/activity_indicator.dart
 message CupertinoActivityIndicator {
   FlutterKeyExpression key = 2;
+  ColorExpression color = 3;
   bool animating = 4;
   double radius = 5;
 }
@@ -16,6 +17,7 @@ message CupertinoActivityIndicator {
 // package:flutter/src/cupertino/activity_indicator.dart
 message CupertinoActivityIndicatorNamedPartiallyRevealed {
   FlutterKeyExpression key = 2;
+  ColorExpression color = 3;
   double radius = 4;
   double progress = 5;
 }
@@ -26,6 +28,7 @@ message CupertinoApp {
   WidgetExpression home = 4;
   string initial_route = 7;
   string title = 13;
+  ColorExpression color = 15;
   bool show_performance_overlay = 21;
   bool checkerboard_raster_cache_images = 22;
   bool checkerboard_offscreen_layers = 23;
@@ -38,6 +41,7 @@ message CupertinoApp {
 message CupertinoAppNamedRouter {
   FlutterKeyExpression key = 2;
   string title = 10;
+  ColorExpression color = 12;
   bool show_performance_overlay = 18;
   bool checkerboard_raster_cache_images = 19;
   bool checkerboard_offscreen_layers = 20;
@@ -50,6 +54,8 @@ message CupertinoAppNamedRouter {
 message CupertinoButton {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
+  ColorExpression color = 5;
+  ColorExpression disabled_color = 6;
   double min_size = 7;
   double pressed_opacity = 8;
 }
@@ -58,6 +64,7 @@ message CupertinoButton {
 message CupertinoButtonNamedFilled {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
+  ColorExpression disabled_color = 5;
   double min_size = 6;
   double pressed_opacity = 7;
 }
@@ -67,6 +74,10 @@ message CupertinoCheckbox {
   FlutterKeyExpression key = 2;
   bool value = 3;
   bool tristate = 4;
+  ColorExpression active_color = 6;
+  ColorExpression inactive_color = 7;
+  ColorExpression check_color = 8;
+  ColorExpression focus_color = 9;
   bool autofocus = 11;
 }
 
@@ -146,6 +157,7 @@ message CupertinoFormSection {
   repeated WidgetExpression children = 3;
   WidgetExpression header = 4;
   WidgetExpression footer = 5;
+  ColorExpression background_color = 7;
 }
 
 // package:flutter/src/cupertino/form_section.dart
@@ -154,6 +166,7 @@ message CupertinoFormSectionNamedInsetGrouped {
   repeated WidgetExpression children = 3;
   WidgetExpression header = 4;
   WidgetExpression footer = 5;
+  ColorExpression background_color = 7;
 }
 
 // package:flutter/src/cupertino/list_section.dart
@@ -162,10 +175,12 @@ message CupertinoListSection {
   repeated WidgetExpression children = 3;
   WidgetExpression header = 4;
   WidgetExpression footer = 5;
+  ColorExpression background_color = 7;
   double divider_margin = 10;
   double additional_divider_margin = 11;
   double top_margin = 12;
   bool has_leading = 13;
+  ColorExpression separator_color = 14;
 }
 
 // package:flutter/src/cupertino/list_section.dart
@@ -174,10 +189,12 @@ message CupertinoListSectionNamedInsetGrouped {
   repeated WidgetExpression children = 3;
   WidgetExpression header = 4;
   WidgetExpression footer = 5;
+  ColorExpression background_color = 7;
   double divider_margin = 10;
   double additional_divider_margin = 11;
   double top_margin = 12;
   bool has_leading = 13;
+  ColorExpression separator_color = 14;
 }
 
 // package:flutter/src/cupertino/list_tile.dart
@@ -188,6 +205,8 @@ message CupertinoListTile {
   WidgetExpression additional_info = 5;
   WidgetExpression leading = 6;
   WidgetExpression trailing = 7;
+  ColorExpression background_color = 9;
+  ColorExpression background_color_activated = 10;
   double leading_size = 12;
   double leading_to_title = 13;
 }
@@ -200,6 +219,8 @@ message CupertinoListTileNamedNotched {
   WidgetExpression additional_info = 5;
   WidgetExpression leading = 6;
   WidgetExpression trailing = 7;
+  ColorExpression background_color = 9;
+  ColorExpression background_color_activated = 10;
   double leading_size = 12;
   double leading_to_title = 13;
 }
@@ -223,12 +244,14 @@ message CupertinoNavigationBar {
   string previous_page_title = 6;
   WidgetExpression middle = 7;
   WidgetExpression trailing = 8;
+  ColorExpression background_color = 10;
   bool transition_between_routes = 13;
 }
 
 // package:flutter/src/cupertino/nav_bar.dart
 message CupertinoNavigationBarBackButton {
   FlutterKeyExpression key = 2;
+  ColorExpression color = 3;
   string previous_page_title = 4;
 }
 
@@ -243,6 +266,7 @@ message CupertinoSliverNavigationBar {
   string previous_page_title = 8;
   WidgetExpression middle = 9;
   WidgetExpression trailing = 10;
+  ColorExpression background_color = 12;
   bool transition_between_routes = 15;
   bool stretch = 17;
 }
@@ -250,6 +274,7 @@ message CupertinoSliverNavigationBar {
 // package:flutter/src/cupertino/page_scaffold.dart
 message CupertinoPageScaffold {
   FlutterKeyExpression key = 2;
+  ColorExpression background_color = 4;
   bool resize_to_avoid_bottom_inset = 5;
   WidgetExpression child = 6;
 }
@@ -258,6 +283,7 @@ message CupertinoPageScaffold {
 message CupertinoPicker {
   FlutterKeyExpression key = 2;
   double diameter_ratio = 3;
+  ColorExpression background_color = 4;
   double off_axis_fraction = 5;
   bool use_magnifier = 6;
   double magnification = 7;
@@ -271,6 +297,7 @@ message CupertinoPicker {
 // package:flutter/src/cupertino/picker.dart
 message CupertinoPickerDefaultSelectionOverlay {
   FlutterKeyExpression key = 2;
+  ColorExpression background = 3;
   bool cap_start_edge = 4;
   bool cap_end_edge = 5;
 }
@@ -295,6 +322,8 @@ message CupertinoScrollbar {
 message CupertinoSearchTextField {
   FlutterKeyExpression key = 2;
   string placeholder = 7;
+  ColorExpression background_color = 10;
+  ColorExpression item_color = 14;
   double item_size = 15;
   WidgetExpression prefix_icon = 17;
   string restoration_id = 22;
@@ -311,13 +340,19 @@ message CupertinoSlider {
   double min = 7;
   double max = 8;
   int32 divisions = 9;
+  ColorExpression active_color = 10;
+  ColorExpression thumb_color = 11;
 }
 
 // package:flutter/src/cupertino/switch.dart
 message CupertinoSwitch {
   FlutterKeyExpression key = 2;
   bool value = 3;
+  ColorExpression active_color = 5;
+  ColorExpression track_color = 6;
+  ColorExpression thumb_color = 7;
   bool apply_theme = 8;
+  ColorExpression focus_color = 9;
   bool autofocus = 12;
 }
 
@@ -349,6 +384,7 @@ message CupertinoTextField {
   double cursor_width = 43;
   double cursor_height = 44;
   bool cursor_opacity_animates = 46;
+  ColorExpression cursor_color = 47;
   bool enable_interactive_selection = 53;
   repeated string autofill_hints = 58;
   string restoration_id = 61;
@@ -377,6 +413,7 @@ message CupertinoTextFieldNamedBorderless {
   double cursor_width = 43;
   double cursor_height = 44;
   bool cursor_opacity_animates = 46;
+  ColorExpression cursor_color = 47;
   bool enable_interactive_selection = 53;
   repeated string autofill_hints = 58;
   string restoration_id = 61;
@@ -403,6 +440,7 @@ message CupertinoTextFormFieldRow {
   bool enabled = 37;
   double cursor_width = 38;
   double cursor_height = 39;
+  ColorExpression cursor_color = 40;
   bool enable_interactive_selection = 43;
   repeated string autofill_hints = 46;
   string placeholder = 48;
@@ -455,6 +493,7 @@ message MaterialLicensePage {
 // package:flutter/src/material/action_buttons.dart
 message MaterialBackButton {
   FlutterKeyExpression key = 2;
+  ColorExpression color = 3;
 }
 
 // package:flutter/src/material/action_buttons.dart
@@ -465,6 +504,7 @@ message MaterialBackButtonIcon {
 // package:flutter/src/material/action_buttons.dart
 message MaterialCloseButton {
   FlutterKeyExpression key = 2;
+  ColorExpression color = 3;
 }
 
 // package:flutter/src/material/action_buttons.dart
@@ -500,7 +540,11 @@ message MaterialActionChip {
   double press_elevation = 8;
   string tooltip = 9;
   bool autofocus = 14;
+  ColorExpression background_color = 16;
+  ColorExpression disabled_color = 17;
   double elevation = 21;
+  ColorExpression shadow_color = 22;
+  ColorExpression surface_tint_color = 23;
 }
 
 // package:flutter/src/material/action_chip.dart
@@ -511,7 +555,11 @@ message MaterialActionChipNamedElevated {
   double press_elevation = 8;
   string tooltip = 9;
   bool autofocus = 14;
+  ColorExpression background_color = 16;
+  ColorExpression disabled_color = 17;
   double elevation = 21;
+  ColorExpression shadow_color = 22;
+  ColorExpression surface_tint_color = 23;
 }
 
 // package:flutter/src/material/app.dart
@@ -520,6 +568,7 @@ message MaterialMaterialApp {
   WidgetExpression home = 5;
   string initial_route = 7;
   string title = 13;
+  ColorExpression color = 15;
   DurationExpression theme_animation_duration = 21;
   bool debug_show_material_grid = 28;
   bool show_performance_overlay = 29;
@@ -534,6 +583,7 @@ message MaterialMaterialApp {
 message MaterialMaterialAppNamedRouter {
   FlutterKeyExpression key = 2;
   string title = 10;
+  ColorExpression color = 12;
   DurationExpression theme_animation_duration = 18;
   bool debug_show_material_grid = 25;
   bool show_performance_overlay = 26;
@@ -554,6 +604,10 @@ message MaterialAppBar {
   WidgetExpression flexible_space = 7;
   double elevation = 9;
   double scrolled_under_elevation = 10;
+  ColorExpression shadow_color = 12;
+  ColorExpression surface_tint_color = 13;
+  ColorExpression background_color = 15;
+  ColorExpression foreground_color = 16;
   bool primary = 19;
   bool center_title = 20;
   bool exclude_header_semantics = 21;
@@ -575,7 +629,11 @@ message MaterialSliverAppBar {
   WidgetExpression flexible_space = 7;
   double elevation = 9;
   double scrolled_under_elevation = 10;
+  ColorExpression shadow_color = 11;
+  ColorExpression surface_tint_color = 12;
   bool force_elevated = 13;
+  ColorExpression background_color = 14;
+  ColorExpression foreground_color = 15;
   bool primary = 18;
   bool center_title = 19;
   bool exclude_header_semantics = 20;
@@ -602,7 +660,11 @@ message MaterialSliverAppBarNamedMedium {
   WidgetExpression flexible_space = 7;
   double elevation = 9;
   double scrolled_under_elevation = 10;
+  ColorExpression shadow_color = 11;
+  ColorExpression surface_tint_color = 12;
   bool force_elevated = 13;
+  ColorExpression background_color = 14;
+  ColorExpression foreground_color = 15;
   bool primary = 18;
   bool center_title = 19;
   bool exclude_header_semantics = 20;
@@ -629,7 +691,11 @@ message MaterialSliverAppBarNamedLarge {
   WidgetExpression flexible_space = 7;
   double elevation = 9;
   double scrolled_under_elevation = 10;
+  ColorExpression shadow_color = 11;
+  ColorExpression surface_tint_color = 12;
   bool force_elevated = 13;
+  ColorExpression background_color = 14;
+  ColorExpression foreground_color = 15;
   bool primary = 18;
   bool center_title = 19;
   bool exclude_header_semantics = 20;
@@ -649,6 +715,8 @@ message MaterialSliverAppBarNamedLarge {
 // package:flutter/src/material/badge.dart
 message MaterialBadge {
   FlutterKeyExpression key = 2;
+  ColorExpression background_color = 3;
+  ColorExpression text_color = 4;
   double small_size = 5;
   double large_size = 6;
   WidgetExpression label = 11;
@@ -659,6 +727,8 @@ message MaterialBadge {
 // package:flutter/src/material/badge.dart
 message MaterialBadgeNamedCount {
   FlutterKeyExpression key = 2;
+  ColorExpression background_color = 3;
+  ColorExpression text_color = 4;
   double small_size = 5;
   double large_size = 6;
   int32 count = 11;
@@ -673,6 +743,10 @@ message MaterialMaterialBanner {
   repeated WidgetExpression actions = 5;
   double elevation = 6;
   WidgetExpression leading = 7;
+  ColorExpression background_color = 8;
+  ColorExpression surface_tint_color = 9;
+  ColorExpression shadow_color = 10;
+  ColorExpression divider_color = 11;
   bool force_actions_below = 15;
 }
 
@@ -685,15 +759,23 @@ message MaterialMaterialBannerTheme {
 // package:flutter/src/material/bottom_app_bar.dart
 message MaterialBottomAppBar {
   FlutterKeyExpression key = 2;
+  ColorExpression color = 3;
   double elevation = 4;
   double notch_margin = 7;
   WidgetExpression child = 8;
+  ColorExpression surface_tint_color = 10;
+  ColorExpression shadow_color = 11;
   double height = 12;
 }
 
 // package:flutter/src/material/button.dart
 message MaterialRawMaterialButton {
   FlutterKeyExpression key = 2;
+  ColorExpression fill_color = 8;
+  ColorExpression focus_color = 9;
+  ColorExpression hover_color = 10;
+  ColorExpression highlight_color = 11;
+  ColorExpression splash_color = 12;
   double elevation = 13;
   double focus_elevation = 14;
   double hover_elevation = 15;
@@ -721,12 +803,21 @@ message MaterialButtonTheme {
   double min_width = 5;
   double height = 6;
   bool aligned_dropdown = 9;
+  ColorExpression button_color = 10;
+  ColorExpression disabled_color = 11;
+  ColorExpression focus_color = 12;
+  ColorExpression hover_color = 13;
+  ColorExpression highlight_color = 14;
+  ColorExpression splash_color = 15;
   WidgetExpression child = 18;
 }
 
 // package:flutter/src/material/card.dart
 message MaterialCard {
   FlutterKeyExpression key = 2;
+  ColorExpression color = 3;
+  ColorExpression shadow_color = 4;
+  ColorExpression surface_tint_color = 5;
   double elevation = 6;
   bool border_on_foreground = 8;
   WidgetExpression child = 11;
@@ -738,6 +829,10 @@ message MaterialCheckbox {
   FlutterKeyExpression key = 2;
   bool value = 3;
   bool tristate = 4;
+  ColorExpression active_color = 7;
+  ColorExpression check_color = 9;
+  ColorExpression focus_color = 10;
+  ColorExpression hover_color = 11;
   double splash_radius = 13;
   bool autofocus = 17;
   bool is_error = 20;
@@ -749,6 +844,10 @@ message MaterialCheckboxNamedAdaptive {
   FlutterKeyExpression key = 2;
   bool value = 3;
   bool tristate = 4;
+  ColorExpression active_color = 7;
+  ColorExpression check_color = 9;
+  ColorExpression focus_color = 10;
+  ColorExpression hover_color = 11;
   double splash_radius = 13;
   bool autofocus = 17;
   bool is_error = 20;
@@ -759,10 +858,14 @@ message MaterialCheckboxNamedAdaptive {
 message MaterialCheckboxListTile {
   FlutterKeyExpression key = 2;
   bool value = 3;
+  ColorExpression active_color = 6;
+  ColorExpression check_color = 8;
+  ColorExpression hover_color = 9;
   double splash_radius = 11;
   bool autofocus = 15;
   bool is_error = 18;
   bool enabled = 19;
+  ColorExpression tile_color = 20;
   WidgetExpression title = 21;
   WidgetExpression subtitle = 22;
   bool is_three_line = 23;
@@ -770,6 +873,7 @@ message MaterialCheckboxListTile {
   WidgetExpression secondary = 25;
   bool selected = 26;
   bool tristate = 29;
+  ColorExpression selected_tile_color = 31;
   bool enable_feedback = 33;
   string checkbox_semantic_label = 34;
 }
@@ -778,10 +882,14 @@ message MaterialCheckboxListTile {
 message MaterialCheckboxListTileNamedAdaptive {
   FlutterKeyExpression key = 2;
   bool value = 3;
+  ColorExpression active_color = 6;
+  ColorExpression check_color = 8;
+  ColorExpression hover_color = 9;
   double splash_radius = 11;
   bool autofocus = 15;
   bool is_error = 18;
   bool enabled = 19;
+  ColorExpression tile_color = 20;
   WidgetExpression title = 21;
   WidgetExpression subtitle = 22;
   bool is_three_line = 23;
@@ -789,6 +897,7 @@ message MaterialCheckboxListTileNamedAdaptive {
   WidgetExpression secondary = 25;
   bool selected = 26;
   bool tristate = 29;
+  ColorExpression selected_tile_color = 31;
   bool enable_feedback = 33;
   string checkbox_semantic_label = 34;
 }
@@ -799,9 +908,13 @@ message MaterialChip {
   WidgetExpression avatar = 3;
   WidgetExpression label = 4;
   WidgetExpression delete_icon = 7;
+  ColorExpression delete_icon_color = 9;
   string delete_button_tooltip_message = 10;
   bool autofocus = 15;
+  ColorExpression background_color = 17;
   double elevation = 21;
+  ColorExpression shadow_color = 22;
+  ColorExpression surface_tint_color = 23;
 }
 
 // package:flutter/src/material/chip.dart
@@ -810,15 +923,23 @@ message MaterialRawChip {
   WidgetExpression avatar = 4;
   WidgetExpression label = 5;
   WidgetExpression delete_icon = 10;
+  ColorExpression delete_icon_color = 12;
   string delete_button_tooltip_message = 13;
   double press_elevation = 16;
   bool tap_enabled = 17;
   bool selected = 18;
   bool is_enabled = 19;
+  ColorExpression disabled_color = 20;
+  ColorExpression selected_color = 21;
   string tooltip = 22;
   bool autofocus = 27;
+  ColorExpression background_color = 29;
   double elevation = 31;
+  ColorExpression shadow_color = 32;
+  ColorExpression surface_tint_color = 33;
+  ColorExpression selected_shadow_color = 35;
   bool show_checkmark = 36;
+  ColorExpression checkmark_color = 37;
 }
 
 // package:flutter/src/material/choice_chip.dart
@@ -828,10 +949,17 @@ message MaterialChoiceChip {
   WidgetExpression label = 4;
   double press_elevation = 8;
   bool selected = 9;
+  ColorExpression selected_color = 10;
+  ColorExpression disabled_color = 11;
   string tooltip = 12;
   bool autofocus = 17;
+  ColorExpression background_color = 19;
   double elevation = 23;
+  ColorExpression shadow_color = 24;
+  ColorExpression surface_tint_color = 25;
+  ColorExpression selected_shadow_color = 27;
   bool show_checkmark = 28;
+  ColorExpression checkmark_color = 29;
 }
 
 // package:flutter/src/material/choice_chip.dart
@@ -841,16 +969,25 @@ message MaterialChoiceChipNamedElevated {
   WidgetExpression label = 4;
   double press_elevation = 8;
   bool selected = 9;
+  ColorExpression selected_color = 10;
+  ColorExpression disabled_color = 11;
   string tooltip = 12;
   bool autofocus = 17;
+  ColorExpression background_color = 19;
   double elevation = 23;
+  ColorExpression shadow_color = 24;
+  ColorExpression surface_tint_color = 25;
+  ColorExpression selected_shadow_color = 27;
   bool show_checkmark = 28;
+  ColorExpression checkmark_color = 29;
 }
 
 // package:flutter/src/material/circle_avatar.dart
 message MaterialCircleAvatar {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
+  ColorExpression background_color = 4;
+  ColorExpression foreground_color = 9;
   double radius = 10;
   double min_radius = 11;
   double max_radius = 12;
@@ -872,11 +1009,15 @@ message MaterialDesktopTextSelectionToolbarButton {
 message MaterialAlertDialog {
   FlutterKeyExpression key = 2;
   WidgetExpression icon = 3;
+  ColorExpression icon_color = 5;
   WidgetExpression title = 6;
   WidgetExpression content = 9;
   repeated WidgetExpression actions = 12;
   double actions_overflow_button_spacing = 17;
+  ColorExpression background_color = 19;
   double elevation = 20;
+  ColorExpression shadow_color = 21;
+  ColorExpression surface_tint_color = 22;
   string semantic_label = 23;
   bool scrollable = 28;
 }
@@ -885,11 +1026,15 @@ message MaterialAlertDialog {
 message MaterialAlertDialogNamedAdaptive {
   FlutterKeyExpression key = 2;
   WidgetExpression icon = 3;
+  ColorExpression icon_color = 5;
   WidgetExpression title = 6;
   WidgetExpression content = 9;
   repeated WidgetExpression actions = 12;
   double actions_overflow_button_spacing = 17;
+  ColorExpression background_color = 19;
   double elevation = 20;
+  ColorExpression shadow_color = 21;
+  ColorExpression surface_tint_color = 22;
   string semantic_label = 23;
   bool scrollable = 28;
   DurationExpression inset_animation_duration = 31;
@@ -898,7 +1043,10 @@ message MaterialAlertDialogNamedAdaptive {
 // package:flutter/src/material/dialog.dart
 message MaterialDialog {
   FlutterKeyExpression key = 2;
+  ColorExpression background_color = 3;
   double elevation = 4;
+  ColorExpression shadow_color = 5;
+  ColorExpression surface_tint_color = 6;
   DurationExpression inset_animation_duration = 7;
   WidgetExpression child = 13;
 }
@@ -906,6 +1054,7 @@ message MaterialDialog {
 // package:flutter/src/material/dialog.dart
 message MaterialDialogNamedFullscreen {
   FlutterKeyExpression key = 2;
+  ColorExpression background_color = 3;
   DurationExpression inset_animation_duration = 4;
   WidgetExpression child = 6;
 }
@@ -915,7 +1064,10 @@ message MaterialSimpleDialog {
   FlutterKeyExpression key = 2;
   WidgetExpression title = 3;
   repeated WidgetExpression children = 6;
+  ColorExpression background_color = 8;
   double elevation = 9;
+  ColorExpression shadow_color = 10;
+  ColorExpression surface_tint_color = 11;
   string semantic_label = 12;
 }
 
@@ -932,6 +1084,7 @@ message MaterialDivider {
   double thickness = 4;
   double indent = 5;
   double end_indent = 6;
+  ColorExpression color = 7;
 }
 
 // package:flutter/src/material/divider.dart
@@ -941,12 +1094,16 @@ message MaterialVerticalDivider {
   double thickness = 4;
   double indent = 5;
   double end_indent = 6;
+  ColorExpression color = 7;
 }
 
 // package:flutter/src/material/drawer.dart
 message MaterialDrawer {
   FlutterKeyExpression key = 2;
+  ColorExpression background_color = 3;
   double elevation = 4;
+  ColorExpression shadow_color = 5;
+  ColorExpression surface_tint_color = 6;
   double width = 8;
   WidgetExpression child = 9;
   string semantic_label = 10;
@@ -967,11 +1124,15 @@ message MaterialDropdownButton {
   int32 elevation = 10;
   WidgetExpression underline = 12;
   WidgetExpression icon = 13;
+  ColorExpression icon_disabled_color = 14;
+  ColorExpression icon_enabled_color = 15;
   double icon_size = 16;
   bool is_dense = 17;
   bool is_expanded = 18;
   double item_height = 19;
+  ColorExpression focus_color = 20;
   bool autofocus = 22;
+  ColorExpression dropdown_color = 23;
   double menu_max_height = 24;
   bool enable_feedback = 25;
 }
@@ -983,11 +1144,15 @@ message MaterialDropdownButtonFormField {
   WidgetExpression disabled_hint = 7;
   int32 elevation = 10;
   WidgetExpression icon = 12;
+  ColorExpression icon_disabled_color = 13;
+  ColorExpression icon_enabled_color = 14;
   double icon_size = 15;
   bool is_dense = 16;
   bool is_expanded = 17;
   double item_height = 18;
+  ColorExpression focus_color = 19;
   bool autofocus = 21;
+  ColorExpression dropdown_color = 22;
   double menu_max_height = 27;
   bool enable_feedback = 28;
 }
@@ -1025,13 +1190,18 @@ message MaterialExpandIcon {
   FlutterKeyExpression key = 2;
   bool is_expanded = 3;
   double size = 4;
+  ColorExpression color = 7;
+  ColorExpression disabled_color = 8;
+  ColorExpression expanded_color = 9;
 }
 
 // package:flutter/src/material/expansion_panel.dart
 message MaterialExpansionPanelList {
   FlutterKeyExpression key = 2;
   DurationExpression animation_duration = 5;
+  ColorExpression divider_color = 7;
   double elevation = 8;
+  ColorExpression expand_icon_color = 9;
   double material_gap_size = 10;
 }
 
@@ -1039,7 +1209,9 @@ message MaterialExpansionPanelList {
 message MaterialExpansionPanelListNamedRadio {
   FlutterKeyExpression key = 2;
   DurationExpression animation_duration = 5;
+  ColorExpression divider_color = 8;
   double elevation = 9;
+  ColorExpression expand_icon_color = 10;
   double material_gap_size = 11;
 }
 
@@ -1053,6 +1225,12 @@ message MaterialExpansionTile {
   WidgetExpression trailing = 8;
   bool initially_expanded = 9;
   bool maintain_state = 10;
+  ColorExpression background_color = 15;
+  ColorExpression collapsed_background_color = 16;
+  ColorExpression text_color = 17;
+  ColorExpression collapsed_text_color = 18;
+  ColorExpression icon_color = 19;
+  ColorExpression collapsed_icon_color = 20;
 }
 
 // package:flutter/src/material/filled_button.dart
@@ -1092,10 +1270,17 @@ message MaterialFilterChip {
   WidgetExpression label = 4;
   bool selected = 7;
   double press_elevation = 9;
+  ColorExpression disabled_color = 10;
+  ColorExpression selected_color = 11;
   string tooltip = 12;
   bool autofocus = 17;
+  ColorExpression background_color = 19;
   double elevation = 23;
+  ColorExpression shadow_color = 24;
+  ColorExpression surface_tint_color = 25;
+  ColorExpression selected_shadow_color = 27;
   bool show_checkmark = 28;
+  ColorExpression checkmark_color = 29;
 }
 
 // package:flutter/src/material/filter_chip.dart
@@ -1105,10 +1290,17 @@ message MaterialFilterChipNamedElevated {
   WidgetExpression label = 4;
   bool selected = 7;
   double press_elevation = 9;
+  ColorExpression disabled_color = 10;
+  ColorExpression selected_color = 11;
   string tooltip = 12;
   bool autofocus = 17;
+  ColorExpression background_color = 19;
   double elevation = 23;
+  ColorExpression shadow_color = 24;
+  ColorExpression surface_tint_color = 25;
+  ColorExpression selected_shadow_color = 27;
   bool show_checkmark = 28;
+  ColorExpression checkmark_color = 29;
 }
 
 // package:flutter/src/material/flexible_space_bar.dart
@@ -1136,6 +1328,11 @@ message MaterialFloatingActionButton {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
   string tooltip = 4;
+  ColorExpression foreground_color = 5;
+  ColorExpression background_color = 6;
+  ColorExpression focus_color = 7;
+  ColorExpression hover_color = 8;
+  ColorExpression splash_color = 9;
   double elevation = 11;
   double focus_elevation = 12;
   double hover_elevation = 13;
@@ -1152,6 +1349,11 @@ message MaterialFloatingActionButtonNamedSmall {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
   string tooltip = 4;
+  ColorExpression foreground_color = 5;
+  ColorExpression background_color = 6;
+  ColorExpression focus_color = 7;
+  ColorExpression hover_color = 8;
+  ColorExpression splash_color = 9;
   double elevation = 11;
   double focus_elevation = 12;
   double hover_elevation = 13;
@@ -1166,6 +1368,11 @@ message MaterialFloatingActionButtonNamedLarge {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
   string tooltip = 4;
+  ColorExpression foreground_color = 5;
+  ColorExpression background_color = 6;
+  ColorExpression focus_color = 7;
+  ColorExpression hover_color = 8;
+  ColorExpression splash_color = 9;
   double elevation = 11;
   double focus_elevation = 12;
   double hover_elevation = 13;
@@ -1179,9 +1386,14 @@ message MaterialFloatingActionButtonNamedLarge {
 message MaterialFloatingActionButtonNamedExtended {
   FlutterKeyExpression key = 2;
   string tooltip = 3;
+  ColorExpression foreground_color = 4;
+  ColorExpression background_color = 5;
+  ColorExpression focus_color = 6;
+  ColorExpression hover_color = 7;
   double elevation = 9;
   double focus_elevation = 10;
   double hover_elevation = 11;
+  ColorExpression splash_color = 12;
   double highlight_elevation = 13;
   double disabled_elevation = 14;
   bool is_extended = 18;
@@ -1196,6 +1408,7 @@ message MaterialFloatingActionButtonNamedExtended {
 message MaterialFlutterLogo {
   FlutterKeyExpression key = 2;
   double size = 3;
+  ColorExpression text_color = 4;
   DurationExpression duration = 6;
 }
 
@@ -1210,6 +1423,7 @@ message MaterialGridTile {
 // package:flutter/src/material/grid_tile_bar.dart
 message MaterialGridTileBar {
   FlutterKeyExpression key = 2;
+  ColorExpression background_color = 3;
   WidgetExpression leading = 4;
   WidgetExpression title = 5;
   WidgetExpression subtitle = 6;
@@ -1221,6 +1435,12 @@ message MaterialIconButton {
   FlutterKeyExpression key = 2;
   double icon_size = 3;
   double splash_radius = 7;
+  ColorExpression color = 8;
+  ColorExpression focus_color = 9;
+  ColorExpression hover_color = 10;
+  ColorExpression highlight_color = 11;
+  ColorExpression splash_color = 12;
+  ColorExpression disabled_color = 13;
   bool autofocus = 17;
   string tooltip = 18;
   bool enable_feedback = 19;
@@ -1234,6 +1454,12 @@ message MaterialIconButtonNamedFilled {
   FlutterKeyExpression key = 2;
   double icon_size = 3;
   double splash_radius = 7;
+  ColorExpression color = 8;
+  ColorExpression focus_color = 9;
+  ColorExpression hover_color = 10;
+  ColorExpression highlight_color = 11;
+  ColorExpression splash_color = 12;
+  ColorExpression disabled_color = 13;
   bool autofocus = 17;
   string tooltip = 18;
   bool enable_feedback = 19;
@@ -1247,6 +1473,12 @@ message MaterialIconButtonNamedFilledTonal {
   FlutterKeyExpression key = 2;
   double icon_size = 3;
   double splash_radius = 7;
+  ColorExpression color = 8;
+  ColorExpression focus_color = 9;
+  ColorExpression hover_color = 10;
+  ColorExpression highlight_color = 11;
+  ColorExpression splash_color = 12;
+  ColorExpression disabled_color = 13;
   bool autofocus = 17;
   string tooltip = 18;
   bool enable_feedback = 19;
@@ -1260,6 +1492,12 @@ message MaterialIconButtonNamedOutlined {
   FlutterKeyExpression key = 2;
   double icon_size = 3;
   double splash_radius = 7;
+  ColorExpression color = 8;
+  ColorExpression focus_color = 9;
+  ColorExpression hover_color = 10;
+  ColorExpression highlight_color = 11;
+  ColorExpression splash_color = 12;
+  ColorExpression disabled_color = 13;
   bool autofocus = 17;
   string tooltip = 18;
   bool enable_feedback = 19;
@@ -1271,6 +1509,7 @@ message MaterialIconButtonNamedOutlined {
 // package:flutter/src/material/ink_decoration.dart
 message MaterialInk {
   FlutterKeyExpression key = 2;
+  ColorExpression color = 4;
   double width = 6;
   double height = 7;
   WidgetExpression child = 8;
@@ -1282,6 +1521,10 @@ message MaterialInkResponse {
   WidgetExpression child = 3;
   bool contained_ink_well = 17;
   double radius = 19;
+  ColorExpression focus_color = 22;
+  ColorExpression hover_color = 23;
+  ColorExpression highlight_color = 24;
+  ColorExpression splash_color = 26;
   bool enable_feedback = 28;
   bool exclude_from_semantics = 29;
   bool can_request_focus = 31;
@@ -1292,6 +1535,10 @@ message MaterialInkResponse {
 message MaterialInkWell {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
+  ColorExpression focus_color = 17;
+  ColorExpression hover_color = 18;
+  ColorExpression highlight_color = 19;
+  ColorExpression splash_color = 21;
   double radius = 23;
   bool enable_feedback = 26;
   bool exclude_from_semantics = 27;
@@ -1307,12 +1554,20 @@ message MaterialInputChip {
   bool selected = 7;
   bool is_enabled = 8;
   WidgetExpression delete_icon = 10;
+  ColorExpression delete_icon_color = 12;
   string delete_button_tooltip_message = 13;
   double press_elevation = 15;
+  ColorExpression disabled_color = 16;
+  ColorExpression selected_color = 17;
   string tooltip = 18;
   bool autofocus = 23;
+  ColorExpression background_color = 25;
   double elevation = 29;
+  ColorExpression shadow_color = 30;
+  ColorExpression surface_tint_color = 31;
+  ColorExpression selected_shadow_color = 33;
   bool show_checkmark = 34;
+  ColorExpression checkmark_color = 35;
 }
 
 // package:flutter/src/material/list_tile.dart
@@ -1324,9 +1579,17 @@ message MaterialListTile {
   WidgetExpression trailing = 6;
   bool is_three_line = 7;
   bool dense = 8;
+  ColorExpression selected_color = 12;
+  ColorExpression icon_color = 13;
+  ColorExpression text_color = 14;
   bool enabled = 19;
   bool selected = 24;
+  ColorExpression focus_color = 25;
+  ColorExpression hover_color = 26;
+  ColorExpression splash_color = 27;
   bool autofocus = 29;
+  ColorExpression tile_color = 30;
+  ColorExpression selected_tile_color = 31;
   bool enable_feedback = 32;
   double horizontal_title_gap = 33;
   double min_vertical_padding = 34;
@@ -1337,6 +1600,11 @@ message MaterialListTile {
 message MaterialListTileTheme {
   FlutterKeyExpression key = 2;
   bool dense = 4;
+  ColorExpression selected_color = 7;
+  ColorExpression icon_color = 8;
+  ColorExpression text_color = 9;
+  ColorExpression tile_color = 11;
+  ColorExpression selected_tile_color = 12;
   bool enable_feedback = 13;
   double horizontal_title_gap = 15;
   double min_vertical_padding = 16;
@@ -1347,12 +1615,16 @@ message MaterialListTileTheme {
 // package:flutter/src/material/magnifier.dart
 message MaterialMagnifier {
   FlutterKeyExpression key = 2;
+  ColorExpression film_color = 5;
 }
 
 // package:flutter/src/material/material.dart
 message MaterialMaterial {
   FlutterKeyExpression key = 2;
   double elevation = 4;
+  ColorExpression color = 5;
+  ColorExpression shadow_color = 6;
+  ColorExpression surface_tint_color = 7;
   bool border_on_foreground = 11;
   DurationExpression animation_duration = 13;
   WidgetExpression child = 14;
@@ -1361,6 +1633,14 @@ message MaterialMaterial {
 // package:flutter/src/material/material_button.dart
 message MaterialMaterialButton {
   FlutterKeyExpression key = 2;
+  ColorExpression text_color = 8;
+  ColorExpression disabled_text_color = 9;
+  ColorExpression color = 10;
+  ColorExpression disabled_color = 11;
+  ColorExpression focus_color = 12;
+  ColorExpression hover_color = 13;
+  ColorExpression highlight_color = 14;
+  ColorExpression splash_color = 15;
   double elevation = 17;
   double focus_elevation = 18;
   double hover_elevation = 19;
@@ -1437,6 +1717,7 @@ message MaterialMergeableMaterial {
   FlutterKeyExpression key = 2;
   double elevation = 4;
   bool has_dividers = 5;
+  ColorExpression divider_color = 7;
 }
 
 // package:flutter/src/material/navigation_bar.dart
@@ -1445,7 +1726,11 @@ message MaterialNavigationBar {
   DurationExpression animation_duration = 3;
   int32 selected_index = 4;
   repeated WidgetExpression destinations = 5;
+  ColorExpression background_color = 7;
   double elevation = 8;
+  ColorExpression shadow_color = 9;
+  ColorExpression surface_tint_color = 10;
+  ColorExpression indicator_color = 11;
   double height = 13;
 }
 
@@ -1462,13 +1747,18 @@ message MaterialNavigationDestination {
 message MaterialNavigationDrawer {
   FlutterKeyExpression key = 2;
   repeated WidgetExpression children = 3;
+  ColorExpression background_color = 4;
+  ColorExpression shadow_color = 5;
+  ColorExpression surface_tint_color = 6;
   double elevation = 7;
+  ColorExpression indicator_color = 8;
   int32 selected_index = 11;
 }
 
 // package:flutter/src/material/navigation_drawer.dart
 message MaterialNavigationDrawerDestination {
   FlutterKeyExpression key = 2;
+  ColorExpression background_color = 3;
   WidgetExpression icon = 4;
   WidgetExpression selected_icon = 5;
   WidgetExpression label = 6;
@@ -1516,6 +1806,8 @@ message MaterialPopupMenuItem {
 message MaterialCircularProgressIndicator {
   FlutterKeyExpression key = 2;
   double value = 3;
+  ColorExpression background_color = 4;
+  ColorExpression color = 5;
   double stroke_width = 7;
   double stroke_align = 8;
   string semantics_label = 9;
@@ -1526,6 +1818,7 @@ message MaterialCircularProgressIndicator {
 message MaterialCircularProgressIndicatorNamedAdaptive {
   FlutterKeyExpression key = 2;
   double value = 3;
+  ColorExpression background_color = 4;
   double stroke_width = 6;
   string semantics_label = 7;
   string semantics_value = 8;
@@ -1536,6 +1829,8 @@ message MaterialCircularProgressIndicatorNamedAdaptive {
 message MaterialLinearProgressIndicator {
   FlutterKeyExpression key = 2;
   double value = 3;
+  ColorExpression background_color = 4;
+  ColorExpression color = 5;
   double min_height = 7;
   string semantics_label = 8;
   string semantics_value = 9;
@@ -1545,6 +1840,8 @@ message MaterialLinearProgressIndicator {
 message MaterialRefreshProgressIndicator {
   FlutterKeyExpression key = 2;
   double value = 3;
+  ColorExpression background_color = 4;
+  ColorExpression color = 5;
   double stroke_width = 7;
   double stroke_align = 8;
   string semantics_label = 9;
@@ -1561,10 +1858,12 @@ message MaterialScaffold {
   WidgetExpression end_drawer = 12;
   WidgetExpression bottom_navigation_bar = 14;
   WidgetExpression bottom_sheet = 15;
+  ColorExpression background_color = 16;
   bool resize_to_avoid_bottom_inset = 17;
   bool primary = 18;
   bool extend_body = 20;
   bool extend_body_behind_app_bar = 21;
+  ColorExpression drawer_scrim_color = 22;
   double drawer_edge_drag_width = 23;
   bool drawer_enable_open_drag_gesture = 24;
   bool end_drawer_enable_open_drag_gesture = 25;
@@ -1606,6 +1905,7 @@ message MaterialSelectableText {
   int32 max_lines = 13;
   double cursor_width = 14;
   double cursor_height = 15;
+  ColorExpression cursor_color = 17;
   bool enable_interactive_selection = 21;
   string semantics_label = 25;
 }
@@ -1625,6 +1925,10 @@ message MaterialSlider {
   double max = 9;
   int32 divisions = 10;
   string label = 11;
+  ColorExpression active_color = 12;
+  ColorExpression inactive_color = 13;
+  ColorExpression secondary_active_color = 14;
+  ColorExpression thumb_color = 15;
   bool autofocus = 20;
 }
 
@@ -1637,6 +1941,10 @@ message MaterialSliderNamedAdaptive {
   double max = 9;
   int32 divisions = 10;
   string label = 11;
+  ColorExpression active_color = 13;
+  ColorExpression inactive_color = 14;
+  ColorExpression secondary_active_color = 15;
+  ColorExpression thumb_color = 16;
   bool autofocus = 20;
 }
 
@@ -1644,10 +1952,12 @@ message MaterialSliderNamedAdaptive {
 message MaterialSnackBar {
   FlutterKeyExpression key = 2;
   WidgetExpression content = 3;
+  ColorExpression background_color = 4;
   double elevation = 5;
   double width = 8;
   double action_overflow_threshold = 12;
   bool show_close_icon = 13;
+  ColorExpression close_icon_color = 14;
   DurationExpression duration = 15;
 }
 
@@ -1655,6 +1965,12 @@ message MaterialSnackBar {
 message MaterialSwitch {
   FlutterKeyExpression key = 2;
   bool value = 3;
+  ColorExpression active_color = 5;
+  ColorExpression active_track_color = 6;
+  ColorExpression inactive_thumb_color = 7;
+  ColorExpression inactive_track_color = 8;
+  ColorExpression focus_color = 21;
+  ColorExpression hover_color = 22;
   double splash_radius = 24;
   bool autofocus = 27;
 }
@@ -1663,6 +1979,12 @@ message MaterialSwitch {
 message MaterialSwitchNamedAdaptive {
   FlutterKeyExpression key = 2;
   bool value = 3;
+  ColorExpression active_color = 5;
+  ColorExpression active_track_color = 6;
+  ColorExpression inactive_thumb_color = 7;
+  ColorExpression inactive_track_color = 8;
+  ColorExpression focus_color = 21;
+  ColorExpression hover_color = 22;
   double splash_radius = 24;
   bool autofocus = 27;
   bool apply_cupertino_theme = 28;
@@ -1672,31 +1994,45 @@ message MaterialSwitchNamedAdaptive {
 message MaterialSwitchListTile {
   FlutterKeyExpression key = 2;
   bool value = 3;
+  ColorExpression active_color = 5;
+  ColorExpression active_track_color = 6;
+  ColorExpression inactive_thumb_color = 7;
+  ColorExpression inactive_track_color = 8;
   double splash_radius = 21;
   bool autofocus = 24;
+  ColorExpression tile_color = 25;
   WidgetExpression title = 26;
   WidgetExpression subtitle = 27;
   bool is_three_line = 28;
   bool dense = 29;
   WidgetExpression secondary = 31;
   bool selected = 32;
+  ColorExpression selected_tile_color = 35;
   bool enable_feedback = 37;
+  ColorExpression hover_color = 38;
 }
 
 // package:flutter/src/material/switch_list_tile.dart
 message MaterialSwitchListTileNamedAdaptive {
   FlutterKeyExpression key = 2;
   bool value = 3;
+  ColorExpression active_color = 5;
+  ColorExpression active_track_color = 6;
+  ColorExpression inactive_thumb_color = 7;
+  ColorExpression inactive_track_color = 8;
   double splash_radius = 21;
   bool autofocus = 24;
   bool apply_cupertino_theme = 25;
+  ColorExpression tile_color = 26;
   WidgetExpression title = 27;
   WidgetExpression subtitle = 28;
   bool is_three_line = 29;
   bool dense = 30;
   WidgetExpression secondary = 32;
   bool selected = 33;
+  ColorExpression selected_tile_color = 36;
   bool enable_feedback = 38;
+  ColorExpression hover_color = 39;
 }
 
 // package:flutter/src/material/tab_controller.dart
@@ -1722,8 +2058,12 @@ message MaterialTabBar {
   FlutterKeyExpression key = 2;
   repeated WidgetExpression tabs = 3;
   bool is_scrollable = 5;
+  ColorExpression indicator_color = 7;
   bool automatic_indicator_color_adjustment = 8;
   double indicator_weight = 9;
+  ColorExpression divider_color = 13;
+  ColorExpression label_color = 14;
+  ColorExpression unselected_label_color = 17;
   bool enable_feedback = 22;
 }
 
@@ -1732,8 +2072,12 @@ message MaterialTabBarNamedSecondary {
   FlutterKeyExpression key = 2;
   repeated WidgetExpression tabs = 3;
   bool is_scrollable = 5;
+  ColorExpression indicator_color = 7;
   bool automatic_indicator_color_adjustment = 8;
   double indicator_weight = 9;
+  ColorExpression divider_color = 13;
+  ColorExpression label_color = 14;
+  ColorExpression unselected_label_color = 17;
   bool enable_feedback = 22;
 }
 
@@ -1748,6 +2092,16 @@ message MaterialTabBarView {
 message MaterialTabPageSelector {
   FlutterKeyExpression key = 2;
   double indicator_size = 4;
+  ColorExpression color = 5;
+  ColorExpression selected_color = 6;
+}
+
+// package:flutter/src/material/tabs.dart
+message MaterialTabPageSelectorIndicator {
+  FlutterKeyExpression key = 2;
+  ColorExpression background_color = 3;
+  ColorExpression border_color = 4;
+  double size = 5;
 }
 
 // package:flutter/src/material/text_button.dart
@@ -1784,6 +2138,7 @@ message MaterialTextField {
   double cursor_width = 35;
   double cursor_height = 36;
   bool cursor_opacity_animates = 38;
+  ColorExpression cursor_color = 39;
   bool enable_interactive_selection = 45;
   repeated string autofill_hints = 53;
   string restoration_id = 56;
@@ -1810,6 +2165,7 @@ message MaterialTextFormField {
   bool enabled = 37;
   double cursor_width = 38;
   double cursor_height = 39;
+  ColorExpression cursor_color = 41;
   bool enable_interactive_selection = 44;
   repeated string autofill_hints = 48;
   string restoration_id = 51;
@@ -1824,7 +2180,18 @@ message MaterialToggleButtons {
   FlutterKeyExpression key = 2;
   repeated WidgetExpression children = 3;
   repeated bool is_selected = 4;
+  ColorExpression color = 10;
+  ColorExpression selected_color = 11;
+  ColorExpression disabled_color = 12;
+  ColorExpression fill_color = 13;
+  ColorExpression focus_color = 14;
+  ColorExpression highlight_color = 15;
+  ColorExpression hover_color = 16;
+  ColorExpression splash_color = 17;
   bool render_border = 19;
+  ColorExpression border_color = 20;
+  ColorExpression selected_border_color = 21;
+  ColorExpression disabled_border_color = 22;
   double border_width = 24;
 }
 
@@ -1856,6 +2223,7 @@ message MaterialUserAccountsDrawerHeader {
   repeated WidgetExpression other_accounts_pictures = 6;
   WidgetExpression account_name = 9;
   WidgetExpression account_email = 10;
+  ColorExpression arrow_color = 12;
 }
 
 // package:flutter/src/widgets/_platform_selectable_region_context_menu_io.dart
@@ -1889,6 +2257,36 @@ message FlutterAnimatedSwitcher {
   WidgetExpression child = 3;
   DurationExpression duration = 4;
   DurationExpression reverse_duration = 5;
+}
+
+// package:flutter/src/widgets/app.dart
+message FlutterWidgetsApp {
+  FlutterKeyExpression key = 2;
+  string initial_route = 8;
+  WidgetExpression home = 10;
+  string title = 13;
+  ColorExpression color = 16;
+  bool show_performance_overlay = 22;
+  bool checkerboard_raster_cache_images = 23;
+  bool checkerboard_offscreen_layers = 24;
+  bool show_semantics_debugger = 25;
+  bool debug_show_widget_inspector = 26;
+  bool debug_show_checked_mode_banner = 27;
+  string restoration_scope_id = 31;
+}
+
+// package:flutter/src/widgets/app.dart
+message FlutterWidgetsAppNamedRouter {
+  FlutterKeyExpression key = 2;
+  string title = 9;
+  ColorExpression color = 12;
+  bool show_performance_overlay = 18;
+  bool checkerboard_raster_cache_images = 19;
+  bool checkerboard_offscreen_layers = 20;
+  bool show_semantics_debugger = 21;
+  bool debug_show_widget_inspector = 22;
+  bool debug_show_checked_mode_banner = 23;
+  string restoration_scope_id = 27;
 }
 
 // package:flutter/src/widgets/autofill.dart
@@ -1968,6 +2366,13 @@ message FlutterClipRRect {
 message FlutterClipRect {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 5;
+}
+
+// package:flutter/src/widgets/basic.dart
+message FlutterColoredBox {
+  ColorExpression color = 2;
+  WidgetExpression child = 3;
+  FlutterKeyExpression key = 4;
 }
 
 // package:flutter/src/widgets/basic.dart
@@ -2132,6 +2537,15 @@ message FlutterOverflowBox {
 }
 
 // package:flutter/src/widgets/basic.dart
+message FlutterPhysicalModel {
+  FlutterKeyExpression key = 2;
+  double elevation = 6;
+  ColorExpression color = 7;
+  ColorExpression shadow_color = 8;
+  WidgetExpression child = 9;
+}
+
+// package:flutter/src/widgets/basic.dart
 message FlutterPositioned {
   FlutterKeyExpression key = 2;
   double left = 3;
@@ -2172,6 +2586,7 @@ message FlutterRawImage {
   double width = 5;
   double height = 6;
   double scale = 7;
+  ColorExpression color = 8;
   bool match_text_direction = 15;
   bool invert_colors = 16;
   bool is_anti_alias = 18;
@@ -2333,6 +2748,7 @@ message FlutterWrap {
 // package:flutter/src/widgets/container.dart
 message FlutterContainer {
   FlutterKeyExpression key = 2;
+  ColorExpression color = 5;
   double width = 8;
   double height = 9;
   WidgetExpression child = 14;
@@ -2341,6 +2757,8 @@ message FlutterContainer {
 // package:flutter/src/widgets/default_selection_style.dart
 message FlutterDefaultSelectionStyle {
   FlutterKeyExpression key = 2;
+  ColorExpression cursor_color = 3;
+  ColorExpression selection_color = 4;
   WidgetExpression child = 6;
 }
 
@@ -2497,6 +2915,7 @@ message FlutterRawGestureDetector {
 // package:flutter/src/widgets/grid_paper.dart
 message FlutterGridPaper {
   FlutterKeyExpression key = 2;
+  ColorExpression color = 3;
   double interval = 4;
   int32 divisions = 5;
   int32 subdivisions = 6;
@@ -2518,6 +2937,7 @@ message FlutterIcon {
   double weight = 6;
   double grade = 7;
   double optical_size = 8;
+  ColorExpression color = 9;
   string semantic_label = 11;
 }
 
@@ -2530,6 +2950,7 @@ message FlutterImageNamedNetwork {
   bool exclude_from_semantics = 9;
   double width = 10;
   double height = 11;
+  ColorExpression color = 12;
   bool match_text_direction = 19;
   bool gapless_playback = 20;
   bool is_anti_alias = 22;
@@ -2546,6 +2967,7 @@ message FlutterImageNamedAsset {
   double scale = 9;
   double width = 10;
   double height = 11;
+  ColorExpression color = 12;
   bool match_text_direction = 19;
   bool gapless_playback = 20;
   bool is_anti_alias = 21;
@@ -2558,12 +2980,14 @@ message FlutterImageNamedAsset {
 message FlutterImageIcon {
   FlutterKeyExpression key = 3;
   double size = 4;
+  ColorExpression color = 5;
   string semantic_label = 6;
 }
 
 // package:flutter/src/widgets/implicit_animations.dart
 message FlutterAnimatedContainer {
   FlutterKeyExpression key = 2;
+  ColorExpression color = 5;
   double width = 8;
   double height = 9;
   WidgetExpression child = 14;
@@ -2678,6 +3102,7 @@ message FlutterLookupBoundary {
 // package:flutter/src/widgets/modal_barrier.dart
 message FlutterModalBarrier {
   FlutterKeyExpression key = 2;
+  ColorExpression color = 3;
   bool dismissible = 4;
   string semantics_label = 6;
   bool barrier_semantics_dismissible = 7;
@@ -2759,6 +3184,7 @@ message FlutterPerformanceOverlayNamedAllEnabled {
 // package:flutter/src/widgets/placeholder.dart
 message FlutterPlaceholder {
   FlutterKeyExpression key = 2;
+  ColorExpression color = 3;
   double stroke_width = 4;
   double fallback_width = 5;
   double fallback_height = 6;
@@ -2927,9 +3353,12 @@ message FlutterRawScrollbar {
   WidgetExpression child = 3;
   bool thumb_visibility = 5;
   double thickness = 8;
+  ColorExpression thumb_color = 9;
   double min_thumb_length = 10;
   double min_overscroll_length = 11;
   bool track_visibility = 12;
+  ColorExpression track_color = 14;
+  ColorExpression track_border_color = 15;
   DurationExpression fade_duration = 16;
   DurationExpression time_to_fade = 17;
   DurationExpression press_duration = 18;
@@ -3141,6 +3570,7 @@ message FlutterText {
   double text_scale_factor = 11;
   int32 max_lines = 12;
   string semantics_label = 13;
+  ColorExpression selection_color = 16;
 }
 
 // package:flutter/src/widgets/text_selection.dart
@@ -3161,6 +3591,14 @@ message FlutterTickerMode {
   FlutterKeyExpression key = 2;
   bool enabled = 3;
   WidgetExpression child = 4;
+}
+
+// package:flutter/src/widgets/title.dart
+message FlutterTitle {
+  FlutterKeyExpression key = 2;
+  string title = 3;
+  ColorExpression color = 4;
+  WidgetExpression child = 5;
 }
 
 // package:flutter/src/widgets/visibility.dart
@@ -3398,176 +3836,182 @@ message WidgetExpression {
     MaterialTabBarNamedSecondary material_tab_bar_named_secondary = 167;
     MaterialTabBarView material_tab_bar_view = 168;
     MaterialTabPageSelector material_tab_page_selector = 169;
-    MaterialTextButton material_text_button = 170;
-    MaterialTextButtonNamedIcon material_text_button_named_icon = 171;
-    MaterialTextField material_text_field = 172;
-    MaterialTextFormField material_text_form_field = 173;
-    MaterialToggleButtons material_toggle_buttons = 174;
-    MaterialTooltip material_tooltip = 175;
-    MaterialTooltipVisibility material_tooltip_visibility = 176;
-    MaterialUserAccountsDrawerHeader material_user_accounts_drawer_header = 177;
-    FlutterPlatformSelectableRegionContextMenu flutter_platform_selectable_region_context_menu = 178;
-    FlutterFocusableActionDetector flutter_focusable_action_detector = 179;
-    FlutterAnimatedSize flutter_animated_size = 180;
-    FlutterAnimatedSwitcher flutter_animated_switcher = 181;
-    FlutterAutofillGroup flutter_autofill_group = 182;
-    FlutterAutomaticKeepAlive flutter_automatic_keep_alive = 183;
-    FlutterCheckedModeBanner flutter_checked_mode_banner = 184;
-    FlutterAbsorbPointer flutter_absorb_pointer = 185;
-    FlutterAlign flutter_align = 186;
-    FlutterAspectRatio flutter_aspect_ratio = 187;
-    FlutterBlockSemantics flutter_block_semantics = 188;
-    FlutterCenter flutter_center = 189;
-    FlutterClipOval flutter_clip_oval = 190;
-    FlutterClipPath flutter_clip_path = 191;
-    FlutterClipRRect flutter_clip_r_rect = 192;
-    FlutterClipRect flutter_clip_rect = 193;
-    FlutterColumn flutter_column = 194;
-    FlutterCustomPaint flutter_custom_paint = 195;
-    FlutterExcludeSemantics flutter_exclude_semantics = 196;
-    FlutterExpanded flutter_expanded = 197;
-    FlutterFittedBox flutter_fitted_box = 198;
-    FlutterFlexible flutter_flexible = 199;
-    FlutterFractionallySizedBox flutter_fractionally_sized_box = 200;
-    FlutterIgnorePointer flutter_ignore_pointer = 201;
-    FlutterIndexedSemantics flutter_indexed_semantics = 202;
-    FlutterIndexedStack flutter_indexed_stack = 203;
-    FlutterIntrinsicHeight flutter_intrinsic_height = 204;
-    FlutterIntrinsicWidth flutter_intrinsic_width = 205;
-    FlutterKeyedSubtree flutter_keyed_subtree = 206;
-    FlutterKeyedSubtreeNamedWrap flutter_keyed_subtree_named_wrap = 207;
-    FlutterLimitedBox flutter_limited_box = 208;
-    FlutterListBody flutter_list_body = 209;
-    FlutterListener flutter_listener = 210;
-    FlutterMergeSemantics flutter_merge_semantics = 211;
-    FlutterMetaData flutter_meta_data = 212;
-    FlutterMouseRegion flutter_mouse_region = 213;
-    FlutterOffstage flutter_offstage = 214;
-    FlutterOpacity flutter_opacity = 215;
-    FlutterOverflowBox flutter_overflow_box = 216;
-    FlutterPositioned flutter_positioned = 217;
-    FlutterPositionedNamedFill flutter_positioned_named_fill = 218;
-    FlutterPositionedDirectional flutter_positioned_directional = 219;
-    FlutterRawImage flutter_raw_image = 220;
-    FlutterRepaintBoundary flutter_repaint_boundary = 221;
-    FlutterRepaintBoundaryNamedWrap flutter_repaint_boundary_named_wrap = 222;
-    FlutterRotatedBox flutter_rotated_box = 223;
-    FlutterRow flutter_row = 224;
-    FlutterSemantics flutter_semantics = 225;
-    FlutterSizedBox flutter_sized_box = 226;
-    FlutterSizedBoxNamedExpand flutter_sized_box_named_expand = 227;
-    FlutterSizedBoxNamedShrink flutter_sized_box_named_shrink = 228;
-    FlutterSizedBoxNamedFromSize flutter_sized_box_named_from_size = 229;
-    FlutterSizedBoxNamedSquare flutter_sized_box_named_square = 230;
-    FlutterSliverToBoxAdapter flutter_sliver_to_box_adapter = 231;
-    FlutterStack flutter_stack = 232;
-    FlutterTransformNamedRotate flutter_transform_named_rotate = 233;
-    FlutterTransformNamedScale flutter_transform_named_scale = 234;
-    FlutterTransformNamedFlip flutter_transform_named_flip = 235;
-    FlutterUnconstrainedBox flutter_unconstrained_box = 236;
-    FlutterWrap flutter_wrap = 237;
-    FlutterContainer flutter_container = 238;
-    FlutterDefaultSelectionStyle flutter_default_selection_style = 239;
-    FlutterDefaultSelectionStyleNamedFallback flutter_default_selection_style_named_fallback = 240;
-    FlutterDefaultTextEditingShortcuts flutter_default_text_editing_shortcuts = 241;
-    FlutterDismissible flutter_dismissible = 242;
-    FlutterDisplayFeatureSubScreen flutter_display_feature_sub_screen = 243;
-    FlutterDraggable flutter_draggable = 244;
-    FlutterLongPressDraggable flutter_long_press_draggable = 245;
-    FlutterDraggableScrollableActuator flutter_draggable_scrollable_actuator = 246;
-    FlutterFadeInImageNamedAssetNetwork flutter_fade_in_image_named_asset_network = 247;
-    FlutterExcludeFocus flutter_exclude_focus = 248;
-    FlutterFocus flutter_focus = 249;
-    FlutterFocusScope flutter_focus_scope = 250;
-    FlutterExcludeFocusTraversal flutter_exclude_focus_traversal = 251;
-    FlutterFocusTraversalGroup flutter_focus_traversal_group = 252;
-    FlutterForm flutter_form = 253;
-    FlutterErrorWidgetNamedWithDetails flutter_error_widget_named_with_details = 254;
-    FlutterGestureDetector flutter_gesture_detector = 255;
-    FlutterRawGestureDetector flutter_raw_gesture_detector = 256;
-    FlutterGridPaper flutter_grid_paper = 257;
-    FlutterHeroMode flutter_hero_mode = 258;
-    FlutterIcon flutter_icon = 259;
-    FlutterImageNamedNetwork flutter_image_named_network = 260;
-    FlutterImageNamedAsset flutter_image_named_asset = 261;
-    FlutterImageIcon flutter_image_icon = 262;
-    FlutterAnimatedContainer flutter_animated_container = 263;
-    FlutterAnimatedFractionallySizedBox flutter_animated_fractionally_sized_box = 264;
-    FlutterAnimatedOpacity flutter_animated_opacity = 265;
-    FlutterAnimatedPositioned flutter_animated_positioned = 266;
-    FlutterAnimatedPositionedDirectional flutter_animated_positioned_directional = 267;
-    FlutterAnimatedRotation flutter_animated_rotation = 268;
-    FlutterAnimatedScale flutter_animated_scale = 269;
-    FlutterSliverAnimatedOpacity flutter_sliver_animated_opacity = 270;
-    FlutterInteractiveViewer flutter_interactive_viewer = 271;
-    FlutterListWheelScrollView flutter_list_wheel_scroll_view = 272;
-    FlutterLookupBoundary flutter_lookup_boundary = 273;
-    FlutterModalBarrier flutter_modal_barrier = 274;
-    FlutterNavigationToolbar flutter_navigation_toolbar = 275;
-    FlutterHeroControllerScopeNamedNone flutter_hero_controller_scope_named_none = 276;
-    FlutterNavigator flutter_navigator = 277;
-    FlutterNotificationListener flutter_notification_listener = 278;
-    FlutterOverflowBar flutter_overflow_bar = 279;
-    FlutterOverlay flutter_overlay = 280;
-    FlutterPageView flutter_page_view = 281;
-    FlutterPerformanceOverlay flutter_performance_overlay = 282;
-    FlutterPerformanceOverlayNamedAllEnabled flutter_performance_overlay_named_all_enabled = 283;
-    FlutterPlaceholder flutter_placeholder = 284;
-    FlutterAndroidView flutter_android_view = 285;
-    FlutterHtmlElementView flutter_html_element_view = 286;
-    FlutterUiKitView flutter_ui_kit_view = 287;
-    FlutterPrimaryScrollControllerNamedNone flutter_primary_scroll_controller_named_none = 288;
-    FlutterReorderableDelayedDragStartListener flutter_reorderable_delayed_drag_start_listener = 289;
-    FlutterReorderableDragStartListener flutter_reorderable_drag_start_listener = 290;
-    FlutterRestorationScope flutter_restoration_scope = 291;
-    FlutterRootRestorationScope flutter_root_restoration_scope = 292;
-    FlutterUnmanagedRestorationScope flutter_unmanaged_restoration_scope = 293;
-    FlutterSafeArea flutter_safe_area = 294;
-    FlutterSliverSafeArea flutter_sliver_safe_area = 295;
-    FlutterScrollNotificationObserver flutter_scroll_notification_observer = 296;
-    FlutterCustomScrollView flutter_custom_scroll_view = 297;
-    FlutterGridViewNamedCount flutter_grid_view_named_count = 298;
-    FlutterGridViewNamedExtent flutter_grid_view_named_extent = 299;
-    FlutterListView flutter_list_view = 300;
-    FlutterRawScrollbar flutter_raw_scrollbar = 301;
-    FlutterSelectionContainerNamedDisabled flutter_selection_container_named_disabled = 302;
-    FlutterSemanticsDebugger flutter_semantics_debugger = 303;
-    FlutterSharedAppData flutter_shared_app_data = 304;
-    FlutterShortcutRegistrar flutter_shortcut_registrar = 305;
-    FlutterSingleChildScrollView flutter_single_child_scroll_view = 306;
-    FlutterSizeChangedLayoutNotifier flutter_size_changed_layout_notifier = 307;
-    FlutterKeepAlive flutter_keep_alive = 308;
-    FlutterSliverConstrainedCrossAxis flutter_sliver_constrained_cross_axis = 309;
-    FlutterSliverCrossAxisExpanded flutter_sliver_cross_axis_expanded = 310;
-    FlutterSliverCrossAxisGroup flutter_sliver_cross_axis_group = 311;
-    FlutterSliverFixedExtentListNamedList flutter_sliver_fixed_extent_list_named_list = 312;
-    FlutterSliverGridNamedCount flutter_sliver_grid_named_count = 313;
-    FlutterSliverGridNamedExtent flutter_sliver_grid_named_extent = 314;
-    FlutterSliverIgnorePointer flutter_sliver_ignore_pointer = 315;
-    FlutterSliverListNamedList flutter_sliver_list_named_list = 316;
-    FlutterSliverMainAxisGroup flutter_sliver_main_axis_group = 317;
-    FlutterSliverOffstage flutter_sliver_offstage = 318;
-    FlutterSliverOpacity flutter_sliver_opacity = 319;
-    FlutterSliverFillRemaining flutter_sliver_fill_remaining = 320;
-    FlutterSliverPrototypeExtentListNamedList flutter_sliver_prototype_extent_list_named_list = 321;
-    FlutterSpacer flutter_spacer = 322;
-    FlutterTable flutter_table = 323;
-    FlutterTableCell flutter_table_cell = 324;
-    FlutterTapRegion flutter_tap_region = 325;
-    FlutterTapRegionSurface flutter_tap_region_surface = 326;
-    FlutterTextFieldTapRegion flutter_text_field_tap_region = 327;
-    FlutterDefaultTextStyleNamedFallback flutter_default_text_style_named_fallback = 328;
-    FlutterText flutter_text = 329;
-    FlutterTextSelectionGestureDetector flutter_text_selection_gesture_detector = 330;
-    FlutterTexture flutter_texture = 331;
-    FlutterTickerMode flutter_ticker_mode = 332;
-    FlutterSliverVisibility flutter_sliver_visibility = 333;
-    FlutterSliverVisibilityNamedMaintain flutter_sliver_visibility_named_maintain = 334;
-    FlutterVisibility flutter_visibility = 335;
-    FlutterVisibilityNamedMaintain flutter_visibility_named_maintain = 336;
-    FlutterWidgetInspector flutter_widget_inspector = 337;
-    FlutterWillPopScope flutter_will_pop_scope = 338;
-    FlutterProjectMyApp flutter_project_my_app = 339;
-    FlutterProjectMyHomePage flutter_project_my_home_page = 340;
+    MaterialTabPageSelectorIndicator material_tab_page_selector_indicator = 170;
+    MaterialTextButton material_text_button = 171;
+    MaterialTextButtonNamedIcon material_text_button_named_icon = 172;
+    MaterialTextField material_text_field = 173;
+    MaterialTextFormField material_text_form_field = 174;
+    MaterialToggleButtons material_toggle_buttons = 175;
+    MaterialTooltip material_tooltip = 176;
+    MaterialTooltipVisibility material_tooltip_visibility = 177;
+    MaterialUserAccountsDrawerHeader material_user_accounts_drawer_header = 178;
+    FlutterPlatformSelectableRegionContextMenu flutter_platform_selectable_region_context_menu = 179;
+    FlutterFocusableActionDetector flutter_focusable_action_detector = 180;
+    FlutterAnimatedSize flutter_animated_size = 181;
+    FlutterAnimatedSwitcher flutter_animated_switcher = 182;
+    FlutterWidgetsApp flutter_widgets_app = 183;
+    FlutterWidgetsAppNamedRouter flutter_widgets_app_named_router = 184;
+    FlutterAutofillGroup flutter_autofill_group = 185;
+    FlutterAutomaticKeepAlive flutter_automatic_keep_alive = 186;
+    FlutterCheckedModeBanner flutter_checked_mode_banner = 187;
+    FlutterAbsorbPointer flutter_absorb_pointer = 188;
+    FlutterAlign flutter_align = 189;
+    FlutterAspectRatio flutter_aspect_ratio = 190;
+    FlutterBlockSemantics flutter_block_semantics = 191;
+    FlutterCenter flutter_center = 192;
+    FlutterClipOval flutter_clip_oval = 193;
+    FlutterClipPath flutter_clip_path = 194;
+    FlutterClipRRect flutter_clip_r_rect = 195;
+    FlutterClipRect flutter_clip_rect = 196;
+    FlutterColoredBox flutter_colored_box = 197;
+    FlutterColumn flutter_column = 198;
+    FlutterCustomPaint flutter_custom_paint = 199;
+    FlutterExcludeSemantics flutter_exclude_semantics = 200;
+    FlutterExpanded flutter_expanded = 201;
+    FlutterFittedBox flutter_fitted_box = 202;
+    FlutterFlexible flutter_flexible = 203;
+    FlutterFractionallySizedBox flutter_fractionally_sized_box = 204;
+    FlutterIgnorePointer flutter_ignore_pointer = 205;
+    FlutterIndexedSemantics flutter_indexed_semantics = 206;
+    FlutterIndexedStack flutter_indexed_stack = 207;
+    FlutterIntrinsicHeight flutter_intrinsic_height = 208;
+    FlutterIntrinsicWidth flutter_intrinsic_width = 209;
+    FlutterKeyedSubtree flutter_keyed_subtree = 210;
+    FlutterKeyedSubtreeNamedWrap flutter_keyed_subtree_named_wrap = 211;
+    FlutterLimitedBox flutter_limited_box = 212;
+    FlutterListBody flutter_list_body = 213;
+    FlutterListener flutter_listener = 214;
+    FlutterMergeSemantics flutter_merge_semantics = 215;
+    FlutterMetaData flutter_meta_data = 216;
+    FlutterMouseRegion flutter_mouse_region = 217;
+    FlutterOffstage flutter_offstage = 218;
+    FlutterOpacity flutter_opacity = 219;
+    FlutterOverflowBox flutter_overflow_box = 220;
+    FlutterPhysicalModel flutter_physical_model = 221;
+    FlutterPositioned flutter_positioned = 222;
+    FlutterPositionedNamedFill flutter_positioned_named_fill = 223;
+    FlutterPositionedDirectional flutter_positioned_directional = 224;
+    FlutterRawImage flutter_raw_image = 225;
+    FlutterRepaintBoundary flutter_repaint_boundary = 226;
+    FlutterRepaintBoundaryNamedWrap flutter_repaint_boundary_named_wrap = 227;
+    FlutterRotatedBox flutter_rotated_box = 228;
+    FlutterRow flutter_row = 229;
+    FlutterSemantics flutter_semantics = 230;
+    FlutterSizedBox flutter_sized_box = 231;
+    FlutterSizedBoxNamedExpand flutter_sized_box_named_expand = 232;
+    FlutterSizedBoxNamedShrink flutter_sized_box_named_shrink = 233;
+    FlutterSizedBoxNamedFromSize flutter_sized_box_named_from_size = 234;
+    FlutterSizedBoxNamedSquare flutter_sized_box_named_square = 235;
+    FlutterSliverToBoxAdapter flutter_sliver_to_box_adapter = 236;
+    FlutterStack flutter_stack = 237;
+    FlutterTransformNamedRotate flutter_transform_named_rotate = 238;
+    FlutterTransformNamedScale flutter_transform_named_scale = 239;
+    FlutterTransformNamedFlip flutter_transform_named_flip = 240;
+    FlutterUnconstrainedBox flutter_unconstrained_box = 241;
+    FlutterWrap flutter_wrap = 242;
+    FlutterContainer flutter_container = 243;
+    FlutterDefaultSelectionStyle flutter_default_selection_style = 244;
+    FlutterDefaultSelectionStyleNamedFallback flutter_default_selection_style_named_fallback = 245;
+    FlutterDefaultTextEditingShortcuts flutter_default_text_editing_shortcuts = 246;
+    FlutterDismissible flutter_dismissible = 247;
+    FlutterDisplayFeatureSubScreen flutter_display_feature_sub_screen = 248;
+    FlutterDraggable flutter_draggable = 249;
+    FlutterLongPressDraggable flutter_long_press_draggable = 250;
+    FlutterDraggableScrollableActuator flutter_draggable_scrollable_actuator = 251;
+    FlutterFadeInImageNamedAssetNetwork flutter_fade_in_image_named_asset_network = 252;
+    FlutterExcludeFocus flutter_exclude_focus = 253;
+    FlutterFocus flutter_focus = 254;
+    FlutterFocusScope flutter_focus_scope = 255;
+    FlutterExcludeFocusTraversal flutter_exclude_focus_traversal = 256;
+    FlutterFocusTraversalGroup flutter_focus_traversal_group = 257;
+    FlutterForm flutter_form = 258;
+    FlutterErrorWidgetNamedWithDetails flutter_error_widget_named_with_details = 259;
+    FlutterGestureDetector flutter_gesture_detector = 260;
+    FlutterRawGestureDetector flutter_raw_gesture_detector = 261;
+    FlutterGridPaper flutter_grid_paper = 262;
+    FlutterHeroMode flutter_hero_mode = 263;
+    FlutterIcon flutter_icon = 264;
+    FlutterImageNamedNetwork flutter_image_named_network = 265;
+    FlutterImageNamedAsset flutter_image_named_asset = 266;
+    FlutterImageIcon flutter_image_icon = 267;
+    FlutterAnimatedContainer flutter_animated_container = 268;
+    FlutterAnimatedFractionallySizedBox flutter_animated_fractionally_sized_box = 269;
+    FlutterAnimatedOpacity flutter_animated_opacity = 270;
+    FlutterAnimatedPositioned flutter_animated_positioned = 271;
+    FlutterAnimatedPositionedDirectional flutter_animated_positioned_directional = 272;
+    FlutterAnimatedRotation flutter_animated_rotation = 273;
+    FlutterAnimatedScale flutter_animated_scale = 274;
+    FlutterSliverAnimatedOpacity flutter_sliver_animated_opacity = 275;
+    FlutterInteractiveViewer flutter_interactive_viewer = 276;
+    FlutterListWheelScrollView flutter_list_wheel_scroll_view = 277;
+    FlutterLookupBoundary flutter_lookup_boundary = 278;
+    FlutterModalBarrier flutter_modal_barrier = 279;
+    FlutterNavigationToolbar flutter_navigation_toolbar = 280;
+    FlutterHeroControllerScopeNamedNone flutter_hero_controller_scope_named_none = 281;
+    FlutterNavigator flutter_navigator = 282;
+    FlutterNotificationListener flutter_notification_listener = 283;
+    FlutterOverflowBar flutter_overflow_bar = 284;
+    FlutterOverlay flutter_overlay = 285;
+    FlutterPageView flutter_page_view = 286;
+    FlutterPerformanceOverlay flutter_performance_overlay = 287;
+    FlutterPerformanceOverlayNamedAllEnabled flutter_performance_overlay_named_all_enabled = 288;
+    FlutterPlaceholder flutter_placeholder = 289;
+    FlutterAndroidView flutter_android_view = 290;
+    FlutterHtmlElementView flutter_html_element_view = 291;
+    FlutterUiKitView flutter_ui_kit_view = 292;
+    FlutterPrimaryScrollControllerNamedNone flutter_primary_scroll_controller_named_none = 293;
+    FlutterReorderableDelayedDragStartListener flutter_reorderable_delayed_drag_start_listener = 294;
+    FlutterReorderableDragStartListener flutter_reorderable_drag_start_listener = 295;
+    FlutterRestorationScope flutter_restoration_scope = 296;
+    FlutterRootRestorationScope flutter_root_restoration_scope = 297;
+    FlutterUnmanagedRestorationScope flutter_unmanaged_restoration_scope = 298;
+    FlutterSafeArea flutter_safe_area = 299;
+    FlutterSliverSafeArea flutter_sliver_safe_area = 300;
+    FlutterScrollNotificationObserver flutter_scroll_notification_observer = 301;
+    FlutterCustomScrollView flutter_custom_scroll_view = 302;
+    FlutterGridViewNamedCount flutter_grid_view_named_count = 303;
+    FlutterGridViewNamedExtent flutter_grid_view_named_extent = 304;
+    FlutterListView flutter_list_view = 305;
+    FlutterRawScrollbar flutter_raw_scrollbar = 306;
+    FlutterSelectionContainerNamedDisabled flutter_selection_container_named_disabled = 307;
+    FlutterSemanticsDebugger flutter_semantics_debugger = 308;
+    FlutterSharedAppData flutter_shared_app_data = 309;
+    FlutterShortcutRegistrar flutter_shortcut_registrar = 310;
+    FlutterSingleChildScrollView flutter_single_child_scroll_view = 311;
+    FlutterSizeChangedLayoutNotifier flutter_size_changed_layout_notifier = 312;
+    FlutterKeepAlive flutter_keep_alive = 313;
+    FlutterSliverConstrainedCrossAxis flutter_sliver_constrained_cross_axis = 314;
+    FlutterSliverCrossAxisExpanded flutter_sliver_cross_axis_expanded = 315;
+    FlutterSliverCrossAxisGroup flutter_sliver_cross_axis_group = 316;
+    FlutterSliverFixedExtentListNamedList flutter_sliver_fixed_extent_list_named_list = 317;
+    FlutterSliverGridNamedCount flutter_sliver_grid_named_count = 318;
+    FlutterSliverGridNamedExtent flutter_sliver_grid_named_extent = 319;
+    FlutterSliverIgnorePointer flutter_sliver_ignore_pointer = 320;
+    FlutterSliverListNamedList flutter_sliver_list_named_list = 321;
+    FlutterSliverMainAxisGroup flutter_sliver_main_axis_group = 322;
+    FlutterSliverOffstage flutter_sliver_offstage = 323;
+    FlutterSliverOpacity flutter_sliver_opacity = 324;
+    FlutterSliverFillRemaining flutter_sliver_fill_remaining = 325;
+    FlutterSliverPrototypeExtentListNamedList flutter_sliver_prototype_extent_list_named_list = 326;
+    FlutterSpacer flutter_spacer = 327;
+    FlutterTable flutter_table = 328;
+    FlutterTableCell flutter_table_cell = 329;
+    FlutterTapRegion flutter_tap_region = 330;
+    FlutterTapRegionSurface flutter_tap_region_surface = 331;
+    FlutterTextFieldTapRegion flutter_text_field_tap_region = 332;
+    FlutterDefaultTextStyleNamedFallback flutter_default_text_style_named_fallback = 333;
+    FlutterText flutter_text = 334;
+    FlutterTextSelectionGestureDetector flutter_text_selection_gesture_detector = 335;
+    FlutterTexture flutter_texture = 336;
+    FlutterTickerMode flutter_ticker_mode = 337;
+    FlutterTitle flutter_title = 338;
+    FlutterSliverVisibility flutter_sliver_visibility = 339;
+    FlutterSliverVisibilityNamedMaintain flutter_sliver_visibility_named_maintain = 340;
+    FlutterVisibility flutter_visibility = 341;
+    FlutterVisibilityNamedMaintain flutter_visibility_named_maintain = 342;
+    FlutterWidgetInspector flutter_widget_inspector = 343;
+    FlutterWillPopScope flutter_will_pop_scope = 344;
+    FlutterProjectMyApp flutter_project_my_app = 345;
+    FlutterProjectMyHomePage flutter_project_my_home_page = 346;
   }
 }

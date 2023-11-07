@@ -53,7 +53,7 @@ class Parameter {
     }
   }
 
-  String? toDartParameter(String fieldName) {
+  String? toDartParameter(String fieldName, String? typeEvalAlias) {
     final namedParamPrefix = isNamed ? '${name.originalText}: ' : '';
     if (typeMapping == null) {
       // setting unbound generic params to null leads to errors (which we can't handle right now)
@@ -71,7 +71,7 @@ class Parameter {
             ? 'null'
             : "$kThrowMissing('${name.camelCase}')";
 
-    final evalFn = typeMapping?.toDartEvalFn();
+    final evalFn = typeMapping?.toDartEvalFn(typeEvalAlias);
     final isRepeated =
         typeMapping?.structureStrategy == StructureStrategy.treatAsRepeated;
     if (evalFn != null) {

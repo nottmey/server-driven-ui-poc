@@ -4,6 +4,56 @@
 
 syntax = "proto3";
 
+// dart:ui
+message Color {
+  int32 value = 2;
+}
+
+// dart:ui
+message ColorNamedFromARGB {
+  int32 a = 2;
+  int32 r = 3;
+  int32 g = 4;
+  int32 b = 5;
+}
+
+// dart:ui
+message ColorNamedFromRGBO {
+  int32 r = 2;
+  int32 g = 3;
+  int32 b = 4;
+  double opacity = 5;
+}
+
+// package:flutter/src/cupertino/colors.dart
+message CupertinoDynamicColor {
+  string debug_label = 2;
+  ColorExpression color = 3;
+  ColorExpression dark_color = 4;
+  ColorExpression high_contrast_color = 5;
+  ColorExpression dark_high_contrast_color = 6;
+  ColorExpression elevated_color = 7;
+  ColorExpression dark_elevated_color = 8;
+  ColorExpression high_contrast_elevated_color = 9;
+  ColorExpression dark_high_contrast_elevated_color = 10;
+}
+
+// package:flutter/src/cupertino/colors.dart
+message CupertinoDynamicColorNamedWithBrightness {
+  string debug_label = 2;
+  ColorExpression color = 3;
+  ColorExpression dark_color = 4;
+}
+
+// package:flutter/src/cupertino/colors.dart
+message CupertinoDynamicColorNamedWithBrightnessAndContrast {
+  string debug_label = 2;
+  ColorExpression color = 3;
+  ColorExpression dark_color = 4;
+  ColorExpression high_contrast_color = 5;
+  ColorExpression dark_high_contrast_color = 6;
+}
+
 // dart:core
 message Duration {
   int32 days = 2;
@@ -39,6 +89,17 @@ message FlutterUniqueKey {
   
 }
 
+
+message ColorExpression {
+  oneof result {
+    Color color = 2;
+    ColorNamedFromARGB color_named_from_a_r_g_b = 3;
+    ColorNamedFromRGBO color_named_from_r_g_b_o = 4;
+    CupertinoDynamicColor cupertino_dynamic_color = 5;
+    CupertinoDynamicColorNamedWithBrightness cupertino_dynamic_color_named_with_brightness = 6;
+    CupertinoDynamicColorNamedWithBrightnessAndContrast cupertino_dynamic_color_named_with_brightness_and_contrast = 7;
+  }
+}
 
 message DurationExpression {
   oneof result {

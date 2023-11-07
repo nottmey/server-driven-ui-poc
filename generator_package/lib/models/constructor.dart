@@ -75,12 +75,13 @@ message ${messageName.pascalCase} {
     String protoImportAlias,
     String expressionName,
     String constructorImportAlias,
+    String? typeEvalAlias,
   ) {
     final fieldName = messageName.camelCase;
     final constructorCall =
         '$constructorImportAlias.$typeName${constructorName != null ? ".$constructorName" : ""}';
     final constructorParameters = parameters
-        .map((p) => p.toDartParameter(fieldName))
+        .map((p) => p.toDartParameter(fieldName, typeEvalAlias))
         .whereType<String>()
         .join(', ');
     return '''
