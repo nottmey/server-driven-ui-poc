@@ -64,7 +64,7 @@ syntax = "proto3";
 
 ${payloadTypes.expand((t) => payloadConstructors[t]!).map((c) => c.toProtoMessage()).join("\n")}
 
-${payloadTypes.map((t) => t.toProtoMessage(payloadConstructors[t]!)).whereType<String>().join("\n")}
+${payloadTypes.map((t) => t.toProtoMessage(payloadConstructors[t]!)).join("\n")}
 ''';
   }
 
@@ -122,7 +122,7 @@ $kGeneratedFileHeader
 
 import 'package:proto_package/proto/types.pb.dart' as types;
 
-${entries.mapIndexed((i, e) => e.key.toDartImport(i)).whereType<String>().join("\n")}
+${entries.mapIndexed((i, e) => e.key.toDartImport(i)).join("\n")}
 
 ${entries.mapIndexed((i, e) => e.value.mapIndexed((j, c) => c.toDartImport(i, j))).flattened.join("\n")}
 
@@ -130,7 +130,7 @@ T $kThrowMissing<T>(String field) {
   throw AssertionError('required field \$field is missing');
 }
 
-${entries.mapIndexed((i, e) => e.key.toDartSwitchCase(i, e.value)).whereType<String>().join("\n")}
+${entries.mapIndexed((i, e) => e.key.toDartSwitchCase(i, e.value)).join("\n")}
 ''';
   }
 
