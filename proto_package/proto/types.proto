@@ -4,6 +4,16 @@
 
 syntax = "proto3";
 
+// dart:core
+message Duration {
+  int32 days = 2;
+  int32 hours = 3;
+  int32 minutes = 4;
+  int32 seconds = 5;
+  int32 milliseconds = 6;
+  int32 microseconds = 7;
+}
+
 // package:flutter/src/widgets/framework.dart
 message FlutterGlobalKey {
   string debug_label = 2;
@@ -29,6 +39,12 @@ message FlutterUniqueKey {
   
 }
 
+
+message DurationExpression {
+  oneof result {
+    Duration duration = 2;
+  }
+}
 
 message FlutterKeyExpression {
   oneof result {

@@ -11,22 +11,16 @@ enum ConstructorKind { widget, payload }
 
 class Constructor {
   final ConstructorElement element;
-  final ConstructorKind kind;
+  final bool isWidgetConstructor;
   final ReCase messageName;
   final String typeName;
   final String? constructorName;
-  final Set<Element> constructingTypes;
+  final Set<InterfaceElement> constructingTypes;
   final Iterable<Parameter> parameters;
-
-  bool get isWidgetConstructor => kind == ConstructorKind.widget;
-
-  bool canConstructType(DartType type) {
-    return constructingTypes.contains(type.element);
-  }
 
   Constructor({
     required this.element,
-    required this.kind,
+    required this.isWidgetConstructor,
     required this.messageName,
     required this.typeName,
     required this.constructorName,
@@ -39,9 +33,6 @@ class Constructor {
       element.enclosingElement,
       ...element.enclosingElement.allSupertypes.map((t) => t.element),
     };
-    final kind = constructingTypes.any((e) => e.isWidget)
-        ? ConstructorKind.widget
-        : ConstructorKind.payload;
     final libraryPrefix = element.toLibraryPrefix();
 
     final typeName = element.enclosingElement.name;
@@ -52,7 +43,7 @@ class Constructor {
     final exportingConstructorName = '$libraryPrefix$typeName$postfix';
     return Constructor(
       element: element,
-      kind: kind,
+      isWidgetConstructor: constructingTypes.any((e) => e.isWidgetTypeExactly),
       messageName: ReCase(exportingConstructorName),
       typeName: typeName,
       constructorName: constructorName.isEmpty ? null : constructorName,
@@ -61,6 +52,10 @@ class Constructor {
           .where((p) => !p.hasDeprecated)
           .mapIndexed(Parameter.ofElement),
     );
+  }
+
+  bool canConstructType(DartType type) {
+    return constructingTypes.contains(type.element);
   }
 
   String toProtoField(int index) {
@@ -93,7 +88,15 @@ message ${messageName.pascalCase} {
       return $constructorCall($constructorParameters);''';
   }
 
-  String toDartImport(int i, int j) {
-    return "import '${element.librarySource.uri}' as \$t${i}c$j;";
+  String toDartImport(int i, [int? j]) {
+    return "import '${element.librarySource.uri}' as ${toImportAlias(i, j)};";
+  }
+
+  String toImportAlias(int i, [int? j]) {
+    if (j == null) {
+      return '\$c$i';
+    } else {
+      return '\$t${i}c$j';
+    }
   }
 }

@@ -2,27 +2,13 @@ import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/dart/element/type.dart';
 
 extension DartTypeIsWidgetExtension on DartType {
-  bool get isWidget {
-    return element != null && element!.isWidget;
-  }
-
-  bool get isWidgetList {
-    if (isDartCoreIterable || isDartCoreList) {
-      assert(this is ParameterizedType);
-      final typeArguments = (this as ParameterizedType).typeArguments;
-
-      assert(typeArguments.length == 1);
-      final subType = typeArguments.first;
-
-      return subType.isWidget;
-    } else {
-      return false;
-    }
+  bool get isWidgetTypeExactly {
+    return element != null && element!.isWidgetTypeExactly;
   }
 }
 
-extension ElemnentIsWidgetExtension on Element {
-  bool get isWidget {
+extension ElementIsWidgetExtension on Element {
+  bool get isWidgetTypeExactly {
     return librarySource?.uri.path == 'flutter/src/widgets/framework.dart' &&
         name == 'Widget';
   }

@@ -32,6 +32,15 @@ extension TypeMappingCreationExtension on DartType {
       return _directEquivalentTypeMapping('double');
     } else if (isDartCoreString) {
       return _directEquivalentTypeMapping('string');
+    } else if (isDartCoreObject) {
+      // TODO handle object type usages
+      return null;
+    } else if (this is DynamicType) {
+      // TODO dynamic types
+      return null;
+    } else if (this is TypeParameterType) {
+      // TODO type parameter usages
+      return null;
     } else if (isDartCoreEnum) {
       // TODO enums
       return null;
@@ -51,7 +60,7 @@ extension TypeMappingCreationExtension on DartType {
       } else {
         return subType.toTypeMapping()?.toRepeated();
       }
-    } else if (isWidget) {
+    } else if (isWidgetTypeExactly) {
       return TypeMapping._of(
         dartType: this,
         protoType: kWidgetExpression,
@@ -64,7 +73,7 @@ extension TypeMappingCreationExtension on DartType {
       // TODO use correct name when type params are present
       final name = element?.name;
       final libraryPrefix = element?.toLibraryPrefix();
-      if (name == 'Key') {
+      if (name == 'Key' || name == 'Duration') {
         // TODO enable more types, e.g. Duration (not explicitly exported by libs)
         return TypeMapping._of(
           dartType: this,
@@ -75,12 +84,6 @@ extension TypeMappingCreationExtension on DartType {
       } else {
         return null;
       }
-    } else if (this is DynamicType) {
-      // TODO dynamic types
-      return null;
-    } else if (this is TypeParameterType) {
-      // TODO type parameter usages
-      return null;
     } else {
       // any other not implemented types
       return null;

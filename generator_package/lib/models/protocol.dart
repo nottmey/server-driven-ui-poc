@@ -2,52 +2,78 @@ import 'package:analyzer/dart/element/element.dart';
 import 'package:collection/collection.dart';
 import 'package:generator_package/constants.dart';
 import 'package:generator_package/models/constructor.dart';
-import 'package:generator_package/models/library.dart';
 import 'package:generator_package/models/type_mapping.dart';
 import 'package:generator_package/unique_by_key_extension.dart';
+import 'package:generator_package/usable_consturctors_extension.dart';
 
 class Protocol {
-  final Iterable<Library> libraries;
-  final Iterable<Constructor> constructors;
   final Iterable<Constructor> widgetConstructors;
   final Iterable<TypeMapping> payloadTypes;
   final Map<TypeMapping, Iterable<Constructor>> payloadConstructors;
 
   Protocol({
-    required this.libraries,
-    required this.constructors,
     required this.widgetConstructors,
     required this.payloadTypes,
     required this.payloadConstructors,
   });
 
-  factory Protocol.ofElements(Iterable<LibraryElement> elements) {
-    final libraries = elements.map(Library.ofElement);
-    final uniqueConstructors = libraries
-        .expand((l) => l.constructors)
+  factory Protocol.ofElements(Iterable<LibraryElement> libraries) {
+    // TODO FunctionElement
+    // TODO EnumElement
+    // TODO TypeAliasElement
+    // TODO? PropertyAccessorElementImpl_ImplicitGetter
+    // TODO? MixinElementImpl
+    // TODO? ExtensionElementImpl
+    // TODO? PropertyAccessorElementImpl
+    // TODO? PropertyAccessorElementImpl_ImplicitSetter
+    final allExportedClasses = libraries
+        .expand((l) => l.exportNamespace.definedNames.values)
+        .whereType<ClassElement>()
+        .where((c) => !c.hasDeprecated)
         // may contain duplicates because of multiple export paths
-        .uniqueByKey((e) => e.element)
-        .sortedBy((element) => element.messageName.originalText);
-    final uniquePayloadTypes = uniqueConstructors
+        .toSet()
+        .sortedBy((c) => '${c.librarySource.uri}@${c.name}');
+
+    final exportedConstructorsGrouped = allExportedClasses
+        .expand((c) => c.usableConstructors)
+        .map(Constructor.ofElement)
+        .groupListsBy((c) => c.isWidgetConstructor);
+    final exportedWidgetConstructors = exportedConstructorsGrouped[true]!;
+    final exportedNonWidgetConstructors = exportedConstructorsGrouped[false]!;
+
+    // TODO do more levels than one (payload inside payload)
+    final firstLevelPayloadTypeMappings = exportedWidgetConstructors
         .expand((c) => c.parameters)
         .map((p) => p.typeMapping)
         .whereType<TypeMapping>()
         .where(
-          (t) => t.mappingStrategy == MappingStrategy.generatePayloadMessage,
+          (m) => m.mappingStrategy == MappingStrategy.generatePayloadMessage,
         )
         .uniqueByKey((t) => t.dartType.element)
         .sortedBy((t) => t.protoType);
+
+    // extracting direct constructors, because they are possibly not exported
+    final directNonWidgetPayloadConstructors = firstLevelPayloadTypeMappings
+        .map((e) => e.dartType.element)
+        .whereType<ClassElement>()
+        .toSet()
+        .expand((c) => c.usableConstructors)
+        .map(Constructor.ofElement)
+        .where((c) => !c.isWidgetConstructor);
+
+    final possiblePayloadConstructors = [
+      ...directNonWidgetPayloadConstructors,
+      ...exportedNonWidgetConstructors,
+    ].uniqueByKey((e) => e.element);
+
     return Protocol(
-      libraries: libraries,
-      constructors: uniqueConstructors,
-      widgetConstructors:
-          uniqueConstructors.where((l) => l.isWidgetConstructor),
-      payloadTypes: uniquePayloadTypes,
+      widgetConstructors: exportedWidgetConstructors,
+      payloadTypes: firstLevelPayloadTypeMappings,
       payloadConstructors: Map.fromEntries(
-        uniquePayloadTypes.map(
+        firstLevelPayloadTypeMappings.map(
           (t) => MapEntry(
             t,
-            uniqueConstructors
+            possiblePayloadConstructors
                 .where((c) => c.canConstructType(t.dartType))
                 .sortedBy((c) => c.messageName.originalText),
           ),
@@ -136,9 +162,6 @@ ${entries.mapIndexed((i, e) => e.key.toDartSwitchCase(i, e.value)).join("\n")}
   }
 
   String toWidgetBuilderCode() {
-    final sortedLibraries = libraries
-        .where((l) => l.containsWidgets())
-        .sortedBy((l) => l.uri.toString());
     return '''
 $kGeneratedFileHeader
 
@@ -148,7 +171,7 @@ import 'package:proto_package/proto/widgets.pb.dart' as proto;
 
 import 'package:proto_package/builders/evaluate_type_expressions.sdu.dart' as types;
 
-${sortedLibraries.mapIndexed((i, c) => c.toDartImport(i)).join("\n")}
+${widgetConstructors.mapIndexed((i, c) => c.toDartImport(i)).join("\n")}
 
 T $kThrowMissing<T>(core.String field) {
   throw core.AssertionError('required field \$field is missing');
@@ -169,7 +192,7 @@ widgets.Widget? $kEvaluateWidgetExpression(proto.$kWidgetExpression? tree) {
   }
 
   switch (tree.whichResult()) {
-${sortedLibraries.mapIndexed((i, c) => c.toDartWidgetSwitchCases(i)).join("\n")}
+${widgetConstructors.mapIndexed((i, c) => c.toDartSwitchCase('proto', kWidgetExpression, c.toImportAlias(i))).join("\n")}
     default:
       return null;
   }

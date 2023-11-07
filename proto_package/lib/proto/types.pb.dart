@@ -13,6 +13,127 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
+/// dart:core
+class Duration extends $pb.GeneratedMessage {
+  factory Duration({
+    $core.int? days,
+    $core.int? hours,
+    $core.int? minutes,
+    $core.int? seconds,
+    $core.int? milliseconds,
+    $core.int? microseconds,
+  }) {
+    final $result = create();
+    if (days != null) {
+      $result.days = days;
+    }
+    if (hours != null) {
+      $result.hours = hours;
+    }
+    if (minutes != null) {
+      $result.minutes = minutes;
+    }
+    if (seconds != null) {
+      $result.seconds = seconds;
+    }
+    if (milliseconds != null) {
+      $result.milliseconds = milliseconds;
+    }
+    if (microseconds != null) {
+      $result.microseconds = microseconds;
+    }
+    return $result;
+  }
+  Duration._() : super();
+  factory Duration.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory Duration.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Duration', createEmptyInstance: create)
+    ..a<$core.int>(2, _omitFieldNames ? '' : 'days', $pb.PbFieldType.O3)
+    ..a<$core.int>(3, _omitFieldNames ? '' : 'hours', $pb.PbFieldType.O3)
+    ..a<$core.int>(4, _omitFieldNames ? '' : 'minutes', $pb.PbFieldType.O3)
+    ..a<$core.int>(5, _omitFieldNames ? '' : 'seconds', $pb.PbFieldType.O3)
+    ..a<$core.int>(6, _omitFieldNames ? '' : 'milliseconds', $pb.PbFieldType.O3)
+    ..a<$core.int>(7, _omitFieldNames ? '' : 'microseconds', $pb.PbFieldType.O3)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  Duration clone() => Duration()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  Duration copyWith(void Function(Duration) updates) => super.copyWith((message) => updates(message as Duration)) as Duration;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static Duration create() => Duration._();
+  Duration createEmptyInstance() => create();
+  static $pb.PbList<Duration> createRepeated() => $pb.PbList<Duration>();
+  @$core.pragma('dart2js:noInline')
+  static Duration getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Duration>(create);
+  static Duration? _defaultInstance;
+
+  @$pb.TagNumber(2)
+  $core.int get days => $_getIZ(0);
+  @$pb.TagNumber(2)
+  set days($core.int v) { $_setSignedInt32(0, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasDays() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearDays() => clearField(2);
+
+  @$pb.TagNumber(3)
+  $core.int get hours => $_getIZ(1);
+  @$pb.TagNumber(3)
+  set hours($core.int v) { $_setSignedInt32(1, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasHours() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearHours() => clearField(3);
+
+  @$pb.TagNumber(4)
+  $core.int get minutes => $_getIZ(2);
+  @$pb.TagNumber(4)
+  set minutes($core.int v) { $_setSignedInt32(2, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasMinutes() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearMinutes() => clearField(4);
+
+  @$pb.TagNumber(5)
+  $core.int get seconds => $_getIZ(3);
+  @$pb.TagNumber(5)
+  set seconds($core.int v) { $_setSignedInt32(3, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasSeconds() => $_has(3);
+  @$pb.TagNumber(5)
+  void clearSeconds() => clearField(5);
+
+  @$pb.TagNumber(6)
+  $core.int get milliseconds => $_getIZ(4);
+  @$pb.TagNumber(6)
+  set milliseconds($core.int v) { $_setSignedInt32(4, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasMilliseconds() => $_has(4);
+  @$pb.TagNumber(6)
+  void clearMilliseconds() => clearField(6);
+
+  @$pb.TagNumber(7)
+  $core.int get microseconds => $_getIZ(5);
+  @$pb.TagNumber(7)
+  set microseconds($core.int v) { $_setSignedInt32(5, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasMicroseconds() => $_has(5);
+  @$pb.TagNumber(7)
+  void clearMicroseconds() => clearField(7);
+}
+
 /// package:flutter/src/widgets/framework.dart
 class FlutterGlobalKey extends $pb.GeneratedMessage {
   factory FlutterGlobalKey({
@@ -230,6 +351,71 @@ class FlutterUniqueKey extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static FlutterUniqueKey getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterUniqueKey>(create);
   static FlutterUniqueKey? _defaultInstance;
+}
+
+enum DurationExpression_Result {
+  duration, 
+  notSet
+}
+
+class DurationExpression extends $pb.GeneratedMessage {
+  factory DurationExpression({
+    Duration? duration,
+  }) {
+    final $result = create();
+    if (duration != null) {
+      $result.duration = duration;
+    }
+    return $result;
+  }
+  DurationExpression._() : super();
+  factory DurationExpression.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DurationExpression.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, DurationExpression_Result> _DurationExpression_ResultByTag = {
+    2 : DurationExpression_Result.duration,
+    0 : DurationExpression_Result.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DurationExpression', createEmptyInstance: create)
+    ..oo(0, [2])
+    ..aOM<Duration>(2, _omitFieldNames ? '' : 'duration', subBuilder: Duration.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DurationExpression clone() => DurationExpression()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DurationExpression copyWith(void Function(DurationExpression) updates) => super.copyWith((message) => updates(message as DurationExpression)) as DurationExpression;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DurationExpression create() => DurationExpression._();
+  DurationExpression createEmptyInstance() => create();
+  static $pb.PbList<DurationExpression> createRepeated() => $pb.PbList<DurationExpression>();
+  @$core.pragma('dart2js:noInline')
+  static DurationExpression getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DurationExpression>(create);
+  static DurationExpression? _defaultInstance;
+
+  DurationExpression_Result whichResult() => _DurationExpression_ResultByTag[$_whichOneof(0)]!;
+  void clearResult() => clearField($_whichOneof(0));
+
+  @$pb.TagNumber(2)
+  Duration get duration => $_getN(0);
+  @$pb.TagNumber(2)
+  set duration(Duration v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasDuration() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearDuration() => clearField(2);
+  @$pb.TagNumber(2)
+  Duration ensureDuration() => $_ensure(0);
 }
 
 enum FlutterKeyExpression_Result {

@@ -7,12 +7,13 @@ import 'package:generator_package/models/type_mapping.dart';
 extension TypeSupportedExtension on ConstructorElement {
   bool get isSupportedByGenerator {
     // generator currently only supports constructors where every positional and required non-nullable type is supported
-    return parameters.every(
-      (element) =>
-          element.type.isSupportedAsParameter ||
-          element.isOptionalNamed ||
-          element.type.nullabilitySuffix == NullabilitySuffix.question,
-    );
+    return parameters.isEmpty ||
+        parameters.every(
+          (element) =>
+              element.type.nullabilitySuffix == NullabilitySuffix.question ||
+              element.isOptionalNamed ||
+              element.type.isSupportedAsParameter,
+        );
   }
 }
 

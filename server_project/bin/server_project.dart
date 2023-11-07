@@ -3,7 +3,7 @@ import 'dart:io';
 
 import 'package:grpc/grpc.dart';
 import 'package:proto_package/proto/service.pbgrpc.dart';
-import 'package:proto_package/proto/types.pb.dart';
+import 'package:proto_package/proto/types.pb.dart' hide Duration;
 import 'package:proto_package/proto/widgets.pb.dart';
 
 Future<void> main(List<String> args) async {
