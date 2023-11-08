@@ -1,3 +1,4 @@
+import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/dart/element/nullability_suffix.dart';
 import 'package:analyzer/dart/element/type.dart';
 import 'package:collection/collection.dart';
@@ -41,9 +42,6 @@ extension TypeMappingCreationExtension on DartType {
     } else if (this is TypeParameterType) {
       // TODO type parameter usages
       return null;
-    } else if (isDartCoreEnum) {
-      // TODO enums
-      return null;
     } else if (this is FunctionType) {
       // TODO function types
       return null;
@@ -68,20 +66,24 @@ extension TypeMappingCreationExtension on DartType {
         structureStrategy: StructureStrategy.treatAsSingular,
       );
     } else if (this is InterfaceType) {
-      // classes and abstract classes
-
       // TODO use correct name when type params are present
       final name = element?.name;
       final libraryPrefix = element?.toLibraryPrefix();
-      if (name == 'Key' || name == 'Duration' || name == 'Color') {
-        // TODO enable more types
+      if (element is EnumElement) {
+        // TODO enums
+        return null;
+      } else if (name == 'Key' || name == 'Duration' || name == 'Color') {
         return TypeMapping._of(
           dartType: this,
           protoType: '$libraryPrefix${name}Expression',
           mappingStrategy: MappingStrategy.generatePayloadMessage,
           structureStrategy: StructureStrategy.treatAsSingular,
         );
+      } else if (element is ClassElement) {
+        // TODO enable more types
+        return null;
       } else {
+        // mixins
         return null;
       }
     } else {
