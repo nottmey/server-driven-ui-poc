@@ -83,10 +83,11 @@ message ${messageName.pascalCase} {
     final constructorParameters = parameters
         .map((p) => p.toDartParameter(fieldName, typeEvalAlias))
         .whereType<String>()
-        .join(', ');
+        .join(',\n          ');
     return '''
     case $protoImportAlias.${expressionName}_Result.$fieldName:
-      return $constructorCall($constructorParameters);''';
+      return $constructorCall(
+          $constructorParameters);''';
   }
 
   String toDartImport(int i, [int? j]) {
