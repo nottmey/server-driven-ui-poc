@@ -9,7 +9,10 @@ import 'package:proto_package/proto/widgets.pb.dart' as proto;
 import 'package:proto_package/builders/evaluate_enum_expressions.sdu.dart' as enums;
 import 'package:proto_package/builders/evaluate_type_expressions.sdu.dart' as types;
 
-
+import 'dart:core' as $dartCore;
+import 'package:flutter/src/cupertino/colors.dart' as $flutterSrcCupertinoColors;
+import 'package:flutter/src/material/colors.dart' as $flutterSrcMaterialColors;
+import 'package:flutter/src/rendering/list_wheel_viewport.dart' as $flutterSrcRenderingListWheelViewport;
 
 import 'package:flutter/src/cupertino/activity_indicator.dart' as $c0;
 import 'package:flutter/src/cupertino/activity_indicator.dart' as $c1;
@@ -458,7 +461,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           child: (tree.cupertinoButton.hasChild() ? evaluateRequiredWidgetExpression(tree.cupertinoButton.child) : missing('child')),
           padding: null,
           color: (tree.cupertinoButton.hasColor() ? types.evaluateDartColorExpression(tree.cupertinoButton.color) : null),
-          disabledColor: (tree.cupertinoButton.hasDisabledColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoButton.disabledColor) : missing('disabledColor')),
+          disabledColor: (tree.cupertinoButton.hasDisabledColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoButton.disabledColor) : $flutterSrcCupertinoColors.CupertinoColors.quaternarySystemFill),
           minSize: (tree.cupertinoButton.hasMinSize() ? tree.cupertinoButton.minSize : 44.0),
           pressedOpacity: (tree.cupertinoButton.hasPressedOpacity() ? tree.cupertinoButton.pressedOpacity : 0.4),
           borderRadius: null,
@@ -468,7 +471,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           key: (tree.cupertinoButtonNamedFilled.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoButtonNamedFilled.key) : null),
           child: (tree.cupertinoButtonNamedFilled.hasChild() ? evaluateRequiredWidgetExpression(tree.cupertinoButtonNamedFilled.child) : missing('child')),
           padding: null,
-          disabledColor: (tree.cupertinoButtonNamedFilled.hasDisabledColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoButtonNamedFilled.disabledColor) : missing('disabledColor')),
+          disabledColor: (tree.cupertinoButtonNamedFilled.hasDisabledColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoButtonNamedFilled.disabledColor) : $flutterSrcCupertinoColors.CupertinoColors.quaternarySystemFill),
           minSize: (tree.cupertinoButtonNamedFilled.hasMinSize() ? tree.cupertinoButtonNamedFilled.minSize : 44.0),
           pressedOpacity: (tree.cupertinoButtonNamedFilled.hasPressedOpacity() ? tree.cupertinoButtonNamedFilled.pressedOpacity : 0.4),
           borderRadius: null,
@@ -556,7 +559,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           children: tree.cupertinoFormSection.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           header: (tree.cupertinoFormSection.hasHeader() ? evaluateWidgetExpression(tree.cupertinoFormSection.header) : null),
           footer: (tree.cupertinoFormSection.hasFooter() ? evaluateWidgetExpression(tree.cupertinoFormSection.footer) : null),
-          backgroundColor: (tree.cupertinoFormSection.hasBackgroundColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoFormSection.backgroundColor) : missing('backgroundColor')),
+          backgroundColor: (tree.cupertinoFormSection.hasBackgroundColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoFormSection.backgroundColor) : $flutterSrcCupertinoColors.CupertinoColors.systemGroupedBackground),
           decoration: null,
           clipBehavior: (tree.cupertinoFormSection.hasClipBehavior() ? enums.convertRequiredDartClip(tree.cupertinoFormSection.clipBehavior) : missing('clipBehavior')));
     case proto.WidgetExpression_Result.cupertinoFormSectionNamedInsetGrouped:
@@ -565,7 +568,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           children: tree.cupertinoFormSectionNamedInsetGrouped.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           header: (tree.cupertinoFormSectionNamedInsetGrouped.hasHeader() ? evaluateWidgetExpression(tree.cupertinoFormSectionNamedInsetGrouped.header) : null),
           footer: (tree.cupertinoFormSectionNamedInsetGrouped.hasFooter() ? evaluateWidgetExpression(tree.cupertinoFormSectionNamedInsetGrouped.footer) : null),
-          backgroundColor: (tree.cupertinoFormSectionNamedInsetGrouped.hasBackgroundColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoFormSectionNamedInsetGrouped.backgroundColor) : missing('backgroundColor')),
+          backgroundColor: (tree.cupertinoFormSectionNamedInsetGrouped.hasBackgroundColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoFormSectionNamedInsetGrouped.backgroundColor) : $flutterSrcCupertinoColors.CupertinoColors.systemGroupedBackground),
           decoration: null,
           clipBehavior: (tree.cupertinoFormSectionNamedInsetGrouped.hasClipBehavior() ? enums.convertRequiredDartClip(tree.cupertinoFormSectionNamedInsetGrouped.clipBehavior) : missing('clipBehavior')));
     case proto.WidgetExpression_Result.cupertinoUserInterfaceLevel:
@@ -579,7 +582,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           children: tree.cupertinoListSection.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           header: (tree.cupertinoListSection.hasHeader() ? evaluateWidgetExpression(tree.cupertinoListSection.header) : null),
           footer: (tree.cupertinoListSection.hasFooter() ? evaluateWidgetExpression(tree.cupertinoListSection.footer) : null),
-          backgroundColor: (tree.cupertinoListSection.hasBackgroundColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoListSection.backgroundColor) : missing('backgroundColor')),
+          backgroundColor: (tree.cupertinoListSection.hasBackgroundColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoListSection.backgroundColor) : $flutterSrcCupertinoColors.CupertinoColors.systemGroupedBackground),
           decoration: null,
           clipBehavior: (tree.cupertinoListSection.hasClipBehavior() ? enums.convertRequiredDartClip(tree.cupertinoListSection.clipBehavior) : missing('clipBehavior')),
           dividerMargin: (tree.cupertinoListSection.hasDividerMargin() ? tree.cupertinoListSection.dividerMargin : 20.0),
@@ -594,7 +597,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           header: (tree.cupertinoListSectionNamedInsetGrouped.hasHeader() ? evaluateWidgetExpression(tree.cupertinoListSectionNamedInsetGrouped.header) : null),
           footer: (tree.cupertinoListSectionNamedInsetGrouped.hasFooter() ? evaluateWidgetExpression(tree.cupertinoListSectionNamedInsetGrouped.footer) : null),
           margin: null,
-          backgroundColor: (tree.cupertinoListSectionNamedInsetGrouped.hasBackgroundColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoListSectionNamedInsetGrouped.backgroundColor) : missing('backgroundColor')),
+          backgroundColor: (tree.cupertinoListSectionNamedInsetGrouped.hasBackgroundColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoListSectionNamedInsetGrouped.backgroundColor) : $flutterSrcCupertinoColors.CupertinoColors.systemGroupedBackground),
           decoration: null,
           clipBehavior: (tree.cupertinoListSectionNamedInsetGrouped.hasClipBehavior() ? enums.convertRequiredDartClip(tree.cupertinoListSectionNamedInsetGrouped.clipBehavior) : missing('clipBehavior')),
           dividerMargin: (tree.cupertinoListSectionNamedInsetGrouped.hasDividerMargin() ? tree.cupertinoListSectionNamedInsetGrouped.dividerMargin : 14.0),
@@ -699,7 +702,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
     case proto.WidgetExpression_Result.cupertinoPickerDefaultSelectionOverlay:
       return $c30.CupertinoPickerDefaultSelectionOverlay(
           key: (tree.cupertinoPickerDefaultSelectionOverlay.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoPickerDefaultSelectionOverlay.key) : null),
-          background: (tree.cupertinoPickerDefaultSelectionOverlay.hasBackground() ? types.evaluateRequiredDartColorExpression(tree.cupertinoPickerDefaultSelectionOverlay.background) : missing('background')),
+          background: (tree.cupertinoPickerDefaultSelectionOverlay.hasBackground() ? types.evaluateRequiredDartColorExpression(tree.cupertinoPickerDefaultSelectionOverlay.background) : $flutterSrcCupertinoColors.CupertinoColors.tertiarySystemFill),
           capStartEdge: (tree.cupertinoPickerDefaultSelectionOverlay.hasCapStartEdge() ? tree.cupertinoPickerDefaultSelectionOverlay.capStartEdge : true),
           capEndEdge: (tree.cupertinoPickerDefaultSelectionOverlay.hasCapEndEdge() ? tree.cupertinoPickerDefaultSelectionOverlay.capEndEdge : true));
     case proto.WidgetExpression_Result.cupertinoSliverRefreshControl:
@@ -732,7 +735,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           backgroundColor: (tree.cupertinoSearchTextField.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.cupertinoSearchTextField.backgroundColor) : null),
           borderRadius: null,
           keyboardType: null,
-          itemColor: (tree.cupertinoSearchTextField.hasItemColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoSearchTextField.itemColor) : missing('itemColor')),
+          itemColor: (tree.cupertinoSearchTextField.hasItemColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoSearchTextField.itemColor) : $flutterSrcCupertinoColors.CupertinoColors.secondaryLabel),
           itemSize: (tree.cupertinoSearchTextField.hasItemSize() ? tree.cupertinoSearchTextField.itemSize : 20.0),
           prefixIcon: (tree.cupertinoSearchTextField.hasPrefixIcon() ? evaluateRequiredWidgetExpression(tree.cupertinoSearchTextField.prefixIcon) : missing('prefixIcon')),
           suffixMode: (tree.cupertinoSearchTextField.hasSuffixMode() ? enums.convertRequiredOverlayVisibilityMode(tree.cupertinoSearchTextField.suffixMode) : missing('suffixMode')),
@@ -757,7 +760,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           max: (tree.cupertinoSlider.hasMax() ? tree.cupertinoSlider.max : 1.0),
           divisions: (tree.cupertinoSlider.hasDivisions() ? tree.cupertinoSlider.divisions : null),
           activeColor: (tree.cupertinoSlider.hasActiveColor() ? types.evaluateDartColorExpression(tree.cupertinoSlider.activeColor) : null),
-          thumbColor: (tree.cupertinoSlider.hasThumbColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoSlider.thumbColor) : missing('thumbColor')));
+          thumbColor: (tree.cupertinoSlider.hasThumbColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoSlider.thumbColor) : $flutterSrcCupertinoColors.CupertinoColors.white));
     case proto.WidgetExpression_Result.cupertinoSwitch:
       return $c35.CupertinoSwitch(
           key: (tree.cupertinoSwitch.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoSwitch.key) : null),
@@ -1771,7 +1774,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
       return $c84.Dialog.fullscreen(
           key: (tree.materialDialogNamedFullscreen.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialDialogNamedFullscreen.key) : null),
           backgroundColor: (tree.materialDialogNamedFullscreen.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.materialDialogNamedFullscreen.backgroundColor) : null),
-          insetAnimationDuration: (tree.materialDialogNamedFullscreen.hasInsetAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialDialogNamedFullscreen.insetAnimationDuration) : missing('insetAnimationDuration')),
+          insetAnimationDuration: (tree.materialDialogNamedFullscreen.hasInsetAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialDialogNamedFullscreen.insetAnimationDuration) : $dartCore.Duration.zero),
           child: (tree.materialDialogNamedFullscreen.hasChild() ? evaluateWidgetExpression(tree.materialDialogNamedFullscreen.child) : null));
     case proto.WidgetExpression_Result.materialSimpleDialog:
       return $c85.SimpleDialog(
@@ -3405,7 +3408,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           accountName: (tree.materialUserAccountsDrawerHeader.hasAccountName() ? evaluateWidgetExpression(tree.materialUserAccountsDrawerHeader.accountName) : null),
           accountEmail: (tree.materialUserAccountsDrawerHeader.hasAccountEmail() ? evaluateWidgetExpression(tree.materialUserAccountsDrawerHeader.accountEmail) : null),
           onDetailsPressed: null,
-          arrowColor: (tree.materialUserAccountsDrawerHeader.hasArrowColor() ? types.evaluateRequiredDartColorExpression(tree.materialUserAccountsDrawerHeader.arrowColor) : missing('arrowColor')));
+          arrowColor: (tree.materialUserAccountsDrawerHeader.hasArrowColor() ? types.evaluateRequiredDartColorExpression(tree.materialUserAccountsDrawerHeader.arrowColor) : $flutterSrcMaterialColors.Colors.white));
     case proto.WidgetExpression_Result.flutterPlatformSelectableRegionContextMenu:
       return $c179.PlatformSelectableRegionContextMenu(
           child: (tree.flutterPlatformSelectableRegionContextMenu.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterPlatformSelectableRegionContextMenu.child) : missing('child')),
@@ -3689,8 +3692,8 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
     case proto.WidgetExpression_Result.flutterLimitedBox:
       return $c217.LimitedBox(
           key: (tree.flutterLimitedBox.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterLimitedBox.key) : null),
-          maxWidth: (tree.flutterLimitedBox.hasMaxWidth() ? tree.flutterLimitedBox.maxWidth : missing('maxWidth')),
-          maxHeight: (tree.flutterLimitedBox.hasMaxHeight() ? tree.flutterLimitedBox.maxHeight : missing('maxHeight')),
+          maxWidth: (tree.flutterLimitedBox.hasMaxWidth() ? tree.flutterLimitedBox.maxWidth : $dartCore.double.infinity),
+          maxHeight: (tree.flutterLimitedBox.hasMaxHeight() ? tree.flutterLimitedBox.maxHeight : $dartCore.double.infinity),
           child: (tree.flutterLimitedBox.hasChild() ? evaluateWidgetExpression(tree.flutterLimitedBox.child) : null));
     case proto.WidgetExpression_Result.flutterListBody:
       return $c218.ListBody(
@@ -4440,8 +4443,8 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           key: (tree.flutterListWheelScrollView.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterListWheelScrollView.key) : null),
           controller: null,
           physics: null,
-          diameterRatio: (tree.flutterListWheelScrollView.hasDiameterRatio() ? tree.flutterListWheelScrollView.diameterRatio : missing('diameterRatio')),
-          perspective: (tree.flutterListWheelScrollView.hasPerspective() ? tree.flutterListWheelScrollView.perspective : missing('perspective')),
+          diameterRatio: (tree.flutterListWheelScrollView.hasDiameterRatio() ? tree.flutterListWheelScrollView.diameterRatio : $flutterSrcRenderingListWheelViewport.RenderListWheelViewport.defaultDiameterRatio),
+          perspective: (tree.flutterListWheelScrollView.hasPerspective() ? tree.flutterListWheelScrollView.perspective : $flutterSrcRenderingListWheelViewport.RenderListWheelViewport.defaultPerspective),
           offAxisFraction: (tree.flutterListWheelScrollView.hasOffAxisFraction() ? tree.flutterListWheelScrollView.offAxisFraction : 0.0),
           useMagnifier: (tree.flutterListWheelScrollView.hasUseMagnifier() ? tree.flutterListWheelScrollView.useMagnifier : false),
           magnification: (tree.flutterListWheelScrollView.hasMagnification() ? tree.flutterListWheelScrollView.magnification : 1.0),
@@ -4747,7 +4750,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           trackBorderColor: (tree.flutterRawScrollbar.hasTrackBorderColor() ? types.evaluateDartColorExpression(tree.flutterRawScrollbar.trackBorderColor) : null),
           fadeDuration: (tree.flutterRawScrollbar.hasFadeDuration() ? types.evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.fadeDuration) : missing('fadeDuration')),
           timeToFade: (tree.flutterRawScrollbar.hasTimeToFade() ? types.evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.timeToFade) : missing('timeToFade')),
-          pressDuration: (tree.flutterRawScrollbar.hasPressDuration() ? types.evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.pressDuration) : missing('pressDuration')),
+          pressDuration: (tree.flutterRawScrollbar.hasPressDuration() ? types.evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.pressDuration) : $dartCore.Duration.zero),
           interactive: (tree.flutterRawScrollbar.hasInteractive() ? tree.flutterRawScrollbar.interactive : null),
           scrollbarOrientation: (tree.flutterRawScrollbar.hasScrollbarOrientation() ? enums.convertFlutterScrollbarOrientation(tree.flutterRawScrollbar.scrollbarOrientation) : null),
           mainAxisMargin: (tree.flutterRawScrollbar.hasMainAxisMargin() ? tree.flutterRawScrollbar.mainAxisMargin : 0.0),
