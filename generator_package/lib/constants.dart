@@ -8,11 +8,19 @@ const kEvaluateRequiredWidgetExpression = 'evaluateRequiredWidgetExpression';
 
 const kThrowMissing = 'missing';
 
+const kEnumsProto = 'enums.proto';
+
 const kTypesProto = 'types.proto';
 
 const kWidgetsProto = 'widgets.proto';
 
 const kServiceProto = 'service.proto';
+
+const kEnumBuilderFile = 'builders/evaluate_enum_expressions.sdu.dart';
+
+const kTypeBuilderFile = 'builders/evaluate_type_expressions.sdu.dart';
+
+const kWidgetBuilderFile = 'builders/evaluate_widget_expression.sdu.dart';
 
 const kGeneratedFileHeader = '''
 //

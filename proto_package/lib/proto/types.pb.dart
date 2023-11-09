@@ -977,6 +977,7 @@ enum DartColorExpression_Result {
   notSet
 }
 
+/// dart:ui
 class DartColorExpression extends $pb.GeneratedMessage {
   factory DartColorExpression({
     CupertinoDynamicColor? cupertinoDynamicColor,
@@ -1127,6 +1128,7 @@ enum DartDurationExpression_Result {
   notSet
 }
 
+/// dart:core
 class DartDurationExpression extends $pb.GeneratedMessage {
   factory DartDurationExpression({
     DartDuration? dartDuration,
@@ -1196,6 +1198,7 @@ enum FlutterKeyExpression_Result {
   notSet
 }
 
+/// package:flutter/src/foundation/key.dart
 class FlutterKeyExpression extends $pb.GeneratedMessage {
   factory FlutterKeyExpression({
     FlutterGlobalKey? flutterGlobalKey,

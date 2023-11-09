@@ -45,9 +45,10 @@ class Parameter {
   }
 
   String? toProtoField() {
-    final protoType = typeMapping?.protoType;
-    if (protoType != null) {
-      return '$protoType ${name.snakeCase} = $fieldNumber;';
+    final typeMapping = this.typeMapping;
+    if (typeMapping != null) {
+      // TODO add documentation about required status and default values
+      return '${typeMapping.toFieldType()} ${name.snakeCase} = $fieldNumber;';
     } else {
       return null;
     }

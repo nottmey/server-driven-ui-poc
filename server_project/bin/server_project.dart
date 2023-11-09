@@ -1,7 +1,9 @@
 import 'dart:async';
 import 'dart:io';
+import 'dart:math';
 
 import 'package:grpc/grpc.dart';
+import 'package:proto_package/proto/enums.pbenum.dart';
 import 'package:proto_package/proto/service.pbgrpc.dart';
 import 'package:proto_package/proto/types.pb.dart';
 import 'package:proto_package/proto/widgets.pb.dart';
@@ -19,18 +21,64 @@ Future<void> main(List<String> args) async {
 }
 
 class ExperienceProviderService extends ExperienceProviderServiceBase {
-  ExperienceResponse exampleData(ExperienceRequest request, [int? tick]) {
+  final random = Random();
+
+  ExperienceResponse exampleData(ExperienceRequest request) {
+    // TODO choose a good example of an enum, set to null, unset, one value, other value (each available)
     return ExperienceResponse(
       start: Experience(
         widget: WidgetExpression(
-          flutterText: FlutterText(
+          flutterColoredBox: FlutterColoredBox(
             // example of an object payload
-            key: FlutterKeyExpression(
-              flutterUniqueKey: FlutterUniqueKey(),
+            color: DartColorExpression(
+              dartColorNamedFromRGBO: DartColorNamedFromRGBO(
+                r: random.nextInt(255),
+                g: random.nextInt(255),
+                b: random.nextInt(255),
+                opacity: 1,
+              ),
             ),
-            // example of a dynamic answer
-            data:
-                "Hello ${request.name + (tick != null ? " at tick $tick" : "")}!",
+            child: WidgetExpression(
+              flutterColumn: FlutterColumn(
+                // example of enum usage (no defaults yet)
+                mainAxisAlignment: FlutterMainAxisAlignment_Enum.CENTER,
+                mainAxisSize: FlutterMainAxisSize_Enum.MIN,
+                crossAxisAlignment: FlutterCrossAxisAlignment_Enum.START,
+                verticalDirection: FlutterVerticalDirection_Enum.DOWN,
+                children: [
+                  WidgetExpression(
+                    // example of request usage
+                    flutterText: FlutterText(data: "- ${request.name} -"),
+                  ),
+                  WidgetExpression(
+                    flutterText: FlutterText(data: "text align\nunset"),
+                  ),
+                  WidgetExpression(
+                    flutterText: FlutterText(
+                      data: "text align\n<null>",
+                      textAlign: null,
+                    ),
+                  ),
+                  WidgetExpression(
+                    flutterText: FlutterText(
+                      data: "text align\nstart",
+                    ),
+                  ),
+                  WidgetExpression(
+                    flutterText: FlutterText(
+                      data: "text align\ncenter",
+                      textAlign: DartTextAlign_Enum.CENTER,
+                    ),
+                  ),
+                  WidgetExpression(
+                    flutterText: FlutterText(
+                      data: "text align\nend",
+                      textAlign: DartTextAlign_Enum.END,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         ),
       ),
@@ -62,7 +110,7 @@ class ExperienceProviderService extends ExperienceProviderServiceBase {
           print(
             'Sending example data for experience: ${request.name} at tick ${timer.tick}',
           );
-          controller?.add(exampleData(request, timer.tick));
+          controller?.add(exampleData(request));
         },
       );
     };

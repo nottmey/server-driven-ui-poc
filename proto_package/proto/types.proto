@@ -90,6 +90,7 @@ message FlutterUniqueKey {
 }
 
 
+// dart:ui
 message DartColorExpression {
   oneof result {
     CupertinoDynamicColor cupertino_dynamic_color = 2;
@@ -101,12 +102,14 @@ message DartColorExpression {
   }
 }
 
+// dart:core
 message DartDurationExpression {
   oneof result {
     DartDuration dart_duration = 2;
   }
 }
 
+// package:flutter/src/foundation/key.dart
 message FlutterKeyExpression {
   oneof result {
     FlutterGlobalKey flutter_global_key = 2;

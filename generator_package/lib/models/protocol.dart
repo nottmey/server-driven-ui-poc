@@ -4,16 +4,18 @@ import 'package:generator_package/constants.dart';
 import 'package:generator_package/models/constructor.dart';
 import 'package:generator_package/models/type_mapping.dart';
 import 'package:generator_package/unique_by_key_extension.dart';
-import 'package:generator_package/usable_consturctors_extension.dart';
+import 'package:generator_package/usable_constructors_extension.dart';
 
 class Protocol {
   final Iterable<Constructor> widgetConstructors;
-  final Iterable<TypeMapping> payloadTypes;
+  final Iterable<TypeMapping> enumTypeMappings;
+  final Iterable<TypeMapping> payloadTypeMappings;
   final Map<TypeMapping, Iterable<Constructor>> payloadConstructors;
 
   Protocol({
     required this.widgetConstructors,
-    required this.payloadTypes,
+    required this.enumTypeMappings,
+    required this.payloadTypeMappings,
     required this.payloadConstructors,
   });
 
@@ -42,10 +44,17 @@ class Protocol {
     final exportedNonWidgetConstructors = exportedConstructorsGrouped[false]!;
 
     // TODO do more levels than one (payload inside payload)
-    final firstLevelPayloadTypeMappings = exportedWidgetConstructors
+    final firstLevelTypeMappings = exportedWidgetConstructors
         .expand((c) => c.parameters)
         .map((p) => p.typeMapping)
-        .whereType<TypeMapping>()
+        .whereType<TypeMapping>();
+
+    final enumTypeMappings = firstLevelTypeMappings
+        .where((m) => m.mappingStrategy == MappingStrategy.generateEnum)
+        .uniqueByKey((t) => t.dartType.element)
+        .sortedBy((t) => t.protoType);
+
+    final payloadTypeMappings = firstLevelTypeMappings
         .where(
           (m) => m.mappingStrategy == MappingStrategy.generatePayloadMessage,
         )
@@ -53,7 +62,7 @@ class Protocol {
         .sortedBy((t) => t.protoType);
 
     // extracting direct constructors, because they are possibly not exported
-    final directNonWidgetPayloadConstructors = firstLevelPayloadTypeMappings
+    final directNonWidgetPayloadConstructors = payloadTypeMappings
         .map((e) => e.dartType.element)
         .whereType<ClassElement>()
         .toSet()
@@ -68,9 +77,10 @@ class Protocol {
 
     return Protocol(
       widgetConstructors: exportedWidgetConstructors,
-      payloadTypes: firstLevelPayloadTypeMappings,
+      enumTypeMappings: enumTypeMappings,
+      payloadTypeMappings: payloadTypeMappings,
       payloadConstructors: Map.fromEntries(
-        firstLevelPayloadTypeMappings.map(
+        payloadTypeMappings.map(
           (t) => MapEntry(
             t,
             possiblePayloadConstructors
@@ -82,15 +92,25 @@ class Protocol {
     );
   }
 
+  String toEnumsProto() {
+    return '''
+$kGeneratedFileHeader
+
+syntax = "proto3";
+
+${enumTypeMappings.map((m) => m.toProtoEnum()).whereType<String>().join("\n")}
+''';
+  }
+
   String toTypesProto() {
     return '''
 $kGeneratedFileHeader
 
 syntax = "proto3";
 
-${payloadTypes.expand((t) => payloadConstructors[t]!).map((c) => c.toProtoMessage()).join("\n")}
+${payloadTypeMappings.expand((m) => payloadConstructors[m]!).map((c) => c.toProtoMessage()).join("\n")}
 
-${payloadTypes.map((t) => t.toProtoMessage(payloadConstructors[t]!)).join("\n")}
+${payloadTypeMappings.map((m) => m.toProtoMessage(payloadConstructors[m]!)).join("\n")}
 ''';
   }
 
@@ -100,6 +120,7 @@ $kGeneratedFileHeader
 
 syntax = "proto3";
 
+import "$kEnumsProto";
 import "$kTypesProto";
 
 ${widgetConstructors.map((c) => c.toProtoMessage()).join("\n")}
@@ -139,6 +160,19 @@ message Experience {
 ''';
   }
 
+  String toEnumsBuilderCode() {
+    return '''
+$kGeneratedFileHeader
+
+import 'dart:core' as core;
+import 'package:proto_package/proto/enums.pb.dart' as enums;
+
+${enumTypeMappings.mapIndexed((i, m) => m.toDartImport(i)).whereType<String>().join("\n")}
+
+${enumTypeMappings.mapIndexed((i, m) => m.toDartEnumSwitchCase(i)).whereType<String>().join("\n")}
+''';
+  }
+
   String toTypesBuilderCode() {
     final entries =
         payloadConstructors.entries.sortedBy((e) => e.key.protoType);
@@ -157,7 +191,7 @@ T $kThrowMissing<T>(core.String field) {
   throw core.AssertionError('required field \$field is missing');
 }
 
-${entries.mapIndexed((i, e) => e.key.toDartSwitchCase(i, e.value)).join("\n")}
+${entries.mapIndexed((i, e) => e.key.toDartTypeSwitchCase(i, e.value)).join("\n")}
 ''';
   }
 
@@ -169,7 +203,8 @@ import 'dart:core' as core;
 import 'package:flutter/widgets.dart' as widgets;
 import 'package:proto_package/proto/widgets.pb.dart' as proto;
 
-import 'package:proto_package/builders/evaluate_type_expressions.sdu.dart' as types;
+import 'package:proto_package/$kEnumBuilderFile' as enums;
+import 'package:proto_package/$kTypeBuilderFile' as types;
 
 ${widgetConstructors.mapIndexed((i, c) => c.toDartImport(i)).join("\n")}
 

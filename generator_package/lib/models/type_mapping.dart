@@ -6,11 +6,13 @@ import 'package:generator_package/constants.dart';
 import 'package:generator_package/is_widget_extensions.dart';
 import 'package:generator_package/models/constructor.dart';
 import 'package:generator_package/to_library_prefix_extension.dart';
+import 'package:recase/recase.dart';
 
 enum MappingStrategy {
   useProtoEquivalent,
   generatePayloadMessage,
   generateWidgetMessage,
+  generateEnum,
 }
 
 enum StructureStrategy {
@@ -63,21 +65,22 @@ extension TypeMappingCreationExtension on DartType {
         dartType: this,
         protoType: kWidgetExpression,
         mappingStrategy: MappingStrategy.generateWidgetMessage,
-        structureStrategy: StructureStrategy.treatAsSingular,
       );
     } else if (this is InterfaceType) {
       // TODO use correct name when type params are present
       final name = element?.name;
       final libraryPrefix = element?.toLibraryPrefix();
       if (element is EnumElement) {
-        // TODO enums
-        return null;
+        return TypeMapping._of(
+          dartType: this,
+          protoType: '$libraryPrefix$name',
+          mappingStrategy: MappingStrategy.generateEnum,
+        );
       } else if (name == 'Key' || name == 'Duration' || name == 'Color') {
         return TypeMapping._of(
           dartType: this,
           protoType: '$libraryPrefix${name}Expression',
           mappingStrategy: MappingStrategy.generatePayloadMessage,
-          structureStrategy: StructureStrategy.treatAsSingular,
         );
       } else if (element is ClassElement) {
         // TODO enable more types
@@ -97,7 +100,6 @@ extension TypeMappingCreationExtension on DartType {
       dartType: this,
       protoType: protoType,
       mappingStrategy: MappingStrategy.useProtoEquivalent,
-      structureStrategy: StructureStrategy.treatAsSingular,
     );
   }
 }
@@ -114,21 +116,49 @@ class TypeMapping {
     required this.dartType,
     required this.protoType,
     required this.mappingStrategy,
-    required this.structureStrategy,
+    this.structureStrategy = StructureStrategy.treatAsSingular,
   })  : typeName = dartType.element?.name,
         uri = dartType.element?.librarySource?.uri;
 
   TypeMapping toRepeated() {
     return TypeMapping._of(
       dartType: dartType,
-      protoType: 'repeated $protoType',
+      protoType: protoType,
       mappingStrategy: mappingStrategy,
       structureStrategy: StructureStrategy.treatAsRepeated,
     );
   }
 
+  String toFieldType() {
+    final prefix = structureStrategy == StructureStrategy.treatAsRepeated
+        ? 'repeated '
+        : '';
+    final postfix =
+        mappingStrategy == MappingStrategy.generateEnum ? '.Enum' : '';
+    return prefix + protoType + postfix;
+  }
+
+  String? toProtoEnum() {
+    final element = dartType.element;
+    if (element is! EnumElement) {
+      return null;
+    }
+
+    return '''
+// ${element.librarySource.uri}
+message $protoType {
+  enum Enum {
+    ${element.fields.where((f) => f.name != 'values').mapIndexed((i, e) {
+      return "${ReCase(e.name).constantCase} = $i;";
+    }).join("\n    ")}
+  }
+}
+''';
+  }
+
   String toProtoMessage(Iterable<Constructor> typeConstructors) {
     return '''
+// ${dartType.element?.librarySource?.uri ?? '<no source>'}
 message $protoType {
   oneof result {
     ${typeConstructors.mapIndexed((i, c) => c.toProtoField(i)).join("\n    ")}
@@ -141,7 +171,38 @@ message $protoType {
     return "import '$uri' as \$t$i;";
   }
 
-  String toDartSwitchCase(int i, Iterable<Constructor> constructors) {
+  String? toDartEnumSwitchCase(int i) {
+    final enumElement = dartType.element;
+    if (enumElement is! EnumElement) {
+      return null;
+    }
+
+    final typeAlias = '\$t$i';
+    return '''
+$typeAlias.$typeName convertRequired$protoType(enums.${protoType}_Enum enumValue) {
+  final result = convert$protoType(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum $protoType');
+  }
+}
+
+$typeAlias.$typeName? convert$protoType(enums.${protoType}_Enum enumValue) {
+  switch (enumValue) {
+${enumElement.fields.where((f) => f.name != 'values').map((f) {
+      return '''
+    case enums.${protoType}_Enum.${ReCase(f.name).constantCase}:
+      return $typeAlias.$typeName.${f.name};''';
+    }).join("\n")}
+    default:
+      return null;
+  }
+}
+''';
+  }
+
+  String toDartTypeSwitchCase(int i, Iterable<Constructor> constructors) {
     final typeAlias = '\$t$i';
     return '''
 $typeAlias.$typeName evaluateRequired$protoType(types.$protoType tree) {
@@ -184,6 +245,10 @@ ${constructors.mapIndexed((j, c) => c.toDartSwitchCase('types', protoType, '\$t$
         return isOptionalInEvaluation
             ? kEvaluateWidgetExpression
             : kEvaluateRequiredWidgetExpression;
+      case MappingStrategy.generateEnum:
+        return isOptionalInEvaluation
+            ? 'enums.convert$protoType'
+            : 'enums.convertRequired$protoType';
     }
   }
 }

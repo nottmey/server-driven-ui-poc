@@ -108,6 +108,8 @@ build/
           .map((result) => result.element),
     );
 
+    writeFile('proto/$kEnumsProto', protocol.toEnumsProto());
+
     writeFile('proto/$kTypesProto', protocol.toTypesProto());
 
     writeFile('proto/$kWidgetsProto', protocol.toWidgetsProto());
@@ -117,12 +119,17 @@ build/
     // it's common to generate dart files by hand and not via ast
 
     writeFile(
-      'lib/builders/evaluate_type_expressions.sdu.dart',
+      'lib/$kEnumBuilderFile',
+      protocol.toEnumsBuilderCode(),
+    );
+
+    writeFile(
+      'lib/$kTypeBuilderFile',
       protocol.toTypesBuilderCode(),
     );
 
     writeFile(
-      'lib/builders/evaluate_widget_expression.sdu.dart',
+      'lib/$kWidgetBuilderFile',
       protocol.toWidgetBuilderCode(),
     );
   }

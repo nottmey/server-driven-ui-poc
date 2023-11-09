@@ -1,0 +1,642 @@
+//
+//  Generated. Do not modify.
+//
+
+syntax = "proto3";
+
+// package:flutter/src/cupertino/interface_level.dart
+message CupertinoUserInterfaceLevelData {
+  enum Enum {
+    BASE = 0;
+    ELEVATED = 1;
+  }
+}
+
+// dart:ui
+message DartBlendMode {
+  enum Enum {
+    CLEAR = 0;
+    SRC = 1;
+    DST = 2;
+    SRC_OVER = 3;
+    DST_OVER = 4;
+    SRC_IN = 5;
+    DST_IN = 6;
+    SRC_OUT = 7;
+    DST_OUT = 8;
+    SRC_A_TOP = 9;
+    DST_A_TOP = 10;
+    XOR = 11;
+    PLUS = 12;
+    MODULATE = 13;
+    SCREEN = 14;
+    OVERLAY = 15;
+    DARKEN = 16;
+    LIGHTEN = 17;
+    COLOR_DODGE = 18;
+    COLOR_BURN = 19;
+    HARD_LIGHT = 20;
+    SOFT_LIGHT = 21;
+    DIFFERENCE = 22;
+    EXCLUSION = 23;
+    MULTIPLY = 24;
+    HUE = 25;
+    SATURATION = 26;
+    COLOR = 27;
+    LUMINOSITY = 28;
+  }
+}
+
+// dart:ui
+message DartBoxHeightStyle {
+  enum Enum {
+    TIGHT = 0;
+    MAX = 1;
+    INCLUDE_LINE_SPACING_MIDDLE = 2;
+    INCLUDE_LINE_SPACING_TOP = 3;
+    INCLUDE_LINE_SPACING_BOTTOM = 4;
+    STRUT = 5;
+  }
+}
+
+// dart:ui
+message DartBoxWidthStyle {
+  enum Enum {
+    TIGHT = 0;
+    MAX = 1;
+  }
+}
+
+// dart:ui
+message DartBrightness {
+  enum Enum {
+    DARK = 0;
+    LIGHT = 1;
+  }
+}
+
+// dart:ui
+message DartClip {
+  enum Enum {
+    NONE = 0;
+    HARD_EDGE = 1;
+    ANTI_ALIAS = 2;
+    ANTI_ALIAS_WITH_SAVE_LAYER = 3;
+  }
+}
+
+// dart:ui
+message DartFilterQuality {
+  enum Enum {
+    NONE = 0;
+    LOW = 1;
+    MEDIUM = 2;
+    HIGH = 3;
+  }
+}
+
+// dart:ui
+message DartStrokeCap {
+  enum Enum {
+    BUTT = 0;
+    ROUND = 1;
+    SQUARE = 2;
+  }
+}
+
+// dart:ui
+message DartTextAlign {
+  enum Enum {
+    LEFT = 0;
+    RIGHT = 1;
+    CENTER = 2;
+    JUSTIFY = 3;
+    START = 4;
+    END = 5;
+  }
+}
+
+// dart:ui
+message DartTextBaseline {
+  enum Enum {
+    ALPHABETIC = 0;
+    IDEOGRAPHIC = 1;
+  }
+}
+
+// dart:ui
+message DartTextDirection {
+  enum Enum {
+    RTL = 0;
+    LTR = 1;
+  }
+}
+
+// package:flutter/src/widgets/autofill.dart
+message FlutterAutofillContextAction {
+  enum Enum {
+    COMMIT = 0;
+    CANCEL = 1;
+  }
+}
+
+// package:flutter/src/widgets/form.dart
+message FlutterAutovalidateMode {
+  enum Enum {
+    DISABLED = 0;
+    ALWAYS = 1;
+    ON_USER_INTERACTION = 2;
+  }
+}
+
+// package:flutter/src/painting/basic_types.dart
+message FlutterAxis {
+  enum Enum {
+    HORIZONTAL = 0;
+    VERTICAL = 1;
+  }
+}
+
+// package:flutter/src/painting/basic_types.dart
+message FlutterAxisDirection {
+  enum Enum {
+    UP = 0;
+    RIGHT = 1;
+    DOWN = 2;
+    LEFT = 3;
+  }
+}
+
+// package:flutter/src/widgets/banner.dart
+message FlutterBannerLocation {
+  enum Enum {
+    TOP_START = 0;
+    TOP_END = 1;
+    BOTTOM_START = 2;
+    BOTTOM_END = 3;
+  }
+}
+
+// package:flutter/src/painting/borders.dart
+message FlutterBorderStyle {
+  enum Enum {
+    NONE = 0;
+    SOLID = 1;
+  }
+}
+
+// package:flutter/src/painting/box_fit.dart
+message FlutterBoxFit {
+  enum Enum {
+    FILL = 0;
+    CONTAIN = 1;
+    COVER = 2;
+    FIT_WIDTH = 3;
+    FIT_HEIGHT = 4;
+    NONE = 5;
+    SCALE_DOWN = 6;
+  }
+}
+
+// package:flutter/src/painting/box_border.dart
+message FlutterBoxShape {
+  enum Enum {
+    RECTANGLE = 0;
+    CIRCLE = 1;
+  }
+}
+
+// package:flutter/src/rendering/flex.dart
+message FlutterCrossAxisAlignment {
+  enum Enum {
+    START = 0;
+    END = 1;
+    CENTER = 2;
+    STRETCH = 3;
+    BASELINE = 4;
+  }
+}
+
+// package:flutter/src/widgets/animated_cross_fade.dart
+message FlutterCrossFadeState {
+  enum Enum {
+    SHOW_FIRST = 0;
+    SHOW_SECOND = 1;
+  }
+}
+
+// package:flutter/src/widgets/dismissible.dart
+message FlutterDismissDirection {
+  enum Enum {
+    VERTICAL = 0;
+    HORIZONTAL = 1;
+    END_TO_START = 2;
+    START_TO_END = 3;
+    UP = 4;
+    DOWN = 5;
+    NONE = 6;
+  }
+}
+
+// package:flutter/src/gestures/recognizer.dart
+message FlutterDragStartBehavior {
+  enum Enum {
+    DOWN = 0;
+    START = 1;
+  }
+}
+
+// package:flutter/src/rendering/flex.dart
+message FlutterFlexFit {
+  enum Enum {
+    TIGHT = 0;
+    LOOSE = 1;
+  }
+}
+
+// package:flutter/src/painting/flutter_logo.dart
+message FlutterFlutterLogoStyle {
+  enum Enum {
+    MARK_ONLY = 0;
+    HORIZONTAL = 1;
+    STACKED = 2;
+  }
+}
+
+// package:flutter/src/rendering/proxy_box.dart
+message FlutterHitTestBehavior {
+  enum Enum {
+    DEFER_TO_CHILD = 0;
+    OPAQUE = 1;
+    TRANSLUCENT = 2;
+  }
+}
+
+// package:flutter/src/painting/decoration_image.dart
+message FlutterImageRepeat {
+  enum Enum {
+    REPEAT = 0;
+    REPEAT_X = 1;
+    REPEAT_Y = 2;
+    NO_REPEAT = 3;
+  }
+}
+
+// package:flutter/src/rendering/flex.dart
+message FlutterMainAxisAlignment {
+  enum Enum {
+    START = 0;
+    END = 1;
+    CENTER = 2;
+    SPACE_BETWEEN = 3;
+    SPACE_AROUND = 4;
+    SPACE_EVENLY = 5;
+  }
+}
+
+// package:flutter/src/rendering/flex.dart
+message FlutterMainAxisSize {
+  enum Enum {
+    MIN = 0;
+    MAX = 1;
+  }
+}
+
+// package:flutter/src/services/text_formatter.dart
+message FlutterMaxLengthEnforcement {
+  enum Enum {
+    NONE = 0;
+    ENFORCED = 1;
+    TRUNCATE_AFTER_COMPOSITION_ENDS = 2;
+  }
+}
+
+// package:flutter/src/widgets/overflow_bar.dart
+message FlutterOverflowBarAlignment {
+  enum Enum {
+    START = 0;
+    END = 1;
+    CENTER = 2;
+  }
+}
+
+// package:flutter/src/widgets/interactive_viewer.dart
+message FlutterPanAxis {
+  enum Enum {
+    HORIZONTAL = 0;
+    VERTICAL = 1;
+    ALIGNED = 2;
+    FREE = 3;
+  }
+}
+
+// package:flutter/src/rendering/platform_view.dart
+message FlutterPlatformViewHitTestBehavior {
+  enum Enum {
+    OPAQUE = 0;
+    TRANSLUCENT = 1;
+    TRANSPARENT = 2;
+  }
+}
+
+// package:flutter/src/widgets/scroll_view.dart
+message FlutterScrollViewKeyboardDismissBehavior {
+  enum Enum {
+    MANUAL = 0;
+    ON_DRAG = 1;
+  }
+}
+
+// package:flutter/src/widgets/scrollbar.dart
+message FlutterScrollbarOrientation {
+  enum Enum {
+    LEFT = 0;
+    RIGHT = 1;
+    TOP = 2;
+    BOTTOM = 3;
+  }
+}
+
+// package:flutter/src/services/text_input.dart
+message FlutterSmartDashesType {
+  enum Enum {
+    DISABLED = 0;
+    ENABLED = 1;
+  }
+}
+
+// package:flutter/src/services/text_input.dart
+message FlutterSmartQuotesType {
+  enum Enum {
+    DISABLED = 0;
+    ENABLED = 1;
+  }
+}
+
+// package:flutter/src/rendering/stack.dart
+message FlutterStackFit {
+  enum Enum {
+    LOOSE = 0;
+    EXPAND = 1;
+    PASSTHROUGH = 2;
+  }
+}
+
+// package:flutter/src/rendering/table.dart
+message FlutterTableCellVerticalAlignment {
+  enum Enum {
+    TOP = 0;
+    MIDDLE = 1;
+    BOTTOM = 2;
+    BASELINE = 3;
+    FILL = 4;
+  }
+}
+
+// package:flutter/src/services/text_input.dart
+message FlutterTextCapitalization {
+  enum Enum {
+    WORDS = 0;
+    SENTENCES = 1;
+    CHARACTERS = 2;
+    NONE = 3;
+  }
+}
+
+// package:flutter/src/services/text_input.dart
+message FlutterTextInputAction {
+  enum Enum {
+    NONE = 0;
+    UNSPECIFIED = 1;
+    DONE = 2;
+    GO = 3;
+    SEARCH = 4;
+    SEND = 5;
+    NEXT = 6;
+    PREVIOUS = 7;
+    CONTINUE_ACTION = 8;
+    JOIN = 9;
+    ROUTE = 10;
+    EMERGENCY_CALL = 11;
+    NEWLINE = 12;
+  }
+}
+
+// package:flutter/src/painting/text_painter.dart
+message FlutterTextOverflow {
+  enum Enum {
+    CLIP = 0;
+    FADE = 1;
+    ELLIPSIS = 2;
+    VISIBLE = 3;
+  }
+}
+
+// package:flutter/src/painting/text_painter.dart
+message FlutterTextWidthBasis {
+  enum Enum {
+    PARENT = 0;
+    LONGEST_LINE = 1;
+  }
+}
+
+// package:flutter/src/widgets/focus_traversal.dart
+message FlutterTraversalEdgeBehavior {
+  enum Enum {
+    CLOSED_LOOP = 0;
+    LEAVE_FLUTTER_VIEW = 1;
+  }
+}
+
+// package:flutter/src/painting/basic_types.dart
+message FlutterVerticalDirection {
+  enum Enum {
+    UP = 0;
+    DOWN = 1;
+  }
+}
+
+// package:flutter/src/rendering/wrap.dart
+message FlutterWrapAlignment {
+  enum Enum {
+    START = 0;
+    END = 1;
+    CENTER = 2;
+    SPACE_BETWEEN = 3;
+    SPACE_AROUND = 4;
+    SPACE_EVENLY = 5;
+  }
+}
+
+// package:flutter/src/rendering/wrap.dart
+message FlutterWrapCrossAlignment {
+  enum Enum {
+    START = 0;
+    END = 1;
+    CENTER = 2;
+  }
+}
+
+// package:flutter/src/material/button_theme.dart
+message MaterialButtonBarLayoutBehavior {
+  enum Enum {
+    CONSTRAINED = 0;
+    PADDED = 1;
+  }
+}
+
+// package:flutter/src/material/button_theme.dart
+message MaterialButtonTextTheme {
+  enum Enum {
+    NORMAL = 0;
+    ACCENT = 1;
+    PRIMARY = 2;
+  }
+}
+
+// package:flutter/src/material/flexible_space_bar.dart
+message MaterialCollapseMode {
+  enum Enum {
+    PARALLAX = 0;
+    PIN = 1;
+    NONE = 2;
+  }
+}
+
+// package:flutter/src/material/drawer.dart
+message MaterialDrawerAlignment {
+  enum Enum {
+    START = 0;
+    END = 1;
+  }
+}
+
+// package:flutter/src/material/list_tile.dart
+message MaterialListTileControlAffinity {
+  enum Enum {
+    LEADING = 0;
+    TRAILING = 1;
+    PLATFORM = 2;
+  }
+}
+
+// package:flutter/src/material/list_tile.dart
+message MaterialListTileStyle {
+  enum Enum {
+    LIST = 0;
+    DRAWER = 1;
+  }
+}
+
+// package:flutter/src/material/list_tile.dart
+message MaterialListTileTitleAlignment {
+  enum Enum {
+    THREE_LINE = 0;
+    TITLE_HEIGHT = 1;
+    TOP = 2;
+    CENTER = 3;
+    BOTTOM = 4;
+  }
+}
+
+// package:flutter/src/material/theme_data.dart
+message MaterialMaterialTapTargetSize {
+  enum Enum {
+    PADDED = 0;
+    SHRINK_WRAP = 1;
+  }
+}
+
+// package:flutter/src/material/material.dart
+message MaterialMaterialType {
+  enum Enum {
+    CANVAS = 0;
+    CARD = 1;
+    CIRCLE = 2;
+    BUTTON = 3;
+    TRANSPARENCY = 4;
+  }
+}
+
+// package:flutter/src/material/navigation_bar.dart
+message MaterialNavigationDestinationLabelBehavior {
+  enum Enum {
+    ALWAYS_SHOW = 0;
+    ALWAYS_HIDE = 1;
+    ONLY_SHOW_SELECTED = 2;
+  }
+}
+
+// package:flutter/src/material/slider.dart
+message MaterialSliderInteraction {
+  enum Enum {
+    TAP_AND_SLIDE = 0;
+    TAP_ONLY = 1;
+    SLIDE_ONLY = 2;
+    SLIDE_THUMB = 3;
+  }
+}
+
+// package:flutter/src/material/snack_bar_theme.dart
+message MaterialSnackBarBehavior {
+  enum Enum {
+    FIXED = 0;
+    FLOATING = 1;
+  }
+}
+
+// package:flutter/src/material/flexible_space_bar.dart
+message MaterialStretchMode {
+  enum Enum {
+    ZOOM_BACKGROUND = 0;
+    BLUR_BACKGROUND = 1;
+    FADE_TITLE = 2;
+  }
+}
+
+// package:flutter/src/material/tabs.dart
+message MaterialTabAlignment {
+  enum Enum {
+    START = 0;
+    START_OFFSET = 1;
+    FILL = 2;
+    CENTER = 3;
+  }
+}
+
+// package:flutter/src/material/tabs.dart
+message MaterialTabBarIndicatorSize {
+  enum Enum {
+    TAB = 0;
+    LABEL = 1;
+  }
+}
+
+// package:flutter/src/material/app.dart
+message MaterialThemeMode {
+  enum Enum {
+    SYSTEM = 0;
+    LIGHT = 1;
+    DARK = 2;
+  }
+}
+
+// package:flutter/src/material/tooltip_theme.dart
+message MaterialTooltipTriggerMode {
+  enum Enum {
+    MANUAL = 0;
+    LONG_PRESS = 1;
+    TAP = 2;
+  }
+}
+
+// package:flutter/src/cupertino/text_field.dart
+message OverlayVisibilityMode {
+  enum Enum {
+    NEVER = 0;
+    EDITING = 1;
+    NOT_EDITING = 2;
+    ALWAYS = 3;
+  }
+}
+

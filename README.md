@@ -74,3 +74,35 @@ flutter run
   from their source (when value is optional and unset at runtime); other default
   values are hard to re-use because of needed imports or using inaccessible
   constants
+- multiple protocol buffer enums can't use the same names within the same scope,
+  so we have to use pseudo messages as context for their definition. In the
+  following example `LEFT` and `RIGHT` can't be reused.
+  ```protobuf
+  enum ScrollbarOrientation {
+    LEFT = 0;
+    RIGHT = 1;
+    TOP = 2;
+    BOTTOM = 3;
+  }
+
+  enum AxisDirection {
+    UP = 0;
+    RIGHT = 1;
+    DOWN = 2;
+    LEFT = 3;
+  }
+  ```
+  So we choose to do it with encapsulation, which prevents the collision:
+  ```protobuf
+  message ScrollbarOrientation {
+    enum Enum {
+      LEFT = 0;
+      RIGHT = 1;
+      TOP = 2;
+      BOTTOM = 3;
+    }
+  }
+  ```
+  (Another option would be to prefix the enum values, like recommended in the
+  style guide. However, this can create very long names in our context,
+  e.g. `MATERIAL_NAVIGATION_DESTINATION_LABEL_BEHAVIOR_ONLY_SHOW_SELECTED`)

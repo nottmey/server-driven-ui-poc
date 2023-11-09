@@ -22,6 +22,10 @@ extension ToLibraryPrefixExtension on Element {
       case 'FlutterSrcCupertino':
         return ''; // widgets already prefixed with 'Cupertino'
       case 'FlutterSrcFoundation':
+      case 'FlutterSrcGestures':
+      case 'FlutterSrcPainting':
+      case 'FlutterSrcRendering':
+      case 'FlutterSrcServices':
       case 'FlutterSrcWidgets':
         return 'Flutter';
       default:
