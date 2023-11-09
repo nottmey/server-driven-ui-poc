@@ -1,4 +1,3 @@
-import 'package:analyzer/dart/ast/ast.dart';
 import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/dart/element/nullability_suffix.dart';
 import 'package:analyzer/dart/element/type.dart';
@@ -20,13 +19,5 @@ extension TypeSupportedExtension on ConstructorElement {
 extension IsSupportedTypeExtension on DartType {
   bool get isSupportedAsParameter {
     return toTypeMapping() != null;
-  }
-}
-
-extension IsSupportedExpressionExtension on Expression {
-  bool get isSupportedAsDefaultValueByGenerator {
-    // TODO support public constant values by importing the relevant packages
-    // TODO support referenced private values by generating additional constructors where value is not set
-    return this is Literal;
   }
 }

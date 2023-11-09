@@ -390,12 +390,12 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           key: (tree.cupertinoActivityIndicator.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoActivityIndicator.key) : null),
           color: (tree.cupertinoActivityIndicator.hasColor() ? types.evaluateDartColorExpression(tree.cupertinoActivityIndicator.color) : null),
           animating: (tree.cupertinoActivityIndicator.hasAnimating() ? tree.cupertinoActivityIndicator.animating : true),
-          radius: (tree.cupertinoActivityIndicator.hasRadius() ? tree.cupertinoActivityIndicator.radius : missing('radius')));
+          radius: (tree.cupertinoActivityIndicator.hasRadius() ? tree.cupertinoActivityIndicator.radius : 10.0));
     case proto.WidgetExpression_Result.cupertinoActivityIndicatorNamedPartiallyRevealed:
       return $c1.CupertinoActivityIndicator.partiallyRevealed(
           key: (tree.cupertinoActivityIndicatorNamedPartiallyRevealed.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoActivityIndicatorNamedPartiallyRevealed.key) : null),
           color: (tree.cupertinoActivityIndicatorNamedPartiallyRevealed.hasColor() ? types.evaluateDartColorExpression(tree.cupertinoActivityIndicatorNamedPartiallyRevealed.color) : null),
-          radius: (tree.cupertinoActivityIndicatorNamedPartiallyRevealed.hasRadius() ? tree.cupertinoActivityIndicatorNamedPartiallyRevealed.radius : missing('radius')),
+          radius: (tree.cupertinoActivityIndicatorNamedPartiallyRevealed.hasRadius() ? tree.cupertinoActivityIndicatorNamedPartiallyRevealed.radius : 10.0),
           progress: (tree.cupertinoActivityIndicatorNamedPartiallyRevealed.hasProgress() ? tree.cupertinoActivityIndicatorNamedPartiallyRevealed.progress : 1.0));
     case proto.WidgetExpression_Result.cupertinoApp:
       return $c2.CupertinoApp(
@@ -457,7 +457,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           padding: null,
           color: (tree.cupertinoButton.hasColor() ? types.evaluateDartColorExpression(tree.cupertinoButton.color) : null),
           disabledColor: (tree.cupertinoButton.hasDisabledColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoButton.disabledColor) : missing('disabledColor')),
-          minSize: (tree.cupertinoButton.hasMinSize() ? tree.cupertinoButton.minSize : null),
+          minSize: (tree.cupertinoButton.hasMinSize() ? tree.cupertinoButton.minSize : 44.0),
           pressedOpacity: (tree.cupertinoButton.hasPressedOpacity() ? tree.cupertinoButton.pressedOpacity : 0.4),
           borderRadius: null,
           onPressed: null);
@@ -467,7 +467,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           child: (tree.cupertinoButtonNamedFilled.hasChild() ? evaluateRequiredWidgetExpression(tree.cupertinoButtonNamedFilled.child) : missing('child')),
           padding: null,
           disabledColor: (tree.cupertinoButtonNamedFilled.hasDisabledColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoButtonNamedFilled.disabledColor) : missing('disabledColor')),
-          minSize: (tree.cupertinoButtonNamedFilled.hasMinSize() ? tree.cupertinoButtonNamedFilled.minSize : null),
+          minSize: (tree.cupertinoButtonNamedFilled.hasMinSize() ? tree.cupertinoButtonNamedFilled.minSize : 44.0),
           pressedOpacity: (tree.cupertinoButtonNamedFilled.hasPressedOpacity() ? tree.cupertinoButtonNamedFilled.pressedOpacity : 0.4),
           borderRadius: null,
           onPressed: null);
@@ -580,9 +580,9 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           backgroundColor: (tree.cupertinoListSection.hasBackgroundColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoListSection.backgroundColor) : missing('backgroundColor')),
           decoration: null,
           clipBehavior: (tree.cupertinoListSection.hasClipBehavior() ? enums.convertRequiredDartClip(tree.cupertinoListSection.clipBehavior) : missing('clipBehavior')),
-          dividerMargin: (tree.cupertinoListSection.hasDividerMargin() ? tree.cupertinoListSection.dividerMargin : missing('dividerMargin')),
+          dividerMargin: (tree.cupertinoListSection.hasDividerMargin() ? tree.cupertinoListSection.dividerMargin : 20.0),
           additionalDividerMargin: (tree.cupertinoListSection.hasAdditionalDividerMargin() ? tree.cupertinoListSection.additionalDividerMargin : null),
-          topMargin: (tree.cupertinoListSection.hasTopMargin() ? tree.cupertinoListSection.topMargin : null),
+          topMargin: (tree.cupertinoListSection.hasTopMargin() ? tree.cupertinoListSection.topMargin : 22.0),
           hasLeading: (tree.cupertinoListSection.hasHasLeading() ? tree.cupertinoListSection.hasLeading : true),
           separatorColor: (tree.cupertinoListSection.hasSeparatorColor() ? types.evaluateDartColorExpression(tree.cupertinoListSection.separatorColor) : null));
     case proto.WidgetExpression_Result.cupertinoListSectionNamedInsetGrouped:
@@ -595,7 +595,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           backgroundColor: (tree.cupertinoListSectionNamedInsetGrouped.hasBackgroundColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoListSectionNamedInsetGrouped.backgroundColor) : missing('backgroundColor')),
           decoration: null,
           clipBehavior: (tree.cupertinoListSectionNamedInsetGrouped.hasClipBehavior() ? enums.convertRequiredDartClip(tree.cupertinoListSectionNamedInsetGrouped.clipBehavior) : missing('clipBehavior')),
-          dividerMargin: (tree.cupertinoListSectionNamedInsetGrouped.hasDividerMargin() ? tree.cupertinoListSectionNamedInsetGrouped.dividerMargin : missing('dividerMargin')),
+          dividerMargin: (tree.cupertinoListSectionNamedInsetGrouped.hasDividerMargin() ? tree.cupertinoListSectionNamedInsetGrouped.dividerMargin : 14.0),
           additionalDividerMargin: (tree.cupertinoListSectionNamedInsetGrouped.hasAdditionalDividerMargin() ? tree.cupertinoListSectionNamedInsetGrouped.additionalDividerMargin : null),
           topMargin: (tree.cupertinoListSectionNamedInsetGrouped.hasTopMargin() ? tree.cupertinoListSectionNamedInsetGrouped.topMargin : null),
           hasLeading: (tree.cupertinoListSectionNamedInsetGrouped.hasHasLeading() ? tree.cupertinoListSectionNamedInsetGrouped.hasLeading : true),
@@ -612,8 +612,8 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           backgroundColor: (tree.cupertinoListTile.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.cupertinoListTile.backgroundColor) : null),
           backgroundColorActivated: (tree.cupertinoListTile.hasBackgroundColorActivated() ? types.evaluateDartColorExpression(tree.cupertinoListTile.backgroundColorActivated) : null),
           padding: null,
-          leadingSize: (tree.cupertinoListTile.hasLeadingSize() ? tree.cupertinoListTile.leadingSize : missing('leadingSize')),
-          leadingToTitle: (tree.cupertinoListTile.hasLeadingToTitle() ? tree.cupertinoListTile.leadingToTitle : missing('leadingToTitle')));
+          leadingSize: (tree.cupertinoListTile.hasLeadingSize() ? tree.cupertinoListTile.leadingSize : 28.0),
+          leadingToTitle: (tree.cupertinoListTile.hasLeadingToTitle() ? tree.cupertinoListTile.leadingToTitle : 16.0));
     case proto.WidgetExpression_Result.cupertinoListTileNamedNotched:
       return $c22.CupertinoListTile.notched(
           key: (tree.cupertinoListTileNamedNotched.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoListTileNamedNotched.key) : null),
@@ -626,8 +626,8 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           backgroundColor: (tree.cupertinoListTileNamedNotched.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.cupertinoListTileNamedNotched.backgroundColor) : null),
           backgroundColorActivated: (tree.cupertinoListTileNamedNotched.hasBackgroundColorActivated() ? types.evaluateDartColorExpression(tree.cupertinoListTileNamedNotched.backgroundColorActivated) : null),
           padding: null,
-          leadingSize: (tree.cupertinoListTileNamedNotched.hasLeadingSize() ? tree.cupertinoListTileNamedNotched.leadingSize : missing('leadingSize')),
-          leadingToTitle: (tree.cupertinoListTileNamedNotched.hasLeadingToTitle() ? tree.cupertinoListTileNamedNotched.leadingToTitle : missing('leadingToTitle')));
+          leadingSize: (tree.cupertinoListTileNamedNotched.hasLeadingSize() ? tree.cupertinoListTileNamedNotched.leadingSize : 30.0),
+          leadingToTitle: (tree.cupertinoListTileNamedNotched.hasLeadingToTitle() ? tree.cupertinoListTileNamedNotched.leadingToTitle : 12.0));
     case proto.WidgetExpression_Result.cupertinoListTileChevron:
       return $c23.CupertinoListTileChevron(
           key: (tree.cupertinoListTileChevron.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoListTileChevron.key) : null));
@@ -682,13 +682,13 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
     case proto.WidgetExpression_Result.cupertinoPicker:
       return $c29.CupertinoPicker(
           key: (tree.cupertinoPicker.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoPicker.key) : null),
-          diameterRatio: (tree.cupertinoPicker.hasDiameterRatio() ? tree.cupertinoPicker.diameterRatio : missing('diameterRatio')),
+          diameterRatio: (tree.cupertinoPicker.hasDiameterRatio() ? tree.cupertinoPicker.diameterRatio : 1.07),
           backgroundColor: (tree.cupertinoPicker.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.cupertinoPicker.backgroundColor) : null),
           offAxisFraction: (tree.cupertinoPicker.hasOffAxisFraction() ? tree.cupertinoPicker.offAxisFraction : 0.0),
           useMagnifier: (tree.cupertinoPicker.hasUseMagnifier() ? tree.cupertinoPicker.useMagnifier : false),
           magnification: (tree.cupertinoPicker.hasMagnification() ? tree.cupertinoPicker.magnification : 1.0),
           scrollController: null,
-          squeeze: (tree.cupertinoPicker.hasSqueeze() ? tree.cupertinoPicker.squeeze : missing('squeeze')),
+          squeeze: (tree.cupertinoPicker.hasSqueeze() ? tree.cupertinoPicker.squeeze : 1.45),
           itemExtent: (tree.cupertinoPicker.hasItemExtent() ? tree.cupertinoPicker.itemExtent : missing('itemExtent')),
           onSelectedItemChanged: null,
           children: tree.cupertinoPicker.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
@@ -703,8 +703,8 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
     case proto.WidgetExpression_Result.cupertinoSliverRefreshControl:
       return $c31.CupertinoSliverRefreshControl(
           key: (tree.cupertinoSliverRefreshControl.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoSliverRefreshControl.key) : null),
-          refreshTriggerPullDistance: (tree.cupertinoSliverRefreshControl.hasRefreshTriggerPullDistance() ? tree.cupertinoSliverRefreshControl.refreshTriggerPullDistance : missing('refreshTriggerPullDistance')),
-          refreshIndicatorExtent: (tree.cupertinoSliverRefreshControl.hasRefreshIndicatorExtent() ? tree.cupertinoSliverRefreshControl.refreshIndicatorExtent : missing('refreshIndicatorExtent')),
+          refreshTriggerPullDistance: (tree.cupertinoSliverRefreshControl.hasRefreshTriggerPullDistance() ? tree.cupertinoSliverRefreshControl.refreshTriggerPullDistance : 100.0),
+          refreshIndicatorExtent: (tree.cupertinoSliverRefreshControl.hasRefreshIndicatorExtent() ? tree.cupertinoSliverRefreshControl.refreshIndicatorExtent : 60.0),
           builder: null,
           onRefresh: null);
     case proto.WidgetExpression_Result.cupertinoScrollbar:
@@ -714,7 +714,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           controller: null,
           thumbVisibility: (tree.cupertinoScrollbar.hasThumbVisibility() ? tree.cupertinoScrollbar.thumbVisibility : null),
           thickness: (tree.cupertinoScrollbar.hasThickness() ? tree.cupertinoScrollbar.thickness : missing('thickness')),
-          thicknessWhileDragging: (tree.cupertinoScrollbar.hasThicknessWhileDragging() ? tree.cupertinoScrollbar.thicknessWhileDragging : missing('thicknessWhileDragging')),
+          thicknessWhileDragging: (tree.cupertinoScrollbar.hasThicknessWhileDragging() ? tree.cupertinoScrollbar.thicknessWhileDragging : 8.0),
           notificationPredicate: null,
           scrollbarOrientation: (tree.cupertinoScrollbar.hasScrollbarOrientation() ? enums.convertFlutterScrollbarOrientation(tree.cupertinoScrollbar.scrollbarOrientation) : null));
     case proto.WidgetExpression_Result.cupertinoSearchTextField:
@@ -1207,7 +1207,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           stretchTriggerOffset: (tree.materialSliverAppBar.hasStretchTriggerOffset() ? tree.materialSliverAppBar.stretchTriggerOffset : 100.0),
           onStretchTrigger: null,
           shape: null,
-          toolbarHeight: (tree.materialSliverAppBar.hasToolbarHeight() ? tree.materialSliverAppBar.toolbarHeight : missing('toolbarHeight')),
+          toolbarHeight: (tree.materialSliverAppBar.hasToolbarHeight() ? tree.materialSliverAppBar.toolbarHeight : 56.0),
           leadingWidth: (tree.materialSliverAppBar.hasLeadingWidth() ? tree.materialSliverAppBar.leadingWidth : null),
           toolbarTextStyle: null,
           titleTextStyle: null,
@@ -1855,7 +1855,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           iconSize: (tree.materialDropdownButton.hasIconSize() ? tree.materialDropdownButton.iconSize : 24.0),
           isDense: (tree.materialDropdownButton.hasIsDense() ? tree.materialDropdownButton.isDense : false),
           isExpanded: (tree.materialDropdownButton.hasIsExpanded() ? tree.materialDropdownButton.isExpanded : false),
-          itemHeight: (tree.materialDropdownButton.hasItemHeight() ? tree.materialDropdownButton.itemHeight : null),
+          itemHeight: (tree.materialDropdownButton.hasItemHeight() ? tree.materialDropdownButton.itemHeight : 48.0),
           focusColor: (tree.materialDropdownButton.hasFocusColor() ? types.evaluateDartColorExpression(tree.materialDropdownButton.focusColor) : null),
           focusNode: null,
           autofocus: (tree.materialDropdownButton.hasAutofocus() ? tree.materialDropdownButton.autofocus : false),
@@ -2726,19 +2726,19 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           checked: (tree.materialCheckedPopupMenuItem.hasChecked() ? tree.materialCheckedPopupMenuItem.checked : false),
           enabled: (tree.materialCheckedPopupMenuItem.hasEnabled() ? tree.materialCheckedPopupMenuItem.enabled : true),
           padding: null,
-          height: (tree.materialCheckedPopupMenuItem.hasHeight() ? tree.materialCheckedPopupMenuItem.height : missing('height')),
+          height: (tree.materialCheckedPopupMenuItem.hasHeight() ? tree.materialCheckedPopupMenuItem.height : 48.0),
           mouseCursor: null,
           child: (tree.materialCheckedPopupMenuItem.hasChild() ? evaluateWidgetExpression(tree.materialCheckedPopupMenuItem.child) : null));
     case proto.WidgetExpression_Result.materialPopupMenuDivider:
       return $c145.PopupMenuDivider(
           key: (tree.materialPopupMenuDivider.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialPopupMenuDivider.key) : null),
-          height: (tree.materialPopupMenuDivider.hasHeight() ? tree.materialPopupMenuDivider.height : missing('height')));
+          height: (tree.materialPopupMenuDivider.hasHeight() ? tree.materialPopupMenuDivider.height : 16.0));
     case proto.WidgetExpression_Result.materialPopupMenuItem:
       return $c146.PopupMenuItem(
           key: (tree.materialPopupMenuItem.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialPopupMenuItem.key) : null),
           onTap: null,
           enabled: (tree.materialPopupMenuItem.hasEnabled() ? tree.materialPopupMenuItem.enabled : true),
-          height: (tree.materialPopupMenuItem.hasHeight() ? tree.materialPopupMenuItem.height : missing('height')),
+          height: (tree.materialPopupMenuItem.hasHeight() ? tree.materialPopupMenuItem.height : 48.0),
           padding: null,
           textStyle: null,
           labelTextStyle: null,
@@ -2752,7 +2752,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           color: (tree.materialCircularProgressIndicator.hasColor() ? types.evaluateDartColorExpression(tree.materialCircularProgressIndicator.color) : null),
           valueColor: null,
           strokeWidth: (tree.materialCircularProgressIndicator.hasStrokeWidth() ? tree.materialCircularProgressIndicator.strokeWidth : 4.0),
-          strokeAlign: (tree.materialCircularProgressIndicator.hasStrokeAlign() ? tree.materialCircularProgressIndicator.strokeAlign : missing('strokeAlign')),
+          strokeAlign: (tree.materialCircularProgressIndicator.hasStrokeAlign() ? tree.materialCircularProgressIndicator.strokeAlign : 0.0),
           semanticsLabel: (tree.materialCircularProgressIndicator.hasSemanticsLabel() ? tree.materialCircularProgressIndicator.semanticsLabel : null),
           semanticsValue: (tree.materialCircularProgressIndicator.hasSemanticsValue() ? tree.materialCircularProgressIndicator.semanticsValue : null),
           strokeCap: (tree.materialCircularProgressIndicator.hasStrokeCap() ? enums.convertDartStrokeCap(tree.materialCircularProgressIndicator.strokeCap) : null));
@@ -2766,7 +2766,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           semanticsLabel: (tree.materialCircularProgressIndicatorNamedAdaptive.hasSemanticsLabel() ? tree.materialCircularProgressIndicatorNamedAdaptive.semanticsLabel : null),
           semanticsValue: (tree.materialCircularProgressIndicatorNamedAdaptive.hasSemanticsValue() ? tree.materialCircularProgressIndicatorNamedAdaptive.semanticsValue : null),
           strokeCap: (tree.materialCircularProgressIndicatorNamedAdaptive.hasStrokeCap() ? enums.convertDartStrokeCap(tree.materialCircularProgressIndicatorNamedAdaptive.strokeCap) : null),
-          strokeAlign: (tree.materialCircularProgressIndicatorNamedAdaptive.hasStrokeAlign() ? tree.materialCircularProgressIndicatorNamedAdaptive.strokeAlign : missing('strokeAlign')));
+          strokeAlign: (tree.materialCircularProgressIndicatorNamedAdaptive.hasStrokeAlign() ? tree.materialCircularProgressIndicatorNamedAdaptive.strokeAlign : 0.0));
     case proto.WidgetExpression_Result.materialLinearProgressIndicator:
       return $c149.LinearProgressIndicator(
           key: (tree.materialLinearProgressIndicator.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialLinearProgressIndicator.key) : null),
@@ -2785,7 +2785,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           color: (tree.materialRefreshProgressIndicator.hasColor() ? types.evaluateDartColorExpression(tree.materialRefreshProgressIndicator.color) : null),
           valueColor: null,
           strokeWidth: (tree.materialRefreshProgressIndicator.hasStrokeWidth() ? tree.materialRefreshProgressIndicator.strokeWidth : 4.0),
-          strokeAlign: (tree.materialRefreshProgressIndicator.hasStrokeAlign() ? tree.materialRefreshProgressIndicator.strokeAlign : missing('strokeAlign')),
+          strokeAlign: (tree.materialRefreshProgressIndicator.hasStrokeAlign() ? tree.materialRefreshProgressIndicator.strokeAlign : 0.0),
           semanticsLabel: (tree.materialRefreshProgressIndicator.hasSemanticsLabel() ? tree.materialRefreshProgressIndicator.semanticsLabel : null),
           semanticsValue: (tree.materialRefreshProgressIndicator.hasSemanticsValue() ? tree.materialRefreshProgressIndicator.semanticsValue : null),
           strokeCap: (tree.materialRefreshProgressIndicator.hasStrokeCap() ? enums.convertDartStrokeCap(tree.materialRefreshProgressIndicator.strokeCap) : null));
@@ -4422,13 +4422,13 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           constrained: (tree.flutterInteractiveViewer.hasConstrained() ? tree.flutterInteractiveViewer.constrained : true),
           maxScale: (tree.flutterInteractiveViewer.hasMaxScale() ? tree.flutterInteractiveViewer.maxScale : 2.5),
           minScale: (tree.flutterInteractiveViewer.hasMinScale() ? tree.flutterInteractiveViewer.minScale : 0.8),
-          interactionEndFrictionCoefficient: (tree.flutterInteractiveViewer.hasInteractionEndFrictionCoefficient() ? tree.flutterInteractiveViewer.interactionEndFrictionCoefficient : missing('interactionEndFrictionCoefficient')),
+          interactionEndFrictionCoefficient: (tree.flutterInteractiveViewer.hasInteractionEndFrictionCoefficient() ? tree.flutterInteractiveViewer.interactionEndFrictionCoefficient : 0.0000135),
           onInteractionEnd: null,
           onInteractionStart: null,
           onInteractionUpdate: null,
           panEnabled: (tree.flutterInteractiveViewer.hasPanEnabled() ? tree.flutterInteractiveViewer.panEnabled : true),
           scaleEnabled: (tree.flutterInteractiveViewer.hasScaleEnabled() ? tree.flutterInteractiveViewer.scaleEnabled : true),
-          scaleFactor: (tree.flutterInteractiveViewer.hasScaleFactor() ? tree.flutterInteractiveViewer.scaleFactor : missing('scaleFactor')),
+          scaleFactor: (tree.flutterInteractiveViewer.hasScaleFactor() ? tree.flutterInteractiveViewer.scaleFactor : 200),
           transformationController: null,
           alignment: null,
           trackpadScrollCausesScale: (tree.flutterInteractiveViewer.hasTrackpadScrollCausesScale() ? tree.flutterInteractiveViewer.trackpadScrollCausesScale : false),
@@ -4473,7 +4473,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           middle: (tree.flutterNavigationToolbar.hasMiddle() ? evaluateWidgetExpression(tree.flutterNavigationToolbar.middle) : null),
           trailing: (tree.flutterNavigationToolbar.hasTrailing() ? evaluateWidgetExpression(tree.flutterNavigationToolbar.trailing) : null),
           centerMiddle: (tree.flutterNavigationToolbar.hasCenterMiddle() ? tree.flutterNavigationToolbar.centerMiddle : true),
-          middleSpacing: (tree.flutterNavigationToolbar.hasMiddleSpacing() ? tree.flutterNavigationToolbar.middleSpacing : missing('middleSpacing')));
+          middleSpacing: (tree.flutterNavigationToolbar.hasMiddleSpacing() ? tree.flutterNavigationToolbar.middleSpacing : 16.0));
     case proto.WidgetExpression_Result.flutterHeroControllerScopeNamedNone:
       return $c288.HeroControllerScope.none(
           key: (tree.flutterHeroControllerScopeNamedNone.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterHeroControllerScopeNamedNone.key) : null),
@@ -4737,7 +4737,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           radius: null,
           thickness: (tree.flutterRawScrollbar.hasThickness() ? tree.flutterRawScrollbar.thickness : null),
           thumbColor: (tree.flutterRawScrollbar.hasThumbColor() ? types.evaluateDartColorExpression(tree.flutterRawScrollbar.thumbColor) : null),
-          minThumbLength: (tree.flutterRawScrollbar.hasMinThumbLength() ? tree.flutterRawScrollbar.minThumbLength : missing('minThumbLength')),
+          minThumbLength: (tree.flutterRawScrollbar.hasMinThumbLength() ? tree.flutterRawScrollbar.minThumbLength : 18.0),
           minOverscrollLength: (tree.flutterRawScrollbar.hasMinOverscrollLength() ? tree.flutterRawScrollbar.minOverscrollLength : null),
           trackVisibility: (tree.flutterRawScrollbar.hasTrackVisibility() ? tree.flutterRawScrollbar.trackVisibility : null),
           trackRadius: null,

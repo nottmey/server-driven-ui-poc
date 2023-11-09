@@ -1,11 +1,10 @@
-import 'package:analyzer/dart/ast/ast.dart';
 import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/dart/element/nullability_suffix.dart';
 import 'package:analyzer/dart/element/type.dart';
 import 'package:generator_package/constants.dart';
-import 'package:generator_package/is_supported_extensions.dart';
 import 'package:generator_package/models/type_mapping.dart';
 import 'package:generator_package/to_default_value_expression_extension.dart';
+import 'package:generator_package/to_reusable_source_extension.dart';
 import 'package:recase/recase.dart';
 
 class Parameter {
@@ -18,7 +17,8 @@ class Parameter {
   final bool isNullable;
   final bool isGeneric;
   final bool hasNameCollision;
-  final Expression? defaultValue;
+  final List<String>? defaultValueImports;
+  final String? defaultValueSource;
 
   Parameter({
     required this.name,
@@ -28,10 +28,15 @@ class Parameter {
     required this.isNullable,
     required this.isGeneric,
     required this.hasNameCollision,
-    required this.defaultValue,
+    required this.defaultValueImports,
+    required this.defaultValueSource,
   });
 
   factory Parameter.ofElement(int index, ParameterElement element) {
+    final defaultValueExpression = element.toDefaultValueExpression();
+    final (defaultValueImports, defaultValueSource) =
+        defaultValueExpression?.toReusableSource() ?? (null, null);
+
     return Parameter(
       name: ReCase(element.name),
       typeMapping: element.type.toTypeMapping(),
@@ -40,7 +45,8 @@ class Parameter {
       isNullable: element.type.nullabilitySuffix == NullabilitySuffix.question,
       isGeneric: element.type is TypeParameterType,
       hasNameCollision: kDisallowedFieldNames.contains(element.name),
-      defaultValue: element.toDefaultValueExpression(),
+      defaultValueImports: defaultValueImports,
+      defaultValueSource: defaultValueSource,
     );
   }
 
@@ -65,12 +71,8 @@ class Parameter {
     final getter = 'tree.$fieldName.${name.camelCase}$postfix';
     final nullChecker = 'tree.$fieldName.has${name.pascalCase}$postfix()';
 
-    final generateDefaultValue = defaultValue != null &&
-            defaultValue!.isSupportedAsDefaultValueByGenerator
-        ? defaultValue!.toSource()
-        : isNullable
-            ? 'null'
-            : "$kThrowMissing('${name.camelCase}')";
+    final generateDefaultValue = defaultValueSource ??
+        (isNullable ? 'null' : "$kThrowMissing('${name.camelCase}')");
 
     final evalFn = typeMapping?.toDartEvalFn(typeEvalAlias);
     final isRepeated =
