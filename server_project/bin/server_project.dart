@@ -24,7 +24,6 @@ class ExperienceProviderService extends ExperienceProviderServiceBase {
   final random = Random();
 
   ExperienceResponse exampleData(ExperienceRequest request) {
-    // TODO choose a good example of an enum, set to null, unset, one value, other value (each available)
     return ExperienceResponse(
       start: Experience(
         widget: WidgetExpression(
@@ -40,15 +39,13 @@ class ExperienceProviderService extends ExperienceProviderServiceBase {
             ),
             child: WidgetExpression(
               flutterColumn: FlutterColumn(
-                // example of enum usage (no defaults yet)
-                mainAxisAlignment: FlutterMainAxisAlignment_Enum.CENTER,
-                mainAxisSize: FlutterMainAxisSize_Enum.MIN,
-                crossAxisAlignment: FlutterCrossAxisAlignment_Enum.START,
-                verticalDirection: FlutterVerticalDirection_Enum.DOWN,
+                // example of enum usage
+                crossAxisAlignment: FlutterCrossAxisAlignment_Enum.CENTER,
                 children: [
                   WidgetExpression(
                     // example of request usage
-                    flutterText: FlutterText(data: "- ${request.name} -"),
+                    flutterText:
+                        FlutterText(data: "----- ${request.name} -----"),
                   ),
                   WidgetExpression(
                     flutterText: FlutterText(data: "text align\nunset"),

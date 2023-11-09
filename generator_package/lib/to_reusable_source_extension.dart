@@ -6,7 +6,9 @@ import 'package:analyzer/src/dart/element/element.dart'
 import 'package:generator_package/to_self_contained_library_alias_extension.dart';
 
 (List<String> imports, String source) reference(
-    ClassElement classElement, Element referencedElement) {
+  InterfaceElement classElement,
+  ExecutableElement referencedElement,
+) {
   final alias = classElement.toSelfContainedLibraryAlias();
   final uri = classElement.librarySource.uri;
   final className = classElement.name;
@@ -23,6 +25,7 @@ extension ToReusableSourceExtension on Expression {
       if (referencedElement is PropertyAccessorElement) {
         final variableBehindAccessor = referencedElement.variable;
         if (variableBehindAccessor is ConstVariableElement) {
+          // TODO if it's a public referenced value, we could also reference it instead of copying it
           // mixin access only via casting
           return (variableBehindAccessor as ConstVariableElement)
               .constantInitializer
@@ -59,19 +62,27 @@ extension ToReusableSourceExtension on Expression {
       }
     } else if (this is PrefixedIdentifier) {
       final thisAsIdentifier = this as PrefixedIdentifier;
-      final classElement = thisAsIdentifier.prefix.staticElement;
+      final interfaceElement = thisAsIdentifier.prefix.staticElement;
       final identifierElement = thisAsIdentifier.identifier;
       final staticAccessorElement = identifierElement.staticElement;
-      if (classElement is ClassElement &&
-          classElement.isPublic &&
-          staticAccessorElement is PropertyAccessorElement &&
+      if (interfaceElement is InterfaceElement &&
+          interfaceElement.isPublic &&
+          staticAccessorElement is ExecutableElement &&
           staticAccessorElement.isStatic &&
           staticAccessorElement.isPublic) {
+        // e.g. MainAxisAlignment.start
         // e.g. CupertinoColors.quaternarySystemFill
-        return reference(classElement, staticAccessorElement);
+        // e.g. AnimatedSwitcher.defaultTransitionBuilder
+        return reference(interfaceElement, staticAccessorElement);
+      } else if (interfaceElement is InterfaceElement &&
+          interfaceElement.isPrivate) {
+        // TODO copy value from privately referenced constant
+        return (null, null);
+      } else {
+        throw AssertionError(
+          'identifier ${interfaceElement?.name}.${thisAsIdentifier.name} was not a parsable default value',
+        );
       }
-      // TODO map more syntax
-      return (null, null);
     }
     // TODO map more syntax
     return (null, null);
