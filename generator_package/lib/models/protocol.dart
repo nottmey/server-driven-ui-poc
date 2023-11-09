@@ -196,6 +196,12 @@ ${entries.mapIndexed((i, e) => e.key.toDartTypeSwitchCase(i, e.value)).join("\n"
   }
 
   String toWidgetBuilderCode() {
+    final importsForDefaultValues = widgetConstructors
+        .expand((c) => c.parameters)
+        .where((p) => p.typeMapping != null)
+        .expand((p) => p.defaultValueImports ?? <String>[])
+        .toSet()
+        .sortedBy((i) => i);
     return '''
 $kGeneratedFileHeader
 
@@ -205,6 +211,8 @@ import 'package:proto_package/proto/widgets.pb.dart' as proto;
 
 import 'package:proto_package/$kEnumBuilderFile' as enums;
 import 'package:proto_package/$kTypeBuilderFile' as types;
+
+${importsForDefaultValues.join("\n")}
 
 ${widgetConstructors.mapIndexed((i, c) => c.toDartImport(i)).join("\n")}
 

@@ -3,6 +3,7 @@ import 'package:analyzer/dart/element/element.dart';
 // ignore: implementation_imports
 import 'package:analyzer/src/dart/element/element.dart'
     show ConstVariableElement;
+import 'package:generator_package/to_self_contained_library_alias_extension.dart';
 
 extension ToReusableSourceExtension on Expression {
   (List<String>? imports, String? source)? toReusableSource() {
@@ -17,6 +18,23 @@ extension ToReusableSourceExtension on Expression {
           return (variableBehindAccessor as ConstVariableElement)
               .constantInitializer
               ?.toReusableSource();
+        } else {
+          throw AssertionError('variable was not a const evaluation');
+        }
+      } else if (referencedElement is MethodElement &&
+          referencedElement.isStatic &&
+          referencedElement.isPublic) {
+        final enclosingElement = referencedElement.enclosingElement;
+        if (enclosingElement is ClassElement && enclosingElement.isPublic) {
+          // TODO not tested yet, needs functions generation
+          final alias = enclosingElement.toSelfContainedLibraryAlias();
+          final uri = enclosingElement.librarySource.uri;
+          final className = enclosingElement.name;
+          final methodName = referencedElement.name;
+          return (
+            ["import '$uri' as $alias;"],
+            '$alias.$className.$methodName'
+          );
         }
         return (null, null);
       }
