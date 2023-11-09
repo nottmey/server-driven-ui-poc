@@ -12,14 +12,21 @@ import 'package:proto_package/builders/evaluate_type_expressions.sdu.dart' as ty
 import 'dart:core' as $dartCore;
 import 'dart:ui' as $dartUi;
 import 'package:flutter/src/cupertino/colors.dart' as $flutterSrcCupertinoColors;
+import 'package:flutter/src/cupertino/constants.dart' as $flutterSrcCupertinoConstants;
+import 'package:flutter/src/cupertino/scrollbar.dart' as $flutterSrcCupertinoScrollbar;
 import 'package:flutter/src/cupertino/text_field.dart' as $flutterSrcCupertinoTextField;
+import 'package:flutter/src/gestures/constants.dart' as $flutterSrcGesturesConstants;
 import 'package:flutter/src/gestures/recognizer.dart' as $flutterSrcGesturesRecognizer;
+import 'package:flutter/src/gestures/scale.dart' as $flutterSrcGesturesScale;
 import 'package:flutter/src/material/app.dart' as $flutterSrcMaterialApp;
 import 'package:flutter/src/material/button_theme.dart' as $flutterSrcMaterialButtonTheme;
 import 'package:flutter/src/material/colors.dart' as $flutterSrcMaterialColors;
+import 'package:flutter/src/material/constants.dart' as $flutterSrcMaterialConstants;
 import 'package:flutter/src/material/flexible_space_bar.dart' as $flutterSrcMaterialFlexibleSpaceBar;
 import 'package:flutter/src/material/list_tile.dart' as $flutterSrcMaterialListTile;
 import 'package:flutter/src/material/material.dart' as $flutterSrcMaterialMaterial;
+import 'package:flutter/src/material/progress_indicator.dart' as $flutterSrcMaterialProgressIndicator;
+import 'package:flutter/src/material/theme.dart' as $flutterSrcMaterialTheme;
 import 'package:flutter/src/painting/basic_types.dart' as $flutterSrcPaintingBasicTypes;
 import 'package:flutter/src/painting/borders.dart' as $flutterSrcPaintingBorders;
 import 'package:flutter/src/painting/box_border.dart' as $flutterSrcPaintingBoxBorder;
@@ -37,6 +44,8 @@ import 'package:flutter/src/services/text_input.dart' as $flutterSrcServicesText
 import 'package:flutter/src/widgets/autofill.dart' as $flutterSrcWidgetsAutofill;
 import 'package:flutter/src/widgets/dismissible.dart' as $flutterSrcWidgetsDismissible;
 import 'package:flutter/src/widgets/interactive_viewer.dart' as $flutterSrcWidgetsInteractiveViewer;
+import 'package:flutter/src/widgets/navigation_toolbar.dart' as $flutterSrcWidgetsNavigationToolbar;
+import 'package:flutter/src/widgets/navigator.dart' as $flutterSrcWidgetsNavigator;
 import 'package:flutter/src/widgets/overflow_bar.dart' as $flutterSrcWidgetsOverflowBar;
 import 'package:flutter/src/widgets/scroll_view.dart' as $flutterSrcWidgetsScrollView;
 
@@ -488,7 +497,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           padding: null,
           color: (tree.cupertinoButton.hasColor() ? types.evaluateDartColorExpression(tree.cupertinoButton.color) : null),
           disabledColor: (tree.cupertinoButton.hasDisabledColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoButton.disabledColor) : $flutterSrcCupertinoColors.CupertinoColors.quaternarySystemFill),
-          minSize: (tree.cupertinoButton.hasMinSize() ? tree.cupertinoButton.minSize : 44.0),
+          minSize: (tree.cupertinoButton.hasMinSize() ? tree.cupertinoButton.minSize : $flutterSrcCupertinoConstants.kMinInteractiveDimensionCupertino),
           pressedOpacity: (tree.cupertinoButton.hasPressedOpacity() ? tree.cupertinoButton.pressedOpacity : 0.4),
           borderRadius: null,
           onPressed: null);
@@ -498,7 +507,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           child: (tree.cupertinoButtonNamedFilled.hasChild() ? evaluateRequiredWidgetExpression(tree.cupertinoButtonNamedFilled.child) : missing('child')),
           padding: null,
           disabledColor: (tree.cupertinoButtonNamedFilled.hasDisabledColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoButtonNamedFilled.disabledColor) : $flutterSrcCupertinoColors.CupertinoColors.quaternarySystemFill),
-          minSize: (tree.cupertinoButtonNamedFilled.hasMinSize() ? tree.cupertinoButtonNamedFilled.minSize : 44.0),
+          minSize: (tree.cupertinoButtonNamedFilled.hasMinSize() ? tree.cupertinoButtonNamedFilled.minSize : $flutterSrcCupertinoConstants.kMinInteractiveDimensionCupertino),
           pressedOpacity: (tree.cupertinoButtonNamedFilled.hasPressedOpacity() ? tree.cupertinoButtonNamedFilled.pressedOpacity : 0.4),
           borderRadius: null,
           onPressed: null);
@@ -745,7 +754,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           controller: null,
           thumbVisibility: (tree.cupertinoScrollbar.hasThumbVisibility() ? tree.cupertinoScrollbar.thumbVisibility : null),
           thickness: (tree.cupertinoScrollbar.hasThickness() ? tree.cupertinoScrollbar.thickness : missing('thickness')),
-          thicknessWhileDragging: (tree.cupertinoScrollbar.hasThicknessWhileDragging() ? tree.cupertinoScrollbar.thicknessWhileDragging : 8.0),
+          thicknessWhileDragging: (tree.cupertinoScrollbar.hasThicknessWhileDragging() ? tree.cupertinoScrollbar.thicknessWhileDragging : $flutterSrcCupertinoScrollbar.CupertinoScrollbar.defaultThicknessWhileDragging),
           notificationPredicate: null,
           scrollbarOrientation: (tree.cupertinoScrollbar.hasScrollbarOrientation() ? enums.convertFlutterScrollbarOrientation(tree.cupertinoScrollbar.scrollbarOrientation) : null));
     case proto.WidgetExpression_Result.cupertinoSearchTextField:
@@ -1128,7 +1137,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           highContrastTheme: null,
           highContrastDarkTheme: null,
           themeMode: (tree.materialMaterialApp.hasThemeMode() ? enums.convertMaterialThemeMode(tree.materialMaterialApp.themeMode) : $flutterSrcMaterialApp.ThemeMode.system),
-          themeAnimationDuration: (tree.materialMaterialApp.hasThemeAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialMaterialApp.themeAnimationDuration) : missing('themeAnimationDuration')),
+          themeAnimationDuration: (tree.materialMaterialApp.hasThemeAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialMaterialApp.themeAnimationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
           locale: null,
           localizationsDelegates: null,
           localeListResolutionCallback: null,
@@ -1161,7 +1170,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           highContrastTheme: null,
           highContrastDarkTheme: null,
           themeMode: (tree.materialMaterialAppNamedRouter.hasThemeMode() ? enums.convertMaterialThemeMode(tree.materialMaterialAppNamedRouter.themeMode) : $flutterSrcMaterialApp.ThemeMode.system),
-          themeAnimationDuration: (tree.materialMaterialAppNamedRouter.hasThemeAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialMaterialAppNamedRouter.themeAnimationDuration) : missing('themeAnimationDuration')),
+          themeAnimationDuration: (tree.materialMaterialAppNamedRouter.hasThemeAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialMaterialAppNamedRouter.themeAnimationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
           locale: null,
           localizationsDelegates: null,
           localeListResolutionCallback: null,
@@ -1238,7 +1247,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           stretchTriggerOffset: (tree.materialSliverAppBar.hasStretchTriggerOffset() ? tree.materialSliverAppBar.stretchTriggerOffset : 100.0),
           onStretchTrigger: null,
           shape: null,
-          toolbarHeight: (tree.materialSliverAppBar.hasToolbarHeight() ? tree.materialSliverAppBar.toolbarHeight : 56.0),
+          toolbarHeight: (tree.materialSliverAppBar.hasToolbarHeight() ? tree.materialSliverAppBar.toolbarHeight : $flutterSrcMaterialConstants.kToolbarHeight),
           leadingWidth: (tree.materialSliverAppBar.hasLeadingWidth() ? tree.materialSliverAppBar.leadingWidth : null),
           toolbarTextStyle: null,
           titleTextStyle: null,
@@ -1404,7 +1413,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           hoverElevation: (tree.materialRawMaterialButton.hasHoverElevation() ? tree.materialRawMaterialButton.hoverElevation : 4.0),
           highlightElevation: (tree.materialRawMaterialButton.hasHighlightElevation() ? tree.materialRawMaterialButton.highlightElevation : 8.0),
           disabledElevation: (tree.materialRawMaterialButton.hasDisabledElevation() ? tree.materialRawMaterialButton.disabledElevation : 0.0),
-          animationDuration: (tree.materialRawMaterialButton.hasAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialRawMaterialButton.animationDuration) : missing('animationDuration')),
+          animationDuration: (tree.materialRawMaterialButton.hasAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialRawMaterialButton.animationDuration) : $flutterSrcMaterialConstants.kThemeChangeDuration),
           clipBehavior: (tree.materialRawMaterialButton.hasClipBehavior() ? enums.convertRequiredDartClip(tree.materialRawMaterialButton.clipBehavior) : $dartUi.Clip.none),
           focusNode: null,
           autofocus: (tree.materialRawMaterialButton.hasAutofocus() ? tree.materialRawMaterialButton.autofocus : false),
@@ -1886,7 +1895,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           iconSize: (tree.materialDropdownButton.hasIconSize() ? tree.materialDropdownButton.iconSize : 24.0),
           isDense: (tree.materialDropdownButton.hasIsDense() ? tree.materialDropdownButton.isDense : false),
           isExpanded: (tree.materialDropdownButton.hasIsExpanded() ? tree.materialDropdownButton.isExpanded : false),
-          itemHeight: (tree.materialDropdownButton.hasItemHeight() ? tree.materialDropdownButton.itemHeight : 48.0),
+          itemHeight: (tree.materialDropdownButton.hasItemHeight() ? tree.materialDropdownButton.itemHeight : $flutterSrcMaterialConstants.kMinInteractiveDimension),
           focusColor: (tree.materialDropdownButton.hasFocusColor() ? types.evaluateDartColorExpression(tree.materialDropdownButton.focusColor) : null),
           focusNode: null,
           autofocus: (tree.materialDropdownButton.hasAutofocus() ? tree.materialDropdownButton.autofocus : false),
@@ -1975,7 +1984,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
       return $c99.ExpansionPanelList(
           key: (tree.materialExpansionPanelList.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialExpansionPanelList.key) : null),
           expansionCallback: null,
-          animationDuration: (tree.materialExpansionPanelList.hasAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialExpansionPanelList.animationDuration) : missing('animationDuration')),
+          animationDuration: (tree.materialExpansionPanelList.hasAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialExpansionPanelList.animationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
           dividerColor: (tree.materialExpansionPanelList.hasDividerColor() ? types.evaluateDartColorExpression(tree.materialExpansionPanelList.dividerColor) : null),
           elevation: (tree.materialExpansionPanelList.hasElevation() ? tree.materialExpansionPanelList.elevation : 2),
           expandIconColor: (tree.materialExpansionPanelList.hasExpandIconColor() ? types.evaluateDartColorExpression(tree.materialExpansionPanelList.expandIconColor) : null),
@@ -1984,7 +1993,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
       return $c100.ExpansionPanelList.radio(
           key: (tree.materialExpansionPanelListNamedRadio.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialExpansionPanelListNamedRadio.key) : null),
           expansionCallback: null,
-          animationDuration: (tree.materialExpansionPanelListNamedRadio.hasAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialExpansionPanelListNamedRadio.animationDuration) : missing('animationDuration')),
+          animationDuration: (tree.materialExpansionPanelListNamedRadio.hasAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialExpansionPanelListNamedRadio.animationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
           initialOpenPanelValue: null,
           dividerColor: (tree.materialExpansionPanelListNamedRadio.hasDividerColor() ? types.evaluateDartColorExpression(tree.materialExpansionPanelListNamedRadio.dividerColor) : null),
           elevation: (tree.materialExpansionPanelListNamedRadio.hasElevation() ? tree.materialExpansionPanelListNamedRadio.elevation : 2),
@@ -2559,7 +2568,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           shape: null,
           borderOnForeground: (tree.materialMaterial.hasBorderOnForeground() ? tree.materialMaterial.borderOnForeground : true),
           clipBehavior: (tree.materialMaterial.hasClipBehavior() ? enums.convertRequiredDartClip(tree.materialMaterial.clipBehavior) : $dartUi.Clip.none),
-          animationDuration: (tree.materialMaterial.hasAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialMaterial.animationDuration) : missing('animationDuration')),
+          animationDuration: (tree.materialMaterial.hasAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialMaterial.animationDuration) : $flutterSrcMaterialConstants.kThemeChangeDuration),
           child: (tree.materialMaterial.hasChild() ? evaluateWidgetExpression(tree.materialMaterial.child) : null));
     case proto.WidgetExpression_Result.materialMaterialButton:
       return $c129.MaterialButton(
@@ -2757,7 +2766,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           checked: (tree.materialCheckedPopupMenuItem.hasChecked() ? tree.materialCheckedPopupMenuItem.checked : false),
           enabled: (tree.materialCheckedPopupMenuItem.hasEnabled() ? tree.materialCheckedPopupMenuItem.enabled : true),
           padding: null,
-          height: (tree.materialCheckedPopupMenuItem.hasHeight() ? tree.materialCheckedPopupMenuItem.height : 48.0),
+          height: (tree.materialCheckedPopupMenuItem.hasHeight() ? tree.materialCheckedPopupMenuItem.height : $flutterSrcMaterialConstants.kMinInteractiveDimension),
           mouseCursor: null,
           child: (tree.materialCheckedPopupMenuItem.hasChild() ? evaluateWidgetExpression(tree.materialCheckedPopupMenuItem.child) : null));
     case proto.WidgetExpression_Result.materialPopupMenuDivider:
@@ -2769,7 +2778,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           key: (tree.materialPopupMenuItem.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialPopupMenuItem.key) : null),
           onTap: null,
           enabled: (tree.materialPopupMenuItem.hasEnabled() ? tree.materialPopupMenuItem.enabled : true),
-          height: (tree.materialPopupMenuItem.hasHeight() ? tree.materialPopupMenuItem.height : 48.0),
+          height: (tree.materialPopupMenuItem.hasHeight() ? tree.materialPopupMenuItem.height : $flutterSrcMaterialConstants.kMinInteractiveDimension),
           padding: null,
           textStyle: null,
           labelTextStyle: null,
@@ -2783,7 +2792,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           color: (tree.materialCircularProgressIndicator.hasColor() ? types.evaluateDartColorExpression(tree.materialCircularProgressIndicator.color) : null),
           valueColor: null,
           strokeWidth: (tree.materialCircularProgressIndicator.hasStrokeWidth() ? tree.materialCircularProgressIndicator.strokeWidth : 4.0),
-          strokeAlign: (tree.materialCircularProgressIndicator.hasStrokeAlign() ? tree.materialCircularProgressIndicator.strokeAlign : 0.0),
+          strokeAlign: (tree.materialCircularProgressIndicator.hasStrokeAlign() ? tree.materialCircularProgressIndicator.strokeAlign : $flutterSrcMaterialProgressIndicator.CircularProgressIndicator.strokeAlignCenter),
           semanticsLabel: (tree.materialCircularProgressIndicator.hasSemanticsLabel() ? tree.materialCircularProgressIndicator.semanticsLabel : null),
           semanticsValue: (tree.materialCircularProgressIndicator.hasSemanticsValue() ? tree.materialCircularProgressIndicator.semanticsValue : null),
           strokeCap: (tree.materialCircularProgressIndicator.hasStrokeCap() ? enums.convertDartStrokeCap(tree.materialCircularProgressIndicator.strokeCap) : null));
@@ -2797,7 +2806,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           semanticsLabel: (tree.materialCircularProgressIndicatorNamedAdaptive.hasSemanticsLabel() ? tree.materialCircularProgressIndicatorNamedAdaptive.semanticsLabel : null),
           semanticsValue: (tree.materialCircularProgressIndicatorNamedAdaptive.hasSemanticsValue() ? tree.materialCircularProgressIndicatorNamedAdaptive.semanticsValue : null),
           strokeCap: (tree.materialCircularProgressIndicatorNamedAdaptive.hasStrokeCap() ? enums.convertDartStrokeCap(tree.materialCircularProgressIndicatorNamedAdaptive.strokeCap) : null),
-          strokeAlign: (tree.materialCircularProgressIndicatorNamedAdaptive.hasStrokeAlign() ? tree.materialCircularProgressIndicatorNamedAdaptive.strokeAlign : 0.0));
+          strokeAlign: (tree.materialCircularProgressIndicatorNamedAdaptive.hasStrokeAlign() ? tree.materialCircularProgressIndicatorNamedAdaptive.strokeAlign : $flutterSrcMaterialProgressIndicator.CircularProgressIndicator.strokeAlignCenter));
     case proto.WidgetExpression_Result.materialLinearProgressIndicator:
       return $c149.LinearProgressIndicator(
           key: (tree.materialLinearProgressIndicator.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialLinearProgressIndicator.key) : null),
@@ -2816,7 +2825,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           color: (tree.materialRefreshProgressIndicator.hasColor() ? types.evaluateDartColorExpression(tree.materialRefreshProgressIndicator.color) : null),
           valueColor: null,
           strokeWidth: (tree.materialRefreshProgressIndicator.hasStrokeWidth() ? tree.materialRefreshProgressIndicator.strokeWidth : 4.0),
-          strokeAlign: (tree.materialRefreshProgressIndicator.hasStrokeAlign() ? tree.materialRefreshProgressIndicator.strokeAlign : 0.0),
+          strokeAlign: (tree.materialRefreshProgressIndicator.hasStrokeAlign() ? tree.materialRefreshProgressIndicator.strokeAlign : $flutterSrcMaterialProgressIndicator.CircularProgressIndicator.strokeAlignCenter),
           semanticsLabel: (tree.materialRefreshProgressIndicator.hasSemanticsLabel() ? tree.materialRefreshProgressIndicator.semanticsLabel : null),
           semanticsValue: (tree.materialRefreshProgressIndicator.hasSemanticsValue() ? tree.materialRefreshProgressIndicator.semanticsValue : null),
           strokeCap: (tree.materialRefreshProgressIndicator.hasStrokeCap() ? enums.convertDartStrokeCap(tree.materialRefreshProgressIndicator.strokeCap) : null));
@@ -4105,7 +4114,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           hapticFeedbackOnStart: (tree.flutterLongPressDraggable.hasHapticFeedbackOnStart() ? tree.flutterLongPressDraggable.hapticFeedbackOnStart : true),
           ignoringFeedbackSemantics: (tree.flutterLongPressDraggable.hasIgnoringFeedbackSemantics() ? tree.flutterLongPressDraggable.ignoringFeedbackSemantics : true),
           ignoringFeedbackPointer: (tree.flutterLongPressDraggable.hasIgnoringFeedbackPointer() ? tree.flutterLongPressDraggable.ignoringFeedbackPointer : true),
-          delay: (tree.flutterLongPressDraggable.hasDelay() ? types.evaluateRequiredDartDurationExpression(tree.flutterLongPressDraggable.delay) : missing('delay')),
+          delay: (tree.flutterLongPressDraggable.hasDelay() ? types.evaluateRequiredDartDurationExpression(tree.flutterLongPressDraggable.delay) : $flutterSrcGesturesConstants.kLongPressTimeout),
           allowedButtonsFilter: null);
     case proto.WidgetExpression_Result.flutterDraggableScrollableActuator:
       return $c257.DraggableScrollableActuator(
@@ -4459,7 +4468,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           onInteractionUpdate: null,
           panEnabled: (tree.flutterInteractiveViewer.hasPanEnabled() ? tree.flutterInteractiveViewer.panEnabled : true),
           scaleEnabled: (tree.flutterInteractiveViewer.hasScaleEnabled() ? tree.flutterInteractiveViewer.scaleEnabled : true),
-          scaleFactor: (tree.flutterInteractiveViewer.hasScaleFactor() ? tree.flutterInteractiveViewer.scaleFactor : 200),
+          scaleFactor: (tree.flutterInteractiveViewer.hasScaleFactor() ? tree.flutterInteractiveViewer.scaleFactor : $flutterSrcGesturesScale.kDefaultMouseScrollToScaleFactor),
           transformationController: null,
           alignment: null,
           trackpadScrollCausesScale: (tree.flutterInteractiveViewer.hasTrackpadScrollCausesScale() ? tree.flutterInteractiveViewer.trackpadScrollCausesScale : false),
@@ -4504,7 +4513,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           middle: (tree.flutterNavigationToolbar.hasMiddle() ? evaluateWidgetExpression(tree.flutterNavigationToolbar.middle) : null),
           trailing: (tree.flutterNavigationToolbar.hasTrailing() ? evaluateWidgetExpression(tree.flutterNavigationToolbar.trailing) : null),
           centerMiddle: (tree.flutterNavigationToolbar.hasCenterMiddle() ? tree.flutterNavigationToolbar.centerMiddle : true),
-          middleSpacing: (tree.flutterNavigationToolbar.hasMiddleSpacing() ? tree.flutterNavigationToolbar.middleSpacing : 16.0));
+          middleSpacing: (tree.flutterNavigationToolbar.hasMiddleSpacing() ? tree.flutterNavigationToolbar.middleSpacing : $flutterSrcWidgetsNavigationToolbar.NavigationToolbar.kMiddleSpacing));
     case proto.WidgetExpression_Result.flutterHeroControllerScopeNamedNone:
       return $c288.HeroControllerScope.none(
           key: (tree.flutterHeroControllerScopeNamedNone.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterHeroControllerScopeNamedNone.key) : null),
@@ -4520,7 +4529,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           clipBehavior: (tree.flutterNavigator.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterNavigator.clipBehavior) : $dartUi.Clip.hardEdge),
           requestFocus: (tree.flutterNavigator.hasRequestFocus() ? tree.flutterNavigator.requestFocus : true),
           restorationScopeId: (tree.flutterNavigator.hasRestorationScopeId() ? tree.flutterNavigator.restorationScopeId : null),
-          routeTraversalEdgeBehavior: (tree.flutterNavigator.hasRouteTraversalEdgeBehavior() ? enums.convertRequiredFlutterTraversalEdgeBehavior(tree.flutterNavigator.routeTraversalEdgeBehavior) : missing('routeTraversalEdgeBehavior')));
+          routeTraversalEdgeBehavior: (tree.flutterNavigator.hasRouteTraversalEdgeBehavior() ? enums.convertRequiredFlutterTraversalEdgeBehavior(tree.flutterNavigator.routeTraversalEdgeBehavior) : $flutterSrcWidgetsNavigator.kDefaultRouteTraversalEdgeBehavior));
     case proto.WidgetExpression_Result.flutterNotificationListener:
       return $c290.NotificationListener(
           key: (tree.flutterNotificationListener.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterNotificationListener.key) : null),

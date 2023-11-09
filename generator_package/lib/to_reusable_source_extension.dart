@@ -6,14 +6,15 @@ import 'package:analyzer/src/dart/element/element.dart'
 import 'package:generator_package/to_self_contained_library_alias_extension.dart';
 
 (List<String> imports, String source) reference(
-  InterfaceElement classElement,
-  ExecutableElement referencedElement,
-) {
-  final alias = classElement.toSelfContainedLibraryAlias();
-  final uri = classElement.librarySource.uri;
-  final className = classElement.name;
-  final methodName = referencedElement.name;
-  return (["import '$uri' as $alias;"], '$alias.$className.$methodName');
+  ExecutableElement referencedElement, [
+  InterfaceElement? classElement,
+]) {
+  final alias =
+      (classElement ?? referencedElement).toSelfContainedLibraryAlias();
+  final uri = (classElement ?? referencedElement).librarySource.uri;
+  final classPrefix = classElement == null ? '' : '${classElement.name}.';
+  final refName = referencedElement.name;
+  return (["import '$uri' as $alias;"], '$alias.$classPrefix$refName');
 }
 
 extension ToReusableSourceExtension on Expression {
@@ -23,24 +24,32 @@ extension ToReusableSourceExtension on Expression {
     } else if (this is SimpleIdentifier) {
       final referencedElement = (this as SimpleIdentifier).staticElement;
       if (referencedElement is PropertyAccessorElement) {
-        final variableBehindAccessor = referencedElement.variable;
-        if (variableBehindAccessor is ConstVariableElement) {
-          // TODO if it's a public referenced value, we could also reference it instead of copying it
-          // mixin access only via casting
-          return (variableBehindAccessor as ConstVariableElement)
-              .constantInitializer
-              ?.toReusableSource();
+        if (referencedElement.isPublic) {
+          final enclosingElement = referencedElement.enclosingElement;
+          if (enclosingElement is ClassElement) {
+            return reference(referencedElement, enclosingElement);
+          } else {
+            return reference(referencedElement);
+          }
         } else {
-          throw AssertionError(
-            'variable ${referencedElement.name} was not a const evaluation',
-          );
+          final variableBehindAccessor = referencedElement.variable;
+          if (variableBehindAccessor is ConstVariableElement) {
+            // mixin access only via casting
+            return (variableBehindAccessor as ConstVariableElement)
+                .constantInitializer
+                ?.toReusableSource();
+          } else {
+            throw AssertionError(
+              'private variable ${referencedElement.name} was not a const evaluation',
+            );
+          }
         }
       } else if (referencedElement is MethodElement &&
           referencedElement.isStatic &&
           referencedElement.isPublic) {
         final enclosingElement = referencedElement.enclosingElement;
         if (enclosingElement is ClassElement && enclosingElement.isPublic) {
-          return reference(enclosingElement, referencedElement);
+          return reference(referencedElement, enclosingElement);
         } else {
           throw AssertionError(
             'referenced method ${referencedElement.name} is not in public class',
@@ -73,7 +82,7 @@ extension ToReusableSourceExtension on Expression {
         // e.g. MainAxisAlignment.start
         // e.g. CupertinoColors.quaternarySystemFill
         // e.g. AnimatedSwitcher.defaultTransitionBuilder
-        return reference(interfaceElement, staticAccessorElement);
+        return reference(staticAccessorElement, interfaceElement);
       } else if (interfaceElement is InterfaceElement &&
           interfaceElement.isPrivate) {
         // TODO copy value from privately referenced constant
