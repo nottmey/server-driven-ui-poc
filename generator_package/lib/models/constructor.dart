@@ -5,6 +5,7 @@ import 'package:generator_package/constants.dart';
 import 'package:generator_package/is_widget_extensions.dart';
 import 'package:generator_package/models/parameter.dart';
 import 'package:generator_package/to_library_prefix_extension.dart';
+import 'package:generator_package/to_self_contained_library_alias_extension.dart';
 import 'package:recase/recase.dart';
 
 enum ConstructorKind { widget, payload }
@@ -17,6 +18,8 @@ class Constructor {
   final String? constructorName;
   final Set<InterfaceElement> constructingTypes;
   final Iterable<Parameter> parameters;
+  final Uri importUri;
+  final String? importAlias;
 
   Constructor({
     required this.element,
@@ -26,7 +29,8 @@ class Constructor {
     required this.constructorName,
     required this.constructingTypes,
     required this.parameters,
-  });
+  })  : importUri = element.librarySource.uri,
+        importAlias = element.toSelfContainedLibraryAlias();
 
   factory Constructor.ofElement(ConstructorElement element) {
     final constructingTypes = {
@@ -74,12 +78,11 @@ message ${messageName.pascalCase} {
   String toDartSwitchCase(
     String protoImportAlias,
     String expressionName,
-    String constructorImportAlias,
     String? typeEvalAlias,
   ) {
     final fieldName = messageName.camelCase;
     final constructorCall =
-        '$constructorImportAlias.$typeName${constructorName != null ? ".$constructorName" : ""}';
+        '$importAlias.$typeName${constructorName != null ? ".$constructorName" : ""}';
     final constructorParameters = parameters
         .map((p) => p.toDartParameter(fieldName, typeEvalAlias))
         .whereType<String>()
@@ -90,15 +93,7 @@ message ${messageName.pascalCase} {
           $constructorParameters);''';
   }
 
-  String toDartImport(int i, [int? j]) {
-    return "import '${element.librarySource.uri}' as ${toImportAlias(i, j)};";
-  }
-
-  String toImportAlias(int i, [int? j]) {
-    if (j == null) {
-      return '\$c$i';
-    } else {
-      return '\$t${i}c$j';
-    }
+  String toDartImport() {
+    return "import '$importUri' as $importAlias;";
   }
 }

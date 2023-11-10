@@ -167,9 +167,9 @@ $kGeneratedFileHeader
 import 'dart:core' as core;
 import 'package:proto_package/proto/enums.pb.dart' as enums;
 
-${enumTypeMappings.mapIndexed((i, m) => m.toDartImport(i)).whereType<String>().join("\n")}
+${enumTypeMappings.map((m) => m.toDartImport()).whereType<String>().toSet().sortedBy((i) => i).join("\n")}
 
-${enumTypeMappings.mapIndexed((i, m) => m.toDartEnumSwitchCase(i)).whereType<String>().join("\n")}
+${enumTypeMappings.map((m) => m.toDartEnumSwitchCase()).whereType<String>().join("\n")}
 ''';
   }
 
@@ -177,31 +177,36 @@ ${enumTypeMappings.mapIndexed((i, m) => m.toDartEnumSwitchCase(i)).whereType<Str
     final entries =
         payloadConstructors.entries.sortedBy((e) => e.key.protoType);
 
+    final imports = {
+      ...entries.map((e) => e.key.toDartImport()),
+      ...entries.expand((e) => e.value.map((c) => c.toDartImport())),
+    };
+
     return '''
 $kGeneratedFileHeader
 
 import 'dart:core' as core;
 import 'package:proto_package/proto/types.pb.dart' as types;
 
-${entries.mapIndexed((i, e) => e.key.toDartImport(i)).join("\n")}
-
-${entries.mapIndexed((i, e) => e.value.mapIndexed((j, c) => c.toDartImport(i, j))).flattened.join("\n")}
+${imports.sortedBy((i) => i).join('\n')}
 
 T $kThrowMissing<T>(core.String field) {
   throw core.AssertionError('required field \$field is missing');
 }
 
-${entries.mapIndexed((i, e) => e.key.toDartTypeSwitchCase(i, e.value)).join("\n")}
+${entries.map((e) => e.key.toDartTypeSwitchCase(e.value)).join("\n")}
 ''';
   }
 
   String toWidgetBuilderCode() {
-    final importsForDefaultValues = widgetConstructors
-        .expand((c) => c.parameters)
-        .where((p) => p.typeMapping != null)
-        .expand((p) => p.defaultValueImports ?? <String>[])
-        .toSet()
-        .sortedBy((i) => i);
+    final imports = {
+      ...widgetConstructors
+          .expand((c) => c.parameters)
+          .where((p) => p.typeMapping != null)
+          .expand((p) => p.defaultValueImports ?? <String>[]),
+      ...widgetConstructors.map((c) => c.toDartImport()),
+    };
+
     return '''
 $kGeneratedFileHeader
 
@@ -212,9 +217,7 @@ import 'package:proto_package/proto/widgets.pb.dart' as proto;
 import 'package:proto_package/$kEnumBuilderFile' as enums;
 import 'package:proto_package/$kTypeBuilderFile' as types;
 
-${importsForDefaultValues.join("\n")}
-
-${widgetConstructors.mapIndexed((i, c) => c.toDartImport(i)).join("\n")}
+${imports.sortedBy((i) => i).join("\n")}
 
 T $kThrowMissing<T>(core.String field) {
   throw core.AssertionError('required field \$field is missing');
@@ -235,7 +238,7 @@ widgets.Widget? $kEvaluateWidgetExpression(proto.$kWidgetExpression? tree) {
   }
 
   switch (tree.whichResult()) {
-${widgetConstructors.mapIndexed((i, c) => c.toDartSwitchCase('proto', kWidgetExpression, c.toImportAlias(i), 'types')).join("\n")}
+${widgetConstructors.map((c) => c.toDartSwitchCase('proto', kWidgetExpression, 'types')).join("\n")}
     default:
       return null;
   }

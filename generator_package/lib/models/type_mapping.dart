@@ -6,6 +6,7 @@ import 'package:generator_package/constants.dart';
 import 'package:generator_package/is_widget_extensions.dart';
 import 'package:generator_package/models/constructor.dart';
 import 'package:generator_package/to_library_prefix_extension.dart';
+import 'package:generator_package/to_self_contained_library_alias_extension.dart';
 import 'package:recase/recase.dart';
 
 enum MappingStrategy {
@@ -110,7 +111,8 @@ class TypeMapping {
   final MappingStrategy mappingStrategy;
   final StructureStrategy structureStrategy;
   final String? typeName;
-  final Uri? uri;
+  final Uri? importUri;
+  final String? importAlias;
 
   TypeMapping._of({
     required this.dartType,
@@ -118,7 +120,8 @@ class TypeMapping {
     required this.mappingStrategy,
     this.structureStrategy = StructureStrategy.treatAsSingular,
   })  : typeName = dartType.element?.name,
-        uri = dartType.element?.librarySource?.uri;
+        importUri = dartType.element?.librarySource?.uri,
+        importAlias = dartType.element?.toSelfContainedLibraryAlias();
 
   TypeMapping toRepeated() {
     return TypeMapping._of(
@@ -167,19 +170,18 @@ message $protoType {
 ''';
   }
 
-  String toDartImport(int i) {
-    return "import '$uri' as \$t$i;";
+  String toDartImport() {
+    return "import '$importUri' as $importAlias;";
   }
 
-  String? toDartEnumSwitchCase(int i) {
+  String? toDartEnumSwitchCase() {
     final enumElement = dartType.element;
     if (enumElement is! EnumElement) {
       return null;
     }
 
-    final typeAlias = '\$t$i';
     return '''
-$typeAlias.$typeName convertRequired$protoType(enums.${protoType}_Enum enumValue) {
+$importAlias.$typeName convertRequired$protoType(enums.${protoType}_Enum enumValue) {
   final result = convert$protoType(enumValue);
   if(result != null) {
     return result;
@@ -188,12 +190,12 @@ $typeAlias.$typeName convertRequired$protoType(enums.${protoType}_Enum enumValue
   }
 }
 
-$typeAlias.$typeName? convert$protoType(enums.${protoType}_Enum enumValue) {
+$importAlias.$typeName? convert$protoType(enums.${protoType}_Enum enumValue) {
   switch (enumValue) {
 ${enumElement.fields.where((f) => f.name != 'values').map((f) {
       return '''
     case enums.${protoType}_Enum.${ReCase(f.name).constantCase}:
-      return $typeAlias.$typeName.${f.name};''';
+      return $importAlias.$typeName.${f.name};''';
     }).join("\n")}
     default:
       return null;
@@ -202,10 +204,9 @@ ${enumElement.fields.where((f) => f.name != 'values').map((f) {
 ''';
   }
 
-  String toDartTypeSwitchCase(int i, Iterable<Constructor> constructors) {
-    final typeAlias = '\$t$i';
+  String toDartTypeSwitchCase(Iterable<Constructor> constructors) {
     return '''
-$typeAlias.$typeName evaluateRequired$protoType(types.$protoType tree) {
+$importAlias.$typeName evaluateRequired$protoType(types.$protoType tree) {
   final result = evaluate$protoType(tree);
   if(result != null) {
     return result;
@@ -214,13 +215,13 @@ $typeAlias.$typeName evaluateRequired$protoType(types.$protoType tree) {
   }
 }
 
-$typeAlias.$typeName? evaluate$protoType(types.$protoType? tree) {
+$importAlias.$typeName? evaluate$protoType(types.$protoType? tree) {
   if(tree == null) {
     return null;
   }
 
   switch (tree.whichResult()) {
-${constructors.mapIndexed((j, c) => c.toDartSwitchCase('types', protoType, '\$t${i}c$j', null)).join("\n")}
+${constructors.map((c) => c.toDartSwitchCase('types', protoType, null)).join("\n")}
     default:
       return null;
   }

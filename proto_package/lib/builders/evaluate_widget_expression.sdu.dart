@@ -11,22 +11,110 @@ import 'package:proto_package/builders/evaluate_type_expressions.sdu.dart' as ty
 
 import 'dart:core' as $dartCore;
 import 'dart:ui' as $dartUi;
+import 'package:flutter/src/cupertino/activity_indicator.dart' as $flutterSrcCupertinoActivityIndicator;
+import 'package:flutter/src/cupertino/app.dart' as $flutterSrcCupertinoApp;
+import 'package:flutter/src/cupertino/button.dart' as $flutterSrcCupertinoButton;
+import 'package:flutter/src/cupertino/checkbox.dart' as $flutterSrcCupertinoCheckbox;
 import 'package:flutter/src/cupertino/colors.dart' as $flutterSrcCupertinoColors;
 import 'package:flutter/src/cupertino/constants.dart' as $flutterSrcCupertinoConstants;
+import 'package:flutter/src/cupertino/context_menu.dart' as $flutterSrcCupertinoContextMenu;
+import 'package:flutter/src/cupertino/context_menu_action.dart' as $flutterSrcCupertinoContextMenuAction;
+import 'package:flutter/src/cupertino/desktop_text_selection_toolbar_button.dart' as $flutterSrcCupertinoDesktopTextSelectionToolbarButton;
+import 'package:flutter/src/cupertino/dialog.dart' as $flutterSrcCupertinoDialog;
+import 'package:flutter/src/cupertino/form_row.dart' as $flutterSrcCupertinoFormRow;
+import 'package:flutter/src/cupertino/form_section.dart' as $flutterSrcCupertinoFormSection;
+import 'package:flutter/src/cupertino/interface_level.dart' as $flutterSrcCupertinoInterfaceLevel;
+import 'package:flutter/src/cupertino/list_section.dart' as $flutterSrcCupertinoListSection;
+import 'package:flutter/src/cupertino/list_tile.dart' as $flutterSrcCupertinoListTile;
+import 'package:flutter/src/cupertino/magnifier.dart' as $flutterSrcCupertinoMagnifier;
+import 'package:flutter/src/cupertino/nav_bar.dart' as $flutterSrcCupertinoNavBar;
+import 'package:flutter/src/cupertino/page_scaffold.dart' as $flutterSrcCupertinoPageScaffold;
+import 'package:flutter/src/cupertino/picker.dart' as $flutterSrcCupertinoPicker;
+import 'package:flutter/src/cupertino/refresh.dart' as $flutterSrcCupertinoRefresh;
 import 'package:flutter/src/cupertino/scrollbar.dart' as $flutterSrcCupertinoScrollbar;
+import 'package:flutter/src/cupertino/search_field.dart' as $flutterSrcCupertinoSearchField;
+import 'package:flutter/src/cupertino/slider.dart' as $flutterSrcCupertinoSlider;
+import 'package:flutter/src/cupertino/switch.dart' as $flutterSrcCupertinoSwitch;
+import 'package:flutter/src/cupertino/tab_view.dart' as $flutterSrcCupertinoTabView;
 import 'package:flutter/src/cupertino/text_field.dart' as $flutterSrcCupertinoTextField;
+import 'package:flutter/src/cupertino/text_form_field_row.dart' as $flutterSrcCupertinoTextFormFieldRow;
+import 'package:flutter/src/cupertino/text_selection_toolbar_button.dart' as $flutterSrcCupertinoTextSelectionToolbarButton;
 import 'package:flutter/src/gestures/constants.dart' as $flutterSrcGesturesConstants;
 import 'package:flutter/src/gestures/recognizer.dart' as $flutterSrcGesturesRecognizer;
 import 'package:flutter/src/gestures/scale.dart' as $flutterSrcGesturesScale;
+import 'package:flutter/src/material/about.dart' as $flutterSrcMaterialAbout;
+import 'package:flutter/src/material/action_buttons.dart' as $flutterSrcMaterialActionButtons;
+import 'package:flutter/src/material/action_chip.dart' as $flutterSrcMaterialActionChip;
 import 'package:flutter/src/material/app.dart' as $flutterSrcMaterialApp;
+import 'package:flutter/src/material/app_bar.dart' as $flutterSrcMaterialAppBar;
+import 'package:flutter/src/material/badge.dart' as $flutterSrcMaterialBadge;
+import 'package:flutter/src/material/banner.dart' as $flutterSrcMaterialBanner;
+import 'package:flutter/src/material/banner_theme.dart' as $flutterSrcMaterialBannerTheme;
+import 'package:flutter/src/material/bottom_app_bar.dart' as $flutterSrcMaterialBottomAppBar;
+import 'package:flutter/src/material/button.dart' as $flutterSrcMaterialButton;
+import 'package:flutter/src/material/button_bar.dart' as $flutterSrcMaterialButtonBar;
 import 'package:flutter/src/material/button_theme.dart' as $flutterSrcMaterialButtonTheme;
+import 'package:flutter/src/material/card.dart' as $flutterSrcMaterialCard;
+import 'package:flutter/src/material/checkbox.dart' as $flutterSrcMaterialCheckbox;
+import 'package:flutter/src/material/checkbox_list_tile.dart' as $flutterSrcMaterialCheckboxListTile;
+import 'package:flutter/src/material/chip.dart' as $flutterSrcMaterialChip;
+import 'package:flutter/src/material/choice_chip.dart' as $flutterSrcMaterialChoiceChip;
+import 'package:flutter/src/material/circle_avatar.dart' as $flutterSrcMaterialCircleAvatar;
 import 'package:flutter/src/material/colors.dart' as $flutterSrcMaterialColors;
 import 'package:flutter/src/material/constants.dart' as $flutterSrcMaterialConstants;
+import 'package:flutter/src/material/data_table.dart' as $flutterSrcMaterialDataTable;
+import 'package:flutter/src/material/desktop_text_selection_toolbar_button.dart' as $flutterSrcMaterialDesktopTextSelectionToolbarButton;
+import 'package:flutter/src/material/dialog.dart' as $flutterSrcMaterialDialog;
+import 'package:flutter/src/material/divider.dart' as $flutterSrcMaterialDivider;
+import 'package:flutter/src/material/drawer.dart' as $flutterSrcMaterialDrawer;
+import 'package:flutter/src/material/drawer_header.dart' as $flutterSrcMaterialDrawerHeader;
+import 'package:flutter/src/material/dropdown.dart' as $flutterSrcMaterialDropdown;
+import 'package:flutter/src/material/elevated_button.dart' as $flutterSrcMaterialElevatedButton;
+import 'package:flutter/src/material/expand_icon.dart' as $flutterSrcMaterialExpandIcon;
+import 'package:flutter/src/material/expansion_panel.dart' as $flutterSrcMaterialExpansionPanel;
+import 'package:flutter/src/material/expansion_tile.dart' as $flutterSrcMaterialExpansionTile;
+import 'package:flutter/src/material/filled_button.dart' as $flutterSrcMaterialFilledButton;
+import 'package:flutter/src/material/filter_chip.dart' as $flutterSrcMaterialFilterChip;
 import 'package:flutter/src/material/flexible_space_bar.dart' as $flutterSrcMaterialFlexibleSpaceBar;
+import 'package:flutter/src/material/floating_action_button.dart' as $flutterSrcMaterialFloatingActionButton;
+import 'package:flutter/src/material/flutter_logo.dart' as $flutterSrcMaterialFlutterLogo;
+import 'package:flutter/src/material/grid_tile.dart' as $flutterSrcMaterialGridTile;
+import 'package:flutter/src/material/grid_tile_bar.dart' as $flutterSrcMaterialGridTileBar;
+import 'package:flutter/src/material/icon_button.dart' as $flutterSrcMaterialIconButton;
+import 'package:flutter/src/material/ink_decoration.dart' as $flutterSrcMaterialInkDecoration;
+import 'package:flutter/src/material/ink_well.dart' as $flutterSrcMaterialInkWell;
+import 'package:flutter/src/material/input_chip.dart' as $flutterSrcMaterialInputChip;
 import 'package:flutter/src/material/list_tile.dart' as $flutterSrcMaterialListTile;
+import 'package:flutter/src/material/list_tile_theme.dart' as $flutterSrcMaterialListTileTheme;
+import 'package:flutter/src/material/magnifier.dart' as $flutterSrcMaterialMagnifier;
 import 'package:flutter/src/material/material.dart' as $flutterSrcMaterialMaterial;
+import 'package:flutter/src/material/material_button.dart' as $flutterSrcMaterialMaterialButton;
+import 'package:flutter/src/material/menu_anchor.dart' as $flutterSrcMaterialMenuAnchor;
+import 'package:flutter/src/material/mergeable_material.dart' as $flutterSrcMaterialMergeableMaterial;
+import 'package:flutter/src/material/navigation_bar.dart' as $flutterSrcMaterialNavigationBar;
+import 'package:flutter/src/material/navigation_drawer.dart' as $flutterSrcMaterialNavigationDrawer;
+import 'package:flutter/src/material/outlined_button.dart' as $flutterSrcMaterialOutlinedButton;
+import 'package:flutter/src/material/popup_menu.dart' as $flutterSrcMaterialPopupMenu;
 import 'package:flutter/src/material/progress_indicator.dart' as $flutterSrcMaterialProgressIndicator;
+import 'package:flutter/src/material/scaffold.dart' as $flutterSrcMaterialScaffold;
+import 'package:flutter/src/material/scrollbar.dart' as $flutterSrcMaterialScrollbar;
+import 'package:flutter/src/material/search_anchor.dart' as $flutterSrcMaterialSearchAnchor;
+import 'package:flutter/src/material/selectable_text.dart' as $flutterSrcMaterialSelectableText;
+import 'package:flutter/src/material/selection_area.dart' as $flutterSrcMaterialSelectionArea;
+import 'package:flutter/src/material/slider.dart' as $flutterSrcMaterialSlider;
+import 'package:flutter/src/material/snack_bar.dart' as $flutterSrcMaterialSnackBar;
+import 'package:flutter/src/material/switch.dart' as $flutterSrcMaterialSwitch;
+import 'package:flutter/src/material/switch_list_tile.dart' as $flutterSrcMaterialSwitchListTile;
+import 'package:flutter/src/material/tab_controller.dart' as $flutterSrcMaterialTabController;
+import 'package:flutter/src/material/tabs.dart' as $flutterSrcMaterialTabs;
+import 'package:flutter/src/material/text_button.dart' as $flutterSrcMaterialTextButton;
+import 'package:flutter/src/material/text_field.dart' as $flutterSrcMaterialTextField;
+import 'package:flutter/src/material/text_form_field.dart' as $flutterSrcMaterialTextFormField;
 import 'package:flutter/src/material/theme.dart' as $flutterSrcMaterialTheme;
+import 'package:flutter/src/material/toggle_buttons.dart' as $flutterSrcMaterialToggleButtons;
+import 'package:flutter/src/material/tooltip.dart' as $flutterSrcMaterialTooltip;
+import 'package:flutter/src/material/tooltip_visibility.dart' as $flutterSrcMaterialTooltipVisibility;
+import 'package:flutter/src/material/user_accounts_drawer_header.dart' as $flutterSrcMaterialUserAccountsDrawerHeader;
 import 'package:flutter/src/painting/basic_types.dart' as $flutterSrcPaintingBasicTypes;
 import 'package:flutter/src/painting/borders.dart' as $flutterSrcPaintingBorders;
 import 'package:flutter/src/painting/box_border.dart' as $flutterSrcPaintingBoxBorder;
@@ -41,370 +129,77 @@ import 'package:flutter/src/rendering/stack.dart' as $flutterSrcRenderingStack;
 import 'package:flutter/src/rendering/table.dart' as $flutterSrcRenderingTable;
 import 'package:flutter/src/rendering/wrap.dart' as $flutterSrcRenderingWrap;
 import 'package:flutter/src/services/text_input.dart' as $flutterSrcServicesTextInput;
+import 'package:flutter/src/widgets/_platform_selectable_region_context_menu_io.dart' as $flutterSrcWidgetsPlatformSelectableRegionContextMenuIo;
+import 'package:flutter/src/widgets/actions.dart' as $flutterSrcWidgetsActions;
+import 'package:flutter/src/widgets/animated_cross_fade.dart' as $flutterSrcWidgetsAnimatedCrossFade;
+import 'package:flutter/src/widgets/animated_size.dart' as $flutterSrcWidgetsAnimatedSize;
+import 'package:flutter/src/widgets/animated_switcher.dart' as $flutterSrcWidgetsAnimatedSwitcher;
+import 'package:flutter/src/widgets/app.dart' as $flutterSrcWidgetsApp;
 import 'package:flutter/src/widgets/autofill.dart' as $flutterSrcWidgetsAutofill;
+import 'package:flutter/src/widgets/automatic_keep_alive.dart' as $flutterSrcWidgetsAutomaticKeepAlive;
+import 'package:flutter/src/widgets/banner.dart' as $flutterSrcWidgetsBanner;
+import 'package:flutter/src/widgets/basic.dart' as $flutterSrcWidgetsBasic;
+import 'package:flutter/src/widgets/container.dart' as $flutterSrcWidgetsContainer;
+import 'package:flutter/src/widgets/default_selection_style.dart' as $flutterSrcWidgetsDefaultSelectionStyle;
+import 'package:flutter/src/widgets/default_text_editing_shortcuts.dart' as $flutterSrcWidgetsDefaultTextEditingShortcuts;
 import 'package:flutter/src/widgets/dismissible.dart' as $flutterSrcWidgetsDismissible;
+import 'package:flutter/src/widgets/display_feature_sub_screen.dart' as $flutterSrcWidgetsDisplayFeatureSubScreen;
+import 'package:flutter/src/widgets/drag_target.dart' as $flutterSrcWidgetsDragTarget;
+import 'package:flutter/src/widgets/draggable_scrollable_sheet.dart' as $flutterSrcWidgetsDraggableScrollableSheet;
+import 'package:flutter/src/widgets/fade_in_image.dart' as $flutterSrcWidgetsFadeInImage;
+import 'package:flutter/src/widgets/focus_scope.dart' as $flutterSrcWidgetsFocusScope;
+import 'package:flutter/src/widgets/focus_traversal.dart' as $flutterSrcWidgetsFocusTraversal;
+import 'package:flutter/src/widgets/form.dart' as $flutterSrcWidgetsForm;
+import 'package:flutter/src/widgets/framework.dart' as $flutterSrcWidgetsFramework;
+import 'package:flutter/src/widgets/gesture_detector.dart' as $flutterSrcWidgetsGestureDetector;
+import 'package:flutter/src/widgets/grid_paper.dart' as $flutterSrcWidgetsGridPaper;
+import 'package:flutter/src/widgets/heroes.dart' as $flutterSrcWidgetsHeroes;
+import 'package:flutter/src/widgets/icon.dart' as $flutterSrcWidgetsIcon;
+import 'package:flutter/src/widgets/image.dart' as $flutterSrcWidgetsImage;
+import 'package:flutter/src/widgets/image_icon.dart' as $flutterSrcWidgetsImageIcon;
+import 'package:flutter/src/widgets/implicit_animations.dart' as $flutterSrcWidgetsImplicitAnimations;
 import 'package:flutter/src/widgets/interactive_viewer.dart' as $flutterSrcWidgetsInteractiveViewer;
+import 'package:flutter/src/widgets/list_wheel_scroll_view.dart' as $flutterSrcWidgetsListWheelScrollView;
+import 'package:flutter/src/widgets/lookup_boundary.dart' as $flutterSrcWidgetsLookupBoundary;
+import 'package:flutter/src/widgets/modal_barrier.dart' as $flutterSrcWidgetsModalBarrier;
 import 'package:flutter/src/widgets/navigation_toolbar.dart' as $flutterSrcWidgetsNavigationToolbar;
 import 'package:flutter/src/widgets/navigator.dart' as $flutterSrcWidgetsNavigator;
+import 'package:flutter/src/widgets/notification_listener.dart' as $flutterSrcWidgetsNotificationListener;
 import 'package:flutter/src/widgets/overflow_bar.dart' as $flutterSrcWidgetsOverflowBar;
+import 'package:flutter/src/widgets/overlay.dart' as $flutterSrcWidgetsOverlay;
+import 'package:flutter/src/widgets/overscroll_indicator.dart' as $flutterSrcWidgetsOverscrollIndicator;
+import 'package:flutter/src/widgets/page_view.dart' as $flutterSrcWidgetsPageView;
+import 'package:flutter/src/widgets/performance_overlay.dart' as $flutterSrcWidgetsPerformanceOverlay;
+import 'package:flutter/src/widgets/placeholder.dart' as $flutterSrcWidgetsPlaceholder;
+import 'package:flutter/src/widgets/platform_view.dart' as $flutterSrcWidgetsPlatformView;
+import 'package:flutter/src/widgets/primary_scroll_controller.dart' as $flutterSrcWidgetsPrimaryScrollController;
+import 'package:flutter/src/widgets/reorderable_list.dart' as $flutterSrcWidgetsReorderableList;
+import 'package:flutter/src/widgets/restoration.dart' as $flutterSrcWidgetsRestoration;
+import 'package:flutter/src/widgets/safe_area.dart' as $flutterSrcWidgetsSafeArea;
+import 'package:flutter/src/widgets/scroll_notification_observer.dart' as $flutterSrcWidgetsScrollNotificationObserver;
 import 'package:flutter/src/widgets/scroll_view.dart' as $flutterSrcWidgetsScrollView;
-
-import 'package:flutter/src/cupertino/activity_indicator.dart' as $c0;
-import 'package:flutter/src/cupertino/activity_indicator.dart' as $c1;
-import 'package:flutter/src/cupertino/app.dart' as $c2;
-import 'package:flutter/src/cupertino/app.dart' as $c3;
-import 'package:flutter/src/cupertino/button.dart' as $c4;
-import 'package:flutter/src/cupertino/button.dart' as $c5;
-import 'package:flutter/src/cupertino/checkbox.dart' as $c6;
-import 'package:flutter/src/cupertino/context_menu.dart' as $c7;
-import 'package:flutter/src/cupertino/context_menu_action.dart' as $c8;
-import 'package:flutter/src/cupertino/desktop_text_selection_toolbar_button.dart' as $c9;
-import 'package:flutter/src/cupertino/desktop_text_selection_toolbar_button.dart' as $c10;
-import 'package:flutter/src/cupertino/dialog.dart' as $c11;
-import 'package:flutter/src/cupertino/dialog.dart' as $c12;
-import 'package:flutter/src/cupertino/dialog.dart' as $c13;
-import 'package:flutter/src/cupertino/dialog.dart' as $c14;
-import 'package:flutter/src/cupertino/form_row.dart' as $c15;
-import 'package:flutter/src/cupertino/form_section.dart' as $c16;
-import 'package:flutter/src/cupertino/form_section.dart' as $c17;
-import 'package:flutter/src/cupertino/interface_level.dart' as $c18;
-import 'package:flutter/src/cupertino/list_section.dart' as $c19;
-import 'package:flutter/src/cupertino/list_section.dart' as $c20;
-import 'package:flutter/src/cupertino/list_tile.dart' as $c21;
-import 'package:flutter/src/cupertino/list_tile.dart' as $c22;
-import 'package:flutter/src/cupertino/list_tile.dart' as $c23;
-import 'package:flutter/src/cupertino/magnifier.dart' as $c24;
-import 'package:flutter/src/cupertino/nav_bar.dart' as $c25;
-import 'package:flutter/src/cupertino/nav_bar.dart' as $c26;
-import 'package:flutter/src/cupertino/nav_bar.dart' as $c27;
-import 'package:flutter/src/cupertino/page_scaffold.dart' as $c28;
-import 'package:flutter/src/cupertino/picker.dart' as $c29;
-import 'package:flutter/src/cupertino/picker.dart' as $c30;
-import 'package:flutter/src/cupertino/refresh.dart' as $c31;
-import 'package:flutter/src/cupertino/scrollbar.dart' as $c32;
-import 'package:flutter/src/cupertino/search_field.dart' as $c33;
-import 'package:flutter/src/cupertino/slider.dart' as $c34;
-import 'package:flutter/src/cupertino/switch.dart' as $c35;
-import 'package:flutter/src/cupertino/tab_view.dart' as $c36;
-import 'package:flutter/src/cupertino/text_field.dart' as $c37;
-import 'package:flutter/src/cupertino/text_field.dart' as $c38;
-import 'package:flutter/src/cupertino/text_form_field_row.dart' as $c39;
-import 'package:flutter/src/cupertino/text_selection_toolbar_button.dart' as $c40;
-import 'package:flutter/src/cupertino/text_selection_toolbar_button.dart' as $c41;
-import 'package:flutter/src/material/about.dart' as $c42;
-import 'package:flutter/src/material/about.dart' as $c43;
-import 'package:flutter/src/material/about.dart' as $c44;
-import 'package:flutter/src/material/action_buttons.dart' as $c45;
-import 'package:flutter/src/material/action_buttons.dart' as $c46;
-import 'package:flutter/src/material/action_buttons.dart' as $c47;
-import 'package:flutter/src/material/action_buttons.dart' as $c48;
-import 'package:flutter/src/material/action_buttons.dart' as $c49;
-import 'package:flutter/src/material/action_buttons.dart' as $c50;
-import 'package:flutter/src/material/action_buttons.dart' as $c51;
-import 'package:flutter/src/material/action_buttons.dart' as $c52;
-import 'package:flutter/src/material/action_chip.dart' as $c53;
-import 'package:flutter/src/material/action_chip.dart' as $c54;
-import 'package:flutter/src/material/app.dart' as $c55;
-import 'package:flutter/src/material/app.dart' as $c56;
-import 'package:flutter/src/material/app_bar.dart' as $c57;
-import 'package:flutter/src/material/app_bar.dart' as $c58;
-import 'package:flutter/src/material/app_bar.dart' as $c59;
-import 'package:flutter/src/material/app_bar.dart' as $c60;
-import 'package:flutter/src/material/badge.dart' as $c61;
-import 'package:flutter/src/material/badge.dart' as $c62;
-import 'package:flutter/src/material/banner.dart' as $c63;
-import 'package:flutter/src/material/banner_theme.dart' as $c64;
-import 'package:flutter/src/material/bottom_app_bar.dart' as $c65;
-import 'package:flutter/src/material/button.dart' as $c66;
-import 'package:flutter/src/material/button_bar.dart' as $c67;
-import 'package:flutter/src/material/button_theme.dart' as $c68;
-import 'package:flutter/src/material/card.dart' as $c69;
-import 'package:flutter/src/material/checkbox.dart' as $c70;
-import 'package:flutter/src/material/checkbox.dart' as $c71;
-import 'package:flutter/src/material/checkbox_list_tile.dart' as $c72;
-import 'package:flutter/src/material/checkbox_list_tile.dart' as $c73;
-import 'package:flutter/src/material/chip.dart' as $c74;
-import 'package:flutter/src/material/chip.dart' as $c75;
-import 'package:flutter/src/material/choice_chip.dart' as $c76;
-import 'package:flutter/src/material/choice_chip.dart' as $c77;
-import 'package:flutter/src/material/circle_avatar.dart' as $c78;
-import 'package:flutter/src/material/data_table.dart' as $c79;
-import 'package:flutter/src/material/desktop_text_selection_toolbar_button.dart' as $c80;
-import 'package:flutter/src/material/dialog.dart' as $c81;
-import 'package:flutter/src/material/dialog.dart' as $c82;
-import 'package:flutter/src/material/dialog.dart' as $c83;
-import 'package:flutter/src/material/dialog.dart' as $c84;
-import 'package:flutter/src/material/dialog.dart' as $c85;
-import 'package:flutter/src/material/dialog.dart' as $c86;
-import 'package:flutter/src/material/divider.dart' as $c87;
-import 'package:flutter/src/material/divider.dart' as $c88;
-import 'package:flutter/src/material/drawer.dart' as $c89;
-import 'package:flutter/src/material/drawer.dart' as $c90;
-import 'package:flutter/src/material/drawer_header.dart' as $c91;
-import 'package:flutter/src/material/dropdown.dart' as $c92;
-import 'package:flutter/src/material/dropdown.dart' as $c93;
-import 'package:flutter/src/material/dropdown.dart' as $c94;
-import 'package:flutter/src/material/dropdown.dart' as $c95;
-import 'package:flutter/src/material/elevated_button.dart' as $c96;
-import 'package:flutter/src/material/elevated_button.dart' as $c97;
-import 'package:flutter/src/material/expand_icon.dart' as $c98;
-import 'package:flutter/src/material/expansion_panel.dart' as $c99;
-import 'package:flutter/src/material/expansion_panel.dart' as $c100;
-import 'package:flutter/src/material/expansion_tile.dart' as $c101;
-import 'package:flutter/src/material/filled_button.dart' as $c102;
-import 'package:flutter/src/material/filled_button.dart' as $c103;
-import 'package:flutter/src/material/filled_button.dart' as $c104;
-import 'package:flutter/src/material/filled_button.dart' as $c105;
-import 'package:flutter/src/material/filter_chip.dart' as $c106;
-import 'package:flutter/src/material/filter_chip.dart' as $c107;
-import 'package:flutter/src/material/flexible_space_bar.dart' as $c108;
-import 'package:flutter/src/material/flexible_space_bar.dart' as $c109;
-import 'package:flutter/src/material/floating_action_button.dart' as $c110;
-import 'package:flutter/src/material/floating_action_button.dart' as $c111;
-import 'package:flutter/src/material/floating_action_button.dart' as $c112;
-import 'package:flutter/src/material/floating_action_button.dart' as $c113;
-import 'package:flutter/src/material/flutter_logo.dart' as $c114;
-import 'package:flutter/src/material/grid_tile.dart' as $c115;
-import 'package:flutter/src/material/grid_tile_bar.dart' as $c116;
-import 'package:flutter/src/material/icon_button.dart' as $c117;
-import 'package:flutter/src/material/icon_button.dart' as $c118;
-import 'package:flutter/src/material/icon_button.dart' as $c119;
-import 'package:flutter/src/material/icon_button.dart' as $c120;
-import 'package:flutter/src/material/ink_decoration.dart' as $c121;
-import 'package:flutter/src/material/ink_well.dart' as $c122;
-import 'package:flutter/src/material/ink_well.dart' as $c123;
-import 'package:flutter/src/material/input_chip.dart' as $c124;
-import 'package:flutter/src/material/list_tile.dart' as $c125;
-import 'package:flutter/src/material/list_tile_theme.dart' as $c126;
-import 'package:flutter/src/material/magnifier.dart' as $c127;
-import 'package:flutter/src/material/material.dart' as $c128;
-import 'package:flutter/src/material/material_button.dart' as $c129;
-import 'package:flutter/src/material/menu_anchor.dart' as $c130;
-import 'package:flutter/src/material/menu_anchor.dart' as $c131;
-import 'package:flutter/src/material/menu_anchor.dart' as $c132;
-import 'package:flutter/src/material/menu_anchor.dart' as $c133;
-import 'package:flutter/src/material/menu_anchor.dart' as $c134;
-import 'package:flutter/src/material/menu_anchor.dart' as $c135;
-import 'package:flutter/src/material/menu_anchor.dart' as $c136;
-import 'package:flutter/src/material/mergeable_material.dart' as $c137;
-import 'package:flutter/src/material/navigation_bar.dart' as $c138;
-import 'package:flutter/src/material/navigation_bar.dart' as $c139;
-import 'package:flutter/src/material/navigation_drawer.dart' as $c140;
-import 'package:flutter/src/material/navigation_drawer.dart' as $c141;
-import 'package:flutter/src/material/outlined_button.dart' as $c142;
-import 'package:flutter/src/material/outlined_button.dart' as $c143;
-import 'package:flutter/src/material/popup_menu.dart' as $c144;
-import 'package:flutter/src/material/popup_menu.dart' as $c145;
-import 'package:flutter/src/material/popup_menu.dart' as $c146;
-import 'package:flutter/src/material/progress_indicator.dart' as $c147;
-import 'package:flutter/src/material/progress_indicator.dart' as $c148;
-import 'package:flutter/src/material/progress_indicator.dart' as $c149;
-import 'package:flutter/src/material/progress_indicator.dart' as $c150;
-import 'package:flutter/src/material/scaffold.dart' as $c151;
-import 'package:flutter/src/material/scaffold.dart' as $c152;
-import 'package:flutter/src/material/scrollbar.dart' as $c153;
-import 'package:flutter/src/material/search_anchor.dart' as $c154;
-import 'package:flutter/src/material/selectable_text.dart' as $c155;
-import 'package:flutter/src/material/selection_area.dart' as $c156;
-import 'package:flutter/src/material/slider.dart' as $c157;
-import 'package:flutter/src/material/slider.dart' as $c158;
-import 'package:flutter/src/material/snack_bar.dart' as $c159;
-import 'package:flutter/src/material/switch.dart' as $c160;
-import 'package:flutter/src/material/switch.dart' as $c161;
-import 'package:flutter/src/material/switch_list_tile.dart' as $c162;
-import 'package:flutter/src/material/switch_list_tile.dart' as $c163;
-import 'package:flutter/src/material/tab_controller.dart' as $c164;
-import 'package:flutter/src/material/tabs.dart' as $c165;
-import 'package:flutter/src/material/tabs.dart' as $c166;
-import 'package:flutter/src/material/tabs.dart' as $c167;
-import 'package:flutter/src/material/tabs.dart' as $c168;
-import 'package:flutter/src/material/tabs.dart' as $c169;
-import 'package:flutter/src/material/tabs.dart' as $c170;
-import 'package:flutter/src/material/text_button.dart' as $c171;
-import 'package:flutter/src/material/text_button.dart' as $c172;
-import 'package:flutter/src/material/text_field.dart' as $c173;
-import 'package:flutter/src/material/text_form_field.dart' as $c174;
-import 'package:flutter/src/material/toggle_buttons.dart' as $c175;
-import 'package:flutter/src/material/tooltip.dart' as $c176;
-import 'package:flutter/src/material/tooltip_visibility.dart' as $c177;
-import 'package:flutter/src/material/user_accounts_drawer_header.dart' as $c178;
-import 'package:flutter/src/widgets/_platform_selectable_region_context_menu_io.dart' as $c179;
-import 'package:flutter/src/widgets/actions.dart' as $c180;
-import 'package:flutter/src/widgets/animated_cross_fade.dart' as $c181;
-import 'package:flutter/src/widgets/animated_size.dart' as $c182;
-import 'package:flutter/src/widgets/animated_switcher.dart' as $c183;
-import 'package:flutter/src/widgets/app.dart' as $c184;
-import 'package:flutter/src/widgets/app.dart' as $c185;
-import 'package:flutter/src/widgets/autofill.dart' as $c186;
-import 'package:flutter/src/widgets/automatic_keep_alive.dart' as $c187;
-import 'package:flutter/src/widgets/banner.dart' as $c188;
-import 'package:flutter/src/widgets/banner.dart' as $c189;
-import 'package:flutter/src/widgets/basic.dart' as $c190;
-import 'package:flutter/src/widgets/basic.dart' as $c191;
-import 'package:flutter/src/widgets/basic.dart' as $c192;
-import 'package:flutter/src/widgets/basic.dart' as $c193;
-import 'package:flutter/src/widgets/basic.dart' as $c194;
-import 'package:flutter/src/widgets/basic.dart' as $c195;
-import 'package:flutter/src/widgets/basic.dart' as $c196;
-import 'package:flutter/src/widgets/basic.dart' as $c197;
-import 'package:flutter/src/widgets/basic.dart' as $c198;
-import 'package:flutter/src/widgets/basic.dart' as $c199;
-import 'package:flutter/src/widgets/basic.dart' as $c200;
-import 'package:flutter/src/widgets/basic.dart' as $c201;
-import 'package:flutter/src/widgets/basic.dart' as $c202;
-import 'package:flutter/src/widgets/basic.dart' as $c203;
-import 'package:flutter/src/widgets/basic.dart' as $c204;
-import 'package:flutter/src/widgets/basic.dart' as $c205;
-import 'package:flutter/src/widgets/basic.dart' as $c206;
-import 'package:flutter/src/widgets/basic.dart' as $c207;
-import 'package:flutter/src/widgets/basic.dart' as $c208;
-import 'package:flutter/src/widgets/basic.dart' as $c209;
-import 'package:flutter/src/widgets/basic.dart' as $c210;
-import 'package:flutter/src/widgets/basic.dart' as $c211;
-import 'package:flutter/src/widgets/basic.dart' as $c212;
-import 'package:flutter/src/widgets/basic.dart' as $c213;
-import 'package:flutter/src/widgets/basic.dart' as $c214;
-import 'package:flutter/src/widgets/basic.dart' as $c215;
-import 'package:flutter/src/widgets/basic.dart' as $c216;
-import 'package:flutter/src/widgets/basic.dart' as $c217;
-import 'package:flutter/src/widgets/basic.dart' as $c218;
-import 'package:flutter/src/widgets/basic.dart' as $c219;
-import 'package:flutter/src/widgets/basic.dart' as $c220;
-import 'package:flutter/src/widgets/basic.dart' as $c221;
-import 'package:flutter/src/widgets/basic.dart' as $c222;
-import 'package:flutter/src/widgets/basic.dart' as $c223;
-import 'package:flutter/src/widgets/basic.dart' as $c224;
-import 'package:flutter/src/widgets/basic.dart' as $c225;
-import 'package:flutter/src/widgets/basic.dart' as $c226;
-import 'package:flutter/src/widgets/basic.dart' as $c227;
-import 'package:flutter/src/widgets/basic.dart' as $c228;
-import 'package:flutter/src/widgets/basic.dart' as $c229;
-import 'package:flutter/src/widgets/basic.dart' as $c230;
-import 'package:flutter/src/widgets/basic.dart' as $c231;
-import 'package:flutter/src/widgets/basic.dart' as $c232;
-import 'package:flutter/src/widgets/basic.dart' as $c233;
-import 'package:flutter/src/widgets/basic.dart' as $c234;
-import 'package:flutter/src/widgets/basic.dart' as $c235;
-import 'package:flutter/src/widgets/basic.dart' as $c236;
-import 'package:flutter/src/widgets/basic.dart' as $c237;
-import 'package:flutter/src/widgets/basic.dart' as $c238;
-import 'package:flutter/src/widgets/basic.dart' as $c239;
-import 'package:flutter/src/widgets/basic.dart' as $c240;
-import 'package:flutter/src/widgets/basic.dart' as $c241;
-import 'package:flutter/src/widgets/basic.dart' as $c242;
-import 'package:flutter/src/widgets/basic.dart' as $c243;
-import 'package:flutter/src/widgets/basic.dart' as $c244;
-import 'package:flutter/src/widgets/basic.dart' as $c245;
-import 'package:flutter/src/widgets/basic.dart' as $c246;
-import 'package:flutter/src/widgets/basic.dart' as $c247;
-import 'package:flutter/src/widgets/basic.dart' as $c248;
-import 'package:flutter/src/widgets/container.dart' as $c249;
-import 'package:flutter/src/widgets/default_selection_style.dart' as $c250;
-import 'package:flutter/src/widgets/default_selection_style.dart' as $c251;
-import 'package:flutter/src/widgets/default_text_editing_shortcuts.dart' as $c252;
-import 'package:flutter/src/widgets/dismissible.dart' as $c253;
-import 'package:flutter/src/widgets/display_feature_sub_screen.dart' as $c254;
-import 'package:flutter/src/widgets/drag_target.dart' as $c255;
-import 'package:flutter/src/widgets/drag_target.dart' as $c256;
-import 'package:flutter/src/widgets/draggable_scrollable_sheet.dart' as $c257;
-import 'package:flutter/src/widgets/fade_in_image.dart' as $c258;
-import 'package:flutter/src/widgets/focus_scope.dart' as $c259;
-import 'package:flutter/src/widgets/focus_scope.dart' as $c260;
-import 'package:flutter/src/widgets/focus_scope.dart' as $c261;
-import 'package:flutter/src/widgets/focus_traversal.dart' as $c262;
-import 'package:flutter/src/widgets/focus_traversal.dart' as $c263;
-import 'package:flutter/src/widgets/form.dart' as $c264;
-import 'package:flutter/src/widgets/framework.dart' as $c265;
-import 'package:flutter/src/widgets/gesture_detector.dart' as $c266;
-import 'package:flutter/src/widgets/gesture_detector.dart' as $c267;
-import 'package:flutter/src/widgets/grid_paper.dart' as $c268;
-import 'package:flutter/src/widgets/heroes.dart' as $c269;
-import 'package:flutter/src/widgets/icon.dart' as $c270;
-import 'package:flutter/src/widgets/image.dart' as $c271;
-import 'package:flutter/src/widgets/image.dart' as $c272;
-import 'package:flutter/src/widgets/image_icon.dart' as $c273;
-import 'package:flutter/src/widgets/implicit_animations.dart' as $c274;
-import 'package:flutter/src/widgets/implicit_animations.dart' as $c275;
-import 'package:flutter/src/widgets/implicit_animations.dart' as $c276;
-import 'package:flutter/src/widgets/implicit_animations.dart' as $c277;
-import 'package:flutter/src/widgets/implicit_animations.dart' as $c278;
-import 'package:flutter/src/widgets/implicit_animations.dart' as $c279;
-import 'package:flutter/src/widgets/implicit_animations.dart' as $c280;
-import 'package:flutter/src/widgets/implicit_animations.dart' as $c281;
-import 'package:flutter/src/widgets/implicit_animations.dart' as $c282;
-import 'package:flutter/src/widgets/interactive_viewer.dart' as $c283;
-import 'package:flutter/src/widgets/list_wheel_scroll_view.dart' as $c284;
-import 'package:flutter/src/widgets/lookup_boundary.dart' as $c285;
-import 'package:flutter/src/widgets/modal_barrier.dart' as $c286;
-import 'package:flutter/src/widgets/navigation_toolbar.dart' as $c287;
-import 'package:flutter/src/widgets/navigator.dart' as $c288;
-import 'package:flutter/src/widgets/navigator.dart' as $c289;
-import 'package:flutter/src/widgets/notification_listener.dart' as $c290;
-import 'package:flutter/src/widgets/overflow_bar.dart' as $c291;
-import 'package:flutter/src/widgets/overlay.dart' as $c292;
-import 'package:flutter/src/widgets/overscroll_indicator.dart' as $c293;
-import 'package:flutter/src/widgets/overscroll_indicator.dart' as $c294;
-import 'package:flutter/src/widgets/page_view.dart' as $c295;
-import 'package:flutter/src/widgets/performance_overlay.dart' as $c296;
-import 'package:flutter/src/widgets/performance_overlay.dart' as $c297;
-import 'package:flutter/src/widgets/placeholder.dart' as $c298;
-import 'package:flutter/src/widgets/platform_view.dart' as $c299;
-import 'package:flutter/src/widgets/platform_view.dart' as $c300;
-import 'package:flutter/src/widgets/platform_view.dart' as $c301;
-import 'package:flutter/src/widgets/primary_scroll_controller.dart' as $c302;
-import 'package:flutter/src/widgets/reorderable_list.dart' as $c303;
-import 'package:flutter/src/widgets/reorderable_list.dart' as $c304;
-import 'package:flutter/src/widgets/restoration.dart' as $c305;
-import 'package:flutter/src/widgets/restoration.dart' as $c306;
-import 'package:flutter/src/widgets/restoration.dart' as $c307;
-import 'package:flutter/src/widgets/safe_area.dart' as $c308;
-import 'package:flutter/src/widgets/safe_area.dart' as $c309;
-import 'package:flutter/src/widgets/scroll_notification_observer.dart' as $c310;
-import 'package:flutter/src/widgets/scroll_view.dart' as $c311;
-import 'package:flutter/src/widgets/scroll_view.dart' as $c312;
-import 'package:flutter/src/widgets/scroll_view.dart' as $c313;
-import 'package:flutter/src/widgets/scroll_view.dart' as $c314;
-import 'package:flutter/src/widgets/scrollbar.dart' as $c315;
-import 'package:flutter/src/widgets/selection_container.dart' as $c316;
-import 'package:flutter/src/widgets/semantics_debugger.dart' as $c317;
-import 'package:flutter/src/widgets/shared_app_data.dart' as $c318;
-import 'package:flutter/src/widgets/shortcuts.dart' as $c319;
-import 'package:flutter/src/widgets/single_child_scroll_view.dart' as $c320;
-import 'package:flutter/src/widgets/size_changed_layout_notifier.dart' as $c321;
-import 'package:flutter/src/widgets/sliver.dart' as $c322;
-import 'package:flutter/src/widgets/sliver.dart' as $c323;
-import 'package:flutter/src/widgets/sliver.dart' as $c324;
-import 'package:flutter/src/widgets/sliver.dart' as $c325;
-import 'package:flutter/src/widgets/sliver.dart' as $c326;
-import 'package:flutter/src/widgets/sliver.dart' as $c327;
-import 'package:flutter/src/widgets/sliver.dart' as $c328;
-import 'package:flutter/src/widgets/sliver.dart' as $c329;
-import 'package:flutter/src/widgets/sliver.dart' as $c330;
-import 'package:flutter/src/widgets/sliver.dart' as $c331;
-import 'package:flutter/src/widgets/sliver.dart' as $c332;
-import 'package:flutter/src/widgets/sliver.dart' as $c333;
-import 'package:flutter/src/widgets/sliver_fill.dart' as $c334;
-import 'package:flutter/src/widgets/sliver_prototype_extent_list.dart' as $c335;
-import 'package:flutter/src/widgets/spacer.dart' as $c336;
-import 'package:flutter/src/widgets/table.dart' as $c337;
-import 'package:flutter/src/widgets/table.dart' as $c338;
-import 'package:flutter/src/widgets/tap_region.dart' as $c339;
-import 'package:flutter/src/widgets/tap_region.dart' as $c340;
-import 'package:flutter/src/widgets/tap_region.dart' as $c341;
-import 'package:flutter/src/widgets/text.dart' as $c342;
-import 'package:flutter/src/widgets/text.dart' as $c343;
-import 'package:flutter/src/widgets/text_selection.dart' as $c344;
-import 'package:flutter/src/widgets/texture.dart' as $c345;
-import 'package:flutter/src/widgets/ticker_provider.dart' as $c346;
-import 'package:flutter/src/widgets/title.dart' as $c347;
-import 'package:flutter/src/widgets/visibility.dart' as $c348;
-import 'package:flutter/src/widgets/visibility.dart' as $c349;
-import 'package:flutter/src/widgets/visibility.dart' as $c350;
-import 'package:flutter/src/widgets/visibility.dart' as $c351;
-import 'package:flutter/src/widgets/widget_inspector.dart' as $c352;
-import 'package:flutter/src/widgets/will_pop_scope.dart' as $c353;
-import 'package:flutter_project/main.dart' as $c354;
-import 'package:flutter_project/main.dart' as $c355;
+import 'package:flutter/src/widgets/scrollbar.dart' as $flutterSrcWidgetsScrollbar;
+import 'package:flutter/src/widgets/selection_container.dart' as $flutterSrcWidgetsSelectionContainer;
+import 'package:flutter/src/widgets/semantics_debugger.dart' as $flutterSrcWidgetsSemanticsDebugger;
+import 'package:flutter/src/widgets/shared_app_data.dart' as $flutterSrcWidgetsSharedAppData;
+import 'package:flutter/src/widgets/shortcuts.dart' as $flutterSrcWidgetsShortcuts;
+import 'package:flutter/src/widgets/single_child_scroll_view.dart' as $flutterSrcWidgetsSingleChildScrollView;
+import 'package:flutter/src/widgets/size_changed_layout_notifier.dart' as $flutterSrcWidgetsSizeChangedLayoutNotifier;
+import 'package:flutter/src/widgets/sliver.dart' as $flutterSrcWidgetsSliver;
+import 'package:flutter/src/widgets/sliver_fill.dart' as $flutterSrcWidgetsSliverFill;
+import 'package:flutter/src/widgets/sliver_prototype_extent_list.dart' as $flutterSrcWidgetsSliverPrototypeExtentList;
+import 'package:flutter/src/widgets/spacer.dart' as $flutterSrcWidgetsSpacer;
+import 'package:flutter/src/widgets/table.dart' as $flutterSrcWidgetsTable;
+import 'package:flutter/src/widgets/tap_region.dart' as $flutterSrcWidgetsTapRegion;
+import 'package:flutter/src/widgets/text.dart' as $flutterSrcWidgetsText;
+import 'package:flutter/src/widgets/text_selection.dart' as $flutterSrcWidgetsTextSelection;
+import 'package:flutter/src/widgets/texture.dart' as $flutterSrcWidgetsTexture;
+import 'package:flutter/src/widgets/ticker_provider.dart' as $flutterSrcWidgetsTickerProvider;
+import 'package:flutter/src/widgets/title.dart' as $flutterSrcWidgetsTitle;
+import 'package:flutter/src/widgets/visibility.dart' as $flutterSrcWidgetsVisibility;
+import 'package:flutter/src/widgets/widget_inspector.dart' as $flutterSrcWidgetsWidgetInspector;
+import 'package:flutter/src/widgets/will_pop_scope.dart' as $flutterSrcWidgetsWillPopScope;
+import 'package:flutter_project/main.dart' as $flutterProjectMain;
 
 T missing<T>(core.String field) {
   throw core.AssertionError('required field $field is missing');
@@ -426,19 +221,19 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
 
   switch (tree.whichResult()) {
     case proto.WidgetExpression_Result.cupertinoActivityIndicator:
-      return $c0.CupertinoActivityIndicator(
+      return $flutterSrcCupertinoActivityIndicator.CupertinoActivityIndicator(
           key: (tree.cupertinoActivityIndicator.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoActivityIndicator.key) : null),
           color: (tree.cupertinoActivityIndicator.hasColor() ? types.evaluateDartColorExpression(tree.cupertinoActivityIndicator.color) : null),
           animating: (tree.cupertinoActivityIndicator.hasAnimating() ? tree.cupertinoActivityIndicator.animating : true),
           radius: (tree.cupertinoActivityIndicator.hasRadius() ? tree.cupertinoActivityIndicator.radius : 10.0));
     case proto.WidgetExpression_Result.cupertinoActivityIndicatorNamedPartiallyRevealed:
-      return $c1.CupertinoActivityIndicator.partiallyRevealed(
+      return $flutterSrcCupertinoActivityIndicator.CupertinoActivityIndicator.partiallyRevealed(
           key: (tree.cupertinoActivityIndicatorNamedPartiallyRevealed.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoActivityIndicatorNamedPartiallyRevealed.key) : null),
           color: (tree.cupertinoActivityIndicatorNamedPartiallyRevealed.hasColor() ? types.evaluateDartColorExpression(tree.cupertinoActivityIndicatorNamedPartiallyRevealed.color) : null),
           radius: (tree.cupertinoActivityIndicatorNamedPartiallyRevealed.hasRadius() ? tree.cupertinoActivityIndicatorNamedPartiallyRevealed.radius : 10.0),
           progress: (tree.cupertinoActivityIndicatorNamedPartiallyRevealed.hasProgress() ? tree.cupertinoActivityIndicatorNamedPartiallyRevealed.progress : 1.0));
     case proto.WidgetExpression_Result.cupertinoApp:
-      return $c2.CupertinoApp(
+      return $flutterSrcCupertinoApp.CupertinoApp(
           key: (tree.cupertinoApp.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoApp.key) : null),
           navigatorKey: null,
           home: (tree.cupertinoApp.hasHome() ? evaluateWidgetExpression(tree.cupertinoApp.home) : null),
@@ -465,7 +260,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           restorationScopeId: (tree.cupertinoApp.hasRestorationScopeId() ? tree.cupertinoApp.restorationScopeId : null),
           scrollBehavior: null);
     case proto.WidgetExpression_Result.cupertinoAppNamedRouter:
-      return $c3.CupertinoApp.router(
+      return $flutterSrcCupertinoApp.CupertinoApp.router(
           key: (tree.cupertinoAppNamedRouter.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoAppNamedRouter.key) : null),
           routeInformationProvider: null,
           routeInformationParser: null,
@@ -491,7 +286,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           restorationScopeId: (tree.cupertinoAppNamedRouter.hasRestorationScopeId() ? tree.cupertinoAppNamedRouter.restorationScopeId : null),
           scrollBehavior: null);
     case proto.WidgetExpression_Result.cupertinoButton:
-      return $c4.CupertinoButton(
+      return $flutterSrcCupertinoButton.CupertinoButton(
           key: (tree.cupertinoButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoButton.key) : null),
           child: (tree.cupertinoButton.hasChild() ? evaluateRequiredWidgetExpression(tree.cupertinoButton.child) : missing('child')),
           padding: null,
@@ -502,7 +297,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           borderRadius: null,
           onPressed: null);
     case proto.WidgetExpression_Result.cupertinoButtonNamedFilled:
-      return $c5.CupertinoButton.filled(
+      return $flutterSrcCupertinoButton.CupertinoButton.filled(
           key: (tree.cupertinoButtonNamedFilled.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoButtonNamedFilled.key) : null),
           child: (tree.cupertinoButtonNamedFilled.hasChild() ? evaluateRequiredWidgetExpression(tree.cupertinoButtonNamedFilled.child) : missing('child')),
           padding: null,
@@ -512,7 +307,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           borderRadius: null,
           onPressed: null);
     case proto.WidgetExpression_Result.cupertinoCheckbox:
-      return $c6.CupertinoCheckbox(
+      return $flutterSrcCupertinoCheckbox.CupertinoCheckbox(
           key: (tree.cupertinoCheckbox.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoCheckbox.key) : null),
           value: (tree.cupertinoCheckbox.hasValue() ? tree.cupertinoCheckbox.value : null),
           tristate: (tree.cupertinoCheckbox.hasTristate() ? tree.cupertinoCheckbox.tristate : false),
@@ -526,13 +321,13 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           side: null,
           shape: null);
     case proto.WidgetExpression_Result.cupertinoContextMenu:
-      return $c7.CupertinoContextMenu(
+      return $flutterSrcCupertinoContextMenu.CupertinoContextMenu(
           key: (tree.cupertinoContextMenu.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoContextMenu.key) : null),
           actions: tree.cupertinoContextMenu.actions.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           child: (tree.cupertinoContextMenu.hasChild() ? evaluateRequiredWidgetExpression(tree.cupertinoContextMenu.child) : missing('child')),
           enableHapticFeedback: (tree.cupertinoContextMenu.hasEnableHapticFeedback() ? tree.cupertinoContextMenu.enableHapticFeedback : false));
     case proto.WidgetExpression_Result.cupertinoContextMenuAction:
-      return $c8.CupertinoContextMenuAction(
+      return $flutterSrcCupertinoContextMenuAction.CupertinoContextMenuAction(
           key: (tree.cupertinoContextMenuAction.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoContextMenuAction.key) : null),
           child: (tree.cupertinoContextMenuAction.hasChild() ? evaluateRequiredWidgetExpression(tree.cupertinoContextMenuAction.child) : missing('child')),
           isDefaultAction: (tree.cupertinoContextMenuAction.hasIsDefaultAction() ? tree.cupertinoContextMenuAction.isDefaultAction : false),
@@ -540,17 +335,17 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           onPressed: null,
           trailingIcon: null);
     case proto.WidgetExpression_Result.cupertinoDesktopTextSelectionToolbarButton:
-      return $c9.CupertinoDesktopTextSelectionToolbarButton(
+      return $flutterSrcCupertinoDesktopTextSelectionToolbarButton.CupertinoDesktopTextSelectionToolbarButton(
           key: (tree.cupertinoDesktopTextSelectionToolbarButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoDesktopTextSelectionToolbarButton.key) : null),
           onPressed: null,
           child: (tree.cupertinoDesktopTextSelectionToolbarButton.hasChild() ? evaluateRequiredWidgetExpression(tree.cupertinoDesktopTextSelectionToolbarButton.child) : missing('child')));
     case proto.WidgetExpression_Result.cupertinoDesktopTextSelectionToolbarButtonNamedText:
-      return $c10.CupertinoDesktopTextSelectionToolbarButton.text(
+      return $flutterSrcCupertinoDesktopTextSelectionToolbarButton.CupertinoDesktopTextSelectionToolbarButton.text(
           key: (tree.cupertinoDesktopTextSelectionToolbarButtonNamedText.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoDesktopTextSelectionToolbarButtonNamedText.key) : null),
           onPressed: null,
           text: (tree.cupertinoDesktopTextSelectionToolbarButtonNamedText.hasText() ? tree.cupertinoDesktopTextSelectionToolbarButtonNamedText.text : null));
     case proto.WidgetExpression_Result.cupertinoActionSheet:
-      return $c11.CupertinoActionSheet(
+      return $flutterSrcCupertinoDialog.CupertinoActionSheet(
           key: (tree.cupertinoActionSheet.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoActionSheet.key) : null),
           title: (tree.cupertinoActionSheet.hasTitle() ? evaluateWidgetExpression(tree.cupertinoActionSheet.title) : null),
           message: (tree.cupertinoActionSheet.hasMessage() ? evaluateWidgetExpression(tree.cupertinoActionSheet.message) : null),
@@ -559,7 +354,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           actionScrollController: null,
           cancelButton: (tree.cupertinoActionSheet.hasCancelButton() ? evaluateWidgetExpression(tree.cupertinoActionSheet.cancelButton) : null));
     case proto.WidgetExpression_Result.cupertinoAlertDialog:
-      return $c12.CupertinoAlertDialog(
+      return $flutterSrcCupertinoDialog.CupertinoAlertDialog(
           key: (tree.cupertinoAlertDialog.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoAlertDialog.key) : null),
           title: (tree.cupertinoAlertDialog.hasTitle() ? evaluateWidgetExpression(tree.cupertinoAlertDialog.title) : null),
           content: (tree.cupertinoAlertDialog.hasContent() ? evaluateWidgetExpression(tree.cupertinoAlertDialog.content) : null),
@@ -568,7 +363,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           actionScrollController: null,
           insetAnimationDuration: (tree.cupertinoAlertDialog.hasInsetAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.cupertinoAlertDialog.insetAnimationDuration) : missing('insetAnimationDuration')));
     case proto.WidgetExpression_Result.cupertinoDialogAction:
-      return $c13.CupertinoDialogAction(
+      return $flutterSrcCupertinoDialog.CupertinoDialogAction(
           key: (tree.cupertinoDialogAction.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoDialogAction.key) : null),
           onPressed: null,
           isDefaultAction: (tree.cupertinoDialogAction.hasIsDefaultAction() ? tree.cupertinoDialogAction.isDefaultAction : false),
@@ -576,12 +371,12 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           textStyle: null,
           child: (tree.cupertinoDialogAction.hasChild() ? evaluateRequiredWidgetExpression(tree.cupertinoDialogAction.child) : missing('child')));
     case proto.WidgetExpression_Result.cupertinoPopupSurface:
-      return $c14.CupertinoPopupSurface(
+      return $flutterSrcCupertinoDialog.CupertinoPopupSurface(
           key: (tree.cupertinoPopupSurface.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoPopupSurface.key) : null),
           isSurfacePainted: (tree.cupertinoPopupSurface.hasIsSurfacePainted() ? tree.cupertinoPopupSurface.isSurfacePainted : true),
           child: (tree.cupertinoPopupSurface.hasChild() ? evaluateWidgetExpression(tree.cupertinoPopupSurface.child) : null));
     case proto.WidgetExpression_Result.cupertinoFormRow:
-      return $c15.CupertinoFormRow(
+      return $flutterSrcCupertinoFormRow.CupertinoFormRow(
           key: (tree.cupertinoFormRow.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoFormRow.key) : null),
           child: (tree.cupertinoFormRow.hasChild() ? evaluateRequiredWidgetExpression(tree.cupertinoFormRow.child) : missing('child')),
           prefix: (tree.cupertinoFormRow.hasPrefix() ? evaluateWidgetExpression(tree.cupertinoFormRow.prefix) : null),
@@ -589,7 +384,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           helper: (tree.cupertinoFormRow.hasHelper() ? evaluateWidgetExpression(tree.cupertinoFormRow.helper) : null),
           error: (tree.cupertinoFormRow.hasError() ? evaluateWidgetExpression(tree.cupertinoFormRow.error) : null));
     case proto.WidgetExpression_Result.cupertinoFormSection:
-      return $c16.CupertinoFormSection(
+      return $flutterSrcCupertinoFormSection.CupertinoFormSection(
           key: (tree.cupertinoFormSection.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoFormSection.key) : null),
           children: tree.cupertinoFormSection.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           header: (tree.cupertinoFormSection.hasHeader() ? evaluateWidgetExpression(tree.cupertinoFormSection.header) : null),
@@ -598,7 +393,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           decoration: null,
           clipBehavior: (tree.cupertinoFormSection.hasClipBehavior() ? enums.convertRequiredDartClip(tree.cupertinoFormSection.clipBehavior) : $dartUi.Clip.none));
     case proto.WidgetExpression_Result.cupertinoFormSectionNamedInsetGrouped:
-      return $c17.CupertinoFormSection.insetGrouped(
+      return $flutterSrcCupertinoFormSection.CupertinoFormSection.insetGrouped(
           key: (tree.cupertinoFormSectionNamedInsetGrouped.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoFormSectionNamedInsetGrouped.key) : null),
           children: tree.cupertinoFormSectionNamedInsetGrouped.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           header: (tree.cupertinoFormSectionNamedInsetGrouped.hasHeader() ? evaluateWidgetExpression(tree.cupertinoFormSectionNamedInsetGrouped.header) : null),
@@ -607,12 +402,12 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           decoration: null,
           clipBehavior: (tree.cupertinoFormSectionNamedInsetGrouped.hasClipBehavior() ? enums.convertRequiredDartClip(tree.cupertinoFormSectionNamedInsetGrouped.clipBehavior) : $dartUi.Clip.none));
     case proto.WidgetExpression_Result.cupertinoUserInterfaceLevel:
-      return $c18.CupertinoUserInterfaceLevel(
+      return $flutterSrcCupertinoInterfaceLevel.CupertinoUserInterfaceLevel(
           key: (tree.cupertinoUserInterfaceLevel.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoUserInterfaceLevel.key) : null),
           data: (tree.cupertinoUserInterfaceLevel.hasData() ? enums.convertRequiredCupertinoUserInterfaceLevelData(tree.cupertinoUserInterfaceLevel.data) : missing('data')),
           child: (tree.cupertinoUserInterfaceLevel.hasChild() ? evaluateRequiredWidgetExpression(tree.cupertinoUserInterfaceLevel.child) : missing('child')));
     case proto.WidgetExpression_Result.cupertinoListSection:
-      return $c19.CupertinoListSection(
+      return $flutterSrcCupertinoListSection.CupertinoListSection(
           key: (tree.cupertinoListSection.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoListSection.key) : null),
           children: tree.cupertinoListSection.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           header: (tree.cupertinoListSection.hasHeader() ? evaluateWidgetExpression(tree.cupertinoListSection.header) : null),
@@ -626,7 +421,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           hasLeading: (tree.cupertinoListSection.hasHasLeading() ? tree.cupertinoListSection.hasLeading : true),
           separatorColor: (tree.cupertinoListSection.hasSeparatorColor() ? types.evaluateDartColorExpression(tree.cupertinoListSection.separatorColor) : null));
     case proto.WidgetExpression_Result.cupertinoListSectionNamedInsetGrouped:
-      return $c20.CupertinoListSection.insetGrouped(
+      return $flutterSrcCupertinoListSection.CupertinoListSection.insetGrouped(
           key: (tree.cupertinoListSectionNamedInsetGrouped.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoListSectionNamedInsetGrouped.key) : null),
           children: tree.cupertinoListSectionNamedInsetGrouped.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           header: (tree.cupertinoListSectionNamedInsetGrouped.hasHeader() ? evaluateWidgetExpression(tree.cupertinoListSectionNamedInsetGrouped.header) : null),
@@ -641,7 +436,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           hasLeading: (tree.cupertinoListSectionNamedInsetGrouped.hasHasLeading() ? tree.cupertinoListSectionNamedInsetGrouped.hasLeading : true),
           separatorColor: (tree.cupertinoListSectionNamedInsetGrouped.hasSeparatorColor() ? types.evaluateDartColorExpression(tree.cupertinoListSectionNamedInsetGrouped.separatorColor) : null));
     case proto.WidgetExpression_Result.cupertinoListTile:
-      return $c21.CupertinoListTile(
+      return $flutterSrcCupertinoListTile.CupertinoListTile(
           key: (tree.cupertinoListTile.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoListTile.key) : null),
           title: (tree.cupertinoListTile.hasTitle() ? evaluateRequiredWidgetExpression(tree.cupertinoListTile.title) : missing('title')),
           subtitle: (tree.cupertinoListTile.hasSubtitle() ? evaluateWidgetExpression(tree.cupertinoListTile.subtitle) : null),
@@ -655,7 +450,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           leadingSize: (tree.cupertinoListTile.hasLeadingSize() ? tree.cupertinoListTile.leadingSize : 28.0),
           leadingToTitle: (tree.cupertinoListTile.hasLeadingToTitle() ? tree.cupertinoListTile.leadingToTitle : 16.0));
     case proto.WidgetExpression_Result.cupertinoListTileNamedNotched:
-      return $c22.CupertinoListTile.notched(
+      return $flutterSrcCupertinoListTile.CupertinoListTile.notched(
           key: (tree.cupertinoListTileNamedNotched.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoListTileNamedNotched.key) : null),
           title: (tree.cupertinoListTileNamedNotched.hasTitle() ? evaluateRequiredWidgetExpression(tree.cupertinoListTileNamedNotched.title) : missing('title')),
           subtitle: (tree.cupertinoListTileNamedNotched.hasSubtitle() ? evaluateWidgetExpression(tree.cupertinoListTileNamedNotched.subtitle) : null),
@@ -669,14 +464,14 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           leadingSize: (tree.cupertinoListTileNamedNotched.hasLeadingSize() ? tree.cupertinoListTileNamedNotched.leadingSize : 30.0),
           leadingToTitle: (tree.cupertinoListTileNamedNotched.hasLeadingToTitle() ? tree.cupertinoListTileNamedNotched.leadingToTitle : 12.0));
     case proto.WidgetExpression_Result.cupertinoListTileChevron:
-      return $c23.CupertinoListTileChevron(
+      return $flutterSrcCupertinoListTile.CupertinoListTileChevron(
           key: (tree.cupertinoListTileChevron.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoListTileChevron.key) : null));
     case proto.WidgetExpression_Result.cupertinoMagnifier:
-      return $c24.CupertinoMagnifier(
+      return $flutterSrcCupertinoMagnifier.CupertinoMagnifier(
           key: (tree.cupertinoMagnifier.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoMagnifier.key) : null),
           inOutAnimation: null);
     case proto.WidgetExpression_Result.cupertinoNavigationBar:
-      return $c25.CupertinoNavigationBar(
+      return $flutterSrcCupertinoNavBar.CupertinoNavigationBar(
           key: (tree.cupertinoNavigationBar.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoNavigationBar.key) : null),
           leading: (tree.cupertinoNavigationBar.hasLeading() ? evaluateWidgetExpression(tree.cupertinoNavigationBar.leading) : null),
           automaticallyImplyLeading: (tree.cupertinoNavigationBar.hasAutomaticallyImplyLeading() ? tree.cupertinoNavigationBar.automaticallyImplyLeading : true),
@@ -690,13 +485,13 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           padding: null,
           transitionBetweenRoutes: (tree.cupertinoNavigationBar.hasTransitionBetweenRoutes() ? tree.cupertinoNavigationBar.transitionBetweenRoutes : true));
     case proto.WidgetExpression_Result.cupertinoNavigationBarBackButton:
-      return $c26.CupertinoNavigationBarBackButton(
+      return $flutterSrcCupertinoNavBar.CupertinoNavigationBarBackButton(
           key: (tree.cupertinoNavigationBarBackButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoNavigationBarBackButton.key) : null),
           color: (tree.cupertinoNavigationBarBackButton.hasColor() ? types.evaluateDartColorExpression(tree.cupertinoNavigationBarBackButton.color) : null),
           previousPageTitle: (tree.cupertinoNavigationBarBackButton.hasPreviousPageTitle() ? tree.cupertinoNavigationBarBackButton.previousPageTitle : null),
           onPressed: null);
     case proto.WidgetExpression_Result.cupertinoSliverNavigationBar:
-      return $c27.CupertinoSliverNavigationBar(
+      return $flutterSrcCupertinoNavBar.CupertinoSliverNavigationBar(
           key: (tree.cupertinoSliverNavigationBar.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoSliverNavigationBar.key) : null),
           largeTitle: (tree.cupertinoSliverNavigationBar.hasLargeTitle() ? evaluateWidgetExpression(tree.cupertinoSliverNavigationBar.largeTitle) : null),
           leading: (tree.cupertinoSliverNavigationBar.hasLeading() ? evaluateWidgetExpression(tree.cupertinoSliverNavigationBar.leading) : null),
@@ -713,14 +508,14 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           transitionBetweenRoutes: (tree.cupertinoSliverNavigationBar.hasTransitionBetweenRoutes() ? tree.cupertinoSliverNavigationBar.transitionBetweenRoutes : true),
           stretch: (tree.cupertinoSliverNavigationBar.hasStretch() ? tree.cupertinoSliverNavigationBar.stretch : false));
     case proto.WidgetExpression_Result.cupertinoPageScaffold:
-      return $c28.CupertinoPageScaffold(
+      return $flutterSrcCupertinoPageScaffold.CupertinoPageScaffold(
           key: (tree.cupertinoPageScaffold.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoPageScaffold.key) : null),
           navigationBar: null,
           backgroundColor: (tree.cupertinoPageScaffold.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.cupertinoPageScaffold.backgroundColor) : null),
           resizeToAvoidBottomInset: (tree.cupertinoPageScaffold.hasResizeToAvoidBottomInset() ? tree.cupertinoPageScaffold.resizeToAvoidBottomInset : true),
           child: (tree.cupertinoPageScaffold.hasChild() ? evaluateRequiredWidgetExpression(tree.cupertinoPageScaffold.child) : missing('child')));
     case proto.WidgetExpression_Result.cupertinoPicker:
-      return $c29.CupertinoPicker(
+      return $flutterSrcCupertinoPicker.CupertinoPicker(
           key: (tree.cupertinoPicker.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoPicker.key) : null),
           diameterRatio: (tree.cupertinoPicker.hasDiameterRatio() ? tree.cupertinoPicker.diameterRatio : 1.07),
           backgroundColor: (tree.cupertinoPicker.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.cupertinoPicker.backgroundColor) : null),
@@ -735,20 +530,20 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           selectionOverlay: (tree.cupertinoPicker.hasSelectionOverlay() ? evaluateWidgetExpression(tree.cupertinoPicker.selectionOverlay) : null),
           looping: (tree.cupertinoPicker.hasLooping() ? tree.cupertinoPicker.looping : false));
     case proto.WidgetExpression_Result.cupertinoPickerDefaultSelectionOverlay:
-      return $c30.CupertinoPickerDefaultSelectionOverlay(
+      return $flutterSrcCupertinoPicker.CupertinoPickerDefaultSelectionOverlay(
           key: (tree.cupertinoPickerDefaultSelectionOverlay.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoPickerDefaultSelectionOverlay.key) : null),
           background: (tree.cupertinoPickerDefaultSelectionOverlay.hasBackground() ? types.evaluateRequiredDartColorExpression(tree.cupertinoPickerDefaultSelectionOverlay.background) : $flutterSrcCupertinoColors.CupertinoColors.tertiarySystemFill),
           capStartEdge: (tree.cupertinoPickerDefaultSelectionOverlay.hasCapStartEdge() ? tree.cupertinoPickerDefaultSelectionOverlay.capStartEdge : true),
           capEndEdge: (tree.cupertinoPickerDefaultSelectionOverlay.hasCapEndEdge() ? tree.cupertinoPickerDefaultSelectionOverlay.capEndEdge : true));
     case proto.WidgetExpression_Result.cupertinoSliverRefreshControl:
-      return $c31.CupertinoSliverRefreshControl(
+      return $flutterSrcCupertinoRefresh.CupertinoSliverRefreshControl(
           key: (tree.cupertinoSliverRefreshControl.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoSliverRefreshControl.key) : null),
           refreshTriggerPullDistance: (tree.cupertinoSliverRefreshControl.hasRefreshTriggerPullDistance() ? tree.cupertinoSliverRefreshControl.refreshTriggerPullDistance : 100.0),
           refreshIndicatorExtent: (tree.cupertinoSliverRefreshControl.hasRefreshIndicatorExtent() ? tree.cupertinoSliverRefreshControl.refreshIndicatorExtent : 60.0),
           builder: null,
           onRefresh: null);
     case proto.WidgetExpression_Result.cupertinoScrollbar:
-      return $c32.CupertinoScrollbar(
+      return $flutterSrcCupertinoScrollbar.CupertinoScrollbar(
           key: (tree.cupertinoScrollbar.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoScrollbar.key) : null),
           child: (tree.cupertinoScrollbar.hasChild() ? evaluateRequiredWidgetExpression(tree.cupertinoScrollbar.child) : missing('child')),
           controller: null,
@@ -758,7 +553,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           notificationPredicate: null,
           scrollbarOrientation: (tree.cupertinoScrollbar.hasScrollbarOrientation() ? enums.convertFlutterScrollbarOrientation(tree.cupertinoScrollbar.scrollbarOrientation) : null));
     case proto.WidgetExpression_Result.cupertinoSearchTextField:
-      return $c33.CupertinoSearchTextField(
+      return $flutterSrcCupertinoSearchField.CupertinoSearchTextField(
           key: (tree.cupertinoSearchTextField.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoSearchTextField.key) : null),
           controller: null,
           onChanged: null,
@@ -785,7 +580,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           autocorrect: (tree.cupertinoSearchTextField.hasAutocorrect() ? tree.cupertinoSearchTextField.autocorrect : true),
           enabled: (tree.cupertinoSearchTextField.hasEnabled() ? tree.cupertinoSearchTextField.enabled : null));
     case proto.WidgetExpression_Result.cupertinoSlider:
-      return $c34.CupertinoSlider(
+      return $flutterSrcCupertinoSlider.CupertinoSlider(
           key: (tree.cupertinoSlider.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoSlider.key) : null),
           value: (tree.cupertinoSlider.hasValue() ? tree.cupertinoSlider.value : missing('value')),
           onChanged: null,
@@ -797,7 +592,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           activeColor: (tree.cupertinoSlider.hasActiveColor() ? types.evaluateDartColorExpression(tree.cupertinoSlider.activeColor) : null),
           thumbColor: (tree.cupertinoSlider.hasThumbColor() ? types.evaluateRequiredDartColorExpression(tree.cupertinoSlider.thumbColor) : $flutterSrcCupertinoColors.CupertinoColors.white));
     case proto.WidgetExpression_Result.cupertinoSwitch:
-      return $c35.CupertinoSwitch(
+      return $flutterSrcCupertinoSwitch.CupertinoSwitch(
           key: (tree.cupertinoSwitch.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoSwitch.key) : null),
           value: (tree.cupertinoSwitch.hasValue() ? tree.cupertinoSwitch.value : missing('value')),
           onChanged: null,
@@ -811,7 +606,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           autofocus: (tree.cupertinoSwitch.hasAutofocus() ? tree.cupertinoSwitch.autofocus : false),
           dragStartBehavior: (tree.cupertinoSwitch.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehavior(tree.cupertinoSwitch.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start));
     case proto.WidgetExpression_Result.cupertinoTabView:
-      return $c36.CupertinoTabView(
+      return $flutterSrcCupertinoTabView.CupertinoTabView(
           key: (tree.cupertinoTabView.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoTabView.key) : null),
           builder: null,
           navigatorKey: null,
@@ -821,7 +616,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           onUnknownRoute: null,
           restorationScopeId: (tree.cupertinoTabView.hasRestorationScopeId() ? tree.cupertinoTabView.restorationScopeId : null));
     case proto.WidgetExpression_Result.cupertinoTextField:
-      return $c37.CupertinoTextField(
+      return $flutterSrcCupertinoTextField.CupertinoTextField(
           key: (tree.cupertinoTextField.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoTextField.key) : null),
           controller: null,
           focusNode: null,
@@ -885,7 +680,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           spellCheckConfiguration: null,
           magnifierConfiguration: null);
     case proto.WidgetExpression_Result.cupertinoTextFieldNamedBorderless:
-      return $c38.CupertinoTextField.borderless(
+      return $flutterSrcCupertinoTextField.CupertinoTextField.borderless(
           key: (tree.cupertinoTextFieldNamedBorderless.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoTextFieldNamedBorderless.key) : null),
           controller: null,
           focusNode: null,
@@ -949,7 +744,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           spellCheckConfiguration: null,
           magnifierConfiguration: null);
     case proto.WidgetExpression_Result.cupertinoTextFormFieldRow:
-      return $c39.CupertinoTextFormFieldRow(
+      return $flutterSrcCupertinoTextFormFieldRow.CupertinoTextFormFieldRow(
           key: (tree.cupertinoTextFormFieldRow.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoTextFormFieldRow.key) : null),
           prefix: (tree.cupertinoTextFormFieldRow.hasPrefix() ? evaluateWidgetExpression(tree.cupertinoTextFormFieldRow.prefix) : null),
           padding: null,
@@ -999,17 +794,17 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           placeholderStyle: null,
           contextMenuBuilder: null);
     case proto.WidgetExpression_Result.cupertinoTextSelectionToolbarButton:
-      return $c40.CupertinoTextSelectionToolbarButton(
+      return $flutterSrcCupertinoTextSelectionToolbarButton.CupertinoTextSelectionToolbarButton(
           key: (tree.cupertinoTextSelectionToolbarButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoTextSelectionToolbarButton.key) : null),
           onPressed: null,
           child: (tree.cupertinoTextSelectionToolbarButton.hasChild() ? evaluateRequiredWidgetExpression(tree.cupertinoTextSelectionToolbarButton.child) : missing('child')));
     case proto.WidgetExpression_Result.cupertinoTextSelectionToolbarButtonNamedText:
-      return $c41.CupertinoTextSelectionToolbarButton.text(
+      return $flutterSrcCupertinoTextSelectionToolbarButton.CupertinoTextSelectionToolbarButton.text(
           key: (tree.cupertinoTextSelectionToolbarButtonNamedText.hasKey() ? types.evaluateFlutterKeyExpression(tree.cupertinoTextSelectionToolbarButtonNamedText.key) : null),
           onPressed: null,
           text: (tree.cupertinoTextSelectionToolbarButtonNamedText.hasText() ? tree.cupertinoTextSelectionToolbarButtonNamedText.text : null));
     case proto.WidgetExpression_Result.materialAboutDialog:
-      return $c42.AboutDialog(
+      return $flutterSrcMaterialAbout.AboutDialog(
           key: (tree.materialAboutDialog.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialAboutDialog.key) : null),
           applicationName: (tree.materialAboutDialog.hasApplicationName() ? tree.materialAboutDialog.applicationName : null),
           applicationVersion: (tree.materialAboutDialog.hasApplicationVersion() ? tree.materialAboutDialog.applicationVersion : null),
@@ -1017,7 +812,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           applicationLegalese: (tree.materialAboutDialog.hasApplicationLegalese() ? tree.materialAboutDialog.applicationLegalese : null),
           children: tree.materialAboutDialog.children.map((e) => evaluateRequiredWidgetExpression(e)).toList());
     case proto.WidgetExpression_Result.materialAboutListTile:
-      return $c43.AboutListTile(
+      return $flutterSrcMaterialAbout.AboutListTile(
           key: (tree.materialAboutListTile.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialAboutListTile.key) : null),
           icon: (tree.materialAboutListTile.hasIcon() ? evaluateWidgetExpression(tree.materialAboutListTile.icon) : null),
           child: (tree.materialAboutListTile.hasChild() ? evaluateWidgetExpression(tree.materialAboutListTile.child) : null),
@@ -1028,48 +823,48 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           aboutBoxChildren: tree.materialAboutListTile.aboutBoxChildren.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           dense: (tree.materialAboutListTile.hasDense() ? tree.materialAboutListTile.dense : null));
     case proto.WidgetExpression_Result.materialLicensePage:
-      return $c44.LicensePage(
+      return $flutterSrcMaterialAbout.LicensePage(
           key: (tree.materialLicensePage.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialLicensePage.key) : null),
           applicationName: (tree.materialLicensePage.hasApplicationName() ? tree.materialLicensePage.applicationName : null),
           applicationVersion: (tree.materialLicensePage.hasApplicationVersion() ? tree.materialLicensePage.applicationVersion : null),
           applicationIcon: (tree.materialLicensePage.hasApplicationIcon() ? evaluateWidgetExpression(tree.materialLicensePage.applicationIcon) : null),
           applicationLegalese: (tree.materialLicensePage.hasApplicationLegalese() ? tree.materialLicensePage.applicationLegalese : null));
     case proto.WidgetExpression_Result.materialBackButton:
-      return $c45.BackButton(
+      return $flutterSrcMaterialActionButtons.BackButton(
           key: (tree.materialBackButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialBackButton.key) : null),
           color: (tree.materialBackButton.hasColor() ? types.evaluateDartColorExpression(tree.materialBackButton.color) : null),
           style: null,
           onPressed: null);
     case proto.WidgetExpression_Result.materialBackButtonIcon:
-      return $c46.BackButtonIcon(
+      return $flutterSrcMaterialActionButtons.BackButtonIcon(
           key: (tree.materialBackButtonIcon.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialBackButtonIcon.key) : null));
     case proto.WidgetExpression_Result.materialCloseButton:
-      return $c47.CloseButton(
+      return $flutterSrcMaterialActionButtons.CloseButton(
           key: (tree.materialCloseButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialCloseButton.key) : null),
           color: (tree.materialCloseButton.hasColor() ? types.evaluateDartColorExpression(tree.materialCloseButton.color) : null),
           onPressed: null,
           style: null);
     case proto.WidgetExpression_Result.materialCloseButtonIcon:
-      return $c48.CloseButtonIcon(
+      return $flutterSrcMaterialActionButtons.CloseButtonIcon(
           key: (tree.materialCloseButtonIcon.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialCloseButtonIcon.key) : null));
     case proto.WidgetExpression_Result.materialDrawerButton:
-      return $c49.DrawerButton(
+      return $flutterSrcMaterialActionButtons.DrawerButton(
           key: (tree.materialDrawerButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialDrawerButton.key) : null),
           style: null,
           onPressed: null);
     case proto.WidgetExpression_Result.materialDrawerButtonIcon:
-      return $c50.DrawerButtonIcon(
+      return $flutterSrcMaterialActionButtons.DrawerButtonIcon(
           key: (tree.materialDrawerButtonIcon.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialDrawerButtonIcon.key) : null));
     case proto.WidgetExpression_Result.materialEndDrawerButton:
-      return $c51.EndDrawerButton(
+      return $flutterSrcMaterialActionButtons.EndDrawerButton(
           key: (tree.materialEndDrawerButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialEndDrawerButton.key) : null),
           style: null,
           onPressed: null);
     case proto.WidgetExpression_Result.materialEndDrawerButtonIcon:
-      return $c52.EndDrawerButtonIcon(
+      return $flutterSrcMaterialActionButtons.EndDrawerButtonIcon(
           key: (tree.materialEndDrawerButtonIcon.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialEndDrawerButtonIcon.key) : null));
     case proto.WidgetExpression_Result.materialActionChip:
-      return $c53.ActionChip(
+      return $flutterSrcMaterialActionChip.ActionChip(
           key: (tree.materialActionChip.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialActionChip.key) : null),
           avatar: (tree.materialActionChip.hasAvatar() ? evaluateWidgetExpression(tree.materialActionChip.avatar) : null),
           label: (tree.materialActionChip.hasLabel() ? evaluateRequiredWidgetExpression(tree.materialActionChip.label) : missing('label')),
@@ -1094,7 +889,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           surfaceTintColor: (tree.materialActionChip.hasSurfaceTintColor() ? types.evaluateDartColorExpression(tree.materialActionChip.surfaceTintColor) : null),
           iconTheme: null);
     case proto.WidgetExpression_Result.materialActionChipNamedElevated:
-      return $c54.ActionChip.elevated(
+      return $flutterSrcMaterialActionChip.ActionChip.elevated(
           key: (tree.materialActionChipNamedElevated.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialActionChipNamedElevated.key) : null),
           avatar: (tree.materialActionChipNamedElevated.hasAvatar() ? evaluateWidgetExpression(tree.materialActionChipNamedElevated.avatar) : null),
           label: (tree.materialActionChipNamedElevated.hasLabel() ? evaluateRequiredWidgetExpression(tree.materialActionChipNamedElevated.label) : missing('label')),
@@ -1119,7 +914,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           surfaceTintColor: (tree.materialActionChipNamedElevated.hasSurfaceTintColor() ? types.evaluateDartColorExpression(tree.materialActionChipNamedElevated.surfaceTintColor) : null),
           iconTheme: null);
     case proto.WidgetExpression_Result.materialMaterialApp:
-      return $c55.MaterialApp(
+      return $flutterSrcMaterialApp.MaterialApp(
           key: (tree.materialMaterialApp.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialMaterialApp.key) : null),
           navigatorKey: null,
           scaffoldMessengerKey: null,
@@ -1153,7 +948,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           restorationScopeId: (tree.materialMaterialApp.hasRestorationScopeId() ? tree.materialMaterialApp.restorationScopeId : null),
           scrollBehavior: null);
     case proto.WidgetExpression_Result.materialMaterialAppNamedRouter:
-      return $c56.MaterialApp.router(
+      return $flutterSrcMaterialApp.MaterialApp.router(
           key: (tree.materialMaterialAppNamedRouter.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialMaterialAppNamedRouter.key) : null),
           scaffoldMessengerKey: null,
           routeInformationProvider: null,
@@ -1186,7 +981,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           restorationScopeId: (tree.materialMaterialAppNamedRouter.hasRestorationScopeId() ? tree.materialMaterialAppNamedRouter.restorationScopeId : null),
           scrollBehavior: null);
     case proto.WidgetExpression_Result.materialAppBar:
-      return $c57.AppBar(
+      return $flutterSrcMaterialAppBar.AppBar(
           key: (tree.materialAppBar.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialAppBar.key) : null),
           leading: (tree.materialAppBar.hasLeading() ? evaluateWidgetExpression(tree.materialAppBar.leading) : null),
           automaticallyImplyLeading: (tree.materialAppBar.hasAutomaticallyImplyLeading() ? tree.materialAppBar.automaticallyImplyLeading : true),
@@ -1217,7 +1012,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           forceMaterialTransparency: (tree.materialAppBar.hasForceMaterialTransparency() ? tree.materialAppBar.forceMaterialTransparency : false),
           clipBehavior: (tree.materialAppBar.hasClipBehavior() ? enums.convertDartClip(tree.materialAppBar.clipBehavior) : null));
     case proto.WidgetExpression_Result.materialSliverAppBar:
-      return $c58.SliverAppBar(
+      return $flutterSrcMaterialAppBar.SliverAppBar(
           key: (tree.materialSliverAppBar.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialSliverAppBar.key) : null),
           leading: (tree.materialSliverAppBar.hasLeading() ? evaluateWidgetExpression(tree.materialSliverAppBar.leading) : null),
           automaticallyImplyLeading: (tree.materialSliverAppBar.hasAutomaticallyImplyLeading() ? tree.materialSliverAppBar.automaticallyImplyLeading : true),
@@ -1255,7 +1050,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           forceMaterialTransparency: (tree.materialSliverAppBar.hasForceMaterialTransparency() ? tree.materialSliverAppBar.forceMaterialTransparency : false),
           clipBehavior: (tree.materialSliverAppBar.hasClipBehavior() ? enums.convertDartClip(tree.materialSliverAppBar.clipBehavior) : null));
     case proto.WidgetExpression_Result.materialSliverAppBarNamedMedium:
-      return $c59.SliverAppBar.medium(
+      return $flutterSrcMaterialAppBar.SliverAppBar.medium(
           key: (tree.materialSliverAppBarNamedMedium.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialSliverAppBarNamedMedium.key) : null),
           leading: (tree.materialSliverAppBarNamedMedium.hasLeading() ? evaluateWidgetExpression(tree.materialSliverAppBarNamedMedium.leading) : null),
           automaticallyImplyLeading: (tree.materialSliverAppBarNamedMedium.hasAutomaticallyImplyLeading() ? tree.materialSliverAppBarNamedMedium.automaticallyImplyLeading : true),
@@ -1293,7 +1088,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           forceMaterialTransparency: (tree.materialSliverAppBarNamedMedium.hasForceMaterialTransparency() ? tree.materialSliverAppBarNamedMedium.forceMaterialTransparency : false),
           clipBehavior: (tree.materialSliverAppBarNamedMedium.hasClipBehavior() ? enums.convertDartClip(tree.materialSliverAppBarNamedMedium.clipBehavior) : null));
     case proto.WidgetExpression_Result.materialSliverAppBarNamedLarge:
-      return $c60.SliverAppBar.large(
+      return $flutterSrcMaterialAppBar.SliverAppBar.large(
           key: (tree.materialSliverAppBarNamedLarge.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialSliverAppBarNamedLarge.key) : null),
           leading: (tree.materialSliverAppBarNamedLarge.hasLeading() ? evaluateWidgetExpression(tree.materialSliverAppBarNamedLarge.leading) : null),
           automaticallyImplyLeading: (tree.materialSliverAppBarNamedLarge.hasAutomaticallyImplyLeading() ? tree.materialSliverAppBarNamedLarge.automaticallyImplyLeading : true),
@@ -1331,7 +1126,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           forceMaterialTransparency: (tree.materialSliverAppBarNamedLarge.hasForceMaterialTransparency() ? tree.materialSliverAppBarNamedLarge.forceMaterialTransparency : false),
           clipBehavior: (tree.materialSliverAppBarNamedLarge.hasClipBehavior() ? enums.convertDartClip(tree.materialSliverAppBarNamedLarge.clipBehavior) : null));
     case proto.WidgetExpression_Result.materialBadge:
-      return $c61.Badge(
+      return $flutterSrcMaterialBadge.Badge(
           key: (tree.materialBadge.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialBadge.key) : null),
           backgroundColor: (tree.materialBadge.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.materialBadge.backgroundColor) : null),
           textColor: (tree.materialBadge.hasTextColor() ? types.evaluateDartColorExpression(tree.materialBadge.textColor) : null),
@@ -1345,7 +1140,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           isLabelVisible: (tree.materialBadge.hasIsLabelVisible() ? tree.materialBadge.isLabelVisible : true),
           child: (tree.materialBadge.hasChild() ? evaluateWidgetExpression(tree.materialBadge.child) : null));
     case proto.WidgetExpression_Result.materialBadgeNamedCount:
-      return $c62.Badge.count(
+      return $flutterSrcMaterialBadge.Badge.count(
           key: (tree.materialBadgeNamedCount.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialBadgeNamedCount.key) : null),
           backgroundColor: (tree.materialBadgeNamedCount.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.materialBadgeNamedCount.backgroundColor) : null),
           textColor: (tree.materialBadgeNamedCount.hasTextColor() ? types.evaluateDartColorExpression(tree.materialBadgeNamedCount.textColor) : null),
@@ -1359,7 +1154,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           isLabelVisible: (tree.materialBadgeNamedCount.hasIsLabelVisible() ? tree.materialBadgeNamedCount.isLabelVisible : true),
           child: (tree.materialBadgeNamedCount.hasChild() ? evaluateWidgetExpression(tree.materialBadgeNamedCount.child) : null));
     case proto.WidgetExpression_Result.materialMaterialBanner:
-      return $c63.MaterialBanner(
+      return $flutterSrcMaterialBanner.MaterialBanner(
           key: (tree.materialMaterialBanner.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialMaterialBanner.key) : null),
           content: (tree.materialMaterialBanner.hasContent() ? evaluateRequiredWidgetExpression(tree.materialMaterialBanner.content) : missing('content')),
           contentTextStyle: null,
@@ -1378,12 +1173,12 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           animation: null,
           onVisible: null);
     case proto.WidgetExpression_Result.materialMaterialBannerTheme:
-      return $c64.MaterialBannerTheme(
+      return $flutterSrcMaterialBannerTheme.MaterialBannerTheme(
           key: (tree.materialMaterialBannerTheme.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialMaterialBannerTheme.key) : null),
           data: null,
           child: (tree.materialMaterialBannerTheme.hasChild() ? evaluateRequiredWidgetExpression(tree.materialMaterialBannerTheme.child) : missing('child')));
     case proto.WidgetExpression_Result.materialBottomAppBar:
-      return $c65.BottomAppBar(
+      return $flutterSrcMaterialBottomAppBar.BottomAppBar(
           key: (tree.materialBottomAppBar.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialBottomAppBar.key) : null),
           color: (tree.materialBottomAppBar.hasColor() ? types.evaluateDartColorExpression(tree.materialBottomAppBar.color) : null),
           elevation: (tree.materialBottomAppBar.hasElevation() ? tree.materialBottomAppBar.elevation : null),
@@ -1396,7 +1191,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           shadowColor: (tree.materialBottomAppBar.hasShadowColor() ? types.evaluateDartColorExpression(tree.materialBottomAppBar.shadowColor) : null),
           height: (tree.materialBottomAppBar.hasHeight() ? tree.materialBottomAppBar.height : null));
     case proto.WidgetExpression_Result.materialRawMaterialButton:
-      return $c66.RawMaterialButton(
+      return $flutterSrcMaterialButton.RawMaterialButton(
           key: (tree.materialRawMaterialButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialRawMaterialButton.key) : null),
           onPressed: null,
           onLongPress: null,
@@ -1421,7 +1216,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           child: (tree.materialRawMaterialButton.hasChild() ? evaluateWidgetExpression(tree.materialRawMaterialButton.child) : null),
           enableFeedback: (tree.materialRawMaterialButton.hasEnableFeedback() ? tree.materialRawMaterialButton.enableFeedback : true));
     case proto.WidgetExpression_Result.materialButtonBar:
-      return $c67.ButtonBar(
+      return $flutterSrcMaterialButtonBar.ButtonBar(
           key: (tree.materialButtonBar.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialButtonBar.key) : null),
           alignment: (tree.materialButtonBar.hasAlignment() ? enums.convertFlutterMainAxisAlignment(tree.materialButtonBar.alignment) : null),
           mainAxisSize: (tree.materialButtonBar.hasMainAxisSize() ? enums.convertFlutterMainAxisSize(tree.materialButtonBar.mainAxisSize) : null),
@@ -1435,7 +1230,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           overflowButtonSpacing: (tree.materialButtonBar.hasOverflowButtonSpacing() ? tree.materialButtonBar.overflowButtonSpacing : null),
           children: tree.materialButtonBar.children.map((e) => evaluateRequiredWidgetExpression(e)).toList());
     case proto.WidgetExpression_Result.materialButtonTheme:
-      return $c68.ButtonTheme(
+      return $flutterSrcMaterialButtonTheme.ButtonTheme(
           key: (tree.materialButtonTheme.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialButtonTheme.key) : null),
           textTheme: (tree.materialButtonTheme.hasTextTheme() ? enums.convertRequiredMaterialButtonTextTheme(tree.materialButtonTheme.textTheme) : $flutterSrcMaterialButtonTheme.ButtonTextTheme.normal),
           layoutBehavior: (tree.materialButtonTheme.hasLayoutBehavior() ? enums.convertRequiredMaterialButtonBarLayoutBehavior(tree.materialButtonTheme.layoutBehavior) : $flutterSrcMaterialButtonTheme.ButtonBarLayoutBehavior.padded),
@@ -1454,7 +1249,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           materialTapTargetSize: (tree.materialButtonTheme.hasMaterialTapTargetSize() ? enums.convertMaterialMaterialTapTargetSize(tree.materialButtonTheme.materialTapTargetSize) : null),
           child: (tree.materialButtonTheme.hasChild() ? evaluateRequiredWidgetExpression(tree.materialButtonTheme.child) : missing('child')));
     case proto.WidgetExpression_Result.materialCard:
-      return $c69.Card(
+      return $flutterSrcMaterialCard.Card(
           key: (tree.materialCard.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialCard.key) : null),
           color: (tree.materialCard.hasColor() ? types.evaluateDartColorExpression(tree.materialCard.color) : null),
           shadowColor: (tree.materialCard.hasShadowColor() ? types.evaluateDartColorExpression(tree.materialCard.shadowColor) : null),
@@ -1467,7 +1262,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           child: (tree.materialCard.hasChild() ? evaluateWidgetExpression(tree.materialCard.child) : null),
           semanticContainer: (tree.materialCard.hasSemanticContainer() ? tree.materialCard.semanticContainer : true));
     case proto.WidgetExpression_Result.materialCheckbox:
-      return $c70.Checkbox(
+      return $flutterSrcMaterialCheckbox.Checkbox(
           key: (tree.materialCheckbox.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialCheckbox.key) : null),
           value: (tree.materialCheckbox.hasValue() ? tree.materialCheckbox.value : null),
           tristate: (tree.materialCheckbox.hasTristate() ? tree.materialCheckbox.tristate : false),
@@ -1489,7 +1284,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           isError: (tree.materialCheckbox.hasIsError() ? tree.materialCheckbox.isError : false),
           semanticLabel: (tree.materialCheckbox.hasSemanticLabel() ? tree.materialCheckbox.semanticLabel : null));
     case proto.WidgetExpression_Result.materialCheckboxNamedAdaptive:
-      return $c71.Checkbox.adaptive(
+      return $flutterSrcMaterialCheckbox.Checkbox.adaptive(
           key: (tree.materialCheckboxNamedAdaptive.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialCheckboxNamedAdaptive.key) : null),
           value: (tree.materialCheckboxNamedAdaptive.hasValue() ? tree.materialCheckboxNamedAdaptive.value : null),
           tristate: (tree.materialCheckboxNamedAdaptive.hasTristate() ? tree.materialCheckboxNamedAdaptive.tristate : false),
@@ -1511,7 +1306,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           isError: (tree.materialCheckboxNamedAdaptive.hasIsError() ? tree.materialCheckboxNamedAdaptive.isError : false),
           semanticLabel: (tree.materialCheckboxNamedAdaptive.hasSemanticLabel() ? tree.materialCheckboxNamedAdaptive.semanticLabel : null));
     case proto.WidgetExpression_Result.materialCheckboxListTile:
-      return $c72.CheckboxListTile(
+      return $flutterSrcMaterialCheckboxListTile.CheckboxListTile(
           key: (tree.materialCheckboxListTile.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialCheckboxListTile.key) : null),
           value: (tree.materialCheckboxListTile.hasValue() ? tree.materialCheckboxListTile.value : null),
           onChanged: null,
@@ -1546,7 +1341,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           enableFeedback: (tree.materialCheckboxListTile.hasEnableFeedback() ? tree.materialCheckboxListTile.enableFeedback : null),
           checkboxSemanticLabel: (tree.materialCheckboxListTile.hasCheckboxSemanticLabel() ? tree.materialCheckboxListTile.checkboxSemanticLabel : null));
     case proto.WidgetExpression_Result.materialCheckboxListTileNamedAdaptive:
-      return $c73.CheckboxListTile.adaptive(
+      return $flutterSrcMaterialCheckboxListTile.CheckboxListTile.adaptive(
           key: (tree.materialCheckboxListTileNamedAdaptive.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialCheckboxListTileNamedAdaptive.key) : null),
           value: (tree.materialCheckboxListTileNamedAdaptive.hasValue() ? tree.materialCheckboxListTileNamedAdaptive.value : null),
           onChanged: null,
@@ -1581,7 +1376,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           enableFeedback: (tree.materialCheckboxListTileNamedAdaptive.hasEnableFeedback() ? tree.materialCheckboxListTileNamedAdaptive.enableFeedback : null),
           checkboxSemanticLabel: (tree.materialCheckboxListTileNamedAdaptive.hasCheckboxSemanticLabel() ? tree.materialCheckboxListTileNamedAdaptive.checkboxSemanticLabel : null));
     case proto.WidgetExpression_Result.materialChip:
-      return $c74.Chip(
+      return $flutterSrcMaterialChip.Chip(
           key: (tree.materialChip.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialChip.key) : null),
           avatar: (tree.materialChip.hasAvatar() ? evaluateWidgetExpression(tree.materialChip.avatar) : null),
           label: (tree.materialChip.hasLabel() ? evaluateRequiredWidgetExpression(tree.materialChip.label) : missing('label')),
@@ -1606,7 +1401,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           surfaceTintColor: (tree.materialChip.hasSurfaceTintColor() ? types.evaluateDartColorExpression(tree.materialChip.surfaceTintColor) : null),
           iconTheme: null);
     case proto.WidgetExpression_Result.materialRawChip:
-      return $c75.RawChip(
+      return $flutterSrcMaterialChip.RawChip(
           key: (tree.materialRawChip.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialRawChip.key) : null),
           defaultProperties: null,
           avatar: (tree.materialRawChip.hasAvatar() ? evaluateWidgetExpression(tree.materialRawChip.avatar) : null),
@@ -1644,7 +1439,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           showCheckmark: (tree.materialRawChip.hasShowCheckmark() ? tree.materialRawChip.showCheckmark : true),
           checkmarkColor: (tree.materialRawChip.hasCheckmarkColor() ? types.evaluateDartColorExpression(tree.materialRawChip.checkmarkColor) : null));
     case proto.WidgetExpression_Result.materialChoiceChip:
-      return $c76.ChoiceChip(
+      return $flutterSrcMaterialChoiceChip.ChoiceChip(
           key: (tree.materialChoiceChip.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialChoiceChip.key) : null),
           avatar: (tree.materialChoiceChip.hasAvatar() ? evaluateWidgetExpression(tree.materialChoiceChip.avatar) : null),
           label: (tree.materialChoiceChip.hasLabel() ? evaluateRequiredWidgetExpression(tree.materialChoiceChip.label) : missing('label')),
@@ -1674,7 +1469,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           showCheckmark: (tree.materialChoiceChip.hasShowCheckmark() ? tree.materialChoiceChip.showCheckmark : null),
           checkmarkColor: (tree.materialChoiceChip.hasCheckmarkColor() ? types.evaluateDartColorExpression(tree.materialChoiceChip.checkmarkColor) : null));
     case proto.WidgetExpression_Result.materialChoiceChipNamedElevated:
-      return $c77.ChoiceChip.elevated(
+      return $flutterSrcMaterialChoiceChip.ChoiceChip.elevated(
           key: (tree.materialChoiceChipNamedElevated.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialChoiceChipNamedElevated.key) : null),
           avatar: (tree.materialChoiceChipNamedElevated.hasAvatar() ? evaluateWidgetExpression(tree.materialChoiceChipNamedElevated.avatar) : null),
           label: (tree.materialChoiceChipNamedElevated.hasLabel() ? evaluateRequiredWidgetExpression(tree.materialChoiceChipNamedElevated.label) : missing('label')),
@@ -1704,7 +1499,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           showCheckmark: (tree.materialChoiceChipNamedElevated.hasShowCheckmark() ? tree.materialChoiceChipNamedElevated.showCheckmark : null),
           checkmarkColor: (tree.materialChoiceChipNamedElevated.hasCheckmarkColor() ? types.evaluateDartColorExpression(tree.materialChoiceChipNamedElevated.checkmarkColor) : null));
     case proto.WidgetExpression_Result.materialCircleAvatar:
-      return $c78.CircleAvatar(
+      return $flutterSrcMaterialCircleAvatar.CircleAvatar(
           key: (tree.materialCircleAvatar.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialCircleAvatar.key) : null),
           child: (tree.materialCircleAvatar.hasChild() ? evaluateWidgetExpression(tree.materialCircleAvatar.child) : null),
           backgroundColor: (tree.materialCircleAvatar.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.materialCircleAvatar.backgroundColor) : null),
@@ -1717,7 +1512,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           minRadius: (tree.materialCircleAvatar.hasMinRadius() ? tree.materialCircleAvatar.minRadius : null),
           maxRadius: (tree.materialCircleAvatar.hasMaxRadius() ? tree.materialCircleAvatar.maxRadius : null));
     case proto.WidgetExpression_Result.materialTableRowInkWell:
-      return $c79.TableRowInkWell(
+      return $flutterSrcMaterialDataTable.TableRowInkWell(
           key: (tree.materialTableRowInkWell.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialTableRowInkWell.key) : null),
           child: (tree.materialTableRowInkWell.hasChild() ? evaluateWidgetExpression(tree.materialTableRowInkWell.child) : null),
           onTap: null,
@@ -1729,12 +1524,12 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           overlayColor: null,
           mouseCursor: null);
     case proto.WidgetExpression_Result.materialDesktopTextSelectionToolbarButton:
-      return $c80.DesktopTextSelectionToolbarButton(
+      return $flutterSrcMaterialDesktopTextSelectionToolbarButton.DesktopTextSelectionToolbarButton(
           key: (tree.materialDesktopTextSelectionToolbarButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialDesktopTextSelectionToolbarButton.key) : null),
           onPressed: null,
           child: (tree.materialDesktopTextSelectionToolbarButton.hasChild() ? evaluateRequiredWidgetExpression(tree.materialDesktopTextSelectionToolbarButton.child) : missing('child')));
     case proto.WidgetExpression_Result.materialAlertDialog:
-      return $c81.AlertDialog(
+      return $flutterSrcMaterialDialog.AlertDialog(
           key: (tree.materialAlertDialog.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialAlertDialog.key) : null),
           icon: (tree.materialAlertDialog.hasIcon() ? evaluateWidgetExpression(tree.materialAlertDialog.icon) : null),
           iconPadding: null,
@@ -1762,7 +1557,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           alignment: null,
           scrollable: (tree.materialAlertDialog.hasScrollable() ? tree.materialAlertDialog.scrollable : false));
     case proto.WidgetExpression_Result.materialAlertDialogNamedAdaptive:
-      return $c82.AlertDialog.adaptive(
+      return $flutterSrcMaterialDialog.AlertDialog.adaptive(
           key: (tree.materialAlertDialogNamedAdaptive.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialAlertDialogNamedAdaptive.key) : null),
           icon: (tree.materialAlertDialogNamedAdaptive.hasIcon() ? evaluateWidgetExpression(tree.materialAlertDialogNamedAdaptive.icon) : null),
           iconPadding: null,
@@ -1793,7 +1588,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           actionScrollController: null,
           insetAnimationDuration: (tree.materialAlertDialogNamedAdaptive.hasInsetAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialAlertDialogNamedAdaptive.insetAnimationDuration) : missing('insetAnimationDuration')));
     case proto.WidgetExpression_Result.materialDialog:
-      return $c83.Dialog(
+      return $flutterSrcMaterialDialog.Dialog(
           key: (tree.materialDialog.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialDialog.key) : null),
           backgroundColor: (tree.materialDialog.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.materialDialog.backgroundColor) : null),
           elevation: (tree.materialDialog.hasElevation() ? tree.materialDialog.elevation : null),
@@ -1806,13 +1601,13 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           alignment: null,
           child: (tree.materialDialog.hasChild() ? evaluateWidgetExpression(tree.materialDialog.child) : null));
     case proto.WidgetExpression_Result.materialDialogNamedFullscreen:
-      return $c84.Dialog.fullscreen(
+      return $flutterSrcMaterialDialog.Dialog.fullscreen(
           key: (tree.materialDialogNamedFullscreen.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialDialogNamedFullscreen.key) : null),
           backgroundColor: (tree.materialDialogNamedFullscreen.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.materialDialogNamedFullscreen.backgroundColor) : null),
           insetAnimationDuration: (tree.materialDialogNamedFullscreen.hasInsetAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialDialogNamedFullscreen.insetAnimationDuration) : $dartCore.Duration.zero),
           child: (tree.materialDialogNamedFullscreen.hasChild() ? evaluateWidgetExpression(tree.materialDialogNamedFullscreen.child) : null));
     case proto.WidgetExpression_Result.materialSimpleDialog:
-      return $c85.SimpleDialog(
+      return $flutterSrcMaterialDialog.SimpleDialog(
           key: (tree.materialSimpleDialog.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialSimpleDialog.key) : null),
           title: (tree.materialSimpleDialog.hasTitle() ? evaluateWidgetExpression(tree.materialSimpleDialog.title) : null),
           titleTextStyle: null,
@@ -1826,13 +1621,13 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           shape: null,
           alignment: null);
     case proto.WidgetExpression_Result.materialSimpleDialogOption:
-      return $c86.SimpleDialogOption(
+      return $flutterSrcMaterialDialog.SimpleDialogOption(
           key: (tree.materialSimpleDialogOption.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialSimpleDialogOption.key) : null),
           onPressed: null,
           padding: null,
           child: (tree.materialSimpleDialogOption.hasChild() ? evaluateWidgetExpression(tree.materialSimpleDialogOption.child) : null));
     case proto.WidgetExpression_Result.materialDivider:
-      return $c87.Divider(
+      return $flutterSrcMaterialDivider.Divider(
           key: (tree.materialDivider.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialDivider.key) : null),
           height: (tree.materialDivider.hasHeight() ? tree.materialDivider.height : null),
           thickness: (tree.materialDivider.hasThickness() ? tree.materialDivider.thickness : null),
@@ -1840,7 +1635,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           endIndent: (tree.materialDivider.hasEndIndent() ? tree.materialDivider.endIndent : null),
           color: (tree.materialDivider.hasColor() ? types.evaluateDartColorExpression(tree.materialDivider.color) : null));
     case proto.WidgetExpression_Result.materialVerticalDivider:
-      return $c88.VerticalDivider(
+      return $flutterSrcMaterialDivider.VerticalDivider(
           key: (tree.materialVerticalDivider.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialVerticalDivider.key) : null),
           width: (tree.materialVerticalDivider.hasWidth() ? tree.materialVerticalDivider.width : null),
           thickness: (tree.materialVerticalDivider.hasThickness() ? tree.materialVerticalDivider.thickness : null),
@@ -1848,7 +1643,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           endIndent: (tree.materialVerticalDivider.hasEndIndent() ? tree.materialVerticalDivider.endIndent : null),
           color: (tree.materialVerticalDivider.hasColor() ? types.evaluateDartColorExpression(tree.materialVerticalDivider.color) : null));
     case proto.WidgetExpression_Result.materialDrawer:
-      return $c89.Drawer(
+      return $flutterSrcMaterialDrawer.Drawer(
           key: (tree.materialDrawer.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialDrawer.key) : null),
           backgroundColor: (tree.materialDrawer.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.materialDrawer.backgroundColor) : null),
           elevation: (tree.materialDrawer.hasElevation() ? tree.materialDrawer.elevation : null),
@@ -1860,7 +1655,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           semanticLabel: (tree.materialDrawer.hasSemanticLabel() ? tree.materialDrawer.semanticLabel : null),
           clipBehavior: (tree.materialDrawer.hasClipBehavior() ? enums.convertDartClip(tree.materialDrawer.clipBehavior) : null));
     case proto.WidgetExpression_Result.materialDrawerController:
-      return $c90.DrawerController(
+      return $flutterSrcMaterialDrawer.DrawerController(
           key: null,
           child: (tree.materialDrawerController.hasChild() ? evaluateRequiredWidgetExpression(tree.materialDrawerController.child) : missing('child')),
           alignment: (tree.materialDrawerController.hasAlignment() ? enums.convertRequiredMaterialDrawerAlignment(tree.materialDrawerController.alignment) : missing('alignment')),
@@ -1871,14 +1666,14 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           edgeDragWidth: (tree.materialDrawerController.hasEdgeDragWidth() ? tree.materialDrawerController.edgeDragWidth : null),
           enableOpenDragGesture: (tree.materialDrawerController.hasEnableOpenDragGesture() ? tree.materialDrawerController.enableOpenDragGesture : true));
     case proto.WidgetExpression_Result.materialDrawerHeader:
-      return $c91.DrawerHeader(
+      return $flutterSrcMaterialDrawerHeader.DrawerHeader(
           key: (tree.materialDrawerHeader.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialDrawerHeader.key) : null),
           decoration: null,
           margin: null,
           duration: (tree.materialDrawerHeader.hasDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialDrawerHeader.duration) : missing('duration')),
           child: (tree.materialDrawerHeader.hasChild() ? evaluateWidgetExpression(tree.materialDrawerHeader.child) : null));
     case proto.WidgetExpression_Result.materialDropdownButton:
-      return $c92.DropdownButton(
+      return $flutterSrcMaterialDropdown.DropdownButton(
           key: (tree.materialDropdownButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialDropdownButton.key) : null),
           items: null,
           selectedItemBuilder: null,
@@ -1905,7 +1700,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           borderRadius: null,
           padding: null);
     case proto.WidgetExpression_Result.materialDropdownButtonFormField:
-      return $c93.DropdownButtonFormField(
+      return $flutterSrcMaterialDropdown.DropdownButtonFormField(
           key: (tree.materialDropdownButtonFormField.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialDropdownButtonFormField.key) : null),
           items: null,
           selectedItemBuilder: null,
@@ -1935,17 +1730,17 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           borderRadius: null,
           padding: null);
     case proto.WidgetExpression_Result.materialDropdownButtonHideUnderline:
-      return $c94.DropdownButtonHideUnderline(
+      return $flutterSrcMaterialDropdown.DropdownButtonHideUnderline(
           key: (tree.materialDropdownButtonHideUnderline.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialDropdownButtonHideUnderline.key) : null),
           child: (tree.materialDropdownButtonHideUnderline.hasChild() ? evaluateRequiredWidgetExpression(tree.materialDropdownButtonHideUnderline.child) : missing('child')));
     case proto.WidgetExpression_Result.materialDropdownMenuItem:
-      return $c95.DropdownMenuItem(
+      return $flutterSrcMaterialDropdown.DropdownMenuItem(
           key: (tree.materialDropdownMenuItem.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialDropdownMenuItem.key) : null),
           onTap: null,
           enabled: (tree.materialDropdownMenuItem.hasEnabled() ? tree.materialDropdownMenuItem.enabled : true),
           child: (tree.materialDropdownMenuItem.hasChild() ? evaluateRequiredWidgetExpression(tree.materialDropdownMenuItem.child) : missing('child')));
     case proto.WidgetExpression_Result.materialElevatedButton:
-      return $c96.ElevatedButton(
+      return $flutterSrcMaterialElevatedButton.ElevatedButton(
           key: (tree.materialElevatedButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialElevatedButton.key) : null),
           onPressed: null,
           onLongPress: null,
@@ -1958,7 +1753,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           statesController: null,
           child: (tree.materialElevatedButton.hasChild() ? evaluateWidgetExpression(tree.materialElevatedButton.child) : null));
     case proto.WidgetExpression_Result.materialElevatedButtonNamedIcon:
-      return $c97.ElevatedButton.icon(
+      return $flutterSrcMaterialElevatedButton.ElevatedButton.icon(
           key: (tree.materialElevatedButtonNamedIcon.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialElevatedButtonNamedIcon.key) : null),
           onPressed: null,
           onLongPress: null,
@@ -1972,7 +1767,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           icon: (tree.materialElevatedButtonNamedIcon.hasIcon() ? evaluateRequiredWidgetExpression(tree.materialElevatedButtonNamedIcon.icon) : missing('icon')),
           label: (tree.materialElevatedButtonNamedIcon.hasLabel() ? evaluateRequiredWidgetExpression(tree.materialElevatedButtonNamedIcon.label) : missing('label')));
     case proto.WidgetExpression_Result.materialExpandIcon:
-      return $c98.ExpandIcon(
+      return $flutterSrcMaterialExpandIcon.ExpandIcon(
           key: (tree.materialExpandIcon.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialExpandIcon.key) : null),
           isExpanded: (tree.materialExpandIcon.hasIsExpanded() ? tree.materialExpandIcon.isExpanded : false),
           size: (tree.materialExpandIcon.hasSize() ? tree.materialExpandIcon.size : 24.0),
@@ -1981,7 +1776,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           disabledColor: (tree.materialExpandIcon.hasDisabledColor() ? types.evaluateDartColorExpression(tree.materialExpandIcon.disabledColor) : null),
           expandedColor: (tree.materialExpandIcon.hasExpandedColor() ? types.evaluateDartColorExpression(tree.materialExpandIcon.expandedColor) : null));
     case proto.WidgetExpression_Result.materialExpansionPanelList:
-      return $c99.ExpansionPanelList(
+      return $flutterSrcMaterialExpansionPanel.ExpansionPanelList(
           key: (tree.materialExpansionPanelList.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialExpansionPanelList.key) : null),
           expansionCallback: null,
           animationDuration: (tree.materialExpansionPanelList.hasAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialExpansionPanelList.animationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
@@ -1990,7 +1785,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           expandIconColor: (tree.materialExpansionPanelList.hasExpandIconColor() ? types.evaluateDartColorExpression(tree.materialExpansionPanelList.expandIconColor) : null),
           materialGapSize: (tree.materialExpansionPanelList.hasMaterialGapSize() ? tree.materialExpansionPanelList.materialGapSize : 16.0));
     case proto.WidgetExpression_Result.materialExpansionPanelListNamedRadio:
-      return $c100.ExpansionPanelList.radio(
+      return $flutterSrcMaterialExpansionPanel.ExpansionPanelList.radio(
           key: (tree.materialExpansionPanelListNamedRadio.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialExpansionPanelListNamedRadio.key) : null),
           expansionCallback: null,
           animationDuration: (tree.materialExpansionPanelListNamedRadio.hasAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialExpansionPanelListNamedRadio.animationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
@@ -2000,7 +1795,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           expandIconColor: (tree.materialExpansionPanelListNamedRadio.hasExpandIconColor() ? types.evaluateDartColorExpression(tree.materialExpansionPanelListNamedRadio.expandIconColor) : null),
           materialGapSize: (tree.materialExpansionPanelListNamedRadio.hasMaterialGapSize() ? tree.materialExpansionPanelListNamedRadio.materialGapSize : 16.0));
     case proto.WidgetExpression_Result.materialExpansionTile:
-      return $c101.ExpansionTile(
+      return $flutterSrcMaterialExpansionTile.ExpansionTile(
           key: (tree.materialExpansionTile.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialExpansionTile.key) : null),
           leading: (tree.materialExpansionTile.hasLeading() ? evaluateWidgetExpression(tree.materialExpansionTile.leading) : null),
           title: (tree.materialExpansionTile.hasTitle() ? evaluateRequiredWidgetExpression(tree.materialExpansionTile.title) : missing('title')),
@@ -2026,7 +1821,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           controlAffinity: (tree.materialExpansionTile.hasControlAffinity() ? enums.convertMaterialListTileControlAffinity(tree.materialExpansionTile.controlAffinity) : null),
           controller: null);
     case proto.WidgetExpression_Result.materialFilledButton:
-      return $c102.FilledButton(
+      return $flutterSrcMaterialFilledButton.FilledButton(
           key: (tree.materialFilledButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialFilledButton.key) : null),
           onPressed: null,
           onLongPress: null,
@@ -2039,7 +1834,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           statesController: null,
           child: (tree.materialFilledButton.hasChild() ? evaluateWidgetExpression(tree.materialFilledButton.child) : null));
     case proto.WidgetExpression_Result.materialFilledButtonNamedIcon:
-      return $c103.FilledButton.icon(
+      return $flutterSrcMaterialFilledButton.FilledButton.icon(
           key: (tree.materialFilledButtonNamedIcon.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialFilledButtonNamedIcon.key) : null),
           onPressed: null,
           onLongPress: null,
@@ -2053,7 +1848,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           icon: (tree.materialFilledButtonNamedIcon.hasIcon() ? evaluateRequiredWidgetExpression(tree.materialFilledButtonNamedIcon.icon) : missing('icon')),
           label: (tree.materialFilledButtonNamedIcon.hasLabel() ? evaluateRequiredWidgetExpression(tree.materialFilledButtonNamedIcon.label) : missing('label')));
     case proto.WidgetExpression_Result.materialFilledButtonNamedTonal:
-      return $c104.FilledButton.tonal(
+      return $flutterSrcMaterialFilledButton.FilledButton.tonal(
           key: (tree.materialFilledButtonNamedTonal.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialFilledButtonNamedTonal.key) : null),
           onPressed: null,
           onLongPress: null,
@@ -2066,7 +1861,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           statesController: null,
           child: (tree.materialFilledButtonNamedTonal.hasChild() ? evaluateWidgetExpression(tree.materialFilledButtonNamedTonal.child) : null));
     case proto.WidgetExpression_Result.materialFilledButtonNamedTonalIcon:
-      return $c105.FilledButton.tonalIcon(
+      return $flutterSrcMaterialFilledButton.FilledButton.tonalIcon(
           key: (tree.materialFilledButtonNamedTonalIcon.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialFilledButtonNamedTonalIcon.key) : null),
           onPressed: null,
           onLongPress: null,
@@ -2080,7 +1875,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           icon: (tree.materialFilledButtonNamedTonalIcon.hasIcon() ? evaluateRequiredWidgetExpression(tree.materialFilledButtonNamedTonalIcon.icon) : missing('icon')),
           label: (tree.materialFilledButtonNamedTonalIcon.hasLabel() ? evaluateRequiredWidgetExpression(tree.materialFilledButtonNamedTonalIcon.label) : missing('label')));
     case proto.WidgetExpression_Result.materialFilterChip:
-      return $c106.FilterChip(
+      return $flutterSrcMaterialFilterChip.FilterChip(
           key: (tree.materialFilterChip.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialFilterChip.key) : null),
           avatar: (tree.materialFilterChip.hasAvatar() ? evaluateWidgetExpression(tree.materialFilterChip.avatar) : null),
           label: (tree.materialFilterChip.hasLabel() ? evaluateRequiredWidgetExpression(tree.materialFilterChip.label) : missing('label')),
@@ -2110,7 +1905,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           showCheckmark: (tree.materialFilterChip.hasShowCheckmark() ? tree.materialFilterChip.showCheckmark : null),
           checkmarkColor: (tree.materialFilterChip.hasCheckmarkColor() ? types.evaluateDartColorExpression(tree.materialFilterChip.checkmarkColor) : null));
     case proto.WidgetExpression_Result.materialFilterChipNamedElevated:
-      return $c107.FilterChip.elevated(
+      return $flutterSrcMaterialFilterChip.FilterChip.elevated(
           key: (tree.materialFilterChipNamedElevated.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialFilterChipNamedElevated.key) : null),
           avatar: (tree.materialFilterChipNamedElevated.hasAvatar() ? evaluateWidgetExpression(tree.materialFilterChipNamedElevated.avatar) : null),
           label: (tree.materialFilterChipNamedElevated.hasLabel() ? evaluateRequiredWidgetExpression(tree.materialFilterChipNamedElevated.label) : missing('label')),
@@ -2140,7 +1935,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           showCheckmark: (tree.materialFilterChipNamedElevated.hasShowCheckmark() ? tree.materialFilterChipNamedElevated.showCheckmark : null),
           checkmarkColor: (tree.materialFilterChipNamedElevated.hasCheckmarkColor() ? types.evaluateDartColorExpression(tree.materialFilterChipNamedElevated.checkmarkColor) : null));
     case proto.WidgetExpression_Result.materialFlexibleSpaceBar:
-      return $c108.FlexibleSpaceBar(
+      return $flutterSrcMaterialFlexibleSpaceBar.FlexibleSpaceBar(
           key: (tree.materialFlexibleSpaceBar.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialFlexibleSpaceBar.key) : null),
           title: (tree.materialFlexibleSpaceBar.hasTitle() ? evaluateWidgetExpression(tree.materialFlexibleSpaceBar.title) : null),
           background: (tree.materialFlexibleSpaceBar.hasBackground() ? evaluateWidgetExpression(tree.materialFlexibleSpaceBar.background) : null),
@@ -2150,7 +1945,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           stretchModes: tree.materialFlexibleSpaceBar.stretchModes.map((e) => enums.convertRequiredMaterialStretchMode(e)).toList(),
           expandedTitleScale: (tree.materialFlexibleSpaceBar.hasExpandedTitleScale() ? tree.materialFlexibleSpaceBar.expandedTitleScale : 1.5));
     case proto.WidgetExpression_Result.materialFlexibleSpaceBarSettings:
-      return $c109.FlexibleSpaceBarSettings(
+      return $flutterSrcMaterialFlexibleSpaceBar.FlexibleSpaceBarSettings(
           key: (tree.materialFlexibleSpaceBarSettings.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialFlexibleSpaceBarSettings.key) : null),
           toolbarOpacity: (tree.materialFlexibleSpaceBarSettings.hasToolbarOpacity() ? tree.materialFlexibleSpaceBarSettings.toolbarOpacity : missing('toolbarOpacity')),
           minExtent: (tree.materialFlexibleSpaceBarSettings.hasMinExtent() ? tree.materialFlexibleSpaceBarSettings.minExtent : missing('minExtent')),
@@ -2159,7 +1954,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           child: (tree.materialFlexibleSpaceBarSettings.hasChild() ? evaluateRequiredWidgetExpression(tree.materialFlexibleSpaceBarSettings.child) : missing('child')),
           isScrolledUnder: (tree.materialFlexibleSpaceBarSettings.hasIsScrolledUnder() ? tree.materialFlexibleSpaceBarSettings.isScrolledUnder : null));
     case proto.WidgetExpression_Result.materialFloatingActionButton:
-      return $c110.FloatingActionButton(
+      return $flutterSrcMaterialFloatingActionButton.FloatingActionButton(
           key: (tree.materialFloatingActionButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialFloatingActionButton.key) : null),
           child: (tree.materialFloatingActionButton.hasChild() ? evaluateWidgetExpression(tree.materialFloatingActionButton.child) : null),
           tooltip: (tree.materialFloatingActionButton.hasTooltip() ? tree.materialFloatingActionButton.tooltip : null),
@@ -2185,7 +1980,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           isExtended: (tree.materialFloatingActionButton.hasIsExtended() ? tree.materialFloatingActionButton.isExtended : false),
           enableFeedback: (tree.materialFloatingActionButton.hasEnableFeedback() ? tree.materialFloatingActionButton.enableFeedback : null));
     case proto.WidgetExpression_Result.materialFloatingActionButtonNamedSmall:
-      return $c111.FloatingActionButton.small(
+      return $flutterSrcMaterialFloatingActionButton.FloatingActionButton.small(
           key: (tree.materialFloatingActionButtonNamedSmall.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialFloatingActionButtonNamedSmall.key) : null),
           child: (tree.materialFloatingActionButtonNamedSmall.hasChild() ? evaluateWidgetExpression(tree.materialFloatingActionButtonNamedSmall.child) : null),
           tooltip: (tree.materialFloatingActionButtonNamedSmall.hasTooltip() ? tree.materialFloatingActionButtonNamedSmall.tooltip : null),
@@ -2209,7 +2004,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           materialTapTargetSize: (tree.materialFloatingActionButtonNamedSmall.hasMaterialTapTargetSize() ? enums.convertMaterialMaterialTapTargetSize(tree.materialFloatingActionButtonNamedSmall.materialTapTargetSize) : null),
           enableFeedback: (tree.materialFloatingActionButtonNamedSmall.hasEnableFeedback() ? tree.materialFloatingActionButtonNamedSmall.enableFeedback : null));
     case proto.WidgetExpression_Result.materialFloatingActionButtonNamedLarge:
-      return $c112.FloatingActionButton.large(
+      return $flutterSrcMaterialFloatingActionButton.FloatingActionButton.large(
           key: (tree.materialFloatingActionButtonNamedLarge.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialFloatingActionButtonNamedLarge.key) : null),
           child: (tree.materialFloatingActionButtonNamedLarge.hasChild() ? evaluateWidgetExpression(tree.materialFloatingActionButtonNamedLarge.child) : null),
           tooltip: (tree.materialFloatingActionButtonNamedLarge.hasTooltip() ? tree.materialFloatingActionButtonNamedLarge.tooltip : null),
@@ -2233,7 +2028,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           materialTapTargetSize: (tree.materialFloatingActionButtonNamedLarge.hasMaterialTapTargetSize() ? enums.convertMaterialMaterialTapTargetSize(tree.materialFloatingActionButtonNamedLarge.materialTapTargetSize) : null),
           enableFeedback: (tree.materialFloatingActionButtonNamedLarge.hasEnableFeedback() ? tree.materialFloatingActionButtonNamedLarge.enableFeedback : null));
     case proto.WidgetExpression_Result.materialFloatingActionButtonNamedExtended:
-      return $c113.FloatingActionButton.extended(
+      return $flutterSrcMaterialFloatingActionButton.FloatingActionButton.extended(
           key: (tree.materialFloatingActionButtonNamedExtended.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialFloatingActionButtonNamedExtended.key) : null),
           tooltip: (tree.materialFloatingActionButtonNamedExtended.hasTooltip() ? tree.materialFloatingActionButtonNamedExtended.tooltip : null),
           foregroundColor: (tree.materialFloatingActionButtonNamedExtended.hasForegroundColor() ? types.evaluateDartColorExpression(tree.materialFloatingActionButtonNamedExtended.foregroundColor) : null),
@@ -2262,20 +2057,20 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           label: (tree.materialFloatingActionButtonNamedExtended.hasLabel() ? evaluateRequiredWidgetExpression(tree.materialFloatingActionButtonNamedExtended.label) : missing('label')),
           enableFeedback: (tree.materialFloatingActionButtonNamedExtended.hasEnableFeedback() ? tree.materialFloatingActionButtonNamedExtended.enableFeedback : null));
     case proto.WidgetExpression_Result.materialFlutterLogo:
-      return $c114.FlutterLogo(
+      return $flutterSrcMaterialFlutterLogo.FlutterLogo(
           key: (tree.materialFlutterLogo.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialFlutterLogo.key) : null),
           size: (tree.materialFlutterLogo.hasSize() ? tree.materialFlutterLogo.size : null),
           textColor: (tree.materialFlutterLogo.hasTextColor() ? types.evaluateRequiredDartColorExpression(tree.materialFlutterLogo.textColor) : missing('textColor')),
           style: (tree.materialFlutterLogo.hasStyle() ? enums.convertRequiredFlutterFlutterLogoStyle(tree.materialFlutterLogo.style) : $flutterSrcPaintingFlutterLogo.FlutterLogoStyle.markOnly),
           duration: (tree.materialFlutterLogo.hasDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialFlutterLogo.duration) : missing('duration')));
     case proto.WidgetExpression_Result.materialGridTile:
-      return $c115.GridTile(
+      return $flutterSrcMaterialGridTile.GridTile(
           key: (tree.materialGridTile.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialGridTile.key) : null),
           header: (tree.materialGridTile.hasHeader() ? evaluateWidgetExpression(tree.materialGridTile.header) : null),
           footer: (tree.materialGridTile.hasFooter() ? evaluateWidgetExpression(tree.materialGridTile.footer) : null),
           child: (tree.materialGridTile.hasChild() ? evaluateRequiredWidgetExpression(tree.materialGridTile.child) : missing('child')));
     case proto.WidgetExpression_Result.materialGridTileBar:
-      return $c116.GridTileBar(
+      return $flutterSrcMaterialGridTileBar.GridTileBar(
           key: (tree.materialGridTileBar.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialGridTileBar.key) : null),
           backgroundColor: (tree.materialGridTileBar.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.materialGridTileBar.backgroundColor) : null),
           leading: (tree.materialGridTileBar.hasLeading() ? evaluateWidgetExpression(tree.materialGridTileBar.leading) : null),
@@ -2283,7 +2078,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           subtitle: (tree.materialGridTileBar.hasSubtitle() ? evaluateWidgetExpression(tree.materialGridTileBar.subtitle) : null),
           trailing: (tree.materialGridTileBar.hasTrailing() ? evaluateWidgetExpression(tree.materialGridTileBar.trailing) : null));
     case proto.WidgetExpression_Result.materialIconButton:
-      return $c117.IconButton(
+      return $flutterSrcMaterialIconButton.IconButton(
           key: (tree.materialIconButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialIconButton.key) : null),
           iconSize: (tree.materialIconButton.hasIconSize() ? tree.materialIconButton.iconSize : null),
           visualDensity: null,
@@ -2308,7 +2103,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           selectedIcon: (tree.materialIconButton.hasSelectedIcon() ? evaluateWidgetExpression(tree.materialIconButton.selectedIcon) : null),
           icon: (tree.materialIconButton.hasIcon() ? evaluateRequiredWidgetExpression(tree.materialIconButton.icon) : missing('icon')));
     case proto.WidgetExpression_Result.materialIconButtonNamedFilled:
-      return $c118.IconButton.filled(
+      return $flutterSrcMaterialIconButton.IconButton.filled(
           key: (tree.materialIconButtonNamedFilled.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialIconButtonNamedFilled.key) : null),
           iconSize: (tree.materialIconButtonNamedFilled.hasIconSize() ? tree.materialIconButtonNamedFilled.iconSize : null),
           visualDensity: null,
@@ -2333,7 +2128,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           selectedIcon: (tree.materialIconButtonNamedFilled.hasSelectedIcon() ? evaluateWidgetExpression(tree.materialIconButtonNamedFilled.selectedIcon) : null),
           icon: (tree.materialIconButtonNamedFilled.hasIcon() ? evaluateRequiredWidgetExpression(tree.materialIconButtonNamedFilled.icon) : missing('icon')));
     case proto.WidgetExpression_Result.materialIconButtonNamedFilledTonal:
-      return $c119.IconButton.filledTonal(
+      return $flutterSrcMaterialIconButton.IconButton.filledTonal(
           key: (tree.materialIconButtonNamedFilledTonal.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialIconButtonNamedFilledTonal.key) : null),
           iconSize: (tree.materialIconButtonNamedFilledTonal.hasIconSize() ? tree.materialIconButtonNamedFilledTonal.iconSize : null),
           visualDensity: null,
@@ -2358,7 +2153,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           selectedIcon: (tree.materialIconButtonNamedFilledTonal.hasSelectedIcon() ? evaluateWidgetExpression(tree.materialIconButtonNamedFilledTonal.selectedIcon) : null),
           icon: (tree.materialIconButtonNamedFilledTonal.hasIcon() ? evaluateRequiredWidgetExpression(tree.materialIconButtonNamedFilledTonal.icon) : missing('icon')));
     case proto.WidgetExpression_Result.materialIconButtonNamedOutlined:
-      return $c120.IconButton.outlined(
+      return $flutterSrcMaterialIconButton.IconButton.outlined(
           key: (tree.materialIconButtonNamedOutlined.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialIconButtonNamedOutlined.key) : null),
           iconSize: (tree.materialIconButtonNamedOutlined.hasIconSize() ? tree.materialIconButtonNamedOutlined.iconSize : null),
           visualDensity: null,
@@ -2383,7 +2178,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           selectedIcon: (tree.materialIconButtonNamedOutlined.hasSelectedIcon() ? evaluateWidgetExpression(tree.materialIconButtonNamedOutlined.selectedIcon) : null),
           icon: (tree.materialIconButtonNamedOutlined.hasIcon() ? evaluateRequiredWidgetExpression(tree.materialIconButtonNamedOutlined.icon) : missing('icon')));
     case proto.WidgetExpression_Result.materialInk:
-      return $c121.Ink(
+      return $flutterSrcMaterialInkDecoration.Ink(
           key: (tree.materialInk.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialInk.key) : null),
           padding: null,
           color: (tree.materialInk.hasColor() ? types.evaluateDartColorExpression(tree.materialInk.color) : null),
@@ -2392,7 +2187,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           height: (tree.materialInk.hasHeight() ? tree.materialInk.height : null),
           child: (tree.materialInk.hasChild() ? evaluateWidgetExpression(tree.materialInk.child) : null));
     case proto.WidgetExpression_Result.materialInkResponse:
-      return $c122.InkResponse(
+      return $flutterSrcMaterialInkWell.InkResponse(
           key: (tree.materialInkResponse.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialInkResponse.key) : null),
           child: (tree.materialInkResponse.hasChild() ? evaluateWidgetExpression(tree.materialInkResponse.child) : null),
           onTap: null,
@@ -2427,7 +2222,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           autofocus: (tree.materialInkResponse.hasAutofocus() ? tree.materialInkResponse.autofocus : false),
           statesController: null);
     case proto.WidgetExpression_Result.materialInkWell:
-      return $c123.InkWell(
+      return $flutterSrcMaterialInkWell.InkWell(
           key: (tree.materialInkWell.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialInkWell.key) : null),
           child: (tree.materialInkWell.hasChild() ? evaluateWidgetExpression(tree.materialInkWell.child) : null),
           onTap: null,
@@ -2460,7 +2255,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           autofocus: (tree.materialInkWell.hasAutofocus() ? tree.materialInkWell.autofocus : false),
           statesController: null);
     case proto.WidgetExpression_Result.materialInputChip:
-      return $c124.InputChip(
+      return $flutterSrcMaterialInputChip.InputChip(
           key: (tree.materialInputChip.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialInputChip.key) : null),
           avatar: (tree.materialInputChip.hasAvatar() ? evaluateWidgetExpression(tree.materialInputChip.avatar) : null),
           label: (tree.materialInputChip.hasLabel() ? evaluateRequiredWidgetExpression(tree.materialInputChip.label) : missing('label')),
@@ -2496,7 +2291,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           showCheckmark: (tree.materialInputChip.hasShowCheckmark() ? tree.materialInputChip.showCheckmark : null),
           checkmarkColor: (tree.materialInputChip.hasCheckmarkColor() ? types.evaluateDartColorExpression(tree.materialInputChip.checkmarkColor) : null));
     case proto.WidgetExpression_Result.materialListTile:
-      return $c125.ListTile(
+      return $flutterSrcMaterialListTile.ListTile(
           key: (tree.materialListTile.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialListTile.key) : null),
           leading: (tree.materialListTile.hasLeading() ? evaluateWidgetExpression(tree.materialListTile.leading) : null),
           title: (tree.materialListTile.hasTitle() ? evaluateWidgetExpression(tree.materialListTile.title) : null),
@@ -2533,7 +2328,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           minLeadingWidth: (tree.materialListTile.hasMinLeadingWidth() ? tree.materialListTile.minLeadingWidth : null),
           titleAlignment: (tree.materialListTile.hasTitleAlignment() ? enums.convertMaterialListTileTitleAlignment(tree.materialListTile.titleAlignment) : null));
     case proto.WidgetExpression_Result.materialListTileTheme:
-      return $c126.ListTileTheme(
+      return $flutterSrcMaterialListTileTheme.ListTileTheme(
           key: (tree.materialListTileTheme.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialListTileTheme.key) : null),
           data: null,
           dense: (tree.materialListTileTheme.hasDense() ? tree.materialListTileTheme.dense : null),
@@ -2552,11 +2347,11 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           minLeadingWidth: (tree.materialListTileTheme.hasMinLeadingWidth() ? tree.materialListTileTheme.minLeadingWidth : null),
           child: (tree.materialListTileTheme.hasChild() ? evaluateRequiredWidgetExpression(tree.materialListTileTheme.child) : missing('child')));
     case proto.WidgetExpression_Result.materialMagnifier:
-      return $c127.Magnifier(
+      return $flutterSrcMaterialMagnifier.Magnifier(
           key: (tree.materialMagnifier.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialMagnifier.key) : null),
           filmColor: (tree.materialMagnifier.hasFilmColor() ? types.evaluateRequiredDartColorExpression(tree.materialMagnifier.filmColor) : missing('filmColor')));
     case proto.WidgetExpression_Result.materialMaterial:
-      return $c128.Material(
+      return $flutterSrcMaterialMaterial.Material(
           key: (tree.materialMaterial.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialMaterial.key) : null),
           type: (tree.materialMaterial.hasType() ? enums.convertRequiredMaterialMaterialType(tree.materialMaterial.type) : $flutterSrcMaterialMaterial.MaterialType.canvas),
           elevation: (tree.materialMaterial.hasElevation() ? tree.materialMaterial.elevation : 0.0),
@@ -2571,7 +2366,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           animationDuration: (tree.materialMaterial.hasAnimationDuration() ? types.evaluateRequiredDartDurationExpression(tree.materialMaterial.animationDuration) : $flutterSrcMaterialConstants.kThemeChangeDuration),
           child: (tree.materialMaterial.hasChild() ? evaluateWidgetExpression(tree.materialMaterial.child) : null));
     case proto.WidgetExpression_Result.materialMaterialButton:
-      return $c129.MaterialButton(
+      return $flutterSrcMaterialMaterialButton.MaterialButton(
           key: (tree.materialMaterialButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialMaterialButton.key) : null),
           onPressed: null,
           onLongPress: null,
@@ -2605,7 +2400,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           enableFeedback: (tree.materialMaterialButton.hasEnableFeedback() ? tree.materialMaterialButton.enableFeedback : true),
           child: (tree.materialMaterialButton.hasChild() ? evaluateWidgetExpression(tree.materialMaterialButton.child) : null));
     case proto.WidgetExpression_Result.materialCheckboxMenuButton:
-      return $c130.CheckboxMenuButton(
+      return $flutterSrcMaterialMenuAnchor.CheckboxMenuButton(
           key: (tree.materialCheckboxMenuButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialCheckboxMenuButton.key) : null),
           value: (tree.materialCheckboxMenuButton.hasValue() ? tree.materialCheckboxMenuButton.value : null),
           tristate: (tree.materialCheckboxMenuButton.hasTristate() ? tree.materialCheckboxMenuButton.tristate : false),
@@ -2622,17 +2417,17 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           closeOnActivate: (tree.materialCheckboxMenuButton.hasCloseOnActivate() ? tree.materialCheckboxMenuButton.closeOnActivate : true),
           child: (tree.materialCheckboxMenuButton.hasChild() ? evaluateWidgetExpression(tree.materialCheckboxMenuButton.child) : null));
     case proto.WidgetExpression_Result.materialMenuAcceleratorCallbackBinding:
-      return $c131.MenuAcceleratorCallbackBinding(
+      return $flutterSrcMaterialMenuAnchor.MenuAcceleratorCallbackBinding(
           key: (tree.materialMenuAcceleratorCallbackBinding.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialMenuAcceleratorCallbackBinding.key) : null),
           onInvoke: null,
           hasSubmenu: (tree.materialMenuAcceleratorCallbackBinding.hasHasSubmenu() ? tree.materialMenuAcceleratorCallbackBinding.hasSubmenu : false),
           child: (tree.materialMenuAcceleratorCallbackBinding.hasChild() ? evaluateRequiredWidgetExpression(tree.materialMenuAcceleratorCallbackBinding.child) : missing('child')));
     case proto.WidgetExpression_Result.materialMenuAcceleratorLabel:
-      return $c132.MenuAcceleratorLabel(
+      return $flutterSrcMaterialMenuAnchor.MenuAcceleratorLabel(
           (tree.materialMenuAcceleratorLabel.hasLabel() ? tree.materialMenuAcceleratorLabel.label : missing('label')),
           key: (tree.materialMenuAcceleratorLabel.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialMenuAcceleratorLabel.key) : null));
     case proto.WidgetExpression_Result.materialMenuAnchor:
-      return $c133.MenuAnchor(
+      return $flutterSrcMaterialMenuAnchor.MenuAnchor(
           key: (tree.materialMenuAnchor.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialMenuAnchor.key) : null),
           controller: null,
           childFocusNode: null,
@@ -2647,14 +2442,14 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           builder: null,
           child: (tree.materialMenuAnchor.hasChild() ? evaluateWidgetExpression(tree.materialMenuAnchor.child) : null));
     case proto.WidgetExpression_Result.materialMenuBar:
-      return $c134.MenuBar(
+      return $flutterSrcMaterialMenuAnchor.MenuBar(
           key: (tree.materialMenuBar.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialMenuBar.key) : null),
           style: null,
           clipBehavior: (tree.materialMenuBar.hasClipBehavior() ? enums.convertRequiredDartClip(tree.materialMenuBar.clipBehavior) : $dartUi.Clip.none),
           controller: null,
           children: tree.materialMenuBar.children.map((e) => evaluateRequiredWidgetExpression(e)).toList());
     case proto.WidgetExpression_Result.materialMenuItemButton:
-      return $c135.MenuItemButton(
+      return $flutterSrcMaterialMenuAnchor.MenuItemButton(
           key: (tree.materialMenuItemButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialMenuItemButton.key) : null),
           onPressed: null,
           onHover: null,
@@ -2670,7 +2465,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           closeOnActivate: (tree.materialMenuItemButton.hasCloseOnActivate() ? tree.materialMenuItemButton.closeOnActivate : true),
           child: (tree.materialMenuItemButton.hasChild() ? evaluateWidgetExpression(tree.materialMenuItemButton.child) : null));
     case proto.WidgetExpression_Result.materialSubmenuButton:
-      return $c136.SubmenuButton(
+      return $flutterSrcMaterialMenuAnchor.SubmenuButton(
           key: (tree.materialSubmenuButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialSubmenuButton.key) : null),
           onHover: null,
           onFocusChange: null,
@@ -2688,14 +2483,14 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           menuChildren: tree.materialSubmenuButton.menuChildren.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           child: (tree.materialSubmenuButton.hasChild() ? evaluateWidgetExpression(tree.materialSubmenuButton.child) : null));
     case proto.WidgetExpression_Result.materialMergeableMaterial:
-      return $c137.MergeableMaterial(
+      return $flutterSrcMaterialMergeableMaterial.MergeableMaterial(
           key: (tree.materialMergeableMaterial.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialMergeableMaterial.key) : null),
           mainAxis: (tree.materialMergeableMaterial.hasMainAxis() ? enums.convertRequiredFlutterAxis(tree.materialMergeableMaterial.mainAxis) : $flutterSrcPaintingBasicTypes.Axis.vertical),
           elevation: (tree.materialMergeableMaterial.hasElevation() ? tree.materialMergeableMaterial.elevation : 2),
           hasDividers: (tree.materialMergeableMaterial.hasHasDividers() ? tree.materialMergeableMaterial.hasDividers : false),
           dividerColor: (tree.materialMergeableMaterial.hasDividerColor() ? types.evaluateDartColorExpression(tree.materialMergeableMaterial.dividerColor) : null));
     case proto.WidgetExpression_Result.materialNavigationBar:
-      return $c138.NavigationBar(
+      return $flutterSrcMaterialNavigationBar.NavigationBar(
           key: (tree.materialNavigationBar.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialNavigationBar.key) : null),
           animationDuration: (tree.materialNavigationBar.hasAnimationDuration() ? types.evaluateDartDurationExpression(tree.materialNavigationBar.animationDuration) : null),
           selectedIndex: (tree.materialNavigationBar.hasSelectedIndex() ? tree.materialNavigationBar.selectedIndex : 0),
@@ -2710,14 +2505,14 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           height: (tree.materialNavigationBar.hasHeight() ? tree.materialNavigationBar.height : null),
           labelBehavior: (tree.materialNavigationBar.hasLabelBehavior() ? enums.convertMaterialNavigationDestinationLabelBehavior(tree.materialNavigationBar.labelBehavior) : null));
     case proto.WidgetExpression_Result.materialNavigationDestination:
-      return $c139.NavigationDestination(
+      return $flutterSrcMaterialNavigationBar.NavigationDestination(
           key: (tree.materialNavigationDestination.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialNavigationDestination.key) : null),
           icon: (tree.materialNavigationDestination.hasIcon() ? evaluateRequiredWidgetExpression(tree.materialNavigationDestination.icon) : missing('icon')),
           selectedIcon: (tree.materialNavigationDestination.hasSelectedIcon() ? evaluateWidgetExpression(tree.materialNavigationDestination.selectedIcon) : null),
           label: (tree.materialNavigationDestination.hasLabel() ? tree.materialNavigationDestination.label : missing('label')),
           tooltip: (tree.materialNavigationDestination.hasTooltip() ? tree.materialNavigationDestination.tooltip : null));
     case proto.WidgetExpression_Result.materialNavigationDrawer:
-      return $c140.NavigationDrawer(
+      return $flutterSrcMaterialNavigationDrawer.NavigationDrawer(
           key: (tree.materialNavigationDrawer.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialNavigationDrawer.key) : null),
           children: tree.materialNavigationDrawer.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           backgroundColor: (tree.materialNavigationDrawer.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.materialNavigationDrawer.backgroundColor) : null),
@@ -2729,14 +2524,14 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           onDestinationSelected: null,
           selectedIndex: (tree.materialNavigationDrawer.hasSelectedIndex() ? tree.materialNavigationDrawer.selectedIndex : 0));
     case proto.WidgetExpression_Result.materialNavigationDrawerDestination:
-      return $c141.NavigationDrawerDestination(
+      return $flutterSrcMaterialNavigationDrawer.NavigationDrawerDestination(
           key: (tree.materialNavigationDrawerDestination.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialNavigationDrawerDestination.key) : null),
           backgroundColor: (tree.materialNavigationDrawerDestination.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.materialNavigationDrawerDestination.backgroundColor) : null),
           icon: (tree.materialNavigationDrawerDestination.hasIcon() ? evaluateRequiredWidgetExpression(tree.materialNavigationDrawerDestination.icon) : missing('icon')),
           selectedIcon: (tree.materialNavigationDrawerDestination.hasSelectedIcon() ? evaluateWidgetExpression(tree.materialNavigationDrawerDestination.selectedIcon) : null),
           label: (tree.materialNavigationDrawerDestination.hasLabel() ? evaluateRequiredWidgetExpression(tree.materialNavigationDrawerDestination.label) : missing('label')));
     case proto.WidgetExpression_Result.materialOutlinedButton:
-      return $c142.OutlinedButton(
+      return $flutterSrcMaterialOutlinedButton.OutlinedButton(
           key: (tree.materialOutlinedButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialOutlinedButton.key) : null),
           onPressed: null,
           onLongPress: null,
@@ -2749,7 +2544,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           statesController: null,
           child: (tree.materialOutlinedButton.hasChild() ? evaluateWidgetExpression(tree.materialOutlinedButton.child) : null));
     case proto.WidgetExpression_Result.materialOutlinedButtonNamedIcon:
-      return $c143.OutlinedButton.icon(
+      return $flutterSrcMaterialOutlinedButton.OutlinedButton.icon(
           key: (tree.materialOutlinedButtonNamedIcon.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialOutlinedButtonNamedIcon.key) : null),
           onPressed: null,
           onLongPress: null,
@@ -2761,7 +2556,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           icon: (tree.materialOutlinedButtonNamedIcon.hasIcon() ? evaluateRequiredWidgetExpression(tree.materialOutlinedButtonNamedIcon.icon) : missing('icon')),
           label: (tree.materialOutlinedButtonNamedIcon.hasLabel() ? evaluateRequiredWidgetExpression(tree.materialOutlinedButtonNamedIcon.label) : missing('label')));
     case proto.WidgetExpression_Result.materialCheckedPopupMenuItem:
-      return $c144.CheckedPopupMenuItem(
+      return $flutterSrcMaterialPopupMenu.CheckedPopupMenuItem(
           key: (tree.materialCheckedPopupMenuItem.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialCheckedPopupMenuItem.key) : null),
           checked: (tree.materialCheckedPopupMenuItem.hasChecked() ? tree.materialCheckedPopupMenuItem.checked : false),
           enabled: (tree.materialCheckedPopupMenuItem.hasEnabled() ? tree.materialCheckedPopupMenuItem.enabled : true),
@@ -2770,11 +2565,11 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           mouseCursor: null,
           child: (tree.materialCheckedPopupMenuItem.hasChild() ? evaluateWidgetExpression(tree.materialCheckedPopupMenuItem.child) : null));
     case proto.WidgetExpression_Result.materialPopupMenuDivider:
-      return $c145.PopupMenuDivider(
+      return $flutterSrcMaterialPopupMenu.PopupMenuDivider(
           key: (tree.materialPopupMenuDivider.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialPopupMenuDivider.key) : null),
           height: (tree.materialPopupMenuDivider.hasHeight() ? tree.materialPopupMenuDivider.height : 16.0));
     case proto.WidgetExpression_Result.materialPopupMenuItem:
-      return $c146.PopupMenuItem(
+      return $flutterSrcMaterialPopupMenu.PopupMenuItem(
           key: (tree.materialPopupMenuItem.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialPopupMenuItem.key) : null),
           onTap: null,
           enabled: (tree.materialPopupMenuItem.hasEnabled() ? tree.materialPopupMenuItem.enabled : true),
@@ -2785,7 +2580,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           mouseCursor: null,
           child: (tree.materialPopupMenuItem.hasChild() ? evaluateWidgetExpression(tree.materialPopupMenuItem.child) : null));
     case proto.WidgetExpression_Result.materialCircularProgressIndicator:
-      return $c147.CircularProgressIndicator(
+      return $flutterSrcMaterialProgressIndicator.CircularProgressIndicator(
           key: (tree.materialCircularProgressIndicator.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialCircularProgressIndicator.key) : null),
           value: (tree.materialCircularProgressIndicator.hasValue() ? tree.materialCircularProgressIndicator.value : null),
           backgroundColor: (tree.materialCircularProgressIndicator.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.materialCircularProgressIndicator.backgroundColor) : null),
@@ -2797,7 +2592,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           semanticsValue: (tree.materialCircularProgressIndicator.hasSemanticsValue() ? tree.materialCircularProgressIndicator.semanticsValue : null),
           strokeCap: (tree.materialCircularProgressIndicator.hasStrokeCap() ? enums.convertDartStrokeCap(tree.materialCircularProgressIndicator.strokeCap) : null));
     case proto.WidgetExpression_Result.materialCircularProgressIndicatorNamedAdaptive:
-      return $c148.CircularProgressIndicator.adaptive(
+      return $flutterSrcMaterialProgressIndicator.CircularProgressIndicator.adaptive(
           key: (tree.materialCircularProgressIndicatorNamedAdaptive.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialCircularProgressIndicatorNamedAdaptive.key) : null),
           value: (tree.materialCircularProgressIndicatorNamedAdaptive.hasValue() ? tree.materialCircularProgressIndicatorNamedAdaptive.value : null),
           backgroundColor: (tree.materialCircularProgressIndicatorNamedAdaptive.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.materialCircularProgressIndicatorNamedAdaptive.backgroundColor) : null),
@@ -2808,7 +2603,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           strokeCap: (tree.materialCircularProgressIndicatorNamedAdaptive.hasStrokeCap() ? enums.convertDartStrokeCap(tree.materialCircularProgressIndicatorNamedAdaptive.strokeCap) : null),
           strokeAlign: (tree.materialCircularProgressIndicatorNamedAdaptive.hasStrokeAlign() ? tree.materialCircularProgressIndicatorNamedAdaptive.strokeAlign : $flutterSrcMaterialProgressIndicator.CircularProgressIndicator.strokeAlignCenter));
     case proto.WidgetExpression_Result.materialLinearProgressIndicator:
-      return $c149.LinearProgressIndicator(
+      return $flutterSrcMaterialProgressIndicator.LinearProgressIndicator(
           key: (tree.materialLinearProgressIndicator.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialLinearProgressIndicator.key) : null),
           value: (tree.materialLinearProgressIndicator.hasValue() ? tree.materialLinearProgressIndicator.value : null),
           backgroundColor: (tree.materialLinearProgressIndicator.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.materialLinearProgressIndicator.backgroundColor) : null),
@@ -2818,7 +2613,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           semanticsLabel: (tree.materialLinearProgressIndicator.hasSemanticsLabel() ? tree.materialLinearProgressIndicator.semanticsLabel : null),
           semanticsValue: (tree.materialLinearProgressIndicator.hasSemanticsValue() ? tree.materialLinearProgressIndicator.semanticsValue : null));
     case proto.WidgetExpression_Result.materialRefreshProgressIndicator:
-      return $c150.RefreshProgressIndicator(
+      return $flutterSrcMaterialProgressIndicator.RefreshProgressIndicator(
           key: (tree.materialRefreshProgressIndicator.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialRefreshProgressIndicator.key) : null),
           value: (tree.materialRefreshProgressIndicator.hasValue() ? tree.materialRefreshProgressIndicator.value : null),
           backgroundColor: (tree.materialRefreshProgressIndicator.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.materialRefreshProgressIndicator.backgroundColor) : null),
@@ -2830,7 +2625,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           semanticsValue: (tree.materialRefreshProgressIndicator.hasSemanticsValue() ? tree.materialRefreshProgressIndicator.semanticsValue : null),
           strokeCap: (tree.materialRefreshProgressIndicator.hasStrokeCap() ? enums.convertDartStrokeCap(tree.materialRefreshProgressIndicator.strokeCap) : null));
     case proto.WidgetExpression_Result.materialScaffold:
-      return $c151.Scaffold(
+      return $flutterSrcMaterialScaffold.Scaffold(
           key: (tree.materialScaffold.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialScaffold.key) : null),
           appBar: null,
           body: (tree.materialScaffold.hasBody() ? evaluateWidgetExpression(tree.materialScaffold.body) : null),
@@ -2856,11 +2651,11 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           endDrawerEnableOpenDragGesture: (tree.materialScaffold.hasEndDrawerEnableOpenDragGesture() ? tree.materialScaffold.endDrawerEnableOpenDragGesture : true),
           restorationId: (tree.materialScaffold.hasRestorationId() ? tree.materialScaffold.restorationId : null));
     case proto.WidgetExpression_Result.materialScaffoldMessenger:
-      return $c152.ScaffoldMessenger(
+      return $flutterSrcMaterialScaffold.ScaffoldMessenger(
           key: (tree.materialScaffoldMessenger.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialScaffoldMessenger.key) : null),
           child: (tree.materialScaffoldMessenger.hasChild() ? evaluateRequiredWidgetExpression(tree.materialScaffoldMessenger.child) : missing('child')));
     case proto.WidgetExpression_Result.materialScrollbar:
-      return $c153.Scrollbar(
+      return $flutterSrcMaterialScrollbar.Scrollbar(
           key: (tree.materialScrollbar.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialScrollbar.key) : null),
           child: (tree.materialScrollbar.hasChild() ? evaluateRequiredWidgetExpression(tree.materialScrollbar.child) : missing('child')),
           controller: null,
@@ -2872,7 +2667,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           interactive: (tree.materialScrollbar.hasInteractive() ? tree.materialScrollbar.interactive : null),
           scrollbarOrientation: (tree.materialScrollbar.hasScrollbarOrientation() ? enums.convertFlutterScrollbarOrientation(tree.materialScrollbar.scrollbarOrientation) : null));
     case proto.WidgetExpression_Result.materialSearchBar:
-      return $c154.SearchBar(
+      return $flutterSrcMaterialSearchAnchor.SearchBar(
           key: (tree.materialSearchBar.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialSearchBar.key) : null),
           controller: null,
           focusNode: null,
@@ -2894,7 +2689,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           textStyle: null,
           hintStyle: null);
     case proto.WidgetExpression_Result.materialSelectableText:
-      return $c155.SelectableText(
+      return $flutterSrcMaterialSelectableText.SelectableText(
           (tree.materialSelectableText.hasData() ? tree.materialSelectableText.data : missing('data')),
           key: (tree.materialSelectableText.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialSelectableText.key) : null),
           focusNode: null,
@@ -2925,7 +2720,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           contextMenuBuilder: null,
           magnifierConfiguration: null);
     case proto.WidgetExpression_Result.materialSelectionArea:
-      return $c156.SelectionArea(
+      return $flutterSrcMaterialSelectionArea.SelectionArea(
           key: (tree.materialSelectionArea.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialSelectionArea.key) : null),
           focusNode: null,
           selectionControls: null,
@@ -2934,7 +2729,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           onSelectionChanged: null,
           child: (tree.materialSelectionArea.hasChild() ? evaluateRequiredWidgetExpression(tree.materialSelectionArea.child) : missing('child')));
     case proto.WidgetExpression_Result.materialSlider:
-      return $c157.Slider(
+      return $flutterSrcMaterialSlider.Slider(
           key: (tree.materialSlider.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialSlider.key) : null),
           value: (tree.materialSlider.hasValue() ? tree.materialSlider.value : missing('value')),
           secondaryTrackValue: (tree.materialSlider.hasSecondaryTrackValue() ? tree.materialSlider.secondaryTrackValue : null),
@@ -2956,7 +2751,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           autofocus: (tree.materialSlider.hasAutofocus() ? tree.materialSlider.autofocus : false),
           allowedInteraction: (tree.materialSlider.hasAllowedInteraction() ? enums.convertMaterialSliderInteraction(tree.materialSlider.allowedInteraction) : null));
     case proto.WidgetExpression_Result.materialSliderNamedAdaptive:
-      return $c158.Slider.adaptive(
+      return $flutterSrcMaterialSlider.Slider.adaptive(
           key: (tree.materialSliderNamedAdaptive.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialSliderNamedAdaptive.key) : null),
           value: (tree.materialSliderNamedAdaptive.hasValue() ? tree.materialSliderNamedAdaptive.value : missing('value')),
           secondaryTrackValue: (tree.materialSliderNamedAdaptive.hasSecondaryTrackValue() ? tree.materialSliderNamedAdaptive.secondaryTrackValue : null),
@@ -2978,7 +2773,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           autofocus: (tree.materialSliderNamedAdaptive.hasAutofocus() ? tree.materialSliderNamedAdaptive.autofocus : false),
           allowedInteraction: (tree.materialSliderNamedAdaptive.hasAllowedInteraction() ? enums.convertMaterialSliderInteraction(tree.materialSliderNamedAdaptive.allowedInteraction) : null));
     case proto.WidgetExpression_Result.materialSnackBar:
-      return $c159.SnackBar(
+      return $flutterSrcMaterialSnackBar.SnackBar(
           key: (tree.materialSnackBar.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialSnackBar.key) : null),
           content: (tree.materialSnackBar.hasContent() ? evaluateRequiredWidgetExpression(tree.materialSnackBar.content) : missing('content')),
           backgroundColor: (tree.materialSnackBar.hasBackgroundColor() ? types.evaluateDartColorExpression(tree.materialSnackBar.backgroundColor) : null),
@@ -2998,7 +2793,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           dismissDirection: (tree.materialSnackBar.hasDismissDirection() ? enums.convertRequiredFlutterDismissDirection(tree.materialSnackBar.dismissDirection) : $flutterSrcWidgetsDismissible.DismissDirection.down),
           clipBehavior: (tree.materialSnackBar.hasClipBehavior() ? enums.convertRequiredDartClip(tree.materialSnackBar.clipBehavior) : $dartUi.Clip.hardEdge));
     case proto.WidgetExpression_Result.materialSwitch:
-      return $c160.Switch(
+      return $flutterSrcMaterialSwitch.Switch(
           key: (tree.materialSwitch.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialSwitch.key) : null),
           value: (tree.materialSwitch.hasValue() ? tree.materialSwitch.value : missing('value')),
           onChanged: null,
@@ -3026,7 +2821,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           onFocusChange: null,
           autofocus: (tree.materialSwitch.hasAutofocus() ? tree.materialSwitch.autofocus : false));
     case proto.WidgetExpression_Result.materialSwitchNamedAdaptive:
-      return $c161.Switch.adaptive(
+      return $flutterSrcMaterialSwitch.Switch.adaptive(
           key: (tree.materialSwitchNamedAdaptive.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialSwitchNamedAdaptive.key) : null),
           value: (tree.materialSwitchNamedAdaptive.hasValue() ? tree.materialSwitchNamedAdaptive.value : missing('value')),
           onChanged: null,
@@ -3055,7 +2850,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           autofocus: (tree.materialSwitchNamedAdaptive.hasAutofocus() ? tree.materialSwitchNamedAdaptive.autofocus : false),
           applyCupertinoTheme: (tree.materialSwitchNamedAdaptive.hasApplyCupertinoTheme() ? tree.materialSwitchNamedAdaptive.applyCupertinoTheme : null));
     case proto.WidgetExpression_Result.materialSwitchListTile:
-      return $c162.SwitchListTile(
+      return $flutterSrcMaterialSwitchListTile.SwitchListTile(
           key: (tree.materialSwitchListTile.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialSwitchListTile.key) : null),
           value: (tree.materialSwitchListTile.hasValue() ? tree.materialSwitchListTile.value : missing('value')),
           onChanged: null,
@@ -3094,7 +2889,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           enableFeedback: (tree.materialSwitchListTile.hasEnableFeedback() ? tree.materialSwitchListTile.enableFeedback : null),
           hoverColor: (tree.materialSwitchListTile.hasHoverColor() ? types.evaluateDartColorExpression(tree.materialSwitchListTile.hoverColor) : null));
     case proto.WidgetExpression_Result.materialSwitchListTileNamedAdaptive:
-      return $c163.SwitchListTile.adaptive(
+      return $flutterSrcMaterialSwitchListTile.SwitchListTile.adaptive(
           key: (tree.materialSwitchListTileNamedAdaptive.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialSwitchListTileNamedAdaptive.key) : null),
           value: (tree.materialSwitchListTileNamedAdaptive.hasValue() ? tree.materialSwitchListTileNamedAdaptive.value : missing('value')),
           onChanged: null,
@@ -3134,21 +2929,21 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           enableFeedback: (tree.materialSwitchListTileNamedAdaptive.hasEnableFeedback() ? tree.materialSwitchListTileNamedAdaptive.enableFeedback : null),
           hoverColor: (tree.materialSwitchListTileNamedAdaptive.hasHoverColor() ? types.evaluateDartColorExpression(tree.materialSwitchListTileNamedAdaptive.hoverColor) : null));
     case proto.WidgetExpression_Result.materialDefaultTabController:
-      return $c164.DefaultTabController(
+      return $flutterSrcMaterialTabController.DefaultTabController(
           key: (tree.materialDefaultTabController.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialDefaultTabController.key) : null),
           length: (tree.materialDefaultTabController.hasLength() ? tree.materialDefaultTabController.length : missing('length')),
           initialIndex: (tree.materialDefaultTabController.hasInitialIndex() ? tree.materialDefaultTabController.initialIndex : 0),
           child: (tree.materialDefaultTabController.hasChild() ? evaluateRequiredWidgetExpression(tree.materialDefaultTabController.child) : missing('child')),
           animationDuration: (tree.materialDefaultTabController.hasAnimationDuration() ? types.evaluateDartDurationExpression(tree.materialDefaultTabController.animationDuration) : null));
     case proto.WidgetExpression_Result.materialTab:
-      return $c165.Tab(
+      return $flutterSrcMaterialTabs.Tab(
           key: (tree.materialTab.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialTab.key) : null),
           text: (tree.materialTab.hasText() ? tree.materialTab.text : null),
           icon: (tree.materialTab.hasIcon() ? evaluateWidgetExpression(tree.materialTab.icon) : null),
           height: (tree.materialTab.hasHeight() ? tree.materialTab.height : null),
           child: (tree.materialTab.hasChild() ? evaluateWidgetExpression(tree.materialTab.child) : null));
     case proto.WidgetExpression_Result.materialTabBar:
-      return $c166.TabBar(
+      return $flutterSrcMaterialTabs.TabBar(
           key: (tree.materialTabBar.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialTabBar.key) : null),
           tabs: tree.materialTabBar.tabs.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           controller: null,
@@ -3175,7 +2970,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           splashBorderRadius: null,
           tabAlignment: (tree.materialTabBar.hasTabAlignment() ? enums.convertMaterialTabAlignment(tree.materialTabBar.tabAlignment) : null));
     case proto.WidgetExpression_Result.materialTabBarNamedSecondary:
-      return $c167.TabBar.secondary(
+      return $flutterSrcMaterialTabs.TabBar.secondary(
           key: (tree.materialTabBarNamedSecondary.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialTabBarNamedSecondary.key) : null),
           tabs: tree.materialTabBarNamedSecondary.tabs.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           controller: null,
@@ -3202,7 +2997,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           splashBorderRadius: null,
           tabAlignment: (tree.materialTabBarNamedSecondary.hasTabAlignment() ? enums.convertMaterialTabAlignment(tree.materialTabBarNamedSecondary.tabAlignment) : null));
     case proto.WidgetExpression_Result.materialTabBarView:
-      return $c168.TabBarView(
+      return $flutterSrcMaterialTabs.TabBarView(
           key: (tree.materialTabBarView.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialTabBarView.key) : null),
           children: tree.materialTabBarView.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           controller: null,
@@ -3211,7 +3006,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           viewportFraction: (tree.materialTabBarView.hasViewportFraction() ? tree.materialTabBarView.viewportFraction : 1.0),
           clipBehavior: (tree.materialTabBarView.hasClipBehavior() ? enums.convertRequiredDartClip(tree.materialTabBarView.clipBehavior) : $dartUi.Clip.hardEdge));
     case proto.WidgetExpression_Result.materialTabPageSelector:
-      return $c169.TabPageSelector(
+      return $flutterSrcMaterialTabs.TabPageSelector(
           key: (tree.materialTabPageSelector.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialTabPageSelector.key) : null),
           controller: null,
           indicatorSize: (tree.materialTabPageSelector.hasIndicatorSize() ? tree.materialTabPageSelector.indicatorSize : 12.0),
@@ -3219,14 +3014,14 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           selectedColor: (tree.materialTabPageSelector.hasSelectedColor() ? types.evaluateDartColorExpression(tree.materialTabPageSelector.selectedColor) : null),
           borderStyle: (tree.materialTabPageSelector.hasBorderStyle() ? enums.convertFlutterBorderStyle(tree.materialTabPageSelector.borderStyle) : null));
     case proto.WidgetExpression_Result.materialTabPageSelectorIndicator:
-      return $c170.TabPageSelectorIndicator(
+      return $flutterSrcMaterialTabs.TabPageSelectorIndicator(
           key: (tree.materialTabPageSelectorIndicator.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialTabPageSelectorIndicator.key) : null),
           backgroundColor: (tree.materialTabPageSelectorIndicator.hasBackgroundColor() ? types.evaluateRequiredDartColorExpression(tree.materialTabPageSelectorIndicator.backgroundColor) : missing('backgroundColor')),
           borderColor: (tree.materialTabPageSelectorIndicator.hasBorderColor() ? types.evaluateRequiredDartColorExpression(tree.materialTabPageSelectorIndicator.borderColor) : missing('borderColor')),
           size: (tree.materialTabPageSelectorIndicator.hasSize() ? tree.materialTabPageSelectorIndicator.size : missing('size')),
           borderStyle: (tree.materialTabPageSelectorIndicator.hasBorderStyle() ? enums.convertRequiredFlutterBorderStyle(tree.materialTabPageSelectorIndicator.borderStyle) : $flutterSrcPaintingBorders.BorderStyle.solid));
     case proto.WidgetExpression_Result.materialTextButton:
-      return $c171.TextButton(
+      return $flutterSrcMaterialTextButton.TextButton(
           key: (tree.materialTextButton.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialTextButton.key) : null),
           onPressed: null,
           onLongPress: null,
@@ -3240,7 +3035,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           isSemanticButton: (tree.materialTextButton.hasIsSemanticButton() ? tree.materialTextButton.isSemanticButton : true),
           child: (tree.materialTextButton.hasChild() ? evaluateRequiredWidgetExpression(tree.materialTextButton.child) : missing('child')));
     case proto.WidgetExpression_Result.materialTextButtonNamedIcon:
-      return $c172.TextButton.icon(
+      return $flutterSrcMaterialTextButton.TextButton.icon(
           key: (tree.materialTextButtonNamedIcon.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialTextButtonNamedIcon.key) : null),
           onPressed: null,
           onLongPress: null,
@@ -3254,7 +3049,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           icon: (tree.materialTextButtonNamedIcon.hasIcon() ? evaluateRequiredWidgetExpression(tree.materialTextButtonNamedIcon.icon) : missing('icon')),
           label: (tree.materialTextButtonNamedIcon.hasLabel() ? evaluateRequiredWidgetExpression(tree.materialTextButtonNamedIcon.label) : missing('label')));
     case proto.WidgetExpression_Result.materialTextField:
-      return $c173.TextField(
+      return $flutterSrcMaterialTextField.TextField(
           key: (tree.materialTextField.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialTextField.key) : null),
           controller: null,
           focusNode: null,
@@ -3316,7 +3111,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           spellCheckConfiguration: null,
           magnifierConfiguration: null);
     case proto.WidgetExpression_Result.materialTextFormField:
-      return $c174.TextFormField(
+      return $flutterSrcMaterialTextFormField.TextFormField(
           key: (tree.materialTextFormField.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialTextFormField.key) : null),
           controller: null,
           initialValue: (tree.materialTextFormField.hasInitialValue() ? tree.materialTextFormField.initialValue : null),
@@ -3382,7 +3177,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           scribbleEnabled: (tree.materialTextFormField.hasScribbleEnabled() ? tree.materialTextFormField.scribbleEnabled : true),
           canRequestFocus: (tree.materialTextFormField.hasCanRequestFocus() ? tree.materialTextFormField.canRequestFocus : true));
     case proto.WidgetExpression_Result.materialToggleButtons:
-      return $c175.ToggleButtons(
+      return $flutterSrcMaterialToggleButtons.ToggleButtons(
           key: (tree.materialToggleButtons.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialToggleButtons.key) : null),
           children: tree.materialToggleButtons.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           isSelected: tree.materialToggleButtons.isSelected,
@@ -3409,7 +3204,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           direction: (tree.materialToggleButtons.hasDirection() ? enums.convertRequiredFlutterAxis(tree.materialToggleButtons.direction) : $flutterSrcPaintingBasicTypes.Axis.horizontal),
           verticalDirection: (tree.materialToggleButtons.hasVerticalDirection() ? enums.convertRequiredFlutterVerticalDirection(tree.materialToggleButtons.verticalDirection) : $flutterSrcPaintingBasicTypes.VerticalDirection.down));
     case proto.WidgetExpression_Result.materialTooltip:
-      return $c176.Tooltip(
+      return $flutterSrcMaterialTooltip.Tooltip(
           key: (tree.materialTooltip.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialTooltip.key) : null),
           message: (tree.materialTooltip.hasMessage() ? tree.materialTooltip.message : null),
           richMessage: null,
@@ -3429,12 +3224,12 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           onTriggered: null,
           child: (tree.materialTooltip.hasChild() ? evaluateWidgetExpression(tree.materialTooltip.child) : null));
     case proto.WidgetExpression_Result.materialTooltipVisibility:
-      return $c177.TooltipVisibility(
+      return $flutterSrcMaterialTooltipVisibility.TooltipVisibility(
           key: (tree.materialTooltipVisibility.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialTooltipVisibility.key) : null),
           visible: (tree.materialTooltipVisibility.hasVisible() ? tree.materialTooltipVisibility.visible : missing('visible')),
           child: (tree.materialTooltipVisibility.hasChild() ? evaluateRequiredWidgetExpression(tree.materialTooltipVisibility.child) : missing('child')));
     case proto.WidgetExpression_Result.materialUserAccountsDrawerHeader:
-      return $c178.UserAccountsDrawerHeader(
+      return $flutterSrcMaterialUserAccountsDrawerHeader.UserAccountsDrawerHeader(
           key: (tree.materialUserAccountsDrawerHeader.hasKey() ? types.evaluateFlutterKeyExpression(tree.materialUserAccountsDrawerHeader.key) : null),
           decoration: null,
           margin: null,
@@ -3445,11 +3240,11 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           onDetailsPressed: null,
           arrowColor: (tree.materialUserAccountsDrawerHeader.hasArrowColor() ? types.evaluateRequiredDartColorExpression(tree.materialUserAccountsDrawerHeader.arrowColor) : $flutterSrcMaterialColors.Colors.white));
     case proto.WidgetExpression_Result.flutterPlatformSelectableRegionContextMenu:
-      return $c179.PlatformSelectableRegionContextMenu(
+      return $flutterSrcWidgetsPlatformSelectableRegionContextMenuIo.PlatformSelectableRegionContextMenu(
           child: (tree.flutterPlatformSelectableRegionContextMenu.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterPlatformSelectableRegionContextMenu.child) : missing('child')),
           key: (tree.flutterPlatformSelectableRegionContextMenu.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterPlatformSelectableRegionContextMenu.key) : null));
     case proto.WidgetExpression_Result.flutterFocusableActionDetector:
-      return $c180.FocusableActionDetector(
+      return $flutterSrcWidgetsActions.FocusableActionDetector(
           key: (tree.flutterFocusableActionDetector.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterFocusableActionDetector.key) : null),
           enabled: (tree.flutterFocusableActionDetector.hasEnabled() ? tree.flutterFocusableActionDetector.enabled : true),
           focusNode: null,
@@ -3464,7 +3259,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           includeFocusSemantics: (tree.flutterFocusableActionDetector.hasIncludeFocusSemantics() ? tree.flutterFocusableActionDetector.includeFocusSemantics : true),
           child: (tree.flutterFocusableActionDetector.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterFocusableActionDetector.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterAnimatedCrossFade:
-      return $c181.AnimatedCrossFade(
+      return $flutterSrcWidgetsAnimatedCrossFade.AnimatedCrossFade(
           key: (tree.flutterAnimatedCrossFade.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterAnimatedCrossFade.key) : null),
           firstChild: (tree.flutterAnimatedCrossFade.hasFirstChild() ? evaluateRequiredWidgetExpression(tree.flutterAnimatedCrossFade.firstChild) : missing('firstChild')),
           secondChild: (tree.flutterAnimatedCrossFade.hasSecondChild() ? evaluateRequiredWidgetExpression(tree.flutterAnimatedCrossFade.secondChild) : missing('secondChild')),
@@ -3473,20 +3268,20 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           reverseDuration: (tree.flutterAnimatedCrossFade.hasReverseDuration() ? types.evaluateDartDurationExpression(tree.flutterAnimatedCrossFade.reverseDuration) : null),
           excludeBottomFocus: (tree.flutterAnimatedCrossFade.hasExcludeBottomFocus() ? tree.flutterAnimatedCrossFade.excludeBottomFocus : true));
     case proto.WidgetExpression_Result.flutterAnimatedSize:
-      return $c182.AnimatedSize(
+      return $flutterSrcWidgetsAnimatedSize.AnimatedSize(
           key: (tree.flutterAnimatedSize.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterAnimatedSize.key) : null),
           child: (tree.flutterAnimatedSize.hasChild() ? evaluateWidgetExpression(tree.flutterAnimatedSize.child) : null),
           duration: (tree.flutterAnimatedSize.hasDuration() ? types.evaluateRequiredDartDurationExpression(tree.flutterAnimatedSize.duration) : missing('duration')),
           reverseDuration: (tree.flutterAnimatedSize.hasReverseDuration() ? types.evaluateDartDurationExpression(tree.flutterAnimatedSize.reverseDuration) : null),
           clipBehavior: (tree.flutterAnimatedSize.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterAnimatedSize.clipBehavior) : $dartUi.Clip.hardEdge));
     case proto.WidgetExpression_Result.flutterAnimatedSwitcher:
-      return $c183.AnimatedSwitcher(
+      return $flutterSrcWidgetsAnimatedSwitcher.AnimatedSwitcher(
           key: (tree.flutterAnimatedSwitcher.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterAnimatedSwitcher.key) : null),
           child: (tree.flutterAnimatedSwitcher.hasChild() ? evaluateWidgetExpression(tree.flutterAnimatedSwitcher.child) : null),
           duration: (tree.flutterAnimatedSwitcher.hasDuration() ? types.evaluateRequiredDartDurationExpression(tree.flutterAnimatedSwitcher.duration) : missing('duration')),
           reverseDuration: (tree.flutterAnimatedSwitcher.hasReverseDuration() ? types.evaluateDartDurationExpression(tree.flutterAnimatedSwitcher.reverseDuration) : null));
     case proto.WidgetExpression_Result.flutterWidgetsApp:
-      return $c184.WidgetsApp(
+      return $flutterSrcWidgetsApp.WidgetsApp(
           key: (tree.flutterWidgetsApp.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterWidgetsApp.key) : null),
           navigatorKey: null,
           onGenerateRoute: null,
@@ -3515,7 +3310,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           actions: null,
           restorationScopeId: (tree.flutterWidgetsApp.hasRestorationScopeId() ? tree.flutterWidgetsApp.restorationScopeId : null));
     case proto.WidgetExpression_Result.flutterWidgetsAppNamedRouter:
-      return $c185.WidgetsApp.router(
+      return $flutterSrcWidgetsApp.WidgetsApp.router(
           key: (tree.flutterWidgetsAppNamedRouter.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterWidgetsAppNamedRouter.key) : null),
           routeInformationProvider: null,
           routeInformationParser: null,
@@ -3542,16 +3337,16 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           actions: null,
           restorationScopeId: (tree.flutterWidgetsAppNamedRouter.hasRestorationScopeId() ? tree.flutterWidgetsAppNamedRouter.restorationScopeId : null));
     case proto.WidgetExpression_Result.flutterAutofillGroup:
-      return $c186.AutofillGroup(
+      return $flutterSrcWidgetsAutofill.AutofillGroup(
           key: (tree.flutterAutofillGroup.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterAutofillGroup.key) : null),
           child: (tree.flutterAutofillGroup.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterAutofillGroup.child) : missing('child')),
           onDisposeAction: (tree.flutterAutofillGroup.hasOnDisposeAction() ? enums.convertRequiredFlutterAutofillContextAction(tree.flutterAutofillGroup.onDisposeAction) : $flutterSrcWidgetsAutofill.AutofillContextAction.commit));
     case proto.WidgetExpression_Result.flutterAutomaticKeepAlive:
-      return $c187.AutomaticKeepAlive(
+      return $flutterSrcWidgetsAutomaticKeepAlive.AutomaticKeepAlive(
           key: (tree.flutterAutomaticKeepAlive.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterAutomaticKeepAlive.key) : null),
           child: (tree.flutterAutomaticKeepAlive.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterAutomaticKeepAlive.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterBanner:
-      return $c188.Banner(
+      return $flutterSrcWidgetsBanner.Banner(
           key: (tree.flutterBanner.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterBanner.key) : null),
           child: (tree.flutterBanner.hasChild() ? evaluateWidgetExpression(tree.flutterBanner.child) : null),
           message: (tree.flutterBanner.hasMessage() ? tree.flutterBanner.message : missing('message')),
@@ -3560,73 +3355,73 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           layoutDirection: (tree.flutterBanner.hasLayoutDirection() ? enums.convertDartTextDirection(tree.flutterBanner.layoutDirection) : null),
           color: (tree.flutterBanner.hasColor() ? types.evaluateRequiredDartColorExpression(tree.flutterBanner.color) : missing('color')));
     case proto.WidgetExpression_Result.flutterCheckedModeBanner:
-      return $c189.CheckedModeBanner(
+      return $flutterSrcWidgetsBanner.CheckedModeBanner(
           key: (tree.flutterCheckedModeBanner.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterCheckedModeBanner.key) : null),
           child: (tree.flutterCheckedModeBanner.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterCheckedModeBanner.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterAbsorbPointer:
-      return $c190.AbsorbPointer(
+      return $flutterSrcWidgetsBasic.AbsorbPointer(
           key: (tree.flutterAbsorbPointer.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterAbsorbPointer.key) : null),
           absorbing: (tree.flutterAbsorbPointer.hasAbsorbing() ? tree.flutterAbsorbPointer.absorbing : true),
           child: (tree.flutterAbsorbPointer.hasChild() ? evaluateWidgetExpression(tree.flutterAbsorbPointer.child) : null));
     case proto.WidgetExpression_Result.flutterAlign:
-      return $c191.Align(
+      return $flutterSrcWidgetsBasic.Align(
           key: (tree.flutterAlign.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterAlign.key) : null),
           widthFactor: (tree.flutterAlign.hasWidthFactor() ? tree.flutterAlign.widthFactor : null),
           heightFactor: (tree.flutterAlign.hasHeightFactor() ? tree.flutterAlign.heightFactor : null),
           child: (tree.flutterAlign.hasChild() ? evaluateWidgetExpression(tree.flutterAlign.child) : null));
     case proto.WidgetExpression_Result.flutterAspectRatio:
-      return $c192.AspectRatio(
+      return $flutterSrcWidgetsBasic.AspectRatio(
           key: (tree.flutterAspectRatio.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterAspectRatio.key) : null),
           aspectRatio: (tree.flutterAspectRatio.hasAspectRatio() ? tree.flutterAspectRatio.aspectRatio : missing('aspectRatio')),
           child: (tree.flutterAspectRatio.hasChild() ? evaluateWidgetExpression(tree.flutterAspectRatio.child) : null));
     case proto.WidgetExpression_Result.flutterBaseline:
-      return $c193.Baseline(
+      return $flutterSrcWidgetsBasic.Baseline(
           key: (tree.flutterBaseline.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterBaseline.key) : null),
           baseline: (tree.flutterBaseline.hasBaseline() ? tree.flutterBaseline.baseline : missing('baseline')),
           baselineType: (tree.flutterBaseline.hasBaselineType() ? enums.convertRequiredDartTextBaseline(tree.flutterBaseline.baselineType) : missing('baselineType')),
           child: (tree.flutterBaseline.hasChild() ? evaluateWidgetExpression(tree.flutterBaseline.child) : null));
     case proto.WidgetExpression_Result.flutterBlockSemantics:
-      return $c194.BlockSemantics(
+      return $flutterSrcWidgetsBasic.BlockSemantics(
           key: (tree.flutterBlockSemantics.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterBlockSemantics.key) : null),
           blocking: (tree.flutterBlockSemantics.hasBlocking() ? tree.flutterBlockSemantics.blocking : true),
           child: (tree.flutterBlockSemantics.hasChild() ? evaluateWidgetExpression(tree.flutterBlockSemantics.child) : null));
     case proto.WidgetExpression_Result.flutterCenter:
-      return $c195.Center(
+      return $flutterSrcWidgetsBasic.Center(
           key: (tree.flutterCenter.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterCenter.key) : null),
           widthFactor: (tree.flutterCenter.hasWidthFactor() ? tree.flutterCenter.widthFactor : null),
           heightFactor: (tree.flutterCenter.hasHeightFactor() ? tree.flutterCenter.heightFactor : null),
           child: (tree.flutterCenter.hasChild() ? evaluateWidgetExpression(tree.flutterCenter.child) : null));
     case proto.WidgetExpression_Result.flutterClipOval:
-      return $c196.ClipOval(
+      return $flutterSrcWidgetsBasic.ClipOval(
           key: (tree.flutterClipOval.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterClipOval.key) : null),
           clipper: null,
           clipBehavior: (tree.flutterClipOval.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterClipOval.clipBehavior) : $dartUi.Clip.antiAlias),
           child: (tree.flutterClipOval.hasChild() ? evaluateWidgetExpression(tree.flutterClipOval.child) : null));
     case proto.WidgetExpression_Result.flutterClipPath:
-      return $c197.ClipPath(
+      return $flutterSrcWidgetsBasic.ClipPath(
           key: (tree.flutterClipPath.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterClipPath.key) : null),
           clipper: null,
           clipBehavior: (tree.flutterClipPath.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterClipPath.clipBehavior) : $dartUi.Clip.antiAlias),
           child: (tree.flutterClipPath.hasChild() ? evaluateWidgetExpression(tree.flutterClipPath.child) : null));
     case proto.WidgetExpression_Result.flutterClipRRect:
-      return $c198.ClipRRect(
+      return $flutterSrcWidgetsBasic.ClipRRect(
           key: (tree.flutterClipRRect.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterClipRRect.key) : null),
           clipper: null,
           clipBehavior: (tree.flutterClipRRect.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterClipRRect.clipBehavior) : $dartUi.Clip.antiAlias),
           child: (tree.flutterClipRRect.hasChild() ? evaluateWidgetExpression(tree.flutterClipRRect.child) : null));
     case proto.WidgetExpression_Result.flutterClipRect:
-      return $c199.ClipRect(
+      return $flutterSrcWidgetsBasic.ClipRect(
           key: (tree.flutterClipRect.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterClipRect.key) : null),
           clipper: null,
           clipBehavior: (tree.flutterClipRect.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterClipRect.clipBehavior) : $dartUi.Clip.hardEdge),
           child: (tree.flutterClipRect.hasChild() ? evaluateWidgetExpression(tree.flutterClipRect.child) : null));
     case proto.WidgetExpression_Result.flutterColoredBox:
-      return $c200.ColoredBox(
+      return $flutterSrcWidgetsBasic.ColoredBox(
           color: (tree.flutterColoredBox.hasColor() ? types.evaluateRequiredDartColorExpression(tree.flutterColoredBox.color) : missing('color')),
           child: (tree.flutterColoredBox.hasChild() ? evaluateWidgetExpression(tree.flutterColoredBox.child) : null),
           key: (tree.flutterColoredBox.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterColoredBox.key) : null));
     case proto.WidgetExpression_Result.flutterColumn:
-      return $c201.Column(
+      return $flutterSrcWidgetsBasic.Column(
           key: (tree.flutterColumn.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterColumn.key) : null),
           mainAxisAlignment: (tree.flutterColumn.hasMainAxisAlignment() ? enums.convertRequiredFlutterMainAxisAlignment(tree.flutterColumn.mainAxisAlignment) : $flutterSrcRenderingFlex.MainAxisAlignment.start),
           mainAxisSize: (tree.flutterColumn.hasMainAxisSize() ? enums.convertRequiredFlutterMainAxisSize(tree.flutterColumn.mainAxisSize) : $flutterSrcRenderingFlex.MainAxisSize.max),
@@ -3636,7 +3431,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           textBaseline: (tree.flutterColumn.hasTextBaseline() ? enums.convertDartTextBaseline(tree.flutterColumn.textBaseline) : null),
           children: tree.flutterColumn.children.map((e) => evaluateRequiredWidgetExpression(e)).toList());
     case proto.WidgetExpression_Result.flutterCustomPaint:
-      return $c202.CustomPaint(
+      return $flutterSrcWidgetsBasic.CustomPaint(
           key: (tree.flutterCustomPaint.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterCustomPaint.key) : null),
           painter: null,
           foregroundPainter: null,
@@ -3644,28 +3439,28 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           willChange: (tree.flutterCustomPaint.hasWillChange() ? tree.flutterCustomPaint.willChange : false),
           child: (tree.flutterCustomPaint.hasChild() ? evaluateWidgetExpression(tree.flutterCustomPaint.child) : null));
     case proto.WidgetExpression_Result.flutterDirectionality:
-      return $c203.Directionality(
+      return $flutterSrcWidgetsBasic.Directionality(
           key: (tree.flutterDirectionality.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterDirectionality.key) : null),
           textDirection: (tree.flutterDirectionality.hasTextDirection() ? enums.convertRequiredDartTextDirection(tree.flutterDirectionality.textDirection) : missing('textDirection')),
           child: (tree.flutterDirectionality.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterDirectionality.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterExcludeSemantics:
-      return $c204.ExcludeSemantics(
+      return $flutterSrcWidgetsBasic.ExcludeSemantics(
           key: (tree.flutterExcludeSemantics.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterExcludeSemantics.key) : null),
           excluding: (tree.flutterExcludeSemantics.hasExcluding() ? tree.flutterExcludeSemantics.excluding : true),
           child: (tree.flutterExcludeSemantics.hasChild() ? evaluateWidgetExpression(tree.flutterExcludeSemantics.child) : null));
     case proto.WidgetExpression_Result.flutterExpanded:
-      return $c205.Expanded(
+      return $flutterSrcWidgetsBasic.Expanded(
           key: (tree.flutterExpanded.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterExpanded.key) : null),
           flex: (tree.flutterExpanded.hasFlex() ? tree.flutterExpanded.flex : 1),
           child: (tree.flutterExpanded.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterExpanded.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterFittedBox:
-      return $c206.FittedBox(
+      return $flutterSrcWidgetsBasic.FittedBox(
           key: (tree.flutterFittedBox.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterFittedBox.key) : null),
           fit: (tree.flutterFittedBox.hasFit() ? enums.convertRequiredFlutterBoxFit(tree.flutterFittedBox.fit) : $flutterSrcPaintingBoxFit.BoxFit.contain),
           clipBehavior: (tree.flutterFittedBox.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterFittedBox.clipBehavior) : $dartUi.Clip.none),
           child: (tree.flutterFittedBox.hasChild() ? evaluateWidgetExpression(tree.flutterFittedBox.child) : null));
     case proto.WidgetExpression_Result.flutterFlex:
-      return $c207.Flex(
+      return $flutterSrcWidgetsBasic.Flex(
           key: (tree.flutterFlex.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterFlex.key) : null),
           direction: (tree.flutterFlex.hasDirection() ? enums.convertRequiredFlutterAxis(tree.flutterFlex.direction) : missing('direction')),
           mainAxisAlignment: (tree.flutterFlex.hasMainAxisAlignment() ? enums.convertRequiredFlutterMainAxisAlignment(tree.flutterFlex.mainAxisAlignment) : $flutterSrcRenderingFlex.MainAxisAlignment.start),
@@ -3677,29 +3472,29 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           clipBehavior: (tree.flutterFlex.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterFlex.clipBehavior) : $dartUi.Clip.none),
           children: tree.flutterFlex.children.map((e) => evaluateRequiredWidgetExpression(e)).toList());
     case proto.WidgetExpression_Result.flutterFlexible:
-      return $c208.Flexible(
+      return $flutterSrcWidgetsBasic.Flexible(
           key: (tree.flutterFlexible.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterFlexible.key) : null),
           flex: (tree.flutterFlexible.hasFlex() ? tree.flutterFlexible.flex : 1),
           fit: (tree.flutterFlexible.hasFit() ? enums.convertRequiredFlutterFlexFit(tree.flutterFlexible.fit) : $flutterSrcRenderingFlex.FlexFit.loose),
           child: (tree.flutterFlexible.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterFlexible.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterFractionallySizedBox:
-      return $c209.FractionallySizedBox(
+      return $flutterSrcWidgetsBasic.FractionallySizedBox(
           key: (tree.flutterFractionallySizedBox.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterFractionallySizedBox.key) : null),
           widthFactor: (tree.flutterFractionallySizedBox.hasWidthFactor() ? tree.flutterFractionallySizedBox.widthFactor : null),
           heightFactor: (tree.flutterFractionallySizedBox.hasHeightFactor() ? tree.flutterFractionallySizedBox.heightFactor : null),
           child: (tree.flutterFractionallySizedBox.hasChild() ? evaluateWidgetExpression(tree.flutterFractionallySizedBox.child) : null));
     case proto.WidgetExpression_Result.flutterIgnorePointer:
-      return $c210.IgnorePointer(
+      return $flutterSrcWidgetsBasic.IgnorePointer(
           key: (tree.flutterIgnorePointer.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterIgnorePointer.key) : null),
           ignoring: (tree.flutterIgnorePointer.hasIgnoring() ? tree.flutterIgnorePointer.ignoring : true),
           child: (tree.flutterIgnorePointer.hasChild() ? evaluateWidgetExpression(tree.flutterIgnorePointer.child) : null));
     case proto.WidgetExpression_Result.flutterIndexedSemantics:
-      return $c211.IndexedSemantics(
+      return $flutterSrcWidgetsBasic.IndexedSemantics(
           key: (tree.flutterIndexedSemantics.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterIndexedSemantics.key) : null),
           index: (tree.flutterIndexedSemantics.hasIndex() ? tree.flutterIndexedSemantics.index : missing('index')),
           child: (tree.flutterIndexedSemantics.hasChild() ? evaluateWidgetExpression(tree.flutterIndexedSemantics.child) : null));
     case proto.WidgetExpression_Result.flutterIndexedStack:
-      return $c212.IndexedStack(
+      return $flutterSrcWidgetsBasic.IndexedStack(
           key: (tree.flutterIndexedStack.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterIndexedStack.key) : null),
           textDirection: (tree.flutterIndexedStack.hasTextDirection() ? enums.convertDartTextDirection(tree.flutterIndexedStack.textDirection) : null),
           clipBehavior: (tree.flutterIndexedStack.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterIndexedStack.clipBehavior) : $dartUi.Clip.hardEdge),
@@ -3707,37 +3502,37 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           index: (tree.flutterIndexedStack.hasIndex() ? tree.flutterIndexedStack.index : 0),
           children: tree.flutterIndexedStack.children.map((e) => evaluateRequiredWidgetExpression(e)).toList());
     case proto.WidgetExpression_Result.flutterIntrinsicHeight:
-      return $c213.IntrinsicHeight(
+      return $flutterSrcWidgetsBasic.IntrinsicHeight(
           key: (tree.flutterIntrinsicHeight.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterIntrinsicHeight.key) : null),
           child: (tree.flutterIntrinsicHeight.hasChild() ? evaluateWidgetExpression(tree.flutterIntrinsicHeight.child) : null));
     case proto.WidgetExpression_Result.flutterIntrinsicWidth:
-      return $c214.IntrinsicWidth(
+      return $flutterSrcWidgetsBasic.IntrinsicWidth(
           key: (tree.flutterIntrinsicWidth.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterIntrinsicWidth.key) : null),
           stepWidth: (tree.flutterIntrinsicWidth.hasStepWidth() ? tree.flutterIntrinsicWidth.stepWidth : null),
           stepHeight: (tree.flutterIntrinsicWidth.hasStepHeight() ? tree.flutterIntrinsicWidth.stepHeight : null),
           child: (tree.flutterIntrinsicWidth.hasChild() ? evaluateWidgetExpression(tree.flutterIntrinsicWidth.child) : null));
     case proto.WidgetExpression_Result.flutterKeyedSubtree:
-      return $c215.KeyedSubtree(
+      return $flutterSrcWidgetsBasic.KeyedSubtree(
           key: (tree.flutterKeyedSubtree.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterKeyedSubtree.key) : null),
           child: (tree.flutterKeyedSubtree.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterKeyedSubtree.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterKeyedSubtreeNamedWrap:
-      return $c216.KeyedSubtree.wrap(
+      return $flutterSrcWidgetsBasic.KeyedSubtree.wrap(
           (tree.flutterKeyedSubtreeNamedWrap.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterKeyedSubtreeNamedWrap.child) : missing('child')),
           (tree.flutterKeyedSubtreeNamedWrap.hasChildIndex() ? tree.flutterKeyedSubtreeNamedWrap.childIndex : missing('childIndex')));
     case proto.WidgetExpression_Result.flutterLimitedBox:
-      return $c217.LimitedBox(
+      return $flutterSrcWidgetsBasic.LimitedBox(
           key: (tree.flutterLimitedBox.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterLimitedBox.key) : null),
           maxWidth: (tree.flutterLimitedBox.hasMaxWidth() ? tree.flutterLimitedBox.maxWidth : $dartCore.double.infinity),
           maxHeight: (tree.flutterLimitedBox.hasMaxHeight() ? tree.flutterLimitedBox.maxHeight : $dartCore.double.infinity),
           child: (tree.flutterLimitedBox.hasChild() ? evaluateWidgetExpression(tree.flutterLimitedBox.child) : null));
     case proto.WidgetExpression_Result.flutterListBody:
-      return $c218.ListBody(
+      return $flutterSrcWidgetsBasic.ListBody(
           key: (tree.flutterListBody.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterListBody.key) : null),
           mainAxis: (tree.flutterListBody.hasMainAxis() ? enums.convertRequiredFlutterAxis(tree.flutterListBody.mainAxis) : $flutterSrcPaintingBasicTypes.Axis.vertical),
           reverse: (tree.flutterListBody.hasReverse() ? tree.flutterListBody.reverse : false),
           children: tree.flutterListBody.children.map((e) => evaluateRequiredWidgetExpression(e)).toList());
     case proto.WidgetExpression_Result.flutterListener:
-      return $c219.Listener(
+      return $flutterSrcWidgetsBasic.Listener(
           key: (tree.flutterListener.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterListener.key) : null),
           onPointerDown: null,
           onPointerMove: null,
@@ -3751,16 +3546,16 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           behavior: (tree.flutterListener.hasBehavior() ? enums.convertRequiredFlutterHitTestBehavior(tree.flutterListener.behavior) : $flutterSrcRenderingProxyBox.HitTestBehavior.deferToChild),
           child: (tree.flutterListener.hasChild() ? evaluateWidgetExpression(tree.flutterListener.child) : null));
     case proto.WidgetExpression_Result.flutterMergeSemantics:
-      return $c220.MergeSemantics(
+      return $flutterSrcWidgetsBasic.MergeSemantics(
           key: (tree.flutterMergeSemantics.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterMergeSemantics.key) : null),
           child: (tree.flutterMergeSemantics.hasChild() ? evaluateWidgetExpression(tree.flutterMergeSemantics.child) : null));
     case proto.WidgetExpression_Result.flutterMetaData:
-      return $c221.MetaData(
+      return $flutterSrcWidgetsBasic.MetaData(
           key: (tree.flutterMetaData.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterMetaData.key) : null),
           behavior: (tree.flutterMetaData.hasBehavior() ? enums.convertRequiredFlutterHitTestBehavior(tree.flutterMetaData.behavior) : $flutterSrcRenderingProxyBox.HitTestBehavior.deferToChild),
           child: (tree.flutterMetaData.hasChild() ? evaluateWidgetExpression(tree.flutterMetaData.child) : null));
     case proto.WidgetExpression_Result.flutterMouseRegion:
-      return $c222.MouseRegion(
+      return $flutterSrcWidgetsBasic.MouseRegion(
           key: (tree.flutterMouseRegion.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterMouseRegion.key) : null),
           onEnter: null,
           onExit: null,
@@ -3769,18 +3564,18 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           hitTestBehavior: (tree.flutterMouseRegion.hasHitTestBehavior() ? enums.convertFlutterHitTestBehavior(tree.flutterMouseRegion.hitTestBehavior) : null),
           child: (tree.flutterMouseRegion.hasChild() ? evaluateWidgetExpression(tree.flutterMouseRegion.child) : null));
     case proto.WidgetExpression_Result.flutterOffstage:
-      return $c223.Offstage(
+      return $flutterSrcWidgetsBasic.Offstage(
           key: (tree.flutterOffstage.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterOffstage.key) : null),
           offstage: (tree.flutterOffstage.hasOffstage() ? tree.flutterOffstage.offstage : true),
           child: (tree.flutterOffstage.hasChild() ? evaluateWidgetExpression(tree.flutterOffstage.child) : null));
     case proto.WidgetExpression_Result.flutterOpacity:
-      return $c224.Opacity(
+      return $flutterSrcWidgetsBasic.Opacity(
           key: (tree.flutterOpacity.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterOpacity.key) : null),
           opacity: (tree.flutterOpacity.hasOpacity() ? tree.flutterOpacity.opacity : missing('opacity')),
           alwaysIncludeSemantics: (tree.flutterOpacity.hasAlwaysIncludeSemantics() ? tree.flutterOpacity.alwaysIncludeSemantics : false),
           child: (tree.flutterOpacity.hasChild() ? evaluateWidgetExpression(tree.flutterOpacity.child) : null));
     case proto.WidgetExpression_Result.flutterOverflowBox:
-      return $c225.OverflowBox(
+      return $flutterSrcWidgetsBasic.OverflowBox(
           key: (tree.flutterOverflowBox.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterOverflowBox.key) : null),
           minWidth: (tree.flutterOverflowBox.hasMinWidth() ? tree.flutterOverflowBox.minWidth : null),
           maxWidth: (tree.flutterOverflowBox.hasMaxWidth() ? tree.flutterOverflowBox.maxWidth : null),
@@ -3788,7 +3583,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           maxHeight: (tree.flutterOverflowBox.hasMaxHeight() ? tree.flutterOverflowBox.maxHeight : null),
           child: (tree.flutterOverflowBox.hasChild() ? evaluateWidgetExpression(tree.flutterOverflowBox.child) : null));
     case proto.WidgetExpression_Result.flutterPhysicalModel:
-      return $c226.PhysicalModel(
+      return $flutterSrcWidgetsBasic.PhysicalModel(
           key: (tree.flutterPhysicalModel.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterPhysicalModel.key) : null),
           shape: (tree.flutterPhysicalModel.hasShape() ? enums.convertRequiredFlutterBoxShape(tree.flutterPhysicalModel.shape) : $flutterSrcPaintingBoxBorder.BoxShape.rectangle),
           clipBehavior: (tree.flutterPhysicalModel.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterPhysicalModel.clipBehavior) : $dartUi.Clip.none),
@@ -3798,7 +3593,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           shadowColor: (tree.flutterPhysicalModel.hasShadowColor() ? types.evaluateRequiredDartColorExpression(tree.flutterPhysicalModel.shadowColor) : missing('shadowColor')),
           child: (tree.flutterPhysicalModel.hasChild() ? evaluateWidgetExpression(tree.flutterPhysicalModel.child) : null));
     case proto.WidgetExpression_Result.flutterPositioned:
-      return $c227.Positioned(
+      return $flutterSrcWidgetsBasic.Positioned(
           key: (tree.flutterPositioned.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterPositioned.key) : null),
           left: (tree.flutterPositioned.hasLeft() ? tree.flutterPositioned.left : null),
           top: (tree.flutterPositioned.hasTop() ? tree.flutterPositioned.top : null),
@@ -3808,7 +3603,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           height: (tree.flutterPositioned.hasHeight() ? tree.flutterPositioned.height : null),
           child: (tree.flutterPositioned.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterPositioned.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterPositionedNamedFill:
-      return $c228.Positioned.fill(
+      return $flutterSrcWidgetsBasic.Positioned.fill(
           key: (tree.flutterPositionedNamedFill.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterPositionedNamedFill.key) : null),
           left: (tree.flutterPositionedNamedFill.hasLeft() ? tree.flutterPositionedNamedFill.left : 0.0),
           top: (tree.flutterPositionedNamedFill.hasTop() ? tree.flutterPositionedNamedFill.top : 0.0),
@@ -3816,7 +3611,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           bottom: (tree.flutterPositionedNamedFill.hasBottom() ? tree.flutterPositionedNamedFill.bottom : 0.0),
           child: (tree.flutterPositionedNamedFill.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterPositionedNamedFill.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterPositionedNamedDirectional:
-      return $c229.Positioned.directional(
+      return $flutterSrcWidgetsBasic.Positioned.directional(
           key: (tree.flutterPositionedNamedDirectional.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterPositionedNamedDirectional.key) : null),
           textDirection: (tree.flutterPositionedNamedDirectional.hasTextDirection() ? enums.convertRequiredDartTextDirection(tree.flutterPositionedNamedDirectional.textDirection) : missing('textDirection')),
           start: (tree.flutterPositionedNamedDirectional.hasStart() ? tree.flutterPositionedNamedDirectional.start : null),
@@ -3827,7 +3622,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           height: (tree.flutterPositionedNamedDirectional.hasHeight() ? tree.flutterPositionedNamedDirectional.height : null),
           child: (tree.flutterPositionedNamedDirectional.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterPositionedNamedDirectional.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterPositionedDirectional:
-      return $c230.PositionedDirectional(
+      return $flutterSrcWidgetsBasic.PositionedDirectional(
           key: (tree.flutterPositionedDirectional.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterPositionedDirectional.key) : null),
           start: (tree.flutterPositionedDirectional.hasStart() ? tree.flutterPositionedDirectional.start : null),
           top: (tree.flutterPositionedDirectional.hasTop() ? tree.flutterPositionedDirectional.top : null),
@@ -3837,7 +3632,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           height: (tree.flutterPositionedDirectional.hasHeight() ? tree.flutterPositionedDirectional.height : null),
           child: (tree.flutterPositionedDirectional.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterPositionedDirectional.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterRawImage:
-      return $c231.RawImage(
+      return $flutterSrcWidgetsBasic.RawImage(
           key: (tree.flutterRawImage.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterRawImage.key) : null),
           image: null,
           debugImageLabel: (tree.flutterRawImage.hasDebugImageLabel() ? tree.flutterRawImage.debugImageLabel : null),
@@ -3855,20 +3650,20 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           filterQuality: (tree.flutterRawImage.hasFilterQuality() ? enums.convertRequiredDartFilterQuality(tree.flutterRawImage.filterQuality) : $dartUi.FilterQuality.low),
           isAntiAlias: (tree.flutterRawImage.hasIsAntiAlias() ? tree.flutterRawImage.isAntiAlias : false));
     case proto.WidgetExpression_Result.flutterRepaintBoundary:
-      return $c232.RepaintBoundary(
+      return $flutterSrcWidgetsBasic.RepaintBoundary(
           key: (tree.flutterRepaintBoundary.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterRepaintBoundary.key) : null),
           child: (tree.flutterRepaintBoundary.hasChild() ? evaluateWidgetExpression(tree.flutterRepaintBoundary.child) : null));
     case proto.WidgetExpression_Result.flutterRepaintBoundaryNamedWrap:
-      return $c233.RepaintBoundary.wrap(
+      return $flutterSrcWidgetsBasic.RepaintBoundary.wrap(
           (tree.flutterRepaintBoundaryNamedWrap.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterRepaintBoundaryNamedWrap.child) : missing('child')),
           (tree.flutterRepaintBoundaryNamedWrap.hasChildIndex() ? tree.flutterRepaintBoundaryNamedWrap.childIndex : missing('childIndex')));
     case proto.WidgetExpression_Result.flutterRotatedBox:
-      return $c234.RotatedBox(
+      return $flutterSrcWidgetsBasic.RotatedBox(
           key: (tree.flutterRotatedBox.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterRotatedBox.key) : null),
           quarterTurns: (tree.flutterRotatedBox.hasQuarterTurns() ? tree.flutterRotatedBox.quarterTurns : missing('quarterTurns')),
           child: (tree.flutterRotatedBox.hasChild() ? evaluateWidgetExpression(tree.flutterRotatedBox.child) : null));
     case proto.WidgetExpression_Result.flutterRow:
-      return $c235.Row(
+      return $flutterSrcWidgetsBasic.Row(
           key: (tree.flutterRow.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterRow.key) : null),
           mainAxisAlignment: (tree.flutterRow.hasMainAxisAlignment() ? enums.convertRequiredFlutterMainAxisAlignment(tree.flutterRow.mainAxisAlignment) : $flutterSrcRenderingFlex.MainAxisAlignment.start),
           mainAxisSize: (tree.flutterRow.hasMainAxisSize() ? enums.convertRequiredFlutterMainAxisSize(tree.flutterRow.mainAxisSize) : $flutterSrcRenderingFlex.MainAxisSize.max),
@@ -3878,7 +3673,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           textBaseline: (tree.flutterRow.hasTextBaseline() ? enums.convertDartTextBaseline(tree.flutterRow.textBaseline) : null),
           children: tree.flutterRow.children.map((e) => evaluateRequiredWidgetExpression(e)).toList());
     case proto.WidgetExpression_Result.flutterSemantics:
-      return $c236.Semantics(
+      return $flutterSrcWidgetsBasic.Semantics(
           key: (tree.flutterSemantics.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSemantics.key) : null),
           child: (tree.flutterSemantics.hasChild() ? evaluateWidgetExpression(tree.flutterSemantics.child) : null),
           container: (tree.flutterSemantics.hasContainer() ? tree.flutterSemantics.container : false),
@@ -3945,42 +3740,42 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           onDidLoseAccessibilityFocus: null,
           customSemanticsActions: null);
     case proto.WidgetExpression_Result.flutterSizedBox:
-      return $c237.SizedBox(
+      return $flutterSrcWidgetsBasic.SizedBox(
           key: (tree.flutterSizedBox.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSizedBox.key) : null),
           width: (tree.flutterSizedBox.hasWidth() ? tree.flutterSizedBox.width : null),
           height: (tree.flutterSizedBox.hasHeight() ? tree.flutterSizedBox.height : null),
           child: (tree.flutterSizedBox.hasChild() ? evaluateWidgetExpression(tree.flutterSizedBox.child) : null));
     case proto.WidgetExpression_Result.flutterSizedBoxNamedExpand:
-      return $c238.SizedBox.expand(
+      return $flutterSrcWidgetsBasic.SizedBox.expand(
           key: (tree.flutterSizedBoxNamedExpand.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSizedBoxNamedExpand.key) : null),
           child: (tree.flutterSizedBoxNamedExpand.hasChild() ? evaluateWidgetExpression(tree.flutterSizedBoxNamedExpand.child) : null));
     case proto.WidgetExpression_Result.flutterSizedBoxNamedShrink:
-      return $c239.SizedBox.shrink(
+      return $flutterSrcWidgetsBasic.SizedBox.shrink(
           key: (tree.flutterSizedBoxNamedShrink.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSizedBoxNamedShrink.key) : null),
           child: (tree.flutterSizedBoxNamedShrink.hasChild() ? evaluateWidgetExpression(tree.flutterSizedBoxNamedShrink.child) : null));
     case proto.WidgetExpression_Result.flutterSizedBoxNamedFromSize:
-      return $c240.SizedBox.fromSize(
+      return $flutterSrcWidgetsBasic.SizedBox.fromSize(
           key: (tree.flutterSizedBoxNamedFromSize.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSizedBoxNamedFromSize.key) : null),
           child: (tree.flutterSizedBoxNamedFromSize.hasChild() ? evaluateWidgetExpression(tree.flutterSizedBoxNamedFromSize.child) : null),
           size: null);
     case proto.WidgetExpression_Result.flutterSizedBoxNamedSquare:
-      return $c241.SizedBox.square(
+      return $flutterSrcWidgetsBasic.SizedBox.square(
           key: (tree.flutterSizedBoxNamedSquare.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSizedBoxNamedSquare.key) : null),
           child: (tree.flutterSizedBoxNamedSquare.hasChild() ? evaluateWidgetExpression(tree.flutterSizedBoxNamedSquare.child) : null),
           dimension: (tree.flutterSizedBoxNamedSquare.hasDimension() ? tree.flutterSizedBoxNamedSquare.dimension : null));
     case proto.WidgetExpression_Result.flutterSliverToBoxAdapter:
-      return $c242.SliverToBoxAdapter(
+      return $flutterSrcWidgetsBasic.SliverToBoxAdapter(
           key: (tree.flutterSliverToBoxAdapter.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverToBoxAdapter.key) : null),
           child: (tree.flutterSliverToBoxAdapter.hasChild() ? evaluateWidgetExpression(tree.flutterSliverToBoxAdapter.child) : null));
     case proto.WidgetExpression_Result.flutterStack:
-      return $c243.Stack(
+      return $flutterSrcWidgetsBasic.Stack(
           key: (tree.flutterStack.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterStack.key) : null),
           textDirection: (tree.flutterStack.hasTextDirection() ? enums.convertDartTextDirection(tree.flutterStack.textDirection) : null),
           fit: (tree.flutterStack.hasFit() ? enums.convertRequiredFlutterStackFit(tree.flutterStack.fit) : $flutterSrcRenderingStack.StackFit.loose),
           clipBehavior: (tree.flutterStack.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterStack.clipBehavior) : $dartUi.Clip.hardEdge),
           children: tree.flutterStack.children.map((e) => evaluateRequiredWidgetExpression(e)).toList());
     case proto.WidgetExpression_Result.flutterTransformNamedRotate:
-      return $c244.Transform.rotate(
+      return $flutterSrcWidgetsBasic.Transform.rotate(
           key: (tree.flutterTransformNamedRotate.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterTransformNamedRotate.key) : null),
           angle: (tree.flutterTransformNamedRotate.hasAngle() ? tree.flutterTransformNamedRotate.angle : missing('angle')),
           origin: null,
@@ -3989,7 +3784,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           filterQuality: (tree.flutterTransformNamedRotate.hasFilterQuality() ? enums.convertDartFilterQuality(tree.flutterTransformNamedRotate.filterQuality) : null),
           child: (tree.flutterTransformNamedRotate.hasChild() ? evaluateWidgetExpression(tree.flutterTransformNamedRotate.child) : null));
     case proto.WidgetExpression_Result.flutterTransformNamedScale:
-      return $c245.Transform.scale(
+      return $flutterSrcWidgetsBasic.Transform.scale(
           key: (tree.flutterTransformNamedScale.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterTransformNamedScale.key) : null),
           scale: (tree.flutterTransformNamedScale.hasScale() ? tree.flutterTransformNamedScale.scale : null),
           scaleX: (tree.flutterTransformNamedScale.hasScaleX() ? tree.flutterTransformNamedScale.scaleX : null),
@@ -4000,7 +3795,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           filterQuality: (tree.flutterTransformNamedScale.hasFilterQuality() ? enums.convertDartFilterQuality(tree.flutterTransformNamedScale.filterQuality) : null),
           child: (tree.flutterTransformNamedScale.hasChild() ? evaluateWidgetExpression(tree.flutterTransformNamedScale.child) : null));
     case proto.WidgetExpression_Result.flutterTransformNamedFlip:
-      return $c246.Transform.flip(
+      return $flutterSrcWidgetsBasic.Transform.flip(
           key: (tree.flutterTransformNamedFlip.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterTransformNamedFlip.key) : null),
           flipX: (tree.flutterTransformNamedFlip.hasFlipX() ? tree.flutterTransformNamedFlip.flipX : false),
           flipY: (tree.flutterTransformNamedFlip.hasFlipY() ? tree.flutterTransformNamedFlip.flipY : false),
@@ -4009,14 +3804,14 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           filterQuality: (tree.flutterTransformNamedFlip.hasFilterQuality() ? enums.convertDartFilterQuality(tree.flutterTransformNamedFlip.filterQuality) : null),
           child: (tree.flutterTransformNamedFlip.hasChild() ? evaluateWidgetExpression(tree.flutterTransformNamedFlip.child) : null));
     case proto.WidgetExpression_Result.flutterUnconstrainedBox:
-      return $c247.UnconstrainedBox(
+      return $flutterSrcWidgetsBasic.UnconstrainedBox(
           key: (tree.flutterUnconstrainedBox.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterUnconstrainedBox.key) : null),
           child: (tree.flutterUnconstrainedBox.hasChild() ? evaluateWidgetExpression(tree.flutterUnconstrainedBox.child) : null),
           textDirection: (tree.flutterUnconstrainedBox.hasTextDirection() ? enums.convertDartTextDirection(tree.flutterUnconstrainedBox.textDirection) : null),
           constrainedAxis: (tree.flutterUnconstrainedBox.hasConstrainedAxis() ? enums.convertFlutterAxis(tree.flutterUnconstrainedBox.constrainedAxis) : null),
           clipBehavior: (tree.flutterUnconstrainedBox.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterUnconstrainedBox.clipBehavior) : $dartUi.Clip.none));
     case proto.WidgetExpression_Result.flutterWrap:
-      return $c248.Wrap(
+      return $flutterSrcWidgetsBasic.Wrap(
           key: (tree.flutterWrap.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterWrap.key) : null),
           direction: (tree.flutterWrap.hasDirection() ? enums.convertRequiredFlutterAxis(tree.flutterWrap.direction) : $flutterSrcPaintingBasicTypes.Axis.horizontal),
           alignment: (tree.flutterWrap.hasAlignment() ? enums.convertRequiredFlutterWrapAlignment(tree.flutterWrap.alignment) : $flutterSrcRenderingWrap.WrapAlignment.start),
@@ -4029,7 +3824,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           clipBehavior: (tree.flutterWrap.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterWrap.clipBehavior) : $dartUi.Clip.none),
           children: tree.flutterWrap.children.map((e) => evaluateRequiredWidgetExpression(e)).toList());
     case proto.WidgetExpression_Result.flutterContainer:
-      return $c249.Container(
+      return $flutterSrcWidgetsContainer.Container(
           key: (tree.flutterContainer.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterContainer.key) : null),
           alignment: null,
           padding: null,
@@ -4045,21 +3840,21 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           child: (tree.flutterContainer.hasChild() ? evaluateWidgetExpression(tree.flutterContainer.child) : null),
           clipBehavior: (tree.flutterContainer.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterContainer.clipBehavior) : $dartUi.Clip.none));
     case proto.WidgetExpression_Result.flutterDefaultSelectionStyle:
-      return $c250.DefaultSelectionStyle(
+      return $flutterSrcWidgetsDefaultSelectionStyle.DefaultSelectionStyle(
           key: (tree.flutterDefaultSelectionStyle.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterDefaultSelectionStyle.key) : null),
           cursorColor: (tree.flutterDefaultSelectionStyle.hasCursorColor() ? types.evaluateDartColorExpression(tree.flutterDefaultSelectionStyle.cursorColor) : null),
           selectionColor: (tree.flutterDefaultSelectionStyle.hasSelectionColor() ? types.evaluateDartColorExpression(tree.flutterDefaultSelectionStyle.selectionColor) : null),
           mouseCursor: null,
           child: (tree.flutterDefaultSelectionStyle.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterDefaultSelectionStyle.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterDefaultSelectionStyleNamedFallback:
-      return $c251.DefaultSelectionStyle.fallback(
+      return $flutterSrcWidgetsDefaultSelectionStyle.DefaultSelectionStyle.fallback(
           key: (tree.flutterDefaultSelectionStyleNamedFallback.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterDefaultSelectionStyleNamedFallback.key) : null));
     case proto.WidgetExpression_Result.flutterDefaultTextEditingShortcuts:
-      return $c252.DefaultTextEditingShortcuts(
+      return $flutterSrcWidgetsDefaultTextEditingShortcuts.DefaultTextEditingShortcuts(
           key: (tree.flutterDefaultTextEditingShortcuts.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterDefaultTextEditingShortcuts.key) : null),
           child: (tree.flutterDefaultTextEditingShortcuts.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterDefaultTextEditingShortcuts.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterDismissible:
-      return $c253.Dismissible(
+      return $flutterSrcWidgetsDismissible.Dismissible(
           key: (tree.flutterDismissible.hasKey() ? types.evaluateRequiredFlutterKeyExpression(tree.flutterDismissible.key) : missing('key')),
           child: (tree.flutterDismissible.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterDismissible.child) : missing('child')),
           background: (tree.flutterDismissible.hasBackground() ? evaluateWidgetExpression(tree.flutterDismissible.background) : null),
@@ -4075,12 +3870,12 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           dragStartBehavior: (tree.flutterDismissible.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehavior(tree.flutterDismissible.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           behavior: (tree.flutterDismissible.hasBehavior() ? enums.convertRequiredFlutterHitTestBehavior(tree.flutterDismissible.behavior) : $flutterSrcRenderingProxyBox.HitTestBehavior.opaque));
     case proto.WidgetExpression_Result.flutterDisplayFeatureSubScreen:
-      return $c254.DisplayFeatureSubScreen(
+      return $flutterSrcWidgetsDisplayFeatureSubScreen.DisplayFeatureSubScreen(
           key: (tree.flutterDisplayFeatureSubScreen.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterDisplayFeatureSubScreen.key) : null),
           anchorPoint: null,
           child: (tree.flutterDisplayFeatureSubScreen.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterDisplayFeatureSubScreen.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterDraggable:
-      return $c255.Draggable(
+      return $flutterSrcWidgetsDragTarget.Draggable(
           key: (tree.flutterDraggable.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterDraggable.key) : null),
           child: (tree.flutterDraggable.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterDraggable.child) : missing('child')),
           feedback: (tree.flutterDraggable.hasFeedback() ? evaluateRequiredWidgetExpression(tree.flutterDraggable.feedback) : missing('feedback')),
@@ -4099,7 +3894,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           hitTestBehavior: (tree.flutterDraggable.hasHitTestBehavior() ? enums.convertRequiredFlutterHitTestBehavior(tree.flutterDraggable.hitTestBehavior) : $flutterSrcRenderingProxyBox.HitTestBehavior.deferToChild),
           allowedButtonsFilter: null);
     case proto.WidgetExpression_Result.flutterLongPressDraggable:
-      return $c256.LongPressDraggable(
+      return $flutterSrcWidgetsDragTarget.LongPressDraggable(
           key: (tree.flutterLongPressDraggable.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterLongPressDraggable.key) : null),
           child: (tree.flutterLongPressDraggable.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterLongPressDraggable.child) : missing('child')),
           feedback: (tree.flutterLongPressDraggable.hasFeedback() ? evaluateRequiredWidgetExpression(tree.flutterLongPressDraggable.feedback) : missing('feedback')),
@@ -4117,11 +3912,11 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           delay: (tree.flutterLongPressDraggable.hasDelay() ? types.evaluateRequiredDartDurationExpression(tree.flutterLongPressDraggable.delay) : $flutterSrcGesturesConstants.kLongPressTimeout),
           allowedButtonsFilter: null);
     case proto.WidgetExpression_Result.flutterDraggableScrollableActuator:
-      return $c257.DraggableScrollableActuator(
+      return $flutterSrcWidgetsDraggableScrollableSheet.DraggableScrollableActuator(
           key: (tree.flutterDraggableScrollableActuator.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterDraggableScrollableActuator.key) : null),
           child: (tree.flutterDraggableScrollableActuator.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterDraggableScrollableActuator.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterFadeInImageNamedAssetNetwork:
-      return $c258.FadeInImage.assetNetwork(
+      return $flutterSrcWidgetsFadeInImage.FadeInImage.assetNetwork(
           key: (tree.flutterFadeInImageNamedAssetNetwork.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterFadeInImageNamedAssetNetwork.key) : null),
           placeholder: (tree.flutterFadeInImageNamedAssetNetwork.hasPlaceholder() ? tree.flutterFadeInImageNamedAssetNetwork.placeholder : missing('placeholder')),
           placeholderErrorBuilder: null,
@@ -4147,12 +3942,12 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           imageCacheWidth: (tree.flutterFadeInImageNamedAssetNetwork.hasImageCacheWidth() ? tree.flutterFadeInImageNamedAssetNetwork.imageCacheWidth : null),
           imageCacheHeight: (tree.flutterFadeInImageNamedAssetNetwork.hasImageCacheHeight() ? tree.flutterFadeInImageNamedAssetNetwork.imageCacheHeight : null));
     case proto.WidgetExpression_Result.flutterExcludeFocus:
-      return $c259.ExcludeFocus(
+      return $flutterSrcWidgetsFocusScope.ExcludeFocus(
           key: (tree.flutterExcludeFocus.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterExcludeFocus.key) : null),
           excluding: (tree.flutterExcludeFocus.hasExcluding() ? tree.flutterExcludeFocus.excluding : true),
           child: (tree.flutterExcludeFocus.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterExcludeFocus.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterFocus:
-      return $c260.Focus(
+      return $flutterSrcWidgetsFocusScope.Focus(
           key: (tree.flutterFocus.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterFocus.key) : null),
           child: (tree.flutterFocus.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterFocus.child) : missing('child')),
           focusNode: null,
@@ -4168,7 +3963,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           includeSemantics: (tree.flutterFocus.hasIncludeSemantics() ? tree.flutterFocus.includeSemantics : true),
           debugLabel: (tree.flutterFocus.hasDebugLabel() ? tree.flutterFocus.debugLabel : null));
     case proto.WidgetExpression_Result.flutterFocusScope:
-      return $c261.FocusScope(
+      return $flutterSrcWidgetsFocusScope.FocusScope(
           key: (tree.flutterFocusScope.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterFocusScope.key) : null),
           node: null,
           parentNode: null,
@@ -4181,30 +3976,30 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           onKey: null,
           debugLabel: (tree.flutterFocusScope.hasDebugLabel() ? tree.flutterFocusScope.debugLabel : null));
     case proto.WidgetExpression_Result.flutterExcludeFocusTraversal:
-      return $c262.ExcludeFocusTraversal(
+      return $flutterSrcWidgetsFocusTraversal.ExcludeFocusTraversal(
           key: (tree.flutterExcludeFocusTraversal.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterExcludeFocusTraversal.key) : null),
           excluding: (tree.flutterExcludeFocusTraversal.hasExcluding() ? tree.flutterExcludeFocusTraversal.excluding : true),
           child: (tree.flutterExcludeFocusTraversal.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterExcludeFocusTraversal.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterFocusTraversalGroup:
-      return $c263.FocusTraversalGroup(
+      return $flutterSrcWidgetsFocusTraversal.FocusTraversalGroup(
           key: (tree.flutterFocusTraversalGroup.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterFocusTraversalGroup.key) : null),
           policy: null,
           descendantsAreFocusable: (tree.flutterFocusTraversalGroup.hasDescendantsAreFocusable() ? tree.flutterFocusTraversalGroup.descendantsAreFocusable : true),
           descendantsAreTraversable: (tree.flutterFocusTraversalGroup.hasDescendantsAreTraversable() ? tree.flutterFocusTraversalGroup.descendantsAreTraversable : true),
           child: (tree.flutterFocusTraversalGroup.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterFocusTraversalGroup.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterForm:
-      return $c264.Form(
+      return $flutterSrcWidgetsForm.Form(
           key: (tree.flutterForm.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterForm.key) : null),
           child: (tree.flutterForm.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterForm.child) : missing('child')),
           onWillPop: null,
           onChanged: null,
           autovalidateMode: (tree.flutterForm.hasAutovalidateMode() ? enums.convertFlutterAutovalidateMode(tree.flutterForm.autovalidateMode) : null));
     case proto.WidgetExpression_Result.flutterErrorWidgetNamedWithDetails:
-      return $c265.ErrorWidget.withDetails(
+      return $flutterSrcWidgetsFramework.ErrorWidget.withDetails(
           message: (tree.flutterErrorWidgetNamedWithDetails.hasMessage() ? tree.flutterErrorWidgetNamedWithDetails.message : ''),
           error: null);
     case proto.WidgetExpression_Result.flutterGestureDetector:
-      return $c266.GestureDetector(
+      return $flutterSrcWidgetsGestureDetector.GestureDetector(
           key: (tree.flutterGestureDetector.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterGestureDetector.key) : null),
           child: (tree.flutterGestureDetector.hasChild() ? evaluateWidgetExpression(tree.flutterGestureDetector.child) : null),
           onTapDown: null,
@@ -4270,14 +4065,14 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           trackpadScrollCausesScale: (tree.flutterGestureDetector.hasTrackpadScrollCausesScale() ? tree.flutterGestureDetector.trackpadScrollCausesScale : false),
           supportedDevices: null);
     case proto.WidgetExpression_Result.flutterRawGestureDetector:
-      return $c267.RawGestureDetector(
+      return $flutterSrcWidgetsGestureDetector.RawGestureDetector(
           key: (tree.flutterRawGestureDetector.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterRawGestureDetector.key) : null),
           child: (tree.flutterRawGestureDetector.hasChild() ? evaluateWidgetExpression(tree.flutterRawGestureDetector.child) : null),
           behavior: (tree.flutterRawGestureDetector.hasBehavior() ? enums.convertFlutterHitTestBehavior(tree.flutterRawGestureDetector.behavior) : null),
           excludeFromSemantics: (tree.flutterRawGestureDetector.hasExcludeFromSemantics() ? tree.flutterRawGestureDetector.excludeFromSemantics : false),
           semantics: null);
     case proto.WidgetExpression_Result.flutterGridPaper:
-      return $c268.GridPaper(
+      return $flutterSrcWidgetsGridPaper.GridPaper(
           key: (tree.flutterGridPaper.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterGridPaper.key) : null),
           color: (tree.flutterGridPaper.hasColor() ? types.evaluateRequiredDartColorExpression(tree.flutterGridPaper.color) : missing('color')),
           interval: (tree.flutterGridPaper.hasInterval() ? tree.flutterGridPaper.interval : 100.0),
@@ -4285,12 +4080,12 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           subdivisions: (tree.flutterGridPaper.hasSubdivisions() ? tree.flutterGridPaper.subdivisions : 5),
           child: (tree.flutterGridPaper.hasChild() ? evaluateWidgetExpression(tree.flutterGridPaper.child) : null));
     case proto.WidgetExpression_Result.flutterHeroMode:
-      return $c269.HeroMode(
+      return $flutterSrcWidgetsHeroes.HeroMode(
           key: (tree.flutterHeroMode.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterHeroMode.key) : null),
           child: (tree.flutterHeroMode.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterHeroMode.child) : missing('child')),
           enabled: (tree.flutterHeroMode.hasEnabled() ? tree.flutterHeroMode.enabled : true));
     case proto.WidgetExpression_Result.flutterIcon:
-      return $c270.Icon(
+      return $flutterSrcWidgetsIcon.Icon(
           null,
           key: (tree.flutterIcon.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterIcon.key) : null),
           size: (tree.flutterIcon.hasSize() ? tree.flutterIcon.size : null),
@@ -4303,7 +4098,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           semanticLabel: (tree.flutterIcon.hasSemanticLabel() ? tree.flutterIcon.semanticLabel : null),
           textDirection: (tree.flutterIcon.hasTextDirection() ? enums.convertDartTextDirection(tree.flutterIcon.textDirection) : null));
     case proto.WidgetExpression_Result.flutterImageNamedNetwork:
-      return $c271.Image.network(
+      return $flutterSrcWidgetsImage.Image.network(
           (tree.flutterImageNamedNetwork.hasSrc() ? tree.flutterImageNamedNetwork.src : missing('src')),
           key: (tree.flutterImageNamedNetwork.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterImageNamedNetwork.key) : null),
           scale: (tree.flutterImageNamedNetwork.hasScale() ? tree.flutterImageNamedNetwork.scale : 1.0),
@@ -4328,7 +4123,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           cacheWidth: (tree.flutterImageNamedNetwork.hasCacheWidth() ? tree.flutterImageNamedNetwork.cacheWidth : null),
           cacheHeight: (tree.flutterImageNamedNetwork.hasCacheHeight() ? tree.flutterImageNamedNetwork.cacheHeight : null));
     case proto.WidgetExpression_Result.flutterImageNamedAsset:
-      return $c272.Image.asset(
+      return $flutterSrcWidgetsImage.Image.asset(
           (tree.flutterImageNamedAsset.hasName() ? tree.flutterImageNamedAsset.name : missing('name')),
           key: (tree.flutterImageNamedAsset.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterImageNamedAsset.key) : null),
           bundle: null,
@@ -4353,14 +4148,14 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           cacheWidth: (tree.flutterImageNamedAsset.hasCacheWidth() ? tree.flutterImageNamedAsset.cacheWidth : null),
           cacheHeight: (tree.flutterImageNamedAsset.hasCacheHeight() ? tree.flutterImageNamedAsset.cacheHeight : null));
     case proto.WidgetExpression_Result.flutterImageIcon:
-      return $c273.ImageIcon(
+      return $flutterSrcWidgetsImageIcon.ImageIcon(
           null,
           key: (tree.flutterImageIcon.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterImageIcon.key) : null),
           size: (tree.flutterImageIcon.hasSize() ? tree.flutterImageIcon.size : null),
           color: (tree.flutterImageIcon.hasColor() ? types.evaluateDartColorExpression(tree.flutterImageIcon.color) : null),
           semanticLabel: (tree.flutterImageIcon.hasSemanticLabel() ? tree.flutterImageIcon.semanticLabel : null));
     case proto.WidgetExpression_Result.flutterAnimatedContainer:
-      return $c274.AnimatedContainer(
+      return $flutterSrcWidgetsImplicitAnimations.AnimatedContainer(
           key: (tree.flutterAnimatedContainer.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterAnimatedContainer.key) : null),
           alignment: null,
           padding: null,
@@ -4378,7 +4173,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           duration: (tree.flutterAnimatedContainer.hasDuration() ? types.evaluateRequiredDartDurationExpression(tree.flutterAnimatedContainer.duration) : missing('duration')),
           onEnd: null);
     case proto.WidgetExpression_Result.flutterAnimatedFractionallySizedBox:
-      return $c275.AnimatedFractionallySizedBox(
+      return $flutterSrcWidgetsImplicitAnimations.AnimatedFractionallySizedBox(
           key: (tree.flutterAnimatedFractionallySizedBox.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterAnimatedFractionallySizedBox.key) : null),
           child: (tree.flutterAnimatedFractionallySizedBox.hasChild() ? evaluateWidgetExpression(tree.flutterAnimatedFractionallySizedBox.child) : null),
           heightFactor: (tree.flutterAnimatedFractionallySizedBox.hasHeightFactor() ? tree.flutterAnimatedFractionallySizedBox.heightFactor : null),
@@ -4386,7 +4181,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           duration: (tree.flutterAnimatedFractionallySizedBox.hasDuration() ? types.evaluateRequiredDartDurationExpression(tree.flutterAnimatedFractionallySizedBox.duration) : missing('duration')),
           onEnd: null);
     case proto.WidgetExpression_Result.flutterAnimatedOpacity:
-      return $c276.AnimatedOpacity(
+      return $flutterSrcWidgetsImplicitAnimations.AnimatedOpacity(
           key: (tree.flutterAnimatedOpacity.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterAnimatedOpacity.key) : null),
           child: (tree.flutterAnimatedOpacity.hasChild() ? evaluateWidgetExpression(tree.flutterAnimatedOpacity.child) : null),
           opacity: (tree.flutterAnimatedOpacity.hasOpacity() ? tree.flutterAnimatedOpacity.opacity : missing('opacity')),
@@ -4394,7 +4189,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           onEnd: null,
           alwaysIncludeSemantics: (tree.flutterAnimatedOpacity.hasAlwaysIncludeSemantics() ? tree.flutterAnimatedOpacity.alwaysIncludeSemantics : false));
     case proto.WidgetExpression_Result.flutterAnimatedPhysicalModel:
-      return $c277.AnimatedPhysicalModel(
+      return $flutterSrcWidgetsImplicitAnimations.AnimatedPhysicalModel(
           key: (tree.flutterAnimatedPhysicalModel.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterAnimatedPhysicalModel.key) : null),
           child: (tree.flutterAnimatedPhysicalModel.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterAnimatedPhysicalModel.child) : missing('child')),
           shape: (tree.flutterAnimatedPhysicalModel.hasShape() ? enums.convertRequiredFlutterBoxShape(tree.flutterAnimatedPhysicalModel.shape) : missing('shape')),
@@ -4407,7 +4202,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           duration: (tree.flutterAnimatedPhysicalModel.hasDuration() ? types.evaluateRequiredDartDurationExpression(tree.flutterAnimatedPhysicalModel.duration) : missing('duration')),
           onEnd: null);
     case proto.WidgetExpression_Result.flutterAnimatedPositioned:
-      return $c278.AnimatedPositioned(
+      return $flutterSrcWidgetsImplicitAnimations.AnimatedPositioned(
           key: (tree.flutterAnimatedPositioned.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterAnimatedPositioned.key) : null),
           child: (tree.flutterAnimatedPositioned.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterAnimatedPositioned.child) : missing('child')),
           left: (tree.flutterAnimatedPositioned.hasLeft() ? tree.flutterAnimatedPositioned.left : null),
@@ -4419,7 +4214,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           duration: (tree.flutterAnimatedPositioned.hasDuration() ? types.evaluateRequiredDartDurationExpression(tree.flutterAnimatedPositioned.duration) : missing('duration')),
           onEnd: null);
     case proto.WidgetExpression_Result.flutterAnimatedPositionedDirectional:
-      return $c279.AnimatedPositionedDirectional(
+      return $flutterSrcWidgetsImplicitAnimations.AnimatedPositionedDirectional(
           key: (tree.flutterAnimatedPositionedDirectional.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterAnimatedPositionedDirectional.key) : null),
           child: (tree.flutterAnimatedPositionedDirectional.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterAnimatedPositionedDirectional.child) : missing('child')),
           start: (tree.flutterAnimatedPositionedDirectional.hasStart() ? tree.flutterAnimatedPositionedDirectional.start : null),
@@ -4431,7 +4226,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           duration: (tree.flutterAnimatedPositionedDirectional.hasDuration() ? types.evaluateRequiredDartDurationExpression(tree.flutterAnimatedPositionedDirectional.duration) : missing('duration')),
           onEnd: null);
     case proto.WidgetExpression_Result.flutterAnimatedRotation:
-      return $c280.AnimatedRotation(
+      return $flutterSrcWidgetsImplicitAnimations.AnimatedRotation(
           key: (tree.flutterAnimatedRotation.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterAnimatedRotation.key) : null),
           child: (tree.flutterAnimatedRotation.hasChild() ? evaluateWidgetExpression(tree.flutterAnimatedRotation.child) : null),
           turns: (tree.flutterAnimatedRotation.hasTurns() ? tree.flutterAnimatedRotation.turns : missing('turns')),
@@ -4439,7 +4234,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           duration: (tree.flutterAnimatedRotation.hasDuration() ? types.evaluateRequiredDartDurationExpression(tree.flutterAnimatedRotation.duration) : missing('duration')),
           onEnd: null);
     case proto.WidgetExpression_Result.flutterAnimatedScale:
-      return $c281.AnimatedScale(
+      return $flutterSrcWidgetsImplicitAnimations.AnimatedScale(
           key: (tree.flutterAnimatedScale.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterAnimatedScale.key) : null),
           child: (tree.flutterAnimatedScale.hasChild() ? evaluateWidgetExpression(tree.flutterAnimatedScale.child) : null),
           scale: (tree.flutterAnimatedScale.hasScale() ? tree.flutterAnimatedScale.scale : missing('scale')),
@@ -4447,7 +4242,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           duration: (tree.flutterAnimatedScale.hasDuration() ? types.evaluateRequiredDartDurationExpression(tree.flutterAnimatedScale.duration) : missing('duration')),
           onEnd: null);
     case proto.WidgetExpression_Result.flutterSliverAnimatedOpacity:
-      return $c282.SliverAnimatedOpacity(
+      return $flutterSrcWidgetsImplicitAnimations.SliverAnimatedOpacity(
           key: (tree.flutterSliverAnimatedOpacity.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverAnimatedOpacity.key) : null),
           sliver: (tree.flutterSliverAnimatedOpacity.hasSliver() ? evaluateWidgetExpression(tree.flutterSliverAnimatedOpacity.sliver) : null),
           opacity: (tree.flutterSliverAnimatedOpacity.hasOpacity() ? tree.flutterSliverAnimatedOpacity.opacity : missing('opacity')),
@@ -4455,7 +4250,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           onEnd: null,
           alwaysIncludeSemantics: (tree.flutterSliverAnimatedOpacity.hasAlwaysIncludeSemantics() ? tree.flutterSliverAnimatedOpacity.alwaysIncludeSemantics : false));
     case proto.WidgetExpression_Result.flutterInteractiveViewer:
-      return $c283.InteractiveViewer(
+      return $flutterSrcWidgetsInteractiveViewer.InteractiveViewer(
           key: (tree.flutterInteractiveViewer.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterInteractiveViewer.key) : null),
           clipBehavior: (tree.flutterInteractiveViewer.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterInteractiveViewer.clipBehavior) : $dartUi.Clip.hardEdge),
           panAxis: (tree.flutterInteractiveViewer.hasPanAxis() ? enums.convertRequiredFlutterPanAxis(tree.flutterInteractiveViewer.panAxis) : $flutterSrcWidgetsInteractiveViewer.PanAxis.free),
@@ -4474,7 +4269,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           trackpadScrollCausesScale: (tree.flutterInteractiveViewer.hasTrackpadScrollCausesScale() ? tree.flutterInteractiveViewer.trackpadScrollCausesScale : false),
           child: (tree.flutterInteractiveViewer.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterInteractiveViewer.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterListWheelScrollView:
-      return $c284.ListWheelScrollView(
+      return $flutterSrcWidgetsListWheelScrollView.ListWheelScrollView(
           key: (tree.flutterListWheelScrollView.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterListWheelScrollView.key) : null),
           controller: null,
           physics: null,
@@ -4493,11 +4288,11 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           scrollBehavior: null,
           children: tree.flutterListWheelScrollView.children.map((e) => evaluateRequiredWidgetExpression(e)).toList());
     case proto.WidgetExpression_Result.flutterLookupBoundary:
-      return $c285.LookupBoundary(
+      return $flutterSrcWidgetsLookupBoundary.LookupBoundary(
           key: (tree.flutterLookupBoundary.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterLookupBoundary.key) : null),
           child: (tree.flutterLookupBoundary.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterLookupBoundary.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterModalBarrier:
-      return $c286.ModalBarrier(
+      return $flutterSrcWidgetsModalBarrier.ModalBarrier(
           key: (tree.flutterModalBarrier.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterModalBarrier.key) : null),
           color: (tree.flutterModalBarrier.hasColor() ? types.evaluateDartColorExpression(tree.flutterModalBarrier.color) : null),
           dismissible: (tree.flutterModalBarrier.hasDismissible() ? tree.flutterModalBarrier.dismissible : true),
@@ -4507,7 +4302,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           clipDetailsNotifier: null,
           semanticsOnTapHint: (tree.flutterModalBarrier.hasSemanticsOnTapHint() ? tree.flutterModalBarrier.semanticsOnTapHint : null));
     case proto.WidgetExpression_Result.flutterNavigationToolbar:
-      return $c287.NavigationToolbar(
+      return $flutterSrcWidgetsNavigationToolbar.NavigationToolbar(
           key: (tree.flutterNavigationToolbar.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterNavigationToolbar.key) : null),
           leading: (tree.flutterNavigationToolbar.hasLeading() ? evaluateWidgetExpression(tree.flutterNavigationToolbar.leading) : null),
           middle: (tree.flutterNavigationToolbar.hasMiddle() ? evaluateWidgetExpression(tree.flutterNavigationToolbar.middle) : null),
@@ -4515,11 +4310,11 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           centerMiddle: (tree.flutterNavigationToolbar.hasCenterMiddle() ? tree.flutterNavigationToolbar.centerMiddle : true),
           middleSpacing: (tree.flutterNavigationToolbar.hasMiddleSpacing() ? tree.flutterNavigationToolbar.middleSpacing : $flutterSrcWidgetsNavigationToolbar.NavigationToolbar.kMiddleSpacing));
     case proto.WidgetExpression_Result.flutterHeroControllerScopeNamedNone:
-      return $c288.HeroControllerScope.none(
+      return $flutterSrcWidgetsNavigator.HeroControllerScope.none(
           key: (tree.flutterHeroControllerScopeNamedNone.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterHeroControllerScopeNamedNone.key) : null),
           child: (tree.flutterHeroControllerScopeNamedNone.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterHeroControllerScopeNamedNone.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterNavigator:
-      return $c289.Navigator(
+      return $flutterSrcWidgetsNavigator.Navigator(
           key: (tree.flutterNavigator.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterNavigator.key) : null),
           onPopPage: null,
           initialRoute: (tree.flutterNavigator.hasInitialRoute() ? tree.flutterNavigator.initialRoute : null),
@@ -4531,12 +4326,12 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           restorationScopeId: (tree.flutterNavigator.hasRestorationScopeId() ? tree.flutterNavigator.restorationScopeId : null),
           routeTraversalEdgeBehavior: (tree.flutterNavigator.hasRouteTraversalEdgeBehavior() ? enums.convertRequiredFlutterTraversalEdgeBehavior(tree.flutterNavigator.routeTraversalEdgeBehavior) : $flutterSrcWidgetsNavigator.kDefaultRouteTraversalEdgeBehavior));
     case proto.WidgetExpression_Result.flutterNotificationListener:
-      return $c290.NotificationListener(
+      return $flutterSrcWidgetsNotificationListener.NotificationListener(
           key: (tree.flutterNotificationListener.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterNotificationListener.key) : null),
           child: (tree.flutterNotificationListener.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterNotificationListener.child) : missing('child')),
           onNotification: null);
     case proto.WidgetExpression_Result.flutterOverflowBar:
-      return $c291.OverflowBar(
+      return $flutterSrcWidgetsOverflowBar.OverflowBar(
           key: (tree.flutterOverflowBar.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterOverflowBar.key) : null),
           spacing: (tree.flutterOverflowBar.hasSpacing() ? tree.flutterOverflowBar.spacing : 0.0),
           alignment: (tree.flutterOverflowBar.hasAlignment() ? enums.convertFlutterMainAxisAlignment(tree.flutterOverflowBar.alignment) : null),
@@ -4547,11 +4342,11 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           clipBehavior: (tree.flutterOverflowBar.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterOverflowBar.clipBehavior) : $dartUi.Clip.none),
           children: tree.flutterOverflowBar.children.map((e) => evaluateRequiredWidgetExpression(e)).toList());
     case proto.WidgetExpression_Result.flutterOverlay:
-      return $c292.Overlay(
+      return $flutterSrcWidgetsOverlay.Overlay(
           key: (tree.flutterOverlay.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterOverlay.key) : null),
           clipBehavior: (tree.flutterOverlay.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterOverlay.clipBehavior) : $dartUi.Clip.hardEdge));
     case proto.WidgetExpression_Result.flutterGlowingOverscrollIndicator:
-      return $c293.GlowingOverscrollIndicator(
+      return $flutterSrcWidgetsOverscrollIndicator.GlowingOverscrollIndicator(
           key: (tree.flutterGlowingOverscrollIndicator.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterGlowingOverscrollIndicator.key) : null),
           showLeading: (tree.flutterGlowingOverscrollIndicator.hasShowLeading() ? tree.flutterGlowingOverscrollIndicator.showLeading : true),
           showTrailing: (tree.flutterGlowingOverscrollIndicator.hasShowTrailing() ? tree.flutterGlowingOverscrollIndicator.showTrailing : true),
@@ -4559,13 +4354,13 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           color: (tree.flutterGlowingOverscrollIndicator.hasColor() ? types.evaluateRequiredDartColorExpression(tree.flutterGlowingOverscrollIndicator.color) : missing('color')),
           child: (tree.flutterGlowingOverscrollIndicator.hasChild() ? evaluateWidgetExpression(tree.flutterGlowingOverscrollIndicator.child) : null));
     case proto.WidgetExpression_Result.flutterStretchingOverscrollIndicator:
-      return $c294.StretchingOverscrollIndicator(
+      return $flutterSrcWidgetsOverscrollIndicator.StretchingOverscrollIndicator(
           key: (tree.flutterStretchingOverscrollIndicator.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterStretchingOverscrollIndicator.key) : null),
           axisDirection: (tree.flutterStretchingOverscrollIndicator.hasAxisDirection() ? enums.convertRequiredFlutterAxisDirection(tree.flutterStretchingOverscrollIndicator.axisDirection) : missing('axisDirection')),
           clipBehavior: (tree.flutterStretchingOverscrollIndicator.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterStretchingOverscrollIndicator.clipBehavior) : $dartUi.Clip.hardEdge),
           child: (tree.flutterStretchingOverscrollIndicator.hasChild() ? evaluateWidgetExpression(tree.flutterStretchingOverscrollIndicator.child) : null));
     case proto.WidgetExpression_Result.flutterPageView:
-      return $c295.PageView(
+      return $flutterSrcWidgetsPageView.PageView(
           key: (tree.flutterPageView.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterPageView.key) : null),
           scrollDirection: (tree.flutterPageView.hasScrollDirection() ? enums.convertRequiredFlutterAxis(tree.flutterPageView.scrollDirection) : $flutterSrcPaintingBasicTypes.Axis.horizontal),
           reverse: (tree.flutterPageView.hasReverse() ? tree.flutterPageView.reverse : false),
@@ -4581,20 +4376,20 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           scrollBehavior: null,
           padEnds: (tree.flutterPageView.hasPadEnds() ? tree.flutterPageView.padEnds : true));
     case proto.WidgetExpression_Result.flutterPerformanceOverlay:
-      return $c296.PerformanceOverlay(
+      return $flutterSrcWidgetsPerformanceOverlay.PerformanceOverlay(
           key: (tree.flutterPerformanceOverlay.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterPerformanceOverlay.key) : null),
           optionsMask: (tree.flutterPerformanceOverlay.hasOptionsMask() ? tree.flutterPerformanceOverlay.optionsMask : 0),
           rasterizerThreshold: (tree.flutterPerformanceOverlay.hasRasterizerThreshold() ? tree.flutterPerformanceOverlay.rasterizerThreshold : 0),
           checkerboardRasterCacheImages: (tree.flutterPerformanceOverlay.hasCheckerboardRasterCacheImages() ? tree.flutterPerformanceOverlay.checkerboardRasterCacheImages : false),
           checkerboardOffscreenLayers: (tree.flutterPerformanceOverlay.hasCheckerboardOffscreenLayers() ? tree.flutterPerformanceOverlay.checkerboardOffscreenLayers : false));
     case proto.WidgetExpression_Result.flutterPerformanceOverlayNamedAllEnabled:
-      return $c297.PerformanceOverlay.allEnabled(
+      return $flutterSrcWidgetsPerformanceOverlay.PerformanceOverlay.allEnabled(
           key: (tree.flutterPerformanceOverlayNamedAllEnabled.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterPerformanceOverlayNamedAllEnabled.key) : null),
           rasterizerThreshold: (tree.flutterPerformanceOverlayNamedAllEnabled.hasRasterizerThreshold() ? tree.flutterPerformanceOverlayNamedAllEnabled.rasterizerThreshold : 0),
           checkerboardRasterCacheImages: (tree.flutterPerformanceOverlayNamedAllEnabled.hasCheckerboardRasterCacheImages() ? tree.flutterPerformanceOverlayNamedAllEnabled.checkerboardRasterCacheImages : false),
           checkerboardOffscreenLayers: (tree.flutterPerformanceOverlayNamedAllEnabled.hasCheckerboardOffscreenLayers() ? tree.flutterPerformanceOverlayNamedAllEnabled.checkerboardOffscreenLayers : false));
     case proto.WidgetExpression_Result.flutterPlaceholder:
-      return $c298.Placeholder(
+      return $flutterSrcWidgetsPlaceholder.Placeholder(
           key: (tree.flutterPlaceholder.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterPlaceholder.key) : null),
           color: (tree.flutterPlaceholder.hasColor() ? types.evaluateRequiredDartColorExpression(tree.flutterPlaceholder.color) : missing('color')),
           strokeWidth: (tree.flutterPlaceholder.hasStrokeWidth() ? tree.flutterPlaceholder.strokeWidth : 2.0),
@@ -4602,7 +4397,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           fallbackHeight: (tree.flutterPlaceholder.hasFallbackHeight() ? tree.flutterPlaceholder.fallbackHeight : 400.0),
           child: (tree.flutterPlaceholder.hasChild() ? evaluateWidgetExpression(tree.flutterPlaceholder.child) : null));
     case proto.WidgetExpression_Result.flutterAndroidView:
-      return $c299.AndroidView(
+      return $flutterSrcWidgetsPlatformView.AndroidView(
           key: (tree.flutterAndroidView.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterAndroidView.key) : null),
           viewType: (tree.flutterAndroidView.hasViewType() ? tree.flutterAndroidView.viewType : missing('viewType')),
           onPlatformViewCreated: null,
@@ -4612,13 +4407,13 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           creationParamsCodec: null,
           clipBehavior: (tree.flutterAndroidView.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterAndroidView.clipBehavior) : $dartUi.Clip.hardEdge));
     case proto.WidgetExpression_Result.flutterHtmlElementView:
-      return $c300.HtmlElementView(
+      return $flutterSrcWidgetsPlatformView.HtmlElementView(
           key: (tree.flutterHtmlElementView.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterHtmlElementView.key) : null),
           viewType: (tree.flutterHtmlElementView.hasViewType() ? tree.flutterHtmlElementView.viewType : missing('viewType')),
           onPlatformViewCreated: null,
           creationParams: null);
     case proto.WidgetExpression_Result.flutterUiKitView:
-      return $c301.UiKitView(
+      return $flutterSrcWidgetsPlatformView.UiKitView(
           key: (tree.flutterUiKitView.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterUiKitView.key) : null),
           viewType: (tree.flutterUiKitView.hasViewType() ? tree.flutterUiKitView.viewType : missing('viewType')),
           onPlatformViewCreated: null,
@@ -4627,38 +4422,38 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           creationParamsCodec: null,
           gestureRecognizers: null);
     case proto.WidgetExpression_Result.flutterPrimaryScrollControllerNamedNone:
-      return $c302.PrimaryScrollController.none(
+      return $flutterSrcWidgetsPrimaryScrollController.PrimaryScrollController.none(
           key: (tree.flutterPrimaryScrollControllerNamedNone.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterPrimaryScrollControllerNamedNone.key) : null),
           child: (tree.flutterPrimaryScrollControllerNamedNone.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterPrimaryScrollControllerNamedNone.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterReorderableDelayedDragStartListener:
-      return $c303.ReorderableDelayedDragStartListener(
+      return $flutterSrcWidgetsReorderableList.ReorderableDelayedDragStartListener(
           key: (tree.flutterReorderableDelayedDragStartListener.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterReorderableDelayedDragStartListener.key) : null),
           child: (tree.flutterReorderableDelayedDragStartListener.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterReorderableDelayedDragStartListener.child) : missing('child')),
           index: (tree.flutterReorderableDelayedDragStartListener.hasIndex() ? tree.flutterReorderableDelayedDragStartListener.index : missing('index')),
           enabled: (tree.flutterReorderableDelayedDragStartListener.hasEnabled() ? tree.flutterReorderableDelayedDragStartListener.enabled : true));
     case proto.WidgetExpression_Result.flutterReorderableDragStartListener:
-      return $c304.ReorderableDragStartListener(
+      return $flutterSrcWidgetsReorderableList.ReorderableDragStartListener(
           key: (tree.flutterReorderableDragStartListener.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterReorderableDragStartListener.key) : null),
           child: (tree.flutterReorderableDragStartListener.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterReorderableDragStartListener.child) : missing('child')),
           index: (tree.flutterReorderableDragStartListener.hasIndex() ? tree.flutterReorderableDragStartListener.index : missing('index')),
           enabled: (tree.flutterReorderableDragStartListener.hasEnabled() ? tree.flutterReorderableDragStartListener.enabled : true));
     case proto.WidgetExpression_Result.flutterRestorationScope:
-      return $c305.RestorationScope(
+      return $flutterSrcWidgetsRestoration.RestorationScope(
           key: (tree.flutterRestorationScope.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterRestorationScope.key) : null),
           restorationId: (tree.flutterRestorationScope.hasRestorationId() ? tree.flutterRestorationScope.restorationId : null),
           child: (tree.flutterRestorationScope.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterRestorationScope.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterRootRestorationScope:
-      return $c306.RootRestorationScope(
+      return $flutterSrcWidgetsRestoration.RootRestorationScope(
           key: (tree.flutterRootRestorationScope.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterRootRestorationScope.key) : null),
           restorationId: (tree.flutterRootRestorationScope.hasRestorationId() ? tree.flutterRootRestorationScope.restorationId : null),
           child: (tree.flutterRootRestorationScope.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterRootRestorationScope.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterUnmanagedRestorationScope:
-      return $c307.UnmanagedRestorationScope(
+      return $flutterSrcWidgetsRestoration.UnmanagedRestorationScope(
           key: (tree.flutterUnmanagedRestorationScope.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterUnmanagedRestorationScope.key) : null),
           bucket: null,
           child: (tree.flutterUnmanagedRestorationScope.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterUnmanagedRestorationScope.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterSafeArea:
-      return $c308.SafeArea(
+      return $flutterSrcWidgetsSafeArea.SafeArea(
           key: (tree.flutterSafeArea.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSafeArea.key) : null),
           left: (tree.flutterSafeArea.hasLeft() ? tree.flutterSafeArea.left : true),
           top: (tree.flutterSafeArea.hasTop() ? tree.flutterSafeArea.top : true),
@@ -4667,7 +4462,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           maintainBottomViewPadding: (tree.flutterSafeArea.hasMaintainBottomViewPadding() ? tree.flutterSafeArea.maintainBottomViewPadding : false),
           child: (tree.flutterSafeArea.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterSafeArea.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterSliverSafeArea:
-      return $c309.SliverSafeArea(
+      return $flutterSrcWidgetsSafeArea.SliverSafeArea(
           key: (tree.flutterSliverSafeArea.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverSafeArea.key) : null),
           left: (tree.flutterSliverSafeArea.hasLeft() ? tree.flutterSliverSafeArea.left : true),
           top: (tree.flutterSliverSafeArea.hasTop() ? tree.flutterSliverSafeArea.top : true),
@@ -4675,11 +4470,11 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           bottom: (tree.flutterSliverSafeArea.hasBottom() ? tree.flutterSliverSafeArea.bottom : true),
           sliver: (tree.flutterSliverSafeArea.hasSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverSafeArea.sliver) : missing('sliver')));
     case proto.WidgetExpression_Result.flutterScrollNotificationObserver:
-      return $c310.ScrollNotificationObserver(
+      return $flutterSrcWidgetsScrollNotificationObserver.ScrollNotificationObserver(
           key: (tree.flutterScrollNotificationObserver.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterScrollNotificationObserver.key) : null),
           child: (tree.flutterScrollNotificationObserver.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterScrollNotificationObserver.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterCustomScrollView:
-      return $c311.CustomScrollView(
+      return $flutterSrcWidgetsScrollView.CustomScrollView(
           key: (tree.flutterCustomScrollView.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterCustomScrollView.key) : null),
           scrollDirection: (tree.flutterCustomScrollView.hasScrollDirection() ? enums.convertRequiredFlutterAxis(tree.flutterCustomScrollView.scrollDirection) : $flutterSrcPaintingBasicTypes.Axis.vertical),
           reverse: (tree.flutterCustomScrollView.hasReverse() ? tree.flutterCustomScrollView.reverse : false),
@@ -4698,7 +4493,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           restorationId: (tree.flutterCustomScrollView.hasRestorationId() ? tree.flutterCustomScrollView.restorationId : null),
           clipBehavior: (tree.flutterCustomScrollView.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterCustomScrollView.clipBehavior) : $dartUi.Clip.hardEdge));
     case proto.WidgetExpression_Result.flutterGridViewNamedCount:
-      return $c312.GridView.count(
+      return $flutterSrcWidgetsScrollView.GridView.count(
           key: (tree.flutterGridViewNamedCount.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterGridViewNamedCount.key) : null),
           scrollDirection: (tree.flutterGridViewNamedCount.hasScrollDirection() ? enums.convertRequiredFlutterAxis(tree.flutterGridViewNamedCount.scrollDirection) : $flutterSrcPaintingBasicTypes.Axis.vertical),
           reverse: (tree.flutterGridViewNamedCount.hasReverse() ? tree.flutterGridViewNamedCount.reverse : false),
@@ -4722,7 +4517,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           restorationId: (tree.flutterGridViewNamedCount.hasRestorationId() ? tree.flutterGridViewNamedCount.restorationId : null),
           clipBehavior: (tree.flutterGridViewNamedCount.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterGridViewNamedCount.clipBehavior) : $dartUi.Clip.hardEdge));
     case proto.WidgetExpression_Result.flutterGridViewNamedExtent:
-      return $c313.GridView.extent(
+      return $flutterSrcWidgetsScrollView.GridView.extent(
           key: (tree.flutterGridViewNamedExtent.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterGridViewNamedExtent.key) : null),
           scrollDirection: (tree.flutterGridViewNamedExtent.hasScrollDirection() ? enums.convertRequiredFlutterAxis(tree.flutterGridViewNamedExtent.scrollDirection) : $flutterSrcPaintingBasicTypes.Axis.vertical),
           reverse: (tree.flutterGridViewNamedExtent.hasReverse() ? tree.flutterGridViewNamedExtent.reverse : false),
@@ -4746,7 +4541,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           restorationId: (tree.flutterGridViewNamedExtent.hasRestorationId() ? tree.flutterGridViewNamedExtent.restorationId : null),
           clipBehavior: (tree.flutterGridViewNamedExtent.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterGridViewNamedExtent.clipBehavior) : $dartUi.Clip.hardEdge));
     case proto.WidgetExpression_Result.flutterListView:
-      return $c314.ListView(
+      return $flutterSrcWidgetsScrollView.ListView(
           key: (tree.flutterListView.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterListView.key) : null),
           scrollDirection: (tree.flutterListView.hasScrollDirection() ? enums.convertRequiredFlutterAxis(tree.flutterListView.scrollDirection) : $flutterSrcPaintingBasicTypes.Axis.vertical),
           reverse: (tree.flutterListView.hasReverse() ? tree.flutterListView.reverse : false),
@@ -4768,7 +4563,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           restorationId: (tree.flutterListView.hasRestorationId() ? tree.flutterListView.restorationId : null),
           clipBehavior: (tree.flutterListView.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterListView.clipBehavior) : $dartUi.Clip.hardEdge));
     case proto.WidgetExpression_Result.flutterRawScrollbar:
-      return $c315.RawScrollbar(
+      return $flutterSrcWidgetsScrollbar.RawScrollbar(
           key: (tree.flutterRawScrollbar.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterRawScrollbar.key) : null),
           child: (tree.flutterRawScrollbar.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterRawScrollbar.child) : missing('child')),
           controller: null,
@@ -4792,23 +4587,23 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           crossAxisMargin: (tree.flutterRawScrollbar.hasCrossAxisMargin() ? tree.flutterRawScrollbar.crossAxisMargin : 0.0),
           padding: null);
     case proto.WidgetExpression_Result.flutterSelectionContainerNamedDisabled:
-      return $c316.SelectionContainer.disabled(
+      return $flutterSrcWidgetsSelectionContainer.SelectionContainer.disabled(
           key: (tree.flutterSelectionContainerNamedDisabled.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSelectionContainerNamedDisabled.key) : null),
           child: (tree.flutterSelectionContainerNamedDisabled.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterSelectionContainerNamedDisabled.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterSemanticsDebugger:
-      return $c317.SemanticsDebugger(
+      return $flutterSrcWidgetsSemanticsDebugger.SemanticsDebugger(
           key: (tree.flutterSemanticsDebugger.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSemanticsDebugger.key) : null),
           child: (tree.flutterSemanticsDebugger.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterSemanticsDebugger.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterSharedAppData:
-      return $c318.SharedAppData(
+      return $flutterSrcWidgetsSharedAppData.SharedAppData(
           key: (tree.flutterSharedAppData.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSharedAppData.key) : null),
           child: (tree.flutterSharedAppData.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterSharedAppData.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterShortcutRegistrar:
-      return $c319.ShortcutRegistrar(
+      return $flutterSrcWidgetsShortcuts.ShortcutRegistrar(
           key: (tree.flutterShortcutRegistrar.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterShortcutRegistrar.key) : null),
           child: (tree.flutterShortcutRegistrar.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterShortcutRegistrar.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterSingleChildScrollView:
-      return $c320.SingleChildScrollView(
+      return $flutterSrcWidgetsSingleChildScrollView.SingleChildScrollView(
           key: (tree.flutterSingleChildScrollView.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSingleChildScrollView.key) : null),
           scrollDirection: (tree.flutterSingleChildScrollView.hasScrollDirection() ? enums.convertRequiredFlutterAxis(tree.flutterSingleChildScrollView.scrollDirection) : $flutterSrcPaintingBasicTypes.Axis.vertical),
           reverse: (tree.flutterSingleChildScrollView.hasReverse() ? tree.flutterSingleChildScrollView.reverse : false),
@@ -4822,30 +4617,30 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           restorationId: (tree.flutterSingleChildScrollView.hasRestorationId() ? tree.flutterSingleChildScrollView.restorationId : null),
           keyboardDismissBehavior: (tree.flutterSingleChildScrollView.hasKeyboardDismissBehavior() ? enums.convertRequiredFlutterScrollViewKeyboardDismissBehavior(tree.flutterSingleChildScrollView.keyboardDismissBehavior) : $flutterSrcWidgetsScrollView.ScrollViewKeyboardDismissBehavior.manual));
     case proto.WidgetExpression_Result.flutterSizeChangedLayoutNotifier:
-      return $c321.SizeChangedLayoutNotifier(
+      return $flutterSrcWidgetsSizeChangedLayoutNotifier.SizeChangedLayoutNotifier(
           key: (tree.flutterSizeChangedLayoutNotifier.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSizeChangedLayoutNotifier.key) : null),
           child: (tree.flutterSizeChangedLayoutNotifier.hasChild() ? evaluateWidgetExpression(tree.flutterSizeChangedLayoutNotifier.child) : null));
     case proto.WidgetExpression_Result.flutterKeepAlive:
-      return $c322.KeepAlive(
+      return $flutterSrcWidgetsSliver.KeepAlive(
           key: (tree.flutterKeepAlive.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterKeepAlive.key) : null),
           keepAlive: (tree.flutterKeepAlive.hasKeepAlive() ? tree.flutterKeepAlive.keepAlive : missing('keepAlive')),
           child: (tree.flutterKeepAlive.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterKeepAlive.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterSliverConstrainedCrossAxis:
-      return $c323.SliverConstrainedCrossAxis(
+      return $flutterSrcWidgetsSliver.SliverConstrainedCrossAxis(
           key: (tree.flutterSliverConstrainedCrossAxis.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverConstrainedCrossAxis.key) : null),
           maxExtent: (tree.flutterSliverConstrainedCrossAxis.hasMaxExtent() ? tree.flutterSliverConstrainedCrossAxis.maxExtent : missing('maxExtent')),
           sliver: (tree.flutterSliverConstrainedCrossAxis.hasSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverConstrainedCrossAxis.sliver) : missing('sliver')));
     case proto.WidgetExpression_Result.flutterSliverCrossAxisExpanded:
-      return $c324.SliverCrossAxisExpanded(
+      return $flutterSrcWidgetsSliver.SliverCrossAxisExpanded(
           key: (tree.flutterSliverCrossAxisExpanded.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverCrossAxisExpanded.key) : null),
           flex: (tree.flutterSliverCrossAxisExpanded.hasFlex() ? tree.flutterSliverCrossAxisExpanded.flex : missing('flex')),
           sliver: (tree.flutterSliverCrossAxisExpanded.hasSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverCrossAxisExpanded.sliver) : missing('sliver')));
     case proto.WidgetExpression_Result.flutterSliverCrossAxisGroup:
-      return $c325.SliverCrossAxisGroup(
+      return $flutterSrcWidgetsSliver.SliverCrossAxisGroup(
           key: (tree.flutterSliverCrossAxisGroup.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverCrossAxisGroup.key) : null),
           slivers: tree.flutterSliverCrossAxisGroup.slivers.map((e) => evaluateRequiredWidgetExpression(e)).toList());
     case proto.WidgetExpression_Result.flutterSliverFixedExtentListNamedList:
-      return $c326.SliverFixedExtentList.list(
+      return $flutterSrcWidgetsSliver.SliverFixedExtentList.list(
           key: (tree.flutterSliverFixedExtentListNamedList.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverFixedExtentListNamedList.key) : null),
           children: tree.flutterSliverFixedExtentListNamedList.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           itemExtent: (tree.flutterSliverFixedExtentListNamedList.hasItemExtent() ? tree.flutterSliverFixedExtentListNamedList.itemExtent : missing('itemExtent')),
@@ -4853,7 +4648,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           addRepaintBoundaries: (tree.flutterSliverFixedExtentListNamedList.hasAddRepaintBoundaries() ? tree.flutterSliverFixedExtentListNamedList.addRepaintBoundaries : true),
           addSemanticIndexes: (tree.flutterSliverFixedExtentListNamedList.hasAddSemanticIndexes() ? tree.flutterSliverFixedExtentListNamedList.addSemanticIndexes : true));
     case proto.WidgetExpression_Result.flutterSliverGridNamedCount:
-      return $c327.SliverGrid.count(
+      return $flutterSrcWidgetsSliver.SliverGrid.count(
           key: (tree.flutterSliverGridNamedCount.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverGridNamedCount.key) : null),
           crossAxisCount: (tree.flutterSliverGridNamedCount.hasCrossAxisCount() ? tree.flutterSliverGridNamedCount.crossAxisCount : missing('crossAxisCount')),
           mainAxisSpacing: (tree.flutterSliverGridNamedCount.hasMainAxisSpacing() ? tree.flutterSliverGridNamedCount.mainAxisSpacing : 0.0),
@@ -4861,7 +4656,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           childAspectRatio: (tree.flutterSliverGridNamedCount.hasChildAspectRatio() ? tree.flutterSliverGridNamedCount.childAspectRatio : 1.0),
           children: tree.flutterSliverGridNamedCount.children.map((e) => evaluateRequiredWidgetExpression(e)).toList());
     case proto.WidgetExpression_Result.flutterSliverGridNamedExtent:
-      return $c328.SliverGrid.extent(
+      return $flutterSrcWidgetsSliver.SliverGrid.extent(
           key: (tree.flutterSliverGridNamedExtent.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverGridNamedExtent.key) : null),
           maxCrossAxisExtent: (tree.flutterSliverGridNamedExtent.hasMaxCrossAxisExtent() ? tree.flutterSliverGridNamedExtent.maxCrossAxisExtent : missing('maxCrossAxisExtent')),
           mainAxisSpacing: (tree.flutterSliverGridNamedExtent.hasMainAxisSpacing() ? tree.flutterSliverGridNamedExtent.mainAxisSpacing : 0.0),
@@ -4869,40 +4664,40 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           childAspectRatio: (tree.flutterSliverGridNamedExtent.hasChildAspectRatio() ? tree.flutterSliverGridNamedExtent.childAspectRatio : 1.0),
           children: tree.flutterSliverGridNamedExtent.children.map((e) => evaluateRequiredWidgetExpression(e)).toList());
     case proto.WidgetExpression_Result.flutterSliverIgnorePointer:
-      return $c329.SliverIgnorePointer(
+      return $flutterSrcWidgetsSliver.SliverIgnorePointer(
           key: (tree.flutterSliverIgnorePointer.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverIgnorePointer.key) : null),
           ignoring: (tree.flutterSliverIgnorePointer.hasIgnoring() ? tree.flutterSliverIgnorePointer.ignoring : true),
           sliver: (tree.flutterSliverIgnorePointer.hasSliver() ? evaluateWidgetExpression(tree.flutterSliverIgnorePointer.sliver) : null));
     case proto.WidgetExpression_Result.flutterSliverListNamedList:
-      return $c330.SliverList.list(
+      return $flutterSrcWidgetsSliver.SliverList.list(
           key: (tree.flutterSliverListNamedList.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverListNamedList.key) : null),
           children: tree.flutterSliverListNamedList.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           addAutomaticKeepAlives: (tree.flutterSliverListNamedList.hasAddAutomaticKeepAlives() ? tree.flutterSliverListNamedList.addAutomaticKeepAlives : true),
           addRepaintBoundaries: (tree.flutterSliverListNamedList.hasAddRepaintBoundaries() ? tree.flutterSliverListNamedList.addRepaintBoundaries : true),
           addSemanticIndexes: (tree.flutterSliverListNamedList.hasAddSemanticIndexes() ? tree.flutterSliverListNamedList.addSemanticIndexes : true));
     case proto.WidgetExpression_Result.flutterSliverMainAxisGroup:
-      return $c331.SliverMainAxisGroup(
+      return $flutterSrcWidgetsSliver.SliverMainAxisGroup(
           key: (tree.flutterSliverMainAxisGroup.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverMainAxisGroup.key) : null),
           slivers: tree.flutterSliverMainAxisGroup.slivers.map((e) => evaluateRequiredWidgetExpression(e)).toList());
     case proto.WidgetExpression_Result.flutterSliverOffstage:
-      return $c332.SliverOffstage(
+      return $flutterSrcWidgetsSliver.SliverOffstage(
           key: (tree.flutterSliverOffstage.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverOffstage.key) : null),
           offstage: (tree.flutterSliverOffstage.hasOffstage() ? tree.flutterSliverOffstage.offstage : true),
           sliver: (tree.flutterSliverOffstage.hasSliver() ? evaluateWidgetExpression(tree.flutterSliverOffstage.sliver) : null));
     case proto.WidgetExpression_Result.flutterSliverOpacity:
-      return $c333.SliverOpacity(
+      return $flutterSrcWidgetsSliver.SliverOpacity(
           key: (tree.flutterSliverOpacity.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverOpacity.key) : null),
           opacity: (tree.flutterSliverOpacity.hasOpacity() ? tree.flutterSliverOpacity.opacity : missing('opacity')),
           alwaysIncludeSemantics: (tree.flutterSliverOpacity.hasAlwaysIncludeSemantics() ? tree.flutterSliverOpacity.alwaysIncludeSemantics : false),
           sliver: (tree.flutterSliverOpacity.hasSliver() ? evaluateWidgetExpression(tree.flutterSliverOpacity.sliver) : null));
     case proto.WidgetExpression_Result.flutterSliverFillRemaining:
-      return $c334.SliverFillRemaining(
+      return $flutterSrcWidgetsSliverFill.SliverFillRemaining(
           key: (tree.flutterSliverFillRemaining.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverFillRemaining.key) : null),
           child: (tree.flutterSliverFillRemaining.hasChild() ? evaluateWidgetExpression(tree.flutterSliverFillRemaining.child) : null),
           hasScrollBody: (tree.flutterSliverFillRemaining.hasHasScrollBody() ? tree.flutterSliverFillRemaining.hasScrollBody : true),
           fillOverscroll: (tree.flutterSliverFillRemaining.hasFillOverscroll() ? tree.flutterSliverFillRemaining.fillOverscroll : false));
     case proto.WidgetExpression_Result.flutterSliverPrototypeExtentListNamedList:
-      return $c335.SliverPrototypeExtentList.list(
+      return $flutterSrcWidgetsSliverPrototypeExtentList.SliverPrototypeExtentList.list(
           key: (tree.flutterSliverPrototypeExtentListNamedList.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverPrototypeExtentListNamedList.key) : null),
           children: tree.flutterSliverPrototypeExtentListNamedList.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           prototypeItem: (tree.flutterSliverPrototypeExtentListNamedList.hasPrototypeItem() ? evaluateRequiredWidgetExpression(tree.flutterSliverPrototypeExtentListNamedList.prototypeItem) : missing('prototypeItem')),
@@ -4910,11 +4705,11 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           addRepaintBoundaries: (tree.flutterSliverPrototypeExtentListNamedList.hasAddRepaintBoundaries() ? tree.flutterSliverPrototypeExtentListNamedList.addRepaintBoundaries : true),
           addSemanticIndexes: (tree.flutterSliverPrototypeExtentListNamedList.hasAddSemanticIndexes() ? tree.flutterSliverPrototypeExtentListNamedList.addSemanticIndexes : true));
     case proto.WidgetExpression_Result.flutterSpacer:
-      return $c336.Spacer(
+      return $flutterSrcWidgetsSpacer.Spacer(
           key: (tree.flutterSpacer.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSpacer.key) : null),
           flex: (tree.flutterSpacer.hasFlex() ? tree.flutterSpacer.flex : 1));
     case proto.WidgetExpression_Result.flutterTable:
-      return $c337.Table(
+      return $flutterSrcWidgetsTable.Table(
           key: (tree.flutterTable.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterTable.key) : null),
           columnWidths: null,
           textDirection: (tree.flutterTable.hasTextDirection() ? enums.convertDartTextDirection(tree.flutterTable.textDirection) : null),
@@ -4922,12 +4717,12 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           defaultVerticalAlignment: (tree.flutterTable.hasDefaultVerticalAlignment() ? enums.convertRequiredFlutterTableCellVerticalAlignment(tree.flutterTable.defaultVerticalAlignment) : $flutterSrcRenderingTable.TableCellVerticalAlignment.top),
           textBaseline: (tree.flutterTable.hasTextBaseline() ? enums.convertDartTextBaseline(tree.flutterTable.textBaseline) : null));
     case proto.WidgetExpression_Result.flutterTableCell:
-      return $c338.TableCell(
+      return $flutterSrcWidgetsTable.TableCell(
           key: (tree.flutterTableCell.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterTableCell.key) : null),
           verticalAlignment: (tree.flutterTableCell.hasVerticalAlignment() ? enums.convertFlutterTableCellVerticalAlignment(tree.flutterTableCell.verticalAlignment) : null),
           child: (tree.flutterTableCell.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterTableCell.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterTapRegion:
-      return $c339.TapRegion(
+      return $flutterSrcWidgetsTapRegion.TapRegion(
           key: (tree.flutterTapRegion.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterTapRegion.key) : null),
           child: (tree.flutterTapRegion.hasChild() ? evaluateWidgetExpression(tree.flutterTapRegion.child) : null),
           enabled: (tree.flutterTapRegion.hasEnabled() ? tree.flutterTapRegion.enabled : true),
@@ -4937,11 +4732,11 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           groupId: null,
           debugLabel: (tree.flutterTapRegion.hasDebugLabel() ? tree.flutterTapRegion.debugLabel : null));
     case proto.WidgetExpression_Result.flutterTapRegionSurface:
-      return $c340.TapRegionSurface(
+      return $flutterSrcWidgetsTapRegion.TapRegionSurface(
           key: (tree.flutterTapRegionSurface.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterTapRegionSurface.key) : null),
           child: (tree.flutterTapRegionSurface.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterTapRegionSurface.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterTextFieldTapRegion:
-      return $c341.TextFieldTapRegion(
+      return $flutterSrcWidgetsTapRegion.TextFieldTapRegion(
           key: (tree.flutterTextFieldTapRegion.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterTextFieldTapRegion.key) : null),
           child: (tree.flutterTextFieldTapRegion.hasChild() ? evaluateWidgetExpression(tree.flutterTextFieldTapRegion.child) : null),
           enabled: (tree.flutterTextFieldTapRegion.hasEnabled() ? tree.flutterTextFieldTapRegion.enabled : true),
@@ -4949,10 +4744,10 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           onTapInside: null,
           debugLabel: (tree.flutterTextFieldTapRegion.hasDebugLabel() ? tree.flutterTextFieldTapRegion.debugLabel : null));
     case proto.WidgetExpression_Result.flutterDefaultTextStyleNamedFallback:
-      return $c342.DefaultTextStyle.fallback(
+      return $flutterSrcWidgetsText.DefaultTextStyle.fallback(
           key: (tree.flutterDefaultTextStyleNamedFallback.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterDefaultTextStyleNamedFallback.key) : null));
     case proto.WidgetExpression_Result.flutterText:
-      return $c343.Text(
+      return $flutterSrcWidgetsText.Text(
           (tree.flutterText.hasData() ? tree.flutterText.data : missing('data')),
           key: (tree.flutterText.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterText.key) : null),
           style: null,
@@ -4969,7 +4764,7 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           textHeightBehavior: null,
           selectionColor: (tree.flutterText.hasSelectionColor() ? types.evaluateDartColorExpression(tree.flutterText.selectionColor) : null));
     case proto.WidgetExpression_Result.flutterTextSelectionGestureDetector:
-      return $c344.TextSelectionGestureDetector(
+      return $flutterSrcWidgetsTextSelection.TextSelectionGestureDetector(
           key: (tree.flutterTextSelectionGestureDetector.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterTextSelectionGestureDetector.key) : null),
           onTapDown: null,
           onForcePressStart: null,
@@ -4989,24 +4784,24 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           behavior: (tree.flutterTextSelectionGestureDetector.hasBehavior() ? enums.convertFlutterHitTestBehavior(tree.flutterTextSelectionGestureDetector.behavior) : null),
           child: (tree.flutterTextSelectionGestureDetector.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterTextSelectionGestureDetector.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterTexture:
-      return $c345.Texture(
+      return $flutterSrcWidgetsTexture.Texture(
           key: (tree.flutterTexture.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterTexture.key) : null),
           textureId: (tree.flutterTexture.hasTextureId() ? tree.flutterTexture.textureId : missing('textureId')),
           freeze: (tree.flutterTexture.hasFreeze_4() ? tree.flutterTexture.freeze_4 : false),
           filterQuality: (tree.flutterTexture.hasFilterQuality() ? enums.convertRequiredDartFilterQuality(tree.flutterTexture.filterQuality) : $dartUi.FilterQuality.low));
     case proto.WidgetExpression_Result.flutterTickerMode:
-      return $c346.TickerMode(
+      return $flutterSrcWidgetsTickerProvider.TickerMode(
           key: (tree.flutterTickerMode.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterTickerMode.key) : null),
           enabled: (tree.flutterTickerMode.hasEnabled() ? tree.flutterTickerMode.enabled : missing('enabled')),
           child: (tree.flutterTickerMode.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterTickerMode.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterTitle:
-      return $c347.Title(
+      return $flutterSrcWidgetsTitle.Title(
           key: (tree.flutterTitle.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterTitle.key) : null),
           title: (tree.flutterTitle.hasTitle() ? tree.flutterTitle.title : ''),
           color: (tree.flutterTitle.hasColor() ? types.evaluateRequiredDartColorExpression(tree.flutterTitle.color) : missing('color')),
           child: (tree.flutterTitle.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterTitle.child) : missing('child')));
     case proto.WidgetExpression_Result.flutterSliverVisibility:
-      return $c348.SliverVisibility(
+      return $flutterSrcWidgetsVisibility.SliverVisibility(
           key: (tree.flutterSliverVisibility.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverVisibility.key) : null),
           sliver: (tree.flutterSliverVisibility.hasSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibility.sliver) : missing('sliver')),
           replacementSliver: (tree.flutterSliverVisibility.hasReplacementSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibility.replacementSliver) : missing('replacementSliver')),
@@ -5017,13 +4812,13 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           maintainSemantics: (tree.flutterSliverVisibility.hasMaintainSemantics() ? tree.flutterSliverVisibility.maintainSemantics : false),
           maintainInteractivity: (tree.flutterSliverVisibility.hasMaintainInteractivity() ? tree.flutterSliverVisibility.maintainInteractivity : false));
     case proto.WidgetExpression_Result.flutterSliverVisibilityNamedMaintain:
-      return $c349.SliverVisibility.maintain(
+      return $flutterSrcWidgetsVisibility.SliverVisibility.maintain(
           key: (tree.flutterSliverVisibilityNamedMaintain.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterSliverVisibilityNamedMaintain.key) : null),
           sliver: (tree.flutterSliverVisibilityNamedMaintain.hasSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibilityNamedMaintain.sliver) : missing('sliver')),
           replacementSliver: (tree.flutterSliverVisibilityNamedMaintain.hasReplacementSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibilityNamedMaintain.replacementSliver) : missing('replacementSliver')),
           visible: (tree.flutterSliverVisibilityNamedMaintain.hasVisible() ? tree.flutterSliverVisibilityNamedMaintain.visible : true));
     case proto.WidgetExpression_Result.flutterVisibility:
-      return $c350.Visibility(
+      return $flutterSrcWidgetsVisibility.Visibility(
           key: (tree.flutterVisibility.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterVisibility.key) : null),
           child: (tree.flutterVisibility.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterVisibility.child) : missing('child')),
           replacement: (tree.flutterVisibility.hasReplacement() ? evaluateRequiredWidgetExpression(tree.flutterVisibility.replacement) : missing('replacement')),
@@ -5034,25 +4829,25 @@ widgets.Widget? evaluateWidgetExpression(proto.WidgetExpression? tree) {
           maintainSemantics: (tree.flutterVisibility.hasMaintainSemantics() ? tree.flutterVisibility.maintainSemantics : false),
           maintainInteractivity: (tree.flutterVisibility.hasMaintainInteractivity() ? tree.flutterVisibility.maintainInteractivity : false));
     case proto.WidgetExpression_Result.flutterVisibilityNamedMaintain:
-      return $c351.Visibility.maintain(
+      return $flutterSrcWidgetsVisibility.Visibility.maintain(
           key: (tree.flutterVisibilityNamedMaintain.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterVisibilityNamedMaintain.key) : null),
           child: (tree.flutterVisibilityNamedMaintain.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterVisibilityNamedMaintain.child) : missing('child')),
           visible: (tree.flutterVisibilityNamedMaintain.hasVisible() ? tree.flutterVisibilityNamedMaintain.visible : true));
     case proto.WidgetExpression_Result.flutterWidgetInspector:
-      return $c352.WidgetInspector(
+      return $flutterSrcWidgetsWidgetInspector.WidgetInspector(
           key: (tree.flutterWidgetInspector.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterWidgetInspector.key) : null),
           child: (tree.flutterWidgetInspector.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterWidgetInspector.child) : missing('child')),
           selectButtonBuilder: null);
     case proto.WidgetExpression_Result.flutterWillPopScope:
-      return $c353.WillPopScope(
+      return $flutterSrcWidgetsWillPopScope.WillPopScope(
           key: (tree.flutterWillPopScope.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterWillPopScope.key) : null),
           child: (tree.flutterWillPopScope.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterWillPopScope.child) : missing('child')),
           onWillPop: null);
     case proto.WidgetExpression_Result.flutterProjectMyApp:
-      return $c354.MyApp(
+      return $flutterProjectMain.MyApp(
           key: (tree.flutterProjectMyApp.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterProjectMyApp.key) : null));
     case proto.WidgetExpression_Result.flutterProjectMyHomePage:
-      return $c355.MyHomePage(
+      return $flutterProjectMain.MyHomePage(
           key: (tree.flutterProjectMyHomePage.hasKey() ? types.evaluateFlutterKeyExpression(tree.flutterProjectMyHomePage.key) : null),
           title: (tree.flutterProjectMyHomePage.hasTitle() ? tree.flutterProjectMyHomePage.title : missing('title')));
     default:
