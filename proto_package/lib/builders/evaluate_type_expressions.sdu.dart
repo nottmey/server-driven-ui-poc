@@ -9,6 +9,7 @@ import 'dart:core' as $dartCore;
 import 'dart:ui' as $dartUi;
 import 'package:flutter/src/cupertino/colors.dart' as $flutterSrcCupertinoColors;
 import 'package:flutter/src/foundation/key.dart' as $flutterSrcFoundationKey;
+import 'package:flutter/src/painting/edge_insets.dart' as $flutterSrcPaintingEdgeInsets;
 import 'package:flutter/src/widgets/framework.dart' as $flutterSrcWidgetsFramework;
 
 T missing<T>(core.String field) {
@@ -96,6 +97,64 @@ $dartCore.Duration? evaluateDartDurationExpression(types.DartDurationExpression?
           seconds: (tree.dartDuration.hasSeconds() ? tree.dartDuration.seconds : 0),
           milliseconds: (tree.dartDuration.hasMilliseconds() ? tree.dartDuration.milliseconds : 0),
           microseconds: (tree.dartDuration.hasMicroseconds() ? tree.dartDuration.microseconds : 0));
+    default:
+      return null;
+  }
+}
+
+$flutterSrcPaintingEdgeInsets.EdgeInsetsGeometry evaluateRequiredFlutterEdgeInsetsGeometryExpression(types.FlutterEdgeInsetsGeometryExpression tree) {
+  final result = evaluateFlutterEdgeInsetsGeometryExpression(tree);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required sub-tree');
+  }
+}
+
+$flutterSrcPaintingEdgeInsets.EdgeInsetsGeometry? evaluateFlutterEdgeInsetsGeometryExpression(types.FlutterEdgeInsetsGeometryExpression? tree) {
+  if(tree == null) {
+    return null;
+  }
+
+  switch (tree.whichResult()) {
+    case types.FlutterEdgeInsetsGeometryExpression_Result.flutterEdgeInsetsDirectionalNamedAll:
+      return $flutterSrcPaintingEdgeInsets.EdgeInsetsDirectional.all(
+          (tree.flutterEdgeInsetsDirectionalNamedAll.hasValue() ? tree.flutterEdgeInsetsDirectionalNamedAll.value : missing('value')));
+    case types.FlutterEdgeInsetsGeometryExpression_Result.flutterEdgeInsetsDirectionalNamedFromSTEB:
+      return $flutterSrcPaintingEdgeInsets.EdgeInsetsDirectional.fromSTEB(
+          (tree.flutterEdgeInsetsDirectionalNamedFromSTEB.hasStart() ? tree.flutterEdgeInsetsDirectionalNamedFromSTEB.start : missing('start')),
+          (tree.flutterEdgeInsetsDirectionalNamedFromSTEB.hasTop() ? tree.flutterEdgeInsetsDirectionalNamedFromSTEB.top : missing('top')),
+          (tree.flutterEdgeInsetsDirectionalNamedFromSTEB.hasEnd() ? tree.flutterEdgeInsetsDirectionalNamedFromSTEB.end : missing('end')),
+          (tree.flutterEdgeInsetsDirectionalNamedFromSTEB.hasBottom() ? tree.flutterEdgeInsetsDirectionalNamedFromSTEB.bottom : missing('bottom')));
+    case types.FlutterEdgeInsetsGeometryExpression_Result.flutterEdgeInsetsDirectionalNamedOnly:
+      return $flutterSrcPaintingEdgeInsets.EdgeInsetsDirectional.only(
+          start: (tree.flutterEdgeInsetsDirectionalNamedOnly.hasStart() ? tree.flutterEdgeInsetsDirectionalNamedOnly.start : 0.0),
+          top: (tree.flutterEdgeInsetsDirectionalNamedOnly.hasTop() ? tree.flutterEdgeInsetsDirectionalNamedOnly.top : 0.0),
+          end: (tree.flutterEdgeInsetsDirectionalNamedOnly.hasEnd() ? tree.flutterEdgeInsetsDirectionalNamedOnly.end : 0.0),
+          bottom: (tree.flutterEdgeInsetsDirectionalNamedOnly.hasBottom() ? tree.flutterEdgeInsetsDirectionalNamedOnly.bottom : 0.0));
+    case types.FlutterEdgeInsetsGeometryExpression_Result.flutterEdgeInsetsDirectionalNamedSymmetric:
+      return $flutterSrcPaintingEdgeInsets.EdgeInsetsDirectional.symmetric(
+          horizontal: (tree.flutterEdgeInsetsDirectionalNamedSymmetric.hasHorizontal() ? tree.flutterEdgeInsetsDirectionalNamedSymmetric.horizontal : 0.0),
+          vertical: (tree.flutterEdgeInsetsDirectionalNamedSymmetric.hasVertical() ? tree.flutterEdgeInsetsDirectionalNamedSymmetric.vertical : 0.0));
+    case types.FlutterEdgeInsetsGeometryExpression_Result.flutterEdgeInsetsNamedAll:
+      return $flutterSrcPaintingEdgeInsets.EdgeInsets.all(
+          (tree.flutterEdgeInsetsNamedAll.hasValue() ? tree.flutterEdgeInsetsNamedAll.value : missing('value')));
+    case types.FlutterEdgeInsetsGeometryExpression_Result.flutterEdgeInsetsNamedFromLTRB:
+      return $flutterSrcPaintingEdgeInsets.EdgeInsets.fromLTRB(
+          (tree.flutterEdgeInsetsNamedFromLTRB.hasLeft() ? tree.flutterEdgeInsetsNamedFromLTRB.left : missing('left')),
+          (tree.flutterEdgeInsetsNamedFromLTRB.hasTop() ? tree.flutterEdgeInsetsNamedFromLTRB.top : missing('top')),
+          (tree.flutterEdgeInsetsNamedFromLTRB.hasRight() ? tree.flutterEdgeInsetsNamedFromLTRB.right : missing('right')),
+          (tree.flutterEdgeInsetsNamedFromLTRB.hasBottom() ? tree.flutterEdgeInsetsNamedFromLTRB.bottom : missing('bottom')));
+    case types.FlutterEdgeInsetsGeometryExpression_Result.flutterEdgeInsetsNamedOnly:
+      return $flutterSrcPaintingEdgeInsets.EdgeInsets.only(
+          left: (tree.flutterEdgeInsetsNamedOnly.hasLeft() ? tree.flutterEdgeInsetsNamedOnly.left : 0.0),
+          top: (tree.flutterEdgeInsetsNamedOnly.hasTop() ? tree.flutterEdgeInsetsNamedOnly.top : 0.0),
+          right: (tree.flutterEdgeInsetsNamedOnly.hasRight() ? tree.flutterEdgeInsetsNamedOnly.right : 0.0),
+          bottom: (tree.flutterEdgeInsetsNamedOnly.hasBottom() ? tree.flutterEdgeInsetsNamedOnly.bottom : 0.0));
+    case types.FlutterEdgeInsetsGeometryExpression_Result.flutterEdgeInsetsNamedSymmetric:
+      return $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(
+          vertical: (tree.flutterEdgeInsetsNamedSymmetric.hasVertical() ? tree.flutterEdgeInsetsNamedSymmetric.vertical : 0.0),
+          horizontal: (tree.flutterEdgeInsetsNamedSymmetric.hasHorizontal() ? tree.flutterEdgeInsetsNamedSymmetric.horizontal : 0.0));
     default:
       return null;
   }

@@ -146,6 +146,127 @@ final $typed_data.Uint8List dartDurationDescriptor = $convert.base64Decode(
     'DG1pbGxpc2Vjb25kcxgGIAEoBVIMbWlsbGlzZWNvbmRzEiIKDG1pY3Jvc2Vjb25kcxgHIAEoBV'
     'IMbWljcm9zZWNvbmRz');
 
+@$core.Deprecated('Use flutterEdgeInsetsDirectionalNamedAllDescriptor instead')
+const FlutterEdgeInsetsDirectionalNamedAll$json = {
+  '1': 'FlutterEdgeInsetsDirectionalNamedAll',
+  '2': [
+    {'1': 'value', '3': 2, '4': 1, '5': 1, '10': 'value'},
+  ],
+};
+
+/// Descriptor for `FlutterEdgeInsetsDirectionalNamedAll`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterEdgeInsetsDirectionalNamedAllDescriptor = $convert.base64Decode(
+    'CiRGbHV0dGVyRWRnZUluc2V0c0RpcmVjdGlvbmFsTmFtZWRBbGwSFAoFdmFsdWUYAiABKAFSBX'
+    'ZhbHVl');
+
+@$core.Deprecated('Use flutterEdgeInsetsDirectionalNamedFromSTEBDescriptor instead')
+const FlutterEdgeInsetsDirectionalNamedFromSTEB$json = {
+  '1': 'FlutterEdgeInsetsDirectionalNamedFromSTEB',
+  '2': [
+    {'1': 'start', '3': 2, '4': 1, '5': 1, '10': 'start'},
+    {'1': 'top', '3': 3, '4': 1, '5': 1, '10': 'top'},
+    {'1': 'end', '3': 4, '4': 1, '5': 1, '10': 'end'},
+    {'1': 'bottom', '3': 5, '4': 1, '5': 1, '10': 'bottom'},
+  ],
+};
+
+/// Descriptor for `FlutterEdgeInsetsDirectionalNamedFromSTEB`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterEdgeInsetsDirectionalNamedFromSTEBDescriptor = $convert.base64Decode(
+    'CilGbHV0dGVyRWRnZUluc2V0c0RpcmVjdGlvbmFsTmFtZWRGcm9tU1RFQhIUCgVzdGFydBgCIA'
+    'EoAVIFc3RhcnQSEAoDdG9wGAMgASgBUgN0b3ASEAoDZW5kGAQgASgBUgNlbmQSFgoGYm90dG9t'
+    'GAUgASgBUgZib3R0b20=');
+
+@$core.Deprecated('Use flutterEdgeInsetsDirectionalNamedOnlyDescriptor instead')
+const FlutterEdgeInsetsDirectionalNamedOnly$json = {
+  '1': 'FlutterEdgeInsetsDirectionalNamedOnly',
+  '2': [
+    {'1': 'start', '3': 2, '4': 1, '5': 1, '10': 'start'},
+    {'1': 'top', '3': 3, '4': 1, '5': 1, '10': 'top'},
+    {'1': 'end', '3': 4, '4': 1, '5': 1, '10': 'end'},
+    {'1': 'bottom', '3': 5, '4': 1, '5': 1, '10': 'bottom'},
+  ],
+};
+
+/// Descriptor for `FlutterEdgeInsetsDirectionalNamedOnly`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterEdgeInsetsDirectionalNamedOnlyDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyRWRnZUluc2V0c0RpcmVjdGlvbmFsTmFtZWRPbmx5EhQKBXN0YXJ0GAIgASgBUg'
+    'VzdGFydBIQCgN0b3AYAyABKAFSA3RvcBIQCgNlbmQYBCABKAFSA2VuZBIWCgZib3R0b20YBSAB'
+    'KAFSBmJvdHRvbQ==');
+
+@$core.Deprecated('Use flutterEdgeInsetsDirectionalNamedSymmetricDescriptor instead')
+const FlutterEdgeInsetsDirectionalNamedSymmetric$json = {
+  '1': 'FlutterEdgeInsetsDirectionalNamedSymmetric',
+  '2': [
+    {'1': 'horizontal', '3': 2, '4': 1, '5': 1, '10': 'horizontal'},
+    {'1': 'vertical', '3': 3, '4': 1, '5': 1, '10': 'vertical'},
+  ],
+};
+
+/// Descriptor for `FlutterEdgeInsetsDirectionalNamedSymmetric`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterEdgeInsetsDirectionalNamedSymmetricDescriptor = $convert.base64Decode(
+    'CipGbHV0dGVyRWRnZUluc2V0c0RpcmVjdGlvbmFsTmFtZWRTeW1tZXRyaWMSHgoKaG9yaXpvbn'
+    'RhbBgCIAEoAVIKaG9yaXpvbnRhbBIaCgh2ZXJ0aWNhbBgDIAEoAVIIdmVydGljYWw=');
+
+@$core.Deprecated('Use flutterEdgeInsetsNamedAllDescriptor instead')
+const FlutterEdgeInsetsNamedAll$json = {
+  '1': 'FlutterEdgeInsetsNamedAll',
+  '2': [
+    {'1': 'value', '3': 2, '4': 1, '5': 1, '10': 'value'},
+  ],
+};
+
+/// Descriptor for `FlutterEdgeInsetsNamedAll`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterEdgeInsetsNamedAllDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyRWRnZUluc2V0c05hbWVkQWxsEhQKBXZhbHVlGAIgASgBUgV2YWx1ZQ==');
+
+@$core.Deprecated('Use flutterEdgeInsetsNamedFromLTRBDescriptor instead')
+const FlutterEdgeInsetsNamedFromLTRB$json = {
+  '1': 'FlutterEdgeInsetsNamedFromLTRB',
+  '2': [
+    {'1': 'left', '3': 2, '4': 1, '5': 1, '10': 'left'},
+    {'1': 'top', '3': 3, '4': 1, '5': 1, '10': 'top'},
+    {'1': 'right', '3': 4, '4': 1, '5': 1, '10': 'right'},
+    {'1': 'bottom', '3': 5, '4': 1, '5': 1, '10': 'bottom'},
+  ],
+};
+
+/// Descriptor for `FlutterEdgeInsetsNamedFromLTRB`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterEdgeInsetsNamedFromLTRBDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyRWRnZUluc2V0c05hbWVkRnJvbUxUUkISEgoEbGVmdBgCIAEoAVIEbGVmdBIQCg'
+    'N0b3AYAyABKAFSA3RvcBIUCgVyaWdodBgEIAEoAVIFcmlnaHQSFgoGYm90dG9tGAUgASgBUgZi'
+    'b3R0b20=');
+
+@$core.Deprecated('Use flutterEdgeInsetsNamedOnlyDescriptor instead')
+const FlutterEdgeInsetsNamedOnly$json = {
+  '1': 'FlutterEdgeInsetsNamedOnly',
+  '2': [
+    {'1': 'left', '3': 2, '4': 1, '5': 1, '10': 'left'},
+    {'1': 'top', '3': 3, '4': 1, '5': 1, '10': 'top'},
+    {'1': 'right', '3': 4, '4': 1, '5': 1, '10': 'right'},
+    {'1': 'bottom', '3': 5, '4': 1, '5': 1, '10': 'bottom'},
+  ],
+};
+
+/// Descriptor for `FlutterEdgeInsetsNamedOnly`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterEdgeInsetsNamedOnlyDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyRWRnZUluc2V0c05hbWVkT25seRISCgRsZWZ0GAIgASgBUgRsZWZ0EhAKA3RvcB'
+    'gDIAEoAVIDdG9wEhQKBXJpZ2h0GAQgASgBUgVyaWdodBIWCgZib3R0b20YBSABKAFSBmJvdHRv'
+    'bQ==');
+
+@$core.Deprecated('Use flutterEdgeInsetsNamedSymmetricDescriptor instead')
+const FlutterEdgeInsetsNamedSymmetric$json = {
+  '1': 'FlutterEdgeInsetsNamedSymmetric',
+  '2': [
+    {'1': 'vertical', '3': 2, '4': 1, '5': 1, '10': 'vertical'},
+    {'1': 'horizontal', '3': 3, '4': 1, '5': 1, '10': 'horizontal'},
+  ],
+};
+
+/// Descriptor for `FlutterEdgeInsetsNamedSymmetric`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterEdgeInsetsNamedSymmetricDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyRWRnZUluc2V0c05hbWVkU3ltbWV0cmljEhoKCHZlcnRpY2FsGAIgASgBUgh2ZX'
+    'J0aWNhbBIeCgpob3Jpem9udGFsGAMgASgBUgpob3Jpem9udGFs');
+
 @$core.Deprecated('Use flutterGlobalKeyDescriptor instead')
 const FlutterGlobalKey$json = {
   '1': 'FlutterGlobalKey',
@@ -247,6 +368,46 @@ const DartDurationExpression$json = {
 final $typed_data.Uint8List dartDurationExpressionDescriptor = $convert.base64Decode(
     'ChZEYXJ0RHVyYXRpb25FeHByZXNzaW9uEjQKDWRhcnRfZHVyYXRpb24YAiABKAsyDS5EYXJ0RH'
     'VyYXRpb25IAFIMZGFydER1cmF0aW9uQggKBnJlc3VsdA==');
+
+@$core.Deprecated('Use flutterEdgeInsetsGeometryExpressionDescriptor instead')
+const FlutterEdgeInsetsGeometryExpression$json = {
+  '1': 'FlutterEdgeInsetsGeometryExpression',
+  '2': [
+    {'1': 'flutter_edge_insets_directional_named_all', '3': 2, '4': 1, '5': 11, '6': '.FlutterEdgeInsetsDirectionalNamedAll', '9': 0, '10': 'flutterEdgeInsetsDirectionalNamedAll'},
+    {'1': 'flutter_edge_insets_directional_named_from_s_t_e_b', '3': 3, '4': 1, '5': 11, '6': '.FlutterEdgeInsetsDirectionalNamedFromSTEB', '9': 0, '10': 'flutterEdgeInsetsDirectionalNamedFromSTEB'},
+    {'1': 'flutter_edge_insets_directional_named_only', '3': 4, '4': 1, '5': 11, '6': '.FlutterEdgeInsetsDirectionalNamedOnly', '9': 0, '10': 'flutterEdgeInsetsDirectionalNamedOnly'},
+    {'1': 'flutter_edge_insets_directional_named_symmetric', '3': 5, '4': 1, '5': 11, '6': '.FlutterEdgeInsetsDirectionalNamedSymmetric', '9': 0, '10': 'flutterEdgeInsetsDirectionalNamedSymmetric'},
+    {'1': 'flutter_edge_insets_named_all', '3': 6, '4': 1, '5': 11, '6': '.FlutterEdgeInsetsNamedAll', '9': 0, '10': 'flutterEdgeInsetsNamedAll'},
+    {'1': 'flutter_edge_insets_named_from_l_t_r_b', '3': 7, '4': 1, '5': 11, '6': '.FlutterEdgeInsetsNamedFromLTRB', '9': 0, '10': 'flutterEdgeInsetsNamedFromLTRB'},
+    {'1': 'flutter_edge_insets_named_only', '3': 8, '4': 1, '5': 11, '6': '.FlutterEdgeInsetsNamedOnly', '9': 0, '10': 'flutterEdgeInsetsNamedOnly'},
+    {'1': 'flutter_edge_insets_named_symmetric', '3': 9, '4': 1, '5': 11, '6': '.FlutterEdgeInsetsNamedSymmetric', '9': 0, '10': 'flutterEdgeInsetsNamedSymmetric'},
+  ],
+  '8': [
+    {'1': 'result'},
+  ],
+};
+
+/// Descriptor for `FlutterEdgeInsetsGeometryExpression`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterEdgeInsetsGeometryExpressionDescriptor = $convert.base64Decode(
+    'CiNGbHV0dGVyRWRnZUluc2V0c0dlb21ldHJ5RXhwcmVzc2lvbhKAAQopZmx1dHRlcl9lZGdlX2'
+    'luc2V0c19kaXJlY3Rpb25hbF9uYW1lZF9hbGwYAiABKAsyJS5GbHV0dGVyRWRnZUluc2V0c0Rp'
+    'cmVjdGlvbmFsTmFtZWRBbGxIAFIkZmx1dHRlckVkZ2VJbnNldHNEaXJlY3Rpb25hbE5hbWVkQW'
+    'xsEpMBCjJmbHV0dGVyX2VkZ2VfaW5zZXRzX2RpcmVjdGlvbmFsX25hbWVkX2Zyb21fc190X2Vf'
+    'YhgDIAEoCzIqLkZsdXR0ZXJFZGdlSW5zZXRzRGlyZWN0aW9uYWxOYW1lZEZyb21TVEVCSABSKW'
+    'ZsdXR0ZXJFZGdlSW5zZXRzRGlyZWN0aW9uYWxOYW1lZEZyb21TVEVCEoMBCipmbHV0dGVyX2Vk'
+    'Z2VfaW5zZXRzX2RpcmVjdGlvbmFsX25hbWVkX29ubHkYBCABKAsyJi5GbHV0dGVyRWRnZUluc2'
+    'V0c0RpcmVjdGlvbmFsTmFtZWRPbmx5SABSJWZsdXR0ZXJFZGdlSW5zZXRzRGlyZWN0aW9uYWxO'
+    'YW1lZE9ubHkSkgEKL2ZsdXR0ZXJfZWRnZV9pbnNldHNfZGlyZWN0aW9uYWxfbmFtZWRfc3ltbW'
+    'V0cmljGAUgASgLMisuRmx1dHRlckVkZ2VJbnNldHNEaXJlY3Rpb25hbE5hbWVkU3ltbWV0cmlj'
+    'SABSKmZsdXR0ZXJFZGdlSW5zZXRzRGlyZWN0aW9uYWxOYW1lZFN5bW1ldHJpYxJeCh1mbHV0dG'
+    'VyX2VkZ2VfaW5zZXRzX25hbWVkX2FsbBgGIAEoCzIaLkZsdXR0ZXJFZGdlSW5zZXRzTmFtZWRB'
+    'bGxIAFIZZmx1dHRlckVkZ2VJbnNldHNOYW1lZEFsbBJxCiZmbHV0dGVyX2VkZ2VfaW5zZXRzX2'
+    '5hbWVkX2Zyb21fbF90X3JfYhgHIAEoCzIfLkZsdXR0ZXJFZGdlSW5zZXRzTmFtZWRGcm9tTFRS'
+    'QkgAUh5mbHV0dGVyRWRnZUluc2V0c05hbWVkRnJvbUxUUkISYQoeZmx1dHRlcl9lZGdlX2luc2'
+    'V0c19uYW1lZF9vbmx5GAggASgLMhsuRmx1dHRlckVkZ2VJbnNldHNOYW1lZE9ubHlIAFIaZmx1'
+    'dHRlckVkZ2VJbnNldHNOYW1lZE9ubHkScAojZmx1dHRlcl9lZGdlX2luc2V0c19uYW1lZF9zeW'
+    '1tZXRyaWMYCSABKAsyIC5GbHV0dGVyRWRnZUluc2V0c05hbWVkU3ltbWV0cmljSABSH2ZsdXR0'
+    'ZXJFZGdlSW5zZXRzTmFtZWRTeW1tZXRyaWNCCAoGcmVzdWx0');
 
 @$core.Deprecated('Use flutterKeyExpressionDescriptor instead')
 const FlutterKeyExpression$json = {

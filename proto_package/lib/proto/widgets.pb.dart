@@ -579,6 +579,7 @@ class CupertinoButton extends $pb.GeneratedMessage {
   factory CupertinoButton({
     $1.FlutterKeyExpression? key,
     WidgetExpression? child,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $1.DartColorExpression? color,
     $1.DartColorExpression? disabledColor,
     $core.double? minSize,
@@ -590,6 +591,9 @@ class CupertinoButton extends $pb.GeneratedMessage {
     }
     if (child != null) {
       $result.child = child;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (color != null) {
       $result.color = color;
@@ -612,6 +616,7 @@ class CupertinoButton extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CupertinoButton', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(4, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(6, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'minSize', $pb.PbFieldType.OD)
@@ -662,43 +667,54 @@ class CupertinoButton extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   WidgetExpression ensureChild() => $_ensure(1);
 
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(2);
+  @$pb.TagNumber(4)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasPadding() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearPadding() => clearField(4);
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(2);
+
   @$pb.TagNumber(5)
-  $1.DartColorExpression get color => $_getN(2);
+  $1.DartColorExpression get color => $_getN(3);
   @$pb.TagNumber(5)
   set color($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
-  $core.bool hasColor() => $_has(2);
+  $core.bool hasColor() => $_has(3);
   @$pb.TagNumber(5)
   void clearColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.DartColorExpression ensureColor() => $_ensure(2);
+  $1.DartColorExpression ensureColor() => $_ensure(3);
 
   @$pb.TagNumber(6)
-  $1.DartColorExpression get disabledColor => $_getN(3);
+  $1.DartColorExpression get disabledColor => $_getN(4);
   @$pb.TagNumber(6)
   set disabledColor($1.DartColorExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
-  $core.bool hasDisabledColor() => $_has(3);
+  $core.bool hasDisabledColor() => $_has(4);
   @$pb.TagNumber(6)
   void clearDisabledColor() => clearField(6);
   @$pb.TagNumber(6)
-  $1.DartColorExpression ensureDisabledColor() => $_ensure(3);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(4);
 
   @$pb.TagNumber(7)
-  $core.double get minSize => $_getN(4);
+  $core.double get minSize => $_getN(5);
   @$pb.TagNumber(7)
-  set minSize($core.double v) { $_setDouble(4, v); }
+  set minSize($core.double v) { $_setDouble(5, v); }
   @$pb.TagNumber(7)
-  $core.bool hasMinSize() => $_has(4);
+  $core.bool hasMinSize() => $_has(5);
   @$pb.TagNumber(7)
   void clearMinSize() => clearField(7);
 
   @$pb.TagNumber(8)
-  $core.double get pressedOpacity => $_getN(5);
+  $core.double get pressedOpacity => $_getN(6);
   @$pb.TagNumber(8)
-  set pressedOpacity($core.double v) { $_setDouble(5, v); }
+  set pressedOpacity($core.double v) { $_setDouble(6, v); }
   @$pb.TagNumber(8)
-  $core.bool hasPressedOpacity() => $_has(5);
+  $core.bool hasPressedOpacity() => $_has(6);
   @$pb.TagNumber(8)
   void clearPressedOpacity() => clearField(8);
 }
@@ -708,6 +724,7 @@ class CupertinoButtonNamedFilled extends $pb.GeneratedMessage {
   factory CupertinoButtonNamedFilled({
     $1.FlutterKeyExpression? key,
     WidgetExpression? child,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $1.DartColorExpression? disabledColor,
     $core.double? minSize,
     $core.double? pressedOpacity,
@@ -718,6 +735,9 @@ class CupertinoButtonNamedFilled extends $pb.GeneratedMessage {
     }
     if (child != null) {
       $result.child = child;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (disabledColor != null) {
       $result.disabledColor = disabledColor;
@@ -737,6 +757,7 @@ class CupertinoButtonNamedFilled extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CupertinoButtonNamedFilled', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(4, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'minSize', $pb.PbFieldType.OD)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'pressedOpacity', $pb.PbFieldType.OD)
@@ -786,32 +807,43 @@ class CupertinoButtonNamedFilled extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   WidgetExpression ensureChild() => $_ensure(1);
 
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(2);
+  @$pb.TagNumber(4)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasPadding() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearPadding() => clearField(4);
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(2);
+
   @$pb.TagNumber(5)
-  $1.DartColorExpression get disabledColor => $_getN(2);
+  $1.DartColorExpression get disabledColor => $_getN(3);
   @$pb.TagNumber(5)
   set disabledColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
-  $core.bool hasDisabledColor() => $_has(2);
+  $core.bool hasDisabledColor() => $_has(3);
   @$pb.TagNumber(5)
   void clearDisabledColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.DartColorExpression ensureDisabledColor() => $_ensure(2);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(3);
 
   @$pb.TagNumber(6)
-  $core.double get minSize => $_getN(3);
+  $core.double get minSize => $_getN(4);
   @$pb.TagNumber(6)
-  set minSize($core.double v) { $_setDouble(3, v); }
+  set minSize($core.double v) { $_setDouble(4, v); }
   @$pb.TagNumber(6)
-  $core.bool hasMinSize() => $_has(3);
+  $core.bool hasMinSize() => $_has(4);
   @$pb.TagNumber(6)
   void clearMinSize() => clearField(6);
 
   @$pb.TagNumber(7)
-  $core.double get pressedOpacity => $_getN(4);
+  $core.double get pressedOpacity => $_getN(5);
   @$pb.TagNumber(7)
-  set pressedOpacity($core.double v) { $_setDouble(4, v); }
+  set pressedOpacity($core.double v) { $_setDouble(5, v); }
   @$pb.TagNumber(7)
-  $core.bool hasPressedOpacity() => $_has(4);
+  $core.bool hasPressedOpacity() => $_has(5);
   @$pb.TagNumber(7)
   void clearPressedOpacity() => clearField(7);
 }
@@ -1703,6 +1735,7 @@ class CupertinoFormRow extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? child,
     WidgetExpression? prefix,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     WidgetExpression? helper,
     WidgetExpression? error,
   }) {
@@ -1715,6 +1748,9 @@ class CupertinoFormRow extends $pb.GeneratedMessage {
     }
     if (prefix != null) {
       $result.prefix = prefix;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (helper != null) {
       $result.helper = helper;
@@ -1732,6 +1768,7 @@ class CupertinoFormRow extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'prefix', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(5, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<WidgetExpression>(6, _omitFieldNames ? '' : 'helper', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(7, _omitFieldNames ? '' : 'error', subBuilder: WidgetExpression.create)
     ..hasRequiredFields = false
@@ -1791,27 +1828,38 @@ class CupertinoFormRow extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   WidgetExpression ensurePrefix() => $_ensure(2);
 
+  @$pb.TagNumber(5)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(3);
+  @$pb.TagNumber(5)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasPadding() => $_has(3);
+  @$pb.TagNumber(5)
+  void clearPadding() => clearField(5);
+  @$pb.TagNumber(5)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(3);
+
   @$pb.TagNumber(6)
-  WidgetExpression get helper => $_getN(3);
+  WidgetExpression get helper => $_getN(4);
   @$pb.TagNumber(6)
   set helper(WidgetExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
-  $core.bool hasHelper() => $_has(3);
+  $core.bool hasHelper() => $_has(4);
   @$pb.TagNumber(6)
   void clearHelper() => clearField(6);
   @$pb.TagNumber(6)
-  WidgetExpression ensureHelper() => $_ensure(3);
+  WidgetExpression ensureHelper() => $_ensure(4);
 
   @$pb.TagNumber(7)
-  WidgetExpression get error => $_getN(4);
+  WidgetExpression get error => $_getN(5);
   @$pb.TagNumber(7)
   set error(WidgetExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
-  $core.bool hasError() => $_has(4);
+  $core.bool hasError() => $_has(5);
   @$pb.TagNumber(7)
   void clearError() => clearField(7);
   @$pb.TagNumber(7)
-  WidgetExpression ensureError() => $_ensure(4);
+  WidgetExpression ensureError() => $_ensure(5);
 }
 
 /// package:flutter/src/cupertino/form_section.dart
@@ -1821,6 +1869,7 @@ class CupertinoFormSection extends $pb.GeneratedMessage {
     $core.Iterable<WidgetExpression>? children,
     WidgetExpression? header,
     WidgetExpression? footer,
+    $1.FlutterEdgeInsetsGeometryExpression? margin,
     $1.DartColorExpression? backgroundColor,
     $2.DartClip_Enum? clipBehavior,
   }) {
@@ -1836,6 +1885,9 @@ class CupertinoFormSection extends $pb.GeneratedMessage {
     }
     if (footer != null) {
       $result.footer = footer;
+    }
+    if (margin != null) {
+      $result.margin = margin;
     }
     if (backgroundColor != null) {
       $result.backgroundColor = backgroundColor;
@@ -1854,6 +1906,7 @@ class CupertinoFormSection extends $pb.GeneratedMessage {
     ..pc<WidgetExpression>(3, _omitFieldNames ? '' : 'children', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'header', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'footer', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'margin', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..e<$2.DartClip_Enum>(9, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..hasRequiredFields = false
@@ -1916,23 +1969,34 @@ class CupertinoFormSection extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   WidgetExpression ensureFooter() => $_ensure(3);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get margin => $_getN(4);
+  @$pb.TagNumber(6)
+  set margin($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasMargin() => $_has(4);
+  @$pb.TagNumber(6)
+  void clearMargin() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensureMargin() => $_ensure(4);
+
   @$pb.TagNumber(7)
-  $1.DartColorExpression get backgroundColor => $_getN(4);
+  $1.DartColorExpression get backgroundColor => $_getN(5);
   @$pb.TagNumber(7)
   set backgroundColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
-  $core.bool hasBackgroundColor() => $_has(4);
+  $core.bool hasBackgroundColor() => $_has(5);
   @$pb.TagNumber(7)
   void clearBackgroundColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.DartColorExpression ensureBackgroundColor() => $_ensure(4);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(5);
 
   @$pb.TagNumber(9)
-  $2.DartClip_Enum get clipBehavior => $_getN(5);
+  $2.DartClip_Enum get clipBehavior => $_getN(6);
   @$pb.TagNumber(9)
   set clipBehavior($2.DartClip_Enum v) { setField(9, v); }
   @$pb.TagNumber(9)
-  $core.bool hasClipBehavior() => $_has(5);
+  $core.bool hasClipBehavior() => $_has(6);
   @$pb.TagNumber(9)
   void clearClipBehavior() => clearField(9);
 }
@@ -1944,6 +2008,7 @@ class CupertinoFormSectionNamedInsetGrouped extends $pb.GeneratedMessage {
     $core.Iterable<WidgetExpression>? children,
     WidgetExpression? header,
     WidgetExpression? footer,
+    $1.FlutterEdgeInsetsGeometryExpression? margin,
     $1.DartColorExpression? backgroundColor,
     $2.DartClip_Enum? clipBehavior,
   }) {
@@ -1959,6 +2024,9 @@ class CupertinoFormSectionNamedInsetGrouped extends $pb.GeneratedMessage {
     }
     if (footer != null) {
       $result.footer = footer;
+    }
+    if (margin != null) {
+      $result.margin = margin;
     }
     if (backgroundColor != null) {
       $result.backgroundColor = backgroundColor;
@@ -1977,6 +2045,7 @@ class CupertinoFormSectionNamedInsetGrouped extends $pb.GeneratedMessage {
     ..pc<WidgetExpression>(3, _omitFieldNames ? '' : 'children', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'header', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'footer', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'margin', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..e<$2.DartClip_Enum>(9, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..hasRequiredFields = false
@@ -2039,23 +2108,34 @@ class CupertinoFormSectionNamedInsetGrouped extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   WidgetExpression ensureFooter() => $_ensure(3);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get margin => $_getN(4);
+  @$pb.TagNumber(6)
+  set margin($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasMargin() => $_has(4);
+  @$pb.TagNumber(6)
+  void clearMargin() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensureMargin() => $_ensure(4);
+
   @$pb.TagNumber(7)
-  $1.DartColorExpression get backgroundColor => $_getN(4);
+  $1.DartColorExpression get backgroundColor => $_getN(5);
   @$pb.TagNumber(7)
   set backgroundColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
-  $core.bool hasBackgroundColor() => $_has(4);
+  $core.bool hasBackgroundColor() => $_has(5);
   @$pb.TagNumber(7)
   void clearBackgroundColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.DartColorExpression ensureBackgroundColor() => $_ensure(4);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(5);
 
   @$pb.TagNumber(9)
-  $2.DartClip_Enum get clipBehavior => $_getN(5);
+  $2.DartClip_Enum get clipBehavior => $_getN(6);
   @$pb.TagNumber(9)
   set clipBehavior($2.DartClip_Enum v) { setField(9, v); }
   @$pb.TagNumber(9)
-  $core.bool hasClipBehavior() => $_has(5);
+  $core.bool hasClipBehavior() => $_has(6);
   @$pb.TagNumber(9)
   void clearClipBehavior() => clearField(9);
 }
@@ -2150,6 +2230,7 @@ class CupertinoListSection extends $pb.GeneratedMessage {
     $core.Iterable<WidgetExpression>? children,
     WidgetExpression? header,
     WidgetExpression? footer,
+    $1.FlutterEdgeInsetsGeometryExpression? margin,
     $1.DartColorExpression? backgroundColor,
     $2.DartClip_Enum? clipBehavior,
     $core.double? dividerMargin,
@@ -2170,6 +2251,9 @@ class CupertinoListSection extends $pb.GeneratedMessage {
     }
     if (footer != null) {
       $result.footer = footer;
+    }
+    if (margin != null) {
+      $result.margin = margin;
     }
     if (backgroundColor != null) {
       $result.backgroundColor = backgroundColor;
@@ -2203,6 +2287,7 @@ class CupertinoListSection extends $pb.GeneratedMessage {
     ..pc<WidgetExpression>(3, _omitFieldNames ? '' : 'children', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'header', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'footer', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'margin', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..e<$2.DartClip_Enum>(9, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..a<$core.double>(10, _omitFieldNames ? '' : 'dividerMargin', $pb.PbFieldType.OD)
@@ -2270,72 +2355,83 @@ class CupertinoListSection extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   WidgetExpression ensureFooter() => $_ensure(3);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get margin => $_getN(4);
+  @$pb.TagNumber(6)
+  set margin($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasMargin() => $_has(4);
+  @$pb.TagNumber(6)
+  void clearMargin() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensureMargin() => $_ensure(4);
+
   @$pb.TagNumber(7)
-  $1.DartColorExpression get backgroundColor => $_getN(4);
+  $1.DartColorExpression get backgroundColor => $_getN(5);
   @$pb.TagNumber(7)
   set backgroundColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
-  $core.bool hasBackgroundColor() => $_has(4);
+  $core.bool hasBackgroundColor() => $_has(5);
   @$pb.TagNumber(7)
   void clearBackgroundColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.DartColorExpression ensureBackgroundColor() => $_ensure(4);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(5);
 
   @$pb.TagNumber(9)
-  $2.DartClip_Enum get clipBehavior => $_getN(5);
+  $2.DartClip_Enum get clipBehavior => $_getN(6);
   @$pb.TagNumber(9)
   set clipBehavior($2.DartClip_Enum v) { setField(9, v); }
   @$pb.TagNumber(9)
-  $core.bool hasClipBehavior() => $_has(5);
+  $core.bool hasClipBehavior() => $_has(6);
   @$pb.TagNumber(9)
   void clearClipBehavior() => clearField(9);
 
   @$pb.TagNumber(10)
-  $core.double get dividerMargin => $_getN(6);
+  $core.double get dividerMargin => $_getN(7);
   @$pb.TagNumber(10)
-  set dividerMargin($core.double v) { $_setDouble(6, v); }
+  set dividerMargin($core.double v) { $_setDouble(7, v); }
   @$pb.TagNumber(10)
-  $core.bool hasDividerMargin() => $_has(6);
+  $core.bool hasDividerMargin() => $_has(7);
   @$pb.TagNumber(10)
   void clearDividerMargin() => clearField(10);
 
   @$pb.TagNumber(11)
-  $core.double get additionalDividerMargin => $_getN(7);
+  $core.double get additionalDividerMargin => $_getN(8);
   @$pb.TagNumber(11)
-  set additionalDividerMargin($core.double v) { $_setDouble(7, v); }
+  set additionalDividerMargin($core.double v) { $_setDouble(8, v); }
   @$pb.TagNumber(11)
-  $core.bool hasAdditionalDividerMargin() => $_has(7);
+  $core.bool hasAdditionalDividerMargin() => $_has(8);
   @$pb.TagNumber(11)
   void clearAdditionalDividerMargin() => clearField(11);
 
   @$pb.TagNumber(12)
-  $core.double get topMargin => $_getN(8);
+  $core.double get topMargin => $_getN(9);
   @$pb.TagNumber(12)
-  set topMargin($core.double v) { $_setDouble(8, v); }
+  set topMargin($core.double v) { $_setDouble(9, v); }
   @$pb.TagNumber(12)
-  $core.bool hasTopMargin() => $_has(8);
+  $core.bool hasTopMargin() => $_has(9);
   @$pb.TagNumber(12)
   void clearTopMargin() => clearField(12);
 
   @$pb.TagNumber(13)
-  $core.bool get hasLeading => $_getBF(9);
+  $core.bool get hasLeading => $_getBF(10);
   @$pb.TagNumber(13)
-  set hasLeading($core.bool v) { $_setBool(9, v); }
+  set hasLeading($core.bool v) { $_setBool(10, v); }
   @$pb.TagNumber(13)
-  $core.bool hasHasLeading() => $_has(9);
+  $core.bool hasHasLeading() => $_has(10);
   @$pb.TagNumber(13)
   void clearHasLeading() => clearField(13);
 
   @$pb.TagNumber(14)
-  $1.DartColorExpression get separatorColor => $_getN(10);
+  $1.DartColorExpression get separatorColor => $_getN(11);
   @$pb.TagNumber(14)
   set separatorColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
-  $core.bool hasSeparatorColor() => $_has(10);
+  $core.bool hasSeparatorColor() => $_has(11);
   @$pb.TagNumber(14)
   void clearSeparatorColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.DartColorExpression ensureSeparatorColor() => $_ensure(10);
+  $1.DartColorExpression ensureSeparatorColor() => $_ensure(11);
 }
 
 /// package:flutter/src/cupertino/list_section.dart
@@ -2345,6 +2441,7 @@ class CupertinoListSectionNamedInsetGrouped extends $pb.GeneratedMessage {
     $core.Iterable<WidgetExpression>? children,
     WidgetExpression? header,
     WidgetExpression? footer,
+    $1.FlutterEdgeInsetsGeometryExpression? margin,
     $1.DartColorExpression? backgroundColor,
     $2.DartClip_Enum? clipBehavior,
     $core.double? dividerMargin,
@@ -2365,6 +2462,9 @@ class CupertinoListSectionNamedInsetGrouped extends $pb.GeneratedMessage {
     }
     if (footer != null) {
       $result.footer = footer;
+    }
+    if (margin != null) {
+      $result.margin = margin;
     }
     if (backgroundColor != null) {
       $result.backgroundColor = backgroundColor;
@@ -2398,6 +2498,7 @@ class CupertinoListSectionNamedInsetGrouped extends $pb.GeneratedMessage {
     ..pc<WidgetExpression>(3, _omitFieldNames ? '' : 'children', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'header', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'footer', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'margin', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..e<$2.DartClip_Enum>(9, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..a<$core.double>(10, _omitFieldNames ? '' : 'dividerMargin', $pb.PbFieldType.OD)
@@ -2465,72 +2566,83 @@ class CupertinoListSectionNamedInsetGrouped extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   WidgetExpression ensureFooter() => $_ensure(3);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get margin => $_getN(4);
+  @$pb.TagNumber(6)
+  set margin($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasMargin() => $_has(4);
+  @$pb.TagNumber(6)
+  void clearMargin() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensureMargin() => $_ensure(4);
+
   @$pb.TagNumber(7)
-  $1.DartColorExpression get backgroundColor => $_getN(4);
+  $1.DartColorExpression get backgroundColor => $_getN(5);
   @$pb.TagNumber(7)
   set backgroundColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
-  $core.bool hasBackgroundColor() => $_has(4);
+  $core.bool hasBackgroundColor() => $_has(5);
   @$pb.TagNumber(7)
   void clearBackgroundColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.DartColorExpression ensureBackgroundColor() => $_ensure(4);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(5);
 
   @$pb.TagNumber(9)
-  $2.DartClip_Enum get clipBehavior => $_getN(5);
+  $2.DartClip_Enum get clipBehavior => $_getN(6);
   @$pb.TagNumber(9)
   set clipBehavior($2.DartClip_Enum v) { setField(9, v); }
   @$pb.TagNumber(9)
-  $core.bool hasClipBehavior() => $_has(5);
+  $core.bool hasClipBehavior() => $_has(6);
   @$pb.TagNumber(9)
   void clearClipBehavior() => clearField(9);
 
   @$pb.TagNumber(10)
-  $core.double get dividerMargin => $_getN(6);
+  $core.double get dividerMargin => $_getN(7);
   @$pb.TagNumber(10)
-  set dividerMargin($core.double v) { $_setDouble(6, v); }
+  set dividerMargin($core.double v) { $_setDouble(7, v); }
   @$pb.TagNumber(10)
-  $core.bool hasDividerMargin() => $_has(6);
+  $core.bool hasDividerMargin() => $_has(7);
   @$pb.TagNumber(10)
   void clearDividerMargin() => clearField(10);
 
   @$pb.TagNumber(11)
-  $core.double get additionalDividerMargin => $_getN(7);
+  $core.double get additionalDividerMargin => $_getN(8);
   @$pb.TagNumber(11)
-  set additionalDividerMargin($core.double v) { $_setDouble(7, v); }
+  set additionalDividerMargin($core.double v) { $_setDouble(8, v); }
   @$pb.TagNumber(11)
-  $core.bool hasAdditionalDividerMargin() => $_has(7);
+  $core.bool hasAdditionalDividerMargin() => $_has(8);
   @$pb.TagNumber(11)
   void clearAdditionalDividerMargin() => clearField(11);
 
   @$pb.TagNumber(12)
-  $core.double get topMargin => $_getN(8);
+  $core.double get topMargin => $_getN(9);
   @$pb.TagNumber(12)
-  set topMargin($core.double v) { $_setDouble(8, v); }
+  set topMargin($core.double v) { $_setDouble(9, v); }
   @$pb.TagNumber(12)
-  $core.bool hasTopMargin() => $_has(8);
+  $core.bool hasTopMargin() => $_has(9);
   @$pb.TagNumber(12)
   void clearTopMargin() => clearField(12);
 
   @$pb.TagNumber(13)
-  $core.bool get hasLeading => $_getBF(9);
+  $core.bool get hasLeading => $_getBF(10);
   @$pb.TagNumber(13)
-  set hasLeading($core.bool v) { $_setBool(9, v); }
+  set hasLeading($core.bool v) { $_setBool(10, v); }
   @$pb.TagNumber(13)
-  $core.bool hasHasLeading() => $_has(9);
+  $core.bool hasHasLeading() => $_has(10);
   @$pb.TagNumber(13)
   void clearHasLeading() => clearField(13);
 
   @$pb.TagNumber(14)
-  $1.DartColorExpression get separatorColor => $_getN(10);
+  $1.DartColorExpression get separatorColor => $_getN(11);
   @$pb.TagNumber(14)
   set separatorColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
-  $core.bool hasSeparatorColor() => $_has(10);
+  $core.bool hasSeparatorColor() => $_has(11);
   @$pb.TagNumber(14)
   void clearSeparatorColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.DartColorExpression ensureSeparatorColor() => $_ensure(10);
+  $1.DartColorExpression ensureSeparatorColor() => $_ensure(11);
 }
 
 /// package:flutter/src/cupertino/list_tile.dart
@@ -2544,6 +2656,7 @@ class CupertinoListTile extends $pb.GeneratedMessage {
     WidgetExpression? trailing,
     $1.DartColorExpression? backgroundColor,
     $1.DartColorExpression? backgroundColorActivated,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $core.double? leadingSize,
     $core.double? leadingToTitle,
   }) {
@@ -2572,6 +2685,9 @@ class CupertinoListTile extends $pb.GeneratedMessage {
     if (backgroundColorActivated != null) {
       $result.backgroundColorActivated = backgroundColorActivated;
     }
+    if (padding != null) {
+      $result.padding = padding;
+    }
     if (leadingSize != null) {
       $result.leadingSize = leadingSize;
     }
@@ -2593,6 +2709,7 @@ class CupertinoListTile extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(7, _omitFieldNames ? '' : 'trailing', subBuilder: WidgetExpression.create)
     ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'backgroundColorActivated', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(11, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'leadingSize', $pb.PbFieldType.OD)
     ..a<$core.double>(13, _omitFieldNames ? '' : 'leadingToTitle', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
@@ -2707,21 +2824,32 @@ class CupertinoListTile extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $1.DartColorExpression ensureBackgroundColorActivated() => $_ensure(7);
 
+  @$pb.TagNumber(11)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(8);
+  @$pb.TagNumber(11)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(11, v); }
+  @$pb.TagNumber(11)
+  $core.bool hasPadding() => $_has(8);
+  @$pb.TagNumber(11)
+  void clearPadding() => clearField(11);
+  @$pb.TagNumber(11)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(8);
+
   @$pb.TagNumber(12)
-  $core.double get leadingSize => $_getN(8);
+  $core.double get leadingSize => $_getN(9);
   @$pb.TagNumber(12)
-  set leadingSize($core.double v) { $_setDouble(8, v); }
+  set leadingSize($core.double v) { $_setDouble(9, v); }
   @$pb.TagNumber(12)
-  $core.bool hasLeadingSize() => $_has(8);
+  $core.bool hasLeadingSize() => $_has(9);
   @$pb.TagNumber(12)
   void clearLeadingSize() => clearField(12);
 
   @$pb.TagNumber(13)
-  $core.double get leadingToTitle => $_getN(9);
+  $core.double get leadingToTitle => $_getN(10);
   @$pb.TagNumber(13)
-  set leadingToTitle($core.double v) { $_setDouble(9, v); }
+  set leadingToTitle($core.double v) { $_setDouble(10, v); }
   @$pb.TagNumber(13)
-  $core.bool hasLeadingToTitle() => $_has(9);
+  $core.bool hasLeadingToTitle() => $_has(10);
   @$pb.TagNumber(13)
   void clearLeadingToTitle() => clearField(13);
 }
@@ -2737,6 +2865,7 @@ class CupertinoListTileNamedNotched extends $pb.GeneratedMessage {
     WidgetExpression? trailing,
     $1.DartColorExpression? backgroundColor,
     $1.DartColorExpression? backgroundColorActivated,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $core.double? leadingSize,
     $core.double? leadingToTitle,
   }) {
@@ -2765,6 +2894,9 @@ class CupertinoListTileNamedNotched extends $pb.GeneratedMessage {
     if (backgroundColorActivated != null) {
       $result.backgroundColorActivated = backgroundColorActivated;
     }
+    if (padding != null) {
+      $result.padding = padding;
+    }
     if (leadingSize != null) {
       $result.leadingSize = leadingSize;
     }
@@ -2786,6 +2918,7 @@ class CupertinoListTileNamedNotched extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(7, _omitFieldNames ? '' : 'trailing', subBuilder: WidgetExpression.create)
     ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'backgroundColorActivated', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(11, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'leadingSize', $pb.PbFieldType.OD)
     ..a<$core.double>(13, _omitFieldNames ? '' : 'leadingToTitle', $pb.PbFieldType.OD)
     ..hasRequiredFields = false
@@ -2900,21 +3033,32 @@ class CupertinoListTileNamedNotched extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $1.DartColorExpression ensureBackgroundColorActivated() => $_ensure(7);
 
+  @$pb.TagNumber(11)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(8);
+  @$pb.TagNumber(11)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(11, v); }
+  @$pb.TagNumber(11)
+  $core.bool hasPadding() => $_has(8);
+  @$pb.TagNumber(11)
+  void clearPadding() => clearField(11);
+  @$pb.TagNumber(11)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(8);
+
   @$pb.TagNumber(12)
-  $core.double get leadingSize => $_getN(8);
+  $core.double get leadingSize => $_getN(9);
   @$pb.TagNumber(12)
-  set leadingSize($core.double v) { $_setDouble(8, v); }
+  set leadingSize($core.double v) { $_setDouble(9, v); }
   @$pb.TagNumber(12)
-  $core.bool hasLeadingSize() => $_has(8);
+  $core.bool hasLeadingSize() => $_has(9);
   @$pb.TagNumber(12)
   void clearLeadingSize() => clearField(12);
 
   @$pb.TagNumber(13)
-  $core.double get leadingToTitle => $_getN(9);
+  $core.double get leadingToTitle => $_getN(10);
   @$pb.TagNumber(13)
-  set leadingToTitle($core.double v) { $_setDouble(9, v); }
+  set leadingToTitle($core.double v) { $_setDouble(10, v); }
   @$pb.TagNumber(13)
-  $core.bool hasLeadingToTitle() => $_has(9);
+  $core.bool hasLeadingToTitle() => $_has(10);
   @$pb.TagNumber(13)
   void clearLeadingToTitle() => clearField(13);
 }
@@ -4125,9 +4269,12 @@ class CupertinoSearchTextField extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.String? placeholder,
     $1.DartColorExpression? backgroundColor,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $1.DartColorExpression? itemColor,
     $core.double? itemSize,
+    $1.FlutterEdgeInsetsGeometryExpression? prefixInsets,
     WidgetExpression? prefixIcon,
+    $1.FlutterEdgeInsetsGeometryExpression? suffixInsets,
     $2.OverlayVisibilityMode_Enum? suffixMode,
     $core.String? restorationId,
     $2.FlutterSmartQuotesType_Enum? smartQuotesType,
@@ -4147,14 +4294,23 @@ class CupertinoSearchTextField extends $pb.GeneratedMessage {
     if (backgroundColor != null) {
       $result.backgroundColor = backgroundColor;
     }
+    if (padding != null) {
+      $result.padding = padding;
+    }
     if (itemColor != null) {
       $result.itemColor = itemColor;
     }
     if (itemSize != null) {
       $result.itemSize = itemSize;
     }
+    if (prefixInsets != null) {
+      $result.prefixInsets = prefixInsets;
+    }
     if (prefixIcon != null) {
       $result.prefixIcon = prefixIcon;
+    }
+    if (suffixInsets != null) {
+      $result.suffixInsets = suffixInsets;
     }
     if (suffixMode != null) {
       $result.suffixMode = suffixMode;
@@ -4190,9 +4346,12 @@ class CupertinoSearchTextField extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOS(7, _omitFieldNames ? '' : 'placeholder')
     ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(13, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'itemColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(15, _omitFieldNames ? '' : 'itemSize', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(16, _omitFieldNames ? '' : 'prefixInsets', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<WidgetExpression>(17, _omitFieldNames ? '' : 'prefixIcon', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(18, _omitFieldNames ? '' : 'suffixInsets', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..e<$2.OverlayVisibilityMode_Enum>(20, _omitFieldNames ? '' : 'suffixMode', $pb.PbFieldType.OE, defaultOrMaker: $2.OverlayVisibilityMode_Enum.NEVER, valueOf: $2.OverlayVisibilityMode_Enum.valueOf, enumValues: $2.OverlayVisibilityMode_Enum.values)
     ..aOS(22, _omitFieldNames ? '' : 'restorationId')
     ..e<$2.FlutterSmartQuotesType_Enum>(24, _omitFieldNames ? '' : 'smartQuotesType', $pb.PbFieldType.OE, defaultOrMaker: $2.FlutterSmartQuotesType_Enum.DISABLED, valueOf: $2.FlutterSmartQuotesType_Enum.valueOf, enumValues: $2.FlutterSmartQuotesType_Enum.values)
@@ -4256,106 +4415,139 @@ class CupertinoSearchTextField extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   $1.DartColorExpression ensureBackgroundColor() => $_ensure(2);
 
+  @$pb.TagNumber(13)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(3);
+  @$pb.TagNumber(13)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(13, v); }
+  @$pb.TagNumber(13)
+  $core.bool hasPadding() => $_has(3);
+  @$pb.TagNumber(13)
+  void clearPadding() => clearField(13);
+  @$pb.TagNumber(13)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(3);
+
   @$pb.TagNumber(14)
-  $1.DartColorExpression get itemColor => $_getN(3);
+  $1.DartColorExpression get itemColor => $_getN(4);
   @$pb.TagNumber(14)
   set itemColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
-  $core.bool hasItemColor() => $_has(3);
+  $core.bool hasItemColor() => $_has(4);
   @$pb.TagNumber(14)
   void clearItemColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.DartColorExpression ensureItemColor() => $_ensure(3);
+  $1.DartColorExpression ensureItemColor() => $_ensure(4);
 
   @$pb.TagNumber(15)
-  $core.double get itemSize => $_getN(4);
+  $core.double get itemSize => $_getN(5);
   @$pb.TagNumber(15)
-  set itemSize($core.double v) { $_setDouble(4, v); }
+  set itemSize($core.double v) { $_setDouble(5, v); }
   @$pb.TagNumber(15)
-  $core.bool hasItemSize() => $_has(4);
+  $core.bool hasItemSize() => $_has(5);
   @$pb.TagNumber(15)
   void clearItemSize() => clearField(15);
 
+  @$pb.TagNumber(16)
+  $1.FlutterEdgeInsetsGeometryExpression get prefixInsets => $_getN(6);
+  @$pb.TagNumber(16)
+  set prefixInsets($1.FlutterEdgeInsetsGeometryExpression v) { setField(16, v); }
+  @$pb.TagNumber(16)
+  $core.bool hasPrefixInsets() => $_has(6);
+  @$pb.TagNumber(16)
+  void clearPrefixInsets() => clearField(16);
+  @$pb.TagNumber(16)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePrefixInsets() => $_ensure(6);
+
   @$pb.TagNumber(17)
-  WidgetExpression get prefixIcon => $_getN(5);
+  WidgetExpression get prefixIcon => $_getN(7);
   @$pb.TagNumber(17)
   set prefixIcon(WidgetExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
-  $core.bool hasPrefixIcon() => $_has(5);
+  $core.bool hasPrefixIcon() => $_has(7);
   @$pb.TagNumber(17)
   void clearPrefixIcon() => clearField(17);
   @$pb.TagNumber(17)
-  WidgetExpression ensurePrefixIcon() => $_ensure(5);
+  WidgetExpression ensurePrefixIcon() => $_ensure(7);
+
+  @$pb.TagNumber(18)
+  $1.FlutterEdgeInsetsGeometryExpression get suffixInsets => $_getN(8);
+  @$pb.TagNumber(18)
+  set suffixInsets($1.FlutterEdgeInsetsGeometryExpression v) { setField(18, v); }
+  @$pb.TagNumber(18)
+  $core.bool hasSuffixInsets() => $_has(8);
+  @$pb.TagNumber(18)
+  void clearSuffixInsets() => clearField(18);
+  @$pb.TagNumber(18)
+  $1.FlutterEdgeInsetsGeometryExpression ensureSuffixInsets() => $_ensure(8);
 
   @$pb.TagNumber(20)
-  $2.OverlayVisibilityMode_Enum get suffixMode => $_getN(6);
+  $2.OverlayVisibilityMode_Enum get suffixMode => $_getN(9);
   @$pb.TagNumber(20)
   set suffixMode($2.OverlayVisibilityMode_Enum v) { setField(20, v); }
   @$pb.TagNumber(20)
-  $core.bool hasSuffixMode() => $_has(6);
+  $core.bool hasSuffixMode() => $_has(9);
   @$pb.TagNumber(20)
   void clearSuffixMode() => clearField(20);
 
   @$pb.TagNumber(22)
-  $core.String get restorationId => $_getSZ(7);
+  $core.String get restorationId => $_getSZ(10);
   @$pb.TagNumber(22)
-  set restorationId($core.String v) { $_setString(7, v); }
+  set restorationId($core.String v) { $_setString(10, v); }
   @$pb.TagNumber(22)
-  $core.bool hasRestorationId() => $_has(7);
+  $core.bool hasRestorationId() => $_has(10);
   @$pb.TagNumber(22)
   void clearRestorationId() => clearField(22);
 
   @$pb.TagNumber(24)
-  $2.FlutterSmartQuotesType_Enum get smartQuotesType => $_getN(8);
+  $2.FlutterSmartQuotesType_Enum get smartQuotesType => $_getN(11);
   @$pb.TagNumber(24)
   set smartQuotesType($2.FlutterSmartQuotesType_Enum v) { setField(24, v); }
   @$pb.TagNumber(24)
-  $core.bool hasSmartQuotesType() => $_has(8);
+  $core.bool hasSmartQuotesType() => $_has(11);
   @$pb.TagNumber(24)
   void clearSmartQuotesType() => clearField(24);
 
   @$pb.TagNumber(25)
-  $2.FlutterSmartDashesType_Enum get smartDashesType => $_getN(9);
+  $2.FlutterSmartDashesType_Enum get smartDashesType => $_getN(12);
   @$pb.TagNumber(25)
   set smartDashesType($2.FlutterSmartDashesType_Enum v) { setField(25, v); }
   @$pb.TagNumber(25)
-  $core.bool hasSmartDashesType() => $_has(9);
+  $core.bool hasSmartDashesType() => $_has(12);
   @$pb.TagNumber(25)
   void clearSmartDashesType() => clearField(25);
 
   @$pb.TagNumber(26)
-  $core.bool get enableIMEPersonalizedLearning => $_getBF(10);
+  $core.bool get enableIMEPersonalizedLearning => $_getBF(13);
   @$pb.TagNumber(26)
-  set enableIMEPersonalizedLearning($core.bool v) { $_setBool(10, v); }
+  set enableIMEPersonalizedLearning($core.bool v) { $_setBool(13, v); }
   @$pb.TagNumber(26)
-  $core.bool hasEnableIMEPersonalizedLearning() => $_has(10);
+  $core.bool hasEnableIMEPersonalizedLearning() => $_has(13);
   @$pb.TagNumber(26)
   void clearEnableIMEPersonalizedLearning() => clearField(26);
 
   @$pb.TagNumber(27)
-  $core.bool get autofocus => $_getBF(11);
+  $core.bool get autofocus => $_getBF(14);
   @$pb.TagNumber(27)
-  set autofocus($core.bool v) { $_setBool(11, v); }
+  set autofocus($core.bool v) { $_setBool(14, v); }
   @$pb.TagNumber(27)
-  $core.bool hasAutofocus() => $_has(11);
+  $core.bool hasAutofocus() => $_has(14);
   @$pb.TagNumber(27)
   void clearAutofocus() => clearField(27);
 
   @$pb.TagNumber(29)
-  $core.bool get autocorrect => $_getBF(12);
+  $core.bool get autocorrect => $_getBF(15);
   @$pb.TagNumber(29)
-  set autocorrect($core.bool v) { $_setBool(12, v); }
+  set autocorrect($core.bool v) { $_setBool(15, v); }
   @$pb.TagNumber(29)
-  $core.bool hasAutocorrect() => $_has(12);
+  $core.bool hasAutocorrect() => $_has(15);
   @$pb.TagNumber(29)
   void clearAutocorrect() => clearField(29);
 
   @$pb.TagNumber(30)
-  $core.bool get enabled => $_getBF(13);
+  $core.bool get enabled => $_getBF(16);
   @$pb.TagNumber(30)
-  set enabled($core.bool v) { $_setBool(13, v); }
+  set enabled($core.bool v) { $_setBool(16, v); }
   @$pb.TagNumber(30)
-  $core.bool hasEnabled() => $_has(13);
+  $core.bool hasEnabled() => $_has(16);
   @$pb.TagNumber(30)
   void clearEnabled() => clearField(30);
 }
@@ -4759,6 +4951,7 @@ class CupertinoTabView extends $pb.GeneratedMessage {
 class CupertinoTextField extends $pb.GeneratedMessage {
   factory CupertinoTextField({
     $1.FlutterKeyExpression? key,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $core.String? placeholder,
     WidgetExpression? prefix,
     $2.OverlayVisibilityMode_Enum? prefixMode,
@@ -4802,6 +4995,9 @@ class CupertinoTextField extends $pb.GeneratedMessage {
     final $result = create();
     if (key != null) {
       $result.key = key;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (placeholder != null) {
       $result.placeholder = placeholder;
@@ -4928,6 +5124,7 @@ class CupertinoTextField extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CupertinoTextField', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(7, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOS(8, _omitFieldNames ? '' : 'placeholder')
     ..aOM<WidgetExpression>(10, _omitFieldNames ? '' : 'prefix', subBuilder: WidgetExpression.create)
     ..e<$2.OverlayVisibilityMode_Enum>(11, _omitFieldNames ? '' : 'prefixMode', $pb.PbFieldType.OE, defaultOrMaker: $2.OverlayVisibilityMode_Enum.NEVER, valueOf: $2.OverlayVisibilityMode_Enum.valueOf, enumValues: $2.OverlayVisibilityMode_Enum.values)
@@ -5002,354 +5199,365 @@ class CupertinoTextField extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(1);
+  @$pb.TagNumber(7)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(7, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasPadding() => $_has(1);
+  @$pb.TagNumber(7)
+  void clearPadding() => clearField(7);
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(1);
+
   @$pb.TagNumber(8)
-  $core.String get placeholder => $_getSZ(1);
+  $core.String get placeholder => $_getSZ(2);
   @$pb.TagNumber(8)
-  set placeholder($core.String v) { $_setString(1, v); }
+  set placeholder($core.String v) { $_setString(2, v); }
   @$pb.TagNumber(8)
-  $core.bool hasPlaceholder() => $_has(1);
+  $core.bool hasPlaceholder() => $_has(2);
   @$pb.TagNumber(8)
   void clearPlaceholder() => clearField(8);
 
   @$pb.TagNumber(10)
-  WidgetExpression get prefix => $_getN(2);
+  WidgetExpression get prefix => $_getN(3);
   @$pb.TagNumber(10)
   set prefix(WidgetExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasPrefix() => $_has(2);
+  $core.bool hasPrefix() => $_has(3);
   @$pb.TagNumber(10)
   void clearPrefix() => clearField(10);
   @$pb.TagNumber(10)
-  WidgetExpression ensurePrefix() => $_ensure(2);
+  WidgetExpression ensurePrefix() => $_ensure(3);
 
   @$pb.TagNumber(11)
-  $2.OverlayVisibilityMode_Enum get prefixMode => $_getN(3);
+  $2.OverlayVisibilityMode_Enum get prefixMode => $_getN(4);
   @$pb.TagNumber(11)
   set prefixMode($2.OverlayVisibilityMode_Enum v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasPrefixMode() => $_has(3);
+  $core.bool hasPrefixMode() => $_has(4);
   @$pb.TagNumber(11)
   void clearPrefixMode() => clearField(11);
 
   @$pb.TagNumber(12)
-  WidgetExpression get suffix => $_getN(4);
+  WidgetExpression get suffix => $_getN(5);
   @$pb.TagNumber(12)
   set suffix(WidgetExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
-  $core.bool hasSuffix() => $_has(4);
+  $core.bool hasSuffix() => $_has(5);
   @$pb.TagNumber(12)
   void clearSuffix() => clearField(12);
   @$pb.TagNumber(12)
-  WidgetExpression ensureSuffix() => $_ensure(4);
+  WidgetExpression ensureSuffix() => $_ensure(5);
 
   @$pb.TagNumber(13)
-  $2.OverlayVisibilityMode_Enum get suffixMode => $_getN(5);
+  $2.OverlayVisibilityMode_Enum get suffixMode => $_getN(6);
   @$pb.TagNumber(13)
   set suffixMode($2.OverlayVisibilityMode_Enum v) { setField(13, v); }
   @$pb.TagNumber(13)
-  $core.bool hasSuffixMode() => $_has(5);
+  $core.bool hasSuffixMode() => $_has(6);
   @$pb.TagNumber(13)
   void clearSuffixMode() => clearField(13);
 
   @$pb.TagNumber(14)
-  $2.OverlayVisibilityMode_Enum get clearButtonMode => $_getN(6);
+  $2.OverlayVisibilityMode_Enum get clearButtonMode => $_getN(7);
   @$pb.TagNumber(14)
   set clearButtonMode($2.OverlayVisibilityMode_Enum v) { setField(14, v); }
   @$pb.TagNumber(14)
-  $core.bool hasClearButtonMode() => $_has(6);
+  $core.bool hasClearButtonMode() => $_has(7);
   @$pb.TagNumber(14)
   void clearClearButtonMode() => clearField(14);
 
   @$pb.TagNumber(16)
-  $2.FlutterTextInputAction_Enum get textInputAction => $_getN(7);
+  $2.FlutterTextInputAction_Enum get textInputAction => $_getN(8);
   @$pb.TagNumber(16)
   set textInputAction($2.FlutterTextInputAction_Enum v) { setField(16, v); }
   @$pb.TagNumber(16)
-  $core.bool hasTextInputAction() => $_has(7);
+  $core.bool hasTextInputAction() => $_has(8);
   @$pb.TagNumber(16)
   void clearTextInputAction() => clearField(16);
 
   @$pb.TagNumber(17)
-  $2.FlutterTextCapitalization_Enum get textCapitalization => $_getN(8);
+  $2.FlutterTextCapitalization_Enum get textCapitalization => $_getN(9);
   @$pb.TagNumber(17)
   set textCapitalization($2.FlutterTextCapitalization_Enum v) { setField(17, v); }
   @$pb.TagNumber(17)
-  $core.bool hasTextCapitalization() => $_has(8);
+  $core.bool hasTextCapitalization() => $_has(9);
   @$pb.TagNumber(17)
   void clearTextCapitalization() => clearField(17);
 
   @$pb.TagNumber(20)
-  $2.DartTextAlign_Enum get textAlign => $_getN(9);
+  $2.DartTextAlign_Enum get textAlign => $_getN(10);
   @$pb.TagNumber(20)
   set textAlign($2.DartTextAlign_Enum v) { setField(20, v); }
   @$pb.TagNumber(20)
-  $core.bool hasTextAlign() => $_has(9);
+  $core.bool hasTextAlign() => $_has(10);
   @$pb.TagNumber(20)
   void clearTextAlign() => clearField(20);
 
   @$pb.TagNumber(22)
-  $2.DartTextDirection_Enum get textDirection => $_getN(10);
+  $2.DartTextDirection_Enum get textDirection => $_getN(11);
   @$pb.TagNumber(22)
   set textDirection($2.DartTextDirection_Enum v) { setField(22, v); }
   @$pb.TagNumber(22)
-  $core.bool hasTextDirection() => $_has(10);
+  $core.bool hasTextDirection() => $_has(11);
   @$pb.TagNumber(22)
   void clearTextDirection() => clearField(22);
 
   @$pb.TagNumber(23)
-  $core.bool get readOnly => $_getBF(11);
+  $core.bool get readOnly => $_getBF(12);
   @$pb.TagNumber(23)
-  set readOnly($core.bool v) { $_setBool(11, v); }
+  set readOnly($core.bool v) { $_setBool(12, v); }
   @$pb.TagNumber(23)
-  $core.bool hasReadOnly() => $_has(11);
+  $core.bool hasReadOnly() => $_has(12);
   @$pb.TagNumber(23)
   void clearReadOnly() => clearField(23);
 
   @$pb.TagNumber(24)
-  $core.bool get showCursor => $_getBF(12);
+  $core.bool get showCursor => $_getBF(13);
   @$pb.TagNumber(24)
-  set showCursor($core.bool v) { $_setBool(12, v); }
+  set showCursor($core.bool v) { $_setBool(13, v); }
   @$pb.TagNumber(24)
-  $core.bool hasShowCursor() => $_has(12);
+  $core.bool hasShowCursor() => $_has(13);
   @$pb.TagNumber(24)
   void clearShowCursor() => clearField(24);
 
   @$pb.TagNumber(25)
-  $core.bool get autofocus => $_getBF(13);
+  $core.bool get autofocus => $_getBF(14);
   @$pb.TagNumber(25)
-  set autofocus($core.bool v) { $_setBool(13, v); }
+  set autofocus($core.bool v) { $_setBool(14, v); }
   @$pb.TagNumber(25)
-  $core.bool hasAutofocus() => $_has(13);
+  $core.bool hasAutofocus() => $_has(14);
   @$pb.TagNumber(25)
   void clearAutofocus() => clearField(25);
 
   @$pb.TagNumber(26)
-  $core.String get obscuringCharacter => $_getSZ(14);
+  $core.String get obscuringCharacter => $_getSZ(15);
   @$pb.TagNumber(26)
-  set obscuringCharacter($core.String v) { $_setString(14, v); }
+  set obscuringCharacter($core.String v) { $_setString(15, v); }
   @$pb.TagNumber(26)
-  $core.bool hasObscuringCharacter() => $_has(14);
+  $core.bool hasObscuringCharacter() => $_has(15);
   @$pb.TagNumber(26)
   void clearObscuringCharacter() => clearField(26);
 
   @$pb.TagNumber(27)
-  $core.bool get obscureText => $_getBF(15);
+  $core.bool get obscureText => $_getBF(16);
   @$pb.TagNumber(27)
-  set obscureText($core.bool v) { $_setBool(15, v); }
+  set obscureText($core.bool v) { $_setBool(16, v); }
   @$pb.TagNumber(27)
-  $core.bool hasObscureText() => $_has(15);
+  $core.bool hasObscureText() => $_has(16);
   @$pb.TagNumber(27)
   void clearObscureText() => clearField(27);
 
   @$pb.TagNumber(28)
-  $core.bool get autocorrect => $_getBF(16);
+  $core.bool get autocorrect => $_getBF(17);
   @$pb.TagNumber(28)
-  set autocorrect($core.bool v) { $_setBool(16, v); }
+  set autocorrect($core.bool v) { $_setBool(17, v); }
   @$pb.TagNumber(28)
-  $core.bool hasAutocorrect() => $_has(16);
+  $core.bool hasAutocorrect() => $_has(17);
   @$pb.TagNumber(28)
   void clearAutocorrect() => clearField(28);
 
   @$pb.TagNumber(29)
-  $2.FlutterSmartDashesType_Enum get smartDashesType => $_getN(17);
+  $2.FlutterSmartDashesType_Enum get smartDashesType => $_getN(18);
   @$pb.TagNumber(29)
   set smartDashesType($2.FlutterSmartDashesType_Enum v) { setField(29, v); }
   @$pb.TagNumber(29)
-  $core.bool hasSmartDashesType() => $_has(17);
+  $core.bool hasSmartDashesType() => $_has(18);
   @$pb.TagNumber(29)
   void clearSmartDashesType() => clearField(29);
 
   @$pb.TagNumber(30)
-  $2.FlutterSmartQuotesType_Enum get smartQuotesType => $_getN(18);
+  $2.FlutterSmartQuotesType_Enum get smartQuotesType => $_getN(19);
   @$pb.TagNumber(30)
   set smartQuotesType($2.FlutterSmartQuotesType_Enum v) { setField(30, v); }
   @$pb.TagNumber(30)
-  $core.bool hasSmartQuotesType() => $_has(18);
+  $core.bool hasSmartQuotesType() => $_has(19);
   @$pb.TagNumber(30)
   void clearSmartQuotesType() => clearField(30);
 
   @$pb.TagNumber(31)
-  $core.bool get enableSuggestions => $_getBF(19);
+  $core.bool get enableSuggestions => $_getBF(20);
   @$pb.TagNumber(31)
-  set enableSuggestions($core.bool v) { $_setBool(19, v); }
+  set enableSuggestions($core.bool v) { $_setBool(20, v); }
   @$pb.TagNumber(31)
-  $core.bool hasEnableSuggestions() => $_has(19);
+  $core.bool hasEnableSuggestions() => $_has(20);
   @$pb.TagNumber(31)
   void clearEnableSuggestions() => clearField(31);
 
   @$pb.TagNumber(32)
-  $core.int get maxLines => $_getIZ(20);
+  $core.int get maxLines => $_getIZ(21);
   @$pb.TagNumber(32)
-  set maxLines($core.int v) { $_setSignedInt32(20, v); }
+  set maxLines($core.int v) { $_setSignedInt32(21, v); }
   @$pb.TagNumber(32)
-  $core.bool hasMaxLines() => $_has(20);
+  $core.bool hasMaxLines() => $_has(21);
   @$pb.TagNumber(32)
   void clearMaxLines() => clearField(32);
 
   @$pb.TagNumber(33)
-  $core.int get minLines => $_getIZ(21);
+  $core.int get minLines => $_getIZ(22);
   @$pb.TagNumber(33)
-  set minLines($core.int v) { $_setSignedInt32(21, v); }
+  set minLines($core.int v) { $_setSignedInt32(22, v); }
   @$pb.TagNumber(33)
-  $core.bool hasMinLines() => $_has(21);
+  $core.bool hasMinLines() => $_has(22);
   @$pb.TagNumber(33)
   void clearMinLines() => clearField(33);
 
   @$pb.TagNumber(34)
-  $core.bool get expands => $_getBF(22);
+  $core.bool get expands => $_getBF(23);
   @$pb.TagNumber(34)
-  set expands($core.bool v) { $_setBool(22, v); }
+  set expands($core.bool v) { $_setBool(23, v); }
   @$pb.TagNumber(34)
-  $core.bool hasExpands() => $_has(22);
+  $core.bool hasExpands() => $_has(23);
   @$pb.TagNumber(34)
   void clearExpands() => clearField(34);
 
   @$pb.TagNumber(35)
-  $core.int get maxLength => $_getIZ(23);
+  $core.int get maxLength => $_getIZ(24);
   @$pb.TagNumber(35)
-  set maxLength($core.int v) { $_setSignedInt32(23, v); }
+  set maxLength($core.int v) { $_setSignedInt32(24, v); }
   @$pb.TagNumber(35)
-  $core.bool hasMaxLength() => $_has(23);
+  $core.bool hasMaxLength() => $_has(24);
   @$pb.TagNumber(35)
   void clearMaxLength() => clearField(35);
 
   @$pb.TagNumber(36)
-  $2.FlutterMaxLengthEnforcement_Enum get maxLengthEnforcement => $_getN(24);
+  $2.FlutterMaxLengthEnforcement_Enum get maxLengthEnforcement => $_getN(25);
   @$pb.TagNumber(36)
   set maxLengthEnforcement($2.FlutterMaxLengthEnforcement_Enum v) { setField(36, v); }
   @$pb.TagNumber(36)
-  $core.bool hasMaxLengthEnforcement() => $_has(24);
+  $core.bool hasMaxLengthEnforcement() => $_has(25);
   @$pb.TagNumber(36)
   void clearMaxLengthEnforcement() => clearField(36);
 
   @$pb.TagNumber(42)
-  $core.bool get enabled => $_getBF(25);
+  $core.bool get enabled => $_getBF(26);
   @$pb.TagNumber(42)
-  set enabled($core.bool v) { $_setBool(25, v); }
+  set enabled($core.bool v) { $_setBool(26, v); }
   @$pb.TagNumber(42)
-  $core.bool hasEnabled() => $_has(25);
+  $core.bool hasEnabled() => $_has(26);
   @$pb.TagNumber(42)
   void clearEnabled() => clearField(42);
 
   @$pb.TagNumber(43)
-  $core.double get cursorWidth => $_getN(26);
+  $core.double get cursorWidth => $_getN(27);
   @$pb.TagNumber(43)
-  set cursorWidth($core.double v) { $_setDouble(26, v); }
+  set cursorWidth($core.double v) { $_setDouble(27, v); }
   @$pb.TagNumber(43)
-  $core.bool hasCursorWidth() => $_has(26);
+  $core.bool hasCursorWidth() => $_has(27);
   @$pb.TagNumber(43)
   void clearCursorWidth() => clearField(43);
 
   @$pb.TagNumber(44)
-  $core.double get cursorHeight => $_getN(27);
+  $core.double get cursorHeight => $_getN(28);
   @$pb.TagNumber(44)
-  set cursorHeight($core.double v) { $_setDouble(27, v); }
+  set cursorHeight($core.double v) { $_setDouble(28, v); }
   @$pb.TagNumber(44)
-  $core.bool hasCursorHeight() => $_has(27);
+  $core.bool hasCursorHeight() => $_has(28);
   @$pb.TagNumber(44)
   void clearCursorHeight() => clearField(44);
 
   @$pb.TagNumber(46)
-  $core.bool get cursorOpacityAnimates => $_getBF(28);
+  $core.bool get cursorOpacityAnimates => $_getBF(29);
   @$pb.TagNumber(46)
-  set cursorOpacityAnimates($core.bool v) { $_setBool(28, v); }
+  set cursorOpacityAnimates($core.bool v) { $_setBool(29, v); }
   @$pb.TagNumber(46)
-  $core.bool hasCursorOpacityAnimates() => $_has(28);
+  $core.bool hasCursorOpacityAnimates() => $_has(29);
   @$pb.TagNumber(46)
   void clearCursorOpacityAnimates() => clearField(46);
 
   @$pb.TagNumber(47)
-  $1.DartColorExpression get cursorColor => $_getN(29);
+  $1.DartColorExpression get cursorColor => $_getN(30);
   @$pb.TagNumber(47)
   set cursorColor($1.DartColorExpression v) { setField(47, v); }
   @$pb.TagNumber(47)
-  $core.bool hasCursorColor() => $_has(29);
+  $core.bool hasCursorColor() => $_has(30);
   @$pb.TagNumber(47)
   void clearCursorColor() => clearField(47);
   @$pb.TagNumber(47)
-  $1.DartColorExpression ensureCursorColor() => $_ensure(29);
+  $1.DartColorExpression ensureCursorColor() => $_ensure(30);
 
   @$pb.TagNumber(48)
-  $2.DartBoxHeightStyle_Enum get selectionHeightStyle => $_getN(30);
+  $2.DartBoxHeightStyle_Enum get selectionHeightStyle => $_getN(31);
   @$pb.TagNumber(48)
   set selectionHeightStyle($2.DartBoxHeightStyle_Enum v) { setField(48, v); }
   @$pb.TagNumber(48)
-  $core.bool hasSelectionHeightStyle() => $_has(30);
+  $core.bool hasSelectionHeightStyle() => $_has(31);
   @$pb.TagNumber(48)
   void clearSelectionHeightStyle() => clearField(48);
 
   @$pb.TagNumber(49)
-  $2.DartBoxWidthStyle_Enum get selectionWidthStyle => $_getN(31);
+  $2.DartBoxWidthStyle_Enum get selectionWidthStyle => $_getN(32);
   @$pb.TagNumber(49)
   set selectionWidthStyle($2.DartBoxWidthStyle_Enum v) { setField(49, v); }
   @$pb.TagNumber(49)
-  $core.bool hasSelectionWidthStyle() => $_has(31);
+  $core.bool hasSelectionWidthStyle() => $_has(32);
   @$pb.TagNumber(49)
   void clearSelectionWidthStyle() => clearField(49);
 
   @$pb.TagNumber(50)
-  $2.DartBrightness_Enum get keyboardAppearance => $_getN(32);
+  $2.DartBrightness_Enum get keyboardAppearance => $_getN(33);
   @$pb.TagNumber(50)
   set keyboardAppearance($2.DartBrightness_Enum v) { setField(50, v); }
   @$pb.TagNumber(50)
-  $core.bool hasKeyboardAppearance() => $_has(32);
+  $core.bool hasKeyboardAppearance() => $_has(33);
   @$pb.TagNumber(50)
   void clearKeyboardAppearance() => clearField(50);
 
   @$pb.TagNumber(52)
-  $2.FlutterDragStartBehavior_Enum get dragStartBehavior => $_getN(33);
+  $2.FlutterDragStartBehavior_Enum get dragStartBehavior => $_getN(34);
   @$pb.TagNumber(52)
   set dragStartBehavior($2.FlutterDragStartBehavior_Enum v) { setField(52, v); }
   @$pb.TagNumber(52)
-  $core.bool hasDragStartBehavior() => $_has(33);
+  $core.bool hasDragStartBehavior() => $_has(34);
   @$pb.TagNumber(52)
   void clearDragStartBehavior() => clearField(52);
 
   @$pb.TagNumber(53)
-  $core.bool get enableInteractiveSelection => $_getBF(34);
+  $core.bool get enableInteractiveSelection => $_getBF(35);
   @$pb.TagNumber(53)
-  set enableInteractiveSelection($core.bool v) { $_setBool(34, v); }
+  set enableInteractiveSelection($core.bool v) { $_setBool(35, v); }
   @$pb.TagNumber(53)
-  $core.bool hasEnableInteractiveSelection() => $_has(34);
+  $core.bool hasEnableInteractiveSelection() => $_has(35);
   @$pb.TagNumber(53)
   void clearEnableInteractiveSelection() => clearField(53);
 
   @$pb.TagNumber(58)
-  $core.List<$core.String> get autofillHints => $_getList(35);
+  $core.List<$core.String> get autofillHints => $_getList(36);
 
   @$pb.TagNumber(60)
-  $2.DartClip_Enum get clipBehavior => $_getN(36);
+  $2.DartClip_Enum get clipBehavior => $_getN(37);
   @$pb.TagNumber(60)
   set clipBehavior($2.DartClip_Enum v) { setField(60, v); }
   @$pb.TagNumber(60)
-  $core.bool hasClipBehavior() => $_has(36);
+  $core.bool hasClipBehavior() => $_has(37);
   @$pb.TagNumber(60)
   void clearClipBehavior() => clearField(60);
 
   @$pb.TagNumber(61)
-  $core.String get restorationId => $_getSZ(37);
+  $core.String get restorationId => $_getSZ(38);
   @$pb.TagNumber(61)
-  set restorationId($core.String v) { $_setString(37, v); }
+  set restorationId($core.String v) { $_setString(38, v); }
   @$pb.TagNumber(61)
-  $core.bool hasRestorationId() => $_has(37);
+  $core.bool hasRestorationId() => $_has(38);
   @$pb.TagNumber(61)
   void clearRestorationId() => clearField(61);
 
   @$pb.TagNumber(62)
-  $core.bool get scribbleEnabled => $_getBF(38);
+  $core.bool get scribbleEnabled => $_getBF(39);
   @$pb.TagNumber(62)
-  set scribbleEnabled($core.bool v) { $_setBool(38, v); }
+  set scribbleEnabled($core.bool v) { $_setBool(39, v); }
   @$pb.TagNumber(62)
-  $core.bool hasScribbleEnabled() => $_has(38);
+  $core.bool hasScribbleEnabled() => $_has(39);
   @$pb.TagNumber(62)
   void clearScribbleEnabled() => clearField(62);
 
   @$pb.TagNumber(63)
-  $core.bool get enableIMEPersonalizedLearning => $_getBF(39);
+  $core.bool get enableIMEPersonalizedLearning => $_getBF(40);
   @$pb.TagNumber(63)
-  set enableIMEPersonalizedLearning($core.bool v) { $_setBool(39, v); }
+  set enableIMEPersonalizedLearning($core.bool v) { $_setBool(40, v); }
   @$pb.TagNumber(63)
-  $core.bool hasEnableIMEPersonalizedLearning() => $_has(39);
+  $core.bool hasEnableIMEPersonalizedLearning() => $_has(40);
   @$pb.TagNumber(63)
   void clearEnableIMEPersonalizedLearning() => clearField(63);
 }
@@ -5358,6 +5566,7 @@ class CupertinoTextField extends $pb.GeneratedMessage {
 class CupertinoTextFieldNamedBorderless extends $pb.GeneratedMessage {
   factory CupertinoTextFieldNamedBorderless({
     $1.FlutterKeyExpression? key,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $core.String? placeholder,
     WidgetExpression? prefix,
     $2.OverlayVisibilityMode_Enum? prefixMode,
@@ -5401,6 +5610,9 @@ class CupertinoTextFieldNamedBorderless extends $pb.GeneratedMessage {
     final $result = create();
     if (key != null) {
       $result.key = key;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (placeholder != null) {
       $result.placeholder = placeholder;
@@ -5527,6 +5739,7 @@ class CupertinoTextFieldNamedBorderless extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CupertinoTextFieldNamedBorderless', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(7, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOS(8, _omitFieldNames ? '' : 'placeholder')
     ..aOM<WidgetExpression>(10, _omitFieldNames ? '' : 'prefix', subBuilder: WidgetExpression.create)
     ..e<$2.OverlayVisibilityMode_Enum>(11, _omitFieldNames ? '' : 'prefixMode', $pb.PbFieldType.OE, defaultOrMaker: $2.OverlayVisibilityMode_Enum.NEVER, valueOf: $2.OverlayVisibilityMode_Enum.valueOf, enumValues: $2.OverlayVisibilityMode_Enum.values)
@@ -5601,354 +5814,365 @@ class CupertinoTextFieldNamedBorderless extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(1);
+  @$pb.TagNumber(7)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(7, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasPadding() => $_has(1);
+  @$pb.TagNumber(7)
+  void clearPadding() => clearField(7);
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(1);
+
   @$pb.TagNumber(8)
-  $core.String get placeholder => $_getSZ(1);
+  $core.String get placeholder => $_getSZ(2);
   @$pb.TagNumber(8)
-  set placeholder($core.String v) { $_setString(1, v); }
+  set placeholder($core.String v) { $_setString(2, v); }
   @$pb.TagNumber(8)
-  $core.bool hasPlaceholder() => $_has(1);
+  $core.bool hasPlaceholder() => $_has(2);
   @$pb.TagNumber(8)
   void clearPlaceholder() => clearField(8);
 
   @$pb.TagNumber(10)
-  WidgetExpression get prefix => $_getN(2);
+  WidgetExpression get prefix => $_getN(3);
   @$pb.TagNumber(10)
   set prefix(WidgetExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasPrefix() => $_has(2);
+  $core.bool hasPrefix() => $_has(3);
   @$pb.TagNumber(10)
   void clearPrefix() => clearField(10);
   @$pb.TagNumber(10)
-  WidgetExpression ensurePrefix() => $_ensure(2);
+  WidgetExpression ensurePrefix() => $_ensure(3);
 
   @$pb.TagNumber(11)
-  $2.OverlayVisibilityMode_Enum get prefixMode => $_getN(3);
+  $2.OverlayVisibilityMode_Enum get prefixMode => $_getN(4);
   @$pb.TagNumber(11)
   set prefixMode($2.OverlayVisibilityMode_Enum v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasPrefixMode() => $_has(3);
+  $core.bool hasPrefixMode() => $_has(4);
   @$pb.TagNumber(11)
   void clearPrefixMode() => clearField(11);
 
   @$pb.TagNumber(12)
-  WidgetExpression get suffix => $_getN(4);
+  WidgetExpression get suffix => $_getN(5);
   @$pb.TagNumber(12)
   set suffix(WidgetExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
-  $core.bool hasSuffix() => $_has(4);
+  $core.bool hasSuffix() => $_has(5);
   @$pb.TagNumber(12)
   void clearSuffix() => clearField(12);
   @$pb.TagNumber(12)
-  WidgetExpression ensureSuffix() => $_ensure(4);
+  WidgetExpression ensureSuffix() => $_ensure(5);
 
   @$pb.TagNumber(13)
-  $2.OverlayVisibilityMode_Enum get suffixMode => $_getN(5);
+  $2.OverlayVisibilityMode_Enum get suffixMode => $_getN(6);
   @$pb.TagNumber(13)
   set suffixMode($2.OverlayVisibilityMode_Enum v) { setField(13, v); }
   @$pb.TagNumber(13)
-  $core.bool hasSuffixMode() => $_has(5);
+  $core.bool hasSuffixMode() => $_has(6);
   @$pb.TagNumber(13)
   void clearSuffixMode() => clearField(13);
 
   @$pb.TagNumber(14)
-  $2.OverlayVisibilityMode_Enum get clearButtonMode => $_getN(6);
+  $2.OverlayVisibilityMode_Enum get clearButtonMode => $_getN(7);
   @$pb.TagNumber(14)
   set clearButtonMode($2.OverlayVisibilityMode_Enum v) { setField(14, v); }
   @$pb.TagNumber(14)
-  $core.bool hasClearButtonMode() => $_has(6);
+  $core.bool hasClearButtonMode() => $_has(7);
   @$pb.TagNumber(14)
   void clearClearButtonMode() => clearField(14);
 
   @$pb.TagNumber(16)
-  $2.FlutterTextInputAction_Enum get textInputAction => $_getN(7);
+  $2.FlutterTextInputAction_Enum get textInputAction => $_getN(8);
   @$pb.TagNumber(16)
   set textInputAction($2.FlutterTextInputAction_Enum v) { setField(16, v); }
   @$pb.TagNumber(16)
-  $core.bool hasTextInputAction() => $_has(7);
+  $core.bool hasTextInputAction() => $_has(8);
   @$pb.TagNumber(16)
   void clearTextInputAction() => clearField(16);
 
   @$pb.TagNumber(17)
-  $2.FlutterTextCapitalization_Enum get textCapitalization => $_getN(8);
+  $2.FlutterTextCapitalization_Enum get textCapitalization => $_getN(9);
   @$pb.TagNumber(17)
   set textCapitalization($2.FlutterTextCapitalization_Enum v) { setField(17, v); }
   @$pb.TagNumber(17)
-  $core.bool hasTextCapitalization() => $_has(8);
+  $core.bool hasTextCapitalization() => $_has(9);
   @$pb.TagNumber(17)
   void clearTextCapitalization() => clearField(17);
 
   @$pb.TagNumber(20)
-  $2.DartTextAlign_Enum get textAlign => $_getN(9);
+  $2.DartTextAlign_Enum get textAlign => $_getN(10);
   @$pb.TagNumber(20)
   set textAlign($2.DartTextAlign_Enum v) { setField(20, v); }
   @$pb.TagNumber(20)
-  $core.bool hasTextAlign() => $_has(9);
+  $core.bool hasTextAlign() => $_has(10);
   @$pb.TagNumber(20)
   void clearTextAlign() => clearField(20);
 
   @$pb.TagNumber(22)
-  $2.DartTextDirection_Enum get textDirection => $_getN(10);
+  $2.DartTextDirection_Enum get textDirection => $_getN(11);
   @$pb.TagNumber(22)
   set textDirection($2.DartTextDirection_Enum v) { setField(22, v); }
   @$pb.TagNumber(22)
-  $core.bool hasTextDirection() => $_has(10);
+  $core.bool hasTextDirection() => $_has(11);
   @$pb.TagNumber(22)
   void clearTextDirection() => clearField(22);
 
   @$pb.TagNumber(23)
-  $core.bool get readOnly => $_getBF(11);
+  $core.bool get readOnly => $_getBF(12);
   @$pb.TagNumber(23)
-  set readOnly($core.bool v) { $_setBool(11, v); }
+  set readOnly($core.bool v) { $_setBool(12, v); }
   @$pb.TagNumber(23)
-  $core.bool hasReadOnly() => $_has(11);
+  $core.bool hasReadOnly() => $_has(12);
   @$pb.TagNumber(23)
   void clearReadOnly() => clearField(23);
 
   @$pb.TagNumber(24)
-  $core.bool get showCursor => $_getBF(12);
+  $core.bool get showCursor => $_getBF(13);
   @$pb.TagNumber(24)
-  set showCursor($core.bool v) { $_setBool(12, v); }
+  set showCursor($core.bool v) { $_setBool(13, v); }
   @$pb.TagNumber(24)
-  $core.bool hasShowCursor() => $_has(12);
+  $core.bool hasShowCursor() => $_has(13);
   @$pb.TagNumber(24)
   void clearShowCursor() => clearField(24);
 
   @$pb.TagNumber(25)
-  $core.bool get autofocus => $_getBF(13);
+  $core.bool get autofocus => $_getBF(14);
   @$pb.TagNumber(25)
-  set autofocus($core.bool v) { $_setBool(13, v); }
+  set autofocus($core.bool v) { $_setBool(14, v); }
   @$pb.TagNumber(25)
-  $core.bool hasAutofocus() => $_has(13);
+  $core.bool hasAutofocus() => $_has(14);
   @$pb.TagNumber(25)
   void clearAutofocus() => clearField(25);
 
   @$pb.TagNumber(26)
-  $core.String get obscuringCharacter => $_getSZ(14);
+  $core.String get obscuringCharacter => $_getSZ(15);
   @$pb.TagNumber(26)
-  set obscuringCharacter($core.String v) { $_setString(14, v); }
+  set obscuringCharacter($core.String v) { $_setString(15, v); }
   @$pb.TagNumber(26)
-  $core.bool hasObscuringCharacter() => $_has(14);
+  $core.bool hasObscuringCharacter() => $_has(15);
   @$pb.TagNumber(26)
   void clearObscuringCharacter() => clearField(26);
 
   @$pb.TagNumber(27)
-  $core.bool get obscureText => $_getBF(15);
+  $core.bool get obscureText => $_getBF(16);
   @$pb.TagNumber(27)
-  set obscureText($core.bool v) { $_setBool(15, v); }
+  set obscureText($core.bool v) { $_setBool(16, v); }
   @$pb.TagNumber(27)
-  $core.bool hasObscureText() => $_has(15);
+  $core.bool hasObscureText() => $_has(16);
   @$pb.TagNumber(27)
   void clearObscureText() => clearField(27);
 
   @$pb.TagNumber(28)
-  $core.bool get autocorrect => $_getBF(16);
+  $core.bool get autocorrect => $_getBF(17);
   @$pb.TagNumber(28)
-  set autocorrect($core.bool v) { $_setBool(16, v); }
+  set autocorrect($core.bool v) { $_setBool(17, v); }
   @$pb.TagNumber(28)
-  $core.bool hasAutocorrect() => $_has(16);
+  $core.bool hasAutocorrect() => $_has(17);
   @$pb.TagNumber(28)
   void clearAutocorrect() => clearField(28);
 
   @$pb.TagNumber(29)
-  $2.FlutterSmartDashesType_Enum get smartDashesType => $_getN(17);
+  $2.FlutterSmartDashesType_Enum get smartDashesType => $_getN(18);
   @$pb.TagNumber(29)
   set smartDashesType($2.FlutterSmartDashesType_Enum v) { setField(29, v); }
   @$pb.TagNumber(29)
-  $core.bool hasSmartDashesType() => $_has(17);
+  $core.bool hasSmartDashesType() => $_has(18);
   @$pb.TagNumber(29)
   void clearSmartDashesType() => clearField(29);
 
   @$pb.TagNumber(30)
-  $2.FlutterSmartQuotesType_Enum get smartQuotesType => $_getN(18);
+  $2.FlutterSmartQuotesType_Enum get smartQuotesType => $_getN(19);
   @$pb.TagNumber(30)
   set smartQuotesType($2.FlutterSmartQuotesType_Enum v) { setField(30, v); }
   @$pb.TagNumber(30)
-  $core.bool hasSmartQuotesType() => $_has(18);
+  $core.bool hasSmartQuotesType() => $_has(19);
   @$pb.TagNumber(30)
   void clearSmartQuotesType() => clearField(30);
 
   @$pb.TagNumber(31)
-  $core.bool get enableSuggestions => $_getBF(19);
+  $core.bool get enableSuggestions => $_getBF(20);
   @$pb.TagNumber(31)
-  set enableSuggestions($core.bool v) { $_setBool(19, v); }
+  set enableSuggestions($core.bool v) { $_setBool(20, v); }
   @$pb.TagNumber(31)
-  $core.bool hasEnableSuggestions() => $_has(19);
+  $core.bool hasEnableSuggestions() => $_has(20);
   @$pb.TagNumber(31)
   void clearEnableSuggestions() => clearField(31);
 
   @$pb.TagNumber(32)
-  $core.int get maxLines => $_getIZ(20);
+  $core.int get maxLines => $_getIZ(21);
   @$pb.TagNumber(32)
-  set maxLines($core.int v) { $_setSignedInt32(20, v); }
+  set maxLines($core.int v) { $_setSignedInt32(21, v); }
   @$pb.TagNumber(32)
-  $core.bool hasMaxLines() => $_has(20);
+  $core.bool hasMaxLines() => $_has(21);
   @$pb.TagNumber(32)
   void clearMaxLines() => clearField(32);
 
   @$pb.TagNumber(33)
-  $core.int get minLines => $_getIZ(21);
+  $core.int get minLines => $_getIZ(22);
   @$pb.TagNumber(33)
-  set minLines($core.int v) { $_setSignedInt32(21, v); }
+  set minLines($core.int v) { $_setSignedInt32(22, v); }
   @$pb.TagNumber(33)
-  $core.bool hasMinLines() => $_has(21);
+  $core.bool hasMinLines() => $_has(22);
   @$pb.TagNumber(33)
   void clearMinLines() => clearField(33);
 
   @$pb.TagNumber(34)
-  $core.bool get expands => $_getBF(22);
+  $core.bool get expands => $_getBF(23);
   @$pb.TagNumber(34)
-  set expands($core.bool v) { $_setBool(22, v); }
+  set expands($core.bool v) { $_setBool(23, v); }
   @$pb.TagNumber(34)
-  $core.bool hasExpands() => $_has(22);
+  $core.bool hasExpands() => $_has(23);
   @$pb.TagNumber(34)
   void clearExpands() => clearField(34);
 
   @$pb.TagNumber(35)
-  $core.int get maxLength => $_getIZ(23);
+  $core.int get maxLength => $_getIZ(24);
   @$pb.TagNumber(35)
-  set maxLength($core.int v) { $_setSignedInt32(23, v); }
+  set maxLength($core.int v) { $_setSignedInt32(24, v); }
   @$pb.TagNumber(35)
-  $core.bool hasMaxLength() => $_has(23);
+  $core.bool hasMaxLength() => $_has(24);
   @$pb.TagNumber(35)
   void clearMaxLength() => clearField(35);
 
   @$pb.TagNumber(36)
-  $2.FlutterMaxLengthEnforcement_Enum get maxLengthEnforcement => $_getN(24);
+  $2.FlutterMaxLengthEnforcement_Enum get maxLengthEnforcement => $_getN(25);
   @$pb.TagNumber(36)
   set maxLengthEnforcement($2.FlutterMaxLengthEnforcement_Enum v) { setField(36, v); }
   @$pb.TagNumber(36)
-  $core.bool hasMaxLengthEnforcement() => $_has(24);
+  $core.bool hasMaxLengthEnforcement() => $_has(25);
   @$pb.TagNumber(36)
   void clearMaxLengthEnforcement() => clearField(36);
 
   @$pb.TagNumber(42)
-  $core.bool get enabled => $_getBF(25);
+  $core.bool get enabled => $_getBF(26);
   @$pb.TagNumber(42)
-  set enabled($core.bool v) { $_setBool(25, v); }
+  set enabled($core.bool v) { $_setBool(26, v); }
   @$pb.TagNumber(42)
-  $core.bool hasEnabled() => $_has(25);
+  $core.bool hasEnabled() => $_has(26);
   @$pb.TagNumber(42)
   void clearEnabled() => clearField(42);
 
   @$pb.TagNumber(43)
-  $core.double get cursorWidth => $_getN(26);
+  $core.double get cursorWidth => $_getN(27);
   @$pb.TagNumber(43)
-  set cursorWidth($core.double v) { $_setDouble(26, v); }
+  set cursorWidth($core.double v) { $_setDouble(27, v); }
   @$pb.TagNumber(43)
-  $core.bool hasCursorWidth() => $_has(26);
+  $core.bool hasCursorWidth() => $_has(27);
   @$pb.TagNumber(43)
   void clearCursorWidth() => clearField(43);
 
   @$pb.TagNumber(44)
-  $core.double get cursorHeight => $_getN(27);
+  $core.double get cursorHeight => $_getN(28);
   @$pb.TagNumber(44)
-  set cursorHeight($core.double v) { $_setDouble(27, v); }
+  set cursorHeight($core.double v) { $_setDouble(28, v); }
   @$pb.TagNumber(44)
-  $core.bool hasCursorHeight() => $_has(27);
+  $core.bool hasCursorHeight() => $_has(28);
   @$pb.TagNumber(44)
   void clearCursorHeight() => clearField(44);
 
   @$pb.TagNumber(46)
-  $core.bool get cursorOpacityAnimates => $_getBF(28);
+  $core.bool get cursorOpacityAnimates => $_getBF(29);
   @$pb.TagNumber(46)
-  set cursorOpacityAnimates($core.bool v) { $_setBool(28, v); }
+  set cursorOpacityAnimates($core.bool v) { $_setBool(29, v); }
   @$pb.TagNumber(46)
-  $core.bool hasCursorOpacityAnimates() => $_has(28);
+  $core.bool hasCursorOpacityAnimates() => $_has(29);
   @$pb.TagNumber(46)
   void clearCursorOpacityAnimates() => clearField(46);
 
   @$pb.TagNumber(47)
-  $1.DartColorExpression get cursorColor => $_getN(29);
+  $1.DartColorExpression get cursorColor => $_getN(30);
   @$pb.TagNumber(47)
   set cursorColor($1.DartColorExpression v) { setField(47, v); }
   @$pb.TagNumber(47)
-  $core.bool hasCursorColor() => $_has(29);
+  $core.bool hasCursorColor() => $_has(30);
   @$pb.TagNumber(47)
   void clearCursorColor() => clearField(47);
   @$pb.TagNumber(47)
-  $1.DartColorExpression ensureCursorColor() => $_ensure(29);
+  $1.DartColorExpression ensureCursorColor() => $_ensure(30);
 
   @$pb.TagNumber(48)
-  $2.DartBoxHeightStyle_Enum get selectionHeightStyle => $_getN(30);
+  $2.DartBoxHeightStyle_Enum get selectionHeightStyle => $_getN(31);
   @$pb.TagNumber(48)
   set selectionHeightStyle($2.DartBoxHeightStyle_Enum v) { setField(48, v); }
   @$pb.TagNumber(48)
-  $core.bool hasSelectionHeightStyle() => $_has(30);
+  $core.bool hasSelectionHeightStyle() => $_has(31);
   @$pb.TagNumber(48)
   void clearSelectionHeightStyle() => clearField(48);
 
   @$pb.TagNumber(49)
-  $2.DartBoxWidthStyle_Enum get selectionWidthStyle => $_getN(31);
+  $2.DartBoxWidthStyle_Enum get selectionWidthStyle => $_getN(32);
   @$pb.TagNumber(49)
   set selectionWidthStyle($2.DartBoxWidthStyle_Enum v) { setField(49, v); }
   @$pb.TagNumber(49)
-  $core.bool hasSelectionWidthStyle() => $_has(31);
+  $core.bool hasSelectionWidthStyle() => $_has(32);
   @$pb.TagNumber(49)
   void clearSelectionWidthStyle() => clearField(49);
 
   @$pb.TagNumber(50)
-  $2.DartBrightness_Enum get keyboardAppearance => $_getN(32);
+  $2.DartBrightness_Enum get keyboardAppearance => $_getN(33);
   @$pb.TagNumber(50)
   set keyboardAppearance($2.DartBrightness_Enum v) { setField(50, v); }
   @$pb.TagNumber(50)
-  $core.bool hasKeyboardAppearance() => $_has(32);
+  $core.bool hasKeyboardAppearance() => $_has(33);
   @$pb.TagNumber(50)
   void clearKeyboardAppearance() => clearField(50);
 
   @$pb.TagNumber(52)
-  $2.FlutterDragStartBehavior_Enum get dragStartBehavior => $_getN(33);
+  $2.FlutterDragStartBehavior_Enum get dragStartBehavior => $_getN(34);
   @$pb.TagNumber(52)
   set dragStartBehavior($2.FlutterDragStartBehavior_Enum v) { setField(52, v); }
   @$pb.TagNumber(52)
-  $core.bool hasDragStartBehavior() => $_has(33);
+  $core.bool hasDragStartBehavior() => $_has(34);
   @$pb.TagNumber(52)
   void clearDragStartBehavior() => clearField(52);
 
   @$pb.TagNumber(53)
-  $core.bool get enableInteractiveSelection => $_getBF(34);
+  $core.bool get enableInteractiveSelection => $_getBF(35);
   @$pb.TagNumber(53)
-  set enableInteractiveSelection($core.bool v) { $_setBool(34, v); }
+  set enableInteractiveSelection($core.bool v) { $_setBool(35, v); }
   @$pb.TagNumber(53)
-  $core.bool hasEnableInteractiveSelection() => $_has(34);
+  $core.bool hasEnableInteractiveSelection() => $_has(35);
   @$pb.TagNumber(53)
   void clearEnableInteractiveSelection() => clearField(53);
 
   @$pb.TagNumber(58)
-  $core.List<$core.String> get autofillHints => $_getList(35);
+  $core.List<$core.String> get autofillHints => $_getList(36);
 
   @$pb.TagNumber(60)
-  $2.DartClip_Enum get clipBehavior => $_getN(36);
+  $2.DartClip_Enum get clipBehavior => $_getN(37);
   @$pb.TagNumber(60)
   set clipBehavior($2.DartClip_Enum v) { setField(60, v); }
   @$pb.TagNumber(60)
-  $core.bool hasClipBehavior() => $_has(36);
+  $core.bool hasClipBehavior() => $_has(37);
   @$pb.TagNumber(60)
   void clearClipBehavior() => clearField(60);
 
   @$pb.TagNumber(61)
-  $core.String get restorationId => $_getSZ(37);
+  $core.String get restorationId => $_getSZ(38);
   @$pb.TagNumber(61)
-  set restorationId($core.String v) { $_setString(37, v); }
+  set restorationId($core.String v) { $_setString(38, v); }
   @$pb.TagNumber(61)
-  $core.bool hasRestorationId() => $_has(37);
+  $core.bool hasRestorationId() => $_has(38);
   @$pb.TagNumber(61)
   void clearRestorationId() => clearField(61);
 
   @$pb.TagNumber(62)
-  $core.bool get scribbleEnabled => $_getBF(38);
+  $core.bool get scribbleEnabled => $_getBF(39);
   @$pb.TagNumber(62)
-  set scribbleEnabled($core.bool v) { $_setBool(38, v); }
+  set scribbleEnabled($core.bool v) { $_setBool(39, v); }
   @$pb.TagNumber(62)
-  $core.bool hasScribbleEnabled() => $_has(38);
+  $core.bool hasScribbleEnabled() => $_has(39);
   @$pb.TagNumber(62)
   void clearScribbleEnabled() => clearField(62);
 
   @$pb.TagNumber(63)
-  $core.bool get enableIMEPersonalizedLearning => $_getBF(39);
+  $core.bool get enableIMEPersonalizedLearning => $_getBF(40);
   @$pb.TagNumber(63)
-  set enableIMEPersonalizedLearning($core.bool v) { $_setBool(39, v); }
+  set enableIMEPersonalizedLearning($core.bool v) { $_setBool(40, v); }
   @$pb.TagNumber(63)
-  $core.bool hasEnableIMEPersonalizedLearning() => $_has(39);
+  $core.bool hasEnableIMEPersonalizedLearning() => $_has(40);
   @$pb.TagNumber(63)
   void clearEnableIMEPersonalizedLearning() => clearField(63);
 }
@@ -5958,6 +6182,7 @@ class CupertinoTextFormFieldRow extends $pb.GeneratedMessage {
   factory CupertinoTextFormFieldRow({
     $1.FlutterKeyExpression? key,
     WidgetExpression? prefix,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $core.String? initialValue,
     $2.FlutterTextCapitalization_Enum? textCapitalization,
     $2.FlutterTextInputAction_Enum? textInputAction,
@@ -5992,6 +6217,9 @@ class CupertinoTextFormFieldRow extends $pb.GeneratedMessage {
     }
     if (prefix != null) {
       $result.prefix = prefix;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (initialValue != null) {
       $result.initialValue = initialValue;
@@ -6083,6 +6311,7 @@ class CupertinoTextFormFieldRow extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CupertinoTextFormFieldRow', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'prefix', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(4, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOS(6, _omitFieldNames ? '' : 'initialValue')
     ..e<$2.FlutterTextCapitalization_Enum>(10, _omitFieldNames ? '' : 'textCapitalization', $pb.PbFieldType.OE, defaultOrMaker: $2.FlutterTextCapitalization_Enum.WORDS, valueOf: $2.FlutterTextCapitalization_Enum.valueOf, enumValues: $2.FlutterTextCapitalization_Enum.values)
     ..e<$2.FlutterTextInputAction_Enum>(11, _omitFieldNames ? '' : 'textInputAction', $pb.PbFieldType.OE, defaultOrMaker: $2.FlutterTextInputAction_Enum.NONE, valueOf: $2.FlutterTextInputAction_Enum.valueOf, enumValues: $2.FlutterTextInputAction_Enum.values)
@@ -6156,242 +6385,253 @@ class CupertinoTextFormFieldRow extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   WidgetExpression ensurePrefix() => $_ensure(1);
 
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(2);
+  @$pb.TagNumber(4)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasPadding() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearPadding() => clearField(4);
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(2);
+
   @$pb.TagNumber(6)
-  $core.String get initialValue => $_getSZ(2);
+  $core.String get initialValue => $_getSZ(3);
   @$pb.TagNumber(6)
-  set initialValue($core.String v) { $_setString(2, v); }
+  set initialValue($core.String v) { $_setString(3, v); }
   @$pb.TagNumber(6)
-  $core.bool hasInitialValue() => $_has(2);
+  $core.bool hasInitialValue() => $_has(3);
   @$pb.TagNumber(6)
   void clearInitialValue() => clearField(6);
 
   @$pb.TagNumber(10)
-  $2.FlutterTextCapitalization_Enum get textCapitalization => $_getN(3);
+  $2.FlutterTextCapitalization_Enum get textCapitalization => $_getN(4);
   @$pb.TagNumber(10)
   set textCapitalization($2.FlutterTextCapitalization_Enum v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasTextCapitalization() => $_has(3);
+  $core.bool hasTextCapitalization() => $_has(4);
   @$pb.TagNumber(10)
   void clearTextCapitalization() => clearField(10);
 
   @$pb.TagNumber(11)
-  $2.FlutterTextInputAction_Enum get textInputAction => $_getN(4);
+  $2.FlutterTextInputAction_Enum get textInputAction => $_getN(5);
   @$pb.TagNumber(11)
   set textInputAction($2.FlutterTextInputAction_Enum v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasTextInputAction() => $_has(4);
+  $core.bool hasTextInputAction() => $_has(5);
   @$pb.TagNumber(11)
   void clearTextInputAction() => clearField(11);
 
   @$pb.TagNumber(14)
-  $2.DartTextDirection_Enum get textDirection => $_getN(5);
+  $2.DartTextDirection_Enum get textDirection => $_getN(6);
   @$pb.TagNumber(14)
   set textDirection($2.DartTextDirection_Enum v) { setField(14, v); }
   @$pb.TagNumber(14)
-  $core.bool hasTextDirection() => $_has(5);
+  $core.bool hasTextDirection() => $_has(6);
   @$pb.TagNumber(14)
   void clearTextDirection() => clearField(14);
 
   @$pb.TagNumber(15)
-  $2.DartTextAlign_Enum get textAlign => $_getN(6);
+  $2.DartTextAlign_Enum get textAlign => $_getN(7);
   @$pb.TagNumber(15)
   set textAlign($2.DartTextAlign_Enum v) { setField(15, v); }
   @$pb.TagNumber(15)
-  $core.bool hasTextAlign() => $_has(6);
+  $core.bool hasTextAlign() => $_has(7);
   @$pb.TagNumber(15)
   void clearTextAlign() => clearField(15);
 
   @$pb.TagNumber(17)
-  $core.bool get autofocus => $_getBF(7);
+  $core.bool get autofocus => $_getBF(8);
   @$pb.TagNumber(17)
-  set autofocus($core.bool v) { $_setBool(7, v); }
+  set autofocus($core.bool v) { $_setBool(8, v); }
   @$pb.TagNumber(17)
-  $core.bool hasAutofocus() => $_has(7);
+  $core.bool hasAutofocus() => $_has(8);
   @$pb.TagNumber(17)
   void clearAutofocus() => clearField(17);
 
   @$pb.TagNumber(18)
-  $core.bool get readOnly => $_getBF(8);
+  $core.bool get readOnly => $_getBF(9);
   @$pb.TagNumber(18)
-  set readOnly($core.bool v) { $_setBool(8, v); }
+  set readOnly($core.bool v) { $_setBool(9, v); }
   @$pb.TagNumber(18)
-  $core.bool hasReadOnly() => $_has(8);
+  $core.bool hasReadOnly() => $_has(9);
   @$pb.TagNumber(18)
   void clearReadOnly() => clearField(18);
 
   @$pb.TagNumber(19)
-  $core.bool get showCursor => $_getBF(9);
+  $core.bool get showCursor => $_getBF(10);
   @$pb.TagNumber(19)
-  set showCursor($core.bool v) { $_setBool(9, v); }
+  set showCursor($core.bool v) { $_setBool(10, v); }
   @$pb.TagNumber(19)
-  $core.bool hasShowCursor() => $_has(9);
+  $core.bool hasShowCursor() => $_has(10);
   @$pb.TagNumber(19)
   void clearShowCursor() => clearField(19);
 
   @$pb.TagNumber(20)
-  $core.String get obscuringCharacter => $_getSZ(10);
+  $core.String get obscuringCharacter => $_getSZ(11);
   @$pb.TagNumber(20)
-  set obscuringCharacter($core.String v) { $_setString(10, v); }
+  set obscuringCharacter($core.String v) { $_setString(11, v); }
   @$pb.TagNumber(20)
-  $core.bool hasObscuringCharacter() => $_has(10);
+  $core.bool hasObscuringCharacter() => $_has(11);
   @$pb.TagNumber(20)
   void clearObscuringCharacter() => clearField(20);
 
   @$pb.TagNumber(21)
-  $core.bool get obscureText => $_getBF(11);
+  $core.bool get obscureText => $_getBF(12);
   @$pb.TagNumber(21)
-  set obscureText($core.bool v) { $_setBool(11, v); }
+  set obscureText($core.bool v) { $_setBool(12, v); }
   @$pb.TagNumber(21)
-  $core.bool hasObscureText() => $_has(11);
+  $core.bool hasObscureText() => $_has(12);
   @$pb.TagNumber(21)
   void clearObscureText() => clearField(21);
 
   @$pb.TagNumber(22)
-  $core.bool get autocorrect => $_getBF(12);
+  $core.bool get autocorrect => $_getBF(13);
   @$pb.TagNumber(22)
-  set autocorrect($core.bool v) { $_setBool(12, v); }
+  set autocorrect($core.bool v) { $_setBool(13, v); }
   @$pb.TagNumber(22)
-  $core.bool hasAutocorrect() => $_has(12);
+  $core.bool hasAutocorrect() => $_has(13);
   @$pb.TagNumber(22)
   void clearAutocorrect() => clearField(22);
 
   @$pb.TagNumber(23)
-  $2.FlutterSmartDashesType_Enum get smartDashesType => $_getN(13);
+  $2.FlutterSmartDashesType_Enum get smartDashesType => $_getN(14);
   @$pb.TagNumber(23)
   set smartDashesType($2.FlutterSmartDashesType_Enum v) { setField(23, v); }
   @$pb.TagNumber(23)
-  $core.bool hasSmartDashesType() => $_has(13);
+  $core.bool hasSmartDashesType() => $_has(14);
   @$pb.TagNumber(23)
   void clearSmartDashesType() => clearField(23);
 
   @$pb.TagNumber(24)
-  $2.FlutterSmartQuotesType_Enum get smartQuotesType => $_getN(14);
+  $2.FlutterSmartQuotesType_Enum get smartQuotesType => $_getN(15);
   @$pb.TagNumber(24)
   set smartQuotesType($2.FlutterSmartQuotesType_Enum v) { setField(24, v); }
   @$pb.TagNumber(24)
-  $core.bool hasSmartQuotesType() => $_has(14);
+  $core.bool hasSmartQuotesType() => $_has(15);
   @$pb.TagNumber(24)
   void clearSmartQuotesType() => clearField(24);
 
   @$pb.TagNumber(25)
-  $core.bool get enableSuggestions => $_getBF(15);
+  $core.bool get enableSuggestions => $_getBF(16);
   @$pb.TagNumber(25)
-  set enableSuggestions($core.bool v) { $_setBool(15, v); }
+  set enableSuggestions($core.bool v) { $_setBool(16, v); }
   @$pb.TagNumber(25)
-  $core.bool hasEnableSuggestions() => $_has(15);
+  $core.bool hasEnableSuggestions() => $_has(16);
   @$pb.TagNumber(25)
   void clearEnableSuggestions() => clearField(25);
 
   @$pb.TagNumber(26)
-  $core.int get maxLines => $_getIZ(16);
+  $core.int get maxLines => $_getIZ(17);
   @$pb.TagNumber(26)
-  set maxLines($core.int v) { $_setSignedInt32(16, v); }
+  set maxLines($core.int v) { $_setSignedInt32(17, v); }
   @$pb.TagNumber(26)
-  $core.bool hasMaxLines() => $_has(16);
+  $core.bool hasMaxLines() => $_has(17);
   @$pb.TagNumber(26)
   void clearMaxLines() => clearField(26);
 
   @$pb.TagNumber(27)
-  $core.int get minLines => $_getIZ(17);
+  $core.int get minLines => $_getIZ(18);
   @$pb.TagNumber(27)
-  set minLines($core.int v) { $_setSignedInt32(17, v); }
+  set minLines($core.int v) { $_setSignedInt32(18, v); }
   @$pb.TagNumber(27)
-  $core.bool hasMinLines() => $_has(17);
+  $core.bool hasMinLines() => $_has(18);
   @$pb.TagNumber(27)
   void clearMinLines() => clearField(27);
 
   @$pb.TagNumber(28)
-  $core.bool get expands => $_getBF(18);
+  $core.bool get expands => $_getBF(19);
   @$pb.TagNumber(28)
-  set expands($core.bool v) { $_setBool(18, v); }
+  set expands($core.bool v) { $_setBool(19, v); }
   @$pb.TagNumber(28)
-  $core.bool hasExpands() => $_has(18);
+  $core.bool hasExpands() => $_has(19);
   @$pb.TagNumber(28)
   void clearExpands() => clearField(28);
 
   @$pb.TagNumber(29)
-  $core.int get maxLength => $_getIZ(19);
+  $core.int get maxLength => $_getIZ(20);
   @$pb.TagNumber(29)
-  set maxLength($core.int v) { $_setSignedInt32(19, v); }
+  set maxLength($core.int v) { $_setSignedInt32(20, v); }
   @$pb.TagNumber(29)
-  $core.bool hasMaxLength() => $_has(19);
+  $core.bool hasMaxLength() => $_has(20);
   @$pb.TagNumber(29)
   void clearMaxLength() => clearField(29);
 
   @$pb.TagNumber(37)
-  $core.bool get enabled => $_getBF(20);
+  $core.bool get enabled => $_getBF(21);
   @$pb.TagNumber(37)
-  set enabled($core.bool v) { $_setBool(20, v); }
+  set enabled($core.bool v) { $_setBool(21, v); }
   @$pb.TagNumber(37)
-  $core.bool hasEnabled() => $_has(20);
+  $core.bool hasEnabled() => $_has(21);
   @$pb.TagNumber(37)
   void clearEnabled() => clearField(37);
 
   @$pb.TagNumber(38)
-  $core.double get cursorWidth => $_getN(21);
+  $core.double get cursorWidth => $_getN(22);
   @$pb.TagNumber(38)
-  set cursorWidth($core.double v) { $_setDouble(21, v); }
+  set cursorWidth($core.double v) { $_setDouble(22, v); }
   @$pb.TagNumber(38)
-  $core.bool hasCursorWidth() => $_has(21);
+  $core.bool hasCursorWidth() => $_has(22);
   @$pb.TagNumber(38)
   void clearCursorWidth() => clearField(38);
 
   @$pb.TagNumber(39)
-  $core.double get cursorHeight => $_getN(22);
+  $core.double get cursorHeight => $_getN(23);
   @$pb.TagNumber(39)
-  set cursorHeight($core.double v) { $_setDouble(22, v); }
+  set cursorHeight($core.double v) { $_setDouble(23, v); }
   @$pb.TagNumber(39)
-  $core.bool hasCursorHeight() => $_has(22);
+  $core.bool hasCursorHeight() => $_has(23);
   @$pb.TagNumber(39)
   void clearCursorHeight() => clearField(39);
 
   @$pb.TagNumber(40)
-  $1.DartColorExpression get cursorColor => $_getN(23);
+  $1.DartColorExpression get cursorColor => $_getN(24);
   @$pb.TagNumber(40)
   set cursorColor($1.DartColorExpression v) { setField(40, v); }
   @$pb.TagNumber(40)
-  $core.bool hasCursorColor() => $_has(23);
+  $core.bool hasCursorColor() => $_has(24);
   @$pb.TagNumber(40)
   void clearCursorColor() => clearField(40);
   @$pb.TagNumber(40)
-  $1.DartColorExpression ensureCursorColor() => $_ensure(23);
+  $1.DartColorExpression ensureCursorColor() => $_ensure(24);
 
   @$pb.TagNumber(41)
-  $2.DartBrightness_Enum get keyboardAppearance => $_getN(24);
+  $2.DartBrightness_Enum get keyboardAppearance => $_getN(25);
   @$pb.TagNumber(41)
   set keyboardAppearance($2.DartBrightness_Enum v) { setField(41, v); }
   @$pb.TagNumber(41)
-  $core.bool hasKeyboardAppearance() => $_has(24);
+  $core.bool hasKeyboardAppearance() => $_has(25);
   @$pb.TagNumber(41)
   void clearKeyboardAppearance() => clearField(41);
 
   @$pb.TagNumber(43)
-  $core.bool get enableInteractiveSelection => $_getBF(25);
+  $core.bool get enableInteractiveSelection => $_getBF(26);
   @$pb.TagNumber(43)
-  set enableInteractiveSelection($core.bool v) { $_setBool(25, v); }
+  set enableInteractiveSelection($core.bool v) { $_setBool(26, v); }
   @$pb.TagNumber(43)
-  $core.bool hasEnableInteractiveSelection() => $_has(25);
+  $core.bool hasEnableInteractiveSelection() => $_has(26);
   @$pb.TagNumber(43)
   void clearEnableInteractiveSelection() => clearField(43);
 
   @$pb.TagNumber(46)
-  $core.List<$core.String> get autofillHints => $_getList(26);
+  $core.List<$core.String> get autofillHints => $_getList(27);
 
   @$pb.TagNumber(47)
-  $2.FlutterAutovalidateMode_Enum get autovalidateMode => $_getN(27);
+  $2.FlutterAutovalidateMode_Enum get autovalidateMode => $_getN(28);
   @$pb.TagNumber(47)
   set autovalidateMode($2.FlutterAutovalidateMode_Enum v) { setField(47, v); }
   @$pb.TagNumber(47)
-  $core.bool hasAutovalidateMode() => $_has(27);
+  $core.bool hasAutovalidateMode() => $_has(28);
   @$pb.TagNumber(47)
   void clearAutovalidateMode() => clearField(47);
 
   @$pb.TagNumber(48)
-  $core.String get placeholder => $_getSZ(28);
+  $core.String get placeholder => $_getSZ(29);
   @$pb.TagNumber(48)
-  set placeholder($core.String v) { $_setString(28, v); }
+  set placeholder($core.String v) { $_setString(29, v); }
   @$pb.TagNumber(48)
-  $core.bool hasPlaceholder() => $_has(28);
+  $core.bool hasPlaceholder() => $_has(29);
   @$pb.TagNumber(48)
   void clearPlaceholder() => clearField(48);
 }
@@ -7389,12 +7629,14 @@ class MaterialActionChip extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? avatar,
     WidgetExpression? label,
+    $1.FlutterEdgeInsetsGeometryExpression? labelPadding,
     $core.double? pressElevation,
     $core.String? tooltip,
     $2.DartClip_Enum? clipBehavior,
     $core.bool? autofocus,
     $1.DartColorExpression? backgroundColor,
     $1.DartColorExpression? disabledColor,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $2.MaterialMaterialTapTargetSize_Enum? materialTapTargetSize,
     $core.double? elevation,
     $1.DartColorExpression? shadowColor,
@@ -7409,6 +7651,9 @@ class MaterialActionChip extends $pb.GeneratedMessage {
     }
     if (label != null) {
       $result.label = label;
+    }
+    if (labelPadding != null) {
+      $result.labelPadding = labelPadding;
     }
     if (pressElevation != null) {
       $result.pressElevation = pressElevation;
@@ -7427,6 +7672,9 @@ class MaterialActionChip extends $pb.GeneratedMessage {
     }
     if (disabledColor != null) {
       $result.disabledColor = disabledColor;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (materialTapTargetSize != null) {
       $result.materialTapTargetSize = materialTapTargetSize;
@@ -7450,12 +7698,14 @@ class MaterialActionChip extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'avatar', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'labelPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'pressElevation', $pb.PbFieldType.OD)
     ..aOS(9, _omitFieldNames ? '' : 'tooltip')
     ..e<$2.DartClip_Enum>(12, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..aOB(14, _omitFieldNames ? '' : 'autofocus')
     ..aOM<$1.DartColorExpression>(16, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(17, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(18, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..e<$2.MaterialMaterialTapTargetSize_Enum>(20, _omitFieldNames ? '' : 'materialTapTargetSize', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialMaterialTapTargetSize_Enum.PADDED, valueOf: $2.MaterialMaterialTapTargetSize_Enum.valueOf, enumValues: $2.MaterialMaterialTapTargetSize_Enum.values)
     ..a<$core.double>(21, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(22, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
@@ -7517,103 +7767,125 @@ class MaterialActionChip extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   WidgetExpression ensureLabel() => $_ensure(2);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get labelPadding => $_getN(3);
+  @$pb.TagNumber(6)
+  set labelPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasLabelPadding() => $_has(3);
+  @$pb.TagNumber(6)
+  void clearLabelPadding() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensureLabelPadding() => $_ensure(3);
+
   @$pb.TagNumber(8)
-  $core.double get pressElevation => $_getN(3);
+  $core.double get pressElevation => $_getN(4);
   @$pb.TagNumber(8)
-  set pressElevation($core.double v) { $_setDouble(3, v); }
+  set pressElevation($core.double v) { $_setDouble(4, v); }
   @$pb.TagNumber(8)
-  $core.bool hasPressElevation() => $_has(3);
+  $core.bool hasPressElevation() => $_has(4);
   @$pb.TagNumber(8)
   void clearPressElevation() => clearField(8);
 
   @$pb.TagNumber(9)
-  $core.String get tooltip => $_getSZ(4);
+  $core.String get tooltip => $_getSZ(5);
   @$pb.TagNumber(9)
-  set tooltip($core.String v) { $_setString(4, v); }
+  set tooltip($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(9)
-  $core.bool hasTooltip() => $_has(4);
+  $core.bool hasTooltip() => $_has(5);
   @$pb.TagNumber(9)
   void clearTooltip() => clearField(9);
 
   @$pb.TagNumber(12)
-  $2.DartClip_Enum get clipBehavior => $_getN(5);
+  $2.DartClip_Enum get clipBehavior => $_getN(6);
   @$pb.TagNumber(12)
   set clipBehavior($2.DartClip_Enum v) { setField(12, v); }
   @$pb.TagNumber(12)
-  $core.bool hasClipBehavior() => $_has(5);
+  $core.bool hasClipBehavior() => $_has(6);
   @$pb.TagNumber(12)
   void clearClipBehavior() => clearField(12);
 
   @$pb.TagNumber(14)
-  $core.bool get autofocus => $_getBF(6);
+  $core.bool get autofocus => $_getBF(7);
   @$pb.TagNumber(14)
-  set autofocus($core.bool v) { $_setBool(6, v); }
+  set autofocus($core.bool v) { $_setBool(7, v); }
   @$pb.TagNumber(14)
-  $core.bool hasAutofocus() => $_has(6);
+  $core.bool hasAutofocus() => $_has(7);
   @$pb.TagNumber(14)
   void clearAutofocus() => clearField(14);
 
   @$pb.TagNumber(16)
-  $1.DartColorExpression get backgroundColor => $_getN(7);
+  $1.DartColorExpression get backgroundColor => $_getN(8);
   @$pb.TagNumber(16)
   set backgroundColor($1.DartColorExpression v) { setField(16, v); }
   @$pb.TagNumber(16)
-  $core.bool hasBackgroundColor() => $_has(7);
+  $core.bool hasBackgroundColor() => $_has(8);
   @$pb.TagNumber(16)
   void clearBackgroundColor() => clearField(16);
   @$pb.TagNumber(16)
-  $1.DartColorExpression ensureBackgroundColor() => $_ensure(7);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(8);
 
   @$pb.TagNumber(17)
-  $1.DartColorExpression get disabledColor => $_getN(8);
+  $1.DartColorExpression get disabledColor => $_getN(9);
   @$pb.TagNumber(17)
   set disabledColor($1.DartColorExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
-  $core.bool hasDisabledColor() => $_has(8);
+  $core.bool hasDisabledColor() => $_has(9);
   @$pb.TagNumber(17)
   void clearDisabledColor() => clearField(17);
   @$pb.TagNumber(17)
-  $1.DartColorExpression ensureDisabledColor() => $_ensure(8);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(9);
+
+  @$pb.TagNumber(18)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(10);
+  @$pb.TagNumber(18)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(18, v); }
+  @$pb.TagNumber(18)
+  $core.bool hasPadding() => $_has(10);
+  @$pb.TagNumber(18)
+  void clearPadding() => clearField(18);
+  @$pb.TagNumber(18)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(10);
 
   @$pb.TagNumber(20)
-  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(9);
+  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(11);
   @$pb.TagNumber(20)
   set materialTapTargetSize($2.MaterialMaterialTapTargetSize_Enum v) { setField(20, v); }
   @$pb.TagNumber(20)
-  $core.bool hasMaterialTapTargetSize() => $_has(9);
+  $core.bool hasMaterialTapTargetSize() => $_has(11);
   @$pb.TagNumber(20)
   void clearMaterialTapTargetSize() => clearField(20);
 
   @$pb.TagNumber(21)
-  $core.double get elevation => $_getN(10);
+  $core.double get elevation => $_getN(12);
   @$pb.TagNumber(21)
-  set elevation($core.double v) { $_setDouble(10, v); }
+  set elevation($core.double v) { $_setDouble(12, v); }
   @$pb.TagNumber(21)
-  $core.bool hasElevation() => $_has(10);
+  $core.bool hasElevation() => $_has(12);
   @$pb.TagNumber(21)
   void clearElevation() => clearField(21);
 
   @$pb.TagNumber(22)
-  $1.DartColorExpression get shadowColor => $_getN(11);
+  $1.DartColorExpression get shadowColor => $_getN(13);
   @$pb.TagNumber(22)
   set shadowColor($1.DartColorExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
-  $core.bool hasShadowColor() => $_has(11);
+  $core.bool hasShadowColor() => $_has(13);
   @$pb.TagNumber(22)
   void clearShadowColor() => clearField(22);
   @$pb.TagNumber(22)
-  $1.DartColorExpression ensureShadowColor() => $_ensure(11);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(13);
 
   @$pb.TagNumber(23)
-  $1.DartColorExpression get surfaceTintColor => $_getN(12);
+  $1.DartColorExpression get surfaceTintColor => $_getN(14);
   @$pb.TagNumber(23)
   set surfaceTintColor($1.DartColorExpression v) { setField(23, v); }
   @$pb.TagNumber(23)
-  $core.bool hasSurfaceTintColor() => $_has(12);
+  $core.bool hasSurfaceTintColor() => $_has(14);
   @$pb.TagNumber(23)
   void clearSurfaceTintColor() => clearField(23);
   @$pb.TagNumber(23)
-  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(12);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(14);
 }
 
 /// package:flutter/src/material/action_chip.dart
@@ -7622,12 +7894,14 @@ class MaterialActionChipNamedElevated extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? avatar,
     WidgetExpression? label,
+    $1.FlutterEdgeInsetsGeometryExpression? labelPadding,
     $core.double? pressElevation,
     $core.String? tooltip,
     $2.DartClip_Enum? clipBehavior,
     $core.bool? autofocus,
     $1.DartColorExpression? backgroundColor,
     $1.DartColorExpression? disabledColor,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $2.MaterialMaterialTapTargetSize_Enum? materialTapTargetSize,
     $core.double? elevation,
     $1.DartColorExpression? shadowColor,
@@ -7642,6 +7916,9 @@ class MaterialActionChipNamedElevated extends $pb.GeneratedMessage {
     }
     if (label != null) {
       $result.label = label;
+    }
+    if (labelPadding != null) {
+      $result.labelPadding = labelPadding;
     }
     if (pressElevation != null) {
       $result.pressElevation = pressElevation;
@@ -7660,6 +7937,9 @@ class MaterialActionChipNamedElevated extends $pb.GeneratedMessage {
     }
     if (disabledColor != null) {
       $result.disabledColor = disabledColor;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (materialTapTargetSize != null) {
       $result.materialTapTargetSize = materialTapTargetSize;
@@ -7683,12 +7963,14 @@ class MaterialActionChipNamedElevated extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'avatar', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'labelPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'pressElevation', $pb.PbFieldType.OD)
     ..aOS(9, _omitFieldNames ? '' : 'tooltip')
     ..e<$2.DartClip_Enum>(12, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..aOB(14, _omitFieldNames ? '' : 'autofocus')
     ..aOM<$1.DartColorExpression>(16, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(17, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(18, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..e<$2.MaterialMaterialTapTargetSize_Enum>(20, _omitFieldNames ? '' : 'materialTapTargetSize', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialMaterialTapTargetSize_Enum.PADDED, valueOf: $2.MaterialMaterialTapTargetSize_Enum.valueOf, enumValues: $2.MaterialMaterialTapTargetSize_Enum.values)
     ..a<$core.double>(21, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(22, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
@@ -7750,103 +8032,125 @@ class MaterialActionChipNamedElevated extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   WidgetExpression ensureLabel() => $_ensure(2);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get labelPadding => $_getN(3);
+  @$pb.TagNumber(6)
+  set labelPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasLabelPadding() => $_has(3);
+  @$pb.TagNumber(6)
+  void clearLabelPadding() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensureLabelPadding() => $_ensure(3);
+
   @$pb.TagNumber(8)
-  $core.double get pressElevation => $_getN(3);
+  $core.double get pressElevation => $_getN(4);
   @$pb.TagNumber(8)
-  set pressElevation($core.double v) { $_setDouble(3, v); }
+  set pressElevation($core.double v) { $_setDouble(4, v); }
   @$pb.TagNumber(8)
-  $core.bool hasPressElevation() => $_has(3);
+  $core.bool hasPressElevation() => $_has(4);
   @$pb.TagNumber(8)
   void clearPressElevation() => clearField(8);
 
   @$pb.TagNumber(9)
-  $core.String get tooltip => $_getSZ(4);
+  $core.String get tooltip => $_getSZ(5);
   @$pb.TagNumber(9)
-  set tooltip($core.String v) { $_setString(4, v); }
+  set tooltip($core.String v) { $_setString(5, v); }
   @$pb.TagNumber(9)
-  $core.bool hasTooltip() => $_has(4);
+  $core.bool hasTooltip() => $_has(5);
   @$pb.TagNumber(9)
   void clearTooltip() => clearField(9);
 
   @$pb.TagNumber(12)
-  $2.DartClip_Enum get clipBehavior => $_getN(5);
+  $2.DartClip_Enum get clipBehavior => $_getN(6);
   @$pb.TagNumber(12)
   set clipBehavior($2.DartClip_Enum v) { setField(12, v); }
   @$pb.TagNumber(12)
-  $core.bool hasClipBehavior() => $_has(5);
+  $core.bool hasClipBehavior() => $_has(6);
   @$pb.TagNumber(12)
   void clearClipBehavior() => clearField(12);
 
   @$pb.TagNumber(14)
-  $core.bool get autofocus => $_getBF(6);
+  $core.bool get autofocus => $_getBF(7);
   @$pb.TagNumber(14)
-  set autofocus($core.bool v) { $_setBool(6, v); }
+  set autofocus($core.bool v) { $_setBool(7, v); }
   @$pb.TagNumber(14)
-  $core.bool hasAutofocus() => $_has(6);
+  $core.bool hasAutofocus() => $_has(7);
   @$pb.TagNumber(14)
   void clearAutofocus() => clearField(14);
 
   @$pb.TagNumber(16)
-  $1.DartColorExpression get backgroundColor => $_getN(7);
+  $1.DartColorExpression get backgroundColor => $_getN(8);
   @$pb.TagNumber(16)
   set backgroundColor($1.DartColorExpression v) { setField(16, v); }
   @$pb.TagNumber(16)
-  $core.bool hasBackgroundColor() => $_has(7);
+  $core.bool hasBackgroundColor() => $_has(8);
   @$pb.TagNumber(16)
   void clearBackgroundColor() => clearField(16);
   @$pb.TagNumber(16)
-  $1.DartColorExpression ensureBackgroundColor() => $_ensure(7);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(8);
 
   @$pb.TagNumber(17)
-  $1.DartColorExpression get disabledColor => $_getN(8);
+  $1.DartColorExpression get disabledColor => $_getN(9);
   @$pb.TagNumber(17)
   set disabledColor($1.DartColorExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
-  $core.bool hasDisabledColor() => $_has(8);
+  $core.bool hasDisabledColor() => $_has(9);
   @$pb.TagNumber(17)
   void clearDisabledColor() => clearField(17);
   @$pb.TagNumber(17)
-  $1.DartColorExpression ensureDisabledColor() => $_ensure(8);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(9);
+
+  @$pb.TagNumber(18)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(10);
+  @$pb.TagNumber(18)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(18, v); }
+  @$pb.TagNumber(18)
+  $core.bool hasPadding() => $_has(10);
+  @$pb.TagNumber(18)
+  void clearPadding() => clearField(18);
+  @$pb.TagNumber(18)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(10);
 
   @$pb.TagNumber(20)
-  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(9);
+  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(11);
   @$pb.TagNumber(20)
   set materialTapTargetSize($2.MaterialMaterialTapTargetSize_Enum v) { setField(20, v); }
   @$pb.TagNumber(20)
-  $core.bool hasMaterialTapTargetSize() => $_has(9);
+  $core.bool hasMaterialTapTargetSize() => $_has(11);
   @$pb.TagNumber(20)
   void clearMaterialTapTargetSize() => clearField(20);
 
   @$pb.TagNumber(21)
-  $core.double get elevation => $_getN(10);
+  $core.double get elevation => $_getN(12);
   @$pb.TagNumber(21)
-  set elevation($core.double v) { $_setDouble(10, v); }
+  set elevation($core.double v) { $_setDouble(12, v); }
   @$pb.TagNumber(21)
-  $core.bool hasElevation() => $_has(10);
+  $core.bool hasElevation() => $_has(12);
   @$pb.TagNumber(21)
   void clearElevation() => clearField(21);
 
   @$pb.TagNumber(22)
-  $1.DartColorExpression get shadowColor => $_getN(11);
+  $1.DartColorExpression get shadowColor => $_getN(13);
   @$pb.TagNumber(22)
   set shadowColor($1.DartColorExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
-  $core.bool hasShadowColor() => $_has(11);
+  $core.bool hasShadowColor() => $_has(13);
   @$pb.TagNumber(22)
   void clearShadowColor() => clearField(22);
   @$pb.TagNumber(22)
-  $1.DartColorExpression ensureShadowColor() => $_ensure(11);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(13);
 
   @$pb.TagNumber(23)
-  $1.DartColorExpression get surfaceTintColor => $_getN(12);
+  $1.DartColorExpression get surfaceTintColor => $_getN(14);
   @$pb.TagNumber(23)
   set surfaceTintColor($1.DartColorExpression v) { setField(23, v); }
   @$pb.TagNumber(23)
-  $core.bool hasSurfaceTintColor() => $_has(12);
+  $core.bool hasSurfaceTintColor() => $_has(14);
   @$pb.TagNumber(23)
   void clearSurfaceTintColor() => clearField(23);
   @$pb.TagNumber(23)
-  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(12);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(14);
 }
 
 /// package:flutter/src/material/app.dart
@@ -9981,6 +10285,7 @@ class MaterialBadge extends $pb.GeneratedMessage {
     $1.DartColorExpression? textColor,
     $core.double? smallSize,
     $core.double? largeSize,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     WidgetExpression? label,
     $core.bool? isLabelVisible,
     WidgetExpression? child,
@@ -10000,6 +10305,9 @@ class MaterialBadge extends $pb.GeneratedMessage {
     }
     if (largeSize != null) {
       $result.largeSize = largeSize;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (label != null) {
       $result.label = label;
@@ -10022,6 +10330,7 @@ class MaterialBadge extends $pb.GeneratedMessage {
     ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'textColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'smallSize', $pb.PbFieldType.OD)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'largeSize', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(8, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<WidgetExpression>(11, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
     ..aOB(12, _omitFieldNames ? '' : 'isLabelVisible')
     ..aOM<WidgetExpression>(13, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
@@ -10100,36 +10409,47 @@ class MaterialBadge extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearLargeSize() => clearField(6);
 
+  @$pb.TagNumber(8)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(5);
+  @$pb.TagNumber(8)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(8, v); }
+  @$pb.TagNumber(8)
+  $core.bool hasPadding() => $_has(5);
+  @$pb.TagNumber(8)
+  void clearPadding() => clearField(8);
+  @$pb.TagNumber(8)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(5);
+
   @$pb.TagNumber(11)
-  WidgetExpression get label => $_getN(5);
+  WidgetExpression get label => $_getN(6);
   @$pb.TagNumber(11)
   set label(WidgetExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasLabel() => $_has(5);
+  $core.bool hasLabel() => $_has(6);
   @$pb.TagNumber(11)
   void clearLabel() => clearField(11);
   @$pb.TagNumber(11)
-  WidgetExpression ensureLabel() => $_ensure(5);
+  WidgetExpression ensureLabel() => $_ensure(6);
 
   @$pb.TagNumber(12)
-  $core.bool get isLabelVisible => $_getBF(6);
+  $core.bool get isLabelVisible => $_getBF(7);
   @$pb.TagNumber(12)
-  set isLabelVisible($core.bool v) { $_setBool(6, v); }
+  set isLabelVisible($core.bool v) { $_setBool(7, v); }
   @$pb.TagNumber(12)
-  $core.bool hasIsLabelVisible() => $_has(6);
+  $core.bool hasIsLabelVisible() => $_has(7);
   @$pb.TagNumber(12)
   void clearIsLabelVisible() => clearField(12);
 
   @$pb.TagNumber(13)
-  WidgetExpression get child => $_getN(7);
+  WidgetExpression get child => $_getN(8);
   @$pb.TagNumber(13)
   set child(WidgetExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
-  $core.bool hasChild() => $_has(7);
+  $core.bool hasChild() => $_has(8);
   @$pb.TagNumber(13)
   void clearChild() => clearField(13);
   @$pb.TagNumber(13)
-  WidgetExpression ensureChild() => $_ensure(7);
+  WidgetExpression ensureChild() => $_ensure(8);
 }
 
 /// package:flutter/src/material/badge.dart
@@ -10140,6 +10460,7 @@ class MaterialBadgeNamedCount extends $pb.GeneratedMessage {
     $1.DartColorExpression? textColor,
     $core.double? smallSize,
     $core.double? largeSize,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $core.int? count,
     $core.bool? isLabelVisible,
     WidgetExpression? child,
@@ -10159,6 +10480,9 @@ class MaterialBadgeNamedCount extends $pb.GeneratedMessage {
     }
     if (largeSize != null) {
       $result.largeSize = largeSize;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (count != null) {
       $result.count = count;
@@ -10181,6 +10505,7 @@ class MaterialBadgeNamedCount extends $pb.GeneratedMessage {
     ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'textColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'smallSize', $pb.PbFieldType.OD)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'largeSize', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(8, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..a<$core.int>(11, _omitFieldNames ? '' : 'count', $pb.PbFieldType.O3)
     ..aOB(12, _omitFieldNames ? '' : 'isLabelVisible')
     ..aOM<WidgetExpression>(13, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
@@ -10259,34 +10584,45 @@ class MaterialBadgeNamedCount extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearLargeSize() => clearField(6);
 
+  @$pb.TagNumber(8)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(5);
+  @$pb.TagNumber(8)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(8, v); }
+  @$pb.TagNumber(8)
+  $core.bool hasPadding() => $_has(5);
+  @$pb.TagNumber(8)
+  void clearPadding() => clearField(8);
+  @$pb.TagNumber(8)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(5);
+
   @$pb.TagNumber(11)
-  $core.int get count => $_getIZ(5);
+  $core.int get count => $_getIZ(6);
   @$pb.TagNumber(11)
-  set count($core.int v) { $_setSignedInt32(5, v); }
+  set count($core.int v) { $_setSignedInt32(6, v); }
   @$pb.TagNumber(11)
-  $core.bool hasCount() => $_has(5);
+  $core.bool hasCount() => $_has(6);
   @$pb.TagNumber(11)
   void clearCount() => clearField(11);
 
   @$pb.TagNumber(12)
-  $core.bool get isLabelVisible => $_getBF(6);
+  $core.bool get isLabelVisible => $_getBF(7);
   @$pb.TagNumber(12)
-  set isLabelVisible($core.bool v) { $_setBool(6, v); }
+  set isLabelVisible($core.bool v) { $_setBool(7, v); }
   @$pb.TagNumber(12)
-  $core.bool hasIsLabelVisible() => $_has(6);
+  $core.bool hasIsLabelVisible() => $_has(7);
   @$pb.TagNumber(12)
   void clearIsLabelVisible() => clearField(12);
 
   @$pb.TagNumber(13)
-  WidgetExpression get child => $_getN(7);
+  WidgetExpression get child => $_getN(8);
   @$pb.TagNumber(13)
   set child(WidgetExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
-  $core.bool hasChild() => $_has(7);
+  $core.bool hasChild() => $_has(8);
   @$pb.TagNumber(13)
   void clearChild() => clearField(13);
   @$pb.TagNumber(13)
-  WidgetExpression ensureChild() => $_ensure(7);
+  WidgetExpression ensureChild() => $_ensure(8);
 }
 
 /// package:flutter/src/material/banner.dart
@@ -10301,6 +10637,9 @@ class MaterialMaterialBanner extends $pb.GeneratedMessage {
     $1.DartColorExpression? surfaceTintColor,
     $1.DartColorExpression? shadowColor,
     $1.DartColorExpression? dividerColor,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
+    $1.FlutterEdgeInsetsGeometryExpression? margin,
+    $1.FlutterEdgeInsetsGeometryExpression? leadingPadding,
     $core.bool? forceActionsBelow,
     $2.FlutterOverflowBarAlignment_Enum? overflowAlignment,
   }) {
@@ -10332,6 +10671,15 @@ class MaterialMaterialBanner extends $pb.GeneratedMessage {
     if (dividerColor != null) {
       $result.dividerColor = dividerColor;
     }
+    if (padding != null) {
+      $result.padding = padding;
+    }
+    if (margin != null) {
+      $result.margin = margin;
+    }
+    if (leadingPadding != null) {
+      $result.leadingPadding = leadingPadding;
+    }
     if (forceActionsBelow != null) {
       $result.forceActionsBelow = forceActionsBelow;
     }
@@ -10354,6 +10702,9 @@ class MaterialMaterialBanner extends $pb.GeneratedMessage {
     ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'dividerColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(12, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(13, _omitFieldNames ? '' : 'margin', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(14, _omitFieldNames ? '' : 'leadingPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOB(15, _omitFieldNames ? '' : 'forceActionsBelow')
     ..e<$2.FlutterOverflowBarAlignment_Enum>(16, _omitFieldNames ? '' : 'overflowAlignment', $pb.PbFieldType.OE, defaultOrMaker: $2.FlutterOverflowBarAlignment_Enum.START, valueOf: $2.FlutterOverflowBarAlignment_Enum.valueOf, enumValues: $2.FlutterOverflowBarAlignment_Enum.values)
     ..hasRequiredFields = false
@@ -10469,21 +10820,54 @@ class MaterialMaterialBanner extends $pb.GeneratedMessage {
   @$pb.TagNumber(11)
   $1.DartColorExpression ensureDividerColor() => $_ensure(8);
 
+  @$pb.TagNumber(12)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(9);
+  @$pb.TagNumber(12)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(12, v); }
+  @$pb.TagNumber(12)
+  $core.bool hasPadding() => $_has(9);
+  @$pb.TagNumber(12)
+  void clearPadding() => clearField(12);
+  @$pb.TagNumber(12)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(9);
+
+  @$pb.TagNumber(13)
+  $1.FlutterEdgeInsetsGeometryExpression get margin => $_getN(10);
+  @$pb.TagNumber(13)
+  set margin($1.FlutterEdgeInsetsGeometryExpression v) { setField(13, v); }
+  @$pb.TagNumber(13)
+  $core.bool hasMargin() => $_has(10);
+  @$pb.TagNumber(13)
+  void clearMargin() => clearField(13);
+  @$pb.TagNumber(13)
+  $1.FlutterEdgeInsetsGeometryExpression ensureMargin() => $_ensure(10);
+
+  @$pb.TagNumber(14)
+  $1.FlutterEdgeInsetsGeometryExpression get leadingPadding => $_getN(11);
+  @$pb.TagNumber(14)
+  set leadingPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(14, v); }
+  @$pb.TagNumber(14)
+  $core.bool hasLeadingPadding() => $_has(11);
+  @$pb.TagNumber(14)
+  void clearLeadingPadding() => clearField(14);
+  @$pb.TagNumber(14)
+  $1.FlutterEdgeInsetsGeometryExpression ensureLeadingPadding() => $_ensure(11);
+
   @$pb.TagNumber(15)
-  $core.bool get forceActionsBelow => $_getBF(9);
+  $core.bool get forceActionsBelow => $_getBF(12);
   @$pb.TagNumber(15)
-  set forceActionsBelow($core.bool v) { $_setBool(9, v); }
+  set forceActionsBelow($core.bool v) { $_setBool(12, v); }
   @$pb.TagNumber(15)
-  $core.bool hasForceActionsBelow() => $_has(9);
+  $core.bool hasForceActionsBelow() => $_has(12);
   @$pb.TagNumber(15)
   void clearForceActionsBelow() => clearField(15);
 
   @$pb.TagNumber(16)
-  $2.FlutterOverflowBarAlignment_Enum get overflowAlignment => $_getN(10);
+  $2.FlutterOverflowBarAlignment_Enum get overflowAlignment => $_getN(13);
   @$pb.TagNumber(16)
   set overflowAlignment($2.FlutterOverflowBarAlignment_Enum v) { setField(16, v); }
   @$pb.TagNumber(16)
-  $core.bool hasOverflowAlignment() => $_has(10);
+  $core.bool hasOverflowAlignment() => $_has(13);
   @$pb.TagNumber(16)
   void clearOverflowAlignment() => clearField(16);
 }
@@ -10566,6 +10950,7 @@ class MaterialBottomAppBar extends $pb.GeneratedMessage {
     $2.DartClip_Enum? clipBehavior,
     $core.double? notchMargin,
     WidgetExpression? child,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $1.DartColorExpression? surfaceTintColor,
     $1.DartColorExpression? shadowColor,
     $core.double? height,
@@ -10589,6 +10974,9 @@ class MaterialBottomAppBar extends $pb.GeneratedMessage {
     if (child != null) {
       $result.child = child;
     }
+    if (padding != null) {
+      $result.padding = padding;
+    }
     if (surfaceTintColor != null) {
       $result.surfaceTintColor = surfaceTintColor;
     }
@@ -10611,6 +10999,7 @@ class MaterialBottomAppBar extends $pb.GeneratedMessage {
     ..e<$2.DartClip_Enum>(6, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'notchMargin', $pb.PbFieldType.OD)
     ..aOM<WidgetExpression>(8, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(9, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
@@ -10698,34 +11087,45 @@ class MaterialBottomAppBar extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   WidgetExpression ensureChild() => $_ensure(5);
 
+  @$pb.TagNumber(9)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(6);
+  @$pb.TagNumber(9)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(9, v); }
+  @$pb.TagNumber(9)
+  $core.bool hasPadding() => $_has(6);
+  @$pb.TagNumber(9)
+  void clearPadding() => clearField(9);
+  @$pb.TagNumber(9)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(6);
+
   @$pb.TagNumber(10)
-  $1.DartColorExpression get surfaceTintColor => $_getN(6);
+  $1.DartColorExpression get surfaceTintColor => $_getN(7);
   @$pb.TagNumber(10)
   set surfaceTintColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasSurfaceTintColor() => $_has(6);
+  $core.bool hasSurfaceTintColor() => $_has(7);
   @$pb.TagNumber(10)
   void clearSurfaceTintColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(6);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(7);
 
   @$pb.TagNumber(11)
-  $1.DartColorExpression get shadowColor => $_getN(7);
+  $1.DartColorExpression get shadowColor => $_getN(8);
   @$pb.TagNumber(11)
   set shadowColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasShadowColor() => $_has(7);
+  $core.bool hasShadowColor() => $_has(8);
   @$pb.TagNumber(11)
   void clearShadowColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.DartColorExpression ensureShadowColor() => $_ensure(7);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(8);
 
   @$pb.TagNumber(12)
-  $core.double get height => $_getN(8);
+  $core.double get height => $_getN(9);
   @$pb.TagNumber(12)
-  set height($core.double v) { $_setDouble(8, v); }
+  set height($core.double v) { $_setDouble(9, v); }
   @$pb.TagNumber(12)
-  $core.bool hasHeight() => $_has(8);
+  $core.bool hasHeight() => $_has(9);
   @$pb.TagNumber(12)
   void clearHeight() => clearField(12);
 }
@@ -10744,6 +11144,7 @@ class MaterialRawMaterialButton extends $pb.GeneratedMessage {
     $core.double? hoverElevation,
     $core.double? highlightElevation,
     $core.double? disabledElevation,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $1.DartDurationExpression? animationDuration,
     $2.DartClip_Enum? clipBehavior,
     $core.bool? autofocus,
@@ -10785,6 +11186,9 @@ class MaterialRawMaterialButton extends $pb.GeneratedMessage {
     if (disabledElevation != null) {
       $result.disabledElevation = disabledElevation;
     }
+    if (padding != null) {
+      $result.padding = padding;
+    }
     if (animationDuration != null) {
       $result.animationDuration = animationDuration;
     }
@@ -10821,6 +11225,7 @@ class MaterialRawMaterialButton extends $pb.GeneratedMessage {
     ..a<$core.double>(15, _omitFieldNames ? '' : 'hoverElevation', $pb.PbFieldType.OD)
     ..a<$core.double>(16, _omitFieldNames ? '' : 'highlightElevation', $pb.PbFieldType.OD)
     ..a<$core.double>(17, _omitFieldNames ? '' : 'disabledElevation', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(18, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartDurationExpression>(22, _omitFieldNames ? '' : 'animationDuration', subBuilder: $1.DartDurationExpression.create)
     ..e<$2.DartClip_Enum>(23, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..aOB(25, _omitFieldNames ? '' : 'autofocus')
@@ -10962,61 +11367,72 @@ class MaterialRawMaterialButton extends $pb.GeneratedMessage {
   @$pb.TagNumber(17)
   void clearDisabledElevation() => clearField(17);
 
+  @$pb.TagNumber(18)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(11);
+  @$pb.TagNumber(18)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(18, v); }
+  @$pb.TagNumber(18)
+  $core.bool hasPadding() => $_has(11);
+  @$pb.TagNumber(18)
+  void clearPadding() => clearField(18);
+  @$pb.TagNumber(18)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(11);
+
   @$pb.TagNumber(22)
-  $1.DartDurationExpression get animationDuration => $_getN(11);
+  $1.DartDurationExpression get animationDuration => $_getN(12);
   @$pb.TagNumber(22)
   set animationDuration($1.DartDurationExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
-  $core.bool hasAnimationDuration() => $_has(11);
+  $core.bool hasAnimationDuration() => $_has(12);
   @$pb.TagNumber(22)
   void clearAnimationDuration() => clearField(22);
   @$pb.TagNumber(22)
-  $1.DartDurationExpression ensureAnimationDuration() => $_ensure(11);
+  $1.DartDurationExpression ensureAnimationDuration() => $_ensure(12);
 
   @$pb.TagNumber(23)
-  $2.DartClip_Enum get clipBehavior => $_getN(12);
+  $2.DartClip_Enum get clipBehavior => $_getN(13);
   @$pb.TagNumber(23)
   set clipBehavior($2.DartClip_Enum v) { setField(23, v); }
   @$pb.TagNumber(23)
-  $core.bool hasClipBehavior() => $_has(12);
+  $core.bool hasClipBehavior() => $_has(13);
   @$pb.TagNumber(23)
   void clearClipBehavior() => clearField(23);
 
   @$pb.TagNumber(25)
-  $core.bool get autofocus => $_getBF(13);
+  $core.bool get autofocus => $_getBF(14);
   @$pb.TagNumber(25)
-  set autofocus($core.bool v) { $_setBool(13, v); }
+  set autofocus($core.bool v) { $_setBool(14, v); }
   @$pb.TagNumber(25)
-  $core.bool hasAutofocus() => $_has(13);
+  $core.bool hasAutofocus() => $_has(14);
   @$pb.TagNumber(25)
   void clearAutofocus() => clearField(25);
 
   @$pb.TagNumber(26)
-  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(14);
+  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(15);
   @$pb.TagNumber(26)
   set materialTapTargetSize($2.MaterialMaterialTapTargetSize_Enum v) { setField(26, v); }
   @$pb.TagNumber(26)
-  $core.bool hasMaterialTapTargetSize() => $_has(14);
+  $core.bool hasMaterialTapTargetSize() => $_has(15);
   @$pb.TagNumber(26)
   void clearMaterialTapTargetSize() => clearField(26);
 
   @$pb.TagNumber(27)
-  WidgetExpression get child => $_getN(15);
+  WidgetExpression get child => $_getN(16);
   @$pb.TagNumber(27)
   set child(WidgetExpression v) { setField(27, v); }
   @$pb.TagNumber(27)
-  $core.bool hasChild() => $_has(15);
+  $core.bool hasChild() => $_has(16);
   @$pb.TagNumber(27)
   void clearChild() => clearField(27);
   @$pb.TagNumber(27)
-  WidgetExpression ensureChild() => $_ensure(15);
+  WidgetExpression ensureChild() => $_ensure(16);
 
   @$pb.TagNumber(28)
-  $core.bool get enableFeedback => $_getBF(16);
+  $core.bool get enableFeedback => $_getBF(17);
   @$pb.TagNumber(28)
-  set enableFeedback($core.bool v) { $_setBool(16, v); }
+  set enableFeedback($core.bool v) { $_setBool(17, v); }
   @$pb.TagNumber(28)
-  $core.bool hasEnableFeedback() => $_has(16);
+  $core.bool hasEnableFeedback() => $_has(17);
   @$pb.TagNumber(28)
   void clearEnableFeedback() => clearField(28);
 }
@@ -11030,6 +11446,7 @@ class MaterialButtonBar extends $pb.GeneratedMessage {
     $2.MaterialButtonTextTheme_Enum? buttonTextTheme,
     $core.double? buttonMinWidth,
     $core.double? buttonHeight,
+    $1.FlutterEdgeInsetsGeometryExpression? buttonPadding,
     $core.bool? buttonAlignedDropdown,
     $2.MaterialButtonBarLayoutBehavior_Enum? layoutBehavior,
     $2.FlutterVerticalDirection_Enum? overflowDirection,
@@ -11054,6 +11471,9 @@ class MaterialButtonBar extends $pb.GeneratedMessage {
     }
     if (buttonHeight != null) {
       $result.buttonHeight = buttonHeight;
+    }
+    if (buttonPadding != null) {
+      $result.buttonPadding = buttonPadding;
     }
     if (buttonAlignedDropdown != null) {
       $result.buttonAlignedDropdown = buttonAlignedDropdown;
@@ -11083,6 +11503,7 @@ class MaterialButtonBar extends $pb.GeneratedMessage {
     ..e<$2.MaterialButtonTextTheme_Enum>(5, _omitFieldNames ? '' : 'buttonTextTheme', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialButtonTextTheme_Enum.NORMAL, valueOf: $2.MaterialButtonTextTheme_Enum.valueOf, enumValues: $2.MaterialButtonTextTheme_Enum.values)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'buttonMinWidth', $pb.PbFieldType.OD)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'buttonHeight', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(8, _omitFieldNames ? '' : 'buttonPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOB(9, _omitFieldNames ? '' : 'buttonAlignedDropdown')
     ..e<$2.MaterialButtonBarLayoutBehavior_Enum>(10, _omitFieldNames ? '' : 'layoutBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialButtonBarLayoutBehavior_Enum.CONSTRAINED, valueOf: $2.MaterialButtonBarLayoutBehavior_Enum.valueOf, enumValues: $2.MaterialButtonBarLayoutBehavior_Enum.values)
     ..e<$2.FlutterVerticalDirection_Enum>(11, _omitFieldNames ? '' : 'overflowDirection', $pb.PbFieldType.OE, defaultOrMaker: $2.FlutterVerticalDirection_Enum.UP, valueOf: $2.FlutterVerticalDirection_Enum.valueOf, enumValues: $2.FlutterVerticalDirection_Enum.values)
@@ -11168,44 +11589,55 @@ class MaterialButtonBar extends $pb.GeneratedMessage {
   @$pb.TagNumber(7)
   void clearButtonHeight() => clearField(7);
 
+  @$pb.TagNumber(8)
+  $1.FlutterEdgeInsetsGeometryExpression get buttonPadding => $_getN(6);
+  @$pb.TagNumber(8)
+  set buttonPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(8, v); }
+  @$pb.TagNumber(8)
+  $core.bool hasButtonPadding() => $_has(6);
+  @$pb.TagNumber(8)
+  void clearButtonPadding() => clearField(8);
+  @$pb.TagNumber(8)
+  $1.FlutterEdgeInsetsGeometryExpression ensureButtonPadding() => $_ensure(6);
+
   @$pb.TagNumber(9)
-  $core.bool get buttonAlignedDropdown => $_getBF(6);
+  $core.bool get buttonAlignedDropdown => $_getBF(7);
   @$pb.TagNumber(9)
-  set buttonAlignedDropdown($core.bool v) { $_setBool(6, v); }
+  set buttonAlignedDropdown($core.bool v) { $_setBool(7, v); }
   @$pb.TagNumber(9)
-  $core.bool hasButtonAlignedDropdown() => $_has(6);
+  $core.bool hasButtonAlignedDropdown() => $_has(7);
   @$pb.TagNumber(9)
   void clearButtonAlignedDropdown() => clearField(9);
 
   @$pb.TagNumber(10)
-  $2.MaterialButtonBarLayoutBehavior_Enum get layoutBehavior => $_getN(7);
+  $2.MaterialButtonBarLayoutBehavior_Enum get layoutBehavior => $_getN(8);
   @$pb.TagNumber(10)
   set layoutBehavior($2.MaterialButtonBarLayoutBehavior_Enum v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasLayoutBehavior() => $_has(7);
+  $core.bool hasLayoutBehavior() => $_has(8);
   @$pb.TagNumber(10)
   void clearLayoutBehavior() => clearField(10);
 
   @$pb.TagNumber(11)
-  $2.FlutterVerticalDirection_Enum get overflowDirection => $_getN(8);
+  $2.FlutterVerticalDirection_Enum get overflowDirection => $_getN(9);
   @$pb.TagNumber(11)
   set overflowDirection($2.FlutterVerticalDirection_Enum v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasOverflowDirection() => $_has(8);
+  $core.bool hasOverflowDirection() => $_has(9);
   @$pb.TagNumber(11)
   void clearOverflowDirection() => clearField(11);
 
   @$pb.TagNumber(12)
-  $core.double get overflowButtonSpacing => $_getN(9);
+  $core.double get overflowButtonSpacing => $_getN(10);
   @$pb.TagNumber(12)
-  set overflowButtonSpacing($core.double v) { $_setDouble(9, v); }
+  set overflowButtonSpacing($core.double v) { $_setDouble(10, v); }
   @$pb.TagNumber(12)
-  $core.bool hasOverflowButtonSpacing() => $_has(9);
+  $core.bool hasOverflowButtonSpacing() => $_has(10);
   @$pb.TagNumber(12)
   void clearOverflowButtonSpacing() => clearField(12);
 
   @$pb.TagNumber(13)
-  $core.List<WidgetExpression> get children => $_getList(10);
+  $core.List<WidgetExpression> get children => $_getList(11);
 }
 
 /// package:flutter/src/material/button_theme.dart
@@ -11216,6 +11648,7 @@ class MaterialButtonTheme extends $pb.GeneratedMessage {
     $2.MaterialButtonBarLayoutBehavior_Enum? layoutBehavior,
     $core.double? minWidth,
     $core.double? height,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $core.bool? alignedDropdown,
     $1.DartColorExpression? buttonColor,
     $1.DartColorExpression? disabledColor,
@@ -11241,6 +11674,9 @@ class MaterialButtonTheme extends $pb.GeneratedMessage {
     }
     if (height != null) {
       $result.height = height;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (alignedDropdown != null) {
       $result.alignedDropdown = alignedDropdown;
@@ -11281,6 +11717,7 @@ class MaterialButtonTheme extends $pb.GeneratedMessage {
     ..e<$2.MaterialButtonBarLayoutBehavior_Enum>(4, _omitFieldNames ? '' : 'layoutBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialButtonBarLayoutBehavior_Enum.CONSTRAINED, valueOf: $2.MaterialButtonBarLayoutBehavior_Enum.valueOf, enumValues: $2.MaterialButtonBarLayoutBehavior_Enum.values)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'minWidth', $pb.PbFieldType.OD)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(7, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOB(9, _omitFieldNames ? '' : 'alignedDropdown')
     ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'buttonColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
@@ -11361,100 +11798,111 @@ class MaterialButtonTheme extends $pb.GeneratedMessage {
   @$pb.TagNumber(6)
   void clearHeight() => clearField(6);
 
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(5);
+  @$pb.TagNumber(7)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(7, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasPadding() => $_has(5);
+  @$pb.TagNumber(7)
+  void clearPadding() => clearField(7);
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(5);
+
   @$pb.TagNumber(9)
-  $core.bool get alignedDropdown => $_getBF(5);
+  $core.bool get alignedDropdown => $_getBF(6);
   @$pb.TagNumber(9)
-  set alignedDropdown($core.bool v) { $_setBool(5, v); }
+  set alignedDropdown($core.bool v) { $_setBool(6, v); }
   @$pb.TagNumber(9)
-  $core.bool hasAlignedDropdown() => $_has(5);
+  $core.bool hasAlignedDropdown() => $_has(6);
   @$pb.TagNumber(9)
   void clearAlignedDropdown() => clearField(9);
 
   @$pb.TagNumber(10)
-  $1.DartColorExpression get buttonColor => $_getN(6);
+  $1.DartColorExpression get buttonColor => $_getN(7);
   @$pb.TagNumber(10)
   set buttonColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasButtonColor() => $_has(6);
+  $core.bool hasButtonColor() => $_has(7);
   @$pb.TagNumber(10)
   void clearButtonColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.DartColorExpression ensureButtonColor() => $_ensure(6);
+  $1.DartColorExpression ensureButtonColor() => $_ensure(7);
 
   @$pb.TagNumber(11)
-  $1.DartColorExpression get disabledColor => $_getN(7);
+  $1.DartColorExpression get disabledColor => $_getN(8);
   @$pb.TagNumber(11)
   set disabledColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasDisabledColor() => $_has(7);
+  $core.bool hasDisabledColor() => $_has(8);
   @$pb.TagNumber(11)
   void clearDisabledColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.DartColorExpression ensureDisabledColor() => $_ensure(7);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(8);
 
   @$pb.TagNumber(12)
-  $1.DartColorExpression get focusColor => $_getN(8);
+  $1.DartColorExpression get focusColor => $_getN(9);
   @$pb.TagNumber(12)
   set focusColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
-  $core.bool hasFocusColor() => $_has(8);
+  $core.bool hasFocusColor() => $_has(9);
   @$pb.TagNumber(12)
   void clearFocusColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.DartColorExpression ensureFocusColor() => $_ensure(8);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(9);
 
   @$pb.TagNumber(13)
-  $1.DartColorExpression get hoverColor => $_getN(9);
+  $1.DartColorExpression get hoverColor => $_getN(10);
   @$pb.TagNumber(13)
   set hoverColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
-  $core.bool hasHoverColor() => $_has(9);
+  $core.bool hasHoverColor() => $_has(10);
   @$pb.TagNumber(13)
   void clearHoverColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.DartColorExpression ensureHoverColor() => $_ensure(9);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(10);
 
   @$pb.TagNumber(14)
-  $1.DartColorExpression get highlightColor => $_getN(10);
+  $1.DartColorExpression get highlightColor => $_getN(11);
   @$pb.TagNumber(14)
   set highlightColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
-  $core.bool hasHighlightColor() => $_has(10);
+  $core.bool hasHighlightColor() => $_has(11);
   @$pb.TagNumber(14)
   void clearHighlightColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.DartColorExpression ensureHighlightColor() => $_ensure(10);
+  $1.DartColorExpression ensureHighlightColor() => $_ensure(11);
 
   @$pb.TagNumber(15)
-  $1.DartColorExpression get splashColor => $_getN(11);
+  $1.DartColorExpression get splashColor => $_getN(12);
   @$pb.TagNumber(15)
   set splashColor($1.DartColorExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
-  $core.bool hasSplashColor() => $_has(11);
+  $core.bool hasSplashColor() => $_has(12);
   @$pb.TagNumber(15)
   void clearSplashColor() => clearField(15);
   @$pb.TagNumber(15)
-  $1.DartColorExpression ensureSplashColor() => $_ensure(11);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(12);
 
   @$pb.TagNumber(17)
-  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(12);
+  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(13);
   @$pb.TagNumber(17)
   set materialTapTargetSize($2.MaterialMaterialTapTargetSize_Enum v) { setField(17, v); }
   @$pb.TagNumber(17)
-  $core.bool hasMaterialTapTargetSize() => $_has(12);
+  $core.bool hasMaterialTapTargetSize() => $_has(13);
   @$pb.TagNumber(17)
   void clearMaterialTapTargetSize() => clearField(17);
 
   @$pb.TagNumber(18)
-  WidgetExpression get child => $_getN(13);
+  WidgetExpression get child => $_getN(14);
   @$pb.TagNumber(18)
   set child(WidgetExpression v) { setField(18, v); }
   @$pb.TagNumber(18)
-  $core.bool hasChild() => $_has(13);
+  $core.bool hasChild() => $_has(14);
   @$pb.TagNumber(18)
   void clearChild() => clearField(18);
   @$pb.TagNumber(18)
-  WidgetExpression ensureChild() => $_ensure(13);
+  WidgetExpression ensureChild() => $_ensure(14);
 }
 
 /// package:flutter/src/material/card.dart
@@ -11466,6 +11914,7 @@ class MaterialCard extends $pb.GeneratedMessage {
     $1.DartColorExpression? surfaceTintColor,
     $core.double? elevation,
     $core.bool? borderOnForeground,
+    $1.FlutterEdgeInsetsGeometryExpression? margin,
     $2.DartClip_Enum? clipBehavior,
     WidgetExpression? child,
     $core.bool? semanticContainer,
@@ -11489,6 +11938,9 @@ class MaterialCard extends $pb.GeneratedMessage {
     if (borderOnForeground != null) {
       $result.borderOnForeground = borderOnForeground;
     }
+    if (margin != null) {
+      $result.margin = margin;
+    }
     if (clipBehavior != null) {
       $result.clipBehavior = clipBehavior;
     }
@@ -11511,6 +11963,7 @@ class MaterialCard extends $pb.GeneratedMessage {
     ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'surfaceTintColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..aOB(8, _omitFieldNames ? '' : 'borderOnForeground')
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(9, _omitFieldNames ? '' : 'margin', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..e<$2.DartClip_Enum>(10, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..aOM<WidgetExpression>(11, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..aOB(12, _omitFieldNames ? '' : 'semanticContainer')
@@ -11600,32 +12053,43 @@ class MaterialCard extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearBorderOnForeground() => clearField(8);
 
+  @$pb.TagNumber(9)
+  $1.FlutterEdgeInsetsGeometryExpression get margin => $_getN(6);
+  @$pb.TagNumber(9)
+  set margin($1.FlutterEdgeInsetsGeometryExpression v) { setField(9, v); }
+  @$pb.TagNumber(9)
+  $core.bool hasMargin() => $_has(6);
+  @$pb.TagNumber(9)
+  void clearMargin() => clearField(9);
+  @$pb.TagNumber(9)
+  $1.FlutterEdgeInsetsGeometryExpression ensureMargin() => $_ensure(6);
+
   @$pb.TagNumber(10)
-  $2.DartClip_Enum get clipBehavior => $_getN(6);
+  $2.DartClip_Enum get clipBehavior => $_getN(7);
   @$pb.TagNumber(10)
   set clipBehavior($2.DartClip_Enum v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasClipBehavior() => $_has(6);
+  $core.bool hasClipBehavior() => $_has(7);
   @$pb.TagNumber(10)
   void clearClipBehavior() => clearField(10);
 
   @$pb.TagNumber(11)
-  WidgetExpression get child => $_getN(7);
+  WidgetExpression get child => $_getN(8);
   @$pb.TagNumber(11)
   set child(WidgetExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasChild() => $_has(7);
+  $core.bool hasChild() => $_has(8);
   @$pb.TagNumber(11)
   void clearChild() => clearField(11);
   @$pb.TagNumber(11)
-  WidgetExpression ensureChild() => $_ensure(7);
+  WidgetExpression ensureChild() => $_ensure(8);
 
   @$pb.TagNumber(12)
-  $core.bool get semanticContainer => $_getBF(8);
+  $core.bool get semanticContainer => $_getBF(9);
   @$pb.TagNumber(12)
-  set semanticContainer($core.bool v) { $_setBool(8, v); }
+  set semanticContainer($core.bool v) { $_setBool(9, v); }
   @$pb.TagNumber(12)
-  $core.bool hasSemanticContainer() => $_has(8);
+  $core.bool hasSemanticContainer() => $_has(9);
   @$pb.TagNumber(12)
   void clearSemanticContainer() => clearField(12);
 }
@@ -12081,6 +12545,7 @@ class MaterialCheckboxListTile extends $pb.GeneratedMessage {
     WidgetExpression? secondary,
     $core.bool? selected,
     $2.MaterialListTileControlAffinity_Enum? controlAffinity,
+    $1.FlutterEdgeInsetsGeometryExpression? contentPadding,
     $core.bool? tristate,
     $1.DartColorExpression? selectedTileColor,
     $core.bool? enableFeedback,
@@ -12141,6 +12606,9 @@ class MaterialCheckboxListTile extends $pb.GeneratedMessage {
     if (controlAffinity != null) {
       $result.controlAffinity = controlAffinity;
     }
+    if (contentPadding != null) {
+      $result.contentPadding = contentPadding;
+    }
     if (tristate != null) {
       $result.tristate = tristate;
     }
@@ -12178,6 +12646,7 @@ class MaterialCheckboxListTile extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(25, _omitFieldNames ? '' : 'secondary', subBuilder: WidgetExpression.create)
     ..aOB(26, _omitFieldNames ? '' : 'selected')
     ..e<$2.MaterialListTileControlAffinity_Enum>(27, _omitFieldNames ? '' : 'controlAffinity', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialListTileControlAffinity_Enum.LEADING, valueOf: $2.MaterialListTileControlAffinity_Enum.valueOf, enumValues: $2.MaterialListTileControlAffinity_Enum.values)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(28, _omitFieldNames ? '' : 'contentPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOB(29, _omitFieldNames ? '' : 'tristate')
     ..aOM<$1.DartColorExpression>(31, _omitFieldNames ? '' : 'selectedTileColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(33, _omitFieldNames ? '' : 'enableFeedback')
@@ -12384,41 +12853,52 @@ class MaterialCheckboxListTile extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   void clearControlAffinity() => clearField(27);
 
+  @$pb.TagNumber(28)
+  $1.FlutterEdgeInsetsGeometryExpression get contentPadding => $_getN(18);
+  @$pb.TagNumber(28)
+  set contentPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(28, v); }
+  @$pb.TagNumber(28)
+  $core.bool hasContentPadding() => $_has(18);
+  @$pb.TagNumber(28)
+  void clearContentPadding() => clearField(28);
+  @$pb.TagNumber(28)
+  $1.FlutterEdgeInsetsGeometryExpression ensureContentPadding() => $_ensure(18);
+
   @$pb.TagNumber(29)
-  $core.bool get tristate => $_getBF(18);
+  $core.bool get tristate => $_getBF(19);
   @$pb.TagNumber(29)
-  set tristate($core.bool v) { $_setBool(18, v); }
+  set tristate($core.bool v) { $_setBool(19, v); }
   @$pb.TagNumber(29)
-  $core.bool hasTristate() => $_has(18);
+  $core.bool hasTristate() => $_has(19);
   @$pb.TagNumber(29)
   void clearTristate() => clearField(29);
 
   @$pb.TagNumber(31)
-  $1.DartColorExpression get selectedTileColor => $_getN(19);
+  $1.DartColorExpression get selectedTileColor => $_getN(20);
   @$pb.TagNumber(31)
   set selectedTileColor($1.DartColorExpression v) { setField(31, v); }
   @$pb.TagNumber(31)
-  $core.bool hasSelectedTileColor() => $_has(19);
+  $core.bool hasSelectedTileColor() => $_has(20);
   @$pb.TagNumber(31)
   void clearSelectedTileColor() => clearField(31);
   @$pb.TagNumber(31)
-  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(19);
+  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(20);
 
   @$pb.TagNumber(33)
-  $core.bool get enableFeedback => $_getBF(20);
+  $core.bool get enableFeedback => $_getBF(21);
   @$pb.TagNumber(33)
-  set enableFeedback($core.bool v) { $_setBool(20, v); }
+  set enableFeedback($core.bool v) { $_setBool(21, v); }
   @$pb.TagNumber(33)
-  $core.bool hasEnableFeedback() => $_has(20);
+  $core.bool hasEnableFeedback() => $_has(21);
   @$pb.TagNumber(33)
   void clearEnableFeedback() => clearField(33);
 
   @$pb.TagNumber(34)
-  $core.String get checkboxSemanticLabel => $_getSZ(21);
+  $core.String get checkboxSemanticLabel => $_getSZ(22);
   @$pb.TagNumber(34)
-  set checkboxSemanticLabel($core.String v) { $_setString(21, v); }
+  set checkboxSemanticLabel($core.String v) { $_setString(22, v); }
   @$pb.TagNumber(34)
-  $core.bool hasCheckboxSemanticLabel() => $_has(21);
+  $core.bool hasCheckboxSemanticLabel() => $_has(22);
   @$pb.TagNumber(34)
   void clearCheckboxSemanticLabel() => clearField(34);
 }
@@ -12444,6 +12924,7 @@ class MaterialCheckboxListTileNamedAdaptive extends $pb.GeneratedMessage {
     WidgetExpression? secondary,
     $core.bool? selected,
     $2.MaterialListTileControlAffinity_Enum? controlAffinity,
+    $1.FlutterEdgeInsetsGeometryExpression? contentPadding,
     $core.bool? tristate,
     $1.DartColorExpression? selectedTileColor,
     $core.bool? enableFeedback,
@@ -12504,6 +12985,9 @@ class MaterialCheckboxListTileNamedAdaptive extends $pb.GeneratedMessage {
     if (controlAffinity != null) {
       $result.controlAffinity = controlAffinity;
     }
+    if (contentPadding != null) {
+      $result.contentPadding = contentPadding;
+    }
     if (tristate != null) {
       $result.tristate = tristate;
     }
@@ -12541,6 +13025,7 @@ class MaterialCheckboxListTileNamedAdaptive extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(25, _omitFieldNames ? '' : 'secondary', subBuilder: WidgetExpression.create)
     ..aOB(26, _omitFieldNames ? '' : 'selected')
     ..e<$2.MaterialListTileControlAffinity_Enum>(27, _omitFieldNames ? '' : 'controlAffinity', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialListTileControlAffinity_Enum.LEADING, valueOf: $2.MaterialListTileControlAffinity_Enum.valueOf, enumValues: $2.MaterialListTileControlAffinity_Enum.values)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(28, _omitFieldNames ? '' : 'contentPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOB(29, _omitFieldNames ? '' : 'tristate')
     ..aOM<$1.DartColorExpression>(31, _omitFieldNames ? '' : 'selectedTileColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(33, _omitFieldNames ? '' : 'enableFeedback')
@@ -12747,41 +13232,52 @@ class MaterialCheckboxListTileNamedAdaptive extends $pb.GeneratedMessage {
   @$pb.TagNumber(27)
   void clearControlAffinity() => clearField(27);
 
+  @$pb.TagNumber(28)
+  $1.FlutterEdgeInsetsGeometryExpression get contentPadding => $_getN(18);
+  @$pb.TagNumber(28)
+  set contentPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(28, v); }
+  @$pb.TagNumber(28)
+  $core.bool hasContentPadding() => $_has(18);
+  @$pb.TagNumber(28)
+  void clearContentPadding() => clearField(28);
+  @$pb.TagNumber(28)
+  $1.FlutterEdgeInsetsGeometryExpression ensureContentPadding() => $_ensure(18);
+
   @$pb.TagNumber(29)
-  $core.bool get tristate => $_getBF(18);
+  $core.bool get tristate => $_getBF(19);
   @$pb.TagNumber(29)
-  set tristate($core.bool v) { $_setBool(18, v); }
+  set tristate($core.bool v) { $_setBool(19, v); }
   @$pb.TagNumber(29)
-  $core.bool hasTristate() => $_has(18);
+  $core.bool hasTristate() => $_has(19);
   @$pb.TagNumber(29)
   void clearTristate() => clearField(29);
 
   @$pb.TagNumber(31)
-  $1.DartColorExpression get selectedTileColor => $_getN(19);
+  $1.DartColorExpression get selectedTileColor => $_getN(20);
   @$pb.TagNumber(31)
   set selectedTileColor($1.DartColorExpression v) { setField(31, v); }
   @$pb.TagNumber(31)
-  $core.bool hasSelectedTileColor() => $_has(19);
+  $core.bool hasSelectedTileColor() => $_has(20);
   @$pb.TagNumber(31)
   void clearSelectedTileColor() => clearField(31);
   @$pb.TagNumber(31)
-  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(19);
+  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(20);
 
   @$pb.TagNumber(33)
-  $core.bool get enableFeedback => $_getBF(20);
+  $core.bool get enableFeedback => $_getBF(21);
   @$pb.TagNumber(33)
-  set enableFeedback($core.bool v) { $_setBool(20, v); }
+  set enableFeedback($core.bool v) { $_setBool(21, v); }
   @$pb.TagNumber(33)
-  $core.bool hasEnableFeedback() => $_has(20);
+  $core.bool hasEnableFeedback() => $_has(21);
   @$pb.TagNumber(33)
   void clearEnableFeedback() => clearField(33);
 
   @$pb.TagNumber(34)
-  $core.String get checkboxSemanticLabel => $_getSZ(21);
+  $core.String get checkboxSemanticLabel => $_getSZ(22);
   @$pb.TagNumber(34)
-  set checkboxSemanticLabel($core.String v) { $_setString(21, v); }
+  set checkboxSemanticLabel($core.String v) { $_setString(22, v); }
   @$pb.TagNumber(34)
-  $core.bool hasCheckboxSemanticLabel() => $_has(21);
+  $core.bool hasCheckboxSemanticLabel() => $_has(22);
   @$pb.TagNumber(34)
   void clearCheckboxSemanticLabel() => clearField(34);
 }
@@ -12792,12 +13288,14 @@ class MaterialChip extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? avatar,
     WidgetExpression? label,
+    $1.FlutterEdgeInsetsGeometryExpression? labelPadding,
     WidgetExpression? deleteIcon,
     $1.DartColorExpression? deleteIconColor,
     $core.String? deleteButtonTooltipMessage,
     $2.DartClip_Enum? clipBehavior,
     $core.bool? autofocus,
     $1.DartColorExpression? backgroundColor,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $2.MaterialMaterialTapTargetSize_Enum? materialTapTargetSize,
     $core.double? elevation,
     $1.DartColorExpression? shadowColor,
@@ -12812,6 +13310,9 @@ class MaterialChip extends $pb.GeneratedMessage {
     }
     if (label != null) {
       $result.label = label;
+    }
+    if (labelPadding != null) {
+      $result.labelPadding = labelPadding;
     }
     if (deleteIcon != null) {
       $result.deleteIcon = deleteIcon;
@@ -12830,6 +13331,9 @@ class MaterialChip extends $pb.GeneratedMessage {
     }
     if (backgroundColor != null) {
       $result.backgroundColor = backgroundColor;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (materialTapTargetSize != null) {
       $result.materialTapTargetSize = materialTapTargetSize;
@@ -12853,12 +13357,14 @@ class MaterialChip extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'avatar', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'labelPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<WidgetExpression>(7, _omitFieldNames ? '' : 'deleteIcon', subBuilder: WidgetExpression.create)
     ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'deleteIconColor', subBuilder: $1.DartColorExpression.create)
     ..aOS(10, _omitFieldNames ? '' : 'deleteButtonTooltipMessage')
     ..e<$2.DartClip_Enum>(13, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..aOB(15, _omitFieldNames ? '' : 'autofocus')
     ..aOM<$1.DartColorExpression>(17, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(18, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..e<$2.MaterialMaterialTapTargetSize_Enum>(20, _omitFieldNames ? '' : 'materialTapTargetSize', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialMaterialTapTargetSize_Enum.PADDED, valueOf: $2.MaterialMaterialTapTargetSize_Enum.valueOf, enumValues: $2.MaterialMaterialTapTargetSize_Enum.values)
     ..a<$core.double>(21, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(22, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
@@ -12920,105 +13426,127 @@ class MaterialChip extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   WidgetExpression ensureLabel() => $_ensure(2);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get labelPadding => $_getN(3);
+  @$pb.TagNumber(6)
+  set labelPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasLabelPadding() => $_has(3);
+  @$pb.TagNumber(6)
+  void clearLabelPadding() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensureLabelPadding() => $_ensure(3);
+
   @$pb.TagNumber(7)
-  WidgetExpression get deleteIcon => $_getN(3);
+  WidgetExpression get deleteIcon => $_getN(4);
   @$pb.TagNumber(7)
   set deleteIcon(WidgetExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
-  $core.bool hasDeleteIcon() => $_has(3);
+  $core.bool hasDeleteIcon() => $_has(4);
   @$pb.TagNumber(7)
   void clearDeleteIcon() => clearField(7);
   @$pb.TagNumber(7)
-  WidgetExpression ensureDeleteIcon() => $_ensure(3);
+  WidgetExpression ensureDeleteIcon() => $_ensure(4);
 
   @$pb.TagNumber(9)
-  $1.DartColorExpression get deleteIconColor => $_getN(4);
+  $1.DartColorExpression get deleteIconColor => $_getN(5);
   @$pb.TagNumber(9)
   set deleteIconColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
-  $core.bool hasDeleteIconColor() => $_has(4);
+  $core.bool hasDeleteIconColor() => $_has(5);
   @$pb.TagNumber(9)
   void clearDeleteIconColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.DartColorExpression ensureDeleteIconColor() => $_ensure(4);
+  $1.DartColorExpression ensureDeleteIconColor() => $_ensure(5);
 
   @$pb.TagNumber(10)
-  $core.String get deleteButtonTooltipMessage => $_getSZ(5);
+  $core.String get deleteButtonTooltipMessage => $_getSZ(6);
   @$pb.TagNumber(10)
-  set deleteButtonTooltipMessage($core.String v) { $_setString(5, v); }
+  set deleteButtonTooltipMessage($core.String v) { $_setString(6, v); }
   @$pb.TagNumber(10)
-  $core.bool hasDeleteButtonTooltipMessage() => $_has(5);
+  $core.bool hasDeleteButtonTooltipMessage() => $_has(6);
   @$pb.TagNumber(10)
   void clearDeleteButtonTooltipMessage() => clearField(10);
 
   @$pb.TagNumber(13)
-  $2.DartClip_Enum get clipBehavior => $_getN(6);
+  $2.DartClip_Enum get clipBehavior => $_getN(7);
   @$pb.TagNumber(13)
   set clipBehavior($2.DartClip_Enum v) { setField(13, v); }
   @$pb.TagNumber(13)
-  $core.bool hasClipBehavior() => $_has(6);
+  $core.bool hasClipBehavior() => $_has(7);
   @$pb.TagNumber(13)
   void clearClipBehavior() => clearField(13);
 
   @$pb.TagNumber(15)
-  $core.bool get autofocus => $_getBF(7);
+  $core.bool get autofocus => $_getBF(8);
   @$pb.TagNumber(15)
-  set autofocus($core.bool v) { $_setBool(7, v); }
+  set autofocus($core.bool v) { $_setBool(8, v); }
   @$pb.TagNumber(15)
-  $core.bool hasAutofocus() => $_has(7);
+  $core.bool hasAutofocus() => $_has(8);
   @$pb.TagNumber(15)
   void clearAutofocus() => clearField(15);
 
   @$pb.TagNumber(17)
-  $1.DartColorExpression get backgroundColor => $_getN(8);
+  $1.DartColorExpression get backgroundColor => $_getN(9);
   @$pb.TagNumber(17)
   set backgroundColor($1.DartColorExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
-  $core.bool hasBackgroundColor() => $_has(8);
+  $core.bool hasBackgroundColor() => $_has(9);
   @$pb.TagNumber(17)
   void clearBackgroundColor() => clearField(17);
   @$pb.TagNumber(17)
-  $1.DartColorExpression ensureBackgroundColor() => $_ensure(8);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(9);
+
+  @$pb.TagNumber(18)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(10);
+  @$pb.TagNumber(18)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(18, v); }
+  @$pb.TagNumber(18)
+  $core.bool hasPadding() => $_has(10);
+  @$pb.TagNumber(18)
+  void clearPadding() => clearField(18);
+  @$pb.TagNumber(18)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(10);
 
   @$pb.TagNumber(20)
-  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(9);
+  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(11);
   @$pb.TagNumber(20)
   set materialTapTargetSize($2.MaterialMaterialTapTargetSize_Enum v) { setField(20, v); }
   @$pb.TagNumber(20)
-  $core.bool hasMaterialTapTargetSize() => $_has(9);
+  $core.bool hasMaterialTapTargetSize() => $_has(11);
   @$pb.TagNumber(20)
   void clearMaterialTapTargetSize() => clearField(20);
 
   @$pb.TagNumber(21)
-  $core.double get elevation => $_getN(10);
+  $core.double get elevation => $_getN(12);
   @$pb.TagNumber(21)
-  set elevation($core.double v) { $_setDouble(10, v); }
+  set elevation($core.double v) { $_setDouble(12, v); }
   @$pb.TagNumber(21)
-  $core.bool hasElevation() => $_has(10);
+  $core.bool hasElevation() => $_has(12);
   @$pb.TagNumber(21)
   void clearElevation() => clearField(21);
 
   @$pb.TagNumber(22)
-  $1.DartColorExpression get shadowColor => $_getN(11);
+  $1.DartColorExpression get shadowColor => $_getN(13);
   @$pb.TagNumber(22)
   set shadowColor($1.DartColorExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
-  $core.bool hasShadowColor() => $_has(11);
+  $core.bool hasShadowColor() => $_has(13);
   @$pb.TagNumber(22)
   void clearShadowColor() => clearField(22);
   @$pb.TagNumber(22)
-  $1.DartColorExpression ensureShadowColor() => $_ensure(11);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(13);
 
   @$pb.TagNumber(23)
-  $1.DartColorExpression get surfaceTintColor => $_getN(12);
+  $1.DartColorExpression get surfaceTintColor => $_getN(14);
   @$pb.TagNumber(23)
   set surfaceTintColor($1.DartColorExpression v) { setField(23, v); }
   @$pb.TagNumber(23)
-  $core.bool hasSurfaceTintColor() => $_has(12);
+  $core.bool hasSurfaceTintColor() => $_has(14);
   @$pb.TagNumber(23)
   void clearSurfaceTintColor() => clearField(23);
   @$pb.TagNumber(23)
-  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(12);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(14);
 }
 
 /// package:flutter/src/material/chip.dart
@@ -13027,6 +13555,8 @@ class MaterialRawChip extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? avatar,
     WidgetExpression? label,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
+    $1.FlutterEdgeInsetsGeometryExpression? labelPadding,
     WidgetExpression? deleteIcon,
     $1.DartColorExpression? deleteIconColor,
     $core.String? deleteButtonTooltipMessage,
@@ -13057,6 +13587,12 @@ class MaterialRawChip extends $pb.GeneratedMessage {
     }
     if (label != null) {
       $result.label = label;
+    }
+    if (padding != null) {
+      $result.padding = padding;
+    }
+    if (labelPadding != null) {
+      $result.labelPadding = labelPadding;
     }
     if (deleteIcon != null) {
       $result.deleteIcon = deleteIcon;
@@ -13128,6 +13664,8 @@ class MaterialRawChip extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'avatar', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(7, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(9, _omitFieldNames ? '' : 'labelPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<WidgetExpression>(10, _omitFieldNames ? '' : 'deleteIcon', subBuilder: WidgetExpression.create)
     ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'deleteIconColor', subBuilder: $1.DartColorExpression.create)
     ..aOS(13, _omitFieldNames ? '' : 'deleteButtonTooltipMessage')
@@ -13205,203 +13743,225 @@ class MaterialRawChip extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   WidgetExpression ensureLabel() => $_ensure(2);
 
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(3);
+  @$pb.TagNumber(7)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(7, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasPadding() => $_has(3);
+  @$pb.TagNumber(7)
+  void clearPadding() => clearField(7);
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(3);
+
+  @$pb.TagNumber(9)
+  $1.FlutterEdgeInsetsGeometryExpression get labelPadding => $_getN(4);
+  @$pb.TagNumber(9)
+  set labelPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(9, v); }
+  @$pb.TagNumber(9)
+  $core.bool hasLabelPadding() => $_has(4);
+  @$pb.TagNumber(9)
+  void clearLabelPadding() => clearField(9);
+  @$pb.TagNumber(9)
+  $1.FlutterEdgeInsetsGeometryExpression ensureLabelPadding() => $_ensure(4);
+
   @$pb.TagNumber(10)
-  WidgetExpression get deleteIcon => $_getN(3);
+  WidgetExpression get deleteIcon => $_getN(5);
   @$pb.TagNumber(10)
   set deleteIcon(WidgetExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasDeleteIcon() => $_has(3);
+  $core.bool hasDeleteIcon() => $_has(5);
   @$pb.TagNumber(10)
   void clearDeleteIcon() => clearField(10);
   @$pb.TagNumber(10)
-  WidgetExpression ensureDeleteIcon() => $_ensure(3);
+  WidgetExpression ensureDeleteIcon() => $_ensure(5);
 
   @$pb.TagNumber(12)
-  $1.DartColorExpression get deleteIconColor => $_getN(4);
+  $1.DartColorExpression get deleteIconColor => $_getN(6);
   @$pb.TagNumber(12)
   set deleteIconColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
-  $core.bool hasDeleteIconColor() => $_has(4);
+  $core.bool hasDeleteIconColor() => $_has(6);
   @$pb.TagNumber(12)
   void clearDeleteIconColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.DartColorExpression ensureDeleteIconColor() => $_ensure(4);
+  $1.DartColorExpression ensureDeleteIconColor() => $_ensure(6);
 
   @$pb.TagNumber(13)
-  $core.String get deleteButtonTooltipMessage => $_getSZ(5);
+  $core.String get deleteButtonTooltipMessage => $_getSZ(7);
   @$pb.TagNumber(13)
-  set deleteButtonTooltipMessage($core.String v) { $_setString(5, v); }
+  set deleteButtonTooltipMessage($core.String v) { $_setString(7, v); }
   @$pb.TagNumber(13)
-  $core.bool hasDeleteButtonTooltipMessage() => $_has(5);
+  $core.bool hasDeleteButtonTooltipMessage() => $_has(7);
   @$pb.TagNumber(13)
   void clearDeleteButtonTooltipMessage() => clearField(13);
 
   @$pb.TagNumber(16)
-  $core.double get pressElevation => $_getN(6);
+  $core.double get pressElevation => $_getN(8);
   @$pb.TagNumber(16)
-  set pressElevation($core.double v) { $_setDouble(6, v); }
+  set pressElevation($core.double v) { $_setDouble(8, v); }
   @$pb.TagNumber(16)
-  $core.bool hasPressElevation() => $_has(6);
+  $core.bool hasPressElevation() => $_has(8);
   @$pb.TagNumber(16)
   void clearPressElevation() => clearField(16);
 
   @$pb.TagNumber(17)
-  $core.bool get tapEnabled => $_getBF(7);
+  $core.bool get tapEnabled => $_getBF(9);
   @$pb.TagNumber(17)
-  set tapEnabled($core.bool v) { $_setBool(7, v); }
+  set tapEnabled($core.bool v) { $_setBool(9, v); }
   @$pb.TagNumber(17)
-  $core.bool hasTapEnabled() => $_has(7);
+  $core.bool hasTapEnabled() => $_has(9);
   @$pb.TagNumber(17)
   void clearTapEnabled() => clearField(17);
 
   @$pb.TagNumber(18)
-  $core.bool get selected => $_getBF(8);
+  $core.bool get selected => $_getBF(10);
   @$pb.TagNumber(18)
-  set selected($core.bool v) { $_setBool(8, v); }
+  set selected($core.bool v) { $_setBool(10, v); }
   @$pb.TagNumber(18)
-  $core.bool hasSelected() => $_has(8);
+  $core.bool hasSelected() => $_has(10);
   @$pb.TagNumber(18)
   void clearSelected() => clearField(18);
 
   @$pb.TagNumber(19)
-  $core.bool get isEnabled => $_getBF(9);
+  $core.bool get isEnabled => $_getBF(11);
   @$pb.TagNumber(19)
-  set isEnabled($core.bool v) { $_setBool(9, v); }
+  set isEnabled($core.bool v) { $_setBool(11, v); }
   @$pb.TagNumber(19)
-  $core.bool hasIsEnabled() => $_has(9);
+  $core.bool hasIsEnabled() => $_has(11);
   @$pb.TagNumber(19)
   void clearIsEnabled() => clearField(19);
 
   @$pb.TagNumber(20)
-  $1.DartColorExpression get disabledColor => $_getN(10);
+  $1.DartColorExpression get disabledColor => $_getN(12);
   @$pb.TagNumber(20)
   set disabledColor($1.DartColorExpression v) { setField(20, v); }
   @$pb.TagNumber(20)
-  $core.bool hasDisabledColor() => $_has(10);
+  $core.bool hasDisabledColor() => $_has(12);
   @$pb.TagNumber(20)
   void clearDisabledColor() => clearField(20);
   @$pb.TagNumber(20)
-  $1.DartColorExpression ensureDisabledColor() => $_ensure(10);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(12);
 
   @$pb.TagNumber(21)
-  $1.DartColorExpression get selectedColor => $_getN(11);
+  $1.DartColorExpression get selectedColor => $_getN(13);
   @$pb.TagNumber(21)
   set selectedColor($1.DartColorExpression v) { setField(21, v); }
   @$pb.TagNumber(21)
-  $core.bool hasSelectedColor() => $_has(11);
+  $core.bool hasSelectedColor() => $_has(13);
   @$pb.TagNumber(21)
   void clearSelectedColor() => clearField(21);
   @$pb.TagNumber(21)
-  $1.DartColorExpression ensureSelectedColor() => $_ensure(11);
+  $1.DartColorExpression ensureSelectedColor() => $_ensure(13);
 
   @$pb.TagNumber(22)
-  $core.String get tooltip => $_getSZ(12);
+  $core.String get tooltip => $_getSZ(14);
   @$pb.TagNumber(22)
-  set tooltip($core.String v) { $_setString(12, v); }
+  set tooltip($core.String v) { $_setString(14, v); }
   @$pb.TagNumber(22)
-  $core.bool hasTooltip() => $_has(12);
+  $core.bool hasTooltip() => $_has(14);
   @$pb.TagNumber(22)
   void clearTooltip() => clearField(22);
 
   @$pb.TagNumber(25)
-  $2.DartClip_Enum get clipBehavior => $_getN(13);
+  $2.DartClip_Enum get clipBehavior => $_getN(15);
   @$pb.TagNumber(25)
   set clipBehavior($2.DartClip_Enum v) { setField(25, v); }
   @$pb.TagNumber(25)
-  $core.bool hasClipBehavior() => $_has(13);
+  $core.bool hasClipBehavior() => $_has(15);
   @$pb.TagNumber(25)
   void clearClipBehavior() => clearField(25);
 
   @$pb.TagNumber(27)
-  $core.bool get autofocus => $_getBF(14);
+  $core.bool get autofocus => $_getBF(16);
   @$pb.TagNumber(27)
-  set autofocus($core.bool v) { $_setBool(14, v); }
+  set autofocus($core.bool v) { $_setBool(16, v); }
   @$pb.TagNumber(27)
-  $core.bool hasAutofocus() => $_has(14);
+  $core.bool hasAutofocus() => $_has(16);
   @$pb.TagNumber(27)
   void clearAutofocus() => clearField(27);
 
   @$pb.TagNumber(29)
-  $1.DartColorExpression get backgroundColor => $_getN(15);
+  $1.DartColorExpression get backgroundColor => $_getN(17);
   @$pb.TagNumber(29)
   set backgroundColor($1.DartColorExpression v) { setField(29, v); }
   @$pb.TagNumber(29)
-  $core.bool hasBackgroundColor() => $_has(15);
+  $core.bool hasBackgroundColor() => $_has(17);
   @$pb.TagNumber(29)
   void clearBackgroundColor() => clearField(29);
   @$pb.TagNumber(29)
-  $1.DartColorExpression ensureBackgroundColor() => $_ensure(15);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(17);
 
   @$pb.TagNumber(30)
-  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(16);
+  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(18);
   @$pb.TagNumber(30)
   set materialTapTargetSize($2.MaterialMaterialTapTargetSize_Enum v) { setField(30, v); }
   @$pb.TagNumber(30)
-  $core.bool hasMaterialTapTargetSize() => $_has(16);
+  $core.bool hasMaterialTapTargetSize() => $_has(18);
   @$pb.TagNumber(30)
   void clearMaterialTapTargetSize() => clearField(30);
 
   @$pb.TagNumber(31)
-  $core.double get elevation => $_getN(17);
+  $core.double get elevation => $_getN(19);
   @$pb.TagNumber(31)
-  set elevation($core.double v) { $_setDouble(17, v); }
+  set elevation($core.double v) { $_setDouble(19, v); }
   @$pb.TagNumber(31)
-  $core.bool hasElevation() => $_has(17);
+  $core.bool hasElevation() => $_has(19);
   @$pb.TagNumber(31)
   void clearElevation() => clearField(31);
 
   @$pb.TagNumber(32)
-  $1.DartColorExpression get shadowColor => $_getN(18);
+  $1.DartColorExpression get shadowColor => $_getN(20);
   @$pb.TagNumber(32)
   set shadowColor($1.DartColorExpression v) { setField(32, v); }
   @$pb.TagNumber(32)
-  $core.bool hasShadowColor() => $_has(18);
+  $core.bool hasShadowColor() => $_has(20);
   @$pb.TagNumber(32)
   void clearShadowColor() => clearField(32);
   @$pb.TagNumber(32)
-  $1.DartColorExpression ensureShadowColor() => $_ensure(18);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(20);
 
   @$pb.TagNumber(33)
-  $1.DartColorExpression get surfaceTintColor => $_getN(19);
+  $1.DartColorExpression get surfaceTintColor => $_getN(21);
   @$pb.TagNumber(33)
   set surfaceTintColor($1.DartColorExpression v) { setField(33, v); }
   @$pb.TagNumber(33)
-  $core.bool hasSurfaceTintColor() => $_has(19);
+  $core.bool hasSurfaceTintColor() => $_has(21);
   @$pb.TagNumber(33)
   void clearSurfaceTintColor() => clearField(33);
   @$pb.TagNumber(33)
-  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(19);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(21);
 
   @$pb.TagNumber(35)
-  $1.DartColorExpression get selectedShadowColor => $_getN(20);
+  $1.DartColorExpression get selectedShadowColor => $_getN(22);
   @$pb.TagNumber(35)
   set selectedShadowColor($1.DartColorExpression v) { setField(35, v); }
   @$pb.TagNumber(35)
-  $core.bool hasSelectedShadowColor() => $_has(20);
+  $core.bool hasSelectedShadowColor() => $_has(22);
   @$pb.TagNumber(35)
   void clearSelectedShadowColor() => clearField(35);
   @$pb.TagNumber(35)
-  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(20);
+  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(22);
 
   @$pb.TagNumber(36)
-  $core.bool get showCheckmark => $_getBF(21);
+  $core.bool get showCheckmark => $_getBF(23);
   @$pb.TagNumber(36)
-  set showCheckmark($core.bool v) { $_setBool(21, v); }
+  set showCheckmark($core.bool v) { $_setBool(23, v); }
   @$pb.TagNumber(36)
-  $core.bool hasShowCheckmark() => $_has(21);
+  $core.bool hasShowCheckmark() => $_has(23);
   @$pb.TagNumber(36)
   void clearShowCheckmark() => clearField(36);
 
   @$pb.TagNumber(37)
-  $1.DartColorExpression get checkmarkColor => $_getN(22);
+  $1.DartColorExpression get checkmarkColor => $_getN(24);
   @$pb.TagNumber(37)
   set checkmarkColor($1.DartColorExpression v) { setField(37, v); }
   @$pb.TagNumber(37)
-  $core.bool hasCheckmarkColor() => $_has(22);
+  $core.bool hasCheckmarkColor() => $_has(24);
   @$pb.TagNumber(37)
   void clearCheckmarkColor() => clearField(37);
   @$pb.TagNumber(37)
-  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(22);
+  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(24);
 }
 
 /// package:flutter/src/material/choice_chip.dart
@@ -13410,6 +13970,7 @@ class MaterialChoiceChip extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? avatar,
     WidgetExpression? label,
+    $1.FlutterEdgeInsetsGeometryExpression? labelPadding,
     $core.double? pressElevation,
     $core.bool? selected,
     $1.DartColorExpression? selectedColor,
@@ -13418,6 +13979,7 @@ class MaterialChoiceChip extends $pb.GeneratedMessage {
     $2.DartClip_Enum? clipBehavior,
     $core.bool? autofocus,
     $1.DartColorExpression? backgroundColor,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $2.MaterialMaterialTapTargetSize_Enum? materialTapTargetSize,
     $core.double? elevation,
     $1.DartColorExpression? shadowColor,
@@ -13435,6 +13997,9 @@ class MaterialChoiceChip extends $pb.GeneratedMessage {
     }
     if (label != null) {
       $result.label = label;
+    }
+    if (labelPadding != null) {
+      $result.labelPadding = labelPadding;
     }
     if (pressElevation != null) {
       $result.pressElevation = pressElevation;
@@ -13459,6 +14024,9 @@ class MaterialChoiceChip extends $pb.GeneratedMessage {
     }
     if (backgroundColor != null) {
       $result.backgroundColor = backgroundColor;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (materialTapTargetSize != null) {
       $result.materialTapTargetSize = materialTapTargetSize;
@@ -13491,6 +14059,7 @@ class MaterialChoiceChip extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'avatar', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'labelPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'pressElevation', $pb.PbFieldType.OD)
     ..aOB(9, _omitFieldNames ? '' : 'selected')
     ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.DartColorExpression.create)
@@ -13499,6 +14068,7 @@ class MaterialChoiceChip extends $pb.GeneratedMessage {
     ..e<$2.DartClip_Enum>(15, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..aOB(17, _omitFieldNames ? '' : 'autofocus')
     ..aOM<$1.DartColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(20, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..e<$2.MaterialMaterialTapTargetSize_Enum>(22, _omitFieldNames ? '' : 'materialTapTargetSize', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialMaterialTapTargetSize_Enum.PADDED, valueOf: $2.MaterialMaterialTapTargetSize_Enum.valueOf, enumValues: $2.MaterialMaterialTapTargetSize_Enum.values)
     ..a<$core.double>(23, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(24, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
@@ -13563,154 +14133,176 @@ class MaterialChoiceChip extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   WidgetExpression ensureLabel() => $_ensure(2);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get labelPadding => $_getN(3);
+  @$pb.TagNumber(6)
+  set labelPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasLabelPadding() => $_has(3);
+  @$pb.TagNumber(6)
+  void clearLabelPadding() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensureLabelPadding() => $_ensure(3);
+
   @$pb.TagNumber(8)
-  $core.double get pressElevation => $_getN(3);
+  $core.double get pressElevation => $_getN(4);
   @$pb.TagNumber(8)
-  set pressElevation($core.double v) { $_setDouble(3, v); }
+  set pressElevation($core.double v) { $_setDouble(4, v); }
   @$pb.TagNumber(8)
-  $core.bool hasPressElevation() => $_has(3);
+  $core.bool hasPressElevation() => $_has(4);
   @$pb.TagNumber(8)
   void clearPressElevation() => clearField(8);
 
   @$pb.TagNumber(9)
-  $core.bool get selected => $_getBF(4);
+  $core.bool get selected => $_getBF(5);
   @$pb.TagNumber(9)
-  set selected($core.bool v) { $_setBool(4, v); }
+  set selected($core.bool v) { $_setBool(5, v); }
   @$pb.TagNumber(9)
-  $core.bool hasSelected() => $_has(4);
+  $core.bool hasSelected() => $_has(5);
   @$pb.TagNumber(9)
   void clearSelected() => clearField(9);
 
   @$pb.TagNumber(10)
-  $1.DartColorExpression get selectedColor => $_getN(5);
+  $1.DartColorExpression get selectedColor => $_getN(6);
   @$pb.TagNumber(10)
   set selectedColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasSelectedColor() => $_has(5);
+  $core.bool hasSelectedColor() => $_has(6);
   @$pb.TagNumber(10)
   void clearSelectedColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.DartColorExpression ensureSelectedColor() => $_ensure(5);
+  $1.DartColorExpression ensureSelectedColor() => $_ensure(6);
 
   @$pb.TagNumber(11)
-  $1.DartColorExpression get disabledColor => $_getN(6);
+  $1.DartColorExpression get disabledColor => $_getN(7);
   @$pb.TagNumber(11)
   set disabledColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasDisabledColor() => $_has(6);
+  $core.bool hasDisabledColor() => $_has(7);
   @$pb.TagNumber(11)
   void clearDisabledColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.DartColorExpression ensureDisabledColor() => $_ensure(6);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(7);
 
   @$pb.TagNumber(12)
-  $core.String get tooltip => $_getSZ(7);
+  $core.String get tooltip => $_getSZ(8);
   @$pb.TagNumber(12)
-  set tooltip($core.String v) { $_setString(7, v); }
+  set tooltip($core.String v) { $_setString(8, v); }
   @$pb.TagNumber(12)
-  $core.bool hasTooltip() => $_has(7);
+  $core.bool hasTooltip() => $_has(8);
   @$pb.TagNumber(12)
   void clearTooltip() => clearField(12);
 
   @$pb.TagNumber(15)
-  $2.DartClip_Enum get clipBehavior => $_getN(8);
+  $2.DartClip_Enum get clipBehavior => $_getN(9);
   @$pb.TagNumber(15)
   set clipBehavior($2.DartClip_Enum v) { setField(15, v); }
   @$pb.TagNumber(15)
-  $core.bool hasClipBehavior() => $_has(8);
+  $core.bool hasClipBehavior() => $_has(9);
   @$pb.TagNumber(15)
   void clearClipBehavior() => clearField(15);
 
   @$pb.TagNumber(17)
-  $core.bool get autofocus => $_getBF(9);
+  $core.bool get autofocus => $_getBF(10);
   @$pb.TagNumber(17)
-  set autofocus($core.bool v) { $_setBool(9, v); }
+  set autofocus($core.bool v) { $_setBool(10, v); }
   @$pb.TagNumber(17)
-  $core.bool hasAutofocus() => $_has(9);
+  $core.bool hasAutofocus() => $_has(10);
   @$pb.TagNumber(17)
   void clearAutofocus() => clearField(17);
 
   @$pb.TagNumber(19)
-  $1.DartColorExpression get backgroundColor => $_getN(10);
+  $1.DartColorExpression get backgroundColor => $_getN(11);
   @$pb.TagNumber(19)
   set backgroundColor($1.DartColorExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
-  $core.bool hasBackgroundColor() => $_has(10);
+  $core.bool hasBackgroundColor() => $_has(11);
   @$pb.TagNumber(19)
   void clearBackgroundColor() => clearField(19);
   @$pb.TagNumber(19)
-  $1.DartColorExpression ensureBackgroundColor() => $_ensure(10);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(11);
+
+  @$pb.TagNumber(20)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(12);
+  @$pb.TagNumber(20)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(20, v); }
+  @$pb.TagNumber(20)
+  $core.bool hasPadding() => $_has(12);
+  @$pb.TagNumber(20)
+  void clearPadding() => clearField(20);
+  @$pb.TagNumber(20)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(12);
 
   @$pb.TagNumber(22)
-  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(11);
+  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(13);
   @$pb.TagNumber(22)
   set materialTapTargetSize($2.MaterialMaterialTapTargetSize_Enum v) { setField(22, v); }
   @$pb.TagNumber(22)
-  $core.bool hasMaterialTapTargetSize() => $_has(11);
+  $core.bool hasMaterialTapTargetSize() => $_has(13);
   @$pb.TagNumber(22)
   void clearMaterialTapTargetSize() => clearField(22);
 
   @$pb.TagNumber(23)
-  $core.double get elevation => $_getN(12);
+  $core.double get elevation => $_getN(14);
   @$pb.TagNumber(23)
-  set elevation($core.double v) { $_setDouble(12, v); }
+  set elevation($core.double v) { $_setDouble(14, v); }
   @$pb.TagNumber(23)
-  $core.bool hasElevation() => $_has(12);
+  $core.bool hasElevation() => $_has(14);
   @$pb.TagNumber(23)
   void clearElevation() => clearField(23);
 
   @$pb.TagNumber(24)
-  $1.DartColorExpression get shadowColor => $_getN(13);
+  $1.DartColorExpression get shadowColor => $_getN(15);
   @$pb.TagNumber(24)
   set shadowColor($1.DartColorExpression v) { setField(24, v); }
   @$pb.TagNumber(24)
-  $core.bool hasShadowColor() => $_has(13);
+  $core.bool hasShadowColor() => $_has(15);
   @$pb.TagNumber(24)
   void clearShadowColor() => clearField(24);
   @$pb.TagNumber(24)
-  $1.DartColorExpression ensureShadowColor() => $_ensure(13);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(15);
 
   @$pb.TagNumber(25)
-  $1.DartColorExpression get surfaceTintColor => $_getN(14);
+  $1.DartColorExpression get surfaceTintColor => $_getN(16);
   @$pb.TagNumber(25)
   set surfaceTintColor($1.DartColorExpression v) { setField(25, v); }
   @$pb.TagNumber(25)
-  $core.bool hasSurfaceTintColor() => $_has(14);
+  $core.bool hasSurfaceTintColor() => $_has(16);
   @$pb.TagNumber(25)
   void clearSurfaceTintColor() => clearField(25);
   @$pb.TagNumber(25)
-  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(14);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(16);
 
   @$pb.TagNumber(27)
-  $1.DartColorExpression get selectedShadowColor => $_getN(15);
+  $1.DartColorExpression get selectedShadowColor => $_getN(17);
   @$pb.TagNumber(27)
   set selectedShadowColor($1.DartColorExpression v) { setField(27, v); }
   @$pb.TagNumber(27)
-  $core.bool hasSelectedShadowColor() => $_has(15);
+  $core.bool hasSelectedShadowColor() => $_has(17);
   @$pb.TagNumber(27)
   void clearSelectedShadowColor() => clearField(27);
   @$pb.TagNumber(27)
-  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(15);
+  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(17);
 
   @$pb.TagNumber(28)
-  $core.bool get showCheckmark => $_getBF(16);
+  $core.bool get showCheckmark => $_getBF(18);
   @$pb.TagNumber(28)
-  set showCheckmark($core.bool v) { $_setBool(16, v); }
+  set showCheckmark($core.bool v) { $_setBool(18, v); }
   @$pb.TagNumber(28)
-  $core.bool hasShowCheckmark() => $_has(16);
+  $core.bool hasShowCheckmark() => $_has(18);
   @$pb.TagNumber(28)
   void clearShowCheckmark() => clearField(28);
 
   @$pb.TagNumber(29)
-  $1.DartColorExpression get checkmarkColor => $_getN(17);
+  $1.DartColorExpression get checkmarkColor => $_getN(19);
   @$pb.TagNumber(29)
   set checkmarkColor($1.DartColorExpression v) { setField(29, v); }
   @$pb.TagNumber(29)
-  $core.bool hasCheckmarkColor() => $_has(17);
+  $core.bool hasCheckmarkColor() => $_has(19);
   @$pb.TagNumber(29)
   void clearCheckmarkColor() => clearField(29);
   @$pb.TagNumber(29)
-  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(17);
+  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(19);
 }
 
 /// package:flutter/src/material/choice_chip.dart
@@ -13719,6 +14311,7 @@ class MaterialChoiceChipNamedElevated extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? avatar,
     WidgetExpression? label,
+    $1.FlutterEdgeInsetsGeometryExpression? labelPadding,
     $core.double? pressElevation,
     $core.bool? selected,
     $1.DartColorExpression? selectedColor,
@@ -13727,6 +14320,7 @@ class MaterialChoiceChipNamedElevated extends $pb.GeneratedMessage {
     $2.DartClip_Enum? clipBehavior,
     $core.bool? autofocus,
     $1.DartColorExpression? backgroundColor,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $2.MaterialMaterialTapTargetSize_Enum? materialTapTargetSize,
     $core.double? elevation,
     $1.DartColorExpression? shadowColor,
@@ -13744,6 +14338,9 @@ class MaterialChoiceChipNamedElevated extends $pb.GeneratedMessage {
     }
     if (label != null) {
       $result.label = label;
+    }
+    if (labelPadding != null) {
+      $result.labelPadding = labelPadding;
     }
     if (pressElevation != null) {
       $result.pressElevation = pressElevation;
@@ -13768,6 +14365,9 @@ class MaterialChoiceChipNamedElevated extends $pb.GeneratedMessage {
     }
     if (backgroundColor != null) {
       $result.backgroundColor = backgroundColor;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (materialTapTargetSize != null) {
       $result.materialTapTargetSize = materialTapTargetSize;
@@ -13800,6 +14400,7 @@ class MaterialChoiceChipNamedElevated extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'avatar', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'labelPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'pressElevation', $pb.PbFieldType.OD)
     ..aOB(9, _omitFieldNames ? '' : 'selected')
     ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.DartColorExpression.create)
@@ -13808,6 +14409,7 @@ class MaterialChoiceChipNamedElevated extends $pb.GeneratedMessage {
     ..e<$2.DartClip_Enum>(15, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..aOB(17, _omitFieldNames ? '' : 'autofocus')
     ..aOM<$1.DartColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(20, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..e<$2.MaterialMaterialTapTargetSize_Enum>(22, _omitFieldNames ? '' : 'materialTapTargetSize', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialMaterialTapTargetSize_Enum.PADDED, valueOf: $2.MaterialMaterialTapTargetSize_Enum.valueOf, enumValues: $2.MaterialMaterialTapTargetSize_Enum.values)
     ..a<$core.double>(23, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(24, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
@@ -13872,154 +14474,176 @@ class MaterialChoiceChipNamedElevated extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   WidgetExpression ensureLabel() => $_ensure(2);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get labelPadding => $_getN(3);
+  @$pb.TagNumber(6)
+  set labelPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasLabelPadding() => $_has(3);
+  @$pb.TagNumber(6)
+  void clearLabelPadding() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensureLabelPadding() => $_ensure(3);
+
   @$pb.TagNumber(8)
-  $core.double get pressElevation => $_getN(3);
+  $core.double get pressElevation => $_getN(4);
   @$pb.TagNumber(8)
-  set pressElevation($core.double v) { $_setDouble(3, v); }
+  set pressElevation($core.double v) { $_setDouble(4, v); }
   @$pb.TagNumber(8)
-  $core.bool hasPressElevation() => $_has(3);
+  $core.bool hasPressElevation() => $_has(4);
   @$pb.TagNumber(8)
   void clearPressElevation() => clearField(8);
 
   @$pb.TagNumber(9)
-  $core.bool get selected => $_getBF(4);
+  $core.bool get selected => $_getBF(5);
   @$pb.TagNumber(9)
-  set selected($core.bool v) { $_setBool(4, v); }
+  set selected($core.bool v) { $_setBool(5, v); }
   @$pb.TagNumber(9)
-  $core.bool hasSelected() => $_has(4);
+  $core.bool hasSelected() => $_has(5);
   @$pb.TagNumber(9)
   void clearSelected() => clearField(9);
 
   @$pb.TagNumber(10)
-  $1.DartColorExpression get selectedColor => $_getN(5);
+  $1.DartColorExpression get selectedColor => $_getN(6);
   @$pb.TagNumber(10)
   set selectedColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasSelectedColor() => $_has(5);
+  $core.bool hasSelectedColor() => $_has(6);
   @$pb.TagNumber(10)
   void clearSelectedColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.DartColorExpression ensureSelectedColor() => $_ensure(5);
+  $1.DartColorExpression ensureSelectedColor() => $_ensure(6);
 
   @$pb.TagNumber(11)
-  $1.DartColorExpression get disabledColor => $_getN(6);
+  $1.DartColorExpression get disabledColor => $_getN(7);
   @$pb.TagNumber(11)
   set disabledColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasDisabledColor() => $_has(6);
+  $core.bool hasDisabledColor() => $_has(7);
   @$pb.TagNumber(11)
   void clearDisabledColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.DartColorExpression ensureDisabledColor() => $_ensure(6);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(7);
 
   @$pb.TagNumber(12)
-  $core.String get tooltip => $_getSZ(7);
+  $core.String get tooltip => $_getSZ(8);
   @$pb.TagNumber(12)
-  set tooltip($core.String v) { $_setString(7, v); }
+  set tooltip($core.String v) { $_setString(8, v); }
   @$pb.TagNumber(12)
-  $core.bool hasTooltip() => $_has(7);
+  $core.bool hasTooltip() => $_has(8);
   @$pb.TagNumber(12)
   void clearTooltip() => clearField(12);
 
   @$pb.TagNumber(15)
-  $2.DartClip_Enum get clipBehavior => $_getN(8);
+  $2.DartClip_Enum get clipBehavior => $_getN(9);
   @$pb.TagNumber(15)
   set clipBehavior($2.DartClip_Enum v) { setField(15, v); }
   @$pb.TagNumber(15)
-  $core.bool hasClipBehavior() => $_has(8);
+  $core.bool hasClipBehavior() => $_has(9);
   @$pb.TagNumber(15)
   void clearClipBehavior() => clearField(15);
 
   @$pb.TagNumber(17)
-  $core.bool get autofocus => $_getBF(9);
+  $core.bool get autofocus => $_getBF(10);
   @$pb.TagNumber(17)
-  set autofocus($core.bool v) { $_setBool(9, v); }
+  set autofocus($core.bool v) { $_setBool(10, v); }
   @$pb.TagNumber(17)
-  $core.bool hasAutofocus() => $_has(9);
+  $core.bool hasAutofocus() => $_has(10);
   @$pb.TagNumber(17)
   void clearAutofocus() => clearField(17);
 
   @$pb.TagNumber(19)
-  $1.DartColorExpression get backgroundColor => $_getN(10);
+  $1.DartColorExpression get backgroundColor => $_getN(11);
   @$pb.TagNumber(19)
   set backgroundColor($1.DartColorExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
-  $core.bool hasBackgroundColor() => $_has(10);
+  $core.bool hasBackgroundColor() => $_has(11);
   @$pb.TagNumber(19)
   void clearBackgroundColor() => clearField(19);
   @$pb.TagNumber(19)
-  $1.DartColorExpression ensureBackgroundColor() => $_ensure(10);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(11);
+
+  @$pb.TagNumber(20)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(12);
+  @$pb.TagNumber(20)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(20, v); }
+  @$pb.TagNumber(20)
+  $core.bool hasPadding() => $_has(12);
+  @$pb.TagNumber(20)
+  void clearPadding() => clearField(20);
+  @$pb.TagNumber(20)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(12);
 
   @$pb.TagNumber(22)
-  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(11);
+  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(13);
   @$pb.TagNumber(22)
   set materialTapTargetSize($2.MaterialMaterialTapTargetSize_Enum v) { setField(22, v); }
   @$pb.TagNumber(22)
-  $core.bool hasMaterialTapTargetSize() => $_has(11);
+  $core.bool hasMaterialTapTargetSize() => $_has(13);
   @$pb.TagNumber(22)
   void clearMaterialTapTargetSize() => clearField(22);
 
   @$pb.TagNumber(23)
-  $core.double get elevation => $_getN(12);
+  $core.double get elevation => $_getN(14);
   @$pb.TagNumber(23)
-  set elevation($core.double v) { $_setDouble(12, v); }
+  set elevation($core.double v) { $_setDouble(14, v); }
   @$pb.TagNumber(23)
-  $core.bool hasElevation() => $_has(12);
+  $core.bool hasElevation() => $_has(14);
   @$pb.TagNumber(23)
   void clearElevation() => clearField(23);
 
   @$pb.TagNumber(24)
-  $1.DartColorExpression get shadowColor => $_getN(13);
+  $1.DartColorExpression get shadowColor => $_getN(15);
   @$pb.TagNumber(24)
   set shadowColor($1.DartColorExpression v) { setField(24, v); }
   @$pb.TagNumber(24)
-  $core.bool hasShadowColor() => $_has(13);
+  $core.bool hasShadowColor() => $_has(15);
   @$pb.TagNumber(24)
   void clearShadowColor() => clearField(24);
   @$pb.TagNumber(24)
-  $1.DartColorExpression ensureShadowColor() => $_ensure(13);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(15);
 
   @$pb.TagNumber(25)
-  $1.DartColorExpression get surfaceTintColor => $_getN(14);
+  $1.DartColorExpression get surfaceTintColor => $_getN(16);
   @$pb.TagNumber(25)
   set surfaceTintColor($1.DartColorExpression v) { setField(25, v); }
   @$pb.TagNumber(25)
-  $core.bool hasSurfaceTintColor() => $_has(14);
+  $core.bool hasSurfaceTintColor() => $_has(16);
   @$pb.TagNumber(25)
   void clearSurfaceTintColor() => clearField(25);
   @$pb.TagNumber(25)
-  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(14);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(16);
 
   @$pb.TagNumber(27)
-  $1.DartColorExpression get selectedShadowColor => $_getN(15);
+  $1.DartColorExpression get selectedShadowColor => $_getN(17);
   @$pb.TagNumber(27)
   set selectedShadowColor($1.DartColorExpression v) { setField(27, v); }
   @$pb.TagNumber(27)
-  $core.bool hasSelectedShadowColor() => $_has(15);
+  $core.bool hasSelectedShadowColor() => $_has(17);
   @$pb.TagNumber(27)
   void clearSelectedShadowColor() => clearField(27);
   @$pb.TagNumber(27)
-  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(15);
+  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(17);
 
   @$pb.TagNumber(28)
-  $core.bool get showCheckmark => $_getBF(16);
+  $core.bool get showCheckmark => $_getBF(18);
   @$pb.TagNumber(28)
-  set showCheckmark($core.bool v) { $_setBool(16, v); }
+  set showCheckmark($core.bool v) { $_setBool(18, v); }
   @$pb.TagNumber(28)
-  $core.bool hasShowCheckmark() => $_has(16);
+  $core.bool hasShowCheckmark() => $_has(18);
   @$pb.TagNumber(28)
   void clearShowCheckmark() => clearField(28);
 
   @$pb.TagNumber(29)
-  $1.DartColorExpression get checkmarkColor => $_getN(17);
+  $1.DartColorExpression get checkmarkColor => $_getN(19);
   @$pb.TagNumber(29)
   set checkmarkColor($1.DartColorExpression v) { setField(29, v); }
   @$pb.TagNumber(29)
-  $core.bool hasCheckmarkColor() => $_has(17);
+  $core.bool hasCheckmarkColor() => $_has(19);
   @$pb.TagNumber(29)
   void clearCheckmarkColor() => clearField(29);
   @$pb.TagNumber(29)
-  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(17);
+  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(19);
 }
 
 /// package:flutter/src/material/circle_avatar.dart
@@ -14308,14 +14932,19 @@ class MaterialAlertDialog extends $pb.GeneratedMessage {
   factory MaterialAlertDialog({
     $1.FlutterKeyExpression? key,
     WidgetExpression? icon,
+    $1.FlutterEdgeInsetsGeometryExpression? iconPadding,
     $1.DartColorExpression? iconColor,
     WidgetExpression? title,
+    $1.FlutterEdgeInsetsGeometryExpression? titlePadding,
     WidgetExpression? content,
+    $1.FlutterEdgeInsetsGeometryExpression? contentPadding,
     $core.Iterable<WidgetExpression>? actions,
+    $1.FlutterEdgeInsetsGeometryExpression? actionsPadding,
     $2.FlutterMainAxisAlignment_Enum? actionsAlignment,
     $2.FlutterOverflowBarAlignment_Enum? actionsOverflowAlignment,
     $2.FlutterVerticalDirection_Enum? actionsOverflowDirection,
     $core.double? actionsOverflowButtonSpacing,
+    $1.FlutterEdgeInsetsGeometryExpression? buttonPadding,
     $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
     $1.DartColorExpression? shadowColor,
@@ -14331,17 +14960,29 @@ class MaterialAlertDialog extends $pb.GeneratedMessage {
     if (icon != null) {
       $result.icon = icon;
     }
+    if (iconPadding != null) {
+      $result.iconPadding = iconPadding;
+    }
     if (iconColor != null) {
       $result.iconColor = iconColor;
     }
     if (title != null) {
       $result.title = title;
     }
+    if (titlePadding != null) {
+      $result.titlePadding = titlePadding;
+    }
     if (content != null) {
       $result.content = content;
     }
+    if (contentPadding != null) {
+      $result.contentPadding = contentPadding;
+    }
     if (actions != null) {
       $result.actions.addAll(actions);
+    }
+    if (actionsPadding != null) {
+      $result.actionsPadding = actionsPadding;
     }
     if (actionsAlignment != null) {
       $result.actionsAlignment = actionsAlignment;
@@ -14354,6 +14995,9 @@ class MaterialAlertDialog extends $pb.GeneratedMessage {
     }
     if (actionsOverflowButtonSpacing != null) {
       $result.actionsOverflowButtonSpacing = actionsOverflowButtonSpacing;
+    }
+    if (buttonPadding != null) {
+      $result.buttonPadding = buttonPadding;
     }
     if (backgroundColor != null) {
       $result.backgroundColor = backgroundColor;
@@ -14385,14 +15029,19 @@ class MaterialAlertDialog extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialAlertDialog', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'icon', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(4, _omitFieldNames ? '' : 'iconPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'iconColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<WidgetExpression>(6, _omitFieldNames ? '' : 'title', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(7, _omitFieldNames ? '' : 'titlePadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<WidgetExpression>(9, _omitFieldNames ? '' : 'content', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(10, _omitFieldNames ? '' : 'contentPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..pc<WidgetExpression>(12, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(13, _omitFieldNames ? '' : 'actionsPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..e<$2.FlutterMainAxisAlignment_Enum>(14, _omitFieldNames ? '' : 'actionsAlignment', $pb.PbFieldType.OE, defaultOrMaker: $2.FlutterMainAxisAlignment_Enum.START, valueOf: $2.FlutterMainAxisAlignment_Enum.valueOf, enumValues: $2.FlutterMainAxisAlignment_Enum.values)
     ..e<$2.FlutterOverflowBarAlignment_Enum>(15, _omitFieldNames ? '' : 'actionsOverflowAlignment', $pb.PbFieldType.OE, defaultOrMaker: $2.FlutterOverflowBarAlignment_Enum.START, valueOf: $2.FlutterOverflowBarAlignment_Enum.valueOf, enumValues: $2.FlutterOverflowBarAlignment_Enum.values)
     ..e<$2.FlutterVerticalDirection_Enum>(16, _omitFieldNames ? '' : 'actionsOverflowDirection', $pb.PbFieldType.OE, defaultOrMaker: $2.FlutterVerticalDirection_Enum.UP, valueOf: $2.FlutterVerticalDirection_Enum.valueOf, enumValues: $2.FlutterVerticalDirection_Enum.values)
     ..a<$core.double>(17, _omitFieldNames ? '' : 'actionsOverflowButtonSpacing', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(18, _omitFieldNames ? '' : 'buttonPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(20, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(21, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
@@ -14446,144 +15095,199 @@ class MaterialAlertDialog extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   WidgetExpression ensureIcon() => $_ensure(1);
 
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression get iconPadding => $_getN(2);
+  @$pb.TagNumber(4)
+  set iconPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasIconPadding() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearIconPadding() => clearField(4);
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression ensureIconPadding() => $_ensure(2);
+
   @$pb.TagNumber(5)
-  $1.DartColorExpression get iconColor => $_getN(2);
+  $1.DartColorExpression get iconColor => $_getN(3);
   @$pb.TagNumber(5)
   set iconColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
-  $core.bool hasIconColor() => $_has(2);
+  $core.bool hasIconColor() => $_has(3);
   @$pb.TagNumber(5)
   void clearIconColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.DartColorExpression ensureIconColor() => $_ensure(2);
+  $1.DartColorExpression ensureIconColor() => $_ensure(3);
 
   @$pb.TagNumber(6)
-  WidgetExpression get title => $_getN(3);
+  WidgetExpression get title => $_getN(4);
   @$pb.TagNumber(6)
   set title(WidgetExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
-  $core.bool hasTitle() => $_has(3);
+  $core.bool hasTitle() => $_has(4);
   @$pb.TagNumber(6)
   void clearTitle() => clearField(6);
   @$pb.TagNumber(6)
-  WidgetExpression ensureTitle() => $_ensure(3);
+  WidgetExpression ensureTitle() => $_ensure(4);
+
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression get titlePadding => $_getN(5);
+  @$pb.TagNumber(7)
+  set titlePadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(7, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasTitlePadding() => $_has(5);
+  @$pb.TagNumber(7)
+  void clearTitlePadding() => clearField(7);
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression ensureTitlePadding() => $_ensure(5);
 
   @$pb.TagNumber(9)
-  WidgetExpression get content => $_getN(4);
+  WidgetExpression get content => $_getN(6);
   @$pb.TagNumber(9)
   set content(WidgetExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
-  $core.bool hasContent() => $_has(4);
+  $core.bool hasContent() => $_has(6);
   @$pb.TagNumber(9)
   void clearContent() => clearField(9);
   @$pb.TagNumber(9)
-  WidgetExpression ensureContent() => $_ensure(4);
+  WidgetExpression ensureContent() => $_ensure(6);
+
+  @$pb.TagNumber(10)
+  $1.FlutterEdgeInsetsGeometryExpression get contentPadding => $_getN(7);
+  @$pb.TagNumber(10)
+  set contentPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(10, v); }
+  @$pb.TagNumber(10)
+  $core.bool hasContentPadding() => $_has(7);
+  @$pb.TagNumber(10)
+  void clearContentPadding() => clearField(10);
+  @$pb.TagNumber(10)
+  $1.FlutterEdgeInsetsGeometryExpression ensureContentPadding() => $_ensure(7);
 
   @$pb.TagNumber(12)
-  $core.List<WidgetExpression> get actions => $_getList(5);
+  $core.List<WidgetExpression> get actions => $_getList(8);
+
+  @$pb.TagNumber(13)
+  $1.FlutterEdgeInsetsGeometryExpression get actionsPadding => $_getN(9);
+  @$pb.TagNumber(13)
+  set actionsPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(13, v); }
+  @$pb.TagNumber(13)
+  $core.bool hasActionsPadding() => $_has(9);
+  @$pb.TagNumber(13)
+  void clearActionsPadding() => clearField(13);
+  @$pb.TagNumber(13)
+  $1.FlutterEdgeInsetsGeometryExpression ensureActionsPadding() => $_ensure(9);
 
   @$pb.TagNumber(14)
-  $2.FlutterMainAxisAlignment_Enum get actionsAlignment => $_getN(6);
+  $2.FlutterMainAxisAlignment_Enum get actionsAlignment => $_getN(10);
   @$pb.TagNumber(14)
   set actionsAlignment($2.FlutterMainAxisAlignment_Enum v) { setField(14, v); }
   @$pb.TagNumber(14)
-  $core.bool hasActionsAlignment() => $_has(6);
+  $core.bool hasActionsAlignment() => $_has(10);
   @$pb.TagNumber(14)
   void clearActionsAlignment() => clearField(14);
 
   @$pb.TagNumber(15)
-  $2.FlutterOverflowBarAlignment_Enum get actionsOverflowAlignment => $_getN(7);
+  $2.FlutterOverflowBarAlignment_Enum get actionsOverflowAlignment => $_getN(11);
   @$pb.TagNumber(15)
   set actionsOverflowAlignment($2.FlutterOverflowBarAlignment_Enum v) { setField(15, v); }
   @$pb.TagNumber(15)
-  $core.bool hasActionsOverflowAlignment() => $_has(7);
+  $core.bool hasActionsOverflowAlignment() => $_has(11);
   @$pb.TagNumber(15)
   void clearActionsOverflowAlignment() => clearField(15);
 
   @$pb.TagNumber(16)
-  $2.FlutterVerticalDirection_Enum get actionsOverflowDirection => $_getN(8);
+  $2.FlutterVerticalDirection_Enum get actionsOverflowDirection => $_getN(12);
   @$pb.TagNumber(16)
   set actionsOverflowDirection($2.FlutterVerticalDirection_Enum v) { setField(16, v); }
   @$pb.TagNumber(16)
-  $core.bool hasActionsOverflowDirection() => $_has(8);
+  $core.bool hasActionsOverflowDirection() => $_has(12);
   @$pb.TagNumber(16)
   void clearActionsOverflowDirection() => clearField(16);
 
   @$pb.TagNumber(17)
-  $core.double get actionsOverflowButtonSpacing => $_getN(9);
+  $core.double get actionsOverflowButtonSpacing => $_getN(13);
   @$pb.TagNumber(17)
-  set actionsOverflowButtonSpacing($core.double v) { $_setDouble(9, v); }
+  set actionsOverflowButtonSpacing($core.double v) { $_setDouble(13, v); }
   @$pb.TagNumber(17)
-  $core.bool hasActionsOverflowButtonSpacing() => $_has(9);
+  $core.bool hasActionsOverflowButtonSpacing() => $_has(13);
   @$pb.TagNumber(17)
   void clearActionsOverflowButtonSpacing() => clearField(17);
 
+  @$pb.TagNumber(18)
+  $1.FlutterEdgeInsetsGeometryExpression get buttonPadding => $_getN(14);
+  @$pb.TagNumber(18)
+  set buttonPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(18, v); }
+  @$pb.TagNumber(18)
+  $core.bool hasButtonPadding() => $_has(14);
+  @$pb.TagNumber(18)
+  void clearButtonPadding() => clearField(18);
+  @$pb.TagNumber(18)
+  $1.FlutterEdgeInsetsGeometryExpression ensureButtonPadding() => $_ensure(14);
+
   @$pb.TagNumber(19)
-  $1.DartColorExpression get backgroundColor => $_getN(10);
+  $1.DartColorExpression get backgroundColor => $_getN(15);
   @$pb.TagNumber(19)
   set backgroundColor($1.DartColorExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
-  $core.bool hasBackgroundColor() => $_has(10);
+  $core.bool hasBackgroundColor() => $_has(15);
   @$pb.TagNumber(19)
   void clearBackgroundColor() => clearField(19);
   @$pb.TagNumber(19)
-  $1.DartColorExpression ensureBackgroundColor() => $_ensure(10);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(15);
 
   @$pb.TagNumber(20)
-  $core.double get elevation => $_getN(11);
+  $core.double get elevation => $_getN(16);
   @$pb.TagNumber(20)
-  set elevation($core.double v) { $_setDouble(11, v); }
+  set elevation($core.double v) { $_setDouble(16, v); }
   @$pb.TagNumber(20)
-  $core.bool hasElevation() => $_has(11);
+  $core.bool hasElevation() => $_has(16);
   @$pb.TagNumber(20)
   void clearElevation() => clearField(20);
 
   @$pb.TagNumber(21)
-  $1.DartColorExpression get shadowColor => $_getN(12);
+  $1.DartColorExpression get shadowColor => $_getN(17);
   @$pb.TagNumber(21)
   set shadowColor($1.DartColorExpression v) { setField(21, v); }
   @$pb.TagNumber(21)
-  $core.bool hasShadowColor() => $_has(12);
+  $core.bool hasShadowColor() => $_has(17);
   @$pb.TagNumber(21)
   void clearShadowColor() => clearField(21);
   @$pb.TagNumber(21)
-  $1.DartColorExpression ensureShadowColor() => $_ensure(12);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(17);
 
   @$pb.TagNumber(22)
-  $1.DartColorExpression get surfaceTintColor => $_getN(13);
+  $1.DartColorExpression get surfaceTintColor => $_getN(18);
   @$pb.TagNumber(22)
   set surfaceTintColor($1.DartColorExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
-  $core.bool hasSurfaceTintColor() => $_has(13);
+  $core.bool hasSurfaceTintColor() => $_has(18);
   @$pb.TagNumber(22)
   void clearSurfaceTintColor() => clearField(22);
   @$pb.TagNumber(22)
-  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(13);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(18);
 
   @$pb.TagNumber(23)
-  $core.String get semanticLabel => $_getSZ(14);
+  $core.String get semanticLabel => $_getSZ(19);
   @$pb.TagNumber(23)
-  set semanticLabel($core.String v) { $_setString(14, v); }
+  set semanticLabel($core.String v) { $_setString(19, v); }
   @$pb.TagNumber(23)
-  $core.bool hasSemanticLabel() => $_has(14);
+  $core.bool hasSemanticLabel() => $_has(19);
   @$pb.TagNumber(23)
   void clearSemanticLabel() => clearField(23);
 
   @$pb.TagNumber(25)
-  $2.DartClip_Enum get clipBehavior => $_getN(15);
+  $2.DartClip_Enum get clipBehavior => $_getN(20);
   @$pb.TagNumber(25)
   set clipBehavior($2.DartClip_Enum v) { setField(25, v); }
   @$pb.TagNumber(25)
-  $core.bool hasClipBehavior() => $_has(15);
+  $core.bool hasClipBehavior() => $_has(20);
   @$pb.TagNumber(25)
   void clearClipBehavior() => clearField(25);
 
   @$pb.TagNumber(28)
-  $core.bool get scrollable => $_getBF(16);
+  $core.bool get scrollable => $_getBF(21);
   @$pb.TagNumber(28)
-  set scrollable($core.bool v) { $_setBool(16, v); }
+  set scrollable($core.bool v) { $_setBool(21, v); }
   @$pb.TagNumber(28)
-  $core.bool hasScrollable() => $_has(16);
+  $core.bool hasScrollable() => $_has(21);
   @$pb.TagNumber(28)
   void clearScrollable() => clearField(28);
 }
@@ -14593,14 +15297,19 @@ class MaterialAlertDialogNamedAdaptive extends $pb.GeneratedMessage {
   factory MaterialAlertDialogNamedAdaptive({
     $1.FlutterKeyExpression? key,
     WidgetExpression? icon,
+    $1.FlutterEdgeInsetsGeometryExpression? iconPadding,
     $1.DartColorExpression? iconColor,
     WidgetExpression? title,
+    $1.FlutterEdgeInsetsGeometryExpression? titlePadding,
     WidgetExpression? content,
+    $1.FlutterEdgeInsetsGeometryExpression? contentPadding,
     $core.Iterable<WidgetExpression>? actions,
+    $1.FlutterEdgeInsetsGeometryExpression? actionsPadding,
     $2.FlutterMainAxisAlignment_Enum? actionsAlignment,
     $2.FlutterOverflowBarAlignment_Enum? actionsOverflowAlignment,
     $2.FlutterVerticalDirection_Enum? actionsOverflowDirection,
     $core.double? actionsOverflowButtonSpacing,
+    $1.FlutterEdgeInsetsGeometryExpression? buttonPadding,
     $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
     $1.DartColorExpression? shadowColor,
@@ -14617,17 +15326,29 @@ class MaterialAlertDialogNamedAdaptive extends $pb.GeneratedMessage {
     if (icon != null) {
       $result.icon = icon;
     }
+    if (iconPadding != null) {
+      $result.iconPadding = iconPadding;
+    }
     if (iconColor != null) {
       $result.iconColor = iconColor;
     }
     if (title != null) {
       $result.title = title;
     }
+    if (titlePadding != null) {
+      $result.titlePadding = titlePadding;
+    }
     if (content != null) {
       $result.content = content;
     }
+    if (contentPadding != null) {
+      $result.contentPadding = contentPadding;
+    }
     if (actions != null) {
       $result.actions.addAll(actions);
+    }
+    if (actionsPadding != null) {
+      $result.actionsPadding = actionsPadding;
     }
     if (actionsAlignment != null) {
       $result.actionsAlignment = actionsAlignment;
@@ -14640,6 +15361,9 @@ class MaterialAlertDialogNamedAdaptive extends $pb.GeneratedMessage {
     }
     if (actionsOverflowButtonSpacing != null) {
       $result.actionsOverflowButtonSpacing = actionsOverflowButtonSpacing;
+    }
+    if (buttonPadding != null) {
+      $result.buttonPadding = buttonPadding;
     }
     if (backgroundColor != null) {
       $result.backgroundColor = backgroundColor;
@@ -14674,14 +15398,19 @@ class MaterialAlertDialogNamedAdaptive extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialAlertDialogNamedAdaptive', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'icon', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(4, _omitFieldNames ? '' : 'iconPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'iconColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<WidgetExpression>(6, _omitFieldNames ? '' : 'title', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(7, _omitFieldNames ? '' : 'titlePadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<WidgetExpression>(9, _omitFieldNames ? '' : 'content', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(10, _omitFieldNames ? '' : 'contentPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..pc<WidgetExpression>(12, _omitFieldNames ? '' : 'actions', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(13, _omitFieldNames ? '' : 'actionsPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..e<$2.FlutterMainAxisAlignment_Enum>(14, _omitFieldNames ? '' : 'actionsAlignment', $pb.PbFieldType.OE, defaultOrMaker: $2.FlutterMainAxisAlignment_Enum.START, valueOf: $2.FlutterMainAxisAlignment_Enum.valueOf, enumValues: $2.FlutterMainAxisAlignment_Enum.values)
     ..e<$2.FlutterOverflowBarAlignment_Enum>(15, _omitFieldNames ? '' : 'actionsOverflowAlignment', $pb.PbFieldType.OE, defaultOrMaker: $2.FlutterOverflowBarAlignment_Enum.START, valueOf: $2.FlutterOverflowBarAlignment_Enum.valueOf, enumValues: $2.FlutterOverflowBarAlignment_Enum.values)
     ..e<$2.FlutterVerticalDirection_Enum>(16, _omitFieldNames ? '' : 'actionsOverflowDirection', $pb.PbFieldType.OE, defaultOrMaker: $2.FlutterVerticalDirection_Enum.UP, valueOf: $2.FlutterVerticalDirection_Enum.valueOf, enumValues: $2.FlutterVerticalDirection_Enum.values)
     ..a<$core.double>(17, _omitFieldNames ? '' : 'actionsOverflowButtonSpacing', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(18, _omitFieldNames ? '' : 'buttonPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(20, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(21, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
@@ -14736,157 +15465,212 @@ class MaterialAlertDialogNamedAdaptive extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   WidgetExpression ensureIcon() => $_ensure(1);
 
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression get iconPadding => $_getN(2);
+  @$pb.TagNumber(4)
+  set iconPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasIconPadding() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearIconPadding() => clearField(4);
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression ensureIconPadding() => $_ensure(2);
+
   @$pb.TagNumber(5)
-  $1.DartColorExpression get iconColor => $_getN(2);
+  $1.DartColorExpression get iconColor => $_getN(3);
   @$pb.TagNumber(5)
   set iconColor($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
-  $core.bool hasIconColor() => $_has(2);
+  $core.bool hasIconColor() => $_has(3);
   @$pb.TagNumber(5)
   void clearIconColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.DartColorExpression ensureIconColor() => $_ensure(2);
+  $1.DartColorExpression ensureIconColor() => $_ensure(3);
 
   @$pb.TagNumber(6)
-  WidgetExpression get title => $_getN(3);
+  WidgetExpression get title => $_getN(4);
   @$pb.TagNumber(6)
   set title(WidgetExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
-  $core.bool hasTitle() => $_has(3);
+  $core.bool hasTitle() => $_has(4);
   @$pb.TagNumber(6)
   void clearTitle() => clearField(6);
   @$pb.TagNumber(6)
-  WidgetExpression ensureTitle() => $_ensure(3);
+  WidgetExpression ensureTitle() => $_ensure(4);
+
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression get titlePadding => $_getN(5);
+  @$pb.TagNumber(7)
+  set titlePadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(7, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasTitlePadding() => $_has(5);
+  @$pb.TagNumber(7)
+  void clearTitlePadding() => clearField(7);
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression ensureTitlePadding() => $_ensure(5);
 
   @$pb.TagNumber(9)
-  WidgetExpression get content => $_getN(4);
+  WidgetExpression get content => $_getN(6);
   @$pb.TagNumber(9)
   set content(WidgetExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
-  $core.bool hasContent() => $_has(4);
+  $core.bool hasContent() => $_has(6);
   @$pb.TagNumber(9)
   void clearContent() => clearField(9);
   @$pb.TagNumber(9)
-  WidgetExpression ensureContent() => $_ensure(4);
+  WidgetExpression ensureContent() => $_ensure(6);
+
+  @$pb.TagNumber(10)
+  $1.FlutterEdgeInsetsGeometryExpression get contentPadding => $_getN(7);
+  @$pb.TagNumber(10)
+  set contentPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(10, v); }
+  @$pb.TagNumber(10)
+  $core.bool hasContentPadding() => $_has(7);
+  @$pb.TagNumber(10)
+  void clearContentPadding() => clearField(10);
+  @$pb.TagNumber(10)
+  $1.FlutterEdgeInsetsGeometryExpression ensureContentPadding() => $_ensure(7);
 
   @$pb.TagNumber(12)
-  $core.List<WidgetExpression> get actions => $_getList(5);
+  $core.List<WidgetExpression> get actions => $_getList(8);
+
+  @$pb.TagNumber(13)
+  $1.FlutterEdgeInsetsGeometryExpression get actionsPadding => $_getN(9);
+  @$pb.TagNumber(13)
+  set actionsPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(13, v); }
+  @$pb.TagNumber(13)
+  $core.bool hasActionsPadding() => $_has(9);
+  @$pb.TagNumber(13)
+  void clearActionsPadding() => clearField(13);
+  @$pb.TagNumber(13)
+  $1.FlutterEdgeInsetsGeometryExpression ensureActionsPadding() => $_ensure(9);
 
   @$pb.TagNumber(14)
-  $2.FlutterMainAxisAlignment_Enum get actionsAlignment => $_getN(6);
+  $2.FlutterMainAxisAlignment_Enum get actionsAlignment => $_getN(10);
   @$pb.TagNumber(14)
   set actionsAlignment($2.FlutterMainAxisAlignment_Enum v) { setField(14, v); }
   @$pb.TagNumber(14)
-  $core.bool hasActionsAlignment() => $_has(6);
+  $core.bool hasActionsAlignment() => $_has(10);
   @$pb.TagNumber(14)
   void clearActionsAlignment() => clearField(14);
 
   @$pb.TagNumber(15)
-  $2.FlutterOverflowBarAlignment_Enum get actionsOverflowAlignment => $_getN(7);
+  $2.FlutterOverflowBarAlignment_Enum get actionsOverflowAlignment => $_getN(11);
   @$pb.TagNumber(15)
   set actionsOverflowAlignment($2.FlutterOverflowBarAlignment_Enum v) { setField(15, v); }
   @$pb.TagNumber(15)
-  $core.bool hasActionsOverflowAlignment() => $_has(7);
+  $core.bool hasActionsOverflowAlignment() => $_has(11);
   @$pb.TagNumber(15)
   void clearActionsOverflowAlignment() => clearField(15);
 
   @$pb.TagNumber(16)
-  $2.FlutterVerticalDirection_Enum get actionsOverflowDirection => $_getN(8);
+  $2.FlutterVerticalDirection_Enum get actionsOverflowDirection => $_getN(12);
   @$pb.TagNumber(16)
   set actionsOverflowDirection($2.FlutterVerticalDirection_Enum v) { setField(16, v); }
   @$pb.TagNumber(16)
-  $core.bool hasActionsOverflowDirection() => $_has(8);
+  $core.bool hasActionsOverflowDirection() => $_has(12);
   @$pb.TagNumber(16)
   void clearActionsOverflowDirection() => clearField(16);
 
   @$pb.TagNumber(17)
-  $core.double get actionsOverflowButtonSpacing => $_getN(9);
+  $core.double get actionsOverflowButtonSpacing => $_getN(13);
   @$pb.TagNumber(17)
-  set actionsOverflowButtonSpacing($core.double v) { $_setDouble(9, v); }
+  set actionsOverflowButtonSpacing($core.double v) { $_setDouble(13, v); }
   @$pb.TagNumber(17)
-  $core.bool hasActionsOverflowButtonSpacing() => $_has(9);
+  $core.bool hasActionsOverflowButtonSpacing() => $_has(13);
   @$pb.TagNumber(17)
   void clearActionsOverflowButtonSpacing() => clearField(17);
 
+  @$pb.TagNumber(18)
+  $1.FlutterEdgeInsetsGeometryExpression get buttonPadding => $_getN(14);
+  @$pb.TagNumber(18)
+  set buttonPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(18, v); }
+  @$pb.TagNumber(18)
+  $core.bool hasButtonPadding() => $_has(14);
+  @$pb.TagNumber(18)
+  void clearButtonPadding() => clearField(18);
+  @$pb.TagNumber(18)
+  $1.FlutterEdgeInsetsGeometryExpression ensureButtonPadding() => $_ensure(14);
+
   @$pb.TagNumber(19)
-  $1.DartColorExpression get backgroundColor => $_getN(10);
+  $1.DartColorExpression get backgroundColor => $_getN(15);
   @$pb.TagNumber(19)
   set backgroundColor($1.DartColorExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
-  $core.bool hasBackgroundColor() => $_has(10);
+  $core.bool hasBackgroundColor() => $_has(15);
   @$pb.TagNumber(19)
   void clearBackgroundColor() => clearField(19);
   @$pb.TagNumber(19)
-  $1.DartColorExpression ensureBackgroundColor() => $_ensure(10);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(15);
 
   @$pb.TagNumber(20)
-  $core.double get elevation => $_getN(11);
+  $core.double get elevation => $_getN(16);
   @$pb.TagNumber(20)
-  set elevation($core.double v) { $_setDouble(11, v); }
+  set elevation($core.double v) { $_setDouble(16, v); }
   @$pb.TagNumber(20)
-  $core.bool hasElevation() => $_has(11);
+  $core.bool hasElevation() => $_has(16);
   @$pb.TagNumber(20)
   void clearElevation() => clearField(20);
 
   @$pb.TagNumber(21)
-  $1.DartColorExpression get shadowColor => $_getN(12);
+  $1.DartColorExpression get shadowColor => $_getN(17);
   @$pb.TagNumber(21)
   set shadowColor($1.DartColorExpression v) { setField(21, v); }
   @$pb.TagNumber(21)
-  $core.bool hasShadowColor() => $_has(12);
+  $core.bool hasShadowColor() => $_has(17);
   @$pb.TagNumber(21)
   void clearShadowColor() => clearField(21);
   @$pb.TagNumber(21)
-  $1.DartColorExpression ensureShadowColor() => $_ensure(12);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(17);
 
   @$pb.TagNumber(22)
-  $1.DartColorExpression get surfaceTintColor => $_getN(13);
+  $1.DartColorExpression get surfaceTintColor => $_getN(18);
   @$pb.TagNumber(22)
   set surfaceTintColor($1.DartColorExpression v) { setField(22, v); }
   @$pb.TagNumber(22)
-  $core.bool hasSurfaceTintColor() => $_has(13);
+  $core.bool hasSurfaceTintColor() => $_has(18);
   @$pb.TagNumber(22)
   void clearSurfaceTintColor() => clearField(22);
   @$pb.TagNumber(22)
-  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(13);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(18);
 
   @$pb.TagNumber(23)
-  $core.String get semanticLabel => $_getSZ(14);
+  $core.String get semanticLabel => $_getSZ(19);
   @$pb.TagNumber(23)
-  set semanticLabel($core.String v) { $_setString(14, v); }
+  set semanticLabel($core.String v) { $_setString(19, v); }
   @$pb.TagNumber(23)
-  $core.bool hasSemanticLabel() => $_has(14);
+  $core.bool hasSemanticLabel() => $_has(19);
   @$pb.TagNumber(23)
   void clearSemanticLabel() => clearField(23);
 
   @$pb.TagNumber(25)
-  $2.DartClip_Enum get clipBehavior => $_getN(15);
+  $2.DartClip_Enum get clipBehavior => $_getN(20);
   @$pb.TagNumber(25)
   set clipBehavior($2.DartClip_Enum v) { setField(25, v); }
   @$pb.TagNumber(25)
-  $core.bool hasClipBehavior() => $_has(15);
+  $core.bool hasClipBehavior() => $_has(20);
   @$pb.TagNumber(25)
   void clearClipBehavior() => clearField(25);
 
   @$pb.TagNumber(28)
-  $core.bool get scrollable => $_getBF(16);
+  $core.bool get scrollable => $_getBF(21);
   @$pb.TagNumber(28)
-  set scrollable($core.bool v) { $_setBool(16, v); }
+  set scrollable($core.bool v) { $_setBool(21, v); }
   @$pb.TagNumber(28)
-  $core.bool hasScrollable() => $_has(16);
+  $core.bool hasScrollable() => $_has(21);
   @$pb.TagNumber(28)
   void clearScrollable() => clearField(28);
 
   @$pb.TagNumber(31)
-  $1.DartDurationExpression get insetAnimationDuration => $_getN(17);
+  $1.DartDurationExpression get insetAnimationDuration => $_getN(22);
   @$pb.TagNumber(31)
   set insetAnimationDuration($1.DartDurationExpression v) { setField(31, v); }
   @$pb.TagNumber(31)
-  $core.bool hasInsetAnimationDuration() => $_has(17);
+  $core.bool hasInsetAnimationDuration() => $_has(22);
   @$pb.TagNumber(31)
   void clearInsetAnimationDuration() => clearField(31);
   @$pb.TagNumber(31)
-  $1.DartDurationExpression ensureInsetAnimationDuration() => $_ensure(17);
+  $1.DartDurationExpression ensureInsetAnimationDuration() => $_ensure(22);
 }
 
 /// package:flutter/src/material/dialog.dart
@@ -15156,7 +15940,9 @@ class MaterialSimpleDialog extends $pb.GeneratedMessage {
   factory MaterialSimpleDialog({
     $1.FlutterKeyExpression? key,
     WidgetExpression? title,
+    $1.FlutterEdgeInsetsGeometryExpression? titlePadding,
     $core.Iterable<WidgetExpression>? children,
+    $1.FlutterEdgeInsetsGeometryExpression? contentPadding,
     $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
     $1.DartColorExpression? shadowColor,
@@ -15171,8 +15957,14 @@ class MaterialSimpleDialog extends $pb.GeneratedMessage {
     if (title != null) {
       $result.title = title;
     }
+    if (titlePadding != null) {
+      $result.titlePadding = titlePadding;
+    }
     if (children != null) {
       $result.children.addAll(children);
+    }
+    if (contentPadding != null) {
+      $result.contentPadding = contentPadding;
     }
     if (backgroundColor != null) {
       $result.backgroundColor = backgroundColor;
@@ -15201,7 +15993,9 @@ class MaterialSimpleDialog extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialSimpleDialog', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'title', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(4, _omitFieldNames ? '' : 'titlePadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..pc<WidgetExpression>(6, _omitFieldNames ? '' : 'children', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(7, _omitFieldNames ? '' : 'contentPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(9, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
@@ -15254,66 +16048,88 @@ class MaterialSimpleDialog extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   WidgetExpression ensureTitle() => $_ensure(1);
 
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression get titlePadding => $_getN(2);
+  @$pb.TagNumber(4)
+  set titlePadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasTitlePadding() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearTitlePadding() => clearField(4);
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression ensureTitlePadding() => $_ensure(2);
+
   @$pb.TagNumber(6)
-  $core.List<WidgetExpression> get children => $_getList(2);
+  $core.List<WidgetExpression> get children => $_getList(3);
+
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression get contentPadding => $_getN(4);
+  @$pb.TagNumber(7)
+  set contentPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(7, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasContentPadding() => $_has(4);
+  @$pb.TagNumber(7)
+  void clearContentPadding() => clearField(7);
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression ensureContentPadding() => $_ensure(4);
 
   @$pb.TagNumber(8)
-  $1.DartColorExpression get backgroundColor => $_getN(3);
+  $1.DartColorExpression get backgroundColor => $_getN(5);
   @$pb.TagNumber(8)
   set backgroundColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
-  $core.bool hasBackgroundColor() => $_has(3);
+  $core.bool hasBackgroundColor() => $_has(5);
   @$pb.TagNumber(8)
   void clearBackgroundColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.DartColorExpression ensureBackgroundColor() => $_ensure(3);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(5);
 
   @$pb.TagNumber(9)
-  $core.double get elevation => $_getN(4);
+  $core.double get elevation => $_getN(6);
   @$pb.TagNumber(9)
-  set elevation($core.double v) { $_setDouble(4, v); }
+  set elevation($core.double v) { $_setDouble(6, v); }
   @$pb.TagNumber(9)
-  $core.bool hasElevation() => $_has(4);
+  $core.bool hasElevation() => $_has(6);
   @$pb.TagNumber(9)
   void clearElevation() => clearField(9);
 
   @$pb.TagNumber(10)
-  $1.DartColorExpression get shadowColor => $_getN(5);
+  $1.DartColorExpression get shadowColor => $_getN(7);
   @$pb.TagNumber(10)
   set shadowColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasShadowColor() => $_has(5);
+  $core.bool hasShadowColor() => $_has(7);
   @$pb.TagNumber(10)
   void clearShadowColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.DartColorExpression ensureShadowColor() => $_ensure(5);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(7);
 
   @$pb.TagNumber(11)
-  $1.DartColorExpression get surfaceTintColor => $_getN(6);
+  $1.DartColorExpression get surfaceTintColor => $_getN(8);
   @$pb.TagNumber(11)
   set surfaceTintColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasSurfaceTintColor() => $_has(6);
+  $core.bool hasSurfaceTintColor() => $_has(8);
   @$pb.TagNumber(11)
   void clearSurfaceTintColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(6);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(8);
 
   @$pb.TagNumber(12)
-  $core.String get semanticLabel => $_getSZ(7);
+  $core.String get semanticLabel => $_getSZ(9);
   @$pb.TagNumber(12)
-  set semanticLabel($core.String v) { $_setString(7, v); }
+  set semanticLabel($core.String v) { $_setString(9, v); }
   @$pb.TagNumber(12)
-  $core.bool hasSemanticLabel() => $_has(7);
+  $core.bool hasSemanticLabel() => $_has(9);
   @$pb.TagNumber(12)
   void clearSemanticLabel() => clearField(12);
 
   @$pb.TagNumber(14)
-  $2.DartClip_Enum get clipBehavior => $_getN(8);
+  $2.DartClip_Enum get clipBehavior => $_getN(10);
   @$pb.TagNumber(14)
   set clipBehavior($2.DartClip_Enum v) { setField(14, v); }
   @$pb.TagNumber(14)
-  $core.bool hasClipBehavior() => $_has(8);
+  $core.bool hasClipBehavior() => $_has(10);
   @$pb.TagNumber(14)
   void clearClipBehavior() => clearField(14);
 }
@@ -15953,12 +16769,20 @@ class MaterialDrawerController extends $pb.GeneratedMessage {
 class MaterialDrawerHeader extends $pb.GeneratedMessage {
   factory MaterialDrawerHeader({
     $1.FlutterKeyExpression? key,
+    $1.FlutterEdgeInsetsGeometryExpression? margin,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $1.DartDurationExpression? duration,
     WidgetExpression? child,
   }) {
     final $result = create();
     if (key != null) {
       $result.key = key;
+    }
+    if (margin != null) {
+      $result.margin = margin;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (duration != null) {
       $result.duration = duration;
@@ -15974,6 +16798,8 @@ class MaterialDrawerHeader extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialDrawerHeader', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(4, _omitFieldNames ? '' : 'margin', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(5, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartDurationExpression>(6, _omitFieldNames ? '' : 'duration', subBuilder: $1.DartDurationExpression.create)
     ..aOM<WidgetExpression>(8, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..hasRequiredFields = false
@@ -16011,27 +16837,49 @@ class MaterialDrawerHeader extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression get margin => $_getN(1);
+  @$pb.TagNumber(4)
+  set margin($1.FlutterEdgeInsetsGeometryExpression v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasMargin() => $_has(1);
+  @$pb.TagNumber(4)
+  void clearMargin() => clearField(4);
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression ensureMargin() => $_ensure(1);
+
+  @$pb.TagNumber(5)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(2);
+  @$pb.TagNumber(5)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasPadding() => $_has(2);
+  @$pb.TagNumber(5)
+  void clearPadding() => clearField(5);
+  @$pb.TagNumber(5)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(2);
+
   @$pb.TagNumber(6)
-  $1.DartDurationExpression get duration => $_getN(1);
+  $1.DartDurationExpression get duration => $_getN(3);
   @$pb.TagNumber(6)
   set duration($1.DartDurationExpression v) { setField(6, v); }
   @$pb.TagNumber(6)
-  $core.bool hasDuration() => $_has(1);
+  $core.bool hasDuration() => $_has(3);
   @$pb.TagNumber(6)
   void clearDuration() => clearField(6);
   @$pb.TagNumber(6)
-  $1.DartDurationExpression ensureDuration() => $_ensure(1);
+  $1.DartDurationExpression ensureDuration() => $_ensure(3);
 
   @$pb.TagNumber(8)
-  WidgetExpression get child => $_getN(2);
+  WidgetExpression get child => $_getN(4);
   @$pb.TagNumber(8)
   set child(WidgetExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
-  $core.bool hasChild() => $_has(2);
+  $core.bool hasChild() => $_has(4);
   @$pb.TagNumber(8)
   void clearChild() => clearField(8);
   @$pb.TagNumber(8)
-  WidgetExpression ensureChild() => $_ensure(2);
+  WidgetExpression ensureChild() => $_ensure(4);
 }
 
 /// package:flutter/src/material/dropdown.dart
@@ -16054,6 +16902,7 @@ class MaterialDropdownButton extends $pb.GeneratedMessage {
     $1.DartColorExpression? dropdownColor,
     $core.double? menuMaxHeight,
     $core.bool? enableFeedback,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
   }) {
     final $result = create();
     if (key != null) {
@@ -16107,6 +16956,9 @@ class MaterialDropdownButton extends $pb.GeneratedMessage {
     if (enableFeedback != null) {
       $result.enableFeedback = enableFeedback;
     }
+    if (padding != null) {
+      $result.padding = padding;
+    }
     return $result;
   }
   MaterialDropdownButton._() : super();
@@ -16131,6 +16983,7 @@ class MaterialDropdownButton extends $pb.GeneratedMessage {
     ..aOM<$1.DartColorExpression>(23, _omitFieldNames ? '' : 'dropdownColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(24, _omitFieldNames ? '' : 'menuMaxHeight', $pb.PbFieldType.OD)
     ..aOB(25, _omitFieldNames ? '' : 'enableFeedback')
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(28, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -16325,6 +17178,17 @@ class MaterialDropdownButton extends $pb.GeneratedMessage {
   $core.bool hasEnableFeedback() => $_has(16);
   @$pb.TagNumber(25)
   void clearEnableFeedback() => clearField(25);
+
+  @$pb.TagNumber(28)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(17);
+  @$pb.TagNumber(28)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(28, v); }
+  @$pb.TagNumber(28)
+  $core.bool hasPadding() => $_has(17);
+  @$pb.TagNumber(28)
+  void clearPadding() => clearField(28);
+  @$pb.TagNumber(28)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(17);
 }
 
 /// package:flutter/src/material/dropdown.dart
@@ -16347,6 +17211,7 @@ class MaterialDropdownButtonFormField extends $pb.GeneratedMessage {
     $2.FlutterAutovalidateMode_Enum? autovalidateMode,
     $core.double? menuMaxHeight,
     $core.bool? enableFeedback,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
   }) {
     final $result = create();
     if (key != null) {
@@ -16400,6 +17265,9 @@ class MaterialDropdownButtonFormField extends $pb.GeneratedMessage {
     if (enableFeedback != null) {
       $result.enableFeedback = enableFeedback;
     }
+    if (padding != null) {
+      $result.padding = padding;
+    }
     return $result;
   }
   MaterialDropdownButtonFormField._() : super();
@@ -16424,6 +17292,7 @@ class MaterialDropdownButtonFormField extends $pb.GeneratedMessage {
     ..e<$2.FlutterAutovalidateMode_Enum>(26, _omitFieldNames ? '' : 'autovalidateMode', $pb.PbFieldType.OE, defaultOrMaker: $2.FlutterAutovalidateMode_Enum.DISABLED, valueOf: $2.FlutterAutovalidateMode_Enum.valueOf, enumValues: $2.FlutterAutovalidateMode_Enum.values)
     ..a<$core.double>(27, _omitFieldNames ? '' : 'menuMaxHeight', $pb.PbFieldType.OD)
     ..aOB(28, _omitFieldNames ? '' : 'enableFeedback')
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(31, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -16616,6 +17485,17 @@ class MaterialDropdownButtonFormField extends $pb.GeneratedMessage {
   $core.bool hasEnableFeedback() => $_has(16);
   @$pb.TagNumber(28)
   void clearEnableFeedback() => clearField(28);
+
+  @$pb.TagNumber(31)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(17);
+  @$pb.TagNumber(31)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(31, v); }
+  @$pb.TagNumber(31)
+  $core.bool hasPadding() => $_has(17);
+  @$pb.TagNumber(31)
+  void clearPadding() => clearField(31);
+  @$pb.TagNumber(31)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(17);
 }
 
 /// package:flutter/src/material/dropdown.dart
@@ -16986,6 +17866,7 @@ class MaterialExpandIcon extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.bool? isExpanded,
     $core.double? size,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $1.DartColorExpression? color,
     $1.DartColorExpression? disabledColor,
     $1.DartColorExpression? expandedColor,
@@ -16999,6 +17880,9 @@ class MaterialExpandIcon extends $pb.GeneratedMessage {
     }
     if (size != null) {
       $result.size = size;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (color != null) {
       $result.color = color;
@@ -17019,6 +17903,7 @@ class MaterialExpandIcon extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOB(3, _omitFieldNames ? '' : 'isExpanded')
     ..a<$core.double>(4, _omitFieldNames ? '' : 'size', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'expandedColor', subBuilder: $1.DartColorExpression.create)
@@ -17075,38 +17960,49 @@ class MaterialExpandIcon extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearSize() => clearField(4);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(3);
+  @$pb.TagNumber(6)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasPadding() => $_has(3);
+  @$pb.TagNumber(6)
+  void clearPadding() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(3);
+
   @$pb.TagNumber(7)
-  $1.DartColorExpression get color => $_getN(3);
+  $1.DartColorExpression get color => $_getN(4);
   @$pb.TagNumber(7)
   set color($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
-  $core.bool hasColor() => $_has(3);
+  $core.bool hasColor() => $_has(4);
   @$pb.TagNumber(7)
   void clearColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.DartColorExpression ensureColor() => $_ensure(3);
+  $1.DartColorExpression ensureColor() => $_ensure(4);
 
   @$pb.TagNumber(8)
-  $1.DartColorExpression get disabledColor => $_getN(4);
+  $1.DartColorExpression get disabledColor => $_getN(5);
   @$pb.TagNumber(8)
   set disabledColor($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
-  $core.bool hasDisabledColor() => $_has(4);
+  $core.bool hasDisabledColor() => $_has(5);
   @$pb.TagNumber(8)
   void clearDisabledColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.DartColorExpression ensureDisabledColor() => $_ensure(4);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(5);
 
   @$pb.TagNumber(9)
-  $1.DartColorExpression get expandedColor => $_getN(5);
+  $1.DartColorExpression get expandedColor => $_getN(6);
   @$pb.TagNumber(9)
   set expandedColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
-  $core.bool hasExpandedColor() => $_has(5);
+  $core.bool hasExpandedColor() => $_has(6);
   @$pb.TagNumber(9)
   void clearExpandedColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.DartColorExpression ensureExpandedColor() => $_ensure(5);
+  $1.DartColorExpression ensureExpandedColor() => $_ensure(6);
 }
 
 /// package:flutter/src/material/expansion_panel.dart
@@ -17378,7 +18274,9 @@ class MaterialExpansionTile extends $pb.GeneratedMessage {
     WidgetExpression? trailing,
     $core.bool? initiallyExpanded,
     $core.bool? maintainState,
+    $1.FlutterEdgeInsetsGeometryExpression? tilePadding,
     $2.FlutterCrossAxisAlignment_Enum? expandedCrossAxisAlignment,
+    $1.FlutterEdgeInsetsGeometryExpression? childrenPadding,
     $1.DartColorExpression? backgroundColor,
     $1.DartColorExpression? collapsedBackgroundColor,
     $1.DartColorExpression? textColor,
@@ -17413,8 +18311,14 @@ class MaterialExpansionTile extends $pb.GeneratedMessage {
     if (maintainState != null) {
       $result.maintainState = maintainState;
     }
+    if (tilePadding != null) {
+      $result.tilePadding = tilePadding;
+    }
     if (expandedCrossAxisAlignment != null) {
       $result.expandedCrossAxisAlignment = expandedCrossAxisAlignment;
+    }
+    if (childrenPadding != null) {
+      $result.childrenPadding = childrenPadding;
     }
     if (backgroundColor != null) {
       $result.backgroundColor = backgroundColor;
@@ -17455,7 +18359,9 @@ class MaterialExpansionTile extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(8, _omitFieldNames ? '' : 'trailing', subBuilder: WidgetExpression.create)
     ..aOB(9, _omitFieldNames ? '' : 'initiallyExpanded')
     ..aOB(10, _omitFieldNames ? '' : 'maintainState')
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(11, _omitFieldNames ? '' : 'tilePadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..e<$2.FlutterCrossAxisAlignment_Enum>(12, _omitFieldNames ? '' : 'expandedCrossAxisAlignment', $pb.PbFieldType.OE, defaultOrMaker: $2.FlutterCrossAxisAlignment_Enum.START, valueOf: $2.FlutterCrossAxisAlignment_Enum.valueOf, enumValues: $2.FlutterCrossAxisAlignment_Enum.values)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(14, _omitFieldNames ? '' : 'childrenPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(15, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(16, _omitFieldNames ? '' : 'collapsedBackgroundColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(17, _omitFieldNames ? '' : 'textColor', subBuilder: $1.DartColorExpression.create)
@@ -17564,96 +18470,118 @@ class MaterialExpansionTile extends $pb.GeneratedMessage {
   @$pb.TagNumber(10)
   void clearMaintainState() => clearField(10);
 
+  @$pb.TagNumber(11)
+  $1.FlutterEdgeInsetsGeometryExpression get tilePadding => $_getN(8);
+  @$pb.TagNumber(11)
+  set tilePadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(11, v); }
+  @$pb.TagNumber(11)
+  $core.bool hasTilePadding() => $_has(8);
+  @$pb.TagNumber(11)
+  void clearTilePadding() => clearField(11);
+  @$pb.TagNumber(11)
+  $1.FlutterEdgeInsetsGeometryExpression ensureTilePadding() => $_ensure(8);
+
   @$pb.TagNumber(12)
-  $2.FlutterCrossAxisAlignment_Enum get expandedCrossAxisAlignment => $_getN(8);
+  $2.FlutterCrossAxisAlignment_Enum get expandedCrossAxisAlignment => $_getN(9);
   @$pb.TagNumber(12)
   set expandedCrossAxisAlignment($2.FlutterCrossAxisAlignment_Enum v) { setField(12, v); }
   @$pb.TagNumber(12)
-  $core.bool hasExpandedCrossAxisAlignment() => $_has(8);
+  $core.bool hasExpandedCrossAxisAlignment() => $_has(9);
   @$pb.TagNumber(12)
   void clearExpandedCrossAxisAlignment() => clearField(12);
 
+  @$pb.TagNumber(14)
+  $1.FlutterEdgeInsetsGeometryExpression get childrenPadding => $_getN(10);
+  @$pb.TagNumber(14)
+  set childrenPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(14, v); }
+  @$pb.TagNumber(14)
+  $core.bool hasChildrenPadding() => $_has(10);
+  @$pb.TagNumber(14)
+  void clearChildrenPadding() => clearField(14);
+  @$pb.TagNumber(14)
+  $1.FlutterEdgeInsetsGeometryExpression ensureChildrenPadding() => $_ensure(10);
+
   @$pb.TagNumber(15)
-  $1.DartColorExpression get backgroundColor => $_getN(9);
+  $1.DartColorExpression get backgroundColor => $_getN(11);
   @$pb.TagNumber(15)
   set backgroundColor($1.DartColorExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
-  $core.bool hasBackgroundColor() => $_has(9);
+  $core.bool hasBackgroundColor() => $_has(11);
   @$pb.TagNumber(15)
   void clearBackgroundColor() => clearField(15);
   @$pb.TagNumber(15)
-  $1.DartColorExpression ensureBackgroundColor() => $_ensure(9);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(11);
 
   @$pb.TagNumber(16)
-  $1.DartColorExpression get collapsedBackgroundColor => $_getN(10);
+  $1.DartColorExpression get collapsedBackgroundColor => $_getN(12);
   @$pb.TagNumber(16)
   set collapsedBackgroundColor($1.DartColorExpression v) { setField(16, v); }
   @$pb.TagNumber(16)
-  $core.bool hasCollapsedBackgroundColor() => $_has(10);
+  $core.bool hasCollapsedBackgroundColor() => $_has(12);
   @$pb.TagNumber(16)
   void clearCollapsedBackgroundColor() => clearField(16);
   @$pb.TagNumber(16)
-  $1.DartColorExpression ensureCollapsedBackgroundColor() => $_ensure(10);
+  $1.DartColorExpression ensureCollapsedBackgroundColor() => $_ensure(12);
 
   @$pb.TagNumber(17)
-  $1.DartColorExpression get textColor => $_getN(11);
+  $1.DartColorExpression get textColor => $_getN(13);
   @$pb.TagNumber(17)
   set textColor($1.DartColorExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
-  $core.bool hasTextColor() => $_has(11);
+  $core.bool hasTextColor() => $_has(13);
   @$pb.TagNumber(17)
   void clearTextColor() => clearField(17);
   @$pb.TagNumber(17)
-  $1.DartColorExpression ensureTextColor() => $_ensure(11);
+  $1.DartColorExpression ensureTextColor() => $_ensure(13);
 
   @$pb.TagNumber(18)
-  $1.DartColorExpression get collapsedTextColor => $_getN(12);
+  $1.DartColorExpression get collapsedTextColor => $_getN(14);
   @$pb.TagNumber(18)
   set collapsedTextColor($1.DartColorExpression v) { setField(18, v); }
   @$pb.TagNumber(18)
-  $core.bool hasCollapsedTextColor() => $_has(12);
+  $core.bool hasCollapsedTextColor() => $_has(14);
   @$pb.TagNumber(18)
   void clearCollapsedTextColor() => clearField(18);
   @$pb.TagNumber(18)
-  $1.DartColorExpression ensureCollapsedTextColor() => $_ensure(12);
+  $1.DartColorExpression ensureCollapsedTextColor() => $_ensure(14);
 
   @$pb.TagNumber(19)
-  $1.DartColorExpression get iconColor => $_getN(13);
+  $1.DartColorExpression get iconColor => $_getN(15);
   @$pb.TagNumber(19)
   set iconColor($1.DartColorExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
-  $core.bool hasIconColor() => $_has(13);
+  $core.bool hasIconColor() => $_has(15);
   @$pb.TagNumber(19)
   void clearIconColor() => clearField(19);
   @$pb.TagNumber(19)
-  $1.DartColorExpression ensureIconColor() => $_ensure(13);
+  $1.DartColorExpression ensureIconColor() => $_ensure(15);
 
   @$pb.TagNumber(20)
-  $1.DartColorExpression get collapsedIconColor => $_getN(14);
+  $1.DartColorExpression get collapsedIconColor => $_getN(16);
   @$pb.TagNumber(20)
   set collapsedIconColor($1.DartColorExpression v) { setField(20, v); }
   @$pb.TagNumber(20)
-  $core.bool hasCollapsedIconColor() => $_has(14);
+  $core.bool hasCollapsedIconColor() => $_has(16);
   @$pb.TagNumber(20)
   void clearCollapsedIconColor() => clearField(20);
   @$pb.TagNumber(20)
-  $1.DartColorExpression ensureCollapsedIconColor() => $_ensure(14);
+  $1.DartColorExpression ensureCollapsedIconColor() => $_ensure(16);
 
   @$pb.TagNumber(23)
-  $2.DartClip_Enum get clipBehavior => $_getN(15);
+  $2.DartClip_Enum get clipBehavior => $_getN(17);
   @$pb.TagNumber(23)
   set clipBehavior($2.DartClip_Enum v) { setField(23, v); }
   @$pb.TagNumber(23)
-  $core.bool hasClipBehavior() => $_has(15);
+  $core.bool hasClipBehavior() => $_has(17);
   @$pb.TagNumber(23)
   void clearClipBehavior() => clearField(23);
 
   @$pb.TagNumber(24)
-  $2.MaterialListTileControlAffinity_Enum get controlAffinity => $_getN(16);
+  $2.MaterialListTileControlAffinity_Enum get controlAffinity => $_getN(18);
   @$pb.TagNumber(24)
   set controlAffinity($2.MaterialListTileControlAffinity_Enum v) { setField(24, v); }
   @$pb.TagNumber(24)
-  $core.bool hasControlAffinity() => $_has(16);
+  $core.bool hasControlAffinity() => $_has(18);
   @$pb.TagNumber(24)
   void clearControlAffinity() => clearField(24);
 }
@@ -18084,6 +19012,7 @@ class MaterialFilterChip extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? avatar,
     WidgetExpression? label,
+    $1.FlutterEdgeInsetsGeometryExpression? labelPadding,
     $core.bool? selected,
     $core.double? pressElevation,
     $1.DartColorExpression? disabledColor,
@@ -18092,6 +19021,7 @@ class MaterialFilterChip extends $pb.GeneratedMessage {
     $2.DartClip_Enum? clipBehavior,
     $core.bool? autofocus,
     $1.DartColorExpression? backgroundColor,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $2.MaterialMaterialTapTargetSize_Enum? materialTapTargetSize,
     $core.double? elevation,
     $1.DartColorExpression? shadowColor,
@@ -18109,6 +19039,9 @@ class MaterialFilterChip extends $pb.GeneratedMessage {
     }
     if (label != null) {
       $result.label = label;
+    }
+    if (labelPadding != null) {
+      $result.labelPadding = labelPadding;
     }
     if (selected != null) {
       $result.selected = selected;
@@ -18133,6 +19066,9 @@ class MaterialFilterChip extends $pb.GeneratedMessage {
     }
     if (backgroundColor != null) {
       $result.backgroundColor = backgroundColor;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (materialTapTargetSize != null) {
       $result.materialTapTargetSize = materialTapTargetSize;
@@ -18165,6 +19101,7 @@ class MaterialFilterChip extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'avatar', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'labelPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOB(7, _omitFieldNames ? '' : 'selected')
     ..a<$core.double>(9, _omitFieldNames ? '' : 'pressElevation', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
@@ -18173,6 +19110,7 @@ class MaterialFilterChip extends $pb.GeneratedMessage {
     ..e<$2.DartClip_Enum>(15, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..aOB(17, _omitFieldNames ? '' : 'autofocus')
     ..aOM<$1.DartColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(20, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..e<$2.MaterialMaterialTapTargetSize_Enum>(22, _omitFieldNames ? '' : 'materialTapTargetSize', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialMaterialTapTargetSize_Enum.PADDED, valueOf: $2.MaterialMaterialTapTargetSize_Enum.valueOf, enumValues: $2.MaterialMaterialTapTargetSize_Enum.values)
     ..a<$core.double>(23, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(24, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
@@ -18237,154 +19175,176 @@ class MaterialFilterChip extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   WidgetExpression ensureLabel() => $_ensure(2);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get labelPadding => $_getN(3);
+  @$pb.TagNumber(6)
+  set labelPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasLabelPadding() => $_has(3);
+  @$pb.TagNumber(6)
+  void clearLabelPadding() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensureLabelPadding() => $_ensure(3);
+
   @$pb.TagNumber(7)
-  $core.bool get selected => $_getBF(3);
+  $core.bool get selected => $_getBF(4);
   @$pb.TagNumber(7)
-  set selected($core.bool v) { $_setBool(3, v); }
+  set selected($core.bool v) { $_setBool(4, v); }
   @$pb.TagNumber(7)
-  $core.bool hasSelected() => $_has(3);
+  $core.bool hasSelected() => $_has(4);
   @$pb.TagNumber(7)
   void clearSelected() => clearField(7);
 
   @$pb.TagNumber(9)
-  $core.double get pressElevation => $_getN(4);
+  $core.double get pressElevation => $_getN(5);
   @$pb.TagNumber(9)
-  set pressElevation($core.double v) { $_setDouble(4, v); }
+  set pressElevation($core.double v) { $_setDouble(5, v); }
   @$pb.TagNumber(9)
-  $core.bool hasPressElevation() => $_has(4);
+  $core.bool hasPressElevation() => $_has(5);
   @$pb.TagNumber(9)
   void clearPressElevation() => clearField(9);
 
   @$pb.TagNumber(10)
-  $1.DartColorExpression get disabledColor => $_getN(5);
+  $1.DartColorExpression get disabledColor => $_getN(6);
   @$pb.TagNumber(10)
   set disabledColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasDisabledColor() => $_has(5);
+  $core.bool hasDisabledColor() => $_has(6);
   @$pb.TagNumber(10)
   void clearDisabledColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.DartColorExpression ensureDisabledColor() => $_ensure(5);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(6);
 
   @$pb.TagNumber(11)
-  $1.DartColorExpression get selectedColor => $_getN(6);
+  $1.DartColorExpression get selectedColor => $_getN(7);
   @$pb.TagNumber(11)
   set selectedColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasSelectedColor() => $_has(6);
+  $core.bool hasSelectedColor() => $_has(7);
   @$pb.TagNumber(11)
   void clearSelectedColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.DartColorExpression ensureSelectedColor() => $_ensure(6);
+  $1.DartColorExpression ensureSelectedColor() => $_ensure(7);
 
   @$pb.TagNumber(12)
-  $core.String get tooltip => $_getSZ(7);
+  $core.String get tooltip => $_getSZ(8);
   @$pb.TagNumber(12)
-  set tooltip($core.String v) { $_setString(7, v); }
+  set tooltip($core.String v) { $_setString(8, v); }
   @$pb.TagNumber(12)
-  $core.bool hasTooltip() => $_has(7);
+  $core.bool hasTooltip() => $_has(8);
   @$pb.TagNumber(12)
   void clearTooltip() => clearField(12);
 
   @$pb.TagNumber(15)
-  $2.DartClip_Enum get clipBehavior => $_getN(8);
+  $2.DartClip_Enum get clipBehavior => $_getN(9);
   @$pb.TagNumber(15)
   set clipBehavior($2.DartClip_Enum v) { setField(15, v); }
   @$pb.TagNumber(15)
-  $core.bool hasClipBehavior() => $_has(8);
+  $core.bool hasClipBehavior() => $_has(9);
   @$pb.TagNumber(15)
   void clearClipBehavior() => clearField(15);
 
   @$pb.TagNumber(17)
-  $core.bool get autofocus => $_getBF(9);
+  $core.bool get autofocus => $_getBF(10);
   @$pb.TagNumber(17)
-  set autofocus($core.bool v) { $_setBool(9, v); }
+  set autofocus($core.bool v) { $_setBool(10, v); }
   @$pb.TagNumber(17)
-  $core.bool hasAutofocus() => $_has(9);
+  $core.bool hasAutofocus() => $_has(10);
   @$pb.TagNumber(17)
   void clearAutofocus() => clearField(17);
 
   @$pb.TagNumber(19)
-  $1.DartColorExpression get backgroundColor => $_getN(10);
+  $1.DartColorExpression get backgroundColor => $_getN(11);
   @$pb.TagNumber(19)
   set backgroundColor($1.DartColorExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
-  $core.bool hasBackgroundColor() => $_has(10);
+  $core.bool hasBackgroundColor() => $_has(11);
   @$pb.TagNumber(19)
   void clearBackgroundColor() => clearField(19);
   @$pb.TagNumber(19)
-  $1.DartColorExpression ensureBackgroundColor() => $_ensure(10);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(11);
+
+  @$pb.TagNumber(20)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(12);
+  @$pb.TagNumber(20)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(20, v); }
+  @$pb.TagNumber(20)
+  $core.bool hasPadding() => $_has(12);
+  @$pb.TagNumber(20)
+  void clearPadding() => clearField(20);
+  @$pb.TagNumber(20)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(12);
 
   @$pb.TagNumber(22)
-  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(11);
+  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(13);
   @$pb.TagNumber(22)
   set materialTapTargetSize($2.MaterialMaterialTapTargetSize_Enum v) { setField(22, v); }
   @$pb.TagNumber(22)
-  $core.bool hasMaterialTapTargetSize() => $_has(11);
+  $core.bool hasMaterialTapTargetSize() => $_has(13);
   @$pb.TagNumber(22)
   void clearMaterialTapTargetSize() => clearField(22);
 
   @$pb.TagNumber(23)
-  $core.double get elevation => $_getN(12);
+  $core.double get elevation => $_getN(14);
   @$pb.TagNumber(23)
-  set elevation($core.double v) { $_setDouble(12, v); }
+  set elevation($core.double v) { $_setDouble(14, v); }
   @$pb.TagNumber(23)
-  $core.bool hasElevation() => $_has(12);
+  $core.bool hasElevation() => $_has(14);
   @$pb.TagNumber(23)
   void clearElevation() => clearField(23);
 
   @$pb.TagNumber(24)
-  $1.DartColorExpression get shadowColor => $_getN(13);
+  $1.DartColorExpression get shadowColor => $_getN(15);
   @$pb.TagNumber(24)
   set shadowColor($1.DartColorExpression v) { setField(24, v); }
   @$pb.TagNumber(24)
-  $core.bool hasShadowColor() => $_has(13);
+  $core.bool hasShadowColor() => $_has(15);
   @$pb.TagNumber(24)
   void clearShadowColor() => clearField(24);
   @$pb.TagNumber(24)
-  $1.DartColorExpression ensureShadowColor() => $_ensure(13);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(15);
 
   @$pb.TagNumber(25)
-  $1.DartColorExpression get surfaceTintColor => $_getN(14);
+  $1.DartColorExpression get surfaceTintColor => $_getN(16);
   @$pb.TagNumber(25)
   set surfaceTintColor($1.DartColorExpression v) { setField(25, v); }
   @$pb.TagNumber(25)
-  $core.bool hasSurfaceTintColor() => $_has(14);
+  $core.bool hasSurfaceTintColor() => $_has(16);
   @$pb.TagNumber(25)
   void clearSurfaceTintColor() => clearField(25);
   @$pb.TagNumber(25)
-  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(14);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(16);
 
   @$pb.TagNumber(27)
-  $1.DartColorExpression get selectedShadowColor => $_getN(15);
+  $1.DartColorExpression get selectedShadowColor => $_getN(17);
   @$pb.TagNumber(27)
   set selectedShadowColor($1.DartColorExpression v) { setField(27, v); }
   @$pb.TagNumber(27)
-  $core.bool hasSelectedShadowColor() => $_has(15);
+  $core.bool hasSelectedShadowColor() => $_has(17);
   @$pb.TagNumber(27)
   void clearSelectedShadowColor() => clearField(27);
   @$pb.TagNumber(27)
-  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(15);
+  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(17);
 
   @$pb.TagNumber(28)
-  $core.bool get showCheckmark => $_getBF(16);
+  $core.bool get showCheckmark => $_getBF(18);
   @$pb.TagNumber(28)
-  set showCheckmark($core.bool v) { $_setBool(16, v); }
+  set showCheckmark($core.bool v) { $_setBool(18, v); }
   @$pb.TagNumber(28)
-  $core.bool hasShowCheckmark() => $_has(16);
+  $core.bool hasShowCheckmark() => $_has(18);
   @$pb.TagNumber(28)
   void clearShowCheckmark() => clearField(28);
 
   @$pb.TagNumber(29)
-  $1.DartColorExpression get checkmarkColor => $_getN(17);
+  $1.DartColorExpression get checkmarkColor => $_getN(19);
   @$pb.TagNumber(29)
   set checkmarkColor($1.DartColorExpression v) { setField(29, v); }
   @$pb.TagNumber(29)
-  $core.bool hasCheckmarkColor() => $_has(17);
+  $core.bool hasCheckmarkColor() => $_has(19);
   @$pb.TagNumber(29)
   void clearCheckmarkColor() => clearField(29);
   @$pb.TagNumber(29)
-  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(17);
+  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(19);
 }
 
 /// package:flutter/src/material/filter_chip.dart
@@ -18393,6 +19353,7 @@ class MaterialFilterChipNamedElevated extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? avatar,
     WidgetExpression? label,
+    $1.FlutterEdgeInsetsGeometryExpression? labelPadding,
     $core.bool? selected,
     $core.double? pressElevation,
     $1.DartColorExpression? disabledColor,
@@ -18401,6 +19362,7 @@ class MaterialFilterChipNamedElevated extends $pb.GeneratedMessage {
     $2.DartClip_Enum? clipBehavior,
     $core.bool? autofocus,
     $1.DartColorExpression? backgroundColor,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $2.MaterialMaterialTapTargetSize_Enum? materialTapTargetSize,
     $core.double? elevation,
     $1.DartColorExpression? shadowColor,
@@ -18418,6 +19380,9 @@ class MaterialFilterChipNamedElevated extends $pb.GeneratedMessage {
     }
     if (label != null) {
       $result.label = label;
+    }
+    if (labelPadding != null) {
+      $result.labelPadding = labelPadding;
     }
     if (selected != null) {
       $result.selected = selected;
@@ -18442,6 +19407,9 @@ class MaterialFilterChipNamedElevated extends $pb.GeneratedMessage {
     }
     if (backgroundColor != null) {
       $result.backgroundColor = backgroundColor;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (materialTapTargetSize != null) {
       $result.materialTapTargetSize = materialTapTargetSize;
@@ -18474,6 +19442,7 @@ class MaterialFilterChipNamedElevated extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'avatar', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'labelPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOB(7, _omitFieldNames ? '' : 'selected')
     ..a<$core.double>(9, _omitFieldNames ? '' : 'pressElevation', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(10, _omitFieldNames ? '' : 'disabledColor', subBuilder: $1.DartColorExpression.create)
@@ -18482,6 +19451,7 @@ class MaterialFilterChipNamedElevated extends $pb.GeneratedMessage {
     ..e<$2.DartClip_Enum>(15, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..aOB(17, _omitFieldNames ? '' : 'autofocus')
     ..aOM<$1.DartColorExpression>(19, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(20, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..e<$2.MaterialMaterialTapTargetSize_Enum>(22, _omitFieldNames ? '' : 'materialTapTargetSize', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialMaterialTapTargetSize_Enum.PADDED, valueOf: $2.MaterialMaterialTapTargetSize_Enum.valueOf, enumValues: $2.MaterialMaterialTapTargetSize_Enum.values)
     ..a<$core.double>(23, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(24, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
@@ -18546,154 +19516,176 @@ class MaterialFilterChipNamedElevated extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   WidgetExpression ensureLabel() => $_ensure(2);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get labelPadding => $_getN(3);
+  @$pb.TagNumber(6)
+  set labelPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasLabelPadding() => $_has(3);
+  @$pb.TagNumber(6)
+  void clearLabelPadding() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensureLabelPadding() => $_ensure(3);
+
   @$pb.TagNumber(7)
-  $core.bool get selected => $_getBF(3);
+  $core.bool get selected => $_getBF(4);
   @$pb.TagNumber(7)
-  set selected($core.bool v) { $_setBool(3, v); }
+  set selected($core.bool v) { $_setBool(4, v); }
   @$pb.TagNumber(7)
-  $core.bool hasSelected() => $_has(3);
+  $core.bool hasSelected() => $_has(4);
   @$pb.TagNumber(7)
   void clearSelected() => clearField(7);
 
   @$pb.TagNumber(9)
-  $core.double get pressElevation => $_getN(4);
+  $core.double get pressElevation => $_getN(5);
   @$pb.TagNumber(9)
-  set pressElevation($core.double v) { $_setDouble(4, v); }
+  set pressElevation($core.double v) { $_setDouble(5, v); }
   @$pb.TagNumber(9)
-  $core.bool hasPressElevation() => $_has(4);
+  $core.bool hasPressElevation() => $_has(5);
   @$pb.TagNumber(9)
   void clearPressElevation() => clearField(9);
 
   @$pb.TagNumber(10)
-  $1.DartColorExpression get disabledColor => $_getN(5);
+  $1.DartColorExpression get disabledColor => $_getN(6);
   @$pb.TagNumber(10)
   set disabledColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasDisabledColor() => $_has(5);
+  $core.bool hasDisabledColor() => $_has(6);
   @$pb.TagNumber(10)
   void clearDisabledColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.DartColorExpression ensureDisabledColor() => $_ensure(5);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(6);
 
   @$pb.TagNumber(11)
-  $1.DartColorExpression get selectedColor => $_getN(6);
+  $1.DartColorExpression get selectedColor => $_getN(7);
   @$pb.TagNumber(11)
   set selectedColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasSelectedColor() => $_has(6);
+  $core.bool hasSelectedColor() => $_has(7);
   @$pb.TagNumber(11)
   void clearSelectedColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.DartColorExpression ensureSelectedColor() => $_ensure(6);
+  $1.DartColorExpression ensureSelectedColor() => $_ensure(7);
 
   @$pb.TagNumber(12)
-  $core.String get tooltip => $_getSZ(7);
+  $core.String get tooltip => $_getSZ(8);
   @$pb.TagNumber(12)
-  set tooltip($core.String v) { $_setString(7, v); }
+  set tooltip($core.String v) { $_setString(8, v); }
   @$pb.TagNumber(12)
-  $core.bool hasTooltip() => $_has(7);
+  $core.bool hasTooltip() => $_has(8);
   @$pb.TagNumber(12)
   void clearTooltip() => clearField(12);
 
   @$pb.TagNumber(15)
-  $2.DartClip_Enum get clipBehavior => $_getN(8);
+  $2.DartClip_Enum get clipBehavior => $_getN(9);
   @$pb.TagNumber(15)
   set clipBehavior($2.DartClip_Enum v) { setField(15, v); }
   @$pb.TagNumber(15)
-  $core.bool hasClipBehavior() => $_has(8);
+  $core.bool hasClipBehavior() => $_has(9);
   @$pb.TagNumber(15)
   void clearClipBehavior() => clearField(15);
 
   @$pb.TagNumber(17)
-  $core.bool get autofocus => $_getBF(9);
+  $core.bool get autofocus => $_getBF(10);
   @$pb.TagNumber(17)
-  set autofocus($core.bool v) { $_setBool(9, v); }
+  set autofocus($core.bool v) { $_setBool(10, v); }
   @$pb.TagNumber(17)
-  $core.bool hasAutofocus() => $_has(9);
+  $core.bool hasAutofocus() => $_has(10);
   @$pb.TagNumber(17)
   void clearAutofocus() => clearField(17);
 
   @$pb.TagNumber(19)
-  $1.DartColorExpression get backgroundColor => $_getN(10);
+  $1.DartColorExpression get backgroundColor => $_getN(11);
   @$pb.TagNumber(19)
   set backgroundColor($1.DartColorExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
-  $core.bool hasBackgroundColor() => $_has(10);
+  $core.bool hasBackgroundColor() => $_has(11);
   @$pb.TagNumber(19)
   void clearBackgroundColor() => clearField(19);
   @$pb.TagNumber(19)
-  $1.DartColorExpression ensureBackgroundColor() => $_ensure(10);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(11);
+
+  @$pb.TagNumber(20)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(12);
+  @$pb.TagNumber(20)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(20, v); }
+  @$pb.TagNumber(20)
+  $core.bool hasPadding() => $_has(12);
+  @$pb.TagNumber(20)
+  void clearPadding() => clearField(20);
+  @$pb.TagNumber(20)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(12);
 
   @$pb.TagNumber(22)
-  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(11);
+  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(13);
   @$pb.TagNumber(22)
   set materialTapTargetSize($2.MaterialMaterialTapTargetSize_Enum v) { setField(22, v); }
   @$pb.TagNumber(22)
-  $core.bool hasMaterialTapTargetSize() => $_has(11);
+  $core.bool hasMaterialTapTargetSize() => $_has(13);
   @$pb.TagNumber(22)
   void clearMaterialTapTargetSize() => clearField(22);
 
   @$pb.TagNumber(23)
-  $core.double get elevation => $_getN(12);
+  $core.double get elevation => $_getN(14);
   @$pb.TagNumber(23)
-  set elevation($core.double v) { $_setDouble(12, v); }
+  set elevation($core.double v) { $_setDouble(14, v); }
   @$pb.TagNumber(23)
-  $core.bool hasElevation() => $_has(12);
+  $core.bool hasElevation() => $_has(14);
   @$pb.TagNumber(23)
   void clearElevation() => clearField(23);
 
   @$pb.TagNumber(24)
-  $1.DartColorExpression get shadowColor => $_getN(13);
+  $1.DartColorExpression get shadowColor => $_getN(15);
   @$pb.TagNumber(24)
   set shadowColor($1.DartColorExpression v) { setField(24, v); }
   @$pb.TagNumber(24)
-  $core.bool hasShadowColor() => $_has(13);
+  $core.bool hasShadowColor() => $_has(15);
   @$pb.TagNumber(24)
   void clearShadowColor() => clearField(24);
   @$pb.TagNumber(24)
-  $1.DartColorExpression ensureShadowColor() => $_ensure(13);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(15);
 
   @$pb.TagNumber(25)
-  $1.DartColorExpression get surfaceTintColor => $_getN(14);
+  $1.DartColorExpression get surfaceTintColor => $_getN(16);
   @$pb.TagNumber(25)
   set surfaceTintColor($1.DartColorExpression v) { setField(25, v); }
   @$pb.TagNumber(25)
-  $core.bool hasSurfaceTintColor() => $_has(14);
+  $core.bool hasSurfaceTintColor() => $_has(16);
   @$pb.TagNumber(25)
   void clearSurfaceTintColor() => clearField(25);
   @$pb.TagNumber(25)
-  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(14);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(16);
 
   @$pb.TagNumber(27)
-  $1.DartColorExpression get selectedShadowColor => $_getN(15);
+  $1.DartColorExpression get selectedShadowColor => $_getN(17);
   @$pb.TagNumber(27)
   set selectedShadowColor($1.DartColorExpression v) { setField(27, v); }
   @$pb.TagNumber(27)
-  $core.bool hasSelectedShadowColor() => $_has(15);
+  $core.bool hasSelectedShadowColor() => $_has(17);
   @$pb.TagNumber(27)
   void clearSelectedShadowColor() => clearField(27);
   @$pb.TagNumber(27)
-  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(15);
+  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(17);
 
   @$pb.TagNumber(28)
-  $core.bool get showCheckmark => $_getBF(16);
+  $core.bool get showCheckmark => $_getBF(18);
   @$pb.TagNumber(28)
-  set showCheckmark($core.bool v) { $_setBool(16, v); }
+  set showCheckmark($core.bool v) { $_setBool(18, v); }
   @$pb.TagNumber(28)
-  $core.bool hasShowCheckmark() => $_has(16);
+  $core.bool hasShowCheckmark() => $_has(18);
   @$pb.TagNumber(28)
   void clearShowCheckmark() => clearField(28);
 
   @$pb.TagNumber(29)
-  $1.DartColorExpression get checkmarkColor => $_getN(17);
+  $1.DartColorExpression get checkmarkColor => $_getN(19);
   @$pb.TagNumber(29)
   set checkmarkColor($1.DartColorExpression v) { setField(29, v); }
   @$pb.TagNumber(29)
-  $core.bool hasCheckmarkColor() => $_has(17);
+  $core.bool hasCheckmarkColor() => $_has(19);
   @$pb.TagNumber(29)
   void clearCheckmarkColor() => clearField(29);
   @$pb.TagNumber(29)
-  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(17);
+  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(19);
 }
 
 /// package:flutter/src/material/flexible_space_bar.dart
@@ -18703,6 +19695,7 @@ class MaterialFlexibleSpaceBar extends $pb.GeneratedMessage {
     WidgetExpression? title,
     WidgetExpression? background,
     $core.bool? centerTitle,
+    $1.FlutterEdgeInsetsGeometryExpression? titlePadding,
     $2.MaterialCollapseMode_Enum? collapseMode,
     $core.Iterable<$2.MaterialStretchMode_Enum>? stretchModes,
     $core.double? expandedTitleScale,
@@ -18719,6 +19712,9 @@ class MaterialFlexibleSpaceBar extends $pb.GeneratedMessage {
     }
     if (centerTitle != null) {
       $result.centerTitle = centerTitle;
+    }
+    if (titlePadding != null) {
+      $result.titlePadding = titlePadding;
     }
     if (collapseMode != null) {
       $result.collapseMode = collapseMode;
@@ -18740,6 +19736,7 @@ class MaterialFlexibleSpaceBar extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'title', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'background', subBuilder: WidgetExpression.create)
     ..aOB(5, _omitFieldNames ? '' : 'centerTitle')
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'titlePadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..e<$2.MaterialCollapseMode_Enum>(7, _omitFieldNames ? '' : 'collapseMode', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialCollapseMode_Enum.PARALLAX, valueOf: $2.MaterialCollapseMode_Enum.valueOf, enumValues: $2.MaterialCollapseMode_Enum.values)
     ..pc<$2.MaterialStretchMode_Enum>(8, _omitFieldNames ? '' : 'stretchModes', $pb.PbFieldType.KE, valueOf: $2.MaterialStretchMode_Enum.valueOf, enumValues: $2.MaterialStretchMode_Enum.values, defaultEnumValue: $2.MaterialStretchMode_Enum.ZOOM_BACKGROUND)
     ..a<$core.double>(9, _omitFieldNames ? '' : 'expandedTitleScale', $pb.PbFieldType.OD)
@@ -18809,24 +19806,35 @@ class MaterialFlexibleSpaceBar extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearCenterTitle() => clearField(5);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get titlePadding => $_getN(4);
+  @$pb.TagNumber(6)
+  set titlePadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasTitlePadding() => $_has(4);
+  @$pb.TagNumber(6)
+  void clearTitlePadding() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensureTitlePadding() => $_ensure(4);
+
   @$pb.TagNumber(7)
-  $2.MaterialCollapseMode_Enum get collapseMode => $_getN(4);
+  $2.MaterialCollapseMode_Enum get collapseMode => $_getN(5);
   @$pb.TagNumber(7)
   set collapseMode($2.MaterialCollapseMode_Enum v) { setField(7, v); }
   @$pb.TagNumber(7)
-  $core.bool hasCollapseMode() => $_has(4);
+  $core.bool hasCollapseMode() => $_has(5);
   @$pb.TagNumber(7)
   void clearCollapseMode() => clearField(7);
 
   @$pb.TagNumber(8)
-  $core.List<$2.MaterialStretchMode_Enum> get stretchModes => $_getList(5);
+  $core.List<$2.MaterialStretchMode_Enum> get stretchModes => $_getList(6);
 
   @$pb.TagNumber(9)
-  $core.double get expandedTitleScale => $_getN(6);
+  $core.double get expandedTitleScale => $_getN(7);
   @$pb.TagNumber(9)
-  set expandedTitleScale($core.double v) { $_setDouble(6, v); }
+  set expandedTitleScale($core.double v) { $_setDouble(7, v); }
   @$pb.TagNumber(9)
-  $core.bool hasExpandedTitleScale() => $_has(6);
+  $core.bool hasExpandedTitleScale() => $_has(7);
   @$pb.TagNumber(9)
   void clearExpandedTitleScale() => clearField(9);
 }
@@ -19885,6 +20893,7 @@ class MaterialFloatingActionButtonNamedExtended extends $pb.GeneratedMessage {
     $2.DartClip_Enum? clipBehavior,
     $core.bool? autofocus,
     $core.double? extendedIconLabelSpacing,
+    $1.FlutterEdgeInsetsGeometryExpression? extendedPadding,
     WidgetExpression? icon,
     WidgetExpression? label,
     $core.bool? enableFeedback,
@@ -19941,6 +20950,9 @@ class MaterialFloatingActionButtonNamedExtended extends $pb.GeneratedMessage {
     if (extendedIconLabelSpacing != null) {
       $result.extendedIconLabelSpacing = extendedIconLabelSpacing;
     }
+    if (extendedPadding != null) {
+      $result.extendedPadding = extendedPadding;
+    }
     if (icon != null) {
       $result.icon = icon;
     }
@@ -19974,6 +20986,7 @@ class MaterialFloatingActionButtonNamedExtended extends $pb.GeneratedMessage {
     ..e<$2.DartClip_Enum>(20, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..aOB(22, _omitFieldNames ? '' : 'autofocus')
     ..a<$core.double>(23, _omitFieldNames ? '' : 'extendedIconLabelSpacing', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(24, _omitFieldNames ? '' : 'extendedPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<WidgetExpression>(26, _omitFieldNames ? '' : 'icon', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(27, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
     ..aOB(28, _omitFieldNames ? '' : 'enableFeedback')
@@ -20166,34 +21179,45 @@ class MaterialFloatingActionButtonNamedExtended extends $pb.GeneratedMessage {
   @$pb.TagNumber(23)
   void clearExtendedIconLabelSpacing() => clearField(23);
 
+  @$pb.TagNumber(24)
+  $1.FlutterEdgeInsetsGeometryExpression get extendedPadding => $_getN(17);
+  @$pb.TagNumber(24)
+  set extendedPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(24, v); }
+  @$pb.TagNumber(24)
+  $core.bool hasExtendedPadding() => $_has(17);
+  @$pb.TagNumber(24)
+  void clearExtendedPadding() => clearField(24);
+  @$pb.TagNumber(24)
+  $1.FlutterEdgeInsetsGeometryExpression ensureExtendedPadding() => $_ensure(17);
+
   @$pb.TagNumber(26)
-  WidgetExpression get icon => $_getN(17);
+  WidgetExpression get icon => $_getN(18);
   @$pb.TagNumber(26)
   set icon(WidgetExpression v) { setField(26, v); }
   @$pb.TagNumber(26)
-  $core.bool hasIcon() => $_has(17);
+  $core.bool hasIcon() => $_has(18);
   @$pb.TagNumber(26)
   void clearIcon() => clearField(26);
   @$pb.TagNumber(26)
-  WidgetExpression ensureIcon() => $_ensure(17);
+  WidgetExpression ensureIcon() => $_ensure(18);
 
   @$pb.TagNumber(27)
-  WidgetExpression get label => $_getN(18);
+  WidgetExpression get label => $_getN(19);
   @$pb.TagNumber(27)
   set label(WidgetExpression v) { setField(27, v); }
   @$pb.TagNumber(27)
-  $core.bool hasLabel() => $_has(18);
+  $core.bool hasLabel() => $_has(19);
   @$pb.TagNumber(27)
   void clearLabel() => clearField(27);
   @$pb.TagNumber(27)
-  WidgetExpression ensureLabel() => $_ensure(18);
+  WidgetExpression ensureLabel() => $_ensure(19);
 
   @$pb.TagNumber(28)
-  $core.bool get enableFeedback => $_getBF(19);
+  $core.bool get enableFeedback => $_getBF(20);
   @$pb.TagNumber(28)
-  set enableFeedback($core.bool v) { $_setBool(19, v); }
+  set enableFeedback($core.bool v) { $_setBool(20, v); }
   @$pb.TagNumber(28)
-  $core.bool hasEnableFeedback() => $_has(19);
+  $core.bool hasEnableFeedback() => $_has(20);
   @$pb.TagNumber(28)
   void clearEnableFeedback() => clearField(28);
 }
@@ -20550,6 +21574,7 @@ class MaterialIconButton extends $pb.GeneratedMessage {
   factory MaterialIconButton({
     $1.FlutterKeyExpression? key,
     $core.double? iconSize,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $core.double? splashRadius,
     $1.DartColorExpression? color,
     $1.DartColorExpression? focusColor,
@@ -20570,6 +21595,9 @@ class MaterialIconButton extends $pb.GeneratedMessage {
     }
     if (iconSize != null) {
       $result.iconSize = iconSize;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (splashRadius != null) {
       $result.splashRadius = splashRadius;
@@ -20619,6 +21647,7 @@ class MaterialIconButton extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialIconButton', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'iconSize', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(5, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'splashRadius', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
@@ -20676,138 +21705,149 @@ class MaterialIconButton extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearIconSize() => clearField(3);
 
+  @$pb.TagNumber(5)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(2);
+  @$pb.TagNumber(5)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasPadding() => $_has(2);
+  @$pb.TagNumber(5)
+  void clearPadding() => clearField(5);
+  @$pb.TagNumber(5)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(2);
+
   @$pb.TagNumber(7)
-  $core.double get splashRadius => $_getN(2);
+  $core.double get splashRadius => $_getN(3);
   @$pb.TagNumber(7)
-  set splashRadius($core.double v) { $_setDouble(2, v); }
+  set splashRadius($core.double v) { $_setDouble(3, v); }
   @$pb.TagNumber(7)
-  $core.bool hasSplashRadius() => $_has(2);
+  $core.bool hasSplashRadius() => $_has(3);
   @$pb.TagNumber(7)
   void clearSplashRadius() => clearField(7);
 
   @$pb.TagNumber(8)
-  $1.DartColorExpression get color => $_getN(3);
+  $1.DartColorExpression get color => $_getN(4);
   @$pb.TagNumber(8)
   set color($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
-  $core.bool hasColor() => $_has(3);
+  $core.bool hasColor() => $_has(4);
   @$pb.TagNumber(8)
   void clearColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.DartColorExpression ensureColor() => $_ensure(3);
+  $1.DartColorExpression ensureColor() => $_ensure(4);
 
   @$pb.TagNumber(9)
-  $1.DartColorExpression get focusColor => $_getN(4);
+  $1.DartColorExpression get focusColor => $_getN(5);
   @$pb.TagNumber(9)
   set focusColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
-  $core.bool hasFocusColor() => $_has(4);
+  $core.bool hasFocusColor() => $_has(5);
   @$pb.TagNumber(9)
   void clearFocusColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.DartColorExpression ensureFocusColor() => $_ensure(4);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(5);
 
   @$pb.TagNumber(10)
-  $1.DartColorExpression get hoverColor => $_getN(5);
+  $1.DartColorExpression get hoverColor => $_getN(6);
   @$pb.TagNumber(10)
   set hoverColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasHoverColor() => $_has(5);
+  $core.bool hasHoverColor() => $_has(6);
   @$pb.TagNumber(10)
   void clearHoverColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.DartColorExpression ensureHoverColor() => $_ensure(5);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(6);
 
   @$pb.TagNumber(11)
-  $1.DartColorExpression get highlightColor => $_getN(6);
+  $1.DartColorExpression get highlightColor => $_getN(7);
   @$pb.TagNumber(11)
   set highlightColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasHighlightColor() => $_has(6);
+  $core.bool hasHighlightColor() => $_has(7);
   @$pb.TagNumber(11)
   void clearHighlightColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.DartColorExpression ensureHighlightColor() => $_ensure(6);
+  $1.DartColorExpression ensureHighlightColor() => $_ensure(7);
 
   @$pb.TagNumber(12)
-  $1.DartColorExpression get splashColor => $_getN(7);
+  $1.DartColorExpression get splashColor => $_getN(8);
   @$pb.TagNumber(12)
   set splashColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
-  $core.bool hasSplashColor() => $_has(7);
+  $core.bool hasSplashColor() => $_has(8);
   @$pb.TagNumber(12)
   void clearSplashColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.DartColorExpression ensureSplashColor() => $_ensure(7);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(8);
 
   @$pb.TagNumber(13)
-  $1.DartColorExpression get disabledColor => $_getN(8);
+  $1.DartColorExpression get disabledColor => $_getN(9);
   @$pb.TagNumber(13)
   set disabledColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
-  $core.bool hasDisabledColor() => $_has(8);
+  $core.bool hasDisabledColor() => $_has(9);
   @$pb.TagNumber(13)
   void clearDisabledColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.DartColorExpression ensureDisabledColor() => $_ensure(8);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(9);
 
   @$pb.TagNumber(17)
-  $core.bool get autofocus => $_getBF(9);
+  $core.bool get autofocus => $_getBF(10);
   @$pb.TagNumber(17)
-  set autofocus($core.bool v) { $_setBool(9, v); }
+  set autofocus($core.bool v) { $_setBool(10, v); }
   @$pb.TagNumber(17)
-  $core.bool hasAutofocus() => $_has(9);
+  $core.bool hasAutofocus() => $_has(10);
   @$pb.TagNumber(17)
   void clearAutofocus() => clearField(17);
 
   @$pb.TagNumber(18)
-  $core.String get tooltip => $_getSZ(10);
+  $core.String get tooltip => $_getSZ(11);
   @$pb.TagNumber(18)
-  set tooltip($core.String v) { $_setString(10, v); }
+  set tooltip($core.String v) { $_setString(11, v); }
   @$pb.TagNumber(18)
-  $core.bool hasTooltip() => $_has(10);
+  $core.bool hasTooltip() => $_has(11);
   @$pb.TagNumber(18)
   void clearTooltip() => clearField(18);
 
   @$pb.TagNumber(19)
-  $core.bool get enableFeedback => $_getBF(11);
+  $core.bool get enableFeedback => $_getBF(12);
   @$pb.TagNumber(19)
-  set enableFeedback($core.bool v) { $_setBool(11, v); }
+  set enableFeedback($core.bool v) { $_setBool(12, v); }
   @$pb.TagNumber(19)
-  $core.bool hasEnableFeedback() => $_has(11);
+  $core.bool hasEnableFeedback() => $_has(12);
   @$pb.TagNumber(19)
   void clearEnableFeedback() => clearField(19);
 
   @$pb.TagNumber(22)
-  $core.bool get isSelected => $_getBF(12);
+  $core.bool get isSelected => $_getBF(13);
   @$pb.TagNumber(22)
-  set isSelected($core.bool v) { $_setBool(12, v); }
+  set isSelected($core.bool v) { $_setBool(13, v); }
   @$pb.TagNumber(22)
-  $core.bool hasIsSelected() => $_has(12);
+  $core.bool hasIsSelected() => $_has(13);
   @$pb.TagNumber(22)
   void clearIsSelected() => clearField(22);
 
   @$pb.TagNumber(23)
-  WidgetExpression get selectedIcon => $_getN(13);
+  WidgetExpression get selectedIcon => $_getN(14);
   @$pb.TagNumber(23)
   set selectedIcon(WidgetExpression v) { setField(23, v); }
   @$pb.TagNumber(23)
-  $core.bool hasSelectedIcon() => $_has(13);
+  $core.bool hasSelectedIcon() => $_has(14);
   @$pb.TagNumber(23)
   void clearSelectedIcon() => clearField(23);
   @$pb.TagNumber(23)
-  WidgetExpression ensureSelectedIcon() => $_ensure(13);
+  WidgetExpression ensureSelectedIcon() => $_ensure(14);
 
   @$pb.TagNumber(24)
-  WidgetExpression get icon => $_getN(14);
+  WidgetExpression get icon => $_getN(15);
   @$pb.TagNumber(24)
   set icon(WidgetExpression v) { setField(24, v); }
   @$pb.TagNumber(24)
-  $core.bool hasIcon() => $_has(14);
+  $core.bool hasIcon() => $_has(15);
   @$pb.TagNumber(24)
   void clearIcon() => clearField(24);
   @$pb.TagNumber(24)
-  WidgetExpression ensureIcon() => $_ensure(14);
+  WidgetExpression ensureIcon() => $_ensure(15);
 }
 
 /// package:flutter/src/material/icon_button.dart
@@ -20815,6 +21855,7 @@ class MaterialIconButtonNamedFilled extends $pb.GeneratedMessage {
   factory MaterialIconButtonNamedFilled({
     $1.FlutterKeyExpression? key,
     $core.double? iconSize,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $core.double? splashRadius,
     $1.DartColorExpression? color,
     $1.DartColorExpression? focusColor,
@@ -20835,6 +21876,9 @@ class MaterialIconButtonNamedFilled extends $pb.GeneratedMessage {
     }
     if (iconSize != null) {
       $result.iconSize = iconSize;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (splashRadius != null) {
       $result.splashRadius = splashRadius;
@@ -20884,6 +21928,7 @@ class MaterialIconButtonNamedFilled extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialIconButtonNamedFilled', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'iconSize', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(5, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'splashRadius', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
@@ -20941,138 +21986,149 @@ class MaterialIconButtonNamedFilled extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearIconSize() => clearField(3);
 
+  @$pb.TagNumber(5)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(2);
+  @$pb.TagNumber(5)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasPadding() => $_has(2);
+  @$pb.TagNumber(5)
+  void clearPadding() => clearField(5);
+  @$pb.TagNumber(5)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(2);
+
   @$pb.TagNumber(7)
-  $core.double get splashRadius => $_getN(2);
+  $core.double get splashRadius => $_getN(3);
   @$pb.TagNumber(7)
-  set splashRadius($core.double v) { $_setDouble(2, v); }
+  set splashRadius($core.double v) { $_setDouble(3, v); }
   @$pb.TagNumber(7)
-  $core.bool hasSplashRadius() => $_has(2);
+  $core.bool hasSplashRadius() => $_has(3);
   @$pb.TagNumber(7)
   void clearSplashRadius() => clearField(7);
 
   @$pb.TagNumber(8)
-  $1.DartColorExpression get color => $_getN(3);
+  $1.DartColorExpression get color => $_getN(4);
   @$pb.TagNumber(8)
   set color($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
-  $core.bool hasColor() => $_has(3);
+  $core.bool hasColor() => $_has(4);
   @$pb.TagNumber(8)
   void clearColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.DartColorExpression ensureColor() => $_ensure(3);
+  $1.DartColorExpression ensureColor() => $_ensure(4);
 
   @$pb.TagNumber(9)
-  $1.DartColorExpression get focusColor => $_getN(4);
+  $1.DartColorExpression get focusColor => $_getN(5);
   @$pb.TagNumber(9)
   set focusColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
-  $core.bool hasFocusColor() => $_has(4);
+  $core.bool hasFocusColor() => $_has(5);
   @$pb.TagNumber(9)
   void clearFocusColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.DartColorExpression ensureFocusColor() => $_ensure(4);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(5);
 
   @$pb.TagNumber(10)
-  $1.DartColorExpression get hoverColor => $_getN(5);
+  $1.DartColorExpression get hoverColor => $_getN(6);
   @$pb.TagNumber(10)
   set hoverColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasHoverColor() => $_has(5);
+  $core.bool hasHoverColor() => $_has(6);
   @$pb.TagNumber(10)
   void clearHoverColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.DartColorExpression ensureHoverColor() => $_ensure(5);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(6);
 
   @$pb.TagNumber(11)
-  $1.DartColorExpression get highlightColor => $_getN(6);
+  $1.DartColorExpression get highlightColor => $_getN(7);
   @$pb.TagNumber(11)
   set highlightColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasHighlightColor() => $_has(6);
+  $core.bool hasHighlightColor() => $_has(7);
   @$pb.TagNumber(11)
   void clearHighlightColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.DartColorExpression ensureHighlightColor() => $_ensure(6);
+  $1.DartColorExpression ensureHighlightColor() => $_ensure(7);
 
   @$pb.TagNumber(12)
-  $1.DartColorExpression get splashColor => $_getN(7);
+  $1.DartColorExpression get splashColor => $_getN(8);
   @$pb.TagNumber(12)
   set splashColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
-  $core.bool hasSplashColor() => $_has(7);
+  $core.bool hasSplashColor() => $_has(8);
   @$pb.TagNumber(12)
   void clearSplashColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.DartColorExpression ensureSplashColor() => $_ensure(7);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(8);
 
   @$pb.TagNumber(13)
-  $1.DartColorExpression get disabledColor => $_getN(8);
+  $1.DartColorExpression get disabledColor => $_getN(9);
   @$pb.TagNumber(13)
   set disabledColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
-  $core.bool hasDisabledColor() => $_has(8);
+  $core.bool hasDisabledColor() => $_has(9);
   @$pb.TagNumber(13)
   void clearDisabledColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.DartColorExpression ensureDisabledColor() => $_ensure(8);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(9);
 
   @$pb.TagNumber(17)
-  $core.bool get autofocus => $_getBF(9);
+  $core.bool get autofocus => $_getBF(10);
   @$pb.TagNumber(17)
-  set autofocus($core.bool v) { $_setBool(9, v); }
+  set autofocus($core.bool v) { $_setBool(10, v); }
   @$pb.TagNumber(17)
-  $core.bool hasAutofocus() => $_has(9);
+  $core.bool hasAutofocus() => $_has(10);
   @$pb.TagNumber(17)
   void clearAutofocus() => clearField(17);
 
   @$pb.TagNumber(18)
-  $core.String get tooltip => $_getSZ(10);
+  $core.String get tooltip => $_getSZ(11);
   @$pb.TagNumber(18)
-  set tooltip($core.String v) { $_setString(10, v); }
+  set tooltip($core.String v) { $_setString(11, v); }
   @$pb.TagNumber(18)
-  $core.bool hasTooltip() => $_has(10);
+  $core.bool hasTooltip() => $_has(11);
   @$pb.TagNumber(18)
   void clearTooltip() => clearField(18);
 
   @$pb.TagNumber(19)
-  $core.bool get enableFeedback => $_getBF(11);
+  $core.bool get enableFeedback => $_getBF(12);
   @$pb.TagNumber(19)
-  set enableFeedback($core.bool v) { $_setBool(11, v); }
+  set enableFeedback($core.bool v) { $_setBool(12, v); }
   @$pb.TagNumber(19)
-  $core.bool hasEnableFeedback() => $_has(11);
+  $core.bool hasEnableFeedback() => $_has(12);
   @$pb.TagNumber(19)
   void clearEnableFeedback() => clearField(19);
 
   @$pb.TagNumber(22)
-  $core.bool get isSelected => $_getBF(12);
+  $core.bool get isSelected => $_getBF(13);
   @$pb.TagNumber(22)
-  set isSelected($core.bool v) { $_setBool(12, v); }
+  set isSelected($core.bool v) { $_setBool(13, v); }
   @$pb.TagNumber(22)
-  $core.bool hasIsSelected() => $_has(12);
+  $core.bool hasIsSelected() => $_has(13);
   @$pb.TagNumber(22)
   void clearIsSelected() => clearField(22);
 
   @$pb.TagNumber(23)
-  WidgetExpression get selectedIcon => $_getN(13);
+  WidgetExpression get selectedIcon => $_getN(14);
   @$pb.TagNumber(23)
   set selectedIcon(WidgetExpression v) { setField(23, v); }
   @$pb.TagNumber(23)
-  $core.bool hasSelectedIcon() => $_has(13);
+  $core.bool hasSelectedIcon() => $_has(14);
   @$pb.TagNumber(23)
   void clearSelectedIcon() => clearField(23);
   @$pb.TagNumber(23)
-  WidgetExpression ensureSelectedIcon() => $_ensure(13);
+  WidgetExpression ensureSelectedIcon() => $_ensure(14);
 
   @$pb.TagNumber(24)
-  WidgetExpression get icon => $_getN(14);
+  WidgetExpression get icon => $_getN(15);
   @$pb.TagNumber(24)
   set icon(WidgetExpression v) { setField(24, v); }
   @$pb.TagNumber(24)
-  $core.bool hasIcon() => $_has(14);
+  $core.bool hasIcon() => $_has(15);
   @$pb.TagNumber(24)
   void clearIcon() => clearField(24);
   @$pb.TagNumber(24)
-  WidgetExpression ensureIcon() => $_ensure(14);
+  WidgetExpression ensureIcon() => $_ensure(15);
 }
 
 /// package:flutter/src/material/icon_button.dart
@@ -21080,6 +22136,7 @@ class MaterialIconButtonNamedFilledTonal extends $pb.GeneratedMessage {
   factory MaterialIconButtonNamedFilledTonal({
     $1.FlutterKeyExpression? key,
     $core.double? iconSize,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $core.double? splashRadius,
     $1.DartColorExpression? color,
     $1.DartColorExpression? focusColor,
@@ -21100,6 +22157,9 @@ class MaterialIconButtonNamedFilledTonal extends $pb.GeneratedMessage {
     }
     if (iconSize != null) {
       $result.iconSize = iconSize;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (splashRadius != null) {
       $result.splashRadius = splashRadius;
@@ -21149,6 +22209,7 @@ class MaterialIconButtonNamedFilledTonal extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialIconButtonNamedFilledTonal', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'iconSize', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(5, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'splashRadius', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
@@ -21206,138 +22267,149 @@ class MaterialIconButtonNamedFilledTonal extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearIconSize() => clearField(3);
 
+  @$pb.TagNumber(5)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(2);
+  @$pb.TagNumber(5)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasPadding() => $_has(2);
+  @$pb.TagNumber(5)
+  void clearPadding() => clearField(5);
+  @$pb.TagNumber(5)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(2);
+
   @$pb.TagNumber(7)
-  $core.double get splashRadius => $_getN(2);
+  $core.double get splashRadius => $_getN(3);
   @$pb.TagNumber(7)
-  set splashRadius($core.double v) { $_setDouble(2, v); }
+  set splashRadius($core.double v) { $_setDouble(3, v); }
   @$pb.TagNumber(7)
-  $core.bool hasSplashRadius() => $_has(2);
+  $core.bool hasSplashRadius() => $_has(3);
   @$pb.TagNumber(7)
   void clearSplashRadius() => clearField(7);
 
   @$pb.TagNumber(8)
-  $1.DartColorExpression get color => $_getN(3);
+  $1.DartColorExpression get color => $_getN(4);
   @$pb.TagNumber(8)
   set color($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
-  $core.bool hasColor() => $_has(3);
+  $core.bool hasColor() => $_has(4);
   @$pb.TagNumber(8)
   void clearColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.DartColorExpression ensureColor() => $_ensure(3);
+  $1.DartColorExpression ensureColor() => $_ensure(4);
 
   @$pb.TagNumber(9)
-  $1.DartColorExpression get focusColor => $_getN(4);
+  $1.DartColorExpression get focusColor => $_getN(5);
   @$pb.TagNumber(9)
   set focusColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
-  $core.bool hasFocusColor() => $_has(4);
+  $core.bool hasFocusColor() => $_has(5);
   @$pb.TagNumber(9)
   void clearFocusColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.DartColorExpression ensureFocusColor() => $_ensure(4);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(5);
 
   @$pb.TagNumber(10)
-  $1.DartColorExpression get hoverColor => $_getN(5);
+  $1.DartColorExpression get hoverColor => $_getN(6);
   @$pb.TagNumber(10)
   set hoverColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasHoverColor() => $_has(5);
+  $core.bool hasHoverColor() => $_has(6);
   @$pb.TagNumber(10)
   void clearHoverColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.DartColorExpression ensureHoverColor() => $_ensure(5);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(6);
 
   @$pb.TagNumber(11)
-  $1.DartColorExpression get highlightColor => $_getN(6);
+  $1.DartColorExpression get highlightColor => $_getN(7);
   @$pb.TagNumber(11)
   set highlightColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasHighlightColor() => $_has(6);
+  $core.bool hasHighlightColor() => $_has(7);
   @$pb.TagNumber(11)
   void clearHighlightColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.DartColorExpression ensureHighlightColor() => $_ensure(6);
+  $1.DartColorExpression ensureHighlightColor() => $_ensure(7);
 
   @$pb.TagNumber(12)
-  $1.DartColorExpression get splashColor => $_getN(7);
+  $1.DartColorExpression get splashColor => $_getN(8);
   @$pb.TagNumber(12)
   set splashColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
-  $core.bool hasSplashColor() => $_has(7);
+  $core.bool hasSplashColor() => $_has(8);
   @$pb.TagNumber(12)
   void clearSplashColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.DartColorExpression ensureSplashColor() => $_ensure(7);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(8);
 
   @$pb.TagNumber(13)
-  $1.DartColorExpression get disabledColor => $_getN(8);
+  $1.DartColorExpression get disabledColor => $_getN(9);
   @$pb.TagNumber(13)
   set disabledColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
-  $core.bool hasDisabledColor() => $_has(8);
+  $core.bool hasDisabledColor() => $_has(9);
   @$pb.TagNumber(13)
   void clearDisabledColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.DartColorExpression ensureDisabledColor() => $_ensure(8);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(9);
 
   @$pb.TagNumber(17)
-  $core.bool get autofocus => $_getBF(9);
+  $core.bool get autofocus => $_getBF(10);
   @$pb.TagNumber(17)
-  set autofocus($core.bool v) { $_setBool(9, v); }
+  set autofocus($core.bool v) { $_setBool(10, v); }
   @$pb.TagNumber(17)
-  $core.bool hasAutofocus() => $_has(9);
+  $core.bool hasAutofocus() => $_has(10);
   @$pb.TagNumber(17)
   void clearAutofocus() => clearField(17);
 
   @$pb.TagNumber(18)
-  $core.String get tooltip => $_getSZ(10);
+  $core.String get tooltip => $_getSZ(11);
   @$pb.TagNumber(18)
-  set tooltip($core.String v) { $_setString(10, v); }
+  set tooltip($core.String v) { $_setString(11, v); }
   @$pb.TagNumber(18)
-  $core.bool hasTooltip() => $_has(10);
+  $core.bool hasTooltip() => $_has(11);
   @$pb.TagNumber(18)
   void clearTooltip() => clearField(18);
 
   @$pb.TagNumber(19)
-  $core.bool get enableFeedback => $_getBF(11);
+  $core.bool get enableFeedback => $_getBF(12);
   @$pb.TagNumber(19)
-  set enableFeedback($core.bool v) { $_setBool(11, v); }
+  set enableFeedback($core.bool v) { $_setBool(12, v); }
   @$pb.TagNumber(19)
-  $core.bool hasEnableFeedback() => $_has(11);
+  $core.bool hasEnableFeedback() => $_has(12);
   @$pb.TagNumber(19)
   void clearEnableFeedback() => clearField(19);
 
   @$pb.TagNumber(22)
-  $core.bool get isSelected => $_getBF(12);
+  $core.bool get isSelected => $_getBF(13);
   @$pb.TagNumber(22)
-  set isSelected($core.bool v) { $_setBool(12, v); }
+  set isSelected($core.bool v) { $_setBool(13, v); }
   @$pb.TagNumber(22)
-  $core.bool hasIsSelected() => $_has(12);
+  $core.bool hasIsSelected() => $_has(13);
   @$pb.TagNumber(22)
   void clearIsSelected() => clearField(22);
 
   @$pb.TagNumber(23)
-  WidgetExpression get selectedIcon => $_getN(13);
+  WidgetExpression get selectedIcon => $_getN(14);
   @$pb.TagNumber(23)
   set selectedIcon(WidgetExpression v) { setField(23, v); }
   @$pb.TagNumber(23)
-  $core.bool hasSelectedIcon() => $_has(13);
+  $core.bool hasSelectedIcon() => $_has(14);
   @$pb.TagNumber(23)
   void clearSelectedIcon() => clearField(23);
   @$pb.TagNumber(23)
-  WidgetExpression ensureSelectedIcon() => $_ensure(13);
+  WidgetExpression ensureSelectedIcon() => $_ensure(14);
 
   @$pb.TagNumber(24)
-  WidgetExpression get icon => $_getN(14);
+  WidgetExpression get icon => $_getN(15);
   @$pb.TagNumber(24)
   set icon(WidgetExpression v) { setField(24, v); }
   @$pb.TagNumber(24)
-  $core.bool hasIcon() => $_has(14);
+  $core.bool hasIcon() => $_has(15);
   @$pb.TagNumber(24)
   void clearIcon() => clearField(24);
   @$pb.TagNumber(24)
-  WidgetExpression ensureIcon() => $_ensure(14);
+  WidgetExpression ensureIcon() => $_ensure(15);
 }
 
 /// package:flutter/src/material/icon_button.dart
@@ -21345,6 +22417,7 @@ class MaterialIconButtonNamedOutlined extends $pb.GeneratedMessage {
   factory MaterialIconButtonNamedOutlined({
     $1.FlutterKeyExpression? key,
     $core.double? iconSize,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $core.double? splashRadius,
     $1.DartColorExpression? color,
     $1.DartColorExpression? focusColor,
@@ -21365,6 +22438,9 @@ class MaterialIconButtonNamedOutlined extends $pb.GeneratedMessage {
     }
     if (iconSize != null) {
       $result.iconSize = iconSize;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (splashRadius != null) {
       $result.splashRadius = splashRadius;
@@ -21414,6 +22490,7 @@ class MaterialIconButtonNamedOutlined extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialIconButtonNamedOutlined', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..a<$core.double>(3, _omitFieldNames ? '' : 'iconSize', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(5, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'splashRadius', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
@@ -21471,144 +22548,156 @@ class MaterialIconButtonNamedOutlined extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   void clearIconSize() => clearField(3);
 
+  @$pb.TagNumber(5)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(2);
+  @$pb.TagNumber(5)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasPadding() => $_has(2);
+  @$pb.TagNumber(5)
+  void clearPadding() => clearField(5);
+  @$pb.TagNumber(5)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(2);
+
   @$pb.TagNumber(7)
-  $core.double get splashRadius => $_getN(2);
+  $core.double get splashRadius => $_getN(3);
   @$pb.TagNumber(7)
-  set splashRadius($core.double v) { $_setDouble(2, v); }
+  set splashRadius($core.double v) { $_setDouble(3, v); }
   @$pb.TagNumber(7)
-  $core.bool hasSplashRadius() => $_has(2);
+  $core.bool hasSplashRadius() => $_has(3);
   @$pb.TagNumber(7)
   void clearSplashRadius() => clearField(7);
 
   @$pb.TagNumber(8)
-  $1.DartColorExpression get color => $_getN(3);
+  $1.DartColorExpression get color => $_getN(4);
   @$pb.TagNumber(8)
   set color($1.DartColorExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
-  $core.bool hasColor() => $_has(3);
+  $core.bool hasColor() => $_has(4);
   @$pb.TagNumber(8)
   void clearColor() => clearField(8);
   @$pb.TagNumber(8)
-  $1.DartColorExpression ensureColor() => $_ensure(3);
+  $1.DartColorExpression ensureColor() => $_ensure(4);
 
   @$pb.TagNumber(9)
-  $1.DartColorExpression get focusColor => $_getN(4);
+  $1.DartColorExpression get focusColor => $_getN(5);
   @$pb.TagNumber(9)
   set focusColor($1.DartColorExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
-  $core.bool hasFocusColor() => $_has(4);
+  $core.bool hasFocusColor() => $_has(5);
   @$pb.TagNumber(9)
   void clearFocusColor() => clearField(9);
   @$pb.TagNumber(9)
-  $1.DartColorExpression ensureFocusColor() => $_ensure(4);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(5);
 
   @$pb.TagNumber(10)
-  $1.DartColorExpression get hoverColor => $_getN(5);
+  $1.DartColorExpression get hoverColor => $_getN(6);
   @$pb.TagNumber(10)
   set hoverColor($1.DartColorExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasHoverColor() => $_has(5);
+  $core.bool hasHoverColor() => $_has(6);
   @$pb.TagNumber(10)
   void clearHoverColor() => clearField(10);
   @$pb.TagNumber(10)
-  $1.DartColorExpression ensureHoverColor() => $_ensure(5);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(6);
 
   @$pb.TagNumber(11)
-  $1.DartColorExpression get highlightColor => $_getN(6);
+  $1.DartColorExpression get highlightColor => $_getN(7);
   @$pb.TagNumber(11)
   set highlightColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasHighlightColor() => $_has(6);
+  $core.bool hasHighlightColor() => $_has(7);
   @$pb.TagNumber(11)
   void clearHighlightColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.DartColorExpression ensureHighlightColor() => $_ensure(6);
+  $1.DartColorExpression ensureHighlightColor() => $_ensure(7);
 
   @$pb.TagNumber(12)
-  $1.DartColorExpression get splashColor => $_getN(7);
+  $1.DartColorExpression get splashColor => $_getN(8);
   @$pb.TagNumber(12)
   set splashColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
-  $core.bool hasSplashColor() => $_has(7);
+  $core.bool hasSplashColor() => $_has(8);
   @$pb.TagNumber(12)
   void clearSplashColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.DartColorExpression ensureSplashColor() => $_ensure(7);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(8);
 
   @$pb.TagNumber(13)
-  $1.DartColorExpression get disabledColor => $_getN(8);
+  $1.DartColorExpression get disabledColor => $_getN(9);
   @$pb.TagNumber(13)
   set disabledColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
-  $core.bool hasDisabledColor() => $_has(8);
+  $core.bool hasDisabledColor() => $_has(9);
   @$pb.TagNumber(13)
   void clearDisabledColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.DartColorExpression ensureDisabledColor() => $_ensure(8);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(9);
 
   @$pb.TagNumber(17)
-  $core.bool get autofocus => $_getBF(9);
+  $core.bool get autofocus => $_getBF(10);
   @$pb.TagNumber(17)
-  set autofocus($core.bool v) { $_setBool(9, v); }
+  set autofocus($core.bool v) { $_setBool(10, v); }
   @$pb.TagNumber(17)
-  $core.bool hasAutofocus() => $_has(9);
+  $core.bool hasAutofocus() => $_has(10);
   @$pb.TagNumber(17)
   void clearAutofocus() => clearField(17);
 
   @$pb.TagNumber(18)
-  $core.String get tooltip => $_getSZ(10);
+  $core.String get tooltip => $_getSZ(11);
   @$pb.TagNumber(18)
-  set tooltip($core.String v) { $_setString(10, v); }
+  set tooltip($core.String v) { $_setString(11, v); }
   @$pb.TagNumber(18)
-  $core.bool hasTooltip() => $_has(10);
+  $core.bool hasTooltip() => $_has(11);
   @$pb.TagNumber(18)
   void clearTooltip() => clearField(18);
 
   @$pb.TagNumber(19)
-  $core.bool get enableFeedback => $_getBF(11);
+  $core.bool get enableFeedback => $_getBF(12);
   @$pb.TagNumber(19)
-  set enableFeedback($core.bool v) { $_setBool(11, v); }
+  set enableFeedback($core.bool v) { $_setBool(12, v); }
   @$pb.TagNumber(19)
-  $core.bool hasEnableFeedback() => $_has(11);
+  $core.bool hasEnableFeedback() => $_has(12);
   @$pb.TagNumber(19)
   void clearEnableFeedback() => clearField(19);
 
   @$pb.TagNumber(22)
-  $core.bool get isSelected => $_getBF(12);
+  $core.bool get isSelected => $_getBF(13);
   @$pb.TagNumber(22)
-  set isSelected($core.bool v) { $_setBool(12, v); }
+  set isSelected($core.bool v) { $_setBool(13, v); }
   @$pb.TagNumber(22)
-  $core.bool hasIsSelected() => $_has(12);
+  $core.bool hasIsSelected() => $_has(13);
   @$pb.TagNumber(22)
   void clearIsSelected() => clearField(22);
 
   @$pb.TagNumber(23)
-  WidgetExpression get selectedIcon => $_getN(13);
+  WidgetExpression get selectedIcon => $_getN(14);
   @$pb.TagNumber(23)
   set selectedIcon(WidgetExpression v) { setField(23, v); }
   @$pb.TagNumber(23)
-  $core.bool hasSelectedIcon() => $_has(13);
+  $core.bool hasSelectedIcon() => $_has(14);
   @$pb.TagNumber(23)
   void clearSelectedIcon() => clearField(23);
   @$pb.TagNumber(23)
-  WidgetExpression ensureSelectedIcon() => $_ensure(13);
+  WidgetExpression ensureSelectedIcon() => $_ensure(14);
 
   @$pb.TagNumber(24)
-  WidgetExpression get icon => $_getN(14);
+  WidgetExpression get icon => $_getN(15);
   @$pb.TagNumber(24)
   set icon(WidgetExpression v) { setField(24, v); }
   @$pb.TagNumber(24)
-  $core.bool hasIcon() => $_has(14);
+  $core.bool hasIcon() => $_has(15);
   @$pb.TagNumber(24)
   void clearIcon() => clearField(24);
   @$pb.TagNumber(24)
-  WidgetExpression ensureIcon() => $_ensure(14);
+  WidgetExpression ensureIcon() => $_ensure(15);
 }
 
 /// package:flutter/src/material/ink_decoration.dart
 class MaterialInk extends $pb.GeneratedMessage {
   factory MaterialInk({
     $1.FlutterKeyExpression? key,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $1.DartColorExpression? color,
     $core.double? width,
     $core.double? height,
@@ -21617,6 +22706,9 @@ class MaterialInk extends $pb.GeneratedMessage {
     final $result = create();
     if (key != null) {
       $result.key = key;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (color != null) {
       $result.color = color;
@@ -21638,6 +22730,7 @@ class MaterialInk extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialInk', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(3, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OD)
     ..a<$core.double>(7, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
@@ -21677,45 +22770,56 @@ class MaterialInk extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
+  @$pb.TagNumber(3)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(1);
+  @$pb.TagNumber(3)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(3, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasPadding() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearPadding() => clearField(3);
+  @$pb.TagNumber(3)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(1);
+
   @$pb.TagNumber(4)
-  $1.DartColorExpression get color => $_getN(1);
+  $1.DartColorExpression get color => $_getN(2);
   @$pb.TagNumber(4)
   set color($1.DartColorExpression v) { setField(4, v); }
   @$pb.TagNumber(4)
-  $core.bool hasColor() => $_has(1);
+  $core.bool hasColor() => $_has(2);
   @$pb.TagNumber(4)
   void clearColor() => clearField(4);
   @$pb.TagNumber(4)
-  $1.DartColorExpression ensureColor() => $_ensure(1);
+  $1.DartColorExpression ensureColor() => $_ensure(2);
 
   @$pb.TagNumber(6)
-  $core.double get width => $_getN(2);
+  $core.double get width => $_getN(3);
   @$pb.TagNumber(6)
-  set width($core.double v) { $_setDouble(2, v); }
+  set width($core.double v) { $_setDouble(3, v); }
   @$pb.TagNumber(6)
-  $core.bool hasWidth() => $_has(2);
+  $core.bool hasWidth() => $_has(3);
   @$pb.TagNumber(6)
   void clearWidth() => clearField(6);
 
   @$pb.TagNumber(7)
-  $core.double get height => $_getN(3);
+  $core.double get height => $_getN(4);
   @$pb.TagNumber(7)
-  set height($core.double v) { $_setDouble(3, v); }
+  set height($core.double v) { $_setDouble(4, v); }
   @$pb.TagNumber(7)
-  $core.bool hasHeight() => $_has(3);
+  $core.bool hasHeight() => $_has(4);
   @$pb.TagNumber(7)
   void clearHeight() => clearField(7);
 
   @$pb.TagNumber(8)
-  WidgetExpression get child => $_getN(4);
+  WidgetExpression get child => $_getN(5);
   @$pb.TagNumber(8)
   set child(WidgetExpression v) { setField(8, v); }
   @$pb.TagNumber(8)
-  $core.bool hasChild() => $_has(4);
+  $core.bool hasChild() => $_has(5);
   @$pb.TagNumber(8)
   void clearChild() => clearField(8);
   @$pb.TagNumber(8)
-  WidgetExpression ensureChild() => $_ensure(4);
+  WidgetExpression ensureChild() => $_ensure(5);
 }
 
 /// package:flutter/src/material/ink_well.dart
@@ -22158,6 +23262,7 @@ class MaterialInputChip extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     WidgetExpression? avatar,
     WidgetExpression? label,
+    $1.FlutterEdgeInsetsGeometryExpression? labelPadding,
     $core.bool? selected,
     $core.bool? isEnabled,
     WidgetExpression? deleteIcon,
@@ -22170,6 +23275,7 @@ class MaterialInputChip extends $pb.GeneratedMessage {
     $2.DartClip_Enum? clipBehavior,
     $core.bool? autofocus,
     $1.DartColorExpression? backgroundColor,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $2.MaterialMaterialTapTargetSize_Enum? materialTapTargetSize,
     $core.double? elevation,
     $1.DartColorExpression? shadowColor,
@@ -22187,6 +23293,9 @@ class MaterialInputChip extends $pb.GeneratedMessage {
     }
     if (label != null) {
       $result.label = label;
+    }
+    if (labelPadding != null) {
+      $result.labelPadding = labelPadding;
     }
     if (selected != null) {
       $result.selected = selected;
@@ -22224,6 +23333,9 @@ class MaterialInputChip extends $pb.GeneratedMessage {
     if (backgroundColor != null) {
       $result.backgroundColor = backgroundColor;
     }
+    if (padding != null) {
+      $result.padding = padding;
+    }
     if (materialTapTargetSize != null) {
       $result.materialTapTargetSize = materialTapTargetSize;
     }
@@ -22255,6 +23367,7 @@ class MaterialInputChip extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'avatar', subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'label', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'labelPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOB(7, _omitFieldNames ? '' : 'selected')
     ..aOB(8, _omitFieldNames ? '' : 'isEnabled')
     ..aOM<WidgetExpression>(10, _omitFieldNames ? '' : 'deleteIcon', subBuilder: WidgetExpression.create)
@@ -22267,6 +23380,7 @@ class MaterialInputChip extends $pb.GeneratedMessage {
     ..e<$2.DartClip_Enum>(21, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..aOB(23, _omitFieldNames ? '' : 'autofocus')
     ..aOM<$1.DartColorExpression>(25, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(26, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..e<$2.MaterialMaterialTapTargetSize_Enum>(28, _omitFieldNames ? '' : 'materialTapTargetSize', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialMaterialTapTargetSize_Enum.PADDED, valueOf: $2.MaterialMaterialTapTargetSize_Enum.valueOf, enumValues: $2.MaterialMaterialTapTargetSize_Enum.values)
     ..a<$core.double>(29, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(30, _omitFieldNames ? '' : 'shadowColor', subBuilder: $1.DartColorExpression.create)
@@ -22331,194 +23445,216 @@ class MaterialInputChip extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   WidgetExpression ensureLabel() => $_ensure(2);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get labelPadding => $_getN(3);
+  @$pb.TagNumber(6)
+  set labelPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasLabelPadding() => $_has(3);
+  @$pb.TagNumber(6)
+  void clearLabelPadding() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensureLabelPadding() => $_ensure(3);
+
   @$pb.TagNumber(7)
-  $core.bool get selected => $_getBF(3);
+  $core.bool get selected => $_getBF(4);
   @$pb.TagNumber(7)
-  set selected($core.bool v) { $_setBool(3, v); }
+  set selected($core.bool v) { $_setBool(4, v); }
   @$pb.TagNumber(7)
-  $core.bool hasSelected() => $_has(3);
+  $core.bool hasSelected() => $_has(4);
   @$pb.TagNumber(7)
   void clearSelected() => clearField(7);
 
   @$pb.TagNumber(8)
-  $core.bool get isEnabled => $_getBF(4);
+  $core.bool get isEnabled => $_getBF(5);
   @$pb.TagNumber(8)
-  set isEnabled($core.bool v) { $_setBool(4, v); }
+  set isEnabled($core.bool v) { $_setBool(5, v); }
   @$pb.TagNumber(8)
-  $core.bool hasIsEnabled() => $_has(4);
+  $core.bool hasIsEnabled() => $_has(5);
   @$pb.TagNumber(8)
   void clearIsEnabled() => clearField(8);
 
   @$pb.TagNumber(10)
-  WidgetExpression get deleteIcon => $_getN(5);
+  WidgetExpression get deleteIcon => $_getN(6);
   @$pb.TagNumber(10)
   set deleteIcon(WidgetExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasDeleteIcon() => $_has(5);
+  $core.bool hasDeleteIcon() => $_has(6);
   @$pb.TagNumber(10)
   void clearDeleteIcon() => clearField(10);
   @$pb.TagNumber(10)
-  WidgetExpression ensureDeleteIcon() => $_ensure(5);
+  WidgetExpression ensureDeleteIcon() => $_ensure(6);
 
   @$pb.TagNumber(12)
-  $1.DartColorExpression get deleteIconColor => $_getN(6);
+  $1.DartColorExpression get deleteIconColor => $_getN(7);
   @$pb.TagNumber(12)
   set deleteIconColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
-  $core.bool hasDeleteIconColor() => $_has(6);
+  $core.bool hasDeleteIconColor() => $_has(7);
   @$pb.TagNumber(12)
   void clearDeleteIconColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.DartColorExpression ensureDeleteIconColor() => $_ensure(6);
+  $1.DartColorExpression ensureDeleteIconColor() => $_ensure(7);
 
   @$pb.TagNumber(13)
-  $core.String get deleteButtonTooltipMessage => $_getSZ(7);
+  $core.String get deleteButtonTooltipMessage => $_getSZ(8);
   @$pb.TagNumber(13)
-  set deleteButtonTooltipMessage($core.String v) { $_setString(7, v); }
+  set deleteButtonTooltipMessage($core.String v) { $_setString(8, v); }
   @$pb.TagNumber(13)
-  $core.bool hasDeleteButtonTooltipMessage() => $_has(7);
+  $core.bool hasDeleteButtonTooltipMessage() => $_has(8);
   @$pb.TagNumber(13)
   void clearDeleteButtonTooltipMessage() => clearField(13);
 
   @$pb.TagNumber(15)
-  $core.double get pressElevation => $_getN(8);
+  $core.double get pressElevation => $_getN(9);
   @$pb.TagNumber(15)
-  set pressElevation($core.double v) { $_setDouble(8, v); }
+  set pressElevation($core.double v) { $_setDouble(9, v); }
   @$pb.TagNumber(15)
-  $core.bool hasPressElevation() => $_has(8);
+  $core.bool hasPressElevation() => $_has(9);
   @$pb.TagNumber(15)
   void clearPressElevation() => clearField(15);
 
   @$pb.TagNumber(16)
-  $1.DartColorExpression get disabledColor => $_getN(9);
+  $1.DartColorExpression get disabledColor => $_getN(10);
   @$pb.TagNumber(16)
   set disabledColor($1.DartColorExpression v) { setField(16, v); }
   @$pb.TagNumber(16)
-  $core.bool hasDisabledColor() => $_has(9);
+  $core.bool hasDisabledColor() => $_has(10);
   @$pb.TagNumber(16)
   void clearDisabledColor() => clearField(16);
   @$pb.TagNumber(16)
-  $1.DartColorExpression ensureDisabledColor() => $_ensure(9);
+  $1.DartColorExpression ensureDisabledColor() => $_ensure(10);
 
   @$pb.TagNumber(17)
-  $1.DartColorExpression get selectedColor => $_getN(10);
+  $1.DartColorExpression get selectedColor => $_getN(11);
   @$pb.TagNumber(17)
   set selectedColor($1.DartColorExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
-  $core.bool hasSelectedColor() => $_has(10);
+  $core.bool hasSelectedColor() => $_has(11);
   @$pb.TagNumber(17)
   void clearSelectedColor() => clearField(17);
   @$pb.TagNumber(17)
-  $1.DartColorExpression ensureSelectedColor() => $_ensure(10);
+  $1.DartColorExpression ensureSelectedColor() => $_ensure(11);
 
   @$pb.TagNumber(18)
-  $core.String get tooltip => $_getSZ(11);
+  $core.String get tooltip => $_getSZ(12);
   @$pb.TagNumber(18)
-  set tooltip($core.String v) { $_setString(11, v); }
+  set tooltip($core.String v) { $_setString(12, v); }
   @$pb.TagNumber(18)
-  $core.bool hasTooltip() => $_has(11);
+  $core.bool hasTooltip() => $_has(12);
   @$pb.TagNumber(18)
   void clearTooltip() => clearField(18);
 
   @$pb.TagNumber(21)
-  $2.DartClip_Enum get clipBehavior => $_getN(12);
+  $2.DartClip_Enum get clipBehavior => $_getN(13);
   @$pb.TagNumber(21)
   set clipBehavior($2.DartClip_Enum v) { setField(21, v); }
   @$pb.TagNumber(21)
-  $core.bool hasClipBehavior() => $_has(12);
+  $core.bool hasClipBehavior() => $_has(13);
   @$pb.TagNumber(21)
   void clearClipBehavior() => clearField(21);
 
   @$pb.TagNumber(23)
-  $core.bool get autofocus => $_getBF(13);
+  $core.bool get autofocus => $_getBF(14);
   @$pb.TagNumber(23)
-  set autofocus($core.bool v) { $_setBool(13, v); }
+  set autofocus($core.bool v) { $_setBool(14, v); }
   @$pb.TagNumber(23)
-  $core.bool hasAutofocus() => $_has(13);
+  $core.bool hasAutofocus() => $_has(14);
   @$pb.TagNumber(23)
   void clearAutofocus() => clearField(23);
 
   @$pb.TagNumber(25)
-  $1.DartColorExpression get backgroundColor => $_getN(14);
+  $1.DartColorExpression get backgroundColor => $_getN(15);
   @$pb.TagNumber(25)
   set backgroundColor($1.DartColorExpression v) { setField(25, v); }
   @$pb.TagNumber(25)
-  $core.bool hasBackgroundColor() => $_has(14);
+  $core.bool hasBackgroundColor() => $_has(15);
   @$pb.TagNumber(25)
   void clearBackgroundColor() => clearField(25);
   @$pb.TagNumber(25)
-  $1.DartColorExpression ensureBackgroundColor() => $_ensure(14);
+  $1.DartColorExpression ensureBackgroundColor() => $_ensure(15);
+
+  @$pb.TagNumber(26)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(16);
+  @$pb.TagNumber(26)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(26, v); }
+  @$pb.TagNumber(26)
+  $core.bool hasPadding() => $_has(16);
+  @$pb.TagNumber(26)
+  void clearPadding() => clearField(26);
+  @$pb.TagNumber(26)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(16);
 
   @$pb.TagNumber(28)
-  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(15);
+  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(17);
   @$pb.TagNumber(28)
   set materialTapTargetSize($2.MaterialMaterialTapTargetSize_Enum v) { setField(28, v); }
   @$pb.TagNumber(28)
-  $core.bool hasMaterialTapTargetSize() => $_has(15);
+  $core.bool hasMaterialTapTargetSize() => $_has(17);
   @$pb.TagNumber(28)
   void clearMaterialTapTargetSize() => clearField(28);
 
   @$pb.TagNumber(29)
-  $core.double get elevation => $_getN(16);
+  $core.double get elevation => $_getN(18);
   @$pb.TagNumber(29)
-  set elevation($core.double v) { $_setDouble(16, v); }
+  set elevation($core.double v) { $_setDouble(18, v); }
   @$pb.TagNumber(29)
-  $core.bool hasElevation() => $_has(16);
+  $core.bool hasElevation() => $_has(18);
   @$pb.TagNumber(29)
   void clearElevation() => clearField(29);
 
   @$pb.TagNumber(30)
-  $1.DartColorExpression get shadowColor => $_getN(17);
+  $1.DartColorExpression get shadowColor => $_getN(19);
   @$pb.TagNumber(30)
   set shadowColor($1.DartColorExpression v) { setField(30, v); }
   @$pb.TagNumber(30)
-  $core.bool hasShadowColor() => $_has(17);
+  $core.bool hasShadowColor() => $_has(19);
   @$pb.TagNumber(30)
   void clearShadowColor() => clearField(30);
   @$pb.TagNumber(30)
-  $1.DartColorExpression ensureShadowColor() => $_ensure(17);
+  $1.DartColorExpression ensureShadowColor() => $_ensure(19);
 
   @$pb.TagNumber(31)
-  $1.DartColorExpression get surfaceTintColor => $_getN(18);
+  $1.DartColorExpression get surfaceTintColor => $_getN(20);
   @$pb.TagNumber(31)
   set surfaceTintColor($1.DartColorExpression v) { setField(31, v); }
   @$pb.TagNumber(31)
-  $core.bool hasSurfaceTintColor() => $_has(18);
+  $core.bool hasSurfaceTintColor() => $_has(20);
   @$pb.TagNumber(31)
   void clearSurfaceTintColor() => clearField(31);
   @$pb.TagNumber(31)
-  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(18);
+  $1.DartColorExpression ensureSurfaceTintColor() => $_ensure(20);
 
   @$pb.TagNumber(33)
-  $1.DartColorExpression get selectedShadowColor => $_getN(19);
+  $1.DartColorExpression get selectedShadowColor => $_getN(21);
   @$pb.TagNumber(33)
   set selectedShadowColor($1.DartColorExpression v) { setField(33, v); }
   @$pb.TagNumber(33)
-  $core.bool hasSelectedShadowColor() => $_has(19);
+  $core.bool hasSelectedShadowColor() => $_has(21);
   @$pb.TagNumber(33)
   void clearSelectedShadowColor() => clearField(33);
   @$pb.TagNumber(33)
-  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(19);
+  $1.DartColorExpression ensureSelectedShadowColor() => $_ensure(21);
 
   @$pb.TagNumber(34)
-  $core.bool get showCheckmark => $_getBF(20);
+  $core.bool get showCheckmark => $_getBF(22);
   @$pb.TagNumber(34)
-  set showCheckmark($core.bool v) { $_setBool(20, v); }
+  set showCheckmark($core.bool v) { $_setBool(22, v); }
   @$pb.TagNumber(34)
-  $core.bool hasShowCheckmark() => $_has(20);
+  $core.bool hasShowCheckmark() => $_has(22);
   @$pb.TagNumber(34)
   void clearShowCheckmark() => clearField(34);
 
   @$pb.TagNumber(35)
-  $1.DartColorExpression get checkmarkColor => $_getN(21);
+  $1.DartColorExpression get checkmarkColor => $_getN(23);
   @$pb.TagNumber(35)
   set checkmarkColor($1.DartColorExpression v) { setField(35, v); }
   @$pb.TagNumber(35)
-  $core.bool hasCheckmarkColor() => $_has(21);
+  $core.bool hasCheckmarkColor() => $_has(23);
   @$pb.TagNumber(35)
   void clearCheckmarkColor() => clearField(35);
   @$pb.TagNumber(35)
-  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(21);
+  $1.DartColorExpression ensureCheckmarkColor() => $_ensure(23);
 }
 
 /// package:flutter/src/material/list_tile.dart
@@ -22535,6 +23671,7 @@ class MaterialListTile extends $pb.GeneratedMessage {
     $1.DartColorExpression? selectedColor,
     $1.DartColorExpression? iconColor,
     $1.DartColorExpression? textColor,
+    $1.FlutterEdgeInsetsGeometryExpression? contentPadding,
     $core.bool? enabled,
     $core.bool? selected,
     $1.DartColorExpression? focusColor,
@@ -22582,6 +23719,9 @@ class MaterialListTile extends $pb.GeneratedMessage {
     }
     if (textColor != null) {
       $result.textColor = textColor;
+    }
+    if (contentPadding != null) {
+      $result.contentPadding = contentPadding;
     }
     if (enabled != null) {
       $result.enabled = enabled;
@@ -22640,6 +23780,7 @@ class MaterialListTile extends $pb.GeneratedMessage {
     ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(13, _omitFieldNames ? '' : 'iconColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'textColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(18, _omitFieldNames ? '' : 'contentPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOB(19, _omitFieldNames ? '' : 'enabled')
     ..aOB(24, _omitFieldNames ? '' : 'selected')
     ..aOM<$1.DartColorExpression>(25, _omitFieldNames ? '' : 'focusColor', subBuilder: $1.DartColorExpression.create)
@@ -22792,130 +23933,141 @@ class MaterialListTile extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $1.DartColorExpression ensureTextColor() => $_ensure(10);
 
+  @$pb.TagNumber(18)
+  $1.FlutterEdgeInsetsGeometryExpression get contentPadding => $_getN(11);
+  @$pb.TagNumber(18)
+  set contentPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(18, v); }
+  @$pb.TagNumber(18)
+  $core.bool hasContentPadding() => $_has(11);
+  @$pb.TagNumber(18)
+  void clearContentPadding() => clearField(18);
+  @$pb.TagNumber(18)
+  $1.FlutterEdgeInsetsGeometryExpression ensureContentPadding() => $_ensure(11);
+
   @$pb.TagNumber(19)
-  $core.bool get enabled => $_getBF(11);
+  $core.bool get enabled => $_getBF(12);
   @$pb.TagNumber(19)
-  set enabled($core.bool v) { $_setBool(11, v); }
+  set enabled($core.bool v) { $_setBool(12, v); }
   @$pb.TagNumber(19)
-  $core.bool hasEnabled() => $_has(11);
+  $core.bool hasEnabled() => $_has(12);
   @$pb.TagNumber(19)
   void clearEnabled() => clearField(19);
 
   @$pb.TagNumber(24)
-  $core.bool get selected => $_getBF(12);
+  $core.bool get selected => $_getBF(13);
   @$pb.TagNumber(24)
-  set selected($core.bool v) { $_setBool(12, v); }
+  set selected($core.bool v) { $_setBool(13, v); }
   @$pb.TagNumber(24)
-  $core.bool hasSelected() => $_has(12);
+  $core.bool hasSelected() => $_has(13);
   @$pb.TagNumber(24)
   void clearSelected() => clearField(24);
 
   @$pb.TagNumber(25)
-  $1.DartColorExpression get focusColor => $_getN(13);
+  $1.DartColorExpression get focusColor => $_getN(14);
   @$pb.TagNumber(25)
   set focusColor($1.DartColorExpression v) { setField(25, v); }
   @$pb.TagNumber(25)
-  $core.bool hasFocusColor() => $_has(13);
+  $core.bool hasFocusColor() => $_has(14);
   @$pb.TagNumber(25)
   void clearFocusColor() => clearField(25);
   @$pb.TagNumber(25)
-  $1.DartColorExpression ensureFocusColor() => $_ensure(13);
+  $1.DartColorExpression ensureFocusColor() => $_ensure(14);
 
   @$pb.TagNumber(26)
-  $1.DartColorExpression get hoverColor => $_getN(14);
+  $1.DartColorExpression get hoverColor => $_getN(15);
   @$pb.TagNumber(26)
   set hoverColor($1.DartColorExpression v) { setField(26, v); }
   @$pb.TagNumber(26)
-  $core.bool hasHoverColor() => $_has(14);
+  $core.bool hasHoverColor() => $_has(15);
   @$pb.TagNumber(26)
   void clearHoverColor() => clearField(26);
   @$pb.TagNumber(26)
-  $1.DartColorExpression ensureHoverColor() => $_ensure(14);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(15);
 
   @$pb.TagNumber(27)
-  $1.DartColorExpression get splashColor => $_getN(15);
+  $1.DartColorExpression get splashColor => $_getN(16);
   @$pb.TagNumber(27)
   set splashColor($1.DartColorExpression v) { setField(27, v); }
   @$pb.TagNumber(27)
-  $core.bool hasSplashColor() => $_has(15);
+  $core.bool hasSplashColor() => $_has(16);
   @$pb.TagNumber(27)
   void clearSplashColor() => clearField(27);
   @$pb.TagNumber(27)
-  $1.DartColorExpression ensureSplashColor() => $_ensure(15);
+  $1.DartColorExpression ensureSplashColor() => $_ensure(16);
 
   @$pb.TagNumber(29)
-  $core.bool get autofocus => $_getBF(16);
+  $core.bool get autofocus => $_getBF(17);
   @$pb.TagNumber(29)
-  set autofocus($core.bool v) { $_setBool(16, v); }
+  set autofocus($core.bool v) { $_setBool(17, v); }
   @$pb.TagNumber(29)
-  $core.bool hasAutofocus() => $_has(16);
+  $core.bool hasAutofocus() => $_has(17);
   @$pb.TagNumber(29)
   void clearAutofocus() => clearField(29);
 
   @$pb.TagNumber(30)
-  $1.DartColorExpression get tileColor => $_getN(17);
+  $1.DartColorExpression get tileColor => $_getN(18);
   @$pb.TagNumber(30)
   set tileColor($1.DartColorExpression v) { setField(30, v); }
   @$pb.TagNumber(30)
-  $core.bool hasTileColor() => $_has(17);
+  $core.bool hasTileColor() => $_has(18);
   @$pb.TagNumber(30)
   void clearTileColor() => clearField(30);
   @$pb.TagNumber(30)
-  $1.DartColorExpression ensureTileColor() => $_ensure(17);
+  $1.DartColorExpression ensureTileColor() => $_ensure(18);
 
   @$pb.TagNumber(31)
-  $1.DartColorExpression get selectedTileColor => $_getN(18);
+  $1.DartColorExpression get selectedTileColor => $_getN(19);
   @$pb.TagNumber(31)
   set selectedTileColor($1.DartColorExpression v) { setField(31, v); }
   @$pb.TagNumber(31)
-  $core.bool hasSelectedTileColor() => $_has(18);
+  $core.bool hasSelectedTileColor() => $_has(19);
   @$pb.TagNumber(31)
   void clearSelectedTileColor() => clearField(31);
   @$pb.TagNumber(31)
-  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(18);
+  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(19);
 
   @$pb.TagNumber(32)
-  $core.bool get enableFeedback => $_getBF(19);
+  $core.bool get enableFeedback => $_getBF(20);
   @$pb.TagNumber(32)
-  set enableFeedback($core.bool v) { $_setBool(19, v); }
+  set enableFeedback($core.bool v) { $_setBool(20, v); }
   @$pb.TagNumber(32)
-  $core.bool hasEnableFeedback() => $_has(19);
+  $core.bool hasEnableFeedback() => $_has(20);
   @$pb.TagNumber(32)
   void clearEnableFeedback() => clearField(32);
 
   @$pb.TagNumber(33)
-  $core.double get horizontalTitleGap => $_getN(20);
+  $core.double get horizontalTitleGap => $_getN(21);
   @$pb.TagNumber(33)
-  set horizontalTitleGap($core.double v) { $_setDouble(20, v); }
+  set horizontalTitleGap($core.double v) { $_setDouble(21, v); }
   @$pb.TagNumber(33)
-  $core.bool hasHorizontalTitleGap() => $_has(20);
+  $core.bool hasHorizontalTitleGap() => $_has(21);
   @$pb.TagNumber(33)
   void clearHorizontalTitleGap() => clearField(33);
 
   @$pb.TagNumber(34)
-  $core.double get minVerticalPadding => $_getN(21);
+  $core.double get minVerticalPadding => $_getN(22);
   @$pb.TagNumber(34)
-  set minVerticalPadding($core.double v) { $_setDouble(21, v); }
+  set minVerticalPadding($core.double v) { $_setDouble(22, v); }
   @$pb.TagNumber(34)
-  $core.bool hasMinVerticalPadding() => $_has(21);
+  $core.bool hasMinVerticalPadding() => $_has(22);
   @$pb.TagNumber(34)
   void clearMinVerticalPadding() => clearField(34);
 
   @$pb.TagNumber(35)
-  $core.double get minLeadingWidth => $_getN(22);
+  $core.double get minLeadingWidth => $_getN(23);
   @$pb.TagNumber(35)
-  set minLeadingWidth($core.double v) { $_setDouble(22, v); }
+  set minLeadingWidth($core.double v) { $_setDouble(23, v); }
   @$pb.TagNumber(35)
-  $core.bool hasMinLeadingWidth() => $_has(22);
+  $core.bool hasMinLeadingWidth() => $_has(23);
   @$pb.TagNumber(35)
   void clearMinLeadingWidth() => clearField(35);
 
   @$pb.TagNumber(36)
-  $2.MaterialListTileTitleAlignment_Enum get titleAlignment => $_getN(23);
+  $2.MaterialListTileTitleAlignment_Enum get titleAlignment => $_getN(24);
   @$pb.TagNumber(36)
   set titleAlignment($2.MaterialListTileTitleAlignment_Enum v) { setField(36, v); }
   @$pb.TagNumber(36)
-  $core.bool hasTitleAlignment() => $_has(23);
+  $core.bool hasTitleAlignment() => $_has(24);
   @$pb.TagNumber(36)
   void clearTitleAlignment() => clearField(36);
 }
@@ -22929,6 +24081,7 @@ class MaterialListTileTheme extends $pb.GeneratedMessage {
     $1.DartColorExpression? selectedColor,
     $1.DartColorExpression? iconColor,
     $1.DartColorExpression? textColor,
+    $1.FlutterEdgeInsetsGeometryExpression? contentPadding,
     $1.DartColorExpression? tileColor,
     $1.DartColorExpression? selectedTileColor,
     $core.bool? enableFeedback,
@@ -22955,6 +24108,9 @@ class MaterialListTileTheme extends $pb.GeneratedMessage {
     }
     if (textColor != null) {
       $result.textColor = textColor;
+    }
+    if (contentPadding != null) {
+      $result.contentPadding = contentPadding;
     }
     if (tileColor != null) {
       $result.tileColor = tileColor;
@@ -22990,6 +24146,7 @@ class MaterialListTileTheme extends $pb.GeneratedMessage {
     ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'selectedColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'iconColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(9, _omitFieldNames ? '' : 'textColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(10, _omitFieldNames ? '' : 'contentPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(11, _omitFieldNames ? '' : 'tileColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(12, _omitFieldNames ? '' : 'selectedTileColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(13, _omitFieldNames ? '' : 'enableFeedback')
@@ -23083,74 +24240,85 @@ class MaterialListTileTheme extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $1.DartColorExpression ensureTextColor() => $_ensure(5);
 
+  @$pb.TagNumber(10)
+  $1.FlutterEdgeInsetsGeometryExpression get contentPadding => $_getN(6);
+  @$pb.TagNumber(10)
+  set contentPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(10, v); }
+  @$pb.TagNumber(10)
+  $core.bool hasContentPadding() => $_has(6);
+  @$pb.TagNumber(10)
+  void clearContentPadding() => clearField(10);
+  @$pb.TagNumber(10)
+  $1.FlutterEdgeInsetsGeometryExpression ensureContentPadding() => $_ensure(6);
+
   @$pb.TagNumber(11)
-  $1.DartColorExpression get tileColor => $_getN(6);
+  $1.DartColorExpression get tileColor => $_getN(7);
   @$pb.TagNumber(11)
   set tileColor($1.DartColorExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasTileColor() => $_has(6);
+  $core.bool hasTileColor() => $_has(7);
   @$pb.TagNumber(11)
   void clearTileColor() => clearField(11);
   @$pb.TagNumber(11)
-  $1.DartColorExpression ensureTileColor() => $_ensure(6);
+  $1.DartColorExpression ensureTileColor() => $_ensure(7);
 
   @$pb.TagNumber(12)
-  $1.DartColorExpression get selectedTileColor => $_getN(7);
+  $1.DartColorExpression get selectedTileColor => $_getN(8);
   @$pb.TagNumber(12)
   set selectedTileColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
-  $core.bool hasSelectedTileColor() => $_has(7);
+  $core.bool hasSelectedTileColor() => $_has(8);
   @$pb.TagNumber(12)
   void clearSelectedTileColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(7);
+  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(8);
 
   @$pb.TagNumber(13)
-  $core.bool get enableFeedback => $_getBF(8);
+  $core.bool get enableFeedback => $_getBF(9);
   @$pb.TagNumber(13)
-  set enableFeedback($core.bool v) { $_setBool(8, v); }
+  set enableFeedback($core.bool v) { $_setBool(9, v); }
   @$pb.TagNumber(13)
-  $core.bool hasEnableFeedback() => $_has(8);
+  $core.bool hasEnableFeedback() => $_has(9);
   @$pb.TagNumber(13)
   void clearEnableFeedback() => clearField(13);
 
   @$pb.TagNumber(15)
-  $core.double get horizontalTitleGap => $_getN(9);
+  $core.double get horizontalTitleGap => $_getN(10);
   @$pb.TagNumber(15)
-  set horizontalTitleGap($core.double v) { $_setDouble(9, v); }
+  set horizontalTitleGap($core.double v) { $_setDouble(10, v); }
   @$pb.TagNumber(15)
-  $core.bool hasHorizontalTitleGap() => $_has(9);
+  $core.bool hasHorizontalTitleGap() => $_has(10);
   @$pb.TagNumber(15)
   void clearHorizontalTitleGap() => clearField(15);
 
   @$pb.TagNumber(16)
-  $core.double get minVerticalPadding => $_getN(10);
+  $core.double get minVerticalPadding => $_getN(11);
   @$pb.TagNumber(16)
-  set minVerticalPadding($core.double v) { $_setDouble(10, v); }
+  set minVerticalPadding($core.double v) { $_setDouble(11, v); }
   @$pb.TagNumber(16)
-  $core.bool hasMinVerticalPadding() => $_has(10);
+  $core.bool hasMinVerticalPadding() => $_has(11);
   @$pb.TagNumber(16)
   void clearMinVerticalPadding() => clearField(16);
 
   @$pb.TagNumber(17)
-  $core.double get minLeadingWidth => $_getN(11);
+  $core.double get minLeadingWidth => $_getN(12);
   @$pb.TagNumber(17)
-  set minLeadingWidth($core.double v) { $_setDouble(11, v); }
+  set minLeadingWidth($core.double v) { $_setDouble(12, v); }
   @$pb.TagNumber(17)
-  $core.bool hasMinLeadingWidth() => $_has(11);
+  $core.bool hasMinLeadingWidth() => $_has(12);
   @$pb.TagNumber(17)
   void clearMinLeadingWidth() => clearField(17);
 
   @$pb.TagNumber(18)
-  WidgetExpression get child => $_getN(12);
+  WidgetExpression get child => $_getN(13);
   @$pb.TagNumber(18)
   set child(WidgetExpression v) { setField(18, v); }
   @$pb.TagNumber(18)
-  $core.bool hasChild() => $_has(12);
+  $core.bool hasChild() => $_has(13);
   @$pb.TagNumber(18)
   void clearChild() => clearField(18);
   @$pb.TagNumber(18)
-  WidgetExpression ensureChild() => $_ensure(12);
+  WidgetExpression ensureChild() => $_ensure(13);
 }
 
 /// package:flutter/src/material/magnifier.dart
@@ -23430,6 +24598,7 @@ class MaterialMaterialButton extends $pb.GeneratedMessage {
     $core.double? hoverElevation,
     $core.double? highlightElevation,
     $core.double? disabledElevation,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $2.DartClip_Enum? clipBehavior,
     $core.bool? autofocus,
     $2.MaterialMaterialTapTargetSize_Enum? materialTapTargetSize,
@@ -23488,6 +24657,9 @@ class MaterialMaterialButton extends $pb.GeneratedMessage {
     if (disabledElevation != null) {
       $result.disabledElevation = disabledElevation;
     }
+    if (padding != null) {
+      $result.padding = padding;
+    }
     if (clipBehavior != null) {
       $result.clipBehavior = clipBehavior;
     }
@@ -23535,6 +24707,7 @@ class MaterialMaterialButton extends $pb.GeneratedMessage {
     ..a<$core.double>(19, _omitFieldNames ? '' : 'hoverElevation', $pb.PbFieldType.OD)
     ..a<$core.double>(20, _omitFieldNames ? '' : 'highlightElevation', $pb.PbFieldType.OD)
     ..a<$core.double>(21, _omitFieldNames ? '' : 'disabledElevation', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(22, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..e<$2.DartClip_Enum>(25, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..aOB(27, _omitFieldNames ? '' : 'autofocus')
     ..e<$2.MaterialMaterialTapTargetSize_Enum>(28, _omitFieldNames ? '' : 'materialTapTargetSize', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialMaterialTapTargetSize_Enum.PADDED, valueOf: $2.MaterialMaterialTapTargetSize_Enum.valueOf, enumValues: $2.MaterialMaterialTapTargetSize_Enum.values)
@@ -23729,81 +24902,92 @@ class MaterialMaterialButton extends $pb.GeneratedMessage {
   @$pb.TagNumber(21)
   void clearDisabledElevation() => clearField(21);
 
+  @$pb.TagNumber(22)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(16);
+  @$pb.TagNumber(22)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(22, v); }
+  @$pb.TagNumber(22)
+  $core.bool hasPadding() => $_has(16);
+  @$pb.TagNumber(22)
+  void clearPadding() => clearField(22);
+  @$pb.TagNumber(22)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(16);
+
   @$pb.TagNumber(25)
-  $2.DartClip_Enum get clipBehavior => $_getN(16);
+  $2.DartClip_Enum get clipBehavior => $_getN(17);
   @$pb.TagNumber(25)
   set clipBehavior($2.DartClip_Enum v) { setField(25, v); }
   @$pb.TagNumber(25)
-  $core.bool hasClipBehavior() => $_has(16);
+  $core.bool hasClipBehavior() => $_has(17);
   @$pb.TagNumber(25)
   void clearClipBehavior() => clearField(25);
 
   @$pb.TagNumber(27)
-  $core.bool get autofocus => $_getBF(17);
+  $core.bool get autofocus => $_getBF(18);
   @$pb.TagNumber(27)
-  set autofocus($core.bool v) { $_setBool(17, v); }
+  set autofocus($core.bool v) { $_setBool(18, v); }
   @$pb.TagNumber(27)
-  $core.bool hasAutofocus() => $_has(17);
+  $core.bool hasAutofocus() => $_has(18);
   @$pb.TagNumber(27)
   void clearAutofocus() => clearField(27);
 
   @$pb.TagNumber(28)
-  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(18);
+  $2.MaterialMaterialTapTargetSize_Enum get materialTapTargetSize => $_getN(19);
   @$pb.TagNumber(28)
   set materialTapTargetSize($2.MaterialMaterialTapTargetSize_Enum v) { setField(28, v); }
   @$pb.TagNumber(28)
-  $core.bool hasMaterialTapTargetSize() => $_has(18);
+  $core.bool hasMaterialTapTargetSize() => $_has(19);
   @$pb.TagNumber(28)
   void clearMaterialTapTargetSize() => clearField(28);
 
   @$pb.TagNumber(29)
-  $1.DartDurationExpression get animationDuration => $_getN(19);
+  $1.DartDurationExpression get animationDuration => $_getN(20);
   @$pb.TagNumber(29)
   set animationDuration($1.DartDurationExpression v) { setField(29, v); }
   @$pb.TagNumber(29)
-  $core.bool hasAnimationDuration() => $_has(19);
+  $core.bool hasAnimationDuration() => $_has(20);
   @$pb.TagNumber(29)
   void clearAnimationDuration() => clearField(29);
   @$pb.TagNumber(29)
-  $1.DartDurationExpression ensureAnimationDuration() => $_ensure(19);
+  $1.DartDurationExpression ensureAnimationDuration() => $_ensure(20);
 
   @$pb.TagNumber(30)
-  $core.double get minWidth => $_getN(20);
+  $core.double get minWidth => $_getN(21);
   @$pb.TagNumber(30)
-  set minWidth($core.double v) { $_setDouble(20, v); }
+  set minWidth($core.double v) { $_setDouble(21, v); }
   @$pb.TagNumber(30)
-  $core.bool hasMinWidth() => $_has(20);
+  $core.bool hasMinWidth() => $_has(21);
   @$pb.TagNumber(30)
   void clearMinWidth() => clearField(30);
 
   @$pb.TagNumber(31)
-  $core.double get height => $_getN(21);
+  $core.double get height => $_getN(22);
   @$pb.TagNumber(31)
-  set height($core.double v) { $_setDouble(21, v); }
+  set height($core.double v) { $_setDouble(22, v); }
   @$pb.TagNumber(31)
-  $core.bool hasHeight() => $_has(21);
+  $core.bool hasHeight() => $_has(22);
   @$pb.TagNumber(31)
   void clearHeight() => clearField(31);
 
   @$pb.TagNumber(32)
-  $core.bool get enableFeedback => $_getBF(22);
+  $core.bool get enableFeedback => $_getBF(23);
   @$pb.TagNumber(32)
-  set enableFeedback($core.bool v) { $_setBool(22, v); }
+  set enableFeedback($core.bool v) { $_setBool(23, v); }
   @$pb.TagNumber(32)
-  $core.bool hasEnableFeedback() => $_has(22);
+  $core.bool hasEnableFeedback() => $_has(23);
   @$pb.TagNumber(32)
   void clearEnableFeedback() => clearField(32);
 
   @$pb.TagNumber(33)
-  WidgetExpression get child => $_getN(23);
+  WidgetExpression get child => $_getN(24);
   @$pb.TagNumber(33)
   set child(WidgetExpression v) { setField(33, v); }
   @$pb.TagNumber(33)
-  $core.bool hasChild() => $_has(23);
+  $core.bool hasChild() => $_has(24);
   @$pb.TagNumber(33)
   void clearChild() => clearField(33);
   @$pb.TagNumber(33)
-  WidgetExpression ensureChild() => $_ensure(23);
+  WidgetExpression ensureChild() => $_ensure(24);
 }
 
 /// package:flutter/src/material/menu_anchor.dart
@@ -25003,6 +26187,7 @@ class MaterialNavigationDrawer extends $pb.GeneratedMessage {
     $core.double? elevation,
     $1.DartColorExpression? indicatorColor,
     $core.int? selectedIndex,
+    $1.FlutterEdgeInsetsGeometryExpression? tilePadding,
   }) {
     final $result = create();
     if (key != null) {
@@ -25029,6 +26214,9 @@ class MaterialNavigationDrawer extends $pb.GeneratedMessage {
     if (selectedIndex != null) {
       $result.selectedIndex = selectedIndex;
     }
+    if (tilePadding != null) {
+      $result.tilePadding = tilePadding;
+    }
     return $result;
   }
   MaterialNavigationDrawer._() : super();
@@ -25044,6 +26232,7 @@ class MaterialNavigationDrawer extends $pb.GeneratedMessage {
     ..a<$core.double>(7, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
     ..aOM<$1.DartColorExpression>(8, _omitFieldNames ? '' : 'indicatorColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.int>(11, _omitFieldNames ? '' : 'selectedIndex', $pb.PbFieldType.O3)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(12, _omitFieldNames ? '' : 'tilePadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..hasRequiredFields = false
   ;
 
@@ -25143,6 +26332,17 @@ class MaterialNavigationDrawer extends $pb.GeneratedMessage {
   $core.bool hasSelectedIndex() => $_has(7);
   @$pb.TagNumber(11)
   void clearSelectedIndex() => clearField(11);
+
+  @$pb.TagNumber(12)
+  $1.FlutterEdgeInsetsGeometryExpression get tilePadding => $_getN(8);
+  @$pb.TagNumber(12)
+  set tilePadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(12, v); }
+  @$pb.TagNumber(12)
+  $core.bool hasTilePadding() => $_has(8);
+  @$pb.TagNumber(12)
+  void clearTilePadding() => clearField(12);
+  @$pb.TagNumber(12)
+  $1.FlutterEdgeInsetsGeometryExpression ensureTilePadding() => $_ensure(8);
 }
 
 /// package:flutter/src/material/navigation_drawer.dart
@@ -27820,6 +29020,8 @@ class MaterialSnackBar extends $pb.GeneratedMessage {
     WidgetExpression? content,
     $1.DartColorExpression? backgroundColor,
     $core.double? elevation,
+    $1.FlutterEdgeInsetsGeometryExpression? margin,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $core.double? width,
     $2.MaterialSnackBarBehavior_Enum? behavior,
     $core.double? actionOverflowThreshold,
@@ -27841,6 +29043,12 @@ class MaterialSnackBar extends $pb.GeneratedMessage {
     }
     if (elevation != null) {
       $result.elevation = elevation;
+    }
+    if (margin != null) {
+      $result.margin = margin;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (width != null) {
       $result.width = width;
@@ -27877,6 +29085,8 @@ class MaterialSnackBar extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(3, _omitFieldNames ? '' : 'content', subBuilder: WidgetExpression.create)
     ..aOM<$1.DartColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(5, _omitFieldNames ? '' : 'elevation', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'margin', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(7, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OD)
     ..e<$2.MaterialSnackBarBehavior_Enum>(10, _omitFieldNames ? '' : 'behavior', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialSnackBarBehavior_Enum.FIXED, valueOf: $2.MaterialSnackBarBehavior_Enum.valueOf, enumValues: $2.MaterialSnackBarBehavior_Enum.values)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'actionOverflowThreshold', $pb.PbFieldType.OD)
@@ -27951,79 +29161,101 @@ class MaterialSnackBar extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearElevation() => clearField(5);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get margin => $_getN(4);
+  @$pb.TagNumber(6)
+  set margin($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasMargin() => $_has(4);
+  @$pb.TagNumber(6)
+  void clearMargin() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensureMargin() => $_ensure(4);
+
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(5);
+  @$pb.TagNumber(7)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(7, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasPadding() => $_has(5);
+  @$pb.TagNumber(7)
+  void clearPadding() => clearField(7);
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(5);
+
   @$pb.TagNumber(8)
-  $core.double get width => $_getN(4);
+  $core.double get width => $_getN(6);
   @$pb.TagNumber(8)
-  set width($core.double v) { $_setDouble(4, v); }
+  set width($core.double v) { $_setDouble(6, v); }
   @$pb.TagNumber(8)
-  $core.bool hasWidth() => $_has(4);
+  $core.bool hasWidth() => $_has(6);
   @$pb.TagNumber(8)
   void clearWidth() => clearField(8);
 
   @$pb.TagNumber(10)
-  $2.MaterialSnackBarBehavior_Enum get behavior => $_getN(5);
+  $2.MaterialSnackBarBehavior_Enum get behavior => $_getN(7);
   @$pb.TagNumber(10)
   set behavior($2.MaterialSnackBarBehavior_Enum v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasBehavior() => $_has(5);
+  $core.bool hasBehavior() => $_has(7);
   @$pb.TagNumber(10)
   void clearBehavior() => clearField(10);
 
   @$pb.TagNumber(12)
-  $core.double get actionOverflowThreshold => $_getN(6);
+  $core.double get actionOverflowThreshold => $_getN(8);
   @$pb.TagNumber(12)
-  set actionOverflowThreshold($core.double v) { $_setDouble(6, v); }
+  set actionOverflowThreshold($core.double v) { $_setDouble(8, v); }
   @$pb.TagNumber(12)
-  $core.bool hasActionOverflowThreshold() => $_has(6);
+  $core.bool hasActionOverflowThreshold() => $_has(8);
   @$pb.TagNumber(12)
   void clearActionOverflowThreshold() => clearField(12);
 
   @$pb.TagNumber(13)
-  $core.bool get showCloseIcon => $_getBF(7);
+  $core.bool get showCloseIcon => $_getBF(9);
   @$pb.TagNumber(13)
-  set showCloseIcon($core.bool v) { $_setBool(7, v); }
+  set showCloseIcon($core.bool v) { $_setBool(9, v); }
   @$pb.TagNumber(13)
-  $core.bool hasShowCloseIcon() => $_has(7);
+  $core.bool hasShowCloseIcon() => $_has(9);
   @$pb.TagNumber(13)
   void clearShowCloseIcon() => clearField(13);
 
   @$pb.TagNumber(14)
-  $1.DartColorExpression get closeIconColor => $_getN(8);
+  $1.DartColorExpression get closeIconColor => $_getN(10);
   @$pb.TagNumber(14)
   set closeIconColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
-  $core.bool hasCloseIconColor() => $_has(8);
+  $core.bool hasCloseIconColor() => $_has(10);
   @$pb.TagNumber(14)
   void clearCloseIconColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.DartColorExpression ensureCloseIconColor() => $_ensure(8);
+  $1.DartColorExpression ensureCloseIconColor() => $_ensure(10);
 
   @$pb.TagNumber(15)
-  $1.DartDurationExpression get duration => $_getN(9);
+  $1.DartDurationExpression get duration => $_getN(11);
   @$pb.TagNumber(15)
   set duration($1.DartDurationExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
-  $core.bool hasDuration() => $_has(9);
+  $core.bool hasDuration() => $_has(11);
   @$pb.TagNumber(15)
   void clearDuration() => clearField(15);
   @$pb.TagNumber(15)
-  $1.DartDurationExpression ensureDuration() => $_ensure(9);
+  $1.DartDurationExpression ensureDuration() => $_ensure(11);
 
   @$pb.TagNumber(18)
-  $2.FlutterDismissDirection_Enum get dismissDirection => $_getN(10);
+  $2.FlutterDismissDirection_Enum get dismissDirection => $_getN(12);
   @$pb.TagNumber(18)
   set dismissDirection($2.FlutterDismissDirection_Enum v) { setField(18, v); }
   @$pb.TagNumber(18)
-  $core.bool hasDismissDirection() => $_has(10);
+  $core.bool hasDismissDirection() => $_has(12);
   @$pb.TagNumber(18)
   void clearDismissDirection() => clearField(18);
 
   @$pb.TagNumber(19)
-  $2.DartClip_Enum get clipBehavior => $_getN(11);
+  $2.DartClip_Enum get clipBehavior => $_getN(13);
   @$pb.TagNumber(19)
   set clipBehavior($2.DartClip_Enum v) { setField(19, v); }
   @$pb.TagNumber(19)
-  $core.bool hasClipBehavior() => $_has(11);
+  $core.bool hasClipBehavior() => $_has(13);
   @$pb.TagNumber(19)
   void clearClipBehavior() => clearField(19);
 }
@@ -28498,6 +29730,7 @@ class MaterialSwitchListTile extends $pb.GeneratedMessage {
     WidgetExpression? subtitle,
     $core.bool? isThreeLine,
     $core.bool? dense,
+    $1.FlutterEdgeInsetsGeometryExpression? contentPadding,
     WidgetExpression? secondary,
     $core.bool? selected,
     $2.MaterialListTileControlAffinity_Enum? controlAffinity,
@@ -28551,6 +29784,9 @@ class MaterialSwitchListTile extends $pb.GeneratedMessage {
     if (dense != null) {
       $result.dense = dense;
     }
+    if (contentPadding != null) {
+      $result.contentPadding = contentPadding;
+    }
     if (secondary != null) {
       $result.secondary = secondary;
     }
@@ -28591,6 +29827,7 @@ class MaterialSwitchListTile extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(27, _omitFieldNames ? '' : 'subtitle', subBuilder: WidgetExpression.create)
     ..aOB(28, _omitFieldNames ? '' : 'isThreeLine')
     ..aOB(29, _omitFieldNames ? '' : 'dense')
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(30, _omitFieldNames ? '' : 'contentPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<WidgetExpression>(31, _omitFieldNames ? '' : 'secondary', subBuilder: WidgetExpression.create)
     ..aOB(32, _omitFieldNames ? '' : 'selected')
     ..e<$2.MaterialListTileControlAffinity_Enum>(33, _omitFieldNames ? '' : 'controlAffinity', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialListTileControlAffinity_Enum.LEADING, valueOf: $2.MaterialListTileControlAffinity_Enum.valueOf, enumValues: $2.MaterialListTileControlAffinity_Enum.values)
@@ -28772,65 +30009,76 @@ class MaterialSwitchListTile extends $pb.GeneratedMessage {
   @$pb.TagNumber(29)
   void clearDense() => clearField(29);
 
+  @$pb.TagNumber(30)
+  $1.FlutterEdgeInsetsGeometryExpression get contentPadding => $_getN(15);
+  @$pb.TagNumber(30)
+  set contentPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(30, v); }
+  @$pb.TagNumber(30)
+  $core.bool hasContentPadding() => $_has(15);
+  @$pb.TagNumber(30)
+  void clearContentPadding() => clearField(30);
+  @$pb.TagNumber(30)
+  $1.FlutterEdgeInsetsGeometryExpression ensureContentPadding() => $_ensure(15);
+
   @$pb.TagNumber(31)
-  WidgetExpression get secondary => $_getN(15);
+  WidgetExpression get secondary => $_getN(16);
   @$pb.TagNumber(31)
   set secondary(WidgetExpression v) { setField(31, v); }
   @$pb.TagNumber(31)
-  $core.bool hasSecondary() => $_has(15);
+  $core.bool hasSecondary() => $_has(16);
   @$pb.TagNumber(31)
   void clearSecondary() => clearField(31);
   @$pb.TagNumber(31)
-  WidgetExpression ensureSecondary() => $_ensure(15);
+  WidgetExpression ensureSecondary() => $_ensure(16);
 
   @$pb.TagNumber(32)
-  $core.bool get selected => $_getBF(16);
+  $core.bool get selected => $_getBF(17);
   @$pb.TagNumber(32)
-  set selected($core.bool v) { $_setBool(16, v); }
+  set selected($core.bool v) { $_setBool(17, v); }
   @$pb.TagNumber(32)
-  $core.bool hasSelected() => $_has(16);
+  $core.bool hasSelected() => $_has(17);
   @$pb.TagNumber(32)
   void clearSelected() => clearField(32);
 
   @$pb.TagNumber(33)
-  $2.MaterialListTileControlAffinity_Enum get controlAffinity => $_getN(17);
+  $2.MaterialListTileControlAffinity_Enum get controlAffinity => $_getN(18);
   @$pb.TagNumber(33)
   set controlAffinity($2.MaterialListTileControlAffinity_Enum v) { setField(33, v); }
   @$pb.TagNumber(33)
-  $core.bool hasControlAffinity() => $_has(17);
+  $core.bool hasControlAffinity() => $_has(18);
   @$pb.TagNumber(33)
   void clearControlAffinity() => clearField(33);
 
   @$pb.TagNumber(35)
-  $1.DartColorExpression get selectedTileColor => $_getN(18);
+  $1.DartColorExpression get selectedTileColor => $_getN(19);
   @$pb.TagNumber(35)
   set selectedTileColor($1.DartColorExpression v) { setField(35, v); }
   @$pb.TagNumber(35)
-  $core.bool hasSelectedTileColor() => $_has(18);
+  $core.bool hasSelectedTileColor() => $_has(19);
   @$pb.TagNumber(35)
   void clearSelectedTileColor() => clearField(35);
   @$pb.TagNumber(35)
-  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(18);
+  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(19);
 
   @$pb.TagNumber(37)
-  $core.bool get enableFeedback => $_getBF(19);
+  $core.bool get enableFeedback => $_getBF(20);
   @$pb.TagNumber(37)
-  set enableFeedback($core.bool v) { $_setBool(19, v); }
+  set enableFeedback($core.bool v) { $_setBool(20, v); }
   @$pb.TagNumber(37)
-  $core.bool hasEnableFeedback() => $_has(19);
+  $core.bool hasEnableFeedback() => $_has(20);
   @$pb.TagNumber(37)
   void clearEnableFeedback() => clearField(37);
 
   @$pb.TagNumber(38)
-  $1.DartColorExpression get hoverColor => $_getN(20);
+  $1.DartColorExpression get hoverColor => $_getN(21);
   @$pb.TagNumber(38)
   set hoverColor($1.DartColorExpression v) { setField(38, v); }
   @$pb.TagNumber(38)
-  $core.bool hasHoverColor() => $_has(20);
+  $core.bool hasHoverColor() => $_has(21);
   @$pb.TagNumber(38)
   void clearHoverColor() => clearField(38);
   @$pb.TagNumber(38)
-  $1.DartColorExpression ensureHoverColor() => $_ensure(20);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(21);
 }
 
 /// package:flutter/src/material/switch_list_tile.dart
@@ -28852,6 +30100,7 @@ class MaterialSwitchListTileNamedAdaptive extends $pb.GeneratedMessage {
     WidgetExpression? subtitle,
     $core.bool? isThreeLine,
     $core.bool? dense,
+    $1.FlutterEdgeInsetsGeometryExpression? contentPadding,
     WidgetExpression? secondary,
     $core.bool? selected,
     $2.MaterialListTileControlAffinity_Enum? controlAffinity,
@@ -28908,6 +30157,9 @@ class MaterialSwitchListTileNamedAdaptive extends $pb.GeneratedMessage {
     if (dense != null) {
       $result.dense = dense;
     }
+    if (contentPadding != null) {
+      $result.contentPadding = contentPadding;
+    }
     if (secondary != null) {
       $result.secondary = secondary;
     }
@@ -28949,6 +30201,7 @@ class MaterialSwitchListTileNamedAdaptive extends $pb.GeneratedMessage {
     ..aOM<WidgetExpression>(28, _omitFieldNames ? '' : 'subtitle', subBuilder: WidgetExpression.create)
     ..aOB(29, _omitFieldNames ? '' : 'isThreeLine')
     ..aOB(30, _omitFieldNames ? '' : 'dense')
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(31, _omitFieldNames ? '' : 'contentPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<WidgetExpression>(32, _omitFieldNames ? '' : 'secondary', subBuilder: WidgetExpression.create)
     ..aOB(33, _omitFieldNames ? '' : 'selected')
     ..e<$2.MaterialListTileControlAffinity_Enum>(34, _omitFieldNames ? '' : 'controlAffinity', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialListTileControlAffinity_Enum.LEADING, valueOf: $2.MaterialListTileControlAffinity_Enum.valueOf, enumValues: $2.MaterialListTileControlAffinity_Enum.values)
@@ -29139,65 +30392,76 @@ class MaterialSwitchListTileNamedAdaptive extends $pb.GeneratedMessage {
   @$pb.TagNumber(30)
   void clearDense() => clearField(30);
 
+  @$pb.TagNumber(31)
+  $1.FlutterEdgeInsetsGeometryExpression get contentPadding => $_getN(16);
+  @$pb.TagNumber(31)
+  set contentPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(31, v); }
+  @$pb.TagNumber(31)
+  $core.bool hasContentPadding() => $_has(16);
+  @$pb.TagNumber(31)
+  void clearContentPadding() => clearField(31);
+  @$pb.TagNumber(31)
+  $1.FlutterEdgeInsetsGeometryExpression ensureContentPadding() => $_ensure(16);
+
   @$pb.TagNumber(32)
-  WidgetExpression get secondary => $_getN(16);
+  WidgetExpression get secondary => $_getN(17);
   @$pb.TagNumber(32)
   set secondary(WidgetExpression v) { setField(32, v); }
   @$pb.TagNumber(32)
-  $core.bool hasSecondary() => $_has(16);
+  $core.bool hasSecondary() => $_has(17);
   @$pb.TagNumber(32)
   void clearSecondary() => clearField(32);
   @$pb.TagNumber(32)
-  WidgetExpression ensureSecondary() => $_ensure(16);
+  WidgetExpression ensureSecondary() => $_ensure(17);
 
   @$pb.TagNumber(33)
-  $core.bool get selected => $_getBF(17);
+  $core.bool get selected => $_getBF(18);
   @$pb.TagNumber(33)
-  set selected($core.bool v) { $_setBool(17, v); }
+  set selected($core.bool v) { $_setBool(18, v); }
   @$pb.TagNumber(33)
-  $core.bool hasSelected() => $_has(17);
+  $core.bool hasSelected() => $_has(18);
   @$pb.TagNumber(33)
   void clearSelected() => clearField(33);
 
   @$pb.TagNumber(34)
-  $2.MaterialListTileControlAffinity_Enum get controlAffinity => $_getN(18);
+  $2.MaterialListTileControlAffinity_Enum get controlAffinity => $_getN(19);
   @$pb.TagNumber(34)
   set controlAffinity($2.MaterialListTileControlAffinity_Enum v) { setField(34, v); }
   @$pb.TagNumber(34)
-  $core.bool hasControlAffinity() => $_has(18);
+  $core.bool hasControlAffinity() => $_has(19);
   @$pb.TagNumber(34)
   void clearControlAffinity() => clearField(34);
 
   @$pb.TagNumber(36)
-  $1.DartColorExpression get selectedTileColor => $_getN(19);
+  $1.DartColorExpression get selectedTileColor => $_getN(20);
   @$pb.TagNumber(36)
   set selectedTileColor($1.DartColorExpression v) { setField(36, v); }
   @$pb.TagNumber(36)
-  $core.bool hasSelectedTileColor() => $_has(19);
+  $core.bool hasSelectedTileColor() => $_has(20);
   @$pb.TagNumber(36)
   void clearSelectedTileColor() => clearField(36);
   @$pb.TagNumber(36)
-  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(19);
+  $1.DartColorExpression ensureSelectedTileColor() => $_ensure(20);
 
   @$pb.TagNumber(38)
-  $core.bool get enableFeedback => $_getBF(20);
+  $core.bool get enableFeedback => $_getBF(21);
   @$pb.TagNumber(38)
-  set enableFeedback($core.bool v) { $_setBool(20, v); }
+  set enableFeedback($core.bool v) { $_setBool(21, v); }
   @$pb.TagNumber(38)
-  $core.bool hasEnableFeedback() => $_has(20);
+  $core.bool hasEnableFeedback() => $_has(21);
   @$pb.TagNumber(38)
   void clearEnableFeedback() => clearField(38);
 
   @$pb.TagNumber(39)
-  $1.DartColorExpression get hoverColor => $_getN(21);
+  $1.DartColorExpression get hoverColor => $_getN(22);
   @$pb.TagNumber(39)
   set hoverColor($1.DartColorExpression v) { setField(39, v); }
   @$pb.TagNumber(39)
-  $core.bool hasHoverColor() => $_has(21);
+  $core.bool hasHoverColor() => $_has(22);
   @$pb.TagNumber(39)
   void clearHoverColor() => clearField(39);
   @$pb.TagNumber(39)
-  $1.DartColorExpression ensureHoverColor() => $_ensure(21);
+  $1.DartColorExpression ensureHoverColor() => $_ensure(22);
 }
 
 /// package:flutter/src/material/tab_controller.dart
@@ -29319,6 +30583,7 @@ class MaterialTab extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.String? text,
     WidgetExpression? icon,
+    $1.FlutterEdgeInsetsGeometryExpression? iconMargin,
     $core.double? height,
     WidgetExpression? child,
   }) {
@@ -29331,6 +30596,9 @@ class MaterialTab extends $pb.GeneratedMessage {
     }
     if (icon != null) {
       $result.icon = icon;
+    }
+    if (iconMargin != null) {
+      $result.iconMargin = iconMargin;
     }
     if (height != null) {
       $result.height = height;
@@ -29348,6 +30616,7 @@ class MaterialTab extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOS(3, _omitFieldNames ? '' : 'text')
     ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'icon', subBuilder: WidgetExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(5, _omitFieldNames ? '' : 'iconMargin', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..a<$core.double>(6, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
     ..aOM<WidgetExpression>(7, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..hasRequiredFields = false
@@ -29405,25 +30674,36 @@ class MaterialTab extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   WidgetExpression ensureIcon() => $_ensure(2);
 
+  @$pb.TagNumber(5)
+  $1.FlutterEdgeInsetsGeometryExpression get iconMargin => $_getN(3);
+  @$pb.TagNumber(5)
+  set iconMargin($1.FlutterEdgeInsetsGeometryExpression v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasIconMargin() => $_has(3);
+  @$pb.TagNumber(5)
+  void clearIconMargin() => clearField(5);
+  @$pb.TagNumber(5)
+  $1.FlutterEdgeInsetsGeometryExpression ensureIconMargin() => $_ensure(3);
+
   @$pb.TagNumber(6)
-  $core.double get height => $_getN(3);
+  $core.double get height => $_getN(4);
   @$pb.TagNumber(6)
-  set height($core.double v) { $_setDouble(3, v); }
+  set height($core.double v) { $_setDouble(4, v); }
   @$pb.TagNumber(6)
-  $core.bool hasHeight() => $_has(3);
+  $core.bool hasHeight() => $_has(4);
   @$pb.TagNumber(6)
   void clearHeight() => clearField(6);
 
   @$pb.TagNumber(7)
-  WidgetExpression get child => $_getN(4);
+  WidgetExpression get child => $_getN(5);
   @$pb.TagNumber(7)
   set child(WidgetExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
-  $core.bool hasChild() => $_has(4);
+  $core.bool hasChild() => $_has(5);
   @$pb.TagNumber(7)
   void clearChild() => clearField(7);
   @$pb.TagNumber(7)
-  WidgetExpression ensureChild() => $_ensure(4);
+  WidgetExpression ensureChild() => $_ensure(5);
 }
 
 /// package:flutter/src/material/tabs.dart
@@ -29432,12 +30712,15 @@ class MaterialTabBar extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.Iterable<WidgetExpression>? tabs,
     $core.bool? isScrollable,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $1.DartColorExpression? indicatorColor,
     $core.bool? automaticIndicatorColorAdjustment,
     $core.double? indicatorWeight,
+    $1.FlutterEdgeInsetsGeometryExpression? indicatorPadding,
     $2.MaterialTabBarIndicatorSize_Enum? indicatorSize,
     $1.DartColorExpression? dividerColor,
     $1.DartColorExpression? labelColor,
+    $1.FlutterEdgeInsetsGeometryExpression? labelPadding,
     $1.DartColorExpression? unselectedLabelColor,
     $2.FlutterDragStartBehavior_Enum? dragStartBehavior,
     $core.bool? enableFeedback,
@@ -29453,6 +30736,9 @@ class MaterialTabBar extends $pb.GeneratedMessage {
     if (isScrollable != null) {
       $result.isScrollable = isScrollable;
     }
+    if (padding != null) {
+      $result.padding = padding;
+    }
     if (indicatorColor != null) {
       $result.indicatorColor = indicatorColor;
     }
@@ -29462,6 +30748,9 @@ class MaterialTabBar extends $pb.GeneratedMessage {
     if (indicatorWeight != null) {
       $result.indicatorWeight = indicatorWeight;
     }
+    if (indicatorPadding != null) {
+      $result.indicatorPadding = indicatorPadding;
+    }
     if (indicatorSize != null) {
       $result.indicatorSize = indicatorSize;
     }
@@ -29470,6 +30759,9 @@ class MaterialTabBar extends $pb.GeneratedMessage {
     }
     if (labelColor != null) {
       $result.labelColor = labelColor;
+    }
+    if (labelPadding != null) {
+      $result.labelPadding = labelPadding;
     }
     if (unselectedLabelColor != null) {
       $result.unselectedLabelColor = unselectedLabelColor;
@@ -29493,12 +30785,15 @@ class MaterialTabBar extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..pc<WidgetExpression>(3, _omitFieldNames ? '' : 'tabs', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..aOB(5, _omitFieldNames ? '' : 'isScrollable')
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'indicatorColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(8, _omitFieldNames ? '' : 'automaticIndicatorColorAdjustment')
     ..a<$core.double>(9, _omitFieldNames ? '' : 'indicatorWeight', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(10, _omitFieldNames ? '' : 'indicatorPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..e<$2.MaterialTabBarIndicatorSize_Enum>(12, _omitFieldNames ? '' : 'indicatorSize', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialTabBarIndicatorSize_Enum.TAB, valueOf: $2.MaterialTabBarIndicatorSize_Enum.valueOf, enumValues: $2.MaterialTabBarIndicatorSize_Enum.values)
     ..aOM<$1.DartColorExpression>(13, _omitFieldNames ? '' : 'dividerColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'labelColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(16, _omitFieldNames ? '' : 'labelPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(17, _omitFieldNames ? '' : 'unselectedLabelColor', subBuilder: $1.DartColorExpression.create)
     ..e<$2.FlutterDragStartBehavior_Enum>(19, _omitFieldNames ? '' : 'dragStartBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.FlutterDragStartBehavior_Enum.DOWN, valueOf: $2.FlutterDragStartBehavior_Enum.valueOf, enumValues: $2.FlutterDragStartBehavior_Enum.values)
     ..aOB(22, _omitFieldNames ? '' : 'enableFeedback')
@@ -29550,101 +30845,134 @@ class MaterialTabBar extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearIsScrollable() => clearField(5);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(3);
+  @$pb.TagNumber(6)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasPadding() => $_has(3);
+  @$pb.TagNumber(6)
+  void clearPadding() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(3);
+
   @$pb.TagNumber(7)
-  $1.DartColorExpression get indicatorColor => $_getN(3);
+  $1.DartColorExpression get indicatorColor => $_getN(4);
   @$pb.TagNumber(7)
   set indicatorColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
-  $core.bool hasIndicatorColor() => $_has(3);
+  $core.bool hasIndicatorColor() => $_has(4);
   @$pb.TagNumber(7)
   void clearIndicatorColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.DartColorExpression ensureIndicatorColor() => $_ensure(3);
+  $1.DartColorExpression ensureIndicatorColor() => $_ensure(4);
 
   @$pb.TagNumber(8)
-  $core.bool get automaticIndicatorColorAdjustment => $_getBF(4);
+  $core.bool get automaticIndicatorColorAdjustment => $_getBF(5);
   @$pb.TagNumber(8)
-  set automaticIndicatorColorAdjustment($core.bool v) { $_setBool(4, v); }
+  set automaticIndicatorColorAdjustment($core.bool v) { $_setBool(5, v); }
   @$pb.TagNumber(8)
-  $core.bool hasAutomaticIndicatorColorAdjustment() => $_has(4);
+  $core.bool hasAutomaticIndicatorColorAdjustment() => $_has(5);
   @$pb.TagNumber(8)
   void clearAutomaticIndicatorColorAdjustment() => clearField(8);
 
   @$pb.TagNumber(9)
-  $core.double get indicatorWeight => $_getN(5);
+  $core.double get indicatorWeight => $_getN(6);
   @$pb.TagNumber(9)
-  set indicatorWeight($core.double v) { $_setDouble(5, v); }
+  set indicatorWeight($core.double v) { $_setDouble(6, v); }
   @$pb.TagNumber(9)
-  $core.bool hasIndicatorWeight() => $_has(5);
+  $core.bool hasIndicatorWeight() => $_has(6);
   @$pb.TagNumber(9)
   void clearIndicatorWeight() => clearField(9);
 
+  @$pb.TagNumber(10)
+  $1.FlutterEdgeInsetsGeometryExpression get indicatorPadding => $_getN(7);
+  @$pb.TagNumber(10)
+  set indicatorPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(10, v); }
+  @$pb.TagNumber(10)
+  $core.bool hasIndicatorPadding() => $_has(7);
+  @$pb.TagNumber(10)
+  void clearIndicatorPadding() => clearField(10);
+  @$pb.TagNumber(10)
+  $1.FlutterEdgeInsetsGeometryExpression ensureIndicatorPadding() => $_ensure(7);
+
   @$pb.TagNumber(12)
-  $2.MaterialTabBarIndicatorSize_Enum get indicatorSize => $_getN(6);
+  $2.MaterialTabBarIndicatorSize_Enum get indicatorSize => $_getN(8);
   @$pb.TagNumber(12)
   set indicatorSize($2.MaterialTabBarIndicatorSize_Enum v) { setField(12, v); }
   @$pb.TagNumber(12)
-  $core.bool hasIndicatorSize() => $_has(6);
+  $core.bool hasIndicatorSize() => $_has(8);
   @$pb.TagNumber(12)
   void clearIndicatorSize() => clearField(12);
 
   @$pb.TagNumber(13)
-  $1.DartColorExpression get dividerColor => $_getN(7);
+  $1.DartColorExpression get dividerColor => $_getN(9);
   @$pb.TagNumber(13)
   set dividerColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
-  $core.bool hasDividerColor() => $_has(7);
+  $core.bool hasDividerColor() => $_has(9);
   @$pb.TagNumber(13)
   void clearDividerColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.DartColorExpression ensureDividerColor() => $_ensure(7);
+  $1.DartColorExpression ensureDividerColor() => $_ensure(9);
 
   @$pb.TagNumber(14)
-  $1.DartColorExpression get labelColor => $_getN(8);
+  $1.DartColorExpression get labelColor => $_getN(10);
   @$pb.TagNumber(14)
   set labelColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
-  $core.bool hasLabelColor() => $_has(8);
+  $core.bool hasLabelColor() => $_has(10);
   @$pb.TagNumber(14)
   void clearLabelColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.DartColorExpression ensureLabelColor() => $_ensure(8);
+  $1.DartColorExpression ensureLabelColor() => $_ensure(10);
+
+  @$pb.TagNumber(16)
+  $1.FlutterEdgeInsetsGeometryExpression get labelPadding => $_getN(11);
+  @$pb.TagNumber(16)
+  set labelPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(16, v); }
+  @$pb.TagNumber(16)
+  $core.bool hasLabelPadding() => $_has(11);
+  @$pb.TagNumber(16)
+  void clearLabelPadding() => clearField(16);
+  @$pb.TagNumber(16)
+  $1.FlutterEdgeInsetsGeometryExpression ensureLabelPadding() => $_ensure(11);
 
   @$pb.TagNumber(17)
-  $1.DartColorExpression get unselectedLabelColor => $_getN(9);
+  $1.DartColorExpression get unselectedLabelColor => $_getN(12);
   @$pb.TagNumber(17)
   set unselectedLabelColor($1.DartColorExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
-  $core.bool hasUnselectedLabelColor() => $_has(9);
+  $core.bool hasUnselectedLabelColor() => $_has(12);
   @$pb.TagNumber(17)
   void clearUnselectedLabelColor() => clearField(17);
   @$pb.TagNumber(17)
-  $1.DartColorExpression ensureUnselectedLabelColor() => $_ensure(9);
+  $1.DartColorExpression ensureUnselectedLabelColor() => $_ensure(12);
 
   @$pb.TagNumber(19)
-  $2.FlutterDragStartBehavior_Enum get dragStartBehavior => $_getN(10);
+  $2.FlutterDragStartBehavior_Enum get dragStartBehavior => $_getN(13);
   @$pb.TagNumber(19)
   set dragStartBehavior($2.FlutterDragStartBehavior_Enum v) { setField(19, v); }
   @$pb.TagNumber(19)
-  $core.bool hasDragStartBehavior() => $_has(10);
+  $core.bool hasDragStartBehavior() => $_has(13);
   @$pb.TagNumber(19)
   void clearDragStartBehavior() => clearField(19);
 
   @$pb.TagNumber(22)
-  $core.bool get enableFeedback => $_getBF(11);
+  $core.bool get enableFeedback => $_getBF(14);
   @$pb.TagNumber(22)
-  set enableFeedback($core.bool v) { $_setBool(11, v); }
+  set enableFeedback($core.bool v) { $_setBool(14, v); }
   @$pb.TagNumber(22)
-  $core.bool hasEnableFeedback() => $_has(11);
+  $core.bool hasEnableFeedback() => $_has(14);
   @$pb.TagNumber(22)
   void clearEnableFeedback() => clearField(22);
 
   @$pb.TagNumber(27)
-  $2.MaterialTabAlignment_Enum get tabAlignment => $_getN(12);
+  $2.MaterialTabAlignment_Enum get tabAlignment => $_getN(15);
   @$pb.TagNumber(27)
   set tabAlignment($2.MaterialTabAlignment_Enum v) { setField(27, v); }
   @$pb.TagNumber(27)
-  $core.bool hasTabAlignment() => $_has(12);
+  $core.bool hasTabAlignment() => $_has(15);
   @$pb.TagNumber(27)
   void clearTabAlignment() => clearField(27);
 }
@@ -29655,12 +30983,15 @@ class MaterialTabBarNamedSecondary extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.Iterable<WidgetExpression>? tabs,
     $core.bool? isScrollable,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $1.DartColorExpression? indicatorColor,
     $core.bool? automaticIndicatorColorAdjustment,
     $core.double? indicatorWeight,
+    $1.FlutterEdgeInsetsGeometryExpression? indicatorPadding,
     $2.MaterialTabBarIndicatorSize_Enum? indicatorSize,
     $1.DartColorExpression? dividerColor,
     $1.DartColorExpression? labelColor,
+    $1.FlutterEdgeInsetsGeometryExpression? labelPadding,
     $1.DartColorExpression? unselectedLabelColor,
     $2.FlutterDragStartBehavior_Enum? dragStartBehavior,
     $core.bool? enableFeedback,
@@ -29676,6 +31007,9 @@ class MaterialTabBarNamedSecondary extends $pb.GeneratedMessage {
     if (isScrollable != null) {
       $result.isScrollable = isScrollable;
     }
+    if (padding != null) {
+      $result.padding = padding;
+    }
     if (indicatorColor != null) {
       $result.indicatorColor = indicatorColor;
     }
@@ -29685,6 +31019,9 @@ class MaterialTabBarNamedSecondary extends $pb.GeneratedMessage {
     if (indicatorWeight != null) {
       $result.indicatorWeight = indicatorWeight;
     }
+    if (indicatorPadding != null) {
+      $result.indicatorPadding = indicatorPadding;
+    }
     if (indicatorSize != null) {
       $result.indicatorSize = indicatorSize;
     }
@@ -29693,6 +31030,9 @@ class MaterialTabBarNamedSecondary extends $pb.GeneratedMessage {
     }
     if (labelColor != null) {
       $result.labelColor = labelColor;
+    }
+    if (labelPadding != null) {
+      $result.labelPadding = labelPadding;
     }
     if (unselectedLabelColor != null) {
       $result.unselectedLabelColor = unselectedLabelColor;
@@ -29716,12 +31056,15 @@ class MaterialTabBarNamedSecondary extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..pc<WidgetExpression>(3, _omitFieldNames ? '' : 'tabs', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..aOB(5, _omitFieldNames ? '' : 'isScrollable')
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(7, _omitFieldNames ? '' : 'indicatorColor', subBuilder: $1.DartColorExpression.create)
     ..aOB(8, _omitFieldNames ? '' : 'automaticIndicatorColorAdjustment')
     ..a<$core.double>(9, _omitFieldNames ? '' : 'indicatorWeight', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(10, _omitFieldNames ? '' : 'indicatorPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..e<$2.MaterialTabBarIndicatorSize_Enum>(12, _omitFieldNames ? '' : 'indicatorSize', $pb.PbFieldType.OE, defaultOrMaker: $2.MaterialTabBarIndicatorSize_Enum.TAB, valueOf: $2.MaterialTabBarIndicatorSize_Enum.valueOf, enumValues: $2.MaterialTabBarIndicatorSize_Enum.values)
     ..aOM<$1.DartColorExpression>(13, _omitFieldNames ? '' : 'dividerColor', subBuilder: $1.DartColorExpression.create)
     ..aOM<$1.DartColorExpression>(14, _omitFieldNames ? '' : 'labelColor', subBuilder: $1.DartColorExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(16, _omitFieldNames ? '' : 'labelPadding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(17, _omitFieldNames ? '' : 'unselectedLabelColor', subBuilder: $1.DartColorExpression.create)
     ..e<$2.FlutterDragStartBehavior_Enum>(19, _omitFieldNames ? '' : 'dragStartBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.FlutterDragStartBehavior_Enum.DOWN, valueOf: $2.FlutterDragStartBehavior_Enum.valueOf, enumValues: $2.FlutterDragStartBehavior_Enum.values)
     ..aOB(22, _omitFieldNames ? '' : 'enableFeedback')
@@ -29773,101 +31116,134 @@ class MaterialTabBarNamedSecondary extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearIsScrollable() => clearField(5);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(3);
+  @$pb.TagNumber(6)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasPadding() => $_has(3);
+  @$pb.TagNumber(6)
+  void clearPadding() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(3);
+
   @$pb.TagNumber(7)
-  $1.DartColorExpression get indicatorColor => $_getN(3);
+  $1.DartColorExpression get indicatorColor => $_getN(4);
   @$pb.TagNumber(7)
   set indicatorColor($1.DartColorExpression v) { setField(7, v); }
   @$pb.TagNumber(7)
-  $core.bool hasIndicatorColor() => $_has(3);
+  $core.bool hasIndicatorColor() => $_has(4);
   @$pb.TagNumber(7)
   void clearIndicatorColor() => clearField(7);
   @$pb.TagNumber(7)
-  $1.DartColorExpression ensureIndicatorColor() => $_ensure(3);
+  $1.DartColorExpression ensureIndicatorColor() => $_ensure(4);
 
   @$pb.TagNumber(8)
-  $core.bool get automaticIndicatorColorAdjustment => $_getBF(4);
+  $core.bool get automaticIndicatorColorAdjustment => $_getBF(5);
   @$pb.TagNumber(8)
-  set automaticIndicatorColorAdjustment($core.bool v) { $_setBool(4, v); }
+  set automaticIndicatorColorAdjustment($core.bool v) { $_setBool(5, v); }
   @$pb.TagNumber(8)
-  $core.bool hasAutomaticIndicatorColorAdjustment() => $_has(4);
+  $core.bool hasAutomaticIndicatorColorAdjustment() => $_has(5);
   @$pb.TagNumber(8)
   void clearAutomaticIndicatorColorAdjustment() => clearField(8);
 
   @$pb.TagNumber(9)
-  $core.double get indicatorWeight => $_getN(5);
+  $core.double get indicatorWeight => $_getN(6);
   @$pb.TagNumber(9)
-  set indicatorWeight($core.double v) { $_setDouble(5, v); }
+  set indicatorWeight($core.double v) { $_setDouble(6, v); }
   @$pb.TagNumber(9)
-  $core.bool hasIndicatorWeight() => $_has(5);
+  $core.bool hasIndicatorWeight() => $_has(6);
   @$pb.TagNumber(9)
   void clearIndicatorWeight() => clearField(9);
 
+  @$pb.TagNumber(10)
+  $1.FlutterEdgeInsetsGeometryExpression get indicatorPadding => $_getN(7);
+  @$pb.TagNumber(10)
+  set indicatorPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(10, v); }
+  @$pb.TagNumber(10)
+  $core.bool hasIndicatorPadding() => $_has(7);
+  @$pb.TagNumber(10)
+  void clearIndicatorPadding() => clearField(10);
+  @$pb.TagNumber(10)
+  $1.FlutterEdgeInsetsGeometryExpression ensureIndicatorPadding() => $_ensure(7);
+
   @$pb.TagNumber(12)
-  $2.MaterialTabBarIndicatorSize_Enum get indicatorSize => $_getN(6);
+  $2.MaterialTabBarIndicatorSize_Enum get indicatorSize => $_getN(8);
   @$pb.TagNumber(12)
   set indicatorSize($2.MaterialTabBarIndicatorSize_Enum v) { setField(12, v); }
   @$pb.TagNumber(12)
-  $core.bool hasIndicatorSize() => $_has(6);
+  $core.bool hasIndicatorSize() => $_has(8);
   @$pb.TagNumber(12)
   void clearIndicatorSize() => clearField(12);
 
   @$pb.TagNumber(13)
-  $1.DartColorExpression get dividerColor => $_getN(7);
+  $1.DartColorExpression get dividerColor => $_getN(9);
   @$pb.TagNumber(13)
   set dividerColor($1.DartColorExpression v) { setField(13, v); }
   @$pb.TagNumber(13)
-  $core.bool hasDividerColor() => $_has(7);
+  $core.bool hasDividerColor() => $_has(9);
   @$pb.TagNumber(13)
   void clearDividerColor() => clearField(13);
   @$pb.TagNumber(13)
-  $1.DartColorExpression ensureDividerColor() => $_ensure(7);
+  $1.DartColorExpression ensureDividerColor() => $_ensure(9);
 
   @$pb.TagNumber(14)
-  $1.DartColorExpression get labelColor => $_getN(8);
+  $1.DartColorExpression get labelColor => $_getN(10);
   @$pb.TagNumber(14)
   set labelColor($1.DartColorExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
-  $core.bool hasLabelColor() => $_has(8);
+  $core.bool hasLabelColor() => $_has(10);
   @$pb.TagNumber(14)
   void clearLabelColor() => clearField(14);
   @$pb.TagNumber(14)
-  $1.DartColorExpression ensureLabelColor() => $_ensure(8);
+  $1.DartColorExpression ensureLabelColor() => $_ensure(10);
+
+  @$pb.TagNumber(16)
+  $1.FlutterEdgeInsetsGeometryExpression get labelPadding => $_getN(11);
+  @$pb.TagNumber(16)
+  set labelPadding($1.FlutterEdgeInsetsGeometryExpression v) { setField(16, v); }
+  @$pb.TagNumber(16)
+  $core.bool hasLabelPadding() => $_has(11);
+  @$pb.TagNumber(16)
+  void clearLabelPadding() => clearField(16);
+  @$pb.TagNumber(16)
+  $1.FlutterEdgeInsetsGeometryExpression ensureLabelPadding() => $_ensure(11);
 
   @$pb.TagNumber(17)
-  $1.DartColorExpression get unselectedLabelColor => $_getN(9);
+  $1.DartColorExpression get unselectedLabelColor => $_getN(12);
   @$pb.TagNumber(17)
   set unselectedLabelColor($1.DartColorExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
-  $core.bool hasUnselectedLabelColor() => $_has(9);
+  $core.bool hasUnselectedLabelColor() => $_has(12);
   @$pb.TagNumber(17)
   void clearUnselectedLabelColor() => clearField(17);
   @$pb.TagNumber(17)
-  $1.DartColorExpression ensureUnselectedLabelColor() => $_ensure(9);
+  $1.DartColorExpression ensureUnselectedLabelColor() => $_ensure(12);
 
   @$pb.TagNumber(19)
-  $2.FlutterDragStartBehavior_Enum get dragStartBehavior => $_getN(10);
+  $2.FlutterDragStartBehavior_Enum get dragStartBehavior => $_getN(13);
   @$pb.TagNumber(19)
   set dragStartBehavior($2.FlutterDragStartBehavior_Enum v) { setField(19, v); }
   @$pb.TagNumber(19)
-  $core.bool hasDragStartBehavior() => $_has(10);
+  $core.bool hasDragStartBehavior() => $_has(13);
   @$pb.TagNumber(19)
   void clearDragStartBehavior() => clearField(19);
 
   @$pb.TagNumber(22)
-  $core.bool get enableFeedback => $_getBF(11);
+  $core.bool get enableFeedback => $_getBF(14);
   @$pb.TagNumber(22)
-  set enableFeedback($core.bool v) { $_setBool(11, v); }
+  set enableFeedback($core.bool v) { $_setBool(14, v); }
   @$pb.TagNumber(22)
-  $core.bool hasEnableFeedback() => $_has(11);
+  $core.bool hasEnableFeedback() => $_has(14);
   @$pb.TagNumber(22)
   void clearEnableFeedback() => clearField(22);
 
   @$pb.TagNumber(27)
-  $2.MaterialTabAlignment_Enum get tabAlignment => $_getN(12);
+  $2.MaterialTabAlignment_Enum get tabAlignment => $_getN(15);
   @$pb.TagNumber(27)
   set tabAlignment($2.MaterialTabAlignment_Enum v) { setField(27, v); }
   @$pb.TagNumber(27)
-  $core.bool hasTabAlignment() => $_has(12);
+  $core.bool hasTabAlignment() => $_has(15);
   @$pb.TagNumber(27)
   void clearTabAlignment() => clearField(27);
 }
@@ -31824,6 +33200,8 @@ class MaterialTooltip extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $core.String? message,
     $core.double? height,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
+    $1.FlutterEdgeInsetsGeometryExpression? margin,
     $core.double? verticalOffset,
     $core.bool? preferBelow,
     $core.bool? excludeFromSemantics,
@@ -31843,6 +33221,12 @@ class MaterialTooltip extends $pb.GeneratedMessage {
     }
     if (height != null) {
       $result.height = height;
+    }
+    if (padding != null) {
+      $result.padding = padding;
+    }
+    if (margin != null) {
+      $result.margin = margin;
     }
     if (verticalOffset != null) {
       $result.verticalOffset = verticalOffset;
@@ -31881,6 +33265,8 @@ class MaterialTooltip extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..aOS(3, _omitFieldNames ? '' : 'message')
     ..a<$core.double>(5, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(6, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(7, _omitFieldNames ? '' : 'margin', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'verticalOffset', $pb.PbFieldType.OD)
     ..aOB(9, _omitFieldNames ? '' : 'preferBelow')
     ..aOB(10, _omitFieldNames ? '' : 'excludeFromSemantics')
@@ -31943,92 +33329,114 @@ class MaterialTooltip extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearHeight() => clearField(5);
 
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(3);
+  @$pb.TagNumber(6)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasPadding() => $_has(3);
+  @$pb.TagNumber(6)
+  void clearPadding() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(3);
+
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression get margin => $_getN(4);
+  @$pb.TagNumber(7)
+  set margin($1.FlutterEdgeInsetsGeometryExpression v) { setField(7, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasMargin() => $_has(4);
+  @$pb.TagNumber(7)
+  void clearMargin() => clearField(7);
+  @$pb.TagNumber(7)
+  $1.FlutterEdgeInsetsGeometryExpression ensureMargin() => $_ensure(4);
+
   @$pb.TagNumber(8)
-  $core.double get verticalOffset => $_getN(3);
+  $core.double get verticalOffset => $_getN(5);
   @$pb.TagNumber(8)
-  set verticalOffset($core.double v) { $_setDouble(3, v); }
+  set verticalOffset($core.double v) { $_setDouble(5, v); }
   @$pb.TagNumber(8)
-  $core.bool hasVerticalOffset() => $_has(3);
+  $core.bool hasVerticalOffset() => $_has(5);
   @$pb.TagNumber(8)
   void clearVerticalOffset() => clearField(8);
 
   @$pb.TagNumber(9)
-  $core.bool get preferBelow => $_getBF(4);
+  $core.bool get preferBelow => $_getBF(6);
   @$pb.TagNumber(9)
-  set preferBelow($core.bool v) { $_setBool(4, v); }
+  set preferBelow($core.bool v) { $_setBool(6, v); }
   @$pb.TagNumber(9)
-  $core.bool hasPreferBelow() => $_has(4);
+  $core.bool hasPreferBelow() => $_has(6);
   @$pb.TagNumber(9)
   void clearPreferBelow() => clearField(9);
 
   @$pb.TagNumber(10)
-  $core.bool get excludeFromSemantics => $_getBF(5);
+  $core.bool get excludeFromSemantics => $_getBF(7);
   @$pb.TagNumber(10)
-  set excludeFromSemantics($core.bool v) { $_setBool(5, v); }
+  set excludeFromSemantics($core.bool v) { $_setBool(7, v); }
   @$pb.TagNumber(10)
-  $core.bool hasExcludeFromSemantics() => $_has(5);
+  $core.bool hasExcludeFromSemantics() => $_has(7);
   @$pb.TagNumber(10)
   void clearExcludeFromSemantics() => clearField(10);
 
   @$pb.TagNumber(13)
-  $2.DartTextAlign_Enum get textAlign => $_getN(6);
+  $2.DartTextAlign_Enum get textAlign => $_getN(8);
   @$pb.TagNumber(13)
   set textAlign($2.DartTextAlign_Enum v) { setField(13, v); }
   @$pb.TagNumber(13)
-  $core.bool hasTextAlign() => $_has(6);
+  $core.bool hasTextAlign() => $_has(8);
   @$pb.TagNumber(13)
   void clearTextAlign() => clearField(13);
 
   @$pb.TagNumber(14)
-  $1.DartDurationExpression get waitDuration => $_getN(7);
+  $1.DartDurationExpression get waitDuration => $_getN(9);
   @$pb.TagNumber(14)
   set waitDuration($1.DartDurationExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
-  $core.bool hasWaitDuration() => $_has(7);
+  $core.bool hasWaitDuration() => $_has(9);
   @$pb.TagNumber(14)
   void clearWaitDuration() => clearField(14);
   @$pb.TagNumber(14)
-  $1.DartDurationExpression ensureWaitDuration() => $_ensure(7);
+  $1.DartDurationExpression ensureWaitDuration() => $_ensure(9);
 
   @$pb.TagNumber(15)
-  $1.DartDurationExpression get showDuration => $_getN(8);
+  $1.DartDurationExpression get showDuration => $_getN(10);
   @$pb.TagNumber(15)
   set showDuration($1.DartDurationExpression v) { setField(15, v); }
   @$pb.TagNumber(15)
-  $core.bool hasShowDuration() => $_has(8);
+  $core.bool hasShowDuration() => $_has(10);
   @$pb.TagNumber(15)
   void clearShowDuration() => clearField(15);
   @$pb.TagNumber(15)
-  $1.DartDurationExpression ensureShowDuration() => $_ensure(8);
+  $1.DartDurationExpression ensureShowDuration() => $_ensure(10);
 
   @$pb.TagNumber(16)
-  $2.MaterialTooltipTriggerMode_Enum get triggerMode => $_getN(9);
+  $2.MaterialTooltipTriggerMode_Enum get triggerMode => $_getN(11);
   @$pb.TagNumber(16)
   set triggerMode($2.MaterialTooltipTriggerMode_Enum v) { setField(16, v); }
   @$pb.TagNumber(16)
-  $core.bool hasTriggerMode() => $_has(9);
+  $core.bool hasTriggerMode() => $_has(11);
   @$pb.TagNumber(16)
   void clearTriggerMode() => clearField(16);
 
   @$pb.TagNumber(17)
-  $core.bool get enableFeedback => $_getBF(10);
+  $core.bool get enableFeedback => $_getBF(12);
   @$pb.TagNumber(17)
-  set enableFeedback($core.bool v) { $_setBool(10, v); }
+  set enableFeedback($core.bool v) { $_setBool(12, v); }
   @$pb.TagNumber(17)
-  $core.bool hasEnableFeedback() => $_has(10);
+  $core.bool hasEnableFeedback() => $_has(12);
   @$pb.TagNumber(17)
   void clearEnableFeedback() => clearField(17);
 
   @$pb.TagNumber(19)
-  WidgetExpression get child => $_getN(11);
+  WidgetExpression get child => $_getN(13);
   @$pb.TagNumber(19)
   set child(WidgetExpression v) { setField(19, v); }
   @$pb.TagNumber(19)
-  $core.bool hasChild() => $_has(11);
+  $core.bool hasChild() => $_has(13);
   @$pb.TagNumber(19)
   void clearChild() => clearField(19);
   @$pb.TagNumber(19)
-  WidgetExpression ensureChild() => $_ensure(11);
+  WidgetExpression ensureChild() => $_ensure(13);
 }
 
 /// package:flutter/src/material/tooltip_visibility.dart
@@ -32118,6 +33526,7 @@ class MaterialTooltipVisibility extends $pb.GeneratedMessage {
 class MaterialUserAccountsDrawerHeader extends $pb.GeneratedMessage {
   factory MaterialUserAccountsDrawerHeader({
     $1.FlutterKeyExpression? key,
+    $1.FlutterEdgeInsetsGeometryExpression? margin,
     WidgetExpression? currentAccountPicture,
     $core.Iterable<WidgetExpression>? otherAccountsPictures,
     WidgetExpression? accountName,
@@ -32127,6 +33536,9 @@ class MaterialUserAccountsDrawerHeader extends $pb.GeneratedMessage {
     final $result = create();
     if (key != null) {
       $result.key = key;
+    }
+    if (margin != null) {
+      $result.margin = margin;
     }
     if (currentAccountPicture != null) {
       $result.currentAccountPicture = currentAccountPicture;
@@ -32151,6 +33563,7 @@ class MaterialUserAccountsDrawerHeader extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialUserAccountsDrawerHeader', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(4, _omitFieldNames ? '' : 'margin', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<WidgetExpression>(5, _omitFieldNames ? '' : 'currentAccountPicture', subBuilder: WidgetExpression.create)
     ..pc<WidgetExpression>(6, _omitFieldNames ? '' : 'otherAccountsPictures', $pb.PbFieldType.PM, subBuilder: WidgetExpression.create)
     ..aOM<WidgetExpression>(9, _omitFieldNames ? '' : 'accountName', subBuilder: WidgetExpression.create)
@@ -32191,52 +33604,63 @@ class MaterialUserAccountsDrawerHeader extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression get margin => $_getN(1);
+  @$pb.TagNumber(4)
+  set margin($1.FlutterEdgeInsetsGeometryExpression v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasMargin() => $_has(1);
+  @$pb.TagNumber(4)
+  void clearMargin() => clearField(4);
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression ensureMargin() => $_ensure(1);
+
   @$pb.TagNumber(5)
-  WidgetExpression get currentAccountPicture => $_getN(1);
+  WidgetExpression get currentAccountPicture => $_getN(2);
   @$pb.TagNumber(5)
   set currentAccountPicture(WidgetExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
-  $core.bool hasCurrentAccountPicture() => $_has(1);
+  $core.bool hasCurrentAccountPicture() => $_has(2);
   @$pb.TagNumber(5)
   void clearCurrentAccountPicture() => clearField(5);
   @$pb.TagNumber(5)
-  WidgetExpression ensureCurrentAccountPicture() => $_ensure(1);
+  WidgetExpression ensureCurrentAccountPicture() => $_ensure(2);
 
   @$pb.TagNumber(6)
-  $core.List<WidgetExpression> get otherAccountsPictures => $_getList(2);
+  $core.List<WidgetExpression> get otherAccountsPictures => $_getList(3);
 
   @$pb.TagNumber(9)
-  WidgetExpression get accountName => $_getN(3);
+  WidgetExpression get accountName => $_getN(4);
   @$pb.TagNumber(9)
   set accountName(WidgetExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
-  $core.bool hasAccountName() => $_has(3);
+  $core.bool hasAccountName() => $_has(4);
   @$pb.TagNumber(9)
   void clearAccountName() => clearField(9);
   @$pb.TagNumber(9)
-  WidgetExpression ensureAccountName() => $_ensure(3);
+  WidgetExpression ensureAccountName() => $_ensure(4);
 
   @$pb.TagNumber(10)
-  WidgetExpression get accountEmail => $_getN(4);
+  WidgetExpression get accountEmail => $_getN(5);
   @$pb.TagNumber(10)
   set accountEmail(WidgetExpression v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasAccountEmail() => $_has(4);
+  $core.bool hasAccountEmail() => $_has(5);
   @$pb.TagNumber(10)
   void clearAccountEmail() => clearField(10);
   @$pb.TagNumber(10)
-  WidgetExpression ensureAccountEmail() => $_ensure(4);
+  WidgetExpression ensureAccountEmail() => $_ensure(5);
 
   @$pb.TagNumber(12)
-  $1.DartColorExpression get arrowColor => $_getN(5);
+  $1.DartColorExpression get arrowColor => $_getN(6);
   @$pb.TagNumber(12)
   set arrowColor($1.DartColorExpression v) { setField(12, v); }
   @$pb.TagNumber(12)
-  $core.bool hasArrowColor() => $_has(5);
+  $core.bool hasArrowColor() => $_has(6);
   @$pb.TagNumber(12)
   void clearArrowColor() => clearField(12);
   @$pb.TagNumber(12)
-  $1.DartColorExpression ensureArrowColor() => $_ensure(5);
+  $1.DartColorExpression ensureArrowColor() => $_ensure(6);
 }
 
 /// package:flutter/src/widgets/_platform_selectable_region_context_menu_io.dart
@@ -36883,6 +38307,91 @@ class FlutterOverflowBox extends $pb.GeneratedMessage {
 }
 
 /// package:flutter/src/widgets/basic.dart
+class FlutterPadding extends $pb.GeneratedMessage {
+  factory FlutterPadding({
+    $1.FlutterKeyExpression? key,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
+    WidgetExpression? child,
+  }) {
+    final $result = create();
+    if (key != null) {
+      $result.key = key;
+    }
+    if (padding != null) {
+      $result.padding = padding;
+    }
+    if (child != null) {
+      $result.child = child;
+    }
+    return $result;
+  }
+  FlutterPadding._() : super();
+  factory FlutterPadding.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterPadding.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterPadding', createEmptyInstance: create)
+    ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(3, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
+    ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterPadding clone() => FlutterPadding()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterPadding copyWith(void Function(FlutterPadding) updates) => super.copyWith((message) => updates(message as FlutterPadding)) as FlutterPadding;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterPadding create() => FlutterPadding._();
+  FlutterPadding createEmptyInstance() => create();
+  static $pb.PbList<FlutterPadding> createRepeated() => $pb.PbList<FlutterPadding>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterPadding getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterPadding>(create);
+  static FlutterPadding? _defaultInstance;
+
+  @$pb.TagNumber(2)
+  $1.FlutterKeyExpression get key => $_getN(0);
+  @$pb.TagNumber(2)
+  set key($1.FlutterKeyExpression v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasKey() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearKey() => clearField(2);
+  @$pb.TagNumber(2)
+  $1.FlutterKeyExpression ensureKey() => $_ensure(0);
+
+  @$pb.TagNumber(3)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(1);
+  @$pb.TagNumber(3)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(3, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasPadding() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearPadding() => clearField(3);
+  @$pb.TagNumber(3)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(1);
+
+  @$pb.TagNumber(4)
+  WidgetExpression get child => $_getN(2);
+  @$pb.TagNumber(4)
+  set child(WidgetExpression v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasChild() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearChild() => clearField(4);
+  @$pb.TagNumber(4)
+  WidgetExpression ensureChild() => $_ensure(2);
+}
+
+/// package:flutter/src/widgets/basic.dart
 class FlutterPhysicalModel extends $pb.GeneratedMessage {
   factory FlutterPhysicalModel({
     $1.FlutterKeyExpression? key,
@@ -39185,6 +40694,91 @@ class FlutterSizedBoxNamedSquare extends $pb.GeneratedMessage {
 }
 
 /// package:flutter/src/widgets/basic.dart
+class FlutterSliverPadding extends $pb.GeneratedMessage {
+  factory FlutterSliverPadding({
+    $1.FlutterKeyExpression? key,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
+    WidgetExpression? sliver,
+  }) {
+    final $result = create();
+    if (key != null) {
+      $result.key = key;
+    }
+    if (padding != null) {
+      $result.padding = padding;
+    }
+    if (sliver != null) {
+      $result.sliver = sliver;
+    }
+    return $result;
+  }
+  FlutterSliverPadding._() : super();
+  factory FlutterSliverPadding.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterSliverPadding.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterSliverPadding', createEmptyInstance: create)
+    ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(3, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
+    ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'sliver', subBuilder: WidgetExpression.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterSliverPadding clone() => FlutterSliverPadding()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterSliverPadding copyWith(void Function(FlutterSliverPadding) updates) => super.copyWith((message) => updates(message as FlutterSliverPadding)) as FlutterSliverPadding;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterSliverPadding create() => FlutterSliverPadding._();
+  FlutterSliverPadding createEmptyInstance() => create();
+  static $pb.PbList<FlutterSliverPadding> createRepeated() => $pb.PbList<FlutterSliverPadding>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterSliverPadding getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterSliverPadding>(create);
+  static FlutterSliverPadding? _defaultInstance;
+
+  @$pb.TagNumber(2)
+  $1.FlutterKeyExpression get key => $_getN(0);
+  @$pb.TagNumber(2)
+  set key($1.FlutterKeyExpression v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasKey() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearKey() => clearField(2);
+  @$pb.TagNumber(2)
+  $1.FlutterKeyExpression ensureKey() => $_ensure(0);
+
+  @$pb.TagNumber(3)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(1);
+  @$pb.TagNumber(3)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(3, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasPadding() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearPadding() => clearField(3);
+  @$pb.TagNumber(3)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(1);
+
+  @$pb.TagNumber(4)
+  WidgetExpression get sliver => $_getN(2);
+  @$pb.TagNumber(4)
+  set sliver(WidgetExpression v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasSliver() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearSliver() => clearField(4);
+  @$pb.TagNumber(4)
+  WidgetExpression ensureSliver() => $_ensure(2);
+}
+
+/// package:flutter/src/widgets/basic.dart
 class FlutterSliverToBoxAdapter extends $pb.GeneratedMessage {
   factory FlutterSliverToBoxAdapter({
     $1.FlutterKeyExpression? key,
@@ -40033,15 +41627,20 @@ class FlutterWrap extends $pb.GeneratedMessage {
 class FlutterContainer extends $pb.GeneratedMessage {
   factory FlutterContainer({
     $1.FlutterKeyExpression? key,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $1.DartColorExpression? color,
     $core.double? width,
     $core.double? height,
+    $1.FlutterEdgeInsetsGeometryExpression? margin,
     WidgetExpression? child,
     $2.DartClip_Enum? clipBehavior,
   }) {
     final $result = create();
     if (key != null) {
       $result.key = key;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (color != null) {
       $result.color = color;
@@ -40051,6 +41650,9 @@ class FlutterContainer extends $pb.GeneratedMessage {
     }
     if (height != null) {
       $result.height = height;
+    }
+    if (margin != null) {
+      $result.margin = margin;
     }
     if (child != null) {
       $result.child = child;
@@ -40066,9 +41668,11 @@ class FlutterContainer extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterContainer', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(4, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OD)
     ..a<$core.double>(9, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(11, _omitFieldNames ? '' : 'margin', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<WidgetExpression>(14, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..e<$2.DartClip_Enum>(15, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..hasRequiredFields = false
@@ -40106,52 +41710,74 @@ class FlutterContainer extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(1);
+  @$pb.TagNumber(4)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasPadding() => $_has(1);
+  @$pb.TagNumber(4)
+  void clearPadding() => clearField(4);
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(1);
+
   @$pb.TagNumber(5)
-  $1.DartColorExpression get color => $_getN(1);
+  $1.DartColorExpression get color => $_getN(2);
   @$pb.TagNumber(5)
   set color($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
-  $core.bool hasColor() => $_has(1);
+  $core.bool hasColor() => $_has(2);
   @$pb.TagNumber(5)
   void clearColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.DartColorExpression ensureColor() => $_ensure(1);
+  $1.DartColorExpression ensureColor() => $_ensure(2);
 
   @$pb.TagNumber(8)
-  $core.double get width => $_getN(2);
+  $core.double get width => $_getN(3);
   @$pb.TagNumber(8)
-  set width($core.double v) { $_setDouble(2, v); }
+  set width($core.double v) { $_setDouble(3, v); }
   @$pb.TagNumber(8)
-  $core.bool hasWidth() => $_has(2);
+  $core.bool hasWidth() => $_has(3);
   @$pb.TagNumber(8)
   void clearWidth() => clearField(8);
 
   @$pb.TagNumber(9)
-  $core.double get height => $_getN(3);
+  $core.double get height => $_getN(4);
   @$pb.TagNumber(9)
-  set height($core.double v) { $_setDouble(3, v); }
+  set height($core.double v) { $_setDouble(4, v); }
   @$pb.TagNumber(9)
-  $core.bool hasHeight() => $_has(3);
+  $core.bool hasHeight() => $_has(4);
   @$pb.TagNumber(9)
   void clearHeight() => clearField(9);
 
+  @$pb.TagNumber(11)
+  $1.FlutterEdgeInsetsGeometryExpression get margin => $_getN(5);
+  @$pb.TagNumber(11)
+  set margin($1.FlutterEdgeInsetsGeometryExpression v) { setField(11, v); }
+  @$pb.TagNumber(11)
+  $core.bool hasMargin() => $_has(5);
+  @$pb.TagNumber(11)
+  void clearMargin() => clearField(11);
+  @$pb.TagNumber(11)
+  $1.FlutterEdgeInsetsGeometryExpression ensureMargin() => $_ensure(5);
+
   @$pb.TagNumber(14)
-  WidgetExpression get child => $_getN(4);
+  WidgetExpression get child => $_getN(6);
   @$pb.TagNumber(14)
   set child(WidgetExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
-  $core.bool hasChild() => $_has(4);
+  $core.bool hasChild() => $_has(6);
   @$pb.TagNumber(14)
   void clearChild() => clearField(14);
   @$pb.TagNumber(14)
-  WidgetExpression ensureChild() => $_ensure(4);
+  WidgetExpression ensureChild() => $_ensure(6);
 
   @$pb.TagNumber(15)
-  $2.DartClip_Enum get clipBehavior => $_getN(5);
+  $2.DartClip_Enum get clipBehavior => $_getN(7);
   @$pb.TagNumber(15)
   set clipBehavior($2.DartClip_Enum v) { setField(15, v); }
   @$pb.TagNumber(15)
-  $core.bool hasClipBehavior() => $_has(5);
+  $core.bool hasClipBehavior() => $_has(7);
   @$pb.TagNumber(15)
   void clearClipBehavior() => clearField(15);
 }
@@ -43390,9 +45016,11 @@ class FlutterImageIcon extends $pb.GeneratedMessage {
 class FlutterAnimatedContainer extends $pb.GeneratedMessage {
   factory FlutterAnimatedContainer({
     $1.FlutterKeyExpression? key,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $1.DartColorExpression? color,
     $core.double? width,
     $core.double? height,
+    $1.FlutterEdgeInsetsGeometryExpression? margin,
     WidgetExpression? child,
     $2.DartClip_Enum? clipBehavior,
     $1.DartDurationExpression? duration,
@@ -43400,6 +45028,9 @@ class FlutterAnimatedContainer extends $pb.GeneratedMessage {
     final $result = create();
     if (key != null) {
       $result.key = key;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (color != null) {
       $result.color = color;
@@ -43409,6 +45040,9 @@ class FlutterAnimatedContainer extends $pb.GeneratedMessage {
     }
     if (height != null) {
       $result.height = height;
+    }
+    if (margin != null) {
+      $result.margin = margin;
     }
     if (child != null) {
       $result.child = child;
@@ -43427,9 +45061,11 @@ class FlutterAnimatedContainer extends $pb.GeneratedMessage {
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterAnimatedContainer', createEmptyInstance: create)
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(4, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<$1.DartColorExpression>(5, _omitFieldNames ? '' : 'color', subBuilder: $1.DartColorExpression.create)
     ..a<$core.double>(8, _omitFieldNames ? '' : 'width', $pb.PbFieldType.OD)
     ..a<$core.double>(9, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(11, _omitFieldNames ? '' : 'margin', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOM<WidgetExpression>(14, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..e<$2.DartClip_Enum>(15, _omitFieldNames ? '' : 'clipBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.DartClip_Enum.NONE, valueOf: $2.DartClip_Enum.valueOf, enumValues: $2.DartClip_Enum.values)
     ..aOM<$1.DartDurationExpression>(17, _omitFieldNames ? '' : 'duration', subBuilder: $1.DartDurationExpression.create)
@@ -43468,65 +45104,87 @@ class FlutterAnimatedContainer extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $1.FlutterKeyExpression ensureKey() => $_ensure(0);
 
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(1);
+  @$pb.TagNumber(4)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasPadding() => $_has(1);
+  @$pb.TagNumber(4)
+  void clearPadding() => clearField(4);
+  @$pb.TagNumber(4)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(1);
+
   @$pb.TagNumber(5)
-  $1.DartColorExpression get color => $_getN(1);
+  $1.DartColorExpression get color => $_getN(2);
   @$pb.TagNumber(5)
   set color($1.DartColorExpression v) { setField(5, v); }
   @$pb.TagNumber(5)
-  $core.bool hasColor() => $_has(1);
+  $core.bool hasColor() => $_has(2);
   @$pb.TagNumber(5)
   void clearColor() => clearField(5);
   @$pb.TagNumber(5)
-  $1.DartColorExpression ensureColor() => $_ensure(1);
+  $1.DartColorExpression ensureColor() => $_ensure(2);
 
   @$pb.TagNumber(8)
-  $core.double get width => $_getN(2);
+  $core.double get width => $_getN(3);
   @$pb.TagNumber(8)
-  set width($core.double v) { $_setDouble(2, v); }
+  set width($core.double v) { $_setDouble(3, v); }
   @$pb.TagNumber(8)
-  $core.bool hasWidth() => $_has(2);
+  $core.bool hasWidth() => $_has(3);
   @$pb.TagNumber(8)
   void clearWidth() => clearField(8);
 
   @$pb.TagNumber(9)
-  $core.double get height => $_getN(3);
+  $core.double get height => $_getN(4);
   @$pb.TagNumber(9)
-  set height($core.double v) { $_setDouble(3, v); }
+  set height($core.double v) { $_setDouble(4, v); }
   @$pb.TagNumber(9)
-  $core.bool hasHeight() => $_has(3);
+  $core.bool hasHeight() => $_has(4);
   @$pb.TagNumber(9)
   void clearHeight() => clearField(9);
 
+  @$pb.TagNumber(11)
+  $1.FlutterEdgeInsetsGeometryExpression get margin => $_getN(5);
+  @$pb.TagNumber(11)
+  set margin($1.FlutterEdgeInsetsGeometryExpression v) { setField(11, v); }
+  @$pb.TagNumber(11)
+  $core.bool hasMargin() => $_has(5);
+  @$pb.TagNumber(11)
+  void clearMargin() => clearField(11);
+  @$pb.TagNumber(11)
+  $1.FlutterEdgeInsetsGeometryExpression ensureMargin() => $_ensure(5);
+
   @$pb.TagNumber(14)
-  WidgetExpression get child => $_getN(4);
+  WidgetExpression get child => $_getN(6);
   @$pb.TagNumber(14)
   set child(WidgetExpression v) { setField(14, v); }
   @$pb.TagNumber(14)
-  $core.bool hasChild() => $_has(4);
+  $core.bool hasChild() => $_has(6);
   @$pb.TagNumber(14)
   void clearChild() => clearField(14);
   @$pb.TagNumber(14)
-  WidgetExpression ensureChild() => $_ensure(4);
+  WidgetExpression ensureChild() => $_ensure(6);
 
   @$pb.TagNumber(15)
-  $2.DartClip_Enum get clipBehavior => $_getN(5);
+  $2.DartClip_Enum get clipBehavior => $_getN(7);
   @$pb.TagNumber(15)
   set clipBehavior($2.DartClip_Enum v) { setField(15, v); }
   @$pb.TagNumber(15)
-  $core.bool hasClipBehavior() => $_has(5);
+  $core.bool hasClipBehavior() => $_has(7);
   @$pb.TagNumber(15)
   void clearClipBehavior() => clearField(15);
 
   @$pb.TagNumber(17)
-  $1.DartDurationExpression get duration => $_getN(6);
+  $1.DartDurationExpression get duration => $_getN(8);
   @$pb.TagNumber(17)
   set duration($1.DartDurationExpression v) { setField(17, v); }
   @$pb.TagNumber(17)
-  $core.bool hasDuration() => $_has(6);
+  $core.bool hasDuration() => $_has(8);
   @$pb.TagNumber(17)
   void clearDuration() => clearField(17);
   @$pb.TagNumber(17)
-  $1.DartDurationExpression ensureDuration() => $_ensure(6);
+  $1.DartDurationExpression ensureDuration() => $_ensure(8);
 }
 
 /// package:flutter/src/widgets/implicit_animations.dart
@@ -43753,6 +45411,107 @@ class FlutterAnimatedOpacity extends $pb.GeneratedMessage {
   $core.bool hasAlwaysIncludeSemantics() => $_has(4);
   @$pb.TagNumber(8)
   void clearAlwaysIncludeSemantics() => clearField(8);
+}
+
+/// package:flutter/src/widgets/implicit_animations.dart
+class FlutterAnimatedPadding extends $pb.GeneratedMessage {
+  factory FlutterAnimatedPadding({
+    $1.FlutterKeyExpression? key,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
+    WidgetExpression? child,
+    $1.DartDurationExpression? duration,
+  }) {
+    final $result = create();
+    if (key != null) {
+      $result.key = key;
+    }
+    if (padding != null) {
+      $result.padding = padding;
+    }
+    if (child != null) {
+      $result.child = child;
+    }
+    if (duration != null) {
+      $result.duration = duration;
+    }
+    return $result;
+  }
+  FlutterAnimatedPadding._() : super();
+  factory FlutterAnimatedPadding.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterAnimatedPadding.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterAnimatedPadding', createEmptyInstance: create)
+    ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(3, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
+    ..aOM<WidgetExpression>(4, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
+    ..aOM<$1.DartDurationExpression>(6, _omitFieldNames ? '' : 'duration', subBuilder: $1.DartDurationExpression.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterAnimatedPadding clone() => FlutterAnimatedPadding()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterAnimatedPadding copyWith(void Function(FlutterAnimatedPadding) updates) => super.copyWith((message) => updates(message as FlutterAnimatedPadding)) as FlutterAnimatedPadding;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterAnimatedPadding create() => FlutterAnimatedPadding._();
+  FlutterAnimatedPadding createEmptyInstance() => create();
+  static $pb.PbList<FlutterAnimatedPadding> createRepeated() => $pb.PbList<FlutterAnimatedPadding>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterAnimatedPadding getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterAnimatedPadding>(create);
+  static FlutterAnimatedPadding? _defaultInstance;
+
+  @$pb.TagNumber(2)
+  $1.FlutterKeyExpression get key => $_getN(0);
+  @$pb.TagNumber(2)
+  set key($1.FlutterKeyExpression v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasKey() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearKey() => clearField(2);
+  @$pb.TagNumber(2)
+  $1.FlutterKeyExpression ensureKey() => $_ensure(0);
+
+  @$pb.TagNumber(3)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(1);
+  @$pb.TagNumber(3)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(3, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasPadding() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearPadding() => clearField(3);
+  @$pb.TagNumber(3)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(1);
+
+  @$pb.TagNumber(4)
+  WidgetExpression get child => $_getN(2);
+  @$pb.TagNumber(4)
+  set child(WidgetExpression v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasChild() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearChild() => clearField(4);
+  @$pb.TagNumber(4)
+  WidgetExpression ensureChild() => $_ensure(2);
+
+  @$pb.TagNumber(6)
+  $1.DartDurationExpression get duration => $_getN(3);
+  @$pb.TagNumber(6)
+  set duration($1.DartDurationExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasDuration() => $_has(3);
+  @$pb.TagNumber(6)
+  void clearDuration() => clearField(6);
+  @$pb.TagNumber(6)
+  $1.DartDurationExpression ensureDuration() => $_ensure(3);
 }
 
 /// package:flutter/src/widgets/implicit_animations.dart
@@ -47936,6 +49695,7 @@ class FlutterGridViewNamedCount extends $pb.GeneratedMessage {
     $core.bool? reverse,
     $core.bool? primary,
     $core.bool? shrinkWrap,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $core.int? crossAxisCount,
     $core.double? mainAxisSpacing,
     $core.double? crossAxisSpacing,
@@ -47966,6 +49726,9 @@ class FlutterGridViewNamedCount extends $pb.GeneratedMessage {
     }
     if (shrinkWrap != null) {
       $result.shrinkWrap = shrinkWrap;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (crossAxisCount != null) {
       $result.crossAxisCount = crossAxisCount;
@@ -48021,6 +49784,7 @@ class FlutterGridViewNamedCount extends $pb.GeneratedMessage {
     ..aOB(4, _omitFieldNames ? '' : 'reverse')
     ..aOB(6, _omitFieldNames ? '' : 'primary')
     ..aOB(8, _omitFieldNames ? '' : 'shrinkWrap')
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(9, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..a<$core.int>(10, _omitFieldNames ? '' : 'crossAxisCount', $pb.PbFieldType.O3)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'mainAxisSpacing', $pb.PbFieldType.OD)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'crossAxisSpacing', $pb.PbFieldType.OD)
@@ -48106,123 +49870,134 @@ class FlutterGridViewNamedCount extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearShrinkWrap() => clearField(8);
 
+  @$pb.TagNumber(9)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(5);
+  @$pb.TagNumber(9)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(9, v); }
+  @$pb.TagNumber(9)
+  $core.bool hasPadding() => $_has(5);
+  @$pb.TagNumber(9)
+  void clearPadding() => clearField(9);
+  @$pb.TagNumber(9)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(5);
+
   @$pb.TagNumber(10)
-  $core.int get crossAxisCount => $_getIZ(5);
+  $core.int get crossAxisCount => $_getIZ(6);
   @$pb.TagNumber(10)
-  set crossAxisCount($core.int v) { $_setSignedInt32(5, v); }
+  set crossAxisCount($core.int v) { $_setSignedInt32(6, v); }
   @$pb.TagNumber(10)
-  $core.bool hasCrossAxisCount() => $_has(5);
+  $core.bool hasCrossAxisCount() => $_has(6);
   @$pb.TagNumber(10)
   void clearCrossAxisCount() => clearField(10);
 
   @$pb.TagNumber(11)
-  $core.double get mainAxisSpacing => $_getN(6);
+  $core.double get mainAxisSpacing => $_getN(7);
   @$pb.TagNumber(11)
-  set mainAxisSpacing($core.double v) { $_setDouble(6, v); }
+  set mainAxisSpacing($core.double v) { $_setDouble(7, v); }
   @$pb.TagNumber(11)
-  $core.bool hasMainAxisSpacing() => $_has(6);
+  $core.bool hasMainAxisSpacing() => $_has(7);
   @$pb.TagNumber(11)
   void clearMainAxisSpacing() => clearField(11);
 
   @$pb.TagNumber(12)
-  $core.double get crossAxisSpacing => $_getN(7);
+  $core.double get crossAxisSpacing => $_getN(8);
   @$pb.TagNumber(12)
-  set crossAxisSpacing($core.double v) { $_setDouble(7, v); }
+  set crossAxisSpacing($core.double v) { $_setDouble(8, v); }
   @$pb.TagNumber(12)
-  $core.bool hasCrossAxisSpacing() => $_has(7);
+  $core.bool hasCrossAxisSpacing() => $_has(8);
   @$pb.TagNumber(12)
   void clearCrossAxisSpacing() => clearField(12);
 
   @$pb.TagNumber(13)
-  $core.double get childAspectRatio => $_getN(8);
+  $core.double get childAspectRatio => $_getN(9);
   @$pb.TagNumber(13)
-  set childAspectRatio($core.double v) { $_setDouble(8, v); }
+  set childAspectRatio($core.double v) { $_setDouble(9, v); }
   @$pb.TagNumber(13)
-  $core.bool hasChildAspectRatio() => $_has(8);
+  $core.bool hasChildAspectRatio() => $_has(9);
   @$pb.TagNumber(13)
   void clearChildAspectRatio() => clearField(13);
 
   @$pb.TagNumber(14)
-  $core.bool get addAutomaticKeepAlives => $_getBF(9);
+  $core.bool get addAutomaticKeepAlives => $_getBF(10);
   @$pb.TagNumber(14)
-  set addAutomaticKeepAlives($core.bool v) { $_setBool(9, v); }
+  set addAutomaticKeepAlives($core.bool v) { $_setBool(10, v); }
   @$pb.TagNumber(14)
-  $core.bool hasAddAutomaticKeepAlives() => $_has(9);
+  $core.bool hasAddAutomaticKeepAlives() => $_has(10);
   @$pb.TagNumber(14)
   void clearAddAutomaticKeepAlives() => clearField(14);
 
   @$pb.TagNumber(15)
-  $core.bool get addRepaintBoundaries => $_getBF(10);
+  $core.bool get addRepaintBoundaries => $_getBF(11);
   @$pb.TagNumber(15)
-  set addRepaintBoundaries($core.bool v) { $_setBool(10, v); }
+  set addRepaintBoundaries($core.bool v) { $_setBool(11, v); }
   @$pb.TagNumber(15)
-  $core.bool hasAddRepaintBoundaries() => $_has(10);
+  $core.bool hasAddRepaintBoundaries() => $_has(11);
   @$pb.TagNumber(15)
   void clearAddRepaintBoundaries() => clearField(15);
 
   @$pb.TagNumber(16)
-  $core.bool get addSemanticIndexes => $_getBF(11);
+  $core.bool get addSemanticIndexes => $_getBF(12);
   @$pb.TagNumber(16)
-  set addSemanticIndexes($core.bool v) { $_setBool(11, v); }
+  set addSemanticIndexes($core.bool v) { $_setBool(12, v); }
   @$pb.TagNumber(16)
-  $core.bool hasAddSemanticIndexes() => $_has(11);
+  $core.bool hasAddSemanticIndexes() => $_has(12);
   @$pb.TagNumber(16)
   void clearAddSemanticIndexes() => clearField(16);
 
   @$pb.TagNumber(17)
-  $core.double get cacheExtent => $_getN(12);
+  $core.double get cacheExtent => $_getN(13);
   @$pb.TagNumber(17)
-  set cacheExtent($core.double v) { $_setDouble(12, v); }
+  set cacheExtent($core.double v) { $_setDouble(13, v); }
   @$pb.TagNumber(17)
-  $core.bool hasCacheExtent() => $_has(12);
+  $core.bool hasCacheExtent() => $_has(13);
   @$pb.TagNumber(17)
   void clearCacheExtent() => clearField(17);
 
   @$pb.TagNumber(18)
-  $core.List<WidgetExpression> get children => $_getList(13);
+  $core.List<WidgetExpression> get children => $_getList(14);
 
   @$pb.TagNumber(19)
-  $core.int get semanticChildCount => $_getIZ(14);
+  $core.int get semanticChildCount => $_getIZ(15);
   @$pb.TagNumber(19)
-  set semanticChildCount($core.int v) { $_setSignedInt32(14, v); }
+  set semanticChildCount($core.int v) { $_setSignedInt32(15, v); }
   @$pb.TagNumber(19)
-  $core.bool hasSemanticChildCount() => $_has(14);
+  $core.bool hasSemanticChildCount() => $_has(15);
   @$pb.TagNumber(19)
   void clearSemanticChildCount() => clearField(19);
 
   @$pb.TagNumber(20)
-  $2.FlutterDragStartBehavior_Enum get dragStartBehavior => $_getN(15);
+  $2.FlutterDragStartBehavior_Enum get dragStartBehavior => $_getN(16);
   @$pb.TagNumber(20)
   set dragStartBehavior($2.FlutterDragStartBehavior_Enum v) { setField(20, v); }
   @$pb.TagNumber(20)
-  $core.bool hasDragStartBehavior() => $_has(15);
+  $core.bool hasDragStartBehavior() => $_has(16);
   @$pb.TagNumber(20)
   void clearDragStartBehavior() => clearField(20);
 
   @$pb.TagNumber(21)
-  $2.FlutterScrollViewKeyboardDismissBehavior_Enum get keyboardDismissBehavior => $_getN(16);
+  $2.FlutterScrollViewKeyboardDismissBehavior_Enum get keyboardDismissBehavior => $_getN(17);
   @$pb.TagNumber(21)
   set keyboardDismissBehavior($2.FlutterScrollViewKeyboardDismissBehavior_Enum v) { setField(21, v); }
   @$pb.TagNumber(21)
-  $core.bool hasKeyboardDismissBehavior() => $_has(16);
+  $core.bool hasKeyboardDismissBehavior() => $_has(17);
   @$pb.TagNumber(21)
   void clearKeyboardDismissBehavior() => clearField(21);
 
   @$pb.TagNumber(22)
-  $core.String get restorationId => $_getSZ(17);
+  $core.String get restorationId => $_getSZ(18);
   @$pb.TagNumber(22)
-  set restorationId($core.String v) { $_setString(17, v); }
+  set restorationId($core.String v) { $_setString(18, v); }
   @$pb.TagNumber(22)
-  $core.bool hasRestorationId() => $_has(17);
+  $core.bool hasRestorationId() => $_has(18);
   @$pb.TagNumber(22)
   void clearRestorationId() => clearField(22);
 
   @$pb.TagNumber(23)
-  $2.DartClip_Enum get clipBehavior => $_getN(18);
+  $2.DartClip_Enum get clipBehavior => $_getN(19);
   @$pb.TagNumber(23)
   set clipBehavior($2.DartClip_Enum v) { setField(23, v); }
   @$pb.TagNumber(23)
-  $core.bool hasClipBehavior() => $_has(18);
+  $core.bool hasClipBehavior() => $_has(19);
   @$pb.TagNumber(23)
   void clearClipBehavior() => clearField(23);
 }
@@ -48235,6 +50010,7 @@ class FlutterGridViewNamedExtent extends $pb.GeneratedMessage {
     $core.bool? reverse,
     $core.bool? primary,
     $core.bool? shrinkWrap,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $core.double? maxCrossAxisExtent,
     $core.double? mainAxisSpacing,
     $core.double? crossAxisSpacing,
@@ -48265,6 +50041,9 @@ class FlutterGridViewNamedExtent extends $pb.GeneratedMessage {
     }
     if (shrinkWrap != null) {
       $result.shrinkWrap = shrinkWrap;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (maxCrossAxisExtent != null) {
       $result.maxCrossAxisExtent = maxCrossAxisExtent;
@@ -48320,6 +50099,7 @@ class FlutterGridViewNamedExtent extends $pb.GeneratedMessage {
     ..aOB(4, _omitFieldNames ? '' : 'reverse')
     ..aOB(6, _omitFieldNames ? '' : 'primary')
     ..aOB(8, _omitFieldNames ? '' : 'shrinkWrap')
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(9, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..a<$core.double>(10, _omitFieldNames ? '' : 'maxCrossAxisExtent', $pb.PbFieldType.OD)
     ..a<$core.double>(11, _omitFieldNames ? '' : 'mainAxisSpacing', $pb.PbFieldType.OD)
     ..a<$core.double>(12, _omitFieldNames ? '' : 'crossAxisSpacing', $pb.PbFieldType.OD)
@@ -48405,123 +50185,134 @@ class FlutterGridViewNamedExtent extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearShrinkWrap() => clearField(8);
 
+  @$pb.TagNumber(9)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(5);
+  @$pb.TagNumber(9)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(9, v); }
+  @$pb.TagNumber(9)
+  $core.bool hasPadding() => $_has(5);
+  @$pb.TagNumber(9)
+  void clearPadding() => clearField(9);
+  @$pb.TagNumber(9)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(5);
+
   @$pb.TagNumber(10)
-  $core.double get maxCrossAxisExtent => $_getN(5);
+  $core.double get maxCrossAxisExtent => $_getN(6);
   @$pb.TagNumber(10)
-  set maxCrossAxisExtent($core.double v) { $_setDouble(5, v); }
+  set maxCrossAxisExtent($core.double v) { $_setDouble(6, v); }
   @$pb.TagNumber(10)
-  $core.bool hasMaxCrossAxisExtent() => $_has(5);
+  $core.bool hasMaxCrossAxisExtent() => $_has(6);
   @$pb.TagNumber(10)
   void clearMaxCrossAxisExtent() => clearField(10);
 
   @$pb.TagNumber(11)
-  $core.double get mainAxisSpacing => $_getN(6);
+  $core.double get mainAxisSpacing => $_getN(7);
   @$pb.TagNumber(11)
-  set mainAxisSpacing($core.double v) { $_setDouble(6, v); }
+  set mainAxisSpacing($core.double v) { $_setDouble(7, v); }
   @$pb.TagNumber(11)
-  $core.bool hasMainAxisSpacing() => $_has(6);
+  $core.bool hasMainAxisSpacing() => $_has(7);
   @$pb.TagNumber(11)
   void clearMainAxisSpacing() => clearField(11);
 
   @$pb.TagNumber(12)
-  $core.double get crossAxisSpacing => $_getN(7);
+  $core.double get crossAxisSpacing => $_getN(8);
   @$pb.TagNumber(12)
-  set crossAxisSpacing($core.double v) { $_setDouble(7, v); }
+  set crossAxisSpacing($core.double v) { $_setDouble(8, v); }
   @$pb.TagNumber(12)
-  $core.bool hasCrossAxisSpacing() => $_has(7);
+  $core.bool hasCrossAxisSpacing() => $_has(8);
   @$pb.TagNumber(12)
   void clearCrossAxisSpacing() => clearField(12);
 
   @$pb.TagNumber(13)
-  $core.double get childAspectRatio => $_getN(8);
+  $core.double get childAspectRatio => $_getN(9);
   @$pb.TagNumber(13)
-  set childAspectRatio($core.double v) { $_setDouble(8, v); }
+  set childAspectRatio($core.double v) { $_setDouble(9, v); }
   @$pb.TagNumber(13)
-  $core.bool hasChildAspectRatio() => $_has(8);
+  $core.bool hasChildAspectRatio() => $_has(9);
   @$pb.TagNumber(13)
   void clearChildAspectRatio() => clearField(13);
 
   @$pb.TagNumber(14)
-  $core.bool get addAutomaticKeepAlives => $_getBF(9);
+  $core.bool get addAutomaticKeepAlives => $_getBF(10);
   @$pb.TagNumber(14)
-  set addAutomaticKeepAlives($core.bool v) { $_setBool(9, v); }
+  set addAutomaticKeepAlives($core.bool v) { $_setBool(10, v); }
   @$pb.TagNumber(14)
-  $core.bool hasAddAutomaticKeepAlives() => $_has(9);
+  $core.bool hasAddAutomaticKeepAlives() => $_has(10);
   @$pb.TagNumber(14)
   void clearAddAutomaticKeepAlives() => clearField(14);
 
   @$pb.TagNumber(15)
-  $core.bool get addRepaintBoundaries => $_getBF(10);
+  $core.bool get addRepaintBoundaries => $_getBF(11);
   @$pb.TagNumber(15)
-  set addRepaintBoundaries($core.bool v) { $_setBool(10, v); }
+  set addRepaintBoundaries($core.bool v) { $_setBool(11, v); }
   @$pb.TagNumber(15)
-  $core.bool hasAddRepaintBoundaries() => $_has(10);
+  $core.bool hasAddRepaintBoundaries() => $_has(11);
   @$pb.TagNumber(15)
   void clearAddRepaintBoundaries() => clearField(15);
 
   @$pb.TagNumber(16)
-  $core.bool get addSemanticIndexes => $_getBF(11);
+  $core.bool get addSemanticIndexes => $_getBF(12);
   @$pb.TagNumber(16)
-  set addSemanticIndexes($core.bool v) { $_setBool(11, v); }
+  set addSemanticIndexes($core.bool v) { $_setBool(12, v); }
   @$pb.TagNumber(16)
-  $core.bool hasAddSemanticIndexes() => $_has(11);
+  $core.bool hasAddSemanticIndexes() => $_has(12);
   @$pb.TagNumber(16)
   void clearAddSemanticIndexes() => clearField(16);
 
   @$pb.TagNumber(17)
-  $core.double get cacheExtent => $_getN(12);
+  $core.double get cacheExtent => $_getN(13);
   @$pb.TagNumber(17)
-  set cacheExtent($core.double v) { $_setDouble(12, v); }
+  set cacheExtent($core.double v) { $_setDouble(13, v); }
   @$pb.TagNumber(17)
-  $core.bool hasCacheExtent() => $_has(12);
+  $core.bool hasCacheExtent() => $_has(13);
   @$pb.TagNumber(17)
   void clearCacheExtent() => clearField(17);
 
   @$pb.TagNumber(18)
-  $core.List<WidgetExpression> get children => $_getList(13);
+  $core.List<WidgetExpression> get children => $_getList(14);
 
   @$pb.TagNumber(19)
-  $core.int get semanticChildCount => $_getIZ(14);
+  $core.int get semanticChildCount => $_getIZ(15);
   @$pb.TagNumber(19)
-  set semanticChildCount($core.int v) { $_setSignedInt32(14, v); }
+  set semanticChildCount($core.int v) { $_setSignedInt32(15, v); }
   @$pb.TagNumber(19)
-  $core.bool hasSemanticChildCount() => $_has(14);
+  $core.bool hasSemanticChildCount() => $_has(15);
   @$pb.TagNumber(19)
   void clearSemanticChildCount() => clearField(19);
 
   @$pb.TagNumber(20)
-  $2.FlutterDragStartBehavior_Enum get dragStartBehavior => $_getN(15);
+  $2.FlutterDragStartBehavior_Enum get dragStartBehavior => $_getN(16);
   @$pb.TagNumber(20)
   set dragStartBehavior($2.FlutterDragStartBehavior_Enum v) { setField(20, v); }
   @$pb.TagNumber(20)
-  $core.bool hasDragStartBehavior() => $_has(15);
+  $core.bool hasDragStartBehavior() => $_has(16);
   @$pb.TagNumber(20)
   void clearDragStartBehavior() => clearField(20);
 
   @$pb.TagNumber(21)
-  $2.FlutterScrollViewKeyboardDismissBehavior_Enum get keyboardDismissBehavior => $_getN(16);
+  $2.FlutterScrollViewKeyboardDismissBehavior_Enum get keyboardDismissBehavior => $_getN(17);
   @$pb.TagNumber(21)
   set keyboardDismissBehavior($2.FlutterScrollViewKeyboardDismissBehavior_Enum v) { setField(21, v); }
   @$pb.TagNumber(21)
-  $core.bool hasKeyboardDismissBehavior() => $_has(16);
+  $core.bool hasKeyboardDismissBehavior() => $_has(17);
   @$pb.TagNumber(21)
   void clearKeyboardDismissBehavior() => clearField(21);
 
   @$pb.TagNumber(22)
-  $core.String get restorationId => $_getSZ(17);
+  $core.String get restorationId => $_getSZ(18);
   @$pb.TagNumber(22)
-  set restorationId($core.String v) { $_setString(17, v); }
+  set restorationId($core.String v) { $_setString(18, v); }
   @$pb.TagNumber(22)
-  $core.bool hasRestorationId() => $_has(17);
+  $core.bool hasRestorationId() => $_has(18);
   @$pb.TagNumber(22)
   void clearRestorationId() => clearField(22);
 
   @$pb.TagNumber(23)
-  $2.DartClip_Enum get clipBehavior => $_getN(18);
+  $2.DartClip_Enum get clipBehavior => $_getN(19);
   @$pb.TagNumber(23)
   set clipBehavior($2.DartClip_Enum v) { setField(23, v); }
   @$pb.TagNumber(23)
-  $core.bool hasClipBehavior() => $_has(18);
+  $core.bool hasClipBehavior() => $_has(19);
   @$pb.TagNumber(23)
   void clearClipBehavior() => clearField(23);
 }
@@ -48534,6 +50325,7 @@ class FlutterListView extends $pb.GeneratedMessage {
     $core.bool? reverse,
     $core.bool? primary,
     $core.bool? shrinkWrap,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $core.double? itemExtent,
     WidgetExpression? prototypeItem,
     $core.bool? addAutomaticKeepAlives,
@@ -48562,6 +50354,9 @@ class FlutterListView extends $pb.GeneratedMessage {
     }
     if (shrinkWrap != null) {
       $result.shrinkWrap = shrinkWrap;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (itemExtent != null) {
       $result.itemExtent = itemExtent;
@@ -48611,6 +50406,7 @@ class FlutterListView extends $pb.GeneratedMessage {
     ..aOB(4, _omitFieldNames ? '' : 'reverse')
     ..aOB(6, _omitFieldNames ? '' : 'primary')
     ..aOB(8, _omitFieldNames ? '' : 'shrinkWrap')
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(9, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..a<$core.double>(10, _omitFieldNames ? '' : 'itemExtent', $pb.PbFieldType.OD)
     ..aOM<WidgetExpression>(11, _omitFieldNames ? '' : 'prototypeItem', subBuilder: WidgetExpression.create)
     ..aOB(12, _omitFieldNames ? '' : 'addAutomaticKeepAlives')
@@ -48694,107 +50490,118 @@ class FlutterListView extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   void clearShrinkWrap() => clearField(8);
 
+  @$pb.TagNumber(9)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(5);
+  @$pb.TagNumber(9)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(9, v); }
+  @$pb.TagNumber(9)
+  $core.bool hasPadding() => $_has(5);
+  @$pb.TagNumber(9)
+  void clearPadding() => clearField(9);
+  @$pb.TagNumber(9)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(5);
+
   @$pb.TagNumber(10)
-  $core.double get itemExtent => $_getN(5);
+  $core.double get itemExtent => $_getN(6);
   @$pb.TagNumber(10)
-  set itemExtent($core.double v) { $_setDouble(5, v); }
+  set itemExtent($core.double v) { $_setDouble(6, v); }
   @$pb.TagNumber(10)
-  $core.bool hasItemExtent() => $_has(5);
+  $core.bool hasItemExtent() => $_has(6);
   @$pb.TagNumber(10)
   void clearItemExtent() => clearField(10);
 
   @$pb.TagNumber(11)
-  WidgetExpression get prototypeItem => $_getN(6);
+  WidgetExpression get prototypeItem => $_getN(7);
   @$pb.TagNumber(11)
   set prototypeItem(WidgetExpression v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasPrototypeItem() => $_has(6);
+  $core.bool hasPrototypeItem() => $_has(7);
   @$pb.TagNumber(11)
   void clearPrototypeItem() => clearField(11);
   @$pb.TagNumber(11)
-  WidgetExpression ensurePrototypeItem() => $_ensure(6);
+  WidgetExpression ensurePrototypeItem() => $_ensure(7);
 
   @$pb.TagNumber(12)
-  $core.bool get addAutomaticKeepAlives => $_getBF(7);
+  $core.bool get addAutomaticKeepAlives => $_getBF(8);
   @$pb.TagNumber(12)
-  set addAutomaticKeepAlives($core.bool v) { $_setBool(7, v); }
+  set addAutomaticKeepAlives($core.bool v) { $_setBool(8, v); }
   @$pb.TagNumber(12)
-  $core.bool hasAddAutomaticKeepAlives() => $_has(7);
+  $core.bool hasAddAutomaticKeepAlives() => $_has(8);
   @$pb.TagNumber(12)
   void clearAddAutomaticKeepAlives() => clearField(12);
 
   @$pb.TagNumber(13)
-  $core.bool get addRepaintBoundaries => $_getBF(8);
+  $core.bool get addRepaintBoundaries => $_getBF(9);
   @$pb.TagNumber(13)
-  set addRepaintBoundaries($core.bool v) { $_setBool(8, v); }
+  set addRepaintBoundaries($core.bool v) { $_setBool(9, v); }
   @$pb.TagNumber(13)
-  $core.bool hasAddRepaintBoundaries() => $_has(8);
+  $core.bool hasAddRepaintBoundaries() => $_has(9);
   @$pb.TagNumber(13)
   void clearAddRepaintBoundaries() => clearField(13);
 
   @$pb.TagNumber(14)
-  $core.bool get addSemanticIndexes => $_getBF(9);
+  $core.bool get addSemanticIndexes => $_getBF(10);
   @$pb.TagNumber(14)
-  set addSemanticIndexes($core.bool v) { $_setBool(9, v); }
+  set addSemanticIndexes($core.bool v) { $_setBool(10, v); }
   @$pb.TagNumber(14)
-  $core.bool hasAddSemanticIndexes() => $_has(9);
+  $core.bool hasAddSemanticIndexes() => $_has(10);
   @$pb.TagNumber(14)
   void clearAddSemanticIndexes() => clearField(14);
 
   @$pb.TagNumber(15)
-  $core.double get cacheExtent => $_getN(10);
+  $core.double get cacheExtent => $_getN(11);
   @$pb.TagNumber(15)
-  set cacheExtent($core.double v) { $_setDouble(10, v); }
+  set cacheExtent($core.double v) { $_setDouble(11, v); }
   @$pb.TagNumber(15)
-  $core.bool hasCacheExtent() => $_has(10);
+  $core.bool hasCacheExtent() => $_has(11);
   @$pb.TagNumber(15)
   void clearCacheExtent() => clearField(15);
 
   @$pb.TagNumber(16)
-  $core.List<WidgetExpression> get children => $_getList(11);
+  $core.List<WidgetExpression> get children => $_getList(12);
 
   @$pb.TagNumber(17)
-  $core.int get semanticChildCount => $_getIZ(12);
+  $core.int get semanticChildCount => $_getIZ(13);
   @$pb.TagNumber(17)
-  set semanticChildCount($core.int v) { $_setSignedInt32(12, v); }
+  set semanticChildCount($core.int v) { $_setSignedInt32(13, v); }
   @$pb.TagNumber(17)
-  $core.bool hasSemanticChildCount() => $_has(12);
+  $core.bool hasSemanticChildCount() => $_has(13);
   @$pb.TagNumber(17)
   void clearSemanticChildCount() => clearField(17);
 
   @$pb.TagNumber(18)
-  $2.FlutterDragStartBehavior_Enum get dragStartBehavior => $_getN(13);
+  $2.FlutterDragStartBehavior_Enum get dragStartBehavior => $_getN(14);
   @$pb.TagNumber(18)
   set dragStartBehavior($2.FlutterDragStartBehavior_Enum v) { setField(18, v); }
   @$pb.TagNumber(18)
-  $core.bool hasDragStartBehavior() => $_has(13);
+  $core.bool hasDragStartBehavior() => $_has(14);
   @$pb.TagNumber(18)
   void clearDragStartBehavior() => clearField(18);
 
   @$pb.TagNumber(19)
-  $2.FlutterScrollViewKeyboardDismissBehavior_Enum get keyboardDismissBehavior => $_getN(14);
+  $2.FlutterScrollViewKeyboardDismissBehavior_Enum get keyboardDismissBehavior => $_getN(15);
   @$pb.TagNumber(19)
   set keyboardDismissBehavior($2.FlutterScrollViewKeyboardDismissBehavior_Enum v) { setField(19, v); }
   @$pb.TagNumber(19)
-  $core.bool hasKeyboardDismissBehavior() => $_has(14);
+  $core.bool hasKeyboardDismissBehavior() => $_has(15);
   @$pb.TagNumber(19)
   void clearKeyboardDismissBehavior() => clearField(19);
 
   @$pb.TagNumber(20)
-  $core.String get restorationId => $_getSZ(15);
+  $core.String get restorationId => $_getSZ(16);
   @$pb.TagNumber(20)
-  set restorationId($core.String v) { $_setString(15, v); }
+  set restorationId($core.String v) { $_setString(16, v); }
   @$pb.TagNumber(20)
-  $core.bool hasRestorationId() => $_has(15);
+  $core.bool hasRestorationId() => $_has(16);
   @$pb.TagNumber(20)
   void clearRestorationId() => clearField(20);
 
   @$pb.TagNumber(21)
-  $2.DartClip_Enum get clipBehavior => $_getN(16);
+  $2.DartClip_Enum get clipBehavior => $_getN(17);
   @$pb.TagNumber(21)
   set clipBehavior($2.DartClip_Enum v) { setField(21, v); }
   @$pb.TagNumber(21)
-  $core.bool hasClipBehavior() => $_has(16);
+  $core.bool hasClipBehavior() => $_has(17);
   @$pb.TagNumber(21)
   void clearClipBehavior() => clearField(21);
 }
@@ -49372,6 +51179,7 @@ class FlutterSingleChildScrollView extends $pb.GeneratedMessage {
     $1.FlutterKeyExpression? key,
     $2.FlutterAxis_Enum? scrollDirection,
     $core.bool? reverse,
+    $1.FlutterEdgeInsetsGeometryExpression? padding,
     $core.bool? primary,
     WidgetExpression? child,
     $2.FlutterDragStartBehavior_Enum? dragStartBehavior,
@@ -49388,6 +51196,9 @@ class FlutterSingleChildScrollView extends $pb.GeneratedMessage {
     }
     if (reverse != null) {
       $result.reverse = reverse;
+    }
+    if (padding != null) {
+      $result.padding = padding;
     }
     if (primary != null) {
       $result.primary = primary;
@@ -49417,6 +51228,7 @@ class FlutterSingleChildScrollView extends $pb.GeneratedMessage {
     ..aOM<$1.FlutterKeyExpression>(2, _omitFieldNames ? '' : 'key', subBuilder: $1.FlutterKeyExpression.create)
     ..e<$2.FlutterAxis_Enum>(3, _omitFieldNames ? '' : 'scrollDirection', $pb.PbFieldType.OE, defaultOrMaker: $2.FlutterAxis_Enum.HORIZONTAL, valueOf: $2.FlutterAxis_Enum.valueOf, enumValues: $2.FlutterAxis_Enum.values)
     ..aOB(4, _omitFieldNames ? '' : 'reverse')
+    ..aOM<$1.FlutterEdgeInsetsGeometryExpression>(5, _omitFieldNames ? '' : 'padding', subBuilder: $1.FlutterEdgeInsetsGeometryExpression.create)
     ..aOB(6, _omitFieldNames ? '' : 'primary')
     ..aOM<WidgetExpression>(9, _omitFieldNames ? '' : 'child', subBuilder: WidgetExpression.create)
     ..e<$2.FlutterDragStartBehavior_Enum>(10, _omitFieldNames ? '' : 'dragStartBehavior', $pb.PbFieldType.OE, defaultOrMaker: $2.FlutterDragStartBehavior_Enum.DOWN, valueOf: $2.FlutterDragStartBehavior_Enum.valueOf, enumValues: $2.FlutterDragStartBehavior_Enum.values)
@@ -49476,59 +51288,70 @@ class FlutterSingleChildScrollView extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearReverse() => clearField(4);
 
+  @$pb.TagNumber(5)
+  $1.FlutterEdgeInsetsGeometryExpression get padding => $_getN(3);
+  @$pb.TagNumber(5)
+  set padding($1.FlutterEdgeInsetsGeometryExpression v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasPadding() => $_has(3);
+  @$pb.TagNumber(5)
+  void clearPadding() => clearField(5);
+  @$pb.TagNumber(5)
+  $1.FlutterEdgeInsetsGeometryExpression ensurePadding() => $_ensure(3);
+
   @$pb.TagNumber(6)
-  $core.bool get primary => $_getBF(3);
+  $core.bool get primary => $_getBF(4);
   @$pb.TagNumber(6)
-  set primary($core.bool v) { $_setBool(3, v); }
+  set primary($core.bool v) { $_setBool(4, v); }
   @$pb.TagNumber(6)
-  $core.bool hasPrimary() => $_has(3);
+  $core.bool hasPrimary() => $_has(4);
   @$pb.TagNumber(6)
   void clearPrimary() => clearField(6);
 
   @$pb.TagNumber(9)
-  WidgetExpression get child => $_getN(4);
+  WidgetExpression get child => $_getN(5);
   @$pb.TagNumber(9)
   set child(WidgetExpression v) { setField(9, v); }
   @$pb.TagNumber(9)
-  $core.bool hasChild() => $_has(4);
+  $core.bool hasChild() => $_has(5);
   @$pb.TagNumber(9)
   void clearChild() => clearField(9);
   @$pb.TagNumber(9)
-  WidgetExpression ensureChild() => $_ensure(4);
+  WidgetExpression ensureChild() => $_ensure(5);
 
   @$pb.TagNumber(10)
-  $2.FlutterDragStartBehavior_Enum get dragStartBehavior => $_getN(5);
+  $2.FlutterDragStartBehavior_Enum get dragStartBehavior => $_getN(6);
   @$pb.TagNumber(10)
   set dragStartBehavior($2.FlutterDragStartBehavior_Enum v) { setField(10, v); }
   @$pb.TagNumber(10)
-  $core.bool hasDragStartBehavior() => $_has(5);
+  $core.bool hasDragStartBehavior() => $_has(6);
   @$pb.TagNumber(10)
   void clearDragStartBehavior() => clearField(10);
 
   @$pb.TagNumber(11)
-  $2.DartClip_Enum get clipBehavior => $_getN(6);
+  $2.DartClip_Enum get clipBehavior => $_getN(7);
   @$pb.TagNumber(11)
   set clipBehavior($2.DartClip_Enum v) { setField(11, v); }
   @$pb.TagNumber(11)
-  $core.bool hasClipBehavior() => $_has(6);
+  $core.bool hasClipBehavior() => $_has(7);
   @$pb.TagNumber(11)
   void clearClipBehavior() => clearField(11);
 
   @$pb.TagNumber(12)
-  $core.String get restorationId => $_getSZ(7);
+  $core.String get restorationId => $_getSZ(8);
   @$pb.TagNumber(12)
-  set restorationId($core.String v) { $_setString(7, v); }
+  set restorationId($core.String v) { $_setString(8, v); }
   @$pb.TagNumber(12)
-  $core.bool hasRestorationId() => $_has(7);
+  $core.bool hasRestorationId() => $_has(8);
   @$pb.TagNumber(12)
   void clearRestorationId() => clearField(12);
 
   @$pb.TagNumber(13)
-  $2.FlutterScrollViewKeyboardDismissBehavior_Enum get keyboardDismissBehavior => $_getN(8);
+  $2.FlutterScrollViewKeyboardDismissBehavior_Enum get keyboardDismissBehavior => $_getN(9);
   @$pb.TagNumber(13)
   set keyboardDismissBehavior($2.FlutterScrollViewKeyboardDismissBehavior_Enum v) { setField(13, v); }
   @$pb.TagNumber(13)
-  $core.bool hasKeyboardDismissBehavior() => $_has(8);
+  $core.bool hasKeyboardDismissBehavior() => $_has(9);
   @$pb.TagNumber(13)
   void clearKeyboardDismissBehavior() => clearField(13);
 }
@@ -53041,6 +54864,7 @@ enum WidgetExpression_Result {
   flutterOffstage, 
   flutterOpacity, 
   flutterOverflowBox, 
+  flutterPadding, 
   flutterPhysicalModel, 
   flutterPositioned, 
   flutterPositionedNamedFill, 
@@ -53057,6 +54881,7 @@ enum WidgetExpression_Result {
   flutterSizedBoxNamedShrink, 
   flutterSizedBoxNamedFromSize, 
   flutterSizedBoxNamedSquare, 
+  flutterSliverPadding, 
   flutterSliverToBoxAdapter, 
   flutterStack, 
   flutterTransformNamedRotate, 
@@ -53092,6 +54917,7 @@ enum WidgetExpression_Result {
   flutterAnimatedContainer, 
   flutterAnimatedFractionallySizedBox, 
   flutterAnimatedOpacity, 
+  flutterAnimatedPadding, 
   flutterAnimatedPhysicalModel, 
   flutterAnimatedPositioned, 
   flutterAnimatedPositionedDirectional, 
@@ -53402,6 +55228,7 @@ class WidgetExpression extends $pb.GeneratedMessage {
     FlutterOffstage? flutterOffstage,
     FlutterOpacity? flutterOpacity,
     FlutterOverflowBox? flutterOverflowBox,
+    FlutterPadding? flutterPadding,
     FlutterPhysicalModel? flutterPhysicalModel,
     FlutterPositioned? flutterPositioned,
     FlutterPositionedNamedFill? flutterPositionedNamedFill,
@@ -53418,6 +55245,7 @@ class WidgetExpression extends $pb.GeneratedMessage {
     FlutterSizedBoxNamedShrink? flutterSizedBoxNamedShrink,
     FlutterSizedBoxNamedFromSize? flutterSizedBoxNamedFromSize,
     FlutterSizedBoxNamedSquare? flutterSizedBoxNamedSquare,
+    FlutterSliverPadding? flutterSliverPadding,
     FlutterSliverToBoxAdapter? flutterSliverToBoxAdapter,
     FlutterStack? flutterStack,
     FlutterTransformNamedRotate? flutterTransformNamedRotate,
@@ -53453,6 +55281,7 @@ class WidgetExpression extends $pb.GeneratedMessage {
     FlutterAnimatedContainer? flutterAnimatedContainer,
     FlutterAnimatedFractionallySizedBox? flutterAnimatedFractionallySizedBox,
     FlutterAnimatedOpacity? flutterAnimatedOpacity,
+    FlutterAnimatedPadding? flutterAnimatedPadding,
     FlutterAnimatedPhysicalModel? flutterAnimatedPhysicalModel,
     FlutterAnimatedPositioned? flutterAnimatedPositioned,
     FlutterAnimatedPositionedDirectional? flutterAnimatedPositionedDirectional,
@@ -54212,6 +56041,9 @@ class WidgetExpression extends $pb.GeneratedMessage {
     if (flutterOverflowBox != null) {
       $result.flutterOverflowBox = flutterOverflowBox;
     }
+    if (flutterPadding != null) {
+      $result.flutterPadding = flutterPadding;
+    }
     if (flutterPhysicalModel != null) {
       $result.flutterPhysicalModel = flutterPhysicalModel;
     }
@@ -54259,6 +56091,9 @@ class WidgetExpression extends $pb.GeneratedMessage {
     }
     if (flutterSizedBoxNamedSquare != null) {
       $result.flutterSizedBoxNamedSquare = flutterSizedBoxNamedSquare;
+    }
+    if (flutterSliverPadding != null) {
+      $result.flutterSliverPadding = flutterSliverPadding;
     }
     if (flutterSliverToBoxAdapter != null) {
       $result.flutterSliverToBoxAdapter = flutterSliverToBoxAdapter;
@@ -54364,6 +56199,9 @@ class WidgetExpression extends $pb.GeneratedMessage {
     }
     if (flutterAnimatedOpacity != null) {
       $result.flutterAnimatedOpacity = flutterAnimatedOpacity;
+    }
+    if (flutterAnimatedPadding != null) {
+      $result.flutterAnimatedPadding = flutterAnimatedPadding;
     }
     if (flutterAnimatedPhysicalModel != null) {
       $result.flutterAnimatedPhysicalModel = flutterAnimatedPhysicalModel;
@@ -54835,140 +56673,143 @@ class WidgetExpression extends $pb.GeneratedMessage {
     225 : WidgetExpression_Result.flutterOffstage,
     226 : WidgetExpression_Result.flutterOpacity,
     227 : WidgetExpression_Result.flutterOverflowBox,
-    228 : WidgetExpression_Result.flutterPhysicalModel,
-    229 : WidgetExpression_Result.flutterPositioned,
-    230 : WidgetExpression_Result.flutterPositionedNamedFill,
-    231 : WidgetExpression_Result.flutterPositionedNamedDirectional,
-    232 : WidgetExpression_Result.flutterPositionedDirectional,
-    233 : WidgetExpression_Result.flutterRawImage,
-    234 : WidgetExpression_Result.flutterRepaintBoundary,
-    235 : WidgetExpression_Result.flutterRepaintBoundaryNamedWrap,
-    236 : WidgetExpression_Result.flutterRotatedBox,
-    237 : WidgetExpression_Result.flutterRow,
-    238 : WidgetExpression_Result.flutterSemantics,
-    239 : WidgetExpression_Result.flutterSizedBox,
-    240 : WidgetExpression_Result.flutterSizedBoxNamedExpand,
-    241 : WidgetExpression_Result.flutterSizedBoxNamedShrink,
-    242 : WidgetExpression_Result.flutterSizedBoxNamedFromSize,
-    243 : WidgetExpression_Result.flutterSizedBoxNamedSquare,
-    244 : WidgetExpression_Result.flutterSliverToBoxAdapter,
-    245 : WidgetExpression_Result.flutterStack,
-    246 : WidgetExpression_Result.flutterTransformNamedRotate,
-    247 : WidgetExpression_Result.flutterTransformNamedScale,
-    248 : WidgetExpression_Result.flutterTransformNamedFlip,
-    249 : WidgetExpression_Result.flutterUnconstrainedBox,
-    250 : WidgetExpression_Result.flutterWrap,
-    251 : WidgetExpression_Result.flutterContainer,
-    252 : WidgetExpression_Result.flutterDefaultSelectionStyle,
-    253 : WidgetExpression_Result.flutterDefaultSelectionStyleNamedFallback,
-    254 : WidgetExpression_Result.flutterDefaultTextEditingShortcuts,
-    255 : WidgetExpression_Result.flutterDismissible,
-    256 : WidgetExpression_Result.flutterDisplayFeatureSubScreen,
-    257 : WidgetExpression_Result.flutterDraggable,
-    258 : WidgetExpression_Result.flutterLongPressDraggable,
-    259 : WidgetExpression_Result.flutterDraggableScrollableActuator,
-    260 : WidgetExpression_Result.flutterFadeInImageNamedAssetNetwork,
-    261 : WidgetExpression_Result.flutterExcludeFocus,
-    262 : WidgetExpression_Result.flutterFocus,
-    263 : WidgetExpression_Result.flutterFocusScope,
-    264 : WidgetExpression_Result.flutterExcludeFocusTraversal,
-    265 : WidgetExpression_Result.flutterFocusTraversalGroup,
-    266 : WidgetExpression_Result.flutterForm,
-    267 : WidgetExpression_Result.flutterErrorWidgetNamedWithDetails,
-    268 : WidgetExpression_Result.flutterGestureDetector,
-    269 : WidgetExpression_Result.flutterRawGestureDetector,
-    270 : WidgetExpression_Result.flutterGridPaper,
-    271 : WidgetExpression_Result.flutterHeroMode,
-    272 : WidgetExpression_Result.flutterIcon,
-    273 : WidgetExpression_Result.flutterImageNamedNetwork,
-    274 : WidgetExpression_Result.flutterImageNamedAsset,
-    275 : WidgetExpression_Result.flutterImageIcon,
-    276 : WidgetExpression_Result.flutterAnimatedContainer,
-    277 : WidgetExpression_Result.flutterAnimatedFractionallySizedBox,
-    278 : WidgetExpression_Result.flutterAnimatedOpacity,
-    279 : WidgetExpression_Result.flutterAnimatedPhysicalModel,
-    280 : WidgetExpression_Result.flutterAnimatedPositioned,
-    281 : WidgetExpression_Result.flutterAnimatedPositionedDirectional,
-    282 : WidgetExpression_Result.flutterAnimatedRotation,
-    283 : WidgetExpression_Result.flutterAnimatedScale,
-    284 : WidgetExpression_Result.flutterSliverAnimatedOpacity,
-    285 : WidgetExpression_Result.flutterInteractiveViewer,
-    286 : WidgetExpression_Result.flutterListWheelScrollView,
-    287 : WidgetExpression_Result.flutterLookupBoundary,
-    288 : WidgetExpression_Result.flutterModalBarrier,
-    289 : WidgetExpression_Result.flutterNavigationToolbar,
-    290 : WidgetExpression_Result.flutterHeroControllerScopeNamedNone,
-    291 : WidgetExpression_Result.flutterNavigator,
-    292 : WidgetExpression_Result.flutterNotificationListener,
-    293 : WidgetExpression_Result.flutterOverflowBar,
-    294 : WidgetExpression_Result.flutterOverlay,
-    295 : WidgetExpression_Result.flutterGlowingOverscrollIndicator,
-    296 : WidgetExpression_Result.flutterStretchingOverscrollIndicator,
-    297 : WidgetExpression_Result.flutterPageView,
-    298 : WidgetExpression_Result.flutterPerformanceOverlay,
-    299 : WidgetExpression_Result.flutterPerformanceOverlayNamedAllEnabled,
-    300 : WidgetExpression_Result.flutterPlaceholder,
-    301 : WidgetExpression_Result.flutterAndroidView,
-    302 : WidgetExpression_Result.flutterHtmlElementView,
-    303 : WidgetExpression_Result.flutterUiKitView,
-    304 : WidgetExpression_Result.flutterPrimaryScrollControllerNamedNone,
-    305 : WidgetExpression_Result.flutterReorderableDelayedDragStartListener,
-    306 : WidgetExpression_Result.flutterReorderableDragStartListener,
-    307 : WidgetExpression_Result.flutterRestorationScope,
-    308 : WidgetExpression_Result.flutterRootRestorationScope,
-    309 : WidgetExpression_Result.flutterUnmanagedRestorationScope,
-    310 : WidgetExpression_Result.flutterSafeArea,
-    311 : WidgetExpression_Result.flutterSliverSafeArea,
-    312 : WidgetExpression_Result.flutterScrollNotificationObserver,
-    313 : WidgetExpression_Result.flutterCustomScrollView,
-    314 : WidgetExpression_Result.flutterGridViewNamedCount,
-    315 : WidgetExpression_Result.flutterGridViewNamedExtent,
-    316 : WidgetExpression_Result.flutterListView,
-    317 : WidgetExpression_Result.flutterRawScrollbar,
-    318 : WidgetExpression_Result.flutterSelectionContainerNamedDisabled,
-    319 : WidgetExpression_Result.flutterSemanticsDebugger,
-    320 : WidgetExpression_Result.flutterSharedAppData,
-    321 : WidgetExpression_Result.flutterShortcutRegistrar,
-    322 : WidgetExpression_Result.flutterSingleChildScrollView,
-    323 : WidgetExpression_Result.flutterSizeChangedLayoutNotifier,
-    324 : WidgetExpression_Result.flutterKeepAlive,
-    325 : WidgetExpression_Result.flutterSliverConstrainedCrossAxis,
-    326 : WidgetExpression_Result.flutterSliverCrossAxisExpanded,
-    327 : WidgetExpression_Result.flutterSliverCrossAxisGroup,
-    328 : WidgetExpression_Result.flutterSliverFixedExtentListNamedList,
-    329 : WidgetExpression_Result.flutterSliverGridNamedCount,
-    330 : WidgetExpression_Result.flutterSliverGridNamedExtent,
-    331 : WidgetExpression_Result.flutterSliverIgnorePointer,
-    332 : WidgetExpression_Result.flutterSliverListNamedList,
-    333 : WidgetExpression_Result.flutterSliverMainAxisGroup,
-    334 : WidgetExpression_Result.flutterSliverOffstage,
-    335 : WidgetExpression_Result.flutterSliverOpacity,
-    336 : WidgetExpression_Result.flutterSliverFillRemaining,
-    337 : WidgetExpression_Result.flutterSliverPrototypeExtentListNamedList,
-    338 : WidgetExpression_Result.flutterSpacer,
-    339 : WidgetExpression_Result.flutterTable,
-    340 : WidgetExpression_Result.flutterTableCell,
-    341 : WidgetExpression_Result.flutterTapRegion,
-    342 : WidgetExpression_Result.flutterTapRegionSurface,
-    343 : WidgetExpression_Result.flutterTextFieldTapRegion,
-    344 : WidgetExpression_Result.flutterDefaultTextStyleNamedFallback,
-    345 : WidgetExpression_Result.flutterText,
-    346 : WidgetExpression_Result.flutterTextSelectionGestureDetector,
-    347 : WidgetExpression_Result.flutterTexture,
-    348 : WidgetExpression_Result.flutterTickerMode,
-    349 : WidgetExpression_Result.flutterTitle,
-    350 : WidgetExpression_Result.flutterSliverVisibility,
-    351 : WidgetExpression_Result.flutterSliverVisibilityNamedMaintain,
-    352 : WidgetExpression_Result.flutterVisibility,
-    353 : WidgetExpression_Result.flutterVisibilityNamedMaintain,
-    354 : WidgetExpression_Result.flutterWidgetInspector,
-    355 : WidgetExpression_Result.flutterWillPopScope,
-    356 : WidgetExpression_Result.flutterProjectMyApp,
-    357 : WidgetExpression_Result.flutterProjectMyHomePage,
+    228 : WidgetExpression_Result.flutterPadding,
+    229 : WidgetExpression_Result.flutterPhysicalModel,
+    230 : WidgetExpression_Result.flutterPositioned,
+    231 : WidgetExpression_Result.flutterPositionedNamedFill,
+    232 : WidgetExpression_Result.flutterPositionedNamedDirectional,
+    233 : WidgetExpression_Result.flutterPositionedDirectional,
+    234 : WidgetExpression_Result.flutterRawImage,
+    235 : WidgetExpression_Result.flutterRepaintBoundary,
+    236 : WidgetExpression_Result.flutterRepaintBoundaryNamedWrap,
+    237 : WidgetExpression_Result.flutterRotatedBox,
+    238 : WidgetExpression_Result.flutterRow,
+    239 : WidgetExpression_Result.flutterSemantics,
+    240 : WidgetExpression_Result.flutterSizedBox,
+    241 : WidgetExpression_Result.flutterSizedBoxNamedExpand,
+    242 : WidgetExpression_Result.flutterSizedBoxNamedShrink,
+    243 : WidgetExpression_Result.flutterSizedBoxNamedFromSize,
+    244 : WidgetExpression_Result.flutterSizedBoxNamedSquare,
+    245 : WidgetExpression_Result.flutterSliverPadding,
+    246 : WidgetExpression_Result.flutterSliverToBoxAdapter,
+    247 : WidgetExpression_Result.flutterStack,
+    248 : WidgetExpression_Result.flutterTransformNamedRotate,
+    249 : WidgetExpression_Result.flutterTransformNamedScale,
+    250 : WidgetExpression_Result.flutterTransformNamedFlip,
+    251 : WidgetExpression_Result.flutterUnconstrainedBox,
+    252 : WidgetExpression_Result.flutterWrap,
+    253 : WidgetExpression_Result.flutterContainer,
+    254 : WidgetExpression_Result.flutterDefaultSelectionStyle,
+    255 : WidgetExpression_Result.flutterDefaultSelectionStyleNamedFallback,
+    256 : WidgetExpression_Result.flutterDefaultTextEditingShortcuts,
+    257 : WidgetExpression_Result.flutterDismissible,
+    258 : WidgetExpression_Result.flutterDisplayFeatureSubScreen,
+    259 : WidgetExpression_Result.flutterDraggable,
+    260 : WidgetExpression_Result.flutterLongPressDraggable,
+    261 : WidgetExpression_Result.flutterDraggableScrollableActuator,
+    262 : WidgetExpression_Result.flutterFadeInImageNamedAssetNetwork,
+    263 : WidgetExpression_Result.flutterExcludeFocus,
+    264 : WidgetExpression_Result.flutterFocus,
+    265 : WidgetExpression_Result.flutterFocusScope,
+    266 : WidgetExpression_Result.flutterExcludeFocusTraversal,
+    267 : WidgetExpression_Result.flutterFocusTraversalGroup,
+    268 : WidgetExpression_Result.flutterForm,
+    269 : WidgetExpression_Result.flutterErrorWidgetNamedWithDetails,
+    270 : WidgetExpression_Result.flutterGestureDetector,
+    271 : WidgetExpression_Result.flutterRawGestureDetector,
+    272 : WidgetExpression_Result.flutterGridPaper,
+    273 : WidgetExpression_Result.flutterHeroMode,
+    274 : WidgetExpression_Result.flutterIcon,
+    275 : WidgetExpression_Result.flutterImageNamedNetwork,
+    276 : WidgetExpression_Result.flutterImageNamedAsset,
+    277 : WidgetExpression_Result.flutterImageIcon,
+    278 : WidgetExpression_Result.flutterAnimatedContainer,
+    279 : WidgetExpression_Result.flutterAnimatedFractionallySizedBox,
+    280 : WidgetExpression_Result.flutterAnimatedOpacity,
+    281 : WidgetExpression_Result.flutterAnimatedPadding,
+    282 : WidgetExpression_Result.flutterAnimatedPhysicalModel,
+    283 : WidgetExpression_Result.flutterAnimatedPositioned,
+    284 : WidgetExpression_Result.flutterAnimatedPositionedDirectional,
+    285 : WidgetExpression_Result.flutterAnimatedRotation,
+    286 : WidgetExpression_Result.flutterAnimatedScale,
+    287 : WidgetExpression_Result.flutterSliverAnimatedOpacity,
+    288 : WidgetExpression_Result.flutterInteractiveViewer,
+    289 : WidgetExpression_Result.flutterListWheelScrollView,
+    290 : WidgetExpression_Result.flutterLookupBoundary,
+    291 : WidgetExpression_Result.flutterModalBarrier,
+    292 : WidgetExpression_Result.flutterNavigationToolbar,
+    293 : WidgetExpression_Result.flutterHeroControllerScopeNamedNone,
+    294 : WidgetExpression_Result.flutterNavigator,
+    295 : WidgetExpression_Result.flutterNotificationListener,
+    296 : WidgetExpression_Result.flutterOverflowBar,
+    297 : WidgetExpression_Result.flutterOverlay,
+    298 : WidgetExpression_Result.flutterGlowingOverscrollIndicator,
+    299 : WidgetExpression_Result.flutterStretchingOverscrollIndicator,
+    300 : WidgetExpression_Result.flutterPageView,
+    301 : WidgetExpression_Result.flutterPerformanceOverlay,
+    302 : WidgetExpression_Result.flutterPerformanceOverlayNamedAllEnabled,
+    303 : WidgetExpression_Result.flutterPlaceholder,
+    304 : WidgetExpression_Result.flutterAndroidView,
+    305 : WidgetExpression_Result.flutterHtmlElementView,
+    306 : WidgetExpression_Result.flutterUiKitView,
+    307 : WidgetExpression_Result.flutterPrimaryScrollControllerNamedNone,
+    308 : WidgetExpression_Result.flutterReorderableDelayedDragStartListener,
+    309 : WidgetExpression_Result.flutterReorderableDragStartListener,
+    310 : WidgetExpression_Result.flutterRestorationScope,
+    311 : WidgetExpression_Result.flutterRootRestorationScope,
+    312 : WidgetExpression_Result.flutterUnmanagedRestorationScope,
+    313 : WidgetExpression_Result.flutterSafeArea,
+    314 : WidgetExpression_Result.flutterSliverSafeArea,
+    315 : WidgetExpression_Result.flutterScrollNotificationObserver,
+    316 : WidgetExpression_Result.flutterCustomScrollView,
+    317 : WidgetExpression_Result.flutterGridViewNamedCount,
+    318 : WidgetExpression_Result.flutterGridViewNamedExtent,
+    319 : WidgetExpression_Result.flutterListView,
+    320 : WidgetExpression_Result.flutterRawScrollbar,
+    321 : WidgetExpression_Result.flutterSelectionContainerNamedDisabled,
+    322 : WidgetExpression_Result.flutterSemanticsDebugger,
+    323 : WidgetExpression_Result.flutterSharedAppData,
+    324 : WidgetExpression_Result.flutterShortcutRegistrar,
+    325 : WidgetExpression_Result.flutterSingleChildScrollView,
+    326 : WidgetExpression_Result.flutterSizeChangedLayoutNotifier,
+    327 : WidgetExpression_Result.flutterKeepAlive,
+    328 : WidgetExpression_Result.flutterSliverConstrainedCrossAxis,
+    329 : WidgetExpression_Result.flutterSliverCrossAxisExpanded,
+    330 : WidgetExpression_Result.flutterSliverCrossAxisGroup,
+    331 : WidgetExpression_Result.flutterSliverFixedExtentListNamedList,
+    332 : WidgetExpression_Result.flutterSliverGridNamedCount,
+    333 : WidgetExpression_Result.flutterSliverGridNamedExtent,
+    334 : WidgetExpression_Result.flutterSliverIgnorePointer,
+    335 : WidgetExpression_Result.flutterSliverListNamedList,
+    336 : WidgetExpression_Result.flutterSliverMainAxisGroup,
+    337 : WidgetExpression_Result.flutterSliverOffstage,
+    338 : WidgetExpression_Result.flutterSliverOpacity,
+    339 : WidgetExpression_Result.flutterSliverFillRemaining,
+    340 : WidgetExpression_Result.flutterSliverPrototypeExtentListNamedList,
+    341 : WidgetExpression_Result.flutterSpacer,
+    342 : WidgetExpression_Result.flutterTable,
+    343 : WidgetExpression_Result.flutterTableCell,
+    344 : WidgetExpression_Result.flutterTapRegion,
+    345 : WidgetExpression_Result.flutterTapRegionSurface,
+    346 : WidgetExpression_Result.flutterTextFieldTapRegion,
+    347 : WidgetExpression_Result.flutterDefaultTextStyleNamedFallback,
+    348 : WidgetExpression_Result.flutterText,
+    349 : WidgetExpression_Result.flutterTextSelectionGestureDetector,
+    350 : WidgetExpression_Result.flutterTexture,
+    351 : WidgetExpression_Result.flutterTickerMode,
+    352 : WidgetExpression_Result.flutterTitle,
+    353 : WidgetExpression_Result.flutterSliverVisibility,
+    354 : WidgetExpression_Result.flutterSliverVisibilityNamedMaintain,
+    355 : WidgetExpression_Result.flutterVisibility,
+    356 : WidgetExpression_Result.flutterVisibilityNamedMaintain,
+    357 : WidgetExpression_Result.flutterWidgetInspector,
+    358 : WidgetExpression_Result.flutterWillPopScope,
+    359 : WidgetExpression_Result.flutterProjectMyApp,
+    360 : WidgetExpression_Result.flutterProjectMyHomePage,
     0 : WidgetExpression_Result.notSet
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WidgetExpression', createEmptyInstance: create)
-    ..oo(0, [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357])
+    ..oo(0, [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360])
     ..aOM<CupertinoActivityIndicator>(2, _omitFieldNames ? '' : 'cupertinoActivityIndicator', subBuilder: CupertinoActivityIndicator.create)
     ..aOM<CupertinoActivityIndicatorNamedPartiallyRevealed>(3, _omitFieldNames ? '' : 'cupertinoActivityIndicatorNamedPartiallyRevealed', subBuilder: CupertinoActivityIndicatorNamedPartiallyRevealed.create)
     ..aOM<CupertinoApp>(4, _omitFieldNames ? '' : 'cupertinoApp', subBuilder: CupertinoApp.create)
@@ -55195,136 +57036,139 @@ class WidgetExpression extends $pb.GeneratedMessage {
     ..aOM<FlutterOffstage>(225, _omitFieldNames ? '' : 'flutterOffstage', subBuilder: FlutterOffstage.create)
     ..aOM<FlutterOpacity>(226, _omitFieldNames ? '' : 'flutterOpacity', subBuilder: FlutterOpacity.create)
     ..aOM<FlutterOverflowBox>(227, _omitFieldNames ? '' : 'flutterOverflowBox', subBuilder: FlutterOverflowBox.create)
-    ..aOM<FlutterPhysicalModel>(228, _omitFieldNames ? '' : 'flutterPhysicalModel', subBuilder: FlutterPhysicalModel.create)
-    ..aOM<FlutterPositioned>(229, _omitFieldNames ? '' : 'flutterPositioned', subBuilder: FlutterPositioned.create)
-    ..aOM<FlutterPositionedNamedFill>(230, _omitFieldNames ? '' : 'flutterPositionedNamedFill', subBuilder: FlutterPositionedNamedFill.create)
-    ..aOM<FlutterPositionedNamedDirectional>(231, _omitFieldNames ? '' : 'flutterPositionedNamedDirectional', subBuilder: FlutterPositionedNamedDirectional.create)
-    ..aOM<FlutterPositionedDirectional>(232, _omitFieldNames ? '' : 'flutterPositionedDirectional', subBuilder: FlutterPositionedDirectional.create)
-    ..aOM<FlutterRawImage>(233, _omitFieldNames ? '' : 'flutterRawImage', subBuilder: FlutterRawImage.create)
-    ..aOM<FlutterRepaintBoundary>(234, _omitFieldNames ? '' : 'flutterRepaintBoundary', subBuilder: FlutterRepaintBoundary.create)
-    ..aOM<FlutterRepaintBoundaryNamedWrap>(235, _omitFieldNames ? '' : 'flutterRepaintBoundaryNamedWrap', subBuilder: FlutterRepaintBoundaryNamedWrap.create)
-    ..aOM<FlutterRotatedBox>(236, _omitFieldNames ? '' : 'flutterRotatedBox', subBuilder: FlutterRotatedBox.create)
-    ..aOM<FlutterRow>(237, _omitFieldNames ? '' : 'flutterRow', subBuilder: FlutterRow.create)
-    ..aOM<FlutterSemantics>(238, _omitFieldNames ? '' : 'flutterSemantics', subBuilder: FlutterSemantics.create)
-    ..aOM<FlutterSizedBox>(239, _omitFieldNames ? '' : 'flutterSizedBox', subBuilder: FlutterSizedBox.create)
-    ..aOM<FlutterSizedBoxNamedExpand>(240, _omitFieldNames ? '' : 'flutterSizedBoxNamedExpand', subBuilder: FlutterSizedBoxNamedExpand.create)
-    ..aOM<FlutterSizedBoxNamedShrink>(241, _omitFieldNames ? '' : 'flutterSizedBoxNamedShrink', subBuilder: FlutterSizedBoxNamedShrink.create)
-    ..aOM<FlutterSizedBoxNamedFromSize>(242, _omitFieldNames ? '' : 'flutterSizedBoxNamedFromSize', subBuilder: FlutterSizedBoxNamedFromSize.create)
-    ..aOM<FlutterSizedBoxNamedSquare>(243, _omitFieldNames ? '' : 'flutterSizedBoxNamedSquare', subBuilder: FlutterSizedBoxNamedSquare.create)
-    ..aOM<FlutterSliverToBoxAdapter>(244, _omitFieldNames ? '' : 'flutterSliverToBoxAdapter', subBuilder: FlutterSliverToBoxAdapter.create)
-    ..aOM<FlutterStack>(245, _omitFieldNames ? '' : 'flutterStack', subBuilder: FlutterStack.create)
-    ..aOM<FlutterTransformNamedRotate>(246, _omitFieldNames ? '' : 'flutterTransformNamedRotate', subBuilder: FlutterTransformNamedRotate.create)
-    ..aOM<FlutterTransformNamedScale>(247, _omitFieldNames ? '' : 'flutterTransformNamedScale', subBuilder: FlutterTransformNamedScale.create)
-    ..aOM<FlutterTransformNamedFlip>(248, _omitFieldNames ? '' : 'flutterTransformNamedFlip', subBuilder: FlutterTransformNamedFlip.create)
-    ..aOM<FlutterUnconstrainedBox>(249, _omitFieldNames ? '' : 'flutterUnconstrainedBox', subBuilder: FlutterUnconstrainedBox.create)
-    ..aOM<FlutterWrap>(250, _omitFieldNames ? '' : 'flutterWrap', subBuilder: FlutterWrap.create)
-    ..aOM<FlutterContainer>(251, _omitFieldNames ? '' : 'flutterContainer', subBuilder: FlutterContainer.create)
-    ..aOM<FlutterDefaultSelectionStyle>(252, _omitFieldNames ? '' : 'flutterDefaultSelectionStyle', subBuilder: FlutterDefaultSelectionStyle.create)
-    ..aOM<FlutterDefaultSelectionStyleNamedFallback>(253, _omitFieldNames ? '' : 'flutterDefaultSelectionStyleNamedFallback', subBuilder: FlutterDefaultSelectionStyleNamedFallback.create)
-    ..aOM<FlutterDefaultTextEditingShortcuts>(254, _omitFieldNames ? '' : 'flutterDefaultTextEditingShortcuts', subBuilder: FlutterDefaultTextEditingShortcuts.create)
-    ..aOM<FlutterDismissible>(255, _omitFieldNames ? '' : 'flutterDismissible', subBuilder: FlutterDismissible.create)
-    ..aOM<FlutterDisplayFeatureSubScreen>(256, _omitFieldNames ? '' : 'flutterDisplayFeatureSubScreen', subBuilder: FlutterDisplayFeatureSubScreen.create)
-    ..aOM<FlutterDraggable>(257, _omitFieldNames ? '' : 'flutterDraggable', subBuilder: FlutterDraggable.create)
-    ..aOM<FlutterLongPressDraggable>(258, _omitFieldNames ? '' : 'flutterLongPressDraggable', subBuilder: FlutterLongPressDraggable.create)
-    ..aOM<FlutterDraggableScrollableActuator>(259, _omitFieldNames ? '' : 'flutterDraggableScrollableActuator', subBuilder: FlutterDraggableScrollableActuator.create)
-    ..aOM<FlutterFadeInImageNamedAssetNetwork>(260, _omitFieldNames ? '' : 'flutterFadeInImageNamedAssetNetwork', subBuilder: FlutterFadeInImageNamedAssetNetwork.create)
-    ..aOM<FlutterExcludeFocus>(261, _omitFieldNames ? '' : 'flutterExcludeFocus', subBuilder: FlutterExcludeFocus.create)
-    ..aOM<FlutterFocus>(262, _omitFieldNames ? '' : 'flutterFocus', subBuilder: FlutterFocus.create)
-    ..aOM<FlutterFocusScope>(263, _omitFieldNames ? '' : 'flutterFocusScope', subBuilder: FlutterFocusScope.create)
-    ..aOM<FlutterExcludeFocusTraversal>(264, _omitFieldNames ? '' : 'flutterExcludeFocusTraversal', subBuilder: FlutterExcludeFocusTraversal.create)
-    ..aOM<FlutterFocusTraversalGroup>(265, _omitFieldNames ? '' : 'flutterFocusTraversalGroup', subBuilder: FlutterFocusTraversalGroup.create)
-    ..aOM<FlutterForm>(266, _omitFieldNames ? '' : 'flutterForm', subBuilder: FlutterForm.create)
-    ..aOM<FlutterErrorWidgetNamedWithDetails>(267, _omitFieldNames ? '' : 'flutterErrorWidgetNamedWithDetails', subBuilder: FlutterErrorWidgetNamedWithDetails.create)
-    ..aOM<FlutterGestureDetector>(268, _omitFieldNames ? '' : 'flutterGestureDetector', subBuilder: FlutterGestureDetector.create)
-    ..aOM<FlutterRawGestureDetector>(269, _omitFieldNames ? '' : 'flutterRawGestureDetector', subBuilder: FlutterRawGestureDetector.create)
-    ..aOM<FlutterGridPaper>(270, _omitFieldNames ? '' : 'flutterGridPaper', subBuilder: FlutterGridPaper.create)
-    ..aOM<FlutterHeroMode>(271, _omitFieldNames ? '' : 'flutterHeroMode', subBuilder: FlutterHeroMode.create)
-    ..aOM<FlutterIcon>(272, _omitFieldNames ? '' : 'flutterIcon', subBuilder: FlutterIcon.create)
-    ..aOM<FlutterImageNamedNetwork>(273, _omitFieldNames ? '' : 'flutterImageNamedNetwork', subBuilder: FlutterImageNamedNetwork.create)
-    ..aOM<FlutterImageNamedAsset>(274, _omitFieldNames ? '' : 'flutterImageNamedAsset', subBuilder: FlutterImageNamedAsset.create)
-    ..aOM<FlutterImageIcon>(275, _omitFieldNames ? '' : 'flutterImageIcon', subBuilder: FlutterImageIcon.create)
-    ..aOM<FlutterAnimatedContainer>(276, _omitFieldNames ? '' : 'flutterAnimatedContainer', subBuilder: FlutterAnimatedContainer.create)
-    ..aOM<FlutterAnimatedFractionallySizedBox>(277, _omitFieldNames ? '' : 'flutterAnimatedFractionallySizedBox', subBuilder: FlutterAnimatedFractionallySizedBox.create)
-    ..aOM<FlutterAnimatedOpacity>(278, _omitFieldNames ? '' : 'flutterAnimatedOpacity', subBuilder: FlutterAnimatedOpacity.create)
-    ..aOM<FlutterAnimatedPhysicalModel>(279, _omitFieldNames ? '' : 'flutterAnimatedPhysicalModel', subBuilder: FlutterAnimatedPhysicalModel.create)
-    ..aOM<FlutterAnimatedPositioned>(280, _omitFieldNames ? '' : 'flutterAnimatedPositioned', subBuilder: FlutterAnimatedPositioned.create)
-    ..aOM<FlutterAnimatedPositionedDirectional>(281, _omitFieldNames ? '' : 'flutterAnimatedPositionedDirectional', subBuilder: FlutterAnimatedPositionedDirectional.create)
-    ..aOM<FlutterAnimatedRotation>(282, _omitFieldNames ? '' : 'flutterAnimatedRotation', subBuilder: FlutterAnimatedRotation.create)
-    ..aOM<FlutterAnimatedScale>(283, _omitFieldNames ? '' : 'flutterAnimatedScale', subBuilder: FlutterAnimatedScale.create)
-    ..aOM<FlutterSliverAnimatedOpacity>(284, _omitFieldNames ? '' : 'flutterSliverAnimatedOpacity', subBuilder: FlutterSliverAnimatedOpacity.create)
-    ..aOM<FlutterInteractiveViewer>(285, _omitFieldNames ? '' : 'flutterInteractiveViewer', subBuilder: FlutterInteractiveViewer.create)
-    ..aOM<FlutterListWheelScrollView>(286, _omitFieldNames ? '' : 'flutterListWheelScrollView', subBuilder: FlutterListWheelScrollView.create)
-    ..aOM<FlutterLookupBoundary>(287, _omitFieldNames ? '' : 'flutterLookupBoundary', subBuilder: FlutterLookupBoundary.create)
-    ..aOM<FlutterModalBarrier>(288, _omitFieldNames ? '' : 'flutterModalBarrier', subBuilder: FlutterModalBarrier.create)
-    ..aOM<FlutterNavigationToolbar>(289, _omitFieldNames ? '' : 'flutterNavigationToolbar', subBuilder: FlutterNavigationToolbar.create)
-    ..aOM<FlutterHeroControllerScopeNamedNone>(290, _omitFieldNames ? '' : 'flutterHeroControllerScopeNamedNone', subBuilder: FlutterHeroControllerScopeNamedNone.create)
-    ..aOM<FlutterNavigator>(291, _omitFieldNames ? '' : 'flutterNavigator', subBuilder: FlutterNavigator.create)
-    ..aOM<FlutterNotificationListener>(292, _omitFieldNames ? '' : 'flutterNotificationListener', subBuilder: FlutterNotificationListener.create)
-    ..aOM<FlutterOverflowBar>(293, _omitFieldNames ? '' : 'flutterOverflowBar', subBuilder: FlutterOverflowBar.create)
-    ..aOM<FlutterOverlay>(294, _omitFieldNames ? '' : 'flutterOverlay', subBuilder: FlutterOverlay.create)
-    ..aOM<FlutterGlowingOverscrollIndicator>(295, _omitFieldNames ? '' : 'flutterGlowingOverscrollIndicator', subBuilder: FlutterGlowingOverscrollIndicator.create)
-    ..aOM<FlutterStretchingOverscrollIndicator>(296, _omitFieldNames ? '' : 'flutterStretchingOverscrollIndicator', subBuilder: FlutterStretchingOverscrollIndicator.create)
-    ..aOM<FlutterPageView>(297, _omitFieldNames ? '' : 'flutterPageView', subBuilder: FlutterPageView.create)
-    ..aOM<FlutterPerformanceOverlay>(298, _omitFieldNames ? '' : 'flutterPerformanceOverlay', subBuilder: FlutterPerformanceOverlay.create)
-    ..aOM<FlutterPerformanceOverlayNamedAllEnabled>(299, _omitFieldNames ? '' : 'flutterPerformanceOverlayNamedAllEnabled', subBuilder: FlutterPerformanceOverlayNamedAllEnabled.create)
-    ..aOM<FlutterPlaceholder>(300, _omitFieldNames ? '' : 'flutterPlaceholder', subBuilder: FlutterPlaceholder.create)
-    ..aOM<FlutterAndroidView>(301, _omitFieldNames ? '' : 'flutterAndroidView', subBuilder: FlutterAndroidView.create)
-    ..aOM<FlutterHtmlElementView>(302, _omitFieldNames ? '' : 'flutterHtmlElementView', subBuilder: FlutterHtmlElementView.create)
-    ..aOM<FlutterUiKitView>(303, _omitFieldNames ? '' : 'flutterUiKitView', subBuilder: FlutterUiKitView.create)
-    ..aOM<FlutterPrimaryScrollControllerNamedNone>(304, _omitFieldNames ? '' : 'flutterPrimaryScrollControllerNamedNone', subBuilder: FlutterPrimaryScrollControllerNamedNone.create)
-    ..aOM<FlutterReorderableDelayedDragStartListener>(305, _omitFieldNames ? '' : 'flutterReorderableDelayedDragStartListener', subBuilder: FlutterReorderableDelayedDragStartListener.create)
-    ..aOM<FlutterReorderableDragStartListener>(306, _omitFieldNames ? '' : 'flutterReorderableDragStartListener', subBuilder: FlutterReorderableDragStartListener.create)
-    ..aOM<FlutterRestorationScope>(307, _omitFieldNames ? '' : 'flutterRestorationScope', subBuilder: FlutterRestorationScope.create)
-    ..aOM<FlutterRootRestorationScope>(308, _omitFieldNames ? '' : 'flutterRootRestorationScope', subBuilder: FlutterRootRestorationScope.create)
-    ..aOM<FlutterUnmanagedRestorationScope>(309, _omitFieldNames ? '' : 'flutterUnmanagedRestorationScope', subBuilder: FlutterUnmanagedRestorationScope.create)
-    ..aOM<FlutterSafeArea>(310, _omitFieldNames ? '' : 'flutterSafeArea', subBuilder: FlutterSafeArea.create)
-    ..aOM<FlutterSliverSafeArea>(311, _omitFieldNames ? '' : 'flutterSliverSafeArea', subBuilder: FlutterSliverSafeArea.create)
-    ..aOM<FlutterScrollNotificationObserver>(312, _omitFieldNames ? '' : 'flutterScrollNotificationObserver', subBuilder: FlutterScrollNotificationObserver.create)
-    ..aOM<FlutterCustomScrollView>(313, _omitFieldNames ? '' : 'flutterCustomScrollView', subBuilder: FlutterCustomScrollView.create)
-    ..aOM<FlutterGridViewNamedCount>(314, _omitFieldNames ? '' : 'flutterGridViewNamedCount', subBuilder: FlutterGridViewNamedCount.create)
-    ..aOM<FlutterGridViewNamedExtent>(315, _omitFieldNames ? '' : 'flutterGridViewNamedExtent', subBuilder: FlutterGridViewNamedExtent.create)
-    ..aOM<FlutterListView>(316, _omitFieldNames ? '' : 'flutterListView', subBuilder: FlutterListView.create)
-    ..aOM<FlutterRawScrollbar>(317, _omitFieldNames ? '' : 'flutterRawScrollbar', subBuilder: FlutterRawScrollbar.create)
-    ..aOM<FlutterSelectionContainerNamedDisabled>(318, _omitFieldNames ? '' : 'flutterSelectionContainerNamedDisabled', subBuilder: FlutterSelectionContainerNamedDisabled.create)
-    ..aOM<FlutterSemanticsDebugger>(319, _omitFieldNames ? '' : 'flutterSemanticsDebugger', subBuilder: FlutterSemanticsDebugger.create)
-    ..aOM<FlutterSharedAppData>(320, _omitFieldNames ? '' : 'flutterSharedAppData', subBuilder: FlutterSharedAppData.create)
-    ..aOM<FlutterShortcutRegistrar>(321, _omitFieldNames ? '' : 'flutterShortcutRegistrar', subBuilder: FlutterShortcutRegistrar.create)
-    ..aOM<FlutterSingleChildScrollView>(322, _omitFieldNames ? '' : 'flutterSingleChildScrollView', subBuilder: FlutterSingleChildScrollView.create)
-    ..aOM<FlutterSizeChangedLayoutNotifier>(323, _omitFieldNames ? '' : 'flutterSizeChangedLayoutNotifier', subBuilder: FlutterSizeChangedLayoutNotifier.create)
-    ..aOM<FlutterKeepAlive>(324, _omitFieldNames ? '' : 'flutterKeepAlive', subBuilder: FlutterKeepAlive.create)
-    ..aOM<FlutterSliverConstrainedCrossAxis>(325, _omitFieldNames ? '' : 'flutterSliverConstrainedCrossAxis', subBuilder: FlutterSliverConstrainedCrossAxis.create)
-    ..aOM<FlutterSliverCrossAxisExpanded>(326, _omitFieldNames ? '' : 'flutterSliverCrossAxisExpanded', subBuilder: FlutterSliverCrossAxisExpanded.create)
-    ..aOM<FlutterSliverCrossAxisGroup>(327, _omitFieldNames ? '' : 'flutterSliverCrossAxisGroup', subBuilder: FlutterSliverCrossAxisGroup.create)
-    ..aOM<FlutterSliverFixedExtentListNamedList>(328, _omitFieldNames ? '' : 'flutterSliverFixedExtentListNamedList', subBuilder: FlutterSliverFixedExtentListNamedList.create)
-    ..aOM<FlutterSliverGridNamedCount>(329, _omitFieldNames ? '' : 'flutterSliverGridNamedCount', subBuilder: FlutterSliverGridNamedCount.create)
-    ..aOM<FlutterSliverGridNamedExtent>(330, _omitFieldNames ? '' : 'flutterSliverGridNamedExtent', subBuilder: FlutterSliverGridNamedExtent.create)
-    ..aOM<FlutterSliverIgnorePointer>(331, _omitFieldNames ? '' : 'flutterSliverIgnorePointer', subBuilder: FlutterSliverIgnorePointer.create)
-    ..aOM<FlutterSliverListNamedList>(332, _omitFieldNames ? '' : 'flutterSliverListNamedList', subBuilder: FlutterSliverListNamedList.create)
-    ..aOM<FlutterSliverMainAxisGroup>(333, _omitFieldNames ? '' : 'flutterSliverMainAxisGroup', subBuilder: FlutterSliverMainAxisGroup.create)
-    ..aOM<FlutterSliverOffstage>(334, _omitFieldNames ? '' : 'flutterSliverOffstage', subBuilder: FlutterSliverOffstage.create)
-    ..aOM<FlutterSliverOpacity>(335, _omitFieldNames ? '' : 'flutterSliverOpacity', subBuilder: FlutterSliverOpacity.create)
-    ..aOM<FlutterSliverFillRemaining>(336, _omitFieldNames ? '' : 'flutterSliverFillRemaining', subBuilder: FlutterSliverFillRemaining.create)
-    ..aOM<FlutterSliverPrototypeExtentListNamedList>(337, _omitFieldNames ? '' : 'flutterSliverPrototypeExtentListNamedList', subBuilder: FlutterSliverPrototypeExtentListNamedList.create)
-    ..aOM<FlutterSpacer>(338, _omitFieldNames ? '' : 'flutterSpacer', subBuilder: FlutterSpacer.create)
-    ..aOM<FlutterTable>(339, _omitFieldNames ? '' : 'flutterTable', subBuilder: FlutterTable.create)
-    ..aOM<FlutterTableCell>(340, _omitFieldNames ? '' : 'flutterTableCell', subBuilder: FlutterTableCell.create)
-    ..aOM<FlutterTapRegion>(341, _omitFieldNames ? '' : 'flutterTapRegion', subBuilder: FlutterTapRegion.create)
-    ..aOM<FlutterTapRegionSurface>(342, _omitFieldNames ? '' : 'flutterTapRegionSurface', subBuilder: FlutterTapRegionSurface.create)
-    ..aOM<FlutterTextFieldTapRegion>(343, _omitFieldNames ? '' : 'flutterTextFieldTapRegion', subBuilder: FlutterTextFieldTapRegion.create)
-    ..aOM<FlutterDefaultTextStyleNamedFallback>(344, _omitFieldNames ? '' : 'flutterDefaultTextStyleNamedFallback', subBuilder: FlutterDefaultTextStyleNamedFallback.create)
-    ..aOM<FlutterText>(345, _omitFieldNames ? '' : 'flutterText', subBuilder: FlutterText.create)
-    ..aOM<FlutterTextSelectionGestureDetector>(346, _omitFieldNames ? '' : 'flutterTextSelectionGestureDetector', subBuilder: FlutterTextSelectionGestureDetector.create)
-    ..aOM<FlutterTexture>(347, _omitFieldNames ? '' : 'flutterTexture', subBuilder: FlutterTexture.create)
-    ..aOM<FlutterTickerMode>(348, _omitFieldNames ? '' : 'flutterTickerMode', subBuilder: FlutterTickerMode.create)
-    ..aOM<FlutterTitle>(349, _omitFieldNames ? '' : 'flutterTitle', subBuilder: FlutterTitle.create)
-    ..aOM<FlutterSliverVisibility>(350, _omitFieldNames ? '' : 'flutterSliverVisibility', subBuilder: FlutterSliverVisibility.create)
-    ..aOM<FlutterSliverVisibilityNamedMaintain>(351, _omitFieldNames ? '' : 'flutterSliverVisibilityNamedMaintain', subBuilder: FlutterSliverVisibilityNamedMaintain.create)
-    ..aOM<FlutterVisibility>(352, _omitFieldNames ? '' : 'flutterVisibility', subBuilder: FlutterVisibility.create)
-    ..aOM<FlutterVisibilityNamedMaintain>(353, _omitFieldNames ? '' : 'flutterVisibilityNamedMaintain', subBuilder: FlutterVisibilityNamedMaintain.create)
-    ..aOM<FlutterWidgetInspector>(354, _omitFieldNames ? '' : 'flutterWidgetInspector', subBuilder: FlutterWidgetInspector.create)
-    ..aOM<FlutterWillPopScope>(355, _omitFieldNames ? '' : 'flutterWillPopScope', subBuilder: FlutterWillPopScope.create)
-    ..aOM<FlutterProjectMyApp>(356, _omitFieldNames ? '' : 'flutterProjectMyApp', subBuilder: FlutterProjectMyApp.create)
-    ..aOM<FlutterProjectMyHomePage>(357, _omitFieldNames ? '' : 'flutterProjectMyHomePage', subBuilder: FlutterProjectMyHomePage.create)
+    ..aOM<FlutterPadding>(228, _omitFieldNames ? '' : 'flutterPadding', subBuilder: FlutterPadding.create)
+    ..aOM<FlutterPhysicalModel>(229, _omitFieldNames ? '' : 'flutterPhysicalModel', subBuilder: FlutterPhysicalModel.create)
+    ..aOM<FlutterPositioned>(230, _omitFieldNames ? '' : 'flutterPositioned', subBuilder: FlutterPositioned.create)
+    ..aOM<FlutterPositionedNamedFill>(231, _omitFieldNames ? '' : 'flutterPositionedNamedFill', subBuilder: FlutterPositionedNamedFill.create)
+    ..aOM<FlutterPositionedNamedDirectional>(232, _omitFieldNames ? '' : 'flutterPositionedNamedDirectional', subBuilder: FlutterPositionedNamedDirectional.create)
+    ..aOM<FlutterPositionedDirectional>(233, _omitFieldNames ? '' : 'flutterPositionedDirectional', subBuilder: FlutterPositionedDirectional.create)
+    ..aOM<FlutterRawImage>(234, _omitFieldNames ? '' : 'flutterRawImage', subBuilder: FlutterRawImage.create)
+    ..aOM<FlutterRepaintBoundary>(235, _omitFieldNames ? '' : 'flutterRepaintBoundary', subBuilder: FlutterRepaintBoundary.create)
+    ..aOM<FlutterRepaintBoundaryNamedWrap>(236, _omitFieldNames ? '' : 'flutterRepaintBoundaryNamedWrap', subBuilder: FlutterRepaintBoundaryNamedWrap.create)
+    ..aOM<FlutterRotatedBox>(237, _omitFieldNames ? '' : 'flutterRotatedBox', subBuilder: FlutterRotatedBox.create)
+    ..aOM<FlutterRow>(238, _omitFieldNames ? '' : 'flutterRow', subBuilder: FlutterRow.create)
+    ..aOM<FlutterSemantics>(239, _omitFieldNames ? '' : 'flutterSemantics', subBuilder: FlutterSemantics.create)
+    ..aOM<FlutterSizedBox>(240, _omitFieldNames ? '' : 'flutterSizedBox', subBuilder: FlutterSizedBox.create)
+    ..aOM<FlutterSizedBoxNamedExpand>(241, _omitFieldNames ? '' : 'flutterSizedBoxNamedExpand', subBuilder: FlutterSizedBoxNamedExpand.create)
+    ..aOM<FlutterSizedBoxNamedShrink>(242, _omitFieldNames ? '' : 'flutterSizedBoxNamedShrink', subBuilder: FlutterSizedBoxNamedShrink.create)
+    ..aOM<FlutterSizedBoxNamedFromSize>(243, _omitFieldNames ? '' : 'flutterSizedBoxNamedFromSize', subBuilder: FlutterSizedBoxNamedFromSize.create)
+    ..aOM<FlutterSizedBoxNamedSquare>(244, _omitFieldNames ? '' : 'flutterSizedBoxNamedSquare', subBuilder: FlutterSizedBoxNamedSquare.create)
+    ..aOM<FlutterSliverPadding>(245, _omitFieldNames ? '' : 'flutterSliverPadding', subBuilder: FlutterSliverPadding.create)
+    ..aOM<FlutterSliverToBoxAdapter>(246, _omitFieldNames ? '' : 'flutterSliverToBoxAdapter', subBuilder: FlutterSliverToBoxAdapter.create)
+    ..aOM<FlutterStack>(247, _omitFieldNames ? '' : 'flutterStack', subBuilder: FlutterStack.create)
+    ..aOM<FlutterTransformNamedRotate>(248, _omitFieldNames ? '' : 'flutterTransformNamedRotate', subBuilder: FlutterTransformNamedRotate.create)
+    ..aOM<FlutterTransformNamedScale>(249, _omitFieldNames ? '' : 'flutterTransformNamedScale', subBuilder: FlutterTransformNamedScale.create)
+    ..aOM<FlutterTransformNamedFlip>(250, _omitFieldNames ? '' : 'flutterTransformNamedFlip', subBuilder: FlutterTransformNamedFlip.create)
+    ..aOM<FlutterUnconstrainedBox>(251, _omitFieldNames ? '' : 'flutterUnconstrainedBox', subBuilder: FlutterUnconstrainedBox.create)
+    ..aOM<FlutterWrap>(252, _omitFieldNames ? '' : 'flutterWrap', subBuilder: FlutterWrap.create)
+    ..aOM<FlutterContainer>(253, _omitFieldNames ? '' : 'flutterContainer', subBuilder: FlutterContainer.create)
+    ..aOM<FlutterDefaultSelectionStyle>(254, _omitFieldNames ? '' : 'flutterDefaultSelectionStyle', subBuilder: FlutterDefaultSelectionStyle.create)
+    ..aOM<FlutterDefaultSelectionStyleNamedFallback>(255, _omitFieldNames ? '' : 'flutterDefaultSelectionStyleNamedFallback', subBuilder: FlutterDefaultSelectionStyleNamedFallback.create)
+    ..aOM<FlutterDefaultTextEditingShortcuts>(256, _omitFieldNames ? '' : 'flutterDefaultTextEditingShortcuts', subBuilder: FlutterDefaultTextEditingShortcuts.create)
+    ..aOM<FlutterDismissible>(257, _omitFieldNames ? '' : 'flutterDismissible', subBuilder: FlutterDismissible.create)
+    ..aOM<FlutterDisplayFeatureSubScreen>(258, _omitFieldNames ? '' : 'flutterDisplayFeatureSubScreen', subBuilder: FlutterDisplayFeatureSubScreen.create)
+    ..aOM<FlutterDraggable>(259, _omitFieldNames ? '' : 'flutterDraggable', subBuilder: FlutterDraggable.create)
+    ..aOM<FlutterLongPressDraggable>(260, _omitFieldNames ? '' : 'flutterLongPressDraggable', subBuilder: FlutterLongPressDraggable.create)
+    ..aOM<FlutterDraggableScrollableActuator>(261, _omitFieldNames ? '' : 'flutterDraggableScrollableActuator', subBuilder: FlutterDraggableScrollableActuator.create)
+    ..aOM<FlutterFadeInImageNamedAssetNetwork>(262, _omitFieldNames ? '' : 'flutterFadeInImageNamedAssetNetwork', subBuilder: FlutterFadeInImageNamedAssetNetwork.create)
+    ..aOM<FlutterExcludeFocus>(263, _omitFieldNames ? '' : 'flutterExcludeFocus', subBuilder: FlutterExcludeFocus.create)
+    ..aOM<FlutterFocus>(264, _omitFieldNames ? '' : 'flutterFocus', subBuilder: FlutterFocus.create)
+    ..aOM<FlutterFocusScope>(265, _omitFieldNames ? '' : 'flutterFocusScope', subBuilder: FlutterFocusScope.create)
+    ..aOM<FlutterExcludeFocusTraversal>(266, _omitFieldNames ? '' : 'flutterExcludeFocusTraversal', subBuilder: FlutterExcludeFocusTraversal.create)
+    ..aOM<FlutterFocusTraversalGroup>(267, _omitFieldNames ? '' : 'flutterFocusTraversalGroup', subBuilder: FlutterFocusTraversalGroup.create)
+    ..aOM<FlutterForm>(268, _omitFieldNames ? '' : 'flutterForm', subBuilder: FlutterForm.create)
+    ..aOM<FlutterErrorWidgetNamedWithDetails>(269, _omitFieldNames ? '' : 'flutterErrorWidgetNamedWithDetails', subBuilder: FlutterErrorWidgetNamedWithDetails.create)
+    ..aOM<FlutterGestureDetector>(270, _omitFieldNames ? '' : 'flutterGestureDetector', subBuilder: FlutterGestureDetector.create)
+    ..aOM<FlutterRawGestureDetector>(271, _omitFieldNames ? '' : 'flutterRawGestureDetector', subBuilder: FlutterRawGestureDetector.create)
+    ..aOM<FlutterGridPaper>(272, _omitFieldNames ? '' : 'flutterGridPaper', subBuilder: FlutterGridPaper.create)
+    ..aOM<FlutterHeroMode>(273, _omitFieldNames ? '' : 'flutterHeroMode', subBuilder: FlutterHeroMode.create)
+    ..aOM<FlutterIcon>(274, _omitFieldNames ? '' : 'flutterIcon', subBuilder: FlutterIcon.create)
+    ..aOM<FlutterImageNamedNetwork>(275, _omitFieldNames ? '' : 'flutterImageNamedNetwork', subBuilder: FlutterImageNamedNetwork.create)
+    ..aOM<FlutterImageNamedAsset>(276, _omitFieldNames ? '' : 'flutterImageNamedAsset', subBuilder: FlutterImageNamedAsset.create)
+    ..aOM<FlutterImageIcon>(277, _omitFieldNames ? '' : 'flutterImageIcon', subBuilder: FlutterImageIcon.create)
+    ..aOM<FlutterAnimatedContainer>(278, _omitFieldNames ? '' : 'flutterAnimatedContainer', subBuilder: FlutterAnimatedContainer.create)
+    ..aOM<FlutterAnimatedFractionallySizedBox>(279, _omitFieldNames ? '' : 'flutterAnimatedFractionallySizedBox', subBuilder: FlutterAnimatedFractionallySizedBox.create)
+    ..aOM<FlutterAnimatedOpacity>(280, _omitFieldNames ? '' : 'flutterAnimatedOpacity', subBuilder: FlutterAnimatedOpacity.create)
+    ..aOM<FlutterAnimatedPadding>(281, _omitFieldNames ? '' : 'flutterAnimatedPadding', subBuilder: FlutterAnimatedPadding.create)
+    ..aOM<FlutterAnimatedPhysicalModel>(282, _omitFieldNames ? '' : 'flutterAnimatedPhysicalModel', subBuilder: FlutterAnimatedPhysicalModel.create)
+    ..aOM<FlutterAnimatedPositioned>(283, _omitFieldNames ? '' : 'flutterAnimatedPositioned', subBuilder: FlutterAnimatedPositioned.create)
+    ..aOM<FlutterAnimatedPositionedDirectional>(284, _omitFieldNames ? '' : 'flutterAnimatedPositionedDirectional', subBuilder: FlutterAnimatedPositionedDirectional.create)
+    ..aOM<FlutterAnimatedRotation>(285, _omitFieldNames ? '' : 'flutterAnimatedRotation', subBuilder: FlutterAnimatedRotation.create)
+    ..aOM<FlutterAnimatedScale>(286, _omitFieldNames ? '' : 'flutterAnimatedScale', subBuilder: FlutterAnimatedScale.create)
+    ..aOM<FlutterSliverAnimatedOpacity>(287, _omitFieldNames ? '' : 'flutterSliverAnimatedOpacity', subBuilder: FlutterSliverAnimatedOpacity.create)
+    ..aOM<FlutterInteractiveViewer>(288, _omitFieldNames ? '' : 'flutterInteractiveViewer', subBuilder: FlutterInteractiveViewer.create)
+    ..aOM<FlutterListWheelScrollView>(289, _omitFieldNames ? '' : 'flutterListWheelScrollView', subBuilder: FlutterListWheelScrollView.create)
+    ..aOM<FlutterLookupBoundary>(290, _omitFieldNames ? '' : 'flutterLookupBoundary', subBuilder: FlutterLookupBoundary.create)
+    ..aOM<FlutterModalBarrier>(291, _omitFieldNames ? '' : 'flutterModalBarrier', subBuilder: FlutterModalBarrier.create)
+    ..aOM<FlutterNavigationToolbar>(292, _omitFieldNames ? '' : 'flutterNavigationToolbar', subBuilder: FlutterNavigationToolbar.create)
+    ..aOM<FlutterHeroControllerScopeNamedNone>(293, _omitFieldNames ? '' : 'flutterHeroControllerScopeNamedNone', subBuilder: FlutterHeroControllerScopeNamedNone.create)
+    ..aOM<FlutterNavigator>(294, _omitFieldNames ? '' : 'flutterNavigator', subBuilder: FlutterNavigator.create)
+    ..aOM<FlutterNotificationListener>(295, _omitFieldNames ? '' : 'flutterNotificationListener', subBuilder: FlutterNotificationListener.create)
+    ..aOM<FlutterOverflowBar>(296, _omitFieldNames ? '' : 'flutterOverflowBar', subBuilder: FlutterOverflowBar.create)
+    ..aOM<FlutterOverlay>(297, _omitFieldNames ? '' : 'flutterOverlay', subBuilder: FlutterOverlay.create)
+    ..aOM<FlutterGlowingOverscrollIndicator>(298, _omitFieldNames ? '' : 'flutterGlowingOverscrollIndicator', subBuilder: FlutterGlowingOverscrollIndicator.create)
+    ..aOM<FlutterStretchingOverscrollIndicator>(299, _omitFieldNames ? '' : 'flutterStretchingOverscrollIndicator', subBuilder: FlutterStretchingOverscrollIndicator.create)
+    ..aOM<FlutterPageView>(300, _omitFieldNames ? '' : 'flutterPageView', subBuilder: FlutterPageView.create)
+    ..aOM<FlutterPerformanceOverlay>(301, _omitFieldNames ? '' : 'flutterPerformanceOverlay', subBuilder: FlutterPerformanceOverlay.create)
+    ..aOM<FlutterPerformanceOverlayNamedAllEnabled>(302, _omitFieldNames ? '' : 'flutterPerformanceOverlayNamedAllEnabled', subBuilder: FlutterPerformanceOverlayNamedAllEnabled.create)
+    ..aOM<FlutterPlaceholder>(303, _omitFieldNames ? '' : 'flutterPlaceholder', subBuilder: FlutterPlaceholder.create)
+    ..aOM<FlutterAndroidView>(304, _omitFieldNames ? '' : 'flutterAndroidView', subBuilder: FlutterAndroidView.create)
+    ..aOM<FlutterHtmlElementView>(305, _omitFieldNames ? '' : 'flutterHtmlElementView', subBuilder: FlutterHtmlElementView.create)
+    ..aOM<FlutterUiKitView>(306, _omitFieldNames ? '' : 'flutterUiKitView', subBuilder: FlutterUiKitView.create)
+    ..aOM<FlutterPrimaryScrollControllerNamedNone>(307, _omitFieldNames ? '' : 'flutterPrimaryScrollControllerNamedNone', subBuilder: FlutterPrimaryScrollControllerNamedNone.create)
+    ..aOM<FlutterReorderableDelayedDragStartListener>(308, _omitFieldNames ? '' : 'flutterReorderableDelayedDragStartListener', subBuilder: FlutterReorderableDelayedDragStartListener.create)
+    ..aOM<FlutterReorderableDragStartListener>(309, _omitFieldNames ? '' : 'flutterReorderableDragStartListener', subBuilder: FlutterReorderableDragStartListener.create)
+    ..aOM<FlutterRestorationScope>(310, _omitFieldNames ? '' : 'flutterRestorationScope', subBuilder: FlutterRestorationScope.create)
+    ..aOM<FlutterRootRestorationScope>(311, _omitFieldNames ? '' : 'flutterRootRestorationScope', subBuilder: FlutterRootRestorationScope.create)
+    ..aOM<FlutterUnmanagedRestorationScope>(312, _omitFieldNames ? '' : 'flutterUnmanagedRestorationScope', subBuilder: FlutterUnmanagedRestorationScope.create)
+    ..aOM<FlutterSafeArea>(313, _omitFieldNames ? '' : 'flutterSafeArea', subBuilder: FlutterSafeArea.create)
+    ..aOM<FlutterSliverSafeArea>(314, _omitFieldNames ? '' : 'flutterSliverSafeArea', subBuilder: FlutterSliverSafeArea.create)
+    ..aOM<FlutterScrollNotificationObserver>(315, _omitFieldNames ? '' : 'flutterScrollNotificationObserver', subBuilder: FlutterScrollNotificationObserver.create)
+    ..aOM<FlutterCustomScrollView>(316, _omitFieldNames ? '' : 'flutterCustomScrollView', subBuilder: FlutterCustomScrollView.create)
+    ..aOM<FlutterGridViewNamedCount>(317, _omitFieldNames ? '' : 'flutterGridViewNamedCount', subBuilder: FlutterGridViewNamedCount.create)
+    ..aOM<FlutterGridViewNamedExtent>(318, _omitFieldNames ? '' : 'flutterGridViewNamedExtent', subBuilder: FlutterGridViewNamedExtent.create)
+    ..aOM<FlutterListView>(319, _omitFieldNames ? '' : 'flutterListView', subBuilder: FlutterListView.create)
+    ..aOM<FlutterRawScrollbar>(320, _omitFieldNames ? '' : 'flutterRawScrollbar', subBuilder: FlutterRawScrollbar.create)
+    ..aOM<FlutterSelectionContainerNamedDisabled>(321, _omitFieldNames ? '' : 'flutterSelectionContainerNamedDisabled', subBuilder: FlutterSelectionContainerNamedDisabled.create)
+    ..aOM<FlutterSemanticsDebugger>(322, _omitFieldNames ? '' : 'flutterSemanticsDebugger', subBuilder: FlutterSemanticsDebugger.create)
+    ..aOM<FlutterSharedAppData>(323, _omitFieldNames ? '' : 'flutterSharedAppData', subBuilder: FlutterSharedAppData.create)
+    ..aOM<FlutterShortcutRegistrar>(324, _omitFieldNames ? '' : 'flutterShortcutRegistrar', subBuilder: FlutterShortcutRegistrar.create)
+    ..aOM<FlutterSingleChildScrollView>(325, _omitFieldNames ? '' : 'flutterSingleChildScrollView', subBuilder: FlutterSingleChildScrollView.create)
+    ..aOM<FlutterSizeChangedLayoutNotifier>(326, _omitFieldNames ? '' : 'flutterSizeChangedLayoutNotifier', subBuilder: FlutterSizeChangedLayoutNotifier.create)
+    ..aOM<FlutterKeepAlive>(327, _omitFieldNames ? '' : 'flutterKeepAlive', subBuilder: FlutterKeepAlive.create)
+    ..aOM<FlutterSliverConstrainedCrossAxis>(328, _omitFieldNames ? '' : 'flutterSliverConstrainedCrossAxis', subBuilder: FlutterSliverConstrainedCrossAxis.create)
+    ..aOM<FlutterSliverCrossAxisExpanded>(329, _omitFieldNames ? '' : 'flutterSliverCrossAxisExpanded', subBuilder: FlutterSliverCrossAxisExpanded.create)
+    ..aOM<FlutterSliverCrossAxisGroup>(330, _omitFieldNames ? '' : 'flutterSliverCrossAxisGroup', subBuilder: FlutterSliverCrossAxisGroup.create)
+    ..aOM<FlutterSliverFixedExtentListNamedList>(331, _omitFieldNames ? '' : 'flutterSliverFixedExtentListNamedList', subBuilder: FlutterSliverFixedExtentListNamedList.create)
+    ..aOM<FlutterSliverGridNamedCount>(332, _omitFieldNames ? '' : 'flutterSliverGridNamedCount', subBuilder: FlutterSliverGridNamedCount.create)
+    ..aOM<FlutterSliverGridNamedExtent>(333, _omitFieldNames ? '' : 'flutterSliverGridNamedExtent', subBuilder: FlutterSliverGridNamedExtent.create)
+    ..aOM<FlutterSliverIgnorePointer>(334, _omitFieldNames ? '' : 'flutterSliverIgnorePointer', subBuilder: FlutterSliverIgnorePointer.create)
+    ..aOM<FlutterSliverListNamedList>(335, _omitFieldNames ? '' : 'flutterSliverListNamedList', subBuilder: FlutterSliverListNamedList.create)
+    ..aOM<FlutterSliverMainAxisGroup>(336, _omitFieldNames ? '' : 'flutterSliverMainAxisGroup', subBuilder: FlutterSliverMainAxisGroup.create)
+    ..aOM<FlutterSliverOffstage>(337, _omitFieldNames ? '' : 'flutterSliverOffstage', subBuilder: FlutterSliverOffstage.create)
+    ..aOM<FlutterSliverOpacity>(338, _omitFieldNames ? '' : 'flutterSliverOpacity', subBuilder: FlutterSliverOpacity.create)
+    ..aOM<FlutterSliverFillRemaining>(339, _omitFieldNames ? '' : 'flutterSliverFillRemaining', subBuilder: FlutterSliverFillRemaining.create)
+    ..aOM<FlutterSliverPrototypeExtentListNamedList>(340, _omitFieldNames ? '' : 'flutterSliverPrototypeExtentListNamedList', subBuilder: FlutterSliverPrototypeExtentListNamedList.create)
+    ..aOM<FlutterSpacer>(341, _omitFieldNames ? '' : 'flutterSpacer', subBuilder: FlutterSpacer.create)
+    ..aOM<FlutterTable>(342, _omitFieldNames ? '' : 'flutterTable', subBuilder: FlutterTable.create)
+    ..aOM<FlutterTableCell>(343, _omitFieldNames ? '' : 'flutterTableCell', subBuilder: FlutterTableCell.create)
+    ..aOM<FlutterTapRegion>(344, _omitFieldNames ? '' : 'flutterTapRegion', subBuilder: FlutterTapRegion.create)
+    ..aOM<FlutterTapRegionSurface>(345, _omitFieldNames ? '' : 'flutterTapRegionSurface', subBuilder: FlutterTapRegionSurface.create)
+    ..aOM<FlutterTextFieldTapRegion>(346, _omitFieldNames ? '' : 'flutterTextFieldTapRegion', subBuilder: FlutterTextFieldTapRegion.create)
+    ..aOM<FlutterDefaultTextStyleNamedFallback>(347, _omitFieldNames ? '' : 'flutterDefaultTextStyleNamedFallback', subBuilder: FlutterDefaultTextStyleNamedFallback.create)
+    ..aOM<FlutterText>(348, _omitFieldNames ? '' : 'flutterText', subBuilder: FlutterText.create)
+    ..aOM<FlutterTextSelectionGestureDetector>(349, _omitFieldNames ? '' : 'flutterTextSelectionGestureDetector', subBuilder: FlutterTextSelectionGestureDetector.create)
+    ..aOM<FlutterTexture>(350, _omitFieldNames ? '' : 'flutterTexture', subBuilder: FlutterTexture.create)
+    ..aOM<FlutterTickerMode>(351, _omitFieldNames ? '' : 'flutterTickerMode', subBuilder: FlutterTickerMode.create)
+    ..aOM<FlutterTitle>(352, _omitFieldNames ? '' : 'flutterTitle', subBuilder: FlutterTitle.create)
+    ..aOM<FlutterSliverVisibility>(353, _omitFieldNames ? '' : 'flutterSliverVisibility', subBuilder: FlutterSliverVisibility.create)
+    ..aOM<FlutterSliverVisibilityNamedMaintain>(354, _omitFieldNames ? '' : 'flutterSliverVisibilityNamedMaintain', subBuilder: FlutterSliverVisibilityNamedMaintain.create)
+    ..aOM<FlutterVisibility>(355, _omitFieldNames ? '' : 'flutterVisibility', subBuilder: FlutterVisibility.create)
+    ..aOM<FlutterVisibilityNamedMaintain>(356, _omitFieldNames ? '' : 'flutterVisibilityNamedMaintain', subBuilder: FlutterVisibilityNamedMaintain.create)
+    ..aOM<FlutterWidgetInspector>(357, _omitFieldNames ? '' : 'flutterWidgetInspector', subBuilder: FlutterWidgetInspector.create)
+    ..aOM<FlutterWillPopScope>(358, _omitFieldNames ? '' : 'flutterWillPopScope', subBuilder: FlutterWillPopScope.create)
+    ..aOM<FlutterProjectMyApp>(359, _omitFieldNames ? '' : 'flutterProjectMyApp', subBuilder: FlutterProjectMyApp.create)
+    ..aOM<FlutterProjectMyHomePage>(360, _omitFieldNames ? '' : 'flutterProjectMyHomePage', subBuilder: FlutterProjectMyHomePage.create)
     ..hasRequiredFields = false
   ;
 
@@ -57839,1434 +59683,1467 @@ class WidgetExpression extends $pb.GeneratedMessage {
   FlutterOverflowBox ensureFlutterOverflowBox() => $_ensure(225);
 
   @$pb.TagNumber(228)
-  FlutterPhysicalModel get flutterPhysicalModel => $_getN(226);
+  FlutterPadding get flutterPadding => $_getN(226);
   @$pb.TagNumber(228)
-  set flutterPhysicalModel(FlutterPhysicalModel v) { setField(228, v); }
+  set flutterPadding(FlutterPadding v) { setField(228, v); }
   @$pb.TagNumber(228)
-  $core.bool hasFlutterPhysicalModel() => $_has(226);
+  $core.bool hasFlutterPadding() => $_has(226);
   @$pb.TagNumber(228)
-  void clearFlutterPhysicalModel() => clearField(228);
+  void clearFlutterPadding() => clearField(228);
   @$pb.TagNumber(228)
-  FlutterPhysicalModel ensureFlutterPhysicalModel() => $_ensure(226);
+  FlutterPadding ensureFlutterPadding() => $_ensure(226);
 
   @$pb.TagNumber(229)
-  FlutterPositioned get flutterPositioned => $_getN(227);
+  FlutterPhysicalModel get flutterPhysicalModel => $_getN(227);
   @$pb.TagNumber(229)
-  set flutterPositioned(FlutterPositioned v) { setField(229, v); }
+  set flutterPhysicalModel(FlutterPhysicalModel v) { setField(229, v); }
   @$pb.TagNumber(229)
-  $core.bool hasFlutterPositioned() => $_has(227);
+  $core.bool hasFlutterPhysicalModel() => $_has(227);
   @$pb.TagNumber(229)
-  void clearFlutterPositioned() => clearField(229);
+  void clearFlutterPhysicalModel() => clearField(229);
   @$pb.TagNumber(229)
-  FlutterPositioned ensureFlutterPositioned() => $_ensure(227);
+  FlutterPhysicalModel ensureFlutterPhysicalModel() => $_ensure(227);
 
   @$pb.TagNumber(230)
-  FlutterPositionedNamedFill get flutterPositionedNamedFill => $_getN(228);
+  FlutterPositioned get flutterPositioned => $_getN(228);
   @$pb.TagNumber(230)
-  set flutterPositionedNamedFill(FlutterPositionedNamedFill v) { setField(230, v); }
+  set flutterPositioned(FlutterPositioned v) { setField(230, v); }
   @$pb.TagNumber(230)
-  $core.bool hasFlutterPositionedNamedFill() => $_has(228);
+  $core.bool hasFlutterPositioned() => $_has(228);
   @$pb.TagNumber(230)
-  void clearFlutterPositionedNamedFill() => clearField(230);
+  void clearFlutterPositioned() => clearField(230);
   @$pb.TagNumber(230)
-  FlutterPositionedNamedFill ensureFlutterPositionedNamedFill() => $_ensure(228);
+  FlutterPositioned ensureFlutterPositioned() => $_ensure(228);
 
   @$pb.TagNumber(231)
-  FlutterPositionedNamedDirectional get flutterPositionedNamedDirectional => $_getN(229);
+  FlutterPositionedNamedFill get flutterPositionedNamedFill => $_getN(229);
   @$pb.TagNumber(231)
-  set flutterPositionedNamedDirectional(FlutterPositionedNamedDirectional v) { setField(231, v); }
+  set flutterPositionedNamedFill(FlutterPositionedNamedFill v) { setField(231, v); }
   @$pb.TagNumber(231)
-  $core.bool hasFlutterPositionedNamedDirectional() => $_has(229);
+  $core.bool hasFlutterPositionedNamedFill() => $_has(229);
   @$pb.TagNumber(231)
-  void clearFlutterPositionedNamedDirectional() => clearField(231);
+  void clearFlutterPositionedNamedFill() => clearField(231);
   @$pb.TagNumber(231)
-  FlutterPositionedNamedDirectional ensureFlutterPositionedNamedDirectional() => $_ensure(229);
+  FlutterPositionedNamedFill ensureFlutterPositionedNamedFill() => $_ensure(229);
 
   @$pb.TagNumber(232)
-  FlutterPositionedDirectional get flutterPositionedDirectional => $_getN(230);
+  FlutterPositionedNamedDirectional get flutterPositionedNamedDirectional => $_getN(230);
   @$pb.TagNumber(232)
-  set flutterPositionedDirectional(FlutterPositionedDirectional v) { setField(232, v); }
+  set flutterPositionedNamedDirectional(FlutterPositionedNamedDirectional v) { setField(232, v); }
   @$pb.TagNumber(232)
-  $core.bool hasFlutterPositionedDirectional() => $_has(230);
+  $core.bool hasFlutterPositionedNamedDirectional() => $_has(230);
   @$pb.TagNumber(232)
-  void clearFlutterPositionedDirectional() => clearField(232);
+  void clearFlutterPositionedNamedDirectional() => clearField(232);
   @$pb.TagNumber(232)
-  FlutterPositionedDirectional ensureFlutterPositionedDirectional() => $_ensure(230);
+  FlutterPositionedNamedDirectional ensureFlutterPositionedNamedDirectional() => $_ensure(230);
 
   @$pb.TagNumber(233)
-  FlutterRawImage get flutterRawImage => $_getN(231);
+  FlutterPositionedDirectional get flutterPositionedDirectional => $_getN(231);
   @$pb.TagNumber(233)
-  set flutterRawImage(FlutterRawImage v) { setField(233, v); }
+  set flutterPositionedDirectional(FlutterPositionedDirectional v) { setField(233, v); }
   @$pb.TagNumber(233)
-  $core.bool hasFlutterRawImage() => $_has(231);
+  $core.bool hasFlutterPositionedDirectional() => $_has(231);
   @$pb.TagNumber(233)
-  void clearFlutterRawImage() => clearField(233);
+  void clearFlutterPositionedDirectional() => clearField(233);
   @$pb.TagNumber(233)
-  FlutterRawImage ensureFlutterRawImage() => $_ensure(231);
+  FlutterPositionedDirectional ensureFlutterPositionedDirectional() => $_ensure(231);
 
   @$pb.TagNumber(234)
-  FlutterRepaintBoundary get flutterRepaintBoundary => $_getN(232);
+  FlutterRawImage get flutterRawImage => $_getN(232);
   @$pb.TagNumber(234)
-  set flutterRepaintBoundary(FlutterRepaintBoundary v) { setField(234, v); }
+  set flutterRawImage(FlutterRawImage v) { setField(234, v); }
   @$pb.TagNumber(234)
-  $core.bool hasFlutterRepaintBoundary() => $_has(232);
+  $core.bool hasFlutterRawImage() => $_has(232);
   @$pb.TagNumber(234)
-  void clearFlutterRepaintBoundary() => clearField(234);
+  void clearFlutterRawImage() => clearField(234);
   @$pb.TagNumber(234)
-  FlutterRepaintBoundary ensureFlutterRepaintBoundary() => $_ensure(232);
+  FlutterRawImage ensureFlutterRawImage() => $_ensure(232);
 
   @$pb.TagNumber(235)
-  FlutterRepaintBoundaryNamedWrap get flutterRepaintBoundaryNamedWrap => $_getN(233);
+  FlutterRepaintBoundary get flutterRepaintBoundary => $_getN(233);
   @$pb.TagNumber(235)
-  set flutterRepaintBoundaryNamedWrap(FlutterRepaintBoundaryNamedWrap v) { setField(235, v); }
+  set flutterRepaintBoundary(FlutterRepaintBoundary v) { setField(235, v); }
   @$pb.TagNumber(235)
-  $core.bool hasFlutterRepaintBoundaryNamedWrap() => $_has(233);
+  $core.bool hasFlutterRepaintBoundary() => $_has(233);
   @$pb.TagNumber(235)
-  void clearFlutterRepaintBoundaryNamedWrap() => clearField(235);
+  void clearFlutterRepaintBoundary() => clearField(235);
   @$pb.TagNumber(235)
-  FlutterRepaintBoundaryNamedWrap ensureFlutterRepaintBoundaryNamedWrap() => $_ensure(233);
+  FlutterRepaintBoundary ensureFlutterRepaintBoundary() => $_ensure(233);
 
   @$pb.TagNumber(236)
-  FlutterRotatedBox get flutterRotatedBox => $_getN(234);
+  FlutterRepaintBoundaryNamedWrap get flutterRepaintBoundaryNamedWrap => $_getN(234);
   @$pb.TagNumber(236)
-  set flutterRotatedBox(FlutterRotatedBox v) { setField(236, v); }
+  set flutterRepaintBoundaryNamedWrap(FlutterRepaintBoundaryNamedWrap v) { setField(236, v); }
   @$pb.TagNumber(236)
-  $core.bool hasFlutterRotatedBox() => $_has(234);
+  $core.bool hasFlutterRepaintBoundaryNamedWrap() => $_has(234);
   @$pb.TagNumber(236)
-  void clearFlutterRotatedBox() => clearField(236);
+  void clearFlutterRepaintBoundaryNamedWrap() => clearField(236);
   @$pb.TagNumber(236)
-  FlutterRotatedBox ensureFlutterRotatedBox() => $_ensure(234);
+  FlutterRepaintBoundaryNamedWrap ensureFlutterRepaintBoundaryNamedWrap() => $_ensure(234);
 
   @$pb.TagNumber(237)
-  FlutterRow get flutterRow => $_getN(235);
+  FlutterRotatedBox get flutterRotatedBox => $_getN(235);
   @$pb.TagNumber(237)
-  set flutterRow(FlutterRow v) { setField(237, v); }
+  set flutterRotatedBox(FlutterRotatedBox v) { setField(237, v); }
   @$pb.TagNumber(237)
-  $core.bool hasFlutterRow() => $_has(235);
+  $core.bool hasFlutterRotatedBox() => $_has(235);
   @$pb.TagNumber(237)
-  void clearFlutterRow() => clearField(237);
+  void clearFlutterRotatedBox() => clearField(237);
   @$pb.TagNumber(237)
-  FlutterRow ensureFlutterRow() => $_ensure(235);
+  FlutterRotatedBox ensureFlutterRotatedBox() => $_ensure(235);
 
   @$pb.TagNumber(238)
-  FlutterSemantics get flutterSemantics => $_getN(236);
+  FlutterRow get flutterRow => $_getN(236);
   @$pb.TagNumber(238)
-  set flutterSemantics(FlutterSemantics v) { setField(238, v); }
+  set flutterRow(FlutterRow v) { setField(238, v); }
   @$pb.TagNumber(238)
-  $core.bool hasFlutterSemantics() => $_has(236);
+  $core.bool hasFlutterRow() => $_has(236);
   @$pb.TagNumber(238)
-  void clearFlutterSemantics() => clearField(238);
+  void clearFlutterRow() => clearField(238);
   @$pb.TagNumber(238)
-  FlutterSemantics ensureFlutterSemantics() => $_ensure(236);
+  FlutterRow ensureFlutterRow() => $_ensure(236);
 
   @$pb.TagNumber(239)
-  FlutterSizedBox get flutterSizedBox => $_getN(237);
+  FlutterSemantics get flutterSemantics => $_getN(237);
   @$pb.TagNumber(239)
-  set flutterSizedBox(FlutterSizedBox v) { setField(239, v); }
+  set flutterSemantics(FlutterSemantics v) { setField(239, v); }
   @$pb.TagNumber(239)
-  $core.bool hasFlutterSizedBox() => $_has(237);
+  $core.bool hasFlutterSemantics() => $_has(237);
   @$pb.TagNumber(239)
-  void clearFlutterSizedBox() => clearField(239);
+  void clearFlutterSemantics() => clearField(239);
   @$pb.TagNumber(239)
-  FlutterSizedBox ensureFlutterSizedBox() => $_ensure(237);
+  FlutterSemantics ensureFlutterSemantics() => $_ensure(237);
 
   @$pb.TagNumber(240)
-  FlutterSizedBoxNamedExpand get flutterSizedBoxNamedExpand => $_getN(238);
+  FlutterSizedBox get flutterSizedBox => $_getN(238);
   @$pb.TagNumber(240)
-  set flutterSizedBoxNamedExpand(FlutterSizedBoxNamedExpand v) { setField(240, v); }
+  set flutterSizedBox(FlutterSizedBox v) { setField(240, v); }
   @$pb.TagNumber(240)
-  $core.bool hasFlutterSizedBoxNamedExpand() => $_has(238);
+  $core.bool hasFlutterSizedBox() => $_has(238);
   @$pb.TagNumber(240)
-  void clearFlutterSizedBoxNamedExpand() => clearField(240);
+  void clearFlutterSizedBox() => clearField(240);
   @$pb.TagNumber(240)
-  FlutterSizedBoxNamedExpand ensureFlutterSizedBoxNamedExpand() => $_ensure(238);
+  FlutterSizedBox ensureFlutterSizedBox() => $_ensure(238);
 
   @$pb.TagNumber(241)
-  FlutterSizedBoxNamedShrink get flutterSizedBoxNamedShrink => $_getN(239);
+  FlutterSizedBoxNamedExpand get flutterSizedBoxNamedExpand => $_getN(239);
   @$pb.TagNumber(241)
-  set flutterSizedBoxNamedShrink(FlutterSizedBoxNamedShrink v) { setField(241, v); }
+  set flutterSizedBoxNamedExpand(FlutterSizedBoxNamedExpand v) { setField(241, v); }
   @$pb.TagNumber(241)
-  $core.bool hasFlutterSizedBoxNamedShrink() => $_has(239);
+  $core.bool hasFlutterSizedBoxNamedExpand() => $_has(239);
   @$pb.TagNumber(241)
-  void clearFlutterSizedBoxNamedShrink() => clearField(241);
+  void clearFlutterSizedBoxNamedExpand() => clearField(241);
   @$pb.TagNumber(241)
-  FlutterSizedBoxNamedShrink ensureFlutterSizedBoxNamedShrink() => $_ensure(239);
+  FlutterSizedBoxNamedExpand ensureFlutterSizedBoxNamedExpand() => $_ensure(239);
 
   @$pb.TagNumber(242)
-  FlutterSizedBoxNamedFromSize get flutterSizedBoxNamedFromSize => $_getN(240);
+  FlutterSizedBoxNamedShrink get flutterSizedBoxNamedShrink => $_getN(240);
   @$pb.TagNumber(242)
-  set flutterSizedBoxNamedFromSize(FlutterSizedBoxNamedFromSize v) { setField(242, v); }
+  set flutterSizedBoxNamedShrink(FlutterSizedBoxNamedShrink v) { setField(242, v); }
   @$pb.TagNumber(242)
-  $core.bool hasFlutterSizedBoxNamedFromSize() => $_has(240);
+  $core.bool hasFlutterSizedBoxNamedShrink() => $_has(240);
   @$pb.TagNumber(242)
-  void clearFlutterSizedBoxNamedFromSize() => clearField(242);
+  void clearFlutterSizedBoxNamedShrink() => clearField(242);
   @$pb.TagNumber(242)
-  FlutterSizedBoxNamedFromSize ensureFlutterSizedBoxNamedFromSize() => $_ensure(240);
+  FlutterSizedBoxNamedShrink ensureFlutterSizedBoxNamedShrink() => $_ensure(240);
 
   @$pb.TagNumber(243)
-  FlutterSizedBoxNamedSquare get flutterSizedBoxNamedSquare => $_getN(241);
+  FlutterSizedBoxNamedFromSize get flutterSizedBoxNamedFromSize => $_getN(241);
   @$pb.TagNumber(243)
-  set flutterSizedBoxNamedSquare(FlutterSizedBoxNamedSquare v) { setField(243, v); }
+  set flutterSizedBoxNamedFromSize(FlutterSizedBoxNamedFromSize v) { setField(243, v); }
   @$pb.TagNumber(243)
-  $core.bool hasFlutterSizedBoxNamedSquare() => $_has(241);
+  $core.bool hasFlutterSizedBoxNamedFromSize() => $_has(241);
   @$pb.TagNumber(243)
-  void clearFlutterSizedBoxNamedSquare() => clearField(243);
+  void clearFlutterSizedBoxNamedFromSize() => clearField(243);
   @$pb.TagNumber(243)
-  FlutterSizedBoxNamedSquare ensureFlutterSizedBoxNamedSquare() => $_ensure(241);
+  FlutterSizedBoxNamedFromSize ensureFlutterSizedBoxNamedFromSize() => $_ensure(241);
 
   @$pb.TagNumber(244)
-  FlutterSliverToBoxAdapter get flutterSliverToBoxAdapter => $_getN(242);
+  FlutterSizedBoxNamedSquare get flutterSizedBoxNamedSquare => $_getN(242);
   @$pb.TagNumber(244)
-  set flutterSliverToBoxAdapter(FlutterSliverToBoxAdapter v) { setField(244, v); }
+  set flutterSizedBoxNamedSquare(FlutterSizedBoxNamedSquare v) { setField(244, v); }
   @$pb.TagNumber(244)
-  $core.bool hasFlutterSliverToBoxAdapter() => $_has(242);
+  $core.bool hasFlutterSizedBoxNamedSquare() => $_has(242);
   @$pb.TagNumber(244)
-  void clearFlutterSliverToBoxAdapter() => clearField(244);
+  void clearFlutterSizedBoxNamedSquare() => clearField(244);
   @$pb.TagNumber(244)
-  FlutterSliverToBoxAdapter ensureFlutterSliverToBoxAdapter() => $_ensure(242);
+  FlutterSizedBoxNamedSquare ensureFlutterSizedBoxNamedSquare() => $_ensure(242);
 
   @$pb.TagNumber(245)
-  FlutterStack get flutterStack => $_getN(243);
+  FlutterSliverPadding get flutterSliverPadding => $_getN(243);
   @$pb.TagNumber(245)
-  set flutterStack(FlutterStack v) { setField(245, v); }
+  set flutterSliverPadding(FlutterSliverPadding v) { setField(245, v); }
   @$pb.TagNumber(245)
-  $core.bool hasFlutterStack() => $_has(243);
+  $core.bool hasFlutterSliverPadding() => $_has(243);
   @$pb.TagNumber(245)
-  void clearFlutterStack() => clearField(245);
+  void clearFlutterSliverPadding() => clearField(245);
   @$pb.TagNumber(245)
-  FlutterStack ensureFlutterStack() => $_ensure(243);
+  FlutterSliverPadding ensureFlutterSliverPadding() => $_ensure(243);
 
   @$pb.TagNumber(246)
-  FlutterTransformNamedRotate get flutterTransformNamedRotate => $_getN(244);
+  FlutterSliverToBoxAdapter get flutterSliverToBoxAdapter => $_getN(244);
   @$pb.TagNumber(246)
-  set flutterTransformNamedRotate(FlutterTransformNamedRotate v) { setField(246, v); }
+  set flutterSliverToBoxAdapter(FlutterSliverToBoxAdapter v) { setField(246, v); }
   @$pb.TagNumber(246)
-  $core.bool hasFlutterTransformNamedRotate() => $_has(244);
+  $core.bool hasFlutterSliverToBoxAdapter() => $_has(244);
   @$pb.TagNumber(246)
-  void clearFlutterTransformNamedRotate() => clearField(246);
+  void clearFlutterSliverToBoxAdapter() => clearField(246);
   @$pb.TagNumber(246)
-  FlutterTransformNamedRotate ensureFlutterTransformNamedRotate() => $_ensure(244);
+  FlutterSliverToBoxAdapter ensureFlutterSliverToBoxAdapter() => $_ensure(244);
 
   @$pb.TagNumber(247)
-  FlutterTransformNamedScale get flutterTransformNamedScale => $_getN(245);
+  FlutterStack get flutterStack => $_getN(245);
   @$pb.TagNumber(247)
-  set flutterTransformNamedScale(FlutterTransformNamedScale v) { setField(247, v); }
+  set flutterStack(FlutterStack v) { setField(247, v); }
   @$pb.TagNumber(247)
-  $core.bool hasFlutterTransformNamedScale() => $_has(245);
+  $core.bool hasFlutterStack() => $_has(245);
   @$pb.TagNumber(247)
-  void clearFlutterTransformNamedScale() => clearField(247);
+  void clearFlutterStack() => clearField(247);
   @$pb.TagNumber(247)
-  FlutterTransformNamedScale ensureFlutterTransformNamedScale() => $_ensure(245);
+  FlutterStack ensureFlutterStack() => $_ensure(245);
 
   @$pb.TagNumber(248)
-  FlutterTransformNamedFlip get flutterTransformNamedFlip => $_getN(246);
+  FlutterTransformNamedRotate get flutterTransformNamedRotate => $_getN(246);
   @$pb.TagNumber(248)
-  set flutterTransformNamedFlip(FlutterTransformNamedFlip v) { setField(248, v); }
+  set flutterTransformNamedRotate(FlutterTransformNamedRotate v) { setField(248, v); }
   @$pb.TagNumber(248)
-  $core.bool hasFlutterTransformNamedFlip() => $_has(246);
+  $core.bool hasFlutterTransformNamedRotate() => $_has(246);
   @$pb.TagNumber(248)
-  void clearFlutterTransformNamedFlip() => clearField(248);
+  void clearFlutterTransformNamedRotate() => clearField(248);
   @$pb.TagNumber(248)
-  FlutterTransformNamedFlip ensureFlutterTransformNamedFlip() => $_ensure(246);
+  FlutterTransformNamedRotate ensureFlutterTransformNamedRotate() => $_ensure(246);
 
   @$pb.TagNumber(249)
-  FlutterUnconstrainedBox get flutterUnconstrainedBox => $_getN(247);
+  FlutterTransformNamedScale get flutterTransformNamedScale => $_getN(247);
   @$pb.TagNumber(249)
-  set flutterUnconstrainedBox(FlutterUnconstrainedBox v) { setField(249, v); }
+  set flutterTransformNamedScale(FlutterTransformNamedScale v) { setField(249, v); }
   @$pb.TagNumber(249)
-  $core.bool hasFlutterUnconstrainedBox() => $_has(247);
+  $core.bool hasFlutterTransformNamedScale() => $_has(247);
   @$pb.TagNumber(249)
-  void clearFlutterUnconstrainedBox() => clearField(249);
+  void clearFlutterTransformNamedScale() => clearField(249);
   @$pb.TagNumber(249)
-  FlutterUnconstrainedBox ensureFlutterUnconstrainedBox() => $_ensure(247);
+  FlutterTransformNamedScale ensureFlutterTransformNamedScale() => $_ensure(247);
 
   @$pb.TagNumber(250)
-  FlutterWrap get flutterWrap => $_getN(248);
+  FlutterTransformNamedFlip get flutterTransformNamedFlip => $_getN(248);
   @$pb.TagNumber(250)
-  set flutterWrap(FlutterWrap v) { setField(250, v); }
+  set flutterTransformNamedFlip(FlutterTransformNamedFlip v) { setField(250, v); }
   @$pb.TagNumber(250)
-  $core.bool hasFlutterWrap() => $_has(248);
+  $core.bool hasFlutterTransformNamedFlip() => $_has(248);
   @$pb.TagNumber(250)
-  void clearFlutterWrap() => clearField(250);
+  void clearFlutterTransformNamedFlip() => clearField(250);
   @$pb.TagNumber(250)
-  FlutterWrap ensureFlutterWrap() => $_ensure(248);
+  FlutterTransformNamedFlip ensureFlutterTransformNamedFlip() => $_ensure(248);
 
   @$pb.TagNumber(251)
-  FlutterContainer get flutterContainer => $_getN(249);
+  FlutterUnconstrainedBox get flutterUnconstrainedBox => $_getN(249);
   @$pb.TagNumber(251)
-  set flutterContainer(FlutterContainer v) { setField(251, v); }
+  set flutterUnconstrainedBox(FlutterUnconstrainedBox v) { setField(251, v); }
   @$pb.TagNumber(251)
-  $core.bool hasFlutterContainer() => $_has(249);
+  $core.bool hasFlutterUnconstrainedBox() => $_has(249);
   @$pb.TagNumber(251)
-  void clearFlutterContainer() => clearField(251);
+  void clearFlutterUnconstrainedBox() => clearField(251);
   @$pb.TagNumber(251)
-  FlutterContainer ensureFlutterContainer() => $_ensure(249);
+  FlutterUnconstrainedBox ensureFlutterUnconstrainedBox() => $_ensure(249);
 
   @$pb.TagNumber(252)
-  FlutterDefaultSelectionStyle get flutterDefaultSelectionStyle => $_getN(250);
+  FlutterWrap get flutterWrap => $_getN(250);
   @$pb.TagNumber(252)
-  set flutterDefaultSelectionStyle(FlutterDefaultSelectionStyle v) { setField(252, v); }
+  set flutterWrap(FlutterWrap v) { setField(252, v); }
   @$pb.TagNumber(252)
-  $core.bool hasFlutterDefaultSelectionStyle() => $_has(250);
+  $core.bool hasFlutterWrap() => $_has(250);
   @$pb.TagNumber(252)
-  void clearFlutterDefaultSelectionStyle() => clearField(252);
+  void clearFlutterWrap() => clearField(252);
   @$pb.TagNumber(252)
-  FlutterDefaultSelectionStyle ensureFlutterDefaultSelectionStyle() => $_ensure(250);
+  FlutterWrap ensureFlutterWrap() => $_ensure(250);
 
   @$pb.TagNumber(253)
-  FlutterDefaultSelectionStyleNamedFallback get flutterDefaultSelectionStyleNamedFallback => $_getN(251);
+  FlutterContainer get flutterContainer => $_getN(251);
   @$pb.TagNumber(253)
-  set flutterDefaultSelectionStyleNamedFallback(FlutterDefaultSelectionStyleNamedFallback v) { setField(253, v); }
+  set flutterContainer(FlutterContainer v) { setField(253, v); }
   @$pb.TagNumber(253)
-  $core.bool hasFlutterDefaultSelectionStyleNamedFallback() => $_has(251);
+  $core.bool hasFlutterContainer() => $_has(251);
   @$pb.TagNumber(253)
-  void clearFlutterDefaultSelectionStyleNamedFallback() => clearField(253);
+  void clearFlutterContainer() => clearField(253);
   @$pb.TagNumber(253)
-  FlutterDefaultSelectionStyleNamedFallback ensureFlutterDefaultSelectionStyleNamedFallback() => $_ensure(251);
+  FlutterContainer ensureFlutterContainer() => $_ensure(251);
 
   @$pb.TagNumber(254)
-  FlutterDefaultTextEditingShortcuts get flutterDefaultTextEditingShortcuts => $_getN(252);
+  FlutterDefaultSelectionStyle get flutterDefaultSelectionStyle => $_getN(252);
   @$pb.TagNumber(254)
-  set flutterDefaultTextEditingShortcuts(FlutterDefaultTextEditingShortcuts v) { setField(254, v); }
+  set flutterDefaultSelectionStyle(FlutterDefaultSelectionStyle v) { setField(254, v); }
   @$pb.TagNumber(254)
-  $core.bool hasFlutterDefaultTextEditingShortcuts() => $_has(252);
+  $core.bool hasFlutterDefaultSelectionStyle() => $_has(252);
   @$pb.TagNumber(254)
-  void clearFlutterDefaultTextEditingShortcuts() => clearField(254);
+  void clearFlutterDefaultSelectionStyle() => clearField(254);
   @$pb.TagNumber(254)
-  FlutterDefaultTextEditingShortcuts ensureFlutterDefaultTextEditingShortcuts() => $_ensure(252);
+  FlutterDefaultSelectionStyle ensureFlutterDefaultSelectionStyle() => $_ensure(252);
 
   @$pb.TagNumber(255)
-  FlutterDismissible get flutterDismissible => $_getN(253);
+  FlutterDefaultSelectionStyleNamedFallback get flutterDefaultSelectionStyleNamedFallback => $_getN(253);
   @$pb.TagNumber(255)
-  set flutterDismissible(FlutterDismissible v) { setField(255, v); }
+  set flutterDefaultSelectionStyleNamedFallback(FlutterDefaultSelectionStyleNamedFallback v) { setField(255, v); }
   @$pb.TagNumber(255)
-  $core.bool hasFlutterDismissible() => $_has(253);
+  $core.bool hasFlutterDefaultSelectionStyleNamedFallback() => $_has(253);
   @$pb.TagNumber(255)
-  void clearFlutterDismissible() => clearField(255);
+  void clearFlutterDefaultSelectionStyleNamedFallback() => clearField(255);
   @$pb.TagNumber(255)
-  FlutterDismissible ensureFlutterDismissible() => $_ensure(253);
+  FlutterDefaultSelectionStyleNamedFallback ensureFlutterDefaultSelectionStyleNamedFallback() => $_ensure(253);
 
   @$pb.TagNumber(256)
-  FlutterDisplayFeatureSubScreen get flutterDisplayFeatureSubScreen => $_getN(254);
+  FlutterDefaultTextEditingShortcuts get flutterDefaultTextEditingShortcuts => $_getN(254);
   @$pb.TagNumber(256)
-  set flutterDisplayFeatureSubScreen(FlutterDisplayFeatureSubScreen v) { setField(256, v); }
+  set flutterDefaultTextEditingShortcuts(FlutterDefaultTextEditingShortcuts v) { setField(256, v); }
   @$pb.TagNumber(256)
-  $core.bool hasFlutterDisplayFeatureSubScreen() => $_has(254);
+  $core.bool hasFlutterDefaultTextEditingShortcuts() => $_has(254);
   @$pb.TagNumber(256)
-  void clearFlutterDisplayFeatureSubScreen() => clearField(256);
+  void clearFlutterDefaultTextEditingShortcuts() => clearField(256);
   @$pb.TagNumber(256)
-  FlutterDisplayFeatureSubScreen ensureFlutterDisplayFeatureSubScreen() => $_ensure(254);
+  FlutterDefaultTextEditingShortcuts ensureFlutterDefaultTextEditingShortcuts() => $_ensure(254);
 
   @$pb.TagNumber(257)
-  FlutterDraggable get flutterDraggable => $_getN(255);
+  FlutterDismissible get flutterDismissible => $_getN(255);
   @$pb.TagNumber(257)
-  set flutterDraggable(FlutterDraggable v) { setField(257, v); }
+  set flutterDismissible(FlutterDismissible v) { setField(257, v); }
   @$pb.TagNumber(257)
-  $core.bool hasFlutterDraggable() => $_has(255);
+  $core.bool hasFlutterDismissible() => $_has(255);
   @$pb.TagNumber(257)
-  void clearFlutterDraggable() => clearField(257);
+  void clearFlutterDismissible() => clearField(257);
   @$pb.TagNumber(257)
-  FlutterDraggable ensureFlutterDraggable() => $_ensure(255);
+  FlutterDismissible ensureFlutterDismissible() => $_ensure(255);
 
   @$pb.TagNumber(258)
-  FlutterLongPressDraggable get flutterLongPressDraggable => $_getN(256);
+  FlutterDisplayFeatureSubScreen get flutterDisplayFeatureSubScreen => $_getN(256);
   @$pb.TagNumber(258)
-  set flutterLongPressDraggable(FlutterLongPressDraggable v) { setField(258, v); }
+  set flutterDisplayFeatureSubScreen(FlutterDisplayFeatureSubScreen v) { setField(258, v); }
   @$pb.TagNumber(258)
-  $core.bool hasFlutterLongPressDraggable() => $_has(256);
+  $core.bool hasFlutterDisplayFeatureSubScreen() => $_has(256);
   @$pb.TagNumber(258)
-  void clearFlutterLongPressDraggable() => clearField(258);
+  void clearFlutterDisplayFeatureSubScreen() => clearField(258);
   @$pb.TagNumber(258)
-  FlutterLongPressDraggable ensureFlutterLongPressDraggable() => $_ensure(256);
+  FlutterDisplayFeatureSubScreen ensureFlutterDisplayFeatureSubScreen() => $_ensure(256);
 
   @$pb.TagNumber(259)
-  FlutterDraggableScrollableActuator get flutterDraggableScrollableActuator => $_getN(257);
+  FlutterDraggable get flutterDraggable => $_getN(257);
   @$pb.TagNumber(259)
-  set flutterDraggableScrollableActuator(FlutterDraggableScrollableActuator v) { setField(259, v); }
+  set flutterDraggable(FlutterDraggable v) { setField(259, v); }
   @$pb.TagNumber(259)
-  $core.bool hasFlutterDraggableScrollableActuator() => $_has(257);
+  $core.bool hasFlutterDraggable() => $_has(257);
   @$pb.TagNumber(259)
-  void clearFlutterDraggableScrollableActuator() => clearField(259);
+  void clearFlutterDraggable() => clearField(259);
   @$pb.TagNumber(259)
-  FlutterDraggableScrollableActuator ensureFlutterDraggableScrollableActuator() => $_ensure(257);
+  FlutterDraggable ensureFlutterDraggable() => $_ensure(257);
 
   @$pb.TagNumber(260)
-  FlutterFadeInImageNamedAssetNetwork get flutterFadeInImageNamedAssetNetwork => $_getN(258);
+  FlutterLongPressDraggable get flutterLongPressDraggable => $_getN(258);
   @$pb.TagNumber(260)
-  set flutterFadeInImageNamedAssetNetwork(FlutterFadeInImageNamedAssetNetwork v) { setField(260, v); }
+  set flutterLongPressDraggable(FlutterLongPressDraggable v) { setField(260, v); }
   @$pb.TagNumber(260)
-  $core.bool hasFlutterFadeInImageNamedAssetNetwork() => $_has(258);
+  $core.bool hasFlutterLongPressDraggable() => $_has(258);
   @$pb.TagNumber(260)
-  void clearFlutterFadeInImageNamedAssetNetwork() => clearField(260);
+  void clearFlutterLongPressDraggable() => clearField(260);
   @$pb.TagNumber(260)
-  FlutterFadeInImageNamedAssetNetwork ensureFlutterFadeInImageNamedAssetNetwork() => $_ensure(258);
+  FlutterLongPressDraggable ensureFlutterLongPressDraggable() => $_ensure(258);
 
   @$pb.TagNumber(261)
-  FlutterExcludeFocus get flutterExcludeFocus => $_getN(259);
+  FlutterDraggableScrollableActuator get flutterDraggableScrollableActuator => $_getN(259);
   @$pb.TagNumber(261)
-  set flutterExcludeFocus(FlutterExcludeFocus v) { setField(261, v); }
+  set flutterDraggableScrollableActuator(FlutterDraggableScrollableActuator v) { setField(261, v); }
   @$pb.TagNumber(261)
-  $core.bool hasFlutterExcludeFocus() => $_has(259);
+  $core.bool hasFlutterDraggableScrollableActuator() => $_has(259);
   @$pb.TagNumber(261)
-  void clearFlutterExcludeFocus() => clearField(261);
+  void clearFlutterDraggableScrollableActuator() => clearField(261);
   @$pb.TagNumber(261)
-  FlutterExcludeFocus ensureFlutterExcludeFocus() => $_ensure(259);
+  FlutterDraggableScrollableActuator ensureFlutterDraggableScrollableActuator() => $_ensure(259);
 
   @$pb.TagNumber(262)
-  FlutterFocus get flutterFocus => $_getN(260);
+  FlutterFadeInImageNamedAssetNetwork get flutterFadeInImageNamedAssetNetwork => $_getN(260);
   @$pb.TagNumber(262)
-  set flutterFocus(FlutterFocus v) { setField(262, v); }
+  set flutterFadeInImageNamedAssetNetwork(FlutterFadeInImageNamedAssetNetwork v) { setField(262, v); }
   @$pb.TagNumber(262)
-  $core.bool hasFlutterFocus() => $_has(260);
+  $core.bool hasFlutterFadeInImageNamedAssetNetwork() => $_has(260);
   @$pb.TagNumber(262)
-  void clearFlutterFocus() => clearField(262);
+  void clearFlutterFadeInImageNamedAssetNetwork() => clearField(262);
   @$pb.TagNumber(262)
-  FlutterFocus ensureFlutterFocus() => $_ensure(260);
+  FlutterFadeInImageNamedAssetNetwork ensureFlutterFadeInImageNamedAssetNetwork() => $_ensure(260);
 
   @$pb.TagNumber(263)
-  FlutterFocusScope get flutterFocusScope => $_getN(261);
+  FlutterExcludeFocus get flutterExcludeFocus => $_getN(261);
   @$pb.TagNumber(263)
-  set flutterFocusScope(FlutterFocusScope v) { setField(263, v); }
+  set flutterExcludeFocus(FlutterExcludeFocus v) { setField(263, v); }
   @$pb.TagNumber(263)
-  $core.bool hasFlutterFocusScope() => $_has(261);
+  $core.bool hasFlutterExcludeFocus() => $_has(261);
   @$pb.TagNumber(263)
-  void clearFlutterFocusScope() => clearField(263);
+  void clearFlutterExcludeFocus() => clearField(263);
   @$pb.TagNumber(263)
-  FlutterFocusScope ensureFlutterFocusScope() => $_ensure(261);
+  FlutterExcludeFocus ensureFlutterExcludeFocus() => $_ensure(261);
 
   @$pb.TagNumber(264)
-  FlutterExcludeFocusTraversal get flutterExcludeFocusTraversal => $_getN(262);
+  FlutterFocus get flutterFocus => $_getN(262);
   @$pb.TagNumber(264)
-  set flutterExcludeFocusTraversal(FlutterExcludeFocusTraversal v) { setField(264, v); }
+  set flutterFocus(FlutterFocus v) { setField(264, v); }
   @$pb.TagNumber(264)
-  $core.bool hasFlutterExcludeFocusTraversal() => $_has(262);
+  $core.bool hasFlutterFocus() => $_has(262);
   @$pb.TagNumber(264)
-  void clearFlutterExcludeFocusTraversal() => clearField(264);
+  void clearFlutterFocus() => clearField(264);
   @$pb.TagNumber(264)
-  FlutterExcludeFocusTraversal ensureFlutterExcludeFocusTraversal() => $_ensure(262);
+  FlutterFocus ensureFlutterFocus() => $_ensure(262);
 
   @$pb.TagNumber(265)
-  FlutterFocusTraversalGroup get flutterFocusTraversalGroup => $_getN(263);
+  FlutterFocusScope get flutterFocusScope => $_getN(263);
   @$pb.TagNumber(265)
-  set flutterFocusTraversalGroup(FlutterFocusTraversalGroup v) { setField(265, v); }
+  set flutterFocusScope(FlutterFocusScope v) { setField(265, v); }
   @$pb.TagNumber(265)
-  $core.bool hasFlutterFocusTraversalGroup() => $_has(263);
+  $core.bool hasFlutterFocusScope() => $_has(263);
   @$pb.TagNumber(265)
-  void clearFlutterFocusTraversalGroup() => clearField(265);
+  void clearFlutterFocusScope() => clearField(265);
   @$pb.TagNumber(265)
-  FlutterFocusTraversalGroup ensureFlutterFocusTraversalGroup() => $_ensure(263);
+  FlutterFocusScope ensureFlutterFocusScope() => $_ensure(263);
 
   @$pb.TagNumber(266)
-  FlutterForm get flutterForm => $_getN(264);
+  FlutterExcludeFocusTraversal get flutterExcludeFocusTraversal => $_getN(264);
   @$pb.TagNumber(266)
-  set flutterForm(FlutterForm v) { setField(266, v); }
+  set flutterExcludeFocusTraversal(FlutterExcludeFocusTraversal v) { setField(266, v); }
   @$pb.TagNumber(266)
-  $core.bool hasFlutterForm() => $_has(264);
+  $core.bool hasFlutterExcludeFocusTraversal() => $_has(264);
   @$pb.TagNumber(266)
-  void clearFlutterForm() => clearField(266);
+  void clearFlutterExcludeFocusTraversal() => clearField(266);
   @$pb.TagNumber(266)
-  FlutterForm ensureFlutterForm() => $_ensure(264);
+  FlutterExcludeFocusTraversal ensureFlutterExcludeFocusTraversal() => $_ensure(264);
 
   @$pb.TagNumber(267)
-  FlutterErrorWidgetNamedWithDetails get flutterErrorWidgetNamedWithDetails => $_getN(265);
+  FlutterFocusTraversalGroup get flutterFocusTraversalGroup => $_getN(265);
   @$pb.TagNumber(267)
-  set flutterErrorWidgetNamedWithDetails(FlutterErrorWidgetNamedWithDetails v) { setField(267, v); }
+  set flutterFocusTraversalGroup(FlutterFocusTraversalGroup v) { setField(267, v); }
   @$pb.TagNumber(267)
-  $core.bool hasFlutterErrorWidgetNamedWithDetails() => $_has(265);
+  $core.bool hasFlutterFocusTraversalGroup() => $_has(265);
   @$pb.TagNumber(267)
-  void clearFlutterErrorWidgetNamedWithDetails() => clearField(267);
+  void clearFlutterFocusTraversalGroup() => clearField(267);
   @$pb.TagNumber(267)
-  FlutterErrorWidgetNamedWithDetails ensureFlutterErrorWidgetNamedWithDetails() => $_ensure(265);
+  FlutterFocusTraversalGroup ensureFlutterFocusTraversalGroup() => $_ensure(265);
 
   @$pb.TagNumber(268)
-  FlutterGestureDetector get flutterGestureDetector => $_getN(266);
+  FlutterForm get flutterForm => $_getN(266);
   @$pb.TagNumber(268)
-  set flutterGestureDetector(FlutterGestureDetector v) { setField(268, v); }
+  set flutterForm(FlutterForm v) { setField(268, v); }
   @$pb.TagNumber(268)
-  $core.bool hasFlutterGestureDetector() => $_has(266);
+  $core.bool hasFlutterForm() => $_has(266);
   @$pb.TagNumber(268)
-  void clearFlutterGestureDetector() => clearField(268);
+  void clearFlutterForm() => clearField(268);
   @$pb.TagNumber(268)
-  FlutterGestureDetector ensureFlutterGestureDetector() => $_ensure(266);
+  FlutterForm ensureFlutterForm() => $_ensure(266);
 
   @$pb.TagNumber(269)
-  FlutterRawGestureDetector get flutterRawGestureDetector => $_getN(267);
+  FlutterErrorWidgetNamedWithDetails get flutterErrorWidgetNamedWithDetails => $_getN(267);
   @$pb.TagNumber(269)
-  set flutterRawGestureDetector(FlutterRawGestureDetector v) { setField(269, v); }
+  set flutterErrorWidgetNamedWithDetails(FlutterErrorWidgetNamedWithDetails v) { setField(269, v); }
   @$pb.TagNumber(269)
-  $core.bool hasFlutterRawGestureDetector() => $_has(267);
+  $core.bool hasFlutterErrorWidgetNamedWithDetails() => $_has(267);
   @$pb.TagNumber(269)
-  void clearFlutterRawGestureDetector() => clearField(269);
+  void clearFlutterErrorWidgetNamedWithDetails() => clearField(269);
   @$pb.TagNumber(269)
-  FlutterRawGestureDetector ensureFlutterRawGestureDetector() => $_ensure(267);
+  FlutterErrorWidgetNamedWithDetails ensureFlutterErrorWidgetNamedWithDetails() => $_ensure(267);
 
   @$pb.TagNumber(270)
-  FlutterGridPaper get flutterGridPaper => $_getN(268);
+  FlutterGestureDetector get flutterGestureDetector => $_getN(268);
   @$pb.TagNumber(270)
-  set flutterGridPaper(FlutterGridPaper v) { setField(270, v); }
+  set flutterGestureDetector(FlutterGestureDetector v) { setField(270, v); }
   @$pb.TagNumber(270)
-  $core.bool hasFlutterGridPaper() => $_has(268);
+  $core.bool hasFlutterGestureDetector() => $_has(268);
   @$pb.TagNumber(270)
-  void clearFlutterGridPaper() => clearField(270);
+  void clearFlutterGestureDetector() => clearField(270);
   @$pb.TagNumber(270)
-  FlutterGridPaper ensureFlutterGridPaper() => $_ensure(268);
+  FlutterGestureDetector ensureFlutterGestureDetector() => $_ensure(268);
 
   @$pb.TagNumber(271)
-  FlutterHeroMode get flutterHeroMode => $_getN(269);
+  FlutterRawGestureDetector get flutterRawGestureDetector => $_getN(269);
   @$pb.TagNumber(271)
-  set flutterHeroMode(FlutterHeroMode v) { setField(271, v); }
+  set flutterRawGestureDetector(FlutterRawGestureDetector v) { setField(271, v); }
   @$pb.TagNumber(271)
-  $core.bool hasFlutterHeroMode() => $_has(269);
+  $core.bool hasFlutterRawGestureDetector() => $_has(269);
   @$pb.TagNumber(271)
-  void clearFlutterHeroMode() => clearField(271);
+  void clearFlutterRawGestureDetector() => clearField(271);
   @$pb.TagNumber(271)
-  FlutterHeroMode ensureFlutterHeroMode() => $_ensure(269);
+  FlutterRawGestureDetector ensureFlutterRawGestureDetector() => $_ensure(269);
 
   @$pb.TagNumber(272)
-  FlutterIcon get flutterIcon => $_getN(270);
+  FlutterGridPaper get flutterGridPaper => $_getN(270);
   @$pb.TagNumber(272)
-  set flutterIcon(FlutterIcon v) { setField(272, v); }
+  set flutterGridPaper(FlutterGridPaper v) { setField(272, v); }
   @$pb.TagNumber(272)
-  $core.bool hasFlutterIcon() => $_has(270);
+  $core.bool hasFlutterGridPaper() => $_has(270);
   @$pb.TagNumber(272)
-  void clearFlutterIcon() => clearField(272);
+  void clearFlutterGridPaper() => clearField(272);
   @$pb.TagNumber(272)
-  FlutterIcon ensureFlutterIcon() => $_ensure(270);
+  FlutterGridPaper ensureFlutterGridPaper() => $_ensure(270);
 
   @$pb.TagNumber(273)
-  FlutterImageNamedNetwork get flutterImageNamedNetwork => $_getN(271);
+  FlutterHeroMode get flutterHeroMode => $_getN(271);
   @$pb.TagNumber(273)
-  set flutterImageNamedNetwork(FlutterImageNamedNetwork v) { setField(273, v); }
+  set flutterHeroMode(FlutterHeroMode v) { setField(273, v); }
   @$pb.TagNumber(273)
-  $core.bool hasFlutterImageNamedNetwork() => $_has(271);
+  $core.bool hasFlutterHeroMode() => $_has(271);
   @$pb.TagNumber(273)
-  void clearFlutterImageNamedNetwork() => clearField(273);
+  void clearFlutterHeroMode() => clearField(273);
   @$pb.TagNumber(273)
-  FlutterImageNamedNetwork ensureFlutterImageNamedNetwork() => $_ensure(271);
+  FlutterHeroMode ensureFlutterHeroMode() => $_ensure(271);
 
   @$pb.TagNumber(274)
-  FlutterImageNamedAsset get flutterImageNamedAsset => $_getN(272);
+  FlutterIcon get flutterIcon => $_getN(272);
   @$pb.TagNumber(274)
-  set flutterImageNamedAsset(FlutterImageNamedAsset v) { setField(274, v); }
+  set flutterIcon(FlutterIcon v) { setField(274, v); }
   @$pb.TagNumber(274)
-  $core.bool hasFlutterImageNamedAsset() => $_has(272);
+  $core.bool hasFlutterIcon() => $_has(272);
   @$pb.TagNumber(274)
-  void clearFlutterImageNamedAsset() => clearField(274);
+  void clearFlutterIcon() => clearField(274);
   @$pb.TagNumber(274)
-  FlutterImageNamedAsset ensureFlutterImageNamedAsset() => $_ensure(272);
+  FlutterIcon ensureFlutterIcon() => $_ensure(272);
 
   @$pb.TagNumber(275)
-  FlutterImageIcon get flutterImageIcon => $_getN(273);
+  FlutterImageNamedNetwork get flutterImageNamedNetwork => $_getN(273);
   @$pb.TagNumber(275)
-  set flutterImageIcon(FlutterImageIcon v) { setField(275, v); }
+  set flutterImageNamedNetwork(FlutterImageNamedNetwork v) { setField(275, v); }
   @$pb.TagNumber(275)
-  $core.bool hasFlutterImageIcon() => $_has(273);
+  $core.bool hasFlutterImageNamedNetwork() => $_has(273);
   @$pb.TagNumber(275)
-  void clearFlutterImageIcon() => clearField(275);
+  void clearFlutterImageNamedNetwork() => clearField(275);
   @$pb.TagNumber(275)
-  FlutterImageIcon ensureFlutterImageIcon() => $_ensure(273);
+  FlutterImageNamedNetwork ensureFlutterImageNamedNetwork() => $_ensure(273);
 
   @$pb.TagNumber(276)
-  FlutterAnimatedContainer get flutterAnimatedContainer => $_getN(274);
+  FlutterImageNamedAsset get flutterImageNamedAsset => $_getN(274);
   @$pb.TagNumber(276)
-  set flutterAnimatedContainer(FlutterAnimatedContainer v) { setField(276, v); }
+  set flutterImageNamedAsset(FlutterImageNamedAsset v) { setField(276, v); }
   @$pb.TagNumber(276)
-  $core.bool hasFlutterAnimatedContainer() => $_has(274);
+  $core.bool hasFlutterImageNamedAsset() => $_has(274);
   @$pb.TagNumber(276)
-  void clearFlutterAnimatedContainer() => clearField(276);
+  void clearFlutterImageNamedAsset() => clearField(276);
   @$pb.TagNumber(276)
-  FlutterAnimatedContainer ensureFlutterAnimatedContainer() => $_ensure(274);
+  FlutterImageNamedAsset ensureFlutterImageNamedAsset() => $_ensure(274);
 
   @$pb.TagNumber(277)
-  FlutterAnimatedFractionallySizedBox get flutterAnimatedFractionallySizedBox => $_getN(275);
+  FlutterImageIcon get flutterImageIcon => $_getN(275);
   @$pb.TagNumber(277)
-  set flutterAnimatedFractionallySizedBox(FlutterAnimatedFractionallySizedBox v) { setField(277, v); }
+  set flutterImageIcon(FlutterImageIcon v) { setField(277, v); }
   @$pb.TagNumber(277)
-  $core.bool hasFlutterAnimatedFractionallySizedBox() => $_has(275);
+  $core.bool hasFlutterImageIcon() => $_has(275);
   @$pb.TagNumber(277)
-  void clearFlutterAnimatedFractionallySizedBox() => clearField(277);
+  void clearFlutterImageIcon() => clearField(277);
   @$pb.TagNumber(277)
-  FlutterAnimatedFractionallySizedBox ensureFlutterAnimatedFractionallySizedBox() => $_ensure(275);
+  FlutterImageIcon ensureFlutterImageIcon() => $_ensure(275);
 
   @$pb.TagNumber(278)
-  FlutterAnimatedOpacity get flutterAnimatedOpacity => $_getN(276);
+  FlutterAnimatedContainer get flutterAnimatedContainer => $_getN(276);
   @$pb.TagNumber(278)
-  set flutterAnimatedOpacity(FlutterAnimatedOpacity v) { setField(278, v); }
+  set flutterAnimatedContainer(FlutterAnimatedContainer v) { setField(278, v); }
   @$pb.TagNumber(278)
-  $core.bool hasFlutterAnimatedOpacity() => $_has(276);
+  $core.bool hasFlutterAnimatedContainer() => $_has(276);
   @$pb.TagNumber(278)
-  void clearFlutterAnimatedOpacity() => clearField(278);
+  void clearFlutterAnimatedContainer() => clearField(278);
   @$pb.TagNumber(278)
-  FlutterAnimatedOpacity ensureFlutterAnimatedOpacity() => $_ensure(276);
+  FlutterAnimatedContainer ensureFlutterAnimatedContainer() => $_ensure(276);
 
   @$pb.TagNumber(279)
-  FlutterAnimatedPhysicalModel get flutterAnimatedPhysicalModel => $_getN(277);
+  FlutterAnimatedFractionallySizedBox get flutterAnimatedFractionallySizedBox => $_getN(277);
   @$pb.TagNumber(279)
-  set flutterAnimatedPhysicalModel(FlutterAnimatedPhysicalModel v) { setField(279, v); }
+  set flutterAnimatedFractionallySizedBox(FlutterAnimatedFractionallySizedBox v) { setField(279, v); }
   @$pb.TagNumber(279)
-  $core.bool hasFlutterAnimatedPhysicalModel() => $_has(277);
+  $core.bool hasFlutterAnimatedFractionallySizedBox() => $_has(277);
   @$pb.TagNumber(279)
-  void clearFlutterAnimatedPhysicalModel() => clearField(279);
+  void clearFlutterAnimatedFractionallySizedBox() => clearField(279);
   @$pb.TagNumber(279)
-  FlutterAnimatedPhysicalModel ensureFlutterAnimatedPhysicalModel() => $_ensure(277);
+  FlutterAnimatedFractionallySizedBox ensureFlutterAnimatedFractionallySizedBox() => $_ensure(277);
 
   @$pb.TagNumber(280)
-  FlutterAnimatedPositioned get flutterAnimatedPositioned => $_getN(278);
+  FlutterAnimatedOpacity get flutterAnimatedOpacity => $_getN(278);
   @$pb.TagNumber(280)
-  set flutterAnimatedPositioned(FlutterAnimatedPositioned v) { setField(280, v); }
+  set flutterAnimatedOpacity(FlutterAnimatedOpacity v) { setField(280, v); }
   @$pb.TagNumber(280)
-  $core.bool hasFlutterAnimatedPositioned() => $_has(278);
+  $core.bool hasFlutterAnimatedOpacity() => $_has(278);
   @$pb.TagNumber(280)
-  void clearFlutterAnimatedPositioned() => clearField(280);
+  void clearFlutterAnimatedOpacity() => clearField(280);
   @$pb.TagNumber(280)
-  FlutterAnimatedPositioned ensureFlutterAnimatedPositioned() => $_ensure(278);
+  FlutterAnimatedOpacity ensureFlutterAnimatedOpacity() => $_ensure(278);
 
   @$pb.TagNumber(281)
-  FlutterAnimatedPositionedDirectional get flutterAnimatedPositionedDirectional => $_getN(279);
+  FlutterAnimatedPadding get flutterAnimatedPadding => $_getN(279);
   @$pb.TagNumber(281)
-  set flutterAnimatedPositionedDirectional(FlutterAnimatedPositionedDirectional v) { setField(281, v); }
+  set flutterAnimatedPadding(FlutterAnimatedPadding v) { setField(281, v); }
   @$pb.TagNumber(281)
-  $core.bool hasFlutterAnimatedPositionedDirectional() => $_has(279);
+  $core.bool hasFlutterAnimatedPadding() => $_has(279);
   @$pb.TagNumber(281)
-  void clearFlutterAnimatedPositionedDirectional() => clearField(281);
+  void clearFlutterAnimatedPadding() => clearField(281);
   @$pb.TagNumber(281)
-  FlutterAnimatedPositionedDirectional ensureFlutterAnimatedPositionedDirectional() => $_ensure(279);
+  FlutterAnimatedPadding ensureFlutterAnimatedPadding() => $_ensure(279);
 
   @$pb.TagNumber(282)
-  FlutterAnimatedRotation get flutterAnimatedRotation => $_getN(280);
+  FlutterAnimatedPhysicalModel get flutterAnimatedPhysicalModel => $_getN(280);
   @$pb.TagNumber(282)
-  set flutterAnimatedRotation(FlutterAnimatedRotation v) { setField(282, v); }
+  set flutterAnimatedPhysicalModel(FlutterAnimatedPhysicalModel v) { setField(282, v); }
   @$pb.TagNumber(282)
-  $core.bool hasFlutterAnimatedRotation() => $_has(280);
+  $core.bool hasFlutterAnimatedPhysicalModel() => $_has(280);
   @$pb.TagNumber(282)
-  void clearFlutterAnimatedRotation() => clearField(282);
+  void clearFlutterAnimatedPhysicalModel() => clearField(282);
   @$pb.TagNumber(282)
-  FlutterAnimatedRotation ensureFlutterAnimatedRotation() => $_ensure(280);
+  FlutterAnimatedPhysicalModel ensureFlutterAnimatedPhysicalModel() => $_ensure(280);
 
   @$pb.TagNumber(283)
-  FlutterAnimatedScale get flutterAnimatedScale => $_getN(281);
+  FlutterAnimatedPositioned get flutterAnimatedPositioned => $_getN(281);
   @$pb.TagNumber(283)
-  set flutterAnimatedScale(FlutterAnimatedScale v) { setField(283, v); }
+  set flutterAnimatedPositioned(FlutterAnimatedPositioned v) { setField(283, v); }
   @$pb.TagNumber(283)
-  $core.bool hasFlutterAnimatedScale() => $_has(281);
+  $core.bool hasFlutterAnimatedPositioned() => $_has(281);
   @$pb.TagNumber(283)
-  void clearFlutterAnimatedScale() => clearField(283);
+  void clearFlutterAnimatedPositioned() => clearField(283);
   @$pb.TagNumber(283)
-  FlutterAnimatedScale ensureFlutterAnimatedScale() => $_ensure(281);
+  FlutterAnimatedPositioned ensureFlutterAnimatedPositioned() => $_ensure(281);
 
   @$pb.TagNumber(284)
-  FlutterSliverAnimatedOpacity get flutterSliverAnimatedOpacity => $_getN(282);
+  FlutterAnimatedPositionedDirectional get flutterAnimatedPositionedDirectional => $_getN(282);
   @$pb.TagNumber(284)
-  set flutterSliverAnimatedOpacity(FlutterSliverAnimatedOpacity v) { setField(284, v); }
+  set flutterAnimatedPositionedDirectional(FlutterAnimatedPositionedDirectional v) { setField(284, v); }
   @$pb.TagNumber(284)
-  $core.bool hasFlutterSliverAnimatedOpacity() => $_has(282);
+  $core.bool hasFlutterAnimatedPositionedDirectional() => $_has(282);
   @$pb.TagNumber(284)
-  void clearFlutterSliverAnimatedOpacity() => clearField(284);
+  void clearFlutterAnimatedPositionedDirectional() => clearField(284);
   @$pb.TagNumber(284)
-  FlutterSliverAnimatedOpacity ensureFlutterSliverAnimatedOpacity() => $_ensure(282);
+  FlutterAnimatedPositionedDirectional ensureFlutterAnimatedPositionedDirectional() => $_ensure(282);
 
   @$pb.TagNumber(285)
-  FlutterInteractiveViewer get flutterInteractiveViewer => $_getN(283);
+  FlutterAnimatedRotation get flutterAnimatedRotation => $_getN(283);
   @$pb.TagNumber(285)
-  set flutterInteractiveViewer(FlutterInteractiveViewer v) { setField(285, v); }
+  set flutterAnimatedRotation(FlutterAnimatedRotation v) { setField(285, v); }
   @$pb.TagNumber(285)
-  $core.bool hasFlutterInteractiveViewer() => $_has(283);
+  $core.bool hasFlutterAnimatedRotation() => $_has(283);
   @$pb.TagNumber(285)
-  void clearFlutterInteractiveViewer() => clearField(285);
+  void clearFlutterAnimatedRotation() => clearField(285);
   @$pb.TagNumber(285)
-  FlutterInteractiveViewer ensureFlutterInteractiveViewer() => $_ensure(283);
+  FlutterAnimatedRotation ensureFlutterAnimatedRotation() => $_ensure(283);
 
   @$pb.TagNumber(286)
-  FlutterListWheelScrollView get flutterListWheelScrollView => $_getN(284);
+  FlutterAnimatedScale get flutterAnimatedScale => $_getN(284);
   @$pb.TagNumber(286)
-  set flutterListWheelScrollView(FlutterListWheelScrollView v) { setField(286, v); }
+  set flutterAnimatedScale(FlutterAnimatedScale v) { setField(286, v); }
   @$pb.TagNumber(286)
-  $core.bool hasFlutterListWheelScrollView() => $_has(284);
+  $core.bool hasFlutterAnimatedScale() => $_has(284);
   @$pb.TagNumber(286)
-  void clearFlutterListWheelScrollView() => clearField(286);
+  void clearFlutterAnimatedScale() => clearField(286);
   @$pb.TagNumber(286)
-  FlutterListWheelScrollView ensureFlutterListWheelScrollView() => $_ensure(284);
+  FlutterAnimatedScale ensureFlutterAnimatedScale() => $_ensure(284);
 
   @$pb.TagNumber(287)
-  FlutterLookupBoundary get flutterLookupBoundary => $_getN(285);
+  FlutterSliverAnimatedOpacity get flutterSliverAnimatedOpacity => $_getN(285);
   @$pb.TagNumber(287)
-  set flutterLookupBoundary(FlutterLookupBoundary v) { setField(287, v); }
+  set flutterSliverAnimatedOpacity(FlutterSliverAnimatedOpacity v) { setField(287, v); }
   @$pb.TagNumber(287)
-  $core.bool hasFlutterLookupBoundary() => $_has(285);
+  $core.bool hasFlutterSliverAnimatedOpacity() => $_has(285);
   @$pb.TagNumber(287)
-  void clearFlutterLookupBoundary() => clearField(287);
+  void clearFlutterSliverAnimatedOpacity() => clearField(287);
   @$pb.TagNumber(287)
-  FlutterLookupBoundary ensureFlutterLookupBoundary() => $_ensure(285);
+  FlutterSliverAnimatedOpacity ensureFlutterSliverAnimatedOpacity() => $_ensure(285);
 
   @$pb.TagNumber(288)
-  FlutterModalBarrier get flutterModalBarrier => $_getN(286);
+  FlutterInteractiveViewer get flutterInteractiveViewer => $_getN(286);
   @$pb.TagNumber(288)
-  set flutterModalBarrier(FlutterModalBarrier v) { setField(288, v); }
+  set flutterInteractiveViewer(FlutterInteractiveViewer v) { setField(288, v); }
   @$pb.TagNumber(288)
-  $core.bool hasFlutterModalBarrier() => $_has(286);
+  $core.bool hasFlutterInteractiveViewer() => $_has(286);
   @$pb.TagNumber(288)
-  void clearFlutterModalBarrier() => clearField(288);
+  void clearFlutterInteractiveViewer() => clearField(288);
   @$pb.TagNumber(288)
-  FlutterModalBarrier ensureFlutterModalBarrier() => $_ensure(286);
+  FlutterInteractiveViewer ensureFlutterInteractiveViewer() => $_ensure(286);
 
   @$pb.TagNumber(289)
-  FlutterNavigationToolbar get flutterNavigationToolbar => $_getN(287);
+  FlutterListWheelScrollView get flutterListWheelScrollView => $_getN(287);
   @$pb.TagNumber(289)
-  set flutterNavigationToolbar(FlutterNavigationToolbar v) { setField(289, v); }
+  set flutterListWheelScrollView(FlutterListWheelScrollView v) { setField(289, v); }
   @$pb.TagNumber(289)
-  $core.bool hasFlutterNavigationToolbar() => $_has(287);
+  $core.bool hasFlutterListWheelScrollView() => $_has(287);
   @$pb.TagNumber(289)
-  void clearFlutterNavigationToolbar() => clearField(289);
+  void clearFlutterListWheelScrollView() => clearField(289);
   @$pb.TagNumber(289)
-  FlutterNavigationToolbar ensureFlutterNavigationToolbar() => $_ensure(287);
+  FlutterListWheelScrollView ensureFlutterListWheelScrollView() => $_ensure(287);
 
   @$pb.TagNumber(290)
-  FlutterHeroControllerScopeNamedNone get flutterHeroControllerScopeNamedNone => $_getN(288);
+  FlutterLookupBoundary get flutterLookupBoundary => $_getN(288);
   @$pb.TagNumber(290)
-  set flutterHeroControllerScopeNamedNone(FlutterHeroControllerScopeNamedNone v) { setField(290, v); }
+  set flutterLookupBoundary(FlutterLookupBoundary v) { setField(290, v); }
   @$pb.TagNumber(290)
-  $core.bool hasFlutterHeroControllerScopeNamedNone() => $_has(288);
+  $core.bool hasFlutterLookupBoundary() => $_has(288);
   @$pb.TagNumber(290)
-  void clearFlutterHeroControllerScopeNamedNone() => clearField(290);
+  void clearFlutterLookupBoundary() => clearField(290);
   @$pb.TagNumber(290)
-  FlutterHeroControllerScopeNamedNone ensureFlutterHeroControllerScopeNamedNone() => $_ensure(288);
+  FlutterLookupBoundary ensureFlutterLookupBoundary() => $_ensure(288);
 
   @$pb.TagNumber(291)
-  FlutterNavigator get flutterNavigator => $_getN(289);
+  FlutterModalBarrier get flutterModalBarrier => $_getN(289);
   @$pb.TagNumber(291)
-  set flutterNavigator(FlutterNavigator v) { setField(291, v); }
+  set flutterModalBarrier(FlutterModalBarrier v) { setField(291, v); }
   @$pb.TagNumber(291)
-  $core.bool hasFlutterNavigator() => $_has(289);
+  $core.bool hasFlutterModalBarrier() => $_has(289);
   @$pb.TagNumber(291)
-  void clearFlutterNavigator() => clearField(291);
+  void clearFlutterModalBarrier() => clearField(291);
   @$pb.TagNumber(291)
-  FlutterNavigator ensureFlutterNavigator() => $_ensure(289);
+  FlutterModalBarrier ensureFlutterModalBarrier() => $_ensure(289);
 
   @$pb.TagNumber(292)
-  FlutterNotificationListener get flutterNotificationListener => $_getN(290);
+  FlutterNavigationToolbar get flutterNavigationToolbar => $_getN(290);
   @$pb.TagNumber(292)
-  set flutterNotificationListener(FlutterNotificationListener v) { setField(292, v); }
+  set flutterNavigationToolbar(FlutterNavigationToolbar v) { setField(292, v); }
   @$pb.TagNumber(292)
-  $core.bool hasFlutterNotificationListener() => $_has(290);
+  $core.bool hasFlutterNavigationToolbar() => $_has(290);
   @$pb.TagNumber(292)
-  void clearFlutterNotificationListener() => clearField(292);
+  void clearFlutterNavigationToolbar() => clearField(292);
   @$pb.TagNumber(292)
-  FlutterNotificationListener ensureFlutterNotificationListener() => $_ensure(290);
+  FlutterNavigationToolbar ensureFlutterNavigationToolbar() => $_ensure(290);
 
   @$pb.TagNumber(293)
-  FlutterOverflowBar get flutterOverflowBar => $_getN(291);
+  FlutterHeroControllerScopeNamedNone get flutterHeroControllerScopeNamedNone => $_getN(291);
   @$pb.TagNumber(293)
-  set flutterOverflowBar(FlutterOverflowBar v) { setField(293, v); }
+  set flutterHeroControllerScopeNamedNone(FlutterHeroControllerScopeNamedNone v) { setField(293, v); }
   @$pb.TagNumber(293)
-  $core.bool hasFlutterOverflowBar() => $_has(291);
+  $core.bool hasFlutterHeroControllerScopeNamedNone() => $_has(291);
   @$pb.TagNumber(293)
-  void clearFlutterOverflowBar() => clearField(293);
+  void clearFlutterHeroControllerScopeNamedNone() => clearField(293);
   @$pb.TagNumber(293)
-  FlutterOverflowBar ensureFlutterOverflowBar() => $_ensure(291);
+  FlutterHeroControllerScopeNamedNone ensureFlutterHeroControllerScopeNamedNone() => $_ensure(291);
 
   @$pb.TagNumber(294)
-  FlutterOverlay get flutterOverlay => $_getN(292);
+  FlutterNavigator get flutterNavigator => $_getN(292);
   @$pb.TagNumber(294)
-  set flutterOverlay(FlutterOverlay v) { setField(294, v); }
+  set flutterNavigator(FlutterNavigator v) { setField(294, v); }
   @$pb.TagNumber(294)
-  $core.bool hasFlutterOverlay() => $_has(292);
+  $core.bool hasFlutterNavigator() => $_has(292);
   @$pb.TagNumber(294)
-  void clearFlutterOverlay() => clearField(294);
+  void clearFlutterNavigator() => clearField(294);
   @$pb.TagNumber(294)
-  FlutterOverlay ensureFlutterOverlay() => $_ensure(292);
+  FlutterNavigator ensureFlutterNavigator() => $_ensure(292);
 
   @$pb.TagNumber(295)
-  FlutterGlowingOverscrollIndicator get flutterGlowingOverscrollIndicator => $_getN(293);
+  FlutterNotificationListener get flutterNotificationListener => $_getN(293);
   @$pb.TagNumber(295)
-  set flutterGlowingOverscrollIndicator(FlutterGlowingOverscrollIndicator v) { setField(295, v); }
+  set flutterNotificationListener(FlutterNotificationListener v) { setField(295, v); }
   @$pb.TagNumber(295)
-  $core.bool hasFlutterGlowingOverscrollIndicator() => $_has(293);
+  $core.bool hasFlutterNotificationListener() => $_has(293);
   @$pb.TagNumber(295)
-  void clearFlutterGlowingOverscrollIndicator() => clearField(295);
+  void clearFlutterNotificationListener() => clearField(295);
   @$pb.TagNumber(295)
-  FlutterGlowingOverscrollIndicator ensureFlutterGlowingOverscrollIndicator() => $_ensure(293);
+  FlutterNotificationListener ensureFlutterNotificationListener() => $_ensure(293);
 
   @$pb.TagNumber(296)
-  FlutterStretchingOverscrollIndicator get flutterStretchingOverscrollIndicator => $_getN(294);
+  FlutterOverflowBar get flutterOverflowBar => $_getN(294);
   @$pb.TagNumber(296)
-  set flutterStretchingOverscrollIndicator(FlutterStretchingOverscrollIndicator v) { setField(296, v); }
+  set flutterOverflowBar(FlutterOverflowBar v) { setField(296, v); }
   @$pb.TagNumber(296)
-  $core.bool hasFlutterStretchingOverscrollIndicator() => $_has(294);
+  $core.bool hasFlutterOverflowBar() => $_has(294);
   @$pb.TagNumber(296)
-  void clearFlutterStretchingOverscrollIndicator() => clearField(296);
+  void clearFlutterOverflowBar() => clearField(296);
   @$pb.TagNumber(296)
-  FlutterStretchingOverscrollIndicator ensureFlutterStretchingOverscrollIndicator() => $_ensure(294);
+  FlutterOverflowBar ensureFlutterOverflowBar() => $_ensure(294);
 
   @$pb.TagNumber(297)
-  FlutterPageView get flutterPageView => $_getN(295);
+  FlutterOverlay get flutterOverlay => $_getN(295);
   @$pb.TagNumber(297)
-  set flutterPageView(FlutterPageView v) { setField(297, v); }
+  set flutterOverlay(FlutterOverlay v) { setField(297, v); }
   @$pb.TagNumber(297)
-  $core.bool hasFlutterPageView() => $_has(295);
+  $core.bool hasFlutterOverlay() => $_has(295);
   @$pb.TagNumber(297)
-  void clearFlutterPageView() => clearField(297);
+  void clearFlutterOverlay() => clearField(297);
   @$pb.TagNumber(297)
-  FlutterPageView ensureFlutterPageView() => $_ensure(295);
+  FlutterOverlay ensureFlutterOverlay() => $_ensure(295);
 
   @$pb.TagNumber(298)
-  FlutterPerformanceOverlay get flutterPerformanceOverlay => $_getN(296);
+  FlutterGlowingOverscrollIndicator get flutterGlowingOverscrollIndicator => $_getN(296);
   @$pb.TagNumber(298)
-  set flutterPerformanceOverlay(FlutterPerformanceOverlay v) { setField(298, v); }
+  set flutterGlowingOverscrollIndicator(FlutterGlowingOverscrollIndicator v) { setField(298, v); }
   @$pb.TagNumber(298)
-  $core.bool hasFlutterPerformanceOverlay() => $_has(296);
+  $core.bool hasFlutterGlowingOverscrollIndicator() => $_has(296);
   @$pb.TagNumber(298)
-  void clearFlutterPerformanceOverlay() => clearField(298);
+  void clearFlutterGlowingOverscrollIndicator() => clearField(298);
   @$pb.TagNumber(298)
-  FlutterPerformanceOverlay ensureFlutterPerformanceOverlay() => $_ensure(296);
+  FlutterGlowingOverscrollIndicator ensureFlutterGlowingOverscrollIndicator() => $_ensure(296);
 
   @$pb.TagNumber(299)
-  FlutterPerformanceOverlayNamedAllEnabled get flutterPerformanceOverlayNamedAllEnabled => $_getN(297);
+  FlutterStretchingOverscrollIndicator get flutterStretchingOverscrollIndicator => $_getN(297);
   @$pb.TagNumber(299)
-  set flutterPerformanceOverlayNamedAllEnabled(FlutterPerformanceOverlayNamedAllEnabled v) { setField(299, v); }
+  set flutterStretchingOverscrollIndicator(FlutterStretchingOverscrollIndicator v) { setField(299, v); }
   @$pb.TagNumber(299)
-  $core.bool hasFlutterPerformanceOverlayNamedAllEnabled() => $_has(297);
+  $core.bool hasFlutterStretchingOverscrollIndicator() => $_has(297);
   @$pb.TagNumber(299)
-  void clearFlutterPerformanceOverlayNamedAllEnabled() => clearField(299);
+  void clearFlutterStretchingOverscrollIndicator() => clearField(299);
   @$pb.TagNumber(299)
-  FlutterPerformanceOverlayNamedAllEnabled ensureFlutterPerformanceOverlayNamedAllEnabled() => $_ensure(297);
+  FlutterStretchingOverscrollIndicator ensureFlutterStretchingOverscrollIndicator() => $_ensure(297);
 
   @$pb.TagNumber(300)
-  FlutterPlaceholder get flutterPlaceholder => $_getN(298);
+  FlutterPageView get flutterPageView => $_getN(298);
   @$pb.TagNumber(300)
-  set flutterPlaceholder(FlutterPlaceholder v) { setField(300, v); }
+  set flutterPageView(FlutterPageView v) { setField(300, v); }
   @$pb.TagNumber(300)
-  $core.bool hasFlutterPlaceholder() => $_has(298);
+  $core.bool hasFlutterPageView() => $_has(298);
   @$pb.TagNumber(300)
-  void clearFlutterPlaceholder() => clearField(300);
+  void clearFlutterPageView() => clearField(300);
   @$pb.TagNumber(300)
-  FlutterPlaceholder ensureFlutterPlaceholder() => $_ensure(298);
+  FlutterPageView ensureFlutterPageView() => $_ensure(298);
 
   @$pb.TagNumber(301)
-  FlutterAndroidView get flutterAndroidView => $_getN(299);
+  FlutterPerformanceOverlay get flutterPerformanceOverlay => $_getN(299);
   @$pb.TagNumber(301)
-  set flutterAndroidView(FlutterAndroidView v) { setField(301, v); }
+  set flutterPerformanceOverlay(FlutterPerformanceOverlay v) { setField(301, v); }
   @$pb.TagNumber(301)
-  $core.bool hasFlutterAndroidView() => $_has(299);
+  $core.bool hasFlutterPerformanceOverlay() => $_has(299);
   @$pb.TagNumber(301)
-  void clearFlutterAndroidView() => clearField(301);
+  void clearFlutterPerformanceOverlay() => clearField(301);
   @$pb.TagNumber(301)
-  FlutterAndroidView ensureFlutterAndroidView() => $_ensure(299);
+  FlutterPerformanceOverlay ensureFlutterPerformanceOverlay() => $_ensure(299);
 
   @$pb.TagNumber(302)
-  FlutterHtmlElementView get flutterHtmlElementView => $_getN(300);
+  FlutterPerformanceOverlayNamedAllEnabled get flutterPerformanceOverlayNamedAllEnabled => $_getN(300);
   @$pb.TagNumber(302)
-  set flutterHtmlElementView(FlutterHtmlElementView v) { setField(302, v); }
+  set flutterPerformanceOverlayNamedAllEnabled(FlutterPerformanceOverlayNamedAllEnabled v) { setField(302, v); }
   @$pb.TagNumber(302)
-  $core.bool hasFlutterHtmlElementView() => $_has(300);
+  $core.bool hasFlutterPerformanceOverlayNamedAllEnabled() => $_has(300);
   @$pb.TagNumber(302)
-  void clearFlutterHtmlElementView() => clearField(302);
+  void clearFlutterPerformanceOverlayNamedAllEnabled() => clearField(302);
   @$pb.TagNumber(302)
-  FlutterHtmlElementView ensureFlutterHtmlElementView() => $_ensure(300);
+  FlutterPerformanceOverlayNamedAllEnabled ensureFlutterPerformanceOverlayNamedAllEnabled() => $_ensure(300);
 
   @$pb.TagNumber(303)
-  FlutterUiKitView get flutterUiKitView => $_getN(301);
+  FlutterPlaceholder get flutterPlaceholder => $_getN(301);
   @$pb.TagNumber(303)
-  set flutterUiKitView(FlutterUiKitView v) { setField(303, v); }
+  set flutterPlaceholder(FlutterPlaceholder v) { setField(303, v); }
   @$pb.TagNumber(303)
-  $core.bool hasFlutterUiKitView() => $_has(301);
+  $core.bool hasFlutterPlaceholder() => $_has(301);
   @$pb.TagNumber(303)
-  void clearFlutterUiKitView() => clearField(303);
+  void clearFlutterPlaceholder() => clearField(303);
   @$pb.TagNumber(303)
-  FlutterUiKitView ensureFlutterUiKitView() => $_ensure(301);
+  FlutterPlaceholder ensureFlutterPlaceholder() => $_ensure(301);
 
   @$pb.TagNumber(304)
-  FlutterPrimaryScrollControllerNamedNone get flutterPrimaryScrollControllerNamedNone => $_getN(302);
+  FlutterAndroidView get flutterAndroidView => $_getN(302);
   @$pb.TagNumber(304)
-  set flutterPrimaryScrollControllerNamedNone(FlutterPrimaryScrollControllerNamedNone v) { setField(304, v); }
+  set flutterAndroidView(FlutterAndroidView v) { setField(304, v); }
   @$pb.TagNumber(304)
-  $core.bool hasFlutterPrimaryScrollControllerNamedNone() => $_has(302);
+  $core.bool hasFlutterAndroidView() => $_has(302);
   @$pb.TagNumber(304)
-  void clearFlutterPrimaryScrollControllerNamedNone() => clearField(304);
+  void clearFlutterAndroidView() => clearField(304);
   @$pb.TagNumber(304)
-  FlutterPrimaryScrollControllerNamedNone ensureFlutterPrimaryScrollControllerNamedNone() => $_ensure(302);
+  FlutterAndroidView ensureFlutterAndroidView() => $_ensure(302);
 
   @$pb.TagNumber(305)
-  FlutterReorderableDelayedDragStartListener get flutterReorderableDelayedDragStartListener => $_getN(303);
+  FlutterHtmlElementView get flutterHtmlElementView => $_getN(303);
   @$pb.TagNumber(305)
-  set flutterReorderableDelayedDragStartListener(FlutterReorderableDelayedDragStartListener v) { setField(305, v); }
+  set flutterHtmlElementView(FlutterHtmlElementView v) { setField(305, v); }
   @$pb.TagNumber(305)
-  $core.bool hasFlutterReorderableDelayedDragStartListener() => $_has(303);
+  $core.bool hasFlutterHtmlElementView() => $_has(303);
   @$pb.TagNumber(305)
-  void clearFlutterReorderableDelayedDragStartListener() => clearField(305);
+  void clearFlutterHtmlElementView() => clearField(305);
   @$pb.TagNumber(305)
-  FlutterReorderableDelayedDragStartListener ensureFlutterReorderableDelayedDragStartListener() => $_ensure(303);
+  FlutterHtmlElementView ensureFlutterHtmlElementView() => $_ensure(303);
 
   @$pb.TagNumber(306)
-  FlutterReorderableDragStartListener get flutterReorderableDragStartListener => $_getN(304);
+  FlutterUiKitView get flutterUiKitView => $_getN(304);
   @$pb.TagNumber(306)
-  set flutterReorderableDragStartListener(FlutterReorderableDragStartListener v) { setField(306, v); }
+  set flutterUiKitView(FlutterUiKitView v) { setField(306, v); }
   @$pb.TagNumber(306)
-  $core.bool hasFlutterReorderableDragStartListener() => $_has(304);
+  $core.bool hasFlutterUiKitView() => $_has(304);
   @$pb.TagNumber(306)
-  void clearFlutterReorderableDragStartListener() => clearField(306);
+  void clearFlutterUiKitView() => clearField(306);
   @$pb.TagNumber(306)
-  FlutterReorderableDragStartListener ensureFlutterReorderableDragStartListener() => $_ensure(304);
+  FlutterUiKitView ensureFlutterUiKitView() => $_ensure(304);
 
   @$pb.TagNumber(307)
-  FlutterRestorationScope get flutterRestorationScope => $_getN(305);
+  FlutterPrimaryScrollControllerNamedNone get flutterPrimaryScrollControllerNamedNone => $_getN(305);
   @$pb.TagNumber(307)
-  set flutterRestorationScope(FlutterRestorationScope v) { setField(307, v); }
+  set flutterPrimaryScrollControllerNamedNone(FlutterPrimaryScrollControllerNamedNone v) { setField(307, v); }
   @$pb.TagNumber(307)
-  $core.bool hasFlutterRestorationScope() => $_has(305);
+  $core.bool hasFlutterPrimaryScrollControllerNamedNone() => $_has(305);
   @$pb.TagNumber(307)
-  void clearFlutterRestorationScope() => clearField(307);
+  void clearFlutterPrimaryScrollControllerNamedNone() => clearField(307);
   @$pb.TagNumber(307)
-  FlutterRestorationScope ensureFlutterRestorationScope() => $_ensure(305);
+  FlutterPrimaryScrollControllerNamedNone ensureFlutterPrimaryScrollControllerNamedNone() => $_ensure(305);
 
   @$pb.TagNumber(308)
-  FlutterRootRestorationScope get flutterRootRestorationScope => $_getN(306);
+  FlutterReorderableDelayedDragStartListener get flutterReorderableDelayedDragStartListener => $_getN(306);
   @$pb.TagNumber(308)
-  set flutterRootRestorationScope(FlutterRootRestorationScope v) { setField(308, v); }
+  set flutterReorderableDelayedDragStartListener(FlutterReorderableDelayedDragStartListener v) { setField(308, v); }
   @$pb.TagNumber(308)
-  $core.bool hasFlutterRootRestorationScope() => $_has(306);
+  $core.bool hasFlutterReorderableDelayedDragStartListener() => $_has(306);
   @$pb.TagNumber(308)
-  void clearFlutterRootRestorationScope() => clearField(308);
+  void clearFlutterReorderableDelayedDragStartListener() => clearField(308);
   @$pb.TagNumber(308)
-  FlutterRootRestorationScope ensureFlutterRootRestorationScope() => $_ensure(306);
+  FlutterReorderableDelayedDragStartListener ensureFlutterReorderableDelayedDragStartListener() => $_ensure(306);
 
   @$pb.TagNumber(309)
-  FlutterUnmanagedRestorationScope get flutterUnmanagedRestorationScope => $_getN(307);
+  FlutterReorderableDragStartListener get flutterReorderableDragStartListener => $_getN(307);
   @$pb.TagNumber(309)
-  set flutterUnmanagedRestorationScope(FlutterUnmanagedRestorationScope v) { setField(309, v); }
+  set flutterReorderableDragStartListener(FlutterReorderableDragStartListener v) { setField(309, v); }
   @$pb.TagNumber(309)
-  $core.bool hasFlutterUnmanagedRestorationScope() => $_has(307);
+  $core.bool hasFlutterReorderableDragStartListener() => $_has(307);
   @$pb.TagNumber(309)
-  void clearFlutterUnmanagedRestorationScope() => clearField(309);
+  void clearFlutterReorderableDragStartListener() => clearField(309);
   @$pb.TagNumber(309)
-  FlutterUnmanagedRestorationScope ensureFlutterUnmanagedRestorationScope() => $_ensure(307);
+  FlutterReorderableDragStartListener ensureFlutterReorderableDragStartListener() => $_ensure(307);
 
   @$pb.TagNumber(310)
-  FlutterSafeArea get flutterSafeArea => $_getN(308);
+  FlutterRestorationScope get flutterRestorationScope => $_getN(308);
   @$pb.TagNumber(310)
-  set flutterSafeArea(FlutterSafeArea v) { setField(310, v); }
+  set flutterRestorationScope(FlutterRestorationScope v) { setField(310, v); }
   @$pb.TagNumber(310)
-  $core.bool hasFlutterSafeArea() => $_has(308);
+  $core.bool hasFlutterRestorationScope() => $_has(308);
   @$pb.TagNumber(310)
-  void clearFlutterSafeArea() => clearField(310);
+  void clearFlutterRestorationScope() => clearField(310);
   @$pb.TagNumber(310)
-  FlutterSafeArea ensureFlutterSafeArea() => $_ensure(308);
+  FlutterRestorationScope ensureFlutterRestorationScope() => $_ensure(308);
 
   @$pb.TagNumber(311)
-  FlutterSliverSafeArea get flutterSliverSafeArea => $_getN(309);
+  FlutterRootRestorationScope get flutterRootRestorationScope => $_getN(309);
   @$pb.TagNumber(311)
-  set flutterSliverSafeArea(FlutterSliverSafeArea v) { setField(311, v); }
+  set flutterRootRestorationScope(FlutterRootRestorationScope v) { setField(311, v); }
   @$pb.TagNumber(311)
-  $core.bool hasFlutterSliverSafeArea() => $_has(309);
+  $core.bool hasFlutterRootRestorationScope() => $_has(309);
   @$pb.TagNumber(311)
-  void clearFlutterSliverSafeArea() => clearField(311);
+  void clearFlutterRootRestorationScope() => clearField(311);
   @$pb.TagNumber(311)
-  FlutterSliverSafeArea ensureFlutterSliverSafeArea() => $_ensure(309);
+  FlutterRootRestorationScope ensureFlutterRootRestorationScope() => $_ensure(309);
 
   @$pb.TagNumber(312)
-  FlutterScrollNotificationObserver get flutterScrollNotificationObserver => $_getN(310);
+  FlutterUnmanagedRestorationScope get flutterUnmanagedRestorationScope => $_getN(310);
   @$pb.TagNumber(312)
-  set flutterScrollNotificationObserver(FlutterScrollNotificationObserver v) { setField(312, v); }
+  set flutterUnmanagedRestorationScope(FlutterUnmanagedRestorationScope v) { setField(312, v); }
   @$pb.TagNumber(312)
-  $core.bool hasFlutterScrollNotificationObserver() => $_has(310);
+  $core.bool hasFlutterUnmanagedRestorationScope() => $_has(310);
   @$pb.TagNumber(312)
-  void clearFlutterScrollNotificationObserver() => clearField(312);
+  void clearFlutterUnmanagedRestorationScope() => clearField(312);
   @$pb.TagNumber(312)
-  FlutterScrollNotificationObserver ensureFlutterScrollNotificationObserver() => $_ensure(310);
+  FlutterUnmanagedRestorationScope ensureFlutterUnmanagedRestorationScope() => $_ensure(310);
 
   @$pb.TagNumber(313)
-  FlutterCustomScrollView get flutterCustomScrollView => $_getN(311);
+  FlutterSafeArea get flutterSafeArea => $_getN(311);
   @$pb.TagNumber(313)
-  set flutterCustomScrollView(FlutterCustomScrollView v) { setField(313, v); }
+  set flutterSafeArea(FlutterSafeArea v) { setField(313, v); }
   @$pb.TagNumber(313)
-  $core.bool hasFlutterCustomScrollView() => $_has(311);
+  $core.bool hasFlutterSafeArea() => $_has(311);
   @$pb.TagNumber(313)
-  void clearFlutterCustomScrollView() => clearField(313);
+  void clearFlutterSafeArea() => clearField(313);
   @$pb.TagNumber(313)
-  FlutterCustomScrollView ensureFlutterCustomScrollView() => $_ensure(311);
+  FlutterSafeArea ensureFlutterSafeArea() => $_ensure(311);
 
   @$pb.TagNumber(314)
-  FlutterGridViewNamedCount get flutterGridViewNamedCount => $_getN(312);
+  FlutterSliverSafeArea get flutterSliverSafeArea => $_getN(312);
   @$pb.TagNumber(314)
-  set flutterGridViewNamedCount(FlutterGridViewNamedCount v) { setField(314, v); }
+  set flutterSliverSafeArea(FlutterSliverSafeArea v) { setField(314, v); }
   @$pb.TagNumber(314)
-  $core.bool hasFlutterGridViewNamedCount() => $_has(312);
+  $core.bool hasFlutterSliverSafeArea() => $_has(312);
   @$pb.TagNumber(314)
-  void clearFlutterGridViewNamedCount() => clearField(314);
+  void clearFlutterSliverSafeArea() => clearField(314);
   @$pb.TagNumber(314)
-  FlutterGridViewNamedCount ensureFlutterGridViewNamedCount() => $_ensure(312);
+  FlutterSliverSafeArea ensureFlutterSliverSafeArea() => $_ensure(312);
 
   @$pb.TagNumber(315)
-  FlutterGridViewNamedExtent get flutterGridViewNamedExtent => $_getN(313);
+  FlutterScrollNotificationObserver get flutterScrollNotificationObserver => $_getN(313);
   @$pb.TagNumber(315)
-  set flutterGridViewNamedExtent(FlutterGridViewNamedExtent v) { setField(315, v); }
+  set flutterScrollNotificationObserver(FlutterScrollNotificationObserver v) { setField(315, v); }
   @$pb.TagNumber(315)
-  $core.bool hasFlutterGridViewNamedExtent() => $_has(313);
+  $core.bool hasFlutterScrollNotificationObserver() => $_has(313);
   @$pb.TagNumber(315)
-  void clearFlutterGridViewNamedExtent() => clearField(315);
+  void clearFlutterScrollNotificationObserver() => clearField(315);
   @$pb.TagNumber(315)
-  FlutterGridViewNamedExtent ensureFlutterGridViewNamedExtent() => $_ensure(313);
+  FlutterScrollNotificationObserver ensureFlutterScrollNotificationObserver() => $_ensure(313);
 
   @$pb.TagNumber(316)
-  FlutterListView get flutterListView => $_getN(314);
+  FlutterCustomScrollView get flutterCustomScrollView => $_getN(314);
   @$pb.TagNumber(316)
-  set flutterListView(FlutterListView v) { setField(316, v); }
+  set flutterCustomScrollView(FlutterCustomScrollView v) { setField(316, v); }
   @$pb.TagNumber(316)
-  $core.bool hasFlutterListView() => $_has(314);
+  $core.bool hasFlutterCustomScrollView() => $_has(314);
   @$pb.TagNumber(316)
-  void clearFlutterListView() => clearField(316);
+  void clearFlutterCustomScrollView() => clearField(316);
   @$pb.TagNumber(316)
-  FlutterListView ensureFlutterListView() => $_ensure(314);
+  FlutterCustomScrollView ensureFlutterCustomScrollView() => $_ensure(314);
 
   @$pb.TagNumber(317)
-  FlutterRawScrollbar get flutterRawScrollbar => $_getN(315);
+  FlutterGridViewNamedCount get flutterGridViewNamedCount => $_getN(315);
   @$pb.TagNumber(317)
-  set flutterRawScrollbar(FlutterRawScrollbar v) { setField(317, v); }
+  set flutterGridViewNamedCount(FlutterGridViewNamedCount v) { setField(317, v); }
   @$pb.TagNumber(317)
-  $core.bool hasFlutterRawScrollbar() => $_has(315);
+  $core.bool hasFlutterGridViewNamedCount() => $_has(315);
   @$pb.TagNumber(317)
-  void clearFlutterRawScrollbar() => clearField(317);
+  void clearFlutterGridViewNamedCount() => clearField(317);
   @$pb.TagNumber(317)
-  FlutterRawScrollbar ensureFlutterRawScrollbar() => $_ensure(315);
+  FlutterGridViewNamedCount ensureFlutterGridViewNamedCount() => $_ensure(315);
 
   @$pb.TagNumber(318)
-  FlutterSelectionContainerNamedDisabled get flutterSelectionContainerNamedDisabled => $_getN(316);
+  FlutterGridViewNamedExtent get flutterGridViewNamedExtent => $_getN(316);
   @$pb.TagNumber(318)
-  set flutterSelectionContainerNamedDisabled(FlutterSelectionContainerNamedDisabled v) { setField(318, v); }
+  set flutterGridViewNamedExtent(FlutterGridViewNamedExtent v) { setField(318, v); }
   @$pb.TagNumber(318)
-  $core.bool hasFlutterSelectionContainerNamedDisabled() => $_has(316);
+  $core.bool hasFlutterGridViewNamedExtent() => $_has(316);
   @$pb.TagNumber(318)
-  void clearFlutterSelectionContainerNamedDisabled() => clearField(318);
+  void clearFlutterGridViewNamedExtent() => clearField(318);
   @$pb.TagNumber(318)
-  FlutterSelectionContainerNamedDisabled ensureFlutterSelectionContainerNamedDisabled() => $_ensure(316);
+  FlutterGridViewNamedExtent ensureFlutterGridViewNamedExtent() => $_ensure(316);
 
   @$pb.TagNumber(319)
-  FlutterSemanticsDebugger get flutterSemanticsDebugger => $_getN(317);
+  FlutterListView get flutterListView => $_getN(317);
   @$pb.TagNumber(319)
-  set flutterSemanticsDebugger(FlutterSemanticsDebugger v) { setField(319, v); }
+  set flutterListView(FlutterListView v) { setField(319, v); }
   @$pb.TagNumber(319)
-  $core.bool hasFlutterSemanticsDebugger() => $_has(317);
+  $core.bool hasFlutterListView() => $_has(317);
   @$pb.TagNumber(319)
-  void clearFlutterSemanticsDebugger() => clearField(319);
+  void clearFlutterListView() => clearField(319);
   @$pb.TagNumber(319)
-  FlutterSemanticsDebugger ensureFlutterSemanticsDebugger() => $_ensure(317);
+  FlutterListView ensureFlutterListView() => $_ensure(317);
 
   @$pb.TagNumber(320)
-  FlutterSharedAppData get flutterSharedAppData => $_getN(318);
+  FlutterRawScrollbar get flutterRawScrollbar => $_getN(318);
   @$pb.TagNumber(320)
-  set flutterSharedAppData(FlutterSharedAppData v) { setField(320, v); }
+  set flutterRawScrollbar(FlutterRawScrollbar v) { setField(320, v); }
   @$pb.TagNumber(320)
-  $core.bool hasFlutterSharedAppData() => $_has(318);
+  $core.bool hasFlutterRawScrollbar() => $_has(318);
   @$pb.TagNumber(320)
-  void clearFlutterSharedAppData() => clearField(320);
+  void clearFlutterRawScrollbar() => clearField(320);
   @$pb.TagNumber(320)
-  FlutterSharedAppData ensureFlutterSharedAppData() => $_ensure(318);
+  FlutterRawScrollbar ensureFlutterRawScrollbar() => $_ensure(318);
 
   @$pb.TagNumber(321)
-  FlutterShortcutRegistrar get flutterShortcutRegistrar => $_getN(319);
+  FlutterSelectionContainerNamedDisabled get flutterSelectionContainerNamedDisabled => $_getN(319);
   @$pb.TagNumber(321)
-  set flutterShortcutRegistrar(FlutterShortcutRegistrar v) { setField(321, v); }
+  set flutterSelectionContainerNamedDisabled(FlutterSelectionContainerNamedDisabled v) { setField(321, v); }
   @$pb.TagNumber(321)
-  $core.bool hasFlutterShortcutRegistrar() => $_has(319);
+  $core.bool hasFlutterSelectionContainerNamedDisabled() => $_has(319);
   @$pb.TagNumber(321)
-  void clearFlutterShortcutRegistrar() => clearField(321);
+  void clearFlutterSelectionContainerNamedDisabled() => clearField(321);
   @$pb.TagNumber(321)
-  FlutterShortcutRegistrar ensureFlutterShortcutRegistrar() => $_ensure(319);
+  FlutterSelectionContainerNamedDisabled ensureFlutterSelectionContainerNamedDisabled() => $_ensure(319);
 
   @$pb.TagNumber(322)
-  FlutterSingleChildScrollView get flutterSingleChildScrollView => $_getN(320);
+  FlutterSemanticsDebugger get flutterSemanticsDebugger => $_getN(320);
   @$pb.TagNumber(322)
-  set flutterSingleChildScrollView(FlutterSingleChildScrollView v) { setField(322, v); }
+  set flutterSemanticsDebugger(FlutterSemanticsDebugger v) { setField(322, v); }
   @$pb.TagNumber(322)
-  $core.bool hasFlutterSingleChildScrollView() => $_has(320);
+  $core.bool hasFlutterSemanticsDebugger() => $_has(320);
   @$pb.TagNumber(322)
-  void clearFlutterSingleChildScrollView() => clearField(322);
+  void clearFlutterSemanticsDebugger() => clearField(322);
   @$pb.TagNumber(322)
-  FlutterSingleChildScrollView ensureFlutterSingleChildScrollView() => $_ensure(320);
+  FlutterSemanticsDebugger ensureFlutterSemanticsDebugger() => $_ensure(320);
 
   @$pb.TagNumber(323)
-  FlutterSizeChangedLayoutNotifier get flutterSizeChangedLayoutNotifier => $_getN(321);
+  FlutterSharedAppData get flutterSharedAppData => $_getN(321);
   @$pb.TagNumber(323)
-  set flutterSizeChangedLayoutNotifier(FlutterSizeChangedLayoutNotifier v) { setField(323, v); }
+  set flutterSharedAppData(FlutterSharedAppData v) { setField(323, v); }
   @$pb.TagNumber(323)
-  $core.bool hasFlutterSizeChangedLayoutNotifier() => $_has(321);
+  $core.bool hasFlutterSharedAppData() => $_has(321);
   @$pb.TagNumber(323)
-  void clearFlutterSizeChangedLayoutNotifier() => clearField(323);
+  void clearFlutterSharedAppData() => clearField(323);
   @$pb.TagNumber(323)
-  FlutterSizeChangedLayoutNotifier ensureFlutterSizeChangedLayoutNotifier() => $_ensure(321);
+  FlutterSharedAppData ensureFlutterSharedAppData() => $_ensure(321);
 
   @$pb.TagNumber(324)
-  FlutterKeepAlive get flutterKeepAlive => $_getN(322);
+  FlutterShortcutRegistrar get flutterShortcutRegistrar => $_getN(322);
   @$pb.TagNumber(324)
-  set flutterKeepAlive(FlutterKeepAlive v) { setField(324, v); }
+  set flutterShortcutRegistrar(FlutterShortcutRegistrar v) { setField(324, v); }
   @$pb.TagNumber(324)
-  $core.bool hasFlutterKeepAlive() => $_has(322);
+  $core.bool hasFlutterShortcutRegistrar() => $_has(322);
   @$pb.TagNumber(324)
-  void clearFlutterKeepAlive() => clearField(324);
+  void clearFlutterShortcutRegistrar() => clearField(324);
   @$pb.TagNumber(324)
-  FlutterKeepAlive ensureFlutterKeepAlive() => $_ensure(322);
+  FlutterShortcutRegistrar ensureFlutterShortcutRegistrar() => $_ensure(322);
 
   @$pb.TagNumber(325)
-  FlutterSliverConstrainedCrossAxis get flutterSliverConstrainedCrossAxis => $_getN(323);
+  FlutterSingleChildScrollView get flutterSingleChildScrollView => $_getN(323);
   @$pb.TagNumber(325)
-  set flutterSliverConstrainedCrossAxis(FlutterSliverConstrainedCrossAxis v) { setField(325, v); }
+  set flutterSingleChildScrollView(FlutterSingleChildScrollView v) { setField(325, v); }
   @$pb.TagNumber(325)
-  $core.bool hasFlutterSliverConstrainedCrossAxis() => $_has(323);
+  $core.bool hasFlutterSingleChildScrollView() => $_has(323);
   @$pb.TagNumber(325)
-  void clearFlutterSliverConstrainedCrossAxis() => clearField(325);
+  void clearFlutterSingleChildScrollView() => clearField(325);
   @$pb.TagNumber(325)
-  FlutterSliverConstrainedCrossAxis ensureFlutterSliverConstrainedCrossAxis() => $_ensure(323);
+  FlutterSingleChildScrollView ensureFlutterSingleChildScrollView() => $_ensure(323);
 
   @$pb.TagNumber(326)
-  FlutterSliverCrossAxisExpanded get flutterSliverCrossAxisExpanded => $_getN(324);
+  FlutterSizeChangedLayoutNotifier get flutterSizeChangedLayoutNotifier => $_getN(324);
   @$pb.TagNumber(326)
-  set flutterSliverCrossAxisExpanded(FlutterSliverCrossAxisExpanded v) { setField(326, v); }
+  set flutterSizeChangedLayoutNotifier(FlutterSizeChangedLayoutNotifier v) { setField(326, v); }
   @$pb.TagNumber(326)
-  $core.bool hasFlutterSliverCrossAxisExpanded() => $_has(324);
+  $core.bool hasFlutterSizeChangedLayoutNotifier() => $_has(324);
   @$pb.TagNumber(326)
-  void clearFlutterSliverCrossAxisExpanded() => clearField(326);
+  void clearFlutterSizeChangedLayoutNotifier() => clearField(326);
   @$pb.TagNumber(326)
-  FlutterSliverCrossAxisExpanded ensureFlutterSliverCrossAxisExpanded() => $_ensure(324);
+  FlutterSizeChangedLayoutNotifier ensureFlutterSizeChangedLayoutNotifier() => $_ensure(324);
 
   @$pb.TagNumber(327)
-  FlutterSliverCrossAxisGroup get flutterSliverCrossAxisGroup => $_getN(325);
+  FlutterKeepAlive get flutterKeepAlive => $_getN(325);
   @$pb.TagNumber(327)
-  set flutterSliverCrossAxisGroup(FlutterSliverCrossAxisGroup v) { setField(327, v); }
+  set flutterKeepAlive(FlutterKeepAlive v) { setField(327, v); }
   @$pb.TagNumber(327)
-  $core.bool hasFlutterSliverCrossAxisGroup() => $_has(325);
+  $core.bool hasFlutterKeepAlive() => $_has(325);
   @$pb.TagNumber(327)
-  void clearFlutterSliverCrossAxisGroup() => clearField(327);
+  void clearFlutterKeepAlive() => clearField(327);
   @$pb.TagNumber(327)
-  FlutterSliverCrossAxisGroup ensureFlutterSliverCrossAxisGroup() => $_ensure(325);
+  FlutterKeepAlive ensureFlutterKeepAlive() => $_ensure(325);
 
   @$pb.TagNumber(328)
-  FlutterSliverFixedExtentListNamedList get flutterSliverFixedExtentListNamedList => $_getN(326);
+  FlutterSliverConstrainedCrossAxis get flutterSliverConstrainedCrossAxis => $_getN(326);
   @$pb.TagNumber(328)
-  set flutterSliverFixedExtentListNamedList(FlutterSliverFixedExtentListNamedList v) { setField(328, v); }
+  set flutterSliverConstrainedCrossAxis(FlutterSliverConstrainedCrossAxis v) { setField(328, v); }
   @$pb.TagNumber(328)
-  $core.bool hasFlutterSliverFixedExtentListNamedList() => $_has(326);
+  $core.bool hasFlutterSliverConstrainedCrossAxis() => $_has(326);
   @$pb.TagNumber(328)
-  void clearFlutterSliverFixedExtentListNamedList() => clearField(328);
+  void clearFlutterSliverConstrainedCrossAxis() => clearField(328);
   @$pb.TagNumber(328)
-  FlutterSliverFixedExtentListNamedList ensureFlutterSliverFixedExtentListNamedList() => $_ensure(326);
+  FlutterSliverConstrainedCrossAxis ensureFlutterSliverConstrainedCrossAxis() => $_ensure(326);
 
   @$pb.TagNumber(329)
-  FlutterSliverGridNamedCount get flutterSliverGridNamedCount => $_getN(327);
+  FlutterSliverCrossAxisExpanded get flutterSliverCrossAxisExpanded => $_getN(327);
   @$pb.TagNumber(329)
-  set flutterSliverGridNamedCount(FlutterSliverGridNamedCount v) { setField(329, v); }
+  set flutterSliverCrossAxisExpanded(FlutterSliverCrossAxisExpanded v) { setField(329, v); }
   @$pb.TagNumber(329)
-  $core.bool hasFlutterSliverGridNamedCount() => $_has(327);
+  $core.bool hasFlutterSliverCrossAxisExpanded() => $_has(327);
   @$pb.TagNumber(329)
-  void clearFlutterSliverGridNamedCount() => clearField(329);
+  void clearFlutterSliverCrossAxisExpanded() => clearField(329);
   @$pb.TagNumber(329)
-  FlutterSliverGridNamedCount ensureFlutterSliverGridNamedCount() => $_ensure(327);
+  FlutterSliverCrossAxisExpanded ensureFlutterSliverCrossAxisExpanded() => $_ensure(327);
 
   @$pb.TagNumber(330)
-  FlutterSliverGridNamedExtent get flutterSliverGridNamedExtent => $_getN(328);
+  FlutterSliverCrossAxisGroup get flutterSliverCrossAxisGroup => $_getN(328);
   @$pb.TagNumber(330)
-  set flutterSliverGridNamedExtent(FlutterSliverGridNamedExtent v) { setField(330, v); }
+  set flutterSliverCrossAxisGroup(FlutterSliverCrossAxisGroup v) { setField(330, v); }
   @$pb.TagNumber(330)
-  $core.bool hasFlutterSliverGridNamedExtent() => $_has(328);
+  $core.bool hasFlutterSliverCrossAxisGroup() => $_has(328);
   @$pb.TagNumber(330)
-  void clearFlutterSliverGridNamedExtent() => clearField(330);
+  void clearFlutterSliverCrossAxisGroup() => clearField(330);
   @$pb.TagNumber(330)
-  FlutterSliverGridNamedExtent ensureFlutterSliverGridNamedExtent() => $_ensure(328);
+  FlutterSliverCrossAxisGroup ensureFlutterSliverCrossAxisGroup() => $_ensure(328);
 
   @$pb.TagNumber(331)
-  FlutterSliverIgnorePointer get flutterSliverIgnorePointer => $_getN(329);
+  FlutterSliverFixedExtentListNamedList get flutterSliverFixedExtentListNamedList => $_getN(329);
   @$pb.TagNumber(331)
-  set flutterSliverIgnorePointer(FlutterSliverIgnorePointer v) { setField(331, v); }
+  set flutterSliverFixedExtentListNamedList(FlutterSliverFixedExtentListNamedList v) { setField(331, v); }
   @$pb.TagNumber(331)
-  $core.bool hasFlutterSliverIgnorePointer() => $_has(329);
+  $core.bool hasFlutterSliverFixedExtentListNamedList() => $_has(329);
   @$pb.TagNumber(331)
-  void clearFlutterSliverIgnorePointer() => clearField(331);
+  void clearFlutterSliverFixedExtentListNamedList() => clearField(331);
   @$pb.TagNumber(331)
-  FlutterSliverIgnorePointer ensureFlutterSliverIgnorePointer() => $_ensure(329);
+  FlutterSliverFixedExtentListNamedList ensureFlutterSliverFixedExtentListNamedList() => $_ensure(329);
 
   @$pb.TagNumber(332)
-  FlutterSliverListNamedList get flutterSliverListNamedList => $_getN(330);
+  FlutterSliverGridNamedCount get flutterSliverGridNamedCount => $_getN(330);
   @$pb.TagNumber(332)
-  set flutterSliverListNamedList(FlutterSliverListNamedList v) { setField(332, v); }
+  set flutterSliverGridNamedCount(FlutterSliverGridNamedCount v) { setField(332, v); }
   @$pb.TagNumber(332)
-  $core.bool hasFlutterSliverListNamedList() => $_has(330);
+  $core.bool hasFlutterSliverGridNamedCount() => $_has(330);
   @$pb.TagNumber(332)
-  void clearFlutterSliverListNamedList() => clearField(332);
+  void clearFlutterSliverGridNamedCount() => clearField(332);
   @$pb.TagNumber(332)
-  FlutterSliverListNamedList ensureFlutterSliverListNamedList() => $_ensure(330);
+  FlutterSliverGridNamedCount ensureFlutterSliverGridNamedCount() => $_ensure(330);
 
   @$pb.TagNumber(333)
-  FlutterSliverMainAxisGroup get flutterSliverMainAxisGroup => $_getN(331);
+  FlutterSliverGridNamedExtent get flutterSliverGridNamedExtent => $_getN(331);
   @$pb.TagNumber(333)
-  set flutterSliverMainAxisGroup(FlutterSliverMainAxisGroup v) { setField(333, v); }
+  set flutterSliverGridNamedExtent(FlutterSliverGridNamedExtent v) { setField(333, v); }
   @$pb.TagNumber(333)
-  $core.bool hasFlutterSliverMainAxisGroup() => $_has(331);
+  $core.bool hasFlutterSliverGridNamedExtent() => $_has(331);
   @$pb.TagNumber(333)
-  void clearFlutterSliverMainAxisGroup() => clearField(333);
+  void clearFlutterSliverGridNamedExtent() => clearField(333);
   @$pb.TagNumber(333)
-  FlutterSliverMainAxisGroup ensureFlutterSliverMainAxisGroup() => $_ensure(331);
+  FlutterSliverGridNamedExtent ensureFlutterSliverGridNamedExtent() => $_ensure(331);
 
   @$pb.TagNumber(334)
-  FlutterSliverOffstage get flutterSliverOffstage => $_getN(332);
+  FlutterSliverIgnorePointer get flutterSliverIgnorePointer => $_getN(332);
   @$pb.TagNumber(334)
-  set flutterSliverOffstage(FlutterSliverOffstage v) { setField(334, v); }
+  set flutterSliverIgnorePointer(FlutterSliverIgnorePointer v) { setField(334, v); }
   @$pb.TagNumber(334)
-  $core.bool hasFlutterSliverOffstage() => $_has(332);
+  $core.bool hasFlutterSliverIgnorePointer() => $_has(332);
   @$pb.TagNumber(334)
-  void clearFlutterSliverOffstage() => clearField(334);
+  void clearFlutterSliverIgnorePointer() => clearField(334);
   @$pb.TagNumber(334)
-  FlutterSliverOffstage ensureFlutterSliverOffstage() => $_ensure(332);
+  FlutterSliverIgnorePointer ensureFlutterSliverIgnorePointer() => $_ensure(332);
 
   @$pb.TagNumber(335)
-  FlutterSliverOpacity get flutterSliverOpacity => $_getN(333);
+  FlutterSliverListNamedList get flutterSliverListNamedList => $_getN(333);
   @$pb.TagNumber(335)
-  set flutterSliverOpacity(FlutterSliverOpacity v) { setField(335, v); }
+  set flutterSliverListNamedList(FlutterSliverListNamedList v) { setField(335, v); }
   @$pb.TagNumber(335)
-  $core.bool hasFlutterSliverOpacity() => $_has(333);
+  $core.bool hasFlutterSliverListNamedList() => $_has(333);
   @$pb.TagNumber(335)
-  void clearFlutterSliverOpacity() => clearField(335);
+  void clearFlutterSliverListNamedList() => clearField(335);
   @$pb.TagNumber(335)
-  FlutterSliverOpacity ensureFlutterSliverOpacity() => $_ensure(333);
+  FlutterSliverListNamedList ensureFlutterSliverListNamedList() => $_ensure(333);
 
   @$pb.TagNumber(336)
-  FlutterSliverFillRemaining get flutterSliverFillRemaining => $_getN(334);
+  FlutterSliverMainAxisGroup get flutterSliverMainAxisGroup => $_getN(334);
   @$pb.TagNumber(336)
-  set flutterSliverFillRemaining(FlutterSliverFillRemaining v) { setField(336, v); }
+  set flutterSliverMainAxisGroup(FlutterSliverMainAxisGroup v) { setField(336, v); }
   @$pb.TagNumber(336)
-  $core.bool hasFlutterSliverFillRemaining() => $_has(334);
+  $core.bool hasFlutterSliverMainAxisGroup() => $_has(334);
   @$pb.TagNumber(336)
-  void clearFlutterSliverFillRemaining() => clearField(336);
+  void clearFlutterSliverMainAxisGroup() => clearField(336);
   @$pb.TagNumber(336)
-  FlutterSliverFillRemaining ensureFlutterSliverFillRemaining() => $_ensure(334);
+  FlutterSliverMainAxisGroup ensureFlutterSliverMainAxisGroup() => $_ensure(334);
 
   @$pb.TagNumber(337)
-  FlutterSliverPrototypeExtentListNamedList get flutterSliverPrototypeExtentListNamedList => $_getN(335);
+  FlutterSliverOffstage get flutterSliverOffstage => $_getN(335);
   @$pb.TagNumber(337)
-  set flutterSliverPrototypeExtentListNamedList(FlutterSliverPrototypeExtentListNamedList v) { setField(337, v); }
+  set flutterSliverOffstage(FlutterSliverOffstage v) { setField(337, v); }
   @$pb.TagNumber(337)
-  $core.bool hasFlutterSliverPrototypeExtentListNamedList() => $_has(335);
+  $core.bool hasFlutterSliverOffstage() => $_has(335);
   @$pb.TagNumber(337)
-  void clearFlutterSliverPrototypeExtentListNamedList() => clearField(337);
+  void clearFlutterSliverOffstage() => clearField(337);
   @$pb.TagNumber(337)
-  FlutterSliverPrototypeExtentListNamedList ensureFlutterSliverPrototypeExtentListNamedList() => $_ensure(335);
+  FlutterSliverOffstage ensureFlutterSliverOffstage() => $_ensure(335);
 
   @$pb.TagNumber(338)
-  FlutterSpacer get flutterSpacer => $_getN(336);
+  FlutterSliverOpacity get flutterSliverOpacity => $_getN(336);
   @$pb.TagNumber(338)
-  set flutterSpacer(FlutterSpacer v) { setField(338, v); }
+  set flutterSliverOpacity(FlutterSliverOpacity v) { setField(338, v); }
   @$pb.TagNumber(338)
-  $core.bool hasFlutterSpacer() => $_has(336);
+  $core.bool hasFlutterSliverOpacity() => $_has(336);
   @$pb.TagNumber(338)
-  void clearFlutterSpacer() => clearField(338);
+  void clearFlutterSliverOpacity() => clearField(338);
   @$pb.TagNumber(338)
-  FlutterSpacer ensureFlutterSpacer() => $_ensure(336);
+  FlutterSliverOpacity ensureFlutterSliverOpacity() => $_ensure(336);
 
   @$pb.TagNumber(339)
-  FlutterTable get flutterTable => $_getN(337);
+  FlutterSliverFillRemaining get flutterSliverFillRemaining => $_getN(337);
   @$pb.TagNumber(339)
-  set flutterTable(FlutterTable v) { setField(339, v); }
+  set flutterSliverFillRemaining(FlutterSliverFillRemaining v) { setField(339, v); }
   @$pb.TagNumber(339)
-  $core.bool hasFlutterTable() => $_has(337);
+  $core.bool hasFlutterSliverFillRemaining() => $_has(337);
   @$pb.TagNumber(339)
-  void clearFlutterTable() => clearField(339);
+  void clearFlutterSliverFillRemaining() => clearField(339);
   @$pb.TagNumber(339)
-  FlutterTable ensureFlutterTable() => $_ensure(337);
+  FlutterSliverFillRemaining ensureFlutterSliverFillRemaining() => $_ensure(337);
 
   @$pb.TagNumber(340)
-  FlutterTableCell get flutterTableCell => $_getN(338);
+  FlutterSliverPrototypeExtentListNamedList get flutterSliverPrototypeExtentListNamedList => $_getN(338);
   @$pb.TagNumber(340)
-  set flutterTableCell(FlutterTableCell v) { setField(340, v); }
+  set flutterSliverPrototypeExtentListNamedList(FlutterSliverPrototypeExtentListNamedList v) { setField(340, v); }
   @$pb.TagNumber(340)
-  $core.bool hasFlutterTableCell() => $_has(338);
+  $core.bool hasFlutterSliverPrototypeExtentListNamedList() => $_has(338);
   @$pb.TagNumber(340)
-  void clearFlutterTableCell() => clearField(340);
+  void clearFlutterSliverPrototypeExtentListNamedList() => clearField(340);
   @$pb.TagNumber(340)
-  FlutterTableCell ensureFlutterTableCell() => $_ensure(338);
+  FlutterSliverPrototypeExtentListNamedList ensureFlutterSliverPrototypeExtentListNamedList() => $_ensure(338);
 
   @$pb.TagNumber(341)
-  FlutterTapRegion get flutterTapRegion => $_getN(339);
+  FlutterSpacer get flutterSpacer => $_getN(339);
   @$pb.TagNumber(341)
-  set flutterTapRegion(FlutterTapRegion v) { setField(341, v); }
+  set flutterSpacer(FlutterSpacer v) { setField(341, v); }
   @$pb.TagNumber(341)
-  $core.bool hasFlutterTapRegion() => $_has(339);
+  $core.bool hasFlutterSpacer() => $_has(339);
   @$pb.TagNumber(341)
-  void clearFlutterTapRegion() => clearField(341);
+  void clearFlutterSpacer() => clearField(341);
   @$pb.TagNumber(341)
-  FlutterTapRegion ensureFlutterTapRegion() => $_ensure(339);
+  FlutterSpacer ensureFlutterSpacer() => $_ensure(339);
 
   @$pb.TagNumber(342)
-  FlutterTapRegionSurface get flutterTapRegionSurface => $_getN(340);
+  FlutterTable get flutterTable => $_getN(340);
   @$pb.TagNumber(342)
-  set flutterTapRegionSurface(FlutterTapRegionSurface v) { setField(342, v); }
+  set flutterTable(FlutterTable v) { setField(342, v); }
   @$pb.TagNumber(342)
-  $core.bool hasFlutterTapRegionSurface() => $_has(340);
+  $core.bool hasFlutterTable() => $_has(340);
   @$pb.TagNumber(342)
-  void clearFlutterTapRegionSurface() => clearField(342);
+  void clearFlutterTable() => clearField(342);
   @$pb.TagNumber(342)
-  FlutterTapRegionSurface ensureFlutterTapRegionSurface() => $_ensure(340);
+  FlutterTable ensureFlutterTable() => $_ensure(340);
 
   @$pb.TagNumber(343)
-  FlutterTextFieldTapRegion get flutterTextFieldTapRegion => $_getN(341);
+  FlutterTableCell get flutterTableCell => $_getN(341);
   @$pb.TagNumber(343)
-  set flutterTextFieldTapRegion(FlutterTextFieldTapRegion v) { setField(343, v); }
+  set flutterTableCell(FlutterTableCell v) { setField(343, v); }
   @$pb.TagNumber(343)
-  $core.bool hasFlutterTextFieldTapRegion() => $_has(341);
+  $core.bool hasFlutterTableCell() => $_has(341);
   @$pb.TagNumber(343)
-  void clearFlutterTextFieldTapRegion() => clearField(343);
+  void clearFlutterTableCell() => clearField(343);
   @$pb.TagNumber(343)
-  FlutterTextFieldTapRegion ensureFlutterTextFieldTapRegion() => $_ensure(341);
+  FlutterTableCell ensureFlutterTableCell() => $_ensure(341);
 
   @$pb.TagNumber(344)
-  FlutterDefaultTextStyleNamedFallback get flutterDefaultTextStyleNamedFallback => $_getN(342);
+  FlutterTapRegion get flutterTapRegion => $_getN(342);
   @$pb.TagNumber(344)
-  set flutterDefaultTextStyleNamedFallback(FlutterDefaultTextStyleNamedFallback v) { setField(344, v); }
+  set flutterTapRegion(FlutterTapRegion v) { setField(344, v); }
   @$pb.TagNumber(344)
-  $core.bool hasFlutterDefaultTextStyleNamedFallback() => $_has(342);
+  $core.bool hasFlutterTapRegion() => $_has(342);
   @$pb.TagNumber(344)
-  void clearFlutterDefaultTextStyleNamedFallback() => clearField(344);
+  void clearFlutterTapRegion() => clearField(344);
   @$pb.TagNumber(344)
-  FlutterDefaultTextStyleNamedFallback ensureFlutterDefaultTextStyleNamedFallback() => $_ensure(342);
+  FlutterTapRegion ensureFlutterTapRegion() => $_ensure(342);
 
   @$pb.TagNumber(345)
-  FlutterText get flutterText => $_getN(343);
+  FlutterTapRegionSurface get flutterTapRegionSurface => $_getN(343);
   @$pb.TagNumber(345)
-  set flutterText(FlutterText v) { setField(345, v); }
+  set flutterTapRegionSurface(FlutterTapRegionSurface v) { setField(345, v); }
   @$pb.TagNumber(345)
-  $core.bool hasFlutterText() => $_has(343);
+  $core.bool hasFlutterTapRegionSurface() => $_has(343);
   @$pb.TagNumber(345)
-  void clearFlutterText() => clearField(345);
+  void clearFlutterTapRegionSurface() => clearField(345);
   @$pb.TagNumber(345)
-  FlutterText ensureFlutterText() => $_ensure(343);
+  FlutterTapRegionSurface ensureFlutterTapRegionSurface() => $_ensure(343);
 
   @$pb.TagNumber(346)
-  FlutterTextSelectionGestureDetector get flutterTextSelectionGestureDetector => $_getN(344);
+  FlutterTextFieldTapRegion get flutterTextFieldTapRegion => $_getN(344);
   @$pb.TagNumber(346)
-  set flutterTextSelectionGestureDetector(FlutterTextSelectionGestureDetector v) { setField(346, v); }
+  set flutterTextFieldTapRegion(FlutterTextFieldTapRegion v) { setField(346, v); }
   @$pb.TagNumber(346)
-  $core.bool hasFlutterTextSelectionGestureDetector() => $_has(344);
+  $core.bool hasFlutterTextFieldTapRegion() => $_has(344);
   @$pb.TagNumber(346)
-  void clearFlutterTextSelectionGestureDetector() => clearField(346);
+  void clearFlutterTextFieldTapRegion() => clearField(346);
   @$pb.TagNumber(346)
-  FlutterTextSelectionGestureDetector ensureFlutterTextSelectionGestureDetector() => $_ensure(344);
+  FlutterTextFieldTapRegion ensureFlutterTextFieldTapRegion() => $_ensure(344);
 
   @$pb.TagNumber(347)
-  FlutterTexture get flutterTexture => $_getN(345);
+  FlutterDefaultTextStyleNamedFallback get flutterDefaultTextStyleNamedFallback => $_getN(345);
   @$pb.TagNumber(347)
-  set flutterTexture(FlutterTexture v) { setField(347, v); }
+  set flutterDefaultTextStyleNamedFallback(FlutterDefaultTextStyleNamedFallback v) { setField(347, v); }
   @$pb.TagNumber(347)
-  $core.bool hasFlutterTexture() => $_has(345);
+  $core.bool hasFlutterDefaultTextStyleNamedFallback() => $_has(345);
   @$pb.TagNumber(347)
-  void clearFlutterTexture() => clearField(347);
+  void clearFlutterDefaultTextStyleNamedFallback() => clearField(347);
   @$pb.TagNumber(347)
-  FlutterTexture ensureFlutterTexture() => $_ensure(345);
+  FlutterDefaultTextStyleNamedFallback ensureFlutterDefaultTextStyleNamedFallback() => $_ensure(345);
 
   @$pb.TagNumber(348)
-  FlutterTickerMode get flutterTickerMode => $_getN(346);
+  FlutterText get flutterText => $_getN(346);
   @$pb.TagNumber(348)
-  set flutterTickerMode(FlutterTickerMode v) { setField(348, v); }
+  set flutterText(FlutterText v) { setField(348, v); }
   @$pb.TagNumber(348)
-  $core.bool hasFlutterTickerMode() => $_has(346);
+  $core.bool hasFlutterText() => $_has(346);
   @$pb.TagNumber(348)
-  void clearFlutterTickerMode() => clearField(348);
+  void clearFlutterText() => clearField(348);
   @$pb.TagNumber(348)
-  FlutterTickerMode ensureFlutterTickerMode() => $_ensure(346);
+  FlutterText ensureFlutterText() => $_ensure(346);
 
   @$pb.TagNumber(349)
-  FlutterTitle get flutterTitle => $_getN(347);
+  FlutterTextSelectionGestureDetector get flutterTextSelectionGestureDetector => $_getN(347);
   @$pb.TagNumber(349)
-  set flutterTitle(FlutterTitle v) { setField(349, v); }
+  set flutterTextSelectionGestureDetector(FlutterTextSelectionGestureDetector v) { setField(349, v); }
   @$pb.TagNumber(349)
-  $core.bool hasFlutterTitle() => $_has(347);
+  $core.bool hasFlutterTextSelectionGestureDetector() => $_has(347);
   @$pb.TagNumber(349)
-  void clearFlutterTitle() => clearField(349);
+  void clearFlutterTextSelectionGestureDetector() => clearField(349);
   @$pb.TagNumber(349)
-  FlutterTitle ensureFlutterTitle() => $_ensure(347);
+  FlutterTextSelectionGestureDetector ensureFlutterTextSelectionGestureDetector() => $_ensure(347);
 
   @$pb.TagNumber(350)
-  FlutterSliverVisibility get flutterSliverVisibility => $_getN(348);
+  FlutterTexture get flutterTexture => $_getN(348);
   @$pb.TagNumber(350)
-  set flutterSliverVisibility(FlutterSliverVisibility v) { setField(350, v); }
+  set flutterTexture(FlutterTexture v) { setField(350, v); }
   @$pb.TagNumber(350)
-  $core.bool hasFlutterSliverVisibility() => $_has(348);
+  $core.bool hasFlutterTexture() => $_has(348);
   @$pb.TagNumber(350)
-  void clearFlutterSliverVisibility() => clearField(350);
+  void clearFlutterTexture() => clearField(350);
   @$pb.TagNumber(350)
-  FlutterSliverVisibility ensureFlutterSliverVisibility() => $_ensure(348);
+  FlutterTexture ensureFlutterTexture() => $_ensure(348);
 
   @$pb.TagNumber(351)
-  FlutterSliverVisibilityNamedMaintain get flutterSliverVisibilityNamedMaintain => $_getN(349);
+  FlutterTickerMode get flutterTickerMode => $_getN(349);
   @$pb.TagNumber(351)
-  set flutterSliverVisibilityNamedMaintain(FlutterSliverVisibilityNamedMaintain v) { setField(351, v); }
+  set flutterTickerMode(FlutterTickerMode v) { setField(351, v); }
   @$pb.TagNumber(351)
-  $core.bool hasFlutterSliverVisibilityNamedMaintain() => $_has(349);
+  $core.bool hasFlutterTickerMode() => $_has(349);
   @$pb.TagNumber(351)
-  void clearFlutterSliverVisibilityNamedMaintain() => clearField(351);
+  void clearFlutterTickerMode() => clearField(351);
   @$pb.TagNumber(351)
-  FlutterSliverVisibilityNamedMaintain ensureFlutterSliverVisibilityNamedMaintain() => $_ensure(349);
+  FlutterTickerMode ensureFlutterTickerMode() => $_ensure(349);
 
   @$pb.TagNumber(352)
-  FlutterVisibility get flutterVisibility => $_getN(350);
+  FlutterTitle get flutterTitle => $_getN(350);
   @$pb.TagNumber(352)
-  set flutterVisibility(FlutterVisibility v) { setField(352, v); }
+  set flutterTitle(FlutterTitle v) { setField(352, v); }
   @$pb.TagNumber(352)
-  $core.bool hasFlutterVisibility() => $_has(350);
+  $core.bool hasFlutterTitle() => $_has(350);
   @$pb.TagNumber(352)
-  void clearFlutterVisibility() => clearField(352);
+  void clearFlutterTitle() => clearField(352);
   @$pb.TagNumber(352)
-  FlutterVisibility ensureFlutterVisibility() => $_ensure(350);
+  FlutterTitle ensureFlutterTitle() => $_ensure(350);
 
   @$pb.TagNumber(353)
-  FlutterVisibilityNamedMaintain get flutterVisibilityNamedMaintain => $_getN(351);
+  FlutterSliverVisibility get flutterSliverVisibility => $_getN(351);
   @$pb.TagNumber(353)
-  set flutterVisibilityNamedMaintain(FlutterVisibilityNamedMaintain v) { setField(353, v); }
+  set flutterSliverVisibility(FlutterSliverVisibility v) { setField(353, v); }
   @$pb.TagNumber(353)
-  $core.bool hasFlutterVisibilityNamedMaintain() => $_has(351);
+  $core.bool hasFlutterSliverVisibility() => $_has(351);
   @$pb.TagNumber(353)
-  void clearFlutterVisibilityNamedMaintain() => clearField(353);
+  void clearFlutterSliverVisibility() => clearField(353);
   @$pb.TagNumber(353)
-  FlutterVisibilityNamedMaintain ensureFlutterVisibilityNamedMaintain() => $_ensure(351);
+  FlutterSliverVisibility ensureFlutterSliverVisibility() => $_ensure(351);
 
   @$pb.TagNumber(354)
-  FlutterWidgetInspector get flutterWidgetInspector => $_getN(352);
+  FlutterSliverVisibilityNamedMaintain get flutterSliverVisibilityNamedMaintain => $_getN(352);
   @$pb.TagNumber(354)
-  set flutterWidgetInspector(FlutterWidgetInspector v) { setField(354, v); }
+  set flutterSliverVisibilityNamedMaintain(FlutterSliverVisibilityNamedMaintain v) { setField(354, v); }
   @$pb.TagNumber(354)
-  $core.bool hasFlutterWidgetInspector() => $_has(352);
+  $core.bool hasFlutterSliverVisibilityNamedMaintain() => $_has(352);
   @$pb.TagNumber(354)
-  void clearFlutterWidgetInspector() => clearField(354);
+  void clearFlutterSliverVisibilityNamedMaintain() => clearField(354);
   @$pb.TagNumber(354)
-  FlutterWidgetInspector ensureFlutterWidgetInspector() => $_ensure(352);
+  FlutterSliverVisibilityNamedMaintain ensureFlutterSliverVisibilityNamedMaintain() => $_ensure(352);
 
   @$pb.TagNumber(355)
-  FlutterWillPopScope get flutterWillPopScope => $_getN(353);
+  FlutterVisibility get flutterVisibility => $_getN(353);
   @$pb.TagNumber(355)
-  set flutterWillPopScope(FlutterWillPopScope v) { setField(355, v); }
+  set flutterVisibility(FlutterVisibility v) { setField(355, v); }
   @$pb.TagNumber(355)
-  $core.bool hasFlutterWillPopScope() => $_has(353);
+  $core.bool hasFlutterVisibility() => $_has(353);
   @$pb.TagNumber(355)
-  void clearFlutterWillPopScope() => clearField(355);
+  void clearFlutterVisibility() => clearField(355);
   @$pb.TagNumber(355)
-  FlutterWillPopScope ensureFlutterWillPopScope() => $_ensure(353);
+  FlutterVisibility ensureFlutterVisibility() => $_ensure(353);
 
   @$pb.TagNumber(356)
-  FlutterProjectMyApp get flutterProjectMyApp => $_getN(354);
+  FlutterVisibilityNamedMaintain get flutterVisibilityNamedMaintain => $_getN(354);
   @$pb.TagNumber(356)
-  set flutterProjectMyApp(FlutterProjectMyApp v) { setField(356, v); }
+  set flutterVisibilityNamedMaintain(FlutterVisibilityNamedMaintain v) { setField(356, v); }
   @$pb.TagNumber(356)
-  $core.bool hasFlutterProjectMyApp() => $_has(354);
+  $core.bool hasFlutterVisibilityNamedMaintain() => $_has(354);
   @$pb.TagNumber(356)
-  void clearFlutterProjectMyApp() => clearField(356);
+  void clearFlutterVisibilityNamedMaintain() => clearField(356);
   @$pb.TagNumber(356)
-  FlutterProjectMyApp ensureFlutterProjectMyApp() => $_ensure(354);
+  FlutterVisibilityNamedMaintain ensureFlutterVisibilityNamedMaintain() => $_ensure(354);
 
   @$pb.TagNumber(357)
-  FlutterProjectMyHomePage get flutterProjectMyHomePage => $_getN(355);
+  FlutterWidgetInspector get flutterWidgetInspector => $_getN(355);
   @$pb.TagNumber(357)
-  set flutterProjectMyHomePage(FlutterProjectMyHomePage v) { setField(357, v); }
+  set flutterWidgetInspector(FlutterWidgetInspector v) { setField(357, v); }
   @$pb.TagNumber(357)
-  $core.bool hasFlutterProjectMyHomePage() => $_has(355);
+  $core.bool hasFlutterWidgetInspector() => $_has(355);
   @$pb.TagNumber(357)
-  void clearFlutterProjectMyHomePage() => clearField(357);
+  void clearFlutterWidgetInspector() => clearField(357);
   @$pb.TagNumber(357)
-  FlutterProjectMyHomePage ensureFlutterProjectMyHomePage() => $_ensure(355);
+  FlutterWidgetInspector ensureFlutterWidgetInspector() => $_ensure(355);
+
+  @$pb.TagNumber(358)
+  FlutterWillPopScope get flutterWillPopScope => $_getN(356);
+  @$pb.TagNumber(358)
+  set flutterWillPopScope(FlutterWillPopScope v) { setField(358, v); }
+  @$pb.TagNumber(358)
+  $core.bool hasFlutterWillPopScope() => $_has(356);
+  @$pb.TagNumber(358)
+  void clearFlutterWillPopScope() => clearField(358);
+  @$pb.TagNumber(358)
+  FlutterWillPopScope ensureFlutterWillPopScope() => $_ensure(356);
+
+  @$pb.TagNumber(359)
+  FlutterProjectMyApp get flutterProjectMyApp => $_getN(357);
+  @$pb.TagNumber(359)
+  set flutterProjectMyApp(FlutterProjectMyApp v) { setField(359, v); }
+  @$pb.TagNumber(359)
+  $core.bool hasFlutterProjectMyApp() => $_has(357);
+  @$pb.TagNumber(359)
+  void clearFlutterProjectMyApp() => clearField(359);
+  @$pb.TagNumber(359)
+  FlutterProjectMyApp ensureFlutterProjectMyApp() => $_ensure(357);
+
+  @$pb.TagNumber(360)
+  FlutterProjectMyHomePage get flutterProjectMyHomePage => $_getN(358);
+  @$pb.TagNumber(360)
+  set flutterProjectMyHomePage(FlutterProjectMyHomePage v) { setField(360, v); }
+  @$pb.TagNumber(360)
+  $core.bool hasFlutterProjectMyHomePage() => $_has(358);
+  @$pb.TagNumber(360)
+  void clearFlutterProjectMyHomePage() => clearField(360);
+  @$pb.TagNumber(360)
+  FlutterProjectMyHomePage ensureFlutterProjectMyHomePage() => $_ensure(358);
 }
 
 

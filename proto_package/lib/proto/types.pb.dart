@@ -748,6 +748,610 @@ class DartDuration extends $pb.GeneratedMessage {
   void clearMicroseconds() => clearField(7);
 }
 
+/// package:flutter/src/painting/edge_insets.dart
+class FlutterEdgeInsetsDirectionalNamedAll extends $pb.GeneratedMessage {
+  factory FlutterEdgeInsetsDirectionalNamedAll({
+    $core.double? value,
+  }) {
+    final $result = create();
+    if (value != null) {
+      $result.value = value;
+    }
+    return $result;
+  }
+  FlutterEdgeInsetsDirectionalNamedAll._() : super();
+  factory FlutterEdgeInsetsDirectionalNamedAll.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterEdgeInsetsDirectionalNamedAll.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterEdgeInsetsDirectionalNamedAll', createEmptyInstance: create)
+    ..a<$core.double>(2, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsDirectionalNamedAll clone() => FlutterEdgeInsetsDirectionalNamedAll()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsDirectionalNamedAll copyWith(void Function(FlutterEdgeInsetsDirectionalNamedAll) updates) => super.copyWith((message) => updates(message as FlutterEdgeInsetsDirectionalNamedAll)) as FlutterEdgeInsetsDirectionalNamedAll;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsDirectionalNamedAll create() => FlutterEdgeInsetsDirectionalNamedAll._();
+  FlutterEdgeInsetsDirectionalNamedAll createEmptyInstance() => create();
+  static $pb.PbList<FlutterEdgeInsetsDirectionalNamedAll> createRepeated() => $pb.PbList<FlutterEdgeInsetsDirectionalNamedAll>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsDirectionalNamedAll getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterEdgeInsetsDirectionalNamedAll>(create);
+  static FlutterEdgeInsetsDirectionalNamedAll? _defaultInstance;
+
+  @$pb.TagNumber(2)
+  $core.double get value => $_getN(0);
+  @$pb.TagNumber(2)
+  set value($core.double v) { $_setDouble(0, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasValue() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearValue() => clearField(2);
+}
+
+/// package:flutter/src/painting/edge_insets.dart
+class FlutterEdgeInsetsDirectionalNamedFromSTEB extends $pb.GeneratedMessage {
+  factory FlutterEdgeInsetsDirectionalNamedFromSTEB({
+    $core.double? start,
+    $core.double? top,
+    $core.double? end,
+    $core.double? bottom,
+  }) {
+    final $result = create();
+    if (start != null) {
+      $result.start = start;
+    }
+    if (top != null) {
+      $result.top = top;
+    }
+    if (end != null) {
+      $result.end = end;
+    }
+    if (bottom != null) {
+      $result.bottom = bottom;
+    }
+    return $result;
+  }
+  FlutterEdgeInsetsDirectionalNamedFromSTEB._() : super();
+  factory FlutterEdgeInsetsDirectionalNamedFromSTEB.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterEdgeInsetsDirectionalNamedFromSTEB.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterEdgeInsetsDirectionalNamedFromSTEB', createEmptyInstance: create)
+    ..a<$core.double>(2, _omitFieldNames ? '' : 'start', $pb.PbFieldType.OD)
+    ..a<$core.double>(3, _omitFieldNames ? '' : 'top', $pb.PbFieldType.OD)
+    ..a<$core.double>(4, _omitFieldNames ? '' : 'end', $pb.PbFieldType.OD)
+    ..a<$core.double>(5, _omitFieldNames ? '' : 'bottom', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsDirectionalNamedFromSTEB clone() => FlutterEdgeInsetsDirectionalNamedFromSTEB()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsDirectionalNamedFromSTEB copyWith(void Function(FlutterEdgeInsetsDirectionalNamedFromSTEB) updates) => super.copyWith((message) => updates(message as FlutterEdgeInsetsDirectionalNamedFromSTEB)) as FlutterEdgeInsetsDirectionalNamedFromSTEB;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsDirectionalNamedFromSTEB create() => FlutterEdgeInsetsDirectionalNamedFromSTEB._();
+  FlutterEdgeInsetsDirectionalNamedFromSTEB createEmptyInstance() => create();
+  static $pb.PbList<FlutterEdgeInsetsDirectionalNamedFromSTEB> createRepeated() => $pb.PbList<FlutterEdgeInsetsDirectionalNamedFromSTEB>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsDirectionalNamedFromSTEB getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterEdgeInsetsDirectionalNamedFromSTEB>(create);
+  static FlutterEdgeInsetsDirectionalNamedFromSTEB? _defaultInstance;
+
+  @$pb.TagNumber(2)
+  $core.double get start => $_getN(0);
+  @$pb.TagNumber(2)
+  set start($core.double v) { $_setDouble(0, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasStart() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearStart() => clearField(2);
+
+  @$pb.TagNumber(3)
+  $core.double get top => $_getN(1);
+  @$pb.TagNumber(3)
+  set top($core.double v) { $_setDouble(1, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasTop() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearTop() => clearField(3);
+
+  @$pb.TagNumber(4)
+  $core.double get end => $_getN(2);
+  @$pb.TagNumber(4)
+  set end($core.double v) { $_setDouble(2, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasEnd() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearEnd() => clearField(4);
+
+  @$pb.TagNumber(5)
+  $core.double get bottom => $_getN(3);
+  @$pb.TagNumber(5)
+  set bottom($core.double v) { $_setDouble(3, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasBottom() => $_has(3);
+  @$pb.TagNumber(5)
+  void clearBottom() => clearField(5);
+}
+
+/// package:flutter/src/painting/edge_insets.dart
+class FlutterEdgeInsetsDirectionalNamedOnly extends $pb.GeneratedMessage {
+  factory FlutterEdgeInsetsDirectionalNamedOnly({
+    $core.double? start,
+    $core.double? top,
+    $core.double? end,
+    $core.double? bottom,
+  }) {
+    final $result = create();
+    if (start != null) {
+      $result.start = start;
+    }
+    if (top != null) {
+      $result.top = top;
+    }
+    if (end != null) {
+      $result.end = end;
+    }
+    if (bottom != null) {
+      $result.bottom = bottom;
+    }
+    return $result;
+  }
+  FlutterEdgeInsetsDirectionalNamedOnly._() : super();
+  factory FlutterEdgeInsetsDirectionalNamedOnly.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterEdgeInsetsDirectionalNamedOnly.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterEdgeInsetsDirectionalNamedOnly', createEmptyInstance: create)
+    ..a<$core.double>(2, _omitFieldNames ? '' : 'start', $pb.PbFieldType.OD)
+    ..a<$core.double>(3, _omitFieldNames ? '' : 'top', $pb.PbFieldType.OD)
+    ..a<$core.double>(4, _omitFieldNames ? '' : 'end', $pb.PbFieldType.OD)
+    ..a<$core.double>(5, _omitFieldNames ? '' : 'bottom', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsDirectionalNamedOnly clone() => FlutterEdgeInsetsDirectionalNamedOnly()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsDirectionalNamedOnly copyWith(void Function(FlutterEdgeInsetsDirectionalNamedOnly) updates) => super.copyWith((message) => updates(message as FlutterEdgeInsetsDirectionalNamedOnly)) as FlutterEdgeInsetsDirectionalNamedOnly;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsDirectionalNamedOnly create() => FlutterEdgeInsetsDirectionalNamedOnly._();
+  FlutterEdgeInsetsDirectionalNamedOnly createEmptyInstance() => create();
+  static $pb.PbList<FlutterEdgeInsetsDirectionalNamedOnly> createRepeated() => $pb.PbList<FlutterEdgeInsetsDirectionalNamedOnly>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsDirectionalNamedOnly getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterEdgeInsetsDirectionalNamedOnly>(create);
+  static FlutterEdgeInsetsDirectionalNamedOnly? _defaultInstance;
+
+  @$pb.TagNumber(2)
+  $core.double get start => $_getN(0);
+  @$pb.TagNumber(2)
+  set start($core.double v) { $_setDouble(0, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasStart() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearStart() => clearField(2);
+
+  @$pb.TagNumber(3)
+  $core.double get top => $_getN(1);
+  @$pb.TagNumber(3)
+  set top($core.double v) { $_setDouble(1, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasTop() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearTop() => clearField(3);
+
+  @$pb.TagNumber(4)
+  $core.double get end => $_getN(2);
+  @$pb.TagNumber(4)
+  set end($core.double v) { $_setDouble(2, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasEnd() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearEnd() => clearField(4);
+
+  @$pb.TagNumber(5)
+  $core.double get bottom => $_getN(3);
+  @$pb.TagNumber(5)
+  set bottom($core.double v) { $_setDouble(3, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasBottom() => $_has(3);
+  @$pb.TagNumber(5)
+  void clearBottom() => clearField(5);
+}
+
+/// package:flutter/src/painting/edge_insets.dart
+class FlutterEdgeInsetsDirectionalNamedSymmetric extends $pb.GeneratedMessage {
+  factory FlutterEdgeInsetsDirectionalNamedSymmetric({
+    $core.double? horizontal,
+    $core.double? vertical,
+  }) {
+    final $result = create();
+    if (horizontal != null) {
+      $result.horizontal = horizontal;
+    }
+    if (vertical != null) {
+      $result.vertical = vertical;
+    }
+    return $result;
+  }
+  FlutterEdgeInsetsDirectionalNamedSymmetric._() : super();
+  factory FlutterEdgeInsetsDirectionalNamedSymmetric.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterEdgeInsetsDirectionalNamedSymmetric.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterEdgeInsetsDirectionalNamedSymmetric', createEmptyInstance: create)
+    ..a<$core.double>(2, _omitFieldNames ? '' : 'horizontal', $pb.PbFieldType.OD)
+    ..a<$core.double>(3, _omitFieldNames ? '' : 'vertical', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsDirectionalNamedSymmetric clone() => FlutterEdgeInsetsDirectionalNamedSymmetric()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsDirectionalNamedSymmetric copyWith(void Function(FlutterEdgeInsetsDirectionalNamedSymmetric) updates) => super.copyWith((message) => updates(message as FlutterEdgeInsetsDirectionalNamedSymmetric)) as FlutterEdgeInsetsDirectionalNamedSymmetric;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsDirectionalNamedSymmetric create() => FlutterEdgeInsetsDirectionalNamedSymmetric._();
+  FlutterEdgeInsetsDirectionalNamedSymmetric createEmptyInstance() => create();
+  static $pb.PbList<FlutterEdgeInsetsDirectionalNamedSymmetric> createRepeated() => $pb.PbList<FlutterEdgeInsetsDirectionalNamedSymmetric>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsDirectionalNamedSymmetric getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterEdgeInsetsDirectionalNamedSymmetric>(create);
+  static FlutterEdgeInsetsDirectionalNamedSymmetric? _defaultInstance;
+
+  @$pb.TagNumber(2)
+  $core.double get horizontal => $_getN(0);
+  @$pb.TagNumber(2)
+  set horizontal($core.double v) { $_setDouble(0, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasHorizontal() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearHorizontal() => clearField(2);
+
+  @$pb.TagNumber(3)
+  $core.double get vertical => $_getN(1);
+  @$pb.TagNumber(3)
+  set vertical($core.double v) { $_setDouble(1, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasVertical() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearVertical() => clearField(3);
+}
+
+/// package:flutter/src/painting/edge_insets.dart
+class FlutterEdgeInsetsNamedAll extends $pb.GeneratedMessage {
+  factory FlutterEdgeInsetsNamedAll({
+    $core.double? value,
+  }) {
+    final $result = create();
+    if (value != null) {
+      $result.value = value;
+    }
+    return $result;
+  }
+  FlutterEdgeInsetsNamedAll._() : super();
+  factory FlutterEdgeInsetsNamedAll.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterEdgeInsetsNamedAll.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterEdgeInsetsNamedAll', createEmptyInstance: create)
+    ..a<$core.double>(2, _omitFieldNames ? '' : 'value', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsNamedAll clone() => FlutterEdgeInsetsNamedAll()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsNamedAll copyWith(void Function(FlutterEdgeInsetsNamedAll) updates) => super.copyWith((message) => updates(message as FlutterEdgeInsetsNamedAll)) as FlutterEdgeInsetsNamedAll;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsNamedAll create() => FlutterEdgeInsetsNamedAll._();
+  FlutterEdgeInsetsNamedAll createEmptyInstance() => create();
+  static $pb.PbList<FlutterEdgeInsetsNamedAll> createRepeated() => $pb.PbList<FlutterEdgeInsetsNamedAll>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsNamedAll getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterEdgeInsetsNamedAll>(create);
+  static FlutterEdgeInsetsNamedAll? _defaultInstance;
+
+  @$pb.TagNumber(2)
+  $core.double get value => $_getN(0);
+  @$pb.TagNumber(2)
+  set value($core.double v) { $_setDouble(0, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasValue() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearValue() => clearField(2);
+}
+
+/// package:flutter/src/painting/edge_insets.dart
+class FlutterEdgeInsetsNamedFromLTRB extends $pb.GeneratedMessage {
+  factory FlutterEdgeInsetsNamedFromLTRB({
+    $core.double? left,
+    $core.double? top,
+    $core.double? right,
+    $core.double? bottom,
+  }) {
+    final $result = create();
+    if (left != null) {
+      $result.left = left;
+    }
+    if (top != null) {
+      $result.top = top;
+    }
+    if (right != null) {
+      $result.right = right;
+    }
+    if (bottom != null) {
+      $result.bottom = bottom;
+    }
+    return $result;
+  }
+  FlutterEdgeInsetsNamedFromLTRB._() : super();
+  factory FlutterEdgeInsetsNamedFromLTRB.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterEdgeInsetsNamedFromLTRB.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterEdgeInsetsNamedFromLTRB', createEmptyInstance: create)
+    ..a<$core.double>(2, _omitFieldNames ? '' : 'left', $pb.PbFieldType.OD)
+    ..a<$core.double>(3, _omitFieldNames ? '' : 'top', $pb.PbFieldType.OD)
+    ..a<$core.double>(4, _omitFieldNames ? '' : 'right', $pb.PbFieldType.OD)
+    ..a<$core.double>(5, _omitFieldNames ? '' : 'bottom', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsNamedFromLTRB clone() => FlutterEdgeInsetsNamedFromLTRB()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsNamedFromLTRB copyWith(void Function(FlutterEdgeInsetsNamedFromLTRB) updates) => super.copyWith((message) => updates(message as FlutterEdgeInsetsNamedFromLTRB)) as FlutterEdgeInsetsNamedFromLTRB;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsNamedFromLTRB create() => FlutterEdgeInsetsNamedFromLTRB._();
+  FlutterEdgeInsetsNamedFromLTRB createEmptyInstance() => create();
+  static $pb.PbList<FlutterEdgeInsetsNamedFromLTRB> createRepeated() => $pb.PbList<FlutterEdgeInsetsNamedFromLTRB>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsNamedFromLTRB getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterEdgeInsetsNamedFromLTRB>(create);
+  static FlutterEdgeInsetsNamedFromLTRB? _defaultInstance;
+
+  @$pb.TagNumber(2)
+  $core.double get left => $_getN(0);
+  @$pb.TagNumber(2)
+  set left($core.double v) { $_setDouble(0, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasLeft() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearLeft() => clearField(2);
+
+  @$pb.TagNumber(3)
+  $core.double get top => $_getN(1);
+  @$pb.TagNumber(3)
+  set top($core.double v) { $_setDouble(1, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasTop() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearTop() => clearField(3);
+
+  @$pb.TagNumber(4)
+  $core.double get right => $_getN(2);
+  @$pb.TagNumber(4)
+  set right($core.double v) { $_setDouble(2, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasRight() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearRight() => clearField(4);
+
+  @$pb.TagNumber(5)
+  $core.double get bottom => $_getN(3);
+  @$pb.TagNumber(5)
+  set bottom($core.double v) { $_setDouble(3, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasBottom() => $_has(3);
+  @$pb.TagNumber(5)
+  void clearBottom() => clearField(5);
+}
+
+/// package:flutter/src/painting/edge_insets.dart
+class FlutterEdgeInsetsNamedOnly extends $pb.GeneratedMessage {
+  factory FlutterEdgeInsetsNamedOnly({
+    $core.double? left,
+    $core.double? top,
+    $core.double? right,
+    $core.double? bottom,
+  }) {
+    final $result = create();
+    if (left != null) {
+      $result.left = left;
+    }
+    if (top != null) {
+      $result.top = top;
+    }
+    if (right != null) {
+      $result.right = right;
+    }
+    if (bottom != null) {
+      $result.bottom = bottom;
+    }
+    return $result;
+  }
+  FlutterEdgeInsetsNamedOnly._() : super();
+  factory FlutterEdgeInsetsNamedOnly.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterEdgeInsetsNamedOnly.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterEdgeInsetsNamedOnly', createEmptyInstance: create)
+    ..a<$core.double>(2, _omitFieldNames ? '' : 'left', $pb.PbFieldType.OD)
+    ..a<$core.double>(3, _omitFieldNames ? '' : 'top', $pb.PbFieldType.OD)
+    ..a<$core.double>(4, _omitFieldNames ? '' : 'right', $pb.PbFieldType.OD)
+    ..a<$core.double>(5, _omitFieldNames ? '' : 'bottom', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsNamedOnly clone() => FlutterEdgeInsetsNamedOnly()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsNamedOnly copyWith(void Function(FlutterEdgeInsetsNamedOnly) updates) => super.copyWith((message) => updates(message as FlutterEdgeInsetsNamedOnly)) as FlutterEdgeInsetsNamedOnly;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsNamedOnly create() => FlutterEdgeInsetsNamedOnly._();
+  FlutterEdgeInsetsNamedOnly createEmptyInstance() => create();
+  static $pb.PbList<FlutterEdgeInsetsNamedOnly> createRepeated() => $pb.PbList<FlutterEdgeInsetsNamedOnly>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsNamedOnly getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterEdgeInsetsNamedOnly>(create);
+  static FlutterEdgeInsetsNamedOnly? _defaultInstance;
+
+  @$pb.TagNumber(2)
+  $core.double get left => $_getN(0);
+  @$pb.TagNumber(2)
+  set left($core.double v) { $_setDouble(0, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasLeft() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearLeft() => clearField(2);
+
+  @$pb.TagNumber(3)
+  $core.double get top => $_getN(1);
+  @$pb.TagNumber(3)
+  set top($core.double v) { $_setDouble(1, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasTop() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearTop() => clearField(3);
+
+  @$pb.TagNumber(4)
+  $core.double get right => $_getN(2);
+  @$pb.TagNumber(4)
+  set right($core.double v) { $_setDouble(2, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasRight() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearRight() => clearField(4);
+
+  @$pb.TagNumber(5)
+  $core.double get bottom => $_getN(3);
+  @$pb.TagNumber(5)
+  set bottom($core.double v) { $_setDouble(3, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasBottom() => $_has(3);
+  @$pb.TagNumber(5)
+  void clearBottom() => clearField(5);
+}
+
+/// package:flutter/src/painting/edge_insets.dart
+class FlutterEdgeInsetsNamedSymmetric extends $pb.GeneratedMessage {
+  factory FlutterEdgeInsetsNamedSymmetric({
+    $core.double? vertical,
+    $core.double? horizontal,
+  }) {
+    final $result = create();
+    if (vertical != null) {
+      $result.vertical = vertical;
+    }
+    if (horizontal != null) {
+      $result.horizontal = horizontal;
+    }
+    return $result;
+  }
+  FlutterEdgeInsetsNamedSymmetric._() : super();
+  factory FlutterEdgeInsetsNamedSymmetric.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterEdgeInsetsNamedSymmetric.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterEdgeInsetsNamedSymmetric', createEmptyInstance: create)
+    ..a<$core.double>(2, _omitFieldNames ? '' : 'vertical', $pb.PbFieldType.OD)
+    ..a<$core.double>(3, _omitFieldNames ? '' : 'horizontal', $pb.PbFieldType.OD)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsNamedSymmetric clone() => FlutterEdgeInsetsNamedSymmetric()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsNamedSymmetric copyWith(void Function(FlutterEdgeInsetsNamedSymmetric) updates) => super.copyWith((message) => updates(message as FlutterEdgeInsetsNamedSymmetric)) as FlutterEdgeInsetsNamedSymmetric;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsNamedSymmetric create() => FlutterEdgeInsetsNamedSymmetric._();
+  FlutterEdgeInsetsNamedSymmetric createEmptyInstance() => create();
+  static $pb.PbList<FlutterEdgeInsetsNamedSymmetric> createRepeated() => $pb.PbList<FlutterEdgeInsetsNamedSymmetric>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsNamedSymmetric getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterEdgeInsetsNamedSymmetric>(create);
+  static FlutterEdgeInsetsNamedSymmetric? _defaultInstance;
+
+  @$pb.TagNumber(2)
+  $core.double get vertical => $_getN(0);
+  @$pb.TagNumber(2)
+  set vertical($core.double v) { $_setDouble(0, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasVertical() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearVertical() => clearField(2);
+
+  @$pb.TagNumber(3)
+  $core.double get horizontal => $_getN(1);
+  @$pb.TagNumber(3)
+  set horizontal($core.double v) { $_setDouble(1, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasHorizontal() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearHorizontal() => clearField(3);
+}
+
 /// package:flutter/src/widgets/framework.dart
 class FlutterGlobalKey extends $pb.GeneratedMessage {
   factory FlutterGlobalKey({
@@ -1187,6 +1791,198 @@ class DartDurationExpression extends $pb.GeneratedMessage {
   void clearDartDuration() => clearField(2);
   @$pb.TagNumber(2)
   DartDuration ensureDartDuration() => $_ensure(0);
+}
+
+enum FlutterEdgeInsetsGeometryExpression_Result {
+  flutterEdgeInsetsDirectionalNamedAll, 
+  flutterEdgeInsetsDirectionalNamedFromSTEB, 
+  flutterEdgeInsetsDirectionalNamedOnly, 
+  flutterEdgeInsetsDirectionalNamedSymmetric, 
+  flutterEdgeInsetsNamedAll, 
+  flutterEdgeInsetsNamedFromLTRB, 
+  flutterEdgeInsetsNamedOnly, 
+  flutterEdgeInsetsNamedSymmetric, 
+  notSet
+}
+
+/// package:flutter/src/painting/edge_insets.dart
+class FlutterEdgeInsetsGeometryExpression extends $pb.GeneratedMessage {
+  factory FlutterEdgeInsetsGeometryExpression({
+    FlutterEdgeInsetsDirectionalNamedAll? flutterEdgeInsetsDirectionalNamedAll,
+    FlutterEdgeInsetsDirectionalNamedFromSTEB? flutterEdgeInsetsDirectionalNamedFromSTEB,
+    FlutterEdgeInsetsDirectionalNamedOnly? flutterEdgeInsetsDirectionalNamedOnly,
+    FlutterEdgeInsetsDirectionalNamedSymmetric? flutterEdgeInsetsDirectionalNamedSymmetric,
+    FlutterEdgeInsetsNamedAll? flutterEdgeInsetsNamedAll,
+    FlutterEdgeInsetsNamedFromLTRB? flutterEdgeInsetsNamedFromLTRB,
+    FlutterEdgeInsetsNamedOnly? flutterEdgeInsetsNamedOnly,
+    FlutterEdgeInsetsNamedSymmetric? flutterEdgeInsetsNamedSymmetric,
+  }) {
+    final $result = create();
+    if (flutterEdgeInsetsDirectionalNamedAll != null) {
+      $result.flutterEdgeInsetsDirectionalNamedAll = flutterEdgeInsetsDirectionalNamedAll;
+    }
+    if (flutterEdgeInsetsDirectionalNamedFromSTEB != null) {
+      $result.flutterEdgeInsetsDirectionalNamedFromSTEB = flutterEdgeInsetsDirectionalNamedFromSTEB;
+    }
+    if (flutterEdgeInsetsDirectionalNamedOnly != null) {
+      $result.flutterEdgeInsetsDirectionalNamedOnly = flutterEdgeInsetsDirectionalNamedOnly;
+    }
+    if (flutterEdgeInsetsDirectionalNamedSymmetric != null) {
+      $result.flutterEdgeInsetsDirectionalNamedSymmetric = flutterEdgeInsetsDirectionalNamedSymmetric;
+    }
+    if (flutterEdgeInsetsNamedAll != null) {
+      $result.flutterEdgeInsetsNamedAll = flutterEdgeInsetsNamedAll;
+    }
+    if (flutterEdgeInsetsNamedFromLTRB != null) {
+      $result.flutterEdgeInsetsNamedFromLTRB = flutterEdgeInsetsNamedFromLTRB;
+    }
+    if (flutterEdgeInsetsNamedOnly != null) {
+      $result.flutterEdgeInsetsNamedOnly = flutterEdgeInsetsNamedOnly;
+    }
+    if (flutterEdgeInsetsNamedSymmetric != null) {
+      $result.flutterEdgeInsetsNamedSymmetric = flutterEdgeInsetsNamedSymmetric;
+    }
+    return $result;
+  }
+  FlutterEdgeInsetsGeometryExpression._() : super();
+  factory FlutterEdgeInsetsGeometryExpression.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterEdgeInsetsGeometryExpression.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, FlutterEdgeInsetsGeometryExpression_Result> _FlutterEdgeInsetsGeometryExpression_ResultByTag = {
+    2 : FlutterEdgeInsetsGeometryExpression_Result.flutterEdgeInsetsDirectionalNamedAll,
+    3 : FlutterEdgeInsetsGeometryExpression_Result.flutterEdgeInsetsDirectionalNamedFromSTEB,
+    4 : FlutterEdgeInsetsGeometryExpression_Result.flutterEdgeInsetsDirectionalNamedOnly,
+    5 : FlutterEdgeInsetsGeometryExpression_Result.flutterEdgeInsetsDirectionalNamedSymmetric,
+    6 : FlutterEdgeInsetsGeometryExpression_Result.flutterEdgeInsetsNamedAll,
+    7 : FlutterEdgeInsetsGeometryExpression_Result.flutterEdgeInsetsNamedFromLTRB,
+    8 : FlutterEdgeInsetsGeometryExpression_Result.flutterEdgeInsetsNamedOnly,
+    9 : FlutterEdgeInsetsGeometryExpression_Result.flutterEdgeInsetsNamedSymmetric,
+    0 : FlutterEdgeInsetsGeometryExpression_Result.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterEdgeInsetsGeometryExpression', createEmptyInstance: create)
+    ..oo(0, [2, 3, 4, 5, 6, 7, 8, 9])
+    ..aOM<FlutterEdgeInsetsDirectionalNamedAll>(2, _omitFieldNames ? '' : 'flutterEdgeInsetsDirectionalNamedAll', subBuilder: FlutterEdgeInsetsDirectionalNamedAll.create)
+    ..aOM<FlutterEdgeInsetsDirectionalNamedFromSTEB>(3, _omitFieldNames ? '' : 'flutterEdgeInsetsDirectionalNamedFromSTEB', subBuilder: FlutterEdgeInsetsDirectionalNamedFromSTEB.create)
+    ..aOM<FlutterEdgeInsetsDirectionalNamedOnly>(4, _omitFieldNames ? '' : 'flutterEdgeInsetsDirectionalNamedOnly', subBuilder: FlutterEdgeInsetsDirectionalNamedOnly.create)
+    ..aOM<FlutterEdgeInsetsDirectionalNamedSymmetric>(5, _omitFieldNames ? '' : 'flutterEdgeInsetsDirectionalNamedSymmetric', subBuilder: FlutterEdgeInsetsDirectionalNamedSymmetric.create)
+    ..aOM<FlutterEdgeInsetsNamedAll>(6, _omitFieldNames ? '' : 'flutterEdgeInsetsNamedAll', subBuilder: FlutterEdgeInsetsNamedAll.create)
+    ..aOM<FlutterEdgeInsetsNamedFromLTRB>(7, _omitFieldNames ? '' : 'flutterEdgeInsetsNamedFromLTRB', subBuilder: FlutterEdgeInsetsNamedFromLTRB.create)
+    ..aOM<FlutterEdgeInsetsNamedOnly>(8, _omitFieldNames ? '' : 'flutterEdgeInsetsNamedOnly', subBuilder: FlutterEdgeInsetsNamedOnly.create)
+    ..aOM<FlutterEdgeInsetsNamedSymmetric>(9, _omitFieldNames ? '' : 'flutterEdgeInsetsNamedSymmetric', subBuilder: FlutterEdgeInsetsNamedSymmetric.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsGeometryExpression clone() => FlutterEdgeInsetsGeometryExpression()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterEdgeInsetsGeometryExpression copyWith(void Function(FlutterEdgeInsetsGeometryExpression) updates) => super.copyWith((message) => updates(message as FlutterEdgeInsetsGeometryExpression)) as FlutterEdgeInsetsGeometryExpression;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsGeometryExpression create() => FlutterEdgeInsetsGeometryExpression._();
+  FlutterEdgeInsetsGeometryExpression createEmptyInstance() => create();
+  static $pb.PbList<FlutterEdgeInsetsGeometryExpression> createRepeated() => $pb.PbList<FlutterEdgeInsetsGeometryExpression>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterEdgeInsetsGeometryExpression getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterEdgeInsetsGeometryExpression>(create);
+  static FlutterEdgeInsetsGeometryExpression? _defaultInstance;
+
+  FlutterEdgeInsetsGeometryExpression_Result whichResult() => _FlutterEdgeInsetsGeometryExpression_ResultByTag[$_whichOneof(0)]!;
+  void clearResult() => clearField($_whichOneof(0));
+
+  @$pb.TagNumber(2)
+  FlutterEdgeInsetsDirectionalNamedAll get flutterEdgeInsetsDirectionalNamedAll => $_getN(0);
+  @$pb.TagNumber(2)
+  set flutterEdgeInsetsDirectionalNamedAll(FlutterEdgeInsetsDirectionalNamedAll v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasFlutterEdgeInsetsDirectionalNamedAll() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearFlutterEdgeInsetsDirectionalNamedAll() => clearField(2);
+  @$pb.TagNumber(2)
+  FlutterEdgeInsetsDirectionalNamedAll ensureFlutterEdgeInsetsDirectionalNamedAll() => $_ensure(0);
+
+  @$pb.TagNumber(3)
+  FlutterEdgeInsetsDirectionalNamedFromSTEB get flutterEdgeInsetsDirectionalNamedFromSTEB => $_getN(1);
+  @$pb.TagNumber(3)
+  set flutterEdgeInsetsDirectionalNamedFromSTEB(FlutterEdgeInsetsDirectionalNamedFromSTEB v) { setField(3, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasFlutterEdgeInsetsDirectionalNamedFromSTEB() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearFlutterEdgeInsetsDirectionalNamedFromSTEB() => clearField(3);
+  @$pb.TagNumber(3)
+  FlutterEdgeInsetsDirectionalNamedFromSTEB ensureFlutterEdgeInsetsDirectionalNamedFromSTEB() => $_ensure(1);
+
+  @$pb.TagNumber(4)
+  FlutterEdgeInsetsDirectionalNamedOnly get flutterEdgeInsetsDirectionalNamedOnly => $_getN(2);
+  @$pb.TagNumber(4)
+  set flutterEdgeInsetsDirectionalNamedOnly(FlutterEdgeInsetsDirectionalNamedOnly v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasFlutterEdgeInsetsDirectionalNamedOnly() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearFlutterEdgeInsetsDirectionalNamedOnly() => clearField(4);
+  @$pb.TagNumber(4)
+  FlutterEdgeInsetsDirectionalNamedOnly ensureFlutterEdgeInsetsDirectionalNamedOnly() => $_ensure(2);
+
+  @$pb.TagNumber(5)
+  FlutterEdgeInsetsDirectionalNamedSymmetric get flutterEdgeInsetsDirectionalNamedSymmetric => $_getN(3);
+  @$pb.TagNumber(5)
+  set flutterEdgeInsetsDirectionalNamedSymmetric(FlutterEdgeInsetsDirectionalNamedSymmetric v) { setField(5, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasFlutterEdgeInsetsDirectionalNamedSymmetric() => $_has(3);
+  @$pb.TagNumber(5)
+  void clearFlutterEdgeInsetsDirectionalNamedSymmetric() => clearField(5);
+  @$pb.TagNumber(5)
+  FlutterEdgeInsetsDirectionalNamedSymmetric ensureFlutterEdgeInsetsDirectionalNamedSymmetric() => $_ensure(3);
+
+  @$pb.TagNumber(6)
+  FlutterEdgeInsetsNamedAll get flutterEdgeInsetsNamedAll => $_getN(4);
+  @$pb.TagNumber(6)
+  set flutterEdgeInsetsNamedAll(FlutterEdgeInsetsNamedAll v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasFlutterEdgeInsetsNamedAll() => $_has(4);
+  @$pb.TagNumber(6)
+  void clearFlutterEdgeInsetsNamedAll() => clearField(6);
+  @$pb.TagNumber(6)
+  FlutterEdgeInsetsNamedAll ensureFlutterEdgeInsetsNamedAll() => $_ensure(4);
+
+  @$pb.TagNumber(7)
+  FlutterEdgeInsetsNamedFromLTRB get flutterEdgeInsetsNamedFromLTRB => $_getN(5);
+  @$pb.TagNumber(7)
+  set flutterEdgeInsetsNamedFromLTRB(FlutterEdgeInsetsNamedFromLTRB v) { setField(7, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasFlutterEdgeInsetsNamedFromLTRB() => $_has(5);
+  @$pb.TagNumber(7)
+  void clearFlutterEdgeInsetsNamedFromLTRB() => clearField(7);
+  @$pb.TagNumber(7)
+  FlutterEdgeInsetsNamedFromLTRB ensureFlutterEdgeInsetsNamedFromLTRB() => $_ensure(5);
+
+  @$pb.TagNumber(8)
+  FlutterEdgeInsetsNamedOnly get flutterEdgeInsetsNamedOnly => $_getN(6);
+  @$pb.TagNumber(8)
+  set flutterEdgeInsetsNamedOnly(FlutterEdgeInsetsNamedOnly v) { setField(8, v); }
+  @$pb.TagNumber(8)
+  $core.bool hasFlutterEdgeInsetsNamedOnly() => $_has(6);
+  @$pb.TagNumber(8)
+  void clearFlutterEdgeInsetsNamedOnly() => clearField(8);
+  @$pb.TagNumber(8)
+  FlutterEdgeInsetsNamedOnly ensureFlutterEdgeInsetsNamedOnly() => $_ensure(6);
+
+  @$pb.TagNumber(9)
+  FlutterEdgeInsetsNamedSymmetric get flutterEdgeInsetsNamedSymmetric => $_getN(7);
+  @$pb.TagNumber(9)
+  set flutterEdgeInsetsNamedSymmetric(FlutterEdgeInsetsNamedSymmetric v) { setField(9, v); }
+  @$pb.TagNumber(9)
+  $core.bool hasFlutterEdgeInsetsNamedSymmetric() => $_has(7);
+  @$pb.TagNumber(9)
+  void clearFlutterEdgeInsetsNamedSymmetric() => clearField(9);
+  @$pb.TagNumber(9)
+  FlutterEdgeInsetsNamedSymmetric ensureFlutterEdgeInsetsNamedSymmetric() => $_ensure(7);
 }
 
 enum FlutterKeyExpression_Result {

@@ -77,7 +77,10 @@ extension TypeMappingCreationExtension on DartType {
           protoType: '$libraryPrefix$name',
           mappingStrategy: MappingStrategy.generateEnum,
         );
-      } else if (name == 'Key' || name == 'Duration' || name == 'Color') {
+      } else if (name == 'Key' ||
+          name == 'Duration' ||
+          name == 'Color' ||
+          name == 'EdgeInsetsGeometry') {
         return TypeMapping._of(
           dartType: this,
           protoType: '$libraryPrefix${name}Expression',

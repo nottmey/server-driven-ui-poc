@@ -64,6 +64,60 @@ message DartDuration {
   int32 microseconds = 7;
 }
 
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsDirectionalNamedAll {
+  double value = 2;
+}
+
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsDirectionalNamedFromSTEB {
+  double start = 2;
+  double top = 3;
+  double end = 4;
+  double bottom = 5;
+}
+
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsDirectionalNamedOnly {
+  double start = 2;
+  double top = 3;
+  double end = 4;
+  double bottom = 5;
+}
+
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsDirectionalNamedSymmetric {
+  double horizontal = 2;
+  double vertical = 3;
+}
+
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsNamedAll {
+  double value = 2;
+}
+
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsNamedFromLTRB {
+  double left = 2;
+  double top = 3;
+  double right = 4;
+  double bottom = 5;
+}
+
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsNamedOnly {
+  double left = 2;
+  double top = 3;
+  double right = 4;
+  double bottom = 5;
+}
+
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsNamedSymmetric {
+  double vertical = 2;
+  double horizontal = 3;
+}
+
 // package:flutter/src/widgets/framework.dart
 message FlutterGlobalKey {
   string debug_label = 2;
@@ -106,6 +160,20 @@ message DartColorExpression {
 message DartDurationExpression {
   oneof result {
     DartDuration dart_duration = 2;
+  }
+}
+
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsGeometryExpression {
+  oneof result {
+    FlutterEdgeInsetsDirectionalNamedAll flutter_edge_insets_directional_named_all = 2;
+    FlutterEdgeInsetsDirectionalNamedFromSTEB flutter_edge_insets_directional_named_from_s_t_e_b = 3;
+    FlutterEdgeInsetsDirectionalNamedOnly flutter_edge_insets_directional_named_only = 4;
+    FlutterEdgeInsetsDirectionalNamedSymmetric flutter_edge_insets_directional_named_symmetric = 5;
+    FlutterEdgeInsetsNamedAll flutter_edge_insets_named_all = 6;
+    FlutterEdgeInsetsNamedFromLTRB flutter_edge_insets_named_from_l_t_r_b = 7;
+    FlutterEdgeInsetsNamedOnly flutter_edge_insets_named_only = 8;
+    FlutterEdgeInsetsNamedSymmetric flutter_edge_insets_named_symmetric = 9;
   }
 }
 

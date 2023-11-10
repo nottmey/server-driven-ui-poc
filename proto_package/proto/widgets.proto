@@ -55,6 +55,7 @@ message CupertinoAppNamedRouter {
 message CupertinoButton {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
+  FlutterEdgeInsetsGeometryExpression padding = 4;
   DartColorExpression color = 5;
   DartColorExpression disabled_color = 6;
   double min_size = 7;
@@ -65,6 +66,7 @@ message CupertinoButton {
 message CupertinoButtonNamedFilled {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
+  FlutterEdgeInsetsGeometryExpression padding = 4;
   DartColorExpression disabled_color = 5;
   double min_size = 6;
   double pressed_opacity = 7;
@@ -148,6 +150,7 @@ message CupertinoFormRow {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
   WidgetExpression prefix = 4;
+  FlutterEdgeInsetsGeometryExpression padding = 5;
   WidgetExpression helper = 6;
   WidgetExpression error = 7;
 }
@@ -158,6 +161,7 @@ message CupertinoFormSection {
   repeated WidgetExpression children = 3;
   WidgetExpression header = 4;
   WidgetExpression footer = 5;
+  FlutterEdgeInsetsGeometryExpression margin = 6;
   DartColorExpression background_color = 7;
   DartClip.Enum clip_behavior = 9;
 }
@@ -168,6 +172,7 @@ message CupertinoFormSectionNamedInsetGrouped {
   repeated WidgetExpression children = 3;
   WidgetExpression header = 4;
   WidgetExpression footer = 5;
+  FlutterEdgeInsetsGeometryExpression margin = 6;
   DartColorExpression background_color = 7;
   DartClip.Enum clip_behavior = 9;
 }
@@ -185,6 +190,7 @@ message CupertinoListSection {
   repeated WidgetExpression children = 3;
   WidgetExpression header = 4;
   WidgetExpression footer = 5;
+  FlutterEdgeInsetsGeometryExpression margin = 6;
   DartColorExpression background_color = 7;
   DartClip.Enum clip_behavior = 9;
   double divider_margin = 10;
@@ -200,6 +206,7 @@ message CupertinoListSectionNamedInsetGrouped {
   repeated WidgetExpression children = 3;
   WidgetExpression header = 4;
   WidgetExpression footer = 5;
+  FlutterEdgeInsetsGeometryExpression margin = 6;
   DartColorExpression background_color = 7;
   DartClip.Enum clip_behavior = 9;
   double divider_margin = 10;
@@ -219,6 +226,7 @@ message CupertinoListTile {
   WidgetExpression trailing = 7;
   DartColorExpression background_color = 9;
   DartColorExpression background_color_activated = 10;
+  FlutterEdgeInsetsGeometryExpression padding = 11;
   double leading_size = 12;
   double leading_to_title = 13;
 }
@@ -233,6 +241,7 @@ message CupertinoListTileNamedNotched {
   WidgetExpression trailing = 7;
   DartColorExpression background_color = 9;
   DartColorExpression background_color_activated = 10;
+  FlutterEdgeInsetsGeometryExpression padding = 11;
   double leading_size = 12;
   double leading_to_title = 13;
 }
@@ -338,9 +347,12 @@ message CupertinoSearchTextField {
   FlutterKeyExpression key = 2;
   string placeholder = 7;
   DartColorExpression background_color = 10;
+  FlutterEdgeInsetsGeometryExpression padding = 13;
   DartColorExpression item_color = 14;
   double item_size = 15;
+  FlutterEdgeInsetsGeometryExpression prefix_insets = 16;
   WidgetExpression prefix_icon = 17;
+  FlutterEdgeInsetsGeometryExpression suffix_insets = 18;
   OverlayVisibilityMode.Enum suffix_mode = 20;
   string restoration_id = 22;
   FlutterSmartQuotesType.Enum smart_quotes_type = 24;
@@ -385,6 +397,7 @@ message CupertinoTabView {
 // package:flutter/src/cupertino/text_field.dart
 message CupertinoTextField {
   FlutterKeyExpression key = 2;
+  FlutterEdgeInsetsGeometryExpression padding = 7;
   string placeholder = 8;
   WidgetExpression prefix = 10;
   OverlayVisibilityMode.Enum prefix_mode = 11;
@@ -429,6 +442,7 @@ message CupertinoTextField {
 // package:flutter/src/cupertino/text_field.dart
 message CupertinoTextFieldNamedBorderless {
   FlutterKeyExpression key = 2;
+  FlutterEdgeInsetsGeometryExpression padding = 7;
   string placeholder = 8;
   WidgetExpression prefix = 10;
   OverlayVisibilityMode.Enum prefix_mode = 11;
@@ -474,6 +488,7 @@ message CupertinoTextFieldNamedBorderless {
 message CupertinoTextFormFieldRow {
   FlutterKeyExpression key = 2;
   WidgetExpression prefix = 3;
+  FlutterEdgeInsetsGeometryExpression padding = 4;
   string initial_value = 6;
   FlutterTextCapitalization.Enum text_capitalization = 10;
   FlutterTextInputAction.Enum text_input_action = 11;
@@ -594,12 +609,14 @@ message MaterialActionChip {
   FlutterKeyExpression key = 2;
   WidgetExpression avatar = 3;
   WidgetExpression label = 4;
+  FlutterEdgeInsetsGeometryExpression label_padding = 6;
   double press_elevation = 8;
   string tooltip = 9;
   DartClip.Enum clip_behavior = 12;
   bool autofocus = 14;
   DartColorExpression background_color = 16;
   DartColorExpression disabled_color = 17;
+  FlutterEdgeInsetsGeometryExpression padding = 18;
   MaterialMaterialTapTargetSize.Enum material_tap_target_size = 20;
   double elevation = 21;
   DartColorExpression shadow_color = 22;
@@ -611,12 +628,14 @@ message MaterialActionChipNamedElevated {
   FlutterKeyExpression key = 2;
   WidgetExpression avatar = 3;
   WidgetExpression label = 4;
+  FlutterEdgeInsetsGeometryExpression label_padding = 6;
   double press_elevation = 8;
   string tooltip = 9;
   DartClip.Enum clip_behavior = 12;
   bool autofocus = 14;
   DartColorExpression background_color = 16;
   DartColorExpression disabled_color = 17;
+  FlutterEdgeInsetsGeometryExpression padding = 18;
   MaterialMaterialTapTargetSize.Enum material_tap_target_size = 20;
   double elevation = 21;
   DartColorExpression shadow_color = 22;
@@ -786,6 +805,7 @@ message MaterialBadge {
   DartColorExpression text_color = 4;
   double small_size = 5;
   double large_size = 6;
+  FlutterEdgeInsetsGeometryExpression padding = 8;
   WidgetExpression label = 11;
   bool is_label_visible = 12;
   WidgetExpression child = 13;
@@ -798,6 +818,7 @@ message MaterialBadgeNamedCount {
   DartColorExpression text_color = 4;
   double small_size = 5;
   double large_size = 6;
+  FlutterEdgeInsetsGeometryExpression padding = 8;
   int32 count = 11;
   bool is_label_visible = 12;
   WidgetExpression child = 13;
@@ -814,6 +835,9 @@ message MaterialMaterialBanner {
   DartColorExpression surface_tint_color = 9;
   DartColorExpression shadow_color = 10;
   DartColorExpression divider_color = 11;
+  FlutterEdgeInsetsGeometryExpression padding = 12;
+  FlutterEdgeInsetsGeometryExpression margin = 13;
+  FlutterEdgeInsetsGeometryExpression leading_padding = 14;
   bool force_actions_below = 15;
   FlutterOverflowBarAlignment.Enum overflow_alignment = 16;
 }
@@ -832,6 +856,7 @@ message MaterialBottomAppBar {
   DartClip.Enum clip_behavior = 6;
   double notch_margin = 7;
   WidgetExpression child = 8;
+  FlutterEdgeInsetsGeometryExpression padding = 9;
   DartColorExpression surface_tint_color = 10;
   DartColorExpression shadow_color = 11;
   double height = 12;
@@ -850,6 +875,7 @@ message MaterialRawMaterialButton {
   double hover_elevation = 15;
   double highlight_elevation = 16;
   double disabled_elevation = 17;
+  FlutterEdgeInsetsGeometryExpression padding = 18;
   DartDurationExpression animation_duration = 22;
   DartClip.Enum clip_behavior = 23;
   bool autofocus = 25;
@@ -866,6 +892,7 @@ message MaterialButtonBar {
   MaterialButtonTextTheme.Enum button_text_theme = 5;
   double button_min_width = 6;
   double button_height = 7;
+  FlutterEdgeInsetsGeometryExpression button_padding = 8;
   bool button_aligned_dropdown = 9;
   MaterialButtonBarLayoutBehavior.Enum layout_behavior = 10;
   FlutterVerticalDirection.Enum overflow_direction = 11;
@@ -880,6 +907,7 @@ message MaterialButtonTheme {
   MaterialButtonBarLayoutBehavior.Enum layout_behavior = 4;
   double min_width = 5;
   double height = 6;
+  FlutterEdgeInsetsGeometryExpression padding = 7;
   bool aligned_dropdown = 9;
   DartColorExpression button_color = 10;
   DartColorExpression disabled_color = 11;
@@ -899,6 +927,7 @@ message MaterialCard {
   DartColorExpression surface_tint_color = 5;
   double elevation = 6;
   bool border_on_foreground = 8;
+  FlutterEdgeInsetsGeometryExpression margin = 9;
   DartClip.Enum clip_behavior = 10;
   WidgetExpression child = 11;
   bool semantic_container = 12;
@@ -956,6 +985,7 @@ message MaterialCheckboxListTile {
   WidgetExpression secondary = 25;
   bool selected = 26;
   MaterialListTileControlAffinity.Enum control_affinity = 27;
+  FlutterEdgeInsetsGeometryExpression content_padding = 28;
   bool tristate = 29;
   DartColorExpression selected_tile_color = 31;
   bool enable_feedback = 33;
@@ -982,6 +1012,7 @@ message MaterialCheckboxListTileNamedAdaptive {
   WidgetExpression secondary = 25;
   bool selected = 26;
   MaterialListTileControlAffinity.Enum control_affinity = 27;
+  FlutterEdgeInsetsGeometryExpression content_padding = 28;
   bool tristate = 29;
   DartColorExpression selected_tile_color = 31;
   bool enable_feedback = 33;
@@ -993,12 +1024,14 @@ message MaterialChip {
   FlutterKeyExpression key = 2;
   WidgetExpression avatar = 3;
   WidgetExpression label = 4;
+  FlutterEdgeInsetsGeometryExpression label_padding = 6;
   WidgetExpression delete_icon = 7;
   DartColorExpression delete_icon_color = 9;
   string delete_button_tooltip_message = 10;
   DartClip.Enum clip_behavior = 13;
   bool autofocus = 15;
   DartColorExpression background_color = 17;
+  FlutterEdgeInsetsGeometryExpression padding = 18;
   MaterialMaterialTapTargetSize.Enum material_tap_target_size = 20;
   double elevation = 21;
   DartColorExpression shadow_color = 22;
@@ -1010,6 +1043,8 @@ message MaterialRawChip {
   FlutterKeyExpression key = 2;
   WidgetExpression avatar = 4;
   WidgetExpression label = 5;
+  FlutterEdgeInsetsGeometryExpression padding = 7;
+  FlutterEdgeInsetsGeometryExpression label_padding = 9;
   WidgetExpression delete_icon = 10;
   DartColorExpression delete_icon_color = 12;
   string delete_button_tooltip_message = 13;
@@ -1037,6 +1072,7 @@ message MaterialChoiceChip {
   FlutterKeyExpression key = 2;
   WidgetExpression avatar = 3;
   WidgetExpression label = 4;
+  FlutterEdgeInsetsGeometryExpression label_padding = 6;
   double press_elevation = 8;
   bool selected = 9;
   DartColorExpression selected_color = 10;
@@ -1045,6 +1081,7 @@ message MaterialChoiceChip {
   DartClip.Enum clip_behavior = 15;
   bool autofocus = 17;
   DartColorExpression background_color = 19;
+  FlutterEdgeInsetsGeometryExpression padding = 20;
   MaterialMaterialTapTargetSize.Enum material_tap_target_size = 22;
   double elevation = 23;
   DartColorExpression shadow_color = 24;
@@ -1059,6 +1096,7 @@ message MaterialChoiceChipNamedElevated {
   FlutterKeyExpression key = 2;
   WidgetExpression avatar = 3;
   WidgetExpression label = 4;
+  FlutterEdgeInsetsGeometryExpression label_padding = 6;
   double press_elevation = 8;
   bool selected = 9;
   DartColorExpression selected_color = 10;
@@ -1067,6 +1105,7 @@ message MaterialChoiceChipNamedElevated {
   DartClip.Enum clip_behavior = 15;
   bool autofocus = 17;
   DartColorExpression background_color = 19;
+  FlutterEdgeInsetsGeometryExpression padding = 20;
   MaterialMaterialTapTargetSize.Enum material_tap_target_size = 22;
   double elevation = 23;
   DartColorExpression shadow_color = 24;
@@ -1103,14 +1142,19 @@ message MaterialDesktopTextSelectionToolbarButton {
 message MaterialAlertDialog {
   FlutterKeyExpression key = 2;
   WidgetExpression icon = 3;
+  FlutterEdgeInsetsGeometryExpression icon_padding = 4;
   DartColorExpression icon_color = 5;
   WidgetExpression title = 6;
+  FlutterEdgeInsetsGeometryExpression title_padding = 7;
   WidgetExpression content = 9;
+  FlutterEdgeInsetsGeometryExpression content_padding = 10;
   repeated WidgetExpression actions = 12;
+  FlutterEdgeInsetsGeometryExpression actions_padding = 13;
   FlutterMainAxisAlignment.Enum actions_alignment = 14;
   FlutterOverflowBarAlignment.Enum actions_overflow_alignment = 15;
   FlutterVerticalDirection.Enum actions_overflow_direction = 16;
   double actions_overflow_button_spacing = 17;
+  FlutterEdgeInsetsGeometryExpression button_padding = 18;
   DartColorExpression background_color = 19;
   double elevation = 20;
   DartColorExpression shadow_color = 21;
@@ -1124,14 +1168,19 @@ message MaterialAlertDialog {
 message MaterialAlertDialogNamedAdaptive {
   FlutterKeyExpression key = 2;
   WidgetExpression icon = 3;
+  FlutterEdgeInsetsGeometryExpression icon_padding = 4;
   DartColorExpression icon_color = 5;
   WidgetExpression title = 6;
+  FlutterEdgeInsetsGeometryExpression title_padding = 7;
   WidgetExpression content = 9;
+  FlutterEdgeInsetsGeometryExpression content_padding = 10;
   repeated WidgetExpression actions = 12;
+  FlutterEdgeInsetsGeometryExpression actions_padding = 13;
   FlutterMainAxisAlignment.Enum actions_alignment = 14;
   FlutterOverflowBarAlignment.Enum actions_overflow_alignment = 15;
   FlutterVerticalDirection.Enum actions_overflow_direction = 16;
   double actions_overflow_button_spacing = 17;
+  FlutterEdgeInsetsGeometryExpression button_padding = 18;
   DartColorExpression background_color = 19;
   double elevation = 20;
   DartColorExpression shadow_color = 21;
@@ -1166,7 +1215,9 @@ message MaterialDialogNamedFullscreen {
 message MaterialSimpleDialog {
   FlutterKeyExpression key = 2;
   WidgetExpression title = 3;
+  FlutterEdgeInsetsGeometryExpression title_padding = 4;
   repeated WidgetExpression children = 6;
+  FlutterEdgeInsetsGeometryExpression content_padding = 7;
   DartColorExpression background_color = 8;
   double elevation = 9;
   DartColorExpression shadow_color = 10;
@@ -1228,6 +1279,8 @@ message MaterialDrawerController {
 // package:flutter/src/material/drawer_header.dart
 message MaterialDrawerHeader {
   FlutterKeyExpression key = 2;
+  FlutterEdgeInsetsGeometryExpression margin = 4;
+  FlutterEdgeInsetsGeometryExpression padding = 5;
   DartDurationExpression duration = 6;
   WidgetExpression child = 8;
 }
@@ -1251,6 +1304,7 @@ message MaterialDropdownButton {
   DartColorExpression dropdown_color = 23;
   double menu_max_height = 24;
   bool enable_feedback = 25;
+  FlutterEdgeInsetsGeometryExpression padding = 28;
 }
 
 // package:flutter/src/material/dropdown.dart
@@ -1272,6 +1326,7 @@ message MaterialDropdownButtonFormField {
   FlutterAutovalidateMode.Enum autovalidate_mode = 26;
   double menu_max_height = 27;
   bool enable_feedback = 28;
+  FlutterEdgeInsetsGeometryExpression padding = 31;
 }
 
 // package:flutter/src/material/dropdown.dart
@@ -1309,6 +1364,7 @@ message MaterialExpandIcon {
   FlutterKeyExpression key = 2;
   bool is_expanded = 3;
   double size = 4;
+  FlutterEdgeInsetsGeometryExpression padding = 6;
   DartColorExpression color = 7;
   DartColorExpression disabled_color = 8;
   DartColorExpression expanded_color = 9;
@@ -1344,7 +1400,9 @@ message MaterialExpansionTile {
   WidgetExpression trailing = 8;
   bool initially_expanded = 9;
   bool maintain_state = 10;
+  FlutterEdgeInsetsGeometryExpression tile_padding = 11;
   FlutterCrossAxisAlignment.Enum expanded_cross_axis_alignment = 12;
+  FlutterEdgeInsetsGeometryExpression children_padding = 14;
   DartColorExpression background_color = 15;
   DartColorExpression collapsed_background_color = 16;
   DartColorExpression text_color = 17;
@@ -1394,6 +1452,7 @@ message MaterialFilterChip {
   FlutterKeyExpression key = 2;
   WidgetExpression avatar = 3;
   WidgetExpression label = 4;
+  FlutterEdgeInsetsGeometryExpression label_padding = 6;
   bool selected = 7;
   double press_elevation = 9;
   DartColorExpression disabled_color = 10;
@@ -1402,6 +1461,7 @@ message MaterialFilterChip {
   DartClip.Enum clip_behavior = 15;
   bool autofocus = 17;
   DartColorExpression background_color = 19;
+  FlutterEdgeInsetsGeometryExpression padding = 20;
   MaterialMaterialTapTargetSize.Enum material_tap_target_size = 22;
   double elevation = 23;
   DartColorExpression shadow_color = 24;
@@ -1416,6 +1476,7 @@ message MaterialFilterChipNamedElevated {
   FlutterKeyExpression key = 2;
   WidgetExpression avatar = 3;
   WidgetExpression label = 4;
+  FlutterEdgeInsetsGeometryExpression label_padding = 6;
   bool selected = 7;
   double press_elevation = 9;
   DartColorExpression disabled_color = 10;
@@ -1424,6 +1485,7 @@ message MaterialFilterChipNamedElevated {
   DartClip.Enum clip_behavior = 15;
   bool autofocus = 17;
   DartColorExpression background_color = 19;
+  FlutterEdgeInsetsGeometryExpression padding = 20;
   MaterialMaterialTapTargetSize.Enum material_tap_target_size = 22;
   double elevation = 23;
   DartColorExpression shadow_color = 24;
@@ -1439,6 +1501,7 @@ message MaterialFlexibleSpaceBar {
   WidgetExpression title = 3;
   WidgetExpression background = 4;
   bool center_title = 5;
+  FlutterEdgeInsetsGeometryExpression title_padding = 6;
   MaterialCollapseMode.Enum collapse_mode = 7;
   repeated MaterialStretchMode.Enum stretch_modes = 8;
   double expanded_title_scale = 9;
@@ -1539,6 +1602,7 @@ message MaterialFloatingActionButtonNamedExtended {
   DartClip.Enum clip_behavior = 20;
   bool autofocus = 22;
   double extended_icon_label_spacing = 23;
+  FlutterEdgeInsetsGeometryExpression extended_padding = 24;
   WidgetExpression icon = 26;
   WidgetExpression label = 27;
   bool enable_feedback = 28;
@@ -1575,6 +1639,7 @@ message MaterialGridTileBar {
 message MaterialIconButton {
   FlutterKeyExpression key = 2;
   double icon_size = 3;
+  FlutterEdgeInsetsGeometryExpression padding = 5;
   double splash_radius = 7;
   DartColorExpression color = 8;
   DartColorExpression focus_color = 9;
@@ -1594,6 +1659,7 @@ message MaterialIconButton {
 message MaterialIconButtonNamedFilled {
   FlutterKeyExpression key = 2;
   double icon_size = 3;
+  FlutterEdgeInsetsGeometryExpression padding = 5;
   double splash_radius = 7;
   DartColorExpression color = 8;
   DartColorExpression focus_color = 9;
@@ -1613,6 +1679,7 @@ message MaterialIconButtonNamedFilled {
 message MaterialIconButtonNamedFilledTonal {
   FlutterKeyExpression key = 2;
   double icon_size = 3;
+  FlutterEdgeInsetsGeometryExpression padding = 5;
   double splash_radius = 7;
   DartColorExpression color = 8;
   DartColorExpression focus_color = 9;
@@ -1632,6 +1699,7 @@ message MaterialIconButtonNamedFilledTonal {
 message MaterialIconButtonNamedOutlined {
   FlutterKeyExpression key = 2;
   double icon_size = 3;
+  FlutterEdgeInsetsGeometryExpression padding = 5;
   double splash_radius = 7;
   DartColorExpression color = 8;
   DartColorExpression focus_color = 9;
@@ -1650,6 +1718,7 @@ message MaterialIconButtonNamedOutlined {
 // package:flutter/src/material/ink_decoration.dart
 message MaterialInk {
   FlutterKeyExpression key = 2;
+  FlutterEdgeInsetsGeometryExpression padding = 3;
   DartColorExpression color = 4;
   double width = 6;
   double height = 7;
@@ -1693,6 +1762,7 @@ message MaterialInputChip {
   FlutterKeyExpression key = 2;
   WidgetExpression avatar = 3;
   WidgetExpression label = 4;
+  FlutterEdgeInsetsGeometryExpression label_padding = 6;
   bool selected = 7;
   bool is_enabled = 8;
   WidgetExpression delete_icon = 10;
@@ -1705,6 +1775,7 @@ message MaterialInputChip {
   DartClip.Enum clip_behavior = 21;
   bool autofocus = 23;
   DartColorExpression background_color = 25;
+  FlutterEdgeInsetsGeometryExpression padding = 26;
   MaterialMaterialTapTargetSize.Enum material_tap_target_size = 28;
   double elevation = 29;
   DartColorExpression shadow_color = 30;
@@ -1727,6 +1798,7 @@ message MaterialListTile {
   DartColorExpression selected_color = 12;
   DartColorExpression icon_color = 13;
   DartColorExpression text_color = 14;
+  FlutterEdgeInsetsGeometryExpression content_padding = 18;
   bool enabled = 19;
   bool selected = 24;
   DartColorExpression focus_color = 25;
@@ -1750,6 +1822,7 @@ message MaterialListTileTheme {
   DartColorExpression selected_color = 7;
   DartColorExpression icon_color = 8;
   DartColorExpression text_color = 9;
+  FlutterEdgeInsetsGeometryExpression content_padding = 10;
   DartColorExpression tile_color = 11;
   DartColorExpression selected_tile_color = 12;
   bool enable_feedback = 13;
@@ -1797,6 +1870,7 @@ message MaterialMaterialButton {
   double hover_elevation = 19;
   double highlight_elevation = 20;
   double disabled_elevation = 21;
+  FlutterEdgeInsetsGeometryExpression padding = 22;
   DartClip.Enum clip_behavior = 25;
   bool autofocus = 27;
   MaterialMaterialTapTargetSize.Enum material_tap_target_size = 28;
@@ -1913,6 +1987,7 @@ message MaterialNavigationDrawer {
   double elevation = 7;
   DartColorExpression indicator_color = 8;
   int32 selected_index = 11;
+  FlutterEdgeInsetsGeometryExpression tile_padding = 12;
 }
 
 // package:flutter/src/material/navigation_drawer.dart
@@ -2129,6 +2204,8 @@ message MaterialSnackBar {
   WidgetExpression content = 3;
   DartColorExpression background_color = 4;
   double elevation = 5;
+  FlutterEdgeInsetsGeometryExpression margin = 6;
+  FlutterEdgeInsetsGeometryExpression padding = 7;
   double width = 8;
   MaterialSnackBarBehavior.Enum behavior = 10;
   double action_overflow_threshold = 12;
@@ -2189,6 +2266,7 @@ message MaterialSwitchListTile {
   WidgetExpression subtitle = 27;
   bool is_three_line = 28;
   bool dense = 29;
+  FlutterEdgeInsetsGeometryExpression content_padding = 30;
   WidgetExpression secondary = 31;
   bool selected = 32;
   MaterialListTileControlAffinity.Enum control_affinity = 33;
@@ -2215,6 +2293,7 @@ message MaterialSwitchListTileNamedAdaptive {
   WidgetExpression subtitle = 28;
   bool is_three_line = 29;
   bool dense = 30;
+  FlutterEdgeInsetsGeometryExpression content_padding = 31;
   WidgetExpression secondary = 32;
   bool selected = 33;
   MaterialListTileControlAffinity.Enum control_affinity = 34;
@@ -2237,6 +2316,7 @@ message MaterialTab {
   FlutterKeyExpression key = 2;
   string text = 3;
   WidgetExpression icon = 4;
+  FlutterEdgeInsetsGeometryExpression icon_margin = 5;
   double height = 6;
   WidgetExpression child = 7;
 }
@@ -2246,12 +2326,15 @@ message MaterialTabBar {
   FlutterKeyExpression key = 2;
   repeated WidgetExpression tabs = 3;
   bool is_scrollable = 5;
+  FlutterEdgeInsetsGeometryExpression padding = 6;
   DartColorExpression indicator_color = 7;
   bool automatic_indicator_color_adjustment = 8;
   double indicator_weight = 9;
+  FlutterEdgeInsetsGeometryExpression indicator_padding = 10;
   MaterialTabBarIndicatorSize.Enum indicator_size = 12;
   DartColorExpression divider_color = 13;
   DartColorExpression label_color = 14;
+  FlutterEdgeInsetsGeometryExpression label_padding = 16;
   DartColorExpression unselected_label_color = 17;
   FlutterDragStartBehavior.Enum drag_start_behavior = 19;
   bool enable_feedback = 22;
@@ -2263,12 +2346,15 @@ message MaterialTabBarNamedSecondary {
   FlutterKeyExpression key = 2;
   repeated WidgetExpression tabs = 3;
   bool is_scrollable = 5;
+  FlutterEdgeInsetsGeometryExpression padding = 6;
   DartColorExpression indicator_color = 7;
   bool automatic_indicator_color_adjustment = 8;
   double indicator_weight = 9;
+  FlutterEdgeInsetsGeometryExpression indicator_padding = 10;
   MaterialTabBarIndicatorSize.Enum indicator_size = 12;
   DartColorExpression divider_color = 13;
   DartColorExpression label_color = 14;
+  FlutterEdgeInsetsGeometryExpression label_padding = 16;
   DartColorExpression unselected_label_color = 17;
   FlutterDragStartBehavior.Enum drag_start_behavior = 19;
   bool enable_feedback = 22;
@@ -2428,6 +2514,8 @@ message MaterialTooltip {
   FlutterKeyExpression key = 2;
   string message = 3;
   double height = 5;
+  FlutterEdgeInsetsGeometryExpression padding = 6;
+  FlutterEdgeInsetsGeometryExpression margin = 7;
   double vertical_offset = 8;
   bool prefer_below = 9;
   bool exclude_from_semantics = 10;
@@ -2449,6 +2537,7 @@ message MaterialTooltipVisibility {
 // package:flutter/src/material/user_accounts_drawer_header.dart
 message MaterialUserAccountsDrawerHeader {
   FlutterKeyExpression key = 2;
+  FlutterEdgeInsetsGeometryExpression margin = 4;
   WidgetExpression current_account_picture = 5;
   repeated WidgetExpression other_accounts_pictures = 6;
   WidgetExpression account_name = 9;
@@ -2840,6 +2929,13 @@ message FlutterOverflowBox {
 }
 
 // package:flutter/src/widgets/basic.dart
+message FlutterPadding {
+  FlutterKeyExpression key = 2;
+  FlutterEdgeInsetsGeometryExpression padding = 3;
+  WidgetExpression child = 4;
+}
+
+// package:flutter/src/widgets/basic.dart
 message FlutterPhysicalModel {
   FlutterKeyExpression key = 2;
   FlutterBoxShape.Enum shape = 3;
@@ -3022,6 +3118,13 @@ message FlutterSizedBoxNamedSquare {
 }
 
 // package:flutter/src/widgets/basic.dart
+message FlutterSliverPadding {
+  FlutterKeyExpression key = 2;
+  FlutterEdgeInsetsGeometryExpression padding = 3;
+  WidgetExpression sliver = 4;
+}
+
+// package:flutter/src/widgets/basic.dart
 message FlutterSliverToBoxAdapter {
   FlutterKeyExpression key = 2;
   WidgetExpression child = 3;
@@ -3093,9 +3196,11 @@ message FlutterWrap {
 // package:flutter/src/widgets/container.dart
 message FlutterContainer {
   FlutterKeyExpression key = 2;
+  FlutterEdgeInsetsGeometryExpression padding = 4;
   DartColorExpression color = 5;
   double width = 8;
   double height = 9;
+  FlutterEdgeInsetsGeometryExpression margin = 11;
   WidgetExpression child = 14;
   DartClip.Enum clip_behavior = 15;
 }
@@ -3358,9 +3463,11 @@ message FlutterImageIcon {
 // package:flutter/src/widgets/implicit_animations.dart
 message FlutterAnimatedContainer {
   FlutterKeyExpression key = 2;
+  FlutterEdgeInsetsGeometryExpression padding = 4;
   DartColorExpression color = 5;
   double width = 8;
   double height = 9;
+  FlutterEdgeInsetsGeometryExpression margin = 11;
   WidgetExpression child = 14;
   DartClip.Enum clip_behavior = 15;
   DartDurationExpression duration = 17;
@@ -3382,6 +3489,14 @@ message FlutterAnimatedOpacity {
   double opacity = 4;
   DartDurationExpression duration = 6;
   bool always_include_semantics = 8;
+}
+
+// package:flutter/src/widgets/implicit_animations.dart
+message FlutterAnimatedPadding {
+  FlutterKeyExpression key = 2;
+  FlutterEdgeInsetsGeometryExpression padding = 3;
+  WidgetExpression child = 4;
+  DartDurationExpression duration = 6;
 }
 
 // package:flutter/src/widgets/implicit_animations.dart
@@ -3728,6 +3843,7 @@ message FlutterGridViewNamedCount {
   bool reverse = 4;
   bool primary = 6;
   bool shrink_wrap = 8;
+  FlutterEdgeInsetsGeometryExpression padding = 9;
   int32 cross_axis_count = 10;
   double main_axis_spacing = 11;
   double cross_axis_spacing = 12;
@@ -3751,6 +3867,7 @@ message FlutterGridViewNamedExtent {
   bool reverse = 4;
   bool primary = 6;
   bool shrink_wrap = 8;
+  FlutterEdgeInsetsGeometryExpression padding = 9;
   double max_cross_axis_extent = 10;
   double main_axis_spacing = 11;
   double cross_axis_spacing = 12;
@@ -3774,6 +3891,7 @@ message FlutterListView {
   bool reverse = 4;
   bool primary = 6;
   bool shrink_wrap = 8;
+  FlutterEdgeInsetsGeometryExpression padding = 9;
   double item_extent = 10;
   WidgetExpression prototype_item = 11;
   bool add_automatic_keep_alives = 12;
@@ -3838,6 +3956,7 @@ message FlutterSingleChildScrollView {
   FlutterKeyExpression key = 2;
   FlutterAxis.Enum scroll_direction = 3;
   bool reverse = 4;
+  FlutterEdgeInsetsGeometryExpression padding = 5;
   bool primary = 6;
   WidgetExpression child = 9;
   FlutterDragStartBehavior.Enum drag_start_behavior = 10;
@@ -4351,135 +4470,138 @@ message WidgetExpression {
     FlutterOffstage flutter_offstage = 225;
     FlutterOpacity flutter_opacity = 226;
     FlutterOverflowBox flutter_overflow_box = 227;
-    FlutterPhysicalModel flutter_physical_model = 228;
-    FlutterPositioned flutter_positioned = 229;
-    FlutterPositionedNamedFill flutter_positioned_named_fill = 230;
-    FlutterPositionedNamedDirectional flutter_positioned_named_directional = 231;
-    FlutterPositionedDirectional flutter_positioned_directional = 232;
-    FlutterRawImage flutter_raw_image = 233;
-    FlutterRepaintBoundary flutter_repaint_boundary = 234;
-    FlutterRepaintBoundaryNamedWrap flutter_repaint_boundary_named_wrap = 235;
-    FlutterRotatedBox flutter_rotated_box = 236;
-    FlutterRow flutter_row = 237;
-    FlutterSemantics flutter_semantics = 238;
-    FlutterSizedBox flutter_sized_box = 239;
-    FlutterSizedBoxNamedExpand flutter_sized_box_named_expand = 240;
-    FlutterSizedBoxNamedShrink flutter_sized_box_named_shrink = 241;
-    FlutterSizedBoxNamedFromSize flutter_sized_box_named_from_size = 242;
-    FlutterSizedBoxNamedSquare flutter_sized_box_named_square = 243;
-    FlutterSliverToBoxAdapter flutter_sliver_to_box_adapter = 244;
-    FlutterStack flutter_stack = 245;
-    FlutterTransformNamedRotate flutter_transform_named_rotate = 246;
-    FlutterTransformNamedScale flutter_transform_named_scale = 247;
-    FlutterTransformNamedFlip flutter_transform_named_flip = 248;
-    FlutterUnconstrainedBox flutter_unconstrained_box = 249;
-    FlutterWrap flutter_wrap = 250;
-    FlutterContainer flutter_container = 251;
-    FlutterDefaultSelectionStyle flutter_default_selection_style = 252;
-    FlutterDefaultSelectionStyleNamedFallback flutter_default_selection_style_named_fallback = 253;
-    FlutterDefaultTextEditingShortcuts flutter_default_text_editing_shortcuts = 254;
-    FlutterDismissible flutter_dismissible = 255;
-    FlutterDisplayFeatureSubScreen flutter_display_feature_sub_screen = 256;
-    FlutterDraggable flutter_draggable = 257;
-    FlutterLongPressDraggable flutter_long_press_draggable = 258;
-    FlutterDraggableScrollableActuator flutter_draggable_scrollable_actuator = 259;
-    FlutterFadeInImageNamedAssetNetwork flutter_fade_in_image_named_asset_network = 260;
-    FlutterExcludeFocus flutter_exclude_focus = 261;
-    FlutterFocus flutter_focus = 262;
-    FlutterFocusScope flutter_focus_scope = 263;
-    FlutterExcludeFocusTraversal flutter_exclude_focus_traversal = 264;
-    FlutterFocusTraversalGroup flutter_focus_traversal_group = 265;
-    FlutterForm flutter_form = 266;
-    FlutterErrorWidgetNamedWithDetails flutter_error_widget_named_with_details = 267;
-    FlutterGestureDetector flutter_gesture_detector = 268;
-    FlutterRawGestureDetector flutter_raw_gesture_detector = 269;
-    FlutterGridPaper flutter_grid_paper = 270;
-    FlutterHeroMode flutter_hero_mode = 271;
-    FlutterIcon flutter_icon = 272;
-    FlutterImageNamedNetwork flutter_image_named_network = 273;
-    FlutterImageNamedAsset flutter_image_named_asset = 274;
-    FlutterImageIcon flutter_image_icon = 275;
-    FlutterAnimatedContainer flutter_animated_container = 276;
-    FlutterAnimatedFractionallySizedBox flutter_animated_fractionally_sized_box = 277;
-    FlutterAnimatedOpacity flutter_animated_opacity = 278;
-    FlutterAnimatedPhysicalModel flutter_animated_physical_model = 279;
-    FlutterAnimatedPositioned flutter_animated_positioned = 280;
-    FlutterAnimatedPositionedDirectional flutter_animated_positioned_directional = 281;
-    FlutterAnimatedRotation flutter_animated_rotation = 282;
-    FlutterAnimatedScale flutter_animated_scale = 283;
-    FlutterSliverAnimatedOpacity flutter_sliver_animated_opacity = 284;
-    FlutterInteractiveViewer flutter_interactive_viewer = 285;
-    FlutterListWheelScrollView flutter_list_wheel_scroll_view = 286;
-    FlutterLookupBoundary flutter_lookup_boundary = 287;
-    FlutterModalBarrier flutter_modal_barrier = 288;
-    FlutterNavigationToolbar flutter_navigation_toolbar = 289;
-    FlutterHeroControllerScopeNamedNone flutter_hero_controller_scope_named_none = 290;
-    FlutterNavigator flutter_navigator = 291;
-    FlutterNotificationListener flutter_notification_listener = 292;
-    FlutterOverflowBar flutter_overflow_bar = 293;
-    FlutterOverlay flutter_overlay = 294;
-    FlutterGlowingOverscrollIndicator flutter_glowing_overscroll_indicator = 295;
-    FlutterStretchingOverscrollIndicator flutter_stretching_overscroll_indicator = 296;
-    FlutterPageView flutter_page_view = 297;
-    FlutterPerformanceOverlay flutter_performance_overlay = 298;
-    FlutterPerformanceOverlayNamedAllEnabled flutter_performance_overlay_named_all_enabled = 299;
-    FlutterPlaceholder flutter_placeholder = 300;
-    FlutterAndroidView flutter_android_view = 301;
-    FlutterHtmlElementView flutter_html_element_view = 302;
-    FlutterUiKitView flutter_ui_kit_view = 303;
-    FlutterPrimaryScrollControllerNamedNone flutter_primary_scroll_controller_named_none = 304;
-    FlutterReorderableDelayedDragStartListener flutter_reorderable_delayed_drag_start_listener = 305;
-    FlutterReorderableDragStartListener flutter_reorderable_drag_start_listener = 306;
-    FlutterRestorationScope flutter_restoration_scope = 307;
-    FlutterRootRestorationScope flutter_root_restoration_scope = 308;
-    FlutterUnmanagedRestorationScope flutter_unmanaged_restoration_scope = 309;
-    FlutterSafeArea flutter_safe_area = 310;
-    FlutterSliverSafeArea flutter_sliver_safe_area = 311;
-    FlutterScrollNotificationObserver flutter_scroll_notification_observer = 312;
-    FlutterCustomScrollView flutter_custom_scroll_view = 313;
-    FlutterGridViewNamedCount flutter_grid_view_named_count = 314;
-    FlutterGridViewNamedExtent flutter_grid_view_named_extent = 315;
-    FlutterListView flutter_list_view = 316;
-    FlutterRawScrollbar flutter_raw_scrollbar = 317;
-    FlutterSelectionContainerNamedDisabled flutter_selection_container_named_disabled = 318;
-    FlutterSemanticsDebugger flutter_semantics_debugger = 319;
-    FlutterSharedAppData flutter_shared_app_data = 320;
-    FlutterShortcutRegistrar flutter_shortcut_registrar = 321;
-    FlutterSingleChildScrollView flutter_single_child_scroll_view = 322;
-    FlutterSizeChangedLayoutNotifier flutter_size_changed_layout_notifier = 323;
-    FlutterKeepAlive flutter_keep_alive = 324;
-    FlutterSliverConstrainedCrossAxis flutter_sliver_constrained_cross_axis = 325;
-    FlutterSliverCrossAxisExpanded flutter_sliver_cross_axis_expanded = 326;
-    FlutterSliverCrossAxisGroup flutter_sliver_cross_axis_group = 327;
-    FlutterSliverFixedExtentListNamedList flutter_sliver_fixed_extent_list_named_list = 328;
-    FlutterSliverGridNamedCount flutter_sliver_grid_named_count = 329;
-    FlutterSliverGridNamedExtent flutter_sliver_grid_named_extent = 330;
-    FlutterSliverIgnorePointer flutter_sliver_ignore_pointer = 331;
-    FlutterSliverListNamedList flutter_sliver_list_named_list = 332;
-    FlutterSliverMainAxisGroup flutter_sliver_main_axis_group = 333;
-    FlutterSliverOffstage flutter_sliver_offstage = 334;
-    FlutterSliverOpacity flutter_sliver_opacity = 335;
-    FlutterSliverFillRemaining flutter_sliver_fill_remaining = 336;
-    FlutterSliverPrototypeExtentListNamedList flutter_sliver_prototype_extent_list_named_list = 337;
-    FlutterSpacer flutter_spacer = 338;
-    FlutterTable flutter_table = 339;
-    FlutterTableCell flutter_table_cell = 340;
-    FlutterTapRegion flutter_tap_region = 341;
-    FlutterTapRegionSurface flutter_tap_region_surface = 342;
-    FlutterTextFieldTapRegion flutter_text_field_tap_region = 343;
-    FlutterDefaultTextStyleNamedFallback flutter_default_text_style_named_fallback = 344;
-    FlutterText flutter_text = 345;
-    FlutterTextSelectionGestureDetector flutter_text_selection_gesture_detector = 346;
-    FlutterTexture flutter_texture = 347;
-    FlutterTickerMode flutter_ticker_mode = 348;
-    FlutterTitle flutter_title = 349;
-    FlutterSliverVisibility flutter_sliver_visibility = 350;
-    FlutterSliverVisibilityNamedMaintain flutter_sliver_visibility_named_maintain = 351;
-    FlutterVisibility flutter_visibility = 352;
-    FlutterVisibilityNamedMaintain flutter_visibility_named_maintain = 353;
-    FlutterWidgetInspector flutter_widget_inspector = 354;
-    FlutterWillPopScope flutter_will_pop_scope = 355;
-    FlutterProjectMyApp flutter_project_my_app = 356;
-    FlutterProjectMyHomePage flutter_project_my_home_page = 357;
+    FlutterPadding flutter_padding = 228;
+    FlutterPhysicalModel flutter_physical_model = 229;
+    FlutterPositioned flutter_positioned = 230;
+    FlutterPositionedNamedFill flutter_positioned_named_fill = 231;
+    FlutterPositionedNamedDirectional flutter_positioned_named_directional = 232;
+    FlutterPositionedDirectional flutter_positioned_directional = 233;
+    FlutterRawImage flutter_raw_image = 234;
+    FlutterRepaintBoundary flutter_repaint_boundary = 235;
+    FlutterRepaintBoundaryNamedWrap flutter_repaint_boundary_named_wrap = 236;
+    FlutterRotatedBox flutter_rotated_box = 237;
+    FlutterRow flutter_row = 238;
+    FlutterSemantics flutter_semantics = 239;
+    FlutterSizedBox flutter_sized_box = 240;
+    FlutterSizedBoxNamedExpand flutter_sized_box_named_expand = 241;
+    FlutterSizedBoxNamedShrink flutter_sized_box_named_shrink = 242;
+    FlutterSizedBoxNamedFromSize flutter_sized_box_named_from_size = 243;
+    FlutterSizedBoxNamedSquare flutter_sized_box_named_square = 244;
+    FlutterSliverPadding flutter_sliver_padding = 245;
+    FlutterSliverToBoxAdapter flutter_sliver_to_box_adapter = 246;
+    FlutterStack flutter_stack = 247;
+    FlutterTransformNamedRotate flutter_transform_named_rotate = 248;
+    FlutterTransformNamedScale flutter_transform_named_scale = 249;
+    FlutterTransformNamedFlip flutter_transform_named_flip = 250;
+    FlutterUnconstrainedBox flutter_unconstrained_box = 251;
+    FlutterWrap flutter_wrap = 252;
+    FlutterContainer flutter_container = 253;
+    FlutterDefaultSelectionStyle flutter_default_selection_style = 254;
+    FlutterDefaultSelectionStyleNamedFallback flutter_default_selection_style_named_fallback = 255;
+    FlutterDefaultTextEditingShortcuts flutter_default_text_editing_shortcuts = 256;
+    FlutterDismissible flutter_dismissible = 257;
+    FlutterDisplayFeatureSubScreen flutter_display_feature_sub_screen = 258;
+    FlutterDraggable flutter_draggable = 259;
+    FlutterLongPressDraggable flutter_long_press_draggable = 260;
+    FlutterDraggableScrollableActuator flutter_draggable_scrollable_actuator = 261;
+    FlutterFadeInImageNamedAssetNetwork flutter_fade_in_image_named_asset_network = 262;
+    FlutterExcludeFocus flutter_exclude_focus = 263;
+    FlutterFocus flutter_focus = 264;
+    FlutterFocusScope flutter_focus_scope = 265;
+    FlutterExcludeFocusTraversal flutter_exclude_focus_traversal = 266;
+    FlutterFocusTraversalGroup flutter_focus_traversal_group = 267;
+    FlutterForm flutter_form = 268;
+    FlutterErrorWidgetNamedWithDetails flutter_error_widget_named_with_details = 269;
+    FlutterGestureDetector flutter_gesture_detector = 270;
+    FlutterRawGestureDetector flutter_raw_gesture_detector = 271;
+    FlutterGridPaper flutter_grid_paper = 272;
+    FlutterHeroMode flutter_hero_mode = 273;
+    FlutterIcon flutter_icon = 274;
+    FlutterImageNamedNetwork flutter_image_named_network = 275;
+    FlutterImageNamedAsset flutter_image_named_asset = 276;
+    FlutterImageIcon flutter_image_icon = 277;
+    FlutterAnimatedContainer flutter_animated_container = 278;
+    FlutterAnimatedFractionallySizedBox flutter_animated_fractionally_sized_box = 279;
+    FlutterAnimatedOpacity flutter_animated_opacity = 280;
+    FlutterAnimatedPadding flutter_animated_padding = 281;
+    FlutterAnimatedPhysicalModel flutter_animated_physical_model = 282;
+    FlutterAnimatedPositioned flutter_animated_positioned = 283;
+    FlutterAnimatedPositionedDirectional flutter_animated_positioned_directional = 284;
+    FlutterAnimatedRotation flutter_animated_rotation = 285;
+    FlutterAnimatedScale flutter_animated_scale = 286;
+    FlutterSliverAnimatedOpacity flutter_sliver_animated_opacity = 287;
+    FlutterInteractiveViewer flutter_interactive_viewer = 288;
+    FlutterListWheelScrollView flutter_list_wheel_scroll_view = 289;
+    FlutterLookupBoundary flutter_lookup_boundary = 290;
+    FlutterModalBarrier flutter_modal_barrier = 291;
+    FlutterNavigationToolbar flutter_navigation_toolbar = 292;
+    FlutterHeroControllerScopeNamedNone flutter_hero_controller_scope_named_none = 293;
+    FlutterNavigator flutter_navigator = 294;
+    FlutterNotificationListener flutter_notification_listener = 295;
+    FlutterOverflowBar flutter_overflow_bar = 296;
+    FlutterOverlay flutter_overlay = 297;
+    FlutterGlowingOverscrollIndicator flutter_glowing_overscroll_indicator = 298;
+    FlutterStretchingOverscrollIndicator flutter_stretching_overscroll_indicator = 299;
+    FlutterPageView flutter_page_view = 300;
+    FlutterPerformanceOverlay flutter_performance_overlay = 301;
+    FlutterPerformanceOverlayNamedAllEnabled flutter_performance_overlay_named_all_enabled = 302;
+    FlutterPlaceholder flutter_placeholder = 303;
+    FlutterAndroidView flutter_android_view = 304;
+    FlutterHtmlElementView flutter_html_element_view = 305;
+    FlutterUiKitView flutter_ui_kit_view = 306;
+    FlutterPrimaryScrollControllerNamedNone flutter_primary_scroll_controller_named_none = 307;
+    FlutterReorderableDelayedDragStartListener flutter_reorderable_delayed_drag_start_listener = 308;
+    FlutterReorderableDragStartListener flutter_reorderable_drag_start_listener = 309;
+    FlutterRestorationScope flutter_restoration_scope = 310;
+    FlutterRootRestorationScope flutter_root_restoration_scope = 311;
+    FlutterUnmanagedRestorationScope flutter_unmanaged_restoration_scope = 312;
+    FlutterSafeArea flutter_safe_area = 313;
+    FlutterSliverSafeArea flutter_sliver_safe_area = 314;
+    FlutterScrollNotificationObserver flutter_scroll_notification_observer = 315;
+    FlutterCustomScrollView flutter_custom_scroll_view = 316;
+    FlutterGridViewNamedCount flutter_grid_view_named_count = 317;
+    FlutterGridViewNamedExtent flutter_grid_view_named_extent = 318;
+    FlutterListView flutter_list_view = 319;
+    FlutterRawScrollbar flutter_raw_scrollbar = 320;
+    FlutterSelectionContainerNamedDisabled flutter_selection_container_named_disabled = 321;
+    FlutterSemanticsDebugger flutter_semantics_debugger = 322;
+    FlutterSharedAppData flutter_shared_app_data = 323;
+    FlutterShortcutRegistrar flutter_shortcut_registrar = 324;
+    FlutterSingleChildScrollView flutter_single_child_scroll_view = 325;
+    FlutterSizeChangedLayoutNotifier flutter_size_changed_layout_notifier = 326;
+    FlutterKeepAlive flutter_keep_alive = 327;
+    FlutterSliverConstrainedCrossAxis flutter_sliver_constrained_cross_axis = 328;
+    FlutterSliverCrossAxisExpanded flutter_sliver_cross_axis_expanded = 329;
+    FlutterSliverCrossAxisGroup flutter_sliver_cross_axis_group = 330;
+    FlutterSliverFixedExtentListNamedList flutter_sliver_fixed_extent_list_named_list = 331;
+    FlutterSliverGridNamedCount flutter_sliver_grid_named_count = 332;
+    FlutterSliverGridNamedExtent flutter_sliver_grid_named_extent = 333;
+    FlutterSliverIgnorePointer flutter_sliver_ignore_pointer = 334;
+    FlutterSliverListNamedList flutter_sliver_list_named_list = 335;
+    FlutterSliverMainAxisGroup flutter_sliver_main_axis_group = 336;
+    FlutterSliverOffstage flutter_sliver_offstage = 337;
+    FlutterSliverOpacity flutter_sliver_opacity = 338;
+    FlutterSliverFillRemaining flutter_sliver_fill_remaining = 339;
+    FlutterSliverPrototypeExtentListNamedList flutter_sliver_prototype_extent_list_named_list = 340;
+    FlutterSpacer flutter_spacer = 341;
+    FlutterTable flutter_table = 342;
+    FlutterTableCell flutter_table_cell = 343;
+    FlutterTapRegion flutter_tap_region = 344;
+    FlutterTapRegionSurface flutter_tap_region_surface = 345;
+    FlutterTextFieldTapRegion flutter_text_field_tap_region = 346;
+    FlutterDefaultTextStyleNamedFallback flutter_default_text_style_named_fallback = 347;
+    FlutterText flutter_text = 348;
+    FlutterTextSelectionGestureDetector flutter_text_selection_gesture_detector = 349;
+    FlutterTexture flutter_texture = 350;
+    FlutterTickerMode flutter_ticker_mode = 351;
+    FlutterTitle flutter_title = 352;
+    FlutterSliverVisibility flutter_sliver_visibility = 353;
+    FlutterSliverVisibilityNamedMaintain flutter_sliver_visibility_named_maintain = 354;
+    FlutterVisibility flutter_visibility = 355;
+    FlutterVisibilityNamedMaintain flutter_visibility_named_maintain = 356;
+    FlutterWidgetInspector flutter_widget_inspector = 357;
+    FlutterWillPopScope flutter_will_pop_scope = 358;
+    FlutterProjectMyApp flutter_project_my_app = 359;
+    FlutterProjectMyHomePage flutter_project_my_home_page = 360;
   }
 }
