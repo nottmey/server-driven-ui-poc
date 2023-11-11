@@ -47,7 +47,7 @@ extension TypeMappingCreationExtension on DartType {
       // TODO type parameter usages
       return null;
     } else if (this is FunctionType) {
-      // TODO function types
+      // TODO function types (e.g. builders or click handlers)
       return null;
     } else if (isDartCoreIterable || isDartCoreList) {
       assert(this is ParameterizedType);
@@ -79,11 +79,11 @@ extension TypeMappingCreationExtension on DartType {
           mappingStrategy: MappingStrategy.generateEnum,
         );
       } else if (name == 'Key' ||
-              name == 'Duration' ||
-              name == 'Color' ||
-              name == 'EdgeInsetsGeometry'
-          // TODO || name?.contains('Style') == true
-          ) {
+          name == 'Duration' ||
+          name == 'Color' ||
+          name == 'EdgeInsetsGeometry' ||
+          name?.contains('Style') == true) {
+        // TODO MaterialStateProperty
         return TypeMapping._of(
           dartType: this,
           messageName: '$libraryPrefix${name}Expression',

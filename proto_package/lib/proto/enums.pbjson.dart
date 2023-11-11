@@ -193,6 +193,25 @@ final $typed_data.Uint8List dartFilterQualityDescriptor = $convert.base64Decode(
     'ChFEYXJ0RmlsdGVyUXVhbGl0eSIvCgRFbnVtEggKBE5PTkUQABIHCgNMT1cQARIKCgZNRURJVU'
     '0QAhIICgRISUdIEAM=');
 
+@$core.Deprecated('Use dartFontStyleDescriptor instead')
+const DartFontStyle$json = {
+  '1': 'DartFontStyle',
+  '4': [DartFontStyle_Enum$json],
+};
+
+@$core.Deprecated('Use dartFontStyleDescriptor instead')
+const DartFontStyle_Enum$json = {
+  '1': 'Enum',
+  '2': [
+    {'1': 'NORMAL', '2': 0},
+    {'1': 'ITALIC', '2': 1},
+  ],
+};
+
+/// Descriptor for `DartFontStyle`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartFontStyleDescriptor = $convert.base64Decode(
+    'Cg1EYXJ0Rm9udFN0eWxlIh4KBEVudW0SCgoGTk9STUFMEAASCgoGSVRBTElDEAE=');
+
 @$core.Deprecated('Use dartStrokeCapDescriptor instead')
 const DartStrokeCap$json = {
   '1': 'DartStrokeCap',
@@ -258,6 +277,29 @@ final $typed_data.Uint8List dartTextBaselineDescriptor = $convert.base64Decode(
     'ChBEYXJ0VGV4dEJhc2VsaW5lIicKBEVudW0SDgoKQUxQSEFCRVRJQxAAEg8KC0lERU9HUkFQSE'
     'lDEAE=');
 
+@$core.Deprecated('Use dartTextDecorationStyleDescriptor instead')
+const DartTextDecorationStyle$json = {
+  '1': 'DartTextDecorationStyle',
+  '4': [DartTextDecorationStyle_Enum$json],
+};
+
+@$core.Deprecated('Use dartTextDecorationStyleDescriptor instead')
+const DartTextDecorationStyle_Enum$json = {
+  '1': 'Enum',
+  '2': [
+    {'1': 'SOLID', '2': 0},
+    {'1': 'DOUBLE', '2': 1},
+    {'1': 'DOTTED', '2': 2},
+    {'1': 'DASHED', '2': 3},
+    {'1': 'WAVY', '2': 4},
+  ],
+};
+
+/// Descriptor for `DartTextDecorationStyle`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartTextDecorationStyleDescriptor = $convert.base64Decode(
+    'ChdEYXJ0VGV4dERlY29yYXRpb25TdHlsZSI/CgRFbnVtEgkKBVNPTElEEAASCgoGRE9VQkxFEA'
+    'ESCgoGRE9UVEVEEAISCgoGREFTSEVEEAMSCAoEV0FWWRAE');
+
 @$core.Deprecated('Use dartTextDirectionDescriptor instead')
 const DartTextDirection$json = {
   '1': 'DartTextDirection',
@@ -276,6 +318,26 @@ const DartTextDirection_Enum$json = {
 /// Descriptor for `DartTextDirection`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List dartTextDirectionDescriptor = $convert.base64Decode(
     'ChFEYXJ0VGV4dERpcmVjdGlvbiIYCgRFbnVtEgcKA1JUTBAAEgcKA0xUUhAB');
+
+@$core.Deprecated('Use dartTextLeadingDistributionDescriptor instead')
+const DartTextLeadingDistribution$json = {
+  '1': 'DartTextLeadingDistribution',
+  '4': [DartTextLeadingDistribution_Enum$json],
+};
+
+@$core.Deprecated('Use dartTextLeadingDistributionDescriptor instead')
+const DartTextLeadingDistribution_Enum$json = {
+  '1': 'Enum',
+  '2': [
+    {'1': 'PROPORTIONAL', '2': 0},
+    {'1': 'EVEN', '2': 1},
+  ],
+};
+
+/// Descriptor for `DartTextLeadingDistribution`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartTextLeadingDistributionDescriptor = $convert.base64Decode(
+    'ChtEYXJ0VGV4dExlYWRpbmdEaXN0cmlidXRpb24iIgoERW51bRIQCgxQUk9QT1JUSU9OQUwQAB'
+    'IICgRFVkVOEAE=');
 
 @$core.Deprecated('Use flutterAutofillContextActionDescriptor instead')
 const FlutterAutofillContextAction$json = {

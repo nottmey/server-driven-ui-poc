@@ -184,6 +184,8 @@ $kGeneratedFileHeader
 import 'dart:core' as core;
 import 'package:proto_package/proto/types.pb.dart' as types;
 
+import 'package:proto_package/builders/evaluate_enum_expressions.sdu.dart' as enums;
+
 ${imports.sortedBy((i) => i).join('\n')}
 
 T $kThrowMissing<T>(core.String field) {

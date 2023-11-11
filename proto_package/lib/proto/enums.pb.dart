@@ -247,6 +247,39 @@ class DartFilterQuality extends $pb.GeneratedMessage {
 }
 
 /// dart:ui
+class DartFontStyle extends $pb.GeneratedMessage {
+  factory DartFontStyle() => create();
+  DartFontStyle._() : super();
+  factory DartFontStyle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DartFontStyle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DartFontStyle', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DartFontStyle clone() => DartFontStyle()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DartFontStyle copyWith(void Function(DartFontStyle) updates) => super.copyWith((message) => updates(message as DartFontStyle)) as DartFontStyle;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DartFontStyle create() => DartFontStyle._();
+  DartFontStyle createEmptyInstance() => create();
+  static $pb.PbList<DartFontStyle> createRepeated() => $pb.PbList<DartFontStyle>();
+  @$core.pragma('dart2js:noInline')
+  static DartFontStyle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DartFontStyle>(create);
+  static DartFontStyle? _defaultInstance;
+}
+
+/// dart:ui
 class DartStrokeCap extends $pb.GeneratedMessage {
   factory DartStrokeCap() => create();
   DartStrokeCap._() : super();
@@ -346,6 +379,39 @@ class DartTextBaseline extends $pb.GeneratedMessage {
 }
 
 /// dart:ui
+class DartTextDecorationStyle extends $pb.GeneratedMessage {
+  factory DartTextDecorationStyle() => create();
+  DartTextDecorationStyle._() : super();
+  factory DartTextDecorationStyle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DartTextDecorationStyle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DartTextDecorationStyle', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DartTextDecorationStyle clone() => DartTextDecorationStyle()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DartTextDecorationStyle copyWith(void Function(DartTextDecorationStyle) updates) => super.copyWith((message) => updates(message as DartTextDecorationStyle)) as DartTextDecorationStyle;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DartTextDecorationStyle create() => DartTextDecorationStyle._();
+  DartTextDecorationStyle createEmptyInstance() => create();
+  static $pb.PbList<DartTextDecorationStyle> createRepeated() => $pb.PbList<DartTextDecorationStyle>();
+  @$core.pragma('dart2js:noInline')
+  static DartTextDecorationStyle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DartTextDecorationStyle>(create);
+  static DartTextDecorationStyle? _defaultInstance;
+}
+
+/// dart:ui
 class DartTextDirection extends $pb.GeneratedMessage {
   factory DartTextDirection() => create();
   DartTextDirection._() : super();
@@ -376,6 +442,39 @@ class DartTextDirection extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static DartTextDirection getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DartTextDirection>(create);
   static DartTextDirection? _defaultInstance;
+}
+
+/// dart:ui
+class DartTextLeadingDistribution extends $pb.GeneratedMessage {
+  factory DartTextLeadingDistribution() => create();
+  DartTextLeadingDistribution._() : super();
+  factory DartTextLeadingDistribution.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DartTextLeadingDistribution.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DartTextLeadingDistribution', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DartTextLeadingDistribution clone() => DartTextLeadingDistribution()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DartTextLeadingDistribution copyWith(void Function(DartTextLeadingDistribution) updates) => super.copyWith((message) => updates(message as DartTextLeadingDistribution)) as DartTextLeadingDistribution;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DartTextLeadingDistribution create() => DartTextLeadingDistribution._();
+  DartTextLeadingDistribution createEmptyInstance() => create();
+  static $pb.PbList<DartTextLeadingDistribution> createRepeated() => $pb.PbList<DartTextLeadingDistribution>();
+  @$core.pragma('dart2js:noInline')
+  static DartTextLeadingDistribution getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DartTextLeadingDistribution>(create);
+  static DartTextLeadingDistribution? _defaultInstance;
 }
 
 /// package:flutter/src/widgets/autofill.dart

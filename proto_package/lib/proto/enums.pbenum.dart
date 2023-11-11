@@ -188,6 +188,21 @@ class DartFilterQuality_Enum extends $pb.ProtobufEnum {
   const DartFilterQuality_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
+class DartFontStyle_Enum extends $pb.ProtobufEnum {
+  static const DartFontStyle_Enum NORMAL = DartFontStyle_Enum._(0, _omitEnumNames ? '' : 'NORMAL');
+  static const DartFontStyle_Enum ITALIC = DartFontStyle_Enum._(1, _omitEnumNames ? '' : 'ITALIC');
+
+  static const $core.List<DartFontStyle_Enum> values = <DartFontStyle_Enum> [
+    NORMAL,
+    ITALIC,
+  ];
+
+  static final $core.Map<$core.int, DartFontStyle_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static DartFontStyle_Enum? valueOf($core.int value) => _byValue[value];
+
+  const DartFontStyle_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
 class DartStrokeCap_Enum extends $pb.ProtobufEnum {
   static const DartStrokeCap_Enum BUTT = DartStrokeCap_Enum._(0, _omitEnumNames ? '' : 'BUTT');
   static const DartStrokeCap_Enum ROUND = DartStrokeCap_Enum._(1, _omitEnumNames ? '' : 'ROUND');
@@ -243,6 +258,27 @@ class DartTextBaseline_Enum extends $pb.ProtobufEnum {
   const DartTextBaseline_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
+class DartTextDecorationStyle_Enum extends $pb.ProtobufEnum {
+  static const DartTextDecorationStyle_Enum SOLID = DartTextDecorationStyle_Enum._(0, _omitEnumNames ? '' : 'SOLID');
+  static const DartTextDecorationStyle_Enum DOUBLE = DartTextDecorationStyle_Enum._(1, _omitEnumNames ? '' : 'DOUBLE');
+  static const DartTextDecorationStyle_Enum DOTTED = DartTextDecorationStyle_Enum._(2, _omitEnumNames ? '' : 'DOTTED');
+  static const DartTextDecorationStyle_Enum DASHED = DartTextDecorationStyle_Enum._(3, _omitEnumNames ? '' : 'DASHED');
+  static const DartTextDecorationStyle_Enum WAVY = DartTextDecorationStyle_Enum._(4, _omitEnumNames ? '' : 'WAVY');
+
+  static const $core.List<DartTextDecorationStyle_Enum> values = <DartTextDecorationStyle_Enum> [
+    SOLID,
+    DOUBLE,
+    DOTTED,
+    DASHED,
+    WAVY,
+  ];
+
+  static final $core.Map<$core.int, DartTextDecorationStyle_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static DartTextDecorationStyle_Enum? valueOf($core.int value) => _byValue[value];
+
+  const DartTextDecorationStyle_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
 class DartTextDirection_Enum extends $pb.ProtobufEnum {
   static const DartTextDirection_Enum RTL = DartTextDirection_Enum._(0, _omitEnumNames ? '' : 'RTL');
   static const DartTextDirection_Enum LTR = DartTextDirection_Enum._(1, _omitEnumNames ? '' : 'LTR');
@@ -256,6 +292,21 @@ class DartTextDirection_Enum extends $pb.ProtobufEnum {
   static DartTextDirection_Enum? valueOf($core.int value) => _byValue[value];
 
   const DartTextDirection_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class DartTextLeadingDistribution_Enum extends $pb.ProtobufEnum {
+  static const DartTextLeadingDistribution_Enum PROPORTIONAL = DartTextLeadingDistribution_Enum._(0, _omitEnumNames ? '' : 'PROPORTIONAL');
+  static const DartTextLeadingDistribution_Enum EVEN = DartTextLeadingDistribution_Enum._(1, _omitEnumNames ? '' : 'EVEN');
+
+  static const $core.List<DartTextLeadingDistribution_Enum> values = <DartTextLeadingDistribution_Enum> [
+    PROPORTIONAL,
+    EVEN,
+  ];
+
+  static final $core.Map<$core.int, DartTextLeadingDistribution_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static DartTextLeadingDistribution_Enum? valueOf($core.int value) => _byValue[value];
+
+  const DartTextLeadingDistribution_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
 class FlutterAutofillContextAction_Enum extends $pb.ProtobufEnum {

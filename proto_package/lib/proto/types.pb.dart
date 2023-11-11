@@ -13,6 +13,8 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
+import 'enums.pbenum.dart' as $1;
+
 /// package:flutter/src/cupertino/colors.dart
 class CupertinoDynamicColor extends $pb.GeneratedMessage {
   factory CupertinoDynamicColor({
@@ -1571,6 +1573,922 @@ class FlutterUniqueKey extends $pb.GeneratedMessage {
   static FlutterUniqueKey? _defaultInstance;
 }
 
+/// package:flutter/src/painting/strut_style.dart
+class FlutterStrutStyle extends $pb.GeneratedMessage {
+  factory FlutterStrutStyle({
+    $core.String? fontFamily,
+    $core.Iterable<$core.String>? fontFamilyFallback,
+    $core.double? fontSize,
+    $core.double? height,
+    $1.DartTextLeadingDistribution_Enum? leadingDistribution,
+    $core.double? leading,
+    $1.DartFontStyle_Enum? fontStyle,
+    $core.bool? forceStrutHeight,
+    $core.String? debugLabel,
+    $core.String? package,
+  }) {
+    final $result = create();
+    if (fontFamily != null) {
+      $result.fontFamily = fontFamily;
+    }
+    if (fontFamilyFallback != null) {
+      $result.fontFamilyFallback.addAll(fontFamilyFallback);
+    }
+    if (fontSize != null) {
+      $result.fontSize = fontSize;
+    }
+    if (height != null) {
+      $result.height = height;
+    }
+    if (leadingDistribution != null) {
+      $result.leadingDistribution = leadingDistribution;
+    }
+    if (leading != null) {
+      $result.leading = leading;
+    }
+    if (fontStyle != null) {
+      $result.fontStyle = fontStyle;
+    }
+    if (forceStrutHeight != null) {
+      $result.forceStrutHeight = forceStrutHeight;
+    }
+    if (debugLabel != null) {
+      $result.debugLabel = debugLabel;
+    }
+    if (package != null) {
+      $result.package = package;
+    }
+    return $result;
+  }
+  FlutterStrutStyle._() : super();
+  factory FlutterStrutStyle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterStrutStyle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterStrutStyle', createEmptyInstance: create)
+    ..aOS(2, _omitFieldNames ? '' : 'fontFamily')
+    ..pPS(3, _omitFieldNames ? '' : 'fontFamilyFallback')
+    ..a<$core.double>(4, _omitFieldNames ? '' : 'fontSize', $pb.PbFieldType.OD)
+    ..a<$core.double>(5, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
+    ..e<$1.DartTextLeadingDistribution_Enum>(6, _omitFieldNames ? '' : 'leadingDistribution', $pb.PbFieldType.OE, defaultOrMaker: $1.DartTextLeadingDistribution_Enum.PROPORTIONAL, valueOf: $1.DartTextLeadingDistribution_Enum.valueOf, enumValues: $1.DartTextLeadingDistribution_Enum.values)
+    ..a<$core.double>(7, _omitFieldNames ? '' : 'leading', $pb.PbFieldType.OD)
+    ..e<$1.DartFontStyle_Enum>(9, _omitFieldNames ? '' : 'fontStyle', $pb.PbFieldType.OE, defaultOrMaker: $1.DartFontStyle_Enum.NORMAL, valueOf: $1.DartFontStyle_Enum.valueOf, enumValues: $1.DartFontStyle_Enum.values)
+    ..aOB(10, _omitFieldNames ? '' : 'forceStrutHeight')
+    ..aOS(11, _omitFieldNames ? '' : 'debugLabel')
+    ..aOS(12, _omitFieldNames ? '' : 'package')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterStrutStyle clone() => FlutterStrutStyle()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterStrutStyle copyWith(void Function(FlutterStrutStyle) updates) => super.copyWith((message) => updates(message as FlutterStrutStyle)) as FlutterStrutStyle;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterStrutStyle create() => FlutterStrutStyle._();
+  FlutterStrutStyle createEmptyInstance() => create();
+  static $pb.PbList<FlutterStrutStyle> createRepeated() => $pb.PbList<FlutterStrutStyle>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterStrutStyle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterStrutStyle>(create);
+  static FlutterStrutStyle? _defaultInstance;
+
+  @$pb.TagNumber(2)
+  $core.String get fontFamily => $_getSZ(0);
+  @$pb.TagNumber(2)
+  set fontFamily($core.String v) { $_setString(0, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasFontFamily() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearFontFamily() => clearField(2);
+
+  @$pb.TagNumber(3)
+  $core.List<$core.String> get fontFamilyFallback => $_getList(1);
+
+  @$pb.TagNumber(4)
+  $core.double get fontSize => $_getN(2);
+  @$pb.TagNumber(4)
+  set fontSize($core.double v) { $_setDouble(2, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasFontSize() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearFontSize() => clearField(4);
+
+  @$pb.TagNumber(5)
+  $core.double get height => $_getN(3);
+  @$pb.TagNumber(5)
+  set height($core.double v) { $_setDouble(3, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasHeight() => $_has(3);
+  @$pb.TagNumber(5)
+  void clearHeight() => clearField(5);
+
+  @$pb.TagNumber(6)
+  $1.DartTextLeadingDistribution_Enum get leadingDistribution => $_getN(4);
+  @$pb.TagNumber(6)
+  set leadingDistribution($1.DartTextLeadingDistribution_Enum v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasLeadingDistribution() => $_has(4);
+  @$pb.TagNumber(6)
+  void clearLeadingDistribution() => clearField(6);
+
+  @$pb.TagNumber(7)
+  $core.double get leading => $_getN(5);
+  @$pb.TagNumber(7)
+  set leading($core.double v) { $_setDouble(5, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasLeading() => $_has(5);
+  @$pb.TagNumber(7)
+  void clearLeading() => clearField(7);
+
+  @$pb.TagNumber(9)
+  $1.DartFontStyle_Enum get fontStyle => $_getN(6);
+  @$pb.TagNumber(9)
+  set fontStyle($1.DartFontStyle_Enum v) { setField(9, v); }
+  @$pb.TagNumber(9)
+  $core.bool hasFontStyle() => $_has(6);
+  @$pb.TagNumber(9)
+  void clearFontStyle() => clearField(9);
+
+  @$pb.TagNumber(10)
+  $core.bool get forceStrutHeight => $_getBF(7);
+  @$pb.TagNumber(10)
+  set forceStrutHeight($core.bool v) { $_setBool(7, v); }
+  @$pb.TagNumber(10)
+  $core.bool hasForceStrutHeight() => $_has(7);
+  @$pb.TagNumber(10)
+  void clearForceStrutHeight() => clearField(10);
+
+  @$pb.TagNumber(11)
+  $core.String get debugLabel => $_getSZ(8);
+  @$pb.TagNumber(11)
+  set debugLabel($core.String v) { $_setString(8, v); }
+  @$pb.TagNumber(11)
+  $core.bool hasDebugLabel() => $_has(8);
+  @$pb.TagNumber(11)
+  void clearDebugLabel() => clearField(11);
+
+  @$pb.TagNumber(12)
+  $core.String get package => $_getSZ(9);
+  @$pb.TagNumber(12)
+  set package($core.String v) { $_setString(9, v); }
+  @$pb.TagNumber(12)
+  $core.bool hasPackage() => $_has(9);
+  @$pb.TagNumber(12)
+  void clearPackage() => clearField(12);
+}
+
+/// package:flutter/src/painting/strut_style.dart
+class FlutterStrutStyleNamedFromTextStyle extends $pb.GeneratedMessage {
+  factory FlutterStrutStyleNamedFromTextStyle({
+    FlutterTextStyleExpression? textStyle,
+    $core.String? fontFamily,
+    $core.Iterable<$core.String>? fontFamilyFallback,
+    $core.double? fontSize,
+    $core.double? height,
+    $1.DartTextLeadingDistribution_Enum? leadingDistribution,
+    $core.double? leading,
+    $1.DartFontStyle_Enum? fontStyle,
+    $core.bool? forceStrutHeight,
+    $core.String? debugLabel,
+    $core.String? package,
+  }) {
+    final $result = create();
+    if (textStyle != null) {
+      $result.textStyle = textStyle;
+    }
+    if (fontFamily != null) {
+      $result.fontFamily = fontFamily;
+    }
+    if (fontFamilyFallback != null) {
+      $result.fontFamilyFallback.addAll(fontFamilyFallback);
+    }
+    if (fontSize != null) {
+      $result.fontSize = fontSize;
+    }
+    if (height != null) {
+      $result.height = height;
+    }
+    if (leadingDistribution != null) {
+      $result.leadingDistribution = leadingDistribution;
+    }
+    if (leading != null) {
+      $result.leading = leading;
+    }
+    if (fontStyle != null) {
+      $result.fontStyle = fontStyle;
+    }
+    if (forceStrutHeight != null) {
+      $result.forceStrutHeight = forceStrutHeight;
+    }
+    if (debugLabel != null) {
+      $result.debugLabel = debugLabel;
+    }
+    if (package != null) {
+      $result.package = package;
+    }
+    return $result;
+  }
+  FlutterStrutStyleNamedFromTextStyle._() : super();
+  factory FlutterStrutStyleNamedFromTextStyle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterStrutStyleNamedFromTextStyle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterStrutStyleNamedFromTextStyle', createEmptyInstance: create)
+    ..aOM<FlutterTextStyleExpression>(2, _omitFieldNames ? '' : 'textStyle', subBuilder: FlutterTextStyleExpression.create)
+    ..aOS(3, _omitFieldNames ? '' : 'fontFamily')
+    ..pPS(4, _omitFieldNames ? '' : 'fontFamilyFallback')
+    ..a<$core.double>(5, _omitFieldNames ? '' : 'fontSize', $pb.PbFieldType.OD)
+    ..a<$core.double>(6, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
+    ..e<$1.DartTextLeadingDistribution_Enum>(7, _omitFieldNames ? '' : 'leadingDistribution', $pb.PbFieldType.OE, defaultOrMaker: $1.DartTextLeadingDistribution_Enum.PROPORTIONAL, valueOf: $1.DartTextLeadingDistribution_Enum.valueOf, enumValues: $1.DartTextLeadingDistribution_Enum.values)
+    ..a<$core.double>(8, _omitFieldNames ? '' : 'leading', $pb.PbFieldType.OD)
+    ..e<$1.DartFontStyle_Enum>(10, _omitFieldNames ? '' : 'fontStyle', $pb.PbFieldType.OE, defaultOrMaker: $1.DartFontStyle_Enum.NORMAL, valueOf: $1.DartFontStyle_Enum.valueOf, enumValues: $1.DartFontStyle_Enum.values)
+    ..aOB(11, _omitFieldNames ? '' : 'forceStrutHeight')
+    ..aOS(12, _omitFieldNames ? '' : 'debugLabel')
+    ..aOS(13, _omitFieldNames ? '' : 'package')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterStrutStyleNamedFromTextStyle clone() => FlutterStrutStyleNamedFromTextStyle()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterStrutStyleNamedFromTextStyle copyWith(void Function(FlutterStrutStyleNamedFromTextStyle) updates) => super.copyWith((message) => updates(message as FlutterStrutStyleNamedFromTextStyle)) as FlutterStrutStyleNamedFromTextStyle;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterStrutStyleNamedFromTextStyle create() => FlutterStrutStyleNamedFromTextStyle._();
+  FlutterStrutStyleNamedFromTextStyle createEmptyInstance() => create();
+  static $pb.PbList<FlutterStrutStyleNamedFromTextStyle> createRepeated() => $pb.PbList<FlutterStrutStyleNamedFromTextStyle>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterStrutStyleNamedFromTextStyle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterStrutStyleNamedFromTextStyle>(create);
+  static FlutterStrutStyleNamedFromTextStyle? _defaultInstance;
+
+  @$pb.TagNumber(2)
+  FlutterTextStyleExpression get textStyle => $_getN(0);
+  @$pb.TagNumber(2)
+  set textStyle(FlutterTextStyleExpression v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasTextStyle() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearTextStyle() => clearField(2);
+  @$pb.TagNumber(2)
+  FlutterTextStyleExpression ensureTextStyle() => $_ensure(0);
+
+  @$pb.TagNumber(3)
+  $core.String get fontFamily => $_getSZ(1);
+  @$pb.TagNumber(3)
+  set fontFamily($core.String v) { $_setString(1, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasFontFamily() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearFontFamily() => clearField(3);
+
+  @$pb.TagNumber(4)
+  $core.List<$core.String> get fontFamilyFallback => $_getList(2);
+
+  @$pb.TagNumber(5)
+  $core.double get fontSize => $_getN(3);
+  @$pb.TagNumber(5)
+  set fontSize($core.double v) { $_setDouble(3, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasFontSize() => $_has(3);
+  @$pb.TagNumber(5)
+  void clearFontSize() => clearField(5);
+
+  @$pb.TagNumber(6)
+  $core.double get height => $_getN(4);
+  @$pb.TagNumber(6)
+  set height($core.double v) { $_setDouble(4, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasHeight() => $_has(4);
+  @$pb.TagNumber(6)
+  void clearHeight() => clearField(6);
+
+  @$pb.TagNumber(7)
+  $1.DartTextLeadingDistribution_Enum get leadingDistribution => $_getN(5);
+  @$pb.TagNumber(7)
+  set leadingDistribution($1.DartTextLeadingDistribution_Enum v) { setField(7, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasLeadingDistribution() => $_has(5);
+  @$pb.TagNumber(7)
+  void clearLeadingDistribution() => clearField(7);
+
+  @$pb.TagNumber(8)
+  $core.double get leading => $_getN(6);
+  @$pb.TagNumber(8)
+  set leading($core.double v) { $_setDouble(6, v); }
+  @$pb.TagNumber(8)
+  $core.bool hasLeading() => $_has(6);
+  @$pb.TagNumber(8)
+  void clearLeading() => clearField(8);
+
+  @$pb.TagNumber(10)
+  $1.DartFontStyle_Enum get fontStyle => $_getN(7);
+  @$pb.TagNumber(10)
+  set fontStyle($1.DartFontStyle_Enum v) { setField(10, v); }
+  @$pb.TagNumber(10)
+  $core.bool hasFontStyle() => $_has(7);
+  @$pb.TagNumber(10)
+  void clearFontStyle() => clearField(10);
+
+  @$pb.TagNumber(11)
+  $core.bool get forceStrutHeight => $_getBF(8);
+  @$pb.TagNumber(11)
+  set forceStrutHeight($core.bool v) { $_setBool(8, v); }
+  @$pb.TagNumber(11)
+  $core.bool hasForceStrutHeight() => $_has(8);
+  @$pb.TagNumber(11)
+  void clearForceStrutHeight() => clearField(11);
+
+  @$pb.TagNumber(12)
+  $core.String get debugLabel => $_getSZ(9);
+  @$pb.TagNumber(12)
+  set debugLabel($core.String v) { $_setString(9, v); }
+  @$pb.TagNumber(12)
+  $core.bool hasDebugLabel() => $_has(9);
+  @$pb.TagNumber(12)
+  void clearDebugLabel() => clearField(12);
+
+  @$pb.TagNumber(13)
+  $core.String get package => $_getSZ(10);
+  @$pb.TagNumber(13)
+  set package($core.String v) { $_setString(10, v); }
+  @$pb.TagNumber(13)
+  $core.bool hasPackage() => $_has(10);
+  @$pb.TagNumber(13)
+  void clearPackage() => clearField(13);
+}
+
+/// package:flutter/src/services/system_chrome.dart
+class FlutterSystemUiOverlayStyle extends $pb.GeneratedMessage {
+  factory FlutterSystemUiOverlayStyle({
+    DartColorExpression? systemNavigationBarColor,
+    DartColorExpression? systemNavigationBarDividerColor,
+    $1.DartBrightness_Enum? systemNavigationBarIconBrightness,
+    $core.bool? systemNavigationBarContrastEnforced,
+    DartColorExpression? statusBarColor,
+    $1.DartBrightness_Enum? statusBarBrightness,
+    $1.DartBrightness_Enum? statusBarIconBrightness,
+    $core.bool? systemStatusBarContrastEnforced,
+  }) {
+    final $result = create();
+    if (systemNavigationBarColor != null) {
+      $result.systemNavigationBarColor = systemNavigationBarColor;
+    }
+    if (systemNavigationBarDividerColor != null) {
+      $result.systemNavigationBarDividerColor = systemNavigationBarDividerColor;
+    }
+    if (systemNavigationBarIconBrightness != null) {
+      $result.systemNavigationBarIconBrightness = systemNavigationBarIconBrightness;
+    }
+    if (systemNavigationBarContrastEnforced != null) {
+      $result.systemNavigationBarContrastEnforced = systemNavigationBarContrastEnforced;
+    }
+    if (statusBarColor != null) {
+      $result.statusBarColor = statusBarColor;
+    }
+    if (statusBarBrightness != null) {
+      $result.statusBarBrightness = statusBarBrightness;
+    }
+    if (statusBarIconBrightness != null) {
+      $result.statusBarIconBrightness = statusBarIconBrightness;
+    }
+    if (systemStatusBarContrastEnforced != null) {
+      $result.systemStatusBarContrastEnforced = systemStatusBarContrastEnforced;
+    }
+    return $result;
+  }
+  FlutterSystemUiOverlayStyle._() : super();
+  factory FlutterSystemUiOverlayStyle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterSystemUiOverlayStyle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterSystemUiOverlayStyle', createEmptyInstance: create)
+    ..aOM<DartColorExpression>(2, _omitFieldNames ? '' : 'systemNavigationBarColor', subBuilder: DartColorExpression.create)
+    ..aOM<DartColorExpression>(3, _omitFieldNames ? '' : 'systemNavigationBarDividerColor', subBuilder: DartColorExpression.create)
+    ..e<$1.DartBrightness_Enum>(4, _omitFieldNames ? '' : 'systemNavigationBarIconBrightness', $pb.PbFieldType.OE, defaultOrMaker: $1.DartBrightness_Enum.DARK, valueOf: $1.DartBrightness_Enum.valueOf, enumValues: $1.DartBrightness_Enum.values)
+    ..aOB(5, _omitFieldNames ? '' : 'systemNavigationBarContrastEnforced')
+    ..aOM<DartColorExpression>(6, _omitFieldNames ? '' : 'statusBarColor', subBuilder: DartColorExpression.create)
+    ..e<$1.DartBrightness_Enum>(7, _omitFieldNames ? '' : 'statusBarBrightness', $pb.PbFieldType.OE, defaultOrMaker: $1.DartBrightness_Enum.DARK, valueOf: $1.DartBrightness_Enum.valueOf, enumValues: $1.DartBrightness_Enum.values)
+    ..e<$1.DartBrightness_Enum>(8, _omitFieldNames ? '' : 'statusBarIconBrightness', $pb.PbFieldType.OE, defaultOrMaker: $1.DartBrightness_Enum.DARK, valueOf: $1.DartBrightness_Enum.valueOf, enumValues: $1.DartBrightness_Enum.values)
+    ..aOB(9, _omitFieldNames ? '' : 'systemStatusBarContrastEnforced')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterSystemUiOverlayStyle clone() => FlutterSystemUiOverlayStyle()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterSystemUiOverlayStyle copyWith(void Function(FlutterSystemUiOverlayStyle) updates) => super.copyWith((message) => updates(message as FlutterSystemUiOverlayStyle)) as FlutterSystemUiOverlayStyle;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterSystemUiOverlayStyle create() => FlutterSystemUiOverlayStyle._();
+  FlutterSystemUiOverlayStyle createEmptyInstance() => create();
+  static $pb.PbList<FlutterSystemUiOverlayStyle> createRepeated() => $pb.PbList<FlutterSystemUiOverlayStyle>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterSystemUiOverlayStyle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterSystemUiOverlayStyle>(create);
+  static FlutterSystemUiOverlayStyle? _defaultInstance;
+
+  @$pb.TagNumber(2)
+  DartColorExpression get systemNavigationBarColor => $_getN(0);
+  @$pb.TagNumber(2)
+  set systemNavigationBarColor(DartColorExpression v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasSystemNavigationBarColor() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearSystemNavigationBarColor() => clearField(2);
+  @$pb.TagNumber(2)
+  DartColorExpression ensureSystemNavigationBarColor() => $_ensure(0);
+
+  @$pb.TagNumber(3)
+  DartColorExpression get systemNavigationBarDividerColor => $_getN(1);
+  @$pb.TagNumber(3)
+  set systemNavigationBarDividerColor(DartColorExpression v) { setField(3, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasSystemNavigationBarDividerColor() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearSystemNavigationBarDividerColor() => clearField(3);
+  @$pb.TagNumber(3)
+  DartColorExpression ensureSystemNavigationBarDividerColor() => $_ensure(1);
+
+  @$pb.TagNumber(4)
+  $1.DartBrightness_Enum get systemNavigationBarIconBrightness => $_getN(2);
+  @$pb.TagNumber(4)
+  set systemNavigationBarIconBrightness($1.DartBrightness_Enum v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasSystemNavigationBarIconBrightness() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearSystemNavigationBarIconBrightness() => clearField(4);
+
+  @$pb.TagNumber(5)
+  $core.bool get systemNavigationBarContrastEnforced => $_getBF(3);
+  @$pb.TagNumber(5)
+  set systemNavigationBarContrastEnforced($core.bool v) { $_setBool(3, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasSystemNavigationBarContrastEnforced() => $_has(3);
+  @$pb.TagNumber(5)
+  void clearSystemNavigationBarContrastEnforced() => clearField(5);
+
+  @$pb.TagNumber(6)
+  DartColorExpression get statusBarColor => $_getN(4);
+  @$pb.TagNumber(6)
+  set statusBarColor(DartColorExpression v) { setField(6, v); }
+  @$pb.TagNumber(6)
+  $core.bool hasStatusBarColor() => $_has(4);
+  @$pb.TagNumber(6)
+  void clearStatusBarColor() => clearField(6);
+  @$pb.TagNumber(6)
+  DartColorExpression ensureStatusBarColor() => $_ensure(4);
+
+  @$pb.TagNumber(7)
+  $1.DartBrightness_Enum get statusBarBrightness => $_getN(5);
+  @$pb.TagNumber(7)
+  set statusBarBrightness($1.DartBrightness_Enum v) { setField(7, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasStatusBarBrightness() => $_has(5);
+  @$pb.TagNumber(7)
+  void clearStatusBarBrightness() => clearField(7);
+
+  @$pb.TagNumber(8)
+  $1.DartBrightness_Enum get statusBarIconBrightness => $_getN(6);
+  @$pb.TagNumber(8)
+  set statusBarIconBrightness($1.DartBrightness_Enum v) { setField(8, v); }
+  @$pb.TagNumber(8)
+  $core.bool hasStatusBarIconBrightness() => $_has(6);
+  @$pb.TagNumber(8)
+  void clearStatusBarIconBrightness() => clearField(8);
+
+  @$pb.TagNumber(9)
+  $core.bool get systemStatusBarContrastEnforced => $_getBF(7);
+  @$pb.TagNumber(9)
+  set systemStatusBarContrastEnforced($core.bool v) { $_setBool(7, v); }
+  @$pb.TagNumber(9)
+  $core.bool hasSystemStatusBarContrastEnforced() => $_has(7);
+  @$pb.TagNumber(9)
+  void clearSystemStatusBarContrastEnforced() => clearField(9);
+}
+
+/// package:flutter/src/painting/text_style.dart
+class FlutterTextStyle extends $pb.GeneratedMessage {
+  factory FlutterTextStyle({
+    $core.bool? inherit,
+    DartColorExpression? color,
+    DartColorExpression? backgroundColor,
+    $core.double? fontSize,
+    $1.DartFontStyle_Enum? fontStyle,
+    $core.double? letterSpacing,
+    $core.double? wordSpacing,
+    $1.DartTextBaseline_Enum? textBaseline,
+    $core.double? height,
+    $1.DartTextLeadingDistribution_Enum? leadingDistribution,
+    DartColorExpression? decorationColor,
+    $1.DartTextDecorationStyle_Enum? decorationStyle,
+    $core.double? decorationThickness,
+    $core.String? debugLabel,
+    $core.String? fontFamily,
+    $core.Iterable<$core.String>? fontFamilyFallback,
+    $core.String? package,
+    $1.FlutterTextOverflow_Enum? overflow,
+  }) {
+    final $result = create();
+    if (inherit != null) {
+      $result.inherit = inherit;
+    }
+    if (color != null) {
+      $result.color = color;
+    }
+    if (backgroundColor != null) {
+      $result.backgroundColor = backgroundColor;
+    }
+    if (fontSize != null) {
+      $result.fontSize = fontSize;
+    }
+    if (fontStyle != null) {
+      $result.fontStyle = fontStyle;
+    }
+    if (letterSpacing != null) {
+      $result.letterSpacing = letterSpacing;
+    }
+    if (wordSpacing != null) {
+      $result.wordSpacing = wordSpacing;
+    }
+    if (textBaseline != null) {
+      $result.textBaseline = textBaseline;
+    }
+    if (height != null) {
+      $result.height = height;
+    }
+    if (leadingDistribution != null) {
+      $result.leadingDistribution = leadingDistribution;
+    }
+    if (decorationColor != null) {
+      $result.decorationColor = decorationColor;
+    }
+    if (decorationStyle != null) {
+      $result.decorationStyle = decorationStyle;
+    }
+    if (decorationThickness != null) {
+      $result.decorationThickness = decorationThickness;
+    }
+    if (debugLabel != null) {
+      $result.debugLabel = debugLabel;
+    }
+    if (fontFamily != null) {
+      $result.fontFamily = fontFamily;
+    }
+    if (fontFamilyFallback != null) {
+      $result.fontFamilyFallback.addAll(fontFamilyFallback);
+    }
+    if (package != null) {
+      $result.package = package;
+    }
+    if (overflow != null) {
+      $result.overflow = overflow;
+    }
+    return $result;
+  }
+  FlutterTextStyle._() : super();
+  factory FlutterTextStyle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterTextStyle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterTextStyle', createEmptyInstance: create)
+    ..aOB(2, _omitFieldNames ? '' : 'inherit')
+    ..aOM<DartColorExpression>(3, _omitFieldNames ? '' : 'color', subBuilder: DartColorExpression.create)
+    ..aOM<DartColorExpression>(4, _omitFieldNames ? '' : 'backgroundColor', subBuilder: DartColorExpression.create)
+    ..a<$core.double>(5, _omitFieldNames ? '' : 'fontSize', $pb.PbFieldType.OD)
+    ..e<$1.DartFontStyle_Enum>(7, _omitFieldNames ? '' : 'fontStyle', $pb.PbFieldType.OE, defaultOrMaker: $1.DartFontStyle_Enum.NORMAL, valueOf: $1.DartFontStyle_Enum.valueOf, enumValues: $1.DartFontStyle_Enum.values)
+    ..a<$core.double>(8, _omitFieldNames ? '' : 'letterSpacing', $pb.PbFieldType.OD)
+    ..a<$core.double>(9, _omitFieldNames ? '' : 'wordSpacing', $pb.PbFieldType.OD)
+    ..e<$1.DartTextBaseline_Enum>(10, _omitFieldNames ? '' : 'textBaseline', $pb.PbFieldType.OE, defaultOrMaker: $1.DartTextBaseline_Enum.ALPHABETIC, valueOf: $1.DartTextBaseline_Enum.valueOf, enumValues: $1.DartTextBaseline_Enum.values)
+    ..a<$core.double>(11, _omitFieldNames ? '' : 'height', $pb.PbFieldType.OD)
+    ..e<$1.DartTextLeadingDistribution_Enum>(12, _omitFieldNames ? '' : 'leadingDistribution', $pb.PbFieldType.OE, defaultOrMaker: $1.DartTextLeadingDistribution_Enum.PROPORTIONAL, valueOf: $1.DartTextLeadingDistribution_Enum.valueOf, enumValues: $1.DartTextLeadingDistribution_Enum.values)
+    ..aOM<DartColorExpression>(20, _omitFieldNames ? '' : 'decorationColor', subBuilder: DartColorExpression.create)
+    ..e<$1.DartTextDecorationStyle_Enum>(21, _omitFieldNames ? '' : 'decorationStyle', $pb.PbFieldType.OE, defaultOrMaker: $1.DartTextDecorationStyle_Enum.SOLID, valueOf: $1.DartTextDecorationStyle_Enum.valueOf, enumValues: $1.DartTextDecorationStyle_Enum.values)
+    ..a<$core.double>(22, _omitFieldNames ? '' : 'decorationThickness', $pb.PbFieldType.OD)
+    ..aOS(23, _omitFieldNames ? '' : 'debugLabel')
+    ..aOS(24, _omitFieldNames ? '' : 'fontFamily')
+    ..pPS(25, _omitFieldNames ? '' : 'fontFamilyFallback')
+    ..aOS(26, _omitFieldNames ? '' : 'package')
+    ..e<$1.FlutterTextOverflow_Enum>(27, _omitFieldNames ? '' : 'overflow', $pb.PbFieldType.OE, defaultOrMaker: $1.FlutterTextOverflow_Enum.CLIP, valueOf: $1.FlutterTextOverflow_Enum.valueOf, enumValues: $1.FlutterTextOverflow_Enum.values)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterTextStyle clone() => FlutterTextStyle()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterTextStyle copyWith(void Function(FlutterTextStyle) updates) => super.copyWith((message) => updates(message as FlutterTextStyle)) as FlutterTextStyle;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterTextStyle create() => FlutterTextStyle._();
+  FlutterTextStyle createEmptyInstance() => create();
+  static $pb.PbList<FlutterTextStyle> createRepeated() => $pb.PbList<FlutterTextStyle>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterTextStyle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterTextStyle>(create);
+  static FlutterTextStyle? _defaultInstance;
+
+  @$pb.TagNumber(2)
+  $core.bool get inherit => $_getBF(0);
+  @$pb.TagNumber(2)
+  set inherit($core.bool v) { $_setBool(0, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasInherit() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearInherit() => clearField(2);
+
+  @$pb.TagNumber(3)
+  DartColorExpression get color => $_getN(1);
+  @$pb.TagNumber(3)
+  set color(DartColorExpression v) { setField(3, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasColor() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearColor() => clearField(3);
+  @$pb.TagNumber(3)
+  DartColorExpression ensureColor() => $_ensure(1);
+
+  @$pb.TagNumber(4)
+  DartColorExpression get backgroundColor => $_getN(2);
+  @$pb.TagNumber(4)
+  set backgroundColor(DartColorExpression v) { setField(4, v); }
+  @$pb.TagNumber(4)
+  $core.bool hasBackgroundColor() => $_has(2);
+  @$pb.TagNumber(4)
+  void clearBackgroundColor() => clearField(4);
+  @$pb.TagNumber(4)
+  DartColorExpression ensureBackgroundColor() => $_ensure(2);
+
+  @$pb.TagNumber(5)
+  $core.double get fontSize => $_getN(3);
+  @$pb.TagNumber(5)
+  set fontSize($core.double v) { $_setDouble(3, v); }
+  @$pb.TagNumber(5)
+  $core.bool hasFontSize() => $_has(3);
+  @$pb.TagNumber(5)
+  void clearFontSize() => clearField(5);
+
+  @$pb.TagNumber(7)
+  $1.DartFontStyle_Enum get fontStyle => $_getN(4);
+  @$pb.TagNumber(7)
+  set fontStyle($1.DartFontStyle_Enum v) { setField(7, v); }
+  @$pb.TagNumber(7)
+  $core.bool hasFontStyle() => $_has(4);
+  @$pb.TagNumber(7)
+  void clearFontStyle() => clearField(7);
+
+  @$pb.TagNumber(8)
+  $core.double get letterSpacing => $_getN(5);
+  @$pb.TagNumber(8)
+  set letterSpacing($core.double v) { $_setDouble(5, v); }
+  @$pb.TagNumber(8)
+  $core.bool hasLetterSpacing() => $_has(5);
+  @$pb.TagNumber(8)
+  void clearLetterSpacing() => clearField(8);
+
+  @$pb.TagNumber(9)
+  $core.double get wordSpacing => $_getN(6);
+  @$pb.TagNumber(9)
+  set wordSpacing($core.double v) { $_setDouble(6, v); }
+  @$pb.TagNumber(9)
+  $core.bool hasWordSpacing() => $_has(6);
+  @$pb.TagNumber(9)
+  void clearWordSpacing() => clearField(9);
+
+  @$pb.TagNumber(10)
+  $1.DartTextBaseline_Enum get textBaseline => $_getN(7);
+  @$pb.TagNumber(10)
+  set textBaseline($1.DartTextBaseline_Enum v) { setField(10, v); }
+  @$pb.TagNumber(10)
+  $core.bool hasTextBaseline() => $_has(7);
+  @$pb.TagNumber(10)
+  void clearTextBaseline() => clearField(10);
+
+  @$pb.TagNumber(11)
+  $core.double get height => $_getN(8);
+  @$pb.TagNumber(11)
+  set height($core.double v) { $_setDouble(8, v); }
+  @$pb.TagNumber(11)
+  $core.bool hasHeight() => $_has(8);
+  @$pb.TagNumber(11)
+  void clearHeight() => clearField(11);
+
+  @$pb.TagNumber(12)
+  $1.DartTextLeadingDistribution_Enum get leadingDistribution => $_getN(9);
+  @$pb.TagNumber(12)
+  set leadingDistribution($1.DartTextLeadingDistribution_Enum v) { setField(12, v); }
+  @$pb.TagNumber(12)
+  $core.bool hasLeadingDistribution() => $_has(9);
+  @$pb.TagNumber(12)
+  void clearLeadingDistribution() => clearField(12);
+
+  @$pb.TagNumber(20)
+  DartColorExpression get decorationColor => $_getN(10);
+  @$pb.TagNumber(20)
+  set decorationColor(DartColorExpression v) { setField(20, v); }
+  @$pb.TagNumber(20)
+  $core.bool hasDecorationColor() => $_has(10);
+  @$pb.TagNumber(20)
+  void clearDecorationColor() => clearField(20);
+  @$pb.TagNumber(20)
+  DartColorExpression ensureDecorationColor() => $_ensure(10);
+
+  @$pb.TagNumber(21)
+  $1.DartTextDecorationStyle_Enum get decorationStyle => $_getN(11);
+  @$pb.TagNumber(21)
+  set decorationStyle($1.DartTextDecorationStyle_Enum v) { setField(21, v); }
+  @$pb.TagNumber(21)
+  $core.bool hasDecorationStyle() => $_has(11);
+  @$pb.TagNumber(21)
+  void clearDecorationStyle() => clearField(21);
+
+  @$pb.TagNumber(22)
+  $core.double get decorationThickness => $_getN(12);
+  @$pb.TagNumber(22)
+  set decorationThickness($core.double v) { $_setDouble(12, v); }
+  @$pb.TagNumber(22)
+  $core.bool hasDecorationThickness() => $_has(12);
+  @$pb.TagNumber(22)
+  void clearDecorationThickness() => clearField(22);
+
+  @$pb.TagNumber(23)
+  $core.String get debugLabel => $_getSZ(13);
+  @$pb.TagNumber(23)
+  set debugLabel($core.String v) { $_setString(13, v); }
+  @$pb.TagNumber(23)
+  $core.bool hasDebugLabel() => $_has(13);
+  @$pb.TagNumber(23)
+  void clearDebugLabel() => clearField(23);
+
+  @$pb.TagNumber(24)
+  $core.String get fontFamily => $_getSZ(14);
+  @$pb.TagNumber(24)
+  set fontFamily($core.String v) { $_setString(14, v); }
+  @$pb.TagNumber(24)
+  $core.bool hasFontFamily() => $_has(14);
+  @$pb.TagNumber(24)
+  void clearFontFamily() => clearField(24);
+
+  @$pb.TagNumber(25)
+  $core.List<$core.String> get fontFamilyFallback => $_getList(15);
+
+  @$pb.TagNumber(26)
+  $core.String get package => $_getSZ(16);
+  @$pb.TagNumber(26)
+  set package($core.String v) { $_setString(16, v); }
+  @$pb.TagNumber(26)
+  $core.bool hasPackage() => $_has(16);
+  @$pb.TagNumber(26)
+  void clearPackage() => clearField(26);
+
+  @$pb.TagNumber(27)
+  $1.FlutterTextOverflow_Enum get overflow => $_getN(17);
+  @$pb.TagNumber(27)
+  set overflow($1.FlutterTextOverflow_Enum v) { setField(27, v); }
+  @$pb.TagNumber(27)
+  $core.bool hasOverflow() => $_has(17);
+  @$pb.TagNumber(27)
+  void clearOverflow() => clearField(27);
+}
+
+/// package:flutter/src/material/button_style.dart
+class MaterialButtonStyle extends $pb.GeneratedMessage {
+  factory MaterialButtonStyle({
+    $1.MaterialMaterialTapTargetSize_Enum? tapTargetSize,
+    DartDurationExpression? animationDuration,
+    $core.bool? enableFeedback,
+  }) {
+    final $result = create();
+    if (tapTargetSize != null) {
+      $result.tapTargetSize = tapTargetSize;
+    }
+    if (animationDuration != null) {
+      $result.animationDuration = animationDuration;
+    }
+    if (enableFeedback != null) {
+      $result.enableFeedback = enableFeedback;
+    }
+    return $result;
+  }
+  MaterialButtonStyle._() : super();
+  factory MaterialButtonStyle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MaterialButtonStyle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialButtonStyle', createEmptyInstance: create)
+    ..e<$1.MaterialMaterialTapTargetSize_Enum>(19, _omitFieldNames ? '' : 'tapTargetSize', $pb.PbFieldType.OE, defaultOrMaker: $1.MaterialMaterialTapTargetSize_Enum.PADDED, valueOf: $1.MaterialMaterialTapTargetSize_Enum.valueOf, enumValues: $1.MaterialMaterialTapTargetSize_Enum.values)
+    ..aOM<DartDurationExpression>(20, _omitFieldNames ? '' : 'animationDuration', subBuilder: DartDurationExpression.create)
+    ..aOB(21, _omitFieldNames ? '' : 'enableFeedback')
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MaterialButtonStyle clone() => MaterialButtonStyle()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MaterialButtonStyle copyWith(void Function(MaterialButtonStyle) updates) => super.copyWith((message) => updates(message as MaterialButtonStyle)) as MaterialButtonStyle;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static MaterialButtonStyle create() => MaterialButtonStyle._();
+  MaterialButtonStyle createEmptyInstance() => create();
+  static $pb.PbList<MaterialButtonStyle> createRepeated() => $pb.PbList<MaterialButtonStyle>();
+  @$core.pragma('dart2js:noInline')
+  static MaterialButtonStyle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialButtonStyle>(create);
+  static MaterialButtonStyle? _defaultInstance;
+
+  @$pb.TagNumber(19)
+  $1.MaterialMaterialTapTargetSize_Enum get tapTargetSize => $_getN(0);
+  @$pb.TagNumber(19)
+  set tapTargetSize($1.MaterialMaterialTapTargetSize_Enum v) { setField(19, v); }
+  @$pb.TagNumber(19)
+  $core.bool hasTapTargetSize() => $_has(0);
+  @$pb.TagNumber(19)
+  void clearTapTargetSize() => clearField(19);
+
+  @$pb.TagNumber(20)
+  DartDurationExpression get animationDuration => $_getN(1);
+  @$pb.TagNumber(20)
+  set animationDuration(DartDurationExpression v) { setField(20, v); }
+  @$pb.TagNumber(20)
+  $core.bool hasAnimationDuration() => $_has(1);
+  @$pb.TagNumber(20)
+  void clearAnimationDuration() => clearField(20);
+  @$pb.TagNumber(20)
+  DartDurationExpression ensureAnimationDuration() => $_ensure(1);
+
+  @$pb.TagNumber(21)
+  $core.bool get enableFeedback => $_getBF(2);
+  @$pb.TagNumber(21)
+  set enableFeedback($core.bool v) { $_setBool(2, v); }
+  @$pb.TagNumber(21)
+  $core.bool hasEnableFeedback() => $_has(2);
+  @$pb.TagNumber(21)
+  void clearEnableFeedback() => clearField(21);
+}
+
+/// package:flutter/src/material/menu_style.dart
+class MaterialMenuStyle extends $pb.GeneratedMessage {
+  factory MaterialMenuStyle() => create();
+  MaterialMenuStyle._() : super();
+  factory MaterialMenuStyle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MaterialMenuStyle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialMenuStyle', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MaterialMenuStyle clone() => MaterialMenuStyle()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MaterialMenuStyle copyWith(void Function(MaterialMenuStyle) updates) => super.copyWith((message) => updates(message as MaterialMenuStyle)) as MaterialMenuStyle;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static MaterialMenuStyle create() => MaterialMenuStyle._();
+  MaterialMenuStyle createEmptyInstance() => create();
+  static $pb.PbList<MaterialMenuStyle> createRepeated() => $pb.PbList<MaterialMenuStyle>();
+  @$core.pragma('dart2js:noInline')
+  static MaterialMenuStyle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialMenuStyle>(create);
+  static MaterialMenuStyle? _defaultInstance;
+}
+
 enum DartColorExpression_Result {
   cupertinoDynamicColor, 
   cupertinoDynamicColorNamedWithBrightness, 
@@ -2121,6 +3039,354 @@ class FlutterKeyExpression extends $pb.GeneratedMessage {
   void clearFlutterUniqueKey() => clearField(6);
   @$pb.TagNumber(6)
   FlutterUniqueKey ensureFlutterUniqueKey() => $_ensure(4);
+}
+
+enum FlutterStrutStyleExpression_Result {
+  flutterStrutStyle, 
+  flutterStrutStyleNamedFromTextStyle, 
+  notSet
+}
+
+/// package:flutter/src/painting/strut_style.dart
+class FlutterStrutStyleExpression extends $pb.GeneratedMessage {
+  factory FlutterStrutStyleExpression({
+    FlutterStrutStyle? flutterStrutStyle,
+    FlutterStrutStyleNamedFromTextStyle? flutterStrutStyleNamedFromTextStyle,
+  }) {
+    final $result = create();
+    if (flutterStrutStyle != null) {
+      $result.flutterStrutStyle = flutterStrutStyle;
+    }
+    if (flutterStrutStyleNamedFromTextStyle != null) {
+      $result.flutterStrutStyleNamedFromTextStyle = flutterStrutStyleNamedFromTextStyle;
+    }
+    return $result;
+  }
+  FlutterStrutStyleExpression._() : super();
+  factory FlutterStrutStyleExpression.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterStrutStyleExpression.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, FlutterStrutStyleExpression_Result> _FlutterStrutStyleExpression_ResultByTag = {
+    2 : FlutterStrutStyleExpression_Result.flutterStrutStyle,
+    3 : FlutterStrutStyleExpression_Result.flutterStrutStyleNamedFromTextStyle,
+    0 : FlutterStrutStyleExpression_Result.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterStrutStyleExpression', createEmptyInstance: create)
+    ..oo(0, [2, 3])
+    ..aOM<FlutterStrutStyle>(2, _omitFieldNames ? '' : 'flutterStrutStyle', subBuilder: FlutterStrutStyle.create)
+    ..aOM<FlutterStrutStyleNamedFromTextStyle>(3, _omitFieldNames ? '' : 'flutterStrutStyleNamedFromTextStyle', subBuilder: FlutterStrutStyleNamedFromTextStyle.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterStrutStyleExpression clone() => FlutterStrutStyleExpression()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterStrutStyleExpression copyWith(void Function(FlutterStrutStyleExpression) updates) => super.copyWith((message) => updates(message as FlutterStrutStyleExpression)) as FlutterStrutStyleExpression;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterStrutStyleExpression create() => FlutterStrutStyleExpression._();
+  FlutterStrutStyleExpression createEmptyInstance() => create();
+  static $pb.PbList<FlutterStrutStyleExpression> createRepeated() => $pb.PbList<FlutterStrutStyleExpression>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterStrutStyleExpression getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterStrutStyleExpression>(create);
+  static FlutterStrutStyleExpression? _defaultInstance;
+
+  FlutterStrutStyleExpression_Result whichResult() => _FlutterStrutStyleExpression_ResultByTag[$_whichOneof(0)]!;
+  void clearResult() => clearField($_whichOneof(0));
+
+  @$pb.TagNumber(2)
+  FlutterStrutStyle get flutterStrutStyle => $_getN(0);
+  @$pb.TagNumber(2)
+  set flutterStrutStyle(FlutterStrutStyle v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasFlutterStrutStyle() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearFlutterStrutStyle() => clearField(2);
+  @$pb.TagNumber(2)
+  FlutterStrutStyle ensureFlutterStrutStyle() => $_ensure(0);
+
+  @$pb.TagNumber(3)
+  FlutterStrutStyleNamedFromTextStyle get flutterStrutStyleNamedFromTextStyle => $_getN(1);
+  @$pb.TagNumber(3)
+  set flutterStrutStyleNamedFromTextStyle(FlutterStrutStyleNamedFromTextStyle v) { setField(3, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasFlutterStrutStyleNamedFromTextStyle() => $_has(1);
+  @$pb.TagNumber(3)
+  void clearFlutterStrutStyleNamedFromTextStyle() => clearField(3);
+  @$pb.TagNumber(3)
+  FlutterStrutStyleNamedFromTextStyle ensureFlutterStrutStyleNamedFromTextStyle() => $_ensure(1);
+}
+
+enum FlutterSystemUiOverlayStyleExpression_Result {
+  flutterSystemUiOverlayStyle, 
+  notSet
+}
+
+/// package:flutter/src/services/system_chrome.dart
+class FlutterSystemUiOverlayStyleExpression extends $pb.GeneratedMessage {
+  factory FlutterSystemUiOverlayStyleExpression({
+    FlutterSystemUiOverlayStyle? flutterSystemUiOverlayStyle,
+  }) {
+    final $result = create();
+    if (flutterSystemUiOverlayStyle != null) {
+      $result.flutterSystemUiOverlayStyle = flutterSystemUiOverlayStyle;
+    }
+    return $result;
+  }
+  FlutterSystemUiOverlayStyleExpression._() : super();
+  factory FlutterSystemUiOverlayStyleExpression.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterSystemUiOverlayStyleExpression.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, FlutterSystemUiOverlayStyleExpression_Result> _FlutterSystemUiOverlayStyleExpression_ResultByTag = {
+    2 : FlutterSystemUiOverlayStyleExpression_Result.flutterSystemUiOverlayStyle,
+    0 : FlutterSystemUiOverlayStyleExpression_Result.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterSystemUiOverlayStyleExpression', createEmptyInstance: create)
+    ..oo(0, [2])
+    ..aOM<FlutterSystemUiOverlayStyle>(2, _omitFieldNames ? '' : 'flutterSystemUiOverlayStyle', subBuilder: FlutterSystemUiOverlayStyle.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterSystemUiOverlayStyleExpression clone() => FlutterSystemUiOverlayStyleExpression()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterSystemUiOverlayStyleExpression copyWith(void Function(FlutterSystemUiOverlayStyleExpression) updates) => super.copyWith((message) => updates(message as FlutterSystemUiOverlayStyleExpression)) as FlutterSystemUiOverlayStyleExpression;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterSystemUiOverlayStyleExpression create() => FlutterSystemUiOverlayStyleExpression._();
+  FlutterSystemUiOverlayStyleExpression createEmptyInstance() => create();
+  static $pb.PbList<FlutterSystemUiOverlayStyleExpression> createRepeated() => $pb.PbList<FlutterSystemUiOverlayStyleExpression>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterSystemUiOverlayStyleExpression getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterSystemUiOverlayStyleExpression>(create);
+  static FlutterSystemUiOverlayStyleExpression? _defaultInstance;
+
+  FlutterSystemUiOverlayStyleExpression_Result whichResult() => _FlutterSystemUiOverlayStyleExpression_ResultByTag[$_whichOneof(0)]!;
+  void clearResult() => clearField($_whichOneof(0));
+
+  @$pb.TagNumber(2)
+  FlutterSystemUiOverlayStyle get flutterSystemUiOverlayStyle => $_getN(0);
+  @$pb.TagNumber(2)
+  set flutterSystemUiOverlayStyle(FlutterSystemUiOverlayStyle v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasFlutterSystemUiOverlayStyle() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearFlutterSystemUiOverlayStyle() => clearField(2);
+  @$pb.TagNumber(2)
+  FlutterSystemUiOverlayStyle ensureFlutterSystemUiOverlayStyle() => $_ensure(0);
+}
+
+enum FlutterTextStyleExpression_Result {
+  flutterTextStyle, 
+  notSet
+}
+
+/// package:flutter/src/painting/text_style.dart
+class FlutterTextStyleExpression extends $pb.GeneratedMessage {
+  factory FlutterTextStyleExpression({
+    FlutterTextStyle? flutterTextStyle,
+  }) {
+    final $result = create();
+    if (flutterTextStyle != null) {
+      $result.flutterTextStyle = flutterTextStyle;
+    }
+    return $result;
+  }
+  FlutterTextStyleExpression._() : super();
+  factory FlutterTextStyleExpression.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterTextStyleExpression.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, FlutterTextStyleExpression_Result> _FlutterTextStyleExpression_ResultByTag = {
+    2 : FlutterTextStyleExpression_Result.flutterTextStyle,
+    0 : FlutterTextStyleExpression_Result.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterTextStyleExpression', createEmptyInstance: create)
+    ..oo(0, [2])
+    ..aOM<FlutterTextStyle>(2, _omitFieldNames ? '' : 'flutterTextStyle', subBuilder: FlutterTextStyle.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterTextStyleExpression clone() => FlutterTextStyleExpression()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterTextStyleExpression copyWith(void Function(FlutterTextStyleExpression) updates) => super.copyWith((message) => updates(message as FlutterTextStyleExpression)) as FlutterTextStyleExpression;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterTextStyleExpression create() => FlutterTextStyleExpression._();
+  FlutterTextStyleExpression createEmptyInstance() => create();
+  static $pb.PbList<FlutterTextStyleExpression> createRepeated() => $pb.PbList<FlutterTextStyleExpression>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterTextStyleExpression getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterTextStyleExpression>(create);
+  static FlutterTextStyleExpression? _defaultInstance;
+
+  FlutterTextStyleExpression_Result whichResult() => _FlutterTextStyleExpression_ResultByTag[$_whichOneof(0)]!;
+  void clearResult() => clearField($_whichOneof(0));
+
+  @$pb.TagNumber(2)
+  FlutterTextStyle get flutterTextStyle => $_getN(0);
+  @$pb.TagNumber(2)
+  set flutterTextStyle(FlutterTextStyle v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasFlutterTextStyle() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearFlutterTextStyle() => clearField(2);
+  @$pb.TagNumber(2)
+  FlutterTextStyle ensureFlutterTextStyle() => $_ensure(0);
+}
+
+enum MaterialButtonStyleExpression_Result {
+  materialButtonStyle, 
+  notSet
+}
+
+/// package:flutter/src/material/button_style.dart
+class MaterialButtonStyleExpression extends $pb.GeneratedMessage {
+  factory MaterialButtonStyleExpression({
+    MaterialButtonStyle? materialButtonStyle,
+  }) {
+    final $result = create();
+    if (materialButtonStyle != null) {
+      $result.materialButtonStyle = materialButtonStyle;
+    }
+    return $result;
+  }
+  MaterialButtonStyleExpression._() : super();
+  factory MaterialButtonStyleExpression.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MaterialButtonStyleExpression.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, MaterialButtonStyleExpression_Result> _MaterialButtonStyleExpression_ResultByTag = {
+    2 : MaterialButtonStyleExpression_Result.materialButtonStyle,
+    0 : MaterialButtonStyleExpression_Result.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialButtonStyleExpression', createEmptyInstance: create)
+    ..oo(0, [2])
+    ..aOM<MaterialButtonStyle>(2, _omitFieldNames ? '' : 'materialButtonStyle', subBuilder: MaterialButtonStyle.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MaterialButtonStyleExpression clone() => MaterialButtonStyleExpression()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MaterialButtonStyleExpression copyWith(void Function(MaterialButtonStyleExpression) updates) => super.copyWith((message) => updates(message as MaterialButtonStyleExpression)) as MaterialButtonStyleExpression;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static MaterialButtonStyleExpression create() => MaterialButtonStyleExpression._();
+  MaterialButtonStyleExpression createEmptyInstance() => create();
+  static $pb.PbList<MaterialButtonStyleExpression> createRepeated() => $pb.PbList<MaterialButtonStyleExpression>();
+  @$core.pragma('dart2js:noInline')
+  static MaterialButtonStyleExpression getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialButtonStyleExpression>(create);
+  static MaterialButtonStyleExpression? _defaultInstance;
+
+  MaterialButtonStyleExpression_Result whichResult() => _MaterialButtonStyleExpression_ResultByTag[$_whichOneof(0)]!;
+  void clearResult() => clearField($_whichOneof(0));
+
+  @$pb.TagNumber(2)
+  MaterialButtonStyle get materialButtonStyle => $_getN(0);
+  @$pb.TagNumber(2)
+  set materialButtonStyle(MaterialButtonStyle v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasMaterialButtonStyle() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearMaterialButtonStyle() => clearField(2);
+  @$pb.TagNumber(2)
+  MaterialButtonStyle ensureMaterialButtonStyle() => $_ensure(0);
+}
+
+enum MaterialMenuStyleExpression_Result {
+  materialMenuStyle, 
+  notSet
+}
+
+/// package:flutter/src/material/menu_style.dart
+class MaterialMenuStyleExpression extends $pb.GeneratedMessage {
+  factory MaterialMenuStyleExpression({
+    MaterialMenuStyle? materialMenuStyle,
+  }) {
+    final $result = create();
+    if (materialMenuStyle != null) {
+      $result.materialMenuStyle = materialMenuStyle;
+    }
+    return $result;
+  }
+  MaterialMenuStyleExpression._() : super();
+  factory MaterialMenuStyleExpression.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MaterialMenuStyleExpression.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static const $core.Map<$core.int, MaterialMenuStyleExpression_Result> _MaterialMenuStyleExpression_ResultByTag = {
+    2 : MaterialMenuStyleExpression_Result.materialMenuStyle,
+    0 : MaterialMenuStyleExpression_Result.notSet
+  };
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialMenuStyleExpression', createEmptyInstance: create)
+    ..oo(0, [2])
+    ..aOM<MaterialMenuStyle>(2, _omitFieldNames ? '' : 'materialMenuStyle', subBuilder: MaterialMenuStyle.create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MaterialMenuStyleExpression clone() => MaterialMenuStyleExpression()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MaterialMenuStyleExpression copyWith(void Function(MaterialMenuStyleExpression) updates) => super.copyWith((message) => updates(message as MaterialMenuStyleExpression)) as MaterialMenuStyleExpression;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static MaterialMenuStyleExpression create() => MaterialMenuStyleExpression._();
+  MaterialMenuStyleExpression createEmptyInstance() => create();
+  static $pb.PbList<MaterialMenuStyleExpression> createRepeated() => $pb.PbList<MaterialMenuStyleExpression>();
+  @$core.pragma('dart2js:noInline')
+  static MaterialMenuStyleExpression getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialMenuStyleExpression>(create);
+  static MaterialMenuStyleExpression? _defaultInstance;
+
+  MaterialMenuStyleExpression_Result whichResult() => _MaterialMenuStyleExpression_ResultByTag[$_whichOneof(0)]!;
+  void clearResult() => clearField($_whichOneof(0));
+
+  @$pb.TagNumber(2)
+  MaterialMenuStyle get materialMenuStyle => $_getN(0);
+  @$pb.TagNumber(2)
+  set materialMenuStyle(MaterialMenuStyle v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasMaterialMenuStyle() => $_has(0);
+  @$pb.TagNumber(2)
+  void clearMaterialMenuStyle() => clearField(2);
+  @$pb.TagNumber(2)
+  MaterialMenuStyle ensureMaterialMenuStyle() => $_ensure(0);
 }
 
 

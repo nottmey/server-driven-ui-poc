@@ -257,6 +257,26 @@ $dartUi.FilterQuality? convertDartFilterQuality(enums.DartFilterQuality_Enum enu
   }
 }
 
+$dartUi.FontStyle convertRequiredDartFontStyle(enums.DartFontStyle_Enum enumValue) {
+  final result = convertDartFontStyle(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum DartFontStyle');
+  }
+}
+
+$dartUi.FontStyle? convertDartFontStyle(enums.DartFontStyle_Enum enumValue) {
+  switch (enumValue) {
+    case enums.DartFontStyle_Enum.NORMAL:
+      return $dartUi.FontStyle.normal;
+    case enums.DartFontStyle_Enum.ITALIC:
+      return $dartUi.FontStyle.italic;
+    default:
+      return null;
+  }
+}
+
 $dartUi.StrokeCap convertRequiredDartStrokeCap(enums.DartStrokeCap_Enum enumValue) {
   final result = convertDartStrokeCap(enumValue);
   if(result != null) {
@@ -327,6 +347,32 @@ $dartUi.TextBaseline? convertDartTextBaseline(enums.DartTextBaseline_Enum enumVa
   }
 }
 
+$dartUi.TextDecorationStyle convertRequiredDartTextDecorationStyle(enums.DartTextDecorationStyle_Enum enumValue) {
+  final result = convertDartTextDecorationStyle(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum DartTextDecorationStyle');
+  }
+}
+
+$dartUi.TextDecorationStyle? convertDartTextDecorationStyle(enums.DartTextDecorationStyle_Enum enumValue) {
+  switch (enumValue) {
+    case enums.DartTextDecorationStyle_Enum.SOLID:
+      return $dartUi.TextDecorationStyle.solid;
+    case enums.DartTextDecorationStyle_Enum.DOUBLE:
+      return $dartUi.TextDecorationStyle.double;
+    case enums.DartTextDecorationStyle_Enum.DOTTED:
+      return $dartUi.TextDecorationStyle.dotted;
+    case enums.DartTextDecorationStyle_Enum.DASHED:
+      return $dartUi.TextDecorationStyle.dashed;
+    case enums.DartTextDecorationStyle_Enum.WAVY:
+      return $dartUi.TextDecorationStyle.wavy;
+    default:
+      return null;
+  }
+}
+
 $dartUi.TextDirection convertRequiredDartTextDirection(enums.DartTextDirection_Enum enumValue) {
   final result = convertDartTextDirection(enumValue);
   if(result != null) {
@@ -342,6 +388,26 @@ $dartUi.TextDirection? convertDartTextDirection(enums.DartTextDirection_Enum enu
       return $dartUi.TextDirection.rtl;
     case enums.DartTextDirection_Enum.LTR:
       return $dartUi.TextDirection.ltr;
+    default:
+      return null;
+  }
+}
+
+$dartUi.TextLeadingDistribution convertRequiredDartTextLeadingDistribution(enums.DartTextLeadingDistribution_Enum enumValue) {
+  final result = convertDartTextLeadingDistribution(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum DartTextLeadingDistribution');
+  }
+}
+
+$dartUi.TextLeadingDistribution? convertDartTextLeadingDistribution(enums.DartTextLeadingDistribution_Enum enumValue) {
+  switch (enumValue) {
+    case enums.DartTextLeadingDistribution_Enum.PROPORTIONAL:
+      return $dartUi.TextLeadingDistribution.proportional;
+    case enums.DartTextLeadingDistribution_Enum.EVEN:
+      return $dartUi.TextLeadingDistribution.even;
     default:
       return null;
   }
