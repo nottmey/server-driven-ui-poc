@@ -2,9 +2,9 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:grpc/grpc.dart' as grpc;
-import 'package:proto_package/builders/evaluate_widget_expression.sdu.dart';
+import 'package:proto_package/builders/evaluate_expressions.sdu.dart';
+import 'package:proto_package/proto/messages.pb.dart' as messages;
 import 'package:proto_package/proto/service.pbgrpc.dart' as service;
-import 'package:proto_package/proto/widgets.pb.dart' as proto;
 
 // TODO generate this file in generator_package
 class ServerDrivenUi extends StatefulWidget {
@@ -23,7 +23,7 @@ class _ServerDrivenUiState extends State<ServerDrivenUi> {
 
   Timer? reconnectTimer;
 
-  AsyncSnapshot<proto.WidgetExpression> snapshot = AsyncSnapshot.waiting();
+  AsyncSnapshot<messages.WidgetExpression> snapshot = AsyncSnapshot.waiting();
 
   @override
   void initState() {

@@ -97,7 +97,7 @@ class Protocol {
 
   String toEnumsProto() {
     return '''
-$kGeneratedFileHeader
+$generatedFileHeader
 
 syntax = "proto3";
 
@@ -105,32 +105,21 @@ ${enumTypeMappings.map((m) => m.toProtoEnum()).whereType<String>().join("\n")}
 ''';
   }
 
-  String toTypesProto() {
+  String toMessagesProto() {
     return '''
-$kGeneratedFileHeader
+$generatedFileHeader
 
 syntax = "proto3";
 
-import "$kEnumsProto";
+import "$enumsProto";
 
 ${payloadTypeMappings.expand((m) => payloadConstructors[m]!).toSet().map((c) => c.toProtoMessage()).join("\n")}
 
 ${payloadTypeMappings.map((m) => m.toProtoMessage(payloadConstructors[m]!)).join("\n")}
-''';
-  }
-
-  String toWidgetsProto() {
-    return '''
-$kGeneratedFileHeader
-
-syntax = "proto3";
-
-import "$kEnumsProto";
-import "$kTypesProto";
 
 ${widgetConstructors.map((c) => c.toProtoMessage()).join("\n")}
-    
-message $kWidgetExpression {
+
+message $widgetExpression {
   oneof result {
     ${widgetConstructors.mapIndexed((i, c) => c.toProtoField(i)).join("\n    ")}
   }
@@ -140,11 +129,11 @@ message $kWidgetExpression {
 
   String toServiceProto() {
     return '''
-$kGeneratedFileHeader
+$generatedFileHeader
 
 syntax = "proto3";
 
-import "$kWidgetsProto";
+import "$messageProtoFile";
 
 service ExperienceProvider {
   rpc RequestExperience (ExperienceRequest) returns (ExperienceResponse) {}
@@ -160,14 +149,14 @@ message ExperienceResponse {
 }
 
 message Experience {
-  $kWidgetExpression widget = 2;
+  $widgetExpression widget = 2;
 }
 ''';
   }
 
   String toEnumsBuilderCode() {
     return '''
-$kGeneratedFileHeader
+$generatedFileHeader
 
 import 'dart:core' as core;
 import 'package:proto_package/proto/enums.pb.dart' as enums;
@@ -178,35 +167,13 @@ ${enumTypeMappings.map((m) => m.toDartEnumSwitchCase()).whereType<String>().join
 ''';
   }
 
-  String toTypesBuilderCode() {
+  String toWidgetBuilderCode() {
     final entries =
         payloadConstructors.entries.sortedBy((e) => e.key.messageName);
 
     final imports = {
       ...entries.map((e) => e.key.toDartImport()),
       ...entries.expand((e) => e.value.map((c) => c.toDartImport())),
-    };
-
-    return '''
-$kGeneratedFileHeader
-
-import 'dart:core' as core;
-import 'package:proto_package/proto/types.pb.dart' as types;
-
-import 'package:proto_package/builders/evaluate_enum_expressions.sdu.dart' as enums;
-
-${imports.sortedBy((i) => i).join('\n')}
-
-T $kThrowMissing<T>(core.String field) {
-  throw core.AssertionError('required field \$field is missing');
-}
-
-${entries.map((e) => e.key.toDartTypeSwitchCase(e.value)).join("\n")}
-''';
-  }
-
-  String toWidgetBuilderCode() {
-    final imports = {
       ...widgetConstructors
           .expand((c) => c.parameters)
           .where((p) => p.typeMapping != null)
@@ -215,23 +182,24 @@ ${entries.map((e) => e.key.toDartTypeSwitchCase(e.value)).join("\n")}
     };
 
     return '''
-$kGeneratedFileHeader
+$generatedFileHeader
 
 import 'dart:core' as core;
 import 'package:flutter/widgets.dart' as widgets;
-import 'package:proto_package/proto/widgets.pb.dart' as proto;
+import 'package:proto_package/proto/messages.pb.dart' as messages;
 
-import 'package:proto_package/$kEnumBuilderFile' as enums;
-import 'package:proto_package/$kTypeBuilderFile' as types;
+import 'package:proto_package/$convertEnumsFile' as enums;
 
 ${imports.sortedBy((i) => i).join("\n")}
 
-T $kThrowMissing<T>(core.String field) {
+T $throwMissingName<T>(core.String field) {
   throw core.AssertionError('required field \$field is missing');
 }
 
-widgets.Widget $kEvaluateRequiredWidgetExpression(proto.$kWidgetExpression tree) {
-  final result = $kEvaluateWidgetExpression(tree);
+${entries.map((e) => e.key.toDartTypeSwitchCase(e.value)).join("\n")}
+
+widgets.Widget $evaluateRequiredWidgetExpression(messages.$widgetExpression tree) {
+  final result = $evaluateWidgetExpression(tree);
   if(result != null) {
     return result;
   } else {
@@ -239,13 +207,13 @@ widgets.Widget $kEvaluateRequiredWidgetExpression(proto.$kWidgetExpression tree)
   }
 }
 
-widgets.Widget? $kEvaluateWidgetExpression(proto.$kWidgetExpression? tree) {
+widgets.Widget? $evaluateWidgetExpression(messages.$widgetExpression? tree) {
   if(tree == null) {
     return null;
   }
 
   switch (tree.whichResult()) {
-${widgetConstructors.map((c) => c.toDartSwitchCase('proto', kWidgetExpression, 'types')).join("\n")}
+${widgetConstructors.map((c) => c.toDartSwitchCase('messages', widgetExpression)).join("\n")}
     default:
       return null;
   }

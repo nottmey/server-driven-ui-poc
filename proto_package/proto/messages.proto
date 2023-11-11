@@ -5,7 +5,302 @@
 syntax = "proto3";
 
 import "enums.proto";
-import "types.proto";
+
+// package:flutter/src/cupertino/colors.dart
+message CupertinoDynamicColor {
+  string debug_label = 2;
+  DartColorExpression color = 3;
+  DartColorExpression dark_color = 4;
+  DartColorExpression high_contrast_color = 5;
+  DartColorExpression dark_high_contrast_color = 6;
+  DartColorExpression elevated_color = 7;
+  DartColorExpression dark_elevated_color = 8;
+  DartColorExpression high_contrast_elevated_color = 9;
+  DartColorExpression dark_high_contrast_elevated_color = 10;
+}
+
+// package:flutter/src/cupertino/colors.dart
+message CupertinoDynamicColorNamedWithBrightness {
+  string debug_label = 2;
+  DartColorExpression color = 3;
+  DartColorExpression dark_color = 4;
+}
+
+// package:flutter/src/cupertino/colors.dart
+message CupertinoDynamicColorNamedWithBrightnessAndContrast {
+  string debug_label = 2;
+  DartColorExpression color = 3;
+  DartColorExpression dark_color = 4;
+  DartColorExpression high_contrast_color = 5;
+  DartColorExpression dark_high_contrast_color = 6;
+}
+
+// dart:ui
+message DartColor {
+  int32 value = 2;
+}
+
+// dart:ui
+message DartColorNamedFromARGB {
+  int32 a = 2;
+  int32 r = 3;
+  int32 g = 4;
+  int32 b = 5;
+}
+
+// dart:ui
+message DartColorNamedFromRGBO {
+  int32 r = 2;
+  int32 g = 3;
+  int32 b = 4;
+  double opacity = 5;
+}
+
+// dart:core
+message DartDuration {
+  int32 days = 2;
+  int32 hours = 3;
+  int32 minutes = 4;
+  int32 seconds = 5;
+  int32 milliseconds = 6;
+  int32 microseconds = 7;
+}
+
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsDirectionalNamedAll {
+  double value = 2;
+}
+
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsDirectionalNamedFromSTEB {
+  double start = 2;
+  double top = 3;
+  double end = 4;
+  double bottom = 5;
+}
+
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsDirectionalNamedOnly {
+  double start = 2;
+  double top = 3;
+  double end = 4;
+  double bottom = 5;
+}
+
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsDirectionalNamedSymmetric {
+  double horizontal = 2;
+  double vertical = 3;
+}
+
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsNamedAll {
+  double value = 2;
+}
+
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsNamedFromLTRB {
+  double left = 2;
+  double top = 3;
+  double right = 4;
+  double bottom = 5;
+}
+
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsNamedOnly {
+  double left = 2;
+  double top = 3;
+  double right = 4;
+  double bottom = 5;
+}
+
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsNamedSymmetric {
+  double vertical = 2;
+  double horizontal = 3;
+}
+
+// package:flutter/src/widgets/framework.dart
+message FlutterGlobalKey {
+  string debug_label = 2;
+}
+
+// package:flutter/src/foundation/key.dart
+message FlutterKey {
+  string value = 2;
+}
+
+// package:flutter/src/widgets/framework.dart
+message FlutterLabeledGlobalKey {
+  string debug_label = 2;
+}
+
+// package:flutter/src/widgets/framework.dart
+message FlutterObjectKey {
+  
+}
+
+// package:flutter/src/foundation/key.dart
+message FlutterUniqueKey {
+  
+}
+
+// package:flutter/src/painting/strut_style.dart
+message FlutterStrutStyle {
+  string font_family = 2;
+  repeated string font_family_fallback = 3;
+  double font_size = 4;
+  double height = 5;
+  DartTextLeadingDistribution.Enum leading_distribution = 6;
+  double leading = 7;
+  DartFontStyle.Enum font_style = 9;
+  bool force_strut_height = 10;
+  string debug_label = 11;
+  string package = 12;
+}
+
+// package:flutter/src/painting/strut_style.dart
+message FlutterStrutStyleNamedFromTextStyle {
+  FlutterTextStyleExpression text_style = 2;
+  string font_family = 3;
+  repeated string font_family_fallback = 4;
+  double font_size = 5;
+  double height = 6;
+  DartTextLeadingDistribution.Enum leading_distribution = 7;
+  double leading = 8;
+  DartFontStyle.Enum font_style = 10;
+  bool force_strut_height = 11;
+  string debug_label = 12;
+  string package = 13;
+}
+
+// package:flutter/src/services/system_chrome.dart
+message FlutterSystemUiOverlayStyle {
+  DartColorExpression system_navigation_bar_color = 2;
+  DartColorExpression system_navigation_bar_divider_color = 3;
+  DartBrightness.Enum system_navigation_bar_icon_brightness = 4;
+  bool system_navigation_bar_contrast_enforced = 5;
+  DartColorExpression status_bar_color = 6;
+  DartBrightness.Enum status_bar_brightness = 7;
+  DartBrightness.Enum status_bar_icon_brightness = 8;
+  bool system_status_bar_contrast_enforced = 9;
+}
+
+// package:flutter/src/painting/text_style.dart
+message FlutterTextStyle {
+  bool inherit = 2;
+  DartColorExpression color = 3;
+  DartColorExpression background_color = 4;
+  double font_size = 5;
+  DartFontStyle.Enum font_style = 7;
+  double letter_spacing = 8;
+  double word_spacing = 9;
+  DartTextBaseline.Enum text_baseline = 10;
+  double height = 11;
+  DartTextLeadingDistribution.Enum leading_distribution = 12;
+  DartColorExpression decoration_color = 20;
+  DartTextDecorationStyle.Enum decoration_style = 21;
+  double decoration_thickness = 22;
+  string debug_label = 23;
+  string font_family = 24;
+  repeated string font_family_fallback = 25;
+  string package = 26;
+  FlutterTextOverflow.Enum overflow = 27;
+}
+
+// package:flutter/src/material/button_style.dart
+message MaterialButtonStyle {
+  MaterialMaterialTapTargetSize.Enum tap_target_size = 19;
+  DartDurationExpression animation_duration = 20;
+  bool enable_feedback = 21;
+}
+
+// package:flutter/src/material/menu_style.dart
+message MaterialMenuStyle {
+  
+}
+
+
+// dart:ui
+message DartColorExpression {
+  oneof result {
+    CupertinoDynamicColor cupertino_dynamic_color = 2;
+    CupertinoDynamicColorNamedWithBrightness cupertino_dynamic_color_named_with_brightness = 3;
+    CupertinoDynamicColorNamedWithBrightnessAndContrast cupertino_dynamic_color_named_with_brightness_and_contrast = 4;
+    DartColor dart_color = 5;
+    DartColorNamedFromARGB dart_color_named_from_a_r_g_b = 6;
+    DartColorNamedFromRGBO dart_color_named_from_r_g_b_o = 7;
+  }
+}
+
+// dart:core
+message DartDurationExpression {
+  oneof result {
+    DartDuration dart_duration = 2;
+  }
+}
+
+// package:flutter/src/painting/edge_insets.dart
+message FlutterEdgeInsetsGeometryExpression {
+  oneof result {
+    FlutterEdgeInsetsDirectionalNamedAll flutter_edge_insets_directional_named_all = 2;
+    FlutterEdgeInsetsDirectionalNamedFromSTEB flutter_edge_insets_directional_named_from_s_t_e_b = 3;
+    FlutterEdgeInsetsDirectionalNamedOnly flutter_edge_insets_directional_named_only = 4;
+    FlutterEdgeInsetsDirectionalNamedSymmetric flutter_edge_insets_directional_named_symmetric = 5;
+    FlutterEdgeInsetsNamedAll flutter_edge_insets_named_all = 6;
+    FlutterEdgeInsetsNamedFromLTRB flutter_edge_insets_named_from_l_t_r_b = 7;
+    FlutterEdgeInsetsNamedOnly flutter_edge_insets_named_only = 8;
+    FlutterEdgeInsetsNamedSymmetric flutter_edge_insets_named_symmetric = 9;
+  }
+}
+
+// package:flutter/src/foundation/key.dart
+message FlutterKeyExpression {
+  oneof result {
+    FlutterGlobalKey flutter_global_key = 2;
+    FlutterKey flutter_key = 3;
+    FlutterLabeledGlobalKey flutter_labeled_global_key = 4;
+    FlutterObjectKey flutter_object_key = 5;
+    FlutterUniqueKey flutter_unique_key = 6;
+  }
+}
+
+// package:flutter/src/painting/strut_style.dart
+message FlutterStrutStyleExpression {
+  oneof result {
+    FlutterStrutStyle flutter_strut_style = 2;
+    FlutterStrutStyleNamedFromTextStyle flutter_strut_style_named_from_text_style = 3;
+  }
+}
+
+// package:flutter/src/services/system_chrome.dart
+message FlutterSystemUiOverlayStyleExpression {
+  oneof result {
+    FlutterSystemUiOverlayStyle flutter_system_ui_overlay_style = 2;
+  }
+}
+
+// package:flutter/src/painting/text_style.dart
+message FlutterTextStyleExpression {
+  oneof result {
+    FlutterTextStyle flutter_text_style = 2;
+  }
+}
+
+// package:flutter/src/material/button_style.dart
+message MaterialButtonStyleExpression {
+  oneof result {
+    MaterialButtonStyle material_button_style = 2;
+  }
+}
+
+// package:flutter/src/material/menu_style.dart
+message MaterialMenuStyleExpression {
+  oneof result {
+    MaterialMenuStyle material_menu_style = 2;
+  }
+}
+
 
 // package:flutter/src/cupertino/dialog.dart
 message CupertinoActionSheet {
@@ -4358,7 +4653,7 @@ message MaterialVerticalDivider {
   DartColorExpression color = 7;
 }
 
-    
+
 message WidgetExpression {
   oneof result {
     CupertinoActionSheet cupertino_action_sheet = 2;

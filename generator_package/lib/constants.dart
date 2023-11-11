@@ -1,34 +1,30 @@
-const kProtoFieldStartNumber = 2;
+const protoFieldStartNumber = 2;
 
-const kWidgetExpression = 'WidgetExpression';
+const widgetExpression = 'WidgetExpression';
 
-const kEvaluateWidgetExpression = 'evaluateWidgetExpression';
+const evaluateWidgetExpression = 'evaluateWidgetExpression';
 
-const kEvaluateRequiredWidgetExpression = 'evaluateRequiredWidgetExpression';
+const evaluateRequiredWidgetExpression = 'evaluateRequiredWidgetExpression';
 
-const kThrowMissing = 'missing';
+const throwMissingName = 'missing';
 
-const kEnumsProto = 'enums.proto';
+const enumsProto = 'enums.proto';
 
-const kTypesProto = 'types.proto';
+const messageProtoFile = 'messages.proto';
 
-const kWidgetsProto = 'widgets.proto';
+const serviceProtoFile = 'service.proto';
 
-const kServiceProto = 'service.proto';
+const convertEnumsFile = 'builders/convert_enums.sdu.dart';
 
-const kEnumBuilderFile = 'builders/evaluate_enum_expressions.sdu.dart';
+const evaluateExpressionsFile = 'builders/evaluate_expressions.sdu.dart';
 
-const kTypeBuilderFile = 'builders/evaluate_type_expressions.sdu.dart';
-
-const kWidgetBuilderFile = 'builders/evaluate_widget_expression.sdu.dart';
-
-const kGeneratedFileHeader = '''
+const generatedFileHeader = '''
 //
 //  Generated. Do not modify.
 //''';
 
 // TODO document drawback
-const kDisallowedFieldNames = {
+const disallowedFieldNames = {
   '\$_whichOneof',
   '_defaultInstance',
   '_emptyReviver',

@@ -63,7 +63,7 @@ class Constructor {
   }
 
   String toProtoField(int index) {
-    return '${messageName.pascalCase} ${messageName.snakeCase} = ${index + kProtoFieldStartNumber};';
+    return '${messageName.pascalCase} ${messageName.snakeCase} = ${index + protoFieldStartNumber};';
   }
 
   String toProtoMessage() {
@@ -78,13 +78,12 @@ message ${messageName.pascalCase} {
   String toDartSwitchCase(
     String protoImportAlias,
     String expressionName,
-    String? typeEvalAlias,
   ) {
     final fieldName = messageName.camelCase;
     final constructorCall =
         '$importAlias.$typeName${constructorName != null ? ".$constructorName" : ""}';
     final constructorParameters = parameters
-        .map((p) => p.toDartParameter(fieldName, typeEvalAlias))
+        .map((p) => p.toDartParameter(fieldName))
         .whereType<String>()
         .join(',\n          ');
     return '''

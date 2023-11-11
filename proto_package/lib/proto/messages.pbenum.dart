@@ -1,6 +1,6 @@
 //
 //  Generated code. Do not modify.
-//  source: widgets.proto
+//  source: messages.proto
 //
 // @dart = 2.12
 

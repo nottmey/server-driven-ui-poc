@@ -44,11 +44,11 @@ class Parameter {
       element: element,
       name: ReCase(element.name),
       typeMapping: element.type.toTypeMapping(),
-      fieldNumber: index + kProtoFieldStartNumber,
+      fieldNumber: index + protoFieldStartNumber,
       isNamed: element.isNamed,
       isNullable: element.type.nullabilitySuffix == NullabilitySuffix.question,
       isGeneric: element.type is TypeParameterType,
-      hasNameCollision: kDisallowedFieldNames.contains(element.name),
+      hasNameCollision: disallowedFieldNames.contains(element.name),
       defaultValueImports: defaultValueImports,
       defaultValueSource: defaultValueSource,
     );
@@ -64,7 +64,7 @@ class Parameter {
     }
   }
 
-  String? toDartParameter(String fieldName, String? typeEvalAlias) {
+  String? toDartParameter(String fieldName) {
     final namedParamPrefix = isNamed ? '${name.originalText}: ' : '';
     if (typeMapping == null) {
       // setting unbound generic params to null leads to errors (which we can't handle right now)
@@ -76,9 +76,9 @@ class Parameter {
     final nullChecker = 'tree.$fieldName.has${name.pascalCase}$postfix()';
 
     final generateDefaultValue = defaultValueSource ??
-        (isNullable ? 'null' : "$kThrowMissing('${name.camelCase}')");
+        (isNullable ? 'null' : "$throwMissingName('${name.camelCase}')");
 
-    final evalFn = typeMapping?.toDartEvalFn(typeEvalAlias);
+    final evalFn = typeMapping?.toDartEvalFn();
     final isRepeated =
         typeMapping?.structureStrategy == StructureStrategy.treatAsRepeated;
     if (evalFn != null) {

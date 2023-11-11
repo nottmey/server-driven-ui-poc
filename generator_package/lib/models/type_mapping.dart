@@ -65,7 +65,7 @@ extension TypeMappingCreationExtension on DartType {
     } else if (isWidgetTypeExactly) {
       return TypeMapping._of(
         dartType: this,
-        messageName: kWidgetExpression,
+        messageName: widgetExpression,
         mappingStrategy: MappingStrategy.generateWidgetMessage,
       );
     } else if (this is InterfaceType) {
@@ -228,7 +228,7 @@ ${enumElement.fields.where((f) => f.name != 'values').map((f) {
 
   String toDartTypeSwitchCase(Iterable<Constructor> constructors) {
     return '''
-$importAlias.$typeName evaluateRequired$messageName(types.$messageName tree) {
+$importAlias.$typeName evaluateRequired$messageName(messages.$messageName tree) {
   final result = evaluate$messageName(tree);
   if(result != null) {
     return result;
@@ -237,13 +237,13 @@ $importAlias.$typeName evaluateRequired$messageName(types.$messageName tree) {
   }
 }
 
-$importAlias.$typeName? evaluate$messageName(types.$messageName? tree) {
+$importAlias.$typeName? evaluate$messageName(messages.$messageName? tree) {
   if(tree == null) {
     return null;
   }
 
   switch (tree.whichResult()) {
-${constructors.map((c) => c.toDartSwitchCase('types', messageName, null)).join("\n")}
+${constructors.map((c) => c.toDartSwitchCase('messages', messageName)).join("\n")}
     default:
       return null;
   }
@@ -251,7 +251,7 @@ ${constructors.map((c) => c.toDartSwitchCase('types', messageName, null)).join("
 ''';
   }
 
-  String? toDartEvalFn(String? typeEvalAlias) {
+  String? toDartEvalFn() {
     final isOptionalInEvaluation =
         dartType.nullabilitySuffix == NullabilitySuffix.question &&
             structureStrategy == StructureStrategy.treatAsSingular;
@@ -260,14 +260,13 @@ ${constructors.map((c) => c.toDartSwitchCase('types', messageName, null)).join("
       case MappingStrategy.useProtoEquivalent:
         return null;
       case MappingStrategy.generatePayloadMessage:
-        final prefix = typeEvalAlias == null ? '' : '$typeEvalAlias.';
         return isOptionalInEvaluation
-            ? '${prefix}evaluate$messageName'
-            : '${prefix}evaluateRequired$messageName';
+            ? 'evaluate$messageName'
+            : 'evaluateRequired$messageName';
       case MappingStrategy.generateWidgetMessage:
         return isOptionalInEvaluation
-            ? kEvaluateWidgetExpression
-            : kEvaluateRequiredWidgetExpression;
+            ? evaluateWidgetExpression
+            : evaluateRequiredWidgetExpression;
       case MappingStrategy.generateEnum:
         return isOptionalInEvaluation
             ? 'enums.convert$messageName'

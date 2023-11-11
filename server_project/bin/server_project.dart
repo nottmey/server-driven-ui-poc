@@ -4,9 +4,8 @@ import 'dart:math';
 
 import 'package:grpc/grpc.dart';
 import 'package:proto_package/proto/enums.pbenum.dart';
+import 'package:proto_package/proto/messages.pb.dart';
 import 'package:proto_package/proto/service.pbgrpc.dart';
-import 'package:proto_package/proto/types.pb.dart';
-import 'package:proto_package/proto/widgets.pb.dart';
 
 Future<void> main(List<String> args) async {
   final server = Server.create(

@@ -16,7 +16,7 @@
 
 - [generator_package/bin/generator_package.dart](generator_package/bin/generator_package.dart)
   starts the analysis and generation of all internal and external dart files.
-- [proto_package/proto/widgets.proto](proto_package/proto/widgets.proto)
+- [proto_package/proto/messages.proto](proto_package/proto/messages.proto)
   contains the (nearly) complete recursive widget protocol for the whole (!!!)
   flutter standard library. Ideally the generator would not be applied to the
   raw and full library, but just to certain parts combined with a well-defined
