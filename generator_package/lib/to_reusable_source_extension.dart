@@ -64,6 +64,10 @@ extension ToReusableSourceExtension on Expression {
           referencedElement.isPublic) {
         // TODO import default function reference, see method above how to do this
         return (null, null);
+      } else if (referencedElement is FunctionElement &&
+          referencedElement.isPrivate) {
+        // TODO copy referenced private function
+        return (null, null);
       } else {
         throw AssertionError(
           'reference ${referencedElement?.name} was not a parsable default value',

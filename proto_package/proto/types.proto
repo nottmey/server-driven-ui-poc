@@ -4,6 +4,8 @@
 
 syntax = "proto3";
 
+import "enums.proto";
+
 // package:flutter/src/cupertino/colors.dart
 message CupertinoDynamicColor {
   string debug_label = 2;

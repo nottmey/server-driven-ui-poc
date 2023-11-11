@@ -7,6 +7,7 @@ import 'package:generator_package/is_widget_extensions.dart';
 import 'package:generator_package/models/constructor.dart';
 import 'package:generator_package/to_library_prefix_extension.dart';
 import 'package:generator_package/to_self_contained_library_alias_extension.dart';
+import 'package:generator_package/usable_constructors_extension.dart';
 import 'package:recase/recase.dart';
 
 enum MappingStrategy {
@@ -64,7 +65,7 @@ extension TypeMappingCreationExtension on DartType {
     } else if (isWidgetTypeExactly) {
       return TypeMapping._of(
         dartType: this,
-        protoType: kWidgetExpression,
+        messageName: kWidgetExpression,
         mappingStrategy: MappingStrategy.generateWidgetMessage,
       );
     } else if (this is InterfaceType) {
@@ -74,16 +75,18 @@ extension TypeMappingCreationExtension on DartType {
       if (element is EnumElement) {
         return TypeMapping._of(
           dartType: this,
-          protoType: '$libraryPrefix$name',
+          messageName: '$libraryPrefix$name',
           mappingStrategy: MappingStrategy.generateEnum,
         );
       } else if (name == 'Key' ||
-          name == 'Duration' ||
-          name == 'Color' ||
-          name == 'EdgeInsetsGeometry') {
+              name == 'Duration' ||
+              name == 'Color' ||
+              name == 'EdgeInsetsGeometry'
+          // TODO || name?.contains('Style') == true
+          ) {
         return TypeMapping._of(
           dartType: this,
-          protoType: '$libraryPrefix${name}Expression',
+          messageName: '$libraryPrefix${name}Expression',
           mappingStrategy: MappingStrategy.generatePayloadMessage,
         );
       } else if (element is ClassElement) {
@@ -99,10 +102,10 @@ extension TypeMappingCreationExtension on DartType {
     }
   }
 
-  TypeMapping _directEquivalentTypeMapping(String protoType) {
+  TypeMapping _directEquivalentTypeMapping(String messageName) {
     return TypeMapping._of(
       dartType: this,
-      protoType: protoType,
+      messageName: messageName,
       mappingStrategy: MappingStrategy.useProtoEquivalent,
     );
   }
@@ -110,7 +113,7 @@ extension TypeMappingCreationExtension on DartType {
 
 class TypeMapping {
   final DartType dartType;
-  final String protoType;
+  final String messageName;
   final MappingStrategy mappingStrategy;
   final StructureStrategy structureStrategy;
   final String? typeName;
@@ -119,7 +122,7 @@ class TypeMapping {
 
   TypeMapping._of({
     required this.dartType,
-    required this.protoType,
+    required this.messageName,
     required this.mappingStrategy,
     this.structureStrategy = StructureStrategy.treatAsSingular,
   })  : typeName = dartType.element?.name,
@@ -129,10 +132,26 @@ class TypeMapping {
   TypeMapping toRepeated() {
     return TypeMapping._of(
       dartType: dartType,
-      protoType: protoType,
+      messageName: messageName,
       mappingStrategy: mappingStrategy,
       structureStrategy: StructureStrategy.treatAsRepeated,
     );
+  }
+
+  Iterable<Constructor> findPayloadConstructors(
+    Iterable<Constructor> generallyKnownConstructors,
+  ) {
+    final typeElement = dartType.element;
+    if (typeElement is ClassElement) {
+      return {
+        // we know these can construct the type
+        ...typeElement.usableConstructors,
+        ...generallyKnownConstructors
+            .where((c) => c.canConstructType(dartType)),
+      }.sortedBy((c) => c.messageName.originalText);
+    } else {
+      throw AssertionError('dart type $dartType element was not a class');
+    }
   }
 
   String toFieldType() {
@@ -141,7 +160,7 @@ class TypeMapping {
         : '';
     final postfix =
         mappingStrategy == MappingStrategy.generateEnum ? '.Enum' : '';
-    return prefix + protoType + postfix;
+    return prefix + messageName + postfix;
   }
 
   String? toProtoEnum() {
@@ -152,7 +171,7 @@ class TypeMapping {
 
     return '''
 // ${element.librarySource.uri}
-message $protoType {
+message $messageName {
   enum Enum {
     ${element.fields.where((f) => f.name != 'values').mapIndexed((i, e) {
       return "${ReCase(e.name).constantCase} = $i;";
@@ -165,7 +184,7 @@ message $protoType {
   String toProtoMessage(Iterable<Constructor> typeConstructors) {
     return '''
 // ${dartType.element?.librarySource?.uri ?? '<no source>'}
-message $protoType {
+message $messageName {
   oneof result {
     ${typeConstructors.mapIndexed((i, c) => c.toProtoField(i)).join("\n    ")}
   }
@@ -184,20 +203,20 @@ message $protoType {
     }
 
     return '''
-$importAlias.$typeName convertRequired$protoType(enums.${protoType}_Enum enumValue) {
-  final result = convert$protoType(enumValue);
+$importAlias.$typeName convertRequired$messageName(enums.${messageName}_Enum enumValue) {
+  final result = convert$messageName(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum $protoType');
+    throw core.AssertionError('unable to parse required enum $messageName');
   }
 }
 
-$importAlias.$typeName? convert$protoType(enums.${protoType}_Enum enumValue) {
+$importAlias.$typeName? convert$messageName(enums.${messageName}_Enum enumValue) {
   switch (enumValue) {
 ${enumElement.fields.where((f) => f.name != 'values').map((f) {
       return '''
-    case enums.${protoType}_Enum.${ReCase(f.name).constantCase}:
+    case enums.${messageName}_Enum.${ReCase(f.name).constantCase}:
       return $importAlias.$typeName.${f.name};''';
     }).join("\n")}
     default:
@@ -209,8 +228,8 @@ ${enumElement.fields.where((f) => f.name != 'values').map((f) {
 
   String toDartTypeSwitchCase(Iterable<Constructor> constructors) {
     return '''
-$importAlias.$typeName evaluateRequired$protoType(types.$protoType tree) {
-  final result = evaluate$protoType(tree);
+$importAlias.$typeName evaluateRequired$messageName(types.$messageName tree) {
+  final result = evaluate$messageName(tree);
   if(result != null) {
     return result;
   } else {
@@ -218,13 +237,13 @@ $importAlias.$typeName evaluateRequired$protoType(types.$protoType tree) {
   }
 }
 
-$importAlias.$typeName? evaluate$protoType(types.$protoType? tree) {
+$importAlias.$typeName? evaluate$messageName(types.$messageName? tree) {
   if(tree == null) {
     return null;
   }
 
   switch (tree.whichResult()) {
-${constructors.map((c) => c.toDartSwitchCase('types', protoType, null)).join("\n")}
+${constructors.map((c) => c.toDartSwitchCase('types', messageName, null)).join("\n")}
     default:
       return null;
   }
@@ -243,16 +262,26 @@ ${constructors.map((c) => c.toDartSwitchCase('types', protoType, null)).join("\n
       case MappingStrategy.generatePayloadMessage:
         final prefix = typeEvalAlias == null ? '' : '$typeEvalAlias.';
         return isOptionalInEvaluation
-            ? '${prefix}evaluate$protoType'
-            : '${prefix}evaluateRequired$protoType';
+            ? '${prefix}evaluate$messageName'
+            : '${prefix}evaluateRequired$messageName';
       case MappingStrategy.generateWidgetMessage:
         return isOptionalInEvaluation
             ? kEvaluateWidgetExpression
             : kEvaluateRequiredWidgetExpression;
       case MappingStrategy.generateEnum:
         return isOptionalInEvaluation
-            ? 'enums.convert$protoType'
-            : 'enums.convertRequired$protoType';
+            ? 'enums.convert$messageName'
+            : 'enums.convertRequired$messageName';
     }
+  }
+
+  @override
+  int get hashCode => dartType.element.hashCode;
+
+  @override
+  bool operator ==(Object other) {
+    return other is TypeMapping &&
+        other.runtimeType == runtimeType &&
+        other.dartType.element == dartType.element;
   }
 }

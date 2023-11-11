@@ -8,6 +8,8 @@ import 'package:generator_package/to_reusable_source_extension.dart';
 import 'package:recase/recase.dart';
 
 class Parameter {
+  final ParameterElement element;
+
   // beware .originalText may be different from .camelCase if
   // field starts with underscore, e.g. `_debugLabel`
   final ReCase name;
@@ -21,6 +23,7 @@ class Parameter {
   final String? defaultValueSource;
 
   Parameter({
+    required this.element,
     required this.name,
     required this.typeMapping,
     required this.fieldNumber,
@@ -38,6 +41,7 @@ class Parameter {
         defaultValueExpression?.toReusableSource() ?? (null, null);
 
     return Parameter(
+      element: element,
       name: ReCase(element.name),
       typeMapping: element.type.toTypeMapping(),
       fieldNumber: index + kProtoFieldStartNumber,
@@ -92,5 +96,15 @@ class Parameter {
         return '$namedParamPrefix($nullChecker ? $getter : $generateDefaultValue)';
       }
     }
+  }
+
+  @override
+  int get hashCode => element.hashCode;
+
+  @override
+  bool operator ==(Object other) {
+    return other is Parameter &&
+        other.runtimeType == runtimeType &&
+        other.element == element;
   }
 }

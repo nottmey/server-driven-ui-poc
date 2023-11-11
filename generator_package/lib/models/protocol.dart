@@ -3,7 +3,6 @@ import 'package:collection/collection.dart';
 import 'package:generator_package/constants.dart';
 import 'package:generator_package/models/constructor.dart';
 import 'package:generator_package/models/type_mapping.dart';
-import 'package:generator_package/unique_by_key_extension.dart';
 import 'package:generator_package/usable_constructors_extension.dart';
 
 class Protocol {
@@ -20,76 +19,71 @@ class Protocol {
   });
 
   factory Protocol.ofElements(Iterable<LibraryElement> libraries) {
-    // TODO FunctionElement
-    // TODO EnumElement
-    // TODO TypeAliasElement
-    // TODO? PropertyAccessorElementImpl_ImplicitGetter
-    // TODO? MixinElementImpl
-    // TODO? ExtensionElementImpl
-    // TODO? PropertyAccessorElementImpl
-    // TODO? PropertyAccessorElementImpl_ImplicitSetter
     final allExportedClasses = libraries
         .expand((l) => l.exportNamespace.definedNames.values)
         .whereType<ClassElement>()
         .where((c) => !c.hasDeprecated)
         // may contain duplicates because of multiple export paths
-        .toSet()
-        .sortedBy((c) => '${c.librarySource.uri}@${c.name}');
+        .toSet();
 
     final exportedConstructorsGrouped = allExportedClasses
         .expand((c) => c.usableConstructors)
-        .map(Constructor.ofElement)
         .groupListsBy((c) => c.isWidgetConstructor);
     final exportedWidgetConstructors = exportedConstructorsGrouped[true]!;
     final exportedNonWidgetConstructors = exportedConstructorsGrouped[false]!;
 
-    // TODO do more levels than one (payload inside payload)
-    final firstLevelTypeMappings = exportedWidgetConstructors
-        .expand((c) => c.parameters)
-        .map((p) => p.typeMapping)
-        .whereType<TypeMapping>();
-
-    final enumTypeMappings = firstLevelTypeMappings
-        .where((m) => m.mappingStrategy == MappingStrategy.generateEnum)
-        .uniqueByKey((t) => t.dartType.element)
-        .sortedBy((t) => t.protoType);
-
-    final payloadTypeMappings = firstLevelTypeMappings
-        .where(
-          (m) => m.mappingStrategy == MappingStrategy.generatePayloadMessage,
-        )
-        .uniqueByKey((t) => t.dartType.element)
-        .sortedBy((t) => t.protoType);
-
-    // extracting direct constructors, because they are possibly not exported
-    final directNonWidgetPayloadConstructors = payloadTypeMappings
-        .map((e) => e.dartType.element)
-        .whereType<ClassElement>()
-        .toSet()
-        .expand((c) => c.usableConstructors)
-        .map(Constructor.ofElement)
-        .where((c) => !c.isWidgetConstructor);
-
-    final possiblePayloadConstructors = [
-      ...directNonWidgetPayloadConstructors,
-      ...exportedNonWidgetConstructors,
-    ].uniqueByKey((e) => e.element);
+    final payloadConstructors = <TypeMapping, Iterable<Constructor>>{};
+    final enumTypeMappings = <TypeMapping>{};
+    _fillPayloadsAndEnums(
+      payloadConstructors,
+      enumTypeMappings,
+      exportedNonWidgetConstructors,
+      exportedWidgetConstructors,
+    );
 
     return Protocol(
-      widgetConstructors: exportedWidgetConstructors,
-      enumTypeMappings: enumTypeMappings,
-      payloadTypeMappings: payloadTypeMappings,
-      payloadConstructors: Map.fromEntries(
-        payloadTypeMappings.map(
-          (t) => MapEntry(
-            t,
-            possiblePayloadConstructors
-                .where((c) => c.canConstructType(t.dartType))
-                .sortedBy((c) => c.messageName.originalText),
-          ),
-        ),
-      ),
+      widgetConstructors: exportedWidgetConstructors
+          .sortedBy((c) => c.messageName.originalText),
+      enumTypeMappings: enumTypeMappings.sortedBy((m) => m.messageName),
+      payloadTypeMappings:
+          payloadConstructors.keys.sortedBy((m) => m.messageName),
+      payloadConstructors: payloadConstructors,
     );
+  }
+
+  static void _fillPayloadsAndEnums(
+    Map<TypeMapping, Iterable<Constructor>> growablePayloads,
+    Set<TypeMapping> growableEnums,
+    Iterable<Constructor> generallyKnownConstructors,
+    Iterable<Constructor> toBeVisited,
+  ) {
+    for (final constructor in toBeVisited) {
+      for (final parameter in constructor.parameters) {
+        final paramType = parameter.typeMapping;
+        if (paramType != null) {
+          switch (paramType.mappingStrategy) {
+            case MappingStrategy.generateEnum:
+              growableEnums.add(paramType);
+            case MappingStrategy.generatePayloadMessage:
+              // prevents cycling
+              final alreadyVisited = growablePayloads.containsKey(paramType);
+              if (!alreadyVisited) {
+                final paramTypeConstructors = paramType
+                    .findPayloadConstructors(generallyKnownConstructors);
+                growablePayloads[paramType] = paramTypeConstructors;
+                // recursive depth first search
+                _fillPayloadsAndEnums(
+                  growablePayloads,
+                  growableEnums,
+                  generallyKnownConstructors,
+                  paramTypeConstructors,
+                );
+              }
+            default: // ignored
+          }
+        }
+      }
+    }
   }
 
   String toEnumsProto() {
@@ -107,6 +101,8 @@ ${enumTypeMappings.map((m) => m.toProtoEnum()).whereType<String>().join("\n")}
 $kGeneratedFileHeader
 
 syntax = "proto3";
+
+import "$kEnumsProto";
 
 ${payloadTypeMappings.expand((m) => payloadConstructors[m]!).map((c) => c.toProtoMessage()).join("\n")}
 
@@ -175,7 +171,7 @@ ${enumTypeMappings.map((m) => m.toDartEnumSwitchCase()).whereType<String>().join
 
   String toTypesBuilderCode() {
     final entries =
-        payloadConstructors.entries.sortedBy((e) => e.key.protoType);
+        payloadConstructors.entries.sortedBy((e) => e.key.messageName);
 
     final imports = {
       ...entries.map((e) => e.key.toDartImport()),

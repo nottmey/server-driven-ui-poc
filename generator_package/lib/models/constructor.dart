@@ -96,4 +96,14 @@ message ${messageName.pascalCase} {
   String toDartImport() {
     return "import '$importUri' as $importAlias;";
   }
+
+  @override
+  int get hashCode => element.hashCode;
+
+  @override
+  bool operator ==(Object other) {
+    return other is Constructor &&
+        other.runtimeType == runtimeType &&
+        other.element == element;
+  }
 }
