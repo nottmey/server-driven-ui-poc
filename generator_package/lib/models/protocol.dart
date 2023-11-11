@@ -70,13 +70,22 @@ class Protocol {
               if (!alreadyVisited) {
                 final paramTypeConstructors = paramType
                     .findPayloadConstructors(generallyKnownConstructors);
-                growablePayloads[paramType] = paramTypeConstructors;
+
+                final nonWidgetConstructors =
+                    paramTypeConstructors.where((c) => !c.isWidgetConstructor);
+
+                // debugger(
+                //   when: paramTypeConstructors.length !=
+                //       nonWidgetConstructors.length,
+                // );
+
+                growablePayloads[paramType] = nonWidgetConstructors;
                 // recursive depth first search
                 _fillPayloadsAndEnums(
                   growablePayloads,
                   growableEnums,
                   generallyKnownConstructors,
-                  paramTypeConstructors,
+                  nonWidgetConstructors,
                 );
               }
             default: // ignored
@@ -104,7 +113,7 @@ syntax = "proto3";
 
 import "$kEnumsProto";
 
-${payloadTypeMappings.expand((m) => payloadConstructors[m]!).map((c) => c.toProtoMessage()).join("\n")}
+${payloadTypeMappings.expand((m) => payloadConstructors[m]!).toSet().map((c) => c.toProtoMessage()).join("\n")}
 
 ${payloadTypeMappings.map((m) => m.toProtoMessage(payloadConstructors[m]!)).join("\n")}
 ''';

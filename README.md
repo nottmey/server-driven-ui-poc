@@ -61,20 +61,24 @@ flutter run
 
 ### Limitations
 
-- we can't use build_runner since we may not know the output in advance, and we
-  seem to not be able to analyze external dependencies directly
-- we can only define recursive structures like the widget tree inside the same
-  proto file, which forces us to define all widgets in the same file
-- currently we can't differentiate easily whether a parameter is explicitly set
+- We can't use build_runner since we may not know the output in advance, and we
+  seem to not be able to analyze external dependencies directly.
+- We can only define recursive structures like the widget tree inside the same
+  proto file, which forces us to define all widgets in the same file.
+  Also, widget parameters may also contain nested widget and widget parameter
+  types may also form recursive structures.
+  This forces us to put all generated messages (except enums) into the same
+  proto file.
+- Currently, we can't differentiate easily whether a parameter is explicitly set
   to null or just unset, because protocol buffers only know the set/unset
   semantic (this would be solvable by another level of indirection for every
   parameter type: using a `oneof` with either the value or a bool which tracks
   the `explicitly_null` state, which doesn't seem practical)
-- currently we only use default values when they are a literal by copying them
-  from their source (when value is optional and unset at runtime); other default
-  values are hard to re-use because of needed imports or using inaccessible
-  constants
-- multiple protocol buffer enums can't use the same names within the same scope,
+- Currently, we only use default values when they are a literal by copying them
+  from their source (when value is optional and unset at runtime).
+  Other default values are hard to re-use because of needed imports or using
+  inaccessible constants.
+- Multiple protocol buffer enums can't use the same names within the same scope,
   so we have to use pseudo messages as context for their definition. In the
   following example `LEFT` and `RIGHT` can't be reused.
   ```protobuf
