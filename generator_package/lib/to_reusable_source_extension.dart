@@ -17,6 +17,7 @@ import 'package:generator_package/to_self_contained_library_alias_extension.dart
   return (["import '$uri' as $alias;"], '$alias.$classPrefix$refName');
 }
 
+// TODO hide references to hidden constants (e.g. just visible for testing)
 extension ToReusableSourceExtension on Expression {
   (List<String>? imports, String? source)? toReusableSource() {
     if (this is Literal) {

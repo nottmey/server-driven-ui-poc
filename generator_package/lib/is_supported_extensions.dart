@@ -9,7 +9,8 @@ extension TypeSupportedExtension on ConstructorElement {
     return parameters.isEmpty ||
         parameters.every(
           (element) =>
-              element.type.nullabilitySuffix == NullabilitySuffix.question ||
+              (element.type.nullabilitySuffix == NullabilitySuffix.question &&
+                  element.type is! TypeParameterType) ||
               element.isOptionalNamed ||
               element.type.isSupportedAsParameter,
         );

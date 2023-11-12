@@ -2,6 +2,7 @@ import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/dart/element/nullability_suffix.dart';
 import 'package:analyzer/dart/element/type.dart';
 import 'package:generator_package/constants.dart';
+import 'package:generator_package/models/constructor.dart';
 import 'package:generator_package/models/type_mapping.dart';
 import 'package:generator_package/to_default_value_expression_extension.dart';
 import 'package:generator_package/to_reusable_source_extension.dart';
@@ -64,11 +65,20 @@ class Parameter {
     }
   }
 
-  String? toDartParameter(String fieldName) {
+  String? toDartParameter(
+    String fieldName,
+    Map<TypeMapping, Iterable<Constructor>> allConstructors,
+  ) {
     final namedParamPrefix = isNamed ? '${name.originalText}: ' : '';
     if (typeMapping == null) {
       // setting unbound generic params to null leads to errors (which we can't handle right now)
       return isNullable && !isGeneric ? '${namedParamPrefix}null' : null;
+    }
+    if (allConstructors[typeMapping]?.isEmpty == true) {
+      // no constructor available, type not usable (we only know this after determining all constructors)
+      return isNullable
+          ? '${namedParamPrefix}null'
+          : "$namedParamPrefix$throwMissingName('${name.camelCase}')";
     }
 
     final postfix = hasNameCollision ? '_$fieldNumber' : ''; // anti collision

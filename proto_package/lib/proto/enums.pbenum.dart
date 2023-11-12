@@ -97,6 +97,25 @@ class DartBlendMode_Enum extends $pb.ProtobufEnum {
   const DartBlendMode_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
+class DartBlurStyle_Enum extends $pb.ProtobufEnum {
+  static const DartBlurStyle_Enum NORMAL = DartBlurStyle_Enum._(0, _omitEnumNames ? '' : 'NORMAL');
+  static const DartBlurStyle_Enum SOLID = DartBlurStyle_Enum._(1, _omitEnumNames ? '' : 'SOLID');
+  static const DartBlurStyle_Enum OUTER = DartBlurStyle_Enum._(2, _omitEnumNames ? '' : 'OUTER');
+  static const DartBlurStyle_Enum INNER = DartBlurStyle_Enum._(3, _omitEnumNames ? '' : 'INNER');
+
+  static const $core.List<DartBlurStyle_Enum> values = <DartBlurStyle_Enum> [
+    NORMAL,
+    SOLID,
+    OUTER,
+    INNER,
+  ];
+
+  static final $core.Map<$core.int, DartBlurStyle_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static DartBlurStyle_Enum? valueOf($core.int value) => _byValue[value];
+
+  const DartBlurStyle_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
 class DartBoxHeightStyle_Enum extends $pb.ProtobufEnum {
   static const DartBoxHeightStyle_Enum TIGHT = DartBoxHeightStyle_Enum._(0, _omitEnumNames ? '' : 'TIGHT');
   static const DartBoxHeightStyle_Enum MAX = DartBoxHeightStyle_Enum._(1, _omitEnumNames ? '' : 'MAX');
@@ -169,6 +188,42 @@ class DartClip_Enum extends $pb.ProtobufEnum {
   const DartClip_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
+class DartDisplayFeatureState_Enum extends $pb.ProtobufEnum {
+  static const DartDisplayFeatureState_Enum UNKNOWN = DartDisplayFeatureState_Enum._(0, _omitEnumNames ? '' : 'UNKNOWN');
+  static const DartDisplayFeatureState_Enum POSTURE_FLAT = DartDisplayFeatureState_Enum._(1, _omitEnumNames ? '' : 'POSTURE_FLAT');
+  static const DartDisplayFeatureState_Enum POSTURE_HALF_OPENED = DartDisplayFeatureState_Enum._(2, _omitEnumNames ? '' : 'POSTURE_HALF_OPENED');
+
+  static const $core.List<DartDisplayFeatureState_Enum> values = <DartDisplayFeatureState_Enum> [
+    UNKNOWN,
+    POSTURE_FLAT,
+    POSTURE_HALF_OPENED,
+  ];
+
+  static final $core.Map<$core.int, DartDisplayFeatureState_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static DartDisplayFeatureState_Enum? valueOf($core.int value) => _byValue[value];
+
+  const DartDisplayFeatureState_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class DartDisplayFeatureType_Enum extends $pb.ProtobufEnum {
+  static const DartDisplayFeatureType_Enum UNKNOWN = DartDisplayFeatureType_Enum._(0, _omitEnumNames ? '' : 'UNKNOWN');
+  static const DartDisplayFeatureType_Enum FOLD = DartDisplayFeatureType_Enum._(1, _omitEnumNames ? '' : 'FOLD');
+  static const DartDisplayFeatureType_Enum HINGE = DartDisplayFeatureType_Enum._(2, _omitEnumNames ? '' : 'HINGE');
+  static const DartDisplayFeatureType_Enum CUTOUT = DartDisplayFeatureType_Enum._(3, _omitEnumNames ? '' : 'CUTOUT');
+
+  static const $core.List<DartDisplayFeatureType_Enum> values = <DartDisplayFeatureType_Enum> [
+    UNKNOWN,
+    FOLD,
+    HINGE,
+    CUTOUT,
+  ];
+
+  static final $core.Map<$core.int, DartDisplayFeatureType_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static DartDisplayFeatureType_Enum? valueOf($core.int value) => _byValue[value];
+
+  const DartDisplayFeatureType_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
 class DartFilterQuality_Enum extends $pb.ProtobufEnum {
   static const DartFilterQuality_Enum NONE = DartFilterQuality_Enum._(0, _omitEnumNames ? '' : 'NONE');
   static const DartFilterQuality_Enum LOW = DartFilterQuality_Enum._(1, _omitEnumNames ? '' : 'LOW');
@@ -203,6 +258,29 @@ class DartFontStyle_Enum extends $pb.ProtobufEnum {
   const DartFontStyle_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
+class DartPlaceholderAlignment_Enum extends $pb.ProtobufEnum {
+  static const DartPlaceholderAlignment_Enum BASELINE = DartPlaceholderAlignment_Enum._(0, _omitEnumNames ? '' : 'BASELINE');
+  static const DartPlaceholderAlignment_Enum ABOVE_BASELINE = DartPlaceholderAlignment_Enum._(1, _omitEnumNames ? '' : 'ABOVE_BASELINE');
+  static const DartPlaceholderAlignment_Enum BELOW_BASELINE = DartPlaceholderAlignment_Enum._(2, _omitEnumNames ? '' : 'BELOW_BASELINE');
+  static const DartPlaceholderAlignment_Enum TOP = DartPlaceholderAlignment_Enum._(3, _omitEnumNames ? '' : 'TOP');
+  static const DartPlaceholderAlignment_Enum BOTTOM = DartPlaceholderAlignment_Enum._(4, _omitEnumNames ? '' : 'BOTTOM');
+  static const DartPlaceholderAlignment_Enum MIDDLE = DartPlaceholderAlignment_Enum._(5, _omitEnumNames ? '' : 'MIDDLE');
+
+  static const $core.List<DartPlaceholderAlignment_Enum> values = <DartPlaceholderAlignment_Enum> [
+    BASELINE,
+    ABOVE_BASELINE,
+    BELOW_BASELINE,
+    TOP,
+    BOTTOM,
+    MIDDLE,
+  ];
+
+  static final $core.Map<$core.int, DartPlaceholderAlignment_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static DartPlaceholderAlignment_Enum? valueOf($core.int value) => _byValue[value];
+
+  const DartPlaceholderAlignment_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
 class DartStrokeCap_Enum extends $pb.ProtobufEnum {
   static const DartStrokeCap_Enum BUTT = DartStrokeCap_Enum._(0, _omitEnumNames ? '' : 'BUTT');
   static const DartStrokeCap_Enum ROUND = DartStrokeCap_Enum._(1, _omitEnumNames ? '' : 'ROUND');
@@ -218,6 +296,21 @@ class DartStrokeCap_Enum extends $pb.ProtobufEnum {
   static DartStrokeCap_Enum? valueOf($core.int value) => _byValue[value];
 
   const DartStrokeCap_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class DartTextAffinity_Enum extends $pb.ProtobufEnum {
+  static const DartTextAffinity_Enum UPSTREAM = DartTextAffinity_Enum._(0, _omitEnumNames ? '' : 'UPSTREAM');
+  static const DartTextAffinity_Enum DOWNSTREAM = DartTextAffinity_Enum._(1, _omitEnumNames ? '' : 'DOWNSTREAM');
+
+  static const $core.List<DartTextAffinity_Enum> values = <DartTextAffinity_Enum> [
+    UPSTREAM,
+    DOWNSTREAM,
+  ];
+
+  static final $core.Map<$core.int, DartTextAffinity_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static DartTextAffinity_Enum? valueOf($core.int value) => _byValue[value];
+
+  const DartTextAffinity_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
 class DartTextAlign_Enum extends $pb.ProtobufEnum {
@@ -307,6 +400,25 @@ class DartTextLeadingDistribution_Enum extends $pb.ProtobufEnum {
   static DartTextLeadingDistribution_Enum? valueOf($core.int value) => _byValue[value];
 
   const DartTextLeadingDistribution_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class DartTileMode_Enum extends $pb.ProtobufEnum {
+  static const DartTileMode_Enum CLAMP = DartTileMode_Enum._(0, _omitEnumNames ? '' : 'CLAMP');
+  static const DartTileMode_Enum REPEATED = DartTileMode_Enum._(1, _omitEnumNames ? '' : 'REPEATED');
+  static const DartTileMode_Enum MIRROR = DartTileMode_Enum._(2, _omitEnumNames ? '' : 'MIRROR');
+  static const DartTileMode_Enum DECAL = DartTileMode_Enum._(3, _omitEnumNames ? '' : 'DECAL');
+
+  static const $core.List<DartTileMode_Enum> values = <DartTileMode_Enum> [
+    CLAMP,
+    REPEATED,
+    MIRROR,
+    DECAL,
+  ];
+
+  static final $core.Map<$core.int, DartTileMode_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static DartTileMode_Enum? valueOf($core.int value) => _byValue[value];
+
+  const DartTileMode_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
 class FlutterAutofillContextAction_Enum extends $pb.ProtobufEnum {
@@ -449,6 +561,63 @@ class FlutterBoxShape_Enum extends $pb.ProtobufEnum {
   const FlutterBoxShape_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
+class FlutterCacheExtentStyle_Enum extends $pb.ProtobufEnum {
+  static const FlutterCacheExtentStyle_Enum PIXEL = FlutterCacheExtentStyle_Enum._(0, _omitEnumNames ? '' : 'PIXEL');
+  static const FlutterCacheExtentStyle_Enum VIEWPORT = FlutterCacheExtentStyle_Enum._(1, _omitEnumNames ? '' : 'VIEWPORT');
+
+  static const $core.List<FlutterCacheExtentStyle_Enum> values = <FlutterCacheExtentStyle_Enum> [
+    PIXEL,
+    VIEWPORT,
+  ];
+
+  static final $core.Map<$core.int, FlutterCacheExtentStyle_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static FlutterCacheExtentStyle_Enum? valueOf($core.int value) => _byValue[value];
+
+  const FlutterCacheExtentStyle_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class FlutterClipboardStatus_Enum extends $pb.ProtobufEnum {
+  static const FlutterClipboardStatus_Enum PASTEABLE = FlutterClipboardStatus_Enum._(0, _omitEnumNames ? '' : 'PASTEABLE');
+  static const FlutterClipboardStatus_Enum UNKNOWN = FlutterClipboardStatus_Enum._(1, _omitEnumNames ? '' : 'UNKNOWN');
+  static const FlutterClipboardStatus_Enum NOT_PASTEABLE = FlutterClipboardStatus_Enum._(2, _omitEnumNames ? '' : 'NOT_PASTEABLE');
+
+  static const $core.List<FlutterClipboardStatus_Enum> values = <FlutterClipboardStatus_Enum> [
+    PASTEABLE,
+    UNKNOWN,
+    NOT_PASTEABLE,
+  ];
+
+  static final $core.Map<$core.int, FlutterClipboardStatus_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static FlutterClipboardStatus_Enum? valueOf($core.int value) => _byValue[value];
+
+  const FlutterClipboardStatus_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class FlutterContextMenuButtonType_Enum extends $pb.ProtobufEnum {
+  static const FlutterContextMenuButtonType_Enum CUT = FlutterContextMenuButtonType_Enum._(0, _omitEnumNames ? '' : 'CUT');
+  static const FlutterContextMenuButtonType_Enum COPY = FlutterContextMenuButtonType_Enum._(1, _omitEnumNames ? '' : 'COPY');
+  static const FlutterContextMenuButtonType_Enum PASTE = FlutterContextMenuButtonType_Enum._(2, _omitEnumNames ? '' : 'PASTE');
+  static const FlutterContextMenuButtonType_Enum SELECT_ALL = FlutterContextMenuButtonType_Enum._(3, _omitEnumNames ? '' : 'SELECT_ALL');
+  static const FlutterContextMenuButtonType_Enum DELETE = FlutterContextMenuButtonType_Enum._(4, _omitEnumNames ? '' : 'DELETE');
+  static const FlutterContextMenuButtonType_Enum LIVE_TEXT_INPUT = FlutterContextMenuButtonType_Enum._(5, _omitEnumNames ? '' : 'LIVE_TEXT_INPUT');
+  static const FlutterContextMenuButtonType_Enum CUSTOM = FlutterContextMenuButtonType_Enum._(6, _omitEnumNames ? '' : 'CUSTOM');
+
+  static const $core.List<FlutterContextMenuButtonType_Enum> values = <FlutterContextMenuButtonType_Enum> [
+    CUT,
+    COPY,
+    PASTE,
+    SELECT_ALL,
+    DELETE,
+    LIVE_TEXT_INPUT,
+    CUSTOM,
+  ];
+
+  static final $core.Map<$core.int, FlutterContextMenuButtonType_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static FlutterContextMenuButtonType_Enum? valueOf($core.int value) => _byValue[value];
+
+  const FlutterContextMenuButtonType_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
 class FlutterCrossAxisAlignment_Enum extends $pb.ProtobufEnum {
   static const FlutterCrossAxisAlignment_Enum START = FlutterCrossAxisAlignment_Enum._(0, _omitEnumNames ? '' : 'START');
   static const FlutterCrossAxisAlignment_Enum END = FlutterCrossAxisAlignment_Enum._(1, _omitEnumNames ? '' : 'END');
@@ -483,6 +652,85 @@ class FlutterCrossFadeState_Enum extends $pb.ProtobufEnum {
   static FlutterCrossFadeState_Enum? valueOf($core.int value) => _byValue[value];
 
   const FlutterCrossFadeState_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class FlutterDecorationPosition_Enum extends $pb.ProtobufEnum {
+  static const FlutterDecorationPosition_Enum BACKGROUND = FlutterDecorationPosition_Enum._(0, _omitEnumNames ? '' : 'BACKGROUND');
+  static const FlutterDecorationPosition_Enum FOREGROUND = FlutterDecorationPosition_Enum._(1, _omitEnumNames ? '' : 'FOREGROUND');
+
+  static const $core.List<FlutterDecorationPosition_Enum> values = <FlutterDecorationPosition_Enum> [
+    BACKGROUND,
+    FOREGROUND,
+  ];
+
+  static final $core.Map<$core.int, FlutterDecorationPosition_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static FlutterDecorationPosition_Enum? valueOf($core.int value) => _byValue[value];
+
+  const FlutterDecorationPosition_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class FlutterDiagnosticLevel_Enum extends $pb.ProtobufEnum {
+  static const FlutterDiagnosticLevel_Enum HIDDEN = FlutterDiagnosticLevel_Enum._(0, _omitEnumNames ? '' : 'HIDDEN');
+  static const FlutterDiagnosticLevel_Enum FINE = FlutterDiagnosticLevel_Enum._(1, _omitEnumNames ? '' : 'FINE');
+  static const FlutterDiagnosticLevel_Enum DEBUG = FlutterDiagnosticLevel_Enum._(2, _omitEnumNames ? '' : 'DEBUG');
+  static const FlutterDiagnosticLevel_Enum INFO = FlutterDiagnosticLevel_Enum._(3, _omitEnumNames ? '' : 'INFO');
+  static const FlutterDiagnosticLevel_Enum WARNING = FlutterDiagnosticLevel_Enum._(4, _omitEnumNames ? '' : 'WARNING');
+  static const FlutterDiagnosticLevel_Enum HINT = FlutterDiagnosticLevel_Enum._(5, _omitEnumNames ? '' : 'HINT');
+  static const FlutterDiagnosticLevel_Enum SUMMARY = FlutterDiagnosticLevel_Enum._(6, _omitEnumNames ? '' : 'SUMMARY');
+  static const FlutterDiagnosticLevel_Enum ERROR = FlutterDiagnosticLevel_Enum._(7, _omitEnumNames ? '' : 'ERROR');
+  static const FlutterDiagnosticLevel_Enum OFF = FlutterDiagnosticLevel_Enum._(8, _omitEnumNames ? '' : 'OFF');
+
+  static const $core.List<FlutterDiagnosticLevel_Enum> values = <FlutterDiagnosticLevel_Enum> [
+    HIDDEN,
+    FINE,
+    DEBUG,
+    INFO,
+    WARNING,
+    HINT,
+    SUMMARY,
+    ERROR,
+    OFF,
+  ];
+
+  static final $core.Map<$core.int, FlutterDiagnosticLevel_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static FlutterDiagnosticLevel_Enum? valueOf($core.int value) => _byValue[value];
+
+  const FlutterDiagnosticLevel_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class FlutterDiagnosticsTreeStyle_Enum extends $pb.ProtobufEnum {
+  static const FlutterDiagnosticsTreeStyle_Enum NONE = FlutterDiagnosticsTreeStyle_Enum._(0, _omitEnumNames ? '' : 'NONE');
+  static const FlutterDiagnosticsTreeStyle_Enum SPARSE = FlutterDiagnosticsTreeStyle_Enum._(1, _omitEnumNames ? '' : 'SPARSE');
+  static const FlutterDiagnosticsTreeStyle_Enum OFFSTAGE = FlutterDiagnosticsTreeStyle_Enum._(2, _omitEnumNames ? '' : 'OFFSTAGE');
+  static const FlutterDiagnosticsTreeStyle_Enum DENSE = FlutterDiagnosticsTreeStyle_Enum._(3, _omitEnumNames ? '' : 'DENSE');
+  static const FlutterDiagnosticsTreeStyle_Enum TRANSITION = FlutterDiagnosticsTreeStyle_Enum._(4, _omitEnumNames ? '' : 'TRANSITION');
+  static const FlutterDiagnosticsTreeStyle_Enum ERROR = FlutterDiagnosticsTreeStyle_Enum._(5, _omitEnumNames ? '' : 'ERROR');
+  static const FlutterDiagnosticsTreeStyle_Enum WHITESPACE = FlutterDiagnosticsTreeStyle_Enum._(6, _omitEnumNames ? '' : 'WHITESPACE');
+  static const FlutterDiagnosticsTreeStyle_Enum FLAT = FlutterDiagnosticsTreeStyle_Enum._(7, _omitEnumNames ? '' : 'FLAT');
+  static const FlutterDiagnosticsTreeStyle_Enum SINGLE_LINE = FlutterDiagnosticsTreeStyle_Enum._(8, _omitEnumNames ? '' : 'SINGLE_LINE');
+  static const FlutterDiagnosticsTreeStyle_Enum ERROR_PROPERTY = FlutterDiagnosticsTreeStyle_Enum._(9, _omitEnumNames ? '' : 'ERROR_PROPERTY');
+  static const FlutterDiagnosticsTreeStyle_Enum SHALLOW = FlutterDiagnosticsTreeStyle_Enum._(10, _omitEnumNames ? '' : 'SHALLOW');
+  static const FlutterDiagnosticsTreeStyle_Enum TRUNCATE_CHILDREN = FlutterDiagnosticsTreeStyle_Enum._(11, _omitEnumNames ? '' : 'TRUNCATE_CHILDREN');
+
+  static const $core.List<FlutterDiagnosticsTreeStyle_Enum> values = <FlutterDiagnosticsTreeStyle_Enum> [
+    NONE,
+    SPARSE,
+    OFFSTAGE,
+    DENSE,
+    TRANSITION,
+    ERROR,
+    WHITESPACE,
+    FLAT,
+    SINGLE_LINE,
+    ERROR_PROPERTY,
+    SHALLOW,
+    TRUNCATE_CHILDREN,
+  ];
+
+  static final $core.Map<$core.int, FlutterDiagnosticsTreeStyle_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static FlutterDiagnosticsTreeStyle_Enum? valueOf($core.int value) => _byValue[value];
+
+  const FlutterDiagnosticsTreeStyle_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
 class FlutterDismissDirection_Enum extends $pb.ProtobufEnum {
@@ -648,6 +896,36 @@ class FlutterMaxLengthEnforcement_Enum extends $pb.ProtobufEnum {
   const FlutterMaxLengthEnforcement_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
+class FlutterNavigationMode_Enum extends $pb.ProtobufEnum {
+  static const FlutterNavigationMode_Enum TRADITIONAL = FlutterNavigationMode_Enum._(0, _omitEnumNames ? '' : 'TRADITIONAL');
+  static const FlutterNavigationMode_Enum DIRECTIONAL = FlutterNavigationMode_Enum._(1, _omitEnumNames ? '' : 'DIRECTIONAL');
+
+  static const $core.List<FlutterNavigationMode_Enum> values = <FlutterNavigationMode_Enum> [
+    TRADITIONAL,
+    DIRECTIONAL,
+  ];
+
+  static final $core.Map<$core.int, FlutterNavigationMode_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static FlutterNavigationMode_Enum? valueOf($core.int value) => _byValue[value];
+
+  const FlutterNavigationMode_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class FlutterOrientation_Enum extends $pb.ProtobufEnum {
+  static const FlutterOrientation_Enum PORTRAIT = FlutterOrientation_Enum._(0, _omitEnumNames ? '' : 'PORTRAIT');
+  static const FlutterOrientation_Enum LANDSCAPE = FlutterOrientation_Enum._(1, _omitEnumNames ? '' : 'LANDSCAPE');
+
+  static const $core.List<FlutterOrientation_Enum> values = <FlutterOrientation_Enum> [
+    PORTRAIT,
+    LANDSCAPE,
+  ];
+
+  static final $core.Map<$core.int, FlutterOrientation_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static FlutterOrientation_Enum? valueOf($core.int value) => _byValue[value];
+
+  const FlutterOrientation_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
 class FlutterOverflowBarAlignment_Enum extends $pb.ProtobufEnum {
   static const FlutterOverflowBarAlignment_Enum START = FlutterOverflowBarAlignment_Enum._(0, _omitEnumNames ? '' : 'START');
   static const FlutterOverflowBarAlignment_Enum END = FlutterOverflowBarAlignment_Enum._(1, _omitEnumNames ? '' : 'END');
@@ -684,6 +962,41 @@ class FlutterPanAxis_Enum extends $pb.ProtobufEnum {
   const FlutterPanAxis_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
+class FlutterPlatformProvidedMenuItemType_Enum extends $pb.ProtobufEnum {
+  static const FlutterPlatformProvidedMenuItemType_Enum ABOUT = FlutterPlatformProvidedMenuItemType_Enum._(0, _omitEnumNames ? '' : 'ABOUT');
+  static const FlutterPlatformProvidedMenuItemType_Enum QUIT = FlutterPlatformProvidedMenuItemType_Enum._(1, _omitEnumNames ? '' : 'QUIT');
+  static const FlutterPlatformProvidedMenuItemType_Enum SERVICES_SUBMENU = FlutterPlatformProvidedMenuItemType_Enum._(2, _omitEnumNames ? '' : 'SERVICES_SUBMENU');
+  static const FlutterPlatformProvidedMenuItemType_Enum HIDE = FlutterPlatformProvidedMenuItemType_Enum._(3, _omitEnumNames ? '' : 'HIDE');
+  static const FlutterPlatformProvidedMenuItemType_Enum HIDE_OTHER_APPLICATIONS = FlutterPlatformProvidedMenuItemType_Enum._(4, _omitEnumNames ? '' : 'HIDE_OTHER_APPLICATIONS');
+  static const FlutterPlatformProvidedMenuItemType_Enum SHOW_ALL_APPLICATIONS = FlutterPlatformProvidedMenuItemType_Enum._(5, _omitEnumNames ? '' : 'SHOW_ALL_APPLICATIONS');
+  static const FlutterPlatformProvidedMenuItemType_Enum START_SPEAKING = FlutterPlatformProvidedMenuItemType_Enum._(6, _omitEnumNames ? '' : 'START_SPEAKING');
+  static const FlutterPlatformProvidedMenuItemType_Enum STOP_SPEAKING = FlutterPlatformProvidedMenuItemType_Enum._(7, _omitEnumNames ? '' : 'STOP_SPEAKING');
+  static const FlutterPlatformProvidedMenuItemType_Enum TOGGLE_FULL_SCREEN = FlutterPlatformProvidedMenuItemType_Enum._(8, _omitEnumNames ? '' : 'TOGGLE_FULL_SCREEN');
+  static const FlutterPlatformProvidedMenuItemType_Enum MINIMIZE_WINDOW = FlutterPlatformProvidedMenuItemType_Enum._(9, _omitEnumNames ? '' : 'MINIMIZE_WINDOW');
+  static const FlutterPlatformProvidedMenuItemType_Enum ZOOM_WINDOW = FlutterPlatformProvidedMenuItemType_Enum._(10, _omitEnumNames ? '' : 'ZOOM_WINDOW');
+  static const FlutterPlatformProvidedMenuItemType_Enum ARRANGE_WINDOWS_IN_FRONT = FlutterPlatformProvidedMenuItemType_Enum._(11, _omitEnumNames ? '' : 'ARRANGE_WINDOWS_IN_FRONT');
+
+  static const $core.List<FlutterPlatformProvidedMenuItemType_Enum> values = <FlutterPlatformProvidedMenuItemType_Enum> [
+    ABOUT,
+    QUIT,
+    SERVICES_SUBMENU,
+    HIDE,
+    HIDE_OTHER_APPLICATIONS,
+    SHOW_ALL_APPLICATIONS,
+    START_SPEAKING,
+    STOP_SPEAKING,
+    TOGGLE_FULL_SCREEN,
+    MINIMIZE_WINDOW,
+    ZOOM_WINDOW,
+    ARRANGE_WINDOWS_IN_FRONT,
+  ];
+
+  static final $core.Map<$core.int, FlutterPlatformProvidedMenuItemType_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static FlutterPlatformProvidedMenuItemType_Enum? valueOf($core.int value) => _byValue[value];
+
+  const FlutterPlatformProvidedMenuItemType_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
 class FlutterPlatformViewHitTestBehavior_Enum extends $pb.ProtobufEnum {
   static const FlutterPlatformViewHitTestBehavior_Enum OPAQUE = FlutterPlatformViewHitTestBehavior_Enum._(0, _omitEnumNames ? '' : 'OPAQUE');
   static const FlutterPlatformViewHitTestBehavior_Enum TRANSLUCENT = FlutterPlatformViewHitTestBehavior_Enum._(1, _omitEnumNames ? '' : 'TRANSLUCENT');
@@ -699,6 +1012,36 @@ class FlutterPlatformViewHitTestBehavior_Enum extends $pb.ProtobufEnum {
   static FlutterPlatformViewHitTestBehavior_Enum? valueOf($core.int value) => _byValue[value];
 
   const FlutterPlatformViewHitTestBehavior_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class FlutterScrollDecelerationRate_Enum extends $pb.ProtobufEnum {
+  static const FlutterScrollDecelerationRate_Enum NORMAL = FlutterScrollDecelerationRate_Enum._(0, _omitEnumNames ? '' : 'NORMAL');
+  static const FlutterScrollDecelerationRate_Enum FAST = FlutterScrollDecelerationRate_Enum._(1, _omitEnumNames ? '' : 'FAST');
+
+  static const $core.List<FlutterScrollDecelerationRate_Enum> values = <FlutterScrollDecelerationRate_Enum> [
+    NORMAL,
+    FAST,
+  ];
+
+  static final $core.Map<$core.int, FlutterScrollDecelerationRate_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static FlutterScrollDecelerationRate_Enum? valueOf($core.int value) => _byValue[value];
+
+  const FlutterScrollDecelerationRate_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class FlutterScrollIncrementType_Enum extends $pb.ProtobufEnum {
+  static const FlutterScrollIncrementType_Enum LINE = FlutterScrollIncrementType_Enum._(0, _omitEnumNames ? '' : 'LINE');
+  static const FlutterScrollIncrementType_Enum PAGE = FlutterScrollIncrementType_Enum._(1, _omitEnumNames ? '' : 'PAGE');
+
+  static const $core.List<FlutterScrollIncrementType_Enum> values = <FlutterScrollIncrementType_Enum> [
+    LINE,
+    PAGE,
+  ];
+
+  static final $core.Map<$core.int, FlutterScrollIncrementType_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static FlutterScrollIncrementType_Enum? valueOf($core.int value) => _byValue[value];
+
+  const FlutterScrollIncrementType_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
 class FlutterScrollViewKeyboardDismissBehavior_Enum extends $pb.ProtobufEnum {
@@ -735,6 +1078,33 @@ class FlutterScrollbarOrientation_Enum extends $pb.ProtobufEnum {
   const FlutterScrollbarOrientation_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
+class FlutterSelectionChangedCause_Enum extends $pb.ProtobufEnum {
+  static const FlutterSelectionChangedCause_Enum TAP = FlutterSelectionChangedCause_Enum._(0, _omitEnumNames ? '' : 'TAP');
+  static const FlutterSelectionChangedCause_Enum DOUBLE_TAP = FlutterSelectionChangedCause_Enum._(1, _omitEnumNames ? '' : 'DOUBLE_TAP');
+  static const FlutterSelectionChangedCause_Enum LONG_PRESS = FlutterSelectionChangedCause_Enum._(2, _omitEnumNames ? '' : 'LONG_PRESS');
+  static const FlutterSelectionChangedCause_Enum FORCE_PRESS = FlutterSelectionChangedCause_Enum._(3, _omitEnumNames ? '' : 'FORCE_PRESS');
+  static const FlutterSelectionChangedCause_Enum KEYBOARD = FlutterSelectionChangedCause_Enum._(4, _omitEnumNames ? '' : 'KEYBOARD');
+  static const FlutterSelectionChangedCause_Enum TOOLBAR = FlutterSelectionChangedCause_Enum._(5, _omitEnumNames ? '' : 'TOOLBAR');
+  static const FlutterSelectionChangedCause_Enum DRAG = FlutterSelectionChangedCause_Enum._(6, _omitEnumNames ? '' : 'DRAG');
+  static const FlutterSelectionChangedCause_Enum SCRIBBLE = FlutterSelectionChangedCause_Enum._(7, _omitEnumNames ? '' : 'SCRIBBLE');
+
+  static const $core.List<FlutterSelectionChangedCause_Enum> values = <FlutterSelectionChangedCause_Enum> [
+    TAP,
+    DOUBLE_TAP,
+    LONG_PRESS,
+    FORCE_PRESS,
+    KEYBOARD,
+    TOOLBAR,
+    DRAG,
+    SCRIBBLE,
+  ];
+
+  static final $core.Map<$core.int, FlutterSelectionChangedCause_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static FlutterSelectionChangedCause_Enum? valueOf($core.int value) => _byValue[value];
+
+  const FlutterSelectionChangedCause_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
 class FlutterSmartDashesType_Enum extends $pb.ProtobufEnum {
   static const FlutterSmartDashesType_Enum DISABLED = FlutterSmartDashesType_Enum._(0, _omitEnumNames ? '' : 'DISABLED');
   static const FlutterSmartDashesType_Enum ENABLED = FlutterSmartDashesType_Enum._(1, _omitEnumNames ? '' : 'ENABLED');
@@ -763,6 +1133,23 @@ class FlutterSmartQuotesType_Enum extends $pb.ProtobufEnum {
   static FlutterSmartQuotesType_Enum? valueOf($core.int value) => _byValue[value];
 
   const FlutterSmartQuotesType_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class FlutterSnapshotMode_Enum extends $pb.ProtobufEnum {
+  static const FlutterSnapshotMode_Enum PERMISSIVE = FlutterSnapshotMode_Enum._(0, _omitEnumNames ? '' : 'PERMISSIVE');
+  static const FlutterSnapshotMode_Enum NORMAL = FlutterSnapshotMode_Enum._(1, _omitEnumNames ? '' : 'NORMAL');
+  static const FlutterSnapshotMode_Enum FORCED = FlutterSnapshotMode_Enum._(2, _omitEnumNames ? '' : 'FORCED');
+
+  static const $core.List<FlutterSnapshotMode_Enum> values = <FlutterSnapshotMode_Enum> [
+    PERMISSIVE,
+    NORMAL,
+    FORCED,
+  ];
+
+  static final $core.Map<$core.int, FlutterSnapshotMode_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static FlutterSnapshotMode_Enum? valueOf($core.int value) => _byValue[value];
+
+  const FlutterSnapshotMode_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
 class FlutterStackFit_Enum extends $pb.ProtobufEnum {
@@ -801,6 +1188,29 @@ class FlutterTableCellVerticalAlignment_Enum extends $pb.ProtobufEnum {
   static FlutterTableCellVerticalAlignment_Enum? valueOf($core.int value) => _byValue[value];
 
   const FlutterTableCellVerticalAlignment_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class FlutterTargetPlatform_Enum extends $pb.ProtobufEnum {
+  static const FlutterTargetPlatform_Enum ANDROID = FlutterTargetPlatform_Enum._(0, _omitEnumNames ? '' : 'ANDROID');
+  static const FlutterTargetPlatform_Enum FUCHSIA = FlutterTargetPlatform_Enum._(1, _omitEnumNames ? '' : 'FUCHSIA');
+  static const FlutterTargetPlatform_Enum I_O_S = FlutterTargetPlatform_Enum._(2, _omitEnumNames ? '' : 'I_O_S');
+  static const FlutterTargetPlatform_Enum LINUX = FlutterTargetPlatform_Enum._(3, _omitEnumNames ? '' : 'LINUX');
+  static const FlutterTargetPlatform_Enum MAC_O_S = FlutterTargetPlatform_Enum._(4, _omitEnumNames ? '' : 'MAC_O_S');
+  static const FlutterTargetPlatform_Enum WINDOWS = FlutterTargetPlatform_Enum._(5, _omitEnumNames ? '' : 'WINDOWS');
+
+  static const $core.List<FlutterTargetPlatform_Enum> values = <FlutterTargetPlatform_Enum> [
+    ANDROID,
+    FUCHSIA,
+    I_O_S,
+    LINUX,
+    MAC_O_S,
+    WINDOWS,
+  ];
+
+  static final $core.Map<$core.int, FlutterTargetPlatform_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static FlutterTargetPlatform_Enum? valueOf($core.int value) => _byValue[value];
+
+  const FlutterTargetPlatform_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
 class FlutterTextCapitalization_Enum extends $pb.ProtobufEnum {
@@ -893,6 +1303,25 @@ class FlutterTextWidthBasis_Enum extends $pb.ProtobufEnum {
   const FlutterTextWidthBasis_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
+class FlutterTraversalDirection_Enum extends $pb.ProtobufEnum {
+  static const FlutterTraversalDirection_Enum UP = FlutterTraversalDirection_Enum._(0, _omitEnumNames ? '' : 'UP');
+  static const FlutterTraversalDirection_Enum RIGHT = FlutterTraversalDirection_Enum._(1, _omitEnumNames ? '' : 'RIGHT');
+  static const FlutterTraversalDirection_Enum DOWN = FlutterTraversalDirection_Enum._(2, _omitEnumNames ? '' : 'DOWN');
+  static const FlutterTraversalDirection_Enum LEFT = FlutterTraversalDirection_Enum._(3, _omitEnumNames ? '' : 'LEFT');
+
+  static const $core.List<FlutterTraversalDirection_Enum> values = <FlutterTraversalDirection_Enum> [
+    UP,
+    RIGHT,
+    DOWN,
+    LEFT,
+  ];
+
+  static final $core.Map<$core.int, FlutterTraversalDirection_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static FlutterTraversalDirection_Enum? valueOf($core.int value) => _byValue[value];
+
+  const FlutterTraversalDirection_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
 class FlutterTraversalEdgeBehavior_Enum extends $pb.ProtobufEnum {
   static const FlutterTraversalEdgeBehavior_Enum CLOSED_LOOP = FlutterTraversalEdgeBehavior_Enum._(0, _omitEnumNames ? '' : 'CLOSED_LOOP');
   static const FlutterTraversalEdgeBehavior_Enum LEAVE_FLUTTER_VIEW = FlutterTraversalEdgeBehavior_Enum._(1, _omitEnumNames ? '' : 'LEAVE_FLUTTER_VIEW');
@@ -963,6 +1392,38 @@ class FlutterWrapCrossAlignment_Enum extends $pb.ProtobufEnum {
   const FlutterWrapCrossAlignment_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
+class MaterialBottomNavigationBarLandscapeLayout_Enum extends $pb.ProtobufEnum {
+  static const MaterialBottomNavigationBarLandscapeLayout_Enum SPREAD = MaterialBottomNavigationBarLandscapeLayout_Enum._(0, _omitEnumNames ? '' : 'SPREAD');
+  static const MaterialBottomNavigationBarLandscapeLayout_Enum CENTERED = MaterialBottomNavigationBarLandscapeLayout_Enum._(1, _omitEnumNames ? '' : 'CENTERED');
+  static const MaterialBottomNavigationBarLandscapeLayout_Enum LINEAR = MaterialBottomNavigationBarLandscapeLayout_Enum._(2, _omitEnumNames ? '' : 'LINEAR');
+
+  static const $core.List<MaterialBottomNavigationBarLandscapeLayout_Enum> values = <MaterialBottomNavigationBarLandscapeLayout_Enum> [
+    SPREAD,
+    CENTERED,
+    LINEAR,
+  ];
+
+  static final $core.Map<$core.int, MaterialBottomNavigationBarLandscapeLayout_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static MaterialBottomNavigationBarLandscapeLayout_Enum? valueOf($core.int value) => _byValue[value];
+
+  const MaterialBottomNavigationBarLandscapeLayout_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class MaterialBottomNavigationBarType_Enum extends $pb.ProtobufEnum {
+  static const MaterialBottomNavigationBarType_Enum FIXED = MaterialBottomNavigationBarType_Enum._(0, _omitEnumNames ? '' : 'FIXED');
+  static const MaterialBottomNavigationBarType_Enum SHIFTING = MaterialBottomNavigationBarType_Enum._(1, _omitEnumNames ? '' : 'SHIFTING');
+
+  static const $core.List<MaterialBottomNavigationBarType_Enum> values = <MaterialBottomNavigationBarType_Enum> [
+    FIXED,
+    SHIFTING,
+  ];
+
+  static final $core.Map<$core.int, MaterialBottomNavigationBarType_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static MaterialBottomNavigationBarType_Enum? valueOf($core.int value) => _byValue[value];
+
+  const MaterialBottomNavigationBarType_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
 class MaterialButtonBarLayoutBehavior_Enum extends $pb.ProtobufEnum {
   static const MaterialButtonBarLayoutBehavior_Enum CONSTRAINED = MaterialButtonBarLayoutBehavior_Enum._(0, _omitEnumNames ? '' : 'CONSTRAINED');
   static const MaterialButtonBarLayoutBehavior_Enum PADDED = MaterialButtonBarLayoutBehavior_Enum._(1, _omitEnumNames ? '' : 'PADDED');
@@ -1012,6 +1473,40 @@ class MaterialCollapseMode_Enum extends $pb.ProtobufEnum {
   const MaterialCollapseMode_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
+class MaterialDatePickerEntryMode_Enum extends $pb.ProtobufEnum {
+  static const MaterialDatePickerEntryMode_Enum CALENDAR = MaterialDatePickerEntryMode_Enum._(0, _omitEnumNames ? '' : 'CALENDAR');
+  static const MaterialDatePickerEntryMode_Enum INPUT = MaterialDatePickerEntryMode_Enum._(1, _omitEnumNames ? '' : 'INPUT');
+  static const MaterialDatePickerEntryMode_Enum CALENDAR_ONLY = MaterialDatePickerEntryMode_Enum._(2, _omitEnumNames ? '' : 'CALENDAR_ONLY');
+  static const MaterialDatePickerEntryMode_Enum INPUT_ONLY = MaterialDatePickerEntryMode_Enum._(3, _omitEnumNames ? '' : 'INPUT_ONLY');
+
+  static const $core.List<MaterialDatePickerEntryMode_Enum> values = <MaterialDatePickerEntryMode_Enum> [
+    CALENDAR,
+    INPUT,
+    CALENDAR_ONLY,
+    INPUT_ONLY,
+  ];
+
+  static final $core.Map<$core.int, MaterialDatePickerEntryMode_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static MaterialDatePickerEntryMode_Enum? valueOf($core.int value) => _byValue[value];
+
+  const MaterialDatePickerEntryMode_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class MaterialDatePickerMode_Enum extends $pb.ProtobufEnum {
+  static const MaterialDatePickerMode_Enum DAY = MaterialDatePickerMode_Enum._(0, _omitEnumNames ? '' : 'DAY');
+  static const MaterialDatePickerMode_Enum YEAR = MaterialDatePickerMode_Enum._(1, _omitEnumNames ? '' : 'YEAR');
+
+  static const $core.List<MaterialDatePickerMode_Enum> values = <MaterialDatePickerMode_Enum> [
+    DAY,
+    YEAR,
+  ];
+
+  static final $core.Map<$core.int, MaterialDatePickerMode_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static MaterialDatePickerMode_Enum? valueOf($core.int value) => _byValue[value];
+
+  const MaterialDatePickerMode_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
 class MaterialDrawerAlignment_Enum extends $pb.ProtobufEnum {
   static const MaterialDrawerAlignment_Enum START = MaterialDrawerAlignment_Enum._(0, _omitEnumNames ? '' : 'START');
   static const MaterialDrawerAlignment_Enum END = MaterialDrawerAlignment_Enum._(1, _omitEnumNames ? '' : 'END');
@@ -1025,6 +1520,23 @@ class MaterialDrawerAlignment_Enum extends $pb.ProtobufEnum {
   static MaterialDrawerAlignment_Enum? valueOf($core.int value) => _byValue[value];
 
   const MaterialDrawerAlignment_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class MaterialFloatingLabelBehavior_Enum extends $pb.ProtobufEnum {
+  static const MaterialFloatingLabelBehavior_Enum NEVER = MaterialFloatingLabelBehavior_Enum._(0, _omitEnumNames ? '' : 'NEVER');
+  static const MaterialFloatingLabelBehavior_Enum AUTO = MaterialFloatingLabelBehavior_Enum._(1, _omitEnumNames ? '' : 'AUTO');
+  static const MaterialFloatingLabelBehavior_Enum ALWAYS = MaterialFloatingLabelBehavior_Enum._(2, _omitEnumNames ? '' : 'ALWAYS');
+
+  static const $core.List<MaterialFloatingLabelBehavior_Enum> values = <MaterialFloatingLabelBehavior_Enum> [
+    NEVER,
+    AUTO,
+    ALWAYS,
+  ];
+
+  static final $core.Map<$core.int, MaterialFloatingLabelBehavior_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static MaterialFloatingLabelBehavior_Enum? valueOf($core.int value) => _byValue[value];
+
+  const MaterialFloatingLabelBehavior_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
 class MaterialListTileControlAffinity_Enum extends $pb.ProtobufEnum {
@@ -1133,6 +1645,57 @@ class MaterialNavigationDestinationLabelBehavior_Enum extends $pb.ProtobufEnum {
   const MaterialNavigationDestinationLabelBehavior_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
+class MaterialNavigationRailLabelType_Enum extends $pb.ProtobufEnum {
+  static const MaterialNavigationRailLabelType_Enum NONE = MaterialNavigationRailLabelType_Enum._(0, _omitEnumNames ? '' : 'NONE');
+  static const MaterialNavigationRailLabelType_Enum SELECTED = MaterialNavigationRailLabelType_Enum._(1, _omitEnumNames ? '' : 'SELECTED');
+  static const MaterialNavigationRailLabelType_Enum ALL = MaterialNavigationRailLabelType_Enum._(2, _omitEnumNames ? '' : 'ALL');
+
+  static const $core.List<MaterialNavigationRailLabelType_Enum> values = <MaterialNavigationRailLabelType_Enum> [
+    NONE,
+    SELECTED,
+    ALL,
+  ];
+
+  static final $core.Map<$core.int, MaterialNavigationRailLabelType_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static MaterialNavigationRailLabelType_Enum? valueOf($core.int value) => _byValue[value];
+
+  const MaterialNavigationRailLabelType_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class MaterialPopupMenuPosition_Enum extends $pb.ProtobufEnum {
+  static const MaterialPopupMenuPosition_Enum OVER = MaterialPopupMenuPosition_Enum._(0, _omitEnumNames ? '' : 'OVER');
+  static const MaterialPopupMenuPosition_Enum UNDER = MaterialPopupMenuPosition_Enum._(1, _omitEnumNames ? '' : 'UNDER');
+
+  static const $core.List<MaterialPopupMenuPosition_Enum> values = <MaterialPopupMenuPosition_Enum> [
+    OVER,
+    UNDER,
+  ];
+
+  static final $core.Map<$core.int, MaterialPopupMenuPosition_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static MaterialPopupMenuPosition_Enum? valueOf($core.int value) => _byValue[value];
+
+  const MaterialPopupMenuPosition_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class MaterialShowValueIndicator_Enum extends $pb.ProtobufEnum {
+  static const MaterialShowValueIndicator_Enum ONLY_FOR_DISCRETE = MaterialShowValueIndicator_Enum._(0, _omitEnumNames ? '' : 'ONLY_FOR_DISCRETE');
+  static const MaterialShowValueIndicator_Enum ONLY_FOR_CONTINUOUS = MaterialShowValueIndicator_Enum._(1, _omitEnumNames ? '' : 'ONLY_FOR_CONTINUOUS');
+  static const MaterialShowValueIndicator_Enum ALWAYS = MaterialShowValueIndicator_Enum._(2, _omitEnumNames ? '' : 'ALWAYS');
+  static const MaterialShowValueIndicator_Enum NEVER = MaterialShowValueIndicator_Enum._(3, _omitEnumNames ? '' : 'NEVER');
+
+  static const $core.List<MaterialShowValueIndicator_Enum> values = <MaterialShowValueIndicator_Enum> [
+    ONLY_FOR_DISCRETE,
+    ONLY_FOR_CONTINUOUS,
+    ALWAYS,
+    NEVER,
+  ];
+
+  static final $core.Map<$core.int, MaterialShowValueIndicator_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static MaterialShowValueIndicator_Enum? valueOf($core.int value) => _byValue[value];
+
+  const MaterialShowValueIndicator_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
 class MaterialSliderInteraction_Enum extends $pb.ProtobufEnum {
   static const MaterialSliderInteraction_Enum TAP_AND_SLIDE = MaterialSliderInteraction_Enum._(0, _omitEnumNames ? '' : 'TAP_AND_SLIDE');
   static const MaterialSliderInteraction_Enum TAP_ONLY = MaterialSliderInteraction_Enum._(1, _omitEnumNames ? '' : 'TAP_ONLY');
@@ -1165,6 +1728,42 @@ class MaterialSnackBarBehavior_Enum extends $pb.ProtobufEnum {
   static MaterialSnackBarBehavior_Enum? valueOf($core.int value) => _byValue[value];
 
   const MaterialSnackBarBehavior_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class MaterialStepState_Enum extends $pb.ProtobufEnum {
+  static const MaterialStepState_Enum INDEXED = MaterialStepState_Enum._(0, _omitEnumNames ? '' : 'INDEXED');
+  static const MaterialStepState_Enum EDITING = MaterialStepState_Enum._(1, _omitEnumNames ? '' : 'EDITING');
+  static const MaterialStepState_Enum COMPLETE = MaterialStepState_Enum._(2, _omitEnumNames ? '' : 'COMPLETE');
+  static const MaterialStepState_Enum DISABLED = MaterialStepState_Enum._(3, _omitEnumNames ? '' : 'DISABLED');
+  static const MaterialStepState_Enum ERROR = MaterialStepState_Enum._(4, _omitEnumNames ? '' : 'ERROR');
+
+  static const $core.List<MaterialStepState_Enum> values = <MaterialStepState_Enum> [
+    INDEXED,
+    EDITING,
+    COMPLETE,
+    DISABLED,
+    ERROR,
+  ];
+
+  static final $core.Map<$core.int, MaterialStepState_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static MaterialStepState_Enum? valueOf($core.int value) => _byValue[value];
+
+  const MaterialStepState_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class MaterialStepperType_Enum extends $pb.ProtobufEnum {
+  static const MaterialStepperType_Enum VERTICAL = MaterialStepperType_Enum._(0, _omitEnumNames ? '' : 'VERTICAL');
+  static const MaterialStepperType_Enum HORIZONTAL = MaterialStepperType_Enum._(1, _omitEnumNames ? '' : 'HORIZONTAL');
+
+  static const $core.List<MaterialStepperType_Enum> values = <MaterialStepperType_Enum> [
+    VERTICAL,
+    HORIZONTAL,
+  ];
+
+  static final $core.Map<$core.int, MaterialStepperType_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static MaterialStepperType_Enum? valueOf($core.int value) => _byValue[value];
+
+  const MaterialStepperType_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
 class MaterialStretchMode_Enum extends $pb.ProtobufEnum {
@@ -1233,6 +1832,25 @@ class MaterialThemeMode_Enum extends $pb.ProtobufEnum {
   static MaterialThemeMode_Enum? valueOf($core.int value) => _byValue[value];
 
   const MaterialThemeMode_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
+class MaterialTimePickerEntryMode_Enum extends $pb.ProtobufEnum {
+  static const MaterialTimePickerEntryMode_Enum DIAL = MaterialTimePickerEntryMode_Enum._(0, _omitEnumNames ? '' : 'DIAL');
+  static const MaterialTimePickerEntryMode_Enum INPUT = MaterialTimePickerEntryMode_Enum._(1, _omitEnumNames ? '' : 'INPUT');
+  static const MaterialTimePickerEntryMode_Enum DIAL_ONLY = MaterialTimePickerEntryMode_Enum._(2, _omitEnumNames ? '' : 'DIAL_ONLY');
+  static const MaterialTimePickerEntryMode_Enum INPUT_ONLY = MaterialTimePickerEntryMode_Enum._(3, _omitEnumNames ? '' : 'INPUT_ONLY');
+
+  static const $core.List<MaterialTimePickerEntryMode_Enum> values = <MaterialTimePickerEntryMode_Enum> [
+    DIAL,
+    INPUT,
+    DIAL_ONLY,
+    INPUT_ONLY,
+  ];
+
+  static final $core.Map<$core.int, MaterialTimePickerEntryMode_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static MaterialTimePickerEntryMode_Enum? valueOf($core.int value) => _byValue[value];
+
+  const MaterialTimePickerEntryMode_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
 class MaterialTooltipTriggerMode_Enum extends $pb.ProtobufEnum {

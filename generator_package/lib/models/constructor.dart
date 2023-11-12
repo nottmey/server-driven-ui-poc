@@ -4,6 +4,7 @@ import 'package:collection/collection.dart';
 import 'package:generator_package/constants.dart';
 import 'package:generator_package/is_widget_extensions.dart';
 import 'package:generator_package/models/parameter.dart';
+import 'package:generator_package/models/type_mapping.dart';
 import 'package:generator_package/to_library_prefix_extension.dart';
 import 'package:generator_package/to_self_contained_library_alias_extension.dart';
 import 'package:recase/recase.dart';
@@ -66,11 +67,18 @@ class Constructor {
     return '${messageName.pascalCase} ${messageName.snakeCase} = ${index + protoFieldStartNumber};';
   }
 
-  String toProtoMessage() {
+  String toProtoMessage(Map<TypeMapping, Iterable<Constructor>> constructors) {
+    final paramsWithAvailableConstructors = parameters.where((p) {
+      final typeMapping = p.typeMapping;
+      return typeMapping != null &&
+          (typeMapping.mappingStrategy != MappingStrategy.generateMessage ||
+              constructors[typeMapping]?.isNotEmpty == true);
+    });
+
     return '''
 // ${element.librarySource.uri}
 message ${messageName.pascalCase} {
-  ${parameters.map((e) => e.toProtoField()).whereType<String>().join("\n  ")}
+  ${paramsWithAvailableConstructors.map((e) => e.toProtoField()).whereType<String>().join("\n  ")}
 }
 ''';
   }
@@ -78,12 +86,13 @@ message ${messageName.pascalCase} {
   String toDartSwitchCase(
     String protoImportAlias,
     String expressionName,
+    Map<TypeMapping, Iterable<Constructor>> allConstructors,
   ) {
     final fieldName = messageName.camelCase;
     final constructorCall =
         '$importAlias.$typeName${constructorName != null ? ".$constructorName" : ""}';
     final constructorParameters = parameters
-        .map((p) => p.toDartParameter(fieldName))
+        .map((p) => p.toDartParameter(fieldName, allConstructors))
         .whereType<String>()
         .join(',\n          ');
     return '''

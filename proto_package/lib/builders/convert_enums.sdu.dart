@@ -8,18 +8,28 @@ import 'package:proto_package/proto/enums.pb.dart' as enums;
 import 'dart:ui' as $dartUi;
 import 'package:flutter/src/cupertino/interface_level.dart' as $flutterSrcCupertinoInterfaceLevel;
 import 'package:flutter/src/cupertino/text_field.dart' as $flutterSrcCupertinoTextField;
+import 'package:flutter/src/foundation/diagnostics.dart' as $flutterSrcFoundationDiagnostics;
+import 'package:flutter/src/foundation/platform.dart' as $flutterSrcFoundationPlatform;
 import 'package:flutter/src/gestures/recognizer.dart' as $flutterSrcGesturesRecognizer;
 import 'package:flutter/src/material/app.dart' as $flutterSrcMaterialApp;
+import 'package:flutter/src/material/bottom_navigation_bar.dart' as $flutterSrcMaterialBottomNavigationBar;
 import 'package:flutter/src/material/button_theme.dart' as $flutterSrcMaterialButtonTheme;
+import 'package:flutter/src/material/date.dart' as $flutterSrcMaterialDate;
 import 'package:flutter/src/material/drawer.dart' as $flutterSrcMaterialDrawer;
 import 'package:flutter/src/material/flexible_space_bar.dart' as $flutterSrcMaterialFlexibleSpaceBar;
+import 'package:flutter/src/material/input_decorator.dart' as $flutterSrcMaterialInputDecorator;
 import 'package:flutter/src/material/list_tile.dart' as $flutterSrcMaterialListTile;
 import 'package:flutter/src/material/material.dart' as $flutterSrcMaterialMaterial;
 import 'package:flutter/src/material/navigation_bar.dart' as $flutterSrcMaterialNavigationBar;
+import 'package:flutter/src/material/navigation_rail.dart' as $flutterSrcMaterialNavigationRail;
+import 'package:flutter/src/material/popup_menu_theme.dart' as $flutterSrcMaterialPopupMenuTheme;
 import 'package:flutter/src/material/slider.dart' as $flutterSrcMaterialSlider;
+import 'package:flutter/src/material/slider_theme.dart' as $flutterSrcMaterialSliderTheme;
 import 'package:flutter/src/material/snack_bar_theme.dart' as $flutterSrcMaterialSnackBarTheme;
+import 'package:flutter/src/material/stepper.dart' as $flutterSrcMaterialStepper;
 import 'package:flutter/src/material/tabs.dart' as $flutterSrcMaterialTabs;
 import 'package:flutter/src/material/theme_data.dart' as $flutterSrcMaterialThemeData;
+import 'package:flutter/src/material/time_picker.dart' as $flutterSrcMaterialTimePicker;
 import 'package:flutter/src/material/tooltip_theme.dart' as $flutterSrcMaterialTooltipTheme;
 import 'package:flutter/src/painting/basic_types.dart' as $flutterSrcPaintingBasicTypes;
 import 'package:flutter/src/painting/borders.dart' as $flutterSrcPaintingBorders;
@@ -33,19 +43,27 @@ import 'package:flutter/src/rendering/platform_view.dart' as $flutterSrcRenderin
 import 'package:flutter/src/rendering/proxy_box.dart' as $flutterSrcRenderingProxyBox;
 import 'package:flutter/src/rendering/stack.dart' as $flutterSrcRenderingStack;
 import 'package:flutter/src/rendering/table.dart' as $flutterSrcRenderingTable;
+import 'package:flutter/src/rendering/viewport.dart' as $flutterSrcRenderingViewport;
 import 'package:flutter/src/rendering/wrap.dart' as $flutterSrcRenderingWrap;
 import 'package:flutter/src/services/text_formatter.dart' as $flutterSrcServicesTextFormatter;
 import 'package:flutter/src/services/text_input.dart' as $flutterSrcServicesTextInput;
 import 'package:flutter/src/widgets/animated_cross_fade.dart' as $flutterSrcWidgetsAnimatedCrossFade;
 import 'package:flutter/src/widgets/autofill.dart' as $flutterSrcWidgetsAutofill;
 import 'package:flutter/src/widgets/banner.dart' as $flutterSrcWidgetsBanner;
+import 'package:flutter/src/widgets/context_menu_button_item.dart' as $flutterSrcWidgetsContextMenuButtonItem;
 import 'package:flutter/src/widgets/dismissible.dart' as $flutterSrcWidgetsDismissible;
 import 'package:flutter/src/widgets/focus_traversal.dart' as $flutterSrcWidgetsFocusTraversal;
 import 'package:flutter/src/widgets/form.dart' as $flutterSrcWidgetsForm;
 import 'package:flutter/src/widgets/interactive_viewer.dart' as $flutterSrcWidgetsInteractiveViewer;
+import 'package:flutter/src/widgets/media_query.dart' as $flutterSrcWidgetsMediaQuery;
 import 'package:flutter/src/widgets/overflow_bar.dart' as $flutterSrcWidgetsOverflowBar;
+import 'package:flutter/src/widgets/platform_menu_bar.dart' as $flutterSrcWidgetsPlatformMenuBar;
+import 'package:flutter/src/widgets/scroll_physics.dart' as $flutterSrcWidgetsScrollPhysics;
 import 'package:flutter/src/widgets/scroll_view.dart' as $flutterSrcWidgetsScrollView;
+import 'package:flutter/src/widgets/scrollable_helpers.dart' as $flutterSrcWidgetsScrollableHelpers;
 import 'package:flutter/src/widgets/scrollbar.dart' as $flutterSrcWidgetsScrollbar;
+import 'package:flutter/src/widgets/snapshot_widget.dart' as $flutterSrcWidgetsSnapshotWidget;
+import 'package:flutter/src/widgets/text_selection.dart' as $flutterSrcWidgetsTextSelection;
 
 $flutterSrcCupertinoInterfaceLevel.CupertinoUserInterfaceLevelData convertRequiredCupertinoUserInterfaceLevelData(enums.CupertinoUserInterfaceLevelData_Enum enumValue) {
   final result = convertCupertinoUserInterfaceLevelData(enumValue);
@@ -136,6 +154,30 @@ $dartUi.BlendMode? convertDartBlendMode(enums.DartBlendMode_Enum enumValue) {
       return $dartUi.BlendMode.color;
     case enums.DartBlendMode_Enum.LUMINOSITY:
       return $dartUi.BlendMode.luminosity;
+    default:
+      return null;
+  }
+}
+
+$dartUi.BlurStyle convertRequiredDartBlurStyle(enums.DartBlurStyle_Enum enumValue) {
+  final result = convertDartBlurStyle(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum DartBlurStyle');
+  }
+}
+
+$dartUi.BlurStyle? convertDartBlurStyle(enums.DartBlurStyle_Enum enumValue) {
+  switch (enumValue) {
+    case enums.DartBlurStyle_Enum.NORMAL:
+      return $dartUi.BlurStyle.normal;
+    case enums.DartBlurStyle_Enum.SOLID:
+      return $dartUi.BlurStyle.solid;
+    case enums.DartBlurStyle_Enum.OUTER:
+      return $dartUi.BlurStyle.outer;
+    case enums.DartBlurStyle_Enum.INNER:
+      return $dartUi.BlurStyle.inner;
     default:
       return null;
   }
@@ -233,6 +275,52 @@ $dartUi.Clip? convertDartClip(enums.DartClip_Enum enumValue) {
   }
 }
 
+$dartUi.DisplayFeatureState convertRequiredDartDisplayFeatureState(enums.DartDisplayFeatureState_Enum enumValue) {
+  final result = convertDartDisplayFeatureState(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum DartDisplayFeatureState');
+  }
+}
+
+$dartUi.DisplayFeatureState? convertDartDisplayFeatureState(enums.DartDisplayFeatureState_Enum enumValue) {
+  switch (enumValue) {
+    case enums.DartDisplayFeatureState_Enum.UNKNOWN:
+      return $dartUi.DisplayFeatureState.unknown;
+    case enums.DartDisplayFeatureState_Enum.POSTURE_FLAT:
+      return $dartUi.DisplayFeatureState.postureFlat;
+    case enums.DartDisplayFeatureState_Enum.POSTURE_HALF_OPENED:
+      return $dartUi.DisplayFeatureState.postureHalfOpened;
+    default:
+      return null;
+  }
+}
+
+$dartUi.DisplayFeatureType convertRequiredDartDisplayFeatureType(enums.DartDisplayFeatureType_Enum enumValue) {
+  final result = convertDartDisplayFeatureType(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum DartDisplayFeatureType');
+  }
+}
+
+$dartUi.DisplayFeatureType? convertDartDisplayFeatureType(enums.DartDisplayFeatureType_Enum enumValue) {
+  switch (enumValue) {
+    case enums.DartDisplayFeatureType_Enum.UNKNOWN:
+      return $dartUi.DisplayFeatureType.unknown;
+    case enums.DartDisplayFeatureType_Enum.FOLD:
+      return $dartUi.DisplayFeatureType.fold;
+    case enums.DartDisplayFeatureType_Enum.HINGE:
+      return $dartUi.DisplayFeatureType.hinge;
+    case enums.DartDisplayFeatureType_Enum.CUTOUT:
+      return $dartUi.DisplayFeatureType.cutout;
+    default:
+      return null;
+  }
+}
+
 $dartUi.FilterQuality convertRequiredDartFilterQuality(enums.DartFilterQuality_Enum enumValue) {
   final result = convertDartFilterQuality(enumValue);
   if(result != null) {
@@ -277,6 +365,34 @@ $dartUi.FontStyle? convertDartFontStyle(enums.DartFontStyle_Enum enumValue) {
   }
 }
 
+$dartUi.PlaceholderAlignment convertRequiredDartPlaceholderAlignment(enums.DartPlaceholderAlignment_Enum enumValue) {
+  final result = convertDartPlaceholderAlignment(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum DartPlaceholderAlignment');
+  }
+}
+
+$dartUi.PlaceholderAlignment? convertDartPlaceholderAlignment(enums.DartPlaceholderAlignment_Enum enumValue) {
+  switch (enumValue) {
+    case enums.DartPlaceholderAlignment_Enum.BASELINE:
+      return $dartUi.PlaceholderAlignment.baseline;
+    case enums.DartPlaceholderAlignment_Enum.ABOVE_BASELINE:
+      return $dartUi.PlaceholderAlignment.aboveBaseline;
+    case enums.DartPlaceholderAlignment_Enum.BELOW_BASELINE:
+      return $dartUi.PlaceholderAlignment.belowBaseline;
+    case enums.DartPlaceholderAlignment_Enum.TOP:
+      return $dartUi.PlaceholderAlignment.top;
+    case enums.DartPlaceholderAlignment_Enum.BOTTOM:
+      return $dartUi.PlaceholderAlignment.bottom;
+    case enums.DartPlaceholderAlignment_Enum.MIDDLE:
+      return $dartUi.PlaceholderAlignment.middle;
+    default:
+      return null;
+  }
+}
+
 $dartUi.StrokeCap convertRequiredDartStrokeCap(enums.DartStrokeCap_Enum enumValue) {
   final result = convertDartStrokeCap(enumValue);
   if(result != null) {
@@ -294,6 +410,26 @@ $dartUi.StrokeCap? convertDartStrokeCap(enums.DartStrokeCap_Enum enumValue) {
       return $dartUi.StrokeCap.round;
     case enums.DartStrokeCap_Enum.SQUARE:
       return $dartUi.StrokeCap.square;
+    default:
+      return null;
+  }
+}
+
+$dartUi.TextAffinity convertRequiredDartTextAffinity(enums.DartTextAffinity_Enum enumValue) {
+  final result = convertDartTextAffinity(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum DartTextAffinity');
+  }
+}
+
+$dartUi.TextAffinity? convertDartTextAffinity(enums.DartTextAffinity_Enum enumValue) {
+  switch (enumValue) {
+    case enums.DartTextAffinity_Enum.UPSTREAM:
+      return $dartUi.TextAffinity.upstream;
+    case enums.DartTextAffinity_Enum.DOWNSTREAM:
+      return $dartUi.TextAffinity.downstream;
     default:
       return null;
   }
@@ -408,6 +544,30 @@ $dartUi.TextLeadingDistribution? convertDartTextLeadingDistribution(enums.DartTe
       return $dartUi.TextLeadingDistribution.proportional;
     case enums.DartTextLeadingDistribution_Enum.EVEN:
       return $dartUi.TextLeadingDistribution.even;
+    default:
+      return null;
+  }
+}
+
+$dartUi.TileMode convertRequiredDartTileMode(enums.DartTileMode_Enum enumValue) {
+  final result = convertDartTileMode(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum DartTileMode');
+  }
+}
+
+$dartUi.TileMode? convertDartTileMode(enums.DartTileMode_Enum enumValue) {
+  switch (enumValue) {
+    case enums.DartTileMode_Enum.CLAMP:
+      return $dartUi.TileMode.clamp;
+    case enums.DartTileMode_Enum.REPEATED:
+      return $dartUi.TileMode.repeated;
+    case enums.DartTileMode_Enum.MIRROR:
+      return $dartUi.TileMode.mirror;
+    case enums.DartTileMode_Enum.DECAL:
+      return $dartUi.TileMode.decal;
     default:
       return null;
   }
@@ -593,6 +753,78 @@ $flutterSrcPaintingBoxBorder.BoxShape? convertFlutterBoxShape(enums.FlutterBoxSh
   }
 }
 
+$flutterSrcRenderingViewport.CacheExtentStyle convertRequiredFlutterCacheExtentStyle(enums.FlutterCacheExtentStyle_Enum enumValue) {
+  final result = convertFlutterCacheExtentStyle(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum FlutterCacheExtentStyle');
+  }
+}
+
+$flutterSrcRenderingViewport.CacheExtentStyle? convertFlutterCacheExtentStyle(enums.FlutterCacheExtentStyle_Enum enumValue) {
+  switch (enumValue) {
+    case enums.FlutterCacheExtentStyle_Enum.PIXEL:
+      return $flutterSrcRenderingViewport.CacheExtentStyle.pixel;
+    case enums.FlutterCacheExtentStyle_Enum.VIEWPORT:
+      return $flutterSrcRenderingViewport.CacheExtentStyle.viewport;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcWidgetsTextSelection.ClipboardStatus convertRequiredFlutterClipboardStatus(enums.FlutterClipboardStatus_Enum enumValue) {
+  final result = convertFlutterClipboardStatus(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum FlutterClipboardStatus');
+  }
+}
+
+$flutterSrcWidgetsTextSelection.ClipboardStatus? convertFlutterClipboardStatus(enums.FlutterClipboardStatus_Enum enumValue) {
+  switch (enumValue) {
+    case enums.FlutterClipboardStatus_Enum.PASTEABLE:
+      return $flutterSrcWidgetsTextSelection.ClipboardStatus.pasteable;
+    case enums.FlutterClipboardStatus_Enum.UNKNOWN:
+      return $flutterSrcWidgetsTextSelection.ClipboardStatus.unknown;
+    case enums.FlutterClipboardStatus_Enum.NOT_PASTEABLE:
+      return $flutterSrcWidgetsTextSelection.ClipboardStatus.notPasteable;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType convertRequiredFlutterContextMenuButtonType(enums.FlutterContextMenuButtonType_Enum enumValue) {
+  final result = convertFlutterContextMenuButtonType(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum FlutterContextMenuButtonType');
+  }
+}
+
+$flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType? convertFlutterContextMenuButtonType(enums.FlutterContextMenuButtonType_Enum enumValue) {
+  switch (enumValue) {
+    case enums.FlutterContextMenuButtonType_Enum.CUT:
+      return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.cut;
+    case enums.FlutterContextMenuButtonType_Enum.COPY:
+      return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.copy;
+    case enums.FlutterContextMenuButtonType_Enum.PASTE:
+      return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.paste;
+    case enums.FlutterContextMenuButtonType_Enum.SELECT_ALL:
+      return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.selectAll;
+    case enums.FlutterContextMenuButtonType_Enum.DELETE:
+      return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.delete;
+    case enums.FlutterContextMenuButtonType_Enum.LIVE_TEXT_INPUT:
+      return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.liveTextInput;
+    case enums.FlutterContextMenuButtonType_Enum.CUSTOM:
+      return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.custom;
+    default:
+      return null;
+  }
+}
+
 $flutterSrcRenderingFlex.CrossAxisAlignment convertRequiredFlutterCrossAxisAlignment(enums.FlutterCrossAxisAlignment_Enum enumValue) {
   final result = convertFlutterCrossAxisAlignment(enumValue);
   if(result != null) {
@@ -634,6 +866,100 @@ $flutterSrcWidgetsAnimatedCrossFade.CrossFadeState? convertFlutterCrossFadeState
       return $flutterSrcWidgetsAnimatedCrossFade.CrossFadeState.showFirst;
     case enums.FlutterCrossFadeState_Enum.SHOW_SECOND:
       return $flutterSrcWidgetsAnimatedCrossFade.CrossFadeState.showSecond;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcRenderingProxyBox.DecorationPosition convertRequiredFlutterDecorationPosition(enums.FlutterDecorationPosition_Enum enumValue) {
+  final result = convertFlutterDecorationPosition(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum FlutterDecorationPosition');
+  }
+}
+
+$flutterSrcRenderingProxyBox.DecorationPosition? convertFlutterDecorationPosition(enums.FlutterDecorationPosition_Enum enumValue) {
+  switch (enumValue) {
+    case enums.FlutterDecorationPosition_Enum.BACKGROUND:
+      return $flutterSrcRenderingProxyBox.DecorationPosition.background;
+    case enums.FlutterDecorationPosition_Enum.FOREGROUND:
+      return $flutterSrcRenderingProxyBox.DecorationPosition.foreground;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcFoundationDiagnostics.DiagnosticLevel convertRequiredFlutterDiagnosticLevel(enums.FlutterDiagnosticLevel_Enum enumValue) {
+  final result = convertFlutterDiagnosticLevel(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum FlutterDiagnosticLevel');
+  }
+}
+
+$flutterSrcFoundationDiagnostics.DiagnosticLevel? convertFlutterDiagnosticLevel(enums.FlutterDiagnosticLevel_Enum enumValue) {
+  switch (enumValue) {
+    case enums.FlutterDiagnosticLevel_Enum.HIDDEN:
+      return $flutterSrcFoundationDiagnostics.DiagnosticLevel.hidden;
+    case enums.FlutterDiagnosticLevel_Enum.FINE:
+      return $flutterSrcFoundationDiagnostics.DiagnosticLevel.fine;
+    case enums.FlutterDiagnosticLevel_Enum.DEBUG:
+      return $flutterSrcFoundationDiagnostics.DiagnosticLevel.debug;
+    case enums.FlutterDiagnosticLevel_Enum.INFO:
+      return $flutterSrcFoundationDiagnostics.DiagnosticLevel.info;
+    case enums.FlutterDiagnosticLevel_Enum.WARNING:
+      return $flutterSrcFoundationDiagnostics.DiagnosticLevel.warning;
+    case enums.FlutterDiagnosticLevel_Enum.HINT:
+      return $flutterSrcFoundationDiagnostics.DiagnosticLevel.hint;
+    case enums.FlutterDiagnosticLevel_Enum.SUMMARY:
+      return $flutterSrcFoundationDiagnostics.DiagnosticLevel.summary;
+    case enums.FlutterDiagnosticLevel_Enum.ERROR:
+      return $flutterSrcFoundationDiagnostics.DiagnosticLevel.error;
+    case enums.FlutterDiagnosticLevel_Enum.OFF:
+      return $flutterSrcFoundationDiagnostics.DiagnosticLevel.off;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle convertRequiredFlutterDiagnosticsTreeStyle(enums.FlutterDiagnosticsTreeStyle_Enum enumValue) {
+  final result = convertFlutterDiagnosticsTreeStyle(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum FlutterDiagnosticsTreeStyle');
+  }
+}
+
+$flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle? convertFlutterDiagnosticsTreeStyle(enums.FlutterDiagnosticsTreeStyle_Enum enumValue) {
+  switch (enumValue) {
+    case enums.FlutterDiagnosticsTreeStyle_Enum.NONE:
+      return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.none;
+    case enums.FlutterDiagnosticsTreeStyle_Enum.SPARSE:
+      return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.sparse;
+    case enums.FlutterDiagnosticsTreeStyle_Enum.OFFSTAGE:
+      return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.offstage;
+    case enums.FlutterDiagnosticsTreeStyle_Enum.DENSE:
+      return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.dense;
+    case enums.FlutterDiagnosticsTreeStyle_Enum.TRANSITION:
+      return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.transition;
+    case enums.FlutterDiagnosticsTreeStyle_Enum.ERROR:
+      return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.error;
+    case enums.FlutterDiagnosticsTreeStyle_Enum.WHITESPACE:
+      return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.whitespace;
+    case enums.FlutterDiagnosticsTreeStyle_Enum.FLAT:
+      return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.flat;
+    case enums.FlutterDiagnosticsTreeStyle_Enum.SINGLE_LINE:
+      return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.singleLine;
+    case enums.FlutterDiagnosticsTreeStyle_Enum.ERROR_PROPERTY:
+      return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.errorProperty;
+    case enums.FlutterDiagnosticsTreeStyle_Enum.SHALLOW:
+      return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.shallow;
+    case enums.FlutterDiagnosticsTreeStyle_Enum.TRUNCATE_CHILDREN:
+      return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.truncateChildren;
     default:
       return null;
   }
@@ -847,6 +1173,46 @@ $flutterSrcServicesTextFormatter.MaxLengthEnforcement? convertFlutterMaxLengthEn
   }
 }
 
+$flutterSrcWidgetsMediaQuery.NavigationMode convertRequiredFlutterNavigationMode(enums.FlutterNavigationMode_Enum enumValue) {
+  final result = convertFlutterNavigationMode(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum FlutterNavigationMode');
+  }
+}
+
+$flutterSrcWidgetsMediaQuery.NavigationMode? convertFlutterNavigationMode(enums.FlutterNavigationMode_Enum enumValue) {
+  switch (enumValue) {
+    case enums.FlutterNavigationMode_Enum.TRADITIONAL:
+      return $flutterSrcWidgetsMediaQuery.NavigationMode.traditional;
+    case enums.FlutterNavigationMode_Enum.DIRECTIONAL:
+      return $flutterSrcWidgetsMediaQuery.NavigationMode.directional;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcWidgetsMediaQuery.Orientation convertRequiredFlutterOrientation(enums.FlutterOrientation_Enum enumValue) {
+  final result = convertFlutterOrientation(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum FlutterOrientation');
+  }
+}
+
+$flutterSrcWidgetsMediaQuery.Orientation? convertFlutterOrientation(enums.FlutterOrientation_Enum enumValue) {
+  switch (enumValue) {
+    case enums.FlutterOrientation_Enum.PORTRAIT:
+      return $flutterSrcWidgetsMediaQuery.Orientation.portrait;
+    case enums.FlutterOrientation_Enum.LANDSCAPE:
+      return $flutterSrcWidgetsMediaQuery.Orientation.landscape;
+    default:
+      return null;
+  }
+}
+
 $flutterSrcWidgetsOverflowBar.OverflowBarAlignment convertRequiredFlutterOverflowBarAlignment(enums.FlutterOverflowBarAlignment_Enum enumValue) {
   final result = convertFlutterOverflowBarAlignment(enumValue);
   if(result != null) {
@@ -893,6 +1259,46 @@ $flutterSrcWidgetsInteractiveViewer.PanAxis? convertFlutterPanAxis(enums.Flutter
   }
 }
 
+$flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType convertRequiredFlutterPlatformProvidedMenuItemType(enums.FlutterPlatformProvidedMenuItemType_Enum enumValue) {
+  final result = convertFlutterPlatformProvidedMenuItemType(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum FlutterPlatformProvidedMenuItemType');
+  }
+}
+
+$flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType? convertFlutterPlatformProvidedMenuItemType(enums.FlutterPlatformProvidedMenuItemType_Enum enumValue) {
+  switch (enumValue) {
+    case enums.FlutterPlatformProvidedMenuItemType_Enum.ABOUT:
+      return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.about;
+    case enums.FlutterPlatformProvidedMenuItemType_Enum.QUIT:
+      return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.quit;
+    case enums.FlutterPlatformProvidedMenuItemType_Enum.SERVICES_SUBMENU:
+      return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.servicesSubmenu;
+    case enums.FlutterPlatformProvidedMenuItemType_Enum.HIDE:
+      return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.hide;
+    case enums.FlutterPlatformProvidedMenuItemType_Enum.HIDE_OTHER_APPLICATIONS:
+      return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.hideOtherApplications;
+    case enums.FlutterPlatformProvidedMenuItemType_Enum.SHOW_ALL_APPLICATIONS:
+      return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.showAllApplications;
+    case enums.FlutterPlatformProvidedMenuItemType_Enum.START_SPEAKING:
+      return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.startSpeaking;
+    case enums.FlutterPlatformProvidedMenuItemType_Enum.STOP_SPEAKING:
+      return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.stopSpeaking;
+    case enums.FlutterPlatformProvidedMenuItemType_Enum.TOGGLE_FULL_SCREEN:
+      return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.toggleFullScreen;
+    case enums.FlutterPlatformProvidedMenuItemType_Enum.MINIMIZE_WINDOW:
+      return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.minimizeWindow;
+    case enums.FlutterPlatformProvidedMenuItemType_Enum.ZOOM_WINDOW:
+      return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.zoomWindow;
+    case enums.FlutterPlatformProvidedMenuItemType_Enum.ARRANGE_WINDOWS_IN_FRONT:
+      return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.arrangeWindowsInFront;
+    default:
+      return null;
+  }
+}
+
 $flutterSrcRenderingPlatformView.PlatformViewHitTestBehavior convertRequiredFlutterPlatformViewHitTestBehavior(enums.FlutterPlatformViewHitTestBehavior_Enum enumValue) {
   final result = convertFlutterPlatformViewHitTestBehavior(enumValue);
   if(result != null) {
@@ -910,6 +1316,46 @@ $flutterSrcRenderingPlatformView.PlatformViewHitTestBehavior? convertFlutterPlat
       return $flutterSrcRenderingPlatformView.PlatformViewHitTestBehavior.translucent;
     case enums.FlutterPlatformViewHitTestBehavior_Enum.TRANSPARENT:
       return $flutterSrcRenderingPlatformView.PlatformViewHitTestBehavior.transparent;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcWidgetsScrollPhysics.ScrollDecelerationRate convertRequiredFlutterScrollDecelerationRate(enums.FlutterScrollDecelerationRate_Enum enumValue) {
+  final result = convertFlutterScrollDecelerationRate(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum FlutterScrollDecelerationRate');
+  }
+}
+
+$flutterSrcWidgetsScrollPhysics.ScrollDecelerationRate? convertFlutterScrollDecelerationRate(enums.FlutterScrollDecelerationRate_Enum enumValue) {
+  switch (enumValue) {
+    case enums.FlutterScrollDecelerationRate_Enum.NORMAL:
+      return $flutterSrcWidgetsScrollPhysics.ScrollDecelerationRate.normal;
+    case enums.FlutterScrollDecelerationRate_Enum.FAST:
+      return $flutterSrcWidgetsScrollPhysics.ScrollDecelerationRate.fast;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcWidgetsScrollableHelpers.ScrollIncrementType convertRequiredFlutterScrollIncrementType(enums.FlutterScrollIncrementType_Enum enumValue) {
+  final result = convertFlutterScrollIncrementType(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum FlutterScrollIncrementType');
+  }
+}
+
+$flutterSrcWidgetsScrollableHelpers.ScrollIncrementType? convertFlutterScrollIncrementType(enums.FlutterScrollIncrementType_Enum enumValue) {
+  switch (enumValue) {
+    case enums.FlutterScrollIncrementType_Enum.LINE:
+      return $flutterSrcWidgetsScrollableHelpers.ScrollIncrementType.line;
+    case enums.FlutterScrollIncrementType_Enum.PAGE:
+      return $flutterSrcWidgetsScrollableHelpers.ScrollIncrementType.page;
     default:
       return null;
   }
@@ -959,6 +1405,38 @@ $flutterSrcWidgetsScrollbar.ScrollbarOrientation? convertFlutterScrollbarOrienta
   }
 }
 
+$flutterSrcServicesTextInput.SelectionChangedCause convertRequiredFlutterSelectionChangedCause(enums.FlutterSelectionChangedCause_Enum enumValue) {
+  final result = convertFlutterSelectionChangedCause(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum FlutterSelectionChangedCause');
+  }
+}
+
+$flutterSrcServicesTextInput.SelectionChangedCause? convertFlutterSelectionChangedCause(enums.FlutterSelectionChangedCause_Enum enumValue) {
+  switch (enumValue) {
+    case enums.FlutterSelectionChangedCause_Enum.TAP:
+      return $flutterSrcServicesTextInput.SelectionChangedCause.tap;
+    case enums.FlutterSelectionChangedCause_Enum.DOUBLE_TAP:
+      return $flutterSrcServicesTextInput.SelectionChangedCause.doubleTap;
+    case enums.FlutterSelectionChangedCause_Enum.LONG_PRESS:
+      return $flutterSrcServicesTextInput.SelectionChangedCause.longPress;
+    case enums.FlutterSelectionChangedCause_Enum.FORCE_PRESS:
+      return $flutterSrcServicesTextInput.SelectionChangedCause.forcePress;
+    case enums.FlutterSelectionChangedCause_Enum.KEYBOARD:
+      return $flutterSrcServicesTextInput.SelectionChangedCause.keyboard;
+    case enums.FlutterSelectionChangedCause_Enum.TOOLBAR:
+      return $flutterSrcServicesTextInput.SelectionChangedCause.toolbar;
+    case enums.FlutterSelectionChangedCause_Enum.DRAG:
+      return $flutterSrcServicesTextInput.SelectionChangedCause.drag;
+    case enums.FlutterSelectionChangedCause_Enum.SCRIBBLE:
+      return $flutterSrcServicesTextInput.SelectionChangedCause.scribble;
+    default:
+      return null;
+  }
+}
+
 $flutterSrcServicesTextInput.SmartDashesType convertRequiredFlutterSmartDashesType(enums.FlutterSmartDashesType_Enum enumValue) {
   final result = convertFlutterSmartDashesType(enumValue);
   if(result != null) {
@@ -994,6 +1472,28 @@ $flutterSrcServicesTextInput.SmartQuotesType? convertFlutterSmartQuotesType(enum
       return $flutterSrcServicesTextInput.SmartQuotesType.disabled;
     case enums.FlutterSmartQuotesType_Enum.ENABLED:
       return $flutterSrcServicesTextInput.SmartQuotesType.enabled;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcWidgetsSnapshotWidget.SnapshotMode convertRequiredFlutterSnapshotMode(enums.FlutterSnapshotMode_Enum enumValue) {
+  final result = convertFlutterSnapshotMode(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum FlutterSnapshotMode');
+  }
+}
+
+$flutterSrcWidgetsSnapshotWidget.SnapshotMode? convertFlutterSnapshotMode(enums.FlutterSnapshotMode_Enum enumValue) {
+  switch (enumValue) {
+    case enums.FlutterSnapshotMode_Enum.PERMISSIVE:
+      return $flutterSrcWidgetsSnapshotWidget.SnapshotMode.permissive;
+    case enums.FlutterSnapshotMode_Enum.NORMAL:
+      return $flutterSrcWidgetsSnapshotWidget.SnapshotMode.normal;
+    case enums.FlutterSnapshotMode_Enum.FORCED:
+      return $flutterSrcWidgetsSnapshotWidget.SnapshotMode.forced;
     default:
       return null;
   }
@@ -1042,6 +1542,34 @@ $flutterSrcRenderingTable.TableCellVerticalAlignment? convertFlutterTableCellVer
       return $flutterSrcRenderingTable.TableCellVerticalAlignment.baseline;
     case enums.FlutterTableCellVerticalAlignment_Enum.FILL:
       return $flutterSrcRenderingTable.TableCellVerticalAlignment.fill;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcFoundationPlatform.TargetPlatform convertRequiredFlutterTargetPlatform(enums.FlutterTargetPlatform_Enum enumValue) {
+  final result = convertFlutterTargetPlatform(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum FlutterTargetPlatform');
+  }
+}
+
+$flutterSrcFoundationPlatform.TargetPlatform? convertFlutterTargetPlatform(enums.FlutterTargetPlatform_Enum enumValue) {
+  switch (enumValue) {
+    case enums.FlutterTargetPlatform_Enum.ANDROID:
+      return $flutterSrcFoundationPlatform.TargetPlatform.android;
+    case enums.FlutterTargetPlatform_Enum.FUCHSIA:
+      return $flutterSrcFoundationPlatform.TargetPlatform.fuchsia;
+    case enums.FlutterTargetPlatform_Enum.I_O_S:
+      return $flutterSrcFoundationPlatform.TargetPlatform.iOS;
+    case enums.FlutterTargetPlatform_Enum.LINUX:
+      return $flutterSrcFoundationPlatform.TargetPlatform.linux;
+    case enums.FlutterTargetPlatform_Enum.MAC_O_S:
+      return $flutterSrcFoundationPlatform.TargetPlatform.macOS;
+    case enums.FlutterTargetPlatform_Enum.WINDOWS:
+      return $flutterSrcFoundationPlatform.TargetPlatform.windows;
     default:
       return null;
   }
@@ -1157,6 +1685,30 @@ $flutterSrcPaintingTextPainter.TextWidthBasis? convertFlutterTextWidthBasis(enum
   }
 }
 
+$flutterSrcWidgetsFocusTraversal.TraversalDirection convertRequiredFlutterTraversalDirection(enums.FlutterTraversalDirection_Enum enumValue) {
+  final result = convertFlutterTraversalDirection(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum FlutterTraversalDirection');
+  }
+}
+
+$flutterSrcWidgetsFocusTraversal.TraversalDirection? convertFlutterTraversalDirection(enums.FlutterTraversalDirection_Enum enumValue) {
+  switch (enumValue) {
+    case enums.FlutterTraversalDirection_Enum.UP:
+      return $flutterSrcWidgetsFocusTraversal.TraversalDirection.up;
+    case enums.FlutterTraversalDirection_Enum.RIGHT:
+      return $flutterSrcWidgetsFocusTraversal.TraversalDirection.right;
+    case enums.FlutterTraversalDirection_Enum.DOWN:
+      return $flutterSrcWidgetsFocusTraversal.TraversalDirection.down;
+    case enums.FlutterTraversalDirection_Enum.LEFT:
+      return $flutterSrcWidgetsFocusTraversal.TraversalDirection.left;
+    default:
+      return null;
+  }
+}
+
 $flutterSrcWidgetsFocusTraversal.TraversalEdgeBehavior convertRequiredFlutterTraversalEdgeBehavior(enums.FlutterTraversalEdgeBehavior_Enum enumValue) {
   final result = convertFlutterTraversalEdgeBehavior(enumValue);
   if(result != null) {
@@ -1247,6 +1799,48 @@ $flutterSrcRenderingWrap.WrapCrossAlignment? convertFlutterWrapCrossAlignment(en
   }
 }
 
+$flutterSrcMaterialBottomNavigationBar.BottomNavigationBarLandscapeLayout convertRequiredMaterialBottomNavigationBarLandscapeLayout(enums.MaterialBottomNavigationBarLandscapeLayout_Enum enumValue) {
+  final result = convertMaterialBottomNavigationBarLandscapeLayout(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum MaterialBottomNavigationBarLandscapeLayout');
+  }
+}
+
+$flutterSrcMaterialBottomNavigationBar.BottomNavigationBarLandscapeLayout? convertMaterialBottomNavigationBarLandscapeLayout(enums.MaterialBottomNavigationBarLandscapeLayout_Enum enumValue) {
+  switch (enumValue) {
+    case enums.MaterialBottomNavigationBarLandscapeLayout_Enum.SPREAD:
+      return $flutterSrcMaterialBottomNavigationBar.BottomNavigationBarLandscapeLayout.spread;
+    case enums.MaterialBottomNavigationBarLandscapeLayout_Enum.CENTERED:
+      return $flutterSrcMaterialBottomNavigationBar.BottomNavigationBarLandscapeLayout.centered;
+    case enums.MaterialBottomNavigationBarLandscapeLayout_Enum.LINEAR:
+      return $flutterSrcMaterialBottomNavigationBar.BottomNavigationBarLandscapeLayout.linear;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcMaterialBottomNavigationBar.BottomNavigationBarType convertRequiredMaterialBottomNavigationBarType(enums.MaterialBottomNavigationBarType_Enum enumValue) {
+  final result = convertMaterialBottomNavigationBarType(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum MaterialBottomNavigationBarType');
+  }
+}
+
+$flutterSrcMaterialBottomNavigationBar.BottomNavigationBarType? convertMaterialBottomNavigationBarType(enums.MaterialBottomNavigationBarType_Enum enumValue) {
+  switch (enumValue) {
+    case enums.MaterialBottomNavigationBarType_Enum.FIXED:
+      return $flutterSrcMaterialBottomNavigationBar.BottomNavigationBarType.fixed;
+    case enums.MaterialBottomNavigationBarType_Enum.SHIFTING:
+      return $flutterSrcMaterialBottomNavigationBar.BottomNavigationBarType.shifting;
+    default:
+      return null;
+  }
+}
+
 $flutterSrcMaterialButtonTheme.ButtonBarLayoutBehavior convertRequiredMaterialButtonBarLayoutBehavior(enums.MaterialButtonBarLayoutBehavior_Enum enumValue) {
   final result = convertMaterialButtonBarLayoutBehavior(enumValue);
   if(result != null) {
@@ -1311,6 +1905,50 @@ $flutterSrcMaterialFlexibleSpaceBar.CollapseMode? convertMaterialCollapseMode(en
   }
 }
 
+$flutterSrcMaterialDate.DatePickerEntryMode convertRequiredMaterialDatePickerEntryMode(enums.MaterialDatePickerEntryMode_Enum enumValue) {
+  final result = convertMaterialDatePickerEntryMode(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum MaterialDatePickerEntryMode');
+  }
+}
+
+$flutterSrcMaterialDate.DatePickerEntryMode? convertMaterialDatePickerEntryMode(enums.MaterialDatePickerEntryMode_Enum enumValue) {
+  switch (enumValue) {
+    case enums.MaterialDatePickerEntryMode_Enum.CALENDAR:
+      return $flutterSrcMaterialDate.DatePickerEntryMode.calendar;
+    case enums.MaterialDatePickerEntryMode_Enum.INPUT:
+      return $flutterSrcMaterialDate.DatePickerEntryMode.input;
+    case enums.MaterialDatePickerEntryMode_Enum.CALENDAR_ONLY:
+      return $flutterSrcMaterialDate.DatePickerEntryMode.calendarOnly;
+    case enums.MaterialDatePickerEntryMode_Enum.INPUT_ONLY:
+      return $flutterSrcMaterialDate.DatePickerEntryMode.inputOnly;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcMaterialDate.DatePickerMode convertRequiredMaterialDatePickerMode(enums.MaterialDatePickerMode_Enum enumValue) {
+  final result = convertMaterialDatePickerMode(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum MaterialDatePickerMode');
+  }
+}
+
+$flutterSrcMaterialDate.DatePickerMode? convertMaterialDatePickerMode(enums.MaterialDatePickerMode_Enum enumValue) {
+  switch (enumValue) {
+    case enums.MaterialDatePickerMode_Enum.DAY:
+      return $flutterSrcMaterialDate.DatePickerMode.day;
+    case enums.MaterialDatePickerMode_Enum.YEAR:
+      return $flutterSrcMaterialDate.DatePickerMode.year;
+    default:
+      return null;
+  }
+}
+
 $flutterSrcMaterialDrawer.DrawerAlignment convertRequiredMaterialDrawerAlignment(enums.MaterialDrawerAlignment_Enum enumValue) {
   final result = convertMaterialDrawerAlignment(enumValue);
   if(result != null) {
@@ -1326,6 +1964,28 @@ $flutterSrcMaterialDrawer.DrawerAlignment? convertMaterialDrawerAlignment(enums.
       return $flutterSrcMaterialDrawer.DrawerAlignment.start;
     case enums.MaterialDrawerAlignment_Enum.END:
       return $flutterSrcMaterialDrawer.DrawerAlignment.end;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcMaterialInputDecorator.FloatingLabelBehavior convertRequiredMaterialFloatingLabelBehavior(enums.MaterialFloatingLabelBehavior_Enum enumValue) {
+  final result = convertMaterialFloatingLabelBehavior(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum MaterialFloatingLabelBehavior');
+  }
+}
+
+$flutterSrcMaterialInputDecorator.FloatingLabelBehavior? convertMaterialFloatingLabelBehavior(enums.MaterialFloatingLabelBehavior_Enum enumValue) {
+  switch (enumValue) {
+    case enums.MaterialFloatingLabelBehavior_Enum.NEVER:
+      return $flutterSrcMaterialInputDecorator.FloatingLabelBehavior.never;
+    case enums.MaterialFloatingLabelBehavior_Enum.AUTO:
+      return $flutterSrcMaterialInputDecorator.FloatingLabelBehavior.auto;
+    case enums.MaterialFloatingLabelBehavior_Enum.ALWAYS:
+      return $flutterSrcMaterialInputDecorator.FloatingLabelBehavior.always;
     default:
       return null;
   }
@@ -1467,6 +2127,72 @@ $flutterSrcMaterialNavigationBar.NavigationDestinationLabelBehavior? convertMate
   }
 }
 
+$flutterSrcMaterialNavigationRail.NavigationRailLabelType convertRequiredMaterialNavigationRailLabelType(enums.MaterialNavigationRailLabelType_Enum enumValue) {
+  final result = convertMaterialNavigationRailLabelType(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum MaterialNavigationRailLabelType');
+  }
+}
+
+$flutterSrcMaterialNavigationRail.NavigationRailLabelType? convertMaterialNavigationRailLabelType(enums.MaterialNavigationRailLabelType_Enum enumValue) {
+  switch (enumValue) {
+    case enums.MaterialNavigationRailLabelType_Enum.NONE:
+      return $flutterSrcMaterialNavigationRail.NavigationRailLabelType.none;
+    case enums.MaterialNavigationRailLabelType_Enum.SELECTED:
+      return $flutterSrcMaterialNavigationRail.NavigationRailLabelType.selected;
+    case enums.MaterialNavigationRailLabelType_Enum.ALL:
+      return $flutterSrcMaterialNavigationRail.NavigationRailLabelType.all;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcMaterialPopupMenuTheme.PopupMenuPosition convertRequiredMaterialPopupMenuPosition(enums.MaterialPopupMenuPosition_Enum enumValue) {
+  final result = convertMaterialPopupMenuPosition(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum MaterialPopupMenuPosition');
+  }
+}
+
+$flutterSrcMaterialPopupMenuTheme.PopupMenuPosition? convertMaterialPopupMenuPosition(enums.MaterialPopupMenuPosition_Enum enumValue) {
+  switch (enumValue) {
+    case enums.MaterialPopupMenuPosition_Enum.OVER:
+      return $flutterSrcMaterialPopupMenuTheme.PopupMenuPosition.over;
+    case enums.MaterialPopupMenuPosition_Enum.UNDER:
+      return $flutterSrcMaterialPopupMenuTheme.PopupMenuPosition.under;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcMaterialSliderTheme.ShowValueIndicator convertRequiredMaterialShowValueIndicator(enums.MaterialShowValueIndicator_Enum enumValue) {
+  final result = convertMaterialShowValueIndicator(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum MaterialShowValueIndicator');
+  }
+}
+
+$flutterSrcMaterialSliderTheme.ShowValueIndicator? convertMaterialShowValueIndicator(enums.MaterialShowValueIndicator_Enum enumValue) {
+  switch (enumValue) {
+    case enums.MaterialShowValueIndicator_Enum.ONLY_FOR_DISCRETE:
+      return $flutterSrcMaterialSliderTheme.ShowValueIndicator.onlyForDiscrete;
+    case enums.MaterialShowValueIndicator_Enum.ONLY_FOR_CONTINUOUS:
+      return $flutterSrcMaterialSliderTheme.ShowValueIndicator.onlyForContinuous;
+    case enums.MaterialShowValueIndicator_Enum.ALWAYS:
+      return $flutterSrcMaterialSliderTheme.ShowValueIndicator.always;
+    case enums.MaterialShowValueIndicator_Enum.NEVER:
+      return $flutterSrcMaterialSliderTheme.ShowValueIndicator.never;
+    default:
+      return null;
+  }
+}
+
 $flutterSrcMaterialSlider.SliderInteraction convertRequiredMaterialSliderInteraction(enums.MaterialSliderInteraction_Enum enumValue) {
   final result = convertMaterialSliderInteraction(enumValue);
   if(result != null) {
@@ -1506,6 +2232,52 @@ $flutterSrcMaterialSnackBarTheme.SnackBarBehavior? convertMaterialSnackBarBehavi
       return $flutterSrcMaterialSnackBarTheme.SnackBarBehavior.fixed;
     case enums.MaterialSnackBarBehavior_Enum.FLOATING:
       return $flutterSrcMaterialSnackBarTheme.SnackBarBehavior.floating;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcMaterialStepper.StepState convertRequiredMaterialStepState(enums.MaterialStepState_Enum enumValue) {
+  final result = convertMaterialStepState(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum MaterialStepState');
+  }
+}
+
+$flutterSrcMaterialStepper.StepState? convertMaterialStepState(enums.MaterialStepState_Enum enumValue) {
+  switch (enumValue) {
+    case enums.MaterialStepState_Enum.INDEXED:
+      return $flutterSrcMaterialStepper.StepState.indexed;
+    case enums.MaterialStepState_Enum.EDITING:
+      return $flutterSrcMaterialStepper.StepState.editing;
+    case enums.MaterialStepState_Enum.COMPLETE:
+      return $flutterSrcMaterialStepper.StepState.complete;
+    case enums.MaterialStepState_Enum.DISABLED:
+      return $flutterSrcMaterialStepper.StepState.disabled;
+    case enums.MaterialStepState_Enum.ERROR:
+      return $flutterSrcMaterialStepper.StepState.error;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcMaterialStepper.StepperType convertRequiredMaterialStepperType(enums.MaterialStepperType_Enum enumValue) {
+  final result = convertMaterialStepperType(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum MaterialStepperType');
+  }
+}
+
+$flutterSrcMaterialStepper.StepperType? convertMaterialStepperType(enums.MaterialStepperType_Enum enumValue) {
+  switch (enumValue) {
+    case enums.MaterialStepperType_Enum.VERTICAL:
+      return $flutterSrcMaterialStepper.StepperType.vertical;
+    case enums.MaterialStepperType_Enum.HORIZONTAL:
+      return $flutterSrcMaterialStepper.StepperType.horizontal;
     default:
       return null;
   }
@@ -1594,6 +2366,30 @@ $flutterSrcMaterialApp.ThemeMode? convertMaterialThemeMode(enums.MaterialThemeMo
       return $flutterSrcMaterialApp.ThemeMode.light;
     case enums.MaterialThemeMode_Enum.DARK:
       return $flutterSrcMaterialApp.ThemeMode.dark;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcMaterialTimePicker.TimePickerEntryMode convertRequiredMaterialTimePickerEntryMode(enums.MaterialTimePickerEntryMode_Enum enumValue) {
+  final result = convertMaterialTimePickerEntryMode(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum MaterialTimePickerEntryMode');
+  }
+}
+
+$flutterSrcMaterialTimePicker.TimePickerEntryMode? convertMaterialTimePickerEntryMode(enums.MaterialTimePickerEntryMode_Enum enumValue) {
+  switch (enumValue) {
+    case enums.MaterialTimePickerEntryMode_Enum.DIAL:
+      return $flutterSrcMaterialTimePicker.TimePickerEntryMode.dial;
+    case enums.MaterialTimePickerEntryMode_Enum.INPUT:
+      return $flutterSrcMaterialTimePicker.TimePickerEntryMode.input;
+    case enums.MaterialTimePickerEntryMode_Enum.DIAL_ONLY:
+      return $flutterSrcMaterialTimePicker.TimePickerEntryMode.dialOnly;
+    case enums.MaterialTimePickerEntryMode_Enum.INPUT_ONLY:
+      return $flutterSrcMaterialTimePicker.TimePickerEntryMode.inputOnly;
     default:
       return null;
   }

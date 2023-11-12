@@ -68,7 +68,7 @@ extension TypeMappingCreationExtension on DartType {
         mappingStrategy: MappingStrategy.generateMessage,
       );
     } else if (this is InterfaceType) {
-      // TODO use correct name when type params are present
+      final element = this.element;
       final name = element?.name;
       final libraryPrefix = element?.toLibraryPrefix();
       if (element is EnumElement) {
@@ -77,20 +77,17 @@ extension TypeMappingCreationExtension on DartType {
           messageName: '$libraryPrefix$name',
           mappingStrategy: MappingStrategy.generateEnum,
         );
-      } else if (name == 'Key' ||
-          name == 'Duration' ||
-          name == 'Color' ||
-          name == 'EdgeInsetsGeometry' ||
-          name?.contains('Style') == true) {
-        // TODO MaterialStateProperty
-        return TypeMapping._of(
-          dartType: this,
-          messageName: '$libraryPrefix${name}Expression',
-          mappingStrategy: MappingStrategy.generateMessage,
-        );
       } else if (element is ClassElement) {
-        // TODO enable more types
-        return null;
+        if (element.typeParameters.isEmpty) {
+          return TypeMapping._of(
+            dartType: this,
+            messageName: '$libraryPrefix${name}Expression',
+            mappingStrategy: MappingStrategy.generateMessage,
+          );
+        } else {
+          // TODO e.g. MaterialStateProperty
+          return null;
+        }
       } else {
         // mixins
         return null;
@@ -225,7 +222,10 @@ ${enumElement.fields.where((f) => f.name != 'values').map((f) {
 ''';
   }
 
-  String toDartTypeSwitchCase(Iterable<Constructor> constructors) {
+  String toDartTypeSwitchCase(
+    Iterable<Constructor> constructors,
+    Map<TypeMapping, Iterable<Constructor>> allConstructors,
+  ) {
     return '''
 $importAlias.$typeName evaluateRequired$messageName(messages.$messageName tree) {
   final result = evaluate$messageName(tree);
@@ -242,7 +242,7 @@ $importAlias.$typeName? evaluate$messageName(messages.$messageName? tree) {
   }
 
   switch (tree.whichResult()) {
-${constructors.map((c) => c.toDartSwitchCase('messages', messageName)).join("\n")}
+${constructors.map((c) => c.toDartSwitchCase('messages', messageName, allConstructors)).join("\n")}
     default:
       return null;
   }

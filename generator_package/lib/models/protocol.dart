@@ -8,11 +8,11 @@ import 'package:generator_package/usable_constructors_extension.dart';
 
 class Protocol {
   final Iterable<TypeMapping> enumTypeMappings;
-  final Map<TypeMapping, Iterable<Constructor>> payloadConstructors;
+  final Map<TypeMapping, Iterable<Constructor>> typeConstructors;
 
   Protocol({
     required this.enumTypeMappings,
-    required this.payloadConstructors,
+    required this.typeConstructors,
   });
 
   factory Protocol.ofElements(Iterable<LibraryElement> libraries) {
@@ -49,7 +49,7 @@ class Protocol {
 
     return Protocol(
       enumTypeMappings: enumTypeMappings.sortedBy((m) => m.messageName),
-      payloadConstructors: payloadConstructors,
+      typeConstructors: payloadConstructors,
     );
   }
 
@@ -107,9 +107,9 @@ syntax = "proto3";
 
 import "$enumsProto";
 
-${payloadConstructors.values.flattened.toSet().sortedBy((c) => c.messageName.originalText).map((c) => c.toProtoMessage()).join("\n")}
+${typeConstructors.values.flattened.toSet().sortedBy((c) => c.messageName.originalText).map((c) => c.toProtoMessage(typeConstructors)).join("\n")}
 
-${payloadConstructors.entries.sortedBy((e) => e.key.messageName).map((e) => e.key.toProtoMessage(e.value)).join("\n")}
+${typeConstructors.entries.where((e) => e.value.isNotEmpty).sortedBy((e) => e.key.messageName).map((e) => e.key.toProtoMessage(e.value)).join("\n")}
 ''';
   }
 
@@ -155,10 +155,9 @@ ${enumTypeMappings.map((m) => m.toDartEnumSwitchCase()).whereType<String>().join
 
   String toEvaluateExpressionsCode() {
     final imports = {
-      ...payloadConstructors.keys.map((e) => e.toDartImport()),
-      ...payloadConstructors.values
-          .expand((e) => e.map((c) => c.toDartImport())),
-      ...payloadConstructors.values.flattened
+      ...typeConstructors.keys.map((e) => e.toDartImport()),
+      ...typeConstructors.values.expand((e) => e.map((c) => c.toDartImport())),
+      ...typeConstructors.values.flattened
           .expand((c) => c.parameters)
           .where((p) => p.typeMapping != null)
           .expand((p) => p.defaultValueImports ?? <String>[]),
@@ -179,7 +178,7 @@ T $throwMissingName<T>(core.String field) {
   throw core.AssertionError('required field \$field is missing');
 }
 
-${payloadConstructors.entries.sortedBy((e) => e.key.messageName).map((e) => e.key.toDartTypeSwitchCase(e.value)).join("\n")}
+${typeConstructors.entries.where((e) => e.value.isNotEmpty).sortedBy((e) => e.key.messageName).map((e) => e.key.toDartTypeSwitchCase(e.value, typeConstructors)).join("\n")}
 ''';
   }
 }

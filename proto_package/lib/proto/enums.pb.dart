@@ -82,6 +82,39 @@ class DartBlendMode extends $pb.GeneratedMessage {
 }
 
 /// dart:ui
+class DartBlurStyle extends $pb.GeneratedMessage {
+  factory DartBlurStyle() => create();
+  DartBlurStyle._() : super();
+  factory DartBlurStyle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DartBlurStyle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DartBlurStyle', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DartBlurStyle clone() => DartBlurStyle()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DartBlurStyle copyWith(void Function(DartBlurStyle) updates) => super.copyWith((message) => updates(message as DartBlurStyle)) as DartBlurStyle;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DartBlurStyle create() => DartBlurStyle._();
+  DartBlurStyle createEmptyInstance() => create();
+  static $pb.PbList<DartBlurStyle> createRepeated() => $pb.PbList<DartBlurStyle>();
+  @$core.pragma('dart2js:noInline')
+  static DartBlurStyle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DartBlurStyle>(create);
+  static DartBlurStyle? _defaultInstance;
+}
+
+/// dart:ui
 class DartBoxHeightStyle extends $pb.GeneratedMessage {
   factory DartBoxHeightStyle() => create();
   DartBoxHeightStyle._() : super();
@@ -214,6 +247,72 @@ class DartClip extends $pb.GeneratedMessage {
 }
 
 /// dart:ui
+class DartDisplayFeatureState extends $pb.GeneratedMessage {
+  factory DartDisplayFeatureState() => create();
+  DartDisplayFeatureState._() : super();
+  factory DartDisplayFeatureState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DartDisplayFeatureState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DartDisplayFeatureState', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DartDisplayFeatureState clone() => DartDisplayFeatureState()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DartDisplayFeatureState copyWith(void Function(DartDisplayFeatureState) updates) => super.copyWith((message) => updates(message as DartDisplayFeatureState)) as DartDisplayFeatureState;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DartDisplayFeatureState create() => DartDisplayFeatureState._();
+  DartDisplayFeatureState createEmptyInstance() => create();
+  static $pb.PbList<DartDisplayFeatureState> createRepeated() => $pb.PbList<DartDisplayFeatureState>();
+  @$core.pragma('dart2js:noInline')
+  static DartDisplayFeatureState getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DartDisplayFeatureState>(create);
+  static DartDisplayFeatureState? _defaultInstance;
+}
+
+/// dart:ui
+class DartDisplayFeatureType extends $pb.GeneratedMessage {
+  factory DartDisplayFeatureType() => create();
+  DartDisplayFeatureType._() : super();
+  factory DartDisplayFeatureType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DartDisplayFeatureType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DartDisplayFeatureType', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DartDisplayFeatureType clone() => DartDisplayFeatureType()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DartDisplayFeatureType copyWith(void Function(DartDisplayFeatureType) updates) => super.copyWith((message) => updates(message as DartDisplayFeatureType)) as DartDisplayFeatureType;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DartDisplayFeatureType create() => DartDisplayFeatureType._();
+  DartDisplayFeatureType createEmptyInstance() => create();
+  static $pb.PbList<DartDisplayFeatureType> createRepeated() => $pb.PbList<DartDisplayFeatureType>();
+  @$core.pragma('dart2js:noInline')
+  static DartDisplayFeatureType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DartDisplayFeatureType>(create);
+  static DartDisplayFeatureType? _defaultInstance;
+}
+
+/// dart:ui
 class DartFilterQuality extends $pb.GeneratedMessage {
   factory DartFilterQuality() => create();
   DartFilterQuality._() : super();
@@ -280,6 +379,39 @@ class DartFontStyle extends $pb.GeneratedMessage {
 }
 
 /// dart:ui
+class DartPlaceholderAlignment extends $pb.GeneratedMessage {
+  factory DartPlaceholderAlignment() => create();
+  DartPlaceholderAlignment._() : super();
+  factory DartPlaceholderAlignment.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DartPlaceholderAlignment.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DartPlaceholderAlignment', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DartPlaceholderAlignment clone() => DartPlaceholderAlignment()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DartPlaceholderAlignment copyWith(void Function(DartPlaceholderAlignment) updates) => super.copyWith((message) => updates(message as DartPlaceholderAlignment)) as DartPlaceholderAlignment;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DartPlaceholderAlignment create() => DartPlaceholderAlignment._();
+  DartPlaceholderAlignment createEmptyInstance() => create();
+  static $pb.PbList<DartPlaceholderAlignment> createRepeated() => $pb.PbList<DartPlaceholderAlignment>();
+  @$core.pragma('dart2js:noInline')
+  static DartPlaceholderAlignment getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DartPlaceholderAlignment>(create);
+  static DartPlaceholderAlignment? _defaultInstance;
+}
+
+/// dart:ui
 class DartStrokeCap extends $pb.GeneratedMessage {
   factory DartStrokeCap() => create();
   DartStrokeCap._() : super();
@@ -310,6 +442,39 @@ class DartStrokeCap extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static DartStrokeCap getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DartStrokeCap>(create);
   static DartStrokeCap? _defaultInstance;
+}
+
+/// dart:ui
+class DartTextAffinity extends $pb.GeneratedMessage {
+  factory DartTextAffinity() => create();
+  DartTextAffinity._() : super();
+  factory DartTextAffinity.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DartTextAffinity.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DartTextAffinity', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DartTextAffinity clone() => DartTextAffinity()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DartTextAffinity copyWith(void Function(DartTextAffinity) updates) => super.copyWith((message) => updates(message as DartTextAffinity)) as DartTextAffinity;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DartTextAffinity create() => DartTextAffinity._();
+  DartTextAffinity createEmptyInstance() => create();
+  static $pb.PbList<DartTextAffinity> createRepeated() => $pb.PbList<DartTextAffinity>();
+  @$core.pragma('dart2js:noInline')
+  static DartTextAffinity getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DartTextAffinity>(create);
+  static DartTextAffinity? _defaultInstance;
 }
 
 /// dart:ui
@@ -475,6 +640,39 @@ class DartTextLeadingDistribution extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static DartTextLeadingDistribution getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DartTextLeadingDistribution>(create);
   static DartTextLeadingDistribution? _defaultInstance;
+}
+
+/// dart:ui
+class DartTileMode extends $pb.GeneratedMessage {
+  factory DartTileMode() => create();
+  DartTileMode._() : super();
+  factory DartTileMode.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory DartTileMode.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DartTileMode', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  DartTileMode clone() => DartTileMode()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  DartTileMode copyWith(void Function(DartTileMode) updates) => super.copyWith((message) => updates(message as DartTileMode)) as DartTileMode;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static DartTileMode create() => DartTileMode._();
+  DartTileMode createEmptyInstance() => create();
+  static $pb.PbList<DartTileMode> createRepeated() => $pb.PbList<DartTileMode>();
+  @$core.pragma('dart2js:noInline')
+  static DartTileMode getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DartTileMode>(create);
+  static DartTileMode? _defaultInstance;
 }
 
 /// package:flutter/src/widgets/autofill.dart
@@ -741,6 +939,105 @@ class FlutterBoxShape extends $pb.GeneratedMessage {
   static FlutterBoxShape? _defaultInstance;
 }
 
+/// package:flutter/src/rendering/viewport.dart
+class FlutterCacheExtentStyle extends $pb.GeneratedMessage {
+  factory FlutterCacheExtentStyle() => create();
+  FlutterCacheExtentStyle._() : super();
+  factory FlutterCacheExtentStyle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterCacheExtentStyle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterCacheExtentStyle', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterCacheExtentStyle clone() => FlutterCacheExtentStyle()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterCacheExtentStyle copyWith(void Function(FlutterCacheExtentStyle) updates) => super.copyWith((message) => updates(message as FlutterCacheExtentStyle)) as FlutterCacheExtentStyle;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterCacheExtentStyle create() => FlutterCacheExtentStyle._();
+  FlutterCacheExtentStyle createEmptyInstance() => create();
+  static $pb.PbList<FlutterCacheExtentStyle> createRepeated() => $pb.PbList<FlutterCacheExtentStyle>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterCacheExtentStyle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterCacheExtentStyle>(create);
+  static FlutterCacheExtentStyle? _defaultInstance;
+}
+
+/// package:flutter/src/widgets/text_selection.dart
+class FlutterClipboardStatus extends $pb.GeneratedMessage {
+  factory FlutterClipboardStatus() => create();
+  FlutterClipboardStatus._() : super();
+  factory FlutterClipboardStatus.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterClipboardStatus.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterClipboardStatus', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterClipboardStatus clone() => FlutterClipboardStatus()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterClipboardStatus copyWith(void Function(FlutterClipboardStatus) updates) => super.copyWith((message) => updates(message as FlutterClipboardStatus)) as FlutterClipboardStatus;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterClipboardStatus create() => FlutterClipboardStatus._();
+  FlutterClipboardStatus createEmptyInstance() => create();
+  static $pb.PbList<FlutterClipboardStatus> createRepeated() => $pb.PbList<FlutterClipboardStatus>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterClipboardStatus getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterClipboardStatus>(create);
+  static FlutterClipboardStatus? _defaultInstance;
+}
+
+/// package:flutter/src/widgets/context_menu_button_item.dart
+class FlutterContextMenuButtonType extends $pb.GeneratedMessage {
+  factory FlutterContextMenuButtonType() => create();
+  FlutterContextMenuButtonType._() : super();
+  factory FlutterContextMenuButtonType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterContextMenuButtonType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterContextMenuButtonType', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterContextMenuButtonType clone() => FlutterContextMenuButtonType()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterContextMenuButtonType copyWith(void Function(FlutterContextMenuButtonType) updates) => super.copyWith((message) => updates(message as FlutterContextMenuButtonType)) as FlutterContextMenuButtonType;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterContextMenuButtonType create() => FlutterContextMenuButtonType._();
+  FlutterContextMenuButtonType createEmptyInstance() => create();
+  static $pb.PbList<FlutterContextMenuButtonType> createRepeated() => $pb.PbList<FlutterContextMenuButtonType>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterContextMenuButtonType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterContextMenuButtonType>(create);
+  static FlutterContextMenuButtonType? _defaultInstance;
+}
+
 /// package:flutter/src/rendering/flex.dart
 class FlutterCrossAxisAlignment extends $pb.GeneratedMessage {
   factory FlutterCrossAxisAlignment() => create();
@@ -805,6 +1102,105 @@ class FlutterCrossFadeState extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static FlutterCrossFadeState getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterCrossFadeState>(create);
   static FlutterCrossFadeState? _defaultInstance;
+}
+
+/// package:flutter/src/rendering/proxy_box.dart
+class FlutterDecorationPosition extends $pb.GeneratedMessage {
+  factory FlutterDecorationPosition() => create();
+  FlutterDecorationPosition._() : super();
+  factory FlutterDecorationPosition.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterDecorationPosition.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterDecorationPosition', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterDecorationPosition clone() => FlutterDecorationPosition()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterDecorationPosition copyWith(void Function(FlutterDecorationPosition) updates) => super.copyWith((message) => updates(message as FlutterDecorationPosition)) as FlutterDecorationPosition;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterDecorationPosition create() => FlutterDecorationPosition._();
+  FlutterDecorationPosition createEmptyInstance() => create();
+  static $pb.PbList<FlutterDecorationPosition> createRepeated() => $pb.PbList<FlutterDecorationPosition>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterDecorationPosition getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterDecorationPosition>(create);
+  static FlutterDecorationPosition? _defaultInstance;
+}
+
+/// package:flutter/src/foundation/diagnostics.dart
+class FlutterDiagnosticLevel extends $pb.GeneratedMessage {
+  factory FlutterDiagnosticLevel() => create();
+  FlutterDiagnosticLevel._() : super();
+  factory FlutterDiagnosticLevel.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterDiagnosticLevel.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterDiagnosticLevel', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterDiagnosticLevel clone() => FlutterDiagnosticLevel()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterDiagnosticLevel copyWith(void Function(FlutterDiagnosticLevel) updates) => super.copyWith((message) => updates(message as FlutterDiagnosticLevel)) as FlutterDiagnosticLevel;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterDiagnosticLevel create() => FlutterDiagnosticLevel._();
+  FlutterDiagnosticLevel createEmptyInstance() => create();
+  static $pb.PbList<FlutterDiagnosticLevel> createRepeated() => $pb.PbList<FlutterDiagnosticLevel>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterDiagnosticLevel getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterDiagnosticLevel>(create);
+  static FlutterDiagnosticLevel? _defaultInstance;
+}
+
+/// package:flutter/src/foundation/diagnostics.dart
+class FlutterDiagnosticsTreeStyle extends $pb.GeneratedMessage {
+  factory FlutterDiagnosticsTreeStyle() => create();
+  FlutterDiagnosticsTreeStyle._() : super();
+  factory FlutterDiagnosticsTreeStyle.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterDiagnosticsTreeStyle.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterDiagnosticsTreeStyle', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterDiagnosticsTreeStyle clone() => FlutterDiagnosticsTreeStyle()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterDiagnosticsTreeStyle copyWith(void Function(FlutterDiagnosticsTreeStyle) updates) => super.copyWith((message) => updates(message as FlutterDiagnosticsTreeStyle)) as FlutterDiagnosticsTreeStyle;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterDiagnosticsTreeStyle create() => FlutterDiagnosticsTreeStyle._();
+  FlutterDiagnosticsTreeStyle createEmptyInstance() => create();
+  static $pb.PbList<FlutterDiagnosticsTreeStyle> createRepeated() => $pb.PbList<FlutterDiagnosticsTreeStyle>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterDiagnosticsTreeStyle getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterDiagnosticsTreeStyle>(create);
+  static FlutterDiagnosticsTreeStyle? _defaultInstance;
 }
 
 /// package:flutter/src/widgets/dismissible.dart
@@ -1104,6 +1500,72 @@ class FlutterMaxLengthEnforcement extends $pb.GeneratedMessage {
   static FlutterMaxLengthEnforcement? _defaultInstance;
 }
 
+/// package:flutter/src/widgets/media_query.dart
+class FlutterNavigationMode extends $pb.GeneratedMessage {
+  factory FlutterNavigationMode() => create();
+  FlutterNavigationMode._() : super();
+  factory FlutterNavigationMode.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterNavigationMode.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterNavigationMode', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterNavigationMode clone() => FlutterNavigationMode()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterNavigationMode copyWith(void Function(FlutterNavigationMode) updates) => super.copyWith((message) => updates(message as FlutterNavigationMode)) as FlutterNavigationMode;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterNavigationMode create() => FlutterNavigationMode._();
+  FlutterNavigationMode createEmptyInstance() => create();
+  static $pb.PbList<FlutterNavigationMode> createRepeated() => $pb.PbList<FlutterNavigationMode>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterNavigationMode getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterNavigationMode>(create);
+  static FlutterNavigationMode? _defaultInstance;
+}
+
+/// package:flutter/src/widgets/media_query.dart
+class FlutterOrientation extends $pb.GeneratedMessage {
+  factory FlutterOrientation() => create();
+  FlutterOrientation._() : super();
+  factory FlutterOrientation.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterOrientation.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterOrientation', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterOrientation clone() => FlutterOrientation()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterOrientation copyWith(void Function(FlutterOrientation) updates) => super.copyWith((message) => updates(message as FlutterOrientation)) as FlutterOrientation;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterOrientation create() => FlutterOrientation._();
+  FlutterOrientation createEmptyInstance() => create();
+  static $pb.PbList<FlutterOrientation> createRepeated() => $pb.PbList<FlutterOrientation>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterOrientation getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterOrientation>(create);
+  static FlutterOrientation? _defaultInstance;
+}
+
 /// package:flutter/src/widgets/overflow_bar.dart
 class FlutterOverflowBarAlignment extends $pb.GeneratedMessage {
   factory FlutterOverflowBarAlignment() => create();
@@ -1170,6 +1632,39 @@ class FlutterPanAxis extends $pb.GeneratedMessage {
   static FlutterPanAxis? _defaultInstance;
 }
 
+/// package:flutter/src/widgets/platform_menu_bar.dart
+class FlutterPlatformProvidedMenuItemType extends $pb.GeneratedMessage {
+  factory FlutterPlatformProvidedMenuItemType() => create();
+  FlutterPlatformProvidedMenuItemType._() : super();
+  factory FlutterPlatformProvidedMenuItemType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterPlatformProvidedMenuItemType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterPlatformProvidedMenuItemType', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterPlatformProvidedMenuItemType clone() => FlutterPlatformProvidedMenuItemType()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterPlatformProvidedMenuItemType copyWith(void Function(FlutterPlatformProvidedMenuItemType) updates) => super.copyWith((message) => updates(message as FlutterPlatformProvidedMenuItemType)) as FlutterPlatformProvidedMenuItemType;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterPlatformProvidedMenuItemType create() => FlutterPlatformProvidedMenuItemType._();
+  FlutterPlatformProvidedMenuItemType createEmptyInstance() => create();
+  static $pb.PbList<FlutterPlatformProvidedMenuItemType> createRepeated() => $pb.PbList<FlutterPlatformProvidedMenuItemType>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterPlatformProvidedMenuItemType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterPlatformProvidedMenuItemType>(create);
+  static FlutterPlatformProvidedMenuItemType? _defaultInstance;
+}
+
 /// package:flutter/src/rendering/platform_view.dart
 class FlutterPlatformViewHitTestBehavior extends $pb.GeneratedMessage {
   factory FlutterPlatformViewHitTestBehavior() => create();
@@ -1201,6 +1696,72 @@ class FlutterPlatformViewHitTestBehavior extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static FlutterPlatformViewHitTestBehavior getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterPlatformViewHitTestBehavior>(create);
   static FlutterPlatformViewHitTestBehavior? _defaultInstance;
+}
+
+/// package:flutter/src/widgets/scroll_physics.dart
+class FlutterScrollDecelerationRate extends $pb.GeneratedMessage {
+  factory FlutterScrollDecelerationRate() => create();
+  FlutterScrollDecelerationRate._() : super();
+  factory FlutterScrollDecelerationRate.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterScrollDecelerationRate.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterScrollDecelerationRate', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterScrollDecelerationRate clone() => FlutterScrollDecelerationRate()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterScrollDecelerationRate copyWith(void Function(FlutterScrollDecelerationRate) updates) => super.copyWith((message) => updates(message as FlutterScrollDecelerationRate)) as FlutterScrollDecelerationRate;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterScrollDecelerationRate create() => FlutterScrollDecelerationRate._();
+  FlutterScrollDecelerationRate createEmptyInstance() => create();
+  static $pb.PbList<FlutterScrollDecelerationRate> createRepeated() => $pb.PbList<FlutterScrollDecelerationRate>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterScrollDecelerationRate getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterScrollDecelerationRate>(create);
+  static FlutterScrollDecelerationRate? _defaultInstance;
+}
+
+/// package:flutter/src/widgets/scrollable_helpers.dart
+class FlutterScrollIncrementType extends $pb.GeneratedMessage {
+  factory FlutterScrollIncrementType() => create();
+  FlutterScrollIncrementType._() : super();
+  factory FlutterScrollIncrementType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterScrollIncrementType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterScrollIncrementType', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterScrollIncrementType clone() => FlutterScrollIncrementType()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterScrollIncrementType copyWith(void Function(FlutterScrollIncrementType) updates) => super.copyWith((message) => updates(message as FlutterScrollIncrementType)) as FlutterScrollIncrementType;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterScrollIncrementType create() => FlutterScrollIncrementType._();
+  FlutterScrollIncrementType createEmptyInstance() => create();
+  static $pb.PbList<FlutterScrollIncrementType> createRepeated() => $pb.PbList<FlutterScrollIncrementType>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterScrollIncrementType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterScrollIncrementType>(create);
+  static FlutterScrollIncrementType? _defaultInstance;
 }
 
 /// package:flutter/src/widgets/scroll_view.dart
@@ -1270,6 +1831,39 @@ class FlutterScrollbarOrientation extends $pb.GeneratedMessage {
 }
 
 /// package:flutter/src/services/text_input.dart
+class FlutterSelectionChangedCause extends $pb.GeneratedMessage {
+  factory FlutterSelectionChangedCause() => create();
+  FlutterSelectionChangedCause._() : super();
+  factory FlutterSelectionChangedCause.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterSelectionChangedCause.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterSelectionChangedCause', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterSelectionChangedCause clone() => FlutterSelectionChangedCause()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterSelectionChangedCause copyWith(void Function(FlutterSelectionChangedCause) updates) => super.copyWith((message) => updates(message as FlutterSelectionChangedCause)) as FlutterSelectionChangedCause;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterSelectionChangedCause create() => FlutterSelectionChangedCause._();
+  FlutterSelectionChangedCause createEmptyInstance() => create();
+  static $pb.PbList<FlutterSelectionChangedCause> createRepeated() => $pb.PbList<FlutterSelectionChangedCause>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterSelectionChangedCause getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterSelectionChangedCause>(create);
+  static FlutterSelectionChangedCause? _defaultInstance;
+}
+
+/// package:flutter/src/services/text_input.dart
 class FlutterSmartDashesType extends $pb.GeneratedMessage {
   factory FlutterSmartDashesType() => create();
   FlutterSmartDashesType._() : super();
@@ -1333,6 +1927,39 @@ class FlutterSmartQuotesType extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static FlutterSmartQuotesType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterSmartQuotesType>(create);
   static FlutterSmartQuotesType? _defaultInstance;
+}
+
+/// package:flutter/src/widgets/snapshot_widget.dart
+class FlutterSnapshotMode extends $pb.GeneratedMessage {
+  factory FlutterSnapshotMode() => create();
+  FlutterSnapshotMode._() : super();
+  factory FlutterSnapshotMode.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterSnapshotMode.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterSnapshotMode', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterSnapshotMode clone() => FlutterSnapshotMode()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterSnapshotMode copyWith(void Function(FlutterSnapshotMode) updates) => super.copyWith((message) => updates(message as FlutterSnapshotMode)) as FlutterSnapshotMode;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterSnapshotMode create() => FlutterSnapshotMode._();
+  FlutterSnapshotMode createEmptyInstance() => create();
+  static $pb.PbList<FlutterSnapshotMode> createRepeated() => $pb.PbList<FlutterSnapshotMode>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterSnapshotMode getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterSnapshotMode>(create);
+  static FlutterSnapshotMode? _defaultInstance;
 }
 
 /// package:flutter/src/rendering/stack.dart
@@ -1399,6 +2026,39 @@ class FlutterTableCellVerticalAlignment extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static FlutterTableCellVerticalAlignment getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterTableCellVerticalAlignment>(create);
   static FlutterTableCellVerticalAlignment? _defaultInstance;
+}
+
+/// package:flutter/src/foundation/platform.dart
+class FlutterTargetPlatform extends $pb.GeneratedMessage {
+  factory FlutterTargetPlatform() => create();
+  FlutterTargetPlatform._() : super();
+  factory FlutterTargetPlatform.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterTargetPlatform.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterTargetPlatform', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterTargetPlatform clone() => FlutterTargetPlatform()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterTargetPlatform copyWith(void Function(FlutterTargetPlatform) updates) => super.copyWith((message) => updates(message as FlutterTargetPlatform)) as FlutterTargetPlatform;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterTargetPlatform create() => FlutterTargetPlatform._();
+  FlutterTargetPlatform createEmptyInstance() => create();
+  static $pb.PbList<FlutterTargetPlatform> createRepeated() => $pb.PbList<FlutterTargetPlatform>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterTargetPlatform getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterTargetPlatform>(create);
+  static FlutterTargetPlatform? _defaultInstance;
 }
 
 /// package:flutter/src/services/text_input.dart
@@ -1534,6 +2194,39 @@ class FlutterTextWidthBasis extends $pb.GeneratedMessage {
 }
 
 /// package:flutter/src/widgets/focus_traversal.dart
+class FlutterTraversalDirection extends $pb.GeneratedMessage {
+  factory FlutterTraversalDirection() => create();
+  FlutterTraversalDirection._() : super();
+  factory FlutterTraversalDirection.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterTraversalDirection.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterTraversalDirection', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterTraversalDirection clone() => FlutterTraversalDirection()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterTraversalDirection copyWith(void Function(FlutterTraversalDirection) updates) => super.copyWith((message) => updates(message as FlutterTraversalDirection)) as FlutterTraversalDirection;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterTraversalDirection create() => FlutterTraversalDirection._();
+  FlutterTraversalDirection createEmptyInstance() => create();
+  static $pb.PbList<FlutterTraversalDirection> createRepeated() => $pb.PbList<FlutterTraversalDirection>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterTraversalDirection getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterTraversalDirection>(create);
+  static FlutterTraversalDirection? _defaultInstance;
+}
+
+/// package:flutter/src/widgets/focus_traversal.dart
 class FlutterTraversalEdgeBehavior extends $pb.GeneratedMessage {
   factory FlutterTraversalEdgeBehavior() => create();
   FlutterTraversalEdgeBehavior._() : super();
@@ -1665,6 +2358,72 @@ class FlutterWrapCrossAlignment extends $pb.GeneratedMessage {
   static FlutterWrapCrossAlignment? _defaultInstance;
 }
 
+/// package:flutter/src/material/bottom_navigation_bar.dart
+class MaterialBottomNavigationBarLandscapeLayout extends $pb.GeneratedMessage {
+  factory MaterialBottomNavigationBarLandscapeLayout() => create();
+  MaterialBottomNavigationBarLandscapeLayout._() : super();
+  factory MaterialBottomNavigationBarLandscapeLayout.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MaterialBottomNavigationBarLandscapeLayout.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialBottomNavigationBarLandscapeLayout', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MaterialBottomNavigationBarLandscapeLayout clone() => MaterialBottomNavigationBarLandscapeLayout()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MaterialBottomNavigationBarLandscapeLayout copyWith(void Function(MaterialBottomNavigationBarLandscapeLayout) updates) => super.copyWith((message) => updates(message as MaterialBottomNavigationBarLandscapeLayout)) as MaterialBottomNavigationBarLandscapeLayout;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static MaterialBottomNavigationBarLandscapeLayout create() => MaterialBottomNavigationBarLandscapeLayout._();
+  MaterialBottomNavigationBarLandscapeLayout createEmptyInstance() => create();
+  static $pb.PbList<MaterialBottomNavigationBarLandscapeLayout> createRepeated() => $pb.PbList<MaterialBottomNavigationBarLandscapeLayout>();
+  @$core.pragma('dart2js:noInline')
+  static MaterialBottomNavigationBarLandscapeLayout getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialBottomNavigationBarLandscapeLayout>(create);
+  static MaterialBottomNavigationBarLandscapeLayout? _defaultInstance;
+}
+
+/// package:flutter/src/material/bottom_navigation_bar.dart
+class MaterialBottomNavigationBarType extends $pb.GeneratedMessage {
+  factory MaterialBottomNavigationBarType() => create();
+  MaterialBottomNavigationBarType._() : super();
+  factory MaterialBottomNavigationBarType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MaterialBottomNavigationBarType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialBottomNavigationBarType', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MaterialBottomNavigationBarType clone() => MaterialBottomNavigationBarType()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MaterialBottomNavigationBarType copyWith(void Function(MaterialBottomNavigationBarType) updates) => super.copyWith((message) => updates(message as MaterialBottomNavigationBarType)) as MaterialBottomNavigationBarType;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static MaterialBottomNavigationBarType create() => MaterialBottomNavigationBarType._();
+  MaterialBottomNavigationBarType createEmptyInstance() => create();
+  static $pb.PbList<MaterialBottomNavigationBarType> createRepeated() => $pb.PbList<MaterialBottomNavigationBarType>();
+  @$core.pragma('dart2js:noInline')
+  static MaterialBottomNavigationBarType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialBottomNavigationBarType>(create);
+  static MaterialBottomNavigationBarType? _defaultInstance;
+}
+
 /// package:flutter/src/material/button_theme.dart
 class MaterialButtonBarLayoutBehavior extends $pb.GeneratedMessage {
   factory MaterialButtonBarLayoutBehavior() => create();
@@ -1764,6 +2523,72 @@ class MaterialCollapseMode extends $pb.GeneratedMessage {
   static MaterialCollapseMode? _defaultInstance;
 }
 
+/// package:flutter/src/material/date.dart
+class MaterialDatePickerEntryMode extends $pb.GeneratedMessage {
+  factory MaterialDatePickerEntryMode() => create();
+  MaterialDatePickerEntryMode._() : super();
+  factory MaterialDatePickerEntryMode.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MaterialDatePickerEntryMode.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialDatePickerEntryMode', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MaterialDatePickerEntryMode clone() => MaterialDatePickerEntryMode()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MaterialDatePickerEntryMode copyWith(void Function(MaterialDatePickerEntryMode) updates) => super.copyWith((message) => updates(message as MaterialDatePickerEntryMode)) as MaterialDatePickerEntryMode;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static MaterialDatePickerEntryMode create() => MaterialDatePickerEntryMode._();
+  MaterialDatePickerEntryMode createEmptyInstance() => create();
+  static $pb.PbList<MaterialDatePickerEntryMode> createRepeated() => $pb.PbList<MaterialDatePickerEntryMode>();
+  @$core.pragma('dart2js:noInline')
+  static MaterialDatePickerEntryMode getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialDatePickerEntryMode>(create);
+  static MaterialDatePickerEntryMode? _defaultInstance;
+}
+
+/// package:flutter/src/material/date.dart
+class MaterialDatePickerMode extends $pb.GeneratedMessage {
+  factory MaterialDatePickerMode() => create();
+  MaterialDatePickerMode._() : super();
+  factory MaterialDatePickerMode.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MaterialDatePickerMode.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialDatePickerMode', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MaterialDatePickerMode clone() => MaterialDatePickerMode()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MaterialDatePickerMode copyWith(void Function(MaterialDatePickerMode) updates) => super.copyWith((message) => updates(message as MaterialDatePickerMode)) as MaterialDatePickerMode;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static MaterialDatePickerMode create() => MaterialDatePickerMode._();
+  MaterialDatePickerMode createEmptyInstance() => create();
+  static $pb.PbList<MaterialDatePickerMode> createRepeated() => $pb.PbList<MaterialDatePickerMode>();
+  @$core.pragma('dart2js:noInline')
+  static MaterialDatePickerMode getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialDatePickerMode>(create);
+  static MaterialDatePickerMode? _defaultInstance;
+}
+
 /// package:flutter/src/material/drawer.dart
 class MaterialDrawerAlignment extends $pb.GeneratedMessage {
   factory MaterialDrawerAlignment() => create();
@@ -1795,6 +2620,39 @@ class MaterialDrawerAlignment extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static MaterialDrawerAlignment getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialDrawerAlignment>(create);
   static MaterialDrawerAlignment? _defaultInstance;
+}
+
+/// package:flutter/src/material/input_decorator.dart
+class MaterialFloatingLabelBehavior extends $pb.GeneratedMessage {
+  factory MaterialFloatingLabelBehavior() => create();
+  MaterialFloatingLabelBehavior._() : super();
+  factory MaterialFloatingLabelBehavior.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MaterialFloatingLabelBehavior.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialFloatingLabelBehavior', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MaterialFloatingLabelBehavior clone() => MaterialFloatingLabelBehavior()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MaterialFloatingLabelBehavior copyWith(void Function(MaterialFloatingLabelBehavior) updates) => super.copyWith((message) => updates(message as MaterialFloatingLabelBehavior)) as MaterialFloatingLabelBehavior;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static MaterialFloatingLabelBehavior create() => MaterialFloatingLabelBehavior._();
+  MaterialFloatingLabelBehavior createEmptyInstance() => create();
+  static $pb.PbList<MaterialFloatingLabelBehavior> createRepeated() => $pb.PbList<MaterialFloatingLabelBehavior>();
+  @$core.pragma('dart2js:noInline')
+  static MaterialFloatingLabelBehavior getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialFloatingLabelBehavior>(create);
+  static MaterialFloatingLabelBehavior? _defaultInstance;
 }
 
 /// package:flutter/src/material/list_tile.dart
@@ -1995,6 +2853,105 @@ class MaterialNavigationDestinationLabelBehavior extends $pb.GeneratedMessage {
   static MaterialNavigationDestinationLabelBehavior? _defaultInstance;
 }
 
+/// package:flutter/src/material/navigation_rail.dart
+class MaterialNavigationRailLabelType extends $pb.GeneratedMessage {
+  factory MaterialNavigationRailLabelType() => create();
+  MaterialNavigationRailLabelType._() : super();
+  factory MaterialNavigationRailLabelType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MaterialNavigationRailLabelType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialNavigationRailLabelType', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MaterialNavigationRailLabelType clone() => MaterialNavigationRailLabelType()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MaterialNavigationRailLabelType copyWith(void Function(MaterialNavigationRailLabelType) updates) => super.copyWith((message) => updates(message as MaterialNavigationRailLabelType)) as MaterialNavigationRailLabelType;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static MaterialNavigationRailLabelType create() => MaterialNavigationRailLabelType._();
+  MaterialNavigationRailLabelType createEmptyInstance() => create();
+  static $pb.PbList<MaterialNavigationRailLabelType> createRepeated() => $pb.PbList<MaterialNavigationRailLabelType>();
+  @$core.pragma('dart2js:noInline')
+  static MaterialNavigationRailLabelType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialNavigationRailLabelType>(create);
+  static MaterialNavigationRailLabelType? _defaultInstance;
+}
+
+/// package:flutter/src/material/popup_menu_theme.dart
+class MaterialPopupMenuPosition extends $pb.GeneratedMessage {
+  factory MaterialPopupMenuPosition() => create();
+  MaterialPopupMenuPosition._() : super();
+  factory MaterialPopupMenuPosition.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MaterialPopupMenuPosition.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialPopupMenuPosition', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MaterialPopupMenuPosition clone() => MaterialPopupMenuPosition()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MaterialPopupMenuPosition copyWith(void Function(MaterialPopupMenuPosition) updates) => super.copyWith((message) => updates(message as MaterialPopupMenuPosition)) as MaterialPopupMenuPosition;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static MaterialPopupMenuPosition create() => MaterialPopupMenuPosition._();
+  MaterialPopupMenuPosition createEmptyInstance() => create();
+  static $pb.PbList<MaterialPopupMenuPosition> createRepeated() => $pb.PbList<MaterialPopupMenuPosition>();
+  @$core.pragma('dart2js:noInline')
+  static MaterialPopupMenuPosition getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialPopupMenuPosition>(create);
+  static MaterialPopupMenuPosition? _defaultInstance;
+}
+
+/// package:flutter/src/material/slider_theme.dart
+class MaterialShowValueIndicator extends $pb.GeneratedMessage {
+  factory MaterialShowValueIndicator() => create();
+  MaterialShowValueIndicator._() : super();
+  factory MaterialShowValueIndicator.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MaterialShowValueIndicator.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialShowValueIndicator', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MaterialShowValueIndicator clone() => MaterialShowValueIndicator()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MaterialShowValueIndicator copyWith(void Function(MaterialShowValueIndicator) updates) => super.copyWith((message) => updates(message as MaterialShowValueIndicator)) as MaterialShowValueIndicator;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static MaterialShowValueIndicator create() => MaterialShowValueIndicator._();
+  MaterialShowValueIndicator createEmptyInstance() => create();
+  static $pb.PbList<MaterialShowValueIndicator> createRepeated() => $pb.PbList<MaterialShowValueIndicator>();
+  @$core.pragma('dart2js:noInline')
+  static MaterialShowValueIndicator getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialShowValueIndicator>(create);
+  static MaterialShowValueIndicator? _defaultInstance;
+}
+
 /// package:flutter/src/material/slider.dart
 class MaterialSliderInteraction extends $pb.GeneratedMessage {
   factory MaterialSliderInteraction() => create();
@@ -2059,6 +3016,72 @@ class MaterialSnackBarBehavior extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static MaterialSnackBarBehavior getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialSnackBarBehavior>(create);
   static MaterialSnackBarBehavior? _defaultInstance;
+}
+
+/// package:flutter/src/material/stepper.dart
+class MaterialStepState extends $pb.GeneratedMessage {
+  factory MaterialStepState() => create();
+  MaterialStepState._() : super();
+  factory MaterialStepState.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MaterialStepState.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialStepState', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MaterialStepState clone() => MaterialStepState()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MaterialStepState copyWith(void Function(MaterialStepState) updates) => super.copyWith((message) => updates(message as MaterialStepState)) as MaterialStepState;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static MaterialStepState create() => MaterialStepState._();
+  MaterialStepState createEmptyInstance() => create();
+  static $pb.PbList<MaterialStepState> createRepeated() => $pb.PbList<MaterialStepState>();
+  @$core.pragma('dart2js:noInline')
+  static MaterialStepState getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialStepState>(create);
+  static MaterialStepState? _defaultInstance;
+}
+
+/// package:flutter/src/material/stepper.dart
+class MaterialStepperType extends $pb.GeneratedMessage {
+  factory MaterialStepperType() => create();
+  MaterialStepperType._() : super();
+  factory MaterialStepperType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MaterialStepperType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialStepperType', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MaterialStepperType clone() => MaterialStepperType()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MaterialStepperType copyWith(void Function(MaterialStepperType) updates) => super.copyWith((message) => updates(message as MaterialStepperType)) as MaterialStepperType;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static MaterialStepperType create() => MaterialStepperType._();
+  MaterialStepperType createEmptyInstance() => create();
+  static $pb.PbList<MaterialStepperType> createRepeated() => $pb.PbList<MaterialStepperType>();
+  @$core.pragma('dart2js:noInline')
+  static MaterialStepperType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialStepperType>(create);
+  static MaterialStepperType? _defaultInstance;
 }
 
 /// package:flutter/src/material/flexible_space_bar.dart
@@ -2191,6 +3214,39 @@ class MaterialThemeMode extends $pb.GeneratedMessage {
   @$core.pragma('dart2js:noInline')
   static MaterialThemeMode getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialThemeMode>(create);
   static MaterialThemeMode? _defaultInstance;
+}
+
+/// package:flutter/src/material/time_picker.dart
+class MaterialTimePickerEntryMode extends $pb.GeneratedMessage {
+  factory MaterialTimePickerEntryMode() => create();
+  MaterialTimePickerEntryMode._() : super();
+  factory MaterialTimePickerEntryMode.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory MaterialTimePickerEntryMode.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'MaterialTimePickerEntryMode', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  MaterialTimePickerEntryMode clone() => MaterialTimePickerEntryMode()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  MaterialTimePickerEntryMode copyWith(void Function(MaterialTimePickerEntryMode) updates) => super.copyWith((message) => updates(message as MaterialTimePickerEntryMode)) as MaterialTimePickerEntryMode;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static MaterialTimePickerEntryMode create() => MaterialTimePickerEntryMode._();
+  MaterialTimePickerEntryMode createEmptyInstance() => create();
+  static $pb.PbList<MaterialTimePickerEntryMode> createRepeated() => $pb.PbList<MaterialTimePickerEntryMode>();
+  @$core.pragma('dart2js:noInline')
+  static MaterialTimePickerEntryMode getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<MaterialTimePickerEntryMode>(create);
+  static MaterialTimePickerEntryMode? _defaultInstance;
 }
 
 /// package:flutter/src/material/tooltip_theme.dart

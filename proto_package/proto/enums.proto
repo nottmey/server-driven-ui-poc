@@ -48,6 +48,16 @@ message DartBlendMode {
 }
 
 // dart:ui
+message DartBlurStyle {
+  enum Enum {
+    NORMAL = 0;
+    SOLID = 1;
+    OUTER = 2;
+    INNER = 3;
+  }
+}
+
+// dart:ui
 message DartBoxHeightStyle {
   enum Enum {
     TIGHT = 0;
@@ -86,6 +96,25 @@ message DartClip {
 }
 
 // dart:ui
+message DartDisplayFeatureState {
+  enum Enum {
+    UNKNOWN = 0;
+    POSTURE_FLAT = 1;
+    POSTURE_HALF_OPENED = 2;
+  }
+}
+
+// dart:ui
+message DartDisplayFeatureType {
+  enum Enum {
+    UNKNOWN = 0;
+    FOLD = 1;
+    HINGE = 2;
+    CUTOUT = 3;
+  }
+}
+
+// dart:ui
 message DartFilterQuality {
   enum Enum {
     NONE = 0;
@@ -104,11 +133,31 @@ message DartFontStyle {
 }
 
 // dart:ui
+message DartPlaceholderAlignment {
+  enum Enum {
+    BASELINE = 0;
+    ABOVE_BASELINE = 1;
+    BELOW_BASELINE = 2;
+    TOP = 3;
+    BOTTOM = 4;
+    MIDDLE = 5;
+  }
+}
+
+// dart:ui
 message DartStrokeCap {
   enum Enum {
     BUTT = 0;
     ROUND = 1;
     SQUARE = 2;
+  }
+}
+
+// dart:ui
+message DartTextAffinity {
+  enum Enum {
+    UPSTREAM = 0;
+    DOWNSTREAM = 1;
   }
 }
 
@@ -156,6 +205,16 @@ message DartTextLeadingDistribution {
   enum Enum {
     PROPORTIONAL = 0;
     EVEN = 1;
+  }
+}
+
+// dart:ui
+message DartTileMode {
+  enum Enum {
+    CLAMP = 0;
+    REPEATED = 1;
+    MIRROR = 2;
+    DECAL = 3;
   }
 }
 
@@ -233,6 +292,36 @@ message FlutterBoxShape {
   }
 }
 
+// package:flutter/src/rendering/viewport.dart
+message FlutterCacheExtentStyle {
+  enum Enum {
+    PIXEL = 0;
+    VIEWPORT = 1;
+  }
+}
+
+// package:flutter/src/widgets/text_selection.dart
+message FlutterClipboardStatus {
+  enum Enum {
+    PASTEABLE = 0;
+    UNKNOWN = 1;
+    NOT_PASTEABLE = 2;
+  }
+}
+
+// package:flutter/src/widgets/context_menu_button_item.dart
+message FlutterContextMenuButtonType {
+  enum Enum {
+    CUT = 0;
+    COPY = 1;
+    PASTE = 2;
+    SELECT_ALL = 3;
+    DELETE = 4;
+    LIVE_TEXT_INPUT = 5;
+    CUSTOM = 6;
+  }
+}
+
 // package:flutter/src/rendering/flex.dart
 message FlutterCrossAxisAlignment {
   enum Enum {
@@ -249,6 +338,47 @@ message FlutterCrossFadeState {
   enum Enum {
     SHOW_FIRST = 0;
     SHOW_SECOND = 1;
+  }
+}
+
+// package:flutter/src/rendering/proxy_box.dart
+message FlutterDecorationPosition {
+  enum Enum {
+    BACKGROUND = 0;
+    FOREGROUND = 1;
+  }
+}
+
+// package:flutter/src/foundation/diagnostics.dart
+message FlutterDiagnosticLevel {
+  enum Enum {
+    HIDDEN = 0;
+    FINE = 1;
+    DEBUG = 2;
+    INFO = 3;
+    WARNING = 4;
+    HINT = 5;
+    SUMMARY = 6;
+    ERROR = 7;
+    OFF = 8;
+  }
+}
+
+// package:flutter/src/foundation/diagnostics.dart
+message FlutterDiagnosticsTreeStyle {
+  enum Enum {
+    NONE = 0;
+    SPARSE = 1;
+    OFFSTAGE = 2;
+    DENSE = 3;
+    TRANSITION = 4;
+    ERROR = 5;
+    WHITESPACE = 6;
+    FLAT = 7;
+    SINGLE_LINE = 8;
+    ERROR_PROPERTY = 9;
+    SHALLOW = 10;
+    TRUNCATE_CHILDREN = 11;
   }
 }
 
@@ -338,6 +468,22 @@ message FlutterMaxLengthEnforcement {
   }
 }
 
+// package:flutter/src/widgets/media_query.dart
+message FlutterNavigationMode {
+  enum Enum {
+    TRADITIONAL = 0;
+    DIRECTIONAL = 1;
+  }
+}
+
+// package:flutter/src/widgets/media_query.dart
+message FlutterOrientation {
+  enum Enum {
+    PORTRAIT = 0;
+    LANDSCAPE = 1;
+  }
+}
+
 // package:flutter/src/widgets/overflow_bar.dart
 message FlutterOverflowBarAlignment {
   enum Enum {
@@ -357,12 +503,46 @@ message FlutterPanAxis {
   }
 }
 
+// package:flutter/src/widgets/platform_menu_bar.dart
+message FlutterPlatformProvidedMenuItemType {
+  enum Enum {
+    ABOUT = 0;
+    QUIT = 1;
+    SERVICES_SUBMENU = 2;
+    HIDE = 3;
+    HIDE_OTHER_APPLICATIONS = 4;
+    SHOW_ALL_APPLICATIONS = 5;
+    START_SPEAKING = 6;
+    STOP_SPEAKING = 7;
+    TOGGLE_FULL_SCREEN = 8;
+    MINIMIZE_WINDOW = 9;
+    ZOOM_WINDOW = 10;
+    ARRANGE_WINDOWS_IN_FRONT = 11;
+  }
+}
+
 // package:flutter/src/rendering/platform_view.dart
 message FlutterPlatformViewHitTestBehavior {
   enum Enum {
     OPAQUE = 0;
     TRANSLUCENT = 1;
     TRANSPARENT = 2;
+  }
+}
+
+// package:flutter/src/widgets/scroll_physics.dart
+message FlutterScrollDecelerationRate {
+  enum Enum {
+    NORMAL = 0;
+    FAST = 1;
+  }
+}
+
+// package:flutter/src/widgets/scrollable_helpers.dart
+message FlutterScrollIncrementType {
+  enum Enum {
+    LINE = 0;
+    PAGE = 1;
   }
 }
 
@@ -385,6 +565,20 @@ message FlutterScrollbarOrientation {
 }
 
 // package:flutter/src/services/text_input.dart
+message FlutterSelectionChangedCause {
+  enum Enum {
+    TAP = 0;
+    DOUBLE_TAP = 1;
+    LONG_PRESS = 2;
+    FORCE_PRESS = 3;
+    KEYBOARD = 4;
+    TOOLBAR = 5;
+    DRAG = 6;
+    SCRIBBLE = 7;
+  }
+}
+
+// package:flutter/src/services/text_input.dart
 message FlutterSmartDashesType {
   enum Enum {
     DISABLED = 0;
@@ -397,6 +591,15 @@ message FlutterSmartQuotesType {
   enum Enum {
     DISABLED = 0;
     ENABLED = 1;
+  }
+}
+
+// package:flutter/src/widgets/snapshot_widget.dart
+message FlutterSnapshotMode {
+  enum Enum {
+    PERMISSIVE = 0;
+    NORMAL = 1;
+    FORCED = 2;
   }
 }
 
@@ -417,6 +620,18 @@ message FlutterTableCellVerticalAlignment {
     BOTTOM = 2;
     BASELINE = 3;
     FILL = 4;
+  }
+}
+
+// package:flutter/src/foundation/platform.dart
+message FlutterTargetPlatform {
+  enum Enum {
+    ANDROID = 0;
+    FUCHSIA = 1;
+    I_O_S = 2;
+    LINUX = 3;
+    MAC_O_S = 4;
+    WINDOWS = 5;
   }
 }
 
@@ -468,6 +683,16 @@ message FlutterTextWidthBasis {
 }
 
 // package:flutter/src/widgets/focus_traversal.dart
+message FlutterTraversalDirection {
+  enum Enum {
+    UP = 0;
+    RIGHT = 1;
+    DOWN = 2;
+    LEFT = 3;
+  }
+}
+
+// package:flutter/src/widgets/focus_traversal.dart
 message FlutterTraversalEdgeBehavior {
   enum Enum {
     CLOSED_LOOP = 0;
@@ -504,6 +729,23 @@ message FlutterWrapCrossAlignment {
   }
 }
 
+// package:flutter/src/material/bottom_navigation_bar.dart
+message MaterialBottomNavigationBarLandscapeLayout {
+  enum Enum {
+    SPREAD = 0;
+    CENTERED = 1;
+    LINEAR = 2;
+  }
+}
+
+// package:flutter/src/material/bottom_navigation_bar.dart
+message MaterialBottomNavigationBarType {
+  enum Enum {
+    FIXED = 0;
+    SHIFTING = 1;
+  }
+}
+
 // package:flutter/src/material/button_theme.dart
 message MaterialButtonBarLayoutBehavior {
   enum Enum {
@@ -530,11 +772,38 @@ message MaterialCollapseMode {
   }
 }
 
+// package:flutter/src/material/date.dart
+message MaterialDatePickerEntryMode {
+  enum Enum {
+    CALENDAR = 0;
+    INPUT = 1;
+    CALENDAR_ONLY = 2;
+    INPUT_ONLY = 3;
+  }
+}
+
+// package:flutter/src/material/date.dart
+message MaterialDatePickerMode {
+  enum Enum {
+    DAY = 0;
+    YEAR = 1;
+  }
+}
+
 // package:flutter/src/material/drawer.dart
 message MaterialDrawerAlignment {
   enum Enum {
     START = 0;
     END = 1;
+  }
+}
+
+// package:flutter/src/material/input_decorator.dart
+message MaterialFloatingLabelBehavior {
+  enum Enum {
+    NEVER = 0;
+    AUTO = 1;
+    ALWAYS = 2;
   }
 }
 
@@ -594,6 +863,33 @@ message MaterialNavigationDestinationLabelBehavior {
   }
 }
 
+// package:flutter/src/material/navigation_rail.dart
+message MaterialNavigationRailLabelType {
+  enum Enum {
+    NONE = 0;
+    SELECTED = 1;
+    ALL = 2;
+  }
+}
+
+// package:flutter/src/material/popup_menu_theme.dart
+message MaterialPopupMenuPosition {
+  enum Enum {
+    OVER = 0;
+    UNDER = 1;
+  }
+}
+
+// package:flutter/src/material/slider_theme.dart
+message MaterialShowValueIndicator {
+  enum Enum {
+    ONLY_FOR_DISCRETE = 0;
+    ONLY_FOR_CONTINUOUS = 1;
+    ALWAYS = 2;
+    NEVER = 3;
+  }
+}
+
 // package:flutter/src/material/slider.dart
 message MaterialSliderInteraction {
   enum Enum {
@@ -609,6 +905,25 @@ message MaterialSnackBarBehavior {
   enum Enum {
     FIXED = 0;
     FLOATING = 1;
+  }
+}
+
+// package:flutter/src/material/stepper.dart
+message MaterialStepState {
+  enum Enum {
+    INDEXED = 0;
+    EDITING = 1;
+    COMPLETE = 2;
+    DISABLED = 3;
+    ERROR = 4;
+  }
+}
+
+// package:flutter/src/material/stepper.dart
+message MaterialStepperType {
+  enum Enum {
+    VERTICAL = 0;
+    HORIZONTAL = 1;
   }
 }
 
@@ -645,6 +960,16 @@ message MaterialThemeMode {
     SYSTEM = 0;
     LIGHT = 1;
     DARK = 2;
+  }
+}
+
+// package:flutter/src/material/time_picker.dart
+message MaterialTimePickerEntryMode {
+  enum Enum {
+    DIAL = 0;
+    INPUT = 1;
+    DIAL_ONLY = 2;
+    INPUT_ONLY = 3;
   }
 }
 
