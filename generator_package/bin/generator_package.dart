@@ -118,12 +118,12 @@ build/
 
     writeFile(
       'lib/$convertEnumsFile',
-      protocol.toEnumsBuilderCode(),
+      protocol.toConvertEnumsCode(),
     );
 
     writeFile(
       'lib/$evaluateExpressionsFile',
-      protocol.toWidgetBuilderCode(),
+      protocol.toEvaluateExpressionsCode(),
     );
   }
 }

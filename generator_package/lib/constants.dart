@@ -2,10 +2,6 @@ const protoFieldStartNumber = 2;
 
 const widgetExpression = 'WidgetExpression';
 
-const evaluateWidgetExpression = 'evaluateWidgetExpression';
-
-const evaluateRequiredWidgetExpression = 'evaluateRequiredWidgetExpression';
-
 const throwMissingName = 'missing';
 
 const enumsProto = 'enums.proto';

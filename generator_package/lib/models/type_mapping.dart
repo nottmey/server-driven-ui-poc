@@ -12,8 +12,7 @@ import 'package:recase/recase.dart';
 
 enum MappingStrategy {
   useProtoEquivalent,
-  generatePayloadMessage,
-  generateWidgetMessage,
+  generateMessage,
   generateEnum,
 }
 
@@ -66,7 +65,7 @@ extension TypeMappingCreationExtension on DartType {
       return TypeMapping._of(
         dartType: this,
         messageName: widgetExpression,
-        mappingStrategy: MappingStrategy.generateWidgetMessage,
+        mappingStrategy: MappingStrategy.generateMessage,
       );
     } else if (this is InterfaceType) {
       // TODO use correct name when type params are present
@@ -87,7 +86,7 @@ extension TypeMappingCreationExtension on DartType {
         return TypeMapping._of(
           dartType: this,
           messageName: '$libraryPrefix${name}Expression',
-          mappingStrategy: MappingStrategy.generatePayloadMessage,
+          mappingStrategy: MappingStrategy.generateMessage,
         );
       } else if (element is ClassElement) {
         // TODO enable more types
@@ -259,14 +258,10 @@ ${constructors.map((c) => c.toDartSwitchCase('messages', messageName)).join("\n"
     switch (mappingStrategy) {
       case MappingStrategy.useProtoEquivalent:
         return null;
-      case MappingStrategy.generatePayloadMessage:
+      case MappingStrategy.generateMessage:
         return isOptionalInEvaluation
             ? 'evaluate$messageName'
             : 'evaluateRequired$messageName';
-      case MappingStrategy.generateWidgetMessage:
-        return isOptionalInEvaluation
-            ? evaluateWidgetExpression
-            : evaluateRequiredWidgetExpression;
       case MappingStrategy.generateEnum:
         return isOptionalInEvaluation
             ? 'enums.convert$messageName'

@@ -1,52 +1,54 @@
 import 'package:analyzer/dart/element/element.dart';
 import 'package:collection/collection.dart';
 import 'package:generator_package/constants.dart';
+import 'package:generator_package/is_widget_extensions.dart';
 import 'package:generator_package/models/constructor.dart';
 import 'package:generator_package/models/type_mapping.dart';
 import 'package:generator_package/usable_constructors_extension.dart';
 
 class Protocol {
-  final Iterable<Constructor> widgetConstructors;
   final Iterable<TypeMapping> enumTypeMappings;
-  final Iterable<TypeMapping> payloadTypeMappings;
   final Map<TypeMapping, Iterable<Constructor>> payloadConstructors;
 
   Protocol({
-    required this.widgetConstructors,
     required this.enumTypeMappings,
-    required this.payloadTypeMappings,
     required this.payloadConstructors,
   });
 
   factory Protocol.ofElements(Iterable<LibraryElement> libraries) {
-    final allExportedClasses = libraries
+    final exportedClasses = libraries
         .expand((l) => l.exportNamespace.definedNames.values)
         .whereType<ClassElement>()
         .where((c) => !c.hasDeprecated)
         // may contain duplicates because of multiple export paths
         .toSet();
 
-    final exportedConstructorsGrouped = allExportedClasses
-        .expand((c) => c.usableConstructors)
-        .groupListsBy((c) => c.isWidgetConstructor);
-    final exportedWidgetConstructors = exportedConstructorsGrouped[true]!;
-    final exportedNonWidgetConstructors = exportedConstructorsGrouped[false]!;
+    final exportedConstructors =
+        exportedClasses.expand((c) => c.usableConstructors);
 
-    final payloadConstructors = <TypeMapping, Iterable<Constructor>>{};
+    final exportedWidgetConstructors = exportedConstructors
+        .where((c) => c.isWidgetConstructor)
+        .sortedBy((c) => c.messageName.originalText);
+
+    final widgetType = exportedClasses
+        .where((element) => element.isWidgetTypeExactly)
+        .first
+        .thisType
+        .toTypeMapping()!;
+
+    final payloadConstructors = <TypeMapping, Iterable<Constructor>>{
+      widgetType: exportedWidgetConstructors
+    };
     final enumTypeMappings = <TypeMapping>{};
     _fillPayloadsAndEnums(
       payloadConstructors,
       enumTypeMappings,
-      exportedNonWidgetConstructors,
+      exportedConstructors,
       exportedWidgetConstructors,
     );
 
     return Protocol(
-      widgetConstructors: exportedWidgetConstructors
-          .sortedBy((c) => c.messageName.originalText),
       enumTypeMappings: enumTypeMappings.sortedBy((m) => m.messageName),
-      payloadTypeMappings:
-          payloadConstructors.keys.sortedBy((m) => m.messageName),
       payloadConstructors: payloadConstructors,
     );
   }
@@ -64,28 +66,20 @@ class Protocol {
           switch (paramType.mappingStrategy) {
             case MappingStrategy.generateEnum:
               growableEnums.add(paramType);
-            case MappingStrategy.generatePayloadMessage:
+            case MappingStrategy.generateMessage:
               // prevents cycling
               final alreadyVisited = growablePayloads.containsKey(paramType);
               if (!alreadyVisited) {
                 final paramTypeConstructors = paramType
                     .findPayloadConstructors(generallyKnownConstructors);
 
-                final nonWidgetConstructors =
-                    paramTypeConstructors.where((c) => !c.isWidgetConstructor);
-
-                // debugger(
-                //   when: paramTypeConstructors.length !=
-                //       nonWidgetConstructors.length,
-                // );
-
-                growablePayloads[paramType] = nonWidgetConstructors;
+                growablePayloads[paramType] = paramTypeConstructors;
                 // recursive depth first search
                 _fillPayloadsAndEnums(
                   growablePayloads,
                   growableEnums,
                   generallyKnownConstructors,
-                  nonWidgetConstructors,
+                  paramTypeConstructors,
                 );
               }
             default: // ignored
@@ -113,17 +107,9 @@ syntax = "proto3";
 
 import "$enumsProto";
 
-${payloadTypeMappings.expand((m) => payloadConstructors[m]!).toSet().map((c) => c.toProtoMessage()).join("\n")}
+${payloadConstructors.values.flattened.toSet().sortedBy((c) => c.messageName.originalText).map((c) => c.toProtoMessage()).join("\n")}
 
-${payloadTypeMappings.map((m) => m.toProtoMessage(payloadConstructors[m]!)).join("\n")}
-
-${widgetConstructors.map((c) => c.toProtoMessage()).join("\n")}
-
-message $widgetExpression {
-  oneof result {
-    ${widgetConstructors.mapIndexed((i, c) => c.toProtoField(i)).join("\n    ")}
-  }
-}
+${payloadConstructors.entries.sortedBy((e) => e.key.messageName).map((e) => e.key.toProtoMessage(e.value)).join("\n")}
 ''';
   }
 
@@ -154,7 +140,7 @@ message Experience {
 ''';
   }
 
-  String toEnumsBuilderCode() {
+  String toConvertEnumsCode() {
     return '''
 $generatedFileHeader
 
@@ -167,25 +153,22 @@ ${enumTypeMappings.map((m) => m.toDartEnumSwitchCase()).whereType<String>().join
 ''';
   }
 
-  String toWidgetBuilderCode() {
-    final entries =
-        payloadConstructors.entries.sortedBy((e) => e.key.messageName);
-
+  String toEvaluateExpressionsCode() {
     final imports = {
-      ...entries.map((e) => e.key.toDartImport()),
-      ...entries.expand((e) => e.value.map((c) => c.toDartImport())),
-      ...widgetConstructors
+      ...payloadConstructors.keys.map((e) => e.toDartImport()),
+      ...payloadConstructors.values
+          .expand((e) => e.map((c) => c.toDartImport())),
+      ...payloadConstructors.values.flattened
           .expand((c) => c.parameters)
           .where((p) => p.typeMapping != null)
           .expand((p) => p.defaultValueImports ?? <String>[]),
-      ...widgetConstructors.map((c) => c.toDartImport()),
     };
 
     return '''
 $generatedFileHeader
 
 import 'dart:core' as core;
-import 'package:flutter/widgets.dart' as widgets;
+
 import 'package:proto_package/proto/messages.pb.dart' as messages;
 
 import 'package:proto_package/$convertEnumsFile' as enums;
@@ -196,28 +179,7 @@ T $throwMissingName<T>(core.String field) {
   throw core.AssertionError('required field \$field is missing');
 }
 
-${entries.map((e) => e.key.toDartTypeSwitchCase(e.value)).join("\n")}
-
-widgets.Widget $evaluateRequiredWidgetExpression(messages.$widgetExpression tree) {
-  final result = $evaluateWidgetExpression(tree);
-  if(result != null) {
-    return result;
-  } else {
-    throw core.AssertionError('unable to parse required sub-tree');
-  }
-}
-
-widgets.Widget? $evaluateWidgetExpression(messages.$widgetExpression? tree) {
-  if(tree == null) {
-    return null;
-  }
-
-  switch (tree.whichResult()) {
-${widgetConstructors.map((c) => c.toDartSwitchCase('messages', widgetExpression)).join("\n")}
-    default:
-      return null;
-  }
-}
+${payloadConstructors.entries.sortedBy((e) => e.key.messageName).map((e) => e.key.toDartTypeSwitchCase(e.value)).join("\n")}
 ''';
   }
 }

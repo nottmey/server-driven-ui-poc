@@ -3,7 +3,7 @@
 //
 
 import 'dart:core' as core;
-import 'package:flutter/widgets.dart' as widgets;
+
 import 'package:proto_package/proto/messages.pb.dart' as messages;
 
 import 'package:proto_package/builders/convert_enums.sdu.dart' as enums;
@@ -595,8 +595,7 @@ $flutterSrcMaterialMenuStyle.MenuStyle? evaluateMaterialMenuStyleExpression(mess
   }
 }
 
-
-widgets.Widget evaluateRequiredWidgetExpression(messages.WidgetExpression tree) {
+$flutterSrcWidgetsFramework.Widget evaluateRequiredWidgetExpression(messages.WidgetExpression tree) {
   final result = evaluateWidgetExpression(tree);
   if(result != null) {
     return result;
@@ -605,7 +604,7 @@ widgets.Widget evaluateRequiredWidgetExpression(messages.WidgetExpression tree) 
   }
 }
 
-widgets.Widget? evaluateWidgetExpression(messages.WidgetExpression? tree) {
+$flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpression? tree) {
   if(tree == null) {
     return null;
   }
@@ -5305,3 +5304,4 @@ widgets.Widget? evaluateWidgetExpression(messages.WidgetExpression? tree) {
       return null;
   }
 }
+
