@@ -2,6 +2,8 @@
 //  Generated. Do not modify.
 //
 
+// ignore_for_file: unused_import
+
 import 'dart:core' as core;
 
 import 'package:proto_package/proto/messages.pb.dart' as messages;

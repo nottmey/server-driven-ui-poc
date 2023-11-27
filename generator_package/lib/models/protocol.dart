@@ -166,6 +166,8 @@ ${enumTypeMappings.map((m) => m.toDartEnumSwitchCase()).whereType<String>().join
     return '''
 $generatedFileHeader
 
+// ignore_for_file: unused_import
+
 import 'dart:core' as core;
 
 import 'package:proto_package/proto/messages.pb.dart' as messages;
