@@ -695,16 +695,20 @@ const FlutterContextMenuButtonType_Enum$json = {
     {'1': 'PASTE', '2': 2},
     {'1': 'SELECT_ALL', '2': 3},
     {'1': 'DELETE', '2': 4},
-    {'1': 'LIVE_TEXT_INPUT', '2': 5},
-    {'1': 'CUSTOM', '2': 6},
+    {'1': 'LOOK_UP', '2': 5},
+    {'1': 'SEARCH_WEB', '2': 6},
+    {'1': 'SHARE', '2': 7},
+    {'1': 'LIVE_TEXT_INPUT', '2': 8},
+    {'1': 'CUSTOM', '2': 9},
   ],
 };
 
 /// Descriptor for `FlutterContextMenuButtonType`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterContextMenuButtonTypeDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQ29udGV4dE1lbnVCdXR0b25UeXBlImEKBEVudW0SBwoDQ1VUEAASCAoEQ09QWR'
-    'ABEgkKBVBBU1RFEAISDgoKU0VMRUNUX0FMTBADEgoKBkRFTEVURRAEEhMKD0xJVkVfVEVYVF9J'
-    'TlBVVBAFEgoKBkNVU1RPTRAG');
+    'ChxGbHV0dGVyQ29udGV4dE1lbnVCdXR0b25UeXBlIokBCgRFbnVtEgcKA0NVVBAAEggKBENPUF'
+    'kQARIJCgVQQVNURRACEg4KClNFTEVDVF9BTEwQAxIKCgZERUxFVEUQBBILCgdMT09LX1VQEAUS'
+    'DgoKU0VBUkNIX1dFQhAGEgkKBVNIQVJFEAcSEwoPTElWRV9URVhUX0lOUFVUEAgSCgoGQ1VTVE'
+    '9NEAk=');
 
 @$core.Deprecated('Use flutterCrossAxisAlignmentDescriptor instead')
 const FlutterCrossAxisAlignment$json = {

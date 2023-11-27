@@ -5,7 +5,7 @@ environment:
   sdk: '>=3.1.5 <4.0.0'
 
 dependencies:
-  analyzer: ^6.3.0
+  analyzer: ^6.2.0
   collection: ^1.18.0
   recase: ^4.1.0
   yaml: ^3.1.2

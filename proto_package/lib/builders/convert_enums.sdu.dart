@@ -816,6 +816,12 @@ $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType? convertFlutterCon
       return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.selectAll;
     case enums.FlutterContextMenuButtonType_Enum.DELETE:
       return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.delete;
+    case enums.FlutterContextMenuButtonType_Enum.LOOK_UP:
+      return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.lookUp;
+    case enums.FlutterContextMenuButtonType_Enum.SEARCH_WEB:
+      return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.searchWeb;
+    case enums.FlutterContextMenuButtonType_Enum.SHARE:
+      return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.share;
     case enums.FlutterContextMenuButtonType_Enum.LIVE_TEXT_INPUT:
       return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.liveTextInput;
     case enums.FlutterContextMenuButtonType_Enum.CUSTOM:

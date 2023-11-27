@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="dart run generator_package" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+    <option name="filePath" value="$PROJECT_DIR$/generator_package/bin/generator_package.dart" />
+    <option name="workingDirectory" value="$PROJECT_DIR$/flutter_project" />
+    <method v="2" />
+  </configuration>
+</component>

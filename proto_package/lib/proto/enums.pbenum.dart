@@ -599,8 +599,11 @@ class FlutterContextMenuButtonType_Enum extends $pb.ProtobufEnum {
   static const FlutterContextMenuButtonType_Enum PASTE = FlutterContextMenuButtonType_Enum._(2, _omitEnumNames ? '' : 'PASTE');
   static const FlutterContextMenuButtonType_Enum SELECT_ALL = FlutterContextMenuButtonType_Enum._(3, _omitEnumNames ? '' : 'SELECT_ALL');
   static const FlutterContextMenuButtonType_Enum DELETE = FlutterContextMenuButtonType_Enum._(4, _omitEnumNames ? '' : 'DELETE');
-  static const FlutterContextMenuButtonType_Enum LIVE_TEXT_INPUT = FlutterContextMenuButtonType_Enum._(5, _omitEnumNames ? '' : 'LIVE_TEXT_INPUT');
-  static const FlutterContextMenuButtonType_Enum CUSTOM = FlutterContextMenuButtonType_Enum._(6, _omitEnumNames ? '' : 'CUSTOM');
+  static const FlutterContextMenuButtonType_Enum LOOK_UP = FlutterContextMenuButtonType_Enum._(5, _omitEnumNames ? '' : 'LOOK_UP');
+  static const FlutterContextMenuButtonType_Enum SEARCH_WEB = FlutterContextMenuButtonType_Enum._(6, _omitEnumNames ? '' : 'SEARCH_WEB');
+  static const FlutterContextMenuButtonType_Enum SHARE = FlutterContextMenuButtonType_Enum._(7, _omitEnumNames ? '' : 'SHARE');
+  static const FlutterContextMenuButtonType_Enum LIVE_TEXT_INPUT = FlutterContextMenuButtonType_Enum._(8, _omitEnumNames ? '' : 'LIVE_TEXT_INPUT');
+  static const FlutterContextMenuButtonType_Enum CUSTOM = FlutterContextMenuButtonType_Enum._(9, _omitEnumNames ? '' : 'CUSTOM');
 
   static const $core.List<FlutterContextMenuButtonType_Enum> values = <FlutterContextMenuButtonType_Enum> [
     CUT,
@@ -608,6 +611,9 @@ class FlutterContextMenuButtonType_Enum extends $pb.ProtobufEnum {
     PASTE,
     SELECT_ALL,
     DELETE,
+    LOOK_UP,
+    SEARCH_WEB,
+    SHARE,
     LIVE_TEXT_INPUT,
     CUSTOM,
   ];

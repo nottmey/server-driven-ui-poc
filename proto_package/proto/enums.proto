@@ -317,8 +317,11 @@ message FlutterContextMenuButtonType {
     PASTE = 2;
     SELECT_ALL = 3;
     DELETE = 4;
-    LIVE_TEXT_INPUT = 5;
-    CUSTOM = 6;
+    LOOK_UP = 5;
+    SEARCH_WEB = 6;
+    SHARE = 7;
+    LIVE_TEXT_INPUT = 8;
+    CUSTOM = 9;
   }
 }
 

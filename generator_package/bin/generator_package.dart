@@ -5,7 +5,7 @@ import 'package:analyzer/dart/analysis/results.dart';
 import 'package:analyzer/file_system/file_system.dart' as file_system;
 import 'package:analyzer/file_system/physical_file_system.dart';
 import 'package:analyzer/src/util/file_paths.dart' as file_paths;
-import 'package:analyzer/src/workspace/package_build.dart';
+import 'package:analyzer/src/workspace/simple.dart';
 import 'package:generator_package/constants.dart';
 import 'package:generator_package/models/protocol.dart';
 import 'package:yaml/yaml.dart';
@@ -71,7 +71,7 @@ build/
         .map<String>((e) => (e.key as YamlNode).value as String)
         .where((dependency) => dependency != 'proto_package');
 
-    final workspace = context.contextRoot.workspace as PackageBuildWorkspace;
+    final workspace = context.contextRoot.workspace as SimpleWorkspace;
     final packageMap = <String, file_system.Folder>{};
     for (final package in workspace.packages.packages) {
       assert(packageMap[package.name] == null);
