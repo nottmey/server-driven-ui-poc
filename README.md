@@ -9,7 +9,7 @@
   applying [generator_package](generator_package)
   to [flutter_project](flutter_project) and
   running [the protocol buffers compiler](https://grpc.io/docs/protoc-installation/)
-- [server_project](server_project) is an exemplary dart server creating ui
+- [dart_server](dart_server) is an exemplary dart server creating ui
   elements and sending them to the [flutter_project](flutter_project)
 
 ### Interesting Files
@@ -21,7 +21,7 @@
   flutter standard library. Ideally the generator would not be applied to the
   raw and full library, but just to certain parts combined with a well-defined
   design system, but it makes for an excellent test case.
-- [proto_package/lib/builders/evaluate_widget_expression.sdu.dart](proto_package/lib/builders/evaluate_widget_expression.sdu.dart)
+- [proto_package/lib/builders/evaluate_expressions.sdu.dart](proto_package/lib/builders/evaluate_expressions.sdu.dart)
   contains the parsing of the whole protocol to flutter widgets.
 
 ### Prerequisites
@@ -49,7 +49,7 @@ dart run generator_package # creates/updates `proto_package`
 # in `proto_package`
 protoc --dart_out=grpc:lib/proto --proto_path=proto $(find proto -iname "*.proto")
 
-# in `server_project` start server
+# in `dart_server` start server
 dart run
 
 # in `flutter_project` start and see server generated ui
@@ -108,5 +108,6 @@ flutter run
   }
   ```
   (Another option would be to prefix the enum values, like recommended in the
-  style guide. However, this can create very long names in our context,
+  style guide. However, in our context, this may still lead to collisions and 
+  can create very long names in our context,
   e.g. `MATERIAL_NAVIGATION_DESTINATION_LABEL_BEHAVIOR_ONLY_SHOW_SELECTED`)

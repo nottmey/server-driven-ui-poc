@@ -1,4 +1,4 @@
-name: server_project
+name: dart_server
 
 environment:
   sdk: '^3.1.0'
