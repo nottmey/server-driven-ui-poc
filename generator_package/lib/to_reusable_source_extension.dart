@@ -1,5 +1,6 @@
 import 'package:analyzer/dart/ast/ast.dart';
 import 'package:analyzer/dart/element/element.dart';
+
 // ignore: implementation_imports
 import 'package:analyzer/src/dart/element/element.dart'
     show ConstVariableElement;
@@ -23,55 +24,56 @@ extension ToReusableSourceExtension on Expression {
     if (this is Literal) {
       return (null, toSource());
     } else if (this is SimpleIdentifier) {
-      final referencedElement = (this as SimpleIdentifier).staticElement;
-      if (referencedElement is PropertyAccessorElement) {
-        if (referencedElement.isPublic) {
-          final enclosingElement = referencedElement.enclosingElement;
+      final accessorElement = (this as SimpleIdentifier).staticElement;
+      if (accessorElement is PropertyAccessorElement) {
+        final referencedElement = accessorElement.variable;
+        if (accessorElement.isPublic &&
+            !referencedElement.hasVisibleForTesting) {
+          final enclosingElement = accessorElement.enclosingElement;
           if (enclosingElement is ClassElement) {
-            return reference(referencedElement, enclosingElement);
+            return reference(accessorElement, enclosingElement);
           } else {
-            return reference(referencedElement);
+            return reference(accessorElement);
           }
         } else {
-          final variableBehindAccessor = referencedElement.variable;
-          if (variableBehindAccessor is ConstVariableElement) {
+          if (referencedElement is ConstVariableElement) {
             // mixin access only via casting
-            return (variableBehindAccessor as ConstVariableElement)
+            return (referencedElement as ConstVariableElement)
                 .constantInitializer
                 ?.toReusableSource();
           } else {
             throw AssertionError(
-              'private variable ${referencedElement.name} was not a const evaluation',
+              'private/hidden variable ${accessorElement.name} was not a const evaluation',
             );
           }
         }
-      } else if (referencedElement is MethodElement &&
-          referencedElement.isStatic &&
-          referencedElement.isPublic) {
-        final enclosingElement = referencedElement.enclosingElement;
+      } else if (accessorElement is MethodElement &&
+          accessorElement.isStatic &&
+          accessorElement.isPublic) {
+        final enclosingElement = accessorElement.enclosingElement;
         if (enclosingElement is ClassElement && enclosingElement.isPublic) {
-          return reference(referencedElement, enclosingElement);
+          return reference(accessorElement, enclosingElement);
         } else {
           throw AssertionError(
-            'referenced method ${referencedElement.name} is not in public class',
+            'referenced method ${accessorElement.name} is not in public class',
           );
         }
-      } else if (referencedElement is MethodElement &&
-          referencedElement.isStatic &&
-          referencedElement.isPrivate) {
+      } else if (accessorElement is MethodElement &&
+          accessorElement.isStatic &&
+          accessorElement.isPrivate) {
         // TODO copy private referenced method (e.g. CupertionTextField.contextMenuBuilder)
         return (null, null);
-      } else if (referencedElement is FunctionElement &&
-          referencedElement.isPublic) {
+      } else if (accessorElement is FunctionElement &&
+          accessorElement.isPublic) {
         // TODO import default function reference, see method above how to do this
         return (null, null);
-      } else if (referencedElement is FunctionElement &&
-          referencedElement.isPrivate) {
+      } else if (accessorElement is FunctionElement &&
+          accessorElement.isPrivate) {
         // TODO copy referenced private function
         return (null, null);
       } else {
         throw AssertionError(
-          'reference ${referencedElement?.name} was not a parsable default value',
+          'reference ${accessorElement?.name} was not a parsable default value',
         );
       }
     } else if (this is PrefixedIdentifier) {

@@ -2690,7 +2690,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
     case messages.FlutterDiagnosticableTreeExpression_Result.cupertinoMagnifier:
       return $flutterSrcCupertinoMagnifier.CupertinoMagnifier(
           key: (tree.cupertinoMagnifier.hasKey() ? evaluateFlutterKeyExpression(tree.cupertinoMagnifier.key) : null),
-          size: (tree.cupertinoMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.cupertinoMagnifier.size) : $flutterSrcCupertinoMagnifier.CupertinoMagnifier.kDefaultSize),
+          size: (tree.cupertinoMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.cupertinoMagnifier.size) : missing('size')),
           borderRadius: (tree.cupertinoMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.cupertinoMagnifier.borderRadius) : missing('borderRadius')),
           additionalFocalPointOffset: (tree.cupertinoMagnifier.hasAdditionalFocalPointOffset() ? evaluateRequiredDartOffsetExpression(tree.cupertinoMagnifier.additionalFocalPointOffset) : $dartUi.Offset.zero),
           shadows: tree.cupertinoMagnifier.shadows.map((e) => evaluateRequiredFlutterBoxShadowExpression(e)).toList(),
@@ -16817,7 +16817,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
     case messages.FlutterStatelessWidgetExpression_Result.cupertinoMagnifier:
       return $flutterSrcCupertinoMagnifier.CupertinoMagnifier(
           key: (tree.cupertinoMagnifier.hasKey() ? evaluateFlutterKeyExpression(tree.cupertinoMagnifier.key) : null),
-          size: (tree.cupertinoMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.cupertinoMagnifier.size) : $flutterSrcCupertinoMagnifier.CupertinoMagnifier.kDefaultSize),
+          size: (tree.cupertinoMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.cupertinoMagnifier.size) : missing('size')),
           borderRadius: (tree.cupertinoMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.cupertinoMagnifier.borderRadius) : missing('borderRadius')),
           additionalFocalPointOffset: (tree.cupertinoMagnifier.hasAdditionalFocalPointOffset() ? evaluateRequiredDartOffsetExpression(tree.cupertinoMagnifier.additionalFocalPointOffset) : $dartUi.Offset.zero),
           shadows: tree.cupertinoMagnifier.shadows.map((e) => evaluateRequiredFlutterBoxShadowExpression(e)).toList(),
@@ -23035,7 +23035,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
     case messages.WidgetExpression_Result.cupertinoMagnifier:
       return $flutterSrcCupertinoMagnifier.CupertinoMagnifier(
           key: (tree.cupertinoMagnifier.hasKey() ? evaluateFlutterKeyExpression(tree.cupertinoMagnifier.key) : null),
-          size: (tree.cupertinoMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.cupertinoMagnifier.size) : $flutterSrcCupertinoMagnifier.CupertinoMagnifier.kDefaultSize),
+          size: (tree.cupertinoMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.cupertinoMagnifier.size) : missing('size')),
           borderRadius: (tree.cupertinoMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.cupertinoMagnifier.borderRadius) : missing('borderRadius')),
           additionalFocalPointOffset: (tree.cupertinoMagnifier.hasAdditionalFocalPointOffset() ? evaluateRequiredDartOffsetExpression(tree.cupertinoMagnifier.additionalFocalPointOffset) : $dartUi.Offset.zero),
           shadows: tree.cupertinoMagnifier.shadows.map((e) => evaluateRequiredFlutterBoxShadowExpression(e)).toList(),
