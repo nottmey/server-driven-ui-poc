@@ -37,7 +37,7 @@ class Protocol {
         .toTypeMapping()!;
 
     final payloadConstructors = <TypeMapping, Iterable<Constructor>>{
-      widgetType: exportedWidgetConstructors
+      widgetType: exportedWidgetConstructors,
     };
     final enumTypeMappings = <TypeMapping>{};
     _fillPayloadsAndEnums(

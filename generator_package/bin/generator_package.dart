@@ -10,6 +10,8 @@ import 'package:generator_package/constants.dart';
 import 'package:generator_package/models/protocol.dart';
 import 'package:yaml/yaml.dart';
 
+const log = print; // minimal logging
+
 // Similar to https://github.com/google/protobuf.dart/tree/master/protoc_plugin,
 // we can't use build_runner, because we don't know which files we are going to
 // create in advance. Also, we can't directly analyze external libraries there.
@@ -17,11 +19,11 @@ import 'package:yaml/yaml.dart';
 // docs regarding running: https://dart.dev/tools/dart-run
 Future<void> main(List<String> arguments) async {
   final dir = Directory.current;
-  print('Starting ${Platform.script.path} in ${dir.path} with $arguments');
-  print('Using ${Platform.executable} with ${Platform.executableArguments}');
+  log('Starting ${Platform.script.path} in ${dir.path} with $arguments');
+  log('Using ${Platform.executable} with ${Platform.executableArguments}');
 
   Future<File> writeFile(String path, String contents) {
-    print('creating file $path');
+    log('creating file $path');
     return File('${dir.path}/../proto_package/$path')
         .create(recursive: true)
         .then((file) => file.writeAsString(contents, flush: true));
@@ -63,7 +65,7 @@ build/
   for (final context in analysis.contexts) {
     final rootFolder = context.contextRoot.root;
     final pubspecFile = rootFolder.getChildAssumingFile(file_paths.pubspecYaml);
-    print('Analyzing ${pubspecFile.path} project.');
+    log('Analyzing ${pubspecFile.path} project.');
 
     final pubspecContent = loadYaml(pubspecFile.readAsStringSync()) as YamlMap;
     final dependenciesContent = pubspecContent['dependencies'] as YamlMap;
@@ -96,7 +98,7 @@ build/
     final resolvedLibraries = await Future.wait(
       relevantLibraries.map((libraryPath) {
         return session.getResolvedLibrary(libraryPath).then((resolvedLibrary) {
-          print('Resolved $libraryPath');
+          log('Resolved $libraryPath');
           return resolvedLibrary;
         });
       }),
