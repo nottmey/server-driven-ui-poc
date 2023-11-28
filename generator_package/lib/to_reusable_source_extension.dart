@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:analyzer/dart/ast/ast.dart';
 import 'package:analyzer/dart/element/element.dart';
 
@@ -18,6 +20,21 @@ import 'package:generator_package/to_self_contained_library_alias_extension.dart
   return (["import '$uri' as $alias;"], '$alias.$classPrefix$refName');
 }
 
+(List<String>? imports, String? source)? copy(
+  PropertyInducingElement element,
+) {
+  if (element is ConstVariableElement) {
+    // mixin access only via casting
+    return (element as ConstVariableElement)
+        .constantInitializer
+        ?.toReusableSource();
+  } else {
+    throw AssertionError(
+      'private/hidden variable ${element.name} was not a const evaluation',
+    );
+  }
+}
+
 // TODO hide references to hidden constants (e.g. just visible for testing)
 extension ToReusableSourceExtension on Expression {
   (List<String>? imports, String? source)? toReusableSource() {
@@ -36,16 +53,7 @@ extension ToReusableSourceExtension on Expression {
             return reference(accessorElement);
           }
         } else {
-          if (referencedElement is ConstVariableElement) {
-            // mixin access only via casting
-            return (referencedElement as ConstVariableElement)
-                .constantInitializer
-                ?.toReusableSource();
-          } else {
-            throw AssertionError(
-              'private/hidden variable ${accessorElement.name} was not a const evaluation',
-            );
-          }
+          return copy(referencedElement);
         }
       } else if (accessorElement is MethodElement &&
           accessorElement.isStatic &&
@@ -85,15 +93,17 @@ extension ToReusableSourceExtension on Expression {
           interfaceElement.isPublic &&
           staticAccessorElement is ExecutableElement &&
           staticAccessorElement.isStatic &&
-          staticAccessorElement.isPublic) {
+          staticAccessorElement.isPublic &&
+          (staticAccessorElement is! PropertyAccessorElement ||
+              !staticAccessorElement.variable.hasVisibleForTesting)) {
         // e.g. MainAxisAlignment.start
         // e.g. CupertinoColors.quaternarySystemFill
         // e.g. AnimatedSwitcher.defaultTransitionBuilder
         return reference(staticAccessorElement, interfaceElement);
-      } else if (interfaceElement is InterfaceElement &&
-          interfaceElement.isPrivate) {
-        // TODO copy value from privately referenced constant
-        return (null, null);
+      } else if (staticAccessorElement is PropertyAccessorElement) {
+        // e.g. _MediumScrollUnderFlexibleConfig.collapsedHeight
+        // e.g. Magnifier.kDefaultMagnifierSize (which has @visibleForTesting)
+        return copy(staticAccessorElement.variable);
       } else {
         throw AssertionError(
           'identifier ${interfaceElement?.name}.${thisAsIdentifier.name} was not a parsable default value',

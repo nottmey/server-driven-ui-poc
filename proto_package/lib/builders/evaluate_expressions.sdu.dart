@@ -7920,7 +7920,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           borderRadius: (tree.materialMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.materialMagnifier.borderRadius) : missing('borderRadius')),
           filmColor: (tree.materialMagnifier.hasFilmColor() ? evaluateRequiredDartColorExpression(tree.materialMagnifier.filmColor) : missing('filmColor')),
           shadows: tree.materialMagnifier.shadows.map((e) => evaluateRequiredFlutterBoxShadowExpression(e)).toList(),
-          size: (tree.materialMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.materialMagnifier.size) : $flutterSrcMaterialMagnifier.Magnifier.kDefaultMagnifierSize));
+          size: (tree.materialMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.materialMagnifier.size) : missing('size')));
     case messages.FlutterDiagnosticableTreeExpression_Result.materialMaterial:
       return $flutterSrcMaterialMaterial.Material(
           key: (tree.materialMaterial.hasKey() ? evaluateFlutterKeyExpression(tree.materialMaterial.key) : null),
@@ -8705,7 +8705,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           stretchTriggerOffset: (tree.materialSliverAppBarNamedLarge.hasStretchTriggerOffset() ? tree.materialSliverAppBarNamedLarge.stretchTriggerOffset : 100.0),
           onStretchTrigger: null,
           shape: (tree.materialSliverAppBarNamedLarge.hasShape() ? evaluateFlutterShapeBorderExpression(tree.materialSliverAppBarNamedLarge.shape) : null),
-          toolbarHeight: (tree.materialSliverAppBarNamedLarge.hasToolbarHeight() ? tree.materialSliverAppBarNamedLarge.toolbarHeight : missing('toolbarHeight')),
+          toolbarHeight: (tree.materialSliverAppBarNamedLarge.hasToolbarHeight() ? tree.materialSliverAppBarNamedLarge.toolbarHeight : 64.0),
           leadingWidth: (tree.materialSliverAppBarNamedLarge.hasLeadingWidth() ? tree.materialSliverAppBarNamedLarge.leadingWidth : null),
           toolbarTextStyle: (tree.materialSliverAppBarNamedLarge.hasToolbarTextStyle() ? evaluateFlutterTextStyleExpression(tree.materialSliverAppBarNamedLarge.toolbarTextStyle) : null),
           titleTextStyle: (tree.materialSliverAppBarNamedLarge.hasTitleTextStyle() ? evaluateFlutterTextStyleExpression(tree.materialSliverAppBarNamedLarge.titleTextStyle) : null),
@@ -8743,7 +8743,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           stretchTriggerOffset: (tree.materialSliverAppBarNamedMedium.hasStretchTriggerOffset() ? tree.materialSliverAppBarNamedMedium.stretchTriggerOffset : 100.0),
           onStretchTrigger: null,
           shape: (tree.materialSliverAppBarNamedMedium.hasShape() ? evaluateFlutterShapeBorderExpression(tree.materialSliverAppBarNamedMedium.shape) : null),
-          toolbarHeight: (tree.materialSliverAppBarNamedMedium.hasToolbarHeight() ? tree.materialSliverAppBarNamedMedium.toolbarHeight : missing('toolbarHeight')),
+          toolbarHeight: (tree.materialSliverAppBarNamedMedium.hasToolbarHeight() ? tree.materialSliverAppBarNamedMedium.toolbarHeight : 64.0),
           leadingWidth: (tree.materialSliverAppBarNamedMedium.hasLeadingWidth() ? tree.materialSliverAppBarNamedMedium.leadingWidth : null),
           toolbarTextStyle: (tree.materialSliverAppBarNamedMedium.hasToolbarTextStyle() ? evaluateFlutterTextStyleExpression(tree.materialSliverAppBarNamedMedium.toolbarTextStyle) : null),
           titleTextStyle: (tree.materialSliverAppBarNamedMedium.hasTitleTextStyle() ? evaluateFlutterTextStyleExpression(tree.materialSliverAppBarNamedMedium.titleTextStyle) : null),
@@ -16320,7 +16320,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           stretchTriggerOffset: (tree.materialSliverAppBarNamedLarge.hasStretchTriggerOffset() ? tree.materialSliverAppBarNamedLarge.stretchTriggerOffset : 100.0),
           onStretchTrigger: null,
           shape: (tree.materialSliverAppBarNamedLarge.hasShape() ? evaluateFlutterShapeBorderExpression(tree.materialSliverAppBarNamedLarge.shape) : null),
-          toolbarHeight: (tree.materialSliverAppBarNamedLarge.hasToolbarHeight() ? tree.materialSliverAppBarNamedLarge.toolbarHeight : missing('toolbarHeight')),
+          toolbarHeight: (tree.materialSliverAppBarNamedLarge.hasToolbarHeight() ? tree.materialSliverAppBarNamedLarge.toolbarHeight : 64.0),
           leadingWidth: (tree.materialSliverAppBarNamedLarge.hasLeadingWidth() ? tree.materialSliverAppBarNamedLarge.leadingWidth : null),
           toolbarTextStyle: (tree.materialSliverAppBarNamedLarge.hasToolbarTextStyle() ? evaluateFlutterTextStyleExpression(tree.materialSliverAppBarNamedLarge.toolbarTextStyle) : null),
           titleTextStyle: (tree.materialSliverAppBarNamedLarge.hasTitleTextStyle() ? evaluateFlutterTextStyleExpression(tree.materialSliverAppBarNamedLarge.titleTextStyle) : null),
@@ -16358,7 +16358,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           stretchTriggerOffset: (tree.materialSliverAppBarNamedMedium.hasStretchTriggerOffset() ? tree.materialSliverAppBarNamedMedium.stretchTriggerOffset : 100.0),
           onStretchTrigger: null,
           shape: (tree.materialSliverAppBarNamedMedium.hasShape() ? evaluateFlutterShapeBorderExpression(tree.materialSliverAppBarNamedMedium.shape) : null),
-          toolbarHeight: (tree.materialSliverAppBarNamedMedium.hasToolbarHeight() ? tree.materialSliverAppBarNamedMedium.toolbarHeight : missing('toolbarHeight')),
+          toolbarHeight: (tree.materialSliverAppBarNamedMedium.hasToolbarHeight() ? tree.materialSliverAppBarNamedMedium.toolbarHeight : 64.0),
           leadingWidth: (tree.materialSliverAppBarNamedMedium.hasLeadingWidth() ? tree.materialSliverAppBarNamedMedium.leadingWidth : null),
           toolbarTextStyle: (tree.materialSliverAppBarNamedMedium.hasToolbarTextStyle() ? evaluateFlutterTextStyleExpression(tree.materialSliverAppBarNamedMedium.toolbarTextStyle) : null),
           titleTextStyle: (tree.materialSliverAppBarNamedMedium.hasTitleTextStyle() ? evaluateFlutterTextStyleExpression(tree.materialSliverAppBarNamedMedium.titleTextStyle) : null),
@@ -18404,7 +18404,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
           borderRadius: (tree.materialMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.materialMagnifier.borderRadius) : missing('borderRadius')),
           filmColor: (tree.materialMagnifier.hasFilmColor() ? evaluateRequiredDartColorExpression(tree.materialMagnifier.filmColor) : missing('filmColor')),
           shadows: tree.materialMagnifier.shadows.map((e) => evaluateRequiredFlutterBoxShadowExpression(e)).toList(),
-          size: (tree.materialMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.materialMagnifier.size) : $flutterSrcMaterialMagnifier.Magnifier.kDefaultMagnifierSize));
+          size: (tree.materialMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.materialMagnifier.size) : missing('size')));
     case messages.FlutterStatelessWidgetExpression_Result.materialMaterialButton:
       return $flutterSrcMaterialMaterialButton.MaterialButton(
           key: (tree.materialMaterialButton.hasKey() ? evaluateFlutterKeyExpression(tree.materialMaterialButton.key) : null),
@@ -27456,7 +27456,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           borderRadius: (tree.materialMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.materialMagnifier.borderRadius) : missing('borderRadius')),
           filmColor: (tree.materialMagnifier.hasFilmColor() ? evaluateRequiredDartColorExpression(tree.materialMagnifier.filmColor) : missing('filmColor')),
           shadows: tree.materialMagnifier.shadows.map((e) => evaluateRequiredFlutterBoxShadowExpression(e)).toList(),
-          size: (tree.materialMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.materialMagnifier.size) : $flutterSrcMaterialMagnifier.Magnifier.kDefaultMagnifierSize));
+          size: (tree.materialMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.materialMagnifier.size) : missing('size')));
     case messages.WidgetExpression_Result.materialMaterial:
       return $flutterSrcMaterialMaterial.Material(
           key: (tree.materialMaterial.hasKey() ? evaluateFlutterKeyExpression(tree.materialMaterial.key) : null),
@@ -28241,7 +28241,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           stretchTriggerOffset: (tree.materialSliverAppBarNamedLarge.hasStretchTriggerOffset() ? tree.materialSliverAppBarNamedLarge.stretchTriggerOffset : 100.0),
           onStretchTrigger: null,
           shape: (tree.materialSliverAppBarNamedLarge.hasShape() ? evaluateFlutterShapeBorderExpression(tree.materialSliverAppBarNamedLarge.shape) : null),
-          toolbarHeight: (tree.materialSliverAppBarNamedLarge.hasToolbarHeight() ? tree.materialSliverAppBarNamedLarge.toolbarHeight : missing('toolbarHeight')),
+          toolbarHeight: (tree.materialSliverAppBarNamedLarge.hasToolbarHeight() ? tree.materialSliverAppBarNamedLarge.toolbarHeight : 64.0),
           leadingWidth: (tree.materialSliverAppBarNamedLarge.hasLeadingWidth() ? tree.materialSliverAppBarNamedLarge.leadingWidth : null),
           toolbarTextStyle: (tree.materialSliverAppBarNamedLarge.hasToolbarTextStyle() ? evaluateFlutterTextStyleExpression(tree.materialSliverAppBarNamedLarge.toolbarTextStyle) : null),
           titleTextStyle: (tree.materialSliverAppBarNamedLarge.hasTitleTextStyle() ? evaluateFlutterTextStyleExpression(tree.materialSliverAppBarNamedLarge.titleTextStyle) : null),
@@ -28279,7 +28279,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           stretchTriggerOffset: (tree.materialSliverAppBarNamedMedium.hasStretchTriggerOffset() ? tree.materialSliverAppBarNamedMedium.stretchTriggerOffset : 100.0),
           onStretchTrigger: null,
           shape: (tree.materialSliverAppBarNamedMedium.hasShape() ? evaluateFlutterShapeBorderExpression(tree.materialSliverAppBarNamedMedium.shape) : null),
-          toolbarHeight: (tree.materialSliverAppBarNamedMedium.hasToolbarHeight() ? tree.materialSliverAppBarNamedMedium.toolbarHeight : missing('toolbarHeight')),
+          toolbarHeight: (tree.materialSliverAppBarNamedMedium.hasToolbarHeight() ? tree.materialSliverAppBarNamedMedium.toolbarHeight : 64.0),
           leadingWidth: (tree.materialSliverAppBarNamedMedium.hasLeadingWidth() ? tree.materialSliverAppBarNamedMedium.leadingWidth : null),
           toolbarTextStyle: (tree.materialSliverAppBarNamedMedium.hasToolbarTextStyle() ? evaluateFlutterTextStyleExpression(tree.materialSliverAppBarNamedMedium.toolbarTextStyle) : null),
           titleTextStyle: (tree.materialSliverAppBarNamedMedium.hasTitleTextStyle() ? evaluateFlutterTextStyleExpression(tree.materialSliverAppBarNamedMedium.titleTextStyle) : null),
