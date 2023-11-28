@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:analyzer/dart/ast/ast.dart';
 import 'package:analyzer/dart/element/element.dart';
 
