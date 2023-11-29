@@ -67,15 +67,16 @@ extension ToReusableSourceExtension on Expression {
       } else if (accessorElement is MethodElement &&
           accessorElement.isStatic &&
           accessorElement.isPrivate) {
-        // TODO copy private referenced method (e.g. CupertionTextField.contextMenuBuilder)
+        // e.g. CupertionTextField.contextMenuBuilder
+        // TODO copy private referenced method or generate multiple constructor calls
         return (null, null);
       } else if (accessorElement is FunctionElement &&
           accessorElement.isPublic) {
-        // TODO import default function reference, see method above how to do this
-        return (null, null);
+        // e.g. childDragAnchorStrategy
+        return reference(accessorElement);
       } else if (accessorElement is FunctionElement &&
           accessorElement.isPrivate) {
-        // TODO copy referenced private function
+        // TODO copy referenced private function or generate multiple constructor calls
         return (null, null);
       } else {
         throw AssertionError(
