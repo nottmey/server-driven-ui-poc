@@ -81,18 +81,18 @@ import 'package:generator_package/to_self_contained_library_alias_extension.dart
 // TODO hide references to hidden constants (e.g. just visible for testing)
 extension ToReusableSourceExtension on Expression {
   (List<String>? imports, String? source) toReusableSource() {
-    if (this is Literal) {
+    final thisExpression = this; // local so we don't need to cast;
+    if (thisExpression is Literal) {
       return (null, toSource());
-    } else if (this is NamedExpression) {
-      final namedExpression = this as NamedExpression;
-      final name = namedExpression.name.toSource();
-      final (imports, source) = namedExpression.expression.toReusableSource();
+    } else if (thisExpression is NamedExpression) {
+      final name = thisExpression.name.toSource();
+      final (imports, source) = thisExpression.expression.toReusableSource();
       if (source == null) {
         return (null, null);
       }
       return (imports, '$name $source');
-    } else if (this is SimpleIdentifier) {
-      final accessorElement = (this as SimpleIdentifier).staticElement;
+    } else if (thisExpression is SimpleIdentifier) {
+      final accessorElement = thisExpression.staticElement;
       if (accessorElement is PropertyAccessorElement) {
         final referencedElement = accessorElement.variable;
         if (accessorElement.isPublic &&
@@ -136,10 +136,9 @@ extension ToReusableSourceExtension on Expression {
           'reference ${accessorElement?.name} was not a parsable default value',
         );
       }
-    } else if (this is PrefixedIdentifier) {
-      final thisAsIdentifier = this as PrefixedIdentifier;
-      final interfaceElement = thisAsIdentifier.prefix.staticElement;
-      final identifierElement = thisAsIdentifier.identifier;
+    } else if (thisExpression is PrefixedIdentifier) {
+      final interfaceElement = thisExpression.prefix.staticElement;
+      final identifierElement = thisExpression.identifier;
       final staticAccessorElement = identifierElement.staticElement;
       if (interfaceElement is InterfaceElement &&
           interfaceElement.isPublic &&
@@ -158,11 +157,11 @@ extension ToReusableSourceExtension on Expression {
         return copy(staticAccessorElement.variable);
       } else {
         throw AssertionError(
-          'identifier ${interfaceElement?.name}.${thisAsIdentifier.name} was not a parsable default value',
+          'identifier ${interfaceElement?.name}.${thisExpression.name} was not a parsable default value',
         );
       }
-    } else if (this is InstanceCreationExpression) {
-      return create(this as InstanceCreationExpression);
+    } else if (thisExpression is InstanceCreationExpression) {
+      return create(thisExpression);
     }
     // TODO map more syntax
     return (null, null);
