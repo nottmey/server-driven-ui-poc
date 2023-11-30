@@ -176,6 +176,17 @@ extension ToReusableSourceExtension on Expression {
       }
       final call = '$leftSource ${thisExpression.operator} $rightSource';
       return ([...leftImports, ...rightImports], call);
+    } else if (thisExpression is PropertyAccess) {
+      final accessorElement = thisExpression.propertyName.staticElement;
+      final typeElement = accessorElement?.enclosingElement;
+      if (accessorElement is PropertyAccessorElement &&
+          typeElement is EnumElement) {
+        return _reference(accessorElement, classElement: typeElement);
+      } else {
+        throw AssertionError(
+          'enum access ${typeElement?.name}.${accessorElement?.name} was not a parsable default value',
+        );
+      }
     }
     // TODO map more syntax
     return _notSupported;
