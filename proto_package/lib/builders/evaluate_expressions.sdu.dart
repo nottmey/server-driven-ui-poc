@@ -2303,7 +2303,7 @@ $flutterSrcRenderingCustomPaint.CustomPainter? evaluateFlutterCustomPainterExpre
           location: (tree.flutterBannerPainter.hasLocation() ? enums.convertRequiredFlutterBannerLocation(tree.flutterBannerPainter.location) : missing('location')),
           layoutDirection: (tree.flutterBannerPainter.hasLayoutDirection() ? enums.convertRequiredDartTextDirection(tree.flutterBannerPainter.layoutDirection) : missing('layoutDirection')),
           color: (tree.flutterBannerPainter.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBannerPainter.color) : $dartUi.Color(0xA0B71C1C)),
-          textStyle: (tree.flutterBannerPainter.hasTextStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterBannerPainter.textStyle) : missing('textStyle')));
+          textStyle: (tree.flutterBannerPainter.hasTextStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterBannerPainter.textStyle) : $flutterSrcPaintingTextStyle.TextStyle(color: $dartUi.Color(0xFFFFFFFF), fontSize: 12.0 * 0.85, fontWeight: $dartUi.FontWeight.w900, height: 1.0)));
     default:
       return null;
   }
@@ -3333,7 +3333,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           location: (tree.flutterBanner.hasLocation() ? enums.convertRequiredFlutterBannerLocation(tree.flutterBanner.location) : missing('location')),
           layoutDirection: (tree.flutterBanner.hasLayoutDirection() ? enums.convertDartTextDirection(tree.flutterBanner.layoutDirection) : null),
           color: (tree.flutterBanner.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBanner.color) : $dartUi.Color(0xA0B71C1C)),
-          textStyle: (tree.flutterBanner.hasTextStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterBanner.textStyle) : missing('textStyle')));
+          textStyle: (tree.flutterBanner.hasTextStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterBanner.textStyle) : $flutterSrcPaintingTextStyle.TextStyle(color: $dartUi.Color(0xFFFFFFFF), fontSize: 12.0 * 0.85, fontWeight: $dartUi.FontWeight.w900, height: 1.0)));
     case messages.FlutterDiagnosticableTreeExpression_Result.flutterBaseline:
       return $flutterSrcWidgetsBasic.Baseline(
           key: (tree.flutterBaseline.hasKey() ? evaluateFlutterKeyExpression(tree.flutterBaseline.key) : null),
@@ -7277,7 +7277,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           children: missing('children'),
           expansionCallback: null,
           animationDuration: (tree.materialExpansionPanelList.hasAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialExpansionPanelList.animationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
-          expandedHeaderPadding: (tree.materialExpansionPanelList.hasExpandedHeaderPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialExpansionPanelList.expandedHeaderPadding) : missing('expandedHeaderPadding')),
+          expandedHeaderPadding: (tree.materialExpansionPanelList.hasExpandedHeaderPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialExpansionPanelList.expandedHeaderPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(vertical: 64.0 - $flutterSrcMaterialConstants.kMinInteractiveDimension)),
           dividerColor: (tree.materialExpansionPanelList.hasDividerColor() ? evaluateDartColorExpression(tree.materialExpansionPanelList.dividerColor) : null),
           elevation: (tree.materialExpansionPanelList.hasElevation() ? tree.materialExpansionPanelList.elevation : 2),
           expandIconColor: (tree.materialExpansionPanelList.hasExpandIconColor() ? evaluateDartColorExpression(tree.materialExpansionPanelList.expandIconColor) : null),
@@ -7289,7 +7289,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           expansionCallback: null,
           animationDuration: (tree.materialExpansionPanelListNamedRadio.hasAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialExpansionPanelListNamedRadio.animationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
           initialOpenPanelValue: null,
-          expandedHeaderPadding: (tree.materialExpansionPanelListNamedRadio.hasExpandedHeaderPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialExpansionPanelListNamedRadio.expandedHeaderPadding) : missing('expandedHeaderPadding')),
+          expandedHeaderPadding: (tree.materialExpansionPanelListNamedRadio.hasExpandedHeaderPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialExpansionPanelListNamedRadio.expandedHeaderPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(vertical: 64.0 - $flutterSrcMaterialConstants.kMinInteractiveDimension)),
           dividerColor: (tree.materialExpansionPanelListNamedRadio.hasDividerColor() ? evaluateDartColorExpression(tree.materialExpansionPanelListNamedRadio.dividerColor) : null),
           elevation: (tree.materialExpansionPanelListNamedRadio.hasElevation() ? tree.materialExpansionPanelListNamedRadio.elevation : 2),
           expandIconColor: (tree.materialExpansionPanelListNamedRadio.hasExpandIconColor() ? evaluateDartColorExpression(tree.materialExpansionPanelListNamedRadio.expandIconColor) : null),
@@ -10008,7 +10008,7 @@ $flutterSrcPaintingGradient.Gradient? evaluateFlutterGradientExpression(messages
       return $flutterSrcPaintingGradient.SweepGradient(
           center: (tree.flutterSweepGradient.hasCenter() ? evaluateRequiredFlutterAlignmentGeometryExpression(tree.flutterSweepGradient.center) : $flutterSrcPaintingAlignment.Alignment.center),
           startAngle: (tree.flutterSweepGradient.hasStartAngle() ? tree.flutterSweepGradient.startAngle : 0.0),
-          endAngle: (tree.flutterSweepGradient.hasEndAngle() ? tree.flutterSweepGradient.endAngle : missing('endAngle')),
+          endAngle: (tree.flutterSweepGradient.hasEndAngle() ? tree.flutterSweepGradient.endAngle : $dartMath.pi * 2),
           colors: tree.flutterSweepGradient.colors.map((e) => evaluateRequiredDartColorExpression(e)).toList(),
           stops: tree.flutterSweepGradient.stops,
           tileMode: (tree.flutterSweepGradient.hasTileMode() ? enums.convertRequiredDartTileMode(tree.flutterSweepGradient.tileMode) : $dartUi.TileMode.clamp),
@@ -15581,7 +15581,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           children: missing('children'),
           expansionCallback: null,
           animationDuration: (tree.materialExpansionPanelList.hasAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialExpansionPanelList.animationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
-          expandedHeaderPadding: (tree.materialExpansionPanelList.hasExpandedHeaderPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialExpansionPanelList.expandedHeaderPadding) : missing('expandedHeaderPadding')),
+          expandedHeaderPadding: (tree.materialExpansionPanelList.hasExpandedHeaderPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialExpansionPanelList.expandedHeaderPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(vertical: 64.0 - $flutterSrcMaterialConstants.kMinInteractiveDimension)),
           dividerColor: (tree.materialExpansionPanelList.hasDividerColor() ? evaluateDartColorExpression(tree.materialExpansionPanelList.dividerColor) : null),
           elevation: (tree.materialExpansionPanelList.hasElevation() ? tree.materialExpansionPanelList.elevation : 2),
           expandIconColor: (tree.materialExpansionPanelList.hasExpandIconColor() ? evaluateDartColorExpression(tree.materialExpansionPanelList.expandIconColor) : null),
@@ -15593,7 +15593,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           expansionCallback: null,
           animationDuration: (tree.materialExpansionPanelListNamedRadio.hasAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialExpansionPanelListNamedRadio.animationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
           initialOpenPanelValue: null,
-          expandedHeaderPadding: (tree.materialExpansionPanelListNamedRadio.hasExpandedHeaderPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialExpansionPanelListNamedRadio.expandedHeaderPadding) : missing('expandedHeaderPadding')),
+          expandedHeaderPadding: (tree.materialExpansionPanelListNamedRadio.hasExpandedHeaderPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialExpansionPanelListNamedRadio.expandedHeaderPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(vertical: 64.0 - $flutterSrcMaterialConstants.kMinInteractiveDimension)),
           dividerColor: (tree.materialExpansionPanelListNamedRadio.hasDividerColor() ? evaluateDartColorExpression(tree.materialExpansionPanelListNamedRadio.dividerColor) : null),
           elevation: (tree.materialExpansionPanelListNamedRadio.hasElevation() ? tree.materialExpansionPanelListNamedRadio.elevation : 2),
           expandIconColor: (tree.materialExpansionPanelListNamedRadio.hasExpandIconColor() ? evaluateDartColorExpression(tree.materialExpansionPanelListNamedRadio.expandIconColor) : null),
@@ -16882,7 +16882,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
           location: (tree.flutterBanner.hasLocation() ? enums.convertRequiredFlutterBannerLocation(tree.flutterBanner.location) : missing('location')),
           layoutDirection: (tree.flutterBanner.hasLayoutDirection() ? enums.convertDartTextDirection(tree.flutterBanner.layoutDirection) : null),
           color: (tree.flutterBanner.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBanner.color) : $dartUi.Color(0xA0B71C1C)),
-          textStyle: (tree.flutterBanner.hasTextStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterBanner.textStyle) : missing('textStyle')));
+          textStyle: (tree.flutterBanner.hasTextStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterBanner.textStyle) : $flutterSrcPaintingTextStyle.TextStyle(color: $dartUi.Color(0xFFFFFFFF), fontSize: 12.0 * 0.85, fontWeight: $dartUi.FontWeight.w900, height: 1.0)));
     case messages.FlutterStatelessWidgetExpression_Result.flutterCheckedModeBanner:
       return $flutterSrcWidgetsBanner.CheckedModeBanner(
           key: (tree.flutterCheckedModeBanner.hasKey() ? evaluateFlutterKeyExpression(tree.flutterCheckedModeBanner.key) : null),
@@ -23674,7 +23674,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           location: (tree.flutterBanner.hasLocation() ? enums.convertRequiredFlutterBannerLocation(tree.flutterBanner.location) : missing('location')),
           layoutDirection: (tree.flutterBanner.hasLayoutDirection() ? enums.convertDartTextDirection(tree.flutterBanner.layoutDirection) : null),
           color: (tree.flutterBanner.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBanner.color) : $dartUi.Color(0xA0B71C1C)),
-          textStyle: (tree.flutterBanner.hasTextStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterBanner.textStyle) : missing('textStyle')));
+          textStyle: (tree.flutterBanner.hasTextStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterBanner.textStyle) : $flutterSrcPaintingTextStyle.TextStyle(color: $dartUi.Color(0xFFFFFFFF), fontSize: 12.0 * 0.85, fontWeight: $dartUi.FontWeight.w900, height: 1.0)));
     case messages.WidgetExpression_Result.flutterBaseline:
       return $flutterSrcWidgetsBasic.Baseline(
           key: (tree.flutterBaseline.hasKey() ? evaluateFlutterKeyExpression(tree.flutterBaseline.key) : null),
@@ -26813,7 +26813,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           children: missing('children'),
           expansionCallback: null,
           animationDuration: (tree.materialExpansionPanelList.hasAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialExpansionPanelList.animationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
-          expandedHeaderPadding: (tree.materialExpansionPanelList.hasExpandedHeaderPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialExpansionPanelList.expandedHeaderPadding) : missing('expandedHeaderPadding')),
+          expandedHeaderPadding: (tree.materialExpansionPanelList.hasExpandedHeaderPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialExpansionPanelList.expandedHeaderPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(vertical: 64.0 - $flutterSrcMaterialConstants.kMinInteractiveDimension)),
           dividerColor: (tree.materialExpansionPanelList.hasDividerColor() ? evaluateDartColorExpression(tree.materialExpansionPanelList.dividerColor) : null),
           elevation: (tree.materialExpansionPanelList.hasElevation() ? tree.materialExpansionPanelList.elevation : 2),
           expandIconColor: (tree.materialExpansionPanelList.hasExpandIconColor() ? evaluateDartColorExpression(tree.materialExpansionPanelList.expandIconColor) : null),
@@ -26825,7 +26825,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           expansionCallback: null,
           animationDuration: (tree.materialExpansionPanelListNamedRadio.hasAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialExpansionPanelListNamedRadio.animationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
           initialOpenPanelValue: null,
-          expandedHeaderPadding: (tree.materialExpansionPanelListNamedRadio.hasExpandedHeaderPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialExpansionPanelListNamedRadio.expandedHeaderPadding) : missing('expandedHeaderPadding')),
+          expandedHeaderPadding: (tree.materialExpansionPanelListNamedRadio.hasExpandedHeaderPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialExpansionPanelListNamedRadio.expandedHeaderPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(vertical: 64.0 - $flutterSrcMaterialConstants.kMinInteractiveDimension)),
           dividerColor: (tree.materialExpansionPanelListNamedRadio.hasDividerColor() ? evaluateDartColorExpression(tree.materialExpansionPanelListNamedRadio.dividerColor) : null),
           elevation: (tree.materialExpansionPanelListNamedRadio.hasElevation() ? tree.materialExpansionPanelListNamedRadio.elevation : 2),
           expandIconColor: (tree.materialExpansionPanelListNamedRadio.hasExpandIconColor() ? evaluateDartColorExpression(tree.materialExpansionPanelListNamedRadio.expandIconColor) : null),

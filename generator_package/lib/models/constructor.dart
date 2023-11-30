@@ -20,7 +20,7 @@ class Constructor {
   final Set<InterfaceElement> constructingTypes;
   final Iterable<Parameter> parameters;
   final Uri importUri;
-  final String? importAlias;
+  final String importAlias;
 
   Constructor({
     required this.element,

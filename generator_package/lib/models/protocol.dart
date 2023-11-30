@@ -160,7 +160,7 @@ ${enumTypeMappings.map((m) => m.toDartEnumSwitchCase()).whereType<String>().join
       ...typeConstructors.values.flattened
           .expand((c) => c.parameters)
           .where((p) => p.typeMapping != null)
-          .expand((p) => p.defaultValueImports ?? <String>[]),
+          .expand((p) => p.defaultValueImports),
     };
 
     return '''

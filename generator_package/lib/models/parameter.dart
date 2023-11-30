@@ -20,7 +20,7 @@ class Parameter {
   final bool isNullable;
   final bool isGeneric;
   final bool hasNameCollision;
-  final List<String>? defaultValueImports;
+  final List<String> defaultValueImports;
   final String? defaultValueSource;
 
   Parameter({
@@ -39,7 +39,7 @@ class Parameter {
   factory Parameter.ofElement(int index, ParameterElement element) {
     final defaultValueExpression = element.toDefaultValueExpression();
     final (defaultValueImports, defaultValueSource) =
-        defaultValueExpression?.toReusableSource() ?? (null, null);
+        defaultValueExpression?.toReusableSource() ?? (<String>[], null);
 
     return Parameter(
       element: element,
