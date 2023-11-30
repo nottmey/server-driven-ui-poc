@@ -126,7 +126,7 @@ extension ToReusableSourceExtension on Expression {
         return _notSupported;
       } else {
         throw AssertionError(
-          'reference ${accessorElement?.name} was not a parsable default value',
+          'reference ${accessorElement?.name} is not a parsable default value',
         );
       }
     } else if (thisExpression is PrefixedIdentifier) {
@@ -152,7 +152,7 @@ extension ToReusableSourceExtension on Expression {
           );
         } else {
           throw AssertionError(
-            'identifier ${prefixElement.name}.${thisExpression.name} was not a parsable default value',
+            'identifier ${prefixElement.name}.${thisExpression.name} is not a parsable default value',
           );
         }
       } else if (staticAccessorElement is PropertyAccessorElement) {
@@ -161,7 +161,7 @@ extension ToReusableSourceExtension on Expression {
         return _copy(staticAccessorElement.variable);
       } else {
         throw AssertionError(
-          'identifier ${prefixElement.name}.${thisExpression.name} was not a parsable default value',
+          'identifier ${prefixElement.name}.${thisExpression.name} is not a parsable default value',
         );
       }
     } else if (thisExpression is InstanceCreationExpression) {
@@ -184,11 +184,17 @@ extension ToReusableSourceExtension on Expression {
         return _reference(accessorElement, classElement: typeElement);
       } else {
         throw AssertionError(
-          'enum access ${typeElement?.name}.${accessorElement?.name} was not a parsable default value',
+          'enum access ${typeElement?.name}.${accessorElement?.name} is not a parsable default value',
         );
       }
+    } else if (thisExpression is PrefixExpression) {
+      final (imports, source) = thisExpression.operand.toReusableSource();
+      if (source == null) {
+        return _notSupported;
+      }
+      return (imports, '${thisExpression.operator}$source');
+    } else {
+      throw AssertionError('expression $this is not a parsable default value');
     }
-    // TODO map more syntax
-    return _notSupported;
   }
 }

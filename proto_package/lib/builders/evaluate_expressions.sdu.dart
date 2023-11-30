@@ -19043,7 +19043,7 @@ $flutterSrcServicesTextInput.TextEditingValue? evaluateFlutterTextEditingValueEx
     case messages.FlutterTextEditingValueExpression_Result.flutterTextEditingValue:
       return $flutterSrcServicesTextInput.TextEditingValue(
           text: (tree.flutterTextEditingValue.hasText() ? tree.flutterTextEditingValue.text : ''),
-          selection: (tree.flutterTextEditingValue.hasSelection() ? evaluateRequiredFlutterTextSelectionExpression(tree.flutterTextEditingValue.selection) : missing('selection')),
+          selection: (tree.flutterTextEditingValue.hasSelection() ? evaluateRequiredFlutterTextSelectionExpression(tree.flutterTextEditingValue.selection) : $flutterSrcServicesTextEditing.TextSelection.collapsed(offset: -1)),
           composing: (tree.flutterTextEditingValue.hasComposing() ? evaluateRequiredDartTextRangeExpression(tree.flutterTextEditingValue.composing) : $dartUi.TextRange.empty));
     default:
       return null;
