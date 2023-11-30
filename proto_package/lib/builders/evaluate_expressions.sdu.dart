@@ -34,6 +34,7 @@ import 'package:flutter/src/cupertino/dialog.dart' as $flutterSrcCupertinoDialog
 import 'package:flutter/src/cupertino/form_row.dart' as $flutterSrcCupertinoFormRow;
 import 'package:flutter/src/cupertino/form_section.dart' as $flutterSrcCupertinoFormSection;
 import 'package:flutter/src/cupertino/icon_theme_data.dart' as $flutterSrcCupertinoIconThemeData;
+import 'package:flutter/src/cupertino/icons.dart' as $flutterSrcCupertinoIcons;
 import 'package:flutter/src/cupertino/interface_level.dart' as $flutterSrcCupertinoInterfaceLevel;
 import 'package:flutter/src/cupertino/list_section.dart' as $flutterSrcCupertinoListSection;
 import 'package:flutter/src/cupertino/list_tile.dart' as $flutterSrcCupertinoListTile;
@@ -1267,12 +1268,12 @@ $dartUi.Shadow? evaluateDartShadowExpression(messages.DartShadowExpression? tree
   switch (tree.whichResult()) {
     case messages.DartShadowExpression_Result.dartShadow:
       return $dartUi.Shadow(
-          color: (tree.dartShadow.hasColor() ? evaluateRequiredDartColorExpression(tree.dartShadow.color) : missing('color')),
+          color: (tree.dartShadow.hasColor() ? evaluateRequiredDartColorExpression(tree.dartShadow.color) : $dartUi.Color(0xFF000000)),
           offset: (tree.dartShadow.hasOffset() ? evaluateRequiredDartOffsetExpression(tree.dartShadow.offset) : $dartUi.Offset.zero),
           blurRadius: (tree.dartShadow.hasBlurRadius() ? tree.dartShadow.blurRadius : 0.0));
     case messages.DartShadowExpression_Result.flutterBoxShadow:
       return $flutterSrcPaintingBoxShadow.BoxShadow(
-          color: (tree.flutterBoxShadow.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBoxShadow.color) : missing('color')),
+          color: (tree.flutterBoxShadow.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBoxShadow.color) : $dartUi.Color(0xFF000000)),
           offset: (tree.flutterBoxShadow.hasOffset() ? evaluateRequiredDartOffsetExpression(tree.flutterBoxShadow.offset) : $dartUi.Offset.zero),
           blurRadius: (tree.flutterBoxShadow.hasBlurRadius() ? tree.flutterBoxShadow.blurRadius : 0.0),
           spreadRadius: (tree.flutterBoxShadow.hasSpreadRadius() ? tree.flutterBoxShadow.spreadRadius : 0.0),
@@ -1892,7 +1893,7 @@ $flutterSrcPaintingBoxBorder.Border? evaluateFlutterBorderExpression(messages.Fl
           left: (tree.flutterBorder.hasLeft() ? evaluateRequiredFlutterBorderSideExpression(tree.flutterBorder.left) : $flutterSrcPaintingBorders.BorderSide.none));
     case messages.FlutterBorderExpression_Result.flutterBorderNamedAll:
       return $flutterSrcPaintingBoxBorder.Border.all(
-          color: (tree.flutterBorderNamedAll.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBorderNamedAll.color) : missing('color')),
+          color: (tree.flutterBorderNamedAll.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBorderNamedAll.color) : $dartUi.Color(0xFF000000)),
           width: (tree.flutterBorderNamedAll.hasWidth() ? tree.flutterBorderNamedAll.width : 1.0),
           style: (tree.flutterBorderNamedAll.hasStyle() ? enums.convertRequiredFlutterBorderStyle(tree.flutterBorderNamedAll.style) : $flutterSrcPaintingBorders.BorderStyle.solid),
           strokeAlign: (tree.flutterBorderNamedAll.hasStrokeAlign() ? tree.flutterBorderNamedAll.strokeAlign : $flutterSrcPaintingBorders.BorderSide.strokeAlignInside));
@@ -2025,7 +2026,7 @@ $flutterSrcPaintingBorders.BorderSide? evaluateFlutterBorderSideExpression(messa
   switch (tree.whichResult()) {
     case messages.FlutterBorderSideExpression_Result.flutterBorderSide:
       return $flutterSrcPaintingBorders.BorderSide(
-          color: (tree.flutterBorderSide.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBorderSide.color) : missing('color')),
+          color: (tree.flutterBorderSide.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBorderSide.color) : $dartUi.Color(0xFF000000)),
           width: (tree.flutterBorderSide.hasWidth() ? tree.flutterBorderSide.width : 1.0),
           style: (tree.flutterBorderSide.hasStyle() ? enums.convertRequiredFlutterBorderStyle(tree.flutterBorderSide.style) : $flutterSrcPaintingBorders.BorderStyle.solid),
           strokeAlign: (tree.flutterBorderSide.hasStrokeAlign() ? tree.flutterBorderSide.strokeAlign : $flutterSrcPaintingBorders.BorderSide.strokeAlignInside));
@@ -2090,7 +2091,7 @@ $flutterSrcPaintingBoxBorder.BoxBorder? evaluateFlutterBoxBorderExpression(messa
           bottom: (tree.flutterBorderDirectional.hasBottom() ? evaluateRequiredFlutterBorderSideExpression(tree.flutterBorderDirectional.bottom) : $flutterSrcPaintingBorders.BorderSide.none));
     case messages.FlutterBoxBorderExpression_Result.flutterBorderNamedAll:
       return $flutterSrcPaintingBoxBorder.Border.all(
-          color: (tree.flutterBorderNamedAll.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBorderNamedAll.color) : missing('color')),
+          color: (tree.flutterBorderNamedAll.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBorderNamedAll.color) : $dartUi.Color(0xFF000000)),
           width: (tree.flutterBorderNamedAll.hasWidth() ? tree.flutterBorderNamedAll.width : 1.0),
           style: (tree.flutterBorderNamedAll.hasStyle() ? enums.convertRequiredFlutterBorderStyle(tree.flutterBorderNamedAll.style) : $flutterSrcPaintingBorders.BorderStyle.solid),
           strokeAlign: (tree.flutterBorderNamedAll.hasStrokeAlign() ? tree.flutterBorderNamedAll.strokeAlign : $flutterSrcPaintingBorders.BorderSide.strokeAlignInside));
@@ -2197,7 +2198,7 @@ $flutterSrcPaintingBoxShadow.BoxShadow? evaluateFlutterBoxShadowExpression(messa
   switch (tree.whichResult()) {
     case messages.FlutterBoxShadowExpression_Result.flutterBoxShadow:
       return $flutterSrcPaintingBoxShadow.BoxShadow(
-          color: (tree.flutterBoxShadow.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBoxShadow.color) : missing('color')),
+          color: (tree.flutterBoxShadow.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBoxShadow.color) : $dartUi.Color(0xFF000000)),
           offset: (tree.flutterBoxShadow.hasOffset() ? evaluateRequiredDartOffsetExpression(tree.flutterBoxShadow.offset) : $dartUi.Offset.zero),
           blurRadius: (tree.flutterBoxShadow.hasBlurRadius() ? tree.flutterBoxShadow.blurRadius : 0.0),
           spreadRadius: (tree.flutterBoxShadow.hasSpreadRadius() ? tree.flutterBoxShadow.spreadRadius : 0.0),
@@ -2301,7 +2302,7 @@ $flutterSrcRenderingCustomPaint.CustomPainter? evaluateFlutterCustomPainterExpre
           textDirection: (tree.flutterBannerPainter.hasTextDirection() ? enums.convertRequiredDartTextDirection(tree.flutterBannerPainter.textDirection) : missing('textDirection')),
           location: (tree.flutterBannerPainter.hasLocation() ? enums.convertRequiredFlutterBannerLocation(tree.flutterBannerPainter.location) : missing('location')),
           layoutDirection: (tree.flutterBannerPainter.hasLayoutDirection() ? enums.convertRequiredDartTextDirection(tree.flutterBannerPainter.layoutDirection) : missing('layoutDirection')),
-          color: (tree.flutterBannerPainter.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBannerPainter.color) : missing('color')),
+          color: (tree.flutterBannerPainter.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBannerPainter.color) : $dartUi.Color(0xA0B71C1C)),
           textStyle: (tree.flutterBannerPainter.hasTextStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterBannerPainter.textStyle) : missing('textStyle')));
     default:
       return null;
@@ -2335,7 +2336,7 @@ $flutterSrcPaintingDecoration.Decoration? evaluateFlutterDecorationExpression(me
           shape: (tree.flutterBoxDecoration.hasShape() ? enums.convertRequiredFlutterBoxShape(tree.flutterBoxDecoration.shape) : $flutterSrcPaintingBoxBorder.BoxShape.rectangle));
     case messages.FlutterDecorationExpression_Result.flutterFlutterLogoDecoration:
       return $flutterSrcPaintingFlutterLogo.FlutterLogoDecoration(
-          textColor: (tree.flutterFlutterLogoDecoration.hasTextColor() ? evaluateRequiredDartColorExpression(tree.flutterFlutterLogoDecoration.textColor) : missing('textColor')),
+          textColor: (tree.flutterFlutterLogoDecoration.hasTextColor() ? evaluateRequiredDartColorExpression(tree.flutterFlutterLogoDecoration.textColor) : $dartUi.Color(0xFF757575)),
           style: (tree.flutterFlutterLogoDecoration.hasStyle() ? enums.convertRequiredFlutterFlutterLogoStyle(tree.flutterFlutterLogoDecoration.style) : $flutterSrcPaintingFlutterLogo.FlutterLogoStyle.markOnly),
           margin: (tree.flutterFlutterLogoDecoration.hasMargin() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterFlutterLogoDecoration.margin) : $flutterSrcPaintingEdgeInsets.EdgeInsets.zero));
     case messages.FlutterDecorationExpression_Result.flutterMagnifierDecoration:
@@ -2356,7 +2357,7 @@ $flutterSrcPaintingDecoration.Decoration? evaluateFlutterDecorationExpression(me
     case messages.FlutterDecorationExpression_Result.materialUnderlineTabIndicator:
       return $flutterSrcMaterialTabIndicator.UnderlineTabIndicator(
           borderRadius: (tree.materialUnderlineTabIndicator.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.materialUnderlineTabIndicator.borderRadius) : null),
-          borderSide: (tree.materialUnderlineTabIndicator.hasBorderSide() ? evaluateRequiredFlutterBorderSideExpression(tree.materialUnderlineTabIndicator.borderSide) : missing('borderSide')),
+          borderSide: (tree.materialUnderlineTabIndicator.hasBorderSide() ? evaluateRequiredFlutterBorderSideExpression(tree.materialUnderlineTabIndicator.borderSide) : $flutterSrcPaintingBorders.BorderSide(width: 2.0, color: $flutterSrcMaterialColors.Colors.white)),
           insets: (tree.materialUnderlineTabIndicator.hasInsets() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialUnderlineTabIndicator.insets) : $flutterSrcPaintingEdgeInsets.EdgeInsets.zero));
     default:
       return null;
@@ -2460,7 +2461,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           actions: tree.cupertinoAlertDialog.actions.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           scrollController: (tree.cupertinoAlertDialog.hasScrollController() ? evaluateFlutterScrollControllerExpression(tree.cupertinoAlertDialog.scrollController) : null),
           actionScrollController: (tree.cupertinoAlertDialog.hasActionScrollController() ? evaluateFlutterScrollControllerExpression(tree.cupertinoAlertDialog.actionScrollController) : null),
-          insetAnimationDuration: (tree.cupertinoAlertDialog.hasInsetAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.cupertinoAlertDialog.insetAnimationDuration) : missing('insetAnimationDuration')),
+          insetAnimationDuration: (tree.cupertinoAlertDialog.hasInsetAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.cupertinoAlertDialog.insetAnimationDuration) : $dartCore.Duration(milliseconds: 100)),
           insetAnimationCurve: (tree.cupertinoAlertDialog.hasInsetAnimationCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.cupertinoAlertDialog.insetAnimationCurve) : $flutterSrcAnimationCurves.Curves.decelerate));
     case messages.FlutterDiagnosticableTreeExpression_Result.cupertinoApp:
       return $flutterSrcCupertinoApp.CupertinoApp(
@@ -2529,7 +2530,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           disabledColor: (tree.cupertinoButton.hasDisabledColor() ? evaluateRequiredDartColorExpression(tree.cupertinoButton.disabledColor) : $flutterSrcCupertinoColors.CupertinoColors.quaternarySystemFill),
           minSize: (tree.cupertinoButton.hasMinSize() ? tree.cupertinoButton.minSize : $flutterSrcCupertinoConstants.kMinInteractiveDimensionCupertino),
           pressedOpacity: (tree.cupertinoButton.hasPressedOpacity() ? tree.cupertinoButton.pressedOpacity : 0.4),
-          borderRadius: (tree.cupertinoButton.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.cupertinoButton.borderRadius) : null),
+          borderRadius: (tree.cupertinoButton.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.cupertinoButton.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.all($dartUi.Radius.circular(8.0))),
           alignment: (tree.cupertinoButton.hasAlignment() ? evaluateRequiredFlutterAlignmentGeometryExpression(tree.cupertinoButton.alignment) : $flutterSrcPaintingAlignment.Alignment.center),
           onPressed: null);
     case messages.FlutterDiagnosticableTreeExpression_Result.cupertinoButtonNamedFilled:
@@ -2540,7 +2541,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           disabledColor: (tree.cupertinoButtonNamedFilled.hasDisabledColor() ? evaluateRequiredDartColorExpression(tree.cupertinoButtonNamedFilled.disabledColor) : $flutterSrcCupertinoColors.CupertinoColors.quaternarySystemFill),
           minSize: (tree.cupertinoButtonNamedFilled.hasMinSize() ? tree.cupertinoButtonNamedFilled.minSize : $flutterSrcCupertinoConstants.kMinInteractiveDimensionCupertino),
           pressedOpacity: (tree.cupertinoButtonNamedFilled.hasPressedOpacity() ? tree.cupertinoButtonNamedFilled.pressedOpacity : 0.4),
-          borderRadius: (tree.cupertinoButtonNamedFilled.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.cupertinoButtonNamedFilled.borderRadius) : null),
+          borderRadius: (tree.cupertinoButtonNamedFilled.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.cupertinoButtonNamedFilled.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.all($dartUi.Radius.circular(8.0))),
           alignment: (tree.cupertinoButtonNamedFilled.hasAlignment() ? evaluateRequiredFlutterAlignmentGeometryExpression(tree.cupertinoButtonNamedFilled.alignment) : $flutterSrcPaintingAlignment.Alignment.center),
           onPressed: null);
     case messages.FlutterDiagnosticableTreeExpression_Result.cupertinoCheckbox:
@@ -2622,7 +2623,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           children: tree.cupertinoFormSectionNamedInsetGrouped.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           header: (tree.cupertinoFormSectionNamedInsetGrouped.hasHeader() ? evaluateWidgetExpression(tree.cupertinoFormSectionNamedInsetGrouped.header) : null),
           footer: (tree.cupertinoFormSectionNamedInsetGrouped.hasFooter() ? evaluateWidgetExpression(tree.cupertinoFormSectionNamedInsetGrouped.footer) : null),
-          margin: (tree.cupertinoFormSectionNamedInsetGrouped.hasMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoFormSectionNamedInsetGrouped.margin) : missing('margin')),
+          margin: (tree.cupertinoFormSectionNamedInsetGrouped.hasMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoFormSectionNamedInsetGrouped.margin) : $flutterSrcPaintingEdgeInsets.EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 10.0)),
           backgroundColor: (tree.cupertinoFormSectionNamedInsetGrouped.hasBackgroundColor() ? evaluateRequiredDartColorExpression(tree.cupertinoFormSectionNamedInsetGrouped.backgroundColor) : $flutterSrcCupertinoColors.CupertinoColors.systemGroupedBackground),
           decoration: (tree.cupertinoFormSectionNamedInsetGrouped.hasDecoration() ? evaluateFlutterBoxDecorationExpression(tree.cupertinoFormSectionNamedInsetGrouped.decoration) : null),
           clipBehavior: (tree.cupertinoFormSectionNamedInsetGrouped.hasClipBehavior() ? enums.convertRequiredDartClip(tree.cupertinoFormSectionNamedInsetGrouped.clipBehavior) : $dartUi.Clip.none));
@@ -2632,7 +2633,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           children: tree.cupertinoListSection.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           header: (tree.cupertinoListSection.hasHeader() ? evaluateWidgetExpression(tree.cupertinoListSection.header) : null),
           footer: (tree.cupertinoListSection.hasFooter() ? evaluateWidgetExpression(tree.cupertinoListSection.footer) : null),
-          margin: (tree.cupertinoListSection.hasMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoListSection.margin) : missing('margin')),
+          margin: (tree.cupertinoListSection.hasMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoListSection.margin) : $flutterSrcPaintingEdgeInsets.EdgeInsets.only(bottom: 8.0)),
           backgroundColor: (tree.cupertinoListSection.hasBackgroundColor() ? evaluateRequiredDartColorExpression(tree.cupertinoListSection.backgroundColor) : $flutterSrcCupertinoColors.CupertinoColors.systemGroupedBackground),
           decoration: (tree.cupertinoListSection.hasDecoration() ? evaluateFlutterBoxDecorationExpression(tree.cupertinoListSection.decoration) : null),
           clipBehavior: (tree.cupertinoListSection.hasClipBehavior() ? enums.convertRequiredDartClip(tree.cupertinoListSection.clipBehavior) : $dartUi.Clip.none),
@@ -2690,11 +2691,11 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
     case messages.FlutterDiagnosticableTreeExpression_Result.cupertinoMagnifier:
       return $flutterSrcCupertinoMagnifier.CupertinoMagnifier(
           key: (tree.cupertinoMagnifier.hasKey() ? evaluateFlutterKeyExpression(tree.cupertinoMagnifier.key) : null),
-          size: (tree.cupertinoMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.cupertinoMagnifier.size) : missing('size')),
-          borderRadius: (tree.cupertinoMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.cupertinoMagnifier.borderRadius) : missing('borderRadius')),
+          size: (tree.cupertinoMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.cupertinoMagnifier.size) : $dartUi.Size(80, 47.5)),
+          borderRadius: (tree.cupertinoMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.cupertinoMagnifier.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.all($dartUi.Radius.elliptical(60, 50))),
           additionalFocalPointOffset: (tree.cupertinoMagnifier.hasAdditionalFocalPointOffset() ? evaluateRequiredDartOffsetExpression(tree.cupertinoMagnifier.additionalFocalPointOffset) : $dartUi.Offset.zero),
           shadows: tree.cupertinoMagnifier.shadows.map((e) => evaluateRequiredFlutterBoxShadowExpression(e)).toList(),
-          borderSide: (tree.cupertinoMagnifier.hasBorderSide() ? evaluateRequiredFlutterBorderSideExpression(tree.cupertinoMagnifier.borderSide) : missing('borderSide')),
+          borderSide: (tree.cupertinoMagnifier.hasBorderSide() ? evaluateRequiredFlutterBorderSideExpression(tree.cupertinoMagnifier.borderSide) : $flutterSrcPaintingBorders.BorderSide(color: $dartUi.Color.fromARGB(255, 232, 232, 232))),
           inOutAnimation: null);
     case messages.FlutterDiagnosticableTreeExpression_Result.cupertinoNavigationBar:
       return $flutterSrcCupertinoNavBar.CupertinoNavigationBar(
@@ -2705,7 +2706,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           previousPageTitle: (tree.cupertinoNavigationBar.hasPreviousPageTitle() ? tree.cupertinoNavigationBar.previousPageTitle : null),
           middle: (tree.cupertinoNavigationBar.hasMiddle() ? evaluateWidgetExpression(tree.cupertinoNavigationBar.middle) : null),
           trailing: (tree.cupertinoNavigationBar.hasTrailing() ? evaluateWidgetExpression(tree.cupertinoNavigationBar.trailing) : null),
-          border: (tree.cupertinoNavigationBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoNavigationBar.border) : null),
+          border: (tree.cupertinoNavigationBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoNavigationBar.border) : $flutterSrcPaintingBoxBorder.Border(bottom: $flutterSrcPaintingBorders.BorderSide(color: $dartUi.Color(0x4D000000), width: 0.0))),
           backgroundColor: (tree.cupertinoNavigationBar.hasBackgroundColor() ? evaluateDartColorExpression(tree.cupertinoNavigationBar.backgroundColor) : null),
           brightness: (tree.cupertinoNavigationBar.hasBrightness() ? enums.convertDartBrightness(tree.cupertinoNavigationBar.brightness) : null),
           padding: (tree.cupertinoNavigationBar.hasPadding() ? evaluateFlutterEdgeInsetsDirectionalExpression(tree.cupertinoNavigationBar.padding) : null),
@@ -2736,7 +2737,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           itemExtent: (tree.cupertinoPicker.hasItemExtent() ? tree.cupertinoPicker.itemExtent : missing('itemExtent')),
           onSelectedItemChanged: null,
           children: tree.cupertinoPicker.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
-          selectionOverlay: (tree.cupertinoPicker.hasSelectionOverlay() ? evaluateWidgetExpression(tree.cupertinoPicker.selectionOverlay) : null),
+          selectionOverlay: (tree.cupertinoPicker.hasSelectionOverlay() ? evaluateWidgetExpression(tree.cupertinoPicker.selectionOverlay) : $flutterSrcCupertinoPicker.CupertinoPickerDefaultSelectionOverlay()),
           looping: (tree.cupertinoPicker.hasLooping() ? tree.cupertinoPicker.looping : false));
     case messages.FlutterDiagnosticableTreeExpression_Result.cupertinoPickerDefaultSelectionOverlay:
       return $flutterSrcCupertinoPicker.CupertinoPickerDefaultSelectionOverlay(
@@ -2774,13 +2775,13 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           backgroundColor: (tree.cupertinoSearchTextField.hasBackgroundColor() ? evaluateDartColorExpression(tree.cupertinoSearchTextField.backgroundColor) : null),
           borderRadius: (tree.cupertinoSearchTextField.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.cupertinoSearchTextField.borderRadius) : null),
           keyboardType: (tree.cupertinoSearchTextField.hasKeyboardType() ? evaluateFlutterTextInputTypeExpression(tree.cupertinoSearchTextField.keyboardType) : $flutterSrcServicesTextInput.TextInputType.text),
-          padding: (tree.cupertinoSearchTextField.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.padding) : missing('padding')),
+          padding: (tree.cupertinoSearchTextField.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsetsDirectional.fromSTEB(5.5, 8, 5.5, 8)),
           itemColor: (tree.cupertinoSearchTextField.hasItemColor() ? evaluateRequiredDartColorExpression(tree.cupertinoSearchTextField.itemColor) : $flutterSrcCupertinoColors.CupertinoColors.secondaryLabel),
           itemSize: (tree.cupertinoSearchTextField.hasItemSize() ? tree.cupertinoSearchTextField.itemSize : 20.0),
-          prefixInsets: (tree.cupertinoSearchTextField.hasPrefixInsets() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.prefixInsets) : missing('prefixInsets')),
-          prefixIcon: (tree.cupertinoSearchTextField.hasPrefixIcon() ? evaluateRequiredWidgetExpression(tree.cupertinoSearchTextField.prefixIcon) : missing('prefixIcon')),
-          suffixInsets: (tree.cupertinoSearchTextField.hasSuffixInsets() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.suffixInsets) : missing('suffixInsets')),
-          suffixIcon: (tree.cupertinoSearchTextField.hasSuffixIcon() ? evaluateRequiredFlutterIconExpression(tree.cupertinoSearchTextField.suffixIcon) : missing('suffixIcon')),
+          prefixInsets: (tree.cupertinoSearchTextField.hasPrefixInsets() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.prefixInsets) : $flutterSrcPaintingEdgeInsets.EdgeInsetsDirectional.fromSTEB(6, 0, 0, 3)),
+          prefixIcon: (tree.cupertinoSearchTextField.hasPrefixIcon() ? evaluateRequiredWidgetExpression(tree.cupertinoSearchTextField.prefixIcon) : $flutterSrcWidgetsIcon.Icon($flutterSrcCupertinoIcons.CupertinoIcons.search)),
+          suffixInsets: (tree.cupertinoSearchTextField.hasSuffixInsets() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.suffixInsets) : $flutterSrcPaintingEdgeInsets.EdgeInsetsDirectional.fromSTEB(0, 0, 5, 2)),
+          suffixIcon: (tree.cupertinoSearchTextField.hasSuffixIcon() ? evaluateRequiredFlutterIconExpression(tree.cupertinoSearchTextField.suffixIcon) : $flutterSrcWidgetsIcon.Icon($flutterSrcCupertinoIcons.CupertinoIcons.xmark_circle_fill)),
           suffixMode: (tree.cupertinoSearchTextField.hasSuffixMode() ? enums.convertRequiredOverlayVisibilityMode(tree.cupertinoSearchTextField.suffixMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.editing),
           onSuffixTap: null,
           restorationId: (tree.cupertinoSearchTextField.hasRestorationId() ? tree.cupertinoSearchTextField.restorationId : null),
@@ -2815,7 +2816,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           previousPageTitle: (tree.cupertinoSliverNavigationBar.hasPreviousPageTitle() ? tree.cupertinoSliverNavigationBar.previousPageTitle : null),
           middle: (tree.cupertinoSliverNavigationBar.hasMiddle() ? evaluateWidgetExpression(tree.cupertinoSliverNavigationBar.middle) : null),
           trailing: (tree.cupertinoSliverNavigationBar.hasTrailing() ? evaluateWidgetExpression(tree.cupertinoSliverNavigationBar.trailing) : null),
-          border: (tree.cupertinoSliverNavigationBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoSliverNavigationBar.border) : null),
+          border: (tree.cupertinoSliverNavigationBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoSliverNavigationBar.border) : $flutterSrcPaintingBoxBorder.Border(bottom: $flutterSrcPaintingBorders.BorderSide(color: $dartUi.Color(0x4D000000), width: 0.0))),
           backgroundColor: (tree.cupertinoSliverNavigationBar.hasBackgroundColor() ? evaluateDartColorExpression(tree.cupertinoSliverNavigationBar.backgroundColor) : null),
           brightness: (tree.cupertinoSliverNavigationBar.hasBrightness() ? enums.convertDartBrightness(tree.cupertinoSliverNavigationBar.brightness) : null),
           padding: (tree.cupertinoSliverNavigationBar.hasPadding() ? evaluateFlutterEdgeInsetsDirectionalExpression(tree.cupertinoSliverNavigationBar.padding) : null),
@@ -2864,7 +2865,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           inactiveColor: (tree.cupertinoTabBar.hasInactiveColor() ? evaluateRequiredDartColorExpression(tree.cupertinoTabBar.inactiveColor) : $flutterSrcCupertinoColors.CupertinoColors.inactiveGray),
           iconSize: (tree.cupertinoTabBar.hasIconSize() ? tree.cupertinoTabBar.iconSize : 30.0),
           height: (tree.cupertinoTabBar.hasHeight() ? tree.cupertinoTabBar.height : 50.0),
-          border: (tree.cupertinoTabBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoTabBar.border) : null));
+          border: (tree.cupertinoTabBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoTabBar.border) : $flutterSrcPaintingBoxBorder.Border(top: $flutterSrcPaintingBorders.BorderSide(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $dartUi.Color(0x4D000000), darkColor: $dartUi.Color(0x29000000)), width: 0.0))));
     case messages.FlutterDiagnosticableTreeExpression_Result.cupertinoTabView:
       return $flutterSrcCupertinoTabView.CupertinoTabView(
           key: (tree.cupertinoTabView.hasKey() ? evaluateFlutterKeyExpression(tree.cupertinoTabView.key) : null),
@@ -2882,10 +2883,10 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           controller: (tree.cupertinoTextField.hasController() ? evaluateFlutterTextEditingControllerExpression(tree.cupertinoTextField.controller) : null),
           focusNode: (tree.cupertinoTextField.hasFocusNode() ? evaluateFlutterFocusNodeExpression(tree.cupertinoTextField.focusNode) : null),
           undoController: (tree.cupertinoTextField.hasUndoController() ? evaluateFlutterUndoHistoryControllerExpression(tree.cupertinoTextField.undoController) : null),
-          decoration: (tree.cupertinoTextField.hasDecoration() ? evaluateFlutterBoxDecorationExpression(tree.cupertinoTextField.decoration) : null),
-          padding: (tree.cupertinoTextField.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoTextField.padding) : missing('padding')),
+          decoration: (tree.cupertinoTextField.hasDecoration() ? evaluateFlutterBoxDecorationExpression(tree.cupertinoTextField.decoration) : $flutterSrcPaintingBoxDecoration.BoxDecoration(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $flutterSrcCupertinoColors.CupertinoColors.white, darkColor: $flutterSrcCupertinoColors.CupertinoColors.black), border: $flutterSrcPaintingBoxBorder.Border(top: $flutterSrcPaintingBorders.BorderSide(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $dartUi.Color(0x33000000), darkColor: $dartUi.Color(0x33FFFFFF)), width: 0.0), bottom: $flutterSrcPaintingBorders.BorderSide(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $dartUi.Color(0x33000000), darkColor: $dartUi.Color(0x33FFFFFF)), width: 0.0), left: $flutterSrcPaintingBorders.BorderSide(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $dartUi.Color(0x33000000), darkColor: $dartUi.Color(0x33FFFFFF)), width: 0.0), right: $flutterSrcPaintingBorders.BorderSide(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $dartUi.Color(0x33000000), darkColor: $dartUi.Color(0x33FFFFFF)), width: 0.0)), borderRadius: $flutterSrcPaintingBorderRadius.BorderRadius.all($dartUi.Radius.circular(5.0)))),
+          padding: (tree.cupertinoTextField.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoTextField.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(7.0)),
           placeholder: (tree.cupertinoTextField.hasPlaceholder() ? tree.cupertinoTextField.placeholder : null),
-          placeholderStyle: (tree.cupertinoTextField.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextField.placeholderStyle) : null),
+          placeholderStyle: (tree.cupertinoTextField.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextField.placeholderStyle) : $flutterSrcPaintingTextStyle.TextStyle(fontWeight: $dartUi.FontWeight.w400, color: $flutterSrcCupertinoColors.CupertinoColors.placeholderText)),
           prefix: (tree.cupertinoTextField.hasPrefix() ? evaluateWidgetExpression(tree.cupertinoTextField.prefix) : null),
           prefixMode: (tree.cupertinoTextField.hasPrefixMode() ? enums.convertRequiredOverlayVisibilityMode(tree.cupertinoTextField.prefixMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.always),
           suffix: (tree.cupertinoTextField.hasSuffix() ? evaluateWidgetExpression(tree.cupertinoTextField.suffix) : null),
@@ -2921,13 +2922,13 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           enabled: (tree.cupertinoTextField.hasEnabled() ? tree.cupertinoTextField.enabled : true),
           cursorWidth: (tree.cupertinoTextField.hasCursorWidth() ? tree.cupertinoTextField.cursorWidth : 2.0),
           cursorHeight: (tree.cupertinoTextField.hasCursorHeight() ? tree.cupertinoTextField.cursorHeight : null),
-          cursorRadius: (tree.cupertinoTextField.hasCursorRadius() ? evaluateRequiredDartRadiusExpression(tree.cupertinoTextField.cursorRadius) : missing('cursorRadius')),
+          cursorRadius: (tree.cupertinoTextField.hasCursorRadius() ? evaluateRequiredDartRadiusExpression(tree.cupertinoTextField.cursorRadius) : $dartUi.Radius.circular(2.0)),
           cursorOpacityAnimates: (tree.cupertinoTextField.hasCursorOpacityAnimates() ? tree.cupertinoTextField.cursorOpacityAnimates : true),
           cursorColor: (tree.cupertinoTextField.hasCursorColor() ? evaluateDartColorExpression(tree.cupertinoTextField.cursorColor) : null),
           selectionHeightStyle: (tree.cupertinoTextField.hasSelectionHeightStyle() ? enums.convertRequiredDartBoxHeightStyle(tree.cupertinoTextField.selectionHeightStyle) : missing('selectionHeightStyle')),
           selectionWidthStyle: (tree.cupertinoTextField.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyle(tree.cupertinoTextField.selectionWidthStyle) : missing('selectionWidthStyle')),
           keyboardAppearance: (tree.cupertinoTextField.hasKeyboardAppearance() ? enums.convertDartBrightness(tree.cupertinoTextField.keyboardAppearance) : null),
-          scrollPadding: (tree.cupertinoTextField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextField.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.cupertinoTextField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextField.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           dragStartBehavior: (tree.cupertinoTextField.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehavior(tree.cupertinoTextField.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           enableInteractiveSelection: (tree.cupertinoTextField.hasEnableInteractiveSelection() ? tree.cupertinoTextField.enableInteractiveSelection : null),
           selectionControls: (tree.cupertinoTextField.hasSelectionControls() ? evaluateFlutterTextSelectionControlsExpression(tree.cupertinoTextField.selectionControls) : null),
@@ -2950,9 +2951,9 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           focusNode: (tree.cupertinoTextFieldNamedBorderless.hasFocusNode() ? evaluateFlutterFocusNodeExpression(tree.cupertinoTextFieldNamedBorderless.focusNode) : null),
           undoController: (tree.cupertinoTextFieldNamedBorderless.hasUndoController() ? evaluateFlutterUndoHistoryControllerExpression(tree.cupertinoTextFieldNamedBorderless.undoController) : null),
           decoration: (tree.cupertinoTextFieldNamedBorderless.hasDecoration() ? evaluateFlutterBoxDecorationExpression(tree.cupertinoTextFieldNamedBorderless.decoration) : null),
-          padding: (tree.cupertinoTextFieldNamedBorderless.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoTextFieldNamedBorderless.padding) : missing('padding')),
+          padding: (tree.cupertinoTextFieldNamedBorderless.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoTextFieldNamedBorderless.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(7.0)),
           placeholder: (tree.cupertinoTextFieldNamedBorderless.hasPlaceholder() ? tree.cupertinoTextFieldNamedBorderless.placeholder : null),
-          placeholderStyle: (tree.cupertinoTextFieldNamedBorderless.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextFieldNamedBorderless.placeholderStyle) : null),
+          placeholderStyle: (tree.cupertinoTextFieldNamedBorderless.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextFieldNamedBorderless.placeholderStyle) : $flutterSrcPaintingTextStyle.TextStyle(fontWeight: $dartUi.FontWeight.w400, color: $flutterSrcCupertinoColors.CupertinoColors.placeholderText)),
           prefix: (tree.cupertinoTextFieldNamedBorderless.hasPrefix() ? evaluateWidgetExpression(tree.cupertinoTextFieldNamedBorderless.prefix) : null),
           prefixMode: (tree.cupertinoTextFieldNamedBorderless.hasPrefixMode() ? enums.convertRequiredOverlayVisibilityMode(tree.cupertinoTextFieldNamedBorderless.prefixMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.always),
           suffix: (tree.cupertinoTextFieldNamedBorderless.hasSuffix() ? evaluateWidgetExpression(tree.cupertinoTextFieldNamedBorderless.suffix) : null),
@@ -2988,13 +2989,13 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           enabled: (tree.cupertinoTextFieldNamedBorderless.hasEnabled() ? tree.cupertinoTextFieldNamedBorderless.enabled : true),
           cursorWidth: (tree.cupertinoTextFieldNamedBorderless.hasCursorWidth() ? tree.cupertinoTextFieldNamedBorderless.cursorWidth : 2.0),
           cursorHeight: (tree.cupertinoTextFieldNamedBorderless.hasCursorHeight() ? tree.cupertinoTextFieldNamedBorderless.cursorHeight : null),
-          cursorRadius: (tree.cupertinoTextFieldNamedBorderless.hasCursorRadius() ? evaluateRequiredDartRadiusExpression(tree.cupertinoTextFieldNamedBorderless.cursorRadius) : missing('cursorRadius')),
+          cursorRadius: (tree.cupertinoTextFieldNamedBorderless.hasCursorRadius() ? evaluateRequiredDartRadiusExpression(tree.cupertinoTextFieldNamedBorderless.cursorRadius) : $dartUi.Radius.circular(2.0)),
           cursorOpacityAnimates: (tree.cupertinoTextFieldNamedBorderless.hasCursorOpacityAnimates() ? tree.cupertinoTextFieldNamedBorderless.cursorOpacityAnimates : true),
           cursorColor: (tree.cupertinoTextFieldNamedBorderless.hasCursorColor() ? evaluateDartColorExpression(tree.cupertinoTextFieldNamedBorderless.cursorColor) : null),
           selectionHeightStyle: (tree.cupertinoTextFieldNamedBorderless.hasSelectionHeightStyle() ? enums.convertRequiredDartBoxHeightStyle(tree.cupertinoTextFieldNamedBorderless.selectionHeightStyle) : missing('selectionHeightStyle')),
           selectionWidthStyle: (tree.cupertinoTextFieldNamedBorderless.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyle(tree.cupertinoTextFieldNamedBorderless.selectionWidthStyle) : missing('selectionWidthStyle')),
           keyboardAppearance: (tree.cupertinoTextFieldNamedBorderless.hasKeyboardAppearance() ? enums.convertDartBrightness(tree.cupertinoTextFieldNamedBorderless.keyboardAppearance) : null),
-          scrollPadding: (tree.cupertinoTextFieldNamedBorderless.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextFieldNamedBorderless.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.cupertinoTextFieldNamedBorderless.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextFieldNamedBorderless.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           dragStartBehavior: (tree.cupertinoTextFieldNamedBorderless.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehavior(tree.cupertinoTextFieldNamedBorderless.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           enableInteractiveSelection: (tree.cupertinoTextFieldNamedBorderless.hasEnableInteractiveSelection() ? tree.cupertinoTextFieldNamedBorderless.enableInteractiveSelection : null),
           selectionControls: (tree.cupertinoTextFieldNamedBorderless.hasSelectionControls() ? evaluateFlutterTextSelectionControlsExpression(tree.cupertinoTextFieldNamedBorderless.selectionControls) : null),
@@ -3052,14 +3053,14 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           cursorHeight: (tree.cupertinoTextFormFieldRow.hasCursorHeight() ? tree.cupertinoTextFormFieldRow.cursorHeight : null),
           cursorColor: (tree.cupertinoTextFormFieldRow.hasCursorColor() ? evaluateDartColorExpression(tree.cupertinoTextFormFieldRow.cursorColor) : null),
           keyboardAppearance: (tree.cupertinoTextFormFieldRow.hasKeyboardAppearance() ? enums.convertDartBrightness(tree.cupertinoTextFormFieldRow.keyboardAppearance) : null),
-          scrollPadding: (tree.cupertinoTextFormFieldRow.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextFormFieldRow.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.cupertinoTextFormFieldRow.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextFormFieldRow.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           enableInteractiveSelection: (tree.cupertinoTextFormFieldRow.hasEnableInteractiveSelection() ? tree.cupertinoTextFormFieldRow.enableInteractiveSelection : true),
           selectionControls: (tree.cupertinoTextFormFieldRow.hasSelectionControls() ? evaluateFlutterTextSelectionControlsExpression(tree.cupertinoTextFormFieldRow.selectionControls) : null),
           scrollPhysics: (tree.cupertinoTextFormFieldRow.hasScrollPhysics() ? evaluateFlutterScrollPhysicsExpression(tree.cupertinoTextFormFieldRow.scrollPhysics) : null),
           autofillHints: tree.cupertinoTextFormFieldRow.autofillHints,
           autovalidateMode: (tree.cupertinoTextFormFieldRow.hasAutovalidateMode() ? enums.convertRequiredFlutterAutovalidateMode(tree.cupertinoTextFormFieldRow.autovalidateMode) : missing('autovalidateMode')),
           placeholder: (tree.cupertinoTextFormFieldRow.hasPlaceholder() ? tree.cupertinoTextFormFieldRow.placeholder : null),
-          placeholderStyle: (tree.cupertinoTextFormFieldRow.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextFormFieldRow.placeholderStyle) : null),
+          placeholderStyle: (tree.cupertinoTextFormFieldRow.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextFormFieldRow.placeholderStyle) : $flutterSrcPaintingTextStyle.TextStyle(fontWeight: $dartUi.FontWeight.w400, color: $flutterSrcCupertinoColors.CupertinoColors.placeholderText)),
           contextMenuBuilder: null);
     case messages.FlutterDiagnosticableTreeExpression_Result.cupertinoTextSelectionToolbar:
       return $flutterSrcCupertinoTextSelectionToolbar.CupertinoTextSelectionToolbar(
@@ -3331,7 +3332,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           textDirection: (tree.flutterBanner.hasTextDirection() ? enums.convertDartTextDirection(tree.flutterBanner.textDirection) : null),
           location: (tree.flutterBanner.hasLocation() ? enums.convertRequiredFlutterBannerLocation(tree.flutterBanner.location) : missing('location')),
           layoutDirection: (tree.flutterBanner.hasLayoutDirection() ? enums.convertDartTextDirection(tree.flutterBanner.layoutDirection) : null),
-          color: (tree.flutterBanner.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBanner.color) : missing('color')),
+          color: (tree.flutterBanner.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBanner.color) : $dartUi.Color(0xA0B71C1C)),
           textStyle: (tree.flutterBanner.hasTextStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterBanner.textStyle) : missing('textStyle')));
     case messages.FlutterDiagnosticableTreeExpression_Result.flutterBaseline:
       return $flutterSrcWidgetsBasic.Baseline(
@@ -3562,8 +3563,8 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           onUpdate: null,
           onDismissed: null,
           direction: (tree.flutterDismissible.hasDirection() ? enums.convertRequiredFlutterDismissDirection(tree.flutterDismissible.direction) : $flutterSrcWidgetsDismissible.DismissDirection.horizontal),
-          resizeDuration: (tree.flutterDismissible.hasResizeDuration() ? evaluateDartDurationExpression(tree.flutterDismissible.resizeDuration) : null),
-          movementDuration: (tree.flutterDismissible.hasMovementDuration() ? evaluateRequiredDartDurationExpression(tree.flutterDismissible.movementDuration) : missing('movementDuration')),
+          resizeDuration: (tree.flutterDismissible.hasResizeDuration() ? evaluateDartDurationExpression(tree.flutterDismissible.resizeDuration) : $dartCore.Duration(milliseconds: 300)),
+          movementDuration: (tree.flutterDismissible.hasMovementDuration() ? evaluateRequiredDartDurationExpression(tree.flutterDismissible.movementDuration) : $dartCore.Duration(milliseconds: 200)),
           crossAxisEndOffset: (tree.flutterDismissible.hasCrossAxisEndOffset() ? tree.flutterDismissible.crossAxisEndOffset : 0.0),
           dragStartBehavior: (tree.flutterDismissible.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehavior(tree.flutterDismissible.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           behavior: (tree.flutterDismissible.hasBehavior() ? enums.convertRequiredFlutterHitTestBehavior(tree.flutterDismissible.behavior) : $flutterSrcRenderingProxyBox.HitTestBehavior.opaque));
@@ -3657,7 +3658,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           paintCursorAboveText: (tree.flutterEditableText.hasPaintCursorAboveText() ? tree.flutterEditableText.paintCursorAboveText : false),
           selectionHeightStyle: (tree.flutterEditableText.hasSelectionHeightStyle() ? enums.convertRequiredDartBoxHeightStyle(tree.flutterEditableText.selectionHeightStyle) : missing('selectionHeightStyle')),
           selectionWidthStyle: (tree.flutterEditableText.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyle(tree.flutterEditableText.selectionWidthStyle) : missing('selectionWidthStyle')),
-          scrollPadding: (tree.flutterEditableText.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterEditableText.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.flutterEditableText.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterEditableText.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           keyboardAppearance: (tree.flutterEditableText.hasKeyboardAppearance() ? enums.convertRequiredDartBrightness(tree.flutterEditableText.keyboardAppearance) : $dartUi.Brightness.light),
           dragStartBehavior: (tree.flutterEditableText.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehavior(tree.flutterEditableText.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           enableInteractiveSelection: (tree.flutterEditableText.hasEnableInteractiveSelection() ? tree.flutterEditableText.enableInteractiveSelection : null),
@@ -3712,9 +3713,9 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           imageScale: (tree.flutterFadeInImageNamedAssetNetwork.hasImageScale() ? tree.flutterFadeInImageNamedAssetNetwork.imageScale : 1.0),
           excludeFromSemantics: (tree.flutterFadeInImageNamedAssetNetwork.hasExcludeFromSemantics() ? tree.flutterFadeInImageNamedAssetNetwork.excludeFromSemantics : false),
           imageSemanticLabel: (tree.flutterFadeInImageNamedAssetNetwork.hasImageSemanticLabel() ? tree.flutterFadeInImageNamedAssetNetwork.imageSemanticLabel : null),
-          fadeOutDuration: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeOutDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeOutDuration) : missing('fadeOutDuration')),
+          fadeOutDuration: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeOutDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeOutDuration) : $dartCore.Duration(milliseconds: 300)),
           fadeOutCurve: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeOutCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeOutCurve) : $flutterSrcAnimationCurves.Curves.easeOut),
-          fadeInDuration: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeInDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeInDuration) : missing('fadeInDuration')),
+          fadeInDuration: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeInDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeInDuration) : $dartCore.Duration(milliseconds: 700)),
           fadeInCurve: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeInCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeInCurve) : $flutterSrcAnimationCurves.Curves.easeIn),
           width: (tree.flutterFadeInImageNamedAssetNetwork.hasWidth() ? tree.flutterFadeInImageNamedAssetNetwork.width : null),
           height: (tree.flutterFadeInImageNamedAssetNetwork.hasHeight() ? tree.flutterFadeInImageNamedAssetNetwork.height : null),
@@ -3740,9 +3741,9 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           imageScale: (tree.flutterFadeInImageNamedMemoryNetwork.hasImageScale() ? tree.flutterFadeInImageNamedMemoryNetwork.imageScale : 1.0),
           excludeFromSemantics: (tree.flutterFadeInImageNamedMemoryNetwork.hasExcludeFromSemantics() ? tree.flutterFadeInImageNamedMemoryNetwork.excludeFromSemantics : false),
           imageSemanticLabel: (tree.flutterFadeInImageNamedMemoryNetwork.hasImageSemanticLabel() ? tree.flutterFadeInImageNamedMemoryNetwork.imageSemanticLabel : null),
-          fadeOutDuration: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeOutDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeOutDuration) : missing('fadeOutDuration')),
+          fadeOutDuration: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeOutDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeOutDuration) : $dartCore.Duration(milliseconds: 300)),
           fadeOutCurve: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeOutCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeOutCurve) : $flutterSrcAnimationCurves.Curves.easeOut),
-          fadeInDuration: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeInDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeInDuration) : missing('fadeInDuration')),
+          fadeInDuration: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeInDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeInDuration) : $dartCore.Duration(milliseconds: 700)),
           fadeInCurve: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeInCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeInCurve) : $flutterSrcAnimationCurves.Curves.easeIn),
           width: (tree.flutterFadeInImageNamedMemoryNetwork.hasWidth() ? tree.flutterFadeInImageNamedMemoryNetwork.width : null),
           height: (tree.flutterFadeInImageNamedMemoryNetwork.hasHeight() ? tree.flutterFadeInImageNamedMemoryNetwork.height : null),
@@ -4006,7 +4007,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
     case messages.FlutterDiagnosticableTreeExpression_Result.flutterGridPaper:
       return $flutterSrcWidgetsGridPaper.GridPaper(
           key: (tree.flutterGridPaper.hasKey() ? evaluateFlutterKeyExpression(tree.flutterGridPaper.key) : null),
-          color: (tree.flutterGridPaper.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterGridPaper.color) : missing('color')),
+          color: (tree.flutterGridPaper.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterGridPaper.color) : $dartUi.Color(0x7FC3E8F3)),
           interval: (tree.flutterGridPaper.hasInterval() ? tree.flutterGridPaper.interval : 100.0),
           divisions: (tree.flutterGridPaper.hasDivisions() ? tree.flutterGridPaper.divisions : 2),
           subdivisions: (tree.flutterGridPaper.hasSubdivisions() ? tree.flutterGridPaper.subdivisions : 5),
@@ -4751,7 +4752,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           borderRadius: (tree.flutterPhysicalModel.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.flutterPhysicalModel.borderRadius) : null),
           elevation: (tree.flutterPhysicalModel.hasElevation() ? tree.flutterPhysicalModel.elevation : 0.0),
           color: (tree.flutterPhysicalModel.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterPhysicalModel.color) : missing('color')),
-          shadowColor: (tree.flutterPhysicalModel.hasShadowColor() ? evaluateRequiredDartColorExpression(tree.flutterPhysicalModel.shadowColor) : missing('shadowColor')),
+          shadowColor: (tree.flutterPhysicalModel.hasShadowColor() ? evaluateRequiredDartColorExpression(tree.flutterPhysicalModel.shadowColor) : $dartUi.Color(0xFF000000)),
           child: (tree.flutterPhysicalModel.hasChild() ? evaluateWidgetExpression(tree.flutterPhysicalModel.child) : null));
     case messages.FlutterDiagnosticableTreeExpression_Result.flutterPictureLayer:
       return $flutterSrcRenderingLayer.PictureLayer(
@@ -4765,7 +4766,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
     case messages.FlutterDiagnosticableTreeExpression_Result.flutterPlaceholder:
       return $flutterSrcWidgetsPlaceholder.Placeholder(
           key: (tree.flutterPlaceholder.hasKey() ? evaluateFlutterKeyExpression(tree.flutterPlaceholder.key) : null),
-          color: (tree.flutterPlaceholder.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterPlaceholder.color) : missing('color')),
+          color: (tree.flutterPlaceholder.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterPlaceholder.color) : $dartUi.Color(0xFF455A64)),
           strokeWidth: (tree.flutterPlaceholder.hasStrokeWidth() ? tree.flutterPlaceholder.strokeWidth : 2.0),
           fallbackWidth: (tree.flutterPlaceholder.hasFallbackWidth() ? tree.flutterPlaceholder.fallbackWidth : 400.0),
           fallbackHeight: (tree.flutterPlaceholder.hasFallbackHeight() ? tree.flutterPlaceholder.fallbackHeight : 400.0),
@@ -4904,7 +4905,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
       return $flutterSrcWidgetsMagnifier.RawMagnifier(
           key: (tree.flutterRawMagnifier.hasKey() ? evaluateFlutterKeyExpression(tree.flutterRawMagnifier.key) : null),
           child: (tree.flutterRawMagnifier.hasChild() ? evaluateWidgetExpression(tree.flutterRawMagnifier.child) : null),
-          decoration: (tree.flutterRawMagnifier.hasDecoration() ? evaluateRequiredFlutterMagnifierDecorationExpression(tree.flutterRawMagnifier.decoration) : missing('decoration')),
+          decoration: (tree.flutterRawMagnifier.hasDecoration() ? evaluateRequiredFlutterMagnifierDecorationExpression(tree.flutterRawMagnifier.decoration) : $flutterSrcWidgetsMagnifier.MagnifierDecoration()),
           focalPointOffset: (tree.flutterRawMagnifier.hasFocalPointOffset() ? evaluateRequiredDartOffsetExpression(tree.flutterRawMagnifier.focalPointOffset) : $dartUi.Offset.zero),
           magnificationScale: (tree.flutterRawMagnifier.hasMagnificationScale() ? tree.flutterRawMagnifier.magnificationScale : 1),
           size: (tree.flutterRawMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.flutterRawMagnifier.size) : missing('size')));
@@ -4924,8 +4925,8 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           trackRadius: (tree.flutterRawScrollbar.hasTrackRadius() ? evaluateDartRadiusExpression(tree.flutterRawScrollbar.trackRadius) : null),
           trackColor: (tree.flutterRawScrollbar.hasTrackColor() ? evaluateDartColorExpression(tree.flutterRawScrollbar.trackColor) : null),
           trackBorderColor: (tree.flutterRawScrollbar.hasTrackBorderColor() ? evaluateDartColorExpression(tree.flutterRawScrollbar.trackBorderColor) : null),
-          fadeDuration: (tree.flutterRawScrollbar.hasFadeDuration() ? evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.fadeDuration) : missing('fadeDuration')),
-          timeToFade: (tree.flutterRawScrollbar.hasTimeToFade() ? evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.timeToFade) : missing('timeToFade')),
+          fadeDuration: (tree.flutterRawScrollbar.hasFadeDuration() ? evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.fadeDuration) : $dartCore.Duration(milliseconds: 300)),
+          timeToFade: (tree.flutterRawScrollbar.hasTimeToFade() ? evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.timeToFade) : $dartCore.Duration(milliseconds: 600)),
           pressDuration: (tree.flutterRawScrollbar.hasPressDuration() ? evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.pressDuration) : $dartCore.Duration.zero),
           interactive: (tree.flutterRawScrollbar.hasInteractive() ? tree.flutterRawScrollbar.interactive : null),
           scrollbarOrientation: (tree.flutterRawScrollbar.hasScrollbarOrientation() ? enums.convertFlutterScrollbarOrientation(tree.flutterRawScrollbar.scrollbarOrientation) : null),
@@ -5356,7 +5357,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           columns: (tree.flutterRenderTable.hasColumns() ? tree.flutterRenderTable.columns : null),
           rows: (tree.flutterRenderTable.hasRows() ? tree.flutterRenderTable.rows : null),
           columnWidths: null,
-          defaultColumnWidth: (tree.flutterRenderTable.hasDefaultColumnWidth() ? evaluateRequiredFlutterTableColumnWidthExpression(tree.flutterRenderTable.defaultColumnWidth) : missing('defaultColumnWidth')),
+          defaultColumnWidth: (tree.flutterRenderTable.hasDefaultColumnWidth() ? evaluateRequiredFlutterTableColumnWidthExpression(tree.flutterRenderTable.defaultColumnWidth) : $flutterSrcRenderingTable.FlexColumnWidth()),
           textDirection: (tree.flutterRenderTable.hasTextDirection() ? enums.convertRequiredDartTextDirection(tree.flutterRenderTable.textDirection) : missing('textDirection')),
           border: (tree.flutterRenderTable.hasBorder() ? evaluateFlutterTableBorderExpression(tree.flutterRenderTable.border) : null),
           rowDecorations: tree.flutterRenderTable.rowDecorations.map((e) => evaluateRequiredFlutterDecorationExpression(e)).toList(),
@@ -5605,7 +5606,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
       return $flutterSrcWidgetsSemanticsDebugger.SemanticsDebugger(
           key: (tree.flutterSemanticsDebugger.hasKey() ? evaluateFlutterKeyExpression(tree.flutterSemanticsDebugger.key) : null),
           child: (tree.flutterSemanticsDebugger.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterSemanticsDebugger.child) : missing('child')),
-          labelStyle: (tree.flutterSemanticsDebugger.hasLabelStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterSemanticsDebugger.labelStyle) : missing('labelStyle')));
+          labelStyle: (tree.flutterSemanticsDebugger.hasLabelStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterSemanticsDebugger.labelStyle) : $flutterSrcPaintingTextStyle.TextStyle(color: $dartUi.Color(0xFF000000), fontSize: 10.0, height: 0.8)));
     case messages.FlutterDiagnosticableTreeExpression_Result.flutterSemanticsNamedFromProperties:
       return $flutterSrcWidgetsBasic.Semantics.fromProperties(
           key: (tree.flutterSemanticsNamedFromProperties.hasKey() ? evaluateFlutterKeyExpression(tree.flutterSemanticsNamedFromProperties.key) : null),
@@ -5853,7 +5854,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
       return $flutterSrcWidgetsVisibility.SliverVisibility(
           key: (tree.flutterSliverVisibility.hasKey() ? evaluateFlutterKeyExpression(tree.flutterSliverVisibility.key) : null),
           sliver: (tree.flutterSliverVisibility.hasSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibility.sliver) : missing('sliver')),
-          replacementSliver: (tree.flutterSliverVisibility.hasReplacementSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibility.replacementSliver) : missing('replacementSliver')),
+          replacementSliver: (tree.flutterSliverVisibility.hasReplacementSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibility.replacementSliver) : $flutterSrcWidgetsBasic.SliverToBoxAdapter()),
           visible: (tree.flutterSliverVisibility.hasVisible() ? tree.flutterSliverVisibility.visible : true),
           maintainState: (tree.flutterSliverVisibility.hasMaintainState() ? tree.flutterSliverVisibility.maintainState : false),
           maintainAnimation: (tree.flutterSliverVisibility.hasMaintainAnimation() ? tree.flutterSliverVisibility.maintainAnimation : false),
@@ -5864,7 +5865,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
       return $flutterSrcWidgetsVisibility.SliverVisibility.maintain(
           key: (tree.flutterSliverVisibilityNamedMaintain.hasKey() ? evaluateFlutterKeyExpression(tree.flutterSliverVisibilityNamedMaintain.key) : null),
           sliver: (tree.flutterSliverVisibilityNamedMaintain.hasSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibilityNamedMaintain.sliver) : missing('sliver')),
-          replacementSliver: (tree.flutterSliverVisibilityNamedMaintain.hasReplacementSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibilityNamedMaintain.replacementSliver) : missing('replacementSliver')),
+          replacementSliver: (tree.flutterSliverVisibilityNamedMaintain.hasReplacementSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibilityNamedMaintain.replacementSliver) : $flutterSrcWidgetsBasic.SliverToBoxAdapter()),
           visible: (tree.flutterSliverVisibilityNamedMaintain.hasVisible() ? tree.flutterSliverVisibilityNamedMaintain.visible : true));
     case messages.FlutterDiagnosticableTreeExpression_Result.flutterSnapshotWidget:
       return $flutterSrcWidgetsSnapshotWidget.SnapshotWidget(
@@ -5979,7 +5980,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           key: (tree.flutterTable.hasKey() ? evaluateFlutterKeyExpression(tree.flutterTable.key) : null),
           children: tree.flutterTable.children.map((e) => evaluateRequiredFlutterTableRowExpression(e)).toList(),
           columnWidths: null,
-          defaultColumnWidth: (tree.flutterTable.hasDefaultColumnWidth() ? evaluateRequiredFlutterTableColumnWidthExpression(tree.flutterTable.defaultColumnWidth) : missing('defaultColumnWidth')),
+          defaultColumnWidth: (tree.flutterTable.hasDefaultColumnWidth() ? evaluateRequiredFlutterTableColumnWidthExpression(tree.flutterTable.defaultColumnWidth) : $flutterSrcRenderingTable.FlexColumnWidth()),
           textDirection: (tree.flutterTable.hasTextDirection() ? enums.convertDartTextDirection(tree.flutterTable.textDirection) : null),
           border: (tree.flutterTable.hasBorder() ? evaluateFlutterTableBorderExpression(tree.flutterTable.border) : null),
           defaultVerticalAlignment: (tree.flutterTable.hasDefaultVerticalAlignment() ? enums.convertRequiredFlutterTableCellVerticalAlignment(tree.flutterTable.defaultVerticalAlignment) : $flutterSrcRenderingTable.TableCellVerticalAlignment.top),
@@ -6231,7 +6232,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
       return $flutterSrcWidgetsVisibility.Visibility(
           key: (tree.flutterVisibility.hasKey() ? evaluateFlutterKeyExpression(tree.flutterVisibility.key) : null),
           child: (tree.flutterVisibility.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterVisibility.child) : missing('child')),
-          replacement: (tree.flutterVisibility.hasReplacement() ? evaluateRequiredWidgetExpression(tree.flutterVisibility.replacement) : missing('replacement')),
+          replacement: (tree.flutterVisibility.hasReplacement() ? evaluateRequiredWidgetExpression(tree.flutterVisibility.replacement) : $flutterSrcWidgetsBasic.SizedBox.shrink()),
           visible: (tree.flutterVisibility.hasVisible() ? tree.flutterVisibility.visible : true),
           maintainState: (tree.flutterVisibility.hasMaintainState() ? tree.flutterVisibility.maintainState : false),
           maintainAnimation: (tree.flutterVisibility.hasMaintainAnimation() ? tree.flutterVisibility.maintainAnimation : false),
@@ -6462,7 +6463,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           shadowColor: (tree.materialAlertDialog.hasShadowColor() ? evaluateDartColorExpression(tree.materialAlertDialog.shadowColor) : null),
           surfaceTintColor: (tree.materialAlertDialog.hasSurfaceTintColor() ? evaluateDartColorExpression(tree.materialAlertDialog.surfaceTintColor) : null),
           semanticLabel: (tree.materialAlertDialog.hasSemanticLabel() ? tree.materialAlertDialog.semanticLabel : null),
-          insetPadding: (tree.materialAlertDialog.hasInsetPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialAlertDialog.insetPadding) : missing('insetPadding')),
+          insetPadding: (tree.materialAlertDialog.hasInsetPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialAlertDialog.insetPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(horizontal: 40.0, vertical: 24.0)),
           clipBehavior: (tree.materialAlertDialog.hasClipBehavior() ? enums.convertRequiredDartClip(tree.materialAlertDialog.clipBehavior) : $dartUi.Clip.none),
           shape: (tree.materialAlertDialog.hasShape() ? evaluateFlutterShapeBorderExpression(tree.materialAlertDialog.shape) : null),
           alignment: (tree.materialAlertDialog.hasAlignment() ? evaluateFlutterAlignmentGeometryExpression(tree.materialAlertDialog.alignment) : null),
@@ -6887,7 +6888,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           selectedShadowColor: (tree.materialChoiceChip.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialChoiceChip.selectedShadowColor) : null),
           showCheckmark: (tree.materialChoiceChip.hasShowCheckmark() ? tree.materialChoiceChip.showCheckmark : null),
           checkmarkColor: (tree.materialChoiceChip.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialChoiceChip.checkmarkColor) : null),
-          avatarBorder: (tree.materialChoiceChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialChoiceChip.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialChoiceChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialChoiceChip.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.FlutterDiagnosticableTreeExpression_Result.materialChoiceChipNamedElevated:
       return $flutterSrcMaterialChoiceChip.ChoiceChip.elevated(
           key: (tree.materialChoiceChipNamedElevated.hasKey() ? evaluateFlutterKeyExpression(tree.materialChoiceChipNamedElevated.key) : null),
@@ -6918,7 +6919,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           selectedShadowColor: (tree.materialChoiceChipNamedElevated.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialChoiceChipNamedElevated.selectedShadowColor) : null),
           showCheckmark: (tree.materialChoiceChipNamedElevated.hasShowCheckmark() ? tree.materialChoiceChipNamedElevated.showCheckmark : null),
           checkmarkColor: (tree.materialChoiceChipNamedElevated.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialChoiceChipNamedElevated.checkmarkColor) : null),
-          avatarBorder: (tree.materialChoiceChipNamedElevated.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialChoiceChipNamedElevated.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialChoiceChipNamedElevated.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialChoiceChipNamedElevated.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.FlutterDiagnosticableTreeExpression_Result.materialCircleAvatar:
       return $flutterSrcMaterialCircleAvatar.CircleAvatar(
           key: (tree.materialCircleAvatar.hasKey() ? evaluateFlutterKeyExpression(tree.materialCircleAvatar.key) : null),
@@ -7073,9 +7074,9 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           elevation: (tree.materialDialog.hasElevation() ? tree.materialDialog.elevation : null),
           shadowColor: (tree.materialDialog.hasShadowColor() ? evaluateDartColorExpression(tree.materialDialog.shadowColor) : null),
           surfaceTintColor: (tree.materialDialog.hasSurfaceTintColor() ? evaluateDartColorExpression(tree.materialDialog.surfaceTintColor) : null),
-          insetAnimationDuration: (tree.materialDialog.hasInsetAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialDialog.insetAnimationDuration) : missing('insetAnimationDuration')),
+          insetAnimationDuration: (tree.materialDialog.hasInsetAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialDialog.insetAnimationDuration) : $dartCore.Duration(milliseconds: 100)),
           insetAnimationCurve: (tree.materialDialog.hasInsetAnimationCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.materialDialog.insetAnimationCurve) : $flutterSrcAnimationCurves.Curves.decelerate),
-          insetPadding: (tree.materialDialog.hasInsetPadding() ? evaluateFlutterEdgeInsetsExpression(tree.materialDialog.insetPadding) : null),
+          insetPadding: (tree.materialDialog.hasInsetPadding() ? evaluateFlutterEdgeInsetsExpression(tree.materialDialog.insetPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(horizontal: 40.0, vertical: 24.0)),
           clipBehavior: (tree.materialDialog.hasClipBehavior() ? enums.convertRequiredDartClip(tree.materialDialog.clipBehavior) : $dartUi.Clip.none),
           shape: (tree.materialDialog.hasShape() ? evaluateFlutterShapeBorderExpression(tree.materialDialog.shape) : null),
           alignment: (tree.materialDialog.hasAlignment() ? evaluateFlutterAlignmentGeometryExpression(tree.materialDialog.alignment) : null),
@@ -7135,9 +7136,9 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
       return $flutterSrcMaterialDrawerHeader.DrawerHeader(
           key: (tree.materialDrawerHeader.hasKey() ? evaluateFlutterKeyExpression(tree.materialDrawerHeader.key) : null),
           decoration: (tree.materialDrawerHeader.hasDecoration() ? evaluateFlutterDecorationExpression(tree.materialDrawerHeader.decoration) : null),
-          margin: (tree.materialDrawerHeader.hasMargin() ? evaluateFlutterEdgeInsetsGeometryExpression(tree.materialDrawerHeader.margin) : null),
-          padding: (tree.materialDrawerHeader.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialDrawerHeader.padding) : missing('padding')),
-          duration: (tree.materialDrawerHeader.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialDrawerHeader.duration) : missing('duration')),
+          margin: (tree.materialDrawerHeader.hasMargin() ? evaluateFlutterEdgeInsetsGeometryExpression(tree.materialDrawerHeader.margin) : $flutterSrcPaintingEdgeInsets.EdgeInsets.only(bottom: 8.0)),
+          padding: (tree.materialDrawerHeader.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialDrawerHeader.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 8.0)),
+          duration: (tree.materialDrawerHeader.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialDrawerHeader.duration) : $dartCore.Duration(milliseconds: 250)),
           curve: (tree.materialDrawerHeader.hasCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.materialDrawerHeader.curve) : $flutterSrcAnimationCurves.Curves.fastOutSlowIn),
           child: (tree.materialDrawerHeader.hasChild() ? evaluateWidgetExpression(tree.materialDrawerHeader.child) : null));
     case messages.FlutterDiagnosticableTreeExpression_Result.materialDrawerTheme:
@@ -7266,7 +7267,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           isExpanded: (tree.materialExpandIcon.hasIsExpanded() ? tree.materialExpandIcon.isExpanded : false),
           size: (tree.materialExpandIcon.hasSize() ? tree.materialExpandIcon.size : 24.0),
           onPressed: null,
-          padding: (tree.materialExpandIcon.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialExpandIcon.padding) : missing('padding')),
+          padding: (tree.materialExpandIcon.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialExpandIcon.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(8.0)),
           color: (tree.materialExpandIcon.hasColor() ? evaluateDartColorExpression(tree.materialExpandIcon.color) : null),
           disabledColor: (tree.materialExpandIcon.hasDisabledColor() ? evaluateDartColorExpression(tree.materialExpandIcon.disabledColor) : null),
           expandedColor: (tree.materialExpandIcon.hasExpandedColor() ? evaluateDartColorExpression(tree.materialExpandIcon.expandedColor) : null));
@@ -7413,7 +7414,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           selectedShadowColor: (tree.materialFilterChip.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialFilterChip.selectedShadowColor) : null),
           showCheckmark: (tree.materialFilterChip.hasShowCheckmark() ? tree.materialFilterChip.showCheckmark : null),
           checkmarkColor: (tree.materialFilterChip.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialFilterChip.checkmarkColor) : null),
-          avatarBorder: (tree.materialFilterChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialFilterChip.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialFilterChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialFilterChip.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.FlutterDiagnosticableTreeExpression_Result.materialFilterChipNamedElevated:
       return $flutterSrcMaterialFilterChip.FilterChip.elevated(
           key: (tree.materialFilterChipNamedElevated.hasKey() ? evaluateFlutterKeyExpression(tree.materialFilterChipNamedElevated.key) : null),
@@ -7444,7 +7445,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           selectedShadowColor: (tree.materialFilterChipNamedElevated.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialFilterChipNamedElevated.selectedShadowColor) : null),
           showCheckmark: (tree.materialFilterChipNamedElevated.hasShowCheckmark() ? tree.materialFilterChipNamedElevated.showCheckmark : null),
           checkmarkColor: (tree.materialFilterChipNamedElevated.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialFilterChipNamedElevated.checkmarkColor) : null),
-          avatarBorder: (tree.materialFilterChipNamedElevated.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialFilterChipNamedElevated.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialFilterChipNamedElevated.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialFilterChipNamedElevated.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.FlutterDiagnosticableTreeExpression_Result.materialFlexibleSpaceBar:
       return $flutterSrcMaterialFlexibleSpaceBar.FlexibleSpaceBar(
           key: (tree.materialFlexibleSpaceBar.hasKey() ? evaluateFlutterKeyExpression(tree.materialFlexibleSpaceBar.key) : null),
@@ -7572,9 +7573,9 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
       return $flutterSrcMaterialFlutterLogo.FlutterLogo(
           key: (tree.materialFlutterLogo.hasKey() ? evaluateFlutterKeyExpression(tree.materialFlutterLogo.key) : null),
           size: (tree.materialFlutterLogo.hasSize() ? tree.materialFlutterLogo.size : null),
-          textColor: (tree.materialFlutterLogo.hasTextColor() ? evaluateRequiredDartColorExpression(tree.materialFlutterLogo.textColor) : missing('textColor')),
+          textColor: (tree.materialFlutterLogo.hasTextColor() ? evaluateRequiredDartColorExpression(tree.materialFlutterLogo.textColor) : $dartUi.Color(0xFF757575)),
           style: (tree.materialFlutterLogo.hasStyle() ? enums.convertRequiredFlutterFlutterLogoStyle(tree.materialFlutterLogo.style) : $flutterSrcPaintingFlutterLogo.FlutterLogoStyle.markOnly),
-          duration: (tree.materialFlutterLogo.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialFlutterLogo.duration) : missing('duration')),
+          duration: (tree.materialFlutterLogo.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialFlutterLogo.duration) : $dartCore.Duration(milliseconds: 750)),
           curve: (tree.materialFlutterLogo.hasCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.materialFlutterLogo.curve) : $flutterSrcAnimationCurves.Curves.fastOutSlowIn));
     case messages.FlutterDiagnosticableTreeExpression_Result.materialGridTile:
       return $flutterSrcMaterialGridTile.GridTile(
@@ -7810,7 +7811,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           selectedShadowColor: (tree.materialInputChip.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialInputChip.selectedShadowColor) : null),
           showCheckmark: (tree.materialInputChip.hasShowCheckmark() ? tree.materialInputChip.showCheckmark : null),
           checkmarkColor: (tree.materialInputChip.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialInputChip.checkmarkColor) : null),
-          avatarBorder: (tree.materialInputChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialInputChip.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialInputChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialInputChip.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.FlutterDiagnosticableTreeExpression_Result.materialInputDatePickerFormField:
       return $flutterSrcMaterialInputDatePickerFormField.InputDatePickerFormField(
           key: (tree.materialInputDatePickerFormField.hasKey() ? evaluateFlutterKeyExpression(tree.materialInputDatePickerFormField.key) : null),
@@ -7917,10 +7918,10 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
       return $flutterSrcMaterialMagnifier.Magnifier(
           key: (tree.materialMagnifier.hasKey() ? evaluateFlutterKeyExpression(tree.materialMagnifier.key) : null),
           additionalFocalPointOffset: (tree.materialMagnifier.hasAdditionalFocalPointOffset() ? evaluateRequiredDartOffsetExpression(tree.materialMagnifier.additionalFocalPointOffset) : $dartUi.Offset.zero),
-          borderRadius: (tree.materialMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.materialMagnifier.borderRadius) : missing('borderRadius')),
-          filmColor: (tree.materialMagnifier.hasFilmColor() ? evaluateRequiredDartColorExpression(tree.materialMagnifier.filmColor) : missing('filmColor')),
+          borderRadius: (tree.materialMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.materialMagnifier.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.all($dartUi.Radius.circular(40))),
+          filmColor: (tree.materialMagnifier.hasFilmColor() ? evaluateRequiredDartColorExpression(tree.materialMagnifier.filmColor) : $dartUi.Color.fromARGB(8, 158, 158, 158)),
           shadows: tree.materialMagnifier.shadows.map((e) => evaluateRequiredFlutterBoxShadowExpression(e)).toList(),
-          size: (tree.materialMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.materialMagnifier.size) : missing('size')));
+          size: (tree.materialMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.materialMagnifier.size) : $dartUi.Size(77.37, 37.9)));
     case messages.FlutterDiagnosticableTreeExpression_Result.materialMaterial:
       return $flutterSrcMaterialMaterial.Material(
           key: (tree.materialMaterial.hasKey() ? evaluateFlutterKeyExpression(tree.materialMaterial.key) : null),
@@ -8179,7 +8180,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           indicatorShape: (tree.materialNavigationDrawer.hasIndicatorShape() ? evaluateFlutterShapeBorderExpression(tree.materialNavigationDrawer.indicatorShape) : null),
           onDestinationSelected: null,
           selectedIndex: (tree.materialNavigationDrawer.hasSelectedIndex() ? tree.materialNavigationDrawer.selectedIndex : 0),
-          tilePadding: (tree.materialNavigationDrawer.hasTilePadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialNavigationDrawer.tilePadding) : missing('tilePadding')));
+          tilePadding: (tree.materialNavigationDrawer.hasTilePadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialNavigationDrawer.tilePadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(horizontal: 12.0)));
     case messages.FlutterDiagnosticableTreeExpression_Result.materialNavigationDrawerDestination:
       return $flutterSrcMaterialNavigationDrawer.NavigationDrawerDestination(
           key: (tree.materialNavigationDrawerDestination.hasKey() ? evaluateFlutterKeyExpression(tree.materialNavigationDrawerDestination.key) : null),
@@ -8362,7 +8363,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           selectedShadowColor: (tree.materialRawChip.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialRawChip.selectedShadowColor) : null),
           showCheckmark: (tree.materialRawChip.hasShowCheckmark() ? tree.materialRawChip.showCheckmark : null),
           checkmarkColor: (tree.materialRawChip.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialRawChip.checkmarkColor) : null),
-          avatarBorder: (tree.materialRawChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialRawChip.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialRawChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialRawChip.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.FlutterDiagnosticableTreeExpression_Result.materialRawMaterialButton:
       return $flutterSrcMaterialButton.RawMaterialButton(
           key: (tree.materialRawMaterialButton.hasKey() ? evaluateFlutterKeyExpression(tree.materialRawMaterialButton.key) : null),
@@ -8383,8 +8384,8 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           disabledElevation: (tree.materialRawMaterialButton.hasDisabledElevation() ? tree.materialRawMaterialButton.disabledElevation : 0.0),
           padding: (tree.materialRawMaterialButton.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialRawMaterialButton.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.zero),
           visualDensity: (tree.materialRawMaterialButton.hasVisualDensity() ? evaluateRequiredMaterialVisualDensityExpression(tree.materialRawMaterialButton.visualDensity) : $flutterSrcMaterialThemeData.VisualDensity.standard),
-          constraints: (tree.materialRawMaterialButton.hasConstraints() ? evaluateRequiredFlutterBoxConstraintsExpression(tree.materialRawMaterialButton.constraints) : missing('constraints')),
-          shape: (tree.materialRawMaterialButton.hasShape() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialRawMaterialButton.shape) : missing('shape')),
+          constraints: (tree.materialRawMaterialButton.hasConstraints() ? evaluateRequiredFlutterBoxConstraintsExpression(tree.materialRawMaterialButton.constraints) : $flutterSrcRenderingBox.BoxConstraints(minWidth: 88.0, minHeight: 36.0)),
+          shape: (tree.materialRawMaterialButton.hasShape() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialRawMaterialButton.shape) : $flutterSrcPaintingRoundedRectangleBorder.RoundedRectangleBorder()),
           animationDuration: (tree.materialRawMaterialButton.hasAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialRawMaterialButton.animationDuration) : $flutterSrcMaterialConstants.kThemeChangeDuration),
           clipBehavior: (tree.materialRawMaterialButton.hasClipBehavior() ? enums.convertRequiredDartClip(tree.materialRawMaterialButton.clipBehavior) : $dartUi.Clip.none),
           focusNode: (tree.materialRawMaterialButton.hasFocusNode() ? evaluateFlutterFocusNodeExpression(tree.materialRawMaterialButton.focusNode) : null),
@@ -8405,8 +8406,8 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           semanticsValue: (tree.materialRefreshProgressIndicator.hasSemanticsValue() ? tree.materialRefreshProgressIndicator.semanticsValue : null),
           strokeCap: (tree.materialRefreshProgressIndicator.hasStrokeCap() ? enums.convertDartStrokeCap(tree.materialRefreshProgressIndicator.strokeCap) : null),
           elevation: (tree.materialRefreshProgressIndicator.hasElevation() ? tree.materialRefreshProgressIndicator.elevation : 2.0),
-          indicatorMargin: (tree.materialRefreshProgressIndicator.hasIndicatorMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialRefreshProgressIndicator.indicatorMargin) : missing('indicatorMargin')),
-          indicatorPadding: (tree.materialRefreshProgressIndicator.hasIndicatorPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialRefreshProgressIndicator.indicatorPadding) : missing('indicatorPadding')));
+          indicatorMargin: (tree.materialRefreshProgressIndicator.hasIndicatorMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialRefreshProgressIndicator.indicatorMargin) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(4.0)),
+          indicatorPadding: (tree.materialRefreshProgressIndicator.hasIndicatorPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialRefreshProgressIndicator.indicatorPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(12.0)));
     case messages.FlutterDiagnosticableTreeExpression_Result.materialScaffold:
       return $flutterSrcMaterialScaffold.Scaffold(
           key: (tree.materialScaffold.hasKey() ? evaluateFlutterKeyExpression(tree.materialScaffold.key) : null),
@@ -8568,16 +8569,16 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
       return $flutterSrcMaterialDialog.SimpleDialog(
           key: (tree.materialSimpleDialog.hasKey() ? evaluateFlutterKeyExpression(tree.materialSimpleDialog.key) : null),
           title: (tree.materialSimpleDialog.hasTitle() ? evaluateWidgetExpression(tree.materialSimpleDialog.title) : null),
-          titlePadding: (tree.materialSimpleDialog.hasTitlePadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialSimpleDialog.titlePadding) : missing('titlePadding')),
+          titlePadding: (tree.materialSimpleDialog.hasTitlePadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialSimpleDialog.titlePadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 0.0)),
           titleTextStyle: (tree.materialSimpleDialog.hasTitleTextStyle() ? evaluateFlutterTextStyleExpression(tree.materialSimpleDialog.titleTextStyle) : null),
           children: tree.materialSimpleDialog.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
-          contentPadding: (tree.materialSimpleDialog.hasContentPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialSimpleDialog.contentPadding) : missing('contentPadding')),
+          contentPadding: (tree.materialSimpleDialog.hasContentPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialSimpleDialog.contentPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.fromLTRB(0.0, 12.0, 0.0, 16.0)),
           backgroundColor: (tree.materialSimpleDialog.hasBackgroundColor() ? evaluateDartColorExpression(tree.materialSimpleDialog.backgroundColor) : null),
           elevation: (tree.materialSimpleDialog.hasElevation() ? tree.materialSimpleDialog.elevation : null),
           shadowColor: (tree.materialSimpleDialog.hasShadowColor() ? evaluateDartColorExpression(tree.materialSimpleDialog.shadowColor) : null),
           surfaceTintColor: (tree.materialSimpleDialog.hasSurfaceTintColor() ? evaluateDartColorExpression(tree.materialSimpleDialog.surfaceTintColor) : null),
           semanticLabel: (tree.materialSimpleDialog.hasSemanticLabel() ? tree.materialSimpleDialog.semanticLabel : null),
-          insetPadding: (tree.materialSimpleDialog.hasInsetPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialSimpleDialog.insetPadding) : missing('insetPadding')),
+          insetPadding: (tree.materialSimpleDialog.hasInsetPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialSimpleDialog.insetPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(horizontal: 40.0, vertical: 24.0)),
           clipBehavior: (tree.materialSimpleDialog.hasClipBehavior() ? enums.convertRequiredDartClip(tree.materialSimpleDialog.clipBehavior) : $dartUi.Clip.none),
           shape: (tree.materialSimpleDialog.hasShape() ? evaluateFlutterShapeBorderExpression(tree.materialSimpleDialog.shape) : null),
           alignment: (tree.materialSimpleDialog.hasAlignment() ? evaluateFlutterAlignmentGeometryExpression(tree.materialSimpleDialog.alignment) : null));
@@ -8766,7 +8767,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           actionOverflowThreshold: (tree.materialSnackBar.hasActionOverflowThreshold() ? tree.materialSnackBar.actionOverflowThreshold : null),
           showCloseIcon: (tree.materialSnackBar.hasShowCloseIcon() ? tree.materialSnackBar.showCloseIcon : null),
           closeIconColor: (tree.materialSnackBar.hasCloseIconColor() ? evaluateDartColorExpression(tree.materialSnackBar.closeIconColor) : null),
-          duration: (tree.materialSnackBar.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialSnackBar.duration) : missing('duration')),
+          duration: (tree.materialSnackBar.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialSnackBar.duration) : $dartCore.Duration(milliseconds: 4000)),
           animation: null,
           onVisible: null,
           dismissDirection: (tree.materialSnackBar.hasDismissDirection() ? enums.convertRequiredFlutterDismissDirection(tree.materialSnackBar.dismissDirection) : $flutterSrcWidgetsDismissible.DismissDirection.down),
@@ -8961,7 +8962,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           key: (tree.materialTab.hasKey() ? evaluateFlutterKeyExpression(tree.materialTab.key) : null),
           text: (tree.materialTab.hasText() ? tree.materialTab.text : null),
           icon: (tree.materialTab.hasIcon() ? evaluateWidgetExpression(tree.materialTab.icon) : null),
-          iconMargin: (tree.materialTab.hasIconMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialTab.iconMargin) : missing('iconMargin')),
+          iconMargin: (tree.materialTab.hasIconMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialTab.iconMargin) : $flutterSrcPaintingEdgeInsets.EdgeInsets.only(bottom: 10.0)),
           height: (tree.materialTab.hasHeight() ? tree.materialTab.height : null),
           child: (tree.materialTab.hasChild() ? evaluateWidgetExpression(tree.materialTab.child) : null));
     case messages.FlutterDiagnosticableTreeExpression_Result.materialTabBar:
@@ -9097,7 +9098,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           controller: (tree.materialTextField.hasController() ? evaluateFlutterTextEditingControllerExpression(tree.materialTextField.controller) : null),
           focusNode: (tree.materialTextField.hasFocusNode() ? evaluateFlutterFocusNodeExpression(tree.materialTextField.focusNode) : null),
           undoController: (tree.materialTextField.hasUndoController() ? evaluateFlutterUndoHistoryControllerExpression(tree.materialTextField.undoController) : null),
-          decoration: (tree.materialTextField.hasDecoration() ? evaluateMaterialInputDecorationExpression(tree.materialTextField.decoration) : null),
+          decoration: (tree.materialTextField.hasDecoration() ? evaluateMaterialInputDecorationExpression(tree.materialTextField.decoration) : $flutterSrcMaterialInputDecorator.InputDecoration()),
           keyboardType: (tree.materialTextField.hasKeyboardType() ? evaluateFlutterTextInputTypeExpression(tree.materialTextField.keyboardType) : null),
           textInputAction: (tree.materialTextField.hasTextInputAction() ? enums.convertFlutterTextInputAction(tree.materialTextField.textInputAction) : null),
           textCapitalization: (tree.materialTextField.hasTextCapitalization() ? enums.convertRequiredFlutterTextCapitalization(tree.materialTextField.textCapitalization) : $flutterSrcServicesTextInput.TextCapitalization.none),
@@ -9134,7 +9135,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           selectionHeightStyle: (tree.materialTextField.hasSelectionHeightStyle() ? enums.convertRequiredDartBoxHeightStyle(tree.materialTextField.selectionHeightStyle) : missing('selectionHeightStyle')),
           selectionWidthStyle: (tree.materialTextField.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyle(tree.materialTextField.selectionWidthStyle) : missing('selectionWidthStyle')),
           keyboardAppearance: (tree.materialTextField.hasKeyboardAppearance() ? enums.convertDartBrightness(tree.materialTextField.keyboardAppearance) : null),
-          scrollPadding: (tree.materialTextField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialTextField.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.materialTextField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialTextField.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           dragStartBehavior: (tree.materialTextField.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehavior(tree.materialTextField.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           enableInteractiveSelection: (tree.materialTextField.hasEnableInteractiveSelection() ? tree.materialTextField.enableInteractiveSelection : null),
           selectionControls: (tree.materialTextField.hasSelectionControls() ? evaluateFlutterTextSelectionControlsExpression(tree.materialTextField.selectionControls) : null),
@@ -9160,7 +9161,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           controller: (tree.materialTextFormField.hasController() ? evaluateFlutterTextEditingControllerExpression(tree.materialTextFormField.controller) : null),
           initialValue: (tree.materialTextFormField.hasInitialValue() ? tree.materialTextFormField.initialValue : null),
           focusNode: (tree.materialTextFormField.hasFocusNode() ? evaluateFlutterFocusNodeExpression(tree.materialTextFormField.focusNode) : null),
-          decoration: (tree.materialTextFormField.hasDecoration() ? evaluateMaterialInputDecorationExpression(tree.materialTextFormField.decoration) : null),
+          decoration: (tree.materialTextFormField.hasDecoration() ? evaluateMaterialInputDecorationExpression(tree.materialTextFormField.decoration) : $flutterSrcMaterialInputDecorator.InputDecoration()),
           keyboardType: (tree.materialTextFormField.hasKeyboardType() ? evaluateFlutterTextInputTypeExpression(tree.materialTextFormField.keyboardType) : null),
           textCapitalization: (tree.materialTextFormField.hasTextCapitalization() ? enums.convertRequiredFlutterTextCapitalization(tree.materialTextFormField.textCapitalization) : $flutterSrcServicesTextInput.TextCapitalization.none),
           textInputAction: (tree.materialTextFormField.hasTextInputAction() ? enums.convertFlutterTextInputAction(tree.materialTextFormField.textInputAction) : null),
@@ -9197,7 +9198,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           cursorRadius: (tree.materialTextFormField.hasCursorRadius() ? evaluateDartRadiusExpression(tree.materialTextFormField.cursorRadius) : null),
           cursorColor: (tree.materialTextFormField.hasCursorColor() ? evaluateDartColorExpression(tree.materialTextFormField.cursorColor) : null),
           keyboardAppearance: (tree.materialTextFormField.hasKeyboardAppearance() ? enums.convertDartBrightness(tree.materialTextFormField.keyboardAppearance) : null),
-          scrollPadding: (tree.materialTextFormField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialTextFormField.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.materialTextFormField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialTextFormField.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           enableInteractiveSelection: (tree.materialTextFormField.hasEnableInteractiveSelection() ? tree.materialTextFormField.enableInteractiveSelection : null),
           selectionControls: (tree.materialTextFormField.hasSelectionControls() ? evaluateFlutterTextSelectionControlsExpression(tree.materialTextFormField.selectionControls) : null),
           buildCounter: null,
@@ -9329,11 +9330,11 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
       return $flutterSrcMaterialUserAccountsDrawerHeader.UserAccountsDrawerHeader(
           key: (tree.materialUserAccountsDrawerHeader.hasKey() ? evaluateFlutterKeyExpression(tree.materialUserAccountsDrawerHeader.key) : null),
           decoration: (tree.materialUserAccountsDrawerHeader.hasDecoration() ? evaluateFlutterDecorationExpression(tree.materialUserAccountsDrawerHeader.decoration) : null),
-          margin: (tree.materialUserAccountsDrawerHeader.hasMargin() ? evaluateFlutterEdgeInsetsGeometryExpression(tree.materialUserAccountsDrawerHeader.margin) : null),
+          margin: (tree.materialUserAccountsDrawerHeader.hasMargin() ? evaluateFlutterEdgeInsetsGeometryExpression(tree.materialUserAccountsDrawerHeader.margin) : $flutterSrcPaintingEdgeInsets.EdgeInsets.only(bottom: 8.0)),
           currentAccountPicture: (tree.materialUserAccountsDrawerHeader.hasCurrentAccountPicture() ? evaluateWidgetExpression(tree.materialUserAccountsDrawerHeader.currentAccountPicture) : null),
           otherAccountsPictures: tree.materialUserAccountsDrawerHeader.otherAccountsPictures.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
-          currentAccountPictureSize: (tree.materialUserAccountsDrawerHeader.hasCurrentAccountPictureSize() ? evaluateRequiredDartSizeExpression(tree.materialUserAccountsDrawerHeader.currentAccountPictureSize) : missing('currentAccountPictureSize')),
-          otherAccountsPicturesSize: (tree.materialUserAccountsDrawerHeader.hasOtherAccountsPicturesSize() ? evaluateRequiredDartSizeExpression(tree.materialUserAccountsDrawerHeader.otherAccountsPicturesSize) : missing('otherAccountsPicturesSize')),
+          currentAccountPictureSize: (tree.materialUserAccountsDrawerHeader.hasCurrentAccountPictureSize() ? evaluateRequiredDartSizeExpression(tree.materialUserAccountsDrawerHeader.currentAccountPictureSize) : $dartUi.Size.square(72.0)),
+          otherAccountsPicturesSize: (tree.materialUserAccountsDrawerHeader.hasOtherAccountsPicturesSize() ? evaluateRequiredDartSizeExpression(tree.materialUserAccountsDrawerHeader.otherAccountsPicturesSize) : $dartUi.Size.square(40.0)),
           accountName: (tree.materialUserAccountsDrawerHeader.hasAccountName() ? evaluateWidgetExpression(tree.materialUserAccountsDrawerHeader.accountName) : null),
           accountEmail: (tree.materialUserAccountsDrawerHeader.hasAccountEmail() ? evaluateWidgetExpression(tree.materialUserAccountsDrawerHeader.accountEmail) : null),
           onDetailsPressed: null,
@@ -11095,7 +11096,7 @@ $flutterSrcWidgetsMediaQuery.MediaQueryData? evaluateFlutterMediaQueryDataExpres
           disableAnimations: (tree.flutterMediaQueryData.hasDisableAnimations() ? tree.flutterMediaQueryData.disableAnimations : false),
           boldText: (tree.flutterMediaQueryData.hasBoldText() ? tree.flutterMediaQueryData.boldText : false),
           navigationMode: (tree.flutterMediaQueryData.hasNavigationMode() ? enums.convertRequiredFlutterNavigationMode(tree.flutterMediaQueryData.navigationMode) : $flutterSrcWidgetsMediaQuery.NavigationMode.traditional),
-          gestureSettings: (tree.flutterMediaQueryData.hasGestureSettings() ? evaluateRequiredFlutterDeviceGestureSettingsExpression(tree.flutterMediaQueryData.gestureSettings) : missing('gestureSettings')),
+          gestureSettings: (tree.flutterMediaQueryData.hasGestureSettings() ? evaluateRequiredFlutterDeviceGestureSettingsExpression(tree.flutterMediaQueryData.gestureSettings) : $flutterSrcGesturesGestureSettings.DeviceGestureSettings(touchSlop: $flutterSrcGesturesConstants.kTouchSlop)),
           displayFeatures: tree.flutterMediaQueryData.displayFeatures.map((e) => evaluateRequiredDartDisplayFeatureExpression(e)).toList());
     case messages.FlutterMediaQueryDataExpression_Result.flutterMediaQueryDataNamedFromView:
       return $flutterSrcWidgetsMediaQuery.MediaQueryData.fromView(
@@ -11521,7 +11522,7 @@ $flutterSrcWidgetsPreferredSize.PreferredSizeWidget? evaluateFlutterPreferredSiz
           previousPageTitle: (tree.cupertinoNavigationBar.hasPreviousPageTitle() ? tree.cupertinoNavigationBar.previousPageTitle : null),
           middle: (tree.cupertinoNavigationBar.hasMiddle() ? evaluateWidgetExpression(tree.cupertinoNavigationBar.middle) : null),
           trailing: (tree.cupertinoNavigationBar.hasTrailing() ? evaluateWidgetExpression(tree.cupertinoNavigationBar.trailing) : null),
-          border: (tree.cupertinoNavigationBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoNavigationBar.border) : null),
+          border: (tree.cupertinoNavigationBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoNavigationBar.border) : $flutterSrcPaintingBoxBorder.Border(bottom: $flutterSrcPaintingBorders.BorderSide(color: $dartUi.Color(0x4D000000), width: 0.0))),
           backgroundColor: (tree.cupertinoNavigationBar.hasBackgroundColor() ? evaluateDartColorExpression(tree.cupertinoNavigationBar.backgroundColor) : null),
           brightness: (tree.cupertinoNavigationBar.hasBrightness() ? enums.convertDartBrightness(tree.cupertinoNavigationBar.brightness) : null),
           padding: (tree.cupertinoNavigationBar.hasPadding() ? evaluateFlutterEdgeInsetsDirectionalExpression(tree.cupertinoNavigationBar.padding) : null),
@@ -11537,7 +11538,7 @@ $flutterSrcWidgetsPreferredSize.PreferredSizeWidget? evaluateFlutterPreferredSiz
           inactiveColor: (tree.cupertinoTabBar.hasInactiveColor() ? evaluateRequiredDartColorExpression(tree.cupertinoTabBar.inactiveColor) : $flutterSrcCupertinoColors.CupertinoColors.inactiveGray),
           iconSize: (tree.cupertinoTabBar.hasIconSize() ? tree.cupertinoTabBar.iconSize : 30.0),
           height: (tree.cupertinoTabBar.hasHeight() ? tree.cupertinoTabBar.height : 50.0),
-          border: (tree.cupertinoTabBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoTabBar.border) : null));
+          border: (tree.cupertinoTabBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoTabBar.border) : $flutterSrcPaintingBoxBorder.Border(top: $flutterSrcPaintingBorders.BorderSide(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $dartUi.Color(0x4D000000), darkColor: $dartUi.Color(0x29000000)), width: 0.0))));
     case messages.FlutterPreferredSizeWidgetExpression_Result.flutterPreferredSize:
       return $flutterSrcWidgetsPreferredSize.PreferredSize(
           key: (tree.flutterPreferredSize.hasKey() ? evaluateFlutterKeyExpression(tree.flutterPreferredSize.key) : null),
@@ -11579,7 +11580,7 @@ $flutterSrcWidgetsPreferredSize.PreferredSizeWidget? evaluateFlutterPreferredSiz
           key: (tree.materialTab.hasKey() ? evaluateFlutterKeyExpression(tree.materialTab.key) : null),
           text: (tree.materialTab.hasText() ? tree.materialTab.text : null),
           icon: (tree.materialTab.hasIcon() ? evaluateWidgetExpression(tree.materialTab.icon) : null),
-          iconMargin: (tree.materialTab.hasIconMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialTab.iconMargin) : missing('iconMargin')),
+          iconMargin: (tree.materialTab.hasIconMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialTab.iconMargin) : $flutterSrcPaintingEdgeInsets.EdgeInsets.only(bottom: 10.0)),
           height: (tree.materialTab.hasHeight() ? tree.materialTab.height : null),
           child: (tree.materialTab.hasChild() ? evaluateWidgetExpression(tree.materialTab.child) : null));
     case messages.FlutterPreferredSizeWidgetExpression_Result.materialTabBar:
@@ -12059,7 +12060,7 @@ $flutterSrcRenderingBox.RenderBox? evaluateFlutterRenderBoxExpression(messages.F
           columns: (tree.flutterRenderTable.hasColumns() ? tree.flutterRenderTable.columns : null),
           rows: (tree.flutterRenderTable.hasRows() ? tree.flutterRenderTable.rows : null),
           columnWidths: null,
-          defaultColumnWidth: (tree.flutterRenderTable.hasDefaultColumnWidth() ? evaluateRequiredFlutterTableColumnWidthExpression(tree.flutterRenderTable.defaultColumnWidth) : missing('defaultColumnWidth')),
+          defaultColumnWidth: (tree.flutterRenderTable.hasDefaultColumnWidth() ? evaluateRequiredFlutterTableColumnWidthExpression(tree.flutterRenderTable.defaultColumnWidth) : $flutterSrcRenderingTable.FlexColumnWidth()),
           textDirection: (tree.flutterRenderTable.hasTextDirection() ? enums.convertRequiredDartTextDirection(tree.flutterRenderTable.textDirection) : missing('textDirection')),
           border: (tree.flutterRenderTable.hasBorder() ? evaluateFlutterTableBorderExpression(tree.flutterRenderTable.border) : null),
           rowDecorations: tree.flutterRenderTable.rowDecorations.map((e) => evaluateRequiredFlutterDecorationExpression(e)).toList(),
@@ -12603,7 +12604,7 @@ $flutterSrcPaintingBorders.ShapeBorder? evaluateFlutterShapeBorderExpression(mes
           bottom: (tree.flutterBorderDirectional.hasBottom() ? evaluateRequiredFlutterBorderSideExpression(tree.flutterBorderDirectional.bottom) : $flutterSrcPaintingBorders.BorderSide.none));
     case messages.FlutterShapeBorderExpression_Result.flutterBorderNamedAll:
       return $flutterSrcPaintingBoxBorder.Border.all(
-          color: (tree.flutterBorderNamedAll.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBorderNamedAll.color) : missing('color')),
+          color: (tree.flutterBorderNamedAll.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBorderNamedAll.color) : $dartUi.Color(0xFF000000)),
           width: (tree.flutterBorderNamedAll.hasWidth() ? tree.flutterBorderNamedAll.width : 1.0),
           style: (tree.flutterBorderNamedAll.hasStyle() ? enums.convertRequiredFlutterBorderStyle(tree.flutterBorderNamedAll.style) : $flutterSrcPaintingBorders.BorderStyle.solid),
           strokeAlign: (tree.flutterBorderNamedAll.hasStrokeAlign() ? tree.flutterBorderNamedAll.strokeAlign : $flutterSrcPaintingBorders.BorderSide.strokeAlignInside));
@@ -12679,12 +12680,12 @@ $flutterSrcPaintingBorders.ShapeBorder? evaluateFlutterShapeBorderExpression(mes
     case messages.FlutterShapeBorderExpression_Result.materialOutlineInputBorder:
       return $flutterSrcMaterialInputBorder.OutlineInputBorder(
           borderSide: (tree.materialOutlineInputBorder.hasBorderSide() ? evaluateRequiredFlutterBorderSideExpression(tree.materialOutlineInputBorder.borderSide) : $flutterSrcPaintingBorders.BorderSide.none),
-          borderRadius: (tree.materialOutlineInputBorder.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.materialOutlineInputBorder.borderRadius) : missing('borderRadius')),
+          borderRadius: (tree.materialOutlineInputBorder.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.materialOutlineInputBorder.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.all($dartUi.Radius.circular(4.0))),
           gapPadding: (tree.materialOutlineInputBorder.hasGapPadding() ? tree.materialOutlineInputBorder.gapPadding : 4.0));
     case messages.FlutterShapeBorderExpression_Result.materialUnderlineInputBorder:
       return $flutterSrcMaterialInputBorder.UnderlineInputBorder(
           borderSide: (tree.materialUnderlineInputBorder.hasBorderSide() ? evaluateRequiredFlutterBorderSideExpression(tree.materialUnderlineInputBorder.borderSide) : $flutterSrcPaintingBorders.BorderSide.none),
-          borderRadius: (tree.materialUnderlineInputBorder.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.materialUnderlineInputBorder.borderRadius) : missing('borderRadius')));
+          borderRadius: (tree.materialUnderlineInputBorder.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.materialUnderlineInputBorder.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.only(topLeft: $dartUi.Radius.circular(4.0), topRight: $dartUi.Radius.circular(4.0))));
     default:
       return null;
   }
@@ -13006,7 +13007,7 @@ $flutterSrcWidgetsFramework.SingleChildRenderObjectWidget? evaluateFlutterSingle
           borderRadius: (tree.flutterPhysicalModel.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.flutterPhysicalModel.borderRadius) : null),
           elevation: (tree.flutterPhysicalModel.hasElevation() ? tree.flutterPhysicalModel.elevation : 0.0),
           color: (tree.flutterPhysicalModel.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterPhysicalModel.color) : missing('color')),
-          shadowColor: (tree.flutterPhysicalModel.hasShadowColor() ? evaluateRequiredDartColorExpression(tree.flutterPhysicalModel.shadowColor) : missing('shadowColor')),
+          shadowColor: (tree.flutterPhysicalModel.hasShadowColor() ? evaluateRequiredDartColorExpression(tree.flutterPhysicalModel.shadowColor) : $dartUi.Color(0xFF000000)),
           child: (tree.flutterPhysicalModel.hasChild() ? evaluateWidgetExpression(tree.flutterPhysicalModel.child) : null));
     case messages.FlutterSingleChildRenderObjectWidgetExpression_Result.flutterRepaintBoundary:
       return $flutterSrcWidgetsBasic.RepaintBoundary(
@@ -13845,7 +13846,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           actions: tree.cupertinoAlertDialog.actions.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           scrollController: (tree.cupertinoAlertDialog.hasScrollController() ? evaluateFlutterScrollControllerExpression(tree.cupertinoAlertDialog.scrollController) : null),
           actionScrollController: (tree.cupertinoAlertDialog.hasActionScrollController() ? evaluateFlutterScrollControllerExpression(tree.cupertinoAlertDialog.actionScrollController) : null),
-          insetAnimationDuration: (tree.cupertinoAlertDialog.hasInsetAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.cupertinoAlertDialog.insetAnimationDuration) : missing('insetAnimationDuration')),
+          insetAnimationDuration: (tree.cupertinoAlertDialog.hasInsetAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.cupertinoAlertDialog.insetAnimationDuration) : $dartCore.Duration(milliseconds: 100)),
           insetAnimationCurve: (tree.cupertinoAlertDialog.hasInsetAnimationCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.cupertinoAlertDialog.insetAnimationCurve) : $flutterSrcAnimationCurves.Curves.decelerate));
     case messages.FlutterStatefulWidgetExpression_Result.cupertinoApp:
       return $flutterSrcCupertinoApp.CupertinoApp(
@@ -13914,7 +13915,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           disabledColor: (tree.cupertinoButton.hasDisabledColor() ? evaluateRequiredDartColorExpression(tree.cupertinoButton.disabledColor) : $flutterSrcCupertinoColors.CupertinoColors.quaternarySystemFill),
           minSize: (tree.cupertinoButton.hasMinSize() ? tree.cupertinoButton.minSize : $flutterSrcCupertinoConstants.kMinInteractiveDimensionCupertino),
           pressedOpacity: (tree.cupertinoButton.hasPressedOpacity() ? tree.cupertinoButton.pressedOpacity : 0.4),
-          borderRadius: (tree.cupertinoButton.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.cupertinoButton.borderRadius) : null),
+          borderRadius: (tree.cupertinoButton.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.cupertinoButton.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.all($dartUi.Radius.circular(8.0))),
           alignment: (tree.cupertinoButton.hasAlignment() ? evaluateRequiredFlutterAlignmentGeometryExpression(tree.cupertinoButton.alignment) : $flutterSrcPaintingAlignment.Alignment.center),
           onPressed: null);
     case messages.FlutterStatefulWidgetExpression_Result.cupertinoButtonNamedFilled:
@@ -13925,7 +13926,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           disabledColor: (tree.cupertinoButtonNamedFilled.hasDisabledColor() ? evaluateRequiredDartColorExpression(tree.cupertinoButtonNamedFilled.disabledColor) : $flutterSrcCupertinoColors.CupertinoColors.quaternarySystemFill),
           minSize: (tree.cupertinoButtonNamedFilled.hasMinSize() ? tree.cupertinoButtonNamedFilled.minSize : $flutterSrcCupertinoConstants.kMinInteractiveDimensionCupertino),
           pressedOpacity: (tree.cupertinoButtonNamedFilled.hasPressedOpacity() ? tree.cupertinoButtonNamedFilled.pressedOpacity : 0.4),
-          borderRadius: (tree.cupertinoButtonNamedFilled.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.cupertinoButtonNamedFilled.borderRadius) : null),
+          borderRadius: (tree.cupertinoButtonNamedFilled.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.cupertinoButtonNamedFilled.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.all($dartUi.Radius.circular(8.0))),
           alignment: (tree.cupertinoButtonNamedFilled.hasAlignment() ? evaluateRequiredFlutterAlignmentGeometryExpression(tree.cupertinoButtonNamedFilled.alignment) : $flutterSrcPaintingAlignment.Alignment.center),
           onPressed: null);
     case messages.FlutterStatefulWidgetExpression_Result.cupertinoCheckbox:
@@ -14007,7 +14008,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           previousPageTitle: (tree.cupertinoNavigationBar.hasPreviousPageTitle() ? tree.cupertinoNavigationBar.previousPageTitle : null),
           middle: (tree.cupertinoNavigationBar.hasMiddle() ? evaluateWidgetExpression(tree.cupertinoNavigationBar.middle) : null),
           trailing: (tree.cupertinoNavigationBar.hasTrailing() ? evaluateWidgetExpression(tree.cupertinoNavigationBar.trailing) : null),
-          border: (tree.cupertinoNavigationBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoNavigationBar.border) : null),
+          border: (tree.cupertinoNavigationBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoNavigationBar.border) : $flutterSrcPaintingBoxBorder.Border(bottom: $flutterSrcPaintingBorders.BorderSide(color: $dartUi.Color(0x4D000000), width: 0.0))),
           backgroundColor: (tree.cupertinoNavigationBar.hasBackgroundColor() ? evaluateDartColorExpression(tree.cupertinoNavigationBar.backgroundColor) : null),
           brightness: (tree.cupertinoNavigationBar.hasBrightness() ? enums.convertDartBrightness(tree.cupertinoNavigationBar.brightness) : null),
           padding: (tree.cupertinoNavigationBar.hasPadding() ? evaluateFlutterEdgeInsetsDirectionalExpression(tree.cupertinoNavigationBar.padding) : null),
@@ -14032,7 +14033,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           itemExtent: (tree.cupertinoPicker.hasItemExtent() ? tree.cupertinoPicker.itemExtent : missing('itemExtent')),
           onSelectedItemChanged: null,
           children: tree.cupertinoPicker.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
-          selectionOverlay: (tree.cupertinoPicker.hasSelectionOverlay() ? evaluateWidgetExpression(tree.cupertinoPicker.selectionOverlay) : null),
+          selectionOverlay: (tree.cupertinoPicker.hasSelectionOverlay() ? evaluateWidgetExpression(tree.cupertinoPicker.selectionOverlay) : $flutterSrcCupertinoPicker.CupertinoPickerDefaultSelectionOverlay()),
           looping: (tree.cupertinoPicker.hasLooping() ? tree.cupertinoPicker.looping : false));
     case messages.FlutterStatefulWidgetExpression_Result.cupertinoScrollbar:
       return $flutterSrcCupertinoScrollbar.CupertinoScrollbar(
@@ -14059,13 +14060,13 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           backgroundColor: (tree.cupertinoSearchTextField.hasBackgroundColor() ? evaluateDartColorExpression(tree.cupertinoSearchTextField.backgroundColor) : null),
           borderRadius: (tree.cupertinoSearchTextField.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.cupertinoSearchTextField.borderRadius) : null),
           keyboardType: (tree.cupertinoSearchTextField.hasKeyboardType() ? evaluateFlutterTextInputTypeExpression(tree.cupertinoSearchTextField.keyboardType) : $flutterSrcServicesTextInput.TextInputType.text),
-          padding: (tree.cupertinoSearchTextField.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.padding) : missing('padding')),
+          padding: (tree.cupertinoSearchTextField.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsetsDirectional.fromSTEB(5.5, 8, 5.5, 8)),
           itemColor: (tree.cupertinoSearchTextField.hasItemColor() ? evaluateRequiredDartColorExpression(tree.cupertinoSearchTextField.itemColor) : $flutterSrcCupertinoColors.CupertinoColors.secondaryLabel),
           itemSize: (tree.cupertinoSearchTextField.hasItemSize() ? tree.cupertinoSearchTextField.itemSize : 20.0),
-          prefixInsets: (tree.cupertinoSearchTextField.hasPrefixInsets() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.prefixInsets) : missing('prefixInsets')),
-          prefixIcon: (tree.cupertinoSearchTextField.hasPrefixIcon() ? evaluateRequiredWidgetExpression(tree.cupertinoSearchTextField.prefixIcon) : missing('prefixIcon')),
-          suffixInsets: (tree.cupertinoSearchTextField.hasSuffixInsets() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.suffixInsets) : missing('suffixInsets')),
-          suffixIcon: (tree.cupertinoSearchTextField.hasSuffixIcon() ? evaluateRequiredFlutterIconExpression(tree.cupertinoSearchTextField.suffixIcon) : missing('suffixIcon')),
+          prefixInsets: (tree.cupertinoSearchTextField.hasPrefixInsets() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.prefixInsets) : $flutterSrcPaintingEdgeInsets.EdgeInsetsDirectional.fromSTEB(6, 0, 0, 3)),
+          prefixIcon: (tree.cupertinoSearchTextField.hasPrefixIcon() ? evaluateRequiredWidgetExpression(tree.cupertinoSearchTextField.prefixIcon) : $flutterSrcWidgetsIcon.Icon($flutterSrcCupertinoIcons.CupertinoIcons.search)),
+          suffixInsets: (tree.cupertinoSearchTextField.hasSuffixInsets() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.suffixInsets) : $flutterSrcPaintingEdgeInsets.EdgeInsetsDirectional.fromSTEB(0, 0, 5, 2)),
+          suffixIcon: (tree.cupertinoSearchTextField.hasSuffixIcon() ? evaluateRequiredFlutterIconExpression(tree.cupertinoSearchTextField.suffixIcon) : $flutterSrcWidgetsIcon.Icon($flutterSrcCupertinoIcons.CupertinoIcons.xmark_circle_fill)),
           suffixMode: (tree.cupertinoSearchTextField.hasSuffixMode() ? enums.convertRequiredOverlayVisibilityMode(tree.cupertinoSearchTextField.suffixMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.editing),
           onSuffixTap: null,
           restorationId: (tree.cupertinoSearchTextField.hasRestorationId() ? tree.cupertinoSearchTextField.restorationId : null),
@@ -14100,7 +14101,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           previousPageTitle: (tree.cupertinoSliverNavigationBar.hasPreviousPageTitle() ? tree.cupertinoSliverNavigationBar.previousPageTitle : null),
           middle: (tree.cupertinoSliverNavigationBar.hasMiddle() ? evaluateWidgetExpression(tree.cupertinoSliverNavigationBar.middle) : null),
           trailing: (tree.cupertinoSliverNavigationBar.hasTrailing() ? evaluateWidgetExpression(tree.cupertinoSliverNavigationBar.trailing) : null),
-          border: (tree.cupertinoSliverNavigationBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoSliverNavigationBar.border) : null),
+          border: (tree.cupertinoSliverNavigationBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoSliverNavigationBar.border) : $flutterSrcPaintingBoxBorder.Border(bottom: $flutterSrcPaintingBorders.BorderSide(color: $dartUi.Color(0x4D000000), width: 0.0))),
           backgroundColor: (tree.cupertinoSliverNavigationBar.hasBackgroundColor() ? evaluateDartColorExpression(tree.cupertinoSliverNavigationBar.backgroundColor) : null),
           brightness: (tree.cupertinoSliverNavigationBar.hasBrightness() ? enums.convertDartBrightness(tree.cupertinoSliverNavigationBar.brightness) : null),
           padding: (tree.cupertinoSliverNavigationBar.hasPadding() ? evaluateFlutterEdgeInsetsDirectionalExpression(tree.cupertinoSliverNavigationBar.padding) : null),
@@ -14146,10 +14147,10 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           controller: (tree.cupertinoTextField.hasController() ? evaluateFlutterTextEditingControllerExpression(tree.cupertinoTextField.controller) : null),
           focusNode: (tree.cupertinoTextField.hasFocusNode() ? evaluateFlutterFocusNodeExpression(tree.cupertinoTextField.focusNode) : null),
           undoController: (tree.cupertinoTextField.hasUndoController() ? evaluateFlutterUndoHistoryControllerExpression(tree.cupertinoTextField.undoController) : null),
-          decoration: (tree.cupertinoTextField.hasDecoration() ? evaluateFlutterBoxDecorationExpression(tree.cupertinoTextField.decoration) : null),
-          padding: (tree.cupertinoTextField.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoTextField.padding) : missing('padding')),
+          decoration: (tree.cupertinoTextField.hasDecoration() ? evaluateFlutterBoxDecorationExpression(tree.cupertinoTextField.decoration) : $flutterSrcPaintingBoxDecoration.BoxDecoration(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $flutterSrcCupertinoColors.CupertinoColors.white, darkColor: $flutterSrcCupertinoColors.CupertinoColors.black), border: $flutterSrcPaintingBoxBorder.Border(top: $flutterSrcPaintingBorders.BorderSide(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $dartUi.Color(0x33000000), darkColor: $dartUi.Color(0x33FFFFFF)), width: 0.0), bottom: $flutterSrcPaintingBorders.BorderSide(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $dartUi.Color(0x33000000), darkColor: $dartUi.Color(0x33FFFFFF)), width: 0.0), left: $flutterSrcPaintingBorders.BorderSide(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $dartUi.Color(0x33000000), darkColor: $dartUi.Color(0x33FFFFFF)), width: 0.0), right: $flutterSrcPaintingBorders.BorderSide(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $dartUi.Color(0x33000000), darkColor: $dartUi.Color(0x33FFFFFF)), width: 0.0)), borderRadius: $flutterSrcPaintingBorderRadius.BorderRadius.all($dartUi.Radius.circular(5.0)))),
+          padding: (tree.cupertinoTextField.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoTextField.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(7.0)),
           placeholder: (tree.cupertinoTextField.hasPlaceholder() ? tree.cupertinoTextField.placeholder : null),
-          placeholderStyle: (tree.cupertinoTextField.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextField.placeholderStyle) : null),
+          placeholderStyle: (tree.cupertinoTextField.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextField.placeholderStyle) : $flutterSrcPaintingTextStyle.TextStyle(fontWeight: $dartUi.FontWeight.w400, color: $flutterSrcCupertinoColors.CupertinoColors.placeholderText)),
           prefix: (tree.cupertinoTextField.hasPrefix() ? evaluateWidgetExpression(tree.cupertinoTextField.prefix) : null),
           prefixMode: (tree.cupertinoTextField.hasPrefixMode() ? enums.convertRequiredOverlayVisibilityMode(tree.cupertinoTextField.prefixMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.always),
           suffix: (tree.cupertinoTextField.hasSuffix() ? evaluateWidgetExpression(tree.cupertinoTextField.suffix) : null),
@@ -14185,13 +14186,13 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           enabled: (tree.cupertinoTextField.hasEnabled() ? tree.cupertinoTextField.enabled : true),
           cursorWidth: (tree.cupertinoTextField.hasCursorWidth() ? tree.cupertinoTextField.cursorWidth : 2.0),
           cursorHeight: (tree.cupertinoTextField.hasCursorHeight() ? tree.cupertinoTextField.cursorHeight : null),
-          cursorRadius: (tree.cupertinoTextField.hasCursorRadius() ? evaluateRequiredDartRadiusExpression(tree.cupertinoTextField.cursorRadius) : missing('cursorRadius')),
+          cursorRadius: (tree.cupertinoTextField.hasCursorRadius() ? evaluateRequiredDartRadiusExpression(tree.cupertinoTextField.cursorRadius) : $dartUi.Radius.circular(2.0)),
           cursorOpacityAnimates: (tree.cupertinoTextField.hasCursorOpacityAnimates() ? tree.cupertinoTextField.cursorOpacityAnimates : true),
           cursorColor: (tree.cupertinoTextField.hasCursorColor() ? evaluateDartColorExpression(tree.cupertinoTextField.cursorColor) : null),
           selectionHeightStyle: (tree.cupertinoTextField.hasSelectionHeightStyle() ? enums.convertRequiredDartBoxHeightStyle(tree.cupertinoTextField.selectionHeightStyle) : missing('selectionHeightStyle')),
           selectionWidthStyle: (tree.cupertinoTextField.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyle(tree.cupertinoTextField.selectionWidthStyle) : missing('selectionWidthStyle')),
           keyboardAppearance: (tree.cupertinoTextField.hasKeyboardAppearance() ? enums.convertDartBrightness(tree.cupertinoTextField.keyboardAppearance) : null),
-          scrollPadding: (tree.cupertinoTextField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextField.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.cupertinoTextField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextField.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           dragStartBehavior: (tree.cupertinoTextField.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehavior(tree.cupertinoTextField.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           enableInteractiveSelection: (tree.cupertinoTextField.hasEnableInteractiveSelection() ? tree.cupertinoTextField.enableInteractiveSelection : null),
           selectionControls: (tree.cupertinoTextField.hasSelectionControls() ? evaluateFlutterTextSelectionControlsExpression(tree.cupertinoTextField.selectionControls) : null),
@@ -14214,9 +14215,9 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           focusNode: (tree.cupertinoTextFieldNamedBorderless.hasFocusNode() ? evaluateFlutterFocusNodeExpression(tree.cupertinoTextFieldNamedBorderless.focusNode) : null),
           undoController: (tree.cupertinoTextFieldNamedBorderless.hasUndoController() ? evaluateFlutterUndoHistoryControllerExpression(tree.cupertinoTextFieldNamedBorderless.undoController) : null),
           decoration: (tree.cupertinoTextFieldNamedBorderless.hasDecoration() ? evaluateFlutterBoxDecorationExpression(tree.cupertinoTextFieldNamedBorderless.decoration) : null),
-          padding: (tree.cupertinoTextFieldNamedBorderless.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoTextFieldNamedBorderless.padding) : missing('padding')),
+          padding: (tree.cupertinoTextFieldNamedBorderless.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoTextFieldNamedBorderless.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(7.0)),
           placeholder: (tree.cupertinoTextFieldNamedBorderless.hasPlaceholder() ? tree.cupertinoTextFieldNamedBorderless.placeholder : null),
-          placeholderStyle: (tree.cupertinoTextFieldNamedBorderless.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextFieldNamedBorderless.placeholderStyle) : null),
+          placeholderStyle: (tree.cupertinoTextFieldNamedBorderless.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextFieldNamedBorderless.placeholderStyle) : $flutterSrcPaintingTextStyle.TextStyle(fontWeight: $dartUi.FontWeight.w400, color: $flutterSrcCupertinoColors.CupertinoColors.placeholderText)),
           prefix: (tree.cupertinoTextFieldNamedBorderless.hasPrefix() ? evaluateWidgetExpression(tree.cupertinoTextFieldNamedBorderless.prefix) : null),
           prefixMode: (tree.cupertinoTextFieldNamedBorderless.hasPrefixMode() ? enums.convertRequiredOverlayVisibilityMode(tree.cupertinoTextFieldNamedBorderless.prefixMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.always),
           suffix: (tree.cupertinoTextFieldNamedBorderless.hasSuffix() ? evaluateWidgetExpression(tree.cupertinoTextFieldNamedBorderless.suffix) : null),
@@ -14252,13 +14253,13 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           enabled: (tree.cupertinoTextFieldNamedBorderless.hasEnabled() ? tree.cupertinoTextFieldNamedBorderless.enabled : true),
           cursorWidth: (tree.cupertinoTextFieldNamedBorderless.hasCursorWidth() ? tree.cupertinoTextFieldNamedBorderless.cursorWidth : 2.0),
           cursorHeight: (tree.cupertinoTextFieldNamedBorderless.hasCursorHeight() ? tree.cupertinoTextFieldNamedBorderless.cursorHeight : null),
-          cursorRadius: (tree.cupertinoTextFieldNamedBorderless.hasCursorRadius() ? evaluateRequiredDartRadiusExpression(tree.cupertinoTextFieldNamedBorderless.cursorRadius) : missing('cursorRadius')),
+          cursorRadius: (tree.cupertinoTextFieldNamedBorderless.hasCursorRadius() ? evaluateRequiredDartRadiusExpression(tree.cupertinoTextFieldNamedBorderless.cursorRadius) : $dartUi.Radius.circular(2.0)),
           cursorOpacityAnimates: (tree.cupertinoTextFieldNamedBorderless.hasCursorOpacityAnimates() ? tree.cupertinoTextFieldNamedBorderless.cursorOpacityAnimates : true),
           cursorColor: (tree.cupertinoTextFieldNamedBorderless.hasCursorColor() ? evaluateDartColorExpression(tree.cupertinoTextFieldNamedBorderless.cursorColor) : null),
           selectionHeightStyle: (tree.cupertinoTextFieldNamedBorderless.hasSelectionHeightStyle() ? enums.convertRequiredDartBoxHeightStyle(tree.cupertinoTextFieldNamedBorderless.selectionHeightStyle) : missing('selectionHeightStyle')),
           selectionWidthStyle: (tree.cupertinoTextFieldNamedBorderless.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyle(tree.cupertinoTextFieldNamedBorderless.selectionWidthStyle) : missing('selectionWidthStyle')),
           keyboardAppearance: (tree.cupertinoTextFieldNamedBorderless.hasKeyboardAppearance() ? enums.convertDartBrightness(tree.cupertinoTextFieldNamedBorderless.keyboardAppearance) : null),
-          scrollPadding: (tree.cupertinoTextFieldNamedBorderless.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextFieldNamedBorderless.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.cupertinoTextFieldNamedBorderless.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextFieldNamedBorderless.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           dragStartBehavior: (tree.cupertinoTextFieldNamedBorderless.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehavior(tree.cupertinoTextFieldNamedBorderless.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           enableInteractiveSelection: (tree.cupertinoTextFieldNamedBorderless.hasEnableInteractiveSelection() ? tree.cupertinoTextFieldNamedBorderless.enableInteractiveSelection : null),
           selectionControls: (tree.cupertinoTextFieldNamedBorderless.hasSelectionControls() ? evaluateFlutterTextSelectionControlsExpression(tree.cupertinoTextFieldNamedBorderless.selectionControls) : null),
@@ -14316,14 +14317,14 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           cursorHeight: (tree.cupertinoTextFormFieldRow.hasCursorHeight() ? tree.cupertinoTextFormFieldRow.cursorHeight : null),
           cursorColor: (tree.cupertinoTextFormFieldRow.hasCursorColor() ? evaluateDartColorExpression(tree.cupertinoTextFormFieldRow.cursorColor) : null),
           keyboardAppearance: (tree.cupertinoTextFormFieldRow.hasKeyboardAppearance() ? enums.convertDartBrightness(tree.cupertinoTextFormFieldRow.keyboardAppearance) : null),
-          scrollPadding: (tree.cupertinoTextFormFieldRow.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextFormFieldRow.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.cupertinoTextFormFieldRow.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextFormFieldRow.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           enableInteractiveSelection: (tree.cupertinoTextFormFieldRow.hasEnableInteractiveSelection() ? tree.cupertinoTextFormFieldRow.enableInteractiveSelection : true),
           selectionControls: (tree.cupertinoTextFormFieldRow.hasSelectionControls() ? evaluateFlutterTextSelectionControlsExpression(tree.cupertinoTextFormFieldRow.selectionControls) : null),
           scrollPhysics: (tree.cupertinoTextFormFieldRow.hasScrollPhysics() ? evaluateFlutterScrollPhysicsExpression(tree.cupertinoTextFormFieldRow.scrollPhysics) : null),
           autofillHints: tree.cupertinoTextFormFieldRow.autofillHints,
           autovalidateMode: (tree.cupertinoTextFormFieldRow.hasAutovalidateMode() ? enums.convertRequiredFlutterAutovalidateMode(tree.cupertinoTextFormFieldRow.autovalidateMode) : missing('autovalidateMode')),
           placeholder: (tree.cupertinoTextFormFieldRow.hasPlaceholder() ? tree.cupertinoTextFormFieldRow.placeholder : null),
-          placeholderStyle: (tree.cupertinoTextFormFieldRow.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextFormFieldRow.placeholderStyle) : null),
+          placeholderStyle: (tree.cupertinoTextFormFieldRow.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextFormFieldRow.placeholderStyle) : $flutterSrcPaintingTextStyle.TextStyle(fontWeight: $dartUi.FontWeight.w400, color: $flutterSrcCupertinoColors.CupertinoColors.placeholderText)),
           contextMenuBuilder: null);
     case messages.FlutterStatefulWidgetExpression_Result.cupertinoTextSelectionToolbarButton:
       return $flutterSrcCupertinoTextSelectionToolbarButton.CupertinoTextSelectionToolbarButton(
@@ -14555,8 +14556,8 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           onUpdate: null,
           onDismissed: null,
           direction: (tree.flutterDismissible.hasDirection() ? enums.convertRequiredFlutterDismissDirection(tree.flutterDismissible.direction) : $flutterSrcWidgetsDismissible.DismissDirection.horizontal),
-          resizeDuration: (tree.flutterDismissible.hasResizeDuration() ? evaluateDartDurationExpression(tree.flutterDismissible.resizeDuration) : null),
-          movementDuration: (tree.flutterDismissible.hasMovementDuration() ? evaluateRequiredDartDurationExpression(tree.flutterDismissible.movementDuration) : missing('movementDuration')),
+          resizeDuration: (tree.flutterDismissible.hasResizeDuration() ? evaluateDartDurationExpression(tree.flutterDismissible.resizeDuration) : $dartCore.Duration(milliseconds: 300)),
+          movementDuration: (tree.flutterDismissible.hasMovementDuration() ? evaluateRequiredDartDurationExpression(tree.flutterDismissible.movementDuration) : $dartCore.Duration(milliseconds: 200)),
           crossAxisEndOffset: (tree.flutterDismissible.hasCrossAxisEndOffset() ? tree.flutterDismissible.crossAxisEndOffset : 0.0),
           dragStartBehavior: (tree.flutterDismissible.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehavior(tree.flutterDismissible.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           behavior: (tree.flutterDismissible.hasBehavior() ? enums.convertRequiredFlutterHitTestBehavior(tree.flutterDismissible.behavior) : $flutterSrcRenderingProxyBox.HitTestBehavior.opaque));
@@ -14636,7 +14637,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           paintCursorAboveText: (tree.flutterEditableText.hasPaintCursorAboveText() ? tree.flutterEditableText.paintCursorAboveText : false),
           selectionHeightStyle: (tree.flutterEditableText.hasSelectionHeightStyle() ? enums.convertRequiredDartBoxHeightStyle(tree.flutterEditableText.selectionHeightStyle) : missing('selectionHeightStyle')),
           selectionWidthStyle: (tree.flutterEditableText.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyle(tree.flutterEditableText.selectionWidthStyle) : missing('selectionWidthStyle')),
-          scrollPadding: (tree.flutterEditableText.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterEditableText.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.flutterEditableText.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterEditableText.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           keyboardAppearance: (tree.flutterEditableText.hasKeyboardAppearance() ? enums.convertRequiredDartBrightness(tree.flutterEditableText.keyboardAppearance) : $dartUi.Brightness.light),
           dragStartBehavior: (tree.flutterEditableText.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehavior(tree.flutterEditableText.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           enableInteractiveSelection: (tree.flutterEditableText.hasEnableInteractiveSelection() ? tree.flutterEditableText.enableInteractiveSelection : null),
@@ -14667,9 +14668,9 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           imageScale: (tree.flutterFadeInImageNamedAssetNetwork.hasImageScale() ? tree.flutterFadeInImageNamedAssetNetwork.imageScale : 1.0),
           excludeFromSemantics: (tree.flutterFadeInImageNamedAssetNetwork.hasExcludeFromSemantics() ? tree.flutterFadeInImageNamedAssetNetwork.excludeFromSemantics : false),
           imageSemanticLabel: (tree.flutterFadeInImageNamedAssetNetwork.hasImageSemanticLabel() ? tree.flutterFadeInImageNamedAssetNetwork.imageSemanticLabel : null),
-          fadeOutDuration: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeOutDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeOutDuration) : missing('fadeOutDuration')),
+          fadeOutDuration: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeOutDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeOutDuration) : $dartCore.Duration(milliseconds: 300)),
           fadeOutCurve: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeOutCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeOutCurve) : $flutterSrcAnimationCurves.Curves.easeOut),
-          fadeInDuration: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeInDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeInDuration) : missing('fadeInDuration')),
+          fadeInDuration: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeInDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeInDuration) : $dartCore.Duration(milliseconds: 700)),
           fadeInCurve: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeInCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeInCurve) : $flutterSrcAnimationCurves.Curves.easeIn),
           width: (tree.flutterFadeInImageNamedAssetNetwork.hasWidth() ? tree.flutterFadeInImageNamedAssetNetwork.width : null),
           height: (tree.flutterFadeInImageNamedAssetNetwork.hasHeight() ? tree.flutterFadeInImageNamedAssetNetwork.height : null),
@@ -14695,9 +14696,9 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           imageScale: (tree.flutterFadeInImageNamedMemoryNetwork.hasImageScale() ? tree.flutterFadeInImageNamedMemoryNetwork.imageScale : 1.0),
           excludeFromSemantics: (tree.flutterFadeInImageNamedMemoryNetwork.hasExcludeFromSemantics() ? tree.flutterFadeInImageNamedMemoryNetwork.excludeFromSemantics : false),
           imageSemanticLabel: (tree.flutterFadeInImageNamedMemoryNetwork.hasImageSemanticLabel() ? tree.flutterFadeInImageNamedMemoryNetwork.imageSemanticLabel : null),
-          fadeOutDuration: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeOutDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeOutDuration) : missing('fadeOutDuration')),
+          fadeOutDuration: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeOutDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeOutDuration) : $dartCore.Duration(milliseconds: 300)),
           fadeOutCurve: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeOutCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeOutCurve) : $flutterSrcAnimationCurves.Curves.easeOut),
-          fadeInDuration: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeInDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeInDuration) : missing('fadeInDuration')),
+          fadeInDuration: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeInDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeInDuration) : $dartCore.Duration(milliseconds: 700)),
           fadeInCurve: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeInCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeInCurve) : $flutterSrcAnimationCurves.Curves.easeIn),
           width: (tree.flutterFadeInImageNamedMemoryNetwork.hasWidth() ? tree.flutterFadeInImageNamedMemoryNetwork.width : null),
           height: (tree.flutterFadeInImageNamedMemoryNetwork.hasHeight() ? tree.flutterFadeInImageNamedMemoryNetwork.height : null),
@@ -15083,8 +15084,8 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           trackRadius: (tree.flutterRawScrollbar.hasTrackRadius() ? evaluateDartRadiusExpression(tree.flutterRawScrollbar.trackRadius) : null),
           trackColor: (tree.flutterRawScrollbar.hasTrackColor() ? evaluateDartColorExpression(tree.flutterRawScrollbar.trackColor) : null),
           trackBorderColor: (tree.flutterRawScrollbar.hasTrackBorderColor() ? evaluateDartColorExpression(tree.flutterRawScrollbar.trackBorderColor) : null),
-          fadeDuration: (tree.flutterRawScrollbar.hasFadeDuration() ? evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.fadeDuration) : missing('fadeDuration')),
-          timeToFade: (tree.flutterRawScrollbar.hasTimeToFade() ? evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.timeToFade) : missing('timeToFade')),
+          fadeDuration: (tree.flutterRawScrollbar.hasFadeDuration() ? evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.fadeDuration) : $dartCore.Duration(milliseconds: 300)),
+          timeToFade: (tree.flutterRawScrollbar.hasTimeToFade() ? evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.timeToFade) : $dartCore.Duration(milliseconds: 600)),
           pressDuration: (tree.flutterRawScrollbar.hasPressDuration() ? evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.pressDuration) : $dartCore.Duration.zero),
           interactive: (tree.flutterRawScrollbar.hasInteractive() ? tree.flutterRawScrollbar.interactive : null),
           scrollbarOrientation: (tree.flutterRawScrollbar.hasScrollbarOrientation() ? enums.convertFlutterScrollbarOrientation(tree.flutterRawScrollbar.scrollbarOrientation) : null),
@@ -15128,7 +15129,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
       return $flutterSrcWidgetsSemanticsDebugger.SemanticsDebugger(
           key: (tree.flutterSemanticsDebugger.hasKey() ? evaluateFlutterKeyExpression(tree.flutterSemanticsDebugger.key) : null),
           child: (tree.flutterSemanticsDebugger.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterSemanticsDebugger.child) : missing('child')),
-          labelStyle: (tree.flutterSemanticsDebugger.hasLabelStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterSemanticsDebugger.labelStyle) : missing('labelStyle')));
+          labelStyle: (tree.flutterSemanticsDebugger.hasLabelStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterSemanticsDebugger.labelStyle) : $flutterSrcPaintingTextStyle.TextStyle(color: $dartUi.Color(0xFF000000), fontSize: 10.0, height: 0.8)));
     case messages.FlutterStatefulWidgetExpression_Result.flutterSharedAppData:
       return $flutterSrcWidgetsSharedAppData.SharedAppData(
           key: (tree.flutterSharedAppData.hasKey() ? evaluateFlutterKeyExpression(tree.flutterSharedAppData.key) : null),
@@ -15570,7 +15571,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           isExpanded: (tree.materialExpandIcon.hasIsExpanded() ? tree.materialExpandIcon.isExpanded : false),
           size: (tree.materialExpandIcon.hasSize() ? tree.materialExpandIcon.size : 24.0),
           onPressed: null,
-          padding: (tree.materialExpandIcon.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialExpandIcon.padding) : missing('padding')),
+          padding: (tree.materialExpandIcon.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialExpandIcon.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(8.0)),
           color: (tree.materialExpandIcon.hasColor() ? evaluateDartColorExpression(tree.materialExpandIcon.color) : null),
           disabledColor: (tree.materialExpandIcon.hasDisabledColor() ? evaluateDartColorExpression(tree.materialExpandIcon.disabledColor) : null),
           expandedColor: (tree.materialExpandIcon.hasExpandedColor() ? evaluateDartColorExpression(tree.materialExpandIcon.expandedColor) : null));
@@ -16037,7 +16038,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           selectedShadowColor: (tree.materialRawChip.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialRawChip.selectedShadowColor) : null),
           showCheckmark: (tree.materialRawChip.hasShowCheckmark() ? tree.materialRawChip.showCheckmark : null),
           checkmarkColor: (tree.materialRawChip.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialRawChip.checkmarkColor) : null),
-          avatarBorder: (tree.materialRawChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialRawChip.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialRawChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialRawChip.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.FlutterStatefulWidgetExpression_Result.materialRawMaterialButton:
       return $flutterSrcMaterialButton.RawMaterialButton(
           key: (tree.materialRawMaterialButton.hasKey() ? evaluateFlutterKeyExpression(tree.materialRawMaterialButton.key) : null),
@@ -16058,8 +16059,8 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           disabledElevation: (tree.materialRawMaterialButton.hasDisabledElevation() ? tree.materialRawMaterialButton.disabledElevation : 0.0),
           padding: (tree.materialRawMaterialButton.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialRawMaterialButton.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.zero),
           visualDensity: (tree.materialRawMaterialButton.hasVisualDensity() ? evaluateRequiredMaterialVisualDensityExpression(tree.materialRawMaterialButton.visualDensity) : $flutterSrcMaterialThemeData.VisualDensity.standard),
-          constraints: (tree.materialRawMaterialButton.hasConstraints() ? evaluateRequiredFlutterBoxConstraintsExpression(tree.materialRawMaterialButton.constraints) : missing('constraints')),
-          shape: (tree.materialRawMaterialButton.hasShape() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialRawMaterialButton.shape) : missing('shape')),
+          constraints: (tree.materialRawMaterialButton.hasConstraints() ? evaluateRequiredFlutterBoxConstraintsExpression(tree.materialRawMaterialButton.constraints) : $flutterSrcRenderingBox.BoxConstraints(minWidth: 88.0, minHeight: 36.0)),
+          shape: (tree.materialRawMaterialButton.hasShape() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialRawMaterialButton.shape) : $flutterSrcPaintingRoundedRectangleBorder.RoundedRectangleBorder()),
           animationDuration: (tree.materialRawMaterialButton.hasAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialRawMaterialButton.animationDuration) : $flutterSrcMaterialConstants.kThemeChangeDuration),
           clipBehavior: (tree.materialRawMaterialButton.hasClipBehavior() ? enums.convertRequiredDartClip(tree.materialRawMaterialButton.clipBehavior) : $dartUi.Clip.none),
           focusNode: (tree.materialRawMaterialButton.hasFocusNode() ? evaluateFlutterFocusNodeExpression(tree.materialRawMaterialButton.focusNode) : null),
@@ -16080,8 +16081,8 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           semanticsValue: (tree.materialRefreshProgressIndicator.hasSemanticsValue() ? tree.materialRefreshProgressIndicator.semanticsValue : null),
           strokeCap: (tree.materialRefreshProgressIndicator.hasStrokeCap() ? enums.convertDartStrokeCap(tree.materialRefreshProgressIndicator.strokeCap) : null),
           elevation: (tree.materialRefreshProgressIndicator.hasElevation() ? tree.materialRefreshProgressIndicator.elevation : 2.0),
-          indicatorMargin: (tree.materialRefreshProgressIndicator.hasIndicatorMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialRefreshProgressIndicator.indicatorMargin) : missing('indicatorMargin')),
-          indicatorPadding: (tree.materialRefreshProgressIndicator.hasIndicatorPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialRefreshProgressIndicator.indicatorPadding) : missing('indicatorPadding')));
+          indicatorMargin: (tree.materialRefreshProgressIndicator.hasIndicatorMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialRefreshProgressIndicator.indicatorMargin) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(4.0)),
+          indicatorPadding: (tree.materialRefreshProgressIndicator.hasIndicatorPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialRefreshProgressIndicator.indicatorPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(12.0)));
     case messages.FlutterStatefulWidgetExpression_Result.materialScaffold:
       return $flutterSrcMaterialScaffold.Scaffold(
           key: (tree.materialScaffold.hasKey() ? evaluateFlutterKeyExpression(tree.materialScaffold.key) : null),
@@ -16381,7 +16382,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           actionOverflowThreshold: (tree.materialSnackBar.hasActionOverflowThreshold() ? tree.materialSnackBar.actionOverflowThreshold : null),
           showCloseIcon: (tree.materialSnackBar.hasShowCloseIcon() ? tree.materialSnackBar.showCloseIcon : null),
           closeIconColor: (tree.materialSnackBar.hasCloseIconColor() ? evaluateDartColorExpression(tree.materialSnackBar.closeIconColor) : null),
-          duration: (tree.materialSnackBar.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialSnackBar.duration) : missing('duration')),
+          duration: (tree.materialSnackBar.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialSnackBar.duration) : $dartCore.Duration(milliseconds: 4000)),
           animation: null,
           onVisible: null,
           dismissDirection: (tree.materialSnackBar.hasDismissDirection() ? enums.convertRequiredFlutterDismissDirection(tree.materialSnackBar.dismissDirection) : $flutterSrcWidgetsDismissible.DismissDirection.down),
@@ -16522,7 +16523,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           controller: (tree.materialTextField.hasController() ? evaluateFlutterTextEditingControllerExpression(tree.materialTextField.controller) : null),
           focusNode: (tree.materialTextField.hasFocusNode() ? evaluateFlutterFocusNodeExpression(tree.materialTextField.focusNode) : null),
           undoController: (tree.materialTextField.hasUndoController() ? evaluateFlutterUndoHistoryControllerExpression(tree.materialTextField.undoController) : null),
-          decoration: (tree.materialTextField.hasDecoration() ? evaluateMaterialInputDecorationExpression(tree.materialTextField.decoration) : null),
+          decoration: (tree.materialTextField.hasDecoration() ? evaluateMaterialInputDecorationExpression(tree.materialTextField.decoration) : $flutterSrcMaterialInputDecorator.InputDecoration()),
           keyboardType: (tree.materialTextField.hasKeyboardType() ? evaluateFlutterTextInputTypeExpression(tree.materialTextField.keyboardType) : null),
           textInputAction: (tree.materialTextField.hasTextInputAction() ? enums.convertFlutterTextInputAction(tree.materialTextField.textInputAction) : null),
           textCapitalization: (tree.materialTextField.hasTextCapitalization() ? enums.convertRequiredFlutterTextCapitalization(tree.materialTextField.textCapitalization) : $flutterSrcServicesTextInput.TextCapitalization.none),
@@ -16559,7 +16560,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           selectionHeightStyle: (tree.materialTextField.hasSelectionHeightStyle() ? enums.convertRequiredDartBoxHeightStyle(tree.materialTextField.selectionHeightStyle) : missing('selectionHeightStyle')),
           selectionWidthStyle: (tree.materialTextField.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyle(tree.materialTextField.selectionWidthStyle) : missing('selectionWidthStyle')),
           keyboardAppearance: (tree.materialTextField.hasKeyboardAppearance() ? enums.convertDartBrightness(tree.materialTextField.keyboardAppearance) : null),
-          scrollPadding: (tree.materialTextField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialTextField.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.materialTextField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialTextField.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           dragStartBehavior: (tree.materialTextField.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehavior(tree.materialTextField.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           enableInteractiveSelection: (tree.materialTextField.hasEnableInteractiveSelection() ? tree.materialTextField.enableInteractiveSelection : null),
           selectionControls: (tree.materialTextField.hasSelectionControls() ? evaluateFlutterTextSelectionControlsExpression(tree.materialTextField.selectionControls) : null),
@@ -16585,7 +16586,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           controller: (tree.materialTextFormField.hasController() ? evaluateFlutterTextEditingControllerExpression(tree.materialTextFormField.controller) : null),
           initialValue: (tree.materialTextFormField.hasInitialValue() ? tree.materialTextFormField.initialValue : null),
           focusNode: (tree.materialTextFormField.hasFocusNode() ? evaluateFlutterFocusNodeExpression(tree.materialTextFormField.focusNode) : null),
-          decoration: (tree.materialTextFormField.hasDecoration() ? evaluateMaterialInputDecorationExpression(tree.materialTextFormField.decoration) : null),
+          decoration: (tree.materialTextFormField.hasDecoration() ? evaluateMaterialInputDecorationExpression(tree.materialTextFormField.decoration) : $flutterSrcMaterialInputDecorator.InputDecoration()),
           keyboardType: (tree.materialTextFormField.hasKeyboardType() ? evaluateFlutterTextInputTypeExpression(tree.materialTextFormField.keyboardType) : null),
           textCapitalization: (tree.materialTextFormField.hasTextCapitalization() ? enums.convertRequiredFlutterTextCapitalization(tree.materialTextFormField.textCapitalization) : $flutterSrcServicesTextInput.TextCapitalization.none),
           textInputAction: (tree.materialTextFormField.hasTextInputAction() ? enums.convertFlutterTextInputAction(tree.materialTextFormField.textInputAction) : null),
@@ -16622,7 +16623,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           cursorRadius: (tree.materialTextFormField.hasCursorRadius() ? evaluateDartRadiusExpression(tree.materialTextFormField.cursorRadius) : null),
           cursorColor: (tree.materialTextFormField.hasCursorColor() ? evaluateDartColorExpression(tree.materialTextFormField.cursorColor) : null),
           keyboardAppearance: (tree.materialTextFormField.hasKeyboardAppearance() ? enums.convertDartBrightness(tree.materialTextFormField.keyboardAppearance) : null),
-          scrollPadding: (tree.materialTextFormField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialTextFormField.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.materialTextFormField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialTextFormField.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           enableInteractiveSelection: (tree.materialTextFormField.hasEnableInteractiveSelection() ? tree.materialTextFormField.enableInteractiveSelection : null),
           selectionControls: (tree.materialTextFormField.hasSelectionControls() ? evaluateFlutterTextSelectionControlsExpression(tree.materialTextFormField.selectionControls) : null),
           buildCounter: null,
@@ -16684,11 +16685,11 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
       return $flutterSrcMaterialUserAccountsDrawerHeader.UserAccountsDrawerHeader(
           key: (tree.materialUserAccountsDrawerHeader.hasKey() ? evaluateFlutterKeyExpression(tree.materialUserAccountsDrawerHeader.key) : null),
           decoration: (tree.materialUserAccountsDrawerHeader.hasDecoration() ? evaluateFlutterDecorationExpression(tree.materialUserAccountsDrawerHeader.decoration) : null),
-          margin: (tree.materialUserAccountsDrawerHeader.hasMargin() ? evaluateFlutterEdgeInsetsGeometryExpression(tree.materialUserAccountsDrawerHeader.margin) : null),
+          margin: (tree.materialUserAccountsDrawerHeader.hasMargin() ? evaluateFlutterEdgeInsetsGeometryExpression(tree.materialUserAccountsDrawerHeader.margin) : $flutterSrcPaintingEdgeInsets.EdgeInsets.only(bottom: 8.0)),
           currentAccountPicture: (tree.materialUserAccountsDrawerHeader.hasCurrentAccountPicture() ? evaluateWidgetExpression(tree.materialUserAccountsDrawerHeader.currentAccountPicture) : null),
           otherAccountsPictures: tree.materialUserAccountsDrawerHeader.otherAccountsPictures.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
-          currentAccountPictureSize: (tree.materialUserAccountsDrawerHeader.hasCurrentAccountPictureSize() ? evaluateRequiredDartSizeExpression(tree.materialUserAccountsDrawerHeader.currentAccountPictureSize) : missing('currentAccountPictureSize')),
-          otherAccountsPicturesSize: (tree.materialUserAccountsDrawerHeader.hasOtherAccountsPicturesSize() ? evaluateRequiredDartSizeExpression(tree.materialUserAccountsDrawerHeader.otherAccountsPicturesSize) : missing('otherAccountsPicturesSize')),
+          currentAccountPictureSize: (tree.materialUserAccountsDrawerHeader.hasCurrentAccountPictureSize() ? evaluateRequiredDartSizeExpression(tree.materialUserAccountsDrawerHeader.currentAccountPictureSize) : $dartUi.Size.square(72.0)),
+          otherAccountsPicturesSize: (tree.materialUserAccountsDrawerHeader.hasOtherAccountsPicturesSize() ? evaluateRequiredDartSizeExpression(tree.materialUserAccountsDrawerHeader.otherAccountsPicturesSize) : $dartUi.Size.square(40.0)),
           accountName: (tree.materialUserAccountsDrawerHeader.hasAccountName() ? evaluateWidgetExpression(tree.materialUserAccountsDrawerHeader.accountName) : null),
           accountEmail: (tree.materialUserAccountsDrawerHeader.hasAccountEmail() ? evaluateWidgetExpression(tree.materialUserAccountsDrawerHeader.accountEmail) : null),
           onDetailsPressed: null,
@@ -16777,7 +16778,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
           children: tree.cupertinoFormSectionNamedInsetGrouped.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           header: (tree.cupertinoFormSectionNamedInsetGrouped.hasHeader() ? evaluateWidgetExpression(tree.cupertinoFormSectionNamedInsetGrouped.header) : null),
           footer: (tree.cupertinoFormSectionNamedInsetGrouped.hasFooter() ? evaluateWidgetExpression(tree.cupertinoFormSectionNamedInsetGrouped.footer) : null),
-          margin: (tree.cupertinoFormSectionNamedInsetGrouped.hasMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoFormSectionNamedInsetGrouped.margin) : missing('margin')),
+          margin: (tree.cupertinoFormSectionNamedInsetGrouped.hasMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoFormSectionNamedInsetGrouped.margin) : $flutterSrcPaintingEdgeInsets.EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 10.0)),
           backgroundColor: (tree.cupertinoFormSectionNamedInsetGrouped.hasBackgroundColor() ? evaluateRequiredDartColorExpression(tree.cupertinoFormSectionNamedInsetGrouped.backgroundColor) : $flutterSrcCupertinoColors.CupertinoColors.systemGroupedBackground),
           decoration: (tree.cupertinoFormSectionNamedInsetGrouped.hasDecoration() ? evaluateFlutterBoxDecorationExpression(tree.cupertinoFormSectionNamedInsetGrouped.decoration) : null),
           clipBehavior: (tree.cupertinoFormSectionNamedInsetGrouped.hasClipBehavior() ? enums.convertRequiredDartClip(tree.cupertinoFormSectionNamedInsetGrouped.clipBehavior) : $dartUi.Clip.none));
@@ -16787,7 +16788,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
           children: tree.cupertinoListSection.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           header: (tree.cupertinoListSection.hasHeader() ? evaluateWidgetExpression(tree.cupertinoListSection.header) : null),
           footer: (tree.cupertinoListSection.hasFooter() ? evaluateWidgetExpression(tree.cupertinoListSection.footer) : null),
-          margin: (tree.cupertinoListSection.hasMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoListSection.margin) : missing('margin')),
+          margin: (tree.cupertinoListSection.hasMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoListSection.margin) : $flutterSrcPaintingEdgeInsets.EdgeInsets.only(bottom: 8.0)),
           backgroundColor: (tree.cupertinoListSection.hasBackgroundColor() ? evaluateRequiredDartColorExpression(tree.cupertinoListSection.backgroundColor) : $flutterSrcCupertinoColors.CupertinoColors.systemGroupedBackground),
           decoration: (tree.cupertinoListSection.hasDecoration() ? evaluateFlutterBoxDecorationExpression(tree.cupertinoListSection.decoration) : null),
           clipBehavior: (tree.cupertinoListSection.hasClipBehavior() ? enums.convertRequiredDartClip(tree.cupertinoListSection.clipBehavior) : $dartUi.Clip.none),
@@ -16817,11 +16818,11 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
     case messages.FlutterStatelessWidgetExpression_Result.cupertinoMagnifier:
       return $flutterSrcCupertinoMagnifier.CupertinoMagnifier(
           key: (tree.cupertinoMagnifier.hasKey() ? evaluateFlutterKeyExpression(tree.cupertinoMagnifier.key) : null),
-          size: (tree.cupertinoMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.cupertinoMagnifier.size) : missing('size')),
-          borderRadius: (tree.cupertinoMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.cupertinoMagnifier.borderRadius) : missing('borderRadius')),
+          size: (tree.cupertinoMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.cupertinoMagnifier.size) : $dartUi.Size(80, 47.5)),
+          borderRadius: (tree.cupertinoMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.cupertinoMagnifier.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.all($dartUi.Radius.elliptical(60, 50))),
           additionalFocalPointOffset: (tree.cupertinoMagnifier.hasAdditionalFocalPointOffset() ? evaluateRequiredDartOffsetExpression(tree.cupertinoMagnifier.additionalFocalPointOffset) : $dartUi.Offset.zero),
           shadows: tree.cupertinoMagnifier.shadows.map((e) => evaluateRequiredFlutterBoxShadowExpression(e)).toList(),
-          borderSide: (tree.cupertinoMagnifier.hasBorderSide() ? evaluateRequiredFlutterBorderSideExpression(tree.cupertinoMagnifier.borderSide) : missing('borderSide')),
+          borderSide: (tree.cupertinoMagnifier.hasBorderSide() ? evaluateRequiredFlutterBorderSideExpression(tree.cupertinoMagnifier.borderSide) : $flutterSrcPaintingBorders.BorderSide(color: $dartUi.Color.fromARGB(255, 232, 232, 232))),
           inOutAnimation: null);
     case messages.FlutterStatelessWidgetExpression_Result.cupertinoNavigationBarBackButton:
       return $flutterSrcCupertinoNavBar.CupertinoNavigationBarBackButton(
@@ -16860,7 +16861,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
           inactiveColor: (tree.cupertinoTabBar.hasInactiveColor() ? evaluateRequiredDartColorExpression(tree.cupertinoTabBar.inactiveColor) : $flutterSrcCupertinoColors.CupertinoColors.inactiveGray),
           iconSize: (tree.cupertinoTabBar.hasIconSize() ? tree.cupertinoTabBar.iconSize : 30.0),
           height: (tree.cupertinoTabBar.hasHeight() ? tree.cupertinoTabBar.height : 50.0),
-          border: (tree.cupertinoTabBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoTabBar.border) : null));
+          border: (tree.cupertinoTabBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoTabBar.border) : $flutterSrcPaintingBoxBorder.Border(top: $flutterSrcPaintingBorders.BorderSide(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $dartUi.Color(0x4D000000), darkColor: $dartUi.Color(0x29000000)), width: 0.0))));
     case messages.FlutterStatelessWidgetExpression_Result.cupertinoTextSelectionToolbar:
       return $flutterSrcCupertinoTextSelectionToolbar.CupertinoTextSelectionToolbar(
           key: (tree.cupertinoTextSelectionToolbar.hasKey() ? evaluateFlutterKeyExpression(tree.cupertinoTextSelectionToolbar.key) : null),
@@ -16880,7 +16881,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
           textDirection: (tree.flutterBanner.hasTextDirection() ? enums.convertDartTextDirection(tree.flutterBanner.textDirection) : null),
           location: (tree.flutterBanner.hasLocation() ? enums.convertRequiredFlutterBannerLocation(tree.flutterBanner.location) : missing('location')),
           layoutDirection: (tree.flutterBanner.hasLayoutDirection() ? enums.convertDartTextDirection(tree.flutterBanner.layoutDirection) : null),
-          color: (tree.flutterBanner.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBanner.color) : missing('color')),
+          color: (tree.flutterBanner.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBanner.color) : $dartUi.Color(0xA0B71C1C)),
           textStyle: (tree.flutterBanner.hasTextStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterBanner.textStyle) : missing('textStyle')));
     case messages.FlutterStatelessWidgetExpression_Result.flutterCheckedModeBanner:
       return $flutterSrcWidgetsBanner.CheckedModeBanner(
@@ -17010,7 +17011,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
     case messages.FlutterStatelessWidgetExpression_Result.flutterGridPaper:
       return $flutterSrcWidgetsGridPaper.GridPaper(
           key: (tree.flutterGridPaper.hasKey() ? evaluateFlutterKeyExpression(tree.flutterGridPaper.key) : null),
-          color: (tree.flutterGridPaper.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterGridPaper.color) : missing('color')),
+          color: (tree.flutterGridPaper.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterGridPaper.color) : $dartUi.Color(0x7FC3E8F3)),
           interval: (tree.flutterGridPaper.hasInterval() ? tree.flutterGridPaper.interval : 100.0),
           divisions: (tree.flutterGridPaper.hasDivisions() ? tree.flutterGridPaper.divisions : 2),
           subdivisions: (tree.flutterGridPaper.hasSubdivisions() ? tree.flutterGridPaper.subdivisions : 5),
@@ -17233,7 +17234,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
     case messages.FlutterStatelessWidgetExpression_Result.flutterPlaceholder:
       return $flutterSrcWidgetsPlaceholder.Placeholder(
           key: (tree.flutterPlaceholder.hasKey() ? evaluateFlutterKeyExpression(tree.flutterPlaceholder.key) : null),
-          color: (tree.flutterPlaceholder.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterPlaceholder.color) : missing('color')),
+          color: (tree.flutterPlaceholder.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterPlaceholder.color) : $dartUi.Color(0xFF455A64)),
           strokeWidth: (tree.flutterPlaceholder.hasStrokeWidth() ? tree.flutterPlaceholder.strokeWidth : 2.0),
           fallbackWidth: (tree.flutterPlaceholder.hasFallbackWidth() ? tree.flutterPlaceholder.fallbackWidth : 400.0),
           fallbackHeight: (tree.flutterPlaceholder.hasFallbackHeight() ? tree.flutterPlaceholder.fallbackHeight : 400.0),
@@ -17264,7 +17265,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
       return $flutterSrcWidgetsMagnifier.RawMagnifier(
           key: (tree.flutterRawMagnifier.hasKey() ? evaluateFlutterKeyExpression(tree.flutterRawMagnifier.key) : null),
           child: (tree.flutterRawMagnifier.hasChild() ? evaluateWidgetExpression(tree.flutterRawMagnifier.child) : null),
-          decoration: (tree.flutterRawMagnifier.hasDecoration() ? evaluateRequiredFlutterMagnifierDecorationExpression(tree.flutterRawMagnifier.decoration) : missing('decoration')),
+          decoration: (tree.flutterRawMagnifier.hasDecoration() ? evaluateRequiredFlutterMagnifierDecorationExpression(tree.flutterRawMagnifier.decoration) : $flutterSrcWidgetsMagnifier.MagnifierDecoration()),
           focalPointOffset: (tree.flutterRawMagnifier.hasFocalPointOffset() ? evaluateRequiredDartOffsetExpression(tree.flutterRawMagnifier.focalPointOffset) : $dartUi.Offset.zero),
           magnificationScale: (tree.flutterRawMagnifier.hasMagnificationScale() ? tree.flutterRawMagnifier.magnificationScale : 1),
           size: (tree.flutterRawMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.flutterRawMagnifier.size) : missing('size')));
@@ -17340,7 +17341,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
       return $flutterSrcWidgetsVisibility.SliverVisibility(
           key: (tree.flutterSliverVisibility.hasKey() ? evaluateFlutterKeyExpression(tree.flutterSliverVisibility.key) : null),
           sliver: (tree.flutterSliverVisibility.hasSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibility.sliver) : missing('sliver')),
-          replacementSliver: (tree.flutterSliverVisibility.hasReplacementSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibility.replacementSliver) : missing('replacementSliver')),
+          replacementSliver: (tree.flutterSliverVisibility.hasReplacementSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibility.replacementSliver) : $flutterSrcWidgetsBasic.SliverToBoxAdapter()),
           visible: (tree.flutterSliverVisibility.hasVisible() ? tree.flutterSliverVisibility.visible : true),
           maintainState: (tree.flutterSliverVisibility.hasMaintainState() ? tree.flutterSliverVisibility.maintainState : false),
           maintainAnimation: (tree.flutterSliverVisibility.hasMaintainAnimation() ? tree.flutterSliverVisibility.maintainAnimation : false),
@@ -17351,7 +17352,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
       return $flutterSrcWidgetsVisibility.SliverVisibility.maintain(
           key: (tree.flutterSliverVisibilityNamedMaintain.hasKey() ? evaluateFlutterKeyExpression(tree.flutterSliverVisibilityNamedMaintain.key) : null),
           sliver: (tree.flutterSliverVisibilityNamedMaintain.hasSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibilityNamedMaintain.sliver) : missing('sliver')),
-          replacementSliver: (tree.flutterSliverVisibilityNamedMaintain.hasReplacementSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibilityNamedMaintain.replacementSliver) : missing('replacementSliver')),
+          replacementSliver: (tree.flutterSliverVisibilityNamedMaintain.hasReplacementSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibilityNamedMaintain.replacementSliver) : $flutterSrcWidgetsBasic.SliverToBoxAdapter()),
           visible: (tree.flutterSliverVisibilityNamedMaintain.hasVisible() ? tree.flutterSliverVisibilityNamedMaintain.visible : true));
     case messages.FlutterStatelessWidgetExpression_Result.flutterSpacer:
       return $flutterSrcWidgetsSpacer.Spacer(
@@ -17419,7 +17420,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
       return $flutterSrcWidgetsVisibility.Visibility(
           key: (tree.flutterVisibility.hasKey() ? evaluateFlutterKeyExpression(tree.flutterVisibility.key) : null),
           child: (tree.flutterVisibility.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterVisibility.child) : missing('child')),
-          replacement: (tree.flutterVisibility.hasReplacement() ? evaluateRequiredWidgetExpression(tree.flutterVisibility.replacement) : missing('replacement')),
+          replacement: (tree.flutterVisibility.hasReplacement() ? evaluateRequiredWidgetExpression(tree.flutterVisibility.replacement) : $flutterSrcWidgetsBasic.SizedBox.shrink()),
           visible: (tree.flutterVisibility.hasVisible() ? tree.flutterVisibility.visible : true),
           maintainState: (tree.flutterVisibility.hasMaintainState() ? tree.flutterVisibility.maintainState : false),
           maintainAnimation: (tree.flutterVisibility.hasMaintainAnimation() ? tree.flutterVisibility.maintainAnimation : false),
@@ -17555,7 +17556,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
           shadowColor: (tree.materialAlertDialog.hasShadowColor() ? evaluateDartColorExpression(tree.materialAlertDialog.shadowColor) : null),
           surfaceTintColor: (tree.materialAlertDialog.hasSurfaceTintColor() ? evaluateDartColorExpression(tree.materialAlertDialog.surfaceTintColor) : null),
           semanticLabel: (tree.materialAlertDialog.hasSemanticLabel() ? tree.materialAlertDialog.semanticLabel : null),
-          insetPadding: (tree.materialAlertDialog.hasInsetPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialAlertDialog.insetPadding) : missing('insetPadding')),
+          insetPadding: (tree.materialAlertDialog.hasInsetPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialAlertDialog.insetPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(horizontal: 40.0, vertical: 24.0)),
           clipBehavior: (tree.materialAlertDialog.hasClipBehavior() ? enums.convertRequiredDartClip(tree.materialAlertDialog.clipBehavior) : $dartUi.Clip.none),
           shape: (tree.materialAlertDialog.hasShape() ? evaluateFlutterShapeBorderExpression(tree.materialAlertDialog.shape) : null),
           alignment: (tree.materialAlertDialog.hasAlignment() ? evaluateFlutterAlignmentGeometryExpression(tree.materialAlertDialog.alignment) : null),
@@ -17799,7 +17800,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
           selectedShadowColor: (tree.materialChoiceChip.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialChoiceChip.selectedShadowColor) : null),
           showCheckmark: (tree.materialChoiceChip.hasShowCheckmark() ? tree.materialChoiceChip.showCheckmark : null),
           checkmarkColor: (tree.materialChoiceChip.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialChoiceChip.checkmarkColor) : null),
-          avatarBorder: (tree.materialChoiceChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialChoiceChip.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialChoiceChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialChoiceChip.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.FlutterStatelessWidgetExpression_Result.materialChoiceChipNamedElevated:
       return $flutterSrcMaterialChoiceChip.ChoiceChip.elevated(
           key: (tree.materialChoiceChipNamedElevated.hasKey() ? evaluateFlutterKeyExpression(tree.materialChoiceChipNamedElevated.key) : null),
@@ -17830,7 +17831,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
           selectedShadowColor: (tree.materialChoiceChipNamedElevated.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialChoiceChipNamedElevated.selectedShadowColor) : null),
           showCheckmark: (tree.materialChoiceChipNamedElevated.hasShowCheckmark() ? tree.materialChoiceChipNamedElevated.showCheckmark : null),
           checkmarkColor: (tree.materialChoiceChipNamedElevated.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialChoiceChipNamedElevated.checkmarkColor) : null),
-          avatarBorder: (tree.materialChoiceChipNamedElevated.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialChoiceChipNamedElevated.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialChoiceChipNamedElevated.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialChoiceChipNamedElevated.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.FlutterStatelessWidgetExpression_Result.materialCircleAvatar:
       return $flutterSrcMaterialCircleAvatar.CircleAvatar(
           key: (tree.materialCircleAvatar.hasKey() ? evaluateFlutterKeyExpression(tree.materialCircleAvatar.key) : null),
@@ -17900,9 +17901,9 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
           elevation: (tree.materialDialog.hasElevation() ? tree.materialDialog.elevation : null),
           shadowColor: (tree.materialDialog.hasShadowColor() ? evaluateDartColorExpression(tree.materialDialog.shadowColor) : null),
           surfaceTintColor: (tree.materialDialog.hasSurfaceTintColor() ? evaluateDartColorExpression(tree.materialDialog.surfaceTintColor) : null),
-          insetAnimationDuration: (tree.materialDialog.hasInsetAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialDialog.insetAnimationDuration) : missing('insetAnimationDuration')),
+          insetAnimationDuration: (tree.materialDialog.hasInsetAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialDialog.insetAnimationDuration) : $dartCore.Duration(milliseconds: 100)),
           insetAnimationCurve: (tree.materialDialog.hasInsetAnimationCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.materialDialog.insetAnimationCurve) : $flutterSrcAnimationCurves.Curves.decelerate),
-          insetPadding: (tree.materialDialog.hasInsetPadding() ? evaluateFlutterEdgeInsetsExpression(tree.materialDialog.insetPadding) : null),
+          insetPadding: (tree.materialDialog.hasInsetPadding() ? evaluateFlutterEdgeInsetsExpression(tree.materialDialog.insetPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(horizontal: 40.0, vertical: 24.0)),
           clipBehavior: (tree.materialDialog.hasClipBehavior() ? enums.convertRequiredDartClip(tree.materialDialog.clipBehavior) : $dartUi.Clip.none),
           shape: (tree.materialDialog.hasShape() ? evaluateFlutterShapeBorderExpression(tree.materialDialog.shape) : null),
           alignment: (tree.materialDialog.hasAlignment() ? evaluateFlutterAlignmentGeometryExpression(tree.materialDialog.alignment) : null),
@@ -17946,9 +17947,9 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
       return $flutterSrcMaterialDrawerHeader.DrawerHeader(
           key: (tree.materialDrawerHeader.hasKey() ? evaluateFlutterKeyExpression(tree.materialDrawerHeader.key) : null),
           decoration: (tree.materialDrawerHeader.hasDecoration() ? evaluateFlutterDecorationExpression(tree.materialDrawerHeader.decoration) : null),
-          margin: (tree.materialDrawerHeader.hasMargin() ? evaluateFlutterEdgeInsetsGeometryExpression(tree.materialDrawerHeader.margin) : null),
-          padding: (tree.materialDrawerHeader.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialDrawerHeader.padding) : missing('padding')),
-          duration: (tree.materialDrawerHeader.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialDrawerHeader.duration) : missing('duration')),
+          margin: (tree.materialDrawerHeader.hasMargin() ? evaluateFlutterEdgeInsetsGeometryExpression(tree.materialDrawerHeader.margin) : $flutterSrcPaintingEdgeInsets.EdgeInsets.only(bottom: 8.0)),
+          padding: (tree.materialDrawerHeader.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialDrawerHeader.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 8.0)),
+          duration: (tree.materialDrawerHeader.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialDrawerHeader.duration) : $dartCore.Duration(milliseconds: 250)),
           curve: (tree.materialDrawerHeader.hasCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.materialDrawerHeader.curve) : $flutterSrcAnimationCurves.Curves.fastOutSlowIn),
           child: (tree.materialDrawerHeader.hasChild() ? evaluateWidgetExpression(tree.materialDrawerHeader.child) : null));
     case messages.FlutterStatelessWidgetExpression_Result.materialDropdownMenuItem:
@@ -17996,7 +17997,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
           selectedShadowColor: (tree.materialFilterChip.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialFilterChip.selectedShadowColor) : null),
           showCheckmark: (tree.materialFilterChip.hasShowCheckmark() ? tree.materialFilterChip.showCheckmark : null),
           checkmarkColor: (tree.materialFilterChip.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialFilterChip.checkmarkColor) : null),
-          avatarBorder: (tree.materialFilterChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialFilterChip.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialFilterChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialFilterChip.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.FlutterStatelessWidgetExpression_Result.materialFilterChipNamedElevated:
       return $flutterSrcMaterialFilterChip.FilterChip.elevated(
           key: (tree.materialFilterChipNamedElevated.hasKey() ? evaluateFlutterKeyExpression(tree.materialFilterChipNamedElevated.key) : null),
@@ -18027,7 +18028,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
           selectedShadowColor: (tree.materialFilterChipNamedElevated.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialFilterChipNamedElevated.selectedShadowColor) : null),
           showCheckmark: (tree.materialFilterChipNamedElevated.hasShowCheckmark() ? tree.materialFilterChipNamedElevated.showCheckmark : null),
           checkmarkColor: (tree.materialFilterChipNamedElevated.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialFilterChipNamedElevated.checkmarkColor) : null),
-          avatarBorder: (tree.materialFilterChipNamedElevated.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialFilterChipNamedElevated.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialFilterChipNamedElevated.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialFilterChipNamedElevated.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.FlutterStatelessWidgetExpression_Result.materialFloatingActionButton:
       return $flutterSrcMaterialFloatingActionButton.FloatingActionButton(
           key: (tree.materialFloatingActionButton.hasKey() ? evaluateFlutterKeyExpression(tree.materialFloatingActionButton.key) : null),
@@ -18135,9 +18136,9 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
       return $flutterSrcMaterialFlutterLogo.FlutterLogo(
           key: (tree.materialFlutterLogo.hasKey() ? evaluateFlutterKeyExpression(tree.materialFlutterLogo.key) : null),
           size: (tree.materialFlutterLogo.hasSize() ? tree.materialFlutterLogo.size : null),
-          textColor: (tree.materialFlutterLogo.hasTextColor() ? evaluateRequiredDartColorExpression(tree.materialFlutterLogo.textColor) : missing('textColor')),
+          textColor: (tree.materialFlutterLogo.hasTextColor() ? evaluateRequiredDartColorExpression(tree.materialFlutterLogo.textColor) : $dartUi.Color(0xFF757575)),
           style: (tree.materialFlutterLogo.hasStyle() ? enums.convertRequiredFlutterFlutterLogoStyle(tree.materialFlutterLogo.style) : $flutterSrcPaintingFlutterLogo.FlutterLogoStyle.markOnly),
-          duration: (tree.materialFlutterLogo.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialFlutterLogo.duration) : missing('duration')),
+          duration: (tree.materialFlutterLogo.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialFlutterLogo.duration) : $dartCore.Duration(milliseconds: 750)),
           curve: (tree.materialFlutterLogo.hasCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.materialFlutterLogo.curve) : $flutterSrcAnimationCurves.Curves.fastOutSlowIn));
     case messages.FlutterStatelessWidgetExpression_Result.materialGridTile:
       return $flutterSrcMaterialGridTile.GridTile(
@@ -18359,7 +18360,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
           selectedShadowColor: (tree.materialInputChip.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialInputChip.selectedShadowColor) : null),
           showCheckmark: (tree.materialInputChip.hasShowCheckmark() ? tree.materialInputChip.showCheckmark : null),
           checkmarkColor: (tree.materialInputChip.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialInputChip.checkmarkColor) : null),
-          avatarBorder: (tree.materialInputChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialInputChip.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialInputChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialInputChip.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.FlutterStatelessWidgetExpression_Result.materialListTile:
       return $flutterSrcMaterialListTile.ListTile(
           key: (tree.materialListTile.hasKey() ? evaluateFlutterKeyExpression(tree.materialListTile.key) : null),
@@ -18401,10 +18402,10 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
       return $flutterSrcMaterialMagnifier.Magnifier(
           key: (tree.materialMagnifier.hasKey() ? evaluateFlutterKeyExpression(tree.materialMagnifier.key) : null),
           additionalFocalPointOffset: (tree.materialMagnifier.hasAdditionalFocalPointOffset() ? evaluateRequiredDartOffsetExpression(tree.materialMagnifier.additionalFocalPointOffset) : $dartUi.Offset.zero),
-          borderRadius: (tree.materialMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.materialMagnifier.borderRadius) : missing('borderRadius')),
-          filmColor: (tree.materialMagnifier.hasFilmColor() ? evaluateRequiredDartColorExpression(tree.materialMagnifier.filmColor) : missing('filmColor')),
+          borderRadius: (tree.materialMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.materialMagnifier.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.all($dartUi.Radius.circular(40))),
+          filmColor: (tree.materialMagnifier.hasFilmColor() ? evaluateRequiredDartColorExpression(tree.materialMagnifier.filmColor) : $dartUi.Color.fromARGB(8, 158, 158, 158)),
           shadows: tree.materialMagnifier.shadows.map((e) => evaluateRequiredFlutterBoxShadowExpression(e)).toList(),
-          size: (tree.materialMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.materialMagnifier.size) : missing('size')));
+          size: (tree.materialMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.materialMagnifier.size) : $dartUi.Size(77.37, 37.9)));
     case messages.FlutterStatelessWidgetExpression_Result.materialMaterialButton:
       return $flutterSrcMaterialMaterialButton.MaterialButton(
           key: (tree.materialMaterialButton.hasKey() ? evaluateFlutterKeyExpression(tree.materialMaterialButton.key) : null),
@@ -18481,7 +18482,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
           indicatorShape: (tree.materialNavigationDrawer.hasIndicatorShape() ? evaluateFlutterShapeBorderExpression(tree.materialNavigationDrawer.indicatorShape) : null),
           onDestinationSelected: null,
           selectedIndex: (tree.materialNavigationDrawer.hasSelectedIndex() ? tree.materialNavigationDrawer.selectedIndex : 0),
-          tilePadding: (tree.materialNavigationDrawer.hasTilePadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialNavigationDrawer.tilePadding) : missing('tilePadding')));
+          tilePadding: (tree.materialNavigationDrawer.hasTilePadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialNavigationDrawer.tilePadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(horizontal: 12.0)));
     case messages.FlutterStatelessWidgetExpression_Result.materialNavigationDrawerDestination:
       return $flutterSrcMaterialNavigationDrawer.NavigationDrawerDestination(
           key: (tree.materialNavigationDrawerDestination.hasKey() ? evaluateFlutterKeyExpression(tree.materialNavigationDrawerDestination.key) : null),
@@ -18506,16 +18507,16 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
       return $flutterSrcMaterialDialog.SimpleDialog(
           key: (tree.materialSimpleDialog.hasKey() ? evaluateFlutterKeyExpression(tree.materialSimpleDialog.key) : null),
           title: (tree.materialSimpleDialog.hasTitle() ? evaluateWidgetExpression(tree.materialSimpleDialog.title) : null),
-          titlePadding: (tree.materialSimpleDialog.hasTitlePadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialSimpleDialog.titlePadding) : missing('titlePadding')),
+          titlePadding: (tree.materialSimpleDialog.hasTitlePadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialSimpleDialog.titlePadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 0.0)),
           titleTextStyle: (tree.materialSimpleDialog.hasTitleTextStyle() ? evaluateFlutterTextStyleExpression(tree.materialSimpleDialog.titleTextStyle) : null),
           children: tree.materialSimpleDialog.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
-          contentPadding: (tree.materialSimpleDialog.hasContentPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialSimpleDialog.contentPadding) : missing('contentPadding')),
+          contentPadding: (tree.materialSimpleDialog.hasContentPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialSimpleDialog.contentPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.fromLTRB(0.0, 12.0, 0.0, 16.0)),
           backgroundColor: (tree.materialSimpleDialog.hasBackgroundColor() ? evaluateDartColorExpression(tree.materialSimpleDialog.backgroundColor) : null),
           elevation: (tree.materialSimpleDialog.hasElevation() ? tree.materialSimpleDialog.elevation : null),
           shadowColor: (tree.materialSimpleDialog.hasShadowColor() ? evaluateDartColorExpression(tree.materialSimpleDialog.shadowColor) : null),
           surfaceTintColor: (tree.materialSimpleDialog.hasSurfaceTintColor() ? evaluateDartColorExpression(tree.materialSimpleDialog.surfaceTintColor) : null),
           semanticLabel: (tree.materialSimpleDialog.hasSemanticLabel() ? tree.materialSimpleDialog.semanticLabel : null),
-          insetPadding: (tree.materialSimpleDialog.hasInsetPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialSimpleDialog.insetPadding) : missing('insetPadding')),
+          insetPadding: (tree.materialSimpleDialog.hasInsetPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialSimpleDialog.insetPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(horizontal: 40.0, vertical: 24.0)),
           clipBehavior: (tree.materialSimpleDialog.hasClipBehavior() ? enums.convertRequiredDartClip(tree.materialSimpleDialog.clipBehavior) : $dartUi.Clip.none),
           shape: (tree.materialSimpleDialog.hasShape() ? evaluateFlutterShapeBorderExpression(tree.materialSimpleDialog.shape) : null),
           alignment: (tree.materialSimpleDialog.hasAlignment() ? evaluateFlutterAlignmentGeometryExpression(tree.materialSimpleDialog.alignment) : null));
@@ -18675,7 +18676,7 @@ $flutterSrcWidgetsFramework.StatelessWidget? evaluateFlutterStatelessWidgetExpre
           key: (tree.materialTab.hasKey() ? evaluateFlutterKeyExpression(tree.materialTab.key) : null),
           text: (tree.materialTab.hasText() ? tree.materialTab.text : null),
           icon: (tree.materialTab.hasIcon() ? evaluateWidgetExpression(tree.materialTab.icon) : null),
-          iconMargin: (tree.materialTab.hasIconMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialTab.iconMargin) : missing('iconMargin')),
+          iconMargin: (tree.materialTab.hasIconMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialTab.iconMargin) : $flutterSrcPaintingEdgeInsets.EdgeInsets.only(bottom: 10.0)),
           height: (tree.materialTab.hasHeight() ? tree.materialTab.height : null),
           child: (tree.materialTab.hasChild() ? evaluateWidgetExpression(tree.materialTab.child) : null));
     case messages.FlutterStatelessWidgetExpression_Result.materialTabPageSelector:
@@ -18871,7 +18872,7 @@ $flutterSrcRenderingTableBorder.TableBorder? evaluateFlutterTableBorderExpressio
           borderRadius: (tree.flutterTableBorder.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.flutterTableBorder.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.zero));
     case messages.FlutterTableBorderExpression_Result.flutterTableBorderNamedAll:
       return $flutterSrcRenderingTableBorder.TableBorder.all(
-          color: (tree.flutterTableBorderNamedAll.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterTableBorderNamedAll.color) : missing('color')),
+          color: (tree.flutterTableBorderNamedAll.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterTableBorderNamedAll.color) : $dartUi.Color(0xFF000000)),
           width: (tree.flutterTableBorderNamedAll.hasWidth() ? tree.flutterTableBorderNamedAll.width : 1.0),
           style: (tree.flutterTableBorderNamedAll.hasStyle() ? enums.convertRequiredFlutterBorderStyle(tree.flutterTableBorderNamedAll.style) : $flutterSrcPaintingBorders.BorderStyle.solid),
           borderRadius: (tree.flutterTableBorderNamedAll.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.flutterTableBorderNamedAll.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.zero));
@@ -19953,11 +19954,11 @@ $flutterSrcMaterialColorScheme.ColorScheme? evaluateMaterialColorSchemeExpressio
     case messages.MaterialColorSchemeExpression_Result.materialColorSchemeNamedDark:
       return $flutterSrcMaterialColorScheme.ColorScheme.dark(
           brightness: (tree.materialColorSchemeNamedDark.hasBrightness() ? enums.convertRequiredDartBrightness(tree.materialColorSchemeNamedDark.brightness) : $dartUi.Brightness.dark),
-          primary: (tree.materialColorSchemeNamedDark.hasPrimary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedDark.primary) : missing('primary')),
+          primary: (tree.materialColorSchemeNamedDark.hasPrimary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedDark.primary) : $dartUi.Color(0xffbb86fc)),
           onPrimary: (tree.materialColorSchemeNamedDark.hasOnPrimary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedDark.onPrimary) : $flutterSrcMaterialColors.Colors.black),
           primaryContainer: (tree.materialColorSchemeNamedDark.hasPrimaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedDark.primaryContainer) : null),
           onPrimaryContainer: (tree.materialColorSchemeNamedDark.hasOnPrimaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedDark.onPrimaryContainer) : null),
-          secondary: (tree.materialColorSchemeNamedDark.hasSecondary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedDark.secondary) : missing('secondary')),
+          secondary: (tree.materialColorSchemeNamedDark.hasSecondary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedDark.secondary) : $dartUi.Color(0xff03dac6)),
           onSecondary: (tree.materialColorSchemeNamedDark.hasOnSecondary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedDark.onSecondary) : $flutterSrcMaterialColors.Colors.black),
           secondaryContainer: (tree.materialColorSchemeNamedDark.hasSecondaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedDark.secondaryContainer) : null),
           onSecondaryContainer: (tree.materialColorSchemeNamedDark.hasOnSecondaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedDark.onSecondaryContainer) : null),
@@ -19965,13 +19966,13 @@ $flutterSrcMaterialColorScheme.ColorScheme? evaluateMaterialColorSchemeExpressio
           onTertiary: (tree.materialColorSchemeNamedDark.hasOnTertiary() ? evaluateDartColorExpression(tree.materialColorSchemeNamedDark.onTertiary) : null),
           tertiaryContainer: (tree.materialColorSchemeNamedDark.hasTertiaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedDark.tertiaryContainer) : null),
           onTertiaryContainer: (tree.materialColorSchemeNamedDark.hasOnTertiaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedDark.onTertiaryContainer) : null),
-          error: (tree.materialColorSchemeNamedDark.hasError() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedDark.error) : missing('error')),
+          error: (tree.materialColorSchemeNamedDark.hasError() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedDark.error) : $dartUi.Color(0xffcf6679)),
           onError: (tree.materialColorSchemeNamedDark.hasOnError() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedDark.onError) : $flutterSrcMaterialColors.Colors.black),
           errorContainer: (tree.materialColorSchemeNamedDark.hasErrorContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedDark.errorContainer) : null),
           onErrorContainer: (tree.materialColorSchemeNamedDark.hasOnErrorContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedDark.onErrorContainer) : null),
-          background: (tree.materialColorSchemeNamedDark.hasBackground() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedDark.background) : missing('background')),
+          background: (tree.materialColorSchemeNamedDark.hasBackground() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedDark.background) : $dartUi.Color(0xff121212)),
           onBackground: (tree.materialColorSchemeNamedDark.hasOnBackground() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedDark.onBackground) : $flutterSrcMaterialColors.Colors.white),
-          surface: (tree.materialColorSchemeNamedDark.hasSurface() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedDark.surface) : missing('surface')),
+          surface: (tree.materialColorSchemeNamedDark.hasSurface() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedDark.surface) : $dartUi.Color(0xff121212)),
           onSurface: (tree.materialColorSchemeNamedDark.hasOnSurface() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedDark.onSurface) : $flutterSrcMaterialColors.Colors.white),
           surfaceVariant: (tree.materialColorSchemeNamedDark.hasSurfaceVariant() ? evaluateDartColorExpression(tree.materialColorSchemeNamedDark.surfaceVariant) : null),
           onSurfaceVariant: (tree.materialColorSchemeNamedDark.hasOnSurfaceVariant() ? evaluateDartColorExpression(tree.materialColorSchemeNamedDark.onSurfaceVariant) : null),
@@ -20028,11 +20029,11 @@ $flutterSrcMaterialColorScheme.ColorScheme? evaluateMaterialColorSchemeExpressio
     case messages.MaterialColorSchemeExpression_Result.materialColorSchemeNamedHighContrastDark:
       return $flutterSrcMaterialColorScheme.ColorScheme.highContrastDark(
           brightness: (tree.materialColorSchemeNamedHighContrastDark.hasBrightness() ? enums.convertRequiredDartBrightness(tree.materialColorSchemeNamedHighContrastDark.brightness) : $dartUi.Brightness.dark),
-          primary: (tree.materialColorSchemeNamedHighContrastDark.hasPrimary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.primary) : missing('primary')),
+          primary: (tree.materialColorSchemeNamedHighContrastDark.hasPrimary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.primary) : $dartUi.Color(0xffefb7ff)),
           onPrimary: (tree.materialColorSchemeNamedHighContrastDark.hasOnPrimary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.onPrimary) : $flutterSrcMaterialColors.Colors.black),
           primaryContainer: (tree.materialColorSchemeNamedHighContrastDark.hasPrimaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.primaryContainer) : null),
           onPrimaryContainer: (tree.materialColorSchemeNamedHighContrastDark.hasOnPrimaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.onPrimaryContainer) : null),
-          secondary: (tree.materialColorSchemeNamedHighContrastDark.hasSecondary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.secondary) : missing('secondary')),
+          secondary: (tree.materialColorSchemeNamedHighContrastDark.hasSecondary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.secondary) : $dartUi.Color(0xff66fff9)),
           onSecondary: (tree.materialColorSchemeNamedHighContrastDark.hasOnSecondary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.onSecondary) : $flutterSrcMaterialColors.Colors.black),
           secondaryContainer: (tree.materialColorSchemeNamedHighContrastDark.hasSecondaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.secondaryContainer) : null),
           onSecondaryContainer: (tree.materialColorSchemeNamedHighContrastDark.hasOnSecondaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.onSecondaryContainer) : null),
@@ -20040,13 +20041,13 @@ $flutterSrcMaterialColorScheme.ColorScheme? evaluateMaterialColorSchemeExpressio
           onTertiary: (tree.materialColorSchemeNamedHighContrastDark.hasOnTertiary() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.onTertiary) : null),
           tertiaryContainer: (tree.materialColorSchemeNamedHighContrastDark.hasTertiaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.tertiaryContainer) : null),
           onTertiaryContainer: (tree.materialColorSchemeNamedHighContrastDark.hasOnTertiaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.onTertiaryContainer) : null),
-          error: (tree.materialColorSchemeNamedHighContrastDark.hasError() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.error) : missing('error')),
+          error: (tree.materialColorSchemeNamedHighContrastDark.hasError() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.error) : $dartUi.Color(0xff9b374d)),
           onError: (tree.materialColorSchemeNamedHighContrastDark.hasOnError() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.onError) : $flutterSrcMaterialColors.Colors.black),
           errorContainer: (tree.materialColorSchemeNamedHighContrastDark.hasErrorContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.errorContainer) : null),
           onErrorContainer: (tree.materialColorSchemeNamedHighContrastDark.hasOnErrorContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.onErrorContainer) : null),
-          background: (tree.materialColorSchemeNamedHighContrastDark.hasBackground() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.background) : missing('background')),
+          background: (tree.materialColorSchemeNamedHighContrastDark.hasBackground() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.background) : $dartUi.Color(0xff121212)),
           onBackground: (tree.materialColorSchemeNamedHighContrastDark.hasOnBackground() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.onBackground) : $flutterSrcMaterialColors.Colors.white),
-          surface: (tree.materialColorSchemeNamedHighContrastDark.hasSurface() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.surface) : missing('surface')),
+          surface: (tree.materialColorSchemeNamedHighContrastDark.hasSurface() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.surface) : $dartUi.Color(0xff121212)),
           onSurface: (tree.materialColorSchemeNamedHighContrastDark.hasOnSurface() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.onSurface) : $flutterSrcMaterialColors.Colors.white),
           surfaceVariant: (tree.materialColorSchemeNamedHighContrastDark.hasSurfaceVariant() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.surfaceVariant) : null),
           onSurfaceVariant: (tree.materialColorSchemeNamedHighContrastDark.hasOnSurfaceVariant() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastDark.onSurfaceVariant) : null),
@@ -20061,11 +20062,11 @@ $flutterSrcMaterialColorScheme.ColorScheme? evaluateMaterialColorSchemeExpressio
     case messages.MaterialColorSchemeExpression_Result.materialColorSchemeNamedHighContrastLight:
       return $flutterSrcMaterialColorScheme.ColorScheme.highContrastLight(
           brightness: (tree.materialColorSchemeNamedHighContrastLight.hasBrightness() ? enums.convertRequiredDartBrightness(tree.materialColorSchemeNamedHighContrastLight.brightness) : $dartUi.Brightness.light),
-          primary: (tree.materialColorSchemeNamedHighContrastLight.hasPrimary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.primary) : missing('primary')),
+          primary: (tree.materialColorSchemeNamedHighContrastLight.hasPrimary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.primary) : $dartUi.Color(0xff0000ba)),
           onPrimary: (tree.materialColorSchemeNamedHighContrastLight.hasOnPrimary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.onPrimary) : $flutterSrcMaterialColors.Colors.white),
           primaryContainer: (tree.materialColorSchemeNamedHighContrastLight.hasPrimaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.primaryContainer) : null),
           onPrimaryContainer: (tree.materialColorSchemeNamedHighContrastLight.hasOnPrimaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.onPrimaryContainer) : null),
-          secondary: (tree.materialColorSchemeNamedHighContrastLight.hasSecondary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.secondary) : missing('secondary')),
+          secondary: (tree.materialColorSchemeNamedHighContrastLight.hasSecondary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.secondary) : $dartUi.Color(0xff66fff9)),
           onSecondary: (tree.materialColorSchemeNamedHighContrastLight.hasOnSecondary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.onSecondary) : $flutterSrcMaterialColors.Colors.black),
           secondaryContainer: (tree.materialColorSchemeNamedHighContrastLight.hasSecondaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.secondaryContainer) : null),
           onSecondaryContainer: (tree.materialColorSchemeNamedHighContrastLight.hasOnSecondaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.onSecondaryContainer) : null),
@@ -20073,7 +20074,7 @@ $flutterSrcMaterialColorScheme.ColorScheme? evaluateMaterialColorSchemeExpressio
           onTertiary: (tree.materialColorSchemeNamedHighContrastLight.hasOnTertiary() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.onTertiary) : null),
           tertiaryContainer: (tree.materialColorSchemeNamedHighContrastLight.hasTertiaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.tertiaryContainer) : null),
           onTertiaryContainer: (tree.materialColorSchemeNamedHighContrastLight.hasOnTertiaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.onTertiaryContainer) : null),
-          error: (tree.materialColorSchemeNamedHighContrastLight.hasError() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.error) : missing('error')),
+          error: (tree.materialColorSchemeNamedHighContrastLight.hasError() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.error) : $dartUi.Color(0xff790000)),
           onError: (tree.materialColorSchemeNamedHighContrastLight.hasOnError() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.onError) : $flutterSrcMaterialColors.Colors.white),
           errorContainer: (tree.materialColorSchemeNamedHighContrastLight.hasErrorContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.errorContainer) : null),
           onErrorContainer: (tree.materialColorSchemeNamedHighContrastLight.hasOnErrorContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedHighContrastLight.onErrorContainer) : null),
@@ -20094,11 +20095,11 @@ $flutterSrcMaterialColorScheme.ColorScheme? evaluateMaterialColorSchemeExpressio
     case messages.MaterialColorSchemeExpression_Result.materialColorSchemeNamedLight:
       return $flutterSrcMaterialColorScheme.ColorScheme.light(
           brightness: (tree.materialColorSchemeNamedLight.hasBrightness() ? enums.convertRequiredDartBrightness(tree.materialColorSchemeNamedLight.brightness) : $dartUi.Brightness.light),
-          primary: (tree.materialColorSchemeNamedLight.hasPrimary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedLight.primary) : missing('primary')),
+          primary: (tree.materialColorSchemeNamedLight.hasPrimary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedLight.primary) : $dartUi.Color(0xff6200ee)),
           onPrimary: (tree.materialColorSchemeNamedLight.hasOnPrimary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedLight.onPrimary) : $flutterSrcMaterialColors.Colors.white),
           primaryContainer: (tree.materialColorSchemeNamedLight.hasPrimaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedLight.primaryContainer) : null),
           onPrimaryContainer: (tree.materialColorSchemeNamedLight.hasOnPrimaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedLight.onPrimaryContainer) : null),
-          secondary: (tree.materialColorSchemeNamedLight.hasSecondary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedLight.secondary) : missing('secondary')),
+          secondary: (tree.materialColorSchemeNamedLight.hasSecondary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedLight.secondary) : $dartUi.Color(0xff03dac6)),
           onSecondary: (tree.materialColorSchemeNamedLight.hasOnSecondary() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedLight.onSecondary) : $flutterSrcMaterialColors.Colors.black),
           secondaryContainer: (tree.materialColorSchemeNamedLight.hasSecondaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedLight.secondaryContainer) : null),
           onSecondaryContainer: (tree.materialColorSchemeNamedLight.hasOnSecondaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedLight.onSecondaryContainer) : null),
@@ -20106,7 +20107,7 @@ $flutterSrcMaterialColorScheme.ColorScheme? evaluateMaterialColorSchemeExpressio
           onTertiary: (tree.materialColorSchemeNamedLight.hasOnTertiary() ? evaluateDartColorExpression(tree.materialColorSchemeNamedLight.onTertiary) : null),
           tertiaryContainer: (tree.materialColorSchemeNamedLight.hasTertiaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedLight.tertiaryContainer) : null),
           onTertiaryContainer: (tree.materialColorSchemeNamedLight.hasOnTertiaryContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedLight.onTertiaryContainer) : null),
-          error: (tree.materialColorSchemeNamedLight.hasError() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedLight.error) : missing('error')),
+          error: (tree.materialColorSchemeNamedLight.hasError() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedLight.error) : $dartUi.Color(0xffb00020)),
           onError: (tree.materialColorSchemeNamedLight.hasOnError() ? evaluateRequiredDartColorExpression(tree.materialColorSchemeNamedLight.onError) : $flutterSrcMaterialColors.Colors.white),
           errorContainer: (tree.materialColorSchemeNamedLight.hasErrorContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedLight.errorContainer) : null),
           onErrorContainer: (tree.materialColorSchemeNamedLight.hasOnErrorContainer() ? evaluateDartColorExpression(tree.materialColorSchemeNamedLight.onErrorContainer) : null),
@@ -20643,12 +20644,12 @@ $flutterSrcMaterialInputBorder.InputBorder? evaluateMaterialInputBorderExpressio
     case messages.MaterialInputBorderExpression_Result.materialOutlineInputBorder:
       return $flutterSrcMaterialInputBorder.OutlineInputBorder(
           borderSide: (tree.materialOutlineInputBorder.hasBorderSide() ? evaluateRequiredFlutterBorderSideExpression(tree.materialOutlineInputBorder.borderSide) : $flutterSrcPaintingBorders.BorderSide.none),
-          borderRadius: (tree.materialOutlineInputBorder.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.materialOutlineInputBorder.borderRadius) : missing('borderRadius')),
+          borderRadius: (tree.materialOutlineInputBorder.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.materialOutlineInputBorder.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.all($dartUi.Radius.circular(4.0))),
           gapPadding: (tree.materialOutlineInputBorder.hasGapPadding() ? tree.materialOutlineInputBorder.gapPadding : 4.0));
     case messages.MaterialInputBorderExpression_Result.materialUnderlineInputBorder:
       return $flutterSrcMaterialInputBorder.UnderlineInputBorder(
           borderSide: (tree.materialUnderlineInputBorder.hasBorderSide() ? evaluateRequiredFlutterBorderSideExpression(tree.materialUnderlineInputBorder.borderSide) : $flutterSrcPaintingBorders.BorderSide.none),
-          borderRadius: (tree.materialUnderlineInputBorder.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.materialUnderlineInputBorder.borderRadius) : missing('borderRadius')));
+          borderRadius: (tree.materialUnderlineInputBorder.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.materialUnderlineInputBorder.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.only(topLeft: $dartUi.Radius.circular(4.0), topRight: $dartUi.Radius.circular(4.0))));
     default:
       return null;
   }
@@ -22282,7 +22283,7 @@ $flutterSrcMaterialTypography.Typography? evaluateMaterialTypographyExpression(m
     case messages.MaterialTypographyExpression_Result.materialTypographyNamedMaterial2021:
       return $flutterSrcMaterialTypography.Typography.material2021(
           platform: (tree.materialTypographyNamedMaterial2021.hasPlatform() ? enums.convertFlutterTargetPlatform(tree.materialTypographyNamedMaterial2021.platform) : $flutterSrcFoundationPlatform.TargetPlatform.android),
-          colorScheme: (tree.materialTypographyNamedMaterial2021.hasColorScheme() ? evaluateRequiredMaterialColorSchemeExpression(tree.materialTypographyNamedMaterial2021.colorScheme) : missing('colorScheme')),
+          colorScheme: (tree.materialTypographyNamedMaterial2021.hasColorScheme() ? evaluateRequiredMaterialColorSchemeExpression(tree.materialTypographyNamedMaterial2021.colorScheme) : $flutterSrcMaterialColorScheme.ColorScheme.light()),
           black: (tree.materialTypographyNamedMaterial2021.hasBlack() ? evaluateMaterialTextThemeExpression(tree.materialTypographyNamedMaterial2021.black) : null),
           white: (tree.materialTypographyNamedMaterial2021.hasWhite() ? evaluateMaterialTextThemeExpression(tree.materialTypographyNamedMaterial2021.white) : null),
           englishLike: (tree.materialTypographyNamedMaterial2021.hasEnglishLike() ? evaluateMaterialTextThemeExpression(tree.materialTypographyNamedMaterial2021.englishLike) : null),
@@ -22391,7 +22392,7 @@ $flutterSrcCupertinoPageScaffold.ObstructingPreferredSizeWidget? evaluateObstruc
           previousPageTitle: (tree.cupertinoNavigationBar.hasPreviousPageTitle() ? tree.cupertinoNavigationBar.previousPageTitle : null),
           middle: (tree.cupertinoNavigationBar.hasMiddle() ? evaluateWidgetExpression(tree.cupertinoNavigationBar.middle) : null),
           trailing: (tree.cupertinoNavigationBar.hasTrailing() ? evaluateWidgetExpression(tree.cupertinoNavigationBar.trailing) : null),
-          border: (tree.cupertinoNavigationBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoNavigationBar.border) : null),
+          border: (tree.cupertinoNavigationBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoNavigationBar.border) : $flutterSrcPaintingBoxBorder.Border(bottom: $flutterSrcPaintingBorders.BorderSide(color: $dartUi.Color(0x4D000000), width: 0.0))),
           backgroundColor: (tree.cupertinoNavigationBar.hasBackgroundColor() ? evaluateDartColorExpression(tree.cupertinoNavigationBar.backgroundColor) : null),
           brightness: (tree.cupertinoNavigationBar.hasBrightness() ? enums.convertDartBrightness(tree.cupertinoNavigationBar.brightness) : null),
           padding: (tree.cupertinoNavigationBar.hasPadding() ? evaluateFlutterEdgeInsetsDirectionalExpression(tree.cupertinoNavigationBar.padding) : null),
@@ -22805,7 +22806,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           actions: tree.cupertinoAlertDialog.actions.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           scrollController: (tree.cupertinoAlertDialog.hasScrollController() ? evaluateFlutterScrollControllerExpression(tree.cupertinoAlertDialog.scrollController) : null),
           actionScrollController: (tree.cupertinoAlertDialog.hasActionScrollController() ? evaluateFlutterScrollControllerExpression(tree.cupertinoAlertDialog.actionScrollController) : null),
-          insetAnimationDuration: (tree.cupertinoAlertDialog.hasInsetAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.cupertinoAlertDialog.insetAnimationDuration) : missing('insetAnimationDuration')),
+          insetAnimationDuration: (tree.cupertinoAlertDialog.hasInsetAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.cupertinoAlertDialog.insetAnimationDuration) : $dartCore.Duration(milliseconds: 100)),
           insetAnimationCurve: (tree.cupertinoAlertDialog.hasInsetAnimationCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.cupertinoAlertDialog.insetAnimationCurve) : $flutterSrcAnimationCurves.Curves.decelerate));
     case messages.WidgetExpression_Result.cupertinoApp:
       return $flutterSrcCupertinoApp.CupertinoApp(
@@ -22874,7 +22875,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           disabledColor: (tree.cupertinoButton.hasDisabledColor() ? evaluateRequiredDartColorExpression(tree.cupertinoButton.disabledColor) : $flutterSrcCupertinoColors.CupertinoColors.quaternarySystemFill),
           minSize: (tree.cupertinoButton.hasMinSize() ? tree.cupertinoButton.minSize : $flutterSrcCupertinoConstants.kMinInteractiveDimensionCupertino),
           pressedOpacity: (tree.cupertinoButton.hasPressedOpacity() ? tree.cupertinoButton.pressedOpacity : 0.4),
-          borderRadius: (tree.cupertinoButton.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.cupertinoButton.borderRadius) : null),
+          borderRadius: (tree.cupertinoButton.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.cupertinoButton.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.all($dartUi.Radius.circular(8.0))),
           alignment: (tree.cupertinoButton.hasAlignment() ? evaluateRequiredFlutterAlignmentGeometryExpression(tree.cupertinoButton.alignment) : $flutterSrcPaintingAlignment.Alignment.center),
           onPressed: null);
     case messages.WidgetExpression_Result.cupertinoButtonNamedFilled:
@@ -22885,7 +22886,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           disabledColor: (tree.cupertinoButtonNamedFilled.hasDisabledColor() ? evaluateRequiredDartColorExpression(tree.cupertinoButtonNamedFilled.disabledColor) : $flutterSrcCupertinoColors.CupertinoColors.quaternarySystemFill),
           minSize: (tree.cupertinoButtonNamedFilled.hasMinSize() ? tree.cupertinoButtonNamedFilled.minSize : $flutterSrcCupertinoConstants.kMinInteractiveDimensionCupertino),
           pressedOpacity: (tree.cupertinoButtonNamedFilled.hasPressedOpacity() ? tree.cupertinoButtonNamedFilled.pressedOpacity : 0.4),
-          borderRadius: (tree.cupertinoButtonNamedFilled.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.cupertinoButtonNamedFilled.borderRadius) : null),
+          borderRadius: (tree.cupertinoButtonNamedFilled.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.cupertinoButtonNamedFilled.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.all($dartUi.Radius.circular(8.0))),
           alignment: (tree.cupertinoButtonNamedFilled.hasAlignment() ? evaluateRequiredFlutterAlignmentGeometryExpression(tree.cupertinoButtonNamedFilled.alignment) : $flutterSrcPaintingAlignment.Alignment.center),
           onPressed: null);
     case messages.WidgetExpression_Result.cupertinoCheckbox:
@@ -22967,7 +22968,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           children: tree.cupertinoFormSectionNamedInsetGrouped.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           header: (tree.cupertinoFormSectionNamedInsetGrouped.hasHeader() ? evaluateWidgetExpression(tree.cupertinoFormSectionNamedInsetGrouped.header) : null),
           footer: (tree.cupertinoFormSectionNamedInsetGrouped.hasFooter() ? evaluateWidgetExpression(tree.cupertinoFormSectionNamedInsetGrouped.footer) : null),
-          margin: (tree.cupertinoFormSectionNamedInsetGrouped.hasMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoFormSectionNamedInsetGrouped.margin) : missing('margin')),
+          margin: (tree.cupertinoFormSectionNamedInsetGrouped.hasMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoFormSectionNamedInsetGrouped.margin) : $flutterSrcPaintingEdgeInsets.EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 10.0)),
           backgroundColor: (tree.cupertinoFormSectionNamedInsetGrouped.hasBackgroundColor() ? evaluateRequiredDartColorExpression(tree.cupertinoFormSectionNamedInsetGrouped.backgroundColor) : $flutterSrcCupertinoColors.CupertinoColors.systemGroupedBackground),
           decoration: (tree.cupertinoFormSectionNamedInsetGrouped.hasDecoration() ? evaluateFlutterBoxDecorationExpression(tree.cupertinoFormSectionNamedInsetGrouped.decoration) : null),
           clipBehavior: (tree.cupertinoFormSectionNamedInsetGrouped.hasClipBehavior() ? enums.convertRequiredDartClip(tree.cupertinoFormSectionNamedInsetGrouped.clipBehavior) : $dartUi.Clip.none));
@@ -22977,7 +22978,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           children: tree.cupertinoListSection.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
           header: (tree.cupertinoListSection.hasHeader() ? evaluateWidgetExpression(tree.cupertinoListSection.header) : null),
           footer: (tree.cupertinoListSection.hasFooter() ? evaluateWidgetExpression(tree.cupertinoListSection.footer) : null),
-          margin: (tree.cupertinoListSection.hasMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoListSection.margin) : missing('margin')),
+          margin: (tree.cupertinoListSection.hasMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoListSection.margin) : $flutterSrcPaintingEdgeInsets.EdgeInsets.only(bottom: 8.0)),
           backgroundColor: (tree.cupertinoListSection.hasBackgroundColor() ? evaluateRequiredDartColorExpression(tree.cupertinoListSection.backgroundColor) : $flutterSrcCupertinoColors.CupertinoColors.systemGroupedBackground),
           decoration: (tree.cupertinoListSection.hasDecoration() ? evaluateFlutterBoxDecorationExpression(tree.cupertinoListSection.decoration) : null),
           clipBehavior: (tree.cupertinoListSection.hasClipBehavior() ? enums.convertRequiredDartClip(tree.cupertinoListSection.clipBehavior) : $dartUi.Clip.none),
@@ -23035,11 +23036,11 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
     case messages.WidgetExpression_Result.cupertinoMagnifier:
       return $flutterSrcCupertinoMagnifier.CupertinoMagnifier(
           key: (tree.cupertinoMagnifier.hasKey() ? evaluateFlutterKeyExpression(tree.cupertinoMagnifier.key) : null),
-          size: (tree.cupertinoMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.cupertinoMagnifier.size) : missing('size')),
-          borderRadius: (tree.cupertinoMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.cupertinoMagnifier.borderRadius) : missing('borderRadius')),
+          size: (tree.cupertinoMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.cupertinoMagnifier.size) : $dartUi.Size(80, 47.5)),
+          borderRadius: (tree.cupertinoMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.cupertinoMagnifier.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.all($dartUi.Radius.elliptical(60, 50))),
           additionalFocalPointOffset: (tree.cupertinoMagnifier.hasAdditionalFocalPointOffset() ? evaluateRequiredDartOffsetExpression(tree.cupertinoMagnifier.additionalFocalPointOffset) : $dartUi.Offset.zero),
           shadows: tree.cupertinoMagnifier.shadows.map((e) => evaluateRequiredFlutterBoxShadowExpression(e)).toList(),
-          borderSide: (tree.cupertinoMagnifier.hasBorderSide() ? evaluateRequiredFlutterBorderSideExpression(tree.cupertinoMagnifier.borderSide) : missing('borderSide')),
+          borderSide: (tree.cupertinoMagnifier.hasBorderSide() ? evaluateRequiredFlutterBorderSideExpression(tree.cupertinoMagnifier.borderSide) : $flutterSrcPaintingBorders.BorderSide(color: $dartUi.Color.fromARGB(255, 232, 232, 232))),
           inOutAnimation: null);
     case messages.WidgetExpression_Result.cupertinoNavigationBar:
       return $flutterSrcCupertinoNavBar.CupertinoNavigationBar(
@@ -23050,7 +23051,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           previousPageTitle: (tree.cupertinoNavigationBar.hasPreviousPageTitle() ? tree.cupertinoNavigationBar.previousPageTitle : null),
           middle: (tree.cupertinoNavigationBar.hasMiddle() ? evaluateWidgetExpression(tree.cupertinoNavigationBar.middle) : null),
           trailing: (tree.cupertinoNavigationBar.hasTrailing() ? evaluateWidgetExpression(tree.cupertinoNavigationBar.trailing) : null),
-          border: (tree.cupertinoNavigationBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoNavigationBar.border) : null),
+          border: (tree.cupertinoNavigationBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoNavigationBar.border) : $flutterSrcPaintingBoxBorder.Border(bottom: $flutterSrcPaintingBorders.BorderSide(color: $dartUi.Color(0x4D000000), width: 0.0))),
           backgroundColor: (tree.cupertinoNavigationBar.hasBackgroundColor() ? evaluateDartColorExpression(tree.cupertinoNavigationBar.backgroundColor) : null),
           brightness: (tree.cupertinoNavigationBar.hasBrightness() ? enums.convertDartBrightness(tree.cupertinoNavigationBar.brightness) : null),
           padding: (tree.cupertinoNavigationBar.hasPadding() ? evaluateFlutterEdgeInsetsDirectionalExpression(tree.cupertinoNavigationBar.padding) : null),
@@ -23081,7 +23082,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           itemExtent: (tree.cupertinoPicker.hasItemExtent() ? tree.cupertinoPicker.itemExtent : missing('itemExtent')),
           onSelectedItemChanged: null,
           children: tree.cupertinoPicker.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
-          selectionOverlay: (tree.cupertinoPicker.hasSelectionOverlay() ? evaluateWidgetExpression(tree.cupertinoPicker.selectionOverlay) : null),
+          selectionOverlay: (tree.cupertinoPicker.hasSelectionOverlay() ? evaluateWidgetExpression(tree.cupertinoPicker.selectionOverlay) : $flutterSrcCupertinoPicker.CupertinoPickerDefaultSelectionOverlay()),
           looping: (tree.cupertinoPicker.hasLooping() ? tree.cupertinoPicker.looping : false));
     case messages.WidgetExpression_Result.cupertinoPickerDefaultSelectionOverlay:
       return $flutterSrcCupertinoPicker.CupertinoPickerDefaultSelectionOverlay(
@@ -23119,13 +23120,13 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           backgroundColor: (tree.cupertinoSearchTextField.hasBackgroundColor() ? evaluateDartColorExpression(tree.cupertinoSearchTextField.backgroundColor) : null),
           borderRadius: (tree.cupertinoSearchTextField.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.cupertinoSearchTextField.borderRadius) : null),
           keyboardType: (tree.cupertinoSearchTextField.hasKeyboardType() ? evaluateFlutterTextInputTypeExpression(tree.cupertinoSearchTextField.keyboardType) : $flutterSrcServicesTextInput.TextInputType.text),
-          padding: (tree.cupertinoSearchTextField.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.padding) : missing('padding')),
+          padding: (tree.cupertinoSearchTextField.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsetsDirectional.fromSTEB(5.5, 8, 5.5, 8)),
           itemColor: (tree.cupertinoSearchTextField.hasItemColor() ? evaluateRequiredDartColorExpression(tree.cupertinoSearchTextField.itemColor) : $flutterSrcCupertinoColors.CupertinoColors.secondaryLabel),
           itemSize: (tree.cupertinoSearchTextField.hasItemSize() ? tree.cupertinoSearchTextField.itemSize : 20.0),
-          prefixInsets: (tree.cupertinoSearchTextField.hasPrefixInsets() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.prefixInsets) : missing('prefixInsets')),
-          prefixIcon: (tree.cupertinoSearchTextField.hasPrefixIcon() ? evaluateRequiredWidgetExpression(tree.cupertinoSearchTextField.prefixIcon) : missing('prefixIcon')),
-          suffixInsets: (tree.cupertinoSearchTextField.hasSuffixInsets() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.suffixInsets) : missing('suffixInsets')),
-          suffixIcon: (tree.cupertinoSearchTextField.hasSuffixIcon() ? evaluateRequiredFlutterIconExpression(tree.cupertinoSearchTextField.suffixIcon) : missing('suffixIcon')),
+          prefixInsets: (tree.cupertinoSearchTextField.hasPrefixInsets() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.prefixInsets) : $flutterSrcPaintingEdgeInsets.EdgeInsetsDirectional.fromSTEB(6, 0, 0, 3)),
+          prefixIcon: (tree.cupertinoSearchTextField.hasPrefixIcon() ? evaluateRequiredWidgetExpression(tree.cupertinoSearchTextField.prefixIcon) : $flutterSrcWidgetsIcon.Icon($flutterSrcCupertinoIcons.CupertinoIcons.search)),
+          suffixInsets: (tree.cupertinoSearchTextField.hasSuffixInsets() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoSearchTextField.suffixInsets) : $flutterSrcPaintingEdgeInsets.EdgeInsetsDirectional.fromSTEB(0, 0, 5, 2)),
+          suffixIcon: (tree.cupertinoSearchTextField.hasSuffixIcon() ? evaluateRequiredFlutterIconExpression(tree.cupertinoSearchTextField.suffixIcon) : $flutterSrcWidgetsIcon.Icon($flutterSrcCupertinoIcons.CupertinoIcons.xmark_circle_fill)),
           suffixMode: (tree.cupertinoSearchTextField.hasSuffixMode() ? enums.convertRequiredOverlayVisibilityMode(tree.cupertinoSearchTextField.suffixMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.editing),
           onSuffixTap: null,
           restorationId: (tree.cupertinoSearchTextField.hasRestorationId() ? tree.cupertinoSearchTextField.restorationId : null),
@@ -23160,7 +23161,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           previousPageTitle: (tree.cupertinoSliverNavigationBar.hasPreviousPageTitle() ? tree.cupertinoSliverNavigationBar.previousPageTitle : null),
           middle: (tree.cupertinoSliverNavigationBar.hasMiddle() ? evaluateWidgetExpression(tree.cupertinoSliverNavigationBar.middle) : null),
           trailing: (tree.cupertinoSliverNavigationBar.hasTrailing() ? evaluateWidgetExpression(tree.cupertinoSliverNavigationBar.trailing) : null),
-          border: (tree.cupertinoSliverNavigationBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoSliverNavigationBar.border) : null),
+          border: (tree.cupertinoSliverNavigationBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoSliverNavigationBar.border) : $flutterSrcPaintingBoxBorder.Border(bottom: $flutterSrcPaintingBorders.BorderSide(color: $dartUi.Color(0x4D000000), width: 0.0))),
           backgroundColor: (tree.cupertinoSliverNavigationBar.hasBackgroundColor() ? evaluateDartColorExpression(tree.cupertinoSliverNavigationBar.backgroundColor) : null),
           brightness: (tree.cupertinoSliverNavigationBar.hasBrightness() ? enums.convertDartBrightness(tree.cupertinoSliverNavigationBar.brightness) : null),
           padding: (tree.cupertinoSliverNavigationBar.hasPadding() ? evaluateFlutterEdgeInsetsDirectionalExpression(tree.cupertinoSliverNavigationBar.padding) : null),
@@ -23209,7 +23210,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           inactiveColor: (tree.cupertinoTabBar.hasInactiveColor() ? evaluateRequiredDartColorExpression(tree.cupertinoTabBar.inactiveColor) : $flutterSrcCupertinoColors.CupertinoColors.inactiveGray),
           iconSize: (tree.cupertinoTabBar.hasIconSize() ? tree.cupertinoTabBar.iconSize : 30.0),
           height: (tree.cupertinoTabBar.hasHeight() ? tree.cupertinoTabBar.height : 50.0),
-          border: (tree.cupertinoTabBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoTabBar.border) : null));
+          border: (tree.cupertinoTabBar.hasBorder() ? evaluateFlutterBorderExpression(tree.cupertinoTabBar.border) : $flutterSrcPaintingBoxBorder.Border(top: $flutterSrcPaintingBorders.BorderSide(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $dartUi.Color(0x4D000000), darkColor: $dartUi.Color(0x29000000)), width: 0.0))));
     case messages.WidgetExpression_Result.cupertinoTabView:
       return $flutterSrcCupertinoTabView.CupertinoTabView(
           key: (tree.cupertinoTabView.hasKey() ? evaluateFlutterKeyExpression(tree.cupertinoTabView.key) : null),
@@ -23227,10 +23228,10 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           controller: (tree.cupertinoTextField.hasController() ? evaluateFlutterTextEditingControllerExpression(tree.cupertinoTextField.controller) : null),
           focusNode: (tree.cupertinoTextField.hasFocusNode() ? evaluateFlutterFocusNodeExpression(tree.cupertinoTextField.focusNode) : null),
           undoController: (tree.cupertinoTextField.hasUndoController() ? evaluateFlutterUndoHistoryControllerExpression(tree.cupertinoTextField.undoController) : null),
-          decoration: (tree.cupertinoTextField.hasDecoration() ? evaluateFlutterBoxDecorationExpression(tree.cupertinoTextField.decoration) : null),
-          padding: (tree.cupertinoTextField.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoTextField.padding) : missing('padding')),
+          decoration: (tree.cupertinoTextField.hasDecoration() ? evaluateFlutterBoxDecorationExpression(tree.cupertinoTextField.decoration) : $flutterSrcPaintingBoxDecoration.BoxDecoration(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $flutterSrcCupertinoColors.CupertinoColors.white, darkColor: $flutterSrcCupertinoColors.CupertinoColors.black), border: $flutterSrcPaintingBoxBorder.Border(top: $flutterSrcPaintingBorders.BorderSide(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $dartUi.Color(0x33000000), darkColor: $dartUi.Color(0x33FFFFFF)), width: 0.0), bottom: $flutterSrcPaintingBorders.BorderSide(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $dartUi.Color(0x33000000), darkColor: $dartUi.Color(0x33FFFFFF)), width: 0.0), left: $flutterSrcPaintingBorders.BorderSide(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $dartUi.Color(0x33000000), darkColor: $dartUi.Color(0x33FFFFFF)), width: 0.0), right: $flutterSrcPaintingBorders.BorderSide(color: $flutterSrcCupertinoColors.CupertinoDynamicColor.withBrightness(color: $dartUi.Color(0x33000000), darkColor: $dartUi.Color(0x33FFFFFF)), width: 0.0)), borderRadius: $flutterSrcPaintingBorderRadius.BorderRadius.all($dartUi.Radius.circular(5.0)))),
+          padding: (tree.cupertinoTextField.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoTextField.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(7.0)),
           placeholder: (tree.cupertinoTextField.hasPlaceholder() ? tree.cupertinoTextField.placeholder : null),
-          placeholderStyle: (tree.cupertinoTextField.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextField.placeholderStyle) : null),
+          placeholderStyle: (tree.cupertinoTextField.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextField.placeholderStyle) : $flutterSrcPaintingTextStyle.TextStyle(fontWeight: $dartUi.FontWeight.w400, color: $flutterSrcCupertinoColors.CupertinoColors.placeholderText)),
           prefix: (tree.cupertinoTextField.hasPrefix() ? evaluateWidgetExpression(tree.cupertinoTextField.prefix) : null),
           prefixMode: (tree.cupertinoTextField.hasPrefixMode() ? enums.convertRequiredOverlayVisibilityMode(tree.cupertinoTextField.prefixMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.always),
           suffix: (tree.cupertinoTextField.hasSuffix() ? evaluateWidgetExpression(tree.cupertinoTextField.suffix) : null),
@@ -23266,13 +23267,13 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           enabled: (tree.cupertinoTextField.hasEnabled() ? tree.cupertinoTextField.enabled : true),
           cursorWidth: (tree.cupertinoTextField.hasCursorWidth() ? tree.cupertinoTextField.cursorWidth : 2.0),
           cursorHeight: (tree.cupertinoTextField.hasCursorHeight() ? tree.cupertinoTextField.cursorHeight : null),
-          cursorRadius: (tree.cupertinoTextField.hasCursorRadius() ? evaluateRequiredDartRadiusExpression(tree.cupertinoTextField.cursorRadius) : missing('cursorRadius')),
+          cursorRadius: (tree.cupertinoTextField.hasCursorRadius() ? evaluateRequiredDartRadiusExpression(tree.cupertinoTextField.cursorRadius) : $dartUi.Radius.circular(2.0)),
           cursorOpacityAnimates: (tree.cupertinoTextField.hasCursorOpacityAnimates() ? tree.cupertinoTextField.cursorOpacityAnimates : true),
           cursorColor: (tree.cupertinoTextField.hasCursorColor() ? evaluateDartColorExpression(tree.cupertinoTextField.cursorColor) : null),
           selectionHeightStyle: (tree.cupertinoTextField.hasSelectionHeightStyle() ? enums.convertRequiredDartBoxHeightStyle(tree.cupertinoTextField.selectionHeightStyle) : missing('selectionHeightStyle')),
           selectionWidthStyle: (tree.cupertinoTextField.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyle(tree.cupertinoTextField.selectionWidthStyle) : missing('selectionWidthStyle')),
           keyboardAppearance: (tree.cupertinoTextField.hasKeyboardAppearance() ? enums.convertDartBrightness(tree.cupertinoTextField.keyboardAppearance) : null),
-          scrollPadding: (tree.cupertinoTextField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextField.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.cupertinoTextField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextField.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           dragStartBehavior: (tree.cupertinoTextField.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehavior(tree.cupertinoTextField.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           enableInteractiveSelection: (tree.cupertinoTextField.hasEnableInteractiveSelection() ? tree.cupertinoTextField.enableInteractiveSelection : null),
           selectionControls: (tree.cupertinoTextField.hasSelectionControls() ? evaluateFlutterTextSelectionControlsExpression(tree.cupertinoTextField.selectionControls) : null),
@@ -23295,9 +23296,9 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           focusNode: (tree.cupertinoTextFieldNamedBorderless.hasFocusNode() ? evaluateFlutterFocusNodeExpression(tree.cupertinoTextFieldNamedBorderless.focusNode) : null),
           undoController: (tree.cupertinoTextFieldNamedBorderless.hasUndoController() ? evaluateFlutterUndoHistoryControllerExpression(tree.cupertinoTextFieldNamedBorderless.undoController) : null),
           decoration: (tree.cupertinoTextFieldNamedBorderless.hasDecoration() ? evaluateFlutterBoxDecorationExpression(tree.cupertinoTextFieldNamedBorderless.decoration) : null),
-          padding: (tree.cupertinoTextFieldNamedBorderless.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoTextFieldNamedBorderless.padding) : missing('padding')),
+          padding: (tree.cupertinoTextFieldNamedBorderless.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.cupertinoTextFieldNamedBorderless.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(7.0)),
           placeholder: (tree.cupertinoTextFieldNamedBorderless.hasPlaceholder() ? tree.cupertinoTextFieldNamedBorderless.placeholder : null),
-          placeholderStyle: (tree.cupertinoTextFieldNamedBorderless.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextFieldNamedBorderless.placeholderStyle) : null),
+          placeholderStyle: (tree.cupertinoTextFieldNamedBorderless.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextFieldNamedBorderless.placeholderStyle) : $flutterSrcPaintingTextStyle.TextStyle(fontWeight: $dartUi.FontWeight.w400, color: $flutterSrcCupertinoColors.CupertinoColors.placeholderText)),
           prefix: (tree.cupertinoTextFieldNamedBorderless.hasPrefix() ? evaluateWidgetExpression(tree.cupertinoTextFieldNamedBorderless.prefix) : null),
           prefixMode: (tree.cupertinoTextFieldNamedBorderless.hasPrefixMode() ? enums.convertRequiredOverlayVisibilityMode(tree.cupertinoTextFieldNamedBorderless.prefixMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.always),
           suffix: (tree.cupertinoTextFieldNamedBorderless.hasSuffix() ? evaluateWidgetExpression(tree.cupertinoTextFieldNamedBorderless.suffix) : null),
@@ -23333,13 +23334,13 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           enabled: (tree.cupertinoTextFieldNamedBorderless.hasEnabled() ? tree.cupertinoTextFieldNamedBorderless.enabled : true),
           cursorWidth: (tree.cupertinoTextFieldNamedBorderless.hasCursorWidth() ? tree.cupertinoTextFieldNamedBorderless.cursorWidth : 2.0),
           cursorHeight: (tree.cupertinoTextFieldNamedBorderless.hasCursorHeight() ? tree.cupertinoTextFieldNamedBorderless.cursorHeight : null),
-          cursorRadius: (tree.cupertinoTextFieldNamedBorderless.hasCursorRadius() ? evaluateRequiredDartRadiusExpression(tree.cupertinoTextFieldNamedBorderless.cursorRadius) : missing('cursorRadius')),
+          cursorRadius: (tree.cupertinoTextFieldNamedBorderless.hasCursorRadius() ? evaluateRequiredDartRadiusExpression(tree.cupertinoTextFieldNamedBorderless.cursorRadius) : $dartUi.Radius.circular(2.0)),
           cursorOpacityAnimates: (tree.cupertinoTextFieldNamedBorderless.hasCursorOpacityAnimates() ? tree.cupertinoTextFieldNamedBorderless.cursorOpacityAnimates : true),
           cursorColor: (tree.cupertinoTextFieldNamedBorderless.hasCursorColor() ? evaluateDartColorExpression(tree.cupertinoTextFieldNamedBorderless.cursorColor) : null),
           selectionHeightStyle: (tree.cupertinoTextFieldNamedBorderless.hasSelectionHeightStyle() ? enums.convertRequiredDartBoxHeightStyle(tree.cupertinoTextFieldNamedBorderless.selectionHeightStyle) : missing('selectionHeightStyle')),
           selectionWidthStyle: (tree.cupertinoTextFieldNamedBorderless.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyle(tree.cupertinoTextFieldNamedBorderless.selectionWidthStyle) : missing('selectionWidthStyle')),
           keyboardAppearance: (tree.cupertinoTextFieldNamedBorderless.hasKeyboardAppearance() ? enums.convertDartBrightness(tree.cupertinoTextFieldNamedBorderless.keyboardAppearance) : null),
-          scrollPadding: (tree.cupertinoTextFieldNamedBorderless.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextFieldNamedBorderless.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.cupertinoTextFieldNamedBorderless.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextFieldNamedBorderless.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           dragStartBehavior: (tree.cupertinoTextFieldNamedBorderless.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehavior(tree.cupertinoTextFieldNamedBorderless.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           enableInteractiveSelection: (tree.cupertinoTextFieldNamedBorderless.hasEnableInteractiveSelection() ? tree.cupertinoTextFieldNamedBorderless.enableInteractiveSelection : null),
           selectionControls: (tree.cupertinoTextFieldNamedBorderless.hasSelectionControls() ? evaluateFlutterTextSelectionControlsExpression(tree.cupertinoTextFieldNamedBorderless.selectionControls) : null),
@@ -23397,14 +23398,14 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           cursorHeight: (tree.cupertinoTextFormFieldRow.hasCursorHeight() ? tree.cupertinoTextFormFieldRow.cursorHeight : null),
           cursorColor: (tree.cupertinoTextFormFieldRow.hasCursorColor() ? evaluateDartColorExpression(tree.cupertinoTextFormFieldRow.cursorColor) : null),
           keyboardAppearance: (tree.cupertinoTextFormFieldRow.hasKeyboardAppearance() ? enums.convertDartBrightness(tree.cupertinoTextFormFieldRow.keyboardAppearance) : null),
-          scrollPadding: (tree.cupertinoTextFormFieldRow.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextFormFieldRow.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.cupertinoTextFormFieldRow.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.cupertinoTextFormFieldRow.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           enableInteractiveSelection: (tree.cupertinoTextFormFieldRow.hasEnableInteractiveSelection() ? tree.cupertinoTextFormFieldRow.enableInteractiveSelection : true),
           selectionControls: (tree.cupertinoTextFormFieldRow.hasSelectionControls() ? evaluateFlutterTextSelectionControlsExpression(tree.cupertinoTextFormFieldRow.selectionControls) : null),
           scrollPhysics: (tree.cupertinoTextFormFieldRow.hasScrollPhysics() ? evaluateFlutterScrollPhysicsExpression(tree.cupertinoTextFormFieldRow.scrollPhysics) : null),
           autofillHints: tree.cupertinoTextFormFieldRow.autofillHints,
           autovalidateMode: (tree.cupertinoTextFormFieldRow.hasAutovalidateMode() ? enums.convertRequiredFlutterAutovalidateMode(tree.cupertinoTextFormFieldRow.autovalidateMode) : missing('autovalidateMode')),
           placeholder: (tree.cupertinoTextFormFieldRow.hasPlaceholder() ? tree.cupertinoTextFormFieldRow.placeholder : null),
-          placeholderStyle: (tree.cupertinoTextFormFieldRow.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextFormFieldRow.placeholderStyle) : null),
+          placeholderStyle: (tree.cupertinoTextFormFieldRow.hasPlaceholderStyle() ? evaluateFlutterTextStyleExpression(tree.cupertinoTextFormFieldRow.placeholderStyle) : $flutterSrcPaintingTextStyle.TextStyle(fontWeight: $dartUi.FontWeight.w400, color: $flutterSrcCupertinoColors.CupertinoColors.placeholderText)),
           contextMenuBuilder: null);
     case messages.WidgetExpression_Result.cupertinoTextSelectionToolbar:
       return $flutterSrcCupertinoTextSelectionToolbar.CupertinoTextSelectionToolbar(
@@ -23672,7 +23673,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           textDirection: (tree.flutterBanner.hasTextDirection() ? enums.convertDartTextDirection(tree.flutterBanner.textDirection) : null),
           location: (tree.flutterBanner.hasLocation() ? enums.convertRequiredFlutterBannerLocation(tree.flutterBanner.location) : missing('location')),
           layoutDirection: (tree.flutterBanner.hasLayoutDirection() ? enums.convertDartTextDirection(tree.flutterBanner.layoutDirection) : null),
-          color: (tree.flutterBanner.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBanner.color) : missing('color')),
+          color: (tree.flutterBanner.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterBanner.color) : $dartUi.Color(0xA0B71C1C)),
           textStyle: (tree.flutterBanner.hasTextStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterBanner.textStyle) : missing('textStyle')));
     case messages.WidgetExpression_Result.flutterBaseline:
       return $flutterSrcWidgetsBasic.Baseline(
@@ -23879,8 +23880,8 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           onUpdate: null,
           onDismissed: null,
           direction: (tree.flutterDismissible.hasDirection() ? enums.convertRequiredFlutterDismissDirection(tree.flutterDismissible.direction) : $flutterSrcWidgetsDismissible.DismissDirection.horizontal),
-          resizeDuration: (tree.flutterDismissible.hasResizeDuration() ? evaluateDartDurationExpression(tree.flutterDismissible.resizeDuration) : null),
-          movementDuration: (tree.flutterDismissible.hasMovementDuration() ? evaluateRequiredDartDurationExpression(tree.flutterDismissible.movementDuration) : missing('movementDuration')),
+          resizeDuration: (tree.flutterDismissible.hasResizeDuration() ? evaluateDartDurationExpression(tree.flutterDismissible.resizeDuration) : $dartCore.Duration(milliseconds: 300)),
+          movementDuration: (tree.flutterDismissible.hasMovementDuration() ? evaluateRequiredDartDurationExpression(tree.flutterDismissible.movementDuration) : $dartCore.Duration(milliseconds: 200)),
           crossAxisEndOffset: (tree.flutterDismissible.hasCrossAxisEndOffset() ? tree.flutterDismissible.crossAxisEndOffset : 0.0),
           dragStartBehavior: (tree.flutterDismissible.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehavior(tree.flutterDismissible.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           behavior: (tree.flutterDismissible.hasBehavior() ? enums.convertRequiredFlutterHitTestBehavior(tree.flutterDismissible.behavior) : $flutterSrcRenderingProxyBox.HitTestBehavior.opaque));
@@ -23965,7 +23966,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           paintCursorAboveText: (tree.flutterEditableText.hasPaintCursorAboveText() ? tree.flutterEditableText.paintCursorAboveText : false),
           selectionHeightStyle: (tree.flutterEditableText.hasSelectionHeightStyle() ? enums.convertRequiredDartBoxHeightStyle(tree.flutterEditableText.selectionHeightStyle) : missing('selectionHeightStyle')),
           selectionWidthStyle: (tree.flutterEditableText.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyle(tree.flutterEditableText.selectionWidthStyle) : missing('selectionWidthStyle')),
-          scrollPadding: (tree.flutterEditableText.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterEditableText.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.flutterEditableText.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterEditableText.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           keyboardAppearance: (tree.flutterEditableText.hasKeyboardAppearance() ? enums.convertRequiredDartBrightness(tree.flutterEditableText.keyboardAppearance) : $dartUi.Brightness.light),
           dragStartBehavior: (tree.flutterEditableText.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehavior(tree.flutterEditableText.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           enableInteractiveSelection: (tree.flutterEditableText.hasEnableInteractiveSelection() ? tree.flutterEditableText.enableInteractiveSelection : null),
@@ -24020,9 +24021,9 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           imageScale: (tree.flutterFadeInImageNamedAssetNetwork.hasImageScale() ? tree.flutterFadeInImageNamedAssetNetwork.imageScale : 1.0),
           excludeFromSemantics: (tree.flutterFadeInImageNamedAssetNetwork.hasExcludeFromSemantics() ? tree.flutterFadeInImageNamedAssetNetwork.excludeFromSemantics : false),
           imageSemanticLabel: (tree.flutterFadeInImageNamedAssetNetwork.hasImageSemanticLabel() ? tree.flutterFadeInImageNamedAssetNetwork.imageSemanticLabel : null),
-          fadeOutDuration: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeOutDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeOutDuration) : missing('fadeOutDuration')),
+          fadeOutDuration: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeOutDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeOutDuration) : $dartCore.Duration(milliseconds: 300)),
           fadeOutCurve: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeOutCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeOutCurve) : $flutterSrcAnimationCurves.Curves.easeOut),
-          fadeInDuration: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeInDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeInDuration) : missing('fadeInDuration')),
+          fadeInDuration: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeInDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeInDuration) : $dartCore.Duration(milliseconds: 700)),
           fadeInCurve: (tree.flutterFadeInImageNamedAssetNetwork.hasFadeInCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.flutterFadeInImageNamedAssetNetwork.fadeInCurve) : $flutterSrcAnimationCurves.Curves.easeIn),
           width: (tree.flutterFadeInImageNamedAssetNetwork.hasWidth() ? tree.flutterFadeInImageNamedAssetNetwork.width : null),
           height: (tree.flutterFadeInImageNamedAssetNetwork.hasHeight() ? tree.flutterFadeInImageNamedAssetNetwork.height : null),
@@ -24048,9 +24049,9 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           imageScale: (tree.flutterFadeInImageNamedMemoryNetwork.hasImageScale() ? tree.flutterFadeInImageNamedMemoryNetwork.imageScale : 1.0),
           excludeFromSemantics: (tree.flutterFadeInImageNamedMemoryNetwork.hasExcludeFromSemantics() ? tree.flutterFadeInImageNamedMemoryNetwork.excludeFromSemantics : false),
           imageSemanticLabel: (tree.flutterFadeInImageNamedMemoryNetwork.hasImageSemanticLabel() ? tree.flutterFadeInImageNamedMemoryNetwork.imageSemanticLabel : null),
-          fadeOutDuration: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeOutDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeOutDuration) : missing('fadeOutDuration')),
+          fadeOutDuration: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeOutDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeOutDuration) : $dartCore.Duration(milliseconds: 300)),
           fadeOutCurve: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeOutCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeOutCurve) : $flutterSrcAnimationCurves.Curves.easeOut),
-          fadeInDuration: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeInDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeInDuration) : missing('fadeInDuration')),
+          fadeInDuration: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeInDuration() ? evaluateRequiredDartDurationExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeInDuration) : $dartCore.Duration(milliseconds: 700)),
           fadeInCurve: (tree.flutterFadeInImageNamedMemoryNetwork.hasFadeInCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.flutterFadeInImageNamedMemoryNetwork.fadeInCurve) : $flutterSrcAnimationCurves.Curves.easeIn),
           width: (tree.flutterFadeInImageNamedMemoryNetwork.hasWidth() ? tree.flutterFadeInImageNamedMemoryNetwork.width : null),
           height: (tree.flutterFadeInImageNamedMemoryNetwork.hasHeight() ? tree.flutterFadeInImageNamedMemoryNetwork.height : null),
@@ -24275,7 +24276,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
     case messages.WidgetExpression_Result.flutterGridPaper:
       return $flutterSrcWidgetsGridPaper.GridPaper(
           key: (tree.flutterGridPaper.hasKey() ? evaluateFlutterKeyExpression(tree.flutterGridPaper.key) : null),
-          color: (tree.flutterGridPaper.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterGridPaper.color) : missing('color')),
+          color: (tree.flutterGridPaper.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterGridPaper.color) : $dartUi.Color(0x7FC3E8F3)),
           interval: (tree.flutterGridPaper.hasInterval() ? tree.flutterGridPaper.interval : 100.0),
           divisions: (tree.flutterGridPaper.hasDivisions() ? tree.flutterGridPaper.divisions : 2),
           subdivisions: (tree.flutterGridPaper.hasSubdivisions() ? tree.flutterGridPaper.subdivisions : 5),
@@ -24953,12 +24954,12 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           borderRadius: (tree.flutterPhysicalModel.hasBorderRadius() ? evaluateFlutterBorderRadiusExpression(tree.flutterPhysicalModel.borderRadius) : null),
           elevation: (tree.flutterPhysicalModel.hasElevation() ? tree.flutterPhysicalModel.elevation : 0.0),
           color: (tree.flutterPhysicalModel.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterPhysicalModel.color) : missing('color')),
-          shadowColor: (tree.flutterPhysicalModel.hasShadowColor() ? evaluateRequiredDartColorExpression(tree.flutterPhysicalModel.shadowColor) : missing('shadowColor')),
+          shadowColor: (tree.flutterPhysicalModel.hasShadowColor() ? evaluateRequiredDartColorExpression(tree.flutterPhysicalModel.shadowColor) : $dartUi.Color(0xFF000000)),
           child: (tree.flutterPhysicalModel.hasChild() ? evaluateWidgetExpression(tree.flutterPhysicalModel.child) : null));
     case messages.WidgetExpression_Result.flutterPlaceholder:
       return $flutterSrcWidgetsPlaceholder.Placeholder(
           key: (tree.flutterPlaceholder.hasKey() ? evaluateFlutterKeyExpression(tree.flutterPlaceholder.key) : null),
-          color: (tree.flutterPlaceholder.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterPlaceholder.color) : missing('color')),
+          color: (tree.flutterPlaceholder.hasColor() ? evaluateRequiredDartColorExpression(tree.flutterPlaceholder.color) : $dartUi.Color(0xFF455A64)),
           strokeWidth: (tree.flutterPlaceholder.hasStrokeWidth() ? tree.flutterPlaceholder.strokeWidth : 2.0),
           fallbackWidth: (tree.flutterPlaceholder.hasFallbackWidth() ? tree.flutterPlaceholder.fallbackWidth : 400.0),
           fallbackHeight: (tree.flutterPlaceholder.hasFallbackHeight() ? tree.flutterPlaceholder.fallbackHeight : 400.0),
@@ -25087,7 +25088,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
       return $flutterSrcWidgetsMagnifier.RawMagnifier(
           key: (tree.flutterRawMagnifier.hasKey() ? evaluateFlutterKeyExpression(tree.flutterRawMagnifier.key) : null),
           child: (tree.flutterRawMagnifier.hasChild() ? evaluateWidgetExpression(tree.flutterRawMagnifier.child) : null),
-          decoration: (tree.flutterRawMagnifier.hasDecoration() ? evaluateRequiredFlutterMagnifierDecorationExpression(tree.flutterRawMagnifier.decoration) : missing('decoration')),
+          decoration: (tree.flutterRawMagnifier.hasDecoration() ? evaluateRequiredFlutterMagnifierDecorationExpression(tree.flutterRawMagnifier.decoration) : $flutterSrcWidgetsMagnifier.MagnifierDecoration()),
           focalPointOffset: (tree.flutterRawMagnifier.hasFocalPointOffset() ? evaluateRequiredDartOffsetExpression(tree.flutterRawMagnifier.focalPointOffset) : $dartUi.Offset.zero),
           magnificationScale: (tree.flutterRawMagnifier.hasMagnificationScale() ? tree.flutterRawMagnifier.magnificationScale : 1),
           size: (tree.flutterRawMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.flutterRawMagnifier.size) : missing('size')));
@@ -25107,8 +25108,8 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           trackRadius: (tree.flutterRawScrollbar.hasTrackRadius() ? evaluateDartRadiusExpression(tree.flutterRawScrollbar.trackRadius) : null),
           trackColor: (tree.flutterRawScrollbar.hasTrackColor() ? evaluateDartColorExpression(tree.flutterRawScrollbar.trackColor) : null),
           trackBorderColor: (tree.flutterRawScrollbar.hasTrackBorderColor() ? evaluateDartColorExpression(tree.flutterRawScrollbar.trackBorderColor) : null),
-          fadeDuration: (tree.flutterRawScrollbar.hasFadeDuration() ? evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.fadeDuration) : missing('fadeDuration')),
-          timeToFade: (tree.flutterRawScrollbar.hasTimeToFade() ? evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.timeToFade) : missing('timeToFade')),
+          fadeDuration: (tree.flutterRawScrollbar.hasFadeDuration() ? evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.fadeDuration) : $dartCore.Duration(milliseconds: 300)),
+          timeToFade: (tree.flutterRawScrollbar.hasTimeToFade() ? evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.timeToFade) : $dartCore.Duration(milliseconds: 600)),
           pressDuration: (tree.flutterRawScrollbar.hasPressDuration() ? evaluateRequiredDartDurationExpression(tree.flutterRawScrollbar.pressDuration) : $dartCore.Duration.zero),
           interactive: (tree.flutterRawScrollbar.hasInteractive() ? tree.flutterRawScrollbar.interactive : null),
           scrollbarOrientation: (tree.flutterRawScrollbar.hasScrollbarOrientation() ? enums.convertFlutterScrollbarOrientation(tree.flutterRawScrollbar.scrollbarOrientation) : null),
@@ -25296,7 +25297,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
       return $flutterSrcWidgetsSemanticsDebugger.SemanticsDebugger(
           key: (tree.flutterSemanticsDebugger.hasKey() ? evaluateFlutterKeyExpression(tree.flutterSemanticsDebugger.key) : null),
           child: (tree.flutterSemanticsDebugger.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterSemanticsDebugger.child) : missing('child')),
-          labelStyle: (tree.flutterSemanticsDebugger.hasLabelStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterSemanticsDebugger.labelStyle) : missing('labelStyle')));
+          labelStyle: (tree.flutterSemanticsDebugger.hasLabelStyle() ? evaluateRequiredFlutterTextStyleExpression(tree.flutterSemanticsDebugger.labelStyle) : $flutterSrcPaintingTextStyle.TextStyle(color: $dartUi.Color(0xFF000000), fontSize: 10.0, height: 0.8)));
     case messages.WidgetExpression_Result.flutterSemanticsNamedFromProperties:
       return $flutterSrcWidgetsBasic.Semantics.fromProperties(
           key: (tree.flutterSemanticsNamedFromProperties.hasKey() ? evaluateFlutterKeyExpression(tree.flutterSemanticsNamedFromProperties.key) : null),
@@ -25527,7 +25528,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
       return $flutterSrcWidgetsVisibility.SliverVisibility(
           key: (tree.flutterSliverVisibility.hasKey() ? evaluateFlutterKeyExpression(tree.flutterSliverVisibility.key) : null),
           sliver: (tree.flutterSliverVisibility.hasSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibility.sliver) : missing('sliver')),
-          replacementSliver: (tree.flutterSliverVisibility.hasReplacementSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibility.replacementSliver) : missing('replacementSliver')),
+          replacementSliver: (tree.flutterSliverVisibility.hasReplacementSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibility.replacementSliver) : $flutterSrcWidgetsBasic.SliverToBoxAdapter()),
           visible: (tree.flutterSliverVisibility.hasVisible() ? tree.flutterSliverVisibility.visible : true),
           maintainState: (tree.flutterSliverVisibility.hasMaintainState() ? tree.flutterSliverVisibility.maintainState : false),
           maintainAnimation: (tree.flutterSliverVisibility.hasMaintainAnimation() ? tree.flutterSliverVisibility.maintainAnimation : false),
@@ -25538,7 +25539,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
       return $flutterSrcWidgetsVisibility.SliverVisibility.maintain(
           key: (tree.flutterSliverVisibilityNamedMaintain.hasKey() ? evaluateFlutterKeyExpression(tree.flutterSliverVisibilityNamedMaintain.key) : null),
           sliver: (tree.flutterSliverVisibilityNamedMaintain.hasSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibilityNamedMaintain.sliver) : missing('sliver')),
-          replacementSliver: (tree.flutterSliverVisibilityNamedMaintain.hasReplacementSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibilityNamedMaintain.replacementSliver) : missing('replacementSliver')),
+          replacementSliver: (tree.flutterSliverVisibilityNamedMaintain.hasReplacementSliver() ? evaluateRequiredWidgetExpression(tree.flutterSliverVisibilityNamedMaintain.replacementSliver) : $flutterSrcWidgetsBasic.SliverToBoxAdapter()),
           visible: (tree.flutterSliverVisibilityNamedMaintain.hasVisible() ? tree.flutterSliverVisibilityNamedMaintain.visible : true));
     case messages.WidgetExpression_Result.flutterSnapshotWidget:
       return $flutterSrcWidgetsSnapshotWidget.SnapshotWidget(
@@ -25571,7 +25572,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           key: (tree.flutterTable.hasKey() ? evaluateFlutterKeyExpression(tree.flutterTable.key) : null),
           children: tree.flutterTable.children.map((e) => evaluateRequiredFlutterTableRowExpression(e)).toList(),
           columnWidths: null,
-          defaultColumnWidth: (tree.flutterTable.hasDefaultColumnWidth() ? evaluateRequiredFlutterTableColumnWidthExpression(tree.flutterTable.defaultColumnWidth) : missing('defaultColumnWidth')),
+          defaultColumnWidth: (tree.flutterTable.hasDefaultColumnWidth() ? evaluateRequiredFlutterTableColumnWidthExpression(tree.flutterTable.defaultColumnWidth) : $flutterSrcRenderingTable.FlexColumnWidth()),
           textDirection: (tree.flutterTable.hasTextDirection() ? enums.convertDartTextDirection(tree.flutterTable.textDirection) : null),
           border: (tree.flutterTable.hasBorder() ? evaluateFlutterTableBorderExpression(tree.flutterTable.border) : null),
           defaultVerticalAlignment: (tree.flutterTable.hasDefaultVerticalAlignment() ? enums.convertRequiredFlutterTableCellVerticalAlignment(tree.flutterTable.defaultVerticalAlignment) : $flutterSrcRenderingTable.TableCellVerticalAlignment.top),
@@ -25773,7 +25774,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
       return $flutterSrcWidgetsVisibility.Visibility(
           key: (tree.flutterVisibility.hasKey() ? evaluateFlutterKeyExpression(tree.flutterVisibility.key) : null),
           child: (tree.flutterVisibility.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterVisibility.child) : missing('child')),
-          replacement: (tree.flutterVisibility.hasReplacement() ? evaluateRequiredWidgetExpression(tree.flutterVisibility.replacement) : missing('replacement')),
+          replacement: (tree.flutterVisibility.hasReplacement() ? evaluateRequiredWidgetExpression(tree.flutterVisibility.replacement) : $flutterSrcWidgetsBasic.SizedBox.shrink()),
           visible: (tree.flutterVisibility.hasVisible() ? tree.flutterVisibility.visible : true),
           maintainState: (tree.flutterVisibility.hasMaintainState() ? tree.flutterVisibility.maintainState : false),
           maintainAnimation: (tree.flutterVisibility.hasMaintainAnimation() ? tree.flutterVisibility.maintainAnimation : false),
@@ -25998,7 +25999,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           shadowColor: (tree.materialAlertDialog.hasShadowColor() ? evaluateDartColorExpression(tree.materialAlertDialog.shadowColor) : null),
           surfaceTintColor: (tree.materialAlertDialog.hasSurfaceTintColor() ? evaluateDartColorExpression(tree.materialAlertDialog.surfaceTintColor) : null),
           semanticLabel: (tree.materialAlertDialog.hasSemanticLabel() ? tree.materialAlertDialog.semanticLabel : null),
-          insetPadding: (tree.materialAlertDialog.hasInsetPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialAlertDialog.insetPadding) : missing('insetPadding')),
+          insetPadding: (tree.materialAlertDialog.hasInsetPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialAlertDialog.insetPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(horizontal: 40.0, vertical: 24.0)),
           clipBehavior: (tree.materialAlertDialog.hasClipBehavior() ? enums.convertRequiredDartClip(tree.materialAlertDialog.clipBehavior) : $dartUi.Clip.none),
           shape: (tree.materialAlertDialog.hasShape() ? evaluateFlutterShapeBorderExpression(tree.materialAlertDialog.shape) : null),
           alignment: (tree.materialAlertDialog.hasAlignment() ? evaluateFlutterAlignmentGeometryExpression(tree.materialAlertDialog.alignment) : null),
@@ -26423,7 +26424,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           selectedShadowColor: (tree.materialChoiceChip.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialChoiceChip.selectedShadowColor) : null),
           showCheckmark: (tree.materialChoiceChip.hasShowCheckmark() ? tree.materialChoiceChip.showCheckmark : null),
           checkmarkColor: (tree.materialChoiceChip.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialChoiceChip.checkmarkColor) : null),
-          avatarBorder: (tree.materialChoiceChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialChoiceChip.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialChoiceChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialChoiceChip.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.WidgetExpression_Result.materialChoiceChipNamedElevated:
       return $flutterSrcMaterialChoiceChip.ChoiceChip.elevated(
           key: (tree.materialChoiceChipNamedElevated.hasKey() ? evaluateFlutterKeyExpression(tree.materialChoiceChipNamedElevated.key) : null),
@@ -26454,7 +26455,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           selectedShadowColor: (tree.materialChoiceChipNamedElevated.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialChoiceChipNamedElevated.selectedShadowColor) : null),
           showCheckmark: (tree.materialChoiceChipNamedElevated.hasShowCheckmark() ? tree.materialChoiceChipNamedElevated.showCheckmark : null),
           checkmarkColor: (tree.materialChoiceChipNamedElevated.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialChoiceChipNamedElevated.checkmarkColor) : null),
-          avatarBorder: (tree.materialChoiceChipNamedElevated.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialChoiceChipNamedElevated.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialChoiceChipNamedElevated.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialChoiceChipNamedElevated.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.WidgetExpression_Result.materialCircleAvatar:
       return $flutterSrcMaterialCircleAvatar.CircleAvatar(
           key: (tree.materialCircleAvatar.hasKey() ? evaluateFlutterKeyExpression(tree.materialCircleAvatar.key) : null),
@@ -26609,9 +26610,9 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           elevation: (tree.materialDialog.hasElevation() ? tree.materialDialog.elevation : null),
           shadowColor: (tree.materialDialog.hasShadowColor() ? evaluateDartColorExpression(tree.materialDialog.shadowColor) : null),
           surfaceTintColor: (tree.materialDialog.hasSurfaceTintColor() ? evaluateDartColorExpression(tree.materialDialog.surfaceTintColor) : null),
-          insetAnimationDuration: (tree.materialDialog.hasInsetAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialDialog.insetAnimationDuration) : missing('insetAnimationDuration')),
+          insetAnimationDuration: (tree.materialDialog.hasInsetAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialDialog.insetAnimationDuration) : $dartCore.Duration(milliseconds: 100)),
           insetAnimationCurve: (tree.materialDialog.hasInsetAnimationCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.materialDialog.insetAnimationCurve) : $flutterSrcAnimationCurves.Curves.decelerate),
-          insetPadding: (tree.materialDialog.hasInsetPadding() ? evaluateFlutterEdgeInsetsExpression(tree.materialDialog.insetPadding) : null),
+          insetPadding: (tree.materialDialog.hasInsetPadding() ? evaluateFlutterEdgeInsetsExpression(tree.materialDialog.insetPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(horizontal: 40.0, vertical: 24.0)),
           clipBehavior: (tree.materialDialog.hasClipBehavior() ? enums.convertRequiredDartClip(tree.materialDialog.clipBehavior) : $dartUi.Clip.none),
           shape: (tree.materialDialog.hasShape() ? evaluateFlutterShapeBorderExpression(tree.materialDialog.shape) : null),
           alignment: (tree.materialDialog.hasAlignment() ? evaluateFlutterAlignmentGeometryExpression(tree.materialDialog.alignment) : null),
@@ -26671,9 +26672,9 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
       return $flutterSrcMaterialDrawerHeader.DrawerHeader(
           key: (tree.materialDrawerHeader.hasKey() ? evaluateFlutterKeyExpression(tree.materialDrawerHeader.key) : null),
           decoration: (tree.materialDrawerHeader.hasDecoration() ? evaluateFlutterDecorationExpression(tree.materialDrawerHeader.decoration) : null),
-          margin: (tree.materialDrawerHeader.hasMargin() ? evaluateFlutterEdgeInsetsGeometryExpression(tree.materialDrawerHeader.margin) : null),
-          padding: (tree.materialDrawerHeader.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialDrawerHeader.padding) : missing('padding')),
-          duration: (tree.materialDrawerHeader.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialDrawerHeader.duration) : missing('duration')),
+          margin: (tree.materialDrawerHeader.hasMargin() ? evaluateFlutterEdgeInsetsGeometryExpression(tree.materialDrawerHeader.margin) : $flutterSrcPaintingEdgeInsets.EdgeInsets.only(bottom: 8.0)),
+          padding: (tree.materialDrawerHeader.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialDrawerHeader.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 8.0)),
+          duration: (tree.materialDrawerHeader.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialDrawerHeader.duration) : $dartCore.Duration(milliseconds: 250)),
           curve: (tree.materialDrawerHeader.hasCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.materialDrawerHeader.curve) : $flutterSrcAnimationCurves.Curves.fastOutSlowIn),
           child: (tree.materialDrawerHeader.hasChild() ? evaluateWidgetExpression(tree.materialDrawerHeader.child) : null));
     case messages.WidgetExpression_Result.materialDrawerTheme:
@@ -26802,7 +26803,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           isExpanded: (tree.materialExpandIcon.hasIsExpanded() ? tree.materialExpandIcon.isExpanded : false),
           size: (tree.materialExpandIcon.hasSize() ? tree.materialExpandIcon.size : 24.0),
           onPressed: null,
-          padding: (tree.materialExpandIcon.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialExpandIcon.padding) : missing('padding')),
+          padding: (tree.materialExpandIcon.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialExpandIcon.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(8.0)),
           color: (tree.materialExpandIcon.hasColor() ? evaluateDartColorExpression(tree.materialExpandIcon.color) : null),
           disabledColor: (tree.materialExpandIcon.hasDisabledColor() ? evaluateDartColorExpression(tree.materialExpandIcon.disabledColor) : null),
           expandedColor: (tree.materialExpandIcon.hasExpandedColor() ? evaluateDartColorExpression(tree.materialExpandIcon.expandedColor) : null));
@@ -26949,7 +26950,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           selectedShadowColor: (tree.materialFilterChip.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialFilterChip.selectedShadowColor) : null),
           showCheckmark: (tree.materialFilterChip.hasShowCheckmark() ? tree.materialFilterChip.showCheckmark : null),
           checkmarkColor: (tree.materialFilterChip.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialFilterChip.checkmarkColor) : null),
-          avatarBorder: (tree.materialFilterChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialFilterChip.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialFilterChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialFilterChip.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.WidgetExpression_Result.materialFilterChipNamedElevated:
       return $flutterSrcMaterialFilterChip.FilterChip.elevated(
           key: (tree.materialFilterChipNamedElevated.hasKey() ? evaluateFlutterKeyExpression(tree.materialFilterChipNamedElevated.key) : null),
@@ -26980,7 +26981,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           selectedShadowColor: (tree.materialFilterChipNamedElevated.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialFilterChipNamedElevated.selectedShadowColor) : null),
           showCheckmark: (tree.materialFilterChipNamedElevated.hasShowCheckmark() ? tree.materialFilterChipNamedElevated.showCheckmark : null),
           checkmarkColor: (tree.materialFilterChipNamedElevated.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialFilterChipNamedElevated.checkmarkColor) : null),
-          avatarBorder: (tree.materialFilterChipNamedElevated.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialFilterChipNamedElevated.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialFilterChipNamedElevated.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialFilterChipNamedElevated.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.WidgetExpression_Result.materialFlexibleSpaceBar:
       return $flutterSrcMaterialFlexibleSpaceBar.FlexibleSpaceBar(
           key: (tree.materialFlexibleSpaceBar.hasKey() ? evaluateFlutterKeyExpression(tree.materialFlexibleSpaceBar.key) : null),
@@ -27108,9 +27109,9 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
       return $flutterSrcMaterialFlutterLogo.FlutterLogo(
           key: (tree.materialFlutterLogo.hasKey() ? evaluateFlutterKeyExpression(tree.materialFlutterLogo.key) : null),
           size: (tree.materialFlutterLogo.hasSize() ? tree.materialFlutterLogo.size : null),
-          textColor: (tree.materialFlutterLogo.hasTextColor() ? evaluateRequiredDartColorExpression(tree.materialFlutterLogo.textColor) : missing('textColor')),
+          textColor: (tree.materialFlutterLogo.hasTextColor() ? evaluateRequiredDartColorExpression(tree.materialFlutterLogo.textColor) : $dartUi.Color(0xFF757575)),
           style: (tree.materialFlutterLogo.hasStyle() ? enums.convertRequiredFlutterFlutterLogoStyle(tree.materialFlutterLogo.style) : $flutterSrcPaintingFlutterLogo.FlutterLogoStyle.markOnly),
-          duration: (tree.materialFlutterLogo.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialFlutterLogo.duration) : missing('duration')),
+          duration: (tree.materialFlutterLogo.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialFlutterLogo.duration) : $dartCore.Duration(milliseconds: 750)),
           curve: (tree.materialFlutterLogo.hasCurve() ? evaluateRequiredFlutterSrcAnimationCurveExpression(tree.materialFlutterLogo.curve) : $flutterSrcAnimationCurves.Curves.fastOutSlowIn));
     case messages.WidgetExpression_Result.materialGridTile:
       return $flutterSrcMaterialGridTile.GridTile(
@@ -27346,7 +27347,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           selectedShadowColor: (tree.materialInputChip.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialInputChip.selectedShadowColor) : null),
           showCheckmark: (tree.materialInputChip.hasShowCheckmark() ? tree.materialInputChip.showCheckmark : null),
           checkmarkColor: (tree.materialInputChip.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialInputChip.checkmarkColor) : null),
-          avatarBorder: (tree.materialInputChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialInputChip.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialInputChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialInputChip.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.WidgetExpression_Result.materialInputDatePickerFormField:
       return $flutterSrcMaterialInputDatePickerFormField.InputDatePickerFormField(
           key: (tree.materialInputDatePickerFormField.hasKey() ? evaluateFlutterKeyExpression(tree.materialInputDatePickerFormField.key) : null),
@@ -27453,10 +27454,10 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
       return $flutterSrcMaterialMagnifier.Magnifier(
           key: (tree.materialMagnifier.hasKey() ? evaluateFlutterKeyExpression(tree.materialMagnifier.key) : null),
           additionalFocalPointOffset: (tree.materialMagnifier.hasAdditionalFocalPointOffset() ? evaluateRequiredDartOffsetExpression(tree.materialMagnifier.additionalFocalPointOffset) : $dartUi.Offset.zero),
-          borderRadius: (tree.materialMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.materialMagnifier.borderRadius) : missing('borderRadius')),
-          filmColor: (tree.materialMagnifier.hasFilmColor() ? evaluateRequiredDartColorExpression(tree.materialMagnifier.filmColor) : missing('filmColor')),
+          borderRadius: (tree.materialMagnifier.hasBorderRadius() ? evaluateRequiredFlutterBorderRadiusExpression(tree.materialMagnifier.borderRadius) : $flutterSrcPaintingBorderRadius.BorderRadius.all($dartUi.Radius.circular(40))),
+          filmColor: (tree.materialMagnifier.hasFilmColor() ? evaluateRequiredDartColorExpression(tree.materialMagnifier.filmColor) : $dartUi.Color.fromARGB(8, 158, 158, 158)),
           shadows: tree.materialMagnifier.shadows.map((e) => evaluateRequiredFlutterBoxShadowExpression(e)).toList(),
-          size: (tree.materialMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.materialMagnifier.size) : missing('size')));
+          size: (tree.materialMagnifier.hasSize() ? evaluateRequiredDartSizeExpression(tree.materialMagnifier.size) : $dartUi.Size(77.37, 37.9)));
     case messages.WidgetExpression_Result.materialMaterial:
       return $flutterSrcMaterialMaterial.Material(
           key: (tree.materialMaterial.hasKey() ? evaluateFlutterKeyExpression(tree.materialMaterial.key) : null),
@@ -27715,7 +27716,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           indicatorShape: (tree.materialNavigationDrawer.hasIndicatorShape() ? evaluateFlutterShapeBorderExpression(tree.materialNavigationDrawer.indicatorShape) : null),
           onDestinationSelected: null,
           selectedIndex: (tree.materialNavigationDrawer.hasSelectedIndex() ? tree.materialNavigationDrawer.selectedIndex : 0),
-          tilePadding: (tree.materialNavigationDrawer.hasTilePadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialNavigationDrawer.tilePadding) : missing('tilePadding')));
+          tilePadding: (tree.materialNavigationDrawer.hasTilePadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialNavigationDrawer.tilePadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(horizontal: 12.0)));
     case messages.WidgetExpression_Result.materialNavigationDrawerDestination:
       return $flutterSrcMaterialNavigationDrawer.NavigationDrawerDestination(
           key: (tree.materialNavigationDrawerDestination.hasKey() ? evaluateFlutterKeyExpression(tree.materialNavigationDrawerDestination.key) : null),
@@ -27898,7 +27899,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           selectedShadowColor: (tree.materialRawChip.hasSelectedShadowColor() ? evaluateDartColorExpression(tree.materialRawChip.selectedShadowColor) : null),
           showCheckmark: (tree.materialRawChip.hasShowCheckmark() ? tree.materialRawChip.showCheckmark : null),
           checkmarkColor: (tree.materialRawChip.hasCheckmarkColor() ? evaluateDartColorExpression(tree.materialRawChip.checkmarkColor) : null),
-          avatarBorder: (tree.materialRawChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialRawChip.avatarBorder) : missing('avatarBorder')));
+          avatarBorder: (tree.materialRawChip.hasAvatarBorder() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialRawChip.avatarBorder) : $flutterSrcPaintingCircleBorder.CircleBorder()));
     case messages.WidgetExpression_Result.materialRawMaterialButton:
       return $flutterSrcMaterialButton.RawMaterialButton(
           key: (tree.materialRawMaterialButton.hasKey() ? evaluateFlutterKeyExpression(tree.materialRawMaterialButton.key) : null),
@@ -27919,8 +27920,8 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           disabledElevation: (tree.materialRawMaterialButton.hasDisabledElevation() ? tree.materialRawMaterialButton.disabledElevation : 0.0),
           padding: (tree.materialRawMaterialButton.hasPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialRawMaterialButton.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.zero),
           visualDensity: (tree.materialRawMaterialButton.hasVisualDensity() ? evaluateRequiredMaterialVisualDensityExpression(tree.materialRawMaterialButton.visualDensity) : $flutterSrcMaterialThemeData.VisualDensity.standard),
-          constraints: (tree.materialRawMaterialButton.hasConstraints() ? evaluateRequiredFlutterBoxConstraintsExpression(tree.materialRawMaterialButton.constraints) : missing('constraints')),
-          shape: (tree.materialRawMaterialButton.hasShape() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialRawMaterialButton.shape) : missing('shape')),
+          constraints: (tree.materialRawMaterialButton.hasConstraints() ? evaluateRequiredFlutterBoxConstraintsExpression(tree.materialRawMaterialButton.constraints) : $flutterSrcRenderingBox.BoxConstraints(minWidth: 88.0, minHeight: 36.0)),
+          shape: (tree.materialRawMaterialButton.hasShape() ? evaluateRequiredFlutterShapeBorderExpression(tree.materialRawMaterialButton.shape) : $flutterSrcPaintingRoundedRectangleBorder.RoundedRectangleBorder()),
           animationDuration: (tree.materialRawMaterialButton.hasAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialRawMaterialButton.animationDuration) : $flutterSrcMaterialConstants.kThemeChangeDuration),
           clipBehavior: (tree.materialRawMaterialButton.hasClipBehavior() ? enums.convertRequiredDartClip(tree.materialRawMaterialButton.clipBehavior) : $dartUi.Clip.none),
           focusNode: (tree.materialRawMaterialButton.hasFocusNode() ? evaluateFlutterFocusNodeExpression(tree.materialRawMaterialButton.focusNode) : null),
@@ -27941,8 +27942,8 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           semanticsValue: (tree.materialRefreshProgressIndicator.hasSemanticsValue() ? tree.materialRefreshProgressIndicator.semanticsValue : null),
           strokeCap: (tree.materialRefreshProgressIndicator.hasStrokeCap() ? enums.convertDartStrokeCap(tree.materialRefreshProgressIndicator.strokeCap) : null),
           elevation: (tree.materialRefreshProgressIndicator.hasElevation() ? tree.materialRefreshProgressIndicator.elevation : 2.0),
-          indicatorMargin: (tree.materialRefreshProgressIndicator.hasIndicatorMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialRefreshProgressIndicator.indicatorMargin) : missing('indicatorMargin')),
-          indicatorPadding: (tree.materialRefreshProgressIndicator.hasIndicatorPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialRefreshProgressIndicator.indicatorPadding) : missing('indicatorPadding')));
+          indicatorMargin: (tree.materialRefreshProgressIndicator.hasIndicatorMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialRefreshProgressIndicator.indicatorMargin) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(4.0)),
+          indicatorPadding: (tree.materialRefreshProgressIndicator.hasIndicatorPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialRefreshProgressIndicator.indicatorPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(12.0)));
     case messages.WidgetExpression_Result.materialScaffold:
       return $flutterSrcMaterialScaffold.Scaffold(
           key: (tree.materialScaffold.hasKey() ? evaluateFlutterKeyExpression(tree.materialScaffold.key) : null),
@@ -28104,16 +28105,16 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
       return $flutterSrcMaterialDialog.SimpleDialog(
           key: (tree.materialSimpleDialog.hasKey() ? evaluateFlutterKeyExpression(tree.materialSimpleDialog.key) : null),
           title: (tree.materialSimpleDialog.hasTitle() ? evaluateWidgetExpression(tree.materialSimpleDialog.title) : null),
-          titlePadding: (tree.materialSimpleDialog.hasTitlePadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialSimpleDialog.titlePadding) : missing('titlePadding')),
+          titlePadding: (tree.materialSimpleDialog.hasTitlePadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialSimpleDialog.titlePadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 0.0)),
           titleTextStyle: (tree.materialSimpleDialog.hasTitleTextStyle() ? evaluateFlutterTextStyleExpression(tree.materialSimpleDialog.titleTextStyle) : null),
           children: tree.materialSimpleDialog.children.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
-          contentPadding: (tree.materialSimpleDialog.hasContentPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialSimpleDialog.contentPadding) : missing('contentPadding')),
+          contentPadding: (tree.materialSimpleDialog.hasContentPadding() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialSimpleDialog.contentPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.fromLTRB(0.0, 12.0, 0.0, 16.0)),
           backgroundColor: (tree.materialSimpleDialog.hasBackgroundColor() ? evaluateDartColorExpression(tree.materialSimpleDialog.backgroundColor) : null),
           elevation: (tree.materialSimpleDialog.hasElevation() ? tree.materialSimpleDialog.elevation : null),
           shadowColor: (tree.materialSimpleDialog.hasShadowColor() ? evaluateDartColorExpression(tree.materialSimpleDialog.shadowColor) : null),
           surfaceTintColor: (tree.materialSimpleDialog.hasSurfaceTintColor() ? evaluateDartColorExpression(tree.materialSimpleDialog.surfaceTintColor) : null),
           semanticLabel: (tree.materialSimpleDialog.hasSemanticLabel() ? tree.materialSimpleDialog.semanticLabel : null),
-          insetPadding: (tree.materialSimpleDialog.hasInsetPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialSimpleDialog.insetPadding) : missing('insetPadding')),
+          insetPadding: (tree.materialSimpleDialog.hasInsetPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialSimpleDialog.insetPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(horizontal: 40.0, vertical: 24.0)),
           clipBehavior: (tree.materialSimpleDialog.hasClipBehavior() ? enums.convertRequiredDartClip(tree.materialSimpleDialog.clipBehavior) : $dartUi.Clip.none),
           shape: (tree.materialSimpleDialog.hasShape() ? evaluateFlutterShapeBorderExpression(tree.materialSimpleDialog.shape) : null),
           alignment: (tree.materialSimpleDialog.hasAlignment() ? evaluateFlutterAlignmentGeometryExpression(tree.materialSimpleDialog.alignment) : null));
@@ -28302,7 +28303,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           actionOverflowThreshold: (tree.materialSnackBar.hasActionOverflowThreshold() ? tree.materialSnackBar.actionOverflowThreshold : null),
           showCloseIcon: (tree.materialSnackBar.hasShowCloseIcon() ? tree.materialSnackBar.showCloseIcon : null),
           closeIconColor: (tree.materialSnackBar.hasCloseIconColor() ? evaluateDartColorExpression(tree.materialSnackBar.closeIconColor) : null),
-          duration: (tree.materialSnackBar.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialSnackBar.duration) : missing('duration')),
+          duration: (tree.materialSnackBar.hasDuration() ? evaluateRequiredDartDurationExpression(tree.materialSnackBar.duration) : $dartCore.Duration(milliseconds: 4000)),
           animation: null,
           onVisible: null,
           dismissDirection: (tree.materialSnackBar.hasDismissDirection() ? enums.convertRequiredFlutterDismissDirection(tree.materialSnackBar.dismissDirection) : $flutterSrcWidgetsDismissible.DismissDirection.down),
@@ -28497,7 +28498,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           key: (tree.materialTab.hasKey() ? evaluateFlutterKeyExpression(tree.materialTab.key) : null),
           text: (tree.materialTab.hasText() ? tree.materialTab.text : null),
           icon: (tree.materialTab.hasIcon() ? evaluateWidgetExpression(tree.materialTab.icon) : null),
-          iconMargin: (tree.materialTab.hasIconMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialTab.iconMargin) : missing('iconMargin')),
+          iconMargin: (tree.materialTab.hasIconMargin() ? evaluateRequiredFlutterEdgeInsetsGeometryExpression(tree.materialTab.iconMargin) : $flutterSrcPaintingEdgeInsets.EdgeInsets.only(bottom: 10.0)),
           height: (tree.materialTab.hasHeight() ? tree.materialTab.height : null),
           child: (tree.materialTab.hasChild() ? evaluateWidgetExpression(tree.materialTab.child) : null));
     case messages.WidgetExpression_Result.materialTabBar:
@@ -28633,7 +28634,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           controller: (tree.materialTextField.hasController() ? evaluateFlutterTextEditingControllerExpression(tree.materialTextField.controller) : null),
           focusNode: (tree.materialTextField.hasFocusNode() ? evaluateFlutterFocusNodeExpression(tree.materialTextField.focusNode) : null),
           undoController: (tree.materialTextField.hasUndoController() ? evaluateFlutterUndoHistoryControllerExpression(tree.materialTextField.undoController) : null),
-          decoration: (tree.materialTextField.hasDecoration() ? evaluateMaterialInputDecorationExpression(tree.materialTextField.decoration) : null),
+          decoration: (tree.materialTextField.hasDecoration() ? evaluateMaterialInputDecorationExpression(tree.materialTextField.decoration) : $flutterSrcMaterialInputDecorator.InputDecoration()),
           keyboardType: (tree.materialTextField.hasKeyboardType() ? evaluateFlutterTextInputTypeExpression(tree.materialTextField.keyboardType) : null),
           textInputAction: (tree.materialTextField.hasTextInputAction() ? enums.convertFlutterTextInputAction(tree.materialTextField.textInputAction) : null),
           textCapitalization: (tree.materialTextField.hasTextCapitalization() ? enums.convertRequiredFlutterTextCapitalization(tree.materialTextField.textCapitalization) : $flutterSrcServicesTextInput.TextCapitalization.none),
@@ -28670,7 +28671,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           selectionHeightStyle: (tree.materialTextField.hasSelectionHeightStyle() ? enums.convertRequiredDartBoxHeightStyle(tree.materialTextField.selectionHeightStyle) : missing('selectionHeightStyle')),
           selectionWidthStyle: (tree.materialTextField.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyle(tree.materialTextField.selectionWidthStyle) : missing('selectionWidthStyle')),
           keyboardAppearance: (tree.materialTextField.hasKeyboardAppearance() ? enums.convertDartBrightness(tree.materialTextField.keyboardAppearance) : null),
-          scrollPadding: (tree.materialTextField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialTextField.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.materialTextField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialTextField.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           dragStartBehavior: (tree.materialTextField.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehavior(tree.materialTextField.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           enableInteractiveSelection: (tree.materialTextField.hasEnableInteractiveSelection() ? tree.materialTextField.enableInteractiveSelection : null),
           selectionControls: (tree.materialTextField.hasSelectionControls() ? evaluateFlutterTextSelectionControlsExpression(tree.materialTextField.selectionControls) : null),
@@ -28696,7 +28697,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           controller: (tree.materialTextFormField.hasController() ? evaluateFlutterTextEditingControllerExpression(tree.materialTextFormField.controller) : null),
           initialValue: (tree.materialTextFormField.hasInitialValue() ? tree.materialTextFormField.initialValue : null),
           focusNode: (tree.materialTextFormField.hasFocusNode() ? evaluateFlutterFocusNodeExpression(tree.materialTextFormField.focusNode) : null),
-          decoration: (tree.materialTextFormField.hasDecoration() ? evaluateMaterialInputDecorationExpression(tree.materialTextFormField.decoration) : null),
+          decoration: (tree.materialTextFormField.hasDecoration() ? evaluateMaterialInputDecorationExpression(tree.materialTextFormField.decoration) : $flutterSrcMaterialInputDecorator.InputDecoration()),
           keyboardType: (tree.materialTextFormField.hasKeyboardType() ? evaluateFlutterTextInputTypeExpression(tree.materialTextFormField.keyboardType) : null),
           textCapitalization: (tree.materialTextFormField.hasTextCapitalization() ? enums.convertRequiredFlutterTextCapitalization(tree.materialTextFormField.textCapitalization) : $flutterSrcServicesTextInput.TextCapitalization.none),
           textInputAction: (tree.materialTextFormField.hasTextInputAction() ? enums.convertFlutterTextInputAction(tree.materialTextFormField.textInputAction) : null),
@@ -28733,7 +28734,7 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           cursorRadius: (tree.materialTextFormField.hasCursorRadius() ? evaluateDartRadiusExpression(tree.materialTextFormField.cursorRadius) : null),
           cursorColor: (tree.materialTextFormField.hasCursorColor() ? evaluateDartColorExpression(tree.materialTextFormField.cursorColor) : null),
           keyboardAppearance: (tree.materialTextFormField.hasKeyboardAppearance() ? enums.convertDartBrightness(tree.materialTextFormField.keyboardAppearance) : null),
-          scrollPadding: (tree.materialTextFormField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialTextFormField.scrollPadding) : missing('scrollPadding')),
+          scrollPadding: (tree.materialTextFormField.hasScrollPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialTextFormField.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           enableInteractiveSelection: (tree.materialTextFormField.hasEnableInteractiveSelection() ? tree.materialTextFormField.enableInteractiveSelection : null),
           selectionControls: (tree.materialTextFormField.hasSelectionControls() ? evaluateFlutterTextSelectionControlsExpression(tree.materialTextFormField.selectionControls) : null),
           buildCounter: null,
@@ -28865,11 +28866,11 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
       return $flutterSrcMaterialUserAccountsDrawerHeader.UserAccountsDrawerHeader(
           key: (tree.materialUserAccountsDrawerHeader.hasKey() ? evaluateFlutterKeyExpression(tree.materialUserAccountsDrawerHeader.key) : null),
           decoration: (tree.materialUserAccountsDrawerHeader.hasDecoration() ? evaluateFlutterDecorationExpression(tree.materialUserAccountsDrawerHeader.decoration) : null),
-          margin: (tree.materialUserAccountsDrawerHeader.hasMargin() ? evaluateFlutterEdgeInsetsGeometryExpression(tree.materialUserAccountsDrawerHeader.margin) : null),
+          margin: (tree.materialUserAccountsDrawerHeader.hasMargin() ? evaluateFlutterEdgeInsetsGeometryExpression(tree.materialUserAccountsDrawerHeader.margin) : $flutterSrcPaintingEdgeInsets.EdgeInsets.only(bottom: 8.0)),
           currentAccountPicture: (tree.materialUserAccountsDrawerHeader.hasCurrentAccountPicture() ? evaluateWidgetExpression(tree.materialUserAccountsDrawerHeader.currentAccountPicture) : null),
           otherAccountsPictures: tree.materialUserAccountsDrawerHeader.otherAccountsPictures.map((e) => evaluateRequiredWidgetExpression(e)).toList(),
-          currentAccountPictureSize: (tree.materialUserAccountsDrawerHeader.hasCurrentAccountPictureSize() ? evaluateRequiredDartSizeExpression(tree.materialUserAccountsDrawerHeader.currentAccountPictureSize) : missing('currentAccountPictureSize')),
-          otherAccountsPicturesSize: (tree.materialUserAccountsDrawerHeader.hasOtherAccountsPicturesSize() ? evaluateRequiredDartSizeExpression(tree.materialUserAccountsDrawerHeader.otherAccountsPicturesSize) : missing('otherAccountsPicturesSize')),
+          currentAccountPictureSize: (tree.materialUserAccountsDrawerHeader.hasCurrentAccountPictureSize() ? evaluateRequiredDartSizeExpression(tree.materialUserAccountsDrawerHeader.currentAccountPictureSize) : $dartUi.Size.square(72.0)),
+          otherAccountsPicturesSize: (tree.materialUserAccountsDrawerHeader.hasOtherAccountsPicturesSize() ? evaluateRequiredDartSizeExpression(tree.materialUserAccountsDrawerHeader.otherAccountsPicturesSize) : $dartUi.Size.square(40.0)),
           accountName: (tree.materialUserAccountsDrawerHeader.hasAccountName() ? evaluateWidgetExpression(tree.materialUserAccountsDrawerHeader.accountName) : null),
           accountEmail: (tree.materialUserAccountsDrawerHeader.hasAccountEmail() ? evaluateWidgetExpression(tree.materialUserAccountsDrawerHeader.accountEmail) : null),
           onDetailsPressed: null,
