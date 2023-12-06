@@ -43,7 +43,6 @@ const _notSupported = (<String>[], null);
   final constructor = expression.constructorName.staticElement!;
   final type = constructor.enclosingElement;
   if (constructor.isPrivate || type.isPrivate) {
-    // TODO not usable constructor, generate permutations of constructor calls
     return _notSupported;
   }
 
@@ -114,7 +113,6 @@ extension ToReusableSourceExtension on Expression {
           accessorElement.isStatic &&
           accessorElement.isPrivate) {
         // e.g. CupertionTextField.contextMenuBuilder
-        // TODO generate permutations of constructor calls
         return _notSupported;
       } else if (accessorElement is FunctionElement &&
           accessorElement.isPublic) {
@@ -122,7 +120,7 @@ extension ToReusableSourceExtension on Expression {
         return _reference(accessorElement);
       } else if (accessorElement is FunctionElement &&
           accessorElement.isPrivate) {
-        // TODO generate permutations of constructor calls
+        // e.g. _kDefaultSemanticIndexCallback
         return _notSupported;
       } else {
         throw AssertionError(

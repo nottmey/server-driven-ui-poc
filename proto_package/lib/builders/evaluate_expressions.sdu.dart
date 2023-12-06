@@ -3892,7 +3892,6 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           onShowFocusHighlight: null,
           onShowHoverHighlight: null,
           onFocusChange: null,
-          mouseCursor: missing('mouseCursor'),
           includeFocusSemantics: (tree.flutterFocusableActionDetector.hasIncludeFocusSemantics() ? tree.flutterFocusableActionDetector.includeFocusSemantics : true),
           child: (tree.flutterFocusableActionDetector.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterFocusableActionDetector.child) : missing('child')));
     case messages.FlutterDiagnosticableTreeExpression_Result.flutterFollowerLayer:
@@ -4578,7 +4577,6 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           onEnter: null,
           onExit: null,
           onHover: null,
-          cursor: missing('cursor'),
           opaque: (tree.flutterMouseRegion.hasOpaque() ? tree.flutterMouseRegion.opaque : true),
           hitTestBehavior: (tree.flutterMouseRegion.hasHitTestBehavior() ? enums.convertFlutterHitTestBehavior(tree.flutterMouseRegion.hitTestBehavior) : null),
           child: (tree.flutterMouseRegion.hasChild() ? evaluateWidgetExpression(tree.flutterMouseRegion.child) : null));
@@ -4675,7 +4673,6 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
     case messages.FlutterDiagnosticableTreeExpression_Result.flutterOverlay:
       return $flutterSrcWidgetsOverlay.Overlay(
           key: (tree.flutterOverlay.hasKey() ? evaluateFlutterKeyExpression(tree.flutterOverlay.key) : null),
-          initialEntries: missing('initialEntries'),
           clipBehavior: (tree.flutterOverlay.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterOverlay.clipBehavior) : $dartUi.Clip.hardEdge));
     case messages.FlutterDiagnosticableTreeExpression_Result.flutterPadding:
       return $flutterSrcWidgetsBasic.Padding(
@@ -5163,7 +5160,6 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
           onEnter: null,
           onHover: null,
           onExit: null,
-          cursor: missing('cursor'),
           validForMouseTracker: (tree.flutterRenderMouseRegion.hasValidForMouseTracker() ? tree.flutterRenderMouseRegion.validForMouseTracker : true),
           opaque: (tree.flutterRenderMouseRegion.hasOpaque() ? tree.flutterRenderMouseRegion.opaque : true),
           child: (tree.flutterRenderMouseRegion.hasChild() ? evaluateFlutterRenderBoxExpression(tree.flutterRenderMouseRegion.child) : null),
@@ -5871,7 +5867,6 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
       return $flutterSrcWidgetsSnapshotWidget.SnapshotWidget(
           key: (tree.flutterSnapshotWidget.hasKey() ? evaluateFlutterKeyExpression(tree.flutterSnapshotWidget.key) : null),
           mode: (tree.flutterSnapshotWidget.hasMode() ? enums.convertRequiredFlutterSnapshotMode(tree.flutterSnapshotWidget.mode) : $flutterSrcWidgetsSnapshotWidget.SnapshotMode.normal),
-          painter: missing('painter'),
           autoresize: (tree.flutterSnapshotWidget.hasAutoresize() ? tree.flutterSnapshotWidget.autoresize : false),
           controller: (tree.flutterSnapshotWidget.hasController() ? evaluateRequiredFlutterSnapshotControllerExpression(tree.flutterSnapshotWidget.controller) : missing('controller')),
           child: (tree.flutterSnapshotWidget.hasChild() ? evaluateWidgetExpression(tree.flutterSnapshotWidget.child) : null));
@@ -7274,7 +7269,6 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
     case messages.FlutterDiagnosticableTreeExpression_Result.materialExpansionPanelList:
       return $flutterSrcMaterialExpansionPanel.ExpansionPanelList(
           key: (tree.materialExpansionPanelList.hasKey() ? evaluateFlutterKeyExpression(tree.materialExpansionPanelList.key) : null),
-          children: missing('children'),
           expansionCallback: null,
           animationDuration: (tree.materialExpansionPanelList.hasAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialExpansionPanelList.animationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
           expandedHeaderPadding: (tree.materialExpansionPanelList.hasExpandedHeaderPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialExpansionPanelList.expandedHeaderPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(vertical: 64.0 - $flutterSrcMaterialConstants.kMinInteractiveDimension)),
@@ -7285,7 +7279,6 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? evaluateFlutterDiagnosticab
     case messages.FlutterDiagnosticableTreeExpression_Result.materialExpansionPanelListNamedRadio:
       return $flutterSrcMaterialExpansionPanel.ExpansionPanelList.radio(
           key: (tree.materialExpansionPanelListNamedRadio.hasKey() ? evaluateFlutterKeyExpression(tree.materialExpansionPanelListNamedRadio.key) : null),
-          children: missing('children'),
           expansionCallback: null,
           animationDuration: (tree.materialExpansionPanelListNamedRadio.hasAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialExpansionPanelListNamedRadio.animationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
           initialOpenPanelValue: null,
@@ -11079,25 +11072,47 @@ $flutterSrcWidgetsMediaQuery.MediaQueryData? evaluateFlutterMediaQueryDataExpres
 
   switch (tree.whichResult()) {
     case messages.FlutterMediaQueryDataExpression_Result.flutterMediaQueryData:
-      return $flutterSrcWidgetsMediaQuery.MediaQueryData(
-          size: (tree.flutterMediaQueryData.hasSize() ? evaluateRequiredDartSizeExpression(tree.flutterMediaQueryData.size) : $dartUi.Size.zero),
-          devicePixelRatio: (tree.flutterMediaQueryData.hasDevicePixelRatio() ? tree.flutterMediaQueryData.devicePixelRatio : 1.0),
-          textScaler: (tree.flutterMediaQueryData.hasTextScaler() ? evaluateRequiredFlutterTextScalerExpression(tree.flutterMediaQueryData.textScaler) : missing('textScaler')),
-          platformBrightness: (tree.flutterMediaQueryData.hasPlatformBrightness() ? enums.convertRequiredDartBrightness(tree.flutterMediaQueryData.platformBrightness) : $dartUi.Brightness.light),
-          padding: (tree.flutterMediaQueryData.hasPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterMediaQueryData.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.zero),
-          viewInsets: (tree.flutterMediaQueryData.hasViewInsets() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterMediaQueryData.viewInsets) : $flutterSrcPaintingEdgeInsets.EdgeInsets.zero),
-          systemGestureInsets: (tree.flutterMediaQueryData.hasSystemGestureInsets() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterMediaQueryData.systemGestureInsets) : $flutterSrcPaintingEdgeInsets.EdgeInsets.zero),
-          viewPadding: (tree.flutterMediaQueryData.hasViewPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterMediaQueryData.viewPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.zero),
-          alwaysUse24HourFormat: (tree.flutterMediaQueryData.hasAlwaysUse24HourFormat() ? tree.flutterMediaQueryData.alwaysUse24HourFormat : false),
-          accessibleNavigation: (tree.flutterMediaQueryData.hasAccessibleNavigation() ? tree.flutterMediaQueryData.accessibleNavigation : false),
-          invertColors: (tree.flutterMediaQueryData.hasInvertColors() ? tree.flutterMediaQueryData.invertColors : false),
-          highContrast: (tree.flutterMediaQueryData.hasHighContrast() ? tree.flutterMediaQueryData.highContrast : false),
-          onOffSwitchLabels: (tree.flutterMediaQueryData.hasOnOffSwitchLabels() ? tree.flutterMediaQueryData.onOffSwitchLabels : false),
-          disableAnimations: (tree.flutterMediaQueryData.hasDisableAnimations() ? tree.flutterMediaQueryData.disableAnimations : false),
-          boldText: (tree.flutterMediaQueryData.hasBoldText() ? tree.flutterMediaQueryData.boldText : false),
-          navigationMode: (tree.flutterMediaQueryData.hasNavigationMode() ? enums.convertRequiredFlutterNavigationMode(tree.flutterMediaQueryData.navigationMode) : $flutterSrcWidgetsMediaQuery.NavigationMode.traditional),
-          gestureSettings: (tree.flutterMediaQueryData.hasGestureSettings() ? evaluateRequiredFlutterDeviceGestureSettingsExpression(tree.flutterMediaQueryData.gestureSettings) : $flutterSrcGesturesGestureSettings.DeviceGestureSettings(touchSlop: $flutterSrcGesturesConstants.kTouchSlop)),
-          displayFeatures: tree.flutterMediaQueryData.displayFeatures.map((e) => evaluateRequiredDartDisplayFeatureExpression(e)).toList());
+      if(tree.flutterMediaQueryData.hasTextScaler()) {
+        return $flutterSrcWidgetsMediaQuery.MediaQueryData(
+            size: (tree.flutterMediaQueryData.hasSize() ? evaluateRequiredDartSizeExpression(tree.flutterMediaQueryData.size) : $dartUi.Size.zero),
+            devicePixelRatio: (tree.flutterMediaQueryData.hasDevicePixelRatio() ? tree.flutterMediaQueryData.devicePixelRatio : 1.0),
+            textScaler: (tree.flutterMediaQueryData.hasTextScaler() ? evaluateRequiredFlutterTextScalerExpression(tree.flutterMediaQueryData.textScaler) : missing('textScaler')),
+            platformBrightness: (tree.flutterMediaQueryData.hasPlatformBrightness() ? enums.convertRequiredDartBrightness(tree.flutterMediaQueryData.platformBrightness) : $dartUi.Brightness.light),
+            padding: (tree.flutterMediaQueryData.hasPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterMediaQueryData.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.zero),
+            viewInsets: (tree.flutterMediaQueryData.hasViewInsets() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterMediaQueryData.viewInsets) : $flutterSrcPaintingEdgeInsets.EdgeInsets.zero),
+            systemGestureInsets: (tree.flutterMediaQueryData.hasSystemGestureInsets() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterMediaQueryData.systemGestureInsets) : $flutterSrcPaintingEdgeInsets.EdgeInsets.zero),
+            viewPadding: (tree.flutterMediaQueryData.hasViewPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterMediaQueryData.viewPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.zero),
+            alwaysUse24HourFormat: (tree.flutterMediaQueryData.hasAlwaysUse24HourFormat() ? tree.flutterMediaQueryData.alwaysUse24HourFormat : false),
+            accessibleNavigation: (tree.flutterMediaQueryData.hasAccessibleNavigation() ? tree.flutterMediaQueryData.accessibleNavigation : false),
+            invertColors: (tree.flutterMediaQueryData.hasInvertColors() ? tree.flutterMediaQueryData.invertColors : false),
+            highContrast: (tree.flutterMediaQueryData.hasHighContrast() ? tree.flutterMediaQueryData.highContrast : false),
+            onOffSwitchLabels: (tree.flutterMediaQueryData.hasOnOffSwitchLabels() ? tree.flutterMediaQueryData.onOffSwitchLabels : false),
+            disableAnimations: (tree.flutterMediaQueryData.hasDisableAnimations() ? tree.flutterMediaQueryData.disableAnimations : false),
+            boldText: (tree.flutterMediaQueryData.hasBoldText() ? tree.flutterMediaQueryData.boldText : false),
+            navigationMode: (tree.flutterMediaQueryData.hasNavigationMode() ? enums.convertRequiredFlutterNavigationMode(tree.flutterMediaQueryData.navigationMode) : $flutterSrcWidgetsMediaQuery.NavigationMode.traditional),
+            gestureSettings: (tree.flutterMediaQueryData.hasGestureSettings() ? evaluateRequiredFlutterDeviceGestureSettingsExpression(tree.flutterMediaQueryData.gestureSettings) : $flutterSrcGesturesGestureSettings.DeviceGestureSettings(touchSlop: $flutterSrcGesturesConstants.kTouchSlop)),
+            displayFeatures: tree.flutterMediaQueryData.displayFeatures.map((e) => evaluateRequiredDartDisplayFeatureExpression(e)).toList());
+      } else {
+        return $flutterSrcWidgetsMediaQuery.MediaQueryData(
+            size: (tree.flutterMediaQueryData.hasSize() ? evaluateRequiredDartSizeExpression(tree.flutterMediaQueryData.size) : $dartUi.Size.zero),
+            devicePixelRatio: (tree.flutterMediaQueryData.hasDevicePixelRatio() ? tree.flutterMediaQueryData.devicePixelRatio : 1.0),
+            platformBrightness: (tree.flutterMediaQueryData.hasPlatformBrightness() ? enums.convertRequiredDartBrightness(tree.flutterMediaQueryData.platformBrightness) : $dartUi.Brightness.light),
+            padding: (tree.flutterMediaQueryData.hasPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterMediaQueryData.padding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.zero),
+            viewInsets: (tree.flutterMediaQueryData.hasViewInsets() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterMediaQueryData.viewInsets) : $flutterSrcPaintingEdgeInsets.EdgeInsets.zero),
+            systemGestureInsets: (tree.flutterMediaQueryData.hasSystemGestureInsets() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterMediaQueryData.systemGestureInsets) : $flutterSrcPaintingEdgeInsets.EdgeInsets.zero),
+            viewPadding: (tree.flutterMediaQueryData.hasViewPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.flutterMediaQueryData.viewPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.zero),
+            alwaysUse24HourFormat: (tree.flutterMediaQueryData.hasAlwaysUse24HourFormat() ? tree.flutterMediaQueryData.alwaysUse24HourFormat : false),
+            accessibleNavigation: (tree.flutterMediaQueryData.hasAccessibleNavigation() ? tree.flutterMediaQueryData.accessibleNavigation : false),
+            invertColors: (tree.flutterMediaQueryData.hasInvertColors() ? tree.flutterMediaQueryData.invertColors : false),
+            highContrast: (tree.flutterMediaQueryData.hasHighContrast() ? tree.flutterMediaQueryData.highContrast : false),
+            onOffSwitchLabels: (tree.flutterMediaQueryData.hasOnOffSwitchLabels() ? tree.flutterMediaQueryData.onOffSwitchLabels : false),
+            disableAnimations: (tree.flutterMediaQueryData.hasDisableAnimations() ? tree.flutterMediaQueryData.disableAnimations : false),
+            boldText: (tree.flutterMediaQueryData.hasBoldText() ? tree.flutterMediaQueryData.boldText : false),
+            navigationMode: (tree.flutterMediaQueryData.hasNavigationMode() ? enums.convertRequiredFlutterNavigationMode(tree.flutterMediaQueryData.navigationMode) : $flutterSrcWidgetsMediaQuery.NavigationMode.traditional),
+            gestureSettings: (tree.flutterMediaQueryData.hasGestureSettings() ? evaluateRequiredFlutterDeviceGestureSettingsExpression(tree.flutterMediaQueryData.gestureSettings) : $flutterSrcGesturesGestureSettings.DeviceGestureSettings(touchSlop: $flutterSrcGesturesConstants.kTouchSlop)),
+            displayFeatures: tree.flutterMediaQueryData.displayFeatures.map((e) => evaluateRequiredDartDisplayFeatureExpression(e)).toList());
+      }
+      
     case messages.FlutterMediaQueryDataExpression_Result.flutterMediaQueryDataNamedFromView:
       return $flutterSrcWidgetsMediaQuery.MediaQueryData.fromView(
           missing('view'),
@@ -11927,7 +11942,6 @@ $flutterSrcRenderingBox.RenderBox? evaluateFlutterRenderBoxExpression(messages.F
           onEnter: null,
           onHover: null,
           onExit: null,
-          cursor: missing('cursor'),
           validForMouseTracker: (tree.flutterRenderMouseRegion.hasValidForMouseTracker() ? tree.flutterRenderMouseRegion.validForMouseTracker : true),
           opaque: (tree.flutterRenderMouseRegion.hasOpaque() ? tree.flutterRenderMouseRegion.opaque : true),
           child: (tree.flutterRenderMouseRegion.hasChild() ? evaluateFlutterRenderBoxExpression(tree.flutterRenderMouseRegion.child) : null),
@@ -12970,7 +12984,6 @@ $flutterSrcWidgetsFramework.SingleChildRenderObjectWidget? evaluateFlutterSingle
           onEnter: null,
           onExit: null,
           onHover: null,
-          cursor: missing('cursor'),
           opaque: (tree.flutterMouseRegion.hasOpaque() ? tree.flutterMouseRegion.opaque : true),
           hitTestBehavior: (tree.flutterMouseRegion.hasHitTestBehavior() ? enums.convertFlutterHitTestBehavior(tree.flutterMouseRegion.hitTestBehavior) : null),
           child: (tree.flutterMouseRegion.hasChild() ? evaluateWidgetExpression(tree.flutterMouseRegion.child) : null));
@@ -13172,7 +13185,6 @@ $flutterSrcWidgetsFramework.SingleChildRenderObjectWidget? evaluateFlutterSingle
       return $flutterSrcWidgetsSnapshotWidget.SnapshotWidget(
           key: (tree.flutterSnapshotWidget.hasKey() ? evaluateFlutterKeyExpression(tree.flutterSnapshotWidget.key) : null),
           mode: (tree.flutterSnapshotWidget.hasMode() ? enums.convertRequiredFlutterSnapshotMode(tree.flutterSnapshotWidget.mode) : $flutterSrcWidgetsSnapshotWidget.SnapshotMode.normal),
-          painter: missing('painter'),
           autoresize: (tree.flutterSnapshotWidget.hasAutoresize() ? tree.flutterSnapshotWidget.autoresize : false),
           controller: (tree.flutterSnapshotWidget.hasController() ? evaluateRequiredFlutterSnapshotControllerExpression(tree.flutterSnapshotWidget.controller) : missing('controller')),
           child: (tree.flutterSnapshotWidget.hasChild() ? evaluateWidgetExpression(tree.flutterSnapshotWidget.child) : null));
@@ -14779,7 +14791,6 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
           onShowFocusHighlight: null,
           onShowHoverHighlight: null,
           onFocusChange: null,
-          mouseCursor: missing('mouseCursor'),
           includeFocusSemantics: (tree.flutterFocusableActionDetector.hasIncludeFocusSemantics() ? tree.flutterFocusableActionDetector.includeFocusSemantics : true),
           child: (tree.flutterFocusableActionDetector.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterFocusableActionDetector.child) : missing('child')));
     case messages.FlutterStatefulWidgetExpression_Result.flutterForm:
@@ -15004,7 +15015,6 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
     case messages.FlutterStatefulWidgetExpression_Result.flutterOverlay:
       return $flutterSrcWidgetsOverlay.Overlay(
           key: (tree.flutterOverlay.hasKey() ? evaluateFlutterKeyExpression(tree.flutterOverlay.key) : null),
-          initialEntries: missing('initialEntries'),
           clipBehavior: (tree.flutterOverlay.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterOverlay.clipBehavior) : $dartUi.Clip.hardEdge));
     case messages.FlutterStatefulWidgetExpression_Result.flutterPageView:
       return $flutterSrcWidgetsPageView.PageView(
@@ -15578,7 +15588,6 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
     case messages.FlutterStatefulWidgetExpression_Result.materialExpansionPanelList:
       return $flutterSrcMaterialExpansionPanel.ExpansionPanelList(
           key: (tree.materialExpansionPanelList.hasKey() ? evaluateFlutterKeyExpression(tree.materialExpansionPanelList.key) : null),
-          children: missing('children'),
           expansionCallback: null,
           animationDuration: (tree.materialExpansionPanelList.hasAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialExpansionPanelList.animationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
           expandedHeaderPadding: (tree.materialExpansionPanelList.hasExpandedHeaderPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialExpansionPanelList.expandedHeaderPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(vertical: 64.0 - $flutterSrcMaterialConstants.kMinInteractiveDimension)),
@@ -15589,7 +15598,6 @@ $flutterSrcWidgetsFramework.StatefulWidget? evaluateFlutterStatefulWidgetExpress
     case messages.FlutterStatefulWidgetExpression_Result.materialExpansionPanelListNamedRadio:
       return $flutterSrcMaterialExpansionPanel.ExpansionPanelList.radio(
           key: (tree.materialExpansionPanelListNamedRadio.hasKey() ? evaluateFlutterKeyExpression(tree.materialExpansionPanelListNamedRadio.key) : null),
-          children: missing('children'),
           expansionCallback: null,
           animationDuration: (tree.materialExpansionPanelListNamedRadio.hasAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialExpansionPanelListNamedRadio.animationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
           initialOpenPanelValue: null,
@@ -20020,7 +20028,6 @@ $flutterSrcMaterialColorScheme.ColorScheme? evaluateMaterialColorSchemeExpressio
           surfaceTint: (tree.materialColorSchemeNamedFromSeed.hasSurfaceTint() ? evaluateDartColorExpression(tree.materialColorSchemeNamedFromSeed.surfaceTint) : null));
     case messages.MaterialColorSchemeExpression_Result.materialColorSchemeNamedFromSwatch:
       return $flutterSrcMaterialColorScheme.ColorScheme.fromSwatch(
-          primarySwatch: missing('primarySwatch'),
           accentColor: (tree.materialColorSchemeNamedFromSwatch.hasAccentColor() ? evaluateDartColorExpression(tree.materialColorSchemeNamedFromSwatch.accentColor) : null),
           cardColor: (tree.materialColorSchemeNamedFromSwatch.hasCardColor() ? evaluateDartColorExpression(tree.materialColorSchemeNamedFromSwatch.cardColor) : null),
           backgroundColor: (tree.materialColorSchemeNamedFromSwatch.hasBackgroundColor() ? evaluateDartColorExpression(tree.materialColorSchemeNamedFromSwatch.backgroundColor) : null),
@@ -20768,7 +20775,6 @@ $flutterSrcMaterialInputDecorator.InputDecorationTheme? evaluateMaterialInputDec
           errorStyle: (tree.materialInputDecorationTheme.hasErrorStyle() ? evaluateFlutterTextStyleExpression(tree.materialInputDecorationTheme.errorStyle) : null),
           errorMaxLines: (tree.materialInputDecorationTheme.hasErrorMaxLines() ? tree.materialInputDecorationTheme.errorMaxLines : null),
           floatingLabelBehavior: (tree.materialInputDecorationTheme.hasFloatingLabelBehavior() ? enums.convertRequiredMaterialFloatingLabelBehavior(tree.materialInputDecorationTheme.floatingLabelBehavior) : $flutterSrcMaterialInputDecorator.FloatingLabelBehavior.auto),
-          floatingLabelAlignment: missing('floatingLabelAlignment'),
           isDense: (tree.materialInputDecorationTheme.hasIsDense() ? tree.materialInputDecorationTheme.isDense : false),
           contentPadding: (tree.materialInputDecorationTheme.hasContentPadding() ? evaluateFlutterEdgeInsetsGeometryExpression(tree.materialInputDecorationTheme.contentPadding) : null),
           isCollapsed: (tree.materialInputDecorationTheme.hasIsCollapsed() ? tree.materialInputDecorationTheme.isCollapsed : false),
@@ -24174,7 +24180,6 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           onShowFocusHighlight: null,
           onShowHoverHighlight: null,
           onFocusChange: null,
-          mouseCursor: missing('mouseCursor'),
           includeFocusSemantics: (tree.flutterFocusableActionDetector.hasIncludeFocusSemantics() ? tree.flutterFocusableActionDetector.includeFocusSemantics : true),
           child: (tree.flutterFocusableActionDetector.hasChild() ? evaluateRequiredWidgetExpression(tree.flutterFocusableActionDetector.child) : missing('child')));
     case messages.WidgetExpression_Result.flutterForm:
@@ -24808,7 +24813,6 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
           onEnter: null,
           onExit: null,
           onHover: null,
-          cursor: missing('cursor'),
           opaque: (tree.flutterMouseRegion.hasOpaque() ? tree.flutterMouseRegion.opaque : true),
           hitTestBehavior: (tree.flutterMouseRegion.hasHitTestBehavior() ? enums.convertFlutterHitTestBehavior(tree.flutterMouseRegion.hitTestBehavior) : null),
           child: (tree.flutterMouseRegion.hasChild() ? evaluateWidgetExpression(tree.flutterMouseRegion.child) : null));
@@ -24889,7 +24893,6 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
     case messages.WidgetExpression_Result.flutterOverlay:
       return $flutterSrcWidgetsOverlay.Overlay(
           key: (tree.flutterOverlay.hasKey() ? evaluateFlutterKeyExpression(tree.flutterOverlay.key) : null),
-          initialEntries: missing('initialEntries'),
           clipBehavior: (tree.flutterOverlay.hasClipBehavior() ? enums.convertRequiredDartClip(tree.flutterOverlay.clipBehavior) : $dartUi.Clip.hardEdge));
     case messages.WidgetExpression_Result.flutterPadding:
       return $flutterSrcWidgetsBasic.Padding(
@@ -25545,7 +25548,6 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
       return $flutterSrcWidgetsSnapshotWidget.SnapshotWidget(
           key: (tree.flutterSnapshotWidget.hasKey() ? evaluateFlutterKeyExpression(tree.flutterSnapshotWidget.key) : null),
           mode: (tree.flutterSnapshotWidget.hasMode() ? enums.convertRequiredFlutterSnapshotMode(tree.flutterSnapshotWidget.mode) : $flutterSrcWidgetsSnapshotWidget.SnapshotMode.normal),
-          painter: missing('painter'),
           autoresize: (tree.flutterSnapshotWidget.hasAutoresize() ? tree.flutterSnapshotWidget.autoresize : false),
           controller: (tree.flutterSnapshotWidget.hasController() ? evaluateRequiredFlutterSnapshotControllerExpression(tree.flutterSnapshotWidget.controller) : missing('controller')),
           child: (tree.flutterSnapshotWidget.hasChild() ? evaluateWidgetExpression(tree.flutterSnapshotWidget.child) : null));
@@ -26810,7 +26812,6 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
     case messages.WidgetExpression_Result.materialExpansionPanelList:
       return $flutterSrcMaterialExpansionPanel.ExpansionPanelList(
           key: (tree.materialExpansionPanelList.hasKey() ? evaluateFlutterKeyExpression(tree.materialExpansionPanelList.key) : null),
-          children: missing('children'),
           expansionCallback: null,
           animationDuration: (tree.materialExpansionPanelList.hasAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialExpansionPanelList.animationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
           expandedHeaderPadding: (tree.materialExpansionPanelList.hasExpandedHeaderPadding() ? evaluateRequiredFlutterEdgeInsetsExpression(tree.materialExpansionPanelList.expandedHeaderPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.symmetric(vertical: 64.0 - $flutterSrcMaterialConstants.kMinInteractiveDimension)),
@@ -26821,7 +26822,6 @@ $flutterSrcWidgetsFramework.Widget? evaluateWidgetExpression(messages.WidgetExpr
     case messages.WidgetExpression_Result.materialExpansionPanelListNamedRadio:
       return $flutterSrcMaterialExpansionPanel.ExpansionPanelList.radio(
           key: (tree.materialExpansionPanelListNamedRadio.hasKey() ? evaluateFlutterKeyExpression(tree.materialExpansionPanelListNamedRadio.key) : null),
-          children: missing('children'),
           expansionCallback: null,
           animationDuration: (tree.materialExpansionPanelListNamedRadio.hasAnimationDuration() ? evaluateRequiredDartDurationExpression(tree.materialExpansionPanelListNamedRadio.animationDuration) : $flutterSrcMaterialTheme.kThemeAnimationDuration),
           initialOpenPanelValue: null,

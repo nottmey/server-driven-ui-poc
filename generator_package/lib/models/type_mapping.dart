@@ -144,7 +144,7 @@ class TypeMapping {
         ...typeElement.usableConstructors,
         ...generallyKnownConstructors
             .where((c) => c.canConstructType(dartType)),
-      }.sortedBy((c) => c.messageName.originalText);
+      }.sortedBy((c) => c.protoMessageName);
     } else {
       throw AssertionError('dart type $dartType element was not a class');
     }

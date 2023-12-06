@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:analyzer/dart/element/element.dart';
 import 'package:analyzer/dart/element/type.dart';
 import 'package:collection/collection.dart';
@@ -14,8 +16,10 @@ enum ConstructorKind { widget, payload }
 class Constructor {
   final ConstructorElement element;
   final bool isWidgetConstructor;
-  final ReCase messageName;
-  final String typeName;
+  final String protoMessageName;
+  final String protoFieldName;
+  final String dartFieldName;
+  final String dartTypeName;
   final String? constructorName;
   final Set<InterfaceElement> constructingTypes;
   final Iterable<Parameter> parameters;
@@ -25,8 +29,10 @@ class Constructor {
   Constructor({
     required this.element,
     required this.isWidgetConstructor,
-    required this.messageName,
-    required this.typeName,
+    required this.protoMessageName,
+    required this.protoFieldName,
+    required this.dartFieldName,
+    required this.dartTypeName,
     required this.constructorName,
     required this.constructingTypes,
     required this.parameters,
@@ -45,17 +51,20 @@ class Constructor {
     final postfix = constructorName.isEmpty
         ? ''
         : 'Named${ReCase(constructorName).pascalCase}';
-    final exportingConstructorName = '$libraryPrefix$typeName$postfix';
+    final exportingConstructorName = ReCase('$libraryPrefix$typeName$postfix');
+    final dartFieldName = exportingConstructorName.camelCase;
     return Constructor(
       element: element,
       isWidgetConstructor: constructingTypes.any((e) => e.isWidgetTypeExactly),
-      messageName: ReCase(exportingConstructorName),
-      typeName: typeName,
+      protoMessageName: exportingConstructorName.pascalCase,
+      protoFieldName: exportingConstructorName.snakeCase,
+      dartFieldName: dartFieldName,
+      dartTypeName: typeName,
       constructorName: constructorName.isEmpty ? null : constructorName,
       constructingTypes: constructingTypes,
       parameters: element.parameters
           .where((p) => !p.hasDeprecated)
-          .mapIndexed(Parameter.ofElement),
+          .mapIndexed((i, p) => Parameter.ofElement(i, p, dartFieldName)),
     );
   }
 
@@ -64,7 +73,7 @@ class Constructor {
   }
 
   String toProtoField(int index) {
-    return '${messageName.pascalCase} ${messageName.snakeCase} = ${index + protoFieldStartNumber};';
+    return '$protoMessageName $protoFieldName = ${index + protoFieldStartNumber};';
   }
 
   String toProtoMessage(Map<TypeMapping, Iterable<Constructor>> constructors) {
@@ -77,7 +86,7 @@ class Constructor {
 
     return '''
 // ${element.librarySource.uri}
-message ${messageName.pascalCase} {
+message $protoMessageName {
   ${paramsWithAvailableConstructors.map((e) => e.toProtoField()).whereType<String>().join("\n  ")}
 }
 ''';
@@ -88,17 +97,39 @@ message ${messageName.pascalCase} {
     String expressionName,
     Map<TypeMapping, Iterable<Constructor>> allConstructors,
   ) {
-    final fieldName = messageName.camelCase;
     final constructorCall =
-        '$importAlias.$typeName${constructorName != null ? ".$constructorName" : ""}';
-    final constructorParameters = parameters
-        .map((p) => p.toDartParameter(fieldName, allConstructors))
-        .whereType<String>()
-        .join(',\n          ');
-    return '''
-    case $protoImportAlias.${expressionName}_Result.$fieldName:
+        '$importAlias.$dartTypeName${constructorName != null ? ".$constructorName" : ""}';
+    final usedParameters = parameters
+        .map((p) => (p, p.toDartParameter(allConstructors)))
+        .whereType<(Parameter, String)>()
+        .toList();
+    final unsupportedDefaultParams =
+        usedParameters.where((p) => p.$1.hasUnsupportedDefaultValue);
+    final caseStatement =
+        'case $protoImportAlias.${expressionName}_Result.$dartFieldName:';
+
+    if (unsupportedDefaultParams.isEmpty) {
+      return '''
+    $caseStatement
       return $constructorCall(
-          $constructorParameters);''';
+          ${usedParameters.map((e) => e.$2).join(',\n          ')});''';
+    } else if (unsupportedDefaultParams.length == 1) {
+      const separator = ',\n            ';
+      return '''
+    $caseStatement
+      if(${unsupportedDefaultParams.first.$1.nullCheckerCall}) {
+        return $constructorCall(
+            ${usedParameters.map((e) => e.$2).join(separator)});
+      } else {
+        return $constructorCall(
+            ${usedParameters.where((e) => !e.$1.hasUnsupportedDefaultValue).map((e) => e.$2).join(separator)});
+      }
+      ''';
+    } else {
+      throw AssertionError(
+        'more than one unsupported default value in constructor usage',
+      );
+    }
   }
 
   String toDartImport() {

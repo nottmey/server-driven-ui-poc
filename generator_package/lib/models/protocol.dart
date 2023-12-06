@@ -28,7 +28,7 @@ class Protocol {
 
     final exportedWidgetConstructors = exportedConstructors
         .where((c) => c.isWidgetConstructor)
-        .sortedBy((c) => c.messageName.originalText);
+        .sortedBy((c) => c.protoMessageName);
 
     final widgetType = exportedClasses
         .where((element) => element.isWidgetTypeExactly)
@@ -107,7 +107,7 @@ syntax = "proto3";
 
 import "$enumsProto";
 
-${typeConstructors.values.flattened.toSet().sortedBy((c) => c.messageName.originalText).map((c) => c.toProtoMessage(typeConstructors)).join("\n")}
+${typeConstructors.values.flattened.toSet().sortedBy((c) => c.protoMessageName).map((c) => c.toProtoMessage(typeConstructors)).join("\n")}
 
 ${typeConstructors.entries.where((e) => e.value.isNotEmpty).sortedBy((e) => e.key.messageName).map((e) => e.key.toProtoMessage(e.value)).join("\n")}
 ''';

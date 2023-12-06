@@ -11,47 +11,74 @@ import 'package:recase/recase.dart';
 class Parameter {
   final ParameterElement element;
 
-  // beware .originalText may be different from .camelCase if
-  // field starts with underscore, e.g. `_debugLabel`
-  final ReCase name;
+  final String protoFieldName;
+  final String dartFieldName;
+  final String getterCall;
+  final String nullCheckerCall;
   final TypeMapping? typeMapping;
   final int fieldNumber;
-  final bool isNamed;
+  final String namedParamPrefix;
+  final bool isOptional;
   final bool isNullable;
   final bool isGeneric;
-  final bool hasNameCollision;
+  final bool hasDefaultValue;
   final List<String> defaultValueImports;
-  final String? defaultValueSource;
+  final String? defaultValueReusableSource;
+
+  bool get hasUnsupportedDefaultValue =>
+      typeMapping != null &&
+      hasDefaultValue &&
+      defaultValueReusableSource == null;
 
   Parameter({
     required this.element,
-    required this.name,
+    required this.protoFieldName,
+    required this.dartFieldName,
+    required this.getterCall,
+    required this.nullCheckerCall,
     required this.typeMapping,
     required this.fieldNumber,
-    required this.isNamed,
+    required this.namedParamPrefix,
+    required this.isOptional,
     required this.isNullable,
     required this.isGeneric,
-    required this.hasNameCollision,
+    required this.hasDefaultValue,
     required this.defaultValueImports,
-    required this.defaultValueSource,
+    required this.defaultValueReusableSource,
   });
 
-  factory Parameter.ofElement(int index, ParameterElement element) {
-    final defaultValueExpression = element.toDefaultValueExpression();
+  factory Parameter.ofElement(
+    int index,
+    ParameterElement element,
+    String constructorFieldName,
+  ) {
+    final name = ReCase(element.name);
+    final typeMapping = element.type.toTypeMapping();
+    final defaultValueExpression =
+        typeMapping != null ? element.toDefaultValueExpression() : null;
     final (defaultValueImports, defaultValueSource) =
         defaultValueExpression?.toReusableSource() ?? (<String>[], null);
+    final fieldNumber = index + protoFieldStartNumber;
+    final hasNameCollision = disallowedFieldNames.contains(element.name);
+    final collisionPostfix = hasNameCollision ? '_$fieldNumber' : '';
+    final dartFieldName = name.camelCase;
 
     return Parameter(
       element: element,
-      name: ReCase(element.name),
-      typeMapping: element.type.toTypeMapping(),
-      fieldNumber: index + protoFieldStartNumber,
-      isNamed: element.isNamed,
+      protoFieldName: name.snakeCase,
+      dartFieldName: dartFieldName,
+      getterCall: 'tree.$constructorFieldName.$dartFieldName$collisionPostfix',
+      nullCheckerCall:
+          'tree.$constructorFieldName.has${name.pascalCase}$collisionPostfix()',
+      typeMapping: typeMapping,
+      fieldNumber: fieldNumber,
+      namedParamPrefix: element.isNamed ? '${element.name}: ' : '',
+      isOptional: element.isOptional,
       isNullable: element.type.nullabilitySuffix == NullabilitySuffix.question,
       isGeneric: element.type is TypeParameterType,
-      hasNameCollision: disallowedFieldNames.contains(element.name),
+      hasDefaultValue: defaultValueExpression != null,
       defaultValueImports: defaultValueImports,
-      defaultValueSource: defaultValueSource,
+      defaultValueReusableSource: defaultValueSource,
     );
   }
 
@@ -59,17 +86,15 @@ class Parameter {
     final typeMapping = this.typeMapping;
     if (typeMapping != null) {
       // TODO add documentation about required status and default values
-      return '${typeMapping.toFieldType()} ${name.snakeCase} = $fieldNumber;';
+      return '${typeMapping.toFieldType()} $protoFieldName = $fieldNumber;';
     } else {
       return null;
     }
   }
 
   String? toDartParameter(
-    String fieldName,
     Map<TypeMapping, Iterable<Constructor>> allConstructors,
   ) {
-    final namedParamPrefix = isNamed ? '${name.originalText}: ' : '';
     if (typeMapping == null) {
       // setting unbound generic params to null leads to errors (which we can't handle right now)
       return isNullable && !isGeneric ? '${namedParamPrefix}null' : null;
@@ -78,15 +103,13 @@ class Parameter {
       // no constructor available, type not usable (we only know this after determining all constructors)
       return isNullable
           ? '${namedParamPrefix}null'
-          : "$namedParamPrefix$throwMissingName('${name.camelCase}')";
+          : isOptional
+              ? null
+              : "$namedParamPrefix$throwMissingName('$dartFieldName')";
     }
 
-    final postfix = hasNameCollision ? '_$fieldNumber' : ''; // anti collision
-    final getter = 'tree.$fieldName.${name.camelCase}$postfix';
-    final nullChecker = 'tree.$fieldName.has${name.pascalCase}$postfix()';
-
-    final generateDefaultValue = defaultValueSource ??
-        (isNullable ? 'null' : "$throwMissingName('${name.camelCase}')");
+    final generateDefaultValue = defaultValueReusableSource ??
+        (isNullable ? 'null' : "$throwMissingName('$dartFieldName')");
 
     final evalFn = typeMapping?.toDartEvalFn();
     final isRepeated =
@@ -94,16 +117,16 @@ class Parameter {
     if (evalFn != null) {
       if (isRepeated) {
         // no null check needed on repeated fields
-        return '$namedParamPrefix$getter.map((e) => $evalFn(e)).toList()';
+        return '$namedParamPrefix$getterCall.map((e) => $evalFn(e)).toList()';
       } else {
-        return '$namedParamPrefix($nullChecker ? $evalFn($getter) : $generateDefaultValue)';
+        return '$namedParamPrefix($nullCheckerCall ? $evalFn($getterCall) : $generateDefaultValue)';
       }
     } else {
       if (isRepeated) {
         // no null check needed on repeated fields
-        return '$namedParamPrefix$getter';
+        return '$namedParamPrefix$getterCall';
       } else {
-        return '$namedParamPrefix($nullChecker ? $getter : $generateDefaultValue)';
+        return '$namedParamPrefix($nullCheckerCall ? $getterCall : $generateDefaultValue)';
       }
     }
   }
