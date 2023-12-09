@@ -1,5 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="dart run dart_server" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+    <option name="VMOptions" value="--enable-vm-service" />
     <option name="filePath" value="$PROJECT_DIR$/dart_server/bin/dart_server.dart" />
     <option name="workingDirectory" value="$PROJECT_DIR$/dart_server" />
     <method v="2" />

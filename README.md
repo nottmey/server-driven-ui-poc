@@ -50,13 +50,13 @@ dart run generator_package # creates/updates `proto_package`
 protoc --dart_out=grpc:lib/proto --proto_path=proto $(find proto -iname "*.proto")
 
 # in `dart_server` start server
-dart run
+dart run --enable-vm-service
 
 # in `flutter_project` start and see server generated ui
 flutter run
 
-# now, feel free to stop the server change the widget data and start it again
-# the new representation should directly appear in the app after server start
+# now, feel free to stop app/server or modify+safe `dart_server/lib/example_data.dart` for hot reload (propagating from server to client)
+# the new representation should directly appear in the app regardless of startup order, directly after reloading
 ```
 
 ### Limitations
