@@ -6,6 +6,7 @@ import 'package:generator_package/constants.dart';
 import 'package:generator_package/is_widget_extensions.dart';
 import 'package:generator_package/models/constructor.dart';
 import 'package:generator_package/to_library_prefix_extension.dart';
+import 'package:generator_package/to_proto_docs_extension.dart';
 import 'package:generator_package/to_self_contained_library_alias_extension.dart';
 import 'package:generator_package/usable_constructors_extension.dart';
 import 'package:recase/recase.dart';
@@ -165,21 +166,32 @@ class TypeMapping {
       return null;
     }
 
+    final docs = element.documentationComment?.toProtoDocs();
+    final enumContent = element.fields
+        .where((f) => f.name != 'values')
+        .mapIndexed(
+          (i, e) => [
+            ...e.documentationComment?.toProtoDocs().split('\n') ?? [],
+            '${ReCase(e.name).constantCase} = $i;',
+          ],
+        )
+        .flattened
+        .join('\n    ');
+
     return '''
-// ${element.librarySource.uri}
+// ${element.librarySource.uri}${docs != null ? "\n//\n$docs" : ""}
 message $messageName {
   enum Enum {
-    ${element.fields.where((f) => f.name != 'values').mapIndexed((i, e) {
-      return "${ReCase(e.name).constantCase} = $i;";
-    }).join("\n    ")}
+    $enumContent
   }
 }
 ''';
   }
 
   String toProtoMessage(Iterable<Constructor> typeConstructors) {
+    final docs = dartType.element?.documentationComment?.toProtoDocs();
     return '''
-// ${dartType.element?.librarySource?.uri ?? '<no source>'}
+// ${dartType.element?.librarySource?.uri ?? '<no source>'}${docs != null ? "\n//\n$docs" : ""}
 message $messageName {
   oneof result {
     ${typeConstructors.mapIndexed((i, c) => c.toProtoField(i)).join("\n    ")}

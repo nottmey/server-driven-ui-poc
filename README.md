@@ -109,5 +109,5 @@ flutter run
   ```
   (Another option would be to prefix the enum values, like recommended in the
   style guide. However, in our context, this may still lead to collisions and 
-  can create very long names in our context,
+  can create very long names,
   e.g. `MATERIAL_NAVIGATION_DESTINATION_LABEL_BEHAVIOR_ONLY_SHOW_SELECTED`)

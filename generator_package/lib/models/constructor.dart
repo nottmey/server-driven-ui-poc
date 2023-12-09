@@ -6,6 +6,7 @@ import 'package:generator_package/is_widget_extensions.dart';
 import 'package:generator_package/models/parameter.dart';
 import 'package:generator_package/models/type_mapping.dart';
 import 'package:generator_package/to_library_prefix_extension.dart';
+import 'package:generator_package/to_proto_docs_extension.dart';
 import 'package:generator_package/to_self_contained_library_alias_extension.dart';
 import 'package:recase/recase.dart';
 
@@ -13,6 +14,9 @@ enum ConstructorKind { widget, payload }
 
 class Constructor {
   final ConstructorElement element;
+
+  final String? constructorDocs;
+
   final bool isWidgetConstructor;
   final String protoMessageName;
   final String protoFieldName;
@@ -26,6 +30,7 @@ class Constructor {
 
   Constructor({
     required this.element,
+    required this.constructorDocs,
     required this.isWidgetConstructor,
     required this.protoMessageName,
     required this.protoFieldName,
@@ -38,13 +43,14 @@ class Constructor {
         importAlias = element.toSelfContainedLibraryAlias();
 
   factory Constructor.ofElement(ConstructorElement element) {
+    final typeElement = element.enclosingElement;
     final constructingTypes = {
-      element.enclosingElement,
-      ...element.enclosingElement.allSupertypes.map((t) => t.element),
+      typeElement,
+      ...typeElement.allSupertypes.map((t) => t.element),
     };
     final libraryPrefix = element.toLibraryPrefix();
 
-    final typeName = element.enclosingElement.name;
+    final typeName = typeElement.name;
     final constructorName = element.name;
     final postfix = constructorName.isEmpty
         ? ''
@@ -53,6 +59,7 @@ class Constructor {
     final dartFieldName = exportingConstructorName.camelCase;
     return Constructor(
       element: element,
+      constructorDocs: element.documentationComment,
       isWidgetConstructor: constructingTypes.any((e) => e.isWidgetTypeExactly),
       protoMessageName: exportingConstructorName.pascalCase,
       protoFieldName: exportingConstructorName.snakeCase,
@@ -81,11 +88,13 @@ class Constructor {
           (typeMapping.mappingStrategy != MappingStrategy.generateMessage ||
               constructors[typeMapping]?.isNotEmpty == true);
     });
+    const separator = '\n  ';
+    final docs = constructorDocs?.toProtoDocs();
 
     return '''
-// ${element.librarySource.uri}
+// ${element.librarySource.uri}${docs != null ? "\n//\n$docs" : ""}
 message $protoMessageName {
-  ${paramsWithAvailableConstructors.map((e) => e.toProtoField()).whereType<String>().join("\n  ")}
+  ${paramsWithAvailableConstructors.map((e) => e.toProtoField(separator)).whereType<String>().join(separator)}
 }
 ''';
   }

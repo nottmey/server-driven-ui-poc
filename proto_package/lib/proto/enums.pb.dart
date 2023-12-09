@@ -15,7 +15,14 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 export 'enums.pbenum.dart';
 
-/// package:flutter/src/cupertino/interface_level.dart
+///  package:flutter/src/cupertino/interface_level.dart
+///
+///  Indicates the visual level for a piece of content. Equivalent to `UIUserInterfaceLevel`
+///  from `UIKit`.
+///
+///  See also:
+///
+///   * `UIUserInterfaceLevel`, the UIKit equivalent: https://developer.apple.com/documentation/uikit/uiuserinterfacelevel.
 class CupertinoUserInterfaceLevelData extends $pb.GeneratedMessage {
   factory CupertinoUserInterfaceLevelData() => create();
   CupertinoUserInterfaceLevelData._() : super();
@@ -48,7 +55,57 @@ class CupertinoUserInterfaceLevelData extends $pb.GeneratedMessage {
   static CupertinoUserInterfaceLevelData? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  Algorithms to use when painting on the canvas.
+///
+///  When drawing a shape or image onto a canvas, different algorithms can be
+///  used to blend the pixels. The different values of [BlendMode] specify
+///  different such algorithms.
+///
+///  Each algorithm has two inputs, the _source_, which is the image being drawn,
+///  and the _destination_, which is the image into which the source image is
+///  being composited. The destination is often thought of as the _background_.
+///  The source and destination both have four color channels, the red, green,
+///  blue, and alpha channels. These are typically represented as numbers in the
+///  range 0.0 to 1.0. The output of the algorithm also has these same four
+///  channels, with values computed from the source and destination.
+///
+///  The documentation of each value below describes how the algorithm works. In
+///  each case, an image shows the output of blending a source image with a
+///  destination image. In the images below, the destination is represented by an
+///  image with horizontal lines and an opaque landscape photograph, and the
+///  source is represented by an image with vertical lines (the same lines but
+///  rotated) and a bird clip-art image. The [src] mode shows only the source
+///  image, and the [dst] mode shows only the destination image. In the
+///  documentation below, the transparency is illustrated by a checkerboard
+///  pattern. The [clear] mode drops both the source and destination, resulting
+///  in an output that is entirely transparent (illustrated by a solid
+///  checkerboard pattern).
+///
+///  The horizontal and vertical bars in these images show the red, green, and
+///  blue channels with varying opacity levels, then all three color channels
+///  together with those same varying opacity levels, then all three color
+///  channels set to zero with those varying opacity levels, then two bars showing
+///  a red/green/blue repeating gradient, the first with full opacity and the
+///  second with partial opacity, and finally a bar with the three color channels
+///  set to zero but the opacity varying in a repeating gradient.
+///
+///  ## Application to the [Canvas] API
+///
+///  When using [Canvas.saveLayer] and [Canvas.restore], the blend mode of the
+///  [Paint] given to the [Canvas.saveLayer] will be applied when
+///  [Canvas.restore] is called. Each call to [Canvas.saveLayer] introduces a new
+///  layer onto which shapes and images are painted; when [Canvas.restore] is
+///  called, that layer is then composited onto the parent layer, with the source
+///  being the most-recently-drawn shapes and images, and the destination being
+///  the parent layer. (For the first [Canvas.saveLayer] call, the parent layer
+///  is the canvas itself.)
+///
+///  See also:
+///
+///   * [Paint.blendMode], which uses [BlendMode] to define the compositing
+///     strategy.
 class DartBlendMode extends $pb.GeneratedMessage {
   factory DartBlendMode() => create();
   DartBlendMode._() : super();
@@ -81,7 +138,9 @@ class DartBlendMode extends $pb.GeneratedMessage {
   static DartBlendMode? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  Styles to use for blurs in [MaskFilter] objects.
 class DartBlurStyle extends $pb.GeneratedMessage {
   factory DartBlurStyle() => create();
   DartBlurStyle._() : super();
@@ -114,7 +173,12 @@ class DartBlurStyle extends $pb.GeneratedMessage {
   static DartBlurStyle? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  Defines various ways to vertically bound the boxes returned by
+///  [Paragraph.getBoxesForRange].
+///
+///  See [BoxWidthStyle] for a similar property to control width.
 class DartBoxHeightStyle extends $pb.GeneratedMessage {
   factory DartBoxHeightStyle() => create();
   DartBoxHeightStyle._() : super();
@@ -147,7 +211,12 @@ class DartBoxHeightStyle extends $pb.GeneratedMessage {
   static DartBoxHeightStyle? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  Defines various ways to horizontally bound the boxes returned by
+///  [Paragraph.getBoxesForRange].
+///
+///  See [BoxHeightStyle] for a similar property to control height.
 class DartBoxWidthStyle extends $pb.GeneratedMessage {
   factory DartBoxWidthStyle() => create();
   DartBoxWidthStyle._() : super();
@@ -180,7 +249,9 @@ class DartBoxWidthStyle extends $pb.GeneratedMessage {
   static DartBoxWidthStyle? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  Describes the contrast of a theme or color palette.
 class DartBrightness extends $pb.GeneratedMessage {
   factory DartBrightness() => create();
   DartBrightness._() : super();
@@ -213,7 +284,9 @@ class DartBrightness extends $pb.GeneratedMessage {
   static DartBrightness? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  Different ways to clip a widget's content.
 class DartClip extends $pb.GeneratedMessage {
   factory DartClip() => create();
   DartClip._() : super();
@@ -246,7 +319,19 @@ class DartClip extends $pb.GeneratedMessage {
   static DartClip? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  State of the display feature, which contains information about the posture
+///  for foldable features.
+///
+///  The posture is the shape made by the parts of the flexible screen or
+///  physical screen panels. They are inspired by and similar to
+///  [Android Postures](https://developer.android.com/guide/topics/ui/foldables#postures).
+///
+///  * For [DisplayFeatureType.fold]s & [DisplayFeatureType.hinge]s, the state is
+///    the posture.
+///  * For [DisplayFeatureType.cutout]s, the state is not used and has the
+///  [DisplayFeatureState.unknown] value.
 class DartDisplayFeatureState extends $pb.GeneratedMessage {
   factory DartDisplayFeatureState() => create();
   DartDisplayFeatureState._() : super();
@@ -279,7 +364,26 @@ class DartDisplayFeatureState extends $pb.GeneratedMessage {
   static DartDisplayFeatureState? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  Type of [DisplayFeature], describing the [DisplayFeature] behaviour and if
+///  it obstructs the display.
+///
+///  Some types of [DisplayFeature], like [DisplayFeatureType.fold], can be
+///  reported without actually impeding drawing on the screen. They are useful
+///  for knowing where the display is bent or has a crease. The
+///  [DisplayFeature.bounds] can be 0-width in such cases.
+///
+///  The shape formed by the screens for types [DisplayFeatureType.fold] and
+///  [DisplayFeatureType.hinge] is called the posture and is exposed in
+///  [DisplayFeature.state]. For example, the [DisplayFeatureState.postureFlat] posture
+///  means the screens form a flat surface.
+///
+///  ![Device with a hinge display feature](https://flutter.github.io/assets-for-api-docs/assets/hardware/display_feature_hinge.png)
+///
+///  ![Device with a fold display feature](https://flutter.github.io/assets-for-api-docs/assets/hardware/display_feature_fold.png)
+///
+///  ![Device with a cutout display feature](https://flutter.github.io/assets-for-api-docs/assets/hardware/display_feature_cutout.png)
 class DartDisplayFeatureType extends $pb.GeneratedMessage {
   factory DartDisplayFeatureType() => create();
   DartDisplayFeatureType._() : super();
@@ -312,7 +416,38 @@ class DartDisplayFeatureType extends $pb.GeneratedMessage {
   static DartDisplayFeatureType? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  Quality levels for image sampling in [ImageFilter] and [Shader] objects that sample
+///  images and for [Canvas] operations that render images.
+///
+///  When scaling up typically the quality is lowest at [none], higher at [low] and [medium],
+///  and for very large scale factors (over 10x) the highest at [high].
+///
+///  When scaling down, [medium] provides the best quality especially when scaling an
+///  image to less than half its size or for animating the scale factor between such
+///  reductions. Otherwise, [low] and [high] provide similar effects for reductions of
+///  between 50% and 100% but the image may lose detail and have dropouts below 50%.
+///
+///  To get high quality when scaling images up and down, or when the scale is
+///  unknown, [medium] is typically a good balanced choice.
+///
+///  ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/filter_quality.png)
+///
+///  When building for the web using the `--web-renderer=html` option, filter
+///  quality has no effect. All images are rendered using the respective
+///  browser's default setting.
+///
+///  See also:
+///
+///   * [Paint.filterQuality], which is used to pass [FilterQuality] to the
+///     engine while using drawImage calls on a [Canvas].
+///   * [ImageShader].
+///   * [ImageFilter.matrix].
+///   * [Canvas.drawImage].
+///   * [Canvas.drawImageRect].
+///   * [Canvas.drawImageNine].
+///   * [Canvas.drawAtlas].
 class DartFilterQuality extends $pb.GeneratedMessage {
   factory DartFilterQuality() => create();
   DartFilterQuality._() : super();
@@ -345,7 +480,15 @@ class DartFilterQuality extends $pb.GeneratedMessage {
   static DartFilterQuality? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  Whether to use the italic type variation of glyphs in the font.
+///
+///  Some modern fonts allow this to be selected in a more fine-grained manner.
+///  See [FontVariation.italic] for details.
+///
+///  Italic type is distinct from slanted glyphs. To control the slant of a
+///  glyph, consider the [FontVariation.slant] font feature.
 class DartFontStyle extends $pb.GeneratedMessage {
   factory DartFontStyle() => create();
   DartFontStyle._() : super();
@@ -378,7 +521,11 @@ class DartFontStyle extends $pb.GeneratedMessage {
   static DartFontStyle? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  Where to vertically align the placeholder relative to the surrounding text.
+///
+///  Used by [ParagraphBuilder.addPlaceholder].
 class DartPlaceholderAlignment extends $pb.GeneratedMessage {
   factory DartPlaceholderAlignment() => create();
   DartPlaceholderAlignment._() : super();
@@ -411,7 +558,14 @@ class DartPlaceholderAlignment extends $pb.GeneratedMessage {
   static DartPlaceholderAlignment? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  Styles to use for line endings.
+///
+///  See also:
+///
+///   * [Paint.strokeCap] for how this value is used.
+///   * [StrokeJoin] for the different kinds of line segment joins.
 class DartStrokeCap extends $pb.GeneratedMessage {
   factory DartStrokeCap() => create();
   DartStrokeCap._() : super();
@@ -444,7 +598,30 @@ class DartStrokeCap extends $pb.GeneratedMessage {
   static DartStrokeCap? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  A way to disambiguate a [TextPosition] when its offset could match two
+///  different locations in the rendered string.
+///
+///  For example, at an offset where the rendered text wraps, there are two
+///  visual positions that the offset could represent: one prior to the line
+///  break (at the end of the first line) and one after the line break (at the
+///  start of the second line). A text affinity disambiguates between these two
+///  cases.
+///
+///  This affects only line breaks caused by wrapping, not explicit newline
+///  characters. For newline characters, the position is fully specified by the
+///  offset alone, and there is no ambiguity.
+///
+///  [TextAffinity] also affects bidirectional text at the interface between LTR
+///  and RTL text. Consider the following string, where the lowercase letters
+///  will be displayed as LTR and the uppercase letters RTL: "helloHELLO".  When
+///  rendered, the string would appear visually as "helloOLLEH".  An offset of 5
+///  would be ambiguous without a corresponding [TextAffinity].  Looking at the
+///  string in code, the offset represents the position just after the "o" and
+///  just before the "H".  When rendered, this offset could be either in the
+///  middle of the string to the right of the "o" or at the end of the string to
+///  the right of the "H".
 class DartTextAffinity extends $pb.GeneratedMessage {
   factory DartTextAffinity() => create();
   DartTextAffinity._() : super();
@@ -477,7 +654,9 @@ class DartTextAffinity extends $pb.GeneratedMessage {
   static DartTextAffinity? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  Whether and how to align text horizontally.
 class DartTextAlign extends $pb.GeneratedMessage {
   factory DartTextAlign() => create();
   DartTextAlign._() : super();
@@ -510,7 +689,9 @@ class DartTextAlign extends $pb.GeneratedMessage {
   static DartTextAlign? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  A horizontal line used for aligning text.
 class DartTextBaseline extends $pb.GeneratedMessage {
   factory DartTextBaseline() => create();
   DartTextBaseline._() : super();
@@ -543,7 +724,9 @@ class DartTextBaseline extends $pb.GeneratedMessage {
   static DartTextBaseline? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  The style in which to draw a text decoration
 class DartTextDecorationStyle extends $pb.GeneratedMessage {
   factory DartTextDecorationStyle() => create();
   DartTextDecorationStyle._() : super();
@@ -576,7 +759,92 @@ class DartTextDecorationStyle extends $pb.GeneratedMessage {
   static DartTextDecorationStyle? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  A direction in which text flows.
+///
+///  Some languages are written from the left to the right (for example, English,
+///  Tamil, or Chinese), while others are written from the right to the left (for
+///  example Aramaic, Hebrew, or Urdu). Some are also written in a mixture, for
+///  example Arabic is mostly written right-to-left, with numerals written
+///  left-to-right.
+///
+///  The text direction must be provided to APIs that render text or lay out
+///  boxes horizontally, so that they can determine which direction to start in:
+///  either right-to-left, [TextDirection.rtl]; or left-to-right,
+///  [TextDirection.ltr].
+///
+///  ## Design discussion
+///
+///  Flutter is designed to address the needs of applications written in any of
+///  the world's currently-used languages, whether they use a right-to-left or
+///  left-to-right writing direction. Flutter does not support other writing
+///  modes, such as vertical text or boustrophedon text, as these are rarely used
+///  in computer programs.
+///
+///  It is common when developing user interface frameworks to pick a default
+///  text direction — typically left-to-right, the direction most familiar to the
+///  engineers working on the framework — because this simplifies the development
+///  of applications on the platform. Unfortunately, this frequently results in
+///  the platform having unexpected left-to-right biases or assumptions, as
+///  engineers will typically miss places where they need to support
+///  right-to-left text. This then results in bugs that only manifest in
+///  right-to-left environments.
+///
+///  In an effort to minimize the extent to which Flutter experiences this
+///  category of issues, the lowest levels of the Flutter framework do not have a
+///  default text reading direction. Any time a reading direction is necessary,
+///  for example when text is to be displayed, or when a
+///  writing-direction-dependent value is to be interpreted, the reading
+///  direction must be explicitly specified. Where possible, such as in `switch`
+///  statements, the right-to-left case is listed first, to avoid the impression
+///  that it is an afterthought.
+///
+///  At the higher levels (specifically starting at the widgets library), an
+///  ambient [Directionality] is introduced, which provides a default. Thus, for
+///  instance, a [widgets.Text] widget in the scope of a [MaterialApp] widget
+///  does not need to be given an explicit writing direction. The
+///  [Directionality.of] static method can be used to obtain the ambient text
+///  direction for a particular [BuildContext].
+///
+///  ### Known left-to-right biases in Flutter
+///
+///  Despite the design intent described above, certain left-to-right biases have
+///  nonetheless crept into Flutter's design. These include:
+///
+///   * The [Canvas] origin is at the top left, and the x-axis increases in a
+///     left-to-right direction.
+///
+///   * The default localization in the widgets and material libraries is
+///     American English, which is left-to-right.
+///
+///  ### Visual properties vs directional properties
+///
+///  Many classes in the Flutter framework are offered in two versions, a
+///  visually-oriented variant, and a text-direction-dependent variant. For
+///  example, [EdgeInsets] is described in terms of top, left, right, and bottom,
+///  while [EdgeInsetsDirectional] is described in terms of top, start, end, and
+///  bottom, where start and end correspond to right and left in right-to-left
+///  text and left and right in left-to-right text.
+///
+///  There are distinct use cases for each of these variants.
+///
+///  Text-direction-dependent variants are useful when developing user interfaces
+///  that should "flip" with the text direction. For example, a paragraph of text
+///  in English will typically be left-aligned and a quote will be indented from
+///  the left, while in Arabic it will be right-aligned and indented from the
+///  right. Both of these cases are described by the direction-dependent
+///  [TextAlign.start] and [EdgeInsetsDirectional.start].
+///
+///  In contrast, the visual variants are useful when the text direction is known
+///  and not affected by the reading direction. For example, an application
+///  giving driving directions might show a "turn left" arrow on the left and a
+///  "turn right" arrow on the right — and would do so whether the application
+///  was localized to French (left-to-right) or Hebrew (right-to-left).
+///
+///  In practice, it is also expected that many developers will only be
+///  targeting one language, and in that case it may be simpler to think in
+///  visual terms.
 class DartTextDirection extends $pb.GeneratedMessage {
   factory DartTextDirection() => create();
   DartTextDirection._() : super();
@@ -609,7 +877,9 @@ class DartTextDirection extends $pb.GeneratedMessage {
   static DartTextDirection? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  {@macro dart.ui.textLeadingDistribution}
 class DartTextLeadingDistribution extends $pb.GeneratedMessage {
   factory DartTextLeadingDistribution() => create();
   DartTextLeadingDistribution._() : super();
@@ -642,7 +912,38 @@ class DartTextLeadingDistribution extends $pb.GeneratedMessage {
   static DartTextLeadingDistribution? _defaultInstance;
 }
 
-/// dart:ui
+///  dart:ui
+///
+///  Defines what happens at the edge of a gradient or the sampling of a source image
+///  in an [ImageFilter].
+///
+///  A gradient is defined along a finite inner area. In the case of a linear
+///  gradient, it's between the parallel lines that are orthogonal to the line
+///  drawn between two points. In the case of radial gradients, it's the disc
+///  that covers the circle centered on a particular point up to a given radius.
+///
+///  An image filter reads source samples from a source image and performs operations
+///  on those samples to produce a result image. An image defines color samples only
+///  for pixels within the bounds of the image but some filter operations, such as a blur
+///  filter, read samples over a wide area to compute the output for a given pixel. Such
+///  a filter would need to combine samples from inside the image with hypothetical
+///  color values from outside the image.
+///
+///  This enum is used to define how the gradient or image filter should treat the regions
+///  outside that defined inner area.
+///
+///  See also:
+///
+///   * [painting.Gradient], the superclass for [LinearGradient] and
+///     [RadialGradient], as used by [BoxDecoration] et al, which works in
+///     relative coordinates and can create a [Shader] representing the gradient
+///     for a particular [Rect] on demand.
+///   * [dart:ui.Gradient], the low-level class used when dealing with the
+///     [Paint.shader] property directly, with its [Gradient.linear] and
+///     [Gradient.radial] constructors.
+///   * [dart:ui.ImageFilter.blur], an ImageFilter that may sometimes need to
+///     read samples from outside an image to combine with the pixels near the
+///     edge of the image.
 class DartTileMode extends $pb.GeneratedMessage {
   factory DartTileMode() => create();
   DartTileMode._() : super();
@@ -675,7 +976,9 @@ class DartTileMode extends $pb.GeneratedMessage {
   static DartTileMode? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/autofill.dart
+///  package:flutter/src/widgets/autofill.dart
+///
+///  Predefined autofill context clean up actions.
 class FlutterAutofillContextAction extends $pb.GeneratedMessage {
   factory FlutterAutofillContextAction() => create();
   FlutterAutofillContextAction._() : super();
@@ -708,7 +1011,9 @@ class FlutterAutofillContextAction extends $pb.GeneratedMessage {
   static FlutterAutofillContextAction? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/form.dart
+///  package:flutter/src/widgets/form.dart
+///
+///  Used to configure the auto validation of [FormField] and [Form] widgets.
 class FlutterAutovalidateMode extends $pb.GeneratedMessage {
   factory FlutterAutovalidateMode() => create();
   FlutterAutovalidateMode._() : super();
@@ -741,7 +1046,20 @@ class FlutterAutovalidateMode extends $pb.GeneratedMessage {
   static FlutterAutovalidateMode? _defaultInstance;
 }
 
-/// package:flutter/src/painting/basic_types.dart
+///  package:flutter/src/painting/basic_types.dart
+///
+///  The two cardinal directions in two dimensions.
+///
+///  The axis is always relative to the current coordinate space. This means, for
+///  example, that a [horizontal] axis might actually be diagonally from top
+///  right to bottom left, due to some local [Transform] applied to the scene.
+///
+///  See also:
+///
+///   * [AxisDirection], which is a directional version of this enum (with values
+///     like left and right, rather than just horizontal).
+///   * [TextDirection], which disambiguates between left-to-right horizontal
+///     content and right-to-left horizontal content.
 class FlutterAxis extends $pb.GeneratedMessage {
   factory FlutterAxis() => create();
   FlutterAxis._() : super();
@@ -774,7 +1092,37 @@ class FlutterAxis extends $pb.GeneratedMessage {
   static FlutterAxis? _defaultInstance;
 }
 
-/// package:flutter/src/painting/basic_types.dart
+///  package:flutter/src/painting/basic_types.dart
+///
+///  A direction along either the horizontal or vertical [Axis] in which the
+///  origin, or zero position, is determined.
+///
+///  This value relates to the direction in which the scroll offset increases
+///  from the origin. This value does not represent the direction of user input
+///  that may be modifying the scroll offset, such as from a drag. For the
+///  active scrolling direction, see [ScrollDirection].
+///
+///  {@tool dartpad}
+///  This sample shows a [CustomScrollView], with [Radio] buttons in the
+///  [AppBar.bottom] that change the [AxisDirection] to illustrate different
+///  configurations.
+///
+///  ** See code in examples/api/lib/painting/axis_direction/axis_direction.0.dart **
+///  {@end-tool}
+///
+///  See also:
+///
+///    * [ScrollDirection], the direction of active scrolling, relative to the positive
+///      scroll offset axis given by an [AxisDirection] and a [GrowthDirection].
+///    * [GrowthDirection], the direction in which slivers and their content are
+///      ordered, relative to the scroll offset axis as specified by
+///      [AxisDirection].
+///    * [CustomScrollView.anchor], the relative position of the zero scroll
+///      offset in a viewport and inflection point for [AxisDirection]s of the
+///      same cardinal [Axis].
+///    * [axisDirectionIsReversed], which returns whether traveling along the
+///      given axis direction visits coordinates along that axis in numerically
+///      decreasing order.
 class FlutterAxisDirection extends $pb.GeneratedMessage {
   factory FlutterAxisDirection() => create();
   FlutterAxisDirection._() : super();
@@ -807,7 +1155,12 @@ class FlutterAxisDirection extends $pb.GeneratedMessage {
   static FlutterAxisDirection? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/banner.dart
+///  package:flutter/src/widgets/banner.dart
+///
+///  Where to show a [Banner].
+///
+///  The start and end locations are relative to the ambient [Directionality]
+///  (which can be overridden by [Banner.layoutDirection]).
 class FlutterBannerLocation extends $pb.GeneratedMessage {
   factory FlutterBannerLocation() => create();
   FlutterBannerLocation._() : super();
@@ -840,7 +1193,9 @@ class FlutterBannerLocation extends $pb.GeneratedMessage {
   static FlutterBannerLocation? _defaultInstance;
 }
 
-/// package:flutter/src/painting/borders.dart
+///  package:flutter/src/painting/borders.dart
+///
+///  The style of line to draw for a [BorderSide] in a [Border].
 class FlutterBorderStyle extends $pb.GeneratedMessage {
   factory FlutterBorderStyle() => create();
   FlutterBorderStyle._() : super();
@@ -873,7 +1228,14 @@ class FlutterBorderStyle extends $pb.GeneratedMessage {
   static FlutterBorderStyle? _defaultInstance;
 }
 
-/// package:flutter/src/painting/box_fit.dart
+///  package:flutter/src/painting/box_fit.dart
+///
+///  How a box should be inscribed into another box.
+///
+///  See also:
+///
+///   * [applyBoxFit], which applies the sizing semantics of these values (though
+///     not the alignment semantics).
 class FlutterBoxFit extends $pb.GeneratedMessage {
   factory FlutterBoxFit() => create();
   FlutterBoxFit._() : super();
@@ -906,7 +1268,14 @@ class FlutterBoxFit extends $pb.GeneratedMessage {
   static FlutterBoxFit? _defaultInstance;
 }
 
-/// package:flutter/src/painting/box_border.dart
+///  package:flutter/src/painting/box_border.dart
+///
+///  The shape to use when rendering a [Border] or [BoxDecoration].
+///
+///  Consider using [ShapeBorder] subclasses directly (with [ShapeDecoration]),
+///  instead of using [BoxShape] and [Border], if the shapes will need to be
+///  interpolated or animated. The [Border] class cannot interpolate between
+///  different shapes.
 class FlutterBoxShape extends $pb.GeneratedMessage {
   factory FlutterBoxShape() => create();
   FlutterBoxShape._() : super();
@@ -939,7 +1308,9 @@ class FlutterBoxShape extends $pb.GeneratedMessage {
   static FlutterBoxShape? _defaultInstance;
 }
 
-/// package:flutter/src/rendering/viewport.dart
+///  package:flutter/src/rendering/viewport.dart
+///
+///  The unit of measurement for a [Viewport.cacheExtent].
 class FlutterCacheExtentStyle extends $pb.GeneratedMessage {
   factory FlutterCacheExtentStyle() => create();
   FlutterCacheExtentStyle._() : super();
@@ -972,7 +1343,9 @@ class FlutterCacheExtentStyle extends $pb.GeneratedMessage {
   static FlutterCacheExtentStyle? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/text_selection.dart
+///  package:flutter/src/widgets/text_selection.dart
+///
+///  An enumeration of the status of the content on the user's clipboard.
 class FlutterClipboardStatus extends $pb.GeneratedMessage {
   factory FlutterClipboardStatus() => create();
   FlutterClipboardStatus._() : super();
@@ -1005,7 +1378,14 @@ class FlutterClipboardStatus extends $pb.GeneratedMessage {
   static FlutterClipboardStatus? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/context_menu_button_item.dart
+///  package:flutter/src/widgets/context_menu_button_item.dart
+///
+///  The buttons that can appear in a context menu by default.
+///
+///  See also:
+///
+///   * [ContextMenuButtonItem], which uses this enum to describe a button in a
+///     context menu.
 class FlutterContextMenuButtonType extends $pb.GeneratedMessage {
   factory FlutterContextMenuButtonType() => create();
   FlutterContextMenuButtonType._() : super();
@@ -1038,7 +1418,14 @@ class FlutterContextMenuButtonType extends $pb.GeneratedMessage {
   static FlutterContextMenuButtonType? _defaultInstance;
 }
 
-/// package:flutter/src/rendering/flex.dart
+///  package:flutter/src/rendering/flex.dart
+///
+///  How the children should be placed along the cross axis in a flex layout.
+///
+///  See also:
+///
+///   * [Column], [Row], and [Flex], the flex widgets.
+///   * [RenderFlex], the flex render object.
 class FlutterCrossAxisAlignment extends $pb.GeneratedMessage {
   factory FlutterCrossAxisAlignment() => create();
   FlutterCrossAxisAlignment._() : super();
@@ -1071,7 +1458,11 @@ class FlutterCrossAxisAlignment extends $pb.GeneratedMessage {
   static FlutterCrossAxisAlignment? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/animated_cross_fade.dart
+///  package:flutter/src/widgets/animated_cross_fade.dart
+///
+///  Specifies which of two children to show. See [AnimatedCrossFade].
+///
+///  The child that is shown will fade in, while the other will fade out.
 class FlutterCrossFadeState extends $pb.GeneratedMessage {
   factory FlutterCrossFadeState() => create();
   FlutterCrossFadeState._() : super();
@@ -1104,7 +1495,9 @@ class FlutterCrossFadeState extends $pb.GeneratedMessage {
   static FlutterCrossFadeState? _defaultInstance;
 }
 
-/// package:flutter/src/rendering/proxy_box.dart
+///  package:flutter/src/rendering/proxy_box.dart
+///
+///  Where to paint a box decoration.
 class FlutterDecorationPosition extends $pb.GeneratedMessage {
   factory FlutterDecorationPosition() => create();
   FlutterDecorationPosition._() : super();
@@ -1137,7 +1530,17 @@ class FlutterDecorationPosition extends $pb.GeneratedMessage {
   static FlutterDecorationPosition? _defaultInstance;
 }
 
-/// package:flutter/src/foundation/diagnostics.dart
+///  package:flutter/src/foundation/diagnostics.dart
+///
+///  The various priority levels used to filter which diagnostics are shown and
+///  omitted.
+///
+///  Trees of Flutter diagnostics can be very large so filtering the diagnostics
+///  shown matters. Typically filtering to only show diagnostics with at least
+///  level [debug] is appropriate.
+///
+///  In release mode, this level may not have any effect, as diagnostics in
+///  release mode are compacted or truncated to reduce binary size.
 class FlutterDiagnosticLevel extends $pb.GeneratedMessage {
   factory FlutterDiagnosticLevel() => create();
   FlutterDiagnosticLevel._() : super();
@@ -1170,7 +1573,17 @@ class FlutterDiagnosticLevel extends $pb.GeneratedMessage {
   static FlutterDiagnosticLevel? _defaultInstance;
 }
 
-/// package:flutter/src/foundation/diagnostics.dart
+///  package:flutter/src/foundation/diagnostics.dart
+///
+///  Styles for displaying a node in a [DiagnosticsNode] tree.
+///
+///  In release mode, these styles may be ignored, as diagnostics are compacted
+///  or truncated to save on binary size.
+///
+///  See also:
+///
+///   * [DiagnosticsNode.toStringDeep], which dumps text art trees for these
+///     styles.
 class FlutterDiagnosticsTreeStyle extends $pb.GeneratedMessage {
   factory FlutterDiagnosticsTreeStyle() => create();
   FlutterDiagnosticsTreeStyle._() : super();
@@ -1203,7 +1616,9 @@ class FlutterDiagnosticsTreeStyle extends $pb.GeneratedMessage {
   static FlutterDiagnosticsTreeStyle? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/dismissible.dart
+///  package:flutter/src/widgets/dismissible.dart
+///
+///  The direction in which a [Dismissible] can be dismissed.
 class FlutterDismissDirection extends $pb.GeneratedMessage {
   factory FlutterDismissDirection() => create();
   FlutterDismissDirection._() : super();
@@ -1236,7 +1651,14 @@ class FlutterDismissDirection extends $pb.GeneratedMessage {
   static FlutterDismissDirection? _defaultInstance;
 }
 
-/// package:flutter/src/gestures/recognizer.dart
+///  package:flutter/src/gestures/recognizer.dart
+///
+///  Configuration of offset passed to [DragStartDetails].
+///
+///  See also:
+///
+///   * [DragGestureRecognizer.dragStartBehavior], which gives an example for the
+///   different behaviors.
 class FlutterDragStartBehavior extends $pb.GeneratedMessage {
   factory FlutterDragStartBehavior() => create();
   FlutterDragStartBehavior._() : super();
@@ -1269,7 +1691,16 @@ class FlutterDragStartBehavior extends $pb.GeneratedMessage {
   static FlutterDragStartBehavior? _defaultInstance;
 }
 
-/// package:flutter/src/rendering/flex.dart
+///  package:flutter/src/rendering/flex.dart
+///
+///  How the child is inscribed into the available space.
+///
+///  See also:
+///
+///   * [RenderFlex], the flex render object.
+///   * [Column], [Row], and [Flex], the flex widgets.
+///   * [Expanded], the widget equivalent of [tight].
+///   * [Flexible], the widget equivalent of [loose].
 class FlutterFlexFit extends $pb.GeneratedMessage {
   factory FlutterFlexFit() => create();
   FlutterFlexFit._() : super();
@@ -1302,7 +1733,9 @@ class FlutterFlexFit extends $pb.GeneratedMessage {
   static FlutterFlexFit? _defaultInstance;
 }
 
-/// package:flutter/src/painting/flutter_logo.dart
+///  package:flutter/src/painting/flutter_logo.dart
+///
+///  Possible ways to draw Flutter's logo.
 class FlutterFlutterLogoStyle extends $pb.GeneratedMessage {
   factory FlutterFlutterLogoStyle() => create();
   FlutterFlutterLogoStyle._() : super();
@@ -1335,7 +1768,9 @@ class FlutterFlutterLogoStyle extends $pb.GeneratedMessage {
   static FlutterFlutterLogoStyle? _defaultInstance;
 }
 
-/// package:flutter/src/rendering/proxy_box.dart
+///  package:flutter/src/rendering/proxy_box.dart
+///
+///  How to behave during hit tests.
 class FlutterHitTestBehavior extends $pb.GeneratedMessage {
   factory FlutterHitTestBehavior() => create();
   FlutterHitTestBehavior._() : super();
@@ -1368,7 +1803,9 @@ class FlutterHitTestBehavior extends $pb.GeneratedMessage {
   static FlutterHitTestBehavior? _defaultInstance;
 }
 
-/// package:flutter/src/painting/decoration_image.dart
+///  package:flutter/src/painting/decoration_image.dart
+///
+///  How to paint any portions of a box not covered by an image.
 class FlutterImageRepeat extends $pb.GeneratedMessage {
   factory FlutterImageRepeat() => create();
   FlutterImageRepeat._() : super();
@@ -1401,7 +1838,14 @@ class FlutterImageRepeat extends $pb.GeneratedMessage {
   static FlutterImageRepeat? _defaultInstance;
 }
 
-/// package:flutter/src/rendering/flex.dart
+///  package:flutter/src/rendering/flex.dart
+///
+///  How the children should be placed along the main axis in a flex layout.
+///
+///  See also:
+///
+///   * [Column], [Row], and [Flex], the flex widgets.
+///   * [RenderFlex], the flex render object.
 class FlutterMainAxisAlignment extends $pb.GeneratedMessage {
   factory FlutterMainAxisAlignment() => create();
   FlutterMainAxisAlignment._() : super();
@@ -1434,7 +1878,22 @@ class FlutterMainAxisAlignment extends $pb.GeneratedMessage {
   static FlutterMainAxisAlignment? _defaultInstance;
 }
 
-/// package:flutter/src/rendering/flex.dart
+///  package:flutter/src/rendering/flex.dart
+///
+///  How much space should be occupied in the main axis.
+///
+///  During a flex layout, available space along the main axis is allocated to
+///  children. After allocating space, there might be some remaining free space.
+///  This value controls whether to maximize or minimize the amount of free
+///  space, subject to the incoming layout constraints.
+///
+///  See also:
+///
+///   * [Column], [Row], and [Flex], the flex widgets.
+///   * [Expanded] and [Flexible], the widgets that controls a flex widgets'
+///     children's flex.
+///   * [RenderFlex], the flex render object.
+///   * [MainAxisAlignment], which controls how the free space is distributed.
 class FlutterMainAxisSize extends $pb.GeneratedMessage {
   factory FlutterMainAxisSize() => create();
   FlutterMainAxisSize._() : super();
@@ -1467,7 +1926,41 @@ class FlutterMainAxisSize extends $pb.GeneratedMessage {
   static FlutterMainAxisSize? _defaultInstance;
 }
 
-/// package:flutter/src/services/text_formatter.dart
+///  package:flutter/src/services/text_formatter.dart
+///
+///  Mechanisms for enforcing maximum length limits.
+///
+///  This is used by [TextField] to specify how the [TextField.maxLength] should
+///  be applied.
+///
+///  {@template flutter.services.textFormatter.maxLengthEnforcement}
+///  ### [MaxLengthEnforcement.enforced] versus
+///  [MaxLengthEnforcement.truncateAfterCompositionEnds]
+///
+///  Both [MaxLengthEnforcement.enforced] and
+///  [MaxLengthEnforcement.truncateAfterCompositionEnds] make sure the final
+///  length of the text does not exceed the max length specified. The difference
+///  is that [MaxLengthEnforcement.enforced] truncates all text while
+///  [MaxLengthEnforcement.truncateAfterCompositionEnds] allows composing text to
+///  exceed the limit. Allowing this "placeholder" composing text to exceed the
+///  limit may provide a better user experience on some platforms for entering
+///  ideographic characters (e.g. CJK characters) via composing on phonetic
+///  keyboards.
+///
+///  Some input methods (Gboard on Android for example) initiate text composition
+///  even for Latin characters, in which case the best experience may be to
+///  truncate those composing characters with [MaxLengthEnforcement.enforced].
+///
+///  In fields that strictly support only a small subset of characters, such as
+///  verification code fields, [MaxLengthEnforcement.enforced] may provide the
+///  best experience.
+///  {@endtemplate}
+///
+///  See also:
+///
+///   * [TextField.maxLengthEnforcement] which is used in conjunction with
+///     [TextField.maxLength] to limit the length of user input. [TextField] also
+///     provides a character counter to provide visual feedback.
 class FlutterMaxLengthEnforcement extends $pb.GeneratedMessage {
   factory FlutterMaxLengthEnforcement() => create();
   FlutterMaxLengthEnforcement._() : super();
@@ -1500,7 +1993,16 @@ class FlutterMaxLengthEnforcement extends $pb.GeneratedMessage {
   static FlutterMaxLengthEnforcement? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/media_query.dart
+///  package:flutter/src/widgets/media_query.dart
+///
+///  Describes the navigation mode to be set by a [MediaQuery] widget.
+///
+///  The different modes indicate the type of navigation to be used in a widget
+///  subtree for those widgets sensitive to it.
+///
+///  Use `MediaQuery.navigationModeOf(context)` to determine the navigation mode
+///  in effect for the given context. Use a [MediaQuery] widget to set the
+///  navigation mode for its descendant widgets.
 class FlutterNavigationMode extends $pb.GeneratedMessage {
   factory FlutterNavigationMode() => create();
   FlutterNavigationMode._() : super();
@@ -1533,7 +2035,9 @@ class FlutterNavigationMode extends $pb.GeneratedMessage {
   static FlutterNavigationMode? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/media_query.dart
+///  package:flutter/src/widgets/media_query.dart
+///
+///  Whether in portrait or landscape.
 class FlutterOrientation extends $pb.GeneratedMessage {
   factory FlutterOrientation() => create();
   FlutterOrientation._() : super();
@@ -1566,7 +2070,13 @@ class FlutterOrientation extends $pb.GeneratedMessage {
   static FlutterOrientation? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/overflow_bar.dart
+///  package:flutter/src/widgets/overflow_bar.dart
+///
+///  Defines the horizontal alignment of [OverflowBar] children
+///  when they're laid out in an overflow column.
+///
+///  This value must be interpreted relative to the ambient
+///  [TextDirection].
 class FlutterOverflowBarAlignment extends $pb.GeneratedMessage {
   factory FlutterOverflowBarAlignment() => create();
   FlutterOverflowBarAlignment._() : super();
@@ -1599,7 +2109,10 @@ class FlutterOverflowBarAlignment extends $pb.GeneratedMessage {
   static FlutterOverflowBarAlignment? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/interactive_viewer.dart
+///  package:flutter/src/widgets/interactive_viewer.dart
+///
+///  This enum is used to specify the behavior of the [InteractiveViewer] when
+///  the user drags the viewport.
 class FlutterPanAxis extends $pb.GeneratedMessage {
   factory FlutterPanAxis() => create();
   FlutterPanAxis._() : super();
@@ -1632,7 +2145,25 @@ class FlutterPanAxis extends $pb.GeneratedMessage {
   static FlutterPanAxis? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/platform_menu_bar.dart
+///  package:flutter/src/widgets/platform_menu_bar.dart
+///
+///  The list of possible platform provided, prebuilt menus for use in a
+///  [PlatformMenuBar].
+///
+///  These are menus that the platform typically provides that cannot be
+///  reproduced in Flutter without calling platform functions, but are standard
+///  on the platform.
+///
+///  Examples include things like the "Quit" or "Services" menu items on macOS.
+///  Not all platforms support all menu item types. Use
+///  [PlatformProvidedMenuItem.hasMenu] to know if a particular type is supported
+///  on a the current platform.
+///
+///  Add these to your [PlatformMenuBar] using the [PlatformProvidedMenuItem]
+///  class.
+///
+///  You can tell if the platform provides the given menu using the
+///  [PlatformProvidedMenuItem.hasMenu] method.
 class FlutterPlatformProvidedMenuItemType extends $pb.GeneratedMessage {
   factory FlutterPlatformProvidedMenuItemType() => create();
   FlutterPlatformProvidedMenuItemType._() : super();
@@ -1665,7 +2196,9 @@ class FlutterPlatformProvidedMenuItemType extends $pb.GeneratedMessage {
   static FlutterPlatformProvidedMenuItemType? _defaultInstance;
 }
 
-/// package:flutter/src/rendering/platform_view.dart
+///  package:flutter/src/rendering/platform_view.dart
+///
+///  How an embedded platform view behave during hit tests.
 class FlutterPlatformViewHitTestBehavior extends $pb.GeneratedMessage {
   factory FlutterPlatformViewHitTestBehavior() => create();
   FlutterPlatformViewHitTestBehavior._() : super();
@@ -1698,7 +2231,9 @@ class FlutterPlatformViewHitTestBehavior extends $pb.GeneratedMessage {
   static FlutterPlatformViewHitTestBehavior? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/scroll_physics.dart
+///  package:flutter/src/widgets/scroll_physics.dart
+///
+///  The rate at which scroll momentum will be decelerated.
 class FlutterScrollDecelerationRate extends $pb.GeneratedMessage {
   factory FlutterScrollDecelerationRate() => create();
   FlutterScrollDecelerationRate._() : super();
@@ -1731,7 +2266,23 @@ class FlutterScrollDecelerationRate extends $pb.GeneratedMessage {
   static FlutterScrollDecelerationRate? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/scrollable_helpers.dart
+///  package:flutter/src/widgets/scrollable_helpers.dart
+///
+///  Describes the type of scroll increment that will be performed by a
+///  [ScrollAction] on a [Scrollable].
+///
+///  This is used to configure a [ScrollIncrementDetails] object to pass to a
+///  [ScrollIncrementCalculator] function on a [Scrollable].
+///
+///  {@template flutter.widgets.ScrollIncrementType.intent}
+///  This indicates the *intent* of the scroll, not necessarily the size. Not all
+///  scrollable areas will have the concept of a "line" or "page", but they can
+///  respond to the different standard key bindings that cause scrolling, which
+///  are bound to keys that people use to indicate a "line" scroll (e.g.
+///  control-arrowDown keys) or a "page" scroll (e.g. pageDown key). It is
+///  recommended that at least the relative magnitudes of the scrolls match
+///  expectations.
+///  {@endtemplate}
 class FlutterScrollIncrementType extends $pb.GeneratedMessage {
   factory FlutterScrollIncrementType() => create();
   FlutterScrollIncrementType._() : super();
@@ -1764,7 +2315,10 @@ class FlutterScrollIncrementType extends $pb.GeneratedMessage {
   static FlutterScrollIncrementType? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/scroll_view.dart
+///  package:flutter/src/widgets/scroll_view.dart
+///
+///  A representation of how a [ScrollView] should dismiss the on-screen
+///  keyboard.
 class FlutterScrollViewKeyboardDismissBehavior extends $pb.GeneratedMessage {
   factory FlutterScrollViewKeyboardDismissBehavior() => create();
   FlutterScrollViewKeyboardDismissBehavior._() : super();
@@ -1797,7 +2351,9 @@ class FlutterScrollViewKeyboardDismissBehavior extends $pb.GeneratedMessage {
   static FlutterScrollViewKeyboardDismissBehavior? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/scrollbar.dart
+///  package:flutter/src/widgets/scrollbar.dart
+///
+///  An orientation along either the horizontal or vertical [Axis].
 class FlutterScrollbarOrientation extends $pb.GeneratedMessage {
   factory FlutterScrollbarOrientation() => create();
   FlutterScrollbarOrientation._() : super();
@@ -1830,7 +2386,10 @@ class FlutterScrollbarOrientation extends $pb.GeneratedMessage {
   static FlutterScrollbarOrientation? _defaultInstance;
 }
 
-/// package:flutter/src/services/text_input.dart
+///  package:flutter/src/services/text_input.dart
+///
+///  Indicates what triggered the change in selected text (including changes to
+///  the cursor location).
 class FlutterSelectionChangedCause extends $pb.GeneratedMessage {
   factory FlutterSelectionChangedCause() => create();
   FlutterSelectionChangedCause._() : super();
@@ -1863,7 +2422,17 @@ class FlutterSelectionChangedCause extends $pb.GeneratedMessage {
   static FlutterSelectionChangedCause? _defaultInstance;
 }
 
-/// package:flutter/src/services/text_input.dart
+///  package:flutter/src/services/text_input.dart
+///
+///  Indicates how to handle the intelligent replacement of dashes in text input.
+///
+///  See also:
+///
+///   * [TextField.smartDashesType]
+///   * [CupertinoTextField.smartDashesType]
+///   * [EditableText.smartDashesType]
+///   * [SmartQuotesType]
+///   * <https://developer.apple.com/documentation/uikit/uitextinputtraits>
 class FlutterSmartDashesType extends $pb.GeneratedMessage {
   factory FlutterSmartDashesType() => create();
   FlutterSmartDashesType._() : super();
@@ -1896,7 +2465,16 @@ class FlutterSmartDashesType extends $pb.GeneratedMessage {
   static FlutterSmartDashesType? _defaultInstance;
 }
 
-/// package:flutter/src/services/text_input.dart
+///  package:flutter/src/services/text_input.dart
+///
+///  Indicates how to handle the intelligent replacement of quotes in text input.
+///
+///  See also:
+///
+///   * [TextField.smartQuotesType]
+///   * [CupertinoTextField.smartQuotesType]
+///   * [EditableText.smartQuotesType]
+///   * <https://developer.apple.com/documentation/uikit/uitextinputtraits>
 class FlutterSmartQuotesType extends $pb.GeneratedMessage {
   factory FlutterSmartQuotesType() => create();
   FlutterSmartQuotesType._() : super();
@@ -1929,7 +2507,9 @@ class FlutterSmartQuotesType extends $pb.GeneratedMessage {
   static FlutterSmartQuotesType? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/snapshot_widget.dart
+///  package:flutter/src/widgets/snapshot_widget.dart
+///
+///  Controls how the [SnapshotWidget] paints its child.
 class FlutterSnapshotMode extends $pb.GeneratedMessage {
   factory FlutterSnapshotMode() => create();
   FlutterSnapshotMode._() : super();
@@ -1962,7 +2542,18 @@ class FlutterSnapshotMode extends $pb.GeneratedMessage {
   static FlutterSnapshotMode? _defaultInstance;
 }
 
-/// package:flutter/src/rendering/stack.dart
+///  package:flutter/src/rendering/stack.dart
+///
+///  How to size the non-positioned children of a [Stack].
+///
+///  This enum is used with [Stack.fit] and [RenderStack.fit] to control
+///  how the [BoxConstraints] passed from the stack's parent to the stack's child
+///  are adjusted.
+///
+///  See also:
+///
+///   * [Stack], the widget that uses this.
+///   * [RenderStack], the render object that implements the stack algorithm.
 class FlutterStackFit extends $pb.GeneratedMessage {
   factory FlutterStackFit() => create();
   FlutterStackFit._() : super();
@@ -1995,7 +2586,12 @@ class FlutterStackFit extends $pb.GeneratedMessage {
   static FlutterStackFit? _defaultInstance;
 }
 
-/// package:flutter/src/rendering/table.dart
+///  package:flutter/src/rendering/table.dart
+///
+///  Vertical alignment options for cells in [RenderTable] objects.
+///
+///  This is specified using [TableCellParentData] objects on the
+///  [RenderObject.parentData] of the children of the [RenderTable].
 class FlutterTableCellVerticalAlignment extends $pb.GeneratedMessage {
   factory FlutterTableCellVerticalAlignment() => create();
   FlutterTableCellVerticalAlignment._() : super();
@@ -2028,7 +2624,16 @@ class FlutterTableCellVerticalAlignment extends $pb.GeneratedMessage {
   static FlutterTableCellVerticalAlignment? _defaultInstance;
 }
 
-/// package:flutter/src/foundation/platform.dart
+///  package:flutter/src/foundation/platform.dart
+///
+///  The platform that user interaction should adapt to target.
+///
+///  The [defaultTargetPlatform] getter returns the current platform.
+///
+///  When using the "flutter run" command, the "o" key will toggle between
+///  values of this enum when updating [debugDefaultTargetPlatformOverride].
+///  This lets one test how the application will work on various platforms
+///  without having to switch emulators or physical devices.
 class FlutterTargetPlatform extends $pb.GeneratedMessage {
   factory FlutterTargetPlatform() => create();
   FlutterTargetPlatform._() : super();
@@ -2061,7 +2666,13 @@ class FlutterTargetPlatform extends $pb.GeneratedMessage {
   static FlutterTargetPlatform? _defaultInstance;
 }
 
-/// package:flutter/src/services/text_input.dart
+///  package:flutter/src/services/text_input.dart
+///
+///  Configures how the platform keyboard will select an uppercase or
+///  lowercase keyboard.
+///
+///  Only supports text keyboards, other keyboard types will ignore this
+///  configuration. Capitalization is locale-aware.
 class FlutterTextCapitalization extends $pb.GeneratedMessage {
   factory FlutterTextCapitalization() => create();
   FlutterTextCapitalization._() : super();
@@ -2094,7 +2705,41 @@ class FlutterTextCapitalization extends $pb.GeneratedMessage {
   static FlutterTextCapitalization? _defaultInstance;
 }
 
-/// package:flutter/src/services/text_input.dart
+///  package:flutter/src/services/text_input.dart
+///
+///  An action the user has requested the text input control to perform.
+///
+///  Each action represents a logical meaning, and also configures the soft
+///  keyboard to display a certain kind of action button. The visual appearance
+///  of the action button might differ between versions of the same OS.
+///
+///  Despite the logical meaning of each action, choosing a particular
+///  [TextInputAction] does not necessarily cause any specific behavior to
+///  happen, other than changing the focus when appropriate. It is up to the
+///  developer to ensure that the behavior that occurs when an action button is
+///  pressed is appropriate for the action button chosen.
+///
+///  For example: If the user presses the keyboard action button on iOS when it
+///  reads "Emergency Call", the result should not be a focus change to the next
+///  TextField. This behavior is not logically appropriate for a button that says
+///  "Emergency Call".
+///
+///  See [EditableText] for more information about customizing action button
+///  behavior.
+///
+///  Most [TextInputAction]s are supported equally by both Android and iOS.
+///  However, there is not a complete, direct mapping between Android's IME input
+///  types and iOS's keyboard return types. Therefore, some [TextInputAction]s
+///  are inappropriate for one of the platforms. If a developer chooses an
+///  inappropriate [TextInputAction] when running in debug mode, an error will be
+///  thrown. If the same thing is done in release mode, then instead of sending
+///  the inappropriate value, Android will use "unspecified" on the platform
+///  side and iOS will use "default" on the platform side.
+///
+///  See also:
+///
+///   * [TextInput], which configures the platform's keyboard setup.
+///   * [EditableText], which invokes callbacks when the action button is pressed.
 class FlutterTextInputAction extends $pb.GeneratedMessage {
   factory FlutterTextInputAction() => create();
   FlutterTextInputAction._() : super();
@@ -2127,7 +2772,12 @@ class FlutterTextInputAction extends $pb.GeneratedMessage {
   static FlutterTextInputAction? _defaultInstance;
 }
 
-/// package:flutter/src/painting/text_painter.dart
+///  package:flutter/src/painting/text_painter.dart
+///
+///  How overflowing text should be handled.
+///
+///  A [TextOverflow] can be passed to [Text] and [RichText] via their
+///  [Text.overflow] and [RichText.overflow] properties respectively.
 class FlutterTextOverflow extends $pb.GeneratedMessage {
   factory FlutterTextOverflow() => create();
   FlutterTextOverflow._() : super();
@@ -2160,7 +2810,11 @@ class FlutterTextOverflow extends $pb.GeneratedMessage {
   static FlutterTextOverflow? _defaultInstance;
 }
 
-/// package:flutter/src/painting/text_painter.dart
+///  package:flutter/src/painting/text_painter.dart
+///
+///  The different ways of measuring the width of one or more lines of text.
+///
+///  See [Text.textWidthBasis], for example.
 class FlutterTextWidthBasis extends $pb.GeneratedMessage {
   factory FlutterTextWidthBasis() => create();
   FlutterTextWidthBasis._() : super();
@@ -2193,7 +2847,13 @@ class FlutterTextWidthBasis extends $pb.GeneratedMessage {
   static FlutterTextWidthBasis? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/focus_traversal.dart
+///  package:flutter/src/widgets/focus_traversal.dart
+///
+///  A direction along either the horizontal or vertical axes.
+///
+///  This is used by the [DirectionalFocusTraversalPolicyMixin], and
+///  [FocusNode.focusInDirection] to indicate which direction to look in for the
+///  next focus.
 class FlutterTraversalDirection extends $pb.GeneratedMessage {
   factory FlutterTraversalDirection() => create();
   FlutterTraversalDirection._() : super();
@@ -2226,7 +2886,20 @@ class FlutterTraversalDirection extends $pb.GeneratedMessage {
   static FlutterTraversalDirection? _defaultInstance;
 }
 
-/// package:flutter/src/widgets/focus_traversal.dart
+///  package:flutter/src/widgets/focus_traversal.dart
+///
+///  Controls the transfer of focus beyond the first and the last items of a
+///  [FocusScopeNode].
+///
+///  This enumeration only controls the traversal behavior performed by
+///  [FocusTraversalPolicy]. Other methods of focus transfer, such as direct
+///  calls to [FocusNode.requestFocus] and [FocusNode.unfocus], are not affected
+///  by this enumeration.
+///
+///  See also:
+///
+///  * [FocusTraversalPolicy], which implements the logic behind this enum.
+///  * [FocusScopeNode], which is configured by this enum.
 class FlutterTraversalEdgeBehavior extends $pb.GeneratedMessage {
   factory FlutterTraversalEdgeBehavior() => create();
   FlutterTraversalEdgeBehavior._() : super();
@@ -2259,7 +2932,19 @@ class FlutterTraversalEdgeBehavior extends $pb.GeneratedMessage {
   static FlutterTraversalEdgeBehavior? _defaultInstance;
 }
 
-/// package:flutter/src/painting/basic_types.dart
+///  package:flutter/src/painting/basic_types.dart
+///
+///  A direction in which boxes flow vertically.
+///
+///  This is used by the flex algorithm (e.g. [Column]) to decide in which
+///  direction to draw boxes.
+///
+///  This is also used to disambiguate `start` and `end` values (e.g.
+///  [MainAxisAlignment.start] or [CrossAxisAlignment.end]).
+///
+///  See also:
+///
+///   * [TextDirection], which controls the same thing but horizontally.
 class FlutterVerticalDirection extends $pb.GeneratedMessage {
   factory FlutterVerticalDirection() => create();
   FlutterVerticalDirection._() : super();
@@ -2292,7 +2977,12 @@ class FlutterVerticalDirection extends $pb.GeneratedMessage {
   static FlutterVerticalDirection? _defaultInstance;
 }
 
-/// package:flutter/src/rendering/wrap.dart
+///  package:flutter/src/rendering/wrap.dart
+///
+///  How [Wrap] should align objects.
+///
+///  Used both to align children within a run in the main axis as well as to
+///  align the runs themselves in the cross axis.
 class FlutterWrapAlignment extends $pb.GeneratedMessage {
   factory FlutterWrapAlignment() => create();
   FlutterWrapAlignment._() : super();
@@ -2325,7 +3015,9 @@ class FlutterWrapAlignment extends $pb.GeneratedMessage {
   static FlutterWrapAlignment? _defaultInstance;
 }
 
-/// package:flutter/src/rendering/wrap.dart
+///  package:flutter/src/rendering/wrap.dart
+///
+///  Who [Wrap] should align children within a run in the cross axis.
 class FlutterWrapCrossAlignment extends $pb.GeneratedMessage {
   factory FlutterWrapCrossAlignment() => create();
   FlutterWrapCrossAlignment._() : super();
@@ -2358,7 +3050,10 @@ class FlutterWrapCrossAlignment extends $pb.GeneratedMessage {
   static FlutterWrapCrossAlignment? _defaultInstance;
 }
 
-/// package:flutter/src/material/bottom_navigation_bar.dart
+///  package:flutter/src/material/bottom_navigation_bar.dart
+///
+///  Refines the layout of a [BottomNavigationBar] when the enclosing
+///  [MediaQueryData.orientation] is [Orientation.landscape].
 class MaterialBottomNavigationBarLandscapeLayout extends $pb.GeneratedMessage {
   factory MaterialBottomNavigationBarLandscapeLayout() => create();
   MaterialBottomNavigationBarLandscapeLayout._() : super();
@@ -2391,7 +3086,16 @@ class MaterialBottomNavigationBarLandscapeLayout extends $pb.GeneratedMessage {
   static MaterialBottomNavigationBarLandscapeLayout? _defaultInstance;
 }
 
-/// package:flutter/src/material/bottom_navigation_bar.dart
+///  package:flutter/src/material/bottom_navigation_bar.dart
+///
+///  Defines the layout and behavior of a [BottomNavigationBar].
+///
+///  For a sample on how to use these, please see [BottomNavigationBar].
+///  See also:
+///
+///   * [BottomNavigationBar]
+///   * [BottomNavigationBarItem]
+///   * <https://material.io/design/components/bottom-navigation.html#specs>
 class MaterialBottomNavigationBarType extends $pb.GeneratedMessage {
   factory MaterialBottomNavigationBarType() => create();
   MaterialBottomNavigationBarType._() : super();
@@ -2424,7 +3128,10 @@ class MaterialBottomNavigationBarType extends $pb.GeneratedMessage {
   static MaterialBottomNavigationBarType? _defaultInstance;
 }
 
-/// package:flutter/src/material/button_theme.dart
+///  package:flutter/src/material/button_theme.dart
+///
+///  Used with [ButtonTheme] and [ButtonThemeData] to define how the button bar
+///  should size itself with either constraints or internal padding.
 class MaterialButtonBarLayoutBehavior extends $pb.GeneratedMessage {
   factory MaterialButtonBarLayoutBehavior() => create();
   MaterialButtonBarLayoutBehavior._() : super();
@@ -2457,7 +3164,11 @@ class MaterialButtonBarLayoutBehavior extends $pb.GeneratedMessage {
   static MaterialButtonBarLayoutBehavior? _defaultInstance;
 }
 
-/// package:flutter/src/material/button_theme.dart
+///  package:flutter/src/material/button_theme.dart
+///
+///  Used with [ButtonTheme] and [ButtonThemeData] to define a button's base
+///  colors, and the defaults for the button's minimum size, internal padding,
+///  and shape.
 class MaterialButtonTextTheme extends $pb.GeneratedMessage {
   factory MaterialButtonTextTheme() => create();
   MaterialButtonTextTheme._() : super();
@@ -2490,7 +3201,9 @@ class MaterialButtonTextTheme extends $pb.GeneratedMessage {
   static MaterialButtonTextTheme? _defaultInstance;
 }
 
-/// package:flutter/src/material/flexible_space_bar.dart
+///  package:flutter/src/material/flexible_space_bar.dart
+///
+///  The collapsing effect while the space bar collapses from its full size.
 class MaterialCollapseMode extends $pb.GeneratedMessage {
   factory MaterialCollapseMode() => create();
   MaterialCollapseMode._() : super();
@@ -2523,7 +3236,21 @@ class MaterialCollapseMode extends $pb.GeneratedMessage {
   static MaterialCollapseMode? _defaultInstance;
 }
 
-/// package:flutter/src/material/date.dart
+///  package:flutter/src/material/date.dart
+///
+///  Mode of date entry method for the date picker dialog.
+///
+///  In [calendar] mode, a calendar grid is displayed and the user taps the
+///  day they wish to select. In [input] mode a TextField] is displayed and
+///  the user types in the date they wish to select.
+///
+///  [calendarOnly] and [inputOnly] are variants of the above that don't
+///  allow the user to change to the mode.
+///
+///  See also:
+///
+///   * [showDatePicker] and [showDateRangePicker], which use this to control
+///     the initial entry mode of their dialogs.
 class MaterialDatePickerEntryMode extends $pb.GeneratedMessage {
   factory MaterialDatePickerEntryMode() => create();
   MaterialDatePickerEntryMode._() : super();
@@ -2556,7 +3283,17 @@ class MaterialDatePickerEntryMode extends $pb.GeneratedMessage {
   static MaterialDatePickerEntryMode? _defaultInstance;
 }
 
-/// package:flutter/src/material/date.dart
+///  package:flutter/src/material/date.dart
+///
+///  Initial display of a calendar date picker.
+///
+///  Either a grid of available years or a monthly calendar.
+///
+///  See also:
+///
+///   * [showDatePicker], which shows a dialog that contains a Material Design
+///     date picker.
+///   * [CalendarDatePicker], widget which implements the Material Design date picker.
 class MaterialDatePickerMode extends $pb.GeneratedMessage {
   factory MaterialDatePickerMode() => create();
   MaterialDatePickerMode._() : super();
@@ -2589,7 +3326,9 @@ class MaterialDatePickerMode extends $pb.GeneratedMessage {
   static MaterialDatePickerMode? _defaultInstance;
 }
 
-/// package:flutter/src/material/drawer.dart
+///  package:flutter/src/material/drawer.dart
+///
+///  The possible alignments of a [Drawer].
 class MaterialDrawerAlignment extends $pb.GeneratedMessage {
   factory MaterialDrawerAlignment() => create();
   MaterialDrawerAlignment._() : super();
@@ -2622,7 +3361,16 @@ class MaterialDrawerAlignment extends $pb.GeneratedMessage {
   static MaterialDrawerAlignment? _defaultInstance;
 }
 
-/// package:flutter/src/material/input_decorator.dart
+///  package:flutter/src/material/input_decorator.dart
+///
+///  Defines **how** the floating label should behave.
+///
+///  See also:
+///
+///   * [InputDecoration.floatingLabelBehavior] which defines the behavior for
+///     [InputDecoration.label] or [InputDecoration.labelText].
+///   * [FloatingLabelAlignment] which defines **where** the floating label
+///     should displayed.
 class MaterialFloatingLabelBehavior extends $pb.GeneratedMessage {
   factory MaterialFloatingLabelBehavior() => create();
   MaterialFloatingLabelBehavior._() : super();
@@ -2655,7 +3403,18 @@ class MaterialFloatingLabelBehavior extends $pb.GeneratedMessage {
   static MaterialFloatingLabelBehavior? _defaultInstance;
 }
 
-/// package:flutter/src/material/list_tile.dart
+///  package:flutter/src/material/list_tile.dart
+///
+///  Where to place the control in widgets that use [ListTile] to position a
+///  control next to a label.
+///
+///  See also:
+///
+///   * [CheckboxListTile], which combines a [ListTile] with a [Checkbox].
+///   * [RadioListTile], which combines a [ListTile] with a [Radio] button.
+///   * [SwitchListTile], which combines a [ListTile] with a [Switch].
+///   * [ExpansionTile], which combines a [ListTile] with a button that expands
+///     or collapses the tile to reveal or hide the children.
 class MaterialListTileControlAffinity extends $pb.GeneratedMessage {
   factory MaterialListTileControlAffinity() => create();
   MaterialListTileControlAffinity._() : super();
@@ -2688,7 +3447,13 @@ class MaterialListTileControlAffinity extends $pb.GeneratedMessage {
   static MaterialListTileControlAffinity? _defaultInstance;
 }
 
-/// package:flutter/src/material/list_tile.dart
+///  package:flutter/src/material/list_tile.dart
+///
+///  Defines the title font used for [ListTile] descendants of a [ListTileTheme].
+///
+///  List tiles that appear in a [Drawer] use the theme's [TextTheme.bodyLarge]
+///  text style, which is a little smaller than the theme's [TextTheme.titleMedium]
+///  text style, which is used by default.
 class MaterialListTileStyle extends $pb.GeneratedMessage {
   factory MaterialListTileStyle() => create();
   MaterialListTileStyle._() : super();
@@ -2721,7 +3486,20 @@ class MaterialListTileStyle extends $pb.GeneratedMessage {
   static MaterialListTileStyle? _defaultInstance;
 }
 
-/// package:flutter/src/material/list_tile.dart
+///  package:flutter/src/material/list_tile.dart
+///
+///  Defines how [ListTile.leading] and [ListTile.trailing] are
+///  vertically aligned relative to the [ListTile]'s titles
+///  ([ListTile.title] and [ListTile.subtitle]).
+///
+///  See also:
+///
+///   * [ListTile.titleAlignment], to configure the title alignment for an
+///     individual [ListTile].
+///   * [ListTileThemeData.titleAlignment], to configure the title alignment
+///     for all of the [ListTile]s under a [ListTileTheme].
+///   * [ThemeData.listTileTheme], to configure the [ListTileTheme]
+///     for an entire app.
 class MaterialListTileTitleAlignment extends $pb.GeneratedMessage {
   factory MaterialListTileTitleAlignment() => create();
   MaterialListTileTitleAlignment._() : super();
@@ -2754,7 +3532,32 @@ class MaterialListTileTitleAlignment extends $pb.GeneratedMessage {
   static MaterialListTileTitleAlignment? _defaultInstance;
 }
 
-/// package:flutter/src/material/theme_data.dart
+///  package:flutter/src/material/theme_data.dart
+///
+///  Configures the tap target and layout size of certain Material widgets.
+///
+///  Changing the value in [ThemeData.materialTapTargetSize] will affect the
+///  accessibility experience.
+///
+///  Some of the impacted widgets include:
+///
+///    * [FloatingActionButton], only the mini tap target size is increased.
+///    * [MaterialButton]
+///    * [OutlinedButton]
+///    * [TextButton]
+///    * [ElevatedButton]
+///    * [IconButton]
+///    * The time picker widget ([showTimePicker])
+///    * [SnackBar]
+///    * [Chip]
+///    * [RawChip]
+///    * [InputChip]
+///    * [ChoiceChip]
+///    * [FilterChip]
+///    * [ActionChip]
+///    * [Radio]
+///    * [Switch]
+///    * [Checkbox]
 class MaterialMaterialTapTargetSize extends $pb.GeneratedMessage {
   factory MaterialMaterialTapTargetSize() => create();
   MaterialMaterialTapTargetSize._() : super();
@@ -2787,7 +3590,15 @@ class MaterialMaterialTapTargetSize extends $pb.GeneratedMessage {
   static MaterialMaterialTapTargetSize? _defaultInstance;
 }
 
-/// package:flutter/src/material/material.dart
+///  package:flutter/src/material/material.dart
+///
+///  The various kinds of material in Material Design. Used to
+///  configure the default behavior of [Material] widgets.
+///
+///  See also:
+///
+///   * [Material], in particular [Material.type].
+///   * [kMaterialEdges]
 class MaterialMaterialType extends $pb.GeneratedMessage {
   factory MaterialMaterialType() => create();
   MaterialMaterialType._() : super();
@@ -2820,7 +3631,11 @@ class MaterialMaterialType extends $pb.GeneratedMessage {
   static MaterialMaterialType? _defaultInstance;
 }
 
-/// package:flutter/src/material/navigation_bar.dart
+///  package:flutter/src/material/navigation_bar.dart
+///
+///  Specifies when each [NavigationDestination]'s label should appear.
+///
+///  This is used to determine the behavior of [NavigationBar]'s destinations.
 class MaterialNavigationDestinationLabelBehavior extends $pb.GeneratedMessage {
   factory MaterialNavigationDestinationLabelBehavior() => create();
   MaterialNavigationDestinationLabelBehavior._() : super();
@@ -2853,7 +3668,13 @@ class MaterialNavigationDestinationLabelBehavior extends $pb.GeneratedMessage {
   static MaterialNavigationDestinationLabelBehavior? _defaultInstance;
 }
 
-/// package:flutter/src/material/navigation_rail.dart
+///  package:flutter/src/material/navigation_rail.dart
+///
+///  Defines the behavior of the labels of a [NavigationRail].
+///
+///  See also:
+///
+///    * [NavigationRail]
 class MaterialNavigationRailLabelType extends $pb.GeneratedMessage {
   factory MaterialNavigationRailLabelType() => create();
   MaterialNavigationRailLabelType._() : super();
@@ -2886,7 +3707,9 @@ class MaterialNavigationRailLabelType extends $pb.GeneratedMessage {
   static MaterialNavigationRailLabelType? _defaultInstance;
 }
 
-/// package:flutter/src/material/popup_menu_theme.dart
+///  package:flutter/src/material/popup_menu_theme.dart
+///
+///  Used to configure how the [PopupMenuButton] positions its popup menu.
 class MaterialPopupMenuPosition extends $pb.GeneratedMessage {
   factory MaterialPopupMenuPosition() => create();
   MaterialPopupMenuPosition._() : super();
@@ -2919,7 +3742,16 @@ class MaterialPopupMenuPosition extends $pb.GeneratedMessage {
   static MaterialPopupMenuPosition? _defaultInstance;
 }
 
-/// package:flutter/src/material/slider_theme.dart
+///  package:flutter/src/material/slider_theme.dart
+///
+///  Describes the conditions under which the value indicator on a [Slider]
+///  will be shown. Used with [SliderThemeData.showValueIndicator].
+///
+///  See also:
+///
+///   * [Slider], a Material Design slider widget.
+///   * [SliderThemeData], which describes the actual configuration of a slider
+///     theme.
 class MaterialShowValueIndicator extends $pb.GeneratedMessage {
   factory MaterialShowValueIndicator() => create();
   MaterialShowValueIndicator._() : super();
@@ -2952,7 +3784,9 @@ class MaterialShowValueIndicator extends $pb.GeneratedMessage {
   static MaterialShowValueIndicator? _defaultInstance;
 }
 
-/// package:flutter/src/material/slider.dart
+///  package:flutter/src/material/slider.dart
+///
+///  Possible ways for a user to interact with a [Slider].
 class MaterialSliderInteraction extends $pb.GeneratedMessage {
   factory MaterialSliderInteraction() => create();
   MaterialSliderInteraction._() : super();
@@ -2985,7 +3819,11 @@ class MaterialSliderInteraction extends $pb.GeneratedMessage {
   static MaterialSliderInteraction? _defaultInstance;
 }
 
-/// package:flutter/src/material/snack_bar_theme.dart
+///  package:flutter/src/material/snack_bar_theme.dart
+///
+///  Defines where a [SnackBar] should appear within a [Scaffold] and how its
+///  location should be adjusted when the scaffold also includes a
+///  [FloatingActionButton] or a [BottomNavigationBar].
 class MaterialSnackBarBehavior extends $pb.GeneratedMessage {
   factory MaterialSnackBarBehavior() => create();
   MaterialSnackBarBehavior._() : super();
@@ -3018,7 +3856,14 @@ class MaterialSnackBarBehavior extends $pb.GeneratedMessage {
   static MaterialSnackBarBehavior? _defaultInstance;
 }
 
-/// package:flutter/src/material/stepper.dart
+///  package:flutter/src/material/stepper.dart
+///
+///  The state of a [Step] which is used to control the style of the circle and
+///  text.
+///
+///  See also:
+///
+///   * [Step]
 class MaterialStepState extends $pb.GeneratedMessage {
   factory MaterialStepState() => create();
   MaterialStepState._() : super();
@@ -3051,7 +3896,9 @@ class MaterialStepState extends $pb.GeneratedMessage {
   static MaterialStepState? _defaultInstance;
 }
 
-/// package:flutter/src/material/stepper.dart
+///  package:flutter/src/material/stepper.dart
+///
+///  Defines the [Stepper]'s main axis.
 class MaterialStepperType extends $pb.GeneratedMessage {
   factory MaterialStepperType() => create();
   MaterialStepperType._() : super();
@@ -3084,7 +3931,9 @@ class MaterialStepperType extends $pb.GeneratedMessage {
   static MaterialStepperType? _defaultInstance;
 }
 
-/// package:flutter/src/material/flexible_space_bar.dart
+///  package:flutter/src/material/flexible_space_bar.dart
+///
+///  The stretching effect while the space bar stretches beyond its full size.
 class MaterialStretchMode extends $pb.GeneratedMessage {
   factory MaterialStretchMode() => create();
   MaterialStretchMode._() : super();
@@ -3117,7 +3966,16 @@ class MaterialStretchMode extends $pb.GeneratedMessage {
   static MaterialStretchMode? _defaultInstance;
 }
 
-/// package:flutter/src/material/tabs.dart
+///  package:flutter/src/material/tabs.dart
+///
+///  Defines how tabs are aligned horizontally in a [TabBar].
+///
+///  See also:
+///
+///    * [TabBar], which displays a row of tabs.
+///    * [TabBarView], which displays a widget for the currently selected tab.
+///    * [TabBar.tabAlignment], which defines the horizontal alignment of the
+///      tabs within the [TabBar].
 class MaterialTabAlignment extends $pb.GeneratedMessage {
   factory MaterialTabAlignment() => create();
   MaterialTabAlignment._() : super();
@@ -3150,7 +4008,16 @@ class MaterialTabAlignment extends $pb.GeneratedMessage {
   static MaterialTabAlignment? _defaultInstance;
 }
 
-/// package:flutter/src/material/tabs.dart
+///  package:flutter/src/material/tabs.dart
+///
+///  Defines how the bounds of the selected tab indicator are computed.
+///
+///  See also:
+///
+///   * [TabBar], which displays a row of tabs.
+///   * [TabBarView], which displays a widget for the currently selected tab.
+///   * [TabBar.indicator], which defines the appearance of the selected tab
+///     indicator relative to the tab's bounds.
 class MaterialTabBarIndicatorSize extends $pb.GeneratedMessage {
   factory MaterialTabBarIndicatorSize() => create();
   MaterialTabBarIndicatorSize._() : super();
@@ -3183,7 +4050,9 @@ class MaterialTabBarIndicatorSize extends $pb.GeneratedMessage {
   static MaterialTabBarIndicatorSize? _defaultInstance;
 }
 
-/// package:flutter/src/material/app.dart
+///  package:flutter/src/material/app.dart
+///
+///  Describes which theme will be used by [MaterialApp].
 class MaterialThemeMode extends $pb.GeneratedMessage {
   factory MaterialThemeMode() => create();
   MaterialThemeMode._() : super();
@@ -3216,7 +4085,19 @@ class MaterialThemeMode extends $pb.GeneratedMessage {
   static MaterialThemeMode? _defaultInstance;
 }
 
-/// package:flutter/src/material/time_picker.dart
+///  package:flutter/src/material/time_picker.dart
+///
+///  Interactive input mode of the time picker dialog.
+///
+///  In [TimePickerEntryMode.dial] mode, a clock dial is displayed and the user
+///  taps or drags the time they wish to select. In TimePickerEntryMode.input]
+///  mode, [TextField]s are displayed and the user types in the time they wish to
+///  select.
+///
+///  See also:
+///
+///  * [showTimePicker], a function that shows a [TimePickerDialog] and returns
+///    the selected time as a [Future].
 class MaterialTimePickerEntryMode extends $pb.GeneratedMessage {
   factory MaterialTimePickerEntryMode() => create();
   MaterialTimePickerEntryMode._() : super();
@@ -3249,7 +4130,19 @@ class MaterialTimePickerEntryMode extends $pb.GeneratedMessage {
   static MaterialTimePickerEntryMode? _defaultInstance;
 }
 
-/// package:flutter/src/material/tooltip_theme.dart
+///  package:flutter/src/material/tooltip_theme.dart
+///
+///  The method of interaction that will trigger a tooltip.
+///  Used in [Tooltip.triggerMode] and [TooltipThemeData.triggerMode].
+///
+///  On desktop, a tooltip will be shown as soon as a pointer hovers over
+///  the widget, regardless of the value of [Tooltip.triggerMode].
+///
+///  See also:
+///
+///    * [Tooltip.waitDuration], which defines the length of time that
+///      a pointer must hover over a tooltip's widget before the tooltip
+///      will be shown.
 class MaterialTooltipTriggerMode extends $pb.GeneratedMessage {
   factory MaterialTooltipTriggerMode() => create();
   MaterialTooltipTriggerMode._() : super();
@@ -3282,7 +4175,12 @@ class MaterialTooltipTriggerMode extends $pb.GeneratedMessage {
   static MaterialTooltipTriggerMode? _defaultInstance;
 }
 
-/// package:flutter/src/cupertino/text_field.dart
+///  package:flutter/src/cupertino/text_field.dart
+///
+///  Visibility of text field overlays based on the state of the current text entry.
+///
+///  Used to toggle the visibility behavior of the optional decorating widgets
+///  surrounding the [EditableText] such as the clear text button.
 class OverlayVisibilityMode extends $pb.GeneratedMessage {
   factory OverlayVisibilityMode() => create();
   OverlayVisibilityMode._() : super();

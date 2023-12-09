@@ -5,992 +5,3692 @@
 syntax = "proto3";
 
 // package:flutter/src/cupertino/interface_level.dart
+//
+// Indicates the visual level for a piece of content. Equivalent to `UIUserInterfaceLevel`
+// from `UIKit`.
+//
+// See also:
+//
+//  * `UIUserInterfaceLevel`, the UIKit equivalent: https://developer.apple.com/documentation/uikit/uiuserinterfacelevel.
 message CupertinoUserInterfaceLevelData {
   enum Enum {
+    // The level for your window's main content.
     BASE = 0;
+    // The level for content visually above [base].
     ELEVATED = 1;
   }
 }
 
 // dart:ui
+//
+// Algorithms to use when painting on the canvas.
+//
+// When drawing a shape or image onto a canvas, different algorithms can be
+// used to blend the pixels. The different values of [BlendMode] specify
+// different such algorithms.
+//
+// Each algorithm has two inputs, the _source_, which is the image being drawn,
+// and the _destination_, which is the image into which the source image is
+// being composited. The destination is often thought of as the _background_.
+// The source and destination both have four color channels, the red, green,
+// blue, and alpha channels. These are typically represented as numbers in the
+// range 0.0 to 1.0. The output of the algorithm also has these same four
+// channels, with values computed from the source and destination.
+//
+// The documentation of each value below describes how the algorithm works. In
+// each case, an image shows the output of blending a source image with a
+// destination image. In the images below, the destination is represented by an
+// image with horizontal lines and an opaque landscape photograph, and the
+// source is represented by an image with vertical lines (the same lines but
+// rotated) and a bird clip-art image. The [src] mode shows only the source
+// image, and the [dst] mode shows only the destination image. In the
+// documentation below, the transparency is illustrated by a checkerboard
+// pattern. The [clear] mode drops both the source and destination, resulting
+// in an output that is entirely transparent (illustrated by a solid
+// checkerboard pattern).
+//
+// The horizontal and vertical bars in these images show the red, green, and
+// blue channels with varying opacity levels, then all three color channels
+// together with those same varying opacity levels, then all three color
+// channels set to zero with those varying opacity levels, then two bars showing
+// a red/green/blue repeating gradient, the first with full opacity and the
+// second with partial opacity, and finally a bar with the three color channels
+// set to zero but the opacity varying in a repeating gradient.
+//
+// ## Application to the [Canvas] API
+//
+// When using [Canvas.saveLayer] and [Canvas.restore], the blend mode of the
+// [Paint] given to the [Canvas.saveLayer] will be applied when
+// [Canvas.restore] is called. Each call to [Canvas.saveLayer] introduces a new
+// layer onto which shapes and images are painted; when [Canvas.restore] is
+// called, that layer is then composited onto the parent layer, with the source
+// being the most-recently-drawn shapes and images, and the destination being
+// the parent layer. (For the first [Canvas.saveLayer] call, the parent layer
+// is the canvas itself.)
+//
+// See also:
+//
+//  * [Paint.blendMode], which uses [BlendMode] to define the compositing
+//    strategy.
 message DartBlendMode {
   enum Enum {
+    // Drop both the source and destination images, leaving nothing.
+    //
+    // This corresponds to the "clear" Porter-Duff operator.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_clear.png)
     CLEAR = 0;
+    // Drop the destination image, only paint the source image.
+    //
+    // Conceptually, the destination is first cleared, then the source image is
+    // painted.
+    //
+    // This corresponds to the "Copy" Porter-Duff operator.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_src.png)
     SRC = 1;
+    // Drop the source image, only paint the destination image.
+    //
+    // Conceptually, the source image is discarded, leaving the destination
+    // untouched.
+    //
+    // This corresponds to the "Destination" Porter-Duff operator.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_dst.png)
     DST = 2;
+    // Composite the source image over the destination image.
+    //
+    // This is the default value. It represents the most intuitive case, where
+    // shapes are painted on top of what is below, with transparent areas showing
+    // the destination layer.
+    //
+    // This corresponds to the "Source over Destination" Porter-Duff operator,
+    // also known as the Painter's Algorithm.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_srcOver.png)
     SRC_OVER = 3;
+    // Composite the source image under the destination image.
+    //
+    // This is the opposite of [srcOver].
+    //
+    // This corresponds to the "Destination over Source" Porter-Duff operator.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_dstOver.png)
+    //
+    // This is useful when the source image should have been painted before the
+    // destination image, but could not be.
     DST_OVER = 4;
+    // Show the source image, but only where the two images overlap. The
+    // destination image is not rendered, it is treated merely as a mask. The
+    // color channels of the destination are ignored, only the opacity has an
+    // effect.
+    //
+    // To show the destination image instead, consider [dstIn].
+    //
+    // To reverse the semantic of the mask (only showing the source where the
+    // destination is absent, rather than where it is present), consider
+    // [srcOut].
+    //
+    // This corresponds to the "Source in Destination" Porter-Duff operator.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_srcIn.png)
     SRC_IN = 5;
+    // Show the destination image, but only where the two images overlap. The
+    // source image is not rendered, it is treated merely as a mask. The color
+    // channels of the source are ignored, only the opacity has an effect.
+    //
+    // To show the source image instead, consider [srcIn].
+    //
+    // To reverse the semantic of the mask (only showing the source where the
+    // destination is present, rather than where it is absent), consider [dstOut].
+    //
+    // This corresponds to the "Destination in Source" Porter-Duff operator.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_dstIn.png)
     DST_IN = 6;
+    // Show the source image, but only where the two images do not overlap. The
+    // destination image is not rendered, it is treated merely as a mask. The color
+    // channels of the destination are ignored, only the opacity has an effect.
+    //
+    // To show the destination image instead, consider [dstOut].
+    //
+    // To reverse the semantic of the mask (only showing the source where the
+    // destination is present, rather than where it is absent), consider [srcIn].
+    //
+    // This corresponds to the "Source out Destination" Porter-Duff operator.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_srcOut.png)
     SRC_OUT = 7;
+    // Show the destination image, but only where the two images do not overlap. The
+    // source image is not rendered, it is treated merely as a mask. The color
+    // channels of the source are ignored, only the opacity has an effect.
+    //
+    // To show the source image instead, consider [srcOut].
+    //
+    // To reverse the semantic of the mask (only showing the destination where the
+    // source is present, rather than where it is absent), consider [dstIn].
+    //
+    // This corresponds to the "Destination out Source" Porter-Duff operator.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_dstOut.png)
     DST_OUT = 8;
+    // Composite the source image over the destination image, but only where it
+    // overlaps the destination.
+    //
+    // This corresponds to the "Source atop Destination" Porter-Duff operator.
+    //
+    // This is essentially the [srcOver] operator, but with the output's opacity
+    // channel being set to that of the destination image instead of being a
+    // combination of both image's opacity channels.
+    //
+    // For a variant with the destination on top instead of the source, see
+    // [dstATop].
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_srcATop.png)
     SRC_A_TOP = 9;
+    // Composite the destination image over the source image, but only where it
+    // overlaps the source.
+    //
+    // This corresponds to the "Destination atop Source" Porter-Duff operator.
+    //
+    // This is essentially the [dstOver] operator, but with the output's opacity
+    // channel being set to that of the source image instead of being a
+    // combination of both image's opacity channels.
+    //
+    // For a variant with the source on top instead of the destination, see
+    // [srcATop].
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_dstATop.png)
     DST_A_TOP = 10;
+    // Apply a bitwise `xor` operator to the source and destination images. This
+    // leaves transparency where they would overlap.
+    //
+    // This corresponds to the "Source xor Destination" Porter-Duff operator.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_xor.png)
     XOR = 11;
+    // Sum the components of the source and destination images.
+    //
+    // Transparency in a pixel of one of the images reduces the contribution of
+    // that image to the corresponding output pixel, as if the color of that
+    // pixel in that image was darker.
+    //
+    // This corresponds to the "Source plus Destination" Porter-Duff operator.
+    //
+    // This is the right blend mode for cross-fading between two images. Consider
+    // two images A and B, and an interpolation time variable _t_ (from 0.0 to
+    // 1.0). To cross fade between them, A should be drawn with opacity 1.0 - _t_
+    // into a new layer using [BlendMode.srcOver], and B should be drawn on top
+    // of it, at opacity _t_, into the same layer, using [BlendMode.plus].
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_plus.png)
     PLUS = 12;
+    // Multiply the color components of the source and destination images.
+    //
+    // This can only result in the same or darker colors (multiplying by white,
+    // 1.0, results in no change; multiplying by black, 0.0, results in black).
+    //
+    // When compositing two opaque images, this has similar effect to overlapping
+    // two transparencies on a projector.
+    //
+    // For a variant that also multiplies the alpha channel, consider [multiply].
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_modulate.png)
+    //
+    // See also:
+    //
+    //  * [screen], which does a similar computation but inverted.
+    //  * [overlay], which combines [modulate] and [screen] to favor the
+    //    destination image.
+    //  * [hardLight], which combines [modulate] and [screen] to favor the
+    //    source image.
     MODULATE = 13;
+    // Multiply the inverse of the components of the source and destination
+    // images, and inverse the result.
+    //
+    // Inverting the components means that a fully saturated channel (opaque
+    // white) is treated as the value 0.0, and values normally treated as 0.0
+    // (black, transparent) are treated as 1.0.
+    //
+    // This is essentially the same as [modulate] blend mode, but with the values
+    // of the colors inverted before the multiplication and the result being
+    // inverted back before rendering.
+    //
+    // This can only result in the same or lighter colors (multiplying by black,
+    // 1.0, results in no change; multiplying by white, 0.0, results in white).
+    // Similarly, in the alpha channel, it can only result in more opaque colors.
+    //
+    // This has similar effect to two projectors displaying their images on the
+    // same screen simultaneously.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_screen.png)
+    //
+    // See also:
+    //
+    //  * [modulate], which does a similar computation but without inverting the
+    //    values.
+    //  * [overlay], which combines [modulate] and [screen] to favor the
+    //    destination image.
+    //  * [hardLight], which combines [modulate] and [screen] to favor the
+    //    source image.
     SCREEN = 14;
+    // Multiply the components of the source and destination images after
+    // adjusting them to favor the destination.
+    //
+    // Specifically, if the destination value is smaller, this multiplies it with
+    // the source value, whereas is the source value is smaller, it multiplies
+    // the inverse of the source value with the inverse of the destination value,
+    // then inverts the result.
+    //
+    // Inverting the components means that a fully saturated channel (opaque
+    // white) is treated as the value 0.0, and values normally treated as 0.0
+    // (black, transparent) are treated as 1.0.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_overlay.png)
+    //
+    // See also:
+    //
+    //  * [modulate], which always multiplies the values.
+    //  * [screen], which always multiplies the inverses of the values.
+    //  * [hardLight], which is similar to [overlay] but favors the source image
+    //    instead of the destination image.
     OVERLAY = 15;
+    // Composite the source and destination image by choosing the lowest value
+    // from each color channel.
+    //
+    // The opacity of the output image is computed in the same way as for
+    // [srcOver].
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_darken.png)
     DARKEN = 16;
+    // Composite the source and destination image by choosing the highest value
+    // from each color channel.
+    //
+    // The opacity of the output image is computed in the same way as for
+    // [srcOver].
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_lighten.png)
     LIGHTEN = 17;
+    // Divide the destination by the inverse of the source.
+    //
+    // Inverting the components means that a fully saturated channel (opaque
+    // white) is treated as the value 0.0, and values normally treated as 0.0
+    // (black, transparent) are treated as 1.0.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_colorDodge.png)
     COLOR_DODGE = 18;
+    // Divide the inverse of the destination by the source, and inverse the result.
+    //
+    // Inverting the components means that a fully saturated channel (opaque
+    // white) is treated as the value 0.0, and values normally treated as 0.0
+    // (black, transparent) are treated as 1.0.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_colorBurn.png)
     COLOR_BURN = 19;
+    // Multiply the components of the source and destination images after
+    // adjusting them to favor the source.
+    //
+    // Specifically, if the source value is smaller, this multiplies it with the
+    // destination value, whereas is the destination value is smaller, it
+    // multiplies the inverse of the destination value with the inverse of the
+    // source value, then inverts the result.
+    //
+    // Inverting the components means that a fully saturated channel (opaque
+    // white) is treated as the value 0.0, and values normally treated as 0.0
+    // (black, transparent) are treated as 1.0.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_hardLight.png)
+    //
+    // See also:
+    //
+    //  * [modulate], which always multiplies the values.
+    //  * [screen], which always multiplies the inverses of the values.
+    //  * [overlay], which is similar to [hardLight] but favors the destination
+    //    image instead of the source image.
     HARD_LIGHT = 20;
+    // Use [colorDodge] for source values below 0.5 and [colorBurn] for source
+    // values above 0.5.
+    //
+    // This results in a similar but softer effect than [overlay].
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_softLight.png)
+    //
+    // See also:
+    //
+    //  * [color], which is a more subtle tinting effect.
     SOFT_LIGHT = 21;
+    // Subtract the smaller value from the bigger value for each channel.
+    //
+    // Compositing black has no effect; compositing white inverts the colors of
+    // the other image.
+    //
+    // The opacity of the output image is computed in the same way as for
+    // [srcOver].
+    //
+    // The effect is similar to [exclusion] but harsher.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_difference.png)
     DIFFERENCE = 22;
+    // Subtract double the product of the two images from the sum of the two
+    // images.
+    //
+    // Compositing black has no effect; compositing white inverts the colors of
+    // the other image.
+    //
+    // The opacity of the output image is computed in the same way as for
+    // [srcOver].
+    //
+    // The effect is similar to [difference] but softer.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_exclusion.png)
     EXCLUSION = 23;
+    // Multiply the components of the source and destination images, including
+    // the alpha channel.
+    //
+    // This can only result in the same or darker colors (multiplying by white,
+    // 1.0, results in no change; multiplying by black, 0.0, results in black).
+    //
+    // Since the alpha channel is also multiplied, a fully-transparent pixel
+    // (opacity 0.0) in one image results in a fully transparent pixel in the
+    // output. This is similar to [dstIn], but with the colors combined.
+    //
+    // For a variant that multiplies the colors but does not multiply the alpha
+    // channel, consider [modulate].
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_multiply.png)
     MULTIPLY = 24;
+    // Take the hue of the source image, and the saturation and luminosity of the
+    // destination image.
+    //
+    // The effect is to tint the destination image with the source image.
+    //
+    // The opacity of the output image is computed in the same way as for
+    // [srcOver]. Regions that are entirely transparent in the source image take
+    // their hue from the destination.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_hue.png)
+    //
+    // See also:
+    //
+    //  * [color], which is a similar but stronger effect as it also applies the
+    //    saturation of the source image.
+    //  * [HSVColor], which allows colors to be expressed using Hue rather than
+    //    the red/green/blue channels of [Color].
     HUE = 25;
+    // Take the saturation of the source image, and the hue and luminosity of the
+    // destination image.
+    //
+    // The opacity of the output image is computed in the same way as for
+    // [srcOver]. Regions that are entirely transparent in the source image take
+    // their saturation from the destination.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_hue.png)
+    //
+    // See also:
+    //
+    //  * [color], which also applies the hue of the source image.
+    //  * [luminosity], which applies the luminosity of the source image to the
+    //    destination.
     SATURATION = 26;
+    // Take the hue and saturation of the source image, and the luminosity of the
+    // destination image.
+    //
+    // The effect is to tint the destination image with the source image.
+    //
+    // The opacity of the output image is computed in the same way as for
+    // [srcOver]. Regions that are entirely transparent in the source image take
+    // their hue and saturation from the destination.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_color.png)
+    //
+    // See also:
+    //
+    //  * [hue], which is a similar but weaker effect.
+    //  * [softLight], which is a similar tinting effect but also tints white.
+    //  * [saturation], which only applies the saturation of the source image.
     COLOR = 27;
+    // Take the luminosity of the source image, and the hue and saturation of the
+    // destination image.
+    //
+    // The opacity of the output image is computed in the same way as for
+    // [srcOver]. Regions that are entirely transparent in the source image take
+    // their luminosity from the destination.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/blend_mode_luminosity.png)
+    //
+    // See also:
+    //
+    //  * [saturation], which applies the saturation of the source image to the
+    //    destination.
+    //  * [ImageFilter.blur], which can be used with [BackdropFilter] for a
+    //    related effect.
     LUMINOSITY = 28;
   }
 }
 
 // dart:ui
+//
+// Styles to use for blurs in [MaskFilter] objects.
 message DartBlurStyle {
   enum Enum {
+    // Fuzzy inside and outside. This is useful for painting shadows that are
+    // offset from the shape that ostensibly is casting the shadow.
     NORMAL = 0;
+    // Solid inside, fuzzy outside. This corresponds to drawing the shape, and
+    // additionally drawing the blur. This can make objects appear brighter,
+    // maybe even as if they were fluorescent.
     SOLID = 1;
+    // Nothing inside, fuzzy outside. This is useful for painting shadows for
+    // partially transparent shapes, when they are painted separately but without
+    // an offset, so that the shadow doesn't paint below the shape.
     OUTER = 2;
+    // Fuzzy inside, nothing outside. This can make shapes appear to be lit from
+    // within.
     INNER = 3;
   }
 }
 
 // dart:ui
+//
+// Defines various ways to vertically bound the boxes returned by
+// [Paragraph.getBoxesForRange].
+//
+// See [BoxWidthStyle] for a similar property to control width.
 message DartBoxHeightStyle {
   enum Enum {
+    // Provide tight bounding boxes that fit heights per run. This style may result
+    // in uneven bounding boxes that do not nicely connect with adjacent boxes.
     TIGHT = 0;
+    // The height of the boxes will be the maximum height of all runs in the
+    // line. All boxes in the same line will be the same height.
+    //
+    // This does not guarantee that the boxes will cover the entire vertical height of the line
+    // when there is additional line spacing.
+    //
+    // See [BoxHeightStyle.includeLineSpacingTop], [BoxHeightStyle.includeLineSpacingMiddle],
+    // and [BoxHeightStyle.includeLineSpacingBottom] for styles that will cover
+    // the entire line.
     MAX = 1;
+    // Extends the top and bottom edge of the bounds to fully cover any line
+    // spacing.
+    //
+    // The top and bottom of each box will cover half of the
+    // space above and half of the space below the line.
+    //
+    // {@template dart.ui.boxHeightStyle.includeLineSpacing}
+    // The top edge of each line should be the same as the bottom edge
+    // of the line above. There should be no gaps in vertical coverage given any
+    // amount of line spacing. Line spacing is not included above the first line
+    // and below the last line due to no additional space present there.
+    // {@endtemplate}
     INCLUDE_LINE_SPACING_MIDDLE = 2;
+    // Extends the top edge of the bounds to fully cover any line spacing.
+    //
+    // The line spacing will be added to the top of the box.
+    //
+    // {@macro dart.ui.boxHeightStyle.includeLineSpacing}
     INCLUDE_LINE_SPACING_TOP = 3;
+    // Extends the bottom edge of the bounds to fully cover any line spacing.
+    //
+    // The line spacing will be added to the bottom of the box.
+    //
+    // {@macro dart.ui.boxHeightStyle.includeLineSpacing}
     INCLUDE_LINE_SPACING_BOTTOM = 4;
+    // Calculate box heights based on the metrics of this paragraph's [StrutStyle].
+    //
+    // Boxes based on the strut will have consistent heights throughout the
+    // entire paragraph.  The top edge of each line will align with the bottom
+    // edge of the previous line.  It is possible for glyphs to extend outside
+    // these boxes.
     STRUT = 5;
   }
 }
 
 // dart:ui
+//
+// Defines various ways to horizontally bound the boxes returned by
+// [Paragraph.getBoxesForRange].
+//
+// See [BoxHeightStyle] for a similar property to control height.
 message DartBoxWidthStyle {
   enum Enum {
+    // Provide tight bounding boxes that fit widths to the runs of each line
+    // independently.
     TIGHT = 0;
+    // Adds up to two additional boxes as needed at the beginning and/or end
+    // of each line so that the widths of the boxes in line are the same width
+    // as the widest line in the paragraph.
+    //
+    // The additional boxes on each line are only added when the relevant box
+    // at the relevant edge of that line does not span the maximum width of
+    // the paragraph.
     MAX = 1;
   }
 }
 
 // dart:ui
+//
+// Describes the contrast of a theme or color palette.
 message DartBrightness {
   enum Enum {
+    // The color is dark and will require a light text color to achieve readable
+    // contrast.
+    //
+    // For example, the color might be dark grey, requiring white text.
     DARK = 0;
+    // The color is light and will require a dark text color to achieve readable
+    // contrast.
+    //
+    // For example, the color might be bright white, requiring black text.
     LIGHT = 1;
   }
 }
 
 // dart:ui
+//
+// Different ways to clip a widget's content.
 message DartClip {
   enum Enum {
+    // No clip at all.
+    //
+    // This is the default option for most widgets: if the content does not
+    // overflow the widget boundary, don't pay any performance cost for clipping.
+    //
+    // If the content does overflow, please explicitly specify the following
+    // [Clip] options:
+    //  * [hardEdge], which is the fastest clipping, but with lower fidelity.
+    //  * [antiAlias], which is a little slower than [hardEdge], but with smoothed edges.
+    //  * [antiAliasWithSaveLayer], which is much slower than [antiAlias], and should
+    //    rarely be used.
     NONE = 0;
+    // Clip, but do not apply anti-aliasing.
+    //
+    // This mode enables clipping, but curves and non-axis-aligned straight lines will be
+    // jagged as no effort is made to anti-alias.
+    //
+    // Faster than other clipping modes, but slower than [none].
+    //
+    // This is a reasonable choice when clipping is needed, if the container is an axis-
+    // aligned rectangle or an axis-aligned rounded rectangle with very small corner radii.
+    //
+    // See also:
+    //
+    //  * [antiAlias], which is more reasonable when clipping is needed and the shape is not
+    //    an axis-aligned rectangle.
     HARD_EDGE = 1;
+    // Clip with anti-aliasing.
+    //
+    // This mode has anti-aliased clipping edges to achieve a smoother look.
+    //
+    // It' s much faster than [antiAliasWithSaveLayer], but slower than [hardEdge].
+    //
+    // This will be the common case when dealing with circles and arcs.
+    //
+    // Different from [hardEdge] and [antiAliasWithSaveLayer], this clipping may have
+    // bleeding edge artifacts.
+    // (See https://fiddle.skia.org/c/21cb4c2b2515996b537f36e7819288ae for an example.)
+    //
+    // See also:
+    //
+    //  * [hardEdge], which is a little faster, but with lower fidelity.
+    //  * [antiAliasWithSaveLayer], which is much slower, but can avoid the
+    //    bleeding edges if there's no other way.
+    //  * [Paint.isAntiAlias], which is the anti-aliasing switch for general draw operations.
     ANTI_ALIAS = 2;
+    // Clip with anti-aliasing and saveLayer immediately following the clip.
+    //
+    // This mode not only clips with anti-aliasing, but also allocates an offscreen
+    // buffer. All subsequent paints are carried out on that buffer before finally
+    // being clipped and composited back.
+    //
+    // This is very slow. It has no bleeding edge artifacts (that [antiAlias] has)
+    // but it changes the semantics as an offscreen buffer is now introduced.
+    // (See https://github.com/flutter/flutter/issues/18057#issuecomment-394197336
+    // for a difference between paint without saveLayer and paint with saveLayer.)
+    //
+    // This will be only rarely needed. One case where you might need this is if
+    // you have an image overlaid on a very different background color. In these
+    // cases, consider whether you can avoid overlaying multiple colors in one
+    // spot (e.g. by having the background color only present where the image is
+    // absent). If you can, [antiAlias] would be fine and much faster.
+    //
+    // See also:
+    //
+    //  * [antiAlias], which is much faster, and has similar clipping results.
     ANTI_ALIAS_WITH_SAVE_LAYER = 3;
   }
 }
 
 // dart:ui
+//
+// State of the display feature, which contains information about the posture
+// for foldable features.
+//
+// The posture is the shape made by the parts of the flexible screen or
+// physical screen panels. They are inspired by and similar to
+// [Android Postures](https://developer.android.com/guide/topics/ui/foldables#postures).
+//
+// * For [DisplayFeatureType.fold]s & [DisplayFeatureType.hinge]s, the state is
+//   the posture.
+// * For [DisplayFeatureType.cutout]s, the state is not used and has the
+// [DisplayFeatureState.unknown] value.
 message DartDisplayFeatureState {
   enum Enum {
+    // The display feature is a [DisplayFeatureType.cutout] or this state is new
+    // and not yet known to Flutter.
     UNKNOWN = 0;
+    // The foldable device is completely open.
+    //
+    // The screen space that is presented to the user is flat.
     POSTURE_FLAT = 1;
+    // Fold angle is in an intermediate position between opened and closed state.
+    //
+    // There is a non-flat angle between parts of the flexible screen or between
+    // physical screen panels such that the screens start to face each other.
     POSTURE_HALF_OPENED = 2;
   }
 }
 
 // dart:ui
+//
+// Type of [DisplayFeature], describing the [DisplayFeature] behaviour and if
+// it obstructs the display.
+//
+// Some types of [DisplayFeature], like [DisplayFeatureType.fold], can be
+// reported without actually impeding drawing on the screen. They are useful
+// for knowing where the display is bent or has a crease. The
+// [DisplayFeature.bounds] can be 0-width in such cases.
+//
+// The shape formed by the screens for types [DisplayFeatureType.fold] and
+// [DisplayFeatureType.hinge] is called the posture and is exposed in
+// [DisplayFeature.state]. For example, the [DisplayFeatureState.postureFlat] posture
+// means the screens form a flat surface.
+//
+// ![Device with a hinge display feature](https://flutter.github.io/assets-for-api-docs/assets/hardware/display_feature_hinge.png)
+//
+// ![Device with a fold display feature](https://flutter.github.io/assets-for-api-docs/assets/hardware/display_feature_fold.png)
+//
+// ![Device with a cutout display feature](https://flutter.github.io/assets-for-api-docs/assets/hardware/display_feature_cutout.png)
 message DartDisplayFeatureType {
   enum Enum {
+    // [DisplayFeature] type is new and not yet known to Flutter.
     UNKNOWN = 0;
+    // A fold in the flexible screen without a physical gap.
+    //
+    // The bounds for this display feature type indicate where the display makes a crease.
     FOLD = 1;
+    // A physical separation with a hinge that allows two display panels to fold.
     HINGE = 2;
+    // A non-displaying area of the screen, usually housing cameras or sensors.
     CUTOUT = 3;
   }
 }
 
 // dart:ui
+//
+// Quality levels for image sampling in [ImageFilter] and [Shader] objects that sample
+// images and for [Canvas] operations that render images.
+//
+// When scaling up typically the quality is lowest at [none], higher at [low] and [medium],
+// and for very large scale factors (over 10x) the highest at [high].
+//
+// When scaling down, [medium] provides the best quality especially when scaling an
+// image to less than half its size or for animating the scale factor between such
+// reductions. Otherwise, [low] and [high] provide similar effects for reductions of
+// between 50% and 100% but the image may lose detail and have dropouts below 50%.
+//
+// To get high quality when scaling images up and down, or when the scale is
+// unknown, [medium] is typically a good balanced choice.
+//
+// ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/filter_quality.png)
+//
+// When building for the web using the `--web-renderer=html` option, filter
+// quality has no effect. All images are rendered using the respective
+// browser's default setting.
+//
+// See also:
+//
+//  * [Paint.filterQuality], which is used to pass [FilterQuality] to the
+//    engine while using drawImage calls on a [Canvas].
+//  * [ImageShader].
+//  * [ImageFilter.matrix].
+//  * [Canvas.drawImage].
+//  * [Canvas.drawImageRect].
+//  * [Canvas.drawImageNine].
+//  * [Canvas.drawAtlas].
 message DartFilterQuality {
   enum Enum {
+    // The fastest filtering method, albeit also the lowest quality.
+    //
+    // This value results in a "Nearest Neighbor" algorithm which just
+    // repeats or eliminates pixels as an image is scaled up or down.
     NONE = 0;
+    // Better quality than [none], faster than [medium].
+    //
+    // This value results in a "Bilinear" algorithm which smoothly
+    // interpolates between pixels in an image.
     LOW = 1;
+    // The best all around filtering method that is only worse than [high]
+    // at extremely large scale factors.
+    //
+    // This value improves upon the "Bilinear" algorithm specified by [low]
+    // by utilizing a Mipmap that pre-computes high quality lower resolutions
+    // of the image at half (and quarter and eighth, etc.) sizes and then
+    // blends between those to prevent loss of detail at small scale sizes.
+    //
+    // {@template dart.ui.filterQuality.seeAlso}
+    // See also:
+    //
+    //  * [FilterQuality] class-level documentation that goes into detail about
+    //    relative qualities of the constant values.
+    // {@endtemplate}
     MEDIUM = 2;
+    // Best possible quality when scaling up images by scale factors larger than
+    // 5-10x.
+    //
+    // When images are scaled down, this can be worse than [medium] for scales
+    // smaller than 0.5x, or when animating the scale factor.
+    //
+    // This option is also the slowest.
+    //
+    // This value results in a standard "Bicubic" algorithm which uses a 3rd order
+    // equation to smooth the abrupt transitions between pixels while preserving
+    // some of the sense of an edge and avoiding sharp peaks in the result.
+    //
+    // {@macro dart.ui.filterQuality.seeAlso}
     HIGH = 3;
   }
 }
 
 // dart:ui
+//
+// Whether to use the italic type variation of glyphs in the font.
+//
+// Some modern fonts allow this to be selected in a more fine-grained manner.
+// See [FontVariation.italic] for details.
+//
+// Italic type is distinct from slanted glyphs. To control the slant of a
+// glyph, consider the [FontVariation.slant] font feature.
 message DartFontStyle {
   enum Enum {
+    // Use the upright ("Roman") glyphs.
     NORMAL = 0;
+    // Use glyphs that have a more pronounced angle and typically a cursive style
+    // ("italic type").
     ITALIC = 1;
   }
 }
 
 // dart:ui
+//
+// Where to vertically align the placeholder relative to the surrounding text.
+//
+// Used by [ParagraphBuilder.addPlaceholder].
 message DartPlaceholderAlignment {
   enum Enum {
+    // Match the baseline of the placeholder with the baseline.
+    //
+    // The [TextBaseline] to use must be specified and non-null when using this
+    // alignment mode.
     BASELINE = 0;
+    // Align the bottom edge of the placeholder with the baseline such that the
+    // placeholder sits on top of the baseline.
+    //
+    // The [TextBaseline] to use must be specified and non-null when using this
+    // alignment mode.
     ABOVE_BASELINE = 1;
+    // Align the top edge of the placeholder with the baseline specified
+    // such that the placeholder hangs below the baseline.
+    //
+    // The [TextBaseline] to use must be specified and non-null when using this
+    // alignment mode.
     BELOW_BASELINE = 2;
+    // Align the top edge of the placeholder with the top edge of the text.
+    //
+    // When the placeholder is very tall, the extra space will hang from
+    // the top and extend through the bottom of the line.
     TOP = 3;
+    // Align the bottom edge of the placeholder with the bottom edge of the text.
+    //
+    // When the placeholder is very tall, the extra space will rise from the
+    // bottom and extend through the top of the line.
     BOTTOM = 4;
+    // Align the middle of the placeholder with the middle of the text.
+    //
+    // When the placeholder is very tall, the extra space will grow equally
+    // from the top and bottom of the line.
     MIDDLE = 5;
   }
 }
 
 // dart:ui
+//
+// Styles to use for line endings.
+//
+// See also:
+//
+//  * [Paint.strokeCap] for how this value is used.
+//  * [StrokeJoin] for the different kinds of line segment joins.
 message DartStrokeCap {
   enum Enum {
+    // Begin and end contours with a flat edge and no extension.
+    //
+    // ![A butt cap ends line segments with a square end that stops at the end of
+    // the line segment.](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/butt_cap.png)
+    //
+    // Compare to the [square] cap, which has the same shape, but extends past
+    // the end of the line by half a stroke width.
     BUTT = 0;
+    // Begin and end contours with a semi-circle extension.
+    //
+    // ![A round cap adds a rounded end to the line segment that protrudes
+    // by one half of the thickness of the line (which is the radius of the cap)
+    // past the end of the segment.](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/round_cap.png)
+    //
+    // The cap is colored in the diagram above to highlight it: in normal use it
+    // is the same color as the line.
     ROUND = 1;
+    // Begin and end contours with a half square extension. This is
+    // similar to extending each contour by half the stroke width (as
+    // given by [Paint.strokeWidth]).
+    //
+    // ![A square cap has a square end that effectively extends the line length
+    // by half of the stroke width.](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/square_cap.png)
+    //
+    // The cap is colored in the diagram above to highlight it: in normal use it
+    // is the same color as the line.
+    //
+    // Compare to the [butt] cap, which has the same shape, but doesn't extend
+    // past the end of the line.
     SQUARE = 2;
   }
 }
 
 // dart:ui
+//
+// A way to disambiguate a [TextPosition] when its offset could match two
+// different locations in the rendered string.
+//
+// For example, at an offset where the rendered text wraps, there are two
+// visual positions that the offset could represent: one prior to the line
+// break (at the end of the first line) and one after the line break (at the
+// start of the second line). A text affinity disambiguates between these two
+// cases.
+//
+// This affects only line breaks caused by wrapping, not explicit newline
+// characters. For newline characters, the position is fully specified by the
+// offset alone, and there is no ambiguity.
+//
+// [TextAffinity] also affects bidirectional text at the interface between LTR
+// and RTL text. Consider the following string, where the lowercase letters
+// will be displayed as LTR and the uppercase letters RTL: "helloHELLO".  When
+// rendered, the string would appear visually as "helloOLLEH".  An offset of 5
+// would be ambiguous without a corresponding [TextAffinity].  Looking at the
+// string in code, the offset represents the position just after the "o" and
+// just before the "H".  When rendered, this offset could be either in the
+// middle of the string to the right of the "o" or at the end of the string to
+// the right of the "H".
 message DartTextAffinity {
   enum Enum {
+    // The position has affinity for the upstream side of the text position, i.e.
+    // in the direction of the beginning of the string.
+    //
+    // In the example of an offset at the place where text is wrapping, upstream
+    // indicates the end of the first line.
+    //
+    // In the bidirectional text example "helloHELLO", an offset of 5 with
+    // [TextAffinity] upstream would appear in the middle of the rendered text,
+    // just to the right of the "o". See the definition of [TextAffinity] for the
+    // full example.
     UPSTREAM = 0;
+    // The position has affinity for the downstream side of the text position,
+    // i.e. in the direction of the end of the string.
+    //
+    // In the example of an offset at the place where text is wrapping,
+    // downstream indicates the beginning of the second line.
+    //
+    // In the bidirectional text example "helloHELLO", an offset of 5 with
+    // [TextAffinity] downstream would appear at the end of the rendered text,
+    // just to the right of the "H". See the definition of [TextAffinity] for the
+    // full example.
     DOWNSTREAM = 1;
   }
 }
 
 // dart:ui
+//
+// Whether and how to align text horizontally.
 message DartTextAlign {
   enum Enum {
+    // Align the text on the left edge of the container.
     LEFT = 0;
+    // Align the text on the right edge of the container.
     RIGHT = 1;
+    // Align the text in the center of the container.
     CENTER = 2;
+    // Stretch lines of text that end with a soft line break to fill the width of
+    // the container.
+    //
+    // Lines that end with hard line breaks are aligned towards the [start] edge.
     JUSTIFY = 3;
+    // Align the text on the leading edge of the container.
+    //
+    // For left-to-right text ([TextDirection.ltr]), this is the left edge.
+    //
+    // For right-to-left text ([TextDirection.rtl]), this is the right edge.
     START = 4;
+    // Align the text on the trailing edge of the container.
+    //
+    // For left-to-right text ([TextDirection.ltr]), this is the right edge.
+    //
+    // For right-to-left text ([TextDirection.rtl]), this is the left edge.
     END = 5;
   }
 }
 
 // dart:ui
+//
+// A horizontal line used for aligning text.
 message DartTextBaseline {
   enum Enum {
+    // The horizontal line used to align the bottom of glyphs for alphabetic characters.
     ALPHABETIC = 0;
+    // The horizontal line used to align ideographic characters.
     IDEOGRAPHIC = 1;
   }
 }
 
 // dart:ui
+//
+// The style in which to draw a text decoration
 message DartTextDecorationStyle {
   enum Enum {
+    // Draw a solid line
     SOLID = 0;
+    // Draw two lines
     DOUBLE = 1;
+    // Draw a dotted line
     DOTTED = 2;
+    // Draw a dashed line
     DASHED = 3;
+    // Draw a sinusoidal line
     WAVY = 4;
   }
 }
 
 // dart:ui
+//
+// A direction in which text flows.
+//
+// Some languages are written from the left to the right (for example, English,
+// Tamil, or Chinese), while others are written from the right to the left (for
+// example Aramaic, Hebrew, or Urdu). Some are also written in a mixture, for
+// example Arabic is mostly written right-to-left, with numerals written
+// left-to-right.
+//
+// The text direction must be provided to APIs that render text or lay out
+// boxes horizontally, so that they can determine which direction to start in:
+// either right-to-left, [TextDirection.rtl]; or left-to-right,
+// [TextDirection.ltr].
+//
+// ## Design discussion
+//
+// Flutter is designed to address the needs of applications written in any of
+// the world's currently-used languages, whether they use a right-to-left or
+// left-to-right writing direction. Flutter does not support other writing
+// modes, such as vertical text or boustrophedon text, as these are rarely used
+// in computer programs.
+//
+// It is common when developing user interface frameworks to pick a default
+// text direction — typically left-to-right, the direction most familiar to the
+// engineers working on the framework — because this simplifies the development
+// of applications on the platform. Unfortunately, this frequently results in
+// the platform having unexpected left-to-right biases or assumptions, as
+// engineers will typically miss places where they need to support
+// right-to-left text. This then results in bugs that only manifest in
+// right-to-left environments.
+//
+// In an effort to minimize the extent to which Flutter experiences this
+// category of issues, the lowest levels of the Flutter framework do not have a
+// default text reading direction. Any time a reading direction is necessary,
+// for example when text is to be displayed, or when a
+// writing-direction-dependent value is to be interpreted, the reading
+// direction must be explicitly specified. Where possible, such as in `switch`
+// statements, the right-to-left case is listed first, to avoid the impression
+// that it is an afterthought.
+//
+// At the higher levels (specifically starting at the widgets library), an
+// ambient [Directionality] is introduced, which provides a default. Thus, for
+// instance, a [widgets.Text] widget in the scope of a [MaterialApp] widget
+// does not need to be given an explicit writing direction. The
+// [Directionality.of] static method can be used to obtain the ambient text
+// direction for a particular [BuildContext].
+//
+// ### Known left-to-right biases in Flutter
+//
+// Despite the design intent described above, certain left-to-right biases have
+// nonetheless crept into Flutter's design. These include:
+//
+//  * The [Canvas] origin is at the top left, and the x-axis increases in a
+//    left-to-right direction.
+//
+//  * The default localization in the widgets and material libraries is
+//    American English, which is left-to-right.
+//
+// ### Visual properties vs directional properties
+//
+// Many classes in the Flutter framework are offered in two versions, a
+// visually-oriented variant, and a text-direction-dependent variant. For
+// example, [EdgeInsets] is described in terms of top, left, right, and bottom,
+// while [EdgeInsetsDirectional] is described in terms of top, start, end, and
+// bottom, where start and end correspond to right and left in right-to-left
+// text and left and right in left-to-right text.
+//
+// There are distinct use cases for each of these variants.
+//
+// Text-direction-dependent variants are useful when developing user interfaces
+// that should "flip" with the text direction. For example, a paragraph of text
+// in English will typically be left-aligned and a quote will be indented from
+// the left, while in Arabic it will be right-aligned and indented from the
+// right. Both of these cases are described by the direction-dependent
+// [TextAlign.start] and [EdgeInsetsDirectional.start].
+//
+// In contrast, the visual variants are useful when the text direction is known
+// and not affected by the reading direction. For example, an application
+// giving driving directions might show a "turn left" arrow on the left and a
+// "turn right" arrow on the right — and would do so whether the application
+// was localized to French (left-to-right) or Hebrew (right-to-left).
+//
+// In practice, it is also expected that many developers will only be
+// targeting one language, and in that case it may be simpler to think in
+// visual terms.
 message DartTextDirection {
   enum Enum {
+    // The text flows from right to left (e.g. Arabic, Hebrew).
     RTL = 0;
+    // The text flows from left to right (e.g., English, French).
     LTR = 1;
   }
 }
 
 // dart:ui
+//
+// {@macro dart.ui.textLeadingDistribution}
 message DartTextLeadingDistribution {
   enum Enum {
+    // Distributes the [leading](https://en.wikipedia.org/wiki/Leading)
+    // of the text proportionally above and below the text, to the font's
+    // ascent/descent ratio.
+    //
+    // {@template dart.ui.leading}
+    // The leading of a text run is defined as
+    // `TextStyle.height * TextStyle.fontSize - TextStyle.fontSize`. When
+    // [TextStyle.height] is not set, the text run uses the leading specified by
+    // the font instead.
+    // {@endtemplate}
     PROPORTIONAL = 0;
+    // Distributes the ["leading"](https://en.wikipedia.org/wiki/Leading)
+    // of the text evenly above and below the text (i.e. evenly above the
+    // font's ascender and below the descender).
+    //
+    // {@macro dart.ui.leading}
+    //
+    // The leading can become negative when [TextStyle.height] is smaller than
+    // 1.0.
+    //
+    // This is the default strategy used by CSS, known as
+    // ["half-leading"](https://www.w3.org/TR/css-inline-3/#half-leading).
     EVEN = 1;
   }
 }
 
 // dart:ui
+//
+// Defines what happens at the edge of a gradient or the sampling of a source image
+// in an [ImageFilter].
+//
+// A gradient is defined along a finite inner area. In the case of a linear
+// gradient, it's between the parallel lines that are orthogonal to the line
+// drawn between two points. In the case of radial gradients, it's the disc
+// that covers the circle centered on a particular point up to a given radius.
+//
+// An image filter reads source samples from a source image and performs operations
+// on those samples to produce a result image. An image defines color samples only
+// for pixels within the bounds of the image but some filter operations, such as a blur
+// filter, read samples over a wide area to compute the output for a given pixel. Such
+// a filter would need to combine samples from inside the image with hypothetical
+// color values from outside the image.
+//
+// This enum is used to define how the gradient or image filter should treat the regions
+// outside that defined inner area.
+//
+// See also:
+//
+//  * [painting.Gradient], the superclass for [LinearGradient] and
+//    [RadialGradient], as used by [BoxDecoration] et al, which works in
+//    relative coordinates and can create a [Shader] representing the gradient
+//    for a particular [Rect] on demand.
+//  * [dart:ui.Gradient], the low-level class used when dealing with the
+//    [Paint.shader] property directly, with its [Gradient.linear] and
+//    [Gradient.radial] constructors.
+//  * [dart:ui.ImageFilter.blur], an ImageFilter that may sometimes need to
+//    read samples from outside an image to combine with the pixels near the
+//    edge of the image.
 message DartTileMode {
   enum Enum {
+    // Samples beyond the edge are clamped to the nearest color in the defined inner area.
+    //
+    // A gradient will paint all the regions outside the inner area with the
+    // color at the end of the color stop list closest to that region.
+    //
+    // An image filter will substitute the nearest edge pixel for any samples taken from
+    // outside its source image.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/tile_mode_clamp_linear.png)
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/tile_mode_clamp_radial.png)
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/tile_mode_clamp_sweep.png)
     CLAMP = 0;
+    // Samples beyond the edge are repeated from the far end of the defined area.
+    //
+    // For a gradient, this technique is as if the stop points from 0.0 to 1.0 were then
+    // repeated from 1.0 to 2.0, 2.0 to 3.0, and so forth (and for linear gradients, similarly
+    // from -1.0 to 0.0, -2.0 to -1.0, etc).
+    //
+    // An image filter will treat its source image as if it were tiled across the enlarged
+    // sample space from which it reads, each tile in the same orientation as the base image.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/tile_mode_repeated_linear.png)
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/tile_mode_repeated_radial.png)
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/tile_mode_repeated_sweep.png)
     REPEATED = 1;
+    // Samples beyond the edge are mirrored back and forth across the defined area.
+    //
+    // For a gradient, this technique is as if the stop points from 0.0 to 1.0 were then
+    // repeated backwards from 2.0 to 1.0, then forwards from 2.0 to 3.0, then backwards
+    // again from 4.0 to 3.0, and so forth (and for linear gradients, similarly in the
+    // negative direction).
+    //
+    // An image filter will treat its source image as tiled in an alternating forwards and
+    // backwards or upwards and downwards direction across the sample space from which
+    // it is reading.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/tile_mode_mirror_linear.png)
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/tile_mode_mirror_radial.png)
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/tile_mode_mirror_sweep.png)
     MIRROR = 2;
+    // Samples beyond the edge are treated as transparent black.
+    //
+    // A gradient will render transparency over any region that is outside the circle of a
+    // radial gradient or outside the parallel lines that define the inner area of a linear
+    // gradient.
+    //
+    // An image filter will substitute transparent black for any sample it must read from
+    // outside its source image.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/tile_mode_decal_linear.png)
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/tile_mode_decal_radial.png)
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/dart-ui/tile_mode_decal_sweep.png)
     DECAL = 3;
   }
 }
 
 // package:flutter/src/widgets/autofill.dart
+//
+// Predefined autofill context clean up actions.
 message FlutterAutofillContextAction {
   enum Enum {
+    // Destroys the current autofill context after informing the platform to save
+    // the user input from it.
+    //
+    // Corresponds to calling [TextInput.finishAutofillContext] with
+    // `shouldSave == true`.
     COMMIT = 0;
+    // Destroys the current autofill context without saving the user input.
+    //
+    // Corresponds to calling [TextInput.finishAutofillContext] with
+    // `shouldSave == false`.
     CANCEL = 1;
   }
 }
 
 // package:flutter/src/widgets/form.dart
+//
+// Used to configure the auto validation of [FormField] and [Form] widgets.
 message FlutterAutovalidateMode {
   enum Enum {
+    // No auto validation will occur.
     DISABLED = 0;
+    // Used to auto-validate [Form] and [FormField] even without user interaction.
     ALWAYS = 1;
+    // Used to auto-validate [Form] and [FormField] only after each user
+    // interaction.
     ON_USER_INTERACTION = 2;
   }
 }
 
 // package:flutter/src/painting/basic_types.dart
+//
+// The two cardinal directions in two dimensions.
+//
+// The axis is always relative to the current coordinate space. This means, for
+// example, that a [horizontal] axis might actually be diagonally from top
+// right to bottom left, due to some local [Transform] applied to the scene.
+//
+// See also:
+//
+//  * [AxisDirection], which is a directional version of this enum (with values
+//    like left and right, rather than just horizontal).
+//  * [TextDirection], which disambiguates between left-to-right horizontal
+//    content and right-to-left horizontal content.
 message FlutterAxis {
   enum Enum {
+    // Left and right.
+    //
+    // See also:
+    //
+    //  * [TextDirection], which disambiguates between left-to-right horizontal
+    //    content and right-to-left horizontal content.
     HORIZONTAL = 0;
+    // Up and down.
     VERTICAL = 1;
   }
 }
 
 // package:flutter/src/painting/basic_types.dart
+//
+// A direction along either the horizontal or vertical [Axis] in which the
+// origin, or zero position, is determined.
+//
+// This value relates to the direction in which the scroll offset increases
+// from the origin. This value does not represent the direction of user input
+// that may be modifying the scroll offset, such as from a drag. For the
+// active scrolling direction, see [ScrollDirection].
+//
+// {@tool dartpad}
+// This sample shows a [CustomScrollView], with [Radio] buttons in the
+// [AppBar.bottom] that change the [AxisDirection] to illustrate different
+// configurations.
+//
+// ** See code in examples/api/lib/painting/axis_direction/axis_direction.0.dart **
+// {@end-tool}
+//
+// See also:
+//
+//   * [ScrollDirection], the direction of active scrolling, relative to the positive
+//     scroll offset axis given by an [AxisDirection] and a [GrowthDirection].
+//   * [GrowthDirection], the direction in which slivers and their content are
+//     ordered, relative to the scroll offset axis as specified by
+//     [AxisDirection].
+//   * [CustomScrollView.anchor], the relative position of the zero scroll
+//     offset in a viewport and inflection point for [AxisDirection]s of the
+//     same cardinal [Axis].
+//   * [axisDirectionIsReversed], which returns whether traveling along the
+//     given axis direction visits coordinates along that axis in numerically
+//     decreasing order.
 message FlutterAxisDirection {
   enum Enum {
+    // A direction in the [Axis.vertical] where zero is at the bottom and
+    // positive values are above it: `⇈`
+    //
+    // Alphabetical content with a [GrowthDirection.forward] would have the A at
+    // the bottom and the Z at the top.
+    //
+    // For example, the behavior of a [ListView] with [ListView.reverse] set to
+    // true would have this axis direction.
+    //
+    // See also:
+    //
+    //   * [axisDirectionIsReversed], which returns whether traveling along the
+    //     given axis direction visits coordinates along that axis in numerically
+    //     decreasing order.
     UP = 0;
+    // A direction in the [Axis.horizontal] where zero is on the left and
+    // positive values are to the right of it: `⇉`
+    //
+    // Alphabetical content with a [GrowthDirection.forward] would have the A on
+    // the left and the Z on the right. This is the ordinary reading order for a
+    // horizontal set of tabs in an English application, for example.
+    //
+    // For example, the behavior of a [ListView] with [ListView.scrollDirection]
+    // set to [Axis.horizontal] would have this axis direction.
+    //
+    // See also:
+    //
+    //   * [axisDirectionIsReversed], which returns whether traveling along the
+    //     given axis direction visits coordinates along that axis in numerically
+    //     decreasing order.
     RIGHT = 1;
+    // A direction in the [Axis.vertical] where zero is at the top and positive
+    // values are below it: `⇊`
+    //
+    // Alphabetical content with a [GrowthDirection.forward] would have the A at
+    // the top and the Z at the bottom. This is the ordinary reading order for a
+    // vertical list.
+    //
+    // For example, the default behavior of a [ListView] would have this axis
+    // direction.
+    //
+    // See also:
+    //
+    //   * [axisDirectionIsReversed], which returns whether traveling along the
+    //     given axis direction visits coordinates along that axis in numerically
+    //     decreasing order.
     DOWN = 2;
+    // A direction in the [Axis.horizontal] where zero is to the right and
+    // positive values are to the left of it: `⇇`
+    //
+    // Alphabetical content with a [GrowthDirection.forward] would have the A at
+    // the right and the Z at the left. This is the ordinary reading order for a
+    // horizontal set of tabs in a Hebrew application, for example.
+    //
+    // For example, the behavior of a [ListView] with [ListView.scrollDirection]
+    // set to [Axis.horizontal] and [ListView.reverse] set to true would have
+    // this axis direction.
+    //
+    // See also:
+    //
+    //   * [axisDirectionIsReversed], which returns whether traveling along the
+    //     given axis direction visits coordinates along that axis in numerically
+    //     decreasing order.
     LEFT = 3;
   }
 }
 
 // package:flutter/src/widgets/banner.dart
+//
+// Where to show a [Banner].
+//
+// The start and end locations are relative to the ambient [Directionality]
+// (which can be overridden by [Banner.layoutDirection]).
 message FlutterBannerLocation {
   enum Enum {
+    // Show the banner in the top-right corner when the ambient [Directionality]
+    // (or [Banner.layoutDirection]) is [TextDirection.rtl] and in the top-left
+    // corner when the ambient [Directionality] is [TextDirection.ltr].
     TOP_START = 0;
+    // Show the banner in the top-left corner when the ambient [Directionality]
+    // (or [Banner.layoutDirection]) is [TextDirection.rtl] and in the top-right
+    // corner when the ambient [Directionality] is [TextDirection.ltr].
     TOP_END = 1;
+    // Show the banner in the bottom-right corner when the ambient
+    // [Directionality] (or [Banner.layoutDirection]) is [TextDirection.rtl] and
+    // in the bottom-left corner when the ambient [Directionality] is
+    // [TextDirection.ltr].
     BOTTOM_START = 2;
+    // Show the banner in the bottom-left corner when the ambient
+    // [Directionality] (or [Banner.layoutDirection]) is [TextDirection.rtl] and
+    // in the bottom-right corner when the ambient [Directionality] is
+    // [TextDirection.ltr].
     BOTTOM_END = 3;
   }
 }
 
 // package:flutter/src/painting/borders.dart
+//
+// The style of line to draw for a [BorderSide] in a [Border].
 message FlutterBorderStyle {
   enum Enum {
+    // Skip the border.
     NONE = 0;
+    // Draw the border as a solid line.
     SOLID = 1;
   }
 }
 
 // package:flutter/src/painting/box_fit.dart
+//
+// How a box should be inscribed into another box.
+//
+// See also:
+//
+//  * [applyBoxFit], which applies the sizing semantics of these values (though
+//    not the alignment semantics).
 message FlutterBoxFit {
   enum Enum {
+    // Fill the target box by distorting the source's aspect ratio.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/painting/box_fit_fill.png)
     FILL = 0;
+    // As large as possible while still containing the source entirely within the
+    // target box.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/painting/box_fit_contain.png)
     CONTAIN = 1;
+    // As small as possible while still covering the entire target box.
+    //
+    // {@template flutter.painting.BoxFit.cover}
+    // To actually clip the content, use `clipBehavior: Clip.hardEdge` alongside
+    // this in a [FittedBox].
+    // {@endtemplate}
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/painting/box_fit_cover.png)
     COVER = 2;
+    // Make sure the full width of the source is shown, regardless of
+    // whether this means the source overflows the target box vertically.
+    //
+    // {@macro flutter.painting.BoxFit.cover}
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/painting/box_fit_fitWidth.png)
     FIT_WIDTH = 3;
+    // Make sure the full height of the source is shown, regardless of
+    // whether this means the source overflows the target box horizontally.
+    //
+    // {@macro flutter.painting.BoxFit.cover}
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/painting/box_fit_fitHeight.png)
     FIT_HEIGHT = 4;
+    // Align the source within the target box (by default, centering) and discard
+    // any portions of the source that lie outside the box.
+    //
+    // The source image is not resized.
+    //
+    // {@macro flutter.painting.BoxFit.cover}
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/painting/box_fit_none.png)
     NONE = 5;
+    // Align the source within the target box (by default, centering) and, if
+    // necessary, scale the source down to ensure that the source fits within the
+    // box.
+    //
+    // This is the same as `contain` if that would shrink the image, otherwise it
+    // is the same as `none`.
+    //
+    // ![](https://flutter.github.io/assets-for-api-docs/assets/painting/box_fit_scaleDown.png)
     SCALE_DOWN = 6;
   }
 }
 
 // package:flutter/src/painting/box_border.dart
+//
+// The shape to use when rendering a [Border] or [BoxDecoration].
+//
+// Consider using [ShapeBorder] subclasses directly (with [ShapeDecoration]),
+// instead of using [BoxShape] and [Border], if the shapes will need to be
+// interpolated or animated. The [Border] class cannot interpolate between
+// different shapes.
 message FlutterBoxShape {
   enum Enum {
+    // An axis-aligned, 2D rectangle. May have rounded corners (described by a
+    // [BorderRadius]). The edges of the rectangle will match the edges of the box
+    // into which the [Border] or [BoxDecoration] is painted.
+    //
+    // See also:
+    //
+    //  * [RoundedRectangleBorder], the equivalent [ShapeBorder].
     RECTANGLE = 0;
+    // A circle centered in the middle of the box into which the [Border] or
+    // [BoxDecoration] is painted. The diameter of the circle is the shortest
+    // dimension of the box, either the width or the height, such that the circle
+    // touches the edges of the box.
+    //
+    // See also:
+    //
+    //  * [CircleBorder], the equivalent [ShapeBorder].
     CIRCLE = 1;
   }
 }
 
 // package:flutter/src/rendering/viewport.dart
+//
+// The unit of measurement for a [Viewport.cacheExtent].
 message FlutterCacheExtentStyle {
   enum Enum {
+    // Treat the [Viewport.cacheExtent] as logical pixels.
     PIXEL = 0;
+    // Treat the [Viewport.cacheExtent] as a multiplier of the main axis extent.
     VIEWPORT = 1;
   }
 }
 
 // package:flutter/src/widgets/text_selection.dart
+//
+// An enumeration of the status of the content on the user's clipboard.
 message FlutterClipboardStatus {
   enum Enum {
+    // The clipboard content can be pasted, such as a String of nonzero length.
     PASTEABLE = 0;
+    // The status of the clipboard is unknown. Since getting clipboard data is
+    // asynchronous (see [Clipboard.getData]), this status often exists while
+    // waiting to receive the clipboard contents for the first time.
     UNKNOWN = 1;
+    // The content on the clipboard is not pasteable, such as when it is empty.
     NOT_PASTEABLE = 2;
   }
 }
 
 // package:flutter/src/widgets/context_menu_button_item.dart
+//
+// The buttons that can appear in a context menu by default.
+//
+// See also:
+//
+//  * [ContextMenuButtonItem], which uses this enum to describe a button in a
+//    context menu.
 message FlutterContextMenuButtonType {
   enum Enum {
+    // A button that cuts the current text selection.
     CUT = 0;
+    // A button that copies the current text selection.
     COPY = 1;
+    // A button that pastes the clipboard contents into the focused text field.
     PASTE = 2;
+    // A button that selects all the contents of the focused text field.
     SELECT_ALL = 3;
+    // A button that deletes the current text selection.
     DELETE = 4;
+    // A button that looks up the current text selection.
     LOOK_UP = 5;
+    // A button that launches a web search for the current text selection.
     SEARCH_WEB = 6;
+    // A button that displays the share screen for the current text selection.
     SHARE = 7;
+    // A button for starting Live Text input.
+    //
+    // See also:
+    //  * [LiveText], where the availability of Live Text input can be obtained.
+    //  * [LiveTextInputStatusNotifier], where the status of Live Text can be listened to.
     LIVE_TEXT_INPUT = 8;
+    // Anything other than the default button types.
     CUSTOM = 9;
   }
 }
 
 // package:flutter/src/rendering/flex.dart
+//
+// How the children should be placed along the cross axis in a flex layout.
+//
+// See also:
+//
+//  * [Column], [Row], and [Flex], the flex widgets.
+//  * [RenderFlex], the flex render object.
 message FlutterCrossAxisAlignment {
   enum Enum {
+    // Place the children with their start edge aligned with the start side of
+    // the cross axis.
+    //
+    // For example, in a column (a flex with a vertical axis) whose
+    // [TextDirection] is [TextDirection.ltr], this aligns the left edge of the
+    // children along the left edge of the column.
+    //
+    // If this value is used in a horizontal direction, a [TextDirection] must be
+    // available to determine if the start is the left or the right.
+    //
+    // If this value is used in a vertical direction, a [VerticalDirection] must be
+    // available to determine if the start is the top or the bottom.
     START = 0;
+    // Place the children as close to the end of the cross axis as possible.
+    //
+    // For example, in a column (a flex with a vertical axis) whose
+    // [TextDirection] is [TextDirection.ltr], this aligns the right edge of the
+    // children along the right edge of the column.
+    //
+    // If this value is used in a horizontal direction, a [TextDirection] must be
+    // available to determine if the end is the left or the right.
+    //
+    // If this value is used in a vertical direction, a [VerticalDirection] must be
+    // available to determine if the end is the top or the bottom.
     END = 1;
+    // Place the children so that their centers align with the middle of the
+    // cross axis.
+    //
+    // This is the default cross-axis alignment.
     CENTER = 2;
+    // Require the children to fill the cross axis.
+    //
+    // This causes the constraints passed to the children to be tight in the
+    // cross axis.
     STRETCH = 3;
+    // Place the children along the cross axis such that their baselines match.
+    //
+    // Because baselines are always horizontal, this alignment is intended for
+    // horizontal main axes. If the main axis is vertical, then this value is
+    // treated like [start].
+    //
+    // For horizontal main axes, if the minimum height constraint passed to the
+    // flex layout exceeds the intrinsic height of the cross axis, children will
+    // be aligned as close to the top as they can be while honoring the baseline
+    // alignment. In other words, the extra space will be below all the children.
+    //
+    // Children who report no baseline will be top-aligned.
     BASELINE = 4;
   }
 }
 
 // package:flutter/src/widgets/animated_cross_fade.dart
+//
+// Specifies which of two children to show. See [AnimatedCrossFade].
+//
+// The child that is shown will fade in, while the other will fade out.
 message FlutterCrossFadeState {
   enum Enum {
+    // Show the first child ([AnimatedCrossFade.firstChild]) and hide the second
+    // ([AnimatedCrossFade.secondChild]]).
     SHOW_FIRST = 0;
+    // Show the second child ([AnimatedCrossFade.secondChild]) and hide the first
+    // ([AnimatedCrossFade.firstChild]).
     SHOW_SECOND = 1;
   }
 }
 
 // package:flutter/src/rendering/proxy_box.dart
+//
+// Where to paint a box decoration.
 message FlutterDecorationPosition {
   enum Enum {
+    // Paint the box decoration behind the children.
     BACKGROUND = 0;
+    // Paint the box decoration in front of the children.
     FOREGROUND = 1;
   }
 }
 
 // package:flutter/src/foundation/diagnostics.dart
+//
+// The various priority levels used to filter which diagnostics are shown and
+// omitted.
+//
+// Trees of Flutter diagnostics can be very large so filtering the diagnostics
+// shown matters. Typically filtering to only show diagnostics with at least
+// level [debug] is appropriate.
+//
+// In release mode, this level may not have any effect, as diagnostics in
+// release mode are compacted or truncated to reduce binary size.
 message FlutterDiagnosticLevel {
   enum Enum {
+    // Diagnostics that should not be shown.
+    //
+    // If a user chooses to display [hidden] diagnostics, they should not expect
+    // the diagnostics to be formatted consistently with other diagnostics and
+    // they should expect them to sometimes be misleading. For example,
+    // [FlagProperty] and [ObjectFlagProperty] have uglier formatting when the
+    // property `value` does not match a value with a custom flag
+    // description. An example of a misleading diagnostic is a diagnostic for
+    // a property that has no effect because some other property of the object is
+    // set in a way that causes the hidden property to have no effect.
     HIDDEN = 0;
+    // A diagnostic that is likely to be low value but where the diagnostic
+    // display is just as high quality as a diagnostic with a higher level.
+    //
+    // Use this level for diagnostic properties that match their default value
+    // and other cases where showing a diagnostic would not add much value such
+    // as an [IterableProperty] where the value is empty.
     FINE = 1;
+    // Diagnostics that should only be shown when performing fine grained
+    // debugging of an object.
+    //
+    // Unlike a [fine] diagnostic, these diagnostics provide important
+    // information about the object that is likely to be needed to debug. Used by
+    // properties that are important but where the property value is too verbose
+    // (e.g. 300+ characters long) to show with a higher diagnostic level.
     DEBUG = 2;
+    // Interesting diagnostics that should be typically shown.
     INFO = 3;
+    // Very important diagnostics that indicate problematic property values.
+    //
+    // For example, use if you would write the property description
+    // message in ALL CAPS.
     WARNING = 4;
+    // Diagnostics that provide a hint about best practices.
+    //
+    // For example, a diagnostic describing best practices for fixing an error.
     HINT = 5;
+    // Diagnostics that summarize other diagnostics present.
+    //
+    // For example, use this level for a short one or two line summary
+    // describing other diagnostics present.
     SUMMARY = 6;
+    // Diagnostics that indicate errors or unexpected conditions.
+    //
+    // For example, use for property values where computing the value throws an
+    // exception.
     ERROR = 7;
+    // Special level indicating that no diagnostics should be shown.
+    //
+    // Do not specify this level for diagnostics. This level is only used to
+    // filter which diagnostics are shown.
     OFF = 8;
   }
 }
 
 // package:flutter/src/foundation/diagnostics.dart
+//
+// Styles for displaying a node in a [DiagnosticsNode] tree.
+//
+// In release mode, these styles may be ignored, as diagnostics are compacted
+// or truncated to save on binary size.
+//
+// See also:
+//
+//  * [DiagnosticsNode.toStringDeep], which dumps text art trees for these
+//    styles.
 message FlutterDiagnosticsTreeStyle {
   enum Enum {
+    // A style that does not display the tree, for release mode.
     NONE = 0;
+    // Sparse style for displaying trees.
+    //
+    // See also:
+    //
+    //  * [RenderObject], which uses this style.
     SPARSE = 1;
+    // Connects a node to its parent with a dashed line.
+    //
+    // See also:
+    //
+    //  * [RenderSliverMultiBoxAdaptor], which uses this style to distinguish
+    //    offstage children from onstage children.
     OFFSTAGE = 2;
+    // Slightly more compact version of the [sparse] style.
+    //
+    // See also:
+    //
+    //  * [Element], which uses this style.
     DENSE = 3;
+    // Style that enables transitioning from nodes of one style to children of
+    // another.
+    //
+    // See also:
+    //
+    //  * [RenderParagraph], which uses this style to display a [TextSpan] child
+    //    in a way that is compatible with the [DiagnosticsTreeStyle.sparse]
+    //    style of the [RenderObject] tree.
     TRANSITION = 4;
+    // Style for displaying content describing an error.
+    //
+    // See also:
+    //
+    //  * [FlutterError], which uses this style for the root node in a tree
+    //    describing an error.
     ERROR = 5;
+    // Render the tree just using whitespace without connecting parents to
+    // children using lines.
+    //
+    // See also:
+    //
+    //  * [SliverGeometry], which uses this style.
     WHITESPACE = 6;
+    // Render the tree without indenting children at all.
+    //
+    // See also:
+    //
+    //  * [DiagnosticsStackTrace], which uses this style.
     FLAT = 7;
+    // Render the tree on a single line without showing children.
     SINGLE_LINE = 8;
+    // Render the tree using a style appropriate for properties that are part
+    // of an error message.
+    //
+    // The name is placed on one line with the value and properties placed on
+    // the following line.
+    //
+    // See also:
+    //
+    //  * [singleLine], which displays the same information but keeps the
+    //    property and value on the same line.
     ERROR_PROPERTY = 9;
+    // Render only the immediate properties of a node instead of the full tree.
+    //
+    // See also:
+    //
+    //  * [DebugOverflowIndicatorMixin], which uses this style to display just
+    //    the immediate children of a node.
     SHALLOW = 10;
+    // Render only the children of a node truncating before the tree becomes too
+    // large.
     TRUNCATE_CHILDREN = 11;
   }
 }
 
 // package:flutter/src/widgets/dismissible.dart
+//
+// The direction in which a [Dismissible] can be dismissed.
 message FlutterDismissDirection {
   enum Enum {
+    // The [Dismissible] can be dismissed by dragging either up or down.
     VERTICAL = 0;
+    // The [Dismissible] can be dismissed by dragging either left or right.
     HORIZONTAL = 1;
+    // The [Dismissible] can be dismissed by dragging in the reverse of the
+    // reading direction (e.g., from right to left in left-to-right languages).
     END_TO_START = 2;
+    // The [Dismissible] can be dismissed by dragging in the reading direction
+    // (e.g., from left to right in left-to-right languages).
     START_TO_END = 3;
+    // The [Dismissible] can be dismissed by dragging up only.
     UP = 4;
+    // The [Dismissible] can be dismissed by dragging down only.
     DOWN = 5;
+    // The [Dismissible] cannot be dismissed by dragging.
     NONE = 6;
   }
 }
 
 // package:flutter/src/gestures/recognizer.dart
+//
+// Configuration of offset passed to [DragStartDetails].
+//
+// See also:
+//
+//  * [DragGestureRecognizer.dragStartBehavior], which gives an example for the
+//  different behaviors.
 message FlutterDragStartBehavior {
   enum Enum {
+    // Set the initial offset at the position where the first down event was
+    // detected.
     DOWN = 0;
+    // Set the initial position at the position where this gesture recognizer
+    // won the arena.
     START = 1;
   }
 }
 
 // package:flutter/src/rendering/flex.dart
+//
+// How the child is inscribed into the available space.
+//
+// See also:
+//
+//  * [RenderFlex], the flex render object.
+//  * [Column], [Row], and [Flex], the flex widgets.
+//  * [Expanded], the widget equivalent of [tight].
+//  * [Flexible], the widget equivalent of [loose].
 message FlutterFlexFit {
   enum Enum {
+    // The child is forced to fill the available space.
+    //
+    // The [Expanded] widget assigns this kind of [FlexFit] to its child.
     TIGHT = 0;
+    // The child can be at most as large as the available space (but is
+    // allowed to be smaller).
+    //
+    // The [Flexible] widget assigns this kind of [FlexFit] to its child.
     LOOSE = 1;
   }
 }
 
 // package:flutter/src/painting/flutter_logo.dart
+//
+// Possible ways to draw Flutter's logo.
 message FlutterFlutterLogoStyle {
   enum Enum {
+    // Show only Flutter's logo, not the "Flutter" label.
+    //
+    // This is the default behavior for [FlutterLogoDecoration] objects.
     MARK_ONLY = 0;
+    // Show Flutter's logo on the left, and the "Flutter" label to its right.
     HORIZONTAL = 1;
+    // Show Flutter's logo above the "Flutter" label.
     STACKED = 2;
   }
 }
 
 // package:flutter/src/rendering/proxy_box.dart
+//
+// How to behave during hit tests.
 message FlutterHitTestBehavior {
   enum Enum {
+    // Targets that defer to their children receive events within their bounds
+    // only if one of their children is hit by the hit test.
     DEFER_TO_CHILD = 0;
+    // Opaque targets can be hit by hit tests, causing them to both receive
+    // events within their bounds and prevent targets visually behind them from
+    // also receiving events.
     OPAQUE = 1;
+    // Translucent targets both receive events within their bounds and permit
+    // targets visually behind them to also receive events.
     TRANSLUCENT = 2;
   }
 }
 
 // package:flutter/src/painting/decoration_image.dart
+//
+// How to paint any portions of a box not covered by an image.
 message FlutterImageRepeat {
   enum Enum {
+    // Repeat the image in both the x and y directions until the box is filled.
     REPEAT = 0;
+    // Repeat the image in the x direction until the box is filled horizontally.
     REPEAT_X = 1;
+    // Repeat the image in the y direction until the box is filled vertically.
     REPEAT_Y = 2;
+    // Leave uncovered portions of the box transparent.
     NO_REPEAT = 3;
   }
 }
 
 // package:flutter/src/rendering/flex.dart
+//
+// How the children should be placed along the main axis in a flex layout.
+//
+// See also:
+//
+//  * [Column], [Row], and [Flex], the flex widgets.
+//  * [RenderFlex], the flex render object.
 message FlutterMainAxisAlignment {
   enum Enum {
+    // Place the children as close to the start of the main axis as possible.
+    //
+    // If this value is used in a horizontal direction, a [TextDirection] must be
+    // available to determine if the start is the left or the right.
+    //
+    // If this value is used in a vertical direction, a [VerticalDirection] must be
+    // available to determine if the start is the top or the bottom.
     START = 0;
+    // Place the children as close to the end of the main axis as possible.
+    //
+    // If this value is used in a horizontal direction, a [TextDirection] must be
+    // available to determine if the end is the left or the right.
+    //
+    // If this value is used in a vertical direction, a [VerticalDirection] must be
+    // available to determine if the end is the top or the bottom.
     END = 1;
+    // Place the children as close to the middle of the main axis as possible.
     CENTER = 2;
+    // Place the free space evenly between the children.
     SPACE_BETWEEN = 3;
+    // Place the free space evenly between the children as well as half of that
+    // space before and after the first and last child.
     SPACE_AROUND = 4;
+    // Place the free space evenly between the children as well as before and
+    // after the first and last child.
     SPACE_EVENLY = 5;
   }
 }
 
 // package:flutter/src/rendering/flex.dart
+//
+// How much space should be occupied in the main axis.
+//
+// During a flex layout, available space along the main axis is allocated to
+// children. After allocating space, there might be some remaining free space.
+// This value controls whether to maximize or minimize the amount of free
+// space, subject to the incoming layout constraints.
+//
+// See also:
+//
+//  * [Column], [Row], and [Flex], the flex widgets.
+//  * [Expanded] and [Flexible], the widgets that controls a flex widgets'
+//    children's flex.
+//  * [RenderFlex], the flex render object.
+//  * [MainAxisAlignment], which controls how the free space is distributed.
 message FlutterMainAxisSize {
   enum Enum {
+    // Minimize the amount of free space along the main axis, subject to the
+    // incoming layout constraints.
+    //
+    // If the incoming layout constraints have a large enough
+    // [BoxConstraints.minWidth] or [BoxConstraints.minHeight], there might still
+    // be a non-zero amount of free space.
+    //
+    // If the incoming layout constraints are unbounded, and any children have a
+    // non-zero [FlexParentData.flex] and a [FlexFit.tight] fit (as applied by
+    // [Expanded]), the [RenderFlex] will assert, because there would be infinite
+    // remaining free space and boxes cannot be given infinite size.
     MIN = 0;
+    // Maximize the amount of free space along the main axis, subject to the
+    // incoming layout constraints.
+    //
+    // If the incoming layout constraints have a small enough
+    // [BoxConstraints.maxWidth] or [BoxConstraints.maxHeight], there might still
+    // be no free space.
+    //
+    // If the incoming layout constraints are unbounded, the [RenderFlex] will
+    // assert, because there would be infinite remaining free space and boxes
+    // cannot be given infinite size.
     MAX = 1;
   }
 }
 
 // package:flutter/src/services/text_formatter.dart
+//
+// Mechanisms for enforcing maximum length limits.
+//
+// This is used by [TextField] to specify how the [TextField.maxLength] should
+// be applied.
+//
+// {@template flutter.services.textFormatter.maxLengthEnforcement}
+// ### [MaxLengthEnforcement.enforced] versus
+// [MaxLengthEnforcement.truncateAfterCompositionEnds]
+//
+// Both [MaxLengthEnforcement.enforced] and
+// [MaxLengthEnforcement.truncateAfterCompositionEnds] make sure the final
+// length of the text does not exceed the max length specified. The difference
+// is that [MaxLengthEnforcement.enforced] truncates all text while
+// [MaxLengthEnforcement.truncateAfterCompositionEnds] allows composing text to
+// exceed the limit. Allowing this "placeholder" composing text to exceed the
+// limit may provide a better user experience on some platforms for entering
+// ideographic characters (e.g. CJK characters) via composing on phonetic
+// keyboards.
+//
+// Some input methods (Gboard on Android for example) initiate text composition
+// even for Latin characters, in which case the best experience may be to
+// truncate those composing characters with [MaxLengthEnforcement.enforced].
+//
+// In fields that strictly support only a small subset of characters, such as
+// verification code fields, [MaxLengthEnforcement.enforced] may provide the
+// best experience.
+// {@endtemplate}
+//
+// See also:
+//
+//  * [TextField.maxLengthEnforcement] which is used in conjunction with
+//    [TextField.maxLength] to limit the length of user input. [TextField] also
+//    provides a character counter to provide visual feedback.
 message FlutterMaxLengthEnforcement {
   enum Enum {
+    // No enforcement applied to the editing value. It's possible to exceed the
+    // max length.
     NONE = 0;
+    // Keep the length of the text input from exceeding the max length even when
+    // the text has an unfinished composing region.
     ENFORCED = 1;
+    // Users can still input text if the current value is composing even after
+    // reaching the max length limit. After composing ends, the value will be
+    // truncated.
     TRUNCATE_AFTER_COMPOSITION_ENDS = 2;
   }
 }
 
 // package:flutter/src/widgets/media_query.dart
+//
+// Describes the navigation mode to be set by a [MediaQuery] widget.
+//
+// The different modes indicate the type of navigation to be used in a widget
+// subtree for those widgets sensitive to it.
+//
+// Use `MediaQuery.navigationModeOf(context)` to determine the navigation mode
+// in effect for the given context. Use a [MediaQuery] widget to set the
+// navigation mode for its descendant widgets.
 message FlutterNavigationMode {
   enum Enum {
+    // This indicates a traditional keyboard-and-mouse navigation modality.
+    //
+    // This navigation mode is where the arrow keys can be used for secondary
+    // modification operations, like moving sliders or cursors, and disabled
+    // controls will lose focus and not be traversable.
     TRADITIONAL = 0;
+    // This indicates a directional-based navigation mode.
+    //
+    // This navigation mode indicates that arrow keys should be reserved for
+    // navigation operations, and secondary modifications operations, like moving
+    // sliders or cursors, will use alternative bindings or be disabled.
+    //
+    // Some behaviors are also affected by this mode. For instance, disabled
+    // controls will retain focus when disabled, and will be able to receive
+    // focus (although they remain disabled) when traversed.
     DIRECTIONAL = 1;
   }
 }
 
 // package:flutter/src/widgets/media_query.dart
+//
+// Whether in portrait or landscape.
 message FlutterOrientation {
   enum Enum {
+    // Taller than wide.
     PORTRAIT = 0;
+    // Wider than tall.
     LANDSCAPE = 1;
   }
 }
 
 // package:flutter/src/widgets/overflow_bar.dart
+//
+// Defines the horizontal alignment of [OverflowBar] children
+// when they're laid out in an overflow column.
+//
+// This value must be interpreted relative to the ambient
+// [TextDirection].
 message FlutterOverflowBarAlignment {
   enum Enum {
+    // Each child is left-aligned for [TextDirection.ltr],
+    // right-aligned for [TextDirection.rtl].
     START = 0;
+    // Each child is right-aligned for [TextDirection.ltr],
+    // left-aligned for [TextDirection.rtl].
     END = 1;
+    // Each child is horizontally centered.
     CENTER = 2;
   }
 }
 
 // package:flutter/src/widgets/interactive_viewer.dart
+//
+// This enum is used to specify the behavior of the [InteractiveViewer] when
+// the user drags the viewport.
 message FlutterPanAxis {
   enum Enum {
+    // The user can only pan the viewport along the horizontal axis.
     HORIZONTAL = 0;
+    // The user can only pan the viewport along the vertical axis.
     VERTICAL = 1;
+    // The user can pan the viewport along the horizontal and vertical axes
+    // but not diagonally.
     ALIGNED = 2;
+    // The user can pan the viewport freely in any direction.
     FREE = 3;
   }
 }
 
 // package:flutter/src/widgets/platform_menu_bar.dart
+//
+// The list of possible platform provided, prebuilt menus for use in a
+// [PlatformMenuBar].
+//
+// These are menus that the platform typically provides that cannot be
+// reproduced in Flutter without calling platform functions, but are standard
+// on the platform.
+//
+// Examples include things like the "Quit" or "Services" menu items on macOS.
+// Not all platforms support all menu item types. Use
+// [PlatformProvidedMenuItem.hasMenu] to know if a particular type is supported
+// on a the current platform.
+//
+// Add these to your [PlatformMenuBar] using the [PlatformProvidedMenuItem]
+// class.
+//
+// You can tell if the platform provides the given menu using the
+// [PlatformProvidedMenuItem.hasMenu] method.
 message FlutterPlatformProvidedMenuItemType {
   enum Enum {
+    // The system provided "About" menu item.
+    //
+    // On macOS, this is the `orderFrontStandardAboutPanel` default menu.
     ABOUT = 0;
+    // The system provided "Quit" menu item.
+    //
+    // On macOS, this is the `terminate` default menu.
+    //
+    // This menu item will exit the application when activated.
     QUIT = 1;
+    // The system provided "Services" submenu.
+    //
+    // This submenu provides a list of system provided application services.
+    //
+    // This default menu is only supported on macOS.
     SERVICES_SUBMENU = 2;
+    // The system provided "Hide" menu item.
+    //
+    // This menu item hides the application window.
+    //
+    // On macOS, this is the `hide` default menu.
+    //
+    // This default menu is only supported on macOS.
     HIDE = 3;
+    // The system provided "Hide Others" menu item.
+    //
+    // This menu item hides other application windows.
+    //
+    // On macOS, this is the `hideOtherApplications` default menu.
+    //
+    // This default menu is only supported on macOS.
     HIDE_OTHER_APPLICATIONS = 4;
+    // The system provided "Show All" menu item.
+    //
+    // This menu item shows all hidden application windows.
+    //
+    // On macOS, this is the `unhideAllApplications` default menu.
+    //
+    // This default menu is only supported on macOS.
     SHOW_ALL_APPLICATIONS = 5;
+    // The system provided "Start Dictation..." menu item.
+    //
+    // This menu item tells the system to start the screen reader.
+    //
+    // On macOS, this is the `startSpeaking` default menu.
+    //
+    // This default menu is currently only supported on macOS.
     START_SPEAKING = 6;
+    // The system provided "Stop Dictation..." menu item.
+    //
+    // This menu item tells the system to stop the screen reader.
+    //
+    // On macOS, this is the `stopSpeaking` default menu.
+    //
+    // This default menu is currently only supported on macOS.
     STOP_SPEAKING = 7;
+    // The system provided "Enter Full Screen" menu item.
+    //
+    // This menu item tells the system to toggle full screen mode for the window.
+    //
+    // On macOS, this is the `toggleFullScreen` default menu.
+    //
+    // This default menu is currently only supported on macOS.
     TOGGLE_FULL_SCREEN = 8;
+    // The system provided "Minimize" menu item.
+    //
+    // This menu item tells the system to minimize the window.
+    //
+    // On macOS, this is the `performMiniaturize` default menu.
+    //
+    // This default menu is currently only supported on macOS.
     MINIMIZE_WINDOW = 9;
+    // The system provided "Zoom" menu item.
+    //
+    // This menu item tells the system to expand the window size.
+    //
+    // On macOS, this is the `performZoom` default menu.
+    //
+    // This default menu is currently only supported on macOS.
     ZOOM_WINDOW = 10;
+    // The system provided "Bring To Front" menu item.
+    //
+    // This menu item tells the system to stack the window above other windows.
+    //
+    // On macOS, this is the `arrangeInFront` default menu.
+    //
+    // This default menu is currently only supported on macOS.
     ARRANGE_WINDOWS_IN_FRONT = 11;
   }
 }
 
 // package:flutter/src/rendering/platform_view.dart
+//
+// How an embedded platform view behave during hit tests.
 message FlutterPlatformViewHitTestBehavior {
   enum Enum {
+    // Opaque targets can be hit by hit tests, causing them to both receive
+    // events within their bounds and prevent targets visually behind them from
+    // also receiving events.
     OPAQUE = 0;
+    // Translucent targets both receive events within their bounds and permit
+    // targets visually behind them to also receive events.
     TRANSLUCENT = 1;
+    // Transparent targets don't receive events within their bounds and permit
+    // targets visually behind them to receive events.
     TRANSPARENT = 2;
   }
 }
 
 // package:flutter/src/widgets/scroll_physics.dart
+//
+// The rate at which scroll momentum will be decelerated.
 message FlutterScrollDecelerationRate {
   enum Enum {
+    // Standard deceleration, aligned with mobile software expectations.
     NORMAL = 0;
+    // Increased deceleration, aligned with desktop software expectations.
+    //
+    // Appropriate for use with input devices more precise than touch screens,
+    // such as trackpads or mouse wheels.
     FAST = 1;
   }
 }
 
 // package:flutter/src/widgets/scrollable_helpers.dart
+//
+// Describes the type of scroll increment that will be performed by a
+// [ScrollAction] on a [Scrollable].
+//
+// This is used to configure a [ScrollIncrementDetails] object to pass to a
+// [ScrollIncrementCalculator] function on a [Scrollable].
+//
+// {@template flutter.widgets.ScrollIncrementType.intent}
+// This indicates the *intent* of the scroll, not necessarily the size. Not all
+// scrollable areas will have the concept of a "line" or "page", but they can
+// respond to the different standard key bindings that cause scrolling, which
+// are bound to keys that people use to indicate a "line" scroll (e.g.
+// control-arrowDown keys) or a "page" scroll (e.g. pageDown key). It is
+// recommended that at least the relative magnitudes of the scrolls match
+// expectations.
+// {@endtemplate}
 message FlutterScrollIncrementType {
   enum Enum {
+    // Indicates that the [ScrollIncrementCalculator] should return the scroll
+    // distance it should move when the user requests to scroll by a "line".
+    //
+    // The distance a "line" scrolls refers to what should happen when the key
+    // binding for "scroll down/up by a line" is triggered. It's up to the
+    // [ScrollIncrementCalculator] function to decide what that means for a
+    // particular scrollable.
     LINE = 0;
+    // Indicates that the [ScrollIncrementCalculator] should return the scroll
+    // distance it should move when the user requests to scroll by a "page".
+    //
+    // The distance a "page" scrolls refers to what should happen when the key
+    // binding for "scroll down/up by a page" is triggered. It's up to the
+    // [ScrollIncrementCalculator] function to decide what that means for a
+    // particular scrollable.
     PAGE = 1;
   }
 }
 
 // package:flutter/src/widgets/scroll_view.dart
+//
+// A representation of how a [ScrollView] should dismiss the on-screen
+// keyboard.
 message FlutterScrollViewKeyboardDismissBehavior {
   enum Enum {
+    // `manual` means there is no automatic dismissal of the on-screen keyboard.
+    // It is up to the client to dismiss the keyboard.
     MANUAL = 0;
+    // `onDrag` means that the [ScrollView] will dismiss an on-screen keyboard
+    // when a drag begins.
     ON_DRAG = 1;
   }
 }
 
 // package:flutter/src/widgets/scrollbar.dart
+//
+// An orientation along either the horizontal or vertical [Axis].
 message FlutterScrollbarOrientation {
   enum Enum {
+    // Place towards the left of the screen.
     LEFT = 0;
+    // Place towards the right of the screen.
     RIGHT = 1;
+    // Place on top of the screen.
     TOP = 2;
+    // Place on the bottom of the screen.
     BOTTOM = 3;
   }
 }
 
 // package:flutter/src/services/text_input.dart
+//
+// Indicates what triggered the change in selected text (including changes to
+// the cursor location).
 message FlutterSelectionChangedCause {
   enum Enum {
+    // The user tapped on the text and that caused the selection (or the location
+    // of the cursor) to change.
     TAP = 0;
+    // The user tapped twice in quick succession on the text and that caused
+    // the selection (or the location of the cursor) to change.
     DOUBLE_TAP = 1;
+    // The user long-pressed the text and that caused the selection (or the
+    // location of the cursor) to change.
     LONG_PRESS = 2;
+    // The user force-pressed the text and that caused the selection (or the
+    // location of the cursor) to change.
     FORCE_PRESS = 3;
+    // The user used the keyboard to change the selection or the location of the
+    // cursor.
+    //
+    // Keyboard-triggered selection changes may be caused by the IME as well as
+    // by accessibility tools (e.g. TalkBack on Android).
     KEYBOARD = 4;
+    // The user used the selection toolbar to change the selection or the
+    // location of the cursor.
+    //
+    // An example is when the user taps on select all in the tool bar.
     TOOLBAR = 5;
+    // The user used the mouse to change the selection by dragging over a piece
+    // of text.
     DRAG = 6;
+    // The user used iPadOS 14+ Scribble to change the selection.
     SCRIBBLE = 7;
   }
 }
 
 // package:flutter/src/services/text_input.dart
+//
+// Indicates how to handle the intelligent replacement of dashes in text input.
+//
+// See also:
+//
+//  * [TextField.smartDashesType]
+//  * [CupertinoTextField.smartDashesType]
+//  * [EditableText.smartDashesType]
+//  * [SmartQuotesType]
+//  * <https://developer.apple.com/documentation/uikit/uitextinputtraits>
 message FlutterSmartDashesType {
   enum Enum {
+    // Smart dashes is disabled.
+    //
+    // This corresponds to the
+    // ["no" value of UITextSmartDashesType](https://developer.apple.com/documentation/uikit/uitextsmartdashestype/no).
     DISABLED = 0;
+    // Smart dashes is enabled.
+    //
+    // This corresponds to the
+    // ["yes" value of UITextSmartDashesType](https://developer.apple.com/documentation/uikit/uitextsmartdashestype/yes).
     ENABLED = 1;
   }
 }
 
 // package:flutter/src/services/text_input.dart
+//
+// Indicates how to handle the intelligent replacement of quotes in text input.
+//
+// See also:
+//
+//  * [TextField.smartQuotesType]
+//  * [CupertinoTextField.smartQuotesType]
+//  * [EditableText.smartQuotesType]
+//  * <https://developer.apple.com/documentation/uikit/uitextinputtraits>
 message FlutterSmartQuotesType {
   enum Enum {
+    // Smart quotes is disabled.
+    //
+    // This corresponds to the
+    // ["no" value of UITextSmartQuotesType](https://developer.apple.com/documentation/uikit/uitextsmartquotestype/no).
     DISABLED = 0;
+    // Smart quotes is enabled.
+    //
+    // This corresponds to the
+    // ["yes" value of UITextSmartQuotesType](https://developer.apple.com/documentation/uikit/uitextsmartquotestype/yes).
     ENABLED = 1;
   }
 }
 
 // package:flutter/src/widgets/snapshot_widget.dart
+//
+// Controls how the [SnapshotWidget] paints its child.
 message FlutterSnapshotMode {
   enum Enum {
+    // The child is snapshotted, but only if all descendants can be snapshotted.
+    //
+    // If there is a platform view in the children of a snapshot widget, the
+    // snapshot will not be used and the child will be rendered using
+    // [SnapshotPainter.paint]. This uses an un-snapshotted child and by default
+    // paints it with no additional modification.
     PERMISSIVE = 0;
+    // An error is thrown if the child cannot be snapshotted.
+    //
+    // This setting is the default state of the [SnapshotWidget].
     NORMAL = 1;
+    // The child is snapshotted and any child platform views are ignored.
+    //
+    // This mode can be useful if there is a platform view descendant that does
+    // not need to be included in the snapshot.
     FORCED = 2;
   }
 }
 
 // package:flutter/src/rendering/stack.dart
+//
+// How to size the non-positioned children of a [Stack].
+//
+// This enum is used with [Stack.fit] and [RenderStack.fit] to control
+// how the [BoxConstraints] passed from the stack's parent to the stack's child
+// are adjusted.
+//
+// See also:
+//
+//  * [Stack], the widget that uses this.
+//  * [RenderStack], the render object that implements the stack algorithm.
 message FlutterStackFit {
   enum Enum {
+    // The constraints passed to the stack from its parent are loosened.
+    //
+    // For example, if the stack has constraints that force it to 350x600, then
+    // this would allow the non-positioned children of the stack to have any
+    // width from zero to 350 and any height from zero to 600.
+    //
+    // See also:
+    //
+    //  * [Center], which loosens the constraints passed to its child and then
+    //    centers the child in itself.
+    //  * [BoxConstraints.loosen], which implements the loosening of box
+    //    constraints.
     LOOSE = 0;
+    // The constraints passed to the stack from its parent are tightened to the
+    // biggest size allowed.
+    //
+    // For example, if the stack has loose constraints with a width in the range
+    // 10 to 100 and a height in the range 0 to 600, then the non-positioned
+    // children of the stack would all be sized as 100 pixels wide and 600 high.
     EXPAND = 1;
+    // The constraints passed to the stack from its parent are passed unmodified
+    // to the non-positioned children.
+    //
+    // For example, if a [Stack] is an [Expanded] child of a [Row], the
+    // horizontal constraints will be tight and the vertical constraints will be
+    // loose.
     PASSTHROUGH = 2;
   }
 }
 
 // package:flutter/src/rendering/table.dart
+//
+// Vertical alignment options for cells in [RenderTable] objects.
+//
+// This is specified using [TableCellParentData] objects on the
+// [RenderObject.parentData] of the children of the [RenderTable].
 message FlutterTableCellVerticalAlignment {
   enum Enum {
+    // Cells with this alignment are placed with their top at the top of the row.
     TOP = 0;
+    // Cells with this alignment are vertically centered in the row.
     MIDDLE = 1;
+    // Cells with this alignment are placed with their bottom at the bottom of the row.
     BOTTOM = 2;
+    // Cells with this alignment are aligned such that they all share the same
+    // baseline. Cells with no baseline are top-aligned instead. The baseline
+    // used is specified by [RenderTable.textBaseline]. It is not valid to use
+    // the baseline value if [RenderTable.textBaseline] is not specified.
+    //
+    // This vertical alignment is relatively expensive because it causes the table
+    // to compute the baseline for each cell in the row.
     BASELINE = 3;
+    // Cells with this alignment are sized to be as tall as the row, then made to fit the row.
+    // If all the cells have this alignment, then the row will have zero height.
     FILL = 4;
   }
 }
 
 // package:flutter/src/foundation/platform.dart
+//
+// The platform that user interaction should adapt to target.
+//
+// The [defaultTargetPlatform] getter returns the current platform.
+//
+// When using the "flutter run" command, the "o" key will toggle between
+// values of this enum when updating [debugDefaultTargetPlatformOverride].
+// This lets one test how the application will work on various platforms
+// without having to switch emulators or physical devices.
 message FlutterTargetPlatform {
   enum Enum {
+    // Android: <https://www.android.com/>
     ANDROID = 0;
+    // Fuchsia: <https://fuchsia.dev/fuchsia-src/concepts>
     FUCHSIA = 1;
+    // iOS: <https://www.apple.com/ios/>
     I_O_S = 2;
+    // Linux: <https://www.linux.org>
     LINUX = 3;
+    // macOS: <https://www.apple.com/macos>
     MAC_O_S = 4;
+    // Windows: <https://www.windows.com>
     WINDOWS = 5;
   }
 }
 
 // package:flutter/src/services/text_input.dart
+//
+// Configures how the platform keyboard will select an uppercase or
+// lowercase keyboard.
+//
+// Only supports text keyboards, other keyboard types will ignore this
+// configuration. Capitalization is locale-aware.
 message FlutterTextCapitalization {
   enum Enum {
+    // Defaults to an uppercase keyboard for the first letter of each word.
+    //
+    // Corresponds to `InputType.TYPE_TEXT_FLAG_CAP_WORDS` on Android, and
+    // `UITextAutocapitalizationTypeWords` on iOS.
     WORDS = 0;
+    // Defaults to an uppercase keyboard for the first letter of each sentence.
+    //
+    // Corresponds to `InputType.TYPE_TEXT_FLAG_CAP_SENTENCES` on Android, and
+    // `UITextAutocapitalizationTypeSentences` on iOS.
     SENTENCES = 1;
+    // Defaults to an uppercase keyboard for each character.
+    //
+    // Corresponds to `InputType.TYPE_TEXT_FLAG_CAP_CHARACTERS` on Android, and
+    // `UITextAutocapitalizationTypeAllCharacters` on iOS.
     CHARACTERS = 2;
+    // Defaults to a lowercase keyboard.
     NONE = 3;
   }
 }
 
 // package:flutter/src/services/text_input.dart
+//
+// An action the user has requested the text input control to perform.
+//
+// Each action represents a logical meaning, and also configures the soft
+// keyboard to display a certain kind of action button. The visual appearance
+// of the action button might differ between versions of the same OS.
+//
+// Despite the logical meaning of each action, choosing a particular
+// [TextInputAction] does not necessarily cause any specific behavior to
+// happen, other than changing the focus when appropriate. It is up to the
+// developer to ensure that the behavior that occurs when an action button is
+// pressed is appropriate for the action button chosen.
+//
+// For example: If the user presses the keyboard action button on iOS when it
+// reads "Emergency Call", the result should not be a focus change to the next
+// TextField. This behavior is not logically appropriate for a button that says
+// "Emergency Call".
+//
+// See [EditableText] for more information about customizing action button
+// behavior.
+//
+// Most [TextInputAction]s are supported equally by both Android and iOS.
+// However, there is not a complete, direct mapping between Android's IME input
+// types and iOS's keyboard return types. Therefore, some [TextInputAction]s
+// are inappropriate for one of the platforms. If a developer chooses an
+// inappropriate [TextInputAction] when running in debug mode, an error will be
+// thrown. If the same thing is done in release mode, then instead of sending
+// the inappropriate value, Android will use "unspecified" on the platform
+// side and iOS will use "default" on the platform side.
+//
+// See also:
+//
+//  * [TextInput], which configures the platform's keyboard setup.
+//  * [EditableText], which invokes callbacks when the action button is pressed.
 message FlutterTextInputAction {
   enum Enum {
+    // Logical meaning: There is no relevant input action for the current input
+    // source, e.g., [TextField].
+    //
+    // Android: Corresponds to Android's "IME_ACTION_NONE". The keyboard setup
+    // is decided by the OS. The keyboard will likely show a return key.
+    //
+    // iOS: iOS does not have a keyboard return type of "none." It is
+    // inappropriate to choose this [TextInputAction] when running on iOS.
     NONE = 0;
+    // Logical meaning: Let the OS decide which action is most appropriate.
+    //
+    // Android: Corresponds to Android's "IME_ACTION_UNSPECIFIED". The OS chooses
+    // which keyboard action to display. The decision will likely be a done
+    // button or a return key.
+    //
+    // iOS: Corresponds to iOS's "UIReturnKeyDefault". The title displayed in
+    // the action button is "return".
     UNSPECIFIED = 1;
+    // Logical meaning: The user is done providing input to a group of inputs
+    // (like a form). Some kind of finalization behavior should now take place.
+    //
+    // Android: Corresponds to Android's "IME_ACTION_DONE". The OS displays a
+    // button that represents completion, e.g., a checkmark button.
+    //
+    // iOS: Corresponds to iOS's "UIReturnKeyDone". The title displayed in the
+    // action button is "Done".
     DONE = 2;
+    // Logical meaning: The user has entered some text that represents a
+    // destination, e.g., a restaurant name. The "go" button is intended to take
+    // the user to a part of the app that corresponds to this destination.
+    //
+    // Android: Corresponds to Android's "IME_ACTION_GO". The OS displays a
+    // button that represents taking "the user to the target of the text they
+    // typed", e.g., a right-facing arrow button.
+    //
+    // iOS: Corresponds to iOS's "UIReturnKeyGo". The title displayed in the
+    // action button is "Go".
     GO = 3;
+    // Logical meaning: Execute a search query.
+    //
+    // Android: Corresponds to Android's "IME_ACTION_SEARCH". The OS displays a
+    // button that represents a search, e.g., a magnifying glass button.
+    //
+    // iOS: Corresponds to iOS's "UIReturnKeySearch". The title displayed in the
+    // action button is "Search".
     SEARCH = 4;
+    // Logical meaning: Sends something that the user has composed, e.g., an
+    // email or a text message.
+    //
+    // Android: Corresponds to Android's "IME_ACTION_SEND". The OS displays a
+    // button that represents sending something, e.g., a paper plane button.
+    //
+    // iOS: Corresponds to iOS's "UIReturnKeySend". The title displayed in the
+    // action button is "Send".
     SEND = 5;
+    // Logical meaning: The user is done with the current input source and wants
+    // to move to the next one.
+    //
+    // Moves the focus to the next focusable item in the same [FocusScope].
+    //
+    // Android: Corresponds to Android's "IME_ACTION_NEXT". The OS displays a
+    // button that represents moving forward, e.g., a right-facing arrow button.
+    //
+    // iOS: Corresponds to iOS's "UIReturnKeyNext". The title displayed in the
+    // action button is "Next".
     NEXT = 6;
+    // Logical meaning: The user wishes to return to the previous input source
+    // in the group, e.g., a form with multiple [TextField]s.
+    //
+    // Moves the focus to the previous focusable item in the same [FocusScope].
+    //
+    // Android: Corresponds to Android's "IME_ACTION_PREVIOUS". The OS displays a
+    // button that represents moving backward, e.g., a left-facing arrow button.
+    //
+    // iOS: iOS does not have a keyboard return type of "previous." It is
+    // inappropriate to choose this [TextInputAction] when running on iOS.
     PREVIOUS = 7;
+    // Logical meaning: In iOS apps, it is common for a "Back" button and
+    // "Continue" button to appear at the top of the screen. However, when the
+    // keyboard is open, these buttons are often hidden off-screen. Therefore,
+    // the purpose of the "Continue" return key on iOS is to make the "Continue"
+    // button available when the user is entering text.
+    //
+    // Historical context aside, [TextInputAction.continueAction] can be used any
+    // time that the term "Continue" seems most appropriate for the given action.
+    //
+    // Android: Android does not have an IME input type of "continue." It is
+    // inappropriate to choose this [TextInputAction] when running on Android.
+    //
+    // iOS: Corresponds to iOS's "UIReturnKeyContinue". The title displayed in the
+    // action button is "Continue". This action is only available on iOS 9.0+.
+    //
+    // The reason that this value has "Action" post-fixed to it is because
+    // "continue" is a reserved word in Dart, as well as many other languages.
     CONTINUE_ACTION = 8;
+    // Logical meaning: The user wants to join something, e.g., a wireless
+    // network.
+    //
+    // Android: Android does not have an IME input type of "join." It is
+    // inappropriate to choose this [TextInputAction] when running on Android.
+    //
+    // iOS: Corresponds to iOS's "UIReturnKeyJoin". The title displayed in the
+    // action button is "Join".
     JOIN = 9;
+    // Logical meaning: The user wants routing options, e.g., driving directions.
+    //
+    // Android: Android does not have an IME input type of "route." It is
+    // inappropriate to choose this [TextInputAction] when running on Android.
+    //
+    // iOS: Corresponds to iOS's "UIReturnKeyRoute". The title displayed in the
+    // action button is "Route".
     ROUTE = 10;
+    // Logical meaning: Initiate a call to emergency services.
+    //
+    // Android: Android does not have an IME input type of "emergencyCall." It is
+    // inappropriate to choose this [TextInputAction] when running on Android.
+    //
+    // iOS: Corresponds to iOS's "UIReturnKeyEmergencyCall". The title displayed
+    // in the action button is "Emergency Call".
     EMERGENCY_CALL = 11;
+    // Logical meaning: Insert a newline character in the focused text input,
+    // e.g., [TextField].
+    //
+    // Android: Corresponds to Android's "IME_ACTION_NONE". The OS displays a
+    // button that represents a new line, e.g., a carriage return button.
+    //
+    // iOS: Corresponds to iOS's "UIReturnKeyDefault". The title displayed in the
+    // action button is "return".
+    //
+    // The term [TextInputAction.newline] exists in Flutter but not in Android
+    // or iOS. The reason for introducing this term is so that developers can
+    // achieve the common result of inserting new lines without needing to
+    // understand the various IME actions on Android and return keys on iOS.
+    // Thus, [TextInputAction.newline] is a convenience term that alleviates the
+    // need to understand the underlying platforms to achieve this common behavior.
     NEWLINE = 12;
   }
 }
 
 // package:flutter/src/painting/text_painter.dart
+//
+// How overflowing text should be handled.
+//
+// A [TextOverflow] can be passed to [Text] and [RichText] via their
+// [Text.overflow] and [RichText.overflow] properties respectively.
 message FlutterTextOverflow {
   enum Enum {
+    // Clip the overflowing text to fix its container.
     CLIP = 0;
+    // Fade the overflowing text to transparent.
     FADE = 1;
+    // Use an ellipsis to indicate that the text has overflowed.
     ELLIPSIS = 2;
+    // Render overflowing text outside of its container.
     VISIBLE = 3;
   }
 }
 
 // package:flutter/src/painting/text_painter.dart
+//
+// The different ways of measuring the width of one or more lines of text.
+//
+// See [Text.textWidthBasis], for example.
 message FlutterTextWidthBasis {
   enum Enum {
+    // multiline text will take up the full width given by the parent. For single
+    // line text, only the minimum amount of width needed to contain the text
+    // will be used. A common use case for this is a standard series of
+    // paragraphs.
     PARENT = 0;
+    // The width will be exactly enough to contain the longest line and no
+    // longer. A common use case for this is chat bubbles.
     LONGEST_LINE = 1;
   }
 }
 
 // package:flutter/src/widgets/focus_traversal.dart
+//
+// A direction along either the horizontal or vertical axes.
+//
+// This is used by the [DirectionalFocusTraversalPolicyMixin], and
+// [FocusNode.focusInDirection] to indicate which direction to look in for the
+// next focus.
 message FlutterTraversalDirection {
   enum Enum {
+    // Indicates a direction above the currently focused widget.
     UP = 0;
+    // Indicates a direction to the right of the currently focused widget.
+    //
+    // This direction is unaffected by the [Directionality] of the current
+    // context.
     RIGHT = 1;
+    // Indicates a direction below the currently focused widget.
     DOWN = 2;
+    // Indicates a direction to the left of the currently focused widget.
+    //
+    // This direction is unaffected by the [Directionality] of the current
+    // context.
     LEFT = 3;
   }
 }
 
 // package:flutter/src/widgets/focus_traversal.dart
+//
+// Controls the transfer of focus beyond the first and the last items of a
+// [FocusScopeNode].
+//
+// This enumeration only controls the traversal behavior performed by
+// [FocusTraversalPolicy]. Other methods of focus transfer, such as direct
+// calls to [FocusNode.requestFocus] and [FocusNode.unfocus], are not affected
+// by this enumeration.
+//
+// See also:
+//
+// * [FocusTraversalPolicy], which implements the logic behind this enum.
+// * [FocusScopeNode], which is configured by this enum.
 message FlutterTraversalEdgeBehavior {
   enum Enum {
+    // Keeps the focus among the items of the focus scope.
+    //
+    // Requesting the next focus after the last focusable item will transfer the
+    // focus to the first item, and requesting focus previous to the first item
+    // will transfer the focus to the last item, thus forming a closed loop of
+    // focusable items.
     CLOSED_LOOP = 0;
+    // Allows the focus to leave the [FlutterView].
+    //
+    // Requesting next focus after the last focusable item or previous to the
+    // first item will unfocus any focused nodes. If the focus traversal action
+    // was initiated by the embedder (e.g. the Flutter Engine) the embedder
+    // receives a result indicating that the focus is no longer within the
+    // current [FlutterView]. For example, [NextFocusAction] invoked via keyboard
+    // (typically the TAB key) would receive [KeyEventResult.skipRemainingHandlers]
+    // allowing the embedder handle the shortcut. On the web, typically the
+    // control is transferred to the browser, allowing the user to reach the
+    // address bar, escape an `iframe`, or focus on HTML elements other than
+    // those managed by Flutter.
     LEAVE_FLUTTER_VIEW = 1;
   }
 }
 
 // package:flutter/src/painting/basic_types.dart
+//
+// A direction in which boxes flow vertically.
+//
+// This is used by the flex algorithm (e.g. [Column]) to decide in which
+// direction to draw boxes.
+//
+// This is also used to disambiguate `start` and `end` values (e.g.
+// [MainAxisAlignment.start] or [CrossAxisAlignment.end]).
+//
+// See also:
+//
+//  * [TextDirection], which controls the same thing but horizontally.
 message FlutterVerticalDirection {
   enum Enum {
+    // Boxes should start at the bottom and be stacked vertically towards the top.
+    //
+    // The "start" is at the bottom, the "end" is at the top.
     UP = 0;
+    // Boxes should start at the top and be stacked vertically towards the bottom.
+    //
+    // The "start" is at the top, the "end" is at the bottom.
     DOWN = 1;
   }
 }
 
 // package:flutter/src/rendering/wrap.dart
+//
+// How [Wrap] should align objects.
+//
+// Used both to align children within a run in the main axis as well as to
+// align the runs themselves in the cross axis.
 message FlutterWrapAlignment {
   enum Enum {
+    // Place the objects as close to the start of the axis as possible.
+    //
+    // If this value is used in a horizontal direction, a [TextDirection] must be
+    // available to determine if the start is the left or the right.
+    //
+    // If this value is used in a vertical direction, a [VerticalDirection] must be
+    // available to determine if the start is the top or the bottom.
     START = 0;
+    // Place the objects as close to the end of the axis as possible.
+    //
+    // If this value is used in a horizontal direction, a [TextDirection] must be
+    // available to determine if the end is the left or the right.
+    //
+    // If this value is used in a vertical direction, a [VerticalDirection] must be
+    // available to determine if the end is the top or the bottom.
     END = 1;
+    // Place the objects as close to the middle of the axis as possible.
     CENTER = 2;
+    // Place the free space evenly between the objects.
     SPACE_BETWEEN = 3;
+    // Place the free space evenly between the objects as well as half of that
+    // space before and after the first and last objects.
     SPACE_AROUND = 4;
+    // Place the free space evenly between the objects as well as before and
+    // after the first and last objects.
     SPACE_EVENLY = 5;
   }
 }
 
 // package:flutter/src/rendering/wrap.dart
+//
+// Who [Wrap] should align children within a run in the cross axis.
 message FlutterWrapCrossAlignment {
   enum Enum {
+    // Place the children as close to the start of the run in the cross axis as
+    // possible.
+    //
+    // If this value is used in a horizontal direction, a [TextDirection] must be
+    // available to determine if the start is the left or the right.
+    //
+    // If this value is used in a vertical direction, a [VerticalDirection] must be
+    // available to determine if the start is the top or the bottom.
     START = 0;
+    // Place the children as close to the end of the run in the cross axis as
+    // possible.
+    //
+    // If this value is used in a horizontal direction, a [TextDirection] must be
+    // available to determine if the end is the left or the right.
+    //
+    // If this value is used in a vertical direction, a [VerticalDirection] must be
+    // available to determine if the end is the top or the bottom.
     END = 1;
+    // Place the children as close to the middle of the run in the cross axis as
+    // possible.
     CENTER = 2;
   }
 }
 
 // package:flutter/src/material/bottom_navigation_bar.dart
+//
+// Refines the layout of a [BottomNavigationBar] when the enclosing
+// [MediaQueryData.orientation] is [Orientation.landscape].
 message MaterialBottomNavigationBarLandscapeLayout {
   enum Enum {
+    // If the enclosing [MediaQueryData.orientation] is
+    // [Orientation.landscape] then the navigation bar's items are
+    // evenly spaced and spread out across the available width. Each
+    // item's label and icon are arranged in a column.
     SPREAD = 0;
+    // If the enclosing [MediaQueryData.orientation] is
+    // [Orientation.landscape] then the navigation bar's items are
+    // evenly spaced in a row but only consume as much width as they
+    // would in portrait orientation. The row of items is centered within
+    // the available width. Each item's label and icon are arranged
+    // in a column.
     CENTERED = 1;
+    // If the enclosing [MediaQueryData.orientation] is
+    // [Orientation.landscape] then the navigation bar's items are
+    // evenly spaced and each item's icon and label are lined up in a
+    // row instead of a column.
     LINEAR = 2;
   }
 }
 
 // package:flutter/src/material/bottom_navigation_bar.dart
+//
+// Defines the layout and behavior of a [BottomNavigationBar].
+//
+// For a sample on how to use these, please see [BottomNavigationBar].
+// See also:
+//
+//  * [BottomNavigationBar]
+//  * [BottomNavigationBarItem]
+//  * <https://material.io/design/components/bottom-navigation.html#specs>
 message MaterialBottomNavigationBarType {
   enum Enum {
+    // The [BottomNavigationBar]'s [BottomNavigationBarItem]s have fixed width.
     FIXED = 0;
+    // The location and size of the [BottomNavigationBar] [BottomNavigationBarItem]s
+    // animate and labels fade in when they are tapped.
     SHIFTING = 1;
   }
 }
 
 // package:flutter/src/material/button_theme.dart
+//
+// Used with [ButtonTheme] and [ButtonThemeData] to define how the button bar
+// should size itself with either constraints or internal padding.
 message MaterialButtonBarLayoutBehavior {
   enum Enum {
+    // Button bars will be constrained to a minimum height of 52.
+    //
+    // This setting is require to create button bars which conform to the
+    // Material Design specification.
     CONSTRAINED = 0;
+    // Button bars will calculate their padding from the button theme padding.
     PADDED = 1;
   }
 }
 
 // package:flutter/src/material/button_theme.dart
+//
+// Used with [ButtonTheme] and [ButtonThemeData] to define a button's base
+// colors, and the defaults for the button's minimum size, internal padding,
+// and shape.
 message MaterialButtonTextTheme {
   enum Enum {
+    // Button text is black or white depending on [ThemeData.brightness].
     NORMAL = 0;
+    // Button text is [ColorScheme.secondary].
     ACCENT = 1;
+    // Button text is based on [ThemeData.primaryColor].
     PRIMARY = 2;
   }
 }
 
 // package:flutter/src/material/flexible_space_bar.dart
+//
+// The collapsing effect while the space bar collapses from its full size.
 message MaterialCollapseMode {
   enum Enum {
+    // The background widget will scroll in a parallax fashion.
     PARALLAX = 0;
+    // The background widget pin in place until it reaches the min extent.
     PIN = 1;
+    // The background widget will act as normal with no collapsing effect.
     NONE = 2;
   }
 }
 
 // package:flutter/src/material/date.dart
+//
+// Mode of date entry method for the date picker dialog.
+//
+// In [calendar] mode, a calendar grid is displayed and the user taps the
+// day they wish to select. In [input] mode a TextField] is displayed and
+// the user types in the date they wish to select.
+//
+// [calendarOnly] and [inputOnly] are variants of the above that don't
+// allow the user to change to the mode.
+//
+// See also:
+//
+//  * [showDatePicker] and [showDateRangePicker], which use this to control
+//    the initial entry mode of their dialogs.
 message MaterialDatePickerEntryMode {
   enum Enum {
+    // User picks a date from calendar grid. Can switch to [input] by activating
+    // a mode button in the dialog.
     CALENDAR = 0;
+    // User can input the date by typing it into a text field.
+    //
+    // Can switch to [calendar] by activating a mode button in the dialog.
     INPUT = 1;
+    // User can only pick a date from calendar grid.
+    //
+    // There is no user interface to switch to another mode.
     CALENDAR_ONLY = 2;
+    // User can only input the date by typing it into a text field.
+    //
+    // There is no user interface to switch to another mode.
     INPUT_ONLY = 3;
   }
 }
 
 // package:flutter/src/material/date.dart
+//
+// Initial display of a calendar date picker.
+//
+// Either a grid of available years or a monthly calendar.
+//
+// See also:
+//
+//  * [showDatePicker], which shows a dialog that contains a Material Design
+//    date picker.
+//  * [CalendarDatePicker], widget which implements the Material Design date picker.
 message MaterialDatePickerMode {
   enum Enum {
+    // Choosing a month and day.
     DAY = 0;
+    // Choosing a year.
     YEAR = 1;
   }
 }
 
 // package:flutter/src/material/drawer.dart
+//
+// The possible alignments of a [Drawer].
 message MaterialDrawerAlignment {
   enum Enum {
+    // Denotes that the [Drawer] is at the start side of the [Scaffold].
+    //
+    // This corresponds to the left side when the text direction is left-to-right
+    // and the right side when the text direction is right-to-left.
     START = 0;
+    // Denotes that the [Drawer] is at the end side of the [Scaffold].
+    //
+    // This corresponds to the right side when the text direction is left-to-right
+    // and the left side when the text direction is right-to-left.
     END = 1;
   }
 }
 
 // package:flutter/src/material/input_decorator.dart
+//
+// Defines **how** the floating label should behave.
+//
+// See also:
+//
+//  * [InputDecoration.floatingLabelBehavior] which defines the behavior for
+//    [InputDecoration.label] or [InputDecoration.labelText].
+//  * [FloatingLabelAlignment] which defines **where** the floating label
+//    should displayed.
 message MaterialFloatingLabelBehavior {
   enum Enum {
+    // The label will always be positioned within the content, or hidden.
     NEVER = 0;
+    // The label will float when the input is focused, or has content.
     AUTO = 1;
+    // The label will always float above the content.
     ALWAYS = 2;
   }
 }
 
 // package:flutter/src/material/list_tile.dart
+//
+// Where to place the control in widgets that use [ListTile] to position a
+// control next to a label.
+//
+// See also:
+//
+//  * [CheckboxListTile], which combines a [ListTile] with a [Checkbox].
+//  * [RadioListTile], which combines a [ListTile] with a [Radio] button.
+//  * [SwitchListTile], which combines a [ListTile] with a [Switch].
+//  * [ExpansionTile], which combines a [ListTile] with a button that expands
+//    or collapses the tile to reveal or hide the children.
 message MaterialListTileControlAffinity {
   enum Enum {
+    // Position the control on the leading edge, and the secondary widget, if
+    // any, on the trailing edge.
     LEADING = 0;
+    // Position the control on the trailing edge, and the secondary widget, if
+    // any, on the leading edge.
     TRAILING = 1;
+    // Position the control relative to the text in the fashion that is typical
+    // for the current platform, and place the secondary widget on the opposite
+    // side.
     PLATFORM = 2;
   }
 }
 
 // package:flutter/src/material/list_tile.dart
+//
+// Defines the title font used for [ListTile] descendants of a [ListTileTheme].
+//
+// List tiles that appear in a [Drawer] use the theme's [TextTheme.bodyLarge]
+// text style, which is a little smaller than the theme's [TextTheme.titleMedium]
+// text style, which is used by default.
 message MaterialListTileStyle {
   enum Enum {
+    // Use a title font that's appropriate for a [ListTile] in a list.
     LIST = 0;
+    // Use a title font that's appropriate for a [ListTile] that appears in a [Drawer].
     DRAWER = 1;
   }
 }
 
 // package:flutter/src/material/list_tile.dart
+//
+// Defines how [ListTile.leading] and [ListTile.trailing] are
+// vertically aligned relative to the [ListTile]'s titles
+// ([ListTile.title] and [ListTile.subtitle]).
+//
+// See also:
+//
+//  * [ListTile.titleAlignment], to configure the title alignment for an
+//    individual [ListTile].
+//  * [ListTileThemeData.titleAlignment], to configure the title alignment
+//    for all of the [ListTile]s under a [ListTileTheme].
+//  * [ThemeData.listTileTheme], to configure the [ListTileTheme]
+//    for an entire app.
 message MaterialListTileTitleAlignment {
   enum Enum {
+    // The top of the [ListTile.leading] and [ListTile.trailing] widgets are
+    // placed [ListTile.minVerticalPadding] below the top of the [ListTile.title]
+    // if [ListTile.isThreeLine] is true, otherwise they're centered relative
+    // to the [ListTile.title] and [ListTile.subtitle] widgets.
+    //
+    // This is the default when [ThemeData.useMaterial3] is true.
     THREE_LINE = 0;
+    // The tops of the [ListTile.leading] and [ListTile.trailing] widgets are
+    // placed 16 units below the top of the [ListTile.title]
+    // if the titles' overall height is greater than 72, otherwise they're
+    // centered relative to the [ListTile.title] and [ListTile.subtitle] widgets.
+    //
+    // This is the default when [ThemeData.useMaterial3] is false.
     TITLE_HEIGHT = 1;
+    // The tops of the [ListTile.leading] and [ListTile.trailing] widgets are
+    // placed [ListTile.minVerticalPadding] below the top of the [ListTile.title].
     TOP = 2;
+    // The [ListTile.leading] and [ListTile.trailing] widgets are
+    // centered relative to the [ListTile]'s titles.
     CENTER = 3;
+    // The bottoms of the [ListTile.leading] and [ListTile.trailing] widgets are
+    // placed [ListTile.minVerticalPadding] above the bottom of the [ListTile]'s
+    // titles.
     BOTTOM = 4;
   }
 }
 
 // package:flutter/src/material/theme_data.dart
+//
+// Configures the tap target and layout size of certain Material widgets.
+//
+// Changing the value in [ThemeData.materialTapTargetSize] will affect the
+// accessibility experience.
+//
+// Some of the impacted widgets include:
+//
+//   * [FloatingActionButton], only the mini tap target size is increased.
+//   * [MaterialButton]
+//   * [OutlinedButton]
+//   * [TextButton]
+//   * [ElevatedButton]
+//   * [IconButton]
+//   * The time picker widget ([showTimePicker])
+//   * [SnackBar]
+//   * [Chip]
+//   * [RawChip]
+//   * [InputChip]
+//   * [ChoiceChip]
+//   * [FilterChip]
+//   * [ActionChip]
+//   * [Radio]
+//   * [Switch]
+//   * [Checkbox]
 message MaterialMaterialTapTargetSize {
   enum Enum {
+    // Expands the minimum tap target size to 48px by 48px.
+    //
+    // This is the default value of [ThemeData.materialTapTargetSize] and the
+    // recommended size to conform to Android accessibility scanner
+    // recommendations.
     PADDED = 0;
+    // Shrinks the tap target size to the minimum provided by the Material
+    // specification.
     SHRINK_WRAP = 1;
   }
 }
 
 // package:flutter/src/material/material.dart
+//
+// The various kinds of material in Material Design. Used to
+// configure the default behavior of [Material] widgets.
+//
+// See also:
+//
+//  * [Material], in particular [Material.type].
+//  * [kMaterialEdges]
 message MaterialMaterialType {
   enum Enum {
+    // Rectangle using default theme canvas color.
     CANVAS = 0;
+    // Rounded edges, card theme color.
     CARD = 1;
+    // A circle, no color by default (used for floating action buttons).
     CIRCLE = 2;
+    // Rounded edges, no color by default (used for [MaterialButton] buttons).
     BUTTON = 3;
+    // A transparent piece of material that draws ink splashes and highlights.
+    //
+    // While the material metaphor describes child widgets as printed on the
+    // material itself and do not hide ink effects, in practice the [Material]
+    // widget draws child widgets on top of the ink effects.
+    // A [Material] with type transparency can be placed on top of opaque widgets
+    // to show ink effects on top of them.
+    //
+    // Prefer using the [Ink] widget for showing ink effects on top of opaque
+    // widgets.
     TRANSPARENCY = 4;
   }
 }
 
 // package:flutter/src/material/navigation_bar.dart
+//
+// Specifies when each [NavigationDestination]'s label should appear.
+//
+// This is used to determine the behavior of [NavigationBar]'s destinations.
 message MaterialNavigationDestinationLabelBehavior {
   enum Enum {
+    // Always shows all of the labels under each navigation bar destination,
+    // selected and unselected.
     ALWAYS_SHOW = 0;
+    // Never shows any of the labels under the navigation bar destinations,
+    // regardless of selected vs unselected.
     ALWAYS_HIDE = 1;
+    // Only shows the labels of the selected navigation bar destination.
+    //
+    // When a destination is unselected, the label will be faded out, and the
+    // icon will be centered.
+    //
+    // When a destination is selected, the label will fade in and the label and
+    // icon will slide up so that they are both centered.
     ONLY_SHOW_SELECTED = 2;
   }
 }
 
 // package:flutter/src/material/navigation_rail.dart
+//
+// Defines the behavior of the labels of a [NavigationRail].
+//
+// See also:
+//
+//   * [NavigationRail]
 message MaterialNavigationRailLabelType {
   enum Enum {
+    // Only the [NavigationRailDestination]s are shown.
     NONE = 0;
+    // Only the selected [NavigationRailDestination] will show its label.
+    //
+    // The label will animate in and out as new [NavigationRailDestination]s are
+    // selected.
     SELECTED = 1;
+    // All [NavigationRailDestination]s will show their label.
     ALL = 2;
   }
 }
 
 // package:flutter/src/material/popup_menu_theme.dart
+//
+// Used to configure how the [PopupMenuButton] positions its popup menu.
 message MaterialPopupMenuPosition {
   enum Enum {
+    // Menu is positioned over the anchor.
     OVER = 0;
+    // Menu is positioned under the anchor.
     UNDER = 1;
   }
 }
 
 // package:flutter/src/material/slider_theme.dart
+//
+// Describes the conditions under which the value indicator on a [Slider]
+// will be shown. Used with [SliderThemeData.showValueIndicator].
+//
+// See also:
+//
+//  * [Slider], a Material Design slider widget.
+//  * [SliderThemeData], which describes the actual configuration of a slider
+//    theme.
 message MaterialShowValueIndicator {
   enum Enum {
+    // The value indicator will only be shown for discrete sliders (sliders
+    // where [Slider.divisions] is non-null).
     ONLY_FOR_DISCRETE = 0;
+    // The value indicator will only be shown for continuous sliders (sliders
+    // where [Slider.divisions] is null).
     ONLY_FOR_CONTINUOUS = 1;
+    // The value indicator will be shown for all types of sliders.
     ALWAYS = 2;
+    // The value indicator will never be shown.
     NEVER = 3;
   }
 }
 
 // package:flutter/src/material/slider.dart
+//
+// Possible ways for a user to interact with a [Slider].
 message MaterialSliderInteraction {
   enum Enum {
+    // Allows the user to interact with a [Slider] by tapping or sliding anywhere
+    // on the track.
+    //
+    // Essentially all possible interactions are allowed.
+    //
+    // This is different from [SliderInteraction.slideOnly] as when you try
+    // to slide anywhere other than the thumb, the thumb will move to the first
+    // point of contact.
     TAP_AND_SLIDE = 0;
+    // Allows the user to interact with a [Slider] by only tapping anywhere on
+    // the track.
+    //
+    // Sliding interaction is ignored.
     TAP_ONLY = 1;
+    // Allows the user to interact with a [Slider] only by sliding anywhere on
+    // the track.
+    //
+    // Tapping interaction is ignored.
     SLIDE_ONLY = 2;
+    // Allows the user to interact with a [Slider] only by sliding the thumb.
+    //
+    // Tapping and sliding interactions on the track are ignored.
     SLIDE_THUMB = 3;
   }
 }
 
 // package:flutter/src/material/snack_bar_theme.dart
+//
+// Defines where a [SnackBar] should appear within a [Scaffold] and how its
+// location should be adjusted when the scaffold also includes a
+// [FloatingActionButton] or a [BottomNavigationBar].
 message MaterialSnackBarBehavior {
   enum Enum {
+    // Fixes the [SnackBar] at the bottom of the [Scaffold].
+    //
+    // The exception is that the [SnackBar] will be shown above a
+    // [BottomNavigationBar] or a [NavigationBar]. Additionally, the [SnackBar]
+    // will cause other non-fixed widgets inside [Scaffold] to be pushed above
+    // (for example, the [FloatingActionButton]).
     FIXED = 0;
+    // This behavior will cause [SnackBar] to be shown above other widgets in the
+    // [Scaffold]. This includes being displayed above a [BottomNavigationBar] or
+    // a [NavigationBar], and a [FloatingActionButton] when its location is on the
+    // bottom. When the floating action button location is on the top, this behavior
+    // will cause the [SnackBar] to be shown above other widgets in the [Scaffold]
+    // except the floating action button.
+    //
+    // See <https://material.io/design/components/snackbars.html> for more details.
     FLOATING = 1;
   }
 }
 
 // package:flutter/src/material/stepper.dart
+//
+// The state of a [Step] which is used to control the style of the circle and
+// text.
+//
+// See also:
+//
+//  * [Step]
 message MaterialStepState {
   enum Enum {
+    // A step that displays its index in its circle.
     INDEXED = 0;
+    // A step that displays a pencil icon in its circle.
     EDITING = 1;
+    // A step that displays a tick icon in its circle.
     COMPLETE = 2;
+    // A step that is disabled and does not to react to taps.
     DISABLED = 3;
+    // A step that is currently having an error. e.g. the user has submitted wrong
+    // input.
     ERROR = 4;
   }
 }
 
 // package:flutter/src/material/stepper.dart
+//
+// Defines the [Stepper]'s main axis.
 message MaterialStepperType {
   enum Enum {
+    // A vertical layout of the steps with their content in-between the titles.
     VERTICAL = 0;
+    // A horizontal layout of the steps with their content below the titles.
     HORIZONTAL = 1;
   }
 }
 
 // package:flutter/src/material/flexible_space_bar.dart
+//
+// The stretching effect while the space bar stretches beyond its full size.
 message MaterialStretchMode {
   enum Enum {
+    // The background widget will expand to fill the extra space.
     ZOOM_BACKGROUND = 0;
+    // The background will blur using a [ImageFilter.blur] effect.
     BLUR_BACKGROUND = 1;
+    // The title will fade away as the user over-scrolls.
     FADE_TITLE = 2;
   }
 }
 
 // package:flutter/src/material/tabs.dart
+//
+// Defines how tabs are aligned horizontally in a [TabBar].
+//
+// See also:
+//
+//   * [TabBar], which displays a row of tabs.
+//   * [TabBarView], which displays a widget for the currently selected tab.
+//   * [TabBar.tabAlignment], which defines the horizontal alignment of the
+//     tabs within the [TabBar].
 message MaterialTabAlignment {
   enum Enum {
+    // If [TabBar.isScrollable] is true, tabs are aligned to the
+    // start of the [TabBar]. Otherwise throws an exception.
+    //
+    // It is not recommended to set [TabAlignment.start] when
+    // [ThemeData.useMaterial3] is false.
     START = 0;
+    // If [TabBar.isScrollable] is true, tabs are aligned to the
+    // start of the [TabBar] with an offset of 52.0 pixels.
+    // Otherwise throws an exception.
+    //
+    // It is not recommended to set [TabAlignment.startOffset] when
+    // [ThemeData.useMaterial3] is false.
     START_OFFSET = 1;
+    // If [TabBar.isScrollable] is false, tabs are stretched to fill the
+    // [TabBar]. Otherwise throws an exception.
     FILL = 2;
+    // Tabs are aligned to the center of the [TabBar].
     CENTER = 3;
   }
 }
 
 // package:flutter/src/material/tabs.dart
+//
+// Defines how the bounds of the selected tab indicator are computed.
+//
+// See also:
+//
+//  * [TabBar], which displays a row of tabs.
+//  * [TabBarView], which displays a widget for the currently selected tab.
+//  * [TabBar.indicator], which defines the appearance of the selected tab
+//    indicator relative to the tab's bounds.
 message MaterialTabBarIndicatorSize {
   enum Enum {
+    // The tab indicator's bounds are as wide as the space occupied by the tab
+    // in the tab bar: from the right edge of the previous tab to the left edge
+    // of the next tab.
     TAB = 0;
+    // The tab's bounds are only as wide as the (centered) tab widget itself.
+    //
+    // This value is used to align the tab's label, typically a [Tab]
+    // widget's text or icon, with the selected tab indicator.
     LABEL = 1;
   }
 }
 
 // package:flutter/src/material/app.dart
+//
+// Describes which theme will be used by [MaterialApp].
 message MaterialThemeMode {
   enum Enum {
+    // Use either the light or dark theme based on what the user has selected in
+    // the system settings.
     SYSTEM = 0;
+    // Always use the light mode regardless of system preference.
     LIGHT = 1;
+    // Always use the dark mode (if available) regardless of system preference.
     DARK = 2;
   }
 }
 
 // package:flutter/src/material/time_picker.dart
+//
+// Interactive input mode of the time picker dialog.
+//
+// In [TimePickerEntryMode.dial] mode, a clock dial is displayed and the user
+// taps or drags the time they wish to select. In TimePickerEntryMode.input]
+// mode, [TextField]s are displayed and the user types in the time they wish to
+// select.
+//
+// See also:
+//
+// * [showTimePicker], a function that shows a [TimePickerDialog] and returns
+//   the selected time as a [Future].
 message MaterialTimePickerEntryMode {
   enum Enum {
+    // User picks time from a clock dial.
+    //
+    // Can switch to [input] by activating a mode button in the dialog.
     DIAL = 0;
+    // User can input the time by typing it into text fields.
+    //
+    // Can switch to [dial] by activating a mode button in the dialog.
     INPUT = 1;
+    // User can only pick time from a clock dial.
+    //
+    // There is no user interface to switch to another mode.
     DIAL_ONLY = 2;
+    // User can only input the time by typing it into text fields.
+    //
+    // There is no user interface to switch to another mode.
     INPUT_ONLY = 3;
   }
 }
 
 // package:flutter/src/material/tooltip_theme.dart
+//
+// The method of interaction that will trigger a tooltip.
+// Used in [Tooltip.triggerMode] and [TooltipThemeData.triggerMode].
+//
+// On desktop, a tooltip will be shown as soon as a pointer hovers over
+// the widget, regardless of the value of [Tooltip.triggerMode].
+//
+// See also:
+//
+//   * [Tooltip.waitDuration], which defines the length of time that
+//     a pointer must hover over a tooltip's widget before the tooltip
+//     will be shown.
 message MaterialTooltipTriggerMode {
   enum Enum {
+    // Tooltip will only be shown by calling `ensureTooltipVisible`.
     MANUAL = 0;
+    // Tooltip will be shown after a long press.
+    //
+    // See also:
+    //
+    //   * [GestureDetector.onLongPress], the event that is used for trigger.
+    //   * [Feedback.forLongPress], the feedback method called when feedback is enabled.
     LONG_PRESS = 1;
+    // Tooltip will be shown after a single tap.
+    //
+    // See also:
+    //
+    //   * [GestureDetector.onTap], the event that is used for trigger.
+    //   * [Feedback.forTap], the feedback method called when feedback is enabled.
     TAP = 2;
   }
 }
 
 // package:flutter/src/cupertino/text_field.dart
+//
+// Visibility of text field overlays based on the state of the current text entry.
+//
+// Used to toggle the visibility behavior of the optional decorating widgets
+// surrounding the [EditableText] such as the clear text button.
 message OverlayVisibilityMode {
   enum Enum {
+    // Overlay will never appear regardless of the text entry state.
     NEVER = 0;
+    // Overlay will only appear when the current text entry is not empty.
+    //
+    // This includes prefilled text that the user did not type in manually. But
+    // does not include text in placeholders.
     EDITING = 1;
+    // Overlay will only appear when the current text entry is empty.
+    //
+    // This also includes not having prefilled text that the user did not type
+    // in manually. Texts in placeholders are ignored.
     NOT_EDITING = 2;
+    // Always show the overlay regardless of the text entry state.
     ALWAYS = 3;
   }
 }

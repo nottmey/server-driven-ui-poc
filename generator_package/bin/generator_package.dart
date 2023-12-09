@@ -58,7 +58,6 @@ build/
     resourceProvider: PhysicalResourceProvider.INSTANCE,
   );
 
-  // TODO annotate fields and types with docs
   // TODO find a better way to generate time stable field numbers (maybe via committed dictionary)
   // TODO observe and optimize performance
   // TODO create watch mode, maybe optimize more with incremental updates

@@ -5,11 +5,15 @@ import 'package:generator_package/constants.dart';
 import 'package:generator_package/models/constructor.dart';
 import 'package:generator_package/models/type_mapping.dart';
 import 'package:generator_package/to_default_value_expression_extension.dart';
+import 'package:generator_package/to_parameter_docs_extension.dart';
+import 'package:generator_package/to_proto_docs_extension.dart';
 import 'package:generator_package/to_reusable_source_extension.dart';
 import 'package:recase/recase.dart';
 
 class Parameter {
   final ParameterElement element;
+
+  final String? parameterDocs;
 
   final String protoFieldName;
   final String dartFieldName;
@@ -32,6 +36,7 @@ class Parameter {
 
   Parameter({
     required this.element,
+    required this.parameterDocs,
     required this.protoFieldName,
     required this.dartFieldName,
     required this.getterCall,
@@ -65,6 +70,7 @@ class Parameter {
 
     return Parameter(
       element: element,
+      parameterDocs: element.toParameterDocs(),
       protoFieldName: name.snakeCase,
       dartFieldName: dartFieldName,
       getterCall: 'tree.$constructorFieldName.$dartFieldName$collisionPostfix',
@@ -82,11 +88,13 @@ class Parameter {
     );
   }
 
-  String? toProtoField() {
+  String? toProtoField(String separator) {
     final typeMapping = this.typeMapping;
     if (typeMapping != null) {
-      // TODO add documentation about required status and default values
-      return '${typeMapping.toFieldType()} $protoFieldName = $fieldNumber;';
+      return [
+        ...parameterDocs?.toProtoDocs().split('\n') ?? [],
+        '${typeMapping.toFieldType()} $protoFieldName = $fieldNumber;',
+      ].join(separator);
     } else {
       return null;
     }
