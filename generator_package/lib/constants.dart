@@ -25,7 +25,6 @@ const generatedFileHeader = '''
 //  Generated. Do not modify.
 //''';
 
-// TODO document drawback
 const disallowedFieldNames = {
   '\$_whichOneof',
   '_defaultInstance',

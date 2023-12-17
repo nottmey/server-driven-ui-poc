@@ -111,3 +111,29 @@ flutter run
   style guide. However, in our context, this may still lead to collisions and 
   can create very long names,
   e.g. `MATERIAL_NAVIGATION_DESTINATION_LABEL_BEHAVIOR_ONLY_SHOW_SELECTED`)
+
+### TODOs
+
+This proof of concept could be extended by doing the following:
+
+- add parameterization of library destination
+- add parameterization of which constructors to use
+- add second example of generated package with just a few constructors enabled (fast generation run)
+- rename the first example of generated package to be a full flutter library setup (slow generation run)
+- use fast package in example
+- handle callback function types via a first example: navigation to a new experience
+- create simple routing via experience name (experience reference routes to new page)
+- create simple state management (global key-value, reference-able in experience definition, hydrate-able via backend, update-able via backend)
+- allow callback function types to set values in simple state management
+- generate server driven ui file via generator_package
+- re-write example to use pure backend-based widgets, and use all implemented features
+
+Larger implementation would make this more production ready:
+
+- create a mechanism to make field numbers stable over time (e.g., with a committed dictionary)
+- enable a recursive combination of experiences for combining (e.g.) a home page (backend delivers all associated experiences in on go)
+- watch mode for generator
+- allow creation of complete AST via protocol
+- handle dynamic and object types in type mapping
+- handle maps in type mapping
+- handle type parameters (e.g., by making them always dynamic)

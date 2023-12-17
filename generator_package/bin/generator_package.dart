@@ -58,9 +58,6 @@ build/
     resourceProvider: PhysicalResourceProvider.INSTANCE,
   );
 
-  // TODO find a better way to generate time stable field numbers (maybe via committed dictionary)
-  // TODO observe and optimize performance
-  // TODO create watch mode, maybe optimize more with incremental updates
   for (final context in analysis.contexts) {
     final rootFolder = context.contextRoot.root;
     final pubspecFile = rootFolder.getChildAssumingFile(file_paths.pubspecYaml);

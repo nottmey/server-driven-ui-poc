@@ -6,7 +6,6 @@ import 'package:proto_package/builders/construct_types.sdu.dart';
 import 'package:proto_package/proto/messages.pb.dart' as messages;
 import 'package:proto_package/proto/service.pbgrpc.dart' as service;
 
-// TODO generate this file in generator_package
 class ServerDrivenUi extends StatefulWidget {
   final String experienceName;
 

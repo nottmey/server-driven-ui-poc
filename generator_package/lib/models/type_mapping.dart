@@ -25,9 +25,6 @@ enum StructureStrategy {
 extension TypeMappingCreationExtension on DartType {
   // main way to construct type mapping
   TypeMapping? toTypeMapping() {
-    // TODO also allow AST values, e.g. "string or string expression", as e.g. oneof in a wrapper?
-    // TODO also do maps, because it's possible
-
     // from specific to broad classification
     if (isDartCoreBool) {
       return _directEquivalentTypeMapping('bool');
@@ -38,16 +35,12 @@ extension TypeMappingCreationExtension on DartType {
     } else if (isDartCoreString) {
       return _directEquivalentTypeMapping('string');
     } else if (isDartCoreObject) {
-      // TODO handle object type usages
       return null;
     } else if (this is DynamicType) {
-      // TODO dynamic types
       return null;
     } else if (this is TypeParameterType) {
-      // TODO type parameter usages
       return null;
     } else if (this is FunctionType) {
-      // TODO function types (e.g. builders or click handlers)
       return null;
     } else if (isDartCoreIterable || isDartCoreList) {
       assert(this is ParameterizedType);
@@ -57,7 +50,6 @@ extension TypeMappingCreationExtension on DartType {
       final subType = typeArguments.first;
 
       if (subType.isDartCoreIterable || subType.isDartCoreList) {
-        // TODO solve multi dimensional arrays
         return null; // can't do matrices
       } else {
         return subType.toTypeMapping()?.toRepeated();
@@ -86,8 +78,7 @@ extension TypeMappingCreationExtension on DartType {
             mappingStrategy: MappingStrategy.generateMessage,
           );
         } else {
-          // TODO e.g. MaterialStateProperty
-          return null;
+          return null; // can't do type params
         }
       } else {
         // mixins
