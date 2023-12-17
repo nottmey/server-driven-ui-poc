@@ -113,7 +113,7 @@ message $protoMessageName {
     final unsupportedDefaultParams =
         usedParameters.where((p) => p.$1.hasUnsupportedDefaultValue);
     final caseStatement =
-        'case $protoImportAlias.${expressionName}_Result.$dartFieldName:';
+        'case $protoImportAlias.${expressionName}_$oneOfDartFieldName.$dartFieldName:';
 
     if (unsupportedDefaultParams.isEmpty) {
       return '''

@@ -193,7 +193,7 @@ message $messageName {
     return '''
 // ${dartType.element?.librarySource?.uri ?? '<no source>'}${docs != null ? "\n//\n$docs" : ""}
 message $messageName {
-  oneof result {
+  oneof $oneOfProtoFieldName {
     ${typeConstructors.mapIndexed((i, c) => c.toProtoField(i)).join("\n    ")}
   }
 }
@@ -253,7 +253,7 @@ $importAlias.$typeName? evaluate$messageName(messages.$messageName? tree) {
     return null;
   }
 
-  switch (tree.whichResult()) {
+  switch (tree.which$oneOfDartFieldName()) {
 ${constructors.map((c) => c.toDartSwitchCase('messages', messageName, allConstructors)).join("\n")}
     default:
       return null;

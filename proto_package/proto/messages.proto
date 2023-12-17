@@ -55813,7 +55813,7 @@ message VectorMathVector4NamedZero {
 //
 // Cupertino typography theme in a [CupertinoThemeData].
 message CupertinoTextThemeDataType {
-  oneof result {
+  oneof constructor {
     CupertinoTextThemeData cupertino_text_theme_data = 2;
   }
 }
@@ -55837,7 +55837,7 @@ message CupertinoTextThemeDataType {
 //  * [ThemeData], a Material equivalent that also configures Cupertino
 //    styling via a [CupertinoThemeData] subclass [MaterialBasedCupertinoThemeData].
 message CupertinoThemeDataType {
-  oneof result {
+  oneof constructor {
     CupertinoThemeData cupertino_theme_data = 2;
     CupertinoThemeDataNamedRaw cupertino_theme_data_named_raw = 3;
     MaterialMaterialBasedCupertinoThemeData material_material_based_cupertino_theme_data = 4;
@@ -55855,7 +55855,7 @@ message CupertinoThemeDataType {
 // Instances of this class are used with [Paint.colorFilter] on [Paint]
 // objects.
 message DartColorFilterType {
-  oneof result {
+  oneof constructor {
     DartColorFilterNamedLinearToSrgbGamma dart_color_filter_named_linear_to_srgb_gamma = 2;
     DartColorFilterNamedMatrix dart_color_filter_named_matrix = 3;
     DartColorFilterNamedMode dart_color_filter_named_mode = 4;
@@ -55896,7 +55896,7 @@ message DartColorFilterType {
 //  * [Colors](https://api.flutter.dev/flutter/material/Colors-class.html), which
 //    defines the colors found in the Material Design specification.
 message DartColorType {
-  oneof result {
+  oneof constructor {
     CupertinoDynamicColor cupertino_dynamic_color = 2;
     CupertinoDynamicColorNamedWithBrightness cupertino_dynamic_color_named_with_brightness = 3;
     CupertinoDynamicColorNamedWithBrightnessAndContrast cupertino_dynamic_color_named_with_brightness_and_contrast = 4;
@@ -56038,7 +56038,7 @@ message DartColorType {
 //  To internationalize your code, use
 //  the [intl](https://pub.dev/packages/intl) package.
 message DartDateTimeType {
-  oneof result {
+  oneof constructor {
     DartDateTime dart_date_time = 2;
     DartDateTimeNamedFromMicrosecondsSinceEpoch dart_date_time_named_from_microseconds_since_epoch = 3;
     DartDateTimeNamedFromMillisecondsSinceEpoch dart_date_time_named_from_milliseconds_since_epoch = 4;
@@ -56074,7 +56074,7 @@ message DartDateTimeType {
 // [DisplayFeatureState.postureHalfOpened]. For [DisplayFeatureType.cutout],
 // the state is not used and has the [DisplayFeatureState.unknown] value.
 message DartDisplayFeatureType {
-  oneof result {
+  oneof constructor {
     DartDisplayFeature dart_display_feature = 2;
   }
 }
@@ -56161,7 +56161,7 @@ message DartDisplayFeatureType {
 // * [DateTime] to represent a point in time.
 // * [Stopwatch] to measure time-spans.
 message DartDurationType {
-  oneof result {
+  oneof constructor {
     DartDuration dart_duration = 2;
   }
 }
@@ -56298,7 +56298,7 @@ message DartDurationType {
 //   a tutorial about writing command-line apps, includes information about
 //   files and directories.
 message DartFileType {
-  oneof result {
+  oneof constructor {
     DartFile dart_file = 2;
     DartFileNamedFromRawPath dart_file_named_from_raw_path = 3;
     DartFileNamedFromUri dart_file_named_from_uri = 4;
@@ -56317,7 +56317,7 @@ message DartFileType {
 // It is a compile-time error for a class to attempt to extend or implement
 // Float64List.
 message DartFloat64ListType {
-  oneof result {
+  oneof constructor {
     DartFloat64List dart_float64_list = 2;
     DartFloat64ListNamedFromList dart_float64_list_named_from_list = 3;
     DartFloat64ListNamedSublistView dart_float64_list_named_sublist_view = 4;
@@ -56352,7 +56352,7 @@ message DartFloat64ListType {
 //  * <https://docs.microsoft.com/en-us/typography/opentype/spec/featuretags>,
 //    Microsoft's registry of these features.
 message DartFontFeatureType {
-  oneof result {
+  oneof constructor {
     DartFontFeature dart_font_feature = 2;
     DartFontFeatureNamedAlternative dart_font_feature_named_alternative = 3;
     DartFontFeatureNamedAlternativeFractions dart_font_feature_named_alternative_fractions = 4;
@@ -56409,7 +56409,7 @@ message DartFontFeatureType {
 //  * <https://docs.microsoft.com/en-us/typography/opentype/spec/otvaroverview>,
 //    an overview of the font variations technology.
 message DartFontVariationType {
-  oneof result {
+  oneof constructor {
     DartFontVariation dart_font_variation = 2;
     DartFontVariationNamedItalic dart_font_variation_named_italic = 3;
     DartFontVariationNamedOpticalSize dart_font_variation_named_optical_size = 4;
@@ -56432,7 +56432,7 @@ message DartFontVariationType {
 //  * [SceneBuilder.pushImageFilter], which is the low-level API for using
 //    this class as a child layer filter.
 message DartImageFilterType {
-  oneof result {
+  oneof constructor {
     DartColorFilterNamedLinearToSrgbGamma dart_color_filter_named_linear_to_srgb_gamma = 2;
     DartColorFilterNamedMatrix dart_color_filter_named_matrix = 3;
     DartColorFilterNamedMode dart_color_filter_named_mode = 4;
@@ -56465,7 +56465,7 @@ message DartImageFilterType {
 //  * [PlatformDispatcher.locale], which specifies the system's currently selected
 //    [Locale].
 message DartLocaleType {
-  oneof result {
+  oneof constructor {
     DartLocale dart_locale = 2;
     DartLocaleNamedFromSubtags dart_locale_named_from_subtags = 3;
   }
@@ -56495,7 +56495,7 @@ message DartLocaleType {
 //
 //  * [Size], which represents a vector describing the size of a rectangle.
 message DartOffsetType {
-  oneof result {
+  oneof constructor {
     DartOffset dart_offset = 2;
     DartOffsetNamedFromDirection dart_offset_named_from_direction = 3;
   }
@@ -56508,7 +56508,7 @@ message DartOffsetType {
 // Most APIs on [Canvas] take a [Paint] object to describe the style
 // to use for that operation.
 message DartPaintType {
-  oneof result {
+  oneof constructor {
     DartPaint dart_paint = 2;
   }
 }
@@ -56533,7 +56533,7 @@ message DartPaintType {
 // Paths can be drawn on canvases using [Canvas.drawPath], and can
 // used to create clip regions using [Canvas.clipPath].
 message DartPathType {
-  oneof result {
+  oneof constructor {
     DartPath dart_path = 2;
     DartPathNamedFrom dart_path_named_from = 3;
   }
@@ -56543,7 +56543,7 @@ message DartPathType {
 //
 // An immutable rounded rectangle with the custom radii for all four corners.
 message DartRRectType {
-  oneof result {
+  oneof constructor {
     DartRRectNamedFromLTRBAndCorners dart_r_rect_named_from_l_t_r_b_and_corners = 2;
     DartRRectNamedFromLTRBR dart_r_rect_named_from_l_t_r_b_r = 3;
     DartRRectNamedFromLTRBXY dart_r_rect_named_from_l_t_r_b_x_y = 4;
@@ -56557,7 +56557,7 @@ message DartRRectType {
 //
 // A radius for either circular or elliptical shapes.
 message DartRadiusType {
-  oneof result {
+  oneof constructor {
     DartRadiusNamedCircular dart_radius_named_circular = 2;
     DartRadiusNamedElliptical dart_radius_named_elliptical = 3;
   }
@@ -56590,7 +56590,7 @@ message DartRadiusType {
 // ```
 //
 message DartRandomType {
-  oneof result {
+  oneof constructor {
     DartRandom dart_random = 2;
     DartRandomNamedSecure dart_random_named_secure = 3;
   }
@@ -56608,7 +56608,7 @@ message DartRandomType {
 // Rect myRect = const Offset(1.0, 2.0) & const Size(3.0, 4.0);
 // ```
 message DartRectType {
-  oneof result {
+  oneof constructor {
     DartRectNamedFromCenter dart_rect_named_from_center = 2;
     DartRectNamedFromCircle dart_rect_named_from_circle = 3;
     DartRectNamedFromLTRB dart_rect_named_from_l_t_r_b = 4;
@@ -56622,7 +56622,7 @@ message DartRectType {
 // Base class for objects such as [Gradient] and [ImageShader] which
 // correspond to shaders as used by [Paint.shader].
 message DartShaderType {
-  oneof result {
+  oneof constructor {
     DartImageShader dart_image_shader = 2;
   }
 }
@@ -56633,7 +56633,7 @@ message DartShaderType {
 //
 // Multiple shadows are stacked together in a [TextStyle].
 message DartShadowType {
-  oneof result {
+  oneof constructor {
     DartShadow dart_shadow = 2;
     FlutterBoxShadow flutter_box_shadow = 3;
   }
@@ -56645,7 +56645,7 @@ message DartShadowType {
 //
 // You can think of this as an [Offset] from the origin.
 message DartSizeType {
-  oneof result {
+  oneof constructor {
     DartSize dart_size = 2;
     DartSizeNamedCopy dart_size_named_copy = 3;
     DartSizeNamedFromHeight dart_size_named_from_height = 4;
@@ -56665,7 +56665,7 @@ message DartSizeType {
 // These objects are created by the runtime, it is not possible to create
 // them programmatically.
 message DartStackTraceType {
-  oneof result {
+  oneof constructor {
     DartStackTraceNamedFromString dart_stack_trace_named_from_string = 2;
   }
 }
@@ -56683,7 +56683,7 @@ message DartStackTraceType {
 //  * [LocaleStringAttribute], which causes the assistive technologies to
 //    treat the string in the specific language.
 message DartStringAttributeType {
-  oneof result {
+  oneof constructor {
     DartLocaleStringAttribute dart_locale_string_attribute = 2;
     DartSpellOutStringAttribute dart_spell_out_string_attribute = 3;
   }
@@ -56693,7 +56693,7 @@ message DartStringAttributeType {
 //
 // A linear decoration to draw near the text.
 message DartTextDecorationType {
-  oneof result {
+  oneof constructor {
     DartTextDecorationNamedCombine dart_text_decoration_named_combine = 2;
   }
 }
@@ -56716,7 +56716,7 @@ message DartTextDecorationType {
 //
 // {@endtemplate}
 message DartTextHeightBehaviorType {
-  oneof result {
+  oneof constructor {
     DartTextHeightBehavior dart_text_height_behavior = 2;
   }
 }
@@ -56739,7 +56739,7 @@ message DartTextHeightBehaviorType {
 // See the documentation for [TextAffinity] for more information on how
 // TextAffinity disambiguates situations like these.
 message DartTextPositionType {
-  oneof result {
+  oneof constructor {
     DartTextPosition dart_text_position = 2;
   }
 }
@@ -56748,7 +56748,7 @@ message DartTextPositionType {
 //
 // A range of characters in a string of text.
 message DartTextRangeType {
-  oneof result {
+  oneof constructor {
     DartTextRange dart_text_range = 2;
     DartTextRangeNamedCollapsed dart_text_range_named_collapsed = 3;
     FlutterTextSelection flutter_text_selection = 4;
@@ -56764,7 +56764,7 @@ message DartTextRangeType {
 // It is a compile-time error for a class to attempt to extend or implement
 // TypedData.
 message DartTypedDataType {
-  oneof result {
+  oneof constructor {
     DartByteData dart_byte_data = 2;
     DartByteDataNamedSublistView dart_byte_data_named_sublist_view = 3;
     DartByteDataNamedView dart_byte_data_named_view = 4;
@@ -56805,7 +56805,7 @@ message DartTypedDataType {
 // It is a compile-time error for a class to attempt to extend or implement
 // Uint8List.
 message DartUint8ListType {
-  oneof result {
+  oneof constructor {
     DartUint8List dart_uint8_list = 2;
     DartUint8ListNamedFromList dart_uint8_list_named_from_list = 3;
     DartUint8ListNamedSublistView dart_uint8_list_named_sublist_view = 4;
@@ -56897,7 +56897,7 @@ message DartUint8ListType {
 // [uris]: https://dart.dev/guides/libraries/library-tour#uris
 // [libtour]: https://dart.dev/guides/libraries/library-tour
 message DartUriType {
-  oneof result {
+  oneof constructor {
     DartUri dart_uri = 2;
     DartUriNamedDataFromBytes dart_uri_named_data_from_bytes = 3;
     DartUriNamedDataFromString dart_uri_named_data_from_string = 4;
@@ -56922,7 +56922,7 @@ message DartUriType {
 //  * [Alignment], a variant that is defined in physical terms (i.e.
 //    whose horizontal component does not depend on the text direction).
 message FlutterAlignmentDirectionalType {
-  oneof result {
+  oneof constructor {
     FlutterAlignmentDirectional flutter_alignment_directional = 2;
   }
 }
@@ -56938,7 +56938,7 @@ message FlutterAlignmentDirectionalType {
 // To convert an [AlignmentGeometry] object of indeterminate type into an
 // [Alignment] object, call the [resolve] method.
 message FlutterAlignmentGeometryType {
-  oneof result {
+  oneof constructor {
     FlutterAlignment flutter_alignment = 2;
     FlutterAlignmentDirectional flutter_alignment_directional = 3;
     FlutterFractionalOffset flutter_fractional_offset = 4;
@@ -56990,7 +56990,7 @@ message FlutterAlignmentGeometryType {
 //  * [AlignmentGeometry], which is an abstract type that is agnostic as to
 //    whether the horizontal direction depends on the [TextDirection].
 message FlutterAlignmentType {
-  oneof result {
+  oneof constructor {
     FlutterAlignment flutter_alignment = 2;
     FlutterFractionalOffset flutter_fractional_offset = 3;
     FlutterFractionalOffsetNamedFromOffsetAndRect flutter_fractional_offset_named_from_offset_and_rect = 4;
@@ -57038,7 +57038,7 @@ message FlutterAlignmentType {
 //  * [NetworkAssetBundle]
 //  * [rootBundle]
 message FlutterAssetBundleType {
-  oneof result {
+  oneof constructor {
     FlutterNetworkAssetBundle flutter_network_asset_bundle = 2;
     FlutterPlatformAssetBundle flutter_platform_asset_bundle = 3;
   }
@@ -57051,7 +57051,7 @@ message FlutterAssetBundleType {
 // An [AutofillClient] provides autofill-related information of the input field
 // it represents to the platform, and consumes autofill inputs from the platform.
 message FlutterAutofillClientType {
-  oneof result {
+  oneof constructor {
     FlutterEditableTextState flutter_editable_text_state = 2;
   }
 }
@@ -57074,7 +57074,7 @@ message FlutterAutofillClientType {
 // the callback should return a future that completes to true if it can handle
 // the pop request, and a future that completes to false otherwise.
 message FlutterBackButtonDispatcherType {
-  oneof result {
+  oneof constructor {
     FlutterChildBackButtonDispatcher flutter_child_back_button_dispatcher = 2;
     FlutterRootBackButtonDispatcher flutter_root_back_button_dispatcher = 3;
   }
@@ -57091,7 +57091,7 @@ message FlutterBackButtonDispatcherType {
 // To convert a [BorderRadiusGeometry] object of indeterminate type into a
 // [BorderRadius] object, call the [resolve] method.
 message FlutterBorderRadiusGeometryType {
-  oneof result {
+  oneof constructor {
     FlutterBorderRadiusDirectionalNamedAll flutter_border_radius_directional_named_all = 2;
     FlutterBorderRadiusDirectionalNamedCircular flutter_border_radius_directional_named_circular = 3;
     FlutterBorderRadiusDirectionalNamedHorizontal flutter_border_radius_directional_named_horizontal = 4;
@@ -57117,7 +57117,7 @@ message FlutterBorderRadiusGeometryType {
 // [BorderRadiusDirectional], which is expressed in terms that are relative to
 // a [TextDirection] (typically obtained from the ambient [Directionality]).
 message FlutterBorderRadiusType {
-  oneof result {
+  oneof constructor {
     FlutterBorderRadiusNamedAll flutter_border_radius_named_all = 2;
     FlutterBorderRadiusNamedCircular flutter_border_radius_named_circular = 3;
     FlutterBorderRadiusNamedHorizontal flutter_border_radius_named_horizontal = 4;
@@ -57164,7 +57164,7 @@ message FlutterBorderRadiusType {
 //    ([TableBorder.horizontalInside] and [TableBorder.verticalInside]), both
 //    of which are also [BorderSide] objects.
 message FlutterBorderSideType {
-  oneof result {
+  oneof constructor {
     FlutterBorderSide flutter_border_side = 2;
   }
 }
@@ -57237,7 +57237,7 @@ message FlutterBorderSideType {
 //    a Non-Uniform Border on ShapeBorder, which is used by Material Design
 //    buttons and other widgets, under the "shape" field.
 message FlutterBorderType {
-  oneof result {
+  oneof constructor {
     FlutterBorder flutter_border = 2;
     FlutterBorderNamedAll flutter_border_named_all = 3;
     FlutterBorderNamedFromBorderSide flutter_border_named_from_border_side = 4;
@@ -57260,7 +57260,7 @@ message FlutterBorderType {
 //  * [CupertinoTabBar]
 //  * <https://developer.apple.com/ios/human-interface-guidelines/bars/tab-bars>
 message FlutterBottomNavigationBarItemType {
-  oneof result {
+  oneof constructor {
     FlutterBottomNavigationBarItem flutter_bottom_navigation_bar_item = 2;
   }
 }
@@ -57284,7 +57284,7 @@ message FlutterBottomNavigationBarItemType {
 //  * [CircleBorder], another way of describing a circle border.
 //  * [BoxDecoration], which uses a [BoxBorder] to describe its borders.
 message FlutterBoxBorderType {
-  oneof result {
+  oneof constructor {
     FlutterBorder flutter_border = 2;
     FlutterBorderDirectional flutter_border_directional = 3;
     FlutterBorderNamedAll flutter_border_named_all = 4;
@@ -57359,7 +57359,7 @@ message FlutterBoxBorderType {
 // [constrainDimensions], [constrainSizeAndAttemptToPreserveAspectRatio],
 // [isSatisfiedBy].
 message FlutterBoxConstraintsType {
-  oneof result {
+  oneof constructor {
     FlutterBoxConstraints flutter_box_constraints = 2;
     FlutterBoxConstraintsNamedExpand flutter_box_constraints_named_expand = 3;
     FlutterBoxConstraintsNamedLoose flutter_box_constraints_named_loose = 4;
@@ -57427,7 +57427,7 @@ message FlutterBoxConstraintsType {
 //  * [CustomPaint], a widget that lets you draw arbitrary graphics.
 //  * [Decoration], the base class which lets you define other decorations.
 message FlutterBoxDecorationType {
-  oneof result {
+  oneof constructor {
     FlutterBoxDecoration flutter_box_decoration = 2;
   }
 }
@@ -57449,7 +57449,7 @@ message FlutterBoxDecorationType {
 //    Design.
 //  * [Shadow], which is the parent class that lacks [spreadRadius].
 message FlutterBoxShadowType {
-  oneof result {
+  oneof constructor {
     FlutterBoxShadow flutter_box_shadow = 2;
   }
 }
@@ -57564,7 +57564,7 @@ message FlutterBoxShadowType {
 // [BuildContext] objects are actually [Element] objects. The [BuildContext]
 // interface is used to discourage direct manipulation of [Element] objects.
 message FlutterBuildContextType {
-  oneof result {
+  oneof constructor {
     FlutterInheritedElement flutter_inherited_element = 2;
     FlutterLeafRenderObjectElement flutter_leaf_render_object_element = 3;
     FlutterListWheelElement flutter_list_wheel_element = 4;
@@ -57587,7 +57587,7 @@ message FlutterBuildContextType {
 //    ContextMenuButtonItems and create a platform-specific context menu with
 //    the indicated buttons.
 message FlutterContextMenuButtonItemType {
-  oneof result {
+  oneof constructor {
     FlutterContextMenuButtonItem flutter_context_menu_button_item = 2;
   }
 }
@@ -57716,7 +57716,7 @@ message FlutterContextMenuButtonItemType {
 //  * [RadialGradient], whose sample code section shows a different take
 //    on the sample code above.
 message FlutterCustomPainterType {
-  oneof result {
+  oneof constructor {
     FlutterBannerPainter flutter_banner_painter = 2;
   }
 }
@@ -57733,7 +57733,7 @@ message FlutterCustomPainterType {
 // shared between boxes; [BoxPainter] objects can cache resources to
 // make painting on a particular surface faster.
 message FlutterDecorationType {
-  oneof result {
+  oneof constructor {
     FlutterBoxDecoration flutter_box_decoration = 2;
     FlutterFlutterLogoDecoration flutter_flutter_logo_decoration = 3;
     FlutterMagnifierDecoration flutter_magnifier_decoration = 4;
@@ -57754,7 +57754,7 @@ message FlutterDecorationType {
 //
 //  * [ui.GestureSettings], the configuration that this is derived from.
 message FlutterDeviceGestureSettingsType {
-  oneof result {
+  oneof constructor {
     FlutterDeviceGestureSettings flutter_device_gesture_settings = 2;
     FlutterDeviceGestureSettingsNamedFromView flutter_device_gesture_settings_named_from_view = 3;
   }
@@ -57776,7 +57776,7 @@ message FlutterDeviceGestureSettingsType {
 //  * [Diagnosticable], which should be used instead of this class to
 //    provide diagnostics for objects without children.
 message FlutterDiagnosticableTreeType {
-  oneof result {
+  oneof constructor {
     CupertinoActionSheet cupertino_action_sheet = 2;
     CupertinoActivityIndicator cupertino_activity_indicator = 3;
     CupertinoActivityIndicatorNamedPartiallyRevealed cupertino_activity_indicator_named_partially_revealed = 4;
@@ -58444,7 +58444,7 @@ message FlutterDiagnosticableTreeType {
 // In release mode, far less information is retained and some information may
 // not print at all.
 message FlutterDiagnosticsNodeType {
-  oneof result {
+  oneof constructor {
     FlutterColorProperty flutter_color_property = 2;
     FlutterDevToolsDeepLinkProperty flutter_dev_tools_deep_link_property = 3;
     FlutterDiagnosticableTreeNode flutter_diagnosticable_tree_node = 4;
@@ -58483,7 +58483,7 @@ message FlutterDiagnosticsNodeType {
 //  * [EdgeInsets], a variant that uses physical labels (left and right instead
 //    of start and end).
 message FlutterEdgeInsetsDirectionalType {
-  oneof result {
+  oneof constructor {
     FlutterEdgeInsetsDirectionalNamedAll flutter_edge_insets_directional_named_all = 2;
     FlutterEdgeInsetsDirectionalNamedFromSTEB flutter_edge_insets_directional_named_from_s_t_e_b = 3;
     FlutterEdgeInsetsDirectionalNamedOnly flutter_edge_insets_directional_named_only = 4;
@@ -58507,7 +58507,7 @@ message FlutterEdgeInsetsDirectionalType {
 //
 //  * [Padding], a widget that describes margins using [EdgeInsetsGeometry].
 message FlutterEdgeInsetsGeometryType {
-  oneof result {
+  oneof constructor {
     FlutterEdgeInsetsDirectionalNamedAll flutter_edge_insets_directional_named_all = 2;
     FlutterEdgeInsetsDirectionalNamedFromSTEB flutter_edge_insets_directional_named_from_s_t_e_b = 3;
     FlutterEdgeInsetsDirectionalNamedOnly flutter_edge_insets_directional_named_only = 4;
@@ -58568,7 +58568,7 @@ message FlutterEdgeInsetsGeometryType {
 //    the type [EdgeInsetsGeometry]) allows the horizontal insets to be
 //    specified in a [TextDirection]-aware manner.
 message FlutterEdgeInsetsType {
-  oneof result {
+  oneof constructor {
     FlutterEdgeInsetsNamedAll flutter_edge_insets_named_all = 2;
     FlutterEdgeInsetsNamedFromLTRB flutter_edge_insets_named_from_l_t_r_b = 3;
     FlutterEdgeInsetsNamedFromViewPadding flutter_edge_insets_named_from_view_padding = 4;
@@ -58581,7 +58581,7 @@ message FlutterEdgeInsetsType {
 //
 // State for a [EditableText].
 message FlutterEditableTextStateType {
-  oneof result {
+  oneof constructor {
     FlutterEditableTextState flutter_editable_text_state = 2;
   }
 }
@@ -58603,7 +58603,7 @@ message FlutterEditableTextStateType {
 //    to listen to the current item index on a push basis rather than polling
 //    the [FixedExtentScrollController].
 message FlutterFixedExtentScrollControllerType {
-  oneof result {
+  oneof constructor {
     FlutterFixedExtentScrollController flutter_fixed_extent_scroll_controller = 2;
   }
 }
@@ -58618,7 +58618,7 @@ message FlutterFixedExtentScrollControllerType {
 //  * <https://flutter.dev/docs/testing/errors>, more information about error
 //    handling in Flutter.
 message FlutterFlutterErrorType {
-  oneof result {
+  oneof constructor {
     FlutterFlutterError flutter_flutter_error = 2;
     FlutterFlutterErrorNamedFromParts flutter_flutter_error_named_from_parts = 3;
   }
@@ -58764,7 +58764,7 @@ message FlutterFlutterErrorType {
 // * [FocusTraversalPolicy], a class used to determine how to move the focus to
 //   other nodes.
 message FlutterFocusNodeType {
-  oneof result {
+  oneof constructor {
     FlutterFocusNode flutter_focus_node = 2;
     FlutterFocusScopeNode flutter_focus_scope_node = 3;
   }
@@ -58797,7 +58797,7 @@ message FlutterFocusNodeType {
 // * [LexicalFocusOrder], a focus order that assigns a string-based lexical
 //   traversal order to a [FocusTraversalOrder] widget.
 message FlutterFocusOrderType {
-  oneof result {
+  oneof constructor {
     FlutterLexicalFocusOrder flutter_lexical_focus_order = 2;
     FlutterNumericFocusOrder flutter_numeric_focus_order = 3;
   }
@@ -58832,7 +58832,7 @@ message FlutterFocusOrderType {
 //  * [FocusManager], a singleton that manages the primary focus and
 //    distributes key events to focused nodes.
 message FlutterFocusScopeNodeType {
-  oneof result {
+  oneof constructor {
     FlutterFocusScopeNode flutter_focus_scope_node = 2;
   }
 }
@@ -58866,7 +58866,7 @@ message FlutterFocusScopeNodeType {
 //  * [DirectionalFocusTraversalPolicyMixin] a mixin class that implements
 //    focus traversal in a direction.
 message FlutterFocusTraversalPolicyType {
-  oneof result {
+  oneof constructor {
     FlutterOrderedTraversalPolicy flutter_ordered_traversal_policy = 2;
     FlutterReadingOrderTraversalPolicy flutter_reading_order_traversal_policy = 3;
     FlutterWidgetOrderTraversalPolicy flutter_widget_order_traversal_policy = 4;
@@ -58888,7 +58888,7 @@ message FlutterFocusTraversalPolicyType {
 //  * [debugPrintRecognizerCallbacksTrace], a flag that can be set to help
 //    debug issues with gesture recognizers.
 message FlutterGestureRecognizerType {
-  oneof result {
+  oneof constructor {
     FlutterDelayedMultiDragGestureRecognizer flutter_delayed_multi_drag_gesture_recognizer = 2;
     FlutterDoubleTapGestureRecognizer flutter_double_tap_gesture_recognizer = 3;
     FlutterEagerGestureRecognizer flutter_eager_gesture_recognizer = 4;
@@ -58918,7 +58918,7 @@ message FlutterGestureRecognizerType {
 // and draws clockwise. To have the sweep appear to start at 6 o'clock, supply
 // a [GradientRotation] of `pi/4` radians (i.e. 45 degrees).
 message FlutterGradientTransformType {
-  oneof result {
+  oneof constructor {
     FlutterGradientRotation flutter_gradient_rotation = 2;
   }
 }
@@ -58935,7 +58935,7 @@ message FlutterGradientTransformType {
 //  * [Gradient](dart-ui/Gradient-class.html), the class in the [dart:ui] library.
 //
 message FlutterGradientType {
-  oneof result {
+  oneof constructor {
     FlutterLinearGradient flutter_linear_gradient = 2;
     FlutterRadialGradient flutter_radial_gradient = 3;
     FlutterSweepGradient flutter_sweep_gradient = 4;
@@ -58949,7 +58949,7 @@ message FlutterGradientType {
 // An instance of [HeroController] should be used in [Navigator.observers].
 // This is done automatically by [MaterialApp].
 message FlutterHeroControllerType {
-  oneof result {
+  oneof constructor {
     FlutterHeroController flutter_hero_controller = 2;
   }
 }
@@ -58965,7 +58965,7 @@ message FlutterHeroControllerType {
 // the code points (or instances of [IconData]) which are not referenced from
 // Dart app code. See the [staticIconProvider] annotation for more details.
 message FlutterIconDataType {
-  oneof result {
+  oneof constructor {
     FlutterIconData flutter_icon_data = 2;
   }
 }
@@ -58980,7 +58980,7 @@ message FlutterIconDataType {
 // theme to a version with all the fields filled in, use
 // [IconThemeData.fallback].
 message FlutterIconThemeDataType {
-  oneof result {
+  oneof constructor {
     CupertinoIconThemeData cupertino_icon_theme_data = 2;
     FlutterIconThemeData flutter_icon_theme_data = 3;
     FlutterIconThemeDataNamedFallback flutter_icon_theme_data_named_fallback = 4;
@@ -59042,7 +59042,7 @@ message FlutterIconThemeDataType {
 //  * [IconTheme], which provides ambient configuration for icons.
 //  * [ImageIcon], for showing icons from [AssetImage]s or other [ImageProvider]s.
 message FlutterIconType {
-  oneof result {
+  oneof constructor {
     FlutterIcon flutter_icon = 2;
   }
 }
@@ -59059,7 +59059,7 @@ message FlutterIconType {
 //  * [ImageProvider], which uses [ImageConfiguration] objects to determine
 //    which image to obtain.
 message FlutterImageConfigurationType {
-  oneof result {
+  oneof constructor {
     FlutterImageConfiguration flutter_image_configuration = 2;
   }
 }
@@ -59209,7 +59209,7 @@ message FlutterImageConfigurationType {
 // * [InheritedModel], an inherited widget that allows clients to subscribe to
 //   changes for subparts of the value.
 message FlutterInheritedWidgetType {
-  oneof result {
+  oneof constructor {
     CupertinoUserInterfaceLevel cupertino_user_interface_level = 2;
     FlutterDefaultAssetBundle flutter_default_asset_bundle = 3;
     FlutterDefaultSelectionStyle flutter_default_selection_style = 4;
@@ -59324,7 +59324,7 @@ message FlutterInheritedWidgetType {
 //  * [RichText], a widget for finer control of text rendering.
 //  * [TextPainter], a class for painting [InlineSpan] objects on a [Canvas].
 message FlutterInlineSpanType {
-  oneof result {
+  oneof constructor {
     FlutterTextSpan flutter_text_span = 2;
     FlutterWidgetSpan flutter_widget_span = 3;
   }
@@ -59346,7 +59346,7 @@ message FlutterInlineSpanType {
 //    [Intent] using the [Actions] widget that most tightly encloses the given
 //    [BuildContext].
 message FlutterIntentType {
-  oneof result {
+  oneof constructor {
     FlutterActivateIntent flutter_activate_intent = 2;
     FlutterAutocompleteNextOptionIntent flutter_autocomplete_next_option_intent = 3;
     FlutterAutocompletePreviousOptionIntent flutter_autocomplete_previous_option_intent = 4;
@@ -59406,7 +59406,7 @@ message FlutterIntentType {
 //
 //  * [Widget.key], which discusses how widgets use keys.
 message FlutterKeyType {
-  oneof result {
+  oneof constructor {
     FlutterGlobalKey flutter_global_key = 2;
     FlutterKey flutter_key = 3;
     FlutterLabeledGlobalKey flutter_labeled_global_key = 4;
@@ -59430,7 +59430,7 @@ message FlutterKeyType {
 //  * [RenderLeaderLayer] and [RenderFollowerLayer], the corresponding
 //    render objects.
 message FlutterLayerLinkType {
-  oneof result {
+  oneof constructor {
     FlutterLayerLink flutter_layer_link = 2;
   }
 }
@@ -59442,7 +59442,7 @@ message FlutterLayerLinkType {
 //
 // Subclasses must implement [createRenderObject] and [updateRenderObject].
 message FlutterLeafRenderObjectWidgetType {
-  oneof result {
+  oneof constructor {
     FlutterErrorWidgetNamedWithDetails flutter_error_widget_named_with_details = 2;
     FlutterPerformanceOverlay flutter_performance_overlay = 3;
     FlutterPerformanceOverlayNamedAllEnabled flutter_performance_overlay_named_all_enabled = 4;
@@ -59471,7 +59471,7 @@ message FlutterLeafRenderObjectWidgetType {
 // start and end depend on the current [TextDirection], see
 // [Directionality].
 message FlutterLinearBorderEdgeType {
-  oneof result {
+  oneof constructor {
     FlutterLinearBorderEdge flutter_linear_border_edge = 2;
   }
 }
@@ -59494,7 +59494,7 @@ message FlutterLinearBorderEdgeType {
 //  * [ListWheelChildBuilderDelegate], a delegate that supplies children using
 //    a builder callback.
 message FlutterListWheelChildDelegateType {
-  oneof result {
+  oneof constructor {
     FlutterListWheelChildListDelegate flutter_list_wheel_child_list_delegate = 2;
     FlutterListWheelChildLoopingListDelegate flutter_list_wheel_child_looping_list_delegate = 3;
   }
@@ -59507,7 +59507,7 @@ message FlutterListWheelChildDelegateType {
 // [RenderListWheelViewport] during layout will ask the delegate to create
 // children that are visible in the viewport and remove those that are not.
 message FlutterListWheelChildManagerType {
-  oneof result {
+  oneof constructor {
     FlutterListWheelElement flutter_list_wheel_element = 2;
   }
 }
@@ -59527,7 +59527,7 @@ message FlutterListWheelChildManagerType {
 //  * [RenderListWheelViewport], the render object that renders the children
 //    on a wheel.
 message FlutterListWheelViewportType {
-  oneof result {
+  oneof constructor {
     FlutterListWheelViewport flutter_list_wheel_viewport = 2;
   }
 }
@@ -59543,7 +59543,7 @@ message FlutterListWheelViewportType {
 //
 //  * [Widget.key], which discusses how widgets use keys.
 message FlutterLocalKeyType {
-  oneof result {
+  oneof constructor {
     FlutterObjectKey flutter_object_key = 2;
     FlutterUniqueKey flutter_unique_key = 3;
   }
@@ -59558,7 +59558,7 @@ message FlutterLocalKeyType {
 //
 // Also takes an [opacity] (see https://github.com/flutter/engine/pull/34435).
 message FlutterMagnifierDecorationType {
-  oneof result {
+  oneof constructor {
     FlutterMagnifierDecoration flutter_magnifier_decoration = 2;
   }
 }
@@ -59628,7 +59628,7 @@ message FlutterMagnifierDecorationType {
 //    [CupertinoPageScaffold], all of which are informed by [padding],
 //    [viewPadding], and [viewInsets].
 message FlutterMediaQueryDataType {
-  oneof result {
+  oneof constructor {
     FlutterMediaQueryData flutter_media_query_data = 2;
     FlutterMediaQueryDataNamedFromView flutter_media_query_data_named_from_view = 3;
   }
@@ -59659,7 +59659,7 @@ message FlutterMediaQueryDataType {
 //    [RenderObject] that instead of having a single list of children organizes
 //    its children in named slots.
 message FlutterMultiChildRenderObjectWidgetType {
-  oneof result {
+  oneof constructor {
     FlutterColumn flutter_column = 2;
     FlutterCustomMultiChildLayout flutter_custom_multi_child_layout = 3;
     FlutterFlex flutter_flex = 4;
@@ -59683,7 +59683,7 @@ message FlutterMultiChildRenderObjectWidgetType {
 //
 // An interface for observing the behavior of a [Navigator].
 message FlutterNavigatorObserverType {
-  oneof result {
+  oneof constructor {
     FlutterHeroController flutter_hero_controller = 2;
     FlutterNavigatorObserver flutter_navigator_observer = 3;
     FlutterRouteObserver flutter_route_observer = 4;
@@ -59703,7 +59703,7 @@ message FlutterNavigatorObserverType {
 //  * [ShapeBorder], which defines a shaped border without a dynamic notch.
 //  * [AutomaticNotchedShape], an adapter from [ShapeBorder] to [NotchedShape].
 message FlutterNotchedShapeType {
-  oneof result {
+  oneof constructor {
     FlutterAutomaticNotchedShape flutter_automatic_notched_shape = 2;
     FlutterCircularNotchedRectangle flutter_circular_notched_rectangle = 3;
   }
@@ -59714,7 +59714,7 @@ message FlutterNotchedShapeType {
 // A ShapeBorder that draws an outline with the width and color specified
 // by [side].
 message FlutterOutlinedBorderType {
-  oneof result {
+  oneof constructor {
     FlutterBeveledRectangleBorder flutter_beveled_rectangle_border = 2;
     FlutterCircleBorder flutter_circle_border = 3;
     FlutterContinuousRectangleBorder flutter_continuous_rectangle_border = 4;
@@ -59817,7 +59817,7 @@ message FlutterOutlinedBorderType {
 // ```
 // {@end-tool}
 message FlutterPageControllerType {
-  oneof result {
+  oneof constructor {
     FlutterPageController flutter_page_controller = 2;
   }
 }
@@ -59829,7 +59829,7 @@ message FlutterPageControllerType {
 // Useful for storing per-page state that persists across navigations from one
 // page to another.
 message FlutterPageStorageBucketType {
-  oneof result {
+  oneof constructor {
     FlutterPageStorageBucket flutter_page_storage_bucket = 2;
   }
 }
@@ -59847,7 +59847,7 @@ message FlutterPageStorageBucketType {
 //
 //  * [PlatformMenu], a menu item that opens a submenu.
 message FlutterPlatformMenuItemType {
-  oneof result {
+  oneof constructor {
     FlutterPlatformMenu flutter_platform_menu = 2;
     FlutterPlatformMenuItem flutter_platform_menu_item = 3;
     FlutterPlatformMenuItemGroup flutter_platform_menu_item_group = 4;
@@ -59872,7 +59872,7 @@ message FlutterPlatformMenuItemType {
 //
 // Use [PreferredSize] to give a preferred size to an arbitrary widget.
 message FlutterPreferredSizeWidgetType {
-  oneof result {
+  oneof constructor {
     CupertinoNavigationBar cupertino_navigation_bar = 2;
     CupertinoTabBar cupertino_tab_bar = 3;
     FlutterPreferredSize flutter_preferred_size = 4;
@@ -59892,7 +59892,7 @@ message FlutterPreferredSizeWidgetType {
 // width or height of the rectangle, convert it to a [Rect] using [toRect()]
 // (passing the container's own Rect), and then examine that object.
 message FlutterRelativeRectType {
-  oneof result {
+  oneof constructor {
     FlutterRelativeRectNamedFromDirectional flutter_relative_rect_named_from_directional = 2;
     FlutterRelativeRectNamedFromLTRB flutter_relative_rect_named_from_l_t_r_b = 3;
     FlutterRelativeRectNamedFromRect flutter_relative_rect_named_from_rect = 4;
@@ -60316,7 +60316,7 @@ message FlutterRelativeRectType {
 // of the child relative to the parent. If you do not inherited from either of
 // these classes, however, you must implement the algorithm yourself.
 message FlutterRenderBoxType {
-  oneof result {
+  oneof constructor {
     FlutterRenderAbsorbPointer flutter_render_absorb_pointer = 2;
     FlutterRenderAnimatedSize flutter_render_animated_size = 3;
     FlutterRenderAspectRatio flutter_render_aspect_ratio = 4;
@@ -60391,7 +60391,7 @@ message FlutterRenderBoxType {
 // delegate lets these objects create and remove children as well as estimate
 // the total scroll offset extent occupied by the full child list.
 message FlutterRenderSliverBoxChildManagerType {
-  oneof result {
+  oneof constructor {
     FlutterSliverMultiBoxAdaptorElement flutter_sliver_multi_box_adaptor_element = 2;
   }
 }
@@ -60536,7 +60536,7 @@ message FlutterRenderSliverBoxChildManagerType {
 // than zero, then it should override [childCrossAxisPosition]. For example
 // [RenderSliverGrid] overrides this method.
 message FlutterRenderSliverType {
-  oneof result {
+  oneof constructor {
     FlutterRenderDecoratedSliver flutter_render_decorated_sliver = 2;
     FlutterRenderSliverConstrainedCrossAxis flutter_render_sliver_constrained_cross_axis = 3;
     FlutterRenderSliverCrossAxisGroup flutter_render_sliver_cross_axis_group = 4;
@@ -60628,7 +60628,7 @@ message FlutterRenderSliverType {
 // information will not be available again when the application is restored to
 // this state in the future.
 message FlutterRestorationBucketType {
-  oneof result {
+  oneof constructor {
     FlutterRestorationBucketNamedChild flutter_restoration_bucket_named_child = 2;
     FlutterRestorationBucketNamedEmpty flutter_restoration_bucket_named_empty = 3;
     FlutterRestorationBucketNamedRoot flutter_restoration_bucket_named_root = 4;
@@ -60774,7 +60774,7 @@ message FlutterRestorationBucketType {
 //  * [RestorationMixin], which uses [RestorationBucket]s behind the scenes
 //    to make [State] objects of [StatefulWidget]s restorable.
 message FlutterRestorationManagerType {
-  oneof result {
+  oneof constructor {
     FlutterRestorationManager flutter_restoration_manager = 2;
   }
 }
@@ -60789,7 +60789,7 @@ message FlutterRestorationManagerType {
 // Used by [WidgetsBinding.attachRootWidget] (which is indirectly called by
 // [runApp]) to bootstrap applications.
 message FlutterRootWidgetType {
-  oneof result {
+  oneof constructor {
     FlutterRootWidget flutter_root_widget = 2;
   }
 }
@@ -60815,7 +60815,7 @@ message FlutterRootWidgetType {
 //    from the [Router] back to the engine by overriding the
 //    [routerReportsNewRouteInformation].
 message FlutterRouteInformationProviderType {
-  oneof result {
+  oneof constructor {
     FlutterPlatformRouteInformationProvider flutter_platform_route_information_provider = 2;
   }
 }
@@ -60845,7 +60845,7 @@ message FlutterRouteInformationProviderType {
 // passed back to the [RouteInformationProvider], which turns it into a
 // configuration for the [Router] again to restore its state from.
 message FlutterRouteInformationType {
-  oneof result {
+  oneof constructor {
     FlutterRouteInformation flutter_route_information = 2;
   }
 }
@@ -60875,7 +60875,7 @@ message FlutterRouteInformationType {
 //   * [ScrollConfiguration], the inherited widget that controls how
 //     [Scrollable] widgets behave in a subtree.
 message FlutterScrollBehaviorType {
-  oneof result {
+  oneof constructor {
     CupertinoScrollBehavior cupertino_scroll_behavior = 2;
     FlutterScrollBehavior flutter_scroll_behavior = 3;
     MaterialMaterialScrollBehavior material_material_scroll_behavior = 4;
@@ -60894,7 +60894,7 @@ message FlutterScrollBehaviorType {
 //  * [ScrollPosition], which uses this interface to communicate with the
 //    scrollable widget.
 message FlutterScrollContextType {
-  oneof result {
+  oneof constructor {
     FlutterScrollableState flutter_scrollable_state = 2;
   }
 }
@@ -60930,7 +60930,7 @@ message FlutterScrollContextType {
 //  * [ScrollNotification] and [NotificationListener], which can be used to
 //    listen to scrolling occur without using a [ScrollController].
 message FlutterScrollControllerType {
-  oneof result {
+  oneof constructor {
     FlutterFixedExtentScrollController flutter_fixed_extent_scroll_controller = 2;
     FlutterPageController flutter_page_controller = 3;
     FlutterScrollController flutter_scroll_controller = 4;
@@ -60972,7 +60972,7 @@ message FlutterScrollControllerType {
 // [Scrollable] that inform a [ScrollPosition] will combine them with
 // the default [ScrollPhysics] object instead of your custom subclass.
 message FlutterScrollPhysicsType {
-  oneof result {
+  oneof constructor {
     FlutterAlwaysScrollableScrollPhysics flutter_always_scrollable_scroll_physics = 2;
     FlutterBouncingScrollPhysics flutter_bouncing_scroll_physics = 3;
     FlutterClampingScrollPhysics flutter_clamping_scroll_physics = 4;
@@ -61114,7 +61114,7 @@ message FlutterScrollPhysicsType {
 //  * [ScrollNotification] and [NotificationListener], which can be used to watch
 //    the scroll position without using a [ScrollController].
 message FlutterScrollPositionType {
-  oneof result {
+  oneof constructor {
     FlutterScrollPositionWithSingleContext flutter_scroll_position_with_single_context = 2;
   }
 }
@@ -61123,7 +61123,7 @@ message FlutterScrollPositionType {
 //
 // State for a [SelectableRegion].
 message FlutterSelectableRegionStateType {
-  oneof result {
+  oneof constructor {
     FlutterSelectableRegionState flutter_selectable_region_state = 2;
   }
 }
@@ -61147,7 +61147,7 @@ message FlutterSelectableRegionStateType {
 //  * [SelectionRegistrant], which auto registers the object with the mixin to
 //    [SelectionRegistrar].
 message FlutterSelectionRegistrarType {
-  oneof result {
+  oneof constructor {
     FlutterSelectableRegionState flutter_selectable_region_state = 2;
   }
 }
@@ -61169,7 +61169,7 @@ message FlutterSelectionRegistrarType {
 //    a [ShapeBorder] to define its shape.
 //  * [NotchedShape], which describes a shape with a hole in it.
 message FlutterShapeBorderType {
-  oneof result {
+  oneof constructor {
     FlutterBeveledRectangleBorder flutter_beveled_rectangle_border = 2;
     FlutterBorder flutter_border = 3;
     FlutterBorderDirectional flutter_border_directional = 4;
@@ -61205,7 +61205,7 @@ message FlutterShapeBorderType {
 // cases where overriding the usual shortcut manager behavior is desired, a
 // subclassed [ShortcutManager] may be supplied.
 message FlutterShortcutManagerType {
-  oneof result {
+  oneof constructor {
     FlutterShortcutManager flutter_shortcut_manager = 2;
   }
 }
@@ -61239,7 +61239,7 @@ message FlutterShortcutManagerType {
 //  * [RenderCustomSingleChildLayoutBox], render object that uses this
 //    delegate.
 message FlutterSingleChildLayoutDelegateType {
-  oneof result {
+  oneof constructor {
     FlutterDesktopTextSelectionToolbarLayoutDelegate flutter_desktop_text_selection_toolbar_layout_delegate = 2;
     FlutterTextSelectionToolbarLayoutDelegate flutter_text_selection_toolbar_layout_delegate = 3;
     MaterialSpellCheckSuggestionsToolbarLayoutDelegate material_spell_check_suggestions_toolbar_layout_delegate = 4;
@@ -61258,7 +61258,7 @@ message FlutterSingleChildLayoutDelegateType {
 //
 // Subclasses must implement [createRenderObject] and [updateRenderObject].
 message FlutterSingleChildRenderObjectWidgetType {
-  oneof result {
+  oneof constructor {
     FlutterAbsorbPointer flutter_absorb_pointer = 2;
     FlutterAlign flutter_align = 3;
     FlutterAspectRatio flutter_aspect_ratio = 4;
@@ -61420,7 +61420,7 @@ message FlutterSingleChildRenderObjectWidgetType {
 //  * [SliverChildListDelegate], which is a delegate that has an explicit list
 //    of children.
 message FlutterSliverChildDelegateType {
-  oneof result {
+  oneof constructor {
     FlutterSliverChildListDelegate flutter_sliver_child_list_delegate = 2;
     FlutterSliverChildListDelegateNamedFixed flutter_sliver_child_list_delegate_named_fixed = 3;
   }
@@ -61454,7 +61454,7 @@ message FlutterSliverChildDelegateType {
 //  * [RenderSliverGrid], which uses this delegate to control the layout of its
 //    tiles.
 message FlutterSliverGridDelegateType {
-  oneof result {
+  oneof constructor {
     FlutterSliverGridDelegateWithFixedCrossAxisCount flutter_sliver_grid_delegate_with_fixed_cross_axis_count = 2;
     FlutterSliverGridDelegateWithMaxCrossAxisExtent flutter_sliver_grid_delegate_with_max_cross_axis_extent = 3;
   }
@@ -61470,7 +61470,7 @@ message FlutterSliverGridDelegateType {
 // consulted again if it changes and the new delegate's
 // [SliverChildDelegate.shouldRebuild] method returns true.
 message FlutterSliverMultiBoxAdaptorWidgetType {
-  oneof result {
+  oneof constructor {
     FlutterSliverFixedExtentList flutter_sliver_fixed_extent_list = 2;
     FlutterSliverFixedExtentListNamedList flutter_sliver_fixed_extent_list_named_list = 3;
     FlutterSliverGrid flutter_sliver_grid = 4;
@@ -61509,7 +61509,7 @@ message FlutterSliverMultiBoxAdaptorWidgetType {
 //    [SliverOverlapAbsorber] to align its children, and which shows sample
 //    usage for this class.
 message FlutterSliverOverlapAbsorberHandleType {
-  oneof result {
+  oneof constructor {
     FlutterSliverOverlapAbsorberHandle flutter_sliver_overlap_absorber_handle = 2;
   }
 }
@@ -61527,7 +61527,7 @@ message FlutterSliverOverlapAbsorberHandleType {
 //
 // To force [SnapshotWidget] to recreate the child image, call [clear].
 message FlutterSnapshotControllerType {
-  oneof result {
+  oneof constructor {
     FlutterSnapshotController flutter_snapshot_controller = 2;
   }
 }
@@ -61540,7 +61540,7 @@ message FlutterSnapshotControllerType {
 // [List<SuggestionSpan>] spell check results and the [TextStyle] used to
 // mark misspelled words within text input.
 message FlutterSpellCheckConfigurationType {
-  oneof result {
+  oneof constructor {
     FlutterSpellCheckConfiguration flutter_spell_check_configuration = 2;
     FlutterSpellCheckConfigurationNamedDisabled flutter_spell_check_configuration_named_disabled = 3;
   }
@@ -61550,7 +61550,7 @@ message FlutterSpellCheckConfigurationType {
 //
 // Determines how spell check results are received for text input.
 message FlutterSpellCheckServiceType {
-  oneof result {
+  oneof constructor {
     FlutterDefaultSpellCheckService flutter_default_spell_check_service = 2;
   }
 }
@@ -61575,7 +61575,7 @@ message FlutterSpellCheckServiceType {
 //  * [Animatable], for a more flexible interface that maps fractions to
 //    arbitrary values.
 message FlutterSrcAnimationCurveType {
-  oneof result {
+  oneof constructor {
     FlutterSrcAnimationCatmullRomCurve flutter_src_animation_catmull_rom_curve = 2;
     FlutterSrcAnimationCatmullRomCurveNamedPrecompute flutter_src_animation_catmull_rom_curve_named_precompute = 3;
     FlutterSrcAnimationCubic flutter_src_animation_cubic = 4;
@@ -61606,7 +61606,7 @@ message FlutterSrcAnimationCurveType {
 // indirectly from a [State] that mixes in [TickerProviderStateMixin]), or
 // create a custom [TickerProvider] subclass.
 message FlutterSrcSchedulerTickerProviderType {
-  oneof result {
+  oneof constructor {
     FlutterAnimatedGridState flutter_animated_grid_state = 2;
     FlutterAnimatedListState flutter_animated_list_state = 3;
     FlutterEditableTextState flutter_editable_text_state = 4;
@@ -61629,7 +61629,7 @@ message FlutterSrcSchedulerTickerProviderType {
 //
 // A string that carries a list of [StringAttribute]s.
 message FlutterSrcSemanticsAttributedStringType {
-  oneof result {
+  oneof constructor {
     FlutterSrcSemanticsAttributedString flutter_src_semantics_attributed_string = 2;
   }
 }
@@ -61641,7 +61641,7 @@ message FlutterSrcSemanticsAttributedStringType {
 //
 // On iOS, these values are always ignored.
 message FlutterSrcSemanticsSemanticsHintOverridesType {
-  oneof result {
+  oneof constructor {
     FlutterSrcSemanticsSemanticsHintOverrides flutter_src_semantics_semantics_hint_overrides = 2;
   }
 }
@@ -61654,7 +61654,7 @@ message FlutterSrcSemanticsSemanticsHintOverridesType {
 // The properties of this class are used to generate a [SemanticsNode]s in the
 // semantics tree.
 message FlutterSrcSemanticsSemanticsPropertiesType {
-  oneof result {
+  oneof constructor {
     FlutterSrcSemanticsSemanticsProperties flutter_src_semantics_semantics_properties = 2;
   }
 }
@@ -61678,7 +61678,7 @@ message FlutterSrcSemanticsSemanticsPropertiesType {
 //
 //  * [OrdinalSortKey] for a sort key that sorts using an ordinal.
 message FlutterSrcSemanticsSemanticsSortKeyType {
-  oneof result {
+  oneof constructor {
     FlutterSrcSemanticsOrdinalSortKey flutter_src_semantics_ordinal_sort_key = 2;
   }
 }
@@ -61700,7 +61700,7 @@ message FlutterSrcSemanticsSemanticsSortKeyType {
 // two tags created with the same [name] and the `const` operator are always
 // identical.
 message FlutterSrcSemanticsSemanticsTagType {
-  oneof result {
+  oneof constructor {
     FlutterPlaceholderSpanIndexSemanticsTag flutter_placeholder_span_index_semantics_tag = 2;
     FlutterSrcSemanticsSemanticsTag flutter_src_semantics_semantics_tag = 3;
   }
@@ -61905,7 +61905,7 @@ message FlutterSrcSemanticsSemanticsTagType {
 //  * [InheritedWidget], for widgets that introduce ambient state that can
 //    be read by descendant widgets.
 message FlutterStatefulWidgetType {
-  oneof result {
+  oneof constructor {
     CupertinoActionSheet cupertino_action_sheet = 2;
     CupertinoActivityIndicator cupertino_activity_indicator = 3;
     CupertinoActivityIndicatorNamedPartiallyRevealed cupertino_activity_indicator_named_partially_revealed = 4;
@@ -62213,7 +62213,7 @@ message FlutterStatefulWidgetType {
 //  * [InheritedWidget], for widgets that introduce ambient state that can
 //    be read by descendant widgets.
 message FlutterStatelessWidgetType {
-  oneof result {
+  oneof constructor {
     CupertinoAdaptiveTextSelectionToolbar cupertino_adaptive_text_selection_toolbar = 2;
     CupertinoAdaptiveTextSelectionToolbarNamedButtonItems cupertino_adaptive_text_selection_toolbar_named_button_items = 3;
     CupertinoAdaptiveTextSelectionToolbarNamedEditable cupertino_adaptive_text_selection_toolbar_named_editable = 4;
@@ -62646,7 +62646,7 @@ message FlutterStatelessWidgetType {
 // {@end-tool}
 //
 message FlutterStrutStyleType {
-  oneof result {
+  oneof constructor {
     FlutterStrutStyle flutter_strut_style = 2;
     FlutterStrutStyleNamedFromTextStyle flutter_strut_style_named_from_text_style = 3;
   }
@@ -62660,7 +62660,7 @@ message FlutterStrutStyleType {
 // the system overlays, and by [SystemChrome.setSystemUIOverlayStyle] for
 // imperatively setting the style of the systeme overlays.
 message FlutterSystemUiOverlayStyleType {
-  oneof result {
+  oneof constructor {
     FlutterSystemUiOverlayStyle flutter_system_ui_overlay_style = 2;
   }
 }
@@ -62674,7 +62674,7 @@ message FlutterSystemUiOverlayStyleType {
 //
 // The sides are represented by [BorderSide] objects.
 message FlutterTableBorderType {
-  oneof result {
+  oneof constructor {
     FlutterTableBorder flutter_table_border = 2;
     FlutterTableBorderNamedAll flutter_table_border_named_all = 3;
     FlutterTableBorderNamedSymmetric flutter_table_border_named_symmetric = 4;
@@ -62693,7 +62693,7 @@ message FlutterTableBorderType {
 // [FractionColumnWidth], which sizes a column based on the size of the
 // table's container.
 message FlutterTableColumnWidthType {
-  oneof result {
+  oneof constructor {
     FlutterFixedColumnWidth flutter_fixed_column_width = 2;
     FlutterFlexColumnWidth flutter_flex_column_width = 3;
     FlutterFractionColumnWidth flutter_fraction_column_width = 4;
@@ -62712,7 +62712,7 @@ message FlutterTableColumnWidthType {
 // The alignment of individual cells in a row can be controlled using a
 // [TableCell].
 message FlutterTableRowType {
-  oneof result {
+  oneof constructor {
     FlutterTableRow flutter_table_row = 2;
   }
 }
@@ -62724,7 +62724,7 @@ message FlutterTableRowType {
 // [RenderTapRegionSurface] (typically created with a [TapRegionSurface]
 // widget).
 message FlutterTapRegionRegistryType {
-  oneof result {
+  oneof constructor {
     FlutterRenderTapRegionSurface flutter_render_tap_region_surface = 2;
   }
 }
@@ -62747,7 +62747,7 @@ message FlutterTapRegionRegistryType {
 //  * [InputDecorator.textAlignVertical], which defines the alignment of
 //    prefix, input, and suffix within an [InputDecorator].
 message FlutterTextAlignVerticalType {
-  oneof result {
+  oneof constructor {
     FlutterTextAlignVertical flutter_text_align_vertical = 2;
   }
 }
@@ -62800,7 +62800,7 @@ message FlutterTextAlignVerticalType {
 //    controlled with a [TextEditingController].
 //  * Learn how to use a [TextEditingController] in one of our [cookbook recipes](https://flutter.dev/docs/cookbook/forms/text-field-changes#2-use-a-texteditingcontroller).
 message FlutterTextEditingControllerType {
-  oneof result {
+  oneof constructor {
     FlutterTextEditingController flutter_text_editing_controller = 2;
     FlutterTextEditingControllerNamedFromValue flutter_text_editing_controller_named_from_value = 3;
     MaterialSearchController material_search_controller = 4;
@@ -62811,7 +62811,7 @@ message FlutterTextEditingControllerType {
 //
 // The current text, selection, and composing state for editing a run of text.
 message FlutterTextEditingValueType {
-  oneof result {
+  oneof constructor {
     FlutterTextEditingValue flutter_text_editing_value = 2;
   }
 }
@@ -62841,7 +62841,7 @@ message FlutterTextEditingValueType {
 //  * [FilteringTextInputFormatter], a provided formatter for filtering
 //    characters.
 message FlutterTextInputFormatterType {
-  oneof result {
+  oneof constructor {
     FlutterFilteringTextInputFormatter flutter_filtering_text_input_formatter = 2;
     FlutterFilteringTextInputFormatterNamedAllow flutter_filtering_text_input_formatter_named_allow = 3;
     FlutterFilteringTextInputFormatterNamedDeny flutter_filtering_text_input_formatter_named_deny = 4;
@@ -62859,7 +62859,7 @@ message FlutterTextInputFormatterType {
 // for additional flags for some input types. For example, numeric input
 // can specify whether it supports decimal numbers and/or signed numbers.
 message FlutterTextInputTypeType {
-  oneof result {
+  oneof constructor {
     FlutterTextInputTypeNamedNumberWithOptions flutter_text_input_type_named_number_with_options = 2;
   }
 }
@@ -62878,7 +62878,7 @@ message FlutterTextInputTypeType {
 // the magnifier's behavior through the [SelectionOverlay].
 // {@endtemplate}
 message FlutterTextMagnifierConfigurationType {
-  oneof result {
+  oneof constructor {
     FlutterTextMagnifierConfiguration flutter_text_magnifier_configuration = 2;
   }
 }
@@ -62896,7 +62896,7 @@ message FlutterTextMagnifierConfigurationType {
 // [TextScaler] changes. Consider overridding the [==] operator if applicable
 // to avoid unnecessary rebuilds.
 message FlutterTextScalerType {
-  oneof result {
+  oneof constructor {
     FlutterTextScalerNamedLinear flutter_text_scaler_named_linear = 2;
   }
 }
@@ -62934,7 +62934,7 @@ message FlutterTextScalerType {
 //  * [SelectionArea], which selects appropriate text selection controls
 //    based on the current platform.
 message FlutterTextSelectionControlsType {
-  oneof result {
+  oneof constructor {
     CupertinoDesktopTextSelectionControls cupertino_desktop_text_selection_controls = 2;
     CupertinoTextSelectionControls cupertino_text_selection_controls = 3;
     FlutterEmptyTextSelectionControls flutter_empty_text_selection_controls = 4;
@@ -62949,7 +62949,7 @@ message FlutterTextSelectionControlsType {
 // direction at that point, relative to top left of the [RenderEditable] that
 // holds the selection.
 message FlutterTextSelectionPointType {
-  oneof result {
+  oneof constructor {
     FlutterTextSelectionPoint flutter_text_selection_point = 2;
   }
 }
@@ -62966,7 +62966,7 @@ message FlutterTextSelectionPointType {
 //
 //  * [AdaptiveTextSelectionToolbar.anchors], which is of this type.
 message FlutterTextSelectionToolbarAnchorsType {
-  oneof result {
+  oneof constructor {
     FlutterTextSelectionToolbarAnchors flutter_text_selection_toolbar_anchors = 2;
     FlutterTextSelectionToolbarAnchorsNamedFromSelection flutter_text_selection_toolbar_anchors_named_from_selection = 3;
   }
@@ -62976,7 +62976,7 @@ message FlutterTextSelectionToolbarAnchorsType {
 //
 // A range of text that represents a selection.
 message FlutterTextSelectionType {
-  oneof result {
+  oneof constructor {
     FlutterTextSelection flutter_text_selection = 2;
     FlutterTextSelectionNamedCollapsed flutter_text_selection_named_collapsed = 3;
     FlutterTextSelectionNamedFromPosition flutter_text_selection_named_from_position = 4;
@@ -63032,7 +63032,7 @@ message FlutterTextSelectionType {
 //  * [RichText], a widget for finer control of text rendering.
 //  * [TextPainter], a class for painting [TextSpan] objects on a [Canvas].
 message FlutterTextSpanType {
-  oneof result {
+  oneof constructor {
     FlutterTextSpan flutter_text_span = 2;
   }
 }
@@ -63468,7 +63468,7 @@ message FlutterTextSpanType {
 //  * Cookbook: [Use a custom font](https://flutter.dev/docs/cookbook/design/fonts)
 //  * Cookbook: [Use themes to share colors and font styles](https://flutter.dev/docs/cookbook/design/themes)
 message FlutterTextStyleType {
-  oneof result {
+  oneof constructor {
     FlutterTextStyle flutter_text_style = 2;
   }
 }
@@ -63486,7 +63486,7 @@ message FlutterTextStyleType {
 //  * [InteractiveViewer.transformationController] for detailed documentation
 //    on how to use TransformationController with [InteractiveViewer].
 message FlutterTransformationControllerType {
-  oneof result {
+  oneof constructor {
     FlutterTransformationController flutter_transformation_controller = 2;
   }
 }
@@ -63515,7 +63515,7 @@ message FlutterTransformationControllerType {
 // * [EditableText], which uses the [UndoHistory] widget and allows
 //   control of the underlying history using an [UndoHistoryController].
 message FlutterUndoHistoryControllerType {
-  oneof result {
+  oneof constructor {
     FlutterUndoHistoryController flutter_undo_history_controller = 2;
   }
 }
@@ -63524,7 +63524,7 @@ message FlutterUndoHistoryControllerType {
 //
 // Represents whether the current undo stack can undo or redo.
 message FlutterUndoHistoryValueType {
-  oneof result {
+  oneof constructor {
     FlutterUndoHistoryValue flutter_undo_history_value = 2;
   }
 }
@@ -63533,7 +63533,7 @@ message FlutterUndoHistoryValueType {
 //
 // The layout constraints for the root render object.
 message FlutterViewConfigurationType {
-  oneof result {
+  oneof constructor {
     FlutterViewConfiguration flutter_view_configuration = 2;
   }
 }
@@ -63555,7 +63555,7 @@ message FlutterViewConfigurationType {
 //  * [RenderViewportBase], which is a render object that uses viewport
 //    offsets.
 message FlutterViewportOffsetType {
-  oneof result {
+  oneof constructor {
     FlutterScrollPositionWithSingleContext flutter_scroll_position_with_single_context = 2;
     FlutterViewportOffsetNamedFixed flutter_viewport_offset_named_fixed = 3;
     FlutterViewportOffsetNamedZero flutter_viewport_offset_named_zero = 4;
@@ -63568,7 +63568,7 @@ message FlutterViewportOffsetType {
 // [BackButton], [CloseButton], [DrawerButton], and [EndDrawerButton] with
 // [ActionIconTheme.of] or the overall [Theme]'s [ThemeData.actionIconTheme].
 message MaterialActionIconThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialActionIconThemeData material_action_icon_theme_data = 2;
   }
 }
@@ -63589,7 +63589,7 @@ message MaterialActionIconThemeDataType {
 // compute its own default values, typically based on the overall theme's
 // [ThemeData.colorScheme], [ThemeData.textTheme], and [ThemeData.iconTheme].
 message MaterialAppBarThemeType {
-  oneof result {
+  oneof constructor {
     MaterialAppBarTheme material_app_bar_theme = 2;
   }
 }
@@ -63614,7 +63614,7 @@ message MaterialAppBarThemeType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialBadgeThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialBadgeThemeData material_badge_theme_data = 2;
   }
 }
@@ -63638,7 +63638,7 @@ message MaterialBadgeThemeDataType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialBottomAppBarThemeType {
-  oneof result {
+  oneof constructor {
     MaterialBottomAppBarTheme material_bottom_app_bar_theme = 2;
   }
 }
@@ -63664,7 +63664,7 @@ message MaterialBottomAppBarThemeType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialBottomNavigationBarThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialBottomNavigationBarThemeData material_bottom_navigation_bar_theme_data = 2;
   }
 }
@@ -63689,7 +63689,7 @@ message MaterialBottomNavigationBarThemeDataType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialBottomSheetThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialBottomSheetThemeData material_bottom_sheet_theme_data = 2;
   }
 }
@@ -63711,7 +63711,7 @@ message MaterialBottomSheetThemeDataType {
 //  * [ButtonBar], which uses this to configure itself and its children
 //    button widgets.
 message MaterialButtonBarThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialButtonBarThemeData material_button_bar_theme_data = 2;
   }
 }
@@ -63839,7 +63839,7 @@ message MaterialButtonBarThemeDataType {
 //  * [OutlinedButtonTheme], the theme for [OutlinedButton]s.
 //  * [TextButtonTheme], the theme for [TextButton]s.
 message MaterialButtonStyleType {
-  oneof result {
+  oneof constructor {
     MaterialButtonStyle material_button_style = 2;
   }
 }
@@ -63859,7 +63859,7 @@ message MaterialButtonStyleType {
 // using [ThemeData.buttonTheme]. The Material theme's button theme data
 // can be overridden with [ButtonTheme].
 message MaterialButtonThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialButtonThemeData material_button_theme_data = 2;
   }
 }
@@ -63884,7 +63884,7 @@ message MaterialButtonThemeDataType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialCardThemeType {
-  oneof result {
+  oneof constructor {
     MaterialCardTheme material_card_theme = 2;
   }
 }
@@ -63910,7 +63910,7 @@ message MaterialCardThemeType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialCheckboxThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialCheckboxThemeData material_checkbox_theme_data = 2;
   }
 }
@@ -63990,7 +63990,7 @@ message MaterialCheckboxThemeDataType {
 //    but for overall themes.
 //  * [ThemeData], which has a default [ChipThemeData].
 message MaterialChipThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialChipThemeData material_chip_theme_data = 2;
     MaterialChipThemeDataNamedFromDefaults material_chip_theme_data_named_from_defaults = 3;
   }
@@ -64038,7 +64038,7 @@ message MaterialChipThemeDataType {
 //
 //{@macro flutter.material.colors.settingColors}
 message MaterialColorSchemeType {
-  oneof result {
+  oneof constructor {
     MaterialColorScheme material_color_scheme = 2;
     MaterialColorSchemeNamedDark material_color_scheme_named_dark = 3;
     MaterialColorSchemeNamedFromSeed material_color_scheme_named_from_seed = 4;
@@ -64057,7 +64057,7 @@ message MaterialColorSchemeType {
 // in the [DataTable], in the new [DataRow] constructor's `cells`
 // argument.
 message MaterialDataCellType {
-  oneof result {
+  oneof constructor {
     MaterialDataCell material_data_cell = 2;
   }
 }
@@ -64070,7 +64070,7 @@ message MaterialDataCellType {
 // display in the table. The list of [DataColumn] objects is passed
 // as the `columns` argument to the [DataTable.new] constructor.
 message MaterialDataColumnType {
-  oneof result {
+  oneof constructor {
     MaterialDataColumn material_data_column = 2;
   }
 }
@@ -64086,7 +64086,7 @@ message MaterialDataColumnType {
 // The data for this row of the table is provided in the [cells]
 // property of the [DataRow] object.
 message MaterialDataRowType {
-  oneof result {
+  oneof constructor {
     MaterialDataRow material_data_row = 2;
     MaterialDataRowNamedByIndex material_data_row_named_by_index = 3;
   }
@@ -64116,7 +64116,7 @@ message MaterialDataRowType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialDataTableThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialDataTableThemeData material_data_table_theme_data = 2;
   }
 }
@@ -64138,7 +64138,7 @@ message MaterialDataTableThemeDataType {
 // the overall theme's [ThemeData.colorScheme], [ThemeData.textTheme], and
 // [ThemeData.iconTheme].
 message MaterialDatePickerThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialDatePickerThemeData material_date_picker_theme_data = 2;
   }
 }
@@ -64155,7 +64155,7 @@ message MaterialDatePickerThemeDataType {
 //  * [showDateRangePicker], which displays a dialog that allows the user to
 //    select a date range.
 message MaterialDateTimeRangeType {
-  oneof result {
+  oneof constructor {
     MaterialDateTimeRange material_date_time_range = 2;
   }
 }
@@ -64178,7 +64178,7 @@ message MaterialDateTimeRangeType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialDialogThemeType {
-  oneof result {
+  oneof constructor {
     MaterialDialogTheme material_dialog_theme = 2;
   }
 }
@@ -64203,7 +64203,7 @@ message MaterialDialogThemeType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialDividerThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialDividerThemeData material_divider_theme_data = 2;
   }
 }
@@ -64228,7 +64228,7 @@ message MaterialDividerThemeDataType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application and can customize a drawer using [ThemeData.drawerTheme].
 message MaterialDrawerThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialDrawerThemeData material_drawer_theme_data = 2;
   }
 }
@@ -64248,7 +64248,7 @@ message MaterialDrawerThemeDataType {
 // computes its own default values, typically based on the overall
 // theme's [ThemeData.colorScheme], [ThemeData.textTheme], and [ThemeData.iconTheme].
 message MaterialDropdownMenuThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialDropdownMenuThemeData material_dropdown_menu_theme_data = 2;
   }
 }
@@ -64276,7 +64276,7 @@ message MaterialDropdownMenuThemeDataType {
 //  * [ThemeData.elevatedButtonTheme], which can be used to override the default
 //    [ButtonStyle] for [ElevatedButton]s below the overall [Theme].
 message MaterialElevatedButtonThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialElevatedButtonThemeData material_elevated_button_theme_data = 2;
   }
 }
@@ -64296,7 +64296,7 @@ message MaterialElevatedButtonThemeDataType {
 // the [ExpansionTile] to rebuild, so they may not be called from
 // a build method.
 message MaterialExpansionTileControllerType {
-  oneof result {
+  oneof constructor {
     MaterialExpansionTileController material_expansion_tile_controller = 2;
   }
 }
@@ -64330,7 +64330,7 @@ message MaterialExpansionTileControllerType {
 //  * [ThemeData.colorScheme], the thirteen colors that most Material widget
 //    default colors are based on.
 message MaterialExpansionTileThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialExpansionTileThemeData material_expansion_tile_theme_data = 2;
   }
 }
@@ -64358,7 +64358,7 @@ message MaterialExpansionTileThemeDataType {
 //  * [ThemeData.filledButtonTheme], which can be used to override the default
 //    [ButtonStyle] for [FilledButton]s below the overall [Theme].
 message MaterialFilledButtonThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialFilledButtonThemeData material_filled_button_theme_data = 2;
   }
 }
@@ -64385,7 +64385,7 @@ message MaterialFilledButtonThemeDataType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialFloatingActionButtonThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialFloatingActionButtonThemeData material_floating_action_button_theme_data = 2;
   }
 }
@@ -64413,7 +64413,7 @@ message MaterialFloatingActionButtonThemeDataType {
 //  * [ThemeData.iconButtonTheme], which can be used to override the default
 //    [ButtonStyle] for [IconButton]s below the overall [Theme].
 message MaterialIconButtonThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialIconButtonThemeData material_icon_button_theme_data = 2;
   }
 }
@@ -64441,7 +64441,7 @@ message MaterialIconButtonThemeDataType {
 //    rounded rectangle around the input decorator's container.
 //  * [InputDecoration], which is used to configure an [InputDecorator].
 message MaterialInputBorderType {
-  oneof result {
+  oneof constructor {
     MaterialOutlineInputBorder material_outline_input_border = 2;
     MaterialUnderlineInputBorder material_underline_input_border = 3;
   }
@@ -64459,7 +64459,7 @@ message MaterialInputBorderType {
 // The [InputDecoration.applyDefaults] method is used to combine a input
 // decoration theme with an [InputDecoration] object.
 message MaterialInputDecorationThemeType {
-  oneof result {
+  oneof constructor {
     MaterialInputDecorationTheme material_input_decoration_theme = 2;
   }
 }
@@ -64540,7 +64540,7 @@ message MaterialInputDecorationThemeType {
 //  * [Decoration] and [DecoratedBox], for drawing borders and backgrounds
 //    around a child widget.
 message MaterialInputDecorationType {
-  oneof result {
+  oneof constructor {
     MaterialInputDecoration material_input_decoration = 2;
     MaterialInputDecorationNamedCollapsed material_input_decoration_named_collapsed = 3;
   }
@@ -64574,7 +64574,7 @@ message MaterialInputDecorationType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialListTileThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialListTileThemeData material_list_tile_theme_data = 2;
   }
 }
@@ -64598,7 +64598,7 @@ message MaterialListTileThemeDataType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialMaterialBannerThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialMaterialBannerThemeData material_material_banner_theme_data = 2;
   }
 }
@@ -64625,7 +64625,7 @@ message MaterialMaterialBannerThemeDataType {
 // or loses the focus it will [update] its controller's [value] and
 // notify listeners of the change.
 message MaterialMaterialStatesControllerType {
-  oneof result {
+  oneof constructor {
     MaterialMaterialStatesController material_material_states_controller = 2;
   }
 }
@@ -64657,7 +64657,7 @@ message MaterialMaterialStatesControllerType {
 //   in a menu.
 // * [ThemeData], which describes the overall theme for the application.
 message MaterialMenuBarThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialMenuBarThemeData material_menu_bar_theme_data = 2;
   }
 }
@@ -64693,7 +64693,7 @@ message MaterialMenuBarThemeDataType {
 // * [MenuBar], a widget which defines a menu bar of buttons hosting cascading
 //   menus.
 message MaterialMenuButtonThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialMenuButtonThemeData material_menu_button_theme_data = 2;
   }
 }
@@ -64713,7 +64713,7 @@ message MaterialMenuButtonThemeDataType {
 //   [MenuController].
 // * [SubmenuButton], a widget that has a button that manages a submenu.
 message MaterialMenuControllerType {
-  oneof result {
+  oneof constructor {
     MaterialMenuController material_menu_controller = 2;
   }
 }
@@ -64794,7 +64794,7 @@ message MaterialMenuControllerType {
 // * [MenuButtonTheme], the theme for [SubmenuButton]s and [MenuItemButton]s.
 // * [ButtonStyle], a similar configuration object for button styles.
 message MaterialMenuStyleType {
-  oneof result {
+  oneof constructor {
     MaterialMenuStyle material_menu_style = 2;
   }
 }
@@ -64820,7 +64820,7 @@ message MaterialMenuStyleType {
 // * [MenuBarThemeData], which describes the theme for the menu bar itself in a
 //   [MenuBar] widget.
 message MaterialMenuThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialMenuBarThemeData material_menu_bar_theme_data = 2;
     MaterialMenuThemeData material_menu_theme_data = 3;
   }
@@ -64832,7 +64832,7 @@ message MaterialMenuThemeDataType {
 //
 // All [MergeableMaterialItem] objects need a [LocalKey].
 message MaterialMergeableMaterialItemType {
-  oneof result {
+  oneof constructor {
     MaterialMaterialGap material_material_gap = 2;
     MaterialMaterialSlice material_material_slice = 3;
   }
@@ -64863,7 +64863,7 @@ message MaterialMergeableMaterialItemType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialNavigationBarThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialNavigationBarThemeData material_navigation_bar_theme_data = 2;
   }
 }
@@ -64893,7 +64893,7 @@ message MaterialNavigationBarThemeDataType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialNavigationDrawerThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialNavigationDrawerThemeData material_navigation_drawer_theme_data = 2;
   }
 }
@@ -64906,7 +64906,7 @@ message MaterialNavigationDrawerThemeDataType {
 //
 //  * [NavigationRail]
 message MaterialNavigationRailDestinationType {
-  oneof result {
+  oneof constructor {
     MaterialNavigationRailDestination material_navigation_rail_destination = 2;
   }
 }
@@ -64935,7 +64935,7 @@ message MaterialNavigationRailDestinationType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialNavigationRailThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialNavigationRailThemeData material_navigation_rail_theme_data = 2;
   }
 }
@@ -64963,7 +64963,7 @@ message MaterialNavigationRailThemeDataType {
 //  * [ThemeData.outlinedButtonTheme], which can be used to override the default
 //    [ButtonStyle] for [OutlinedButton]s below the overall [Theme].
 message MaterialOutlinedButtonThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialOutlinedButtonThemeData material_outlined_button_theme_data = 2;
   }
 }
@@ -64999,7 +64999,7 @@ message MaterialOutlinedButtonThemeDataType {
 //  * [CupertinoPageTransitionsBuilder], which defines a horizontal page
 //    transition that matches native iOS page transitions.
 message MaterialPageTransitionsThemeType {
-  oneof result {
+  oneof constructor {
     MaterialPageTransitionsTheme material_page_transitions_theme = 2;
   }
 }
@@ -65027,7 +65027,7 @@ message MaterialPageTransitionsThemeType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialPopupMenuThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialPopupMenuThemeData material_popup_menu_theme_data = 2;
   }
 }
@@ -65049,7 +65049,7 @@ message MaterialPopupMenuThemeDataType {
 //  * [ThemeData.progressIndicatorTheme], which describes the defaults for
 //    any progress indicators as part of the application's [ThemeData].
 message MaterialProgressIndicatorThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialProgressIndicatorThemeData material_progress_indicator_theme_data = 2;
   }
 }
@@ -65077,7 +65077,7 @@ message MaterialProgressIndicatorThemeDataType {
 //  * [RadioTheme], which is used by descendants to obtain the
 //    [RadioThemeData].
 message MaterialRadioThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialRadioThemeData material_radio_theme_data = 2;
   }
 }
@@ -65090,7 +65090,7 @@ message MaterialRadioThemeDataType {
 // Used in combination with [SliderThemeData.showValueIndicator] to display
 // labels above the thumbs.
 message MaterialRangeLabelsType {
-  oneof result {
+  oneof constructor {
     MaterialRangeLabels material_range_labels = 2;
   }
 }
@@ -65113,7 +65113,7 @@ message MaterialRangeLabelsType {
 //    the [Slider]'s thumb, overlay, and value indicator and the
 //    [RangeSlider]'s overlay.
 message MaterialRangeSliderThumbShapeType {
-  oneof result {
+  oneof constructor {
     MaterialRoundRangeSliderThumbShape material_round_range_slider_thumb_shape = 2;
   }
 }
@@ -65139,7 +65139,7 @@ message MaterialRangeSliderThumbShapeType {
 //    the [Slider]'s thumb, overlay, and value indicator and the
 //    [RangeSlider]'s overlay.
 message MaterialRangeSliderTickMarkShapeType {
-  oneof result {
+  oneof constructor {
     MaterialRoundRangeSliderTickMarkShape material_round_range_slider_tick_mark_shape = 2;
   }
 }
@@ -65169,7 +65169,7 @@ message MaterialRangeSliderTickMarkShapeType {
 //    the [Slider]'s thumb, overlay, and value indicator and the
 //    [RangeSlider]'s overlay.
 message MaterialRangeSliderTrackShapeType {
-  oneof result {
+  oneof constructor {
     MaterialRectangularRangeSliderTrackShape material_rectangular_range_slider_track_shape = 2;
     MaterialRoundedRectRangeSliderTrackShape material_rounded_rect_range_slider_track_shape = 3;
   }
@@ -65193,7 +65193,7 @@ message MaterialRangeSliderTrackShapeType {
 //    the [Slider]'s thumb, overlay, and value indicator and the
 //    [RangeSlider]'s overlay.
 message MaterialRangeSliderValueIndicatorShapeType {
-  oneof result {
+  oneof constructor {
     MaterialPaddleRangeSliderValueIndicatorShape material_paddle_range_slider_value_indicator_shape = 2;
     MaterialRectangularRangeSliderValueIndicatorShape material_rectangular_range_slider_value_indicator_shape = 3;
   }
@@ -65207,7 +65207,7 @@ message MaterialRangeSliderValueIndicatorShapeType {
 // is emitted in [RangeSlider.onChanged], [RangeSlider.onChangeStart], and
 // [RangeSlider.onChangeEnd] when the values change.
 message MaterialRangeValuesType {
-  oneof result {
+  oneof constructor {
     MaterialRangeValues material_range_values = 2;
   }
 }
@@ -65232,7 +65232,7 @@ message MaterialRangeValuesType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialScrollbarThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialScrollbarThemeData material_scrollbar_theme_data = 2;
   }
 }
@@ -65258,7 +65258,7 @@ message MaterialScrollbarThemeDataType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialSearchBarThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialSearchBarThemeData material_search_bar_theme_data = 2;
   }
 }
@@ -65285,7 +65285,7 @@ message MaterialSearchBarThemeDataType {
 //   [SearchBar] widget.
 // * [SearchAnchor], which is used to open a search view route.
 message MaterialSearchViewThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialSearchViewThemeData material_search_view_theme_data = 2;
   }
 }
@@ -65307,7 +65307,7 @@ message MaterialSearchViewThemeDataType {
 // the overall theme's [ThemeData.colorScheme], [ThemeData.textTheme], and
 // [ThemeData.iconTheme].
 message MaterialSegmentedButtonThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialSegmentedButtonThemeData material_segmented_button_theme_data = 2;
   }
 }
@@ -65336,7 +65336,7 @@ message MaterialSegmentedButtonThemeDataType {
 //  * [PaddleSliderValueIndicatorShape], which is the default [Slider]'s value
 //    indicator shape that paints a custom path with text in it.
 message MaterialSliderComponentShapeType {
-  oneof result {
+  oneof constructor {
     MaterialDropSliderValueIndicatorShape material_drop_slider_value_indicator_shape = 2;
     MaterialPaddleSliderValueIndicatorShape material_paddle_slider_value_indicator_shape = 3;
     MaterialRectangularSliderValueIndicatorShape material_rectangular_slider_value_indicator_shape = 4;
@@ -65423,7 +65423,7 @@ message MaterialSliderComponentShapeType {
 //  * [RangeSliderTickMarkShape], which can be used to create custom shapes for
 //    the [RangeSlider]'s tick marks.
 message MaterialSliderThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialSliderThemeData material_slider_theme_data = 2;
     MaterialSliderThemeDataNamedFromPrimaryColors material_slider_theme_data_named_from_primary_colors = 3;
   }
@@ -65448,7 +65448,7 @@ message MaterialSliderThemeDataType {
 //    the [Slider]'s thumb, overlay, and value indicator and the
 //    [RangeSlider]'s overlay.
 message MaterialSliderTickMarkShapeType {
-  oneof result {
+  oneof constructor {
     MaterialRoundSliderTickMarkShape material_round_slider_tick_mark_shape = 2;
   }
 }
@@ -65474,7 +65474,7 @@ message MaterialSliderTickMarkShapeType {
 //    the [Slider]'s thumb, overlay, and value indicator and the
 //    [RangeSlider]'s overlay.
 message MaterialSliderTrackShapeType {
-  oneof result {
+  oneof constructor {
     MaterialRectangularSliderTrackShape material_rectangular_slider_track_shape = 2;
     MaterialRoundedRectSliderTrackShape material_rounded_rect_slider_track_shape = 3;
   }
@@ -65500,7 +65500,7 @@ message MaterialSliderTrackShapeType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialSnackBarThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialSnackBarThemeData material_snack_bar_theme_data = 2;
   }
 }
@@ -65516,7 +65516,7 @@ message MaterialSnackBarThemeDataType {
 //  * [Stepper]
 //  * <https://material.io/archive/guidelines/components/steppers.html>
 message MaterialStepType {
-  oneof result {
+  oneof constructor {
     MaterialStep material_step = 2;
   }
 }
@@ -65542,7 +65542,7 @@ message MaterialStepType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialSwitchThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialSwitchThemeData material_switch_theme_data = 2;
   }
 }
@@ -65564,7 +65564,7 @@ message MaterialSwitchThemeDataType {
 //  * [ThemeData], which describes the overall theme information for the
 //    application.
 message MaterialTabBarThemeType {
-  oneof result {
+  oneof constructor {
     MaterialTabBarTheme material_tab_bar_theme = 2;
   }
 }
@@ -65652,7 +65652,7 @@ message MaterialTabBarThemeType {
 // {@end-tool}
 //
 message MaterialTabControllerType {
-  oneof result {
+  oneof constructor {
     MaterialTabController material_tab_controller = 2;
   }
 }
@@ -65680,7 +65680,7 @@ message MaterialTabControllerType {
 //  * [ThemeData.textButtonTheme], which can be used to override the default
 //    [ButtonStyle] for [TextButton]s below the overall [Theme].
 message MaterialTextButtonThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialTextButtonThemeData material_text_button_theme_data = 2;
   }
 }
@@ -65703,7 +65703,7 @@ message MaterialTextButtonThemeDataType {
 //  * [InputDecorationTheme], which defines most other visual properties of
 //    text fields.
 message MaterialTextSelectionThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialTextSelectionThemeData material_text_selection_theme_data = 2;
   }
 }
@@ -65773,7 +65773,7 @@ message MaterialTextSelectionThemeDataType {
 //    globally adjusted, such as the color scheme.
 //  * <https://material.io/design/typography/>
 message MaterialTextThemeType {
-  oneof result {
+  oneof constructor {
     MaterialTextTheme material_text_theme = 2;
   }
 }
@@ -65814,7 +65814,7 @@ message MaterialTextThemeType {
 // See <https://material.io/design/color/> for
 // more discussion on how to pick the right colors.
 message MaterialThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialThemeData material_theme_data = 2;
     MaterialThemeDataNamedDark material_theme_data_named_dark = 3;
     MaterialThemeDataNamedFallback material_theme_data_named_fallback = 4;
@@ -65852,7 +65852,7 @@ message MaterialThemeDataType {
 //  * [DateTime], which represents date and time, and is subject to eras and
 //    time zones.
 message MaterialTimeOfDayType {
-  oneof result {
+  oneof constructor {
     MaterialTimeOfDay material_time_of_day = 2;
     MaterialTimeOfDayNamedFromDateTime material_time_of_day_named_from_date_time = 3;
     MaterialTimeOfDayNamedNow material_time_of_day_named_now = 4;
@@ -65880,7 +65880,7 @@ message MaterialTimeOfDayType {
 //  * [TimePickerTheme], which describes the actual configuration of a time
 //    picker theme.
 message MaterialTimePickerThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialTimePickerThemeData material_time_picker_theme_data = 2;
   }
 }
@@ -65902,7 +65902,7 @@ message MaterialTimePickerThemeDataType {
 //  * [ToggleButtonsTheme], which describes the actual configuration of a
 //    toggle buttons theme.
 message MaterialToggleButtonsThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialToggleButtonsThemeData material_toggle_buttons_theme_data = 2;
   }
 }
@@ -65924,7 +65924,7 @@ message MaterialToggleButtonsThemeDataType {
 //  * [TooltipThemeData], which describes the actual configuration of a
 //    tooltip theme.
 message MaterialTooltipThemeDataType {
-  oneof result {
+  oneof constructor {
     MaterialTooltipThemeData material_tooltip_theme_data = 2;
   }
 }
@@ -65971,7 +65971,7 @@ message MaterialTooltipThemeDataType {
 //  * <https://material.io/design/typography/>
 //  * <https://m3.material.io/styles/typography>
 message MaterialTypographyType {
-  oneof result {
+  oneof constructor {
     MaterialTypography material_typography = 2;
     MaterialTypographyNamedMaterial2014 material_typography_named_material2014 = 3;
     MaterialTypographyNamedMaterial2018 material_typography_named_material2018 = 4;
@@ -66017,7 +66017,7 @@ message MaterialTypographyType {
 //    horizontal density of Material components.
 //  * [Material design guidance on density](https://material.io/design/layout/applying-density.html).
 message MaterialVisualDensityType {
-  oneof result {
+  oneof constructor {
     MaterialVisualDensity material_visual_density = 2;
   }
 }
@@ -66037,7 +66037,7 @@ message MaterialVisualDensityType {
 //  * [CupertinoThemeData], which uses reasonable default values for
 //    unspecified theme properties.
 message NoDefaultCupertinoThemeDataType {
-  oneof result {
+  oneof constructor {
     CupertinoThemeData cupertino_theme_data = 2;
     CupertinoThemeDataNamedRaw cupertino_theme_data_named_raw = 3;
     MaterialMaterialBasedCupertinoThemeData material_material_based_cupertino_theme_data = 4;
@@ -66053,7 +66053,7 @@ message NoDefaultCupertinoThemeDataType {
 // Used by [CupertinoPageScaffold] to either shift away fully obstructed content
 // or provide a padding guide to partially obstructed content.
 message ObstructingPreferredSizeWidgetType {
-  oneof result {
+  oneof constructor {
     CupertinoNavigationBar cupertino_navigation_bar = 2;
   }
 }
@@ -66063,7 +66063,7 @@ message ObstructingPreferredSizeWidgetType {
 // 3D Matrix.
 // Values are stored in column major order.
 message VectorMathMatrix3Type {
-  oneof result {
+  oneof constructor {
     VectorMathMatrix3 vector_math_matrix3 = 2;
     VectorMathMatrix3NamedColumns vector_math_matrix3_named_columns = 3;
     VectorMathMatrix3NamedCopy vector_math_matrix3_named_copy = 4;
@@ -66082,7 +66082,7 @@ message VectorMathMatrix3Type {
 // 4D Matrix.
 // Values are stored in column major order.
 message VectorMathMatrix4Type {
-  oneof result {
+  oneof constructor {
     VectorMathMatrix4 vector_math_matrix4 = 2;
     VectorMathMatrix4NamedColumns vector_math_matrix4_named_columns = 3;
     VectorMathMatrix4NamedCompose vector_math_matrix4_named_compose = 4;
@@ -66116,7 +66116,7 @@ message VectorMathMatrix4Type {
 // [gimbal lock](http://de.wikipedia.org/wiki/Gimbal_Lock) problem compared to
 // euler rotations.
 message VectorMathQuaternionType {
-  oneof result {
+  oneof constructor {
     VectorMathQuaternion vector_math_quaternion = 2;
     VectorMathQuaternionNamedAxisAngle vector_math_quaternion_named_axis_angle = 3;
     VectorMathQuaternionNamedCopy vector_math_quaternion_named_copy = 4;
@@ -66135,7 +66135,7 @@ message VectorMathQuaternionType {
 //
 // 3D column vector.
 message VectorMathVector3Type {
-  oneof result {
+  oneof constructor {
     VectorMathVector3 vector_math_vector3 = 2;
     VectorMathVector3NamedAll vector_math_vector3_named_all = 3;
     VectorMathVector3NamedArray vector_math_vector3_named_array = 4;
@@ -66151,7 +66151,7 @@ message VectorMathVector3Type {
 //
 // 4D column vector.
 message VectorMathVector4Type {
-  oneof result {
+  oneof constructor {
     VectorMathVector4 vector_math_vector4 = 2;
     VectorMathVector4NamedAll vector_math_vector4_named_all = 3;
     VectorMathVector4NamedArray vector_math_vector4_named_array = 4;
@@ -66201,7 +66201,7 @@ message VectorMathVector4Type {
 //  * [StatelessWidget], for widgets that always build the same way given a
 //    particular configuration and ambient state.
 message WidgetType {
-  oneof result {
+  oneof constructor {
     CupertinoActionSheet cupertino_action_sheet = 2;
     CupertinoActivityIndicator cupertino_activity_indicator = 3;
     CupertinoActivityIndicatorNamedPartiallyRevealed cupertino_activity_indicator_named_partially_revealed = 4;

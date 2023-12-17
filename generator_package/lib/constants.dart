@@ -4,6 +4,10 @@ const typePostfix = 'Type';
 
 const widgetType = 'Widget$typePostfix';
 
+const oneOfProtoFieldName = 'constructor';
+
+const oneOfDartFieldName = 'Constructor';
+
 const throwMissingName = 'missing';
 
 const enumsProto = 'enums.proto';
