@@ -135,7 +135,7 @@ message ExperienceResponse {
 }
 
 message Experience {
-  $widgetExpression widget = 2;
+  $widgetType widget = 2;
 }
 ''';
   }

@@ -13,14 +13,14 @@ import 'dart:convert' as $convert;
 import 'dart:core' as $core;
 import 'dart:typed_data' as $typed_data;
 
-@$core.Deprecated('Use cupertinoUserInterfaceLevelDataDescriptor instead')
-const CupertinoUserInterfaceLevelData$json = {
-  '1': 'CupertinoUserInterfaceLevelData',
-  '4': [CupertinoUserInterfaceLevelData_Enum$json],
+@$core.Deprecated('Use cupertinoUserInterfaceLevelDataTypeDescriptor instead')
+const CupertinoUserInterfaceLevelDataType$json = {
+  '1': 'CupertinoUserInterfaceLevelDataType',
+  '4': [CupertinoUserInterfaceLevelDataType_Enum$json],
 };
 
-@$core.Deprecated('Use cupertinoUserInterfaceLevelDataDescriptor instead')
-const CupertinoUserInterfaceLevelData_Enum$json = {
+@$core.Deprecated('Use cupertinoUserInterfaceLevelDataTypeDescriptor instead')
+const CupertinoUserInterfaceLevelDataType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'BASE', '2': 0},
@@ -28,19 +28,19 @@ const CupertinoUserInterfaceLevelData_Enum$json = {
   ],
 };
 
-/// Descriptor for `CupertinoUserInterfaceLevelData`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List cupertinoUserInterfaceLevelDataDescriptor = $convert.base64Decode(
-    'Ch9DdXBlcnRpbm9Vc2VySW50ZXJmYWNlTGV2ZWxEYXRhIh4KBEVudW0SCAoEQkFTRRAAEgwKCE'
-    'VMRVZBVEVEEAE=');
+/// Descriptor for `CupertinoUserInterfaceLevelDataType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List cupertinoUserInterfaceLevelDataTypeDescriptor = $convert.base64Decode(
+    'CiNDdXBlcnRpbm9Vc2VySW50ZXJmYWNlTGV2ZWxEYXRhVHlwZSIeCgRFbnVtEggKBEJBU0UQAB'
+    'IMCghFTEVWQVRFRBAB');
 
-@$core.Deprecated('Use dartBlendModeDescriptor instead')
-const DartBlendMode$json = {
-  '1': 'DartBlendMode',
-  '4': [DartBlendMode_Enum$json],
+@$core.Deprecated('Use dartBlendModeTypeDescriptor instead')
+const DartBlendModeType$json = {
+  '1': 'DartBlendModeType',
+  '4': [DartBlendModeType_Enum$json],
 };
 
-@$core.Deprecated('Use dartBlendModeDescriptor instead')
-const DartBlendMode_Enum$json = {
+@$core.Deprecated('Use dartBlendModeTypeDescriptor instead')
+const DartBlendModeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'CLEAR', '2': 0},
@@ -75,25 +75,25 @@ const DartBlendMode_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartBlendMode`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartBlendModeDescriptor = $convert.base64Decode(
-    'Cg1EYXJ0QmxlbmRNb2RlIoQDCgRFbnVtEgkKBUNMRUFSEAASBwoDU1JDEAESBwoDRFNUEAISDA'
-    'oIU1JDX09WRVIQAxIMCghEU1RfT1ZFUhAEEgoKBlNSQ19JThAFEgoKBkRTVF9JThAGEgsKB1NS'
-    'Q19PVVQQBxILCgdEU1RfT1VUEAgSDQoJU1JDX0FfVE9QEAkSDQoJRFNUX0FfVE9QEAoSBwoDWE'
-    '9SEAsSCAoEUExVUxAMEgwKCE1PRFVMQVRFEA0SCgoGU0NSRUVOEA4SCwoHT1ZFUkxBWRAPEgoK'
-    'BkRBUktFThAQEgsKB0xJR0hURU4QERIPCgtDT0xPUl9ET0RHRRASEg4KCkNPTE9SX0JVUk4QEx'
-    'IOCgpIQVJEX0xJR0hUEBQSDgoKU09GVF9MSUdIVBAVEg4KCkRJRkZFUkVOQ0UQFhINCglFWENM'
-    'VVNJT04QFxIMCghNVUxUSVBMWRAYEgcKA0hVRRAZEg4KClNBVFVSQVRJT04QGhIJCgVDT0xPUh'
-    'AbEg4KCkxVTUlOT1NJVFkQHA==');
+/// Descriptor for `DartBlendModeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartBlendModeTypeDescriptor = $convert.base64Decode(
+    'ChFEYXJ0QmxlbmRNb2RlVHlwZSKEAwoERW51bRIJCgVDTEVBUhAAEgcKA1NSQxABEgcKA0RTVB'
+    'ACEgwKCFNSQ19PVkVSEAMSDAoIRFNUX09WRVIQBBIKCgZTUkNfSU4QBRIKCgZEU1RfSU4QBhIL'
+    'CgdTUkNfT1VUEAcSCwoHRFNUX09VVBAIEg0KCVNSQ19BX1RPUBAJEg0KCURTVF9BX1RPUBAKEg'
+    'cKA1hPUhALEggKBFBMVVMQDBIMCghNT0RVTEFURRANEgoKBlNDUkVFThAOEgsKB09WRVJMQVkQ'
+    'DxIKCgZEQVJLRU4QEBILCgdMSUdIVEVOEBESDwoLQ09MT1JfRE9ER0UQEhIOCgpDT0xPUl9CVV'
+    'JOEBMSDgoKSEFSRF9MSUdIVBAUEg4KClNPRlRfTElHSFQQFRIOCgpESUZGRVJFTkNFEBYSDQoJ'
+    'RVhDTFVTSU9OEBcSDAoITVVMVElQTFkQGBIHCgNIVUUQGRIOCgpTQVRVUkFUSU9OEBoSCQoFQ0'
+    '9MT1IQGxIOCgpMVU1JTk9TSVRZEBw=');
 
-@$core.Deprecated('Use dartBlurStyleDescriptor instead')
-const DartBlurStyle$json = {
-  '1': 'DartBlurStyle',
-  '4': [DartBlurStyle_Enum$json],
+@$core.Deprecated('Use dartBlurStyleTypeDescriptor instead')
+const DartBlurStyleType$json = {
+  '1': 'DartBlurStyleType',
+  '4': [DartBlurStyleType_Enum$json],
 };
 
-@$core.Deprecated('Use dartBlurStyleDescriptor instead')
-const DartBlurStyle_Enum$json = {
+@$core.Deprecated('Use dartBlurStyleTypeDescriptor instead')
+const DartBlurStyleType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'NORMAL', '2': 0},
@@ -103,19 +103,19 @@ const DartBlurStyle_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartBlurStyle`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartBlurStyleDescriptor = $convert.base64Decode(
-    'Cg1EYXJ0Qmx1clN0eWxlIjMKBEVudW0SCgoGTk9STUFMEAASCQoFU09MSUQQARIJCgVPVVRFUh'
-    'ACEgkKBUlOTkVSEAM=');
+/// Descriptor for `DartBlurStyleType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartBlurStyleTypeDescriptor = $convert.base64Decode(
+    'ChFEYXJ0Qmx1clN0eWxlVHlwZSIzCgRFbnVtEgoKBk5PUk1BTBAAEgkKBVNPTElEEAESCQoFT1'
+    'VURVIQAhIJCgVJTk5FUhAD');
 
-@$core.Deprecated('Use dartBoxHeightStyleDescriptor instead')
-const DartBoxHeightStyle$json = {
-  '1': 'DartBoxHeightStyle',
-  '4': [DartBoxHeightStyle_Enum$json],
+@$core.Deprecated('Use dartBoxHeightStyleTypeDescriptor instead')
+const DartBoxHeightStyleType$json = {
+  '1': 'DartBoxHeightStyleType',
+  '4': [DartBoxHeightStyleType_Enum$json],
 };
 
-@$core.Deprecated('Use dartBoxHeightStyleDescriptor instead')
-const DartBoxHeightStyle_Enum$json = {
+@$core.Deprecated('Use dartBoxHeightStyleTypeDescriptor instead')
+const DartBoxHeightStyleType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'TIGHT', '2': 0},
@@ -127,20 +127,20 @@ const DartBoxHeightStyle_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartBoxHeightStyle`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartBoxHeightStyleDescriptor = $convert.base64Decode(
-    'ChJEYXJ0Qm94SGVpZ2h0U3R5bGUihQEKBEVudW0SCQoFVElHSFQQABIHCgNNQVgQARIfChtJTk'
-    'NMVURFX0xJTkVfU1BBQ0lOR19NSURETEUQAhIcChhJTkNMVURFX0xJTkVfU1BBQ0lOR19UT1AQ'
-    'AxIfChtJTkNMVURFX0xJTkVfU1BBQ0lOR19CT1RUT00QBBIJCgVTVFJVVBAF');
+/// Descriptor for `DartBoxHeightStyleType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartBoxHeightStyleTypeDescriptor = $convert.base64Decode(
+    'ChZEYXJ0Qm94SGVpZ2h0U3R5bGVUeXBlIoUBCgRFbnVtEgkKBVRJR0hUEAASBwoDTUFYEAESHw'
+    'obSU5DTFVERV9MSU5FX1NQQUNJTkdfTUlERExFEAISHAoYSU5DTFVERV9MSU5FX1NQQUNJTkdf'
+    'VE9QEAMSHwobSU5DTFVERV9MSU5FX1NQQUNJTkdfQk9UVE9NEAQSCQoFU1RSVVQQBQ==');
 
-@$core.Deprecated('Use dartBoxWidthStyleDescriptor instead')
-const DartBoxWidthStyle$json = {
-  '1': 'DartBoxWidthStyle',
-  '4': [DartBoxWidthStyle_Enum$json],
+@$core.Deprecated('Use dartBoxWidthStyleTypeDescriptor instead')
+const DartBoxWidthStyleType$json = {
+  '1': 'DartBoxWidthStyleType',
+  '4': [DartBoxWidthStyleType_Enum$json],
 };
 
-@$core.Deprecated('Use dartBoxWidthStyleDescriptor instead')
-const DartBoxWidthStyle_Enum$json = {
+@$core.Deprecated('Use dartBoxWidthStyleTypeDescriptor instead')
+const DartBoxWidthStyleType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'TIGHT', '2': 0},
@@ -148,18 +148,18 @@ const DartBoxWidthStyle_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartBoxWidthStyle`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartBoxWidthStyleDescriptor = $convert.base64Decode(
-    'ChFEYXJ0Qm94V2lkdGhTdHlsZSIaCgRFbnVtEgkKBVRJR0hUEAASBwoDTUFYEAE=');
+/// Descriptor for `DartBoxWidthStyleType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartBoxWidthStyleTypeDescriptor = $convert.base64Decode(
+    'ChVEYXJ0Qm94V2lkdGhTdHlsZVR5cGUiGgoERW51bRIJCgVUSUdIVBAAEgcKA01BWBAB');
 
-@$core.Deprecated('Use dartBrightnessDescriptor instead')
-const DartBrightness$json = {
-  '1': 'DartBrightness',
-  '4': [DartBrightness_Enum$json],
+@$core.Deprecated('Use dartBrightnessTypeDescriptor instead')
+const DartBrightnessType$json = {
+  '1': 'DartBrightnessType',
+  '4': [DartBrightnessType_Enum$json],
 };
 
-@$core.Deprecated('Use dartBrightnessDescriptor instead')
-const DartBrightness_Enum$json = {
+@$core.Deprecated('Use dartBrightnessTypeDescriptor instead')
+const DartBrightnessType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'DARK', '2': 0},
@@ -167,18 +167,18 @@ const DartBrightness_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartBrightness`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartBrightnessDescriptor = $convert.base64Decode(
-    'Cg5EYXJ0QnJpZ2h0bmVzcyIbCgRFbnVtEggKBERBUksQABIJCgVMSUdIVBAB');
+/// Descriptor for `DartBrightnessType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartBrightnessTypeDescriptor = $convert.base64Decode(
+    'ChJEYXJ0QnJpZ2h0bmVzc1R5cGUiGwoERW51bRIICgREQVJLEAASCQoFTElHSFQQAQ==');
 
-@$core.Deprecated('Use dartClipDescriptor instead')
-const DartClip$json = {
-  '1': 'DartClip',
-  '4': [DartClip_Enum$json],
+@$core.Deprecated('Use dartClipTypeDescriptor instead')
+const DartClipType$json = {
+  '1': 'DartClipType',
+  '4': [DartClipType_Enum$json],
 };
 
-@$core.Deprecated('Use dartClipDescriptor instead')
-const DartClip_Enum$json = {
+@$core.Deprecated('Use dartClipTypeDescriptor instead')
+const DartClipType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'NONE', '2': 0},
@@ -188,19 +188,19 @@ const DartClip_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartClip`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartClipDescriptor = $convert.base64Decode(
-    'CghEYXJ0Q2xpcCJPCgRFbnVtEggKBE5PTkUQABINCglIQVJEX0VER0UQARIOCgpBTlRJX0FMSU'
-    'FTEAISHgoaQU5USV9BTElBU19XSVRIX1NBVkVfTEFZRVIQAw==');
+/// Descriptor for `DartClipType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartClipTypeDescriptor = $convert.base64Decode(
+    'CgxEYXJ0Q2xpcFR5cGUiTwoERW51bRIICgROT05FEAASDQoJSEFSRF9FREdFEAESDgoKQU5USV'
+    '9BTElBUxACEh4KGkFOVElfQUxJQVNfV0lUSF9TQVZFX0xBWUVSEAM=');
 
-@$core.Deprecated('Use dartDisplayFeatureStateDescriptor instead')
-const DartDisplayFeatureState$json = {
-  '1': 'DartDisplayFeatureState',
-  '4': [DartDisplayFeatureState_Enum$json],
+@$core.Deprecated('Use dartDisplayFeatureStateTypeDescriptor instead')
+const DartDisplayFeatureStateType$json = {
+  '1': 'DartDisplayFeatureStateType',
+  '4': [DartDisplayFeatureStateType_Enum$json],
 };
 
-@$core.Deprecated('Use dartDisplayFeatureStateDescriptor instead')
-const DartDisplayFeatureState_Enum$json = {
+@$core.Deprecated('Use dartDisplayFeatureStateTypeDescriptor instead')
+const DartDisplayFeatureStateType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'UNKNOWN', '2': 0},
@@ -209,19 +209,19 @@ const DartDisplayFeatureState_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartDisplayFeatureState`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartDisplayFeatureStateDescriptor = $convert.base64Decode(
-    'ChdEYXJ0RGlzcGxheUZlYXR1cmVTdGF0ZSI+CgRFbnVtEgsKB1VOS05PV04QABIQCgxQT1NUVV'
-    'JFX0ZMQVQQARIXChNQT1NUVVJFX0hBTEZfT1BFTkVEEAI=');
+/// Descriptor for `DartDisplayFeatureStateType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartDisplayFeatureStateTypeDescriptor = $convert.base64Decode(
+    'ChtEYXJ0RGlzcGxheUZlYXR1cmVTdGF0ZVR5cGUiPgoERW51bRILCgdVTktOT1dOEAASEAoMUE'
+    '9TVFVSRV9GTEFUEAESFwoTUE9TVFVSRV9IQUxGX09QRU5FRBAC');
 
-@$core.Deprecated('Use dartDisplayFeatureTypeDescriptor instead')
-const DartDisplayFeatureType$json = {
-  '1': 'DartDisplayFeatureType',
-  '4': [DartDisplayFeatureType_Enum$json],
+@$core.Deprecated('Use dartDisplayFeatureTypeTypeDescriptor instead')
+const DartDisplayFeatureTypeType$json = {
+  '1': 'DartDisplayFeatureTypeType',
+  '4': [DartDisplayFeatureTypeType_Enum$json],
 };
 
-@$core.Deprecated('Use dartDisplayFeatureTypeDescriptor instead')
-const DartDisplayFeatureType_Enum$json = {
+@$core.Deprecated('Use dartDisplayFeatureTypeTypeDescriptor instead')
+const DartDisplayFeatureTypeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'UNKNOWN', '2': 0},
@@ -231,19 +231,19 @@ const DartDisplayFeatureType_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartDisplayFeatureType`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartDisplayFeatureTypeDescriptor = $convert.base64Decode(
-    'ChZEYXJ0RGlzcGxheUZlYXR1cmVUeXBlIjQKBEVudW0SCwoHVU5LTk9XThAAEggKBEZPTEQQAR'
-    'IJCgVISU5HRRACEgoKBkNVVE9VVBAD');
+/// Descriptor for `DartDisplayFeatureTypeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartDisplayFeatureTypeTypeDescriptor = $convert.base64Decode(
+    'ChpEYXJ0RGlzcGxheUZlYXR1cmVUeXBlVHlwZSI0CgRFbnVtEgsKB1VOS05PV04QABIICgRGT0'
+    'xEEAESCQoFSElOR0UQAhIKCgZDVVRPVVQQAw==');
 
-@$core.Deprecated('Use dartFilterQualityDescriptor instead')
-const DartFilterQuality$json = {
-  '1': 'DartFilterQuality',
-  '4': [DartFilterQuality_Enum$json],
+@$core.Deprecated('Use dartFilterQualityTypeDescriptor instead')
+const DartFilterQualityType$json = {
+  '1': 'DartFilterQualityType',
+  '4': [DartFilterQualityType_Enum$json],
 };
 
-@$core.Deprecated('Use dartFilterQualityDescriptor instead')
-const DartFilterQuality_Enum$json = {
+@$core.Deprecated('Use dartFilterQualityTypeDescriptor instead')
+const DartFilterQualityType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'NONE', '2': 0},
@@ -253,19 +253,19 @@ const DartFilterQuality_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartFilterQuality`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartFilterQualityDescriptor = $convert.base64Decode(
-    'ChFEYXJ0RmlsdGVyUXVhbGl0eSIvCgRFbnVtEggKBE5PTkUQABIHCgNMT1cQARIKCgZNRURJVU'
-    '0QAhIICgRISUdIEAM=');
+/// Descriptor for `DartFilterQualityType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartFilterQualityTypeDescriptor = $convert.base64Decode(
+    'ChVEYXJ0RmlsdGVyUXVhbGl0eVR5cGUiLwoERW51bRIICgROT05FEAASBwoDTE9XEAESCgoGTU'
+    'VESVVNEAISCAoESElHSBAD');
 
-@$core.Deprecated('Use dartFontStyleDescriptor instead')
-const DartFontStyle$json = {
-  '1': 'DartFontStyle',
-  '4': [DartFontStyle_Enum$json],
+@$core.Deprecated('Use dartFontStyleTypeDescriptor instead')
+const DartFontStyleType$json = {
+  '1': 'DartFontStyleType',
+  '4': [DartFontStyleType_Enum$json],
 };
 
-@$core.Deprecated('Use dartFontStyleDescriptor instead')
-const DartFontStyle_Enum$json = {
+@$core.Deprecated('Use dartFontStyleTypeDescriptor instead')
+const DartFontStyleType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'NORMAL', '2': 0},
@@ -273,18 +273,18 @@ const DartFontStyle_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartFontStyle`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartFontStyleDescriptor = $convert.base64Decode(
-    'Cg1EYXJ0Rm9udFN0eWxlIh4KBEVudW0SCgoGTk9STUFMEAASCgoGSVRBTElDEAE=');
+/// Descriptor for `DartFontStyleType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartFontStyleTypeDescriptor = $convert.base64Decode(
+    'ChFEYXJ0Rm9udFN0eWxlVHlwZSIeCgRFbnVtEgoKBk5PUk1BTBAAEgoKBklUQUxJQxAB');
 
-@$core.Deprecated('Use dartPlaceholderAlignmentDescriptor instead')
-const DartPlaceholderAlignment$json = {
-  '1': 'DartPlaceholderAlignment',
-  '4': [DartPlaceholderAlignment_Enum$json],
+@$core.Deprecated('Use dartPlaceholderAlignmentTypeDescriptor instead')
+const DartPlaceholderAlignmentType$json = {
+  '1': 'DartPlaceholderAlignmentType',
+  '4': [DartPlaceholderAlignmentType_Enum$json],
 };
 
-@$core.Deprecated('Use dartPlaceholderAlignmentDescriptor instead')
-const DartPlaceholderAlignment_Enum$json = {
+@$core.Deprecated('Use dartPlaceholderAlignmentTypeDescriptor instead')
+const DartPlaceholderAlignmentType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'BASELINE', '2': 0},
@@ -296,20 +296,20 @@ const DartPlaceholderAlignment_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartPlaceholderAlignment`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartPlaceholderAlignmentDescriptor = $convert.base64Decode(
-    'ChhEYXJ0UGxhY2Vob2xkZXJBbGlnbm1lbnQiXQoERW51bRIMCghCQVNFTElORRAAEhIKDkFCT1'
-    'ZFX0JBU0VMSU5FEAESEgoOQkVMT1dfQkFTRUxJTkUQAhIHCgNUT1AQAxIKCgZCT1RUT00QBBIK'
-    'CgZNSURETEUQBQ==');
+/// Descriptor for `DartPlaceholderAlignmentType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartPlaceholderAlignmentTypeDescriptor = $convert.base64Decode(
+    'ChxEYXJ0UGxhY2Vob2xkZXJBbGlnbm1lbnRUeXBlIl0KBEVudW0SDAoIQkFTRUxJTkUQABISCg'
+    '5BQk9WRV9CQVNFTElORRABEhIKDkJFTE9XX0JBU0VMSU5FEAISBwoDVE9QEAMSCgoGQk9UVE9N'
+    'EAQSCgoGTUlERExFEAU=');
 
-@$core.Deprecated('Use dartStrokeCapDescriptor instead')
-const DartStrokeCap$json = {
-  '1': 'DartStrokeCap',
-  '4': [DartStrokeCap_Enum$json],
+@$core.Deprecated('Use dartStrokeCapTypeDescriptor instead')
+const DartStrokeCapType$json = {
+  '1': 'DartStrokeCapType',
+  '4': [DartStrokeCapType_Enum$json],
 };
 
-@$core.Deprecated('Use dartStrokeCapDescriptor instead')
-const DartStrokeCap_Enum$json = {
+@$core.Deprecated('Use dartStrokeCapTypeDescriptor instead')
+const DartStrokeCapType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'BUTT', '2': 0},
@@ -318,19 +318,19 @@ const DartStrokeCap_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartStrokeCap`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartStrokeCapDescriptor = $convert.base64Decode(
-    'Cg1EYXJ0U3Ryb2tlQ2FwIicKBEVudW0SCAoEQlVUVBAAEgkKBVJPVU5EEAESCgoGU1FVQVJFEA'
-    'I=');
+/// Descriptor for `DartStrokeCapType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartStrokeCapTypeDescriptor = $convert.base64Decode(
+    'ChFEYXJ0U3Ryb2tlQ2FwVHlwZSInCgRFbnVtEggKBEJVVFQQABIJCgVST1VORBABEgoKBlNRVU'
+    'FSRRAC');
 
-@$core.Deprecated('Use dartTextAffinityDescriptor instead')
-const DartTextAffinity$json = {
-  '1': 'DartTextAffinity',
-  '4': [DartTextAffinity_Enum$json],
+@$core.Deprecated('Use dartTextAffinityTypeDescriptor instead')
+const DartTextAffinityType$json = {
+  '1': 'DartTextAffinityType',
+  '4': [DartTextAffinityType_Enum$json],
 };
 
-@$core.Deprecated('Use dartTextAffinityDescriptor instead')
-const DartTextAffinity_Enum$json = {
+@$core.Deprecated('Use dartTextAffinityTypeDescriptor instead')
+const DartTextAffinityType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'UPSTREAM', '2': 0},
@@ -338,19 +338,19 @@ const DartTextAffinity_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartTextAffinity`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartTextAffinityDescriptor = $convert.base64Decode(
-    'ChBEYXJ0VGV4dEFmZmluaXR5IiQKBEVudW0SDAoIVVBTVFJFQU0QABIOCgpET1dOU1RSRUFNEA'
-    'E=');
+/// Descriptor for `DartTextAffinityType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartTextAffinityTypeDescriptor = $convert.base64Decode(
+    'ChREYXJ0VGV4dEFmZmluaXR5VHlwZSIkCgRFbnVtEgwKCFVQU1RSRUFNEAASDgoKRE9XTlNUUk'
+    'VBTRAB');
 
-@$core.Deprecated('Use dartTextAlignDescriptor instead')
-const DartTextAlign$json = {
-  '1': 'DartTextAlign',
-  '4': [DartTextAlign_Enum$json],
+@$core.Deprecated('Use dartTextAlignTypeDescriptor instead')
+const DartTextAlignType$json = {
+  '1': 'DartTextAlignType',
+  '4': [DartTextAlignType_Enum$json],
 };
 
-@$core.Deprecated('Use dartTextAlignDescriptor instead')
-const DartTextAlign_Enum$json = {
+@$core.Deprecated('Use dartTextAlignTypeDescriptor instead')
+const DartTextAlignType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'LEFT', '2': 0},
@@ -362,19 +362,19 @@ const DartTextAlign_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartTextAlign`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartTextAlignDescriptor = $convert.base64Decode(
-    'Cg1EYXJ0VGV4dEFsaWduIkgKBEVudW0SCAoETEVGVBAAEgkKBVJJR0hUEAESCgoGQ0VOVEVSEA'
-    'ISCwoHSlVTVElGWRADEgkKBVNUQVJUEAQSBwoDRU5EEAU=');
+/// Descriptor for `DartTextAlignType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartTextAlignTypeDescriptor = $convert.base64Decode(
+    'ChFEYXJ0VGV4dEFsaWduVHlwZSJICgRFbnVtEggKBExFRlQQABIJCgVSSUdIVBABEgoKBkNFTl'
+    'RFUhACEgsKB0pVU1RJRlkQAxIJCgVTVEFSVBAEEgcKA0VORBAF');
 
-@$core.Deprecated('Use dartTextBaselineDescriptor instead')
-const DartTextBaseline$json = {
-  '1': 'DartTextBaseline',
-  '4': [DartTextBaseline_Enum$json],
+@$core.Deprecated('Use dartTextBaselineTypeDescriptor instead')
+const DartTextBaselineType$json = {
+  '1': 'DartTextBaselineType',
+  '4': [DartTextBaselineType_Enum$json],
 };
 
-@$core.Deprecated('Use dartTextBaselineDescriptor instead')
-const DartTextBaseline_Enum$json = {
+@$core.Deprecated('Use dartTextBaselineTypeDescriptor instead')
+const DartTextBaselineType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'ALPHABETIC', '2': 0},
@@ -382,19 +382,19 @@ const DartTextBaseline_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartTextBaseline`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartTextBaselineDescriptor = $convert.base64Decode(
-    'ChBEYXJ0VGV4dEJhc2VsaW5lIicKBEVudW0SDgoKQUxQSEFCRVRJQxAAEg8KC0lERU9HUkFQSE'
-    'lDEAE=');
+/// Descriptor for `DartTextBaselineType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartTextBaselineTypeDescriptor = $convert.base64Decode(
+    'ChREYXJ0VGV4dEJhc2VsaW5lVHlwZSInCgRFbnVtEg4KCkFMUEhBQkVUSUMQABIPCgtJREVPR1'
+    'JBUEhJQxAB');
 
-@$core.Deprecated('Use dartTextDecorationStyleDescriptor instead')
-const DartTextDecorationStyle$json = {
-  '1': 'DartTextDecorationStyle',
-  '4': [DartTextDecorationStyle_Enum$json],
+@$core.Deprecated('Use dartTextDecorationStyleTypeDescriptor instead')
+const DartTextDecorationStyleType$json = {
+  '1': 'DartTextDecorationStyleType',
+  '4': [DartTextDecorationStyleType_Enum$json],
 };
 
-@$core.Deprecated('Use dartTextDecorationStyleDescriptor instead')
-const DartTextDecorationStyle_Enum$json = {
+@$core.Deprecated('Use dartTextDecorationStyleTypeDescriptor instead')
+const DartTextDecorationStyleType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'SOLID', '2': 0},
@@ -405,19 +405,19 @@ const DartTextDecorationStyle_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartTextDecorationStyle`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartTextDecorationStyleDescriptor = $convert.base64Decode(
-    'ChdEYXJ0VGV4dERlY29yYXRpb25TdHlsZSI/CgRFbnVtEgkKBVNPTElEEAASCgoGRE9VQkxFEA'
-    'ESCgoGRE9UVEVEEAISCgoGREFTSEVEEAMSCAoEV0FWWRAE');
+/// Descriptor for `DartTextDecorationStyleType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartTextDecorationStyleTypeDescriptor = $convert.base64Decode(
+    'ChtEYXJ0VGV4dERlY29yYXRpb25TdHlsZVR5cGUiPwoERW51bRIJCgVTT0xJRBAAEgoKBkRPVU'
+    'JMRRABEgoKBkRPVFRFRBACEgoKBkRBU0hFRBADEggKBFdBVlkQBA==');
 
-@$core.Deprecated('Use dartTextDirectionDescriptor instead')
-const DartTextDirection$json = {
-  '1': 'DartTextDirection',
-  '4': [DartTextDirection_Enum$json],
+@$core.Deprecated('Use dartTextDirectionTypeDescriptor instead')
+const DartTextDirectionType$json = {
+  '1': 'DartTextDirectionType',
+  '4': [DartTextDirectionType_Enum$json],
 };
 
-@$core.Deprecated('Use dartTextDirectionDescriptor instead')
-const DartTextDirection_Enum$json = {
+@$core.Deprecated('Use dartTextDirectionTypeDescriptor instead')
+const DartTextDirectionType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'RTL', '2': 0},
@@ -425,18 +425,18 @@ const DartTextDirection_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartTextDirection`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartTextDirectionDescriptor = $convert.base64Decode(
-    'ChFEYXJ0VGV4dERpcmVjdGlvbiIYCgRFbnVtEgcKA1JUTBAAEgcKA0xUUhAB');
+/// Descriptor for `DartTextDirectionType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartTextDirectionTypeDescriptor = $convert.base64Decode(
+    'ChVEYXJ0VGV4dERpcmVjdGlvblR5cGUiGAoERW51bRIHCgNSVEwQABIHCgNMVFIQAQ==');
 
-@$core.Deprecated('Use dartTextLeadingDistributionDescriptor instead')
-const DartTextLeadingDistribution$json = {
-  '1': 'DartTextLeadingDistribution',
-  '4': [DartTextLeadingDistribution_Enum$json],
+@$core.Deprecated('Use dartTextLeadingDistributionTypeDescriptor instead')
+const DartTextLeadingDistributionType$json = {
+  '1': 'DartTextLeadingDistributionType',
+  '4': [DartTextLeadingDistributionType_Enum$json],
 };
 
-@$core.Deprecated('Use dartTextLeadingDistributionDescriptor instead')
-const DartTextLeadingDistribution_Enum$json = {
+@$core.Deprecated('Use dartTextLeadingDistributionTypeDescriptor instead')
+const DartTextLeadingDistributionType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'PROPORTIONAL', '2': 0},
@@ -444,19 +444,19 @@ const DartTextLeadingDistribution_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartTextLeadingDistribution`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartTextLeadingDistributionDescriptor = $convert.base64Decode(
-    'ChtEYXJ0VGV4dExlYWRpbmdEaXN0cmlidXRpb24iIgoERW51bRIQCgxQUk9QT1JUSU9OQUwQAB'
-    'IICgRFVkVOEAE=');
+/// Descriptor for `DartTextLeadingDistributionType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartTextLeadingDistributionTypeDescriptor = $convert.base64Decode(
+    'Ch9EYXJ0VGV4dExlYWRpbmdEaXN0cmlidXRpb25UeXBlIiIKBEVudW0SEAoMUFJPUE9SVElPTk'
+    'FMEAASCAoERVZFThAB');
 
-@$core.Deprecated('Use dartTileModeDescriptor instead')
-const DartTileMode$json = {
-  '1': 'DartTileMode',
-  '4': [DartTileMode_Enum$json],
+@$core.Deprecated('Use dartTileModeTypeDescriptor instead')
+const DartTileModeType$json = {
+  '1': 'DartTileModeType',
+  '4': [DartTileModeType_Enum$json],
 };
 
-@$core.Deprecated('Use dartTileModeDescriptor instead')
-const DartTileMode_Enum$json = {
+@$core.Deprecated('Use dartTileModeTypeDescriptor instead')
+const DartTileModeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'CLAMP', '2': 0},
@@ -466,19 +466,19 @@ const DartTileMode_Enum$json = {
   ],
 };
 
-/// Descriptor for `DartTileMode`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List dartTileModeDescriptor = $convert.base64Decode(
-    'CgxEYXJ0VGlsZU1vZGUiNgoERW51bRIJCgVDTEFNUBAAEgwKCFJFUEVBVEVEEAESCgoGTUlSUk'
-    '9SEAISCQoFREVDQUwQAw==');
+/// Descriptor for `DartTileModeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List dartTileModeTypeDescriptor = $convert.base64Decode(
+    'ChBEYXJ0VGlsZU1vZGVUeXBlIjYKBEVudW0SCQoFQ0xBTVAQABIMCghSRVBFQVRFRBABEgoKBk'
+    '1JUlJPUhACEgkKBURFQ0FMEAM=');
 
-@$core.Deprecated('Use flutterAutofillContextActionDescriptor instead')
-const FlutterAutofillContextAction$json = {
-  '1': 'FlutterAutofillContextAction',
-  '4': [FlutterAutofillContextAction_Enum$json],
+@$core.Deprecated('Use flutterAutofillContextActionTypeDescriptor instead')
+const FlutterAutofillContextActionType$json = {
+  '1': 'FlutterAutofillContextActionType',
+  '4': [FlutterAutofillContextActionType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterAutofillContextActionDescriptor instead')
-const FlutterAutofillContextAction_Enum$json = {
+@$core.Deprecated('Use flutterAutofillContextActionTypeDescriptor instead')
+const FlutterAutofillContextActionType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'COMMIT', '2': 0},
@@ -486,19 +486,19 @@ const FlutterAutofillContextAction_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterAutofillContextAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterAutofillContextActionDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQXV0b2ZpbGxDb250ZXh0QWN0aW9uIh4KBEVudW0SCgoGQ09NTUlUEAASCgoGQ0'
-    'FOQ0VMEAE=');
+/// Descriptor for `FlutterAutofillContextActionType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterAutofillContextActionTypeDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQXV0b2ZpbGxDb250ZXh0QWN0aW9uVHlwZSIeCgRFbnVtEgoKBkNPTU1JVBAAEg'
+    'oKBkNBTkNFTBAB');
 
-@$core.Deprecated('Use flutterAutovalidateModeDescriptor instead')
-const FlutterAutovalidateMode$json = {
-  '1': 'FlutterAutovalidateMode',
-  '4': [FlutterAutovalidateMode_Enum$json],
+@$core.Deprecated('Use flutterAutovalidateModeTypeDescriptor instead')
+const FlutterAutovalidateModeType$json = {
+  '1': 'FlutterAutovalidateModeType',
+  '4': [FlutterAutovalidateModeType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterAutovalidateModeDescriptor instead')
-const FlutterAutovalidateMode_Enum$json = {
+@$core.Deprecated('Use flutterAutovalidateModeTypeDescriptor instead')
+const FlutterAutovalidateModeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'DISABLED', '2': 0},
@@ -507,38 +507,19 @@ const FlutterAutovalidateMode_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterAutovalidateMode`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterAutovalidateModeDescriptor = $convert.base64Decode(
-    'ChdGbHV0dGVyQXV0b3ZhbGlkYXRlTW9kZSI5CgRFbnVtEgwKCERJU0FCTEVEEAASCgoGQUxXQV'
-    'lTEAESFwoTT05fVVNFUl9JTlRFUkFDVElPThAC');
+/// Descriptor for `FlutterAutovalidateModeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterAutovalidateModeTypeDescriptor = $convert.base64Decode(
+    'ChtGbHV0dGVyQXV0b3ZhbGlkYXRlTW9kZVR5cGUiOQoERW51bRIMCghESVNBQkxFRBAAEgoKBk'
+    'FMV0FZUxABEhcKE09OX1VTRVJfSU5URVJBQ1RJT04QAg==');
 
-@$core.Deprecated('Use flutterAxisDescriptor instead')
-const FlutterAxis$json = {
-  '1': 'FlutterAxis',
-  '4': [FlutterAxis_Enum$json],
+@$core.Deprecated('Use flutterAxisDirectionTypeDescriptor instead')
+const FlutterAxisDirectionType$json = {
+  '1': 'FlutterAxisDirectionType',
+  '4': [FlutterAxisDirectionType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterAxisDescriptor instead')
-const FlutterAxis_Enum$json = {
-  '1': 'Enum',
-  '2': [
-    {'1': 'HORIZONTAL', '2': 0},
-    {'1': 'VERTICAL', '2': 1},
-  ],
-};
-
-/// Descriptor for `FlutterAxis`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterAxisDescriptor = $convert.base64Decode(
-    'CgtGbHV0dGVyQXhpcyIkCgRFbnVtEg4KCkhPUklaT05UQUwQABIMCghWRVJUSUNBTBAB');
-
-@$core.Deprecated('Use flutterAxisDirectionDescriptor instead')
-const FlutterAxisDirection$json = {
-  '1': 'FlutterAxisDirection',
-  '4': [FlutterAxisDirection_Enum$json],
-};
-
-@$core.Deprecated('Use flutterAxisDirectionDescriptor instead')
-const FlutterAxisDirection_Enum$json = {
+@$core.Deprecated('Use flutterAxisDirectionTypeDescriptor instead')
+const FlutterAxisDirectionType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'UP', '2': 0},
@@ -548,19 +529,39 @@ const FlutterAxisDirection_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterAxisDirection`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterAxisDirectionDescriptor = $convert.base64Decode(
-    'ChRGbHV0dGVyQXhpc0RpcmVjdGlvbiItCgRFbnVtEgYKAlVQEAASCQoFUklHSFQQARIICgRET1'
-    'dOEAISCAoETEVGVBAD');
+/// Descriptor for `FlutterAxisDirectionType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterAxisDirectionTypeDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyQXhpc0RpcmVjdGlvblR5cGUiLQoERW51bRIGCgJVUBAAEgkKBVJJR0hUEAESCA'
+    'oERE9XThACEggKBExFRlQQAw==');
 
-@$core.Deprecated('Use flutterBannerLocationDescriptor instead')
-const FlutterBannerLocation$json = {
-  '1': 'FlutterBannerLocation',
-  '4': [FlutterBannerLocation_Enum$json],
+@$core.Deprecated('Use flutterAxisTypeDescriptor instead')
+const FlutterAxisType$json = {
+  '1': 'FlutterAxisType',
+  '4': [FlutterAxisType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterBannerLocationDescriptor instead')
-const FlutterBannerLocation_Enum$json = {
+@$core.Deprecated('Use flutterAxisTypeDescriptor instead')
+const FlutterAxisType_Enum$json = {
+  '1': 'Enum',
+  '2': [
+    {'1': 'HORIZONTAL', '2': 0},
+    {'1': 'VERTICAL', '2': 1},
+  ],
+};
+
+/// Descriptor for `FlutterAxisType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterAxisTypeDescriptor = $convert.base64Decode(
+    'Cg9GbHV0dGVyQXhpc1R5cGUiJAoERW51bRIOCgpIT1JJWk9OVEFMEAASDAoIVkVSVElDQUwQAQ'
+    '==');
+
+@$core.Deprecated('Use flutterBannerLocationTypeDescriptor instead')
+const FlutterBannerLocationType$json = {
+  '1': 'FlutterBannerLocationType',
+  '4': [FlutterBannerLocationType_Enum$json],
+};
+
+@$core.Deprecated('Use flutterBannerLocationTypeDescriptor instead')
+const FlutterBannerLocationType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'TOP_START', '2': 0},
@@ -570,19 +571,19 @@ const FlutterBannerLocation_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterBannerLocation`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterBannerLocationDescriptor = $convert.base64Decode(
-    'ChVGbHV0dGVyQmFubmVyTG9jYXRpb24iRAoERW51bRINCglUT1BfU1RBUlQQABILCgdUT1BfRU'
-    '5EEAESEAoMQk9UVE9NX1NUQVJUEAISDgoKQk9UVE9NX0VORBAD');
+/// Descriptor for `FlutterBannerLocationType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterBannerLocationTypeDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQmFubmVyTG9jYXRpb25UeXBlIkQKBEVudW0SDQoJVE9QX1NUQVJUEAASCwoHVE'
+    '9QX0VORBABEhAKDEJPVFRPTV9TVEFSVBACEg4KCkJPVFRPTV9FTkQQAw==');
 
-@$core.Deprecated('Use flutterBorderStyleDescriptor instead')
-const FlutterBorderStyle$json = {
-  '1': 'FlutterBorderStyle',
-  '4': [FlutterBorderStyle_Enum$json],
+@$core.Deprecated('Use flutterBorderStyleTypeDescriptor instead')
+const FlutterBorderStyleType$json = {
+  '1': 'FlutterBorderStyleType',
+  '4': [FlutterBorderStyleType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterBorderStyleDescriptor instead')
-const FlutterBorderStyle_Enum$json = {
+@$core.Deprecated('Use flutterBorderStyleTypeDescriptor instead')
+const FlutterBorderStyleType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'NONE', '2': 0},
@@ -590,18 +591,18 @@ const FlutterBorderStyle_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterBorderStyle`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterBorderStyleDescriptor = $convert.base64Decode(
-    'ChJGbHV0dGVyQm9yZGVyU3R5bGUiGwoERW51bRIICgROT05FEAASCQoFU09MSUQQAQ==');
+/// Descriptor for `FlutterBorderStyleType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterBorderStyleTypeDescriptor = $convert.base64Decode(
+    'ChZGbHV0dGVyQm9yZGVyU3R5bGVUeXBlIhsKBEVudW0SCAoETk9ORRAAEgkKBVNPTElEEAE=');
 
-@$core.Deprecated('Use flutterBoxFitDescriptor instead')
-const FlutterBoxFit$json = {
-  '1': 'FlutterBoxFit',
-  '4': [FlutterBoxFit_Enum$json],
+@$core.Deprecated('Use flutterBoxFitTypeDescriptor instead')
+const FlutterBoxFitType$json = {
+  '1': 'FlutterBoxFitType',
+  '4': [FlutterBoxFitType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterBoxFitDescriptor instead')
-const FlutterBoxFit_Enum$json = {
+@$core.Deprecated('Use flutterBoxFitTypeDescriptor instead')
+const FlutterBoxFitType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'FILL', '2': 0},
@@ -614,20 +615,20 @@ const FlutterBoxFit_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterBoxFit`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterBoxFitDescriptor = $convert.base64Decode(
-    'Cg1GbHV0dGVyQm94Rml0ImEKBEVudW0SCAoERklMTBAAEgsKB0NPTlRBSU4QARIJCgVDT1ZFUh'
-    'ACEg0KCUZJVF9XSURUSBADEg4KCkZJVF9IRUlHSFQQBBIICgROT05FEAUSDgoKU0NBTEVfRE9X'
-    'ThAG');
+/// Descriptor for `FlutterBoxFitType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterBoxFitTypeDescriptor = $convert.base64Decode(
+    'ChFGbHV0dGVyQm94Rml0VHlwZSJhCgRFbnVtEggKBEZJTEwQABILCgdDT05UQUlOEAESCQoFQ0'
+    '9WRVIQAhINCglGSVRfV0lEVEgQAxIOCgpGSVRfSEVJR0hUEAQSCAoETk9ORRAFEg4KClNDQUxF'
+    'X0RPV04QBg==');
 
-@$core.Deprecated('Use flutterBoxShapeDescriptor instead')
-const FlutterBoxShape$json = {
-  '1': 'FlutterBoxShape',
-  '4': [FlutterBoxShape_Enum$json],
+@$core.Deprecated('Use flutterBoxShapeTypeDescriptor instead')
+const FlutterBoxShapeType$json = {
+  '1': 'FlutterBoxShapeType',
+  '4': [FlutterBoxShapeType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterBoxShapeDescriptor instead')
-const FlutterBoxShape_Enum$json = {
+@$core.Deprecated('Use flutterBoxShapeTypeDescriptor instead')
+const FlutterBoxShapeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'RECTANGLE', '2': 0},
@@ -635,18 +636,19 @@ const FlutterBoxShape_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterBoxShape`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterBoxShapeDescriptor = $convert.base64Decode(
-    'Cg9GbHV0dGVyQm94U2hhcGUiIQoERW51bRINCglSRUNUQU5HTEUQABIKCgZDSVJDTEUQAQ==');
+/// Descriptor for `FlutterBoxShapeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterBoxShapeTypeDescriptor = $convert.base64Decode(
+    'ChNGbHV0dGVyQm94U2hhcGVUeXBlIiEKBEVudW0SDQoJUkVDVEFOR0xFEAASCgoGQ0lSQ0xFEA'
+    'E=');
 
-@$core.Deprecated('Use flutterCacheExtentStyleDescriptor instead')
-const FlutterCacheExtentStyle$json = {
-  '1': 'FlutterCacheExtentStyle',
-  '4': [FlutterCacheExtentStyle_Enum$json],
+@$core.Deprecated('Use flutterCacheExtentStyleTypeDescriptor instead')
+const FlutterCacheExtentStyleType$json = {
+  '1': 'FlutterCacheExtentStyleType',
+  '4': [FlutterCacheExtentStyleType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterCacheExtentStyleDescriptor instead')
-const FlutterCacheExtentStyle_Enum$json = {
+@$core.Deprecated('Use flutterCacheExtentStyleTypeDescriptor instead')
+const FlutterCacheExtentStyleType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'PIXEL', '2': 0},
@@ -654,19 +656,19 @@ const FlutterCacheExtentStyle_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterCacheExtentStyle`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCacheExtentStyleDescriptor = $convert.base64Decode(
-    'ChdGbHV0dGVyQ2FjaGVFeHRlbnRTdHlsZSIfCgRFbnVtEgkKBVBJWEVMEAASDAoIVklFV1BPUl'
-    'QQAQ==');
+/// Descriptor for `FlutterCacheExtentStyleType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCacheExtentStyleTypeDescriptor = $convert.base64Decode(
+    'ChtGbHV0dGVyQ2FjaGVFeHRlbnRTdHlsZVR5cGUiHwoERW51bRIJCgVQSVhFTBAAEgwKCFZJRV'
+    'dQT1JUEAE=');
 
-@$core.Deprecated('Use flutterClipboardStatusDescriptor instead')
-const FlutterClipboardStatus$json = {
-  '1': 'FlutterClipboardStatus',
-  '4': [FlutterClipboardStatus_Enum$json],
+@$core.Deprecated('Use flutterClipboardStatusTypeDescriptor instead')
+const FlutterClipboardStatusType$json = {
+  '1': 'FlutterClipboardStatusType',
+  '4': [FlutterClipboardStatusType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterClipboardStatusDescriptor instead')
-const FlutterClipboardStatus_Enum$json = {
+@$core.Deprecated('Use flutterClipboardStatusTypeDescriptor instead')
+const FlutterClipboardStatusType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'PASTEABLE', '2': 0},
@@ -675,19 +677,19 @@ const FlutterClipboardStatus_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterClipboardStatus`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterClipboardStatusDescriptor = $convert.base64Decode(
-    'ChZGbHV0dGVyQ2xpcGJvYXJkU3RhdHVzIjUKBEVudW0SDQoJUEFTVEVBQkxFEAASCwoHVU5LTk'
-    '9XThABEhEKDU5PVF9QQVNURUFCTEUQAg==');
+/// Descriptor for `FlutterClipboardStatusType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterClipboardStatusTypeDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyQ2xpcGJvYXJkU3RhdHVzVHlwZSI1CgRFbnVtEg0KCVBBU1RFQUJMRRAAEgsKB1'
+    'VOS05PV04QARIRCg1OT1RfUEFTVEVBQkxFEAI=');
 
-@$core.Deprecated('Use flutterContextMenuButtonTypeDescriptor instead')
-const FlutterContextMenuButtonType$json = {
-  '1': 'FlutterContextMenuButtonType',
-  '4': [FlutterContextMenuButtonType_Enum$json],
+@$core.Deprecated('Use flutterContextMenuButtonTypeTypeDescriptor instead')
+const FlutterContextMenuButtonTypeType$json = {
+  '1': 'FlutterContextMenuButtonTypeType',
+  '4': [FlutterContextMenuButtonTypeType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterContextMenuButtonTypeDescriptor instead')
-const FlutterContextMenuButtonType_Enum$json = {
+@$core.Deprecated('Use flutterContextMenuButtonTypeTypeDescriptor instead')
+const FlutterContextMenuButtonTypeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'CUT', '2': 0},
@@ -703,21 +705,21 @@ const FlutterContextMenuButtonType_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterContextMenuButtonType`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterContextMenuButtonTypeDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyQ29udGV4dE1lbnVCdXR0b25UeXBlIokBCgRFbnVtEgcKA0NVVBAAEggKBENPUF'
-    'kQARIJCgVQQVNURRACEg4KClNFTEVDVF9BTEwQAxIKCgZERUxFVEUQBBILCgdMT09LX1VQEAUS'
-    'DgoKU0VBUkNIX1dFQhAGEgkKBVNIQVJFEAcSEwoPTElWRV9URVhUX0lOUFVUEAgSCgoGQ1VTVE'
-    '9NEAk=');
+/// Descriptor for `FlutterContextMenuButtonTypeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterContextMenuButtonTypeTypeDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyQ29udGV4dE1lbnVCdXR0b25UeXBlVHlwZSKJAQoERW51bRIHCgNDVVQQABIICg'
+    'RDT1BZEAESCQoFUEFTVEUQAhIOCgpTRUxFQ1RfQUxMEAMSCgoGREVMRVRFEAQSCwoHTE9PS19V'
+    'UBAFEg4KClNFQVJDSF9XRUIQBhIJCgVTSEFSRRAHEhMKD0xJVkVfVEVYVF9JTlBVVBAIEgoKBk'
+    'NVU1RPTRAJ');
 
-@$core.Deprecated('Use flutterCrossAxisAlignmentDescriptor instead')
-const FlutterCrossAxisAlignment$json = {
-  '1': 'FlutterCrossAxisAlignment',
-  '4': [FlutterCrossAxisAlignment_Enum$json],
+@$core.Deprecated('Use flutterCrossAxisAlignmentTypeDescriptor instead')
+const FlutterCrossAxisAlignmentType$json = {
+  '1': 'FlutterCrossAxisAlignmentType',
+  '4': [FlutterCrossAxisAlignmentType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterCrossAxisAlignmentDescriptor instead')
-const FlutterCrossAxisAlignment_Enum$json = {
+@$core.Deprecated('Use flutterCrossAxisAlignmentTypeDescriptor instead')
+const FlutterCrossAxisAlignmentType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'START', '2': 0},
@@ -728,19 +730,19 @@ const FlutterCrossAxisAlignment_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterCrossAxisAlignment`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCrossAxisAlignmentDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyQ3Jvc3NBeGlzQWxpZ25tZW50IkEKBEVudW0SCQoFU1RBUlQQABIHCgNFTkQQAR'
-    'IKCgZDRU5URVIQAhILCgdTVFJFVENIEAMSDAoIQkFTRUxJTkUQBA==');
+/// Descriptor for `FlutterCrossAxisAlignmentType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCrossAxisAlignmentTypeDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyQ3Jvc3NBeGlzQWxpZ25tZW50VHlwZSJBCgRFbnVtEgkKBVNUQVJUEAASBwoDRU'
+    '5EEAESCgoGQ0VOVEVSEAISCwoHU1RSRVRDSBADEgwKCEJBU0VMSU5FEAQ=');
 
-@$core.Deprecated('Use flutterCrossFadeStateDescriptor instead')
-const FlutterCrossFadeState$json = {
-  '1': 'FlutterCrossFadeState',
-  '4': [FlutterCrossFadeState_Enum$json],
+@$core.Deprecated('Use flutterCrossFadeStateTypeDescriptor instead')
+const FlutterCrossFadeStateType$json = {
+  '1': 'FlutterCrossFadeStateType',
+  '4': [FlutterCrossFadeStateType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterCrossFadeStateDescriptor instead')
-const FlutterCrossFadeState_Enum$json = {
+@$core.Deprecated('Use flutterCrossFadeStateTypeDescriptor instead')
+const FlutterCrossFadeStateType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'SHOW_FIRST', '2': 0},
@@ -748,19 +750,19 @@ const FlutterCrossFadeState_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterCrossFadeState`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterCrossFadeStateDescriptor = $convert.base64Decode(
-    'ChVGbHV0dGVyQ3Jvc3NGYWRlU3RhdGUiJwoERW51bRIOCgpTSE9XX0ZJUlNUEAASDwoLU0hPV1'
-    '9TRUNPTkQQAQ==');
+/// Descriptor for `FlutterCrossFadeStateType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterCrossFadeStateTypeDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyQ3Jvc3NGYWRlU3RhdGVUeXBlIicKBEVudW0SDgoKU0hPV19GSVJTVBAAEg8KC1'
+    'NIT1dfU0VDT05EEAE=');
 
-@$core.Deprecated('Use flutterDecorationPositionDescriptor instead')
-const FlutterDecorationPosition$json = {
-  '1': 'FlutterDecorationPosition',
-  '4': [FlutterDecorationPosition_Enum$json],
+@$core.Deprecated('Use flutterDecorationPositionTypeDescriptor instead')
+const FlutterDecorationPositionType$json = {
+  '1': 'FlutterDecorationPositionType',
+  '4': [FlutterDecorationPositionType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterDecorationPositionDescriptor instead')
-const FlutterDecorationPosition_Enum$json = {
+@$core.Deprecated('Use flutterDecorationPositionTypeDescriptor instead')
+const FlutterDecorationPositionType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'BACKGROUND', '2': 0},
@@ -768,19 +770,19 @@ const FlutterDecorationPosition_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterDecorationPosition`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterDecorationPositionDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyRGVjb3JhdGlvblBvc2l0aW9uIiYKBEVudW0SDgoKQkFDS0dST1VORBAAEg4KCk'
-    'ZPUkVHUk9VTkQQAQ==');
+/// Descriptor for `FlutterDecorationPositionType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterDecorationPositionTypeDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyRGVjb3JhdGlvblBvc2l0aW9uVHlwZSImCgRFbnVtEg4KCkJBQ0tHUk9VTkQQAB'
+    'IOCgpGT1JFR1JPVU5EEAE=');
 
-@$core.Deprecated('Use flutterDiagnosticLevelDescriptor instead')
-const FlutterDiagnosticLevel$json = {
-  '1': 'FlutterDiagnosticLevel',
-  '4': [FlutterDiagnosticLevel_Enum$json],
+@$core.Deprecated('Use flutterDiagnosticLevelTypeDescriptor instead')
+const FlutterDiagnosticLevelType$json = {
+  '1': 'FlutterDiagnosticLevelType',
+  '4': [FlutterDiagnosticLevelType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterDiagnosticLevelDescriptor instead')
-const FlutterDiagnosticLevel_Enum$json = {
+@$core.Deprecated('Use flutterDiagnosticLevelTypeDescriptor instead')
+const FlutterDiagnosticLevelType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'HIDDEN', '2': 0},
@@ -795,20 +797,20 @@ const FlutterDiagnosticLevel_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterDiagnosticLevel`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterDiagnosticLevelDescriptor = $convert.base64Decode(
-    'ChZGbHV0dGVyRGlhZ25vc3RpY0xldmVsImkKBEVudW0SCgoGSElEREVOEAASCAoERklORRABEg'
-    'kKBURFQlVHEAISCAoESU5GTxADEgsKB1dBUk5JTkcQBBIICgRISU5UEAUSCwoHU1VNTUFSWRAG'
-    'EgkKBUVSUk9SEAcSBwoDT0ZGEAg=');
+/// Descriptor for `FlutterDiagnosticLevelType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterDiagnosticLevelTypeDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyRGlhZ25vc3RpY0xldmVsVHlwZSJpCgRFbnVtEgoKBkhJRERFThAAEggKBEZJTk'
+    'UQARIJCgVERUJVRxACEggKBElORk8QAxILCgdXQVJOSU5HEAQSCAoESElOVBAFEgsKB1NVTU1B'
+    'UlkQBhIJCgVFUlJPUhAHEgcKA09GRhAI');
 
-@$core.Deprecated('Use flutterDiagnosticsTreeStyleDescriptor instead')
-const FlutterDiagnosticsTreeStyle$json = {
-  '1': 'FlutterDiagnosticsTreeStyle',
-  '4': [FlutterDiagnosticsTreeStyle_Enum$json],
+@$core.Deprecated('Use flutterDiagnosticsTreeStyleTypeDescriptor instead')
+const FlutterDiagnosticsTreeStyleType$json = {
+  '1': 'FlutterDiagnosticsTreeStyleType',
+  '4': [FlutterDiagnosticsTreeStyleType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterDiagnosticsTreeStyleDescriptor instead')
-const FlutterDiagnosticsTreeStyle_Enum$json = {
+@$core.Deprecated('Use flutterDiagnosticsTreeStyleTypeDescriptor instead')
+const FlutterDiagnosticsTreeStyleType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'NONE', '2': 0},
@@ -826,21 +828,21 @@ const FlutterDiagnosticsTreeStyle_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterDiagnosticsTreeStyle`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterDiagnosticsTreeStyleDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyRGlhZ25vc3RpY3NUcmVlU3R5bGUiswEKBEVudW0SCAoETk9ORRAAEgoKBlNQQV'
-    'JTRRABEgwKCE9GRlNUQUdFEAISCQoFREVOU0UQAxIOCgpUUkFOU0lUSU9OEAQSCQoFRVJST1IQ'
-    'BRIOCgpXSElURVNQQUNFEAYSCAoERkxBVBAHEg8KC1NJTkdMRV9MSU5FEAgSEgoORVJST1JfUF'
-    'JPUEVSVFkQCRILCgdTSEFMTE9XEAoSFQoRVFJVTkNBVEVfQ0hJTERSRU4QCw==');
+/// Descriptor for `FlutterDiagnosticsTreeStyleType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterDiagnosticsTreeStyleTypeDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyRGlhZ25vc3RpY3NUcmVlU3R5bGVUeXBlIrMBCgRFbnVtEggKBE5PTkUQABIKCg'
+    'ZTUEFSU0UQARIMCghPRkZTVEFHRRACEgkKBURFTlNFEAMSDgoKVFJBTlNJVElPThAEEgkKBUVS'
+    'Uk9SEAUSDgoKV0hJVEVTUEFDRRAGEggKBEZMQVQQBxIPCgtTSU5HTEVfTElORRAIEhIKDkVSUk'
+    '9SX1BST1BFUlRZEAkSCwoHU0hBTExPVxAKEhUKEVRSVU5DQVRFX0NISUxEUkVOEAs=');
 
-@$core.Deprecated('Use flutterDismissDirectionDescriptor instead')
-const FlutterDismissDirection$json = {
-  '1': 'FlutterDismissDirection',
-  '4': [FlutterDismissDirection_Enum$json],
+@$core.Deprecated('Use flutterDismissDirectionTypeDescriptor instead')
+const FlutterDismissDirectionType$json = {
+  '1': 'FlutterDismissDirectionType',
+  '4': [FlutterDismissDirectionType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterDismissDirectionDescriptor instead')
-const FlutterDismissDirection_Enum$json = {
+@$core.Deprecated('Use flutterDismissDirectionTypeDescriptor instead')
+const FlutterDismissDirectionType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'VERTICAL', '2': 0},
@@ -853,20 +855,20 @@ const FlutterDismissDirection_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterDismissDirection`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterDismissDirectionDescriptor = $convert.base64Decode(
-    'ChdGbHV0dGVyRGlzbWlzc0RpcmVjdGlvbiJkCgRFbnVtEgwKCFZFUlRJQ0FMEAASDgoKSE9SSV'
-    'pPTlRBTBABEhAKDEVORF9UT19TVEFSVBACEhAKDFNUQVJUX1RPX0VORBADEgYKAlVQEAQSCAoE'
-    'RE9XThAFEggKBE5PTkUQBg==');
+/// Descriptor for `FlutterDismissDirectionType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterDismissDirectionTypeDescriptor = $convert.base64Decode(
+    'ChtGbHV0dGVyRGlzbWlzc0RpcmVjdGlvblR5cGUiZAoERW51bRIMCghWRVJUSUNBTBAAEg4KCk'
+    'hPUklaT05UQUwQARIQCgxFTkRfVE9fU1RBUlQQAhIQCgxTVEFSVF9UT19FTkQQAxIGCgJVUBAE'
+    'EggKBERPV04QBRIICgROT05FEAY=');
 
-@$core.Deprecated('Use flutterDragStartBehaviorDescriptor instead')
-const FlutterDragStartBehavior$json = {
-  '1': 'FlutterDragStartBehavior',
-  '4': [FlutterDragStartBehavior_Enum$json],
+@$core.Deprecated('Use flutterDragStartBehaviorTypeDescriptor instead')
+const FlutterDragStartBehaviorType$json = {
+  '1': 'FlutterDragStartBehaviorType',
+  '4': [FlutterDragStartBehaviorType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterDragStartBehaviorDescriptor instead')
-const FlutterDragStartBehavior_Enum$json = {
+@$core.Deprecated('Use flutterDragStartBehaviorTypeDescriptor instead')
+const FlutterDragStartBehaviorType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'DOWN', '2': 0},
@@ -874,19 +876,19 @@ const FlutterDragStartBehavior_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterDragStartBehavior`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterDragStartBehaviorDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyRHJhZ1N0YXJ0QmVoYXZpb3IiGwoERW51bRIICgRET1dOEAASCQoFU1RBUlQQAQ'
-    '==');
+/// Descriptor for `FlutterDragStartBehaviorType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterDragStartBehaviorTypeDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyRHJhZ1N0YXJ0QmVoYXZpb3JUeXBlIhsKBEVudW0SCAoERE9XThAAEgkKBVNUQV'
+    'JUEAE=');
 
-@$core.Deprecated('Use flutterFlexFitDescriptor instead')
-const FlutterFlexFit$json = {
-  '1': 'FlutterFlexFit',
-  '4': [FlutterFlexFit_Enum$json],
+@$core.Deprecated('Use flutterFlexFitTypeDescriptor instead')
+const FlutterFlexFitType$json = {
+  '1': 'FlutterFlexFitType',
+  '4': [FlutterFlexFitType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterFlexFitDescriptor instead')
-const FlutterFlexFit_Enum$json = {
+@$core.Deprecated('Use flutterFlexFitTypeDescriptor instead')
+const FlutterFlexFitType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'TIGHT', '2': 0},
@@ -894,18 +896,18 @@ const FlutterFlexFit_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterFlexFit`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterFlexFitDescriptor = $convert.base64Decode(
-    'Cg5GbHV0dGVyRmxleEZpdCIcCgRFbnVtEgkKBVRJR0hUEAASCQoFTE9PU0UQAQ==');
+/// Descriptor for `FlutterFlexFitType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterFlexFitTypeDescriptor = $convert.base64Decode(
+    'ChJGbHV0dGVyRmxleEZpdFR5cGUiHAoERW51bRIJCgVUSUdIVBAAEgkKBUxPT1NFEAE=');
 
-@$core.Deprecated('Use flutterFlutterLogoStyleDescriptor instead')
-const FlutterFlutterLogoStyle$json = {
-  '1': 'FlutterFlutterLogoStyle',
-  '4': [FlutterFlutterLogoStyle_Enum$json],
+@$core.Deprecated('Use flutterFlutterLogoStyleTypeDescriptor instead')
+const FlutterFlutterLogoStyleType$json = {
+  '1': 'FlutterFlutterLogoStyleType',
+  '4': [FlutterFlutterLogoStyleType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterFlutterLogoStyleDescriptor instead')
-const FlutterFlutterLogoStyle_Enum$json = {
+@$core.Deprecated('Use flutterFlutterLogoStyleTypeDescriptor instead')
+const FlutterFlutterLogoStyleType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'MARK_ONLY', '2': 0},
@@ -914,19 +916,19 @@ const FlutterFlutterLogoStyle_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterFlutterLogoStyle`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterFlutterLogoStyleDescriptor = $convert.base64Decode(
-    'ChdGbHV0dGVyRmx1dHRlckxvZ29TdHlsZSIyCgRFbnVtEg0KCU1BUktfT05MWRAAEg4KCkhPUk'
-    'laT05UQUwQARILCgdTVEFDS0VEEAI=');
+/// Descriptor for `FlutterFlutterLogoStyleType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterFlutterLogoStyleTypeDescriptor = $convert.base64Decode(
+    'ChtGbHV0dGVyRmx1dHRlckxvZ29TdHlsZVR5cGUiMgoERW51bRINCglNQVJLX09OTFkQABIOCg'
+    'pIT1JJWk9OVEFMEAESCwoHU1RBQ0tFRBAC');
 
-@$core.Deprecated('Use flutterHitTestBehaviorDescriptor instead')
-const FlutterHitTestBehavior$json = {
-  '1': 'FlutterHitTestBehavior',
-  '4': [FlutterHitTestBehavior_Enum$json],
+@$core.Deprecated('Use flutterHitTestBehaviorTypeDescriptor instead')
+const FlutterHitTestBehaviorType$json = {
+  '1': 'FlutterHitTestBehaviorType',
+  '4': [FlutterHitTestBehaviorType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterHitTestBehaviorDescriptor instead')
-const FlutterHitTestBehavior_Enum$json = {
+@$core.Deprecated('Use flutterHitTestBehaviorTypeDescriptor instead')
+const FlutterHitTestBehaviorType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'DEFER_TO_CHILD', '2': 0},
@@ -935,19 +937,19 @@ const FlutterHitTestBehavior_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterHitTestBehavior`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterHitTestBehaviorDescriptor = $convert.base64Decode(
-    'ChZGbHV0dGVySGl0VGVzdEJlaGF2aW9yIjcKBEVudW0SEgoOREVGRVJfVE9fQ0hJTEQQABIKCg'
-    'ZPUEFRVUUQARIPCgtUUkFOU0xVQ0VOVBAC');
+/// Descriptor for `FlutterHitTestBehaviorType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterHitTestBehaviorTypeDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVySGl0VGVzdEJlaGF2aW9yVHlwZSI3CgRFbnVtEhIKDkRFRkVSX1RPX0NISUxEEA'
+    'ASCgoGT1BBUVVFEAESDwoLVFJBTlNMVUNFTlQQAg==');
 
-@$core.Deprecated('Use flutterImageRepeatDescriptor instead')
-const FlutterImageRepeat$json = {
-  '1': 'FlutterImageRepeat',
-  '4': [FlutterImageRepeat_Enum$json],
+@$core.Deprecated('Use flutterImageRepeatTypeDescriptor instead')
+const FlutterImageRepeatType$json = {
+  '1': 'FlutterImageRepeatType',
+  '4': [FlutterImageRepeatType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterImageRepeatDescriptor instead')
-const FlutterImageRepeat_Enum$json = {
+@$core.Deprecated('Use flutterImageRepeatTypeDescriptor instead')
+const FlutterImageRepeatType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'REPEAT', '2': 0},
@@ -957,19 +959,19 @@ const FlutterImageRepeat_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterImageRepeat`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterImageRepeatDescriptor = $convert.base64Decode(
-    'ChJGbHV0dGVySW1hZ2VSZXBlYXQiPQoERW51bRIKCgZSRVBFQVQQABIMCghSRVBFQVRfWBABEg'
-    'wKCFJFUEVBVF9ZEAISDQoJTk9fUkVQRUFUEAM=');
+/// Descriptor for `FlutterImageRepeatType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterImageRepeatTypeDescriptor = $convert.base64Decode(
+    'ChZGbHV0dGVySW1hZ2VSZXBlYXRUeXBlIj0KBEVudW0SCgoGUkVQRUFUEAASDAoIUkVQRUFUX1'
+    'gQARIMCghSRVBFQVRfWRACEg0KCU5PX1JFUEVBVBAD');
 
-@$core.Deprecated('Use flutterMainAxisAlignmentDescriptor instead')
-const FlutterMainAxisAlignment$json = {
-  '1': 'FlutterMainAxisAlignment',
-  '4': [FlutterMainAxisAlignment_Enum$json],
+@$core.Deprecated('Use flutterMainAxisAlignmentTypeDescriptor instead')
+const FlutterMainAxisAlignmentType$json = {
+  '1': 'FlutterMainAxisAlignmentType',
+  '4': [FlutterMainAxisAlignmentType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterMainAxisAlignmentDescriptor instead')
-const FlutterMainAxisAlignment_Enum$json = {
+@$core.Deprecated('Use flutterMainAxisAlignmentTypeDescriptor instead')
+const FlutterMainAxisAlignmentType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'START', '2': 0},
@@ -981,20 +983,20 @@ const FlutterMainAxisAlignment_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterMainAxisAlignment`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterMainAxisAlignmentDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyTWFpbkF4aXNBbGlnbm1lbnQiXQoERW51bRIJCgVTVEFSVBAAEgcKA0VORBABEg'
-    'oKBkNFTlRFUhACEhEKDVNQQUNFX0JFVFdFRU4QAxIQCgxTUEFDRV9BUk9VTkQQBBIQCgxTUEFD'
-    'RV9FVkVOTFkQBQ==');
+/// Descriptor for `FlutterMainAxisAlignmentType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterMainAxisAlignmentTypeDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyTWFpbkF4aXNBbGlnbm1lbnRUeXBlIl0KBEVudW0SCQoFU1RBUlQQABIHCgNFTk'
+    'QQARIKCgZDRU5URVIQAhIRCg1TUEFDRV9CRVRXRUVOEAMSEAoMU1BBQ0VfQVJPVU5EEAQSEAoM'
+    'U1BBQ0VfRVZFTkxZEAU=');
 
-@$core.Deprecated('Use flutterMainAxisSizeDescriptor instead')
-const FlutterMainAxisSize$json = {
-  '1': 'FlutterMainAxisSize',
-  '4': [FlutterMainAxisSize_Enum$json],
+@$core.Deprecated('Use flutterMainAxisSizeTypeDescriptor instead')
+const FlutterMainAxisSizeType$json = {
+  '1': 'FlutterMainAxisSizeType',
+  '4': [FlutterMainAxisSizeType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterMainAxisSizeDescriptor instead')
-const FlutterMainAxisSize_Enum$json = {
+@$core.Deprecated('Use flutterMainAxisSizeTypeDescriptor instead')
+const FlutterMainAxisSizeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'MIN', '2': 0},
@@ -1002,18 +1004,18 @@ const FlutterMainAxisSize_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterMainAxisSize`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterMainAxisSizeDescriptor = $convert.base64Decode(
-    'ChNGbHV0dGVyTWFpbkF4aXNTaXplIhgKBEVudW0SBwoDTUlOEAASBwoDTUFYEAE=');
+/// Descriptor for `FlutterMainAxisSizeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterMainAxisSizeTypeDescriptor = $convert.base64Decode(
+    'ChdGbHV0dGVyTWFpbkF4aXNTaXplVHlwZSIYCgRFbnVtEgcKA01JThAAEgcKA01BWBAB');
 
-@$core.Deprecated('Use flutterMaxLengthEnforcementDescriptor instead')
-const FlutterMaxLengthEnforcement$json = {
-  '1': 'FlutterMaxLengthEnforcement',
-  '4': [FlutterMaxLengthEnforcement_Enum$json],
+@$core.Deprecated('Use flutterMaxLengthEnforcementTypeDescriptor instead')
+const FlutterMaxLengthEnforcementType$json = {
+  '1': 'FlutterMaxLengthEnforcementType',
+  '4': [FlutterMaxLengthEnforcementType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterMaxLengthEnforcementDescriptor instead')
-const FlutterMaxLengthEnforcement_Enum$json = {
+@$core.Deprecated('Use flutterMaxLengthEnforcementTypeDescriptor instead')
+const FlutterMaxLengthEnforcementType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'NONE', '2': 0},
@@ -1022,19 +1024,19 @@ const FlutterMaxLengthEnforcement_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterMaxLengthEnforcement`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterMaxLengthEnforcementDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyTWF4TGVuZ3RoRW5mb3JjZW1lbnQiQwoERW51bRIICgROT05FEAASDAoIRU5GT1'
-    'JDRUQQARIjCh9UUlVOQ0FURV9BRlRFUl9DT01QT1NJVElPTl9FTkRTEAI=');
+/// Descriptor for `FlutterMaxLengthEnforcementType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterMaxLengthEnforcementTypeDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyTWF4TGVuZ3RoRW5mb3JjZW1lbnRUeXBlIkMKBEVudW0SCAoETk9ORRAAEgwKCE'
+    'VORk9SQ0VEEAESIwofVFJVTkNBVEVfQUZURVJfQ09NUE9TSVRJT05fRU5EUxAC');
 
-@$core.Deprecated('Use flutterNavigationModeDescriptor instead')
-const FlutterNavigationMode$json = {
-  '1': 'FlutterNavigationMode',
-  '4': [FlutterNavigationMode_Enum$json],
+@$core.Deprecated('Use flutterNavigationModeTypeDescriptor instead')
+const FlutterNavigationModeType$json = {
+  '1': 'FlutterNavigationModeType',
+  '4': [FlutterNavigationModeType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterNavigationModeDescriptor instead')
-const FlutterNavigationMode_Enum$json = {
+@$core.Deprecated('Use flutterNavigationModeTypeDescriptor instead')
+const FlutterNavigationModeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'TRADITIONAL', '2': 0},
@@ -1042,19 +1044,19 @@ const FlutterNavigationMode_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterNavigationMode`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterNavigationModeDescriptor = $convert.base64Decode(
-    'ChVGbHV0dGVyTmF2aWdhdGlvbk1vZGUiKAoERW51bRIPCgtUUkFESVRJT05BTBAAEg8KC0RJUk'
-    'VDVElPTkFMEAE=');
+/// Descriptor for `FlutterNavigationModeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterNavigationModeTypeDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyTmF2aWdhdGlvbk1vZGVUeXBlIigKBEVudW0SDwoLVFJBRElUSU9OQUwQABIPCg'
+    'tESVJFQ1RJT05BTBAB');
 
-@$core.Deprecated('Use flutterOrientationDescriptor instead')
-const FlutterOrientation$json = {
-  '1': 'FlutterOrientation',
-  '4': [FlutterOrientation_Enum$json],
+@$core.Deprecated('Use flutterOrientationTypeDescriptor instead')
+const FlutterOrientationType$json = {
+  '1': 'FlutterOrientationType',
+  '4': [FlutterOrientationType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterOrientationDescriptor instead')
-const FlutterOrientation_Enum$json = {
+@$core.Deprecated('Use flutterOrientationTypeDescriptor instead')
+const FlutterOrientationType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'PORTRAIT', '2': 0},
@@ -1062,19 +1064,19 @@ const FlutterOrientation_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterOrientation`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterOrientationDescriptor = $convert.base64Decode(
-    'ChJGbHV0dGVyT3JpZW50YXRpb24iIwoERW51bRIMCghQT1JUUkFJVBAAEg0KCUxBTkRTQ0FQRR'
-    'AB');
+/// Descriptor for `FlutterOrientationType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterOrientationTypeDescriptor = $convert.base64Decode(
+    'ChZGbHV0dGVyT3JpZW50YXRpb25UeXBlIiMKBEVudW0SDAoIUE9SVFJBSVQQABINCglMQU5EU0'
+    'NBUEUQAQ==');
 
-@$core.Deprecated('Use flutterOverflowBarAlignmentDescriptor instead')
-const FlutterOverflowBarAlignment$json = {
-  '1': 'FlutterOverflowBarAlignment',
-  '4': [FlutterOverflowBarAlignment_Enum$json],
+@$core.Deprecated('Use flutterOverflowBarAlignmentTypeDescriptor instead')
+const FlutterOverflowBarAlignmentType$json = {
+  '1': 'FlutterOverflowBarAlignmentType',
+  '4': [FlutterOverflowBarAlignmentType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterOverflowBarAlignmentDescriptor instead')
-const FlutterOverflowBarAlignment_Enum$json = {
+@$core.Deprecated('Use flutterOverflowBarAlignmentTypeDescriptor instead')
+const FlutterOverflowBarAlignmentType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'START', '2': 0},
@@ -1083,19 +1085,19 @@ const FlutterOverflowBarAlignment_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterOverflowBarAlignment`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterOverflowBarAlignmentDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyT3ZlcmZsb3dCYXJBbGlnbm1lbnQiJgoERW51bRIJCgVTVEFSVBAAEgcKA0VORB'
-    'ABEgoKBkNFTlRFUhAC');
+/// Descriptor for `FlutterOverflowBarAlignmentType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterOverflowBarAlignmentTypeDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyT3ZlcmZsb3dCYXJBbGlnbm1lbnRUeXBlIiYKBEVudW0SCQoFU1RBUlQQABIHCg'
+    'NFTkQQARIKCgZDRU5URVIQAg==');
 
-@$core.Deprecated('Use flutterPanAxisDescriptor instead')
-const FlutterPanAxis$json = {
-  '1': 'FlutterPanAxis',
-  '4': [FlutterPanAxis_Enum$json],
+@$core.Deprecated('Use flutterPanAxisTypeDescriptor instead')
+const FlutterPanAxisType$json = {
+  '1': 'FlutterPanAxisType',
+  '4': [FlutterPanAxisType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterPanAxisDescriptor instead')
-const FlutterPanAxis_Enum$json = {
+@$core.Deprecated('Use flutterPanAxisTypeDescriptor instead')
+const FlutterPanAxisType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'HORIZONTAL', '2': 0},
@@ -1105,19 +1107,19 @@ const FlutterPanAxis_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterPanAxis`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterPanAxisDescriptor = $convert.base64Decode(
-    'Cg5GbHV0dGVyUGFuQXhpcyI7CgRFbnVtEg4KCkhPUklaT05UQUwQABIMCghWRVJUSUNBTBABEg'
-    'sKB0FMSUdORUQQAhIICgRGUkVFEAM=');
+/// Descriptor for `FlutterPanAxisType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterPanAxisTypeDescriptor = $convert.base64Decode(
+    'ChJGbHV0dGVyUGFuQXhpc1R5cGUiOwoERW51bRIOCgpIT1JJWk9OVEFMEAASDAoIVkVSVElDQU'
+    'wQARILCgdBTElHTkVEEAISCAoERlJFRRAD');
 
-@$core.Deprecated('Use flutterPlatformProvidedMenuItemTypeDescriptor instead')
-const FlutterPlatformProvidedMenuItemType$json = {
-  '1': 'FlutterPlatformProvidedMenuItemType',
-  '4': [FlutterPlatformProvidedMenuItemType_Enum$json],
+@$core.Deprecated('Use flutterPlatformProvidedMenuItemTypeTypeDescriptor instead')
+const FlutterPlatformProvidedMenuItemTypeType$json = {
+  '1': 'FlutterPlatformProvidedMenuItemTypeType',
+  '4': [FlutterPlatformProvidedMenuItemTypeType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterPlatformProvidedMenuItemTypeDescriptor instead')
-const FlutterPlatformProvidedMenuItemType_Enum$json = {
+@$core.Deprecated('Use flutterPlatformProvidedMenuItemTypeTypeDescriptor instead')
+const FlutterPlatformProvidedMenuItemTypeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'ABOUT', '2': 0},
@@ -1135,23 +1137,23 @@ const FlutterPlatformProvidedMenuItemType_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterPlatformProvidedMenuItemType`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterPlatformProvidedMenuItemTypeDescriptor = $convert.base64Decode(
-    'CiNGbHV0dGVyUGxhdGZvcm1Qcm92aWRlZE1lbnVJdGVtVHlwZSL2AQoERW51bRIJCgVBQk9VVB'
-    'AAEggKBFFVSVQQARIUChBTRVJWSUNFU19TVUJNRU5VEAISCAoESElERRADEhsKF0hJREVfT1RI'
-    'RVJfQVBQTElDQVRJT05TEAQSGQoVU0hPV19BTExfQVBQTElDQVRJT05TEAUSEgoOU1RBUlRfU1'
-    'BFQUtJTkcQBhIRCg1TVE9QX1NQRUFLSU5HEAcSFgoSVE9HR0xFX0ZVTExfU0NSRUVOEAgSEwoP'
-    'TUlOSU1JWkVfV0lORE9XEAkSDwoLWk9PTV9XSU5ET1cQChIcChhBUlJBTkdFX1dJTkRPV1NfSU'
-    '5fRlJPTlQQCw==');
+/// Descriptor for `FlutterPlatformProvidedMenuItemTypeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterPlatformProvidedMenuItemTypeTypeDescriptor = $convert.base64Decode(
+    'CidGbHV0dGVyUGxhdGZvcm1Qcm92aWRlZE1lbnVJdGVtVHlwZVR5cGUi9gEKBEVudW0SCQoFQU'
+    'JPVVQQABIICgRRVUlUEAESFAoQU0VSVklDRVNfU1VCTUVOVRACEggKBEhJREUQAxIbChdISURF'
+    'X09USEVSX0FQUExJQ0FUSU9OUxAEEhkKFVNIT1dfQUxMX0FQUExJQ0FUSU9OUxAFEhIKDlNUQV'
+    'JUX1NQRUFLSU5HEAYSEQoNU1RPUF9TUEVBS0lORxAHEhYKElRPR0dMRV9GVUxMX1NDUkVFThAI'
+    'EhMKD01JTklNSVpFX1dJTkRPVxAJEg8KC1pPT01fV0lORE9XEAoSHAoYQVJSQU5HRV9XSU5ET1'
+    'dTX0lOX0ZST05UEAs=');
 
-@$core.Deprecated('Use flutterPlatformViewHitTestBehaviorDescriptor instead')
-const FlutterPlatformViewHitTestBehavior$json = {
-  '1': 'FlutterPlatformViewHitTestBehavior',
-  '4': [FlutterPlatformViewHitTestBehavior_Enum$json],
+@$core.Deprecated('Use flutterPlatformViewHitTestBehaviorTypeDescriptor instead')
+const FlutterPlatformViewHitTestBehaviorType$json = {
+  '1': 'FlutterPlatformViewHitTestBehaviorType',
+  '4': [FlutterPlatformViewHitTestBehaviorType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterPlatformViewHitTestBehaviorDescriptor instead')
-const FlutterPlatformViewHitTestBehavior_Enum$json = {
+@$core.Deprecated('Use flutterPlatformViewHitTestBehaviorTypeDescriptor instead')
+const FlutterPlatformViewHitTestBehaviorType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'OPAQUE', '2': 0},
@@ -1160,19 +1162,19 @@ const FlutterPlatformViewHitTestBehavior_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterPlatformViewHitTestBehavior`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterPlatformViewHitTestBehaviorDescriptor = $convert.base64Decode(
-    'CiJGbHV0dGVyUGxhdGZvcm1WaWV3SGl0VGVzdEJlaGF2aW9yIjQKBEVudW0SCgoGT1BBUVVFEA'
-    'ASDwoLVFJBTlNMVUNFTlQQARIPCgtUUkFOU1BBUkVOVBAC');
+/// Descriptor for `FlutterPlatformViewHitTestBehaviorType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterPlatformViewHitTestBehaviorTypeDescriptor = $convert.base64Decode(
+    'CiZGbHV0dGVyUGxhdGZvcm1WaWV3SGl0VGVzdEJlaGF2aW9yVHlwZSI0CgRFbnVtEgoKBk9QQV'
+    'FVRRAAEg8KC1RSQU5TTFVDRU5UEAESDwoLVFJBTlNQQVJFTlQQAg==');
 
-@$core.Deprecated('Use flutterScrollDecelerationRateDescriptor instead')
-const FlutterScrollDecelerationRate$json = {
-  '1': 'FlutterScrollDecelerationRate',
-  '4': [FlutterScrollDecelerationRate_Enum$json],
+@$core.Deprecated('Use flutterScrollDecelerationRateTypeDescriptor instead')
+const FlutterScrollDecelerationRateType$json = {
+  '1': 'FlutterScrollDecelerationRateType',
+  '4': [FlutterScrollDecelerationRateType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterScrollDecelerationRateDescriptor instead')
-const FlutterScrollDecelerationRate_Enum$json = {
+@$core.Deprecated('Use flutterScrollDecelerationRateTypeDescriptor instead')
+const FlutterScrollDecelerationRateType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'NORMAL', '2': 0},
@@ -1180,19 +1182,19 @@ const FlutterScrollDecelerationRate_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterScrollDecelerationRate`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterScrollDecelerationRateDescriptor = $convert.base64Decode(
-    'Ch1GbHV0dGVyU2Nyb2xsRGVjZWxlcmF0aW9uUmF0ZSIcCgRFbnVtEgoKBk5PUk1BTBAAEggKBE'
-    'ZBU1QQAQ==');
+/// Descriptor for `FlutterScrollDecelerationRateType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterScrollDecelerationRateTypeDescriptor = $convert.base64Decode(
+    'CiFGbHV0dGVyU2Nyb2xsRGVjZWxlcmF0aW9uUmF0ZVR5cGUiHAoERW51bRIKCgZOT1JNQUwQAB'
+    'IICgRGQVNUEAE=');
 
-@$core.Deprecated('Use flutterScrollIncrementTypeDescriptor instead')
-const FlutterScrollIncrementType$json = {
-  '1': 'FlutterScrollIncrementType',
-  '4': [FlutterScrollIncrementType_Enum$json],
+@$core.Deprecated('Use flutterScrollIncrementTypeTypeDescriptor instead')
+const FlutterScrollIncrementTypeType$json = {
+  '1': 'FlutterScrollIncrementTypeType',
+  '4': [FlutterScrollIncrementTypeType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterScrollIncrementTypeDescriptor instead')
-const FlutterScrollIncrementType_Enum$json = {
+@$core.Deprecated('Use flutterScrollIncrementTypeTypeDescriptor instead')
+const FlutterScrollIncrementTypeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'LINE', '2': 0},
@@ -1200,19 +1202,19 @@ const FlutterScrollIncrementType_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterScrollIncrementType`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterScrollIncrementTypeDescriptor = $convert.base64Decode(
-    'ChpGbHV0dGVyU2Nyb2xsSW5jcmVtZW50VHlwZSIaCgRFbnVtEggKBExJTkUQABIICgRQQUdFEA'
-    'E=');
+/// Descriptor for `FlutterScrollIncrementTypeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterScrollIncrementTypeTypeDescriptor = $convert.base64Decode(
+    'Ch5GbHV0dGVyU2Nyb2xsSW5jcmVtZW50VHlwZVR5cGUiGgoERW51bRIICgRMSU5FEAASCAoEUE'
+    'FHRRAB');
 
-@$core.Deprecated('Use flutterScrollViewKeyboardDismissBehaviorDescriptor instead')
-const FlutterScrollViewKeyboardDismissBehavior$json = {
-  '1': 'FlutterScrollViewKeyboardDismissBehavior',
-  '4': [FlutterScrollViewKeyboardDismissBehavior_Enum$json],
+@$core.Deprecated('Use flutterScrollViewKeyboardDismissBehaviorTypeDescriptor instead')
+const FlutterScrollViewKeyboardDismissBehaviorType$json = {
+  '1': 'FlutterScrollViewKeyboardDismissBehaviorType',
+  '4': [FlutterScrollViewKeyboardDismissBehaviorType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterScrollViewKeyboardDismissBehaviorDescriptor instead')
-const FlutterScrollViewKeyboardDismissBehavior_Enum$json = {
+@$core.Deprecated('Use flutterScrollViewKeyboardDismissBehaviorTypeDescriptor instead')
+const FlutterScrollViewKeyboardDismissBehaviorType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'MANUAL', '2': 0},
@@ -1220,19 +1222,19 @@ const FlutterScrollViewKeyboardDismissBehavior_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterScrollViewKeyboardDismissBehavior`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterScrollViewKeyboardDismissBehaviorDescriptor = $convert.base64Decode(
-    'CihGbHV0dGVyU2Nyb2xsVmlld0tleWJvYXJkRGlzbWlzc0JlaGF2aW9yIh8KBEVudW0SCgoGTU'
-    'FOVUFMEAASCwoHT05fRFJBRxAB');
+/// Descriptor for `FlutterScrollViewKeyboardDismissBehaviorType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterScrollViewKeyboardDismissBehaviorTypeDescriptor = $convert.base64Decode(
+    'CixGbHV0dGVyU2Nyb2xsVmlld0tleWJvYXJkRGlzbWlzc0JlaGF2aW9yVHlwZSIfCgRFbnVtEg'
+    'oKBk1BTlVBTBAAEgsKB09OX0RSQUcQAQ==');
 
-@$core.Deprecated('Use flutterScrollbarOrientationDescriptor instead')
-const FlutterScrollbarOrientation$json = {
-  '1': 'FlutterScrollbarOrientation',
-  '4': [FlutterScrollbarOrientation_Enum$json],
+@$core.Deprecated('Use flutterScrollbarOrientationTypeDescriptor instead')
+const FlutterScrollbarOrientationType$json = {
+  '1': 'FlutterScrollbarOrientationType',
+  '4': [FlutterScrollbarOrientationType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterScrollbarOrientationDescriptor instead')
-const FlutterScrollbarOrientation_Enum$json = {
+@$core.Deprecated('Use flutterScrollbarOrientationTypeDescriptor instead')
+const FlutterScrollbarOrientationType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'LEFT', '2': 0},
@@ -1242,19 +1244,19 @@ const FlutterScrollbarOrientation_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterScrollbarOrientation`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterScrollbarOrientationDescriptor = $convert.base64Decode(
-    'ChtGbHV0dGVyU2Nyb2xsYmFyT3JpZW50YXRpb24iMAoERW51bRIICgRMRUZUEAASCQoFUklHSF'
-    'QQARIHCgNUT1AQAhIKCgZCT1RUT00QAw==');
+/// Descriptor for `FlutterScrollbarOrientationType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterScrollbarOrientationTypeDescriptor = $convert.base64Decode(
+    'Ch9GbHV0dGVyU2Nyb2xsYmFyT3JpZW50YXRpb25UeXBlIjAKBEVudW0SCAoETEVGVBAAEgkKBV'
+    'JJR0hUEAESBwoDVE9QEAISCgoGQk9UVE9NEAM=');
 
-@$core.Deprecated('Use flutterSelectionChangedCauseDescriptor instead')
-const FlutterSelectionChangedCause$json = {
-  '1': 'FlutterSelectionChangedCause',
-  '4': [FlutterSelectionChangedCause_Enum$json],
+@$core.Deprecated('Use flutterSelectionChangedCauseTypeDescriptor instead')
+const FlutterSelectionChangedCauseType$json = {
+  '1': 'FlutterSelectionChangedCauseType',
+  '4': [FlutterSelectionChangedCauseType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterSelectionChangedCauseDescriptor instead')
-const FlutterSelectionChangedCause_Enum$json = {
+@$core.Deprecated('Use flutterSelectionChangedCauseTypeDescriptor instead')
+const FlutterSelectionChangedCauseType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'TAP', '2': 0},
@@ -1268,20 +1270,20 @@ const FlutterSelectionChangedCause_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterSelectionChangedCause`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterSelectionChangedCauseDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyU2VsZWN0aW9uQ2hhbmdlZENhdXNlInMKBEVudW0SBwoDVEFQEAASDgoKRE9VQk'
-    'xFX1RBUBABEg4KCkxPTkdfUFJFU1MQAhIPCgtGT1JDRV9QUkVTUxADEgwKCEtFWUJPQVJEEAQS'
-    'CwoHVE9PTEJBUhAFEggKBERSQUcQBhIMCghTQ1JJQkJMRRAH');
+/// Descriptor for `FlutterSelectionChangedCauseType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterSelectionChangedCauseTypeDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyU2VsZWN0aW9uQ2hhbmdlZENhdXNlVHlwZSJzCgRFbnVtEgcKA1RBUBAAEg4KCk'
+    'RPVUJMRV9UQVAQARIOCgpMT05HX1BSRVNTEAISDwoLRk9SQ0VfUFJFU1MQAxIMCghLRVlCT0FS'
+    'RBAEEgsKB1RPT0xCQVIQBRIICgREUkFHEAYSDAoIU0NSSUJCTEUQBw==');
 
-@$core.Deprecated('Use flutterSmartDashesTypeDescriptor instead')
-const FlutterSmartDashesType$json = {
-  '1': 'FlutterSmartDashesType',
-  '4': [FlutterSmartDashesType_Enum$json],
+@$core.Deprecated('Use flutterSmartDashesTypeTypeDescriptor instead')
+const FlutterSmartDashesTypeType$json = {
+  '1': 'FlutterSmartDashesTypeType',
+  '4': [FlutterSmartDashesTypeType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterSmartDashesTypeDescriptor instead')
-const FlutterSmartDashesType_Enum$json = {
+@$core.Deprecated('Use flutterSmartDashesTypeTypeDescriptor instead')
+const FlutterSmartDashesTypeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'DISABLED', '2': 0},
@@ -1289,19 +1291,19 @@ const FlutterSmartDashesType_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterSmartDashesType`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterSmartDashesTypeDescriptor = $convert.base64Decode(
-    'ChZGbHV0dGVyU21hcnREYXNoZXNUeXBlIiEKBEVudW0SDAoIRElTQUJMRUQQABILCgdFTkFCTE'
-    'VEEAE=');
+/// Descriptor for `FlutterSmartDashesTypeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterSmartDashesTypeTypeDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyU21hcnREYXNoZXNUeXBlVHlwZSIhCgRFbnVtEgwKCERJU0FCTEVEEAASCwoHRU'
+    '5BQkxFRBAB');
 
-@$core.Deprecated('Use flutterSmartQuotesTypeDescriptor instead')
-const FlutterSmartQuotesType$json = {
-  '1': 'FlutterSmartQuotesType',
-  '4': [FlutterSmartQuotesType_Enum$json],
+@$core.Deprecated('Use flutterSmartQuotesTypeTypeDescriptor instead')
+const FlutterSmartQuotesTypeType$json = {
+  '1': 'FlutterSmartQuotesTypeType',
+  '4': [FlutterSmartQuotesTypeType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterSmartQuotesTypeDescriptor instead')
-const FlutterSmartQuotesType_Enum$json = {
+@$core.Deprecated('Use flutterSmartQuotesTypeTypeDescriptor instead')
+const FlutterSmartQuotesTypeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'DISABLED', '2': 0},
@@ -1309,19 +1311,19 @@ const FlutterSmartQuotesType_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterSmartQuotesType`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterSmartQuotesTypeDescriptor = $convert.base64Decode(
-    'ChZGbHV0dGVyU21hcnRRdW90ZXNUeXBlIiEKBEVudW0SDAoIRElTQUJMRUQQABILCgdFTkFCTE'
-    'VEEAE=');
+/// Descriptor for `FlutterSmartQuotesTypeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterSmartQuotesTypeTypeDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyU21hcnRRdW90ZXNUeXBlVHlwZSIhCgRFbnVtEgwKCERJU0FCTEVEEAASCwoHRU'
+    '5BQkxFRBAB');
 
-@$core.Deprecated('Use flutterSnapshotModeDescriptor instead')
-const FlutterSnapshotMode$json = {
-  '1': 'FlutterSnapshotMode',
-  '4': [FlutterSnapshotMode_Enum$json],
+@$core.Deprecated('Use flutterSnapshotModeTypeDescriptor instead')
+const FlutterSnapshotModeType$json = {
+  '1': 'FlutterSnapshotModeType',
+  '4': [FlutterSnapshotModeType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterSnapshotModeDescriptor instead')
-const FlutterSnapshotMode_Enum$json = {
+@$core.Deprecated('Use flutterSnapshotModeTypeDescriptor instead')
+const FlutterSnapshotModeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'PERMISSIVE', '2': 0},
@@ -1330,19 +1332,19 @@ const FlutterSnapshotMode_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterSnapshotMode`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterSnapshotModeDescriptor = $convert.base64Decode(
-    'ChNGbHV0dGVyU25hcHNob3RNb2RlIi4KBEVudW0SDgoKUEVSTUlTU0lWRRAAEgoKBk5PUk1BTB'
-    'ABEgoKBkZPUkNFRBAC');
+/// Descriptor for `FlutterSnapshotModeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterSnapshotModeTypeDescriptor = $convert.base64Decode(
+    'ChdGbHV0dGVyU25hcHNob3RNb2RlVHlwZSIuCgRFbnVtEg4KClBFUk1JU1NJVkUQABIKCgZOT1'
+    'JNQUwQARIKCgZGT1JDRUQQAg==');
 
-@$core.Deprecated('Use flutterStackFitDescriptor instead')
-const FlutterStackFit$json = {
-  '1': 'FlutterStackFit',
-  '4': [FlutterStackFit_Enum$json],
+@$core.Deprecated('Use flutterStackFitTypeDescriptor instead')
+const FlutterStackFitType$json = {
+  '1': 'FlutterStackFitType',
+  '4': [FlutterStackFitType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterStackFitDescriptor instead')
-const FlutterStackFit_Enum$json = {
+@$core.Deprecated('Use flutterStackFitTypeDescriptor instead')
+const FlutterStackFitType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'LOOSE', '2': 0},
@@ -1351,19 +1353,19 @@ const FlutterStackFit_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterStackFit`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterStackFitDescriptor = $convert.base64Decode(
-    'Cg9GbHV0dGVyU3RhY2tGaXQiLgoERW51bRIJCgVMT09TRRAAEgoKBkVYUEFORBABEg8KC1BBU1'
-    'NUSFJPVUdIEAI=');
+/// Descriptor for `FlutterStackFitType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterStackFitTypeDescriptor = $convert.base64Decode(
+    'ChNGbHV0dGVyU3RhY2tGaXRUeXBlIi4KBEVudW0SCQoFTE9PU0UQABIKCgZFWFBBTkQQARIPCg'
+    'tQQVNTVEhST1VHSBAC');
 
-@$core.Deprecated('Use flutterTableCellVerticalAlignmentDescriptor instead')
-const FlutterTableCellVerticalAlignment$json = {
-  '1': 'FlutterTableCellVerticalAlignment',
-  '4': [FlutterTableCellVerticalAlignment_Enum$json],
+@$core.Deprecated('Use flutterTableCellVerticalAlignmentTypeDescriptor instead')
+const FlutterTableCellVerticalAlignmentType$json = {
+  '1': 'FlutterTableCellVerticalAlignmentType',
+  '4': [FlutterTableCellVerticalAlignmentType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterTableCellVerticalAlignmentDescriptor instead')
-const FlutterTableCellVerticalAlignment_Enum$json = {
+@$core.Deprecated('Use flutterTableCellVerticalAlignmentTypeDescriptor instead')
+const FlutterTableCellVerticalAlignmentType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'TOP', '2': 0},
@@ -1374,19 +1376,19 @@ const FlutterTableCellVerticalAlignment_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterTableCellVerticalAlignment`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterTableCellVerticalAlignmentDescriptor = $convert.base64Decode(
-    'CiFGbHV0dGVyVGFibGVDZWxsVmVydGljYWxBbGlnbm1lbnQiPwoERW51bRIHCgNUT1AQABIKCg'
-    'ZNSURETEUQARIKCgZCT1RUT00QAhIMCghCQVNFTElORRADEggKBEZJTEwQBA==');
+/// Descriptor for `FlutterTableCellVerticalAlignmentType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterTableCellVerticalAlignmentTypeDescriptor = $convert.base64Decode(
+    'CiVGbHV0dGVyVGFibGVDZWxsVmVydGljYWxBbGlnbm1lbnRUeXBlIj8KBEVudW0SBwoDVE9QEA'
+    'ASCgoGTUlERExFEAESCgoGQk9UVE9NEAISDAoIQkFTRUxJTkUQAxIICgRGSUxMEAQ=');
 
-@$core.Deprecated('Use flutterTargetPlatformDescriptor instead')
-const FlutterTargetPlatform$json = {
-  '1': 'FlutterTargetPlatform',
-  '4': [FlutterTargetPlatform_Enum$json],
+@$core.Deprecated('Use flutterTargetPlatformTypeDescriptor instead')
+const FlutterTargetPlatformType$json = {
+  '1': 'FlutterTargetPlatformType',
+  '4': [FlutterTargetPlatformType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterTargetPlatformDescriptor instead')
-const FlutterTargetPlatform_Enum$json = {
+@$core.Deprecated('Use flutterTargetPlatformTypeDescriptor instead')
+const FlutterTargetPlatformType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'ANDROID', '2': 0},
@@ -1398,19 +1400,19 @@ const FlutterTargetPlatform_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterTargetPlatform`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterTargetPlatformDescriptor = $convert.base64Decode(
-    'ChVGbHV0dGVyVGFyZ2V0UGxhdGZvcm0iUAoERW51bRILCgdBTkRST0lEEAASCwoHRlVDSFNJQR'
-    'ABEgkKBUlfT19TEAISCQoFTElOVVgQAxILCgdNQUNfT19TEAQSCwoHV0lORE9XUxAF');
+/// Descriptor for `FlutterTargetPlatformType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterTargetPlatformTypeDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyVGFyZ2V0UGxhdGZvcm1UeXBlIlAKBEVudW0SCwoHQU5EUk9JRBAAEgsKB0ZVQ0'
+    'hTSUEQARIJCgVJX09fUxACEgkKBUxJTlVYEAMSCwoHTUFDX09fUxAEEgsKB1dJTkRPV1MQBQ==');
 
-@$core.Deprecated('Use flutterTextCapitalizationDescriptor instead')
-const FlutterTextCapitalization$json = {
-  '1': 'FlutterTextCapitalization',
-  '4': [FlutterTextCapitalization_Enum$json],
+@$core.Deprecated('Use flutterTextCapitalizationTypeDescriptor instead')
+const FlutterTextCapitalizationType$json = {
+  '1': 'FlutterTextCapitalizationType',
+  '4': [FlutterTextCapitalizationType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterTextCapitalizationDescriptor instead')
-const FlutterTextCapitalization_Enum$json = {
+@$core.Deprecated('Use flutterTextCapitalizationTypeDescriptor instead')
+const FlutterTextCapitalizationType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'WORDS', '2': 0},
@@ -1420,19 +1422,19 @@ const FlutterTextCapitalization_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterTextCapitalization`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterTextCapitalizationDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyVGV4dENhcGl0YWxpemF0aW9uIjoKBEVudW0SCQoFV09SRFMQABINCglTRU5URU'
-    '5DRVMQARIOCgpDSEFSQUNURVJTEAISCAoETk9ORRAD');
+/// Descriptor for `FlutterTextCapitalizationType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterTextCapitalizationTypeDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyVGV4dENhcGl0YWxpemF0aW9uVHlwZSI6CgRFbnVtEgkKBVdPUkRTEAASDQoJU0'
+    'VOVEVOQ0VTEAESDgoKQ0hBUkFDVEVSUxACEggKBE5PTkUQAw==');
 
-@$core.Deprecated('Use flutterTextInputActionDescriptor instead')
-const FlutterTextInputAction$json = {
-  '1': 'FlutterTextInputAction',
-  '4': [FlutterTextInputAction_Enum$json],
+@$core.Deprecated('Use flutterTextInputActionTypeDescriptor instead')
+const FlutterTextInputActionType$json = {
+  '1': 'FlutterTextInputActionType',
+  '4': [FlutterTextInputActionType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterTextInputActionDescriptor instead')
-const FlutterTextInputAction_Enum$json = {
+@$core.Deprecated('Use flutterTextInputActionTypeDescriptor instead')
+const FlutterTextInputActionType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'NONE', '2': 0},
@@ -1451,21 +1453,21 @@ const FlutterTextInputAction_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterTextInputAction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterTextInputActionDescriptor = $convert.base64Decode(
-    'ChZGbHV0dGVyVGV4dElucHV0QWN0aW9uIqwBCgRFbnVtEggKBE5PTkUQABIPCgtVTlNQRUNJRk'
-    'lFRBABEggKBERPTkUQAhIGCgJHTxADEgoKBlNFQVJDSBAEEggKBFNFTkQQBRIICgRORVhUEAYS'
-    'DAoIUFJFVklPVVMQBxITCg9DT05USU5VRV9BQ1RJT04QCBIICgRKT0lOEAkSCQoFUk9VVEUQCh'
-    'ISCg5FTUVSR0VOQ1lfQ0FMTBALEgsKB05FV0xJTkUQDA==');
+/// Descriptor for `FlutterTextInputActionType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterTextInputActionTypeDescriptor = $convert.base64Decode(
+    'ChpGbHV0dGVyVGV4dElucHV0QWN0aW9uVHlwZSKsAQoERW51bRIICgROT05FEAASDwoLVU5TUE'
+    'VDSUZJRUQQARIICgRET05FEAISBgoCR08QAxIKCgZTRUFSQ0gQBBIICgRTRU5EEAUSCAoETkVY'
+    'VBAGEgwKCFBSRVZJT1VTEAcSEwoPQ09OVElOVUVfQUNUSU9OEAgSCAoESk9JThAJEgkKBVJPVV'
+    'RFEAoSEgoORU1FUkdFTkNZX0NBTEwQCxILCgdORVdMSU5FEAw=');
 
-@$core.Deprecated('Use flutterTextOverflowDescriptor instead')
-const FlutterTextOverflow$json = {
-  '1': 'FlutterTextOverflow',
-  '4': [FlutterTextOverflow_Enum$json],
+@$core.Deprecated('Use flutterTextOverflowTypeDescriptor instead')
+const FlutterTextOverflowType$json = {
+  '1': 'FlutterTextOverflowType',
+  '4': [FlutterTextOverflowType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterTextOverflowDescriptor instead')
-const FlutterTextOverflow_Enum$json = {
+@$core.Deprecated('Use flutterTextOverflowTypeDescriptor instead')
+const FlutterTextOverflowType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'CLIP', '2': 0},
@@ -1475,19 +1477,19 @@ const FlutterTextOverflow_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterTextOverflow`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterTextOverflowDescriptor = $convert.base64Decode(
-    'ChNGbHV0dGVyVGV4dE92ZXJmbG93IjUKBEVudW0SCAoEQ0xJUBAAEggKBEZBREUQARIMCghFTE'
-    'xJUFNJUxACEgsKB1ZJU0lCTEUQAw==');
+/// Descriptor for `FlutterTextOverflowType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterTextOverflowTypeDescriptor = $convert.base64Decode(
+    'ChdGbHV0dGVyVGV4dE92ZXJmbG93VHlwZSI1CgRFbnVtEggKBENMSVAQABIICgRGQURFEAESDA'
+    'oIRUxMSVBTSVMQAhILCgdWSVNJQkxFEAM=');
 
-@$core.Deprecated('Use flutterTextWidthBasisDescriptor instead')
-const FlutterTextWidthBasis$json = {
-  '1': 'FlutterTextWidthBasis',
-  '4': [FlutterTextWidthBasis_Enum$json],
+@$core.Deprecated('Use flutterTextWidthBasisTypeDescriptor instead')
+const FlutterTextWidthBasisType$json = {
+  '1': 'FlutterTextWidthBasisType',
+  '4': [FlutterTextWidthBasisType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterTextWidthBasisDescriptor instead')
-const FlutterTextWidthBasis_Enum$json = {
+@$core.Deprecated('Use flutterTextWidthBasisTypeDescriptor instead')
+const FlutterTextWidthBasisType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'PARENT', '2': 0},
@@ -1495,19 +1497,19 @@ const FlutterTextWidthBasis_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterTextWidthBasis`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterTextWidthBasisDescriptor = $convert.base64Decode(
-    'ChVGbHV0dGVyVGV4dFdpZHRoQmFzaXMiJAoERW51bRIKCgZQQVJFTlQQABIQCgxMT05HRVNUX0'
-    'xJTkUQAQ==');
+/// Descriptor for `FlutterTextWidthBasisType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterTextWidthBasisTypeDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyVGV4dFdpZHRoQmFzaXNUeXBlIiQKBEVudW0SCgoGUEFSRU5UEAASEAoMTE9OR0'
+    'VTVF9MSU5FEAE=');
 
-@$core.Deprecated('Use flutterTraversalDirectionDescriptor instead')
-const FlutterTraversalDirection$json = {
-  '1': 'FlutterTraversalDirection',
-  '4': [FlutterTraversalDirection_Enum$json],
+@$core.Deprecated('Use flutterTraversalDirectionTypeDescriptor instead')
+const FlutterTraversalDirectionType$json = {
+  '1': 'FlutterTraversalDirectionType',
+  '4': [FlutterTraversalDirectionType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterTraversalDirectionDescriptor instead')
-const FlutterTraversalDirection_Enum$json = {
+@$core.Deprecated('Use flutterTraversalDirectionTypeDescriptor instead')
+const FlutterTraversalDirectionType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'UP', '2': 0},
@@ -1517,19 +1519,19 @@ const FlutterTraversalDirection_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterTraversalDirection`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterTraversalDirectionDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyVHJhdmVyc2FsRGlyZWN0aW9uIi0KBEVudW0SBgoCVVAQABIJCgVSSUdIVBABEg'
-    'gKBERPV04QAhIICgRMRUZUEAM=');
+/// Descriptor for `FlutterTraversalDirectionType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterTraversalDirectionTypeDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyVHJhdmVyc2FsRGlyZWN0aW9uVHlwZSItCgRFbnVtEgYKAlVQEAASCQoFUklHSF'
+    'QQARIICgRET1dOEAISCAoETEVGVBAD');
 
-@$core.Deprecated('Use flutterTraversalEdgeBehaviorDescriptor instead')
-const FlutterTraversalEdgeBehavior$json = {
-  '1': 'FlutterTraversalEdgeBehavior',
-  '4': [FlutterTraversalEdgeBehavior_Enum$json],
+@$core.Deprecated('Use flutterTraversalEdgeBehaviorTypeDescriptor instead')
+const FlutterTraversalEdgeBehaviorType$json = {
+  '1': 'FlutterTraversalEdgeBehaviorType',
+  '4': [FlutterTraversalEdgeBehaviorType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterTraversalEdgeBehaviorDescriptor instead')
-const FlutterTraversalEdgeBehavior_Enum$json = {
+@$core.Deprecated('Use flutterTraversalEdgeBehaviorTypeDescriptor instead')
+const FlutterTraversalEdgeBehaviorType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'CLOSED_LOOP', '2': 0},
@@ -1537,19 +1539,19 @@ const FlutterTraversalEdgeBehavior_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterTraversalEdgeBehavior`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterTraversalEdgeBehaviorDescriptor = $convert.base64Decode(
-    'ChxGbHV0dGVyVHJhdmVyc2FsRWRnZUJlaGF2aW9yIi8KBEVudW0SDwoLQ0xPU0VEX0xPT1AQAB'
-    'IWChJMRUFWRV9GTFVUVEVSX1ZJRVcQAQ==');
+/// Descriptor for `FlutterTraversalEdgeBehaviorType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterTraversalEdgeBehaviorTypeDescriptor = $convert.base64Decode(
+    'CiBGbHV0dGVyVHJhdmVyc2FsRWRnZUJlaGF2aW9yVHlwZSIvCgRFbnVtEg8KC0NMT1NFRF9MT0'
+    '9QEAASFgoSTEVBVkVfRkxVVFRFUl9WSUVXEAE=');
 
-@$core.Deprecated('Use flutterVerticalDirectionDescriptor instead')
-const FlutterVerticalDirection$json = {
-  '1': 'FlutterVerticalDirection',
-  '4': [FlutterVerticalDirection_Enum$json],
+@$core.Deprecated('Use flutterVerticalDirectionTypeDescriptor instead')
+const FlutterVerticalDirectionType$json = {
+  '1': 'FlutterVerticalDirectionType',
+  '4': [FlutterVerticalDirectionType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterVerticalDirectionDescriptor instead')
-const FlutterVerticalDirection_Enum$json = {
+@$core.Deprecated('Use flutterVerticalDirectionTypeDescriptor instead')
+const FlutterVerticalDirectionType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'UP', '2': 0},
@@ -1557,18 +1559,19 @@ const FlutterVerticalDirection_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterVerticalDirection`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterVerticalDirectionDescriptor = $convert.base64Decode(
-    'ChhGbHV0dGVyVmVydGljYWxEaXJlY3Rpb24iGAoERW51bRIGCgJVUBAAEggKBERPV04QAQ==');
+/// Descriptor for `FlutterVerticalDirectionType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterVerticalDirectionTypeDescriptor = $convert.base64Decode(
+    'ChxGbHV0dGVyVmVydGljYWxEaXJlY3Rpb25UeXBlIhgKBEVudW0SBgoCVVAQABIICgRET1dOEA'
+    'E=');
 
-@$core.Deprecated('Use flutterWrapAlignmentDescriptor instead')
-const FlutterWrapAlignment$json = {
-  '1': 'FlutterWrapAlignment',
-  '4': [FlutterWrapAlignment_Enum$json],
+@$core.Deprecated('Use flutterWrapAlignmentTypeDescriptor instead')
+const FlutterWrapAlignmentType$json = {
+  '1': 'FlutterWrapAlignmentType',
+  '4': [FlutterWrapAlignmentType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterWrapAlignmentDescriptor instead')
-const FlutterWrapAlignment_Enum$json = {
+@$core.Deprecated('Use flutterWrapAlignmentTypeDescriptor instead')
+const FlutterWrapAlignmentType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'START', '2': 0},
@@ -1580,20 +1583,20 @@ const FlutterWrapAlignment_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterWrapAlignment`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterWrapAlignmentDescriptor = $convert.base64Decode(
-    'ChRGbHV0dGVyV3JhcEFsaWdubWVudCJdCgRFbnVtEgkKBVNUQVJUEAASBwoDRU5EEAESCgoGQ0'
-    'VOVEVSEAISEQoNU1BBQ0VfQkVUV0VFThADEhAKDFNQQUNFX0FST1VORBAEEhAKDFNQQUNFX0VW'
-    'RU5MWRAF');
+/// Descriptor for `FlutterWrapAlignmentType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterWrapAlignmentTypeDescriptor = $convert.base64Decode(
+    'ChhGbHV0dGVyV3JhcEFsaWdubWVudFR5cGUiXQoERW51bRIJCgVTVEFSVBAAEgcKA0VORBABEg'
+    'oKBkNFTlRFUhACEhEKDVNQQUNFX0JFVFdFRU4QAxIQCgxTUEFDRV9BUk9VTkQQBBIQCgxTUEFD'
+    'RV9FVkVOTFkQBQ==');
 
-@$core.Deprecated('Use flutterWrapCrossAlignmentDescriptor instead')
-const FlutterWrapCrossAlignment$json = {
-  '1': 'FlutterWrapCrossAlignment',
-  '4': [FlutterWrapCrossAlignment_Enum$json],
+@$core.Deprecated('Use flutterWrapCrossAlignmentTypeDescriptor instead')
+const FlutterWrapCrossAlignmentType$json = {
+  '1': 'FlutterWrapCrossAlignmentType',
+  '4': [FlutterWrapCrossAlignmentType_Enum$json],
 };
 
-@$core.Deprecated('Use flutterWrapCrossAlignmentDescriptor instead')
-const FlutterWrapCrossAlignment_Enum$json = {
+@$core.Deprecated('Use flutterWrapCrossAlignmentTypeDescriptor instead')
+const FlutterWrapCrossAlignmentType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'START', '2': 0},
@@ -1602,19 +1605,19 @@ const FlutterWrapCrossAlignment_Enum$json = {
   ],
 };
 
-/// Descriptor for `FlutterWrapCrossAlignment`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List flutterWrapCrossAlignmentDescriptor = $convert.base64Decode(
-    'ChlGbHV0dGVyV3JhcENyb3NzQWxpZ25tZW50IiYKBEVudW0SCQoFU1RBUlQQABIHCgNFTkQQAR'
-    'IKCgZDRU5URVIQAg==');
+/// Descriptor for `FlutterWrapCrossAlignmentType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterWrapCrossAlignmentTypeDescriptor = $convert.base64Decode(
+    'Ch1GbHV0dGVyV3JhcENyb3NzQWxpZ25tZW50VHlwZSImCgRFbnVtEgkKBVNUQVJUEAASBwoDRU'
+    '5EEAESCgoGQ0VOVEVSEAI=');
 
-@$core.Deprecated('Use materialBottomNavigationBarLandscapeLayoutDescriptor instead')
-const MaterialBottomNavigationBarLandscapeLayout$json = {
-  '1': 'MaterialBottomNavigationBarLandscapeLayout',
-  '4': [MaterialBottomNavigationBarLandscapeLayout_Enum$json],
+@$core.Deprecated('Use materialBottomNavigationBarLandscapeLayoutTypeDescriptor instead')
+const MaterialBottomNavigationBarLandscapeLayoutType$json = {
+  '1': 'MaterialBottomNavigationBarLandscapeLayoutType',
+  '4': [MaterialBottomNavigationBarLandscapeLayoutType_Enum$json],
 };
 
-@$core.Deprecated('Use materialBottomNavigationBarLandscapeLayoutDescriptor instead')
-const MaterialBottomNavigationBarLandscapeLayout_Enum$json = {
+@$core.Deprecated('Use materialBottomNavigationBarLandscapeLayoutTypeDescriptor instead')
+const MaterialBottomNavigationBarLandscapeLayoutType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'SPREAD', '2': 0},
@@ -1623,19 +1626,19 @@ const MaterialBottomNavigationBarLandscapeLayout_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialBottomNavigationBarLandscapeLayout`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialBottomNavigationBarLandscapeLayoutDescriptor = $convert.base64Decode(
-    'CipNYXRlcmlhbEJvdHRvbU5hdmlnYXRpb25CYXJMYW5kc2NhcGVMYXlvdXQiLAoERW51bRIKCg'
-    'ZTUFJFQUQQABIMCghDRU5URVJFRBABEgoKBkxJTkVBUhAC');
+/// Descriptor for `MaterialBottomNavigationBarLandscapeLayoutType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialBottomNavigationBarLandscapeLayoutTypeDescriptor = $convert.base64Decode(
+    'Ci5NYXRlcmlhbEJvdHRvbU5hdmlnYXRpb25CYXJMYW5kc2NhcGVMYXlvdXRUeXBlIiwKBEVudW'
+    '0SCgoGU1BSRUFEEAASDAoIQ0VOVEVSRUQQARIKCgZMSU5FQVIQAg==');
 
-@$core.Deprecated('Use materialBottomNavigationBarTypeDescriptor instead')
-const MaterialBottomNavigationBarType$json = {
-  '1': 'MaterialBottomNavigationBarType',
-  '4': [MaterialBottomNavigationBarType_Enum$json],
+@$core.Deprecated('Use materialBottomNavigationBarTypeTypeDescriptor instead')
+const MaterialBottomNavigationBarTypeType$json = {
+  '1': 'MaterialBottomNavigationBarTypeType',
+  '4': [MaterialBottomNavigationBarTypeType_Enum$json],
 };
 
-@$core.Deprecated('Use materialBottomNavigationBarTypeDescriptor instead')
-const MaterialBottomNavigationBarType_Enum$json = {
+@$core.Deprecated('Use materialBottomNavigationBarTypeTypeDescriptor instead')
+const MaterialBottomNavigationBarTypeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'FIXED', '2': 0},
@@ -1643,19 +1646,19 @@ const MaterialBottomNavigationBarType_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialBottomNavigationBarType`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialBottomNavigationBarTypeDescriptor = $convert.base64Decode(
-    'Ch9NYXRlcmlhbEJvdHRvbU5hdmlnYXRpb25CYXJUeXBlIh8KBEVudW0SCQoFRklYRUQQABIMCg'
-    'hTSElGVElORxAB');
+/// Descriptor for `MaterialBottomNavigationBarTypeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialBottomNavigationBarTypeTypeDescriptor = $convert.base64Decode(
+    'CiNNYXRlcmlhbEJvdHRvbU5hdmlnYXRpb25CYXJUeXBlVHlwZSIfCgRFbnVtEgkKBUZJWEVEEA'
+    'ASDAoIU0hJRlRJTkcQAQ==');
 
-@$core.Deprecated('Use materialButtonBarLayoutBehaviorDescriptor instead')
-const MaterialButtonBarLayoutBehavior$json = {
-  '1': 'MaterialButtonBarLayoutBehavior',
-  '4': [MaterialButtonBarLayoutBehavior_Enum$json],
+@$core.Deprecated('Use materialButtonBarLayoutBehaviorTypeDescriptor instead')
+const MaterialButtonBarLayoutBehaviorType$json = {
+  '1': 'MaterialButtonBarLayoutBehaviorType',
+  '4': [MaterialButtonBarLayoutBehaviorType_Enum$json],
 };
 
-@$core.Deprecated('Use materialButtonBarLayoutBehaviorDescriptor instead')
-const MaterialButtonBarLayoutBehavior_Enum$json = {
+@$core.Deprecated('Use materialButtonBarLayoutBehaviorTypeDescriptor instead')
+const MaterialButtonBarLayoutBehaviorType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'CONSTRAINED', '2': 0},
@@ -1663,19 +1666,19 @@ const MaterialButtonBarLayoutBehavior_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialButtonBarLayoutBehavior`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialButtonBarLayoutBehaviorDescriptor = $convert.base64Decode(
-    'Ch9NYXRlcmlhbEJ1dHRvbkJhckxheW91dEJlaGF2aW9yIiMKBEVudW0SDwoLQ09OU1RSQUlORU'
-    'QQABIKCgZQQURERUQQAQ==');
+/// Descriptor for `MaterialButtonBarLayoutBehaviorType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialButtonBarLayoutBehaviorTypeDescriptor = $convert.base64Decode(
+    'CiNNYXRlcmlhbEJ1dHRvbkJhckxheW91dEJlaGF2aW9yVHlwZSIjCgRFbnVtEg8KC0NPTlNUUk'
+    'FJTkVEEAASCgoGUEFEREVEEAE=');
 
-@$core.Deprecated('Use materialButtonTextThemeDescriptor instead')
-const MaterialButtonTextTheme$json = {
-  '1': 'MaterialButtonTextTheme',
-  '4': [MaterialButtonTextTheme_Enum$json],
+@$core.Deprecated('Use materialButtonTextThemeTypeDescriptor instead')
+const MaterialButtonTextThemeType$json = {
+  '1': 'MaterialButtonTextThemeType',
+  '4': [MaterialButtonTextThemeType_Enum$json],
 };
 
-@$core.Deprecated('Use materialButtonTextThemeDescriptor instead')
-const MaterialButtonTextTheme_Enum$json = {
+@$core.Deprecated('Use materialButtonTextThemeTypeDescriptor instead')
+const MaterialButtonTextThemeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'NORMAL', '2': 0},
@@ -1684,19 +1687,19 @@ const MaterialButtonTextTheme_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialButtonTextTheme`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialButtonTextThemeDescriptor = $convert.base64Decode(
-    'ChdNYXRlcmlhbEJ1dHRvblRleHRUaGVtZSIrCgRFbnVtEgoKBk5PUk1BTBAAEgoKBkFDQ0VOVB'
-    'ABEgsKB1BSSU1BUlkQAg==');
+/// Descriptor for `MaterialButtonTextThemeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialButtonTextThemeTypeDescriptor = $convert.base64Decode(
+    'ChtNYXRlcmlhbEJ1dHRvblRleHRUaGVtZVR5cGUiKwoERW51bRIKCgZOT1JNQUwQABIKCgZBQ0'
+    'NFTlQQARILCgdQUklNQVJZEAI=');
 
-@$core.Deprecated('Use materialCollapseModeDescriptor instead')
-const MaterialCollapseMode$json = {
-  '1': 'MaterialCollapseMode',
-  '4': [MaterialCollapseMode_Enum$json],
+@$core.Deprecated('Use materialCollapseModeTypeDescriptor instead')
+const MaterialCollapseModeType$json = {
+  '1': 'MaterialCollapseModeType',
+  '4': [MaterialCollapseModeType_Enum$json],
 };
 
-@$core.Deprecated('Use materialCollapseModeDescriptor instead')
-const MaterialCollapseMode_Enum$json = {
+@$core.Deprecated('Use materialCollapseModeTypeDescriptor instead')
+const MaterialCollapseModeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'PARALLAX', '2': 0},
@@ -1705,19 +1708,19 @@ const MaterialCollapseMode_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialCollapseMode`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialCollapseModeDescriptor = $convert.base64Decode(
-    'ChRNYXRlcmlhbENvbGxhcHNlTW9kZSInCgRFbnVtEgwKCFBBUkFMTEFYEAASBwoDUElOEAESCA'
-    'oETk9ORRAC');
+/// Descriptor for `MaterialCollapseModeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialCollapseModeTypeDescriptor = $convert.base64Decode(
+    'ChhNYXRlcmlhbENvbGxhcHNlTW9kZVR5cGUiJwoERW51bRIMCghQQVJBTExBWBAAEgcKA1BJTh'
+    'ABEggKBE5PTkUQAg==');
 
-@$core.Deprecated('Use materialDatePickerEntryModeDescriptor instead')
-const MaterialDatePickerEntryMode$json = {
-  '1': 'MaterialDatePickerEntryMode',
-  '4': [MaterialDatePickerEntryMode_Enum$json],
+@$core.Deprecated('Use materialDatePickerEntryModeTypeDescriptor instead')
+const MaterialDatePickerEntryModeType$json = {
+  '1': 'MaterialDatePickerEntryModeType',
+  '4': [MaterialDatePickerEntryModeType_Enum$json],
 };
 
-@$core.Deprecated('Use materialDatePickerEntryModeDescriptor instead')
-const MaterialDatePickerEntryMode_Enum$json = {
+@$core.Deprecated('Use materialDatePickerEntryModeTypeDescriptor instead')
+const MaterialDatePickerEntryModeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'CALENDAR', '2': 0},
@@ -1727,19 +1730,19 @@ const MaterialDatePickerEntryMode_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialDatePickerEntryMode`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialDatePickerEntryModeDescriptor = $convert.base64Decode(
-    'ChtNYXRlcmlhbERhdGVQaWNrZXJFbnRyeU1vZGUiQgoERW51bRIMCghDQUxFTkRBUhAAEgkKBU'
-    'lOUFVUEAESEQoNQ0FMRU5EQVJfT05MWRACEg4KCklOUFVUX09OTFkQAw==');
+/// Descriptor for `MaterialDatePickerEntryModeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialDatePickerEntryModeTypeDescriptor = $convert.base64Decode(
+    'Ch9NYXRlcmlhbERhdGVQaWNrZXJFbnRyeU1vZGVUeXBlIkIKBEVudW0SDAoIQ0FMRU5EQVIQAB'
+    'IJCgVJTlBVVBABEhEKDUNBTEVOREFSX09OTFkQAhIOCgpJTlBVVF9PTkxZEAM=');
 
-@$core.Deprecated('Use materialDatePickerModeDescriptor instead')
-const MaterialDatePickerMode$json = {
-  '1': 'MaterialDatePickerMode',
-  '4': [MaterialDatePickerMode_Enum$json],
+@$core.Deprecated('Use materialDatePickerModeTypeDescriptor instead')
+const MaterialDatePickerModeType$json = {
+  '1': 'MaterialDatePickerModeType',
+  '4': [MaterialDatePickerModeType_Enum$json],
 };
 
-@$core.Deprecated('Use materialDatePickerModeDescriptor instead')
-const MaterialDatePickerMode_Enum$json = {
+@$core.Deprecated('Use materialDatePickerModeTypeDescriptor instead')
+const MaterialDatePickerModeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'DAY', '2': 0},
@@ -1747,18 +1750,19 @@ const MaterialDatePickerMode_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialDatePickerMode`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialDatePickerModeDescriptor = $convert.base64Decode(
-    'ChZNYXRlcmlhbERhdGVQaWNrZXJNb2RlIhkKBEVudW0SBwoDREFZEAASCAoEWUVBUhAB');
+/// Descriptor for `MaterialDatePickerModeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialDatePickerModeTypeDescriptor = $convert.base64Decode(
+    'ChpNYXRlcmlhbERhdGVQaWNrZXJNb2RlVHlwZSIZCgRFbnVtEgcKA0RBWRAAEggKBFlFQVIQAQ'
+    '==');
 
-@$core.Deprecated('Use materialDrawerAlignmentDescriptor instead')
-const MaterialDrawerAlignment$json = {
-  '1': 'MaterialDrawerAlignment',
-  '4': [MaterialDrawerAlignment_Enum$json],
+@$core.Deprecated('Use materialDrawerAlignmentTypeDescriptor instead')
+const MaterialDrawerAlignmentType$json = {
+  '1': 'MaterialDrawerAlignmentType',
+  '4': [MaterialDrawerAlignmentType_Enum$json],
 };
 
-@$core.Deprecated('Use materialDrawerAlignmentDescriptor instead')
-const MaterialDrawerAlignment_Enum$json = {
+@$core.Deprecated('Use materialDrawerAlignmentTypeDescriptor instead')
+const MaterialDrawerAlignmentType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'START', '2': 0},
@@ -1766,18 +1770,19 @@ const MaterialDrawerAlignment_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialDrawerAlignment`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialDrawerAlignmentDescriptor = $convert.base64Decode(
-    'ChdNYXRlcmlhbERyYXdlckFsaWdubWVudCIaCgRFbnVtEgkKBVNUQVJUEAASBwoDRU5EEAE=');
+/// Descriptor for `MaterialDrawerAlignmentType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialDrawerAlignmentTypeDescriptor = $convert.base64Decode(
+    'ChtNYXRlcmlhbERyYXdlckFsaWdubWVudFR5cGUiGgoERW51bRIJCgVTVEFSVBAAEgcKA0VORB'
+    'AB');
 
-@$core.Deprecated('Use materialFloatingLabelBehaviorDescriptor instead')
-const MaterialFloatingLabelBehavior$json = {
-  '1': 'MaterialFloatingLabelBehavior',
-  '4': [MaterialFloatingLabelBehavior_Enum$json],
+@$core.Deprecated('Use materialFloatingLabelBehaviorTypeDescriptor instead')
+const MaterialFloatingLabelBehaviorType$json = {
+  '1': 'MaterialFloatingLabelBehaviorType',
+  '4': [MaterialFloatingLabelBehaviorType_Enum$json],
 };
 
-@$core.Deprecated('Use materialFloatingLabelBehaviorDescriptor instead')
-const MaterialFloatingLabelBehavior_Enum$json = {
+@$core.Deprecated('Use materialFloatingLabelBehaviorTypeDescriptor instead')
+const MaterialFloatingLabelBehaviorType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'NEVER', '2': 0},
@@ -1786,19 +1791,19 @@ const MaterialFloatingLabelBehavior_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialFloatingLabelBehavior`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialFloatingLabelBehaviorDescriptor = $convert.base64Decode(
-    'Ch1NYXRlcmlhbEZsb2F0aW5nTGFiZWxCZWhhdmlvciInCgRFbnVtEgkKBU5FVkVSEAASCAoEQV'
-    'VUTxABEgoKBkFMV0FZUxAC');
+/// Descriptor for `MaterialFloatingLabelBehaviorType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialFloatingLabelBehaviorTypeDescriptor = $convert.base64Decode(
+    'CiFNYXRlcmlhbEZsb2F0aW5nTGFiZWxCZWhhdmlvclR5cGUiJwoERW51bRIJCgVORVZFUhAAEg'
+    'gKBEFVVE8QARIKCgZBTFdBWVMQAg==');
 
-@$core.Deprecated('Use materialListTileControlAffinityDescriptor instead')
-const MaterialListTileControlAffinity$json = {
-  '1': 'MaterialListTileControlAffinity',
-  '4': [MaterialListTileControlAffinity_Enum$json],
+@$core.Deprecated('Use materialListTileControlAffinityTypeDescriptor instead')
+const MaterialListTileControlAffinityType$json = {
+  '1': 'MaterialListTileControlAffinityType',
+  '4': [MaterialListTileControlAffinityType_Enum$json],
 };
 
-@$core.Deprecated('Use materialListTileControlAffinityDescriptor instead')
-const MaterialListTileControlAffinity_Enum$json = {
+@$core.Deprecated('Use materialListTileControlAffinityTypeDescriptor instead')
+const MaterialListTileControlAffinityType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'LEADING', '2': 0},
@@ -1807,19 +1812,19 @@ const MaterialListTileControlAffinity_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialListTileControlAffinity`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialListTileControlAffinityDescriptor = $convert.base64Decode(
-    'Ch9NYXRlcmlhbExpc3RUaWxlQ29udHJvbEFmZmluaXR5Ii8KBEVudW0SCwoHTEVBRElORxAAEg'
-    'wKCFRSQUlMSU5HEAESDAoIUExBVEZPUk0QAg==');
+/// Descriptor for `MaterialListTileControlAffinityType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialListTileControlAffinityTypeDescriptor = $convert.base64Decode(
+    'CiNNYXRlcmlhbExpc3RUaWxlQ29udHJvbEFmZmluaXR5VHlwZSIvCgRFbnVtEgsKB0xFQURJTk'
+    'cQABIMCghUUkFJTElORxABEgwKCFBMQVRGT1JNEAI=');
 
-@$core.Deprecated('Use materialListTileStyleDescriptor instead')
-const MaterialListTileStyle$json = {
-  '1': 'MaterialListTileStyle',
-  '4': [MaterialListTileStyle_Enum$json],
+@$core.Deprecated('Use materialListTileStyleTypeDescriptor instead')
+const MaterialListTileStyleType$json = {
+  '1': 'MaterialListTileStyleType',
+  '4': [MaterialListTileStyleType_Enum$json],
 };
 
-@$core.Deprecated('Use materialListTileStyleDescriptor instead')
-const MaterialListTileStyle_Enum$json = {
+@$core.Deprecated('Use materialListTileStyleTypeDescriptor instead')
+const MaterialListTileStyleType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'LIST', '2': 0},
@@ -1827,18 +1832,19 @@ const MaterialListTileStyle_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialListTileStyle`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialListTileStyleDescriptor = $convert.base64Decode(
-    'ChVNYXRlcmlhbExpc3RUaWxlU3R5bGUiHAoERW51bRIICgRMSVNUEAASCgoGRFJBV0VSEAE=');
+/// Descriptor for `MaterialListTileStyleType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialListTileStyleTypeDescriptor = $convert.base64Decode(
+    'ChlNYXRlcmlhbExpc3RUaWxlU3R5bGVUeXBlIhwKBEVudW0SCAoETElTVBAAEgoKBkRSQVdFUh'
+    'AB');
 
-@$core.Deprecated('Use materialListTileTitleAlignmentDescriptor instead')
-const MaterialListTileTitleAlignment$json = {
-  '1': 'MaterialListTileTitleAlignment',
-  '4': [MaterialListTileTitleAlignment_Enum$json],
+@$core.Deprecated('Use materialListTileTitleAlignmentTypeDescriptor instead')
+const MaterialListTileTitleAlignmentType$json = {
+  '1': 'MaterialListTileTitleAlignmentType',
+  '4': [MaterialListTileTitleAlignmentType_Enum$json],
 };
 
-@$core.Deprecated('Use materialListTileTitleAlignmentDescriptor instead')
-const MaterialListTileTitleAlignment_Enum$json = {
+@$core.Deprecated('Use materialListTileTitleAlignmentTypeDescriptor instead')
+const MaterialListTileTitleAlignmentType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'THREE_LINE', '2': 0},
@@ -1849,19 +1855,19 @@ const MaterialListTileTitleAlignment_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialListTileTitleAlignment`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialListTileTitleAlignmentDescriptor = $convert.base64Decode(
-    'Ch5NYXRlcmlhbExpc3RUaWxlVGl0bGVBbGlnbm1lbnQiSQoERW51bRIOCgpUSFJFRV9MSU5FEA'
-    'ASEAoMVElUTEVfSEVJR0hUEAESBwoDVE9QEAISCgoGQ0VOVEVSEAMSCgoGQk9UVE9NEAQ=');
+/// Descriptor for `MaterialListTileTitleAlignmentType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialListTileTitleAlignmentTypeDescriptor = $convert.base64Decode(
+    'CiJNYXRlcmlhbExpc3RUaWxlVGl0bGVBbGlnbm1lbnRUeXBlIkkKBEVudW0SDgoKVEhSRUVfTE'
+    'lORRAAEhAKDFRJVExFX0hFSUdIVBABEgcKA1RPUBACEgoKBkNFTlRFUhADEgoKBkJPVFRPTRAE');
 
-@$core.Deprecated('Use materialMaterialTapTargetSizeDescriptor instead')
-const MaterialMaterialTapTargetSize$json = {
-  '1': 'MaterialMaterialTapTargetSize',
-  '4': [MaterialMaterialTapTargetSize_Enum$json],
+@$core.Deprecated('Use materialMaterialTapTargetSizeTypeDescriptor instead')
+const MaterialMaterialTapTargetSizeType$json = {
+  '1': 'MaterialMaterialTapTargetSizeType',
+  '4': [MaterialMaterialTapTargetSizeType_Enum$json],
 };
 
-@$core.Deprecated('Use materialMaterialTapTargetSizeDescriptor instead')
-const MaterialMaterialTapTargetSize_Enum$json = {
+@$core.Deprecated('Use materialMaterialTapTargetSizeTypeDescriptor instead')
+const MaterialMaterialTapTargetSizeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'PADDED', '2': 0},
@@ -1869,19 +1875,19 @@ const MaterialMaterialTapTargetSize_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialMaterialTapTargetSize`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialMaterialTapTargetSizeDescriptor = $convert.base64Decode(
-    'Ch1NYXRlcmlhbE1hdGVyaWFsVGFwVGFyZ2V0U2l6ZSIjCgRFbnVtEgoKBlBBRERFRBAAEg8KC1'
-    'NIUklOS19XUkFQEAE=');
+/// Descriptor for `MaterialMaterialTapTargetSizeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialMaterialTapTargetSizeTypeDescriptor = $convert.base64Decode(
+    'CiFNYXRlcmlhbE1hdGVyaWFsVGFwVGFyZ2V0U2l6ZVR5cGUiIwoERW51bRIKCgZQQURERUQQAB'
+    'IPCgtTSFJJTktfV1JBUBAB');
 
-@$core.Deprecated('Use materialMaterialTypeDescriptor instead')
-const MaterialMaterialType$json = {
-  '1': 'MaterialMaterialType',
-  '4': [MaterialMaterialType_Enum$json],
+@$core.Deprecated('Use materialMaterialTypeTypeDescriptor instead')
+const MaterialMaterialTypeType$json = {
+  '1': 'MaterialMaterialTypeType',
+  '4': [MaterialMaterialTypeType_Enum$json],
 };
 
-@$core.Deprecated('Use materialMaterialTypeDescriptor instead')
-const MaterialMaterialType_Enum$json = {
+@$core.Deprecated('Use materialMaterialTypeTypeDescriptor instead')
+const MaterialMaterialTypeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'CANVAS', '2': 0},
@@ -1892,19 +1898,19 @@ const MaterialMaterialType_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialMaterialType`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialMaterialTypeDescriptor = $convert.base64Decode(
-    'ChRNYXRlcmlhbE1hdGVyaWFsVHlwZSJGCgRFbnVtEgoKBkNBTlZBUxAAEggKBENBUkQQARIKCg'
-    'ZDSVJDTEUQAhIKCgZCVVRUT04QAxIQCgxUUkFOU1BBUkVOQ1kQBA==');
+/// Descriptor for `MaterialMaterialTypeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialMaterialTypeTypeDescriptor = $convert.base64Decode(
+    'ChhNYXRlcmlhbE1hdGVyaWFsVHlwZVR5cGUiRgoERW51bRIKCgZDQU5WQVMQABIICgRDQVJEEA'
+    'ESCgoGQ0lSQ0xFEAISCgoGQlVUVE9OEAMSEAoMVFJBTlNQQVJFTkNZEAQ=');
 
-@$core.Deprecated('Use materialNavigationDestinationLabelBehaviorDescriptor instead')
-const MaterialNavigationDestinationLabelBehavior$json = {
-  '1': 'MaterialNavigationDestinationLabelBehavior',
-  '4': [MaterialNavigationDestinationLabelBehavior_Enum$json],
+@$core.Deprecated('Use materialNavigationDestinationLabelBehaviorTypeDescriptor instead')
+const MaterialNavigationDestinationLabelBehaviorType$json = {
+  '1': 'MaterialNavigationDestinationLabelBehaviorType',
+  '4': [MaterialNavigationDestinationLabelBehaviorType_Enum$json],
 };
 
-@$core.Deprecated('Use materialNavigationDestinationLabelBehaviorDescriptor instead')
-const MaterialNavigationDestinationLabelBehavior_Enum$json = {
+@$core.Deprecated('Use materialNavigationDestinationLabelBehaviorTypeDescriptor instead')
+const MaterialNavigationDestinationLabelBehaviorType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'ALWAYS_SHOW', '2': 0},
@@ -1913,19 +1919,20 @@ const MaterialNavigationDestinationLabelBehavior_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialNavigationDestinationLabelBehavior`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialNavigationDestinationLabelBehaviorDescriptor = $convert.base64Decode(
-    'CipNYXRlcmlhbE5hdmlnYXRpb25EZXN0aW5hdGlvbkxhYmVsQmVoYXZpb3IiQAoERW51bRIPCg'
-    'tBTFdBWVNfU0hPVxAAEg8KC0FMV0FZU19ISURFEAESFgoST05MWV9TSE9XX1NFTEVDVEVEEAI=');
+/// Descriptor for `MaterialNavigationDestinationLabelBehaviorType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialNavigationDestinationLabelBehaviorTypeDescriptor = $convert.base64Decode(
+    'Ci5NYXRlcmlhbE5hdmlnYXRpb25EZXN0aW5hdGlvbkxhYmVsQmVoYXZpb3JUeXBlIkAKBEVudW'
+    '0SDwoLQUxXQVlTX1NIT1cQABIPCgtBTFdBWVNfSElERRABEhYKEk9OTFlfU0hPV19TRUxFQ1RF'
+    'RBAC');
 
-@$core.Deprecated('Use materialNavigationRailLabelTypeDescriptor instead')
-const MaterialNavigationRailLabelType$json = {
-  '1': 'MaterialNavigationRailLabelType',
-  '4': [MaterialNavigationRailLabelType_Enum$json],
+@$core.Deprecated('Use materialNavigationRailLabelTypeTypeDescriptor instead')
+const MaterialNavigationRailLabelTypeType$json = {
+  '1': 'MaterialNavigationRailLabelTypeType',
+  '4': [MaterialNavigationRailLabelTypeType_Enum$json],
 };
 
-@$core.Deprecated('Use materialNavigationRailLabelTypeDescriptor instead')
-const MaterialNavigationRailLabelType_Enum$json = {
+@$core.Deprecated('Use materialNavigationRailLabelTypeTypeDescriptor instead')
+const MaterialNavigationRailLabelTypeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'NONE', '2': 0},
@@ -1934,19 +1941,19 @@ const MaterialNavigationRailLabelType_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialNavigationRailLabelType`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialNavigationRailLabelTypeDescriptor = $convert.base64Decode(
-    'Ch9NYXRlcmlhbE5hdmlnYXRpb25SYWlsTGFiZWxUeXBlIicKBEVudW0SCAoETk9ORRAAEgwKCF'
-    'NFTEVDVEVEEAESBwoDQUxMEAI=');
+/// Descriptor for `MaterialNavigationRailLabelTypeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialNavigationRailLabelTypeTypeDescriptor = $convert.base64Decode(
+    'CiNNYXRlcmlhbE5hdmlnYXRpb25SYWlsTGFiZWxUeXBlVHlwZSInCgRFbnVtEggKBE5PTkUQAB'
+    'IMCghTRUxFQ1RFRBABEgcKA0FMTBAC');
 
-@$core.Deprecated('Use materialPopupMenuPositionDescriptor instead')
-const MaterialPopupMenuPosition$json = {
-  '1': 'MaterialPopupMenuPosition',
-  '4': [MaterialPopupMenuPosition_Enum$json],
+@$core.Deprecated('Use materialPopupMenuPositionTypeDescriptor instead')
+const MaterialPopupMenuPositionType$json = {
+  '1': 'MaterialPopupMenuPositionType',
+  '4': [MaterialPopupMenuPositionType_Enum$json],
 };
 
-@$core.Deprecated('Use materialPopupMenuPositionDescriptor instead')
-const MaterialPopupMenuPosition_Enum$json = {
+@$core.Deprecated('Use materialPopupMenuPositionTypeDescriptor instead')
+const MaterialPopupMenuPositionType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'OVER', '2': 0},
@@ -1954,19 +1961,19 @@ const MaterialPopupMenuPosition_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialPopupMenuPosition`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialPopupMenuPositionDescriptor = $convert.base64Decode(
-    'ChlNYXRlcmlhbFBvcHVwTWVudVBvc2l0aW9uIhsKBEVudW0SCAoET1ZFUhAAEgkKBVVOREVSEA'
-    'E=');
+/// Descriptor for `MaterialPopupMenuPositionType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialPopupMenuPositionTypeDescriptor = $convert.base64Decode(
+    'Ch1NYXRlcmlhbFBvcHVwTWVudVBvc2l0aW9uVHlwZSIbCgRFbnVtEggKBE9WRVIQABIJCgVVTk'
+    'RFUhAB');
 
-@$core.Deprecated('Use materialShowValueIndicatorDescriptor instead')
-const MaterialShowValueIndicator$json = {
-  '1': 'MaterialShowValueIndicator',
-  '4': [MaterialShowValueIndicator_Enum$json],
+@$core.Deprecated('Use materialShowValueIndicatorTypeDescriptor instead')
+const MaterialShowValueIndicatorType$json = {
+  '1': 'MaterialShowValueIndicatorType',
+  '4': [MaterialShowValueIndicatorType_Enum$json],
 };
 
-@$core.Deprecated('Use materialShowValueIndicatorDescriptor instead')
-const MaterialShowValueIndicator_Enum$json = {
+@$core.Deprecated('Use materialShowValueIndicatorTypeDescriptor instead')
+const MaterialShowValueIndicatorType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'ONLY_FOR_DISCRETE', '2': 0},
@@ -1976,19 +1983,19 @@ const MaterialShowValueIndicator_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialShowValueIndicator`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialShowValueIndicatorDescriptor = $convert.base64Decode(
-    'ChpNYXRlcmlhbFNob3dWYWx1ZUluZGljYXRvciJNCgRFbnVtEhUKEU9OTFlfRk9SX0RJU0NSRV'
-    'RFEAASFwoTT05MWV9GT1JfQ09OVElOVU9VUxABEgoKBkFMV0FZUxACEgkKBU5FVkVSEAM=');
+/// Descriptor for `MaterialShowValueIndicatorType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialShowValueIndicatorTypeDescriptor = $convert.base64Decode(
+    'Ch5NYXRlcmlhbFNob3dWYWx1ZUluZGljYXRvclR5cGUiTQoERW51bRIVChFPTkxZX0ZPUl9ESV'
+    'NDUkVURRAAEhcKE09OTFlfRk9SX0NPTlRJTlVPVVMQARIKCgZBTFdBWVMQAhIJCgVORVZFUhAD');
 
-@$core.Deprecated('Use materialSliderInteractionDescriptor instead')
-const MaterialSliderInteraction$json = {
-  '1': 'MaterialSliderInteraction',
-  '4': [MaterialSliderInteraction_Enum$json],
+@$core.Deprecated('Use materialSliderInteractionTypeDescriptor instead')
+const MaterialSliderInteractionType$json = {
+  '1': 'MaterialSliderInteractionType',
+  '4': [MaterialSliderInteractionType_Enum$json],
 };
 
-@$core.Deprecated('Use materialSliderInteractionDescriptor instead')
-const MaterialSliderInteraction_Enum$json = {
+@$core.Deprecated('Use materialSliderInteractionTypeDescriptor instead')
+const MaterialSliderInteractionType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'TAP_AND_SLIDE', '2': 0},
@@ -1998,19 +2005,19 @@ const MaterialSliderInteraction_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialSliderInteraction`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialSliderInteractionDescriptor = $convert.base64Decode(
-    'ChlNYXRlcmlhbFNsaWRlckludGVyYWN0aW9uIkgKBEVudW0SEQoNVEFQX0FORF9TTElERRAAEg'
-    'wKCFRBUF9PTkxZEAESDgoKU0xJREVfT05MWRACEg8KC1NMSURFX1RIVU1CEAM=');
+/// Descriptor for `MaterialSliderInteractionType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialSliderInteractionTypeDescriptor = $convert.base64Decode(
+    'Ch1NYXRlcmlhbFNsaWRlckludGVyYWN0aW9uVHlwZSJICgRFbnVtEhEKDVRBUF9BTkRfU0xJRE'
+    'UQABIMCghUQVBfT05MWRABEg4KClNMSURFX09OTFkQAhIPCgtTTElERV9USFVNQhAD');
 
-@$core.Deprecated('Use materialSnackBarBehaviorDescriptor instead')
-const MaterialSnackBarBehavior$json = {
-  '1': 'MaterialSnackBarBehavior',
-  '4': [MaterialSnackBarBehavior_Enum$json],
+@$core.Deprecated('Use materialSnackBarBehaviorTypeDescriptor instead')
+const MaterialSnackBarBehaviorType$json = {
+  '1': 'MaterialSnackBarBehaviorType',
+  '4': [MaterialSnackBarBehaviorType_Enum$json],
 };
 
-@$core.Deprecated('Use materialSnackBarBehaviorDescriptor instead')
-const MaterialSnackBarBehavior_Enum$json = {
+@$core.Deprecated('Use materialSnackBarBehaviorTypeDescriptor instead')
+const MaterialSnackBarBehaviorType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'FIXED', '2': 0},
@@ -2018,19 +2025,19 @@ const MaterialSnackBarBehavior_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialSnackBarBehavior`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialSnackBarBehaviorDescriptor = $convert.base64Decode(
-    'ChhNYXRlcmlhbFNuYWNrQmFyQmVoYXZpb3IiHwoERW51bRIJCgVGSVhFRBAAEgwKCEZMT0FUSU'
-    '5HEAE=');
+/// Descriptor for `MaterialSnackBarBehaviorType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialSnackBarBehaviorTypeDescriptor = $convert.base64Decode(
+    'ChxNYXRlcmlhbFNuYWNrQmFyQmVoYXZpb3JUeXBlIh8KBEVudW0SCQoFRklYRUQQABIMCghGTE'
+    '9BVElORxAB');
 
-@$core.Deprecated('Use materialStepStateDescriptor instead')
-const MaterialStepState$json = {
-  '1': 'MaterialStepState',
-  '4': [MaterialStepState_Enum$json],
+@$core.Deprecated('Use materialStepStateTypeDescriptor instead')
+const MaterialStepStateType$json = {
+  '1': 'MaterialStepStateType',
+  '4': [MaterialStepStateType_Enum$json],
 };
 
-@$core.Deprecated('Use materialStepStateDescriptor instead')
-const MaterialStepState_Enum$json = {
+@$core.Deprecated('Use materialStepStateTypeDescriptor instead')
+const MaterialStepStateType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'INDEXED', '2': 0},
@@ -2041,19 +2048,19 @@ const MaterialStepState_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialStepState`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialStepStateDescriptor = $convert.base64Decode(
-    'ChFNYXRlcmlhbFN0ZXBTdGF0ZSJHCgRFbnVtEgsKB0lOREVYRUQQABILCgdFRElUSU5HEAESDA'
-    'oIQ09NUExFVEUQAhIMCghESVNBQkxFRBADEgkKBUVSUk9SEAQ=');
+/// Descriptor for `MaterialStepStateType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialStepStateTypeDescriptor = $convert.base64Decode(
+    'ChVNYXRlcmlhbFN0ZXBTdGF0ZVR5cGUiRwoERW51bRILCgdJTkRFWEVEEAASCwoHRURJVElORx'
+    'ABEgwKCENPTVBMRVRFEAISDAoIRElTQUJMRUQQAxIJCgVFUlJPUhAE');
 
-@$core.Deprecated('Use materialStepperTypeDescriptor instead')
-const MaterialStepperType$json = {
-  '1': 'MaterialStepperType',
-  '4': [MaterialStepperType_Enum$json],
+@$core.Deprecated('Use materialStepperTypeTypeDescriptor instead')
+const MaterialStepperTypeType$json = {
+  '1': 'MaterialStepperTypeType',
+  '4': [MaterialStepperTypeType_Enum$json],
 };
 
-@$core.Deprecated('Use materialStepperTypeDescriptor instead')
-const MaterialStepperType_Enum$json = {
+@$core.Deprecated('Use materialStepperTypeTypeDescriptor instead')
+const MaterialStepperTypeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'VERTICAL', '2': 0},
@@ -2061,19 +2068,19 @@ const MaterialStepperType_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialStepperType`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialStepperTypeDescriptor = $convert.base64Decode(
-    'ChNNYXRlcmlhbFN0ZXBwZXJUeXBlIiQKBEVudW0SDAoIVkVSVElDQUwQABIOCgpIT1JJWk9OVE'
-    'FMEAE=');
+/// Descriptor for `MaterialStepperTypeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialStepperTypeTypeDescriptor = $convert.base64Decode(
+    'ChdNYXRlcmlhbFN0ZXBwZXJUeXBlVHlwZSIkCgRFbnVtEgwKCFZFUlRJQ0FMEAASDgoKSE9SSV'
+    'pPTlRBTBAB');
 
-@$core.Deprecated('Use materialStretchModeDescriptor instead')
-const MaterialStretchMode$json = {
-  '1': 'MaterialStretchMode',
-  '4': [MaterialStretchMode_Enum$json],
+@$core.Deprecated('Use materialStretchModeTypeDescriptor instead')
+const MaterialStretchModeType$json = {
+  '1': 'MaterialStretchModeType',
+  '4': [MaterialStretchModeType_Enum$json],
 };
 
-@$core.Deprecated('Use materialStretchModeDescriptor instead')
-const MaterialStretchMode_Enum$json = {
+@$core.Deprecated('Use materialStretchModeTypeDescriptor instead')
+const MaterialStretchModeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'ZOOM_BACKGROUND', '2': 0},
@@ -2082,19 +2089,19 @@ const MaterialStretchMode_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialStretchMode`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialStretchModeDescriptor = $convert.base64Decode(
-    'ChNNYXRlcmlhbFN0cmV0Y2hNb2RlIkAKBEVudW0SEwoPWk9PTV9CQUNLR1JPVU5EEAASEwoPQk'
-    'xVUl9CQUNLR1JPVU5EEAESDgoKRkFERV9USVRMRRAC');
+/// Descriptor for `MaterialStretchModeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialStretchModeTypeDescriptor = $convert.base64Decode(
+    'ChdNYXRlcmlhbFN0cmV0Y2hNb2RlVHlwZSJACgRFbnVtEhMKD1pPT01fQkFDS0dST1VORBAAEh'
+    'MKD0JMVVJfQkFDS0dST1VORBABEg4KCkZBREVfVElUTEUQAg==');
 
-@$core.Deprecated('Use materialTabAlignmentDescriptor instead')
-const MaterialTabAlignment$json = {
-  '1': 'MaterialTabAlignment',
-  '4': [MaterialTabAlignment_Enum$json],
+@$core.Deprecated('Use materialTabAlignmentTypeDescriptor instead')
+const MaterialTabAlignmentType$json = {
+  '1': 'MaterialTabAlignmentType',
+  '4': [MaterialTabAlignmentType_Enum$json],
 };
 
-@$core.Deprecated('Use materialTabAlignmentDescriptor instead')
-const MaterialTabAlignment_Enum$json = {
+@$core.Deprecated('Use materialTabAlignmentTypeDescriptor instead')
+const MaterialTabAlignmentType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'START', '2': 0},
@@ -2104,19 +2111,19 @@ const MaterialTabAlignment_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialTabAlignment`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialTabAlignmentDescriptor = $convert.base64Decode(
-    'ChRNYXRlcmlhbFRhYkFsaWdubWVudCI5CgRFbnVtEgkKBVNUQVJUEAASEAoMU1RBUlRfT0ZGU0'
-    'VUEAESCAoERklMTBACEgoKBkNFTlRFUhAD');
+/// Descriptor for `MaterialTabAlignmentType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialTabAlignmentTypeDescriptor = $convert.base64Decode(
+    'ChhNYXRlcmlhbFRhYkFsaWdubWVudFR5cGUiOQoERW51bRIJCgVTVEFSVBAAEhAKDFNUQVJUX0'
+    '9GRlNFVBABEggKBEZJTEwQAhIKCgZDRU5URVIQAw==');
 
-@$core.Deprecated('Use materialTabBarIndicatorSizeDescriptor instead')
-const MaterialTabBarIndicatorSize$json = {
-  '1': 'MaterialTabBarIndicatorSize',
-  '4': [MaterialTabBarIndicatorSize_Enum$json],
+@$core.Deprecated('Use materialTabBarIndicatorSizeTypeDescriptor instead')
+const MaterialTabBarIndicatorSizeType$json = {
+  '1': 'MaterialTabBarIndicatorSizeType',
+  '4': [MaterialTabBarIndicatorSizeType_Enum$json],
 };
 
-@$core.Deprecated('Use materialTabBarIndicatorSizeDescriptor instead')
-const MaterialTabBarIndicatorSize_Enum$json = {
+@$core.Deprecated('Use materialTabBarIndicatorSizeTypeDescriptor instead')
+const MaterialTabBarIndicatorSizeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'TAB', '2': 0},
@@ -2124,19 +2131,19 @@ const MaterialTabBarIndicatorSize_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialTabBarIndicatorSize`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialTabBarIndicatorSizeDescriptor = $convert.base64Decode(
-    'ChtNYXRlcmlhbFRhYkJhckluZGljYXRvclNpemUiGgoERW51bRIHCgNUQUIQABIJCgVMQUJFTB'
-    'AB');
+/// Descriptor for `MaterialTabBarIndicatorSizeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialTabBarIndicatorSizeTypeDescriptor = $convert.base64Decode(
+    'Ch9NYXRlcmlhbFRhYkJhckluZGljYXRvclNpemVUeXBlIhoKBEVudW0SBwoDVEFCEAASCQoFTE'
+    'FCRUwQAQ==');
 
-@$core.Deprecated('Use materialThemeModeDescriptor instead')
-const MaterialThemeMode$json = {
-  '1': 'MaterialThemeMode',
-  '4': [MaterialThemeMode_Enum$json],
+@$core.Deprecated('Use materialThemeModeTypeDescriptor instead')
+const MaterialThemeModeType$json = {
+  '1': 'MaterialThemeModeType',
+  '4': [MaterialThemeModeType_Enum$json],
 };
 
-@$core.Deprecated('Use materialThemeModeDescriptor instead')
-const MaterialThemeMode_Enum$json = {
+@$core.Deprecated('Use materialThemeModeTypeDescriptor instead')
+const MaterialThemeModeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'SYSTEM', '2': 0},
@@ -2145,19 +2152,19 @@ const MaterialThemeMode_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialThemeMode`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialThemeModeDescriptor = $convert.base64Decode(
-    'ChFNYXRlcmlhbFRoZW1lTW9kZSInCgRFbnVtEgoKBlNZU1RFTRAAEgkKBUxJR0hUEAESCAoERE'
-    'FSSxAC');
+/// Descriptor for `MaterialThemeModeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialThemeModeTypeDescriptor = $convert.base64Decode(
+    'ChVNYXRlcmlhbFRoZW1lTW9kZVR5cGUiJwoERW51bRIKCgZTWVNURU0QABIJCgVMSUdIVBABEg'
+    'gKBERBUksQAg==');
 
-@$core.Deprecated('Use materialTimePickerEntryModeDescriptor instead')
-const MaterialTimePickerEntryMode$json = {
-  '1': 'MaterialTimePickerEntryMode',
-  '4': [MaterialTimePickerEntryMode_Enum$json],
+@$core.Deprecated('Use materialTimePickerEntryModeTypeDescriptor instead')
+const MaterialTimePickerEntryModeType$json = {
+  '1': 'MaterialTimePickerEntryModeType',
+  '4': [MaterialTimePickerEntryModeType_Enum$json],
 };
 
-@$core.Deprecated('Use materialTimePickerEntryModeDescriptor instead')
-const MaterialTimePickerEntryMode_Enum$json = {
+@$core.Deprecated('Use materialTimePickerEntryModeTypeDescriptor instead')
+const MaterialTimePickerEntryModeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'DIAL', '2': 0},
@@ -2167,19 +2174,19 @@ const MaterialTimePickerEntryMode_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialTimePickerEntryMode`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialTimePickerEntryModeDescriptor = $convert.base64Decode(
-    'ChtNYXRlcmlhbFRpbWVQaWNrZXJFbnRyeU1vZGUiOgoERW51bRIICgRESUFMEAASCQoFSU5QVV'
-    'QQARINCglESUFMX09OTFkQAhIOCgpJTlBVVF9PTkxZEAM=');
+/// Descriptor for `MaterialTimePickerEntryModeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialTimePickerEntryModeTypeDescriptor = $convert.base64Decode(
+    'Ch9NYXRlcmlhbFRpbWVQaWNrZXJFbnRyeU1vZGVUeXBlIjoKBEVudW0SCAoERElBTBAAEgkKBU'
+    'lOUFVUEAESDQoJRElBTF9PTkxZEAISDgoKSU5QVVRfT05MWRAD');
 
-@$core.Deprecated('Use materialTooltipTriggerModeDescriptor instead')
-const MaterialTooltipTriggerMode$json = {
-  '1': 'MaterialTooltipTriggerMode',
-  '4': [MaterialTooltipTriggerMode_Enum$json],
+@$core.Deprecated('Use materialTooltipTriggerModeTypeDescriptor instead')
+const MaterialTooltipTriggerModeType$json = {
+  '1': 'MaterialTooltipTriggerModeType',
+  '4': [MaterialTooltipTriggerModeType_Enum$json],
 };
 
-@$core.Deprecated('Use materialTooltipTriggerModeDescriptor instead')
-const MaterialTooltipTriggerMode_Enum$json = {
+@$core.Deprecated('Use materialTooltipTriggerModeTypeDescriptor instead')
+const MaterialTooltipTriggerModeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'MANUAL', '2': 0},
@@ -2188,19 +2195,19 @@ const MaterialTooltipTriggerMode_Enum$json = {
   ],
 };
 
-/// Descriptor for `MaterialTooltipTriggerMode`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List materialTooltipTriggerModeDescriptor = $convert.base64Decode(
-    'ChpNYXRlcmlhbFRvb2x0aXBUcmlnZ2VyTW9kZSIrCgRFbnVtEgoKBk1BTlVBTBAAEg4KCkxPTk'
-    'dfUFJFU1MQARIHCgNUQVAQAg==');
+/// Descriptor for `MaterialTooltipTriggerModeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List materialTooltipTriggerModeTypeDescriptor = $convert.base64Decode(
+    'Ch5NYXRlcmlhbFRvb2x0aXBUcmlnZ2VyTW9kZVR5cGUiKwoERW51bRIKCgZNQU5VQUwQABIOCg'
+    'pMT05HX1BSRVNTEAESBwoDVEFQEAI=');
 
-@$core.Deprecated('Use overlayVisibilityModeDescriptor instead')
-const OverlayVisibilityMode$json = {
-  '1': 'OverlayVisibilityMode',
-  '4': [OverlayVisibilityMode_Enum$json],
+@$core.Deprecated('Use overlayVisibilityModeTypeDescriptor instead')
+const OverlayVisibilityModeType$json = {
+  '1': 'OverlayVisibilityModeType',
+  '4': [OverlayVisibilityModeType_Enum$json],
 };
 
-@$core.Deprecated('Use overlayVisibilityModeDescriptor instead')
-const OverlayVisibilityMode_Enum$json = {
+@$core.Deprecated('Use overlayVisibilityModeTypeDescriptor instead')
+const OverlayVisibilityModeType_Enum$json = {
   '1': 'Enum',
   '2': [
     {'1': 'NEVER', '2': 0},
@@ -2210,8 +2217,8 @@ const OverlayVisibilityMode_Enum$json = {
   ],
 };
 
-/// Descriptor for `OverlayVisibilityMode`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List overlayVisibilityModeDescriptor = $convert.base64Decode(
-    'ChVPdmVybGF5VmlzaWJpbGl0eU1vZGUiOwoERW51bRIJCgVORVZFUhAAEgsKB0VESVRJTkcQAR'
-    'IPCgtOT1RfRURJVElORxACEgoKBkFMV0FZUxAD');
+/// Descriptor for `OverlayVisibilityModeType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List overlayVisibilityModeTypeDescriptor = $convert.base64Decode(
+    'ChlPdmVybGF5VmlzaWJpbGl0eU1vZGVUeXBlIjsKBEVudW0SCQoFTkVWRVIQABILCgdFRElUSU'
+    '5HEAESDwoLTk9UX0VESVRJTkcQAhIKCgZBTFdBWVMQAw==');
 

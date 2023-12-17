@@ -42,12 +42,11 @@ final $typed_data.Uint8List experienceResponseDescriptor = $convert.base64Decode
 const Experience$json = {
   '1': 'Experience',
   '2': [
-    {'1': 'widget', '3': 2, '4': 1, '5': 11, '6': '.WidgetExpression', '10': 'widget'},
+    {'1': 'widget', '3': 2, '4': 1, '5': 11, '6': '.WidgetType', '10': 'widget'},
   ],
 };
 
 /// Descriptor for `Experience`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List experienceDescriptor = $convert.base64Decode(
-    'CgpFeHBlcmllbmNlEikKBndpZGdldBgCIAEoCzIRLldpZGdldEV4cHJlc3Npb25SBndpZGdldA'
-    '==');
+    'CgpFeHBlcmllbmNlEiMKBndpZGdldBgCIAEoCzILLldpZGdldFR5cGVSBndpZGdldA==');
 

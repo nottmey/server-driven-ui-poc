@@ -1,6 +1,8 @@
 const protoFieldStartNumber = 2;
 
-const widgetExpression = 'WidgetExpression';
+const typePostfix = 'Type';
+
+const widgetType = 'Widget$typePostfix';
 
 const throwMissingName = 'missing';
 

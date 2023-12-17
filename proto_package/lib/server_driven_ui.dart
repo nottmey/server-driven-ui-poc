@@ -23,7 +23,7 @@ class _ServerDrivenUiState extends State<ServerDrivenUi> {
 
   Timer? reconnectTimer;
 
-  AsyncSnapshot<messages.WidgetExpression> snapshot = AsyncSnapshot.waiting();
+  AsyncSnapshot<messages.WidgetType> snapshot = AsyncSnapshot.waiting();
 
   @override
   void initState() {
@@ -77,7 +77,7 @@ class _ServerDrivenUiState extends State<ServerDrivenUi> {
     if (snapshot.connectionState == ConnectionState.waiting) {
       return CircularProgressIndicator();
     } else {
-      return evaluateWidgetExpression(snapshot.data!) ?? Icon(Icons.error);
+      return evaluateWidgetType(snapshot.data!) ?? Icon(Icons.error);
     }
   }
 }

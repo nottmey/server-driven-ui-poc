@@ -8,10 +8,10 @@ ExperienceResponse exampleData(ExperienceRequest request) {
   final random = Random();
   return ExperienceResponse(
     start: Experience(
-      widget: WidgetExpression(
+      widget: WidgetType(
         flutterColoredBox: FlutterColoredBox(
           // example of an object payload
-          color: DartColorExpression(
+          color: DartColorType(
             dartColorNamedFromRGBO: DartColorNamedFromRGBO(
               r: random.nextInt(255),
               g: random.nextInt(255),
@@ -19,39 +19,39 @@ ExperienceResponse exampleData(ExperienceRequest request) {
               opacity: 1,
             ),
           ),
-          child: WidgetExpression(
+          child: WidgetType(
             flutterColumn: FlutterColumn(
               // example of enum usage
-              crossAxisAlignment: FlutterCrossAxisAlignment_Enum.CENTER,
+              crossAxisAlignment: FlutterCrossAxisAlignmentType_Enum.CENTER,
               children: [
-                WidgetExpression(
+                WidgetType(
                   // example of request usage
                   flutterText: FlutterText(data: "-- ${request.name} --"),
                 ),
-                WidgetExpression(
+                WidgetType(
                   flutterText: FlutterText(data: "text align\nunset"),
                 ),
-                WidgetExpression(
+                WidgetType(
                   flutterText: FlutterText(
                     data: "text align\n<null>",
                     textAlign: null,
                   ),
                 ),
-                WidgetExpression(
+                WidgetType(
                   flutterText: FlutterText(
                     data: "text align\nstart",
                   ),
                 ),
-                WidgetExpression(
+                WidgetType(
                   flutterText: FlutterText(
                     data: "text align\ncenter",
-                    textAlign: DartTextAlign_Enum.CENTER,
+                    textAlign: DartTextAlignType_Enum.CENTER,
                   ),
                 ),
-                WidgetExpression(
+                WidgetType(
                   flutterText: FlutterText(
                     data: "text align\nend",
-                    textAlign: DartTextAlign_Enum.END,
+                    textAlign: DartTextAlignType_Enum.END,
                   ),
                 ),
               ],

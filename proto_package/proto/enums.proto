@@ -12,7 +12,7 @@ syntax = "proto3";
 // See also:
 //
 //  * `UIUserInterfaceLevel`, the UIKit equivalent: https://developer.apple.com/documentation/uikit/uiuserinterfacelevel.
-message CupertinoUserInterfaceLevelData {
+message CupertinoUserInterfaceLevelDataType {
   enum Enum {
     // The level for your window's main content.
     BASE = 0;
@@ -72,7 +72,7 @@ message CupertinoUserInterfaceLevelData {
 //
 //  * [Paint.blendMode], which uses [BlendMode] to define the compositing
 //    strategy.
-message DartBlendMode {
+message DartBlendModeType {
   enum Enum {
     // Drop both the source and destination images, leaving nothing.
     //
@@ -471,7 +471,7 @@ message DartBlendMode {
 // dart:ui
 //
 // Styles to use for blurs in [MaskFilter] objects.
-message DartBlurStyle {
+message DartBlurStyleType {
   enum Enum {
     // Fuzzy inside and outside. This is useful for painting shadows that are
     // offset from the shape that ostensibly is casting the shadow.
@@ -496,7 +496,7 @@ message DartBlurStyle {
 // [Paragraph.getBoxesForRange].
 //
 // See [BoxWidthStyle] for a similar property to control width.
-message DartBoxHeightStyle {
+message DartBoxHeightStyleType {
   enum Enum {
     // Provide tight bounding boxes that fit heights per run. This style may result
     // in uneven bounding boxes that do not nicely connect with adjacent boxes.
@@ -552,7 +552,7 @@ message DartBoxHeightStyle {
 // [Paragraph.getBoxesForRange].
 //
 // See [BoxHeightStyle] for a similar property to control height.
-message DartBoxWidthStyle {
+message DartBoxWidthStyleType {
   enum Enum {
     // Provide tight bounding boxes that fit widths to the runs of each line
     // independently.
@@ -571,7 +571,7 @@ message DartBoxWidthStyle {
 // dart:ui
 //
 // Describes the contrast of a theme or color palette.
-message DartBrightness {
+message DartBrightnessType {
   enum Enum {
     // The color is dark and will require a light text color to achieve readable
     // contrast.
@@ -589,7 +589,7 @@ message DartBrightness {
 // dart:ui
 //
 // Different ways to clip a widget's content.
-message DartClip {
+message DartClipType {
   enum Enum {
     // No clip at all.
     //
@@ -674,7 +674,7 @@ message DartClip {
 //   the posture.
 // * For [DisplayFeatureType.cutout]s, the state is not used and has the
 // [DisplayFeatureState.unknown] value.
-message DartDisplayFeatureState {
+message DartDisplayFeatureStateType {
   enum Enum {
     // The display feature is a [DisplayFeatureType.cutout] or this state is new
     // and not yet known to Flutter.
@@ -711,7 +711,7 @@ message DartDisplayFeatureState {
 // ![Device with a fold display feature](https://flutter.github.io/assets-for-api-docs/assets/hardware/display_feature_fold.png)
 //
 // ![Device with a cutout display feature](https://flutter.github.io/assets-for-api-docs/assets/hardware/display_feature_cutout.png)
-message DartDisplayFeatureType {
+message DartDisplayFeatureTypeType {
   enum Enum {
     // [DisplayFeature] type is new and not yet known to Flutter.
     UNKNOWN = 0;
@@ -758,7 +758,7 @@ message DartDisplayFeatureType {
 //  * [Canvas.drawImageRect].
 //  * [Canvas.drawImageNine].
 //  * [Canvas.drawAtlas].
-message DartFilterQuality {
+message DartFilterQualityType {
   enum Enum {
     // The fastest filtering method, albeit also the lowest quality.
     //
@@ -811,7 +811,7 @@ message DartFilterQuality {
 //
 // Italic type is distinct from slanted glyphs. To control the slant of a
 // glyph, consider the [FontVariation.slant] font feature.
-message DartFontStyle {
+message DartFontStyleType {
   enum Enum {
     // Use the upright ("Roman") glyphs.
     NORMAL = 0;
@@ -826,7 +826,7 @@ message DartFontStyle {
 // Where to vertically align the placeholder relative to the surrounding text.
 //
 // Used by [ParagraphBuilder.addPlaceholder].
-message DartPlaceholderAlignment {
+message DartPlaceholderAlignmentType {
   enum Enum {
     // Match the baseline of the placeholder with the baseline.
     //
@@ -871,7 +871,7 @@ message DartPlaceholderAlignment {
 //
 //  * [Paint.strokeCap] for how this value is used.
 //  * [StrokeJoin] for the different kinds of line segment joins.
-message DartStrokeCap {
+message DartStrokeCapType {
   enum Enum {
     // Begin and end contours with a flat edge and no extension.
     //
@@ -930,7 +930,7 @@ message DartStrokeCap {
 // just before the "H".  When rendered, this offset could be either in the
 // middle of the string to the right of the "o" or at the end of the string to
 // the right of the "H".
-message DartTextAffinity {
+message DartTextAffinityType {
   enum Enum {
     // The position has affinity for the upstream side of the text position, i.e.
     // in the direction of the beginning of the string.
@@ -960,7 +960,7 @@ message DartTextAffinity {
 // dart:ui
 //
 // Whether and how to align text horizontally.
-message DartTextAlign {
+message DartTextAlignType {
   enum Enum {
     // Align the text on the left edge of the container.
     LEFT = 0;
@@ -991,7 +991,7 @@ message DartTextAlign {
 // dart:ui
 //
 // A horizontal line used for aligning text.
-message DartTextBaseline {
+message DartTextBaselineType {
   enum Enum {
     // The horizontal line used to align the bottom of glyphs for alphabetic characters.
     ALPHABETIC = 0;
@@ -1003,7 +1003,7 @@ message DartTextBaseline {
 // dart:ui
 //
 // The style in which to draw a text decoration
-message DartTextDecorationStyle {
+message DartTextDecorationStyleType {
   enum Enum {
     // Draw a solid line
     SOLID = 0;
@@ -1104,7 +1104,7 @@ message DartTextDecorationStyle {
 // In practice, it is also expected that many developers will only be
 // targeting one language, and in that case it may be simpler to think in
 // visual terms.
-message DartTextDirection {
+message DartTextDirectionType {
   enum Enum {
     // The text flows from right to left (e.g. Arabic, Hebrew).
     RTL = 0;
@@ -1116,7 +1116,7 @@ message DartTextDirection {
 // dart:ui
 //
 // {@macro dart.ui.textLeadingDistribution}
-message DartTextLeadingDistribution {
+message DartTextLeadingDistributionType {
   enum Enum {
     // Distributes the [leading](https://en.wikipedia.org/wiki/Leading)
     // of the text proportionally above and below the text, to the font's
@@ -1176,7 +1176,7 @@ message DartTextLeadingDistribution {
 //  * [dart:ui.ImageFilter.blur], an ImageFilter that may sometimes need to
 //    read samples from outside an image to combine with the pixels near the
 //    edge of the image.
-message DartTileMode {
+message DartTileModeType {
   enum Enum {
     // Samples beyond the edge are clamped to the nearest color in the defined inner area.
     //
@@ -1237,7 +1237,7 @@ message DartTileMode {
 // package:flutter/src/widgets/autofill.dart
 //
 // Predefined autofill context clean up actions.
-message FlutterAutofillContextAction {
+message FlutterAutofillContextActionType {
   enum Enum {
     // Destroys the current autofill context after informing the platform to save
     // the user input from it.
@@ -1256,7 +1256,7 @@ message FlutterAutofillContextAction {
 // package:flutter/src/widgets/form.dart
 //
 // Used to configure the auto validation of [FormField] and [Form] widgets.
-message FlutterAutovalidateMode {
+message FlutterAutovalidateModeType {
   enum Enum {
     // No auto validation will occur.
     DISABLED = 0;
@@ -1265,34 +1265,6 @@ message FlutterAutovalidateMode {
     // Used to auto-validate [Form] and [FormField] only after each user
     // interaction.
     ON_USER_INTERACTION = 2;
-  }
-}
-
-// package:flutter/src/painting/basic_types.dart
-//
-// The two cardinal directions in two dimensions.
-//
-// The axis is always relative to the current coordinate space. This means, for
-// example, that a [horizontal] axis might actually be diagonally from top
-// right to bottom left, due to some local [Transform] applied to the scene.
-//
-// See also:
-//
-//  * [AxisDirection], which is a directional version of this enum (with values
-//    like left and right, rather than just horizontal).
-//  * [TextDirection], which disambiguates between left-to-right horizontal
-//    content and right-to-left horizontal content.
-message FlutterAxis {
-  enum Enum {
-    // Left and right.
-    //
-    // See also:
-    //
-    //  * [TextDirection], which disambiguates between left-to-right horizontal
-    //    content and right-to-left horizontal content.
-    HORIZONTAL = 0;
-    // Up and down.
-    VERTICAL = 1;
   }
 }
 
@@ -1327,7 +1299,7 @@ message FlutterAxis {
 //   * [axisDirectionIsReversed], which returns whether traveling along the
 //     given axis direction visits coordinates along that axis in numerically
 //     decreasing order.
-message FlutterAxisDirection {
+message FlutterAxisDirectionType {
   enum Enum {
     // A direction in the [Axis.vertical] where zero is at the bottom and
     // positive values are above it: `⇈`
@@ -1396,13 +1368,41 @@ message FlutterAxisDirection {
   }
 }
 
+// package:flutter/src/painting/basic_types.dart
+//
+// The two cardinal directions in two dimensions.
+//
+// The axis is always relative to the current coordinate space. This means, for
+// example, that a [horizontal] axis might actually be diagonally from top
+// right to bottom left, due to some local [Transform] applied to the scene.
+//
+// See also:
+//
+//  * [AxisDirection], which is a directional version of this enum (with values
+//    like left and right, rather than just horizontal).
+//  * [TextDirection], which disambiguates between left-to-right horizontal
+//    content and right-to-left horizontal content.
+message FlutterAxisType {
+  enum Enum {
+    // Left and right.
+    //
+    // See also:
+    //
+    //  * [TextDirection], which disambiguates between left-to-right horizontal
+    //    content and right-to-left horizontal content.
+    HORIZONTAL = 0;
+    // Up and down.
+    VERTICAL = 1;
+  }
+}
+
 // package:flutter/src/widgets/banner.dart
 //
 // Where to show a [Banner].
 //
 // The start and end locations are relative to the ambient [Directionality]
 // (which can be overridden by [Banner.layoutDirection]).
-message FlutterBannerLocation {
+message FlutterBannerLocationType {
   enum Enum {
     // Show the banner in the top-right corner when the ambient [Directionality]
     // (or [Banner.layoutDirection]) is [TextDirection.rtl] and in the top-left
@@ -1428,7 +1428,7 @@ message FlutterBannerLocation {
 // package:flutter/src/painting/borders.dart
 //
 // The style of line to draw for a [BorderSide] in a [Border].
-message FlutterBorderStyle {
+message FlutterBorderStyleType {
   enum Enum {
     // Skip the border.
     NONE = 0;
@@ -1445,7 +1445,7 @@ message FlutterBorderStyle {
 //
 //  * [applyBoxFit], which applies the sizing semantics of these values (though
 //    not the alignment semantics).
-message FlutterBoxFit {
+message FlutterBoxFitType {
   enum Enum {
     // Fill the target box by distorting the source's aspect ratio.
     //
@@ -1508,7 +1508,7 @@ message FlutterBoxFit {
 // instead of using [BoxShape] and [Border], if the shapes will need to be
 // interpolated or animated. The [Border] class cannot interpolate between
 // different shapes.
-message FlutterBoxShape {
+message FlutterBoxShapeType {
   enum Enum {
     // An axis-aligned, 2D rectangle. May have rounded corners (described by a
     // [BorderRadius]). The edges of the rectangle will match the edges of the box
@@ -1533,7 +1533,7 @@ message FlutterBoxShape {
 // package:flutter/src/rendering/viewport.dart
 //
 // The unit of measurement for a [Viewport.cacheExtent].
-message FlutterCacheExtentStyle {
+message FlutterCacheExtentStyleType {
   enum Enum {
     // Treat the [Viewport.cacheExtent] as logical pixels.
     PIXEL = 0;
@@ -1545,7 +1545,7 @@ message FlutterCacheExtentStyle {
 // package:flutter/src/widgets/text_selection.dart
 //
 // An enumeration of the status of the content on the user's clipboard.
-message FlutterClipboardStatus {
+message FlutterClipboardStatusType {
   enum Enum {
     // The clipboard content can be pasted, such as a String of nonzero length.
     PASTEABLE = 0;
@@ -1566,7 +1566,7 @@ message FlutterClipboardStatus {
 //
 //  * [ContextMenuButtonItem], which uses this enum to describe a button in a
 //    context menu.
-message FlutterContextMenuButtonType {
+message FlutterContextMenuButtonTypeType {
   enum Enum {
     // A button that cuts the current text selection.
     CUT = 0;
@@ -1603,7 +1603,7 @@ message FlutterContextMenuButtonType {
 //
 //  * [Column], [Row], and [Flex], the flex widgets.
 //  * [RenderFlex], the flex render object.
-message FlutterCrossAxisAlignment {
+message FlutterCrossAxisAlignmentType {
   enum Enum {
     // Place the children with their start edge aligned with the start side of
     // the cross axis.
@@ -1661,7 +1661,7 @@ message FlutterCrossAxisAlignment {
 // Specifies which of two children to show. See [AnimatedCrossFade].
 //
 // The child that is shown will fade in, while the other will fade out.
-message FlutterCrossFadeState {
+message FlutterCrossFadeStateType {
   enum Enum {
     // Show the first child ([AnimatedCrossFade.firstChild]) and hide the second
     // ([AnimatedCrossFade.secondChild]]).
@@ -1675,7 +1675,7 @@ message FlutterCrossFadeState {
 // package:flutter/src/rendering/proxy_box.dart
 //
 // Where to paint a box decoration.
-message FlutterDecorationPosition {
+message FlutterDecorationPositionType {
   enum Enum {
     // Paint the box decoration behind the children.
     BACKGROUND = 0;
@@ -1695,7 +1695,7 @@ message FlutterDecorationPosition {
 //
 // In release mode, this level may not have any effect, as diagnostics in
 // release mode are compacted or truncated to reduce binary size.
-message FlutterDiagnosticLevel {
+message FlutterDiagnosticLevelType {
   enum Enum {
     // Diagnostics that should not be shown.
     //
@@ -1763,7 +1763,7 @@ message FlutterDiagnosticLevel {
 //
 //  * [DiagnosticsNode.toStringDeep], which dumps text art trees for these
 //    styles.
-message FlutterDiagnosticsTreeStyle {
+message FlutterDiagnosticsTreeStyleType {
   enum Enum {
     // A style that does not display the tree, for release mode.
     NONE = 0;
@@ -1844,7 +1844,7 @@ message FlutterDiagnosticsTreeStyle {
 // package:flutter/src/widgets/dismissible.dart
 //
 // The direction in which a [Dismissible] can be dismissed.
-message FlutterDismissDirection {
+message FlutterDismissDirectionType {
   enum Enum {
     // The [Dismissible] can be dismissed by dragging either up or down.
     VERTICAL = 0;
@@ -1873,7 +1873,7 @@ message FlutterDismissDirection {
 //
 //  * [DragGestureRecognizer.dragStartBehavior], which gives an example for the
 //  different behaviors.
-message FlutterDragStartBehavior {
+message FlutterDragStartBehaviorType {
   enum Enum {
     // Set the initial offset at the position where the first down event was
     // detected.
@@ -1894,7 +1894,7 @@ message FlutterDragStartBehavior {
 //  * [Column], [Row], and [Flex], the flex widgets.
 //  * [Expanded], the widget equivalent of [tight].
 //  * [Flexible], the widget equivalent of [loose].
-message FlutterFlexFit {
+message FlutterFlexFitType {
   enum Enum {
     // The child is forced to fill the available space.
     //
@@ -1911,7 +1911,7 @@ message FlutterFlexFit {
 // package:flutter/src/painting/flutter_logo.dart
 //
 // Possible ways to draw Flutter's logo.
-message FlutterFlutterLogoStyle {
+message FlutterFlutterLogoStyleType {
   enum Enum {
     // Show only Flutter's logo, not the "Flutter" label.
     //
@@ -1927,7 +1927,7 @@ message FlutterFlutterLogoStyle {
 // package:flutter/src/rendering/proxy_box.dart
 //
 // How to behave during hit tests.
-message FlutterHitTestBehavior {
+message FlutterHitTestBehaviorType {
   enum Enum {
     // Targets that defer to their children receive events within their bounds
     // only if one of their children is hit by the hit test.
@@ -1945,7 +1945,7 @@ message FlutterHitTestBehavior {
 // package:flutter/src/painting/decoration_image.dart
 //
 // How to paint any portions of a box not covered by an image.
-message FlutterImageRepeat {
+message FlutterImageRepeatType {
   enum Enum {
     // Repeat the image in both the x and y directions until the box is filled.
     REPEAT = 0;
@@ -1966,7 +1966,7 @@ message FlutterImageRepeat {
 //
 //  * [Column], [Row], and [Flex], the flex widgets.
 //  * [RenderFlex], the flex render object.
-message FlutterMainAxisAlignment {
+message FlutterMainAxisAlignmentType {
   enum Enum {
     // Place the children as close to the start of the main axis as possible.
     //
@@ -2013,7 +2013,7 @@ message FlutterMainAxisAlignment {
 //    children's flex.
 //  * [RenderFlex], the flex render object.
 //  * [MainAxisAlignment], which controls how the free space is distributed.
-message FlutterMainAxisSize {
+message FlutterMainAxisSizeType {
   enum Enum {
     // Minimize the amount of free space along the main axis, subject to the
     // incoming layout constraints.
@@ -2076,7 +2076,7 @@ message FlutterMainAxisSize {
 //  * [TextField.maxLengthEnforcement] which is used in conjunction with
 //    [TextField.maxLength] to limit the length of user input. [TextField] also
 //    provides a character counter to provide visual feedback.
-message FlutterMaxLengthEnforcement {
+message FlutterMaxLengthEnforcementType {
   enum Enum {
     // No enforcement applied to the editing value. It's possible to exceed the
     // max length.
@@ -2101,7 +2101,7 @@ message FlutterMaxLengthEnforcement {
 // Use `MediaQuery.navigationModeOf(context)` to determine the navigation mode
 // in effect for the given context. Use a [MediaQuery] widget to set the
 // navigation mode for its descendant widgets.
-message FlutterNavigationMode {
+message FlutterNavigationModeType {
   enum Enum {
     // This indicates a traditional keyboard-and-mouse navigation modality.
     //
@@ -2125,7 +2125,7 @@ message FlutterNavigationMode {
 // package:flutter/src/widgets/media_query.dart
 //
 // Whether in portrait or landscape.
-message FlutterOrientation {
+message FlutterOrientationType {
   enum Enum {
     // Taller than wide.
     PORTRAIT = 0;
@@ -2141,7 +2141,7 @@ message FlutterOrientation {
 //
 // This value must be interpreted relative to the ambient
 // [TextDirection].
-message FlutterOverflowBarAlignment {
+message FlutterOverflowBarAlignmentType {
   enum Enum {
     // Each child is left-aligned for [TextDirection.ltr],
     // right-aligned for [TextDirection.rtl].
@@ -2158,7 +2158,7 @@ message FlutterOverflowBarAlignment {
 //
 // This enum is used to specify the behavior of the [InteractiveViewer] when
 // the user drags the viewport.
-message FlutterPanAxis {
+message FlutterPanAxisType {
   enum Enum {
     // The user can only pan the viewport along the horizontal axis.
     HORIZONTAL = 0;
@@ -2191,7 +2191,7 @@ message FlutterPanAxis {
 //
 // You can tell if the platform provides the given menu using the
 // [PlatformProvidedMenuItem.hasMenu] method.
-message FlutterPlatformProvidedMenuItemType {
+message FlutterPlatformProvidedMenuItemTypeType {
   enum Enum {
     // The system provided "About" menu item.
     //
@@ -2287,7 +2287,7 @@ message FlutterPlatformProvidedMenuItemType {
 // package:flutter/src/rendering/platform_view.dart
 //
 // How an embedded platform view behave during hit tests.
-message FlutterPlatformViewHitTestBehavior {
+message FlutterPlatformViewHitTestBehaviorType {
   enum Enum {
     // Opaque targets can be hit by hit tests, causing them to both receive
     // events within their bounds and prevent targets visually behind them from
@@ -2305,7 +2305,7 @@ message FlutterPlatformViewHitTestBehavior {
 // package:flutter/src/widgets/scroll_physics.dart
 //
 // The rate at which scroll momentum will be decelerated.
-message FlutterScrollDecelerationRate {
+message FlutterScrollDecelerationRateType {
   enum Enum {
     // Standard deceleration, aligned with mobile software expectations.
     NORMAL = 0;
@@ -2334,7 +2334,7 @@ message FlutterScrollDecelerationRate {
 // recommended that at least the relative magnitudes of the scrolls match
 // expectations.
 // {@endtemplate}
-message FlutterScrollIncrementType {
+message FlutterScrollIncrementTypeType {
   enum Enum {
     // Indicates that the [ScrollIncrementCalculator] should return the scroll
     // distance it should move when the user requests to scroll by a "line".
@@ -2359,7 +2359,7 @@ message FlutterScrollIncrementType {
 //
 // A representation of how a [ScrollView] should dismiss the on-screen
 // keyboard.
-message FlutterScrollViewKeyboardDismissBehavior {
+message FlutterScrollViewKeyboardDismissBehaviorType {
   enum Enum {
     // `manual` means there is no automatic dismissal of the on-screen keyboard.
     // It is up to the client to dismiss the keyboard.
@@ -2373,7 +2373,7 @@ message FlutterScrollViewKeyboardDismissBehavior {
 // package:flutter/src/widgets/scrollbar.dart
 //
 // An orientation along either the horizontal or vertical [Axis].
-message FlutterScrollbarOrientation {
+message FlutterScrollbarOrientationType {
   enum Enum {
     // Place towards the left of the screen.
     LEFT = 0;
@@ -2390,7 +2390,7 @@ message FlutterScrollbarOrientation {
 //
 // Indicates what triggered the change in selected text (including changes to
 // the cursor location).
-message FlutterSelectionChangedCause {
+message FlutterSelectionChangedCauseType {
   enum Enum {
     // The user tapped on the text and that caused the selection (or the location
     // of the cursor) to change.
@@ -2434,7 +2434,7 @@ message FlutterSelectionChangedCause {
 //  * [EditableText.smartDashesType]
 //  * [SmartQuotesType]
 //  * <https://developer.apple.com/documentation/uikit/uitextinputtraits>
-message FlutterSmartDashesType {
+message FlutterSmartDashesTypeType {
   enum Enum {
     // Smart dashes is disabled.
     //
@@ -2459,7 +2459,7 @@ message FlutterSmartDashesType {
 //  * [CupertinoTextField.smartQuotesType]
 //  * [EditableText.smartQuotesType]
 //  * <https://developer.apple.com/documentation/uikit/uitextinputtraits>
-message FlutterSmartQuotesType {
+message FlutterSmartQuotesTypeType {
   enum Enum {
     // Smart quotes is disabled.
     //
@@ -2477,7 +2477,7 @@ message FlutterSmartQuotesType {
 // package:flutter/src/widgets/snapshot_widget.dart
 //
 // Controls how the [SnapshotWidget] paints its child.
-message FlutterSnapshotMode {
+message FlutterSnapshotModeType {
   enum Enum {
     // The child is snapshotted, but only if all descendants can be snapshotted.
     //
@@ -2510,7 +2510,7 @@ message FlutterSnapshotMode {
 //
 //  * [Stack], the widget that uses this.
 //  * [RenderStack], the render object that implements the stack algorithm.
-message FlutterStackFit {
+message FlutterStackFitType {
   enum Enum {
     // The constraints passed to the stack from its parent are loosened.
     //
@@ -2548,7 +2548,7 @@ message FlutterStackFit {
 //
 // This is specified using [TableCellParentData] objects on the
 // [RenderObject.parentData] of the children of the [RenderTable].
-message FlutterTableCellVerticalAlignment {
+message FlutterTableCellVerticalAlignmentType {
   enum Enum {
     // Cells with this alignment are placed with their top at the top of the row.
     TOP = 0;
@@ -2580,7 +2580,7 @@ message FlutterTableCellVerticalAlignment {
 // values of this enum when updating [debugDefaultTargetPlatformOverride].
 // This lets one test how the application will work on various platforms
 // without having to switch emulators or physical devices.
-message FlutterTargetPlatform {
+message FlutterTargetPlatformType {
   enum Enum {
     // Android: <https://www.android.com/>
     ANDROID = 0;
@@ -2604,7 +2604,7 @@ message FlutterTargetPlatform {
 //
 // Only supports text keyboards, other keyboard types will ignore this
 // configuration. Capitalization is locale-aware.
-message FlutterTextCapitalization {
+message FlutterTextCapitalizationType {
   enum Enum {
     // Defaults to an uppercase keyboard for the first letter of each word.
     //
@@ -2661,7 +2661,7 @@ message FlutterTextCapitalization {
 //
 //  * [TextInput], which configures the platform's keyboard setup.
 //  * [EditableText], which invokes callbacks when the action button is pressed.
-message FlutterTextInputAction {
+message FlutterTextInputActionType {
   enum Enum {
     // Logical meaning: There is no relevant input action for the current input
     // source, e.g., [TextField].
@@ -2808,7 +2808,7 @@ message FlutterTextInputAction {
 //
 // A [TextOverflow] can be passed to [Text] and [RichText] via their
 // [Text.overflow] and [RichText.overflow] properties respectively.
-message FlutterTextOverflow {
+message FlutterTextOverflowType {
   enum Enum {
     // Clip the overflowing text to fix its container.
     CLIP = 0;
@@ -2826,7 +2826,7 @@ message FlutterTextOverflow {
 // The different ways of measuring the width of one or more lines of text.
 //
 // See [Text.textWidthBasis], for example.
-message FlutterTextWidthBasis {
+message FlutterTextWidthBasisType {
   enum Enum {
     // multiline text will take up the full width given by the parent. For single
     // line text, only the minimum amount of width needed to contain the text
@@ -2846,7 +2846,7 @@ message FlutterTextWidthBasis {
 // This is used by the [DirectionalFocusTraversalPolicyMixin], and
 // [FocusNode.focusInDirection] to indicate which direction to look in for the
 // next focus.
-message FlutterTraversalDirection {
+message FlutterTraversalDirectionType {
   enum Enum {
     // Indicates a direction above the currently focused widget.
     UP = 0;
@@ -2879,7 +2879,7 @@ message FlutterTraversalDirection {
 //
 // * [FocusTraversalPolicy], which implements the logic behind this enum.
 // * [FocusScopeNode], which is configured by this enum.
-message FlutterTraversalEdgeBehavior {
+message FlutterTraversalEdgeBehaviorType {
   enum Enum {
     // Keeps the focus among the items of the focus scope.
     //
@@ -2917,7 +2917,7 @@ message FlutterTraversalEdgeBehavior {
 // See also:
 //
 //  * [TextDirection], which controls the same thing but horizontally.
-message FlutterVerticalDirection {
+message FlutterVerticalDirectionType {
   enum Enum {
     // Boxes should start at the bottom and be stacked vertically towards the top.
     //
@@ -2936,7 +2936,7 @@ message FlutterVerticalDirection {
 //
 // Used both to align children within a run in the main axis as well as to
 // align the runs themselves in the cross axis.
-message FlutterWrapAlignment {
+message FlutterWrapAlignmentType {
   enum Enum {
     // Place the objects as close to the start of the axis as possible.
     //
@@ -2970,7 +2970,7 @@ message FlutterWrapAlignment {
 // package:flutter/src/rendering/wrap.dart
 //
 // Who [Wrap] should align children within a run in the cross axis.
-message FlutterWrapCrossAlignment {
+message FlutterWrapCrossAlignmentType {
   enum Enum {
     // Place the children as close to the start of the run in the cross axis as
     // possible.
@@ -3000,7 +3000,7 @@ message FlutterWrapCrossAlignment {
 //
 // Refines the layout of a [BottomNavigationBar] when the enclosing
 // [MediaQueryData.orientation] is [Orientation.landscape].
-message MaterialBottomNavigationBarLandscapeLayout {
+message MaterialBottomNavigationBarLandscapeLayoutType {
   enum Enum {
     // If the enclosing [MediaQueryData.orientation] is
     // [Orientation.landscape] then the navigation bar's items are
@@ -3032,7 +3032,7 @@ message MaterialBottomNavigationBarLandscapeLayout {
 //  * [BottomNavigationBar]
 //  * [BottomNavigationBarItem]
 //  * <https://material.io/design/components/bottom-navigation.html#specs>
-message MaterialBottomNavigationBarType {
+message MaterialBottomNavigationBarTypeType {
   enum Enum {
     // The [BottomNavigationBar]'s [BottomNavigationBarItem]s have fixed width.
     FIXED = 0;
@@ -3046,7 +3046,7 @@ message MaterialBottomNavigationBarType {
 //
 // Used with [ButtonTheme] and [ButtonThemeData] to define how the button bar
 // should size itself with either constraints or internal padding.
-message MaterialButtonBarLayoutBehavior {
+message MaterialButtonBarLayoutBehaviorType {
   enum Enum {
     // Button bars will be constrained to a minimum height of 52.
     //
@@ -3063,7 +3063,7 @@ message MaterialButtonBarLayoutBehavior {
 // Used with [ButtonTheme] and [ButtonThemeData] to define a button's base
 // colors, and the defaults for the button's minimum size, internal padding,
 // and shape.
-message MaterialButtonTextTheme {
+message MaterialButtonTextThemeType {
   enum Enum {
     // Button text is black or white depending on [ThemeData.brightness].
     NORMAL = 0;
@@ -3077,7 +3077,7 @@ message MaterialButtonTextTheme {
 // package:flutter/src/material/flexible_space_bar.dart
 //
 // The collapsing effect while the space bar collapses from its full size.
-message MaterialCollapseMode {
+message MaterialCollapseModeType {
   enum Enum {
     // The background widget will scroll in a parallax fashion.
     PARALLAX = 0;
@@ -3103,7 +3103,7 @@ message MaterialCollapseMode {
 //
 //  * [showDatePicker] and [showDateRangePicker], which use this to control
 //    the initial entry mode of their dialogs.
-message MaterialDatePickerEntryMode {
+message MaterialDatePickerEntryModeType {
   enum Enum {
     // User picks a date from calendar grid. Can switch to [input] by activating
     // a mode button in the dialog.
@@ -3134,7 +3134,7 @@ message MaterialDatePickerEntryMode {
 //  * [showDatePicker], which shows a dialog that contains a Material Design
 //    date picker.
 //  * [CalendarDatePicker], widget which implements the Material Design date picker.
-message MaterialDatePickerMode {
+message MaterialDatePickerModeType {
   enum Enum {
     // Choosing a month and day.
     DAY = 0;
@@ -3146,7 +3146,7 @@ message MaterialDatePickerMode {
 // package:flutter/src/material/drawer.dart
 //
 // The possible alignments of a [Drawer].
-message MaterialDrawerAlignment {
+message MaterialDrawerAlignmentType {
   enum Enum {
     // Denotes that the [Drawer] is at the start side of the [Scaffold].
     //
@@ -3171,7 +3171,7 @@ message MaterialDrawerAlignment {
 //    [InputDecoration.label] or [InputDecoration.labelText].
 //  * [FloatingLabelAlignment] which defines **where** the floating label
 //    should displayed.
-message MaterialFloatingLabelBehavior {
+message MaterialFloatingLabelBehaviorType {
   enum Enum {
     // The label will always be positioned within the content, or hidden.
     NEVER = 0;
@@ -3194,7 +3194,7 @@ message MaterialFloatingLabelBehavior {
 //  * [SwitchListTile], which combines a [ListTile] with a [Switch].
 //  * [ExpansionTile], which combines a [ListTile] with a button that expands
 //    or collapses the tile to reveal or hide the children.
-message MaterialListTileControlAffinity {
+message MaterialListTileControlAffinityType {
   enum Enum {
     // Position the control on the leading edge, and the secondary widget, if
     // any, on the trailing edge.
@@ -3216,7 +3216,7 @@ message MaterialListTileControlAffinity {
 // List tiles that appear in a [Drawer] use the theme's [TextTheme.bodyLarge]
 // text style, which is a little smaller than the theme's [TextTheme.titleMedium]
 // text style, which is used by default.
-message MaterialListTileStyle {
+message MaterialListTileStyleType {
   enum Enum {
     // Use a title font that's appropriate for a [ListTile] in a list.
     LIST = 0;
@@ -3239,7 +3239,7 @@ message MaterialListTileStyle {
 //    for all of the [ListTile]s under a [ListTileTheme].
 //  * [ThemeData.listTileTheme], to configure the [ListTileTheme]
 //    for an entire app.
-message MaterialListTileTitleAlignment {
+message MaterialListTileTitleAlignmentType {
   enum Enum {
     // The top of the [ListTile.leading] and [ListTile.trailing] widgets are
     // placed [ListTile.minVerticalPadding] below the top of the [ListTile.title]
@@ -3294,7 +3294,7 @@ message MaterialListTileTitleAlignment {
 //   * [Radio]
 //   * [Switch]
 //   * [Checkbox]
-message MaterialMaterialTapTargetSize {
+message MaterialMaterialTapTargetSizeType {
   enum Enum {
     // Expands the minimum tap target size to 48px by 48px.
     //
@@ -3317,7 +3317,7 @@ message MaterialMaterialTapTargetSize {
 //
 //  * [Material], in particular [Material.type].
 //  * [kMaterialEdges]
-message MaterialMaterialType {
+message MaterialMaterialTypeType {
   enum Enum {
     // Rectangle using default theme canvas color.
     CANVAS = 0;
@@ -3346,7 +3346,7 @@ message MaterialMaterialType {
 // Specifies when each [NavigationDestination]'s label should appear.
 //
 // This is used to determine the behavior of [NavigationBar]'s destinations.
-message MaterialNavigationDestinationLabelBehavior {
+message MaterialNavigationDestinationLabelBehaviorType {
   enum Enum {
     // Always shows all of the labels under each navigation bar destination,
     // selected and unselected.
@@ -3372,7 +3372,7 @@ message MaterialNavigationDestinationLabelBehavior {
 // See also:
 //
 //   * [NavigationRail]
-message MaterialNavigationRailLabelType {
+message MaterialNavigationRailLabelTypeType {
   enum Enum {
     // Only the [NavigationRailDestination]s are shown.
     NONE = 0;
@@ -3389,7 +3389,7 @@ message MaterialNavigationRailLabelType {
 // package:flutter/src/material/popup_menu_theme.dart
 //
 // Used to configure how the [PopupMenuButton] positions its popup menu.
-message MaterialPopupMenuPosition {
+message MaterialPopupMenuPositionType {
   enum Enum {
     // Menu is positioned over the anchor.
     OVER = 0;
@@ -3408,7 +3408,7 @@ message MaterialPopupMenuPosition {
 //  * [Slider], a Material Design slider widget.
 //  * [SliderThemeData], which describes the actual configuration of a slider
 //    theme.
-message MaterialShowValueIndicator {
+message MaterialShowValueIndicatorType {
   enum Enum {
     // The value indicator will only be shown for discrete sliders (sliders
     // where [Slider.divisions] is non-null).
@@ -3426,7 +3426,7 @@ message MaterialShowValueIndicator {
 // package:flutter/src/material/slider.dart
 //
 // Possible ways for a user to interact with a [Slider].
-message MaterialSliderInteraction {
+message MaterialSliderInteractionType {
   enum Enum {
     // Allows the user to interact with a [Slider] by tapping or sliding anywhere
     // on the track.
@@ -3459,7 +3459,7 @@ message MaterialSliderInteraction {
 // Defines where a [SnackBar] should appear within a [Scaffold] and how its
 // location should be adjusted when the scaffold also includes a
 // [FloatingActionButton] or a [BottomNavigationBar].
-message MaterialSnackBarBehavior {
+message MaterialSnackBarBehaviorType {
   enum Enum {
     // Fixes the [SnackBar] at the bottom of the [Scaffold].
     //
@@ -3488,7 +3488,7 @@ message MaterialSnackBarBehavior {
 // See also:
 //
 //  * [Step]
-message MaterialStepState {
+message MaterialStepStateType {
   enum Enum {
     // A step that displays its index in its circle.
     INDEXED = 0;
@@ -3507,7 +3507,7 @@ message MaterialStepState {
 // package:flutter/src/material/stepper.dart
 //
 // Defines the [Stepper]'s main axis.
-message MaterialStepperType {
+message MaterialStepperTypeType {
   enum Enum {
     // A vertical layout of the steps with their content in-between the titles.
     VERTICAL = 0;
@@ -3519,7 +3519,7 @@ message MaterialStepperType {
 // package:flutter/src/material/flexible_space_bar.dart
 //
 // The stretching effect while the space bar stretches beyond its full size.
-message MaterialStretchMode {
+message MaterialStretchModeType {
   enum Enum {
     // The background widget will expand to fill the extra space.
     ZOOM_BACKGROUND = 0;
@@ -3540,7 +3540,7 @@ message MaterialStretchMode {
 //   * [TabBarView], which displays a widget for the currently selected tab.
 //   * [TabBar.tabAlignment], which defines the horizontal alignment of the
 //     tabs within the [TabBar].
-message MaterialTabAlignment {
+message MaterialTabAlignmentType {
   enum Enum {
     // If [TabBar.isScrollable] is true, tabs are aligned to the
     // start of the [TabBar]. Otherwise throws an exception.
@@ -3573,7 +3573,7 @@ message MaterialTabAlignment {
 //  * [TabBarView], which displays a widget for the currently selected tab.
 //  * [TabBar.indicator], which defines the appearance of the selected tab
 //    indicator relative to the tab's bounds.
-message MaterialTabBarIndicatorSize {
+message MaterialTabBarIndicatorSizeType {
   enum Enum {
     // The tab indicator's bounds are as wide as the space occupied by the tab
     // in the tab bar: from the right edge of the previous tab to the left edge
@@ -3590,7 +3590,7 @@ message MaterialTabBarIndicatorSize {
 // package:flutter/src/material/app.dart
 //
 // Describes which theme will be used by [MaterialApp].
-message MaterialThemeMode {
+message MaterialThemeModeType {
   enum Enum {
     // Use either the light or dark theme based on what the user has selected in
     // the system settings.
@@ -3615,7 +3615,7 @@ message MaterialThemeMode {
 //
 // * [showTimePicker], a function that shows a [TimePickerDialog] and returns
 //   the selected time as a [Future].
-message MaterialTimePickerEntryMode {
+message MaterialTimePickerEntryModeType {
   enum Enum {
     // User picks time from a clock dial.
     //
@@ -3649,7 +3649,7 @@ message MaterialTimePickerEntryMode {
 //   * [Tooltip.waitDuration], which defines the length of time that
 //     a pointer must hover over a tooltip's widget before the tooltip
 //     will be shown.
-message MaterialTooltipTriggerMode {
+message MaterialTooltipTriggerModeType {
   enum Enum {
     // Tooltip will only be shown by calling `ensureTooltipVisible`.
     MANUAL = 0;
@@ -3676,7 +3676,7 @@ message MaterialTooltipTriggerMode {
 //
 // Used to toggle the visibility behavior of the optional decorating widgets
 // surrounding the [EditableText] such as the clear text button.
-message OverlayVisibilityMode {
+message OverlayVisibilityModeType {
   enum Enum {
     // Overlay will never appear regardless of the text entry state.
     NEVER = 0;

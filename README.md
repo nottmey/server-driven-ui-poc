@@ -28,7 +28,7 @@
 
 ```shell
 # globally
-flutter version 3.13.9
+flutter version 3.16.0
 brew install protobuf
 dart pub global activate protoc_plugin
 

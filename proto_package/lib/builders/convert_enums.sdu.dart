@@ -65,2382 +65,2382 @@ import 'package:flutter/src/widgets/scrollbar.dart' as $flutterSrcWidgetsScrollb
 import 'package:flutter/src/widgets/snapshot_widget.dart' as $flutterSrcWidgetsSnapshotWidget;
 import 'package:flutter/src/widgets/text_selection.dart' as $flutterSrcWidgetsTextSelection;
 
-$flutterSrcCupertinoInterfaceLevel.CupertinoUserInterfaceLevelData convertRequiredCupertinoUserInterfaceLevelData(enums.CupertinoUserInterfaceLevelData_Enum enumValue) {
-  final result = convertCupertinoUserInterfaceLevelData(enumValue);
+$flutterSrcCupertinoInterfaceLevel.CupertinoUserInterfaceLevelData convertRequiredCupertinoUserInterfaceLevelDataType(enums.CupertinoUserInterfaceLevelDataType_Enum enumValue) {
+  final result = convertCupertinoUserInterfaceLevelDataType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum CupertinoUserInterfaceLevelData');
+    throw core.AssertionError('unable to parse required enum CupertinoUserInterfaceLevelDataType');
   }
 }
 
-$flutterSrcCupertinoInterfaceLevel.CupertinoUserInterfaceLevelData? convertCupertinoUserInterfaceLevelData(enums.CupertinoUserInterfaceLevelData_Enum enumValue) {
+$flutterSrcCupertinoInterfaceLevel.CupertinoUserInterfaceLevelData? convertCupertinoUserInterfaceLevelDataType(enums.CupertinoUserInterfaceLevelDataType_Enum enumValue) {
   switch (enumValue) {
-    case enums.CupertinoUserInterfaceLevelData_Enum.BASE:
+    case enums.CupertinoUserInterfaceLevelDataType_Enum.BASE:
       return $flutterSrcCupertinoInterfaceLevel.CupertinoUserInterfaceLevelData.base;
-    case enums.CupertinoUserInterfaceLevelData_Enum.ELEVATED:
+    case enums.CupertinoUserInterfaceLevelDataType_Enum.ELEVATED:
       return $flutterSrcCupertinoInterfaceLevel.CupertinoUserInterfaceLevelData.elevated;
     default:
       return null;
   }
 }
 
-$dartUi.BlendMode convertRequiredDartBlendMode(enums.DartBlendMode_Enum enumValue) {
-  final result = convertDartBlendMode(enumValue);
+$dartUi.BlendMode convertRequiredDartBlendModeType(enums.DartBlendModeType_Enum enumValue) {
+  final result = convertDartBlendModeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartBlendMode');
+    throw core.AssertionError('unable to parse required enum DartBlendModeType');
   }
 }
 
-$dartUi.BlendMode? convertDartBlendMode(enums.DartBlendMode_Enum enumValue) {
+$dartUi.BlendMode? convertDartBlendModeType(enums.DartBlendModeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartBlendMode_Enum.CLEAR:
+    case enums.DartBlendModeType_Enum.CLEAR:
       return $dartUi.BlendMode.clear;
-    case enums.DartBlendMode_Enum.SRC:
+    case enums.DartBlendModeType_Enum.SRC:
       return $dartUi.BlendMode.src;
-    case enums.DartBlendMode_Enum.DST:
+    case enums.DartBlendModeType_Enum.DST:
       return $dartUi.BlendMode.dst;
-    case enums.DartBlendMode_Enum.SRC_OVER:
+    case enums.DartBlendModeType_Enum.SRC_OVER:
       return $dartUi.BlendMode.srcOver;
-    case enums.DartBlendMode_Enum.DST_OVER:
+    case enums.DartBlendModeType_Enum.DST_OVER:
       return $dartUi.BlendMode.dstOver;
-    case enums.DartBlendMode_Enum.SRC_IN:
+    case enums.DartBlendModeType_Enum.SRC_IN:
       return $dartUi.BlendMode.srcIn;
-    case enums.DartBlendMode_Enum.DST_IN:
+    case enums.DartBlendModeType_Enum.DST_IN:
       return $dartUi.BlendMode.dstIn;
-    case enums.DartBlendMode_Enum.SRC_OUT:
+    case enums.DartBlendModeType_Enum.SRC_OUT:
       return $dartUi.BlendMode.srcOut;
-    case enums.DartBlendMode_Enum.DST_OUT:
+    case enums.DartBlendModeType_Enum.DST_OUT:
       return $dartUi.BlendMode.dstOut;
-    case enums.DartBlendMode_Enum.SRC_A_TOP:
+    case enums.DartBlendModeType_Enum.SRC_A_TOP:
       return $dartUi.BlendMode.srcATop;
-    case enums.DartBlendMode_Enum.DST_A_TOP:
+    case enums.DartBlendModeType_Enum.DST_A_TOP:
       return $dartUi.BlendMode.dstATop;
-    case enums.DartBlendMode_Enum.XOR:
+    case enums.DartBlendModeType_Enum.XOR:
       return $dartUi.BlendMode.xor;
-    case enums.DartBlendMode_Enum.PLUS:
+    case enums.DartBlendModeType_Enum.PLUS:
       return $dartUi.BlendMode.plus;
-    case enums.DartBlendMode_Enum.MODULATE:
+    case enums.DartBlendModeType_Enum.MODULATE:
       return $dartUi.BlendMode.modulate;
-    case enums.DartBlendMode_Enum.SCREEN:
+    case enums.DartBlendModeType_Enum.SCREEN:
       return $dartUi.BlendMode.screen;
-    case enums.DartBlendMode_Enum.OVERLAY:
+    case enums.DartBlendModeType_Enum.OVERLAY:
       return $dartUi.BlendMode.overlay;
-    case enums.DartBlendMode_Enum.DARKEN:
+    case enums.DartBlendModeType_Enum.DARKEN:
       return $dartUi.BlendMode.darken;
-    case enums.DartBlendMode_Enum.LIGHTEN:
+    case enums.DartBlendModeType_Enum.LIGHTEN:
       return $dartUi.BlendMode.lighten;
-    case enums.DartBlendMode_Enum.COLOR_DODGE:
+    case enums.DartBlendModeType_Enum.COLOR_DODGE:
       return $dartUi.BlendMode.colorDodge;
-    case enums.DartBlendMode_Enum.COLOR_BURN:
+    case enums.DartBlendModeType_Enum.COLOR_BURN:
       return $dartUi.BlendMode.colorBurn;
-    case enums.DartBlendMode_Enum.HARD_LIGHT:
+    case enums.DartBlendModeType_Enum.HARD_LIGHT:
       return $dartUi.BlendMode.hardLight;
-    case enums.DartBlendMode_Enum.SOFT_LIGHT:
+    case enums.DartBlendModeType_Enum.SOFT_LIGHT:
       return $dartUi.BlendMode.softLight;
-    case enums.DartBlendMode_Enum.DIFFERENCE:
+    case enums.DartBlendModeType_Enum.DIFFERENCE:
       return $dartUi.BlendMode.difference;
-    case enums.DartBlendMode_Enum.EXCLUSION:
+    case enums.DartBlendModeType_Enum.EXCLUSION:
       return $dartUi.BlendMode.exclusion;
-    case enums.DartBlendMode_Enum.MULTIPLY:
+    case enums.DartBlendModeType_Enum.MULTIPLY:
       return $dartUi.BlendMode.multiply;
-    case enums.DartBlendMode_Enum.HUE:
+    case enums.DartBlendModeType_Enum.HUE:
       return $dartUi.BlendMode.hue;
-    case enums.DartBlendMode_Enum.SATURATION:
+    case enums.DartBlendModeType_Enum.SATURATION:
       return $dartUi.BlendMode.saturation;
-    case enums.DartBlendMode_Enum.COLOR:
+    case enums.DartBlendModeType_Enum.COLOR:
       return $dartUi.BlendMode.color;
-    case enums.DartBlendMode_Enum.LUMINOSITY:
+    case enums.DartBlendModeType_Enum.LUMINOSITY:
       return $dartUi.BlendMode.luminosity;
     default:
       return null;
   }
 }
 
-$dartUi.BlurStyle convertRequiredDartBlurStyle(enums.DartBlurStyle_Enum enumValue) {
-  final result = convertDartBlurStyle(enumValue);
+$dartUi.BlurStyle convertRequiredDartBlurStyleType(enums.DartBlurStyleType_Enum enumValue) {
+  final result = convertDartBlurStyleType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartBlurStyle');
+    throw core.AssertionError('unable to parse required enum DartBlurStyleType');
   }
 }
 
-$dartUi.BlurStyle? convertDartBlurStyle(enums.DartBlurStyle_Enum enumValue) {
+$dartUi.BlurStyle? convertDartBlurStyleType(enums.DartBlurStyleType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartBlurStyle_Enum.NORMAL:
+    case enums.DartBlurStyleType_Enum.NORMAL:
       return $dartUi.BlurStyle.normal;
-    case enums.DartBlurStyle_Enum.SOLID:
+    case enums.DartBlurStyleType_Enum.SOLID:
       return $dartUi.BlurStyle.solid;
-    case enums.DartBlurStyle_Enum.OUTER:
+    case enums.DartBlurStyleType_Enum.OUTER:
       return $dartUi.BlurStyle.outer;
-    case enums.DartBlurStyle_Enum.INNER:
+    case enums.DartBlurStyleType_Enum.INNER:
       return $dartUi.BlurStyle.inner;
     default:
       return null;
   }
 }
 
-$dartUi.BoxHeightStyle convertRequiredDartBoxHeightStyle(enums.DartBoxHeightStyle_Enum enumValue) {
-  final result = convertDartBoxHeightStyle(enumValue);
+$dartUi.BoxHeightStyle convertRequiredDartBoxHeightStyleType(enums.DartBoxHeightStyleType_Enum enumValue) {
+  final result = convertDartBoxHeightStyleType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartBoxHeightStyle');
+    throw core.AssertionError('unable to parse required enum DartBoxHeightStyleType');
   }
 }
 
-$dartUi.BoxHeightStyle? convertDartBoxHeightStyle(enums.DartBoxHeightStyle_Enum enumValue) {
+$dartUi.BoxHeightStyle? convertDartBoxHeightStyleType(enums.DartBoxHeightStyleType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartBoxHeightStyle_Enum.TIGHT:
+    case enums.DartBoxHeightStyleType_Enum.TIGHT:
       return $dartUi.BoxHeightStyle.tight;
-    case enums.DartBoxHeightStyle_Enum.MAX:
+    case enums.DartBoxHeightStyleType_Enum.MAX:
       return $dartUi.BoxHeightStyle.max;
-    case enums.DartBoxHeightStyle_Enum.INCLUDE_LINE_SPACING_MIDDLE:
+    case enums.DartBoxHeightStyleType_Enum.INCLUDE_LINE_SPACING_MIDDLE:
       return $dartUi.BoxHeightStyle.includeLineSpacingMiddle;
-    case enums.DartBoxHeightStyle_Enum.INCLUDE_LINE_SPACING_TOP:
+    case enums.DartBoxHeightStyleType_Enum.INCLUDE_LINE_SPACING_TOP:
       return $dartUi.BoxHeightStyle.includeLineSpacingTop;
-    case enums.DartBoxHeightStyle_Enum.INCLUDE_LINE_SPACING_BOTTOM:
+    case enums.DartBoxHeightStyleType_Enum.INCLUDE_LINE_SPACING_BOTTOM:
       return $dartUi.BoxHeightStyle.includeLineSpacingBottom;
-    case enums.DartBoxHeightStyle_Enum.STRUT:
+    case enums.DartBoxHeightStyleType_Enum.STRUT:
       return $dartUi.BoxHeightStyle.strut;
     default:
       return null;
   }
 }
 
-$dartUi.BoxWidthStyle convertRequiredDartBoxWidthStyle(enums.DartBoxWidthStyle_Enum enumValue) {
-  final result = convertDartBoxWidthStyle(enumValue);
+$dartUi.BoxWidthStyle convertRequiredDartBoxWidthStyleType(enums.DartBoxWidthStyleType_Enum enumValue) {
+  final result = convertDartBoxWidthStyleType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartBoxWidthStyle');
+    throw core.AssertionError('unable to parse required enum DartBoxWidthStyleType');
   }
 }
 
-$dartUi.BoxWidthStyle? convertDartBoxWidthStyle(enums.DartBoxWidthStyle_Enum enumValue) {
+$dartUi.BoxWidthStyle? convertDartBoxWidthStyleType(enums.DartBoxWidthStyleType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartBoxWidthStyle_Enum.TIGHT:
+    case enums.DartBoxWidthStyleType_Enum.TIGHT:
       return $dartUi.BoxWidthStyle.tight;
-    case enums.DartBoxWidthStyle_Enum.MAX:
+    case enums.DartBoxWidthStyleType_Enum.MAX:
       return $dartUi.BoxWidthStyle.max;
     default:
       return null;
   }
 }
 
-$dartUi.Brightness convertRequiredDartBrightness(enums.DartBrightness_Enum enumValue) {
-  final result = convertDartBrightness(enumValue);
+$dartUi.Brightness convertRequiredDartBrightnessType(enums.DartBrightnessType_Enum enumValue) {
+  final result = convertDartBrightnessType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartBrightness');
+    throw core.AssertionError('unable to parse required enum DartBrightnessType');
   }
 }
 
-$dartUi.Brightness? convertDartBrightness(enums.DartBrightness_Enum enumValue) {
+$dartUi.Brightness? convertDartBrightnessType(enums.DartBrightnessType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartBrightness_Enum.DARK:
+    case enums.DartBrightnessType_Enum.DARK:
       return $dartUi.Brightness.dark;
-    case enums.DartBrightness_Enum.LIGHT:
+    case enums.DartBrightnessType_Enum.LIGHT:
       return $dartUi.Brightness.light;
     default:
       return null;
   }
 }
 
-$dartUi.Clip convertRequiredDartClip(enums.DartClip_Enum enumValue) {
-  final result = convertDartClip(enumValue);
+$dartUi.Clip convertRequiredDartClipType(enums.DartClipType_Enum enumValue) {
+  final result = convertDartClipType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartClip');
+    throw core.AssertionError('unable to parse required enum DartClipType');
   }
 }
 
-$dartUi.Clip? convertDartClip(enums.DartClip_Enum enumValue) {
+$dartUi.Clip? convertDartClipType(enums.DartClipType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartClip_Enum.NONE:
+    case enums.DartClipType_Enum.NONE:
       return $dartUi.Clip.none;
-    case enums.DartClip_Enum.HARD_EDGE:
+    case enums.DartClipType_Enum.HARD_EDGE:
       return $dartUi.Clip.hardEdge;
-    case enums.DartClip_Enum.ANTI_ALIAS:
+    case enums.DartClipType_Enum.ANTI_ALIAS:
       return $dartUi.Clip.antiAlias;
-    case enums.DartClip_Enum.ANTI_ALIAS_WITH_SAVE_LAYER:
+    case enums.DartClipType_Enum.ANTI_ALIAS_WITH_SAVE_LAYER:
       return $dartUi.Clip.antiAliasWithSaveLayer;
     default:
       return null;
   }
 }
 
-$dartUi.DisplayFeatureState convertRequiredDartDisplayFeatureState(enums.DartDisplayFeatureState_Enum enumValue) {
-  final result = convertDartDisplayFeatureState(enumValue);
+$dartUi.DisplayFeatureState convertRequiredDartDisplayFeatureStateType(enums.DartDisplayFeatureStateType_Enum enumValue) {
+  final result = convertDartDisplayFeatureStateType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartDisplayFeatureState');
+    throw core.AssertionError('unable to parse required enum DartDisplayFeatureStateType');
   }
 }
 
-$dartUi.DisplayFeatureState? convertDartDisplayFeatureState(enums.DartDisplayFeatureState_Enum enumValue) {
+$dartUi.DisplayFeatureState? convertDartDisplayFeatureStateType(enums.DartDisplayFeatureStateType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartDisplayFeatureState_Enum.UNKNOWN:
+    case enums.DartDisplayFeatureStateType_Enum.UNKNOWN:
       return $dartUi.DisplayFeatureState.unknown;
-    case enums.DartDisplayFeatureState_Enum.POSTURE_FLAT:
+    case enums.DartDisplayFeatureStateType_Enum.POSTURE_FLAT:
       return $dartUi.DisplayFeatureState.postureFlat;
-    case enums.DartDisplayFeatureState_Enum.POSTURE_HALF_OPENED:
+    case enums.DartDisplayFeatureStateType_Enum.POSTURE_HALF_OPENED:
       return $dartUi.DisplayFeatureState.postureHalfOpened;
     default:
       return null;
   }
 }
 
-$dartUi.DisplayFeatureType convertRequiredDartDisplayFeatureType(enums.DartDisplayFeatureType_Enum enumValue) {
-  final result = convertDartDisplayFeatureType(enumValue);
+$dartUi.DisplayFeatureType convertRequiredDartDisplayFeatureTypeType(enums.DartDisplayFeatureTypeType_Enum enumValue) {
+  final result = convertDartDisplayFeatureTypeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartDisplayFeatureType');
+    throw core.AssertionError('unable to parse required enum DartDisplayFeatureTypeType');
   }
 }
 
-$dartUi.DisplayFeatureType? convertDartDisplayFeatureType(enums.DartDisplayFeatureType_Enum enumValue) {
+$dartUi.DisplayFeatureType? convertDartDisplayFeatureTypeType(enums.DartDisplayFeatureTypeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartDisplayFeatureType_Enum.UNKNOWN:
+    case enums.DartDisplayFeatureTypeType_Enum.UNKNOWN:
       return $dartUi.DisplayFeatureType.unknown;
-    case enums.DartDisplayFeatureType_Enum.FOLD:
+    case enums.DartDisplayFeatureTypeType_Enum.FOLD:
       return $dartUi.DisplayFeatureType.fold;
-    case enums.DartDisplayFeatureType_Enum.HINGE:
+    case enums.DartDisplayFeatureTypeType_Enum.HINGE:
       return $dartUi.DisplayFeatureType.hinge;
-    case enums.DartDisplayFeatureType_Enum.CUTOUT:
+    case enums.DartDisplayFeatureTypeType_Enum.CUTOUT:
       return $dartUi.DisplayFeatureType.cutout;
     default:
       return null;
   }
 }
 
-$dartUi.FilterQuality convertRequiredDartFilterQuality(enums.DartFilterQuality_Enum enumValue) {
-  final result = convertDartFilterQuality(enumValue);
+$dartUi.FilterQuality convertRequiredDartFilterQualityType(enums.DartFilterQualityType_Enum enumValue) {
+  final result = convertDartFilterQualityType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartFilterQuality');
+    throw core.AssertionError('unable to parse required enum DartFilterQualityType');
   }
 }
 
-$dartUi.FilterQuality? convertDartFilterQuality(enums.DartFilterQuality_Enum enumValue) {
+$dartUi.FilterQuality? convertDartFilterQualityType(enums.DartFilterQualityType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartFilterQuality_Enum.NONE:
+    case enums.DartFilterQualityType_Enum.NONE:
       return $dartUi.FilterQuality.none;
-    case enums.DartFilterQuality_Enum.LOW:
+    case enums.DartFilterQualityType_Enum.LOW:
       return $dartUi.FilterQuality.low;
-    case enums.DartFilterQuality_Enum.MEDIUM:
+    case enums.DartFilterQualityType_Enum.MEDIUM:
       return $dartUi.FilterQuality.medium;
-    case enums.DartFilterQuality_Enum.HIGH:
+    case enums.DartFilterQualityType_Enum.HIGH:
       return $dartUi.FilterQuality.high;
     default:
       return null;
   }
 }
 
-$dartUi.FontStyle convertRequiredDartFontStyle(enums.DartFontStyle_Enum enumValue) {
-  final result = convertDartFontStyle(enumValue);
+$dartUi.FontStyle convertRequiredDartFontStyleType(enums.DartFontStyleType_Enum enumValue) {
+  final result = convertDartFontStyleType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartFontStyle');
+    throw core.AssertionError('unable to parse required enum DartFontStyleType');
   }
 }
 
-$dartUi.FontStyle? convertDartFontStyle(enums.DartFontStyle_Enum enumValue) {
+$dartUi.FontStyle? convertDartFontStyleType(enums.DartFontStyleType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartFontStyle_Enum.NORMAL:
+    case enums.DartFontStyleType_Enum.NORMAL:
       return $dartUi.FontStyle.normal;
-    case enums.DartFontStyle_Enum.ITALIC:
+    case enums.DartFontStyleType_Enum.ITALIC:
       return $dartUi.FontStyle.italic;
     default:
       return null;
   }
 }
 
-$dartUi.PlaceholderAlignment convertRequiredDartPlaceholderAlignment(enums.DartPlaceholderAlignment_Enum enumValue) {
-  final result = convertDartPlaceholderAlignment(enumValue);
+$dartUi.PlaceholderAlignment convertRequiredDartPlaceholderAlignmentType(enums.DartPlaceholderAlignmentType_Enum enumValue) {
+  final result = convertDartPlaceholderAlignmentType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartPlaceholderAlignment');
+    throw core.AssertionError('unable to parse required enum DartPlaceholderAlignmentType');
   }
 }
 
-$dartUi.PlaceholderAlignment? convertDartPlaceholderAlignment(enums.DartPlaceholderAlignment_Enum enumValue) {
+$dartUi.PlaceholderAlignment? convertDartPlaceholderAlignmentType(enums.DartPlaceholderAlignmentType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartPlaceholderAlignment_Enum.BASELINE:
+    case enums.DartPlaceholderAlignmentType_Enum.BASELINE:
       return $dartUi.PlaceholderAlignment.baseline;
-    case enums.DartPlaceholderAlignment_Enum.ABOVE_BASELINE:
+    case enums.DartPlaceholderAlignmentType_Enum.ABOVE_BASELINE:
       return $dartUi.PlaceholderAlignment.aboveBaseline;
-    case enums.DartPlaceholderAlignment_Enum.BELOW_BASELINE:
+    case enums.DartPlaceholderAlignmentType_Enum.BELOW_BASELINE:
       return $dartUi.PlaceholderAlignment.belowBaseline;
-    case enums.DartPlaceholderAlignment_Enum.TOP:
+    case enums.DartPlaceholderAlignmentType_Enum.TOP:
       return $dartUi.PlaceholderAlignment.top;
-    case enums.DartPlaceholderAlignment_Enum.BOTTOM:
+    case enums.DartPlaceholderAlignmentType_Enum.BOTTOM:
       return $dartUi.PlaceholderAlignment.bottom;
-    case enums.DartPlaceholderAlignment_Enum.MIDDLE:
+    case enums.DartPlaceholderAlignmentType_Enum.MIDDLE:
       return $dartUi.PlaceholderAlignment.middle;
     default:
       return null;
   }
 }
 
-$dartUi.StrokeCap convertRequiredDartStrokeCap(enums.DartStrokeCap_Enum enumValue) {
-  final result = convertDartStrokeCap(enumValue);
+$dartUi.StrokeCap convertRequiredDartStrokeCapType(enums.DartStrokeCapType_Enum enumValue) {
+  final result = convertDartStrokeCapType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartStrokeCap');
+    throw core.AssertionError('unable to parse required enum DartStrokeCapType');
   }
 }
 
-$dartUi.StrokeCap? convertDartStrokeCap(enums.DartStrokeCap_Enum enumValue) {
+$dartUi.StrokeCap? convertDartStrokeCapType(enums.DartStrokeCapType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartStrokeCap_Enum.BUTT:
+    case enums.DartStrokeCapType_Enum.BUTT:
       return $dartUi.StrokeCap.butt;
-    case enums.DartStrokeCap_Enum.ROUND:
+    case enums.DartStrokeCapType_Enum.ROUND:
       return $dartUi.StrokeCap.round;
-    case enums.DartStrokeCap_Enum.SQUARE:
+    case enums.DartStrokeCapType_Enum.SQUARE:
       return $dartUi.StrokeCap.square;
     default:
       return null;
   }
 }
 
-$dartUi.TextAffinity convertRequiredDartTextAffinity(enums.DartTextAffinity_Enum enumValue) {
-  final result = convertDartTextAffinity(enumValue);
+$dartUi.TextAffinity convertRequiredDartTextAffinityType(enums.DartTextAffinityType_Enum enumValue) {
+  final result = convertDartTextAffinityType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartTextAffinity');
+    throw core.AssertionError('unable to parse required enum DartTextAffinityType');
   }
 }
 
-$dartUi.TextAffinity? convertDartTextAffinity(enums.DartTextAffinity_Enum enumValue) {
+$dartUi.TextAffinity? convertDartTextAffinityType(enums.DartTextAffinityType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartTextAffinity_Enum.UPSTREAM:
+    case enums.DartTextAffinityType_Enum.UPSTREAM:
       return $dartUi.TextAffinity.upstream;
-    case enums.DartTextAffinity_Enum.DOWNSTREAM:
+    case enums.DartTextAffinityType_Enum.DOWNSTREAM:
       return $dartUi.TextAffinity.downstream;
     default:
       return null;
   }
 }
 
-$dartUi.TextAlign convertRequiredDartTextAlign(enums.DartTextAlign_Enum enumValue) {
-  final result = convertDartTextAlign(enumValue);
+$dartUi.TextAlign convertRequiredDartTextAlignType(enums.DartTextAlignType_Enum enumValue) {
+  final result = convertDartTextAlignType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartTextAlign');
+    throw core.AssertionError('unable to parse required enum DartTextAlignType');
   }
 }
 
-$dartUi.TextAlign? convertDartTextAlign(enums.DartTextAlign_Enum enumValue) {
+$dartUi.TextAlign? convertDartTextAlignType(enums.DartTextAlignType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartTextAlign_Enum.LEFT:
+    case enums.DartTextAlignType_Enum.LEFT:
       return $dartUi.TextAlign.left;
-    case enums.DartTextAlign_Enum.RIGHT:
+    case enums.DartTextAlignType_Enum.RIGHT:
       return $dartUi.TextAlign.right;
-    case enums.DartTextAlign_Enum.CENTER:
+    case enums.DartTextAlignType_Enum.CENTER:
       return $dartUi.TextAlign.center;
-    case enums.DartTextAlign_Enum.JUSTIFY:
+    case enums.DartTextAlignType_Enum.JUSTIFY:
       return $dartUi.TextAlign.justify;
-    case enums.DartTextAlign_Enum.START:
+    case enums.DartTextAlignType_Enum.START:
       return $dartUi.TextAlign.start;
-    case enums.DartTextAlign_Enum.END:
+    case enums.DartTextAlignType_Enum.END:
       return $dartUi.TextAlign.end;
     default:
       return null;
   }
 }
 
-$dartUi.TextBaseline convertRequiredDartTextBaseline(enums.DartTextBaseline_Enum enumValue) {
-  final result = convertDartTextBaseline(enumValue);
+$dartUi.TextBaseline convertRequiredDartTextBaselineType(enums.DartTextBaselineType_Enum enumValue) {
+  final result = convertDartTextBaselineType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartTextBaseline');
+    throw core.AssertionError('unable to parse required enum DartTextBaselineType');
   }
 }
 
-$dartUi.TextBaseline? convertDartTextBaseline(enums.DartTextBaseline_Enum enumValue) {
+$dartUi.TextBaseline? convertDartTextBaselineType(enums.DartTextBaselineType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartTextBaseline_Enum.ALPHABETIC:
+    case enums.DartTextBaselineType_Enum.ALPHABETIC:
       return $dartUi.TextBaseline.alphabetic;
-    case enums.DartTextBaseline_Enum.IDEOGRAPHIC:
+    case enums.DartTextBaselineType_Enum.IDEOGRAPHIC:
       return $dartUi.TextBaseline.ideographic;
     default:
       return null;
   }
 }
 
-$dartUi.TextDecorationStyle convertRequiredDartTextDecorationStyle(enums.DartTextDecorationStyle_Enum enumValue) {
-  final result = convertDartTextDecorationStyle(enumValue);
+$dartUi.TextDecorationStyle convertRequiredDartTextDecorationStyleType(enums.DartTextDecorationStyleType_Enum enumValue) {
+  final result = convertDartTextDecorationStyleType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartTextDecorationStyle');
+    throw core.AssertionError('unable to parse required enum DartTextDecorationStyleType');
   }
 }
 
-$dartUi.TextDecorationStyle? convertDartTextDecorationStyle(enums.DartTextDecorationStyle_Enum enumValue) {
+$dartUi.TextDecorationStyle? convertDartTextDecorationStyleType(enums.DartTextDecorationStyleType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartTextDecorationStyle_Enum.SOLID:
+    case enums.DartTextDecorationStyleType_Enum.SOLID:
       return $dartUi.TextDecorationStyle.solid;
-    case enums.DartTextDecorationStyle_Enum.DOUBLE:
+    case enums.DartTextDecorationStyleType_Enum.DOUBLE:
       return $dartUi.TextDecorationStyle.double;
-    case enums.DartTextDecorationStyle_Enum.DOTTED:
+    case enums.DartTextDecorationStyleType_Enum.DOTTED:
       return $dartUi.TextDecorationStyle.dotted;
-    case enums.DartTextDecorationStyle_Enum.DASHED:
+    case enums.DartTextDecorationStyleType_Enum.DASHED:
       return $dartUi.TextDecorationStyle.dashed;
-    case enums.DartTextDecorationStyle_Enum.WAVY:
+    case enums.DartTextDecorationStyleType_Enum.WAVY:
       return $dartUi.TextDecorationStyle.wavy;
     default:
       return null;
   }
 }
 
-$dartUi.TextDirection convertRequiredDartTextDirection(enums.DartTextDirection_Enum enumValue) {
-  final result = convertDartTextDirection(enumValue);
+$dartUi.TextDirection convertRequiredDartTextDirectionType(enums.DartTextDirectionType_Enum enumValue) {
+  final result = convertDartTextDirectionType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartTextDirection');
+    throw core.AssertionError('unable to parse required enum DartTextDirectionType');
   }
 }
 
-$dartUi.TextDirection? convertDartTextDirection(enums.DartTextDirection_Enum enumValue) {
+$dartUi.TextDirection? convertDartTextDirectionType(enums.DartTextDirectionType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartTextDirection_Enum.RTL:
+    case enums.DartTextDirectionType_Enum.RTL:
       return $dartUi.TextDirection.rtl;
-    case enums.DartTextDirection_Enum.LTR:
+    case enums.DartTextDirectionType_Enum.LTR:
       return $dartUi.TextDirection.ltr;
     default:
       return null;
   }
 }
 
-$dartUi.TextLeadingDistribution convertRequiredDartTextLeadingDistribution(enums.DartTextLeadingDistribution_Enum enumValue) {
-  final result = convertDartTextLeadingDistribution(enumValue);
+$dartUi.TextLeadingDistribution convertRequiredDartTextLeadingDistributionType(enums.DartTextLeadingDistributionType_Enum enumValue) {
+  final result = convertDartTextLeadingDistributionType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartTextLeadingDistribution');
+    throw core.AssertionError('unable to parse required enum DartTextLeadingDistributionType');
   }
 }
 
-$dartUi.TextLeadingDistribution? convertDartTextLeadingDistribution(enums.DartTextLeadingDistribution_Enum enumValue) {
+$dartUi.TextLeadingDistribution? convertDartTextLeadingDistributionType(enums.DartTextLeadingDistributionType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartTextLeadingDistribution_Enum.PROPORTIONAL:
+    case enums.DartTextLeadingDistributionType_Enum.PROPORTIONAL:
       return $dartUi.TextLeadingDistribution.proportional;
-    case enums.DartTextLeadingDistribution_Enum.EVEN:
+    case enums.DartTextLeadingDistributionType_Enum.EVEN:
       return $dartUi.TextLeadingDistribution.even;
     default:
       return null;
   }
 }
 
-$dartUi.TileMode convertRequiredDartTileMode(enums.DartTileMode_Enum enumValue) {
-  final result = convertDartTileMode(enumValue);
+$dartUi.TileMode convertRequiredDartTileModeType(enums.DartTileModeType_Enum enumValue) {
+  final result = convertDartTileModeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum DartTileMode');
+    throw core.AssertionError('unable to parse required enum DartTileModeType');
   }
 }
 
-$dartUi.TileMode? convertDartTileMode(enums.DartTileMode_Enum enumValue) {
+$dartUi.TileMode? convertDartTileModeType(enums.DartTileModeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.DartTileMode_Enum.CLAMP:
+    case enums.DartTileModeType_Enum.CLAMP:
       return $dartUi.TileMode.clamp;
-    case enums.DartTileMode_Enum.REPEATED:
+    case enums.DartTileModeType_Enum.REPEATED:
       return $dartUi.TileMode.repeated;
-    case enums.DartTileMode_Enum.MIRROR:
+    case enums.DartTileModeType_Enum.MIRROR:
       return $dartUi.TileMode.mirror;
-    case enums.DartTileMode_Enum.DECAL:
+    case enums.DartTileModeType_Enum.DECAL:
       return $dartUi.TileMode.decal;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsAutofill.AutofillContextAction convertRequiredFlutterAutofillContextAction(enums.FlutterAutofillContextAction_Enum enumValue) {
-  final result = convertFlutterAutofillContextAction(enumValue);
+$flutterSrcWidgetsAutofill.AutofillContextAction convertRequiredFlutterAutofillContextActionType(enums.FlutterAutofillContextActionType_Enum enumValue) {
+  final result = convertFlutterAutofillContextActionType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterAutofillContextAction');
+    throw core.AssertionError('unable to parse required enum FlutterAutofillContextActionType');
   }
 }
 
-$flutterSrcWidgetsAutofill.AutofillContextAction? convertFlutterAutofillContextAction(enums.FlutterAutofillContextAction_Enum enumValue) {
+$flutterSrcWidgetsAutofill.AutofillContextAction? convertFlutterAutofillContextActionType(enums.FlutterAutofillContextActionType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterAutofillContextAction_Enum.COMMIT:
+    case enums.FlutterAutofillContextActionType_Enum.COMMIT:
       return $flutterSrcWidgetsAutofill.AutofillContextAction.commit;
-    case enums.FlutterAutofillContextAction_Enum.CANCEL:
+    case enums.FlutterAutofillContextActionType_Enum.CANCEL:
       return $flutterSrcWidgetsAutofill.AutofillContextAction.cancel;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsForm.AutovalidateMode convertRequiredFlutterAutovalidateMode(enums.FlutterAutovalidateMode_Enum enumValue) {
-  final result = convertFlutterAutovalidateMode(enumValue);
+$flutterSrcWidgetsForm.AutovalidateMode convertRequiredFlutterAutovalidateModeType(enums.FlutterAutovalidateModeType_Enum enumValue) {
+  final result = convertFlutterAutovalidateModeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterAutovalidateMode');
+    throw core.AssertionError('unable to parse required enum FlutterAutovalidateModeType');
   }
 }
 
-$flutterSrcWidgetsForm.AutovalidateMode? convertFlutterAutovalidateMode(enums.FlutterAutovalidateMode_Enum enumValue) {
+$flutterSrcWidgetsForm.AutovalidateMode? convertFlutterAutovalidateModeType(enums.FlutterAutovalidateModeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterAutovalidateMode_Enum.DISABLED:
+    case enums.FlutterAutovalidateModeType_Enum.DISABLED:
       return $flutterSrcWidgetsForm.AutovalidateMode.disabled;
-    case enums.FlutterAutovalidateMode_Enum.ALWAYS:
+    case enums.FlutterAutovalidateModeType_Enum.ALWAYS:
       return $flutterSrcWidgetsForm.AutovalidateMode.always;
-    case enums.FlutterAutovalidateMode_Enum.ON_USER_INTERACTION:
+    case enums.FlutterAutovalidateModeType_Enum.ON_USER_INTERACTION:
       return $flutterSrcWidgetsForm.AutovalidateMode.onUserInteraction;
     default:
       return null;
   }
 }
 
-$flutterSrcPaintingBasicTypes.Axis convertRequiredFlutterAxis(enums.FlutterAxis_Enum enumValue) {
-  final result = convertFlutterAxis(enumValue);
+$flutterSrcPaintingBasicTypes.AxisDirection convertRequiredFlutterAxisDirectionType(enums.FlutterAxisDirectionType_Enum enumValue) {
+  final result = convertFlutterAxisDirectionType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterAxis');
+    throw core.AssertionError('unable to parse required enum FlutterAxisDirectionType');
   }
 }
 
-$flutterSrcPaintingBasicTypes.Axis? convertFlutterAxis(enums.FlutterAxis_Enum enumValue) {
+$flutterSrcPaintingBasicTypes.AxisDirection? convertFlutterAxisDirectionType(enums.FlutterAxisDirectionType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterAxis_Enum.HORIZONTAL:
-      return $flutterSrcPaintingBasicTypes.Axis.horizontal;
-    case enums.FlutterAxis_Enum.VERTICAL:
-      return $flutterSrcPaintingBasicTypes.Axis.vertical;
-    default:
-      return null;
-  }
-}
-
-$flutterSrcPaintingBasicTypes.AxisDirection convertRequiredFlutterAxisDirection(enums.FlutterAxisDirection_Enum enumValue) {
-  final result = convertFlutterAxisDirection(enumValue);
-  if(result != null) {
-    return result;
-  } else {
-    throw core.AssertionError('unable to parse required enum FlutterAxisDirection');
-  }
-}
-
-$flutterSrcPaintingBasicTypes.AxisDirection? convertFlutterAxisDirection(enums.FlutterAxisDirection_Enum enumValue) {
-  switch (enumValue) {
-    case enums.FlutterAxisDirection_Enum.UP:
+    case enums.FlutterAxisDirectionType_Enum.UP:
       return $flutterSrcPaintingBasicTypes.AxisDirection.up;
-    case enums.FlutterAxisDirection_Enum.RIGHT:
+    case enums.FlutterAxisDirectionType_Enum.RIGHT:
       return $flutterSrcPaintingBasicTypes.AxisDirection.right;
-    case enums.FlutterAxisDirection_Enum.DOWN:
+    case enums.FlutterAxisDirectionType_Enum.DOWN:
       return $flutterSrcPaintingBasicTypes.AxisDirection.down;
-    case enums.FlutterAxisDirection_Enum.LEFT:
+    case enums.FlutterAxisDirectionType_Enum.LEFT:
       return $flutterSrcPaintingBasicTypes.AxisDirection.left;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsBanner.BannerLocation convertRequiredFlutterBannerLocation(enums.FlutterBannerLocation_Enum enumValue) {
-  final result = convertFlutterBannerLocation(enumValue);
+$flutterSrcPaintingBasicTypes.Axis convertRequiredFlutterAxisType(enums.FlutterAxisType_Enum enumValue) {
+  final result = convertFlutterAxisType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterBannerLocation');
+    throw core.AssertionError('unable to parse required enum FlutterAxisType');
   }
 }
 
-$flutterSrcWidgetsBanner.BannerLocation? convertFlutterBannerLocation(enums.FlutterBannerLocation_Enum enumValue) {
+$flutterSrcPaintingBasicTypes.Axis? convertFlutterAxisType(enums.FlutterAxisType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterBannerLocation_Enum.TOP_START:
+    case enums.FlutterAxisType_Enum.HORIZONTAL:
+      return $flutterSrcPaintingBasicTypes.Axis.horizontal;
+    case enums.FlutterAxisType_Enum.VERTICAL:
+      return $flutterSrcPaintingBasicTypes.Axis.vertical;
+    default:
+      return null;
+  }
+}
+
+$flutterSrcWidgetsBanner.BannerLocation convertRequiredFlutterBannerLocationType(enums.FlutterBannerLocationType_Enum enumValue) {
+  final result = convertFlutterBannerLocationType(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum FlutterBannerLocationType');
+  }
+}
+
+$flutterSrcWidgetsBanner.BannerLocation? convertFlutterBannerLocationType(enums.FlutterBannerLocationType_Enum enumValue) {
+  switch (enumValue) {
+    case enums.FlutterBannerLocationType_Enum.TOP_START:
       return $flutterSrcWidgetsBanner.BannerLocation.topStart;
-    case enums.FlutterBannerLocation_Enum.TOP_END:
+    case enums.FlutterBannerLocationType_Enum.TOP_END:
       return $flutterSrcWidgetsBanner.BannerLocation.topEnd;
-    case enums.FlutterBannerLocation_Enum.BOTTOM_START:
+    case enums.FlutterBannerLocationType_Enum.BOTTOM_START:
       return $flutterSrcWidgetsBanner.BannerLocation.bottomStart;
-    case enums.FlutterBannerLocation_Enum.BOTTOM_END:
+    case enums.FlutterBannerLocationType_Enum.BOTTOM_END:
       return $flutterSrcWidgetsBanner.BannerLocation.bottomEnd;
     default:
       return null;
   }
 }
 
-$flutterSrcPaintingBorders.BorderStyle convertRequiredFlutterBorderStyle(enums.FlutterBorderStyle_Enum enumValue) {
-  final result = convertFlutterBorderStyle(enumValue);
+$flutterSrcPaintingBorders.BorderStyle convertRequiredFlutterBorderStyleType(enums.FlutterBorderStyleType_Enum enumValue) {
+  final result = convertFlutterBorderStyleType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterBorderStyle');
+    throw core.AssertionError('unable to parse required enum FlutterBorderStyleType');
   }
 }
 
-$flutterSrcPaintingBorders.BorderStyle? convertFlutterBorderStyle(enums.FlutterBorderStyle_Enum enumValue) {
+$flutterSrcPaintingBorders.BorderStyle? convertFlutterBorderStyleType(enums.FlutterBorderStyleType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterBorderStyle_Enum.NONE:
+    case enums.FlutterBorderStyleType_Enum.NONE:
       return $flutterSrcPaintingBorders.BorderStyle.none;
-    case enums.FlutterBorderStyle_Enum.SOLID:
+    case enums.FlutterBorderStyleType_Enum.SOLID:
       return $flutterSrcPaintingBorders.BorderStyle.solid;
     default:
       return null;
   }
 }
 
-$flutterSrcPaintingBoxFit.BoxFit convertRequiredFlutterBoxFit(enums.FlutterBoxFit_Enum enumValue) {
-  final result = convertFlutterBoxFit(enumValue);
+$flutterSrcPaintingBoxFit.BoxFit convertRequiredFlutterBoxFitType(enums.FlutterBoxFitType_Enum enumValue) {
+  final result = convertFlutterBoxFitType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterBoxFit');
+    throw core.AssertionError('unable to parse required enum FlutterBoxFitType');
   }
 }
 
-$flutterSrcPaintingBoxFit.BoxFit? convertFlutterBoxFit(enums.FlutterBoxFit_Enum enumValue) {
+$flutterSrcPaintingBoxFit.BoxFit? convertFlutterBoxFitType(enums.FlutterBoxFitType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterBoxFit_Enum.FILL:
+    case enums.FlutterBoxFitType_Enum.FILL:
       return $flutterSrcPaintingBoxFit.BoxFit.fill;
-    case enums.FlutterBoxFit_Enum.CONTAIN:
+    case enums.FlutterBoxFitType_Enum.CONTAIN:
       return $flutterSrcPaintingBoxFit.BoxFit.contain;
-    case enums.FlutterBoxFit_Enum.COVER:
+    case enums.FlutterBoxFitType_Enum.COVER:
       return $flutterSrcPaintingBoxFit.BoxFit.cover;
-    case enums.FlutterBoxFit_Enum.FIT_WIDTH:
+    case enums.FlutterBoxFitType_Enum.FIT_WIDTH:
       return $flutterSrcPaintingBoxFit.BoxFit.fitWidth;
-    case enums.FlutterBoxFit_Enum.FIT_HEIGHT:
+    case enums.FlutterBoxFitType_Enum.FIT_HEIGHT:
       return $flutterSrcPaintingBoxFit.BoxFit.fitHeight;
-    case enums.FlutterBoxFit_Enum.NONE:
+    case enums.FlutterBoxFitType_Enum.NONE:
       return $flutterSrcPaintingBoxFit.BoxFit.none;
-    case enums.FlutterBoxFit_Enum.SCALE_DOWN:
+    case enums.FlutterBoxFitType_Enum.SCALE_DOWN:
       return $flutterSrcPaintingBoxFit.BoxFit.scaleDown;
     default:
       return null;
   }
 }
 
-$flutterSrcPaintingBoxBorder.BoxShape convertRequiredFlutterBoxShape(enums.FlutterBoxShape_Enum enumValue) {
-  final result = convertFlutterBoxShape(enumValue);
+$flutterSrcPaintingBoxBorder.BoxShape convertRequiredFlutterBoxShapeType(enums.FlutterBoxShapeType_Enum enumValue) {
+  final result = convertFlutterBoxShapeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterBoxShape');
+    throw core.AssertionError('unable to parse required enum FlutterBoxShapeType');
   }
 }
 
-$flutterSrcPaintingBoxBorder.BoxShape? convertFlutterBoxShape(enums.FlutterBoxShape_Enum enumValue) {
+$flutterSrcPaintingBoxBorder.BoxShape? convertFlutterBoxShapeType(enums.FlutterBoxShapeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterBoxShape_Enum.RECTANGLE:
+    case enums.FlutterBoxShapeType_Enum.RECTANGLE:
       return $flutterSrcPaintingBoxBorder.BoxShape.rectangle;
-    case enums.FlutterBoxShape_Enum.CIRCLE:
+    case enums.FlutterBoxShapeType_Enum.CIRCLE:
       return $flutterSrcPaintingBoxBorder.BoxShape.circle;
     default:
       return null;
   }
 }
 
-$flutterSrcRenderingViewport.CacheExtentStyle convertRequiredFlutterCacheExtentStyle(enums.FlutterCacheExtentStyle_Enum enumValue) {
-  final result = convertFlutterCacheExtentStyle(enumValue);
+$flutterSrcRenderingViewport.CacheExtentStyle convertRequiredFlutterCacheExtentStyleType(enums.FlutterCacheExtentStyleType_Enum enumValue) {
+  final result = convertFlutterCacheExtentStyleType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterCacheExtentStyle');
+    throw core.AssertionError('unable to parse required enum FlutterCacheExtentStyleType');
   }
 }
 
-$flutterSrcRenderingViewport.CacheExtentStyle? convertFlutterCacheExtentStyle(enums.FlutterCacheExtentStyle_Enum enumValue) {
+$flutterSrcRenderingViewport.CacheExtentStyle? convertFlutterCacheExtentStyleType(enums.FlutterCacheExtentStyleType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterCacheExtentStyle_Enum.PIXEL:
+    case enums.FlutterCacheExtentStyleType_Enum.PIXEL:
       return $flutterSrcRenderingViewport.CacheExtentStyle.pixel;
-    case enums.FlutterCacheExtentStyle_Enum.VIEWPORT:
+    case enums.FlutterCacheExtentStyleType_Enum.VIEWPORT:
       return $flutterSrcRenderingViewport.CacheExtentStyle.viewport;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsTextSelection.ClipboardStatus convertRequiredFlutterClipboardStatus(enums.FlutterClipboardStatus_Enum enumValue) {
-  final result = convertFlutterClipboardStatus(enumValue);
+$flutterSrcWidgetsTextSelection.ClipboardStatus convertRequiredFlutterClipboardStatusType(enums.FlutterClipboardStatusType_Enum enumValue) {
+  final result = convertFlutterClipboardStatusType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterClipboardStatus');
+    throw core.AssertionError('unable to parse required enum FlutterClipboardStatusType');
   }
 }
 
-$flutterSrcWidgetsTextSelection.ClipboardStatus? convertFlutterClipboardStatus(enums.FlutterClipboardStatus_Enum enumValue) {
+$flutterSrcWidgetsTextSelection.ClipboardStatus? convertFlutterClipboardStatusType(enums.FlutterClipboardStatusType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterClipboardStatus_Enum.PASTEABLE:
+    case enums.FlutterClipboardStatusType_Enum.PASTEABLE:
       return $flutterSrcWidgetsTextSelection.ClipboardStatus.pasteable;
-    case enums.FlutterClipboardStatus_Enum.UNKNOWN:
+    case enums.FlutterClipboardStatusType_Enum.UNKNOWN:
       return $flutterSrcWidgetsTextSelection.ClipboardStatus.unknown;
-    case enums.FlutterClipboardStatus_Enum.NOT_PASTEABLE:
+    case enums.FlutterClipboardStatusType_Enum.NOT_PASTEABLE:
       return $flutterSrcWidgetsTextSelection.ClipboardStatus.notPasteable;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType convertRequiredFlutterContextMenuButtonType(enums.FlutterContextMenuButtonType_Enum enumValue) {
-  final result = convertFlutterContextMenuButtonType(enumValue);
+$flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType convertRequiredFlutterContextMenuButtonTypeType(enums.FlutterContextMenuButtonTypeType_Enum enumValue) {
+  final result = convertFlutterContextMenuButtonTypeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterContextMenuButtonType');
+    throw core.AssertionError('unable to parse required enum FlutterContextMenuButtonTypeType');
   }
 }
 
-$flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType? convertFlutterContextMenuButtonType(enums.FlutterContextMenuButtonType_Enum enumValue) {
+$flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType? convertFlutterContextMenuButtonTypeType(enums.FlutterContextMenuButtonTypeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterContextMenuButtonType_Enum.CUT:
+    case enums.FlutterContextMenuButtonTypeType_Enum.CUT:
       return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.cut;
-    case enums.FlutterContextMenuButtonType_Enum.COPY:
+    case enums.FlutterContextMenuButtonTypeType_Enum.COPY:
       return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.copy;
-    case enums.FlutterContextMenuButtonType_Enum.PASTE:
+    case enums.FlutterContextMenuButtonTypeType_Enum.PASTE:
       return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.paste;
-    case enums.FlutterContextMenuButtonType_Enum.SELECT_ALL:
+    case enums.FlutterContextMenuButtonTypeType_Enum.SELECT_ALL:
       return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.selectAll;
-    case enums.FlutterContextMenuButtonType_Enum.DELETE:
+    case enums.FlutterContextMenuButtonTypeType_Enum.DELETE:
       return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.delete;
-    case enums.FlutterContextMenuButtonType_Enum.LOOK_UP:
+    case enums.FlutterContextMenuButtonTypeType_Enum.LOOK_UP:
       return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.lookUp;
-    case enums.FlutterContextMenuButtonType_Enum.SEARCH_WEB:
+    case enums.FlutterContextMenuButtonTypeType_Enum.SEARCH_WEB:
       return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.searchWeb;
-    case enums.FlutterContextMenuButtonType_Enum.SHARE:
+    case enums.FlutterContextMenuButtonTypeType_Enum.SHARE:
       return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.share;
-    case enums.FlutterContextMenuButtonType_Enum.LIVE_TEXT_INPUT:
+    case enums.FlutterContextMenuButtonTypeType_Enum.LIVE_TEXT_INPUT:
       return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.liveTextInput;
-    case enums.FlutterContextMenuButtonType_Enum.CUSTOM:
+    case enums.FlutterContextMenuButtonTypeType_Enum.CUSTOM:
       return $flutterSrcWidgetsContextMenuButtonItem.ContextMenuButtonType.custom;
     default:
       return null;
   }
 }
 
-$flutterSrcRenderingFlex.CrossAxisAlignment convertRequiredFlutterCrossAxisAlignment(enums.FlutterCrossAxisAlignment_Enum enumValue) {
-  final result = convertFlutterCrossAxisAlignment(enumValue);
+$flutterSrcRenderingFlex.CrossAxisAlignment convertRequiredFlutterCrossAxisAlignmentType(enums.FlutterCrossAxisAlignmentType_Enum enumValue) {
+  final result = convertFlutterCrossAxisAlignmentType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterCrossAxisAlignment');
+    throw core.AssertionError('unable to parse required enum FlutterCrossAxisAlignmentType');
   }
 }
 
-$flutterSrcRenderingFlex.CrossAxisAlignment? convertFlutterCrossAxisAlignment(enums.FlutterCrossAxisAlignment_Enum enumValue) {
+$flutterSrcRenderingFlex.CrossAxisAlignment? convertFlutterCrossAxisAlignmentType(enums.FlutterCrossAxisAlignmentType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterCrossAxisAlignment_Enum.START:
+    case enums.FlutterCrossAxisAlignmentType_Enum.START:
       return $flutterSrcRenderingFlex.CrossAxisAlignment.start;
-    case enums.FlutterCrossAxisAlignment_Enum.END:
+    case enums.FlutterCrossAxisAlignmentType_Enum.END:
       return $flutterSrcRenderingFlex.CrossAxisAlignment.end;
-    case enums.FlutterCrossAxisAlignment_Enum.CENTER:
+    case enums.FlutterCrossAxisAlignmentType_Enum.CENTER:
       return $flutterSrcRenderingFlex.CrossAxisAlignment.center;
-    case enums.FlutterCrossAxisAlignment_Enum.STRETCH:
+    case enums.FlutterCrossAxisAlignmentType_Enum.STRETCH:
       return $flutterSrcRenderingFlex.CrossAxisAlignment.stretch;
-    case enums.FlutterCrossAxisAlignment_Enum.BASELINE:
+    case enums.FlutterCrossAxisAlignmentType_Enum.BASELINE:
       return $flutterSrcRenderingFlex.CrossAxisAlignment.baseline;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsAnimatedCrossFade.CrossFadeState convertRequiredFlutterCrossFadeState(enums.FlutterCrossFadeState_Enum enumValue) {
-  final result = convertFlutterCrossFadeState(enumValue);
+$flutterSrcWidgetsAnimatedCrossFade.CrossFadeState convertRequiredFlutterCrossFadeStateType(enums.FlutterCrossFadeStateType_Enum enumValue) {
+  final result = convertFlutterCrossFadeStateType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterCrossFadeState');
+    throw core.AssertionError('unable to parse required enum FlutterCrossFadeStateType');
   }
 }
 
-$flutterSrcWidgetsAnimatedCrossFade.CrossFadeState? convertFlutterCrossFadeState(enums.FlutterCrossFadeState_Enum enumValue) {
+$flutterSrcWidgetsAnimatedCrossFade.CrossFadeState? convertFlutterCrossFadeStateType(enums.FlutterCrossFadeStateType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterCrossFadeState_Enum.SHOW_FIRST:
+    case enums.FlutterCrossFadeStateType_Enum.SHOW_FIRST:
       return $flutterSrcWidgetsAnimatedCrossFade.CrossFadeState.showFirst;
-    case enums.FlutterCrossFadeState_Enum.SHOW_SECOND:
+    case enums.FlutterCrossFadeStateType_Enum.SHOW_SECOND:
       return $flutterSrcWidgetsAnimatedCrossFade.CrossFadeState.showSecond;
     default:
       return null;
   }
 }
 
-$flutterSrcRenderingProxyBox.DecorationPosition convertRequiredFlutterDecorationPosition(enums.FlutterDecorationPosition_Enum enumValue) {
-  final result = convertFlutterDecorationPosition(enumValue);
+$flutterSrcRenderingProxyBox.DecorationPosition convertRequiredFlutterDecorationPositionType(enums.FlutterDecorationPositionType_Enum enumValue) {
+  final result = convertFlutterDecorationPositionType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterDecorationPosition');
+    throw core.AssertionError('unable to parse required enum FlutterDecorationPositionType');
   }
 }
 
-$flutterSrcRenderingProxyBox.DecorationPosition? convertFlutterDecorationPosition(enums.FlutterDecorationPosition_Enum enumValue) {
+$flutterSrcRenderingProxyBox.DecorationPosition? convertFlutterDecorationPositionType(enums.FlutterDecorationPositionType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterDecorationPosition_Enum.BACKGROUND:
+    case enums.FlutterDecorationPositionType_Enum.BACKGROUND:
       return $flutterSrcRenderingProxyBox.DecorationPosition.background;
-    case enums.FlutterDecorationPosition_Enum.FOREGROUND:
+    case enums.FlutterDecorationPositionType_Enum.FOREGROUND:
       return $flutterSrcRenderingProxyBox.DecorationPosition.foreground;
     default:
       return null;
   }
 }
 
-$flutterSrcFoundationDiagnostics.DiagnosticLevel convertRequiredFlutterDiagnosticLevel(enums.FlutterDiagnosticLevel_Enum enumValue) {
-  final result = convertFlutterDiagnosticLevel(enumValue);
+$flutterSrcFoundationDiagnostics.DiagnosticLevel convertRequiredFlutterDiagnosticLevelType(enums.FlutterDiagnosticLevelType_Enum enumValue) {
+  final result = convertFlutterDiagnosticLevelType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterDiagnosticLevel');
+    throw core.AssertionError('unable to parse required enum FlutterDiagnosticLevelType');
   }
 }
 
-$flutterSrcFoundationDiagnostics.DiagnosticLevel? convertFlutterDiagnosticLevel(enums.FlutterDiagnosticLevel_Enum enumValue) {
+$flutterSrcFoundationDiagnostics.DiagnosticLevel? convertFlutterDiagnosticLevelType(enums.FlutterDiagnosticLevelType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterDiagnosticLevel_Enum.HIDDEN:
+    case enums.FlutterDiagnosticLevelType_Enum.HIDDEN:
       return $flutterSrcFoundationDiagnostics.DiagnosticLevel.hidden;
-    case enums.FlutterDiagnosticLevel_Enum.FINE:
+    case enums.FlutterDiagnosticLevelType_Enum.FINE:
       return $flutterSrcFoundationDiagnostics.DiagnosticLevel.fine;
-    case enums.FlutterDiagnosticLevel_Enum.DEBUG:
+    case enums.FlutterDiagnosticLevelType_Enum.DEBUG:
       return $flutterSrcFoundationDiagnostics.DiagnosticLevel.debug;
-    case enums.FlutterDiagnosticLevel_Enum.INFO:
+    case enums.FlutterDiagnosticLevelType_Enum.INFO:
       return $flutterSrcFoundationDiagnostics.DiagnosticLevel.info;
-    case enums.FlutterDiagnosticLevel_Enum.WARNING:
+    case enums.FlutterDiagnosticLevelType_Enum.WARNING:
       return $flutterSrcFoundationDiagnostics.DiagnosticLevel.warning;
-    case enums.FlutterDiagnosticLevel_Enum.HINT:
+    case enums.FlutterDiagnosticLevelType_Enum.HINT:
       return $flutterSrcFoundationDiagnostics.DiagnosticLevel.hint;
-    case enums.FlutterDiagnosticLevel_Enum.SUMMARY:
+    case enums.FlutterDiagnosticLevelType_Enum.SUMMARY:
       return $flutterSrcFoundationDiagnostics.DiagnosticLevel.summary;
-    case enums.FlutterDiagnosticLevel_Enum.ERROR:
+    case enums.FlutterDiagnosticLevelType_Enum.ERROR:
       return $flutterSrcFoundationDiagnostics.DiagnosticLevel.error;
-    case enums.FlutterDiagnosticLevel_Enum.OFF:
+    case enums.FlutterDiagnosticLevelType_Enum.OFF:
       return $flutterSrcFoundationDiagnostics.DiagnosticLevel.off;
     default:
       return null;
   }
 }
 
-$flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle convertRequiredFlutterDiagnosticsTreeStyle(enums.FlutterDiagnosticsTreeStyle_Enum enumValue) {
-  final result = convertFlutterDiagnosticsTreeStyle(enumValue);
+$flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle convertRequiredFlutterDiagnosticsTreeStyleType(enums.FlutterDiagnosticsTreeStyleType_Enum enumValue) {
+  final result = convertFlutterDiagnosticsTreeStyleType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterDiagnosticsTreeStyle');
+    throw core.AssertionError('unable to parse required enum FlutterDiagnosticsTreeStyleType');
   }
 }
 
-$flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle? convertFlutterDiagnosticsTreeStyle(enums.FlutterDiagnosticsTreeStyle_Enum enumValue) {
+$flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle? convertFlutterDiagnosticsTreeStyleType(enums.FlutterDiagnosticsTreeStyleType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterDiagnosticsTreeStyle_Enum.NONE:
+    case enums.FlutterDiagnosticsTreeStyleType_Enum.NONE:
       return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.none;
-    case enums.FlutterDiagnosticsTreeStyle_Enum.SPARSE:
+    case enums.FlutterDiagnosticsTreeStyleType_Enum.SPARSE:
       return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.sparse;
-    case enums.FlutterDiagnosticsTreeStyle_Enum.OFFSTAGE:
+    case enums.FlutterDiagnosticsTreeStyleType_Enum.OFFSTAGE:
       return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.offstage;
-    case enums.FlutterDiagnosticsTreeStyle_Enum.DENSE:
+    case enums.FlutterDiagnosticsTreeStyleType_Enum.DENSE:
       return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.dense;
-    case enums.FlutterDiagnosticsTreeStyle_Enum.TRANSITION:
+    case enums.FlutterDiagnosticsTreeStyleType_Enum.TRANSITION:
       return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.transition;
-    case enums.FlutterDiagnosticsTreeStyle_Enum.ERROR:
+    case enums.FlutterDiagnosticsTreeStyleType_Enum.ERROR:
       return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.error;
-    case enums.FlutterDiagnosticsTreeStyle_Enum.WHITESPACE:
+    case enums.FlutterDiagnosticsTreeStyleType_Enum.WHITESPACE:
       return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.whitespace;
-    case enums.FlutterDiagnosticsTreeStyle_Enum.FLAT:
+    case enums.FlutterDiagnosticsTreeStyleType_Enum.FLAT:
       return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.flat;
-    case enums.FlutterDiagnosticsTreeStyle_Enum.SINGLE_LINE:
+    case enums.FlutterDiagnosticsTreeStyleType_Enum.SINGLE_LINE:
       return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.singleLine;
-    case enums.FlutterDiagnosticsTreeStyle_Enum.ERROR_PROPERTY:
+    case enums.FlutterDiagnosticsTreeStyleType_Enum.ERROR_PROPERTY:
       return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.errorProperty;
-    case enums.FlutterDiagnosticsTreeStyle_Enum.SHALLOW:
+    case enums.FlutterDiagnosticsTreeStyleType_Enum.SHALLOW:
       return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.shallow;
-    case enums.FlutterDiagnosticsTreeStyle_Enum.TRUNCATE_CHILDREN:
+    case enums.FlutterDiagnosticsTreeStyleType_Enum.TRUNCATE_CHILDREN:
       return $flutterSrcFoundationDiagnostics.DiagnosticsTreeStyle.truncateChildren;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsDismissible.DismissDirection convertRequiredFlutterDismissDirection(enums.FlutterDismissDirection_Enum enumValue) {
-  final result = convertFlutterDismissDirection(enumValue);
+$flutterSrcWidgetsDismissible.DismissDirection convertRequiredFlutterDismissDirectionType(enums.FlutterDismissDirectionType_Enum enumValue) {
+  final result = convertFlutterDismissDirectionType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterDismissDirection');
+    throw core.AssertionError('unable to parse required enum FlutterDismissDirectionType');
   }
 }
 
-$flutterSrcWidgetsDismissible.DismissDirection? convertFlutterDismissDirection(enums.FlutterDismissDirection_Enum enumValue) {
+$flutterSrcWidgetsDismissible.DismissDirection? convertFlutterDismissDirectionType(enums.FlutterDismissDirectionType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterDismissDirection_Enum.VERTICAL:
+    case enums.FlutterDismissDirectionType_Enum.VERTICAL:
       return $flutterSrcWidgetsDismissible.DismissDirection.vertical;
-    case enums.FlutterDismissDirection_Enum.HORIZONTAL:
+    case enums.FlutterDismissDirectionType_Enum.HORIZONTAL:
       return $flutterSrcWidgetsDismissible.DismissDirection.horizontal;
-    case enums.FlutterDismissDirection_Enum.END_TO_START:
+    case enums.FlutterDismissDirectionType_Enum.END_TO_START:
       return $flutterSrcWidgetsDismissible.DismissDirection.endToStart;
-    case enums.FlutterDismissDirection_Enum.START_TO_END:
+    case enums.FlutterDismissDirectionType_Enum.START_TO_END:
       return $flutterSrcWidgetsDismissible.DismissDirection.startToEnd;
-    case enums.FlutterDismissDirection_Enum.UP:
+    case enums.FlutterDismissDirectionType_Enum.UP:
       return $flutterSrcWidgetsDismissible.DismissDirection.up;
-    case enums.FlutterDismissDirection_Enum.DOWN:
+    case enums.FlutterDismissDirectionType_Enum.DOWN:
       return $flutterSrcWidgetsDismissible.DismissDirection.down;
-    case enums.FlutterDismissDirection_Enum.NONE:
+    case enums.FlutterDismissDirectionType_Enum.NONE:
       return $flutterSrcWidgetsDismissible.DismissDirection.none;
     default:
       return null;
   }
 }
 
-$flutterSrcGesturesRecognizer.DragStartBehavior convertRequiredFlutterDragStartBehavior(enums.FlutterDragStartBehavior_Enum enumValue) {
-  final result = convertFlutterDragStartBehavior(enumValue);
+$flutterSrcGesturesRecognizer.DragStartBehavior convertRequiredFlutterDragStartBehaviorType(enums.FlutterDragStartBehaviorType_Enum enumValue) {
+  final result = convertFlutterDragStartBehaviorType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterDragStartBehavior');
+    throw core.AssertionError('unable to parse required enum FlutterDragStartBehaviorType');
   }
 }
 
-$flutterSrcGesturesRecognizer.DragStartBehavior? convertFlutterDragStartBehavior(enums.FlutterDragStartBehavior_Enum enumValue) {
+$flutterSrcGesturesRecognizer.DragStartBehavior? convertFlutterDragStartBehaviorType(enums.FlutterDragStartBehaviorType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterDragStartBehavior_Enum.DOWN:
+    case enums.FlutterDragStartBehaviorType_Enum.DOWN:
       return $flutterSrcGesturesRecognizer.DragStartBehavior.down;
-    case enums.FlutterDragStartBehavior_Enum.START:
+    case enums.FlutterDragStartBehaviorType_Enum.START:
       return $flutterSrcGesturesRecognizer.DragStartBehavior.start;
     default:
       return null;
   }
 }
 
-$flutterSrcRenderingFlex.FlexFit convertRequiredFlutterFlexFit(enums.FlutterFlexFit_Enum enumValue) {
-  final result = convertFlutterFlexFit(enumValue);
+$flutterSrcRenderingFlex.FlexFit convertRequiredFlutterFlexFitType(enums.FlutterFlexFitType_Enum enumValue) {
+  final result = convertFlutterFlexFitType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterFlexFit');
+    throw core.AssertionError('unable to parse required enum FlutterFlexFitType');
   }
 }
 
-$flutterSrcRenderingFlex.FlexFit? convertFlutterFlexFit(enums.FlutterFlexFit_Enum enumValue) {
+$flutterSrcRenderingFlex.FlexFit? convertFlutterFlexFitType(enums.FlutterFlexFitType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterFlexFit_Enum.TIGHT:
+    case enums.FlutterFlexFitType_Enum.TIGHT:
       return $flutterSrcRenderingFlex.FlexFit.tight;
-    case enums.FlutterFlexFit_Enum.LOOSE:
+    case enums.FlutterFlexFitType_Enum.LOOSE:
       return $flutterSrcRenderingFlex.FlexFit.loose;
     default:
       return null;
   }
 }
 
-$flutterSrcPaintingFlutterLogo.FlutterLogoStyle convertRequiredFlutterFlutterLogoStyle(enums.FlutterFlutterLogoStyle_Enum enumValue) {
-  final result = convertFlutterFlutterLogoStyle(enumValue);
+$flutterSrcPaintingFlutterLogo.FlutterLogoStyle convertRequiredFlutterFlutterLogoStyleType(enums.FlutterFlutterLogoStyleType_Enum enumValue) {
+  final result = convertFlutterFlutterLogoStyleType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterFlutterLogoStyle');
+    throw core.AssertionError('unable to parse required enum FlutterFlutterLogoStyleType');
   }
 }
 
-$flutterSrcPaintingFlutterLogo.FlutterLogoStyle? convertFlutterFlutterLogoStyle(enums.FlutterFlutterLogoStyle_Enum enumValue) {
+$flutterSrcPaintingFlutterLogo.FlutterLogoStyle? convertFlutterFlutterLogoStyleType(enums.FlutterFlutterLogoStyleType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterFlutterLogoStyle_Enum.MARK_ONLY:
+    case enums.FlutterFlutterLogoStyleType_Enum.MARK_ONLY:
       return $flutterSrcPaintingFlutterLogo.FlutterLogoStyle.markOnly;
-    case enums.FlutterFlutterLogoStyle_Enum.HORIZONTAL:
+    case enums.FlutterFlutterLogoStyleType_Enum.HORIZONTAL:
       return $flutterSrcPaintingFlutterLogo.FlutterLogoStyle.horizontal;
-    case enums.FlutterFlutterLogoStyle_Enum.STACKED:
+    case enums.FlutterFlutterLogoStyleType_Enum.STACKED:
       return $flutterSrcPaintingFlutterLogo.FlutterLogoStyle.stacked;
     default:
       return null;
   }
 }
 
-$flutterSrcRenderingProxyBox.HitTestBehavior convertRequiredFlutterHitTestBehavior(enums.FlutterHitTestBehavior_Enum enumValue) {
-  final result = convertFlutterHitTestBehavior(enumValue);
+$flutterSrcRenderingProxyBox.HitTestBehavior convertRequiredFlutterHitTestBehaviorType(enums.FlutterHitTestBehaviorType_Enum enumValue) {
+  final result = convertFlutterHitTestBehaviorType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterHitTestBehavior');
+    throw core.AssertionError('unable to parse required enum FlutterHitTestBehaviorType');
   }
 }
 
-$flutterSrcRenderingProxyBox.HitTestBehavior? convertFlutterHitTestBehavior(enums.FlutterHitTestBehavior_Enum enumValue) {
+$flutterSrcRenderingProxyBox.HitTestBehavior? convertFlutterHitTestBehaviorType(enums.FlutterHitTestBehaviorType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterHitTestBehavior_Enum.DEFER_TO_CHILD:
+    case enums.FlutterHitTestBehaviorType_Enum.DEFER_TO_CHILD:
       return $flutterSrcRenderingProxyBox.HitTestBehavior.deferToChild;
-    case enums.FlutterHitTestBehavior_Enum.OPAQUE:
+    case enums.FlutterHitTestBehaviorType_Enum.OPAQUE:
       return $flutterSrcRenderingProxyBox.HitTestBehavior.opaque;
-    case enums.FlutterHitTestBehavior_Enum.TRANSLUCENT:
+    case enums.FlutterHitTestBehaviorType_Enum.TRANSLUCENT:
       return $flutterSrcRenderingProxyBox.HitTestBehavior.translucent;
     default:
       return null;
   }
 }
 
-$flutterSrcPaintingDecorationImage.ImageRepeat convertRequiredFlutterImageRepeat(enums.FlutterImageRepeat_Enum enumValue) {
-  final result = convertFlutterImageRepeat(enumValue);
+$flutterSrcPaintingDecorationImage.ImageRepeat convertRequiredFlutterImageRepeatType(enums.FlutterImageRepeatType_Enum enumValue) {
+  final result = convertFlutterImageRepeatType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterImageRepeat');
+    throw core.AssertionError('unable to parse required enum FlutterImageRepeatType');
   }
 }
 
-$flutterSrcPaintingDecorationImage.ImageRepeat? convertFlutterImageRepeat(enums.FlutterImageRepeat_Enum enumValue) {
+$flutterSrcPaintingDecorationImage.ImageRepeat? convertFlutterImageRepeatType(enums.FlutterImageRepeatType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterImageRepeat_Enum.REPEAT:
+    case enums.FlutterImageRepeatType_Enum.REPEAT:
       return $flutterSrcPaintingDecorationImage.ImageRepeat.repeat;
-    case enums.FlutterImageRepeat_Enum.REPEAT_X:
+    case enums.FlutterImageRepeatType_Enum.REPEAT_X:
       return $flutterSrcPaintingDecorationImage.ImageRepeat.repeatX;
-    case enums.FlutterImageRepeat_Enum.REPEAT_Y:
+    case enums.FlutterImageRepeatType_Enum.REPEAT_Y:
       return $flutterSrcPaintingDecorationImage.ImageRepeat.repeatY;
-    case enums.FlutterImageRepeat_Enum.NO_REPEAT:
+    case enums.FlutterImageRepeatType_Enum.NO_REPEAT:
       return $flutterSrcPaintingDecorationImage.ImageRepeat.noRepeat;
     default:
       return null;
   }
 }
 
-$flutterSrcRenderingFlex.MainAxisAlignment convertRequiredFlutterMainAxisAlignment(enums.FlutterMainAxisAlignment_Enum enumValue) {
-  final result = convertFlutterMainAxisAlignment(enumValue);
+$flutterSrcRenderingFlex.MainAxisAlignment convertRequiredFlutterMainAxisAlignmentType(enums.FlutterMainAxisAlignmentType_Enum enumValue) {
+  final result = convertFlutterMainAxisAlignmentType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterMainAxisAlignment');
+    throw core.AssertionError('unable to parse required enum FlutterMainAxisAlignmentType');
   }
 }
 
-$flutterSrcRenderingFlex.MainAxisAlignment? convertFlutterMainAxisAlignment(enums.FlutterMainAxisAlignment_Enum enumValue) {
+$flutterSrcRenderingFlex.MainAxisAlignment? convertFlutterMainAxisAlignmentType(enums.FlutterMainAxisAlignmentType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterMainAxisAlignment_Enum.START:
+    case enums.FlutterMainAxisAlignmentType_Enum.START:
       return $flutterSrcRenderingFlex.MainAxisAlignment.start;
-    case enums.FlutterMainAxisAlignment_Enum.END:
+    case enums.FlutterMainAxisAlignmentType_Enum.END:
       return $flutterSrcRenderingFlex.MainAxisAlignment.end;
-    case enums.FlutterMainAxisAlignment_Enum.CENTER:
+    case enums.FlutterMainAxisAlignmentType_Enum.CENTER:
       return $flutterSrcRenderingFlex.MainAxisAlignment.center;
-    case enums.FlutterMainAxisAlignment_Enum.SPACE_BETWEEN:
+    case enums.FlutterMainAxisAlignmentType_Enum.SPACE_BETWEEN:
       return $flutterSrcRenderingFlex.MainAxisAlignment.spaceBetween;
-    case enums.FlutterMainAxisAlignment_Enum.SPACE_AROUND:
+    case enums.FlutterMainAxisAlignmentType_Enum.SPACE_AROUND:
       return $flutterSrcRenderingFlex.MainAxisAlignment.spaceAround;
-    case enums.FlutterMainAxisAlignment_Enum.SPACE_EVENLY:
+    case enums.FlutterMainAxisAlignmentType_Enum.SPACE_EVENLY:
       return $flutterSrcRenderingFlex.MainAxisAlignment.spaceEvenly;
     default:
       return null;
   }
 }
 
-$flutterSrcRenderingFlex.MainAxisSize convertRequiredFlutterMainAxisSize(enums.FlutterMainAxisSize_Enum enumValue) {
-  final result = convertFlutterMainAxisSize(enumValue);
+$flutterSrcRenderingFlex.MainAxisSize convertRequiredFlutterMainAxisSizeType(enums.FlutterMainAxisSizeType_Enum enumValue) {
+  final result = convertFlutterMainAxisSizeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterMainAxisSize');
+    throw core.AssertionError('unable to parse required enum FlutterMainAxisSizeType');
   }
 }
 
-$flutterSrcRenderingFlex.MainAxisSize? convertFlutterMainAxisSize(enums.FlutterMainAxisSize_Enum enumValue) {
+$flutterSrcRenderingFlex.MainAxisSize? convertFlutterMainAxisSizeType(enums.FlutterMainAxisSizeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterMainAxisSize_Enum.MIN:
+    case enums.FlutterMainAxisSizeType_Enum.MIN:
       return $flutterSrcRenderingFlex.MainAxisSize.min;
-    case enums.FlutterMainAxisSize_Enum.MAX:
+    case enums.FlutterMainAxisSizeType_Enum.MAX:
       return $flutterSrcRenderingFlex.MainAxisSize.max;
     default:
       return null;
   }
 }
 
-$flutterSrcServicesTextFormatter.MaxLengthEnforcement convertRequiredFlutterMaxLengthEnforcement(enums.FlutterMaxLengthEnforcement_Enum enumValue) {
-  final result = convertFlutterMaxLengthEnforcement(enumValue);
+$flutterSrcServicesTextFormatter.MaxLengthEnforcement convertRequiredFlutterMaxLengthEnforcementType(enums.FlutterMaxLengthEnforcementType_Enum enumValue) {
+  final result = convertFlutterMaxLengthEnforcementType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterMaxLengthEnforcement');
+    throw core.AssertionError('unable to parse required enum FlutterMaxLengthEnforcementType');
   }
 }
 
-$flutterSrcServicesTextFormatter.MaxLengthEnforcement? convertFlutterMaxLengthEnforcement(enums.FlutterMaxLengthEnforcement_Enum enumValue) {
+$flutterSrcServicesTextFormatter.MaxLengthEnforcement? convertFlutterMaxLengthEnforcementType(enums.FlutterMaxLengthEnforcementType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterMaxLengthEnforcement_Enum.NONE:
+    case enums.FlutterMaxLengthEnforcementType_Enum.NONE:
       return $flutterSrcServicesTextFormatter.MaxLengthEnforcement.none;
-    case enums.FlutterMaxLengthEnforcement_Enum.ENFORCED:
+    case enums.FlutterMaxLengthEnforcementType_Enum.ENFORCED:
       return $flutterSrcServicesTextFormatter.MaxLengthEnforcement.enforced;
-    case enums.FlutterMaxLengthEnforcement_Enum.TRUNCATE_AFTER_COMPOSITION_ENDS:
+    case enums.FlutterMaxLengthEnforcementType_Enum.TRUNCATE_AFTER_COMPOSITION_ENDS:
       return $flutterSrcServicesTextFormatter.MaxLengthEnforcement.truncateAfterCompositionEnds;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsMediaQuery.NavigationMode convertRequiredFlutterNavigationMode(enums.FlutterNavigationMode_Enum enumValue) {
-  final result = convertFlutterNavigationMode(enumValue);
+$flutterSrcWidgetsMediaQuery.NavigationMode convertRequiredFlutterNavigationModeType(enums.FlutterNavigationModeType_Enum enumValue) {
+  final result = convertFlutterNavigationModeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterNavigationMode');
+    throw core.AssertionError('unable to parse required enum FlutterNavigationModeType');
   }
 }
 
-$flutterSrcWidgetsMediaQuery.NavigationMode? convertFlutterNavigationMode(enums.FlutterNavigationMode_Enum enumValue) {
+$flutterSrcWidgetsMediaQuery.NavigationMode? convertFlutterNavigationModeType(enums.FlutterNavigationModeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterNavigationMode_Enum.TRADITIONAL:
+    case enums.FlutterNavigationModeType_Enum.TRADITIONAL:
       return $flutterSrcWidgetsMediaQuery.NavigationMode.traditional;
-    case enums.FlutterNavigationMode_Enum.DIRECTIONAL:
+    case enums.FlutterNavigationModeType_Enum.DIRECTIONAL:
       return $flutterSrcWidgetsMediaQuery.NavigationMode.directional;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsMediaQuery.Orientation convertRequiredFlutterOrientation(enums.FlutterOrientation_Enum enumValue) {
-  final result = convertFlutterOrientation(enumValue);
+$flutterSrcWidgetsMediaQuery.Orientation convertRequiredFlutterOrientationType(enums.FlutterOrientationType_Enum enumValue) {
+  final result = convertFlutterOrientationType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterOrientation');
+    throw core.AssertionError('unable to parse required enum FlutterOrientationType');
   }
 }
 
-$flutterSrcWidgetsMediaQuery.Orientation? convertFlutterOrientation(enums.FlutterOrientation_Enum enumValue) {
+$flutterSrcWidgetsMediaQuery.Orientation? convertFlutterOrientationType(enums.FlutterOrientationType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterOrientation_Enum.PORTRAIT:
+    case enums.FlutterOrientationType_Enum.PORTRAIT:
       return $flutterSrcWidgetsMediaQuery.Orientation.portrait;
-    case enums.FlutterOrientation_Enum.LANDSCAPE:
+    case enums.FlutterOrientationType_Enum.LANDSCAPE:
       return $flutterSrcWidgetsMediaQuery.Orientation.landscape;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsOverflowBar.OverflowBarAlignment convertRequiredFlutterOverflowBarAlignment(enums.FlutterOverflowBarAlignment_Enum enumValue) {
-  final result = convertFlutterOverflowBarAlignment(enumValue);
+$flutterSrcWidgetsOverflowBar.OverflowBarAlignment convertRequiredFlutterOverflowBarAlignmentType(enums.FlutterOverflowBarAlignmentType_Enum enumValue) {
+  final result = convertFlutterOverflowBarAlignmentType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterOverflowBarAlignment');
+    throw core.AssertionError('unable to parse required enum FlutterOverflowBarAlignmentType');
   }
 }
 
-$flutterSrcWidgetsOverflowBar.OverflowBarAlignment? convertFlutterOverflowBarAlignment(enums.FlutterOverflowBarAlignment_Enum enumValue) {
+$flutterSrcWidgetsOverflowBar.OverflowBarAlignment? convertFlutterOverflowBarAlignmentType(enums.FlutterOverflowBarAlignmentType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterOverflowBarAlignment_Enum.START:
+    case enums.FlutterOverflowBarAlignmentType_Enum.START:
       return $flutterSrcWidgetsOverflowBar.OverflowBarAlignment.start;
-    case enums.FlutterOverflowBarAlignment_Enum.END:
+    case enums.FlutterOverflowBarAlignmentType_Enum.END:
       return $flutterSrcWidgetsOverflowBar.OverflowBarAlignment.end;
-    case enums.FlutterOverflowBarAlignment_Enum.CENTER:
+    case enums.FlutterOverflowBarAlignmentType_Enum.CENTER:
       return $flutterSrcWidgetsOverflowBar.OverflowBarAlignment.center;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsInteractiveViewer.PanAxis convertRequiredFlutterPanAxis(enums.FlutterPanAxis_Enum enumValue) {
-  final result = convertFlutterPanAxis(enumValue);
+$flutterSrcWidgetsInteractiveViewer.PanAxis convertRequiredFlutterPanAxisType(enums.FlutterPanAxisType_Enum enumValue) {
+  final result = convertFlutterPanAxisType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterPanAxis');
+    throw core.AssertionError('unable to parse required enum FlutterPanAxisType');
   }
 }
 
-$flutterSrcWidgetsInteractiveViewer.PanAxis? convertFlutterPanAxis(enums.FlutterPanAxis_Enum enumValue) {
+$flutterSrcWidgetsInteractiveViewer.PanAxis? convertFlutterPanAxisType(enums.FlutterPanAxisType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterPanAxis_Enum.HORIZONTAL:
+    case enums.FlutterPanAxisType_Enum.HORIZONTAL:
       return $flutterSrcWidgetsInteractiveViewer.PanAxis.horizontal;
-    case enums.FlutterPanAxis_Enum.VERTICAL:
+    case enums.FlutterPanAxisType_Enum.VERTICAL:
       return $flutterSrcWidgetsInteractiveViewer.PanAxis.vertical;
-    case enums.FlutterPanAxis_Enum.ALIGNED:
+    case enums.FlutterPanAxisType_Enum.ALIGNED:
       return $flutterSrcWidgetsInteractiveViewer.PanAxis.aligned;
-    case enums.FlutterPanAxis_Enum.FREE:
+    case enums.FlutterPanAxisType_Enum.FREE:
       return $flutterSrcWidgetsInteractiveViewer.PanAxis.free;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType convertRequiredFlutterPlatformProvidedMenuItemType(enums.FlutterPlatformProvidedMenuItemType_Enum enumValue) {
-  final result = convertFlutterPlatformProvidedMenuItemType(enumValue);
+$flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType convertRequiredFlutterPlatformProvidedMenuItemTypeType(enums.FlutterPlatformProvidedMenuItemTypeType_Enum enumValue) {
+  final result = convertFlutterPlatformProvidedMenuItemTypeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterPlatformProvidedMenuItemType');
+    throw core.AssertionError('unable to parse required enum FlutterPlatformProvidedMenuItemTypeType');
   }
 }
 
-$flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType? convertFlutterPlatformProvidedMenuItemType(enums.FlutterPlatformProvidedMenuItemType_Enum enumValue) {
+$flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType? convertFlutterPlatformProvidedMenuItemTypeType(enums.FlutterPlatformProvidedMenuItemTypeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterPlatformProvidedMenuItemType_Enum.ABOUT:
+    case enums.FlutterPlatformProvidedMenuItemTypeType_Enum.ABOUT:
       return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.about;
-    case enums.FlutterPlatformProvidedMenuItemType_Enum.QUIT:
+    case enums.FlutterPlatformProvidedMenuItemTypeType_Enum.QUIT:
       return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.quit;
-    case enums.FlutterPlatformProvidedMenuItemType_Enum.SERVICES_SUBMENU:
+    case enums.FlutterPlatformProvidedMenuItemTypeType_Enum.SERVICES_SUBMENU:
       return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.servicesSubmenu;
-    case enums.FlutterPlatformProvidedMenuItemType_Enum.HIDE:
+    case enums.FlutterPlatformProvidedMenuItemTypeType_Enum.HIDE:
       return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.hide;
-    case enums.FlutterPlatformProvidedMenuItemType_Enum.HIDE_OTHER_APPLICATIONS:
+    case enums.FlutterPlatformProvidedMenuItemTypeType_Enum.HIDE_OTHER_APPLICATIONS:
       return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.hideOtherApplications;
-    case enums.FlutterPlatformProvidedMenuItemType_Enum.SHOW_ALL_APPLICATIONS:
+    case enums.FlutterPlatformProvidedMenuItemTypeType_Enum.SHOW_ALL_APPLICATIONS:
       return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.showAllApplications;
-    case enums.FlutterPlatformProvidedMenuItemType_Enum.START_SPEAKING:
+    case enums.FlutterPlatformProvidedMenuItemTypeType_Enum.START_SPEAKING:
       return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.startSpeaking;
-    case enums.FlutterPlatformProvidedMenuItemType_Enum.STOP_SPEAKING:
+    case enums.FlutterPlatformProvidedMenuItemTypeType_Enum.STOP_SPEAKING:
       return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.stopSpeaking;
-    case enums.FlutterPlatformProvidedMenuItemType_Enum.TOGGLE_FULL_SCREEN:
+    case enums.FlutterPlatformProvidedMenuItemTypeType_Enum.TOGGLE_FULL_SCREEN:
       return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.toggleFullScreen;
-    case enums.FlutterPlatformProvidedMenuItemType_Enum.MINIMIZE_WINDOW:
+    case enums.FlutterPlatformProvidedMenuItemTypeType_Enum.MINIMIZE_WINDOW:
       return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.minimizeWindow;
-    case enums.FlutterPlatformProvidedMenuItemType_Enum.ZOOM_WINDOW:
+    case enums.FlutterPlatformProvidedMenuItemTypeType_Enum.ZOOM_WINDOW:
       return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.zoomWindow;
-    case enums.FlutterPlatformProvidedMenuItemType_Enum.ARRANGE_WINDOWS_IN_FRONT:
+    case enums.FlutterPlatformProvidedMenuItemTypeType_Enum.ARRANGE_WINDOWS_IN_FRONT:
       return $flutterSrcWidgetsPlatformMenuBar.PlatformProvidedMenuItemType.arrangeWindowsInFront;
     default:
       return null;
   }
 }
 
-$flutterSrcRenderingPlatformView.PlatformViewHitTestBehavior convertRequiredFlutterPlatformViewHitTestBehavior(enums.FlutterPlatformViewHitTestBehavior_Enum enumValue) {
-  final result = convertFlutterPlatformViewHitTestBehavior(enumValue);
+$flutterSrcRenderingPlatformView.PlatformViewHitTestBehavior convertRequiredFlutterPlatformViewHitTestBehaviorType(enums.FlutterPlatformViewHitTestBehaviorType_Enum enumValue) {
+  final result = convertFlutterPlatformViewHitTestBehaviorType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterPlatformViewHitTestBehavior');
+    throw core.AssertionError('unable to parse required enum FlutterPlatformViewHitTestBehaviorType');
   }
 }
 
-$flutterSrcRenderingPlatformView.PlatformViewHitTestBehavior? convertFlutterPlatformViewHitTestBehavior(enums.FlutterPlatformViewHitTestBehavior_Enum enumValue) {
+$flutterSrcRenderingPlatformView.PlatformViewHitTestBehavior? convertFlutterPlatformViewHitTestBehaviorType(enums.FlutterPlatformViewHitTestBehaviorType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterPlatformViewHitTestBehavior_Enum.OPAQUE:
+    case enums.FlutterPlatformViewHitTestBehaviorType_Enum.OPAQUE:
       return $flutterSrcRenderingPlatformView.PlatformViewHitTestBehavior.opaque;
-    case enums.FlutterPlatformViewHitTestBehavior_Enum.TRANSLUCENT:
+    case enums.FlutterPlatformViewHitTestBehaviorType_Enum.TRANSLUCENT:
       return $flutterSrcRenderingPlatformView.PlatformViewHitTestBehavior.translucent;
-    case enums.FlutterPlatformViewHitTestBehavior_Enum.TRANSPARENT:
+    case enums.FlutterPlatformViewHitTestBehaviorType_Enum.TRANSPARENT:
       return $flutterSrcRenderingPlatformView.PlatformViewHitTestBehavior.transparent;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsScrollPhysics.ScrollDecelerationRate convertRequiredFlutterScrollDecelerationRate(enums.FlutterScrollDecelerationRate_Enum enumValue) {
-  final result = convertFlutterScrollDecelerationRate(enumValue);
+$flutterSrcWidgetsScrollPhysics.ScrollDecelerationRate convertRequiredFlutterScrollDecelerationRateType(enums.FlutterScrollDecelerationRateType_Enum enumValue) {
+  final result = convertFlutterScrollDecelerationRateType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterScrollDecelerationRate');
+    throw core.AssertionError('unable to parse required enum FlutterScrollDecelerationRateType');
   }
 }
 
-$flutterSrcWidgetsScrollPhysics.ScrollDecelerationRate? convertFlutterScrollDecelerationRate(enums.FlutterScrollDecelerationRate_Enum enumValue) {
+$flutterSrcWidgetsScrollPhysics.ScrollDecelerationRate? convertFlutterScrollDecelerationRateType(enums.FlutterScrollDecelerationRateType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterScrollDecelerationRate_Enum.NORMAL:
+    case enums.FlutterScrollDecelerationRateType_Enum.NORMAL:
       return $flutterSrcWidgetsScrollPhysics.ScrollDecelerationRate.normal;
-    case enums.FlutterScrollDecelerationRate_Enum.FAST:
+    case enums.FlutterScrollDecelerationRateType_Enum.FAST:
       return $flutterSrcWidgetsScrollPhysics.ScrollDecelerationRate.fast;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsScrollableHelpers.ScrollIncrementType convertRequiredFlutterScrollIncrementType(enums.FlutterScrollIncrementType_Enum enumValue) {
-  final result = convertFlutterScrollIncrementType(enumValue);
+$flutterSrcWidgetsScrollableHelpers.ScrollIncrementType convertRequiredFlutterScrollIncrementTypeType(enums.FlutterScrollIncrementTypeType_Enum enumValue) {
+  final result = convertFlutterScrollIncrementTypeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterScrollIncrementType');
+    throw core.AssertionError('unable to parse required enum FlutterScrollIncrementTypeType');
   }
 }
 
-$flutterSrcWidgetsScrollableHelpers.ScrollIncrementType? convertFlutterScrollIncrementType(enums.FlutterScrollIncrementType_Enum enumValue) {
+$flutterSrcWidgetsScrollableHelpers.ScrollIncrementType? convertFlutterScrollIncrementTypeType(enums.FlutterScrollIncrementTypeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterScrollIncrementType_Enum.LINE:
+    case enums.FlutterScrollIncrementTypeType_Enum.LINE:
       return $flutterSrcWidgetsScrollableHelpers.ScrollIncrementType.line;
-    case enums.FlutterScrollIncrementType_Enum.PAGE:
+    case enums.FlutterScrollIncrementTypeType_Enum.PAGE:
       return $flutterSrcWidgetsScrollableHelpers.ScrollIncrementType.page;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsScrollView.ScrollViewKeyboardDismissBehavior convertRequiredFlutterScrollViewKeyboardDismissBehavior(enums.FlutterScrollViewKeyboardDismissBehavior_Enum enumValue) {
-  final result = convertFlutterScrollViewKeyboardDismissBehavior(enumValue);
+$flutterSrcWidgetsScrollView.ScrollViewKeyboardDismissBehavior convertRequiredFlutterScrollViewKeyboardDismissBehaviorType(enums.FlutterScrollViewKeyboardDismissBehaviorType_Enum enumValue) {
+  final result = convertFlutterScrollViewKeyboardDismissBehaviorType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterScrollViewKeyboardDismissBehavior');
+    throw core.AssertionError('unable to parse required enum FlutterScrollViewKeyboardDismissBehaviorType');
   }
 }
 
-$flutterSrcWidgetsScrollView.ScrollViewKeyboardDismissBehavior? convertFlutterScrollViewKeyboardDismissBehavior(enums.FlutterScrollViewKeyboardDismissBehavior_Enum enumValue) {
+$flutterSrcWidgetsScrollView.ScrollViewKeyboardDismissBehavior? convertFlutterScrollViewKeyboardDismissBehaviorType(enums.FlutterScrollViewKeyboardDismissBehaviorType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterScrollViewKeyboardDismissBehavior_Enum.MANUAL:
+    case enums.FlutterScrollViewKeyboardDismissBehaviorType_Enum.MANUAL:
       return $flutterSrcWidgetsScrollView.ScrollViewKeyboardDismissBehavior.manual;
-    case enums.FlutterScrollViewKeyboardDismissBehavior_Enum.ON_DRAG:
+    case enums.FlutterScrollViewKeyboardDismissBehaviorType_Enum.ON_DRAG:
       return $flutterSrcWidgetsScrollView.ScrollViewKeyboardDismissBehavior.onDrag;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsScrollbar.ScrollbarOrientation convertRequiredFlutterScrollbarOrientation(enums.FlutterScrollbarOrientation_Enum enumValue) {
-  final result = convertFlutterScrollbarOrientation(enumValue);
+$flutterSrcWidgetsScrollbar.ScrollbarOrientation convertRequiredFlutterScrollbarOrientationType(enums.FlutterScrollbarOrientationType_Enum enumValue) {
+  final result = convertFlutterScrollbarOrientationType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterScrollbarOrientation');
+    throw core.AssertionError('unable to parse required enum FlutterScrollbarOrientationType');
   }
 }
 
-$flutterSrcWidgetsScrollbar.ScrollbarOrientation? convertFlutterScrollbarOrientation(enums.FlutterScrollbarOrientation_Enum enumValue) {
+$flutterSrcWidgetsScrollbar.ScrollbarOrientation? convertFlutterScrollbarOrientationType(enums.FlutterScrollbarOrientationType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterScrollbarOrientation_Enum.LEFT:
+    case enums.FlutterScrollbarOrientationType_Enum.LEFT:
       return $flutterSrcWidgetsScrollbar.ScrollbarOrientation.left;
-    case enums.FlutterScrollbarOrientation_Enum.RIGHT:
+    case enums.FlutterScrollbarOrientationType_Enum.RIGHT:
       return $flutterSrcWidgetsScrollbar.ScrollbarOrientation.right;
-    case enums.FlutterScrollbarOrientation_Enum.TOP:
+    case enums.FlutterScrollbarOrientationType_Enum.TOP:
       return $flutterSrcWidgetsScrollbar.ScrollbarOrientation.top;
-    case enums.FlutterScrollbarOrientation_Enum.BOTTOM:
+    case enums.FlutterScrollbarOrientationType_Enum.BOTTOM:
       return $flutterSrcWidgetsScrollbar.ScrollbarOrientation.bottom;
     default:
       return null;
   }
 }
 
-$flutterSrcServicesTextInput.SelectionChangedCause convertRequiredFlutterSelectionChangedCause(enums.FlutterSelectionChangedCause_Enum enumValue) {
-  final result = convertFlutterSelectionChangedCause(enumValue);
+$flutterSrcServicesTextInput.SelectionChangedCause convertRequiredFlutterSelectionChangedCauseType(enums.FlutterSelectionChangedCauseType_Enum enumValue) {
+  final result = convertFlutterSelectionChangedCauseType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterSelectionChangedCause');
+    throw core.AssertionError('unable to parse required enum FlutterSelectionChangedCauseType');
   }
 }
 
-$flutterSrcServicesTextInput.SelectionChangedCause? convertFlutterSelectionChangedCause(enums.FlutterSelectionChangedCause_Enum enumValue) {
+$flutterSrcServicesTextInput.SelectionChangedCause? convertFlutterSelectionChangedCauseType(enums.FlutterSelectionChangedCauseType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterSelectionChangedCause_Enum.TAP:
+    case enums.FlutterSelectionChangedCauseType_Enum.TAP:
       return $flutterSrcServicesTextInput.SelectionChangedCause.tap;
-    case enums.FlutterSelectionChangedCause_Enum.DOUBLE_TAP:
+    case enums.FlutterSelectionChangedCauseType_Enum.DOUBLE_TAP:
       return $flutterSrcServicesTextInput.SelectionChangedCause.doubleTap;
-    case enums.FlutterSelectionChangedCause_Enum.LONG_PRESS:
+    case enums.FlutterSelectionChangedCauseType_Enum.LONG_PRESS:
       return $flutterSrcServicesTextInput.SelectionChangedCause.longPress;
-    case enums.FlutterSelectionChangedCause_Enum.FORCE_PRESS:
+    case enums.FlutterSelectionChangedCauseType_Enum.FORCE_PRESS:
       return $flutterSrcServicesTextInput.SelectionChangedCause.forcePress;
-    case enums.FlutterSelectionChangedCause_Enum.KEYBOARD:
+    case enums.FlutterSelectionChangedCauseType_Enum.KEYBOARD:
       return $flutterSrcServicesTextInput.SelectionChangedCause.keyboard;
-    case enums.FlutterSelectionChangedCause_Enum.TOOLBAR:
+    case enums.FlutterSelectionChangedCauseType_Enum.TOOLBAR:
       return $flutterSrcServicesTextInput.SelectionChangedCause.toolbar;
-    case enums.FlutterSelectionChangedCause_Enum.DRAG:
+    case enums.FlutterSelectionChangedCauseType_Enum.DRAG:
       return $flutterSrcServicesTextInput.SelectionChangedCause.drag;
-    case enums.FlutterSelectionChangedCause_Enum.SCRIBBLE:
+    case enums.FlutterSelectionChangedCauseType_Enum.SCRIBBLE:
       return $flutterSrcServicesTextInput.SelectionChangedCause.scribble;
     default:
       return null;
   }
 }
 
-$flutterSrcServicesTextInput.SmartDashesType convertRequiredFlutterSmartDashesType(enums.FlutterSmartDashesType_Enum enumValue) {
-  final result = convertFlutterSmartDashesType(enumValue);
+$flutterSrcServicesTextInput.SmartDashesType convertRequiredFlutterSmartDashesTypeType(enums.FlutterSmartDashesTypeType_Enum enumValue) {
+  final result = convertFlutterSmartDashesTypeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterSmartDashesType');
+    throw core.AssertionError('unable to parse required enum FlutterSmartDashesTypeType');
   }
 }
 
-$flutterSrcServicesTextInput.SmartDashesType? convertFlutterSmartDashesType(enums.FlutterSmartDashesType_Enum enumValue) {
+$flutterSrcServicesTextInput.SmartDashesType? convertFlutterSmartDashesTypeType(enums.FlutterSmartDashesTypeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterSmartDashesType_Enum.DISABLED:
+    case enums.FlutterSmartDashesTypeType_Enum.DISABLED:
       return $flutterSrcServicesTextInput.SmartDashesType.disabled;
-    case enums.FlutterSmartDashesType_Enum.ENABLED:
+    case enums.FlutterSmartDashesTypeType_Enum.ENABLED:
       return $flutterSrcServicesTextInput.SmartDashesType.enabled;
     default:
       return null;
   }
 }
 
-$flutterSrcServicesTextInput.SmartQuotesType convertRequiredFlutterSmartQuotesType(enums.FlutterSmartQuotesType_Enum enumValue) {
-  final result = convertFlutterSmartQuotesType(enumValue);
+$flutterSrcServicesTextInput.SmartQuotesType convertRequiredFlutterSmartQuotesTypeType(enums.FlutterSmartQuotesTypeType_Enum enumValue) {
+  final result = convertFlutterSmartQuotesTypeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterSmartQuotesType');
+    throw core.AssertionError('unable to parse required enum FlutterSmartQuotesTypeType');
   }
 }
 
-$flutterSrcServicesTextInput.SmartQuotesType? convertFlutterSmartQuotesType(enums.FlutterSmartQuotesType_Enum enumValue) {
+$flutterSrcServicesTextInput.SmartQuotesType? convertFlutterSmartQuotesTypeType(enums.FlutterSmartQuotesTypeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterSmartQuotesType_Enum.DISABLED:
+    case enums.FlutterSmartQuotesTypeType_Enum.DISABLED:
       return $flutterSrcServicesTextInput.SmartQuotesType.disabled;
-    case enums.FlutterSmartQuotesType_Enum.ENABLED:
+    case enums.FlutterSmartQuotesTypeType_Enum.ENABLED:
       return $flutterSrcServicesTextInput.SmartQuotesType.enabled;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsSnapshotWidget.SnapshotMode convertRequiredFlutterSnapshotMode(enums.FlutterSnapshotMode_Enum enumValue) {
-  final result = convertFlutterSnapshotMode(enumValue);
+$flutterSrcWidgetsSnapshotWidget.SnapshotMode convertRequiredFlutterSnapshotModeType(enums.FlutterSnapshotModeType_Enum enumValue) {
+  final result = convertFlutterSnapshotModeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterSnapshotMode');
+    throw core.AssertionError('unable to parse required enum FlutterSnapshotModeType');
   }
 }
 
-$flutterSrcWidgetsSnapshotWidget.SnapshotMode? convertFlutterSnapshotMode(enums.FlutterSnapshotMode_Enum enumValue) {
+$flutterSrcWidgetsSnapshotWidget.SnapshotMode? convertFlutterSnapshotModeType(enums.FlutterSnapshotModeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterSnapshotMode_Enum.PERMISSIVE:
+    case enums.FlutterSnapshotModeType_Enum.PERMISSIVE:
       return $flutterSrcWidgetsSnapshotWidget.SnapshotMode.permissive;
-    case enums.FlutterSnapshotMode_Enum.NORMAL:
+    case enums.FlutterSnapshotModeType_Enum.NORMAL:
       return $flutterSrcWidgetsSnapshotWidget.SnapshotMode.normal;
-    case enums.FlutterSnapshotMode_Enum.FORCED:
+    case enums.FlutterSnapshotModeType_Enum.FORCED:
       return $flutterSrcWidgetsSnapshotWidget.SnapshotMode.forced;
     default:
       return null;
   }
 }
 
-$flutterSrcRenderingStack.StackFit convertRequiredFlutterStackFit(enums.FlutterStackFit_Enum enumValue) {
-  final result = convertFlutterStackFit(enumValue);
+$flutterSrcRenderingStack.StackFit convertRequiredFlutterStackFitType(enums.FlutterStackFitType_Enum enumValue) {
+  final result = convertFlutterStackFitType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterStackFit');
+    throw core.AssertionError('unable to parse required enum FlutterStackFitType');
   }
 }
 
-$flutterSrcRenderingStack.StackFit? convertFlutterStackFit(enums.FlutterStackFit_Enum enumValue) {
+$flutterSrcRenderingStack.StackFit? convertFlutterStackFitType(enums.FlutterStackFitType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterStackFit_Enum.LOOSE:
+    case enums.FlutterStackFitType_Enum.LOOSE:
       return $flutterSrcRenderingStack.StackFit.loose;
-    case enums.FlutterStackFit_Enum.EXPAND:
+    case enums.FlutterStackFitType_Enum.EXPAND:
       return $flutterSrcRenderingStack.StackFit.expand;
-    case enums.FlutterStackFit_Enum.PASSTHROUGH:
+    case enums.FlutterStackFitType_Enum.PASSTHROUGH:
       return $flutterSrcRenderingStack.StackFit.passthrough;
     default:
       return null;
   }
 }
 
-$flutterSrcRenderingTable.TableCellVerticalAlignment convertRequiredFlutterTableCellVerticalAlignment(enums.FlutterTableCellVerticalAlignment_Enum enumValue) {
-  final result = convertFlutterTableCellVerticalAlignment(enumValue);
+$flutterSrcRenderingTable.TableCellVerticalAlignment convertRequiredFlutterTableCellVerticalAlignmentType(enums.FlutterTableCellVerticalAlignmentType_Enum enumValue) {
+  final result = convertFlutterTableCellVerticalAlignmentType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterTableCellVerticalAlignment');
+    throw core.AssertionError('unable to parse required enum FlutterTableCellVerticalAlignmentType');
   }
 }
 
-$flutterSrcRenderingTable.TableCellVerticalAlignment? convertFlutterTableCellVerticalAlignment(enums.FlutterTableCellVerticalAlignment_Enum enumValue) {
+$flutterSrcRenderingTable.TableCellVerticalAlignment? convertFlutterTableCellVerticalAlignmentType(enums.FlutterTableCellVerticalAlignmentType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterTableCellVerticalAlignment_Enum.TOP:
+    case enums.FlutterTableCellVerticalAlignmentType_Enum.TOP:
       return $flutterSrcRenderingTable.TableCellVerticalAlignment.top;
-    case enums.FlutterTableCellVerticalAlignment_Enum.MIDDLE:
+    case enums.FlutterTableCellVerticalAlignmentType_Enum.MIDDLE:
       return $flutterSrcRenderingTable.TableCellVerticalAlignment.middle;
-    case enums.FlutterTableCellVerticalAlignment_Enum.BOTTOM:
+    case enums.FlutterTableCellVerticalAlignmentType_Enum.BOTTOM:
       return $flutterSrcRenderingTable.TableCellVerticalAlignment.bottom;
-    case enums.FlutterTableCellVerticalAlignment_Enum.BASELINE:
+    case enums.FlutterTableCellVerticalAlignmentType_Enum.BASELINE:
       return $flutterSrcRenderingTable.TableCellVerticalAlignment.baseline;
-    case enums.FlutterTableCellVerticalAlignment_Enum.FILL:
+    case enums.FlutterTableCellVerticalAlignmentType_Enum.FILL:
       return $flutterSrcRenderingTable.TableCellVerticalAlignment.fill;
     default:
       return null;
   }
 }
 
-$flutterSrcFoundationPlatform.TargetPlatform convertRequiredFlutterTargetPlatform(enums.FlutterTargetPlatform_Enum enumValue) {
-  final result = convertFlutterTargetPlatform(enumValue);
+$flutterSrcFoundationPlatform.TargetPlatform convertRequiredFlutterTargetPlatformType(enums.FlutterTargetPlatformType_Enum enumValue) {
+  final result = convertFlutterTargetPlatformType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterTargetPlatform');
+    throw core.AssertionError('unable to parse required enum FlutterTargetPlatformType');
   }
 }
 
-$flutterSrcFoundationPlatform.TargetPlatform? convertFlutterTargetPlatform(enums.FlutterTargetPlatform_Enum enumValue) {
+$flutterSrcFoundationPlatform.TargetPlatform? convertFlutterTargetPlatformType(enums.FlutterTargetPlatformType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterTargetPlatform_Enum.ANDROID:
+    case enums.FlutterTargetPlatformType_Enum.ANDROID:
       return $flutterSrcFoundationPlatform.TargetPlatform.android;
-    case enums.FlutterTargetPlatform_Enum.FUCHSIA:
+    case enums.FlutterTargetPlatformType_Enum.FUCHSIA:
       return $flutterSrcFoundationPlatform.TargetPlatform.fuchsia;
-    case enums.FlutterTargetPlatform_Enum.I_O_S:
+    case enums.FlutterTargetPlatformType_Enum.I_O_S:
       return $flutterSrcFoundationPlatform.TargetPlatform.iOS;
-    case enums.FlutterTargetPlatform_Enum.LINUX:
+    case enums.FlutterTargetPlatformType_Enum.LINUX:
       return $flutterSrcFoundationPlatform.TargetPlatform.linux;
-    case enums.FlutterTargetPlatform_Enum.MAC_O_S:
+    case enums.FlutterTargetPlatformType_Enum.MAC_O_S:
       return $flutterSrcFoundationPlatform.TargetPlatform.macOS;
-    case enums.FlutterTargetPlatform_Enum.WINDOWS:
+    case enums.FlutterTargetPlatformType_Enum.WINDOWS:
       return $flutterSrcFoundationPlatform.TargetPlatform.windows;
     default:
       return null;
   }
 }
 
-$flutterSrcServicesTextInput.TextCapitalization convertRequiredFlutterTextCapitalization(enums.FlutterTextCapitalization_Enum enumValue) {
-  final result = convertFlutterTextCapitalization(enumValue);
+$flutterSrcServicesTextInput.TextCapitalization convertRequiredFlutterTextCapitalizationType(enums.FlutterTextCapitalizationType_Enum enumValue) {
+  final result = convertFlutterTextCapitalizationType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterTextCapitalization');
+    throw core.AssertionError('unable to parse required enum FlutterTextCapitalizationType');
   }
 }
 
-$flutterSrcServicesTextInput.TextCapitalization? convertFlutterTextCapitalization(enums.FlutterTextCapitalization_Enum enumValue) {
+$flutterSrcServicesTextInput.TextCapitalization? convertFlutterTextCapitalizationType(enums.FlutterTextCapitalizationType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterTextCapitalization_Enum.WORDS:
+    case enums.FlutterTextCapitalizationType_Enum.WORDS:
       return $flutterSrcServicesTextInput.TextCapitalization.words;
-    case enums.FlutterTextCapitalization_Enum.SENTENCES:
+    case enums.FlutterTextCapitalizationType_Enum.SENTENCES:
       return $flutterSrcServicesTextInput.TextCapitalization.sentences;
-    case enums.FlutterTextCapitalization_Enum.CHARACTERS:
+    case enums.FlutterTextCapitalizationType_Enum.CHARACTERS:
       return $flutterSrcServicesTextInput.TextCapitalization.characters;
-    case enums.FlutterTextCapitalization_Enum.NONE:
+    case enums.FlutterTextCapitalizationType_Enum.NONE:
       return $flutterSrcServicesTextInput.TextCapitalization.none;
     default:
       return null;
   }
 }
 
-$flutterSrcServicesTextInput.TextInputAction convertRequiredFlutterTextInputAction(enums.FlutterTextInputAction_Enum enumValue) {
-  final result = convertFlutterTextInputAction(enumValue);
+$flutterSrcServicesTextInput.TextInputAction convertRequiredFlutterTextInputActionType(enums.FlutterTextInputActionType_Enum enumValue) {
+  final result = convertFlutterTextInputActionType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterTextInputAction');
+    throw core.AssertionError('unable to parse required enum FlutterTextInputActionType');
   }
 }
 
-$flutterSrcServicesTextInput.TextInputAction? convertFlutterTextInputAction(enums.FlutterTextInputAction_Enum enumValue) {
+$flutterSrcServicesTextInput.TextInputAction? convertFlutterTextInputActionType(enums.FlutterTextInputActionType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterTextInputAction_Enum.NONE:
+    case enums.FlutterTextInputActionType_Enum.NONE:
       return $flutterSrcServicesTextInput.TextInputAction.none;
-    case enums.FlutterTextInputAction_Enum.UNSPECIFIED:
+    case enums.FlutterTextInputActionType_Enum.UNSPECIFIED:
       return $flutterSrcServicesTextInput.TextInputAction.unspecified;
-    case enums.FlutterTextInputAction_Enum.DONE:
+    case enums.FlutterTextInputActionType_Enum.DONE:
       return $flutterSrcServicesTextInput.TextInputAction.done;
-    case enums.FlutterTextInputAction_Enum.GO:
+    case enums.FlutterTextInputActionType_Enum.GO:
       return $flutterSrcServicesTextInput.TextInputAction.go;
-    case enums.FlutterTextInputAction_Enum.SEARCH:
+    case enums.FlutterTextInputActionType_Enum.SEARCH:
       return $flutterSrcServicesTextInput.TextInputAction.search;
-    case enums.FlutterTextInputAction_Enum.SEND:
+    case enums.FlutterTextInputActionType_Enum.SEND:
       return $flutterSrcServicesTextInput.TextInputAction.send;
-    case enums.FlutterTextInputAction_Enum.NEXT:
+    case enums.FlutterTextInputActionType_Enum.NEXT:
       return $flutterSrcServicesTextInput.TextInputAction.next;
-    case enums.FlutterTextInputAction_Enum.PREVIOUS:
+    case enums.FlutterTextInputActionType_Enum.PREVIOUS:
       return $flutterSrcServicesTextInput.TextInputAction.previous;
-    case enums.FlutterTextInputAction_Enum.CONTINUE_ACTION:
+    case enums.FlutterTextInputActionType_Enum.CONTINUE_ACTION:
       return $flutterSrcServicesTextInput.TextInputAction.continueAction;
-    case enums.FlutterTextInputAction_Enum.JOIN:
+    case enums.FlutterTextInputActionType_Enum.JOIN:
       return $flutterSrcServicesTextInput.TextInputAction.join;
-    case enums.FlutterTextInputAction_Enum.ROUTE:
+    case enums.FlutterTextInputActionType_Enum.ROUTE:
       return $flutterSrcServicesTextInput.TextInputAction.route;
-    case enums.FlutterTextInputAction_Enum.EMERGENCY_CALL:
+    case enums.FlutterTextInputActionType_Enum.EMERGENCY_CALL:
       return $flutterSrcServicesTextInput.TextInputAction.emergencyCall;
-    case enums.FlutterTextInputAction_Enum.NEWLINE:
+    case enums.FlutterTextInputActionType_Enum.NEWLINE:
       return $flutterSrcServicesTextInput.TextInputAction.newline;
     default:
       return null;
   }
 }
 
-$flutterSrcPaintingTextPainter.TextOverflow convertRequiredFlutterTextOverflow(enums.FlutterTextOverflow_Enum enumValue) {
-  final result = convertFlutterTextOverflow(enumValue);
+$flutterSrcPaintingTextPainter.TextOverflow convertRequiredFlutterTextOverflowType(enums.FlutterTextOverflowType_Enum enumValue) {
+  final result = convertFlutterTextOverflowType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterTextOverflow');
+    throw core.AssertionError('unable to parse required enum FlutterTextOverflowType');
   }
 }
 
-$flutterSrcPaintingTextPainter.TextOverflow? convertFlutterTextOverflow(enums.FlutterTextOverflow_Enum enumValue) {
+$flutterSrcPaintingTextPainter.TextOverflow? convertFlutterTextOverflowType(enums.FlutterTextOverflowType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterTextOverflow_Enum.CLIP:
+    case enums.FlutterTextOverflowType_Enum.CLIP:
       return $flutterSrcPaintingTextPainter.TextOverflow.clip;
-    case enums.FlutterTextOverflow_Enum.FADE:
+    case enums.FlutterTextOverflowType_Enum.FADE:
       return $flutterSrcPaintingTextPainter.TextOverflow.fade;
-    case enums.FlutterTextOverflow_Enum.ELLIPSIS:
+    case enums.FlutterTextOverflowType_Enum.ELLIPSIS:
       return $flutterSrcPaintingTextPainter.TextOverflow.ellipsis;
-    case enums.FlutterTextOverflow_Enum.VISIBLE:
+    case enums.FlutterTextOverflowType_Enum.VISIBLE:
       return $flutterSrcPaintingTextPainter.TextOverflow.visible;
     default:
       return null;
   }
 }
 
-$flutterSrcPaintingTextPainter.TextWidthBasis convertRequiredFlutterTextWidthBasis(enums.FlutterTextWidthBasis_Enum enumValue) {
-  final result = convertFlutterTextWidthBasis(enumValue);
+$flutterSrcPaintingTextPainter.TextWidthBasis convertRequiredFlutterTextWidthBasisType(enums.FlutterTextWidthBasisType_Enum enumValue) {
+  final result = convertFlutterTextWidthBasisType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterTextWidthBasis');
+    throw core.AssertionError('unable to parse required enum FlutterTextWidthBasisType');
   }
 }
 
-$flutterSrcPaintingTextPainter.TextWidthBasis? convertFlutterTextWidthBasis(enums.FlutterTextWidthBasis_Enum enumValue) {
+$flutterSrcPaintingTextPainter.TextWidthBasis? convertFlutterTextWidthBasisType(enums.FlutterTextWidthBasisType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterTextWidthBasis_Enum.PARENT:
+    case enums.FlutterTextWidthBasisType_Enum.PARENT:
       return $flutterSrcPaintingTextPainter.TextWidthBasis.parent;
-    case enums.FlutterTextWidthBasis_Enum.LONGEST_LINE:
+    case enums.FlutterTextWidthBasisType_Enum.LONGEST_LINE:
       return $flutterSrcPaintingTextPainter.TextWidthBasis.longestLine;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsFocusTraversal.TraversalDirection convertRequiredFlutterTraversalDirection(enums.FlutterTraversalDirection_Enum enumValue) {
-  final result = convertFlutterTraversalDirection(enumValue);
+$flutterSrcWidgetsFocusTraversal.TraversalDirection convertRequiredFlutterTraversalDirectionType(enums.FlutterTraversalDirectionType_Enum enumValue) {
+  final result = convertFlutterTraversalDirectionType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterTraversalDirection');
+    throw core.AssertionError('unable to parse required enum FlutterTraversalDirectionType');
   }
 }
 
-$flutterSrcWidgetsFocusTraversal.TraversalDirection? convertFlutterTraversalDirection(enums.FlutterTraversalDirection_Enum enumValue) {
+$flutterSrcWidgetsFocusTraversal.TraversalDirection? convertFlutterTraversalDirectionType(enums.FlutterTraversalDirectionType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterTraversalDirection_Enum.UP:
+    case enums.FlutterTraversalDirectionType_Enum.UP:
       return $flutterSrcWidgetsFocusTraversal.TraversalDirection.up;
-    case enums.FlutterTraversalDirection_Enum.RIGHT:
+    case enums.FlutterTraversalDirectionType_Enum.RIGHT:
       return $flutterSrcWidgetsFocusTraversal.TraversalDirection.right;
-    case enums.FlutterTraversalDirection_Enum.DOWN:
+    case enums.FlutterTraversalDirectionType_Enum.DOWN:
       return $flutterSrcWidgetsFocusTraversal.TraversalDirection.down;
-    case enums.FlutterTraversalDirection_Enum.LEFT:
+    case enums.FlutterTraversalDirectionType_Enum.LEFT:
       return $flutterSrcWidgetsFocusTraversal.TraversalDirection.left;
     default:
       return null;
   }
 }
 
-$flutterSrcWidgetsFocusTraversal.TraversalEdgeBehavior convertRequiredFlutterTraversalEdgeBehavior(enums.FlutterTraversalEdgeBehavior_Enum enumValue) {
-  final result = convertFlutterTraversalEdgeBehavior(enumValue);
+$flutterSrcWidgetsFocusTraversal.TraversalEdgeBehavior convertRequiredFlutterTraversalEdgeBehaviorType(enums.FlutterTraversalEdgeBehaviorType_Enum enumValue) {
+  final result = convertFlutterTraversalEdgeBehaviorType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterTraversalEdgeBehavior');
+    throw core.AssertionError('unable to parse required enum FlutterTraversalEdgeBehaviorType');
   }
 }
 
-$flutterSrcWidgetsFocusTraversal.TraversalEdgeBehavior? convertFlutterTraversalEdgeBehavior(enums.FlutterTraversalEdgeBehavior_Enum enumValue) {
+$flutterSrcWidgetsFocusTraversal.TraversalEdgeBehavior? convertFlutterTraversalEdgeBehaviorType(enums.FlutterTraversalEdgeBehaviorType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterTraversalEdgeBehavior_Enum.CLOSED_LOOP:
+    case enums.FlutterTraversalEdgeBehaviorType_Enum.CLOSED_LOOP:
       return $flutterSrcWidgetsFocusTraversal.TraversalEdgeBehavior.closedLoop;
-    case enums.FlutterTraversalEdgeBehavior_Enum.LEAVE_FLUTTER_VIEW:
+    case enums.FlutterTraversalEdgeBehaviorType_Enum.LEAVE_FLUTTER_VIEW:
       return $flutterSrcWidgetsFocusTraversal.TraversalEdgeBehavior.leaveFlutterView;
     default:
       return null;
   }
 }
 
-$flutterSrcPaintingBasicTypes.VerticalDirection convertRequiredFlutterVerticalDirection(enums.FlutterVerticalDirection_Enum enumValue) {
-  final result = convertFlutterVerticalDirection(enumValue);
+$flutterSrcPaintingBasicTypes.VerticalDirection convertRequiredFlutterVerticalDirectionType(enums.FlutterVerticalDirectionType_Enum enumValue) {
+  final result = convertFlutterVerticalDirectionType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterVerticalDirection');
+    throw core.AssertionError('unable to parse required enum FlutterVerticalDirectionType');
   }
 }
 
-$flutterSrcPaintingBasicTypes.VerticalDirection? convertFlutterVerticalDirection(enums.FlutterVerticalDirection_Enum enumValue) {
+$flutterSrcPaintingBasicTypes.VerticalDirection? convertFlutterVerticalDirectionType(enums.FlutterVerticalDirectionType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterVerticalDirection_Enum.UP:
+    case enums.FlutterVerticalDirectionType_Enum.UP:
       return $flutterSrcPaintingBasicTypes.VerticalDirection.up;
-    case enums.FlutterVerticalDirection_Enum.DOWN:
+    case enums.FlutterVerticalDirectionType_Enum.DOWN:
       return $flutterSrcPaintingBasicTypes.VerticalDirection.down;
     default:
       return null;
   }
 }
 
-$flutterSrcRenderingWrap.WrapAlignment convertRequiredFlutterWrapAlignment(enums.FlutterWrapAlignment_Enum enumValue) {
-  final result = convertFlutterWrapAlignment(enumValue);
+$flutterSrcRenderingWrap.WrapAlignment convertRequiredFlutterWrapAlignmentType(enums.FlutterWrapAlignmentType_Enum enumValue) {
+  final result = convertFlutterWrapAlignmentType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterWrapAlignment');
+    throw core.AssertionError('unable to parse required enum FlutterWrapAlignmentType');
   }
 }
 
-$flutterSrcRenderingWrap.WrapAlignment? convertFlutterWrapAlignment(enums.FlutterWrapAlignment_Enum enumValue) {
+$flutterSrcRenderingWrap.WrapAlignment? convertFlutterWrapAlignmentType(enums.FlutterWrapAlignmentType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterWrapAlignment_Enum.START:
+    case enums.FlutterWrapAlignmentType_Enum.START:
       return $flutterSrcRenderingWrap.WrapAlignment.start;
-    case enums.FlutterWrapAlignment_Enum.END:
+    case enums.FlutterWrapAlignmentType_Enum.END:
       return $flutterSrcRenderingWrap.WrapAlignment.end;
-    case enums.FlutterWrapAlignment_Enum.CENTER:
+    case enums.FlutterWrapAlignmentType_Enum.CENTER:
       return $flutterSrcRenderingWrap.WrapAlignment.center;
-    case enums.FlutterWrapAlignment_Enum.SPACE_BETWEEN:
+    case enums.FlutterWrapAlignmentType_Enum.SPACE_BETWEEN:
       return $flutterSrcRenderingWrap.WrapAlignment.spaceBetween;
-    case enums.FlutterWrapAlignment_Enum.SPACE_AROUND:
+    case enums.FlutterWrapAlignmentType_Enum.SPACE_AROUND:
       return $flutterSrcRenderingWrap.WrapAlignment.spaceAround;
-    case enums.FlutterWrapAlignment_Enum.SPACE_EVENLY:
+    case enums.FlutterWrapAlignmentType_Enum.SPACE_EVENLY:
       return $flutterSrcRenderingWrap.WrapAlignment.spaceEvenly;
     default:
       return null;
   }
 }
 
-$flutterSrcRenderingWrap.WrapCrossAlignment convertRequiredFlutterWrapCrossAlignment(enums.FlutterWrapCrossAlignment_Enum enumValue) {
-  final result = convertFlutterWrapCrossAlignment(enumValue);
+$flutterSrcRenderingWrap.WrapCrossAlignment convertRequiredFlutterWrapCrossAlignmentType(enums.FlutterWrapCrossAlignmentType_Enum enumValue) {
+  final result = convertFlutterWrapCrossAlignmentType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum FlutterWrapCrossAlignment');
+    throw core.AssertionError('unable to parse required enum FlutterWrapCrossAlignmentType');
   }
 }
 
-$flutterSrcRenderingWrap.WrapCrossAlignment? convertFlutterWrapCrossAlignment(enums.FlutterWrapCrossAlignment_Enum enumValue) {
+$flutterSrcRenderingWrap.WrapCrossAlignment? convertFlutterWrapCrossAlignmentType(enums.FlutterWrapCrossAlignmentType_Enum enumValue) {
   switch (enumValue) {
-    case enums.FlutterWrapCrossAlignment_Enum.START:
+    case enums.FlutterWrapCrossAlignmentType_Enum.START:
       return $flutterSrcRenderingWrap.WrapCrossAlignment.start;
-    case enums.FlutterWrapCrossAlignment_Enum.END:
+    case enums.FlutterWrapCrossAlignmentType_Enum.END:
       return $flutterSrcRenderingWrap.WrapCrossAlignment.end;
-    case enums.FlutterWrapCrossAlignment_Enum.CENTER:
+    case enums.FlutterWrapCrossAlignmentType_Enum.CENTER:
       return $flutterSrcRenderingWrap.WrapCrossAlignment.center;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialBottomNavigationBar.BottomNavigationBarLandscapeLayout convertRequiredMaterialBottomNavigationBarLandscapeLayout(enums.MaterialBottomNavigationBarLandscapeLayout_Enum enumValue) {
-  final result = convertMaterialBottomNavigationBarLandscapeLayout(enumValue);
+$flutterSrcMaterialBottomNavigationBar.BottomNavigationBarLandscapeLayout convertRequiredMaterialBottomNavigationBarLandscapeLayoutType(enums.MaterialBottomNavigationBarLandscapeLayoutType_Enum enumValue) {
+  final result = convertMaterialBottomNavigationBarLandscapeLayoutType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialBottomNavigationBarLandscapeLayout');
+    throw core.AssertionError('unable to parse required enum MaterialBottomNavigationBarLandscapeLayoutType');
   }
 }
 
-$flutterSrcMaterialBottomNavigationBar.BottomNavigationBarLandscapeLayout? convertMaterialBottomNavigationBarLandscapeLayout(enums.MaterialBottomNavigationBarLandscapeLayout_Enum enumValue) {
+$flutterSrcMaterialBottomNavigationBar.BottomNavigationBarLandscapeLayout? convertMaterialBottomNavigationBarLandscapeLayoutType(enums.MaterialBottomNavigationBarLandscapeLayoutType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialBottomNavigationBarLandscapeLayout_Enum.SPREAD:
+    case enums.MaterialBottomNavigationBarLandscapeLayoutType_Enum.SPREAD:
       return $flutterSrcMaterialBottomNavigationBar.BottomNavigationBarLandscapeLayout.spread;
-    case enums.MaterialBottomNavigationBarLandscapeLayout_Enum.CENTERED:
+    case enums.MaterialBottomNavigationBarLandscapeLayoutType_Enum.CENTERED:
       return $flutterSrcMaterialBottomNavigationBar.BottomNavigationBarLandscapeLayout.centered;
-    case enums.MaterialBottomNavigationBarLandscapeLayout_Enum.LINEAR:
+    case enums.MaterialBottomNavigationBarLandscapeLayoutType_Enum.LINEAR:
       return $flutterSrcMaterialBottomNavigationBar.BottomNavigationBarLandscapeLayout.linear;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialBottomNavigationBar.BottomNavigationBarType convertRequiredMaterialBottomNavigationBarType(enums.MaterialBottomNavigationBarType_Enum enumValue) {
-  final result = convertMaterialBottomNavigationBarType(enumValue);
+$flutterSrcMaterialBottomNavigationBar.BottomNavigationBarType convertRequiredMaterialBottomNavigationBarTypeType(enums.MaterialBottomNavigationBarTypeType_Enum enumValue) {
+  final result = convertMaterialBottomNavigationBarTypeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialBottomNavigationBarType');
+    throw core.AssertionError('unable to parse required enum MaterialBottomNavigationBarTypeType');
   }
 }
 
-$flutterSrcMaterialBottomNavigationBar.BottomNavigationBarType? convertMaterialBottomNavigationBarType(enums.MaterialBottomNavigationBarType_Enum enumValue) {
+$flutterSrcMaterialBottomNavigationBar.BottomNavigationBarType? convertMaterialBottomNavigationBarTypeType(enums.MaterialBottomNavigationBarTypeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialBottomNavigationBarType_Enum.FIXED:
+    case enums.MaterialBottomNavigationBarTypeType_Enum.FIXED:
       return $flutterSrcMaterialBottomNavigationBar.BottomNavigationBarType.fixed;
-    case enums.MaterialBottomNavigationBarType_Enum.SHIFTING:
+    case enums.MaterialBottomNavigationBarTypeType_Enum.SHIFTING:
       return $flutterSrcMaterialBottomNavigationBar.BottomNavigationBarType.shifting;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialButtonTheme.ButtonBarLayoutBehavior convertRequiredMaterialButtonBarLayoutBehavior(enums.MaterialButtonBarLayoutBehavior_Enum enumValue) {
-  final result = convertMaterialButtonBarLayoutBehavior(enumValue);
+$flutterSrcMaterialButtonTheme.ButtonBarLayoutBehavior convertRequiredMaterialButtonBarLayoutBehaviorType(enums.MaterialButtonBarLayoutBehaviorType_Enum enumValue) {
+  final result = convertMaterialButtonBarLayoutBehaviorType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialButtonBarLayoutBehavior');
+    throw core.AssertionError('unable to parse required enum MaterialButtonBarLayoutBehaviorType');
   }
 }
 
-$flutterSrcMaterialButtonTheme.ButtonBarLayoutBehavior? convertMaterialButtonBarLayoutBehavior(enums.MaterialButtonBarLayoutBehavior_Enum enumValue) {
+$flutterSrcMaterialButtonTheme.ButtonBarLayoutBehavior? convertMaterialButtonBarLayoutBehaviorType(enums.MaterialButtonBarLayoutBehaviorType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialButtonBarLayoutBehavior_Enum.CONSTRAINED:
+    case enums.MaterialButtonBarLayoutBehaviorType_Enum.CONSTRAINED:
       return $flutterSrcMaterialButtonTheme.ButtonBarLayoutBehavior.constrained;
-    case enums.MaterialButtonBarLayoutBehavior_Enum.PADDED:
+    case enums.MaterialButtonBarLayoutBehaviorType_Enum.PADDED:
       return $flutterSrcMaterialButtonTheme.ButtonBarLayoutBehavior.padded;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialButtonTheme.ButtonTextTheme convertRequiredMaterialButtonTextTheme(enums.MaterialButtonTextTheme_Enum enumValue) {
-  final result = convertMaterialButtonTextTheme(enumValue);
+$flutterSrcMaterialButtonTheme.ButtonTextTheme convertRequiredMaterialButtonTextThemeType(enums.MaterialButtonTextThemeType_Enum enumValue) {
+  final result = convertMaterialButtonTextThemeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialButtonTextTheme');
+    throw core.AssertionError('unable to parse required enum MaterialButtonTextThemeType');
   }
 }
 
-$flutterSrcMaterialButtonTheme.ButtonTextTheme? convertMaterialButtonTextTheme(enums.MaterialButtonTextTheme_Enum enumValue) {
+$flutterSrcMaterialButtonTheme.ButtonTextTheme? convertMaterialButtonTextThemeType(enums.MaterialButtonTextThemeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialButtonTextTheme_Enum.NORMAL:
+    case enums.MaterialButtonTextThemeType_Enum.NORMAL:
       return $flutterSrcMaterialButtonTheme.ButtonTextTheme.normal;
-    case enums.MaterialButtonTextTheme_Enum.ACCENT:
+    case enums.MaterialButtonTextThemeType_Enum.ACCENT:
       return $flutterSrcMaterialButtonTheme.ButtonTextTheme.accent;
-    case enums.MaterialButtonTextTheme_Enum.PRIMARY:
+    case enums.MaterialButtonTextThemeType_Enum.PRIMARY:
       return $flutterSrcMaterialButtonTheme.ButtonTextTheme.primary;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialFlexibleSpaceBar.CollapseMode convertRequiredMaterialCollapseMode(enums.MaterialCollapseMode_Enum enumValue) {
-  final result = convertMaterialCollapseMode(enumValue);
+$flutterSrcMaterialFlexibleSpaceBar.CollapseMode convertRequiredMaterialCollapseModeType(enums.MaterialCollapseModeType_Enum enumValue) {
+  final result = convertMaterialCollapseModeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialCollapseMode');
+    throw core.AssertionError('unable to parse required enum MaterialCollapseModeType');
   }
 }
 
-$flutterSrcMaterialFlexibleSpaceBar.CollapseMode? convertMaterialCollapseMode(enums.MaterialCollapseMode_Enum enumValue) {
+$flutterSrcMaterialFlexibleSpaceBar.CollapseMode? convertMaterialCollapseModeType(enums.MaterialCollapseModeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialCollapseMode_Enum.PARALLAX:
+    case enums.MaterialCollapseModeType_Enum.PARALLAX:
       return $flutterSrcMaterialFlexibleSpaceBar.CollapseMode.parallax;
-    case enums.MaterialCollapseMode_Enum.PIN:
+    case enums.MaterialCollapseModeType_Enum.PIN:
       return $flutterSrcMaterialFlexibleSpaceBar.CollapseMode.pin;
-    case enums.MaterialCollapseMode_Enum.NONE:
+    case enums.MaterialCollapseModeType_Enum.NONE:
       return $flutterSrcMaterialFlexibleSpaceBar.CollapseMode.none;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialDate.DatePickerEntryMode convertRequiredMaterialDatePickerEntryMode(enums.MaterialDatePickerEntryMode_Enum enumValue) {
-  final result = convertMaterialDatePickerEntryMode(enumValue);
+$flutterSrcMaterialDate.DatePickerEntryMode convertRequiredMaterialDatePickerEntryModeType(enums.MaterialDatePickerEntryModeType_Enum enumValue) {
+  final result = convertMaterialDatePickerEntryModeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialDatePickerEntryMode');
+    throw core.AssertionError('unable to parse required enum MaterialDatePickerEntryModeType');
   }
 }
 
-$flutterSrcMaterialDate.DatePickerEntryMode? convertMaterialDatePickerEntryMode(enums.MaterialDatePickerEntryMode_Enum enumValue) {
+$flutterSrcMaterialDate.DatePickerEntryMode? convertMaterialDatePickerEntryModeType(enums.MaterialDatePickerEntryModeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialDatePickerEntryMode_Enum.CALENDAR:
+    case enums.MaterialDatePickerEntryModeType_Enum.CALENDAR:
       return $flutterSrcMaterialDate.DatePickerEntryMode.calendar;
-    case enums.MaterialDatePickerEntryMode_Enum.INPUT:
+    case enums.MaterialDatePickerEntryModeType_Enum.INPUT:
       return $flutterSrcMaterialDate.DatePickerEntryMode.input;
-    case enums.MaterialDatePickerEntryMode_Enum.CALENDAR_ONLY:
+    case enums.MaterialDatePickerEntryModeType_Enum.CALENDAR_ONLY:
       return $flutterSrcMaterialDate.DatePickerEntryMode.calendarOnly;
-    case enums.MaterialDatePickerEntryMode_Enum.INPUT_ONLY:
+    case enums.MaterialDatePickerEntryModeType_Enum.INPUT_ONLY:
       return $flutterSrcMaterialDate.DatePickerEntryMode.inputOnly;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialDate.DatePickerMode convertRequiredMaterialDatePickerMode(enums.MaterialDatePickerMode_Enum enumValue) {
-  final result = convertMaterialDatePickerMode(enumValue);
+$flutterSrcMaterialDate.DatePickerMode convertRequiredMaterialDatePickerModeType(enums.MaterialDatePickerModeType_Enum enumValue) {
+  final result = convertMaterialDatePickerModeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialDatePickerMode');
+    throw core.AssertionError('unable to parse required enum MaterialDatePickerModeType');
   }
 }
 
-$flutterSrcMaterialDate.DatePickerMode? convertMaterialDatePickerMode(enums.MaterialDatePickerMode_Enum enumValue) {
+$flutterSrcMaterialDate.DatePickerMode? convertMaterialDatePickerModeType(enums.MaterialDatePickerModeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialDatePickerMode_Enum.DAY:
+    case enums.MaterialDatePickerModeType_Enum.DAY:
       return $flutterSrcMaterialDate.DatePickerMode.day;
-    case enums.MaterialDatePickerMode_Enum.YEAR:
+    case enums.MaterialDatePickerModeType_Enum.YEAR:
       return $flutterSrcMaterialDate.DatePickerMode.year;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialDrawer.DrawerAlignment convertRequiredMaterialDrawerAlignment(enums.MaterialDrawerAlignment_Enum enumValue) {
-  final result = convertMaterialDrawerAlignment(enumValue);
+$flutterSrcMaterialDrawer.DrawerAlignment convertRequiredMaterialDrawerAlignmentType(enums.MaterialDrawerAlignmentType_Enum enumValue) {
+  final result = convertMaterialDrawerAlignmentType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialDrawerAlignment');
+    throw core.AssertionError('unable to parse required enum MaterialDrawerAlignmentType');
   }
 }
 
-$flutterSrcMaterialDrawer.DrawerAlignment? convertMaterialDrawerAlignment(enums.MaterialDrawerAlignment_Enum enumValue) {
+$flutterSrcMaterialDrawer.DrawerAlignment? convertMaterialDrawerAlignmentType(enums.MaterialDrawerAlignmentType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialDrawerAlignment_Enum.START:
+    case enums.MaterialDrawerAlignmentType_Enum.START:
       return $flutterSrcMaterialDrawer.DrawerAlignment.start;
-    case enums.MaterialDrawerAlignment_Enum.END:
+    case enums.MaterialDrawerAlignmentType_Enum.END:
       return $flutterSrcMaterialDrawer.DrawerAlignment.end;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialInputDecorator.FloatingLabelBehavior convertRequiredMaterialFloatingLabelBehavior(enums.MaterialFloatingLabelBehavior_Enum enumValue) {
-  final result = convertMaterialFloatingLabelBehavior(enumValue);
+$flutterSrcMaterialInputDecorator.FloatingLabelBehavior convertRequiredMaterialFloatingLabelBehaviorType(enums.MaterialFloatingLabelBehaviorType_Enum enumValue) {
+  final result = convertMaterialFloatingLabelBehaviorType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialFloatingLabelBehavior');
+    throw core.AssertionError('unable to parse required enum MaterialFloatingLabelBehaviorType');
   }
 }
 
-$flutterSrcMaterialInputDecorator.FloatingLabelBehavior? convertMaterialFloatingLabelBehavior(enums.MaterialFloatingLabelBehavior_Enum enumValue) {
+$flutterSrcMaterialInputDecorator.FloatingLabelBehavior? convertMaterialFloatingLabelBehaviorType(enums.MaterialFloatingLabelBehaviorType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialFloatingLabelBehavior_Enum.NEVER:
+    case enums.MaterialFloatingLabelBehaviorType_Enum.NEVER:
       return $flutterSrcMaterialInputDecorator.FloatingLabelBehavior.never;
-    case enums.MaterialFloatingLabelBehavior_Enum.AUTO:
+    case enums.MaterialFloatingLabelBehaviorType_Enum.AUTO:
       return $flutterSrcMaterialInputDecorator.FloatingLabelBehavior.auto;
-    case enums.MaterialFloatingLabelBehavior_Enum.ALWAYS:
+    case enums.MaterialFloatingLabelBehaviorType_Enum.ALWAYS:
       return $flutterSrcMaterialInputDecorator.FloatingLabelBehavior.always;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialListTile.ListTileControlAffinity convertRequiredMaterialListTileControlAffinity(enums.MaterialListTileControlAffinity_Enum enumValue) {
-  final result = convertMaterialListTileControlAffinity(enumValue);
+$flutterSrcMaterialListTile.ListTileControlAffinity convertRequiredMaterialListTileControlAffinityType(enums.MaterialListTileControlAffinityType_Enum enumValue) {
+  final result = convertMaterialListTileControlAffinityType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialListTileControlAffinity');
+    throw core.AssertionError('unable to parse required enum MaterialListTileControlAffinityType');
   }
 }
 
-$flutterSrcMaterialListTile.ListTileControlAffinity? convertMaterialListTileControlAffinity(enums.MaterialListTileControlAffinity_Enum enumValue) {
+$flutterSrcMaterialListTile.ListTileControlAffinity? convertMaterialListTileControlAffinityType(enums.MaterialListTileControlAffinityType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialListTileControlAffinity_Enum.LEADING:
+    case enums.MaterialListTileControlAffinityType_Enum.LEADING:
       return $flutterSrcMaterialListTile.ListTileControlAffinity.leading;
-    case enums.MaterialListTileControlAffinity_Enum.TRAILING:
+    case enums.MaterialListTileControlAffinityType_Enum.TRAILING:
       return $flutterSrcMaterialListTile.ListTileControlAffinity.trailing;
-    case enums.MaterialListTileControlAffinity_Enum.PLATFORM:
+    case enums.MaterialListTileControlAffinityType_Enum.PLATFORM:
       return $flutterSrcMaterialListTile.ListTileControlAffinity.platform;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialListTile.ListTileStyle convertRequiredMaterialListTileStyle(enums.MaterialListTileStyle_Enum enumValue) {
-  final result = convertMaterialListTileStyle(enumValue);
+$flutterSrcMaterialListTile.ListTileStyle convertRequiredMaterialListTileStyleType(enums.MaterialListTileStyleType_Enum enumValue) {
+  final result = convertMaterialListTileStyleType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialListTileStyle');
+    throw core.AssertionError('unable to parse required enum MaterialListTileStyleType');
   }
 }
 
-$flutterSrcMaterialListTile.ListTileStyle? convertMaterialListTileStyle(enums.MaterialListTileStyle_Enum enumValue) {
+$flutterSrcMaterialListTile.ListTileStyle? convertMaterialListTileStyleType(enums.MaterialListTileStyleType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialListTileStyle_Enum.LIST:
+    case enums.MaterialListTileStyleType_Enum.LIST:
       return $flutterSrcMaterialListTile.ListTileStyle.list;
-    case enums.MaterialListTileStyle_Enum.DRAWER:
+    case enums.MaterialListTileStyleType_Enum.DRAWER:
       return $flutterSrcMaterialListTile.ListTileStyle.drawer;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialListTile.ListTileTitleAlignment convertRequiredMaterialListTileTitleAlignment(enums.MaterialListTileTitleAlignment_Enum enumValue) {
-  final result = convertMaterialListTileTitleAlignment(enumValue);
+$flutterSrcMaterialListTile.ListTileTitleAlignment convertRequiredMaterialListTileTitleAlignmentType(enums.MaterialListTileTitleAlignmentType_Enum enumValue) {
+  final result = convertMaterialListTileTitleAlignmentType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialListTileTitleAlignment');
+    throw core.AssertionError('unable to parse required enum MaterialListTileTitleAlignmentType');
   }
 }
 
-$flutterSrcMaterialListTile.ListTileTitleAlignment? convertMaterialListTileTitleAlignment(enums.MaterialListTileTitleAlignment_Enum enumValue) {
+$flutterSrcMaterialListTile.ListTileTitleAlignment? convertMaterialListTileTitleAlignmentType(enums.MaterialListTileTitleAlignmentType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialListTileTitleAlignment_Enum.THREE_LINE:
+    case enums.MaterialListTileTitleAlignmentType_Enum.THREE_LINE:
       return $flutterSrcMaterialListTile.ListTileTitleAlignment.threeLine;
-    case enums.MaterialListTileTitleAlignment_Enum.TITLE_HEIGHT:
+    case enums.MaterialListTileTitleAlignmentType_Enum.TITLE_HEIGHT:
       return $flutterSrcMaterialListTile.ListTileTitleAlignment.titleHeight;
-    case enums.MaterialListTileTitleAlignment_Enum.TOP:
+    case enums.MaterialListTileTitleAlignmentType_Enum.TOP:
       return $flutterSrcMaterialListTile.ListTileTitleAlignment.top;
-    case enums.MaterialListTileTitleAlignment_Enum.CENTER:
+    case enums.MaterialListTileTitleAlignmentType_Enum.CENTER:
       return $flutterSrcMaterialListTile.ListTileTitleAlignment.center;
-    case enums.MaterialListTileTitleAlignment_Enum.BOTTOM:
+    case enums.MaterialListTileTitleAlignmentType_Enum.BOTTOM:
       return $flutterSrcMaterialListTile.ListTileTitleAlignment.bottom;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialThemeData.MaterialTapTargetSize convertRequiredMaterialMaterialTapTargetSize(enums.MaterialMaterialTapTargetSize_Enum enumValue) {
-  final result = convertMaterialMaterialTapTargetSize(enumValue);
+$flutterSrcMaterialThemeData.MaterialTapTargetSize convertRequiredMaterialMaterialTapTargetSizeType(enums.MaterialMaterialTapTargetSizeType_Enum enumValue) {
+  final result = convertMaterialMaterialTapTargetSizeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialMaterialTapTargetSize');
+    throw core.AssertionError('unable to parse required enum MaterialMaterialTapTargetSizeType');
   }
 }
 
-$flutterSrcMaterialThemeData.MaterialTapTargetSize? convertMaterialMaterialTapTargetSize(enums.MaterialMaterialTapTargetSize_Enum enumValue) {
+$flutterSrcMaterialThemeData.MaterialTapTargetSize? convertMaterialMaterialTapTargetSizeType(enums.MaterialMaterialTapTargetSizeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialMaterialTapTargetSize_Enum.PADDED:
+    case enums.MaterialMaterialTapTargetSizeType_Enum.PADDED:
       return $flutterSrcMaterialThemeData.MaterialTapTargetSize.padded;
-    case enums.MaterialMaterialTapTargetSize_Enum.SHRINK_WRAP:
+    case enums.MaterialMaterialTapTargetSizeType_Enum.SHRINK_WRAP:
       return $flutterSrcMaterialThemeData.MaterialTapTargetSize.shrinkWrap;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialMaterial.MaterialType convertRequiredMaterialMaterialType(enums.MaterialMaterialType_Enum enumValue) {
-  final result = convertMaterialMaterialType(enumValue);
+$flutterSrcMaterialMaterial.MaterialType convertRequiredMaterialMaterialTypeType(enums.MaterialMaterialTypeType_Enum enumValue) {
+  final result = convertMaterialMaterialTypeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialMaterialType');
+    throw core.AssertionError('unable to parse required enum MaterialMaterialTypeType');
   }
 }
 
-$flutterSrcMaterialMaterial.MaterialType? convertMaterialMaterialType(enums.MaterialMaterialType_Enum enumValue) {
+$flutterSrcMaterialMaterial.MaterialType? convertMaterialMaterialTypeType(enums.MaterialMaterialTypeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialMaterialType_Enum.CANVAS:
+    case enums.MaterialMaterialTypeType_Enum.CANVAS:
       return $flutterSrcMaterialMaterial.MaterialType.canvas;
-    case enums.MaterialMaterialType_Enum.CARD:
+    case enums.MaterialMaterialTypeType_Enum.CARD:
       return $flutterSrcMaterialMaterial.MaterialType.card;
-    case enums.MaterialMaterialType_Enum.CIRCLE:
+    case enums.MaterialMaterialTypeType_Enum.CIRCLE:
       return $flutterSrcMaterialMaterial.MaterialType.circle;
-    case enums.MaterialMaterialType_Enum.BUTTON:
+    case enums.MaterialMaterialTypeType_Enum.BUTTON:
       return $flutterSrcMaterialMaterial.MaterialType.button;
-    case enums.MaterialMaterialType_Enum.TRANSPARENCY:
+    case enums.MaterialMaterialTypeType_Enum.TRANSPARENCY:
       return $flutterSrcMaterialMaterial.MaterialType.transparency;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialNavigationBar.NavigationDestinationLabelBehavior convertRequiredMaterialNavigationDestinationLabelBehavior(enums.MaterialNavigationDestinationLabelBehavior_Enum enumValue) {
-  final result = convertMaterialNavigationDestinationLabelBehavior(enumValue);
+$flutterSrcMaterialNavigationBar.NavigationDestinationLabelBehavior convertRequiredMaterialNavigationDestinationLabelBehaviorType(enums.MaterialNavigationDestinationLabelBehaviorType_Enum enumValue) {
+  final result = convertMaterialNavigationDestinationLabelBehaviorType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialNavigationDestinationLabelBehavior');
+    throw core.AssertionError('unable to parse required enum MaterialNavigationDestinationLabelBehaviorType');
   }
 }
 
-$flutterSrcMaterialNavigationBar.NavigationDestinationLabelBehavior? convertMaterialNavigationDestinationLabelBehavior(enums.MaterialNavigationDestinationLabelBehavior_Enum enumValue) {
+$flutterSrcMaterialNavigationBar.NavigationDestinationLabelBehavior? convertMaterialNavigationDestinationLabelBehaviorType(enums.MaterialNavigationDestinationLabelBehaviorType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialNavigationDestinationLabelBehavior_Enum.ALWAYS_SHOW:
+    case enums.MaterialNavigationDestinationLabelBehaviorType_Enum.ALWAYS_SHOW:
       return $flutterSrcMaterialNavigationBar.NavigationDestinationLabelBehavior.alwaysShow;
-    case enums.MaterialNavigationDestinationLabelBehavior_Enum.ALWAYS_HIDE:
+    case enums.MaterialNavigationDestinationLabelBehaviorType_Enum.ALWAYS_HIDE:
       return $flutterSrcMaterialNavigationBar.NavigationDestinationLabelBehavior.alwaysHide;
-    case enums.MaterialNavigationDestinationLabelBehavior_Enum.ONLY_SHOW_SELECTED:
+    case enums.MaterialNavigationDestinationLabelBehaviorType_Enum.ONLY_SHOW_SELECTED:
       return $flutterSrcMaterialNavigationBar.NavigationDestinationLabelBehavior.onlyShowSelected;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialNavigationRail.NavigationRailLabelType convertRequiredMaterialNavigationRailLabelType(enums.MaterialNavigationRailLabelType_Enum enumValue) {
-  final result = convertMaterialNavigationRailLabelType(enumValue);
+$flutterSrcMaterialNavigationRail.NavigationRailLabelType convertRequiredMaterialNavigationRailLabelTypeType(enums.MaterialNavigationRailLabelTypeType_Enum enumValue) {
+  final result = convertMaterialNavigationRailLabelTypeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialNavigationRailLabelType');
+    throw core.AssertionError('unable to parse required enum MaterialNavigationRailLabelTypeType');
   }
 }
 
-$flutterSrcMaterialNavigationRail.NavigationRailLabelType? convertMaterialNavigationRailLabelType(enums.MaterialNavigationRailLabelType_Enum enumValue) {
+$flutterSrcMaterialNavigationRail.NavigationRailLabelType? convertMaterialNavigationRailLabelTypeType(enums.MaterialNavigationRailLabelTypeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialNavigationRailLabelType_Enum.NONE:
+    case enums.MaterialNavigationRailLabelTypeType_Enum.NONE:
       return $flutterSrcMaterialNavigationRail.NavigationRailLabelType.none;
-    case enums.MaterialNavigationRailLabelType_Enum.SELECTED:
+    case enums.MaterialNavigationRailLabelTypeType_Enum.SELECTED:
       return $flutterSrcMaterialNavigationRail.NavigationRailLabelType.selected;
-    case enums.MaterialNavigationRailLabelType_Enum.ALL:
+    case enums.MaterialNavigationRailLabelTypeType_Enum.ALL:
       return $flutterSrcMaterialNavigationRail.NavigationRailLabelType.all;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialPopupMenuTheme.PopupMenuPosition convertRequiredMaterialPopupMenuPosition(enums.MaterialPopupMenuPosition_Enum enumValue) {
-  final result = convertMaterialPopupMenuPosition(enumValue);
+$flutterSrcMaterialPopupMenuTheme.PopupMenuPosition convertRequiredMaterialPopupMenuPositionType(enums.MaterialPopupMenuPositionType_Enum enumValue) {
+  final result = convertMaterialPopupMenuPositionType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialPopupMenuPosition');
+    throw core.AssertionError('unable to parse required enum MaterialPopupMenuPositionType');
   }
 }
 
-$flutterSrcMaterialPopupMenuTheme.PopupMenuPosition? convertMaterialPopupMenuPosition(enums.MaterialPopupMenuPosition_Enum enumValue) {
+$flutterSrcMaterialPopupMenuTheme.PopupMenuPosition? convertMaterialPopupMenuPositionType(enums.MaterialPopupMenuPositionType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialPopupMenuPosition_Enum.OVER:
+    case enums.MaterialPopupMenuPositionType_Enum.OVER:
       return $flutterSrcMaterialPopupMenuTheme.PopupMenuPosition.over;
-    case enums.MaterialPopupMenuPosition_Enum.UNDER:
+    case enums.MaterialPopupMenuPositionType_Enum.UNDER:
       return $flutterSrcMaterialPopupMenuTheme.PopupMenuPosition.under;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialSliderTheme.ShowValueIndicator convertRequiredMaterialShowValueIndicator(enums.MaterialShowValueIndicator_Enum enumValue) {
-  final result = convertMaterialShowValueIndicator(enumValue);
+$flutterSrcMaterialSliderTheme.ShowValueIndicator convertRequiredMaterialShowValueIndicatorType(enums.MaterialShowValueIndicatorType_Enum enumValue) {
+  final result = convertMaterialShowValueIndicatorType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialShowValueIndicator');
+    throw core.AssertionError('unable to parse required enum MaterialShowValueIndicatorType');
   }
 }
 
-$flutterSrcMaterialSliderTheme.ShowValueIndicator? convertMaterialShowValueIndicator(enums.MaterialShowValueIndicator_Enum enumValue) {
+$flutterSrcMaterialSliderTheme.ShowValueIndicator? convertMaterialShowValueIndicatorType(enums.MaterialShowValueIndicatorType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialShowValueIndicator_Enum.ONLY_FOR_DISCRETE:
+    case enums.MaterialShowValueIndicatorType_Enum.ONLY_FOR_DISCRETE:
       return $flutterSrcMaterialSliderTheme.ShowValueIndicator.onlyForDiscrete;
-    case enums.MaterialShowValueIndicator_Enum.ONLY_FOR_CONTINUOUS:
+    case enums.MaterialShowValueIndicatorType_Enum.ONLY_FOR_CONTINUOUS:
       return $flutterSrcMaterialSliderTheme.ShowValueIndicator.onlyForContinuous;
-    case enums.MaterialShowValueIndicator_Enum.ALWAYS:
+    case enums.MaterialShowValueIndicatorType_Enum.ALWAYS:
       return $flutterSrcMaterialSliderTheme.ShowValueIndicator.always;
-    case enums.MaterialShowValueIndicator_Enum.NEVER:
+    case enums.MaterialShowValueIndicatorType_Enum.NEVER:
       return $flutterSrcMaterialSliderTheme.ShowValueIndicator.never;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialSlider.SliderInteraction convertRequiredMaterialSliderInteraction(enums.MaterialSliderInteraction_Enum enumValue) {
-  final result = convertMaterialSliderInteraction(enumValue);
+$flutterSrcMaterialSlider.SliderInteraction convertRequiredMaterialSliderInteractionType(enums.MaterialSliderInteractionType_Enum enumValue) {
+  final result = convertMaterialSliderInteractionType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialSliderInteraction');
+    throw core.AssertionError('unable to parse required enum MaterialSliderInteractionType');
   }
 }
 
-$flutterSrcMaterialSlider.SliderInteraction? convertMaterialSliderInteraction(enums.MaterialSliderInteraction_Enum enumValue) {
+$flutterSrcMaterialSlider.SliderInteraction? convertMaterialSliderInteractionType(enums.MaterialSliderInteractionType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialSliderInteraction_Enum.TAP_AND_SLIDE:
+    case enums.MaterialSliderInteractionType_Enum.TAP_AND_SLIDE:
       return $flutterSrcMaterialSlider.SliderInteraction.tapAndSlide;
-    case enums.MaterialSliderInteraction_Enum.TAP_ONLY:
+    case enums.MaterialSliderInteractionType_Enum.TAP_ONLY:
       return $flutterSrcMaterialSlider.SliderInteraction.tapOnly;
-    case enums.MaterialSliderInteraction_Enum.SLIDE_ONLY:
+    case enums.MaterialSliderInteractionType_Enum.SLIDE_ONLY:
       return $flutterSrcMaterialSlider.SliderInteraction.slideOnly;
-    case enums.MaterialSliderInteraction_Enum.SLIDE_THUMB:
+    case enums.MaterialSliderInteractionType_Enum.SLIDE_THUMB:
       return $flutterSrcMaterialSlider.SliderInteraction.slideThumb;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialSnackBarTheme.SnackBarBehavior convertRequiredMaterialSnackBarBehavior(enums.MaterialSnackBarBehavior_Enum enumValue) {
-  final result = convertMaterialSnackBarBehavior(enumValue);
+$flutterSrcMaterialSnackBarTheme.SnackBarBehavior convertRequiredMaterialSnackBarBehaviorType(enums.MaterialSnackBarBehaviorType_Enum enumValue) {
+  final result = convertMaterialSnackBarBehaviorType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialSnackBarBehavior');
+    throw core.AssertionError('unable to parse required enum MaterialSnackBarBehaviorType');
   }
 }
 
-$flutterSrcMaterialSnackBarTheme.SnackBarBehavior? convertMaterialSnackBarBehavior(enums.MaterialSnackBarBehavior_Enum enumValue) {
+$flutterSrcMaterialSnackBarTheme.SnackBarBehavior? convertMaterialSnackBarBehaviorType(enums.MaterialSnackBarBehaviorType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialSnackBarBehavior_Enum.FIXED:
+    case enums.MaterialSnackBarBehaviorType_Enum.FIXED:
       return $flutterSrcMaterialSnackBarTheme.SnackBarBehavior.fixed;
-    case enums.MaterialSnackBarBehavior_Enum.FLOATING:
+    case enums.MaterialSnackBarBehaviorType_Enum.FLOATING:
       return $flutterSrcMaterialSnackBarTheme.SnackBarBehavior.floating;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialStepper.StepState convertRequiredMaterialStepState(enums.MaterialStepState_Enum enumValue) {
-  final result = convertMaterialStepState(enumValue);
+$flutterSrcMaterialStepper.StepState convertRequiredMaterialStepStateType(enums.MaterialStepStateType_Enum enumValue) {
+  final result = convertMaterialStepStateType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialStepState');
+    throw core.AssertionError('unable to parse required enum MaterialStepStateType');
   }
 }
 
-$flutterSrcMaterialStepper.StepState? convertMaterialStepState(enums.MaterialStepState_Enum enumValue) {
+$flutterSrcMaterialStepper.StepState? convertMaterialStepStateType(enums.MaterialStepStateType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialStepState_Enum.INDEXED:
+    case enums.MaterialStepStateType_Enum.INDEXED:
       return $flutterSrcMaterialStepper.StepState.indexed;
-    case enums.MaterialStepState_Enum.EDITING:
+    case enums.MaterialStepStateType_Enum.EDITING:
       return $flutterSrcMaterialStepper.StepState.editing;
-    case enums.MaterialStepState_Enum.COMPLETE:
+    case enums.MaterialStepStateType_Enum.COMPLETE:
       return $flutterSrcMaterialStepper.StepState.complete;
-    case enums.MaterialStepState_Enum.DISABLED:
+    case enums.MaterialStepStateType_Enum.DISABLED:
       return $flutterSrcMaterialStepper.StepState.disabled;
-    case enums.MaterialStepState_Enum.ERROR:
+    case enums.MaterialStepStateType_Enum.ERROR:
       return $flutterSrcMaterialStepper.StepState.error;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialStepper.StepperType convertRequiredMaterialStepperType(enums.MaterialStepperType_Enum enumValue) {
-  final result = convertMaterialStepperType(enumValue);
+$flutterSrcMaterialStepper.StepperType convertRequiredMaterialStepperTypeType(enums.MaterialStepperTypeType_Enum enumValue) {
+  final result = convertMaterialStepperTypeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialStepperType');
+    throw core.AssertionError('unable to parse required enum MaterialStepperTypeType');
   }
 }
 
-$flutterSrcMaterialStepper.StepperType? convertMaterialStepperType(enums.MaterialStepperType_Enum enumValue) {
+$flutterSrcMaterialStepper.StepperType? convertMaterialStepperTypeType(enums.MaterialStepperTypeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialStepperType_Enum.VERTICAL:
+    case enums.MaterialStepperTypeType_Enum.VERTICAL:
       return $flutterSrcMaterialStepper.StepperType.vertical;
-    case enums.MaterialStepperType_Enum.HORIZONTAL:
+    case enums.MaterialStepperTypeType_Enum.HORIZONTAL:
       return $flutterSrcMaterialStepper.StepperType.horizontal;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialFlexibleSpaceBar.StretchMode convertRequiredMaterialStretchMode(enums.MaterialStretchMode_Enum enumValue) {
-  final result = convertMaterialStretchMode(enumValue);
+$flutterSrcMaterialFlexibleSpaceBar.StretchMode convertRequiredMaterialStretchModeType(enums.MaterialStretchModeType_Enum enumValue) {
+  final result = convertMaterialStretchModeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialStretchMode');
+    throw core.AssertionError('unable to parse required enum MaterialStretchModeType');
   }
 }
 
-$flutterSrcMaterialFlexibleSpaceBar.StretchMode? convertMaterialStretchMode(enums.MaterialStretchMode_Enum enumValue) {
+$flutterSrcMaterialFlexibleSpaceBar.StretchMode? convertMaterialStretchModeType(enums.MaterialStretchModeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialStretchMode_Enum.ZOOM_BACKGROUND:
+    case enums.MaterialStretchModeType_Enum.ZOOM_BACKGROUND:
       return $flutterSrcMaterialFlexibleSpaceBar.StretchMode.zoomBackground;
-    case enums.MaterialStretchMode_Enum.BLUR_BACKGROUND:
+    case enums.MaterialStretchModeType_Enum.BLUR_BACKGROUND:
       return $flutterSrcMaterialFlexibleSpaceBar.StretchMode.blurBackground;
-    case enums.MaterialStretchMode_Enum.FADE_TITLE:
+    case enums.MaterialStretchModeType_Enum.FADE_TITLE:
       return $flutterSrcMaterialFlexibleSpaceBar.StretchMode.fadeTitle;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialTabs.TabAlignment convertRequiredMaterialTabAlignment(enums.MaterialTabAlignment_Enum enumValue) {
-  final result = convertMaterialTabAlignment(enumValue);
+$flutterSrcMaterialTabs.TabAlignment convertRequiredMaterialTabAlignmentType(enums.MaterialTabAlignmentType_Enum enumValue) {
+  final result = convertMaterialTabAlignmentType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialTabAlignment');
+    throw core.AssertionError('unable to parse required enum MaterialTabAlignmentType');
   }
 }
 
-$flutterSrcMaterialTabs.TabAlignment? convertMaterialTabAlignment(enums.MaterialTabAlignment_Enum enumValue) {
+$flutterSrcMaterialTabs.TabAlignment? convertMaterialTabAlignmentType(enums.MaterialTabAlignmentType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialTabAlignment_Enum.START:
+    case enums.MaterialTabAlignmentType_Enum.START:
       return $flutterSrcMaterialTabs.TabAlignment.start;
-    case enums.MaterialTabAlignment_Enum.START_OFFSET:
+    case enums.MaterialTabAlignmentType_Enum.START_OFFSET:
       return $flutterSrcMaterialTabs.TabAlignment.startOffset;
-    case enums.MaterialTabAlignment_Enum.FILL:
+    case enums.MaterialTabAlignmentType_Enum.FILL:
       return $flutterSrcMaterialTabs.TabAlignment.fill;
-    case enums.MaterialTabAlignment_Enum.CENTER:
+    case enums.MaterialTabAlignmentType_Enum.CENTER:
       return $flutterSrcMaterialTabs.TabAlignment.center;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialTabs.TabBarIndicatorSize convertRequiredMaterialTabBarIndicatorSize(enums.MaterialTabBarIndicatorSize_Enum enumValue) {
-  final result = convertMaterialTabBarIndicatorSize(enumValue);
+$flutterSrcMaterialTabs.TabBarIndicatorSize convertRequiredMaterialTabBarIndicatorSizeType(enums.MaterialTabBarIndicatorSizeType_Enum enumValue) {
+  final result = convertMaterialTabBarIndicatorSizeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialTabBarIndicatorSize');
+    throw core.AssertionError('unable to parse required enum MaterialTabBarIndicatorSizeType');
   }
 }
 
-$flutterSrcMaterialTabs.TabBarIndicatorSize? convertMaterialTabBarIndicatorSize(enums.MaterialTabBarIndicatorSize_Enum enumValue) {
+$flutterSrcMaterialTabs.TabBarIndicatorSize? convertMaterialTabBarIndicatorSizeType(enums.MaterialTabBarIndicatorSizeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialTabBarIndicatorSize_Enum.TAB:
+    case enums.MaterialTabBarIndicatorSizeType_Enum.TAB:
       return $flutterSrcMaterialTabs.TabBarIndicatorSize.tab;
-    case enums.MaterialTabBarIndicatorSize_Enum.LABEL:
+    case enums.MaterialTabBarIndicatorSizeType_Enum.LABEL:
       return $flutterSrcMaterialTabs.TabBarIndicatorSize.label;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialApp.ThemeMode convertRequiredMaterialThemeMode(enums.MaterialThemeMode_Enum enumValue) {
-  final result = convertMaterialThemeMode(enumValue);
+$flutterSrcMaterialApp.ThemeMode convertRequiredMaterialThemeModeType(enums.MaterialThemeModeType_Enum enumValue) {
+  final result = convertMaterialThemeModeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialThemeMode');
+    throw core.AssertionError('unable to parse required enum MaterialThemeModeType');
   }
 }
 
-$flutterSrcMaterialApp.ThemeMode? convertMaterialThemeMode(enums.MaterialThemeMode_Enum enumValue) {
+$flutterSrcMaterialApp.ThemeMode? convertMaterialThemeModeType(enums.MaterialThemeModeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialThemeMode_Enum.SYSTEM:
+    case enums.MaterialThemeModeType_Enum.SYSTEM:
       return $flutterSrcMaterialApp.ThemeMode.system;
-    case enums.MaterialThemeMode_Enum.LIGHT:
+    case enums.MaterialThemeModeType_Enum.LIGHT:
       return $flutterSrcMaterialApp.ThemeMode.light;
-    case enums.MaterialThemeMode_Enum.DARK:
+    case enums.MaterialThemeModeType_Enum.DARK:
       return $flutterSrcMaterialApp.ThemeMode.dark;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialTimePicker.TimePickerEntryMode convertRequiredMaterialTimePickerEntryMode(enums.MaterialTimePickerEntryMode_Enum enumValue) {
-  final result = convertMaterialTimePickerEntryMode(enumValue);
+$flutterSrcMaterialTimePicker.TimePickerEntryMode convertRequiredMaterialTimePickerEntryModeType(enums.MaterialTimePickerEntryModeType_Enum enumValue) {
+  final result = convertMaterialTimePickerEntryModeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialTimePickerEntryMode');
+    throw core.AssertionError('unable to parse required enum MaterialTimePickerEntryModeType');
   }
 }
 
-$flutterSrcMaterialTimePicker.TimePickerEntryMode? convertMaterialTimePickerEntryMode(enums.MaterialTimePickerEntryMode_Enum enumValue) {
+$flutterSrcMaterialTimePicker.TimePickerEntryMode? convertMaterialTimePickerEntryModeType(enums.MaterialTimePickerEntryModeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialTimePickerEntryMode_Enum.DIAL:
+    case enums.MaterialTimePickerEntryModeType_Enum.DIAL:
       return $flutterSrcMaterialTimePicker.TimePickerEntryMode.dial;
-    case enums.MaterialTimePickerEntryMode_Enum.INPUT:
+    case enums.MaterialTimePickerEntryModeType_Enum.INPUT:
       return $flutterSrcMaterialTimePicker.TimePickerEntryMode.input;
-    case enums.MaterialTimePickerEntryMode_Enum.DIAL_ONLY:
+    case enums.MaterialTimePickerEntryModeType_Enum.DIAL_ONLY:
       return $flutterSrcMaterialTimePicker.TimePickerEntryMode.dialOnly;
-    case enums.MaterialTimePickerEntryMode_Enum.INPUT_ONLY:
+    case enums.MaterialTimePickerEntryModeType_Enum.INPUT_ONLY:
       return $flutterSrcMaterialTimePicker.TimePickerEntryMode.inputOnly;
     default:
       return null;
   }
 }
 
-$flutterSrcMaterialTooltipTheme.TooltipTriggerMode convertRequiredMaterialTooltipTriggerMode(enums.MaterialTooltipTriggerMode_Enum enumValue) {
-  final result = convertMaterialTooltipTriggerMode(enumValue);
+$flutterSrcMaterialTooltipTheme.TooltipTriggerMode convertRequiredMaterialTooltipTriggerModeType(enums.MaterialTooltipTriggerModeType_Enum enumValue) {
+  final result = convertMaterialTooltipTriggerModeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum MaterialTooltipTriggerMode');
+    throw core.AssertionError('unable to parse required enum MaterialTooltipTriggerModeType');
   }
 }
 
-$flutterSrcMaterialTooltipTheme.TooltipTriggerMode? convertMaterialTooltipTriggerMode(enums.MaterialTooltipTriggerMode_Enum enumValue) {
+$flutterSrcMaterialTooltipTheme.TooltipTriggerMode? convertMaterialTooltipTriggerModeType(enums.MaterialTooltipTriggerModeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.MaterialTooltipTriggerMode_Enum.MANUAL:
+    case enums.MaterialTooltipTriggerModeType_Enum.MANUAL:
       return $flutterSrcMaterialTooltipTheme.TooltipTriggerMode.manual;
-    case enums.MaterialTooltipTriggerMode_Enum.LONG_PRESS:
+    case enums.MaterialTooltipTriggerModeType_Enum.LONG_PRESS:
       return $flutterSrcMaterialTooltipTheme.TooltipTriggerMode.longPress;
-    case enums.MaterialTooltipTriggerMode_Enum.TAP:
+    case enums.MaterialTooltipTriggerModeType_Enum.TAP:
       return $flutterSrcMaterialTooltipTheme.TooltipTriggerMode.tap;
     default:
       return null;
   }
 }
 
-$flutterSrcCupertinoTextField.OverlayVisibilityMode convertRequiredOverlayVisibilityMode(enums.OverlayVisibilityMode_Enum enumValue) {
-  final result = convertOverlayVisibilityMode(enumValue);
+$flutterSrcCupertinoTextField.OverlayVisibilityMode convertRequiredOverlayVisibilityModeType(enums.OverlayVisibilityModeType_Enum enumValue) {
+  final result = convertOverlayVisibilityModeType(enumValue);
   if(result != null) {
     return result;
   } else {
-    throw core.AssertionError('unable to parse required enum OverlayVisibilityMode');
+    throw core.AssertionError('unable to parse required enum OverlayVisibilityModeType');
   }
 }
 
-$flutterSrcCupertinoTextField.OverlayVisibilityMode? convertOverlayVisibilityMode(enums.OverlayVisibilityMode_Enum enumValue) {
+$flutterSrcCupertinoTextField.OverlayVisibilityMode? convertOverlayVisibilityModeType(enums.OverlayVisibilityModeType_Enum enumValue) {
   switch (enumValue) {
-    case enums.OverlayVisibilityMode_Enum.NEVER:
+    case enums.OverlayVisibilityModeType_Enum.NEVER:
       return $flutterSrcCupertinoTextField.OverlayVisibilityMode.never;
-    case enums.OverlayVisibilityMode_Enum.EDITING:
+    case enums.OverlayVisibilityModeType_Enum.EDITING:
       return $flutterSrcCupertinoTextField.OverlayVisibilityMode.editing;
-    case enums.OverlayVisibilityMode_Enum.NOT_EDITING:
+    case enums.OverlayVisibilityModeType_Enum.NOT_EDITING:
       return $flutterSrcCupertinoTextField.OverlayVisibilityMode.notEditing;
-    case enums.OverlayVisibilityMode_Enum.ALWAYS:
+    case enums.OverlayVisibilityModeType_Enum.ALWAYS:
       return $flutterSrcCupertinoTextField.OverlayVisibilityMode.always;
     default:
       return null;

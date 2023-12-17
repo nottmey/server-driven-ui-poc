@@ -119,7 +119,7 @@ class ExperienceResponse extends $pb.GeneratedMessage {
 
 class Experience extends $pb.GeneratedMessage {
   factory Experience({
-    $2.WidgetExpression? widget,
+    $2.WidgetType? widget,
   }) {
     final $result = create();
     if (widget != null) {
@@ -132,7 +132,7 @@ class Experience extends $pb.GeneratedMessage {
   factory Experience.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Experience', createEmptyInstance: create)
-    ..aOM<$2.WidgetExpression>(2, _omitFieldNames ? '' : 'widget', subBuilder: $2.WidgetExpression.create)
+    ..aOM<$2.WidgetType>(2, _omitFieldNames ? '' : 'widget', subBuilder: $2.WidgetType.create)
     ..hasRequiredFields = false
   ;
 
@@ -158,15 +158,15 @@ class Experience extends $pb.GeneratedMessage {
   static Experience? _defaultInstance;
 
   @$pb.TagNumber(2)
-  $2.WidgetExpression get widget => $_getN(0);
+  $2.WidgetType get widget => $_getN(0);
   @$pb.TagNumber(2)
-  set widget($2.WidgetExpression v) { setField(2, v); }
+  set widget($2.WidgetType v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasWidget() => $_has(0);
   @$pb.TagNumber(2)
   void clearWidget() => clearField(2);
   @$pb.TagNumber(2)
-  $2.WidgetExpression ensureWidget() => $_ensure(0);
+  $2.WidgetType ensureWidget() => $_ensure(0);
 }
 
 

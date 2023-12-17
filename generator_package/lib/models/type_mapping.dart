@@ -65,7 +65,7 @@ extension TypeMappingCreationExtension on DartType {
     } else if (isWidgetTypeExactly) {
       return TypeMapping._of(
         dartType: this,
-        messageName: widgetExpression,
+        messageName: widgetType,
         mappingStrategy: MappingStrategy.generateMessage,
       );
     } else if (this is InterfaceType) {
@@ -75,14 +75,14 @@ extension TypeMappingCreationExtension on DartType {
       if (element is EnumElement) {
         return TypeMapping._of(
           dartType: this,
-          messageName: '$libraryPrefix$name',
+          messageName: '$libraryPrefix$name$typePostfix',
           mappingStrategy: MappingStrategy.generateEnum,
         );
       } else if (element is ClassElement) {
         if (element.typeParameters.isEmpty) {
           return TypeMapping._of(
             dartType: this,
-            messageName: '$libraryPrefix${name}Expression',
+            messageName: '$libraryPrefix$name$typePostfix',
             mappingStrategy: MappingStrategy.generateMessage,
           );
         } else {
