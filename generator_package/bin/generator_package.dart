@@ -123,7 +123,7 @@ build/
     );
 
     writeFile(
-      'lib/$evaluateExpressionsFile',
+      'lib/$constructTypesFile',
       protocol.toEvaluateExpressionsCode(),
     );
   }

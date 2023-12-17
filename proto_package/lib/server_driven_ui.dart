@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:grpc/grpc.dart' as grpc;
-import 'package:proto_package/builders/evaluate_expressions.sdu.dart';
+import 'package:proto_package/builders/construct_types.sdu.dart';
 import 'package:proto_package/proto/messages.pb.dart' as messages;
 import 'package:proto_package/proto/service.pbgrpc.dart' as service;
 
@@ -77,7 +77,7 @@ class _ServerDrivenUiState extends State<ServerDrivenUi> {
     if (snapshot.connectionState == ConnectionState.waiting) {
       return CircularProgressIndicator();
     } else {
-      return evaluateWidgetType(snapshot.data!) ?? Icon(Icons.error);
+      return constructWidgetType(snapshot.data!) ?? Icon(Icons.error);
     }
   }
 }

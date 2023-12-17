@@ -18,7 +18,7 @@ const serviceProtoFile = 'service.proto';
 
 const convertEnumsFile = 'builders/convert_enums.sdu.dart';
 
-const evaluateExpressionsFile = 'builders/evaluate_expressions.sdu.dart';
+const constructTypesFile = 'builders/construct_types.sdu.dart';
 
 const generatedFileHeader = '''
 //

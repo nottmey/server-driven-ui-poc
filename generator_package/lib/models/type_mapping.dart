@@ -239,8 +239,8 @@ ${enumElement.fields.where((f) => f.name != 'values').map((f) {
     Map<TypeMapping, Iterable<Constructor>> allConstructors,
   ) {
     return '''
-$importAlias.$typeName evaluateRequired$messageName(messages.$messageName tree) {
-  final result = evaluate$messageName(tree);
+$importAlias.$typeName constructRequired$messageName(messages.$messageName tree) {
+  final result = construct$messageName(tree);
   if(result != null) {
     return result;
   } else {
@@ -248,7 +248,7 @@ $importAlias.$typeName evaluateRequired$messageName(messages.$messageName tree) 
   }
 }
 
-$importAlias.$typeName? evaluate$messageName(messages.$messageName? tree) {
+$importAlias.$typeName? construct$messageName(messages.$messageName? tree) {
   if(tree == null) {
     return null;
   }
@@ -272,8 +272,8 @@ ${constructors.map((c) => c.toDartSwitchCase('messages', messageName, allConstru
         return null;
       case MappingStrategy.generateMessage:
         return isOptionalInEvaluation
-            ? 'evaluate$messageName'
-            : 'evaluateRequired$messageName';
+            ? 'construct$messageName'
+            : 'constructRequired$messageName';
       case MappingStrategy.generateEnum:
         return isOptionalInEvaluation
             ? 'enums.convert$messageName'
