@@ -2109,6 +2109,42 @@ class FlutterOverflowBarAlignmentType extends $pb.GeneratedMessage {
   static FlutterOverflowBarAlignmentType? _defaultInstance;
 }
 
+///  package:flutter/src/rendering/shifted_box.dart
+///
+///  How much space should be occupied by the [OverflowBox] if there is no
+///  overflow.
+class FlutterOverflowBoxFitType extends $pb.GeneratedMessage {
+  factory FlutterOverflowBoxFitType() => create();
+  FlutterOverflowBoxFitType._() : super();
+  factory FlutterOverflowBoxFitType.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory FlutterOverflowBoxFitType.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'FlutterOverflowBoxFitType', createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
+
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  FlutterOverflowBoxFitType clone() => FlutterOverflowBoxFitType()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  FlutterOverflowBoxFitType copyWith(void Function(FlutterOverflowBoxFitType) updates) => super.copyWith((message) => updates(message as FlutterOverflowBoxFitType)) as FlutterOverflowBoxFitType;
+
+  $pb.BuilderInfo get info_ => _i;
+
+  @$core.pragma('dart2js:noInline')
+  static FlutterOverflowBoxFitType create() => FlutterOverflowBoxFitType._();
+  FlutterOverflowBoxFitType createEmptyInstance() => create();
+  static $pb.PbList<FlutterOverflowBoxFitType> createRepeated() => $pb.PbList<FlutterOverflowBoxFitType>();
+  @$core.pragma('dart2js:noInline')
+  static FlutterOverflowBoxFitType getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<FlutterOverflowBoxFitType>(create);
+  static FlutterOverflowBoxFitType? _defaultInstance;
+}
+
 ///  package:flutter/src/widgets/interactive_viewer.dart
 ///
 ///  This enum is used to specify the behavior of the [InteractiveViewer] when

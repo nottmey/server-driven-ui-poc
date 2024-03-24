@@ -16,6 +16,7 @@ import 'dart:io' as $dartIo;
 import 'dart:math' as $dartMath;
 import 'dart:typed_data' as $dartTypedData;
 import 'dart:ui' as $dartUi;
+import 'package:flutter/src/animation/animation_style.dart' as $flutterSrcAnimationAnimationStyle;
 import 'package:flutter/src/animation/curves.dart' as $flutterSrcAnimationCurves;
 import 'package:flutter/src/cupertino/activity_indicator.dart' as $flutterSrcCupertinoActivityIndicator;
 import 'package:flutter/src/cupertino/adaptive_text_selection_toolbar.dart' as $flutterSrcCupertinoAdaptiveTextSelectionToolbar;
@@ -371,7 +372,6 @@ import 'package:flutter/src/widgets/platform_view.dart' as $flutterSrcWidgetsPla
 import 'package:flutter/src/widgets/pop_scope.dart' as $flutterSrcWidgetsPopScope;
 import 'package:flutter/src/widgets/preferred_size.dart' as $flutterSrcWidgetsPreferredSize;
 import 'package:flutter/src/widgets/primary_scroll_controller.dart' as $flutterSrcWidgetsPrimaryScrollController;
-import 'package:flutter/src/widgets/raw_keyboard_listener.dart' as $flutterSrcWidgetsRawKeyboardListener;
 import 'package:flutter/src/widgets/reorderable_list.dart' as $flutterSrcWidgetsReorderableList;
 import 'package:flutter/src/widgets/restoration.dart' as $flutterSrcWidgetsRestoration;
 import 'package:flutter/src/widgets/router.dart' as $flutterSrcWidgetsRouter;
@@ -2052,6 +2052,7 @@ $flutterSrcWidgetsBottomNavigationBarItem.BottomNavigationBarItem? constructFlut
   switch (tree.whichConstructor()) {
     case messages.FlutterBottomNavigationBarItemType_Constructor.flutterBottomNavigationBarItem:
       return $flutterSrcWidgetsBottomNavigationBarItem.BottomNavigationBarItem(
+          key: (tree.flutterBottomNavigationBarItem.hasKey() ? constructFlutterKeyType(tree.flutterBottomNavigationBarItem.key) : null),
           icon: (tree.flutterBottomNavigationBarItem.hasIcon() ? constructRequiredWidgetType(tree.flutterBottomNavigationBarItem.icon) : missing('icon')),
           label: (tree.flutterBottomNavigationBarItem.hasLabel() ? tree.flutterBottomNavigationBarItem.label : null),
           activeIcon: (tree.flutterBottomNavigationBarItem.hasActiveIcon() ? constructWidgetType(tree.flutterBottomNavigationBarItem.activeIcon) : null),
@@ -2892,6 +2893,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           suffix: (tree.cupertinoTextField.hasSuffix() ? constructWidgetType(tree.cupertinoTextField.suffix) : null),
           suffixMode: (tree.cupertinoTextField.hasSuffixMode() ? enums.convertRequiredOverlayVisibilityModeType(tree.cupertinoTextField.suffixMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.always),
           clearButtonMode: (tree.cupertinoTextField.hasClearButtonMode() ? enums.convertRequiredOverlayVisibilityModeType(tree.cupertinoTextField.clearButtonMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.never),
+          clearButtonSemanticLabel: (tree.cupertinoTextField.hasClearButtonSemanticLabel() ? tree.cupertinoTextField.clearButtonSemanticLabel : null),
           keyboardType: (tree.cupertinoTextField.hasKeyboardType() ? constructFlutterTextInputTypeType(tree.cupertinoTextField.keyboardType) : null),
           textInputAction: (tree.cupertinoTextField.hasTextInputAction() ? enums.convertFlutterTextInputActionType(tree.cupertinoTextField.textInputAction) : null),
           textCapitalization: (tree.cupertinoTextField.hasTextCapitalization() ? enums.convertRequiredFlutterTextCapitalizationType(tree.cupertinoTextField.textCapitalization) : $flutterSrcServicesTextInput.TextCapitalization.none),
@@ -2959,6 +2961,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           suffix: (tree.cupertinoTextFieldNamedBorderless.hasSuffix() ? constructWidgetType(tree.cupertinoTextFieldNamedBorderless.suffix) : null),
           suffixMode: (tree.cupertinoTextFieldNamedBorderless.hasSuffixMode() ? enums.convertRequiredOverlayVisibilityModeType(tree.cupertinoTextFieldNamedBorderless.suffixMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.always),
           clearButtonMode: (tree.cupertinoTextFieldNamedBorderless.hasClearButtonMode() ? enums.convertRequiredOverlayVisibilityModeType(tree.cupertinoTextFieldNamedBorderless.clearButtonMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.never),
+          clearButtonSemanticLabel: (tree.cupertinoTextFieldNamedBorderless.hasClearButtonSemanticLabel() ? tree.cupertinoTextFieldNamedBorderless.clearButtonSemanticLabel : null),
           keyboardType: (tree.cupertinoTextFieldNamedBorderless.hasKeyboardType() ? constructFlutterTextInputTypeType(tree.cupertinoTextFieldNamedBorderless.keyboardType) : null),
           textInputAction: (tree.cupertinoTextFieldNamedBorderless.hasTextInputAction() ? enums.convertFlutterTextInputActionType(tree.cupertinoTextFieldNamedBorderless.textInputAction) : null),
           textCapitalization: (tree.cupertinoTextFieldNamedBorderless.hasTextCapitalization() ? enums.convertRequiredFlutterTextCapitalizationType(tree.cupertinoTextFieldNamedBorderless.textCapitalization) : $flutterSrcServicesTextInput.TextCapitalization.none),
@@ -3274,7 +3277,8 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           curve: (tree.flutterAnimatedSize.hasCurve() ? constructRequiredFlutterSrcAnimationCurveType(tree.flutterAnimatedSize.curve) : $flutterSrcAnimationCurves.Curves.linear),
           duration: (tree.flutterAnimatedSize.hasDuration() ? constructRequiredDartDurationType(tree.flutterAnimatedSize.duration) : missing('duration')),
           reverseDuration: (tree.flutterAnimatedSize.hasReverseDuration() ? constructDartDurationType(tree.flutterAnimatedSize.reverseDuration) : null),
-          clipBehavior: (tree.flutterAnimatedSize.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.flutterAnimatedSize.clipBehavior) : $dartUi.Clip.hardEdge));
+          clipBehavior: (tree.flutterAnimatedSize.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.flutterAnimatedSize.clipBehavior) : $dartUi.Clip.hardEdge),
+          onEnd: null);
     case messages.FlutterDiagnosticableTreeType_Constructor.flutterAnimatedSlide:
       return $flutterSrcWidgetsImplicitAnimations.AnimatedSlide(
           key: (tree.flutterAnimatedSlide.hasKey() ? constructFlutterKeyType(tree.flutterAnimatedSlide.key) : null),
@@ -3720,6 +3724,10 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           width: (tree.flutterFadeInImageNamedAssetNetwork.hasWidth() ? tree.flutterFadeInImageNamedAssetNetwork.width : null),
           height: (tree.flutterFadeInImageNamedAssetNetwork.hasHeight() ? tree.flutterFadeInImageNamedAssetNetwork.height : null),
           fit: (tree.flutterFadeInImageNamedAssetNetwork.hasFit() ? enums.convertFlutterBoxFitType(tree.flutterFadeInImageNamedAssetNetwork.fit) : null),
+          color: (tree.flutterFadeInImageNamedAssetNetwork.hasColor() ? constructDartColorType(tree.flutterFadeInImageNamedAssetNetwork.color) : null),
+          colorBlendMode: (tree.flutterFadeInImageNamedAssetNetwork.hasColorBlendMode() ? enums.convertDartBlendModeType(tree.flutterFadeInImageNamedAssetNetwork.colorBlendMode) : null),
+          placeholderColor: (tree.flutterFadeInImageNamedAssetNetwork.hasPlaceholderColor() ? constructDartColorType(tree.flutterFadeInImageNamedAssetNetwork.placeholderColor) : null),
+          placeholderColorBlendMode: (tree.flutterFadeInImageNamedAssetNetwork.hasPlaceholderColorBlendMode() ? enums.convertDartBlendModeType(tree.flutterFadeInImageNamedAssetNetwork.placeholderColorBlendMode) : null),
           placeholderFit: (tree.flutterFadeInImageNamedAssetNetwork.hasPlaceholderFit() ? enums.convertFlutterBoxFitType(tree.flutterFadeInImageNamedAssetNetwork.placeholderFit) : null),
           filterQuality: (tree.flutterFadeInImageNamedAssetNetwork.hasFilterQuality() ? enums.convertRequiredDartFilterQualityType(tree.flutterFadeInImageNamedAssetNetwork.filterQuality) : $dartUi.FilterQuality.low),
           placeholderFilterQuality: (tree.flutterFadeInImageNamedAssetNetwork.hasPlaceholderFilterQuality() ? enums.convertDartFilterQualityType(tree.flutterFadeInImageNamedAssetNetwork.placeholderFilterQuality) : null),
@@ -3748,6 +3756,10 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           width: (tree.flutterFadeInImageNamedMemoryNetwork.hasWidth() ? tree.flutterFadeInImageNamedMemoryNetwork.width : null),
           height: (tree.flutterFadeInImageNamedMemoryNetwork.hasHeight() ? tree.flutterFadeInImageNamedMemoryNetwork.height : null),
           fit: (tree.flutterFadeInImageNamedMemoryNetwork.hasFit() ? enums.convertFlutterBoxFitType(tree.flutterFadeInImageNamedMemoryNetwork.fit) : null),
+          color: (tree.flutterFadeInImageNamedMemoryNetwork.hasColor() ? constructDartColorType(tree.flutterFadeInImageNamedMemoryNetwork.color) : null),
+          colorBlendMode: (tree.flutterFadeInImageNamedMemoryNetwork.hasColorBlendMode() ? enums.convertDartBlendModeType(tree.flutterFadeInImageNamedMemoryNetwork.colorBlendMode) : null),
+          placeholderColor: (tree.flutterFadeInImageNamedMemoryNetwork.hasPlaceholderColor() ? constructDartColorType(tree.flutterFadeInImageNamedMemoryNetwork.placeholderColor) : null),
+          placeholderColorBlendMode: (tree.flutterFadeInImageNamedMemoryNetwork.hasPlaceholderColorBlendMode() ? enums.convertDartBlendModeType(tree.flutterFadeInImageNamedMemoryNetwork.placeholderColorBlendMode) : null),
           placeholderFit: (tree.flutterFadeInImageNamedMemoryNetwork.hasPlaceholderFit() ? enums.convertFlutterBoxFitType(tree.flutterFadeInImageNamedMemoryNetwork.placeholderFit) : null),
           filterQuality: (tree.flutterFadeInImageNamedMemoryNetwork.hasFilterQuality() ? enums.convertRequiredDartFilterQualityType(tree.flutterFadeInImageNamedMemoryNetwork.filterQuality) : $dartUi.FilterQuality.low),
           placeholderFilterQuality: (tree.flutterFadeInImageNamedMemoryNetwork.hasPlaceholderFilterQuality() ? enums.convertDartFilterQualityType(tree.flutterFadeInImageNamedMemoryNetwork.placeholderFilterQuality) : null),
@@ -3810,7 +3822,6 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           autofocus: (tree.flutterFocus.hasAutofocus() ? tree.flutterFocus.autofocus : false),
           onFocusChange: null,
           onKeyEvent: null,
-          onKey: null,
           canRequestFocus: (tree.flutterFocus.hasCanRequestFocus() ? tree.flutterFocus.canRequestFocus : null),
           skipTraversal: (tree.flutterFocus.hasSkipTraversal() ? tree.flutterFocus.skipTraversal : null),
           descendantsAreFocusable: (tree.flutterFocus.hasDescendantsAreFocusable() ? tree.flutterFocus.descendantsAreFocusable : null),
@@ -3832,7 +3843,6 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
     case messages.FlutterDiagnosticableTreeType_Constructor.flutterFocusNode:
       return $flutterSrcWidgetsFocusManager.FocusNode(
           debugLabel: (tree.flutterFocusNode.hasDebugLabel() ? tree.flutterFocusNode.debugLabel : null),
-          onKey: null,
           onKeyEvent: null,
           skipTraversal: (tree.flutterFocusNode.hasSkipTraversal() ? tree.flutterFocusNode.skipTraversal : false),
           canRequestFocus: (tree.flutterFocusNode.hasCanRequestFocus() ? tree.flutterFocusNode.canRequestFocus : true),
@@ -3863,7 +3873,6 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
       return $flutterSrcWidgetsFocusManager.FocusScopeNode(
           debugLabel: (tree.flutterFocusScopeNode.hasDebugLabel() ? tree.flutterFocusScopeNode.debugLabel : null),
           onKeyEvent: null,
-          onKey: null,
           skipTraversal: (tree.flutterFocusScopeNode.hasSkipTraversal() ? tree.flutterFocusScopeNode.skipTraversal : false),
           canRequestFocus: (tree.flutterFocusScopeNode.hasCanRequestFocus() ? tree.flutterFocusScopeNode.canRequestFocus : true),
           traversalEdgeBehavior: (tree.flutterFocusScopeNode.hasTraversalEdgeBehavior() ? enums.convertRequiredFlutterTraversalEdgeBehaviorType(tree.flutterFocusScopeNode.traversalEdgeBehavior) : $flutterSrcWidgetsFocusTraversal.TraversalEdgeBehavior.closedLoop));
@@ -4146,7 +4155,8 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           color: (tree.flutterIcon.hasColor() ? constructDartColorType(tree.flutterIcon.color) : null),
           shadows: tree.flutterIcon.shadows.map((e) => constructRequiredDartShadowType(e)).toList(),
           semanticLabel: (tree.flutterIcon.hasSemanticLabel() ? tree.flutterIcon.semanticLabel : null),
-          textDirection: (tree.flutterIcon.hasTextDirection() ? enums.convertDartTextDirectionType(tree.flutterIcon.textDirection) : null));
+          textDirection: (tree.flutterIcon.hasTextDirection() ? enums.convertDartTextDirectionType(tree.flutterIcon.textDirection) : null),
+          applyTextScaling: (tree.flutterIcon.hasApplyTextScaling() ? tree.flutterIcon.applyTextScaling : null));
     case messages.FlutterDiagnosticableTreeType_Constructor.flutterIconTheme:
       return $flutterSrcWidgetsIconTheme.IconTheme(
           key: (tree.flutterIconTheme.hasKey() ? constructFlutterKeyType(tree.flutterIconTheme.key) : null),
@@ -4669,6 +4679,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           maxWidth: (tree.flutterOverflowBox.hasMaxWidth() ? tree.flutterOverflowBox.maxWidth : null),
           minHeight: (tree.flutterOverflowBox.hasMinHeight() ? tree.flutterOverflowBox.minHeight : null),
           maxHeight: (tree.flutterOverflowBox.hasMaxHeight() ? tree.flutterOverflowBox.maxHeight : null),
+          fit: (tree.flutterOverflowBox.hasFit() ? enums.convertRequiredFlutterOverflowBoxFitType(tree.flutterOverflowBox.fit) : $flutterSrcRenderingShiftedBox.OverflowBoxFit.max),
           child: (tree.flutterOverflowBox.hasChild() ? constructWidgetType(tree.flutterOverflowBox.child) : null));
     case messages.FlutterDiagnosticableTreeType_Constructor.flutterOverlay:
       return $flutterSrcWidgetsOverlay.Overlay(
@@ -4890,14 +4901,6 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           invertColors: (tree.flutterRawImage.hasInvertColors() ? tree.flutterRawImage.invertColors : false),
           filterQuality: (tree.flutterRawImage.hasFilterQuality() ? enums.convertRequiredDartFilterQualityType(tree.flutterRawImage.filterQuality) : $dartUi.FilterQuality.low),
           isAntiAlias: (tree.flutterRawImage.hasIsAntiAlias() ? tree.flutterRawImage.isAntiAlias : false));
-    case messages.FlutterDiagnosticableTreeType_Constructor.flutterRawKeyboardListener:
-      return $flutterSrcWidgetsRawKeyboardListener.RawKeyboardListener(
-          key: (tree.flutterRawKeyboardListener.hasKey() ? constructFlutterKeyType(tree.flutterRawKeyboardListener.key) : null),
-          focusNode: (tree.flutterRawKeyboardListener.hasFocusNode() ? constructRequiredFlutterFocusNodeType(tree.flutterRawKeyboardListener.focusNode) : missing('focusNode')),
-          autofocus: (tree.flutterRawKeyboardListener.hasAutofocus() ? tree.flutterRawKeyboardListener.autofocus : false),
-          includeSemantics: (tree.flutterRawKeyboardListener.hasIncludeSemantics() ? tree.flutterRawKeyboardListener.includeSemantics : true),
-          onKey: null,
-          child: (tree.flutterRawKeyboardListener.hasChild() ? constructRequiredWidgetType(tree.flutterRawKeyboardListener.child) : missing('child')));
     case messages.FlutterDiagnosticableTreeType_Constructor.flutterRawMagnifier:
       return $flutterSrcWidgetsMagnifier.RawMagnifier(
           key: (tree.flutterRawMagnifier.hasKey() ? constructFlutterKeyType(tree.flutterRawMagnifier.key) : null),
@@ -4943,7 +4946,8 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           alignment: (tree.flutterRenderAnimatedSize.hasAlignment() ? constructRequiredFlutterAlignmentGeometryType(tree.flutterRenderAnimatedSize.alignment) : $flutterSrcPaintingAlignment.Alignment.center),
           textDirection: (tree.flutterRenderAnimatedSize.hasTextDirection() ? enums.convertDartTextDirectionType(tree.flutterRenderAnimatedSize.textDirection) : null),
           child: (tree.flutterRenderAnimatedSize.hasChild() ? constructFlutterRenderBoxType(tree.flutterRenderAnimatedSize.child) : null),
-          clipBehavior: (tree.flutterRenderAnimatedSize.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.flutterRenderAnimatedSize.clipBehavior) : $dartUi.Clip.hardEdge));
+          clipBehavior: (tree.flutterRenderAnimatedSize.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.flutterRenderAnimatedSize.clipBehavior) : $dartUi.Clip.hardEdge),
+          onEnd: null);
     case messages.FlutterDiagnosticableTreeType_Constructor.flutterRenderAspectRatio:
       return $flutterSrcRenderingProxyBox.RenderAspectRatio(
           child: (tree.flutterRenderAspectRatio.hasChild() ? constructFlutterRenderBoxType(tree.flutterRenderAspectRatio.child) : null),
@@ -4995,6 +4999,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           maxWidth: (tree.flutterRenderConstrainedOverflowBox.hasMaxWidth() ? tree.flutterRenderConstrainedOverflowBox.maxWidth : null),
           minHeight: (tree.flutterRenderConstrainedOverflowBox.hasMinHeight() ? tree.flutterRenderConstrainedOverflowBox.minHeight : null),
           maxHeight: (tree.flutterRenderConstrainedOverflowBox.hasMaxHeight() ? tree.flutterRenderConstrainedOverflowBox.maxHeight : null),
+          fit: (tree.flutterRenderConstrainedOverflowBox.hasFit() ? enums.convertRequiredFlutterOverflowBoxFitType(tree.flutterRenderConstrainedOverflowBox.fit) : $flutterSrcRenderingShiftedBox.OverflowBoxFit.max),
           alignment: (tree.flutterRenderConstrainedOverflowBox.hasAlignment() ? constructRequiredFlutterAlignmentGeometryType(tree.flutterRenderConstrainedOverflowBox.alignment) : $flutterSrcPaintingAlignment.Alignment.center),
           textDirection: (tree.flutterRenderConstrainedOverflowBox.hasTextDirection() ? enums.convertDartTextDirectionType(tree.flutterRenderConstrainedOverflowBox.textDirection) : null));
     case messages.FlutterDiagnosticableTreeType_Constructor.flutterRenderCustomMultiChildLayoutBox:
@@ -5365,6 +5370,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
       return $flutterSrcWidgetsTapRegion.RenderTapRegion(
           registry: (tree.flutterRenderTapRegion.hasRegistry() ? constructFlutterTapRegionRegistryType(tree.flutterRenderTapRegion.registry) : null),
           enabled: (tree.flutterRenderTapRegion.hasEnabled() ? tree.flutterRenderTapRegion.enabled : true),
+          consumeOutsideTaps: (tree.flutterRenderTapRegion.hasConsumeOutsideTaps() ? tree.flutterRenderTapRegion.consumeOutsideTaps : false),
           onTapOutside: null,
           onTapInside: null,
           behavior: (tree.flutterRenderTapRegion.hasBehavior() ? enums.convertRequiredFlutterHitTestBehaviorType(tree.flutterRenderTapRegion.behavior) : $flutterSrcRenderingProxyBox.HitTestBehavior.deferToChild),
@@ -5563,6 +5569,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           expanded: (tree.flutterSemantics.hasExpanded() ? tree.flutterSemantics.expanded : null),
           maxValueLength: (tree.flutterSemantics.hasMaxValueLength() ? tree.flutterSemantics.maxValueLength : null),
           currentValueLength: (tree.flutterSemantics.hasCurrentValueLength() ? tree.flutterSemantics.currentValueLength : null),
+          identifier: (tree.flutterSemantics.hasIdentifier() ? tree.flutterSemantics.identifier : null),
           label: (tree.flutterSemantics.hasLabel() ? tree.flutterSemantics.label : null),
           attributedLabel: (tree.flutterSemantics.hasAttributedLabel() ? constructFlutterSrcSemanticsAttributedStringType(tree.flutterSemantics.attributedLabel) : null),
           value: (tree.flutterSemantics.hasValue() ? tree.flutterSemantics.value : null),
@@ -5914,6 +5921,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           liveRegion: (tree.flutterSrcSemanticsSemanticsProperties.hasLiveRegion() ? tree.flutterSrcSemanticsSemanticsProperties.liveRegion : null),
           maxValueLength: (tree.flutterSrcSemanticsSemanticsProperties.hasMaxValueLength() ? tree.flutterSrcSemanticsSemanticsProperties.maxValueLength : null),
           currentValueLength: (tree.flutterSrcSemanticsSemanticsProperties.hasCurrentValueLength() ? tree.flutterSrcSemanticsSemanticsProperties.currentValueLength : null),
+          identifier: (tree.flutterSrcSemanticsSemanticsProperties.hasIdentifier() ? tree.flutterSrcSemanticsSemanticsProperties.identifier : null),
           label: (tree.flutterSrcSemanticsSemanticsProperties.hasLabel() ? tree.flutterSrcSemanticsSemanticsProperties.label : null),
           attributedLabel: (tree.flutterSrcSemanticsSemanticsProperties.hasAttributedLabel() ? constructFlutterSrcSemanticsAttributedStringType(tree.flutterSrcSemanticsSemanticsProperties.attributedLabel) : null),
           value: (tree.flutterSrcSemanticsSemanticsProperties.hasValue() ? tree.flutterSrcSemanticsSemanticsProperties.value : null),
@@ -6007,6 +6015,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           onTapOutside: null,
           onTapInside: null,
           groupId: null,
+          consumeOutsideTaps: (tree.flutterTapRegion.hasConsumeOutsideTaps() ? tree.flutterTapRegion.consumeOutsideTaps : false),
           debugLabel: (tree.flutterTapRegion.hasDebugLabel() ? tree.flutterTapRegion.debugLabel : null));
     case messages.FlutterDiagnosticableTreeType_Constructor.flutterTapRegionSurface:
       return $flutterSrcWidgetsTapRegion.TapRegionSurface(
@@ -6036,6 +6045,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           enabled: (tree.flutterTextFieldTapRegion.hasEnabled() ? tree.flutterTextFieldTapRegion.enabled : true),
           onTapOutside: null,
           onTapInside: null,
+          consumeOutsideTaps: (tree.flutterTextFieldTapRegion.hasConsumeOutsideTaps() ? tree.flutterTextFieldTapRegion.consumeOutsideTaps : false),
           debugLabel: (tree.flutterTextFieldTapRegion.hasDebugLabel() ? tree.flutterTextFieldTapRegion.debugLabel : null));
     case messages.FlutterDiagnosticableTreeType_Constructor.flutterTextNamedRich:
       return $flutterSrcWidgetsText.Text.rich(
@@ -6066,6 +6076,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           onSecondaryTapDown: null,
           onSingleTapUp: null,
           onSingleTapCancel: null,
+          onUserTap: null,
           onSingleLongTapStart: null,
           onSingleLongTapMoveUpdate: null,
           onSingleLongTapEnd: null,
@@ -6074,6 +6085,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           onDragSelectionStart: null,
           onDragSelectionUpdate: null,
           onDragSelectionEnd: null,
+          onUserTapAlwaysCalled: (tree.flutterTextSelectionGestureDetector.hasOnUserTapAlwaysCalled() ? tree.flutterTextSelectionGestureDetector.onUserTapAlwaysCalled : false),
           behavior: (tree.flutterTextSelectionGestureDetector.hasBehavior() ? enums.convertFlutterHitTestBehaviorType(tree.flutterTextSelectionGestureDetector.behavior) : null),
           child: (tree.flutterTextSelectionGestureDetector.hasChild() ? constructRequiredWidgetType(tree.flutterTextSelectionGestureDetector.child) : missing('child')));
     case messages.FlutterDiagnosticableTreeType_Constructor.flutterTextSpan:
@@ -6676,6 +6688,32 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           clipBehavior: (tree.materialCard.hasClipBehavior() ? enums.convertDartClipType(tree.materialCard.clipBehavior) : null),
           child: (tree.materialCard.hasChild() ? constructWidgetType(tree.materialCard.child) : null),
           semanticContainer: (tree.materialCard.hasSemanticContainer() ? tree.materialCard.semanticContainer : true));
+    case messages.FlutterDiagnosticableTreeType_Constructor.materialCardNamedFilled:
+      return $flutterSrcMaterialCard.Card.filled(
+          key: (tree.materialCardNamedFilled.hasKey() ? constructFlutterKeyType(tree.materialCardNamedFilled.key) : null),
+          color: (tree.materialCardNamedFilled.hasColor() ? constructDartColorType(tree.materialCardNamedFilled.color) : null),
+          shadowColor: (tree.materialCardNamedFilled.hasShadowColor() ? constructDartColorType(tree.materialCardNamedFilled.shadowColor) : null),
+          surfaceTintColor: (tree.materialCardNamedFilled.hasSurfaceTintColor() ? constructDartColorType(tree.materialCardNamedFilled.surfaceTintColor) : null),
+          elevation: (tree.materialCardNamedFilled.hasElevation() ? tree.materialCardNamedFilled.elevation : null),
+          shape: (tree.materialCardNamedFilled.hasShape() ? constructFlutterShapeBorderType(tree.materialCardNamedFilled.shape) : null),
+          borderOnForeground: (tree.materialCardNamedFilled.hasBorderOnForeground() ? tree.materialCardNamedFilled.borderOnForeground : true),
+          margin: (tree.materialCardNamedFilled.hasMargin() ? constructFlutterEdgeInsetsGeometryType(tree.materialCardNamedFilled.margin) : null),
+          clipBehavior: (tree.materialCardNamedFilled.hasClipBehavior() ? enums.convertDartClipType(tree.materialCardNamedFilled.clipBehavior) : null),
+          child: (tree.materialCardNamedFilled.hasChild() ? constructWidgetType(tree.materialCardNamedFilled.child) : null),
+          semanticContainer: (tree.materialCardNamedFilled.hasSemanticContainer() ? tree.materialCardNamedFilled.semanticContainer : true));
+    case messages.FlutterDiagnosticableTreeType_Constructor.materialCardNamedOutlined:
+      return $flutterSrcMaterialCard.Card.outlined(
+          key: (tree.materialCardNamedOutlined.hasKey() ? constructFlutterKeyType(tree.materialCardNamedOutlined.key) : null),
+          color: (tree.materialCardNamedOutlined.hasColor() ? constructDartColorType(tree.materialCardNamedOutlined.color) : null),
+          shadowColor: (tree.materialCardNamedOutlined.hasShadowColor() ? constructDartColorType(tree.materialCardNamedOutlined.shadowColor) : null),
+          surfaceTintColor: (tree.materialCardNamedOutlined.hasSurfaceTintColor() ? constructDartColorType(tree.materialCardNamedOutlined.surfaceTintColor) : null),
+          elevation: (tree.materialCardNamedOutlined.hasElevation() ? tree.materialCardNamedOutlined.elevation : null),
+          shape: (tree.materialCardNamedOutlined.hasShape() ? constructFlutterShapeBorderType(tree.materialCardNamedOutlined.shape) : null),
+          borderOnForeground: (tree.materialCardNamedOutlined.hasBorderOnForeground() ? tree.materialCardNamedOutlined.borderOnForeground : true),
+          margin: (tree.materialCardNamedOutlined.hasMargin() ? constructFlutterEdgeInsetsGeometryType(tree.materialCardNamedOutlined.margin) : null),
+          clipBehavior: (tree.materialCardNamedOutlined.hasClipBehavior() ? enums.convertDartClipType(tree.materialCardNamedOutlined.clipBehavior) : null),
+          child: (tree.materialCardNamedOutlined.hasChild() ? constructWidgetType(tree.materialCardNamedOutlined.child) : null),
+          semanticContainer: (tree.materialCardNamedOutlined.hasSemanticContainer() ? tree.materialCardNamedOutlined.semanticContainer : true));
     case messages.FlutterDiagnosticableTreeType_Constructor.materialCheckbox:
       return $flutterSrcMaterialCheckbox.Checkbox(
           key: (tree.materialCheckbox.hasKey() ? constructFlutterKeyType(tree.materialCheckbox.key) : null),
@@ -7312,7 +7350,12 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           collapsedShape: (tree.materialExpansionTile.hasCollapsedShape() ? constructFlutterShapeBorderType(tree.materialExpansionTile.collapsedShape) : null),
           clipBehavior: (tree.materialExpansionTile.hasClipBehavior() ? enums.convertDartClipType(tree.materialExpansionTile.clipBehavior) : null),
           controlAffinity: (tree.materialExpansionTile.hasControlAffinity() ? enums.convertMaterialListTileControlAffinityType(tree.materialExpansionTile.controlAffinity) : null),
-          controller: (tree.materialExpansionTile.hasController() ? constructMaterialExpansionTileControllerType(tree.materialExpansionTile.controller) : null));
+          controller: (tree.materialExpansionTile.hasController() ? constructMaterialExpansionTileControllerType(tree.materialExpansionTile.controller) : null),
+          dense: (tree.materialExpansionTile.hasDense() ? tree.materialExpansionTile.dense : null),
+          visualDensity: (tree.materialExpansionTile.hasVisualDensity() ? constructMaterialVisualDensityType(tree.materialExpansionTile.visualDensity) : null),
+          enableFeedback: (tree.materialExpansionTile.hasEnableFeedback() ? tree.materialExpansionTile.enableFeedback : true),
+          enabled: (tree.materialExpansionTile.hasEnabled() ? tree.materialExpansionTile.enabled : true),
+          expansionAnimationStyle: (tree.materialExpansionTile.hasExpansionAnimationStyle() ? constructFlutterSrcAnimationAnimationStyleType(tree.materialExpansionTile.expansionAnimationStyle) : null));
     case messages.FlutterDiagnosticableTreeType_Constructor.materialExpansionTileTheme:
       return $flutterSrcMaterialExpansionTileTheme.ExpansionTileTheme(
           key: (tree.materialExpansionTileTheme.hasKey() ? constructFlutterKeyType(tree.materialExpansionTileTheme.key) : null),
@@ -7386,6 +7429,10 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           labelPadding: (tree.materialFilterChip.hasLabelPadding() ? constructFlutterEdgeInsetsGeometryType(tree.materialFilterChip.labelPadding) : null),
           selected: (tree.materialFilterChip.hasSelected() ? tree.materialFilterChip.selected : false),
           onSelected: null,
+          deleteIcon: (tree.materialFilterChip.hasDeleteIcon() ? constructWidgetType(tree.materialFilterChip.deleteIcon) : null),
+          onDeleted: null,
+          deleteIconColor: (tree.materialFilterChip.hasDeleteIconColor() ? constructDartColorType(tree.materialFilterChip.deleteIconColor) : null),
+          deleteButtonTooltipMessage: (tree.materialFilterChip.hasDeleteButtonTooltipMessage() ? tree.materialFilterChip.deleteButtonTooltipMessage : null),
           pressElevation: (tree.materialFilterChip.hasPressElevation() ? tree.materialFilterChip.pressElevation : null),
           disabledColor: (tree.materialFilterChip.hasDisabledColor() ? constructDartColorType(tree.materialFilterChip.disabledColor) : null),
           selectedColor: (tree.materialFilterChip.hasSelectedColor() ? constructDartColorType(tree.materialFilterChip.selectedColor) : null),
@@ -7417,6 +7464,10 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           labelPadding: (tree.materialFilterChipNamedElevated.hasLabelPadding() ? constructFlutterEdgeInsetsGeometryType(tree.materialFilterChipNamedElevated.labelPadding) : null),
           selected: (tree.materialFilterChipNamedElevated.hasSelected() ? tree.materialFilterChipNamedElevated.selected : false),
           onSelected: null,
+          deleteIcon: (tree.materialFilterChipNamedElevated.hasDeleteIcon() ? constructWidgetType(tree.materialFilterChipNamedElevated.deleteIcon) : null),
+          onDeleted: null,
+          deleteIconColor: (tree.materialFilterChipNamedElevated.hasDeleteIconColor() ? constructDartColorType(tree.materialFilterChipNamedElevated.deleteIconColor) : null),
+          deleteButtonTooltipMessage: (tree.materialFilterChipNamedElevated.hasDeleteButtonTooltipMessage() ? tree.materialFilterChipNamedElevated.deleteButtonTooltipMessage : null),
           pressElevation: (tree.materialFilterChipNamedElevated.hasPressElevation() ? tree.materialFilterChipNamedElevated.pressElevation : null),
           disabledColor: (tree.materialFilterChipNamedElevated.hasDisabledColor() ? constructDartColorType(tree.materialFilterChipNamedElevated.disabledColor) : null),
           selectedColor: (tree.materialFilterChipNamedElevated.hasSelectedColor() ? constructDartColorType(tree.materialFilterChipNamedElevated.selectedColor) : null),
@@ -7820,7 +7871,8 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           fieldLabelText: (tree.materialInputDatePickerFormField.hasFieldLabelText() ? tree.materialInputDatePickerFormField.fieldLabelText : null),
           keyboardType: (tree.materialInputDatePickerFormField.hasKeyboardType() ? constructFlutterTextInputTypeType(tree.materialInputDatePickerFormField.keyboardType) : null),
           autofocus: (tree.materialInputDatePickerFormField.hasAutofocus() ? tree.materialInputDatePickerFormField.autofocus : false),
-          acceptEmptyDate: (tree.materialInputDatePickerFormField.hasAcceptEmptyDate() ? tree.materialInputDatePickerFormField.acceptEmptyDate : false));
+          acceptEmptyDate: (tree.materialInputDatePickerFormField.hasAcceptEmptyDate() ? tree.materialInputDatePickerFormField.acceptEmptyDate : false),
+          focusNode: (tree.materialInputDatePickerFormField.hasFocusNode() ? constructFlutterFocusNodeType(tree.materialInputDatePickerFormField.focusNode) : null));
     case messages.FlutterDiagnosticableTreeType_Constructor.materialInputDecorator:
       return $flutterSrcMaterialInputDecorator.InputDecorator(
           key: (tree.materialInputDecorator.hasKey() ? constructFlutterKeyType(tree.materialInputDecorator.key) : null),
@@ -7967,7 +8019,8 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           shortcuts: null,
           actions: null,
           restorationScopeId: (tree.materialMaterialApp.hasRestorationScopeId() ? tree.materialMaterialApp.restorationScopeId : null),
-          scrollBehavior: (tree.materialMaterialApp.hasScrollBehavior() ? constructFlutterScrollBehaviorType(tree.materialMaterialApp.scrollBehavior) : null));
+          scrollBehavior: (tree.materialMaterialApp.hasScrollBehavior() ? constructFlutterScrollBehaviorType(tree.materialMaterialApp.scrollBehavior) : null),
+          themeAnimationStyle: (tree.materialMaterialApp.hasThemeAnimationStyle() ? constructFlutterSrcAnimationAnimationStyleType(tree.materialMaterialApp.themeAnimationStyle) : null));
     case messages.FlutterDiagnosticableTreeType_Constructor.materialMaterialAppNamedRouter:
       return $flutterSrcMaterialApp.MaterialApp.router(
           key: (tree.materialMaterialAppNamedRouter.hasKey() ? constructFlutterKeyType(tree.materialMaterialAppNamedRouter.key) : null),
@@ -8003,7 +8056,8 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           shortcuts: null,
           actions: null,
           restorationScopeId: (tree.materialMaterialAppNamedRouter.hasRestorationScopeId() ? tree.materialMaterialAppNamedRouter.restorationScopeId : null),
-          scrollBehavior: (tree.materialMaterialAppNamedRouter.hasScrollBehavior() ? constructFlutterScrollBehaviorType(tree.materialMaterialAppNamedRouter.scrollBehavior) : null));
+          scrollBehavior: (tree.materialMaterialAppNamedRouter.hasScrollBehavior() ? constructFlutterScrollBehaviorType(tree.materialMaterialAppNamedRouter.scrollBehavior) : null),
+          themeAnimationStyle: (tree.materialMaterialAppNamedRouter.hasThemeAnimationStyle() ? constructFlutterSrcAnimationAnimationStyleType(tree.materialMaterialAppNamedRouter.themeAnimationStyle) : null));
     case messages.FlutterDiagnosticableTreeType_Constructor.materialMaterialBanner:
       return $flutterSrcMaterialBanner.MaterialBanner(
           key: (tree.materialMaterialBanner.hasKey() ? constructFlutterKeyType(tree.materialMaterialBanner.key) : null),
@@ -8080,7 +8134,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           style: (tree.materialMenuAnchor.hasStyle() ? constructMaterialMenuStyleType(tree.materialMenuAnchor.style) : null),
           alignmentOffset: (tree.materialMenuAnchor.hasAlignmentOffset() ? constructDartOffsetType(tree.materialMenuAnchor.alignmentOffset) : $dartUi.Offset.zero),
           clipBehavior: (tree.materialMenuAnchor.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.materialMenuAnchor.clipBehavior) : $dartUi.Clip.hardEdge),
-          anchorTapClosesMenu: (tree.materialMenuAnchor.hasAnchorTapClosesMenu() ? tree.materialMenuAnchor.anchorTapClosesMenu : false),
+          consumeOutsideTap: (tree.materialMenuAnchor.hasConsumeOutsideTap() ? tree.materialMenuAnchor.consumeOutsideTap : false),
           onOpen: null,
           onClose: null,
           crossAxisUnconstrained: (tree.materialMenuAnchor.hasCrossAxisUnconstrained() ? tree.materialMenuAnchor.crossAxisUnconstrained : true),
@@ -8147,7 +8201,8 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           indicatorColor: (tree.materialNavigationBar.hasIndicatorColor() ? constructDartColorType(tree.materialNavigationBar.indicatorColor) : null),
           indicatorShape: (tree.materialNavigationBar.hasIndicatorShape() ? constructFlutterShapeBorderType(tree.materialNavigationBar.indicatorShape) : null),
           height: (tree.materialNavigationBar.hasHeight() ? tree.materialNavigationBar.height : null),
-          labelBehavior: (tree.materialNavigationBar.hasLabelBehavior() ? enums.convertMaterialNavigationDestinationLabelBehaviorType(tree.materialNavigationBar.labelBehavior) : null));
+          labelBehavior: (tree.materialNavigationBar.hasLabelBehavior() ? enums.convertMaterialNavigationDestinationLabelBehaviorType(tree.materialNavigationBar.labelBehavior) : null),
+          overlayColor: null);
     case messages.FlutterDiagnosticableTreeType_Constructor.materialNavigationBarTheme:
       return $flutterSrcMaterialNavigationBarTheme.NavigationBarTheme(
           key: (tree.materialNavigationBarTheme.hasKey() ? constructFlutterKeyType(tree.materialNavigationBarTheme.key) : null),
@@ -8271,7 +8326,8 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           checkboxHorizontalMargin: (tree.materialPaginatedDataTable.hasCheckboxHorizontalMargin() ? tree.materialPaginatedDataTable.checkboxHorizontalMargin : null),
           controller: (tree.materialPaginatedDataTable.hasController() ? constructFlutterScrollControllerType(tree.materialPaginatedDataTable.controller) : null),
           primary: (tree.materialPaginatedDataTable.hasPrimary() ? tree.materialPaginatedDataTable.primary : null),
-          headingRowColor: null);
+          headingRowColor: null,
+          showEmptyRows: (tree.materialPaginatedDataTable.hasShowEmptyRows() ? tree.materialPaginatedDataTable.showEmptyRows : true));
     case messages.FlutterDiagnosticableTreeType_Constructor.materialPopupMenuDivider:
       return $flutterSrcMaterialPopupMenu.PopupMenuDivider(
           key: (tree.materialPopupMenuDivider.hasKey() ? constructFlutterKeyType(tree.materialPopupMenuDivider.key) : null),
@@ -8471,7 +8527,10 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           padding: null,
           textStyle: null,
           hintStyle: null,
-          textCapitalization: (tree.materialSearchBar.hasTextCapitalization() ? enums.convertFlutterTextCapitalizationType(tree.materialSearchBar.textCapitalization) : null));
+          textCapitalization: (tree.materialSearchBar.hasTextCapitalization() ? enums.convertFlutterTextCapitalizationType(tree.materialSearchBar.textCapitalization) : null),
+          autoFocus: (tree.materialSearchBar.hasAutoFocus() ? tree.materialSearchBar.autoFocus : false),
+          textInputAction: (tree.materialSearchBar.hasTextInputAction() ? enums.convertFlutterTextInputActionType(tree.materialSearchBar.textInputAction) : null),
+          keyboardType: (tree.materialSearchBar.hasKeyboardType() ? constructFlutterTextInputTypeType(tree.materialSearchBar.keyboardType) : null));
     case messages.FlutterDiagnosticableTreeType_Constructor.materialSearchBarTheme:
       return $flutterSrcMaterialSearchBarTheme.SearchBarTheme(
           key: (tree.materialSearchBarTheme.hasKey() ? constructFlutterKeyType(tree.materialSearchBarTheme.key) : null),
@@ -8763,7 +8822,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           duration: (tree.materialSnackBar.hasDuration() ? constructRequiredDartDurationType(tree.materialSnackBar.duration) : $dartCore.Duration(milliseconds: 4000)),
           animation: null,
           onVisible: null,
-          dismissDirection: (tree.materialSnackBar.hasDismissDirection() ? enums.convertRequiredFlutterDismissDirectionType(tree.materialSnackBar.dismissDirection) : $flutterSrcWidgetsDismissible.DismissDirection.down),
+          dismissDirection: (tree.materialSnackBar.hasDismissDirection() ? enums.convertFlutterDismissDirectionType(tree.materialSnackBar.dismissDirection) : null),
           clipBehavior: (tree.materialSnackBar.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.materialSnackBar.clipBehavior) : $dartUi.Clip.hardEdge));
     case messages.FlutterDiagnosticableTreeType_Constructor.materialSpellCheckSuggestionsToolbar:
       return $flutterSrcMaterialSpellCheckSuggestionsToolbar.SpellCheckSuggestionsToolbar(
@@ -9103,6 +9162,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           readOnly: (tree.materialTextField.hasReadOnly() ? tree.materialTextField.readOnly : false),
           showCursor: (tree.materialTextField.hasShowCursor() ? tree.materialTextField.showCursor : null),
           autofocus: (tree.materialTextField.hasAutofocus() ? tree.materialTextField.autofocus : false),
+          statesController: (tree.materialTextField.hasStatesController() ? constructMaterialMaterialStatesControllerType(tree.materialTextField.statesController) : null),
           obscuringCharacter: (tree.materialTextField.hasObscuringCharacter() ? tree.materialTextField.obscuringCharacter : '•'),
           obscureText: (tree.materialTextField.hasObscureText() ? tree.materialTextField.obscureText : false),
           autocorrect: (tree.materialTextField.hasAutocorrect() ? tree.materialTextField.autocorrect : true),
@@ -9125,6 +9185,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           cursorRadius: (tree.materialTextField.hasCursorRadius() ? constructDartRadiusType(tree.materialTextField.cursorRadius) : null),
           cursorOpacityAnimates: (tree.materialTextField.hasCursorOpacityAnimates() ? tree.materialTextField.cursorOpacityAnimates : null),
           cursorColor: (tree.materialTextField.hasCursorColor() ? constructDartColorType(tree.materialTextField.cursorColor) : null),
+          cursorErrorColor: (tree.materialTextField.hasCursorErrorColor() ? constructDartColorType(tree.materialTextField.cursorErrorColor) : null),
           selectionHeightStyle: (tree.materialTextField.hasSelectionHeightStyle() ? enums.convertRequiredDartBoxHeightStyleType(tree.materialTextField.selectionHeightStyle) : $dartUi.BoxHeightStyle.tight),
           selectionWidthStyle: (tree.materialTextField.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyleType(tree.materialTextField.selectionWidthStyle) : $dartUi.BoxWidthStyle.tight),
           keyboardAppearance: (tree.materialTextField.hasKeyboardAppearance() ? enums.convertDartBrightnessType(tree.materialTextField.keyboardAppearance) : null),
@@ -9133,6 +9194,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           enableInteractiveSelection: (tree.materialTextField.hasEnableInteractiveSelection() ? tree.materialTextField.enableInteractiveSelection : null),
           selectionControls: (tree.materialTextField.hasSelectionControls() ? constructFlutterTextSelectionControlsType(tree.materialTextField.selectionControls) : null),
           onTap: null,
+          onTapAlwaysCalled: (tree.materialTextField.hasOnTapAlwaysCalled() ? tree.materialTextField.onTapAlwaysCalled : false),
           onTapOutside: null,
           mouseCursor: null,
           buildCounter: null,
@@ -9179,6 +9241,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           maxLength: (tree.materialTextFormField.hasMaxLength() ? tree.materialTextFormField.maxLength : null),
           onChanged: null,
           onTap: null,
+          onTapAlwaysCalled: (tree.materialTextFormField.hasOnTapAlwaysCalled() ? tree.materialTextFormField.onTapAlwaysCalled : false),
           onTapOutside: null,
           onEditingComplete: null,
           onFieldSubmitted: null,
@@ -9190,6 +9253,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           cursorHeight: (tree.materialTextFormField.hasCursorHeight() ? tree.materialTextFormField.cursorHeight : null),
           cursorRadius: (tree.materialTextFormField.hasCursorRadius() ? constructDartRadiusType(tree.materialTextFormField.cursorRadius) : null),
           cursorColor: (tree.materialTextFormField.hasCursorColor() ? constructDartColorType(tree.materialTextFormField.cursorColor) : null),
+          cursorErrorColor: (tree.materialTextFormField.hasCursorErrorColor() ? constructDartColorType(tree.materialTextFormField.cursorErrorColor) : null),
           keyboardAppearance: (tree.materialTextFormField.hasKeyboardAppearance() ? enums.convertDartBrightnessType(tree.materialTextFormField.keyboardAppearance) : null),
           scrollPadding: (tree.materialTextFormField.hasScrollPadding() ? constructRequiredFlutterEdgeInsetsType(tree.materialTextFormField.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           enableInteractiveSelection: (tree.materialTextFormField.hasEnableInteractiveSelection() ? tree.materialTextFormField.enableInteractiveSelection : null),
@@ -9212,6 +9276,7 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           selectionWidthStyle: (tree.materialTextFormField.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyleType(tree.materialTextFormField.selectionWidthStyle) : $dartUi.BoxWidthStyle.tight),
           dragStartBehavior: (tree.materialTextFormField.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehaviorType(tree.materialTextFormField.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           contentInsertionConfiguration: null,
+          statesController: (tree.materialTextFormField.hasStatesController() ? constructMaterialMaterialStatesControllerType(tree.materialTextFormField.statesController) : null),
           clipBehavior: (tree.materialTextFormField.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.materialTextFormField.clipBehavior) : $dartUi.Clip.hardEdge),
           scribbleEnabled: (tree.materialTextFormField.hasScribbleEnabled() ? tree.materialTextFormField.scribbleEnabled : true),
           canRequestFocus: (tree.materialTextFormField.hasCanRequestFocus() ? tree.materialTextFormField.canRequestFocus : true));
@@ -9305,6 +9370,8 @@ $flutterSrcFoundationDiagnostics.DiagnosticableTree? constructFlutterDiagnostica
           textAlign: (tree.materialTooltip.hasTextAlign() ? enums.convertDartTextAlignType(tree.materialTooltip.textAlign) : null),
           waitDuration: (tree.materialTooltip.hasWaitDuration() ? constructDartDurationType(tree.materialTooltip.waitDuration) : null),
           showDuration: (tree.materialTooltip.hasShowDuration() ? constructDartDurationType(tree.materialTooltip.showDuration) : null),
+          exitDuration: (tree.materialTooltip.hasExitDuration() ? constructDartDurationType(tree.materialTooltip.exitDuration) : null),
+          enableTapToDismiss: (tree.materialTooltip.hasEnableTapToDismiss() ? tree.materialTooltip.enableTapToDismiss : true),
           triggerMode: (tree.materialTooltip.hasTriggerMode() ? enums.convertMaterialTooltipTriggerModeType(tree.materialTooltip.triggerMode) : null),
           enableFeedback: (tree.materialTooltip.hasEnableFeedback() ? tree.materialTooltip.enableFeedback : null),
           onTriggered: null,
@@ -9700,7 +9767,9 @@ $flutterSrcWidgetsListWheelScrollView.FixedExtentScrollController? constructFlut
   switch (tree.whichConstructor()) {
     case messages.FlutterFixedExtentScrollControllerType_Constructor.flutterFixedExtentScrollController:
       return $flutterSrcWidgetsListWheelScrollView.FixedExtentScrollController(
-          initialItem: (tree.flutterFixedExtentScrollController.hasInitialItem() ? tree.flutterFixedExtentScrollController.initialItem : 0));
+          initialItem: (tree.flutterFixedExtentScrollController.hasInitialItem() ? tree.flutterFixedExtentScrollController.initialItem : 0),
+          onAttach: null,
+          onDetach: null);
     default:
       return null;
   }
@@ -9750,7 +9819,6 @@ $flutterSrcWidgetsFocusManager.FocusNode? constructFlutterFocusNodeType(messages
     case messages.FlutterFocusNodeType_Constructor.flutterFocusNode:
       return $flutterSrcWidgetsFocusManager.FocusNode(
           debugLabel: (tree.flutterFocusNode.hasDebugLabel() ? tree.flutterFocusNode.debugLabel : null),
-          onKey: null,
           onKeyEvent: null,
           skipTraversal: (tree.flutterFocusNode.hasSkipTraversal() ? tree.flutterFocusNode.skipTraversal : false),
           canRequestFocus: (tree.flutterFocusNode.hasCanRequestFocus() ? tree.flutterFocusNode.canRequestFocus : true),
@@ -9760,7 +9828,6 @@ $flutterSrcWidgetsFocusManager.FocusNode? constructFlutterFocusNodeType(messages
       return $flutterSrcWidgetsFocusManager.FocusScopeNode(
           debugLabel: (tree.flutterFocusScopeNode.hasDebugLabel() ? tree.flutterFocusScopeNode.debugLabel : null),
           onKeyEvent: null,
-          onKey: null,
           skipTraversal: (tree.flutterFocusScopeNode.hasSkipTraversal() ? tree.flutterFocusScopeNode.skipTraversal : false),
           canRequestFocus: (tree.flutterFocusScopeNode.hasCanRequestFocus() ? tree.flutterFocusScopeNode.canRequestFocus : true),
           traversalEdgeBehavior: (tree.flutterFocusScopeNode.hasTraversalEdgeBehavior() ? enums.convertRequiredFlutterTraversalEdgeBehaviorType(tree.flutterFocusScopeNode.traversalEdgeBehavior) : $flutterSrcWidgetsFocusTraversal.TraversalEdgeBehavior.closedLoop));
@@ -9814,7 +9881,6 @@ $flutterSrcWidgetsFocusManager.FocusScopeNode? constructFlutterFocusScopeNodeTyp
       return $flutterSrcWidgetsFocusManager.FocusScopeNode(
           debugLabel: (tree.flutterFocusScopeNode.hasDebugLabel() ? tree.flutterFocusScopeNode.debugLabel : null),
           onKeyEvent: null,
-          onKey: null,
           skipTraversal: (tree.flutterFocusScopeNode.hasSkipTraversal() ? tree.flutterFocusScopeNode.skipTraversal : false),
           canRequestFocus: (tree.flutterFocusScopeNode.hasCanRequestFocus() ? tree.flutterFocusScopeNode.canRequestFocus : true),
           traversalEdgeBehavior: (tree.flutterFocusScopeNode.hasTraversalEdgeBehavior() ? enums.convertRequiredFlutterTraversalEdgeBehaviorType(tree.flutterFocusScopeNode.traversalEdgeBehavior) : $flutterSrcWidgetsFocusTraversal.TraversalEdgeBehavior.closedLoop));
@@ -10108,7 +10174,8 @@ $flutterSrcWidgetsIconThemeData.IconThemeData? constructFlutterIconThemeDataType
           opticalSize: (tree.cupertinoIconThemeData.hasOpticalSize() ? tree.cupertinoIconThemeData.opticalSize : null),
           color: (tree.cupertinoIconThemeData.hasColor() ? constructDartColorType(tree.cupertinoIconThemeData.color) : null),
           opacity: (tree.cupertinoIconThemeData.hasOpacity() ? tree.cupertinoIconThemeData.opacity : null),
-          shadows: tree.cupertinoIconThemeData.shadows.map((e) => constructRequiredDartShadowType(e)).toList());
+          shadows: tree.cupertinoIconThemeData.shadows.map((e) => constructRequiredDartShadowType(e)).toList(),
+          applyTextScaling: (tree.cupertinoIconThemeData.hasApplyTextScaling() ? tree.cupertinoIconThemeData.applyTextScaling : null));
     case messages.FlutterIconThemeDataType_Constructor.flutterIconThemeData:
       return $flutterSrcWidgetsIconThemeData.IconThemeData(
           size: (tree.flutterIconThemeData.hasSize() ? tree.flutterIconThemeData.size : null),
@@ -10118,7 +10185,8 @@ $flutterSrcWidgetsIconThemeData.IconThemeData? constructFlutterIconThemeDataType
           opticalSize: (tree.flutterIconThemeData.hasOpticalSize() ? tree.flutterIconThemeData.opticalSize : null),
           color: (tree.flutterIconThemeData.hasColor() ? constructDartColorType(tree.flutterIconThemeData.color) : null),
           opacity: (tree.flutterIconThemeData.hasOpacity() ? tree.flutterIconThemeData.opacity : null),
-          shadows: tree.flutterIconThemeData.shadows.map((e) => constructRequiredDartShadowType(e)).toList());
+          shadows: tree.flutterIconThemeData.shadows.map((e) => constructRequiredDartShadowType(e)).toList(),
+          applyTextScaling: (tree.flutterIconThemeData.hasApplyTextScaling() ? tree.flutterIconThemeData.applyTextScaling : null));
     case messages.FlutterIconThemeDataType_Constructor.flutterIconThemeDataNamedFallback:
       return $flutterSrcWidgetsIconThemeData.IconThemeData.fallback(
           );
@@ -10154,7 +10222,8 @@ $flutterSrcWidgetsIcon.Icon? constructFlutterIconType(messages.FlutterIconType? 
           color: (tree.flutterIcon.hasColor() ? constructDartColorType(tree.flutterIcon.color) : null),
           shadows: tree.flutterIcon.shadows.map((e) => constructRequiredDartShadowType(e)).toList(),
           semanticLabel: (tree.flutterIcon.hasSemanticLabel() ? tree.flutterIcon.semanticLabel : null),
-          textDirection: (tree.flutterIcon.hasTextDirection() ? enums.convertDartTextDirectionType(tree.flutterIcon.textDirection) : null));
+          textDirection: (tree.flutterIcon.hasTextDirection() ? enums.convertDartTextDirectionType(tree.flutterIcon.textDirection) : null),
+          applyTextScaling: (tree.flutterIcon.hasApplyTextScaling() ? tree.flutterIcon.applyTextScaling : null));
     default:
       return null;
   }
@@ -11445,7 +11514,9 @@ $flutterSrcWidgetsPageView.PageController? constructFlutterPageControllerType(me
       return $flutterSrcWidgetsPageView.PageController(
           initialPage: (tree.flutterPageController.hasInitialPage() ? tree.flutterPageController.initialPage : 0),
           keepPage: (tree.flutterPageController.hasKeepPage() ? tree.flutterPageController.keepPage : true),
-          viewportFraction: (tree.flutterPageController.hasViewportFraction() ? tree.flutterPageController.viewportFraction : 1.0));
+          viewportFraction: (tree.flutterPageController.hasViewportFraction() ? tree.flutterPageController.viewportFraction : 1.0),
+          onAttach: null,
+          onDetach: null);
     default:
       return null;
   }
@@ -11730,7 +11801,8 @@ $flutterSrcRenderingBox.RenderBox? constructFlutterRenderBoxType(messages.Flutte
           alignment: (tree.flutterRenderAnimatedSize.hasAlignment() ? constructRequiredFlutterAlignmentGeometryType(tree.flutterRenderAnimatedSize.alignment) : $flutterSrcPaintingAlignment.Alignment.center),
           textDirection: (tree.flutterRenderAnimatedSize.hasTextDirection() ? enums.convertDartTextDirectionType(tree.flutterRenderAnimatedSize.textDirection) : null),
           child: (tree.flutterRenderAnimatedSize.hasChild() ? constructFlutterRenderBoxType(tree.flutterRenderAnimatedSize.child) : null),
-          clipBehavior: (tree.flutterRenderAnimatedSize.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.flutterRenderAnimatedSize.clipBehavior) : $dartUi.Clip.hardEdge));
+          clipBehavior: (tree.flutterRenderAnimatedSize.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.flutterRenderAnimatedSize.clipBehavior) : $dartUi.Clip.hardEdge),
+          onEnd: null);
     case messages.FlutterRenderBoxType_Constructor.flutterRenderAspectRatio:
       return $flutterSrcRenderingProxyBox.RenderAspectRatio(
           child: (tree.flutterRenderAspectRatio.hasChild() ? constructFlutterRenderBoxType(tree.flutterRenderAspectRatio.child) : null),
@@ -11782,6 +11854,7 @@ $flutterSrcRenderingBox.RenderBox? constructFlutterRenderBoxType(messages.Flutte
           maxWidth: (tree.flutterRenderConstrainedOverflowBox.hasMaxWidth() ? tree.flutterRenderConstrainedOverflowBox.maxWidth : null),
           minHeight: (tree.flutterRenderConstrainedOverflowBox.hasMinHeight() ? tree.flutterRenderConstrainedOverflowBox.minHeight : null),
           maxHeight: (tree.flutterRenderConstrainedOverflowBox.hasMaxHeight() ? tree.flutterRenderConstrainedOverflowBox.maxHeight : null),
+          fit: (tree.flutterRenderConstrainedOverflowBox.hasFit() ? enums.convertRequiredFlutterOverflowBoxFitType(tree.flutterRenderConstrainedOverflowBox.fit) : $flutterSrcRenderingShiftedBox.OverflowBoxFit.max),
           alignment: (tree.flutterRenderConstrainedOverflowBox.hasAlignment() ? constructRequiredFlutterAlignmentGeometryType(tree.flutterRenderConstrainedOverflowBox.alignment) : $flutterSrcPaintingAlignment.Alignment.center),
           textDirection: (tree.flutterRenderConstrainedOverflowBox.hasTextDirection() ? enums.convertDartTextDirectionType(tree.flutterRenderConstrainedOverflowBox.textDirection) : null));
     case messages.FlutterRenderBoxType_Constructor.flutterRenderCustomMultiChildLayoutBox:
@@ -12086,6 +12159,7 @@ $flutterSrcRenderingBox.RenderBox? constructFlutterRenderBoxType(messages.Flutte
       return $flutterSrcWidgetsTapRegion.RenderTapRegion(
           registry: (tree.flutterRenderTapRegion.hasRegistry() ? constructFlutterTapRegionRegistryType(tree.flutterRenderTapRegion.registry) : null),
           enabled: (tree.flutterRenderTapRegion.hasEnabled() ? tree.flutterRenderTapRegion.enabled : true),
+          consumeOutsideTaps: (tree.flutterRenderTapRegion.hasConsumeOutsideTaps() ? tree.flutterRenderTapRegion.consumeOutsideTaps : false),
           onTapOutside: null,
           onTapInside: null,
           behavior: (tree.flutterRenderTapRegion.hasBehavior() ? enums.convertRequiredFlutterHitTestBehaviorType(tree.flutterRenderTapRegion.behavior) : $flutterSrcRenderingProxyBox.HitTestBehavior.deferToChild),
@@ -12443,12 +12517,16 @@ $flutterSrcWidgetsScrollController.ScrollController? constructFlutterScrollContr
   switch (tree.whichConstructor()) {
     case messages.FlutterScrollControllerType_Constructor.flutterFixedExtentScrollController:
       return $flutterSrcWidgetsListWheelScrollView.FixedExtentScrollController(
-          initialItem: (tree.flutterFixedExtentScrollController.hasInitialItem() ? tree.flutterFixedExtentScrollController.initialItem : 0));
+          initialItem: (tree.flutterFixedExtentScrollController.hasInitialItem() ? tree.flutterFixedExtentScrollController.initialItem : 0),
+          onAttach: null,
+          onDetach: null);
     case messages.FlutterScrollControllerType_Constructor.flutterPageController:
       return $flutterSrcWidgetsPageView.PageController(
           initialPage: (tree.flutterPageController.hasInitialPage() ? tree.flutterPageController.initialPage : 0),
           keepPage: (tree.flutterPageController.hasKeepPage() ? tree.flutterPageController.keepPage : true),
-          viewportFraction: (tree.flutterPageController.hasViewportFraction() ? tree.flutterPageController.viewportFraction : 1.0));
+          viewportFraction: (tree.flutterPageController.hasViewportFraction() ? tree.flutterPageController.viewportFraction : 1.0),
+          onAttach: null,
+          onDetach: null);
     case messages.FlutterScrollControllerType_Constructor.flutterScrollController:
       return $flutterSrcWidgetsScrollController.ScrollController(
           initialScrollOffset: (tree.flutterScrollController.hasInitialScrollOffset() ? tree.flutterScrollController.initialScrollOffset : 0.0),
@@ -12460,7 +12538,9 @@ $flutterSrcWidgetsScrollController.ScrollController? constructFlutterScrollContr
       return $flutterSrcWidgetsScrollController.TrackingScrollController(
           initialScrollOffset: (tree.flutterTrackingScrollController.hasInitialScrollOffset() ? tree.flutterTrackingScrollController.initialScrollOffset : 0.0),
           keepScrollOffset: (tree.flutterTrackingScrollController.hasKeepScrollOffset() ? tree.flutterTrackingScrollController.keepScrollOffset : true),
-          debugLabel: (tree.flutterTrackingScrollController.hasDebugLabel() ? tree.flutterTrackingScrollController.debugLabel : null));
+          debugLabel: (tree.flutterTrackingScrollController.hasDebugLabel() ? tree.flutterTrackingScrollController.debugLabel : null),
+          onAttach: null,
+          onDetach: null);
     default:
       return null;
   }
@@ -13006,6 +13086,7 @@ $flutterSrcWidgetsFramework.SingleChildRenderObjectWidget? constructFlutterSingl
           maxWidth: (tree.flutterOverflowBox.hasMaxWidth() ? tree.flutterOverflowBox.maxWidth : null),
           minHeight: (tree.flutterOverflowBox.hasMinHeight() ? tree.flutterOverflowBox.minHeight : null),
           maxHeight: (tree.flutterOverflowBox.hasMaxHeight() ? tree.flutterOverflowBox.maxHeight : null),
+          fit: (tree.flutterOverflowBox.hasFit() ? enums.convertRequiredFlutterOverflowBoxFitType(tree.flutterOverflowBox.fit) : $flutterSrcRenderingShiftedBox.OverflowBoxFit.max),
           child: (tree.flutterOverflowBox.hasChild() ? constructWidgetType(tree.flutterOverflowBox.child) : null));
     case messages.FlutterSingleChildRenderObjectWidgetType_Constructor.flutterPadding:
       return $flutterSrcWidgetsBasic.Padding(
@@ -13068,6 +13149,7 @@ $flutterSrcWidgetsFramework.SingleChildRenderObjectWidget? constructFlutterSingl
           expanded: (tree.flutterSemantics.hasExpanded() ? tree.flutterSemantics.expanded : null),
           maxValueLength: (tree.flutterSemantics.hasMaxValueLength() ? tree.flutterSemantics.maxValueLength : null),
           currentValueLength: (tree.flutterSemantics.hasCurrentValueLength() ? tree.flutterSemantics.currentValueLength : null),
+          identifier: (tree.flutterSemantics.hasIdentifier() ? tree.flutterSemantics.identifier : null),
           label: (tree.flutterSemantics.hasLabel() ? tree.flutterSemantics.label : null),
           attributedLabel: (tree.flutterSemantics.hasAttributedLabel() ? constructFlutterSrcSemanticsAttributedStringType(tree.flutterSemantics.attributedLabel) : null),
           value: (tree.flutterSemantics.hasValue() ? tree.flutterSemantics.value : null),
@@ -13197,6 +13279,7 @@ $flutterSrcWidgetsFramework.SingleChildRenderObjectWidget? constructFlutterSingl
           onTapOutside: null,
           onTapInside: null,
           groupId: null,
+          consumeOutsideTaps: (tree.flutterTapRegion.hasConsumeOutsideTaps() ? tree.flutterTapRegion.consumeOutsideTaps : false),
           debugLabel: (tree.flutterTapRegion.hasDebugLabel() ? tree.flutterTapRegion.debugLabel : null));
     case messages.FlutterSingleChildRenderObjectWidgetType_Constructor.flutterTapRegionSurface:
       return $flutterSrcWidgetsTapRegion.TapRegionSurface(
@@ -13209,6 +13292,7 @@ $flutterSrcWidgetsFramework.SingleChildRenderObjectWidget? constructFlutterSingl
           enabled: (tree.flutterTextFieldTapRegion.hasEnabled() ? tree.flutterTextFieldTapRegion.enabled : true),
           onTapOutside: null,
           onTapInside: null,
+          consumeOutsideTaps: (tree.flutterTextFieldTapRegion.hasConsumeOutsideTaps() ? tree.flutterTextFieldTapRegion.consumeOutsideTaps : false),
           debugLabel: (tree.flutterTextFieldTapRegion.hasDebugLabel() ? tree.flutterTextFieldTapRegion.debugLabel : null));
     case messages.FlutterSingleChildRenderObjectWidgetType_Constructor.flutterTransform:
       return $flutterSrcWidgetsBasic.Transform(
@@ -13504,6 +13588,32 @@ $flutterSrcServicesSpellCheck.SpellCheckService? constructFlutterSpellCheckServi
   }
 }
 
+$flutterSrcAnimationAnimationStyle.AnimationStyle constructRequiredFlutterSrcAnimationAnimationStyleType(messages.FlutterSrcAnimationAnimationStyleType tree) {
+  final result = constructFlutterSrcAnimationAnimationStyleType(tree);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required sub-tree');
+  }
+}
+
+$flutterSrcAnimationAnimationStyle.AnimationStyle? constructFlutterSrcAnimationAnimationStyleType(messages.FlutterSrcAnimationAnimationStyleType? tree) {
+  if(tree == null) {
+    return null;
+  }
+
+  switch (tree.whichConstructor()) {
+    case messages.FlutterSrcAnimationAnimationStyleType_Constructor.flutterSrcAnimationAnimationStyle:
+      return $flutterSrcAnimationAnimationStyle.AnimationStyle(
+          curve: (tree.flutterSrcAnimationAnimationStyle.hasCurve() ? constructFlutterSrcAnimationCurveType(tree.flutterSrcAnimationAnimationStyle.curve) : null),
+          duration: (tree.flutterSrcAnimationAnimationStyle.hasDuration() ? constructDartDurationType(tree.flutterSrcAnimationAnimationStyle.duration) : null),
+          reverseCurve: (tree.flutterSrcAnimationAnimationStyle.hasReverseCurve() ? constructFlutterSrcAnimationCurveType(tree.flutterSrcAnimationAnimationStyle.reverseCurve) : null),
+          reverseDuration: (tree.flutterSrcAnimationAnimationStyle.hasReverseDuration() ? constructDartDurationType(tree.flutterSrcAnimationAnimationStyle.reverseDuration) : null));
+    default:
+      return null;
+  }
+}
+
 $flutterSrcAnimationCurves.Curve constructRequiredFlutterSrcAnimationCurveType(messages.FlutterSrcAnimationCurveType tree) {
   final result = constructFlutterSrcAnimationCurveType(tree);
   if(result != null) {
@@ -13723,6 +13833,7 @@ $flutterSrcSemanticsSemantics.SemanticsProperties? constructFlutterSrcSemanticsS
           liveRegion: (tree.flutterSrcSemanticsSemanticsProperties.hasLiveRegion() ? tree.flutterSrcSemanticsSemanticsProperties.liveRegion : null),
           maxValueLength: (tree.flutterSrcSemanticsSemanticsProperties.hasMaxValueLength() ? tree.flutterSrcSemanticsSemanticsProperties.maxValueLength : null),
           currentValueLength: (tree.flutterSrcSemanticsSemanticsProperties.hasCurrentValueLength() ? tree.flutterSrcSemanticsSemanticsProperties.currentValueLength : null),
+          identifier: (tree.flutterSrcSemanticsSemanticsProperties.hasIdentifier() ? tree.flutterSrcSemanticsSemanticsProperties.identifier : null),
           label: (tree.flutterSrcSemanticsSemanticsProperties.hasLabel() ? tree.flutterSrcSemanticsSemanticsProperties.label : null),
           attributedLabel: (tree.flutterSrcSemanticsSemanticsProperties.hasAttributedLabel() ? constructFlutterSrcSemanticsAttributedStringType(tree.flutterSrcSemanticsSemanticsProperties.attributedLabel) : null),
           value: (tree.flutterSrcSemanticsSemanticsProperties.hasValue() ? tree.flutterSrcSemanticsSemanticsProperties.value : null),
@@ -14168,6 +14279,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           suffix: (tree.cupertinoTextField.hasSuffix() ? constructWidgetType(tree.cupertinoTextField.suffix) : null),
           suffixMode: (tree.cupertinoTextField.hasSuffixMode() ? enums.convertRequiredOverlayVisibilityModeType(tree.cupertinoTextField.suffixMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.always),
           clearButtonMode: (tree.cupertinoTextField.hasClearButtonMode() ? enums.convertRequiredOverlayVisibilityModeType(tree.cupertinoTextField.clearButtonMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.never),
+          clearButtonSemanticLabel: (tree.cupertinoTextField.hasClearButtonSemanticLabel() ? tree.cupertinoTextField.clearButtonSemanticLabel : null),
           keyboardType: (tree.cupertinoTextField.hasKeyboardType() ? constructFlutterTextInputTypeType(tree.cupertinoTextField.keyboardType) : null),
           textInputAction: (tree.cupertinoTextField.hasTextInputAction() ? enums.convertFlutterTextInputActionType(tree.cupertinoTextField.textInputAction) : null),
           textCapitalization: (tree.cupertinoTextField.hasTextCapitalization() ? enums.convertRequiredFlutterTextCapitalizationType(tree.cupertinoTextField.textCapitalization) : $flutterSrcServicesTextInput.TextCapitalization.none),
@@ -14235,6 +14347,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           suffix: (tree.cupertinoTextFieldNamedBorderless.hasSuffix() ? constructWidgetType(tree.cupertinoTextFieldNamedBorderless.suffix) : null),
           suffixMode: (tree.cupertinoTextFieldNamedBorderless.hasSuffixMode() ? enums.convertRequiredOverlayVisibilityModeType(tree.cupertinoTextFieldNamedBorderless.suffixMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.always),
           clearButtonMode: (tree.cupertinoTextFieldNamedBorderless.hasClearButtonMode() ? enums.convertRequiredOverlayVisibilityModeType(tree.cupertinoTextFieldNamedBorderless.clearButtonMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.never),
+          clearButtonSemanticLabel: (tree.cupertinoTextFieldNamedBorderless.hasClearButtonSemanticLabel() ? tree.cupertinoTextFieldNamedBorderless.clearButtonSemanticLabel : null),
           keyboardType: (tree.cupertinoTextFieldNamedBorderless.hasKeyboardType() ? constructFlutterTextInputTypeType(tree.cupertinoTextFieldNamedBorderless.keyboardType) : null),
           textInputAction: (tree.cupertinoTextFieldNamedBorderless.hasTextInputAction() ? enums.convertFlutterTextInputActionType(tree.cupertinoTextFieldNamedBorderless.textInputAction) : null),
           textCapitalization: (tree.cupertinoTextFieldNamedBorderless.hasTextCapitalization() ? enums.convertRequiredFlutterTextCapitalizationType(tree.cupertinoTextFieldNamedBorderless.textCapitalization) : $flutterSrcServicesTextInput.TextCapitalization.none),
@@ -14522,7 +14635,8 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           curve: (tree.flutterAnimatedSize.hasCurve() ? constructRequiredFlutterSrcAnimationCurveType(tree.flutterAnimatedSize.curve) : $flutterSrcAnimationCurves.Curves.linear),
           duration: (tree.flutterAnimatedSize.hasDuration() ? constructRequiredDartDurationType(tree.flutterAnimatedSize.duration) : missing('duration')),
           reverseDuration: (tree.flutterAnimatedSize.hasReverseDuration() ? constructDartDurationType(tree.flutterAnimatedSize.reverseDuration) : null),
-          clipBehavior: (tree.flutterAnimatedSize.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.flutterAnimatedSize.clipBehavior) : $dartUi.Clip.hardEdge));
+          clipBehavior: (tree.flutterAnimatedSize.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.flutterAnimatedSize.clipBehavior) : $dartUi.Clip.hardEdge),
+          onEnd: null);
     case messages.FlutterStatefulWidgetType_Constructor.flutterAnimatedSlide:
       return $flutterSrcWidgetsImplicitAnimations.AnimatedSlide(
           key: (tree.flutterAnimatedSlide.hasKey() ? constructFlutterKeyType(tree.flutterAnimatedSlide.key) : null),
@@ -14557,6 +14671,16 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
       return $flutterSrcWidgetsAutomaticKeepAlive.AutomaticKeepAlive(
           key: (tree.flutterAutomaticKeepAlive.hasKey() ? constructFlutterKeyType(tree.flutterAutomaticKeepAlive.key) : null),
           child: (tree.flutterAutomaticKeepAlive.hasChild() ? constructRequiredWidgetType(tree.flutterAutomaticKeepAlive.child) : missing('child')));
+    case messages.FlutterStatefulWidgetType_Constructor.flutterBanner:
+      return $flutterSrcWidgetsBanner.Banner(
+          key: (tree.flutterBanner.hasKey() ? constructFlutterKeyType(tree.flutterBanner.key) : null),
+          child: (tree.flutterBanner.hasChild() ? constructWidgetType(tree.flutterBanner.child) : null),
+          message: (tree.flutterBanner.hasMessage() ? tree.flutterBanner.message : missing('message')),
+          textDirection: (tree.flutterBanner.hasTextDirection() ? enums.convertDartTextDirectionType(tree.flutterBanner.textDirection) : null),
+          location: (tree.flutterBanner.hasLocation() ? enums.convertRequiredFlutterBannerLocationType(tree.flutterBanner.location) : missing('location')),
+          layoutDirection: (tree.flutterBanner.hasLayoutDirection() ? enums.convertDartTextDirectionType(tree.flutterBanner.layoutDirection) : null),
+          color: (tree.flutterBanner.hasColor() ? constructRequiredDartColorType(tree.flutterBanner.color) : $dartUi.Color(0xA0B71C1C)),
+          textStyle: (tree.flutterBanner.hasTextStyle() ? constructRequiredFlutterTextStyleType(tree.flutterBanner.textStyle) : $flutterSrcPaintingTextStyle.TextStyle(color: $dartUi.Color(0xFFFFFFFF), fontSize: 12.0 * 0.85, fontWeight: $dartUi.FontWeight.w900, height: 1.0)));
     case messages.FlutterStatefulWidgetType_Constructor.flutterDismissible:
       return $flutterSrcWidgetsDismissible.Dismissible(
           key: (tree.flutterDismissible.hasKey() ? constructRequiredFlutterKeyType(tree.flutterDismissible.key) : missing('key')),
@@ -14687,6 +14811,10 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           width: (tree.flutterFadeInImageNamedAssetNetwork.hasWidth() ? tree.flutterFadeInImageNamedAssetNetwork.width : null),
           height: (tree.flutterFadeInImageNamedAssetNetwork.hasHeight() ? tree.flutterFadeInImageNamedAssetNetwork.height : null),
           fit: (tree.flutterFadeInImageNamedAssetNetwork.hasFit() ? enums.convertFlutterBoxFitType(tree.flutterFadeInImageNamedAssetNetwork.fit) : null),
+          color: (tree.flutterFadeInImageNamedAssetNetwork.hasColor() ? constructDartColorType(tree.flutterFadeInImageNamedAssetNetwork.color) : null),
+          colorBlendMode: (tree.flutterFadeInImageNamedAssetNetwork.hasColorBlendMode() ? enums.convertDartBlendModeType(tree.flutterFadeInImageNamedAssetNetwork.colorBlendMode) : null),
+          placeholderColor: (tree.flutterFadeInImageNamedAssetNetwork.hasPlaceholderColor() ? constructDartColorType(tree.flutterFadeInImageNamedAssetNetwork.placeholderColor) : null),
+          placeholderColorBlendMode: (tree.flutterFadeInImageNamedAssetNetwork.hasPlaceholderColorBlendMode() ? enums.convertDartBlendModeType(tree.flutterFadeInImageNamedAssetNetwork.placeholderColorBlendMode) : null),
           placeholderFit: (tree.flutterFadeInImageNamedAssetNetwork.hasPlaceholderFit() ? enums.convertFlutterBoxFitType(tree.flutterFadeInImageNamedAssetNetwork.placeholderFit) : null),
           filterQuality: (tree.flutterFadeInImageNamedAssetNetwork.hasFilterQuality() ? enums.convertRequiredDartFilterQualityType(tree.flutterFadeInImageNamedAssetNetwork.filterQuality) : $dartUi.FilterQuality.low),
           placeholderFilterQuality: (tree.flutterFadeInImageNamedAssetNetwork.hasPlaceholderFilterQuality() ? enums.convertDartFilterQualityType(tree.flutterFadeInImageNamedAssetNetwork.placeholderFilterQuality) : null),
@@ -14715,6 +14843,10 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           width: (tree.flutterFadeInImageNamedMemoryNetwork.hasWidth() ? tree.flutterFadeInImageNamedMemoryNetwork.width : null),
           height: (tree.flutterFadeInImageNamedMemoryNetwork.hasHeight() ? tree.flutterFadeInImageNamedMemoryNetwork.height : null),
           fit: (tree.flutterFadeInImageNamedMemoryNetwork.hasFit() ? enums.convertFlutterBoxFitType(tree.flutterFadeInImageNamedMemoryNetwork.fit) : null),
+          color: (tree.flutterFadeInImageNamedMemoryNetwork.hasColor() ? constructDartColorType(tree.flutterFadeInImageNamedMemoryNetwork.color) : null),
+          colorBlendMode: (tree.flutterFadeInImageNamedMemoryNetwork.hasColorBlendMode() ? enums.convertDartBlendModeType(tree.flutterFadeInImageNamedMemoryNetwork.colorBlendMode) : null),
+          placeholderColor: (tree.flutterFadeInImageNamedMemoryNetwork.hasPlaceholderColor() ? constructDartColorType(tree.flutterFadeInImageNamedMemoryNetwork.placeholderColor) : null),
+          placeholderColorBlendMode: (tree.flutterFadeInImageNamedMemoryNetwork.hasPlaceholderColorBlendMode() ? enums.convertDartBlendModeType(tree.flutterFadeInImageNamedMemoryNetwork.placeholderColorBlendMode) : null),
           placeholderFit: (tree.flutterFadeInImageNamedMemoryNetwork.hasPlaceholderFit() ? enums.convertFlutterBoxFitType(tree.flutterFadeInImageNamedMemoryNetwork.placeholderFit) : null),
           filterQuality: (tree.flutterFadeInImageNamedMemoryNetwork.hasFilterQuality() ? enums.convertRequiredDartFilterQualityType(tree.flutterFadeInImageNamedMemoryNetwork.filterQuality) : $dartUi.FilterQuality.low),
           placeholderFilterQuality: (tree.flutterFadeInImageNamedMemoryNetwork.hasPlaceholderFilterQuality() ? enums.convertDartFilterQualityType(tree.flutterFadeInImageNamedMemoryNetwork.placeholderFilterQuality) : null),
@@ -14734,7 +14866,6 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           autofocus: (tree.flutterFocus.hasAutofocus() ? tree.flutterFocus.autofocus : false),
           onFocusChange: null,
           onKeyEvent: null,
-          onKey: null,
           canRequestFocus: (tree.flutterFocus.hasCanRequestFocus() ? tree.flutterFocus.canRequestFocus : null),
           skipTraversal: (tree.flutterFocus.hasSkipTraversal() ? tree.flutterFocus.skipTraversal : null),
           descendantsAreFocusable: (tree.flutterFocus.hasDescendantsAreFocusable() ? tree.flutterFocus.descendantsAreFocusable : null),
@@ -15070,14 +15201,6 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           behavior: (tree.flutterRawGestureDetector.hasBehavior() ? enums.convertFlutterHitTestBehaviorType(tree.flutterRawGestureDetector.behavior) : null),
           excludeFromSemantics: (tree.flutterRawGestureDetector.hasExcludeFromSemantics() ? tree.flutterRawGestureDetector.excludeFromSemantics : false),
           semantics: null);
-    case messages.FlutterStatefulWidgetType_Constructor.flutterRawKeyboardListener:
-      return $flutterSrcWidgetsRawKeyboardListener.RawKeyboardListener(
-          key: (tree.flutterRawKeyboardListener.hasKey() ? constructFlutterKeyType(tree.flutterRawKeyboardListener.key) : null),
-          focusNode: (tree.flutterRawKeyboardListener.hasFocusNode() ? constructRequiredFlutterFocusNodeType(tree.flutterRawKeyboardListener.focusNode) : missing('focusNode')),
-          autofocus: (tree.flutterRawKeyboardListener.hasAutofocus() ? tree.flutterRawKeyboardListener.autofocus : false),
-          includeSemantics: (tree.flutterRawKeyboardListener.hasIncludeSemantics() ? tree.flutterRawKeyboardListener.includeSemantics : true),
-          onKey: null,
-          child: (tree.flutterRawKeyboardListener.hasChild() ? constructRequiredWidgetType(tree.flutterRawKeyboardListener.child) : missing('child')));
     case messages.FlutterStatefulWidgetType_Constructor.flutterRawScrollbar:
       return $flutterSrcWidgetsScrollbar.RawScrollbar(
           key: (tree.flutterRawScrollbar.hasKey() ? constructFlutterKeyType(tree.flutterRawScrollbar.key) : null),
@@ -15181,6 +15304,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           onSecondaryTapDown: null,
           onSingleTapUp: null,
           onSingleTapCancel: null,
+          onUserTap: null,
           onSingleLongTapStart: null,
           onSingleLongTapMoveUpdate: null,
           onSingleLongTapEnd: null,
@@ -15189,6 +15313,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           onDragSelectionStart: null,
           onDragSelectionUpdate: null,
           onDragSelectionEnd: null,
+          onUserTapAlwaysCalled: (tree.flutterTextSelectionGestureDetector.hasOnUserTapAlwaysCalled() ? tree.flutterTextSelectionGestureDetector.onUserTapAlwaysCalled : false),
           behavior: (tree.flutterTextSelectionGestureDetector.hasBehavior() ? enums.convertFlutterHitTestBehaviorType(tree.flutterTextSelectionGestureDetector.behavior) : null),
           child: (tree.flutterTextSelectionGestureDetector.hasChild() ? constructRequiredWidgetType(tree.flutterTextSelectionGestureDetector.child) : missing('child')));
     case messages.FlutterStatefulWidgetType_Constructor.flutterTickerMode:
@@ -15631,7 +15756,12 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           collapsedShape: (tree.materialExpansionTile.hasCollapsedShape() ? constructFlutterShapeBorderType(tree.materialExpansionTile.collapsedShape) : null),
           clipBehavior: (tree.materialExpansionTile.hasClipBehavior() ? enums.convertDartClipType(tree.materialExpansionTile.clipBehavior) : null),
           controlAffinity: (tree.materialExpansionTile.hasControlAffinity() ? enums.convertMaterialListTileControlAffinityType(tree.materialExpansionTile.controlAffinity) : null),
-          controller: (tree.materialExpansionTile.hasController() ? constructMaterialExpansionTileControllerType(tree.materialExpansionTile.controller) : null));
+          controller: (tree.materialExpansionTile.hasController() ? constructMaterialExpansionTileControllerType(tree.materialExpansionTile.controller) : null),
+          dense: (tree.materialExpansionTile.hasDense() ? tree.materialExpansionTile.dense : null),
+          visualDensity: (tree.materialExpansionTile.hasVisualDensity() ? constructMaterialVisualDensityType(tree.materialExpansionTile.visualDensity) : null),
+          enableFeedback: (tree.materialExpansionTile.hasEnableFeedback() ? tree.materialExpansionTile.enableFeedback : true),
+          enabled: (tree.materialExpansionTile.hasEnabled() ? tree.materialExpansionTile.enabled : true),
+          expansionAnimationStyle: (tree.materialExpansionTile.hasExpansionAnimationStyle() ? constructFlutterSrcAnimationAnimationStyleType(tree.materialExpansionTile.expansionAnimationStyle) : null));
     case messages.FlutterStatefulWidgetType_Constructor.materialFilledButton:
       return $flutterSrcMaterialFilledButton.FilledButton(
           key: (tree.materialFilledButton.hasKey() ? constructFlutterKeyType(tree.materialFilledButton.key) : null),
@@ -15720,7 +15850,8 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           fieldLabelText: (tree.materialInputDatePickerFormField.hasFieldLabelText() ? tree.materialInputDatePickerFormField.fieldLabelText : null),
           keyboardType: (tree.materialInputDatePickerFormField.hasKeyboardType() ? constructFlutterTextInputTypeType(tree.materialInputDatePickerFormField.keyboardType) : null),
           autofocus: (tree.materialInputDatePickerFormField.hasAutofocus() ? tree.materialInputDatePickerFormField.autofocus : false),
-          acceptEmptyDate: (tree.materialInputDatePickerFormField.hasAcceptEmptyDate() ? tree.materialInputDatePickerFormField.acceptEmptyDate : false));
+          acceptEmptyDate: (tree.materialInputDatePickerFormField.hasAcceptEmptyDate() ? tree.materialInputDatePickerFormField.acceptEmptyDate : false),
+          focusNode: (tree.materialInputDatePickerFormField.hasFocusNode() ? constructFlutterFocusNodeType(tree.materialInputDatePickerFormField.focusNode) : null));
     case messages.FlutterStatefulWidgetType_Constructor.materialInputDecorator:
       return $flutterSrcMaterialInputDecorator.InputDecorator(
           key: (tree.materialInputDecorator.hasKey() ? constructFlutterKeyType(tree.materialInputDecorator.key) : null),
@@ -15803,7 +15934,8 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           shortcuts: null,
           actions: null,
           restorationScopeId: (tree.materialMaterialApp.hasRestorationScopeId() ? tree.materialMaterialApp.restorationScopeId : null),
-          scrollBehavior: (tree.materialMaterialApp.hasScrollBehavior() ? constructFlutterScrollBehaviorType(tree.materialMaterialApp.scrollBehavior) : null));
+          scrollBehavior: (tree.materialMaterialApp.hasScrollBehavior() ? constructFlutterScrollBehaviorType(tree.materialMaterialApp.scrollBehavior) : null),
+          themeAnimationStyle: (tree.materialMaterialApp.hasThemeAnimationStyle() ? constructFlutterSrcAnimationAnimationStyleType(tree.materialMaterialApp.themeAnimationStyle) : null));
     case messages.FlutterStatefulWidgetType_Constructor.materialMaterialAppNamedRouter:
       return $flutterSrcMaterialApp.MaterialApp.router(
           key: (tree.materialMaterialAppNamedRouter.hasKey() ? constructFlutterKeyType(tree.materialMaterialAppNamedRouter.key) : null),
@@ -15839,7 +15971,8 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           shortcuts: null,
           actions: null,
           restorationScopeId: (tree.materialMaterialAppNamedRouter.hasRestorationScopeId() ? tree.materialMaterialAppNamedRouter.restorationScopeId : null),
-          scrollBehavior: (tree.materialMaterialAppNamedRouter.hasScrollBehavior() ? constructFlutterScrollBehaviorType(tree.materialMaterialAppNamedRouter.scrollBehavior) : null));
+          scrollBehavior: (tree.materialMaterialAppNamedRouter.hasScrollBehavior() ? constructFlutterScrollBehaviorType(tree.materialMaterialAppNamedRouter.scrollBehavior) : null),
+          themeAnimationStyle: (tree.materialMaterialAppNamedRouter.hasThemeAnimationStyle() ? constructFlutterSrcAnimationAnimationStyleType(tree.materialMaterialAppNamedRouter.themeAnimationStyle) : null));
     case messages.FlutterStatefulWidgetType_Constructor.materialMaterialBanner:
       return $flutterSrcMaterialBanner.MaterialBanner(
           key: (tree.materialMaterialBanner.hasKey() ? constructFlutterKeyType(tree.materialMaterialBanner.key) : null),
@@ -15871,7 +16004,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           style: (tree.materialMenuAnchor.hasStyle() ? constructMaterialMenuStyleType(tree.materialMenuAnchor.style) : null),
           alignmentOffset: (tree.materialMenuAnchor.hasAlignmentOffset() ? constructDartOffsetType(tree.materialMenuAnchor.alignmentOffset) : $dartUi.Offset.zero),
           clipBehavior: (tree.materialMenuAnchor.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.materialMenuAnchor.clipBehavior) : $dartUi.Clip.hardEdge),
-          anchorTapClosesMenu: (tree.materialMenuAnchor.hasAnchorTapClosesMenu() ? tree.materialMenuAnchor.anchorTapClosesMenu : false),
+          consumeOutsideTap: (tree.materialMenuAnchor.hasConsumeOutsideTap() ? tree.materialMenuAnchor.consumeOutsideTap : false),
           onOpen: null,
           onClose: null,
           crossAxisUnconstrained: (tree.materialMenuAnchor.hasCrossAxisUnconstrained() ? tree.materialMenuAnchor.crossAxisUnconstrained : true),
@@ -15976,7 +16109,8 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           checkboxHorizontalMargin: (tree.materialPaginatedDataTable.hasCheckboxHorizontalMargin() ? tree.materialPaginatedDataTable.checkboxHorizontalMargin : null),
           controller: (tree.materialPaginatedDataTable.hasController() ? constructFlutterScrollControllerType(tree.materialPaginatedDataTable.controller) : null),
           primary: (tree.materialPaginatedDataTable.hasPrimary() ? tree.materialPaginatedDataTable.primary : null),
-          headingRowColor: null);
+          headingRowColor: null,
+          showEmptyRows: (tree.materialPaginatedDataTable.hasShowEmptyRows() ? tree.materialPaginatedDataTable.showEmptyRows : true));
     case messages.FlutterStatefulWidgetType_Constructor.materialPopupMenuDivider:
       return $flutterSrcMaterialPopupMenu.PopupMenuDivider(
           key: (tree.materialPopupMenuDivider.hasKey() ? constructFlutterKeyType(tree.materialPopupMenuDivider.key) : null),
@@ -16144,7 +16278,10 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           padding: null,
           textStyle: null,
           hintStyle: null,
-          textCapitalization: (tree.materialSearchBar.hasTextCapitalization() ? enums.convertFlutterTextCapitalizationType(tree.materialSearchBar.textCapitalization) : null));
+          textCapitalization: (tree.materialSearchBar.hasTextCapitalization() ? enums.convertFlutterTextCapitalizationType(tree.materialSearchBar.textCapitalization) : null),
+          autoFocus: (tree.materialSearchBar.hasAutoFocus() ? tree.materialSearchBar.autoFocus : false),
+          textInputAction: (tree.materialSearchBar.hasTextInputAction() ? enums.convertFlutterTextInputActionType(tree.materialSearchBar.textInputAction) : null),
+          keyboardType: (tree.materialSearchBar.hasKeyboardType() ? constructFlutterTextInputTypeType(tree.materialSearchBar.keyboardType) : null));
     case messages.FlutterStatefulWidgetType_Constructor.materialSelectableText:
       return $flutterSrcMaterialSelectableText.SelectableText(
           (tree.materialSelectableText.hasData() ? tree.materialSelectableText.data : missing('data')),
@@ -16393,7 +16530,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           duration: (tree.materialSnackBar.hasDuration() ? constructRequiredDartDurationType(tree.materialSnackBar.duration) : $dartCore.Duration(milliseconds: 4000)),
           animation: null,
           onVisible: null,
-          dismissDirection: (tree.materialSnackBar.hasDismissDirection() ? enums.convertRequiredFlutterDismissDirectionType(tree.materialSnackBar.dismissDirection) : $flutterSrcWidgetsDismissible.DismissDirection.down),
+          dismissDirection: (tree.materialSnackBar.hasDismissDirection() ? enums.convertFlutterDismissDirectionType(tree.materialSnackBar.dismissDirection) : null),
           clipBehavior: (tree.materialSnackBar.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.materialSnackBar.clipBehavior) : $dartUi.Clip.hardEdge));
     case messages.FlutterStatefulWidgetType_Constructor.materialStepper:
       return $flutterSrcMaterialStepper.Stepper(
@@ -16543,6 +16680,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           readOnly: (tree.materialTextField.hasReadOnly() ? tree.materialTextField.readOnly : false),
           showCursor: (tree.materialTextField.hasShowCursor() ? tree.materialTextField.showCursor : null),
           autofocus: (tree.materialTextField.hasAutofocus() ? tree.materialTextField.autofocus : false),
+          statesController: (tree.materialTextField.hasStatesController() ? constructMaterialMaterialStatesControllerType(tree.materialTextField.statesController) : null),
           obscuringCharacter: (tree.materialTextField.hasObscuringCharacter() ? tree.materialTextField.obscuringCharacter : '•'),
           obscureText: (tree.materialTextField.hasObscureText() ? tree.materialTextField.obscureText : false),
           autocorrect: (tree.materialTextField.hasAutocorrect() ? tree.materialTextField.autocorrect : true),
@@ -16565,6 +16703,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           cursorRadius: (tree.materialTextField.hasCursorRadius() ? constructDartRadiusType(tree.materialTextField.cursorRadius) : null),
           cursorOpacityAnimates: (tree.materialTextField.hasCursorOpacityAnimates() ? tree.materialTextField.cursorOpacityAnimates : null),
           cursorColor: (tree.materialTextField.hasCursorColor() ? constructDartColorType(tree.materialTextField.cursorColor) : null),
+          cursorErrorColor: (tree.materialTextField.hasCursorErrorColor() ? constructDartColorType(tree.materialTextField.cursorErrorColor) : null),
           selectionHeightStyle: (tree.materialTextField.hasSelectionHeightStyle() ? enums.convertRequiredDartBoxHeightStyleType(tree.materialTextField.selectionHeightStyle) : $dartUi.BoxHeightStyle.tight),
           selectionWidthStyle: (tree.materialTextField.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyleType(tree.materialTextField.selectionWidthStyle) : $dartUi.BoxWidthStyle.tight),
           keyboardAppearance: (tree.materialTextField.hasKeyboardAppearance() ? enums.convertDartBrightnessType(tree.materialTextField.keyboardAppearance) : null),
@@ -16573,6 +16712,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           enableInteractiveSelection: (tree.materialTextField.hasEnableInteractiveSelection() ? tree.materialTextField.enableInteractiveSelection : null),
           selectionControls: (tree.materialTextField.hasSelectionControls() ? constructFlutterTextSelectionControlsType(tree.materialTextField.selectionControls) : null),
           onTap: null,
+          onTapAlwaysCalled: (tree.materialTextField.hasOnTapAlwaysCalled() ? tree.materialTextField.onTapAlwaysCalled : false),
           onTapOutside: null,
           mouseCursor: null,
           buildCounter: null,
@@ -16619,6 +16759,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           maxLength: (tree.materialTextFormField.hasMaxLength() ? tree.materialTextFormField.maxLength : null),
           onChanged: null,
           onTap: null,
+          onTapAlwaysCalled: (tree.materialTextFormField.hasOnTapAlwaysCalled() ? tree.materialTextFormField.onTapAlwaysCalled : false),
           onTapOutside: null,
           onEditingComplete: null,
           onFieldSubmitted: null,
@@ -16630,6 +16771,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           cursorHeight: (tree.materialTextFormField.hasCursorHeight() ? tree.materialTextFormField.cursorHeight : null),
           cursorRadius: (tree.materialTextFormField.hasCursorRadius() ? constructDartRadiusType(tree.materialTextFormField.cursorRadius) : null),
           cursorColor: (tree.materialTextFormField.hasCursorColor() ? constructDartColorType(tree.materialTextFormField.cursorColor) : null),
+          cursorErrorColor: (tree.materialTextFormField.hasCursorErrorColor() ? constructDartColorType(tree.materialTextFormField.cursorErrorColor) : null),
           keyboardAppearance: (tree.materialTextFormField.hasKeyboardAppearance() ? enums.convertDartBrightnessType(tree.materialTextFormField.keyboardAppearance) : null),
           scrollPadding: (tree.materialTextFormField.hasScrollPadding() ? constructRequiredFlutterEdgeInsetsType(tree.materialTextFormField.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           enableInteractiveSelection: (tree.materialTextFormField.hasEnableInteractiveSelection() ? tree.materialTextFormField.enableInteractiveSelection : null),
@@ -16652,6 +16794,7 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           selectionWidthStyle: (tree.materialTextFormField.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyleType(tree.materialTextFormField.selectionWidthStyle) : $dartUi.BoxWidthStyle.tight),
           dragStartBehavior: (tree.materialTextFormField.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehaviorType(tree.materialTextFormField.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           contentInsertionConfiguration: null,
+          statesController: (tree.materialTextFormField.hasStatesController() ? constructMaterialMaterialStatesControllerType(tree.materialTextFormField.statesController) : null),
           clipBehavior: (tree.materialTextFormField.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.materialTextFormField.clipBehavior) : $dartUi.Clip.hardEdge),
           scribbleEnabled: (tree.materialTextFormField.hasScribbleEnabled() ? tree.materialTextFormField.scribbleEnabled : true),
           canRequestFocus: (tree.materialTextFormField.hasCanRequestFocus() ? tree.materialTextFormField.canRequestFocus : true));
@@ -16685,6 +16828,8 @@ $flutterSrcWidgetsFramework.StatefulWidget? constructFlutterStatefulWidgetType(m
           textAlign: (tree.materialTooltip.hasTextAlign() ? enums.convertDartTextAlignType(tree.materialTooltip.textAlign) : null),
           waitDuration: (tree.materialTooltip.hasWaitDuration() ? constructDartDurationType(tree.materialTooltip.waitDuration) : null),
           showDuration: (tree.materialTooltip.hasShowDuration() ? constructDartDurationType(tree.materialTooltip.showDuration) : null),
+          exitDuration: (tree.materialTooltip.hasExitDuration() ? constructDartDurationType(tree.materialTooltip.exitDuration) : null),
+          enableTapToDismiss: (tree.materialTooltip.hasEnableTapToDismiss() ? tree.materialTooltip.enableTapToDismiss : true),
           triggerMode: (tree.materialTooltip.hasTriggerMode() ? enums.convertMaterialTooltipTriggerModeType(tree.materialTooltip.triggerMode) : null),
           enableFeedback: (tree.materialTooltip.hasEnableFeedback() ? tree.materialTooltip.enableFeedback : null),
           onTriggered: null,
@@ -16881,16 +17026,6 @@ $flutterSrcWidgetsFramework.StatelessWidget? constructFlutterStatelessWidgetType
           key: (tree.cupertinoTheme.hasKey() ? constructFlutterKeyType(tree.cupertinoTheme.key) : null),
           data: (tree.cupertinoTheme.hasData() ? constructRequiredCupertinoThemeDataType(tree.cupertinoTheme.data) : missing('data')),
           child: (tree.cupertinoTheme.hasChild() ? constructRequiredWidgetType(tree.cupertinoTheme.child) : missing('child')));
-    case messages.FlutterStatelessWidgetType_Constructor.flutterBanner:
-      return $flutterSrcWidgetsBanner.Banner(
-          key: (tree.flutterBanner.hasKey() ? constructFlutterKeyType(tree.flutterBanner.key) : null),
-          child: (tree.flutterBanner.hasChild() ? constructWidgetType(tree.flutterBanner.child) : null),
-          message: (tree.flutterBanner.hasMessage() ? tree.flutterBanner.message : missing('message')),
-          textDirection: (tree.flutterBanner.hasTextDirection() ? enums.convertDartTextDirectionType(tree.flutterBanner.textDirection) : null),
-          location: (tree.flutterBanner.hasLocation() ? enums.convertRequiredFlutterBannerLocationType(tree.flutterBanner.location) : missing('location')),
-          layoutDirection: (tree.flutterBanner.hasLayoutDirection() ? enums.convertDartTextDirectionType(tree.flutterBanner.layoutDirection) : null),
-          color: (tree.flutterBanner.hasColor() ? constructRequiredDartColorType(tree.flutterBanner.color) : $dartUi.Color(0xA0B71C1C)),
-          textStyle: (tree.flutterBanner.hasTextStyle() ? constructRequiredFlutterTextStyleType(tree.flutterBanner.textStyle) : $flutterSrcPaintingTextStyle.TextStyle(color: $dartUi.Color(0xFFFFFFFF), fontSize: 12.0 * 0.85, fontWeight: $dartUi.FontWeight.w900, height: 1.0)));
     case messages.FlutterStatelessWidgetType_Constructor.flutterCheckedModeBanner:
       return $flutterSrcWidgetsBanner.CheckedModeBanner(
           key: (tree.flutterCheckedModeBanner.hasKey() ? constructFlutterKeyType(tree.flutterCheckedModeBanner.key) : null),
@@ -17140,7 +17275,8 @@ $flutterSrcWidgetsFramework.StatelessWidget? constructFlutterStatelessWidgetType
           color: (tree.flutterIcon.hasColor() ? constructDartColorType(tree.flutterIcon.color) : null),
           shadows: tree.flutterIcon.shadows.map((e) => constructRequiredDartShadowType(e)).toList(),
           semanticLabel: (tree.flutterIcon.hasSemanticLabel() ? tree.flutterIcon.semanticLabel : null),
-          textDirection: (tree.flutterIcon.hasTextDirection() ? enums.convertDartTextDirectionType(tree.flutterIcon.textDirection) : null));
+          textDirection: (tree.flutterIcon.hasTextDirection() ? enums.convertDartTextDirectionType(tree.flutterIcon.textDirection) : null),
+          applyTextScaling: (tree.flutterIcon.hasApplyTextScaling() ? tree.flutterIcon.applyTextScaling : null));
     case messages.FlutterStatelessWidgetType_Constructor.flutterImageIcon:
       return $flutterSrcWidgetsImageIcon.ImageIcon(
           null,
@@ -17666,6 +17802,32 @@ $flutterSrcWidgetsFramework.StatelessWidget? constructFlutterStatelessWidgetType
           clipBehavior: (tree.materialCard.hasClipBehavior() ? enums.convertDartClipType(tree.materialCard.clipBehavior) : null),
           child: (tree.materialCard.hasChild() ? constructWidgetType(tree.materialCard.child) : null),
           semanticContainer: (tree.materialCard.hasSemanticContainer() ? tree.materialCard.semanticContainer : true));
+    case messages.FlutterStatelessWidgetType_Constructor.materialCardNamedFilled:
+      return $flutterSrcMaterialCard.Card.filled(
+          key: (tree.materialCardNamedFilled.hasKey() ? constructFlutterKeyType(tree.materialCardNamedFilled.key) : null),
+          color: (tree.materialCardNamedFilled.hasColor() ? constructDartColorType(tree.materialCardNamedFilled.color) : null),
+          shadowColor: (tree.materialCardNamedFilled.hasShadowColor() ? constructDartColorType(tree.materialCardNamedFilled.shadowColor) : null),
+          surfaceTintColor: (tree.materialCardNamedFilled.hasSurfaceTintColor() ? constructDartColorType(tree.materialCardNamedFilled.surfaceTintColor) : null),
+          elevation: (tree.materialCardNamedFilled.hasElevation() ? tree.materialCardNamedFilled.elevation : null),
+          shape: (tree.materialCardNamedFilled.hasShape() ? constructFlutterShapeBorderType(tree.materialCardNamedFilled.shape) : null),
+          borderOnForeground: (tree.materialCardNamedFilled.hasBorderOnForeground() ? tree.materialCardNamedFilled.borderOnForeground : true),
+          margin: (tree.materialCardNamedFilled.hasMargin() ? constructFlutterEdgeInsetsGeometryType(tree.materialCardNamedFilled.margin) : null),
+          clipBehavior: (tree.materialCardNamedFilled.hasClipBehavior() ? enums.convertDartClipType(tree.materialCardNamedFilled.clipBehavior) : null),
+          child: (tree.materialCardNamedFilled.hasChild() ? constructWidgetType(tree.materialCardNamedFilled.child) : null),
+          semanticContainer: (tree.materialCardNamedFilled.hasSemanticContainer() ? tree.materialCardNamedFilled.semanticContainer : true));
+    case messages.FlutterStatelessWidgetType_Constructor.materialCardNamedOutlined:
+      return $flutterSrcMaterialCard.Card.outlined(
+          key: (tree.materialCardNamedOutlined.hasKey() ? constructFlutterKeyType(tree.materialCardNamedOutlined.key) : null),
+          color: (tree.materialCardNamedOutlined.hasColor() ? constructDartColorType(tree.materialCardNamedOutlined.color) : null),
+          shadowColor: (tree.materialCardNamedOutlined.hasShadowColor() ? constructDartColorType(tree.materialCardNamedOutlined.shadowColor) : null),
+          surfaceTintColor: (tree.materialCardNamedOutlined.hasSurfaceTintColor() ? constructDartColorType(tree.materialCardNamedOutlined.surfaceTintColor) : null),
+          elevation: (tree.materialCardNamedOutlined.hasElevation() ? tree.materialCardNamedOutlined.elevation : null),
+          shape: (tree.materialCardNamedOutlined.hasShape() ? constructFlutterShapeBorderType(tree.materialCardNamedOutlined.shape) : null),
+          borderOnForeground: (tree.materialCardNamedOutlined.hasBorderOnForeground() ? tree.materialCardNamedOutlined.borderOnForeground : true),
+          margin: (tree.materialCardNamedOutlined.hasMargin() ? constructFlutterEdgeInsetsGeometryType(tree.materialCardNamedOutlined.margin) : null),
+          clipBehavior: (tree.materialCardNamedOutlined.hasClipBehavior() ? enums.convertDartClipType(tree.materialCardNamedOutlined.clipBehavior) : null),
+          child: (tree.materialCardNamedOutlined.hasChild() ? constructWidgetType(tree.materialCardNamedOutlined.child) : null),
+          semanticContainer: (tree.materialCardNamedOutlined.hasSemanticContainer() ? tree.materialCardNamedOutlined.semanticContainer : true));
     case messages.FlutterStatelessWidgetType_Constructor.materialCheckboxListTile:
       return $flutterSrcMaterialCheckboxListTile.CheckboxListTile(
           key: (tree.materialCheckboxListTile.hasKey() ? constructFlutterKeyType(tree.materialCheckboxListTile.key) : null),
@@ -17984,6 +18146,10 @@ $flutterSrcWidgetsFramework.StatelessWidget? constructFlutterStatelessWidgetType
           labelPadding: (tree.materialFilterChip.hasLabelPadding() ? constructFlutterEdgeInsetsGeometryType(tree.materialFilterChip.labelPadding) : null),
           selected: (tree.materialFilterChip.hasSelected() ? tree.materialFilterChip.selected : false),
           onSelected: null,
+          deleteIcon: (tree.materialFilterChip.hasDeleteIcon() ? constructWidgetType(tree.materialFilterChip.deleteIcon) : null),
+          onDeleted: null,
+          deleteIconColor: (tree.materialFilterChip.hasDeleteIconColor() ? constructDartColorType(tree.materialFilterChip.deleteIconColor) : null),
+          deleteButtonTooltipMessage: (tree.materialFilterChip.hasDeleteButtonTooltipMessage() ? tree.materialFilterChip.deleteButtonTooltipMessage : null),
           pressElevation: (tree.materialFilterChip.hasPressElevation() ? tree.materialFilterChip.pressElevation : null),
           disabledColor: (tree.materialFilterChip.hasDisabledColor() ? constructDartColorType(tree.materialFilterChip.disabledColor) : null),
           selectedColor: (tree.materialFilterChip.hasSelectedColor() ? constructDartColorType(tree.materialFilterChip.selectedColor) : null),
@@ -18015,6 +18181,10 @@ $flutterSrcWidgetsFramework.StatelessWidget? constructFlutterStatelessWidgetType
           labelPadding: (tree.materialFilterChipNamedElevated.hasLabelPadding() ? constructFlutterEdgeInsetsGeometryType(tree.materialFilterChipNamedElevated.labelPadding) : null),
           selected: (tree.materialFilterChipNamedElevated.hasSelected() ? tree.materialFilterChipNamedElevated.selected : false),
           onSelected: null,
+          deleteIcon: (tree.materialFilterChipNamedElevated.hasDeleteIcon() ? constructWidgetType(tree.materialFilterChipNamedElevated.deleteIcon) : null),
+          onDeleted: null,
+          deleteIconColor: (tree.materialFilterChipNamedElevated.hasDeleteIconColor() ? constructDartColorType(tree.materialFilterChipNamedElevated.deleteIconColor) : null),
+          deleteButtonTooltipMessage: (tree.materialFilterChipNamedElevated.hasDeleteButtonTooltipMessage() ? tree.materialFilterChipNamedElevated.deleteButtonTooltipMessage : null),
           pressElevation: (tree.materialFilterChipNamedElevated.hasPressElevation() ? tree.materialFilterChipNamedElevated.pressElevation : null),
           disabledColor: (tree.materialFilterChipNamedElevated.hasDisabledColor() ? constructDartColorType(tree.materialFilterChipNamedElevated.disabledColor) : null),
           selectedColor: (tree.materialFilterChipNamedElevated.hasSelectedColor() ? constructDartColorType(tree.materialFilterChipNamedElevated.selectedColor) : null),
@@ -18469,7 +18639,8 @@ $flutterSrcWidgetsFramework.StatelessWidget? constructFlutterStatelessWidgetType
           indicatorColor: (tree.materialNavigationBar.hasIndicatorColor() ? constructDartColorType(tree.materialNavigationBar.indicatorColor) : null),
           indicatorShape: (tree.materialNavigationBar.hasIndicatorShape() ? constructFlutterShapeBorderType(tree.materialNavigationBar.indicatorShape) : null),
           height: (tree.materialNavigationBar.hasHeight() ? tree.materialNavigationBar.height : null),
-          labelBehavior: (tree.materialNavigationBar.hasLabelBehavior() ? enums.convertMaterialNavigationDestinationLabelBehaviorType(tree.materialNavigationBar.labelBehavior) : null));
+          labelBehavior: (tree.materialNavigationBar.hasLabelBehavior() ? enums.convertMaterialNavigationDestinationLabelBehaviorType(tree.materialNavigationBar.labelBehavior) : null),
+          overlayColor: null);
     case messages.FlutterStatelessWidgetType_Constructor.materialNavigationDestination:
       return $flutterSrcMaterialNavigationBar.NavigationDestination(
           key: (tree.materialNavigationDestination.hasKey() ? constructFlutterKeyType(tree.materialNavigationDestination.key) : null),
@@ -20538,7 +20709,8 @@ $flutterSrcMaterialExpansionTileTheme.ExpansionTileThemeData? constructMaterialE
           collapsedTextColor: (tree.materialExpansionTileThemeData.hasCollapsedTextColor() ? constructDartColorType(tree.materialExpansionTileThemeData.collapsedTextColor) : null),
           shape: (tree.materialExpansionTileThemeData.hasShape() ? constructFlutterShapeBorderType(tree.materialExpansionTileThemeData.shape) : null),
           collapsedShape: (tree.materialExpansionTileThemeData.hasCollapsedShape() ? constructFlutterShapeBorderType(tree.materialExpansionTileThemeData.collapsedShape) : null),
-          clipBehavior: (tree.materialExpansionTileThemeData.hasClipBehavior() ? enums.convertDartClipType(tree.materialExpansionTileThemeData.clipBehavior) : null));
+          clipBehavior: (tree.materialExpansionTileThemeData.hasClipBehavior() ? enums.convertDartClipType(tree.materialExpansionTileThemeData.clipBehavior) : null),
+          expansionAnimationStyle: (tree.materialExpansionTileThemeData.hasExpansionAnimationStyle() ? constructFlutterSrcAnimationAnimationStyleType(tree.materialExpansionTileThemeData.expansionAnimationStyle) : null));
     default:
       return null;
   }
@@ -21082,7 +21254,8 @@ $flutterSrcMaterialNavigationBarTheme.NavigationBarThemeData? constructMaterialN
           indicatorShape: (tree.materialNavigationBarThemeData.hasIndicatorShape() ? constructFlutterShapeBorderType(tree.materialNavigationBarThemeData.indicatorShape) : null),
           labelTextStyle: null,
           iconTheme: null,
-          labelBehavior: (tree.materialNavigationBarThemeData.hasLabelBehavior() ? enums.convertMaterialNavigationDestinationLabelBehaviorType(tree.materialNavigationBarThemeData.labelBehavior) : null));
+          labelBehavior: (tree.materialNavigationBarThemeData.hasLabelBehavior() ? enums.convertMaterialNavigationDestinationLabelBehaviorType(tree.materialNavigationBarThemeData.labelBehavior) : null),
+          overlayColor: null);
     default:
       return null;
   }
@@ -21661,6 +21834,7 @@ $flutterSrcMaterialSliderTheme.SliderThemeData? constructMaterialSliderThemeData
           disabledThumbColor: (tree.materialSliderThemeData.hasDisabledThumbColor() ? constructDartColorType(tree.materialSliderThemeData.disabledThumbColor) : null),
           overlayColor: (tree.materialSliderThemeData.hasOverlayColor() ? constructDartColorType(tree.materialSliderThemeData.overlayColor) : null),
           valueIndicatorColor: (tree.materialSliderThemeData.hasValueIndicatorColor() ? constructDartColorType(tree.materialSliderThemeData.valueIndicatorColor) : null),
+          valueIndicatorStrokeColor: (tree.materialSliderThemeData.hasValueIndicatorStrokeColor() ? constructDartColorType(tree.materialSliderThemeData.valueIndicatorStrokeColor) : null),
           overlayShape: (tree.materialSliderThemeData.hasOverlayShape() ? constructMaterialSliderComponentShapeType(tree.materialSliderThemeData.overlayShape) : null),
           tickMarkShape: (tree.materialSliderThemeData.hasTickMarkShape() ? constructMaterialSliderTickMarkShapeType(tree.materialSliderThemeData.tickMarkShape) : null),
           thumbShape: (tree.materialSliderThemeData.hasThumbShape() ? constructMaterialSliderComponentShapeType(tree.materialSliderThemeData.thumbShape) : null),
@@ -21766,7 +21940,8 @@ $flutterSrcMaterialSnackBarTheme.SnackBarThemeData? constructMaterialSnackBarThe
           closeIconColor: (tree.materialSnackBarThemeData.hasCloseIconColor() ? constructDartColorType(tree.materialSnackBarThemeData.closeIconColor) : null),
           actionOverflowThreshold: (tree.materialSnackBarThemeData.hasActionOverflowThreshold() ? tree.materialSnackBarThemeData.actionOverflowThreshold : null),
           actionBackgroundColor: (tree.materialSnackBarThemeData.hasActionBackgroundColor() ? constructDartColorType(tree.materialSnackBarThemeData.actionBackgroundColor) : null),
-          disabledActionBackgroundColor: (tree.materialSnackBarThemeData.hasDisabledActionBackgroundColor() ? constructDartColorType(tree.materialSnackBarThemeData.disabledActionBackgroundColor) : null));
+          disabledActionBackgroundColor: (tree.materialSnackBarThemeData.hasDisabledActionBackgroundColor() ? constructDartColorType(tree.materialSnackBarThemeData.disabledActionBackgroundColor) : null),
+          dismissDirection: (tree.materialSnackBarThemeData.hasDismissDirection() ? enums.convertFlutterDismissDirectionType(tree.materialSnackBarThemeData.dismissDirection) : null));
     default:
       return null;
   }
@@ -21995,6 +22170,7 @@ $flutterSrcMaterialThemeData.ThemeData? constructMaterialThemeDataType(messages.
   switch (tree.whichConstructor()) {
     case messages.MaterialThemeDataType_Constructor.materialThemeData:
       return $flutterSrcMaterialThemeData.ThemeData(
+          adaptations: null,
           applyElevationOverlayColor: (tree.materialThemeData.hasApplyElevationOverlayColor() ? tree.materialThemeData.applyElevationOverlayColor : null),
           cupertinoOverrideTheme: (tree.materialThemeData.hasCupertinoOverrideTheme() ? constructNoDefaultCupertinoThemeDataType(tree.materialThemeData.cupertinoOverrideTheme) : null),
           extensions: null,
@@ -22240,6 +22416,7 @@ $flutterSrcMaterialTooltipTheme.TooltipThemeData? constructMaterialTooltipThemeD
           textAlign: (tree.materialTooltipThemeData.hasTextAlign() ? enums.convertDartTextAlignType(tree.materialTooltipThemeData.textAlign) : null),
           waitDuration: (tree.materialTooltipThemeData.hasWaitDuration() ? constructDartDurationType(tree.materialTooltipThemeData.waitDuration) : null),
           showDuration: (tree.materialTooltipThemeData.hasShowDuration() ? constructDartDurationType(tree.materialTooltipThemeData.showDuration) : null),
+          exitDuration: (tree.materialTooltipThemeData.hasExitDuration() ? constructDartDurationType(tree.materialTooltipThemeData.exitDuration) : null),
           triggerMode: (tree.materialTooltipThemeData.hasTriggerMode() ? enums.convertMaterialTooltipTriggerModeType(tree.materialTooltipThemeData.triggerMode) : null),
           enableFeedback: (tree.materialTooltipThemeData.hasEnableFeedback() ? tree.materialTooltipThemeData.enableFeedback : null));
     default:
@@ -23243,6 +23420,7 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           suffix: (tree.cupertinoTextField.hasSuffix() ? constructWidgetType(tree.cupertinoTextField.suffix) : null),
           suffixMode: (tree.cupertinoTextField.hasSuffixMode() ? enums.convertRequiredOverlayVisibilityModeType(tree.cupertinoTextField.suffixMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.always),
           clearButtonMode: (tree.cupertinoTextField.hasClearButtonMode() ? enums.convertRequiredOverlayVisibilityModeType(tree.cupertinoTextField.clearButtonMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.never),
+          clearButtonSemanticLabel: (tree.cupertinoTextField.hasClearButtonSemanticLabel() ? tree.cupertinoTextField.clearButtonSemanticLabel : null),
           keyboardType: (tree.cupertinoTextField.hasKeyboardType() ? constructFlutterTextInputTypeType(tree.cupertinoTextField.keyboardType) : null),
           textInputAction: (tree.cupertinoTextField.hasTextInputAction() ? enums.convertFlutterTextInputActionType(tree.cupertinoTextField.textInputAction) : null),
           textCapitalization: (tree.cupertinoTextField.hasTextCapitalization() ? enums.convertRequiredFlutterTextCapitalizationType(tree.cupertinoTextField.textCapitalization) : $flutterSrcServicesTextInput.TextCapitalization.none),
@@ -23310,6 +23488,7 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           suffix: (tree.cupertinoTextFieldNamedBorderless.hasSuffix() ? constructWidgetType(tree.cupertinoTextFieldNamedBorderless.suffix) : null),
           suffixMode: (tree.cupertinoTextFieldNamedBorderless.hasSuffixMode() ? enums.convertRequiredOverlayVisibilityModeType(tree.cupertinoTextFieldNamedBorderless.suffixMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.always),
           clearButtonMode: (tree.cupertinoTextFieldNamedBorderless.hasClearButtonMode() ? enums.convertRequiredOverlayVisibilityModeType(tree.cupertinoTextFieldNamedBorderless.clearButtonMode) : $flutterSrcCupertinoTextField.OverlayVisibilityMode.never),
+          clearButtonSemanticLabel: (tree.cupertinoTextFieldNamedBorderless.hasClearButtonSemanticLabel() ? tree.cupertinoTextFieldNamedBorderless.clearButtonSemanticLabel : null),
           keyboardType: (tree.cupertinoTextFieldNamedBorderless.hasKeyboardType() ? constructFlutterTextInputTypeType(tree.cupertinoTextFieldNamedBorderless.keyboardType) : null),
           textInputAction: (tree.cupertinoTextFieldNamedBorderless.hasTextInputAction() ? enums.convertFlutterTextInputActionType(tree.cupertinoTextFieldNamedBorderless.textInputAction) : null),
           textCapitalization: (tree.cupertinoTextFieldNamedBorderless.hasTextCapitalization() ? enums.convertRequiredFlutterTextCapitalizationType(tree.cupertinoTextFieldNamedBorderless.textCapitalization) : $flutterSrcServicesTextInput.TextCapitalization.none),
@@ -23625,7 +23804,8 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           curve: (tree.flutterAnimatedSize.hasCurve() ? constructRequiredFlutterSrcAnimationCurveType(tree.flutterAnimatedSize.curve) : $flutterSrcAnimationCurves.Curves.linear),
           duration: (tree.flutterAnimatedSize.hasDuration() ? constructRequiredDartDurationType(tree.flutterAnimatedSize.duration) : missing('duration')),
           reverseDuration: (tree.flutterAnimatedSize.hasReverseDuration() ? constructDartDurationType(tree.flutterAnimatedSize.reverseDuration) : null),
-          clipBehavior: (tree.flutterAnimatedSize.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.flutterAnimatedSize.clipBehavior) : $dartUi.Clip.hardEdge));
+          clipBehavior: (tree.flutterAnimatedSize.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.flutterAnimatedSize.clipBehavior) : $dartUi.Clip.hardEdge),
+          onEnd: null);
     case messages.WidgetType_Constructor.flutterAnimatedSlide:
       return $flutterSrcWidgetsImplicitAnimations.AnimatedSlide(
           key: (tree.flutterAnimatedSlide.hasKey() ? constructFlutterKeyType(tree.flutterAnimatedSlide.key) : null),
@@ -24034,6 +24214,10 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           width: (tree.flutterFadeInImageNamedAssetNetwork.hasWidth() ? tree.flutterFadeInImageNamedAssetNetwork.width : null),
           height: (tree.flutterFadeInImageNamedAssetNetwork.hasHeight() ? tree.flutterFadeInImageNamedAssetNetwork.height : null),
           fit: (tree.flutterFadeInImageNamedAssetNetwork.hasFit() ? enums.convertFlutterBoxFitType(tree.flutterFadeInImageNamedAssetNetwork.fit) : null),
+          color: (tree.flutterFadeInImageNamedAssetNetwork.hasColor() ? constructDartColorType(tree.flutterFadeInImageNamedAssetNetwork.color) : null),
+          colorBlendMode: (tree.flutterFadeInImageNamedAssetNetwork.hasColorBlendMode() ? enums.convertDartBlendModeType(tree.flutterFadeInImageNamedAssetNetwork.colorBlendMode) : null),
+          placeholderColor: (tree.flutterFadeInImageNamedAssetNetwork.hasPlaceholderColor() ? constructDartColorType(tree.flutterFadeInImageNamedAssetNetwork.placeholderColor) : null),
+          placeholderColorBlendMode: (tree.flutterFadeInImageNamedAssetNetwork.hasPlaceholderColorBlendMode() ? enums.convertDartBlendModeType(tree.flutterFadeInImageNamedAssetNetwork.placeholderColorBlendMode) : null),
           placeholderFit: (tree.flutterFadeInImageNamedAssetNetwork.hasPlaceholderFit() ? enums.convertFlutterBoxFitType(tree.flutterFadeInImageNamedAssetNetwork.placeholderFit) : null),
           filterQuality: (tree.flutterFadeInImageNamedAssetNetwork.hasFilterQuality() ? enums.convertRequiredDartFilterQualityType(tree.flutterFadeInImageNamedAssetNetwork.filterQuality) : $dartUi.FilterQuality.low),
           placeholderFilterQuality: (tree.flutterFadeInImageNamedAssetNetwork.hasPlaceholderFilterQuality() ? enums.convertDartFilterQualityType(tree.flutterFadeInImageNamedAssetNetwork.placeholderFilterQuality) : null),
@@ -24062,6 +24246,10 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           width: (tree.flutterFadeInImageNamedMemoryNetwork.hasWidth() ? tree.flutterFadeInImageNamedMemoryNetwork.width : null),
           height: (tree.flutterFadeInImageNamedMemoryNetwork.hasHeight() ? tree.flutterFadeInImageNamedMemoryNetwork.height : null),
           fit: (tree.flutterFadeInImageNamedMemoryNetwork.hasFit() ? enums.convertFlutterBoxFitType(tree.flutterFadeInImageNamedMemoryNetwork.fit) : null),
+          color: (tree.flutterFadeInImageNamedMemoryNetwork.hasColor() ? constructDartColorType(tree.flutterFadeInImageNamedMemoryNetwork.color) : null),
+          colorBlendMode: (tree.flutterFadeInImageNamedMemoryNetwork.hasColorBlendMode() ? enums.convertDartBlendModeType(tree.flutterFadeInImageNamedMemoryNetwork.colorBlendMode) : null),
+          placeholderColor: (tree.flutterFadeInImageNamedMemoryNetwork.hasPlaceholderColor() ? constructDartColorType(tree.flutterFadeInImageNamedMemoryNetwork.placeholderColor) : null),
+          placeholderColorBlendMode: (tree.flutterFadeInImageNamedMemoryNetwork.hasPlaceholderColorBlendMode() ? enums.convertDartBlendModeType(tree.flutterFadeInImageNamedMemoryNetwork.placeholderColorBlendMode) : null),
           placeholderFit: (tree.flutterFadeInImageNamedMemoryNetwork.hasPlaceholderFit() ? enums.convertFlutterBoxFitType(tree.flutterFadeInImageNamedMemoryNetwork.placeholderFit) : null),
           filterQuality: (tree.flutterFadeInImageNamedMemoryNetwork.hasFilterQuality() ? enums.convertRequiredDartFilterQualityType(tree.flutterFadeInImageNamedMemoryNetwork.filterQuality) : $dartUi.FilterQuality.low),
           placeholderFilterQuality: (tree.flutterFadeInImageNamedMemoryNetwork.hasPlaceholderFilterQuality() ? enums.convertDartFilterQualityType(tree.flutterFadeInImageNamedMemoryNetwork.placeholderFilterQuality) : null),
@@ -24118,7 +24306,6 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           autofocus: (tree.flutterFocus.hasAutofocus() ? tree.flutterFocus.autofocus : false),
           onFocusChange: null,
           onKeyEvent: null,
-          onKey: null,
           canRequestFocus: (tree.flutterFocus.hasCanRequestFocus() ? tree.flutterFocus.canRequestFocus : null),
           skipTraversal: (tree.flutterFocus.hasSkipTraversal() ? tree.flutterFocus.skipTraversal : null),
           descendantsAreFocusable: (tree.flutterFocus.hasDescendantsAreFocusable() ? tree.flutterFocus.descendantsAreFocusable : null),
@@ -24411,7 +24598,8 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           color: (tree.flutterIcon.hasColor() ? constructDartColorType(tree.flutterIcon.color) : null),
           shadows: tree.flutterIcon.shadows.map((e) => constructRequiredDartShadowType(e)).toList(),
           semanticLabel: (tree.flutterIcon.hasSemanticLabel() ? tree.flutterIcon.semanticLabel : null),
-          textDirection: (tree.flutterIcon.hasTextDirection() ? enums.convertDartTextDirectionType(tree.flutterIcon.textDirection) : null));
+          textDirection: (tree.flutterIcon.hasTextDirection() ? enums.convertDartTextDirectionType(tree.flutterIcon.textDirection) : null),
+          applyTextScaling: (tree.flutterIcon.hasApplyTextScaling() ? tree.flutterIcon.applyTextScaling : null));
     case messages.WidgetType_Constructor.flutterIconTheme:
       return $flutterSrcWidgetsIconTheme.IconTheme(
           key: (tree.flutterIconTheme.hasKey() ? constructFlutterKeyType(tree.flutterIconTheme.key) : null),
@@ -24889,6 +25077,7 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           maxWidth: (tree.flutterOverflowBox.hasMaxWidth() ? tree.flutterOverflowBox.maxWidth : null),
           minHeight: (tree.flutterOverflowBox.hasMinHeight() ? tree.flutterOverflowBox.minHeight : null),
           maxHeight: (tree.flutterOverflowBox.hasMaxHeight() ? tree.flutterOverflowBox.maxHeight : null),
+          fit: (tree.flutterOverflowBox.hasFit() ? enums.convertRequiredFlutterOverflowBoxFitType(tree.flutterOverflowBox.fit) : $flutterSrcRenderingShiftedBox.OverflowBoxFit.max),
           child: (tree.flutterOverflowBox.hasChild() ? constructWidgetType(tree.flutterOverflowBox.child) : null));
     case messages.WidgetType_Constructor.flutterOverlay:
       return $flutterSrcWidgetsOverlay.Overlay(
@@ -25079,14 +25268,6 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           invertColors: (tree.flutterRawImage.hasInvertColors() ? tree.flutterRawImage.invertColors : false),
           filterQuality: (tree.flutterRawImage.hasFilterQuality() ? enums.convertRequiredDartFilterQualityType(tree.flutterRawImage.filterQuality) : $dartUi.FilterQuality.low),
           isAntiAlias: (tree.flutterRawImage.hasIsAntiAlias() ? tree.flutterRawImage.isAntiAlias : false));
-    case messages.WidgetType_Constructor.flutterRawKeyboardListener:
-      return $flutterSrcWidgetsRawKeyboardListener.RawKeyboardListener(
-          key: (tree.flutterRawKeyboardListener.hasKey() ? constructFlutterKeyType(tree.flutterRawKeyboardListener.key) : null),
-          focusNode: (tree.flutterRawKeyboardListener.hasFocusNode() ? constructRequiredFlutterFocusNodeType(tree.flutterRawKeyboardListener.focusNode) : missing('focusNode')),
-          autofocus: (tree.flutterRawKeyboardListener.hasAutofocus() ? tree.flutterRawKeyboardListener.autofocus : false),
-          includeSemantics: (tree.flutterRawKeyboardListener.hasIncludeSemantics() ? tree.flutterRawKeyboardListener.includeSemantics : true),
-          onKey: null,
-          child: (tree.flutterRawKeyboardListener.hasChild() ? constructRequiredWidgetType(tree.flutterRawKeyboardListener.child) : missing('child')));
     case messages.WidgetType_Constructor.flutterRawMagnifier:
       return $flutterSrcWidgetsMagnifier.RawMagnifier(
           key: (tree.flutterRawMagnifier.hasKey() ? constructFlutterKeyType(tree.flutterRawMagnifier.key) : null),
@@ -25261,6 +25442,7 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           expanded: (tree.flutterSemantics.hasExpanded() ? tree.flutterSemantics.expanded : null),
           maxValueLength: (tree.flutterSemantics.hasMaxValueLength() ? tree.flutterSemantics.maxValueLength : null),
           currentValueLength: (tree.flutterSemantics.hasCurrentValueLength() ? tree.flutterSemantics.currentValueLength : null),
+          identifier: (tree.flutterSemantics.hasIdentifier() ? tree.flutterSemantics.identifier : null),
           label: (tree.flutterSemantics.hasLabel() ? tree.flutterSemantics.label : null),
           attributedLabel: (tree.flutterSemantics.hasAttributedLabel() ? constructFlutterSrcSemanticsAttributedStringType(tree.flutterSemantics.attributedLabel) : null),
           value: (tree.flutterSemantics.hasValue() ? tree.flutterSemantics.value : null),
@@ -25593,6 +25775,7 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           onTapOutside: null,
           onTapInside: null,
           groupId: null,
+          consumeOutsideTaps: (tree.flutterTapRegion.hasConsumeOutsideTaps() ? tree.flutterTapRegion.consumeOutsideTaps : false),
           debugLabel: (tree.flutterTapRegion.hasDebugLabel() ? tree.flutterTapRegion.debugLabel : null));
     case messages.WidgetType_Constructor.flutterTapRegionSurface:
       return $flutterSrcWidgetsTapRegion.TapRegionSurface(
@@ -25622,6 +25805,7 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           enabled: (tree.flutterTextFieldTapRegion.hasEnabled() ? tree.flutterTextFieldTapRegion.enabled : true),
           onTapOutside: null,
           onTapInside: null,
+          consumeOutsideTaps: (tree.flutterTextFieldTapRegion.hasConsumeOutsideTaps() ? tree.flutterTextFieldTapRegion.consumeOutsideTaps : false),
           debugLabel: (tree.flutterTextFieldTapRegion.hasDebugLabel() ? tree.flutterTextFieldTapRegion.debugLabel : null));
     case messages.WidgetType_Constructor.flutterTextNamedRich:
       return $flutterSrcWidgetsText.Text.rich(
@@ -25652,6 +25836,7 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           onSecondaryTapDown: null,
           onSingleTapUp: null,
           onSingleTapCancel: null,
+          onUserTap: null,
           onSingleLongTapStart: null,
           onSingleLongTapMoveUpdate: null,
           onSingleLongTapEnd: null,
@@ -25660,6 +25845,7 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           onDragSelectionStart: null,
           onDragSelectionUpdate: null,
           onDragSelectionEnd: null,
+          onUserTapAlwaysCalled: (tree.flutterTextSelectionGestureDetector.hasOnUserTapAlwaysCalled() ? tree.flutterTextSelectionGestureDetector.onUserTapAlwaysCalled : false),
           behavior: (tree.flutterTextSelectionGestureDetector.hasBehavior() ? enums.convertFlutterHitTestBehaviorType(tree.flutterTextSelectionGestureDetector.behavior) : null),
           child: (tree.flutterTextSelectionGestureDetector.hasChild() ? constructRequiredWidgetType(tree.flutterTextSelectionGestureDetector.child) : missing('child')));
     case messages.WidgetType_Constructor.flutterTexture:
@@ -26219,6 +26405,32 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           clipBehavior: (tree.materialCard.hasClipBehavior() ? enums.convertDartClipType(tree.materialCard.clipBehavior) : null),
           child: (tree.materialCard.hasChild() ? constructWidgetType(tree.materialCard.child) : null),
           semanticContainer: (tree.materialCard.hasSemanticContainer() ? tree.materialCard.semanticContainer : true));
+    case messages.WidgetType_Constructor.materialCardNamedFilled:
+      return $flutterSrcMaterialCard.Card.filled(
+          key: (tree.materialCardNamedFilled.hasKey() ? constructFlutterKeyType(tree.materialCardNamedFilled.key) : null),
+          color: (tree.materialCardNamedFilled.hasColor() ? constructDartColorType(tree.materialCardNamedFilled.color) : null),
+          shadowColor: (tree.materialCardNamedFilled.hasShadowColor() ? constructDartColorType(tree.materialCardNamedFilled.shadowColor) : null),
+          surfaceTintColor: (tree.materialCardNamedFilled.hasSurfaceTintColor() ? constructDartColorType(tree.materialCardNamedFilled.surfaceTintColor) : null),
+          elevation: (tree.materialCardNamedFilled.hasElevation() ? tree.materialCardNamedFilled.elevation : null),
+          shape: (tree.materialCardNamedFilled.hasShape() ? constructFlutterShapeBorderType(tree.materialCardNamedFilled.shape) : null),
+          borderOnForeground: (tree.materialCardNamedFilled.hasBorderOnForeground() ? tree.materialCardNamedFilled.borderOnForeground : true),
+          margin: (tree.materialCardNamedFilled.hasMargin() ? constructFlutterEdgeInsetsGeometryType(tree.materialCardNamedFilled.margin) : null),
+          clipBehavior: (tree.materialCardNamedFilled.hasClipBehavior() ? enums.convertDartClipType(tree.materialCardNamedFilled.clipBehavior) : null),
+          child: (tree.materialCardNamedFilled.hasChild() ? constructWidgetType(tree.materialCardNamedFilled.child) : null),
+          semanticContainer: (tree.materialCardNamedFilled.hasSemanticContainer() ? tree.materialCardNamedFilled.semanticContainer : true));
+    case messages.WidgetType_Constructor.materialCardNamedOutlined:
+      return $flutterSrcMaterialCard.Card.outlined(
+          key: (tree.materialCardNamedOutlined.hasKey() ? constructFlutterKeyType(tree.materialCardNamedOutlined.key) : null),
+          color: (tree.materialCardNamedOutlined.hasColor() ? constructDartColorType(tree.materialCardNamedOutlined.color) : null),
+          shadowColor: (tree.materialCardNamedOutlined.hasShadowColor() ? constructDartColorType(tree.materialCardNamedOutlined.shadowColor) : null),
+          surfaceTintColor: (tree.materialCardNamedOutlined.hasSurfaceTintColor() ? constructDartColorType(tree.materialCardNamedOutlined.surfaceTintColor) : null),
+          elevation: (tree.materialCardNamedOutlined.hasElevation() ? tree.materialCardNamedOutlined.elevation : null),
+          shape: (tree.materialCardNamedOutlined.hasShape() ? constructFlutterShapeBorderType(tree.materialCardNamedOutlined.shape) : null),
+          borderOnForeground: (tree.materialCardNamedOutlined.hasBorderOnForeground() ? tree.materialCardNamedOutlined.borderOnForeground : true),
+          margin: (tree.materialCardNamedOutlined.hasMargin() ? constructFlutterEdgeInsetsGeometryType(tree.materialCardNamedOutlined.margin) : null),
+          clipBehavior: (tree.materialCardNamedOutlined.hasClipBehavior() ? enums.convertDartClipType(tree.materialCardNamedOutlined.clipBehavior) : null),
+          child: (tree.materialCardNamedOutlined.hasChild() ? constructWidgetType(tree.materialCardNamedOutlined.child) : null),
+          semanticContainer: (tree.materialCardNamedOutlined.hasSemanticContainer() ? tree.materialCardNamedOutlined.semanticContainer : true));
     case messages.WidgetType_Constructor.materialCheckbox:
       return $flutterSrcMaterialCheckbox.Checkbox(
           key: (tree.materialCheckbox.hasKey() ? constructFlutterKeyType(tree.materialCheckbox.key) : null),
@@ -26855,7 +27067,12 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           collapsedShape: (tree.materialExpansionTile.hasCollapsedShape() ? constructFlutterShapeBorderType(tree.materialExpansionTile.collapsedShape) : null),
           clipBehavior: (tree.materialExpansionTile.hasClipBehavior() ? enums.convertDartClipType(tree.materialExpansionTile.clipBehavior) : null),
           controlAffinity: (tree.materialExpansionTile.hasControlAffinity() ? enums.convertMaterialListTileControlAffinityType(tree.materialExpansionTile.controlAffinity) : null),
-          controller: (tree.materialExpansionTile.hasController() ? constructMaterialExpansionTileControllerType(tree.materialExpansionTile.controller) : null));
+          controller: (tree.materialExpansionTile.hasController() ? constructMaterialExpansionTileControllerType(tree.materialExpansionTile.controller) : null),
+          dense: (tree.materialExpansionTile.hasDense() ? tree.materialExpansionTile.dense : null),
+          visualDensity: (tree.materialExpansionTile.hasVisualDensity() ? constructMaterialVisualDensityType(tree.materialExpansionTile.visualDensity) : null),
+          enableFeedback: (tree.materialExpansionTile.hasEnableFeedback() ? tree.materialExpansionTile.enableFeedback : true),
+          enabled: (tree.materialExpansionTile.hasEnabled() ? tree.materialExpansionTile.enabled : true),
+          expansionAnimationStyle: (tree.materialExpansionTile.hasExpansionAnimationStyle() ? constructFlutterSrcAnimationAnimationStyleType(tree.materialExpansionTile.expansionAnimationStyle) : null));
     case messages.WidgetType_Constructor.materialExpansionTileTheme:
       return $flutterSrcMaterialExpansionTileTheme.ExpansionTileTheme(
           key: (tree.materialExpansionTileTheme.hasKey() ? constructFlutterKeyType(tree.materialExpansionTileTheme.key) : null),
@@ -26929,6 +27146,10 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           labelPadding: (tree.materialFilterChip.hasLabelPadding() ? constructFlutterEdgeInsetsGeometryType(tree.materialFilterChip.labelPadding) : null),
           selected: (tree.materialFilterChip.hasSelected() ? tree.materialFilterChip.selected : false),
           onSelected: null,
+          deleteIcon: (tree.materialFilterChip.hasDeleteIcon() ? constructWidgetType(tree.materialFilterChip.deleteIcon) : null),
+          onDeleted: null,
+          deleteIconColor: (tree.materialFilterChip.hasDeleteIconColor() ? constructDartColorType(tree.materialFilterChip.deleteIconColor) : null),
+          deleteButtonTooltipMessage: (tree.materialFilterChip.hasDeleteButtonTooltipMessage() ? tree.materialFilterChip.deleteButtonTooltipMessage : null),
           pressElevation: (tree.materialFilterChip.hasPressElevation() ? tree.materialFilterChip.pressElevation : null),
           disabledColor: (tree.materialFilterChip.hasDisabledColor() ? constructDartColorType(tree.materialFilterChip.disabledColor) : null),
           selectedColor: (tree.materialFilterChip.hasSelectedColor() ? constructDartColorType(tree.materialFilterChip.selectedColor) : null),
@@ -26960,6 +27181,10 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           labelPadding: (tree.materialFilterChipNamedElevated.hasLabelPadding() ? constructFlutterEdgeInsetsGeometryType(tree.materialFilterChipNamedElevated.labelPadding) : null),
           selected: (tree.materialFilterChipNamedElevated.hasSelected() ? tree.materialFilterChipNamedElevated.selected : false),
           onSelected: null,
+          deleteIcon: (tree.materialFilterChipNamedElevated.hasDeleteIcon() ? constructWidgetType(tree.materialFilterChipNamedElevated.deleteIcon) : null),
+          onDeleted: null,
+          deleteIconColor: (tree.materialFilterChipNamedElevated.hasDeleteIconColor() ? constructDartColorType(tree.materialFilterChipNamedElevated.deleteIconColor) : null),
+          deleteButtonTooltipMessage: (tree.materialFilterChipNamedElevated.hasDeleteButtonTooltipMessage() ? tree.materialFilterChipNamedElevated.deleteButtonTooltipMessage : null),
           pressElevation: (tree.materialFilterChipNamedElevated.hasPressElevation() ? tree.materialFilterChipNamedElevated.pressElevation : null),
           disabledColor: (tree.materialFilterChipNamedElevated.hasDisabledColor() ? constructDartColorType(tree.materialFilterChipNamedElevated.disabledColor) : null),
           selectedColor: (tree.materialFilterChipNamedElevated.hasSelectedColor() ? constructDartColorType(tree.materialFilterChipNamedElevated.selectedColor) : null),
@@ -27363,7 +27588,8 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           fieldLabelText: (tree.materialInputDatePickerFormField.hasFieldLabelText() ? tree.materialInputDatePickerFormField.fieldLabelText : null),
           keyboardType: (tree.materialInputDatePickerFormField.hasKeyboardType() ? constructFlutterTextInputTypeType(tree.materialInputDatePickerFormField.keyboardType) : null),
           autofocus: (tree.materialInputDatePickerFormField.hasAutofocus() ? tree.materialInputDatePickerFormField.autofocus : false),
-          acceptEmptyDate: (tree.materialInputDatePickerFormField.hasAcceptEmptyDate() ? tree.materialInputDatePickerFormField.acceptEmptyDate : false));
+          acceptEmptyDate: (tree.materialInputDatePickerFormField.hasAcceptEmptyDate() ? tree.materialInputDatePickerFormField.acceptEmptyDate : false),
+          focusNode: (tree.materialInputDatePickerFormField.hasFocusNode() ? constructFlutterFocusNodeType(tree.materialInputDatePickerFormField.focusNode) : null));
     case messages.WidgetType_Constructor.materialInputDecorator:
       return $flutterSrcMaterialInputDecorator.InputDecorator(
           key: (tree.materialInputDecorator.hasKey() ? constructFlutterKeyType(tree.materialInputDecorator.key) : null),
@@ -27510,7 +27736,8 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           shortcuts: null,
           actions: null,
           restorationScopeId: (tree.materialMaterialApp.hasRestorationScopeId() ? tree.materialMaterialApp.restorationScopeId : null),
-          scrollBehavior: (tree.materialMaterialApp.hasScrollBehavior() ? constructFlutterScrollBehaviorType(tree.materialMaterialApp.scrollBehavior) : null));
+          scrollBehavior: (tree.materialMaterialApp.hasScrollBehavior() ? constructFlutterScrollBehaviorType(tree.materialMaterialApp.scrollBehavior) : null),
+          themeAnimationStyle: (tree.materialMaterialApp.hasThemeAnimationStyle() ? constructFlutterSrcAnimationAnimationStyleType(tree.materialMaterialApp.themeAnimationStyle) : null));
     case messages.WidgetType_Constructor.materialMaterialAppNamedRouter:
       return $flutterSrcMaterialApp.MaterialApp.router(
           key: (tree.materialMaterialAppNamedRouter.hasKey() ? constructFlutterKeyType(tree.materialMaterialAppNamedRouter.key) : null),
@@ -27546,7 +27773,8 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           shortcuts: null,
           actions: null,
           restorationScopeId: (tree.materialMaterialAppNamedRouter.hasRestorationScopeId() ? tree.materialMaterialAppNamedRouter.restorationScopeId : null),
-          scrollBehavior: (tree.materialMaterialAppNamedRouter.hasScrollBehavior() ? constructFlutterScrollBehaviorType(tree.materialMaterialAppNamedRouter.scrollBehavior) : null));
+          scrollBehavior: (tree.materialMaterialAppNamedRouter.hasScrollBehavior() ? constructFlutterScrollBehaviorType(tree.materialMaterialAppNamedRouter.scrollBehavior) : null),
+          themeAnimationStyle: (tree.materialMaterialAppNamedRouter.hasThemeAnimationStyle() ? constructFlutterSrcAnimationAnimationStyleType(tree.materialMaterialAppNamedRouter.themeAnimationStyle) : null));
     case messages.WidgetType_Constructor.materialMaterialBanner:
       return $flutterSrcMaterialBanner.MaterialBanner(
           key: (tree.materialMaterialBanner.hasKey() ? constructFlutterKeyType(tree.materialMaterialBanner.key) : null),
@@ -27623,7 +27851,7 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           style: (tree.materialMenuAnchor.hasStyle() ? constructMaterialMenuStyleType(tree.materialMenuAnchor.style) : null),
           alignmentOffset: (tree.materialMenuAnchor.hasAlignmentOffset() ? constructDartOffsetType(tree.materialMenuAnchor.alignmentOffset) : $dartUi.Offset.zero),
           clipBehavior: (tree.materialMenuAnchor.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.materialMenuAnchor.clipBehavior) : $dartUi.Clip.hardEdge),
-          anchorTapClosesMenu: (tree.materialMenuAnchor.hasAnchorTapClosesMenu() ? tree.materialMenuAnchor.anchorTapClosesMenu : false),
+          consumeOutsideTap: (tree.materialMenuAnchor.hasConsumeOutsideTap() ? tree.materialMenuAnchor.consumeOutsideTap : false),
           onOpen: null,
           onClose: null,
           crossAxisUnconstrained: (tree.materialMenuAnchor.hasCrossAxisUnconstrained() ? tree.materialMenuAnchor.crossAxisUnconstrained : true),
@@ -27690,7 +27918,8 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           indicatorColor: (tree.materialNavigationBar.hasIndicatorColor() ? constructDartColorType(tree.materialNavigationBar.indicatorColor) : null),
           indicatorShape: (tree.materialNavigationBar.hasIndicatorShape() ? constructFlutterShapeBorderType(tree.materialNavigationBar.indicatorShape) : null),
           height: (tree.materialNavigationBar.hasHeight() ? tree.materialNavigationBar.height : null),
-          labelBehavior: (tree.materialNavigationBar.hasLabelBehavior() ? enums.convertMaterialNavigationDestinationLabelBehaviorType(tree.materialNavigationBar.labelBehavior) : null));
+          labelBehavior: (tree.materialNavigationBar.hasLabelBehavior() ? enums.convertMaterialNavigationDestinationLabelBehaviorType(tree.materialNavigationBar.labelBehavior) : null),
+          overlayColor: null);
     case messages.WidgetType_Constructor.materialNavigationBarTheme:
       return $flutterSrcMaterialNavigationBarTheme.NavigationBarTheme(
           key: (tree.materialNavigationBarTheme.hasKey() ? constructFlutterKeyType(tree.materialNavigationBarTheme.key) : null),
@@ -27814,7 +28043,8 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           checkboxHorizontalMargin: (tree.materialPaginatedDataTable.hasCheckboxHorizontalMargin() ? tree.materialPaginatedDataTable.checkboxHorizontalMargin : null),
           controller: (tree.materialPaginatedDataTable.hasController() ? constructFlutterScrollControllerType(tree.materialPaginatedDataTable.controller) : null),
           primary: (tree.materialPaginatedDataTable.hasPrimary() ? tree.materialPaginatedDataTable.primary : null),
-          headingRowColor: null);
+          headingRowColor: null,
+          showEmptyRows: (tree.materialPaginatedDataTable.hasShowEmptyRows() ? tree.materialPaginatedDataTable.showEmptyRows : true));
     case messages.WidgetType_Constructor.materialPopupMenuDivider:
       return $flutterSrcMaterialPopupMenu.PopupMenuDivider(
           key: (tree.materialPopupMenuDivider.hasKey() ? constructFlutterKeyType(tree.materialPopupMenuDivider.key) : null),
@@ -28014,7 +28244,10 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           padding: null,
           textStyle: null,
           hintStyle: null,
-          textCapitalization: (tree.materialSearchBar.hasTextCapitalization() ? enums.convertFlutterTextCapitalizationType(tree.materialSearchBar.textCapitalization) : null));
+          textCapitalization: (tree.materialSearchBar.hasTextCapitalization() ? enums.convertFlutterTextCapitalizationType(tree.materialSearchBar.textCapitalization) : null),
+          autoFocus: (tree.materialSearchBar.hasAutoFocus() ? tree.materialSearchBar.autoFocus : false),
+          textInputAction: (tree.materialSearchBar.hasTextInputAction() ? enums.convertFlutterTextInputActionType(tree.materialSearchBar.textInputAction) : null),
+          keyboardType: (tree.materialSearchBar.hasKeyboardType() ? constructFlutterTextInputTypeType(tree.materialSearchBar.keyboardType) : null));
     case messages.WidgetType_Constructor.materialSearchBarTheme:
       return $flutterSrcMaterialSearchBarTheme.SearchBarTheme(
           key: (tree.materialSearchBarTheme.hasKey() ? constructFlutterKeyType(tree.materialSearchBarTheme.key) : null),
@@ -28306,7 +28539,7 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           duration: (tree.materialSnackBar.hasDuration() ? constructRequiredDartDurationType(tree.materialSnackBar.duration) : $dartCore.Duration(milliseconds: 4000)),
           animation: null,
           onVisible: null,
-          dismissDirection: (tree.materialSnackBar.hasDismissDirection() ? enums.convertRequiredFlutterDismissDirectionType(tree.materialSnackBar.dismissDirection) : $flutterSrcWidgetsDismissible.DismissDirection.down),
+          dismissDirection: (tree.materialSnackBar.hasDismissDirection() ? enums.convertFlutterDismissDirectionType(tree.materialSnackBar.dismissDirection) : null),
           clipBehavior: (tree.materialSnackBar.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.materialSnackBar.clipBehavior) : $dartUi.Clip.hardEdge));
     case messages.WidgetType_Constructor.materialSpellCheckSuggestionsToolbar:
       return $flutterSrcMaterialSpellCheckSuggestionsToolbar.SpellCheckSuggestionsToolbar(
@@ -28646,6 +28879,7 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           readOnly: (tree.materialTextField.hasReadOnly() ? tree.materialTextField.readOnly : false),
           showCursor: (tree.materialTextField.hasShowCursor() ? tree.materialTextField.showCursor : null),
           autofocus: (tree.materialTextField.hasAutofocus() ? tree.materialTextField.autofocus : false),
+          statesController: (tree.materialTextField.hasStatesController() ? constructMaterialMaterialStatesControllerType(tree.materialTextField.statesController) : null),
           obscuringCharacter: (tree.materialTextField.hasObscuringCharacter() ? tree.materialTextField.obscuringCharacter : '•'),
           obscureText: (tree.materialTextField.hasObscureText() ? tree.materialTextField.obscureText : false),
           autocorrect: (tree.materialTextField.hasAutocorrect() ? tree.materialTextField.autocorrect : true),
@@ -28668,6 +28902,7 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           cursorRadius: (tree.materialTextField.hasCursorRadius() ? constructDartRadiusType(tree.materialTextField.cursorRadius) : null),
           cursorOpacityAnimates: (tree.materialTextField.hasCursorOpacityAnimates() ? tree.materialTextField.cursorOpacityAnimates : null),
           cursorColor: (tree.materialTextField.hasCursorColor() ? constructDartColorType(tree.materialTextField.cursorColor) : null),
+          cursorErrorColor: (tree.materialTextField.hasCursorErrorColor() ? constructDartColorType(tree.materialTextField.cursorErrorColor) : null),
           selectionHeightStyle: (tree.materialTextField.hasSelectionHeightStyle() ? enums.convertRequiredDartBoxHeightStyleType(tree.materialTextField.selectionHeightStyle) : $dartUi.BoxHeightStyle.tight),
           selectionWidthStyle: (tree.materialTextField.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyleType(tree.materialTextField.selectionWidthStyle) : $dartUi.BoxWidthStyle.tight),
           keyboardAppearance: (tree.materialTextField.hasKeyboardAppearance() ? enums.convertDartBrightnessType(tree.materialTextField.keyboardAppearance) : null),
@@ -28676,6 +28911,7 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           enableInteractiveSelection: (tree.materialTextField.hasEnableInteractiveSelection() ? tree.materialTextField.enableInteractiveSelection : null),
           selectionControls: (tree.materialTextField.hasSelectionControls() ? constructFlutterTextSelectionControlsType(tree.materialTextField.selectionControls) : null),
           onTap: null,
+          onTapAlwaysCalled: (tree.materialTextField.hasOnTapAlwaysCalled() ? tree.materialTextField.onTapAlwaysCalled : false),
           onTapOutside: null,
           mouseCursor: null,
           buildCounter: null,
@@ -28722,6 +28958,7 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           maxLength: (tree.materialTextFormField.hasMaxLength() ? tree.materialTextFormField.maxLength : null),
           onChanged: null,
           onTap: null,
+          onTapAlwaysCalled: (tree.materialTextFormField.hasOnTapAlwaysCalled() ? tree.materialTextFormField.onTapAlwaysCalled : false),
           onTapOutside: null,
           onEditingComplete: null,
           onFieldSubmitted: null,
@@ -28733,6 +28970,7 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           cursorHeight: (tree.materialTextFormField.hasCursorHeight() ? tree.materialTextFormField.cursorHeight : null),
           cursorRadius: (tree.materialTextFormField.hasCursorRadius() ? constructDartRadiusType(tree.materialTextFormField.cursorRadius) : null),
           cursorColor: (tree.materialTextFormField.hasCursorColor() ? constructDartColorType(tree.materialTextFormField.cursorColor) : null),
+          cursorErrorColor: (tree.materialTextFormField.hasCursorErrorColor() ? constructDartColorType(tree.materialTextFormField.cursorErrorColor) : null),
           keyboardAppearance: (tree.materialTextFormField.hasKeyboardAppearance() ? enums.convertDartBrightnessType(tree.materialTextFormField.keyboardAppearance) : null),
           scrollPadding: (tree.materialTextFormField.hasScrollPadding() ? constructRequiredFlutterEdgeInsetsType(tree.materialTextFormField.scrollPadding) : $flutterSrcPaintingEdgeInsets.EdgeInsets.all(20.0)),
           enableInteractiveSelection: (tree.materialTextFormField.hasEnableInteractiveSelection() ? tree.materialTextFormField.enableInteractiveSelection : null),
@@ -28755,6 +28993,7 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           selectionWidthStyle: (tree.materialTextFormField.hasSelectionWidthStyle() ? enums.convertRequiredDartBoxWidthStyleType(tree.materialTextFormField.selectionWidthStyle) : $dartUi.BoxWidthStyle.tight),
           dragStartBehavior: (tree.materialTextFormField.hasDragStartBehavior() ? enums.convertRequiredFlutterDragStartBehaviorType(tree.materialTextFormField.dragStartBehavior) : $flutterSrcGesturesRecognizer.DragStartBehavior.start),
           contentInsertionConfiguration: null,
+          statesController: (tree.materialTextFormField.hasStatesController() ? constructMaterialMaterialStatesControllerType(tree.materialTextFormField.statesController) : null),
           clipBehavior: (tree.materialTextFormField.hasClipBehavior() ? enums.convertRequiredDartClipType(tree.materialTextFormField.clipBehavior) : $dartUi.Clip.hardEdge),
           scribbleEnabled: (tree.materialTextFormField.hasScribbleEnabled() ? tree.materialTextFormField.scribbleEnabled : true),
           canRequestFocus: (tree.materialTextFormField.hasCanRequestFocus() ? tree.materialTextFormField.canRequestFocus : true));
@@ -28848,6 +29087,8 @@ $flutterSrcWidgetsFramework.Widget? constructWidgetType(messages.WidgetType? tre
           textAlign: (tree.materialTooltip.hasTextAlign() ? enums.convertDartTextAlignType(tree.materialTooltip.textAlign) : null),
           waitDuration: (tree.materialTooltip.hasWaitDuration() ? constructDartDurationType(tree.materialTooltip.waitDuration) : null),
           showDuration: (tree.materialTooltip.hasShowDuration() ? constructDartDurationType(tree.materialTooltip.showDuration) : null),
+          exitDuration: (tree.materialTooltip.hasExitDuration() ? constructDartDurationType(tree.materialTooltip.exitDuration) : null),
+          enableTapToDismiss: (tree.materialTooltip.hasEnableTapToDismiss() ? tree.materialTooltip.enableTapToDismiss : true),
           triggerMode: (tree.materialTooltip.hasTriggerMode() ? enums.convertMaterialTooltipTriggerModeType(tree.materialTooltip.triggerMode) : null),
           enableFeedback: (tree.materialTooltip.hasEnableFeedback() ? tree.materialTooltip.enableFeedback : null),
           onTriggered: null,

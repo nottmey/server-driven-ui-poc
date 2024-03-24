@@ -2154,6 +2154,23 @@ message FlutterOverflowBarAlignmentType {
   }
 }
 
+// package:flutter/src/rendering/shifted_box.dart
+//
+// How much space should be occupied by the [OverflowBox] if there is no
+// overflow.
+message FlutterOverflowBoxFitType {
+  enum Enum {
+    // The widget will size itself to be as large as the parent allows.
+    MAX = 0;
+    // The widget will follow the child's size.
+    //
+    // More specifically, the render object will size itself to match the size of
+    // its child within the constraints of its parent, or as small as the
+    // parent allows if no child is set.
+    DEFER_TO_CHILD = 1;
+  }
+}
+
 // package:flutter/src/widgets/interactive_viewer.dart
 //
 // This enum is used to specify the behavior of the [InteractiveViewer] when
@@ -2567,6 +2584,8 @@ message FlutterTableCellVerticalAlignmentType {
     // Cells with this alignment are sized to be as tall as the row, then made to fit the row.
     // If all the cells have this alignment, then the row will have zero height.
     FILL = 4;
+    // Cells with this alignment are sized to be the same height as the tallest cell in the row.
+    INTRINSIC_HEIGHT = 5;
   }
 }
 
@@ -2901,6 +2920,15 @@ message FlutterTraversalEdgeBehaviorType {
     // address bar, escape an `iframe`, or focus on HTML elements other than
     // those managed by Flutter.
     LEAVE_FLUTTER_VIEW = 1;
+    // Allows focus to traverse up to parent scope.
+    //
+    // When reaching the edge of the current scope, requesting the next focus
+    // will look up to the parent scope of the current scope and focus the focus
+    // node next to the current scope.
+    //
+    // If there is no parent scope above the current scope, fallback to
+    // [closedLoop] behavior.
+    PARENT_SCOPE = 2;
   }
 }
 

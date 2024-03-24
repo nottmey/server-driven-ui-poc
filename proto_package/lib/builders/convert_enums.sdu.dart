@@ -41,6 +41,7 @@ import 'package:flutter/src/painting/text_painter.dart' as $flutterSrcPaintingTe
 import 'package:flutter/src/rendering/flex.dart' as $flutterSrcRenderingFlex;
 import 'package:flutter/src/rendering/platform_view.dart' as $flutterSrcRenderingPlatformView;
 import 'package:flutter/src/rendering/proxy_box.dart' as $flutterSrcRenderingProxyBox;
+import 'package:flutter/src/rendering/shifted_box.dart' as $flutterSrcRenderingShiftedBox;
 import 'package:flutter/src/rendering/stack.dart' as $flutterSrcRenderingStack;
 import 'package:flutter/src/rendering/table.dart' as $flutterSrcRenderingTable;
 import 'package:flutter/src/rendering/viewport.dart' as $flutterSrcRenderingViewport;
@@ -1241,6 +1242,26 @@ $flutterSrcWidgetsOverflowBar.OverflowBarAlignment? convertFlutterOverflowBarAli
   }
 }
 
+$flutterSrcRenderingShiftedBox.OverflowBoxFit convertRequiredFlutterOverflowBoxFitType(enums.FlutterOverflowBoxFitType_Enum enumValue) {
+  final result = convertFlutterOverflowBoxFitType(enumValue);
+  if(result != null) {
+    return result;
+  } else {
+    throw core.AssertionError('unable to parse required enum FlutterOverflowBoxFitType');
+  }
+}
+
+$flutterSrcRenderingShiftedBox.OverflowBoxFit? convertFlutterOverflowBoxFitType(enums.FlutterOverflowBoxFitType_Enum enumValue) {
+  switch (enumValue) {
+    case enums.FlutterOverflowBoxFitType_Enum.MAX:
+      return $flutterSrcRenderingShiftedBox.OverflowBoxFit.max;
+    case enums.FlutterOverflowBoxFitType_Enum.DEFER_TO_CHILD:
+      return $flutterSrcRenderingShiftedBox.OverflowBoxFit.deferToChild;
+    default:
+      return null;
+  }
+}
+
 $flutterSrcWidgetsInteractiveViewer.PanAxis convertRequiredFlutterPanAxisType(enums.FlutterPanAxisType_Enum enumValue) {
   final result = convertFlutterPanAxisType(enumValue);
   if(result != null) {
@@ -1548,6 +1569,8 @@ $flutterSrcRenderingTable.TableCellVerticalAlignment? convertFlutterTableCellVer
       return $flutterSrcRenderingTable.TableCellVerticalAlignment.baseline;
     case enums.FlutterTableCellVerticalAlignmentType_Enum.FILL:
       return $flutterSrcRenderingTable.TableCellVerticalAlignment.fill;
+    case enums.FlutterTableCellVerticalAlignmentType_Enum.INTRINSIC_HEIGHT:
+      return $flutterSrcRenderingTable.TableCellVerticalAlignment.intrinsicHeight;
     default:
       return null;
   }
@@ -1730,6 +1753,8 @@ $flutterSrcWidgetsFocusTraversal.TraversalEdgeBehavior? convertFlutterTraversalE
       return $flutterSrcWidgetsFocusTraversal.TraversalEdgeBehavior.closedLoop;
     case enums.FlutterTraversalEdgeBehaviorType_Enum.LEAVE_FLUTTER_VIEW:
       return $flutterSrcWidgetsFocusTraversal.TraversalEdgeBehavior.leaveFlutterView;
+    case enums.FlutterTraversalEdgeBehaviorType_Enum.PARENT_SCOPE:
+      return $flutterSrcWidgetsFocusTraversal.TraversalEdgeBehavior.parentScope;
     default:
       return null;
   }

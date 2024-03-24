@@ -1090,6 +1090,26 @@ final $typed_data.Uint8List flutterOverflowBarAlignmentTypeDescriptor = $convert
     'Ch9GbHV0dGVyT3ZlcmZsb3dCYXJBbGlnbm1lbnRUeXBlIiYKBEVudW0SCQoFU1RBUlQQABIHCg'
     'NFTkQQARIKCgZDRU5URVIQAg==');
 
+@$core.Deprecated('Use flutterOverflowBoxFitTypeDescriptor instead')
+const FlutterOverflowBoxFitType$json = {
+  '1': 'FlutterOverflowBoxFitType',
+  '4': [FlutterOverflowBoxFitType_Enum$json],
+};
+
+@$core.Deprecated('Use flutterOverflowBoxFitTypeDescriptor instead')
+const FlutterOverflowBoxFitType_Enum$json = {
+  '1': 'Enum',
+  '2': [
+    {'1': 'MAX', '2': 0},
+    {'1': 'DEFER_TO_CHILD', '2': 1},
+  ],
+};
+
+/// Descriptor for `FlutterOverflowBoxFitType`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List flutterOverflowBoxFitTypeDescriptor = $convert.base64Decode(
+    'ChlGbHV0dGVyT3ZlcmZsb3dCb3hGaXRUeXBlIiMKBEVudW0SBwoDTUFYEAASEgoOREVGRVJfVE'
+    '9fQ0hJTEQQAQ==');
+
 @$core.Deprecated('Use flutterPanAxisTypeDescriptor instead')
 const FlutterPanAxisType$json = {
   '1': 'FlutterPanAxisType',
@@ -1373,13 +1393,15 @@ const FlutterTableCellVerticalAlignmentType_Enum$json = {
     {'1': 'BOTTOM', '2': 2},
     {'1': 'BASELINE', '2': 3},
     {'1': 'FILL', '2': 4},
+    {'1': 'INTRINSIC_HEIGHT', '2': 5},
   ],
 };
 
 /// Descriptor for `FlutterTableCellVerticalAlignmentType`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterTableCellVerticalAlignmentTypeDescriptor = $convert.base64Decode(
-    'CiVGbHV0dGVyVGFibGVDZWxsVmVydGljYWxBbGlnbm1lbnRUeXBlIj8KBEVudW0SBwoDVE9QEA'
-    'ASCgoGTUlERExFEAESCgoGQk9UVE9NEAISDAoIQkFTRUxJTkUQAxIICgRGSUxMEAQ=');
+    'CiVGbHV0dGVyVGFibGVDZWxsVmVydGljYWxBbGlnbm1lbnRUeXBlIlUKBEVudW0SBwoDVE9QEA'
+    'ASCgoGTUlERExFEAESCgoGQk9UVE9NEAISDAoIQkFTRUxJTkUQAxIICgRGSUxMEAQSFAoQSU5U'
+    'UklOU0lDX0hFSUdIVBAF');
 
 @$core.Deprecated('Use flutterTargetPlatformTypeDescriptor instead')
 const FlutterTargetPlatformType$json = {
@@ -1536,13 +1558,14 @@ const FlutterTraversalEdgeBehaviorType_Enum$json = {
   '2': [
     {'1': 'CLOSED_LOOP', '2': 0},
     {'1': 'LEAVE_FLUTTER_VIEW', '2': 1},
+    {'1': 'PARENT_SCOPE', '2': 2},
   ],
 };
 
 /// Descriptor for `FlutterTraversalEdgeBehaviorType`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List flutterTraversalEdgeBehaviorTypeDescriptor = $convert.base64Decode(
-    'CiBGbHV0dGVyVHJhdmVyc2FsRWRnZUJlaGF2aW9yVHlwZSIvCgRFbnVtEg8KC0NMT1NFRF9MT0'
-    '9QEAASFgoSTEVBVkVfRkxVVFRFUl9WSUVXEAE=');
+    'CiBGbHV0dGVyVHJhdmVyc2FsRWRnZUJlaGF2aW9yVHlwZSJBCgRFbnVtEg8KC0NMT1NFRF9MT0'
+    '9QEAASFgoSTEVBVkVfRkxVVFRFUl9WSUVXEAESEAoMUEFSRU5UX1NDT1BFEAI=');
 
 @$core.Deprecated('Use flutterVerticalDirectionTypeDescriptor instead')
 const FlutterVerticalDirectionType$json = {

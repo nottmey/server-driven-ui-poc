@@ -949,6 +949,21 @@ class FlutterOverflowBarAlignmentType_Enum extends $pb.ProtobufEnum {
   const FlutterOverflowBarAlignmentType_Enum._($core.int v, $core.String n) : super(v, n);
 }
 
+class FlutterOverflowBoxFitType_Enum extends $pb.ProtobufEnum {
+  static const FlutterOverflowBoxFitType_Enum MAX = FlutterOverflowBoxFitType_Enum._(0, _omitEnumNames ? '' : 'MAX');
+  static const FlutterOverflowBoxFitType_Enum DEFER_TO_CHILD = FlutterOverflowBoxFitType_Enum._(1, _omitEnumNames ? '' : 'DEFER_TO_CHILD');
+
+  static const $core.List<FlutterOverflowBoxFitType_Enum> values = <FlutterOverflowBoxFitType_Enum> [
+    MAX,
+    DEFER_TO_CHILD,
+  ];
+
+  static final $core.Map<$core.int, FlutterOverflowBoxFitType_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
+  static FlutterOverflowBoxFitType_Enum? valueOf($core.int value) => _byValue[value];
+
+  const FlutterOverflowBoxFitType_Enum._($core.int v, $core.String n) : super(v, n);
+}
+
 class FlutterPanAxisType_Enum extends $pb.ProtobufEnum {
   static const FlutterPanAxisType_Enum HORIZONTAL = FlutterPanAxisType_Enum._(0, _omitEnumNames ? '' : 'HORIZONTAL');
   static const FlutterPanAxisType_Enum VERTICAL = FlutterPanAxisType_Enum._(1, _omitEnumNames ? '' : 'VERTICAL');
@@ -1181,6 +1196,7 @@ class FlutterTableCellVerticalAlignmentType_Enum extends $pb.ProtobufEnum {
   static const FlutterTableCellVerticalAlignmentType_Enum BOTTOM = FlutterTableCellVerticalAlignmentType_Enum._(2, _omitEnumNames ? '' : 'BOTTOM');
   static const FlutterTableCellVerticalAlignmentType_Enum BASELINE = FlutterTableCellVerticalAlignmentType_Enum._(3, _omitEnumNames ? '' : 'BASELINE');
   static const FlutterTableCellVerticalAlignmentType_Enum FILL = FlutterTableCellVerticalAlignmentType_Enum._(4, _omitEnumNames ? '' : 'FILL');
+  static const FlutterTableCellVerticalAlignmentType_Enum INTRINSIC_HEIGHT = FlutterTableCellVerticalAlignmentType_Enum._(5, _omitEnumNames ? '' : 'INTRINSIC_HEIGHT');
 
   static const $core.List<FlutterTableCellVerticalAlignmentType_Enum> values = <FlutterTableCellVerticalAlignmentType_Enum> [
     TOP,
@@ -1188,6 +1204,7 @@ class FlutterTableCellVerticalAlignmentType_Enum extends $pb.ProtobufEnum {
     BOTTOM,
     BASELINE,
     FILL,
+    INTRINSIC_HEIGHT,
   ];
 
   static final $core.Map<$core.int, FlutterTableCellVerticalAlignmentType_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
@@ -1331,10 +1348,12 @@ class FlutterTraversalDirectionType_Enum extends $pb.ProtobufEnum {
 class FlutterTraversalEdgeBehaviorType_Enum extends $pb.ProtobufEnum {
   static const FlutterTraversalEdgeBehaviorType_Enum CLOSED_LOOP = FlutterTraversalEdgeBehaviorType_Enum._(0, _omitEnumNames ? '' : 'CLOSED_LOOP');
   static const FlutterTraversalEdgeBehaviorType_Enum LEAVE_FLUTTER_VIEW = FlutterTraversalEdgeBehaviorType_Enum._(1, _omitEnumNames ? '' : 'LEAVE_FLUTTER_VIEW');
+  static const FlutterTraversalEdgeBehaviorType_Enum PARENT_SCOPE = FlutterTraversalEdgeBehaviorType_Enum._(2, _omitEnumNames ? '' : 'PARENT_SCOPE');
 
   static const $core.List<FlutterTraversalEdgeBehaviorType_Enum> values = <FlutterTraversalEdgeBehaviorType_Enum> [
     CLOSED_LOOP,
     LEAVE_FLUTTER_VIEW,
+    PARENT_SCOPE,
   ];
 
   static final $core.Map<$core.int, FlutterTraversalEdgeBehaviorType_Enum> _byValue = $pb.ProtobufEnum.initByValue(values);
