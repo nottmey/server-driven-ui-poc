@@ -1,5 +1,7 @@
+.dart_tool
 .idea
+.fvm
 
-/.fvm/flutter_sdk
+pubspec_overrides.yaml
 
 .DS_Store

@@ -1,0 +1,10 @@
+# format docs: https://melos.invertase.dev/configuration/overview
+name: server_driven_ui_poc
+
+sdkPath: .fvm/flutter_sdk
+
+packages:
+  - dart_server
+  - flutter_project
+  - generator_package
+  - proto_package

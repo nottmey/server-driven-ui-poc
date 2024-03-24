@@ -79,7 +79,7 @@ packages:
     source: sdk
     version: "0.0.0"
   flutter_project:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "../flutter_project"
       relative: true

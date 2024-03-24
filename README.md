@@ -26,11 +26,15 @@
 
 ### Prerequisites
 
+- [fvm](https://fvm.app/documentation/getting-started/installation) (`brew tap leoafarias/fvm && brew install fvm`)
+- [melos](https://melos.invertase.dev/getting-started#installation) (`dart pub global activate melos`)
+- [protoc 3+](https://grpc.io/docs/protoc-installation/) (`brew install protobuf`)
+- [protoc dart plugin](https://pub.dev/packages/protoc_plugin) (`dart pub global activate protoc_plugin`)
+
 ```shell
-# globally
-flutter version 3.16.0
-brew install protobuf
-dart pub global activate protoc_plugin
+# in project root
+fvm install
+melos bootstrap
 
 # normally in a project you would add the generator, 
 # in this example it's already configured
